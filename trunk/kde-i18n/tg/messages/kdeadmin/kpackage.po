@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kpackage\n"
-"POT-Creation-Date: 2004-07-16 01:25+0200\n"
+"POT-Creation-Date: 2004-12-31 10:52+0100\n"
 "PO-Revision-Date: 2004-08-17 14:48+0000\n"
 "Last-Translator: Dilshod Marupov <dma165@hotmail.com>\n"
 "Language-Team:  Tajik\n"
@@ -110,46 +110,50 @@ msgstr "Озмоиш (нобуд насозед)"
 msgid "Purge Config Files"
 msgstr "Тоза кардани файлҳои конфигуратсионӣ"
 
-#: debAptInterface.cpp:104
+#: debAptInterface.cpp:105
 msgid "U&pgrade"
 msgstr "Нав &кардани пакетҳо"
 
-#: debAptInterface.cpp:108
+#: debAptInterface.cpp:109
 msgid "&Fixup"
 msgstr "&Илова кардани норасоиҳо"
 
-#: debAptInterface.cpp:166
+#: debAptInterface.cpp:113
+msgid "&Apt-file update"
+msgstr ""
+
+#: debAptInterface.cpp:179
 #, c-format
 msgid "Querying DEB APT remote package list: %1"
 msgstr "Пурсиши рӯйхати пакетҳои дур шудаи DEB APT: %1"
 
-#: debAptInterface.cpp:172
+#: debAptInterface.cpp:185
 #, c-format
 msgid "Processing DEB APT remote package list: %1"
 msgstr ""
 "Коркарди рӯйхати пакетҳои ҳузф шудаи DEB "
 "APT: %1"
 
-#: debAptInterface.cpp:209 debAptInterface.cpp:265 rpmInterface.cpp:192
+#: debAptInterface.cpp:222 debAptInterface.cpp:278 rpmInterface.cpp:194
 msgid "DEB APT"
 msgstr "DEB APT"
 
-#: debAptInterface.cpp:222
+#: debAptInterface.cpp:235
 msgid "Querying DEB APT available list"
 msgstr "DEB APT: Пурсиши рӯйхати пакетҳо"
 
-#: debAptInterface.cpp:224
+#: debAptInterface.cpp:237
 #, c-format
 msgid "Querying DEB APT available list: %1"
 msgstr ""
 "Пурсиши рӯйхати пакетҳои дастрасшудаи DEB "
 "APT: %1"
 
-#: debAptInterface.cpp:229
+#: debAptInterface.cpp:242
 msgid "Processing DEB APT available list"
 msgstr "DEB APT: Коркарди рӯйхати пакетҳо"
 
-#: debAptInterface.cpp:231
+#: debAptInterface.cpp:244
 #, c-format
 msgid "Processing DEB APT available list: %1"
 msgstr ""
@@ -262,6 +266,7 @@ msgstr "Гирифтани қуттиҳои ахборот "
 
 #: fbsdInterface.cpp:204 fbsdInterface.cpp:205 fbsdInterface.cpp:432
 #: fbsdInterface.cpp:433 fbsdInterface.cpp:571 fbsdInterface.cpp:572
+#: packageProperties.cpp:176
 msgid "none"
 msgstr "ҳеҷ чиз"
 
@@ -324,35 +329,47 @@ msgstr ""
 "Таваҷҷӯҳ: маълумоти хатои дар файли INDEX "
 "буда барои %1"
 
-#: findf.cpp:45
+#: findf.cpp:49
 msgid "Find File"
 msgstr "Ҷустуҷӯи файлҳо"
 
-#: findf.cpp:47 search.cpp:43
+#: findf.cpp:51 search.cpp:43
 msgid "&Find"
 msgstr "&Ҷустуҷӯ"
 
-#: findf.cpp:61
+#: findf.cpp:60 search.cpp:41 search.cpp:51
+msgid "Find Package"
+msgstr "Ҷустуҷӯи қуттиҳо"
+
+#: findf.cpp:71
 msgid "Find:"
 msgstr "Ҷустуҷӯ:"
 
-#: findf.cpp:66
+#: findf.cpp:77 managementWidget.cpp:84
+msgid "Installed"
+msgstr "Сабт шуда"
+
+#: findf.cpp:78
 msgid "Type"
 msgstr "Намуд"
 
-#: findf.cpp:67 managementWidget.cpp:110
+#: findf.cpp:80 kplview.cpp:57
 msgid "Package"
 msgstr "Қуттиҳо"
 
-#: findf.cpp:68
+#: findf.cpp:81
 msgid "File Name"
 msgstr "Номи файл"
 
-#: findf.cpp:132
+#: findf.cpp:85
+msgid "Also search uninstalled packages"
+msgstr ""
+
+#: findf.cpp:171
 msgid "--Nothing found--"
 msgstr "--Ягон чизе ёфт нашуд--"
 
-#: findf.cpp:182
+#: findf.cpp:221
 msgid "Incorrect URL type"
 msgstr "Намуди URL нодуруст аст"
 
@@ -390,7 +407,7 @@ msgstr "Ба пурсиши рӯйхати қуттиҳои KISS мебошам:
 msgid "KPackage: Waiting on KISS"
 msgstr "KPackage: Интизории KISS"
 
-#: kpPty.cpp:137
+#: kpPty.cpp:139
 msgid "ROOT Login"
 msgstr "Вориди РЕША"
 
@@ -480,6 +497,27 @@ msgstr "KIO канда шуд"
 msgid "Open location:"
 msgstr "Кушодани ишораҳо:"
 
+#: kplview.cpp:59
+msgid "Mark"
+msgstr "Қайд кардан"
+
+#: kplview.cpp:61
+#, fuzzy
+msgid "Summary"
+msgstr "хулоса"
+
+#: kplview.cpp:63
+msgid "Size"
+msgstr "Андоза"
+
+#: kplview.cpp:65
+msgid "Version"
+msgstr "Ривоят"
+
+#: kplview.cpp:67
+msgid "Old Version"
+msgstr "Ривояти кӯҳна"
+
 #: main.cpp:60
 msgid "KDE Package installer"
 msgstr "Барномаи сабти қуттиҳои KDE"
@@ -496,308 +534,307 @@ msgstr "Пакетҳои сабт мешуда"
 msgid "KPackage"
 msgstr "KҚуттӣ"
 
-#: managementWidget.cpp:61
-msgid "Installed"
-msgstr "Сабт шуда"
-
-#: managementWidget.cpp:62
+#: managementWidget.cpp:85
 msgid "Updated"
 msgstr "Нав шуда"
 
-#: managementWidget.cpp:63
+#: managementWidget.cpp:86
 msgid "New"
 msgstr "Нав"
 
-#: managementWidget.cpp:64
+#: managementWidget.cpp:87
 msgid "All"
 msgstr "Ҳама"
 
-#: managementWidget.cpp:112
-msgid "Mark"
-msgstr "Қайд кардан"
+#: managementWidget.cpp:139
+#, fuzzy
+msgid "Clear Search"
+msgstr "Барҳам додани &қайд гирӣ"
 
-#: managementWidget.cpp:114
-msgid "Size"
-msgstr "Андоза"
+#: managementWidget.cpp:142
+msgid "Search: "
+msgstr ""
 
-#: managementWidget.cpp:116
-msgid "Version"
-msgstr "Ривоят"
-
-#: managementWidget.cpp:118
-msgid "Old Version"
-msgstr "Ривояти кӯҳна"
-
-#: managementWidget.cpp:143
+#: managementWidget.cpp:165
 msgid "Uninstall Marked"
 msgstr "Нобуд сохтани қайд гирӣ"
 
-#: managementWidget.cpp:147
+#: managementWidget.cpp:169
 msgid "Install Marked"
 msgstr "Сабт кардани қайд гирӣ"
 
-#: managementWidget.cpp:172 pkgOptions.cpp:359 pkgOptions.cpp:361
+#: managementWidget.cpp:194 pkgOptions.cpp:359 pkgOptions.cpp:361
 msgid "Uninstall"
 msgstr "Нобуд сохтан"
 
-#: managementWidget.cpp:176 managementWidget.cpp:263 pkgOptions.cpp:344
+#: managementWidget.cpp:198 managementWidget.cpp:269 pkgOptions.cpp:344
 #: pkgOptions.cpp:346
 msgid "Install"
 msgstr "Сабт кардан"
 
-#: managementWidget.cpp:265
+#: managementWidget.cpp:271
 msgid "Fetch"
 msgstr "Фаровир"
 
-#: managementWidget.cpp:350
+#: managementWidget.cpp:356
 msgid "Building package tree"
 msgstr "Дарахти қуттиҳо сохта шуда истодааст"
 
-#: managementWidget.cpp:465
-msgid "Filename not available\n"
-msgstr "Номи файл нодуруст аст\n"
+#: managementWidget.cpp:443
+msgid ""
+"Filename not available\n"
+msgstr ""
+"Номи файл нодуруст аст\n"
 
-#: options.cpp:71
+#: options.cpp:73
 msgid "&Types"
 msgstr "&Намудҳо"
 
-#: options.cpp:73
+#: options.cpp:75
 msgid "Handle Package Type"
 msgstr "Соз кардани намуди қуттӣ"
 
-#: options.cpp:75
+#: options.cpp:77
 msgid "Remote Host"
 msgstr "Узели дурдаст"
 
-#: options.cpp:76
+#: options.cpp:78
 msgid "Use remote host (Debian APT only):"
 msgstr "Истифодаи узели дурдаст (фақат Debian APT):"
 
-#: options.cpp:92
+#: options.cpp:94
 msgid "Enable"
 msgstr "Фаъол"
 
-#: options.cpp:94
+#: options.cpp:96
 msgid "Location of Packages..."
 msgstr "Ҷойгиршавии қуттиҳо..."
 
-#: options.cpp:103
+#: options.cpp:105
 msgid "Cac&he"
 msgstr "&Кэш"
 
-#: options.cpp:106
+#: options.cpp:108
 msgid "Cache Remote Package Folders"
 msgstr "Кэш кардани файлҳои қуттии нобуд шуда"
 
-#: options.cpp:112 options.cpp:128
+#: options.cpp:114 options.cpp:130
 msgid "Always"
 msgstr "Ҳамеша"
 
-#: options.cpp:115 options.cpp:131
+#: options.cpp:117 options.cpp:133
 msgid "During a session"
 msgstr "Вақти сессия"
 
-#: options.cpp:118 options.cpp:134
+#: options.cpp:120 options.cpp:136
 msgid "Never"
 msgstr "Ҳеҷ гоҳ"
 
-#: options.cpp:122
+#: options.cpp:124
 msgid "Cache Remote Package Files"
 msgstr "Кэш кардани файлҳои қуттии нобуд шуда"
 
-#: options.cpp:137
+#: options.cpp:139
 msgid "Cache Folder"
 msgstr "Кэш кардани феҳрист"
 
-#: options.cpp:144
+#: options.cpp:146
 msgid "&Misc"
 msgstr "&Гуногун"
 
-#: options.cpp:150
+#: options.cpp:152
 msgid "Use SSH for privileged commands"
 msgstr ""
 "Бо истифода аз SSH барои фармонҳои "
 "соҳибимтиёзӣ"
 
-#: options.cpp:153
+#: options.cpp:155
 msgid "Verify file list"
 msgstr "Тасдиқи рӯйхати файл"
 
-#: options.cpp:156
+#: options.cpp:158
 msgid "Read information from all local package files"
 msgstr ""
 "Хондани ахборотҳо аз ҳамаи қуттиҳои "
 "файли локалӣ"
 
-#: packageDisplay.cpp:100
+#: packageDisplay.cpp:98
 msgid "File List"
 msgstr "Рӯйхати файл"
 
-#: packageDisplay.cpp:101
+#: packageDisplay.cpp:99
 msgid "Change Log"
 msgstr "Дигаргун кардани Log"
 
-#: packageDisplay.cpp:262
+#: packageDisplay.cpp:266
 msgid " - No change log -"
 msgstr " - Дигаргун накардани log -"
 
-#: packageDisplay.cpp:280 packageDisplay.cpp:306
+#: packageDisplay.cpp:284 packageDisplay.cpp:310
 msgid "Updating File List"
 msgstr "Рӯйхати файлҳо аз нав боз шуда истодааст"
 
-#: packageDisplay.cpp:313
+#: packageDisplay.cpp:317
 msgid " Files"
 msgstr " Файлҳо"
+
+#: packageDisplay.cpp:374
+msgid "&Open With..."
+msgstr ""
 
 #: packageInfo.cpp:122 slackInterface.cpp:341
 msgid "OTHER"
 msgstr "ДИГАР"
 
-#: packageProperties.cpp:67
+#: packageProperties.cpp:69
 msgid "name"
 msgstr "ном"
 
-#: packageProperties.cpp:68
+#: packageProperties.cpp:70
 msgid "summary"
 msgstr "хулоса"
 
-#: packageProperties.cpp:69
+#: packageProperties.cpp:71
 msgid "version"
 msgstr "ривоят"
 
-#: packageProperties.cpp:70
+#: packageProperties.cpp:72
 msgid "old-version"
 msgstr "ривояти кӯҳна"
 
-#: packageProperties.cpp:71
+#: packageProperties.cpp:73
 msgid "status"
 msgstr "статус"
 
-#: packageProperties.cpp:72
+#: packageProperties.cpp:74
 msgid "group"
 msgstr "гурӯҳ"
 
-#: packageProperties.cpp:73
+#: packageProperties.cpp:75
 msgid "size"
 msgstr "андоза"
 
-#: packageProperties.cpp:74
+#: packageProperties.cpp:76
 msgid "file-size"
 msgstr "андозаи файл"
 
-#: packageProperties.cpp:75
+#: packageProperties.cpp:77
 msgid "description"
 msgstr "тасвир"
 
-#: packageProperties.cpp:76
+#: packageProperties.cpp:78
+msgid "url"
+msgstr ""
+
+#: packageProperties.cpp:79
 msgid "architecture"
 msgstr "муҳандисӣ"
 
-#: packageProperties.cpp:78
+#: packageProperties.cpp:81
 msgid "unsatisfied dependencies"
 msgstr "вайроннокии тобеъ"
 
-#: packageProperties.cpp:79
+#: packageProperties.cpp:82
 msgid "pre-depends"
 msgstr "тобеъи пешакӣ"
 
-#: packageProperties.cpp:80
+#: packageProperties.cpp:83
 msgid "dependencies"
 msgstr "тобеънокиҳо"
 
-#: packageProperties.cpp:81
+#: packageProperties.cpp:84
 msgid "depends"
 msgstr "тобеъ аз"
 
-#: packageProperties.cpp:82
+#: packageProperties.cpp:85
 msgid "conflicts"
 msgstr "ихтилофот"
 
-#: packageProperties.cpp:83
+#: packageProperties.cpp:86
 msgid "provides"
 msgstr "таъминот"
 
-#: packageProperties.cpp:84
+#: packageProperties.cpp:87
 msgid "recommends"
 msgstr "тавсия кардан"
 
-#: packageProperties.cpp:85
+#: packageProperties.cpp:88
 msgid "replaces"
 msgstr "алиш мекунад"
 
-#: packageProperties.cpp:86
+#: packageProperties.cpp:89
 msgid "suggests"
 msgstr "пешкашот"
 
-#: packageProperties.cpp:87
+#: packageProperties.cpp:90
 msgid "priority"
 msgstr "приоритет"
 
-#: packageProperties.cpp:89
+#: packageProperties.cpp:92
 msgid "essential"
 msgstr "лозимият"
 
-#: packageProperties.cpp:90
+#: packageProperties.cpp:93
 msgid "install time"
 msgstr "таърихи сабт кардан"
 
-#: packageProperties.cpp:91
+#: packageProperties.cpp:94
 msgid "config-version"
 msgstr "рифояти конфигуратсия"
 
-#: packageProperties.cpp:92
+#: packageProperties.cpp:95
 msgid "distribution"
 msgstr "дистрибутив"
 
-#: packageProperties.cpp:93
+#: packageProperties.cpp:96
 msgid "vendor"
 msgstr "вендор"
 
-#: packageProperties.cpp:94
+#: packageProperties.cpp:97
 msgid "maintainer"
 msgstr "тавлидкунанда"
 
-#: packageProperties.cpp:95
+#: packageProperties.cpp:98
 msgid "packager"
 msgstr "Ҷамъкунанда"
 
-#: packageProperties.cpp:96
+#: packageProperties.cpp:99
 msgid "source"
 msgstr "манбаъ"
 
-#: packageProperties.cpp:97
+#: packageProperties.cpp:100
 msgid "build-time"
 msgstr "таърихи сохт"
 
-#: packageProperties.cpp:98
+#: packageProperties.cpp:101
 msgid "build-host"
 msgstr "номи компютер"
 
-#: packageProperties.cpp:99
+#: packageProperties.cpp:102
 msgid "base"
 msgstr "база"
 
-#: packageProperties.cpp:100
+#: packageProperties.cpp:103
 msgid "filename"
 msgstr "номи файл"
 
-#: packageProperties.cpp:101
+#: packageProperties.cpp:104
 msgid "serial"
 msgstr "рақами ривоятӣ"
 
-#: packageProperties.cpp:103
+#: packageProperties.cpp:106
 msgid "also in"
 msgstr "ҳамчунин ба"
 
-#: packageProperties.cpp:104
+#: packageProperties.cpp:107
 msgid "run depends"
 msgstr "тобеъи иҷро шавӣ"
 
-#: packageProperties.cpp:105
+#: packageProperties.cpp:108
 msgid "build depends"
 msgstr "тобеъи сохт"
 
-#: packageProperties.cpp:106
+#: packageProperties.cpp:109
 msgid "available as"
 msgstr "дастрас монанди"
 
@@ -805,24 +842,24 @@ msgstr "дастрас монанди"
 msgid "'Delete this window to continue'"
 msgstr "'Барои давом додан ин тирезаро пӯшед'"
 
-#: pkgInterface.cpp:250
+#: pkgInterface.cpp:251
 msgid "Starting Kio"
 msgstr "Оғози Kio"
 
-#: pkgInterface.cpp:255
+#: pkgInterface.cpp:256
 msgid "Kio finished"
 msgstr "Итмоми Kio"
 
-#: pkgInterface.cpp:265
+#: pkgInterface.cpp:266
 msgid "Kio failed"
 msgstr "Kio канда шуд"
 
-#: pkgInterface.cpp:290
+#: pkgInterface.cpp:291
 #, c-format
 msgid "Cannot read folder %1"
 msgstr "Феҳристи %1 хонда натавонист"
 
-#: pkgInterface.cpp:320
+#: pkgInterface.cpp:321
 msgid "Verifying"
 msgstr "Тасдиқ кардан"
 
@@ -860,22 +897,26 @@ msgstr "Итмоми вақт: %1"
 msgid "Kprocess error:%1"
 msgstr "Хатои Kprocess:%1"
 
-#: rc.cpp:4
+#. i18n: file kpackageui.rc line 13
+#: rc.cpp:6
 #, no-c-format
 msgid "&Packages"
 msgstr "&Қуттиҳо"
 
-#: rc.cpp:6
+#. i18n: file kpackageui.rc line 30
+#: rc.cpp:9
 #, no-c-format
 msgid "&Cache"
 msgstr "&Кэш"
 
-#: rc.cpp:8
+#. i18n: file kpackageui.rc line 36
+#: rc.cpp:12
 #, no-c-format
 msgid "Spe&cial"
 msgstr "Мах&сус"
 
-#: rc.cpp:10
+#. i18n: file kpackageui.rc line 38
+#: rc.cpp:15
 #, no-c-format
 msgid "&APT: Debian"
 msgstr "&APT: Debian"
@@ -920,17 +961,13 @@ msgstr "Истифодаи скриптҳо"
 msgid "Querying RPM package list: "
 msgstr "Талаботи рӯйхати қуттиҳои RPM: "
 
-#: rpmInterface.cpp:155
+#: rpmInterface.cpp:157
 msgid "Querying RPM package list"
 msgstr "Талаботи рӯйхати қуттиҳои RPM"
 
-#: rpmInterface.cpp:159
+#: rpmInterface.cpp:161
 msgid "Processing RPM package list"
 msgstr "Коркарди рӯйхати қуттиҳои RPM"
-
-#: search.cpp:41 search.cpp:51
-msgid "Find Package"
-msgstr "Ҷустуҷӯи қуттиҳо"
 
 #: search.cpp:65
 msgid "Sub string"
@@ -1076,4 +1113,3 @@ msgstr "Архиви қуттиҳо"
 #: updateLoc.cpp:342
 msgid "File truncated..."
 msgstr "Кӯтоҳкунии файл..."
-
