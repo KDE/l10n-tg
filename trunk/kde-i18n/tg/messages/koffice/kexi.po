@@ -3,17 +3,17 @@
 # Copyright (C) 2004 Free Software Foundation, Inc.
 # 2004, infoDev, a World Bank organization
 # 2004, Khujand Computer Technologies, Inc.
-# Victor Ibargimov <youth_opportunities@tajik.net>, 2004.
-# Marina Kolucheva <youth_opportunities@tajik.net>, 2004.
+# 2004, Youth Opportunities, NGO
 # Victor Ibragimov <youth_opportunities@tajik.net>, 2004.
+# Marina Kolucheva <youth_opportunities@tajik.net>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
-"POT-Creation-Date: 2004-07-17 01:24+0200\n"
-"PO-Revision-Date: 2004-07-21 10:38-0400\n"
+"POT-Creation-Date: 2004-07-28 01:24+0200\n"
+"PO-Revision-Date: 2004-08-02 18:06+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
-"Language-Team: Tajik\n"
+"Language-Team:  Tajik\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,7 +37,10 @@ msgstr "Якшавии почтаи Kexi"
 
 #: core/kexidialogbase.cpp:276
 msgid "Design has been changed. You must save it before switching to other view."
-msgstr "Дизайн дигаргун карда шуд. Пеш аз гузаштан ба намоиши дигар, шумо бояд кори равонро нигоҳ доред."
+msgstr ""
+"Дизайн дигаргун карда шуд. Пеш аз "
+"гузаштан ба намоиши дигар, шумо бояд кори "
+"равонро нигоҳ доред."
 
 #: core/kexidialogbase.cpp:440
 msgid "Saving object's definition failed."
@@ -53,7 +56,9 @@ msgstr "Хато дар вақти бор кардани қисми модул \
 
 #: core/kexipartmanager.cpp:192
 msgid "No parts module for mime type \"%1\""
-msgstr "Барои намуди mime \"%1\" қисмҳои модул вуҷуд надорад"
+msgstr ""
+"Барои намуди mime \"%1\" қисмҳои модул вуҷуд "
+"надорад"
 
 #: core/kexicontexthelp.cpp:34 main/kexicontexthelp.cpp:37
 msgid "Context Help"
@@ -179,17 +184,43 @@ msgstr "Нақшаи \"%1\"кушода намешавад"
 msgid "Could not create project \"%1\""
 msgstr "Нақшаи \"%1\"сохта намешавад"
 
-#: core/kexiproject.cpp:336
+#: core/kexiproject.cpp:151
+msgid "Could not connect to \"%1\" database."
+msgstr ""
+"Ба \"%1\" сервери асоси маълумот пайваст "
+"нашудааст."
+
+#: core/kexiproject.cpp:350
 msgid "Opening object \"%1\" failed."
 msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
 
-#: core/kexipart.cpp:189
+#: core/kexiproject.cpp:397 main/keximainwindowimpl.cpp:2417
+msgid "Could not set empty name for this object."
+msgstr "Наметавонад номи роҳхати холиро барои ин ашё"
+
+#: core/kexiproject.cpp:401
+msgid "Could not use this name. Object with name \"%1\" already exists."
+msgstr "Наметавонад истифода кардани ин ном. Ашё бо номи \"%1\" алакай баромадагӣ. "
+
+#: core/kexiproject.cpp:405
+msgid "Could not rename object \"%1\"."
+msgstr "Мавзӯъи \"%1\" ба номи дигар сохта намешавад."
+
+#: core/kexipart.cpp:194
 msgid "Failed loading object's definition."
 msgstr "Бор кардани таърифи мавзӯъи нодуруст."
 
-#: core/kexipart.cpp:189
+#: core/kexipart.cpp:194
 msgid "Data may be corrupted."
 msgstr "Маълумот мумкин аст вайрон шуд."
+
+#: core/kexipart.cpp:242
+msgid "Failed loading object's data."
+msgstr "Бор кардани маълумоти мавзӯъи нодуруст."
+
+#: core/kexipart.cpp:242
+msgid "Data identifier: \"%1\"."
+msgstr "Вақти дохилӣ: \"%1\"."
 
 #: core/kexiuseractionmethod.cpp:19
 msgid "Open Object"
@@ -211,71 +242,81 @@ msgstr "Скриптро иҷро кардан"
 msgid "Exit Main Application"
 msgstr "Хуруҷ аз гузориши асосӣ"
 
-#: core/kexiuseraction.cpp:41 main/keximainwindowimpl.cpp:2523
+#: core/kexiuseraction.cpp:41
 msgid "Specified part does not exist"
 msgstr "Таъйин кардани қисми вуҷуд надорад"
 
-#: core/kexiuseraction.cpp:48 main/keximainwindowimpl.cpp:2530
-msgid "Specified document couldn't be opened"
-msgstr "Таъйин кардани ҳуҷҷат ки кушода наметавонад"
+#: core/kexiuseraction.cpp:48
+msgid "Specified document could not be opened."
+msgstr ""
+"Таъйин кардани ҳуҷҷат ки кушода "
+"наметавонад."
 
-#: core/kexi.cpp:52
+#: core/kexi.cpp:57
 msgid "No View"
 msgstr "Бе намоиш"
 
-#: core/kexi.cpp:53
+#: core/kexi.cpp:58
 msgid "Data View"
 msgstr "Намоиши таърих"
 
-#: core/kexi.cpp:54
+#: core/kexi.cpp:59
 msgid "Design View"
 msgstr "Намоиши дизайн"
 
-#: core/kexi.cpp:55
+#: core/kexi.cpp:60
 msgid "Text View"
 msgstr "Намоиши Матн"
 
-#: core/kexi.cpp:57
+#: core/kexi.cpp:62
 msgid "Unknown"
 msgstr "Номаълум"
 
-#: core/kexi.cpp:130
+#: core/kexi.cpp:135
 msgid ""
 "Value of \"%1\" column must be an identifier.\n"
 "\"%2\" is not a valid identifier."
 msgstr ""
+"Арзиши аз \"%1\" сутун бояд,ки дар.\n"
+"\"%2\" наметавонад ҳақикатан ҳамон бошад."
 
-#: core/kexi.cpp:156
+#: core/kexi.cpp:161
 msgid ""
 "You cannot use name \"%1\" for your object.\n"
 "It is reserved for internal Kexi objects. Please choose another name."
 msgstr ""
+"Шумо наметавонед истифода баред номи \"%1\" барои мақсади шумо.\n"
+"Ин фармоиш барои дохили ашёи Kexi.Марҳамад,мехоҳед дигар номро."
 
-#: core/kexi.cpp:159
+#: core/kexi.cpp:164
 msgid "Names of internal Kexi objects are starting with \"kexi__\"."
-msgstr ""
+msgstr "Номҳои дохили ашёҳои Kexi метавонад ба ҳаракат дарорад бо ёрии  \"kexi__\"."
 
 #: core/kexivalidator.h:71
 msgid "\"%1\" value has to be entered."
 msgstr "\"%1\" маъно барои вуруд."
 
-#: main/kexibrowser.cpp:62 main/keximainwindowimpl.cpp:458
+#: main/kexibrowser.cpp:71 main/keximainwindowimpl.cpp:453
 msgid "Project Navigator"
 msgstr "Нақшаи Дарёнавард"
 
-#: main/kexibrowser.cpp:86
+#: main/kexibrowser.cpp:99
 msgid "&Open"
 msgstr "&Кушодан"
 
-#: main/kexibrowser.cpp:89
+#: main/kexibrowser.cpp:103
 msgid "&Design"
 msgstr "&Нақша кашидан"
 
-#: main/kexibrowser.cpp:195
+#: main/kexibrowser.cpp:129
+msgid "&Rename"
+msgstr "&Номгузории дубора"
+
+#: main/kexibrowser.cpp:272
 msgid "&Create Object: %1..."
 msgstr "&Мавзӯъиро созед: %1..."
 
-#: main/kexibrowser.cpp:197
+#: main/kexibrowser.cpp:277
 msgid "&Create Object..."
 msgstr "&Мавзӯъиро Созед..."
 
@@ -292,7 +333,6 @@ msgstr ""
 "(c) 2003, 2004, OpenOffice Polska Ltd.\n"
 
 #: main/kexiaboutdata.h:38
-#, fuzzy
 msgid ""
 "This software is developed by Kexi Team - an international group\n"
 "of independent developers, with additional assistance and support\n"
@@ -301,9 +341,8 @@ msgid ""
 "Visit the company Home Page: http://www.openoffice.com.pl"
 msgstr ""
 "Ин Software аз тарафи Kexi Team -гурӯҳи\n"
-" мустақили интернационалӣ,бо ёрии "
-"иловагӣ ва тарафдории\n"
-"the OpenOffice Polska company.\n"
+"мустақили интернационалӣ, бо ёрии "
+"иловагӣ ва тарафдории\n OpenOffice Polska company.\n"
 "\n"
 "тараққӣ ёфтааст. Ба компанияи Home Page: "
 "http://www.openoffice.com.pl ташриф оваред."
@@ -511,21 +550,33 @@ msgstr "&Нақшаи мавҷудбударо кушоед"
 msgid "Open &Recent Project"
 msgstr "&Нақшаи навро кушоед"
 
-#: main/startup/KexiStartup.cpp:41
+#: main/startup/KexiStartup.cpp:152
+msgid ""
+"You have set both \"final-mode\" and \"design-mode\" startup options.Cannot "
+"start Kexi application this way."
+msgstr "Шумо метавонед гузоред ҳардуро \"final-mode\" ва \"design-mode\" оғози ҳуқуқи интихоб.Наметавонед оғози Kexi истифодабариро бо ин роҳ."
+
+#: main/startup/KexiStartup.cpp:284
 msgid "<qt>The file \"%1\" does not exist."
 msgstr "<qt>Файли\"%1\"вуҷуд надорад."
 
-#: main/startup/KexiStartup.cpp:57
+#: main/startup/KexiStartup.cpp:300
 msgid "The file \"%1\" is not recognized as being supported by Kexi."
 msgstr "Файли \"%1\"аз тарафи Kexi.тасдиқ нашудааст."
 
-#: main/startup/KexiStartup.cpp:58
+#: main/startup/KexiStartup.cpp:301
 #, c-format
 msgid "<qt>Database driver for this file type not found. <p>Detected MIME type: %1"
 msgstr ""
 "<qt>Драйвери асоси маълумот барои ин "
 "намуди файл ёфт нашудааст."
 "<p> Навъи MIME : %1 маълум шудааст"
+
+#: main/keximainwindowimpl.cpp:841 main/startup/KexiStartup.cpp:324
+msgid "Could not load list of available projects for connection \"%1\""
+msgstr ""
+"Рӯйхати нақшаҳои нақд барои алоқа бор "
+"карда намешаванд \"%1\""
 
 #: main/startup/KexiProjectSelector.cpp:219
 msgid "Open Project"
@@ -636,58 +687,58 @@ msgstr ""
 "<p> Шумо мехоҳед ин нобуд кардан ва  навро "
 "созед?"
 
-#: main/keximainwindowimpl.cpp:318 main/keximainwindowimpl.cpp:349 rc.cpp:60
+#: main/keximainwindowimpl.cpp:313 main/keximainwindowimpl.cpp:343 rc.cpp:60
 #, no-c-format
 msgid "&Window"
 msgstr "&Тиреза"
 
-#: main/keximainwindowimpl.cpp:321
+#: main/keximainwindowimpl.cpp:316
 msgid "Task Bar"
 msgstr "Панели масъала"
 
-#: main/keximainwindowimpl.cpp:377
+#: main/keximainwindowimpl.cpp:371
 msgid "&New..."
 msgstr "&Нав..."
 
-#: main/keximainwindowimpl.cpp:379
+#: main/keximainwindowimpl.cpp:373
 msgid "Create a new project"
 msgstr "Тайер намудани нақшаи нав"
 
-#: main/keximainwindowimpl.cpp:380
+#: main/keximainwindowimpl.cpp:374
 msgid "Creates a new project. Currently opened project is not affected."
-msgstr ""
+msgstr "Калонии нақшаи нав .Ҷойгирбуда кушодаги нақша наметавонад кор кардан."
 
-#: main/keximainwindowimpl.cpp:383
+#: main/keximainwindowimpl.cpp:377
 msgid "Open an existing project"
 msgstr "Кушодани нақшаи мавҷудбуда"
 
-#: main/keximainwindowimpl.cpp:384
+#: main/keximainwindowimpl.cpp:378
 msgid "Opens an existing project. Currently opened project is not affected."
-msgstr ""
+msgstr "Кушодани нақшаи мавҷудбуда.Ҷойгирбуда кушодаги нақша наметавонад кор кардан."
 
-#: main/keximainwindowimpl.cpp:392
+#: main/keximainwindowimpl.cpp:386
 msgid "&More Projects..."
 msgstr "&Нақшаҳои зиедтар..."
 
-#: main/keximainwindowimpl.cpp:396
+#: main/keximainwindowimpl.cpp:391
 msgid "Save object changes"
 msgstr "Тағйиротҳои мавзӯъ нигоҳ доред"
 
-#: main/keximainwindowimpl.cpp:397
+#: main/keximainwindowimpl.cpp:392
 msgid "Saves object changes from currently selected window."
 msgstr ""
 "Тағйиротҳои мавзӯъ нигоҳ доред аз "
 "тирезаи интихоботии ҳозира."
 
-#: main/keximainwindowimpl.cpp:399
+#: main/keximainwindowimpl.cpp:394
 msgid "Save &As..."
 msgstr "Нигоҳ доштан &Чун..."
 
-#: main/keximainwindowimpl.cpp:401 main/keximainwindowimpl.cpp:1635
+#: main/keximainwindowimpl.cpp:396 main/keximainwindowimpl.cpp:1670
 msgid "Save object as"
 msgstr "Нигоҳ доред мавзӯъ ҳамчун"
 
-#: main/keximainwindowimpl.cpp:402
+#: main/keximainwindowimpl.cpp:397
 msgid ""
 "Saves object changes from currently selected window under a new name (within "
 "the same project)."
@@ -696,219 +747,219 @@ msgstr ""
 "тирезаи интихоботии ҳозира дар таҳти "
 "номи дигар (бо ҳамин нақша)."
 
-#: main/keximainwindowimpl.cpp:404
+#: main/keximainwindowimpl.cpp:399
 msgid "Project Properties"
 msgstr "Нақшаи ҳосиятҳо"
 
-#: main/keximainwindowimpl.cpp:407
+#: main/keximainwindowimpl.cpp:402
 msgid "&Close Project"
 msgstr "&Нақшаро пӯшидан"
 
-#: main/keximainwindowimpl.cpp:409
+#: main/keximainwindowimpl.cpp:404
 msgid "Close the current project"
 msgstr "Нақшаи ҳозира пӯшидан"
 
-#: main/keximainwindowimpl.cpp:410
+#: main/keximainwindowimpl.cpp:405
 msgid "Closes the current project."
 msgstr "Нақшаи ҳозира пӯшидан."
 
-#: main/keximainwindowimpl.cpp:414
+#: main/keximainwindowimpl.cpp:409
 msgid "&Relationships..."
 msgstr "&Муносибатҳо..."
 
-#: main/keximainwindowimpl.cpp:416
+#: main/keximainwindowimpl.cpp:411
 msgid "Project relationships"
 msgstr "Нақшаи муносибатҳо"
 
-#: main/keximainwindowimpl.cpp:417
+#: main/keximainwindowimpl.cpp:412
 msgid "Shows project relationships."
 msgstr "Нақшаи муносибатҳо нишон додан."
 
-#: main/keximainwindowimpl.cpp:428
+#: main/keximainwindowimpl.cpp:423
 msgid "Delete object"
 msgstr "Мавзӯъро нобуд кардан"
 
-#: main/keximainwindowimpl.cpp:429
+#: main/keximainwindowimpl.cpp:424
 msgid "Deletes currently selected object."
 msgstr "Мавзӯъи интихоботии равон нобуд кунед."
 
-#: main/keximainwindowimpl.cpp:431
+#: main/keximainwindowimpl.cpp:426
 msgid "Delete Row"
 msgstr "Хориҷ кардан қатор"
 
-#: main/keximainwindowimpl.cpp:433
+#: main/keximainwindowimpl.cpp:428
 msgid "Delete currently selected row from a table."
 msgstr ""
 "Қатори интихоботии ҳозира аз ҷадвал "
 "нобуд кардан."
 
-#: main/keximainwindowimpl.cpp:434
+#: main/keximainwindowimpl.cpp:429
 msgid "Deletes currently selected row from a table."
 msgstr ""
 "Қатори интихоботии ҳозира аз ҷадвал "
 "нобуд кунед."
 
-#: main/keximainwindowimpl.cpp:437
+#: main/keximainwindowimpl.cpp:432
 msgid "&Data View"
 msgstr "&Таърихи Намоиш"
 
-#: main/keximainwindowimpl.cpp:441
+#: main/keximainwindowimpl.cpp:436
 msgid "Switch to Data View mode"
 msgstr "Дар ҳолати намоиши таърихро дохил кардан"
 
-#: main/keximainwindowimpl.cpp:442
+#: main/keximainwindowimpl.cpp:437
 msgid "Switches to Data View mode."
 msgstr "Дар ҳолати намоиши таърихро дохил кунед."
 
-#: main/keximainwindowimpl.cpp:444
+#: main/keximainwindowimpl.cpp:439
 msgid "D&esign View"
 msgstr "Н&ақша кашидан Намоиш"
 
-#: main/keximainwindowimpl.cpp:448
+#: main/keximainwindowimpl.cpp:443
 msgid "Switch to Design View mode"
 msgstr "Дар ҳолати намоиши дизайнро дохил кардан"
 
-#: main/keximainwindowimpl.cpp:449
+#: main/keximainwindowimpl.cpp:444
 msgid "Switches to Design View mode."
 msgstr "Дар ҳолати намоиши дизайнро дохил кунед."
 
-#: main/keximainwindowimpl.cpp:451
+#: main/keximainwindowimpl.cpp:446
 msgid "&Text View"
 msgstr "&Намоиши Матн"
 
-#: main/keximainwindowimpl.cpp:455
+#: main/keximainwindowimpl.cpp:450
 msgid "Switch to Text View mode"
 msgstr "Дар ҳолати намоиши матнро дохил кардан"
 
-#: main/keximainwindowimpl.cpp:456
+#: main/keximainwindowimpl.cpp:451
 msgid "Switches to Text View mode."
 msgstr "Дар ҳолати намоиши матнро дохил кунед."
 
-#: main/keximainwindowimpl.cpp:460
+#: main/keximainwindowimpl.cpp:455
 msgid "Go to Project navigator panel"
 msgstr "Рафтан ба панели навигатори проект"
 
-#: main/keximainwindowimpl.cpp:461
+#: main/keximainwindowimpl.cpp:456
 msgid "Goes to Project navigator panel."
 msgstr "Равед ба панели навигатори проект."
 
-#: main/keximainwindowimpl.cpp:464
+#: main/keximainwindowimpl.cpp:459
 msgid "Property Editor"
 msgstr "Муҳаррири ҳосият"
 
-#: main/keximainwindowimpl.cpp:466
+#: main/keximainwindowimpl.cpp:461
 msgid "Go to Property editor panel"
 msgstr "Рафтан ба панели муҳаррири ҳосият"
 
-#: main/keximainwindowimpl.cpp:467
+#: main/keximainwindowimpl.cpp:462
 msgid "Goes to Property editor panel."
 msgstr "Равед ба панели муҳаррири ҳосият."
 
-#: main/keximainwindowimpl.cpp:470 main/keximainwindowimpl.cpp:1668
+#: main/keximainwindowimpl.cpp:465 main/keximainwindowimpl.cpp:1703
 msgid "From File..."
 msgstr "Аз Файл..."
 
-#: main/keximainwindowimpl.cpp:472 main/keximainwindowimpl.cpp:1673
+#: main/keximainwindowimpl.cpp:467 main/keximainwindowimpl.cpp:1708
 msgid "From Server..."
 msgstr "Аз Сервер..."
 
-#: main/keximainwindowimpl.cpp:476
+#: main/keximainwindowimpl.cpp:471
 msgid "&Save Row"
 msgstr "&Нигоҳ доштан Қатор"
 
-#: main/keximainwindowimpl.cpp:477
+#: main/keximainwindowimpl.cpp:472
 msgid "Save currently selected table row's data"
 msgstr ""
 "Нигоҳ доштани таърихи қатори ҷадвали "
 "интихоботии ҳозира"
 
-#: main/keximainwindowimpl.cpp:478
+#: main/keximainwindowimpl.cpp:473
 msgid "Saves currently selected table row's data."
 msgstr ""
 "Таърихи қатори ҷадвали интихоботии "
 "ҳозира нигоҳ доред."
 
-#: main/keximainwindowimpl.cpp:480
+#: main/keximainwindowimpl.cpp:475
 msgid "&Insert Empty Row"
 msgstr "&Мондани қатори холӣ"
 
-#: main/keximainwindowimpl.cpp:482
+#: main/keximainwindowimpl.cpp:477
 msgid "Insert one empty row above"
 msgstr "Як қатори холӣ дар болои мондан"
 
-#: main/keximainwindowimpl.cpp:483
+#: main/keximainwindowimpl.cpp:478
 msgid "Inserts one empty row above currently selected table row."
 msgstr ""
 "Як қатори холӣ дар болои қатори "
 "интихоботии ҳозираи ҷадвалро монед."
 
-#: main/keximainwindowimpl.cpp:488
+#: main/keximainwindowimpl.cpp:483
 msgid "Lets you configure shortcut keys."
 msgstr "Гузоштани ба шумо танзими тугмачаҳои тез."
 
-#: main/keximainwindowimpl.cpp:491
+#: main/keximainwindowimpl.cpp:486
 msgid "Lets you configure toolbars."
 msgstr ""
 "Гузоштани ба шумо танзими пайраҳаҳои "
 "асбоб."
 
-#: main/keximainwindowimpl.cpp:493
+#: main/keximainwindowimpl.cpp:488
 msgid "Other"
 msgstr "Дигар"
 
-#: main/keximainwindowimpl.cpp:496
+#: main/keximainwindowimpl.cpp:491
 msgid "Show Context Help"
 msgstr "Намоиши Матни Кӯмак"
 
-#: main/keximainwindowimpl.cpp:499
+#: main/keximainwindowimpl.cpp:494
 msgid "Hide Context Help"
 msgstr "Кӯмаки матн пинҳон кунед"
 
-#: main/keximainwindowimpl.cpp:504
+#: main/keximainwindowimpl.cpp:499
 msgid "Enable Forms"
 msgstr "Шаклҳо имкон додан"
 
-#: main/keximainwindowimpl.cpp:506
+#: main/keximainwindowimpl.cpp:501
 msgid "Disable Forms"
 msgstr "Шаклҳои имкон надодан"
 
-#: main/keximainwindowimpl.cpp:519
+#: main/keximainwindowimpl.cpp:514
 msgid "Lets you configure Kexi."
 msgstr "Гузоштани ба шумо танзими Kexi."
 
-#: main/keximainwindowimpl.cpp:524
+#: main/keximainwindowimpl.cpp:519
 msgid "This shows useful tips on the use of this application."
-msgstr ""
+msgstr "Ин  ҷои намоишҳои истифодашаванда дар истифодаи ин хоҳиш. "
 
-#: main/keximainwindowimpl.cpp:527 main/keximainwindowimpl.cpp:2417
+#: main/keximainwindowimpl.cpp:522 main/keximainwindowimpl.cpp:2504
 msgid "Important Information"
 msgstr "Ахбороти муҳим"
 
-#: main/keximainwindowimpl.cpp:715
+#: main/keximainwindowimpl.cpp:738
 msgid "reason:"
 msgstr "сабаб:"
 
-#: main/keximainwindowimpl.cpp:748
+#: main/keximainwindowimpl.cpp:775
 msgid "cannot create object - "
 msgstr "мавзӯъ сохта наметавонад - "
 
-#: main/keximainwindowimpl.cpp:749
+#: main/keximainwindowimpl.cpp:776
 msgid "unknown object type \"%1\""
 msgstr "навъи мавзӯъи номаълум \"%1\""
 
-#: main/keximainwindowimpl.cpp:756
+#: main/keximainwindowimpl.cpp:783
 msgid "cannot create object of type \"%1\""
 msgstr "мавзӯъи намуди \"%1\" сохта наметавонад"
 
-#: main/keximainwindowimpl.cpp:766
+#: main/keximainwindowimpl.cpp:793
 msgid "object not found"
 msgstr "мавзӯъ ёфт нашудааст"
 
-#: main/keximainwindowimpl.cpp:779
+#: main/keximainwindowimpl.cpp:806
 msgid "cannot open object"
 msgstr "мавзӯъ кушода намешавад"
 
-#: main/keximainwindowimpl.cpp:787
+#: main/keximainwindowimpl.cpp:814
 msgid ""
 "You have requested selected objects to be opened automatically on startup. "
 "Several objects cannot be opened."
@@ -917,17 +968,11 @@ msgstr ""
 "шумо мавзӯъҳои интихобшу-даро хостед. "
 "Якчанд мавзӯъҳо кушода намешаванд."
 
-#: main/keximainwindowimpl.cpp:813
-msgid "Could not load list of available projects for connection \"%1\""
-msgstr ""
-"Рӯйхати нақшаҳои нақд барои алоқа бор "
-"карда намешаванд \"%1\""
-
-#: main/keximainwindowimpl.cpp:866
+#: main/keximainwindowimpl.cpp:895
 msgid "Welcome"
 msgstr "Хуш омадед"
 
-#: main/keximainwindowimpl.cpp:866
+#: main/keximainwindowimpl.cpp:895
 msgid ""
 "The <B>KEXI team</B>"
 " wishes you a lot of productive work, with this product. "
@@ -960,35 +1005,35 @@ msgstr ""
 "href=\"http://www.kexi-project.org\">www.kexi-project.org</A>оғози "
 "хуб аст."
 
-#: main/keximainwindowimpl.cpp:1493
+#: main/keximainwindowimpl.cpp:1524
 msgid "Create another project"
 msgstr "Нақшаи дигарро созед"
 
-#: main/keximainwindowimpl.cpp:1725
+#: main/keximainwindowimpl.cpp:1760
 msgid "Selected view mode is not supported for \"%1\" object."
-msgstr ""
+msgstr "Интихоби  намуди   тариқа наметавонад барои ашёи \"%1\" ."
 
-#: main/keximainwindowimpl.cpp:1727
+#: main/keximainwindowimpl.cpp:1762
 msgid "Selected view mode (%1) is not supported by this object type (%2)"
-msgstr ""
+msgstr "Интихоби намуди шакли фаъолият (%1) наметавонад нигоҳдорад  намуди ин ашёро (%2)"
 
-#: main/keximainwindowimpl.cpp:1735
+#: main/keximainwindowimpl.cpp:1770
 msgid "Switching to other view failed (%1)."
-msgstr ""
+msgstr "Хомуш сохтани дигар намуди файлҳои (%1)."
 
-#: main/keximainwindowimpl.cpp:1778
+#: main/keximainwindowimpl.cpp:1826
 msgid "Unknown error"
 msgstr "Хатои номаълум"
 
-#: main/keximainwindowimpl.cpp:1839
+#: main/keximainwindowimpl.cpp:1904
 msgid "Saving \"%1\" object failed."
 msgstr "Нигоҳ доред \"%1\" мавзӯъ нодуруст."
 
-#: main/keximainwindowimpl.cpp:1857
+#: main/keximainwindowimpl.cpp:1922
 msgid "Save Object As"
 msgstr "Нигоҳ доштани мавзӯъ ҳамчун"
 
-#: main/keximainwindowimpl.cpp:1871
+#: main/keximainwindowimpl.cpp:1936
 msgid ""
 "%1 \"%2\" already exists.\n"
 "Please choose other name."
@@ -996,39 +1041,51 @@ msgstr ""
 "%1 \"%2\" аллакай вуҷуд дорад.\n"
 "Илтимос, номи дигар интихоб кунед."
 
-#: main/keximainwindowimpl.cpp:1889
+#: main/keximainwindowimpl.cpp:1953
 msgid "Saving new \"%1\" object failed."
 msgstr "Мавзӯъи нодурусти нав \"%1\" нигоҳ доред."
 
-#: main/keximainwindowimpl.cpp:1920
+#: main/keximainwindowimpl.cpp:1983
 msgid "<p>The object has been modified: %1 \"%2\".</p><p>Do you want to save it?</p>"
-msgstr ""
+msgstr "<p>Ин ашё намуди зайлро дорад: %1 \"%2\".</p><p>Шумо мехоҳед инро нигоҳ доред?</p>"
 
-#: main/keximainwindowimpl.cpp:2316
+#: main/keximainwindowimpl.cpp:2379
 msgid "Do you want to remove:"
 msgstr "Шумо нест кардан мехоҳед:"
 
-#: main/keximainwindowimpl.cpp:2460
+#: main/keximainwindowimpl.cpp:2547
 msgid ""
 "Please note that forms are currently unstable functionality, provided "
 "<u>only for your preview</u>."
-msgstr ""
+msgstr "Марҳамад сабти намуди дар равобит буда нопойдор функтсионалии исботи он <u> фақат маҳкам  барои шумо</u>."
 
-#: main/keximainwindowimpl.cpp:2463
+#: main/keximainwindowimpl.cpp:2550
 msgid "Forms will be available after restarting Kexi application."
-msgstr ""
+msgstr "Намуд метавонад баъди азнавоғозкуни осонфаҳм хоҳиши Kexi."
 
-#: main/keximainwindowimpl.cpp:2467
+#: main/keximainwindowimpl.cpp:2554
 msgid "Forms will be hidden after restarting Kexi application."
-msgstr ""
+msgstr "Намуд метавонад баъди азнаоғозкуни Kexi махфи бошад."
 
-#: main/keximainwindowimpl.cpp:2487
-msgid "No <b>Finalmode data</b> found"
-msgstr "Таърихи <b>ҳолати охирин</b> кофта наёфт"
+#: main/keximainwindowimpl.cpp:2578
+msgid "Could not start project \"%1\" in Final Mode."
+msgstr " Наметавонад оғозкунии нақшаи \"%1\"дар охири шакл."
 
-#: main/keximainwindowimpl.cpp:2494
-msgid "Couldn't read <b>Finalmode data</b>"
-msgstr "Таърихи ҳолати охирин <b>хонда наметавонад</b>"
+#: main/keximainwindowimpl.cpp:2583
+msgid "No Final Mode data found."
+msgstr "Маълумоти ҳолати охирин кофта наёфт."
+
+#: main/keximainwindowimpl.cpp:2591
+msgid "Error reading Final Mode data."
+msgstr "Маълумоти ҳолати охирин хонда наметавонад."
+
+#: main/keximainwindowimpl.cpp:2621
+msgid "Specified plugin does not exist."
+msgstr "Таъйин кардани қисмро вуҷуд надорад."
+
+#: main/keximainwindowimpl.cpp:2629
+msgid "Specified object could not be opened."
+msgstr "Таъйин кардани ҳуҷҷат ки кушода наметавонад."
 
 #: main/kexinamewidget.cpp:63 rc.cpp:82
 #, no-c-format
@@ -1037,11 +1094,11 @@ msgstr "Сарлавҳа:"
 
 #: main/kexinamewidget.cpp:84
 msgid "Please enter the name."
-msgstr "Илтимос, номро дохил кунед."
+msgstr "Марҳамад,номро дохил кунед."
 
 #: main/kexinamewidget.cpp:85
 msgid "Please enter the caption."
-msgstr "Илтимос, сарлавҳаро дохил кунед."
+msgstr "Марҳамад, сарлавҳаро дохил кунед."
 
 #: main/projectWizard/kexicreateprojectpagelocation.cpp:38
 msgid "Database Location"
@@ -1100,7 +1157,8 @@ msgid ""
 "data sources include both SQL databases available with Kexi drivers and "
 "others, like Microsoft SQL Server and Microsoft Access."
 msgstr ""
-"<p>ODBC таснифоти кушода барои роҳи осонтари "
+"<p>"
+"ODBC таснифоти кушода барои роҳи осонтари "
 "Манбаи Маълумот. Манбаи Маълумот ҳам "
 "асосҳои маълумоти SQL бо Kexi драйвер ва "
 "дигарҳо, ба монанди Microsoft SQL Server ва Microsoft "
@@ -1188,6 +1246,7 @@ msgid " Line: %1 Col: %2 "
 msgstr "Хат: %1 Сутун: %2 "
 
 #: kexi_utils.h:36
+#, fuzzy
 msgid "This function is not available"
 msgstr "Ҳамин функсияи \"%1\" дастнорас"
 
@@ -1199,7 +1258,7 @@ msgstr "\"%1\" функсияи датснорас"
 msgid "%1 for version %2 of %3 application."
 msgstr "%1 барои тафсири %2 of %3 гузориш."
 
-#: main.cpp:44
+#: main.cpp:45
 msgid ""
 "Open object of type <object_type>\n"
 "and name <object_name> from specified project\n"
@@ -1218,29 +1277,37 @@ msgstr ""
 " дар оғози аппликация кушоед.\n"
 "<object_type>: "
 
-#: main.cpp:45
+#: main.cpp:57
 msgid ""
 "Like --open, but the object will\n"
 "be opened in Design Mode, if one is available"
-msgstr ""
+msgstr "Мехоҳед--кушодан,лекин ин ашё мешавад\nкушодани ин нақшсозӣ ,агар яке аз онҳо махфи бошад"
 
-#: main.cpp:46
+#: main.cpp:60
 msgid ""
 "Like --open, but the object will\n"
 "be opened in Text Mode, if one is available"
-msgstr ""
+msgstr "Мехоҳед--кушодан,лекин ин ашё мешавад\n кушодани ин матн ,агар яке аз онҳо махфи бошад"
 
-#: main.cpp:47
+#: main.cpp:63
 msgid "Start new object design of type <object_type>"
 msgstr ""
 "Сари кардани дизайни мавзӯъи нав аз рӯи "
 "намуд <object_type>"
 
-#: main.cpp:48
-msgid "Start project in final mode"
-msgstr "Сар кардани нақша аз ҳолати охирин"
+#: main.cpp:65
+msgid ""
+"Start project in the Final Mode, regardless \n"
+"of the project settings"
+msgstr "Оғози нақша дар охири намуд,хоҳиши \n  ,ба танзимдарори дар нақша "
 
-#: main.cpp:49
+#: main.cpp:68
+msgid ""
+"Start project in the Design Mode, regardless \n"
+"of the project settings"
+msgstr "Оғози нақша дар нақшасозии намуди,хоҳиши \n  ,ба танзимдарори дар нақша "
+
+#: main.cpp:71
 msgid "Database project file (or shortcut file) to open"
 msgstr ""
 "Нақшаи файли  асоси маълумот(ё ин ки роҳи "
@@ -1263,7 +1330,8 @@ msgid ""
 "You have not specified a valid cell range. This must contain the data you "
 "would like to import"
 msgstr ""
-"Шумо хати ячейкаи ҳақиқиро, ки аз маълумоте, ки мехоҳед ворид кунед, иборат "
+"Шумо хати ячейкаи ҳақиқиро, ки аз "
+"маълумоте, ки мехоҳед ворид кунед, иборат "
 "аст, нишон надодед"
 
 #: filters/import/kspread_chain/kexikspreadsource.cpp:300
@@ -1271,8 +1339,10 @@ msgid ""
 "You have chosen that a separate header range should be used. The specified "
 "range is invalid though. You have to fix that problem before you can proceed"
 msgstr ""
-"Ин маъно дорад, ки диапазони сарлавҳаи алоҳида дар ҳуҷҷат истифода мешавад. "
-"Диапазони муайян шуда нодуруст аст. Соз кардани диапазони он хеле зарур аст."
+"Ин маъно дорад, ки диапазони сарлавҳаи "
+"алоҳида дар ҳуҷҷат истифода мешавад. "
+"Диапазони муайян шуда нодуруст аст. Соз "
+"кардани диапазони он хеле зарур аст."
 
 #: filters/import/kspread_chain/kexikspreadimport.cpp:51
 msgid "kspread file"
@@ -1357,7 +1427,7 @@ msgstr ""
 "Барои номгӯй кардани ҳаракати курсори "
 "озод алоқа нест"
 
-#: kexidb/drivers/sqlite/sqlitecursor.cpp:267
+#: kexidb/drivers/sqlite/sqlitecursor.cpp:268
 msgid "Cannot fetch a record with a cursor"
 msgstr "Қайд бо курсор талаб карда наиешавад"
 
@@ -1365,7 +1435,19 @@ msgstr "Қайд бо курсор талаб карда наиешавад"
 msgid "Could not remove file \"%1\"."
 msgstr "Файли \"%1\"ҳаракат кардан натавонист."
 
-#: kexidb/cursor.cpp:386 kexidb/cursor.cpp:409
+#: kexidb/cursor.cpp:119
+msgid "No query statement or schema defined."
+msgstr "Напурсед инкори ё ин,ки муайянсозӣ."
+
+#: kexidb/cursor.cpp:125
+msgid "Query statement is empty."
+msgstr "Пурсиши инкори холи мебошад."
+
+#: kexidb/cursor.cpp:134
+msgid "Error opening database cursor."
+msgstr "Хатоӣ дар кушодани курсори асоси маълумот."
+
+#: kexidb/cursor.cpp:389 kexidb/cursor.cpp:412
 msgid "Cannot fetch next record."
 msgstr "Қайди навбатӣ талаб карда намешавад."
 
@@ -1458,173 +1540,181 @@ msgstr ""
 msgid "Invalid database contents. "
 msgstr "Мазмунҳои асосӣ маълумоти нодуруст. "
 
-#: kexidb/connection.cpp:148
+#: kexidb/connection.cpp:149
 msgid "Connection already established."
 msgstr "Алоқа аллакай барқарор шуд."
 
-#: kexidb/connection.cpp:188
+#: kexidb/connection.cpp:189
 msgid "Not connected to the database server."
 msgstr ""
 "Ба сервери асоси маълумот пайваст "
 "нашудааст."
 
-#: kexidb/connection.cpp:198
+#: kexidb/connection.cpp:199
 msgid "Currently no database is used."
 msgstr ""
 "Ҳоло асоси маълумот истифода бурда "
 "намешавад."
 
-#: kexidb/connection.cpp:254
+#: kexidb/connection.cpp:255
 msgid "The database \"%1\" does not exist."
 msgstr "Асоси маълумоти \"%1\" вуҷуд надорад."
 
-#: kexidb/connection.cpp:274
+#: kexidb/connection.cpp:275
 msgid "Database file \"%1\" does not exist."
 msgstr "Файли асоси маълумоти \"%1\" вуҷуд надорад."
 
-#: kexidb/connection.cpp:279
+#: kexidb/connection.cpp:280
 msgid "Database file \"%1\" is not readable."
 msgstr ""
 "Файли асоси маълумоти \"%1\" хондан "
 "намешавад."
 
-#: kexidb/connection.cpp:284
+#: kexidb/connection.cpp:285
 msgid "Database file \"%1\" is not writable."
 msgstr ""
 "Файли асоси маълумоти \"%1\" навиштан "
 "намешавад."
 
-#: kexidb/connection.cpp:326
+#: kexidb/connection.cpp:327
 msgid "Database \"%1\" already exists."
 msgstr "Асоси маълумоти \"%1\" аллакай вуҷуд дорад."
 
-#: kexidb/connection.cpp:330
+#: kexidb/connection.cpp:331
 msgid "Cannot create database \"%1\". This name is reserved for system database."
 msgstr ""
 "Асоси маълумоти \"%1\"сохта намешавад. Ин "
 "ном барои системаи асоси маълумот захира "
 "аст."
 
-#: kexidb/connection.cpp:345
+#: kexidb/connection.cpp:346
 msgid "Error creating database \"%1\" on the server."
 msgstr ""
 "Сохтани хатоии асоси маълумоти \"%1\"дар "
 "сервер аст."
 
-#: kexidb/connection.cpp:359
+#: kexidb/connection.cpp:360
 msgid "Database \"%1\" created but could not be opened."
 msgstr ""
 "Асоси маълумоти \"%1\"сохта шудааст, аммо "
 "кушода намешавад."
 
-#: kexidb/connection.cpp:456
+#: kexidb/connection.cpp:457
 msgid "\"%1\" database property not found"
 msgstr "\"%1\" ҳосияти асосӣ маълумот кофта наёфт"
 
-#: kexidb/connection.cpp:473
+#: kexidb/connection.cpp:474
 msgid "Database version (%1) does not match Kexi application's version (%2)"
-msgstr ""
+msgstr "Ҳоситяти тавсири (%1)наметвонад бисёртарt Kexi хоҳиши тавсири (%2)"
 
-#: kexidb/connection.cpp:537
+#: kexidb/connection.cpp:538
 msgid "Cannot find any database for temporary connection."
 msgstr ""
 "Ягон асоси маълумот барои алоқаи "
 "муваққатӣ ёфт намешавад."
 
-#: kexidb/connection.cpp:541
+#: kexidb/connection.cpp:542
 msgid "Error during starting temporary connection using \"%1\" database name."
 msgstr ""
 "Хатоӣ, дар вақти саршавии алоқаи "
 "муваққатӣ, номи асоси маълумотиро \"%1\" "
 "истифода мебарад."
 
-#: kexidb/connection.cpp:558
+#: kexidb/connection.cpp:559
 msgid "Cannot drop database - name not specified."
 msgstr ""
 "Асоси маълумот партофта намешавад - ном "
 "қайд нашудааст."
 
-#: kexidb/connection.cpp:576
+#: kexidb/connection.cpp:577
 msgid "Cannot delete database - name not specified."
 msgstr ""
 "Асоси маълумот кӯр карда намешавад - ном "
 "қайд нашудааст."
 
-#: kexidb/connection.cpp:581
+#: kexidb/connection.cpp:582
 msgid "Cannot delete system database \"%1\"."
 msgstr ""
 "Системаи асоси маълумоти \"%1\" кӯр карда "
 "намешавад."
 
-#: kexidb/connection.cpp:1028
+#: kexidb/connection.cpp:907
+msgid "Error while executing SQL statement."
+msgstr "Хатоги вақте,ки иҷрокунии SQL тасдиқ."
+
+#: kexidb/connection.cpp:1041
 msgid "Cannot create table without fields."
 msgstr "Ҷадвал бе ҳошия сохта намешавад."
 
-#: kexidb/connection.cpp:1032
+#: kexidb/connection.cpp:1045
 msgid "System name \"%1\" cannot be used as table name."
 msgstr ""
 "Номи системаи \"%1\" ҳамчун номи ҷадвал "
 "истифода бурда намешавад."
 
-#: kexidb/connection.cpp:1040
+#: kexidb/connection.cpp:1053
 msgid "System name \"%1\" cannot be used as one of fields in \"%2\" table."
 msgstr ""
 "Номи системаи \"%1\"ҳамчун яке аз ҳошияҳо "
 "дар ҷадвали \"%2\" истифода бурда намешавад. "
 
-#: kexidb/connection.cpp:1150
-msgid "Table \"%1\" cannot be removed."
-msgstr "Ҷадвали \"%1\" ҳаракат кардан наметавонад."
+#: kexidb/connection.cpp:1149
+msgid "Could not remove object's data."
+msgstr "Маълумоти мавзӯъро ҳаракат кардан натавонист."
 
-#: kexidb/connection.cpp:1275
+#: kexidb/connection.cpp:1163
+msgid "Table \"%1\" cannot be removed."
+msgstr "Ҷадвали \"%1\" ҳаракат карда наметавонад."
+
+#: kexidb/connection.cpp:1290
 msgid "Transaction already started."
 msgstr "Кор аллакай оғоз ёфт."
 
-#: kexidb/connection.cpp:1312 kexidb/connection.cpp:1341
+#: kexidb/connection.cpp:1327 kexidb/connection.cpp:1356
 msgid "Transaction not started."
 msgstr "Кор оғоз нашудааст."
 
-#: kexidb/connection.cpp:1324
+#: kexidb/connection.cpp:1339
 msgid "Error on commit transaction"
 msgstr "Хатоӣ дар ба амалории созиш"
 
-#: kexidb/connection.cpp:1353
+#: kexidb/connection.cpp:1368
 msgid "Error on rollback transaction"
 msgstr "Хатоӣ дар баста шудани кор"
 
-#: kexidb/connection.cpp:1506 kexidb/connection.cpp:1667
+#: kexidb/connection.cpp:1521 kexidb/connection.cpp:1690
 msgid "Invalid object name \"%1\""
 msgstr "Номи мавзӯъи нодуруст \"%1\""
 
-#: kexidb/connection.cpp:1912 kexidb/connection.cpp:2040
+#: kexidb/connection.cpp:1934 kexidb/connection.cpp:2060
 msgid "Primary key's field \"%1\" cannot be empty."
 msgstr "Ҳошияи холӣ будан \"%1\" наметавонад."
 
-#: kexidb/connection.cpp:1926
+#: kexidb/connection.cpp:1948
 msgid "Row updating on the server failed."
-msgstr ""
+msgstr "Қатори илова кардани он дар шабака."
 
-#: kexidb/connection.cpp:1976
+#: kexidb/connection.cpp:1997
 msgid "Row inserting on the server failed."
 msgstr "Қатори мондани дар сервер нодуруст."
 
-#: kexidb/connection.cpp:2054
+#: kexidb/connection.cpp:2074
 msgid "Row deleting on the server failed."
 msgstr "Қатори нобудкардани дар сервер нодуруст."
 
-#: kexidb/utils.cpp:114
+#: kexidb/utils.cpp:96
 msgid "Message from server:"
 msgstr "Хабар аз сервер:"
 
-#: kexidb/utils.cpp:116
+#: kexidb/utils.cpp:98
 msgid "SQL statement:"
 msgstr "Ҳукми SQL:"
 
-#: kexidb/utils.cpp:119
+#: kexidb/utils.cpp:101
 msgid "Server result name:"
 msgstr "Номи натихчаи сервер:"
 
-#: kexidb/utils.cpp:121
+#: kexidb/utils.cpp:103
 msgid "Result number:"
 msgstr "Рақами Натиҷа:"
 
@@ -1636,31 +1726,94 @@ msgstr "KFormDesigner"
 msgid "Document to open"
 msgstr "Ҳуҷҷат барои кушодан"
 
-#: formeditor/test/kfmview.cpp:39
+#: formeditor/test/kfmview.cpp:44
 msgid "Objects"
 msgstr "Мавзӯъҳо"
 
-#: formeditor/test/kfmview.cpp:55
-msgid "Print Object Tree"
-msgstr "Дарахти мавзӯъро чоп кунед"
-
-#: formeditor/extrawidgets.cpp:669 formeditor/test/kfmview.cpp:64
+#: formeditor/extrawidgets.cpp:669 formeditor/test/kfmview.cpp:69
 #: plugins/forms/kexiformpart.cpp:71 plugins/forms/kexiformpart.cpp:84
 msgid "Edit Tab Order"
 msgstr "Муҳаррири тартиботи табулясия"
 
-#: formeditor/test/kfmview.cpp:65 plugins/forms/kexiformpart.cpp:72
-#: plugins/forms/kexiformpart.cpp:85
-msgid "Adjust Size"
-msgstr "Андозаро танзимдиҳӣ"
-
-#: formeditor/test/kfmview.cpp:66 plugins/forms/kexiformpart.cpp:86
+#: formeditor/test/kfmview.cpp:71 plugins/forms/kexiformpart.cpp:86
 msgid "Edit Pixmap Collection"
 msgstr "Муҳаррири коллексияи Pixmap"
 
-#: formeditor/test/kfmview.cpp:67 plugins/forms/kexiformpart.cpp:87
+#: formeditor/test/kfmview.cpp:72 plugins/forms/kexiformpart.cpp:87
 msgid "Edit Form Connections"
 msgstr "Муҳаррири шакли алоқаҳо"
+
+#: formeditor/test/kfmview.cpp:80
+msgid "Lay Out Widgets &Horizontally"
+msgstr "Тарҳбандии васеъкунии &уфуқӣ"
+
+#: formeditor/test/kfmview.cpp:81
+msgid "Lay Out Widgets &Vertically"
+msgstr "Тарҳбандии васеъкунии &амудӣ"
+
+#: formeditor/test/kfmview.cpp:82
+msgid "Lay Out Widgets in &Grid"
+msgstr "Тарҳбандии васеъкунӣ &дар шабака"
+
+#: formeditor/test/kfmview.cpp:83
+msgid "&Break Layout"
+msgstr "&Тарҳбандиро буред"
+
+#: formeditor/test/kfmview.cpp:85
+msgid "Bring Widget to Front"
+msgstr "Овардани тарҳбандиҳо  аз пеш "
+
+#: formeditor/test/kfmview.cpp:86
+msgid "Send Widget to Back"
+msgstr "Фиристодани Widget баракс"
+
+#: formeditor/test/kfmview.cpp:88
+msgid "Align Widget's position"
+msgstr "Баробар созии Widget's ҷойҳо"
+
+#: formeditor/test/kfmview.cpp:89
+msgid "To Left"
+msgstr "Ба тарафи чап"
+
+#: formeditor/test/kfmview.cpp:90
+msgid "To Right"
+msgstr "Ба тарафи рост"
+
+#: formeditor/test/kfmview.cpp:91
+msgid "To Top"
+msgstr "Ба боло"
+
+#: formeditor/test/kfmview.cpp:92
+msgid "To Bottom"
+msgstr "Ба поён"
+
+#: formeditor/test/kfmview.cpp:93 formeditor/test/kfmview.cpp:97
+msgid "To Grid"
+msgstr "Ба шабака"
+
+#: formeditor/test/kfmview.cpp:95
+msgid "Adjust Widget's size"
+msgstr "Танзими андозаи васеъ"
+
+#: formeditor/test/kfmview.cpp:96
+msgid "To Fit"
+msgstr "Ба мувофиқ"
+
+#: formeditor/test/kfmview.cpp:98
+msgid "To Shortest"
+msgstr "Ба хеле кӯтоҳ"
+
+#: formeditor/test/kfmview.cpp:99
+msgid "To Tallest"
+msgstr "Ба хеле дароз"
+
+#: formeditor/test/kfmview.cpp:100
+msgid "To Narrowest"
+msgstr "Ба хеле борик"
+
+#: formeditor/test/kfmview.cpp:101
+msgid "To Widest"
+msgstr "Ба хеле васеъ"
 
 #: formeditor/commands.cpp:102
 msgid "Change %1 of multiple widgets"
@@ -1679,32 +1832,37 @@ msgstr "Васеъкунии бисёртар ҳаракат кунед"
 msgid "Change layout of %1"
 msgstr "Дигаргун кардани тарҳбандӣ %1"
 
-#: formeditor/commands.cpp:285
+#: formeditor/commands.cpp:289
 #, c-format
 msgid "Insert %1"
 msgstr "Мондан %1"
 
-#: formeditor/commands.cpp:287
+#: formeditor/commands.cpp:291
 msgid "Insert widget"
 msgstr "Мондани васеъкунӣҳо"
 
-#: formeditor/commands.cpp:399
+#: formeditor/commands.cpp:404
 msgid "Lay out widgets horizontally"
 msgstr "Тарҳбандии васеъкунии уфуқӣ"
 
-#: formeditor/commands.cpp:401
+#: formeditor/commands.cpp:406
 msgid "Lay out widgets vertically"
 msgstr "Тарҳбандии васеъкунии амудӣ"
 
-#: formeditor/commands.cpp:403
+#: formeditor/commands.cpp:408
 msgid "Lay out widgets in a grid"
 msgstr "Тарҳбандии васеъкунӣ дар шабака"
 
-#: formeditor/commands.cpp:405
+#: formeditor/commands.cpp:410
 msgid "Create Layout"
 msgstr "Тарҳбандиро созед"
 
-#: formeditor/commands.cpp:601
+#: formeditor/commands.cpp:446
+#, c-format
+msgid "Break Layout: %1"
+msgstr "Тарҳбандиро буред %1"
+
+#: formeditor/commands.cpp:655
 msgid "Delete widget"
 msgstr "Васеъкуниро нобуд кардан"
 
@@ -1717,7 +1875,7 @@ msgid "%1 Contents"
 msgstr "%1 Мазмунҳо"
 
 #: formeditor/extrawidgets.cpp:65
-#: formeditor/factories/stdwidgetfactory.cpp:361
+#: formeditor/factories/stdwidgetfactory.cpp:384
 msgid "Edit Rich Text"
 msgstr "Муҳаррири матни дастнорас"
 
@@ -1766,7 +1924,7 @@ msgid "New &Subitem"
 msgstr "&Зерҷузъи нав"
 
 #: formeditor/extrawidgets.cpp:271 formeditor/extrawidgets.cpp:331
-#: formeditor/formmanager.cpp:88
+#: formeditor/formmanager.cpp:90
 msgid "&Remove Item"
 msgstr "&Ҷузъро нест кардан"
 
@@ -1790,7 +1948,7 @@ msgstr "Фишордиҳанда"
 
 #: formeditor/extrawidgets.cpp:315
 msgid "Resizable"
-msgstr ""
+msgstr "Пешҳаҷмгузорӣ "
 
 #: formeditor/extrawidgets.cpp:316
 msgid "Full Width"
@@ -1830,7 +1988,7 @@ msgstr "&Иловаи алоқа"
 
 #: formeditor/extrawidgets.cpp:827
 msgid "Create a Connection by &Drag and drop"
-msgstr ""
+msgstr "Бузургии алоқа барои  &Кашонидан ва қатра "
 
 #: formeditor/extrawidgets.cpp:834
 msgid "&Remove Connection"
@@ -1854,303 +2012,382 @@ msgstr "Чок"
 
 #: formeditor/extrawidgets.cpp:1039
 msgid "<qt>You have not selected a <b>%1</b>.</qt>"
-msgstr ""
+msgstr "<qt>Шумо интихоби инор надоред <b>%1</b>.</qt>"
 
 #: formeditor/extrawidgets.cpp:1052
 msgid "The signal/slot arguments are not compatible."
-msgstr ""
+msgstr "Ин бонг/ҳақиқатан ҷои ҷои ҷобаҷогузори нест."
 
 #: formeditor/extrawidgets.cpp:1112
 msgid "Do you want to remove this connection ?"
 msgstr "Шумо метавонед ин алоқа нобуд кардан ?"
 
-#: formeditor/factories/stdwidgetfactory.cpp:107
+#: formeditor/factories/stdwidgetfactory.cpp:110
 msgid "Text Label"
-msgstr "Ёрлиқи матн"
+msgstr "Тамғаи Матн"
 
-#: formeditor/factories/stdwidgetfactory.cpp:108
+#: formeditor/factories/stdwidgetfactory.cpp:112
+msgid ""
+"_: This string will be used to name widgets of this class. It must _not_ "
+"contain white spaces and non latin1 characters\n"
+"TextLabel"
+msgstr "ТамғаиМатн"
+
+#: formeditor/factories/stdwidgetfactory.cpp:113
 msgid "A widget to display text"
 msgstr "Васеъкунӣ барои намоиши матн"
 
-#: formeditor/factories/stdwidgetfactory.cpp:114
+#: formeditor/factories/stdwidgetfactory.cpp:119
 msgid "Picture Label"
 msgstr "Ёрлиқи сурат"
 
-#: formeditor/factories/stdwidgetfactory.cpp:115
+#: formeditor/factories/stdwidgetfactory.cpp:120
+msgid "PictureLabel"
+msgstr "Ёрлиқи сурат"
+
+#: formeditor/factories/stdwidgetfactory.cpp:121
 msgid "A widget to display pixmaps"
 msgstr "Васеъкунӣ барои намоиши pixmap-ҳо"
 
-#: formeditor/factories/stdwidgetfactory.cpp:123
+#: formeditor/factories/stdwidgetfactory.cpp:129
 msgid "Line Edit"
-msgstr "Мухаррири Хато"
+msgstr "Муҳаррири хат"
 
-#: formeditor/factories/stdwidgetfactory.cpp:124
+#: formeditor/factories/stdwidgetfactory.cpp:130
+msgid "LineEdit"
+msgstr "Муҳаррири Хат"
+
+#: formeditor/factories/stdwidgetfactory.cpp:131
 msgid "A widget to input text"
 msgstr "Васеъкунӣ барои воридаи матн"
 
-#: formeditor/factories/stdwidgetfactory.cpp:130
+#: formeditor/factories/stdwidgetfactory.cpp:137
+#: formeditor/factories/stdwidgetfactory.cpp:138
 msgid "Spring"
-msgstr ""
-
-#: formeditor/factories/stdwidgetfactory.cpp:131
-msgid "A spring to place between widgets"
-msgstr ""
+msgstr "Баҳор"
 
 #: formeditor/factories/stdwidgetfactory.cpp:139
+msgid "A spring to place between widgets"
+msgstr "Ҷои онро дар байни widget"
+
+#: formeditor/factories/stdwidgetfactory.cpp:147
 msgid "Push Button"
 msgstr "Тугмаро пахш кунед"
 
-#: formeditor/factories/stdwidgetfactory.cpp:140
-msgid "A simple push button to execute actions"
-msgstr ""
+#: formeditor/factories/stdwidgetfactory.cpp:148
+msgid "PushButton"
+msgstr "Тугмаро пахш кунед"
 
-#: formeditor/factories/stdwidgetfactory.cpp:146
+#: formeditor/factories/stdwidgetfactory.cpp:149
+msgid "A simple push button to execute actions"
+msgstr "Бо пахшкунии кнопкаи оддӣ фармонҳо иҷро мешаванд"
+
+#: formeditor/factories/stdwidgetfactory.cpp:155
+#: formeditor/factories/stdwidgetfactory.cpp:156
 msgid "Radio"
 msgstr "Радио"
 
-#: formeditor/factories/stdwidgetfactory.cpp:147
+#: formeditor/factories/stdwidgetfactory.cpp:157
 msgid "A radio button with text or pixmap label"
 msgstr "Тугмаи радио бо ёрлиқи матн ё pixmap"
 
-#: formeditor/factories/stdwidgetfactory.cpp:153
-#: formeditor/factories/stdwidgetfactory.cpp:295
+#: formeditor/factories/stdwidgetfactory.cpp:163
 msgid "Check Box"
 msgstr "Қуттии тафтиш"
 
-#: formeditor/factories/stdwidgetfactory.cpp:154
+#: formeditor/factories/stdwidgetfactory.cpp:164
+msgid "CheckBox"
+msgstr "Қуттии тафтиш"
+
+#: formeditor/factories/stdwidgetfactory.cpp:165
 msgid "A check box with text or pixmap label"
 msgstr "Қуттии тафтиш бо ёрлиқи матн ё pixmap"
 
-#: formeditor/factories/stdwidgetfactory.cpp:162
+#: formeditor/factories/stdwidgetfactory.cpp:173
 msgid "Spin Box"
-msgstr ""
+msgstr "Қуттии Spin"
 
-#: formeditor/factories/stdwidgetfactory.cpp:163
+#: formeditor/factories/stdwidgetfactory.cpp:174
+msgid "SpinBox"
+msgstr "ҚуттииSpin"
+
+#: formeditor/factories/stdwidgetfactory.cpp:175
 msgid "A spin box widget"
-msgstr ""
+msgstr "Васеъкунии қуттии spin"
 
-#: formeditor/factories/stdwidgetfactory.cpp:171
+#: formeditor/factories/stdwidgetfactory.cpp:183
 msgid "Combo Box"
-msgstr ""
+msgstr "Қуттии Combo"
 
-#: formeditor/factories/stdwidgetfactory.cpp:172
+#: formeditor/factories/stdwidgetfactory.cpp:184
+msgid "ComboBox"
+msgstr "ҚуттииCombo"
+
+#: formeditor/factories/stdwidgetfactory.cpp:185
 msgid "A combo box widget"
-msgstr ""
+msgstr "Васеъкунии қуттии combo"
 
-#: formeditor/factories/stdwidgetfactory.cpp:180
+#: formeditor/factories/stdwidgetfactory.cpp:193
 msgid "List Box"
 msgstr "Рӯйхати қуттӣ"
 
-#: formeditor/factories/stdwidgetfactory.cpp:181
+#: formeditor/factories/stdwidgetfactory.cpp:194
+msgid "ListBox"
+msgstr "Қуттии рӯйхат"
+
+#: formeditor/factories/stdwidgetfactory.cpp:195
 msgid "A simple list widget"
 msgstr "Рӯйхати васеъкунии оддӣ"
 
-#: formeditor/factories/stdwidgetfactory.cpp:189
+#: formeditor/factories/stdwidgetfactory.cpp:203
 msgid "Text Editor"
 msgstr "Муҳаррири матн"
 
-#: formeditor/factories/stdwidgetfactory.cpp:190
-msgid "A simple single-page rich text editor"
-msgstr ""
+#: formeditor/factories/stdwidgetfactory.cpp:204
+msgid "TextEditor"
+msgstr "Муҳаррири матн"
 
-#: formeditor/factories/stdwidgetfactory.cpp:198
+#: formeditor/factories/stdwidgetfactory.cpp:205
+msgid "A simple single-page rich text editor"
+msgstr "Бонги одди-саҳифаи холии муҳарир  "
+
+#: formeditor/factories/stdwidgetfactory.cpp:213
 msgid "List View"
 msgstr "Рӯйхати намоиш"
 
-#: formeditor/factories/stdwidgetfactory.cpp:199
+#: formeditor/factories/stdwidgetfactory.cpp:214
+msgid "ListView"
+msgstr "Рӯйхати намоиш"
+
+#: formeditor/factories/stdwidgetfactory.cpp:215
 msgid "A list (or tree) widget"
 msgstr "Рӯйхати (ё дараҳти) васеъкунӣ"
 
-#: formeditor/factories/stdwidgetfactory.cpp:205
+#: formeditor/factories/stdwidgetfactory.cpp:221
+#: formeditor/factories/stdwidgetfactory.cpp:222
 msgid "Slider"
 msgstr "Сураткунанда"
 
-#: formeditor/factories/stdwidgetfactory.cpp:206
+#: formeditor/factories/stdwidgetfactory.cpp:223
 msgid "An horizontal slider"
 msgstr "Сурати уфуқӣ"
 
-#: formeditor/factories/stdwidgetfactory.cpp:214
+#: formeditor/factories/stdwidgetfactory.cpp:231
 msgid "Progress Bar"
 msgstr "Пайраҳаи пешрафт"
 
-#: formeditor/factories/stdwidgetfactory.cpp:215
+#: formeditor/factories/stdwidgetfactory.cpp:232
+msgid "ProgressBar"
+msgstr "Пайраҳаи пешрафт"
+
+#: formeditor/factories/stdwidgetfactory.cpp:233
 msgid "A progress indicator widget"
 msgstr "Нишондиҳандаи пешрафти васеъкунӣ"
 
-#: formeditor/factories/stdwidgetfactory.cpp:221
+#: formeditor/factories/stdwidgetfactory.cpp:239
+#: formeditor/factories/stdwidgetfactory.cpp:240
 msgid "Line"
 msgstr "Хат"
 
-#: formeditor/factories/stdwidgetfactory.cpp:222
+#: formeditor/factories/stdwidgetfactory.cpp:241
 msgid "A line to be used as a separator"
 msgstr "Хат барои истифодаи ҳамчун ҷудокунанда"
 
-#: formeditor/factories/stdwidgetfactory.cpp:232
+#: formeditor/factories/stdwidgetfactory.cpp:251
 msgid "Date Widget"
 msgstr "Васеъкунии таърих"
 
-#: formeditor/factories/stdwidgetfactory.cpp:233
+#: formeditor/factories/stdwidgetfactory.cpp:252
+msgid "DateWidget"
+msgstr "Васеъкунии таърих"
+
+#: formeditor/factories/stdwidgetfactory.cpp:253
 msgid "A widget to input or display a date"
 msgstr "Васеъкунӣ барои вориди ё намоиши таърих"
 
-#: formeditor/factories/stdwidgetfactory.cpp:243
+#: formeditor/factories/stdwidgetfactory.cpp:263
 msgid "Time Widget"
 msgstr "Васеъкунии вақт"
 
-#: formeditor/factories/stdwidgetfactory.cpp:244
+#: formeditor/factories/stdwidgetfactory.cpp:264
+msgid "TimeWidget"
+msgstr "Васеъкунии вақт"
+
+#: formeditor/factories/stdwidgetfactory.cpp:265
 msgid "A widget to input or display a time"
 msgstr "Васеъкунӣ барои вориди ё намоиши вақт"
 
-#: formeditor/factories/stdwidgetfactory.cpp:254
+#: formeditor/factories/stdwidgetfactory.cpp:275
 msgid "Date/Time Widget"
 msgstr "Васеъкунии таърих/вақт"
 
-#: formeditor/factories/stdwidgetfactory.cpp:255
+#: formeditor/factories/stdwidgetfactory.cpp:276
+msgid "DateTimeWidget"
+msgstr "Васеъкунии таърих/вақт"
+
+#: formeditor/factories/stdwidgetfactory.cpp:277
 msgid "A widget to input or display a time and a date"
 msgstr ""
 "Васеъкунӣ барои вориди ё намоиши вақт ва "
 "таърих"
 
-#: formeditor/factories/stdwidgetfactory.cpp:279
-msgid "Label"
-msgstr "Ёрлиқ"
-
-#: formeditor/factories/stdwidgetfactory.cpp:289
-msgid "Button"
-msgstr "Тугма"
-
-#: formeditor/factories/stdwidgetfactory.cpp:292
-msgid "Radio Button"
-msgstr "Тугмаи радио"
-
-#: formeditor/factories/stdwidgetfactory.cpp:307
-msgid "Enter your text here"
-msgstr "Матни шумо ба ин ҷо дохил кунед"
-
-#: formeditor/factories/stdwidgetfactory.cpp:313
+#: formeditor/factories/stdwidgetfactory.cpp:336
 msgid "Column 1"
 msgstr "Сутуни 1"
 
-#: formeditor/factories/stdwidgetfactory.cpp:366
+#: formeditor/factories/stdwidgetfactory.cpp:390
 msgid "Edit Listview Contents"
 msgstr "Муҳаррири мазмунҳои рӯйхати намоиш"
 
-#: formeditor/factories/containerfactory.cpp:158
+#: formeditor/factories/containerfactory.cpp:159
 #, c-format
 msgid "Page %1"
 msgstr "Саҳифа %1"
 
-#: formeditor/factories/containerfactory.cpp:211
-#: formeditor/factories/containerfactory.cpp:417
-#: formeditor/factories/containerfactory.cpp:428
-#: formeditor/factories/containerfactory.cpp:440
+#: formeditor/factories/containerfactory.cpp:212
+#: formeditor/factories/containerfactory.cpp:429
+#: formeditor/factories/containerfactory.cpp:443
+#: formeditor/factories/containerfactory.cpp:459
 msgid "Add Page"
 msgstr "Иловаи Саҳифа"
 
-#: formeditor/factories/containerfactory.cpp:224
-#: formeditor/factories/containerfactory.cpp:308
+#: formeditor/factories/containerfactory.cpp:225
 msgid "Button Group"
 msgstr "Гурӯҳи тугма"
 
-#: formeditor/factories/containerfactory.cpp:225
+#: formeditor/factories/containerfactory.cpp:226
+msgid "ButtonGroup"
+msgstr "Гурӯҳи тугма"
+
+#: formeditor/factories/containerfactory.cpp:227
 msgid "A simple container to group buttons"
 msgstr "Контейнери оддӣ барои гурӯҳи тугмаҳо"
 
-#: formeditor/factories/containerfactory.cpp:235
+#: formeditor/factories/containerfactory.cpp:237
 msgid "Tab Widget"
 msgstr "Васеъи табулятор"
 
-#: formeditor/factories/containerfactory.cpp:236
-msgid "A widget to display multiple pages using tabs"
-msgstr ""
+#: formeditor/factories/containerfactory.cpp:238
+msgid "TabWidget"
+msgstr "Васеъи табулятор"
 
-#: formeditor/factories/containerfactory.cpp:242
+#: formeditor/factories/containerfactory.cpp:239
+msgid "A widget to display multiple pages using tabs"
+msgstr "Васеъии намоиш варақаҳои кории табулятор"
+
+#: formeditor/factories/containerfactory.cpp:245
 msgid "Basic container"
 msgstr "Контейнери асосӣ"
 
-#: formeditor/factories/containerfactory.cpp:243
+#: formeditor/factories/containerfactory.cpp:246
+msgid "BasicContainer"
+msgstr "Контейнери асосӣ"
+
+#: formeditor/factories/containerfactory.cpp:247
 msgid "An empty container with no frame"
 msgstr "Контейнери холӣ бе чорчӯба"
 
-#: formeditor/factories/containerfactory.cpp:249
-#: formeditor/factories/containerfactory.cpp:341
+#: formeditor/factories/containerfactory.cpp:253
 msgid "Group Box"
 msgstr "Гурӯҳи қуттӣ"
 
-#: formeditor/factories/containerfactory.cpp:250
-msgid "A container to group some widgets"
-msgstr "Контейнер барои гурӯҳ-гурӯҳ кардани як қадар васеъкуниҳо"
+#: formeditor/factories/containerfactory.cpp:254
+msgid "GroupBox"
+msgstr "Гурӯҳи қуттӣ"
 
-#: formeditor/factories/containerfactory.cpp:256
+#: formeditor/factories/containerfactory.cpp:255
+msgid "A container to group some widgets"
+msgstr ""
+"Контейнер барои гурӯҳ-гурӯҳ кардани як "
+"қадар васеъкуниҳо"
+
+#: formeditor/factories/containerfactory.cpp:261
+#: formeditor/factories/containerfactory.cpp:262
 msgid "Frame"
 msgstr "Чорчӯба"
 
-#: formeditor/factories/containerfactory.cpp:257
+#: formeditor/factories/containerfactory.cpp:263
 msgid "A very simple container"
 msgstr "Контейнери хеле оддӣ аст"
 
-#: formeditor/factories/containerfactory.cpp:263
+#: formeditor/factories/containerfactory.cpp:269
 msgid "Widget Stack"
 msgstr "Васеъкунии ҳамеланбора"
 
-#: formeditor/factories/containerfactory.cpp:264
+#: formeditor/factories/containerfactory.cpp:270
+msgid "WidgetStack"
+msgstr "Васеъкунии ҳамеланбора"
+
+#: formeditor/factories/containerfactory.cpp:271
 msgid "A container with multiple pages"
 msgstr "Контейнер бо саҳифаҳои бисёр"
 
-#: formeditor/factories/containerfactory.cpp:270
+#: formeditor/factories/containerfactory.cpp:277
 msgid "Horizontal Box"
 msgstr "Қуттии уфуқӣ"
 
-#: formeditor/factories/containerfactory.cpp:271
+#: formeditor/factories/containerfactory.cpp:278
+msgid "HorizontalBox"
+msgstr "Қуттии уфуқӣ"
+
+#: formeditor/factories/containerfactory.cpp:279
 msgid "A simple container to group widgets horizontally"
 msgstr ""
 "Контейнери оддӣ барои гурӯҳи "
 "васеъкуниҳои уфуқӣ"
 
-#: formeditor/factories/containerfactory.cpp:277
+#: formeditor/factories/containerfactory.cpp:285
 msgid "Vertical Box"
 msgstr "Қуттии амудӣ"
 
-#: formeditor/factories/containerfactory.cpp:278
+#: formeditor/factories/containerfactory.cpp:286
+msgid "VerticalBox"
+msgstr "Қуттии амудӣ"
+
+#: formeditor/factories/containerfactory.cpp:287
 msgid "A simple container to group widgets vertically"
 msgstr ""
 "Контейнери оддӣ барои гурӯҳи "
 "васеъкуниҳои амудӣ"
 
-#: formeditor/factories/containerfactory.cpp:284
+#: formeditor/factories/containerfactory.cpp:293
 msgid "Grid Box"
 msgstr "Қуттии шабака"
 
-#: formeditor/factories/containerfactory.cpp:285
+#: formeditor/factories/containerfactory.cpp:294
+msgid "GridBox"
+msgstr "Қуттии шабака"
+
+#: formeditor/factories/containerfactory.cpp:295
 msgid "A simple container to group widgets in a grid"
 msgstr ""
 "Контейнери оддӣ барои гурӯҳи васеъкуниҳо "
 "дар шабака"
 
-#: formeditor/factories/containerfactory.cpp:418
-#: formeditor/factories/containerfactory.cpp:429
+#: formeditor/factories/containerfactory.cpp:431
+#: formeditor/factories/containerfactory.cpp:445
 msgid "Rename Page"
 msgstr "Саҳифаро номгузории дубора"
 
-#: formeditor/factories/containerfactory.cpp:419
-#: formeditor/factories/containerfactory.cpp:430
-#: formeditor/factories/containerfactory.cpp:442
+#: formeditor/factories/containerfactory.cpp:433
+#: formeditor/factories/containerfactory.cpp:447
+#: formeditor/factories/containerfactory.cpp:462
 msgid "Remove Page"
 msgstr "Нест кардани саҳифа"
 
-#: formeditor/factories/containerfactory.cpp:446
+#: formeditor/factories/containerfactory.cpp:467
 msgid "Jump to Next Page"
 msgstr "Ҷаҳида гузаштани ба саҳифаи оянда"
 
-#: formeditor/factories/containerfactory.cpp:450
+#: formeditor/factories/containerfactory.cpp:472
 msgid "Jump to Previous Page"
 msgstr "Ҷаҳида гузаштани ба саҳифаи пешина"
 
-#: formeditor/factories/containerfactory.cpp:579
+#: formeditor/factories/containerfactory.cpp:603
 msgid "New Page Title"
 msgstr "Сарлавҳаи саҳифаи нав"
 
-#: formeditor/factories/containerfactory.cpp:579
+#: formeditor/factories/containerfactory.cpp:603
 msgid "Enter a new title for the current page"
 msgstr ""
 "Сарлавҳаи навро барои саҳифаи ҳозира "
@@ -2160,12 +2397,13 @@ msgstr ""
 msgid "*.ui|Qt Designer UI Files"
 msgstr "*.ui|Qt Дизайнгари файлҳои UI"
 
-#: formeditor/form.cpp:81 formeditor/formmanager.cpp:417
-#: formeditor/widgetlibrary.cpp:182 plugins/forms/kexiformpart.cpp:44
+#: formeditor/form.cpp:81 formeditor/formmanager.cpp:455
+#: formeditor/widgetlibrary.cpp:182 formeditor/widgetlibrary.cpp:191
+#: plugins/forms/kexiformpart.cpp:44
 msgid "Form"
 msgstr "Шакл"
 
-#: formeditor/form.cpp:224
+#: formeditor/form.cpp:287
 msgid ""
 "A widget with this name already exists. Please choose another name or rename "
 "existing widget."
@@ -2186,7 +2424,7 @@ msgstr "Ном"
 msgid "Class"
 msgstr "Синф"
 
-#: formeditor/formmanager.cpp:737 formeditor/objpropbuffer.cpp:247
+#: formeditor/formmanager.cpp:825 formeditor/objpropbuffer.cpp:247
 msgid "Events"
 msgstr "Натиҷаҳо"
 
@@ -2228,7 +2466,7 @@ msgstr "Рост кардани амудӣ"
 
 #: formeditor/objpropbuffer.cpp:527
 msgid "Word Break"
-msgstr ""
+msgstr "Буридани калима"
 
 #: formeditor/objpropbuffer.cpp:573
 msgid "Container's layout"
@@ -2242,59 +2480,73 @@ msgstr "Сарҳади тарҳбандӣ"
 msgid "Layout spacing"
 msgstr "Фосилаи тарҳбандӣ"
 
-#: formeditor/formmanager.cpp:86
+#: formeditor/formmanager.cpp:88
 msgid "Cu&t"
 msgstr "Бури&дан"
 
-#: formeditor/formmanager.cpp:91
-msgid "&Lay Out Horizontally"
+#: formeditor/formmanager.cpp:93
+msgid "Lay Out &Horizontally"
 msgstr "&Тарҳбандии уфуқӣ"
 
-#: formeditor/formmanager.cpp:92
-msgid "&Lay Out Vertically"
+#: formeditor/formmanager.cpp:94
+msgid "Lay Out &Vertically"
 msgstr "&Тарҳбандии амудӣ"
 
-#: formeditor/formmanager.cpp:93
-msgid "&Lay Out in Grid"
+#: formeditor/formmanager.cpp:95
+msgid "Lay Out in &Grid"
 msgstr "&Тарҳбандии дар шабака"
 
-#: formeditor/formmanager.cpp:125
+#: formeditor/formmanager.cpp:129
 msgid "Connect Signals/Slots"
 msgstr "Алоқа кардани сигнал/чок"
 
-#: formeditor/formmanager.cpp:130
+#: formeditor/formmanager.cpp:134
 msgid "Pointer"
 msgstr "Ишорагар"
 
-#: formeditor/formmanager.cpp:136
+#: formeditor/formmanager.cpp:139
+msgid "Snap to Grid"
+msgstr "Акси лаҳзаӣ Панҷара"
+
+#: formeditor/formmanager.cpp:144
 msgid "Style"
 msgstr "Услуб"
 
-#: formeditor/formmanager.cpp:156
+#: formeditor/formmanager.cpp:164
 msgid "Set the current view style."
 msgstr "Танзими услуби ҳозира барои намоиш."
 
-#: formeditor/formmanager.cpp:637
+#: formeditor/formmanager.cpp:709
 msgid "Signals"
 msgstr "Сигналҳо"
 
-#: formeditor/formmanager.cpp:654
+#: formeditor/formmanager.cpp:731
 msgid "Slots"
 msgstr "Чокҳо"
 
-#: formeditor/formmanager.cpp:714
+#: formeditor/formmanager.cpp:774
+msgid "Form: "
+msgstr "Шакл: "
+
+#: formeditor/formmanager.cpp:779
+msgid "Multiple Widgets"
+msgstr "Васеъкунии бисёртар"
+
+#: formeditor/formmanager.cpp:796
 msgid "No Buddy"
 msgstr "Ҳамкор нест"
 
-#: formeditor/formmanager.cpp:727
+#: formeditor/formmanager.cpp:810
 msgid "Choose Buddy..."
 msgstr "Интихоби ҳамкор..."
 
-#: formeditor/formmanager.cpp:841
+#: formeditor/formmanager.cpp:938
 msgid ""
 "<b>Cannot create the layout.</b>\n"
 "All selected widgets must have the same parent."
 msgstr ""
+"<b>Наметавон эъҷод кардани ҷойкунии </b>\n"
+"Ҳамаи васеъкуни интихобшуда азсари нав бояд роҳбари кард."
 
 #: plugins/queries/kexiquerydesignerguieditor.cpp:150
 #: plugins/tables/kexitablepart.cpp:56 rc.cpp:2 rc.cpp:38
@@ -2391,8 +2643,8 @@ msgstr "Сар кардан"
 
 #: rc.cpp:89
 #, no-c-format
-msgid "Automatically launc a document on startup"
-msgstr ""
+msgid "Automatically launch a document on startup"
+msgstr "Шӯхии автоматии ҳуҷҷат дар вақти кушодашавӣ  "
 
 #: rc.cpp:91
 #, no-c-format
@@ -2446,7 +2698,7 @@ msgstr "Дар бораи Нақшаи ман"
 
 #: rc.cpp:127
 #, no-c-format
-msgid "-- Seperator --"
+msgid "-- Separator --"
 msgstr "-- Ҷудосоз --"
 
 #: rc.cpp:141
@@ -2876,7 +3128,9 @@ msgstr "Қатор/сутуни холии якум дар дохили қайд
 #: rc.cpp:403
 #, no-c-format
 msgid "Expand Selection if Needed Until First Empty Row/Column"
-msgstr "Агар то қатор/сутуни холии якум даркор бошад, қайдро васеъ кунед"
+msgstr ""
+"Агар то қатор/сутуни холии якум даркор "
+"бошад, қайдро васеъ кунед"
 
 #: rc.cpp:405
 #, no-c-format
@@ -3567,7 +3821,6 @@ msgid "Relations"
 msgstr "Муносибатҳо"
 
 #: widget/relations/kexirelationwidget.cpp:117
-#, fuzzy
 msgid ""
 "To create a relationship simply drag the source field onto the target field. "
 "An arrowhead is used to show which table is the parent (master) and which "
@@ -3575,7 +3828,7 @@ msgid ""
 msgstr ""
 "Сохтани алоқаи оддӣ барои ҳарақати "
 "саҳрои захира даруни саҳрои муайян шуда. "
-"Ин хизмат барои муайян кардани байни "
+"Ин хизмат барои  нишон додани  "
 "ҷадвалҳои асосӣ ва ҷадвалҳои ғайриасоси "
 "истифода мешавад."
 
@@ -3583,71 +3836,71 @@ msgstr ""
 msgid "Relationship"
 msgstr "Муносибатҳо"
 
-#: widget/pixmapcollection.cpp:145
+#: widget/pixmapcollection.cpp:151
 msgid "Load KDE Icon by Name"
 msgstr "Бор кардани тасвири KDE аз рӯи ном"
 
-#: widget/pixmapcollection.cpp:151
+#: widget/pixmapcollection.cpp:157
 msgid "&Name:"
 msgstr "&Ном:"
 
-#: widget/pixmapcollection.cpp:159
+#: widget/pixmapcollection.cpp:165
 msgid "&Size:"
 msgstr "&Андоза:"
 
-#: widget/pixmapcollection.cpp:167
+#: widget/pixmapcollection.cpp:173
 msgid "Small"
 msgstr "Майда"
 
-#: widget/pixmapcollection.cpp:167
+#: widget/pixmapcollection.cpp:173
 msgid "Medium"
 msgstr "Миёна"
 
-#: widget/pixmapcollection.cpp:167
+#: widget/pixmapcollection.cpp:173
 msgid "Large"
 msgstr "Калон"
 
-#: widget/pixmapcollection.cpp:167
+#: widget/pixmapcollection.cpp:173
 msgid "Huge"
 msgstr "Азим"
 
-#: widget/pixmapcollection.cpp:226
+#: widget/pixmapcollection.cpp:232
 #, c-format
 msgid "Edit Pixmap Collection: %1"
 msgstr "Муҳаррири коллексияи Pixmap: %1"
 
-#: widget/pixmapcollection.cpp:237
+#: widget/pixmapcollection.cpp:243
 msgid "&Add File"
 msgstr "&Иловаи файл"
 
-#: widget/pixmapcollection.cpp:244
+#: widget/pixmapcollection.cpp:250
 msgid "&Add an icon"
 msgstr "&Иловаи тасвир"
 
-#: widget/pixmapcollection.cpp:251
+#: widget/pixmapcollection.cpp:257
 msgid "&Remove selected item"
 msgstr "&Ҳаракат кардани ҷузъи интихобшуда"
 
-#: widget/pixmapcollection.cpp:303
+#: widget/pixmapcollection.cpp:309
 msgid "Do you want to remove item \"%1\" from collection \"%2\"?"
 msgstr ""
-"Шумо ҳақиқатан метавонед \"%1\" ин тасвир аз коллексия"
-"нобуд кардан \"%2\"?"
+"Шумо ҳақиқатан метавонед \"%1\" ин тасвир аз "
+"коллексиянобуд кардан \"%2\"?"
 
-#: widget/pixmapcollection.cpp:357
+#: widget/pixmapcollection.cpp:363
 msgid "Rename item"
 msgstr "Ҷузъро номгузории дубора"
 
-#: widget/pixmapcollection.cpp:358
+#: widget/pixmapcollection.cpp:364
 msgid "Remove item"
 msgstr "Ҳаракат кардани ҷузъ"
 
-#: widget/pixmapcollection.cpp:364
+#: widget/pixmapcollection.cpp:370
 #, c-format
 msgid "Select a pixmap from %1"
 msgstr "Интихоби pixmap аз %1"
 
-#: widget/pixmapcollection.cpp:365
+#: widget/pixmapcollection.cpp:371
 msgid "Edit Collection..."
 msgstr "Муҳаррири коллексия..."
 
@@ -3655,7 +3908,7 @@ msgstr "Муҳаррири коллексия..."
 msgid ""
 "Kexi can help you with creation of %2 using data sources in almost no time "
 "with the \"%1 Wizard\""
-msgstr ""
+msgstr "Kexi метавонад ба шумо ёрӣ лар сохтори %2 истифодаи ин ресурсҳо дар ҳама вақт бо ёрии \"%1 Wizard\""
 
 #: widget/kexidswelcome.cpp:42
 msgid "Create %1 using the \"%1 Wizard\""
@@ -3713,6 +3966,11 @@ msgid ""
 "<p>Kexi is under active development.</p>\n"
 "<p>Visit kexi home page at http://www.kexi-project.org/</p>\n"
 msgstr ""
+"<h3>Kexi - Вақти базавӣ  калонҳаҷм барои ҳар як каси</h3>\n"
+"\n"
+"<h3>Хуш омадед</h3>\n"
+"<p>Kexi дар фаъолияти еҳёшавӣ мебошад.</p>\n"
+"<p>Хабар гирифтани  kexi дар саҳифаи хона http://www.kexi-project.org/</p>\n"
 
 #: plugins/forms/kexidbfactory.cpp:31
 msgid "Database Form"
@@ -3721,6 +3979,10 @@ msgstr "Шакли асосӣ маълумот"
 #: plugins/forms/kexidbfactory.cpp:70
 msgid "Change Datasource"
 msgstr "Дигаргун кардани манбаи маълумот"
+
+#: plugins/forms/kexiformpart.cpp:72 plugins/forms/kexiformpart.cpp:85
+msgid "Adjust Size"
+msgstr "Андозаро танзимдиҳӣ"
 
 #: plugins/kugar/kexikugarhandler.cpp:58
 msgid "Report"
@@ -3827,8 +4089,9 @@ msgid ""
 "Cannot switch to data view, because query design is empty.\n"
 "First, please create your design."
 msgstr ""
-"Дар намоиши таърих иваз карда наметавонад, барои он дизайни пурсиши холӣ "
-"аст.\n"
+"Дар намоиши таърих иваз карда "
+"наметавонад, барои он дизайни пурсиши "
+"холӣ аст.\n"
 "Якум, илтимос дизайни шуморо созед."
 
 #: plugins/queries/kexiquerydesignerguieditor.cpp:409
@@ -3859,6 +4122,10 @@ msgstr "Паст шудан"
 msgid "Sorting"
 msgstr "Мураттаб"
 
+#: plugins/queries/kexiqueryview.cpp:45
+msgid "Query executing failed."
+msgstr " Супориши иҷрокунанда но кифоя."
+
 #: plugins/queries/kexiquerydesignersql.cpp:97
 msgid "SQL Query Text"
 msgstr "SQL Матни пурсиш"
@@ -3885,7 +4152,10 @@ msgstr "Пурсиш нодуруст аст"
 
 #: plugins/queries/kexiquerydesignersql.cpp:176
 msgid "Please enter your query and execute \"Check query\" function to verify it."
-msgstr "Лутфан, пурсиши шумо ворид кунед ва барои тасдиқ кардани он, функсияи \"Санҷиши пурсиш\" иҷро намоед."
+msgstr ""
+"Лутфан, пурсиши шумо ворид кунед ва барои "
+"тасдиқ кардани он, функсияи \"Санҷиши "
+"пурсиш\" иҷро намоед."
 
 #: plugins/queries/kexiquerydesignersql.cpp:219
 msgid "The query you entered is incorrect."
@@ -3893,15 +4163,23 @@ msgstr "Пурсиш дар кадом шумо вуруд нодуруст ас
 
 #: plugins/queries/kexiquerydesignersql.cpp:220
 msgid "Do you want to cancel any changes made to this SQL text?"
-msgstr "Шумо меҳоҳед ягон дигаргуниҳое, ки дар матни SQL дигаргун карда шуданд, бекор кунед?"
+msgstr ""
+"Шумо меҳоҳед ягон дигаргуниҳое, ки дар "
+"матни SQL дигаргун карда шуданд, бекор "
+"кунед?"
 
 #: plugins/queries/kexiquerydesignersql.cpp:221
 msgid "Answering \"No\" allows you to make corrections."
-msgstr "Бо интихоби \"Не\" шумо метавонед ислоҳ кунед."
+msgstr ""
+"Бо интихоби \"Не\" шумо метавонед ислоҳ "
+"кунед."
 
 #: plugins/queries/kexiquerydesignersql.cpp:431
+#, fuzzy
 msgid "Do you want to save invalid query?"
-msgstr "Шумо мехоҳед \"%1\"пурсиши нодуруст нигоҳ доред?"
+msgstr ""
+"Шумо мехоҳед \"%1\"пурсиши нодуруст нигоҳ "
+"доред?"
 
 #: plugins/queries/kexiaddparamdialog.cpp:30
 msgid "Add Parameter"
@@ -4029,7 +4307,8 @@ msgid ""
 "Cannot switch to data view, because table design is empty.\n"
 "First, please create your design."
 msgstr ""
-"Дар намоиши таърих иваз карда наметавонад, барои он дизайни ҷадвал холӣ "
+"Дар намоиши таърих иваз карда "
+"наметавонад, барои он дизайни ҷадвал холӣ "
 "аст.\n"
 "Якум, илтимос дизайни шуморо созед."
 
@@ -4038,26 +4317,32 @@ msgid ""
 "Saving changes for existing table design is not yet supported.\n"
 "Do you want to discard your changes now?"
 msgstr ""
+"Нигоҳдории дигаргуниҳо барои будан дар мизи нақшсозӣ ҳолоҳам нигоҳдорандаи \n"
+"Шумо акнун мехоҳед нигоҳ доред дигаргуниҳои худро?"
 
 #: plugins/tables/kexialtertabledialog.cpp:601
 msgid "You should enter field name."
-msgstr "Шумо даровардани номи ҳошия бояд."
+msgstr "Шумо  бояд номи ҳошияро даровард."
 
 #: plugins/tables/kexialtertabledialog.cpp:613
 msgid ""
 "You have added no fields.\n"
 "Every table should have at least one field."
 msgstr ""
+"Шумо метавон илова кард номи файлҳои.\n"
+"Ҳар яки миз мтавон яке аз файлҳо бошад. "
 
 #: plugins/tables/kexialtertabledialog.cpp:620
 msgid ""
 "You have added \"%1\" field name twice.\n"
 "Field names cannot be repeated. Correct name of the field."
 msgstr ""
+" Шумо бояд илова кард \"%1\" номи файлро дубора.\n"
+"Номҳои файлҳо наметавон такрор шуд.Дурустии номи файл."
 
 #: plugins/tables/kexialtertabledialog.cpp:695
 msgid "Saving changes for existing table design is not yet supported."
-msgstr ""
+msgstr "Нигоҳдории дигаргуниҳоро барои мавҷудияти мизи нақшсозӣ ҳоло ҳам пуштибони накардаистодааст."
 
 #: plugins/scripting/kexiscripthandler.cpp:48
 msgid "Scripts"
@@ -4089,15 +4374,17 @@ msgstr "// код ин ҷо!\n"
 
 #: tableview/kexitableviewdata.cpp:461 tableview/kexitableviewdata.cpp:468
 msgid "\"%1\" column requires a value to be entered."
-msgstr "Сутуни \"%1\" барои вориди маъно дархост мекунад."
+msgstr ""
+"Сутуни \"%1\" барои вориди маъно дархост "
+"мекунад."
 
 #: tableview/kexitableview.cpp:2673 tableview/kexitableviewdata.cpp:462
 msgid "The column's constraint is declared as NOT NULL."
-msgstr ""
+msgstr "Маҳдудияти сутунҳо бояд,ки эълон кард ПУР НЕСТ."
 
 #: tableview/kexitableview.cpp:2690 tableview/kexitableviewdata.cpp:469
 msgid "The column's constraint is declared as NOT EMPTY."
-msgstr ""
+msgstr "Маҳдудияти сутунҳо бояд эълон кард ХОЛИ НЕСТ."
 
 #: tableview/kexitableviewdata.cpp:478
 msgid "Row inserting failed."
@@ -4137,7 +4424,7 @@ msgstr "Мехоҳед қатори интихобшударо нест куне
 
 #: tableview/kexitableview.cpp:2704
 msgid "The column's constraint is declared as NOT EMPTY and NOT NULL."
-msgstr ""
+msgstr "Маҳдудияти сутунҳо бояд эълон карда шавад ҳамчун ХОЛИ НЕСТ ё ин,ки ин,ки ПУР НЕСТ ."
 
 #: tableview/kexitableview.cpp:2735
 msgid "Entered value is invalid."
