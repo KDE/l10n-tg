@@ -5,12 +5,13 @@
 # 2004, Youth Opportunities, NGO
 # Victor Ibragimov <youth_opportunities@tajik.net>, 2004.
 # Marina Kolucheva <youth_opportunities@tajik.net>, 2004.
+# Akmal Salomov <youth_opportunities@tajik.net>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kio\n"
-"POT-Creation-Date: 2004-04-19 01:45+0200\n"
-"PO-Revision-Date: 2004-04-24 19:04+0500\n"
+"POT-Creation-Date: 2004-05-13 01:22+0200\n"
+"PO-Revision-Date: 2004-05-16 20:26+0000\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
 "MIME-Version: 1.0\n"
@@ -22,16 +23,16 @@ msgstr ""
 msgid "File '%1' is not readable"
 msgstr "Файли '%1' барои хондан нест"
 
-#: kio/global.cpp:693 kio/job.cpp:1502 kio/job.cpp:2752 kio/job.cpp:3188
+#: kio/global.cpp:693 kio/job.cpp:1574 kio/job.cpp:2857 kio/job.cpp:3295
 #: kio/paste.cpp:58
 msgid "File Already Exists"
 msgstr "Ин файл аллакай вуҷуд дорад"
 
-#: kio/global.cpp:703 kio/job.cpp:2470
+#: kio/global.cpp:703 kio/job.cpp:2575
 msgid "Folder Already Exists"
 msgstr "Ин феҳрист аллакай вуҷуд дорад"
 
-#: kio/job.cpp:2752 kio/job.cpp:3188
+#: kio/job.cpp:2857 kio/job.cpp:3295
 msgid "Already Exists as Folder"
 msgstr "Аллакай монанди феҳрист вуҷуд дорад"
 
@@ -114,7 +115,7 @@ msgstr "Дар %1 танзим кунед"
 msgid "The source file is '%1'"
 msgstr "Файли аслӣ - '%1'"
 
-#: kio/kdirlister.cpp:1932 kio/krun.cpp:721 kio/paste.cpp:95
+#: kio/kdirlister.cpp:1932 kio/krun.cpp:736 kio/paste.cpp:95
 #: kio/renamedlg.cpp:421
 #, c-format
 msgid ""
@@ -132,12 +133,12 @@ msgstr "Номи файл барои нигоҳ доштани хотири ну
 msgid "The clipboard is empty"
 msgstr "Хотири нусха холи аст"
 
-#: kio/observer.cpp:329 misc/uiserver.cpp:1195
+#: kio/observer.cpp:329 misc/uiserver.cpp:1203
 msgid "The peer SSL certificate appears to be corrupt."
 msgstr "Сертификати сервери SSL вайрон шуд."
 
 #: kio/observer.cpp:329 kio/tcpslavebase.cpp:688 kio/tcpslavebase.cpp:705
-#: misc/uiserver.cpp:1195
+#: misc/uiserver.cpp:1203
 msgid "SSL"
 msgstr "SSL"
 
@@ -429,7 +430,7 @@ msgstr "Кушодани &Файл"
 msgid "Open &Destination"
 msgstr "Кушодани &Ҷойгиршавӣ"
 
-#: kio/defaultprogress.cpp:174 misc/uiserver.cpp:624
+#: kio/defaultprogress.cpp:174 misc/uiserver.cpp:629
 msgid "Progress Dialog"
 msgstr "Диалоги амалиёт"
 
@@ -491,7 +492,7 @@ msgstr ""
 "%1 / %n файл\n"
 "%1 / %n файлҳо"
 
-#: kio/defaultprogress.cpp:288 misc/uiserver.cpp:283
+#: kio/defaultprogress.cpp:288 misc/uiserver.cpp:288
 msgid "Stalled"
 msgstr "Алоқа нест"
 
@@ -528,7 +529,7 @@ msgstr "Санҷиши амалиёти файл"
 msgid "Mounting %1"
 msgstr "Дар ҳоли монтаж кардан %1"
 
-#: kio/defaultprogress.cpp:382 misc/uiserver.cpp:373
+#: kio/defaultprogress.cpp:382 misc/uiserver.cpp:378
 msgid "Unmounting"
 msgstr "Ҷудо кардан"
 
@@ -1123,25 +1124,29 @@ msgstr ""
 #: kio/global.cpp:543
 msgid "Although unlikely, a hardware error may have occurred."
 msgstr ""
+"Гарчи эҳтимоли он кам аст, вале мумкин аст як хатои сахтафзоре дода бошад."
 
 #: kio/global.cpp:545
 msgid "You may have encountered a bug in the program."
-msgstr ""
+msgstr "Мумкин аст бо як ишкол дар барнома рӯбарӯ шуда бошед."
 
 #: kio/global.cpp:546
 msgid ""
 "This is most likely to be caused by a bug in the program. Please consider "
 "submitting a full bug report as detailed below."
 msgstr ""
+"Ба эҳтимоли зиёд боиси ин, як ишкол дар барнома бошад. Илтимос ирсоли як "
+"гузориши ишколи комилро дар назар бигиред."
 
 #: kio/global.cpp:548
 msgid ""
 "Update your software to the latest version. Your distribution should provide "
 "tools to update your software."
 msgstr ""
+"Нармафзори худро ба навтарин нусха ба рӯз расонед. Пахши шумо бояд обзорҳои "
+"ба рӯзрасонии нармафзорро дар ихтиёри худ қарор диҳад."
 
 #: kio/global.cpp:550
-#, fuzzy
 msgid ""
 "When all else fails, please consider helping the KDE team or the third party "
 "maintainer of this software by submitting a high quality bug report. If the "
@@ -1150,84 +1155,103 @@ msgid ""
 "else by searching at the <a href=\"http://bugs.kde.org/\">KDE bug reporting "
 "website</a>. If not, take note of the details given above, and include them "
 "in your bug report, along with as many other details as you think might help."
-msgstr "KDE якум<a href=\"http://bugs.kde.org/\"> KDE</a>."
+msgstr ""
+"Агар ягон кори дигаре муваффақияти омезе набуд, илтимос бо фиристодани "
+"гузориши ишколе бо кайфияти боло ба гурӯҳи KDE ё пуштибонҳои шахси саввум "
+"кӯмак кунед. Агар нармафзори тавассути шахси саввум муҳайё гашта аст, "
+"илтимос мустақиман бо онҳо тамос бигиред. Дар ғайри ин сурат, аввал бо "
+"ҷустуҷӯи дар <a href=\"http://bugs.kde.org/\"> вэбгоҳи гузориши ишколи KDE "
+"нигоҳ кунед, ки шахси дигаре ин ишколро </a> гузориш накарда бошад. Агар "
+"накарда бувад, ҷузъиёти дода шудаи дар боло бударо ёддошт кунед ва онҳоро "
+"дар гузориши ишколи худ, ҳамроҳи бо ҳар иттилооти дигаре, ки фикр мекунед, "
+"мумкин аст муфид бошад, қарор диҳед."
 
 #: kio/global.cpp:558
 msgid "There may have been a problem with your network connection."
-msgstr ""
+msgstr "Мумкин аст тамоси шабақаатон дучор мушкиле шуда бошад."
 
 #: kio/global.cpp:561
 msgid ""
 "There may have been a problem with your network configuration. If you have "
 "been accessing the Internet with no problems recently, this is unlikely."
 msgstr ""
+"Эҳтимолан мушкилоте дар танзимоти шабақаи шумо будааст. Агар охиро аз "
+"интернет бе мушкил истифода кардаед, ин номуҳтамал аст."
 
 #: kio/global.cpp:564
 msgid ""
 "There may have been a problem at some point along the network path between "
 "the server and this computer."
 msgstr ""
+"Эҳтимолие дорад ҷои дар роҳчаи шабақа байни коргузор ва ин компютер, "
+"мушкилие вуҷуд доштааст."
 
 #: kio/global.cpp:566
 msgid "Try again, either now or at a later time."
-msgstr ""
+msgstr "Дубора талош кунед ё ҳоло ё дертар."
 
 #: kio/global.cpp:567
 msgid "A protocol error or incompatibility may have occurred."
-msgstr ""
+msgstr "Мумкин аст як хато ё носозгории қарордоде рах дода бошад."
 
 #: kio/global.cpp:568
 msgid "Ensure that the resource exists, and try again."
-msgstr ""
+msgstr "Мутмаъин шавед, ки ин манбаъ вуҷуд дорад, ва дубора сайъ кунед."
 
 #: kio/global.cpp:569
 msgid "The specified resource may not exist."
-msgstr ""
+msgstr "Мумкин аст манбаъ мушаххас шуда вуҷуд надошта бошад."
 
 #: kio/global.cpp:570
 msgid "You may have incorrectly typed the location."
-msgstr ""
+msgstr "Мумкин аст мавқеъиятро иштибоҳи намуд карда бошед."
 
 #: kio/global.cpp:571
-#, fuzzy
 msgid "Double-check that you have entered the correct location and try again."
-msgstr "Дутагӣ."
+msgstr ""
+"Мутмаъин шавед, ки мавқеъиятро дуруст ворид кардаед ва дубора сайъ кунед."
 
 #: kio/global.cpp:573
 msgid "Check your network connection status."
-msgstr ""
+msgstr "Вазъияти иртиботи шабақаатонро баррасӣ кунед."
 
 #: kio/global.cpp:577
 msgid "Cannot Open Resource For Reading"
-msgstr ""
+msgstr "Қодир ба кушодани манбаъ барои хондан набудам "
 
 #: kio/global.cpp:578
 msgid ""
 "This means that the contents of the requested file or folder <strong>%1</"
 "strong> could not be retrieved, as read access could not be obtained."
 msgstr ""
+"Ин маънии онро дорад, ки файл ё феҳристи дархости <strong>%1</strong>буда "
+"натавонист дастёбӣ шавад, аз он ҷое ки дастрасшавии хондан, гирифта нашуд."
 
 #: kio/global.cpp:581
 msgid "You may not have permissions to read the file or open the folder."
 msgstr ""
+"Мумкин аст иҷозати хонандаи файл ва ё боз кардани шохаро надошта бошед."
 
 #: kio/global.cpp:587
 msgid "Cannot Open Resource For Writing"
-msgstr ""
+msgstr "Қодир ба кушодани манбаъ барои навиштан нестам"
 
 #: kio/global.cpp:588
 msgid ""
 "This means that the file, <strong>%1</strong>, could not be written to as "
 "requested, because access with permission to write could not be obtained."
 msgstr ""
+"Ин маънии онро дорад, ки файли <strong>%1</strong>, натавонист  ҳаммонанди "
+"дархост навишта шавад, аз он ҷое ки дастрасӣ ба иҷозати навиштан, гирифта "
+"нашуд."
 
 #: kio/global.cpp:596
 msgid "Cannot Initiate the %1 Protocol"
-msgstr ""
+msgstr "Қодир ба роҳандозии қарордоди %1 набудам"
 
 #: kio/global.cpp:597
 msgid "Unable to Launch Process"
-msgstr ""
+msgstr "Роҳандозии пардозиш имконпазир набуд"
 
 #: kio/global.cpp:598
 msgid ""
@@ -1235,14 +1259,19 @@ msgid ""
 "strong> protocol could not be started. This is usually due to technical "
 "reasons."
 msgstr ""
+"Барномаи рӯи компютери шумо, ки дастрасӣ ба қарордоди <strong>%1</strong>-ро "
+"фароҳам меоварад, натавонист роҳандозӣ шавад. Ин маъмулан бо хосиятҳои "
+"техникӣ ба амал меояд."
 
 #: kio/global.cpp:601
-#, fuzzy
 msgid ""
 "The program which provides compatibility with this protocol may not have "
 "been updated with your last update of KDE. This can cause the program to be "
 "incompatible with the current version and thus not start."
-msgstr "KDE."
+msgstr ""
+"Барномае ки созгорӣ бо ин қарордод фароҳам меоварад, эҳтимолан бо охирин ба "
+"рӯзсозии KDE-и шумо ба рӯз нашуд. Ин мумкин аст боис шавад, ки барномаҳо бо "
+"нусхаи феълии носозгор гарданд ва дар натиҷа оғоз нашаванд."
 
 #: kio/global.cpp:609
 msgid "Internal Error"
@@ -1253,13 +1282,14 @@ msgid ""
 "The program on your computer which provides access to the <strong>%1</"
 "strong> protocol has reported an internal error."
 msgstr ""
+"Барномаи рӯи компютери шумо, ки дастрасӣ ба қарордоди <strong>%1</strong>-ро "
+"фароҳам меоварад, гузориши хатои дохилӣ додааст."
 
 #: kio/global.cpp:618
 msgid "Improperly Formatted URL"
-msgstr ""
+msgstr "URL бо андозаи иштибоҳ"
 
 #: kio/global.cpp:619
-#, fuzzy
 msgid ""
 "The <strong>U</strong>niform <strong>R</strong>esource <strong>L</"
 "strong>ocator (URL) that you entered was not properly formatted. The format "
@@ -1267,8 +1297,10 @@ msgid ""
 "password@www.example.org:port/folder/filename.extension?query=value</"
 "strong></blockquote>"
 msgstr ""
-"<strong></strong><strong></strong><strong></strong> URL "
-"URL<blockquote><strong>password@www.example.org</strong></blockquote>"
+"Мушаххас кунандаи манбаъи воҳидие (URL), ки кардаед, дар андозаи дуруст "
+"ворид нашудааст. Андозаи як URL, маъмулан ба сурати зер аст:"
+"<blockquote><strong>protocol://user:password@www.example.org:port/directory/"
+"filename.extension?query=value</strong></blockquote>"
 
 #: kio/global.cpp:628
 #, c-format
@@ -1276,57 +1308,65 @@ msgid "Unsupported Protocol %1"
 msgstr "Протоколи %1 дастгирӣ надорад"
 
 #: kio/global.cpp:629
-#, fuzzy
 msgid ""
 "The protocol <strong>%1</strong> is not supported by the KDE programs "
 "currently installed on this computer."
-msgstr "<strong></strong> KDE."
+msgstr ""
+"Қарордоди <strong>%1</strong> тавассути барномаҳои KDE-и феъли насб шуда,рӯи "
+"ин компютер пуштибонӣ намешавад."
 
 #: kio/global.cpp:632
 msgid "The requested protocol may not be supported."
-msgstr ""
+msgstr "Мумкин аст қарордоди дархостӣ пуштибонӣ нашавад."
 
 #: kio/global.cpp:633
 msgid ""
 "The versions of the %1 protocol supported by this computer and the server "
 "may be incompatible."
 msgstr ""
+"Нусхаҳои қарордоди %1 пуштибонӣ шуда, рӯи ин компютер ва коргузор мумкин аст "
+"носозгорӣ бошанд."
 
 #: kio/global.cpp:635
 #, fuzzy
 msgid ""
 "You may perform a search on the Internet for a KDE program (called a "
 "kioslave or ioslave) which supports this protocol. Places to search include "
-"<a href=\"http://apps.kde.com/\">http://apps.kde.com/</a> and <a href="
+"<a href=\"http://kde-apps.org/\">http://kde-apps.org/</a> and <a href="
 "\"http://freshmeat.net/\">http://freshmeat.net/</a>."
 msgstr ""
-"KDE<a href=\"http://apps.kde.com/\">http://apps.kde.com/</a><a href=\"http://"
-"freshmeat.net/\">http://freshmeat.net/</a>."
+"Метавонед ҷустуҷӯии рӯи интернет дар мавриди барномаи KDE (бо номи kioslave "
+"ёки ioslave), ки ин қарордодро пуштибонӣ мекунанд, ба амал оваред. Маконҳои "
+"ҷустуҷӯиро аз <a href=\"http://apps.kde.com/\">http://apps.kde.com/</a> ва "
+"<a href=\"http://freshmeat.net/\">http://freshmeat.net/</a> ёфта метавонед."
 
 #: kio/global.cpp:644
-#, fuzzy
 msgid "URL Does Not Refer to a Resource."
-msgstr "URL."
+msgstr "URL ба ягон манбаъ ишора намекунад."
 
 #: kio/global.cpp:645
 msgid "Protocol is a Filter Protocol"
 msgstr "Ин протокол - протоколи филтр мебошад"
 
 #: kio/global.cpp:646
-#, fuzzy
 msgid ""
 "The <strong>U</strong>niform <strong>R</strong>esource <strong>L</"
 "strong>ocator (URL) that you entered did not refer to a specific resource."
-msgstr "<strong></strong><strong></strong><strong></strong> URL."
+msgstr ""
+"Маконёби воҳиди манбаъи (URL), ки воҳид кардаед ба ягон манбаъи хосе ишора "
+"намекунад."
 
 #: kio/global.cpp:649
-#, fuzzy
 msgid ""
 "KDE is able to communicate through a protocol within a protocol; the "
 "protocol specified is only for use in such situations, however this is not "
 "one of these situations. This is a rare event, and is likely to indicate a "
 "programming error."
-msgstr "KDE."
+msgstr ""
+"KDE метавонад аз қарордоди дохилии қарордоди дигар иртибот барқарор кунад; "
+"қарордоди мушаххас шуда фақат барои ин мавқеъ аст, дар ҳоле ки ин яке аз ин "
+"мавқеъот нест. Ин иттифоқи нодир аст ва эҳтимолан байёнгари хатои барнома "
+"мебошад."
 
 #: kio/global.cpp:657
 #, c-format
@@ -1334,47 +1374,54 @@ msgid "Unsupported Action: %1"
 msgstr "Амалиёти: %1 дастгирӣ надорад"
 
 #: kio/global.cpp:658
-#, fuzzy
 msgid ""
 "The requested action is not supported by the KDE program which is "
 "implementing the <strong>%1</strong> protocol."
-msgstr "KDE<strong></strong>."
+msgstr ""
+"Амали дархост шуда тавассути барномаи KDE, ки қарордоди <strong>%1</strong>-"
+"ро пуштибонӣ мекунад, пиёдасозӣ нашудааст."
 
 #: kio/global.cpp:661
-#, fuzzy
 msgid ""
 "This error is very much dependent on the KDE program. The additional "
 "information should give you more information than is available to the KDE "
 "input/output architecture."
-msgstr "KDE KDE."
+msgstr ""
+"Ин хато хеле вобаста ба барномаи KDE аст. Иттилооти изофӣ бояд ба шумо "
+"иттилооти бештар аз он чи барои сохтори вуруд/хурӯҷи KDE муҳайё аст, фароҳам "
+"кунед."
 
 #: kio/global.cpp:664
 msgid "Attempt to find another way to accomplish the same outcome."
-msgstr ""
+msgstr "Сайъ кунед роҳи дигаре, барои расидани ба ҳамон натиҷа пеш бигиред."
 
 #: kio/global.cpp:669
 msgid "File Expected"
-msgstr ""
+msgstr "Интизори файл мерафт"
 
 #: kio/global.cpp:670
 msgid ""
 "The request expected a file, however the folder <strong>%1</strong> was "
 "found instead."
 msgstr ""
+"Дархости дар интизори файлҳо бувад, дар ҳолики феҳристи <strong>%1</"
+"strong>пайдо шуд."
 
 #: kio/global.cpp:672
 msgid "This may be an error on the server side."
-msgstr ""
+msgstr "Ин хато мумкин аст дар тарҳи коргузор бошад."
 
 #: kio/global.cpp:677
 msgid "Folder Expected"
-msgstr ""
+msgstr "Интизори феҳрист мерафт"
 
 #: kio/global.cpp:678
 msgid ""
 "The request expected a folder, however the file <strong>%1</strong> was "
 "found instead."
 msgstr ""
+"Дархости дар интизори феҳрист бувад, дар ҳолики файли <strong>%1</"
+"strong>пайдо шуд."
 
 #: kio/global.cpp:685
 msgid "File or Folder Does Not Exist"
@@ -1389,11 +1436,12 @@ msgid ""
 "The requested file could not be created because a file with the same name "
 "already exists."
 msgstr ""
+"Файли дархостшуда эҷод нашуд, аз он ҷое ки файлҳои бо ин ном ҳам акнун вуҷуд "
+"дорад."
 
 #: kio/global.cpp:696
-#, fuzzy
 msgid "Try moving the current file out of the way first, and then try again."
-msgstr "якум."
+msgstr "Файли феълиро аз сар роҳ бардоред ва дубора сайъ кунед."
 
 #: kio/global.cpp:698
 msgid "Delete the current file and try again."
@@ -1408,11 +1456,12 @@ msgid ""
 "The requested folder could not be created because a folder with the same "
 "name already exists."
 msgstr ""
+"Феҳристи дархостшуда эҷод нашуд, аз он ҷой ки феҳристи бо ин ном ҳам акнун "
+"вуҷуд дорад."
 
 #: kio/global.cpp:706
-#, fuzzy
 msgid "Try moving the current folder out of the way first, and then try again."
-msgstr "якум."
+msgstr "Феҳристи феълиро аз сар роҳ бардоред ва дубора сайъ кунед."
 
 #: kio/global.cpp:708
 msgid "Delete the current folder and try again."
@@ -1431,11 +1480,15 @@ msgid ""
 "An unknown host error indicates that the server with the requested name, "
 "<strong>%1</strong>, could not be located on the Internet."
 msgstr ""
+"Хатои ношинохта баёнгари он аст ки коргузори бо номи дархостшудаи <strong>%"
+"1</strong>,дар интернет имконёбӣ нашуд."
 
 #: kio/global.cpp:717
 msgid ""
 "The name that you typed, %1, may not exist: it may be incorrectly typed."
 msgstr ""
+"Номе ки шумо навистаед %1, мумкин аст вуҷуд надошта бошад: мумкин аст ин "
+"нодуруст навишта шуда буд."
 
 #: kio/global.cpp:724
 msgid "Access Denied"
@@ -1446,19 +1499,23 @@ msgid "Access was denied to the specified resource, <strong>%1</strong>."
 msgstr "Даромадан ба манбаъи муайяншудаи <strong>%1</strong> рад карда шуд."
 
 #: kio/global.cpp:727 kio/global.cpp:943
-#, fuzzy
 msgid "You may have supplied incorrect authentication details or none at all."
-msgstr "ҳеҷ."
+msgstr ""
+"Мумкин аст ҷузъиёти шиносоиро нодуруст карда бошед ёки асло надода бошед."
 
 #: kio/global.cpp:729 kio/global.cpp:945
 msgid "Your account may not have permission to access the specified resource."
 msgstr ""
+"Мумкин аст ҳисоби шумо иҷозати дастрасӣ ба манбаъи мушаххасшуда, надошта "
+"бошед."
 
 #: kio/global.cpp:731 kio/global.cpp:947 kio/global.cpp:959
 msgid ""
 "Retry the request and ensure your authentication details are entered "
 "correctly."
 msgstr ""
+"Дархости худро такрор кунед ва мутмаъин шавед, ки ҷузъиёти шиносоиро дуруст "
+"ворид кардаед."
 
 #: kio/global.cpp:737
 msgid "Write Access Denied"
@@ -1469,6 +1526,8 @@ msgid ""
 "This means that an attempt to write to the file <strong>%1</strong> was "
 "rejected."
 msgstr ""
+"Ин маънои онро дорад ки иҷозати навиштан дар файли <strong>%1</strong> дода "
+"нашуд."
 
 #: kio/global.cpp:745
 msgid "Unable to Enter Folder"
@@ -1479,86 +1538,100 @@ msgid ""
 "This means that an attempt to enter (in other words, to open) the requested "
 "folder <strong>%1</strong> was rejected."
 msgstr ""
+"Ин маънои онро дорад, ки иҷозати вуруди ба феҳристи <strong>%1</strong> дода "
+"нашуд."
 
 #: kio/global.cpp:754
 msgid "Folder Listing Unavailable"
-msgstr ""
+msgstr "Рӯйхати феҳрист дастрас намебошад"
 
 #: kio/global.cpp:755
 msgid "Protocol %1 is not a Filesystem"
 msgstr "Пртоколи %1 - системаи файл нест"
 
 #: kio/global.cpp:756
-#, fuzzy
 msgid ""
 "This means that a request was made which requires determining the contents "
 "of the folder, and the KDE program supporting this protocol is unable to do "
 "so."
-msgstr "KDE."
+msgstr ""
+"Ин маънии онро дорад, ки дархости мушаххаскунандаи дорои феҳрист эҷод шуд, "
+"ки барномаи KDE пуштибони ин қарордод, қодир ба анҷом намебошад."
 
 #: kio/global.cpp:764
 msgid "Cyclic Link Detected"
-msgstr ""
+msgstr "Пайванди давронӣ пайдо шуд"
 
 #: kio/global.cpp:765
-#, fuzzy
 msgid ""
 "UNIX environments are commonly able to link a file or folder to a separate "
 "name and/or location. KDE detected a link or series of links that results in "
 "an infinite loop - i.e. the file was (perhaps in a roundabout way) linked to "
 "itself."
-msgstr "KDE."
+msgstr ""
+"Атрофи UNIX умуман қодиранд ки як файл ёки феҳристро бо ном/маконе пайванд "
+"кунанд. KDE пайванд ё пайвандҳоро ки ба ҳалқаи номуайян мешударо шиносоӣ "
+"мекунад - мисоли файл ба худаш пайванд шуда буд."
 
 #: kio/global.cpp:769 kio/global.cpp:791
 msgid ""
 "Delete one part of the loop in order that it does not cause an infinite "
 "loop, and try again."
 msgstr ""
+"Як қисмати ҳалқаро бо тартиб, ки ба ҳалқаи номуайян намеорад, нобуд созед ва "
+"боз як бори дигар талош кунед. "
 
 #: kio/global.cpp:778
 msgid "Request Aborted By User"
-msgstr ""
+msgstr "Корбари дархостро хотима дод"
 
 #: kio/global.cpp:779 kio/global.cpp:1072
 msgid "The request was not completed because it was aborted."
-msgstr ""
+msgstr "Ба улти хотимаи ғайри оддӣ, дархост такмил нашуд."
 
 #: kio/global.cpp:781 kio/global.cpp:975 kio/global.cpp:1074
 msgid "Retry the request."
-msgstr ""
+msgstr "Таҷдиди дархост кунед."
 
 #: kio/global.cpp:785
 msgid "Cyclic Link Detected During Copy"
-msgstr ""
+msgstr "Дар ҳангоми нусха гирӣ, пайванди давронӣ шиносоӣ шуд"
 
 #: kio/global.cpp:786
-#, fuzzy
 msgid ""
 "UNIX environments are commonly able to link a file or folder to a separate "
 "name and/or location. During the requested copy operation, KDE detected a "
 "link or series of links that results in an infinite loop - i.e. the file was "
 "(perhaps in a roundabout way) linked to itself."
-msgstr "KDE."
+msgstr ""
+"Атрофи UNIX умуман қодиранд, ки як файл ё феҳристро ба ном/макони ҷудогона "
+"пайванд кунанд. Дар айни амал дархости нусха, KDE пайванд ё пайвандҳоеро, ки "
+"манҷар ба ҳалқаи номутаносиб мешаванд, шиносоӣ мекунад - мисол файл ба худаш "
+"пайванд шуда буд."
 
 #: kio/global.cpp:796
 msgid "Could Not Create Network Connection"
-msgstr "Алоқаи шабақа сохта карда натавонист"
+msgstr "Алоқаи шабақаро сохта натавонист"
 
 #: kio/global.cpp:797
 msgid "Could Not Create Socket"
-msgstr "Socket-ро сохта карда натавонист"
+msgstr "Socket-ро сохта натавонист"
 
 #: kio/global.cpp:798
 msgid ""
 "This is a fairly technical error in which a required device for network "
 "communications (a socket) could not be created."
 msgstr ""
+"Ин хатои техникӣ мебошад, ки дар натиҷа дастгоҳи лозимӣ ёки пайвастагии "
+"шабақа (socket) эҷод нашуд."
 
 #: kio/global.cpp:800 kio/global.cpp:913 kio/global.cpp:924 kio/global.cpp:933
 msgid ""
 "The network connection may be incorrectly configured, or the network "
 "interface may not be enabled."
 msgstr ""
+"Мумкин аст иртиботи шабақае ба нодурустӣ танзим шудааст, ё воситаи шабақа "
+"фаъол нашудааст."
 
 #: kio/global.cpp:806
 msgid "Connection to Server Refused"
@@ -1569,18 +1642,24 @@ msgid ""
 "The server <strong>%1</strong> refused to allow this computer to make a "
 "connection."
 msgstr ""
+"Сервери <strong>%1</strong> иҷозати пайваст шуданро бо ин компютер барҳам "
+"дод."
 
 #: kio/global.cpp:809
 msgid ""
 "The server, while currently connected to the Internet, may not be configured "
 "to allow requests."
 msgstr ""
+"Сервер, бо вуҷуди онки ҳам акнун ба интернет васл аст, шояд барои иҷозат "
+"додани ба дархостҳо, танзим нашудааст."
 
 #: kio/global.cpp:811
 msgid ""
 "The server, while currently connected to the Internet, may not be running "
 "the requested service (%1)."
 msgstr ""
+"Сервер, бо вуҷуди онки ҳам акнун ба интернет васл аст, шояд сервиси "
+"дархостшударо (%1) иҷро намекунад."
 
 #: kio/global.cpp:813
 msgid ""
@@ -1588,53 +1667,62 @@ msgid ""
 "protecting your network or the network of the server, may have intervened, "
 "preventing this request."
 msgstr ""
+"Девори оташи шабақа (дастгоҳе, ки дархостҳои интернетро маҳдуд мекунад), ки "
+"ё аз шабақаи шумо ё аз шабақаи сервер муҳофизат мекунад, эҳтимолан ҷилваи ин "
+"дархостро гирифтааст."
 
 #: kio/global.cpp:820
-#, fuzzy
 msgid "Connection to Server Closed Unexpectedly"
-msgstr "Алоқа Сервер"
+msgstr "Тамос бо сервер ба таври ғайримунтазарӣ баста шуд"
 
 #: kio/global.cpp:821
 msgid ""
 "Although a connection was established to <strong>%1</strong>, the connection "
 "was closed at an unexpected point in the communication."
 msgstr ""
+"Бовуҷуди онки итсоли ба <strong>%1</strong> барқарор шуд, иртибот дар нуқтаи "
+"ғайримунтазарӣ қатъ шуд."
 
 #: kio/global.cpp:824
 msgid ""
 "A protocol error may have occurred, causing the server to close the "
 "connection as a response to the error."
 msgstr ""
+"Эҳтимолан хатои қарордоде иттифоқ афтид, ки боиси гардиши сервери иртиботро "
+"ба улти хато қатъ кард."
 
 #: kio/global.cpp:830
 msgid "URL Resource Invalid"
-msgstr "Манбаъи URL нодуруст аст"
+msgstr "Манбаъи нишонии интернети номӯътабар"
 
 #: kio/global.cpp:831
 msgid "Protocol %1 is not a Filter Protocol"
 msgstr "Протоколи %1 - протоколи филтр нест"
 
 #: kio/global.cpp:832
-#, fuzzy
 msgid ""
 "The <strong>U</strong>niform <strong>R</strong>esource <strong>L</"
 "strong>ocator (URL) that you entered did not refer to a valid mechanism of "
 "accessing the specific resource, <strong>%1%2</strong>."
 msgstr ""
-"<strong></strong><strong></strong><strong></strong> URL<strong></strong>."
+"Маконёби манбаъи воҳидии (URL), ки ворид кардаед ба як макони зами дурусте "
+"дастрасӣ ба манбаъи хос <strong>%1%2</strong> ишора намекунад."
 
 #: kio/global.cpp:837
-#, fuzzy
 msgid ""
 "KDE is able to communicate through a protocol within a protocol. This "
 "request specified a protocol be used as such, however this protocol is not "
 "capable of such an action. This is a rare event, and is likely to indicate a "
 "programming error."
-msgstr "KDE."
+msgstr ""
+"KDE метавонад аз қарордоди дохилӣ, қарордоди дигар иртибот барқарор кунад. "
+"Ин дархости қарордоди ингунаро мушаххас кард, вале ин қарордод тавоноии "
+"чунин кореро надорад. Ин иттифоқи нодир аст, ва эҳтимолан баёнгари хатои "
+"барномае мебошад."
 
 #: kio/global.cpp:845
 msgid "Unable to Initialize Input/Output Device"
-msgstr ""
+msgstr "Қодир ба роҳандозии дастгоҳи вурудӣ/хурӯҷӣ нестам"
 
 #: kio/global.cpp:846
 msgid "Could Not Mount Device"
@@ -1645,6 +1733,8 @@ msgid ""
 "The requested device could not be initialized (\"mounted\"). The reported "
 "error was: <strong>%1</strong>"
 msgstr ""
+"Дастгоҳи дархостшудаи роҳандозӣ  (\"монтажонида\") нашуд. Ин хато гузориш "
+"шуд: <strong>%1</strong>"
 
 #: kio/global.cpp:850
 msgid ""
@@ -1652,6 +1742,9 @@ msgid ""
 "removable media device (i.e. no CD-ROM in a CD drive), or in the case of a "
 "peripheral/portable device, the device may not be correctly connected."
 msgstr ""
+"Имкон дорад дастгоҳ омода набошад, мисол media дар дастгоҳи media-и "
+"ҷудошудане (мисли CD-ROM дар ҷойгоҳи CD) нест, ё дар мавриди дастгоҳи қобили "
+"кор, дастгоҳи эҳтимолан ба дурустӣ васл нашудааст."
 
 #: kio/global.cpp:854
 msgid ""
@@ -1659,26 +1752,33 @@ msgid ""
 "systems, often system administrator privileges are required to initialize a "
 "device."
 msgstr ""
+"Эҳтимолӣ дорад, ки шумо иҷозати роҳандозӣ (\"mount\") احتمال دارد که شما "
+"اجازه‌ی راه‌اندازی (\"سوار کردن\") دستگاه را نداشته باشید. در سیستم‌های یونیکس "
+"عموما برای راه‌اندازی دستگاه، نیاز به اجازه‌های مدیر سیستم است."
 
 #: kio/global.cpp:858
 msgid ""
 "Check that the device is ready; removable drives must contain media, and "
 "portable devices must be connected and powered on.; and try again."
 msgstr ""
+"Баррасӣ кунед, ки дастгоҳ омода аст; ҷойгоҳи ҷудо шудание бояд media дошта "
+"бошад, ва дастгоҳи қобили кор бояд мутассал ва равшан бошад; маҷдудан талош "
+"кунед."
 
 #: kio/global.cpp:864
 msgid "Unable to Uninitialize Input/Output Device"
-msgstr ""
+msgstr "Қодир набудам дастгоҳи вурудӣ/хурӯҷиро аз кор биандозам"
 
 #: kio/global.cpp:865
 msgid "Could Not Unmount Device"
-msgstr ""
+msgstr "Натавонистам дастгоҳро пайдо кунам"
 
 #: kio/global.cpp:866
 msgid ""
 "The requested device could not be uninitialized (\"unmounted\"). The "
 "reported error was: <strong>%1</strong>"
 msgstr ""
+"Дастгоҳи дархостшуда пайдо нашуд. Ин хато гузориш шуд: <strong>%1</strong>"
 
 #: kio/global.cpp:869
 msgid ""
@@ -1686,6 +1786,9 @@ msgid ""
 "user. Even such things as having an open browser window on a location on "
 "this device may cause the device to remain in use."
 msgstr ""
+"Шояд дастгоҳ машғул бошад, яъне сервер ё барномаи дигаре ҳанӯз аз он "
+"истифода мекунад. Ҳатто browser-и бозӣ ки ба ҷои бар рӯи дастгоҳ ишора "
+"мекунад, метавонад боиси машғул монанди дастгоҳ шавад."
 
 #: kio/global.cpp:873
 msgid ""
@@ -1693,47 +1796,55 @@ msgid ""
 "UNIX systems, system administrator privileges are often required to "
 "uninitialize a device."
 msgstr ""
+"Эҳтимол дорад, ки шумо иҷозати пиёдасозии дастгоҳро надошта бошед. Дар "
+"системаҳои UNIX умуман барои пиёдасозии дастгоҳҳо ниёз ба иҷозати мудири "
+"система мебошад."
 
 #: kio/global.cpp:877
 msgid "Check that no applications are accessing the device, and try again."
 msgstr ""
+"Баррасӣ кунед, ки ягон барномаи дар ҳоли дастрасӣ ба дастгоҳ набошад ва "
+"дубора сайъ кунед."
 
 #: kio/global.cpp:882
 msgid "Cannot Read From Resource"
-msgstr ""
+msgstr "Қодир ба хондан аз манбаъ нестам"
 
 #: kio/global.cpp:883
 msgid ""
 "This means that although the resource, <strong>%1</strong>, was able to be "
 "opened, an error occurred while reading the contents of the resource."
 msgstr ""
+"Ин маънии онро дорад, ки бо вуҷуди онки манбаъи <strong>%1</strong> қодир ба "
+"кушода шудан буд, хатои ҳангоми хондани дохили манбаъ ҳодиса шуд."
 
 #: kio/global.cpp:886
 msgid "You may not have permissions to read from the resource."
-msgstr ""
+msgstr "Мумкин аст шумо иҷозати хондан аз манбаъро надошта бошед."
 
 #: kio/global.cpp:895
 msgid "Cannot Write to Resource"
-msgstr ""
+msgstr "Қодири навиштан ба манбаъ нестам"
 
 #: kio/global.cpp:896
 msgid ""
 "This means that although the resource, <strong>%1</strong>, was able to be "
 "opened, an error occurred while writing to the resource."
 msgstr ""
+"Ин маънии онро дорад, ки бо вуҷуди онки манбаъи <strong>%1</strong> қодири "
+"кушода шудан буд, хатоӣ ҳангоми навиштан бар рӯи манбаъ ҳодиса шуд."
 
 #: kio/global.cpp:899
 msgid "You may not have permissions to write to the resource."
-msgstr ""
+msgstr "Мумкин аст шумо иҷозати навиштан ба манбаъро надошта бошед."
 
 #: kio/global.cpp:908 kio/global.cpp:919
-#, fuzzy
 msgid "Could Not Listen for Network Connections"
-msgstr "Шабақа"
+msgstr "Натавонистам ба тамосҳои шабақае гӯш кунам"
 
 #: kio/global.cpp:909
 msgid "Could Not Bind"
-msgstr ""
+msgstr "Натавонистам Bind-ро иҷро кунам"
 
 #: kio/global.cpp:910 kio/global.cpp:921
 msgid ""
@@ -1741,25 +1852,29 @@ msgid ""
 "communications (a socket) could not be established to listen for incoming "
 "network connections."
 msgstr ""
+"Ин хатои нисбатан техникӣ аст ки дар он қодир ба эҷоди дастгоҳ мавриди ниёз "
+"барои иртиботи шабақа (як socket) барои гӯш додан ба иртиботҳои шабақа "
+"вуруде набуд."
 
 #: kio/global.cpp:920
 msgid "Could Not Listen"
-msgstr ""
+msgstr "Натавонистам гӯш кунам"
 
 #: kio/global.cpp:930
-#, fuzzy
 msgid "Could Not Accept Network Connection"
-msgstr "Пазируфтан Шабақа"
+msgstr "Қодир ба қабул кардани тамоси шабақа нестам"
 
 #: kio/global.cpp:931
 msgid ""
 "This is a fairly technical error in which an error occurred while attempting "
 "to accept an incoming network connection."
 msgstr ""
+"Ин хатои нисбатан техникӣ аст, ки дар ҳангоми талош барои қабули иртиботи "
+"шабақае вуруд ҳодиса шуд."
 
 #: kio/global.cpp:935
 msgid "You may not have permissions to accept the connection."
-msgstr ""
+msgstr "Мумкин аст шумо иҷозати пазируфтани тамосро надошта бошед."
 
 #: kio/global.cpp:940
 #, c-format
@@ -1770,32 +1885,36 @@ msgstr "вуруд кардан натавонист: %1"
 msgid ""
 "An attempt to login to perform the requested operation was unsuccessful."
 msgstr ""
+"Сайъ барои вуруд ба система ҷиҳати анҷоми амалиёти дархостӣ, номуваффақ буд."
 
 #: kio/global.cpp:952
 msgid "Could Not Determine Resource Status"
-msgstr ""
+msgstr "Натавонистам вазъияти манбаъро таъин кунам"
 
 #: kio/global.cpp:953
 msgid "Could Not Stat Resource"
-msgstr ""
+msgstr "Натавонистам аз манбаъи омор бигирем"
 
 #: kio/global.cpp:954
 msgid ""
 "An attempt to determine information about the status of the resource <strong>"
 "%1</strong>, such as the resource name, type, size, etc., was unsuccessful."
 msgstr ""
+"Талоше дар ҷиҳати ташхиси иттилооте дар мавриди манбаъи <strong>%1</strong>, "
+"монанди ном, навъ, андоза ва ғайра мушаххасоти манбаъ муваффақ набуд."
 
 #: kio/global.cpp:957
 msgid "The specified resource may not have existed or may not be accessible."
 msgstr ""
+"Манбаъи мушаххасшуда мумкин аст мавҷуд набуда бошад ё дар дастрасӣ набошад."
 
 #: kio/global.cpp:965
 msgid "Could Not Cancel Listing"
-msgstr ""
+msgstr "Натавонистам рӯйхатгириро канда кунам"
 
 #: kio/global.cpp:966
 msgid "FIXME: Document this"
-msgstr ""
+msgstr "ДУРУСТАМ КУНЕД: Бароем мустанадот бинависед"
 
 #: kio/global.cpp:970
 msgid "Could Not Create Folder"
@@ -1803,11 +1922,11 @@ msgstr "Феҳристро сохта карда натавонист"
 
 #: kio/global.cpp:971
 msgid "An attempt to create the requested folder failed."
-msgstr ""
+msgstr "Сайъ барои эҷоди шохаи дархости номуваффақ буд."
 
 #: kio/global.cpp:972
 msgid "The location where the folder was to be created may not exist."
-msgstr ""
+msgstr "Мумкин аст макони эҷоди шоха вуҷуд надошта бошад."
 
 #: kio/global.cpp:979
 msgid "Could Not Remove Folder"
@@ -1816,6 +1935,7 @@ msgstr "Феҳристро нест карда натавонист"
 #: kio/global.cpp:980
 msgid "An attempt to remove the specified folder, <strong>%1</strong>, failed."
 msgstr ""
+"Сайъе барои ҳузфи шохаи мушаххас шудаи <strong>%1</strong>, номуваффақ буд."
 
 #: kio/global.cpp:982
 msgid "The specified folder may not exist."
@@ -1828,42 +1948,46 @@ msgstr "Феҳристи муайяншуда мумкин аст холӣ не�
 #: kio/global.cpp:986
 msgid "Ensure that the folder exists and is empty, and try again."
 msgstr ""
+"Мутмаъин шавед, ки феҳрист мавҷуд ва холӣ мебошад, ва дубора сайъ кунед."
 
 #: kio/global.cpp:991
 msgid "Could Not Resume File Transfer"
-msgstr ""
+msgstr "Натавонистам интиқоли файлро идома бидиҳам"
 
 #: kio/global.cpp:992
 msgid ""
 "The specified request asked that the transfer of file <strong>%1</strong> be "
 "resumed at a certain point of the transfer. This was not possible."
 msgstr ""
+"Дар дархост нишон дода буд, ки интиқоли файли <strong>%1</strong>бояд аз ҷои "
+"муайян давом дода шавад. Ин имконнопазир буд."
 
 #: kio/global.cpp:995
 msgid "The protocol, or the server, may not support file resuming."
-msgstr ""
+msgstr "Мумкин аст протокол, ё сервер идомаи интиқолиро пуштибонӣ накунад."
 
 #: kio/global.cpp:997
 msgid "Retry the request without attempting to resume transfer."
-msgstr ""
+msgstr "Дархостро бе сайъ барои идомаи интиқолӣ такрор кунед."
 
 #: kio/global.cpp:1002
 msgid "Could Not Rename Resource"
-msgstr ""
+msgstr "Натавонистам номи манбаъро таъғир диҳам"
 
 #: kio/global.cpp:1003
 msgid "An attempt to rename the specified resource <strong>%1</strong> failed."
-msgstr ""
+msgstr "Сайъ барои таъғири номи манбаъи <strong>%1</strong> номуваффақ буд."
 
 #: kio/global.cpp:1011
 msgid "Could Not Alter Permissions of Resource"
-msgstr ""
+msgstr "Натавонистам иҷозатҳои манбаъро таъғир диҳам"
 
 #: kio/global.cpp:1012
 msgid ""
 "An attempt to alter the permissions on the specified resource <strong>%1</"
 "strong> failed."
 msgstr ""
+"Сайъи барои таъғири иҷозатҳои манбаъи <strong>%1</strong> номуваффақ буд."
 
 #: kio/global.cpp:1019
 msgid "Could Not Delete Resource"
@@ -1871,17 +1995,19 @@ msgstr "Манбаъи интихобшуда нест карда натавон
 
 #: kio/global.cpp:1020
 msgid "An attempt to delete the specified resource <strong>%1</strong> failed."
-msgstr ""
+msgstr "Сайъи барои ҳузфи манбаъи <strong>%1</strong> номуваффақ буд."
 
 #: kio/global.cpp:1027
 msgid "Unexpected Program Termination"
-msgstr ""
+msgstr "Поёни ғайримунтазарии барнома"
 
 #: kio/global.cpp:1028
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
 "strong> protocol has unexpectedly terminated."
 msgstr ""
+"Барномае ки дар компютери шумо иҷозати дастрасӣ ба протоколи <strong>%1</"
+"strong>бударо медиҳад, ба таври ғайримунтазарӣ, поён ёфт."
 
 #: kio/global.cpp:1036
 msgid "Out of Memory"
@@ -1892,18 +2018,23 @@ msgid ""
 "The program on your computer which provides access to the <strong>%1</"
 "strong> protocol could not obtain the memory required to continue."
 msgstr ""
+"Барномае ки дар компютери шумо иҷозати дастрасӣ ба протоколи <strong>%1</"
+"strong> бударо медиҳад, натавонист ба хотира мавриди ниёзи ҷиҳати идома кори "
+"дастрасӣ пайдо кунад."
 
 #: kio/global.cpp:1045
 msgid "Unknown Proxy Host"
 msgstr "Узели Proxy ношинос аст"
 
 #: kio/global.cpp:1046
-#, fuzzy
 msgid ""
 "While retrieving information about the specified proxy host, <strong>%1</"
 "strong>, an Unknown Host error was encountered. An unknown host error "
 "indicates that the requested name could not be located on the Internet."
-msgstr "<strong></strong> ношинос Узел."
+msgstr ""
+"Дар ҳангоми гирифтани иттилооти мизбони proxy мушаххас шудаи <strong>%1</"
+"strong>, бо хатои мизбони ношинохта муоҷа шудам, хатои мизбони ношинохта "
+"маънии онро дорад, ки номи дархостшуда рӯи интернет маконёбӣ нашуд."
 
 #: kio/global.cpp:1050
 msgid ""
@@ -1911,35 +2042,41 @@ msgid ""
 "your proxy's hostname. If you have been accessing the Internet with no "
 "problems recently, this is unlikely."
 msgstr ""
+"Шояд мушкилие дар танзимоти шабақаи шумо вуҷуд доштааст, мушаххасоти бо номи "
+"мизбони proxy-и шумо. Агар охиро бе мушкилӣ аз интернет истифода кардаед, ин "
+"бисёр нодир аст."
 
 #: kio/global.cpp:1054
-#, fuzzy
 msgid "Double-check your proxy settings and try again."
-msgstr "Дутагӣ."
+msgstr "Танзимоти proxy-ро баррасии комил кунед, ва дубора сайъ кунед."
 
 #: kio/global.cpp:1059
-#, fuzzy
 msgid "Authentication Failed: Method %1 Not Supported"
-msgstr "Мутобиқат:"
+msgstr "Шиносоӣ номуваффақ буд: равиши %1 пуштибонӣ намешавад"
 
 #: kio/global.cpp:1061
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Although you may have supplied the correct authentication details, the "
 "authentication failed because the method that the server is using is not "
 "supported by the KDE program implementing the protocol %1."
-msgstr "KDE."
+msgstr ""
+"Бо вуҷуди онки мумкин аст шумо ҷузъиёти шиносоии дурустро ворид карда бошед, "
+"шиносоии муваффақият омез набуд барои онки равише, ки коргузорӣ истиода "
+"мекунадтавассути барномаи KDE пиёдакунандаи протоколи %1 пуштибонӣ намешавад."
 
 #: kio/global.cpp:1065
-#, fuzzy
 msgid ""
 "Please file a bug at <a href=\"http://bugs.kde.org/\">http://bugs.kde.org/</"
 "a> to inform the KDE team of the unsupported authentication method."
-msgstr "<a href=\"http://bugs.kde.org/\">http://bugs.kde.org/</a> KDE."
+msgstr ""
+"Илтимос дар <a href=\"http://bugs.kde.org/\">http://bugs.kde.org/</a> файли "
+"хатоие ташкил диҳед ва гурӯҳи KDE-ро аз равиши шиносоии пуштибонӣ нашуда "
+"мутлақ созед."
 
 #: kio/global.cpp:1071
 msgid "Request Aborted"
-msgstr ""
+msgstr "Дархост хотима дода шуд"
 
 #: kio/global.cpp:1078
 msgid "Internal Error in Server"
@@ -1950,29 +2087,35 @@ msgid ""
 "The program on the server which provides access to the <strong>%1</strong> "
 "protocol has reported an internal error: %0."
 msgstr ""
+"Барномаи рӯи сервер ки дастрасӣ ба протоколи <strong>%1</strong> бударо "
+"муҳайё месозад, хатои дохилии %0-ро кардааст."
 
 #: kio/global.cpp:1082
 msgid ""
 "This is most likely to be caused by a bug in the server program. Please "
 "consider submitting a full bug report as detailed below."
 msgstr ""
+"Ин ба эҳтимоли зиёд ба улти хатоӣ дар барномаи сервер ба вуқӯъи пайваста "
+"аст. Илтимос фиристодани гузориши хатои комили он чинор, ки дар зери баён "
+"шудааст, таъти назар қарор диҳед."
 
 #: kio/global.cpp:1085
 msgid "Contact the administrator of the server to advise them of the problem."
-msgstr ""
+msgstr "Илтимос бо мудири коргузори тамосгирифта ва мушкилиро иттилоъ диҳед."
 
 #: kio/global.cpp:1087
 msgid ""
 "If you know who the authors of the server software are, submit the bug "
 "report directly to them."
 msgstr ""
+"Агар бидонед, ки нависандагони барномаҳои компютерии сервер чӣ касоне "
+"ҳастанд, гузориши ишколро мустақиман ба онҳо ирсол кунед."
 
 #: kio/global.cpp:1092
 msgid "Timeout Error"
 msgstr "Хатои итмоми вақт"
 
 #: kio/global.cpp:1093
-#, fuzzy
 msgid ""
 "Although contact was made with the server, a response was not received "
 "within the amount of time allocated for the request as follows:"
@@ -1980,11 +2123,17 @@ msgid ""
 "for receiving a response: %2 seconds</li><li>Timeout for accessing proxy "
 "servers: %3 seconds</li></ul>Please note that you can alter these timeout "
 "settings in the KDE Control Center, by selecting Network -> Preferences."
-msgstr "<ul><li></li><li></li><li></li></ul> KDE Шабақа."
+msgstr ""
+"Бо вуҷуди онки бо сервери иртибот барқарор шуд, дар замони ихтисос дода шуда "
+"ба дархост бо шароити зерҷавобе дарёфт нашуд: <ul><li>Итмоми замон барои "
+"барқарори иртибот: %1 сония</li><li>Итмоми замон барои дарёфти ҷавоб: %2 "
+"сония</li><li>Итмоми замон барои дастрасӣ ба серверони proxy: %3 сония</li></"
+"ul>Илтимос таваҷҷӯъ дошта бошед, ки метавонеддар маркази контроли KDE дар "
+"қисмати шабақа -> тарҷеҳоти ин танзимотро тағйир диҳед."
 
 #: kio/global.cpp:1104
 msgid "The server was too busy responding to other requests to respond."
-msgstr ""
+msgstr "Сервер ба улти посух додан ба дархостҳои дигар машғул мебошад."
 
 #: kio/global.cpp:1110
 msgid "Unknown Error"
@@ -1995,17 +2144,20 @@ msgid ""
 "The program on your computer which provides access to the <strong>%1</"
 "strong> protocol has reported an unknown error: %2."
 msgstr ""
+"Барномаи рӯи компютери шумо, ки дастрасӣ ба протоколи <strong>%1</strong>-"
+"ро  фароҳам меоварад, хатоӣ ба шарҳи зер кардааст: %2."
 
 #: kio/global.cpp:1119
-#, fuzzy
 msgid "Unknown Interruption"
-msgstr "ношинос"
+msgstr "Қатъи ношинос"
 
 #: kio/global.cpp:1120
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
 "strong> protocol has reported an interruption of an unknown type: %2."
 msgstr ""
+"Барнома дар компютери шумо, ки дастрасӣ ба протоколи <strong>%1</strong> "
+"медиҳад, ахборот дар бораи каниш бо коди номуайяни хаторо дод: %2."
 
 #: kio/global.cpp:1128
 msgid "Could Not Delete Original File"
@@ -2017,10 +2169,12 @@ msgid ""
 "likely at the end of a file move operation. The original file <strong>%1</"
 "strong> could not be deleted."
 msgstr ""
+"Амали дархостшуда ниёз ба ҳузфи файли аслӣ аст, эҳтимолан дар интиҳои амал "
+"ҷобаҷоӣ доштанаш мумкин. Файли аслии <strong>%1</strong> ҳузф нашуд."
 
 #: kio/global.cpp:1138
 msgid "Could Not Delete Temporary File"
-msgstr ""
+msgstr "Натавонистам файли муваққатиро ҳузф кунам"
 
 #: kio/global.cpp:1139
 msgid ""
@@ -2028,27 +2182,33 @@ msgid ""
 "to save the new file while being downloaded. This temporary file <strong>%1</"
 "strong> could not be deleted."
 msgstr ""
+"Амали дархостшуда ниёз ба эҷоди файли муваққатӣ дошт, ки файли навро дар "
+"ҳангоми бор шудани дар он қарор диҳад. Файли муваққатии <strong>%1</strong> "
+"ҳузф нашуд."
 
 #: kio/global.cpp:1148
-#, fuzzy
 msgid "Could Not Rename Original File"
-msgstr "Ҳақиқӣ"
+msgstr "Натавонистам номи файли аслиро таъғир бидиҳам"
 
 #: kio/global.cpp:1149
 msgid ""
 "The requested operation required the renaming of the original file <strong>%"
 "1</strong>, however it could not be renamed."
 msgstr ""
+"Амали дархостшуда ниёз ба таъғири номи файли аслии <strong>%1</strong> дошта "
+"бо ин вуҷуди номи ин файл ивваз нашуд."
 
 #: kio/global.cpp:1157
 msgid "Could Not Rename Temporary File"
-msgstr ""
+msgstr "Натавонистам номи файли муваққатиро таъғир бидиҳам"
 
 #: kio/global.cpp:1158
 msgid ""
 "The requested operation required the creation of a temporary file <strong>%"
 "1</strong>, however it could not be created."
 msgstr ""
+"Амали дархостшуда ниёз ба эҷоди файли нави <strong>%1</strong> дошта бо ин "
+"вуҷуди номи ин файл ташкил нашуд."
 
 #: kio/global.cpp:1166
 msgid "Could Not Create Link"
@@ -2056,15 +2216,15 @@ msgstr "Алоқаро сахта карда натавонист"
 
 #: kio/global.cpp:1167
 msgid "Could Not Create Symbolic Link"
-msgstr ""
+msgstr "Натавонистам пайванди намудӣ эҷод кунам"
 
 #: kio/global.cpp:1168
 msgid "The requested symbolic link %1 could not be created."
-msgstr ""
+msgstr "Натавонистам пайванди намуди дархости %1-ро эҷод кунам."
 
 #: kio/global.cpp:1175
 msgid "No Content"
-msgstr ""
+msgstr "Бе окана"
 
 #: kio/global.cpp:1180
 msgid "Disk Full"
@@ -2075,6 +2235,8 @@ msgid ""
 "The requested file <strong>%1</strong> could not be written to as there is "
 "inadequate disk space."
 msgstr ""
+"Бар рӯи файли дархостшудаи <strong>%1</strong> навишта нашуд, аз он ҷое ки "
+"фазои диски кофӣ вуҷуд надорад."
 
 #: kio/global.cpp:1183
 msgid ""
@@ -2082,30 +2244,35 @@ msgid ""
 "archiving files to removable media storage such as CD-Recordable discs; or "
 "3) obtain more storage capacity."
 msgstr ""
+"Фазои мавриди ниёзи дискро аз тариқи зер холӣ кунед 1) ҳузфи файлҳои нохоста "
+"ва муваққатӣ; 2) захираи файлҳо бар рӯи media, захираи ҷудо шудани "
+"ҳаммонанди CD-ҳои навиштанӣ; ёки 3) таҳияи фазои захираи бештар."
 
 #: kio/global.cpp:1190
 msgid "Source and Destination Files Identical"
-msgstr ""
+msgstr "Файлҳои манбаъ ва мақсади яксонавӣ"
 
 #: kio/global.cpp:1191
 msgid ""
 "The operation could not be completed because the source and destination "
 "files are the same file."
 msgstr ""
+"Ин амал комили анҷом нашуд аз он ҷой, ки файлҳои манбаъ ва мақсади яке "
+"ҳастанд."
 
 #: kio/global.cpp:1193
 msgid "Choose a different filename for the destination file."
-msgstr ""
+msgstr "Барои файли мақсад як номи дигар интихоб кунед."
 
-#: kio/global.cpp:1198
+#: kio/global.cpp:1204
 msgid "Undocumented Error"
-msgstr ""
+msgstr "Хатои бе мустанад"
 
 #: kio/statusbarprogress.cpp:132
 msgid " Stalled "
-msgstr ""
+msgstr "Мутаваққуф шуда"
 
-#: kio/statusbarprogress.cpp:134 misc/uiserver.cpp:1089
+#: kio/statusbarprogress.cpp:134 misc/uiserver.cpp:1097
 msgid " %1/s "
 msgstr " %1/ҳо"
 
@@ -2115,9 +2282,9 @@ msgstr "Гузарвожа"
 
 #: kio/passdlg.cpp:96
 msgid "You need to supply a username and a password"
-msgstr ""
+msgstr "Лозим аст як номи сервер ва як вожаи рамз таҳвил бидиҳед"
 
-#: kfile/kpropertiesdialog.cpp:3377 kio/passdlg.cpp:106 rc.cpp:33
+#: kfile/kpropertiesdialog.cpp:3392 kio/passdlg.cpp:106 rc.cpp:33
 msgid "&Username:"
 msgstr "&Номи истифодакунанда:"
 
@@ -2131,82 +2298,88 @@ msgstr "&Гузарвожаро нигоҳ доред"
 
 #: kio/passdlg.cpp:304 kpasswdserver/kpasswdserver.cpp:249
 msgid "Authorization Dialog"
-msgstr ""
+msgstr "Тирезаи авторизатсия"
 
-#: kio/krun.cpp:94
+#: kio/krun.cpp:110
 msgid ""
 "<qt>Unable to enter <b>%1</b>.\n"
 "You do not have access rights to this location.</qt>"
 msgstr ""
+"<qt>Натавонистам ворид <b>%1</b> бишавам.\n"
+"Шумо ҳуқуқи дастрасии лозимӣ барои ин маконро надоред.</qt>"
 
-#: kio/krun.cpp:134
+#: kio/krun.cpp:149
 msgid ""
 "<qt>The file <b>%1</b> is an executable program. For safety it will not be "
 "started.</qt>"
 msgstr ""
+"<qt>Файл <b>%1</b> барномаи иҷрошаванда мебошад. Ба мақсади ҳифз он "
+"муҳофизат намешавад.</qt>"
 
-#: kio/krun.cpp:141
+#: kio/krun.cpp:156
 msgid "<qt>You do not have permission to run <b>%1</b>.</qt>"
 msgstr "<qt>Барои иҷро кардани <b>%1</b> шумо дастрасӣ надоред.</qt>"
 
-#: kio/krun.cpp:173 kio/krun.cpp:496
+#: kio/krun.cpp:188 kio/krun.cpp:511
 msgid "You are not authorized to execute this file."
-msgstr ""
+msgstr "Шумо иҷозати иҷроии ин файлро надоред."
 
-#: kfile/kopenwith.cpp:804 kio/krun.cpp:177
+#: kfile/kopenwith.cpp:804 kio/krun.cpp:192
 msgid "Open with:"
 msgstr "Кушодан бо:"
 
-#: kio/krun.cpp:530
+#: kio/krun.cpp:545
 #, c-format
 msgid "Launching %1"
-msgstr ""
+msgstr "Оғози %1"
 
-#: kio/krun.cpp:607
+#: kio/krun.cpp:622
 msgid "You are not authorized to execute this service."
-msgstr ""
+msgstr "Шумо иҷозати иҷрои ин сервисро надоред."
 
-#: kio/krun.cpp:752
+#: kio/krun.cpp:767
 msgid ""
 "<qt>Unable to run the command specified. The file or folder <b>%1</b> does "
 "not exist.</qt>"
 msgstr ""
+"<qt>Хатои иҷрои фармони нишондод. Файл ёки папкаи <b>%1</b> вуҷуд надорад.</"
+"qt>"
 
-#: kio/krun.cpp:1186
+#: kio/krun.cpp:1201
 #, fuzzy
 msgid "Could not find the program '%1'"
 msgstr "Барномаи '%1' -ро ёфта натавонист"
 
-#: kio/kfileitem.cpp:575
-msgid "Symbolic Link"
-msgstr ""
-
 #: kio/kfileitem.cpp:577
+msgid "Symbolic Link"
+msgstr "Ишораи истинод"
+
+#: kio/kfileitem.cpp:579
 msgid "%1 (Link)"
 msgstr "%1 (Алоқа)"
 
-#: kfile/kpropertiesdialog.cpp:858 kio/kfileitem.cpp:618
+#: kfile/kpropertiesdialog.cpp:858 kio/kfileitem.cpp:620
 msgid "Type:"
 msgstr "Намуд:"
 
-#: kio/kfileitem.cpp:622
+#: kio/kfileitem.cpp:624
 #, c-format
 msgid "Link to %1"
 msgstr "Алоқа ба %1"
 
-#: kfile/kpropertiesdialog.cpp:898 kio/kfileitem.cpp:627
+#: kfile/kpropertiesdialog.cpp:898 kio/kfileitem.cpp:629
 msgid "Size:"
 msgstr "Андоза:"
 
-#: kfile/kpropertiesdialog.cpp:991 kio/kfileitem.cpp:630
+#: kfile/kpropertiesdialog.cpp:991 kio/kfileitem.cpp:632
 msgid "Modified:"
 msgstr "Дигаргуншуда:"
 
-#: kio/kfileitem.cpp:632
+#: kio/kfileitem.cpp:634
 msgid "Owner:"
 msgstr "Соҳиб:"
 
-#: kio/kfileitem.cpp:633
+#: kio/kfileitem.cpp:635
 msgid "Permissions:"
 msgstr "Дастрасӣ:"
 
@@ -2216,42 +2389,45 @@ msgstr "Гузарондан"
 
 #: kio/skipdlg.cpp:63
 msgid "Auto Skip"
-msgstr ""
+msgstr "Гузаронидани ҳамааш"
 
 #: kio/kshred.cpp:212
 msgid "Shredding:  pass %1 of 35"
-msgstr ""
+msgstr "Дар ҳоли тароша кардан:  гузаред %1 аз 35"
 
 #: kio/slave.cpp:364
 #, c-format
 msgid "Unable to create io-slave: %1"
-msgstr "io-slave: %1 сохта карда натавонист"
+msgstr "io-slave: %1-ро сохта натавонист"
 
-#: kio/slave.cpp:382
+#: kio/slave.cpp:386
 #, fuzzy
 msgid "Unknown protocol '%1'."
 msgstr "Протоколи '%1' ношинос аст.\n"
 
-#: kio/slave.cpp:390
+#: kio/slave.cpp:394
 msgid "Can not find io-slave for protocol '%1'."
-msgstr "io-slave барои протоколи '%1'. ёфта натавонист."
+msgstr "io-slave барои протоколи '%1' ёфта натавонист."
 
-#: kio/slave.cpp:416
+#: kio/slave.cpp:420
+#, fuzzy
 msgid "Cannot talk to klauncher"
-msgstr ""
+msgstr "Қодир ба муҳаббат бо klauncher набудам"
 
-#: kio/slave.cpp:427
+#: kio/slave.cpp:431
 #, c-format
 msgid ""
 "Unable to create io-slave:\n"
 "klauncher said: %1"
 msgstr ""
+"Қодир ба эҷоди io-slave набудам:\n"
+"klauncher гуфт: %1"
 
-#: kfile/kpropertiesdialog.cpp:2439 kio/kmimetypechooser.cpp:75
+#: kfile/kpropertiesdialog.cpp:2454 kio/kmimetypechooser.cpp:75
 msgid "Mime Type"
 msgstr "Намуди Mime"
 
-#: kfile/kpropertiesdialog.cpp:2450 kio/kmimetypechooser.cpp:80
+#: kfile/kpropertiesdialog.cpp:2465 kio/kmimetypechooser.cpp:80
 msgid "Comment"
 msgstr "Шарҳ"
 
@@ -2273,7 +2449,7 @@ msgstr "Феристодани сертификат..."
 
 #: kssl/ksslcertdlg.cc:56
 msgid "Do not send a certificate"
-msgstr ""
+msgstr "Гувоҳиномаро нафиристед"
 
 #: kssl/ksslcertdlg.cc:62
 msgid "Certificate"
@@ -2289,7 +2465,7 @@ msgstr "Диалоги Сертификати KDE SSL"
 
 #: kssl/ksslcertificate.cc:202
 msgid "Signature Algorithm: "
-msgstr ""
+msgstr "Алгоритми имзо:"
 
 #: kssl/ksslcertificate.cc:203
 msgid "Unknown"
@@ -2297,7 +2473,7 @@ msgstr "Ношинос"
 
 #: kssl/ksslcertificate.cc:206
 msgid "Signature Contents:"
-msgstr ""
+msgstr "Дохили имзо:"
 
 #: kssl/ksslcertificate.cc:315
 msgid ""
@@ -2333,59 +2509,62 @@ msgstr ""
 msgid "Public Key: "
 msgstr "Калиди олӣ:"
 
-#: kssl/ksslcertificate.cc:880
+#: kssl/ksslcertificate.cc:896
 msgid "The certificate is valid."
 msgstr "Сертификати нодуруст."
 
-#: kssl/ksslcertificate.cc:884
-#, fuzzy
+#: kssl/ksslcertificate.cc:900
 msgid ""
 "Certificate signing authority root files could not be found so the "
 "certificate is not verified."
-msgstr "реша."
+msgstr ""
 
-#: kssl/ksslcertificate.cc:886
+#: kssl/ksslcertificate.cc:902
 msgid "Certificate signing authority is unknown or invalid."
 msgstr ""
 
-#: kssl/ksslcertificate.cc:888
+#: kssl/ksslcertificate.cc:904
 msgid "Certificate is self-signed and thus may not be trustworthy."
 msgstr ""
 
-#: kssl/ksslcertificate.cc:890
+#: kssl/ksslcertificate.cc:906
 msgid "Certificate has expired."
 msgstr ""
 
-#: kssl/ksslcertificate.cc:892
+#: kssl/ksslcertificate.cc:908
 msgid "Certificate has been revoked."
 msgstr ""
 
-#: kssl/ksslcertificate.cc:894
+#: kssl/ksslcertificate.cc:910
 msgid "SSL support was not found."
 msgstr "Дастгирии SSL ёфт нашудааст."
 
-#: kssl/ksslcertificate.cc:896
+#: kssl/ksslcertificate.cc:912
 msgid "Signature is untrusted."
 msgstr ""
 
-#: kssl/ksslcertificate.cc:898
+#: kssl/ksslcertificate.cc:914
 msgid "Signature test failed."
 msgstr "Санҷиши имзо вайрон шуд."
 
-#: kssl/ksslcertificate.cc:901
-#, fuzzy
+#: kssl/ksslcertificate.cc:917
 msgid "Rejected, possibly due to an invalid purpose."
-msgstr "Рад кардан."
+msgstr ""
 
-#: kssl/ksslcertificate.cc:903
+#: kssl/ksslcertificate.cc:919
 msgid "Private key test failed."
 msgstr ""
 
-#: kssl/ksslcertificate.cc:905
+#: kssl/ksslcertificate.cc:921
 msgid "The certificate has not been issued for this host."
 msgstr ""
 
-#: kssl/ksslcertificate.cc:910
+#: kssl/ksslcertificate.cc:923
+#, fuzzy
+msgid "This certificate is not relevant."
+msgstr "Сертификати нодуруст."
+
+#: kssl/ksslcertificate.cc:928
 msgid "The certificate is invalid."
 msgstr "Сертификати нодуруст."
 
@@ -2410,8 +2589,7 @@ msgstr "Амалиёти: %1 дастгирӣ надорад"
 msgid "KDE SSL Information"
 msgstr "Ахбороти KDE SSL "
 
-#: kssl/ksslkeygen.cc:97 kssl/ksslkeygen.cc:106 misc/kwalletd/kwalletd.cpp:369
-#: misc/uiserver.cpp:1351
+#: kssl/ksslkeygen.cc:97 kssl/ksslkeygen.cc:106 misc/uiserver.cpp:1359
 msgid "KDE"
 msgstr "KDE"
 
@@ -2448,34 +2626,29 @@ msgid "Certificate password"
 msgstr "Сертификати гузарвожа"
 
 #: kssl/ksslinfodlg.cc:92 kssl/ksslinfodlg.cc:149
-#, fuzzy
 msgid "Current connection is secured with SSL."
-msgstr "SSL."
+msgstr ""
 
 #: kssl/ksslinfodlg.cc:95 kssl/ksslinfodlg.cc:152
-#, fuzzy
 msgid "Current connection is not secured with SSL."
-msgstr "SSL."
+msgstr ""
 
 #: kssl/ksslinfodlg.cc:99
-#, fuzzy
 msgid "SSL support is not available in this build of KDE."
-msgstr "SSL KDE."
+msgstr ""
 
 #: kssl/ksslinfodlg.cc:109
 msgid "C&ryptography Configuration..."
 msgstr ""
 
 #: kssl/ksslinfodlg.cc:142
-#, fuzzy
 msgid ""
 "The main part of this document is secured with SSL, but some parts are not."
-msgstr "SSL."
+msgstr ""
 
 #: kssl/ksslinfodlg.cc:144
-#, fuzzy
 msgid "Some of this document is secured with SSL, but the main part is not."
-msgstr "SSL."
+msgstr ""
 
 #: kssl/ksslinfodlg.cc:184
 msgid "Chain:"
@@ -2497,7 +2670,7 @@ msgstr ""
 msgid "IP address:"
 msgstr "Адреси IP:"
 
-#: kfile/kpropertiesdialog.cpp:2318 kssl/ksslinfodlg.cc:219
+#: kfile/kpropertiesdialog.cpp:2333 kssl/ksslinfodlg.cc:219
 msgid "URL:"
 msgstr "URL:"
 
@@ -2541,33 +2714,33 @@ msgstr ""
 msgid "%1 bits used of a %2 bit cipher"
 msgstr ""
 
-#: kssl/ksslinfodlg.cc:373
+#: kssl/ksslinfodlg.cc:381
 msgid "Organization:"
 msgstr "Ташкилот:"
 
-#: kssl/ksslinfodlg.cc:378
+#: kssl/ksslinfodlg.cc:386
 msgid "Organizational unit:"
 msgstr ""
 
-#: kssl/ksslinfodlg.cc:383
+#: kssl/ksslinfodlg.cc:391
 msgid "Locality:"
 msgstr "Ҷойгиршавӣ:"
 
-#: kssl/ksslinfodlg.cc:388
+#: kssl/ksslinfodlg.cc:396
 msgid ""
 "_: Federal State\n"
 "State:"
 msgstr "Вилоят:"
 
-#: kssl/ksslinfodlg.cc:393
+#: kssl/ksslinfodlg.cc:401
 msgid "Country:"
 msgstr "Кишвар:"
 
-#: kssl/ksslinfodlg.cc:398
+#: kssl/ksslinfodlg.cc:406
 msgid "Common name:"
 msgstr "Номи оддӣ:"
 
-#: kssl/ksslinfodlg.cc:403
+#: kssl/ksslinfodlg.cc:411
 msgid "Email:"
 msgstr "Почтаи электронӣ:"
 
@@ -2639,11 +2812,10 @@ msgid "Prints the preferred metadata values, available in the given file(s)."
 msgstr ""
 
 #: misc/kfile/fileprops.cpp:240
-#, fuzzy
 msgid ""
 "Opens a KDE properties dialog to allow viewing and modifying of metadata of "
 "the given file(s)"
-msgstr "KDE"
+msgstr ""
 
 #: misc/kfile/fileprops.cpp:244
 msgid ""
@@ -2689,103 +2861,111 @@ msgstr "Ягон файл муайян нашудааст"
 msgid "Cannot determine metadata"
 msgstr "metadata муайян карда натавонист"
 
-#: misc/kwalletd/kwalletd.cpp:290
+#: misc/kwalletd/kwalletd.cpp:291
 #, fuzzy
 msgid ""
-"KDE has requested to open the wallet '%1'. Please enter the password for "
-"this wallet below."
+"<qt>KDE has requested to open the wallet '<b>%1</b>'. Please enter the "
+"password for this wallet below."
 msgstr "KDE."
 
-#: misc/kwalletd/kwalletd.cpp:292
+#: misc/kwalletd/kwalletd.cpp:293
+#, fuzzy
 msgid ""
-"The application '%1' has requested to open the wallet '%2'. Please enter the "
-"password for this wallet below."
-msgstr ""
+"<qt>The application '<b>%1</b>' has requested to open the wallet '<b>%2</"
+"b>'. Please enter the password for this wallet below."
+msgstr "KDE."
 
-#: misc/kwalletd/kwalletd.cpp:295 misc/kwalletd/kwalletd.cpp:306
+#: kfile/kfiledialog.cpp:1751 misc/kwalletd/kwalletd.cpp:296
+#: misc/kwalletd/kwalletd.cpp:307
 msgid "&Open"
 msgstr "&Кушодан"
 
-#: misc/kwalletd/kwalletd.cpp:301
-#, fuzzy
+#: misc/kwalletd/kwalletd.cpp:302
 msgid ""
 "KDE has requested to open the wallet. This is used to store sensitive data "
 "in a secure fashion. Please enter a password to use with this wallet or "
 "click cancel to deny the application's request."
-msgstr "KDE."
-
-#: misc/kwalletd/kwalletd.cpp:303
-#, fuzzy
-msgid ""
-"The application '%1' has requested to open the KDE wallet. This is used to "
-"store sensitive data in a secure fashion. Please enter a password to use "
-"with this wallet or click cancel to deny the application's request."
-msgstr "KDE."
-
-#: misc/kwalletd/kwalletd.cpp:310
-#, fuzzy
-msgid ""
-"KDE has requested to create a new wallet named '%1'. Please choose a "
-"password for this wallet, or cancel to deny the application's request."
-msgstr "KDE."
-
-#: misc/kwalletd/kwalletd.cpp:312
-msgid ""
-"The application '%1' has requested to create a new wallet named '%2'. Please "
-"choose a password for this wallet, or cancel to deny the application's "
-"request."
 msgstr ""
 
-#: misc/kwalletd/kwalletd.cpp:315
+#: misc/kwalletd/kwalletd.cpp:304
+#, fuzzy
+msgid ""
+"<qt>The application '<b>%1</b>' has requested to open the KDE wallet. This "
+"is used to store sensitive data in a secure fashion. Please enter a password "
+"to use with this wallet or click cancel to deny the application's request."
+msgstr "KDE."
+
+#: misc/kwalletd/kwalletd.cpp:311
+#, fuzzy
+msgid ""
+"<qt>KDE has requested to create a new wallet named '<b>%1</b>'. Please "
+"choose a password for this wallet, or cancel to deny the application's "
+"request."
+msgstr "KDE."
+
+#: misc/kwalletd/kwalletd.cpp:313
+#, fuzzy
+msgid ""
+"<qt>The application '<b>%1</b>' has requested to create a new wallet named "
+"'<b>%2</b>'. Please choose a password for this wallet, or cancel to deny the "
+"application's request."
+msgstr "KDE."
+
+#: misc/kwalletd/kwalletd.cpp:316
 msgid "&Create"
 msgstr "&Сохтан"
 
-#: misc/kwalletd/kwalletd.cpp:318 misc/kwalletd/kwalletd.cpp:369
-#: misc/kwalletd/kwalletd.cpp:451 misc/kwalletd/kwalletd.cpp:467
-#: misc/kwalletd/kwalletd.cpp:477 misc/kwalletd/kwalletd.cpp:482
-#: misc/kwalletd/kwalletd.cpp:600 misc/kwalletd/kwalletd.cpp:920
-#, fuzzy
+#: misc/kwalletd/kwalletd.cpp:319 misc/kwalletd/kwalletd.cpp:370
+#: misc/kwalletd/kwalletd.cpp:372 misc/kwalletd/kwalletd.cpp:455
+#: misc/kwalletd/kwalletd.cpp:471 misc/kwalletd/kwalletd.cpp:481
+#: misc/kwalletd/kwalletd.cpp:486 misc/kwalletd/kwalletd.cpp:604
+#: misc/kwalletd/kwalletd.cpp:924
 msgid "KDE Wallet Service"
-msgstr "KDE"
-
-#: misc/kwalletd/kwalletd.cpp:326
-msgid "Invalid password for wallet '%1'. Please try again. (Error code %2)"
 msgstr ""
 
-#: misc/kwalletd/kwalletd.cpp:369
-msgid "The application '%1' has requested access to the open wallet '%2'."
+#: misc/kwalletd/kwalletd.cpp:327
+msgid ""
+"<qt>Error opening the wallet '<b>%1</b>'. Please try again.<br>(Error code %"
+"2: %3)"
 msgstr ""
 
-#: misc/kwalletd/kwalletd.cpp:369
-#, fuzzy
+#: misc/kwalletd/kwalletd.cpp:370
+msgid "<qt>KDE has requested access to the open wallet '<b>%2</b>'."
+msgstr ""
+
+#: misc/kwalletd/kwalletd.cpp:370 misc/kwalletd/kwalletd.cpp:372
 msgid "Allow &Once"
-msgstr "Тасдиқ намудан"
+msgstr ""
 
-#: misc/kwalletd/kwalletd.cpp:369
-#, fuzzy
+#: misc/kwalletd/kwalletd.cpp:370 misc/kwalletd/kwalletd.cpp:372
 msgid "Allow &Always"
-msgstr "Тасдиқ намудан"
+msgstr ""
 
-#: misc/kwalletd/kwalletd.cpp:451
+#: misc/kwalletd/kwalletd.cpp:372
+msgid ""
+"<qt>The application '<b>%1</b>' has requested access to the open wallet '<b>%"
+"2</b>'."
+msgstr ""
+
+#: misc/kwalletd/kwalletd.cpp:455
 msgid ""
 "Unable to open wallet. The wallet must be opened in order to change the "
 "password."
 msgstr ""
 
-#: misc/kwalletd/kwalletd.cpp:466
-msgid "Please choose a new password for the wallet '%1'."
+#: misc/kwalletd/kwalletd.cpp:470
+msgid "<qt>Please choose a new password for the wallet '<b>%1</b>'."
 msgstr ""
 
-#: misc/kwalletd/kwalletd.cpp:477
+#: misc/kwalletd/kwalletd.cpp:481
 msgid "Error re-encrypting the wallet. Password was not changed."
 msgstr ""
 
-#: misc/kwalletd/kwalletd.cpp:482
-#, fuzzy
+#: misc/kwalletd/kwalletd.cpp:486
 msgid "Error reopening the wallet. Data may be lost."
-msgstr "Таърих."
+msgstr ""
 
-#: misc/kwalletd/kwalletd.cpp:600 misc/kwalletd/kwalletd.cpp:920
+#: misc/kwalletd/kwalletd.cpp:604 misc/kwalletd/kwalletd.cpp:924
 msgid ""
 "There have been repeated failed attempts to gain access to a wallet. An "
 "application may be misbehaving."
@@ -2815,19 +2995,17 @@ msgstr ""
 msgid "You do not have permission to access the %1 protocol."
 msgstr ""
 
-#: misc/uiserver.cpp:98 misc/uiserver.cpp:595 misc/uiserver.cpp:674
+#: misc/uiserver.cpp:98 misc/uiserver.cpp:600 misc/uiserver.cpp:679
 msgid "Settings..."
 msgstr "Танзимот..."
 
 #: misc/uiserver.cpp:126
-#, fuzzy
 msgid "Configure Network Operation Window"
-msgstr "Шабақа"
+msgstr ""
 
 #: misc/uiserver.cpp:130
-#, fuzzy
 msgid "Show system tray icon"
-msgstr "Нишон диҳед"
+msgstr ""
 
 #: misc/uiserver.cpp:131
 msgid "Keep network operation window always open"
@@ -2853,131 +3031,130 @@ msgstr ""
 msgid "Show information:"
 msgstr "Намоиши ахборот:"
 
-#: misc/uiserver.cpp:143 misc/uiserver.cpp:469
+#: misc/uiserver.cpp:143 misc/uiserver.cpp:474
 msgid "URL"
 msgstr "URL"
 
-#: misc/uiserver.cpp:144 misc/uiserver.cpp:468
+#: misc/uiserver.cpp:144 misc/uiserver.cpp:473
 msgid ""
 "_: Remaining Time\n"
 "Rem. Time"
 msgstr ""
 
-#: misc/uiserver.cpp:145 misc/uiserver.cpp:467
+#: misc/uiserver.cpp:145 misc/uiserver.cpp:472
 msgid "Speed"
 msgstr "Суръат"
 
-#: kfile/kfiledetailview.cpp:67 misc/uiserver.cpp:146 misc/uiserver.cpp:466
+#: kfile/kfiledetailview.cpp:67 misc/uiserver.cpp:146 misc/uiserver.cpp:471
 msgid "Size"
 msgstr "Андоза"
 
-#: misc/uiserver.cpp:147 misc/uiserver.cpp:465
+#: misc/uiserver.cpp:147 misc/uiserver.cpp:470
 #, c-format
 msgid "%"
 msgstr "%"
 
-#: misc/uiserver.cpp:148 misc/uiserver.cpp:464
+#: misc/uiserver.cpp:148 misc/uiserver.cpp:469
 msgid "Count"
 msgstr "Ҳисоб кардан"
 
-#: misc/uiserver.cpp:149 misc/uiserver.cpp:463
+#: misc/uiserver.cpp:149 misc/uiserver.cpp:468
 msgid ""
 "_: Resume\n"
 "Res."
 msgstr "Нав кардан"
 
-#: misc/uiserver.cpp:150 misc/uiserver.cpp:462
+#: misc/uiserver.cpp:150 misc/uiserver.cpp:467
 msgid "Local Filename"
 msgstr "Номи файли локалӣ"
 
-#: misc/uiserver.cpp:151 misc/uiserver.cpp:461
+#: misc/uiserver.cpp:151 misc/uiserver.cpp:466
 msgid "Operation"
 msgstr "Амалиёт"
 
-#: misc/uiserver.cpp:249
+#: misc/uiserver.cpp:254
 msgid "%1 / %2"
 msgstr "%1 / %2"
 
-#: misc/uiserver.cpp:262
+#: misc/uiserver.cpp:267
 msgid "%1 % of %2 "
 msgstr "%1 % аз %2 "
 
-#: misc/uiserver.cpp:286
+#: misc/uiserver.cpp:291
 msgid "%1/s"
 msgstr "%1/ҳо"
 
-#: misc/uiserver.cpp:297
+#: misc/uiserver.cpp:302
 msgid "Copying"
 msgstr "Дар ҳоли нусха бардоштан"
 
-#: misc/uiserver.cpp:306
+#: misc/uiserver.cpp:311
 msgid "Moving"
 msgstr "Дар ҳоли ҳаракат кардан"
 
-#: misc/uiserver.cpp:315
+#: misc/uiserver.cpp:320
 msgid "Creating"
 msgstr "Дар ҳоли сохтан"
 
-#: misc/uiserver.cpp:324
+#: misc/uiserver.cpp:329
 msgid "Deleting"
 msgstr "Дар ҳоли нест кардан"
 
-#: misc/uiserver.cpp:332
+#: misc/uiserver.cpp:337
 msgid "Loading"
 msgstr "Дар ҳоли пурборкардан"
 
-#: misc/uiserver.cpp:357
+#: misc/uiserver.cpp:362
 msgid "Examining"
 msgstr "Дар ҳоли санҷидан"
 
-#: misc/uiserver.cpp:365
+#: misc/uiserver.cpp:370
 msgid "Mounting"
 msgstr "Дар ҳоли васл кардан"
 
-#: misc/uiserver.cpp:600 misc/uiserver.cpp:1084
+#: misc/uiserver.cpp:605 misc/uiserver.cpp:1092
 msgid " Files: %1 "
 msgstr " Файлҳо: %1 "
 
-#: misc/uiserver.cpp:601
+#: misc/uiserver.cpp:606
 msgid ""
 "_: Remaining Size\n"
 " Rem. Size: %1 kB "
 msgstr ""
 
-#: misc/uiserver.cpp:602
+#: misc/uiserver.cpp:607
 msgid ""
 "_: Remaining Time\n"
 " Rem. Time: 00:00:00 "
 msgstr ""
 
-#: misc/uiserver.cpp:603
+#: misc/uiserver.cpp:608
 msgid " %1 kB/s "
 msgstr " %1 Кб/ҳо"
 
-#: misc/uiserver.cpp:671
+#: misc/uiserver.cpp:676
 msgid "Cancel Job"
 msgstr ""
 
-#: misc/uiserver.cpp:1085
+#: misc/uiserver.cpp:1093
 msgid ""
 "_: Remaining Size\n"
 " Rem. Size: %1 "
 msgstr ""
 
-#: misc/uiserver.cpp:1087
+#: misc/uiserver.cpp:1095
 msgid ""
 "_: Remaining Time\n"
 " Rem. Time: %1 "
 msgstr ""
 
-#: misc/uiserver.cpp:1352
-#, fuzzy
+#: misc/uiserver.cpp:1360
 msgid "KDE Progress Information UI Server"
-msgstr "KDE"
+msgstr ""
 
-#: misc/uiserver.cpp:1355 misc/uiserver.cpp:1356
+#: misc/uiserver.cpp:1363 misc/uiserver.cpp:1364
 msgid "Developer"
-msgstr "Тавлидгар"
+msgstr ""
 
 #: misc/ksendbugmail/main.cpp:22
 msgid "Subject line"
@@ -2996,14 +3173,12 @@ msgid "Not connected."
 msgstr "Алоқа нашудааст"
 
 #: misc/ksendbugmail/main.cpp:39
-#, fuzzy
 msgid "Connection timed out."
-msgstr "Алоқа."
+msgstr ""
 
 #: misc/ksendbugmail/main.cpp:42
-#, fuzzy
 msgid "Time out waiting for server interaction."
-msgstr "Вақт."
+msgstr ""
 
 #: misc/ksendbugmail/main.cpp:46
 msgid "Server said: \"%1\""
@@ -3038,49 +3213,44 @@ msgid "Command to execute"
 msgstr "Фармон барои иҷро кардан"
 
 #: kioexec/main.cpp:56
-#, fuzzy
 msgid "URL(s) or local file(s) used for 'command'"
-msgstr "URL"
+msgstr ""
 
 #: kioexec/main.cpp:72
 msgid "'command' expected.\n"
 msgstr ""
 
 #: kioexec/main.cpp:97
-#, fuzzy
 msgid ""
 "The URL %1\n"
 "is malformed"
-msgstr "URL"
+msgstr ""
 
 #: kioexec/main.cpp:99
-#, fuzzy
 msgid ""
 "Remote URL %1\n"
 "not allowed with --tempfiles switch"
-msgstr "URL"
+msgstr ""
 
 #: kioexec/main.cpp:222
-#, fuzzy
 msgid ""
 "The supposedly temporary file\n"
 "%1\n"
 "has been modified.\n"
 "Do you still want to delete it?"
-msgstr "таъғир ёфта?"
+msgstr ""
 
 #: kioexec/main.cpp:223 kioexec/main.cpp:230
 msgid "File Changed"
 msgstr "Файл дигаргун шуд"
 
 #: kioexec/main.cpp:229
-#, fuzzy
 msgid ""
 "The file\n"
 "%1\n"
 "has been modified.\n"
 "Do you want to upload the changes?"
-msgstr "таъғир ёфта?"
+msgstr ""
 
 #: kioexec/main.cpp:257
 msgid "KIOExec"
@@ -3146,7 +3316,7 @@ msgstr "Ба боло ҳаракат кунед"
 msgid "Move Down"
 msgstr "Ба поён ҳаракат кунед"
 
-#: kfile/kfiledialog.cpp:1602 kfile/kfilefiltercombo.cpp:32
+#: kfile/kfiledialog.cpp:1603 kfile/kfilefiltercombo.cpp:32
 msgid "*|All Files"
 msgstr "*|Ҳама файлҳо"
 
@@ -3163,11 +3333,10 @@ msgid "Open With"
 msgstr "Кушодан бо"
 
 #: kfile/kopenwith.cpp:298
-#, fuzzy
 msgid ""
 "<qt>Select the program that should be used to open <b>%1</b>. If the program "
 "is not listed, enter the name or click the browse button.</qt>"
-msgstr "<qt> Интихоб кунед<b></b></qt>"
+msgstr ""
 
 #: kfile/kopenwith.cpp:304
 msgid "Choose the name of the program with which to open the selected files."
@@ -3179,29 +3348,26 @@ msgid "Choose Application for %1"
 msgstr "Гузориш барои %1 интихоб кунед"
 
 #: kfile/kopenwith.cpp:326
-#, fuzzy
 msgid ""
 "<qt>Select the program for the file type: <b>%1</b>. If the program is not "
 "listed, enter the name or click the browse button.</qt>"
-msgstr "<qt> Интихоб кунед<b></b></qt>"
+msgstr ""
 
 #: kfile/kopenwith.cpp:338
 msgid "Choose Application"
 msgstr "Интихоби барнома"
 
 #: kfile/kopenwith.cpp:339
-#, fuzzy
 msgid ""
 "<qt>Select a program. If the program is not listed, enter the name or click "
 "the browse button.</qt>"
-msgstr "<qt> Интихоб кунед</qt>"
+msgstr ""
 
 #: kfile/kopenwith.cpp:378
 msgid "Clear input field"
 msgstr ""
 
 #: kfile/kopenwith.cpp:408
-#, fuzzy
 msgid ""
 "Following the command, you can have several place holders which will be "
 "replaced with the actual values when the actual program is run:\n"
@@ -3215,7 +3381,7 @@ msgid ""
 "%i - the icon\n"
 "%m - the mini-icon\n"
 "%c - the comment"
-msgstr "URL м"
+msgstr ""
 
 #: kfile/kopenwith.cpp:441
 msgid "Run in &terminal"
@@ -3245,7 +3411,7 @@ msgstr "&Нишонаҳои система:"
 msgid "O&ther icons:"
 msgstr "Нишонаҳои &Дигар:"
 
-#: kfile/kicondialog.cpp:239 kfile/kpropertiesdialog.cpp:3293 rc.cpp:92
+#: kfile/kicondialog.cpp:239 kfile/kpropertiesdialog.cpp:3308 rc.cpp:92
 msgid "&Browse..."
 msgstr "&Тафсир..."
 
@@ -3281,13 +3447,23 @@ msgstr "Пешнамоиш"
 msgid "No preview available."
 msgstr ""
 
-#: kfile/kdirselectdialog.cpp:66
+#: kfile/kdirselectdialog.cpp:68
 msgid "Select Folder"
 msgstr "Интихоби Феҳрист"
 
-#: kfile/kdirselectdialog.cpp:83
+#: kfile/kdirselectdialog.cpp:85
 msgid "Folder"
 msgstr "Феҳрист"
+
+#: kfile/kdirselectdialog.cpp:101
+#, fuzzy
+msgid "Show Hidden Folders"
+msgstr "Феҳристи хона"
+
+#: kfile/kdirselectdialog.cpp:103
+#, fuzzy
+msgid "Hide Hidden Folders"
+msgstr "Феҳристи хона"
 
 #: bookmarks/kbookmarkmenu.cc:786 kfile/kpropertiesdialog.cpp:890
 #: kfile/kurlrequesterdlg.cpp:47
@@ -3315,9 +3491,8 @@ msgid "Passive Windows"
 msgstr ""
 
 #: kfile/knotifydialog.cpp:85
-#, fuzzy
 msgid "Standard Error Output"
-msgstr "Муқаррарӣ"
+msgstr ""
 
 #: kfile/knotifydialog.cpp:86
 msgid "Taskbar"
@@ -3328,18 +3503,16 @@ msgid "Execute a program"
 msgstr ""
 
 #: kfile/knotifydialog.cpp:121
-#, fuzzy
 msgid "Print to Standard error output"
-msgstr "Муқаррарӣ"
+msgstr ""
 
 #: kfile/knotifydialog.cpp:122
 msgid "Display a messagebox"
 msgstr "Намоиши почта"
 
 #: kfile/knotifydialog.cpp:123
-#, fuzzy
 msgid "Log to a file"
-msgstr "Log"
+msgstr ""
 
 #: kfile/knotifydialog.cpp:124
 msgid "Play a sound"
@@ -3367,9 +3540,8 @@ msgid "Fewer Op&tions"
 msgstr "Чанде &интихобҳо"
 
 #: kfile/knotifydialog.cpp:339
-#, fuzzy
 msgid "Hide advanced options"
-msgstr "Пинҳои кунед"
+msgstr ""
 
 #: kfile/knotifydialog.cpp:354
 msgid "More Op&tions"
@@ -3425,23 +3597,21 @@ msgid "Remote Files not Accepted"
 msgstr ""
 
 #: kfile/kfiledialog.cpp:439
-#, fuzzy
 msgid ""
 "%1\n"
 "does not appear to be a valid URL.\n"
-msgstr "URL"
+msgstr ""
 
 #: kfile/kfiledialog.cpp:439
 msgid "Invalid URL"
 msgstr "URL-и нодуруст"
 
 #: kfile/kfiledialog.cpp:771
-#, fuzzy
 msgid ""
 "<p>While typing in the text area, you may be presented with possible "
 "matches. This feature can be controlled by clicking with the right mouse "
 "button and selecting a preferred mode from the <b>Text Completion</b> menu."
-msgstr "<p><b> Матн</b>."
+msgstr ""
 
 #: kfile/kfiledialog.cpp:780
 msgid "This is the name to save the file as."
@@ -3512,20 +3682,23 @@ msgid "Click this button to create a new folder."
 msgstr ""
 
 #: kfile/kfiledialog.cpp:923
-#, fuzzy
 msgid ""
 "<qt>This button allows you to bookmark specific locations. Click on this "
 "button to open the bookmark menu where you may add, edit or select a "
 "bookmark.<p>These bookmarks are specific to the file dialog, but otherwise "
 "operate like bookmarks elsewhere in KDE.</qt>"
-msgstr "<qt><p> KDE</qt>"
+msgstr ""
 
 #: kfile/kfiledialog.cpp:932
-#, fuzzy
 msgid "Show Quick Access Navigation Panel"
+msgstr ""
+
+#: kfile/kfiledialog.cpp:933
+#, fuzzy
+msgid "Hide Quick Access Navigation Panel"
 msgstr "Нишон диҳед Гузариш"
 
-#: kfile/kfiledialog.cpp:937
+#: kfile/kfiledialog.cpp:938
 msgid ""
 "<qt>This is the configuration menu for the file dialog. Various options can "
 "be accessed from this menu including: <ul><li>how files are sorted in the "
@@ -3534,11 +3707,11 @@ msgid ""
 "previews</li><li>separating folders from files</li></ul></qt>"
 msgstr ""
 
-#: kfile/kfiledialog.cpp:990
+#: kfile/kfiledialog.cpp:991
 msgid "&Location:"
 msgstr "&Ҷойгиршавӣ:"
 
-#: kfile/kfiledialog.cpp:1015
+#: kfile/kfiledialog.cpp:1016
 msgid ""
 "<qt>This is the filter to apply to the file list. File names that do not "
 "match the filter will not be shown.<p>You may select from one of the preset "
@@ -3546,22 +3719,22 @@ msgid ""
 "into the text area.<p>Wildcards such as * and ? are allowed.</qt>"
 msgstr ""
 
-#: kfile/kfiledialog.cpp:1021
+#: kfile/kfiledialog.cpp:1022
 msgid "&Filter:"
 msgstr "&Филтр:"
 
-#: kfile/kfiledialog.cpp:1443
+#: kfile/kfiledialog.cpp:1444
 #, fuzzy
 msgid ""
 "The chosen filenames do not\n"
 "appear to be valid."
 msgstr "URL"
 
-#: kfile/kfiledialog.cpp:1445
+#: kfile/kfiledialog.cpp:1446
 msgid "Invalid Filenames"
 msgstr "Номҳои нодуруст"
 
-#: kfile/kfiledialog.cpp:1475
+#: kfile/kfiledialog.cpp:1476
 #, fuzzy
 msgid ""
 "The requested filenames\n"
@@ -3570,31 +3743,31 @@ msgid ""
 "make sure every filename is enclosed in double quotes."
 msgstr "дутагӣ."
 
-#: kfile/kfiledialog.cpp:1479
+#: kfile/kfiledialog.cpp:1480
 msgid "Filename Error"
 msgstr "Номи файли хатогӣ"
 
-#: kfile/kfiledialog.cpp:1599
+#: kfile/kfiledialog.cpp:1600
 msgid "*|All Folders"
 msgstr "*|Ҳама феҳристҳо"
 
-#: kfile/kfiledialog.cpp:1883
+#: kfile/kfiledialog.cpp:1889
 msgid "Automatically select filename e&xtension (%1)"
 msgstr ""
 
-#: kfile/kfiledialog.cpp:1884
+#: kfile/kfiledialog.cpp:1890
 msgid "the extension <b>%1</b>"
 msgstr ""
 
-#: kfile/kfiledialog.cpp:1892
+#: kfile/kfiledialog.cpp:1898
 msgid "Automatically select filename e&xtension"
 msgstr ""
 
-#: kfile/kfiledialog.cpp:1893
+#: kfile/kfiledialog.cpp:1899
 msgid "a suitable extension"
 msgstr ""
 
-#: kfile/kfiledialog.cpp:1904
+#: kfile/kfiledialog.cpp:1910
 #, fuzzy
 msgid ""
 "This option enables some convenient features for saving files with "
@@ -3652,7 +3825,8 @@ msgstr ""
 #: kfile/kdiroperator.cpp:419
 #, fuzzy
 msgid "You do not have permission to create that folder."
-msgstr "<qt>Барои иҷро кардани <b>%1</b> шумо дастрасӣ надоред.</qt>"
+msgstr ""
+"Мумкин аст иҷозати хонандаи файл ва ё боз кардани шохаро надошта бошед."
 
 #: kfile/kdiroperator.cpp:441
 #, fuzzy
@@ -3734,21 +3908,26 @@ msgid "Case Insensitive"
 msgstr ""
 
 #: kfile/kdiroperator.cpp:1235
-#, fuzzy
 msgid "Show Hidden Files"
-msgstr "Нишон диҳед"
+msgstr ""
 
 #: kfile/kdiroperator.cpp:1237
+#, fuzzy
+msgid "Hide Hidden Files"
+msgstr "Нишон диҳед"
+
+#: kfile/kdiroperator.cpp:1238
 msgid "Separate Folders"
 msgstr ""
 
-#: kfile/kdiroperator.cpp:1241
+#: kfile/kdiroperator.cpp:1242
 msgid "Show Preview"
 msgstr "Пешнамоиш нишон диҳед"
 
-#: kfile/kdiroperator.cpp:1260
-msgid "Properties..."
-msgstr "Хусусиятҳо..."
+#: kfile/kdiroperator.cpp:1246
+#, fuzzy
+msgid "Hide Preview"
+msgstr "Пешнамоиш"
 
 #: kfile/kfiledetailview.cpp:66
 msgid "Name"
@@ -3766,7 +3945,7 @@ msgstr "Имконпазирҳо"
 msgid "Owner"
 msgstr "Соҳиб"
 
-#: kfile/kfiledetailview.cpp:71 kfile/kpropertiesdialog.cpp:1794
+#: kfile/kfiledetailview.cpp:71 kfile/kpropertiesdialog.cpp:1809
 msgid "Group"
 msgstr "Гурӯҳ"
 
@@ -3797,7 +3976,7 @@ msgstr ""
 msgid "Calculate"
 msgstr "Ҳисоб кунед"
 
-#: kfile/kpropertiesdialog.cpp:928 kfile/kpropertiesdialog.cpp:1119
+#: kfile/kpropertiesdialog.cpp:928 kfile/kpropertiesdialog.cpp:1134
 msgid "Refresh"
 msgstr ""
 
@@ -3821,162 +4000,179 @@ msgstr "Сохта шуд:"
 msgid "Accessed:"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1078 kfile/kpropertiesdialog.cpp:1092
+#: kfile/kpropertiesdialog.cpp:1089 kfile/kpropertiesdialog.cpp:1103
 msgid ""
 "_: Available space out of total partition size (percent used)\n"
 "%1 out of %2 (%3% used)"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1101
+#: kfile/kpropertiesdialog.cpp:1112
 msgid "Calculating... %1 (%2)"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1128
+#: kfile/kpropertiesdialog.cpp:1129
+#, fuzzy, c-format
+msgid ""
+"_n: 1 file\n"
+"%n files"
+msgstr ""
+"%n файл\n"
+"%n файлҳо"
+
+#: kfile/kpropertiesdialog.cpp:1130
+#, fuzzy, c-format
+msgid ""
+"_n: 1 sub-folder\n"
+"%n sub-folders"
+msgstr ""
+"%n Феҳрист\n"
+"%n Феҳристҳо"
+
+#: kfile/kpropertiesdialog.cpp:1143
 msgid "Calculating..."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1146
+#: kfile/kpropertiesdialog.cpp:1161
 msgid "Stopped"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1186
+#: kfile/kpropertiesdialog.cpp:1201
 #, fuzzy
 msgid "The new file name is empty."
 msgstr "Хотири нусха холи аст"
 
-#: kfile/kpropertiesdialog.cpp:1316 kfile/kpropertiesdialog.cpp:2374
-#: kfile/kpropertiesdialog.cpp:2531 kfile/kpropertiesdialog.cpp:2738
-#: kfile/kpropertiesdialog.cpp:3018 kfile/kpropertiesdialog.cpp:3514
-#: kfile/kpropertiesdialog.cpp:3758
+#: kfile/kpropertiesdialog.cpp:1331 kfile/kpropertiesdialog.cpp:2389
+#: kfile/kpropertiesdialog.cpp:2546 kfile/kpropertiesdialog.cpp:2753
+#: kfile/kpropertiesdialog.cpp:3033 kfile/kpropertiesdialog.cpp:3529
+#: kfile/kpropertiesdialog.cpp:3773
 msgid ""
 "<qt>Could not save properties. You do not have sufficient access to write to "
 "<b>%1</b>.</qt>"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1386 kfile/kpropertiesdialog.cpp:1390
-#: kfile/kpropertiesdialog.cpp:1395
+#: kfile/kpropertiesdialog.cpp:1401 kfile/kpropertiesdialog.cpp:1405
+#: kfile/kpropertiesdialog.cpp:1410
 msgid "Forbidden"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1387
+#: kfile/kpropertiesdialog.cpp:1402
 msgid "Can Read"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1388
+#: kfile/kpropertiesdialog.cpp:1403
 msgid "Can Read & Write"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1391
+#: kfile/kpropertiesdialog.cpp:1406
 msgid "Can View Content"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1392
+#: kfile/kpropertiesdialog.cpp:1407
 msgid "Can View & Modify Content"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1396
+#: kfile/kpropertiesdialog.cpp:1411
 msgid "Can View Content & Read"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1397
+#: kfile/kpropertiesdialog.cpp:1412
 msgid "Can View/Read & Modify/Write"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1487
+#: kfile/kpropertiesdialog.cpp:1502
 msgid "&Permissions"
 msgstr "&Имконпазирҳо"
 
-#: kfile/kpropertiesdialog.cpp:1498 kfile/kpropertiesdialog.cpp:1730
+#: kfile/kpropertiesdialog.cpp:1513 kfile/kpropertiesdialog.cpp:1745
 msgid "Access Permissions"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1509
+#: kfile/kpropertiesdialog.cpp:1524
 msgid ""
 "_n: This file is a link and does not have permissions.\n"
 "All files are links and do not have permissions."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1512
+#: kfile/kpropertiesdialog.cpp:1527
 msgid "Only the owner can change permissions."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1515
+#: kfile/kpropertiesdialog.cpp:1530
 msgid "O&wner:"
 msgstr "Соҳиб"
 
-#: kfile/kpropertiesdialog.cpp:1521
+#: kfile/kpropertiesdialog.cpp:1536
 msgid "Specifies the actions that the owner is allowed to do."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1523
+#: kfile/kpropertiesdialog.cpp:1538
 msgid "Gro&up:"
 msgstr "Гур&ӯҳ:"
 
-#: kfile/kpropertiesdialog.cpp:1529
+#: kfile/kpropertiesdialog.cpp:1544
 msgid "Specifies the actions that the members of the group are allowed to do."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1531
+#: kfile/kpropertiesdialog.cpp:1546
 msgid "O&thers:"
 msgstr "Д&игар:"
 
-#: kfile/kpropertiesdialog.cpp:1537
+#: kfile/kpropertiesdialog.cpp:1552
 msgid ""
 "Specifies the actions that all users, who are neither owner nor in the "
 "group, are allowed to do."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1542
+#: kfile/kpropertiesdialog.cpp:1557
 msgid "Only own&er can rename and delete folder content"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1543
+#: kfile/kpropertiesdialog.cpp:1558
 msgid "Is &executable"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1547
-#, fuzzy
+#: kfile/kpropertiesdialog.cpp:1562
 msgid ""
 "Enable this option to allow only the folder's owner to delete or rename the "
 "contained files and folders. Other users can only add new files, which "
 "requires the 'Modify Content' permission."
-msgstr "Дигар."
+msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1551
+#: kfile/kpropertiesdialog.cpp:1566
 msgid ""
 "Enable this option to mark the file as executable. This only makes sense for "
 "programs and scripts. It is required when you want to execute them."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1558
+#: kfile/kpropertiesdialog.cpp:1573
 msgid "A&dvanced Permissions..."
 msgstr "Имконпазирҳои &иловагӣ..."
 
-#: kfile/kpropertiesdialog.cpp:1567
+#: kfile/kpropertiesdialog.cpp:1582
 msgid "Ownership"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1574
+#: kfile/kpropertiesdialog.cpp:1589
 msgid "User:"
 msgstr "Истифодакунанда:"
 
-#: kfile/kpropertiesdialog.cpp:1658
+#: kfile/kpropertiesdialog.cpp:1673
 msgid "Group:"
 msgstr "Гурӯҳ:"
 
-#: kfile/kpropertiesdialog.cpp:1700
+#: kfile/kpropertiesdialog.cpp:1715
 msgid "Apply changes to all subfolders and their contents"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1722
+#: kfile/kpropertiesdialog.cpp:1737
 msgid "Advanced Permissions"
 msgstr "Имконпазирҳои иловагӣ"
 
-#: kfile/kpropertiesdialog.cpp:1736
+#: kfile/kpropertiesdialog.cpp:1751
 msgid "Class"
 msgstr "Синф"
 
-#: kfile/kpropertiesdialog.cpp:1740
+#: kfile/kpropertiesdialog.cpp:1755
 msgid ""
 "Show\n"
 "Entries"
@@ -3984,19 +4180,19 @@ msgstr ""
 "Намоиши\n"
 "Вурудҳо"
 
-#: kfile/kpropertiesdialog.cpp:1742
+#: kfile/kpropertiesdialog.cpp:1757
 msgid "Read"
 msgstr "Хондан"
 
-#: kfile/kpropertiesdialog.cpp:1746
+#: kfile/kpropertiesdialog.cpp:1761
 msgid "This flag allows viewing the content of the folder."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1748
+#: kfile/kpropertiesdialog.cpp:1763
 msgid "The Read flag allows viewing the content of the file."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1752
+#: kfile/kpropertiesdialog.cpp:1767
 msgid ""
 "Write\n"
 "Entries"
@@ -4004,219 +4200,216 @@ msgstr ""
 "Навиштан\n"
 "Вурудҳо"
 
-#: kfile/kpropertiesdialog.cpp:1754
+#: kfile/kpropertiesdialog.cpp:1769
 msgid "Write"
 msgstr "Навиштан"
 
-#: kfile/kpropertiesdialog.cpp:1758
-#, fuzzy
+#: kfile/kpropertiesdialog.cpp:1773
 msgid ""
 "This flag allows adding, renaming and deleting of files. Note that deleting "
 "and renaming can be limited using the Sticky flag."
-msgstr "Ёддошт."
+msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1761
+#: kfile/kpropertiesdialog.cpp:1776
 msgid "The Write flag allows modifying the content of the file."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1766
+#: kfile/kpropertiesdialog.cpp:1781
 msgid ""
 "_: Enter folder\n"
 "Enter"
 msgstr "Даромадан"
 
-#: kfile/kpropertiesdialog.cpp:1767
+#: kfile/kpropertiesdialog.cpp:1782
 msgid "Enable this flag to allow entering the folder."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1770
+#: kfile/kpropertiesdialog.cpp:1785
 msgid "Exec"
 msgstr "Exec"
 
-#: kfile/kpropertiesdialog.cpp:1771
+#: kfile/kpropertiesdialog.cpp:1786
 msgid "Enable this flag to allow executing the file as a program."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1780
+#: kfile/kpropertiesdialog.cpp:1795
 msgid "Special"
 msgstr "Махсус"
 
-#: kfile/kpropertiesdialog.cpp:1784
+#: kfile/kpropertiesdialog.cpp:1799
 msgid ""
 "Special flag. Valid for the whole folder, the exact meaning of the flag can "
 "be seen in the right hand column."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1787
+#: kfile/kpropertiesdialog.cpp:1802
 msgid ""
 "Special flag. The exact meaning of the flag can be seen in the right hand "
 "column."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1791 rc.cpp:30
+#: kfile/kpropertiesdialog.cpp:1806 rc.cpp:30
 msgid "User"
 msgstr "Истифодакунанда"
 
-#: kfile/kpropertiesdialog.cpp:1797
+#: kfile/kpropertiesdialog.cpp:1812
 msgid "Others"
 msgstr "Дигарон"
 
-#: kfile/kpropertiesdialog.cpp:1800
+#: kfile/kpropertiesdialog.cpp:1815
 msgid "Set UID"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1804
+#: kfile/kpropertiesdialog.cpp:1819
 msgid ""
 "If this flag is set, the owner of this folder will be the owner of all new "
 "files."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1807
+#: kfile/kpropertiesdialog.cpp:1822
 msgid ""
 "If this file is an executable and the flag is set, it will be executed with "
 "the permissions of the owner."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1811
+#: kfile/kpropertiesdialog.cpp:1826
 msgid "Set GID"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1815
+#: kfile/kpropertiesdialog.cpp:1830
 msgid ""
 "If this flag is set, the group of this folder will be set for all new files."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1818
+#: kfile/kpropertiesdialog.cpp:1833
 msgid ""
 "If this file is an executable and the flag is set, it will be executed with "
 "the permissions of the group."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1822
+#: kfile/kpropertiesdialog.cpp:1837
 msgid ""
 "_: File permission, sets user or group ID on execution\n"
 "Sticky"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1826
-#, fuzzy
+#: kfile/kpropertiesdialog.cpp:1841
 msgid ""
 "If the Sticky flag is set on a folder, only the owner and root can delete or "
 "rename files. Otherwise everybody with write permissions can do this."
-msgstr "реша."
+msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1830
+#: kfile/kpropertiesdialog.cpp:1845
 msgid ""
 "The Sticky flag on a file is ignored on Linux, but may be used on some "
 "systems"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1965
+#: kfile/kpropertiesdialog.cpp:1980
 msgid "Link"
 msgstr "Алоқа"
 
-#: kfile/kpropertiesdialog.cpp:1981
+#: kfile/kpropertiesdialog.cpp:1996
 msgid "Varying (No Change)"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:2080
+#: kfile/kpropertiesdialog.cpp:2095
 msgid ""
 "_n: This file uses advanced permissions\n"
 "These files use advanced permissions."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:2096
+#: kfile/kpropertiesdialog.cpp:2111
 msgid ""
 "_n: This folder uses advanced permissions.\n"
 "These folders use advanced permissions."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:2111
+#: kfile/kpropertiesdialog.cpp:2126
 msgid "These files use advanced permissions."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:2313
+#: kfile/kpropertiesdialog.cpp:2328
 msgid "U&RL"
 msgstr "U&RL"
 
-#: kfile/kpropertiesdialog.cpp:2418
+#: kfile/kpropertiesdialog.cpp:2433
 msgid "A&ssociation"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:2427
+#: kfile/kpropertiesdialog.cpp:2442
 msgid "Pattern ( example: *.html;*.htm )"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:2460
+#: kfile/kpropertiesdialog.cpp:2475
 msgid "Left click previews"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:2576
+#: kfile/kpropertiesdialog.cpp:2591
 msgid "De&vice"
 msgstr "Сох&тмон"
 
-#: kfile/kpropertiesdialog.cpp:2606
+#: kfile/kpropertiesdialog.cpp:2621
 msgid "Device (/dev/fd0):"
 msgstr "Сохтмон (/dev/fd0):"
 
-#: kfile/kpropertiesdialog.cpp:2607
+#: kfile/kpropertiesdialog.cpp:2622
 msgid "Device:"
 msgstr "Сохзтмон:"
 
-#: kfile/kpropertiesdialog.cpp:2617
+#: kfile/kpropertiesdialog.cpp:2632
 msgid "Read only"
 msgstr "Танҳо-хондан"
 
-#: kfile/kpropertiesdialog.cpp:2622
+#: kfile/kpropertiesdialog.cpp:2637
 msgid "Mount point (/mnt/floppy):"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:2623
+#: kfile/kpropertiesdialog.cpp:2638
 msgid "Mount point:"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:2639
+#: kfile/kpropertiesdialog.cpp:2654
 msgid "Unmounted Icon"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:2770 kfile/kpropertiesdialog.cpp:3574
+#: kfile/kpropertiesdialog.cpp:2785 kfile/kpropertiesdialog.cpp:3589
 msgid "&Application"
 msgstr "&Барнома"
 
-#: kfile/kpropertiesdialog.cpp:2894
+#: kfile/kpropertiesdialog.cpp:2909
 #, c-format
 msgid "Add File Type for %1"
 msgstr "Иловаи намуди файл барои %1"
 
-#: bookmarks/kbookmarkmenu.cc:816 kfile/kpropertiesdialog.cpp:2897
+#: bookmarks/kbookmarkmenu.cc:816 kfile/kpropertiesdialog.cpp:2912
 msgid "&Add"
 msgstr "&Илова"
 
-#: kfile/kpropertiesdialog.cpp:2898 kfile/kpropertiesdialog.cpp:2899
+#: kfile/kpropertiesdialog.cpp:2913 kfile/kpropertiesdialog.cpp:2914
 msgid ""
 "Add the selected file types to\n"
 "the list of supported file types."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:3090 kfile/kpropertiesdialog.cpp:3546
+#: kfile/kpropertiesdialog.cpp:3105 kfile/kpropertiesdialog.cpp:3561
 msgid "Only executables on local file systems are supported."
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:3102
+#: kfile/kpropertiesdialog.cpp:3117
 #, c-format
 msgid "Advanced Options for %1"
 msgstr "Интихоботҳои иловагӣ барои %1"
 
-#: kfile/kpropertiesdialog.cpp:3261
+#: kfile/kpropertiesdialog.cpp:3276
 msgid "E&xecute"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:3268
+#: kfile/kpropertiesdialog.cpp:3283
 msgid "Comman&d:"
 msgstr "Фар&мон:"
 
-#: kfile/kpropertiesdialog.cpp:3277
-#, fuzzy
+#: kfile/kpropertiesdialog.cpp:3292
 msgid ""
 "Following the command, you can have several place holders which will be "
 "replaced with the actual values when the actual program is run:\n"
@@ -4230,57 +4423,56 @@ msgid ""
 "%i - the icon\n"
 "%m - the mini-icon\n"
 "%c - the caption"
-msgstr "URL м"
+msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:3298
+#: kfile/kpropertiesdialog.cpp:3313
 msgid "Panel Embedding"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:3307
+#: kfile/kpropertiesdialog.cpp:3322
 msgid "&Execute on click:"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:3315
+#: kfile/kpropertiesdialog.cpp:3330
 msgid "&Window title:"
 msgstr "&Сарлавҳаи тиреза:"
 
-#: kfile/kpropertiesdialog.cpp:3335 rc.cpp:25
+#: kfile/kpropertiesdialog.cpp:3350 rc.cpp:25
 msgid "&Run in terminal"
 msgstr "&Дар терминал иҷро кунед"
 
-#: kfile/kpropertiesdialog.cpp:3350 rc.cpp:28
+#: kfile/kpropertiesdialog.cpp:3365 rc.cpp:28
 msgid "Do not &close when command exits"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:3354 rc.cpp:27
+#: kfile/kpropertiesdialog.cpp:3369 rc.cpp:27
 msgid "&Terminal options:"
 msgstr "&Интихоботҳо дар терминал:"
 
-#: kfile/kpropertiesdialog.cpp:3374 rc.cpp:31
+#: kfile/kpropertiesdialog.cpp:3389 rc.cpp:31
 msgid "Ru&n as a different user"
 msgstr ""
 
 #: ../kioslave/http/kcookiejar/kcookiewin.cpp:248
-#: bookmarks/kbookmarkmenu.cc:780 kfile/kpropertiesdialog.cpp:3608
+#: bookmarks/kbookmarkmenu.cc:780 kfile/kpropertiesdialog.cpp:3623
 msgid "Name:"
 msgstr "Ном:"
 
-#: kfile/kpropertiesdialog.cpp:3615
+#: kfile/kpropertiesdialog.cpp:3630
 msgid "Description:"
 msgstr "Тасвир:"
 
-#: kfile/kpropertiesdialog.cpp:3621
+#: kfile/kpropertiesdialog.cpp:3636
 msgid "Comment:"
 msgstr "Шарҳ:"
 
-#: kfile/kpropertiesdialog.cpp:3627
+#: kfile/kpropertiesdialog.cpp:3642
 msgid "File types:"
 msgstr "Намудҳои файл:"
 
 #: kfile/kfilesharedlg.cpp:51
-#, fuzzy
 msgid "Local Net Sharing"
-msgstr "Локалӣ"
+msgstr ""
 
 #: kfile/kfilesharedlg.cpp:112
 msgid "Only directories in your home directory can be shared."
@@ -4354,11 +4546,10 @@ msgid "Edit Quick Access Entry"
 msgstr ""
 
 #: kfile/kurlbar.cpp:875
-#, fuzzy
 msgid ""
 "<qt><b>Please provide a description, URL and icon for this Quick Access "
 "entry.</b></br></qt>"
-msgstr "<qt><b> URL</b></br></qt>"
+msgstr ""
 
 #: kfile/kurlbar.cpp:882
 msgid ""
@@ -4372,13 +4563,12 @@ msgid "&Description:"
 msgstr "&Тасвир:"
 
 #: kfile/kurlbar.cpp:892
-#, fuzzy
 msgid ""
 "<qt>This is the location associated with the entry. Any valid URL may be "
 "used. For example:<p>%1<br>http://www.kde.org<br>ftp://ftp.kde.org/pub/kde/"
 "stable<p>By clicking on the button next to the text edit box you can browse "
 "to an appropriate URL.</qt>"
-msgstr "<qt> Ҳеҷгуна URL<p><br>http://www.kde.org<br><p> URL</qt>"
+msgstr ""
 
 #: kfile/kurlbar.cpp:896
 msgid "&URL:"
@@ -4399,12 +4589,11 @@ msgid "&Only show when using this application (%1)"
 msgstr ""
 
 #: kfile/kurlbar.cpp:924
-#, fuzzy
 msgid ""
 "<qt>Select this setting if you want this entry to show only when using the "
 "current application (%1).<p>If this setting is not selected, the entry will "
 "be available in all applications.</qt>"
-msgstr "<qt> Интихоб кунед<p></qt>"
+msgstr ""
 
 #: rc.cpp:1
 msgid ""
@@ -4428,39 +4617,34 @@ msgid ""
 msgstr ""
 
 #: rc.cpp:5
-#, fuzzy
 msgid "KDE Wallet Wizard"
-msgstr "KDE"
+msgstr ""
 
 #: rc.cpp:6
 msgid "Introduction"
 msgstr "Пешниҳод"
 
 #: rc.cpp:7
-#, fuzzy
 msgid "<u>KWallet</u> - The KDE Wallet System"
-msgstr "<u></u> KDE"
+msgstr ""
 
 #: rc.cpp:8
-#, fuzzy
 msgid ""
 "Welcome to KWallet, the KDE Wallet System.  KWallet allows you to store your "
 "passwords and other personal information on disk in an encrypted file, "
 "preventing others from viewing the information.  This wizard will tell you "
 "about KWallet and help you configure it for the first time."
-msgstr "Хуш Омадед KDE якум."
+msgstr ""
 
 #: rc.cpp:10
-#, fuzzy
 msgid "&Basic setup (recommended)"
-msgstr "Аслӣ"
+msgstr ""
 
 #: rc.cpp:11
 msgid "&Advanced setup"
-msgstr "&Танзимоти иловагӣ"
+msgstr ""
 
 #: rc.cpp:13
-#, fuzzy
 msgid ""
 "The KDE Wallet system stores your data in a <i>wallet</i> file on your local "
 "hard disk.  The data is only written in encrypted form, presently using the "
@@ -4469,14 +4653,13 @@ msgid ""
 "tray.  You can use this application to manage your wallets.  It even permits "
 "you to drag wallets and wallet contents, allowing you to easily copy a "
 "wallet to a remote system."
-msgstr "KDE<i></i>."
+msgstr ""
 
 #: rc.cpp:14
 msgid "Password Selection"
 msgstr "Интихоби гузарвожа"
 
 #: rc.cpp:15
-#, fuzzy
 msgid ""
 "Various applications may attempt to use the KDE wallet to store passwords or "
 "other information such as web form data and cookies.  If you would like "
@@ -4484,7 +4667,7 @@ msgid ""
 "password.  The password you choose <i>cannot</i> be recovered if it is lost, "
 "and will allow anyone who knows it to obtain all the information contained "
 "in the wallet."
-msgstr "KDE<i></i>."
+msgstr ""
 
 #: rc.cpp:16
 msgid "Enter a new password:"
@@ -4495,23 +4678,21 @@ msgid "Verify password:"
 msgstr "Тасдиқи гузарвожа:"
 
 #: rc.cpp:18
-#, fuzzy
 msgid "Yes, I wish to use the KDE wallet to store my personal information."
-msgstr "KDE."
+msgstr ""
 
 #: rc.cpp:20
 msgid "Security Level"
-msgstr "Дараҷаи пуштибонӣ"
+msgstr ""
 
 #: rc.cpp:21
-#, fuzzy
 msgid ""
 "The KDE Wallet system allows you to control the level of security of your "
 "personal data.  Some of these settings do impact usability.  While the "
 "default settings are generally acceptable for most users, you may wish to "
 "change some of them.  You may further tune these settings from the KWallet "
 "control module."
-msgstr "KDE пешфарз."
+msgstr ""
 
 #: rc.cpp:22
 msgid "Store network passwords and local passwords in separate wallet files"
@@ -4564,11 +4745,10 @@ msgid "Enable &launch feedback"
 msgstr ""
 
 #: rc.cpp:38
-#, fuzzy
 msgid ""
 "Check this option if you want to make clear that your application has "
 "started. This visual feedback may appear as a busy cursor or in the taskbar."
-msgstr "тоза кунед."
+msgstr ""
 
 #: rc.cpp:39
 msgid "&Place in system tray"
@@ -4629,9 +4809,8 @@ msgid "Print a message to standard &error output"
 msgstr ""
 
 #: rc.cpp:61
-#, fuzzy
 msgid "Show a &message in a pop-up window"
-msgstr "Нишон диҳед"
+msgstr ""
 
 #: rc.cpp:62
 msgid "E&xecute a program:"
@@ -4650,9 +4829,8 @@ msgid "Mark &taskbar entry"
 msgstr ""
 
 #: rc.cpp:67
-#, fuzzy
 msgid "&Log to a file:"
-msgstr "&Log:"
+msgstr ""
 
 #: rc.cpp:68
 msgid "&Use a passive window that does not interrupt other work"
@@ -4667,9 +4845,8 @@ msgid "Player Settings..."
 msgstr "Танезимотҳои Плейер"
 
 #: rc.cpp:71
-#, fuzzy
 msgid "Select one or more file types to add:"
-msgstr "Интихоб кунед:"
+msgstr ""
 
 #: rc.cpp:72 rc.cpp:77
 msgid "Mimetype"
@@ -4680,7 +4857,6 @@ msgid "Description"
 msgstr "Тасвир"
 
 #: rc.cpp:74
-#, fuzzy
 msgid ""
 "<qt><p>Select one or more types of file that your application can handle "
 "here. This list is organized by <u>mimetypes</u>.</p> \n"
@@ -4692,8 +4868,6 @@ msgid ""
 "should be informed about the abilities of each application to handle these "
 "extensions and mimetypes.</p>"
 msgstr ""
-"<qt><p> Интихоб кунед<u></u></p>\n"
-"<p><u></u><u></u></p>"
 
 #: rc.cpp:75
 msgid "&Supported file types:"
@@ -4725,34 +4899,30 @@ msgid "&Name:"
 msgstr "&Ном:"
 
 #: rc.cpp:81 rc.cpp:82
-#, fuzzy
 msgid ""
 "Type the name you want to give to this application here. This application "
 "will appear under this name in the applications menu and in the panel."
-msgstr "Намуд."
+msgstr ""
 
 #: rc.cpp:84 rc.cpp:85
-#, fuzzy
 msgid ""
 "Type the description of this application, based on its use, here. Examples: "
 "a dial up application (KPPP) would be \"Dial up tool\"."
-msgstr "Намуд."
+msgstr ""
 
 #: rc.cpp:86
 msgid "Comm&ent:"
 msgstr "&Шарҳ:"
 
 #: rc.cpp:87 rc.cpp:88
-#, fuzzy
 msgid "Type any comment you think is useful here."
-msgstr "Намуд."
+msgstr ""
 
 #: rc.cpp:89
 msgid "Co&mmand:"
 msgstr "Фа&рмон:"
 
 #: rc.cpp:90 rc.cpp:91
-#, fuzzy
 msgid ""
 "Type the command to start this application here.\n"
 "\n"
@@ -4768,7 +4938,7 @@ msgid ""
 "%i - the icon\n"
 "%m - the mini-icon\n"
 "%c - the caption"
-msgstr "Намуд URL м"
+msgstr ""
 
 #: rc.cpp:93
 msgid ""
@@ -4811,17 +4981,17 @@ msgid ""
 "DCOP options or to run it as a different user."
 msgstr ""
 
-#: ../kioslave/http/http.cc:4861 kpasswdserver/kpasswdserver.cpp:206
+#: ../kioslave/http/http.cc:4869 kpasswdserver/kpasswdserver.cpp:206
 msgid "  Do you want to retry?"
 msgstr ""
 
-#: ../kioslave/http/http.cc:4862 kpasswdserver/kpasswdserver.cpp:208
+#: ../kioslave/http/http.cc:4870 kpasswdserver/kpasswdserver.cpp:208
 msgid "Authentication"
-msgstr "Мутобиқат:"
+msgstr ""
 
 #: kpasswdserver/kpasswdserver.cpp:208
 msgid "Retry"
-msgstr "Кӯшиш кунед"
+msgstr ""
 
 #: httpfilter/httpfilter.cc:275
 msgid "Unexpected end of data, some information may be lost."
@@ -4888,7 +5058,7 @@ msgstr ""
 #: bookmarks/kbookmarkmenu.cc:385
 #, fuzzy
 msgid "Bookmark Folder Deletion"
-msgstr "Нав"
+msgstr "&Феҳристи Монданҳои Нав..."
 
 #: bookmarks/kbookmarkmenu.cc:386
 #, fuzzy
@@ -4936,21 +5106,20 @@ msgstr "Мондан"
 msgid "Netscape Bookmarks"
 msgstr ""
 
-#: bookmarks/kbookmark.cc:98
-#, fuzzy
+#: bookmarks/kbookmark.cc:117
 msgid "Create New Bookmark Folder"
-msgstr "Нав"
+msgstr ""
 
-#: bookmarks/kbookmark.cc:99
-#, fuzzy, c-format
+#: bookmarks/kbookmark.cc:118
+#, c-format
 msgid "Create New Bookmark Folder in %1"
-msgstr "Нав"
+msgstr ""
 
-#: bookmarks/kbookmark.cc:101
+#: bookmarks/kbookmark.cc:120
 msgid "New folder:"
 msgstr "Феҳристи нав:"
 
-#: bookmarks/kbookmark.cc:258
+#: bookmarks/kbookmark.cc:277
 msgid "--- separator ---"
 msgstr ""
 
@@ -4995,11 +5164,11 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../kioslave/ftp/ftp.cc:596 ../kioslave/http/http.cc:4873
+#: ../kioslave/ftp/ftp.cc:596 ../kioslave/http/http.cc:4881
 msgid "You need to supply a username and a password to access this site."
 msgstr ""
 
-#: ../kioslave/ftp/ftp.cc:598 ../kioslave/http/http.cc:4881
+#: ../kioslave/ftp/ftp.cc:598 ../kioslave/http/http.cc:4889
 msgid "Site:"
 msgstr ""
 
@@ -5030,9 +5199,8 @@ msgstr "Хонда натавонистам %1"
 
 #: ../kioslave/http/http_cache_cleaner.cpp:53
 #: ../kioslave/http/http_cache_cleaner.cpp:194
-#, fuzzy
 msgid "KDE HTTP cache maintenance tool"
-msgstr "KDE"
+msgstr ""
 
 #: ../kioslave/http/http_cache_cleaner.cpp:59
 msgid "Empty the cache"
@@ -5063,12 +5231,11 @@ msgstr "Бозсозии файли танзимӣ."
 msgid "Cookie Alert"
 msgstr ""
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:101
-msgid "You received a cookie from"
-msgstr ""
-
 #: ../kioslave/http/kcookiejar/kcookiewin.cpp:102
-msgid "You received %1 cookies from"
+#, c-format
+msgid ""
+"_n: You received a cookie from\n"
+"You received %n cookies from"
 msgstr ""
 
 #: ../kioslave/http/kcookiejar/kcookiewin.cpp:108
@@ -5217,63 +5384,63 @@ msgstr "Сервер, скриптҳои саҳифа"
 msgid "No host specified."
 msgstr "Узел нишон дода нашуда буд!"
 
-#: ../kioslave/http/http.cc:1431
+#: ../kioslave/http/http.cc:1433
 msgid "Otherwise, the request would have succeeded."
 msgstr "Дар ҳолати ақс талабот иҷро мешуд."
 
-#: ../kioslave/http/http.cc:1435
+#: ../kioslave/http/http.cc:1437
 msgid "retrieve property values"
 msgstr "Кабул кардани маънои хусусият"
 
-#: ../kioslave/http/http.cc:1438
+#: ../kioslave/http/http.cc:1440
 msgid "set property values"
 msgstr "Маънои хусусияташро муайян кардан"
 
-#: ../kioslave/http/http.cc:1441
+#: ../kioslave/http/http.cc:1443
 msgid "create the requested folder"
 msgstr "Феҳристи талабшударо месозад"
 
-#: ../kioslave/http/http.cc:1444
+#: ../kioslave/http/http.cc:1446
 msgid "copy the specified file or folder"
 msgstr "Нусха бардоштани файил ё феҳристи муайяншуда "
 
-#: ../kioslave/http/http.cc:1447
+#: ../kioslave/http/http.cc:1449
 msgid "move the specified file or folder"
 msgstr "Ҷойивазкунии файл ё феҳристи муайян кардашуда"
 
-#: ../kioslave/http/http.cc:1450
+#: ../kioslave/http/http.cc:1452
 msgid "search in the specified folder"
 msgstr "Ҷустуҷӯ дар феҳристи муайяншуда"
 
-#: ../kioslave/http/http.cc:1453
+#: ../kioslave/http/http.cc:1455
 msgid "lock the specified file or folder"
 msgstr "Иҳота кардани файл ё феҳристи муайян кардашуда"
 
-#: ../kioslave/http/http.cc:1456
+#: ../kioslave/http/http.cc:1458
 msgid "unlock the specified file or folder"
 msgstr "Иҳота кардани файл ё феҳристи муайян кардашударо нест кардан"
 
-#: ../kioslave/http/http.cc:1459
+#: ../kioslave/http/http.cc:1461
 msgid "delete the specified file or folder"
 msgstr "Файл ё феҳристи муайяншударо нест мекунад"
 
-#: ../kioslave/http/http.cc:1462
+#: ../kioslave/http/http.cc:1464
 msgid "query the server's capabilities"
 msgstr "Имконияҳои серверро мепурсад"
 
-#: ../kioslave/http/http.cc:1465
+#: ../kioslave/http/http.cc:1467
 msgid "retrieve the contents of the specified file or folder"
 msgstr "Кабул кардани маълумотҳои дохили файл ё феҳрист."
 
-#: ../kioslave/http/http.cc:1477 ../kioslave/http/http.cc:1630
+#: ../kioslave/http/http.cc:1479 ../kioslave/http/http.cc:1632
 msgid "An unexpected error (%1) occurred while attempting to %2."
 msgstr "Ба хатогии ногаҳонӣ(%1), ҳангоми кӯшиши %2 даст дода шуд."
 
-#: ../kioslave/http/http.cc:1485
+#: ../kioslave/http/http.cc:1487
 msgid "The server does not support the WebDAV protocol."
 msgstr "Сервер протоколи WebDAV-ро дастгирӣ намекунад."
 
-#: ../kioslave/http/http.cc:1526
+#: ../kioslave/http/http.cc:1528
 msgid ""
 "An error occurred while attempting to %1, %2. A summary of the reasons is "
 "below.<ul>"
@@ -5281,16 +5448,16 @@ msgstr ""
 "Ба хатогӣ даст дода шуд, ҳангоми кӯшиши %1, %2. Маълумот оиди сабаби он дар "
 "поёнтар.<ul>"
 
-#: ../kioslave/http/http.cc:1538 ../kioslave/http/http.cc:1641
+#: ../kioslave/http/http.cc:1540 ../kioslave/http/http.cc:1643
 #, c-format
 msgid "Access was denied while attempting to %1."
 msgstr "Дастрас маън карда шуда буд, ҳангоми кӯшиши %1"
 
-#: ../kioslave/http/http.cc:1545
+#: ../kioslave/http/http.cc:1547
 msgid "The specified folder already exists."
 msgstr "Феҳристи муайян шуда аллакай вуҷуд дорад."
 
-#: ../kioslave/http/http.cc:1551 ../kioslave/http/http.cc:1646
+#: ../kioslave/http/http.cc:1553 ../kioslave/http/http.cc:1648
 msgid ""
 "A resource cannot be created at the destination until one or more "
 "intermediate collections (folders) have been created."
@@ -5298,7 +5465,7 @@ msgstr ""
 "Захира тайёр карда намешавад, то он холе ки як ё  якчанд коллексияи мобайнӣ "
 "(феҳрист) сохта нашавад."
 
-#: ../kioslave/http/http.cc:1560
+#: ../kioslave/http/http.cc:1562
 #, c-format
 msgid ""
 "The server was unable to maintain the liveness of the properties listed in "
@@ -5309,24 +5476,24 @@ msgstr ""
 "шудааст, таъмин карда натавонист. Ё ин ки Шумо хостед файлро бознависӣ "
 "кунед, вақте, ки ӯ ин файлро сабт карда наметавонад. %1"
 
-#: ../kioslave/http/http.cc:1570
+#: ../kioslave/http/http.cc:1572
 #, c-format
 msgid "The requested lock could not be granted. %1"
 msgstr "Муҳосираи талабкарда тасдиқ карда намешавад. %1"
 
-#: ../kioslave/http/http.cc:1576
+#: ../kioslave/http/http.cc:1578
 msgid "The server does not support the request type of the body."
 msgstr "Намуди элементи ҷисми додашударо бо ин сервер дастгирӣ намекунад."
 
-#: ../kioslave/http/http.cc:1581 ../kioslave/http/http.cc:1653
+#: ../kioslave/http/http.cc:1583 ../kioslave/http/http.cc:1655
 msgid "Unable to %1 because the resource is locked."
 msgstr "%1 нашуда истодааст, барои он ки захира ғайри дастрас аст."
 
-#: ../kioslave/http/http.cc:1585
+#: ../kioslave/http/http.cc:1587
 msgid "This action was prevented by another error."
 msgstr "Ин амалиёт аз сабаби дигар хатогиҳо иҷро карда нашуд."
 
-#: ../kioslave/http/http.cc:1592 ../kioslave/http/http.cc:1658
+#: ../kioslave/http/http.cc:1594 ../kioslave/http/http.cc:1660
 msgid ""
 "Unable to %1 because the destination server refuses to accept the file or "
 "folder."
@@ -5334,7 +5501,7 @@ msgstr ""
 "%1 нашуда истодааст, барои он ки сервери таъинот кабули файл ё феҳристро "
 "инкор кард."
 
-#: ../kioslave/http/http.cc:1599 ../kioslave/http/http.cc:1664
+#: ../kioslave/http/http.cc:1601 ../kioslave/http/http.cc:1666
 msgid ""
 "The destination resource does not have sufficient space to record the state "
 "of the resource after the execution of this method."
@@ -5342,67 +5509,67 @@ msgstr ""
 "Захираи таъинот ҷои кофӣ надорад, барои сабти ҳолати захира баъди иҷрои ин "
 "усул."
 
-#: ../kioslave/http/http.cc:1621
+#: ../kioslave/http/http.cc:1623
 #, c-format
 msgid "upload %1"
 msgstr "фиристодан %1"
 
-#: ../kioslave/http/http.cc:1914
+#: ../kioslave/http/http.cc:1916
 msgid "Connecting to %1..."
 msgstr "Пайвасткунӣ бо %1..."
 
-#: ../kioslave/http/http.cc:1932 ../kioslave/http/http.cc:1936
+#: ../kioslave/http/http.cc:1934 ../kioslave/http/http.cc:1938
 msgid "Proxy %1 at port %2"
 msgstr "Proxy %1 дар порти %2"
 
-#: ../kioslave/http/http.cc:1962
+#: ../kioslave/http/http.cc:1964
 msgid "Connection was to %1 at port %2"
 msgstr "Пайвасткунӣ бо %1, порти %2 буд"
 
-#: ../kioslave/http/http.cc:1968
+#: ../kioslave/http/http.cc:1970
 msgid "%1 (port %2)"
 msgstr "%1 (порт %2)"
 
-#: ../kioslave/http/http.cc:2470
+#: ../kioslave/http/http.cc:2472
 msgid "%1 contacted. Waiting for reply..."
 msgstr "Пайвасткунӣ бо %1 иҷро шуд. Ҷавобро интизор шуда истодааст..."
 
-#: ../kioslave/http/http.cc:2821
+#: ../kioslave/http/http.cc:2837
 msgid "Server processing request, please wait..."
 msgstr "Сервер талаботро таҳлил намуда истодааст, интизор шавед..."
 
-#: ../kioslave/http/http.cc:3661
+#: ../kioslave/http/http.cc:3669
 msgid "Requesting data to send"
 msgstr "Талаботи маълумотҳо барои фиристодан"
 
-#: ../kioslave/http/http.cc:3702
+#: ../kioslave/http/http.cc:3710
 #, c-format
 msgid "Sending data to %1"
 msgstr "Фиристодани маълумот ба %1"
 
-#: ../kioslave/http/http.cc:4112
+#: ../kioslave/http/http.cc:4120
 msgid "Retrieving %1 from %2..."
 msgstr "Гирифтани %1 аз %2..."
 
-#: ../kioslave/http/http.cc:4119
+#: ../kioslave/http/http.cc:4127
 msgid "Retrieving from %1..."
 msgstr "Гирифтани маълумотҳо аз %1..."
 
-#: ../kioslave/http/http.cc:4853 ../kioslave/http/http.cc:4972
+#: ../kioslave/http/http.cc:4861 ../kioslave/http/http.cc:4980
 #, fuzzy
 msgid "Authentication Failed."
 msgstr "Муаллифӣ иҷро нашуд!"
 
-#: ../kioslave/http/http.cc:4856 ../kioslave/http/http.cc:4975
+#: ../kioslave/http/http.cc:4864 ../kioslave/http/http.cc:4983
 #, fuzzy
 msgid "Proxy Authentication Failed."
 msgstr "Муаллифонидан дар сервери-прокси иҷро нашуд!"
 
-#: ../kioslave/http/http.cc:4882 ../kioslave/http/http.cc:4899
+#: ../kioslave/http/http.cc:4890 ../kioslave/http/http.cc:4907
 msgid "<b>%1</b> at <b>%2</b>"
 msgstr "<b>%1</b> дар <b>%2</b>"
 
-#: ../kioslave/http/http.cc:4889
+#: ../kioslave/http/http.cc:4897
 msgid ""
 "You need to supply a username and a password for the proxy server listed "
 "below before you are allowed to access any sites."
@@ -5410,16 +5577,15 @@ msgstr ""
 "Шумо бояд номи истифодакунанда ва гузарвожаро ворид кунед барои ёфтани "
 "сервер, ки дастрасӣ ба саҳифаҳои вэби дигар иҷозат медиҳад."
 
-#: ../kioslave/http/http.cc:4898
+#: ../kioslave/http/http.cc:4906
 msgid "Proxy:"
 msgstr "Proxy:"
 
-#: ../kioslave/http/http.cc:4918
-#, fuzzy
+#: ../kioslave/http/http.cc:4926
 msgid "Authentication needed for %1 but authentication is disabled."
-msgstr "Мутобиқат:."
+msgstr ""
 
-#: ../kioslave/http/http.cc:5316
+#: ../kioslave/http/http.cc:5324
 msgid ""
 "Unsupported method: authentication will fail. Please submit a bug report."
 msgstr ""
@@ -5428,6 +5594,9 @@ msgstr ""
 #, c-format
 msgid "No metainfo for %1"
 msgstr "Маълуматҳои meta барои %1 нестанд"
+
+msgid "Properties..."
+msgstr "Хусусиятҳо..."
 
 msgid " Size: %1 kB "
 msgstr " Андоза: %1 Кб"
@@ -5441,8 +5610,8 @@ msgstr " Андоза: %1 "
 msgid " Time: %1 "
 msgstr " Вақт: %1 "
 
-#~ msgid "&Continue"
-#~ msgstr "&Давом"
+msgid "&Continue"
+msgstr "&Давом"
 
-#~ msgid "Update"
-#~ msgstr "Боз созӣ"
+msgid "Update"
+msgstr "Боз созӣ"
