@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpilot\n"
 "POT-Creation-Date: 2004-08-04 01:24+0200\n"
-"PO-Revision-Date: 2004-08-14 13:45-0400\n"
+"PO-Revision-Date: 2004-08-18 13:44+0500\n"
 "Last-Translator: Marina Kolucheva <youth_opportunities@tajik.net>\n"
-"Language-Team: Tajik\n"
+"Language-Team:  Tajik\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -635,8 +635,9 @@ msgid ""
 "_n: Added one memo to KNotes.\n"
 "Added %n memos to KNotes."
 msgstr ""
+"Илова карда шуд %n нишона дар KNotes.\n"
 "Илова карда шуд %n нишонаҳо дар KNotes.\n"
-"Илова карда шуд %n нишон дар KNotes."
+"Илова карда шуд %n нишон дар KNotes. "
 
 #: conduits/knotes/knotes-action.cc:568
 msgid "No memos added to KNotes."
@@ -649,6 +650,7 @@ msgid ""
 "_n: Deleted one memo from KNotes.\n"
 "Deleted %n memos from KNotes."
 msgstr ""
+"Тоза кардани %n нишона аз KNotes.\n"
 "Тоза кардани %n нишонаҳо аз KNotes.\n"
 "Тоза кардани %n нишон аз KNotes."
 
@@ -1256,9 +1258,7 @@ msgstr "Қайд"
 msgid ""
 "_n: 1 notepad could not be saved\n"
 "%n notepads could not be saved"
-msgstr ""
-"%n қайдҳо нигоҳ дошта нашуданд\n"
-"%n қайдҳо нигоҳ дошта нашуданд"
+msgstr "%1 қайдҳо нигоҳ дошта нашуданд."
 
 #: conduits/notepadconduit/notepad-conduit.cc:120
 #, c-format
@@ -1266,9 +1266,7 @@ msgstr ""
 msgid ""
 "_n: 1 notepad saved\n"
 "%n notepads saved"
-msgstr ""
-"%n қайдҳо нигоҳ дошта нашуданд\n"
-"%n қайдҳо нигоҳ дошта нашуданд"
+msgstr "%1 қайдҳо нигоҳ дошта нашуданд."
 
 #: conduits/notepadconduit/notepad-factory.cc:115
 msgid "Saves notepads to png files"
@@ -1360,9 +1358,7 @@ msgstr "KMail"
 msgid ""
 "_n: Sent one message\n"
 "Sent %n messages"
-msgstr ""
-"Фиристодани %n хатчаҳо\n"
-"Фиристодани %n хатчаҳо"
+msgstr "Фиристодани %n хатчаҳо"
 
 #: conduits/popmail/popmail-conduit.cc:160
 msgid "No mail was sent."
@@ -1841,7 +1837,6 @@ msgid "Automatic Configuration Finished"
 msgstr "Анҷоми танзимоти автоматӣ"
 
 #: kpilot/kpilotConfigWizard.cc:221
-#, fuzzy
 msgid ""
 "Please put the handheld in the cradle, press the hotsync button and click on "
 "\"Continue\".\n"
@@ -1851,12 +1846,10 @@ msgid ""
 "block the computer from doing hotsyncs until it is rebooted. In that case it "
 "might be advisable not to continue."
 msgstr ""
-"Марҳамат дастқапакро ба \"cradle\"гузоред, тӯгмаи hotsyncc-ро пахш намуда ва "
+"Марҳамат дастқапакро ба кредл гузоред,тӯгмаи hotsyncc-ро пахш намуда ва "
 "\"Давом \".\n"
 "\n"
-"Якчанд kernel версияҳои (Linix2.6x)душвориҳо бо вайзор модули Kernel (барои таҷҳизотҳои Sony Clie)-ро "
-"доранд.Давондани аутодетексия дар ин кор метавон маҳкам кардани компютер аз кардани hotsync-ҳо "
-"то он даме ,ки вай         .Дар ин сурат ӯ маслиҳатдиҳандаи барои давом надодан."
+"Якчанд kernel версияҳои (Linix 2.6x) душвориҳо бо вайзор модули Kernel (барои таҷҳизотҳои Sony Clie)-ро доранд. Давондани аутодетексия дар ин кор метавон маҳкам кардани компютер аз кардани hotsync-ҳо то он даме, ки вай дар ин сурат ӯ маслиҳатдиҳандаи барои давом надодан."
 
 #: kpilot/kpilotConfigWizard.cc:227
 msgid "Handheld Detection"
@@ -3118,6 +3111,7 @@ msgid ""
 "_n: Installing one file\n"
 "Installing %n Files"
 msgstr ""
+"Барқарор %n файл\n"
 "Барқарор аст %n файли\n"
 "Баркарор аст %n файлҳо"
 
@@ -3598,7 +3592,7 @@ msgstr ""
 #: rc.cpp:52
 #, no-c-format
 msgid "Sync"
-msgstr "Sync"
+msgstr "Синхронизация"
 
 #: rc.cpp:54
 #, no-c-format
@@ -3635,7 +3629,7 @@ msgstr ""
 #: rc.cpp:65
 #, no-c-format
 msgid "Once a &day"
-msgstr "Як маротиба дар &рӯз."
+msgstr "Як маротиба дар як &рӯз."
 
 #: rc.cpp:67
 #, no-c-format
@@ -3889,12 +3883,13 @@ msgstr ""
 
 #: rc.cpp:159
 #, no-c-format
-#, fuzzy
 msgid ""
 "<qt>PalmOS Version 3.25 and 3.3 do not support setting the system time, so "
 "this conduit will be skipped for handhelds that run either of these "
 "operating systems.</qt>"
-msgstr "<qt>PalmOS ривояти 3.25 ва 3.3 "
+msgstr ""
+"<qt>PalmOS ривояти 3.25 ва 3.3 гузориши тартиб вақти кориро нигоҳ надошт. "
+"Канали синхронизацияи вақт роҳ дода нашуд.</qt>"
 
 #: rc.cpp:161 rc.cpp:163
 #, no-c-format
@@ -3910,6 +3905,10 @@ msgid ""
 "last case, you can change the values here. Note, however, that for all other "
 "settings the values entered here will have no effect."
 msgstr ""
+"Дар КПК ҳар як адрес чор дашти иловагӣ нигоҳ доштан,барои худ истеъмол "
+"кардан.Пилот онҳоро бо рӯзи тавалуд синхронизация карда метавонад,URL "
+"адреси IM ё ин ки ба осони дар компютер ҳамчун истифодабарандаи дашт бе таъини махсус муҳофизат кардан.Дар воқеаи охирин шумо метавонед, маънои "
+"онро иваз кунед.Нигоҳ кунед барои ҳама чи?"
 
 #: rc.cpp:167
 #, no-c-format
@@ -3974,12 +3973,12 @@ msgstr ""
 #: rc.cpp:193
 #, no-c-format
 msgid "KPilot's Private (meta-sync) Settings"
-msgstr ""
+msgstr "Мизроб кардани пилоти ҷузъӣ (мета-синхронизация)"
 
 #: rc.cpp:195
 #, no-c-format
 msgid "Record&ID:"
-msgstr ""
+msgstr "ID &сабт кардан."
 
 #: rc.cpp:197
 #, no-c-format
@@ -3994,16 +3993,20 @@ msgid ""
 "Do NOT change these values: doing so will almost certainly result in data "
 "loss when you next do a sync."
 msgstr ""
+"Ин мазмун аҳволи сабтро намоиш додан дар пилот ё алоқаи КПК дар компютер "
+"навишта гирифтан.\n"
+"Ин мазмунро иваз накунед,аз баски бешубҳа аз даст додани ин маълумот дар "
+"дигар синхронизация оварда расонида мешавад."
 
 #: rc.cpp:204 rc.cpp:606
 #, no-c-format
 msgid "Sync Destination"
-msgstr ""
+msgstr "Муққарар кардани синхронизация."
 
 #: rc.cpp:206
 #, no-c-format
 msgid "&Standard addressbook"
-msgstr ""
+msgstr "&Адресҳои китобҳо стандартӣ"
 
 #: rc.cpp:208
 #, no-c-format
@@ -4012,6 +4015,8 @@ msgid ""
 "the addressbook that you edit in KAddressBook, and which you use in "
 "KMail)</qt>"
 msgstr ""
+"<qt> Синхролнизация бо китоби адресҳои KDE стандартӣ (ҳамон ки- "
+"тоби адресҳое,ки дар kaddressbook ва КМail истифода мебаранд.</qt>"
 
 #: rc.cpp:210
 #, no-c-format
@@ -4036,8 +4041,9 @@ msgstr ""
 
 #: rc.cpp:216
 #, no-c-format
+#, fuzzy
 msgid "Store &archived records in the KDE addressbook"
-msgstr ""
+msgstr "Архивҳои сабткардаро дар китоби адресҳои KDK нигоҳ доред.&"
 
 #: rc.cpp:218
 #, no-c-format
@@ -4047,16 +4053,20 @@ msgid ""
 "address will be added to your addressbook, but no longer synchronized with "
 "the handheld.</qt>"
 msgstr ""
+"Агар шумо адресро дар КПК дур кунед шумо метавонед,архиви онро дар "
+"копютери персоналӣ интихоб кунед.Дар вақти интихоби ин опци адрес дар "
+"китоби адресии KDE нусха мебардорем аммо дар процесси сихронизацияи КПК "
+"иштирок намекунад.</qt>"
 
 #: rc.cpp:220 rc.cpp:466 rc.cpp:623
 #, no-c-format
 msgid "Conflicts"
-msgstr ""
+msgstr "Низоъ"
 
 #: rc.cpp:224 rc.cpp:625 rc.cpp:699
 #, no-c-format
 msgid "Conflict &resolution:"
-msgstr ""
+msgstr "&Рухсат додани низоъ"
 
 #: rc.cpp:226 rc.cpp:242
 #, no-c-format
@@ -4069,41 +4079,45 @@ msgid ""
 "overrides\", \"Use values from last sync\" and \"Use both entries\" to "
 "create a new entry on both the PC and handheld.</qt>"
 msgstr ""
+"<qt>Шумо метавонед, дар ин ҷо кадом низоъи (тағирдиҳӣ дар КПК ва дар ком- "
+"пютери персоналӣ) сабт кардаро мегузорем.Мазмуни имконпазир:\" гирифтан аз КПК\", \" гирифтан аз компютери персоналӣ \", Аз охирин синхронизация \", "
+"\" Ҳар ду навиштро истифода баред\" ва \" низоъи муоинаро канор "
+"гузоштан \".</qt>"
 
 #: rc.cpp:228 rc.cpp:627
 #, no-c-format
 msgid "Use KPilot's Global Setting"
-msgstr ""
+msgstr "Истифода бурдани мизроби умумии пилот."
 
 #: rc.cpp:230 rc.cpp:629 rc.cpp:685
 #, no-c-format
 msgid "Ask User"
-msgstr ""
+msgstr "Аз истифода баранда пурсидан."
 
 #: rc.cpp:232 rc.cpp:631 rc.cpp:687
 #, no-c-format
 msgid "Do Nothing"
-msgstr ""
+msgstr "Ҳеҷ кор накунед."
 
 #: rc.cpp:234 rc.cpp:633 rc.cpp:689
 #, no-c-format
 msgid "Handheld Overrides"
-msgstr ""
+msgstr "Аз КПК гирифтан."
 
 #: rc.cpp:236 rc.cpp:635 rc.cpp:691
 #, no-c-format
 msgid "PC Overrides"
-msgstr ""
+msgstr "Аз копютери персоналӣ гирифтан."
 
 #: rc.cpp:238 rc.cpp:637 rc.cpp:693
 #, no-c-format
 msgid "Values From Last Sync (if possible)"
-msgstr ""
+msgstr "Аз синхронизацияи охирин (агар мумкин бошад)."
 
 #: rc.cpp:240 rc.cpp:639 rc.cpp:695
 #, no-c-format
 msgid "Use Both Entries"
-msgstr ""
+msgstr "Истифода бурдани ҳар ду навишт."
 
 #: rc.cpp:244
 #, no-c-format
@@ -4111,6 +4125,8 @@ msgid ""
 "<p>Select the default action if an event was modified on both sides here. "
 "</p>"
 msgstr ""
+"<p> Шумо метавонед, корро зикр накарда дар рухсат додани низоъ "
+"нишон диҳед.</p>"
 
 #: rc.cpp:246
 #, no-c-format
@@ -4120,7 +4136,7 @@ msgstr "Ҳошияҳо"
 #: rc.cpp:248
 #, no-c-format
 msgid "Handheld other phone:"
-msgstr ""
+msgstr "Рақами дигари телефон дар КПК:"
 
 #: rc.cpp:250 rc.cpp:268
 #, no-c-format
@@ -4128,6 +4144,9 @@ msgid ""
 "<qt>Select which KAddressBook field should be used to store the Pilot's "
 "&quot;Other&quot; phone here.</qt>"
 msgstr ""
+"<qt>Интихоб кардани дашт дар китоби адресҳои KDE,кадоме, ки "
+"барои нигоҳ доштани ахбороти &quot; рақамҳои дигари &quot; "
+"телефон аз пилот истифода баред.</qt>"
 
 #: rc.cpp:252
 #, no-c-format
@@ -4137,7 +4156,7 @@ msgstr "Телефони дигар"
 #: rc.cpp:254
 #, no-c-format
 msgid "Assistant"
-msgstr ""
+msgstr "Ёрдамчи."
 
 #: rc.cpp:256 rc.cpp:286
 #, no-c-format
@@ -4172,7 +4191,7 @@ msgstr "Телефони TTY/TTD"
 #: rc.cpp:270
 #, no-c-format
 msgid "Handheld street address:"
-msgstr ""
+msgstr "Адреси ҳавли дар КПК:"
 
 #: rc.cpp:272 rc.cpp:278
 #, no-c-format
@@ -4180,28 +4199,30 @@ msgid ""
 "<qt>Select which KAddressBook field should be used to store the Pilot's "
 "Street Address here.</qt>"
 msgstr ""
+"Интихоб кардани дашт дар китоби адресҳои KDE кадомаш истифода бурда мешавад,барои маълумот дар бораи адреси ҳавли аз пилот нигоҳ дошта "
+"мешавад.</qt>"
 
 #: rc.cpp:274
 #, no-c-format
 msgid "Preferred, then Home Address"
-msgstr ""
+msgstr "Афзал донистан баъд адреси хона."
 
 #: rc.cpp:276
 #, no-c-format
 msgid "Preferred, then Business Address"
-msgstr ""
+msgstr "Афзал донистан баъд адреси кор."
 
 #: rc.cpp:280
 #, no-c-format
 msgid "Handheld fax:"
-msgstr ""
+msgstr "Рақами факс дар КПК:"
 
 #: rc.cpp:282 rc.cpp:288
 #, no-c-format
 msgid ""
 "<qt>Select which KAddressBook field should be used to store the Fax number "
 "from the Pilot here.</qt>"
-msgstr ""
+msgstr "<qt>Интихоб кардани дашт дар китоби адресҳои KDE кадомаш истифода бурда мешавад,барои нигоҳ доштани ахбороти рақамҳои факс аз пилот. </qt>"
 
 #: rc.cpp:290
 #, no-c-format
@@ -4211,65 +4232,65 @@ msgstr "Ҳошияҳои оддӣ"
 #: rc.cpp:292
 #, no-c-format
 msgid "Handheld custom field 1:"
-msgstr ""
+msgstr "Мукаммал кардани дашти 1 дар КПК:"
 
 #: rc.cpp:294 rc.cpp:316
 #, no-c-format
 msgid ""
 "<qt>Select the field from this list that represents best the meaning given "
 "by your use of the first custom field on your handheld.</qt>"
-msgstr ""
+msgstr "<qt> Муқаррар кардани дашти якуми иловаро дар КПК интихоб кунед.</qt>"
 
 #: rc.cpp:296
 #, no-c-format
 msgid "Handheld custom field 2:"
-msgstr ""
+msgstr "Мукамал кардани дашти 2 дар КПК:"
 
 #: rc.cpp:298 rc.cpp:326
 #, no-c-format
 msgid ""
 "<qt>Select the field from this list that represents best the meaning given "
 "by your use of the second custom field on your handheld.</qt>"
-msgstr ""
+msgstr "<qt> Муқаррар кардани дашти дуюм иловаро дар КПК интихоб кунед.</qt>"
 
 #: rc.cpp:300
 #, no-c-format
 msgid "Handheld custom field 3:"
-msgstr ""
+msgstr "Мукамал кардани дашти 3 дар КПК:"
 
 #: rc.cpp:302 rc.cpp:336
 #, no-c-format
 msgid ""
 "<qt>Select the field from this list that represents best the meaning given "
 "by your use of the third custom field on your handheld.</qt>"
-msgstr ""
+msgstr "<qt> Муқаррар кардани дашти сеюм иловаро дар КПК интихоб кунед.</qt>"
 
 #: rc.cpp:304
 #, no-c-format
 msgid "Handheld custom field 4:"
-msgstr ""
+msgstr "Мукамал кардани дашти 4 дар КПК:"
 
 #: rc.cpp:306 rc.cpp:346
 #, no-c-format
 msgid ""
 "<qt>Select the field from this list that represents best the meaning given "
 "by your use of the fourth custom field on your handheld.</qt>"
-msgstr ""
+msgstr "<qt> Муқаррар кардани дашти чаҳорум иловаро дар КПК интихоб кунед.</qt>"
 
 #: rc.cpp:308 rc.cpp:318 rc.cpp:328 rc.cpp:338
 #, no-c-format
 msgid "Store as Custom Field"
-msgstr ""
+msgstr "Нигоҳ доштан дар нафъи дашт."
 
 #: rc.cpp:310 rc.cpp:320 rc.cpp:330 rc.cpp:340
 #, no-c-format
 msgid "Birthdate"
-msgstr ""
+msgstr "Рӯзи таваллуд."
 
 #: rc.cpp:312 rc.cpp:322 rc.cpp:332 rc.cpp:342
 #, no-c-format
 msgid "URL"
-msgstr "URL"
+msgstr "Истинод кардани интернет."
 
 #: rc.cpp:314
 #, no-c-format
@@ -4296,11 +4317,17 @@ msgid ""
 "four-digit year. For  example, %d.%m.%Y would generate a date like "
 "27.3.1952, while %m/%d/%y would write the same date as 03/27/52. </qt>"
 msgstr ""
+"<qt> Интихоб кардани санаи андоза барои дашт мисли \" рӯзи тавал- "
+"луд\".Роҳ додани дигар гузориш:<br> "
+"%d- рӯз,%m-моҳ,%y -сол (ду аломат),%Y- сол (чор аломат). "
+"Мисол қолиб  %d.%m.%Y нишон додани сана бо намуди 27.3.1952, а "
+"%m/%d/%y санаро бо намуди 03/27/52. нишон медиҳад.\n"
+"</qt>"
 
 #: rc.cpp:352
 #, no-c-format
 msgid "Locale Settings"
-msgstr ""
+msgstr "Настройкаи маҳдуд."
 
 #: rc.cpp:354
 #, no-c-format
@@ -4343,6 +4370,8 @@ msgid ""
 "The following record was edited both on the handheld and on the PC. Please "
 "choose which values shall be synced:"
 msgstr ""
+"Дигар навиштаҳо дар КПК ва дар компютери персоналӣ дигар "
+"шудан:"
 
 #: rc.cpp:372
 #, no-c-format
@@ -4364,11 +4393,13 @@ msgid ""
 "Line breaks in any of the entries are denoted by a \" | \" (without the "
 "quotes)."
 msgstr ""
+"Гузарондани сатр дар мавқеи муққарари рамз ҷомаи амал пушонид."
+" \"|\"."
 
 #: rc.cpp:378
 #, no-c-format
 msgid "&Keep Both"
-msgstr ""
+msgstr "&Ҳар ду навиштаро нигоҳ доред."
 
 #: rc.cpp:380
 #, no-c-format
@@ -4405,7 +4436,7 @@ msgstr ""
 #: rc.cpp:390
 #, no-c-format
 msgid "&Handheld Values"
-msgstr ""
+msgstr "&Аз КПК гирифтан."
 
 #: rc.cpp:392
 #, no-c-format
@@ -4431,7 +4462,7 @@ msgstr ""
 #: rc.cpp:400
 #, no-c-format
 msgid "Local co&py:"
-msgstr ""
+msgstr "&Нусхаи маҳҳалӣ:"
 
 #: rc.cpp:402
 #, no-c-format
@@ -4443,12 +4474,12 @@ msgstr ""
 #: rc.cpp:406
 #, no-c-format
 msgid "Synchronization Mode"
-msgstr ""
+msgstr "Тартиботи синхронизация."
 
 #: rc.cpp:408
 #, no-c-format
 msgid "Sync only P&C to PDA"
-msgstr ""
+msgstr "Аз &компютер ба пилот гузаронидан."
 
 #: rc.cpp:410
 #, no-c-format
@@ -4462,7 +4493,7 @@ msgstr ""
 #: rc.cpp:412
 #, no-c-format
 msgid "Sync only P&DA to PC"
-msgstr ""
+msgstr "Аз &пилот ба компютер гузаронидан."
 
 #: rc.cpp:414
 #, no-c-format
@@ -4477,7 +4508,7 @@ msgstr ""
 #: rc.cpp:416
 #, no-c-format
 msgid "Sync &all"
-msgstr ""
+msgstr "Синхронизация кардани &ҳар дуи ҷараён."
 
 #: rc.cpp:418
 #, no-c-format
@@ -4499,12 +4530,12 @@ msgstr ""
 #: rc.cpp:422 rc.cpp:514
 #, no-c-format
 msgid "PC -> Handheld"
-msgstr ""
+msgstr "Компютери -> КПК"
 
 #: rc.cpp:424 rc.cpp:516
 #, no-c-format
 msgid "&Inline tags in text"
-msgstr ""
+msgstr "&Дар матн штамп."
 
 #: rc.cpp:426
 #, no-c-format
@@ -4518,8 +4549,9 @@ msgstr ""
 
 #: rc.cpp:428 rc.cpp:520
 #, no-c-format
+#, fuzzy
 msgid "&Tags at end of text"
-msgstr ""
+msgstr "Штамп дар &охири матн."
 
 #: rc.cpp:430
 #, no-c-format
@@ -4533,7 +4565,7 @@ msgstr ""
 #: rc.cpp:432 rc.cpp:524
 #, no-c-format
 msgid "&Compress"
-msgstr ""
+msgstr "&Фишор додан."
 
 #: rc.cpp:434 rc.cpp:526
 #, no-c-format
@@ -4553,8 +4585,9 @@ msgstr ""
 
 #: rc.cpp:438 rc.cpp:530
 #, no-c-format
+#, fuzzy
 msgid "Convert &bookmarks"
-msgstr ""
+msgstr "Аз нав ташкил додани  &гаарав."
 
 #: rc.cpp:440
 #, no-c-format
@@ -4569,8 +4602,9 @@ msgstr ""
 
 #: rc.cpp:442 rc.cpp:534
 #, no-c-format
+#, fuzzy
 msgid "Regular &expressions in .bmk file"
-msgstr ""
+msgstr "Намуди &мунтазам дар файли bmk."
 
 #: rc.cpp:444
 #, no-c-format
@@ -4585,12 +4619,14 @@ msgstr ""
 #: rc.cpp:446 rc.cpp:538
 #, no-c-format
 msgid "Handheld -> PC"
-msgstr ""
+msgstr "КПК->компютер"
 
 #: rc.cpp:448
 #, no-c-format
 msgid "Do not convert, if text unchanged (only bookmarks)"
 msgstr ""
+"Дар матни дигар шуда аз нав ташкил додан мумкин нест (фақат "
+"гарав) "
 
 #: rc.cpp:450
 #, no-c-format
@@ -4602,12 +4638,12 @@ msgstr ""
 #: rc.cpp:452 rc.cpp:540
 #, no-c-format
 msgid "Convert Bookmarks"
-msgstr ""
+msgstr "Аз нав ташкил додани гарав"
 
 #: rc.cpp:454 rc.cpp:544
 #, no-c-format
 msgid "Do &not convert bookmarks"
-msgstr ""
+msgstr " &Гаравро аз нав ташкил надиҳед."
 
 #: rc.cpp:456
 #, no-c-format
@@ -4619,7 +4655,7 @@ msgstr ""
 #: rc.cpp:458
 #, no-c-format
 msgid "Convert into .bm &file"
-msgstr ""
+msgstr "Дар &файл bm"
 
 #: rc.cpp:460
 #, no-c-format
@@ -4634,7 +4670,7 @@ msgstr ""
 #: rc.cpp:462 rc.cpp:542
 #, no-c-format
 msgid "Convert as &inline tags"
-msgstr ""
+msgstr "Дар &штамп дар матн."
 
 #: rc.cpp:464
 #, no-c-format
@@ -4652,6 +4688,8 @@ msgid ""
 "If the same text was changed on the PC and the handheld, which of the two "
 "versions should be used as the new version?"
 msgstr ""
+"Дар вақти дигар кардани матн дар КПК ва дар компютери персоналӣ "
+"кадоме аз ин ҳарду ривоят мондан муҳим? "
 
 #: rc.cpp:472
 #, no-c-format
@@ -4680,7 +4718,7 @@ msgstr ""
 #: rc.cpp:478
 #, no-c-format
 msgid "P&DA overrides"
-msgstr ""
+msgstr "P&DA Рад кардан."
 
 #: rc.cpp:480
 #, no-c-format
@@ -4694,8 +4732,9 @@ msgstr ""
 
 #: rc.cpp:482
 #, no-c-format
+#, fuzzy
 msgid "P&C overrides"
-msgstr ""
+msgstr "Аз компютери &персоналӣ."
 
 #: rc.cpp:484
 #, no-c-format
@@ -4710,7 +4749,7 @@ msgstr ""
 #: rc.cpp:486
 #, no-c-format
 msgid "&Ask the user"
-msgstr ""
+msgstr "&Аз истифода баранда пурсидан."
 
 #: rc.cpp:488
 #, no-c-format
@@ -4725,7 +4764,7 @@ msgstr ""
 #: rc.cpp:490
 #, no-c-format
 msgid "&Always show the resolution dialog"
-msgstr ""
+msgstr "&Ҳама вақт диалоги рухсат додаи низоъро нишон диҳед."
 
 #: rc.cpp:492
 #, no-c-format
@@ -4733,6 +4772,8 @@ msgid ""
 "<qt>Check this box to force the resolution dialog to appear even when there "
 "are no conflicts.</qt>"
 msgstr ""
+"<qt>Ҳама вақт диалоги рухсат додаи низоъро нишон диҳед, ҳатто "
+"агар онҳоро наёбанд.</qt>"
 
 #: rc.cpp:496
 #, no-c-format
@@ -4742,7 +4783,7 @@ msgstr "&Файли PalmDOC:"
 #: rc.cpp:500
 #, no-c-format
 msgid "Convert whole &folders"
-msgstr ""
+msgstr "Аз нав ташкил додани &каталог."
 
 #: rc.cpp:502
 #, no-c-format
@@ -4762,22 +4803,22 @@ msgstr ""
 #: rc.cpp:506
 #, no-c-format
 msgid "Convert Text to PalmDOC"
-msgstr ""
+msgstr "Аз нав ташкил додани матн дар андозаи PalmDOC"
 
 #: rc.cpp:508
 #, no-c-format
 msgid "Convert PalmDOC to Text"
-msgstr ""
+msgstr "Аз нав ташкил додани PalmDOС дар матн."
 
 #: rc.cpp:510
 #, no-c-format
 msgid "&Ask before overwriting files"
-msgstr ""
+msgstr "&Талаб кардани файлҳои дирӯза."
 
 #: rc.cpp:512
 #, no-c-format
 msgid "&Verbose messages"
-msgstr ""
+msgstr "&Муфассал кардани хабар."
 
 #: rc.cpp:518
 #, no-c-format
@@ -4823,18 +4864,19 @@ msgstr ""
 
 #: rc.cpp:546
 #, no-c-format
+#, fuzzy
 msgid "Convert as &end tags"
-msgstr ""
+msgstr "Штамп дар охири матн &"
 
 #: rc.cpp:548
 #, no-c-format
 msgid "Convert into .bmk &file"
-msgstr ""
+msgstr "Дар файли &.bmk"
 
 #: rc.cpp:550
 #, no-c-format
 msgid "Path to the directory to which the pictures should be exported."
-msgstr ""
+msgstr "Роҳ ба каталог,дар кадоме,ки мо бояд расмро нигоҳ дорем."
 
 #: rc.cpp:554
 #, no-c-format
@@ -4844,7 +4886,7 @@ msgstr "Барориш:"
 #: rc.cpp:556
 #, no-c-format
 msgid "Perl-Conduit Options"
-msgstr ""
+msgstr "Мизроб кардани канали Perl"
 
 #: rc.cpp:560 rc.cpp:572
 #, no-c-format
@@ -4854,22 +4896,22 @@ msgstr "$a = 17;"
 #: rc.cpp:562
 #, no-c-format
 msgid "<qt>Enter the Perl expression to be evaluated during a HotSync here.</qt>"
-msgstr ""
+msgstr "<qt>"
 
 #: rc.cpp:564
 #, no-c-format
 msgid "&Perl expression:"
-msgstr ""
+msgstr "Баён кардани &Perl:"
 
 #: rc.cpp:566
 #, no-c-format
 msgid "Python-Conduit Options"
-msgstr ""
+msgstr "Мизроб кардани канали Python"
 
 #: rc.cpp:570
 #, no-c-format
 msgid "&Python expression:"
-msgstr ""
+msgstr "Баён кардани &Perl:"
 
 #: rc.cpp:574
 #, no-c-format
@@ -4879,12 +4921,12 @@ msgstr ""
 #: rc.cpp:576
 #, no-c-format
 msgid "Send Mail"
-msgstr ""
+msgstr "Фиристондани почтаҳо."
 
 #: rc.cpp:578
 #, no-c-format
 msgid "Send method:"
-msgstr ""
+msgstr "Методи фиристондан:"
 
 #: rc.cpp:580 rc.cpp:600
 #, no-c-format
@@ -4904,7 +4946,7 @@ msgstr "Адреси почтаи электронӣ:"
 #: rc.cpp:584 rc.cpp:588
 #, no-c-format
 msgid "<qt>Enter the email address you want to send messages as here.</qt>"
-msgstr ""
+msgstr "<qt> Адреси почтаи электроникаи гирандаро нишон диҳед.</qt>"
 
 #: rc.cpp:586
 #, no-c-format
@@ -4914,7 +4956,7 @@ msgstr "$ИСТИФОДАКУНАНДА"
 #: rc.cpp:590
 #, no-c-format
 msgid "Signature file:"
-msgstr ""
+msgstr "Файли имзо карда:"
 
 #: rc.cpp:592 rc.cpp:594
 #, no-c-format
@@ -4929,7 +4971,7 @@ msgstr ""
 #: rc.cpp:596
 #, no-c-format
 msgid "Do Not Send Mail"
-msgstr ""
+msgstr "Почтаро нафиристонед."
 
 #: rc.cpp:598
 #, no-c-format
@@ -4939,12 +4981,12 @@ msgstr "Истифодаи KMail"
 #: rc.cpp:602
 #, no-c-format
 msgid "Calendar-Conduit Options"
-msgstr ""
+msgstr "Мизроб кардани канали тақвим."
 
 #: rc.cpp:608
 #, no-c-format
 msgid "&Standard calendar"
-msgstr ""
+msgstr "&Солномаи стандартӣ."
 
 #: rc.cpp:610
 #, no-c-format
@@ -4953,6 +4995,8 @@ msgid ""
 "Select this option to synchronize with the calendar specified by the KDE "
 "calendar settings.</qt>"
 msgstr ""
+"<qt> Опцияро интихоб кунед,агар хоҳед бо солномаи стандартии KDE "
+"кор кунед.</qt>"
 
 #: rc.cpp:612
 #, no-c-format
@@ -4978,8 +5022,9 @@ msgstr ""
 
 #: rc.cpp:618
 #, no-c-format
+#, fuzzy
 msgid "Store &archived records in the KDE calendar"
-msgstr ""
+msgstr "Муҳовизат &кардани сабтҳои архив дар солномаи KDE."
 
 #: rc.cpp:620
 #, no-c-format
@@ -5044,12 +5089,12 @@ msgstr "5"
 #: rc.cpp:661
 #, no-c-format
 msgid "&Completed"
-msgstr ""
+msgstr "&Ба анҷом расондан."
 
 #: rc.cpp:663
 #, no-c-format
 msgid "Has &end date:"
-msgstr ""
+msgstr "Рӯзи &хотима:"
 
 #: rc.cpp:665 rc.cpp:705 rc.cpp:741 rc.cpp:769 rc.cpp:837
 #, no-c-format
@@ -5072,7 +5117,7 @@ msgstr ""
 #: rc.cpp:675
 #, no-c-format
 msgid "FullSync"
-msgstr ""
+msgstr "Синхронизацияи пурра."
 
 #: rc.cpp:681
 #, no-c-format
@@ -5096,8 +5141,9 @@ msgstr ""
 
 #: rc.cpp:683
 #, no-c-format
+#, fuzzy
 msgid "&Default sync:"
-msgstr ""
+msgstr "Зикр накардан бо синхронизация:"
 
 #: rc.cpp:697
 #, no-c-format
@@ -5131,7 +5177,7 @@ msgstr ""
 #: rc.cpp:707
 #, no-c-format
 msgid "Pilot &device:"
-msgstr ""
+msgstr "&Ташкил кардани пилот:"
 
 #: rc.cpp:709 rc.cpp:711
 #, no-c-format
@@ -5141,6 +5187,11 @@ msgid ""
 "the correct device. You need write permission to successfully synchronize "
 "with the handheld.</qt>"
 msgstr ""
+"<qt> Номи файли дуруст кардае,ки дар пилот пайваст шуда гузоред "
+"(пай дар ҳами порт ёпорти USB).Шумо метавонед <i>/dev/pilot</i>, "
+"нишон диҳед ва размӣ истинод кардаро ба файли истифода баранда бино "
+"кардан.Барои синхронизацияи КПК шумо бояд ҳуқуқ ба сабт дар ин "
+"файл дошта бошед.</qt>"
 
 #: rc.cpp:713
 #, no-c-format
@@ -5185,7 +5236,7 @@ msgstr "115200"
 #: rc.cpp:729
 #, no-c-format
 msgid "En&coding:"
-msgstr ""
+msgstr "&Ба код даровардан:"
 
 #: rc.cpp:731 rc.cpp:733
 #, no-c-format
@@ -5207,6 +5258,8 @@ msgid ""
 "<qt>Enter your name here, as it appears in the Pilot's &quot;Owner&quot; "
 "setting.</qt>"
 msgstr ""
+"<qt>Номи истифода барандаро гузоред,ки он дар гузориш пилот ҷори "
+"намуд,мисли &quot;Соҳиб &quot;</qt>"
 
 #: rc.cpp:743
 #, no-c-format
@@ -5216,7 +5269,7 @@ msgstr "Асосӣ маълумотҳо"
 #: rc.cpp:745
 #, no-c-format
 msgid "&No backup:"
-msgstr ""
+msgstr "&Бе нусхаи резервӣ:"
 
 #: rc.cpp:747 rc.cpp:753
 #, no-c-format
@@ -5235,7 +5288,7 @@ msgstr ""
 #: rc.cpp:749
 #, no-c-format
 msgid "Not &restored:"
-msgstr ""
+msgstr "&Аз нав барқарор накунед:"
 
 #: rc.cpp:751 rc.cpp:755
 #, no-c-format
@@ -5250,7 +5303,7 @@ msgid ""
 "<tt>[lnch]</tt> and can exclude a whole range of databases. Entries without "
 "the brackets list database names, and may include shell-style wildcards, "
 "like <tt>*_a68k</tt>.</p></qt>"
-msgstr ""
+msgstr "<qt>"
 
 #: rc.cpp:757 rc.cpp:761
 #, no-c-format
@@ -5276,8 +5329,9 @@ msgstr ""
 
 #: rc.cpp:765
 #, no-c-format
+#, fuzzy
 msgid "Run &conduits during a backup"
-msgstr ""
+msgstr "Ба кор андохтани &канал бо ташкилёбии нусхаи резервӣ."
 
 #: rc.cpp:767
 #, no-c-format
@@ -5303,7 +5357,7 @@ msgstr ""
 #: rc.cpp:777
 #, no-c-format
 msgid "&Show private records"
-msgstr ""
+msgstr "&Расмҳои ғайрихизматиро нишон диҳед."
 
 #: rc.cpp:779
 #, no-c-format
@@ -5322,12 +5376,12 @@ msgstr "Намоиши ҳамчун \"&Охирин, якум\""
 msgid ""
 "<qt>Select this option to display addresses in the internal address viewer "
 "sorted by last name, first name.</qt>"
-msgstr ""
+msgstr "<qt>Адресҳо яккачин карда бо фамилия ва ном нишон медиҳад. </qt>"
 
 #: rc.cpp:787
 #, no-c-format
 msgid "Show as \"&Company, last\""
-msgstr ""
+msgstr "\"&Фамилия ва Номро\" нишон диҳед."
 
 #: rc.cpp:789
 #, no-c-format
@@ -5335,6 +5389,8 @@ msgid ""
 "<qt>Select this option to display addresses in the internal address viewer "
 "sorted by company name, last name.</qt>"
 msgstr ""
+"<qt>Адресҳо яккачин карда бо номи гурӯҳ ва фамилия нишон медиҳад. "
+"</qt>"
 
 #: rc.cpp:791
 #, no-c-format
@@ -5346,7 +5402,7 @@ msgstr "&Истифодаи калиди ҳошия"
 msgid ""
 "<qt>Check this box to combine all entries with the same last name in the "
 "internal address viewer.</qt>"
-msgstr ""
+msgstr "<qt>Ҳамаи фамиляҳо,ки бо як адрес комбинация кунед.</qt>"
 
 #: rc.cpp:801
 #, no-c-format
@@ -5371,57 +5427,59 @@ msgstr "Байрақҳои асосӣ маълумот"
 #: rc.cpp:809
 #, no-c-format
 msgid "&Ressource database"
-msgstr ""
+msgstr "&Манбаи додашудаи база."
 
 #: rc.cpp:811
 #, no-c-format
 msgid "Rea&d-only"
-msgstr ""
+msgstr "Фақат барои &хондан."
 
 #: rc.cpp:813
 #, no-c-format
+#, fuzzy
 msgid "Database is &backed  up"
-msgstr ""
+msgstr "Дар базаи истеътод &нусхаи резервӣ аст."
 
 #: rc.cpp:815
 #, no-c-format
 msgid "Copy &protected"
-msgstr ""
+msgstr " &Аз нусха бардори ҳимоя аст."
 
 #: rc.cpp:817
 #, no-c-format
 msgid "Misc Flags"
-msgstr ""
+msgstr "Дигар байрақҳо."
 
 #: rc.cpp:819
 #, no-c-format
 msgid "Reset after &installation"
-msgstr ""
+msgstr "&Баъд аз гузориш сарнагун кардан."
 
 #: rc.cpp:821
 #, no-c-format
 msgid "E&xclude from sync"
-msgstr ""
+msgstr "&Аз синхронизация маҳрум карда шавад."
 
 #: rc.cpp:823
 #, no-c-format
 msgid "Time Stamps"
-msgstr ""
+msgstr "Таърих ва вақт."
 
 #: rc.cpp:825
 #, no-c-format
 msgid "Cr&eation time:"
-msgstr ""
+msgstr "&Муҳаёкунӣ:"
 
 #: rc.cpp:827
 #, no-c-format
 msgid "&Modification time:"
-msgstr ""
+msgstr "&Тағир додан:"
 
 #: rc.cpp:829
 #, no-c-format
+#, fuzzy
 msgid "Back&up time:"
-msgstr ""
+msgstr "Ташкилёбии &нусхаи резервӣ:"
 
 #: rc.cpp:831
 #, no-c-format
@@ -5436,12 +5494,12 @@ msgstr "&Илова"
 #: rc.cpp:839
 #, no-c-format
 msgid "Exit Options"
-msgstr ""
+msgstr "Мизроб кардани баромад."
 
 #: rc.cpp:841
 #, no-c-format
 msgid "S&top daemon on exit"
-msgstr ""
+msgstr "&Маън кардани васваса аз баромад."
 
 #: rc.cpp:843
 #, no-c-format
@@ -5449,11 +5507,13 @@ msgid ""
 "<qt>Check this box to stop the KPilot daemon when you quit KPilot (only if "
 "KPilot started the daemon itself).</qt>"
 msgstr ""
+"<qt> Нигоҳ доштани васвасаи синхронизация дар баромадан аз пилот "
+"(агар пилот васвасаро сар диҳад).</qt>"
 
 #: rc.cpp:845
 #, no-c-format
 msgid "Quit &after HotSync"
-msgstr ""
+msgstr "&Баъд аз синхронизация баромадан."
 
 #: rc.cpp:847
 #, no-c-format
@@ -5462,6 +5522,9 @@ msgid ""
 "HotSync finishes. This may be useful for systems where KPilot is started by "
 "the USB daemon.</qt>"
 msgstr ""
+"<qt>Нигоҳ доштани пилот ва васвасаи пилот баъд аз анҷом ёфтани "
+"синхронизация.Ин барои тартиби кор фоида дорад,дар куҷое, ки пилот "
+"васвасаи USB сар медиҳад.<qt>"
 
 #: rc.cpp:849
 #, no-c-format
@@ -5470,20 +5533,21 @@ msgstr "Интихоботҳои боркардан"
 
 #: rc.cpp:851 rc.cpp:918
 #, no-c-format
+#, fuzzy
 msgid "&Start daemon at login"
-msgstr ""
+msgstr "Мизроб пур бор кардан."
 
 #: rc.cpp:853
 #, no-c-format
 msgid ""
 "<qt>Check this box to start up the KPilot daemon every time you log in to "
 "KDE.</qt>"
-msgstr ""
+msgstr "<qt>Сар додани васвасаи синхронизацияи қайдкунӣ дар КDE.</qt>"
 
 #: rc.cpp:855
 #, no-c-format
 msgid "S&how daemon in panel"
-msgstr ""
+msgstr "&Васвасаро дар панел нишон диҳед."
 
 #: rc.cpp:857
 #, no-c-format
@@ -5492,6 +5556,9 @@ msgid ""
 "the daemon's status, and allows you to select the next sync type and to "
 "configure KPilot.</qt>"
 msgstr ""
+"<qt>Гузоштани пиктограммаи пилот дар тартиби кори қуттии дастаки- "
+"фурӯш ба панелиKDE барои нишон додани аҳвол ва мизроб кардани "
+"васвасаи синхронизация ва пилот.</qt>"
 
 #: rc.cpp:871
 #, no-c-format
@@ -5506,7 +5573,7 @@ msgstr "Банд"
 #: rc.cpp:879
 #, no-c-format
 msgid "This wizard will help you configure kpilot."
-msgstr ""
+msgstr "Ин устод барои мизроб кардани пилот ёри мерасонад."
 
 #: rc.cpp:881
 #, no-c-format
@@ -5514,11 +5581,13 @@ msgid ""
 "As a first step, we need to determine the username and how the handheld is "
 "connected to the computer."
 msgstr ""
+"Дар навбати якум ҳатман муаян кардани номи истифода баранда ва "
+" чи хел КПК дар компютер пайваст аст."
 
 #: rc.cpp:883
 #, no-c-format
 msgid "Handheld && User Name"
-msgstr ""
+msgstr "КПК ва номи истифода баранда."
 
 #: rc.cpp:885
 #, no-c-format
@@ -5560,11 +5629,19 @@ msgid ""
 "just syncing. Use it with caution.\n"
 "</p>"
 msgstr ""
+"<p> Шумо метавонед,ба пилот иҷозат диҳед бо таври автоматики ин "
+"маъноро муаян кунад (барои ин шумо муҳимаш,ки КПК дар компютер "
+"пайваст кунед).</p>\n ё ин ки бо таври дастӣ ба дарун дароред.</p>\n"
+"<p> Номи истифода барандаро дар КПК чӣ тавре гузошташудааст "
+"гузоред.</p>\n"
+"<p>Бо таври гузориши дастӣ мисли бино кардан(агар муқаррари авто- "
+"матики кор накард) поёни пинҳониро нигоҳ кунед."
 
 #: rc.cpp:900
 #, no-c-format
+#, fuzzy
 msgid "&Device:"
-msgstr ""
+msgstr "&Ташкил кардан:"
 
 #: rc.cpp:902 rc.cpp:910
 #, no-c-format
@@ -5574,11 +5651,17 @@ msgid ""
 "the correct device. Use the button below to automatically detect the device. "
 "You need write permission to successfully synchronize with the handheld.</qt>"
 msgstr ""
+"<qt> Номи файли дуруст кардае,ки дар пилот пайваст шуда гузоред "
+"(пай дар ҳами порт ёпорти USB).Шумо метавонед <i>/dev/pilot</i>, "
+"нишон диҳед ва размӣ истинод кардаро ба файли истифода баранда бино "
+"кардан.Тугмачаи поёнро барои бо таври автоматики муаян кардани васл "
+"истифода баред.Шумо муҳимаш,ки барои синхронизация ҳуқуқ барои "
+"сабти муқаррар дошта бошед."
 
 #: rc.cpp:904
 #, no-c-format
 msgid "&Automatically Detect Handheld && User Name"
-msgstr ""
+msgstr "&Бо таври автоматӣ муаян кардани КПК ва номи истифодабаранда..."
 
 #: rc.cpp:906
 #, no-c-format
@@ -5601,6 +5684,9 @@ msgid ""
 "&quot;Owner&quot; setting, or use the button below to automatically detect "
 "it.</qt>"
 msgstr ""
+"<qt> Номи истифода барандаро гузоред,кадоме ки дар пилот ҳамчун "
+"&quot;соҳиб &quot;истифода баред ё ин ки тугмачаи поёнро зер кунед, "
+"барои бо таври автоматики номи вайро муаян кунед.</qt>"
 
 #: rc.cpp:914
 #, no-c-format
@@ -5615,6 +5701,11 @@ msgid ""
 "anything other than connect your handheld and push \"sync\", and kpilot will "
 "appear and magically do your bidding. </qt>"
 msgstr ""
+"<qt> Пурра иҷро кардани васвасаи пилот дар даромадани тартиби кор ва "
+"ҳар вақти корри бенигоҳубин доштани он дар тартиби кор.Ин маънои онро "
+"дорад,ки (дар назария) шумо ҳеҷ кор намекунед,бе ғайр аз васл кардани "
+"КПК ва дар он зер кардани тугмача\"sync\", пилот пайдо мешавад ва "
+"ҳамаашро худаш мекунад.</qt>"
 
 #: rc.cpp:922
 #, no-c-format
@@ -5626,24 +5717,31 @@ msgid ""
 "Press \"Finish\" to setup KPilot according to the settings in this "
 "configuration Wizard."
 msgstr ""
+"Оқибат, шумо метавонед пилотро дуруст кунед,махсус барои чанд "
+"гузориши PIM мисли Kontact (интеграл ёфтани гузориши KDE "
+"PIM),гузориш гирифтани нақшаи KDE-PIM ё ин ки эволюция (интег- "
+"рал ёфтани гузориши Gnome PIM).\n"
+"\n"
+"Зер кунед\"Тайёр \" барои мизроб кардани пилот якҷояи параметр "
+"барпо карда шуда,"
 
 #: rc.cpp:926
 #, no-c-format
 msgid "Set Default Values for Syncing With"
-msgstr ""
+msgstr "Дуруст кардани мазмун бо мақсур барои синхронизация бо."
 
 #: rc.cpp:928
 #, no-c-format
 msgid "General &KDE-PIM suite"
-msgstr ""
+msgstr "Қабул кардани нақшаи стандартии &KDE-PIM "
 
 #: rc.cpp:930
 #, no-c-format
 msgid "&Evolution"
-msgstr ""
+msgstr "&Эволюция."
 
 #: rc.cpp:932
 #, no-c-format
 msgid "No sync, just backup"
-msgstr ""
+msgstr "Синхронизация накунед,манбаъи нусха кунед."
 
