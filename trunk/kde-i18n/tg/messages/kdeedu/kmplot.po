@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kmplot\n"
-"POT-Creation-Date: 2004-12-29 14:57+0100\n"
+"POT-Creation-Date: 2005-02-03 01:24+0100\n"
 "PO-Revision-Date: 2004-08-18 18:40+0500\n"
 "Last-Translator: Marina Kolucheva <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -37,7 +37,7 @@ msgid "The file had an unknown version number"
 msgstr "Файл бо раванди рақами номаълум буд"
 
 #. i18n: file settingspagescaling.ui line 192
-#: View.cpp:1115 kmplotio.cpp:324 rc.cpp:1352 rc.cpp:1433 rc.cpp:2998
+#: View.cpp:1133 kmplotio.cpp:324 rc.cpp:1352 rc.cpp:1433 rc.cpp:2998
 #: rc.cpp:3079
 #, no-c-format
 msgid "automatic"
@@ -56,7 +56,7 @@ msgstr ""
 "минималӣ бошад"
 
 #: editfunction.cpp:300 keditparametric.cpp:162 keditpolar.cpp:144
-#: kminmax.cpp:291 parser.cpp:956
+#: kminmax.cpp:291
 #, fuzzy
 msgid "Function could not be found"
 msgstr "Наметавонам ҷузъро ёбам."
@@ -73,7 +73,11 @@ msgstr "Чопи унвон "
 msgid "Transparent background"
 msgstr "Заминаи шаффофӣ"
 
-#: parser.cpp:922
+#: parser.cpp:506
+msgid "This function is depending on an other function"
+msgstr ""
+
+#: parser.cpp:933
 msgid ""
 "Parser error at position %1:\n"
 "Syntax error"
@@ -81,7 +85,7 @@ msgstr ""
 "Хатои коркард дар макони %1:\n"
 "хатои синтаксис"
 
-#: parser.cpp:925
+#: parser.cpp:936
 msgid ""
 "Parser error at position %1:\n"
 "Missing parenthesis"
@@ -89,7 +93,7 @@ msgstr ""
 "Хатои коркард дар макони %1:\n"
 "қавсҳо нестанд"
 
-#: parser.cpp:928
+#: parser.cpp:939
 msgid ""
 "Parser error at position %1:\n"
 "Function name unknown"
@@ -97,7 +101,7 @@ msgstr ""
 "Хатои коркард дар макони %1:\n"
 "номи функсия номаълум аст"
 
-#: parser.cpp:931
+#: parser.cpp:942
 msgid ""
 "Parser error at position %1:\n"
 "Void function variable"
@@ -105,7 +109,7 @@ msgstr ""
 "Хатои коркард дар макони %1:\n"
 "аҳамияти холии функсия"
 
-#: parser.cpp:934
+#: parser.cpp:945
 msgid ""
 "Parser error at position %1:\n"
 "Too many functions"
@@ -113,7 +117,7 @@ msgstr ""
 "Хатои коркард дар макони %1:\n"
 "функсия хеле зиёд аст."
 
-#: parser.cpp:937
+#: parser.cpp:948
 msgid ""
 "Parser error at position %1:\n"
 "Token-memory overflow"
@@ -121,7 +125,7 @@ msgstr ""
 "Хатои коркард дар макони %1:\n"
 "пуршавии хотира"
 
-#: parser.cpp:940
+#: parser.cpp:951
 msgid ""
 "Parser error at position %1:\n"
 "Stack overflow"
@@ -129,42 +133,50 @@ msgstr ""
 "Хатои коркард дар макони %1:\n"
 "пуршавии стек"
 
-#: parser.cpp:943
+#: parser.cpp:954
+#, fuzzy
 msgid ""
 "Parser error at position %1:\n"
-"Name of function not free"
+"Name of function not free."
 msgstr ""
 "Хатои коркард дар макони %1:\n"
 "номи функсия аллакай дар ҳоли шурӯъ аст"
 
-#: parser.cpp:946
+#: parser.cpp:957
+#, fuzzy
 msgid ""
 "Parser error at position %1:\n"
-"recursive function not allowed"
+"recursive function not allowed."
 msgstr ""
 "Хатои коркард дар макони %1:\n"
 "функсияҳои рекурсивӣ манъ аст."
 
-#: parser.cpp:949
-#, c-format
-msgid "Could not find a defined constant at position %1"
+#: parser.cpp:960
+#, fuzzy, c-format
+msgid "Could not find a defined constant at position %1."
 msgstr ""
 "Натавонистам константаи муайянро дар "
 "макони %1 ёбам"
 
-#: parser.cpp:952
+#: parser.cpp:963
 msgid "Empty function"
 msgstr "Функсияи холӣ"
 
-#: parser.cpp:954
-msgid "The function name is not allowed to contain capital letters"
+#: parser.cpp:965
+#, fuzzy
+msgid "The function name is not allowed to contain capital letters."
 msgstr ""
 "Дар номи функсия наметавонад ҳарфи қайд "
 "буда бошад."
 
-#: parser.cpp:958
+#: parser.cpp:967
 #, fuzzy
-msgid "Evalation expression may not use user-defined constants"
+msgid "Function could not be found."
+msgstr "Наметавонам ҷузъро ёбам."
+
+#: parser.cpp:969
+#, fuzzy
+msgid "The expression must not contain user-defined constants."
 msgstr "Руйхати муайяни истифодабари доимӣ"
 
 #: keditconstant.cpp:61
@@ -264,7 +276,7 @@ msgstr ""
 msgid "Would you like to be informed about other lines that cannot be read?"
 msgstr "Оиди чунин сатрҳо дар оянда иттилоъ диҳам?"
 
-#: MainDlg.cpp:270 MainDlg.cpp:295 kparametereditor.cpp:209
+#: MainDlg.cpp:269 MainDlg.cpp:294 kparametereditor.cpp:209
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to continue and "
 "overwrite this file?"
@@ -272,11 +284,11 @@ msgstr ""
 "Файл бо номи \"%1\"аллакай вуҷуд дорад. "
 "Вайро иваз кардан?"
 
-#: MainDlg.cpp:270 MainDlg.cpp:295 kparametereditor.cpp:209
+#: MainDlg.cpp:269 MainDlg.cpp:294 kparametereditor.cpp:209
 msgid "Overwrite File?"
 msgstr "Файлро иваз кардан?"
 
-#: MainDlg.cpp:270 MainDlg.cpp:295 kparametereditor.cpp:209
+#: MainDlg.cpp:269 MainDlg.cpp:294 kparametereditor.cpp:209
 msgid "&Overwrite"
 msgstr "&Иваз кардан"
 
@@ -510,11 +522,11 @@ msgstr "Интихоби параметр"
 msgid "Choose a parameter to use:"
 msgstr "Параметрро интихоб кунед:"
 
-#: kmplot.cpp:78
-msgid "Could not find KmPlot's Part."
+#: kmplot.cpp:77
+msgid "Could not find KmPlot's part."
 msgstr ""
 
-#: kmplot.cpp:243
+#: kmplot.cpp:221
 #, fuzzy
 msgid ""
 "*.fkt|KmPlot Files (*.fkt)\n"
@@ -523,21 +535,21 @@ msgstr ""
 "*.fkt|Файлҳои KmPlot (*.fkt)\n"
 "*|Ҳамаи файлҳо"
 
-#: FktDlg.cpp:149 MainDlg.cpp:465
+#: FktDlg.cpp:151 MainDlg.cpp:464
 msgid "New Function Plot"
 msgstr "сафбандии нави функсия"
 
 #. i18n: file editfunctionpage.ui line 19
-#: FktDlg.cpp:150 View.cpp:1864 rc.cpp:212 rc.cpp:1858
+#: FktDlg.cpp:152 View.cpp:1883 rc.cpp:212 rc.cpp:1858
 #, no-c-format
 msgid "Edit Function Plot"
 msgstr "Тағйири сафбандии функсия"
 
-#: FktDlg.cpp:165 MainDlg.cpp:478 View.cpp:1852
+#: FktDlg.cpp:167 MainDlg.cpp:477 View.cpp:1871
 msgid "New Parametric Plot"
 msgstr "Сафбандии параметрикии нав"
 
-#: FktDlg.cpp:180 MainDlg.cpp:491
+#: FktDlg.cpp:182 MainDlg.cpp:490
 msgid "New Polar Plot"
 msgstr "Сафбандии қутбии нав"
 
@@ -680,13 +692,13 @@ msgstr "Сафбандии қ&утбии нав..."
 #. i18n: file FktDlgData.ui line 288
 #: rc.cpp:129 rc.cpp:1775
 #, fuzzy, no-c-format
-msgid "&Copy function..."
+msgid "&Copy Function..."
 msgstr "Функсияи холӣ"
 
 #. i18n: file FktDlgData.ui line 313
 #: rc.cpp:138 rc.cpp:1784
 #, fuzzy, no-c-format
-msgid "&Move function..."
+msgid "&Move Function..."
 msgstr "Функсияҳои сафбандии &нав..."
 
 #. i18n: file editderivativespage.ui line 16
@@ -822,7 +834,7 @@ msgid "Extensions"
 msgstr "Васеъӣ"
 
 #. i18n: file editfunctionpage.ui line 85
-#: MainDlg.cpp:192 rc.cpp:231 rc.cpp:1877
+#: MainDlg.cpp:191 rc.cpp:231 rc.cpp:1877
 #, no-c-format
 msgid "&Hide"
 msgstr "&Пинҳон кардан"
@@ -1611,9 +1623,9 @@ msgstr "&Шабака:"
 
 #. i18n: file settingspagecolor.ui line 118
 #: rc.cpp:843 rc.cpp:2489
-#, no-c-format
-msgid "&Functions"
-msgstr "&Функсияҳо"
+#, fuzzy, no-c-format
+msgid "&Default Function Colors"
+msgstr "сафбандии нави функсия"
 
 #. i18n: file settingspagecolor.ui line 148
 #: rc.cpp:847 rc.cpp:2493
@@ -3015,7 +3027,7 @@ msgstr ""
 msgid "Slider no. %1"
 msgstr "Лағжанда рақами %1"
 
-#: View.cpp:415 View.cpp:1732
+#: View.cpp:415 View.cpp:1750
 msgid "The drawing was cancelled by the user."
 msgstr "Сафбанди бо корбар барҳам дода шуд."
 
@@ -3047,11 +3059,11 @@ msgstr "y-Тираҳо:"
 msgid "Functions:"
 msgstr "Функсияҳо:"
 
-#: View.cpp:653
+#: View.cpp:656
 msgid "root"
 msgstr "root"
 
-#: View.cpp:1824
+#: View.cpp:1842
 msgid "Are you sure you want to remove this function?"
 msgstr "Ин функсияро ҳузф кардан?"
 
@@ -3116,105 +3128,105 @@ msgstr "Танзимотҳои умумӣ"
 msgid "Constants"
 msgstr "Доимиҳо"
 
-#: MainDlg.cpp:139
+#: MainDlg.cpp:138
 msgid "E&xport..."
 msgstr "Со&дирот..."
 
-#: MainDlg.cpp:142
+#: MainDlg.cpp:141
 msgid "&No Zoom"
 msgstr "&Калон накардан"
 
-#: MainDlg.cpp:143
+#: MainDlg.cpp:142
 msgid "Zoom &Rectangular"
 msgstr ""
 
-#: MainDlg.cpp:144
+#: MainDlg.cpp:143
 msgid "Zoom &In"
 msgstr "&Калон кардан масштаб"
 
-#: MainDlg.cpp:145
+#: MainDlg.cpp:144
 msgid "Zoom &Out"
 msgstr "&Камтар кардани масштаб"
 
-#: MainDlg.cpp:146
+#: MainDlg.cpp:145
 msgid "&Center Point"
 msgstr "&Нуқтаи марказ"
 
-#: MainDlg.cpp:147
+#: MainDlg.cpp:146
 msgid "&Fit Widget to Trigonometric Functions"
 msgstr ""
 "&Танзимкунии андоза ба зери функсияҳои "
 "тригонометрӣ"
 
-#: MainDlg.cpp:156
+#: MainDlg.cpp:155
 msgid "Predefined &Math Functions"
 msgstr "Пешмуайянкунандаи &функсияи математикӣ"
 
-#: MainDlg.cpp:159
+#: MainDlg.cpp:158
 msgid "&Colors..."
 msgstr "&Рангҳо..."
 
-#: MainDlg.cpp:160
+#: MainDlg.cpp:159
 msgid "&Coordinate System..."
 msgstr "&Системаи координатӣ..."
 
-#: MainDlg.cpp:162
+#: MainDlg.cpp:161
 msgid "&Scaling..."
 msgstr "&Масштаб..."
 
-#: MainDlg.cpp:163
+#: MainDlg.cpp:162
 msgid "&Fonts..."
 msgstr "&Ҳарфҳо..."
 
-#: MainDlg.cpp:165
+#: MainDlg.cpp:164
 msgid "Coordinate System I"
 msgstr "Системаи координатӣ I"
 
-#: MainDlg.cpp:166
+#: MainDlg.cpp:165
 msgid "Coordinate System II"
 msgstr "Системаи координатӣ II"
 
-#: MainDlg.cpp:167
+#: MainDlg.cpp:166
 msgid "Coordinate System III"
 msgstr "Системаи координатӣ III"
 
-#: MainDlg.cpp:170
+#: MainDlg.cpp:169
 msgid "&New Function Plot..."
 msgstr "Функсияҳои сафбандии &нав..."
 
-#: MainDlg.cpp:171
+#: MainDlg.cpp:170
 msgid "New Parametric Plot..."
 msgstr "Параметри сафбандии нав..."
 
-#: MainDlg.cpp:172
+#: MainDlg.cpp:171
 msgid "New Polar Plot..."
 msgstr "Сафбандии қутбии нав..."
 
-#: MainDlg.cpp:173
+#: MainDlg.cpp:172
 msgid "Edit Plots..."
 msgstr "Тағйири сафбандҳо..."
 
-#: MainDlg.cpp:176
+#: MainDlg.cpp:175
 msgid "&Get y-Value..."
 msgstr "&Ординатро гирифтан..."
 
-#: MainDlg.cpp:177
+#: MainDlg.cpp:176
 msgid "&Search for Minimum Value..."
 msgstr "&Ҷустуҷӯи нуқтаи минимум..."
 
-#: MainDlg.cpp:178
+#: MainDlg.cpp:177
 msgid "&Search for Maximum Value..."
 msgstr "&Ҷустуҷӯи нуқтаи максимум..."
 
-#: MainDlg.cpp:179
+#: MainDlg.cpp:178
 msgid "&Area Under Graph..."
 msgstr "&Майдон дар таги график..."
 
-#: MainDlg.cpp:182
+#: MainDlg.cpp:181
 msgid "Quick Edit"
 msgstr "Муҳаррири кутоҳ"
 
-#: MainDlg.cpp:183
+#: MainDlg.cpp:182
 msgid ""
 "Enter a simple function equation here.\n"
 "For instance: f(x)=x^2\n"
@@ -3225,27 +3237,27 @@ msgstr ""
 "Шумо метавонед истифода баред аз "
 "менюиФунксия->Сафбандро тағйир додан..."
 
-#: MainDlg.cpp:186
+#: MainDlg.cpp:185
 msgid "Show Slider 1"
 msgstr "Намоиши лағжандаи 1"
 
-#: MainDlg.cpp:187
+#: MainDlg.cpp:186
 msgid "Show Slider 2"
 msgstr "Намоиши лағжандаи 2"
 
-#: MainDlg.cpp:188
+#: MainDlg.cpp:187
 msgid "Show Slider 3"
 msgstr "Намоиши лағжандаи 3"
 
-#: MainDlg.cpp:189
+#: MainDlg.cpp:188
 msgid "Show Slider 4"
 msgstr "Намоиши лағжандаи 4"
 
-#: MainDlg.cpp:201
+#: MainDlg.cpp:200
 msgid "&Move"
 msgstr ""
 
-#: MainDlg.cpp:213
+#: MainDlg.cpp:212
 msgid ""
 "The plot has been modified.\n"
 "Do you want to save it?"
@@ -3253,13 +3265,13 @@ msgstr ""
 "Сафбанд тағйир додашуда аст.\n"
 "Вайро нигоҳ доштан?"
 
-#: MainDlg.cpp:251
+#: MainDlg.cpp:250
 msgid ""
 "This file is saved with an old file format; if you save it, you cannot open "
 "the file with older versions of Kmplot. Are you sure you want to continue?"
 msgstr ""
 
-#: MainDlg.cpp:265
+#: MainDlg.cpp:264
 msgid ""
 "*.fkt|KmPlot Files (*.fkt)\n"
 "*|All Files"
@@ -3267,12 +3279,12 @@ msgstr ""
 "*.fkt|Файлҳои KmPlot (*.fkt)\n"
 "*|Ҳамаи файлҳо"
 
-#: MainDlg.cpp:273
+#: MainDlg.cpp:272
 #, fuzzy
 msgid "The file could not be saved"
 msgstr "Натавонистам файлро пурбор кунам "
 
-#: MainDlg.cpp:289
+#: MainDlg.cpp:288
 msgid ""
 "*.svg|Scalable Vector Graphics (*.svg)\n"
 "*.bmp|Bitmap 180dpi (*.bmp)\n"
@@ -3282,36 +3294,36 @@ msgstr ""
 "*.bmp|Bitmap 180dpi (*.bmp)\n"
 "*.png|Bitmap 180dpi (*.png)"
 
-#: MainDlg.cpp:308 MainDlg.cpp:324 MainDlg.cpp:340
+#: MainDlg.cpp:307 MainDlg.cpp:323 MainDlg.cpp:339
 #, fuzzy
-msgid "The url could not be saved"
+msgid "The URL could not be saved."
 msgstr "Натавонистам файлро пурбор кунам "
 
-#: MainDlg.cpp:394
+#: MainDlg.cpp:393
 msgid "Print Plot"
 msgstr "Сафбандро чоп кардан"
 
-#: MainDlg.cpp:406
+#: MainDlg.cpp:405
 msgid "Colors"
 msgstr "Рангҳо"
 
-#: MainDlg.cpp:406
+#: MainDlg.cpp:405
 msgid "Edit Colors"
 msgstr "Рангҳоро тағйир додан"
 
-#: MainDlg.cpp:432
+#: MainDlg.cpp:431
 msgid "Scale"
 msgstr "Масштаб "
 
-#: MainDlg.cpp:432
+#: MainDlg.cpp:431
 msgid "Edit Scaling"
 msgstr "Масштабро тағйир додан"
 
-#: MainDlg.cpp:444
+#: MainDlg.cpp:443
 msgid "Edit Fonts"
 msgstr "Ҳарфҳоро тағйир додан"
 
-#: MainDlg.cpp:537
+#: MainDlg.cpp:536
 msgid ""
 "Parametric functions must be definied in the \"New Parametric Plot\"-dialog "
 "which you can find in the menubar"
@@ -3321,11 +3333,11 @@ msgstr ""
 "\",ҳамоне, ки аз меню талаб кардан мумкин "
 "аст."
 
-#: MainDlg.cpp:542
+#: MainDlg.cpp:541
 msgid "Recursive function is not allowed"
 msgstr "Функсияҳои рекурсивӣ манъ аст. "
 
-#: MainDlg.cpp:788
+#: MainDlg.cpp:784
 #, fuzzy
 msgid "KmPlotPart"
 msgstr "KmPlot"
@@ -3365,6 +3377,9 @@ msgid "Recursive function is only allowed when drawing integral graphs"
 msgstr ""
 "Фақат дар вақти кашидани ибтидоӣ "
 "функсияҳои рекурсивӣ иҷозат додашуда аст."
+
+#~ msgid "&Functions"
+#~ msgstr "&Функсияҳо"
 
 #~ msgid "Axis &labels:"
 #~ msgstr "&Тамғаҳои дар зери тира:"

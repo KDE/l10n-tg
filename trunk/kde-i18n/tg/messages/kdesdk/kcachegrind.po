@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcachegrind\n"
-"POT-Creation-Date: 2004-12-14 01:23+0100\n"
+"POT-Creation-Date: 2005-02-03 01:22+0100\n"
 "PO-Revision-Date: 2004-10-26 19:56+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -116,7 +116,7 @@ msgid "Function Source File"
 msgstr "Файли сарчашмаи функсия"
 
 #. i18n: file dumpselectionbase.ui line 300
-#: rc.cpp:162 rc.cpp:314 rc.cpp:356 rc.cpp:380 tracedata.cpp:175
+#: rc.cpp:159 rc.cpp:311 rc.cpp:356 rc.cpp:380 tracedata.cpp:175
 #, no-c-format
 msgid "Function"
 msgstr "Функсия"
@@ -165,33 +165,33 @@ msgstr "%1 аз %2"
 msgid "(unnamed)"
 msgstr "(номҳои ботилшуда)"
 
-#: tracedata.cpp:2509
+#: tracedata.cpp:2586
 msgid "(no caller)"
 msgstr "(оператор нест)"
 
-#: tracedata.cpp:2516 tracedata.cpp:2535
+#: tracedata.cpp:2593 tracedata.cpp:2612
 msgid "%1 via %2"
 msgstr "%1 аз %2"
 
-#: tracedata.cpp:2525
+#: tracedata.cpp:2602
 msgid "(no callee)"
 msgstr ""
 
-#: partgraph.cpp:423 tracedata.cpp:2748 tracedata.cpp:3251 tracedata.cpp:4049
-#: tracedata.cpp:4113
+#: partgraph.cpp:423 tracedata.cpp:2827 tracedata.cpp:3329 tracedata.cpp:4130
+#: tracedata.cpp:4195
 msgid "(unknown)"
 msgstr "(номаълум)"
 
-#: tracedata.cpp:4331
+#: tracedata.cpp:4424
 msgid "(not found)"
 msgstr "(ёфт нашуд)"
 
-#: tracedata.cpp:4881
+#: tracedata.cpp:4974
 msgid "Recalculating Function Cycles..."
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 550
-#: callmapview.cpp:59 partselection.cpp:54 rc.cpp:221
+#: callmapview.cpp:59 partselection.cpp:54 rc.cpp:218
 #, no-c-format
 msgid "Name"
 msgstr "Ном"
@@ -237,7 +237,7 @@ msgstr "Кушодани қисмҳои пинҳоншуда"
 msgid "Go Back"
 msgstr "Гузаштан ба қафо"
 
-#: callgraphview.cpp:2463 partselection.cpp:306
+#: callgraphview.cpp:2546 partselection.cpp:306
 msgid "Visualization"
 msgstr "Таҷассумкорӣ"
 
@@ -246,42 +246,51 @@ msgid "Partitioning Mode"
 msgstr "Ҳолати бахшбандӣ"
 
 #: partselection.cpp:309
+msgid "Diagram Mode"
+msgstr ""
+
+#: partselection.cpp:310
 msgid "Zoom Function"
 msgstr "Функсияи тағйири андозаи тасвир"
 
-#: partselection.cpp:310
+#: partselection.cpp:311
 msgid "Show Direct Calls"
 msgstr "Дархостҳои аниқро нишон диҳед"
 
-#: partselection.cpp:311
+#: partselection.cpp:312
 msgid "Increment Shown Call Levels"
 msgstr ""
 
-#: partselection.cpp:324
+#: partselection.cpp:325
 msgid "Draw Names"
 msgstr "Кашидани номҳо"
 
-#: partselection.cpp:325
+#: partselection.cpp:326
 msgid "Draw Costs"
 msgstr "Кашидани нархҳо"
 
-#: callmapview.cpp:303 partselection.cpp:326
+#: callmapview.cpp:303 partselection.cpp:327
 msgid "Ignore Proportions"
 msgstr "Аҳамият надодани таносуб"
 
-#: callmapview.cpp:304 partselection.cpp:327 treemap.cpp:2858
+#: partselection.cpp:328
+#, fuzzy
+msgid "Draw Frames"
+msgstr "Кашидани номҳо"
+
+#: callmapview.cpp:304 partselection.cpp:329 treemap.cpp:2861
 msgid "Allow Rotation"
 msgstr "Иҷозат додани даврзанӣ"
 
-#: partselection.cpp:341
+#: partselection.cpp:344
 msgid "Hide Info"
 msgstr "Пинҳон кардани маълумот"
 
-#: partselection.cpp:343
+#: partselection.cpp:346
 msgid "Show Info"
 msgstr "Нишон додани маълумот"
 
-#: partselection.cpp:501
+#: partselection.cpp:508
 msgid "(no trace loaded)"
 msgstr "(пай пурбор нашуд)"
 
@@ -290,13 +299,13 @@ msgid "Event Type"
 msgstr "Навъи воқеъа"
 
 #. i18n: file dumpselectionbase.ui line 917
-#: costtypeview.cpp:43 coverageview.cpp:46 partview.cpp:47 rc.cpp:308
+#: costtypeview.cpp:43 coverageview.cpp:46 partview.cpp:47 rc.cpp:305
 #: rc.cpp:347
 #, no-c-format
 msgid "Incl."
 msgstr "Шомил."
 
-#. i18n: file functionselectionbase.ui line 31
+#. i18n: file functionselectionbase.ui line 62
 #: costtypeview.cpp:44 coverageview.cpp:53 partview.cpp:48 rc.cpp:341
 #: rc.cpp:350
 #, no-c-format
@@ -314,8 +323,9 @@ msgstr "Формула"
 #: costtypeview.cpp:81
 msgid ""
 "<b>Cost Types List</b>"
-"<p>This list shows all cost types available and what's the self/cumulative "
-"cost of the current selected function for that cost type.</p>"
+"<p>"
+"This list shows all cost types available and what the self/inclusive cost of "
+"the current selected function is for that cost type.</p>"
 "<p>By choosing a cost type from the list, you change the cost type of costs "
 "shown all over KCachegrind to be the selected one.</p>"
 msgstr ""
@@ -362,7 +372,7 @@ msgstr "Гузаштан %1 аз %2 бор ба %3"
 msgid "Jump %1 times to %2"
 msgstr "Гузаштан %1 бор ба %2"
 
-#: costlistitem.cpp:59
+#: costlistitem.cpp:60
 #, c-format
 msgid ""
 "_n: (%n item skipped)\n"
@@ -389,18 +399,17 @@ msgid ""
 "these, horizontally ordered in execution time; the rectangle sizes are "
 "proportional to the total cost spent in the parts. You can select one or "
 "several parts to constrain all costs shown to these parts only.</p>"
-"<p>The parts are further subdivided: there is a partitioning and a "
-"cumulative split mode: "
+"<p>The parts are further subdivided: there is a partitioning and an callee "
+"split mode: "
 "<ul>"
 "<li>Partitioning: You see the partitioning into groups for a trace part, "
 "according to the group type selected. E.g. if ELF object groups are "
 "selected, you see colored rectangles for each used ELF object (shared "
 "library or executable), sized according to the cost spent "
 "therein.</li>"
-"<li>"
-"Cumulative Split: A rectangle showing the cumulative cost of the current "
-"selected function in the trace part is shown. This again is split up to show "
-"cumulative costs of its callees.</li></ul></p>"
+"<li>Callee: A rectangle showing the inclusive cost of the current selected "
+"function in the trace part is shown. This is split up into smaller "
+"rectangles to show the costs of its callees.</li></ul></p>"
 msgstr ""
 
 #: toplevel.cpp:319
@@ -436,7 +445,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 16
-#: rc.cpp:90 toplevel.cpp:358 toplevel.cpp:610
+#: rc.cpp:87 toplevel.cpp:358 toplevel.cpp:610
 #, no-c-format
 msgid "Profile Dumps"
 msgstr "Нусхабардорҳои тахассус"
@@ -594,7 +603,7 @@ msgstr ""
 "анбораи алоқа"
 
 #. i18n: file functionselectionbase.ui line 16
-#: rc.cpp:338 toplevel.cpp:600
+#: rc.cpp:335 toplevel.cpp:600
 #, no-c-format
 msgid "Function Profile"
 msgstr "Тахассуси функсия"
@@ -718,7 +727,7 @@ msgstr "Навъи воқеъаи миёна"
 msgid "Select secondary event type for cost e.g. shown in annotations"
 msgstr ""
 
-#: functionselection.cpp:182 toplevel.cpp:769
+#: functionselection.cpp:223 toplevel.cpp:769
 msgid "Grouping"
 msgstr "Ба гурӯҳҳо ҷудокунӣ"
 
@@ -726,7 +735,7 @@ msgstr "Ба гурӯҳҳо ҷудокунӣ"
 msgid "Select how functions are grouped into higher level cost items"
 msgstr ""
 
-#: toplevel.cpp:778
+#: functionselection.cpp:52 toplevel.cpp:778
 msgid "(No Grouping)"
 msgstr "(Ба гурӯҳҳо ҷудокунӣ нашуд)"
 
@@ -743,10 +752,12 @@ msgid "Split Horizontal"
 msgstr "Ҷудо кардани хати уфуқӣ"
 
 #: toplevel.cpp:801
-msgid "Change Split Orientation when main window is splitted"
+msgid "Change Split Orientation when main window is split."
 msgstr ""
 
-#: toplevel.cpp:806 toplevel.cpp:809
+#. i18n: file functionselectionbase.ui line 41
+#: rc.cpp:338 toplevel.cpp:806 toplevel.cpp:809
+#, no-c-format
 msgid "&Search:"
 msgstr "&Ҷустуҷӯ:"
 
@@ -840,7 +851,7 @@ msgid "(No Function Up)"
 msgstr "(Функсияи болои нест)"
 
 #. i18n: file dumpselectionbase.ui line 906
-#: instrview.cpp:125 rc.cpp:305 sourceview.cpp:49
+#: instrview.cpp:125 rc.cpp:302 sourceview.cpp:49
 #, no-c-format
 msgid "#"
 msgstr "#"
@@ -853,7 +864,7 @@ msgstr "Нархи 2"
 msgid "Hex"
 msgstr "Hex"
 
-#: instrview.cpp:131 tabview.cpp:300
+#: instrview.cpp:131 tabview.cpp:313
 msgid "Assembler"
 msgstr "Ассемблер"
 
@@ -867,17 +878,16 @@ msgid ""
 "<p>The annotated assembler list shows the machine code instructions of the "
 "current selected function together with (self) cost spent while executing an "
 "instruction. If this is a call instruction, lines with details on the call "
-"happening are inserted into the source: These are (cumulative) cost spent "
-"inside of the call, number of calls happening, and call "
-"destination.</p>"
+"happening are inserted into the source: the cost spent inside of the call, "
+"the number of calls happening, and the call destination.</p>"
 "<p>The disassembler output shown is generated with the 'objdump' utility "
 "from the 'binutils' package.</p>"
 "<p>Select a line with call information to make the destination function of "
 "this call current.</p>"
 msgstr ""
 
-#: callgraphview.cpp:2294 callgraphview.cpp:2298 callgraphview.cpp:2316
-#: callview.cpp:125 callview.cpp:130 coverageview.cpp:166 instrview.cpp:191
+#: callgraphview.cpp:2372 callgraphview.cpp:2376 callgraphview.cpp:2394
+#: callview.cpp:123 callview.cpp:128 coverageview.cpp:166 instrview.cpp:191
 #: sourceview.cpp:115
 msgid "Go to '%1'"
 msgstr "Ба '%1' гузаштан"
@@ -939,7 +949,7 @@ msgid "This happens because the code of"
 msgstr ""
 
 #: instrview.cpp:874
-msgid "doesn't seem to match the profile data file."
+msgid "does not seem to match the profile data file."
 msgstr ""
 
 #: instrview.cpp:877
@@ -958,21 +968,21 @@ msgstr ""
 msgid "Check that the ELF object used in the command exists."
 msgstr ""
 
-#: callgraphview.cpp:305
+#: callgraphview.cpp:306
 #, c-format
 msgid "Call(s) from %1"
 msgstr "Сигнал(ҳо) аз %1"
 
-#: callgraphview.cpp:306
+#: callgraphview.cpp:307
 #, c-format
 msgid "Call(s) to %1"
 msgstr "Сигнал(ҳо) ба %1"
 
-#: callgraphview.cpp:307
+#: callgraphview.cpp:308
 msgid "(unknown call)"
 msgstr "(дархости номаълум)"
 
-#: callgraphview.cpp:1404
+#: callgraphview.cpp:1410
 msgid ""
 "<b>Call Graph around active Function</b>"
 "<p>"
@@ -989,207 +999,241 @@ msgid ""
 "the selected function is highlighted.<p>"
 msgstr ""
 
-#: callgraphview.cpp:1759
+#: callgraphview.cpp:1774
 msgid ""
-"No item activated for which to draw the call graph.\n"
+"Warning: a long lasting graph layouting is in progress.\n"
+"Reduce node/edge limits for speedup.\n"
 msgstr ""
 
-#: callgraphview.cpp:2099
+#: callgraphview.cpp:1777
 msgid ""
-"Error running the graph layout tool 'dot'.\n"
-"Please check that it is installed (package GraphViz)."
+"Layouting stopped.\n"
 msgstr ""
 
-#: callgraphview.cpp:2107
+#: callgraphview.cpp:1779
+msgid ""
+"The call graph has %1 nodes and %2 edges.\n"
+msgstr ""
+
+#: callgraphview.cpp:1812
+msgid "No item activated for which to draw the call graph."
+msgstr ""
+
+#: callgraphview.cpp:1823
+msgid "No call graph can be drawn for the active item."
+msgstr ""
+
+#: callgraphview.cpp:1852
+msgid ""
+"No call graph is available because the following\n"
+"command cannot be run:\n"
+"'%1'\n"
+msgstr ""
+
+#: callgraphview.cpp:1855 callgraphview.cpp:2175
+msgid "Please check that 'dot' is installed (package GraphViz)."
+msgstr ""
+
+#: callgraphview.cpp:2174
+msgid ""
+"Error running the graph layouting tool.\n"
+msgstr ""
+
+#: callgraphview.cpp:2182
 msgid ""
 "There is no call graph available for function\n"
 "\t'%1'\n"
 "because it has no cost of the selected event type."
 msgstr ""
 
-#: callgraphview.cpp:2328
+#: callgraphview.cpp:2403
+#, fuzzy
+msgid "Stop Layouting"
+msgstr "Истодан дар функсия"
+
+#: callgraphview.cpp:2411
 msgid "As PostScript"
 msgstr ""
 
-#: callgraphview.cpp:2329
+#: callgraphview.cpp:2412
 msgid "As Image ..."
 msgstr "Ҳамчун тасвир ..."
 
-#: callgraphview.cpp:2331
+#: callgraphview.cpp:2414
 msgid "Export Graph"
 msgstr "Содир кардани нақша"
 
-#: callgraphview.cpp:2336 callgraphview.cpp:2359
+#: callgraphview.cpp:2419 callgraphview.cpp:2442
 msgid "Unlimited"
 msgstr ""
 
-#: callgraphview.cpp:2339 callgraphview.cpp:2362
+#: callgraphview.cpp:2422 callgraphview.cpp:2445
 msgid "None"
 msgstr "Ҳеҷ"
 
-#: callgraphview.cpp:2340 callgraphview.cpp:2363
+#: callgraphview.cpp:2423 callgraphview.cpp:2446
 msgid "max. 2"
 msgstr "максималӣ 2"
 
-#: callgraphview.cpp:2341 callgraphview.cpp:2364
+#: callgraphview.cpp:2424 callgraphview.cpp:2447
 msgid "max. 5"
 msgstr "максималӣ 5"
 
-#: callgraphview.cpp:2342 callgraphview.cpp:2365
+#: callgraphview.cpp:2425 callgraphview.cpp:2448
 msgid "max. 10"
 msgstr "максималӣ 10"
 
-#: callgraphview.cpp:2343 callgraphview.cpp:2366
+#: callgraphview.cpp:2426 callgraphview.cpp:2449
 msgid "max. 15"
 msgstr "максималӣ 15"
 
-#: callgraphview.cpp:2353 callgraphview.cpp:2376
+#: callgraphview.cpp:2436 callgraphview.cpp:2459
 #, c-format
 msgid "< %1"
 msgstr "< %1"
 
-#: callgraphview.cpp:2382
+#: callgraphview.cpp:2465
 msgid "No Minimum"
 msgstr "Минемалӣ нест"
 
-#: callgraphview.cpp:2386
+#: callgraphview.cpp:2469
 #, c-format
 msgid "50 %"
 msgstr "50 %"
 
-#: callgraphview.cpp:2387
+#: callgraphview.cpp:2470
 #, c-format
 msgid "20 %"
 msgstr "20 %"
 
-#: callgraphview.cpp:2388
+#: callgraphview.cpp:2471
 #, c-format
 msgid "10 %"
 msgstr "10 %"
 
-#: callgraphview.cpp:2389
+#: callgraphview.cpp:2472
 #, c-format
 msgid "5 %"
 msgstr "5 %"
 
-#: callgraphview.cpp:2390
+#: callgraphview.cpp:2473
 #, c-format
 msgid "3 %"
 msgstr "3 %"
 
-#: callgraphview.cpp:2391
+#: callgraphview.cpp:2474
 #, c-format
 msgid "2 %"
 msgstr "2 %"
 
-#: callgraphview.cpp:2392
+#: callgraphview.cpp:2475
 #, c-format
 msgid "1.5 %"
 msgstr "1.5 %"
 
-#: callgraphview.cpp:2393
+#: callgraphview.cpp:2476
 #, c-format
 msgid "1 %"
 msgstr "1 %"
 
-#: callgraphview.cpp:2409
+#: callgraphview.cpp:2492
 msgid "Same as Node"
 msgstr "Ҳамон барин гиреҳ "
 
-#: callgraphview.cpp:2410
+#: callgraphview.cpp:2493
 #, c-format
 msgid "50 % of Node"
 msgstr "50 %ба гиреҳ"
 
-#: callgraphview.cpp:2411
+#: callgraphview.cpp:2494
 #, c-format
 msgid "20 % of Node"
 msgstr "20 % ба гиреҳ"
 
-#: callgraphview.cpp:2412
+#: callgraphview.cpp:2495
 #, c-format
 msgid "10 % of Node"
 msgstr "10 % ба гиреҳ"
 
-#: callgraphview.cpp:2422
+#: callgraphview.cpp:2505
 msgid "Caller Depth"
 msgstr ""
 
-#: callgraphview.cpp:2423
+#: callgraphview.cpp:2506
 msgid "Callee Depth"
 msgstr ""
 
-#: callgraphview.cpp:2424
+#: callgraphview.cpp:2507
 msgid "Min. Node Cost"
 msgstr ""
 
-#: callgraphview.cpp:2425
+#: callgraphview.cpp:2508
 msgid "Min. Call Cost"
 msgstr ""
 
-#: callgraphview.cpp:2427
+#: callgraphview.cpp:2510
 msgid "Arrows for Skipped Calls"
 msgstr ""
 
-#: callgraphview.cpp:2429
+#: callgraphview.cpp:2512
 msgid "Inner-cycle Calls"
 msgstr ""
 
-#: callgraphview.cpp:2431
+#: callgraphview.cpp:2514
 msgid "Cluster Groups"
 msgstr ""
 
-#: callgraphview.cpp:2436
+#: callgraphview.cpp:2519
 msgid "Compact"
 msgstr "Зичӣ"
 
-#: callgraphview.cpp:2437
+#: callgraphview.cpp:2520
 msgid "Normal"
 msgstr "Оддӣ"
 
-#: callgraphview.cpp:2438
+#: callgraphview.cpp:2521
 msgid "Tall"
 msgstr "Баланд"
 
-#: callgraphview.cpp:2443
+#: callgraphview.cpp:2526
 msgid "Top to Down"
 msgstr "Аз боло ба поён"
 
-#: callgraphview.cpp:2444
+#: callgraphview.cpp:2527
 msgid "Left to Right"
 msgstr "Аз тарафи чап ба рост"
 
-#: callgraphview.cpp:2445
+#: callgraphview.cpp:2528
 msgid "Circular"
 msgstr "Доирашакл"
 
-#: callgraphview.cpp:2451
+#: callgraphview.cpp:2534
 msgid "TopLeft"
 msgstr "Ба тарафи чапи боло"
 
-#: callgraphview.cpp:2452
+#: callgraphview.cpp:2535
 msgid "TopRight"
 msgstr "Ба тарафи рости боло"
 
-#: callgraphview.cpp:2453
+#: callgraphview.cpp:2536
 msgid "BottomLeft"
 msgstr "Ба тарафи чапи поён"
 
-#: callgraphview.cpp:2454
+#: callgraphview.cpp:2537
 msgid "BottomRight"
 msgstr "Ба тарафи рости поён"
 
 #. i18n: file configdlgbase.ui line 246
-#: callgraphview.cpp:2455 rc.cpp:45 rc.cpp:55 rc.cpp:59
+#: callgraphview.cpp:2538 rc.cpp:42 rc.cpp:52 rc.cpp:56
 #, no-c-format
 msgid "Automatic"
 msgstr "Худкорона"
 
-#: callgraphview.cpp:2462
+#: callgraphview.cpp:2545
 msgid "Graph"
 msgstr "Нақша"
 
-#: callgraphview.cpp:2464
+#: callgraphview.cpp:2547
 msgid "Birds-eye View"
 msgstr ""
 
@@ -1252,7 +1296,7 @@ msgstr "Кӯчондан ба поён"
 msgid "Move to Bottom Left"
 msgstr "Кӯчондан ба тарафи чапи поён"
 
-#: tabview.cpp:77 tabview.cpp:94 treemap.cpp:2879
+#: tabview.cpp:77 tabview.cpp:94 treemap.cpp:2882
 msgid "Bottom Left"
 msgstr "Тарафи чапи поён"
 
@@ -1276,11 +1320,7 @@ msgstr ""
 msgid "(No profile data file loaded)"
 msgstr ""
 
-#: tabview.cpp:280
-msgid "Parts"
-msgstr "Қисмҳо"
-
-#: tabview.cpp:282
+#: tabview.cpp:281
 msgid "Types"
 msgstr "Навъҳо"
 
@@ -1288,42 +1328,46 @@ msgstr "Навъҳо"
 msgid "Callers"
 msgstr "Фарохонанда"
 
-#: tabview.cpp:286
-msgid "Callees"
-msgstr ""
-
-#: tabview.cpp:288
-msgid "Call Graph"
-msgstr "Намоиши дархост"
-
-#: tabview.cpp:290
+#: tabview.cpp:287
 msgid "All Callers"
 msgstr "Ҳамаи фарохонандаҳо"
 
-#: tabview.cpp:292
-msgid "All Callees"
-msgstr ""
-
-#: tabview.cpp:294
+#: tabview.cpp:290
 msgid "Caller Map"
 msgstr "Нақша фарохонанда"
 
-#: tabview.cpp:296
-msgid "Callee Map"
-msgstr ""
-
-#: tabview.cpp:298
+#: tabview.cpp:293
 msgid "Source"
 msgstr "Сарчашма"
 
-#: tabview.cpp:539
+#: tabview.cpp:297
+msgid "Parts"
+msgstr "Қисмҳо"
+
+#: tabview.cpp:300
+msgid "Call Graph"
+msgstr "Намоиши дархост"
+
+#: tabview.cpp:303
+msgid "Callees"
+msgstr ""
+
+#: tabview.cpp:306
+msgid "All Callees"
+msgstr ""
+
+#: tabview.cpp:310
+msgid "Callee Map"
+msgstr ""
+
+#: tabview.cpp:553
 msgid ""
 "<b>Information Tabs</b>"
 "<p>This widget shows information for the current selected function in "
 "different tabs: "
 "<ul>"
-"<li>The Costs tab shows a list of available cost types and the cumulative "
-"and self costs regarding to types.</li>"
+"<li>The Costs tab shows a list of available event types and the inclusive "
+"and self costs regarding to these types.</li>"
 "<li>The Parts tab shows a list of trace parts if the trace consists of more "
 "than one part (otherwise, this tab is hided). The cost of the selected "
 "function spent in the different parts together with the calls happening is "
@@ -1342,11 +1386,11 @@ msgid ""
 "<em>What's this</em> help of the corresponding tab widget</p>"
 msgstr ""
 
-#: tabview.cpp:616
+#: tabview.cpp:630
 msgid "(No Data loaded)"
 msgstr "(Маълумотҳо боргир карда нашудаанд)"
 
-#: tabview.cpp:617
+#: tabview.cpp:631
 msgid "(No function selected)"
 msgstr "(Функсия интихоб карда нашуд)"
 
@@ -1360,9 +1404,8 @@ msgid ""
 "<p>The annotated source list shows the source lines of the current selected "
 "function together with (self) cost spent while executing the code of this "
 "source line. If there was a call in a source line, lines with details on the "
-"call happening are inserted into the source: These are (cumulative) cost "
-"spent inside of the call, number of calls happening, and call "
-"destination.</p>"
+"call happening are inserted into the source: the cost spent inside of the "
+"call, the number of calls happening, and the call destination.</p>"
 "<p>Select a inserted call information line to make the destination function "
 "current.</p>"
 msgstr ""
@@ -1442,16 +1485,16 @@ msgstr "(ҳеҷ)"
 msgid "(active)"
 msgstr "(фаъол)"
 
-#: functionselection.cpp:116
+#: functionselection.cpp:157
 #, c-format
 msgid "Go to %1"
 msgstr "Ба %1 гузаштан"
 
-#: functionselection.cpp:142
+#: functionselection.cpp:183
 msgid "Show All Items"
 msgstr "Нишон додани ҳамаи чизҳо"
 
-#: functionselection.cpp:165
+#: functionselection.cpp:206
 msgid "No Grouping"
 msgstr ""
 
@@ -1460,7 +1503,7 @@ msgid "Distance"
 msgstr "Фосила"
 
 #. i18n: file dumpselectionbase.ui line 928
-#: coverageview.cpp:49 partview.cpp:49 rc.cpp:311 rc.cpp:353
+#: coverageview.cpp:49 partview.cpp:49 rc.cpp:308 rc.cpp:353
 #, no-c-format
 msgid "Called"
 msgstr ""
@@ -1481,10 +1524,10 @@ msgstr ""
 msgid ""
 "<b>List of all Callers</b>"
 "<p>This list shows all functions calling the current selected one, either "
-"directly or with several function inbetween on the stack; the number of "
-"function inbetween incremented by 1 is called the <em>Distance</em> (e.g. "
-"for function A,B,C there exists a call from A to C when A calls B and B "
-"calls C, i.e. A => B => C. The distance here is 2).</p>"
+"directly or with several functions in-between on the stack; the number of "
+"functions in-between plus one is called the <em>Distance</em> (e.g. for "
+"function A,B,C there exists a call from A to C when A calls B and B calls C, "
+"i.e. A => B => C. The distance here is 2).</p>"
 "<p>Absolute cost shown is the cost spent in the selected function while a "
 "listed function is active; relative cost is the percentage of all cost spent "
 "in the selected function while the listed one is active. The cost graphic "
@@ -1492,21 +1535,21 @@ msgid ""
 "distance.</p>"
 "<p>As there can be many calls from the same function, the distance column "
 "sometimes shows the range of distances for all calls happening; then, in "
-"parenthesis there is the medium distance, i.e. the distance where most of "
+"parentheses, there is the medium distance, i.e. the distance where most of "
 "the call costs happened.</p>"
 "<p>Selecting a function makes it the current selected one of this "
-"information panel. If there are two panels (Splitted mode), the function of "
-"the other panel is changed instead.</p>"
+"information panel. If there are two panels (Split mode), the function of the "
+"other panel is changed instead.</p>"
 msgstr ""
 
 #: coverageview.cpp:120
 msgid ""
 "<b>List of all Callees</b>"
 "<p>This list shows all functions called by the current selected one, either "
-"directly or with several function inbetween on the stack; the number of "
-"function inbetween incremented by 1 is called the <em>Distance</em> (e.g. "
-"for function A,B,C there exists a call from A to C when A calls B and B "
-"calls C, i.e. A => B => C. The distance here is 2).</p>"
+"directly or with several function in-between on the stack; the number of "
+"function in-between plus one is called the <em>Distance</em> (e.g. for "
+"function A,B,C there exists a call from A to C when A calls B and B calls C, "
+"i.e. A => B => C. The distance here is 2).</p>"
 "<p>Absolute cost shown is the cost spent in the listed function while the "
 "selected is active; relative cost is the percentage of all cost spent in the "
 "listed function while the selected one is active. The cost graphic always "
@@ -1514,11 +1557,11 @@ msgid ""
 "distance.</p>"
 "<p>As there can be many calls to the same function, the distance column "
 "sometimes shows the range of distances for all calls happening; then, in "
-"parenthesis there is the medium distance, i.e. the distance where most of "
+"parentheses, there is the medium distance, i.e. the distance where most of "
 "the call costs happened.</p>"
 "<p>Selecting a function makes it the current selected one of this "
-"information panel. If there are two panels (Splitted mode), the function of "
-"the other panel is changed instead.</p>"
+"information panel. If there are two panels (Split mode), the function of the "
+"other panel is changed instead.</p>"
 msgstr ""
 
 #: configuration.cpp:63
@@ -1596,448 +1639,442 @@ msgstr ""
 #. i18n: file kcachegrindui.rc line 54
 #: rc.cpp:18
 #, no-c-format
-msgid "Query Toolbar"
-msgstr ""
-
-#. i18n: file kcachegrindui.rc line 58
-#: rc.cpp:21
-#, no-c-format
 msgid "State Toolbar"
 msgstr ""
 
 #. i18n: file configdlgbase.ui line 37
-#: rc.cpp:27
+#: rc.cpp:24
 #, no-c-format
 msgid "General"
 msgstr "Умумӣ"
 
 #. i18n: file configdlgbase.ui line 69
-#: rc.cpp:30
+#: rc.cpp:27
 #, no-c-format
 msgid "Truncated when more/longer than:"
 msgstr ""
 
 #. i18n: file configdlgbase.ui line 77
-#: rc.cpp:33
+#: rc.cpp:30
 #, no-c-format
 msgid "Precision of percentage values:"
 msgstr ""
 
 #. i18n: file configdlgbase.ui line 85
-#: rc.cpp:36
+#: rc.cpp:33
 #, no-c-format
 msgid "Symbols in tooltips and context menus"
 msgstr ""
 
 #. i18n: file configdlgbase.ui line 141
-#: rc.cpp:39
+#: rc.cpp:36
 #, no-c-format
 msgid "Maximum number of items in lists:"
 msgstr "Рақами ниҳоят калони чизҳо дар рӯйхатҳо:"
 
 #. i18n: file configdlgbase.ui line 162
-#: rc.cpp:42
+#: rc.cpp:39
 #, fuzzy, no-c-format
 msgid "Cost Item Colors"
 msgstr "Ҳисоб кардани чиз"
 
 #. i18n: file configdlgbase.ui line 254
-#: rc.cpp:48
+#: rc.cpp:45
 #, no-c-format
 msgid "Object:"
 msgstr "Объект:"
 
 #. i18n: file configdlgbase.ui line 262
-#: rc.cpp:51
+#: rc.cpp:48
 #, no-c-format
 msgid "Class:"
 msgstr "Синф:"
 
 #. i18n: file configdlgbase.ui line 310
-#: rc.cpp:62
+#: rc.cpp:59
 #, no-c-format
 msgid "File:"
 msgstr "Файл:"
 
 #. i18n: file configdlgbase.ui line 376
-#: rc.cpp:66
+#: rc.cpp:63
 #, fuzzy, no-c-format
 msgid "Annotations"
 msgstr "Иҷозат додани даврзанӣ"
 
 #. i18n: file configdlgbase.ui line 395
-#: rc.cpp:69
+#: rc.cpp:66
 #, no-c-format
 msgid "Context lines in annotations:"
 msgstr ""
 
 #. i18n: file configdlgbase.ui line 423
-#: rc.cpp:72
+#: rc.cpp:69
 #, no-c-format
 msgid "Source Folders"
 msgstr "Феҳристҳои сарчашма"
 
 #. i18n: file configdlgbase.ui line 454
-#: rc.cpp:75
+#: rc.cpp:72
 #, no-c-format
 msgid "Object / Related Source Base"
 msgstr ""
 
 #. i18n: file configdlgbase.ui line 483
-#: rc.cpp:78
+#: rc.cpp:75
 #, no-c-format
 msgid "Add..."
 msgstr "Илова кардан..."
 
 #. i18n: file dumpselectionbase.ui line 32
-#: rc.cpp:93
+#: rc.cpp:90
 #, no-c-format
 msgid "Target"
 msgstr "Мақсад"
 
 #. i18n: file dumpselectionbase.ui line 54
-#: rc.cpp:97
+#: rc.cpp:94
 #, no-c-format
 msgid "Time"
 msgstr "Вақт"
 
 #. i18n: file dumpselectionbase.ui line 65
-#: rc.cpp:100
+#: rc.cpp:97
 #, no-c-format
 msgid "Path"
 msgstr "Роҳча"
 
 #. i18n: file dumpselectionbase.ui line 106
-#: rc.cpp:106
+#: rc.cpp:103
 #, no-c-format
 msgid "Target command:"
 msgstr "Фармони мақсад:"
 
 #. i18n: file dumpselectionbase.ui line 119
-#: rc.cpp:109
+#: rc.cpp:106
 #, no-c-format
 msgid "Profiler options:"
 msgstr "Интихобҳои тахассус:"
 
 #. i18n: file dumpselectionbase.ui line 125
-#: rc.cpp:112
+#: rc.cpp:109
 #, no-c-format
 msgid "Option"
 msgstr "Параметр"
 
 #. i18n: file dumpselectionbase.ui line 136
-#: rc.cpp:115 rc.cpp:248
+#: rc.cpp:112 rc.cpp:245
 #, no-c-format
 msgid "Value"
 msgstr "Қимат"
 
 #. i18n: file dumpselectionbase.ui line 147
-#: rc.cpp:118
+#: rc.cpp:115
 #, no-c-format
 msgid "Trace"
 msgstr "Пай"
 
 #. i18n: file dumpselectionbase.ui line 160
-#: rc.cpp:122 rc.cpp:271
+#: rc.cpp:119 rc.cpp:268
 #, no-c-format
 msgid "Jumps"
 msgstr "Париданҳо"
 
 #. i18n: file dumpselectionbase.ui line 174
-#: rc.cpp:126
+#: rc.cpp:123
 #, no-c-format
 msgid "Instructions"
 msgstr "Дастурҳо"
 
 #. i18n: file dumpselectionbase.ui line 189
-#: rc.cpp:130 rc.cpp:275
+#: rc.cpp:127 rc.cpp:272
 #, no-c-format
 msgid "Events"
 msgstr "Воқеъа"
 
 #. i18n: file dumpselectionbase.ui line 202
-#: rc.cpp:134
+#: rc.cpp:131
 #, no-c-format
 msgid "Full Cache"
 msgstr "Захираи махфӣ пур"
 
 #. i18n: file dumpselectionbase.ui line 216
-#: rc.cpp:138
+#: rc.cpp:135
 #, no-c-format
 msgid "Custom"
 msgstr "Оддӣ"
 
 #. i18n: file dumpselectionbase.ui line 231
-#: rc.cpp:142
+#: rc.cpp:139
 #, no-c-format
 msgid "Collect"
 msgstr "Ҷамъ кардан"
 
 #. i18n: file dumpselectionbase.ui line 244
-#: rc.cpp:146
+#: rc.cpp:143
 #, no-c-format
 msgid "At Startup"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 258
-#: rc.cpp:150
+#: rc.cpp:147
 #, no-c-format
 msgid "While In"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 273
-#: rc.cpp:154
+#: rc.cpp:151
 #, no-c-format
 msgid "Skip"
 msgstr "Рад кардан"
 
 #. i18n: file dumpselectionbase.ui line 286
-#: rc.cpp:158
+#: rc.cpp:155
 #, no-c-format
 msgid "PLT"
 msgstr "PLT"
 
 #. i18n: file dumpselectionbase.ui line 315
-#: rc.cpp:166
+#: rc.cpp:163
 #, no-c-format
 msgid "Dump Profile"
 msgstr "Тахассуси нусхабардорӣ"
 
 #. i18n: file dumpselectionbase.ui line 328
-#: rc.cpp:170
+#: rc.cpp:167
 #, no-c-format
 msgid "Every BBs"
 msgstr "Ҳамаи BB-ҳо"
 
 #. i18n: file dumpselectionbase.ui line 342
-#: rc.cpp:174 rc.cpp:186
+#: rc.cpp:171 rc.cpp:183
 #, no-c-format
 msgid "On Entering"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 356
-#: rc.cpp:178
+#: rc.cpp:175
 #, no-c-format
 msgid "On Leaving"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 371
-#: rc.cpp:182
+#: rc.cpp:179
 #, no-c-format
 msgid "Zero Events"
 msgstr "Нолто воқеа"
 
 #. i18n: file dumpselectionbase.ui line 399
-#: rc.cpp:190
+#: rc.cpp:187
 #, no-c-format
 msgid "Separate"
 msgstr "Ҷудо кардан"
 
 #. i18n: file dumpselectionbase.ui line 412
-#: rc.cpp:194
+#: rc.cpp:191
 #, no-c-format
 msgid "Threads"
 msgstr "Бандҳо"
 
 #. i18n: file dumpselectionbase.ui line 426
-#: rc.cpp:198
+#: rc.cpp:195
 #, no-c-format
 msgid "Recursions"
 msgstr "Бозгаштҳо"
 
 #. i18n: file dumpselectionbase.ui line 440
-#: rc.cpp:202
+#: rc.cpp:199
 #, no-c-format
 msgid "Call Chain"
 msgstr "Паёпаӣ дархост"
 
 #. i18n: file dumpselectionbase.ui line 470
-#: rc.cpp:206
+#: rc.cpp:203
 #, no-c-format
 msgid "Custom profiler options:"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 508
-#: rc.cpp:209
+#: rc.cpp:206
 #, no-c-format
 msgid "Run New Profile"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 520
-#: rc.cpp:212
+#: rc.cpp:209
 #, no-c-format
 msgid "Info"
 msgstr "Маълумот"
 
 #. i18n: file dumpselectionbase.ui line 531
-#: rc.cpp:215
+#: rc.cpp:212
 #, no-c-format
 msgid "Dump reason:"
 msgstr "Тахассуси далел:"
 
 #. i18n: file dumpselectionbase.ui line 544
-#: rc.cpp:218
+#: rc.cpp:215
 #, no-c-format
 msgid "Event summary:"
 msgstr "Натиҷаи ҷамбаст:"
 
 #. i18n: file dumpselectionbase.ui line 561
-#: rc.cpp:224
+#: rc.cpp:221
 #, no-c-format
 msgid "Sum"
 msgstr "Натиҷа"
 
 #. i18n: file dumpselectionbase.ui line 579
-#: rc.cpp:227
+#: rc.cpp:224
 #, no-c-format
 msgid "Miscellaneous:"
 msgstr "Гуногун:"
 
 #. i18n: file dumpselectionbase.ui line 617
-#: rc.cpp:230
+#: rc.cpp:227
 #, no-c-format
 msgid "Show"
 msgstr "Нишон додан"
 
 #. i18n: file dumpselectionbase.ui line 625
-#: rc.cpp:233
+#: rc.cpp:230
 #, no-c-format
 msgid "Compare"
 msgstr "Муқоиса кардан"
 
 #. i18n: file dumpselectionbase.ui line 637
-#: rc.cpp:236
+#: rc.cpp:233
 #, no-c-format
 msgid "State"
 msgstr "Ҳолат"
 
 #. i18n: file dumpselectionbase.ui line 656
-#: rc.cpp:239
+#: rc.cpp:236
 #, no-c-format
 msgid "Update"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 664
-#: rc.cpp:242
+#: rc.cpp:239
 #, no-c-format
 msgid "Every [s]:"
 msgstr "Ҳама:"
 
 #. i18n: file dumpselectionbase.ui line 677
-#: rc.cpp:245
+#: rc.cpp:242
 #, no-c-format
 msgid "Counter"
 msgstr "Шуморанда"
 
 #. i18n: file dumpselectionbase.ui line 699
-#: rc.cpp:251
+#: rc.cpp:248
 #, no-c-format
 msgid "Dumps Done"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 713
-#: rc.cpp:255
+#: rc.cpp:252
 #, no-c-format
 msgid "Is Collecting"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 727
-#: rc.cpp:259
+#: rc.cpp:256
 #, no-c-format
 msgid "Executed"
 msgstr "Иҷро кард"
 
 #. i18n: file dumpselectionbase.ui line 740
-#: rc.cpp:263
+#: rc.cpp:260
 #, no-c-format
 msgid "Basic Blocks"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 754
-#: callmapview.cpp:63 rc.cpp:267 rc.cpp:377
+#: callmapview.cpp:63 rc.cpp:264 rc.cpp:377
 #, no-c-format
 msgid "Calls"
 msgstr "Алоқаҳо"
 
 #. i18n: file dumpselectionbase.ui line 796
-#: rc.cpp:279
+#: rc.cpp:276
 #, no-c-format
 msgid "Ir"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 811
-#: rc.cpp:283
+#: rc.cpp:280
 #, no-c-format
 msgid "Distinct"
 msgstr "Саҳеҳ"
 
 #. i18n: file dumpselectionbase.ui line 824
-#: configdlg.cpp:58 rc.cpp:287
+#: configdlg.cpp:58 rc.cpp:284
 #, no-c-format
 msgid "ELF Objects"
 msgstr "Объектҳои ELF"
 
 #. i18n: file dumpselectionbase.ui line 838
-#: rc.cpp:291
+#: rc.cpp:288
 #, no-c-format
 msgid "Functions"
 msgstr "Функсияҳо"
 
 #. i18n: file dumpselectionbase.ui line 852
-#: rc.cpp:295
+#: rc.cpp:292
 #, no-c-format
 msgid "Contexts"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 890
-#: rc.cpp:299
+#: rc.cpp:296
 #, no-c-format
 msgid "Stack trace:"
 msgstr "Паи анбора:"
 
 #. i18n: file dumpselectionbase.ui line 898
-#: rc.cpp:302
+#: rc.cpp:299
 #, no-c-format
 msgid "Sync."
 msgstr "Синхр."
 
 #. i18n: file dumpselectionbase.ui line 950
-#: callmapview.cpp:61 rc.cpp:317 rc.cpp:359
+#: callmapview.cpp:61 rc.cpp:314 rc.cpp:359
 #, no-c-format
 msgid "Location"
 msgstr "Ҷойгиршавӣ"
 
 #. i18n: file dumpselectionbase.ui line 976
-#: rc.cpp:320
+#: rc.cpp:317
 #, no-c-format
 msgid "Start"
 msgstr "Сар кардан"
 
 #. i18n: file dumpselectionbase.ui line 1001
-#: rc.cpp:323
+#: rc.cpp:320
 #, no-c-format
 msgid "Zero"
 msgstr "Нул"
 
 #. i18n: file dumpselectionbase.ui line 1009
-#: rc.cpp:326
+#: rc.cpp:323
 #, no-c-format
 msgid "Dump"
 msgstr "Нусхабардорӣ"
 
 #. i18n: file dumpselectionbase.ui line 1021
-#: rc.cpp:329
+#: rc.cpp:326
 #, no-c-format
 msgid "Messages"
 msgstr "Хабарҳо"
 
 #. i18n: file dumpselectionbase.ui line 1045
-#: rc.cpp:332
+#: rc.cpp:329
 #, no-c-format
 msgid "Kill Run"
 msgstr "Нест кардани сардиҳӣ"
 
-#. i18n: file functionselectionbase.ui line 42
+#. i18n: file functionselectionbase.ui line 73
 #: rc.cpp:344
 #, no-c-format
 msgid "Group"
@@ -2061,97 +2098,97 @@ msgstr "Интихоб кардани анбора"
 msgid "Cost2"
 msgstr "Нархи 2"
 
-#: treemap.cpp:1257
+#: treemap.cpp:1260
 #, c-format
 msgid "Text %1"
 msgstr "Матни %1"
 
-#: treemap.cpp:2780
+#: treemap.cpp:2783
 msgid "Recursive Bisection"
 msgstr ""
 
-#: treemap.cpp:2781
+#: treemap.cpp:2784
 msgid "Columns"
 msgstr "Сутунҳо"
 
-#: treemap.cpp:2782
+#: treemap.cpp:2785
 msgid "Rows"
 msgstr "Қаторҳо"
 
-#: treemap.cpp:2783
+#: treemap.cpp:2786
 msgid "Always Best"
 msgstr "Ҳамавақт беҳтарин"
 
-#: treemap.cpp:2784
+#: treemap.cpp:2787
 msgid "Best"
 msgstr "Беҳтарин"
 
-#: treemap.cpp:2785
+#: treemap.cpp:2788
 msgid "Alternate (V)"
 msgstr "Тағйирёбанда (V)"
 
-#: treemap.cpp:2786
+#: treemap.cpp:2789
 msgid "Alternate (H)"
 msgstr "Тағйирёбанда (H)"
 
-#: treemap.cpp:2843
+#: treemap.cpp:2846
 msgid "Nesting"
 msgstr "Ташаккулёбии лона"
 
-#: treemap.cpp:2846
+#: treemap.cpp:2849
 msgid "Correct Borders Only"
 msgstr ""
 
-#: treemap.cpp:2848 treemap.cpp:2849 treemap.cpp:2850 treemap.cpp:2851
+#: treemap.cpp:2851 treemap.cpp:2852 treemap.cpp:2853 treemap.cpp:2854
 #, c-format
 msgid "Width %1"
 msgstr "Бар %1"
 
-#: callmapview.cpp:321 treemap.cpp:2860
+#: callmapview.cpp:321 treemap.cpp:2863
 msgid "Shading"
 msgstr "Соякунӣ"
 
-#: treemap.cpp:2873
+#: treemap.cpp:2876
 msgid "Visible"
 msgstr ""
 
-#: treemap.cpp:2874
+#: treemap.cpp:2877
 msgid "Take Space From Children"
 msgstr "Гирифтани кайҳон аз кӯдакон"
 
-#: treemap.cpp:2876
+#: treemap.cpp:2879
 msgid "Top Left"
 msgstr "Тарафи чапи боло"
 
-#: treemap.cpp:2877
+#: treemap.cpp:2880
 msgid "Top Center"
 msgstr "Маркази боло"
 
-#: treemap.cpp:2878
+#: treemap.cpp:2881
 msgid "Top Right"
 msgstr "Тарафи рости боло"
 
-#: treemap.cpp:2880
+#: treemap.cpp:2883
 msgid "Bottom Center"
 msgstr "Маркази поён"
 
-#: treemap.cpp:2881
+#: treemap.cpp:2884
 msgid "Bottom Right"
 msgstr "Тарафи рости поён"
 
-#: treemap.cpp:2958
+#: treemap.cpp:2961
 msgid "No %1 Limit"
 msgstr "Ҳудуди %1 нест"
 
-#: callmapview.cpp:243 treemap.cpp:3010
+#: callmapview.cpp:243 treemap.cpp:3013
 msgid "No Area Limit"
 msgstr "Ҳудуди фазо нест"
 
-#: callmapview.cpp:258 treemap.cpp:3016
+#: callmapview.cpp:258 treemap.cpp:3019
 msgid "Area of '%1' (%2)"
 msgstr "Фазои '%1' (%2)"
 
-#: treemap.cpp:3027 treemap.cpp:3038
+#: treemap.cpp:3030 treemap.cpp:3041
 #, c-format
 msgid ""
 "_n: 1 Pixel\n"
@@ -2160,32 +2197,32 @@ msgstr ""
 "%n пиксел\n"
 "%n пикселҳо"
 
-#: callmapview.cpp:264 treemap.cpp:3042
+#: callmapview.cpp:264 treemap.cpp:3045
 msgid "Double Area Limit (to %1)"
 msgstr "Дучанда кардани ҳудуди фазо (то %1)"
 
-#: treemap.cpp:3044
+#: treemap.cpp:3047
 msgid "Halve Area Limit (to %1)"
 msgstr "Ду тақсим кардани ҳудуди фазо (то %1)"
 
-#: callmapview.cpp:187 treemap.cpp:3072
+#: callmapview.cpp:187 treemap.cpp:3075
 msgid "No Depth Limit"
 msgstr "Ҳудуди чуқурӣ нест"
 
-#: callmapview.cpp:198 treemap.cpp:3078
+#: callmapview.cpp:198 treemap.cpp:3081
 msgid "Depth of '%1' (%2)"
 msgstr "Чуқурии '%1' (%2)"
 
-#: treemap.cpp:3089
+#: treemap.cpp:3092
 #, c-format
 msgid "Depth %1"
 msgstr "Чуқурӣ %1"
 
-#: treemap.cpp:3093
+#: treemap.cpp:3096
 msgid "Decrement (to %1)"
 msgstr ""
 
-#: treemap.cpp:3095
+#: treemap.cpp:3098
 msgid "Increment (to %1)"
 msgstr ""
 
@@ -2360,26 +2397,25 @@ msgstr "Ҳисоб кардан"
 msgid ""
 "<b>List of direct Callers</b>"
 "<p>This list shows all functions calling the current selected one directly, "
-"together with a call count and the (cumulative) cost spent in the current "
-"selected function while being called from the function from the "
-"list.</p>"
+"together with a call count and the cost spent in the current selected "
+"function while being called from the function from the list.</p>"
 "<p>"
-"An icon instead of a cumulative cost specifies that this is a call inside of "
-"a recursive cycle. A cumulative cost makes no sense here.</p>"
+"An icon instead of an inclusive cost specifies that this is a call inside of "
+"a recursive cycle. An inclusive cost makes no sense here.</p>"
 "<p>Selecting a function makes it the current selected one of this "
-"information panel. If there are two panels (Splitted mode), the function of "
-"the other panel is changed instead.</p>"
+"information panel. If there are two panels (Split mode), the function of the "
+"other panel is changed instead.</p>"
 msgstr ""
 
-#: callview.cpp:99
+#: callview.cpp:98
 msgid ""
 "<b>List of direct Callees</b>"
 "<p>This list shows all functions called by the current selected one "
-"directly, together with a call count and the (cumulative) cost spent in this "
-"function while being called from the selected function.</p>"
+"directly, together with a call count and the cost spent in this function "
+"while being called from the selected function.</p>"
 "<p>Selecting a function makes it the current selected one of this "
-"information panel. If there are two panels (Splitted mode), the function of "
-"the other panel is changed instead.</p>"
+"information panel. If there are two panels (Split mode), the function of the "
+"other panel is changed instead.</p>"
 msgstr ""
 
 #: costtypeitem.cpp:56
@@ -2558,7 +2594,7 @@ msgstr "Тавзеҳ"
 msgid ""
 "<b>Trace Part List</b>"
 "<p>This list shows all trace parts of the loaded trace. For each part, the "
-"self/cumulative cost of the current selected function, spent in the part, is "
+"self/inclusive cost of the current selected function, spent in the part, is "
 "shown; percentage costs are always relative to the total cost <em>of the "
 "part</em>"
 " (not to the whole trace as in the Trace Part Overview). Also shown are the "

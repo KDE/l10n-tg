@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kommander\n"
-"POT-Creation-Date: 2004-12-29 14:59+0100\n"
+"POT-Creation-Date: 2005-02-03 01:27+0100\n"
 "PO-Revision-Date: 2004-10-25 15:22+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -56,7 +56,7 @@ msgstr ""
 msgid "Cannot add plugin"
 msgstr "Гушаи иттисолро илова карда наметавонам"
 
-#: _translatorinfo.cpp:1 editor/main.cpp:47
+#: _translatorinfo.cpp:1 editor/main.cpp:46
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
@@ -64,7 +64,7 @@ msgstr ""
 "Tajik KDE Teams: Виктор Ибрагимов, Марина "
 "Колючева, Роҷер Ковакс"
 
-#: _translatorinfo.cpp:3 editor/main.cpp:48
+#: _translatorinfo.cpp:3 editor/main.cpp:47
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
@@ -72,9 +72,9 @@ msgstr "youth_opportunities@tajik.net"
 
 #. i18n: file ./editor/templates/Configuration_Dialog.ui line 31
 #: editor/iconvieweditorimpl.cpp:57 editor/listboxeditorimpl.cpp:61
-#: editor/widgetfactory.cpp:901 editor/widgetfactory.cpp:928
-#: editor/widgetfactory.cpp:937 editor/widgetfactory.cpp:1116
-#: editor/widgetfactory.cpp:1195 rc.cpp:1407
+#: editor/widgetfactory.cpp:838 editor/widgetfactory.cpp:871
+#: editor/widgetfactory.cpp:882 editor/widgetfactory.cpp:1071
+#: editor/widgetfactory.cpp:1157 rc.cpp:1376
 #, no-c-format
 msgid "New Item"
 msgstr "Ҷузъи Нав"
@@ -93,7 +93,7 @@ msgstr ""
 msgid "'%1' saved."
 msgstr "'%1' нигоҳ дошта шуд"
 
-#: editor/formfile.cpp:133 editor/mainwindowactions.cpp:576
+#: editor/formfile.cpp:133 editor/mainwindowactions.cpp:580
 msgid "*.kmdr|Kommander Files"
 msgstr "*.kmdr|Kommander файлҳо"
 
@@ -137,7 +137,7 @@ msgstr ""
 
 #. i18n: file ./editor/iconvieweditor.ui line 254
 #: editor/propertyeditor.cpp:595 rc.cpp:366 rc.cpp:435 rc.cpp:568 rc.cpp:665
-#: rc.cpp:742 rc.cpp:1046 rc.cpp:1216 rc.cpp:1276
+#: rc.cpp:742 rc.cpp:1015 rc.cpp:1185 rc.cpp:1245
 #, no-c-format
 msgid "..."
 msgstr "..."
@@ -385,6 +385,16 @@ msgstr "Гурӯҳи &нави амалиётҳо"
 msgid "New &Dropdown Action Group"
 msgstr "Гурӯҳи &Нави амали суқути поёнӣ"
 
+#: editor/messagelog.cpp:74
+#, fuzzy
+msgid "Stdout"
+msgstr "Нест кардани зарба"
+
+#: editor/messagelog.cpp:74
+#, fuzzy
+msgid "Stderr"
+msgstr "Фиристанда"
+
 #: editor/tableeditorimpl.cpp:55
 msgid "<no field>"
 msgstr "<майдон нест>"
@@ -398,21 +408,31 @@ msgid "Move Tab Page"
 msgstr "Ҳаракат додани саҳифаи ҷадвалбандиӣ"
 
 #. i18n: file ./editor/listeditor.ui line 31
-#: editor/widgetfactory.cpp:936 editor/widgetfactory.cpp:1115
-#: editor/widgetfactory.cpp:1194 rc.cpp:888
+#: editor/widgetfactory.cpp:881 editor/widgetfactory.cpp:1070
+#: editor/widgetfactory.cpp:1156 rc.cpp:888
 #, no-c-format
 msgid "Column 1"
 msgstr "Сутуни 1"
 
-#: editor/widgetfactory.cpp:966 editor/widgetfactory.cpp:1152
+#: editor/widgetfactory.cpp:914 editor/widgetfactory.cpp:1114
 msgid "Tab 1"
 msgstr "Tab 1"
 
-#: editor/widgetfactory.cpp:969 editor/widgetfactory.cpp:1155
+#: editor/widgetfactory.cpp:917 editor/widgetfactory.cpp:1117
 msgid "Tab 2"
 msgstr "Tab 2"
 
-#: editor/mainwindow.cpp:774 editor/mainwindowactions.cpp:87
+#: editor/widgetfactory.cpp:1101
+#, fuzzy
+msgid "Page 1"
+msgstr "Сарлавҳаи саҳифа"
+
+#: editor/widgetfactory.cpp:1102
+#, fuzzy
+msgid "Page 2"
+msgstr "Сарлавҳаи саҳифа"
+
+#: editor/mainwindow.cpp:798 editor/mainwindowactions.cpp:87
 msgid "&Undo: Not Available"
 msgstr "&Натавонистам: Наметавонам"
 
@@ -422,7 +442,7 @@ msgstr ""
 "Амалиёти охирин то охир ба анҷом расонида "
 "нашуд"
 
-#: editor/mainwindow.cpp:778 editor/mainwindowactions.cpp:93
+#: editor/mainwindow.cpp:802 editor/mainwindowactions.cpp:93
 msgid "&Redo: Not Available"
 msgstr "&Бори дигар такрор кардан: Дастрас нес"
 
@@ -494,11 +514,10 @@ msgstr ""
 "Муколимаро-ро барои чоп кардани алоқаҳо "
 "кушоед"
 
-#. i18n: file ./editor/formsettings.ui line 35
-#: editor/mainwindowactions.cpp:147 rc.cpp:903
-#, no-c-format
-msgid "Form Settings"
-msgstr "Шакли мизробҳо"
+#: editor/mainwindowactions.cpp:147
+#, fuzzy
+msgid "Form Settings..."
+msgstr "&Шакли мизробҳо..."
 
 #: editor/mainwindowactions.cpp:149
 msgid "Opens a dialog to change the form's settings"
@@ -681,197 +700,198 @@ msgstr ""
 "<p>Пахшкунии дубора дар ин асбоб кори "
 "шуморо ба кор дароварда нигоҳ медорад.</p>"
 
-#: editor/mainwindowactions.cpp:368
+#: editor/mainwindowactions.cpp:363
+#, fuzzy
+msgid "Editor"
+msgstr "Аммали вироишгар"
+
+#: editor/mainwindowactions.cpp:373
 #, c-format
 msgid "<b>The File toolbar</b>%1"
 msgstr "<b>Пайраҳаи асбоби файлThe File toolbar</b>%1"
 
-#: editor/mainwindowactions.cpp:374
+#: editor/mainwindowactions.cpp:379
 msgid "Creates a new dialog"
 msgstr "Муколимаи нав созед"
 
-#: editor/mainwindowactions.cpp:380
+#: editor/mainwindowactions.cpp:385
 #, fuzzy
 msgid "Opens an existing dialog"
 msgstr "Муколимаи вуҷуд доштаро кушоед"
 
-#: editor/mainwindowactions.cpp:386
+#: editor/mainwindowactions.cpp:391
 #, fuzzy
 msgid "Opens recently open file"
 msgstr "Файли нав кушода  "
 
-#: editor/mainwindowactions.cpp:391
+#: editor/mainwindowactions.cpp:396
 msgid "Closes the current dialog"
 msgstr "Муколимаи ҷоришавандаро махкам кунед"
 
-#: editor/mainwindowactions.cpp:399
+#: editor/mainwindowactions.cpp:404
 msgid "Saves the current dialog"
 msgstr "Муколимаи ҷоришавандаро нигоҳ доред"
 
-#: editor/mainwindowactions.cpp:406
+#: editor/mainwindowactions.cpp:411
 msgid "Saves the current dialog with a new filename"
 msgstr ""
 "Муколимаи ҷоришавандаро бо номфаӣли нав "
 "нигоҳ доред"
 
-#: editor/mainwindowactions.cpp:411
+#: editor/mainwindowactions.cpp:416
 msgid "Save All"
 msgstr "Ҳамаро нигоҳ доштан"
 
-#: editor/mainwindowactions.cpp:413
+#: editor/mainwindowactions.cpp:418
 msgid "Saves all open dialogs"
 msgstr "Ҳаммаи муколимаҳои кушодаро нигоҳ доред "
 
-#: editor/mainwindowactions.cpp:421
+#: editor/mainwindowactions.cpp:426
 msgid "Quits the application and prompts to save any changed dialogs"
 msgstr ""
 "Тарк намудани барнома ва эъломҳо барои "
 "нигоҳ доштани ягон гуфтугуи иваз карда "
 "шуда"
 
-#: editor/mainwindowactions.cpp:430
+#: editor/mainwindowactions.cpp:435
 msgid "&Run"
 msgstr "Иҷ&ро"
 
-#: editor/mainwindowactions.cpp:432
+#: editor/mainwindowactions.cpp:437
 msgid "Run Dialog"
 msgstr "Иҷрои муколима"
 
-#: editor/mainwindowactions.cpp:434
+#: editor/mainwindowactions.cpp:439
 msgid "Executes dialog"
 msgstr "Иҷро кардани муколима"
 
-#: editor/mainwindowactions.cpp:447
+#: editor/mainwindowactions.cpp:452
 msgid "Tile"
 msgstr "Сафоли бомпушӣ"
 
-#: editor/mainwindowactions.cpp:449
+#: editor/mainwindowactions.cpp:454
 msgid "Tiles the windows so that they are all visible"
 msgstr ""
 "Тирезаҳоро чунин ҷойгир кунед, ки ҳамааш "
 "намоён бошанд"
 
-#: editor/mainwindowactions.cpp:452 editor/mainwindowactions.cpp:457
+#: editor/mainwindowactions.cpp:457 editor/mainwindowactions.cpp:462
 msgid "Cascade"
 msgstr "Қабат"
 
-#: editor/mainwindowactions.cpp:454
+#: editor/mainwindowactions.cpp:459
 msgid "Cascades the windows so that all their title bars are visible"
 msgstr ""
 "Қабати тирезаҳоро чунон пушед, ки унвони "
 "сутунҳо намоён бошанд"
 
-#: editor/mainwindowactions.cpp:459
+#: editor/mainwindowactions.cpp:464
 msgid "Closes the active window"
 msgstr "Равзанаи фаъолро махкам кунед"
 
-#: editor/mainwindowactions.cpp:462
+#: editor/mainwindowactions.cpp:467
 msgid "Close All"
 msgstr "Ҳамашро махкам кунед"
 
-#: editor/mainwindowactions.cpp:464
+#: editor/mainwindowactions.cpp:469
 msgid "Closes all form windows"
 msgstr "Ҳамаи шакли равзанаҳоро махкам кунед"
 
-#: editor/mainwindowactions.cpp:467
+#: editor/mainwindowactions.cpp:472
 msgid "Next"
 msgstr "Оянда"
 
-#: editor/mainwindowactions.cpp:469
+#: editor/mainwindowactions.cpp:474
 msgid "Activates the next window"
 msgstr "Равзанаи ояндаро ба кор дароред"
 
-#: editor/mainwindowactions.cpp:472
+#: editor/mainwindowactions.cpp:477
 msgid "Previous"
 msgstr "Гузашта"
 
-#: editor/mainwindowactions.cpp:474
+#: editor/mainwindowactions.cpp:479
 msgid "Activates the previous window"
 msgstr "Равзанаи гузаштаро ба кор дароред"
 
-#: editor/mainwindowactions.cpp:481
+#: editor/mainwindowactions.cpp:483
 msgid "&Window"
 msgstr "&Равзана"
 
-#: editor/mainwindowactions.cpp:496
+#: editor/mainwindowactions.cpp:495
 msgid "Vie&ws"
 msgstr "Намуд&ҳо"
 
-#: editor/mainwindowactions.cpp:497
+#: editor/mainwindowactions.cpp:496
 msgid "Tool&bars"
 msgstr "Абзори &Сутун"
 
-#: editor/mainwindowactions.cpp:528
+#: editor/mainwindowactions.cpp:532
 msgid "Opens a dialog to change preferences"
 msgstr ""
 "Муколима-ро барои иваз кардани "
 "маълумотҳо кушоед"
 
-#: editor/mainwindowactions.cpp:533
+#: editor/mainwindowactions.cpp:537
 #, fuzzy
 msgid "Opens a dialog to change shortcuts"
 msgstr ""
 "Муколима-ро барои иваз кардани "
 "маълумотҳо кушоед"
 
-#: editor/mainwindowactions.cpp:548
+#: editor/mainwindowactions.cpp:552
 msgid "Create a new dialog..."
 msgstr "Эҷод кардани гуфтугуи нав..."
 
-#: editor/mainwindowactions.cpp:571
+#: editor/mainwindowactions.cpp:575
 msgid "Open a file..."
 msgstr "Кушодани файл..."
 
-#: editor/mainwindowactions.cpp:576
+#: editor/mainwindowactions.cpp:580
 msgid "Open Files"
 msgstr "Кушодани файлҳо"
 
-#: editor/mainwindowactions.cpp:612
+#: editor/mainwindowactions.cpp:616
 msgid "Reading file '%1'..."
 msgstr "Хондани файли '%1'..."
 
-#: editor/mainwindowactions.cpp:625
+#: editor/mainwindowactions.cpp:629
 msgid "Loaded file '%1'"
 msgstr "Пур бор кардани '%1'"
 
-#: editor/mainwindowactions.cpp:628
-msgid "Failed to load file '%1'"
-msgstr "Бор кардани файл ноком шуд '%1'"
-
-#: editor/mainwindowactions.cpp:629
+#: editor/mainwindowactions.cpp:632 editor/mainwindowactions.cpp:633
 msgid "Could not load file '%1'"
 msgstr "Файли '%1' пур бор карда наметавонам"
 
-#: editor/mainwindowactions.cpp:629
+#: editor/mainwindowactions.cpp:633
 msgid "Load File"
 msgstr "Пур бор кардани файл"
 
-#: editor/mainwindowactions.cpp:665
+#: editor/mainwindowactions.cpp:669
 msgid "Enter a filename..."
 msgstr "Ворид намудани ном..."
 
-#: editor/mainwindowactions.cpp:688
+#: editor/mainwindowactions.cpp:697
 msgid "Qt Designer is crashing. Attempting to save files..."
 msgstr ""
 "Qt Designer аз кор афтод.Кушиш намоед, ки "
 "файлро нигоҳ доред..."
 
-#: editor/mainwindowactions.cpp:725 editor/mainwindowactions.cpp:788
+#: editor/mainwindowactions.cpp:734 editor/mainwindowactions.cpp:797
 msgid "NewTemplate"
 msgstr "Қолаби нав"
 
-#: editor/mainwindowactions.cpp:737 editor/mainwindowactions.cpp:766
+#: editor/mainwindowactions.cpp:746 editor/mainwindowactions.cpp:775
 msgid "Could not create the template"
 msgstr "Қолабро эҷод карда натавонист"
 
 #. i18n: file ./editor/createtemplate.ui line 38
-#: editor/mainwindowactions.cpp:737 editor/mainwindowactions.cpp:766
+#: editor/mainwindowactions.cpp:746 editor/mainwindowactions.cpp:775
 #: rc.cpp:396
 #, no-c-format
 msgid "Create Template"
 msgstr "Эҷод кардани қолаб"
 
-#: editor/mainwindowactions.cpp:840
+#: editor/mainwindowactions.cpp:849
 msgid ""
 "Cannot paste widgets. Designer could not find a container\n"
 "to paste into which does not contain a layout. Break the layout\n"
@@ -886,21 +906,21 @@ msgstr ""
 "ва интихоб кардани контейнери \n"
 "ва баъд боз часпондан."
 
-#: editor/mainwindowactions.cpp:843
+#: editor/mainwindowactions.cpp:852
 msgid "Paste Error"
 msgstr "Мондани хато"
 
-#: editor/formwindow.cpp:2129 editor/mainwindowactions.cpp:1006
+#: editor/formwindow.cpp:2129 editor/mainwindowactions.cpp:1015
 msgid "Edit connections..."
 msgstr "Вироиши пайвастагӣ..."
 
-#: editor/mainwindowactions.cpp:1017
+#: editor/mainwindowactions.cpp:1026
 msgid "Edit the current form's settings..."
 msgstr ""
 "Вироиш намудани варақаи барпои ҳолати "
 "вуҷуд буда..."
 
-#: editor/mainwindowactions.cpp:1025
+#: editor/mainwindowactions.cpp:1034
 msgid "Edit preferences..."
 msgstr "Вироиши бартарӣ..."
 
@@ -926,65 +946,53 @@ msgstr ""
 "Номи ҷузъ бояд сифр набошад.\n"
 "Ном ба '%1' бардошта шуд."
 
-#: editor/newformimpl.cpp:200
+#: editor/newformimpl.cpp:116
 msgid "Load Template"
 msgstr "Пур бор кардани қолаб"
 
-#: editor/newformimpl.cpp:201
+#: editor/newformimpl.cpp:117
 msgid "Could not load form description from template '%1'"
 msgstr ""
 "Варақаи тавсифотро аз қолаби  '%1' бор "
 "карда натавонист"
 
-#: editor/newformimpl.cpp:300
-msgid "Project"
-msgstr "Нақша"
-
-#: editor/newformimpl.cpp:309
+#: editor/newformimpl.cpp:137
 msgid "Dialog"
 msgstr "Муколама"
 
-#: editor/newformimpl.cpp:315
+#: editor/newformimpl.cpp:143
 msgid "Wizard"
 msgstr "Wizard"
-
-#: editor/newformimpl.cpp:321
-msgid "Widget"
-msgstr "Виджет"
-
-#: editor/newformimpl.cpp:326
-msgid "Main Window"
-msgstr "Тирезаи Асосӣ"
 
 #: editor/multilineeditorimpl.cpp:56
 msgid "Set Text of '%1'"
 msgstr "Мушаххаси матни '%1'"
 
 #. i18n: file ./editor/paletteeditoradvanced.ui line 198
-#: editor/mainwindow.cpp:960 editor/mainwindow.cpp:1430
+#: editor/mainwindow.cpp:984 editor/mainwindow.cpp:1454
 #: editor/multilineeditorimpl.cpp:68 rc.cpp:145
 #, no-c-format
 msgid "Text"
 msgstr "Матн"
 
-#: editor/main.cpp:29
+#: editor/main.cpp:28
 msgid "Kommander is a graphical editor of scripted dialogs."
 msgstr ""
 
-#: editor/main.cpp:31
+#: editor/main.cpp:30
 msgid "Based on Qt Designer, (C) 2000 Trolltech AS."
 msgstr ""
 
-#: editor/main.cpp:35 executor/main.cpp:54
+#: editor/main.cpp:34 executor/main.cpp:54
 msgid "Dialog to open"
 msgstr "Диалог барои кушодан"
 
-#: editor/main.cpp:41
+#: editor/main.cpp:40
 #, fuzzy
 msgid "Kommander"
 msgstr "Дар бораи Kommander"
 
-#: editor/main.cpp:58
+#: editor/main.cpp:57
 msgid "Kommander Dialog Editor"
 msgstr "Вироиши гуфтугӯи Kommander "
 
@@ -993,14 +1001,14 @@ msgid "Edit Wizard Pages"
 msgstr "Вироиши саҳифаҳои Wizard "
 
 #: editor/hierarchyview.cpp:507 editor/hierarchyview.cpp:513
-#: editor/mainwindow.cpp:1025 editor/mainwindow.cpp:1061
+#: editor/mainwindow.cpp:1049 editor/mainwindow.cpp:1085
 #: editor/wizardeditorimpl.cpp:112
 #, c-format
 msgid "Add Page to %1"
 msgstr "Саҳифаро ба  %1 илова намоед"
 
 #: editor/hierarchyview.cpp:529 editor/hierarchyview.cpp:539
-#: editor/mainwindow.cpp:1032 editor/mainwindow.cpp:1068
+#: editor/mainwindow.cpp:1056 editor/mainwindow.cpp:1092
 #: editor/wizardeditorimpl.cpp:130
 msgid "Delete Page %1 of %2"
 msgstr "Саҳифаи аз %1то %2-ро нобуд созед"
@@ -1009,17 +1017,17 @@ msgstr "Саҳифаи аз %1то %2-ро нобуд созед"
 msgid "Swap Pages %1 and %2 of %3"
 msgstr "Саҳифаи %1 ва %2 аз %3 мубодила кардан"
 
-#: editor/mainwindow.cpp:985 editor/mainwindow.cpp:1082
+#: editor/mainwindow.cpp:1009 editor/mainwindow.cpp:1106
 #: editor/wizardeditorimpl.cpp:200
 msgid "Page Title"
 msgstr "Сарлавҳаи саҳифа"
 
-#: editor/mainwindow.cpp:985 editor/mainwindow.cpp:1082
+#: editor/mainwindow.cpp:1009 editor/mainwindow.cpp:1106
 #: editor/wizardeditorimpl.cpp:200
 msgid "New page title:"
 msgstr "Сарлавҳаи нави саҳифа:"
 
-#: editor/mainwindow.cpp:1084 editor/wizardeditorimpl.cpp:202
+#: editor/mainwindow.cpp:1108 editor/wizardeditorimpl.cpp:202
 msgid "Rename page %1 of %2"
 msgstr "Саҳифаи %1 аз %2 аз нав номнавис намоед"
 
@@ -1095,7 +1103,7 @@ msgstr "Чорчӯба"
 msgid "Tabwidget"
 msgstr "Ҷадвалбандии виджет"
 
-#: editor/widgetdatabase.cpp:199 editor/widgetdatabase.cpp:512
+#: editor/widgetdatabase.cpp:199 editor/widgetdatabase.cpp:526
 msgid "List Box"
 msgstr "Қуттии рӯйхат"
 
@@ -1143,7 +1151,7 @@ msgstr "Чопи матни бой"
 msgid "Combo Box"
 msgstr "Қуттии Combo"
 
-#: editor/widgetdatabase.cpp:300 editor/widgetdatabase.cpp:613
+#: editor/widgetdatabase.cpp:300 editor/widgetdatabase.cpp:627
 msgid "Slider"
 msgstr "Слайдкунанда"
 
@@ -1171,7 +1179,7 @@ msgstr "Пайраҳаи пешрафт"
 msgid "Text View"
 msgstr "Намоиши матн"
 
-#: editor/widgetdatabase.cpp:349 editor/widgetdatabase.cpp:505
+#: editor/widgetdatabase.cpp:349 editor/widgetdatabase.cpp:519
 msgid "Text Browser"
 msgstr "Браузери матн"
 
@@ -1188,62 +1196,62 @@ msgstr ""
 "карда барои қобилияти дасткорӣ кардани "
 "намудҳои ороиш."
 
-#: editor/widgetdatabase.cpp:475
+#: editor/widgetdatabase.cpp:489
 msgid "Text Label"
 msgstr "Ёрлиқи матн"
 
-#: editor/widgetdatabase.cpp:476
+#: editor/widgetdatabase.cpp:490
 msgid "The Text Label provides a widget to display static text."
 msgstr ""
 "Матни Label таҳияи виджетро дар матни сокин "
 "намоиш медиҳад."
 
-#: editor/widgetdatabase.cpp:483
+#: editor/widgetdatabase.cpp:497
 msgid "Pixmap Label"
 msgstr "Ёрлиқи ҳаритаи Pix"
 
-#: editor/widgetdatabase.cpp:484
+#: editor/widgetdatabase.cpp:498
 msgid "The Pixmap Label provides a widget to display pixmaps."
 msgstr "Pixmap Label таҳияи виджети pixmap намоиш медиҳад."
 
-#: editor/widgetdatabase.cpp:491
+#: editor/widgetdatabase.cpp:505
 msgid "A line edit"
 msgstr "Муҳаррири хат"
 
-#: editor/widgetdatabase.cpp:498
+#: editor/widgetdatabase.cpp:512
 msgid "A rich text edit"
 msgstr "Чопи тексти бой"
 
-#: editor/widgetdatabase.cpp:519
+#: editor/widgetdatabase.cpp:533
 msgid "A combo box"
 msgstr "Қуттии combo"
 
-#: editor/widgetdatabase.cpp:526
+#: editor/widgetdatabase.cpp:540
 msgid "A tree widget"
 msgstr "Дарахти виджет"
 
-#: editor/widgetdatabase.cpp:533
+#: editor/widgetdatabase.cpp:547
 #, fuzzy
 msgid "A table widget"
 msgstr "Дарахти виджет"
 
-#: editor/widgetdatabase.cpp:540
+#: editor/widgetdatabase.cpp:554
 msgid "A button that when clicked, execute a command"
 msgstr ""
 "Дар вақти зер кардани тугма, фармони нав "
 "иҷро мешавад"
 
-#: editor/widgetdatabase.cpp:547
+#: editor/widgetdatabase.cpp:561
 msgid "A button that closes the dialog it is in"
 msgstr ""
 "Тугмае, ки диалогро маҳкам мекунад, дар "
 "дарун мебошад"
 
-#: editor/widgetdatabase.cpp:554
+#: editor/widgetdatabase.cpp:568
 msgid "A listbox showing output of a script"
 msgstr ""
 
-#: editor/widgetdatabase.cpp:561
+#: editor/widgetdatabase.cpp:575
 msgid ""
 "A widget made up of a line edit and push button, for selecting files and "
 "folders"
@@ -1255,51 +1263,51 @@ msgstr ""
 "шуда ва барои интихоби файлҳо ва папкаҳо "
 "мебошад"
 
-#: editor/widgetdatabase.cpp:568
+#: editor/widgetdatabase.cpp:582
 msgid "A check box"
 msgstr "Қуттии тафтиш"
 
-#: editor/widgetdatabase.cpp:575
+#: editor/widgetdatabase.cpp:589
 msgid "A radio button"
 msgstr "Кнопкаи радио"
 
-#: editor/widgetdatabase.cpp:582
+#: editor/widgetdatabase.cpp:596
 msgid "A widget for grouping buttons together"
 msgstr ""
 "Васекунӣ барои ҷамъ кардани тугмаҳо дар "
 "як ҷо"
 
-#: editor/widgetdatabase.cpp:590
+#: editor/widgetdatabase.cpp:604
 msgid "A widget for grouping other widgets together"
 msgstr ""
 "Васекунӣ барои ҷамъ кардани виҷетҳои "
 "дигар дар як ҷо"
 
-#: editor/widgetdatabase.cpp:598
+#: editor/widgetdatabase.cpp:612
 msgid "A widget with tabs"
 msgstr "Виджет бо ҷадвалбандиҳо"
 
-#: editor/widgetdatabase.cpp:606
+#: editor/widgetdatabase.cpp:620
 msgid "A spin box"
 msgstr "Қуттии spin"
 
-#: editor/widgetdatabase.cpp:620
+#: editor/widgetdatabase.cpp:634
 msgid "A small rich text editor"
 msgstr "Редактори матни бойи хурд"
 
-#: editor/widgetdatabase.cpp:627
+#: editor/widgetdatabase.cpp:641
 msgid "A status bar"
 msgstr "Ҳолати сутун"
 
-#: editor/widgetdatabase.cpp:634
+#: editor/widgetdatabase.cpp:648
 msgid "A progress bar"
 msgstr "Пайраҳаи пешрафт"
 
-#: editor/widgetdatabase.cpp:641
+#: editor/widgetdatabase.cpp:655
 msgid "A hidden script container"
 msgstr "Пинхон кардани дасхати мавҷуда"
 
-#: editor/widgetdatabase.cpp:648
+#: editor/widgetdatabase.cpp:662
 msgid "A timer for running scripts periodically"
 msgstr ""
 
@@ -1318,7 +1326,7 @@ msgid "All Files (*)"
 msgstr "Ҳама файлҳо (*)"
 
 #. i18n: file ./editor/pixmapfunction.ui line 38
-#: editor/pixmapchooser.cpp:964 rc.cpp:1129
+#: editor/pixmapchooser.cpp:964 rc.cpp:1098
 #, no-c-format
 msgid "Choose Pixmap"
 msgstr "Интихоби ҳаритаи Pix"
@@ -1337,7 +1345,7 @@ msgstr "Нобуд кардани ҷудосоз"
 
 #. i18n: file ./editor/listboxeditor.ui line 147
 #: editor/actiondnd.cpp:350 editor/actiondnd.cpp:735 editor/actiondnd.cpp:1022
-#: rc.cpp:1024 rc.cpp:1076
+#: rc.cpp:993 rc.cpp:1045
 #, no-c-format
 msgid "Delete Item"
 msgstr "Нобуд кардани пиктограмма"
@@ -1488,11 +1496,11 @@ msgstr "Сутуни нав"
 msgid "&Items"
 msgstr "&Ҷузъҳо"
 
-#: editor/mainwindow.cpp:135
+#: editor/mainwindow.cpp:134
 msgid "Welcome to the Kommander Editor"
 msgstr "Марҳамат ба вироишгари Kommander"
 
-#: editor/mainwindow.cpp:142
+#: editor/mainwindow.cpp:141
 msgid "Layout"
 msgstr "Тарҳбандӣ"
 
@@ -1625,7 +1633,20 @@ msgstr ""
 "панели асбобҳо ва/ёки дар меню (дар назди "
 "ном) намоиш хоҳад шуд.</p>"
 
-#: editor/mainwindow.cpp:667
+#: editor/mainwindow.cpp:303 editor/mainwindow.cpp:306
+msgid "Message Log"
+msgstr ""
+
+#: editor/mainwindow.cpp:366
+msgid "There is a dialog already running."
+msgstr ""
+
+#: editor/mainwindow.cpp:366
+#, fuzzy
+msgid "Run"
+msgstr "Иҷ&ро"
+
+#: editor/mainwindow.cpp:691
 msgid ""
 "<b>The Form Window</b>"
 "<p>"
@@ -1660,111 +1681,111 @@ msgstr ""
 "кунед ва тамоми онҳо дар <b>Рӯйхати шакл</b> "
 "намоиш хоҳад шуд."
 
-#: editor/mainwindow.cpp:772
+#: editor/mainwindow.cpp:796
 #, c-format
 msgid "&Undo: %1"
 msgstr "&Баргашт: %1"
 
-#: editor/mainwindow.cpp:776
+#: editor/mainwindow.cpp:800
 #, c-format
 msgid "&Redo: %1"
 msgstr "&Дубора: %1"
 
-#: editor/mainwindow.cpp:855
+#: editor/mainwindow.cpp:879
 msgid "Choose Pixmap..."
 msgstr "Интихоби Pixmap..."
 
-#: editor/mainwindow.cpp:859
+#: editor/mainwindow.cpp:883
 msgid "Edit Text..."
 msgstr "Вироиши харита..."
 
-#: editor/mainwindow.cpp:863
+#: editor/mainwindow.cpp:887
 msgid "Edit Title..."
 msgstr "Вироиши сарлавҳа..."
 
-#: editor/mainwindow.cpp:867 editor/mainwindow.cpp:935
+#: editor/mainwindow.cpp:891 editor/mainwindow.cpp:959
 msgid "Edit Page Title..."
 msgstr "Вироиши сарлавҳаи саҳифа..."
 
-#: editor/mainwindow.cpp:883 editor/mainwindow.cpp:918
+#: editor/mainwindow.cpp:907 editor/mainwindow.cpp:942
 msgid "Edit Kommander Text..."
 msgstr "Вироиши матни Kommander..."
 
-#: editor/mainwindow.cpp:892 editor/mainwindow.cpp:928
-#: editor/mainwindow.cpp:1352
+#: editor/mainwindow.cpp:916 editor/mainwindow.cpp:952
+#: editor/mainwindow.cpp:1376
 msgid "Delete Page"
 msgstr "Нобудсозии Саҳифа"
 
-#: editor/mainwindow.cpp:895 editor/mainwindow.cpp:932
-#: editor/mainwindow.cpp:1351
+#: editor/mainwindow.cpp:919 editor/mainwindow.cpp:956
+#: editor/mainwindow.cpp:1375
 msgid "Add Page"
 msgstr "Иловаи Саҳифа"
 
-#: editor/mainwindow.cpp:902
+#: editor/mainwindow.cpp:926
 msgid "Edit..."
 msgstr "Муҳаррир..."
 
-#: editor/mainwindow.cpp:938
+#: editor/mainwindow.cpp:962
 msgid "Edit Pages..."
 msgstr "Вироиши саҳифаҳо..."
 
-#: editor/mainwindow.cpp:944
+#: editor/mainwindow.cpp:968
 msgid "Add Menu Item"
 msgstr "Илова намудани менюи қалам"
 
-#: editor/mainwindow.cpp:946
+#: editor/mainwindow.cpp:970
 msgid "Add Toolbar"
 msgstr "Илова кардани абзори сутун"
 
-#: editor/mainwindow.cpp:960 editor/mainwindow.cpp:1430
+#: editor/mainwindow.cpp:984 editor/mainwindow.cpp:1454
 msgid "New text:"
 msgstr "Матни нав:"
 
-#: editor/mainwindow.cpp:963
+#: editor/mainwindow.cpp:987
 msgid "Set the 'text' of '%1'"
 msgstr "Маҷмӯъаи матни '%1'"
 
-#: editor/mainwindow.cpp:973 editor/mainwindow.cpp:1446
+#: editor/mainwindow.cpp:997 editor/mainwindow.cpp:1470
 msgid "Title"
 msgstr "Сарлавҳа"
 
-#: editor/mainwindow.cpp:973 editor/mainwindow.cpp:1446
+#: editor/mainwindow.cpp:997 editor/mainwindow.cpp:1470
 msgid "New title:"
 msgstr "Сарлавҳаи нав:"
 
-#: editor/mainwindow.cpp:975
+#: editor/mainwindow.cpp:999
 msgid "Set the 'title' of '%1'"
 msgstr "Таъин кардани сарлавҳаи '%1'"
 
-#: editor/mainwindow.cpp:987
+#: editor/mainwindow.cpp:1011
 msgid "Set the 'pageTitle' of '%1'"
 msgstr "Таъин кардани сарлавҳаи саҳифаи '%1'"
 
-#: editor/mainwindow.cpp:999
+#: editor/mainwindow.cpp:1023
 msgid "Set the 'pixmap' of '%1'"
 msgstr "Таъин кардани pixmap аз '%1'"
 
-#: editor/mainwindow.cpp:1094
+#: editor/mainwindow.cpp:1118
 msgid "Add Toolbar to '%1'"
 msgstr "Илова намудани абзори сутун ба '%1'"
 
-#: editor/mainwindow.cpp:1098
+#: editor/mainwindow.cpp:1122
 msgid "Add Menu to '%1'"
 msgstr "Илова намудани меню ба '%1'"
 
-#: editor/mainwindow.cpp:1415
+#: editor/mainwindow.cpp:1439
 msgid "Edit %1..."
 msgstr "Вироиши %1..."
 
-#: editor/mainwindow.cpp:1433
+#: editor/mainwindow.cpp:1457
 msgid "Set the 'text' of '%2'"
 msgstr "Таъин намудани матни '%2'"
 
-#: editor/mainwindow.cpp:1448
+#: editor/mainwindow.cpp:1472
 msgid "Set the 'title' of '%2'"
 msgstr "Таъин намудани сарлавҳаи '%2'"
 
-#: editor/mainwindow.cpp:1536
+#: editor/mainwindow.cpp:1560
 msgid ""
 "Kommander found some temporary saved files, which were\n"
 "written when Kommander crashed last time. Do you want to\n"
@@ -1776,22 +1797,22 @@ msgstr ""
 "нуқсон шуд, қайд карда шудаанд.\n"
 "Оё мехоҳед ин файлҳоро пурбор кунед?"
 
-#: editor/mainwindow.cpp:1538
+#: editor/mainwindow.cpp:1562
 msgid "Restoring the Last Session"
 msgstr "Барқарор кардани дарси охирин"
 
-#: editor/mainwindow.cpp:1591
+#: editor/mainwindow.cpp:1615
 msgid "There is no help available for this dialog at the moment."
 msgstr ""
 "Дар ҳамин лаҳза ягон ёрдам барои гуфтугу "
 "номумкин аст."
 
-#: editor/mainwindow.cpp:1605
+#: editor/mainwindow.cpp:1629
 #, fuzzy
 msgid "<qt>Could not open file:<br><b>%1</b><br>File does not exist.</qt>"
 msgstr "<qt>файли Kommander <br><b>%1</b><br>вуҷуд надорад.</qt>"
 
-#: editor/mainwindow.cpp:1606
+#: editor/mainwindow.cpp:1630
 msgid "Open File"
 msgstr "Кушодани Файл"
 
@@ -1978,14 +1999,14 @@ msgid "&Add"
 msgstr "&Илова кардан"
 
 #. i18n: file ./editor/wizardeditor.ui line 197
-#: rc.cpp:23 rc.cpp:381 rc.cpp:813 rc.cpp:1009 rc.cpp:1114 rc.cpp:1165
+#: rc.cpp:23 rc.cpp:381 rc.cpp:813 rc.cpp:978 rc.cpp:1083 rc.cpp:1134
 #, no-c-format
 msgid "Apply all changes."
 msgstr "Истифодаи тамоми хатогиҳо."
 
 #. i18n: file ./editor/wizardeditor.ui line 214
-#: rc.cpp:29 rc.cpp:238 rc.cpp:387 rc.cpp:604 rc.cpp:819 rc.cpp:876 rc.cpp:979
-#: rc.cpp:1015 rc.cpp:1120 rc.cpp:1171 rc.cpp:1356
+#: rc.cpp:29 rc.cpp:238 rc.cpp:387 rc.cpp:604 rc.cpp:819 rc.cpp:876 rc.cpp:912
+#: rc.cpp:984 rc.cpp:1089 rc.cpp:1140 rc.cpp:1325
 #, no-c-format
 msgid "Close the dialog and apply all the changes."
 msgstr ""
@@ -1993,8 +2014,8 @@ msgstr ""
 "тамоми тағйирот."
 
 #. i18n: file ./editor/wizardeditor.ui line 228
-#: rc.cpp:35 rc.cpp:244 rc.cpp:393 rc.cpp:610 rc.cpp:825 rc.cpp:882 rc.cpp:985
-#: rc.cpp:1021 rc.cpp:1126 rc.cpp:1177 rc.cpp:1362
+#: rc.cpp:35 rc.cpp:244 rc.cpp:393 rc.cpp:610 rc.cpp:825 rc.cpp:882 rc.cpp:918
+#: rc.cpp:990 rc.cpp:1095 rc.cpp:1146 rc.cpp:1331
 #, no-c-format
 msgid "Close the dialog and discard any changes."
 msgstr ""
@@ -2607,13 +2628,13 @@ msgid "All items in the iconview."
 msgstr "Ҳамаи ҷузъ дар намоиши пиктограмма."
 
 #. i18n: file ./editor/iconvieweditor.ui line 94
-#: rc.cpp:323 rc.cpp:674 rc.cpp:1064
+#: rc.cpp:323 rc.cpp:674 rc.cpp:1033
 #, no-c-format
 msgid "&New Item"
 msgstr "&Ҷузъи Нав"
 
 #. i18n: file ./editor/iconvieweditor.ui line 97
-#: rc.cpp:326 rc.cpp:677 rc.cpp:1067
+#: rc.cpp:326 rc.cpp:677 rc.cpp:1036
 #, no-c-format
 msgid "Add an item"
 msgstr "Иловаи ҷузъ"
@@ -2627,7 +2648,7 @@ msgstr ""
 "пиктограмма."
 
 #. i18n: file ./editor/iconvieweditor.ui line 108
-#: rc.cpp:332 rc.cpp:622 rc.cpp:1073
+#: rc.cpp:332 rc.cpp:622 rc.cpp:1042
 #, no-c-format
 msgid "&Delete Item"
 msgstr "&Нобудсозии ҷузъ"
@@ -2645,19 +2666,19 @@ msgid "Delete the selected item."
 msgstr "Нобуд кардани ҷузъи интихобшуда."
 
 #. i18n: file ./editor/iconvieweditor.ui line 147
-#: rc.cpp:341 rc.cpp:1030
+#: rc.cpp:341 rc.cpp:999
 #, no-c-format
 msgid "&Item Properties"
 msgstr "&Хусусиятҳои ҷузъ"
 
 #. i18n: file ./editor/iconvieweditor.ui line 164
-#: rc.cpp:344 rc.cpp:637 rc.cpp:751 rc.cpp:1055 rc.cpp:1102
+#: rc.cpp:344 rc.cpp:637 rc.cpp:751 rc.cpp:1024 rc.cpp:1071
 #, no-c-format
 msgid "&Text:"
 msgstr "&Матн:"
 
 #. i18n: file ./editor/iconvieweditor.ui line 181
-#: rc.cpp:347 rc.cpp:640 rc.cpp:1058
+#: rc.cpp:347 rc.cpp:640 rc.cpp:1027
 #, no-c-format
 msgid "Change text"
 msgstr "Дигаргуни матн"
@@ -2669,25 +2690,25 @@ msgid "Change the text for the selected item."
 msgstr "Дигаргуни матн барои ҷузъи интихобшуда."
 
 #. i18n: file ./editor/iconvieweditor.ui line 192
-#: rc.cpp:353 rc.cpp:729 rc.cpp:1033
+#: rc.cpp:353 rc.cpp:729 rc.cpp:1002
 #, no-c-format
 msgid "&Pixmap:"
 msgstr "&Ҳаритаи Pix:"
 
 #. i18n: file ./editor/iconvieweditor.ui line 217
-#: rc.cpp:356 rc.cpp:655 rc.cpp:732 rc.cpp:1036 rc.cpp:1206 rc.cpp:1266
+#: rc.cpp:356 rc.cpp:655 rc.cpp:732 rc.cpp:1005 rc.cpp:1175 rc.cpp:1235
 #, no-c-format
 msgid "Label4"
 msgstr "Ёрлиқи4"
 
 #. i18n: file ./editor/iconvieweditor.ui line 237
-#: rc.cpp:360 rc.cpp:659 rc.cpp:736 rc.cpp:1040 rc.cpp:1210 rc.cpp:1270
+#: rc.cpp:360 rc.cpp:659 rc.cpp:736 rc.cpp:1009 rc.cpp:1179 rc.cpp:1239
 #, no-c-format
 msgid "Delete Pixmap"
 msgstr "Нобуд кардани ҳаритаи Pix"
 
 #. i18n: file ./editor/iconvieweditor.ui line 240
-#: rc.cpp:363 rc.cpp:1043
+#: rc.cpp:363 rc.cpp:1012
 #, no-c-format
 msgid "Delete the selected item's pixmap."
 msgstr ""
@@ -2695,7 +2716,7 @@ msgstr ""
 "интихобшуда."
 
 #. i18n: file ./editor/iconvieweditor.ui line 257
-#: rc.cpp:369 rc.cpp:668 rc.cpp:745 rc.cpp:1049 rc.cpp:1219 rc.cpp:1279
+#: rc.cpp:369 rc.cpp:668 rc.cpp:745 rc.cpp:1018 rc.cpp:1188 rc.cpp:1248
 #, no-c-format
 msgid "Select a Pixmap"
 msgstr "Интихоби ҳаритаи Pix"
@@ -3202,7 +3223,7 @@ msgid "Colu&mn:"
 msgstr "&Сутун:"
 
 #. i18n: file ./editor/listvieweditor.ui line 214
-#: rc.cpp:662 rc.cpp:1213 rc.cpp:1273
+#: rc.cpp:662 rc.cpp:1182 rc.cpp:1242
 #, no-c-format
 msgid ""
 "<b>Delete the selected item's pixmap.</b>"
@@ -3214,7 +3235,7 @@ msgstr ""
 "интихоб карда шуда нобуд карда мешавад.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 234
-#: rc.cpp:671 rc.cpp:1222 rc.cpp:1282
+#: rc.cpp:671 rc.cpp:1191 rc.cpp:1251
 #, no-c-format
 msgid ""
 "<b>Select a pixmap file for the item.</b>"
@@ -3241,7 +3262,7 @@ msgstr ""
 "поёнроистифода барад.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 260
-#: rc.cpp:683 rc.cpp:1027
+#: rc.cpp:683 rc.cpp:996
 #, no-c-format
 msgid "The list of items."
 msgstr "Рӯйхати ҷузъ."
@@ -3274,7 +3295,7 @@ msgstr ""
 "автоматӣ бунёд карда мешавад.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 305
-#: rc.cpp:696 rc.cpp:798 rc.cpp:1083 rc.cpp:1184 rc.cpp:1241
+#: rc.cpp:696 rc.cpp:798 rc.cpp:1052 rc.cpp:1153 rc.cpp:1210
 #, no-c-format
 msgid "Move up"
 msgstr "Ҳаракат ба боло"
@@ -3292,7 +3313,7 @@ msgstr ""
 "ҷунбонда мешавад.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 322
-#: rc.cpp:703 rc.cpp:782 rc.cpp:1090 rc.cpp:1191 rc.cpp:1248
+#: rc.cpp:703 rc.cpp:782 rc.cpp:1059 rc.cpp:1160 rc.cpp:1217
 #, no-c-format
 msgid "Move down"
 msgstr "Ҳаракат ба поён"
@@ -3346,7 +3367,7 @@ msgstr ""
 "мешавад.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 369
-#: rc.cpp:723 rc.cpp:1180
+#: rc.cpp:723 rc.cpp:1149
 #, no-c-format
 msgid "Co&lumns"
 msgstr "Су&тунҳо"
@@ -3428,7 +3449,7 @@ msgstr ""
 "агар ин интихоб санҷида шавад."
 
 #. i18n: file ./editor/listvieweditor.ui line 517
-#: rc.cpp:772 rc.cpp:1197
+#: rc.cpp:772 rc.cpp:1166
 #, no-c-format
 msgid "&Delete Column"
 msgstr "&Нобу кардани сутун"
@@ -3458,7 +3479,7 @@ msgstr ""
 "мешавад.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 548
-#: rc.cpp:788 rc.cpp:1200
+#: rc.cpp:788 rc.cpp:1169
 #, no-c-format
 msgid "&New Column"
 msgstr "&Сутуни нав"
@@ -3558,6 +3579,12 @@ msgstr "Пештара"
 msgid "Re&name"
 msgstr "Номгузо&рии дубора"
 
+#. i18n: file ./editor/formsettings.ui line 35
+#: rc.cpp:903
+#, no-c-format
+msgid "Form Settings"
+msgstr "Шакли мизробҳо"
+
 #. i18n: file ./editor/formsettings.ui line 41
 #: rc.cpp:906
 #, no-c-format
@@ -3573,230 +3600,74 @@ msgstr ""
 "</b>Тавзеҳи<b>ва Муаллиф</b> истифода бурдан "
 "ва хоста намешавад.</p>"
 
-#. i18n: file ./editor/formsettings.ui line 58
-#: rc.cpp:909
-#, no-c-format
-msgid "&Pixmaps"
-msgstr "&Ҳаритаҳои Pix"
-
-#. i18n: file ./editor/formsettings.ui line 75
-#: rc.cpp:912
-#, no-c-format
-msgid "Save in&line"
-msgstr "Дар хат нигоҳ доштан"
-
-#. i18n: file ./editor/formsettings.ui line 81
-#: rc.cpp:915
-#, no-c-format
-msgid "Save pixmaps in the .ui files"
-msgstr "Нигоҳ доштани ҳаритаҳои pix дар файлҳои .ui"
-
-#. i18n: file ./editor/formsettings.ui line 84
-#: rc.cpp:918
-#, no-c-format
-msgid ""
-"<b>Save Inline</b>"
-"<p>Saves the pixmaps as binary data in the .ui files. Pixmaps saved like "
-"this are not shared between forms. We recommend using Project image files "
-"instead."
-msgstr ""
-"<b>Дар хат нигоҳ доштан</b>"
-"<p>Харитаи pix-ро ҳамчун таърихи ҳисоби дуӣ "
-"дар файлҳои ui нигоҳ доред.Харитаи pix ва "
-"варақаҳо байнашон тақсим карда "
-"намешавад. Мо тавсия менамоем ки нақшаи "
-"файлҳои тасвирро ба ҷои ин истифода баред."
-
-#. i18n: file ./editor/formsettings.ui line 92
+#. i18n: file ./editor/formsettings.ui line 122
 #: rc.cpp:921
-#, no-c-format
-msgid "Project &image file"
-msgstr "Нақшаи файли &тасвир"
-
-#. i18n: file ./editor/formsettings.ui line 95
-#: rc.cpp:924
-#, no-c-format
-msgid "Use the Project's Image file for pixmaps"
-msgstr ""
-"Нақшаи файли тасвирро барои харитаи pix "
-"истифода баред"
-
-#. i18n: file ./editor/formsettings.ui line 99
-#: rc.cpp:927
-#, no-c-format
-msgid ""
-"<b>Use the Project's Image file for pixmaps</b>\n"
-"<p>Each project may have a collection of pixmaps. If you use a project, we "
-"recommend that you use this option since it shares the images and is the "
-"fastest and most efficient way to use pixmaps in your forms.</p>"
-msgstr ""
-"<b>Нақшаи файли тасвирро барои харитаи pix "
-"истифода баред</b>\n"
-"<p>Ҳар як нақша метавонад пайвастагии "
-"харитаи pix-ро дошта бошад. Агар шумо "
-"нақшаро истифода баред, мо тавсия "
-"менамоем, ки шумо ин интихобро истифода "
-"баред то он даме ки ин тасвирро тақсим "
-"нанамояд ва ин тезтар ва аз ҳама роҳи "
-"қулай барои истифода бурдани харитаи pix "
-"дар варақа.</p>"
-
-#. i18n: file ./editor/formsettings.ui line 110
-#: rc.cpp:931
-#, no-c-format
-msgid "Specify Pixmap-Loader function (only the function's name, no parentheses.)"
-msgstr ""
-"Пурбор кунандаи амали харитаи pix-ро таъин "
-"намоед (фақат амали ном, на дар қавсҳои "
-"камонак.)"
-
-#. i18n: file ./editor/formsettings.ui line 113
-#: rc.cpp:934
-#, no-c-format
-msgid ""
-"<b>Specify Pixmap-Loader function</b>"
-"<p>Specify the function which should be used for loading a pixmap in the "
-"generated code. <em>Only enter the function's name, with no parentheses.</em>"
-msgstr ""
-"<b>Пурбор кунандаи амали харитаи pix-ро "
-"таъин намоед</b> "
-"<p>"
-"Барои пурбор кардани харитаи pix дар коди "
-"тавлид карда шуда таъини амалро барои "
-"истифодаи пурбор истифода намоед. <em> "
-"(фақат амалином, на дар қавсҳои "
-"камонак.)</em>"
-
-#. i18n: file ./editor/formsettings.ui line 121
-#: rc.cpp:937
-#, no-c-format
-msgid "Use &function:"
-msgstr "Истифодаи &функсия:"
-
-#. i18n: file ./editor/formsettings.ui line 124
-#: rc.cpp:940
-#, no-c-format
-msgid "Use the given function for pixmaps"
-msgstr ""
-"Функсияи дода шудаи барои харитаи pix-ро "
-"истифода баред"
-
-#. i18n: file ./editor/formsettings.ui line 127
-#: rc.cpp:943
-#, no-c-format
-msgid ""
-"<b>Use a given function for pixmaps</b>"
-"<p>If you choose this option you must define a function in the line edit at "
-"the right which will be used in the generated code for loading pixmaps. When "
-"choosing a pixmap in <i>Qt Designer</i> you will be asked to specify the "
-"arguments which will be passed to the function in the generated code."
-"<p>"
-" This approach makes it possible to use your own icon-loader function for "
-"loading pixmaps.  <i>Qt Designer</i> can't preview the correct image if you "
-"use your own function."
-msgstr ""
-"<p>Вазифаи асосиро барои харитаи pix "
-"истифода намоед</b> "
-"<p>, ва агар шумо ин интихобро интихоб "
-"намоед ба шумо лозим меояд, ки вазифаро "
-"дар рах муаян созед ва қоидаро вироиш "
-"намоед, то ин ки ҳангоме ки дар ба "
-"вуҷудоии кодекс барои пурборкунии "
-"харитаи pix лозим меояд. ҳангоми интихоб "
-"намудани харитаи pix дар <i>лоиҳасозӣ Qt </i> "
-"аз шумо пурсида мешавад, ки далелро муаян "
-"созед, то ки вазифаиро дар кодекси ба "
-"вуҷудоӣ дода шавад. "
-"<p> Ин кор имкон медиҳад, ки барои вазифаи "
-"хусуии худро барои пурбор кардани "
-"харитаи pix.  <i> лоиҳасозӣ Qt </i> агар шумо "
-"вазафаи асосии худро истифода баред "
-"барои тасвири дуруст эълон карда "
-"наметавонад."
-
-#. i18n: file ./editor/formsettings.ui line 160
-#: rc.cpp:949
-#, no-c-format
-msgid "Change class name"
-msgstr "Номи синф дигаргун кунед"
-
-#. i18n: file ./editor/formsettings.ui line 163
-#: rc.cpp:952
-#, no-c-format
-msgid ""
-"<b>Enter the name of the class that will be "
-"created.</b>"
-"<p><em>classname.h</em> and <em>classname.cpp</em> will be generated as C++ "
-"output when it is compiled by uic.</p>"
-msgstr ""
-"<b>Номи синфе, ки дар оянда бунёд карда "
-"мешавад ворид намоед.</b>"
-"<p><em>ном.h</em> ва <em>номи.cpp</em> ҳамчун C++ хуруҷ "
-"тавлид карда мешавад вақте ки аз тарафи uic "
-"ҳамгардон карда мешавад.</p>"
-
-#. i18n: file ./editor/formsettings.ui line 171
-#: rc.cpp:955
-#, no-c-format
-msgid "A&uthor:"
-msgstr "М&уаллиф:"
-
-#. i18n: file ./editor/formsettings.ui line 182
-#: rc.cpp:958
-#, no-c-format
-msgid "Enter your name"
-msgstr "Номи шуморо дохил кунед"
-
-#. i18n: file ./editor/formsettings.ui line 185
-#: rc.cpp:961
-#, no-c-format
-msgid "Enter your name."
-msgstr "Номи шуморо дохил кунед."
-
-#. i18n: file ./editor/formsettings.ui line 193
-#: rc.cpp:964
-#, no-c-format
-msgid "Class &name:"
-msgstr "Номи &синф:"
-
-#. i18n: file ./editor/formsettings.ui line 204
-#: rc.cpp:967
-#, no-c-format
-msgid "Co&mment:"
-msgstr "Ш&арҳ:"
-
-#. i18n: file ./editor/formsettings.ui line 215
-#: rc.cpp:970
-#, no-c-format
-msgid "Enter a comment about the form."
-msgstr "Шарҳи дар бораи шакл дохил кунед."
-
-#. i18n: file ./editor/formsettings.ui line 317
-#: rc.cpp:988
 #, no-c-format
 msgid "La&youts"
 msgstr "&Тарҳбандӣ"
 
-#. i18n: file ./editor/formsettings.ui line 350
-#: rc.cpp:991
+#. i18n: file ./editor/formsettings.ui line 155
+#: rc.cpp:924
 #, no-c-format
 msgid "Default mar&gin:"
 msgstr "Ҳошия нок&ом гашт:"
 
-#. i18n: file ./editor/formsettings.ui line 361
-#: rc.cpp:994
+#. i18n: file ./editor/formsettings.ui line 166
+#: rc.cpp:927
 #, no-c-format
 msgid "D&efault spacing:"
 msgstr "Ф&осилаи бо пешфарз:"
 
+#. i18n: file ./editor/formsettings.ui line 202
+#: rc.cpp:933
+#, no-c-format
+msgid "Enter a comment about the form."
+msgstr "Шарҳи дар бораи шакл дохил кунед."
+
+#. i18n: file ./editor/formsettings.ui line 227
+#: rc.cpp:936
+#, no-c-format
+msgid "Co&mment:"
+msgstr "Ш&арҳ:"
+
+#. i18n: file ./editor/formsettings.ui line 238
+#: rc.cpp:939
+#, no-c-format
+msgid "&License:"
+msgstr ""
+
+#. i18n: file ./editor/formsettings.ui line 249
+#: rc.cpp:942 rc.cpp:954 rc.cpp:960
+#, no-c-format
+msgid "Enter your name"
+msgstr "Номи шуморо дохил кунед"
+
+#. i18n: file ./editor/formsettings.ui line 252
+#: rc.cpp:945 rc.cpp:957 rc.cpp:963
+#, no-c-format
+msgid "Enter your name."
+msgstr "Номи шуморо дохил кунед."
+
+#. i18n: file ./editor/formsettings.ui line 260
+#: rc.cpp:948
+#, no-c-format
+msgid "&Version:"
+msgstr ""
+
+#. i18n: file ./editor/formsettings.ui line 271
+#: rc.cpp:951
+#, no-c-format
+msgid "A&uthor:"
+msgstr "М&уаллиф:"
+
 #. i18n: file ./editor/listboxeditor.ui line 35
-#: rc.cpp:997
+#: rc.cpp:966
 #, no-c-format
 msgid "Edit Listbox"
 msgstr "Таъғири рӯйхати қуттӣ"
 
 #. i18n: file ./editor/listboxeditor.ui line 41
-#: rc.cpp:1000
+#: rc.cpp:969
 #, no-c-format
 msgid ""
 "<b>Edit Listbox</b>"
@@ -3819,7 +3690,7 @@ msgstr ""
 "ҷунбондан тугмаро зер намоед.</p>"
 
 #. i18n: file ./editor/listboxeditor.ui line 229
-#: rc.cpp:1052
+#: rc.cpp:1021
 #, no-c-format
 msgid "Choose a pixmap file for the selected item."
 msgstr ""
@@ -3827,13 +3698,13 @@ msgstr ""
 "интихобшуда."
 
 #. i18n: file ./editor/listboxeditor.ui line 257
-#: rc.cpp:1061
+#: rc.cpp:1030
 #, no-c-format
 msgid "Change the selected item's text."
 msgstr "Матни қалами интихоб шударо иваз намоед. "
 
 #. i18n: file ./editor/listboxeditor.ui line 273
-#: rc.cpp:1070
+#: rc.cpp:1039
 #, no-c-format
 msgid "<b>Add a new item.</b><p>New items are appended to the list.</p>"
 msgstr ""
@@ -3841,13 +3712,13 @@ msgstr ""
 "<p>Такягоҳи нав ба лист замима кардан.</p>"
 
 #. i18n: file ./editor/listboxeditor.ui line 287
-#: rc.cpp:1079
+#: rc.cpp:1048
 #, no-c-format
 msgid "Delete the selected item"
 msgstr "Нобуд кардани ҷузъи интихобшуда"
 
 #. i18n: file ./editor/listboxeditor.ui line 321
-#: rc.cpp:1086
+#: rc.cpp:1055
 #, no-c-format
 msgid "Moves the selected item up."
 msgstr ""
@@ -3855,7 +3726,7 @@ msgstr ""
 "боло."
 
 #. i18n: file ./editor/listboxeditor.ui line 338
-#: rc.cpp:1093
+#: rc.cpp:1062
 #, no-c-format
 msgid "Move the selected item down."
 msgstr ""
@@ -3863,13 +3734,13 @@ msgstr ""
 "поён."
 
 #. i18n: file ./editor/multilineeditor.ui line 38
-#: rc.cpp:1096
+#: rc.cpp:1065
 #, no-c-format
 msgid "Edit Multiline Edit"
 msgstr "Тағири муҳаррири бисёрхат"
 
 #. i18n: file ./editor/multilineeditor.ui line 46
-#: rc.cpp:1099
+#: rc.cpp:1068
 #, no-c-format
 msgid ""
 "<b>Edit Multiline Edit</b>"
@@ -3882,13 +3753,13 @@ msgstr ""
 "муроҷиат намоед.</p>"
 
 #. i18n: file ./editor/multilineeditor.ui line 84
-#: rc.cpp:1105
+#: rc.cpp:1074
 #, no-c-format
 msgid "Enter your text here."
 msgstr "Матни шумо дар инҷо дохил кунед."
 
 #. i18n: file ./editor/pixmapfunction.ui line 61
-#: rc.cpp:1132
+#: rc.cpp:1101
 #, no-c-format
 msgid "&Enter arguments for loading the pixmap:"
 msgstr ""
@@ -3896,31 +3767,31 @@ msgstr ""
 "ворид намоед:"
 
 #. i18n: file ./editor/pixmapfunction.ui line 109
-#: rc.cpp:1135
+#: rc.cpp:1104
 #, no-c-format
 msgid "QPixmap("
 msgstr "Ҳаритаи QPix("
 
 #. i18n: file ./editor/pixmapfunction.ui line 573
-#: rc.cpp:1138
+#: rc.cpp:1107
 #, no-c-format
 msgid ")"
 msgstr ")"
 
 #. i18n: file ./editor/tableeditor.ui line 16
-#: rc.cpp:1150
+#: rc.cpp:1119
 #, no-c-format
 msgid "Edit Table"
 msgstr "Таъғири ҷадвал"
 
 #. i18n: file ./editor/tableeditor.ui line 34
-#: rc.cpp:1153 rc.cpp:1156
+#: rc.cpp:1122 rc.cpp:1125
 #, no-c-format
 msgid "1"
 msgstr "1"
 
 #. i18n: file ./editor/tableeditor.ui line 218
-#: rc.cpp:1187 rc.cpp:1244
+#: rc.cpp:1156 rc.cpp:1213
 #, no-c-format
 msgid ""
 "<b>Move the selected item up.</b>"
@@ -3932,7 +3803,7 @@ msgstr ""
 "мешавад.</p>"
 
 #. i18n: file ./editor/tableeditor.ui line 235
-#: rc.cpp:1194 rc.cpp:1251
+#: rc.cpp:1163 rc.cpp:1220
 #, no-c-format
 msgid ""
 "<b>Move the selected item down.</b>"
@@ -3944,73 +3815,73 @@ msgstr ""
 "мешавад.</p>"
 
 #. i18n: file ./editor/tableeditor.ui line 273
-#: rc.cpp:1203
+#: rc.cpp:1172
 #, no-c-format
 msgid "Table:"
 msgstr "Ҷадвал:"
 
 #. i18n: file ./editor/tableeditor.ui line 348
-#: rc.cpp:1225 rc.cpp:1260
+#: rc.cpp:1194 rc.cpp:1229
 #, no-c-format
 msgid "&Label:"
 msgstr "&Ёрлиқ:"
 
 #. i18n: file ./editor/tableeditor.ui line 359
-#: rc.cpp:1228 rc.cpp:1263
+#: rc.cpp:1197 rc.cpp:1232
 #, no-c-format
 msgid "Pixmap:"
 msgstr "Ҳаритаи Pix:"
 
 #. i18n: file ./editor/tableeditor.ui line 370
-#: rc.cpp:1231
+#: rc.cpp:1200
 #, no-c-format
 msgid "&Field:"
 msgstr "&Соҳа:"
 
 #. i18n: file ./editor/tableeditor.ui line 394
-#: rc.cpp:1234
+#: rc.cpp:1203
 #, no-c-format
 msgid "<no table>"
 msgstr "<ҷадвал нест>"
 
 #. i18n: file ./editor/tableeditor.ui line 406
-#: rc.cpp:1237
+#: rc.cpp:1206
 #, no-c-format
 msgid "&Rows"
 msgstr "&Қаторҳо"
 
 #. i18n: file ./editor/tableeditor.ui line 496
-#: rc.cpp:1254
+#: rc.cpp:1223
 #, no-c-format
 msgid "&New Row"
 msgstr "&Қатори нав"
 
 #. i18n: file ./editor/tableeditor.ui line 504
-#: rc.cpp:1257
+#: rc.cpp:1226
 #, no-c-format
 msgid "&Delete Row"
 msgstr "&Нобуд кардани қатор"
 
 #. i18n: file ./editor/choosewidget.ui line 16
-#: rc.cpp:1285
+#: rc.cpp:1254
 #, no-c-format
 msgid "Choose Widget"
 msgstr "Интихоби васеъкунӣ"
 
 #. i18n: file ./editor/choosewidget.ui line 118
-#: rc.cpp:1296
+#: rc.cpp:1265
 #, no-c-format
 msgid "Find:"
 msgstr "Соҳа:"
 
 #. i18n: file ./editor/connectioneditor.ui line 35
-#: rc.cpp:1299
+#: rc.cpp:1268
 #, no-c-format
 msgid "Edit Connections"
 msgstr "Таъғири алоқаҳо"
 
 #. i18n: file ./editor/connectioneditor.ui line 41
-#: rc.cpp:1302
+#: rc.cpp:1271
 #, no-c-format
 msgid ""
 "<b>Edit Connections</b>"
@@ -4031,31 +3902,31 @@ msgstr ""
 "пайвастаро -нобуд созед.</p>"
 
 #. i18n: file ./editor/connectioneditor.ui line 56
-#: rc.cpp:1305
+#: rc.cpp:1274
 #, no-c-format
 msgid "Sender"
 msgstr "Фиристанда"
 
 #. i18n: file ./editor/connectioneditor.ui line 67
-#: rc.cpp:1308
+#: rc.cpp:1277
 #, no-c-format
 msgid "Signal"
 msgstr "Сигнал"
 
 #. i18n: file ./editor/connectioneditor.ui line 78
-#: rc.cpp:1311
+#: rc.cpp:1280
 #, no-c-format
 msgid "Receiver"
 msgstr "Қабулкунанда"
 
 #. i18n: file ./editor/connectioneditor.ui line 89
-#: rc.cpp:1314
+#: rc.cpp:1283
 #, no-c-format
 msgid "Slot"
 msgstr "Такягоҳ"
 
 #. i18n: file ./editor/connectioneditor.ui line 111
-#: rc.cpp:1317
+#: rc.cpp:1286
 #, no-c-format
 msgid "Displays the connections between the sender and the receiver."
 msgstr ""
@@ -4063,7 +3934,7 @@ msgstr ""
 "фиристанда намоиш диҳед. "
 
 #. i18n: file ./editor/connectioneditor.ui line 119
-#: rc.cpp:1320
+#: rc.cpp:1289
 #, no-c-format
 msgid ""
 "<b>A list of slots for the receiver.</b>"
@@ -4079,25 +3950,25 @@ msgstr ""
 "буда интихоб карда мешавад.</b>"
 
 #. i18n: file ./editor/connectioneditor.ui line 127
-#: rc.cpp:1323
+#: rc.cpp:1292
 #, no-c-format
 msgid "Connec&tions:"
 msgstr "Алоқ&аҳо:"
 
 #. i18n: file ./editor/connectioneditor.ui line 138
-#: rc.cpp:1326
+#: rc.cpp:1295
 #, no-c-format
 msgid "Co&nnect"
 msgstr "Ало&қа кунед"
 
 #. i18n: file ./editor/connectioneditor.ui line 144
-#: rc.cpp:1329
+#: rc.cpp:1298
 #, no-c-format
 msgid "Create connection"
 msgstr "Сохтани алоқа"
 
 #. i18n: file ./editor/connectioneditor.ui line 147
-#: rc.cpp:1332
+#: rc.cpp:1301
 #, no-c-format
 msgid "Create a connection between a signal and a slot."
 msgstr ""
@@ -4105,25 +3976,25 @@ msgstr ""
 "намоед."
 
 #. i18n: file ./editor/connectioneditor.ui line 155
-#: rc.cpp:1335
+#: rc.cpp:1304
 #, no-c-format
 msgid "&Disconnect"
 msgstr "&Ҷудо кардан"
 
 #. i18n: file ./editor/connectioneditor.ui line 161
-#: rc.cpp:1338
+#: rc.cpp:1307
 #, no-c-format
 msgid "Remove the selected connection"
 msgstr "Нобуд кардани алоқаи интихобшуда"
 
 #. i18n: file ./editor/connectioneditor.ui line 164
-#: rc.cpp:1341
+#: rc.cpp:1310
 #, no-c-format
 msgid "Remove the selected connection."
 msgstr "Нобуд кардани алоқаи интихобшуда."
 
 #. i18n: file ./editor/connectioneditor.ui line 206
-#: rc.cpp:1344
+#: rc.cpp:1313
 #, no-c-format
 msgid "Displays the list of signals that the widget emits."
 msgstr ""
@@ -4131,28 +4002,59 @@ msgstr ""
 "буданд намоиш диҳед."
 
 #. i18n: file ./editor/connectioneditor.ui line 222
-#: rc.cpp:1347
+#: rc.cpp:1316
 #, no-c-format
 msgid "Si&gnals:"
 msgstr "Сиг&налҳо:"
 
 #. i18n: file ./editor/connectioneditor.ui line 262
-#: rc.cpp:1350
+#: rc.cpp:1319
 #, no-c-format
 msgid "&Slots:"
 msgstr "&Чокҳо:"
 
 #. i18n: file ./editor/templates/Tab_Dialog.ui line 37
-#: rc.cpp:1365 rc.cpp:1368 rc.cpp:1410 rc.cpp:1413
+#: rc.cpp:1334 rc.cpp:1337 rc.cpp:1379 rc.cpp:1382
 #, no-c-format
 msgid "Tab"
 msgstr "Табулясия"
 
 #. i18n: file ./editor/templates/Tab_Dialog.ui line 71
-#: rc.cpp:1374 rc.cpp:1392 rc.cpp:1398 rc.cpp:1419
+#: rc.cpp:1343 rc.cpp:1361 rc.cpp:1367 rc.cpp:1388
 #, no-c-format
 msgid "F1"
 msgstr "F1"
+
+#: widget/parser.cpp:148
+msgid "Expected '%1'"
+msgstr ""
+
+#: widget/parser.cpp:153
+#, fuzzy
+msgid "Expected variable"
+msgstr "Иҷро кардани муколима"
+
+#: widget/parser.cpp:155
+#, fuzzy
+msgid "Expected value"
+msgstr "Иҷро кардани муколима"
+
+#: widget/parser.cpp:157
+msgid "Invalid symbol"
+msgstr ""
+
+#: widget/parser.cpp:159
+#, fuzzy
+msgid "Incorrect parameters"
+msgstr "Ҷойгиркунии Ҷудосоз"
+
+#: widget/parser.cpp:161
+msgid "Undefined variable"
+msgstr ""
+
+#: widget/parser.cpp:163
+msgid "Unknown error"
+msgstr ""
 
 #: widget/specials.cpp:27
 msgid "Inserts the item if it will not create a duplicate."
@@ -4431,6 +4333,14 @@ msgid "Returns the pid of the parent Kommander window."
 msgstr "Бар гардондани pid аз волиди тирезаи Kommander."
 
 #: widget/specials.cpp:124
+msgid "Writes <i>text</i> on stderr."
+msgstr ""
+
+#: widget/specials.cpp:126
+msgid "Writes <i>text</i> on standard output."
+msgstr ""
+
+#: widget/specials.cpp:128
 #, fuzzy
 msgid ""
 "Executes a script block. Bash is used if no shell is given. It is primarily "
@@ -4451,7 +4361,7 @@ msgstr ""
 "нусҳаи аввалинаш бар мегардад, кадоме ки "
 "ногаҳон мебошад.</i>"
 
-#: widget/specials.cpp:126
+#: widget/specials.cpp:130
 msgid ""
 "Returns value of an environment (shell) variable. Do not use <i>$</i>"
 " in the name. For example, <i>@env(PATH)</i>."
@@ -4461,16 +4371,16 @@ msgstr ""
 "истифода набаред <i>$</i> дар ном.Мисол, "
 "<i>@env(PATH)</i>."
 
-#: widget/specials.cpp:128
+#: widget/specials.cpp:132
 #, fuzzy
 msgid "Executes an external shell command."
 msgstr "Иҷроиши командаи фаври."
 
-#: widget/specials.cpp:130
+#: widget/specials.cpp:134
 msgid "Parses an expression and returns computed value."
 msgstr ""
 
-#: widget/specials.cpp:132
+#: widget/specials.cpp:136
 #, fuzzy
 msgid ""
 "Executes loop: values from <i>items</i> list (passed as EOL-separated "
@@ -4482,7 +4392,7 @@ msgstr ""
 "ҷудошаванда) истифодабарандаи таъин "
 "карда шуда."
 
-#: widget/specials.cpp:134
+#: widget/specials.cpp:138
 #, fuzzy
 msgid ""
 "Executes loop: variable is set to <i>start</i> and is increased by "
@@ -4497,13 +4407,13 @@ msgstr ""
 "вақте,ки ивазшаванда аз <i>охир</i>дида "
 "калонтар шуд."
 
-#: widget/specials.cpp:136
+#: widget/specials.cpp:140
 msgid "Returns the value of a global variable."
 msgstr ""
 "Бар гардондани нархи глобалии иваз "
 "шаванда."
 
-#: widget/specials.cpp:138
+#: widget/specials.cpp:142
 msgid ""
 "Translates the string into the current language. Texts in GUI would be "
 "automatically extracted for translation."
@@ -4512,13 +4422,13 @@ msgstr ""
 "ҷоришаванда.Матнҳо дар GUI метавонанд ба "
 "таври автомати барои тарҷума нест шавад."
 
-#: widget/specials.cpp:140
+#: widget/specials.cpp:144
 msgid ""
-"Executes block if expression is true (non-zero number of non-empty string.) "
-"<p>Close with <b>@endif</></p>"
+"Executes block if expression is true (non-zero number or non-empty string.) "
+"<p>Close with <b>@endif</b></p>"
 msgstr ""
 
-#: widget/specials.cpp:142
+#: widget/specials.cpp:146
 msgid ""
 "Executes another Kommander dialog. Current dialog directory is used if no "
 "path is given. Arguments may be given as named arguments which will become "
@@ -4531,13 +4441,13 @@ msgstr ""
 "шавад ки мухталифи глобалӣ дар диалоги "
 "нав дарояд. Мисол гирем:<i>var=val</i>"
 
-#: widget/specials.cpp:144
+#: widget/specials.cpp:148
 msgid "Reads setting from configration file for this dialog."
 msgstr ""
 "Хондани монданиҳо аз шакли файл барои ин "
 "муколама."
 
-#: widget/specials.cpp:146
+#: widget/specials.cpp:150
 msgid ""
 "Sets the value of a global variable. Global variables exist for the life of "
 "the Kommander window."
@@ -4546,67 +4456,67 @@ msgstr ""
 "глобалӣ.Ивазшавандаи глобалӣ барои "
 "зиндагии тирезаи Kommander вуҷуд дорад."
 
-#: widget/specials.cpp:148
+#: widget/specials.cpp:152
 msgid "Stores setting in configuration file for this dialog."
 msgstr ""
 "Нигоҳ доштани монданиҳо дар шакли файл "
 "барои ин муколама."
 
-#: widget/specials.cpp:150
+#: widget/specials.cpp:154
 msgid ""
 "Begin of <b>switch</b> block. Following <b>case</b> values are compared to "
 "<i>expression</i>.<p>@switch()<br>@case()<br>@end"
 msgstr ""
 
-#: widget/specials.cpp:152
+#: widget/specials.cpp:156
 msgid "Executes an external DCOP call."
 msgstr "Иҷро кардани ҷумлаи берунаи DCOP."
 
-#: widget/specials.cpp:154
+#: widget/specials.cpp:158
 msgid "Adds a comment to EOL that Kommander will not parse"
 msgstr ""
 
-#: widget/specials.cpp:158
+#: widget/specials.cpp:162
 msgid "Returns an EOL-separated list of all values in the array."
 msgstr ""
 "Бар гардондани рӯйхати ҳамаи нархҳои EOL "
 "ҷудошаванда дар сохтан."
 
-#: widget/specials.cpp:160
+#: widget/specials.cpp:164
 msgid "Returns an EOL-separated list of all keys in the array."
 msgstr ""
 "Бар гардондани рӯйхати ҳамаи калидҳои EOL "
 "ҷудошаванда дар сохтан."
 
-#: widget/specials.cpp:162
+#: widget/specials.cpp:166
 msgid "Removes all elements from the array."
 msgstr "Нест кардани ҳамаи элементҳо аз сохтан."
 
-#: widget/specials.cpp:164
+#: widget/specials.cpp:168
 msgid "Returns the number of elements in the array."
 msgstr ""
 "Бар гардондани рақами элементҳо дар "
 "сохтан."
 
-#: widget/specials.cpp:166
+#: widget/specials.cpp:170
 msgid "Returns the value associated with the given key."
 msgstr ""
 "Бар гардондани нархи ҳосил карда бо "
 "калиди додашуда."
 
-#: widget/specials.cpp:168
+#: widget/specials.cpp:172
 msgid "Removes element with the given key from the array."
 msgstr ""
 "Нест кардани элемент бо калиди аз сохтан "
 "додашуда."
 
-#: widget/specials.cpp:170
+#: widget/specials.cpp:174
 msgid "Adds element with the given key and value to the array"
 msgstr ""
 "Илова кардани элемент бо калид ва нархи "
 "сохтани додашуда"
 
-#: widget/specials.cpp:172
+#: widget/specials.cpp:176
 msgid ""
 "Adds all elements in the string to the array. String should have "
 "<i>key\\tvalue\\n</i> format."
@@ -4615,29 +4525,29 @@ msgstr ""
 "сохта.Банд метавонад <i>калид\\tнарх\\n</i> "
 "андоза дошта бошад."
 
-#: widget/specials.cpp:175
+#: widget/specials.cpp:179
 msgid "Returns all elements in the array in <pre>key\\tvalue\\n</pre> format."
 msgstr ""
 "Бар гардондани ҳамаи элементҳо дар "
 "сохтани <pre>калид\\tнарх\\n</pre> андоза."
 
-#: widget/specials.cpp:180
+#: widget/specials.cpp:184
 msgid "Returns number of chars in the string."
 msgstr "Бар гардондани рақам аз сӯзодан дар банд."
 
-#: widget/specials.cpp:182
+#: widget/specials.cpp:186
 msgid "Checks if the the string contains the given substring."
 msgstr ""
 "Тафтиш кардан агар риштаи дар бар гирифта "
 "зерриштаро диҳад."
 
-#: widget/specials.cpp:184
+#: widget/specials.cpp:188
 msgid "Returns the position of a substring in the string, or -1 if it is not found."
 msgstr ""
 "Бар гардондани ҷои зерришта дар "
 "ришта,ё-1агар он ёфта нашуда бошад."
 
-#: widget/specials.cpp:186
+#: widget/specials.cpp:190
 #, fuzzy
 msgid ""
 "Returns the position of a substring in the string, or -1 if it is not found. "
@@ -4646,43 +4556,43 @@ msgstr ""
 "Бар гардондани ҷои зерришта дар "
 "ришта,ё-1агар он ёфта нашуда бошад."
 
-#: widget/specials.cpp:188
+#: widget/specials.cpp:192
 msgid "Returns the first <i>n</i> chars of the string."
 msgstr "Бар гардондани якум <i>n</i> сӯзондани банд."
 
-#: widget/specials.cpp:190
+#: widget/specials.cpp:194
 msgid "Returns the last <i>n</i> chars of the string."
 msgstr ""
 "Бар гардондани гузашта <i>n</i> сӯзондани "
 "банд."
 
-#: widget/specials.cpp:192
+#: widget/specials.cpp:196
 msgid "Returns <i>n</i> chars of the string, starting from <i>start</i>."
 msgstr ""
 "Бар гардондан <i>n</i> сӯзондани банд сар "
 "карда аз <i>сар</i>."
 
-#: widget/specials.cpp:194
+#: widget/specials.cpp:198
 msgid "Removes all occurrences of given substring."
 msgstr ""
 "Ақиб гузоштани ҳамаи воқеаҳои зерришта "
 "додашуда."
 
-#: widget/specials.cpp:196
+#: widget/specials.cpp:200
 msgid "Replaces all occurrences of the given substring with the given replacement."
 msgstr ""
 "Ақиб гузоштани ҳамаи воқеаҳои зерришта "
 "дода бо таъин кардаи додашуда."
 
-#: widget/specials.cpp:198
+#: widget/specials.cpp:202
 msgid "Converts the string to uppercase."
 msgstr "Ҳосил кардани банд дар қутии боло."
 
-#: widget/specials.cpp:200
+#: widget/specials.cpp:204
 msgid "Converts the string to lowercase."
 msgstr "Ҳосил кардани банд дар қутии хурд."
 
-#: widget/specials.cpp:202
+#: widget/specials.cpp:206
 msgid ""
 "Compares two strings. Returns 0 if they are equal, -1 if the first one is "
 "lower, 1 if the first one is higher"
@@ -4692,21 +4602,21 @@ msgstr ""
 "хурдтар бошад,1агар якумаш баландтар "
 "бошад"
 
-#: widget/specials.cpp:205
+#: widget/specials.cpp:209
 msgid "Checks if the string is empty."
 msgstr "Тафтиш кунед,агар банд холи бошад."
 
-#: widget/specials.cpp:207
+#: widget/specials.cpp:211
 msgid "Checks if the string is a valid number."
 msgstr ""
 "Тафтиш кунед агар бонд дар ҳақиқат рақам "
 "бошад."
 
-#: widget/specials.cpp:209
+#: widget/specials.cpp:213
 msgid "Returns given section of a string."
 msgstr "Бар гардондани пораи банди додашуда."
 
-#: widget/specials.cpp:211
+#: widget/specials.cpp:215
 msgid ""
 "Returns the given string with %1, %2, %3 replaced with <i>arg1</i>, "
 "<i>arg2</i>, <i>arg3</i> accordingly."
@@ -4715,19 +4625,70 @@ msgstr ""
 "ақиб гузоштанд бо <i>arg1</i>, <i>arg2</i>, "
 "<i>arg3</i>розигӣ."
 
-#: widget/specials.cpp:216
+#: widget/specials.cpp:219
 msgid "Returns content of given file."
 msgstr ""
 "Кисми қаноат мекардагии файлро дохил "
 "кардан."
 
-#: widget/specials.cpp:218
+#: widget/specials.cpp:221
 msgid "Writes given string to a file."
 msgstr "Навиштани банди додашуда ба файл."
 
-#: widget/specials.cpp:220
+#: widget/specials.cpp:223
 msgid "Appends given string to the end of a file."
 msgstr "Овехтани банди додашуда ба охири файл."
+
+#: widget/specials.cpp:226
+msgid "Shows color dialog. Returns color in #RRGGBB format."
+msgstr ""
+
+#: widget/specials.cpp:228
+msgid "Shows text selection dialog. Returns entered text."
+msgstr ""
+
+#: widget/specials.cpp:230
+msgid "Shows value selection dialog. Returns entered value."
+msgstr ""
+
+#: widget/specials.cpp:232
+msgid "Shows existing file selection dialog. Returns selected file."
+msgstr ""
+
+#: widget/specials.cpp:234
+msgid "Shows save file selection dialog. Returns selected file."
+msgstr ""
+
+#: widget/specials.cpp:236
+msgid "Shows directory selection dialog. Returns selected directory."
+msgstr ""
+
+#: widget/specials.cpp:238
+msgid ""
+"Shows multiple files selection dialog. Returns EOL-separated list of "
+"selected files."
+msgstr ""
+
+#: widget/specials.cpp:242
+#, fuzzy
+msgid "Shows an information dialog."
+msgstr "Муколимаи вуҷуд доштаро кушоед"
+
+#: widget/specials.cpp:244
+msgid "Shows an error dialog."
+msgstr ""
+
+#: widget/specials.cpp:246
+msgid ""
+"Shows a warning dialog with up to three buttons. Returns number of selected "
+"button."
+msgstr ""
+
+#: widget/specials.cpp:248
+msgid ""
+"Shows a question dialog with up to three buttons. Returns number of selected "
+"button."
+msgstr ""
 
 #: widget/myprocess.cpp:94
 msgid "<qt>Failed to start shell process<br><b>%1</b></qt>"
@@ -4735,84 +4696,89 @@ msgstr ""
 "<qt>Сар кардани ҷилди просесси кам карда "
 "шуда<br><b>%1</b></qt>"
 
-#: widget/kommanderfunctions.cpp:109
+#: widget/kommanderfunctions.cpp:112
 msgid "Unterminated @execBegin ... @execEnd block."
 msgstr ""
 "Блоки @exeсСар карда ... @execОхири тамом "
 "нашуда. "
 
-#: widget/kommanderfunctions.cpp:127 widget/kommanderfunctions.cpp:153
+#: widget/kommanderfunctions.cpp:130 widget/kommanderfunctions.cpp:156
 msgid "Unterminated @forEach ... @end block."
 msgstr ""
 "Тамом ношуда @барои Ҳар як... @охири "
 "блокировка."
 
-#: widget/kommanderfunctions.cpp:190
+#: widget/kommanderfunctions.cpp:193
 #, fuzzy
 msgid "Unterminated @if ... @endif block."
 msgstr ""
 "Тамом ношуда @барои Ҳар як... @охири "
 "блокировка."
 
-#: widget/kommanderfunctions.cpp:210
+#: widget/kommanderfunctions.cpp:213
 #, fuzzy
 msgid "Unterminated @switch ... @end block."
 msgstr ""
 "Тамом ношуда @барои Ҳар як... @охири "
 "блокировка."
 
-#: widget/kommanderfunctions.cpp:321
+#: widget/kommanderfunctions.cpp:324
 #, c-format
 msgid "Unknown widget: @%1."
 msgstr "Надонистани васеъкуни: @%1."
 
-#: widget/kommanderfunctions.cpp:339
+#: widget/kommanderfunctions.cpp:342
 msgid "Infinite loop: @%1 called inside @%2."
 msgstr "Гиреҳи беохир: @%1 ба дарун фарёд карда @%2."
 
-#: widget/kommanderfunctions.cpp:344
+#: widget/kommanderfunctions.cpp:347
 msgid "Script for @%1 is empty."
 msgstr "Дасхат барои @%1 холи аст."
 
-#: widget/kommanderwidget.cpp:117
+#: widget/kommanderwidget.cpp:118
 msgid "Invalid state for associated text."
 msgstr "Ҷои қалбаки барои матни алоқа дошта."
 
-#: widget/kommanderwidget.cpp:212
+#: widget/kommanderwidget.cpp:135
+msgid ""
+"Line %1: error: %2\n"
+msgstr ""
+
+#: widget/kommanderwidget.cpp:229
 msgid "Unknown special: '%1'."
 msgstr "Номуайяан махсус: '%1'."
 
-#: widget/kommanderwidget.cpp:234
+#: widget/kommanderwidget.cpp:251
 msgid "Unmatched parenthesis in DCOP call '%1'."
 msgstr ""
 "Қавсҳои камонакдори номувофиқ дар ҷумлаи "
 "DCOP '%1'."
 
-#: widget/kommanderwidget.cpp:240
+#: widget/kommanderwidget.cpp:257
 msgid "Incorrect arguments in DCOP call '%1'."
 msgstr "Асоси нодуруст дар DCOP ҷумла '%1'."
 
-#: widget/kommanderwidget.cpp:270
+#: widget/kommanderwidget.cpp:287
 msgid "Tried to perform DCOP query, but failed."
 msgstr ""
 "Саволи иҷро кардани DCOP -ро санҷиданд, "
 "валеноком ёфт."
 
-#: widget/kommanderwidget.cpp:301
+#: widget/kommanderwidget.cpp:318
 msgid "DCOP return type %1 is not yet implemented."
 msgstr ""
 "DCOP  бар гардондани намуд %1 ҳоло ҳам иҷро "
 "нашудааст."
 
-#: widget/kommanderwidget.cpp:366
-msgid "Continue and ignore next errors"
+#: widget/kommanderwidget.cpp:383
+msgid "Continue && Ignore Next Errors"
 msgstr ""
 
-#: widget/kommanderwidget.cpp:368
+#: widget/kommanderwidget.cpp:385
 msgid "<qt>Error in widget <b>%1</b>:<p><i>%2</i></qt>"
 msgstr "<qt>Хатоги дар васеъкуни <b>%1</b>:<p><i>%2</i></qt>"
 
-#: widget/kommanderwidget.cpp:387
+#: widget/kommanderwidget.cpp:404
 msgid ""
 "Error in widget %1:\n"
 "  %2\n"
@@ -4820,33 +4786,33 @@ msgstr ""
 "Хатоги дар васеъкуни %1:\n"
 "  %2\n"
 
-#: widget/kommanderwidget.cpp:523
+#: widget/kommanderwidget.cpp:545
 msgid "Unmatched parenthesis after '%1'."
 msgstr "Қавсҳои камонакдори номувофиқ баъди '%1'."
 
-#: widget/kommanderwidget.cpp:532
+#: widget/kommanderwidget.cpp:554
 msgid "Unmatched quotes in argument of '%1'."
 msgstr " Иқтибоси намувофиқ барои асоси '%1'."
 
-#: widget/kommanderwidget.cpp:534
+#: widget/kommanderwidget.cpp:556
 msgid "Unknown function group: '%1'."
 msgstr "Надонистани функсияи гурӯҳ: '%1'."
 
-#: widget/kommanderwidget.cpp:536
+#: widget/kommanderwidget.cpp:558
 msgid "Unknown function: '%1' in group '%2'."
 msgstr "Надонистани функсия: '%1' дар гурӯҳ '%2'."
 
-#: widget/kommanderwidget.cpp:538
+#: widget/kommanderwidget.cpp:560
 msgid "Unknown widget function: '%1'."
 msgstr "Надонистани функсияи васеъкуни: '%1'."
 
-#: widget/kommanderwidget.cpp:540
+#: widget/kommanderwidget.cpp:562
 msgid "Not enough arguments for '%1' (%2 instead of %3).<p>Correct syntax is: %4"
 msgstr ""
 "Асос кифоя нест барои '%1' (%2 аз баҷои "
 "%3).<p>Таркиби дуруст аст: %4"
 
-#: widget/kommanderwidget.cpp:545
+#: widget/kommanderwidget.cpp:567
 msgid "Too many arguments for '%1' (%2 instead of %3).<p>Correct syntax is: %4"
 msgstr ""
 "Асосҳои хело зиёд барои '%1' (%2 аз баҷои "
@@ -5062,6 +5028,67 @@ msgstr "Овехтани риштаи додашуда ба охири файл.
 #: widgets/closebutton.cpp:116
 msgid "Failed to start shell process."
 msgstr "Сар кардани ҷилди просесси кам карда шуда."
+
+#~ msgid "&Pixmaps"
+#~ msgstr "&Ҳаритаҳои Pix"
+
+#~ msgid "Save in&line"
+#~ msgstr "Дар хат нигоҳ доштан"
+
+#~ msgid "Save pixmaps in the .ui files"
+#~ msgstr "Нигоҳ доштани ҳаритаҳои pix дар файлҳои .ui"
+
+#~ msgid "<b>Save Inline</b><p>Saves the pixmaps as binary data in the .ui files. Pixmaps saved like this are not shared between forms. We recommend using Project image files instead."
+#~ msgstr "<b>Дар хат нигоҳ доштан</b><p>Харитаи pix-ро ҳамчун таърихи ҳисоби дуӣ дар файлҳои ui нигоҳ доред.Харитаи pix ва варақаҳо байнашон тақсим карда намешавад. Мо тавсия менамоем ки нақшаи файлҳои тасвирро ба ҷои ин истифода баред."
+
+#~ msgid "Project &image file"
+#~ msgstr "Нақшаи файли &тасвир"
+
+#~ msgid "Use the Project's Image file for pixmaps"
+#~ msgstr "Нақшаи файли тасвирро барои харитаи pix истифода баред"
+
+#~ msgid ""
+#~ "<b>Use the Project's Image file for pixmaps</b>\n"
+#~ "<p>Each project may have a collection of pixmaps. If you use a project, we recommend that you use this option since it shares the images and is the fastest and most efficient way to use pixmaps in your forms.</p>"
+#~ msgstr ""
+#~ "<b>Нақшаи файли тасвирро барои харитаи pix истифода баред</b>\n"
+#~ "<p>Ҳар як нақша метавонад пайвастагии харитаи pix-ро дошта бошад. Агар шумо нақшаро истифода баред, мо тавсия менамоем, ки шумо ин интихобро истифода баред то он даме ки ин тасвирро тақсим нанамояд ва ин тезтар ва аз ҳама роҳи қулай барои истифода бурдани харитаи pix дар варақа.</p>"
+
+#~ msgid "Specify Pixmap-Loader function (only the function's name, no parentheses.)"
+#~ msgstr "Пурбор кунандаи амали харитаи pix-ро таъин намоед (фақат амали ном, на дар қавсҳои камонак.)"
+
+#~ msgid "<b>Specify Pixmap-Loader function</b><p>Specify the function which should be used for loading a pixmap in the generated code. <em>Only enter the function's name, with no parentheses.</em>"
+#~ msgstr "<b>Пурбор кунандаи амали харитаи pix-ро таъин намоед</b> <p>Барои пурбор кардани харитаи pix дар коди тавлид карда шуда таъини амалро барои истифодаи пурбор истифода намоед. <em> (фақат амалином, на дар қавсҳои камонак.)</em>"
+
+#~ msgid "Use &function:"
+#~ msgstr "Истифодаи &функсия:"
+
+#~ msgid "Use the given function for pixmaps"
+#~ msgstr "Функсияи дода шудаи барои харитаи pix-ро истифода баред"
+
+#~ msgid "<b>Use a given function for pixmaps</b><p>If you choose this option you must define a function in the line edit at the right which will be used in the generated code for loading pixmaps. When choosing a pixmap in <i>Qt Designer</i> you will be asked to specify the arguments which will be passed to the function in the generated code.<p> This approach makes it possible to use your own icon-loader function for loading pixmaps.  <i>Qt Designer</i> can't preview the correct image if you use your own function."
+#~ msgstr "<p>Вазифаи асосиро барои харитаи pix истифода намоед</b> <p>, ва агар шумо ин интихобро интихоб намоед ба шумо лозим меояд, ки вазифаро дар рах муаян созед ва қоидаро вироиш намоед, то ин ки ҳангоме ки дар ба вуҷудоии кодекс барои пурборкунии харитаи pix лозим меояд. ҳангоми интихоб намудани харитаи pix дар <i>лоиҳасозӣ Qt </i> аз шумо пурсида мешавад, ки далелро муаян созед, то ки вазифаиро дар кодекси ба вуҷудоӣ дода шавад. <p> Ин кор имкон медиҳад, ки барои вазифаи хусуии худро барои пурбор кардани харитаи pix.  <i> лоиҳасозӣ Qt </i> агар шумо вазафаи асосии худро истифода баред барои тасвири дуруст эълон карда наметавонад."
+
+#~ msgid "Change class name"
+#~ msgstr "Номи синф дигаргун кунед"
+
+#~ msgid "<b>Enter the name of the class that will be created.</b><p><em>classname.h</em> and <em>classname.cpp</em> will be generated as C++ output when it is compiled by uic.</p>"
+#~ msgstr "<b>Номи синфе, ки дар оянда бунёд карда мешавад ворид намоед.</b><p><em>ном.h</em> ва <em>номи.cpp</em> ҳамчун C++ хуруҷ тавлид карда мешавад вақте ки аз тарафи uic ҳамгардон карда мешавад.</p>"
+
+#~ msgid "Class &name:"
+#~ msgstr "Номи &синф:"
+
+#~ msgid "Project"
+#~ msgstr "Нақша"
+
+#~ msgid "Widget"
+#~ msgstr "Виджет"
+
+#~ msgid "Main Window"
+#~ msgstr "Тирезаи Асосӣ"
+
+#~ msgid "Failed to load file '%1'"
+#~ msgstr "Бор кардани файл ноком шуд '%1'"
 
 #~ msgid "Kommander Files (*.kmdr)"
 #~ msgstr "Файли Kommander (*.kmdr)"
@@ -5496,9 +5523,6 @@ msgstr "Сар кардани ҷилди просесси кам карда шу
 
 #~ msgid "Co&nnections..."
 #~ msgstr "А&лоқаҳо..."
-
-#~ msgid "&Form Settings..."
-#~ msgstr "&Шакли мизробҳо..."
 
 #~ msgid "Preferences..."
 #~ msgstr "Маълумотгирӣ..."

@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
-"POT-Creation-Date: 2005-01-03 01:41+0100\n"
+"POT-Creation-Date: 2005-02-03 01:23+0100\n"
 "PO-Revision-Date: 2004-08-18 17:21+0500\n"
 "Last-Translator: Akmal Salomov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -166,7 +166,7 @@ msgstr ""
 msgid "None"
 msgstr "Нест"
 
-#: alarmlistview.cpp:70 editdlg.cpp:247 editdlg.cpp:290
+#: alarmlistview.cpp:70 editdlg.cpp:247 editdlg.cpp:312
 msgid "Time"
 msgstr "Вақт"
 
@@ -287,7 +287,7 @@ msgstr "Санаи хотиррасониро ворид кунед."
 msgid "Enter the time to schedule the alarm."
 msgstr "Муддати хотиррасониро ворид кунед."
 
-#: alarmtimewidget.cpp:121 editdlg.cpp:279
+#: alarmtimewidget.cpp:121 editdlg.cpp:301
 msgid "An&y time"
 msgstr "Дар &ҳар муддат"
 
@@ -443,11 +443,11 @@ msgstr ""
 "хотиррасонии худи рӯзи таваллуд сабт "
 "карда мешавад."
 
-#: birthdaydlg.cpp:172 editdlg.cpp:415
+#: birthdaydlg.cpp:172 editdlg.cpp:437
 msgid "Special Actions..."
 msgstr "Амалҳои махсус..."
 
-#: birthdaydlg.cpp:185 editdlg.cpp:309
+#: birthdaydlg.cpp:185 editdlg.cpp:331
 msgid "Simple Repetition"
 msgstr ""
 
@@ -460,7 +460,8 @@ msgid "Error reading address book"
 msgstr "Хатои боз кардани китоби адресӣ"
 
 #: daemon.cpp:137
-msgid "Alarm Daemon not found"
+#, fuzzy
+msgid "Alarm daemon not found."
 msgstr "Демони соати зангдори рӯимизӣ ёфт нашуд"
 
 #: daemon.cpp:211
@@ -478,7 +479,7 @@ msgstr ""
 "ба демони соати зангдори рӯимизӣ, васл "
 "кардан имконпазир нест (%1)"
 
-#: daemon.cpp:255
+#: daemon.cpp:269
 msgid ""
 "Cannot enable alarms:\n"
 "Failed to start Alarm Daemon (%1)"
@@ -487,11 +488,11 @@ msgstr ""
 "демони соати зангдори рӯимизиро ба кор "
 "сар додан имконпазир нест (%1)"
 
-#: daemon.cpp:623
+#: daemon.cpp:630
 msgid "&Alarms Enabled"
 msgstr "&Фаъол сохтани соати зангдори рӯимизӣ"
 
-#: daemon.cpp:623
+#: daemon.cpp:630
 msgid "Enable &Alarms"
 msgstr "Фаъол сохтани &хотиррасонӣ"
 
@@ -655,7 +656,7 @@ msgstr ""
 "дохилинишона оганоти файли матнӣ ё файл "
 "бо тасвирот намоиш дода мешавад."
 
-#: editdlg.cpp:205
+#: editdlg.cpp:205 find.cpp:121
 msgid "Co&mmand"
 msgstr "&Дастур"
 
@@ -666,7 +667,7 @@ msgstr ""
 "рӯимизии зангдор дастури ҷилдро иҷро "
 "мекунад."
 
-#: editdlg.cpp:213
+#: editdlg.cpp:213 find.cpp:126
 msgid "&Email"
 msgstr "&Email"
 
@@ -709,37 +710,46 @@ msgstr ""
 "Бояд муддати ибтидоии пешфарзӣ низ "
 "истифода шавад."
 
-#: editdlg.cpp:264
+#: editdlg.cpp:269
+#, fuzzy
+msgid ""
+"Set alarms based on this template to start after the specified time interval "
+"from when the alarm is created."
+msgstr ""
+"Хотиррасониро баъд аз танаффуси "
+"муваққатии ишорашуда муайян намудан."
+
+#: editdlg.cpp:286
 msgid "Time:"
 msgstr "Вақт:"
 
-#: editdlg.cpp:268
+#: editdlg.cpp:290
 msgid "Specify a start time for alarms based on this template."
 msgstr ""
 "Муддати ибтидоии барои хотиррасоние, ки "
 "ба ин қолиб асос гузоштааст, ишора кунед."
 
-#: editdlg.cpp:274
+#: editdlg.cpp:296
 msgid "Enter the start time for alarms based on this template."
 msgstr ""
 "Муддати ибтидоии барои хотиррасоние, ки "
 "ба ин қолиб асос гузоштааст, ворид кунед."
 
-#: editdlg.cpp:283
+#: editdlg.cpp:305
 msgid "Set the '%1' option for alarms based on this template."
 msgstr ""
 "Параметри '%1'-ро барои хотиррасоние, ки ба "
 "ин қолиб асос гузоштааст, сабт кунед."
 
-#: editdlg.cpp:283 recurrenceedit.cpp:269
+#: editdlg.cpp:305 recurrenceedit.cpp:269
 msgid "Any time"
 msgstr "Дар ягон вақт"
 
-#: editdlg.cpp:299
+#: editdlg.cpp:321
 msgid "Recurrence:"
 msgstr "Такроршавӣ:"
 
-#: editdlg.cpp:303
+#: editdlg.cpp:325
 #, fuzzy
 msgid ""
 "How often the alarm recurs.\n"
@@ -750,50 +760,50 @@ msgstr ""
 "Такророти хотиррасонӣ ба варақаи замимаи "
 "Такроршавӣ танзим шуда истодааст."
 
-#: editdlg.cpp:313
+#: editdlg.cpp:335
 msgid "Set up a simple, or additional, alarm repetition"
 msgstr ""
 
-#: editdlg.cpp:321
+#: editdlg.cpp:343
 msgid "Schedule the alarm at the specified time."
 msgstr ""
 "Хотиррасониро ба муддати ишорашуда "
 "муқаррар намудан."
 
-#: editdlg.cpp:355
+#: editdlg.cpp:377
 msgid "Enter the text of the alarm message. It may be multi-line."
 msgstr ""
 "Матни хотиррасониро ворид кунед. Метавон "
 "якчанд сатрро ишора намуд."
 
-#: editdlg.cpp:363
+#: editdlg.cpp:385
 msgid "Enter the name or URL of a text or image file to display."
 msgstr ""
 "Номи файл ё истинодоти Интернетро ба "
 "файли матнӣ ё тасовироти барои намоишро "
 "низ ворид кунед."
 
-#: editdlg.cpp:371
+#: editdlg.cpp:393
 msgid "Choose a file"
 msgstr "Файл интихоб кунед"
 
-#: editdlg.cpp:372
+#: editdlg.cpp:394
 msgid "Select a text or image file to display."
 msgstr ""
 "Интихоби файли матнӣ ё тасвирот барои "
 "намоиш."
 
-#: editdlg.cpp:396
+#: editdlg.cpp:418
 msgid "Enter how long in advance of the main alarm to display a reminder alarm."
 msgstr ""
 "Баъд аз чанд вақт дар бораи воқеъот "
 "хотиррасонӣ кунам."
 
-#: editdlg.cpp:397
+#: editdlg.cpp:419
 msgid "Rem&inder:"
 msgstr "Хотир&расонӣ кардан баъди:"
 
-#: editdlg.cpp:398
+#: editdlg.cpp:420
 msgid ""
 "Check to additionally display a reminder in advance of the main alarm "
 "time(s)."
@@ -801,24 +811,24 @@ msgstr ""
 "Ба тарзи илова намоиш додани "
 "хотиррасонӣ,то воқеъоти асосӣ."
 
-#: editdlg.cpp:438
+#: editdlg.cpp:460
 msgid "Check to enter the contents of a script instead of a shell command line"
 msgstr ""
 
-#: editdlg.cpp:442
+#: editdlg.cpp:464
 msgid "Enter a shell command to execute."
 msgstr "Дастуре барои иҷро ворид кунед."
 
-#: editdlg.cpp:446
+#: editdlg.cpp:468
 #, fuzzy
 msgid "Enter the contents of a script to execute"
 msgstr "Дастуре барои иҷро ворид кунед."
 
-#: editdlg.cpp:451
+#: editdlg.cpp:473
 msgid "Check to execute the command in a terminal window"
 msgstr ""
 
-#: editdlg.cpp:483
+#: editdlg.cpp:505
 #, fuzzy
 msgid ""
 "Your email identity, used to identify you as the sender when sending email "
@@ -829,7 +839,7 @@ msgstr ""
 "ҳангоми фиристодани хотиррасонӣ бо "
 "почтаи электронӣ истифода мешавад."
 
-#: editdlg.cpp:495
+#: editdlg.cpp:517
 msgid ""
 "Enter the addresses of the email recipients. Separate multiple addresses by "
 "commas or semicolons."
@@ -838,94 +848,94 @@ msgstr ""
 "Ҳамчун ҷудокунаки адресҳо вергул ё "
 "нуқта-вергулро истифода кунед."
 
-#: editdlg.cpp:503
+#: editdlg.cpp:525
 msgid "Open address book"
 msgstr "Боз кардани китоби адресӣ"
 
-#: editdlg.cpp:504
+#: editdlg.cpp:526
 msgid "Select email addresses from your address book."
 msgstr ""
 "Интихоби адресҳои почтаи электронӣ аз "
 "китоби адресӣ."
 
-#: editdlg.cpp:515
+#: editdlg.cpp:537
 msgid "Enter the email subject."
 msgstr "Мавзӯъи ахборотро ишора кунед."
 
-#: editdlg.cpp:520
+#: editdlg.cpp:542
 msgid "Enter the email message."
 msgstr "Ахбороти почтаи электрониро ишора кунед."
 
-#: editdlg.cpp:525
+#: editdlg.cpp:547
 msgid "Attachment&s:"
 msgstr "&Замимот:"
 
-#: editdlg.cpp:537
+#: editdlg.cpp:559
 msgid "Files to send as attachments to the email."
 msgstr ""
 "Файлҳои барои замима намудан ба "
 "иттилооти почтаи электронӣ."
 
-#: editdlg.cpp:541
+#: editdlg.cpp:563
 msgid "Add..."
 msgstr "Афзудан..."
 
-#: editdlg.cpp:543
+#: editdlg.cpp:565
 msgid "Add an attachment to the email."
 msgstr "Афзудани замимот ба иттилоот."
 
-#: editdlg.cpp:546
+#: editdlg.cpp:568
 msgid "Remo&ve"
 msgstr "&Ҳузф кардан"
 
-#: editdlg.cpp:548
+#: editdlg.cpp:570
 msgid "Remove the highlighted attachment from the email."
 msgstr "Ҳузфи замимоти ҷудошуда аз иттилоот."
 
-#: editdlg.cpp:555
+#: editdlg.cpp:577
 msgid "If checked, the email will be blind copied to you."
 msgstr ""
 "Агар нишона интихоб шуда бошад, ба шумо "
 "нусхаи пинҳонии иттилоот фиристода "
 "мешавад."
 
-#: editdlg.cpp:848 fontcolour.cpp:82
+#: editdlg.cpp:870 fontcolour.cpp:82
 msgid "&Background color:"
 msgstr "Ранги &замина:"
 
-#: editdlg.cpp:853
+#: editdlg.cpp:875
 msgid "Message color"
 msgstr "Ранги хотиррасонӣ"
 
-#: editdlg.cpp:856
+#: editdlg.cpp:878
 msgid "Choose the background color for the alarm message."
 msgstr ""
 "Ранги заминаи хотиррасониро интихоб "
 "кунед."
 
-#: editdlg.cpp:867
+#: editdlg.cpp:889
 msgid "Check to be prompted for confirmation when you acknowledge the alarm."
 msgstr ""
 "Агар нишона фаъол бошад, тадқиқоти қабули "
 "иттилоот пурсида мешавад."
 
-#: editdlg.cpp:1203
+#: editdlg.cpp:1225
 msgid "You must enter a name for the alarm template"
 msgstr ""
 "Шумо бояд ном барои қолиби хотиррасонӣ "
 "ворид кунед"
 
-#: editdlg.cpp:1208
+#: editdlg.cpp:1230
 msgid "Template name is already in use"
 msgstr ""
 "Номи қолиб аллакай истифода шуда "
 "истодааст"
 
-#: editdlg.cpp:1248
+#: editdlg.cpp:1270
 msgid "Recurrence has already expired"
 msgstr "Муддати хотиррасонӣ аллакай гузашт"
 
-#: editdlg.cpp:1278
+#: editdlg.cpp:1300
 msgid ""
 "Reminder period must be less than the recurrence interval, unless '%1' is "
 "checked."
@@ -934,7 +944,7 @@ msgstr ""
 "пешхотиррасонӣ бояд кам аз даври "
 "такроршавӣ бошад."
 
-#: editdlg.cpp:1301
+#: editdlg.cpp:1323
 #, fuzzy
 msgid ""
 "Simple alarm repetition duration must be less than the recurrence interval "
@@ -944,27 +954,27 @@ msgstr ""
 "пешхотиррасонӣ бояд кам аз даври "
 "такроршавӣ бошад."
 
-#: editdlg.cpp:1310
+#: editdlg.cpp:1332
 msgid ""
 "Simple alarm repetition period must be in units of days or weeks for a "
 "date-only alarm"
 msgstr ""
 
-#: editdlg.cpp:1333
+#: editdlg.cpp:1355
 msgid "Do you really want to send the email now to the specified recipient(s)?"
 msgstr ""
 "Иттилоотро бо почтаи электронӣ ба "
 "қабулкунандагони ишорашуда бифиристам?"
 
-#: editdlg.cpp:1334
+#: editdlg.cpp:1356
 msgid "Confirm Email"
 msgstr "Тасдиқоти фиристодани иттилоот"
 
-#: editdlg.cpp:1334
+#: editdlg.cpp:1356
 msgid "&Send"
 msgstr "&Фиристодан"
 
-#: editdlg.cpp:1345
+#: editdlg.cpp:1367
 #, c-format
 msgid ""
 "Command executed:\n"
@@ -973,7 +983,7 @@ msgstr ""
 "Дастури зерин иҷро шуд:\n"
 "%1"
 
-#: editdlg.cpp:1352
+#: editdlg.cpp:1374
 #, c-format
 msgid ""
 "\n"
@@ -982,7 +992,7 @@ msgstr ""
 "\n"
 "Bcc: %1"
 
-#: editdlg.cpp:1353
+#: editdlg.cpp:1375
 msgid ""
 "Email sent to:\n"
 "%1%2"
@@ -990,11 +1000,11 @@ msgstr ""
 "Иттилоот фиристода шуд:\n"
 "%1%2"
 
-#: editdlg.cpp:1412 messagewin.cpp:1054
+#: editdlg.cpp:1434 messagewin.cpp:1054
 msgid "Defer Alarm"
 msgstr "Монондани хотиррасонӣ"
 
-#: editdlg.cpp:1563
+#: editdlg.cpp:1585
 #, c-format
 msgid ""
 "Invalid email address:\n"
@@ -1003,13 +1013,13 @@ msgstr ""
 "Адерси нодурусти почтаи электронӣ:\n"
 "%1"
 
-#: editdlg.cpp:1570
+#: editdlg.cpp:1592
 msgid "No email address specified"
 msgstr ""
 "Қабулкунандагони иттилоот ишора "
 "нашудаанд"
 
-#: editdlg.cpp:1587
+#: editdlg.cpp:1609
 #, c-format
 msgid ""
 "Invalid email attachment:\n"
@@ -1018,35 +1028,35 @@ msgstr ""
 "Хатои дохилгузорӣ:\n"
 "%1"
 
-#: editdlg.cpp:1609
+#: editdlg.cpp:1631
 msgid "Display the alarm message now"
 msgstr "Дарҳол намоиш додани хотиррасонӣ"
 
-#: editdlg.cpp:1620
+#: editdlg.cpp:1642
 msgid "Display the file now"
 msgstr "Дарҳол намоиш додани файл"
 
-#: editdlg.cpp:1628
+#: editdlg.cpp:1650
 msgid "Execute the specified command now"
 msgstr "Дарҳол иҷро намудани дастуроти ишорашуда"
 
-#: editdlg.cpp:1635
+#: editdlg.cpp:1657
 msgid "Send the email to the specified addressees now"
 msgstr ""
 "Дарҳол фиристодани иттилоот ба "
 "қабулкунандагони ишорашуда"
 
-#: editdlg.cpp:1684
+#: editdlg.cpp:1706
 msgid "Choose Text or Image File to Display"
 msgstr ""
 "Интихоби файли матнӣ ё тасовирот барои "
 "намоиш"
 
-#: editdlg.cpp:1745
+#: editdlg.cpp:1767
 msgid "Choose File to Attach"
 msgstr "Интихоби файл барои дохилгузорӣ"
 
-#: editdlg.cpp:1854
+#: editdlg.cpp:1876
 msgid ""
 "%1\n"
 "not found"
@@ -1054,7 +1064,7 @@ msgstr ""
 "%1\n"
 "ёфт нашуд"
 
-#: editdlg.cpp:1855
+#: editdlg.cpp:1877
 msgid ""
 "%1\n"
 "is a folder"
@@ -1062,7 +1072,7 @@ msgstr ""
 "%1\n"
 "каталог мебошад"
 
-#: editdlg.cpp:1856
+#: editdlg.cpp:1878
 msgid ""
 "%1\n"
 "is not readable"
@@ -1070,7 +1080,7 @@ msgstr ""
 "%1\n"
 "барои хондан дастрас нест"
 
-#: editdlg.cpp:1857
+#: editdlg.cpp:1879
 msgid ""
 "%1\n"
 "appears not to be a text or image file"
@@ -1079,7 +1089,7 @@ msgstr ""
 "мумкин файли матнӣ ё файли тасвирот "
 "намебошад"
 
-#: editdlg.cpp:1859
+#: editdlg.cpp:1881
 msgid ""
 "%1\n"
 "HTML/XML files may not display correctly"
@@ -1087,6 +1097,57 @@ msgstr ""
 "%1\n"
 "файлҳои HTML/XML метавонад ғайритасҳеҳ "
 "намоиш шавад"
+
+#: find.cpp:88
+#, fuzzy
+msgid "Alarm Type"
+msgstr "Навъи хотиррасонӣ"
+
+#: find.cpp:95
+#, fuzzy
+msgid "Acti&ve"
+msgstr "Фаъол сохтани %1"
+
+#: find.cpp:97
+msgid "Check to include active alarms in the search."
+msgstr ""
+
+#: find.cpp:100
+#, fuzzy
+msgid "Ex&pired"
+msgstr "Хотиррасонии кӯҳнашуда"
+
+#: find.cpp:103
+msgid ""
+"Check to include expired alarms in the search. This option is only available "
+"if expired alarms are currently being displayed."
+msgstr ""
+
+#: find.cpp:111
+#, fuzzy
+msgid "Text"
+msgstr "&Матн"
+
+#: find.cpp:113
+msgid "Check to include text message alarms in the search."
+msgstr ""
+
+#: find.cpp:116
+#, fuzzy
+msgid "Fi&le"
+msgstr "Ғайри&фаъол сохтан"
+
+#: find.cpp:118
+msgid "Check to include file alarms in the search."
+msgstr ""
+
+#: find.cpp:123
+msgid "Check to include command alarms in the search."
+msgstr ""
+
+#: find.cpp:128
+msgid "Check to include email alarms in the search."
+msgstr ""
 
 #: fontcolour.cpp:67
 msgid "&Foreground color:"
@@ -1640,63 +1701,69 @@ msgstr "&Қолибот..."
 msgid "&New..."
 msgstr "&Эҷод..."
 
-#: mainwindow.cpp:289
+#: mainwindow.cpp:290
+#, fuzzy
+msgid "New &From Template"
+msgstr "Қолиби нави хотиррасонӣ"
+
+#: mainwindow.cpp:292
 msgid "Create Tem&plate..."
 msgstr "Эҷоди &қолиб..."
 
-#: mainwindow.cpp:290
+#: mainwindow.cpp:293
 msgid "&Copy..."
 msgstr "&Копӣ кардан..."
 
-#: mainwindow.cpp:291 templatedlg.cpp:65
+#: mainwindow.cpp:294 templatedlg.cpp:65
 msgid "&Edit..."
 msgstr "&Таъғирот..."
 
-#: mainwindow.cpp:293
-msgid "&Undelete"
-msgstr "Б&арҳам додани ҳузфкунӣ"
+#: mainwindow.cpp:296
+#, fuzzy
+msgid "Reac&tivate"
+msgstr "Фаъол сохтани %1"
 
-#: mainwindow.cpp:297
+#: mainwindow.cpp:300
 msgid "Hide &Alarm Times"
 msgstr "Пинҳони &муддати хотиррасонӣ"
 
-#: mainwindow.cpp:299
+#: mainwindow.cpp:302
 msgid "Hide Time t&o Alarms"
 msgstr "Пинҳони муддат &то хотиррасонӣ"
 
-#: mainwindow.cpp:302
+#: mainwindow.cpp:305
 msgid "Show in System &Tray"
 msgstr "Намоиш додан дар &новаи системавӣ"
 
-#: mainwindow.cpp:303
+#: mainwindow.cpp:306
 msgid "Hide From System &Tray"
 msgstr "Пинҳон намудан аз &новаи системавӣ"
 
-#: mainwindow.cpp:304
+#: mainwindow.cpp:307
 msgid "Import &Birthdays..."
 msgstr "&Воридоти рӯзи таваллуд..."
 
-#: mainwindow.cpp:305
+#: mainwindow.cpp:308
 msgid "&Refresh Alarms"
 msgstr "&Бозсозӣ"
 
-#: mainwindow.cpp:488 mainwindow.cpp:527
+#: mainwindow.cpp:491 mainwindow.cpp:530
 msgid "New Alarm"
 msgstr "Хотиррасонии нав"
 
-#: mainwindow.cpp:551
+#: mainwindow.cpp:554
 msgid "Edit Alarm"
 msgstr "Таъғири хотиррасонӣ"
 
-#: mainwindow.cpp:578
+#: mainwindow.cpp:581
 msgid "Expired Alarm"
 msgstr "Хотиррасонии кӯҳнашуда"
 
-#: mainwindow.cpp:578
+#: mainwindow.cpp:581
 msgid "View Alarm"
 msgstr "Намоиши хотиррасонӣ"
 
-#: mainwindow.cpp:595
+#: mainwindow.cpp:598
 #, c-format
 msgid ""
 "_n: Do you really want to delete the selected alarm?\n"
@@ -1707,7 +1774,7 @@ msgstr ""
 "Оё ҳақиқатан мехоҳед %n -и хотиррасонии "
 "интихобшударо ҳузф кунед?"
 
-#: mainwindow.cpp:596
+#: mainwindow.cpp:599
 msgid ""
 "_n: Delete Alarm\n"
 "Delete Alarms"
@@ -1715,15 +1782,15 @@ msgstr ""
 "Ҳузфи хотиррасонӣ\n"
 "Ҳузфи хотиррасониҳо"
 
-#: mainwindow.cpp:1020
+#: mainwindow.cpp:1023
 msgid "Ena&ble"
 msgstr "&Фаъол сохтан"
 
-#: mainwindow.cpp:1020
+#: mainwindow.cpp:1023
 msgid "Disa&ble"
 msgstr "Ғайри&фаъол сохтан"
 
-#: mainwindow.cpp:1032
+#: mainwindow.cpp:1035
 msgid ""
 "_: Please set the 'From' email address...\n"
 "%1\n"
@@ -1732,7 +1799,7 @@ msgstr ""
 "%1\n"
 "Лутфан онро дар танзимот ишора кунед."
 
-#: mainwindow.cpp:1036
+#: mainwindow.cpp:1039
 msgid ""
 "Alarms are currently disabled.\n"
 "Do you want to enable alarms now?"
@@ -1913,45 +1980,45 @@ msgstr "Тасдиқ кардан"
 msgid "&Acknowledge"
 msgstr "&Тасдиқот"
 
-#: prefdlg.cpp:91
+#: prefdlg.cpp:92
 msgid "Preferences"
 msgstr "Танзимот"
 
-#: prefdlg.cpp:95
+#: prefdlg.cpp:96
 msgid "General"
 msgstr "Умумӣ"
 
-#: prefdlg.cpp:98
+#: prefdlg.cpp:99
 msgid "Email"
 msgstr "E-mail"
 
-#: prefdlg.cpp:98
+#: prefdlg.cpp:99
 msgid "Email Alarm Settings"
 msgstr ""
 "Танзимоти хотиррасонӣ аз почтаи "
 "электронӣ"
 
-#: prefdlg.cpp:101
+#: prefdlg.cpp:102
 msgid "View Settings"
 msgstr "Намоиши танзимот"
 
-#: prefdlg.cpp:104
+#: prefdlg.cpp:105
 msgid "Font & Color"
 msgstr "Ҳуруф ва ранг"
 
-#: prefdlg.cpp:104
+#: prefdlg.cpp:105
 msgid "Default Font and Color"
 msgstr "Ҳуруф ва ранги пешфарзӣ"
 
-#: prefdlg.cpp:107
+#: prefdlg.cpp:108
 msgid "Default Alarm Edit Settings"
 msgstr "Таъғири танзимоти пешфарзӣ"
 
-#: prefdlg.cpp:222
+#: prefdlg.cpp:223
 msgid "Start alarm monitoring at lo&gin"
 msgstr ""
 
-#: prefdlg.cpp:226
+#: prefdlg.cpp:227
 msgid ""
 "Automatically start alarm monitoring whenever you start KDE, by running the "
 "alarm daemon (%1).\n"
@@ -1960,15 +2027,15 @@ msgid ""
 "%2."
 msgstr ""
 
-#: prefdlg.cpp:230
+#: prefdlg.cpp:231
 msgid "Run Mode"
 msgstr "Тартиботи оғозкунӣ"
 
-#: prefdlg.cpp:239
+#: prefdlg.cpp:240
 msgid "Run continuously in system &tray"
 msgstr "Дар новаи &системавӣ оғоз намудан"
 
-#: prefdlg.cpp:243
+#: prefdlg.cpp:244
 msgid ""
 "Check to run %1 continuously in the KDE system tray.\n"
 "\n"
@@ -1992,21 +2059,21 @@ msgstr ""
 "хотиррасониро ва намоиши ҳолати демони "
 "соати рӯимизии зангдорро низ медиҳад."
 
-#: prefdlg.cpp:251
+#: prefdlg.cpp:252
 msgid "Autostart at &login"
 msgstr "Худоғоз ҳангоми &қайд"
 
-#: prefdlg.cpp:254
+#: prefdlg.cpp:255
 msgid "Check to run %1 whenever you start KDE."
 msgstr "Оғози %1 ҳангоми оғози KDE"
 
-#: prefdlg.cpp:258
+#: prefdlg.cpp:259
 msgid "Disa&ble alarms while not running"
 msgstr ""
 "&Ғайрифаъолсозии хотиррасонӣ мавриде, ки "
 "демон ба кор дароварда нест"
 
-#: prefdlg.cpp:262
+#: prefdlg.cpp:263
 msgid ""
 "Check to disable alarms whenever %1 is not running. Alarms will only appear "
 "while the system tray icon is visible."
@@ -2016,20 +2083,20 @@ msgstr ""
 "танҳо ҳангоми ҳозир будани барнома дар "
 "новаи системавӣ, намоиш хоҳад шуд."
 
-#: prefdlg.cpp:266
+#: prefdlg.cpp:267
 msgid "Warn before &quitting"
 msgstr "Огоҳӣ пеш аз &баромадан"
 
-#: prefdlg.cpp:269
+#: prefdlg.cpp:270
 #, c-format
 msgid "Check to display a warning prompt before quitting %1."
 msgstr "Намоиши огоҳӣ ҳангоми баромадан аз %1."
 
-#: prefdlg.cpp:274
+#: prefdlg.cpp:275
 msgid "&Run only on demand"
 msgstr "Оғози &дастӣ"
 
-#: prefdlg.cpp:278
+#: prefdlg.cpp:279
 msgid ""
 "Check to run %1 only when required.\n"
 "\n"
@@ -2049,23 +2116,23 @@ msgstr ""
 "аломат дар новаи системавӣ метавон қатъи "
 "назар аз %3 намоиш ё пинҳон шавад."
 
-#: prefdlg.cpp:286
+#: prefdlg.cpp:287
 msgid "Autostart system tray &icon at login"
 msgstr "&Худоғоз дар новаи системавӣ ҳангоми қайд"
 
-#: prefdlg.cpp:289
+#: prefdlg.cpp:290
 msgid "Check to display the system tray icon whenever you start KDE."
 msgstr ""
 "Намоиши ишорот дар новаи системавӣ "
 "ҳангоми оғози KDE."
 
-#: prefdlg.cpp:297
+#: prefdlg.cpp:298
 msgid "&Start of day for date-only alarms:"
 msgstr ""
 "&Ибтидои рӯз барои хотиррасонӣ аз муддати "
 "ишорашуда:"
 
-#: prefdlg.cpp:301
+#: prefdlg.cpp:302
 msgid ""
 "The earliest time of day at which a date-only alarm (i.e. an alarm with "
 "\"any time\" specified) will be triggered."
@@ -2075,25 +2142,25 @@ msgstr ""
 "ишорашудаи \"Дар ягон вақт\") намоиш хоҳад "
 "шуд."
 
-#: prefdlg.cpp:310
+#: prefdlg.cpp:311
 msgid "In non-leap years, repeat yearly February 29th alarms on:"
 msgstr ""
 "Дар солҳои ғайрикабиса, гузаронидани "
 "хотиррасонии ҳарсола ба 29-уми феврал ба:"
 
-#: prefdlg.cpp:318
+#: prefdlg.cpp:319
 msgid "February 2&8th"
 msgstr "2&8-ӯми феврал"
 
-#: prefdlg.cpp:321
+#: prefdlg.cpp:322
 msgid "March &1st"
 msgstr "&1-ӯми март"
 
-#: prefdlg.cpp:324
+#: prefdlg.cpp:325
 msgid "Do &not repeat"
 msgstr "&Такрор накардани хотиррасонӣ"
 
-#: prefdlg.cpp:329
+#: prefdlg.cpp:330
 msgid ""
 "For yearly recurrences, choose what date, if any, alarms due on February "
 "29th should occur in non-leap years.\n"
@@ -2109,23 +2176,23 @@ msgstr ""
 "хотиррасонии мавҷудӣ, аз назар "
 "гузаронида нахоҳанд шуд."
 
-#: prefdlg.cpp:334
+#: prefdlg.cpp:335
 msgid "Con&firm alarm deletions"
 msgstr "Тасдиқи &ҳузфи хотиррасонӣ"
 
-#: prefdlg.cpp:337
+#: prefdlg.cpp:338
 msgid "Check to be prompted for confirmation each time you delete an alarm."
 msgstr "Тасдиқ кардан ҳар вақти ҳузфи хотиррасонӣ"
 
-#: prefdlg.cpp:342
+#: prefdlg.cpp:343
 msgid "Expired Alarms"
 msgstr "Хотиррасониҳои кӯҳнашуда"
 
-#: prefdlg.cpp:347
+#: prefdlg.cpp:348
 msgid "Keep alarms after e&xpiry"
 msgstr "&Нигоҳ доштани хотиррасонӣ баъди намоиш"
 
-#: prefdlg.cpp:351
+#: prefdlg.cpp:352
 msgid ""
 "Check to store alarms after expiry or deletion (except deleted alarms which "
 "were never triggered)."
@@ -2134,15 +2201,15 @@ msgstr ""
 "ҳузф (ғайр аз хотиррасониҳои ҳузфшудае, "
 "ки намоиш нашуда буданд)."
 
-#: prefdlg.cpp:356
+#: prefdlg.cpp:357
 msgid "Discard ex&pired alarms after:"
 msgstr "&Ҳузфи хотиррасониҳои кӯҳнашуда баъд аз:"
 
-#: prefdlg.cpp:363
+#: prefdlg.cpp:364
 msgid "da&ys"
 msgstr "&рӯз"
 
-#: prefdlg.cpp:367
+#: prefdlg.cpp:368
 msgid ""
 "Uncheck to store expired alarms indefinitely. Check to enter how long "
 "expired alarms should be stored."
@@ -2153,35 +2220,35 @@ msgstr ""
 "чӣ қадар хотиррасониҳои кӯҳнашударо "
 "нигоҳ доштан лозимро ишора кунед."
 
-#: prefdlg.cpp:370
+#: prefdlg.cpp:371
 msgid "Clear Expired Alar&ms"
 msgstr "&Ҳузфи хотиррасониҳои кӯҳна"
 
-#: prefdlg.cpp:374
+#: prefdlg.cpp:375
 msgid "Delete all existing expired alarms."
 msgstr "Ҳузфи тамоми хотиррасониҳои гузашта."
 
-#: prefdlg.cpp:379
+#: prefdlg.cpp:380
 msgid "Terminal for Command Alarms"
 msgstr ""
 
-#: prefdlg.cpp:381
+#: prefdlg.cpp:382
 msgid ""
 "Choose which application to use when a command alarm is executed in a "
 "terminal window"
 msgstr ""
 
-#: prefdlg.cpp:388
+#: prefdlg.cpp:389
 msgid ""
 "_: The parameter is a command line, e.g. 'xterm -e'\n"
 "Check to execute command alarms in a terminal window by '%1'"
 msgstr ""
 
-#: prefdlg.cpp:412
+#: prefdlg.cpp:413
 msgid "Other:"
 msgstr ""
 
-#: prefdlg.cpp:418
+#: prefdlg.cpp:419
 msgid ""
 "Enter the full command line needed to execute a command in your chosen "
 "terminal window. By default the alarm's command string will be appended to "
@@ -2189,24 +2256,24 @@ msgid ""
 "tailor the command line."
 msgstr ""
 
-#: prefdlg.cpp:498
+#: prefdlg.cpp:499
 #, c-format
 msgid "You should not uncheck this option unless you intend to discontinue use of %1"
 msgstr ""
 
-#: prefdlg.cpp:561
+#: prefdlg.cpp:562
 msgid "Email client:"
 msgstr "Клиенти почтавӣ:"
 
-#: prefdlg.cpp:564
+#: prefdlg.cpp:565
 msgid "&KMail"
 msgstr "&KMail"
 
-#: prefdlg.cpp:567
+#: prefdlg.cpp:568
 msgid "&Sendmail"
 msgstr "&Sendmail"
 
-#: prefdlg.cpp:573
+#: prefdlg.cpp:574
 msgid ""
 "Choose how to send email when an email alarm is triggered.\n"
 "KMail: The email is added to KMail's outbox if KMail is running. If not, a "
@@ -2229,19 +2296,19 @@ msgstr ""
 "тасҳеҳона дар системаи шумо сабт шуда "
 "бошад, амалӣ хоҳад гашт."
 
-#: prefdlg.cpp:580
+#: prefdlg.cpp:581
 msgid "Co&py sent emails into KMail's %1 folder"
 msgstr ""
 
-#: prefdlg.cpp:583
+#: prefdlg.cpp:584
 msgid "After sending an email, store a copy in KMail's %1 folder"
 msgstr ""
 
-#: prefdlg.cpp:588
+#: prefdlg.cpp:589
 msgid "Your Email Address"
 msgstr "Адреси почтаи электронии шумо"
 
-#: prefdlg.cpp:609
+#: prefdlg.cpp:610
 msgid ""
 "Your email address, used to identify you as the sender when sending email "
 "alarms."
@@ -2251,11 +2318,11 @@ msgstr ""
 "ҳангоми фиристодани хотиррасонӣ бо "
 "почтаи электронӣ истифода мешавад."
 
-#: prefdlg.cpp:616
+#: prefdlg.cpp:617
 msgid "&Use address from Control Center"
 msgstr "Истифода адрес аз &маркази идоракунӣ"
 
-#: prefdlg.cpp:623
+#: prefdlg.cpp:624
 msgid ""
 "Check to use the email address set in the KDE Control Center, to identify "
 "you as the sender when sending email alarms."
@@ -2266,11 +2333,11 @@ msgstr ""
 "ҳангоми фиристодани хотиррасонӣ бо "
 "почтаи электронӣ ишора шудааст."
 
-#: prefdlg.cpp:627
+#: prefdlg.cpp:628
 msgid "Use KMail &identities"
 msgstr ""
 
-#: prefdlg.cpp:631
+#: prefdlg.cpp:632
 msgid ""
 "Check to use KMail's email identities to identify you as the sender when "
 "sending email alarms. For existing email alarms, KMail's default identity "
@@ -2278,13 +2345,13 @@ msgid ""
 "KMail's identities to use."
 msgstr ""
 
-#: prefdlg.cpp:638
+#: prefdlg.cpp:639
 msgid ""
 "_: 'Bcc' email address\n"
 "&Bcc:"
 msgstr "&Нусхаи пинҳонӣ:"
 
-#: prefdlg.cpp:652
+#: prefdlg.cpp:653
 msgid ""
 "Your email address, used for blind copying email alarms to yourself. If you "
 "want blind copies to be sent to your account on the computer which KAlarm "
@@ -2298,11 +2365,11 @@ msgstr ""
 "бифиристед, фақат номи қайдоти худро "
 "ворид кунед."
 
-#: prefdlg.cpp:660
+#: prefdlg.cpp:661
 msgid "Us&e address from Control Center"
 msgstr "И&стифодаи адрес аз Маркази идоракунӣ"
 
-#: prefdlg.cpp:667
+#: prefdlg.cpp:668
 msgid ""
 "Check to use the email address set in the KDE Control Center, for blind "
 "copying email alarms to yourself."
@@ -2311,13 +2378,13 @@ msgstr ""
 "ки дар Маркази идоракунии KDE барои ба худ "
 "фиристодани нусхаи пинҳонӣ ишора шудааст."
 
-#: prefdlg.cpp:673
+#: prefdlg.cpp:674
 msgid "&Notify when remote emails are queued"
 msgstr ""
 "&Хабардор кардан ҳангоми ба роҳ мондани "
 "мактуби хориҷӣ ба сафҳот"
 
-#: prefdlg.cpp:676
+#: prefdlg.cpp:677
 msgid ""
 "Display a notification message whenever an email alarm has queued an email "
 "for sending to a remote system. This could be useful if, for example, you "
@@ -2332,14 +2399,14 @@ msgstr ""
 "онки шумо боварии хосил пайдо кунед, ки "
 "хотиррасонӣ ҳақиқатан фиристода шудааст."
 
-#: prefdlg.cpp:757
+#: prefdlg.cpp:758
 #, fuzzy
-msgid "No valid 'BCC' email address is specified."
+msgid "No valid 'Bcc' email address is specified."
 msgstr ""
 "Қабулкунандагони иттилоот ишора "
 "нашудаанд"
 
-#: prefdlg.cpp:762
+#: prefdlg.cpp:763
 msgid ""
 "%1\n"
 "Are you sure you want to save your changes?"
@@ -2347,71 +2414,71 @@ msgstr ""
 "%1\n"
 "Таъғиротро нигоҳ дорам?"
 
-#: prefdlg.cpp:768
+#: prefdlg.cpp:769
 #, c-format
 msgid "No email address is currently set in the KDE Control Center. %1"
 msgstr ""
 "Адреси сабткардашудае дар маркази "
 "идоракунӣ нест. %1"
 
-#: prefdlg.cpp:773
+#: prefdlg.cpp:774
 #, c-format
 msgid "No KMail identities currently exist. %1"
 msgstr ""
 
-#: prefdlg.cpp:791
+#: prefdlg.cpp:792
 msgid "Message Font && Color"
 msgstr "Ҳуруф ва ранги иттилоот"
 
-#: prefdlg.cpp:796
+#: prefdlg.cpp:797
 #, fuzzy
 msgid "Di&sabled alarm color:"
 msgstr "Ранги хотиррасониҳои барҳамдодашуда:"
 
-#: prefdlg.cpp:803
+#: prefdlg.cpp:804
 msgid "Choose the text color in the alarm list for disabled alarms."
 msgstr ""
 "Ранги матнро дар рӯйхати хотиррасонӣ "
 "барои хотиррасонии барҳамдодашуда низ "
 "интихоб кунед."
 
-#: prefdlg.cpp:810
+#: prefdlg.cpp:811
 msgid "E&xpired alarm color:"
 msgstr "Ранги хотиррасонии &кӯҳнашуда:"
 
-#: prefdlg.cpp:817
+#: prefdlg.cpp:818
 msgid "Choose the text color in the alarm list for expired alarms."
 msgstr ""
 "Ранги матни хотиррасонии кӯҳнашударо дар "
 "рӯйхат интихоб кунед."
 
-#: prefdlg.cpp:871
+#: prefdlg.cpp:872
 msgid "The default setting for \"%1\" in the alarm edit dialog."
 msgstr ""
 "Аҳамияти пешфарзӣ барои \"%1\" дар диалоги "
 "танзимоти хотиррасонӣ мебошад."
 
-#: prefdlg.cpp:874
+#: prefdlg.cpp:875
 #, fuzzy
 msgid "Display Alarms"
 msgstr "Амали махсуси намоиши хотиррасонӣ"
 
-#: prefdlg.cpp:899
+#: prefdlg.cpp:900
 msgid "Reminder &units:"
 msgstr "&Адади такроршавӣ:"
 
-#: prefdlg.cpp:908
+#: prefdlg.cpp:909
 msgid "The default units for the reminder in the alarm edit dialog."
 msgstr ""
 "Аҳамияти адади даври такроршавии "
 "пешфарзӣ дар диалоги танзимоти "
 "хотиррасонӣ иебошад."
 
-#: prefdlg.cpp:928
+#: prefdlg.cpp:929
 msgid "&Beep"
 msgstr "&Занги системавӣ"
 
-#: prefdlg.cpp:931
+#: prefdlg.cpp:932
 msgid ""
 "Check to select Beep as the default setting for \"%1\" in the alarm edit "
 "dialog."
@@ -2420,27 +2487,27 @@ msgstr ""
 "интихоб намудани занги системавӣ ҳамчун "
 "аҳамияти пешфарзӣ барои \"%1\"."
 
-#: prefdlg.cpp:936
+#: prefdlg.cpp:937
 msgid "Sound &file:"
 msgstr "&Файли садо:"
 
-#: prefdlg.cpp:944
+#: prefdlg.cpp:945
 msgid "Choose a sound file"
 msgstr "Файли садо интихоб кунед"
 
-#: prefdlg.cpp:946
+#: prefdlg.cpp:947
 msgid "Enter the default sound file to use in the alarm edit dialog."
 msgstr ""
 "Номи файли садои пешфарзиро барои "
 "истифода намудани хотиррасонӣ дар "
 "диалоги танзимотро ворид кунед."
 
-#: prefdlg.cpp:950
+#: prefdlg.cpp:951
 #, fuzzy
 msgid "Repea&t sound file"
 msgstr "&Такрори файли садо"
 
-#: prefdlg.cpp:952
+#: prefdlg.cpp:953
 msgid ""
 "_: sound file \"Repeat\" checkbox\n"
 "The default setting for sound file \"%1\" in the alarm edit dialog."
@@ -2449,31 +2516,31 @@ msgstr ""
 "дар диалоги танзимоти хотиррасонӣ "
 "мебошад."
 
-#: prefdlg.cpp:960
+#: prefdlg.cpp:961
 #, fuzzy
 msgid "Command Alarms"
 msgstr "&Дастур"
 
-#: prefdlg.cpp:977
+#: prefdlg.cpp:978
 #, fuzzy
 msgid "Email Alarms"
 msgstr "Фаъол сохтани &хотиррасонӣ"
 
-#: prefdlg.cpp:991
+#: prefdlg.cpp:992
 msgid "&Recurrence:"
 msgstr "&Такрор:"
 
-#: prefdlg.cpp:1004
+#: prefdlg.cpp:1005
 msgid "The default setting for the recurrence rule in the alarm edit dialog."
 msgstr ""
 "Аҳамияти даври такророти пешфарзӣ дар "
 "диалоги танзимоти хотиррасонӣ мебошад."
 
-#: prefdlg.cpp:1103
+#: prefdlg.cpp:1104
 msgid "Alarm List"
 msgstr "Рӯйхати хотиррасонӣ"
 
-#: prefdlg.cpp:1111
+#: prefdlg.cpp:1112
 msgid ""
 "Specify whether to show in the alarm list, the time at which each alarm is "
 "due"
@@ -2481,23 +2548,23 @@ msgstr ""
 "Дар рӯйхати намоиш, муддати "
 "хотиррасониро нишон додан"
 
-#: prefdlg.cpp:1118
+#: prefdlg.cpp:1119
 msgid "Specify whether to show in the alarm list, how long until each alarm is due"
 msgstr ""
 "Дар рӯйхати намоиш, муддати боқимондаи "
 "хотиррасониро нишон додан"
 
-#: prefdlg.cpp:1122
+#: prefdlg.cpp:1123
 msgid "System Tray Tooltip"
 msgstr "Луқмот дар ишороти новаи системавӣ"
 
-#: prefdlg.cpp:1129
+#: prefdlg.cpp:1130
 msgid "Show next &24 hours' alarms"
 msgstr ""
 "Нишон додани &24 соати навбатии "
 "хотиррасонӣ"
 
-#: prefdlg.cpp:1133
+#: prefdlg.cpp:1134
 msgid ""
 "Specify whether to include in the system tray tooltip, a summary of alarms "
 "due in the next 24 hours"
@@ -2507,11 +2574,11 @@ msgstr ""
 "рӯйхати хотиррасонӣ, ки бояд дар муддати "
 "наздики 24 соат хотима ёбад "
 
-#: prefdlg.cpp:1138
+#: prefdlg.cpp:1139
 msgid "Ma&ximum number of alarms to show:"
 msgstr "&Миқдори зиёди хотиррасонӣ:"
 
-#: prefdlg.cpp:1145
+#: prefdlg.cpp:1146
 msgid ""
 "Uncheck to display all of the next 24 hours' alarms in the system tray "
 "tooltip. Check to enter an upper limit on the number to be displayed."
@@ -2519,7 +2586,7 @@ msgstr ""
 "Миқдори зиёди хотиррасонӣ, ки дар луқмот "
 "намоиш мешавад."
 
-#: prefdlg.cpp:1153
+#: prefdlg.cpp:1154
 msgid ""
 "Specify whether to show in the system tray tooltip, the time at which each "
 "alarm is due"
@@ -2527,7 +2594,7 @@ msgstr ""
 "Дар луқмот намоиш додани муддати ҳар як "
 "хотиррасонӣ"
 
-#: prefdlg.cpp:1160
+#: prefdlg.cpp:1161
 msgid ""
 "Specify whether to show in the system tray tooltip, how long until each "
 "alarm is due"
@@ -2535,11 +2602,11 @@ msgstr ""
 "Дар луқмот намоиш додани муддате, ки то "
 "ҳар як хотиррасонӣ мондааст"
 
-#: prefdlg.cpp:1165
+#: prefdlg.cpp:1166
 msgid "&Prefix:"
 msgstr "&Префикс:"
 
-#: prefdlg.cpp:1170
+#: prefdlg.cpp:1171
 msgid ""
 "Enter the text to be displayed in front of the time until the alarm, in the "
 "system tray tooltip"
@@ -2548,13 +2615,13 @@ msgstr ""
 "хотиррасонии луқмот дар ишороти новаи "
 "система боқӣ мондааст, намоиш медиҳад"
 
-#: prefdlg.cpp:1175
+#: prefdlg.cpp:1176
 msgid "Message &windows have a title bar and take keyboard focus"
 msgstr ""
 "&Тирезаҳои иттилоот дорои унвонот "
 "мебошанд ва фокусро ба худ мегузаронад"
 
-#: prefdlg.cpp:1178
+#: prefdlg.cpp:1179
 msgid ""
 "Specify the characteristics of alarm message windows:\n"
 "- If checked, the window is a normal window with a title bar, which grabs "
@@ -2572,23 +2639,23 @@ msgstr ""
 "чунки онҳо дорои унвоноти тиреза нестанд "
 "ва гузаронида нахоҳанд шуд."
 
-#: prefdlg.cpp:1186
+#: prefdlg.cpp:1187
 msgid "Specify whether to show expired alarms in the alarm list"
 msgstr ""
 "Намоиши хотиррасониҳои кӯҳнашуда дар "
 "рӯйхати хотиррасонӣ"
 
-#: prefdlg.cpp:1191
+#: prefdlg.cpp:1192
 msgid "System tray icon &update interval:"
 msgstr ""
 "Фосилоти &бозсозии ишорот дар новаи "
 "системавӣ:"
 
-#: prefdlg.cpp:1196
+#: prefdlg.cpp:1197
 msgid "seconds"
 msgstr "сония"
 
-#: prefdlg.cpp:1198
+#: prefdlg.cpp:1199
 msgid ""
 "How often to update the system tray icon to indicate whether or not the "
 "Alarm Daemon is monitoring alarms."
@@ -3405,21 +3472,121 @@ msgstr "Хатои %1"
 msgid "&New Alarm..."
 msgstr "&Хотиррасонии нав..."
 
-#: traywindow.cpp:257
+#: traywindow.cpp:94
+#, fuzzy
+msgid "New Alarm From &Template"
+msgstr "Қолиби нави хотиррасонӣ"
+
+#: traywindow.cpp:260
 msgid ""
 "_: prefix + hours:minutes\n"
 "(%1%2:%3)"
 msgstr "(%1%2:%3)"
 
-#: traywindow.cpp:259
+#: traywindow.cpp:262
 msgid ""
 "_: prefix + hours:minutes\n"
 "%1%2:%3"
 msgstr "%1%2:%3"
 
-#: traywindow.cpp:344
+#: traywindow.cpp:347
 msgid "%1 - disabled"
 msgstr "%1 - ғайрифаъол аст"
+
+#: undo.cpp:318
+#, fuzzy
+msgid "Alarm not found"
+msgstr "Демони соати зангдори рӯимизӣ ёфт нашуд"
+
+#: undo.cpp:319
+#, fuzzy
+msgid "Error recreating alarm"
+msgstr "Хатои талаби KMail"
+
+#: undo.cpp:320
+#, fuzzy
+msgid "Cannot reactivate expired alarm"
+msgstr "Ҳузфи тамоми хотиррасониҳои гузашта."
+
+#: undo.cpp:321
+msgid "Program error"
+msgstr ""
+
+#: undo.cpp:322
+msgid "Unknown error"
+msgstr ""
+
+#: undo.cpp:515
+msgid ""
+"_: Action to create a new alarm\n"
+"New alarm"
+msgstr ""
+
+#: undo.cpp:517
+#, fuzzy
+msgid ""
+"_: Action to delete an alarm\n"
+"Delete alarm"
+msgstr ""
+"Ҳузфи хотиррасонӣ\n"
+"Ҳузфи хотиррасониҳо"
+
+#: undo.cpp:520
+#, fuzzy
+msgid ""
+"_: Action to create a new alarm template\n"
+"New template"
+msgstr "Эҷоди қолиби нави хотиррасонӣ"
+
+#: undo.cpp:522
+#, fuzzy
+msgid ""
+"_: Action to delete an alarm template\n"
+"Delete template"
+msgstr ""
+"Ҳузфи  қолиби хотиррасонӣ\n"
+"Ҳузфи қолибҳои хотиррасонӣ"
+
+#: undo.cpp:524
+#, fuzzy
+msgid "Delete expired alarm"
+msgstr "Ҳузфи тамоми хотиррасониҳои гузашта."
+
+#: undo.cpp:761
+msgid ""
+"_: Action to edit an alarm\n"
+"Edit alarm"
+msgstr ""
+
+#: undo.cpp:763
+msgid ""
+"_: Action to edit an alarm template\n"
+"Edit template"
+msgstr ""
+
+#: undo.cpp:885
+#, fuzzy
+msgid "Delete multiple alarms"
+msgstr "Ҳузфи тамоми хотиррасониҳои гузашта."
+
+#: undo.cpp:887
+msgid "Delete multiple templates"
+msgstr ""
+
+#: undo.cpp:894
+#, fuzzy
+msgid "Delete multiple expired alarms"
+msgstr "Ҳузфи тамоми хотиррасониҳои гузашта."
+
+#: undo.cpp:936 undo.cpp:979
+#, fuzzy
+msgid "Reactivate alarm"
+msgstr "Фаъол сохтани %1"
+
+#: undo.cpp:1002
+#, fuzzy
+msgid "Reactivate multiple alarms"
+msgstr "Ҳузфи тамоми хотиррасониҳои гузашта."
 
 #: widgets/colourcombo.cpp:186
 msgid "Custom..."
@@ -3510,6 +3677,9 @@ msgstr ""
 #: kalarmd/admain.cpp:47
 msgid "Original Author"
 msgstr ""
+
+#~ msgid "&Undelete"
+#~ msgstr "Б&арҳам додани ҳузфкунӣ"
 
 #~ msgid "&Show expired alarms"
 #~ msgstr "&Намоиши хотиррасонии кӯҳнашуда"

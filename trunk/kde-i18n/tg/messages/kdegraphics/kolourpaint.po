@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kolourpaint\n"
-"POT-Creation-Date: 2004-12-29 14:53+0100\n"
+"POT-Creation-Date: 2005-02-03 01:21+0100\n"
 "PO-Revision-Date: 2004-08-17 15:55+0500\n"
 "Last-Translator: Erkin Pulatov <erkin_pulatov@mail.ru>\n"
 "Language-Team: Tajik\n"
@@ -59,6 +59,10 @@ msgstr "Мушоҳидаткунанда"
 #: kolourpaint.cpp:81
 msgid "Icons"
 msgstr "Ишоротҳо "
+
+#: kolourpaint.cpp:82
+msgid "InputMethod Support"
+msgstr ""
 
 #: kpcommandhistory.cpp:628
 #, c-format
@@ -314,7 +318,7 @@ msgstr "256 Ранг(Лағжондашуда)"
 msgid "24-bit Color"
 msgstr "24-бит  Ранг"
 
-#: kpmainwindow.cpp:675
+#: kpmainwindow.cpp:691
 msgid ""
 "The document \"%1\" has been modified.\n"
 "Do you want to save it?"
@@ -381,20 +385,20 @@ msgstr "Нуқсагири дар &файл..."
 msgid "Paste &From File..."
 msgstr "Гузоштан &аз файл... "
 
-#: kpmainwindow_edit.cpp:331 tools/kptoolselection.cpp:652
+#: kpmainwindow_edit.cpp:338 tools/kptoolselection.cpp:718
 msgid "Text: Create Box"
 msgstr "Матн: Эҷоди блок "
 
-#: kpmainwindow_edit.cpp:332 kpmainwindow_image.cpp:245
-#: tools/kptoolselection.cpp:1061
+#: kpmainwindow_edit.cpp:339 kpmainwindow_image.cpp:246
+#: tools/kptoolcrop.cpp:328 tools/kptoolselection.cpp:1139
 msgid "Selection: Create"
 msgstr "Ҷудо кардан: Эҷод"
 
-#: kpmainwindow_edit.cpp:402
+#: kpmainwindow_edit.cpp:409
 msgid "Text: Paste"
 msgstr "Матн: гузоштан"
 
-#: kpmainwindow_edit.cpp:575
+#: kpmainwindow_edit.cpp:582
 msgid ""
 "<qt>"
 "<p>KolourPaint cannot paste the contents of the clipboard as the data "
@@ -413,31 +417,31 @@ msgstr ""
 "содержание клипборда, поскольку данные "
 "неожиданно исчезли"
 
-#: kpmainwindow_edit.cpp:581
+#: kpmainwindow_edit.cpp:588
 msgid "Cannot Paste"
 msgstr "Наметавонам гузорам"
 
-#: kpmainwindow_edit.cpp:665
+#: kpmainwindow_edit.cpp:672
 msgid "Text: Delete Box"
 msgstr "Матн: Блокро ҳузф кардан"
 
-#: kpmainwindow_edit.cpp:666
+#: kpmainwindow_edit.cpp:673
 msgid "Selection: Delete"
 msgstr "Ҷудо кардан: Ҳузф"
 
-#: kpmainwindow_edit.cpp:738
+#: kpmainwindow_edit.cpp:745
 msgid "Text: Finish"
 msgstr "Матн: Ба итмом расондан"
 
-#: kpmainwindow_edit.cpp:739
+#: kpmainwindow_edit.cpp:746
 msgid "Selection: Deselect"
 msgstr "Ҷудо кардан: Барҳам додан "
 
-#: kpmainwindow_edit.cpp:815
+#: kpmainwindow_edit.cpp:822
 msgid "Copy to File"
 msgstr "Нуқсагирӣ дар файл"
 
-#: kpmainwindow_edit.cpp:862
+#: kpmainwindow_edit.cpp:869
 msgid "Paste From File"
 msgstr "Гузоштан аз файл"
 
@@ -523,53 +527,85 @@ msgstr ""
 "Натавонистам танзимотӣ ҳардуи мизи "
 "кориро тайир диҳам."
 
-#: kpmainwindow_image.cpp:91
+#: kpmainwindow_help.cpp:57
+msgid "Acquiring &Screenshots"
+msgstr ""
+
+#: kpmainwindow_help.cpp:128
+msgid ""
+"<p>To acquire a screenshot, press <b>%1</b>.  The screenshot will be placed "
+"into the clipboard and you will be able to paste it in "
+"KolourPaint.</p>"
+"<p>You may configure the <b>Desktop Screenshot</b> shortcut in the KDE "
+"Control Center module <a href=\"configure kde shortcuts\">Keyboard "
+"Shortcuts</a>.</p>"
+"<p>Alternatively, you may try the application <a href=\"run "
+"ksnapshot\">KSnapshot</a>.</p>"
+msgstr ""
+
+#: kpmainwindow_help.cpp:149
+msgid ""
+"<p>You do not appear to be running KDE.</p>"
+"<p>Once you have loaded KDE:"
+"<br>"
+"<blockquote>To acquire a screenshot, press <b>%1</b>.  The screenshot will "
+"be placed into the clipboard and you will be able to paste it in "
+"KolourPaint.</blockquote></p>"
+"<p>Alternatively, you may try the application <a href=\"run "
+"ksnapshot\">KSnapshot</a>.</p>"
+msgstr ""
+
+#: kpmainwindow_help.cpp:178
+msgid "Acquiring Screenshots"
+msgstr ""
+
+#: kpmainwindow_image.cpp:92
 msgid "R&esize / Scale..."
 msgstr "Тағйи&ри андоза/Масштабони кардан... "
 
-#: kpmainwindow_image.cpp:94
+#: kpmainwindow_image.cpp:95
 msgid "Se&t as Image (Crop)"
 msgstr "Мон&дани мисли тасвири (Crop)"
 
-#: kpmainwindow_image.cpp:100
+#: kpmainwindow_image.cpp:101
 msgid "&Flip..."
 msgstr "&Баргардонидан..."
 
-#: kpmainwindow_image.cpp:103
+#: kpmainwindow_image.cpp:104
 msgid "&Rotate..."
 msgstr "То&биш..."
 
-#: kpmainwindow_image.cpp:106
+#: kpmainwindow_image.cpp:107
 msgid "S&kew..."
 msgstr "&Ғалат кардан..."
 
-#: kpmainwindow_image.cpp:109
+#: kpmainwindow_image.cpp:110
 msgid "Reduce to Mo&nochrome (Dithered)"
 msgstr "Кам кардан ба Як&ранг(Лаппишуда)"
 
-#: kpmainwindow_image.cpp:112
+#: kpmainwindow_image.cpp:113
 msgid "Reduce to &Grayscale"
 msgstr "Тағйир додан дар &тобиши хокистарӣ"
 
-#: kpmainwindow_image.cpp:115
+#: kpmainwindow_image.cpp:116
 msgid "&Invert Colors"
 msgstr "&Таъғироти рангҳо"
 
-#: kpmainwindow_image.cpp:118
+#: kpmainwindow_image.cpp:119
 msgid "C&lear"
 msgstr "&Пок кардан"
 
-#: kpmainwindow_image.cpp:121
+#: kpmainwindow_image.cpp:122
 msgid "&More Effects..."
 msgstr "&Таъсироти зиёд..."
 
-#. i18n: file kolourpaintui.rc line 52
-#: kpmainwindow_image.cpp:159 rc.cpp:6 rc.cpp:15
+#. i18n: file kolourpaintui.rc line 63
+#: kpmainwindow_image.cpp:160 rc.cpp:6 rc.cpp:18 rc.cpp:24 rc.cpp:36
 #, no-c-format
 msgid "&Image"
 msgstr "&Тасвирот"
 
-#: kpmainwindow_image.cpp:160
+#: kpmainwindow_image.cpp:161
 msgid "Select&ion"
 msgstr "Ҷудо &кардан"
 
@@ -610,7 +646,7 @@ msgstr "%1x%2"
 msgid "%1bpp"
 msgstr "%1bpp"
 
-#: kpmainwindow_statusbar.cpp:271 kpmainwindow_view.cpp:192
+#: kpmainwindow_statusbar.cpp:271 kpmainwindow_view.cpp:214
 msgid "%1%"
 msgstr "%1%"
 
@@ -630,23 +666,23 @@ msgstr "Хат кашидашуда"
 msgid "Strike Through"
 msgstr "Хат кашидан"
 
-#: kpmainwindow_tools.cpp:103
+#: kpmainwindow_tools.cpp:104
 msgid "Previous Tool Option (Group #1)"
 msgstr "Пешанги Интихоби Асбоб(Гурӯҳи#1)"
 
-#: kpmainwindow_tools.cpp:108
+#: kpmainwindow_tools.cpp:109
 msgid "Next Tool Option (Group #1)"
 msgstr "Оянда Интихоби Асбоб(Гурӯҳи#1)"
 
-#: kpmainwindow_tools.cpp:114
+#: kpmainwindow_tools.cpp:115
 msgid "Previous Tool Option (Group #2)"
 msgstr "Пешанги Интихоби Асбоб(Гурӯҳи#2)"
 
-#: kpmainwindow_tools.cpp:119
+#: kpmainwindow_tools.cpp:120
 msgid "Next Tool Option (Group #2)"
 msgstr "Оянда Интихоби Асбоб(Гурӯҳи#2)"
 
-#: kpmainwindow_tools.cpp:524
+#: kpmainwindow_tools.cpp:525
 msgid ""
 "<qt>"
 "<p>"
@@ -664,31 +700,39 @@ msgstr ""
 "<p>Шумо мехоҳед тасвирро андозаашро тағир "
 "намоед?</p></qt>"
 
-#: kpmainwindow_tools.cpp:534 tools/kptoolresizescale.cpp:1130
+#: kpmainwindow_tools.cpp:535 tools/kptoolresizescale.cpp:1135
 msgid "Resize Image?"
 msgstr "Тағйир додани ченак?"
 
-#: kpmainwindow_tools.cpp:535 tools/kptoolresizescale.cpp:1131
+#: kpmainwindow_tools.cpp:536 tools/kptoolresizescale.cpp:1136
 msgid "R&esize Image"
 msgstr "Т&ағйир додани ченак"
 
-#: kpmainwindow_view.cpp:89
+#: kpmainwindow_view.cpp:93
 msgid "Show &Grid"
 msgstr "Намоиши &шабака "
 
-#: kpmainwindow_view.cpp:91
+#: kpmainwindow_view.cpp:95
 msgid "Hide &Grid"
 msgstr "Пинҳони &шабака"
 
-#: kpmainwindow_view.cpp:94
+#: kpmainwindow_view.cpp:98
 msgid "Show T&humbnail"
 msgstr "Намоиши &хурдшавии нуқсагирӣ"
 
-#: kpmainwindow_view.cpp:96
+#: kpmainwindow_view.cpp:100
 msgid "Hide T&humbnail"
 msgstr "Пинҳон намудани &хурдшавии нуқсагирӣ"
 
-#: kpmainwindow_view.cpp:210
+#: kpmainwindow_view.cpp:103
+msgid "Zoo&med Thumbnail Mode"
+msgstr ""
+
+#: kpmainwindow_view.cpp:112
+msgid "Enable Thumbnail &Rectangle"
+msgstr ""
+
+#: kpmainwindow_view.cpp:232
 msgid ""
 "Setting the zoom level to a value that is not a multiple of 100% results in "
 "imprecise editing and redraw glitches.\n"
@@ -701,7 +745,7 @@ msgstr ""
 "Шумо мехоҳед монед сатҳи тағиршавандаро "
 "дар %1%?"
 
-#: kpmainwindow_view.cpp:215
+#: kpmainwindow_view.cpp:237
 msgid "Set Zoom Level to %1%"
 msgstr "Сабт намудани масштаб дар %1%"
 
@@ -709,20 +753,16 @@ msgstr "Сабт намудани масштаб дар %1%"
 msgid "Text"
 msgstr "Матн"
 
-#: kpselection.cpp:323 tools/kptoolresizescale.cpp:576
+#: kpselection.cpp:323 tools/kptoolresizescale.cpp:575
 msgid "Selection"
 msgstr "Ҷудо кардан"
 
-#: kpthumbnail.cpp:146
-msgid "%1% - Thumbnail"
-msgstr "%1%- Хурд намудани нуқса"
-
-#: kpthumbnail.cpp:153
+#: kpthumbnail.cpp:157
 msgid "Thumbnail"
 msgstr "Нуқсаи хурдкардашуда"
 
-#: kpviewscrollablecontainer.cpp:156 kpviewscrollablecontainer.cpp:888
-#: kpviewscrollablecontainer.cpp:894 kpviewscrollablecontainer.cpp:900
+#: kpviewscrollablecontainer.cpp:156 kpviewscrollablecontainer.cpp:908
+#: kpviewscrollablecontainer.cpp:914 kpviewscrollablecontainer.cpp:920
 msgid "Drag the handle to resize the image."
 msgstr ""
 "Дастакро кашед барои тағирдиҳии андозаи "
@@ -740,20 +780,26 @@ msgstr ""
 "Тағирдиҳии андозаи тасвир:Пахши рост "
 "барои рад кардан."
 
-#. i18n: file kolourpaintui.rc line 81
-#: rc.cpp:9 rc.cpp:18
+#. i18n: file kolourpaintui.rc line 97
+#: rc.cpp:9 rc.cpp:27
 #, no-c-format
 msgid "Text Toolbar"
 msgstr "Панели асбобҳо\"Матн\""
 
-#: pixmapfx/kpcoloreffect.cpp:63 tools/kptoolclear.cpp:64
+#. i18n: file kolourpaintui.rc line 107
+#: rc.cpp:12 rc.cpp:30
+#, fuzzy, no-c-format
+msgid "Selection Tool RMB Menu"
+msgstr "Ҷудо кардан: Гузарондан"
+
+#: pixmapfx/kpcoloreffect.cpp:63 tools/kptoolclear.cpp:74
 #: tools/kptoolconverttograyscale.cpp:62 tools/kptoolflip.cpp:89
 #: tools/kptoolrotate.cpp:78 tools/kptoolskew.cpp:81
 #, c-format
 msgid "Selection: %1"
 msgstr "Ҷудо кардан: %1"
 
-#: pixmapfx/kpeffectbalance.cpp:60 pixmapfx/kpeffectsdialog.cpp:97
+#: pixmapfx/kpeffectbalance.cpp:60 pixmapfx/kpeffectsdialog.cpp:99
 msgid "Balance"
 msgstr "Баробари"
 
@@ -809,23 +855,19 @@ msgstr "Партофтани &ҳама маъно"
 msgid "Settings"
 msgstr "Танзимотҳо"
 
-#: pixmapfx/kpeffectblursharpen.cpp:53
-msgid "Soften && Sharpen"
-msgstr "Тезӣ"
-
-#: pixmapfx/kpeffectblursharpen.cpp:123 pixmapfx/kpeffectemboss.cpp:119
-msgid "&Amount:"
-msgstr "&Бузургӣ:"
-
-#: pixmapfx/kpeffectblursharpen.cpp:188
+#: pixmapfx/kpeffectblursharpen.cpp:51
 msgid "Soften"
 msgstr "Суст кардан"
 
-#: pixmapfx/kpeffectblursharpen.cpp:190
+#: pixmapfx/kpeffectblursharpen.cpp:53
 msgid "Sharpen"
 msgstr "Зиёд кардани баландӣ"
 
-#: pixmapfx/kpeffectemboss.cpp:53 pixmapfx/kpeffectsdialog.cpp:98
+#: pixmapfx/kpeffectblursharpen.cpp:134 pixmapfx/kpeffectemboss.cpp:119
+msgid "&Amount:"
+msgstr "&Бузургӣ:"
+
+#: pixmapfx/kpeffectemboss.cpp:53 pixmapfx/kpeffectsdialog.cpp:100
 msgid "Emboss"
 msgstr "Нақши муқарнас"
 
@@ -837,7 +879,7 @@ msgstr "Ғоиб аст"
 msgid "E&nable"
 msgstr "&Фаъол сохтан"
 
-#: pixmapfx/kpeffectflatten.cpp:59 pixmapfx/kpeffectsdialog.cpp:99
+#: pixmapfx/kpeffectflatten.cpp:59 pixmapfx/kpeffectsdialog.cpp:101
 msgid "Flatten"
 msgstr "Муқарар кардан"
 
@@ -845,28 +887,32 @@ msgstr "Муқарар кардан"
 msgid "Colors"
 msgstr "Рангҳо"
 
-#: pixmapfx/kpeffectinvert.cpp:51 pixmapfx/kpeffectinvert.cpp:58
-#: pixmapfx/kpeffectsdialog.cpp:100
+#: pixmapfx/kpeffectinvert.cpp:52 pixmapfx/kpeffectinvert.cpp:60
+#, fuzzy
+msgid "Invert Colors"
+msgstr "&Таъғироти рангҳо"
+
+#: pixmapfx/kpeffectinvert.cpp:52 pixmapfx/kpeffectsdialog.cpp:102
 msgid "Invert"
 msgstr "Табдилдиҳӣ"
 
-#: pixmapfx/kpeffectinvert.cpp:166
+#: pixmapfx/kpeffectinvert.cpp:168
 msgid "&Red"
 msgstr "&Сурх"
 
-#: pixmapfx/kpeffectinvert.cpp:167
+#: pixmapfx/kpeffectinvert.cpp:169
 msgid "&Green"
 msgstr "&Сабз"
 
-#: pixmapfx/kpeffectinvert.cpp:168
+#: pixmapfx/kpeffectinvert.cpp:170
 msgid "&Blue"
 msgstr "&Кабуд"
 
-#: pixmapfx/kpeffectinvert.cpp:173
+#: pixmapfx/kpeffectinvert.cpp:175
 msgid "&All"
 msgstr "&Ҳама"
 
-#: pixmapfx/kpeffectinvert.cpp:247
+#: pixmapfx/kpeffectinvert.cpp:249
 msgid "Channels"
 msgstr "Каналҳо"
 
@@ -911,23 +957,23 @@ msgstr "24-&ранги кам"
 msgid "Reduce To"
 msgstr "Хурдтар кардан:"
 
-#: pixmapfx/kpeffectsdialog.cpp:80
+#: pixmapfx/kpeffectsdialog.cpp:82
 msgid "More Image Effects (Selection)"
 msgstr "Таъсири зиёд (ҷудо кардан)"
 
-#: pixmapfx/kpeffectsdialog.cpp:82
+#: pixmapfx/kpeffectsdialog.cpp:84
 msgid "More Image Effects"
 msgstr "Таъсири зиёд"
 
-#: pixmapfx/kpeffectsdialog.cpp:94
+#: pixmapfx/kpeffectsdialog.cpp:96
 msgid "&Effect:"
 msgstr "&Таъсир: "
 
-#: pixmapfx/kpeffectsdialog.cpp:101
+#: pixmapfx/kpeffectsdialog.cpp:103
 msgid "Reduce Colors"
 msgstr "Миқдори рангро кам кардан"
 
-#: pixmapfx/kpeffectsdialog.cpp:102
+#: pixmapfx/kpeffectsdialog.cpp:104
 msgid "Soften & Sharpen"
 msgstr "Тезӣ"
 
@@ -945,21 +991,21 @@ msgid ""
 "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: tools/kptool.cpp:1433
+#: tools/kptool.cpp:1445
 #, fuzzy
 msgid "Right click to cancel."
 msgstr ""
 "Тағирдиҳии андозаи тасвир:Пахши рост "
 "барои рад кардан."
 
-#: tools/kptool.cpp:1435
+#: tools/kptool.cpp:1447
 #, fuzzy
 msgid "Left click to cancel."
 msgstr ""
 "Тағирдиҳии андозаи тасвир:Пахши рост "
 "барои рад кардан."
 
-#: tools/kptool.cpp:1459
+#: tools/kptool.cpp:1471
 msgid "%1: "
 msgstr "%1: "
 
@@ -977,9 +1023,8 @@ msgstr "Клик кунед ё барои графитти гузаронед. "
 
 #: tools/kptoolairspray.cpp:209 tools/kptoolcolorpicker.cpp:114
 #: tools/kptoolfloodfill.cpp:139 tools/kptoolpen.cpp:877
-#: tools/kptoolpolygon.cpp:672 tools/kptoolrectangle.cpp:515
-#: tools/kptoolselection.cpp:130 tools/kptoolselection.cpp:471
-#: tools/kptoolselection.cpp:987
+#: tools/kptoolpolygon.cpp:678 tools/kptoolrectangle.cpp:515
+#: tools/kptoolselection.cpp:134 tools/kptoolselection.cpp:1064
 msgid "Let go of all the mouse buttons."
 msgstr ""
 "Биёед ҳамаи тугмачаҳои мушакро ба кор "
@@ -1064,7 +1109,7 @@ msgstr ""
 msgid "Reduce to Grayscale"
 msgstr "Ба тобиши ранги хокистари тағйир додан."
 
-#: tools/kptoolcrop.cpp:149
+#: tools/kptoolcrop.cpp:224
 msgid "Set as Image"
 msgstr "Тасвиротро нигоҳ доштан ҳамчун "
 
@@ -1220,38 +1265,38 @@ msgstr ""
 msgid "Drag out the start and end points."
 msgstr "Оғоз кардан ва анҷом додани корҳо."
 
-#: tools/kptoolpolygon.cpp:719
+#: tools/kptoolpolygon.cpp:725
 #, fuzzy
 msgid "Left drag another line or right click to finish."
 msgstr "%1 хати дигар ё ин ки %2 анҷом диҳед."
 
-#: tools/kptoolpolygon.cpp:723
+#: tools/kptoolpolygon.cpp:729
 #, fuzzy
 msgid "Right drag another line or left click to finish."
 msgstr "%1 хати дигар ё ин ки %2 анҷом диҳед."
 
-#: tools/kptoolpolygon.cpp:734
+#: tools/kptoolpolygon.cpp:740
 #, fuzzy
 msgid "Left drag to set the first control point or right click to finish."
 msgstr ""
 "%1нуқтаи аввали назоратро барқарор кунед, "
 "ё ин ки  %2 анҷом диҳед."
 
-#: tools/kptoolpolygon.cpp:738
+#: tools/kptoolpolygon.cpp:744
 #, fuzzy
 msgid "Right drag to set the first control point or left click to finish."
 msgstr ""
 "%1нуқтаи аввали назоратро барқарор кунед, "
 "ё ин ки  %2 анҷом диҳед."
 
-#: tools/kptoolpolygon.cpp:745
+#: tools/kptoolpolygon.cpp:751
 #, fuzzy
 msgid "Left drag to set the last control point or right click to finish."
 msgstr ""
 "%1нуқтаи охирини назоратро барқарор "
 "кунед, ё ин ки  %2 анҷом диҳед."
 
-#: tools/kptoolpolygon.cpp:749
+#: tools/kptoolpolygon.cpp:755
 #, fuzzy
 msgid "Right drag to set the last control point or left click to finish."
 msgstr ""
@@ -1266,11 +1311,11 @@ msgstr "Хатҳои пайвастшуда"
 msgid "Draws connected lines"
 msgstr "Кашидани хатҳои пайваста"
 
-#: tools/kptoolpreviewdialog.cpp:126 tools/kptoolresizescale.cpp:726
+#: tools/kptoolpreviewdialog.cpp:126 tools/kptoolresizescale.cpp:725
 msgid "Dimensions"
 msgstr "Андозаҳо"
 
-#: tools/kptoolpreviewdialog.cpp:128 tools/kptoolresizescale.cpp:733
+#: tools/kptoolpreviewdialog.cpp:128 tools/kptoolresizescale.cpp:732
 msgid "Original:"
 msgstr "Нусхаи асл:"
 
@@ -1302,53 +1347,53 @@ msgstr "Ҷудокунӣ (росткунҷа)"
 msgid "Makes a rectangular selection"
 msgstr "Росткунҷаро интихоб кунед."
 
-#: tools/kptoolresizescale.cpp:116 tools/kptoolselection.cpp:1904
+#: tools/kptoolresizescale.cpp:118 tools/kptoolselection.cpp:1989
 msgid "Text: Resize Box"
 msgstr "Матн: Тағйир додани андозаи блок"
 
-#: tools/kptoolresizescale.cpp:121
+#: tools/kptoolresizescale.cpp:123
 #, fuzzy
 msgid "Selection: Scale"
 msgstr "Ҷудо кардан: Шкалаи шустабарӣ"
 
-#: tools/kptoolresizescale.cpp:123 tools/kptoolselection.cpp:1905
+#: tools/kptoolresizescale.cpp:125 tools/kptoolselection.cpp:1990
 msgid "Selection: Smooth Scale"
 msgstr "Ҷудо кардан: Шкалаи шустабарӣ"
 
-#: tools/kptoolresizescale.cpp:131
+#: tools/kptoolresizescale.cpp:133
 msgid "Resize"
 msgstr "Тағйири андоза"
 
-#: tools/kptoolresizescale.cpp:133
+#: tools/kptoolresizescale.cpp:135
 msgid "Scale"
 msgstr "Масштабонӣ"
 
-#: tools/kptoolresizescale.cpp:135
+#: tools/kptoolresizescale.cpp:137
 msgid "Smooth Scale"
 msgstr "Ҷадвали шустабарӣ"
 
-#: tools/kptoolresizescale.cpp:511
+#: tools/kptoolresizescale.cpp:510
 msgid "Resize / Scale"
 msgstr "Тағйири андоза/Масштабони..."
 
-#: tools/kptoolresizescale.cpp:567
+#: tools/kptoolresizescale.cpp:566
 #, fuzzy
 msgid "Ac&t on:"
 msgstr "Амал кунед."
 
-#: tools/kptoolresizescale.cpp:573
+#: tools/kptoolresizescale.cpp:572
 msgid "Entire Image"
 msgstr "Ҳамаи тасвирот"
 
-#: tools/kptoolresizescale.cpp:579
+#: tools/kptoolresizescale.cpp:578
 msgid "Text Box"
 msgstr "Блоки матни"
 
-#: tools/kptoolresizescale.cpp:645
+#: tools/kptoolresizescale.cpp:644
 msgid "Operation"
 msgstr "Амалиёт"
 
-#: tools/kptoolresizescale.cpp:647
+#: tools/kptoolresizescale.cpp:646
 msgid ""
 "<qt>"
 "<ul>"
@@ -1377,50 +1422,50 @@ msgstr ""
 "иҷро кардани тасвири  нигоҳ карда истода.  "
 "</li> </ul></qt>"
 
-#: tools/kptoolresizescale.cpp:668
+#: tools/kptoolresizescale.cpp:667
 msgid "&Resize"
 msgstr "&Тағйири андоза"
 
-#: tools/kptoolresizescale.cpp:673
+#: tools/kptoolresizescale.cpp:672
 msgid "&Scale"
 msgstr "&Масштабонӣ"
 
-#: tools/kptoolresizescale.cpp:678
+#: tools/kptoolresizescale.cpp:677
 msgid "S&mooth Scale"
 msgstr "Ҷ&адвали шустабарӣ"
 
-#: tools/kptoolresizescale.cpp:728
+#: tools/kptoolresizescale.cpp:727
 msgid "Width:"
 msgstr "Васеъият:"
 
-#: tools/kptoolresizescale.cpp:730
+#: tools/kptoolresizescale.cpp:729
 msgid "Height:"
 msgstr "Баландӣ:"
 
-#: tools/kptoolresizescale.cpp:737 tools/kptoolresizescale.cpp:744
-#: tools/kptoolresizescale.cpp:753
+#: tools/kptoolresizescale.cpp:736 tools/kptoolresizescale.cpp:743
+#: tools/kptoolresizescale.cpp:752
 msgid "x"
 msgstr "x"
 
-#: tools/kptoolresizescale.cpp:742
+#: tools/kptoolresizescale.cpp:741
 msgid "&New:"
 msgstr "&Нав:"
 
-#: tools/kptoolresizescale.cpp:747
+#: tools/kptoolresizescale.cpp:746
 msgid "&Percent:"
 msgstr "&Фоизҳо:"
 
-#: tools/kptoolresizescale.cpp:752 tools/kptoolresizescale.cpp:758
+#: tools/kptoolresizescale.cpp:751 tools/kptoolresizescale.cpp:757
 #: widgets/kpcolorsimilaritydialog.cpp:81
 #, c-format
 msgid "%"
 msgstr "%"
 
-#: tools/kptoolresizescale.cpp:760
+#: tools/kptoolresizescale.cpp:759
 msgid "Keep &aspect ratio"
 msgstr "Нигоҳ доштани &муносибат"
 
-#: tools/kptoolresizescale.cpp:1108
+#: tools/kptoolresizescale.cpp:1113
 msgid ""
 "<qt>"
 "<p>Resizing the text box to %1x%2 may take a substantial amount of memory. "
@@ -1436,15 +1481,15 @@ msgstr ""
 "<p>  Шумо дар ҳақиқат мехоҳед ба андозаи "
 "қуттӣ тағирот дароред?</p></qt>"
 
-#: tools/kptoolresizescale.cpp:1116
+#: tools/kptoolresizescale.cpp:1121
 msgid "Resize Text Box?"
 msgstr "Андозаи матнии блокро тағйир додан? "
 
-#: tools/kptoolresizescale.cpp:1117
+#: tools/kptoolresizescale.cpp:1122
 msgid "R&esize Text Box"
 msgstr "А&ндозаи матнии блокро тағйир додан"
 
-#: tools/kptoolresizescale.cpp:1122
+#: tools/kptoolresizescale.cpp:1127
 #, fuzzy
 msgid ""
 "<qt>"
@@ -1462,7 +1507,7 @@ msgstr ""
 "<p> Шумо дар ҳақиқат мехоҳед ба андозаи "
 "қуттӣ тағирот дароред?</p></qt>"
 
-#: tools/kptoolresizescale.cpp:1140
+#: tools/kptoolresizescale.cpp:1145
 #, fuzzy
 msgid ""
 "<qt>"
@@ -1479,15 +1524,15 @@ msgstr ""
 "<p> Шумо дар ҳақиқат мехоҳед ба боло "
 "баромадани тасвир тағирот дароред?</p></qt>"
 
-#: tools/kptoolresizescale.cpp:1148
+#: tools/kptoolresizescale.cpp:1153
 msgid "Scale Image?"
 msgstr "Тасвиротро ба маштаб даровардан? "
 
-#: tools/kptoolresizescale.cpp:1149
+#: tools/kptoolresizescale.cpp:1154
 msgid "Scal&e Image"
 msgstr "Та&свиротро ба маштаб даровардан"
 
-#: tools/kptoolresizescale.cpp:1154
+#: tools/kptoolresizescale.cpp:1159
 #, fuzzy
 msgid ""
 "<qt>"
@@ -1504,15 +1549,15 @@ msgstr ""
 "<p> Шумо дар ҳақиқат мехоҳед ба андозаи "
 "қуттӣ тағирот дароред?</p></qt>"
 
-#: tools/kptoolresizescale.cpp:1162
+#: tools/kptoolresizescale.cpp:1167
 msgid "Scale Selection?"
 msgstr "Масштабонии ҷудокунӣ?"
 
-#: tools/kptoolresizescale.cpp:1163
+#: tools/kptoolresizescale.cpp:1168
 msgid "Scal&e Selection"
 msgstr "Масш&табонии ҷудокунӣ"
 
-#: tools/kptoolresizescale.cpp:1172
+#: tools/kptoolresizescale.cpp:1177
 #, fuzzy
 msgid ""
 "<qt>"
@@ -1530,15 +1575,15 @@ msgstr ""
 "<p>Шумо дар ҳақиқат мехоҳед ба боло "
 "баромадани тасвир тағирот дароред?</p></qt>"
 
-#: tools/kptoolresizescale.cpp:1180
+#: tools/kptoolresizescale.cpp:1185
 msgid "Smooth Scale Image?"
 msgstr "Ҷадвали шустабарӣ?"
 
-#: tools/kptoolresizescale.cpp:1181
+#: tools/kptoolresizescale.cpp:1186
 msgid "Smooth Scal&e Image"
 msgstr "Ҷадвали шустабар&ии тасвир"
 
-#: tools/kptoolresizescale.cpp:1186
+#: tools/kptoolresizescale.cpp:1191
 #, fuzzy
 msgid ""
 "<qt>"
@@ -1557,11 +1602,11 @@ msgstr ""
 "ҳамвор дар %1%2 метавонад миқд амалро дар "
 "хотир нигоҳ дорад.Ин метавонад хурд "
 
-#: tools/kptoolresizescale.cpp:1194
+#: tools/kptoolresizescale.cpp:1199
 msgid "Smooth Scale Selection?"
 msgstr "Масштабонии ҷудокунӣ?"
 
-#: tools/kptoolresizescale.cpp:1195
+#: tools/kptoolresizescale.cpp:1200
 msgid "Smooth Scal&e Selection"
 msgstr "Масштабон&ии ҷудокунӣ"
 
@@ -1673,67 +1718,67 @@ msgstr ""
 "Росткунҷаи дуранг ва майдон бо кунҷи гирд "
 "карда шуда"
 
-#: tools/kptoolselection.cpp:136
+#: tools/kptoolselection.cpp:140
 msgid "Left drag to resize text box."
 msgstr "Аз чап қуттии матнро аз нав андоза кунед."
 
-#: tools/kptoolselection.cpp:138
+#: tools/kptoolselection.cpp:142
 msgid "Left drag to scale selection."
 msgstr ""
 "Интихоби аз тарафи чап бударо аҳамият "
 "диҳед."
 
-#: tools/kptoolselection.cpp:145
+#: tools/kptoolselection.cpp:149
 msgid "Left click to change cursor position."
 msgstr ""
 "Бигзоред ғалақача ҷои курсорро дигар "
 "кунад."
 
-#: tools/kptoolselection.cpp:147
+#: tools/kptoolselection.cpp:151
 msgid "Left drag to move text box."
 msgstr "Аз чап матнро ба қуттича баред."
 
-#: tools/kptoolselection.cpp:151
+#: tools/kptoolselection.cpp:155
 msgid "Left drag to move selection."
 msgstr "Аз чап интихобро ҷой кардан."
 
-#: tools/kptoolselection.cpp:157
+#: tools/kptoolselection.cpp:161
 msgid "Left drag to create text box."
 msgstr "Аз чап қуттичаи матнро созед."
 
-#: tools/kptoolselection.cpp:159
+#: tools/kptoolselection.cpp:163
 msgid "Left drag to create selection."
 msgstr "Аз чап интихобро ташкил кунед."
 
-#: tools/kptoolselection.cpp:1016
+#: tools/kptoolselection.cpp:1094
 msgid "%1: Smear"
 msgstr "%1: Доғ"
 
-#: tools/kptoolselection.cpp:1023
+#: tools/kptoolselection.cpp:1101
 msgid "Text: Move Box"
 msgstr "Матн: Гузаронидани блок"
 
-#: tools/kptoolselection.cpp:1024
+#: tools/kptoolselection.cpp:1102
 msgid "Selection: Move"
 msgstr "Ҷудо кардан: Гузарондан"
 
-#: tools/kptoolselection.cpp:1195
+#: tools/kptoolselection.cpp:1280
 msgid "Selection: Transparency"
 msgstr "Ҷудо кардан: Шаффофӣ"
 
-#: tools/kptoolselection.cpp:1246
+#: tools/kptoolselection.cpp:1331
 msgid "Selection: Opaque"
 msgstr "Ҷудо кардан: Эҷод"
 
-#: tools/kptoolselection.cpp:1247
+#: tools/kptoolselection.cpp:1332
 msgid "Selection: Transparent"
 msgstr "Ҷудо кардан: Шаффофӣ"
 
-#: tools/kptoolselection.cpp:1286
+#: tools/kptoolselection.cpp:1371
 msgid "Selection: Transparency Color"
 msgstr "Ҷудо кардан: Ранги шаффофӣ"
 
-#: tools/kptoolselection.cpp:1325
+#: tools/kptoolselection.cpp:1410
 msgid "Selection: Transparency Color Similarity"
 msgstr "Ҷудо кардан: Рангиш шаффофӣ монанд"
 
@@ -1811,63 +1856,63 @@ msgstr "&Тасвиротро вайрон кардан"
 msgid "Writes text"
 msgstr "Матнро навистан"
 
-#: tools/kptooltext.cpp:203
+#: tools/kptooltext.cpp:207
 msgid "Text: New Line"
 msgstr "Матн: Сатри нав"
 
-#: tools/kptooltext.cpp:224
+#: tools/kptooltext.cpp:228
 msgid "Text: Backspace"
 msgstr "Матн: Backspace"
 
-#: tools/kptooltext.cpp:245
+#: tools/kptooltext.cpp:249 tools/kptooltext.cpp:565 tools/kptooltext.cpp:624
 msgid "Text: Delete"
 msgstr "Матн: Ҳузф"
 
-#: tools/kptooltext.cpp:495
+#: tools/kptooltext.cpp:499 tools/kptooltext.cpp:584 tools/kptooltext.cpp:644
 msgid "Text: Write"
 msgstr "Матн: Навиштан"
 
-#: tools/kptooltext.cpp:588
+#: tools/kptooltext.cpp:717
 msgid "Text: Opaque Background"
 msgstr "Матн: Заминаи эҷод"
 
-#: tools/kptooltext.cpp:589
+#: tools/kptooltext.cpp:718
 msgid "Text: Transparent Background"
 msgstr "Матн: Заминаи шаффофӣ"
 
-#: tools/kptooltext.cpp:610
+#: tools/kptooltext.cpp:739
 msgid "Text: Swap Colors"
 msgstr "Матн: Иввази ранг"
 
-#: tools/kptooltext.cpp:629
+#: tools/kptooltext.cpp:758
 msgid "Text: Foreground Color"
 msgstr "Матн: Ранг"
 
-#: tools/kptooltext.cpp:648
+#: tools/kptooltext.cpp:777
 msgid "Text: Background Color"
 msgstr "Матн: Замина"
 
-#: tools/kptooltext.cpp:680
+#: tools/kptooltext.cpp:809
 msgid "Text: Font"
 msgstr "Матн: Ҳуруф"
 
-#: tools/kptooltext.cpp:703
+#: tools/kptooltext.cpp:832
 msgid "Text: Font Size"
 msgstr "Матн: Андозаи ҳуруф"
 
-#: tools/kptooltext.cpp:723
+#: tools/kptooltext.cpp:852
 msgid "Text: Bold"
 msgstr "Матн: Нимафарбеҳ"
 
-#: tools/kptooltext.cpp:742
+#: tools/kptooltext.cpp:871
 msgid "Text: Italic"
 msgstr "Матн: Курсив"
 
-#: tools/kptooltext.cpp:761
+#: tools/kptooltext.cpp:890
 msgid "Text: Underline"
 msgstr "Матн: Хаткашидашуда"
 
-#: tools/kptooltext.cpp:780
+#: tools/kptooltext.cpp:909
 msgid "Text: Strike Through"
 msgstr "Матн: Хаткашида"
 
@@ -1921,16 +1966,16 @@ msgstr "RGB Масофаи куби."
 msgid "Exact Match"
 msgstr "Мутобиқоти дақиқ"
 
-#: widgets/kpcolortoolbar.cpp:720
+#: widgets/kpcolortoolbar.cpp:721
 #: widgets/kptoolwidgetopaqueortransparent.cpp:45
 msgid "Transparent"
 msgstr "Шаффоф"
 
-#: widgets/kpcolortoolbar.cpp:873
+#: widgets/kpcolortoolbar.cpp:874
 msgid "Color similarity: %1%"
 msgstr "Мутобиқати ранг: %1%"
 
-#: widgets/kpcolortoolbar.cpp:875
+#: widgets/kpcolortoolbar.cpp:876
 msgid "Color similarity: Exact"
 msgstr "Мутобиқоти ранг: Дақиқ"
 
@@ -1977,6 +2022,12 @@ msgstr "Мавқеи пеши рангро пур кардан"
 #: widgets/kptoolwidgetopaqueortransparent.cpp:43
 msgid "Opaque"
 msgstr "Норавшан"
+
+#~ msgid "%1% - Thumbnail"
+#~ msgstr "%1%- Хурд намудани нуқса"
+
+#~ msgid "Soften && Sharpen"
+#~ msgstr "Тезӣ"
 
 #~ msgid "image \"%1\""
 #~ msgstr "тасвироти \"%1\" "
