@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kio_smtp\n"
-"POT-Creation-Date: 2004-07-14 01:19+0200\n"
+"POT-Creation-Date: 2004-11-06 01:32+0100\n"
 "PO-Revision-Date: 2004-01-28 03:10+0435\n"
 "Last-Translator: Dilshod Marupov <kct_tj@yahoo.co.uk>\n"
 "Language-Team: Tajik <kct_tj@yahoo.co.uk>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.0.1\n"
 
-#: command.cc:124
+#: command.cc:125
 msgid ""
 "The server rejected both EHLO and HELO commands as unknown or "
 "unimplemented.\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Марҳамат карда бо идоракунандаи системаи "
 "хидматрасон алоқа кунед."
 
-#: command.cc:138
+#: command.cc:139
 msgid ""
 "Unexpected server response to %1 command.\n"
 "%2"
@@ -34,7 +34,7 @@ msgstr ""
 "ҷавобгӯ аст.\n"
 "%2"
 
-#: command.cc:158
+#: command.cc:159
 msgid ""
 "Your SMTP server does not support TLS. Disable TLS, if you want to connect "
 "without encryption."
@@ -44,7 +44,7 @@ msgstr ""
 "бе рамзбандӣ амалӣ созед, TLS-ро бекор "
 "кунед."
 
-#: command.cc:172
+#: command.cc:173
 msgid ""
 "Your SMTP server claims to support TLS, but negotiation was unsuccessful.\n"
 "You can disable TLS in KDE using the crypto settings module."
@@ -55,40 +55,22 @@ msgstr ""
 "Шумо метавонед TLS-ро дар KDE бо истифодаи "
 "воҳиди батанзимдарории рамз бекор кунед."
 
-#: command.cc:177
+#: command.cc:178
 msgid "Connection Failed"
 msgstr "Хатогӣ ҳангоми Пайвастшавӣ"
 
-#: command.cc:197
-msgid "No compatible authentication methods found."
+#: command.cc:229
+msgid "Authentication support is not compiled into kio_smtp."
+msgstr ""
+
+#: command.cc:258
+#, fuzzy
+msgid "No authentication details supplied."
 msgstr ""
 "Пайдокунии усулҳои муштарики аслшиносӣ "
 "нашуда истодааст."
 
-#: command.cc:202
-#, fuzzy
-msgid ""
-"You have requested to authenticate to the server, but the server does not "
-"seem to support authentication.\n"
-"Try disabling authentication entirely."
-msgstr ""
-"Шумо аслшиносӣ кардани хидматрасонро "
-"талаб кардед, лекин хидматрасон "
-"аслшиносиро пуштибонӣ намекунад.\n"
-"Бекоркунии аслшиносиро комилан амалӣ "
-"кунед."
-
-#: command.cc:208
-#, fuzzy
-msgid ""
-"Your SMTP server does not support %1.\n"
-"Choose a different authentication method."
-msgstr ""
-"Хидматрасони SMTP-и шумо %1-ро пуштибонӣ "
-"намекунад.\n"
-"Усули аслшиносии дигарро интихоб кунед."
-
-#: command.cc:262
+#: command.cc:361
 #, fuzzy
 msgid ""
 "Your SMTP server does not support %1.\n"
@@ -100,17 +82,17 @@ msgstr ""
 "Усули аслшиносии дигарро интихоб кунед.\n"
 "%2"
 
-#: command.cc:267
+#: command.cc:365
 #, fuzzy, c-format
 msgid ""
 "Your SMTP server does not support authentication.\n"
-"%2"
+"  %2"
 msgstr ""
 "Хидматрасони SMTP-и шумо аслшиносиро "
 "пуштибонӣ намекунад.\n"
 "%2"
 
-#: command.cc:271
+#: command.cc:369
 #, c-format
 msgid ""
 "Authentication failed.\n"
@@ -121,11 +103,11 @@ msgstr ""
 "Эҳтимолан гузарвожа нодуруст аст.\n"
 "%1"
 
-#: command.cc:409
+#: command.cc:507
 msgid "Could not read data from application."
 msgstr "Хонда натавонистани маълумот аз замима."
 
-#: command.cc:426
+#: command.cc:524
 #, c-format
 msgid ""
 "The message content was not accepted.\n"
@@ -153,19 +135,19 @@ msgstr ""
 "Ин хатогии муваққатӣ. Каме дертар боз "
 "кӯшиш карда метавонед."
 
-#: smtp.cc:158
+#: smtp.cc:188
 msgid "The application sent an invalid request."
 msgstr "Замима талаботи нодурустро фиристодааст."
 
-#: smtp.cc:220
+#: smtp.cc:250
 msgid "The sender address is missing."
 msgstr "Суроғаи фиристанда мавҷуд нест."
 
-#: smtp.cc:228
+#: smtp.cc:258
 msgid "SMTPProtocol::smtp_open failed (%1)"
 msgstr "Хатогӣ дар иҷрои SMTPProtocol::smtp_open (%1)"
 
-#: smtp.cc:236
+#: smtp.cc:266
 msgid ""
 "Your server does not support sending of 8-bit messages.\n"
 "Please use base64 or quoted-printable encoding."
@@ -175,11 +157,11 @@ msgstr ""
 "Манбаи 64 ё рамзбандии ҳиссакардаи "
 "чопкуниро истифода баред."
 
-#: smtp.cc:315
+#: smtp.cc:345
 msgid "Invalid SMTP response (%1) received."
 msgstr "Ҷавоби (%1) нодурусти SMTP гирифта шудааст."
 
-#: smtp.cc:497
+#: smtp.cc:529
 #, c-format
 msgid ""
 "The server did not accept the connection.\n"
@@ -188,16 +170,12 @@ msgstr ""
 "Хидматрасон пайвастшавиро қабул накард.\n"
 "%1"
 
-#: smtp.cc:554
+#: smtp.cc:604
 #, fuzzy
 msgid "Username and password for your SMTP account:"
 msgstr ""
 "Номи корванд ва гузарвожа барои ҳисоби "
 "SMTP-и шумо:"
-
-#: smtp.cc:556
-msgid "When prompted, you ran away."
-msgstr "Ҳангоми кӯмак ҷавоб гирифта нашуд."
 
 #: transactionstate.cc:53
 #, c-format
@@ -245,3 +223,22 @@ msgid "Unhandled error condition. Please send a bug report."
 msgstr ""
 "Шарти ноқуллаи хотогӣ. Марҳамат карда "
 "маърӯзаи ғалатиро фиристед."
+
+#, fuzzy
+#~ msgid ""
+#~ "You have requested to authenticate to the server, but the server does not seem to support authentication.\n"
+#~ "Try disabling authentication entirely."
+#~ msgstr ""
+#~ "Шумо аслшиносӣ кардани хидматрасонро талаб кардед, лекин хидматрасон аслшиносиро пуштибонӣ намекунад.\n"
+#~ "Бекоркунии аслшиносиро комилан амалӣ кунед."
+
+#, fuzzy
+#~ msgid ""
+#~ "Your SMTP server does not support %1.\n"
+#~ "Choose a different authentication method."
+#~ msgstr ""
+#~ "Хидматрасони SMTP-и шумо %1-ро пуштибонӣ намекунад.\n"
+#~ "Усули аслшиносии дигарро интихоб кунед."
+
+#~ msgid "When prompted, you ran away."
+#~ msgstr "Ҳангоми кӯмак ҷавоб гирифта нашуд."
