@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: klinkstatus\n"
-"POT-Creation-Date: 2004-07-16 01:39+0200\n"
+"POT-Creation-Date: 2004-07-31 01:27+0200\n"
 "PO-Revision-Date: 2004-07-16 18:14-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -18,17 +18,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3\n"
 
-#: ui/tablelinkstatus.cpp:91 ui/tabwidgetsession.cpp:124
+#: ui/resultview.cpp:47 ui/tablelinkstatus.cpp:91 ui/tabwidgetsession.cpp:125
 msgid "Status"
 msgstr "Вазъият"
 
-#: ui/tablelinkstatus.cpp:96 ui/tabwidgetsession.cpp:125
+#: ui/resultview.cpp:49 ui/tablelinkstatus.cpp:96 ui/tabwidgetsession.cpp:126
 msgid "Label"
 msgstr "Ёрлиқ"
 
-#: ui/tablelinkstatus.cpp:100 ui/tabwidgetsession.cpp:126
+#: ui/resultview.cpp:51 ui/tablelinkstatus.cpp:100 ui/tabwidgetsession.cpp:127
 msgid "URL"
 msgstr "URL"
+
+#: engine/linkchecker.cpp:90 ui/resultview.cpp:78 ui/resultview.cpp:86
+#: ui/tablelinkstatus.cpp:593 ui/tablelinkstatus.cpp:658
+msgid "Timeout"
+msgstr ""
+
+#: engine/linkstatus.cpp:133 engine/linkstatus.cpp:157
+#: engine/linkstatus.cpp:162 engine/searchmanager.cpp:467 ui/resultview.cpp:82
+#: ui/tablelinkstatus.cpp:662
+#, fuzzy
+msgid "Malformed"
+msgstr "Алоқаҳои нодуруст"
+
+#: engine/searchmanager.cpp:478 ui/resultview.cpp:128
+msgid "Javascript not supported"
+msgstr ""
 
 #: ui/tablelinkstatus.cpp:280
 msgid "All"
@@ -70,13 +86,44 @@ msgstr "URL.-и нодуруст."
 msgid "ROOT URL."
 msgstr "URL РЕША."
 
+#: ui/tablelinkstatus.cpp:595
+msgid "not supported"
+msgstr ""
+
 #: ui/tablelinkstatus.cpp:685 ui/tablelinkstatus.cpp:688
 #, c-format
 msgid "%1"
 msgstr "%1"
 
-#: ui/sessionwidget.cpp:348
+#: ui/sessionwidget.cpp:218 ui/sessionwidget.cpp:310 ui/sessionwidget.cpp:362
+#: ui/sessionwidget.cpp:376 ui/sessionwidget.cpp:499
+msgid "Checking..."
+msgstr ""
+
+#: rc.cpp:36 ui/sessionwidget.cpp:227 ui/sessionwidget.cpp:308
+#, no-c-format
+msgid "&Pause"
+msgstr "&Тафаққуф"
+
+#: ui/sessionwidget.cpp:306 ui/sessionwidget.cpp:440
+msgid "&Resume"
+msgstr ""
+
+#: ui/sessionwidget.cpp:349
 msgid "Cowardly refusing to check an empty URL."
+msgstr ""
+
+#: rc.cpp:39 ui/sessionwidget.cpp:414
+#, no-c-format
+msgid "Ready"
+msgstr "Тайёр"
+
+#: ui/sessionwidget.cpp:435
+msgid "Stopped"
+msgstr ""
+
+#: ui/sessionwidget.cpp:485 ui/sessionwidget.cpp:493
+msgid "Adding level..."
 msgstr ""
 
 #: klinkstatus.cpp:74
@@ -89,7 +136,10 @@ msgstr ""
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
-msgstr "Tajik KDE Teams: Роҷер Ковакс, Виктор Ибрагимов, Марина Колючева, акмал Саломов, Евгения Фатхеева, Сурайё Ҷурахонова."
+msgstr ""
+"Tajik KDE Teams: Роҷер Ковакс, Виктор Ибрагимов, "
+"Марина Колючева, акмал Саломов, Евгения "
+"Фатхеева, Сурайё Ҷурахонова."
 
 #: _translatorinfo.cpp:3
 msgid ""
@@ -112,6 +162,34 @@ msgstr ""
 #: engine/linkstatus_impl.h:117
 msgid "ROOT"
 msgstr "РЕША"
+
+#: engine/linkchecker.cpp:295
+msgid "No Content"
+msgstr ""
+
+#: engine/linkchecker.cpp:498
+msgid "Link destination not found."
+msgstr ""
+
+#: engine/linkstatus.cpp:99
+#, c-format
+msgid "Parent: %1"
+msgstr ""
+
+#: engine/linkstatus.cpp:103
+#, fuzzy, c-format
+msgid "URL: %1"
+msgstr "URL: "
+
+#: engine/linkstatus.cpp:104
+#, c-format
+msgid "Original URL: %1"
+msgstr ""
+
+#: engine/linkstatus.cpp:106
+#, c-format
+msgid "Node: %1"
+msgstr ""
 
 #: rc.cpp:16
 #, no-c-format
@@ -157,16 +235,6 @@ msgstr ""
 #, no-c-format
 msgid "Click here to begin searching"
 msgstr ""
-
-#: rc.cpp:36
-#, no-c-format
-msgid "&Pause"
-msgstr "&Тафаққуф"
-
-#: rc.cpp:39
-#, no-c-format
-msgid "Ready"
-msgstr "Тайёр"
 
 #: rc.cpp:42
 #, no-c-format
@@ -290,6 +358,10 @@ msgstr ""
 msgid "Whether preview prefix in Quanta project is used to set the URL to check."
 msgstr ""
 
+#: klinkstatus_part.cpp:46
+msgid "A Link Checker"
+msgstr ""
+
 #: klinkstatus_part.cpp:82
 msgid "New Link Check"
 msgstr ""
@@ -341,4 +413,3 @@ msgstr ""
 #: klinkstatus_part.cpp:368
 msgid "KLinkStatus Part"
 msgstr ""
-
