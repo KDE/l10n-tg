@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwallet\n"
-"POT-Creation-Date: 2004-07-20 01:23+0200\n"
+"POT-Creation-Date: 2004-11-08 01:46+0100\n"
 "PO-Revision-Date: 2004-04-15 08:17-0500\n"
 "Last-Translator: Dilshod Marupov <dma165@hotmail.com>\n"
 "Language-Team:  Tajik\n"
@@ -42,37 +42,45 @@ msgstr "Модули Идоракунии Ҳамёнҳои KDE"
 msgid "(c) 2003 George Staikos"
 msgstr "(c) 2003 George Staikos"
 
-#: konfigurator.cpp:116
+#: konfigurator.cpp:117
 msgid "New Wallet"
 msgstr "Ҳамёни Нав"
 
-#: konfigurator.cpp:117
+#: konfigurator.cpp:118
 msgid "Please choose a name for the new wallet:"
 msgstr ""
 "Марҳамат карда, барои ҳамёни нави худ ном "
 "интихоб кунед:"
 
-#: konfigurator.cpp:208
+#: konfigurator.cpp:215 konfigurator.cpp:264
 msgid "Always Allow"
 msgstr "Ҳамеша Иҷозат Додан"
 
-#: konfigurator.cpp:274
+#: konfigurator.cpp:218 konfigurator.cpp:226 konfigurator.cpp:275
+#, fuzzy
+msgid "Always Deny"
+msgstr "Ҳамеша Иҷозат Додан"
+
+#: konfigurator.cpp:307
 msgid "This configuration module allows you to configure the KDE wallet system."
 msgstr ""
 "Ин модули танзимкунӣ ба шумо имконияти "
 "танзимкунии системаи KDE-и ҳамёнро медиҳад."
 
-#: rc.cpp:2
+#. i18n: file walletconfigwidget.ui line 31
+#: rc.cpp:3
 #, no-c-format
 msgid "Wallet Preferences"
 msgstr "Бартариҳои Ҳамён"
 
-#: rc.cpp:4
+#. i18n: file walletconfigwidget.ui line 42
+#: rc.cpp:6
 #, no-c-format
 msgid "&Enable the KDE wallet subsystem"
 msgstr "Зерсистемаи ҳамёни KDE-ро &даргиронед"
 
-#: rc.cpp:6
+#. i18n: file walletconfigwidget.ui line 48
+#: rc.cpp:9
 #, no-c-format
 msgid ""
 "<p>"
@@ -86,12 +94,14 @@ msgstr ""
 "ҳал кунед, ки ин системаро бо ин хусусият "
 "истифода баред.</p>"
 
-#: rc.cpp:8
+#. i18n: file walletconfigwidget.ui line 56
+#: rc.cpp:12
 #, no-c-format
 msgid "Close Wallet"
 msgstr "Пӯшидани Ҳамён"
 
-#: rc.cpp:10
+#. i18n: file walletconfigwidget.ui line 59
+#: rc.cpp:15
 #, fuzzy, no-c-format
 msgid ""
 "It is best to close your wallets when you are not using them to prevent "
@@ -102,14 +112,16 @@ msgstr ""
 "ягон шахс онҳоро набинад ё истифода "
 "набарад."
 
-#: rc.cpp:12
+#. i18n: file walletconfigwidget.ui line 86
+#: rc.cpp:18
 #, no-c-format
 msgid "Close when unused for:"
 msgstr ""
 "Пӯшед, агар дар мӯҳлати муайян истифода "
 "нашавад:"
 
-#: rc.cpp:14 rc.cpp:18
+#. i18n: file walletconfigwidget.ui line 89
+#: rc.cpp:21 rc.cpp:27
 #, no-c-format
 msgid ""
 "<p><b>Close wallet after a period of inactivity</b>"
@@ -121,17 +133,20 @@ msgstr ""
 "дастёбии дубора ба он гузарвожа лозим "
 "аст.</p>"
 
-#: rc.cpp:16
+#. i18n: file walletconfigwidget.ui line 108
+#: rc.cpp:24
 #, no-c-format
 msgid " min"
 msgstr " дақиқа"
 
-#: rc.cpp:20
+#. i18n: file walletconfigwidget.ui line 150
+#: rc.cpp:30
 #, no-c-format
 msgid "Close when screensaver starts"
 msgstr "Ҳангоми оғози нигаҳдорандаи экран, пӯшед"
 
-#: rc.cpp:22
+#. i18n: file walletconfigwidget.ui line 153
+#: rc.cpp:33
 #, no-c-format
 msgid ""
 "<p><b>Close wallet as soon as the screensaver starts.</b>"
@@ -143,14 +158,16 @@ msgstr ""
 "дастёбии дубора ба он гузарвожа лозим "
 "аст.</p>"
 
-#: rc.cpp:24
+#. i18n: file walletconfigwidget.ui line 161
+#: rc.cpp:36
 #, no-c-format
 msgid "Close when last application stops using it"
 msgstr ""
 "Ҳангоме, ки замимаи охирон истифодабарии "
 "онро бозмедорад, ҳамёнро пӯшед"
 
-#: rc.cpp:26
+#. i18n: file walletconfigwidget.ui line 164
+#: rc.cpp:39
 #, no-c-format
 msgid ""
 "<p><b>Close wallet as soon as applications that use it have "
@@ -169,73 +186,86 @@ msgstr ""
 "барои боз дастрасии он гузарвожа лозим "
 "аст.</p>"
 
-#: rc.cpp:28
+#. i18n: file walletconfigwidget.ui line 174
+#: rc.cpp:42
 #, no-c-format
 msgid "Automatic Wallet Selection"
 msgstr "Интихоби Худкори Ҳамён"
 
-#: rc.cpp:30
+#. i18n: file walletconfigwidget.ui line 202
+#: rc.cpp:45
 #, no-c-format
 msgid "Select wallet to use as default:"
 msgstr ""
 "Ҳамёнро барои истифодабарӣ бо нобаёнӣ "
 "интихоб кунед:"
 
-#: rc.cpp:32
+#. i18n: file walletconfigwidget.ui line 210
+#: rc.cpp:48
 #, no-c-format
 msgid "Different wallet for local passwords:"
 msgstr ""
 "Ҳамёнҳои гуногун барои гузарвожаи "
 "маҳаллӣ:"
 
-#: rc.cpp:34 rc.cpp:36
+#. i18n: file walletconfigwidget.ui line 250
+#: rc.cpp:51 rc.cpp:54
 #, no-c-format
 msgid "New..."
 msgstr "Нав..."
 
-#: rc.cpp:38
+#. i18n: file walletconfigwidget.ui line 268
+#: rc.cpp:57
 #, no-c-format
 msgid "Wallet Manager"
 msgstr "Мудири Ҳамёнҳо"
 
-#: rc.cpp:40
+#. i18n: file walletconfigwidget.ui line 296
+#: rc.cpp:60
 #, no-c-format
 msgid "Show manager in system tray"
 msgstr "Мудирро дар қуттии системавӣ нишон диҳед"
 
-#: rc.cpp:42
+#. i18n: file walletconfigwidget.ui line 307
+#: rc.cpp:63
 #, no-c-format
 msgid "Hide system tray icon when last wallet closes"
 msgstr ""
 "Тасвири сабади системавиро ҳангоми "
 "пӯшидани ҳамёни охирон пинҳон кунед"
 
-#: rc.cpp:44
+#. i18n: file walletconfigwidget.ui line 336
+#: rc.cpp:66
 #, no-c-format
 msgid "Access Control"
 msgstr "Идоракунии Дастёбӣ"
 
-#: rc.cpp:46
+#. i18n: file walletconfigwidget.ui line 347
+#: rc.cpp:69
 #, no-c-format
 msgid "&Prompt when an application accesses an open wallet"
 msgstr "&Пурсиш ҳангоми кушодани ҳамён"
 
-#: rc.cpp:48
+#. i18n: file walletconfigwidget.ui line 356
+#: rc.cpp:72
 #, no-c-format
 msgid "Wallet"
 msgstr "Ҳамён"
 
-#: rc.cpp:50
+#. i18n: file walletconfigwidget.ui line 370
+#: rc.cpp:75
 #, no-c-format
 msgid "Application"
 msgstr "Замима"
 
-#: rc.cpp:52
+#. i18n: file walletconfigwidget.ui line 381
+#: rc.cpp:78
 #, no-c-format
 msgid "Policy"
 msgstr "Қоидаҳо"
 
-#: rc.cpp:54
+#. i18n: file walletconfigwidget.ui line 405
+#: rc.cpp:81
 #, no-c-format
 msgid "&Launch Wallet Manager"
 msgstr "&Сардиҳии Мудири Ҳамён"
