@@ -1,0 +1,3316 @@
+# translation of kfileshare.po to Tajik
+# translation of kfileshare.po to Тоҷикӣ
+# Copyright (C) 2004 Free Software Foundation, Inc.
+# 2004, infoDev, a World Bank organization
+# 2004, Khujand Computer Technologies, Inc.
+# Roger V Kovacs, <rkovacs@khujand.org>, 2004.
+msgid ""
+msgstr ""
+"Project-Id-Version: kfileshare\n"
+"POT-Creation-Date: 2004-07-15 01:24+0200\n"
+"PO-Revision-Date: 2004-07-15 09:55-0500\n"
+"Last-Translator: Roger V Kovacs, <rkovacs@khujand.org>\n"
+"Language-Team: Tajik\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.2\n"
+
+#: rc.cpp:2
+msgid "Allow all users to share folders"
+msgstr ""
+
+#: rc.cpp:3 simple/groupconfigdlg.cpp:323
+msgid "Only users of the '%1' group are allowed to share folders"
+msgstr ""
+
+#: rc.cpp:4
+msgid "Users of '%1' group"
+msgstr ""
+
+#: rc.cpp:5
+msgid "Remove User"
+msgstr ""
+
+#: advanced/kcm_sambaconf/usertabimpl.cpp:278 rc.cpp:6
+msgid "Add User"
+msgstr ""
+
+#: rc.cpp:7
+msgid "Group members can share folders without root password"
+msgstr ""
+
+#: rc.cpp:8 simple/groupconfigdlg.cpp:327
+msgid "Change Group..."
+msgstr ""
+
+#: rc.cpp:9
+msgid ""
+"SMB and NFS servers are not installed on this machine, to enable this module "
+"the servers must be installed."
+msgstr ""
+
+#: rc.cpp:10
+msgid "Enable local networ&k file sharing"
+msgstr ""
+
+#: rc.cpp:11
+msgid "Si&mple sharing"
+msgstr ""
+
+#: rc.cpp:12
+msgid ""
+"Enable simple sharing to allow users to share folders from their HOME "
+"folder, without knowing the root password."
+msgstr ""
+
+#: rc.cpp:13
+msgid "Advanced sharin&g"
+msgstr ""
+
+#: rc.cpp:14
+msgid ""
+"Enable advanced sharing to allow users to share any folders, as long as they "
+"have write access to the needed configuration files, or they know the root "
+"password."
+msgstr ""
+
+#: rc.cpp:15
+msgid "Use &NFS (Linux/UNIX)"
+msgstr ""
+
+#: rc.cpp:16
+msgid "Use Sam&ba (Microsoft(R) Windows(R))"
+msgstr ""
+
+#: rc.cpp:17
+msgid "Allo&wed Users"
+msgstr ""
+
+#: rc.cpp:18
+msgid "Shared Folders"
+msgstr ""
+
+#: rc.cpp:19 rc.cpp:217
+#, fuzzy
+msgid "Path"
+msgstr "Роҳча"
+
+#: rc.cpp:20
+#, fuzzy
+msgid "Samba"
+msgstr "Samba"
+
+#: rc.cpp:21
+msgid "NFS"
+msgstr ""
+
+#: rc.cpp:22
+#, fuzzy
+msgid "A&dd..."
+msgstr "&Иловакунӣ..."
+
+#: rc.cpp:23
+msgid "Chang&e..."
+msgstr ""
+
+#: rc.cpp:24 rc.cpp:242
+msgid "Rem&ove"
+msgstr ""
+
+#: rc.cpp:25
+msgid "Allowed &Hosts"
+msgstr ""
+
+#: rc.cpp:26
+msgid "A list of allowed hosts"
+msgstr ""
+
+#: rc.cpp:27
+msgid ""
+"Here you can see a list of hosts which are allowed to access this directory "
+"via NFS.\n"
+"The first column shows the name or address of the host, the second column "
+"shows the access parameters. The name '*' donates public access."
+msgstr ""
+
+#: rc.cpp:28
+msgid "&Add Host..."
+msgstr ""
+
+#: rc.cpp:29
+msgid "Mo&dify Host..."
+msgstr ""
+
+#: rc.cpp:30
+msgid "&Remove Host"
+msgstr ""
+
+#: rc.cpp:31
+msgid "Name/Address"
+msgstr ""
+
+#: rc.cpp:32
+#, fuzzy
+msgid "Parameters"
+msgstr "Параметрҳо"
+
+#: advanced/nfs/nfshostdlg.cpp:36 rc.cpp:33
+msgid "Host Properties"
+msgstr ""
+
+#: rc.cpp:34
+msgid "&Name/address:"
+msgstr ""
+
+#: rc.cpp:35
+msgid ""
+"<b>Name / Address field</b>\n"
+"<p>\n"
+"Here you can enter the host name or address.<br>\n"
+"The host may be specified in a number of ways:\n"
+"<p>\n"
+"<i>single host</i>\n"
+"<p>\n"
+" This is the most common format. You may specify a host either by an "
+"abbreviated name recognized by the resolver, the fully qualified domain "
+"name, or an IP address.\n"
+"</p>\n"
+"\n"
+"<i>netgroups</i>\n"
+"<p>\n"
+" NIS netgroups may be given as @group. Only the host part of each netgroup "
+"members is consider in checking for membership. Empty host parts or those "
+"containing a single dash (-) are ignored.\n"
+"</p>\n"
+"\n"
+"<i>wildcards</i>\n"
+"<p>\n"
+" Machine names may contain the wildcard characters * and ?. This can be used "
+"to make the exports file more compact; for instance, *.cs.foo.edu matches "
+"all hosts in the domain cs.foo.edu. However, these wildcard characters do "
+"not match the dots in a domain name, so the above pattern does not include "
+"hosts such as a.b.cs.foo.edu.\n"
+"</p>\n"
+"\n"
+"<i>IP networks</i>\n"
+"<p>\n"
+" You can also export directories to all hosts on an IP (sub-) network "
+"simultaneously. This is done by specifying an IP address and netmask pair as "
+"address/netmask where the netmask can be specified in dotted-decimal format, "
+"or as a contiguous mask length (for example, either `/255.255.252.0' or "
+"`/22' appended to the network base address result in identical subnetworks "
+"with 10 bits of host).\n"
+"</p>"
+msgstr ""
+
+#: rc.cpp:36
+msgid "&Public access"
+msgstr ""
+
+#: rc.cpp:37
+msgid ""
+"<b>Public access</b>\n"
+"<p>\n"
+"If you check this, the host address will be a single wildcard , which means "
+"public access.\n"
+"This is just the same as if you would enter a wildcard in the address "
+"field.\n"
+"</p>"
+msgstr ""
+
+#: rc.cpp:39 rc.cpp:838
+msgid "&Writable"
+msgstr ""
+
+#: rc.cpp:40
+msgid ""
+"<b>Writable</b>\n"
+"<p>\n"
+"Allow both read and write requests on this NFS volume.\n"
+"</p>\n"
+"<p>\n"
+"The default is to disallow any request which changes the filesystem\n"
+"</p>"
+msgstr ""
+
+#: rc.cpp:41
+msgid "&Insecure"
+msgstr ""
+
+#: rc.cpp:42
+msgid ""
+"<b>Insecure</b>\n"
+"<p>\n"
+"If this option is checked, it is not required that requests originate on an "
+"internet port less than IPPORT_RESERVED (1024).\n"
+"</p>\n"
+"<p>\n"
+"If unsure leave it unchecked.\n"
+"</p>"
+msgstr ""
+
+#: rc.cpp:43
+msgid "&Sync"
+msgstr ""
+
+#: rc.cpp:44
+msgid ""
+"<b>Sync</b>\n"
+"<p>\n"
+"This option requests that all file writes be committed to disk before the "
+"write request completes. This is required for complete safety of data in the "
+"face of a server crash, but incurs a performance hit.\n"
+"</p>\n"
+"<p>\n"
+"The default is to allow the server to write the data out whenever it is "
+"ready.\n"
+"</p>"
+msgstr ""
+
+#: rc.cpp:45
+msgid "No w&delay"
+msgstr ""
+
+#: rc.cpp:46
+msgid ""
+"<b>No wdelay</b>\n"
+"<p>\n"
+"This option only has effect if sync is also set. The NFS server will "
+"normally delay committing a write request to disk slightly if it suspects "
+"that another related write request may be in progress or may arrive soon. "
+"This allows multiple write requests to be committed to disk with the one "
+"operation which can improve performance. If an NFS server received mainly "
+"small unrelated requests, this behavior could actually reduce performance, "
+"so no wdelay is available to turn it off. </p>"
+msgstr ""
+
+#: rc.cpp:47
+msgid "No &hide"
+msgstr ""
+
+#: rc.cpp:48
+msgid ""
+"<b>No hide</b>\n"
+"<p>\n"
+"This option is based on the option of the same name provided in IRIX NFS. "
+"Normally, if a server exports two filesystems one of which is mounted on the "
+"other, then the client will have to mount both filesystems explicitly to get "
+"access to them. If it just mounts the parent, it will see an empty directory "
+"at the place where the other filesystem is mounted. That filesystem is "
+"\"hidden\".\n"
+"</p>\n"
+"<p>\n"
+"Setting the nohide option on a filesystem causes it not to be hidden, and an "
+"appropriately authorized client will be able to move from the parent to that "
+"filesystem without noticing the change.\n"
+"</p>\n"
+"<p>\n"
+"However, some NFS clients do not cope well with this situation as, for "
+"instance, it is then possible for two files in the one apparent filesystem "
+"to have the same inode number.\n"
+"</p>\n"
+"<p>\n"
+"The nohide option is currently only effective on single host exports. It "
+"does not work reliably with netgroup, subnet, or wildcard exports.\n"
+"</p>\n"
+"<p>\n"
+"This option can be very useful in some situations, but it should be used "
+"with due care, and only after confirming that the client system copes with "
+"the situation effectively.\n"
+"</p>"
+msgstr ""
+
+#: rc.cpp:49
+msgid "No su&btree check"
+msgstr ""
+
+#: rc.cpp:50
+msgid ""
+"<b>No subtree check</b>\n"
+"<p>\n"
+"This option disables subtree checking, which has mild security implications, "
+"but can improve reliability is some circumstances.\n"
+"</p>\n"
+"<p>\n"
+"If a subdirectory of a filesystem is exported, but the whole filesystem is "
+"not, then whenever a NFS request arrives, the server must check not only "
+"that the accessed file is in the appropriate filesystem (which is easy) but "
+"also that it is in the exported tree (which is harder). This check is called "
+"the subtree_check.\n"
+"</p>\n"
+"<p>\n"
+"In order to perform this check, the server must include some information "
+"about the location of the file in the \"filehandle\" that is given to the "
+"client. This can cause problems with accessing files that are renamed while "
+"a client has them open (though in many simple cases it will still work).\n"
+"</p>\n"
+"<p>\n"
+"subtree checking is also used to make sure that files inside directories to "
+"which only root has access can only be accessed if the filesystem is "
+"exported with no_root_squash (see below), even the file itself allows more "
+"general access.\n"
+"</p>\n"
+"<p>\n"
+"As a general guide, a home directory filesystem, which is normally exported "
+"at the root and may see lots of file renames, should be exported with "
+"subtree checking disabled. A filesystem which is mostly read-only, and at "
+"least does not see many file renames (e.g. /usr or /var) and for which "
+"subdirectories may be exported, should probably be exported with subtree "
+"checks enabled.\n"
+"</p>"
+msgstr ""
+
+#: rc.cpp:51
+msgid "Insecure loc&ks"
+msgstr ""
+
+#: rc.cpp:52
+msgid ""
+"<b>Insecure locks</b>\n"
+"<p>\n"
+"This option tells the NFS server not to require authentication of locking "
+"requests (i.e. requests which use the NLM protocol). Normally the NFS server "
+"will require a lock request to hold a credential for a user who has read "
+"access to the file. With this flag no access checks will be performed.\n"
+"</p>\n"
+"<p>\n"
+"Early NFS client implementations did not send credentials with lock "
+"requests, and many current NFS clients still exist which are based on the "
+"old implementations. Use this flag if you find that you can only lock files "
+"which are world readable.\n"
+"</p>"
+msgstr ""
+
+#: rc.cpp:53
+msgid "User Mapping"
+msgstr ""
+
+#: rc.cpp:54
+msgid "All s&quash"
+msgstr ""
+
+#: rc.cpp:55
+msgid ""
+"<b>All squash</b>\n"
+"<p>\n"
+"Map all uids and gids to the anonymous user. Useful for NFS-exported public "
+"FTP directories, news spool directories, etc. </p>"
+msgstr ""
+
+#: rc.cpp:56
+msgid "No &root squash"
+msgstr ""
+
+#: rc.cpp:57
+msgid ""
+"<b>No root squash</b>\n"
+"<p>\n"
+"Turn of root squashing. This option is mainly useful for diskless clients.\n"
+"</p>\n"
+"<i>root squashing</i>\n"
+"<p>\n"
+"Map requests from uid/gid 0 to the anonymous uid/gid. Note that this does "
+"not apply to any other uids that might be equally sensitive, such as user "
+"bin.\n"
+"</p>"
+msgstr ""
+
+#: rc.cpp:58
+msgid "Anonym. &UID:"
+msgstr ""
+
+#: rc.cpp:59 rc.cpp:62
+msgid ""
+"<b>Anonym. UID/GID</b> <p> These options explicitly set the uid and gid of "
+"the anonymous account. This option is primarily useful for PC/NFS clients, "
+"where you might want all requests appear to be from one user. </p>"
+msgstr ""
+
+#: rc.cpp:60 rc.cpp:63
+msgid "FF"
+msgstr ""
+
+#: rc.cpp:61
+msgid "Anonym. &GID:"
+msgstr ""
+
+#: rc.cpp:64
+msgid "Join Domain"
+msgstr ""
+
+#: rc.cpp:69
+#, fuzzy
+msgid "&Verify:"
+msgstr "&Таҳқиқ:"
+
+#: rc.cpp:70
+#, fuzzy
+msgid "&Password:"
+msgstr "&Гузарвожа:"
+
+#: rc.cpp:71
+#, fuzzy
+msgid "&Username:"
+msgstr "&Номи истифодакунанда:"
+
+#: rc.cpp:72
+msgid "Domain co&ntroller:"
+msgstr ""
+
+#: rc.cpp:73
+msgid "&Domain:"
+msgstr ""
+
+#: rc.cpp:74
+msgid "Select Users"
+msgstr ""
+
+#: rc.cpp:75
+msgid "Select &Users"
+msgstr ""
+
+#: rc.cpp:76 rc.cpp:131 rc.cpp:216 rc.cpp:226 rc.cpp:236 rc.cpp:244 rc.cpp:632
+#: rc.cpp:677
+#, fuzzy
+msgid "Name"
+msgstr "Ном"
+
+#: rc.cpp:77 rc.cpp:237 rc.cpp:245 rc.cpp:633
+#, fuzzy
+msgid "UID"
+msgstr "UID"
+
+#: rc.cpp:78 rc.cpp:132 rc.cpp:634
+#, fuzzy
+msgid "GID"
+msgstr "GID"
+
+#: rc.cpp:79 rc.cpp:133
+msgid "Acc&ess"
+msgstr ""
+
+#: rc.cpp:80 rc.cpp:134
+#, fuzzy
+msgid "&Default"
+msgstr "&Пешфарз"
+
+#: rc.cpp:81 rc.cpp:135
+msgid "&Read access"
+msgstr ""
+
+#: rc.cpp:82 rc.cpp:136
+msgid "&Write access"
+msgstr ""
+
+#: rc.cpp:83 rc.cpp:137
+msgid "&Admin access"
+msgstr ""
+
+#: rc.cpp:84 rc.cpp:138
+msgid "&No access at all"
+msgstr ""
+
+#: rc.cpp:87 rc.cpp:466
+msgid "Socket Options"
+msgstr ""
+
+#: rc.cpp:88
+msgid "SO_SNDLOWAT:"
+msgstr ""
+
+#: rc.cpp:89
+msgid "IPTOS_THROUGHPUT"
+msgstr ""
+
+#: rc.cpp:90
+msgid "SO_SNDBUF:"
+msgstr ""
+
+#: rc.cpp:91
+msgid "SO_KEEPALIVE"
+msgstr ""
+
+#: rc.cpp:92 rc.cpp:476
+msgid "SO_RCVBUF:"
+msgstr ""
+
+#: rc.cpp:93 rc.cpp:469
+msgid "SO_BROADCAST"
+msgstr ""
+
+#: rc.cpp:94 rc.cpp:471
+msgid "IPTOS_LOWDELAY"
+msgstr ""
+
+#: rc.cpp:95
+msgid "TCP_NODELAY"
+msgstr ""
+
+#: rc.cpp:96
+msgid "SO_RCVLOWAT:"
+msgstr ""
+
+#: rc.cpp:97
+msgid "SO_REUSEADDR"
+msgstr ""
+
+#: rc.cpp:99 rc.cpp:124 rc.cpp:824
+#, fuzzy
+msgid "F1"
+msgstr "F1"
+
+#: rc.cpp:102
+msgid "Access Modifiers"
+msgstr ""
+
+#: rc.cpp:103
+#, fuzzy
+msgid "Access Permissions"
+msgstr "Ҳуқуқи дастрасӣ"
+
+#: rc.cpp:104
+#, fuzzy
+msgid "Others"
+msgstr "Дигар"
+
+#: rc.cpp:105
+#, fuzzy
+msgid "Read"
+msgstr "Хондан"
+
+#: rc.cpp:107 rc.cpp:806
+#, fuzzy
+msgid "Exec"
+msgstr "Exec"
+
+#: rc.cpp:108
+#, fuzzy
+msgid "Write"
+msgstr "Навиштан"
+
+#: rc.cpp:115 rc.cpp:684
+#, fuzzy
+msgid "Owner"
+msgstr "Соҳиб"
+
+#: rc.cpp:117 rc.cpp:685
+#, fuzzy
+msgid "Group"
+msgstr "Гурӯҳ"
+
+#: rc.cpp:119
+msgid "Sticky"
+msgstr ""
+
+#: rc.cpp:120
+#, fuzzy
+msgid "Set GID"
+msgstr "Бити SGID"
+
+#: rc.cpp:121
+#, fuzzy
+msgid "Set UID"
+msgstr "Бити SUID"
+
+#: rc.cpp:122
+#, fuzzy
+msgid "Special"
+msgstr "Файли махсус"
+
+#: rc.cpp:127
+msgid "Select Groups"
+msgstr ""
+
+#: rc.cpp:130
+msgid "Selec&t Groups"
+msgstr ""
+
+#: rc.cpp:139
+msgid "&Kind of Group"
+msgstr ""
+
+#: rc.cpp:140
+msgid "&Unix group"
+msgstr ""
+
+#: rc.cpp:141
+msgid "NI&S group"
+msgstr ""
+
+#: rc.cpp:142
+msgid "Unix and NIS gr&oup"
+msgstr ""
+
+#: rc.cpp:144
+msgid "Not share&d"
+msgstr ""
+
+#: rc.cpp:145
+msgid "&Shared"
+msgstr ""
+
+#: rc.cpp:146
+msgid "Bas&e Options"
+msgstr ""
+
+#: rc.cpp:147 rc.cpp:218 rc.cpp:228
+#, fuzzy
+msgid "Comment"
+msgstr "Шарҳ"
+
+#: rc.cpp:148 rc.cpp:155
+msgid ""
+"This is a text field that is seen next to a share when a client queries the "
+"server, either via the network neighborhood or via net view, to list what "
+"shares are available."
+msgstr ""
+
+#: rc.cpp:149
+msgid "Name of the share"
+msgstr ""
+
+#: rc.cpp:150 rc.cpp:153
+msgid "This is the name of the share"
+msgstr ""
+
+#: rc.cpp:151
+#, fuzzy
+msgid "&Name:"
+msgstr "&Ном:"
+
+#: rc.cpp:154
+msgid "Commen&t:"
+msgstr ""
+
+#: rc.cpp:156
+msgid "Security Options"
+msgstr ""
+
+#: rc.cpp:157 rc.cpp:160 rc.cpp:664 rc.cpp:668
+msgid ""
+"The opposite of hosts allow - hosts listed here are NOT permitted access to "
+"services unless the specific services have their own lists to override this "
+"one. Where the lists conflict, the allow list takes precedence."
+msgstr ""
+
+#: rc.cpp:158 rc.cpp:162 rc.cpp:666 rc.cpp:669 rc.cpp:704 rc.cpp:706
+#: rc.cpp:708 rc.cpp:710 rc.cpp:721 rc.cpp:723 rc.cpp:725 rc.cpp:733
+#: rc.cpp:741
+msgid ""
+"This parameter is a comma, space, or tab delimited set of hosts which are "
+"permitted to access a service."
+msgstr ""
+
+#: rc.cpp:159
+msgid "Hosts den&y:"
+msgstr ""
+
+#: rc.cpp:161
+msgid "&Hosts allow:"
+msgstr ""
+
+#: rc.cpp:163
+msgid "Guest &account:"
+msgstr ""
+
+#: rc.cpp:164 rc.cpp:660
+msgid ""
+"This is a username which will be used for access to services which are "
+"specified as guest ok. Whatever privileges this user has will be available "
+"to any client connecting to the guest service. Typically this user will "
+"exist in the password file, but will not have a valid login. The user "
+"account \\\"ftp\\\" is often a good choice for this parameter. If a username "
+"is specified in a given service, the specified username overrides this one."
+msgstr ""
+
+#: rc.cpp:165
+msgid "&Read only"
+msgstr ""
+
+#: rc.cpp:166
+msgid ""
+"If this is checked, then users of a service may not create or modify files "
+"in the service's directory."
+msgstr ""
+
+#: rc.cpp:167
+msgid "G&uests allowed"
+msgstr ""
+
+#: rc.cpp:169 rc.cpp:662 rc.cpp:675
+msgid ""
+"If this is checked , then no password is required to connect to the service. "
+"Privileges will be those of the guest account."
+msgstr ""
+
+#: rc.cpp:170
+msgid ""
+"This is a username which will be used for access this directory if guests "
+"are allowed"
+msgstr ""
+
+#: rc.cpp:171 rc.cpp:771
+#, fuzzy
+msgid "Other Options"
+msgstr "Дигар Хосиятҳо"
+
+#: rc.cpp:172 rc.cpp:655
+msgid "Bro&wseable"
+msgstr ""
+
+#: rc.cpp:173
+msgid ""
+"This controls whether this share is seen in the list of available shares in "
+"a net view and in the browse list."
+msgstr ""
+
+#: rc.cpp:174 rc.cpp:656
+msgid "A&vailable"
+msgstr ""
+
+#: rc.cpp:175
+msgid ""
+"Checkbox lets you \\\"turn off\\\" a service. If not checked, then ALL "
+"attempts to connect to the service will fail. Such failures are logged."
+msgstr ""
+
+#: rc.cpp:176
+msgid "More Opt&ions"
+msgstr ""
+
+#: rc.cpp:177
+#, fuzzy
+msgid "User Settings"
+msgstr "Гузоришҳои Корванд"
+
+#: rc.cpp:178
+msgid "&Valid users:"
+msgstr ""
+
+#: rc.cpp:179
+msgid "&Admin users:"
+msgstr ""
+
+#: rc.cpp:180
+msgid "&Invalid users:"
+msgstr ""
+
+#: rc.cpp:185
+msgid "&Write list:"
+msgstr ""
+
+#: rc.cpp:186
+msgid "&Read list:"
+msgstr ""
+
+#: rc.cpp:187
+msgid ""
+"<qt>\n"
+"Here you can edit the Samba users, stored in the smbpasswd file.\n"
+"<p>\n"
+"Every Samba user must have a corresponding Unix user.\n"
+"On the right you can see all Unix users, stored in the passwd file and not "
+"configured as Samba users.\n"
+"You can see the Samba users on the left side.\n"
+"<p>\n"
+"To add new Samba users simply press the <em>&lt; add</em> button.\n"
+"The selected Unix users will then become Samba users and will\n"
+"removed from the Unix users list (but they will remain Unix users).\n"
+"<p>\n"
+"To remove a Samba users press the <em>&gt; remove</em> button.\n"
+"The selected Samba users will be removed from the smbpasswd file,\n"
+"and reappear on the right side, as Unix users which are not Samba users.\n"
+"</qt>"
+msgstr ""
+
+#: rc.cpp:188 rc.cpp:644
+msgid "&Base Settings"
+msgstr ""
+
+#: rc.cpp:189
+msgid "Samba config file:"
+msgstr ""
+
+#: rc.cpp:190
+msgid "&Load"
+msgstr ""
+
+#: rc.cpp:191
+msgid "Server Identification"
+msgstr ""
+
+#: rc.cpp:192
+msgid "Wor&kgroup:"
+msgstr ""
+
+#: rc.cpp:193
+msgid "Enter here the name of your workgroup/domain."
+msgstr ""
+
+#: rc.cpp:194
+msgid "Server strin&g:"
+msgstr ""
+
+#: rc.cpp:195
+msgid "NetBIOS name:"
+msgstr ""
+
+#: rc.cpp:196
+msgid "Securit&y Level"
+msgstr ""
+
+#: rc.cpp:197
+#, fuzzy
+msgid "Share"
+msgstr "Муштарак доштан"
+
+#: rc.cpp:198 rc.cpp:200 rc.cpp:202 rc.cpp:205 rc.cpp:223 rc.cpp:255
+#: rc.cpp:257 rc.cpp:261 rc.cpp:268 rc.cpp:510
+msgid "Alt+"
+msgstr ""
+
+#: rc.cpp:199
+#, fuzzy
+msgid "User"
+msgstr "Истифодакунанда"
+
+#: rc.cpp:201 rc.cpp:316
+#, fuzzy
+msgid "Server"
+msgstr "Хидматрасон"
+
+#: rc.cpp:203
+msgid "Domai&n"
+msgstr ""
+
+#: rc.cpp:204
+msgid "ADS"
+msgstr ""
+
+#: rc.cpp:206
+msgid ""
+"Use the <i>share</i> security level if you have a home network or a small "
+"office network.<br> It allows everyone to read all share names before a "
+"login is required."
+msgstr ""
+
+#: rc.cpp:207
+msgid "Further Options"
+msgstr ""
+
+#: rc.cpp:208
+msgid "Password server address/name:"
+msgstr ""
+
+#: rc.cpp:209
+msgid "Real&m:"
+msgstr ""
+
+#: rc.cpp:210
+msgid "Allo&w guest logins"
+msgstr ""
+
+#: rc.cpp:211
+msgid "Guest acc&ount:"
+msgstr ""
+
+#: rc.cpp:213
+msgid "For detailed help about every option please look at:"
+msgstr ""
+
+#: rc.cpp:214
+msgid "man:smb.conf"
+msgstr ""
+
+#: rc.cpp:215
+msgid "&Shares"
+msgstr ""
+
+#: rc.cpp:220
+msgid "Edit Defau&lts..."
+msgstr ""
+
+#: rc.cpp:221
+msgid "Add &New Share..."
+msgstr ""
+
+#: rc.cpp:222
+msgid "Edit Share..."
+msgstr ""
+
+#: rc.cpp:224
+msgid "Re&move Share"
+msgstr ""
+
+#: rc.cpp:225
+msgid "Prin&ters"
+msgstr ""
+
+#: rc.cpp:227
+#, fuzzy
+msgid "Printer"
+msgstr "Чопгар"
+
+#: rc.cpp:230
+msgid "Edit Defau&lts"
+msgstr ""
+
+#: rc.cpp:231
+msgid "Add Ne&w Printer"
+msgstr ""
+
+#: rc.cpp:232
+msgid "Edit Pri&nter"
+msgstr ""
+
+#: rc.cpp:233
+msgid "Re&move Printer"
+msgstr ""
+
+#: advanced/kcm_sambaconf/printerdlgimpl.cpp:109
+#: advanced/kcm_sambaconf/sharedlgimpl.cpp:123 rc.cpp:234
+#, fuzzy
+msgid "&Users"
+msgstr "&Истифодакунандаҳоро"
+
+#: rc.cpp:235
+msgid "Sa&mba Users"
+msgstr ""
+
+#: rc.cpp:238 rc.cpp:309 rc.cpp:321
+#, fuzzy
+msgid "Disabled"
+msgstr "Ғайри фаъол"
+
+#: rc.cpp:239
+msgid "No Password"
+msgstr ""
+
+#: rc.cpp:243
+msgid "UNI&X Users"
+msgstr ""
+
+#: rc.cpp:246
+#, fuzzy
+msgid "Chan&ge Password..."
+msgstr "Таъ&ғири калимаи рамз..."
+
+#: rc.cpp:247
+msgid "&Join Domain"
+msgstr ""
+
+#: rc.cpp:248
+msgid "Advan&ced"
+msgstr ""
+
+#: rc.cpp:249 rc.cpp:699
+msgid ""
+"Here you can change advanced options of the SAMBA server.\n"
+"Only change something if you know what you are doing."
+msgstr ""
+
+#: rc.cpp:250 rc.cpp:700
+msgid "Advanced Dump"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:295 rc.cpp:251 rc.cpp:701
+#, fuzzy
+msgid "Security"
+msgstr "Пуштибонӣ"
+
+#: rc.cpp:252 rc.cpp:373 rc.cpp:420
+#, fuzzy
+msgid "&General"
+msgstr "&Умумӣ"
+
+#: rc.cpp:253
+msgid "PAM"
+msgstr ""
+
+#: rc.cpp:254
+msgid "Obey PAM restrictions"
+msgstr ""
+
+#: rc.cpp:256
+msgid "PAM password change"
+msgstr ""
+
+#: rc.cpp:258
+msgid "Other Switches"
+msgstr ""
+
+#: rc.cpp:259
+msgid "A&llow trusted domains"
+msgstr ""
+
+#: rc.cpp:260
+msgid "Paranoid server security"
+msgstr ""
+
+#: rc.cpp:262 rc.cpp:329 rc.cpp:744
+#, fuzzy
+msgid "General"
+msgstr "Умумӣ"
+
+#: rc.cpp:263
+msgid "Auth methods:"
+msgstr ""
+
+#: rc.cpp:264
+msgid "Root director&y:"
+msgstr ""
+
+#: rc.cpp:265
+msgid "I&nterfaces:"
+msgstr ""
+
+#: rc.cpp:266
+msgid "Map to guest:"
+msgstr ""
+
+#: rc.cpp:267
+msgid "Bind interfaces only"
+msgstr ""
+
+#: rc.cpp:269
+#, fuzzy
+msgid "Never"
+msgstr "Ҳеҷ гоҳ"
+
+#: rc.cpp:270
+msgid "Bad User"
+msgstr ""
+
+#: rc.cpp:271
+msgid "Bad Password"
+msgstr ""
+
+#: rc.cpp:272
+msgid "Hosts e&quiv:"
+msgstr ""
+
+#: rc.cpp:273
+msgid "Algorithmic rid base:"
+msgstr ""
+
+#: rc.cpp:274
+msgid "Private dir:"
+msgstr ""
+
+#: rc.cpp:275
+msgid "Pass&word"
+msgstr ""
+
+#: rc.cpp:276
+msgid "Migration"
+msgstr ""
+
+#: rc.cpp:277
+msgid "Update encr&ypted"
+msgstr ""
+
+#: rc.cpp:278
+msgid "Samba Passwords"
+msgstr ""
+
+#: rc.cpp:279
+msgid "E&ncrypt passwords"
+msgstr ""
+
+#: rc.cpp:281
+msgid "Smb passwd file:"
+msgstr ""
+
+#: rc.cpp:282
+msgid "Passdb bac&kend:"
+msgstr ""
+
+#: rc.cpp:283
+msgid "Passwd chat:"
+msgstr ""
+
+#: rc.cpp:284
+msgid "Passwd chat debug"
+msgstr ""
+
+#: rc.cpp:285 rc.cpp:291 rc.cpp:356 rc.cpp:358 rc.cpp:362 rc.cpp:363
+#: rc.cpp:403 rc.cpp:404 rc.cpp:505 rc.cpp:544 rc.cpp:559
+msgid "Sec"
+msgstr ""
+
+#: rc.cpp:286
+msgid "Passwd chat timeout:"
+msgstr ""
+
+#: rc.cpp:287
+#, fuzzy
+msgid "Password"
+msgstr "Гузарвожа"
+
+#: rc.cpp:288
+msgid "Password level:"
+msgstr ""
+
+#: rc.cpp:289
+msgid "Min password length:"
+msgstr ""
+
+#: rc.cpp:290
+msgid "Machine password timeout:"
+msgstr ""
+
+#: rc.cpp:292
+msgid "Nu&ll passwords"
+msgstr ""
+
+#: rc.cpp:293
+msgid "UNIX Passwords"
+msgstr ""
+
+#: rc.cpp:294
+msgid "Passwd program:"
+msgstr ""
+
+#: rc.cpp:295
+msgid "UNI&X password sync"
+msgstr ""
+
+#: rc.cpp:296
+msgid "Userna&me"
+msgstr ""
+
+#: rc.cpp:297
+msgid "User&name map:"
+msgstr ""
+
+#: rc.cpp:298
+msgid "Username &level:"
+msgstr ""
+
+#: rc.cpp:299
+msgid "Hide local users"
+msgstr ""
+
+#: rc.cpp:300
+msgid "Restrict anon&ymous"
+msgstr ""
+
+#: rc.cpp:301
+msgid "Use rhosts"
+msgstr ""
+
+#: rc.cpp:302
+msgid "Authenticati&on"
+msgstr ""
+
+#: rc.cpp:303
+#, fuzzy
+msgid "Client"
+msgstr "Клиент"
+
+#: rc.cpp:304
+msgid "C&lient signing:"
+msgstr ""
+
+#: rc.cpp:305
+msgid "Client plainte&xt authentication"
+msgstr ""
+
+#: rc.cpp:306
+msgid "Client lanman authentication"
+msgstr ""
+
+#: rc.cpp:307 rc.cpp:312 rc.cpp:319 rc.cpp:324 rc.cpp:548 rc.cpp:563
+#, fuzzy
+msgid "Auto"
+msgstr "Худкор"
+
+#: rc.cpp:308 rc.cpp:320
+msgid "Mandatory"
+msgstr ""
+
+#: rc.cpp:313
+msgid "Client schannel:"
+msgstr ""
+
+#: rc.cpp:314
+msgid "Client use spnego"
+msgstr ""
+
+#: rc.cpp:315
+msgid "Client NTLMv&2 authentication"
+msgstr ""
+
+#: rc.cpp:317
+msgid "Server signing:"
+msgstr ""
+
+#: rc.cpp:318
+msgid "Lanman authentication"
+msgstr ""
+
+#: rc.cpp:325
+msgid "Server schannel:"
+msgstr ""
+
+#: rc.cpp:326
+msgid "Use sp&nego"
+msgstr ""
+
+#: rc.cpp:327
+msgid "NTLM authentication"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:298 rc.cpp:328
+#, fuzzy
+msgid "Logging"
+msgstr "Номнавис"
+
+#: rc.cpp:330
+msgid "L&og file:"
+msgstr ""
+
+#: rc.cpp:331
+#, fuzzy
+msgid "KB"
+msgstr "КБ"
+
+#: rc.cpp:332
+msgid "Ma&x log size:"
+msgstr ""
+
+#: rc.cpp:333
+msgid "S&yslog:"
+msgstr ""
+
+#: rc.cpp:334
+msgid "Log &level:"
+msgstr ""
+
+#: rc.cpp:335 rc.cpp:383 rc.cpp:506
+msgid "S&witches"
+msgstr ""
+
+#: rc.cpp:336
+msgid "Syslog o&nly"
+msgstr ""
+
+#: rc.cpp:337
+#, fuzzy
+msgid "Status"
+msgstr "Вазъият"
+
+#: rc.cpp:338
+msgid "Ti&mestamp"
+msgstr ""
+
+#: rc.cpp:339 rc.cpp:426
+msgid "microseconds"
+msgstr ""
+
+#: rc.cpp:340
+msgid "Debug pid"
+msgstr ""
+
+#: rc.cpp:341
+msgid "Debu&g uid"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:301 rc.cpp:342 rc.cpp:755
+msgid "Tuning"
+msgstr ""
+
+#: rc.cpp:343
+#, fuzzy
+msgid "Modules"
+msgstr "Модулҳо"
+
+#: rc.cpp:344
+msgid "Pre&load modules:"
+msgstr ""
+
+#: rc.cpp:345
+msgid "Numbers"
+msgstr ""
+
+#: rc.cpp:346
+msgid "Max smbd processes:"
+msgstr ""
+
+#: rc.cpp:347
+msgid "Max open files:"
+msgstr ""
+
+#: rc.cpp:348
+#, fuzzy
+msgid "Sizes"
+msgstr "Андозаҳо"
+
+#: rc.cpp:349
+msgid "Max disk size:"
+msgstr ""
+
+#: rc.cpp:350
+msgid "Read si&ze:"
+msgstr ""
+
+#: rc.cpp:351
+msgid "Stat cache size:"
+msgstr ""
+
+#: rc.cpp:352
+#, fuzzy
+msgid "MB"
+msgstr "МБ"
+
+#: rc.cpp:353
+msgid "Ma&x xmit:"
+msgstr ""
+
+#: rc.cpp:354
+msgid "Times"
+msgstr ""
+
+#: rc.cpp:355
+msgid "Change notify timeout:"
+msgstr ""
+
+#: rc.cpp:357
+msgid "&Keepalive:"
+msgstr ""
+
+#: rc.cpp:359 rc.cpp:615
+#, fuzzy
+msgid "Min"
+msgstr "Минимум"
+
+#: rc.cpp:360
+msgid "Deadtime:"
+msgstr ""
+
+#: rc.cpp:361
+msgid "Lp&q cache time:"
+msgstr ""
+
+#: rc.cpp:364
+msgid "&Name cache timeout:"
+msgstr ""
+
+#: rc.cpp:365
+#, fuzzy
+msgid "Switches"
+msgstr "Гузаришҳо"
+
+#: rc.cpp:366
+msgid "&Getwd cache"
+msgstr ""
+
+#: rc.cpp:367
+msgid "Use &mmap"
+msgstr ""
+
+#: rc.cpp:368
+msgid "Kernel change notif&y"
+msgstr ""
+
+#: rc.cpp:369
+msgid "H&ostname lookups"
+msgstr ""
+
+#: rc.cpp:370
+msgid "Read ra&w"
+msgstr ""
+
+#: rc.cpp:371
+msgid "Write raw"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:310 rc.cpp:372
+#, fuzzy
+msgid "Printing"
+msgstr "Дар ҳоли чоп"
+
+#: rc.cpp:374
+msgid "Total print &jobs:"
+msgstr ""
+
+#: rc.cpp:375
+msgid "Drivers"
+msgstr ""
+
+#: rc.cpp:376
+msgid "OS&2 driver map:"
+msgstr ""
+
+#: rc.cpp:377
+msgid "Printcap na&me:"
+msgstr ""
+
+#: rc.cpp:378
+msgid "Pri&nter driver file: "
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:334 rc.cpp:379 rc.cpp:599
+#, fuzzy
+msgid "Commands"
+msgstr "Фармонҳо"
+
+#: rc.cpp:380
+msgid "Enumports command:"
+msgstr ""
+
+#: rc.cpp:381
+msgid "Addprinter command:"
+msgstr ""
+
+#: rc.cpp:382
+msgid "Deleteprinter command:"
+msgstr ""
+
+#: rc.cpp:384
+msgid "L&oad printers"
+msgstr ""
+
+#: rc.cpp:385
+msgid "Disab&le spoolss"
+msgstr ""
+
+#: rc.cpp:386
+msgid "Show add printer wi&zard"
+msgstr ""
+
+#: rc.cpp:387
+#, fuzzy
+msgid "Domain"
+msgstr "Домен"
+
+#: rc.cpp:388
+msgid "L&ocal master"
+msgstr ""
+
+#: rc.cpp:389
+msgid "Domai&n master"
+msgstr ""
+
+#: rc.cpp:390
+msgid "Domain lo&gons"
+msgstr ""
+
+#: rc.cpp:391
+msgid "Preferred &master"
+msgstr ""
+
+#: rc.cpp:392
+msgid "OS &level:"
+msgstr ""
+
+#: rc.cpp:393
+msgid "Domain admin group:"
+msgstr ""
+
+#: rc.cpp:394
+msgid "Domain guest group:"
+msgstr ""
+
+#: rc.cpp:395
+msgid "WINS"
+msgstr ""
+
+#: rc.cpp:397
+msgid "Deactivate &WINS"
+msgstr ""
+
+#: rc.cpp:398
+msgid "Act as a WI&NS server"
+msgstr ""
+
+#: rc.cpp:399
+msgid "Use an&other WINS server"
+msgstr ""
+
+#: rc.cpp:400
+msgid "WINS Server Settin&gs"
+msgstr ""
+
+#: rc.cpp:401
+msgid "Max WINS tt&l:"
+msgstr ""
+
+#: rc.cpp:402
+msgid "&Min WINS ttl:"
+msgstr ""
+
+#: rc.cpp:405
+msgid "WINS hoo&k:"
+msgstr ""
+
+#: rc.cpp:406
+msgid "DNS prox&y"
+msgstr ""
+
+#: rc.cpp:407
+msgid "WINS Server IP or DNS Name"
+msgstr ""
+
+#: rc.cpp:408
+#, fuzzy
+msgid "General Options"
+msgstr "Интихоботҳои умумӣ"
+
+#: rc.cpp:409
+msgid "WINS partners:"
+msgstr ""
+
+#: rc.cpp:410
+msgid "WINS pro&xy"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:304 rc.cpp:411 rc.cpp:770
+msgid "Filenames"
+msgstr ""
+
+#: rc.cpp:412
+msgid "Ge&neral"
+msgstr ""
+
+#: rc.cpp:413
+msgid "Strip d&ot"
+msgstr ""
+
+#: rc.cpp:414
+msgid "&Mangling"
+msgstr ""
+
+#: rc.cpp:415
+msgid "Mangled stac&k:"
+msgstr ""
+
+#: rc.cpp:416
+msgid "Mangle prefi&x:"
+msgstr ""
+
+#: rc.cpp:417
+msgid "Specia&l"
+msgstr ""
+
+#: rc.cpp:418
+msgid "Stat cache"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:307 rc.cpp:419 rc.cpp:791
+msgid "Locking"
+msgstr ""
+
+#: rc.cpp:421
+msgid "Use ker&nel oplocks"
+msgstr ""
+
+#: rc.cpp:422
+msgid "Direct&ories"
+msgstr ""
+
+#: rc.cpp:423
+msgid "Loc&k directory:"
+msgstr ""
+
+#: rc.cpp:424
+msgid "Pid director&y:"
+msgstr ""
+
+#: rc.cpp:425
+msgid "Lock Spin"
+msgstr ""
+
+#: rc.cpp:427
+msgid "&Lock spin count:"
+msgstr ""
+
+#: rc.cpp:428
+msgid "Lock spin ti&me:"
+msgstr ""
+
+#: rc.cpp:429
+msgid "Very Advanced"
+msgstr ""
+
+#: rc.cpp:430
+msgid "Oplock break &wait time:"
+msgstr ""
+
+#: rc.cpp:431 rc.cpp:592
+msgid "milliseconds"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:319 rc.cpp:432
+msgid "Charset"
+msgstr ""
+
+#: rc.cpp:433
+msgid "Samba &3.x"
+msgstr ""
+
+#: rc.cpp:434
+msgid "D&OS charset:"
+msgstr ""
+
+#: rc.cpp:435
+msgid "UNI&X charset:"
+msgstr ""
+
+#: rc.cpp:436
+msgid "Displa&y charset:"
+msgstr ""
+
+#: rc.cpp:437
+msgid "U&nicode"
+msgstr ""
+
+#: rc.cpp:438
+msgid "Samba &2.x"
+msgstr ""
+
+#: rc.cpp:439
+msgid "Character set:"
+msgstr ""
+
+#: rc.cpp:440
+msgid "Va&lid chars:"
+msgstr ""
+
+#: rc.cpp:441
+msgid "Code page directory:"
+msgstr ""
+
+#: rc.cpp:442
+msgid "Codin&g system:"
+msgstr ""
+
+#: rc.cpp:443
+msgid "Client code page:"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:313 rc.cpp:444 rc.cpp:459
+msgid "Logon"
+msgstr ""
+
+#: rc.cpp:445
+msgid "Add Scripts"
+msgstr ""
+
+#: rc.cpp:446
+msgid "Add user script:"
+msgstr ""
+
+#: rc.cpp:447
+msgid "Add user to group script:"
+msgstr ""
+
+#: rc.cpp:448
+msgid "Add gr&oup script:"
+msgstr ""
+
+#: rc.cpp:449
+msgid "Add machine script:"
+msgstr ""
+
+#: rc.cpp:450
+msgid "Delete Scripts"
+msgstr ""
+
+#: rc.cpp:451
+msgid "Delete group script:"
+msgstr ""
+
+#: rc.cpp:452
+msgid "Delete user script:"
+msgstr ""
+
+#: rc.cpp:453
+msgid "Delete user from group script:"
+msgstr ""
+
+#: rc.cpp:454
+msgid "Primary Group Script"
+msgstr ""
+
+#: rc.cpp:455
+msgid "Set primar&y group script:"
+msgstr ""
+
+#: rc.cpp:456
+msgid "Shutdown"
+msgstr ""
+
+#: rc.cpp:457
+msgid "Shutdo&wn script:"
+msgstr ""
+
+#: rc.cpp:458
+msgid "Abort shutdown script:"
+msgstr ""
+
+#: rc.cpp:460
+msgid "Logo&n path:"
+msgstr ""
+
+#: rc.cpp:461
+msgid "Logon ho&me:"
+msgstr ""
+
+#: rc.cpp:462
+msgid "&Logon drive:"
+msgstr ""
+
+#: rc.cpp:463
+msgid "Lo&gon script:"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:322 rc.cpp:464
+msgid "Socket"
+msgstr ""
+
+#: rc.cpp:465
+msgid "Socket address:"
+msgstr ""
+
+#: rc.cpp:467
+msgid "SO_&KEEPALIVE"
+msgstr ""
+
+#: rc.cpp:468
+msgid "SO_S&NDBUF:"
+msgstr ""
+
+#: rc.cpp:470
+msgid "TCP_NODELA&Y"
+msgstr ""
+
+#: rc.cpp:472
+msgid "SO_RCV&LOWAT:"
+msgstr ""
+
+#: rc.cpp:473
+msgid "S&O_REUSEADDR"
+msgstr ""
+
+#: rc.cpp:474
+msgid "SO_SNDLO&WAT:"
+msgstr ""
+
+#: rc.cpp:475
+msgid "IPTOS_THROU&GHPUT"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:325 rc.cpp:477
+#, fuzzy
+msgid "SSL"
+msgstr "SSL"
+
+#: rc.cpp:478
+msgid "E&nable SSL"
+msgstr ""
+
+#: rc.cpp:479
+msgid "Enables or disables the entire SSL mode"
+msgstr ""
+
+#: rc.cpp:480
+msgid ""
+"This enables or disables the entire SSL mode. If it is set to no, the SSL-"
+"enabled Samba behaves exactly like the non-SSL Samba. If set to yes, it "
+"depends on the variables ssl hosts and ssl hosts resign whether an SSL "
+"connection will be required.\n"
+"\n"
+"This is only available if the SSL libraries have been compiled on your "
+"system and the configure option --with-ssl was given at configure time."
+msgstr ""
+
+#: rc.cpp:481
+msgid "SSL h&osts:"
+msgstr ""
+
+#: rc.cpp:482
+msgid "SSL entrop&y bytes:"
+msgstr ""
+
+#: rc.cpp:483
+msgid "SSL ciphers:"
+msgstr ""
+
+#: rc.cpp:484
+msgid "SSL hosts resi&gn:"
+msgstr ""
+
+#: rc.cpp:485
+msgid "ssl2"
+msgstr ""
+
+#: rc.cpp:486
+msgid "ssl3"
+msgstr ""
+
+#: rc.cpp:487
+msgid "ssl2or3"
+msgstr ""
+
+#: rc.cpp:488
+msgid "tls1"
+msgstr ""
+
+#: rc.cpp:489
+msgid "SSL co&mpatibility"
+msgstr ""
+
+#: rc.cpp:490
+msgid "SSL CA certDir:"
+msgstr ""
+
+#: rc.cpp:491
+msgid "SSL entropy file:"
+msgstr ""
+
+#: rc.cpp:492
+msgid "SSL egd socket:"
+msgstr ""
+
+#: rc.cpp:493
+#, fuzzy
+msgid "SSL version:"
+msgstr "Ривояти SSL:"
+
+#: rc.cpp:494
+msgid "SSL CA certFile:"
+msgstr ""
+
+#: rc.cpp:495
+msgid "SSL require clientcert"
+msgstr ""
+
+#: rc.cpp:496
+msgid "SSL client key:"
+msgstr ""
+
+#: rc.cpp:497
+msgid "SSL re&quire servercert"
+msgstr ""
+
+#: rc.cpp:498
+msgid "SS&L server cert:"
+msgstr ""
+
+#: rc.cpp:499
+msgid "SSL client cert:"
+msgstr ""
+
+#: rc.cpp:500
+msgid "SSL server &key:"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:316 rc.cpp:501
+msgid "Protocol"
+msgstr ""
+
+#: rc.cpp:502
+#, fuzzy
+msgid "Limits"
+msgstr "Ҳудудҳо"
+
+#: rc.cpp:503
+msgid "Ma&x mux:"
+msgstr ""
+
+#: rc.cpp:504
+msgid "Max tt&l:"
+msgstr ""
+
+#: rc.cpp:507
+msgid "Ti&me server"
+msgstr ""
+
+#: rc.cpp:508
+msgid "Lar&ge readwrite"
+msgstr ""
+
+#: rc.cpp:509
+msgid "UNIX extensions"
+msgstr ""
+
+#: rc.cpp:511
+msgid "Read bmpx"
+msgstr ""
+
+#: rc.cpp:512
+msgid "Protocol Versions"
+msgstr ""
+
+#: rc.cpp:513
+msgid "Max protocol:"
+msgstr ""
+
+#: rc.cpp:514
+msgid "Announce version:"
+msgstr ""
+
+#: rc.cpp:515
+msgid "A&nnounce as:"
+msgstr ""
+
+#: rc.cpp:516
+msgid "Min protocol:"
+msgstr ""
+
+#: rc.cpp:517
+msgid "Pr&otocol:"
+msgstr ""
+
+#: rc.cpp:518 rc.cpp:523 rc.cpp:528
+msgid "NT1"
+msgstr ""
+
+#: rc.cpp:519 rc.cpp:524 rc.cpp:529
+msgid "LANMAN2"
+msgstr ""
+
+#: rc.cpp:520 rc.cpp:525 rc.cpp:530
+msgid "LANMAN1"
+msgstr ""
+
+#: rc.cpp:521 rc.cpp:526 rc.cpp:531
+msgid "CORE"
+msgstr ""
+
+#: rc.cpp:522 rc.cpp:527 rc.cpp:532
+msgid "COREPLUS"
+msgstr ""
+
+#: rc.cpp:533
+msgid "NT"
+msgstr ""
+
+#: rc.cpp:534
+msgid "NT Workstation"
+msgstr ""
+
+#: rc.cpp:535
+msgid "win95"
+msgstr ""
+
+#: rc.cpp:536
+msgid "WfW"
+msgstr ""
+
+#: rc.cpp:537
+#, fuzzy
+msgid "4.2"
+msgstr "4.2"
+
+#: rc.cpp:538
+msgid "Listening SMB Ports"
+msgstr ""
+
+#: rc.cpp:539
+msgid "SMB ports:"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:328 rc.cpp:541
+#, fuzzy
+msgid "Browsing"
+msgstr "Кушодан"
+
+#: rc.cpp:542
+msgid "LM i&nterval:"
+msgstr ""
+
+#: rc.cpp:543
+msgid "L&M announce:"
+msgstr ""
+
+#: rc.cpp:545
+msgid "Remote browse s&ync:"
+msgstr ""
+
+#: rc.cpp:549
+msgid "Bro&wse list"
+msgstr ""
+
+#: rc.cpp:550
+msgid "Enhanced browsin&g"
+msgstr ""
+
+#: rc.cpp:551
+msgid "Pre&load:"
+msgstr ""
+
+#: rc.cpp:552
+msgid "Winbind"
+msgstr ""
+
+#: rc.cpp:553
+msgid "&Winbind/Idmap UID:"
+msgstr ""
+
+#: rc.cpp:554
+msgid "Winbind/Idmap &GID:"
+msgstr ""
+
+#: rc.cpp:555
+msgid "Template h&omedir:"
+msgstr ""
+
+#: rc.cpp:556
+msgid "Temp&late shell:"
+msgstr ""
+
+#: rc.cpp:557
+msgid "Winbind separator:"
+msgstr ""
+
+#: rc.cpp:558
+msgid "Template primary group:"
+msgstr ""
+
+#: rc.cpp:560
+msgid "Winbind cache ti&me:"
+msgstr ""
+
+#: rc.cpp:561
+msgid "Windows NT 4"
+msgstr ""
+
+#: rc.cpp:562
+msgid "Windows 2000"
+msgstr ""
+
+#: rc.cpp:564
+msgid "Acl compatibilit&y:"
+msgstr ""
+
+#: rc.cpp:565
+msgid "Wi&nbind enum users"
+msgstr ""
+
+#: rc.cpp:566
+msgid "Winbind enum groups"
+msgstr ""
+
+#: rc.cpp:567
+msgid "Winbind use default domain"
+msgstr ""
+
+#: rc.cpp:568
+msgid "Winbind enable local accounts"
+msgstr ""
+
+#: rc.cpp:569
+msgid "Winbind trusted domains only"
+msgstr ""
+
+#: rc.cpp:570
+msgid "Winbind nested groups"
+msgstr ""
+
+#: rc.cpp:571
+msgid "NetBIOS"
+msgstr ""
+
+#: rc.cpp:572
+msgid "NetBIOS sc&ope:"
+msgstr ""
+
+#: rc.cpp:573
+msgid "&NetBIOS aliases:"
+msgstr ""
+
+#: rc.cpp:574
+msgid "Disab&le netbios"
+msgstr ""
+
+#: rc.cpp:575
+msgid "Na&me resolve order:"
+msgstr ""
+
+#: rc.cpp:576
+msgid "lmhosts host wins bcast"
+msgstr ""
+
+#: rc.cpp:577 rc.cpp:803
+msgid "VFS"
+msgstr ""
+
+#: rc.cpp:578
+msgid "H&ost msdfs"
+msgstr ""
+
+#: rc.cpp:579
+msgid "LDAP"
+msgstr ""
+
+#: rc.cpp:580
+msgid "LDAP suffi&x:"
+msgstr ""
+
+#: rc.cpp:581
+msgid "LDAP machine suffix:"
+msgstr ""
+
+#: rc.cpp:582
+msgid "LDAP user suffix:"
+msgstr ""
+
+#: rc.cpp:583
+msgid "LDAP &group suffix:"
+msgstr ""
+
+#: rc.cpp:584
+msgid "LDAP idmap suffix:"
+msgstr ""
+
+#: rc.cpp:585
+msgid "LDAP filter:"
+msgstr ""
+
+#: rc.cpp:586
+msgid "LDAP ad&min dn:"
+msgstr ""
+
+#: rc.cpp:587
+msgid "LDAP delete d&n"
+msgstr ""
+
+#: rc.cpp:588
+msgid "LDAP s&ync:"
+msgstr ""
+
+#: rc.cpp:589
+msgid "&LDAP ssl:"
+msgstr ""
+
+#: rc.cpp:590
+msgid "Idmap bac&kend:"
+msgstr ""
+
+#: rc.cpp:591
+msgid "LDAP replication sleep:"
+msgstr ""
+
+#: rc.cpp:594
+msgid "Start_tls"
+msgstr ""
+
+#: rc.cpp:598
+msgid "Only"
+msgstr ""
+
+#: rc.cpp:600
+msgid "Add share c&ommand:"
+msgstr ""
+
+#: rc.cpp:601
+msgid "Change share command:"
+msgstr ""
+
+#: rc.cpp:602
+msgid "De&lete share command:"
+msgstr ""
+
+#: rc.cpp:603
+msgid "Messa&ge command:"
+msgstr ""
+
+#: rc.cpp:604
+msgid "Dfree co&mmand:"
+msgstr ""
+
+#: rc.cpp:605
+msgid "Set &quota command:"
+msgstr ""
+
+#: rc.cpp:606
+msgid "Get quota command:"
+msgstr ""
+
+#: rc.cpp:607
+msgid "Pa&nic action:"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:331 rc.cpp:608 rc.cpp:813
+#, fuzzy
+msgid "Misc"
+msgstr "Ғайра"
+
+#: rc.cpp:610
+msgid "Time &offset:"
+msgstr ""
+
+#: rc.cpp:611
+msgid "Default service:"
+msgstr ""
+
+#: rc.cpp:612
+msgid "Remote a&nnounce:"
+msgstr ""
+
+#: rc.cpp:613
+msgid "Source environment:"
+msgstr ""
+
+#: rc.cpp:614
+msgid "Hide &local users"
+msgstr ""
+
+#: rc.cpp:616
+msgid "NIS"
+msgstr ""
+
+#: rc.cpp:617
+msgid "NIS homedir"
+msgstr ""
+
+#: rc.cpp:618
+msgid "Homedir map:"
+msgstr ""
+
+#: rc.cpp:619
+msgid "Umtp"
+msgstr ""
+
+#: rc.cpp:620
+msgid "Utmp director&y:"
+msgstr ""
+
+#: rc.cpp:621
+msgid "&Wtmp directory:"
+msgstr ""
+
+#: rc.cpp:622
+msgid "Ut&mp"
+msgstr ""
+
+#: rc.cpp:623
+msgid "Debug"
+msgstr ""
+
+#: rc.cpp:624
+msgid "&NT status support"
+msgstr ""
+
+#: rc.cpp:625
+msgid "NT S&MB support"
+msgstr ""
+
+#: rc.cpp:626
+msgid "NT pipe supp&ort"
+msgstr ""
+
+#: rc.cpp:627
+#, fuzzy
+msgid "Users"
+msgstr "Истифодакунандагон"
+
+#: rc.cpp:628
+msgid "All U&nspecified Users"
+msgstr ""
+
+#: rc.cpp:629
+#, fuzzy
+msgid "Allow"
+msgstr "Иҷозат"
+
+#: advanced/kcm_sambaconf/usertabimpl.cpp:222 rc.cpp:630
+#, fuzzy
+msgid "Reject"
+msgstr "Рад кардан"
+
+#: rc.cpp:631
+msgid "Spec&ified Users"
+msgstr ""
+
+#: rc.cpp:635
+msgid "Access Rights"
+msgstr ""
+
+#: rc.cpp:636
+msgid "A&dd User..."
+msgstr ""
+
+#: rc.cpp:637
+msgid "E&xpert"
+msgstr ""
+
+#: rc.cpp:638
+msgid "Add &Group..."
+msgstr ""
+
+#: rc.cpp:639
+msgid "Remo&ve Selected"
+msgstr ""
+
+#: rc.cpp:640
+msgid "All Users Should be Forced to the Follo&wing User/Group"
+msgstr ""
+
+#: rc.cpp:641
+msgid "Forc&e user:"
+msgstr ""
+
+#: rc.cpp:642
+msgid "Fo&rce group:"
+msgstr ""
+
+#: rc.cpp:643
+msgid "Add/Edit Share"
+msgstr ""
+
+#: rc.cpp:645
+#, fuzzy
+msgid "Pixmap"
+msgstr "Pixmap"
+
+#: rc.cpp:646
+msgid "D&irectory"
+msgstr ""
+
+#: rc.cpp:647
+#, fuzzy
+msgid "&Path:"
+msgstr "&Роҳ:"
+
+#: rc.cpp:648
+msgid "Share all home &directories"
+msgstr ""
+
+#: rc.cpp:649
+msgid "Iden&tifier"
+msgstr ""
+
+#: rc.cpp:650
+msgid "Na&me:"
+msgstr ""
+
+#: rc.cpp:651
+msgid "Comme&nt:"
+msgstr ""
+
+#: rc.cpp:652
+msgid "Main P&roperties"
+msgstr ""
+
+#: rc.cpp:653
+msgid "Read onl&y"
+msgstr ""
+
+#: rc.cpp:654
+msgid "Pub&lic"
+msgstr ""
+
+#: rc.cpp:657
+msgid "&Security"
+msgstr ""
+
+#: rc.cpp:658
+msgid "Gu&ests"
+msgstr ""
+
+#: rc.cpp:659
+msgid "&Guest account:"
+msgstr ""
+
+#: rc.cpp:661
+msgid "Only allow guest connect&ions"
+msgstr ""
+
+#: rc.cpp:663
+msgid "Hos&ts"
+msgstr ""
+
+#: rc.cpp:665
+msgid "Hosts allo&w:"
+msgstr ""
+
+#: rc.cpp:667
+msgid "Hosts &deny:"
+msgstr ""
+
+#: rc.cpp:670
+msgid "Sy&mbolic Links"
+msgstr ""
+
+#: rc.cpp:671
+msgid "Allow following of symbolic lin&ks"
+msgstr ""
+
+#: rc.cpp:672
+msgid ""
+"Allow following of symbolic links that &point to areas outside the directory "
+"tree"
+msgstr ""
+
+#: rc.cpp:673
+msgid ""
+"<qt>Validate password against the following usernames if the client cannot "
+"supply a username:</qt>"
+msgstr ""
+
+#: rc.cpp:674
+msgid "Only allow connections with use&rnames specified in this username list"
+msgstr ""
+
+#: rc.cpp:676
+msgid "Hidden &Files"
+msgstr ""
+
+#: rc.cpp:678
+msgid "Hidden"
+msgstr ""
+
+#: rc.cpp:679
+msgid "Veto"
+msgstr ""
+
+#: rc.cpp:680
+msgid "Veto Oplock"
+msgstr ""
+
+#: rc.cpp:681
+#, fuzzy
+msgid "Size"
+msgstr "Андоза"
+
+#: rc.cpp:682
+#, fuzzy
+msgid "Date"
+msgstr "Таърих"
+
+#: rc.cpp:683
+#, fuzzy
+msgid "Permissions"
+msgstr "Рухсатҳо"
+
+#: rc.cpp:686
+msgid "Se&lected Files"
+msgstr ""
+
+#: rc.cpp:687
+msgid "Hi&de"
+msgstr ""
+
+#: advanced/kcm_sambaconf/hiddenfileview.cpp:116 rc.cpp:688
+msgid "&Veto"
+msgstr ""
+
+#: rc.cpp:689
+msgid "Veto oploc&k"
+msgstr ""
+
+#: rc.cpp:690
+msgid "&Manual Configuration"
+msgstr ""
+
+#: rc.cpp:691
+msgid "Ve&to files:"
+msgstr ""
+
+#: rc.cpp:692
+msgid "Veto oplock f&iles:"
+msgstr ""
+
+#: rc.cpp:693
+msgid "Hidde&n files:"
+msgstr ""
+
+#: rc.cpp:694
+msgid "Hide un&writable files"
+msgstr ""
+
+#: rc.cpp:695
+msgid "Hide s&pecial files"
+msgstr ""
+
+#: rc.cpp:696
+msgid "Hide files startin&g with a dot "
+msgstr ""
+
+#: rc.cpp:697
+msgid "Hide un&readable files"
+msgstr ""
+
+#: rc.cpp:698
+#, fuzzy
+msgid "&Advanced"
+msgstr "&Пешаки"
+
+#: rc.cpp:702
+msgid "Force Modes"
+msgstr ""
+
+#: rc.cpp:703
+msgid "Forc&e directory security mode:"
+msgstr ""
+
+#: rc.cpp:705
+msgid "Fo&rce security mode:"
+msgstr ""
+
+#: rc.cpp:707
+msgid "Force director&y mode:"
+msgstr ""
+
+#: rc.cpp:709
+msgid "Force create mo&de:"
+msgstr ""
+
+#: rc.cpp:711 rc.cpp:712 rc.cpp:717 rc.cpp:718 rc.cpp:726 rc.cpp:727
+#: rc.cpp:728 rc.cpp:735
+#, fuzzy
+msgid "..."
+msgstr "..."
+
+#: rc.cpp:713 rc.cpp:714 rc.cpp:715 rc.cpp:716 rc.cpp:729 rc.cpp:730
+#: rc.cpp:731 rc.cpp:734 rc.cpp:743
+msgid "01234567"
+msgstr ""
+
+#: rc.cpp:719
+msgid "Masks"
+msgstr ""
+
+#: rc.cpp:720
+msgid "Directory security mask:"
+msgstr ""
+
+#: rc.cpp:722
+msgid "Security &mask:"
+msgstr ""
+
+#: rc.cpp:724
+msgid "Direc&tory mask:"
+msgstr ""
+
+#: rc.cpp:732
+msgid "Create mas&k:"
+msgstr ""
+
+#: rc.cpp:736
+msgid "ACL"
+msgstr ""
+
+#: rc.cpp:737
+msgid "&Profile acls"
+msgstr ""
+
+#: rc.cpp:738
+msgid "Inherit ac&ls"
+msgstr ""
+
+#: rc.cpp:739
+msgid "&NT ACL support"
+msgstr ""
+
+#: rc.cpp:740
+msgid "Force unkno&wn acl user:"
+msgstr ""
+
+#: rc.cpp:742
+msgid "Map acl &inherit"
+msgstr ""
+
+#: rc.cpp:745
+msgid "Inherit permissions from parent directory"
+msgstr ""
+
+#: rc.cpp:746
+msgid "Allow deletion of readonly files"
+msgstr ""
+
+#: rc.cpp:747
+msgid "DOS Attribute Mapping"
+msgstr ""
+
+#: rc.cpp:748
+msgid "Map DOS archi&ve to UNIX owner execute"
+msgstr ""
+
+#: rc.cpp:749
+msgid "Map DOS hidden to UNI&X world execute"
+msgstr ""
+
+#: rc.cpp:750
+msgid "Map DOS system to UNIX &group execute"
+msgstr ""
+
+#: rc.cpp:751
+msgid "Store DOS attributes onto extended attribute"
+msgstr ""
+
+#: rc.cpp:753
+msgid "OS/2"
+msgstr ""
+
+#: rc.cpp:754
+msgid "OS/2 style extended attributes support"
+msgstr ""
+
+#: rc.cpp:756
+msgid "Sync al&ways"
+msgstr ""
+
+#: rc.cpp:757
+msgid "Strict s&ync"
+msgstr ""
+
+#: rc.cpp:758
+msgid "St&rict allocate"
+msgstr ""
+
+#: rc.cpp:759
+msgid "Use sen&dfile"
+msgstr ""
+
+#: rc.cpp:760
+msgid "Bloc&k size:"
+msgstr ""
+
+#: rc.cpp:761
+msgid "Client-side cachin&g policy:"
+msgstr ""
+
+#: rc.cpp:762 rc.cpp:768
+#, fuzzy
+msgid "bytes"
+msgstr "байтҳо"
+
+#: rc.cpp:763
+msgid "Write cache si&ze:"
+msgstr ""
+
+#: rc.cpp:764
+msgid "manual"
+msgstr ""
+
+#: rc.cpp:765
+msgid "documents"
+msgstr ""
+
+#: rc.cpp:766
+msgid "programs"
+msgstr ""
+
+#: rc.cpp:767
+msgid "disable"
+msgstr ""
+
+#: rc.cpp:769
+msgid "&Maximum number of simultaneous connections:"
+msgstr ""
+
+#: rc.cpp:772
+msgid "Hide traili&ng dot"
+msgstr ""
+
+#: rc.cpp:773
+#, fuzzy
+msgid "DOS"
+msgstr "DOS"
+
+#: rc.cpp:774
+msgid "&DOS file mode"
+msgstr ""
+
+#: rc.cpp:775
+msgid "DOS f&ile times"
+msgstr ""
+
+#: rc.cpp:776
+msgid "DOS file time resolution"
+msgstr ""
+
+#: rc.cpp:777
+msgid "Name Mangling"
+msgstr ""
+
+#: rc.cpp:778
+msgid "Mangling cha&r:"
+msgstr ""
+
+#: rc.cpp:779
+msgid "Mangled ma&p:"
+msgstr ""
+
+#: rc.cpp:780
+msgid "Enable na&me mangling"
+msgstr ""
+
+#: rc.cpp:781
+msgid "Man&gle case"
+msgstr ""
+
+#: rc.cpp:782
+msgid "Case sensi&tive"
+msgstr ""
+
+#: rc.cpp:783
+msgid "Preser&ve case"
+msgstr ""
+
+#: rc.cpp:784
+msgid "Short pr&eserve case"
+msgstr ""
+
+#: rc.cpp:785
+msgid "Defau&lt case:"
+msgstr ""
+
+#: rc.cpp:786
+#, fuzzy
+msgid "Lower"
+msgstr "Поёнтар"
+
+#: rc.cpp:787
+#, fuzzy
+msgid "Upper"
+msgstr "Бологӣ"
+
+#: rc.cpp:788
+msgid "Mangling method:"
+msgstr ""
+
+#: rc.cpp:789
+msgid "hash"
+msgstr ""
+
+#: rc.cpp:790
+msgid "hash2"
+msgstr ""
+
+#: rc.cpp:792
+msgid "Enable lock&ing"
+msgstr ""
+
+#: rc.cpp:793
+msgid "Locki&ng"
+msgstr ""
+
+#: rc.cpp:794
+msgid "Blockin&g locks"
+msgstr ""
+
+#: rc.cpp:795
+msgid "Posi&x locking"
+msgstr ""
+
+#: rc.cpp:796
+msgid "S&trict locking"
+msgstr ""
+
+#: rc.cpp:797
+msgid "Share mo&des"
+msgstr ""
+
+#: rc.cpp:798
+msgid "Issue oppo&rtunistic locks (oplocks) "
+msgstr ""
+
+#: rc.cpp:799
+msgid "O&plocks"
+msgstr ""
+
+#: rc.cpp:800
+msgid "Oplock contention li&mit:"
+msgstr ""
+
+#: rc.cpp:801
+msgid "Le&vel2 oplocks"
+msgstr ""
+
+#: rc.cpp:802
+msgid "Fak&e oplocks"
+msgstr ""
+
+#: rc.cpp:804
+msgid "Vfs ob&jects:"
+msgstr ""
+
+#: rc.cpp:805
+msgid "Vfs o&ptions:"
+msgstr ""
+
+#: rc.cpp:807
+msgid "preexec c&lose"
+msgstr ""
+
+#: rc.cpp:808
+msgid "root pree&xec close"
+msgstr ""
+
+#: rc.cpp:809
+msgid "Pos&texec:"
+msgstr ""
+
+#: rc.cpp:810
+msgid "Root pr&eexec:"
+msgstr ""
+
+#: rc.cpp:811
+msgid "P&reexec:"
+msgstr ""
+
+#: rc.cpp:812
+msgid "Root &postexec:"
+msgstr ""
+
+#: rc.cpp:814
+msgid "Setdir command allo&wed"
+msgstr ""
+
+#: rc.cpp:815
+msgid "Fa&ke directory create times"
+msgstr ""
+
+#: rc.cpp:816
+msgid "Ms&dfs root"
+msgstr ""
+
+#: rc.cpp:817
+msgid "Msdfs pro&xy"
+msgstr ""
+
+#: rc.cpp:818
+msgid "Fst&ype:"
+msgstr ""
+
+#: rc.cpp:819
+msgid "Ma&gic script:"
+msgstr ""
+
+#: rc.cpp:820
+#, fuzzy
+msgid "&Volume:"
+msgstr "&Садо:"
+
+#: rc.cpp:821
+msgid "Mag&ic output:"
+msgstr ""
+
+#: rc.cpp:822
+msgid "Do &not descend:"
+msgstr ""
+
+#: rc.cpp:827
+#, fuzzy
+msgid "Folder:"
+msgstr "Феҳрист:"
+
+#: rc.cpp:828
+msgid "S&hare this folder in the local network"
+msgstr ""
+
+#: rc.cpp:829
+msgid "Share with &NFS (Linux/UNIX)"
+msgstr ""
+
+#: advanced/nfs/nfsdialog.cpp:42 rc.cpp:830
+msgid "NFS Options"
+msgstr ""
+
+#: rc.cpp:831
+msgid "Pu&blic"
+msgstr ""
+
+#: rc.cpp:832
+msgid "W&ritable"
+msgstr ""
+
+#: rc.cpp:833
+msgid "More NFS Op&tions"
+msgstr ""
+
+#: rc.cpp:834
+msgid "Share with S&amba (Microsoft(R) Windows(R))"
+msgstr ""
+
+#: rc.cpp:835
+msgid "Samba Options"
+msgstr ""
+
+#: advanced/kcm_sambaconf/usertabimpl.cpp:278 rc.cpp:836
+#, fuzzy
+msgid "Name:"
+msgstr "Ном:"
+
+#: rc.cpp:837
+msgid "P&ublic"
+msgstr ""
+
+#: rc.cpp:839
+msgid "Mor&e Samba Options"
+msgstr ""
+
+#: simple/fileshare.cpp:97
+msgid "No NFS server installed on this system"
+msgstr ""
+
+#: simple/fileshare.cpp:103
+msgid "No Samba server installed on this system"
+msgstr ""
+
+#: simple/fileshare.cpp:297
+msgid "Could not save settings."
+msgstr ""
+
+#: simple/fileshare.cpp:298
+msgid "Could not open file '%1' for writing: %2"
+msgstr ""
+
+#: simple/fileshare.cpp:300
+msgid "Saving Failed"
+msgstr ""
+
+#: simple/fileshare.cpp:339
+msgid ""
+"<h1>File Sharing</h1><p>This module can be used to enable file sharing over "
+"the network using the \"Network File System\" (NFS) or SMB in Konqueror. The "
+"latter enables you to share your files with Windows(R) computers on your "
+"network.</p>"
+msgstr ""
+
+#: simple/fileshare.cpp:353
+msgid "Share Folder"
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:55 simple/groupconfigdlg.cpp:257
+#, fuzzy
+msgid "Allowed Users"
+msgstr "Истифодакунандагони иҷозат дода шуда"
+
+#: simple/groupconfigdlg.cpp:124
+msgid "All users are in the %1 group already."
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:140
+msgid "Select User"
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:141
+msgid "Select a user:"
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:163
+msgid "Could not add user '%1' to group '%2'"
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:175
+msgid "Could not remove user '%1' from group '%2'"
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:190
+msgid "You have to choose a valid group."
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:262
+msgid "New file share group:"
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:269
+msgid "Add users from the old file share group to the new one"
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:273
+msgid "Remove users from old file share group"
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:277
+msgid "Delete the old file share group"
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:325
+msgid "Users of the '%1' Group"
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:330
+msgid "Only users of a certain group are allowed to share folders"
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:331
+msgid "Choose Group..."
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:351
+msgid "Do you really want to remove all users from group '%1'?"
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:368
+msgid "Do you really want to delete group '%1'?"
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:376
+msgid "Deleting group '%1' failed."
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:384
+msgid "Please choose a valid group."
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:389
+msgid "This group '%1' does not exist. Should it be created?"
+msgstr ""
+
+#: simple/groupconfigdlg.cpp:397
+msgid "Creation of group '%1' failed."
+msgstr ""
+
+#: advanced/nfs/nfshostdlg.cpp:149
+msgid "There already exists a public entry."
+msgstr ""
+
+#: advanced/nfs/nfshostdlg.cpp:150 advanced/nfs/nfshostdlg.cpp:167
+msgid "Host Already Exists"
+msgstr ""
+
+#: advanced/nfs/nfshostdlg.cpp:159
+msgid "Please enter a hostname or an IP address."
+msgstr ""
+
+#: advanced/nfs/nfshostdlg.cpp:160
+msgid "No Hostname/IP-Address"
+msgstr ""
+
+#: advanced/nfs/nfshostdlg.cpp:166
+msgid "The host '%1' already exists."
+msgstr ""
+
+#: advanced/kcm_sambaconf/sambafile.cpp:205
+#, fuzzy
+msgid "Unnamed"
+msgstr "Беном"
+
+#: advanced/kcm_sambaconf/linuxpermissionchecker.cpp:116
+msgid ""
+"<qt>You have specified <b>public read access</b> for this directory, but the "
+"guest account <b>%1</b> does not have the necessary read permissions;<br>do "
+"you want to continue anyway?</qt>"
+msgstr ""
+
+#: advanced/kcm_sambaconf/linuxpermissionchecker.cpp:130
+msgid ""
+"<qt>You have specified <b>public write access</b> for this directory, but "
+"the guest account <b>%1</b> does not have the necessary write permissions;"
+"<br>do you want to continue anyway?</qt>"
+msgstr ""
+
+#: advanced/kcm_sambaconf/linuxpermissionchecker.cpp:167
+msgid ""
+"<qt>You have specified <b>write access</b> to the user <b>%1</b> for this "
+"directory, but the user does not have the necessary write permissions;<br>do "
+"you want to continue anyway?</qt>"
+msgstr ""
+
+#: advanced/kcm_sambaconf/linuxpermissionchecker.cpp:190
+msgid ""
+"<qt>You have specified <b>read access</b> to the user <b>%1</b> for this "
+"directory, but the user does not have the necessary read permissions;<br>do "
+"you want to continue anyway?</qt>"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:521
+msgid "Error while opening file"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:1110
+msgid "Joining the domain %1 failed."
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:1180
+msgid "<qt>Please enter a password for the user <b>%1</b></qt>"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:1188
+msgid "<qt>Adding the user <b>%1</b> to the Samba user database failed.</qt>"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:1219
+msgid "Removing the user %1 from the Samba user database failed."
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:1243
+#, c-format
+msgid "Please enter a password for the user %1"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:1249
+msgid "Changing the password of the user %1 failed."
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcmsambaconf.cpp:1428
+msgid "<h1>Samba Configuration</h1> here you can configure your SAMBA server."
+msgstr ""
+
+#: advanced/kcm_sambaconf/hiddenfileview.cpp:115
+#, fuzzy
+msgid "&Hide"
+msgstr "&Пинҳон кардан"
+
+#: advanced/kcm_sambaconf/hiddenfileview.cpp:117
+msgid "&Veto Oplock"
+msgstr ""
+
+#: advanced/kcm_sambaconf/hiddenfileview.cpp:387
+msgid ""
+"<b></b>Some files you have selected are matched by the wildcarded string "
+"<b>'%1'</b>; do you want to uncheck all files matching <b>'%1'</b>? <br>(If "
+"you say no, no files matching '%1' will be unchecked.)"
+msgstr ""
+
+#: advanced/kcm_sambaconf/hiddenfileview.cpp:390
+msgid "Wildcarded String"
+msgstr ""
+
+#: advanced/kcm_sambaconf/smbconfconfigwidget.cpp:48
+msgid ""
+"<p>The SAMBA configuration file <strong>'smb.conf'</strong> could not be "
+"found;</p>make sure you have SAMBA installed.\n"
+"\n"
+msgstr ""
+
+#: advanced/kcm_sambaconf/smbconfconfigwidget.cpp:53
+msgid "Specify Location"
+msgstr ""
+
+#: advanced/kcm_sambaconf/smbconfconfigwidget.cpp:70
+msgid "Get smb.conf Location"
+msgstr ""
+
+#: advanced/kcm_sambaconf/smbconfconfigwidget.cpp:73
+msgid "<qt>The file <i>%1</i> could not be read.</qt>"
+msgstr ""
+
+#: advanced/kcm_sambaconf/smbconfconfigwidget.cpp:73
+msgid "Could Not Read File"
+msgstr ""
+
+#: advanced/kcm_sambaconf/usertabimpl.cpp:222
+#, fuzzy
+msgid "Read only"
+msgstr "Танҳо-хондан"
+
+#: advanced/kcm_sambaconf/usertabimpl.cpp:222
+msgid "Writeable"
+msgstr ""
+
+#: advanced/kcm_sambaconf/usertabimpl.cpp:222
+#, fuzzy
+msgid "Admin"
+msgstr "Мудир"
+
+#: advanced/kcm_sambaconf/dictmanager.cpp:61
+msgid "The option <em>%1</em> is not supported by your Samba version"
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcminterface.ui.h:69
+msgid ""
+"Use the <i>share</i> security level if you have a home network or a small "
+"office network.<br> It allows everyone to read the list of all your shared "
+"directories and printers before a login is required."
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcminterface.ui.h:77
+msgid ""
+"Use the <i>user</i> security level if you have a bigger network and you do "
+"not want to allow everyone to read your list of shared directories and "
+"printers without a login.<p>If you want to run your Samba server as a "
+"<b>Primary Domain controller</b> (PDC) you also have to set this option."
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcminterface.ui.h:86
+msgid ""
+"Use the <i>server</i> security level if you have a big network and the samba "
+"server should validate the username/password by passing it to another SMB "
+"server, such as an NT box."
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcminterface.ui.h:94
+msgid ""
+"Use the <i>domain</i> security level if you have a big network and the samba "
+"server should validate the username/password by passing it to a Windows NT "
+"Primary or Backup Domain Controller."
+msgstr ""
+
+#: advanced/kcm_sambaconf/kcminterface.ui.h:101
+msgid ""
+"Use the <i>ADS</i> security level if you have a big network and the samba "
+"server should act as a domain member in an ADS realm."
+msgstr ""
+
+#: advanced/propsdlgplugin/propsdlgshareplugin.cpp:60
+#, fuzzy
+msgid "&Share"
+msgstr "&Ҳисса кардан"
+
+#: advanced/propsdlgplugin/propsdlgshareplugin.cpp:73
+msgid "You need to be authorized to share directories."
+msgstr ""
+
+#: advanced/propsdlgplugin/propsdlgshareplugin.cpp:77
+#, fuzzy
+msgid "File sharing is disabled."
+msgstr "Ҳисса кардани файлҳо ғайри фаъол аст."
+
+#: advanced/propsdlgplugin/propsdlgshareplugin.cpp:80
+#, fuzzy
+msgid "Configure File Sharing..."
+msgstr "Танзимоти Ҳисса Кардани Файлҳо..."
+
+#: advanced/propsdlgplugin/propertiespage.cpp:89
+msgid "Reading Samba configuration file ..."
+msgstr ""
+
+#: advanced/propsdlgplugin/propertiespage.cpp:90
+msgid "Reading NFS configuration file ..."
+msgstr ""
+
+#: advanced/propsdlgplugin/propertiespage.cpp:292
+msgid "Please enter a valid path."
+msgstr ""
+
+#: advanced/propsdlgplugin/propertiespage.cpp:301
+msgid "Only local folders can be shared."
+msgstr ""
+
+#: advanced/propsdlgplugin/propertiespage.cpp:313
+msgid "The folder does not exists."
+msgstr ""
+
+#: advanced/propsdlgplugin/propertiespage.cpp:324
+msgid "Only folders can be shared."
+msgstr ""
+
+#: advanced/propsdlgplugin/propertiespage.cpp:335
+msgid "The folder is already shared."
+msgstr ""
+
+#: advanced/propsdlgplugin/propertiespage.cpp:349
+msgid "The administrator does not allow sharing with NFS."
+msgstr ""
+
+#: advanced/propsdlgplugin/propertiespage.cpp:357
+msgid "Error: could not read NFS configuration file."
+msgstr ""
+
+#: advanced/propsdlgplugin/propertiespage.cpp:440
+msgid "The administrator does not allow sharing with Samba."
+msgstr ""
+
+#: advanced/propsdlgplugin/propertiespage.cpp:447
+msgid "Error: could not read Samba configuration file."
+msgstr ""
+
+#: advanced/propsdlgplugin/propertiespage.cpp:520
+msgid "You have to enter a name for the Samba share."
+msgstr ""
+
+#: advanced/propsdlgplugin/propertiespage.cpp:529
+msgid ""
+"<qt>There is already a share with the name <strong>%1</strong>.<br> Please "
+"choose another name.</qt>"
+msgstr ""
+
