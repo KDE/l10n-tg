@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kio_pop3\n"
-"POT-Creation-Date: 2004-07-14 01:19+0200\n"
+"POT-Creation-Date: 2004-12-29 14:52+0100\n"
 "PO-Revision-Date: 2004-07-27 22:54+0000\n"
 "Last-Translator: Hiromon\n"
 "Language-Team:  Tajik\n"
@@ -18,21 +18,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.0.1\n"
 
-#: pop3.cc:220
+#: pop3.cc:250
 msgid "PASS <your password>"
 msgstr "PASS <гузарвожаи шумо>"
 
-#: pop3.cc:223
+#: pop3.cc:253
 msgid "The server said: \"%1\""
 msgstr "Сервер гуфт: \"%1\""
 
-#: pop3.cc:245
+#: pop3.cc:275
 msgid "The server terminated the connection."
 msgstr ""
 "Хидматрасон пайвастшавиро ба анҷом "
 "расонид."
 
-#: pop3.cc:247
+#: pop3.cc:277
 msgid ""
 "Invalid response from server:\n"
 "\"%1\""
@@ -40,76 +40,23 @@ msgstr ""
 "Ҷавоби нодурусти хидматрасон:\n"
 "\"%1\""
 
-#: pop3.cc:276
+#: pop3.cc:306
 msgid ""
 "Could not send to server.\n"
 msgstr ""
 "Ба сервер фиристода натавонист.\n"
 
-#: pop3.cc:347 pop3.cc:543
+#: pop3.cc:361 pop3.cc:420 pop3.cc:617
+msgid "No authentication details supplied."
+msgstr ""
+
+#: pop3.cc:398
+#, fuzzy
 msgid ""
-"Could not login to %1.\n"
+"Login via APOP failed. The server %1 may not support APOP, although it "
+"claims to support it, or the password may be wrong.\n"
 "\n"
-msgstr ""
-"Ба %1 вуруд шуда натавонит.\n"
-"\n"
-
-#: pop3.cc:350
-msgid "The server terminated the connection immediately."
-msgstr ""
-"Хидматрасон пайвастшавиро фавран ба "
-"анҷом расонид."
-
-#: pop3.cc:351
-msgid ""
-"Server does not respond properly:\n"
-"%1\n"
-msgstr ""
-"Хидматрасон посухи мувофиқ надодааст:\n"
-"%1\n"
-
-#: pop3.cc:376
-msgid ""
-"Your POP3 server does not support APOP.\n"
-"Choose a different authentication method."
-msgstr ""
-"Хидматрасони POP3-и шумо APOP-ро пуштибонӣ "
-"намекунад.\n"
-"Дигар усули аслшиносиро интихоб намоед."
-
-#: pop3.cc:395
-msgid ""
-"Your POP3 server claims to support TLS but negotiation was unsuccessful. You "
-"can disable TLS in KDE using the crypto settings module."
-msgstr ""
-"Хидматрасони POP3-и шумо оиди пуштибонии TLS "
-"тастиқот мекунад, лекин созгорӣ бо нокомӣ "
-"анҷомид. Шумо метавонед TLS-ро дар KDE ба "
-"воситаи истифодабарии воҳиди "
-"танзимдарории рамзӣ хомӯш кунед."
-
-#: pop3.cc:405
-msgid ""
-"Your POP3 server does not support TLS. Disable TLS, if you want to connect "
-"without encryption."
-msgstr ""
-"Хидматрасони POP3-и шумо TLS-ро пуштибонӣ "
-"намекунад. Агар хоҳед, ки бе рамзгузорӣ "
-"алоқа кунед TLS-ро хомӯш кунед."
-
-#: pop3.cc:416
-msgid "Username and password for your POP3 account:"
-msgstr ""
-"Номи корванд ва гузарвожа барои ҳисоби "
-"POP3-и шумо:"
-
-#: pop3.cc:462
-#, c-format
-msgid ""
-"Login via APOP failed. The server may not support APOP, although it claims "
-"to support it, or the password may be wrong.\n"
-"\n"
-"%1"
+"%2"
 msgstr ""
 "Хатогӣ дар номнависӣ ба воситаи APOP. Ё "
 "хидматрасон APOP-ро пуштибонӣ намекунад, ё "
@@ -117,7 +64,7 @@ msgstr ""
 "\n"
 "%1"
 
-#: pop3.cc:519
+#: pop3.cc:586
 msgid ""
 "Login via SASL (%1) failed. The server may not support %2, or the password "
 "may be wrong.\n"
@@ -131,7 +78,7 @@ msgstr ""
 "\n"
 "%3"
 
-#: pop3.cc:534
+#: pop3.cc:595
 msgid ""
 "Your POP3 server does not support SASL.\n"
 "Choose a different authentication method."
@@ -140,7 +87,19 @@ msgstr ""
 "намекунад.\n"
 "Дигар усули аслшиносиро интихоб намоед."
 
-#: pop3.cc:563
+#: pop3.cc:603
+msgid "SASL authentication is not compiled into kio_pop3."
+msgstr ""
+
+#: pop3.cc:635 pop3.cc:684
+msgid ""
+"Could not login to %1.\n"
+"\n"
+msgstr ""
+"Ба %1 вуруд шуда натавонит.\n"
+"\n"
+
+#: pop3.cc:649
 msgid ""
 "Could not login to %1. The password may be wrong.\n"
 "\n"
@@ -151,6 +110,55 @@ msgstr ""
 "\n"
 "%2"
 
-#: pop3.cc:746 pop3.cc:755 pop3.cc:894
+#: pop3.cc:687
+msgid "The server terminated the connection immediately."
+msgstr ""
+"Хидматрасон пайвастшавиро фавран ба "
+"анҷом расонид."
+
+#: pop3.cc:688
+msgid ""
+"Server does not respond properly:\n"
+"%1\n"
+msgstr ""
+"Хидматрасон посухи мувофиқ надодааст:\n"
+"%1\n"
+
+#: pop3.cc:716
+msgid ""
+"Your POP3 server does not support APOP.\n"
+"Choose a different authentication method."
+msgstr ""
+"Хидматрасони POP3-и шумо APOP-ро пуштибонӣ "
+"намекунад.\n"
+"Дигар усули аслшиносиро интихоб намоед."
+
+#: pop3.cc:736
+msgid ""
+"Your POP3 server claims to support TLS but negotiation was unsuccessful. You "
+"can disable TLS in KDE using the crypto settings module."
+msgstr ""
+"Хидматрасони POP3-и шумо оиди пуштибонии TLS "
+"тастиқот мекунад, лекин созгорӣ бо нокомӣ "
+"анҷомид. Шумо метавонед TLS-ро дар KDE ба "
+"воситаи истифодабарии воҳиди "
+"танзимдарории рамзӣ хомӯш кунед."
+
+#: pop3.cc:747
+msgid ""
+"Your POP3 server does not support TLS. Disable TLS, if you want to connect "
+"without encryption."
+msgstr ""
+"Хидматрасони POP3-и шумо TLS-ро пуштибонӣ "
+"намекунад. Агар хоҳед, ки бе рамзгузорӣ "
+"алоқа кунед TLS-ро хомӯш кунед."
+
+#: pop3.cc:756
+msgid "Username and password for your POP3 account:"
+msgstr ""
+"Номи корванд ва гузарвожа барои ҳисоби "
+"POP3-и шумо:"
+
+#: pop3.cc:956 pop3.cc:965 pop3.cc:1104
 msgid "Unexpected response from POP3 server."
 msgstr "Ҷавоби ғайричамдошт аз хидматрасони POP3."

@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdesktop\n"
-"POT-Creation-Date: 2004-07-16 01:18+0200\n"
+"POT-Creation-Date: 2004-12-29 14:53+0100\n"
 "PO-Revision-Date: 2004-08-18 12:30+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team:  Tajik\n"
@@ -21,40 +21,63 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3\n"
 
-#: lock/lockdlg.cc:76
+#: lock/autologout.cc:39
+msgid "<nobr><qt><b>Automatic Log Out</b></qt><nobr>"
+msgstr ""
+
+#: lock/autologout.cc:40
+msgid ""
+"<qt>To prevent being logged out, resume using this session by moving the "
+"mouse or pressing a key.</qt>"
+msgstr ""
+
+#: lock/autologout.cc:74
+#, c-format
+msgid ""
+"_n: <nobr><qt>You will be automatically logged out in 1 second</qt></nobr>\n"
+"<nobr><qt>You will be automatically logged out in %n seconds</qt></nobr>"
+msgstr ""
+
+#: lock/lockdlg.cc:82
 msgid "<nobr><b>The session is locked</b><br>"
 msgstr "<nobr><b>Экран қулф аст</b><br>"
 
-#: lock/lockdlg.cc:77
-msgid "<nobr><b>The session is locked by %1</b><br>"
-msgstr "<nobr><b>Экран аз тарафи истифодабаранда қулф аст бо %1</b><br>"
+#: lock/lockdlg.cc:83
+#, fuzzy
+msgid "<nobr><b>The session was locked by %1</b><br>"
+msgstr ""
+"<nobr><b>Экран аз тарафи истифодабаранда "
+"қулф аст бо %1</b><br>"
 
-#: lock/lockdlg.cc:87
-msgid "&Start New Session..."
-msgstr "&Сессияи навро иҷро кунед..."
+#: lock/lockdlg.cc:93
+msgid "Sw&itch User..."
+msgstr ""
 
-#: lock/lockdlg.cc:88
+#: lock/lockdlg.cc:94
 msgid "Unl&ock"
 msgstr "Як бори диг&ар муҳосира кардан"
 
-#: lock/lockdlg.cc:188
+#: lock/lockdlg.cc:194
 msgid "<b>Unlocking failed</b>"
 msgstr "<b>Ғайри қулф карда нашуд</b>"
 
-#: lock/lockdlg.cc:194
+#: lock/lockdlg.cc:200
 msgid "<b>Warning: Caps Lock on</b>"
 msgstr "<b>Диққат: \"Caps Lock\" фаъол аст</b>"
 
-#: lock/lockdlg.cc:420
+#: lock/lockdlg.cc:426
+#, fuzzy
 msgid ""
-"Cannot unlock the session because the authentication system failed to work.\n"
-"You must kill kdesktop_lock (pid %1) manually."
+"Cannot unlock the session because the authentication system failed to work;\n"
+"you must kill kdesktop_lock (pid %1) manually."
 msgstr ""
-"Аз сабаби санҷиш намудани тартиби аслӣ экранро муҳосира карда наметавонам.\n"
-"Аз шумо хоҳиш карда мешавад, ки бо ёрии дасти равиши "
-"kdesktop_lock (pid %1) кушед."
+"Аз сабаби санҷиш намудани тартиби аслӣ "
+"экранро муҳосира карда наметавонам.\n"
+"Аз шумо хоҳиш карда мешавад, ки бо ёрии "
+"дасти равиши kdesktop_lock (pid %1) кушед."
 
-#: lock/lockdlg.cc:518
+#: lock/lockdlg.cc:529
+#, fuzzy
 msgid ""
 "You have chosen to open another desktop session instead of resuming the "
 "current one."
@@ -62,9 +85,11 @@ msgid ""
 "displayed."
 "<br>An F-key is assigned to each session; F%1 is usually assigned to the "
 "first session, F%2 to the second session and so on. You can switch between "
-"sessions by pressing CTRL, ALT and the appropriate F-key at the same time."
+"sessions by pressing Ctrl, Alt and the appropriate F-key at the same time. "
+"Additionally, the KDE Panel and Desktop menus have actions for switching "
+"between sessions."
 msgstr ""
-"Шумо ба ҷои идомаи мизи кории феъли "
+"<p>Шумо ба ҷои идомаи мизи кории феъли "
 "тасмим ба кушодани нишасти мизи корӣ "
 "ҷадиде гирифтаед."
 "<br> Нишасти феъли маҳфӣ шуда ва экрани "
@@ -74,31 +99,81 @@ msgstr ""
 "ба дуввумин нишасти итлоқ мешавад ва ба "
 "ҳамин сурат идома меёбад. Бо бахши "
 "ҳамзамони CTRL, ALT ҳамроҳ бо калиди F марбута "
-"метавонед миёни нишастҳо таъвиз кунед."
+"метавонед миёни нишастҳо таъвиз кунед.</p>"
 
-#: krootwm.cc:748 lock/lockdlg.cc:529
+#: krootwm.cc:829 lock/lockdlg.cc:542
 msgid "&Start New Session"
 msgstr "&Сессияи навро иҷро кунед"
 
-#: lock/lockprocess.cc:659
-msgid "Will not lock the session, as unlocking would be impossible:\n"
+#: lock/lockdlg.cc:554
+msgid "&Do not ask again"
+msgstr ""
+
+#: lock/lockdlg.cc:654
+#, fuzzy
+msgid "Session"
+msgstr "Қулфи экран"
+
+#: lock/lockdlg.cc:655
+#, fuzzy
+msgid "Location"
+msgstr "Қулфи экран"
+
+#: krootwm.cc:784 lock/lockdlg.cc:662
+msgid "Unused"
+msgstr ""
+
+#: krootwm.cc:785 lock/lockdlg.cc:663
+msgid "Remote Login"
+msgstr ""
+
+#: krootwm.cc:786 lock/lockdlg.cc:664
+msgid ""
+"_: user: session type\n"
+"%1: %2"
+msgstr ""
+
+#: krootwm.cc:788 lock/lockdlg.cc:666
+msgid ""
+"_: display, virtual terminal\n"
+"%1, vt%2"
+msgstr ""
+
+#: lock/lockdlg.cc:685
+msgid ""
+"_: session\n"
+"&Activate"
+msgstr ""
+
+#: lock/lockdlg.cc:694
+#, fuzzy
+msgid "Start &New Session"
+msgstr "&Сессияи навро иҷро кунед"
+
+#: lock/lockprocess.cc:675
+msgid ""
+"Will not lock the session, as unlocking would be impossible:\n"
 msgstr ""
 "Сеанс муҳосира карда намешавад, чунки "
 "муҳосира намудан нумкин аст:\n"
 
-#: lock/lockprocess.cc:663
+#: lock/lockprocess.cc:679
 msgid "Cannot start <i>kcheckpass</i>."
 msgstr "<i>kcheckpass</i>.-ро иҷро карда натавонист."
 
-#: lock/lockprocess.cc:664
+#: lock/lockprocess.cc:680
 msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not SetUID root."
 msgstr ""
-"<i>kcheckpass</i> муқарари кор карда наметавонам. "
-"Ҳатталимкон аст, ки шабакаи UID гузошта нашудааст."
+"<i>kcheckpass</i>"
+" муқарари кор карда наметавонам. "
+"Ҳатталимкон аст, ки шабакаи UID гузошта "
+"нашудааст."
 
-#: lock/lockprocess.cc:708
+#: lock/lockprocess.cc:724
 msgid "No appropriate greeter plugin configured."
-msgstr "Модули мувофиқ буда ба салом омода нашудааст."
+msgstr ""
+"Модули мувофиқ буда ба салом омода "
+"нашудааст."
 
 #: lock/main.cc:51
 msgid "Force session locking"
@@ -120,165 +195,204 @@ msgstr "Қулфкунандаи Мизи корӣ"
 msgid "Session Locker for KDesktop"
 msgstr "Қулфкунандаи экрани сеанс барои Мизи корӣ"
 
-#: desktop.cc:666
+#: desktop.cc:686
 msgid "Set as Primary Background Color"
-msgstr "Ба унвони ранги аслии пешзаминаи қарорбуда"
+msgstr ""
+"Ба унвони ранги аслии пешзаминаи "
+"қарорбуда"
 
-#: desktop.cc:667
+#: desktop.cc:687
 msgid "Set as Secondary Background Color"
-msgstr "Ба унвони ранги дуввуми пешзаминаи қарорбуда"
+msgstr ""
+"Ба унвони ранги дуввуми пешзаминаи "
+"қарорбуда"
 
-#: desktop.cc:683
+#: desktop.cc:703
 msgid "&Save to Desktop..."
 msgstr "&Ба мизи корӣ нигоҳ доштан..."
 
-#: desktop.cc:685
+#: desktop.cc:705
 msgid "Set as &Wallpaper"
 msgstr "&Ба унвони қоғази девории қарорбуда"
 
-#: desktop.cc:693
+#: desktop.cc:713
 msgid "Enter a name for the image below:"
 msgstr "Барои сурати поёна ном гузоред:"
 
-#: desktop.cc:702
+#: desktop.cc:722
 msgid "image.png"
 msgstr "image.png"
 
-#: desktop.cc:754
+#: desktop.cc:774
+#, fuzzy
 msgid ""
-"Could not logout properly.\n"
+"Could not log out properly.\n"
 "The session manager cannot be contacted. You can try to force a shutdown by "
-"pressing Ctrl+Alt+Backspace. Note, however, that your current session will "
+"pressing Ctrl+Alt+Backspace; note, however, that your current session will "
 "not be saved with a forced shutdown."
 msgstr ""
-"Сеансро дуруст ба анҷом расонда наметавонам.\n"
-"Бо менеҷери сеанс алоқа карда наметавонам. "
-"Шумо метавонед ҳангоми баромадан дар як "
-"вақт тугмаи Ctrl+Al ва Backspace-ро зер намоед. "
-"Диққат диҳед сеанси мавҷуд буда ҳангоми баромад "
-"нигоҳ дошта намешавад."
+"Сеансро дуруст ба анҷом расонда "
+"наметавонам.\n"
+"Бо менеҷери сеанс алоқа карда "
+"наметавонам. Шумо метавонед ҳангоми "
+"баромадан дар як вақт тугмаи Ctrl+Al ва "
+"Backspace-ро зер намоед. Диққат диҳед сеанси "
+"мавҷуд буда ҳангоми баромад нигоҳ дошта "
+"намешавад."
 
-#: kdiconview.cc:395
+#: init.cc:68
+msgid ""
+"%1 is a file, but KDE needs it to be a directory; move it to %2.orig and "
+"create directory?"
+msgstr ""
+
+#: init.cc:82
+msgid ""
+"Could not create directory %1; check for permissions or reconfigure the "
+"desktop to use another path."
+msgstr ""
+
+#: kdiconview.cc:424
 msgid "&Rename"
 msgstr "&Таъғири ном"
 
-#: kdiconview.cc:396
+#: kdiconview.cc:425
 msgid "&Move to Trash"
 msgstr "&Дар қуттии партов гузоред"
 
-#: krootwm.cc:129
+#: krootwm.cc:132
 msgid "Run Command..."
 msgstr "Иҷрокунандаи Фармон..."
 
-#: krootwm.cc:133
+#: krootwm.cc:136
 msgid "Configure Desktop..."
 msgstr "Танзимоти мизи корӣ..."
 
-#: krootwm.cc:135 krootwm.cc:350
+#: krootwm.cc:138 krootwm.cc:355
 msgid "Disable Desktop Menu"
 msgstr "Менюи Мизи кориро ғайри фаъол созед"
 
-#: krootwm.cc:139
+#: krootwm.cc:142
 msgid "Unclutter Windows"
 msgstr "Тирезаҳоро тартиб диҳед"
 
-#: krootwm.cc:141
+#: krootwm.cc:144
 msgid "Cascade Windows"
 msgstr "Тирезаҳоро шалола кунед"
 
-#: krootwm.cc:147
+#: krootwm.cc:150
 msgid "By Name (Case Sensitive)"
 msgstr "Аз рӯт ном ( ба назаргирии рӯйхат)"
 
-#: krootwm.cc:149
+#: krootwm.cc:152
 msgid "By Name (Case Insensitive)"
 msgstr "Аз рӯи ном ( бе назаргирии рӯйхат)"
 
-#: krootwm.cc:151
+#: krootwm.cc:154
 msgid "By Size"
 msgstr "Аз рӯи андоза"
 
-#: krootwm.cc:153
+#: krootwm.cc:156
 msgid "By Type"
 msgstr "Аз рӯи намуд"
 
-#: krootwm.cc:155
+#: krootwm.cc:158
 msgid "By Date"
 msgstr "Аз рӯи таърих"
 
-#: krootwm.cc:158
+#: krootwm.cc:161
 msgid "Directories First"
 msgstr "Аввал Феҳристҳо"
 
-#: krootwm.cc:161
+#: krootwm.cc:164
 msgid "Line Up Horizontally"
 msgstr "Ба сурати уфуқӣ тартиб диҳед"
 
-#: krootwm.cc:164
+#: krootwm.cc:167
 msgid "Line Up Vertically"
 msgstr "Ба сурати амудӣ тартиб диҳед"
 
-#: krootwm.cc:167
+#: krootwm.cc:170
 msgid "Align to Grid"
 msgstr "Тароз бо шабақа"
 
-#: krootwm.cc:174
+#: krootwm.cc:177
 msgid "Refresh Desktop"
 msgstr "Мизи кориро бозсозӣ кунед"
 
-#: kdesktopbindings.cpp:30 krootwm.cc:180
+#: kdesktopbindings.cpp:31 krootwm.cc:183
 msgid "Lock Session"
 msgstr "Қулфи экран"
 
-#: krootwm.cc:185
-msgid "Logout \"%1\"..."
+#: krootwm.cc:188
+#, fuzzy
+msgid "Log Out \"%1\"..."
 msgstr "Баромадан \"%1\"..."
 
-#: krootwm.cc:196
-msgid "Start New Session..."
-msgstr "Сессияи навро иҷро кунед..."
+#: krootwm.cc:194
+#, fuzzy
+msgid "Start New Session"
+msgstr "&Сессияи навро иҷро кунед"
 
-#: krootwm.cc:328 krootwm.cc:406
+#: krootwm.cc:198
+#, fuzzy
+msgid "Lock Current && Start New Session"
+msgstr "&Сессияи навро иҷро кунед"
+
+#: krootwm.cc:333 krootwm.cc:411
 msgid "Sort Icons"
 msgstr "Нишонаҳоро ба намудҳо ҷудо кунед"
 
-#: krootwm.cc:330
+#: krootwm.cc:335
 msgid "Line Up Icons"
 msgstr "Радиф кардани нишонаҳо"
 
-#: krootwm.cc:357
+#: krootwm.cc:362
 msgid "Enable Desktop Menu"
 msgstr "Менюи Мизи кориро фаъол созед"
 
-#: krootwm.cc:413
+#: krootwm.cc:418
 msgid "Icons"
 msgstr "Нишонаҳо"
 
-#: krootwm.cc:419 krootwm.cc:473
+#: krootwm.cc:424 krootwm.cc:480
 msgid "Windows"
 msgstr "Тирезаҳо"
 
-#: krootwm.cc:466
+#: kdesktopbindings.cpp:26 krootwm.cc:440
+msgid "Switch User"
+msgstr ""
+
+#: krootwm.cc:469
+#, fuzzy
+msgid "Sessions"
+msgstr "Қулфи экран"
+
+#: krootwm.cc:473
 msgid "New"
 msgstr "Нав"
 
-#: kdesktopbindings.cpp:14 krootwm.cc:472 krootwm.cc:679
+#: kdesktopbindings.cpp:14 krootwm.cc:479 krootwm.cc:700
 msgid "Desktop"
 msgstr "Мизи Корӣ"
 
-#: krootwm.cc:743
-msgid "Warning - New Session"
-msgstr "Диққат-сеанси нав"
+#: krootwm.cc:783
+msgid ""
+"_: session (location)\n"
+"%1 (%2)"
+msgstr ""
 
-#: krootwm.cc:751
+#: krootwm.cc:817
+#, fuzzy
 msgid ""
 "<p>You have chosen to open another desktop session."
 "<br>The current session will be hidden and a new login screen will be "
 "displayed."
 "<br>An F-key is assigned to each session; F%1 is usually assigned to the "
 "first session, F%2 to the second session and so on. You can switch between "
-"sessions by pressing Ctrl, Alt and the appropriate F-key at the same "
-"time.</p>"
+"sessions by pressing Ctrl, Alt and the appropriate F-key at the same time. "
+"Additionally, the KDE Panel and Desktop menus have actions for switching "
+"between sessions.</p>"
 msgstr ""
 "<p>Шумо ба ҷои идомаи мизи кории феъли "
 "тасмим ба кушодани нишасти мизи корӣ "
@@ -292,9 +406,9 @@ msgstr ""
 "ҳамзамони CTRL, ALT ҳамроҳ бо калиди F марбута "
 "метавонед миёни нишастҳо таъвиз кунед.</p>"
 
-#: krootwm.cc:763
-msgid "&Lock current session"
-msgstr "&Cеанси мавҷуд бударо муҳосира намоед"
+#: krootwm.cc:828
+msgid "Warning - New Session"
+msgstr "Диққат-сеанси нав"
 
 #: main.cc:43
 msgid "The KDE desktop"
@@ -303,8 +417,8 @@ msgstr "Мизи кории KDE"
 #: main.cc:49
 msgid "Use this if the desktop window appears as a real window"
 msgstr ""
-"Агар мизи кории шумо тирезаи ҳақиқиро акс намояд, "
-" инро истифодабаред"
+"Агар мизи кории шумо тирезаи ҳақиқиро акс "
+"намояд,  инро истифодабаред"
 
 #: main.cc:50
 msgid "Use this to disable the Autostart folder"
@@ -337,7 +451,7 @@ msgid ""
 "Your emails"
 msgstr "youth_opportunities@tajik.net rkovacs@khujand.org"
 
-#: kdesktopbindings.cpp:20 minicli.cpp:76
+#: kdesktopbindings.cpp:20 minicli.cpp:77
 msgid "Run Command"
 msgstr "Фармонро иҷро кунед"
 
@@ -349,47 +463,51 @@ msgstr "Намоиши Менеҷери Масъала"
 msgid "Show Window List"
 msgstr "Рӯйхати тирезаро нишон диҳед"
 
-#: kdesktopbindings.cpp:36
-msgid "Logout"
+#: kdesktopbindings.cpp:37
+#, fuzzy
+msgid "Log Out"
 msgstr "Баромадан аз KDE"
 
-#: kdesktopbindings.cpp:37
-msgid "Logout without Confirmation"
+#: kdesktopbindings.cpp:38
+#, fuzzy
+msgid "Log Out Without Confirmation"
 msgstr "Баромадан бе тасдиқ"
 
-#: kdesktopbindings.cpp:38
+#: kdesktopbindings.cpp:39
 msgid "Halt without Confirmation"
 msgstr "Куштан бе тасдиқ"
 
-#: kdesktopbindings.cpp:39
+#: kdesktopbindings.cpp:40
 msgid "Reboot without Confirmation"
 msgstr "Роҳандозии дубораи бе тасдиқ"
 
-#: minicli.cpp:90 minicli.cpp:624
+#: minicli.cpp:91 minicli.cpp:622
 msgid "&Options >>"
 msgstr "&Интихоботҳо >>"
 
-#: minicli.cpp:93
+#: minicli.cpp:94
 msgid "&Run"
 msgstr "Иҷ&ро"
 
-#: minicli.cpp:394
+#: minicli.cpp:392
 msgid "<qt>The user <b>%1</b> does not exist on this system.</qt>"
 msgstr ""
 "<qt>Ин истифодакунанда <b>%1</b> дар система "
 "вуҷуд нест.</qt>"
 
-#: minicli.cpp:404
-msgid "You do not exist.\n"
-msgstr "Шумо вуҷуд надоред.\n"
+#: minicli.cpp:402
+msgid ""
+"You do not exist.\n"
+msgstr ""
+"Шумо вуҷуд надоред.\n"
 
-#: minicli.cpp:429
+#: minicli.cpp:427
 msgid "Incorrect password; please try again."
 msgstr ""
 "Гузарвожа нодуруст аст; илтимос, "
 "бознависӣ кунед."
 
-#: minicli.cpp:537
+#: minicli.cpp:535
 msgid ""
 "<center><b>%1</b></center>\n"
 "You do not have permission to execute this command."
@@ -397,7 +515,7 @@ msgstr ""
 "<center><b>%1</b></center>\n"
 "Барои иҷрои ин фармон шумо миҷоз нестед"
 
-#: minicli.cpp:563
+#: minicli.cpp:561
 msgid ""
 "<center><b>%1</b></center>\n"
 "Could not run the specified command."
@@ -406,7 +524,7 @@ msgstr ""
 "Фармони нависта шударо иҷро карда "
 "натавонист."
 
-#: minicli.cpp:575
+#: minicli.cpp:573
 msgid ""
 "<center><b>%1</b></center>\n"
 "The specified command does not exist."
@@ -414,35 +532,38 @@ msgstr ""
 "<center><b>%1</b></center>\n"
 "Фармони иҷро шуда мавҷуд нест."
 
-#: minicli.cpp:612
+#: minicli.cpp:610
 msgid "&Options <<"
 msgstr "&Интихоботҳо <<"
 
-#: minicli.cpp:817
+#: minicli.cpp:815
 msgid ""
 "Running a realtime application can be very dangerous. If the application "
 "misbehaves, the system might hang unrecoverably.\n"
 "Are you sure you want to continue?"
 msgstr ""
-"Сар додани гузориши ҳақиқии вақт метавонад "
-"хатарнок бошад. Агар гузориш хатогӣ дошта "
-"бошад, тартиб метавонад ҳасад шавад\n"
+"Сар додани гузориши ҳақиқии вақт "
+"метавонад хатарнок бошад. Агар гузориш "
+"хатогӣ дошта бошад, тартиб метавонад "
+"ҳасад шавад\n"
 "Шумо дар ҳақиқат давом додан мехоҳед?"
 
-#: minicli.cpp:820
+#: minicli.cpp:818
 msgid "Warning - Run Command"
 msgstr "Пешакӣ-огоҳ намудан"
 
-#: minicli.cpp:820
+#: minicli.cpp:818
 msgid "&Run Realtime"
 msgstr "&Дар вақти асосӣ"
 
-#: rc.cpp:5
+#. i18n: file minicli_ui.ui line 169
+#: rc.cpp:6
 #, no-c-format
 msgid "Run with realtime &scheduling"
 msgstr "Сар додан в&ақти ҳақиқи бо аввалият"
 
-#: rc.cpp:7
+#. i18n: file minicli_ui.ui line 177
+#: rc.cpp:9
 #, no-c-format
 msgid ""
 "<qt>Select whether realtime scheduling should be enabled for the "
@@ -461,53 +582,63 @@ msgid ""
 msgstr ""
 "<qt>Дар ин ҷо шумо метавонед имконияти сар "
 "додани гузориш бо аввалият нишон диҳед. "
-"'Планкаш'-ин як элементи тартиб мебошад, ки барои "
-"муаян сохтани кадом равиш иҷро карда мешавад ва "
-"ё кадомаш интизор мешавад.Фақат ду планкаш мавҷуд "
-"аст:\n"
+"'Планкаш'-ин як элементи тартиб мебошад, "
+"ки барои муаян сохтани кадом равиш иҷро "
+"карда мешавад ва ё кадомаш интизор "
+"мешавад.Фақат ду планкаш мавҷуд аст:\n"
 "<ul>\n"
-"<li><em>Оддӣ:</em>ин планкаши якхела мебошад, ки "
-"бо усули ҷудо намудани вақт кор мекунад.Вай фақат "
-"ҳамаи равишкорҳои вақти роҳгузарро байни "
-"ҳамаи равишкорҳо тақсим мекунад.</li>\n"
-"<li><em>Вақти асосӣ:</em>-ин планкаш гузоришҳои "
-"шуморо пай дар пай иҷро мекунад, то он даме ки "
-"вай равишро холӣ накунад.Ин хатарнок шуда метавонад. "
-"Гузорише ки дар вақташ холи намешавад метавонад "
-"тартибро овезон намояд.Барои истифода намудани ин "
-"планкаш номи шаби суперистифодабаранда лозим "
-"аст.</li>\n"
+"<li><em>Оддӣ:</em>ин планкаши якхела мебошад, "
+"ки бо усули ҷудо намудани вақт кор "
+"мекунад.Вай фақат ҳамаи равишкорҳои "
+"вақти роҳгузарро байни ҳамаи равишкорҳо "
+"тақсим мекунад.</li>\n"
+"<li><em>Вақти асосӣ:</em>"
+"-ин планкаш гузоришҳои шуморо пай дар пай "
+"иҷро мекунад, то он даме ки вай равишро "
+"холӣ накунад.Ин хатарнок шуда метавонад. "
+"Гузорише ки дар вақташ холи намешавад "
+"метавонад тартибро овезон намояд.Барои "
+"истифода намудани ин планкаш номи шаби "
+"суперистифодабаранда лозим аст.</li>\n"
 "</ul>\n"
 "</qt>"
 
-#: rc.cpp:14
+#. i18n: file minicli_ui.ui line 196
+#: rc.cpp:17
 #, no-c-format
 msgid "User&name:"
 msgstr "Номи &истифодакунада:"
 
-#: rc.cpp:16 rc.cpp:36
+#. i18n: file minicli_ui.ui line 202
+#: rc.cpp:20 rc.cpp:50
 #, no-c-format
 msgid "Enter the user you want to run the application as here."
-msgstr "Номи истифодабарандаро дароред то ки гузориш сар дода шавад."
+msgstr ""
+"Номи истифодабарандаро дароред то ки "
+"гузориш сар дода шавад."
 
-#: rc.cpp:18 rc.cpp:22
+#. i18n: file minicli_ui.ui line 221
+#: rc.cpp:23 rc.cpp:29
 #, no-c-format
 msgid "Enter the password here for the user you specified above."
 msgstr ""
 "Барои истифодакунандаи интихобшуда, "
 "гузарвожа гузоред."
 
-#: rc.cpp:20
+#. i18n: file minicli_ui.ui line 240
+#: rc.cpp:26
 #, no-c-format
 msgid "Pass&word:"
 msgstr "&Гузарвожа:"
 
-#: rc.cpp:24
+#. i18n: file minicli_ui.ui line 254
+#: rc.cpp:32
 #, no-c-format
 msgid "Run in &terminal window"
 msgstr "&Дар тирезаи терминал иҷро кунед"
 
-#: rc.cpp:26
+#. i18n: file minicli_ui.ui line 257
+#: rc.cpp:35
 #, no-c-format
 msgid ""
 "Check this option if the application you want to run is a text mode "
@@ -515,15 +646,17 @@ msgid ""
 msgstr ""
 "Ин опсияро муаян созед, агар гузорише, ки "
 "шумо иҷро карда истодадед матнӣ бошад. "
-"Гузориш дар тирезаи эмулятори техникӣ иҷро "
-"карда мешавад."
+"Гузориш дар тирезаи эмулятори техникӣ "
+"иҷро карда мешавад."
 
-#: rc.cpp:28
+#. i18n: file minicli_ui.ui line 276
+#: rc.cpp:38
 #, no-c-format
 msgid "&Priority:"
 msgstr "&Бо тартиб:"
 
-#: rc.cpp:30 rc.cpp:40 rc.cpp:44 rc.cpp:46
+#. i18n: file minicli_ui.ui line 282
+#: rc.cpp:41 rc.cpp:56 rc.cpp:62 rc.cpp:65
 #, no-c-format
 msgid ""
 "The priority that the command will be run with can be set here. From left to "
@@ -532,45 +665,53 @@ msgid ""
 "password."
 msgstr ""
 "Мумкин аст, ки дар ин ҷо иҷроиши фармони "
-"аввалият гузошта шудааст.Вай метавонад аз "
-"поён ба боло ва аз чап ба рост тағир ёбад. "
-"Мавқеи марказӣ-мазмуни зикр накардан аст. "
-"Барои вазифаи баландтари аввалият лозим меояд, ки "
-"номи шаби истифодабарандаи root-ро ворид намояд."
+"аввалият гузошта шудааст.Вай метавонад "
+"аз поён ба боло ва аз чап ба рост тағир "
+"ёбад. Мавқеи марказӣ-мазмуни зикр "
+"накардан аст. Барои вазифаи баландтари "
+"аввалият лозим меояд, ки номи шаби "
+"истифодабарандаи root-ро ворид намояд."
 
-#: rc.cpp:32
+#. i18n: file minicli_ui.ui line 309
+#: rc.cpp:44
 #, no-c-format
 msgid "Run with a &different priority"
 msgstr "Бо тартиби &дигар иҷро кунед"
 
-#: rc.cpp:34
+#. i18n: file minicli_ui.ui line 312
+#: rc.cpp:47
 #, no-c-format
 msgid ""
 "Check this option if you want to run the application with a different "
 "priority. A higher priority tells the operating system to give more "
 "processing time to your application."
 msgstr ""
-"Агар хоҳед, ки гузоришро бо дигар аввалият иҷро "
-"намоед ин опсияро дарҷ намоед.Яке аз баландтарин аввалият "
-"дар тартиб ин барои бисёртар ҷудо "
-"намудани  гузориши вақти шумо."
+"Агар хоҳед, ки гузоришро бо дигар "
+"аввалият иҷро намоед ин опсияро дарҷ "
+"намоед.Яке аз баландтарин аввалият дар "
+"тартиб ин барои бисёртар ҷудо намудани  "
+"гузориши вақти шумо."
 
-#: rc.cpp:38
+#. i18n: file minicli_ui.ui line 353
+#: rc.cpp:53
 #, no-c-format
 msgid "Low"
 msgstr "Паст"
 
-#: rc.cpp:42
+#. i18n: file minicli_ui.ui line 367
+#: rc.cpp:59
 #, no-c-format
 msgid "High"
 msgstr "Баланд"
 
-#: rc.cpp:48
+#. i18n: file minicli_ui.ui line 408
+#: rc.cpp:68
 #, no-c-format
 msgid "Run as a different &user"
 msgstr "Ба унвони корбари &дигар иҷро кунед"
 
-#: rc.cpp:50
+#. i18n: file minicli_ui.ui line 411
+#: rc.cpp:71
 #, no-c-format
 msgid ""
 "Check this option if you want to run the application with a different user "
@@ -578,20 +719,24 @@ msgid ""
 "file access and other permissions. The password of the user is required to "
 "do this."
 msgstr ""
-"Агар шумо хоҳед ки гузоришро дар рости дигар "
-"истифодабаранда иҷро кунед, ин опсияро сар диҳед.Ҳар як "
-"тартиб муттаҳид шуда бо худ идентификасияи "
-"истифодабарандаро дорад.Ин идентификатор миҷози роҳ "
-"будани шуморо ба файлҳо ва дигар миҷозҳо муаян месозад. "
-"Барои адо намудани барнома номи шаби истифодабаранда "
-"лозим аст."
+"Агар шумо хоҳед ки гузоришро дар рости "
+"дигар истифодабаранда иҷро кунед, ин "
+"опсияро сар диҳед.Ҳар як тартиб муттаҳид "
+"шуда бо худ идентификасияи "
+"истифодабарандаро дорад.Ин "
+"идентификатор миҷози роҳ будани шуморо "
+"ба файлҳо ва дигар миҷозҳо муаян месозад. "
+"Барои адо намудани барнома номи шаби "
+"истифодабаранда лозим аст."
 
-#: rc.cpp:52
+#. i18n: file minicli_ui.ui line 459
+#: rc.cpp:74
 #, no-c-format
 msgid "Com&mand:"
 msgstr "Ф&армон:"
 
-#: rc.cpp:54 rc.cpp:57
+#. i18n: file minicli_ui.ui line 465
+#: rc.cpp:77 rc.cpp:81
 #, no-c-format
 msgid ""
 "Enter the command you wish to execute or the address of the resource you "
@@ -599,15 +744,28 @@ msgid ""
 "like \"~/.kderc\"."
 msgstr ""
 "Фармоне ки шумо мехоҳед сар диҳед дароред "
-"ё ин ки адреси сарчашмае ки кушодан мехоҳед. "
-"Ин метавонад ҳамчун веб-адрес бошад, масалан, "
-" \"www.kde.org\"ё ин ки ҳамчун файли маҳаллӣ, "
-"масалан,\"~/.kderc\"."
+"ё ин ки адреси сарчашмае ки кушодан "
+"мехоҳед. Ин метавонад ҳамчун веб-адрес "
+"бошад, масалан,  \"www.kde.org\"ё ин ки ҳамчун "
+"файли маҳаллӣ, масалан,\"~/.kderc\"."
 
-#: rc.cpp:59
+#. i18n: file minicli_ui.ui line 508
+#: rc.cpp:84
 #, no-c-format
 msgid "Enter the name of the application you want to run or the URL you want to view"
 msgstr ""
-"Номи барномае ки шумо сар додан мехоҳед ворид намоед "
-"ё ин ки адреси URL барои тамошо."
+"Номи барномае ки шумо сар додан мехоҳед "
+"ворид намоед ё ин ки адреси URL барои "
+"тамошо."
 
+#~ msgid "&Start New Session..."
+#~ msgstr "&Сессияи навро иҷро кунед..."
+
+#~ msgid "You have chosen to open another desktop session instead of resuming the current one.<br>The current session will be hidden and a new login screen will be displayed.<br>An F-key is assigned to each session; F%1 is usually assigned to the first session, F%2 to the second session and so on. You can switch between sessions by pressing CTRL, ALT and the appropriate F-key at the same time."
+#~ msgstr "Шумо ба ҷои идомаи мизи кории феъли тасмим ба кушодани нишасти мизи корӣ ҷадиде гирифтаед.<br> Нишасти феъли маҳфӣ шуда ва экрани вуруди ҷадиде намоиш дода мешавад.<br> Итлоқ мешавад ; F ба ҳар нишасти як калиди F%1 маъмул ба аввалин нишаст, ва F%2 ба дуввумин нишасти итлоқ мешавад ва ба ҳамин сурат идома меёбад. Бо бахши ҳамзамони CTRL, ALT ҳамроҳ бо калиди F марбута метавонед миёни нишастҳо таъвиз кунед."
+
+#~ msgid "Start New Session..."
+#~ msgstr "Сессияи навро иҷро кунед..."
+
+#~ msgid "&Lock current session"
+#~ msgstr "&Cеанси мавҷуд бударо муҳосира намоед"
