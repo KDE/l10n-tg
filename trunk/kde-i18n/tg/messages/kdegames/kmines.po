@@ -5,14 +5,15 @@
 # 2004, Khujand Computer Technologies, Inc.
 # 2004, KCT1, NGO
 # Dilshod Marupov <dma165@hotmail.com>, 2004
+# Hiromon <H_Abrorova@rambler.ru>, 2004
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kmines\n"
-"POT-Creation-Date: 2004-02-11 01:33+0100\n"
-"PO-Revision-Date: 2004-04-08 14:49+0000\n"
-"Last-Translator: Dilshod Marupov <dma165@hotmail.com>\n"
-"Language-Team:  Tajik\n"
+"POT-Creation-Date: 2004-06-01 01:22+0200\n"
+"PO-Revision-Date: 2004-06-21 19:27+0000\n"
+"Last-Translator: Hiromon <H_Abrorova@rambler.ru>\n"
+"Language-Team:  <Tajik>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,7 +24,6 @@ msgid "&Move"
 msgstr "&Ҳаракат"
 
 #: rc.cpp:2
-#, fuzzy
 msgid "The size of a square."
 msgstr "Андозаи майдон."
 
@@ -36,7 +36,6 @@ msgid "The height of the playing field."
 msgstr "Дарозии майдони бозӣ."
 
 #: rc.cpp:5
-#, fuzzy
 msgid "The number of mines in the playing field."
 msgstr "Шумораи минаҳо дар майдони бозӣ."
 
@@ -46,16 +45,21 @@ msgstr "Оё нишонгари \"нолозима\" истифода шавад
 
 #: rc.cpp:7
 msgid "Whether the game can be played using the keyboard."
-msgstr "Оё бозӣ бо истифодаи забонак бози карда шавад."
+msgstr ""
+"Оё бозӣ бо истифодаи забонак бози карда "
+"шавад."
 
 #: rc.cpp:8
 msgid "Whether the game is paused when the window loses focus."
-msgstr "Оё ҳангоми гумкунии фокуси тиреза бизӣ ист намояд."
+msgstr ""
+"Оё ҳангоми гумкунии фокуси тиреза бизӣ "
+"ист намояд."
 
 #: rc.cpp:9
-#, fuzzy
 msgid "Whether to set flags and reveal squares in trivial situations."
-msgstr "Оё баррасии порчаҳо ва кушодани майдонҳо дар ҳодисаҳои ночиз лозиманд."
+msgstr ""
+"Оё баррасии порчаҳо ва кушодани майдонҳо "
+"дар ҳодисаҳои ночиз лозиманд."
 
 #: rc.cpp:10
 msgid "The difficulty level."
@@ -162,7 +166,6 @@ msgid "Enable keyboard"
 msgstr "Даргиронидани забонак"
 
 #: dialogs.cpp:222
-#, fuzzy
 msgid "Pause if window loses focus"
 msgstr "Таваққуф ҳангоми гум кардани фокуси тиреза"
 
@@ -171,10 +174,10 @@ msgid "\"Magic\" reveal"
 msgstr "Кушодани \"Сеҳрнок\""
 
 #: dialogs.cpp:226
-#, fuzzy
 msgid "Set flags and reveal squares where they are trivial."
 msgstr ""
-"Парчамҳоро мегузорад ва майдонҳоро мекушояд, агар ки онҳо мина надошта "
+"Парчамҳоро мегузорад ва майдонҳоро "
+"мекушояд, агар ки онҳо мина надошта "
 "бошанд."
 
 #: dialogs.cpp:233
@@ -186,8 +189,9 @@ msgid ""
 "When the \"magic\" reveal is on, you lose the ability to enter the "
 "highscores."
 msgstr ""
-"Вақте, ки кушодани \"сеҳрнок\" даргирифта бошад, ҳисоби шумо ба китоби "
-"рекордҳо дохил намешавад."
+"Вақте, ки кушодани \"сеҳрнок\" даргирифта "
+"бошад, ҳисоби шумо ба китоби рекордҳо "
+"дохил намешавад."
 
 #: dialogs.cpp:257
 msgid "Flag color:"
@@ -202,7 +206,6 @@ msgid "Error color:"
 msgstr "Ранги хатогӣ:"
 
 #: dialogs.cpp:277
-#, fuzzy
 msgid "Square size:"
 msgstr "Андозаи майдон:"
 
@@ -212,8 +215,33 @@ msgid ""
 "_n: %n mine color:\n"
 "%n mines color:"
 msgstr ""
-"%n ранги мина:\n"
-"%n ранги минаҳо:"
+"ранги %n мина:\n"
+"ранги %n минаҳо:\n"
+"ранги %n минаҳо:"
+
+#: field.cpp:39
+msgid "Case revealed"
+msgstr "Сатҳро интихоб кунед:"
+
+#: field.cpp:40
+msgid "Case autorevealed"
+msgstr "Кушодани худкор"
+
+#: field.cpp:41
+msgid "Flag set"
+msgstr "Барпосозии парчам"
+
+#: field.cpp:42
+msgid "Flag unset"
+msgstr "Барпонасозии парчам"
+
+#: field.cpp:43
+msgid "Question mark set"
+msgstr "Парпосозии нишонаи суол"
+
+#: field.cpp:44
+msgid "Question mark unset"
+msgstr "Парпонасозии нишонаи суол"
 
 #: highscores.cpp:45
 msgid "Clicks"
@@ -325,11 +353,14 @@ msgstr "Усули кушодани сеҳрнок"
 
 #: status.cpp:69
 msgid ""
-"<qt>Mines left.<br/>It turns <font color=\"red\">red</font> when you have "
-"flagged more cases than present mines.</qt>"
+"<qt>Mines left."
+"<br/>It turns <font color=\"red\">red</font> when you have flagged more "
+"cases than present mines.</qt>"
 msgstr ""
-"<qt>Минаҳо боқӣ монданд.<br/>Агар шумо бо парчамҳо бисёртар минаҳоро, назар "
-"ба он ки ҳаст қайд карда бошед, он ранги <font color=\"red\">сурхро</font> "
+"<qt>Минаҳо боқӣ монданд."
+"<br/>Агар шумо бо парчамҳо бисёртар "
+"минаҳоро, назар ба он ки ҳаст қайд карда "
+"бошед, он ранги <font color=\"red\">сурхро</font> "
 "мегирад.</qt>"
 
 #: status.cpp:79
@@ -338,12 +369,15 @@ msgstr "Барои оғози бозии нав, пахш кунед"
 
 #: status.cpp:84
 msgid ""
-"<qt>Time elapsed.<br/>It turns <font color=\"blue\">blue</font> if it is a "
-"highscore and <font color=\"red\">red</font> if it is the best time.</qt>"
+"<qt>Time elapsed."
+"<br/>It turns <font color=\"blue\">blue</font> if it is a highscore and "
+"<font color=\"red\">red</font> if it is the best time.</qt>"
 msgstr ""
-"<qt>Вақти сарфшуда.<br/>Агар шумо ба ҳисоби баландтарин ба ранги <font color="
-"\"blue\">кабуд</font> ва агар ба вақти беҳтарин ноил гашта бошед, ранги "
-"<font color=\"red\">сурхро</font> мегирад.</qt>"
+"<qt>Вақти сарфшуда."
+"<br/>Агар шумо ба ҳисоби баландтарин ба "
+"ранги <font color=\"blue\">кабуд</font> ва агар ба "
+"вақти беҳтарин ноил гашта бошед, ранги <font "
+"color=\"red\">сурхро</font> мегирад.</qt>"
 
 #: status.cpp:104
 msgid "Mines field."
@@ -351,50 +385,59 @@ msgstr "Майдони минаҳо."
 
 #: status.cpp:112
 msgid "Press to Resume"
-msgstr "Барои ба Итмомрасонӣ ба тугма ангушт занед"
+msgstr ""
+"Барои ба Итмомрасонӣ ба тугма ангушт "
+"занед"
 
-#: status.cpp:202
+#: status.cpp:191
+msgid "Explosion!"
+msgstr "Таркиш!"
+
+#: status.cpp:204
 msgid "Game won!"
 msgstr "Дар бозӣ Ғолиб омадед!"
 
-#: status.cpp:202
+#: status.cpp:204
 msgid "Game lost!"
 msgstr "Дар бозӣ мағлуб шудед!"
 
-#: status.cpp:294
+#: status.cpp:298
 msgid ""
 "When the solver gives you advice, your score will not be added to the "
 "highscores."
 msgstr ""
-"Вақте, ки маслиҳатчӣ ба шумо маслиҳат медиҳад, ҳисоби шумо ба китоби "
-"рекордҳо дохил намегардад."
+"Вақте, ки маслиҳатчӣ ба шумо маслиҳат "
+"медиҳад, ҳисоби шумо ба китоби рекордҳо "
+"дохил намегардад."
 
-#: status.cpp:324
+#: status.cpp:328
 msgid "View Game Log"
 msgstr "Азназаргузаронии Номнависи Бозӣ"
 
-#: status.cpp:341
+#: status.cpp:345
 msgid "Overwrite"
 msgstr "Рӯиҳамнависӣ"
 
-#: status.cpp:343
+#: status.cpp:347
 msgid "The file already exists. Overwrite?"
 msgstr "Файл аллакай мавҷуд аст. Рӯиҳам нависам?"
 
-#: status.cpp:344
+#: status.cpp:348
 msgid "File Exists"
 msgstr "Файл Мавҷуд аст."
 
-#: status.cpp:367
+#: status.cpp:371
 #, c-format
 msgid "Cannot read XML file on line %1"
-msgstr "Файли XML-ро дар сатри %1 хонда нашуда истодааст"
+msgstr ""
+"Файли XML-ро дар сатри %1 хонда нашуда "
+"истодааст"
 
-#: status.cpp:377
+#: status.cpp:381
 msgid "Cannot load file."
 msgstr "Боркунии файл нашуда истодааст."
 
-#: status.cpp:382
+#: status.cpp:386
 msgid "Log file not recognized."
 msgstr "Файли номнавис шинохта нашуд."
 
@@ -427,3 +470,4 @@ msgstr "Фоизи муваффақият:"
 #: solver/solver.cpp:245
 msgid "Success rate: %1%"
 msgstr "Фоизи муваффақият: %1%"
+
