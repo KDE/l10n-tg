@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: knewsticker\n"
-"POT-Creation-Date: 2004-10-26 01:18+0200\n"
+"POT-Creation-Date: 2005-02-02 01:24+0100\n"
 "PO-Revision-Date: 2004-10-21 18:13+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -67,8 +67,9 @@ msgid "Rotated scrolling text modes"
 msgstr "Чархиши ҳолатҳои матн "
 
 #: knewsticker.cpp:289
+#, fuzzy
 msgid ""
-"<qt>Couldn't update news site '%1'."
+"<qt>Could not update news site '%1'."
 "<br>The supplied resource file is probably invalid or broken.</qt>"
 msgstr ""
 "<qt>Маҳали ахбороти %1 аз нав сохта "
@@ -477,7 +478,7 @@ msgstr "Ба сарчашмаи ахборот савол дода мешава�
 
 #. i18n: file knewstickerconfigwidget.ui line 298
 #: rc.cpp:81 rc.cpp:610
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
 "This list lets you manage the list of news sites the news ticker will query "
 "for headlines. The news sources are arranged in a tree-like hierarchy and "
@@ -496,8 +497,8 @@ msgid ""
 "Note that you can also right-click on the list to open a menu which lets you "
 "add and remove news sources. You can also enable or disable certain news "
 "sources temporarily by checking or unchecking the box next to it; those news "
-"sources whose box is checked are considered activated and will be processed "
-"by KNewsTicker."
+"sources whose boxes are checked are considered activated and will be "
+"processed by KNewsTicker."
 msgstr ""
 "Ин рӯйхат ба шумо иҷозат медиҳад ки шумо "
 "ба рӯйхати маҳали ахборот бифармонед ки "
@@ -651,7 +652,7 @@ msgstr "Филтрҳои ҷараёни танзимшуда"
 
 #. i18n: file knewstickerconfigwidget.ui line 470
 #: rc.cpp:135 rc.cpp:664
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
 "Here you can see the list of currently configured filters and manage them as "
 "well as add new filters. Managing them is fairly easy:<ul>\n"
@@ -664,10 +665,10 @@ msgid ""
 "<li>Finally, to <b>remove</b> a filter, select it in the list and press the "
 "button labeled <i>Remove</i> in the lower right corner.</li></ul>\n"
 "You can also enable or disable certain filters temporarily by checking or "
-"unchecking the box next to them; those filters whose box is checked are "
+"unchecking the box next to them; those filters whose boxes are checked are "
 "considered enabled and will be honored by KNewsTicker.<br>\n"
 "Note that the filters are processed from the top to the bottom so that of "
-"two filters which might nullify each other (like \"Show...doesn't contain "
+"two filters which might nullify each other (like \"Show...does not contain "
 "KDE\" and \"Show...contains KDE\") only the one which is lower in the list "
 "will take effect."
 msgstr ""
@@ -825,17 +826,17 @@ msgstr "Вожакалид/Ифода"
 
 #. i18n: file knewstickerconfigwidget.ui line 619
 #: rc.cpp:194 rc.cpp:723
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
 "Here you can type a keyword or expression to be used for this filter which "
 "depends on the condition you selected in the combo box at the right:<ul>\n"
-"<li><b>contain</b>, <b>doesn't contain</b> - you should probably enter a "
+"<li><b>contain</b>, <b>does not contain</b> - you should probably enter a "
 "keyword here, like \"KDE\", \"Baseball\" or \"Business\". The keyword is not "
 "case-sensitive so it does not matter whether you type \"kde\", \"KDE\" or "
 "\"kDe\".</li>\n"
-"<li><b>equals</b>, <b>doesn't equal</b> - enter a phrase or expression here "
-"to have the filter match only those articles whose headlines match "
-"<b>exactly</b>"
+"<li><b>equals</b>, <b>does not equal</b>"
+" - enter a phrase or expression here to have the filter match only those "
+"articles whose headlines match <b>exactly</b>"
 " the text you typed. The phrase you type will be considered to be "
 "case-sensitive, so it makes a difference whether you show articles which "
 "contain \"Boeing\" or \"BOEING\".</li>\n"
@@ -884,8 +885,8 @@ msgstr "нигоҳ доштан"
 
 #. i18n: file knewstickerconfigwidget.ui line 655
 #: common/configaccess.cpp:383 rc.cpp:206 rc.cpp:735
-#, no-c-format
-msgid "don't contain"
+#, fuzzy, no-c-format
+msgid "do not contain"
 msgstr "нигоҳ надоштан"
 
 #. i18n: file knewstickerconfigwidget.ui line 660
@@ -896,8 +897,8 @@ msgstr "баробар"
 
 #. i18n: file knewstickerconfigwidget.ui line 665
 #: common/configaccess.cpp:387 rc.cpp:212 rc.cpp:741
-#, no-c-format
-msgid "don't equal"
+#, fuzzy, no-c-format
+msgid "do not equal"
 msgstr "нобаробар"
 
 #. i18n: file knewstickerconfigwidget.ui line 670
@@ -914,16 +915,16 @@ msgstr "Ҳолат барои ин филтр"
 
 #. i18n: file knewstickerconfigwidget.ui line 685
 #: rc.cpp:221 rc.cpp:750
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
 "This combo box lets you specify the condition under which the "
 "keyword/expression you entered in the input field at the right will match. "
 "You can select one of the following values:<ul>\n"
 "<li>contain - the filter matches if the headline contains the keyword.</li>\n"
-"<li>doesn't contain - the filter matches if the headline does not contain "
+"<li>does not contain - the filter matches if the headline does not contain "
 "the keyword.</li>\n"
 "<li>equals - the filter matches if the headline equals the expression.</li>\n"
-"<li>doesn't equal - the filter matches if the headline does not equal the "
+"<li>does not equal - the filter matches if the headline does not equal the "
 "expression.</li>\n"
 "<li>"
 "matches - the filter matches if the expression matches the headline. The "
@@ -1847,7 +1848,8 @@ msgid "<p>Program output:<br>%1<br>"
 msgstr "<p>Маҳсулоти барнома:<br>%1<br>"
 
 #: common/newsengine.cpp:236
-msgid "An error occurred while updating the news source '%1'!"
+#, fuzzy
+msgid "An error occurred while updating the news source '%1'."
 msgstr ""
 "Дар вақти муосир кардани манбаъи "
 "ахбороти '%1' хатогие ба амал омад!"
@@ -2095,9 +2097,10 @@ msgstr ""
 "баромад."
 
 #: common/newsengine.cpp:315
+#, fuzzy
 msgid ""
-"A server error has been encountered. It's likely that you can't do anything "
-"about it."
+"A server error has been encountered. It is likely that you cannot do "
+"anything about it."
 msgstr ""
 "Сервер бо хатогӣ дучор карда шуд . Магар "
 "шумо бо ин ҳеч-ҷиз карда наметавонед."
