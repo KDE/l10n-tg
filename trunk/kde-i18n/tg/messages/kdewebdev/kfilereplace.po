@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kfilereplace\n"
-"POT-Creation-Date: 2004-07-16 01:39+0200\n"
+"POT-Creation-Date: 2004-07-28 01:31+0200\n"
 "PO-Revision-Date: 2004-07-16 17:39-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -22,13 +22,20 @@ msgstr ""
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
-msgstr "Tajik KDE Teams: Роҷер Ковакс, Виктор Ибрагимов, Марина Колючева, Акмал Саломов, Евгения Фатхеева."
+msgstr ""
+"Tajik KDE Teams: Роҷер Ковакс, Виктор Ибрагимов, "
+"Марина Колючева, Акмал Саломов, Евгения "
+"Фатхеева."
 
 #: _translatorinfo.cpp:3
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr "youth_opportunities@tajik.net"
+
+#: kaboutkfilereplace.cpp:29
+msgid "KFileReplace for KDE 3"
+msgstr ""
 
 #: kaboutkfilereplace.cpp:35
 msgid ""
@@ -96,6 +103,10 @@ msgstr ""
 
 #: kaboutkfilereplace.cpp:87
 msgid "KPartification, integration with Quanta Plus"
+msgstr ""
+
+#: kaboutkfilereplace.cpp:88
+msgid "German translator"
 msgstr ""
 
 #: kaboutkfilereplace.cpp:94
@@ -497,7 +508,8 @@ msgid "KFileReplace Results File"
 msgstr ""
 
 #: kfilereplacepart.cpp:773
-msgid "Creation date : "
+#, c-format
+msgid "Creation date: %1"
 msgstr ""
 
 #: kfilereplacepart.cpp:801
@@ -513,70 +525,71 @@ msgid "--> Replaced strings:"
 msgstr ""
 
 #: kfilereplacepart.cpp:832
-msgid "Number of replaced strings: "
+#, c-format
+msgid "Number of replaced strings: %1"
 msgstr ""
 
-#: kfilereplacepart.cpp:874
+#: kfilereplacepart.cpp:873
 msgid "There are no strings to save in the list."
 msgstr ""
 
-#: kfilereplacepart.cpp:895 kfilereplacepart.cpp:971
+#: kfilereplacepart.cpp:894 kfilereplacepart.cpp:970
 msgid ""
 "*.kfr|KFileReplace Strings (*.kfr)\n"
 "*|All Files (*)"
 msgstr ""
 
-#: kfilereplacepart.cpp:895
+#: kfilereplacepart.cpp:894
 msgid "Save Strings to File"
 msgstr ""
 
-#: kfilereplacepart.cpp:905
+#: kfilereplacepart.cpp:904
 msgid "File %1 cannot be saved."
 msgstr ""
 
-#: kfilereplacepart.cpp:922 kfilereplacepart.cpp:1152
-#: kfilereplacepart.cpp:1158
+#: kfilereplacepart.cpp:921 kfilereplacepart.cpp:1151
+#: kfilereplacepart.cpp:1157
 msgid "<qt>Cannot open the file <b>%1</b> and load the string list.</qt>"
 msgstr ""
 
-#: kfilereplacepart.cpp:928
+#: kfilereplacepart.cpp:927
 msgid ""
 "<qt>File <b>%1</b> seems not to be written in new kfr format. Remember that "
 "old kfr format will be soon abandoned! You can convert your old rules files "
 "by simply saving them with kfilereplace.</qt>"
 msgstr ""
 
-#: kfilereplacepart.cpp:971
+#: kfilereplacepart.cpp:970
 msgid "Load Strings From File"
 msgstr ""
 
-#: kfilereplacepart.cpp:992 kfilereplacepart.cpp:1022
+#: kfilereplacepart.cpp:991 kfilereplacepart.cpp:1021
 msgid ""
 "<qt>Cannot invert string <b>%1</b>, because the search string would be "
 "empty.</qt>"
 msgstr ""
 
-#: kfilereplacepart.cpp:1049
+#: kfilereplacepart.cpp:1048
 msgid "Cannot open folders."
 msgstr ""
 
-#: kfilereplacepart.cpp:1111
+#: kfilereplacepart.cpp:1110
 msgid "KFileReplace"
 msgstr ""
 
-#: kfilereplacepart.cpp:1164
+#: kfilereplacepart.cpp:1163
 msgid ""
 "<qt>Cannot open the file <b>%1</b>"
 " and load the string list. This file seems not to be a valid old kfr "
 "file.</qt>"
 msgstr ""
 
-#: kfilereplacepart.cpp:1183 kfilereplacepart.cpp:1198
-#: kfilereplacepart.cpp:1205
+#: kfilereplacepart.cpp:1182 kfilereplacepart.cpp:1197
+#: kfilereplacepart.cpp:1204
 msgid "<qt>Cannot read data.</qt>"
 msgstr ""
 
-#: kfilereplacepart.cpp:1193
+#: kfilereplacepart.cpp:1192
 msgid "<qt>Out of memory.</qt>"
 msgstr ""
 
@@ -648,7 +661,7 @@ msgstr ""
 #: koptionsdlg.cpp:150
 msgid ""
 "You must type the symbols for expressions and for characters before clicking "
-"on 'Ok'."
+"on 'OK'."
 msgstr ""
 
 #: koptionsdlg.cpp:157
@@ -1057,3 +1070,189 @@ msgstr ""
 msgid "Confirm replacement of each string"
 msgstr ""
 
+#: whatthis.h:26
+msgid ""
+"The list which shows all the results of the last operation. You can see all "
+"the files which were successfully found/replaced in green, and files where "
+"there was an error in red. You can see in the <b>Result</b> column, the "
+"number of strings found/replaced for each file. In blue, there is the "
+"general string which was found, and in yellow, if you are using wildcards or "
+"variables, you can see the real text which was found from a string with "
+"wildcards"
+msgstr ""
+
+#: whatthis.h:32
+msgid ""
+"In the strings list, the user must add all the strings which must be "
+"searched and replaced inside the files. If you are searching, you can add no "
+"string in this list. Then all files of the directory, will be shown if the "
+"filter is valid (*.htm* for example). This list is managed by the "
+"<b>Strings</b> menu. Before making any replace, and sometimes before the "
+"search, you need to add string in this list. You can use the <b>+</b> icon "
+"of the toolbar to do it. You can delete a string, empty the list, save the "
+"strings of the list into a file, and load them from a file. This last option "
+"is very useful when you makes the same search/replace operation all the "
+"time, and you need to reuse the same strings. You can use wildcards and "
+"variables options in the strings. Please, read help for more details."
+msgstr ""
+
+#: whatthis.h:43
+msgid "This is the directory where the search or the replace operation will be done."
+msgstr ""
+
+#: whatthis.h:45
+msgid ""
+"Fix the filter of the files you want to search. For example, write \"*.htm\" "
+"to search or replace all web pages. You can put more than an only filter, "
+"when using ';'. For example \"*.html;*.txt;*.xml\""
+msgstr ""
+
+#: whatthis.h:48
+msgid ""
+"Minimal size of files. For example, if you put 1024 KB, all files whose size "
+"is less than 1 MB will not be included."
+msgstr ""
+
+#: whatthis.h:50
+msgid ""
+"Maximal size of files. For example, if you put 2048 KB, all files whose size "
+"is more than 2 MB will not be included."
+msgstr ""
+
+#: whatthis.h:52
+msgid ""
+"Minimal date of files in YYYY/MM/DD format. For example, if you put "
+"2000/01/31, all files which were (modified/read) before the 31 January 2000 "
+"will not be included."
+msgstr ""
+
+#: whatthis.h:55
+msgid ""
+"Maximal date of files in YYYY/MM/DD format. For example, if you put "
+"1999/12/31, all files which were (modified/read) after the 31 December 1999 "
+"will not be included."
+msgstr ""
+
+#: whatthis.h:58
+msgid ""
+"Select \"Writing\" if you want to use the date of the last modification, or "
+"\"reading\" to use the last read access to the file."
+msgstr ""
+
+#: whatthis.h:62
+msgid ""
+"If enabled, lowers and uppers are different. If you are searching for "
+"\"Linux\" and this option is on, \"LINUX\" will not be found."
+msgstr ""
+
+#: whatthis.h:65
+msgid "Work in all subfolders of the main folder of the project"
+msgstr ""
+
+#: whatthis.h:67
+msgid ""
+"When searching, KFileReplace reads all the data of each file to know how "
+"many times each strings appears in the files. If you do not need to have "
+"this information, you can enable this option to make the search faster; "
+"then, the search will be finished in a file when the first occurrence of a "
+"string is found."
+msgstr ""
+
+#: whatthis.h:72
+msgid ""
+"Ignore some characters when searching a string: \\r (carriage return), \\n "
+"(line feed) \\t (tab), and multi-spaces.  This is very useful in HTML code, "
+"and with the end of the lines. For example, if you are searching for \"Linux "
+"is fast\" in a file, and there is a line feed between \"Linux\" and \"is\", "
+"then the string will not be found; this option can solve the problem."
+msgstr ""
+
+#: whatthis.h:78
+msgid "If a folder symbolic link is found, it will be opened."
+msgstr ""
+
+#: whatthis.h:80
+msgid ""
+"The file will be found/replaced only if all strings from the list are found "
+"in the file."
+msgstr ""
+
+#: whatthis.h:82
+msgid ""
+"If this option is enabled, hidden files and folders (files whose names begin "
+"with a point as .kde) will not be found / replaced."
+msgstr ""
+
+#: whatthis.h:85
+msgid ""
+"This is the maximal length of the search made to find wildcards in a text. "
+"For example, if the length is 200, then the '*' symbol cannot be used to "
+"match more than 200 letters (bytes)."
+msgstr ""
+
+#: whatthis.h:88
+msgid ""
+"If enabled, the contents of the wildcards found in the search string will be "
+"copied into the replace string. For example, if you search for \"The * is "
+"under my bed\" and the text is \"The cat is under my bed\", and the replace "
+"string is \"I have a *\", then the text will be replaced with \"I have a "
+"cat\". If this options is disabled, you will have \"I have a *\"."
+msgstr ""
+
+#: whatthis.h:94
+msgid ""
+"If enabled, KFileReplace will replace variables with their values in the "
+"replace string. For example if the replace string is \"The current time is "
+"[$datetime:mm/dd/yyyy$]\", then the date will be written."
+msgstr ""
+
+#: whatthis.h:97
+msgid ""
+"If enabled, backups of replaced files are created before any modifications; "
+"then, you can restore the old data if there is an error during the replace "
+"operation. A copy of the original files will be created, with the .OLD "
+"extension."
+msgstr ""
+
+#: whatthis.h:102
+msgid ""
+"The same operation as the replace one, but do not make any changes in files. "
+"This is not a simple search, because you will see the exact changes that "
+"could be done (with regexp or variables for example.)"
+msgstr ""
+
+#: whatthis.h:106
+msgid ""
+"Enable use of the wildcards (* for expressions, and ? for single character "
+"if not modified in the wildcards options). For example, you can search for "
+"<b>KMsgBox::message(*)</b> and replace with <b>KMessageBox::error(*)</b>."
+msgstr ""
+
+#: whatthis.h:110
+msgid ""
+"Create a copy of the original replaced files with the BAK extension before "
+"replacing."
+msgstr ""
+
+#: whatthis.h:112
+msgid ""
+"The lowers and uppers are different. For example, if you search for "
+"<b>Linux</b> and there is <b>linux</b>, then the string will not be "
+"found/replaced."
+msgstr ""
+
+#: whatthis.h:115
+msgid ""
+"Enable use of the variables, as the date & time or the name of the current "
+"file. The variable must be in the replace string, with the format [$Name:  "
+"$]. When doing the replace, the value of the variable is written instead of "
+"the variable. If disabled, the replace string will be copied without "
+"substitution. Please, read help for more details on the variables names and "
+"formats."
+msgstr ""
+
+#: whatthis.h:122
+msgid ""
+"Search/Replace files in the subfolders of the main folder selected when "
+"creating a new project at startup."
+msgstr ""
