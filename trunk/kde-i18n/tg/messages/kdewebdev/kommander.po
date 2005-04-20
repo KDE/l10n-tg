@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kommander\n"
-"POT-Creation-Date: 2005-02-23 01:28+0100\n"
+"POT-Creation-Date: 2005-04-20 15:12+0200\n"
 "PO-Revision-Date: 2004-10-25 15:22+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -56,7 +56,7 @@ msgstr ""
 msgid "Cannot add plugin"
 msgstr "Гушаи иттисолро илова карда наметавонам"
 
-#: _translatorinfo.cpp:1 editor/main.cpp:46
+#: _translatorinfo.cpp:1 editor/main.cpp:49
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
@@ -64,7 +64,7 @@ msgstr ""
 "Tajik KDE Teams: Виктор Ибрагимов, Марина "
 "Колючева, Роҷер Ковакс"
 
-#: _translatorinfo.cpp:3 editor/main.cpp:47
+#: _translatorinfo.cpp:3 editor/main.cpp:50
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
@@ -385,12 +385,47 @@ msgstr "Гурӯҳи &нави амалиётҳо"
 msgid "New &Dropdown Action Group"
 msgstr "Гурӯҳи &Нави амали суқути поёнӣ"
 
-#: editor/messagelog.cpp:74
+#: editor/messagelog.cpp:34
+#, fuzzy
+msgid "Copy current &line"
+msgstr "Иттисол кардани амалиёти равон"
+
+#: editor/messagelog.cpp:35
+msgid "&Copy content"
+msgstr ""
+
+#: editor/messagelog.cpp:36
+#, fuzzy
+msgid "&Save As..."
+msgstr "Нигоҳ доштан &монанди..."
+
+#: editor/messagelog.cpp:122
+msgid ""
+"*.log|Log Files (*.log)\n"
+"*|All Files"
+msgstr ""
+
+#: editor/messagelog.cpp:122
+#, fuzzy
+msgid "Save Log File"
+msgstr "Фаӣлро нигоҳ доштан?"
+
+#: editor/messagelog.cpp:127
+#, fuzzy
+msgid "<qt>File<br><b>%1</b><br>already exists. Overwrite it?</qt>"
+msgstr "<qt>файли Kommander <br><b>%1</b><br>вуҷуд надорад.</qt>"
+
+#: editor/messagelog.cpp:132
+#, fuzzy
+msgid "<qt>Cannot save log file<br><b>%1</b></qt>"
+msgstr "<qt>Файлро кушода наметавонам<br><b>%1</b></qt"
+
+#: editor/messagelog.cpp:146
 #, fuzzy
 msgid "Stdout"
 msgstr "Нест кардани зарба"
 
-#: editor/messagelog.cpp:74
+#: editor/messagelog.cpp:146
 #, fuzzy
 msgid "Stderr"
 msgstr "Фиристанда"
@@ -975,24 +1010,24 @@ msgstr "Мушаххаси матни '%1'"
 msgid "Text"
 msgstr "Матн"
 
-#: editor/main.cpp:28
+#: editor/main.cpp:31
 msgid "Kommander is a graphical editor of scripted dialogs."
 msgstr ""
 
-#: editor/main.cpp:30
+#: editor/main.cpp:33
 msgid "Based on Qt Designer, (C) 2000 Trolltech AS."
 msgstr ""
 
-#: editor/main.cpp:34 executor/main.cpp:54
+#: editor/main.cpp:37 executor/main.cpp:54
 msgid "Dialog to open"
 msgstr "Диалог барои кушодан"
 
-#: editor/main.cpp:40
+#: editor/main.cpp:43
 #, fuzzy
 msgid "Kommander"
 msgstr "Дар бораи Kommander"
 
-#: editor/main.cpp:57
+#: editor/main.cpp:70
 msgid "Kommander Dialog Editor"
 msgstr "Вироиши гуфтугӯи Kommander "
 
@@ -1959,11 +1994,11 @@ msgstr "Тарҳбандии хати амудии кудакон"
 msgid "Lay Out Children in a Grid"
 msgstr "Тарҳбандии кудакон дар тӯр"
 
-#: editor/functionsimpl.cpp:127
+#: editor/functionsimpl.cpp:130
 msgid "<p>Parameters are not obligatory."
 msgstr "<p>Параметрҳо ғайри ҳатмианд."
 
-#: editor/functionsimpl.cpp:130
+#: editor/functionsimpl.cpp:133
 #, fuzzy, c-format
 msgid ""
 "_n: <p>Only first argument is obligatory.\n"
@@ -1972,7 +2007,7 @@ msgstr ""
 "<p>Танҳо аргументи якӯм ҳатмист.\n"
 "<p>Танҳо аргументи якӯми %1 ҳатмист."
 
-#: editor/functionsimpl.cpp:138
+#: editor/functionsimpl.cpp:141
 msgid ""
 "<qt><h3>%1</h3><p><b>Description:</b> %2\n"
 "<p><b>Syntax:</b> <i>%3</i>%4</qt>"
@@ -4025,44 +4060,64 @@ msgstr "Табулясия"
 msgid "F1"
 msgstr "F1"
 
-#: widget/parser.cpp:148
-msgid "Expected '%1'"
+#: widget/parser.cpp:116
+msgid "Invalid character: '%1'"
 msgstr ""
 
-#: widget/parser.cpp:154
+#: widget/parser.cpp:206 widget/parser.cpp:458
 #, fuzzy
-msgid "Expected variable"
-msgstr "Иҷро кардани муколима"
+msgid "'%1' is not a widget"
+msgstr "%1 (фармони виджет)"
 
-#: widget/parser.cpp:156
+#: widget/parser.cpp:211 widget/parser.cpp:460
+msgid "'%1' is not a function"
+msgstr ""
+
+#: widget/parser.cpp:222
 #, fuzzy
 msgid "Expected value"
 msgstr "Иҷро кардани муколима"
 
-#: widget/parser.cpp:158
-msgid "Invalid symbol"
-msgstr ""
-
-#: widget/parser.cpp:160
+#: widget/parser.cpp:386 widget/parser.cpp:388 widget/parser.cpp:394
 #, fuzzy
-msgid "Incorrect parameters"
+msgid "in function '%1': %2"
+msgstr "Надонистани функсия: '%1' дар гурӯҳ '%2'."
+
+#: widget/parser.cpp:386
+#, fuzzy
+msgid "too few parameters"
 msgstr "Ҷойгиркунии Ҷудосоз"
 
-#: widget/parser.cpp:162
-msgid "Undefined variable"
+#: widget/parser.cpp:388
+#, fuzzy
+msgid "too many parameters"
+msgstr "Ҷойгиркунии Ҷудосоз"
+
+#: widget/parser.cpp:430
+#, fuzzy
+msgid "in widget function '%1.%2': %3"
+msgstr "Надонистани функсияи васеъкуни: '%1'."
+
+#: widget/parser.cpp:462
+msgid "Unexpected symbol after variable '%1'"
 msgstr ""
 
-#: widget/parser.cpp:164
-msgid "Unknown error"
+#: widget/parser.cpp:623
+msgid "Expected '%1'"
 msgstr ""
 
-#: widget/specials.cpp:27
+#: widget/parser.cpp:636 widget/parser.cpp:649
+#, fuzzy
+msgid "Expected variable"
+msgstr "Иҷро кардани муколима"
+
+#: widget/specials.cpp:24
 msgid "Inserts the item if it will not create a duplicate."
 msgstr ""
 "Мондани мундариҷа агар нусҳаи дегари "
 "борхатро насазад."
 
-#: widget/specials.cpp:29
+#: widget/specials.cpp:26
 msgid ""
 "Returns scripts associated with widget. This is an advanced feature that "
 "would not be commonly used."
@@ -4071,25 +4126,25 @@ msgstr ""
 "аст. Ин алакай истифодашудаги ва зиёд "
 "истифода намешавад."
 
-#: widget/specials.cpp:30
+#: widget/specials.cpp:27
 #, fuzzy
 msgid "Stops execution of the script associated with the widget."
 msgstr ""
 "Бар гардондани нархи ҳосил карда бо "
 "калиди додашуда."
 
-#: widget/specials.cpp:32
+#: widget/specials.cpp:29
 #, fuzzy
 msgid "Returns text of a cell in a table."
 msgstr ""
 "Бар гардондани нархи ивазшавандаи "
 "глобалӣ."
 
-#: widget/specials.cpp:34
+#: widget/specials.cpp:31
 msgid "Returns 1 for checked boxes, 0 for unchecked."
 msgstr ""
 
-#: widget/specials.cpp:36
+#: widget/specials.cpp:33
 msgid ""
 "Returns the list of child widgets contained in the parent widget. Set the "
 "<i>recursive</i> parameter to <i>true</i> to include widgets contained by "
@@ -4100,87 +4155,87 @@ msgstr ""
 "параметр ба <i> дуруст </i> дар даромади "
 "восеъшавии аввалинаш пайваст мебошад."
 
-#: widget/specials.cpp:38
+#: widget/specials.cpp:35
 msgid "Removes all content from the widget."
 msgstr ""
 "Нест кардани ҳамаи дар бар гирифтаҳо аз "
 "васеъкуни."
 
-#: widget/specials.cpp:41
+#: widget/specials.cpp:38
 msgid "Returns number of items in a widget such as combobox or listbox."
 msgstr ""
 
-#: widget/specials.cpp:43
+#: widget/specials.cpp:40
 #, fuzzy
 msgid "Returns index of current column."
 msgstr ""
 "Баргашт кардани ягон индекси дар "
 "муомилот буда."
 
-#: widget/specials.cpp:45
+#: widget/specials.cpp:42
 msgid "Returns index of current item."
 msgstr ""
 "Баргашт кардани ягон индекси дар "
 "муомилот буда."
 
-#: widget/specials.cpp:47
+#: widget/specials.cpp:44
 #, fuzzy
 msgid "Returns index of current row."
 msgstr ""
 "Баргашт кардани ягон индекси дар "
 "муомилот буда."
 
-#: widget/specials.cpp:48
+#: widget/specials.cpp:45
 #, fuzzy
 msgid "Executes the script associated with the widget."
 msgstr ""
 "Бар гардондани нархи ҳосил карда бо "
 "калиди додашуда."
 
-#: widget/specials.cpp:50
+#: widget/specials.cpp:47
 msgid "Returns the index of an item with the given text."
 msgstr ""
 "Ба ҷои нишонаи гирифта додани мундариҷаи "
 "матн бар мегардад."
 
-#: widget/specials.cpp:52
+#: widget/specials.cpp:49
 #, fuzzy
 msgid "Inserts new column (or <i>count</i> columns) at <i>column</i> position."
 msgstr "Ҷузъро дар<i>индекси</i> ҷойи ист гузоред."
 
-#: widget/specials.cpp:54
+#: widget/specials.cpp:51
 msgid "Inserts item at <i>index</i> position."
 msgstr "Ҷузъро дар<i>индекси</i> ҷойи ист гузоред."
 
-#: widget/specials.cpp:57
+#: widget/specials.cpp:54
 msgid "Inserts multiple items (EOL-separated) at <i>index</i> position."
 msgstr "Ҷузъро дар<i>индекси</i> ҷойи ист гузоред."
 
-#: widget/specials.cpp:60
+#: widget/specials.cpp:57
 #, fuzzy
 msgid "Inserts new row (or <i>count</i> rows) at <i>row</i> position."
 msgstr "Ҷузъро дар<i>индекси</i> ҷойи ист гузоред."
 
-#: widget/specials.cpp:62
+#: widget/specials.cpp:59
 msgid "Returns the text of the item at the given index."
 msgstr ""
 "Матнро дар индекси додашудаи фақра боз "
 "гардонед."
 
-#: widget/specials.cpp:64
+#: widget/specials.cpp:61
 msgid "Returns the depth of the current item in the tree. Root items have depth 0."
 msgstr ""
 "Чуқурии нуқта мавҷуд будаи дар дарахтро "
 "боз мегардонад. Нуқтаи реша чуқурии 0-ро "
 "дорад."
 
-#: widget/specials.cpp:66
+#: widget/specials.cpp:63
 msgid "Returns the slash-separated path to the given item in the tree."
 msgstr ""
 "Андозаи ҷудои роҳчаро барои нуқтаи муаян "
 "боз мегардонад."
 
-#: widget/specials.cpp:68
+#: widget/specials.cpp:65
 #, fuzzy
 msgid ""
 "Removes the column (or <i>count</i> consecutive columns) with the given "
@@ -4189,26 +4244,26 @@ msgstr ""
 "Фақраро дар индекси додашуда ҳаракат "
 "диҳед."
 
-#: widget/specials.cpp:70
+#: widget/specials.cpp:67
 msgid "Removes the item with the given index."
 msgstr ""
 "Фақраро дар индекси додашуда ҳаракат "
 "диҳед."
 
-#: widget/specials.cpp:73
+#: widget/specials.cpp:70
 #, fuzzy
 msgid "Removes the row (or <i>count</i> consecutive rows) with the given index."
 msgstr ""
 "Фақраро дар индекси додашуда ҳаракат "
 "диҳед."
 
-#: widget/specials.cpp:76
+#: widget/specials.cpp:73
 msgid "Returns selected text or text of current item."
 msgstr ""
 "Матни интихоб карда шударо ва фақраи "
 "мавҷуд бударо боз монед."
 
-#: widget/specials.cpp:78
+#: widget/specials.cpp:75
 msgid ""
 "Sets scripts associated with widget. This is an advanced feature that would "
 "not be commonly used."
@@ -4216,37 +4271,37 @@ msgstr ""
 "Нусҳаҳоро ҳамроҳ восеъ мекнад.Ин  шакл на "
 "онқадар истифода бурда мешавад."
 
-#: widget/specials.cpp:80
+#: widget/specials.cpp:77
 msgid "Enables or disables widget."
 msgstr "Метавон ё ин ки нотавон сохтани виджет."
 
-#: widget/specials.cpp:83
+#: widget/specials.cpp:80
 #, fuzzy
 msgid "Sets text of a cell in a table."
 msgstr ""
 "Бар гардондани нархи ивазшавандаи "
 "глобалӣ."
 
-#: widget/specials.cpp:85
+#: widget/specials.cpp:82
 msgid "Sets/unsets checkbox."
 msgstr "Гузошташудаҳо/нагузашташудаҳо checkbox."
 
-#: widget/specials.cpp:87
+#: widget/specials.cpp:84
 #, fuzzy
 msgid "Sets caption of the column <i>column</i>."
 msgstr "Ҷузъро дар<i>индекси</i> ҷойи ист гузоред."
 
-#: widget/specials.cpp:89
+#: widget/specials.cpp:86
 msgid "Selects the item at the specified index. Indexes are zero based."
 msgstr ""
 "Фақраи дар индекс таъин карда шударо "
 "интихоб намоед. Индексҳо ин асоси нул аст."
 
-#: widget/specials.cpp:92
+#: widget/specials.cpp:89
 msgid "Sets maximum numeric value"
 msgstr ""
 
-#: widget/specials.cpp:94
+#: widget/specials.cpp:91
 msgid ""
 "Sets pixmap at the given index to the specified icon. Use <i>index = -1</i> "
 "to set the pixmap for all items."
@@ -4256,40 +4311,40 @@ msgstr ""
 "гузориши харитаи pix-ро барои ҳамаи фақра = "
 "-1</i> истифода баред."
 
-#: widget/specials.cpp:96
+#: widget/specials.cpp:93
 msgid "Sets caption of the row <i>row</i>."
 msgstr ""
 
-#: widget/specials.cpp:98
+#: widget/specials.cpp:95
 msgid "Selects given text or select item containing given text."
 msgstr ""
 "Матни додашударо ва ҳам фақраи матни "
 "додашударо интихоб намоед."
 
-#: widget/specials.cpp:101
+#: widget/specials.cpp:98
 msgid "Sets widget's content."
 msgstr "Мондани ҷузъи қаноаткунанда."
 
-#: widget/specials.cpp:104
+#: widget/specials.cpp:101
 msgid "Shows/hides widget."
 msgstr "Намоиши/пинҳони васеъкунӣ."
 
-#: widget/specials.cpp:105
+#: widget/specials.cpp:102
 msgid "Returns content of widget."
 msgstr "Баргардондани контенти ҷузъ."
 
-#: widget/specials.cpp:107
+#: widget/specials.cpp:104
 msgid "Returns type(class) of widget."
 msgstr "Намуди (синфи) васеъкуниро боз гардонед."
 
-#: widget/specials.cpp:111
+#: widget/specials.cpp:108
 msgid ""
 "Returns current widget's content. This was required inside widget A to "
 "return widget A content when requested by widget B. The new method is to use "
 "@A.text inside B instead of just @A if you just want the unaltered text."
 msgstr ""
 
-#: widget/specials.cpp:113
+#: widget/specials.cpp:110
 #, fuzzy
 msgid ""
 "Returns selected text or text of current item. This is deprecated for "
@@ -4298,7 +4353,7 @@ msgstr ""
 "Матни интихоб карда шударо ва фақраи "
 "мавҷуд бударо боз монед."
 
-#: widget/specials.cpp:115
+#: widget/specials.cpp:112
 #, fuzzy
 msgid ""
 "Does nothing. This is useful if you request a CheckBox or RadioButton to "
@@ -4312,13 +4367,13 @@ msgstr ""
 "огоҳ кард,ки ба хатоги роҳ дода шуд,ин "
 "холи аст."
 
-#: widget/specials.cpp:117
+#: widget/specials.cpp:114
 msgid "Returns the pid (process ID) of the current process."
 msgstr ""
 "pid (просессID)-ро бар гардонед аз просесси "
 "ҷоришаванда."
 
-#: widget/specials.cpp:119
+#: widget/specials.cpp:116
 #, fuzzy
 msgid ""
 "Returns DCOP identifier of current process. This is shorthand for "
@@ -4328,19 +4383,19 @@ msgstr ""
 "ҷоришаванда.Ин стенография барои "
 "<i>kmdr-иҷрокунанда-@pid></i>."
 
-#: widget/specials.cpp:122
+#: widget/specials.cpp:119
 msgid "Returns the pid of the parent Kommander window."
 msgstr "Бар гардондани pid аз волиди тирезаи Kommander."
 
-#: widget/specials.cpp:124
+#: widget/specials.cpp:121
 msgid "Writes <i>text</i> on stderr."
 msgstr ""
 
-#: widget/specials.cpp:126
+#: widget/specials.cpp:123
 msgid "Writes <i>text</i> on standard output."
 msgstr ""
 
-#: widget/specials.cpp:128
+#: widget/specials.cpp:125
 #, fuzzy
 msgid ""
 "Executes a script block. Bash is used if no shell is given. It is primarily "
@@ -4361,7 +4416,7 @@ msgstr ""
 "нусҳаи аввалинаш бар мегардад, кадоме ки "
 "ногаҳон мебошад.</i>"
 
-#: widget/specials.cpp:130
+#: widget/specials.cpp:127
 msgid ""
 "Returns value of an environment (shell) variable. Do not use <i>$</i>"
 " in the name. For example, <i>@env(PATH)</i>."
@@ -4371,16 +4426,16 @@ msgstr ""
 "истифода набаред <i>$</i> дар ном.Мисол, "
 "<i>@env(PATH)</i>."
 
-#: widget/specials.cpp:132
+#: widget/specials.cpp:129
 #, fuzzy
 msgid "Executes an external shell command."
 msgstr "Иҷроиши командаи фаври."
 
-#: widget/specials.cpp:134
+#: widget/specials.cpp:131
 msgid "Parses an expression and returns computed value."
 msgstr ""
 
-#: widget/specials.cpp:136
+#: widget/specials.cpp:133
 #, fuzzy
 msgid ""
 "Executes loop: values from <i>items</i> list (passed as EOL-separated "
@@ -4392,7 +4447,7 @@ msgstr ""
 "ҷудошаванда) истифодабарандаи таъин "
 "карда шуда."
 
-#: widget/specials.cpp:138
+#: widget/specials.cpp:135
 #, fuzzy
 msgid ""
 "Executes loop: variable is set to <i>start</i> and is increased by "
@@ -4407,13 +4462,13 @@ msgstr ""
 "вақте,ки ивазшаванда аз <i>охир</i>дида "
 "калонтар шуд."
 
-#: widget/specials.cpp:140
+#: widget/specials.cpp:137
 msgid "Returns the value of a global variable."
 msgstr ""
 "Бар гардондани нархи глобалии иваз "
 "шаванда."
 
-#: widget/specials.cpp:142
+#: widget/specials.cpp:139
 msgid ""
 "Translates the string into the current language. Texts in GUI would be "
 "automatically extracted for translation."
@@ -4422,13 +4477,13 @@ msgstr ""
 "ҷоришаванда.Матнҳо дар GUI метавонанд ба "
 "таври автомати барои тарҷума нест шавад."
 
-#: widget/specials.cpp:144
+#: widget/specials.cpp:141
 msgid ""
 "Executes block if expression is true (non-zero number or non-empty string.) "
 "<p>Close with <b>@endif</b></p>"
 msgstr ""
 
-#: widget/specials.cpp:146
+#: widget/specials.cpp:143
 msgid ""
 "Executes another Kommander dialog. Current dialog directory is used if no "
 "path is given. Arguments may be given as named arguments which will become "
@@ -4441,13 +4496,13 @@ msgstr ""
 "шавад ки мухталифи глобалӣ дар диалоги "
 "нав дарояд. Мисол гирем:<i>var=val</i>"
 
-#: widget/specials.cpp:148
+#: widget/specials.cpp:145
 msgid "Reads setting from configration file for this dialog."
 msgstr ""
 "Хондани монданиҳо аз шакли файл барои ин "
 "муколама."
 
-#: widget/specials.cpp:150
+#: widget/specials.cpp:147
 msgid ""
 "Sets the value of a global variable. Global variables exist for the life of "
 "the Kommander window."
@@ -4456,67 +4511,67 @@ msgstr ""
 "глобалӣ.Ивазшавандаи глобалӣ барои "
 "зиндагии тирезаи Kommander вуҷуд дорад."
 
-#: widget/specials.cpp:152
+#: widget/specials.cpp:149
 msgid "Stores setting in configuration file for this dialog."
 msgstr ""
 "Нигоҳ доштани монданиҳо дар шакли файл "
 "барои ин муколама."
 
-#: widget/specials.cpp:154
+#: widget/specials.cpp:151
 msgid ""
 "Begin of <b>switch</b> block. Following <b>case</b> values are compared to "
 "<i>expression</i>.<p>@switch()<br>@case()<br>@end"
 msgstr ""
 
-#: widget/specials.cpp:156
+#: widget/specials.cpp:153
 msgid "Executes an external DCOP call."
 msgstr "Иҷро кардани ҷумлаи берунаи DCOP."
 
-#: widget/specials.cpp:158
+#: widget/specials.cpp:155
 msgid "Adds a comment to EOL that Kommander will not parse"
 msgstr ""
 
-#: widget/specials.cpp:162
+#: widget/specials.cpp:159
 msgid "Returns an EOL-separated list of all values in the array."
 msgstr ""
 "Бар гардондани рӯйхати ҳамаи нархҳои EOL "
 "ҷудошаванда дар сохтан."
 
-#: widget/specials.cpp:164
+#: widget/specials.cpp:161
 msgid "Returns an EOL-separated list of all keys in the array."
 msgstr ""
 "Бар гардондани рӯйхати ҳамаи калидҳои EOL "
 "ҷудошаванда дар сохтан."
 
-#: widget/specials.cpp:166
+#: widget/specials.cpp:163
 msgid "Removes all elements from the array."
 msgstr "Нест кардани ҳамаи элементҳо аз сохтан."
 
-#: widget/specials.cpp:168
+#: widget/specials.cpp:165
 msgid "Returns the number of elements in the array."
 msgstr ""
 "Бар гардондани рақами элементҳо дар "
 "сохтан."
 
-#: widget/specials.cpp:170
+#: widget/specials.cpp:167
 msgid "Returns the value associated with the given key."
 msgstr ""
 "Бар гардондани нархи ҳосил карда бо "
 "калиди додашуда."
 
-#: widget/specials.cpp:172
+#: widget/specials.cpp:169
 msgid "Removes element with the given key from the array."
 msgstr ""
 "Нест кардани элемент бо калиди аз сохтан "
 "додашуда."
 
-#: widget/specials.cpp:174
+#: widget/specials.cpp:171
 msgid "Adds element with the given key and value to the array"
 msgstr ""
 "Илова кардани элемент бо калид ва нархи "
 "сохтани додашуда"
 
-#: widget/specials.cpp:176
+#: widget/specials.cpp:173
 msgid ""
 "Adds all elements in the string to the array. String should have "
 "<i>key\\tvalue\\n</i> format."
@@ -4525,29 +4580,29 @@ msgstr ""
 "сохта.Банд метавонад <i>калид\\tнарх\\n</i> "
 "андоза дошта бошад."
 
-#: widget/specials.cpp:179
+#: widget/specials.cpp:176
 msgid "Returns all elements in the array in <pre>key\\tvalue\\n</pre> format."
 msgstr ""
 "Бар гардондани ҳамаи элементҳо дар "
 "сохтани <pre>калид\\tнарх\\n</pre> андоза."
 
-#: widget/specials.cpp:184
+#: widget/specials.cpp:181
 msgid "Returns number of chars in the string."
 msgstr "Бар гардондани рақам аз сӯзодан дар банд."
 
-#: widget/specials.cpp:186
+#: widget/specials.cpp:183
 msgid "Checks if the the string contains the given substring."
 msgstr ""
 "Тафтиш кардан агар риштаи дар бар гирифта "
 "зерриштаро диҳад."
 
-#: widget/specials.cpp:188
+#: widget/specials.cpp:185
 msgid "Returns the position of a substring in the string, or -1 if it is not found."
 msgstr ""
 "Бар гардондани ҷои зерришта дар "
 "ришта,ё-1агар он ёфта нашуда бошад."
 
-#: widget/specials.cpp:190
+#: widget/specials.cpp:187
 #, fuzzy
 msgid ""
 "Returns the position of a substring in the string, or -1 if it is not found. "
@@ -4556,43 +4611,43 @@ msgstr ""
 "Бар гардондани ҷои зерришта дар "
 "ришта,ё-1агар он ёфта нашуда бошад."
 
-#: widget/specials.cpp:192
+#: widget/specials.cpp:189
 msgid "Returns the first <i>n</i> chars of the string."
 msgstr "Бар гардондани якум <i>n</i> сӯзондани банд."
 
-#: widget/specials.cpp:194
+#: widget/specials.cpp:191
 msgid "Returns the last <i>n</i> chars of the string."
 msgstr ""
 "Бар гардондани гузашта <i>n</i> сӯзондани "
 "банд."
 
-#: widget/specials.cpp:196
+#: widget/specials.cpp:193
 msgid "Returns <i>n</i> chars of the string, starting from <i>start</i>."
 msgstr ""
 "Бар гардондан <i>n</i> сӯзондани банд сар "
 "карда аз <i>сар</i>."
 
-#: widget/specials.cpp:198
+#: widget/specials.cpp:195
 msgid "Removes all occurrences of given substring."
 msgstr ""
 "Ақиб гузоштани ҳамаи воқеаҳои зерришта "
 "додашуда."
 
-#: widget/specials.cpp:200
+#: widget/specials.cpp:197
 msgid "Replaces all occurrences of the given substring with the given replacement."
 msgstr ""
 "Ақиб гузоштани ҳамаи воқеаҳои зерришта "
 "дода бо таъин кардаи додашуда."
 
-#: widget/specials.cpp:202
+#: widget/specials.cpp:199
 msgid "Converts the string to uppercase."
 msgstr "Ҳосил кардани банд дар қутии боло."
 
-#: widget/specials.cpp:204
+#: widget/specials.cpp:201
 msgid "Converts the string to lowercase."
 msgstr "Ҳосил кардани банд дар қутии хурд."
 
-#: widget/specials.cpp:206
+#: widget/specials.cpp:203
 msgid ""
 "Compares two strings. Returns 0 if they are equal, -1 if the first one is "
 "lower, 1 if the first one is higher"
@@ -4602,21 +4657,21 @@ msgstr ""
 "хурдтар бошад,1агар якумаш баландтар "
 "бошад"
 
-#: widget/specials.cpp:209
+#: widget/specials.cpp:206
 msgid "Checks if the string is empty."
 msgstr "Тафтиш кунед,агар банд холи бошад."
 
-#: widget/specials.cpp:211
+#: widget/specials.cpp:208
 msgid "Checks if the string is a valid number."
 msgstr ""
 "Тафтиш кунед агар бонд дар ҳақиқат рақам "
 "бошад."
 
-#: widget/specials.cpp:213
+#: widget/specials.cpp:210
 msgid "Returns given section of a string."
 msgstr "Бар гардондани пораи банди додашуда."
 
-#: widget/specials.cpp:215
+#: widget/specials.cpp:212
 msgid ""
 "Returns the given string with %1, %2, %3 replaced with <i>arg1</i>, "
 "<i>arg2</i>, <i>arg3</i> accordingly."
@@ -4625,66 +4680,74 @@ msgstr ""
 "ақиб гузоштанд бо <i>arg1</i>, <i>arg2</i>, "
 "<i>arg3</i>розигӣ."
 
-#: widget/specials.cpp:219
+#: widget/specials.cpp:216
 msgid "Returns content of given file."
 msgstr ""
 "Кисми қаноат мекардагии файлро дохил "
 "кардан."
 
-#: widget/specials.cpp:221
+#: widget/specials.cpp:218
 msgid "Writes given string to a file."
 msgstr "Навиштани банди додашуда ба файл."
 
-#: widget/specials.cpp:223
+#: widget/specials.cpp:220
 msgid "Appends given string to the end of a file."
 msgstr "Овехтани банди додашуда ба охири файл."
 
-#: widget/specials.cpp:226
+#: widget/specials.cpp:223
 msgid "Shows color dialog. Returns color in #RRGGBB format."
 msgstr ""
 
-#: widget/specials.cpp:228
+#: widget/specials.cpp:225
 msgid "Shows text selection dialog. Returns entered text."
 msgstr ""
 
-#: widget/specials.cpp:230
+#: widget/specials.cpp:227
+msgid "Shows a dialog asking user for password and returns it."
+msgstr ""
+
+#: widget/specials.cpp:229
 msgid "Shows value selection dialog. Returns entered value."
 msgstr ""
 
-#: widget/specials.cpp:232
+#: widget/specials.cpp:231
+msgid "Shows float value selection dialog. Returns entered value."
+msgstr ""
+
+#: widget/specials.cpp:233
 msgid "Shows existing file selection dialog. Returns selected file."
 msgstr ""
 
-#: widget/specials.cpp:234
+#: widget/specials.cpp:235
 msgid "Shows save file selection dialog. Returns selected file."
 msgstr ""
 
-#: widget/specials.cpp:236
+#: widget/specials.cpp:237
 msgid "Shows directory selection dialog. Returns selected directory."
 msgstr ""
 
-#: widget/specials.cpp:238
+#: widget/specials.cpp:239
 msgid ""
 "Shows multiple files selection dialog. Returns EOL-separated list of "
 "selected files."
 msgstr ""
 
-#: widget/specials.cpp:242
+#: widget/specials.cpp:243
 #, fuzzy
 msgid "Shows an information dialog."
 msgstr "Муколимаи вуҷуд доштаро кушоед"
 
-#: widget/specials.cpp:244
+#: widget/specials.cpp:245
 msgid "Shows an error dialog."
 msgstr ""
 
-#: widget/specials.cpp:246
+#: widget/specials.cpp:247
 msgid ""
 "Shows a warning dialog with up to three buttons. Returns number of selected "
 "button."
 msgstr ""
 
-#: widget/specials.cpp:248
+#: widget/specials.cpp:249
 msgid ""
 "Shows a question dialog with up to three buttons. Returns number of selected "
 "button."
@@ -4722,16 +4785,16 @@ msgstr ""
 "Тамом ношуда @барои Ҳар як... @охири "
 "блокировка."
 
-#: widget/kommanderfunctions.cpp:323
+#: widget/kommanderfunctions.cpp:298
 #, c-format
 msgid "Unknown widget: @%1."
 msgstr "Надонистани васеъкуни: @%1."
 
-#: widget/kommanderfunctions.cpp:341
+#: widget/kommanderfunctions.cpp:316
 msgid "Infinite loop: @%1 called inside @%2."
 msgstr "Гиреҳи беохир: @%1 ба дарун фарёд карда @%2."
 
-#: widget/kommanderfunctions.cpp:346
+#: widget/kommanderfunctions.cpp:321
 msgid "Script for @%1 is empty."
 msgstr "Дасхат барои @%1 холи аст."
 
@@ -4741,44 +4804,44 @@ msgstr "Ҷои қалбаки барои матни алоқа дошта."
 
 #: widget/kommanderwidget.cpp:136
 msgid ""
-"Line %1: error: %2\n"
+"Line %1: %2.\n"
 msgstr ""
 
-#: widget/kommanderwidget.cpp:230
+#: widget/kommanderwidget.cpp:237
 msgid "Unknown special: '%1'."
 msgstr "Номуайяан махсус: '%1'."
 
-#: widget/kommanderwidget.cpp:252
+#: widget/kommanderwidget.cpp:259
 msgid "Unmatched parenthesis in DCOP call '%1'."
 msgstr ""
 "Қавсҳои камонакдори номувофиқ дар ҷумлаи "
 "DCOP '%1'."
 
-#: widget/kommanderwidget.cpp:258
+#: widget/kommanderwidget.cpp:265
 msgid "Incorrect arguments in DCOP call '%1'."
 msgstr "Асоси нодуруст дар DCOP ҷумла '%1'."
 
-#: widget/kommanderwidget.cpp:288
+#: widget/kommanderwidget.cpp:295
 msgid "Tried to perform DCOP query, but failed."
 msgstr ""
 "Саволи иҷро кардани DCOP -ро санҷиданд, "
 "валеноком ёфт."
 
-#: widget/kommanderwidget.cpp:319
+#: widget/kommanderwidget.cpp:326
 msgid "DCOP return type %1 is not yet implemented."
 msgstr ""
 "DCOP  бар гардондани намуд %1 ҳоло ҳам иҷро "
 "нашудааст."
 
-#: widget/kommanderwidget.cpp:384
+#: widget/kommanderwidget.cpp:391
 msgid "Continue && Ignore Next Errors"
 msgstr ""
 
-#: widget/kommanderwidget.cpp:386
+#: widget/kommanderwidget.cpp:393
 msgid "<qt>Error in widget <b>%1</b>:<p><i>%2</i></qt>"
 msgstr "<qt>Хатоги дар васеъкуни <b>%1</b>:<p><i>%2</i></qt>"
 
-#: widget/kommanderwidget.cpp:405
+#: widget/kommanderwidget.cpp:412
 msgid ""
 "Error in widget %1:\n"
 "  %2\n"
@@ -4786,33 +4849,33 @@ msgstr ""
 "Хатоги дар васеъкуни %1:\n"
 "  %2\n"
 
-#: widget/kommanderwidget.cpp:546
+#: widget/kommanderwidget.cpp:559
 msgid "Unmatched parenthesis after '%1'."
 msgstr "Қавсҳои камонакдори номувофиқ баъди '%1'."
 
-#: widget/kommanderwidget.cpp:555
+#: widget/kommanderwidget.cpp:568
 msgid "Unmatched quotes in argument of '%1'."
 msgstr " Иқтибоси намувофиқ барои асоси '%1'."
 
-#: widget/kommanderwidget.cpp:557
+#: widget/kommanderwidget.cpp:570
 msgid "Unknown function group: '%1'."
 msgstr "Надонистани функсияи гурӯҳ: '%1'."
 
-#: widget/kommanderwidget.cpp:559
+#: widget/kommanderwidget.cpp:572
 msgid "Unknown function: '%1' in group '%2'."
 msgstr "Надонистани функсия: '%1' дар гурӯҳ '%2'."
 
-#: widget/kommanderwidget.cpp:561
+#: widget/kommanderwidget.cpp:574
 msgid "Unknown widget function: '%1'."
 msgstr "Надонистани функсияи васеъкуни: '%1'."
 
-#: widget/kommanderwidget.cpp:563
+#: widget/kommanderwidget.cpp:576
 msgid "Not enough arguments for '%1' (%2 instead of %3).<p>Correct syntax is: %4"
 msgstr ""
 "Асос кифоя нест барои '%1' (%2 аз баҷои "
 "%3).<p>Таркиби дуруст аст: %4"
 
-#: widget/kommanderwidget.cpp:568
+#: widget/kommanderwidget.cpp:581
 msgid "Too many arguments for '%1' (%2 instead of %3).<p>Correct syntax is: %4"
 msgstr ""
 "Асосҳои хело зиёд барои '%1' (%2 аз баҷои "
@@ -4866,7 +4929,18 @@ msgstr ""
 "Бе қобилият эҷод кардани муколама аз "
 "вуруд."
 
-#: executor/instance.cpp:150
+#: executor/instance.cpp:136
+msgid ""
+"<qt>This file does not have a <b>.kmdr</b> extension. As a security "
+"precaution Kommander will only run Kommander scripts with a clear "
+"identity.</qt>"
+msgstr ""
+
+#: executor/instance.cpp:138
+msgid "Wrong Extension"
+msgstr ""
+
+#: executor/instance.cpp:155
 msgid ""
 "<qt>This dialog is running from your <i>/tmp</i> directory.  This may mean "
 "that it was run from a KMail attachment or from a webpage. "
@@ -5562,9 +5636,6 @@ msgstr "Сар кардани ҷилди просесси кам карда шу
 
 #~ msgid "&New..."
 #~ msgstr "&Нав..."
-
-#~ msgid "Save &As..."
-#~ msgstr "Нигоҳ доштан &монанди..."
 
 #~ msgid "Sa&ve All"
 #~ msgstr "Ҳама&ро нигоҳ доштан"
