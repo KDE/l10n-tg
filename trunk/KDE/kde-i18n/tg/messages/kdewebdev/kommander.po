@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kommander\n"
-"POT-Creation-Date: 2005-04-20 15:12+0200\n"
+"POT-Creation-Date: 2005-05-08 01:31+0200\n"
 "PO-Revision-Date: 2004-10-25 15:22+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3\n"
 
-#: pluginmanager/main.cpp:45
+#: pluginmanager/main.cpp:39
 msgid ""
 "kmdr-plugins is a component of the Kommander dialog system that manages "
 "installed plugins."
@@ -28,31 +28,51 @@ msgstr ""
 "аз ӯҳдаи кори сохташудаи plugins баромада "
 "метавонад."
 
-#: pluginmanager/main.cpp:57
+#: pluginmanager/main.cpp:46
+msgid "Register given library"
+msgstr ""
+
+#: pluginmanager/main.cpp:48
+msgid "Remove given library"
+msgstr ""
+
+#: pluginmanager/main.cpp:50
+msgid "Check all installed plugins and remove those missing"
+msgstr ""
+
+#: pluginmanager/main.cpp:52
+msgid "List all installed plugins"
+msgstr ""
+
+#: pluginmanager/main.cpp:59
 msgid "Kommander Plugin Manager"
 msgstr "Kommander Plugin Менеҷер"
 
-#: pluginmanager/mainwindow.cpp:71
+#: pluginmanager/main.cpp:80
+msgid "Error adding plugin '%1'"
+msgstr ""
+
+#: pluginmanager/main.cpp:85
+msgid "Error removing plugin '%1'"
+msgstr ""
+
+#: pluginmanager/mainwindow.cpp:37
+msgid "Refresh"
+msgstr ""
+
+#: pluginmanager/mainwindow.cpp:72
 msgid "Add Kommander Plugin"
 msgstr ""
 "Kommander-ри дароварда мешудагтро илова "
 "намоед"
 
-#: pluginmanager/mainwindow.cpp:83
+#: pluginmanager/mainwindow.cpp:80
 msgid "<qt>Unable to load Kommander plugin<br><b>%1</b></qt>"
 msgstr ""
 "<qt>Фармондиҳандаи даровардашудагиро  пур "
 "бор карда наметавонам<br><b>%1</b></qt>"
 
-#: pluginmanager/mainwindow.cpp:85
-msgid "<qt>Library<br><b>%1</b><br>is not a Kommander plugin</qt>"
-msgstr ""
-"<qt>Китобхонаи"
-"<br><b>%1</b>"
-"<br>Фармондиҳандаи дароварда шудагӣ "
-"нест</qt>"
-
-#: pluginmanager/mainwindow.cpp:95
+#: pluginmanager/mainwindow.cpp:81
 msgid "Cannot add plugin"
 msgstr "Гушаи иттисолро илова карда наметавонам"
 
@@ -74,7 +94,7 @@ msgstr "youth_opportunities@tajik.net"
 #: editor/iconvieweditorimpl.cpp:57 editor/listboxeditorimpl.cpp:61
 #: editor/widgetfactory.cpp:838 editor/widgetfactory.cpp:871
 #: editor/widgetfactory.cpp:882 editor/widgetfactory.cpp:1073
-#: editor/widgetfactory.cpp:1159 rc.cpp:1376
+#: editor/widgetfactory.cpp:1159 rc.cpp:1382
 #, no-c-format
 msgid "New Item"
 msgstr "Ҷузъи Нав"
@@ -93,7 +113,7 @@ msgstr ""
 msgid "'%1' saved."
 msgstr "'%1' нигоҳ дошта шуд"
 
-#: editor/formfile.cpp:133 editor/mainwindowactions.cpp:605
+#: editor/formfile.cpp:133 editor/mainwindowactions.cpp:610
 msgid "*.kmdr|Kommander Files"
 msgstr "*.kmdr|Kommander файлҳо"
 
@@ -136,8 +156,8 @@ msgstr ""
 "молу мулк ба арзиш бо зикр накардан"
 
 #. i18n: file ./editor/iconvieweditor.ui line 254
-#: editor/propertyeditor.cpp:595 rc.cpp:366 rc.cpp:435 rc.cpp:568 rc.cpp:665
-#: rc.cpp:742 rc.cpp:1015 rc.cpp:1185 rc.cpp:1245
+#: editor/propertyeditor.cpp:595 rc.cpp:372 rc.cpp:441 rc.cpp:574 rc.cpp:671
+#: rc.cpp:748 rc.cpp:1021 rc.cpp:1191 rc.cpp:1251
 #, no-c-format
 msgid "..."
 msgstr "..."
@@ -444,7 +464,7 @@ msgstr "Ҳаракат додани саҳифаи ҷадвалбандиӣ"
 
 #. i18n: file ./editor/listeditor.ui line 31
 #: editor/widgetfactory.cpp:881 editor/widgetfactory.cpp:1072
-#: editor/widgetfactory.cpp:1158 rc.cpp:888
+#: editor/widgetfactory.cpp:1158 rc.cpp:894
 #, no-c-format
 msgid "Column 1"
 msgstr "Сутуни 1"
@@ -873,60 +893,71 @@ msgstr ""
 "Муколима-ро барои иваз кардани "
 "маълумотҳо кушоед"
 
-#: editor/mainwindowactions.cpp:577
+#: editor/mainwindowactions.cpp:565
+msgid "Configure &plugins..."
+msgstr ""
+
+#: editor/mainwindowactions.cpp:567
+#, fuzzy
+msgid "Opens a dialog to configure plugins"
+msgstr ""
+"Муколима-ро барои иваз кардани "
+"маълумотҳо кушоед"
+
+#: editor/mainwindowactions.cpp:582
 msgid "Create a new dialog..."
 msgstr "Эҷод кардани гуфтугуи нав..."
 
-#: editor/mainwindowactions.cpp:600
+#: editor/mainwindowactions.cpp:605
 msgid "Open a file..."
 msgstr "Кушодани файл..."
 
-#: editor/mainwindowactions.cpp:605
+#: editor/mainwindowactions.cpp:610
 msgid "Open Files"
 msgstr "Кушодани файлҳо"
 
-#: editor/mainwindowactions.cpp:641
+#: editor/mainwindowactions.cpp:646
 msgid "Reading file '%1'..."
 msgstr "Хондани файли '%1'..."
 
-#: editor/mainwindowactions.cpp:654
+#: editor/mainwindowactions.cpp:659
 msgid "Loaded file '%1'"
 msgstr "Пур бор кардани '%1'"
 
-#: editor/mainwindowactions.cpp:657 editor/mainwindowactions.cpp:658
+#: editor/mainwindowactions.cpp:662 editor/mainwindowactions.cpp:663
 msgid "Could not load file '%1'"
 msgstr "Файли '%1' пур бор карда наметавонам"
 
-#: editor/mainwindowactions.cpp:658
+#: editor/mainwindowactions.cpp:663
 msgid "Load File"
 msgstr "Пур бор кардани файл"
 
-#: editor/mainwindowactions.cpp:694
+#: editor/mainwindowactions.cpp:699
 msgid "Enter a filename..."
 msgstr "Ворид намудани ном..."
 
-#: editor/mainwindowactions.cpp:722
+#: editor/mainwindowactions.cpp:727
 msgid "Qt Designer is crashing. Attempting to save files..."
 msgstr ""
 "Qt Designer аз кор афтод.Кушиш намоед, ки "
 "файлро нигоҳ доред..."
 
-#: editor/mainwindowactions.cpp:759 editor/mainwindowactions.cpp:822
+#: editor/mainwindowactions.cpp:764 editor/mainwindowactions.cpp:827
 msgid "NewTemplate"
 msgstr "Қолаби нав"
 
-#: editor/mainwindowactions.cpp:771 editor/mainwindowactions.cpp:800
+#: editor/mainwindowactions.cpp:776 editor/mainwindowactions.cpp:805
 msgid "Could not create the template"
 msgstr "Қолабро эҷод карда натавонист"
 
 #. i18n: file ./editor/createtemplate.ui line 38
-#: editor/mainwindowactions.cpp:771 editor/mainwindowactions.cpp:800
-#: rc.cpp:396
+#: editor/mainwindowactions.cpp:776 editor/mainwindowactions.cpp:805
+#: rc.cpp:402
 #, no-c-format
 msgid "Create Template"
 msgstr "Эҷод кардани қолаб"
 
-#: editor/mainwindowactions.cpp:874
+#: editor/mainwindowactions.cpp:879
 msgid ""
 "Cannot paste widgets. Designer could not find a container\n"
 "to paste into which does not contain a layout. Break the layout\n"
@@ -941,21 +972,21 @@ msgstr ""
 "ва интихоб кардани контейнери \n"
 "ва баъд боз часпондан."
 
-#: editor/mainwindowactions.cpp:877
+#: editor/mainwindowactions.cpp:882
 msgid "Paste Error"
 msgstr "Мондани хато"
 
-#: editor/formwindow.cpp:2129 editor/mainwindowactions.cpp:1040
+#: editor/formwindow.cpp:2129 editor/mainwindowactions.cpp:1045
 msgid "Edit connections..."
 msgstr "Вироиши пайвастагӣ..."
 
-#: editor/mainwindowactions.cpp:1051
+#: editor/mainwindowactions.cpp:1056
 msgid "Edit the current form's settings..."
 msgstr ""
 "Вироиш намудани варақаи барпои ҳолати "
 "вуҷуд буда..."
 
-#: editor/mainwindowactions.cpp:1059
+#: editor/mainwindowactions.cpp:1064
 msgid "Edit preferences..."
 msgstr "Вироиши бартарӣ..."
 
@@ -1361,7 +1392,7 @@ msgid "All Files (*)"
 msgstr "Ҳама файлҳо (*)"
 
 #. i18n: file ./editor/pixmapfunction.ui line 38
-#: editor/pixmapchooser.cpp:964 rc.cpp:1098
+#: editor/pixmapchooser.cpp:964 rc.cpp:1104
 #, no-c-format
 msgid "Choose Pixmap"
 msgstr "Интихоби ҳаритаи Pix"
@@ -1380,7 +1411,7 @@ msgstr "Нобуд кардани ҷудосоз"
 
 #. i18n: file ./editor/listboxeditor.ui line 147
 #: editor/actiondnd.cpp:350 editor/actiondnd.cpp:735 editor/actiondnd.cpp:1022
-#: rc.cpp:993 rc.cpp:1045
+#: rc.cpp:999 rc.cpp:1051
 #, no-c-format
 msgid "Delete Item"
 msgstr "Нобуд кардани пиктограмма"
@@ -1526,7 +1557,7 @@ msgid "New Column"
 msgstr "Сутуни нав"
 
 #. i18n: file ./editor/listvieweditor.ui line 62
-#: editor/listvieweditorimpl.cpp:570 rc.cpp:619
+#: editor/listvieweditorimpl.cpp:570 rc.cpp:625
 #, no-c-format
 msgid "&Items"
 msgstr "&Ҷузъҳо"
@@ -1994,11 +2025,11 @@ msgstr "Тарҳбандии хати амудии кудакон"
 msgid "Lay Out Children in a Grid"
 msgstr "Тарҳбандии кудакон дар тӯр"
 
-#: editor/functionsimpl.cpp:130
+#: editor/functionsimpl.cpp:133
 msgid "<p>Parameters are not obligatory."
 msgstr "<p>Параметрҳо ғайри ҳатмианд."
 
-#: editor/functionsimpl.cpp:133
+#: editor/functionsimpl.cpp:136
 #, fuzzy, c-format
 msgid ""
 "_n: <p>Only first argument is obligatory.\n"
@@ -2007,7 +2038,7 @@ msgstr ""
 "<p>Танҳо аргументи якӯм ҳатмист.\n"
 "<p>Танҳо аргументи якӯми %1 ҳатмист."
 
-#: editor/functionsimpl.cpp:141
+#: editor/functionsimpl.cpp:144
 msgid ""
 "<qt><h3>%1</h3><p><b>Description:</b> %2\n"
 "<p><b>Syntax:</b> <i>%3</i>%4</qt>"
@@ -2028,20 +2059,20 @@ msgid "Wizard pages:"
 msgstr "Саҳифаи Wizard:"
 
 #. i18n: file ./editor/wizardeditor.ui line 90
-#: rc.cpp:9 rc.cpp:891
+#: rc.cpp:9 rc.cpp:897
 #, no-c-format
 msgid "&Add"
 msgstr "&Илова кардан"
 
 #. i18n: file ./editor/wizardeditor.ui line 197
-#: rc.cpp:23 rc.cpp:381 rc.cpp:813 rc.cpp:978 rc.cpp:1083 rc.cpp:1134
+#: rc.cpp:23 rc.cpp:387 rc.cpp:819 rc.cpp:984 rc.cpp:1089 rc.cpp:1140
 #, no-c-format
 msgid "Apply all changes."
 msgstr "Истифодаи тамоми хатогиҳо."
 
 #. i18n: file ./editor/wizardeditor.ui line 214
-#: rc.cpp:29 rc.cpp:238 rc.cpp:387 rc.cpp:604 rc.cpp:819 rc.cpp:876 rc.cpp:912
-#: rc.cpp:984 rc.cpp:1089 rc.cpp:1140 rc.cpp:1325
+#: rc.cpp:29 rc.cpp:238 rc.cpp:393 rc.cpp:610 rc.cpp:825 rc.cpp:882 rc.cpp:918
+#: rc.cpp:990 rc.cpp:1095 rc.cpp:1146 rc.cpp:1331
 #, no-c-format
 msgid "Close the dialog and apply all the changes."
 msgstr ""
@@ -2049,8 +2080,8 @@ msgstr ""
 "тамоми тағйирот."
 
 #. i18n: file ./editor/wizardeditor.ui line 228
-#: rc.cpp:35 rc.cpp:244 rc.cpp:393 rc.cpp:610 rc.cpp:825 rc.cpp:882 rc.cpp:918
-#: rc.cpp:990 rc.cpp:1095 rc.cpp:1146 rc.cpp:1331
+#: rc.cpp:35 rc.cpp:244 rc.cpp:399 rc.cpp:616 rc.cpp:831 rc.cpp:888 rc.cpp:924
+#: rc.cpp:996 rc.cpp:1101 rc.cpp:1152 rc.cpp:1337
 #, no-c-format
 msgid "Close the dialog and discard any changes."
 msgstr ""
@@ -2210,25 +2241,25 @@ msgstr ""
 "ҳар хела дар қисмати пештара.</p>"
 
 #. i18n: file ./editor/paletteeditoradvanced.ui line 81
-#: rc.cpp:109 rc.cpp:858
+#: rc.cpp:109 rc.cpp:864
 #, no-c-format
 msgid "Select &palette:"
 msgstr "Интихоби &палитра:"
 
 #. i18n: file ./editor/paletteeditoradvanced.ui line 90
-#: rc.cpp:112 rc.cpp:861
+#: rc.cpp:112 rc.cpp:867
 #, no-c-format
 msgid "Active Palette"
 msgstr "Рангкунии фаъол"
 
 #. i18n: file ./editor/paletteeditoradvanced.ui line 95
-#: rc.cpp:115 rc.cpp:864
+#: rc.cpp:115 rc.cpp:870
 #, no-c-format
 msgid "Inactive Palette"
 msgstr "Рангкунии ғайри фаъол"
 
 #. i18n: file ./editor/paletteeditoradvanced.ui line 100
-#: rc.cpp:118 rc.cpp:867
+#: rc.cpp:118 rc.cpp:873
 #, no-c-format
 msgid "Disabled Palette"
 msgstr "Рангкунии бекор карда шуда"
@@ -2386,7 +2417,7 @@ msgid "Choose pi&xmap:"
 msgstr "Интихоби ҳари&таи pix:"
 
 #. i18n: file ./editor/paletteeditoradvanced.ui line 310
-#: rc.cpp:175 rc.cpp:489
+#: rc.cpp:175 rc.cpp:495
 #, no-c-format
 msgid "Select a pixmap"
 msgstr "Интихоби ҳаритаи pix"
@@ -2406,7 +2437,7 @@ msgid "&Select color:"
 msgstr "&Интихоби ранг:"
 
 #. i18n: file ./editor/paletteeditoradvanced.ui line 360
-#: rc.cpp:184 rc.cpp:226 rc.cpp:465 rc.cpp:837 rc.cpp:846
+#: rc.cpp:184 rc.cpp:226 rc.cpp:471 rc.cpp:843 rc.cpp:852
 #, no-c-format
 msgid "Choose a color"
 msgstr "Интихоби ранг"
@@ -2537,104 +2568,116 @@ msgstr "Тасвир:"
 msgid "&Parameters"
 msgstr "&Параметрҳо"
 
-#. i18n: file ./editor/functions.ui line 81
+#. i18n: file ./editor/functions.ui line 76
 #: rc.cpp:256
-#, no-c-format
-msgid "Arg1"
-msgstr "Далели1"
-
-#. i18n: file ./editor/functions.ui line 94
-#: rc.cpp:259
-#, no-c-format
-msgid "Arg2"
-msgstr "Далели2"
-
-#. i18n: file ./editor/functions.ui line 107
-#: rc.cpp:262
-#, no-c-format
-msgid "Arg3"
-msgstr "Далели3"
-
-#. i18n: file ./editor/functions.ui line 120
-#: rc.cpp:265
-#, no-c-format
-msgid "Arg4"
-msgstr "Арг4"
-
-#. i18n: file ./editor/functions.ui line 133
-#: rc.cpp:268
 #, no-c-format
 msgid "Widget:"
 msgstr "Васеъ:"
 
-#. i18n: file ./editor/functions.ui line 158
-#: rc.cpp:272
+#. i18n: file ./editor/functions.ui line 89
+#: rc.cpp:259
+#, no-c-format
+msgid "Arg1"
+msgstr "Далели1"
+
+#. i18n: file ./editor/functions.ui line 102
+#: rc.cpp:262
+#, no-c-format
+msgid "Arg2"
+msgstr "Далели2"
+
+#. i18n: file ./editor/functions.ui line 115
+#: rc.cpp:265
+#, no-c-format
+msgid "Arg3"
+msgstr "Далели3"
+
+#. i18n: file ./editor/functions.ui line 128
+#: rc.cpp:268
+#, no-c-format
+msgid "Arg4"
+msgstr "Арг4"
+
+#. i18n: file ./editor/functions.ui line 141
+#: rc.cpp:271
+#, fuzzy, no-c-format
+msgid "Arg5"
+msgstr "Далели1"
+
+#. i18n: file ./editor/functions.ui line 154
+#: rc.cpp:274
+#, fuzzy, no-c-format
+msgid "Arg6"
+msgstr "Далели1"
+
+#. i18n: file ./editor/functions.ui line 201
+#: rc.cpp:278
 #, fuzzy, no-c-format
 msgid "Insert function"
 msgstr "Истифодаи &функсия:"
 
-#. i18n: file ./editor/functions.ui line 205
-#: rc.cpp:276
+#. i18n: file ./editor/functions.ui line 231
+#: rc.cpp:282
 #, fuzzy, no-c-format
 msgid "Clear edited text"
 msgstr "Матни &мондашуда:"
 
-#. i18n: file ./editor/functions.ui line 213
-#: rc.cpp:279
+#. i18n: file ./editor/functions.ui line 239
+#: rc.cpp:285
 #, no-c-format
 msgid "Inserted &text:"
 msgstr "Матни &мондашуда:"
 
-#. i18n: file ./editor/functions.ui line 224
-#: rc.cpp:282
+#. i18n: file ./editor/functions.ui line 250
+#: rc.cpp:288
 #, no-c-format
 msgid "Text to be inserted"
 msgstr ""
 
-#. i18n: file ./editor/functions.ui line 317
-#: rc.cpp:293
+#. i18n: file ./editor/functions.ui line 343
+#: rc.cpp:299
 #, no-c-format
 msgid "&Group:"
 msgstr "&Гурӯҳ:"
 
-#. i18n: file ./editor/functions.ui line 347
-#: rc.cpp:296
+#. i18n: file ./editor/functions.ui line 373
+#: rc.cpp:302
 #, no-c-format
 msgid "&Function:"
 msgstr "&Функсия:"
 
 #. i18n: file ./editor/actioneditor.ui line 19
-#: rc.cpp:299
+#: rc.cpp:305
 #, no-c-format
 msgid "Edit Actions"
 msgstr "Таъғири амалиётҳо"
 
 #. i18n: file ./editor/actioneditor.ui line 61
-#: rc.cpp:303
+#: rc.cpp:309
 #, no-c-format
 msgid "Create new Action"
 msgstr "Сохтани амалиёти нав"
 
 #. i18n: file ./editor/actioneditor.ui line 78
-#: rc.cpp:307
+#: rc.cpp:313
 #, no-c-format
 msgid "Delete current Action"
 msgstr "Нобуд кардани Амалиёти равон"
 
 #. i18n: file ./editor/actioneditor.ui line 95
-#: rc.cpp:311
+#: rc.cpp:317
 #, no-c-format
 msgid "Connect current Action"
 msgstr "Иттисол кардани амалиёти равон"
 
 #. i18n: file ./editor/iconvieweditor.ui line 35
-#: rc.cpp:314
+#: rc.cpp:320
 #, no-c-format
 msgid "Edit Iconview"
 msgstr "Таъғири намоиши пиктограмма"
 
 #. i18n: file ./editor/iconvieweditor.ui line 41
-#: rc.cpp:317
+#: rc.cpp:323
 #, no-c-format
 msgid ""
 "<b>Edit Iconview</b>"
@@ -2657,25 +2700,25 @@ msgstr ""
 "пиктограмма.</p>"
 
 #. i18n: file ./editor/iconvieweditor.ui line 72
-#: rc.cpp:320
+#: rc.cpp:326
 #, no-c-format
 msgid "All items in the iconview."
 msgstr "Ҳамаи ҷузъ дар намоиши пиктограмма."
 
 #. i18n: file ./editor/iconvieweditor.ui line 94
-#: rc.cpp:323 rc.cpp:674 rc.cpp:1033
+#: rc.cpp:329 rc.cpp:680 rc.cpp:1039
 #, no-c-format
 msgid "&New Item"
 msgstr "&Ҷузъи Нав"
 
 #. i18n: file ./editor/iconvieweditor.ui line 97
-#: rc.cpp:326 rc.cpp:677 rc.cpp:1036
+#: rc.cpp:332 rc.cpp:683 rc.cpp:1042
 #, no-c-format
 msgid "Add an item"
 msgstr "Иловаи ҷузъ"
 
 #. i18n: file ./editor/iconvieweditor.ui line 100
-#: rc.cpp:329
+#: rc.cpp:335
 #, no-c-format
 msgid "Create a new item for the iconview."
 msgstr ""
@@ -2683,67 +2726,67 @@ msgstr ""
 "пиктограмма."
 
 #. i18n: file ./editor/iconvieweditor.ui line 108
-#: rc.cpp:332 rc.cpp:622 rc.cpp:1042
+#: rc.cpp:338 rc.cpp:628 rc.cpp:1048
 #, no-c-format
 msgid "&Delete Item"
 msgstr "&Нобудсозии ҷузъ"
 
 #. i18n: file ./editor/iconvieweditor.ui line 111
-#: rc.cpp:335 rc.cpp:625
+#: rc.cpp:341 rc.cpp:631
 #, no-c-format
 msgid "Delete item"
 msgstr "Нобудсозии ҷузъ"
 
 #. i18n: file ./editor/iconvieweditor.ui line 114
-#: rc.cpp:338
+#: rc.cpp:344
 #, no-c-format
 msgid "Delete the selected item."
 msgstr "Нобуд кардани ҷузъи интихобшуда."
 
 #. i18n: file ./editor/iconvieweditor.ui line 147
-#: rc.cpp:341 rc.cpp:999
+#: rc.cpp:347 rc.cpp:1005
 #, no-c-format
 msgid "&Item Properties"
 msgstr "&Хусусиятҳои ҷузъ"
 
 #. i18n: file ./editor/iconvieweditor.ui line 164
-#: rc.cpp:344 rc.cpp:637 rc.cpp:751 rc.cpp:1024 rc.cpp:1071
+#: rc.cpp:350 rc.cpp:643 rc.cpp:757 rc.cpp:1030 rc.cpp:1077
 #, no-c-format
 msgid "&Text:"
 msgstr "&Матн:"
 
 #. i18n: file ./editor/iconvieweditor.ui line 181
-#: rc.cpp:347 rc.cpp:640 rc.cpp:1027
+#: rc.cpp:353 rc.cpp:646 rc.cpp:1033
 #, no-c-format
 msgid "Change text"
 msgstr "Дигаргуни матн"
 
 #. i18n: file ./editor/iconvieweditor.ui line 184
-#: rc.cpp:350
+#: rc.cpp:356
 #, no-c-format
 msgid "Change the text for the selected item."
 msgstr "Дигаргуни матн барои ҷузъи интихобшуда."
 
 #. i18n: file ./editor/iconvieweditor.ui line 192
-#: rc.cpp:353 rc.cpp:729 rc.cpp:1002
+#: rc.cpp:359 rc.cpp:735 rc.cpp:1008
 #, no-c-format
 msgid "&Pixmap:"
 msgstr "&Ҳаритаи Pix:"
 
 #. i18n: file ./editor/iconvieweditor.ui line 217
-#: rc.cpp:356 rc.cpp:655 rc.cpp:732 rc.cpp:1005 rc.cpp:1175 rc.cpp:1235
+#: rc.cpp:362 rc.cpp:661 rc.cpp:738 rc.cpp:1011 rc.cpp:1181 rc.cpp:1241
 #, no-c-format
 msgid "Label4"
 msgstr "Ёрлиқи4"
 
 #. i18n: file ./editor/iconvieweditor.ui line 237
-#: rc.cpp:360 rc.cpp:659 rc.cpp:736 rc.cpp:1009 rc.cpp:1179 rc.cpp:1239
+#: rc.cpp:366 rc.cpp:665 rc.cpp:742 rc.cpp:1015 rc.cpp:1185 rc.cpp:1245
 #, no-c-format
 msgid "Delete Pixmap"
 msgstr "Нобуд кардани ҳаритаи Pix"
 
 #. i18n: file ./editor/iconvieweditor.ui line 240
-#: rc.cpp:363 rc.cpp:1012
+#: rc.cpp:369 rc.cpp:1018
 #, no-c-format
 msgid "Delete the selected item's pixmap."
 msgstr ""
@@ -2751,13 +2794,13 @@ msgstr ""
 "интихобшуда."
 
 #. i18n: file ./editor/iconvieweditor.ui line 257
-#: rc.cpp:369 rc.cpp:668 rc.cpp:745 rc.cpp:1018 rc.cpp:1188 rc.cpp:1248
+#: rc.cpp:375 rc.cpp:674 rc.cpp:751 rc.cpp:1024 rc.cpp:1194 rc.cpp:1254
 #, no-c-format
 msgid "Select a Pixmap"
 msgstr "Интихоби ҳаритаи Pix"
 
 #. i18n: file ./editor/iconvieweditor.ui line 260
-#: rc.cpp:372
+#: rc.cpp:378
 #, no-c-format
 msgid "Select a pixmap file for the current item."
 msgstr ""
@@ -2765,31 +2808,31 @@ msgstr ""
 "равон."
 
 #. i18n: file ./editor/createtemplate.ui line 61
-#: rc.cpp:399
+#: rc.cpp:405
 #, no-c-format
 msgid "Template &name:"
 msgstr "Номи &қолиб:"
 
 #. i18n: file ./editor/createtemplate.ui line 76
-#: rc.cpp:402
+#: rc.cpp:408
 #, no-c-format
 msgid "Name of the new template"
 msgstr "Номи қолиби нав"
 
 #. i18n: file ./editor/createtemplate.ui line 80
-#: rc.cpp:405
+#: rc.cpp:411
 #, no-c-format
 msgid "Enter the name of the new template"
 msgstr "Номи қолиби навро дохил кунед"
 
 #. i18n: file ./editor/createtemplate.ui line 91
-#: rc.cpp:408
+#: rc.cpp:414
 #, no-c-format
 msgid "Class of the new template"
 msgstr "Синфи қолиби нав"
 
 #. i18n: file ./editor/createtemplate.ui line 95
-#: rc.cpp:411
+#: rc.cpp:417
 #, no-c-format
 msgid "Enter the name of the class which should be used as the template's base class"
 msgstr ""
@@ -2797,73 +2840,73 @@ msgstr ""
 "асоси синфи қолиб истифода бурда шавад"
 
 #. i18n: file ./editor/createtemplate.ui line 142
-#: rc.cpp:414
+#: rc.cpp:420
 #, no-c-format
 msgid "C&reate"
 msgstr "&Сохтан"
 
 #. i18n: file ./editor/createtemplate.ui line 150
-#: rc.cpp:417
+#: rc.cpp:423
 #, no-c-format
 msgid "Creates the new template"
 msgstr "Сохтани қолиби нав"
 
 #. i18n: file ./editor/createtemplate.ui line 165
-#: rc.cpp:423
+#: rc.cpp:429
 #, no-c-format
 msgid "Closes the Dialog"
 msgstr "Гуфтугуро махкам намоед"
 
 #. i18n: file ./editor/createtemplate.ui line 178
-#: rc.cpp:426
+#: rc.cpp:432
 #, no-c-format
 msgid "&Baseclass for template:"
 msgstr "&Синфи база барои қолиб:"
 
 #. i18n: file ./editor/assoctexteditor.ui line 16
-#: rc.cpp:429
+#: rc.cpp:435
 #, no-c-format
 msgid "Edit Text"
 msgstr "Таъғири матн"
 
 #. i18n: file ./editor/assoctexteditor.ui line 35
-#: rc.cpp:432
+#: rc.cpp:438
 #, no-c-format
 msgid "&Widget:"
 msgstr "&Васеъ:"
 
 #. i18n: file ./editor/assoctexteditor.ui line 67
-#: rc.cpp:438
+#: rc.cpp:444
 #, no-c-format
 msgid "&Text for:"
 msgstr "&Матн барои:"
 
 #. i18n: file ./editor/assoctexteditor.ui line 112
-#: rc.cpp:444
+#: rc.cpp:450
 #, no-c-format
 msgid "&Function..."
 msgstr "&Функсия..."
 
 #. i18n: file ./editor/assoctexteditor.ui line 145
-#: rc.cpp:447
+#: rc.cpp:453
 #, no-c-format
 msgid "Wi&dget:"
 msgstr "Ва&сеъ:"
 
 #. i18n: file ./editor/assoctexteditor.ui line 192
-#: rc.cpp:450
+#: rc.cpp:456
 #, no-c-format
 msgid "Fi&le..."
 msgstr "Фа&йл..."
 
 #. i18n: file ./editor/preferences.ui line 35
-#: rc.cpp:453
+#: rc.cpp:459
 #, no-c-format
 msgid "Preferences"
 msgstr "Маълумотгирӣ"
 
 #. i18n: file ./editor/preferences.ui line 41
-#: rc.cpp:456
+#: rc.cpp:462
 #, no-c-format
 msgid ""
 "<b>Preferences</b>"
@@ -2879,79 +2922,79 @@ msgstr ""
 "нишондан вобаста доранд.</p>"
 
 #. i18n: file ./editor/preferences.ui line 62
-#: rc.cpp:459
+#: rc.cpp:465
 #, no-c-format
 msgid "General"
 msgstr "Умумӣ"
 
 #. i18n: file ./editor/preferences.ui line 79
-#: rc.cpp:462
+#: rc.cpp:468
 #, no-c-format
 msgid "Backgro&und"
 msgstr "Пеш&замина"
 
 #. i18n: file ./editor/preferences.ui line 114
-#: rc.cpp:468
+#: rc.cpp:474
 #, no-c-format
 msgid "Select a color in the color dialog."
 msgstr "Интихоби ранг дар тирезаи диалогии ранг."
 
 #. i18n: file ./editor/preferences.ui line 125
-#: rc.cpp:471
+#: rc.cpp:477
 #, no-c-format
 msgid "Co&lor"
 msgstr "Ра&нг"
 
 #. i18n: file ./editor/preferences.ui line 128
-#: rc.cpp:474
+#: rc.cpp:480
 #, no-c-format
 msgid "Use a background color"
 msgstr "Истифодаи ранги пешзамина"
 
 #. i18n: file ./editor/preferences.ui line 131
-#: rc.cpp:477
+#: rc.cpp:483
 #, no-c-format
 msgid "Use a background color."
 msgstr "Истифодаи ранги пешзамина."
 
 #. i18n: file ./editor/preferences.ui line 139
-#: rc.cpp:480
+#: rc.cpp:486
 #, no-c-format
 msgid "&Pixmap"
 msgstr "&Харитаи Pix"
 
 #. i18n: file ./editor/preferences.ui line 145
-#: rc.cpp:483
+#: rc.cpp:489
 #, no-c-format
 msgid "Use a background pixmap"
 msgstr "Истифодаи пешзаминаи ҳаритаи pix"
 
 #. i18n: file ./editor/preferences.ui line 148
-#: rc.cpp:486
+#: rc.cpp:492
 #, no-c-format
 msgid "Use a background pixmap."
 msgstr "Истифодаи пешзаминаи ҳаритаи pix."
 
 #. i18n: file ./editor/preferences.ui line 171
-#: rc.cpp:492
+#: rc.cpp:498
 #, no-c-format
 msgid "Choose a pixmap file."
 msgstr "Файли pixmap-ро интихоб намоед."
 
 #. i18n: file ./editor/preferences.ui line 181
-#: rc.cpp:495
+#: rc.cpp:501
 #, no-c-format
 msgid "Show &grid"
 msgstr "Намоиши &тӯр"
 
 #. i18n: file ./editor/preferences.ui line 187
-#: rc.cpp:498
+#: rc.cpp:504
 #, no-c-format
 msgid "Show Grid"
 msgstr "Намоиши тӯр"
 
 #. i18n: file ./editor/preferences.ui line 190
-#: rc.cpp:501
+#: rc.cpp:507
 #, no-c-format
 msgid ""
 "<b>Customize the grid appearance for all forms.</b>"
@@ -2964,25 +3007,25 @@ msgstr ""
 "нишон кардашуда аст.</p>"
 
 #. i18n: file ./editor/preferences.ui line 198
-#: rc.cpp:504
+#: rc.cpp:510
 #, no-c-format
 msgid "Gr&id"
 msgstr "Тӯ&р"
 
 #. i18n: file ./editor/preferences.ui line 218
-#: rc.cpp:508
+#: rc.cpp:514
 #, no-c-format
 msgid "Sn&ap to grid"
 msgstr "Ак&си лаҳзаи тӯр"
 
 #. i18n: file ./editor/preferences.ui line 224
-#: rc.cpp:511
+#: rc.cpp:517
 #, no-c-format
 msgid "Snap to the grid"
 msgstr "Акси лаҳзаи тӯр"
 
 #. i18n: file ./editor/preferences.ui line 227
-#: rc.cpp:514
+#: rc.cpp:520
 #, no-c-format
 msgid ""
 "<b>Customize the grid-settings for all forms.</b>"
@@ -2993,13 +3036,13 @@ msgstr ""
 "созед.</b> <p>"
 
 #. i18n: file ./editor/preferences.ui line 258
-#: rc.cpp:517 rc.cpp:523
+#: rc.cpp:523 rc.cpp:529
 #, no-c-format
 msgid "Grid resolution"
 msgstr "Ҷавоби тӯр"
 
 #. i18n: file ./editor/preferences.ui line 261
-#: rc.cpp:520 rc.cpp:526
+#: rc.cpp:526 rc.cpp:532
 #, no-c-format
 msgid ""
 "<b>Customize the grid-settings for all forms.</b>"
@@ -3013,19 +3056,19 @@ msgstr ""
 "мешавад бо истифодаи ҳали X/Y .</p>"
 
 #. i18n: file ./editor/preferences.ui line 289
-#: rc.cpp:529
+#: rc.cpp:535
 #, no-c-format
 msgid "Grid-&X:"
 msgstr "Тӯр-&X:"
 
 #. i18n: file ./editor/preferences.ui line 300
-#: rc.cpp:532
+#: rc.cpp:538
 #, no-c-format
 msgid "Grid-&Y:"
 msgstr "Тӯр-&Y:"
 
 #. i18n: file ./editor/preferences.ui line 327
-#: rc.cpp:535 rc.cpp:556
+#: rc.cpp:541 rc.cpp:562
 #, no-c-format
 msgid ""
 "A splash screen is displayed when starting Qt Designer if this option is "
@@ -3036,13 +3079,13 @@ msgstr ""
 "санҷида шавад."
 
 #. i18n: file ./editor/preferences.ui line 335
-#: rc.cpp:538
+#: rc.cpp:544
 #, no-c-format
 msgid "Ge&neral"
 msgstr "Уму&мӣ"
 
 #. i18n: file ./editor/preferences.ui line 352
-#: rc.cpp:541
+#: rc.cpp:547
 #, no-c-format
 msgid "Restore last &workspace on startup"
 msgstr ""
@@ -3050,13 +3093,13 @@ msgstr ""
 "саршави"
 
 #. i18n: file ./editor/preferences.ui line 358
-#: rc.cpp:544
+#: rc.cpp:550
 #, no-c-format
 msgid "Restore last workspace"
 msgstr "Барқарор кардани охирон ҷоикор"
 
 #. i18n: file ./editor/preferences.ui line 361
-#: rc.cpp:547
+#: rc.cpp:553
 #, no-c-format
 msgid ""
 "The current workspace settings will be restored the next time you start Qt "
@@ -3068,19 +3111,19 @@ msgstr ""
 "санҷида шавад."
 
 #. i18n: file ./editor/preferences.ui line 369
-#: rc.cpp:550
+#: rc.cpp:556
 #, no-c-format
 msgid "Show &splash screen on startup"
 msgstr "Нишон &тамоми оина хангоми сар кардан"
 
 #. i18n: file ./editor/preferences.ui line 375
-#: rc.cpp:553
+#: rc.cpp:559
 #, no-c-format
 msgid "Show Splashscreen"
 msgstr "Намоиши тамоми дасхат"
 
 #. i18n: file ./editor/preferences.ui line 386
-#: rc.cpp:559
+#: rc.cpp:565
 #, no-c-format
 msgid "Disable data&base auto-edit in preview"
 msgstr ""
@@ -3088,13 +3131,13 @@ msgstr ""
 "авто-вароиш дар ташхиси муқаддамоти"
 
 #. i18n: file ./editor/preferences.ui line 397
-#: rc.cpp:562
+#: rc.cpp:568
 #, no-c-format
 msgid "&Documentation path:"
 msgstr "&Роҳи санадсозӣ"
 
 #. i18n: file ./editor/preferences.ui line 422
-#: rc.cpp:565
+#: rc.cpp:571
 #, no-c-format
 msgid ""
 "<b>Enter the path to the documentation.</b>"
@@ -3106,37 +3149,37 @@ msgstr ""
 "$табият ҳамчун якум қисми номироҳча.</p>"
 
 #. i18n: file ./editor/preferences.ui line 436
-#: rc.cpp:571
+#: rc.cpp:577
 #, no-c-format
 msgid "Select path"
 msgstr "Интихоби роҳча"
 
 #. i18n: file ./editor/preferences.ui line 439
-#: rc.cpp:574
+#: rc.cpp:580
 #, no-c-format
 msgid "Look for the documentation path."
 msgstr "Ба роҳи санадсозӣ нигаред."
 
 #. i18n: file ./editor/preferences.ui line 451
-#: rc.cpp:577
+#: rc.cpp:583
 #, no-c-format
 msgid "&Toolbars"
 msgstr "&Пайраҳаҳои Асбоб"
 
 #. i18n: file ./editor/preferences.ui line 468
-#: rc.cpp:580
+#: rc.cpp:586
 #, no-c-format
 msgid "Show &big icons"
 msgstr "Намоиши &пиктограммаи калон"
 
 #. i18n: file ./editor/preferences.ui line 471
-#: rc.cpp:583
+#: rc.cpp:589
 #, no-c-format
 msgid "Big Icons"
 msgstr "Пиктограммаҳои калон"
 
 #. i18n: file ./editor/preferences.ui line 474
-#: rc.cpp:586
+#: rc.cpp:592
 #, no-c-format
 msgid "Big icons will be used in the toolbars if this is checked."
 msgstr ""
@@ -3145,19 +3188,19 @@ msgstr ""
 "шуда бошад."
 
 #. i18n: file ./editor/preferences.ui line 482
-#: rc.cpp:589
+#: rc.cpp:595
 #, no-c-format
 msgid "Show text lab&els"
 msgstr "Намоиши ёр&лиқи матн"
 
 #. i18n: file ./editor/preferences.ui line 485
-#: rc.cpp:592
+#: rc.cpp:598
 #, no-c-format
 msgid "Text Labels"
 msgstr "Ёрлиқҳои матн"
 
 #. i18n: file ./editor/preferences.ui line 488
-#: rc.cpp:595
+#: rc.cpp:601
 #, no-c-format
 msgid "Text labels will be usin in the toolbars if this is checked."
 msgstr ""
@@ -3166,13 +3209,13 @@ msgstr ""
 "бошад."
 
 #. i18n: file ./editor/listvieweditor.ui line 35
-#: rc.cpp:613
+#: rc.cpp:619
 #, no-c-format
 msgid "Edit Listview"
 msgstr "Таъғири рӯйхати намоиш"
 
 #. i18n: file ./editor/listvieweditor.ui line 41
-#: rc.cpp:616
+#: rc.cpp:622
 #, no-c-format
 msgid ""
 "<b>Edit Listview</b>"
@@ -3201,7 +3244,7 @@ msgstr ""
 "намоед.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 85
-#: rc.cpp:628
+#: rc.cpp:634
 #, no-c-format
 msgid "<b>Deletes the selected item.</b><p>Any sub-items are also deleted.</p>"
 msgstr ""
@@ -3211,19 +3254,19 @@ msgstr ""
 "шудааст.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 99
-#: rc.cpp:631
+#: rc.cpp:637
 #, no-c-format
 msgid "Item &Properties"
 msgstr "Хусусиятҳои &ҷузъ"
 
 #. i18n: file ./editor/listvieweditor.ui line 116
-#: rc.cpp:634
+#: rc.cpp:640
 #, no-c-format
 msgid "Pi&xmap:"
 msgstr "Харитаи &Pix:"
 
 #. i18n: file ./editor/listvieweditor.ui line 147
-#: rc.cpp:643
+#: rc.cpp:649
 #, no-c-format
 msgid ""
 "<b>Change the text of the item.</b>"
@@ -3234,13 +3277,13 @@ msgstr ""
 "қалами интихоб шудаи мавҷуд буда.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 155
-#: rc.cpp:646
+#: rc.cpp:652
 #, no-c-format
 msgid "Change column"
 msgstr "Дигаргун кардани сутун"
 
 #. i18n: file ./editor/listvieweditor.ui line 158
-#: rc.cpp:649
+#: rc.cpp:655
 #, no-c-format
 msgid ""
 "<b>Select the current column.</b>"
@@ -3252,13 +3295,13 @@ msgstr ""
 "мавҷуд буда иваз карда мешавад</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 166
-#: rc.cpp:652
+#: rc.cpp:658
 #, no-c-format
 msgid "Colu&mn:"
 msgstr "&Сутун:"
 
 #. i18n: file ./editor/listvieweditor.ui line 214
-#: rc.cpp:662 rc.cpp:1182 rc.cpp:1242
+#: rc.cpp:668 rc.cpp:1188 rc.cpp:1248
 #, no-c-format
 msgid ""
 "<b>Delete the selected item's pixmap.</b>"
@@ -3270,7 +3313,7 @@ msgstr ""
 "интихоб карда шуда нобуд карда мешавад.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 234
-#: rc.cpp:671 rc.cpp:1191 rc.cpp:1251
+#: rc.cpp:677 rc.cpp:1197 rc.cpp:1257
 #, no-c-format
 msgid ""
 "<b>Select a pixmap file for the item.</b>"
@@ -3283,7 +3326,7 @@ msgstr ""
 "интихоб карда шудаи мавҷуд буда.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 252
-#: rc.cpp:680
+#: rc.cpp:686
 #, no-c-format
 msgid ""
 "<b>Adds a new item to the list.</b>"
@@ -3297,25 +3340,25 @@ msgstr ""
 "поёнроистифода барад.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 260
-#: rc.cpp:683 rc.cpp:996
+#: rc.cpp:689 rc.cpp:1002
 #, no-c-format
 msgid "The list of items."
 msgstr "Рӯйхати ҷузъ."
 
 #. i18n: file ./editor/listvieweditor.ui line 268
-#: rc.cpp:686
+#: rc.cpp:692
 #, no-c-format
 msgid "New &Subitem"
 msgstr "Зери&ҷузъ нест"
 
 #. i18n: file ./editor/listvieweditor.ui line 271
-#: rc.cpp:689
+#: rc.cpp:695
 #, no-c-format
 msgid "Add a subitem"
 msgstr "Иловаи зериҷузъ"
 
 #. i18n: file ./editor/listvieweditor.ui line 274
-#: rc.cpp:692
+#: rc.cpp:698
 #, no-c-format
 msgid ""
 "<b>Create a new sub-item for the selected item.</b>"
@@ -3330,13 +3373,13 @@ msgstr ""
 "автоматӣ бунёд карда мешавад.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 305
-#: rc.cpp:696 rc.cpp:798 rc.cpp:1052 rc.cpp:1153 rc.cpp:1210
+#: rc.cpp:702 rc.cpp:804 rc.cpp:1058 rc.cpp:1159 rc.cpp:1216
 #, no-c-format
 msgid "Move up"
 msgstr "Ҳаракат ба боло"
 
 #. i18n: file ./editor/listvieweditor.ui line 308
-#: rc.cpp:699
+#: rc.cpp:705
 #, no-c-format
 msgid ""
 "<b>Move the selected item up.</b>"
@@ -3348,13 +3391,13 @@ msgstr ""
 "ҷунбонда мешавад.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 322
-#: rc.cpp:703 rc.cpp:782 rc.cpp:1059 rc.cpp:1160 rc.cpp:1217
+#: rc.cpp:709 rc.cpp:788 rc.cpp:1065 rc.cpp:1166 rc.cpp:1223
 #, no-c-format
 msgid "Move down"
 msgstr "Ҳаракат ба поён"
 
 #. i18n: file ./editor/listvieweditor.ui line 325
-#: rc.cpp:706
+#: rc.cpp:712
 #, no-c-format
 msgid ""
 "<b>Move the selected item down.</b>"
@@ -3366,13 +3409,13 @@ msgstr ""
 "ҷунбонда мешавад.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 339
-#: rc.cpp:710
+#: rc.cpp:716
 #, no-c-format
 msgid "Move left"
 msgstr "Ҳаракат ба чап"
 
 #. i18n: file ./editor/listvieweditor.ui line 342
-#: rc.cpp:713
+#: rc.cpp:719
 #, no-c-format
 msgid ""
 "<b>Move the selected item one level up.</b>"
@@ -3384,13 +3427,13 @@ msgstr ""
 "мешавад.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 356
-#: rc.cpp:717
+#: rc.cpp:723
 #, no-c-format
 msgid "Move right"
 msgstr "Ҳаракат ба рост"
 
 #. i18n: file ./editor/listvieweditor.ui line 359
-#: rc.cpp:720
+#: rc.cpp:726
 #, no-c-format
 msgid ""
 "<b>Move the selected item one level down.</b>"
@@ -3402,19 +3445,19 @@ msgstr ""
 "мешавад.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 369
-#: rc.cpp:723 rc.cpp:1149
+#: rc.cpp:729 rc.cpp:1155
 #, no-c-format
 msgid "Co&lumns"
 msgstr "Су&тунҳо"
 
 #. i18n: file ./editor/listvieweditor.ui line 386
-#: rc.cpp:726
+#: rc.cpp:732
 #, no-c-format
 msgid "Column Properties"
 msgstr "Хусусиятҳои сутун"
 
 #. i18n: file ./editor/listvieweditor.ui line 437
-#: rc.cpp:739
+#: rc.cpp:745
 #, no-c-format
 msgid "Delete the pixmap of the selected column."
 msgstr ""
@@ -3422,7 +3465,7 @@ msgstr ""
 "интихобшуда."
 
 #. i18n: file ./editor/listvieweditor.ui line 457
-#: rc.cpp:748
+#: rc.cpp:754
 #, no-c-format
 msgid ""
 "<b>Select a pixmap file for the selected column.</b>"
@@ -3435,13 +3478,13 @@ msgstr ""
 "намоиш карда мешавад.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 482
-#: rc.cpp:754
+#: rc.cpp:760
 #, no-c-format
 msgid "Enter column text"
 msgstr "Сутуни матнро дохил кунед"
 
 #. i18n: file ./editor/listvieweditor.ui line 485
-#: rc.cpp:757
+#: rc.cpp:763
 #, no-c-format
 msgid ""
 "<b>Enter the text for the selected column.</b>"
@@ -3453,13 +3496,13 @@ msgstr ""
 "карда мешавад.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 493
-#: rc.cpp:760
+#: rc.cpp:766
 #, no-c-format
 msgid "Clicka&ble"
 msgstr "Пахш&шаванда"
 
 #. i18n: file ./editor/listvieweditor.ui line 496
-#: rc.cpp:763
+#: rc.cpp:769
 #, no-c-format
 msgid ""
 "If this option is checked, the selected column will react to mouse clicks on "
@@ -3470,13 +3513,13 @@ msgstr ""
 "эътино мекунад."
 
 #. i18n: file ./editor/listvieweditor.ui line 504
-#: rc.cpp:766
+#: rc.cpp:772
 #, no-c-format
 msgid "Re&sizable"
 msgstr "Аз нав андоз&шаванда"
 
 #. i18n: file ./editor/listvieweditor.ui line 507
-#: rc.cpp:769
+#: rc.cpp:775
 #, no-c-format
 msgid "The column's width will be resizeable if this option is checked."
 msgstr ""
@@ -3484,25 +3527,25 @@ msgstr ""
 "агар ин интихоб санҷида шавад."
 
 #. i18n: file ./editor/listvieweditor.ui line 517
-#: rc.cpp:772 rc.cpp:1166
+#: rc.cpp:778 rc.cpp:1172
 #, no-c-format
 msgid "&Delete Column"
 msgstr "&Нобу кардани сутун"
 
 #. i18n: file ./editor/listvieweditor.ui line 520
-#: rc.cpp:775
+#: rc.cpp:781
 #, no-c-format
 msgid "Delete column"
 msgstr "Нобуд кардани сутун"
 
 #. i18n: file ./editor/listvieweditor.ui line 523
-#: rc.cpp:778
+#: rc.cpp:784
 #, no-c-format
 msgid "Deletes the selected Column."
 msgstr "Сутуни интихобшударо нобуд кунед."
 
 #. i18n: file ./editor/listvieweditor.ui line 540
-#: rc.cpp:785
+#: rc.cpp:791
 #, no-c-format
 msgid ""
 "<b>Move the selected item down.</b>"
@@ -3514,19 +3557,19 @@ msgstr ""
 "мешавад.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 548
-#: rc.cpp:788 rc.cpp:1169
+#: rc.cpp:794 rc.cpp:1175
 #, no-c-format
 msgid "&New Column"
 msgstr "&Сутуни нав"
 
 #. i18n: file ./editor/listvieweditor.ui line 551
-#: rc.cpp:791
+#: rc.cpp:797
 #, no-c-format
 msgid "Add a Column"
 msgstr "Иловаи сутун"
 
 #. i18n: file ./editor/listvieweditor.ui line 554
-#: rc.cpp:794
+#: rc.cpp:800
 #, no-c-format
 msgid ""
 "<b>Create a new column.</b>"
@@ -3539,7 +3582,7 @@ msgstr ""
 "боло- ва поён ҷунбондаанд.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 571
-#: rc.cpp:801
+#: rc.cpp:807
 #, no-c-format
 msgid ""
 "<b>Move the selected item up.</b>"
@@ -3551,31 +3594,31 @@ msgstr ""
 "мешавад.</p>"
 
 #. i18n: file ./editor/listvieweditor.ui line 579
-#: rc.cpp:804
+#: rc.cpp:810
 #, no-c-format
 msgid "The list of columns."
 msgstr "Рӯйхати сутунҳо"
 
 #. i18n: file ./editor/paletteeditor.ui line 43
-#: rc.cpp:828
+#: rc.cpp:834
 #, no-c-format
 msgid "Edit Palette"
 msgstr "Таъғири палитра"
 
 #. i18n: file ./editor/paletteeditor.ui line 68
-#: rc.cpp:831
+#: rc.cpp:837
 #, no-c-format
 msgid "Build Palette"
 msgstr "Сохтани ранг"
 
 #. i18n: file ./editor/paletteeditor.ui line 111
-#: rc.cpp:834
+#: rc.cpp:840
 #, no-c-format
 msgid "&3D effects:"
 msgstr "&3D асарҳо:"
 
 #. i18n: file ./editor/paletteeditor.ui line 142
-#: rc.cpp:840
+#: rc.cpp:846
 #, no-c-format
 msgid "Choose the effect-color for the generated palette."
 msgstr ""
@@ -3583,13 +3626,13 @@ msgstr ""
 "шуда интихоб намоед."
 
 #. i18n: file ./editor/paletteeditor.ui line 173
-#: rc.cpp:843
+#: rc.cpp:849
 #, no-c-format
 msgid "Back&ground:"
 msgstr "Пеш&замина:"
 
 #. i18n: file ./editor/paletteeditor.ui line 204
-#: rc.cpp:849
+#: rc.cpp:855
 #, no-c-format
 msgid "Choose the background color for the generated palette."
 msgstr ""
@@ -3597,31 +3640,31 @@ msgstr ""
 "шуда интихоб намоед."
 
 #. i18n: file ./editor/paletteeditor.ui line 229
-#: rc.cpp:852
+#: rc.cpp:858
 #, no-c-format
 msgid "&Tune Palette..."
 msgstr "&Мизони ранг..."
 
 #. i18n: file ./editor/paletteeditor.ui line 247
-#: rc.cpp:855
+#: rc.cpp:861
 #, no-c-format
 msgid "Preview"
 msgstr "Пештара"
 
 #. i18n: file ./editor/listeditor.ui line 71
-#: rc.cpp:897
+#: rc.cpp:903
 #, no-c-format
 msgid "Re&name"
 msgstr "Номгузо&рии дубора"
 
 #. i18n: file ./editor/formsettings.ui line 35
-#: rc.cpp:903
+#: rc.cpp:909
 #, no-c-format
 msgid "Form Settings"
 msgstr "Шакли мизробҳо"
 
 #. i18n: file ./editor/formsettings.ui line 41
-#: rc.cpp:906
+#: rc.cpp:912
 #, no-c-format
 msgid ""
 "<b>Form Settings</b>"
@@ -3636,73 +3679,73 @@ msgstr ""
 "ва хоста намешавад.</p>"
 
 #. i18n: file ./editor/formsettings.ui line 122
-#: rc.cpp:921
+#: rc.cpp:927
 #, no-c-format
 msgid "La&youts"
 msgstr "&Тарҳбандӣ"
 
 #. i18n: file ./editor/formsettings.ui line 155
-#: rc.cpp:924
+#: rc.cpp:930
 #, no-c-format
 msgid "Default mar&gin:"
 msgstr "Ҳошия нок&ом гашт:"
 
 #. i18n: file ./editor/formsettings.ui line 166
-#: rc.cpp:927
+#: rc.cpp:933
 #, no-c-format
 msgid "D&efault spacing:"
 msgstr "Ф&осилаи бо пешфарз:"
 
 #. i18n: file ./editor/formsettings.ui line 202
-#: rc.cpp:933
+#: rc.cpp:939
 #, no-c-format
 msgid "Enter a comment about the form."
 msgstr "Шарҳи дар бораи шакл дохил кунед."
 
 #. i18n: file ./editor/formsettings.ui line 227
-#: rc.cpp:936
+#: rc.cpp:942
 #, no-c-format
 msgid "Co&mment:"
 msgstr "Ш&арҳ:"
 
 #. i18n: file ./editor/formsettings.ui line 238
-#: rc.cpp:939
+#: rc.cpp:945
 #, no-c-format
 msgid "&License:"
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 249
-#: rc.cpp:942 rc.cpp:954 rc.cpp:960
+#: rc.cpp:948 rc.cpp:960 rc.cpp:966
 #, no-c-format
 msgid "Enter your name"
 msgstr "Номи шуморо дохил кунед"
 
 #. i18n: file ./editor/formsettings.ui line 252
-#: rc.cpp:945 rc.cpp:957 rc.cpp:963
+#: rc.cpp:951 rc.cpp:963 rc.cpp:969
 #, no-c-format
 msgid "Enter your name."
 msgstr "Номи шуморо дохил кунед."
 
 #. i18n: file ./editor/formsettings.ui line 260
-#: rc.cpp:948
+#: rc.cpp:954
 #, no-c-format
 msgid "&Version:"
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 271
-#: rc.cpp:951
+#: rc.cpp:957
 #, no-c-format
 msgid "A&uthor:"
 msgstr "М&уаллиф:"
 
 #. i18n: file ./editor/listboxeditor.ui line 35
-#: rc.cpp:966
+#: rc.cpp:972
 #, no-c-format
 msgid "Edit Listbox"
 msgstr "Таъғири рӯйхати қуттӣ"
 
 #. i18n: file ./editor/listboxeditor.ui line 41
-#: rc.cpp:969
+#: rc.cpp:975
 #, no-c-format
 msgid ""
 "<b>Edit Listbox</b>"
@@ -3725,7 +3768,7 @@ msgstr ""
 "ҷунбондан тугмаро зер намоед.</p>"
 
 #. i18n: file ./editor/listboxeditor.ui line 229
-#: rc.cpp:1021
+#: rc.cpp:1027
 #, no-c-format
 msgid "Choose a pixmap file for the selected item."
 msgstr ""
@@ -3733,13 +3776,13 @@ msgstr ""
 "интихобшуда."
 
 #. i18n: file ./editor/listboxeditor.ui line 257
-#: rc.cpp:1030
+#: rc.cpp:1036
 #, no-c-format
 msgid "Change the selected item's text."
 msgstr "Матни қалами интихоб шударо иваз намоед. "
 
 #. i18n: file ./editor/listboxeditor.ui line 273
-#: rc.cpp:1039
+#: rc.cpp:1045
 #, no-c-format
 msgid "<b>Add a new item.</b><p>New items are appended to the list.</p>"
 msgstr ""
@@ -3747,13 +3790,13 @@ msgstr ""
 "<p>Такягоҳи нав ба лист замима кардан.</p>"
 
 #. i18n: file ./editor/listboxeditor.ui line 287
-#: rc.cpp:1048
+#: rc.cpp:1054
 #, no-c-format
 msgid "Delete the selected item"
 msgstr "Нобуд кардани ҷузъи интихобшуда"
 
 #. i18n: file ./editor/listboxeditor.ui line 321
-#: rc.cpp:1055
+#: rc.cpp:1061
 #, no-c-format
 msgid "Moves the selected item up."
 msgstr ""
@@ -3761,7 +3804,7 @@ msgstr ""
 "боло."
 
 #. i18n: file ./editor/listboxeditor.ui line 338
-#: rc.cpp:1062
+#: rc.cpp:1068
 #, no-c-format
 msgid "Move the selected item down."
 msgstr ""
@@ -3769,13 +3812,13 @@ msgstr ""
 "поён."
 
 #. i18n: file ./editor/multilineeditor.ui line 38
-#: rc.cpp:1065
+#: rc.cpp:1071
 #, no-c-format
 msgid "Edit Multiline Edit"
 msgstr "Тағири муҳаррири бисёрхат"
 
 #. i18n: file ./editor/multilineeditor.ui line 46
-#: rc.cpp:1068
+#: rc.cpp:1074
 #, no-c-format
 msgid ""
 "<b>Edit Multiline Edit</b>"
@@ -3788,13 +3831,13 @@ msgstr ""
 "муроҷиат намоед.</p>"
 
 #. i18n: file ./editor/multilineeditor.ui line 84
-#: rc.cpp:1074
+#: rc.cpp:1080
 #, no-c-format
 msgid "Enter your text here."
 msgstr "Матни шумо дар инҷо дохил кунед."
 
 #. i18n: file ./editor/pixmapfunction.ui line 61
-#: rc.cpp:1101
+#: rc.cpp:1107
 #, no-c-format
 msgid "&Enter arguments for loading the pixmap:"
 msgstr ""
@@ -3802,31 +3845,31 @@ msgstr ""
 "ворид намоед:"
 
 #. i18n: file ./editor/pixmapfunction.ui line 109
-#: rc.cpp:1104
+#: rc.cpp:1110
 #, no-c-format
 msgid "QPixmap("
 msgstr "Ҳаритаи QPix("
 
 #. i18n: file ./editor/pixmapfunction.ui line 573
-#: rc.cpp:1107
+#: rc.cpp:1113
 #, no-c-format
 msgid ")"
 msgstr ")"
 
 #. i18n: file ./editor/tableeditor.ui line 16
-#: rc.cpp:1119
+#: rc.cpp:1125
 #, no-c-format
 msgid "Edit Table"
 msgstr "Таъғири ҷадвал"
 
 #. i18n: file ./editor/tableeditor.ui line 34
-#: rc.cpp:1122 rc.cpp:1125
+#: rc.cpp:1128 rc.cpp:1131
 #, no-c-format
 msgid "1"
 msgstr "1"
 
 #. i18n: file ./editor/tableeditor.ui line 218
-#: rc.cpp:1156 rc.cpp:1213
+#: rc.cpp:1162 rc.cpp:1219
 #, no-c-format
 msgid ""
 "<b>Move the selected item up.</b>"
@@ -3838,7 +3881,7 @@ msgstr ""
 "мешавад.</p>"
 
 #. i18n: file ./editor/tableeditor.ui line 235
-#: rc.cpp:1163 rc.cpp:1220
+#: rc.cpp:1169 rc.cpp:1226
 #, no-c-format
 msgid ""
 "<b>Move the selected item down.</b>"
@@ -3850,73 +3893,73 @@ msgstr ""
 "мешавад.</p>"
 
 #. i18n: file ./editor/tableeditor.ui line 273
-#: rc.cpp:1172
+#: rc.cpp:1178
 #, no-c-format
 msgid "Table:"
 msgstr "Ҷадвал:"
 
 #. i18n: file ./editor/tableeditor.ui line 348
-#: rc.cpp:1194 rc.cpp:1229
+#: rc.cpp:1200 rc.cpp:1235
 #, no-c-format
 msgid "&Label:"
 msgstr "&Ёрлиқ:"
 
 #. i18n: file ./editor/tableeditor.ui line 359
-#: rc.cpp:1197 rc.cpp:1232
+#: rc.cpp:1203 rc.cpp:1238
 #, no-c-format
 msgid "Pixmap:"
 msgstr "Ҳаритаи Pix:"
 
 #. i18n: file ./editor/tableeditor.ui line 370
-#: rc.cpp:1200
+#: rc.cpp:1206
 #, no-c-format
 msgid "&Field:"
 msgstr "&Соҳа:"
 
 #. i18n: file ./editor/tableeditor.ui line 394
-#: rc.cpp:1203
+#: rc.cpp:1209
 #, no-c-format
 msgid "<no table>"
 msgstr "<ҷадвал нест>"
 
 #. i18n: file ./editor/tableeditor.ui line 406
-#: rc.cpp:1206
+#: rc.cpp:1212
 #, no-c-format
 msgid "&Rows"
 msgstr "&Қаторҳо"
 
 #. i18n: file ./editor/tableeditor.ui line 496
-#: rc.cpp:1223
+#: rc.cpp:1229
 #, no-c-format
 msgid "&New Row"
 msgstr "&Қатори нав"
 
 #. i18n: file ./editor/tableeditor.ui line 504
-#: rc.cpp:1226
+#: rc.cpp:1232
 #, no-c-format
 msgid "&Delete Row"
 msgstr "&Нобуд кардани қатор"
 
 #. i18n: file ./editor/choosewidget.ui line 16
-#: rc.cpp:1254
+#: rc.cpp:1260
 #, no-c-format
 msgid "Choose Widget"
 msgstr "Интихоби васеъкунӣ"
 
 #. i18n: file ./editor/choosewidget.ui line 118
-#: rc.cpp:1265
+#: rc.cpp:1271
 #, no-c-format
 msgid "Find:"
 msgstr "Соҳа:"
 
 #. i18n: file ./editor/connectioneditor.ui line 35
-#: rc.cpp:1268
+#: rc.cpp:1274
 #, no-c-format
 msgid "Edit Connections"
 msgstr "Таъғири алоқаҳо"
 
 #. i18n: file ./editor/connectioneditor.ui line 41
-#: rc.cpp:1271
+#: rc.cpp:1277
 #, no-c-format
 msgid ""
 "<b>Edit Connections</b>"
@@ -3937,31 +3980,31 @@ msgstr ""
 "пайвастаро -нобуд созед.</p>"
 
 #. i18n: file ./editor/connectioneditor.ui line 56
-#: rc.cpp:1274
+#: rc.cpp:1280
 #, no-c-format
 msgid "Sender"
 msgstr "Фиристанда"
 
 #. i18n: file ./editor/connectioneditor.ui line 67
-#: rc.cpp:1277
+#: rc.cpp:1283
 #, no-c-format
 msgid "Signal"
 msgstr "Сигнал"
 
 #. i18n: file ./editor/connectioneditor.ui line 78
-#: rc.cpp:1280
+#: rc.cpp:1286
 #, no-c-format
 msgid "Receiver"
 msgstr "Қабулкунанда"
 
 #. i18n: file ./editor/connectioneditor.ui line 89
-#: rc.cpp:1283
+#: rc.cpp:1289
 #, no-c-format
 msgid "Slot"
 msgstr "Такягоҳ"
 
 #. i18n: file ./editor/connectioneditor.ui line 111
-#: rc.cpp:1286
+#: rc.cpp:1292
 #, no-c-format
 msgid "Displays the connections between the sender and the receiver."
 msgstr ""
@@ -3969,7 +4012,7 @@ msgstr ""
 "фиристанда намоиш диҳед. "
 
 #. i18n: file ./editor/connectioneditor.ui line 119
-#: rc.cpp:1289
+#: rc.cpp:1295
 #, no-c-format
 msgid ""
 "<b>A list of slots for the receiver.</b>"
@@ -3985,25 +4028,25 @@ msgstr ""
 "буда интихоб карда мешавад.</b>"
 
 #. i18n: file ./editor/connectioneditor.ui line 127
-#: rc.cpp:1292
+#: rc.cpp:1298
 #, no-c-format
 msgid "Connec&tions:"
 msgstr "Алоқ&аҳо:"
 
 #. i18n: file ./editor/connectioneditor.ui line 138
-#: rc.cpp:1295
+#: rc.cpp:1301
 #, no-c-format
 msgid "Co&nnect"
 msgstr "Ало&қа кунед"
 
 #. i18n: file ./editor/connectioneditor.ui line 144
-#: rc.cpp:1298
+#: rc.cpp:1304
 #, no-c-format
 msgid "Create connection"
 msgstr "Сохтани алоқа"
 
 #. i18n: file ./editor/connectioneditor.ui line 147
-#: rc.cpp:1301
+#: rc.cpp:1307
 #, no-c-format
 msgid "Create a connection between a signal and a slot."
 msgstr ""
@@ -4011,25 +4054,25 @@ msgstr ""
 "намоед."
 
 #. i18n: file ./editor/connectioneditor.ui line 155
-#: rc.cpp:1304
+#: rc.cpp:1310
 #, no-c-format
 msgid "&Disconnect"
 msgstr "&Ҷудо кардан"
 
 #. i18n: file ./editor/connectioneditor.ui line 161
-#: rc.cpp:1307
+#: rc.cpp:1313
 #, no-c-format
 msgid "Remove the selected connection"
 msgstr "Нобуд кардани алоқаи интихобшуда"
 
 #. i18n: file ./editor/connectioneditor.ui line 164
-#: rc.cpp:1310
+#: rc.cpp:1316
 #, no-c-format
 msgid "Remove the selected connection."
 msgstr "Нобуд кардани алоқаи интихобшуда."
 
 #. i18n: file ./editor/connectioneditor.ui line 206
-#: rc.cpp:1313
+#: rc.cpp:1319
 #, no-c-format
 msgid "Displays the list of signals that the widget emits."
 msgstr ""
@@ -4037,25 +4080,25 @@ msgstr ""
 "буданд намоиш диҳед."
 
 #. i18n: file ./editor/connectioneditor.ui line 222
-#: rc.cpp:1316
+#: rc.cpp:1322
 #, no-c-format
 msgid "Si&gnals:"
 msgstr "Сиг&налҳо:"
 
 #. i18n: file ./editor/connectioneditor.ui line 262
-#: rc.cpp:1319
+#: rc.cpp:1325
 #, no-c-format
 msgid "&Slots:"
 msgstr "&Чокҳо:"
 
 #. i18n: file ./editor/templates/Tab_Dialog.ui line 37
-#: rc.cpp:1334 rc.cpp:1337 rc.cpp:1379 rc.cpp:1382
+#: rc.cpp:1340 rc.cpp:1343 rc.cpp:1385 rc.cpp:1388
 #, no-c-format
 msgid "Tab"
 msgstr "Табулясия"
 
 #. i18n: file ./editor/templates/Tab_Dialog.ui line 71
-#: rc.cpp:1343 rc.cpp:1361 rc.cpp:1367 rc.cpp:1388
+#: rc.cpp:1349 rc.cpp:1367 rc.cpp:1373 rc.cpp:1394
 #, no-c-format
 msgid "F1"
 msgstr "F1"
@@ -5102,6 +5145,9 @@ msgstr "Овехтани риштаи додашуда ба охири файл.
 #: widgets/closebutton.cpp:116
 msgid "Failed to start shell process."
 msgstr "Сар кардани ҷилди просесси кам карда шуда."
+
+#~ msgid "<qt>Library<br><b>%1</b><br>is not a Kommander plugin</qt>"
+#~ msgstr "<qt>Китобхонаи<br><b>%1</b><br>Фармондиҳандаи дароварда шудагӣ нест</qt>"
 
 #~ msgid "&Pixmaps"
 #~ msgstr "&Ҳаритаҳои Pix"
