@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
-"POT-Creation-Date: 2005-05-08 01:26+0200\n"
+"POT-Creation-Date: 2005-05-30 01:25+0200\n"
 "PO-Revision-Date: 2004-10-08 16:32-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -164,8 +164,9 @@ msgid "Firstname Lastname"
 msgstr "Ном ва Фамилия"
 
 #: koeditordetails.cpp:431
-msgid "name@domain.com"
-msgstr "name@domain.com"
+#, fuzzy
+msgid "name"
+msgstr "Ном"
 
 #: koeditordetails.cpp:503
 #, c-format
@@ -1698,18 +1699,18 @@ msgstr "Ҳузфи масъалаҳои иҷрокардашуда"
 msgid "Todo completed: %1"
 msgstr "Иҷрошави дар %1"
 
-#: koagendaview.cpp:446 koagendaview.cpp:901
+#: koagendaview.cpp:471 koagendaview.cpp:926
 #, fuzzy
 msgid "All Day"
 msgstr "Рӯз"
 
-#: koagendaview.cpp:730
+#: koagendaview.cpp:755
 msgid ""
 "_: short_weekday date (e.g. Mon 13)\n"
 "%1 %2"
 msgstr "%1 %2"
 
-#: koagendaview.cpp:1110
+#: koagendaview.cpp:1135
 msgid ""
 "A recurring incidence was moved to a different day. The recurrence settings "
 "have been updated with that move. Please check them in the incidence editor."
@@ -1717,11 +1718,11 @@ msgstr ""
 "Воқеаҳои такроршуда ба рӯзи дигар гузаронида шуд. Танзими такрорҳо бо ин қайди "
 "гузариш аз нав шуданд. Онҳоро дар низоъҳои муҳаррир тафтиш кунед."
 
-#: koagendaview.cpp:1114
+#: koagendaview.cpp:1139
 msgid "Recurrence Moved"
 msgstr "Такрор омехта шудааст"
 
-#: koagendaview.cpp:1504
+#: koagendaview.cpp:1529
 msgid "Unable to modify this to-do item, because it cannot be locked."
 msgstr ""
 
@@ -1845,157 +1846,178 @@ msgstr "Саёҳат"
 msgid "Birthday"
 msgstr "Рӯзи таваллуд"
 
-#: calendarview.cpp:261
+#: calendarview.cpp:262
 msgid ""
 "<p><em>No incidence selected</em></p><p>If you select an event or todo in "
 "KOrganizer's main view, you will see a preview of that item here.</p>"
 msgstr ""
 
-#: calendarview.cpp:413
+#: calendarview.cpp:429
 msgid "Could not load calendar '%1'."
 msgstr "Тақвимро пурбор карда нашуда истодааст %1'."
 
-#: calendarview.cpp:689
+#: calendarview.cpp:642
+msgid ""
+"The timezone setting was changed. Do you want to keep the absolute time of the "
+"items in your calendar, which will show them to be at a different time than "
+"before, or move them to be at the old time also in the new timezone?"
+msgstr ""
+
+#: calendarview.cpp:646
+msgid "Keep absolute times?"
+msgstr ""
+
+#: calendarview.cpp:647
+#, fuzzy
+msgid "Keep times"
+msgstr "вақти номуайян"
+
+#: calendarview.cpp:648
+#, fuzzy
+msgid "Move times"
+msgstr "вақти номуайян"
+
+#: calendarview.cpp:721
 msgid ""
 "The incidence \"%1\" is filtered by your current filter rules, so it will be "
 "hidden and not appear in the view."
 msgstr ""
 
-#: calendarview.cpp:692
+#: calendarview.cpp:724
 #, fuzzy
 msgid "Filter Applied"
 msgstr "Филтр фаъол карда шудааст"
 
-#: calendarview.cpp:747
+#: calendarview.cpp:779
 #, fuzzy
 msgid "The item \"%1\" will be permanently deleted."
 msgstr "Ин чизи сабт карда шуда тамоман нест карда мешавад."
 
-#: calendarview.cpp:748 calendarview.cpp:1847 calendarview.cpp:1903
-#: calendarview.cpp:1911 koeditorattachments.cpp:217 koeventeditor.cpp:408
+#: calendarview.cpp:780 calendarview.cpp:1879 calendarview.cpp:1935
+#: calendarview.cpp:1943 koeditorattachments.cpp:217 koeventeditor.cpp:408
 #: kojournaleditor.cpp:213 kotodoeditor.cpp:370
 msgid "KOrganizer Confirmation"
 msgstr "Тасдиқи KOrganizer"
 
-#: calendarview.cpp:1078
+#: calendarview.cpp:1110
 msgid ""
 "Unable to turn sub-to-do into a top-level to-do, because it cannot be locked."
 msgstr ""
 
-#: calendarview.cpp:1101
+#: calendarview.cpp:1133
 #, fuzzy
 msgid "Make sub-to-dos independent"
 msgstr "Зермасъаларо мустаъқил кардан"
 
-#: calendarview.cpp:1176
+#: calendarview.cpp:1208
 #, fuzzy
 msgid "Dissociate occurrence"
 msgstr "Ҷудо кардан мисли воқеаи такрорнашуда"
 
-#: calendarview.cpp:1181
+#: calendarview.cpp:1213
 #, fuzzy
 msgid "Dissociating the occurrence failed."
 msgstr "Ҷудо кардан мисли воқеаи такрорнашуда"
 
-#: calendarview.cpp:1182 calendarview.cpp:1209
+#: calendarview.cpp:1214 calendarview.cpp:1241
 #, fuzzy
 msgid "Dissociating Failed"
 msgstr "Хатои сабт кардан."
 
-#: calendarview.cpp:1203
+#: calendarview.cpp:1235
 #, fuzzy
 msgid "Dissociate future occurrences"
 msgstr "Ҷудо кардан мисли воқеаи такрорнашуда"
 
-#: calendarview.cpp:1208
+#: calendarview.cpp:1240
 #, fuzzy
 msgid "Dissociating the future occurrences failed."
 msgstr "Ҷудо кардан мисли воқеаи такрорнашуда"
 
-#: calendarview.cpp:1225 calendarview.cpp:1327
+#: calendarview.cpp:1257 calendarview.cpp:1359
 #, fuzzy
 msgid "No incidence selected."
 msgstr "Ягон воқеа интихоб карда нашуд."
 
-#: calendarview.cpp:1333
+#: calendarview.cpp:1365
 #, fuzzy
 msgid "The incidence has no attendees."
 msgstr "Воқеа ягон муштарӣ надорад."
 
-#: calendarview.cpp:1343
+#: calendarview.cpp:1375
 msgid "Could not find your attendee entry. Please check the emails."
 msgstr ""
 "Даомади муштарии шумо ёфта намешавад. Илтимос почтаҳои электрониро тафтиш "
 "кунед."
 
-#: calendarview.cpp:1427
+#: calendarview.cpp:1459
 msgid "*.ics|ICalendars"
 msgstr "*.ics|IТақвимҳо"
 
-#: calendarview.cpp:1440
+#: calendarview.cpp:1472
 msgid "The journal entries can not be exported to a vCalendar file."
 msgstr "Даромадҳои маҷалла ба файли vТақвим содирот карда намешавад."
 
-#: calendarview.cpp:1441
+#: calendarview.cpp:1473
 msgid "Data Loss Warning"
 msgstr "Пешаки огоҳ кардани гум шудани маълумотҳо"
 
-#: actionmanager.cpp:943 calendarview.cpp:1441
+#: actionmanager.cpp:943 calendarview.cpp:1473
 msgid "Proceed"
 msgstr "Идома кардан"
 
-#: calendarview.cpp:1446
+#: calendarview.cpp:1478
 msgid "*.vcs|vCalendars"
 msgstr "*.vcs|vТақвимҳо"
 
-#: calendarview.cpp:1468
+#: calendarview.cpp:1500
 msgid "&Previous Day"
 msgstr "&Рӯзи пешина"
 
-#: calendarview.cpp:1469
+#: calendarview.cpp:1501
 msgid "&Next Day"
 msgstr "&Рӯзи оянда"
 
-#: calendarview.cpp:1471
+#: calendarview.cpp:1503
 msgid "&Previous Week"
 msgstr "&Ҳафтаи пешина"
 
-#: calendarview.cpp:1472
+#: calendarview.cpp:1504
 msgid "&Next Week"
 msgstr "&Ҳафтаи оянда"
 
-#: calendarview.cpp:1568 calendarview.cpp:1601
+#: calendarview.cpp:1600 calendarview.cpp:1633
 #, fuzzy
 msgid "No filter"
 msgstr "Истифодаи Намоиши филтр"
 
-#: calendarview.cpp:1842
+#: calendarview.cpp:1874
 msgid ""
 "The incidence \"%1\" has sub-to-dos. Do you want to delete just this item and "
 "make all its sub-to-dos independent, or delete the to-do with all its "
 "sub-to-dos?"
 msgstr ""
 
-#: calendarview.cpp:1848
+#: calendarview.cpp:1880
 #, fuzzy
 msgid "Delete Only This"
 msgstr "Узфи воқеъаҳои кӯҳна шуда"
 
-#: calendarview.cpp:1850
+#: calendarview.cpp:1882
 msgid "Deleting sub-to-dos"
 msgstr ""
 
-#: calendarview.cpp:1871
+#: calendarview.cpp:1903
 msgid ""
 "The item \"%1\" is marked read-only and cannot be deleted; it probably belongs "
 "to a read-only calendar resource."
 msgstr ""
 
-#: calendarview.cpp:1875
+#: calendarview.cpp:1907
 msgid "Removing not possible"
 msgstr ""
 
-#: calendarview.cpp:1900
+#: calendarview.cpp:1932
 #, fuzzy
 msgid ""
 "The incidence \"%1\" recurs over multiple dates; are you sure you want to "
@@ -2004,7 +2026,7 @@ msgstr ""
 "Ин воқеа баъд аз чанд вақт бармегардад. Шумо дар ҳақиқат мехоҳед ин воқеа ва "
 "такрорҳои ӯро тоза кунед?"
 
-#: calendarview.cpp:1906
+#: calendarview.cpp:1938
 #, fuzzy
 msgid ""
 "The incidence \"%1\" recurs over multiple dates. Do you want to delete only the "
@@ -2013,71 +2035,71 @@ msgstr ""
 "Ин воқеа баъд аз чанд вақт бармегардад. Шумо мехоҳед такрорҳои ӯро тоза кунед,ё "
 "фақат ҷараёни як дар %1?"
 
-#: calendarview.cpp:1911
+#: calendarview.cpp:1943
 #, fuzzy
 msgid "Delete C&urrent"
 msgstr "Нобуд кардани равон"
 
-#: calendarview.cpp:1912
+#: calendarview.cpp:1944
 #, fuzzy
 msgid "Delete &Future"
 msgstr "Нобуд кардани равон"
 
-#: calendarview.cpp:1913
+#: calendarview.cpp:1945
 #, fuzzy
 msgid "Delete &All"
 msgstr "Нест кардани %1"
 
-#: calendarview.cpp:1994
+#: calendarview.cpp:2026
 #, fuzzy
 msgid "Delete all completed to-dos?"
 msgstr "Ҳамаи масъалаҳои ба анҷом расидаро нест кардан?"
 
-#: calendarview.cpp:1994
+#: calendarview.cpp:2026
 #, fuzzy
 msgid "Purge To-dos"
 msgstr "Масъалаҳоро тоза кардан"
 
-#: calendarview.cpp:1994
+#: calendarview.cpp:2026
 msgid "Purge"
 msgstr "Тоза кардан"
 
-#: calendarview.cpp:1998
+#: calendarview.cpp:2030
 msgid "Purging completed to-dos"
 msgstr "Тоза кардани масъалаҳо ба итмом расид"
 
-#: calendarview.cpp:2013
+#: calendarview.cpp:2045
 #, fuzzy
 msgid "Unable to purge to-do items with uncompleted children."
 msgstr "Тоза кардани масъала, ки машқи нотамом дорад, муяссар карда намешавад."
 
-#: calendarview.cpp:2014
+#: calendarview.cpp:2046
 #, fuzzy
 msgid "Delete To-do"
 msgstr "Нобуд кардани масъала"
 
-#: calendarview.cpp:2040
+#: calendarview.cpp:2072
 #, fuzzy
 msgid "Unable to edit incidence: it is locked by another process."
 msgstr ""
 "Дигар кардани сабт муяссар карда намешавад. Вай бо протсеси дигар банд шудааст."
 
-#: calendarview.cpp:2073
+#: calendarview.cpp:2105
 #, fuzzy, c-format
 msgid "Unable to copy the incidence to %1."
 msgstr "Қодир ба эҷодкунии файл барои пурборкуни нестам"
 
-#: calendarview.cpp:2074
+#: calendarview.cpp:2106
 #, fuzzy
 msgid "Copying Failed"
 msgstr "Хатогӣ дар вақти пур кардан"
 
-#: calendarview.cpp:2115
+#: calendarview.cpp:2147
 #, fuzzy, c-format
 msgid "Unable to move the incidence to  %1."
 msgstr "Нигоҳ доштани ҳодиса натавонист."
 
-#: calendarview.cpp:2116
+#: calendarview.cpp:2148
 #, fuzzy
 msgid "Moving Failed"
 msgstr "Хатогӣ дар вақти пур кардан"
@@ -2086,7 +2108,7 @@ msgstr "Хатогӣ дар вақти пур кардан"
 msgid "No running instance of KMail found."
 msgstr "KMail сар дода нашудааст."
 
-#: kdatenavigator.cpp:196
+#: kdatenavigator.cpp:193
 msgid ""
 "_: start/end week number of line in date picker\n"
 "%1/%2"
@@ -2112,7 +2134,7 @@ msgstr "Соли оянда"
 msgid "Select a month"
 msgstr "Як моҳе интихоб кунед"
 
-#: komonthview.cpp:875 navigatorbar.cpp:161
+#: komonthview.cpp:877 navigatorbar.cpp:161
 #: printing/calprintdefaultplugins.cpp:463
 msgid ""
 "_: monthname year\n"
@@ -3702,43 +3724,43 @@ msgstr "Ранги воқеъоти пешфарзӣ"
 msgid "Time bar"
 msgstr "Панели вақт"
 
-#. i18n: file korganizer.kcfg line 331
+#. i18n: file korganizer.kcfg line 332
 #: rc.cpp:568 rc.cpp:901
 #, no-c-format
 msgid "Agenda view"
 msgstr "Рӯзнома"
 
-#. i18n: file korganizer.kcfg line 334
+#. i18n: file korganizer.kcfg line 335
 #: rc.cpp:571 rc.cpp:904
 #, no-c-format
 msgid "Marcus Bains line"
 msgstr "Хати вақти ҷорӣ"
 
-#. i18n: file korganizer.kcfg line 337
+#. i18n: file korganizer.kcfg line 338
 #: rc.cpp:574 rc.cpp:907
 #, no-c-format
 msgid "Month view"
 msgstr "Намоиши моҳ"
 
-#. i18n: file korganizer.kcfg line 355
+#. i18n: file korganizer.kcfg line 356
 #: rc.cpp:577 rc.cpp:910
 #, no-c-format
 msgid "Free/Busy Publish URL"
 msgstr "Истинодот барои нашри вақти машғӯлӣ"
 
-#. i18n: file korganizer.kcfg line 356
+#. i18n: file korganizer.kcfg line 357
 #: rc.cpp:580 rc.cpp:913
 #, no-c-format
 msgid "URL for publishing free/busy information"
 msgstr "Истинодот барои нашри иттилоот оиди вақти машғӯлӣ ва вақти холӣ"
 
-#. i18n: file korganizer.kcfg line 359
+#. i18n: file korganizer.kcfg line 360
 #: rc.cpp:583 rc.cpp:916
 #, no-c-format
 msgid "Free/Busy Publish User Name"
 msgstr "Номи истифодабаранда"
 
-#. i18n: file korganizer.kcfg line 360
+#. i18n: file korganizer.kcfg line 361
 #: rc.cpp:586 rc.cpp:919
 #, no-c-format
 msgid "User name for publishing free/busy information"
@@ -3746,13 +3768,13 @@ msgstr ""
 "Номи истифодабаранда, ки иттилоот оиди вақти машғулӣ ва вақти холиро нашр "
 "мекунад"
 
-#. i18n: file korganizer.kcfg line 363
+#. i18n: file korganizer.kcfg line 364
 #: rc.cpp:589 rc.cpp:922
 #, no-c-format
 msgid "Free/Busy Publish Password"
 msgstr "Гузарвожа"
 
-#. i18n: file korganizer.kcfg line 364
+#. i18n: file korganizer.kcfg line 365
 #: rc.cpp:592 rc.cpp:925
 #, no-c-format
 msgid "Password for publishing free/busy information"
@@ -3760,31 +3782,31 @@ msgstr ""
 "Гузарвожа истифодабаранда, ки иттилоот оиди вақти машғулӣ ва вақти холиро нашр "
 "мекунад"
 
-#. i18n: file korganizer.kcfg line 371
+#. i18n: file korganizer.kcfg line 372
 #: rc.cpp:595 rc.cpp:928
 #, no-c-format
 msgid "Enable Automatic Free/Busy Retrieval"
 msgstr "Худнигаҳдории маълумотҳо оиди вақти машғулӣ"
 
-#. i18n: file korganizer.kcfg line 382
+#. i18n: file korganizer.kcfg line 383
 #: rc.cpp:604 rc.cpp:937
 #, no-c-format
 msgid "Free/Busy Retrieval URL"
 msgstr "Қабули маълумотҳо оиди вақти машғулӣ"
 
-#. i18n: file korganizer.kcfg line 385
+#. i18n: file korganizer.kcfg line 386
 #: rc.cpp:607 rc.cpp:940
 #, no-c-format
 msgid "Free/Busy Retrieval User Name"
 msgstr "Номи истифодабаранда"
 
-#. i18n: file korganizer.kcfg line 388
+#. i18n: file korganizer.kcfg line 389
 #: rc.cpp:610 rc.cpp:943
 #, no-c-format
 msgid "Free/Busy Retrieval Password"
 msgstr "Гузарвожа"
 
-#. i18n: file korganizer.kcfg line 389
+#. i18n: file korganizer.kcfg line 390
 #: rc.cpp:613 rc.cpp:946
 #, no-c-format
 msgid "Password for retrieving free/busy information"
@@ -5894,6 +5916,9 @@ msgstr "Ҷудо кардани такрорҳои оянда"
 msgid "Unable to add the future items to the calendar. No change will be done."
 msgstr "Хатогӣ дар дохил кардани такрор ба тақвим. Дигаргуниҳо нашуданд."
 
+#~ msgid "name@domain.com"
+#~ msgstr "name@domain.com"
+
 #~ msgid "&Configure KOrganizer..."
 #~ msgstr "&Танзими KOrganizer..."
 
@@ -5982,9 +6007,6 @@ msgstr "Хатогӣ дар дохил кардани такрор ба тақв
 
 #~ msgid " Outgoing messages: %1 "
 #~ msgstr "Хабарҳои баровардашуда: %1"
-
-#~ msgid "no time"
-#~ msgstr "вақти номуайян"
 
 #, fuzzy
 #~ msgid "no date"
