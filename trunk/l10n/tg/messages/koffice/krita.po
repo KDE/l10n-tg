@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
-"POT-Creation-Date: 2005-06-16 01:27+0200\n"
+"POT-Creation-Date: 2005-06-17 01:30+0200\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -1045,8 +1045,8 @@ msgid "Selection Tools"
 msgstr "Асбобҳои Интихобот"
 
 #. i18n: file krita_readonly.rc line 18
-#: core/kis_docker_manager.cc:332 core/kis_view.cc:242 rc.cpp:60 rc.cpp:679
-#: rc.cpp:1379 rc.cpp:1517 rc.cpp:1550
+#: core/kis_view.cc:242 rc.cpp:60 rc.cpp:679 rc.cpp:1379 rc.cpp:1517
+#: rc.cpp:1550
 #, no-c-format
 msgid "Layer"
 msgstr "Табақа"
@@ -2025,8 +2025,8 @@ msgid "Sphere Dec."
 msgstr ""
 
 #. i18n: file ./plugins/defaultdockers/wdgautogradient.ui line 351
-#: core/kis_docker_manager.cc:500 plugins/defaultdockers/defaultdockers.cc:188
-#: rc.cpp:615 rc.cpp:897 rc.cpp:918
+#: plugins/defaultdockers/defaultdockers.cc:168 rc.cpp:615 rc.cpp:897
+#: rc.cpp:918
 #, no-c-format
 msgid "RGB"
 msgstr "RGB"
@@ -2044,7 +2044,7 @@ msgid "HSV CCW"
 msgstr "HSV"
 
 #. i18n: file ./plugins/defaultdockers/wdgtextbrush.ui line 16
-#: tools/kis_tool_text.cc:49 rc.cpp:624 rc.cpp:1172
+#: tools/kis_tool_text.cc:50 rc.cpp:624 rc.cpp:1172
 #, no-c-format
 msgid "Text"
 msgstr ""
@@ -2092,8 +2092,7 @@ msgid "Fade:"
 msgstr "Аз байн рафтан:"
 
 #. i18n: file ./plugins/defaultdockers/wdgbirdeye.ui line 24
-#: core/kis_docker_manager.cc:320 plugins/defaultdockers/defaultdockers.cc:141
-#: rc.cpp:658
+#: plugins/defaultdockers/defaultdockers.cc:121 rc.cpp:658
 #, fuzzy, no-c-format
 msgid "Overview"
 msgstr "Пешнамоиш"
@@ -2247,9 +2246,7 @@ msgid "Fill"
 msgstr "Пур кардан"
 
 #. i18n: file ./plugins/performancetest/wdg_perftest.ui line 71
-#: core/kis_docker_manager.cc:452 core/kis_docker_manager.cc:458
-#: core/kis_docker_manager.cc:463 plugins/defaultdockers/defaultdockers.cc:246
-#: rc.cpp:814
+#: plugins/defaultdockers/defaultdockers.cc:224 rc.cpp:814
 #, fuzzy, no-c-format
 msgid "Gradients"
 msgstr "Градиент:"
@@ -2267,8 +2264,7 @@ msgid "Shapes"
 msgstr "Шакл:"
 
 #. i18n: file ./plugins/performancetest/wdg_perftest.ui line 104
-#: core/kis_docker_manager.cc:230 core/kis_docker_manager.cc:280
-#: core/kis_docker_manager.cc:333 core/kis_view.cc:243 rc.cpp:823
+#: core/kis_view.cc:243 rc.cpp:823
 #, no-c-format
 msgid "Layers"
 msgstr "Табақаҳо"
@@ -3094,7 +3090,7 @@ msgstr "Иловаи ниқоб"
 msgid "Remove Mask"
 msgstr "Нест кардани Ниқоб"
 
-#: ui/kis_layerbox.cc:471
+#: ui/kis_layerbox.cc:477
 #, c-format
 msgid "Can't find %1"
 msgstr "Кофта наёфт %1"
@@ -3102,7 +3098,7 @@ msgstr "Кофта наёфт %1"
 #: plugins/defaultdockers/kis_channelview.cc:160
 #: plugins/defaultdockers/kis_channelview.cc:168
 #: plugins/defaultdockers/kis_channelview.cc:173
-#: plugins/defaultdockers/kis_channelview.cc:180 ui/kis_layerbox.cc:472
+#: plugins/defaultdockers/kis_channelview.cc:180 ui/kis_layerbox.cc:478
 msgid "Canvas"
 msgstr "Манзара"
 
@@ -3159,9 +3155,7 @@ msgstr "Чуқурӣ дар хотир бекор кардан"
 msgid "Preferences"
 msgstr "Имтиёзҳо"
 
-#: core/kis_docker_manager.cc:222 core/kis_docker_manager.cc:223
-#: core/kis_docker_manager.cc:274 core/kis_docker_manager.cc:299
-#: plugins/defaultdockers/defaultdockers.cc:123 ui/kis_dlg_preferences.cc:279
+#: ui/kis_dlg_preferences.cc:279
 msgid "General"
 msgstr "Умумӣ"
 
@@ -3229,6 +3223,21 @@ msgstr "Бардоштани табақаи равон"
 msgid "Shade or unshade the palette"
 msgstr ""
 
+#: core/kis_layer.cc:88
+#, fuzzy
+msgid "Link Layer"
+msgstr "&Пайвастани/Напайвастани Табақа"
+
+#: core/kis_layer.cc:125
+#, fuzzy
+msgid "Lock Layer"
+msgstr "Фуровардани Табақа"
+
+#: core/kis_layer.cc:162
+#, fuzzy
+msgid "Layer Opacity"
+msgstr "Норавшании нусха бардоштан"
+
 #: core/kis_doc.cc:86
 msgid "Rename Image"
 msgstr "Тасвири Номи дигар кунед"
@@ -3263,150 +3272,6 @@ msgstr "Ношаффофӣ: "
 msgid "Mode: "
 msgstr "Усул: "
 
-#: core/kis_docker_manager.cc:222 core/kis_docker_manager.cc:223
-#: core/kis_docker_manager.cc:274 core/kis_docker_manager.cc:291
-#, fuzzy
-msgid "Tools"
-msgstr "Тоза &кардани"
-
-#: core/kis_docker_manager.cc:231
-#, fuzzy
-msgid "&Layers"
-msgstr "Табақаҳо"
-
-#: core/kis_docker_manager.cc:237 core/kis_docker_manager.cc:262
-#, fuzzy
-msgid "Brush Shapes"
-msgstr "Тоза карданиҳо"
-
-#: core/kis_docker_manager.cc:238
-#, fuzzy
-msgid "&Shapes"
-msgstr "Шакл:"
-
-#: core/kis_docker_manager.cc:244 core/kis_docker_manager.cc:265
-#, fuzzy
-msgid "Fills"
-msgstr "Пур кардан"
-
-#: core/kis_docker_manager.cc:246
-#, fuzzy
-msgid "&Fills"
-msgstr "Пур кардан"
-
-#: core/kis_docker_manager.cc:252 core/kis_docker_manager.cc:277
-msgid "Color Manager"
-msgstr "Ранги роҳбар"
-
-#: core/kis_docker_manager.cc:253
-#, fuzzy
-msgid "&Colors"
-msgstr "Ранг кардан"
-
-#: core/kis_docker_manager.cc:267 core/kis_docker_manager.cc:658
-#, fuzzy
-msgid "Hide &Shapes"
-msgstr "Шакл:"
-
-#: core/kis_docker_manager.cc:268 core/kis_docker_manager.cc:644
-#, fuzzy
-msgid "Hide &Fills"
-msgstr "Пур кардан"
-
-#: core/kis_docker_manager.cc:283 core/kis_docker_manager.cc:631
-#, fuzzy
-msgid "Hide &Layers"
-msgstr "&Пинҳои кардани/Намоиши Табақа"
-
-#: core/kis_docker_manager.cc:284 core/kis_docker_manager.cc:604
-#, fuzzy
-msgid "Hide &Color Manager"
-msgstr "&Ранги роҳбар"
-
-#: core/kis_docker_manager.cc:285 core/kis_docker_manager.cc:616
-#, fuzzy
-msgid "Hide &Tool Properties"
-msgstr "&Ҳосиятҳои асбоб"
-
-#: core/kis_docker_manager.cc:292 core/kis_docker_manager.cc:671
-#, fuzzy
-msgid "Hide &Tools"
-msgstr "Тоза &кардани"
-
-#: core/kis_docker_manager.cc:363 plugins/defaultdockers/defaultdockers.cc:149
-msgid "Channels"
-msgstr "Милҳо"
-
-#: core/kis_docker_manager.cc:375 core/kis_docker_manager.cc:381
-#: core/kis_docker_manager.cc:386 plugins/defaultdockers/defaultdockers.cc:232
-msgid "Brushes"
-msgstr "Тоза карданиҳо"
-
-#: core/kis_docker_manager.cc:397 core/kis_docker_manager.cc:401
-#: core/kis_docker_manager.cc:405 plugins/defaultdockers/defaultdockers.cc:155
-msgid "Autobrush"
-msgstr "Тоза кардани худкор"
-
-#: core/kis_docker_manager.cc:412 core/kis_docker_manager.cc:416
-#: core/kis_docker_manager.cc:420 plugins/defaultdockers/defaultdockers.cc:162
-#, fuzzy
-msgid "Text Brush"
-msgstr "&Интихоби тоза кардан"
-
-#: core/kis_docker_manager.cc:431 core/kis_docker_manager.cc:436
-#: core/kis_docker_manager.cc:442 plugins/defaultdockers/defaultdockers.cc:215
-msgid "Patterns"
-msgstr "Намунаҳо"
-
-#: core/kis_docker_manager.cc:472 core/kis_docker_manager.cc:476
-#: core/kis_docker_manager.cc:480 plugins/defaultdockers/defaultdockers.cc:170
-#, fuzzy
-msgid "Autogradient"
-msgstr "Градиент:"
-
-#: core/kis_docker_manager.cc:490 plugins/defaultdockers/defaultdockers.cc:179
-msgid "HSV"
-msgstr "HSV"
-
-#: core/kis_docker_manager.cc:510 plugins/defaultdockers/defaultdockers.cc:196
-msgid "Gray"
-msgstr "Хокистариранг"
-
-#: core/kis_docker_manager.cc:520 plugins/defaultdockers/defaultdockers.cc:204
-#, fuzzy
-msgid "Palettes"
-msgstr "Намунаҳо"
-
-#: core/kis_docker_manager.cc:608
-#, fuzzy
-msgid "Show &Color Manager"
-msgstr "&Ранги роҳбар"
-
-#: core/kis_docker_manager.cc:621
-#, fuzzy
-msgid "Show &Tool Properties"
-msgstr "&Ҳосиятҳои асбоб"
-
-#: core/kis_docker_manager.cc:635
-#, fuzzy
-msgid "Show &Layers"
-msgstr "&Пинҳои кардани/Намоиши Табақа"
-
-#: core/kis_docker_manager.cc:648
-#, fuzzy
-msgid "Show &Fills"
-msgstr "Пур кардан"
-
-#: core/kis_docker_manager.cc:662
-#, fuzzy
-msgid "Show &Shapes"
-msgstr "Шакл:"
-
-#: core/kis_docker_manager.cc:675
-#, fuzzy
-msgid "Show &Tools"
-msgstr "Тоза &кардани"
-
 #: core/kis_aboutdata.h:31
 msgid "Krita"
 msgstr "Krita"
@@ -3422,7 +3287,7 @@ msgid ""
 msgstr ""
 "(c) 1999-2004 Камандаи Krita.\n"
 
-#: core/kis_fill_painter.cc:275
+#: core/kis_fill_painter.cc:276
 msgid "Making fill outline..."
 msgstr ""
 
@@ -3443,15 +3308,23 @@ msgstr "Алфа"
 msgid "alpha"
 msgstr "Алфа"
 
-#: core/kis_paint_device.cc:70
+#: core/kis_paint_device.cc:100
+msgid "Layer Visibility"
+msgstr ""
+
+#: core/kis_paint_device.cc:138
+#, fuzzy
+msgid "Layer Composite Mode"
+msgstr "Ҳолатро ташкил кардан:"
+
+#: core/kis_paint_device.cc:182
 #, fuzzy
 msgid "Moved Layer"
 msgstr "Нест кардани Табақа"
 
-#: core/kis_paint_device.cc:125
-#: plugins/colorspaceconversion/colorspaceconversion.cc:66
+#: core/kis_paint_device.cc:237
 #, fuzzy
-msgid "&Convert Layer Type..."
+msgid "Convert Layer Type"
 msgstr "&Даровардани Тасвир ҳамчун Табақа..."
 
 #: core/kis_composite_op.cc:92
@@ -3759,37 +3632,37 @@ msgstr "Масштаби Табақа..."
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
-#: core/kis_view.cc:1820
+#: core/kis_view.cc:1824
 #, fuzzy
 msgid "Insert as New Layer"
 msgstr "&Даровардани Тасвир ҳамчун Табақа..."
 
-#: core/kis_view.cc:1822
+#: core/kis_view.cc:1826
 msgid "Open in New Document"
 msgstr ""
 
-#: core/kis_view.cc:1826
+#: core/kis_view.cc:1830
 #, fuzzy
 msgid "Insert as New Layers"
 msgstr "&Даровардани Тасвир ҳамчун Табақа..."
 
-#: core/kis_view.cc:1828
+#: core/kis_view.cc:1832
 msgid "Open in New Documents"
 msgstr ""
 
-#: core/kis_view.cc:1919
+#: core/kis_view.cc:1925
 msgid "Property changes"
 msgstr "Дигаргунии ҳосиятҳо"
 
-#: core/kis_view.cc:1955 core/kis_view.cc:2002
+#: core/kis_view.cc:1961 core/kis_view.cc:2008
 msgid "Could not add layer to image."
 msgstr "Табақа ба тасвир илова кардан наметавонад."
 
-#: core/kis_view.cc:1955 core/kis_view.cc:2002
+#: core/kis_view.cc:1961 core/kis_view.cc:2008
 msgid "Layer Error"
 msgstr "Табақаи Хато"
 
-#: core/kis_view.cc:1994
+#: core/kis_view.cc:2000
 #, fuzzy
 msgid "Duplicate of '%1'"
 msgstr "Дучанда кардан"
@@ -3827,11 +3700,11 @@ msgstr "Якшавии &Табақаҳои Пайваст кардашуда"
 msgid "&Merge Layers"
 msgstr "Якшавии &Ҳама Табақаҳо"
 
-#: core/kis_gradient_painter.cc:551
+#: core/kis_gradient_painter.cc:550
 msgid "Rendering gradient..."
 msgstr ""
 
-#: core/kis_gradient_painter.cc:598
+#: core/kis_gradient_painter.cc:597
 #, fuzzy
 msgid "Anti-aliasing gradient..."
 msgstr "Параф гузоштан..."
@@ -3987,16 +3860,16 @@ msgstr "&Асбоби Калон кардан"
 msgid "Rectangle tool"
 msgstr "&Асбоби Росткунҷа"
 
-#: tools/kis_tool_colorpicker.cc:93
+#: tools/kis_tool_colorpicker.cc:96
 #, fuzzy
 msgid "Tool &Color Picker"
 msgstr "&Ранги Ҷамъкунанда"
 
-#: tools/kis_tool_colorpicker.cc:108
+#: tools/kis_tool_colorpicker.cc:111
 msgid "Color Picker"
 msgstr "Ранги ҷамъкунанда"
 
-#: tools/kis_tool_colorpicker.cc:111
+#: tools/kis_tool_colorpicker.cc:114
 msgid "Update current color"
 msgstr "Ранги равон аз нав кардан"
 
@@ -4050,21 +3923,21 @@ msgstr ""
 msgid "Ellipse tool"
 msgstr "Эллипсӣ"
 
-#: tools/kis_tool_text.cc:76
+#: tools/kis_tool_text.cc:77
 #, fuzzy
 msgid "Font Tool"
 msgstr "Градиент:"
 
-#: tools/kis_tool_text.cc:76
+#: tools/kis_tool_text.cc:77
 #, fuzzy
 msgid "Enter text:"
 msgstr "Номи даромадан:"
 
-#: tools/kis_tool_text.cc:130
+#: tools/kis_tool_text.cc:132
 msgid "Font: "
 msgstr ""
 
-#: tools/kis_tool_text.cc:152
+#: tools/kis_tool_text.cc:154
 msgid "Tool T&ext"
 msgstr ""
 
@@ -4688,6 +4561,45 @@ msgstr "Кабуд"
 msgid "Alpha"
 msgstr "Алфа"
 
+#: plugins/defaultdockers/defaultdockers.cc:129
+msgid "Channels"
+msgstr "Милҳо"
+
+#: plugins/defaultdockers/defaultdockers.cc:135
+msgid "Autobrush"
+msgstr "Тоза кардани худкор"
+
+#: plugins/defaultdockers/defaultdockers.cc:142
+#, fuzzy
+msgid "Text Brush"
+msgstr "&Интихоби тоза кардан"
+
+#: plugins/defaultdockers/defaultdockers.cc:150
+#, fuzzy
+msgid "Autogradient"
+msgstr "Градиент:"
+
+#: plugins/defaultdockers/defaultdockers.cc:159
+msgid "HSV"
+msgstr "HSV"
+
+#: plugins/defaultdockers/defaultdockers.cc:176
+msgid "Gray"
+msgstr "Хокистариранг"
+
+#: plugins/defaultdockers/defaultdockers.cc:184
+#, fuzzy
+msgid "Palettes"
+msgstr "Намунаҳо"
+
+#: plugins/defaultdockers/defaultdockers.cc:195
+msgid "Patterns"
+msgstr "Намунаҳо"
+
+#: plugins/defaultdockers/defaultdockers.cc:211
+msgid "Brushes"
+msgstr "Тоза карданиҳо"
+
 #: plugins/defaultdockers/kis_brush_chooser.cc:32
 msgid "Spacing: "
 msgstr "Фосила: "
@@ -4719,6 +4631,11 @@ msgstr "&Ҳаракат кардан"
 #: plugins/colorspaceconversion/colorspaceconversion.cc:65
 #, fuzzy
 msgid "&Convert Image Type..."
+msgstr "&Даровардани Тасвир ҳамчун Табақа..."
+
+#: plugins/colorspaceconversion/colorspaceconversion.cc:66
+#, fuzzy
+msgid "&Convert Layer Type..."
 msgstr "&Даровардани Тасвир ҳамчун Табақа..."
 
 #: plugins/colorspaceconversion/colorspaceconversion.cc:90
@@ -5176,6 +5093,85 @@ msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Tools"
+#~ msgstr "Тоза &кардани"
+
+#, fuzzy
+#~ msgid "&Layers"
+#~ msgstr "Табақаҳо"
+
+#, fuzzy
+#~ msgid "Brush Shapes"
+#~ msgstr "Тоза карданиҳо"
+
+#, fuzzy
+#~ msgid "&Shapes"
+#~ msgstr "Шакл:"
+
+#, fuzzy
+#~ msgid "Fills"
+#~ msgstr "Пур кардан"
+
+#, fuzzy
+#~ msgid "&Fills"
+#~ msgstr "Пур кардан"
+
+#~ msgid "Color Manager"
+#~ msgstr "Ранги роҳбар"
+
+#, fuzzy
+#~ msgid "&Colors"
+#~ msgstr "Ранг кардан"
+
+#, fuzzy
+#~ msgid "Hide &Shapes"
+#~ msgstr "Шакл:"
+
+#, fuzzy
+#~ msgid "Hide &Fills"
+#~ msgstr "Пур кардан"
+
+#, fuzzy
+#~ msgid "Hide &Layers"
+#~ msgstr "&Пинҳои кардани/Намоиши Табақа"
+
+#, fuzzy
+#~ msgid "Hide &Color Manager"
+#~ msgstr "&Ранги роҳбар"
+
+#, fuzzy
+#~ msgid "Hide &Tool Properties"
+#~ msgstr "&Ҳосиятҳои асбоб"
+
+#, fuzzy
+#~ msgid "Hide &Tools"
+#~ msgstr "Тоза &кардани"
+
+#, fuzzy
+#~ msgid "Show &Color Manager"
+#~ msgstr "&Ранги роҳбар"
+
+#, fuzzy
+#~ msgid "Show &Tool Properties"
+#~ msgstr "&Ҳосиятҳои асбоб"
+
+#, fuzzy
+#~ msgid "Show &Layers"
+#~ msgstr "&Пинҳои кардани/Намоиши Табақа"
+
+#, fuzzy
+#~ msgid "Show &Fills"
+#~ msgstr "Пур кардан"
+
+#, fuzzy
+#~ msgid "Show &Shapes"
+#~ msgstr "Шакл:"
+
+#, fuzzy
+#~ msgid "Show &Tools"
+#~ msgstr "Тоза &кардани"
 
 #~ msgid "Select Foreground Color..."
 #~ msgstr "Интихоби Ранги Пешзамина..."
