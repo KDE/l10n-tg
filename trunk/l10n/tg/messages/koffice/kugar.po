@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kugar\n"
-"POT-Creation-Date: 2005-06-17 01:30+0200\n"
+"POT-Creation-Date: 2005-06-18 01:30+0200\n"
 "PO-Revision-Date: 2004-08-02 20:29+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team:  Tajik\n"
@@ -83,31 +83,32 @@ msgstr "Боз кардани файл"
 msgid " Grid Size: "
 msgstr ""
 
-#: kudesigner/kudesigner_view.cpp:188 kudesigner_lib/reportheader.cpp:48
+#: kudesigner/kudesigner_view.cpp:188 kudesigner_lib/reportheader.cpp:49
 msgid "Report Header"
 msgstr "Унвони ҳисобот "
 
-#: kudesigner/kudesigner_view.cpp:190 kudesigner_lib/reportfooter.cpp:50
+#: kudesigner/kudesigner_view.cpp:190 kudesigner_lib/reportfooter.cpp:51
 msgid "Report Footer"
 msgstr "Ҷамъбасти ҳисобот"
 
-#: kudesigner/kudesigner_view.cpp:192 kudesigner_lib/pageheader.cpp:49
+#: kudesigner/kudesigner_view.cpp:192 kudesigner_lib/pageheader.cpp:50
 msgid "Page Header"
 msgstr "Унвони болоии саҳифот"
 
-#: kudesigner/kudesigner_view.cpp:194 kudesigner_lib/pagefooter.cpp:48
+#: kudesigner/kudesigner_view.cpp:194 kudesigner_lib/pagefooter.cpp:49
 msgid "Page Footer"
 msgstr "Унвони поёнии саҳифот"
 
-#: kudesigner/kudesigner_view.cpp:196 kudesigner_lib/detailheader.cpp:42
+#: kudesigner/kudesigner_view.cpp:196 kudesigner_lib/detailheader.cpp:43
 msgid "Detail Header"
 msgstr "Унвони ҷузъиёт"
 
-#: kudesigner/kudesigner_view.cpp:198 kudesigner_lib/detail.cpp:44
+#: kudesigner/kudesigner_view.cpp:198 kudesigner_lib/detail.cpp:45
+#: kudesigner_lib/detailbase.cpp:29
 msgid "Detail"
 msgstr "Ҷузъиёт"
 
-#: kudesigner/kudesigner_view.cpp:200 kudesigner_lib/detailfooter.cpp:42
+#: kudesigner/kudesigner_view.cpp:200 kudesigner_lib/detailfooter.cpp:43
 msgid "Detail Footer"
 msgstr "Ҷамбасти ҷузъиёт "
 
@@ -119,11 +120,11 @@ msgstr "Пок кардани ҷудокунӣ"
 msgid "Label"
 msgstr "Навиштаҷот"
 
-#: kudesigner/kudesigner_view.cpp:210
+#: kudesigner/kudesigner_view.cpp:210 kudesigner_lib/field.cpp:41
 msgid "Field"
 msgstr "Замина "
 
-#: kudesigner/kudesigner_view.cpp:213
+#: kudesigner/kudesigner_view.cpp:213 kudesigner_lib/specialfield.cpp:37
 msgid "Special Field"
 msgstr "Заминаи махсус"
 
@@ -132,6 +133,7 @@ msgid "Calculated Field"
 msgstr "Заминаи ҳисобкунӣ"
 
 #: kudesigner/kudesigner_view.cpp:219 kudesigner_lib/label.cpp:67
+#: kudesigner_lib/line.cpp:39
 msgid "Line"
 msgstr "Хат"
 
@@ -144,217 +146,269 @@ msgstr "Навиштаҷот"
 msgid "Grid Size"
 msgstr ""
 
-#: kudesigner_lib/calcfield.cpp:39
+#: kudesigner_lib/calcfield.cpp:40
+#, fuzzy
+msgid "Calculation"
+msgstr "Шакли ҳисоб:"
+
+#: kudesigner_lib/calcfield.cpp:41
 msgid "Count"
 msgstr ""
 
-#: kudesigner_lib/calcfield.cpp:40
+#: kudesigner_lib/calcfield.cpp:42
 msgid "Sum"
 msgstr ""
 
-#: kudesigner_lib/calcfield.cpp:41
+#: kudesigner_lib/calcfield.cpp:43
 msgid "Average"
 msgstr ""
 
-#: kudesigner_lib/calcfield.cpp:42
+#: kudesigner_lib/calcfield.cpp:44
 msgid "Variance"
 msgstr ""
 
-#: kudesigner_lib/calcfield.cpp:43
+#: kudesigner_lib/calcfield.cpp:45
 msgid "StandardDeviation"
 msgstr ""
 
-#: kudesigner_lib/calcfield.cpp:44
-msgid "Calculation type"
+#: kudesigner_lib/calcfield.cpp:46 kudesigner_lib/field.cpp:49
+#: kudesigner_lib/specialfield.cpp:41
+msgid "Type"
+msgstr ""
+
+#: kudesigner_lib/calcfield.cpp:46
+#, fuzzy
+msgid "Calculation Type"
 msgstr "Шакли ҳисоб:"
 
-#: kudesigner_lib/commdefs.cpp:35
+#: kudesigner_lib/commdefs.cpp:37
 msgid "Insert Label"
 msgstr "Гузориши навиштаҷот "
 
-#: kudesigner_lib/commdefs.cpp:37
+#: kudesigner_lib/commdefs.cpp:39
 msgid "Insert Field"
 msgstr "Гузориши замина "
 
-#: kudesigner_lib/commdefs.cpp:39
+#: kudesigner_lib/commdefs.cpp:41
 msgid "Insert Special"
 msgstr "Гузориши мавзеъот"
 
-#: kudesigner_lib/commdefs.cpp:41
+#: kudesigner_lib/commdefs.cpp:43
 msgid "Insert Calculated Field"
 msgstr "Гузориши заминаи ҳисобкунӣ "
 
-#: kudesigner_lib/commdefs.cpp:43
+#: kudesigner_lib/commdefs.cpp:45
 msgid "Insert Line"
 msgstr "Гузориши хат "
 
-#: kudesigner_lib/commdefs.cpp:46
+#: kudesigner_lib/commdefs.cpp:48
 msgid "Insert Report Item"
 msgstr "Гузориши ҷузъи ҳисобот "
 
-#: kudesigner_lib/detail.cpp:37 kudesigner_lib/detailfooter.cpp:37
-#: kudesigner_lib/detailheader.cpp:37
+#: kudesigner_lib/detail.cpp:38 kudesigner_lib/detailfooter.cpp:38
+#: kudesigner_lib/detailheader.cpp:38
 #, fuzzy
 msgid "Level"
 msgstr "Навиштаҷот"
 
-#: kudesigner_lib/detail.cpp:37 kudesigner_lib/detailfooter.cpp:37
-#: kudesigner_lib/detailheader.cpp:37
+#: kudesigner_lib/detail.cpp:38 kudesigner_lib/detailfooter.cpp:38
+#: kudesigner_lib/detailheader.cpp:38
 #, fuzzy
 msgid "Detail Level"
 msgstr "Дараҷаи ҷузъиёт"
 
-#: kudesigner_lib/field.cpp:43
+#: kudesigner_lib/field.cpp:42
+msgid "Name"
+msgstr ""
+
+#: kudesigner_lib/field.cpp:42
+msgid "Field Name"
+msgstr "Номи замина "
+
+#: kudesigner_lib/field.cpp:44
 msgid "String"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:44
+#: kudesigner_lib/field.cpp:45
 msgid "Integer"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:45
+#: kudesigner_lib/field.cpp:46
 msgid "Float"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:46 kudesigner_lib/specialfield.cpp:36
-#: kudesigner_lib/specialfield.cpp:60
+#: kudesigner_lib/field.cpp:47 kudesigner_lib/specialfield.cpp:39
+#: kudesigner_lib/specialfield.cpp:63
 msgid "Date"
 msgstr "Таърих"
 
-#: kudesigner_lib/field.cpp:47
+#: kudesigner_lib/field.cpp:48 kudesigner_lib/field.cpp:72
 #, fuzzy
 msgid "Currency"
 msgstr "Аломати асъор"
 
-#: kudesigner_lib/field.cpp:51 kudesigner_lib/specialfield.cpp:41
+#: kudesigner_lib/field.cpp:52 kudesigner_lib/specialfield.cpp:44
 msgid "m/d/y"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:52 kudesigner_lib/specialfield.cpp:42
+#: kudesigner_lib/field.cpp:53 kudesigner_lib/specialfield.cpp:45
 msgid "m-d-y"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:53 kudesigner_lib/specialfield.cpp:43
+#: kudesigner_lib/field.cpp:54 kudesigner_lib/specialfield.cpp:46
 msgid "mm/dd/y"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:54 kudesigner_lib/specialfield.cpp:44
+#: kudesigner_lib/field.cpp:55 kudesigner_lib/specialfield.cpp:47
 msgid "mm-dd-y"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:55 kudesigner_lib/specialfield.cpp:45
+#: kudesigner_lib/field.cpp:56 kudesigner_lib/specialfield.cpp:48
 msgid "m/d/yyyy"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:56 kudesigner_lib/specialfield.cpp:46
+#: kudesigner_lib/field.cpp:57 kudesigner_lib/specialfield.cpp:49
 msgid "m-d-yyyy"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:57 kudesigner_lib/specialfield.cpp:47
+#: kudesigner_lib/field.cpp:58 kudesigner_lib/specialfield.cpp:50
 msgid "mm/dd/yyyy"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:58 kudesigner_lib/specialfield.cpp:48
+#: kudesigner_lib/field.cpp:59 kudesigner_lib/specialfield.cpp:51
 msgid "mm-dd-yyyy"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:59 kudesigner_lib/specialfield.cpp:49
+#: kudesigner_lib/field.cpp:60 kudesigner_lib/specialfield.cpp:52
 msgid "yyyy/m/d"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:60 kudesigner_lib/specialfield.cpp:50
+#: kudesigner_lib/field.cpp:61 kudesigner_lib/specialfield.cpp:53
 msgid "yyyy-m-d"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:61 kudesigner_lib/specialfield.cpp:51
+#: kudesigner_lib/field.cpp:62 kudesigner_lib/specialfield.cpp:54
 msgid "dd.mm.yy"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:62 kudesigner_lib/specialfield.cpp:52
+#: kudesigner_lib/field.cpp:63 kudesigner_lib/specialfield.cpp:55
 msgid "dd.mm.yyyy"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:98 kudesigner_lib/field.cpp:101
+#: kudesigner_lib/field.cpp:66 kudesigner_lib/specialfield.cpp:57
+#, fuzzy
+msgid "Date Format"
+msgstr "Андозаи таърих"
+
+#: kudesigner_lib/field.cpp:69
+msgid "Precision"
+msgstr ""
+
+#: kudesigner_lib/field.cpp:69
+#, fuzzy
+msgid "Number of Digits After Comma"
+msgstr "Миқдори нишонаҳо баъди вергул"
+
+#: kudesigner_lib/field.cpp:72
+#, fuzzy
+msgid "Currency Symbol"
+msgstr "Аломати асъор"
+
+#: kudesigner_lib/field.cpp:74
+#, fuzzy
+msgid "Negative Value Color"
+msgstr "Ранги арзиши негативӣ"
+
+#: kudesigner_lib/field.cpp:76
+#, fuzzy
+msgid "Comma Separator"
+msgstr "Тақсимкунии вергул"
+
+#: kudesigner_lib/field.cpp:101 kudesigner_lib/field.cpp:105
 msgid "Change Field"
 msgstr "Дигаргун кунед соҳа"
 
-#: kudesigner_lib/kugartemplate.cpp:94
+#: kudesigner_lib/kugartemplate.cpp:65
+msgid "Document Settings"
+msgstr ""
+
+#: kudesigner_lib/kugartemplate.cpp:99
 #, fuzzy
 msgid "Page Size"
 msgstr "Андозаи саҳифа"
 
-#: kudesigner_lib/kugartemplate.cpp:99
+#: kudesigner_lib/kugartemplate.cpp:104
 #, fuzzy
 msgid "Page Orientation"
 msgstr "Тамоюли коғаз"
 
-#: kudesigner_lib/kugartemplate.cpp:102
+#: kudesigner_lib/kugartemplate.cpp:107
 #, fuzzy
 msgid "Top Margin"
 msgstr "Сарҳади боло"
 
-#: kudesigner_lib/kugartemplate.cpp:103
+#: kudesigner_lib/kugartemplate.cpp:108
 #, fuzzy
 msgid "Bottom Margin"
 msgstr "Сархади поён"
 
-#: kudesigner_lib/kugartemplate.cpp:104
+#: kudesigner_lib/kugartemplate.cpp:109
 #, fuzzy
 msgid "Left Margin"
 msgstr "Сарҳади чап"
 
-#: kudesigner_lib/kugartemplate.cpp:105
+#: kudesigner_lib/kugartemplate.cpp:110
 #, fuzzy
 msgid "Right Margin"
 msgstr "Сарҳади рост"
 
-#: kudesigner_lib/label.cpp:46
+#: kudesigner_lib/label.cpp:47
 msgid "Text"
 msgstr "Матн"
 
-#: kudesigner_lib/label.cpp:46
+#: kudesigner_lib/label.cpp:47
 #, fuzzy
 msgid "Text to Display"
 msgstr "Матн барои намоиш"
 
-#: kudesigner_lib/label.cpp:48
-#, fuzzy
-msgid "Background Color"
-msgstr "Ранги қафо нақша"
-
-#: kudesigner_lib/label.cpp:50
-#, fuzzy
-msgid "Foreground Color"
-msgstr "Ранги қафо нақша"
-
-#: kudesigner_lib/label.cpp:52
+#: kudesigner_lib/label.cpp:49
 msgid "Geometry"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:53
+#: kudesigner_lib/label.cpp:50
 msgid "X"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:53
+#: kudesigner_lib/label.cpp:50
 #, fuzzy
 msgid "X value"
 msgstr "Арзиш"
 
-#: kudesigner_lib/label.cpp:55
+#: kudesigner_lib/label.cpp:52
 msgid "Y"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:55
+#: kudesigner_lib/label.cpp:52
 #, fuzzy
 msgid "Y value"
 msgstr "Арзиш"
+
+#: kudesigner_lib/label.cpp:58
+#, fuzzy
+msgid "Background Color"
+msgstr "Ранги қафо нақша"
+
+#: kudesigner_lib/label.cpp:60
+#, fuzzy
+msgid "Foreground Color"
+msgstr "Ранги қафо нақша"
 
 #: kudesigner_lib/label.cpp:62 kudesigner_lib/label.cpp:67
 #, fuzzy
 msgid "Border Style"
 msgstr "Услуби сарҳад"
 
-#: kudesigner_lib/label.cpp:63 kudesigner_lib/line.cpp:46
+#: kudesigner_lib/label.cpp:63 kudesigner_lib/line.cpp:48
 msgid "Color"
 msgstr "Ранг"
 
@@ -381,11 +435,6 @@ msgid "Draw Left Border"
 msgstr ""
 
 #: kudesigner_lib/label.cpp:73
-#, fuzzy
-msgid "Rightr"
-msgstr "Сарҳади рост"
-
-#: kudesigner_lib/label.cpp:73
 msgid "Draw Right Border"
 msgstr ""
 
@@ -403,119 +452,120 @@ msgstr "Ҳарфи оила"
 msgid "Size"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:83
+#: kudesigner_lib/label.cpp:81
 msgid "Light"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:84
+#: kudesigner_lib/label.cpp:82
 msgid "Normal"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:85
+#: kudesigner_lib/label.cpp:83
 msgid "DemiBold"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:86
+#: kudesigner_lib/label.cpp:84
 msgid "Bold"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:87
+#: kudesigner_lib/label.cpp:85
 msgid "Black"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:88
+#: kudesigner_lib/label.cpp:86
 msgid "Weight"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:91
+#: kudesigner_lib/label.cpp:89
 msgid "Regular"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:99
+#: kudesigner_lib/label.cpp:97
 msgid "HAlignment"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:104
+#: kudesigner_lib/label.cpp:102
 msgid "Middle"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:106
+#: kudesigner_lib/label.cpp:104
 msgid "VAlignment"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:109
+#: kudesigner_lib/label.cpp:107
 #, fuzzy
 msgid "False"
 msgstr "Арзиш"
 
-#: kudesigner_lib/label.cpp:110
+#: kudesigner_lib/label.cpp:108
 msgid "True"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:111
+#: kudesigner_lib/label.cpp:109
 msgid "Word wrap"
 msgstr "Пӯсти калима"
 
-#: kudesigner_lib/label.cpp:238 kudesigner_lib/label.cpp:241
+#: kudesigner_lib/label.cpp:255 kudesigner_lib/label.cpp:259
 msgid "Change Label"
 msgstr "Дигаргун кардани ёрлиқ"
 
-#: kudesigner_lib/line.cpp:38
+#: kudesigner_lib/line.cpp:40
 msgid "X1"
 msgstr ""
 
-#: kudesigner_lib/line.cpp:40
+#: kudesigner_lib/line.cpp:42
 msgid "Y1"
 msgstr ""
 
-#: kudesigner_lib/line.cpp:42
+#: kudesigner_lib/line.cpp:44
 msgid "X2"
 msgstr ""
 
-#: kudesigner_lib/line.cpp:44
+#: kudesigner_lib/line.cpp:46
 msgid "Y2"
 msgstr ""
 
-#: kudesigner_lib/line.cpp:50
+#: kudesigner_lib/line.cpp:52
 #, fuzzy
 msgid "Line Style"
 msgstr "Услуби хат"
 
-#: kudesigner_lib/pagefooter.cpp:39 kudesigner_lib/pageheader.cpp:39
-#: kudesigner_lib/reportfooter.cpp:40 kudesigner_lib/reportheader.cpp:39
-msgid "First Page"
-msgstr ""
-
 #: kudesigner_lib/pagefooter.cpp:40 kudesigner_lib/pageheader.cpp:40
 #: kudesigner_lib/reportfooter.cpp:41 kudesigner_lib/reportheader.cpp:40
-msgid "Every Page"
+msgid "First Page"
 msgstr ""
 
 #: kudesigner_lib/pagefooter.cpp:41 kudesigner_lib/pageheader.cpp:41
 #: kudesigner_lib/reportfooter.cpp:42 kudesigner_lib/reportheader.cpp:41
+msgid "Every Page"
+msgstr ""
+
+#: kudesigner_lib/pagefooter.cpp:42 kudesigner_lib/pageheader.cpp:42
+#: kudesigner_lib/reportfooter.cpp:43 kudesigner_lib/reportheader.cpp:42
 msgid "Last Page"
 msgstr ""
 
-#: kudesigner_lib/pagefooter.cpp:43 kudesigner_lib/pageheader.cpp:43
-#: kudesigner_lib/reportfooter.cpp:44 kudesigner_lib/reportheader.cpp:43
+#: kudesigner_lib/pagefooter.cpp:44 kudesigner_lib/pageheader.cpp:44
+#: kudesigner_lib/reportfooter.cpp:45 kudesigner_lib/reportheader.cpp:44
 msgid "Print Frequency"
 msgstr ""
 
-#: kudesigner_lib/specialfield.cpp:37
+#: kudesigner_lib/section.cpp:29
+#, fuzzy
+msgid "Section"
+msgstr "Шӯъбаҳо"
+
+#: kudesigner_lib/specialfield.cpp:40
 #, fuzzy
 msgid "PageNumber"
 msgstr "Саҳифаи рақами"
 
-#: kudesigner_lib/specialfield.cpp:38
+#: kudesigner_lib/specialfield.cpp:41
 #, fuzzy
 msgid "Special Field Type"
 msgstr "Заминаи махсус"
 
-#: kudesigner_lib/specialfield.cpp:54
-msgid "Date format"
-msgstr "Андозаи таърих"
-
-#: kudesigner_lib/specialfield.cpp:60
+#: kudesigner_lib/specialfield.cpp:63
 msgid "PageNo"
 msgstr "Саҳифаи рақами"
 
@@ -600,6 +650,10 @@ msgid ""
 "Your emails"
 msgstr ""
 
+#, fuzzy
+#~ msgid "Rightr"
+#~ msgstr "Сарҳади рост"
+
 #~ msgid "Add Detail Header"
 #~ msgstr "Афзудани унвони ҷузъиёт"
 
@@ -678,20 +732,8 @@ msgstr ""
 #~ msgid "Field to display"
 #~ msgstr "Замина бари намоиш"
 
-#~ msgid "Field Name"
-#~ msgstr "Номи замина "
-
 #~ msgid "Data type"
 #~ msgstr "Намуди таърих"
-
-#~ msgid "Number of digits after comma"
-#~ msgstr "Миқдори нишонаҳо баъди вергул"
-
-#~ msgid "Negative value color"
-#~ msgstr "Ранги арзиши негативӣ"
-
-#~ msgid "Comma separator"
-#~ msgstr "Тақсимкунии вергул"
 
 #~ msgid "X coordinate corresponding to section"
 #~ msgstr "Координасияи X мувофиқ ба шӯъба"
