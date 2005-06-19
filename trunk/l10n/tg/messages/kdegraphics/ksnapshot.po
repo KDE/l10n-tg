@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ksnapshot\n"
-"POT-Creation-Date: 2005-05-08 01:22+0200\n"
+"POT-Creation-Date: 2005-06-19 01:30+0200\n"
 "PO-Revision-Date: 2004-08-07 09:46+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team:  Tajik\n"
@@ -126,9 +126,15 @@ msgstr "Тиреза аз таги курсори муш"
 msgid "Region"
 msgstr "Канорҳои экран"
 
-#. i18n: file ksnapshotwidget.ui line 155
+#. i18n: file ksnapshotwidget.ui line 149
 #: rc.cpp:50
 #, no-c-format
+msgid "Section of Window"
+msgstr ""
+
+#. i18n: file ksnapshotwidget.ui line 161
+#: rc.cpp:53
+#, fuzzy, no-c-format
 msgid ""
 "<qt>Using this menu, you can select from the three following snapshot modes:\n"
 "<p>\n"
@@ -139,7 +145,10 @@ msgid ""
 "<br>\n"
 "<b>Region</b> - captures only the region of the desktop that you specify. When "
 "taking a new snapshot in this mode you will be able to select any area of the "
-"screen by clicking and dragging the mouse.</p></qt>"
+"screen by clicking and dragging the mouse.</p></qt>\n"
+"<b>Section of Window</b> - captures only a section of the window. When taking a "
+"new snapshot in this mode you will be able to select any child window by moving "
+"the mouse over it.</p></qt>"
 msgstr ""
 "<qt>Дар ин менюи зерин метавонед яке аз се тартиботи гирифтани сурати экранро "
 "интихоб кунед:\n"
@@ -154,26 +163,26 @@ msgstr ""
 "дошти экранро (тугмаи мушро сар надода), ки канораи ҷудошавиро дорост, то "
 "андозаи лозимӣ вусъат диҳед.</p></qt>"
 
-#. i18n: file ksnapshotwidget.ui line 171
-#: rc.cpp:57
+#. i18n: file ksnapshotwidget.ui line 177
+#: rc.cpp:61
 #, no-c-format
 msgid "&New Snapshot"
 msgstr "&Сурати нав"
 
-#. i18n: file ksnapshotwidget.ui line 177
-#: rc.cpp:60
+#. i18n: file ksnapshotwidget.ui line 183
+#: rc.cpp:64
 #, no-c-format
 msgid "Click this button to take a new snapshot."
 msgstr "Ҳангоми пахши ин тугма, тасвири экран акс грифта мешавад."
 
-#. i18n: file ksnapshotwidget.ui line 202
-#: rc.cpp:63
+#. i18n: file ksnapshotwidget.ui line 208
+#: rc.cpp:67
 #, no-c-format
 msgid "&Save As..."
 msgstr "&Нигоҳ доштан ҳамчун..."
 
-#. i18n: file ksnapshotwidget.ui line 208
-#: rc.cpp:66
+#. i18n: file ksnapshotwidget.ui line 214
+#: rc.cpp:70
 #, no-c-format
 msgid ""
 "Click this button to save the current snapshot. To quickly save the snapshot "
@@ -186,7 +195,19 @@ msgstr ""
 "вусъатӣ эҷод карда мешавад."
 
 #. i18n: file ksnapshotwidget.ui line 222
-#: rc.cpp:72
+#: rc.cpp:73
+#, no-c-format
+msgid "&Copy to Clipboard"
+msgstr ""
+
+#. i18n: file ksnapshotwidget.ui line 228
+#: rc.cpp:76
+#, fuzzy, no-c-format
+msgid "Click this button to copy the current snapshot to the clipboard."
+msgstr "Ин кнопка имконияти чоп намудани тасвири гирифташударо низ медиҳад."
+
+#. i18n: file ksnapshotwidget.ui line 242
+#: rc.cpp:82
 #, no-c-format
 msgid "Click this button to print the current screenshot."
 msgstr "Ин кнопка имконияти чоп намудани тасвири гирифташударо низ медиҳад."
@@ -205,15 +226,15 @@ msgid ""
 "Your emails"
 msgstr "youth_opportunities@tajik.net"
 
-#: ksnapshot.cpp:109
+#: ksnapshot.cpp:102
 msgid "snapshot"
 msgstr "сурат"
 
-#: ksnapshot.cpp:127
+#: ksnapshot.cpp:120
 msgid "Quick Save Snapshot &As..."
 msgstr "Тезтар нигоҳ доштан &ҳамчун..."
 
-#: ksnapshot.cpp:128
+#: ksnapshot.cpp:121
 msgid ""
 "Save the snapshot to the file specified by the user without showing the file "
 "dialog."
@@ -221,28 +242,28 @@ msgstr ""
 "Нигоҳ доштани сурат дар файл бо номе, ки бо истифодакунанда ишора шудааст ва "
 "ғайри намоиши диалоги интихоби файл."
 
-#: ksnapshot.cpp:132
+#: ksnapshot.cpp:125
 msgid "Save Snapshot &As..."
 msgstr "Нигоҳ доштани сурат &ҳамчун..."
 
-#: ksnapshot.cpp:133
+#: ksnapshot.cpp:126
 msgid "Save the snapshot to the file specified by the user."
 msgstr ""
 "Нигоҳ доштани сурат дар файл бо номе, ки бо истифодакунанда ишора шудааст."
 
-#: ksnapshot.cpp:171
+#: ksnapshot.cpp:164
 msgid "File Exists"
 msgstr "Файл бо чунин ном аллакай мавҷуд аст"
 
-#: ksnapshot.cpp:172
+#: ksnapshot.cpp:165
 msgid "<qt>Do you really want to overwrite <b>%1</b>?</qt>"
 msgstr "<qt>Оё файл мавҷудии бо номи <b>%1</b>-ро бознависӣ кунам?</qt>"
 
-#: ksnapshot.cpp:207
+#: ksnapshot.cpp:200
 msgid "Unable to save image"
 msgstr "Наметавонам тасвирро нигоҳ дорам."
 
-#: ksnapshot.cpp:208
+#: ksnapshot.cpp:201
 #, c-format
 msgid ""
 "KSnapshot was unable to save the image to\n"
@@ -251,11 +272,11 @@ msgstr ""
 "Наметавонам тасвирро дар файли\n"
 "%1 нигоҳ дорам."
 
-#: ksnapshot.cpp:291
+#: ksnapshot.cpp:284
 msgid "Print Screenshot"
 msgstr "Чопи сурат"
 
-#: ksnapshot.cpp:430
+#: ksnapshot.cpp:437
 msgid "The screen has been successfully grabbed."
 msgstr "Тасвири экран бо мувафақият иҷро шуд."
 
