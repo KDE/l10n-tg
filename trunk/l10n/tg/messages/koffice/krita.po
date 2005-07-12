@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
-"POT-Creation-Date: 2005-07-11 01:33+0200\n"
+"POT-Creation-Date: 2005-07-12 01:33+0200\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -1153,7 +1153,7 @@ msgid "dy:"
 msgstr "dy"
 
 #. i18n: file ./ui/wdgnewimage.ui line 16
-#: core/kis_doc.cc:792 ui/kis_dlg_create_img.cc:53 rc.cpp:120
+#: core/kis_doc.cc:799 ui/kis_dlg_create_img.cc:53 rc.cpp:120
 #, no-c-format
 msgid "New Image"
 msgstr "Тасвири Нав"
@@ -3487,7 +3487,7 @@ msgstr "Норавшании нусха бардоштан"
 msgid "Rename Image"
 msgstr "Тасвири Номи дигар кунед"
 
-#: core/kis_doc.cc:238
+#: core/kis_doc.cc:243
 #, c-format
 msgid "Image %1"
 msgstr "Тасвир %1"
@@ -3730,7 +3730,7 @@ msgstr "Нусха бардоштани зард"
 msgid "Copy Black"
 msgstr "Нусха бардоштани сиёҳ"
 
-#: core/kis_composite_op.cc:134 tools/kis_tool_eraser.cc:39
+#: core/kis_composite_op.cc:134
 msgid "Erase"
 msgstr "Пок кардан"
 
@@ -4003,7 +4003,7 @@ msgstr ""
 msgid "Anti-aliasing gradient..."
 msgstr "Параф гузоштан..."
 
-#: core/paintop/kis_paintop.h:81
+#: core/paintop/kis_paintop.h:83
 msgid "Abstract PaintOp"
 msgstr ""
 
@@ -4094,20 +4094,6 @@ msgstr "Ҳаракат кардани Интихобот"
 msgid "&Pan"
 msgstr "нуқтаҳо"
 
-#: tools/kis_tool_pen.cc:42
-msgid "Pen"
-msgstr "Даста"
-
-#: tools/kis_tool_pen.cc:64
-#, fuzzy
-msgid "&Pen"
-msgstr "Даста"
-
-#: tools/kis_tool_airbrush.h:70
-#, fuzzy
-msgid "Airbrush tool"
-msgstr "&Асбоби тоза кардани ҳаво"
-
 #: tools/kis_tool_ellipse.cc:42 tools/kis_tool_ellipse.cc:129
 #, fuzzy
 msgid "Ellipse"
@@ -4128,11 +4114,11 @@ msgstr "Ранги ҷамъкунанда"
 msgid "Text tool"
 msgstr "&Асбоби Пур кардани"
 
-#: tools/kis_tool_brush.cc:42
+#: tools/kis_tool_brush.cc:43
 msgid "Brush"
 msgstr "Тоза кардан"
 
-#: tools/kis_tool_brush.cc:72
+#: tools/kis_tool_brush.cc:102
 #, fuzzy
 msgid "&Brush"
 msgstr "Тоза кардан"
@@ -4146,15 +4132,6 @@ msgstr "&Хатти"
 #, fuzzy
 msgid "&Line"
 msgstr "&Хатти"
-
-#: tools/kis_tool_airbrush.cc:44
-msgid "Airbrush"
-msgstr "Тоза кардани ҳаво"
-
-#: tools/kis_tool_airbrush.cc:88
-#, fuzzy
-msgid "&Airbrush"
-msgstr "Тоза кардани ҳаво"
 
 #: tools/kis_tool_zoom.h:74
 #, fuzzy
@@ -4188,11 +4165,6 @@ msgstr "Росткунҷа"
 #, fuzzy
 msgid "&Rectangle"
 msgstr "Росткунҷа"
-
-#: tools/kis_tool_pen.h:63
-#, fuzzy
-msgid "Pen tool"
-msgstr "&Даровардани Асбоб"
 
 #: tools/kis_tool_fill.cc:82
 #, fuzzy
@@ -4263,16 +4235,6 @@ msgstr "&Усул"
 #, fuzzy
 msgid "&Stamp (Pattern)"
 msgstr "&Асбоби Сикка (Намуна)"
-
-#: tools/kis_tool_eraser.cc:62
-#, fuzzy
-msgid "&Eraser"
-msgstr "Пок кардан"
-
-#: tools/kis_tool_eraser.h:60
-#, fuzzy
-msgid "Eraser tool"
-msgstr "&Асбоби Хат задани"
 
 #: tools/kis_tool_duplicate.cc:43
 msgid "Duplicate"
@@ -4347,7 +4309,7 @@ msgstr "Остона: "
 msgid "&Gradient"
 msgstr "Градиент:"
 
-#: tools/kis_tool_brush.h:58
+#: tools/kis_tool_brush.h:69
 #, fuzzy
 msgid "Brush tool"
 msgstr "&Асбоби тоза кардани ҳаво"
@@ -4407,8 +4369,8 @@ msgstr "Модулясия кардан"
 
 #: modules/colorspace_rgb/kis_strategy_colorspace_rgb.cc:47
 #, fuzzy
-msgid "RGB/Alpha"
-msgstr "Алфа"
+msgid "RGB/Alpha (8 bits/channel)"
+msgstr "Иловаи Мил"
 
 #: modules/colorspace_rgb/kis_strategy_colorspace_rgb.cc:49
 #: modules/colorspace_rgb_u16/kis_strategy_colorspace_rgb_u16.cc:49
@@ -4538,6 +4500,7 @@ msgid "&Wet Brush"
 msgstr "&Интихоби тоза кардан"
 
 #: modules/colorspace_wet/kis_colorspace_wet.cc:121
+#: modules/colorspace_wet/wet_plugin.cc:101
 msgid "Watercolors"
 msgstr ""
 
@@ -4616,20 +4579,15 @@ msgstr ""
 msgid "Adsorbed Paper Height"
 msgstr ""
 
-#: modules/colorspace_wet/wet_plugin.cc:101
-#, fuzzy
-msgid "Paints"
-msgstr "нуқтаҳо"
-
-#: modules/colorspace_wet/wet_plugin.cc:110
+#: modules/colorspace_wet/wet_plugin.cc:111
 msgid "Wetness Visualisation"
 msgstr ""
 
-#: modules/colorspace_wet/wet_plugin.cc:114
+#: modules/colorspace_wet/wet_plugin.cc:115
 msgid "Initialize Texture"
 msgstr ""
 
-#: modules/colorspace_wet/wet_plugin.cc:119
+#: modules/colorspace_wet/wet_plugin.cc:120
 msgid "Dry the paint (25 times)"
 msgstr ""
 
@@ -4642,7 +4600,7 @@ msgid "Watercolor physics simulation filter"
 msgstr ""
 
 #: modules/colorspace_rgb_u16/kis_strategy_colorspace_rgb_u16.cc:47
-msgid "RGB/Alpha (16-bit integer)"
+msgid "RGB/Alpha (16-bit integer/channel)"
 msgstr ""
 
 #: modules/colorspace_ws/filter/kis_ws_engine_filter.h:56
@@ -5443,6 +5401,44 @@ msgid ""
 "Your emails"
 msgstr ""
 
+#~ msgid "Pen"
+#~ msgstr "Даста"
+
+#, fuzzy
+#~ msgid "&Pen"
+#~ msgstr "Даста"
+
+#, fuzzy
+#~ msgid "Airbrush tool"
+#~ msgstr "&Асбоби тоза кардани ҳаво"
+
+#~ msgid "Airbrush"
+#~ msgstr "Тоза кардани ҳаво"
+
+#, fuzzy
+#~ msgid "&Airbrush"
+#~ msgstr "Тоза кардани ҳаво"
+
+#, fuzzy
+#~ msgid "Pen tool"
+#~ msgstr "&Даровардани Асбоб"
+
+#, fuzzy
+#~ msgid "&Eraser"
+#~ msgstr "Пок кардан"
+
+#, fuzzy
+#~ msgid "Eraser tool"
+#~ msgstr "&Асбоби Хат задани"
+
+#, fuzzy
+#~ msgid "RGB/Alpha"
+#~ msgstr "Алфа"
+
+#, fuzzy
+#~ msgid "Paints"
+#~ msgstr "нуқтаҳо"
+
 #, fuzzy
 #~ msgid "8 Bits/Channel"
 #~ msgstr "Иловаи Мил"
@@ -5912,10 +5908,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "&Color mode:"
 #~ msgstr "Ҳолатро ташкил кардан:"
-
-#, fuzzy
-#~ msgid "&Alpha channel"
-#~ msgstr "Иловаи Мил"
 
 #, fuzzy
 #~ msgid "Background:"
