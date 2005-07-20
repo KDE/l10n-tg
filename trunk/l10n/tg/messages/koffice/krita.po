@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
-"POT-Creation-Date: 2005-07-18 01:34+0200\n"
+"POT-Creation-Date: 2005-07-20 01:36+0200\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -1056,7 +1056,7 @@ msgid "Selection Tools"
 msgstr "Асбобҳои Интихобот"
 
 #. i18n: file krita_readonly.rc line 18
-#: core/kis_view.cc:252 rc.cpp:66 rc.cpp:703 rc.cpp:1416 rc.cpp:1545
+#: core/kis_view.cc:254 rc.cpp:66 rc.cpp:703 rc.cpp:1416 rc.cpp:1545
 #: rc.cpp:1569
 #, no-c-format
 msgid "Layer"
@@ -2313,7 +2313,7 @@ msgid "Shapes"
 msgstr "Шакл:"
 
 #. i18n: file ./plugins/performancetest/wdg_perftest.ui line 104
-#: core/kis_view.cc:253 rc.cpp:847
+#: core/kis_view.cc:255 rc.cpp:847
 #, no-c-format
 msgid "Layers"
 msgstr "Табақаҳо"
@@ -2723,7 +2723,7 @@ msgid "Out of Gamut"
 msgstr "Берӯн аз Gamut"
 
 #. i18n: file ./plugins/colorrange/wdg_colorrange.ui line 101
-#: core/kis_selection_manager.cc:146 core/kis_selection_manager.cc:558
+#: core/kis_selection_manager.cc:146 core/kis_selection_manager.cc:575
 #: rc.cpp:1155
 #, fuzzy, no-c-format
 msgid "&Invert"
@@ -2754,7 +2754,7 @@ msgid "&Select"
 msgstr "&Ҷудокуни"
 
 #. i18n: file ./plugins/colorrange/wdg_colorrange.ui line 226
-#: core/kis_selection_manager.cc:485 rc.cpp:1171
+#: core/kis_selection_manager.cc:502 rc.cpp:1171
 #, fuzzy, no-c-format
 msgid "&Deselect"
 msgstr "&Ҷудокуни"
@@ -3287,7 +3287,7 @@ msgstr "Кофта наёфт %1"
 msgid "Canvas"
 msgstr "Манзара"
 
-#: core/kis_view.cc:455 ui/kis_dlg_image_properties.cc:49
+#: core/kis_view.cc:457 ui/kis_dlg_image_properties.cc:49
 #, fuzzy
 msgid "Image Properties"
 msgstr "Ҳосиятҳои Табақа"
@@ -3344,7 +3344,7 @@ msgstr "Имтиёзҳо"
 msgid "General"
 msgstr "Умумӣ"
 
-#: core/kis_view.cc:481 ui/kis_dlg_paint_properties.cc:55
+#: core/kis_view.cc:483 ui/kis_dlg_paint_properties.cc:55
 msgid "Layer Properties"
 msgstr "Ҳосиятҳои Табақа"
 
@@ -3470,6 +3470,15 @@ msgstr "Тасвир %1"
 #, fuzzy
 msgid "Abstract Tool"
 msgstr "Градиент:"
+
+#: core/tool/kis_tool_dummy.h:73
+#, fuzzy
+msgid "Dummy tool"
+msgstr "&Асбоби Калон кардан"
+
+#: core/tool/kis_tool_dummy.cc:84
+msgid "&Dummy"
+msgstr ""
 
 #: core/tool/kis_tool_paint.cc:119
 msgid "Opacity: "
@@ -3739,131 +3748,135 @@ msgstr "Нусха бардоштани сиёҳ"
 msgid "Erase"
 msgstr "Пок кардан"
 
-#: core/kis_view.cc:280
+#: core/kis_view.cc:144
+msgid "Dummy"
+msgstr ""
+
+#: core/kis_view.cc:282
 msgid "Brushes and stuff"
 msgstr ""
 
-#: core/kis_view.cc:341
+#: core/kis_view.cc:343
 msgid "Zoom %1:1"
 msgstr "Калон кардан %1:1"
 
-#: core/kis_view.cc:343
+#: core/kis_view.cc:345
 #, c-format
 msgid "Zoom 1:%1"
 msgstr "Калон кардан 1:%1"
 
-#: core/kis_view.cc:362
+#: core/kis_view.cc:364
 #, fuzzy
 msgid "Selection Active"
 msgstr "Интихоб"
 
-#: core/kis_view.cc:368
+#: core/kis_view.cc:370
 #, fuzzy
 msgid "No selection"
 msgstr "Ҳаракат кардани Интихобот"
 
-#: core/kis_view.cc:381
+#: core/kis_view.cc:383
 msgid "No profile"
 msgstr ""
 
-#: core/kis_view.cc:457
+#: core/kis_view.cc:459
 #, fuzzy
 msgid "Resize Image to Size of Current Layer"
 msgstr "Санҷидани Тасвир ба Табақаи Ҳозира"
 
-#: core/kis_view.cc:462
+#: core/kis_view.cc:464
 msgid "Actual Pixels"
 msgstr ""
 
-#: core/kis_view.cc:467
+#: core/kis_view.cc:469
 msgid "&Add Layer..."
 msgstr "&Иловаи Табақа..."
 
-#: core/kis_view.cc:469
+#: core/kis_view.cc:471
 #, fuzzy
 msgid "&Object layer"
 msgstr "&Нест кардани Табақа"
 
-#: core/kis_view.cc:473
+#: core/kis_view.cc:475
 msgid "&Remove Layer"
 msgstr "&Нест кардани Табақа"
 
-#: core/kis_view.cc:474
+#: core/kis_view.cc:476
 msgid "Duplicate Layer"
 msgstr "Дучанда кардани Табақа"
 
-#: core/kis_view.cc:475
+#: core/kis_view.cc:477
 msgid "&Link/Unlink Layer"
 msgstr "&Пайвастани/Напайвастани Табақа"
 
-#: core/kis_view.cc:476
+#: core/kis_view.cc:478
 msgid "&Hide/Show Layer"
 msgstr "&Пинҳои кардани/Намоиши Табақа"
 
-#: core/kis_image.cc:1317 core/kis_view.cc:477
+#: core/kis_image.cc:1317 core/kis_view.cc:479
 msgid "Raise Layer"
 msgstr "Бардоштани Табақа"
 
-#: core/kis_image.cc:1339 core/kis_view.cc:478
+#: core/kis_image.cc:1339 core/kis_view.cc:480
 msgid "Lower Layer"
 msgstr "Фуровардани Табақа"
 
-#: core/kis_view.cc:479
+#: core/kis_view.cc:481
 msgid "Layer to Top"
 msgstr "Табақа ба Боло"
 
-#: core/kis_view.cc:480
+#: core/kis_view.cc:482
 msgid "Layer to Bottom"
 msgstr "Табақа ба Поён"
 
-#: core/kis_view.cc:482
+#: core/kis_view.cc:484
 msgid "I&nsert Image as Layer..."
 msgstr "&Даровардани Тасвир ҳамчун Табақа..."
 
-#: core/kis_view.cc:483
+#: core/kis_view.cc:485
 msgid "Save Layer as Image..."
 msgstr "Нигоҳдоштани Табақа ҳамчун Тасвир..."
 
-#: core/kis_view.cc:484
+#: core/kis_view.cc:486
 msgid "Flip on &X Axis"
 msgstr ""
 
-#: core/kis_view.cc:485
+#: core/kis_view.cc:487
 msgid "Flip on &Y Axis"
 msgstr ""
 
-#: core/kis_view.cc:488
+#: core/kis_view.cc:490
 msgid "Merge &Visible Layers"
 msgstr "Якшавии &Табақаҳои Намудор"
 
-#: core/kis_view.cc:489
+#: core/kis_view.cc:491
 msgid "Merge &Linked Layers"
 msgstr "Якшавии &Табақаҳои Пайваст кардашуда"
 
-#: core/kis_view.cc:490
+#: core/kis_view.cc:492
 #, fuzzy
 msgid "&Merge Layer"
 msgstr "Якшавии &Ҳама Табақаҳо"
 
-#: core/kis_view.cc:491
+#: core/kis_view.cc:493
 #, fuzzy
 msgid "Merge &All Layers"
 msgstr "Якшавии &Ҳама Табақаҳо"
 
-#: core/kis_view.cc:496
+#: core/kis_view.cc:498
 msgid "Show Rulers"
 msgstr ""
 
-#: core/kis_view.cc:497
+#: core/kis_view.cc:499
 #, fuzzy
 msgid "Hide Rulers"
 msgstr "&Пинҳои кардани/Намоиши Табақа"
 
-#: core/kis_view.cc:498
+#: core/kis_view.cc:500
 msgid "Shows or hides rulers."
 msgstr ""
 
-#: core/kis_view.cc:499
+#: core/kis_view.cc:501
 msgid ""
 "The rulers are the white measuring spaces top and left of the document. The "
 "rulers show the position and width of pages and of frames and can be used to "
@@ -3871,79 +3884,79 @@ msgid ""
 "<p>Uncheck this to disable the rulers from being displayed."
 msgstr ""
 
-#: core/kis_view.cc:1132
+#: core/kis_view.cc:1134
 msgid "Export Layer"
 msgstr "Содироти Табақа"
 
-#: core/kis_view.cc:1177
+#: core/kis_view.cc:1179
 msgid "Import Image"
 msgstr "Воридоти Тасвир"
 
-#: core/kis_view.cc:1242
+#: core/kis_view.cc:1244
 #, fuzzy
 msgid "Mirror Layer X"
 msgstr "Фуровардани Табақа"
 
-#: core/kis_view.cc:1264 core/kis_view.cc:1363
+#: core/kis_view.cc:1266 core/kis_view.cc:1365
 #, fuzzy
 msgid "Mirror Layer Y"
 msgstr "Фуровардани Табақа"
 
-#: core/kis_view.cc:1287
+#: core/kis_view.cc:1289
 #, fuzzy
 msgid "Scale Layer"
 msgstr "Масштаби Табақа..."
 
-#: core/kis_view.cc:1312
+#: core/kis_view.cc:1314
 #, fuzzy
 msgid "Rotate Layer"
 msgstr "&Нест кардани Табақа"
 
-#: core/kis_view.cc:1338
+#: core/kis_view.cc:1340
 #, fuzzy
 msgid "Shear layer"
 msgstr "Масштаби Табақа..."
 
-#: core/kis_view.cc:1388
+#: core/kis_view.cc:1390
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
-#: core/kis_image.cc:1481 core/kis_view.cc:1389 core/kis_view.cc:1390
+#: core/kis_image.cc:1481 core/kis_view.cc:1391 core/kis_view.cc:1392
 #, fuzzy
 msgid "Flatten Image"
 msgstr "Дучанда кардани Тасвир"
 
-#: core/kis_view.cc:1916
+#: core/kis_view.cc:1918
 #, fuzzy
 msgid "Insert as New Layer"
 msgstr "&Даровардани Тасвир ҳамчун Табақа..."
 
-#: core/kis_view.cc:1918
+#: core/kis_view.cc:1920
 msgid "Open in New Document"
 msgstr ""
 
-#: core/kis_view.cc:1922
+#: core/kis_view.cc:1924
 #, fuzzy
 msgid "Insert as New Layers"
 msgstr "&Даровардани Тасвир ҳамчун Табақа..."
 
-#: core/kis_view.cc:1924
+#: core/kis_view.cc:1926
 msgid "Open in New Documents"
 msgstr ""
 
-#: core/kis_view.cc:2016
+#: core/kis_view.cc:2018
 msgid "Property changes"
 msgstr "Дигаргунии ҳосиятҳо"
 
-#: core/kis_view.cc:2050 core/kis_view.cc:2123
+#: core/kis_view.cc:2052 core/kis_view.cc:2125
 msgid "Could not add layer to image."
 msgstr "Табақа ба тасвир илова кардан наметавонад."
 
-#: core/kis_view.cc:2050 core/kis_view.cc:2123
+#: core/kis_view.cc:2052 core/kis_view.cc:2125
 msgid "Layer Error"
 msgstr "Табақаи Хато"
 
-#: core/kis_view.cc:2115
+#: core/kis_view.cc:2117
 #, fuzzy
 msgid "Duplicate of '%1'"
 msgstr "Дучанда кардан"
@@ -4021,7 +4034,7 @@ msgstr ""
 msgid "Paste into &New Image"
 msgstr "Тасвири Нав"
 
-#: core/kis_selection_manager.cc:140 core/kis_selection_manager.cc:532
+#: core/kis_selection_manager.cc:140 core/kis_selection_manager.cc:549
 #, fuzzy
 msgid "&Reselect"
 msgstr "&Ҷудокуни"
@@ -4035,7 +4048,7 @@ msgstr "Нусха бардоштани интихобот ба табақаи �
 msgid "Cut Selection to New Layer"
 msgstr "Нусха бардоштани интихобот ба табақаи нав"
 
-#: core/kis_selection_manager.cc:167 core/kis_selection_manager.cc:613
+#: core/kis_selection_manager.cc:167 core/kis_selection_manager.cc:630
 msgid "Feather..."
 msgstr ""
 
@@ -4074,7 +4087,7 @@ msgstr ""
 msgid "Load..."
 msgstr "Бор кардан..."
 
-#: core/kis_selection_manager.cc:465
+#: core/kis_selection_manager.cc:482
 #, fuzzy
 msgid "Select &All"
 msgstr "&Ҷудокуни"
