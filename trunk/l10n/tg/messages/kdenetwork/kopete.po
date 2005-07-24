@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
-"POT-Creation-Date: 2005-07-23 01:36+0200\n"
+"POT-Creation-Date: 2005-07-24 01:36+0200\n"
 "PO-Revision-Date: 2004-10-31 15:14+0000\n"
 "Last-Translator: Abrorova <H_Abrorova@rambler.ru>\n"
 "Language-Team: Tajik\n"
@@ -384,6 +384,18 @@ msgstr ""
 msgid "Leave Offline Mode?"
 msgstr "Барпосозӣ ҳамчун &Худмухтор"
 
+#: libkopete/connectionmanager.cpp:149
+#: protocols/jabber/ui/dlgjabberchangepassword.cpp:81
+#, fuzzy
+msgid "Connect"
+msgstr "Пайвастшавӣ"
+
+#: libkopete/connectionmanager.cpp:149
+#: protocols/jabber/ui/dlgjabberchangepassword.cpp:81
+#, fuzzy
+msgid "Stay Offline"
+msgstr "Барпосозӣ ҳамчун &Худмухтор"
+
 #: libkopete/kopeteutils.cpp:38
 #, fuzzy
 msgid "You have been disconnected."
@@ -524,12 +536,15 @@ msgid "Import Address From Address Book"
 msgstr "Воридоти Суроға Аз Китоби Суроғаҳо"
 
 #: libkopete/kabcpersistence.cpp:342
-msgid "&Yes"
-msgstr "&Ҳа"
+#, fuzzy
+msgid "Use"
+msgstr "Корвандон"
 
-#: libkopete/kabcpersistence.cpp:342
-msgid "&No"
-msgstr "&Не"
+#. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 310
+#: libkopete/kabcpersistence.cpp:342 rc.cpp:2935
+#, no-c-format
+msgid "Do Not Use"
+msgstr "Истифода Набаред"
 
 #: libkopete/kabcpersistence.cpp:356
 msgid ""
@@ -1701,6 +1716,16 @@ msgstr ""
 msgid "Allow Contact?"
 msgstr "Алоқаро Иҷозат Диҳам?"
 
+#: kopete/kopeteiface.cpp:154
+#, fuzzy
+msgid "Allow"
+msgstr "&Пӯшида:"
+
+#: kopete/kopeteiface.cpp:154
+#, fuzzy
+msgid "Reject"
+msgstr "&Партофтан"
+
 #: kopete/kopeteiface.cpp:167
 msgid ""
 "An external application has attempted to add a contact using  the %1 protocol, "
@@ -1824,6 +1849,16 @@ msgid ""
 "<qt>Would you like to add <b>%1</b> to your contact list as a member of <b>"
 "%2</b>?</qt>"
 msgstr "<qt>Оё ин алоқаро ба рӯйхати алоқаҳои худ илова кардан мехоҳед?</qt>"
+
+#: kopete/contactlist/kopetecontactlistview.cpp:1001
+#: kopete/contactlist/kopetecontactlistview.cpp:1016
+#: kopete/contactlist/kopetecontactlistview.cpp:1483
+#: protocols/jabber/jabberaccount.cpp:1034
+#: protocols/oscar/aim/aimprotocol.cpp:108
+#: protocols/oscar/icq/icqprotocol.cpp:120
+#, fuzzy
+msgid "Do Not Add"
+msgstr "Истифода Набаред"
 
 #: kopete/contactlist/kopetecontactlistview.cpp:1014
 #, fuzzy
@@ -2003,7 +2038,8 @@ msgid ""
 msgstr "Дидан"
 
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 605
-#: kopete/kopeteballoon.cpp:98 rc.cpp:1998 rc.cpp:2013 rc.cpp:2031 rc.cpp:2049
+#: kopete/kopeteballoon.cpp:98 protocols/yahoo/yahoocontact.cpp:364
+#: rc.cpp:1998 rc.cpp:2013 rc.cpp:2031 rc.cpp:2049
 #, no-c-format
 msgid "Ignore"
 msgstr "Рад кардан"
@@ -7194,12 +7230,6 @@ msgstr "Агар Дастрас Бошад"
 msgid "Required"
 msgstr "Зарурат дорад"
 
-#. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 310
-#: rc.cpp:2935
-#, no-c-format
-msgid "Do Not Use"
-msgstr "Истифода Набаред"
-
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 357
 #: rc.cpp:2944
 #, fuzzy, no-c-format
@@ -9811,6 +9841,7 @@ msgid "MSN Plugin"
 msgstr "Модули MSN"
 
 #: plugins/netmeeting/netmeetinginvitation.cpp:68
+#: protocols/yahoo/yahoocontact.cpp:364
 msgid "Accept"
 msgstr "Қабул кардан"
 
@@ -10157,6 +10188,16 @@ msgstr ""
 msgid "History Plugin"
 msgstr "Модули Номнавис"
 
+#: plugins/history/historyplugin.cpp:68
+#, fuzzy
+msgid "Import && Convert"
+msgstr "Воридоти Алоқаҳо Аз Файл..."
+
+#: plugins/history/historyplugin.cpp:68
+#, fuzzy
+msgid "Do Not Import"
+msgstr "Истифода Набаред"
+
 #: plugins/history/converter.cpp:40
 msgid "Would you like to remove old history files?"
 msgstr "Оё мехоҳед, ки файлҳои кӯҳнаи файлро хориҷ кунед?"
@@ -10164,6 +10205,12 @@ msgstr "Оё мехоҳед, ки файлҳои кӯҳнаи файлро хо�
 #: plugins/history/converter.cpp:40
 msgid "History Converter"
 msgstr "Мубодилаи Номнавис"
+
+#: plugins/history/converter.cpp:40 protocols/jabber/jabberaccount.cpp:1088
+#: protocols/jabber/jabbercontact.cpp:929
+#, fuzzy
+msgid "Keep"
+msgstr "&Доштан"
 
 #: plugins/history/converter.cpp:42
 msgid "History converter"
@@ -11824,6 +11871,16 @@ msgstr ""
 msgid "Message Too Long"
 msgstr "Пайём Хеле Дароз Аст"
 
+#: protocols/sms/smsaccount.cpp:64
+#, fuzzy
+msgid "Divide"
+msgstr "Бе овоз"
+
+#: protocols/sms/smsaccount.cpp:64
+#, fuzzy
+msgid "Do Not Divide"
+msgstr "Истифода Набаред"
+
 #: protocols/sms/services/smssend.cpp:57
 msgid "No provider configured."
 msgstr "Ягон таъминкунанда танзим нашудааст."
@@ -13449,6 +13506,17 @@ msgstr ""
 msgid "No Yahoo Addressbook Entry Found"
 msgstr "Сабти Нави Китоби Суроғаҳо"
 
+#: protocols/yahoo/kyahoo.cpp:654
+#, fuzzy
+msgid "Create Entry"
+msgstr "Офаридани &Сабти Нав..."
+
+#: protocols/winpopup/libwinpopup/libwinpopup.cpp:104
+#: protocols/yahoo/kyahoo.cpp:654
+#, fuzzy
+msgid "Do Not Create"
+msgstr "Истифода Набаред"
+
 #: protocols/yahoo/kyahoo.cpp:708
 #, fuzzy
 msgid ""
@@ -14566,11 +14634,28 @@ msgid ""
 "Should the directory be created? (May need root password)"
 msgstr ""
 
+#: protocols/winpopup/libwinpopup/libwinpopup.cpp:104
+#, fuzzy
+msgid "Create Directory"
+msgstr "Тарҷумаи бевосита"
+
 #: protocols/winpopup/libwinpopup/libwinpopup.cpp:117
 msgid ""
 "Permissions of the working directory /var/lib/winpopup/ are wrong!\n"
 "Fix? (May need root password)"
 msgstr ""
+
+#: protocols/winpopup/libwinpopup/libwinpopup.cpp:119
+#: protocols/winpopup/libwinpopup/libwinpopup.cpp:274
+#, fuzzy
+msgid "Fix"
+msgstr "Факс:"
+
+#: protocols/winpopup/libwinpopup/libwinpopup.cpp:119
+#: protocols/winpopup/libwinpopup/libwinpopup.cpp:274
+#, fuzzy
+msgid "Do Not Fix"
+msgstr "Истифода Набаред"
 
 #: protocols/winpopup/libwinpopup/libwinpopup.cpp:272
 msgid ""
@@ -14922,6 +15007,12 @@ msgstr ""
 #: protocols/groupwise/gwmessagemanager.cpp:513
 msgid "This conversation is being logged administratively."
 msgstr ""
+
+#~ msgid "&Yes"
+#~ msgstr "&Ҳа"
+
+#~ msgid "&No"
+#~ msgstr "&Не"
 
 #~ msgid "MSN Contact List Full"
 #~ msgstr "MSN Рӯйхати Алоқаҳо Пур аст"
@@ -15435,9 +15526,6 @@ msgstr ""
 
 #~ msgid "Set Out To &Lunch"
 #~ msgstr "Барпосозӣ ҳамчун ба &Хӯрокхӯрӣ рафт"
-
-#~ msgid "Set &Offline"
-#~ msgstr "Барпосозӣ ҳамчун &Худмухтор"
 
 #, fuzzy
 #~ msgid "Set &Idle"
