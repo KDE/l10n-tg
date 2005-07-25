@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quanta\n"
-"POT-Creation-Date: 2005-07-23 01:42+0200\n"
+"POT-Creation-Date: 2005-07-25 01:43+0200\n"
 "PO-Revision-Date: 2004-09-30 17:09-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -3765,7 +3765,8 @@ msgid "Project Folder"
 msgstr "Феҳристи лоиҳа"
 
 #. i18n: file ./plugins/plugineditor.ui line 32
-#: plugins/quantaplugineditor.cpp:45 rc.cpp:2555
+#: plugins/quantaplugineditor.cpp:45 plugins/quantaplugininterface.cpp:260
+#: rc.cpp:2555
 #, no-c-format
 msgid "Edit Plugins"
 msgstr "Модулҳо"
@@ -9633,6 +9634,10 @@ msgstr ""
 "Файли %1 вуҷуд надорад.\n"
 " Шумо мехоҳед ӯро аз рӯйхат тоза кунед?"
 
+#: project/project.cpp:238 src/quanta.cpp:391
+msgid "Keep"
+msgstr ""
+
 #: src/quanta.cpp:484
 msgid "Save File"
 msgstr "Нигоҳ доштани файл"
@@ -9643,6 +9648,12 @@ msgstr ""
 "<qt>Шумо мехоҳед ки файли "
 "<br><b>%1</b>"
 "<br> ба ин лоиҳа дохил кунед?</qt>"
+
+#: components/cvsservice/cvsservice.cpp:333 src/quanta.cpp:495
+#: utility/quantanetaccess.cpp:183
+#, fuzzy
+msgid "Do Not Add"
+msgstr "&Нигоҳ надоштан"
 
 #: src/quanta.cpp:558
 #, c-format
@@ -9956,6 +9967,11 @@ msgstr ""
 msgid "Review"
 msgstr "Пешнамоиш"
 
+#: src/quanta.cpp:3837
+#, fuzzy
+msgid "Do Not Review"
+msgstr "&Нигоҳ надоштан"
+
 #: src/quanta.cpp:4039 src/quanta.cpp:4716 src/quanta.cpp:4755
 msgid ""
 "The file must be saved before external preview.\n"
@@ -10262,6 +10278,11 @@ msgstr "Ярлыки файл нодуруст аст"
 msgid "<qt>Do you want to replace the existing <b>%1</b> DTD?</qt>"
 msgstr "<qt>Шумо мехоҳед ин DTD -ро иваз кунед <b>%1</b>?</qt>"
 
+#: src/dtds.cpp:865 src/dtds.cpp:897
+#, fuzzy
+msgid "Do Not Replace"
+msgstr "&Нигоҳ надоштан"
+
 #: src/dtds.cpp:875 src/dtds.cpp:919
 msgid "<qt>Use the newly loaded <b>%1</b> DTD for the current document?</qt>"
 msgstr ""
@@ -10271,6 +10292,16 @@ msgstr ""
 #: src/dtds.cpp:875 src/dtds.cpp:919
 msgid "Change DTD"
 msgstr "DTD-ро иваз кардан"
+
+#: src/dtds.cpp:875 src/dtds.cpp:919
+#, fuzzy
+msgid "Use"
+msgstr "Истифодакунанда:"
+
+#: src/dtds.cpp:875 src/dtds.cpp:919
+#, fuzzy
+msgid "Do Not Use"
+msgstr "&Нигоҳ надоштан"
 
 #: src/dtds.cpp:904
 #, fuzzy
@@ -10289,6 +10320,16 @@ msgstr "Хатогӣ дар вақти пурборкунӣ DTEP"
 #: src/dtds.cpp:908
 msgid "<qt>Autoload the <b>%1</b> DTD in the feature?</qt>"
 msgstr "<qt>Бо тарзи автоматӣ пурбор кардани ин <b>%1</b> DTD дар намуд?</qt>"
+
+#: src/dtds.cpp:908 utility/newstuff.cpp:73
+#, fuzzy
+msgid "Load"
+msgstr "Локалӣ"
+
+#: src/dtds.cpp:908
+#, fuzzy
+msgid "Do Not Load"
+msgstr "&Нигоҳ надоштан"
 
 #: src/quantaview.cpp:294 src/quantaview.cpp:300
 msgid "[modified]"
@@ -10772,6 +10813,13 @@ msgstr ""
 "<br><b>%1</b>"
 "<br>аллакай вуҷуд дорад. Онро рӯи ҳам нависед.?</qt>"
 
+#: ../lib/compatibility/knewstuff/knewstuffgeneric.cpp:135
+#: messages/messageoutput.cpp:163 project/projectprivate.cpp:895
+#: treeviews/basetreeview.cpp:1028 treeviews/templatestreeview.cpp:470
+#: utility/quantacommon.cpp:683
+msgid "Overwrite"
+msgstr "Бознависӣ"
+
 #: messages/messageoutput.cpp:168
 msgid "<qt>Cannot save log file<br><b>%1</b></qt>"
 msgstr "<qt>Файли номнавис кушода намешавад.<br><b>%1</b></qt>"
@@ -10978,6 +11026,16 @@ msgid ""
 msgstr ""
 "<qt>Файл <b>%1</b> мавҷуд налорад."
 "<br> Шумо мехоҳед аз лист ҳаракат намоед?</qt>"
+
+#: dialogs/dtepeditdlg.cpp:204
+#, fuzzy
+msgid "Save to Different File"
+msgstr "Файли номнависиро нигоҳ доштан"
+
+#: dialogs/dtepeditdlg.cpp:204
+#, fuzzy
+msgid "Do Not Save"
+msgstr "&Нигоҳ надоштан"
 
 #: dialogs/dtepeditdlg.cpp:206
 #, fuzzy
@@ -12130,11 +12188,6 @@ msgstr ""
 "<qt>Файли <b>%1</b> аллакай вуҷуд дорад."
 "<br>Шумо мехоҳед онро аз нав нависед?</qt>"
 
-#: ../lib/compatibility/knewstuff/knewstuffgeneric.cpp:135
-#: treeviews/basetreeview.cpp:1028 treeviews/templatestreeview.cpp:470
-msgid "Overwrite"
-msgstr "Бознависӣ"
-
 #: treeviews/templatestreeview.cpp:476
 msgid ""
 "<qt>Could not write to file <b>%1</b>."
@@ -12196,6 +12249,16 @@ msgstr ""
 "Шумо қолиби сайтро ба каталоге, ки ба лоиҳаи шумо тааллуқ надорад, ҷойгир "
 "кардед.\n"
 "Қолиби сайтро ба сохти каталогҳои лоиҳаи шумо копӣ кунам?"
+
+#: treeviews/templatestreeview.cpp:1067
+#, fuzzy
+msgid "Copy Folder"
+msgstr "Феҳристи Реша"
+
+#: treeviews/templatestreeview.cpp:1067
+#, fuzzy
+msgid "Do Not Copy"
+msgstr "&Нигоҳ надоштан"
 
 #: treeviews/templatestreeview.cpp:1075
 msgid ""
@@ -12689,6 +12752,15 @@ msgstr "<qt>Филтри <b>%1</b> махкам аст.<br>Онро маҷбур
 msgid "Action Not Responding"
 msgstr "Амал ҷавоб намедиҳад"
 
+#: utility/tagaction.cpp:998
+#, fuzzy
+msgid "Terminate"
+msgstr "Қолиб"
+
+#: utility/tagaction.cpp:998
+msgid "Keep Running"
+msgstr ""
+
 #: utility/quantacommon.cpp:383
 #, fuzzy
 msgid ""
@@ -12718,6 +12790,11 @@ msgstr ""
 #: utility/quantacommon.cpp:672
 msgid "Unknown Type"
 msgstr "Намуди ношинос"
+
+#: project/project.cpp:193 utility/quantacommon.cpp:672
+#, fuzzy
+msgid "Do Not Open"
+msgstr "&Нигоҳ надоштан"
 
 #: utility/quantabookmarks.cpp:88
 msgid "Set &Bookmark"
@@ -13003,6 +13080,11 @@ msgstr ""
 msgid "Event Triggered"
 msgstr "Натиҷаи роҳгузар"
 
+#: utility/qpevents.cpp:88 utility/qpevents.cpp:92
+#, fuzzy
+msgid "Execute"
+msgstr "&Иҷро шави"
+
 #: utility/qpevents.cpp:92
 msgid ""
 "<qt>An external action (<i>%1</i>) associated with an event (<i>%2</i>"
@@ -13206,6 +13288,10 @@ msgstr ""
 msgid "Invalid Plugin"
 msgstr "Плагини нодуруст"
 
+#: plugins/quantapluginconfig.cpp:68
+msgid "Do Not Apply"
+msgstr ""
+
 #: plugins/quantapluginconfig.cpp:80
 msgid "Select Plugin Folder"
 msgstr "Пӯшаи Плогинро интихоб намоед"
@@ -13241,6 +13327,11 @@ msgstr ""
 #: plugins/quantaplugininterface.cpp:260
 msgid "Invalid Plugins"
 msgstr "Плагинсҳои нодуруст"
+
+#: plugins/quantaplugininterface.cpp:260
+#, fuzzy
+msgid "Do Not Edit"
+msgstr "&Нигоҳ надоштан"
 
 #: plugins/quantaplugininterface.cpp:267
 msgid "All plugins validated successfully."
@@ -13454,12 +13545,19 @@ msgstr ""
 "<br>Тахасуси пешфарзи нав метавон дар <b>%1</b>.</qt>"
 
 #: project/projectupload.cpp:741
-msgid "Do you really want to cancel the upload?"
+#, fuzzy
+msgid "Do you really want to abort the upload?"
 msgstr "Шумо дар ҳақиқат мехоҳед бор карданро бекор кунед?"
 
 #: project/projectupload.cpp:742
-msgid "Cancel Upload"
-msgstr "Бозборкуниро бекор кунед"
+#, fuzzy
+msgid "Abort Upload"
+msgstr "Баъд аз боркунӣ"
+
+#: project/projectupload.cpp:742
+#, fuzzy
+msgid "Abort"
+msgstr "Порт:"
 
 #: project/teammembersdlg.cpp:48
 msgid "New Member"
@@ -13489,6 +13587,16 @@ msgid ""
 msgstr ""
 "<qt>Қоидаи <b>%1</b> аллакай дар <b>%2</b> таъин карда шудааст. Шумо мехоҳед, "
 "ки аъзои мавҷуд бударо дубора таъин намоед?</qt>"
+
+#: project/teammembersdlg.cpp:169
+#, fuzzy
+msgid "Reassign"
+msgstr "Сеанс"
+
+#: project/teammembersdlg.cpp:169
+#, fuzzy
+msgid "Do Not Reassign"
+msgstr "Амал ҷавоб намедиҳад"
 
 #: project/projectprivate.cpp:74
 msgid "<b>Insert Files in Project</b>"
@@ -14027,6 +14135,14 @@ msgstr "Ҳосил:"
 msgid "Old upload information found, fill out fields?"
 msgstr "Иттилоти боргири қадима ёфт шуд, заминаро пур кунам?"
 
+#: ../lib/compatibility/knewstuff/uploaddialog.cpp:116
+msgid "Fill Out Fields"
+msgstr ""
+
+#: ../lib/compatibility/knewstuff/uploaddialog.cpp:116
+msgid "Do Not Fill Out"
+msgstr ""
+
 #: ../lib/compatibility/knewstuff/uploaddialog.cpp:139
 msgid "Please put in a name."
 msgstr "Илтимос номро ворид кунед."
@@ -14399,6 +14515,9 @@ msgstr "Нигоҳ доштан &ҳамчун"
 msgid "Saves all modified files"
 msgstr ""
 
+#~ msgid "Cancel Upload"
+#~ msgstr "Бозборкуниро бекор кунед"
+
 #~ msgid "Leap"
 #~ msgstr "Ҷаҳиш"
 
@@ -14427,10 +14546,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Before Upload"
 #~ msgstr "Пеш аз бозборкунӣ"
-
-#, fuzzy
-#~ msgid "After Upload"
-#~ msgstr "Баъд аз боркунӣ"
 
 #~ msgid "KDE DocBook"
 #~ msgstr "KDE DocBook"
