@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quanta\n"
-"POT-Creation-Date: 2005-07-27 01:51+0200\n"
+"POT-Creation-Date: 2005-07-29 01:43+0200\n"
 "PO-Revision-Date: 2004-09-30 17:09-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -2481,7 +2481,7 @@ msgid "Available groups:"
 msgstr ""
 
 #. i18n: file ./dialogs/dtdselectdialog.ui line 31
-#: rc.cpp:1510 src/document.cpp:2742 src/quanta.cpp:3004
+#: rc.cpp:1510 src/document.cpp:2745 src/quanta.cpp:3004
 #, no-c-format
 msgid "DTD Selector"
 msgstr "Интихоби DTD "
@@ -3306,7 +3306,7 @@ msgid "Variable:"
 msgstr "Таъғирёбанда:"
 
 #. i18n: file ./components/debugger/debuggervariablesets.ui line 126
-#: components/debugger/variableslistview.cpp:426 rc.cpp:2281
+#: components/debugger/variableslistview.cpp:265 rc.cpp:2281
 #, no-c-format
 msgid "New value:"
 msgstr "Маънои нав:"
@@ -10068,23 +10068,23 @@ msgstr "Боздоштан"
 msgid "Annotation"
 msgstr "annotation"
 
-#: src/document.cpp:402
+#: src/document.cpp:405
 msgid "<qt>Cannot download <b>%1</b>.</qt>"
 msgstr "<qt>Пурбор карда намешавад<b>%1</b>.</qt>"
 
-#: src/document.cpp:414
+#: src/document.cpp:417
 msgid "<qt>Cannot open <b>%1</b> for reading.</qt>"
 msgstr "<qt>Кушодани <b>%1</b> барои хондан намешавад.</qt>"
 
-#: src/document.cpp:2585
+#: src/document.cpp:2588
 msgid "Change Tag & Attribute Case"
 msgstr "Дигар кардани тег & нишонаи ҷаъба"
 
-#: src/document.cpp:2604
+#: src/document.cpp:2607
 msgid "Working..."
 msgstr "Кор карда истодааст..."
 
-#: src/document.cpp:2605
+#: src/document.cpp:2608
 msgid ""
 "Changing tag and attribute case. This may take some time, depending on the "
 "document complexity."
@@ -10092,12 +10092,12 @@ msgstr ""
 "Дигар кардани тег ва нишонаи ҷаъба. Вобаста ба мураккабии санад ин метавон чанд "
 "вақт гирад."
 
-#: src/document.cpp:2802
+#: src/document.cpp:2805
 msgid "This DTD is not known for Quanta. Choose a DTD or create a new one."
 msgstr ""
 "Ин DTD барои Quanta номаълум аст. Барои эҷод кардани нав DTD -ро интихоб кунед."
 
-#: src/document.cpp:2848
+#: src/document.cpp:2851
 msgid ""
 "\"%1\" is used for \"%2\".\n"
 msgstr ""
@@ -11564,11 +11564,11 @@ msgstr "%1 Соатро иваз намедиҳад."
 msgid "%1 does not support setting the value of variables."
 msgstr "%1ба маънои алишшаванда ёри намерасонад."
 
-#: components/debugger/dbgp/quantadebuggerdbgp.cpp:302
+#: components/debugger/dbgp/quantadebuggerdbgp.cpp:312
 msgid "Unrecognized package: '%1%2'"
 msgstr ""
 
-#: components/debugger/dbgp/quantadebuggerdbgp.cpp:314
+#: components/debugger/dbgp/quantadebuggerdbgp.cpp:324
 msgid "The debugger for %1 uses an unsupported protocol version (%1)"
 msgstr ""
 
@@ -11612,6 +11612,27 @@ msgid ""
 "version"
 msgstr "Скрипт бо протокли дурусти тафсир васл намекунад"
 
+#: components/debugger/gubed/quantadebuggergubed.cpp:1132
+msgid "False"
+msgstr "Нодуруст"
+
+#: components/debugger/gubed/quantadebuggergubed.cpp:1132
+msgid "True"
+msgstr "Дуруст"
+
+#: components/debugger/gubed/quantadebuggergubed.cpp:1141
+#: components/debugger/gubed/quantadebuggergubed.cpp:1226
+msgid "<Undefined>"
+msgstr "<Undefined>"
+
+#: components/debugger/gubed/quantadebuggergubed.cpp:1230
+msgid "<Error>"
+msgstr "<Error>"
+
+#: components/debugger/gubed/quantadebuggergubed.cpp:1235
+msgid "<Unimplemented type>"
+msgstr "<Шакли иҷронашаванда>"
+
 #: components/debugger/debuggerbreakpointview.cpp:64
 #: components/debugger/variableslistview.cpp:52
 #: treeviews/tagattributetree.cpp:228
@@ -11627,28 +11648,7 @@ msgstr "Андоза"
 msgid "&Set Value"
 msgstr "&Танзими аҳамият"
 
-#: components/debugger/variableslistview.cpp:260
-msgid "False"
-msgstr "Нодуруст"
-
-#: components/debugger/variableslistview.cpp:260
-msgid "True"
-msgstr "Дуруст"
-
-#: components/debugger/variableslistview.cpp:269
-#: components/debugger/variableslistview.cpp:353
-msgid "<Undefined>"
-msgstr "<Undefined>"
-
-#: components/debugger/variableslistview.cpp:357
-msgid "<Error>"
-msgstr "<Error>"
-
-#: components/debugger/variableslistview.cpp:362
-msgid "<Unimplemented type>"
-msgstr "<Шакли иҷронашаванда>"
-
-#: components/debugger/variableslistview.cpp:426
+#: components/debugger/variableslistview.cpp:265
 msgid "Set Variable"
 msgstr "Дигаргуншавандаро гузоред"
 
@@ -11819,47 +11819,47 @@ msgstr "Алшшудани соаташро ишорат намоед:"
 msgid "Unable to open file %1, check your basedirs and mappings."
 msgstr ""
 
-#: components/debugger/debuggervariable.cpp:99
+#: components/debugger/debuggervariable.cpp:101
 msgid "Non scalar value"
 msgstr "Маъно надорад"
 
-#: components/debugger/debuggervariable.cpp:144
+#: components/debugger/debuggervariable.cpp:146
 msgid "Array"
 msgstr "Бо тартиб"
 
-#: components/debugger/debuggervariable.cpp:146
+#: components/debugger/debuggervariable.cpp:148
 msgid "Object"
 msgstr "Мавзӯъ"
 
-#: components/debugger/debuggervariable.cpp:148
+#: components/debugger/debuggervariable.cpp:150
 msgid "Reference"
 msgstr "Бастан"
 
-#: components/debugger/debuggervariable.cpp:150
+#: components/debugger/debuggervariable.cpp:152
 msgid "Resource"
 msgstr "Манбаъ"
 
-#: components/debugger/debuggervariable.cpp:152
+#: components/debugger/debuggervariable.cpp:154
 msgid "String"
 msgstr "Хат"
 
-#: components/debugger/debuggervariable.cpp:154
+#: components/debugger/debuggervariable.cpp:156
 msgid "Integer"
 msgstr "Адади том"
 
-#: components/debugger/debuggervariable.cpp:156
+#: components/debugger/debuggervariable.cpp:158
 msgid "Float"
 msgstr "Шиновар"
 
-#: components/debugger/debuggervariable.cpp:158
+#: components/debugger/debuggervariable.cpp:160
 msgid "Boolean"
 msgstr "Бор кардан"
 
-#: components/debugger/debuggervariable.cpp:160
+#: components/debugger/debuggervariable.cpp:162
 msgid "Undefined"
 msgstr "Номуайян"
 
-#: components/debugger/debuggervariable.cpp:164 parsers/dtd/dtdparser.cpp:83
+#: components/debugger/debuggervariable.cpp:166 parsers/dtd/dtdparser.cpp:83
 msgid "Unknown"
 msgstr "Номаълум"
 
@@ -11885,42 +11885,42 @@ msgstr "Дур&уст"
 msgid "Debugger Inactive"
 msgstr "Ғалатёби робита"
 
-#: components/debugger/debuggerui.cpp:153
+#: components/debugger/debuggerui.cpp:148
 #, fuzzy
 msgid "No session"
 msgstr "Сеанс"
 
-#: components/debugger/debuggerui.cpp:157
+#: components/debugger/debuggerui.cpp:152
 #, fuzzy
 msgid "Waiting"
 msgstr "Фосилагузорӣ"
 
-#: components/debugger/debuggerui.cpp:161
+#: components/debugger/debuggerui.cpp:156
 #, fuzzy
 msgid "Connected"
 msgstr "Мазмун"
 
-#: components/debugger/debuggerui.cpp:165
+#: components/debugger/debuggerui.cpp:160
 #, fuzzy
 msgid "Paused"
 msgstr "Таваққуф"
 
-#: components/debugger/debuggerui.cpp:169
+#: components/debugger/debuggerui.cpp:164
 #, fuzzy
 msgid "Running"
 msgstr "иттиҳод"
 
-#: components/debugger/debuggerui.cpp:173
+#: components/debugger/debuggerui.cpp:168
 #, fuzzy
 msgid "Tracing"
 msgstr "preface"
 
-#: components/debugger/debuggerui.cpp:177
+#: components/debugger/debuggerui.cpp:172
 #, fuzzy
 msgid "On error"
 msgstr "фақат хатогиҳоро намоиш додан"
 
-#: components/debugger/debuggerui.cpp:181
+#: components/debugger/debuggerui.cpp:176
 #, fuzzy
 msgid "On breakpoint"
 msgstr "Боздоштан"
