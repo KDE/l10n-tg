@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
-"POT-Creation-Date: 2005-07-21 01:38+0200\n"
+"POT-Creation-Date: 2005-08-10 10:19+0200\n"
 "PO-Revision-Date: 2004-07-30 14:42-0400\n"
 "Last-Translator: Marina Kolucheva <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -31,10 +31,11 @@ msgid ""
 "<p>This filter imports e-mails from the Mail client in Apple Mac OS X.</p>"
 msgstr ""
 
-#: filter_evolution.cxx:125 filter_evolution_v2.cxx:163 filter_mailapp.cxx:59
-#: filter_mbox.cxx:55 filter_opera.cxx:87 filter_outlook.cxx:60
-#: filter_pmail.cxx:165 filter_pmail.cxx:235 filter_pmail.cxx:253
-#: filter_pmail.cxx:294 filter_thebat.cxx:151 filter_thunderbird.cxx:161
+#: filter_evolution.cxx:125 filter_evolution_v2.cxx:163 filter_lnotes.cxx:89
+#: filter_mailapp.cxx:59 filter_mbox.cxx:55 filter_opera.cxx:87
+#: filter_outlook.cxx:60 filter_pmail.cxx:165 filter_pmail.cxx:235
+#: filter_pmail.cxx:253 filter_pmail.cxx:294 filter_thebat.cxx:151
+#: filter_thunderbird.cxx:161
 msgid "Unable to open %1, skipping"
 msgstr "Бе қобилияти дар кушодан %1,партофтан"
 
@@ -192,14 +193,19 @@ msgid "KMail Import Filters"
 msgstr "Филтерҳои импорти KMail"
 
 #: main.cpp:35
-msgid "(c) 2000-2003, The KMailCVT developers"
+#, fuzzy
+msgid "(c) 2000-2005, The KMailCVT developers"
 msgstr "(c) 2000-2003, The KMailCVT developers"
 
 #: main.cpp:36
 msgid "Original author"
 msgstr "Муаллифи ибтидоӣ"
 
-#: main.cpp:37 main.cpp:38 main.cpp:39
+#: main.cpp:37
+msgid "Maintainer & New filters"
+msgstr ""
+
+#: main.cpp:38 main.cpp:39
 msgid "New GUI & cleanups"
 msgstr "Нави GUT & тозаги"
 
@@ -319,7 +325,7 @@ msgstr "Импорти феҳриҳои почтаи UNIX ('.mbx')..."
 msgid "Importing %1"
 msgstr "Импорти %1"
 
-#: filter_pmail.cxx:279
+#: filter_lnotes.cxx:110 filter_pmail.cxx:279
 #, c-format
 msgid "Message %1"
 msgstr "Хабар %1"
@@ -528,6 +534,38 @@ msgstr "Импорти OE5+ қуттии почта %1"
 msgid "Importing OE5+ Folder file %1"
 msgstr "OE5+ПАПКА файл %1-ро аҳмият надиҳед"
 
+#: filter_lnotes.cxx:30
+#, fuzzy
+msgid "Import Lotus Notes Emails"
+msgstr "Импорт кардани хатҳои Outlook Express "
+
+#: filter_lnotes.cxx:32
+#, fuzzy
+msgid ""
+"<p><b>Lotus Notes Structured Text mail import filter</b></p>"
+"<p>This filter will import Structure Text files from an exported Lotus Notes "
+"email client into KMail. Use this filter if you want to import mails from Lotus "
+"or other mailers that use Lotus Notes' Structured Text format.</p>"
+"<p><b>Note:</b> Since it is possible to recreate the folder structure, the "
+"imported messages will be stored in subfolders named by the files they ame from "
+"under: \"Sylpheed-Import\" in your local folder.</p>"
+msgstr ""
+"<p><b>mbox филтери ворид карда шуда</b></p> "
+"<p>Ин филтер  файлҳои mbox-ро ба KMail ворид мекунад.Ин филтерро истифода баред "
+",агар ба шумо маъқул шавад почтаҳои аз Ximian Evolution ворид кунед ё дигар "
+"почтаҳои,ки анъанави UNIX форматро истифода мебаранд онҳо аз MBOX-и префикс "
+"карда шуда омаданд"
+
+#: filter_lnotes.cxx:56
+#, fuzzy
+msgid "All Files (*)"
+msgstr "Файлҳои mbox (*)"
+
+#: filter_lnotes.cxx:65
+#, fuzzy, c-format
+msgid "Importing emails from %1"
+msgstr "Импорт кардани хатҳои электрони аз %1..."
+
 #: filter_thebat.cxx:33
 #, fuzzy
 msgid "Import The Bat! Mails and Folder Structure"
@@ -544,7 +582,7 @@ msgid ""
 "stored under: \"TheBat-Import\" in your local account.</p>"
 msgstr ""
 
-#: kselfilterpage.cpp:74
+#: kselfilterpage.cpp:76
 msgid "<p><i>Written by %1.</i></p>"
 msgstr "<p><i>Навистаги %1.</i></p>"
 
