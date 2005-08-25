@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: quanta\n"
-"POT-Creation-Date: 2005-08-24 02:42+0200\n"
+"POT-Creation-Date: 2005-08-25 02:56+0200\n"
 "PO-Revision-Date: 2004-09-30 17:09-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -3380,7 +3380,7 @@ msgid "Variable:"
 msgstr "Таъғирёбанда:"
 
 #. i18n: file ./components/debugger/debuggervariablesets.ui line 126
-#: components/debugger/variableslistview.cpp:275 rc.cpp:2304
+#: components/debugger/variableslistview.cpp:279 rc.cpp:2304
 #, no-c-format
 msgid "New value:"
 msgstr "Маънои нав:"
@@ -4255,7 +4255,7 @@ msgid "You are:"
 msgstr "Номи гурӯҳ:"
 
 #. i18n: file ./project/teammembersdlgs.ui line 56
-#: rc.cpp:2820
+#: project/teammembersdlg.cpp:247 rc.cpp:2820
 #, fuzzy, no-c-format
 msgid "Please select your identity from the member list."
 msgstr ""
@@ -10996,14 +10996,14 @@ msgstr "*|Ҳамаи Файлҳо"
 msgid "Line %1: %2"
 msgstr "Сатр: %1 Сутун: %2"
 
-#: messages/annotationoutput.cpp:348
+#: messages/annotationoutput.cpp:349
 msgid ""
 "<qt>There are annotations addressed for you."
 "<br> To view them select the <i>For You</i> tab in the <i>Annotations</i> "
 "toolview.</qt>"
 msgstr ""
 
-#: messages/annotationoutput.cpp:348
+#: messages/annotationoutput.cpp:349
 #, fuzzy
 msgid "New Annotations"
 msgstr "annotation"
@@ -11840,11 +11840,11 @@ msgstr "&Танзими аҳамият"
 msgid "&Dump in messages log"
 msgstr ""
 
-#: components/debugger/variableslistview.cpp:275
+#: components/debugger/variableslistview.cpp:279
 msgid "Set Variable"
 msgstr "Дигаргуншавандаро гузоред"
 
-#: components/debugger/variableslistview.cpp:291
+#: components/debugger/variableslistview.cpp:294
 msgid ""
 "Contents of variable %1:\n"
 ">>>\n"
@@ -12021,47 +12021,47 @@ msgstr "Алшшудани соаташро ишорат намоед:"
 msgid "Unable to open file %1, check your basedirs and mappings."
 msgstr ""
 
-#: components/debugger/debuggervariable.cpp:101
+#: components/debugger/debuggervariable.cpp:103
 msgid "Non scalar value"
 msgstr "Маъно надорад"
 
-#: components/debugger/debuggervariable.cpp:146
+#: components/debugger/debuggervariable.cpp:148
 msgid "Array"
 msgstr "Бо тартиб"
 
-#: components/debugger/debuggervariable.cpp:148
+#: components/debugger/debuggervariable.cpp:150
 msgid "Object"
 msgstr "Мавзӯъ"
 
-#: components/debugger/debuggervariable.cpp:150
+#: components/debugger/debuggervariable.cpp:152
 msgid "Reference"
 msgstr "Бастан"
 
-#: components/debugger/debuggervariable.cpp:152
+#: components/debugger/debuggervariable.cpp:154
 msgid "Resource"
 msgstr "Манбаъ"
 
-#: components/debugger/debuggervariable.cpp:154
+#: components/debugger/debuggervariable.cpp:156
 msgid "String"
 msgstr "Хат"
 
-#: components/debugger/debuggervariable.cpp:156
+#: components/debugger/debuggervariable.cpp:158
 msgid "Integer"
 msgstr "Адади том"
 
-#: components/debugger/debuggervariable.cpp:158
+#: components/debugger/debuggervariable.cpp:160
 msgid "Float"
 msgstr "Шиновар"
 
-#: components/debugger/debuggervariable.cpp:160
+#: components/debugger/debuggervariable.cpp:162
 msgid "Boolean"
 msgstr "Бор кардан"
 
-#: components/debugger/debuggervariable.cpp:162
+#: components/debugger/debuggervariable.cpp:164
 msgid "Undefined"
 msgstr "Номуайян"
 
-#: components/debugger/debuggervariable.cpp:166 parsers/dtd/dtdparser.cpp:84
+#: components/debugger/debuggervariable.cpp:168 parsers/dtd/dtdparser.cpp:84
 msgid "Unknown"
 msgstr "Номаълум"
 
@@ -13738,7 +13738,7 @@ msgstr "Ҷузъи нақшаро бозборкунӣ..."
 msgid "New Files in Project's Folder"
 msgstr "Файлҳои нав дар каталоги нақша"
 
-#: project/project.cpp:1201
+#: project/project.cpp:1225
 msgid ""
 "Saving of project failed. Do you want to continue with exit (might cause data "
 "loss)?"
@@ -13746,7 +13746,7 @@ msgstr ""
 "Нигоҳдории лоиҳа ноком гашт.Шумо мехоҳед барои кушодан (метавон таърих гум "
 "шавад) давом диҳед?"
 
-#: project/project.cpp:1201 project/projectprivate.cpp:1199
+#: project/project.cpp:1225 project/projectprivate.cpp:1199
 msgid "Project Saving Error"
 msgstr "Лоиҳаи нигоҳ дошта шуда хатогӣ дорад"
 
@@ -13856,16 +13856,24 @@ msgstr ""
 msgid "Edit Member"
 msgstr "Муҳаррири узв"
 
-#: project/teammembersdlg.cpp:174
+#: project/teammembersdlg.cpp:189
+#, fuzzy
 msgid ""
-"<qt>Are you sure that you want to remove <b>%1</b> from the project team?</qt>"
+"<qt>Are you sure that you want to remove yourself (<b>%1</b>"
+") from the project team?"
+"<br>If you do so, you should select another member as yourself.</qt>"
 msgstr "<qt>Шумо мехоҳед, ки <b>%1</b>-ро аз лоиҳаи гурӯҳ ҳаракат диҳед?</qt>"
 
-#: project/teammembersdlg.cpp:174
+#: project/teammembersdlg.cpp:189 project/teammembersdlg.cpp:195
 msgid "Delete Member"
 msgstr "Нобудкардани узв"
 
 #: project/teammembersdlg.cpp:195
+msgid ""
+"<qt>Are you sure that you want to remove <b>%1</b> from the project team?</qt>"
+msgstr "<qt>Шумо мехоҳед, ки <b>%1</b>-ро аз лоиҳаи гурӯҳ ҳаракат диҳед?</qt>"
+
+#: project/teammembersdlg.cpp:216
 msgid ""
 "<qt>The <b>%1</b> role is already assigned to <b>%2</b>"
 ". Do you want to reassign it to the current member?</qt>"
@@ -13873,17 +13881,17 @@ msgstr ""
 "<qt>Қоидаи <b>%1</b> аллакай дар <b>%2</b> таъин карда шудааст. Шумо мехоҳед, "
 "ки аъзои мавҷуд бударо дубора таъин намоед?</qt>"
 
-#: project/teammembersdlg.cpp:195
+#: project/teammembersdlg.cpp:216
 #, fuzzy
 msgid "Reassign"
 msgstr "Сеанс"
 
-#: project/teammembersdlg.cpp:195
+#: project/teammembersdlg.cpp:216
 #, fuzzy
 msgid "Do Not Reassign"
 msgstr "Амал ҷавоб намедиҳад"
 
-#: project/teammembersdlg.cpp:205
+#: project/teammembersdlg.cpp:226
 #, fuzzy
 msgid ""
 "<qt>The <b>%1</b> nickname is already assigned to <b>%2 &lt;%3&gt;</b>.</qt>"
