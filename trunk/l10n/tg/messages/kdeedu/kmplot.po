@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kmplot\n"
-"POT-Creation-Date: 2005-08-10 10:20+0200\n"
+"POT-Creation-Date: 2005-08-28 02:51+0200\n"
 "PO-Revision-Date: 2004-08-18 18:40+0500\n"
 "Last-Translator: Marina Kolucheva <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -442,7 +442,7 @@ msgstr ""
 "тексти дар боло.Барои ҳисоб кардани қиммати-y-ро,тугмачаи Calculate-ро пахш "
 "кунед."
 
-#: kminmax.cpp:105
+#: kminmax.cpp:105 kminmax.cpp:126
 #, fuzzy
 msgid "&Calculate"
 msgstr "Дубора &кардан"
@@ -458,28 +458,25 @@ msgstr ""
 "Ҳисоб кардани ордината бо абсцисса ва тасвир додани он дар блоки ордината"
 
 #: kminmax.cpp:123
-msgid "Area Under Graph"
-msgstr "Замина дар зери график аст"
+#, fuzzy
+msgid "Calculate integral"
+msgstr "Дубора &кардан"
 
 #: kminmax.cpp:124
-msgid "Draw the area between the x-values:"
+#, fuzzy
+msgid "Calculate the integral between the x-values:"
 msgstr "Мавзеъи муайян намудани сафбандӣ:"
 
-#: kminmax.cpp:126
-msgid "&Draw"
-msgstr ""
-
 #: kminmax.cpp:127
-msgid "Draw the area between the function and the y-axis"
-msgstr "Ноҳияро дар мобайни функсия ва y-axis кашед"
+#, fuzzy
+msgid "Calculate the integral between the x-values"
+msgstr "Мавзеъи муайян намудани сафбандӣ:"
 
 #: kminmax.cpp:128
 msgid ""
-"Draw the area between the function and the y-axis and show the area in a "
-"message box."
+"Calculate the numeric integral between the x-values and draw the result as an "
+"area."
 msgstr ""
-"Ноҳияро дар мобайни функсия ва y-axis кашед ва ноҳияро дар қуттии ахборот нишон "
-"диҳед."
 
 #: kminmax.cpp:221
 msgid "Please choose a function"
@@ -527,11 +524,9 @@ msgstr ""
 
 #: kminmax.cpp:339
 msgid ""
-"The area between %1 and %2\n"
-"is: %3"
+"The integral in the interval [%1, %2] is:\n"
+"%3"
 msgstr ""
-"Ноҳияи мобайн %1 ва %2\n"
-"аст: %3"
 
 #: kminmax.cpp:344
 msgid "The operation was cancelled by the user."
@@ -627,8 +622,11 @@ msgstr "рӯйхати функсия дар сафбандӣ"
 #. i18n: file FktDlgData.ui line 133
 #: rc.cpp:81 rc.cpp:1754
 #, no-c-format
-msgid "Here you see the list of all functions to be plotted."
-msgstr "Рӯйхати функсия дар сафбандӣ."
+msgid ""
+"Here you see the list of all functions to be plotted. The checked functions are "
+"visible, the others are hidden. Click on a checkbox to show or hide the "
+"function."
+msgstr ""
 
 #. i18n: file FktDlgData.ui line 155
 #: rc.cpp:87 rc.cpp:1760
@@ -663,9 +661,9 @@ msgstr "Барои таъғир додани функсияи интихобшу
 
 #. i18n: file FktDlgData.ui line 199
 #: rc.cpp:102 rc.cpp:1775
-#, no-c-format
-msgid "New &Function Plot..."
-msgstr "&Сафбандии нави функсия..."
+#, fuzzy, no-c-format
+msgid "Ne&w Function Plot..."
+msgstr "Функсияҳои сафбандии &нав..."
 
 #. i18n: file FktDlgData.ui line 205
 #: rc.cpp:105 rc.cpp:114 rc.cpp:123 rc.cpp:132 rc.cpp:141 rc.cpp:1778
@@ -702,7 +700,7 @@ msgstr "Сафбандии қ&утбии нав..."
 #. i18n: file FktDlgData.ui line 288
 #: rc.cpp:129 rc.cpp:1802
 #, fuzzy, no-c-format
-msgid "&Copy Function..."
+msgid "Cop&y Function..."
 msgstr "Функсияи холӣ"
 
 #. i18n: file FktDlgData.ui line 313
@@ -3054,22 +3052,22 @@ msgstr "Ин функсияро ҳузф кардан?"
 msgid "Error in extension."
 msgstr "Хатогӣ дар ифода."
 
-#: xparser.cpp:760
+#: xparser.cpp:769
 msgid "There are no other Kmplot instances running"
 msgstr ""
 
-#: xparser.cpp:772
+#: xparser.cpp:781
 #, fuzzy
 msgid "kmplot"
 msgstr "KmPlot"
 
-#: xparser.cpp:772
+#: xparser.cpp:781
 msgid ""
 "Choose which KmPlot instance\n"
 "you want to copy the function to:"
 msgstr ""
 
-#: xparser.cpp:798 xparser.cpp:807
+#: xparser.cpp:807 xparser.cpp:816
 #, fuzzy
 msgid "An error appeared during the transfer"
 msgstr "Ҳангоми боз кардани файл хатогӣ рӯй дод"
@@ -3201,8 +3199,9 @@ msgid "&Search for Maximum Value..."
 msgstr "&Ҷустуҷӯи нуқтаи максимум..."
 
 #: MainDlg.cpp:179
-msgid "&Area Under Graph..."
-msgstr "&Майдон дар таги график..."
+#, fuzzy
+msgid "&Calculate integral"
+msgstr "Дубора &кардан"
 
 #: MainDlg.cpp:182
 msgid "Quick Edit"
@@ -3362,6 +3361,31 @@ msgstr "Маънои ординатаи дастрасиро дохил куне
 msgid "Recursive function is only allowed when drawing integral graphs"
 msgstr ""
 "Фақат дар вақти кашидани ибтидоӣ функсияҳои рекурсивӣ иҷозат додашуда аст."
+
+#~ msgid "Area Under Graph"
+#~ msgstr "Замина дар зери график аст"
+
+#~ msgid "Draw the area between the function and the y-axis"
+#~ msgstr "Ноҳияро дар мобайни функсия ва y-axis кашед"
+
+#~ msgid "Draw the area between the function and the y-axis and show the area in a message box."
+#~ msgstr "Ноҳияро дар мобайни функсия ва y-axis кашед ва ноҳияро дар қуттии ахборот нишон диҳед."
+
+#~ msgid ""
+#~ "The area between %1 and %2\n"
+#~ "is: %3"
+#~ msgstr ""
+#~ "Ноҳияи мобайн %1 ва %2\n"
+#~ "аст: %3"
+
+#~ msgid "Here you see the list of all functions to be plotted."
+#~ msgstr "Рӯйхати функсия дар сафбандӣ."
+
+#~ msgid "New &Function Plot..."
+#~ msgstr "&Сафбандии нави функсия..."
+
+#~ msgid "&Area Under Graph..."
+#~ msgstr "&Майдон дар таги график..."
 
 #, fuzzy
 #~ msgid "customize the plot maximum range"
