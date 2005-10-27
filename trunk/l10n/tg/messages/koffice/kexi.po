@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
-"POT-Creation-Date: 2005-10-21 02:41+0200\n"
+"POT-Creation-Date: 2005-10-27 02:45+0200\n"
 "PO-Revision-Date: 2004-08-02 18:06+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team:  Tajik\n"
@@ -53,37 +53,57 @@ msgstr "Барои намуди mime \"%1\" қисмҳои модул вуҷуд
 msgid "Context Help"
 msgstr "Матни Кӯмак"
 
-#: core/kexiproject.cpp:102
+#: core/kexiproject.cpp:164
 msgid "Could not open project \"%1\""
 msgstr "Нақшаи \"%1\"кушода намешавад"
 
-#: core/kexiproject.cpp:126
+#: core/kexiproject.cpp:189
 msgid "Could not create project \"%1\""
 msgstr "Нақшаи \"%1\"сохта намешавад"
 
-#: core/kexiproject.cpp:471
+#: core/kexiproject.cpp:231 core/kexiproject.cpp:287
+#, fuzzy
+msgid "Project major version"
+msgstr "Сарлавҳаи нақша: "
+
+#: core/kexiproject.cpp:233 core/kexiproject.cpp:289
+#, fuzzy
+msgid "Project minor version"
+msgstr "Нақшаи муносибатҳо"
+
+#: core/kexiproject.cpp:235
+#, fuzzy
+msgid "Project caption"
+msgstr "Сарлавҳаи нақша: "
+
+#: core/kexiproject.cpp:237
+#, fuzzy
+msgid "Project description"
+msgstr "&Нақша кашидан"
+
+#: core/kexiproject.cpp:595
 msgid "Opening object \"%1\" failed."
 msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
 
-#: core/kexiproject.cpp:527 main/keximainwindowimpl.cpp:3421
+#: core/kexiproject.cpp:651 main/keximainwindowimpl.cpp:3421
 msgid "Could not set empty name for this object."
 msgstr "Наметавонад номи роҳхати холиро барои ин ашё"
 
-#: core/kexiproject.cpp:531
+#: core/kexiproject.cpp:655
 msgid "Could not use this name. Object with name \"%1\" already exists."
 msgstr ""
 "Наметавонад истифода кардани ин ном. Ашё бо номи \"%1\" алакай баромадагӣ. "
 
-#: core/kexiproject.cpp:538
+#: core/kexiproject.cpp:662
 msgid "Could not rename object \"%1\"."
 msgstr "Мавзӯъи \"%1\" ба номи дигар сохта намешавад."
 
-#: core/kexiproject.cpp:649
+#: core/kexiproject.cpp:773
 #, fuzzy
 msgid "Warning: entire project's data will be removed."
 msgstr "Нигоҳ доштани таърихи мавзӯъи нодуруст."
 
-#: core/kexiproject.cpp:664
+#: core/kexiproject.cpp:788
 #, fuzzy
 msgid ""
 "The project \"%1\" already exists.\n"
@@ -92,7 +112,7 @@ msgstr ""
 "Файли\"%1\" аллакай вуҷуд дорад..\n"
 " Мехоҳед онро аз сари нав нависед?"
 
-#: core/kexiproject.cpp:691
+#: core/kexiproject.cpp:815
 #, fuzzy
 msgid "Do you want to drop the project \"%1\"?"
 msgstr ""
@@ -2060,7 +2080,7 @@ msgstr ""
 msgid "Table not found"
 msgstr "мавзӯъ ёфт нашудааст"
 
-#: kexidb/connection.cpp:1433 kexidb/expression.cpp:595
+#: kexidb/connection.cpp:1451 kexidb/expression.cpp:595
 #, fuzzy
 msgid "Unknown table \"%1\""
 msgstr "навъи мавзӯъи номаълум \"%1\""
@@ -2091,263 +2111,281 @@ msgstr "Маънои\"%1\" барои драйвер аввалиндараҷа 
 msgid "File name expected for file-based database driver."
 msgstr "Номи файл барои файли драйвери манбаи асоси маълумот интизор аст. "
 
-#: kexidb/connection.cpp:81
+#: kexidb/dbproperties.cpp:44 kexidb/dbproperties.cpp:54
+#: kexidb/dbproperties.cpp:65
+#, fuzzy
+msgid "Could not set value of database property \"%1\"."
+msgstr "Драйвери асоси маълумоти\"%1\"таъмин карда намешавад."
+
+#: kexidb/dbproperties.cpp:82 kexidb/dbproperties.cpp:92
+#: kexidb/dbproperties.cpp:103
+#, fuzzy
+msgid "Could not set caption for database property \"%1\"."
+msgstr "Драйвери асоси маълумоти\"%1\"ёфт намешавад."
+
+#: kexidb/dbproperties.cpp:116 kexidb/dbproperties.cpp:131
+#, fuzzy
+msgid "Could not read database property \"%1\"."
+msgstr "Драйвери асоси маълумоти\"%1\"таъмин карда намешавад."
+
+#: kexidb/dbproperties.cpp:144
+#, fuzzy
+msgid "Could not read database properties."
+msgstr "Ягон драйвери асоси маълумот ёфт намешавад."
+
+#: kexidb/connection.cpp:82
 msgid "Invalid database contents. "
 msgstr "Мазмунҳои асосӣ маълумоти нодуруст. "
 
-#: kexidb/connection.cpp:85
+#: kexidb/connection.cpp:86
 msgid "It is a system object."
 msgstr ""
 
-#: kexidb/connection.cpp:191
+#: kexidb/connection.cpp:197
 msgid "Connection already established."
 msgstr "Алоқа аллакай барқарор шуд."
 
-#: kexidb/connection.cpp:197
+#: kexidb/connection.cpp:203
 #, fuzzy
 msgid "Could not open \"%1\" project file."
 msgstr "Нақшаи \"%1\"кушода намешавад"
 
-#: kexidb/connection.cpp:198
+#: kexidb/connection.cpp:204
 #, fuzzy
 msgid "Could not connect to \"%1\" database server."
 msgstr "Ба \"%1\" сервери асоси маълумот пайваст нашудааст."
 
-#: kexidb/connection.cpp:235
+#: kexidb/connection.cpp:241
 msgid "Not connected to the database server."
 msgstr "Ба сервери асоси маълумот пайваст нашудааст."
 
-#: kexidb/connection.cpp:245
+#: kexidb/connection.cpp:251
 msgid "Currently no database is used."
 msgstr "Ҳоло асоси маълумот истифода бурда намешавад."
 
-#: kexidb/connection.cpp:301
+#: kexidb/connection.cpp:307
 msgid "The database \"%1\" does not exist."
 msgstr "Асоси маълумоти \"%1\" вуҷуд надорад."
 
-#: kexidb/connection.cpp:321
+#: kexidb/connection.cpp:327
 msgid "Database file \"%1\" does not exist."
 msgstr "Файли асоси маълумоти \"%1\" вуҷуд надорад."
 
-#: kexidb/connection.cpp:326
+#: kexidb/connection.cpp:332
 msgid "Database file \"%1\" is not readable."
 msgstr "Файли асоси маълумоти \"%1\" хондан намешавад."
 
-#: kexidb/connection.cpp:331
+#: kexidb/connection.cpp:337
 msgid "Database file \"%1\" is not writable."
 msgstr "Файли асоси маълумоти \"%1\" навиштан намешавад."
 
-#: kexidb/connection.cpp:374
+#: kexidb/connection.cpp:380
 msgid "Database \"%1\" already exists."
 msgstr "Асоси маълумоти \"%1\" аллакай вуҷуд дорад."
 
-#: kexidb/connection.cpp:378
+#: kexidb/connection.cpp:384
 msgid ""
 "Cannot create database \"%1\". This name is reserved for system database."
 msgstr ""
 "Асоси маълумоти \"%1\"сохта намешавад. Ин ном барои системаи асоси маълумот "
 "захира аст."
 
-#: kexidb/connection.cpp:393
+#: kexidb/connection.cpp:399
 msgid "Error creating database \"%1\" on the server."
 msgstr "Сохтани хатоии асоси маълумоти \"%1\"дар сервер аст."
 
-#: kexidb/connection.cpp:407
+#: kexidb/connection.cpp:413
 msgid "Database \"%1\" created but could not be opened."
 msgstr "Асоси маълумоти \"%1\"сохта шудааст, аммо кушода намешавад."
 
-#: kexidb/connection.cpp:494
+#: kexidb/connection.cpp:500
 #, fuzzy
 msgid "Opening database \"%1\" failed"
 msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
 
-#: kexidb/connection.cpp:505
-msgid "\"%1\" database property not found"
-msgstr "\"%1\" ҳосияти асосӣ маълумот кофта наёфт"
-
-#: kexidb/connection.cpp:522
+#: kexidb/connection.cpp:535
 msgid "Database version (%1) does not match Kexi application's version (%2)"
 msgstr "Ҳоситяти тавсири (%1)наметвонад бисёртарt Kexi хоҳиши тавсири (%2)"
 
-#: kexidb/connection.cpp:586
+#: kexidb/connection.cpp:599
 msgid "Cannot find any database for temporary connection."
 msgstr "Ягон асоси маълумот барои алоқаи муваққатӣ ёфт намешавад."
 
-#: kexidb/connection.cpp:590
+#: kexidb/connection.cpp:603
 msgid "Error during starting temporary connection using \"%1\" database name."
 msgstr ""
 "Хатоӣ, дар вақти саршавии алоқаи муваққатӣ, номи асоси маълумотиро \"%1\" "
 "истифода мебарад."
 
-#: kexidb/connection.cpp:607
+#: kexidb/connection.cpp:620
 msgid "Cannot drop database - name not specified."
 msgstr "Асоси маълумот партофта намешавад - ном қайд нашудааст."
 
-#: kexidb/connection.cpp:625
+#: kexidb/connection.cpp:638
 msgid "Cannot delete database - name not specified."
 msgstr "Асоси маълумот кӯр карда намешавад - ном қайд нашудааст."
 
-#: kexidb/connection.cpp:630
+#: kexidb/connection.cpp:643
 msgid "Cannot delete system database \"%1\"."
 msgstr "Системаи асоси маълумоти \"%1\" кӯр карда намешавад."
 
-#: kexidb/connection.cpp:950
+#: kexidb/connection.cpp:968
 msgid "Error while executing SQL statement."
 msgstr "Хатоги вақте,ки иҷрокунии SQL тасдиқ."
 
-#: kexidb/connection.cpp:1152
+#: kexidb/connection.cpp:1170
 msgid "Cannot create table without fields."
 msgstr "Ҷадвал бе ҳошия сохта намешавад."
 
-#: kexidb/connection.cpp:1162
+#: kexidb/connection.cpp:1180
 msgid "System name \"%1\" cannot be used as table name."
 msgstr "Номи системаи \"%1\" ҳамчун номи ҷадвал истифода бурда намешавад."
 
-#: kexidb/connection.cpp:1171
+#: kexidb/connection.cpp:1189
 msgid "System name \"%1\" cannot be used as one of fields in \"%2\" table."
 msgstr ""
 "Номи системаи \"%1\"ҳамчун яке аз ҳошияҳо дар ҷадвали \"%2\" истифода бурда "
 "намешавад. "
 
-#: kexidb/connection.cpp:1186
+#: kexidb/connection.cpp:1204
 #, fuzzy
 msgid "Could not create the same table \"%1\" twice."
 msgstr "Мавзӯъи \"%1\" ба номи дигар сохта намешавад."
 
-#: kexidb/connection.cpp:1200 plugins/tables/kexitablepart.cpp:192
+#: kexidb/connection.cpp:1218 plugins/tables/kexitablepart.cpp:192
 #, fuzzy
 msgid "Table \"%1\" already exists."
 msgstr "Асоси маълумоти \"%1\" аллакай вуҷуд дорад."
 
-#: kexidb/connection.cpp:1313
+#: kexidb/connection.cpp:1331
 msgid "Could not remove object's data."
 msgstr "Маълумоти мавзӯъро ҳаракат кардан натавонист."
 
-#: kexidb/connection.cpp:1344
+#: kexidb/connection.cpp:1362
 #, fuzzy
 msgid ""
 "Table \"%1\" cannot be removed.\n"
 msgstr "Ҷадвали \"%1\" ҳаракат карда наметавонад."
 
-#: kexidb/connection.cpp:1351
+#: kexidb/connection.cpp:1369
 msgid "Unexpected name or identifier."
 msgstr ""
 
-#: kexidb/connection.cpp:1396
+#: kexidb/connection.cpp:1414
 #, fuzzy
 msgid "Table \"%1\" does not exist."
 msgstr "Ҷадвали '%1' вуҷуд надорад"
 
-#: kexidb/connection.cpp:1411
+#: kexidb/connection.cpp:1429
 #, fuzzy
 msgid "Could not alter table \"%1\" using the same table."
 msgstr "Мавзӯъи \"%1\" ба номи дигар сохта намешавад."
 
-#: kexidb/connection.cpp:1437
+#: kexidb/connection.cpp:1455
 #, fuzzy
 msgid "Invalid table name \"%1\""
 msgstr "Номи мавзӯъи нодуруст \"%1\""
 
-#: kexidb/connection.cpp:1442
+#: kexidb/connection.cpp:1460
 #, fuzzy
 msgid "Could rename table \"%1\" using the same name."
 msgstr "Мавзӯъи \"%1\" ба номи дигар сохта намешавад."
 
-#: kexidb/connection.cpp:1465
+#: kexidb/connection.cpp:1483
 #, fuzzy
 msgid "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
 msgstr ""
 "Наметавонад истифода кардани ин ном. Ашё бо номи \"%1\" алакай баромадагӣ. "
 
-#: kexidb/connection.cpp:1572
+#: kexidb/connection.cpp:1590
 #, fuzzy
 msgid "Query \"%1\" does not exist."
 msgstr "<qt>Файли\"%1\"вуҷуд надорад."
 
-#: kexidb/connection.cpp:1669
+#: kexidb/connection.cpp:1687
 msgid "Transaction already started."
 msgstr "Кор аллакай оғоз ёфт."
 
-#: kexidb/connection.cpp:1709 kexidb/connection.cpp:1743
+#: kexidb/connection.cpp:1727 kexidb/connection.cpp:1761
 msgid "Transaction not started."
 msgstr "Кор оғоз нашудааст."
 
-#: kexidb/connection.cpp:1723
+#: kexidb/connection.cpp:1741
 msgid "Error on commit transaction"
 msgstr "Хатоӣ дар ба амалории созиш"
 
-#: kexidb/connection.cpp:1757
+#: kexidb/connection.cpp:1775
 msgid "Error on rollback transaction"
 msgstr "Хатоӣ дар баста шудани кор"
 
-#: kexidb/connection.cpp:1914 kexidb/connection.cpp:2191
+#: kexidb/connection.cpp:1932 kexidb/connection.cpp:2209
 msgid "Invalid object name \"%1\""
 msgstr "Номи мавзӯъи нодуруст \"%1\""
 
-#: kexidb/connection.cpp:2032
+#: kexidb/connection.cpp:2050
 #, fuzzy
 msgid "Column %1 does not exist for the query."
 msgstr "Ҷадвали '%1' вуҷуд надорад"
 
-#: kexidb/connection.cpp:2477
+#: kexidb/connection.cpp:2495
 #, fuzzy
 msgid "Could not update row because there is no master table defined."
 msgstr "Мавзӯъи \"%1\" ба номи дигар сохта намешавад."
 
-#: kexidb/connection.cpp:2484
+#: kexidb/connection.cpp:2502
 msgid "Could not update row because master table has no primary key defined."
 msgstr ""
 
-#: kexidb/connection.cpp:2506
+#: kexidb/connection.cpp:2524
 msgid ""
 "Could not update row because it does not contain entire master table's primary "
 "key."
 msgstr ""
 
-#: kexidb/connection.cpp:2517 kexidb/connection.cpp:2723
+#: kexidb/connection.cpp:2535 kexidb/connection.cpp:2741
 msgid "Primary key's field \"%1\" cannot be empty."
 msgstr "Ҳошияи холӣ будан \"%1\" наметавонад."
 
-#: kexidb/connection.cpp:2534
+#: kexidb/connection.cpp:2552
 msgid "Row updating on the server failed."
 msgstr "Қатори илова кардани он дар шабака."
 
-#: kexidb/connection.cpp:2559
+#: kexidb/connection.cpp:2577
 #, fuzzy
 msgid "Could not insert row because there is no master table defined."
 msgstr "Мавзӯъи \"%1\" ба номи дигар сохта намешавад."
 
-#: kexidb/connection.cpp:2578
+#: kexidb/connection.cpp:2596
 msgid "Could not insert row because master table has no primary key defined."
 msgstr ""
 
-#: kexidb/connection.cpp:2587
+#: kexidb/connection.cpp:2605
 msgid ""
 "Could not insert row because it does not contain entire master table's primary "
 "key."
 msgstr ""
 
-#: kexidb/connection.cpp:2623
+#: kexidb/connection.cpp:2641
 msgid "Row inserting on the server failed."
 msgstr "Қатори мондани дар сервер нодуруст."
 
-#: kexidb/connection.cpp:2689
+#: kexidb/connection.cpp:2707
 #, fuzzy
 msgid "Could not delete row because there is no master table defined."
 msgstr "Мавзӯъи \"%1\" ба номи дигар сохта намешавад."
 
-#: kexidb/connection.cpp:2699
+#: kexidb/connection.cpp:2717
 msgid ""
 "Could not delete row because there is no primary key for master table defined."
 msgstr ""
 
-#: kexidb/connection.cpp:2714
+#: kexidb/connection.cpp:2732
 msgid ""
 "Could not delete row because it does not contain entire master table's primary "
 "key."
 msgstr ""
 
-#: kexidb/connection.cpp:2740 kexidb/connection.cpp:2763
+#: kexidb/connection.cpp:2758 kexidb/connection.cpp:2781
 #, fuzzy
 msgid "Row deletion on the server failed."
 msgstr "Қатори нобудкардани дар сервер нодуруст."
@@ -2406,7 +2444,7 @@ msgid "&Format"
 msgstr "Шакл"
 
 #. i18n: file data/kexiformpartinstui.rc line 30
-#: plugins/forms/kexiformpart.cpp:463 rc.cpp:9 rc.cpp:51
+#: plugins/forms/kexiformpart.cpp:479 rc.cpp:9 rc.cpp:51
 #, no-c-format
 msgid "Widgets"
 msgstr "Васеъӣ"
@@ -3040,12 +3078,12 @@ msgid "Define query..."
 msgstr ""
 
 #: widget/tableview/kexidataawareobjectiface.cpp:827
-#: widget/tableview/kexitableviewdata.cpp:532
+#: widget/tableview/kexitableviewdata.cpp:602
 msgid "The column's constraint is declared as NOT NULL."
 msgstr "Маҳдудияти сутунҳо бояд,ки эълон кард ПУР НЕСТ."
 
 #: widget/tableview/kexidataawareobjectiface.cpp:849
-#: widget/tableview/kexitableviewdata.cpp:543
+#: widget/tableview/kexitableviewdata.cpp:613
 msgid "The column's constraint is declared as NOT EMPTY."
 msgstr "Маҳдудияти сутунҳо бояд эълон кард ХОЛИ НЕСТ."
 
@@ -3074,20 +3112,20 @@ msgstr "Мехоҳед қатори интихобшударо нест куне
 msgid "&Clear Contents"
 msgstr "%1 Мазмунҳо"
 
-#: widget/tableview/kexitableviewdata.cpp:530
-#: widget/tableview/kexitableviewdata.cpp:541
+#: widget/tableview/kexitableviewdata.cpp:600
+#: widget/tableview/kexitableviewdata.cpp:611
 msgid "\"%1\" column requires a value to be entered."
 msgstr "Сутуни \"%1\" барои вориди маъно дархост мекунад."
 
-#: widget/tableview/kexitableviewdata.cpp:555
+#: widget/tableview/kexitableviewdata.cpp:625
 msgid "Row inserting failed."
 msgstr "Мондани қатор нодуруст."
 
-#: widget/tableview/kexitableviewdata.cpp:575
+#: widget/tableview/kexitableviewdata.cpp:645
 msgid "Row changing failed."
 msgstr "Дигаргун кардани қатор нодуруст."
 
-#: widget/tableview/kexitableviewdata.cpp:638
+#: widget/tableview/kexitableviewdata.cpp:708
 msgid "Row deleting failed."
 msgstr "Нобудкардани қатор нодуруст."
 
@@ -3130,7 +3168,7 @@ msgstr "Қатор: "
 msgid "Page:"
 msgstr "Саҳифа %1"
 
-#: plugins/reports/kexireportpart.cpp:52
+#: plugins/reports/kexireportpart.cpp:57
 msgid ""
 "_: Translate this word using only lowercase alphanumeric characters (a..z, "
 "0..9). Use '_' character instead of spaces. First character should be a..z "
@@ -3140,18 +3178,18 @@ msgid ""
 msgstr ""
 
 #: plugins/reports/kexireportfactory.cpp:42
-#: plugins/reports/kexireportpart.cpp:53
+#: plugins/reports/kexireportpart.cpp:58
 msgid "Report"
 msgstr "Гузориш"
 
-#: plugins/reports/kexireportpart.cpp:104
+#: plugins/reports/kexireportpart.cpp:122
 #, fuzzy
 msgid "Design of report \"%1\" has been modified."
 msgstr ""
 "<p>Ин ашё намуди зайлро дорад: %1 \"%2\".</p>"
 "<p>Шумо мехоҳед инро нигоҳ доред?</p>"
 
-#: plugins/reports/kexireportpart.cpp:106
+#: plugins/reports/kexireportpart.cpp:124
 #, fuzzy
 msgid "Report \"%1\" already exists."
 msgstr "Асоси маълумоти \"%1\" аллакай вуҷуд дорад."
@@ -3174,7 +3212,7 @@ msgstr "Гузориш"
 msgid "Label"
 msgstr "Тамғаи Матн"
 
-#: plugins/forms/kexidbfactory.cpp:229
+#: plugins/forms/kexidbfactory.cpp:132
 #: plugins/reports/kexireportfactory.cpp:53
 #, fuzzy
 msgid ""
@@ -3243,16 +3281,16 @@ msgstr ""
 msgid "Edit Rich Text"
 msgstr "Муҳаррири матни дастнорас"
 
-#: plugins/forms/kexiformmanager.cpp:119
+#: plugins/forms/kexiformmanager.cpp:118
 #, fuzzy
 msgid "Set form's data source to \"%1\""
 msgstr "Манбаи маълумот"
 
-#: plugins/forms/kexidbfactory.cpp:176 plugins/forms/kexiformpart.cpp:86
+#: plugins/forms/kexidbfactory.cpp:79 plugins/forms/kexiformpart.cpp:88
 msgid "Form"
 msgstr "Шакл"
 
-#: plugins/forms/kexidbfactory.cpp:178
+#: plugins/forms/kexidbfactory.cpp:81
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3260,17 +3298,17 @@ msgid ""
 "form"
 msgstr "ТамғаиМатн"
 
-#: plugins/forms/kexidbfactory.cpp:179
+#: plugins/forms/kexidbfactory.cpp:82
 #, fuzzy
 msgid "A data-aware form widget"
 msgstr "Васеъкунии қуттии combo"
 
-#: plugins/forms/kexidbfactory.cpp:186
+#: plugins/forms/kexidbfactory.cpp:89
 #, fuzzy
 msgid "Sub Form"
 msgstr "Шакл"
 
-#: plugins/forms/kexidbfactory.cpp:188
+#: plugins/forms/kexidbfactory.cpp:91
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3278,16 +3316,16 @@ msgid ""
 "subForm"
 msgstr "ТамғаиМатн"
 
-#: plugins/forms/kexidbfactory.cpp:189
+#: plugins/forms/kexidbfactory.cpp:92
 msgid "A form widget included in another Form"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:202
+#: plugins/forms/kexidbfactory.cpp:105
 #, fuzzy
 msgid "Text Box"
 msgstr "Матн"
 
-#: plugins/forms/kexidbfactory.cpp:204
+#: plugins/forms/kexidbfactory.cpp:107
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3295,16 +3333,16 @@ msgid ""
 "textBox"
 msgstr "ТамғаиМатн"
 
-#: plugins/forms/kexidbfactory.cpp:205
+#: plugins/forms/kexidbfactory.cpp:108
 #, fuzzy
 msgid "A widget for entering and displaying text"
 msgstr "Васеъкунӣ барои воридаи матн"
 
-#: plugins/forms/kexidbfactory.cpp:215
+#: plugins/forms/kexidbfactory.cpp:118
 msgid "Text Editor"
 msgstr "Муҳаррири матн"
 
-#: plugins/forms/kexidbfactory.cpp:217
+#: plugins/forms/kexidbfactory.cpp:120
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3312,30 +3350,30 @@ msgid ""
 "textEditor"
 msgstr "ТамғаиМатн"
 
-#: plugins/forms/kexidbfactory.cpp:218
+#: plugins/forms/kexidbfactory.cpp:121
 #, fuzzy
 msgid "A multiline text editor"
 msgstr "Бонги одди-саҳифаи холии муҳарир  "
 
-#: plugins/forms/kexidbfactory.cpp:227
+#: plugins/forms/kexidbfactory.cpp:130
 #, fuzzy
 msgid ""
 "_: Text Label\n"
 "Label"
 msgstr "Тамғаи Матн"
 
-#: plugins/forms/kexidbfactory.cpp:230
+#: plugins/forms/kexidbfactory.cpp:133
 #, fuzzy
 msgid "A widget for displaying text"
 msgstr "Васеъкунӣ барои воридаи матн"
 
-#: plugins/forms/kexidbfactory.cpp:240
+#: plugins/forms/kexidbfactory.cpp:143
 #: plugins/forms/widgets/kexidbimagebox.cpp:109
-#: plugins/forms/widgets/kexidbimagebox.cpp:571
+#: plugins/forms/widgets/kexidbimagebox.cpp:551
 msgid "Image Box"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:242
+#: plugins/forms/kexidbfactory.cpp:145
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3343,16 +3381,16 @@ msgid ""
 "image"
 msgstr "ТамғаиМатн"
 
-#: plugins/forms/kexidbfactory.cpp:243
+#: plugins/forms/kexidbfactory.cpp:146
 #, fuzzy
 msgid "A widget for displaying images"
 msgstr "Васеъкунӣ барои воридаи матн"
 
-#: plugins/forms/kexidbfactory.cpp:256
+#: plugins/forms/kexidbfactory.cpp:159
 msgid "Check Box"
 msgstr "Қуттии тафтиш"
 
-#: plugins/forms/kexidbfactory.cpp:258
+#: plugins/forms/kexidbfactory.cpp:161
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3360,17 +3398,17 @@ msgid ""
 "checkBox"
 msgstr "ТамғаиМатн"
 
-#: plugins/forms/kexidbfactory.cpp:259
+#: plugins/forms/kexidbfactory.cpp:162
 #, fuzzy
 msgid "A check box with text label"
 msgstr "Қуттии тафтиш бо ёрлиқи матн ё pixmap"
 
-#: plugins/forms/kexidbfactory.cpp:267
+#: plugins/forms/kexidbfactory.cpp:170
 #, fuzzy
 msgid "Auto Field"
 msgstr "Ҳошия"
 
-#: plugins/forms/kexidbfactory.cpp:269
+#: plugins/forms/kexidbfactory.cpp:172
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3378,18 +3416,18 @@ msgid ""
 "autoField"
 msgstr "ТамғаиМатн"
 
-#: plugins/forms/kexidbfactory.cpp:270
+#: plugins/forms/kexidbfactory.cpp:173
 msgid ""
 "A widget containing an automatically chosen editor and a label to edit value "
 "database field of any type."
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:283
+#: plugins/forms/kexidbfactory.cpp:186
 #, fuzzy
 msgid "Date Widget"
 msgstr "Васеъкунии таърих"
 
-#: plugins/forms/kexidbfactory.cpp:285
+#: plugins/forms/kexidbfactory.cpp:188
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3397,16 +3435,16 @@ msgid ""
 "dateWidget"
 msgstr "ТамғаиМатн"
 
-#: plugins/forms/kexidbfactory.cpp:286
+#: plugins/forms/kexidbfactory.cpp:189
 #, fuzzy
 msgid "A widget to input and display a date"
 msgstr "Васеъкунӣ барои вориди ё намоиши таърих"
 
-#: plugins/forms/kexidbfactory.cpp:298
+#: plugins/forms/kexidbfactory.cpp:201
 msgid "Time Widget"
 msgstr "Васеъкунии вақт"
 
-#: plugins/forms/kexidbfactory.cpp:300
+#: plugins/forms/kexidbfactory.cpp:203
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3414,16 +3452,16 @@ msgid ""
 "timeWidget"
 msgstr "ТамғаиМатн"
 
-#: plugins/forms/kexidbfactory.cpp:301
+#: plugins/forms/kexidbfactory.cpp:204
 #, fuzzy
 msgid "A widget to input and display a time"
 msgstr "Васеъкунӣ барои вориди ё намоиши вақт"
 
-#: plugins/forms/kexidbfactory.cpp:313
+#: plugins/forms/kexidbfactory.cpp:216
 msgid "Date/Time Widget"
 msgstr "Васеъкунии таърих/вақт"
 
-#: plugins/forms/kexidbfactory.cpp:315
+#: plugins/forms/kexidbfactory.cpp:218
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3431,17 +3469,17 @@ msgid ""
 "dateTimeWidget"
 msgstr "ТамғаиМатн"
 
-#: plugins/forms/kexidbfactory.cpp:316
+#: plugins/forms/kexidbfactory.cpp:219
 #, fuzzy
 msgid "A widget to input and display a time and a date"
 msgstr "Васеъкунӣ барои вориди ё намоиши вақт ва таърих"
 
-#: plugins/forms/kexidbfactory.cpp:324
+#: plugins/forms/kexidbfactory.cpp:227
 #, fuzzy
 msgid "Integer Number Spin Box"
 msgstr "Қуттии Spin"
 
-#: plugins/forms/kexidbfactory.cpp:326
+#: plugins/forms/kexidbfactory.cpp:229
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3449,17 +3487,17 @@ msgid ""
 "intSpinBox"
 msgstr "ТамғаиМатн"
 
-#: plugins/forms/kexidbfactory.cpp:327
+#: plugins/forms/kexidbfactory.cpp:230
 #, fuzzy
 msgid "A spin box widget to input and display integer numbers"
 msgstr "Васеъкунӣ барои вориди ё намоиши вақт"
 
-#: plugins/forms/kexidbfactory.cpp:334
+#: plugins/forms/kexidbfactory.cpp:237
 #, fuzzy
 msgid "Floating-point Number Spin Box"
 msgstr "Нуқтаи рақами шиновар"
 
-#: plugins/forms/kexidbfactory.cpp:336
+#: plugins/forms/kexidbfactory.cpp:239
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3467,16 +3505,16 @@ msgid ""
 "dblSpinBox"
 msgstr "ТамғаиМатн"
 
-#: plugins/forms/kexidbfactory.cpp:337
+#: plugins/forms/kexidbfactory.cpp:240
 #, fuzzy
 msgid "A spin box widget to input and display floating-point numbers"
 msgstr "Васеъкунӣ барои вориди ё намоиши вақт"
 
-#: plugins/forms/kexidbfactory.cpp:344
+#: plugins/forms/kexidbfactory.cpp:247
 msgid "Command Button"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:346
+#: plugins/forms/kexidbfactory.cpp:249
 #, fuzzy
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3484,117 +3522,117 @@ msgid ""
 "button"
 msgstr "ТамғаиМатн"
 
-#: plugins/forms/kexidbfactory.cpp:347
+#: plugins/forms/kexidbfactory.cpp:250
 #, fuzzy
 msgid "A command button to execute actions"
 msgstr "Бо пахшкунии кнопкаи оддӣ фармонҳо иҷро мешаванд"
 
-#: plugins/forms/kexidbfactory.cpp:350 plugins/forms/kexiformpart.cpp:460
+#: plugins/forms/kexidbfactory.cpp:253 plugins/forms/kexiformpart.cpp:476
 #, fuzzy
 msgid "Data Source"
 msgstr "Манбаи маълумот"
 
-#: plugins/forms/kexidbfactory.cpp:351
+#: plugins/forms/kexidbfactory.cpp:254
 #, fuzzy
 msgid "Form Name"
 msgstr "Чорчӯба"
 
-#: plugins/forms/kexidbfactory.cpp:352
+#: plugins/forms/kexidbfactory.cpp:255
 msgid "On Click"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:353
+#: plugins/forms/kexidbfactory.cpp:256
 msgid "Auto Tab Stops"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:354
+#: plugins/forms/kexidbfactory.cpp:257
 #, fuzzy
 msgid "Shadow Enabled"
 msgstr "Имкон дод"
 
-#: plugins/forms/kexidbfactory.cpp:356
+#: plugins/forms/kexidbfactory.cpp:259
 #, fuzzy
 msgid "Editor Type"
 msgstr "Намуди таърих"
 
-#: plugins/forms/kexidbfactory.cpp:358
+#: plugins/forms/kexidbfactory.cpp:261
 msgid ""
 "_: AutoField editor's type\n"
 "Auto"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:366
+#: plugins/forms/kexidbfactory.cpp:269
 msgid ""
 "_: AutoField editor's type\n"
 "Multiline Text"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:367
+#: plugins/forms/kexidbfactory.cpp:270
 msgid ""
 "_: AutoField editor's type\n"
 "List of Values"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:368
+#: plugins/forms/kexidbfactory.cpp:271
 msgid ""
 "_: AutoField editor's type\n"
 "Image"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:371
+#: plugins/forms/kexidbfactory.cpp:274
 #, fuzzy
 msgid "Auto Label"
 msgstr "Ҳошия"
 
-#: plugins/forms/kexidbfactory.cpp:373
+#: plugins/forms/kexidbfactory.cpp:276
 msgid "Label Position"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:374
+#: plugins/forms/kexidbfactory.cpp:277
 msgid ""
 "_: Label Position\n"
 "Left"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:375
+#: plugins/forms/kexidbfactory.cpp:278
 msgid ""
 "_: Label Position\n"
 "Top"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:376
+#: plugins/forms/kexidbfactory.cpp:279
 #, fuzzy
 msgid ""
 "_: Label Position\n"
 "No Label"
 msgstr "Тамғаи Матн"
 
-#: plugins/forms/kexidbfactory.cpp:378
+#: plugins/forms/kexidbfactory.cpp:281
 #, fuzzy
 msgid "Size"
 msgstr "&Андоза:"
 
-#: plugins/forms/kexidbfactory.cpp:380
+#: plugins/forms/kexidbfactory.cpp:283
 #, fuzzy
 msgid "Image"
 msgstr "Саҳифа %1"
 
-#: plugins/forms/kexidbfactory.cpp:381
+#: plugins/forms/kexidbfactory.cpp:284
 #, fuzzy
 msgid "Scaled Contents"
 msgstr "%1 Мазмунҳо"
 
-#: plugins/forms/kexidbfactory.cpp:382
+#: plugins/forms/kexidbfactory.cpp:285
 msgid ""
 "_: Keep Aspect Ratio (short)\n"
 "Keep Ratio"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:465
+#: plugins/forms/kexidbfactory.cpp:368
 msgid "&Image"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:485
+#: plugins/forms/kexidbfactory.cpp:388
 msgid "Assign Action..."
 msgstr ""
 
@@ -3603,11 +3641,11 @@ msgstr ""
 msgid "NAME"
 msgstr ""
 
-#: plugins/forms/kexiformview.cpp:956
+#: plugins/forms/kexiformview.cpp:952
 msgid "Insert AutoField widget"
 msgstr ""
 
-#: plugins/forms/kexiformview.cpp:956
+#: plugins/forms/kexiformview.cpp:952
 #, fuzzy
 msgid "Insert %1 AutoField widgets"
 msgstr "Дигаргун кардани %1 васеъкуниҳои бисёр"
@@ -3676,7 +3714,7 @@ msgstr ""
 msgid "Insert selected fields into form"
 msgstr ""
 
-#: plugins/forms/kexiformpart.cpp:85
+#: plugins/forms/kexiformpart.cpp:87
 msgid ""
 "_: Translate this word using only lowercase alphanumeric characters (a..z, "
 "0..9). Use '_' character instead of spaces. First character should be a..z "
@@ -3685,127 +3723,127 @@ msgid ""
 "form"
 msgstr ""
 
-#: plugins/forms/kexiformpart.cpp:123 plugins/forms/kexiformpart.cpp:150
+#: plugins/forms/kexiformpart.cpp:139 plugins/forms/kexiformpart.cpp:166
 msgid "Edit Tab Order"
 msgstr "Муҳаррири тартиботи табулясия"
 
-#: plugins/forms/kexiformpart.cpp:124
+#: plugins/forms/kexiformpart.cpp:140
 msgid "Adjust Size"
 msgstr "Андозаро танзимдиҳӣ"
 
-#: plugins/forms/kexiformpart.cpp:139
+#: plugins/forms/kexiformpart.cpp:155
 msgid "Show Form UI Code"
 msgstr ""
 
-#: plugins/forms/kexiformpart.cpp:149
+#: plugins/forms/kexiformpart.cpp:165
 #, fuzzy
 msgid "Clear Widget Contents"
 msgstr "Мазмунҳои асосӣ маълумоти нодуруст. "
 
-#: plugins/forms/kexiformpart.cpp:156
+#: plugins/forms/kexiformpart.cpp:172
 #, fuzzy
 msgid "Layout Widgets"
 msgstr "Васеъкунии таърих"
 
-#: plugins/forms/kexiformpart.cpp:159
+#: plugins/forms/kexiformpart.cpp:175
 #, fuzzy
 msgid "&Horizontally"
 msgstr "Қуттии уфуқӣ"
 
-#: plugins/forms/kexiformpart.cpp:161
+#: plugins/forms/kexiformpart.cpp:177
 #, fuzzy
 msgid "&Vertically"
 msgstr "&Тарҳбандии амудӣ"
 
-#: plugins/forms/kexiformpart.cpp:163
+#: plugins/forms/kexiformpart.cpp:179
 #, fuzzy
 msgid "In &Grid"
 msgstr "Ба шабака"
 
-#: plugins/forms/kexiformpart.cpp:165
+#: plugins/forms/kexiformpart.cpp:181
 #, fuzzy
 msgid "Horizontally in a &Splitter"
 msgstr "Рост кардани уфуқӣ"
 
-#: plugins/forms/kexiformpart.cpp:167
+#: plugins/forms/kexiformpart.cpp:183
 msgid "Verti&cally in a Splitter"
 msgstr ""
 
-#: plugins/forms/kexiformpart.cpp:170
+#: plugins/forms/kexiformpart.cpp:186
 msgid "&Break Layout"
 msgstr "&Тарҳбандиро буред"
 
-#: plugins/forms/kexiformpart.cpp:176
+#: plugins/forms/kexiformpart.cpp:192
 msgid "Bring Widget to Front"
 msgstr "Овардани тарҳбандиҳо  аз пеш "
 
-#: plugins/forms/kexiformpart.cpp:177
+#: plugins/forms/kexiformpart.cpp:193
 msgid "Send Widget to Back"
 msgstr "Фиристодани Widget баракс"
 
-#: plugins/forms/kexiformpart.cpp:180
+#: plugins/forms/kexiformpart.cpp:196
 #, fuzzy
 msgid "Other widgets"
 msgstr "Васеъкуниро нобуд кардан"
 
-#: plugins/forms/kexiformpart.cpp:183
+#: plugins/forms/kexiformpart.cpp:199
 #, fuzzy
 msgid "Align Widgets Position"
 msgstr "Баробар созии Widget's ҷойҳо"
 
-#: plugins/forms/kexiformpart.cpp:185
+#: plugins/forms/kexiformpart.cpp:201
 msgid "To Left"
 msgstr "Ба тарафи чап"
 
-#: plugins/forms/kexiformpart.cpp:186
+#: plugins/forms/kexiformpart.cpp:202
 msgid "To Right"
 msgstr "Ба тарафи рост"
 
-#: plugins/forms/kexiformpart.cpp:187
+#: plugins/forms/kexiformpart.cpp:203
 msgid "To Top"
 msgstr "Ба боло"
 
-#: plugins/forms/kexiformpart.cpp:188
+#: plugins/forms/kexiformpart.cpp:204
 msgid "To Bottom"
 msgstr "Ба поён"
 
-#: plugins/forms/kexiformpart.cpp:189 plugins/forms/kexiformpart.cpp:194
+#: plugins/forms/kexiformpart.cpp:205 plugins/forms/kexiformpart.cpp:210
 msgid "To Grid"
 msgstr "Ба шабака"
 
-#: plugins/forms/kexiformpart.cpp:191
+#: plugins/forms/kexiformpart.cpp:207
 #, fuzzy
 msgid "Adjust Widgets Size"
 msgstr "Танзими андозаи васеъ"
 
-#: plugins/forms/kexiformpart.cpp:193
+#: plugins/forms/kexiformpart.cpp:209
 msgid "To Fit"
 msgstr "Ба мувофиқ"
 
-#: plugins/forms/kexiformpart.cpp:195
+#: plugins/forms/kexiformpart.cpp:211
 msgid "To Shortest"
 msgstr "Ба хеле кӯтоҳ"
 
-#: plugins/forms/kexiformpart.cpp:196
+#: plugins/forms/kexiformpart.cpp:212
 msgid "To Tallest"
 msgstr "Ба хеле дароз"
 
-#: plugins/forms/kexiformpart.cpp:197
+#: plugins/forms/kexiformpart.cpp:213
 msgid "To Narrowest"
 msgstr "Ба хеле борик"
 
-#: plugins/forms/kexiformpart.cpp:198
+#: plugins/forms/kexiformpart.cpp:214
 msgid "To Widest"
 msgstr "Ба хеле васеъ"
 
-#: plugins/forms/kexiformpart.cpp:405
+#: plugins/forms/kexiformpart.cpp:421
 #, fuzzy
 msgid "Design of form \"%1\" has been modified."
 msgstr ""
 "<p>Ин ашё намуди зайлро дорад: %1 \"%2\".</p>"
 "<p>Шумо мехоҳед инро нигоҳ доред?</p>"
 
-#: plugins/forms/kexiformpart.cpp:407
+#: plugins/forms/kexiformpart.cpp:423
 #, fuzzy
 msgid "Form \"%1\" already exists."
 msgstr "Асоси маълумоти \"%1\" аллакай вуҷуд дорад."
@@ -3825,21 +3863,21 @@ msgstr "Филтр"
 msgid "Insert Image From File"
 msgstr ""
 
-#: plugins/forms/widgets/kexidbimagebox.cpp:412
-#: plugins/forms/widgets/kexidbimagebox.cpp:416
+#: plugins/forms/widgets/kexidbimagebox.cpp:392
+#: plugins/forms/widgets/kexidbimagebox.cpp:396
 #, fuzzy
 msgid "Save Image To File"
 msgstr "Нигоҳ доштани барои Файл..."
 
-#: plugins/forms/widgets/kexidbimagebox.cpp:578
+#: plugins/forms/widgets/kexidbimagebox.cpp:558
 msgid "Click to show actions for this Image Box"
 msgstr ""
 
-#: plugins/forms/widgets/kexidbimagebox.cpp:580
+#: plugins/forms/widgets/kexidbimagebox.cpp:560
 msgid "Click to show actions for \"%1\" Image Box"
 msgstr ""
 
-#: plugins/forms/widgets/kexidbimagebox.cpp:653
+#: plugins/forms/widgets/kexidbimagebox.cpp:633
 msgid "No Image"
 msgstr ""
 
@@ -4482,6 +4520,9 @@ msgid ""
 "this table are opened:"
 msgstr ""
 
+#~ msgid "\"%1\" database property not found"
+#~ msgstr "\"%1\" ҳосияти асосӣ маълумот кофта наёфт"
+
 #~ msgid "Entered value is invalid."
 #~ msgstr "Маънои вори карда шуд нодуруст."
 
@@ -4639,10 +4680,6 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Return description."
-#~ msgstr "&Нақша кашидан"
-
-#, fuzzy
-#~ msgid "Set description."
 #~ msgstr "&Нақша кашидан"
 
 #, fuzzy
