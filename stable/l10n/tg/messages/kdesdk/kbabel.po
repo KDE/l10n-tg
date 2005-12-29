@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kbabel\n"
-"POT-Creation-Date: 2005-12-27 03:15+0100\n"
+"POT-Creation-Date: 2005-12-29 03:16+0100\n"
 "PO-Revision-Date: 2005-09-23 17:37+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -37,7 +37,7 @@ msgstr "Тарҷума нокарда"
 msgid "Total"
 msgstr "Ҳамагӣ"
 
-#: catalogmanager/catalogmanagerview.cpp:93 catalogmanager/future.cpp:6
+#: catalogmanager/catalogmanagerview.cpp:93 catalogmanager/future.cpp:5
 #, fuzzy
 msgid "CVS/SVN Status"
 msgstr "Вазъияти CVS"
@@ -251,14 +251,18 @@ msgid "An error occurred while processing \"msgfmt --statistics\""
 msgstr "Хато ҳангоми оғози дастури \"msgfmt --statistics\""
 
 #: catalogmanager/catalogmanagerview.cpp:841
-msgid "Can not execute msgfmt. Please make sure you have msgfmt in your PATH!"
+#: catalogmanager/catalogmanagerview.cpp:930
+#, fuzzy
+msgid ""
+"Cannot execute msgfmt. Please make sure that you have msgfmt in your PATH."
 msgstr ""
 "Натавонистам msgfmt-ро оғоз кунам. Лутфан мутмаин шавед, ки msgfmt дар "
-"каталоге, ки бо тағйирёбандаи PATH ишора шудааст, мавҷуд аст!"
+"каталоге, ки бо тағйирёбандаи PATH ишора шудааст, мавҷуд аст."
 
 #: catalogmanager/catalogmanagerview.cpp:846
 #: catalogmanager/catalogmanagerview.cpp:935 kbabel/kbabelview.cpp:1657
-msgid "You can use gettext tools only for checking GNU PO files."
+#, fuzzy
+msgid "You can use gettext tools only for checking PO files."
 msgstr ""
 "Шумо метавонед асбобҳои gettext-ро танҳо барои тафтиши файлҳои GNU истифода "
 "баред."
@@ -327,12 +331,6 @@ msgid ""
 "folder"
 msgstr "Хато ҳангоми иҷрои \"msgfmt --statistics *.po\" дар маълумоти феҳрист"
 
-#: catalogmanager/catalogmanagerview.cpp:930
-msgid "Cannot execute msgfmt. Please make sure you have msgfmt in your PATH."
-msgstr ""
-"Натавонистам msgfmt-ро оғоз кунам. Лутфан мутмаин шавед, ки msgfmt дар "
-"каталоге, ки бо тағйирёбандаи PATH ишора шудааст, мавҷуд аст."
-
 #: catalogmanager/catalogmanagerview.cpp:1502
 msgid "Do you really want to delete the file %1?"
 msgstr "Оё шумо дар ҳақиқат мехоҳед, ки файли %1-ро нест кунед?"
@@ -369,12 +367,14 @@ msgid "Reading file information"
 msgstr "Хондани маълумот оиди файл"
 
 #: catalogmanager/catalogmanagerview.cpp:3017
+#: catalogmanager/validateprogress.cpp:98
+#, fuzzy
 msgid ""
-"Can not instantiate a validation tool.\n"
-"Please, check your installation."
+"Cannot instantiate a validation tool.\n"
+"Please check your installation."
 msgstr ""
 "Натавонистам асбоби озмоишро оғоз кунам.\n"
-"Марҳамат намуда сабти худро тафтиш намоед."
+"Марҳамат карда сабти худро тафтиш намоед."
 
 #: catalogmanager/catalogmanagerview.cpp:3018
 #: catalogmanager/validateprogress.cpp:99
@@ -416,14 +416,6 @@ msgstr "&Кушодан"
 msgid "&Ignore"
 msgstr "&Аҳамият надодан"
 
-#: catalogmanager/validateprogress.cpp:98
-msgid ""
-"Cannot instantiate a validation tool.\n"
-"Please, check your installation."
-msgstr ""
-"Натавонистам асбоби озмоишро оғоз кунам.\n"
-"Марҳамат карда сабти худро тафтиш намоед."
-
 #: catalogmanager/validateprogress.cpp:186
 msgid ""
 "Validation done.\n"
@@ -451,14 +443,16 @@ msgid "KBabel - Catalog Manager"
 msgstr "KBabel - мудири каталогҳо"
 
 #: catalogmanager/main.cpp:185
-msgid "An advanced catalog manager for KBabel, PO file editor"
+#, fuzzy
+msgid "An advanced catalog manager for KBabel"
 msgstr ""
 "Мудири каталогҳо барои муҳаррири файлҳои тарҷумавии KBabel ва файли таҳриргари "
 "РО"
 
-#: catalogmanager/main.cpp:186
-msgid "(c) 1999,2000,2001,2002,2003 The KBabel developers"
-msgstr "(c) 1999-2003 Ташкилкунандагони KBabel"
+#: catalogmanager/main.cpp:186 kbabel/main.cpp:510
+#, fuzzy
+msgid "(c) 1999,2000,2001,2002,2003,2004,2005,2006 The KBabel developers"
+msgstr "(c) 1999,2000,2001,2002,2003,2004 The KBabel developers"
 
 #: catalogmanager/main.cpp:188 kbabel/main.cpp:512 kbabeldict/main.cpp:118
 msgid "Original author"
@@ -647,20 +641,20 @@ msgstr "&Мактубҳои кӯҳна:"
 msgid "&Log message:"
 msgstr "&Паём дар бораи қайдкунӣ:"
 
-#: catalogmanager/future.cpp:36 catalogmanager/libcvs/cvsdialog.cpp:113
+#: catalogmanager/libcvs/cvsdialog.cpp:113
 msgid "E&ncoding:"
 msgstr "&Рамзгузорӣ:"
 
 #: catalogmanager/libcvs/cvsdialog.cpp:120
 msgid ""
 "_: Descriptive encoding name\n"
-"Recommended (%1)"
+"Recommended ( %1 )"
 msgstr ""
 
 #: catalogmanager/libcvs/cvsdialog.cpp:121
 msgid ""
 "_: Descriptive encoding name\n"
-"Locale (%1)"
+"Locale ( %1 )"
 msgstr ""
 
 #: catalogmanager/libcvs/cvsdialog.cpp:132
@@ -693,34 +687,34 @@ msgstr "&Бекор кардан"
 msgid "Command output:"
 msgstr "Хурӯҷи фармон:"
 
-#: catalogmanager/future.cpp:43 catalogmanager/libcvs/cvsdialog.cpp:236
+#: catalogmanager/libcvs/cvsdialog.cpp:236
 #: catalogmanager/libsvn/svndialog.cpp:233
 #, fuzzy
 msgid "The commit log message is empty. Do you want to continue?"
 msgstr "Файли %1 аллакай мавҷуд аст. Оё мехоҳед, ки  онро кучонед?"
 
-#: catalogmanager/future.cpp:35 catalogmanager/libcvs/cvsdialog.cpp:246
+#: catalogmanager/libcvs/cvsdialog.cpp:246
 #, c-format
 msgid "Cannot find encoding: %1"
 msgstr ""
 
-#: catalogmanager/future.cpp:37 catalogmanager/libcvs/cvsdialog.cpp:252
+#: catalogmanager/libcvs/cvsdialog.cpp:252
 msgid ""
 "The commit log message cannot be encoded in the selected encoding: %1.\n"
 "Do you want to continue?"
 msgstr ""
 
-#: catalogmanager/future.cpp:45 catalogmanager/libcvs/cvsdialog.cpp:267
+#: catalogmanager/libcvs/cvsdialog.cpp:267
 #: catalogmanager/libsvn/svndialog.cpp:247
 msgid "Cannot open temporary file for writing. Aborting."
 msgstr ""
 
-#: catalogmanager/future.cpp:46 catalogmanager/libcvs/cvsdialog.cpp:279
+#: catalogmanager/libcvs/cvsdialog.cpp:279
 #: catalogmanager/libsvn/svndialog.cpp:259
 msgid "Cannot write to temporary file. Aborting."
 msgstr ""
 
-#: catalogmanager/future.cpp:44 catalogmanager/libcvs/cvsdialog.cpp:321
+#: catalogmanager/libcvs/cvsdialog.cpp:321
 #: catalogmanager/libsvn/svndialog.cpp:301
 #, fuzzy
 msgid "The process could not be started."
@@ -744,30 +738,30 @@ msgstr "&Намоиши фарқият"
 #: catalogmanager/libcvs/cvsdialog.cpp:406
 msgid ""
 "_: Descriptive encoding name\n"
-"Last choice (%1)"
+"Last choice ( %1 )"
 msgstr ""
 
-#: catalogmanager/future.cpp:5 catalogmanager/libsvn/svndialog.cpp:65
+#: catalogmanager/libsvn/svndialog.cpp:65
 #, fuzzy
 msgid "SVN Dialog"
 msgstr "Гуфтугӯи CVS"
 
-#: catalogmanager/future.cpp:14 catalogmanager/libsvn/svndialog.cpp:80
+#: catalogmanager/libsvn/svndialog.cpp:80
 #, fuzzy
 msgid "Get remote status for the following files:"
 msgstr "Вазъияти файлҳои зеринро қабул намоед:"
 
-#: catalogmanager/future.cpp:15 catalogmanager/libsvn/svndialog.cpp:83
+#: catalogmanager/libsvn/svndialog.cpp:83
 #, fuzzy
 msgid "Get local status for the following files:"
 msgstr "Вазъияти файлҳои зеринро қабул намоед:"
 
-#: catalogmanager/future.cpp:20 catalogmanager/libsvn/svndialog.cpp:89
+#: catalogmanager/libsvn/svndialog.cpp:89
 #, fuzzy
 msgid "Get information for the following files:"
 msgstr "Замимаи файлҳои навбатиро қабул намоед:"
 
-#: catalogmanager/future.cpp:21 catalogmanager/libsvn/svndialog.cpp:145
+#: catalogmanager/libsvn/svndialog.cpp:145
 #, fuzzy
 msgid "&Get Information"
 msgstr "Маълумот оиди каталог"
@@ -845,95 +839,46 @@ msgstr ""
 msgid "SVN"
 msgstr ""
 
-#: catalogmanager/catmanlistitem.cpp:450 catalogmanager/catmanlistitem.cpp:637
-#: catalogmanager/future.cpp:7
-msgid "No version control"
-msgstr ""
-
-#: catalogmanager/catalogmanager.cpp:456 catalogmanager/future.cpp:10
-#, fuzzy
-msgid "Status (Local)"
-msgstr "Вазъияти LED-ҳо"
-
-#: catalogmanager/catalogmanager.cpp:458 catalogmanager/future.cpp:11
-#, fuzzy
-msgid "Status (Local) for Marked"
-msgstr "Вазъияти интихоб карда шуда"
-
-#: catalogmanager/catalogmanager.cpp:460 catalogmanager/future.cpp:12
-#, fuzzy
-msgid "Status (Remote)"
-msgstr "Вазъият: "
-
-#: catalogmanager/catalogmanager.cpp:462 catalogmanager/future.cpp:13
-#, fuzzy
-msgid "Status (Remote) for Marked"
-msgstr "Вазъияти интихоб карда шуда"
-
-#: catalogmanager/catalogmanager.cpp:466 catalogmanager/future.cpp:18
-#, fuzzy
-msgid "Show Information"
-msgstr "Маълумот оиди каталог"
-
-#: catalogmanager/catalogmanager.cpp:468 catalogmanager/future.cpp:19
-#, fuzzy
-msgid "Show Information for Marked"
-msgstr "Вазъияти интихоб карда шуда"
-
-#: catalogmanager/future.cpp:24
+#: catalogmanager/future.cpp:8
 msgid "Resolved"
 msgstr ""
 
-#: catalogmanager/future.cpp:25
+#: catalogmanager/future.cpp:9
 #, fuzzy
 msgid "Resolved for Marked"
 msgstr "Вазъияти интихоб карда шуда"
 
-#: catalogmanager/future.cpp:26
+#: catalogmanager/future.cpp:10
 #, fuzzy
 msgid "Revert"
 msgstr "&Баргардондан"
 
-#: catalogmanager/future.cpp:27
+#: catalogmanager/future.cpp:11
 #, fuzzy
 msgid "Revert for Marked"
 msgstr "Вазъияти интихоб карда шуда"
 
-#: catalogmanager/future.cpp:28
+#: catalogmanager/future.cpp:12
 #, fuzzy
 msgid "Cleanup"
 msgstr "&Пок кардан"
 
-#: catalogmanager/future.cpp:29
+#: catalogmanager/future.cpp:13
 #, fuzzy
 msgid "Cleanup for Marked"
 msgstr "Вазъияти интихоб карда шуда"
 
-#: catalogmanager/future.cpp:32
-msgid ""
-"_: Descriptive encoding name\n"
-"Last choice ( %1 )"
-msgstr ""
-
-#: catalogmanager/future.cpp:33
-msgid ""
-"_: Descriptive encoding name\n"
-"Recommended ( %1 )"
-msgstr ""
-
-#: catalogmanager/future.cpp:34
-msgid ""
-"_: Descriptive encoding name\n"
-"Locale ( %1 )"
-msgstr ""
-
-#: catalogmanager/future.cpp:40
+#: catalogmanager/future.cpp:16
 msgid "No repository"
 msgstr "Ҳеҷ хел захира нест"
 
 #: catalogmanager/catmanlistitem.cpp:80
 msgid "Message Catalogs"
 msgstr "Каталогҳои мактуб"
+
+#: catalogmanager/catmanlistitem.cpp:450 catalogmanager/catmanlistitem.cpp:637
+msgid "No version control"
+msgstr ""
 
 #: catalogmanager/catalogmanager.cpp:127 kbabel/kbabel.cpp:129
 #: kbabel/kbabel.cpp:145 kbabel/kbabel.cpp:1750
@@ -1153,6 +1098,36 @@ msgstr "Вазъияти интихоб карда шуда"
 msgid "Show Diff"
 msgstr "Намоиши фарқият"
 
+#: catalogmanager/catalogmanager.cpp:456
+#, fuzzy
+msgid "Status (Local)"
+msgstr "Вазъияти LED-ҳо"
+
+#: catalogmanager/catalogmanager.cpp:458
+#, fuzzy
+msgid "Status (Local) for Marked"
+msgstr "Вазъияти интихоб карда шуда"
+
+#: catalogmanager/catalogmanager.cpp:460
+#, fuzzy
+msgid "Status (Remote)"
+msgstr "Вазъият: "
+
+#: catalogmanager/catalogmanager.cpp:462
+#, fuzzy
+msgid "Status (Remote) for Marked"
+msgstr "Вазъияти интихоб карда шуда"
+
+#: catalogmanager/catalogmanager.cpp:466
+#, fuzzy
+msgid "Show Information"
+msgstr "Маълумот оиди каталог"
+
+#: catalogmanager/catalogmanager.cpp:468
+#, fuzzy
+msgid "Show Information for Marked"
+msgstr "Вазъияти интихоб карда шуда"
+
 #: catalogmanager/catalogmanager.cpp:485 catalogmanager/catalogmanager.cpp:500
 msgid "Update Templates"
 msgstr "Бозсозии қолибҳо"
@@ -1195,8 +1170,9 @@ msgstr ""
 #: catalogmanager/catalogmanager.cpp:724 catalogmanager/catalogmanager.cpp:754
 #: catalogmanager/catalogmanager.cpp:784 catalogmanager/catalogmanager.cpp:804
 #: catalogmanager/catalogmanager.cpp:824
+#, fuzzy
 msgid ""
-"Can not send a message to KBabel.\n"
+"Cannot send a message to KBabel.\n"
 "Please check your installation of KDE."
 msgstr ""
 "Натавонистам мактубро ба КBabel бифиристам.\n"
@@ -1250,10 +1226,6 @@ msgstr "Натавонистам KBabel-ро оғоз кунам"
 #: catalogmanager/catalogmanager.cpp:1079
 msgid "Search string not found!"
 msgstr "Сатри дархостӣ ёфт нашуд!"
-
-#: catalogmanager/catalogmanager.cpp:1197 kbabel/kbabel.cpp:1709
-msgid "*|All Files"
-msgstr "*|Ҳамаи файлҳо"
 
 #: catalogmanager/catalogmanager.cpp:1219
 #, c-format
@@ -1338,9 +1310,10 @@ msgid "Expected tag 'exp'"
 msgstr ""
 
 #: datatools/not-translated/main.cc:60
+#, fuzzy
 msgid ""
 "_: which check found errors\n"
-"english text in translation"
+"English text in translation"
 msgstr "Дар тарҷума матни англисӣ мавҷуд аст"
 
 #: datatools/punctuation/main.cc:58
@@ -2887,11 +2860,6 @@ msgstr "KBabel"
 msgid "An advanced PO file editor"
 msgstr "Муҳаррири файлҳои тарҷумаи пешакӣ"
 
-#: kbabel/main.cpp:510
-#, fuzzy
-msgid "(c) 1999,2000,2001,2002,2003,2004,2005 The KBabel developers"
-msgstr "(c) 1999,2000,2001,2002,2003,2004 The KBabel developers"
-
 #: kbabel/main.cpp:516
 msgid ""
 "Wrote the dictionary plugin for searching in a database and some other code."
@@ -3090,10 +3058,11 @@ msgid "faulty"
 msgstr "нодуруст"
 
 #: kbabel/kbabelview.cpp:443
+#, fuzzy
 msgid ""
 "<qt>"
-"<p><b>Status LEDS</b></p>\n"
-"<p>These LEDS display the status of the currently displayed message.\n"
+"<p><b>Status LEDs</b></p>\n"
+"<p>These LEDs display the status of the currently displayed message.\n"
 "You can change their color in the preferences dialog section\n"
 "<b>Editor</b> on page <b>Appearance</b></p></qt>"
 msgstr ""
@@ -3319,10 +3288,6 @@ msgid ""
 msgstr ""
 "Ҷудосозу ивазшавандаи содир наметавонад ин намуди файлро идора кунад:\n"
 "%1"
-
-#: kbabel/kbabelview.cpp:1521 kbabel/kbabelview2.cpp:694
-msgid "*.po *.pot|Gettext Files"
-msgstr "*.po *.pot|Файлҳои Матни гирифташуда"
 
 #: kbabel/kbabelview.cpp:1529
 msgid ""
@@ -6397,3 +6362,22 @@ msgstr "Ба &поён ҳаракат намоед"
 #: kbabeldict/dictchooser.cpp:90
 msgid "Con&figure..."
 msgstr "Танзи&мот..."
+
+#~ msgid "Can not execute msgfmt. Please make sure you have msgfmt in your PATH!"
+#~ msgstr "Натавонистам msgfmt-ро оғоз кунам. Лутфан мутмаин шавед, ки msgfmt дар каталоге, ки бо тағйирёбандаи PATH ишора шудааст, мавҷуд аст!"
+
+#~ msgid ""
+#~ "Can not instantiate a validation tool.\n"
+#~ "Please, check your installation."
+#~ msgstr ""
+#~ "Натавонистам асбоби озмоишро оғоз кунам.\n"
+#~ "Марҳамат намуда сабти худро тафтиш намоед."
+
+#~ msgid "(c) 1999,2000,2001,2002,2003 The KBabel developers"
+#~ msgstr "(c) 1999-2003 Ташкилкунандагони KBabel"
+
+#~ msgid "*|All Files"
+#~ msgstr "*|Ҳамаи файлҳо"
+
+#~ msgid "*.po *.pot|Gettext Files"
+#~ msgstr "*.po *.pot|Файлҳои Матни гирифташуда"
