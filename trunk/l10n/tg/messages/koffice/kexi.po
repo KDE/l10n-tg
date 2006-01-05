@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
-"POT-Creation-Date: 2006-01-04 09:07+0100\n"
+"POT-Creation-Date: 2006-01-05 08:46+0100\n"
 "PO-Revision-Date: 2004-08-02 18:06+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team:  Tajik\n"
@@ -169,68 +169,68 @@ msgstr "Барои намуди mime \"%1\" қисмҳои модул вуҷуд
 msgid "Context Help"
 msgstr "Матни Кӯмак"
 
-#: core/kexiproject.cpp:180
+#: core/kexiproject.cpp:194
 #, fuzzy
 msgid "Could not open project \"%1\"."
 msgstr "Нақшаи \"%1\"кушода намешавад"
 
-#: core/kexiproject.cpp:205
+#: core/kexiproject.cpp:227
 #, fuzzy
 msgid "Could not create project \"%1\"."
 msgstr "Нақшаи \"%1\"сохта намешавад"
 
-#: core/kexiproject.cpp:247 core/kexiproject.cpp:303
+#: core/kexiproject.cpp:269 core/kexiproject.cpp:325
 #, fuzzy
 msgid "Project major version"
 msgstr "Сарлавҳаи нақша: "
 
-#: core/kexiproject.cpp:249 core/kexiproject.cpp:305
+#: core/kexiproject.cpp:271 core/kexiproject.cpp:327
 #, fuzzy
 msgid "Project minor version"
 msgstr "Нақшаи муносибатҳо"
 
-#: core/kexiproject.cpp:251
+#: core/kexiproject.cpp:273
 #, fuzzy
 msgid "Project caption"
 msgstr "Сарлавҳаи нақша: "
 
-#: core/kexiproject.cpp:253
+#: core/kexiproject.cpp:275
 #, fuzzy
 msgid "Project description"
 msgstr "&Нақша кашидан"
 
-#: core/kexiproject.cpp:663
+#: core/kexiproject.cpp:685
 msgid "Opening object \"%1\" failed."
 msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
 
-#: core/kexiproject.cpp:723 main/keximainwindowimpl.cpp:3252
+#: core/kexiproject.cpp:745 main/keximainwindowimpl.cpp:3368
 msgid "Could not set empty name for this object."
 msgstr "Наметавонад номи роҳхати холиро барои ин ашё"
 
-#: core/kexiproject.cpp:727
+#: core/kexiproject.cpp:749
 msgid "Could not use this name. Object with name \"%1\" already exists."
 msgstr ""
 "Наметавонад истифода кардани ин ном. Ашё бо номи \"%1\" алакай баромадагӣ. "
 
-#: core/kexiproject.cpp:734
+#: core/kexiproject.cpp:756
 msgid "Could not rename object \"%1\"."
 msgstr "Мавзӯъи \"%1\" ба номи дигар сохта намешавад."
 
-#: core/kexiproject.cpp:850
+#: core/kexiproject.cpp:872
 #, fuzzy
 msgid "Warning: entire project's data will be removed."
 msgstr "Нигоҳ доштани таърихи мавзӯъи нодуруст."
 
-#: core/kexiproject.cpp:865
+#: core/kexiproject.cpp:887
 #, fuzzy
 msgid ""
-"The project \"%1\" already exists.\n"
+"The project %1 already exists.\n"
 "Do you want to replace it with a new, blank one?"
 msgstr ""
 "Файли\"%1\" аллакай вуҷуд дорад..\n"
 " Мехоҳед онро аз сари нав нависед?"
 
-#: core/kexiproject.cpp:892
+#: core/kexiproject.cpp:915
 #, fuzzy
 msgid "Do you want to drop the project \"%1\"?"
 msgstr ""
@@ -279,11 +279,11 @@ msgstr ""
 
 #: core/kexicmdlineargs.h:50
 msgid ""
-"Specifies a type of a file provided\n"
-"as argument. This option is useful\n"
+"Specify a type of a file provided\n"
+"as argument. This option is only useful\n"
 "if your filename has not set a valid \n"
-"extension and it's type cannot be detected\n"
-"unambiguously by looking at it's contents.\n"
+"extension and its type cannot be detected\n"
+"unambiguously by looking at its contents.\n"
 "This option is ignored if no file\n"
 "is specified as an argument.\n"
 "Available file types are:\n"
@@ -293,12 +293,25 @@ msgid ""
 "- \"connection\" for a database connection data.\n"
 msgstr ""
 
-#: core/kexicmdlineargs.h:64
+#: core/kexicmdlineargs.h:65
+msgid ""
+"\n"
+"Specify a database connection shortcut .kexic\n"
+"file containing connection data.\n"
+"Can be used with --createdb or --create-opendb\n"
+"for convenience instead of using options like \n"
+"--user, --host or --port.\n"
+"Note: Options like --user, --host have\n"
+"precedence over settings defined in the shortcut\n"
+"file."
+msgstr ""
+
+#: core/kexicmdlineargs.h:74
 #, fuzzy
 msgid "Options related to opening objects within a project:"
 msgstr "Тайер намудани нақшаи нав"
 
-#: core/kexicmdlineargs.h:66
+#: core/kexicmdlineargs.h:76
 #, fuzzy
 msgid ""
 "\n"
@@ -319,83 +332,71 @@ msgstr ""
 " дар оғози аппликация кушоед.\n"
 "<object_type>: "
 
-#: core/kexicmdlineargs.h:78
+#: core/kexicmdlineargs.h:88
 #, fuzzy
 msgid ""
 "\n"
 "Like --open, but the object will\n"
-"be opened in Design Mode, if one is available"
+"be opened in Design Mode, if one is available."
 msgstr ""
 "Мехоҳед--кушодан,лекин ин ашё мешавад\n"
 "кушодани ин нақшсозӣ ,агар яке аз онҳо махфи бошад"
 
-#: core/kexicmdlineargs.h:81
+#: core/kexicmdlineargs.h:91
 #, fuzzy
 msgid ""
 "\n"
 "Like --open, but the object will\n"
-"be opened in Text Mode, if one is available"
+"be opened in Text Mode, if one is available."
 msgstr ""
 "Мехоҳед--кушодан,лекин ин ашё мешавад\n"
 " кушодани ин матн ,агар яке аз онҳо махфи бошад"
 
-#: core/kexicmdlineargs.h:84
-msgid "Start new object design of type <object_type>"
+#: core/kexicmdlineargs.h:94
+#, fuzzy
+msgid "Start new object design of type <object_type>."
 msgstr "Сари кардани дизайни мавзӯъи нав аз рӯи намуд <object_type>"
 
-#: core/kexicmdlineargs.h:86
+#: core/kexicmdlineargs.h:96
 #, fuzzy
 msgid ""
 "\n"
-"Open object of type <object_type>\n"
-"and name <object_name> from specified project\n"
-"on application start for quick printing\n"
+"Open Print dialog window for object of type\n"
+"<object_type> and name <object_name> in specified\n"
+"project on application start for quick printing\n"
 "of the object's data.\n"
 "<object_type>: is optional, if omitted - table\n"
-"type is assumed.\n"
-"Other object types can be query, report, form,\n"
-"script (may be more or less, depending on your\n"
-"plugins installed).\n"
-"Use \"\" chars to specify names containing spaces.\n"
-"Examples: --print MyTable,\n"
-" --print query:\"My very big query\""
+"type is assumed. Object type can be also query."
 msgstr ""
 "Навъи мавзӯъи <object_type>\n"
 " ва номи <object_name>-ро аз нақшаи номбаршуда \n"
 " дар оғози аппликация кушоед.\n"
 "<object_type>: "
 
-#: core/kexicmdlineargs.h:99
+#: core/kexicmdlineargs.h:103
 msgid ""
 "\n"
 "Open Print Preview window for object\n"
 "of type <object_type> and name <object_name>\n"
 "from specified project on application start.\n"
-"See --print for more details"
+"See --print for more details."
 msgstr ""
 
-#: core/kexicmdlineargs.h:105
-msgid ""
-"Start project in the Final Mode, regardless \n"
-"of the project settings"
-msgstr ""
-"Оғози нақша дар охири намуд,хоҳиши \n"
-"  ,ба танзимдарори дар нақша "
-
-#: core/kexicmdlineargs.h:108
+#: core/kexicmdlineargs.h:112
+#, fuzzy
 msgid ""
 "Start project in the Design Mode, regardless \n"
-"of the project settings"
+"of the project settings."
 msgstr ""
 "Оғози нақша дар нақшасозии намуди,хоҳиши \n"
 "  ,ба танзимдарори дар нақша "
 
-#: core/kexicmdlineargs.h:113
+#: core/kexicmdlineargs.h:117
 #, fuzzy
 msgid "Options related to database servers:"
 msgstr "Ба сервери асоси маълумот пайваст нашудааст."
 
-#: core/kexicmdlineargs.h:116
+#: core/kexicmdlineargs.h:120
 msgid ""
 "User name to be used\n"
 "for connecting to a database project.\n"
@@ -403,7 +404,7 @@ msgid ""
 "is provided."
 msgstr ""
 
-#: core/kexicmdlineargs.h:127
+#: core/kexicmdlineargs.h:131
 msgid ""
 "Server (host) name to be used\n"
 "for connecting to a database project.\n"
@@ -411,7 +412,7 @@ msgid ""
 "is provided."
 msgstr ""
 
-#: core/kexicmdlineargs.h:132
+#: core/kexicmdlineargs.h:136
 msgid ""
 "Server's port number to be used\n"
 "for connecting to a database project.\n"
@@ -419,7 +420,7 @@ msgid ""
 "is provided."
 msgstr ""
 
-#: core/kexicmdlineargs.h:137
+#: core/kexicmdlineargs.h:141
 msgid ""
 "Server's local socket filename\n"
 "to be used for connecting to a database\n"
@@ -427,13 +428,20 @@ msgid ""
 "is provided."
 msgstr ""
 
-#: core/kexicmdlineargs.h:144
+#: core/kexicmdlineargs.h:146
+msgid ""
+"Skip displaying connection dialog window\n"
+"and connect directly. Available when\n"
+"opening .kexic or .kexis shortcut files."
+msgstr ""
+
+#: core/kexicmdlineargs.h:152
 #, fuzzy
 msgid ""
 "Kexi database project's filename\n"
 "or Kexi shortcut's filename\n"
 "or Kexi database project's name\n"
-"on a server to open"
+"on a server to open."
 msgstr "Нақшаи файли  асоси маълумот(ё ин ки роҳи кӯтоҳи файл) барои кушодан"
 
 #: core/kexipart.cpp:259
@@ -483,6 +491,13 @@ msgstr "%1 барои тафсири %2 of %3 гузориш."
 #, fuzzy
 msgid "\"%1\" function is not available for version %2 of %3 application."
 msgstr "%1 барои тафсири %2 of %3 гузориш."
+
+#: core/kexiprojectdata.cpp:154
+#, fuzzy
+msgid ""
+"_: database connection\n"
+"(connection %1)"
+msgstr "Асоси маълумоти Алоқа"
 
 #: core/kexiuseractionmethod.cpp:19
 msgid "Open Object"
@@ -537,12 +552,12 @@ msgid ""
 "You can correct data in this row or use \"Cancel row changes\" function."
 msgstr ""
 
-#: main/kexibrowser.cpp:80 main/keximainwindowimpl.cpp:593
+#: main/kexibrowser.cpp:80 main/keximainwindowimpl.cpp:610
 msgid "Project Navigator"
 msgstr "Нақшаи Дарёнавард"
 
 #: main/kexibrowser.cpp:104 main/startup/KexiProjectSelector.cpp:243
-#: main/startup/KexiStartup.cpp:338 widget/kexidbconnectionwidget.cpp:330
+#: main/startup/KexiStartup.cpp:357 widget/kexidbconnectionwidget.cpp:330
 #: widget/kexidbconnectionwidget.cpp:345
 msgid "&Open"
 msgstr "&Кушодан"
@@ -601,13 +616,14 @@ msgstr "Таърихи қатори ҷадвали интихоботии ҳоз
 msgid "Prints data from the currently selected table or query."
 msgstr "Як қатори холӣ дар болои қатори интихоботии ҳозираи ҷадвалро монед."
 
-#: main/kexibrowser.cpp:174 main/printing/kexisimpleprintingwindow.cpp:85
-msgid "Print Previe&w..."
-msgstr ""
-
-#: main/kexibrowser.cpp:177
+#: main/kexibrowser.cpp:174
 #, fuzzy
-msgid "Shows print preview for the currently selected table or query."
+msgid "Page Setup..."
+msgstr "&Андоза:"
+
+#: main/kexibrowser.cpp:177 main/keximainwindowimpl.cpp:527
+#, fuzzy
+msgid "Shows page setup for printing the active table or query."
 msgstr "Як қатори холӣ дар болои қатори интихоботии ҳозираи ҷадвалро монед."
 
 #: main/kexibrowser.cpp:183
@@ -726,194 +742,208 @@ msgstr ""
 msgid "We are sorry, templates are not yet available."
 msgstr "Мо афсӯс мехӯрем, templates ҳоло дастрас нест."
 
-#: main/startup/KexiStartupDialog.cpp:183
+#: main/startup/KexiStartupDialog.cpp:189
 msgid "Create Project"
 msgstr "Нақшаро созед"
 
-#: main/startup/KexiStartupDialog.cpp:185
+#: main/startup/KexiStartupDialog.cpp:191
 msgid "Open Existing Project"
 msgstr "Нақшаи Мавҷудбударо Созед"
 
 #: main/startup/KexiProjectSelector.cpp:222
-#: main/startup/KexiStartupDialog.cpp:187
+#: main/startup/KexiStartupDialog.cpp:193
 msgid "Open Recent Project"
 msgstr "Нақшаи Навро Кушоед"
 
-#: main/startup/KexiStartupDialog.cpp:189
+#: main/startup/KexiStartupDialog.cpp:195
 #, fuzzy
 msgid "Choose Project"
 msgstr "Нақшаро интихоб кунед"
 
-#: main/startup/KexiStartupDialog.cpp:336
+#: main/startup/KexiStartupDialog.cpp:342
 msgid "&Create Project"
 msgstr "&Нақшаро созед"
 
-#: main/startup/KexiStartupDialog.cpp:350
+#: main/startup/KexiStartupDialog.cpp:356
 msgid "Don't show me this dialog again"
 msgstr "Ин гуфтугӯро бори дигар ба ман нишон надиҳед"
 
-#: main/startup/KexiStartupDialog.cpp:359
+#: main/startup/KexiStartupDialog.cpp:368
+msgid "Click \"OK\" button to proceed."
+msgstr ""
+
+#: main/startup/KexiStartupDialog.cpp:370
 #, fuzzy
 msgid "Blank Database"
 msgstr "Бланк Асоси маълумот"
 
-#: main/startup/KexiStartupDialog.cpp:359
+#: main/startup/KexiStartupDialog.cpp:370
 msgid "New Blank Database Project"
 msgstr "Бланкаи Нави Асоси маълумот"
 
-#: main/startup/KexiStartupDialog.cpp:364
-msgid "Kexi will create a new blank database. Click \"OK\" button to proceed."
+#: main/startup/KexiStartupDialog.cpp:373
+#, fuzzy
+msgid "Kexi will create a new blank database project."
 msgstr ""
 "Kexi бланкаи нави асоси маълумотро месозад. Нуқтаи \"OK\"-ро барои давом додан "
 "зер кунед ."
 
-#: main/startup/KexiStartupDialog.cpp:373
-msgid "Personal Databases"
-msgstr "Асоси маълумотҳои шахсӣ"
+#: main/startup/KexiStartupDialog.cpp:382
+#, fuzzy
+msgid ""
+"Import Existing\n"
+"Database"
+msgstr "Асоси маълумотро интихоб кунед"
 
-#: main/startup/KexiStartupDialog.cpp:373
-msgid "New Personal Database Project Templates"
-msgstr "Нақшаи нави асоси маълумоти Templates -и шахсӣ"
+#: main/startup/KexiStartupDialog.cpp:382
+msgid "Import Existing Database as New Database Project"
+msgstr ""
 
-#: main/startup/KexiStartupDialog.cpp:383
-msgid "Business Databases"
-msgstr "Вазифаи Асосҳои маълумот"
+#: main/startup/KexiStartupDialog.cpp:386
+msgid ""
+"Kexi will import structure and data of an existing database as new database "
+"project."
+msgstr ""
 
-#: main/startup/KexiStartupDialog.cpp:383
-msgid "New Business Database Project Templates"
-msgstr "Нақшаи Нави Асосҳои маълумоти Templates"
-
-#: main/startup/KexiStartupDialog.cpp:405
+#: main/startup/KexiStartupDialog.cpp:437
 msgid "CD Catalog"
 msgstr "Каталоги CD"
 
-#: main/startup/KexiStartupDialog.cpp:406
+#: main/startup/KexiStartupDialog.cpp:438
 msgid "Easy-to-use database for storing information about your CD collection."
 msgstr ""
 "Асоси маълумоти муқаррарӣ дар истифода барои нигоҳдории ахборот дар бораи "
 "коллексияи CD-ҳо."
 
-#: main/startup/KexiStartupDialog.cpp:408
+#: main/startup/KexiStartupDialog.cpp:440
 msgid "Expenses"
 msgstr "Хароҷот"
 
-#: main/startup/KexiStartupDialog.cpp:409
+#: main/startup/KexiStartupDialog.cpp:441
 msgid "A database for managing your personal expenses."
 msgstr "Асосҳои маълумот барои идораи хароҷотхои шахсии шумо."
 
-#: main/startup/KexiStartupDialog.cpp:411
+#: main/startup/KexiStartupDialog.cpp:443
 msgid "Image Gallery"
 msgstr "Тапсвири Галерея"
 
-#: main/startup/KexiStartupDialog.cpp:412
+#: main/startup/KexiStartupDialog.cpp:444
 msgid "A database for archiving your image collection in a form of gallery."
 msgstr ""
 "Асоси маълумот барои дастрас кардани коллекцияи тасвири шумо дар шакли галерея "
 "аст."
 
-#: main/startup/KexiStartupDialog.cpp:420
+#: main/startup/KexiStartupDialog.cpp:452
 msgid "Address Book"
 msgstr "Дафтари Хотира"
 
-#: main/startup/KexiStartupDialog.cpp:421
+#: main/startup/KexiStartupDialog.cpp:453
 msgid "A database that offers you a contact information"
 msgstr "Асоси маълумот,ки барои шумо алоқаи ахборотро пешниҳод мекунад"
 
-#: main/startup/KexiStartupDialog.cpp:529
+#: main/startup/KexiStartupDialog.cpp:568
 msgid "Open &Existing Project"
 msgstr "&Нақшаи мавҷудбударо кушоед"
 
-#: main/startup/KexiStartupDialog.cpp:612
+#: main/startup/KexiStartupDialog.cpp:651
 msgid "Open &Recent Project"
 msgstr "&Нақшаи навро кушоед"
 
-#: main/startup/KexiStartup.cpp:218
+#: main/startup/KexiStartup.cpp:221
+msgid ""
+"Could not read connection information from connection shortcut file <nobr>"
+"\"%1\"</nobr>."
+"<br>"
+"<br>Check whether the file has valid contents."
+msgstr ""
+
+#: main/startup/KexiStartup.cpp:234
 msgid ""
 "You have specified invalid argument (\"%1\") for \"type\" command-line option."
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:273
+#: main/startup/KexiStartup.cpp:292
 msgid "You have specified invalid port number \"%1\"."
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:293
+#: main/startup/KexiStartup.cpp:312
 msgid "Could not start Kexi application this way."
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:297
+#: main/startup/KexiStartup.cpp:316
 msgid "You have used both \"createdb\" and \"dropdb\" startup options."
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:303
+#: main/startup/KexiStartup.cpp:322
 #, fuzzy
 msgid "No project name specified."
 msgstr "Пурсишро таъйин накардан"
 
-#: main/startup/KexiStartup.cpp:312
+#: main/startup/KexiStartup.cpp:331
 #, fuzzy
 msgid "Opening database"
 msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
 
-#: main/startup/KexiStartup.cpp:313
+#: main/startup/KexiStartup.cpp:332
 #, fuzzy
 msgid "Please enter the password."
 msgstr "Марҳамад,номро дохил кунед."
 
-#: main/startup/KexiStartup.cpp:320
+#: main/startup/KexiStartup.cpp:339
 #, fuzzy
 msgid "local database server"
 msgstr "Номи файл барои файли драйвери манбаи асоси маълумот интизор аст. "
 
-#: main/startup/KexiStartup.cpp:321
+#: main/startup/KexiStartup.cpp:340
 #, fuzzy, c-format
 msgid "Database server: %1"
 msgstr "Хатоии Асосӣ Маълумот"
 
-#: main/startup/KexiStartup.cpp:325
+#: main/startup/KexiStartup.cpp:344
 msgid ""
 "_: unspecified user\n"
 "(unspecified)"
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:328
+#: main/startup/KexiStartup.cpp:347
 #, fuzzy, c-format
 msgid "Username: %1"
 msgstr "Номи истифодакунанда:"
 
-#: main/startup/KexiStartup.cpp:337
+#: main/startup/KexiStartup.cpp:356
 #, fuzzy
 msgid "&Details"
 msgstr "&Таърих"
 
-#: main/startup/KexiStartup.cpp:362
+#: main/startup/KexiStartup.cpp:381
 #, fuzzy
 msgid "You have used both \"final-mode\" and \"design-mode\" startup options."
 msgstr ""
 "Шумо метавонед гузоред ҳардуро \"final-mode\" ва \"design-mode\" оғози ҳуқуқи "
 "интихоб.Наметавонед оғози Kexi истифодабариро бо ин роҳ."
 
-#: main/startup/KexiStartup.cpp:380
+#: main/startup/KexiStartup.cpp:400
 #, fuzzy
 msgid ""
 "Could not remove project.\n"
 "The file \"%1\" does not exist."
 msgstr "<qt>Файли\"%1\"вуҷуд надорад."
 
-#: main/startup/KexiStartup.cpp:422
+#: main/startup/KexiStartup.cpp:442
 #, fuzzy
 msgid ""
 "Could not open shortcut file\n"
 "\"%1\"."
 msgstr "Нақшаи \"%1\"кушода намешавад"
 
-#: main/startup/KexiStartup.cpp:455
+#: main/startup/KexiStartup.cpp:475
 #, fuzzy
 msgid ""
 "Could not open connection data file\n"
 "\"%1\"."
 msgstr "Нақшаи \"%1\"кушода намешавад"
 
-#: main/startup/KexiStartup.cpp:538
+#: main/startup/KexiStartup.cpp:561
 msgid ""
 "You have specified a few database objects to be opened automatically, using "
 "startup options.\n"
@@ -921,68 +951,83 @@ msgid ""
 "dropping projects."
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:554
+#: main/startup/KexiStartup.cpp:577
 msgid "Project \"%1\" created successfully."
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:564
+#: main/startup/KexiStartup.cpp:587
 msgid "Project \"%1\" dropped successfully."
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:674
+#: main/startup/KexiStartup.cpp:702 main/startup/KexiStartup.cpp:733
 #, fuzzy
-msgid ""
-"<qt>"
-"<p>Could not load project.</p>"
-"<p>The file <nobr>\"%1\"</nobr> does not exist.</p></qt>"
+msgid "<p>Could not open project.</p>"
+msgstr "Нақшаи \"%1\"кушода намешавад"
+
+#: main/startup/KexiStartup.cpp:703
+#, fuzzy
+msgid "<p>The file <nobr>\"%1\"</nobr> does not exist or is not readable.</p>"
 msgstr "<qt>Файли\"%1\"вуҷуд надорад."
 
-#: main/startup/KexiStartup.cpp:712
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:181
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:187
+#: main/startup/KexiStartup.cpp:705 main/startup/KexiStartup.cpp:736
+msgid ""
+"Check the file's permissions and whether it is already opened and locked by "
+"another application."
+msgstr ""
+
+#: main/startup/KexiStartup.cpp:734
+#, fuzzy
+msgid "<p>The file <nobr>\"%1\"</nobr> is not readable.</p>"
+msgstr "Файли \"%1\" хондан намешавад."
+
+#: main/startup/KexiStartup.cpp:756
 msgid ""
 "\"%1\" is an external file of type:\n"
 "\"%2\".\n"
 "Do you want to import the file as a Kexi project?"
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:715
+#: main/startup/KexiStartup.cpp:759
 #, fuzzy
 msgid "Open External File"
 msgstr "Файлро кушоед"
 
-#: main/startup/KexiStartup.cpp:715
+#: main/startup/KexiStartup.cpp:759
 #, fuzzy
 msgid "Import..."
 msgstr "&Воридот"
 
-#: main/startup/KexiStartup.cpp:735
+#: main/startup/KexiStartup.cpp:779
 msgid ""
 "The project file \"%1\" is recognized as compatible with \"%2\" database "
 "driver, while you have asked for \"%3\" database driver to be used.\n"
 "Do you want to use \"%4\" database driver?"
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:756
+#: main/startup/KexiStartup.cpp:801
 msgid ""
 "Previous version of database file format (\"%1\") is detected in the \"%2\" "
 "project file.\n"
 "Do you want to convert the project to a new \"%3\" format (recommended)?"
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:767
+#: main/startup/KexiStartup.cpp:812
 msgid ""
 "Failed to convert project file \"%1\" to a new \"%2\" format.\n"
 "The file format remains unchanged."
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:779
+#: main/startup/KexiStartup.cpp:824
 msgid "Possible problems:"
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:783
+#: main/startup/KexiStartup.cpp:828
 msgid "The file \"%1\" is not recognized as being supported by Kexi."
 msgstr "Файли \"%1\"аз тарафи Kexi.тасдиқ нашудааст."
 
-#: main/startup/KexiStartup.cpp:785
+#: main/startup/KexiStartup.cpp:831
 #, fuzzy, c-format
 msgid ""
 "Database driver for this file type not found.\n"
@@ -991,13 +1036,13 @@ msgstr ""
 "<qt>Драйвери асоси маълумот барои ин намуди файл ёфт нашудааст."
 "<p> Навъи MIME : %1 маълум шудааст"
 
-#: main/startup/KexiStartup.cpp:809 main/startup/KexiStartup.cpp:813
+#: main/startup/KexiStartup.cpp:856 main/startup/KexiStartup.cpp:860
 #, fuzzy
 msgid ""
 "Could not load list of available projects for <b>%1</b> database server."
 msgstr "Рӯйхати нақшаҳои нақд барои алоқа бор карда намешаванд \"%1\""
 
-#: main/startup/KexiStartup.cpp:844
+#: main/startup/KexiStartup.cpp:891
 #, fuzzy
 msgid ""
 "Failed saving connection data to\n"
@@ -1104,85 +1149,85 @@ msgstr ""
 "<b>Нақша бо номи асоси маълумоти\"%1\"аллакай вуҷуд дорад </b>"
 "<p> Шумо мехоҳед ин нобуд кардан ва  навро созед?"
 
-#. i18n: file data/kexiui.rc line 120
-#: main/keximainwindowimpl.cpp:226 main/keximainwindowimpl.cpp:273 rc.cpp:114
+#. i18n: file data/kexiui.rc line 121
+#: main/keximainwindowimpl.cpp:227 main/keximainwindowimpl.cpp:274 rc.cpp:114
 #, no-c-format
 msgid "&Window"
 msgstr "&Тиреза"
 
-#: main/keximainwindowimpl.cpp:229
+#: main/keximainwindowimpl.cpp:230
 msgid "Task Bar"
 msgstr "Панели масъала"
 
-#: main/keximainwindowimpl.cpp:248
+#: main/keximainwindowimpl.cpp:249
 msgid ""
 "_: Close the current tab page in Kexi tab interface\n"
 "Close the current tab"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:344
+#: main/keximainwindowimpl.cpp:345
 msgid ""
 "User interface mode will be switched to IDEAl at next %1 application startup."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:370
+#: main/keximainwindowimpl.cpp:371
 msgid ""
 "User interface mode will be switched to Childframe at next %1 application "
 "startup."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:397
+#: main/keximainwindowimpl.cpp:398
 msgid "&New..."
 msgstr "&Нав..."
 
-#: main/keximainwindowimpl.cpp:399
+#: main/keximainwindowimpl.cpp:400
 msgid "Create a new project"
 msgstr "Тайер намудани нақшаи нав"
 
-#: main/keximainwindowimpl.cpp:400
+#: main/keximainwindowimpl.cpp:401
 msgid "Creates a new project. Currently opened project is not affected."
 msgstr "Калонии нақшаи нав .Ҷойгирбуда кушодаги нақша наметавонад кор кардан."
 
-#: main/keximainwindowimpl.cpp:403
+#: main/keximainwindowimpl.cpp:404
 msgid "Open an existing project"
 msgstr "Кушодани нақшаи мавҷудбуда"
 
-#: main/keximainwindowimpl.cpp:404
+#: main/keximainwindowimpl.cpp:405
 msgid "Opens an existing project. Currently opened project is not affected."
 msgstr ""
 "Кушодани нақшаи мавҷудбуда.Ҷойгирбуда кушодаги нақша наметавонад кор кардан."
 
-#: main/keximainwindowimpl.cpp:407
+#: main/keximainwindowimpl.cpp:408
 #, fuzzy
 msgid "&Download Example Databases..."
 msgstr "Ҷои таъиншудаи воридот"
 
-#: main/keximainwindowimpl.cpp:409
+#: main/keximainwindowimpl.cpp:410
 msgid "Download example databases from the Internet"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:410
+#: main/keximainwindowimpl.cpp:411
 #, fuzzy
 msgid "Downloads example databases from the Internet."
 msgstr "Ҷои таъиншудаи воридот"
 
-#: main/keximainwindowimpl.cpp:437
+#: main/keximainwindowimpl.cpp:439
 msgid "Save object changes"
 msgstr "Тағйиротҳои мавзӯъ нигоҳ доред"
 
-#: main/keximainwindowimpl.cpp:438
+#: main/keximainwindowimpl.cpp:440
 msgid "Saves object changes from currently selected window."
 msgstr "Тағйиротҳои мавзӯъ нигоҳ доред аз тирезаи интихоботии ҳозира."
 
-#: main/keximainwindowimpl.cpp:441
+#: main/keximainwindowimpl.cpp:443
 msgid "Save &As..."
 msgstr "Нигоҳ доштан &Чун..."
 
-#: main/keximainwindowimpl.cpp:443 main/keximainwindowimpl.cpp:2257
+#: main/keximainwindowimpl.cpp:445 main/keximainwindowimpl.cpp:2366
 msgid "Save object as"
 msgstr "Нигоҳ доред мавзӯъ ҳамчун"
 
-#: main/keximainwindowimpl.cpp:445
+#: main/keximainwindowimpl.cpp:447
 msgid ""
 "Saves object changes from currently selected window under a new name (within "
 "the same project)."
@@ -1190,460 +1235,494 @@ msgstr ""
 "Тағйиротҳои мавзӯъ нигоҳ доред аз тирезаи интихоботии ҳозира дар таҳти номи "
 "дигар (бо ҳамин нақша)."
 
-#: main/keximainwindowimpl.cpp:447
+#: main/keximainwindowimpl.cpp:449
 msgid "Project Properties"
 msgstr "Нақшаи ҳосиятҳо"
 
-#: main/keximainwindowimpl.cpp:454
+#: main/keximainwindowimpl.cpp:456
 msgid "&Close Project"
 msgstr "&Нақшаро пӯшидан"
 
-#: main/keximainwindowimpl.cpp:456
+#: main/keximainwindowimpl.cpp:458
 msgid "Close the current project"
 msgstr "Нақшаи ҳозира пӯшидан"
 
-#: main/keximainwindowimpl.cpp:457
+#: main/keximainwindowimpl.cpp:459
 msgid "Closes the current project."
 msgstr "Нақшаи ҳозира пӯшидан."
 
-#: main/keximainwindowimpl.cpp:462
+#: main/keximainwindowimpl.cpp:464
 msgid "&Relationships..."
 msgstr "&Муносибатҳо..."
 
-#: main/keximainwindowimpl.cpp:464
+#: main/keximainwindowimpl.cpp:466
 msgid "Project relationships"
 msgstr "Нақшаи муносибатҳо"
 
-#: main/keximainwindowimpl.cpp:465
+#: main/keximainwindowimpl.cpp:467
 msgid "Shows project relationships."
 msgstr "Нақшаи муносибатҳо нишон додан."
 
-#: main/keximainwindowimpl.cpp:471
+#: main/keximainwindowimpl.cpp:474
 #, fuzzy
 msgid "&Import Database..."
 msgstr "Ҷои таъиншудаи воридот"
 
-#: main/keximainwindowimpl.cpp:473
+#: main/keximainwindowimpl.cpp:476
 msgid "Import entire database as a Kexi Project"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:474
+#: main/keximainwindowimpl.cpp:477
 msgid "Imports entire database as a Kexi Project."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:480
+#: main/keximainwindowimpl.cpp:484
 msgid ""
 "_: Import->Data Table...\n"
 "Data &Table..."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:483
+#: main/keximainwindowimpl.cpp:488
 #, fuzzy
 msgid "Import table data from a file"
 msgstr "Ҷадвали мавҷудбуда"
 
-#: main/keximainwindowimpl.cpp:484
+#: main/keximainwindowimpl.cpp:489
 #, fuzzy
 msgid "Imports table data from a file."
 msgstr "Ҷадвали мавҷудбуда"
 
-#: main/keximainwindowimpl.cpp:489
+#: main/keximainwindowimpl.cpp:494
 msgid ""
 "_: Export->Table or Query as Data Table...\n"
 "Table or Query as Data &Table..."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:493
+#: main/keximainwindowimpl.cpp:499
 msgid "Export data from the active table or query data to a file"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:495
+#: main/keximainwindowimpl.cpp:501
 msgid "Exports data from the active table or query data to a file."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:504
+#: main/keximainwindowimpl.cpp:510
 msgid "Print data from the active table or query"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:505
+#: main/keximainwindowimpl.cpp:511
 msgid "Prints data from the active table or query."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:510
+#: main/keximainwindowimpl.cpp:517
 msgid "Show print preview for the active table or query"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:512
+#: main/keximainwindowimpl.cpp:519
 msgid "Shows print preview for the active table or query."
 msgstr ""
 
 #: main/keximainwindowimpl.cpp:521
+#: main/printing/kexisimpleprintpreviewwindow.cpp:159
+#, fuzzy
+msgid "Page Set&up..."
+msgstr "&Андоза:"
+
+#: main/keximainwindowimpl.cpp:525
+#, fuzzy
+msgid "Show page setup for printing the active table or query"
+msgstr "Як қатори холӣ дар болои қатори интихоботии ҳозираи ҷадвалро монед."
+
+#: main/keximainwindowimpl.cpp:536
 msgid ""
 "_: Paste Special->As Data &Table...\n"
 "As Data &Table..."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:525
+#: main/keximainwindowimpl.cpp:540
 msgid "Paste clipboard data to a new table"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:527
+#: main/keximainwindowimpl.cpp:542
 msgid "Pastes clipboard data to a new table."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:533
+#: main/keximainwindowimpl.cpp:548
 msgid ""
 "_: Copy Special->Table or Query As Data Table...\n"
 "Table or Query As Data Table..."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:537
+#: main/keximainwindowimpl.cpp:552
 #, fuzzy
 msgid "Copy selected table or query data to clipboard"
 msgstr "Дар хотир нусҳа бардоред"
 
-#: main/keximainwindowimpl.cpp:539
+#: main/keximainwindowimpl.cpp:554
 msgid "Copies selected table or query data to clipboard."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:548
+#: main/keximainwindowimpl.cpp:557
+#, fuzzy
+msgid "Reverts the most recent editing action."
+msgstr "&Нақша кашидан"
+
+#: main/keximainwindowimpl.cpp:559
+msgid "Reverts the most recent undo action."
+msgstr ""
+
+#: main/keximainwindowimpl.cpp:565
 msgid "Delete object"
 msgstr "Мавзӯъро нобуд кардан"
 
-#: main/keximainwindowimpl.cpp:549
+#: main/keximainwindowimpl.cpp:566
 msgid "Deletes currently selected object."
 msgstr "Мавзӯъи интихоботии равон нобуд кунед."
 
-#: main/keximainwindowimpl.cpp:551
+#: main/keximainwindowimpl.cpp:568
 msgid "Delete Row"
 msgstr "Хориҷ кардан қатор"
 
-#: main/keximainwindowimpl.cpp:553
+#: main/keximainwindowimpl.cpp:570
 #, fuzzy
 msgid "Delete currently selected row from a table"
 msgstr "Қатори интихоботии ҳозира аз ҷадвал нобуд кардан."
 
-#: main/keximainwindowimpl.cpp:554
+#: main/keximainwindowimpl.cpp:571
 msgid "Deletes currently selected row from a table."
 msgstr "Қатори интихоботии ҳозира аз ҷадвал нобуд кунед."
 
-#: main/keximainwindowimpl.cpp:556
+#: main/keximainwindowimpl.cpp:573
 msgid "Clear Table Contents"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:558
+#: main/keximainwindowimpl.cpp:575
 #, fuzzy
 msgid "Clear table contents"
 msgstr "Мазмунҳои асосӣ маълумоти нодуруст. "
 
-#: main/keximainwindowimpl.cpp:559
+#: main/keximainwindowimpl.cpp:576
 #, fuzzy
 msgid "Clears table contents."
 msgstr "Мазмунҳои асосӣ маълумоти нодуруст. "
 
-#: main/keximainwindowimpl.cpp:562
+#: main/keximainwindowimpl.cpp:579
 #, fuzzy
 msgid "Edit Item"
 msgstr "&Иловаи ҷузъ"
 
-#: main/keximainwindowimpl.cpp:563
+#: main/keximainwindowimpl.cpp:580
 #, fuzzy
 msgid "Edit currently selected item"
 msgstr "Мавзӯъи интихоботии равон нобуд кунед."
 
-#: main/keximainwindowimpl.cpp:564
+#: main/keximainwindowimpl.cpp:581
 #, fuzzy
 msgid "Edits currently selected item."
 msgstr "Мавзӯъи интихоботии равон нобуд кунед."
 
-#: main/keximainwindowimpl.cpp:566
+#: main/keximainwindowimpl.cpp:583
 msgid "&Insert Empty Row"
 msgstr "&Мондани қатори холӣ"
 
-#: main/keximainwindowimpl.cpp:568
+#: main/keximainwindowimpl.cpp:585
 msgid "Insert one empty row above"
 msgstr "Як қатори холӣ дар болои мондан"
 
-#: main/keximainwindowimpl.cpp:569
+#: main/keximainwindowimpl.cpp:586
 msgid "Inserts one empty row above currently selected table row."
 msgstr "Як қатори холӣ дар болои қатори интихоботии ҳозираи ҷадвалро монед."
 
-#: main/keximainwindowimpl.cpp:572
+#: main/keximainwindowimpl.cpp:589
 msgid "&Data View"
 msgstr "&Таърихи Намоиш"
 
-#: main/keximainwindowimpl.cpp:576
+#: main/keximainwindowimpl.cpp:593
 #, fuzzy
 msgid "Switch to data view"
 msgstr "Дар ҳолати намоиши таърихро дохил кардан"
 
-#: main/keximainwindowimpl.cpp:577
+#: main/keximainwindowimpl.cpp:594
 #, fuzzy
 msgid "Switches to data view."
 msgstr "Дар ҳолати намоиши таърихро дохил кунед."
 
-#: main/keximainwindowimpl.cpp:579
+#: main/keximainwindowimpl.cpp:596
 msgid "D&esign View"
 msgstr "Н&ақша кашидан Намоиш"
 
-#: main/keximainwindowimpl.cpp:583
+#: main/keximainwindowimpl.cpp:600
 #, fuzzy
 msgid "Switch to design view"
 msgstr "Дар ҳолати намоиши дизайнро дохил кардан"
 
-#: main/keximainwindowimpl.cpp:584
+#: main/keximainwindowimpl.cpp:601
 #, fuzzy
 msgid "Switches to design view."
 msgstr "Дар ҳолати намоиши дизайнро дохил кунед."
 
-#: main/keximainwindowimpl.cpp:586
+#: main/keximainwindowimpl.cpp:603
 msgid "&Text View"
 msgstr "&Намоиши Матн"
 
-#: main/keximainwindowimpl.cpp:590
+#: main/keximainwindowimpl.cpp:607
 #, fuzzy
 msgid "Switch to text view"
 msgstr "Дар ҳолати намоиши матнро дохил кардан"
 
-#: main/keximainwindowimpl.cpp:591
+#: main/keximainwindowimpl.cpp:608
 #, fuzzy
 msgid "Switches to text view."
 msgstr "Дар ҳолати намоиши матнро дохил кунед."
 
-#: main/keximainwindowimpl.cpp:595
+#: main/keximainwindowimpl.cpp:612
 #, fuzzy
 msgid "Go to project navigator panel"
 msgstr "Рафтан ба панели навигатори проект"
 
-#: main/keximainwindowimpl.cpp:596
+#: main/keximainwindowimpl.cpp:613
 #, fuzzy
 msgid "Goes to project navigator panel."
 msgstr "Равед ба панели навигатори проект."
 
-#: main/keximainwindowimpl.cpp:599
+#: main/keximainwindowimpl.cpp:616
 msgid "Property Editor"
 msgstr "Муҳаррири ҳосият"
 
-#: main/keximainwindowimpl.cpp:601
+#: main/keximainwindowimpl.cpp:618
 #, fuzzy
 msgid "Go to property editor panel"
 msgstr "Рафтан ба панели муҳаррири ҳосият"
 
-#: main/keximainwindowimpl.cpp:602
+#: main/keximainwindowimpl.cpp:619
 #, fuzzy
 msgid "Goes to property editor panel."
 msgstr "Равед ба панели муҳаррири ҳосият."
 
-#: main/keximainwindowimpl.cpp:606
+#: main/keximainwindowimpl.cpp:623
 msgid "&Save Row"
 msgstr "&Нигоҳ доштан Қатор"
 
-#: main/keximainwindowimpl.cpp:607
+#: main/keximainwindowimpl.cpp:624
 msgid "Save currently selected table row's data"
 msgstr "Нигоҳ доштани таърихи қатори ҷадвали интихоботии ҳозира"
 
-#: main/keximainwindowimpl.cpp:608
+#: main/keximainwindowimpl.cpp:625
 msgid "Saves currently selected table row's data."
 msgstr "Таърихи қатори ҷадвали интихоботии ҳозира нигоҳ доред."
 
-#: main/keximainwindowimpl.cpp:611
+#: main/keximainwindowimpl.cpp:628
 msgid "&Cancel Row Changes"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:612
+#: main/keximainwindowimpl.cpp:629
 #, fuzzy
 msgid "Cancel changes made to currently selected table row"
 msgstr "Як қатори холӣ дар болои қатори интихоботии ҳозираи ҷадвалро монед."
 
-#: main/keximainwindowimpl.cpp:613
+#: main/keximainwindowimpl.cpp:630
 #, fuzzy
 msgid "Cancels changes made to currently selected table row."
 msgstr "Як қатори холӣ дар болои қатори интихоботии ҳозираи ҷадвалро монед."
 
-#: main/keximainwindowimpl.cpp:616
+#: main/keximainwindowimpl.cpp:633
 #, fuzzy
 msgid "&Filter"
 msgstr "Филтр"
 
-#: main/keximainwindowimpl.cpp:622
+#: main/keximainwindowimpl.cpp:639
 #, fuzzy
 msgid "&Ascending"
 msgstr "Баланд шудан"
 
-#: main/keximainwindowimpl.cpp:624
+#: main/keximainwindowimpl.cpp:641
 msgid "Sort data in ascending order"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:625
+#: main/keximainwindowimpl.cpp:642
 msgid ""
 "Sorts data in ascending order (from A to Z and from 0 to 9). Data from selected "
 "column is used for sorting."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:627
+#: main/keximainwindowimpl.cpp:644
 #, fuzzy
 msgid "&Descending"
 msgstr "Паст шудан"
 
-#: main/keximainwindowimpl.cpp:629
+#: main/keximainwindowimpl.cpp:646
 msgid "Sort data in descending order"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:630
+#: main/keximainwindowimpl.cpp:647
 msgid ""
 "Sorts data in descending (from Z to A and from 9 to 0). Data from selected "
 "column is used for sorting."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:633
+#: main/keximainwindowimpl.cpp:650
 msgid "&Font..."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:634
+#: main/keximainwindowimpl.cpp:651
 #, fuzzy
 msgid "Change font for selected object"
 msgstr "Мавзӯъи интихоботии равон нобуд кунед."
 
-#: main/keximainwindowimpl.cpp:635
+#: main/keximainwindowimpl.cpp:652
 #, fuzzy
 msgid "Changes font for selected object."
 msgstr "Мавзӯъи интихоботии равон нобуд кунед."
 
-#: main/keximainwindowimpl.cpp:648
+#: main/keximainwindowimpl.cpp:665
 #, fuzzy
 msgid "&Next Window"
 msgstr "&Тиреза"
 
-#: main/keximainwindowimpl.cpp:655
+#: main/keximainwindowimpl.cpp:672
 #, fuzzy
 msgid "Next window"
 msgstr "Қатори оянда"
 
-#: main/keximainwindowimpl.cpp:656
+#: main/keximainwindowimpl.cpp:673
 #, fuzzy
 msgid "Switches to the next window."
 msgstr "Дар ҳолати намоиши матнро дохил кунед."
 
-#: main/keximainwindowimpl.cpp:658
+#: main/keximainwindowimpl.cpp:675
 #, fuzzy
 msgid "&Previous Window"
 msgstr "Қатори Пешина"
 
-#: main/keximainwindowimpl.cpp:665
+#: main/keximainwindowimpl.cpp:682
 #, fuzzy
 msgid "Previous window"
 msgstr "Қатори Пешина"
 
-#: main/keximainwindowimpl.cpp:666
+#: main/keximainwindowimpl.cpp:683
 #, fuzzy
 msgid "Switches to the previous window."
 msgstr "Дар ҳолати намоиши таърихро дохил кунед."
 
-#: main/keximainwindowimpl.cpp:671
+#: main/keximainwindowimpl.cpp:688
 msgid "Lets you configure shortcut keys."
 msgstr "Гузоштани ба шумо танзими тугмачаҳои тез."
 
-#: main/keximainwindowimpl.cpp:675
+#: main/keximainwindowimpl.cpp:692
 msgid "Lets you configure toolbars."
 msgstr "Гузоштани ба шумо танзими пайраҳаҳои асбоб."
 
-#: main/keximainwindowimpl.cpp:678
+#: main/keximainwindowimpl.cpp:695
 #: plugins/importexport/csv/kexicsvwidgets.cpp:55
 msgid "Other"
 msgstr "Дигар"
 
-#: main/keximainwindowimpl.cpp:681
+#: main/keximainwindowimpl.cpp:698
 msgid "Show Context Help"
 msgstr "Намоиши Матни Кӯмак"
 
-#: main/keximainwindowimpl.cpp:684
+#: main/keximainwindowimpl.cpp:701
 msgid "Hide Context Help"
 msgstr "Кӯмаки матн пинҳон кунед"
 
-#: main/keximainwindowimpl.cpp:694
+#: main/keximainwindowimpl.cpp:711
 msgid "Enable Forms"
 msgstr "Шаклҳо имкон додан"
 
-#: main/keximainwindowimpl.cpp:696
+#: main/keximainwindowimpl.cpp:713
 msgid "Disable Forms"
 msgstr "Шаклҳои имкон надодан"
 
-#: main/keximainwindowimpl.cpp:721
+#: main/keximainwindowimpl.cpp:738
 msgid "Lets you configure Kexi."
 msgstr "Гузоштани ба шумо танзими Kexi."
 
-#: main/keximainwindowimpl.cpp:727
+#: main/keximainwindowimpl.cpp:744
 msgid "This shows useful tips on the use of this application."
 msgstr "Ин  ҷои намоишҳои истифодашаванда дар истифодаи ин хоҳиш. "
 
-#: main/keximainwindowimpl.cpp:730 main/keximainwindowimpl.cpp:3370
+#: main/keximainwindowimpl.cpp:747 main/keximainwindowimpl.cpp:3486
 msgid "Important Information"
 msgstr "Ахбороти муҳим"
 
-#: main/keximainwindowimpl.cpp:737
+#: main/keximainwindowimpl.cpp:754
 msgid "Give Feedback..."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:898
+#: main/keximainwindowimpl.cpp:913
 msgid "reason:"
 msgstr "сабаб:"
 
-#: main/keximainwindowimpl.cpp:945
+#: main/keximainwindowimpl.cpp:930
+msgid ""
+"<qt>Database project %1 appears to be not created using Kexi."
+"<br>"
+"<br>Do you want to import it as a new Kexi project?</qt>"
+msgstr ""
+
+#: main/keximainwindowimpl.cpp:932
+#, fuzzy
+msgid ""
+"_: Import Database\n"
+"&Import..."
+msgstr "Ҷои таъиншудаи воридот"
+
+#: main/keximainwindowimpl.cpp:973
 #, fuzzy
 msgid "cannot create object - unknown object type \"%1\""
 msgstr "мавзӯъи намуди \"%1\" сохта наметавонад"
 
-#: main/keximainwindowimpl.cpp:948
+#: main/keximainwindowimpl.cpp:976
 msgid "unknown object type \"%1\""
 msgstr "навъи мавзӯъи номаълум \"%1\""
 
-#: main/keximainwindowimpl.cpp:956
+#: main/keximainwindowimpl.cpp:984
 msgid "cannot create object of type \"%1\""
 msgstr "мавзӯъи намуди \"%1\" сохта наметавонад"
 
-#: main/keximainwindowimpl.cpp:970
+#: main/keximainwindowimpl.cpp:998
 msgid "making print preview for"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:972
+#: main/keximainwindowimpl.cpp:1000
 #, fuzzy
 msgid "printing"
 msgstr "&Воридот"
 
-#: main/keximainwindowimpl.cpp:974
+#: main/keximainwindowimpl.cpp:1002
 #, fuzzy
 msgid "opening"
 msgstr "Баҳор"
 
-#: main/keximainwindowimpl.cpp:978
+#: main/keximainwindowimpl.cpp:1006
 #, fuzzy
 msgid "table not found"
 msgstr "мавзӯъ ёфт нашудааст"
 
-#: main/keximainwindowimpl.cpp:980
+#: main/keximainwindowimpl.cpp:1008
 #, fuzzy
 msgid "query not found"
 msgstr "мавзӯъ ёфт нашудааст"
 
-#: main/keximainwindowimpl.cpp:982
+#: main/keximainwindowimpl.cpp:1010
 msgid "object not found"
 msgstr "мавзӯъ ёфт нашудааст"
 
-#: main/keximainwindowimpl.cpp:991
+#: main/keximainwindowimpl.cpp:1019
 #, fuzzy
 msgid "cannot print object"
 msgstr "мавзӯъ кушода намешавад"
 
-#: main/keximainwindowimpl.cpp:1000
+#: main/keximainwindowimpl.cpp:1028
 #, fuzzy
 msgid "cannot make print preview of object"
 msgstr "мавзӯъ кушода намешавад"
 
-#: main/keximainwindowimpl.cpp:1017
+#: main/keximainwindowimpl.cpp:1045
 msgid "cannot open object"
 msgstr "мавзӯъ кушода намешавад"
 
-#: main/keximainwindowimpl.cpp:1028
+#: main/keximainwindowimpl.cpp:1056
 #, fuzzy
 msgid ""
 "You have requested selected objects to be automatically opened or processed on "
@@ -1652,110 +1731,110 @@ msgstr ""
 "Барои худкори кушода шудан ба пайдоиш, шумо мавзӯъҳои интихобшу-даро хостед. "
 "Якчанд мавзӯъҳо кушода намешаванд."
 
-#: main/keximainwindowimpl.cpp:2198
+#: main/keximainwindowimpl.cpp:2307
 #, fuzzy
 msgid "Recently Opened Databases"
 msgstr "Асоси маълумоти нав"
 
-#: main/keximainwindowimpl.cpp:2217
+#: main/keximainwindowimpl.cpp:2326
 #, fuzzy
 msgid "Recently Connected Database Servers"
 msgstr "Ба сервери асоси маълумот пайваст нашудааст."
 
-#: main/keximainwindowimpl.cpp:2309
+#: main/keximainwindowimpl.cpp:2425
 msgid "From File..."
 msgstr "Аз Файл..."
 
-#: main/keximainwindowimpl.cpp:2314
+#: main/keximainwindowimpl.cpp:2430
 msgid "From Server..."
 msgstr "Аз Сервер..."
 
-#: main/keximainwindowimpl.cpp:2375
+#: main/keximainwindowimpl.cpp:2491
 #, fuzzy
 msgid "Selected view is not supported for \"%1\" object."
 msgstr "Интихоби  намуди   тариқа наметавонад барои ашёи \"%1\" ."
 
-#: main/keximainwindowimpl.cpp:2377
+#: main/keximainwindowimpl.cpp:2493
 #, fuzzy
 msgid "Selected view (%1) is not supported by this object type (%2)"
 msgstr ""
 "Интихоби намуди шакли фаъолият (%1) наметавонад нигоҳдорад  намуди ин ашёро "
 "(%2)"
 
-#: main/keximainwindowimpl.cpp:2389
+#: main/keximainwindowimpl.cpp:2505
 msgid "Switching to other view failed (%1)."
 msgstr "Хомуш сохтани дигар намуди файлҳои (%1)."
 
-#: main/keximainwindowimpl.cpp:2563
+#: main/keximainwindowimpl.cpp:2679
 msgid "Save Object As"
 msgstr "Нигоҳ доштани мавзӯъ ҳамчун"
 
-#: main/keximainwindowimpl.cpp:2583
+#: main/keximainwindowimpl.cpp:2699
 #, fuzzy
 msgid "Do you want to replace it?"
 msgstr "Шумо нест кардан мехоҳед:"
 
-#: main/keximainwindowimpl.cpp:2584
+#: main/keximainwindowimpl.cpp:2700 migration/importwizard.cpp:814
 #, fuzzy
 msgid "&Replace"
 msgstr "&Номгузории дубора"
 
-#: main/keximainwindowimpl.cpp:2585
+#: main/keximainwindowimpl.cpp:2701
 #, fuzzy
 msgid "&Choose Other Name..."
 msgstr "Марҳамад,номро дохил кунед."
 
-#: main/keximainwindowimpl.cpp:2599
+#: main/keximainwindowimpl.cpp:2715
 #, fuzzy
 msgid "Please choose other name."
 msgstr "Марҳамад,номро дохил кунед."
 
-#: main/keximainwindowimpl.cpp:2623
+#: main/keximainwindowimpl.cpp:2739
 msgid "Saving \"%1\" object failed."
 msgstr "Нигоҳ доред \"%1\" мавзӯъ нодуруст."
 
-#: main/keximainwindowimpl.cpp:2640
+#: main/keximainwindowimpl.cpp:2756
 msgid "Saving new \"%1\" object failed."
 msgstr "Мавзӯъи нодурусти нав \"%1\" нигоҳ доред."
 
-#: main/keximainwindowimpl.cpp:2684 main/keximainwindowimpl.cpp:3639
+#: main/keximainwindowimpl.cpp:2800 main/keximainwindowimpl.cpp:3808
 #, fuzzy
 msgid "Save changes"
 msgstr "Тағйиротҳои мавзӯъ нигоҳ доред"
 
-#: main/keximainwindowimpl.cpp:2686 main/keximainwindowimpl.cpp:3641
+#: main/keximainwindowimpl.cpp:2802 main/keximainwindowimpl.cpp:3810
 msgid ""
 "Pressing this button will save all recent changes made in \"%1\" object."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:2690
+#: main/keximainwindowimpl.cpp:2806
 msgid ""
 "Pressing this button will discard all recent changes made in \"%1\" object."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:2706
+#: main/keximainwindowimpl.cpp:2822
 #, fuzzy
 msgid "Do you want to save changes?"
 msgstr "Шумо метавонед ин алоқа нобуд кардан ?"
 
-#: main/keximainwindowimpl.cpp:3201
+#: main/keximainwindowimpl.cpp:3317
 msgid ""
 "Do you want to permanently delete:\n"
 "%1\n"
 "If you click Yes, you will not be able to undo the deletion."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:3242
+#: main/keximainwindowimpl.cpp:3358
 #, fuzzy
 msgid "Could not remove object."
 msgstr "Маълумоти мавзӯъро ҳаракат кардан натавонист."
 
-#: main/keximainwindowimpl.cpp:3260
+#: main/keximainwindowimpl.cpp:3376
 #, fuzzy
 msgid "Renaming object \"%1\" failed."
 msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
 
-#: main/keximainwindowimpl.cpp:3411
+#: main/keximainwindowimpl.cpp:3527
 msgid ""
 "Please note that forms are currently unstable functionality, provided <u>"
 "only for your preview</u>."
@@ -1763,68 +1842,131 @@ msgstr ""
 "Марҳамад сабти намуди дар равобит буда нопойдор функтсионалии исботи он <u> "
 "фақат маҳкам  барои шумо</u>."
 
-#: main/keximainwindowimpl.cpp:3414
+#: main/keximainwindowimpl.cpp:3530
 msgid "Forms will be available after restarting Kexi application."
 msgstr "Намуд метавонад баъди азнавоғозкуни осонфаҳм хоҳиши Kexi."
 
-#: main/keximainwindowimpl.cpp:3418
+#: main/keximainwindowimpl.cpp:3534
 msgid "Forms will be hidden after restarting Kexi application."
 msgstr "Намуд метавонад баъди азнаоғозкуни Kexi махфи бошад."
 
-#: main/keximainwindowimpl.cpp:3444
+#: main/keximainwindowimpl.cpp:3560
 msgid "Could not start project \"%1\" in Final Mode."
 msgstr " Наметавонад оғозкунии нақшаи \"%1\"дар охири шакл."
 
-#: main/keximainwindowimpl.cpp:3449
+#: main/keximainwindowimpl.cpp:3565
 msgid "No Final Mode data found."
 msgstr "Маълумоти ҳолати охирин кофта наёфт."
 
-#: main/keximainwindowimpl.cpp:3457
+#: main/keximainwindowimpl.cpp:3573
 msgid "Error reading Final Mode data."
 msgstr "Маълумоти ҳолати охирин хонда наметавонад."
 
-#: main/keximainwindowimpl.cpp:3487
+#: main/keximainwindowimpl.cpp:3603
 msgid "Specified plugin does not exist."
 msgstr "Таъйин кардани қисмро вуҷуд надорад."
 
-#: main/keximainwindowimpl.cpp:3495
+#: main/keximainwindowimpl.cpp:3611
 msgid "Specified object could not be opened."
 msgstr "Таъйин кардани ҳуҷҷат ки кушода наметавонад."
 
-#: main/keximainwindowimpl.cpp:3645
+#: main/keximainwindowimpl.cpp:3814
 msgid ""
 "Pressing this button will ignore all unsaved changes made in \"%1\" object."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:3651
-#, fuzzy
-msgid "Do you want to save changes before making print preview?"
-msgstr "Шумо метавонед ин алоқа нобуд кардан ?"
-
-#: main/keximainwindowimpl.cpp:3652
+#: main/keximainwindowimpl.cpp:3819
 #, fuzzy
 msgid "Do you want to save changes before printing?"
 msgstr "Шумо метавонед ин алоқа нобуд кардан ?"
 
-#: main/keximainwindowimpl_p.h:257
+#: main/keximainwindowimpl.cpp:3821
+#, fuzzy
+msgid "Do you want to save changes before making print preview?"
+msgstr "Шумо метавонед ин алоқа нобуд кардан ?"
+
+#: main/keximainwindowimpl.cpp:3823
+#, fuzzy
+msgid "Do you want to save changes before showing page setup?"
+msgstr "Шумо метавонед ин алоқа нобуд кардан ?"
+
+#: main/keximainwindowimpl_p.h:264
 #, fuzzy
 msgid "Could not start %1 application."
 msgstr " Наметавонад оғозкунии нақшаи \"%1\"дар охири шакл."
 
-#: main/keximainwindowimpl_p.h:258
+#: main/keximainwindowimpl_p.h:265
 #, fuzzy
 msgid "Command \"%1\" failed."
 msgstr "Нигоҳ доред \"%1\" мавзӯъ нодуруст."
 
-#: main/printing/kexisimpleprintpreviewwindow.cpp:149
-msgid "%1 - Print Preview"
+#: main/printing/kexisimpleprintingpagesetup.cpp:93
+#: main/printing/kexisimpleprintingpart.cpp:32
+#: main/printing/kexisimpleprintingpart.cpp:42
+#, fuzzy
+msgid "Printing"
+msgstr "Дасти ишорат"
+
+#: main/printing/kexisimpleprintingpagesetup.cpp:255
+msgid "Print Preview"
 msgstr ""
 
-#: main/printing/kexisimpleprintpreviewwindow.cpp:167
+#: main/printing/kexisimpleprintingpagesetup.cpp:341
+msgid "Print Previe&w..."
+msgstr ""
+
+#: main/printing/kexisimpleprintingpagesetup.cpp:346
+#, fuzzy
+msgid "Changes font for title text."
+msgstr "Мавзӯъи интихоботии равон нобуд кунед."
+
+#: main/printing/kexisimpleprintingpagesetup.cpp:354
+msgid "Open This Query"
+msgstr ""
+
+#: main/printing/kexisimpleprintingpagesetup.cpp:355
+msgid "<h2>Page setup for printing \"%1\" query data</h2>"
+msgstr ""
+
+#: main/printing/kexisimpleprintingpagesetup.cpp:364
+#: main/printing/kexisimpleprintingpagesetup.cpp:366
+msgid "Shows data for table or query associated with this page setup."
+msgstr ""
+
+#: main/printing/kexisimpleprintingpagesetup.cpp:369
+msgid "Saves settings for this setup as default."
+msgstr ""
+
+#: main/printing/kexisimpleprintingpagesetup.cpp:377
+msgid "Adds date and time to the header."
+msgstr ""
+
+#: main/printing/kexisimpleprintingpagesetup.cpp:378
+msgid "Adds page numbers to the footer."
+msgstr ""
+
+#: main/printing/kexisimpleprintingpagesetup.cpp:379
+msgid "Adds table borders."
+msgstr ""
+
+#: main/printing/kexisimpleprintingpagesetup.cpp:388
+msgid "Changes page size and margins."
+msgstr ""
+
+#: main/printing/kexisimpleprintingpagesetup.cpp:450
+#, fuzzy
+msgid "margins:"
+msgstr "асосӣ"
+
+#: main/printing/kexisimpleprintpreviewwindow.cpp:143
+msgid "%1 - Print Preview - %2"
+msgstr ""
+
+#: main/printing/kexisimpleprintpreviewwindow.cpp:166
 msgid "Zoom In"
 msgstr ""
 
-#: main/printing/kexisimpleprintpreviewwindow.cpp:173
+#: main/printing/kexisimpleprintpreviewwindow.cpp:170
 msgid "Zoom Out"
 msgstr ""
 
@@ -1838,77 +1980,43 @@ msgstr "Якум қатор"
 msgid "Previous Page"
 msgstr "Ҷаҳида гузаштани ба саҳифаи пешина"
 
-#: main/printing/kexisimpleprintpreviewwindow.cpp:202
+#: main/printing/kexisimpleprintpreviewwindow.cpp:203
 #, fuzzy
 msgid "Next Page"
 msgstr "Ҷаҳида гузаштани ба саҳифаи оянда"
 
-#: main/printing/kexisimpleprintpreviewwindow.cpp:208
+#: main/printing/kexisimpleprintpreviewwindow.cpp:207
 #, fuzzy
 msgid "Last Page"
 msgstr "Табулясияи саҳифа"
 
-#: main/printing/kexisimpleprintingengine.cpp:92
+#: main/printing/kexisimpleprintingengine.cpp:328
+#: main/printing/kexisimpleprintpreviewwindow.cpp:294
+msgid ""
+"_: Page (number) of (total)\n"
+"Page %1 of %2"
+msgstr ""
+
+#: main/printing/kexisimpleprintingengine.cpp:150
 #, fuzzy
 msgid "Could not load data from table or query."
 msgstr "Драйвери асоси маълумоти\"%1\"ёфт намешавад."
 
-#: main/printing/kexisimpleprintingengine.cpp:259
+#: main/printing/kexisimpleprintingengine.cpp:331
 #, fuzzy, c-format
 msgid "Page %1"
 msgstr "Саҳифа %1"
 
-#: main/printing/kexisimpleprintingwindow.cpp:90
-#, fuzzy
-msgid "Changes font for title text."
-msgstr "Мавзӯъи интихоботии равон нобуд кунед."
-
-#: main/printing/kexisimpleprintingwindow.cpp:98
-msgid "Open This Query"
+#: main/printing/kexisimpleprintingengine.cpp:425
+msgid ""
+"_: Boolean Yes (true)\n"
+"Yes"
 msgstr ""
 
-#: main/printing/kexisimpleprintingwindow.cpp:99
-msgid "<h2>Page setup for printing \"%1\" query data</h2>"
-msgstr ""
-
-#: main/printing/kexisimpleprintingwindow.cpp:106
-msgid "Shows data for table or query associated with this page setup."
-msgstr ""
-
-#: main/printing/kexisimpleprintingwindow.cpp:109
-msgid "Saves settings for this setup as default."
-msgstr ""
-
-#: main/printing/kexisimpleprintingwindow.cpp:117
-msgid "Adds date and time to the header."
-msgstr ""
-
-#: main/printing/kexisimpleprintingwindow.cpp:118
-msgid "Adds page numbers to the footer."
-msgstr ""
-
-#: main/printing/kexisimpleprintingwindow.cpp:119
-msgid "Adds table borders."
-msgstr ""
-
-#: main/printing/kexisimpleprintingwindow.cpp:128
-msgid "Changes page size and margins."
-msgstr ""
-
-#: main/printing/kexisimpleprintingwindow.cpp:228
-#, fuzzy
-msgid "margins:"
-msgstr "асосӣ"
-
-#: main/printing/kexisimpleprintingpart.cpp:32
-#: main/printing/kexisimpleprintingpart.cpp:42
-#: main/printing/kexisimpleprintingwindow.cpp:246
-#, fuzzy
-msgid "Printing"
-msgstr "Дасти ишорат"
-
-#: main/printing/kexisimpleprintingwindow.cpp:300
-msgid "Print Preview"
+#: main/printing/kexisimpleprintingengine.cpp:425
+msgid ""
+"_: Boolean No (false)\n"
+"No"
 msgstr ""
 
 #: main/kexinamewidget.cpp:73
@@ -1956,119 +2064,125 @@ msgstr "Драйвери асоси маълумоти\"%1\"ёфт намеша�
 msgid "Could not load database driver \"%1\"."
 msgstr "Драйвери асоси маълумоти\"%1\"таъмин карда намешавад."
 
-#: migration/importwizard.cpp:66
+#: migration/importwizard.cpp:67
 #, fuzzy
 msgid "Import Database"
 msgstr "Асоси маълумотро интихоб кунед"
 
-#: migration/importwizard.cpp:144
+#: migration/importwizard.cpp:155
 msgid ""
-"Database Importing wizard is about to import \"%1\" file of type \"%2\" into a "
-"Kexi database."
+"<qt>Database Importing wizard is about to import \"%1\" database <nobr>"
+"(connection %2)</nobr> into a Kexi database.</qt>"
 msgstr ""
 
-#: migration/importwizard.cpp:149
+#: migration/importwizard.cpp:162
+msgid ""
+"<qt>Database Importing wizard is about to import <nobr>\"%1\"</nobr> "
+"file of type \"%2\" into a Kexi database.</qt>"
+msgstr ""
+
+#: migration/importwizard.cpp:167
 msgid ""
 "Database Importing wizard allows you to import an existing database into a Kexi "
 "database."
 msgstr ""
 
-#: migration/importwizard.cpp:153
+#: migration/importwizard.cpp:171
 msgid ""
 "Click \"Next\" button to continue or \"Cancel\" button to exit this wizard."
 msgstr ""
 
-#: migration/importwizard.cpp:155
+#: migration/importwizard.cpp:173
 #, fuzzy
 msgid "Welcome to the Database Importing Wizard"
 msgstr "Ҷобаҷокунии асоси маълумот"
 
-#: migration/importwizard.cpp:199
+#: migration/importwizard.cpp:217
 #, fuzzy
 msgid "Select Location for Source Database"
 msgstr "Асоси маълумотро интихоб кунед"
 
-#: migration/importwizard.cpp:209
+#: migration/importwizard.cpp:227
 #, fuzzy
 msgid "Select Source Database"
 msgstr "Асоси маълумотро интихоб кунед"
 
-#: migration/importwizard.cpp:224
+#: migration/importwizard.cpp:242
 #, fuzzy
 msgid "Destination database type:"
 msgstr "Ҷои таъиншудаи Ҳошия"
 
-#: migration/importwizard.cpp:235
+#: migration/importwizard.cpp:253
 #, fuzzy
 msgid "Select Destination Database Type"
 msgstr "Ҷои таъиншудаи Ҳошия"
 
-#: migration/importwizard.cpp:242
+#: migration/importwizard.cpp:260
 #, fuzzy
 msgid "Destination project's caption:"
 msgstr "Сарлавҳаи нақшаро дохил кунед"
 
-#: migration/importwizard.cpp:247
+#: migration/importwizard.cpp:265
 #, fuzzy
 msgid "Select Destination Database Project's Caption"
 msgstr "Сарлавҳаи нақшаро интихоб кунед"
 
-#: migration/importwizard.cpp:280
+#: migration/importwizard.cpp:298
 #, fuzzy
 msgid "Select Location for Destination Database"
 msgstr "Ҷои таъиншудаи Ҳошия"
 
-#: migration/importwizard.cpp:293
+#: migration/importwizard.cpp:311
 msgid "Structure and data"
 msgstr ""
 
-#: migration/importwizard.cpp:294
+#: migration/importwizard.cpp:312
 msgid "Structure only"
 msgstr ""
 
-#: migration/importwizard.cpp:298
+#: migration/importwizard.cpp:316
 msgid "Select Type of Import"
 msgstr ""
 
-#: migration/importwizard.cpp:323
+#: migration/importwizard.cpp:341
 #, fuzzy
 msgid "Advanced Options"
 msgstr "&Пешрав "
 
-#: migration/importwizard.cpp:333
+#: migration/importwizard.cpp:351
 #, fuzzy
 msgid "Importing"
 msgstr "&Воридот"
 
-#: migration/importwizard.cpp:347
+#: migration/importwizard.cpp:365
 #, fuzzy
 msgid "Open imported project"
 msgstr "Кушодани нақшаи мавҷудбуда"
 
-#: migration/importwizard.cpp:354 migration/importwizard.cpp:775
+#: migration/importwizard.cpp:372 migration/importwizard.cpp:836
 #, fuzzy
 msgid "Success"
 msgstr "Манба"
 
-#: migration/importwizard.cpp:369
+#: migration/importwizard.cpp:387
 #, fuzzy
 msgid "No new database name was entered."
 msgstr "Номи нақшаи асоси маълумотиро дохил кунед"
 
-#: migration/importwizard.cpp:374
+#: migration/importwizard.cpp:392
 msgid "Following problems were found with the data you entered:"
 msgstr ""
 
-#: migration/importwizard.cpp:378
+#: migration/importwizard.cpp:396
 msgid "Please click 'Back' button and correct these errors."
 msgstr ""
 
-#: migration/importwizard.cpp:444
+#: migration/importwizard.cpp:462
 #, fuzzy
 msgid "Select source database you wish to import:"
 msgstr "Номи нақшаи асоси маълумотиро дохил кунед"
 
-#: migration/importwizard.cpp:503
+#: migration/importwizard.cpp:527
 msgid ""
 "All required information has now been gathered. Click \"Next\" button to start "
 "importing.\n"
@@ -2076,68 +2190,77 @@ msgid ""
 "Depending on size of the database this may take some time."
 msgstr ""
 
-#: migration/importwizard.cpp:664
+#: migration/importwizard.cpp:699
 msgid ""
 "No connection data is available. You did not select a destination filename."
 msgstr ""
 
-#: migration/importwizard.cpp:676
+#: migration/importwizard.cpp:711
 msgid "No appropriate migration driver found."
 msgstr ""
 
-#: migration/importwizard.cpp:790
+#: migration/importwizard.cpp:811
+#, fuzzy
+msgid ""
+"Database %1 already exists."
+"<p>Do you want to replace it and with a new one?"
+msgstr ""
+"Файли\"%1\" аллакай вуҷуд дорад..\n"
+" Мехоҳед онро аз сари нав нависед?"
+
+#: migration/importwizard.cpp:850
 #, fuzzy
 msgid "Failure"
 msgstr "Маъно"
 
-#: migration/importwizard.cpp:792
+#: migration/importwizard.cpp:852
 msgid ""
 "<p>Import failed.</p>%1"
 "<p>%2</p>"
 "<p>You can click \"Back\" button and try again.</p>"
 msgstr ""
 
-#: migration/importwizard.cpp:813
+#: migration/importwizard.cpp:873
 #, fuzzy
 msgid "Select source database filename."
 msgstr "Номи нақшаи асоси маълумотиро дохил кунед"
 
-#: migration/importwizard.cpp:818
+#: migration/importwizard.cpp:878
 #, fuzzy
 msgid "Select source database."
 msgstr "Асоси маълумотро интихоб кунед"
 
-#: migration/importwizard.cpp:833
+#: migration/importwizard.cpp:893
 #, fuzzy
 msgid "Could not import database%1. This type is not supported."
 msgstr "Драйвери асоси маълумоти\"%1\"ёфт намешавад."
 
-#: migration/importwizard.cpp:850
+#: migration/importwizard.cpp:910
 msgid "Importing in progress..."
 msgstr ""
 
-#: migration/importwizard.cpp:853
+#: migration/importwizard.cpp:914
 msgid "Database has been imported into Kexi database project \"%1\"."
 msgstr ""
 
-#: migration/importwizard.cpp:915 migration/importwizard.cpp:939
+#: migration/importwizard.cpp:982 migration/importwizard.cpp:1006
 #, fuzzy
 msgid "No help is available for this page."
 msgstr "Ҷои таъиншудаи Ҳошия"
 
-#: migration/importwizard.cpp:923
+#: migration/importwizard.cpp:990
 msgid "Here you can choose the location to import data from."
 msgstr ""
 
-#: migration/importwizard.cpp:927
+#: migration/importwizard.cpp:994
 msgid "Here you can choose the actual database to import data from."
 msgstr ""
 
-#: migration/importwizard.cpp:931
+#: migration/importwizard.cpp:998
 msgid "Here you can choose the location to save the data."
 msgstr ""
 
-#: migration/importwizard.cpp:935
+#: migration/importwizard.cpp:1002
 msgid ""
 "Here you can choose the location to save the data in and the new database name."
 msgstr ""
@@ -2167,59 +2290,60 @@ msgstr ""
 msgid "Always use this encoding in similar situations"
 msgstr ""
 
-#: migration/keximigrate.cpp:77
+#: migration/keximigrate.cpp:76 migration/keximigrate.cpp:111
+#: migration/keximigrate.cpp:259 migration/keximigrate.cpp:338
+#: migration/keximigrate.cpp:357
+#, fuzzy
+msgid "Could not create database \"%1\"."
+msgstr "Драйвери асоси маълумоти\"%1\"таъмин карда намешавад."
+
+#: migration/keximigrate.cpp:123
 #, fuzzy
 msgid "Could not connect to data source \"%1\"."
 msgstr "Нақшаи \"%1\"кушода намешавад"
 
-#: migration/keximigrate.cpp:88
+#: migration/keximigrate.cpp:134
 #, fuzzy
 msgid "Could not get a list of table names for data source \"%1\"."
 msgstr "Драйвери асоси маълумоти\"%1\"ёфт намешавад."
 
-#: migration/keximigrate.cpp:101
+#: migration/keximigrate.cpp:147
 msgid "No tables to import found in data source \"%1\"."
 msgstr ""
 
-#: migration/keximigrate.cpp:137
+#: migration/keximigrate.cpp:180
 #, fuzzy
 msgid ""
 "Could not import project from data source \"%1\". Error reading table \"%2\"."
 msgstr "Нақшаи \"%1\"кушода намешавад"
 
-#: migration/keximigrate.cpp:149
+#: migration/keximigrate.cpp:192
 #, fuzzy
 msgid "Could not import project from data source \"%1\"."
 msgstr "Нақшаи \"%1\"кушода намешавад"
 
-#: migration/keximigrate.cpp:195
+#: migration/keximigrate.cpp:238
 #, fuzzy
 msgid "Could not copy table \"%1\" to destination database."
 msgstr "Мавзӯъи \"%1\" ба номи дигар сохта намешавад."
 
-#: migration/keximigrate.cpp:216 migration/keximigrate.cpp:293
-#: migration/keximigrate.cpp:312
-#, fuzzy
-msgid "Could not create database \"%1\"."
-msgstr "Драйвери асоси маълумоти\"%1\"таъмин карда намешавад."
-
-#: migration/keximigrate.cpp:245
+#: migration/keximigrate.cpp:288
 #, fuzzy
 msgid "Could not import data from data source \"%1\"."
 msgstr "Драйвери асоси маълумоти\"%1\"ёфт намешавад."
 
-#: migration/keximigrate.cpp:408
+#: migration/keximigrate.cpp:453
 #, fuzzy
 msgid "Field Type"
 msgstr "Навъи ҳошия:"
 
-#: migration/keximigrate.cpp:409
+#: migration/keximigrate.cpp:454
 msgid ""
 "The data type for %1 could not be determined. Please select one of the "
 "following data types"
 msgstr ""
 
-#: migration/keximigrate.cpp:473
+#: migration/keximigrate.cpp:518
 #, fuzzy
 msgid ""
 "Incompatible migration driver's \"%1\" version: found version %2, expected "
@@ -2326,14 +2450,37 @@ msgid "Names of internal Kexi objects are starting with \"kexi__\"."
 msgstr ""
 "Номҳои дохили ашёҳои Kexi метавонад ба ҳаракат дарорад бо ёрии  \"kexi__\"."
 
-#: kexidb/drivers/pqxx/pqxxcursor.cpp:77
+#: kexidb/drivers/pqxx/pqxxconnection.cpp:209
+#: kexidb/drivers/pqxx/pqxxconnection.cpp:289
+#: kexidb/drivers/pqxx/pqxxconnection.cpp:397
+#, fuzzy
+msgid "Unknown error."
+msgstr "Хатои номаълум"
+
+#: kexidb/drivers/pqxx/pqxxcursor.cpp:79
 msgid "No connection for cursor open operation specified"
 msgstr "Барои номгӯй кардани ҳаракати курсори озод алоқа нест"
 
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:183
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:179
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:185
+msgid "The file is probably already opened on this or other computer."
+msgstr ""
+
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:180
+msgid "Could not gain exclusive access for reading and writing the file."
+msgstr ""
+
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:186
+msgid "Could not gain exclusive access for writing the file."
+msgstr ""
+
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:205
+msgid "Could not remove file \"%1\"."
+msgstr "Файли \"%1\"ҳаракат кардан натавонист."
+
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:207
 msgid ""
-"Could not remove file \"%1\". Check the file's permissions and whether it is "
-"locked by another application."
+"Check the file's permissions and whether it is locked by another application."
 msgstr ""
 
 #: kexidb/driver_p.cpp:48
@@ -2542,7 +2689,7 @@ msgstr ""
 msgid "Table not found"
 msgstr "мавзӯъ ёфт нашудааст"
 
-#: kexidb/connection.cpp:1454 kexidb/expression.cpp:595
+#: kexidb/connection.cpp:1478 kexidb/expression.cpp:595
 #, fuzzy
 msgid "Unknown table \"%1\""
 msgstr "навъи мавзӯъи номаълум \"%1\""
@@ -2595,211 +2742,211 @@ msgstr "Драйвери асоси маълумоти\"%1\"таъмин кар�
 msgid "Could not read database properties."
 msgstr "Ягон драйвери асоси маълумот ёфт намешавад."
 
-#: kexidb/connection.cpp:80
+#: kexidb/connection.cpp:83
 msgid "Invalid database contents. "
 msgstr "Мазмунҳои асосӣ маълумоти нодуруст. "
 
-#: kexidb/connection.cpp:84
+#: kexidb/connection.cpp:87
 msgid "It is a system object."
 msgstr ""
 
-#: kexidb/connection.cpp:196
+#: kexidb/connection.cpp:205
 msgid "Connection already established."
 msgstr "Алоқа аллакай барқарор шуд."
 
-#: kexidb/connection.cpp:202
+#: kexidb/connection.cpp:211
 #, fuzzy
 msgid "Could not open \"%1\" project file."
 msgstr "Нақшаи \"%1\"кушода намешавад"
 
-#: kexidb/connection.cpp:203
+#: kexidb/connection.cpp:212
 #, fuzzy
 msgid "Could not connect to \"%1\" database server."
 msgstr "Ба \"%1\" сервери асоси маълумот пайваст нашудааст."
 
-#: kexidb/connection.cpp:240
+#: kexidb/connection.cpp:254
 msgid "Not connected to the database server."
 msgstr "Ба сервери асоси маълумот пайваст нашудааст."
 
-#: kexidb/connection.cpp:250
+#: kexidb/connection.cpp:264
 msgid "Currently no database is used."
 msgstr "Ҳоло асоси маълумот истифода бурда намешавад."
 
-#: kexidb/connection.cpp:306
+#: kexidb/connection.cpp:320
 msgid "The database \"%1\" does not exist."
 msgstr "Асоси маълумоти \"%1\" вуҷуд надорад."
 
-#: kexidb/connection.cpp:326
+#: kexidb/connection.cpp:340
 msgid "Database file \"%1\" does not exist."
 msgstr "Файли асоси маълумоти \"%1\" вуҷуд надорад."
 
-#: kexidb/connection.cpp:331
+#: kexidb/connection.cpp:346
 msgid "Database file \"%1\" is not readable."
 msgstr "Файли асоси маълумоти \"%1\" хондан намешавад."
 
-#: kexidb/connection.cpp:336
+#: kexidb/connection.cpp:352
 msgid "Database file \"%1\" is not writable."
 msgstr "Файли асоси маълумоти \"%1\" навиштан намешавад."
 
-#: kexidb/connection.cpp:376
+#: kexidb/connection.cpp:393
 msgid "Database \"%1\" already exists."
 msgstr "Асоси маълумоти \"%1\" аллакай вуҷуд дорад."
 
-#: kexidb/connection.cpp:380
+#: kexidb/connection.cpp:398
 msgid ""
 "Cannot create database \"%1\". This name is reserved for system database."
 msgstr ""
 "Асоси маълумоти \"%1\"сохта намешавад. Ин ном барои системаи асоси маълумот "
 "захира аст."
 
-#: kexidb/connection.cpp:395
+#: kexidb/connection.cpp:413
 msgid "Error creating database \"%1\" on the server."
 msgstr "Сохтани хатоии асоси маълумоти \"%1\"дар сервер аст."
 
-#: kexidb/connection.cpp:409
+#: kexidb/connection.cpp:427
 msgid "Database \"%1\" created but could not be opened."
 msgstr "Асоси маълумоти \"%1\"сохта шудааст, аммо кушода намешавад."
 
-#: kexidb/connection.cpp:499
+#: kexidb/connection.cpp:517
 #, fuzzy
-msgid "Opening database \"%1\" failed"
+msgid "Opening database \"%1\" failed."
 msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
 
-#: kexidb/connection.cpp:534
+#: kexidb/connection.cpp:556
 msgid "Database version (%1) does not match Kexi application's version (%2)"
 msgstr "Ҳоситяти тавсири (%1)наметвонад бисёртарt Kexi хоҳиши тавсири (%2)"
 
-#: kexidb/connection.cpp:598
+#: kexidb/connection.cpp:620
 msgid "Cannot find any database for temporary connection."
 msgstr "Ягон асоси маълумот барои алоқаи муваққатӣ ёфт намешавад."
 
-#: kexidb/connection.cpp:602
+#: kexidb/connection.cpp:625
 msgid "Error during starting temporary connection using \"%1\" database name."
 msgstr ""
 "Хатоӣ, дар вақти саршавии алоқаи муваққатӣ, номи асоси маълумотиро \"%1\" "
 "истифода мебарад."
 
-#: kexidb/connection.cpp:619
+#: kexidb/connection.cpp:642
 msgid "Cannot drop database - name not specified."
 msgstr "Асоси маълумот партофта намешавад - ном қайд нашудааст."
 
-#: kexidb/connection.cpp:637
+#: kexidb/connection.cpp:660
 msgid "Cannot delete database - name not specified."
 msgstr "Асоси маълумот кӯр карда намешавад - ном қайд нашудааст."
 
-#: kexidb/connection.cpp:642
+#: kexidb/connection.cpp:665
 msgid "Cannot delete system database \"%1\"."
 msgstr "Системаи асоси маълумоти \"%1\" кӯр карда намешавад."
 
-#: kexidb/connection.cpp:969
+#: kexidb/connection.cpp:992
 msgid "Error while executing SQL statement."
 msgstr "Хатоги вақте,ки иҷрокунии SQL тасдиқ."
 
-#: kexidb/connection.cpp:1171
+#: kexidb/connection.cpp:1194
 msgid "Cannot create table without fields."
 msgstr "Ҷадвал бе ҳошия сохта намешавад."
 
-#: kexidb/connection.cpp:1181
+#: kexidb/connection.cpp:1204
 msgid "System name \"%1\" cannot be used as table name."
 msgstr "Номи системаи \"%1\" ҳамчун номи ҷадвал истифода бурда намешавад."
 
-#: kexidb/connection.cpp:1190
+#: kexidb/connection.cpp:1213
 msgid "System name \"%1\" cannot be used as one of fields in \"%2\" table."
 msgstr ""
 "Номи системаи \"%1\"ҳамчун яке аз ҳошияҳо дар ҷадвали \"%2\" истифода бурда "
 "намешавад. "
 
-#: kexidb/connection.cpp:1205
+#: kexidb/connection.cpp:1229
 #, fuzzy
 msgid "Could not create the same table \"%1\" twice."
 msgstr "Мавзӯъи \"%1\" ба номи дигар сохта намешавад."
 
-#: kexidb/connection.cpp:1219 plugins/tables/kexitablepart.cpp:194
+#: kexidb/connection.cpp:1243 plugins/tables/kexitablepart.cpp:194
 #, fuzzy
 msgid "Table \"%1\" already exists."
 msgstr "Асоси маълумоти \"%1\" аллакай вуҷуд дорад."
 
-#: kexidb/connection.cpp:1334
+#: kexidb/connection.cpp:1358
 msgid "Could not remove object's data."
 msgstr "Маълумоти мавзӯъро ҳаракат кардан натавонист."
 
-#: kexidb/connection.cpp:1365
+#: kexidb/connection.cpp:1389
 #, fuzzy
 msgid ""
 "Table \"%1\" cannot be removed.\n"
 msgstr "Ҷадвали \"%1\" ҳаракат карда наметавонад."
 
-#: kexidb/connection.cpp:1372
+#: kexidb/connection.cpp:1396
 msgid "Unexpected name or identifier."
 msgstr ""
 
-#: kexidb/connection.cpp:1417
+#: kexidb/connection.cpp:1441
 #, fuzzy
 msgid "Table \"%1\" does not exist."
 msgstr "Ҷадвали '%1' вуҷуд надорад"
 
-#: kexidb/connection.cpp:1432
+#: kexidb/connection.cpp:1456
 #, fuzzy
 msgid "Could not alter table \"%1\" using the same table."
 msgstr "Мавзӯъи \"%1\" ба номи дигар сохта намешавад."
 
-#: kexidb/connection.cpp:1458
+#: kexidb/connection.cpp:1482
 #, fuzzy
 msgid "Invalid table name \"%1\""
 msgstr "Номи мавзӯъи нодуруст \"%1\""
 
-#: kexidb/connection.cpp:1463
+#: kexidb/connection.cpp:1487
 #, fuzzy
 msgid "Could rename table \"%1\" using the same name."
 msgstr "Мавзӯъи \"%1\" ба номи дигар сохта намешавад."
 
-#: kexidb/connection.cpp:1486
+#: kexidb/connection.cpp:1510
 #, fuzzy
 msgid "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
 msgstr ""
 "Наметавонад истифода кардани ин ном. Ашё бо номи \"%1\" алакай баромадагӣ. "
 
-#: kexidb/connection.cpp:1593
+#: kexidb/connection.cpp:1617
 #, fuzzy
 msgid "Query \"%1\" does not exist."
 msgstr "<qt>Файли\"%1\"вуҷуд надорад."
 
-#: kexidb/connection.cpp:1690
+#: kexidb/connection.cpp:1714
 msgid "Transaction already started."
 msgstr "Кор аллакай оғоз ёфт."
 
-#: kexidb/connection.cpp:1730 kexidb/connection.cpp:1764
+#: kexidb/connection.cpp:1754 kexidb/connection.cpp:1788
 msgid "Transaction not started."
 msgstr "Кор оғоз нашудааст."
 
-#: kexidb/connection.cpp:1744
+#: kexidb/connection.cpp:1768
 msgid "Error on commit transaction"
 msgstr "Хатоӣ дар ба амалории созиш"
 
-#: kexidb/connection.cpp:1778
+#: kexidb/connection.cpp:1802
 msgid "Error on rollback transaction"
 msgstr "Хатоӣ дар баста шудани кор"
 
-#: kexidb/connection.cpp:1935 kexidb/connection.cpp:2217
+#: kexidb/connection.cpp:1959 kexidb/connection.cpp:2241
 msgid "Invalid object name \"%1\""
 msgstr "Номи мавзӯъи нодуруст \"%1\""
 
-#: kexidb/connection.cpp:2054
+#: kexidb/connection.cpp:2078
 #, fuzzy
 msgid "Column %1 does not exist for the query."
 msgstr "Ҷадвали '%1' вуҷуд надорад"
 
-#: kexidb/connection.cpp:2191
+#: kexidb/connection.cpp:2215
 #, fuzzy
 msgid "Table has no fields defined."
 msgstr "Ҷадвали \"%1\" ҳаракат карда наметавонад."
 
-#: kexidb/connection.cpp:2328
+#: kexidb/connection.cpp:2352
 msgid ""
 "Could not find definition for query \"%1\". Removing this query is recommended."
 msgstr ""
 
-#: kexidb/connection.cpp:2336
+#: kexidb/connection.cpp:2361
 msgid ""
 "<p>Could not load definition for query \"%1\". SQL statement for this query is "
 "invalid:"
@@ -2807,65 +2954,65 @@ msgid ""
 "<p>You can open this query in Text View and correct it.</p>"
 msgstr ""
 
-#: kexidb/connection.cpp:2521
+#: kexidb/connection.cpp:2546
 #, fuzzy
 msgid "Could not update row because there is no master table defined."
 msgstr "Мавзӯъи \"%1\" ба номи дигар сохта намешавад."
 
-#: kexidb/connection.cpp:2528
+#: kexidb/connection.cpp:2553
 msgid "Could not update row because master table has no primary key defined."
 msgstr ""
 
-#: kexidb/connection.cpp:2550
+#: kexidb/connection.cpp:2575
 msgid ""
 "Could not update row because it does not contain entire master table's primary "
 "key."
 msgstr ""
 
-#: kexidb/connection.cpp:2561 kexidb/connection.cpp:2767
+#: kexidb/connection.cpp:2586 kexidb/connection.cpp:2792
 msgid "Primary key's field \"%1\" cannot be empty."
 msgstr "Ҳошияи холӣ будан \"%1\" наметавонад."
 
-#: kexidb/connection.cpp:2578
+#: kexidb/connection.cpp:2603
 msgid "Row updating on the server failed."
 msgstr "Қатори илова кардани он дар шабака."
 
-#: kexidb/connection.cpp:2603
+#: kexidb/connection.cpp:2628
 #, fuzzy
 msgid "Could not insert row because there is no master table defined."
 msgstr "Мавзӯъи \"%1\" ба номи дигар сохта намешавад."
 
-#: kexidb/connection.cpp:2622
+#: kexidb/connection.cpp:2647
 msgid "Could not insert row because master table has no primary key defined."
 msgstr ""
 
-#: kexidb/connection.cpp:2631
+#: kexidb/connection.cpp:2656
 msgid ""
 "Could not insert row because it does not contain entire master table's primary "
 "key."
 msgstr ""
 
-#: kexidb/connection.cpp:2667
+#: kexidb/connection.cpp:2692
 msgid "Row inserting on the server failed."
 msgstr "Қатори мондани дар сервер нодуруст."
 
-#: kexidb/connection.cpp:2733
+#: kexidb/connection.cpp:2758
 #, fuzzy
 msgid "Could not delete row because there is no master table defined."
 msgstr "Мавзӯъи \"%1\" ба номи дигар сохта намешавад."
 
-#: kexidb/connection.cpp:2743
+#: kexidb/connection.cpp:2768
 msgid ""
 "Could not delete row because there is no primary key for master table defined."
 msgstr ""
 
-#: kexidb/connection.cpp:2758
+#: kexidb/connection.cpp:2783
 msgid ""
 "Could not delete row because it does not contain entire master table's primary "
 "key."
 msgstr ""
 
-#: kexidb/connection.cpp:2784 kexidb/connection.cpp:2807
+#: kexidb/connection.cpp:2809 kexidb/connection.cpp:2832
 #, fuzzy
 msgid "Row deletion on the server failed."
 msgstr "Қатори нобудкардани дар сервер нодуруст."
@@ -2995,43 +3142,43 @@ msgstr "&Воридот"
 msgid "&Export"
 msgstr "&Содирот"
 
-#. i18n: file data/kexiui.rc line 53
+#. i18n: file data/kexiui.rc line 54
 #: rc.cpp:87
 #, no-c-format
 msgid "Copy &Special"
 msgstr ""
 
-#. i18n: file data/kexiui.rc line 57
+#. i18n: file data/kexiui.rc line 58
 #: rc.cpp:90
 #, no-c-format
 msgid "Paste &Special"
 msgstr ""
 
-#. i18n: file data/kexiui.rc line 101
+#. i18n: file data/kexiui.rc line 102
 #: rc.cpp:105
 #, fuzzy, no-c-format
 msgid "Sort"
 msgstr "Чок"
 
-#. i18n: file data/kexiui.rc line 112
+#. i18n: file data/kexiui.rc line 113
 #: rc.cpp:111
 #, fuzzy, no-c-format
 msgid "&Migrate"
 msgstr "Ахбороти сервер"
 
-#. i18n: file data/kexiui.rc line 135
+#. i18n: file data/kexiui.rc line 136
 #: rc.cpp:120
 #, no-c-format
 msgid "&Other"
 msgstr "&Дигар"
 
-#. i18n: file data/kexiui.rc line 151
+#. i18n: file data/kexiui.rc line 152
 #: rc.cpp:126
 #, no-c-format
 msgid "Other &Licenses"
 msgstr "&Лисензияҳои Дигар"
 
-#. i18n: file data/kexiui.rc line 181
+#. i18n: file data/kexiui.rc line 182
 #: rc.cpp:135
 #, fuzzy, no-c-format
 msgid "Data"
@@ -3181,79 +3328,79 @@ msgstr "Асоси маълумот"
 msgid "Connection"
 msgstr "Алоқа"
 
-#. i18n: file ./main/printing/kexisimpleprintingwindowbase.ui line 16
+#. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 16
 #: rc.cpp:214
 #, no-c-format
 msgid "."
 msgstr ""
 
-#. i18n: file ./main/printing/kexisimpleprintingwindowbase.ui line 57
+#. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 57
 #: rc.cpp:218
 #, no-c-format
-msgid "<h2>Page Setup for Printing \"%1\" Table Data</h2>"
+msgid "<h2>Page setup for printing \"%1\" table data</h2>"
 msgstr ""
 
-#. i18n: file ./main/printing/kexisimpleprintingwindowbase.ui line 78
+#. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 78
 #: rc.cpp:221
 #, no-c-format
 msgid " fweg weg weg weg weg we"
 msgstr ""
 
-#. i18n: file ./main/printing/kexisimpleprintingwindowbase.ui line 94
+#. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 94
 #: rc.cpp:224
 #, fuzzy, no-c-format
 msgid "Set Font..."
 msgstr "Гузориш"
 
-#. i18n: file ./main/printing/kexisimpleprintingwindowbase.ui line 110
+#. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 110
 #: rc.cpp:227
 #, fuzzy, no-c-format
 msgid "Page title:"
 msgstr "Сарлавҳаи саҳифаи нав"
 
-#. i18n: file ./main/printing/kexisimpleprintingwindowbase.ui line 186
+#. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 186
 #: rc.cpp:233
 #, no-c-format
 msgid "Add page numbers"
 msgstr ""
 
-#. i18n: file ./main/printing/kexisimpleprintingwindowbase.ui line 194
+#. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 194
 #: rc.cpp:236
 #, fuzzy, no-c-format
 msgid "Page Size && Margins"
 msgstr "&Андоза:"
 
-#. i18n: file ./main/printing/kexisimpleprintingwindowbase.ui line 223
+#. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 223
 #: rc.cpp:240
 #, no-c-format
 msgid "Change..."
 msgstr ""
 
-#. i18n: file ./main/printing/kexisimpleprintingwindowbase.ui line 262
+#. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 262
 #: rc.cpp:243
 #, no-c-format
 msgid "Save This Setup as Default"
 msgstr ""
 
-#. i18n: file ./main/printing/kexisimpleprintingwindowbase.ui line 285
+#. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 285
 #: rc.cpp:248
 #, fuzzy, no-c-format
 msgid "Open This Table"
 msgstr "&Ҷадвалро Кушодан"
 
-#. i18n: file ./main/printing/kexisimpleprintingwindowbase.ui line 302
+#. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 302
 #: rc.cpp:253
 #, fuzzy, no-c-format
 msgid "Related actions:"
 msgstr "Муносибатҳо"
 
-#. i18n: file ./main/printing/kexisimpleprintingwindowbase.ui line 320
+#. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 320
 #: rc.cpp:256
 #, fuzzy, no-c-format
 msgid "Add date and time"
 msgstr "Таърих ва вақт"
 
-#. i18n: file ./main/printing/kexisimpleprintingwindowbase.ui line 336
+#. i18n: file ./main/printing/kexisimpleprintingpagesetupbase.ui line 336
 #: rc.cpp:259
 #, no-c-format
 msgid "Add table borders"
@@ -3704,12 +3851,12 @@ msgid "Define Query..."
 msgstr ""
 
 #: widget/tableview/kexidataawareobjectiface.cpp:836
-#: widget/tableview/kexitableviewdata.cpp:602
+#: widget/tableview/kexitableviewdata.cpp:603
 msgid "The column's constraint is declared as NOT NULL."
 msgstr "Маҳдудияти сутунҳо бояд,ки эълон кард ПУР НЕСТ."
 
 #: widget/tableview/kexidataawareobjectiface.cpp:858
-#: widget/tableview/kexitableviewdata.cpp:613
+#: widget/tableview/kexitableviewdata.cpp:614
 msgid "The column's constraint is declared as NOT EMPTY."
 msgstr "Маҳдудияти сутунҳо бояд эълон кард ХОЛИ НЕСТ."
 
@@ -3738,20 +3885,20 @@ msgstr "Мехоҳед қатори интихобшударо нест куне
 msgid "&Clear Contents"
 msgstr "%1 Мазмунҳо"
 
-#: widget/tableview/kexitableviewdata.cpp:600
-#: widget/tableview/kexitableviewdata.cpp:611
+#: widget/tableview/kexitableviewdata.cpp:601
+#: widget/tableview/kexitableviewdata.cpp:612
 msgid "\"%1\" column requires a value to be entered."
 msgstr "Сутуни \"%1\" барои вориди маъно дархост мекунад."
 
-#: widget/tableview/kexitableviewdata.cpp:625
+#: widget/tableview/kexitableviewdata.cpp:626
 msgid "Row inserting failed."
 msgstr "Мондани қатор нодуруст."
 
-#: widget/tableview/kexitableviewdata.cpp:645
+#: widget/tableview/kexitableviewdata.cpp:646
 msgid "Row changing failed."
 msgstr "Дигаргун кардани қатор нодуруст."
 
-#: widget/tableview/kexitableviewdata.cpp:712
+#: widget/tableview/kexitableviewdata.cpp:713
 msgid "Row deleting failed."
 msgstr "Нобудкардани қатор нодуруст."
 
@@ -5454,9 +5601,24 @@ msgid ""
 "this table are opened:"
 msgstr ""
 
-#, fuzzy
-#~ msgid "Add database connection"
-#~ msgstr "Асоси маълумоти Алоқа"
+#~ msgid ""
+#~ "Start project in the Final Mode, regardless \n"
+#~ "of the project settings"
+#~ msgstr ""
+#~ "Оғози нақша дар охири намуд,хоҳиши \n"
+#~ "  ,ба танзимдарори дар нақша "
+
+#~ msgid "Personal Databases"
+#~ msgstr "Асоси маълумотҳои шахсӣ"
+
+#~ msgid "New Personal Database Project Templates"
+#~ msgstr "Нақшаи нави асоси маълумоти Templates -и шахсӣ"
+
+#~ msgid "Business Databases"
+#~ msgstr "Вазифаи Асосҳои маълумот"
+
+#~ msgid "New Business Database Project Templates"
+#~ msgstr "Нақшаи Нави Асосҳои маълумоти Templates"
 
 #, fuzzy
 #~ msgid "Save Image To File"
@@ -5565,9 +5727,6 @@ msgstr ""
 
 #~ msgid "Do you want to remove:"
 #~ msgstr "Шумо нест кардан мехоҳед:"
-
-#~ msgid "Could not remove file \"%1\"."
-#~ msgstr "Файли \"%1\"ҳаракат кардан натавонист."
 
 #~ msgid "\"%1\" database property not found"
 #~ msgstr "\"%1\" ҳосияти асосӣ маълумот кофта наёфт"
@@ -5863,10 +6022,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Clears results."
 #~ msgstr "%1 Мазмунҳо"
-
-#, fuzzy
-#~ msgid "Returns the resulting operation."
-#~ msgstr "&Нақша кашидан"
 
 #, fuzzy
 #~ msgid "Returns the KexiDBConnection object pointing to the used database connection."
