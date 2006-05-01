@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
-"POT-Creation-Date: 2006-04-30 04:02+0200\n"
+"POT-Creation-Date: 2006-05-01 03:59+0200\n"
 "PO-Revision-Date: 2005-09-17 13:21+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -215,6 +215,18 @@ msgstr ""
 msgid "Select"
 msgstr "Интихоб кардан"
 
+#: umlwidgetcontroller.cpp:132
+msgid ""
+"Hold shift or ctrl to move in X axis. Hold shift and control to move in Y axis. "
+"Right button click to cancel move."
+msgstr ""
+
+#: umlwidgetcontroller.cpp:387
+msgid ""
+"Hold shift or ctrl to move in X axis. Hold shift and control to move in Y axis. "
+"Right button click to cancel resize."
+msgstr ""
+
 #: dialogs/activitydialog.cpp:73
 msgid "Initial activity"
 msgstr "Фаъолияти аввалин"
@@ -318,7 +330,7 @@ msgstr "Фаъолиятҳо"
 msgid "New Activity..."
 msgstr "Фаъолияти нав..."
 
-#: dialogs/activitypage.cpp:60 floatingtext.cpp:173
+#: dialogs/activitypage.cpp:60 floatingtextwidget.cpp:176
 msgid "Rename"
 msgstr "Номро аз сари нав гузоштан"
 
@@ -326,13 +338,13 @@ msgstr "Номро аз сари нав гузоштан"
 msgid "New Activity"
 msgstr "Фаъолияти нав"
 
-#: activitywidget.cpp:129 dialogs/activitypage.cpp:116 statewidget.cpp:170
-#: toolbarstateother.cpp:136 umlview.cpp:2766
+#: activitywidget.cpp:133 dialogs/activitypage.cpp:116 statewidget.cpp:176
+#: toolbarstateother.cpp:136 umlview.cpp:2769
 msgid "Enter the name of the new activity:"
 msgstr "Номи фаъолияти навро гузоред:"
 
-#: dialogs/activitypage.cpp:117 statewidget.cpp:170 toolbarstateother.cpp:136
-#: umlview.cpp:2767
+#: dialogs/activitypage.cpp:117 statewidget.cpp:176 toolbarstateother.cpp:136
+#: umlview.cpp:2770
 msgid "new activity"
 msgstr "фаъолияти нав"
 
@@ -1533,6 +1545,39 @@ msgstr "Каталогро пеш аз нобуд сохтан озод намо
 msgid "Folder Not Empty"
 msgstr "Каталог холӣ нест"
 
+#: enumliteral.cpp:67 floatingtextwidget.cpp:109 object_factory.cpp:133
+#: umldoc.cpp:1126 umldoc.cpp:1161 umldoc.cpp:1182 umldoc.cpp:1208
+msgid "Name"
+msgstr "Ном"
+
+#: floatingtextwidget.cpp:110
+msgid "Enter operation name:"
+msgstr "Номи амалиётро ворид кунед:"
+
+#: associationwidget.cpp:2384 floatingtextwidget.cpp:160
+msgid "Enter role name:"
+msgstr "Номи нақшро гузоред:"
+
+#: associationwidget.cpp:2346 floatingtextwidget.cpp:162
+msgid "Enter multiplicity:"
+msgstr "Бисёриро гузоред:"
+
+#: associationwidget.cpp:2364 floatingtextwidget.cpp:169
+msgid "Enter association name:"
+msgstr "Номи иттиҳодро гузоред:"
+
+#: floatingtextwidget.cpp:171 floatingtextwidget.cpp:257
+msgid "Enter new text:"
+msgstr "Матни навро ворид кунед:"
+
+#: floatingtextwidget.cpp:173
+msgid "ERROR"
+msgstr "ХАТОГӢ"
+
+#: floatingtextwidget.cpp:257
+msgid "Change Text"
+msgstr "Дигар кардани матн"
+
 #: codegenerator.cpp:502
 msgid ""
 "Cannot open file %1 for writing. Please make sure the folder exists and you "
@@ -1633,11 +1678,6 @@ msgid ""
 msgstr ""
 "Рост намоиро метавонед камаш ба бо ду объект иҷро намоед, масалан синфҳо ва ё "
 "актёр.Барои иттиҳодҳо росткунӣ номумкин аст."
-
-#: enumliteral.cpp:67 floatingtext.cpp:106 object_factory.cpp:133
-#: umldoc.cpp:1126 umldoc.cpp:1161 umldoc.cpp:1182 umldoc.cpp:1208
-msgid "Name"
-msgstr "Ном"
 
 #: enumliteral.cpp:67 object_factory.cpp:133 stereotype.cpp:75 umldoc.cpp:1126
 #: umldoc.cpp:1161 umldoc.cpp:1182 umldoc.cpp:1208
@@ -3225,19 +3265,19 @@ msgid ""
 "it again."
 msgstr "Амалиёт бо ҳамин ном ва рақами ҷузъбандӣ аллакай мавҷуд дорад."
 
-#: activitywidget.cpp:129 toolbarstateother.cpp:135 umlview.cpp:2765
+#: activitywidget.cpp:133 toolbarstateother.cpp:135 umlview.cpp:2768
 msgid "Enter Activity Name"
 msgstr "Номи фаъолиятро гузоред"
 
-#: statewidget.cpp:159 toolbarstateother.cpp:139 umlview.cpp:2729
+#: statewidget.cpp:165 toolbarstateother.cpp:139 umlview.cpp:2732
 msgid "Enter State Name"
 msgstr "Номи ҳолатро гузоред"
 
-#: statewidget.cpp:159 toolbarstateother.cpp:140 umlview.cpp:2730
+#: statewidget.cpp:165 toolbarstateother.cpp:140 umlview.cpp:2733
 msgid "Enter the name of the new state:"
 msgstr "Номи ҳолати навро гузоред:"
 
-#: toolbarstateother.cpp:140 umlview.cpp:2731
+#: toolbarstateother.cpp:140 umlview.cpp:2734
 msgid "new state"
 msgstr "ҳолати нав"
 
@@ -3262,49 +3302,37 @@ msgstr "фосилаи номҳо чашмдошт карда шуд"
 msgid "Multiplicity"
 msgstr "Бисёрӣ"
 
-#: associationwidget.cpp:2346 floatingtext.cpp:159
-msgid "Enter multiplicity:"
-msgstr "Бисёриро гузоред:"
-
 #: associationwidget.cpp:2363
 msgid "Association Name"
 msgstr "Номи иттиҳод"
-
-#: associationwidget.cpp:2364 floatingtext.cpp:166
-msgid "Enter association name:"
-msgstr "Номи иттиҳодро гузоред:"
 
 #: associationwidget.cpp:2383
 msgid "Role Name"
 msgstr "Номи нақш"
 
-#: associationwidget.cpp:2384 floatingtext.cpp:157
-msgid "Enter role name:"
-msgstr "Номи нақшро гузоред:"
-
-#: umlview.cpp:296 umlview.cpp:356
+#: umlview.cpp:299 umlview.cpp:359
 msgid "Diagram: %2 Page %1"
 msgstr "Диаграмма: %2 Саҳифа %1"
 
-#: umlview.cpp:1877 umlview.cpp:1943
+#: umlview.cpp:1880 umlview.cpp:1946
 msgid "Incorrect use of associations."
 msgstr "Имконнопазирии истифодабарии иттиҳод."
 
-#: umlview.cpp:1877 umlview.cpp:1943
+#: umlview.cpp:1880 umlview.cpp:1946
 msgid "Association Error"
 msgstr "Хатогии иттиҳод"
 
-#: umlview.cpp:2798
+#: umlview.cpp:2801
 #, fuzzy
 msgid "Enter Diagram Name"
 msgstr "Номи ҳолатро гузоред"
 
-#: umlview.cpp:2799
+#: umlview.cpp:2802
 #, fuzzy
 msgid "Enter the new name of the diagram:"
 msgstr "Номи нави фаъолиятро гузоред:"
 
-#: umlview.cpp:2956
+#: umlview.cpp:2959
 msgid ""
 "You are about to delete the entire diagram.\n"
 "Are you sure?"
@@ -3312,15 +3340,15 @@ msgstr ""
 "Оё шумо дар ҳақиқат ҳамаи\n"
 " диаграммаҳоро нобуд сохтан мехоҳед?"
 
-#: umlview.cpp:2958
+#: umlview.cpp:2961
 msgid "Delete Diagram?"
 msgstr "Диаграммаро нобуд созам?"
 
-#: objectwidget.cpp:85
+#: objectwidget.cpp:84
 msgid "Rename Object"
 msgstr "Ба объект номи нав гузоштан"
 
-#: objectwidget.cpp:86
+#: objectwidget.cpp:85
 msgid "Enter object name:"
 msgstr "Номи объектро гузоред:"
 
@@ -3368,22 +3396,6 @@ msgstr "Мақомшиносҳои базавӣ"
 #: refactoring/refactoringassistant.cpp:530
 msgid "Derived Classifiers"
 msgstr "Мақомшиносҳои баромадшуда"
-
-#: floatingtext.cpp:107
-msgid "Enter operation name:"
-msgstr "Номи амалиётро ворид кунед:"
-
-#: floatingtext.cpp:168 floatingtext.cpp:254
-msgid "Enter new text:"
-msgstr "Матни навро ворид кунед:"
-
-#: floatingtext.cpp:170
-msgid "ERROR"
-msgstr "ХАТОГӢ"
-
-#: floatingtext.cpp:254
-msgid "Change Text"
-msgstr "Дигар кардани матн"
 
 #: tips.cpp:3
 msgid ""
@@ -3565,7 +3577,7 @@ msgstr "Захира кардан мисли тасвир..."
 msgid "Some errors happened when exporting the images:"
 msgstr ""
 
-#: statewidget.cpp:170
+#: statewidget.cpp:176
 msgid "Enter Activity"
 msgstr "Фаъолиятро ворид кунед"
 
