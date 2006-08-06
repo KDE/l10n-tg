@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: k3b\n"
-"POT-Creation-Date: 2006-08-03 11:41+0200\n"
+"POT-Creation-Date: 2006-08-06 11:40+0200\n"
 "PO-Revision-Date: 2005-09-23 18:02+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -96,7 +96,7 @@ msgstr "Файл аллакай мавҷуд аст"
 msgid "Overwrite"
 msgstr "Ивваз намудан"
 
-#: k3bdiskinfoview.cpp:353 rip/k3baudioconvertingoptionwidget.cpp:122
+#: k3bdiskinfoview.cpp:353 rip/k3baudioconvertingoptionwidget.cpp:154
 #: rip/k3baudioprojectconvertingdialog.cpp:248
 #: rip/k3baudioprojectconvertingdialog.cpp:286
 #: rip/k3baudiorippingdialog.cpp:339 rip/k3baudiorippingdialog.cpp:396
@@ -219,7 +219,7 @@ msgstr ""
 msgid "Continue although the folder is not empty?"
 msgstr "Оё идома додан гирам ба он нигоҳ накарда, ки каталог пур аст?"
 
-#: rip/k3baudioconvertingoptionwidget.cpp:75
+#: rip/k3baudioconvertingoptionwidget.cpp:107
 msgid "Wave"
 msgstr "Wav"
 
@@ -507,12 +507,12 @@ msgid "Extracting %1 to %2"
 msgstr "Хондани %1 ба %2"
 
 #: rip/k3bcddbpatternwidget.cpp:50
-msgid "%A/%T/%a - %t"
-msgstr "%A/%T/%a - %t"
+msgid "%{albumartist} - %{albumtitle}/%{artist} - %{title}"
+msgstr ""
 
 #: rip/k3bcddbpatternwidget.cpp:51
-msgid "%g/%A - %T/Track%n"
-msgstr "%g/%A - %T/Track%n"
+msgid "%{genre}/%{albumartist} - %{albumtitle}/Track%{number}"
+msgstr ""
 
 #: rip/k3bcddbpatternwidget.cpp:52
 msgid "music/ripped-tracks/%a - %t"
@@ -523,12 +523,12 @@ msgid "%A - %T/!a='%A'{%a - }%t"
 msgstr "%A - %T/!a='%A'{%a - }%t"
 
 #: rip/k3bcddbpatternwidget.cpp:55
-msgid "%A - %T"
-msgstr "%A - %T"
+msgid "%{albumartist} - %{albumtitle}"
+msgstr ""
 
 #: rip/k3bcddbpatternwidget.cpp:57
-msgid "playlists/%A/%T"
-msgstr "playlists/%A/%T"
+msgid "playlists/%{albumartist}/%{albumtitle    }"
+msgstr ""
 
 #: rip/k3bcddbpatternwidget.cpp:132
 msgid ""
@@ -1265,7 +1265,7 @@ msgstr "Хотима ёфт"
 msgid "The Erasing process failed. Do you want to see the debugging output?"
 msgstr ""
 
-#: k3bemptydiscwaiter.cpp:672 misc/k3bblankingdialog.cpp:181
+#: k3bemptydiscwaiter.cpp:670 misc/k3bblankingdialog.cpp:181
 msgid "Erasing failed."
 msgstr "Қодир ба пок намудани диск набудам."
 
@@ -1500,7 +1500,9 @@ msgstr "Якчанд маротиба рамзгузории видеосигн�
 msgid "DVD Reader Device"
 msgstr "Дастгоҳи хонандаи DVD"
 
-#: misc/k3bdvdcopydialog.cpp:154
+#. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 31
+#: misc/k3bdvdcopydialog.cpp:154 rc.cpp:1327
+#, no-c-format
 msgid "General"
 msgstr "Умумӣ"
 
@@ -1545,7 +1547,7 @@ msgstr "*.cue *.CUE|Файлҳои Cue"
 msgid "*.toc *.TOC|Cdrdao TOC Files and Cdrecord Clone Images"
 msgstr "*.toc *.TOC|TOC-файлҳо cdrdao ва образҳои клони cdrecord"
 
-#: k3b.cpp:1285 k3bfileview.cpp:100 misc/k3bcdimagewritingdialog.cpp:186
+#: k3b.cpp:1285 k3bfileview.cpp:103 misc/k3bcdimagewritingdialog.cpp:186
 #: misc/k3bisoimagewritingdialog.cpp:151
 msgid "*|All Files"
 msgstr "*|Ҳамаи файлҳо"
@@ -4066,7 +4068,7 @@ msgid "Project"
 msgstr "Лоиҳа"
 
 #. i18n: file ./rip/base_k3bvideodvdrippingwidget.ui line 17
-#: rc.cpp:3
+#: rc.cpp:3 rc.cpp:1296 rc.cpp:1324
 #, fuzzy, no-c-format
 msgid "Form1"
 msgstr "Оғоз кардан"
@@ -4169,7 +4171,7 @@ msgid "Variable &Bitrate"
 msgstr "VBR (битрейти тағйирёбанда)"
 
 #. i18n: file ./rip/base_k3bvideodvdrippingwidget.ui line 334
-#: rc.cpp:60
+#: rc.cpp:60 rc.cpp:1360
 #, no-c-format
 msgid "Alt+B"
 msgstr ""
@@ -4667,7 +4669,7 @@ msgstr "Нест намудани мавзӯъ"
 
 #. i18n: file ./option/base_k3bpluginoptiontab.ui line 51
 #: projects/k3bdatafileview.cpp:66 projects/k3bmovixlistview.cpp:172
-#: rc.cpp:350
+#: rc.cpp:350 rc.cpp:1306
 #, no-c-format
 msgid "Name"
 msgstr "Ном"
@@ -6356,105 +6358,163 @@ msgid ""
 "used for encoding, thus slightly reducing the sound quality."
 msgstr ""
 
-#. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 28
-#: rc.cpp:1296
-#, no-c-format
-msgid ""
-"Setup different external programs to encode audio data ripped from an audio CD."
-msgstr ""
-
-#. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 82
+#. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 32
 #: rc.cpp:1299
 #, no-c-format
-msgid "New"
+msgid ""
+"<p>This dialog can be used to setup external command line applications as audio "
+"encoders. These can then be used by K3b to encode audio data (Tracks from an "
+"audio CD or the titles from an audio project) to formats that are normally not "
+"supported (i.e. no encoder plugin exists).\n"
+"<p>K3b comes with a selection of predefined external applications that depends "
+"on the installed applications."
 msgstr ""
 
-#. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 88
-#: rc.cpp:1302
-#, no-c-format
-msgid "New Program"
-msgstr ""
+#. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 48
+#: rc.cpp:1303
+#, fuzzy, no-c-format
+msgid "Configured Encoders"
+msgstr "Танзим намудани модул"
 
-#. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 102
-#: rc.cpp:1308
-#, no-c-format
-msgid "Delete Program"
-msgstr ""
+#. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 68
+#: rc.cpp:1309
+#, fuzzy, no-c-format
+msgid "Extension"
+msgstr "Тафсир"
 
-#. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 144
-#: rc.cpp:1311
+#. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 79
+#: rc.cpp:1312 rc.cpp:1336
+#, fuzzy, no-c-format
+msgid "Command"
+msgstr "Эзоҳ"
+
+#. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 130
+#: rc.cpp:1318
+#, fuzzy, no-c-format
+msgid "Edit..."
+msgstr "..."
+
+#. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 138
+#: rc.cpp:1321
+#, fuzzy, no-c-format
+msgid "Add..."
+msgstr "..."
+
+#. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 52
+#: rc.cpp:1330
 #, no-c-format
 msgid "Name:"
 msgstr ""
 
-#. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 162
-#: rc.cpp:1314
-#, no-c-format
-msgid "Extension:"
-msgstr ""
+#. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 60
+#: rc.cpp:1333
+#, fuzzy, no-c-format
+msgid "Filename extension:"
+msgstr "Қолиби номи файл"
 
-#. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 178
-#: rc.cpp:1317
+#. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 93
+#: rc.cpp:1339
 #, no-c-format
 msgid ""
 "<p><b>Command</b>"
 "<br>\n"
-"The command must at least contain the filename (%f). Metainfo may be set with:"
+"Please insert the command used to encode the audio data. The command has to "
+"read raw little endian (see <em>Swap Byte Order</em>"
+") 16bit stereo audio frames from stdin.\n"
+"<p>The following strings will be replaced by K3b:"
 "<br>\n"
-"<b>%t</b> - Title; <b>%a</b> - Artist; <b>%c</b> - Comment; <b>%n</b> "
-"- Track number;"
+"<b>%f</b> - The filename of the resulting file. This is where the command has "
+"to write its output to."
 "<br>\n"
-"<b>%m</b> - Album Title; <b>%r</b> - Album Artist; <b>%x</b> "
-"- Album comment; <b>%y</b> - Year"
+"<em>The following refer to metadata stored for example in the ID3 tag of am mp3 "
+"file (Be aware that these values might be empty).</em>"
 "<br>\n"
-"Be aware that these values might be empty."
+"<b>%t</b> - Title"
 "<br>\n"
-"The program has to read the data from stdin."
+"<b>%a</b> - Artist"
 "<br>\n"
-"If you only hear noise you most likely need to swap the byte order."
+"<b>%c</b> - Comment"
+"<br>\n"
+"<b>%n</b> - Track number"
+"<br>\n"
+"<b>%m</b> - Album Title"
+"<br>\n"
+"<b>%r</b> - Album Artist"
+"<br>\n"
+"<b>%x</b> - Album comment"
+"<br>\n"
+"<b>%y</b> - Release Year"
 msgstr ""
 
-#. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 199
-#: rc.cpp:1326
+#. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 127
+#: rc.cpp:1357
 #, no-c-format
 msgid "Swap &Byte Order"
 msgstr ""
 
-#. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 207
-#: rc.cpp:1329
+#. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 133
+#: rc.cpp:1363
+#, no-c-format
+msgid "Swap the byte order of the input data"
+msgstr ""
+
+#. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 137
+#: rc.cpp:1366
+#, no-c-format
+msgid ""
+"<p> If this option is checked K3b will swap the byte order of the input data. "
+"Thus, the command has to read big endian audio frames.\n"
+"<p>If the resulting audio file sounds bad it is highly likely that the byte "
+"order is wrong and this option has to be checked."
+msgstr ""
+
+#. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 145
+#: rc.cpp:1370
 #, fuzzy, no-c-format
 msgid "Write W&ave Header"
 msgstr "Сабт намудани образи cue"
 
-#. i18n: file ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui line 210
-#: rc.cpp:1332
+#. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 148
+#: rc.cpp:1373
+#, no-c-format
+msgid "Alt+A"
+msgstr ""
+
+#. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 151
+#: rc.cpp:1376
+#, no-c-format
+msgid "Create a wave header for the input data"
+msgstr ""
+
+#. i18n: file ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui line 154
+#: rc.cpp:1379
 #, no-c-format
 msgid ""
 "<p>If this option is checked K3b will write a wave header. This is useful in "
 "case the encoder application cannot read plain raw audio data."
 msgstr ""
 
-#: k3bfileview.cpp:92
+#: k3bfileview.cpp:95
 msgid "Filter:"
 msgstr ""
 
-#: k3bfileview.cpp:101
+#: k3bfileview.cpp:104
 msgid "audio/x-mp3 audio/x-wav application/x-ogg |Sound Files"
 msgstr ""
 
-#: k3bfileview.cpp:102
+#: k3bfileview.cpp:105
 msgid "audio/x-wav |Wave Sound Files"
 msgstr ""
 
-#: k3bfileview.cpp:103
+#: k3bfileview.cpp:106
 msgid "audio/x-mp3 |MP3 Sound Files"
 msgstr ""
 
-#: k3bfileview.cpp:104
+#: k3bfileview.cpp:107
 msgid "application/x-ogg |Ogg Vorbis Sound Files"
 msgstr ""
 
-#: k3bfileview.cpp:105
+#: k3bfileview.cpp:108
 msgid "video/mpeg |MPEG Video Files"
 msgstr ""
 
@@ -9046,36 +9106,59 @@ msgstr ""
 msgid "Variable Bitrate (%1)"
 msgstr "VBR (битрейти тағйирёбанда)"
 
-#: ../plugins/encoder/external/k3bexternalencoder.cpp:308
+#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:35
+#, fuzzy
+msgid "Editing external audio encoder"
+msgstr "Файли аудиои зоҳирӣ:"
+
+#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:76
+msgid "Please specify a name for the command."
+msgstr ""
+
+#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:77
+msgid "No name specified"
+msgstr ""
+
+#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:81
+msgid "Please specify an extension for the command."
+msgstr ""
+
+#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:82
+msgid "No extension specified"
+msgstr ""
+
+#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:86
+#, fuzzy
+msgid "Please specify the command line."
+msgstr "Роҳчаҳоро барои хондан интихоб намоед."
+
+#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:87
+msgid "No command line specified"
+msgstr ""
+
+#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:91
+#, c-format
+msgid "Please add the output filename (%f) to the command line."
+msgstr ""
+
+#: ../plugins/encoder/external/k3bexternalencoderconfigwidget.cpp:92
+#, fuzzy
+msgid "No filename specified"
+msgstr "Ягон образи интихобшуда вуҷуд надорад"
+
+#: ../plugins/encoder/external/k3bexternalencoder.cpp:200
 msgid "Invalid command: the command is empty."
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoder.cpp:353
+#: ../plugins/encoder/external/k3bexternalencoder.cpp:245
 #, c-format
 msgid "Command failed: %1"
 msgstr ""
 
-#: ../plugins/encoder/external/k3bexternalencoder.cpp:364
+#: ../plugins/encoder/external/k3bexternalencoder.cpp:256
 #, fuzzy
 msgid "Could not find program '%1'"
 msgstr "Қодир ба дарёфт намудани модули барориши садои '%1' набудам"
-
-#: ../plugins/encoder/external/k3bexternalencoder.cpp:626
-msgid "Please specify an extension."
-msgstr ""
-
-#: ../plugins/encoder/external/k3bexternalencoder.cpp:630
-msgid "Please specify a command."
-msgstr ""
-
-#: ../plugins/encoder/external/k3bexternalencoder.cpp:634
-#, c-format
-msgid "The command needs to contain the filename (%f)."
-msgstr ""
-
-#: ../plugins/encoder/external/k3bexternalencoder.cpp:650
-msgid "Please specify a unique name and extension."
-msgstr ""
 
 #: ../plugins/audiooutput/alsa/k3balsaoutputplugin.cpp:88
 #, fuzzy
@@ -9192,6 +9275,18 @@ msgstr ""
 #: ../plugins/project/audioprojectcddb/k3baudioprojectcddbplugin.cpp:70
 msgid "Please select a non-empty audio project for a cddb query."
 msgstr ""
+
+#~ msgid "%A/%T/%a - %t"
+#~ msgstr "%A/%T/%a - %t"
+
+#~ msgid "%g/%A - %T/Track%n"
+#~ msgstr "%g/%A - %T/Track%n"
+
+#~ msgid "%A - %T"
+#~ msgstr "%A - %T"
+
+#~ msgid "playlists/%A/%T"
+#~ msgstr "playlists/%A/%T"
 
 #, fuzzy
 #~ msgid "Saves the current project as..."
@@ -9638,9 +9733,6 @@ msgstr ""
 
 #~ msgid "K3b DVD ripping file:"
 #~ msgstr "Файл барои хондан аз DVD:"
-
-#~ msgid "External audio file:"
-#~ msgstr "Файли аудиои зоҳирӣ:"
 
 #~ msgid "Final AVI file name:"
 #~ msgstr "Номи файли хотимавии AVI:"
