@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
-"POT-Creation-Date: 2006-08-30 02:45+0200\n"
+"POT-Creation-Date: 2006-08-31 02:45+0200\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -1369,8 +1369,8 @@ msgid "Description:"
 msgstr "Қатъ кардан"
 
 #. i18n: file ./ui/wdgnewimage.ui line 251
-#: ui/kis_layerlist.cc:184 rc.cpp:209 rc.cpp:301 rc.cpp:1347 rc.cpp:1644
-#: rc.cpp:1754
+#: ui/kis_layerlist.cc:184 ui/kis_tool_paint.cc:123 rc.cpp:209 rc.cpp:301
+#: rc.cpp:1347 rc.cpp:1644 rc.cpp:1754
 #, no-c-format
 msgid "Opacity:"
 msgstr "Норавшанӣ:"
@@ -2349,7 +2349,7 @@ msgid "SIOX"
 msgstr ""
 
 #. i18n: file ./plugins/tools/tool_siox/wdg_tool_siox.ui line 38
-#: rc.cpp:797
+#: ui/kis_tool_paint.cc:129 rc.cpp:797
 #, fuzzy, no-c-format
 msgid "Mode:"
 msgstr "Усул:"
@@ -3171,7 +3171,7 @@ msgid "Blur radius:"
 msgstr "Ранги ҷамъкунанда"
 
 #. i18n: file ./plugins/viewplugins/dropshadow/wdg_dropshadow.ui line 48
-#: rc.cpp:1344
+#: rc.cpp:1344 rc.cpp:1744
 #, fuzzy, no-c-format
 msgid "Color:"
 msgstr "Ранг кардан"
@@ -3800,12 +3800,6 @@ msgstr "Равшанӣ :"
 msgid "Channel:"
 msgstr "&Мил:"
 
-#. i18n: file ./plugins/filters/colors/wdgcolortoalphabase.ui line 52
-#: rc.cpp:1744
-#, fuzzy, no-c-format
-msgid "Color :"
-msgstr "Ранг кардан"
-
 #. i18n: file ./plugins/filters/colors/wdgcolortoalphabase.ui line 85
 #: rc.cpp:1748 rc.cpp:1763
 #, fuzzy, no-c-format
@@ -4272,7 +4266,8 @@ msgid "No options for %1."
 msgstr "Ҳосиятҳо..."
 
 #: ui/kis_brush_chooser.cc:33
-msgid "Spacing: "
+#, fuzzy
+msgid "Spacing:"
 msgstr "Фосила: "
 
 #: ui/kis_dlg_adj_layer_props.cc:95 ui/kis_dlg_adjustment_layer.cc:81
@@ -4534,9 +4529,9 @@ msgstr "&Пинҳои кардани/Намоиши Табақа"
 msgid "Edit Mask"
 msgstr "Иловаи ниқоб"
 
-#: ui/kis_view.cc:662
+#: ui/kis_view.cc:662 ui/kis_view.cc:1946
 #, fuzzy
-msgid "&Flatten image"
+msgid "&Flatten Image"
 msgstr "Дучанда кардани Тасвир"
 
 #: ui/kis_view.cc:663
@@ -4626,11 +4621,6 @@ msgstr ""
 #: core/kis_image.cc:1306 ui/kis_view.cc:1945
 #, fuzzy
 msgid "Flatten Image"
-msgstr "Дучанда кардани Тасвир"
-
-#: ui/kis_view.cc:1946
-#, fuzzy
-msgid "&Flatten Image"
 msgstr "Дучанда кардани Тасвир"
 
 #: ui/kis_view.cc:2599
@@ -4835,14 +4825,6 @@ msgstr ""
 #, fuzzy
 msgid "Grow"
 msgstr "Кабуд :"
-
-#: ui/kis_tool_paint.cc:123
-msgid "Opacity: "
-msgstr "Ношаффофӣ: "
-
-#: ui/kis_tool_paint.cc:129
-msgid "Mode: "
-msgstr "Усул: "
 
 #: core/kis_layer.cc:74
 #, fuzzy
@@ -6780,17 +6762,17 @@ msgstr "Ҳаракат кардани Интихобот"
 
 #: plugins/viewplugins/modify_selection/modify_selection.cc:69
 #, fuzzy
-msgid "Grow selection..."
+msgid "Grow Selection..."
 msgstr "Ҳаракат кардани Интихобот"
 
 #: plugins/viewplugins/modify_selection/modify_selection.cc:70
 #, fuzzy
-msgid "Shrink selection..."
+msgid "Shrink Selection..."
 msgstr "Ҳаракат кардани Интихобот"
 
 #: plugins/viewplugins/modify_selection/modify_selection.cc:71
 #, fuzzy
-msgid "Border selection..."
+msgid "Border Selection..."
 msgstr "Ҳаракат кардани Интихобот"
 
 #: plugins/viewplugins/modify_selection/dlg_border_selection.cc:42
@@ -6974,7 +6956,7 @@ msgstr "Ҳеҷ"
 
 #: plugins/filters/noisefilter/noisefilter.cc:67
 #, fuzzy
-msgid "&Random Noise"
+msgid "&Random Noise..."
 msgstr "Занондан"
 
 #: plugins/filters/noisefilter/noisefilter.cc:85
@@ -7010,7 +6992,7 @@ msgstr ""
 
 #: plugins/filters/wavefilter/wavefilter.cc:102
 #, fuzzy
-msgid "&Wave"
+msgid "&Wave..."
 msgstr "&Ном"
 
 #: plugins/filters/wavefilter/wavefilter.cc:126
@@ -7053,7 +7035,7 @@ msgstr "Нағз"
 
 #: plugins/filters/lenscorrectionfilter/lenscorrectionfilter.cc:71
 #, fuzzy
-msgid "&Lens correction"
+msgid "&Lens Correction..."
 msgstr "Ислоҳи гамма"
 
 #: plugins/filters/lenscorrectionfilter/lenscorrectionfilter.cc:93
@@ -7118,16 +7100,19 @@ msgid "Color to alpha"
 msgstr "Ранги ҷамъкунанда"
 
 #: plugins/filters/colors/kis_minmax_filters.cc:71
-msgid "M&aximize channel"
-msgstr ""
+#, fuzzy
+msgid "M&aximize Channel"
+msgstr "Нест кардани Мил"
 
 #: plugins/filters/colors/kis_minmax_filters.cc:117
-msgid "M&inimize channel"
-msgstr ""
+#, fuzzy
+msgid "M&inimize Channel"
+msgstr "Нест кардани Мил"
 
 #: plugins/filters/colors/kis_color_to_alpha.cc:33
-msgid "&Color to alpha"
-msgstr ""
+#, fuzzy
+msgid "&Color to Alpha..."
+msgstr "Ранги ҷамъкунанда"
 
 #: plugins/filters/imageenhancement/kis_wavelet_noise_reduction.h:59
 msgid "Wavelet Noise Reducer"
@@ -7158,7 +7143,7 @@ msgstr "Занондан"
 
 #: plugins/filters/randompickfilter/randompickfilter.cc:68
 #, fuzzy
-msgid "&Random Pick"
+msgid "&Random Pick..."
 msgstr "Занондан"
 
 #: plugins/filters/randompickfilter/randompickfilter.cc:87
@@ -7167,7 +7152,7 @@ msgstr ""
 
 #: plugins/filters/unsharp/kis_unsharp_filter.cc:54
 #, fuzzy
-msgid "&Unsharp mask..."
+msgid "&Unsharp Mask..."
 msgstr "Воридоти Тасвир..."
 
 #: plugins/filters/unsharp/kis_unsharp_filter.h:36
@@ -7177,7 +7162,7 @@ msgstr "Алфа"
 
 #: plugins/filters/fastcolortransfer/fastcolortransfer.cc:61
 #, fuzzy
-msgid "&Color Transfer"
+msgid "&Color Transfer..."
 msgstr "Ранги роҳбар"
 
 #: plugins/filters/fastcolortransfer/fastcolortransfer.h:45
@@ -7261,6 +7246,20 @@ msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Color :"
+#~ msgstr "Ранг кардан"
+
+#, fuzzy
+#~ msgid "&Flatten image"
+#~ msgstr "Дучанда кардани Тасвир"
+
+#~ msgid "Opacity: "
+#~ msgstr "Ношаффофӣ: "
+
+#~ msgid "Mode: "
+#~ msgstr "Усул: "
 
 #, fuzzy
 #~ msgid "Finish selection"
