@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kugar\n"
-"POT-Creation-Date: 2006-03-29 04:03+0200\n"
+"POT-Creation-Date: 2006-11-02 02:46+0100\n"
 "PO-Revision-Date: 2004-08-02 20:29+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team:  Tajik\n"
@@ -18,6 +18,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3\n"
+
+#: lib/mfieldobject.cpp:233
+msgid ","
+msgstr ""
 
 #: lib/mreportviewer.cpp:155 lib/mreportviewer.cpp:293
 msgid ""
@@ -88,31 +92,37 @@ msgid "Grid size:"
 msgstr ""
 
 #: kudesigner/kudesigner_view.cpp:192 kudesigner_lib/reportheader.cpp:45
+#: kudesigner_lib/structurewidget.cpp:123
 msgid "Report Header"
 msgstr "Унвони ҳисобот "
 
 #: kudesigner/kudesigner_view.cpp:194 kudesigner_lib/reportfooter.cpp:47
+#: kudesigner_lib/structurewidget.cpp:126
 msgid "Report Footer"
 msgstr "Ҷамъбасти ҳисобот"
 
 #: kudesigner/kudesigner_view.cpp:196 kudesigner_lib/pageheader.cpp:46
+#: kudesigner_lib/structurewidget.cpp:132
 msgid "Page Header"
 msgstr "Унвони болоии саҳифот"
 
 #: kudesigner/kudesigner_view.cpp:198 kudesigner_lib/pagefooter.cpp:45
+#: kudesigner_lib/structurewidget.cpp:129
 msgid "Page Footer"
 msgstr "Унвони поёнии саҳифот"
 
 #: kudesigner/kudesigner_view.cpp:200 kudesigner_lib/detailheader.cpp:39
+#: kudesigner_lib/structurewidget.cpp:138
 msgid "Detail Header"
 msgstr "Унвони ҷузъиёт"
 
 #: kudesigner/kudesigner_view.cpp:202 kudesigner_lib/detail.cpp:42
-#: kudesigner_lib/detailbase.cpp:29
+#: kudesigner_lib/detailbase.cpp:29 kudesigner_lib/structurewidget.cpp:135
 msgid "Detail"
 msgstr "Ҷузъиёт"
 
 #: kudesigner/kudesigner_view.cpp:204 kudesigner_lib/detailfooter.cpp:39
+#: kudesigner_lib/structurewidget.cpp:141
 msgid "Detail Footer"
 msgstr "Ҷамбасти ҷузъиёт "
 
@@ -139,6 +149,7 @@ msgstr "Заминаи ҳисобкунӣ"
 
 #: kudesigner/kudesigner_view.cpp:223 kudesigner_lib/commdefs.cpp:42
 #: kudesigner_lib/label.cpp:62 kudesigner_lib/line.cpp:35
+#: kudesigner_lib/structurewidget.cpp:182
 msgid "Line"
 msgstr "Хат"
 
@@ -150,6 +161,23 @@ msgstr "Навиштаҷот"
 #: kudesigner/kudesigner_view.cpp:230
 msgid "Grid Size"
 msgstr ""
+
+#: kudesigner/kudesigner_view.cpp:312
+msgid "Add Detail Header"
+msgstr "Афзудани унвони ҷузъиёт"
+
+#: kudesigner/kudesigner_view.cpp:312 kudesigner/kudesigner_view.cpp:325
+#: kudesigner/kudesigner_view.cpp:339
+msgid "Enter detail level:"
+msgstr "Дараҷоти ҷузъиётро ворид кунед: "
+
+#: kudesigner/kudesigner_view.cpp:325
+msgid "Add Detail"
+msgstr "Афзудани ҷузъиёт "
+
+#: kudesigner/kudesigner_view.cpp:339
+msgid "Add Detail Footer"
+msgstr "Афзудани ҷамбастоти ҷузиъёт"
 
 #: kudesigner_lib/calcfield.cpp:35
 #, fuzzy
@@ -185,6 +213,43 @@ msgstr ""
 #, fuzzy
 msgid "Calculation Type"
 msgstr "Шакли ҳисоб:"
+
+#: kudesigner_lib/command.cpp:54
+msgid "Insert Detail Footer Section"
+msgstr "Даровардани Поҳои Шӯъбаи Тафсилот"
+
+#: kudesigner_lib/command.cpp:78
+msgid "Insert Detail Section"
+msgstr "Даровардани Шӯъбаи Тафсилот"
+
+#: kudesigner_lib/command.cpp:102
+msgid "Insert Detail Header Section"
+msgstr "Даровардани Сарлавҳаи Шӯъбаи Тафсилот"
+
+#: kudesigner_lib/command.cpp:126
+msgid "Insert Page Footer Section"
+msgstr "Даровардани Поҳои Шӯъбаи Саҳифа"
+
+#: kudesigner_lib/command.cpp:149
+msgid "Insert Page Header Section"
+msgstr "Даровардани Сарлавҳаи Шӯъбаи Саҳифа"
+
+#: kudesigner_lib/command.cpp:172
+msgid "Insert Report Footer Section"
+msgstr "Даровардани Поҳои Шӯъбаи Ҳисоб"
+
+#: kudesigner_lib/command.cpp:195
+msgid "Insert Report Header Section"
+msgstr "Даровардани Сарлавҳаи Шӯъбаи Ҳисоб"
+
+#: kudesigner_lib/command.cpp:218
+#, fuzzy
+msgid "Insert Report Item"
+msgstr "Гузориши ҷузъи ҳисобот "
+
+#: kudesigner_lib/command.cpp:273
+msgid "Delete Report Item(s)"
+msgstr "Нобудкардани Ҷузъ(ҳо)и Ҳисоб"
 
 #: kudesigner_lib/commdefs.cpp:38
 #, fuzzy
@@ -577,6 +642,110 @@ msgstr "Заминаи махсус"
 msgid "PageNo"
 msgstr "Саҳифаи рақами"
 
+#: kudesigner_lib/structurewidget.cpp:82
+#, fuzzy
+msgid "Report Structure"
+msgstr "Гузориши ҷузъи ҳисобот "
+
+#: kudesigner_lib/structurewidget.cpp:94
+#, fuzzy
+msgid "Report Template"
+msgstr "Унвони ҳисобот "
+
+#: kudesigner_lib/structurewidget.cpp:145
+msgid " (level %1)"
+msgstr ""
+
+#: kudesigner_lib/structurewidget.cpp:163
+msgid "<unknown>"
+msgstr ""
+
+#: kudesigner_lib/structurewidget.cpp:168
+#, fuzzy, c-format
+msgid "Label: %1"
+msgstr "Навиштаҷот"
+
+#: kudesigner_lib/structurewidget.cpp:171
+#, fuzzy, c-format
+msgid "Field: %1"
+msgstr "Замина "
+
+#: kudesigner_lib/structurewidget.cpp:174
+#, fuzzy, c-format
+msgid "Calculated Field: %1"
+msgstr "Заминаи ҳисобкунӣ"
+
+#: kudesigner_lib/structurewidget.cpp:179
+#, fuzzy, c-format
+msgid "Special Field: %1"
+msgstr "Заминаи махсус"
+
+#: part/kugar_about.h:31
+msgid "Kugar"
+msgstr "Kugar"
+
+#: part/kugar_about.h:32
+msgid "Report viewer(generator)"
+msgstr ""
+
+#: part/kugar_about.h:33
+msgid "(c) 1999-2006, The Kugar Team"
+msgstr ""
+
+#: kudesigner/kudesigner_aboutdata.h:40 part/kugar_about.h:36
+#, fuzzy
+msgid "Maintainer, Report Designer, Kugar library enhancements"
+msgstr ""
+"Таклимкунандаи ҳозира, Ҳисоби Дизайнгар, Тақвияти Умумӣ, Хатои душвориҳо"
+
+#: part/kugar_about.h:39
+msgid "Smaller fixes and Kexi integration"
+msgstr ""
+
+#: part/kugar_about.h:42
+msgid "Direct database support"
+msgstr ""
+
+#: part/kugar_about.h:45
+msgid "Former maintainer"
+msgstr ""
+
+#: part/kugar_about.h:48
+#, fuzzy
+msgid "Original author of Metaphrast"
+msgstr "Муаллифи аввалӣ"
+
+#: _translatorinfo.cpp:1 kudesigner/kudesigner_aboutdata.h:51
+#: part/kugar_about.h:50
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr ""
+
+#: _translatorinfo.cpp:3 kudesigner/kudesigner_aboutdata.h:52
+#: part/kugar_about.h:50
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr ""
+
+#: kudesigner/kudesigner_aboutdata.h:27
+msgid "GUI report template designer for Kugar report engine"
+msgstr ""
+
+#: kudesigner/kudesigner_aboutdata.h:36
+#, fuzzy
+msgid "Kugar Report Designer"
+msgstr "Дизайнери қолиби ҳисоботҳои Kugar"
+
+#: kudesigner/kudesigner_aboutdata.h:44
+msgid "Major bugfixes, additional features and Kexi integration"
+msgstr ""
+
+#: kudesigner/kudesigner_aboutdata.h:48
+msgid "Fast property editing for report items"
+msgstr ""
+
 #. i18n: file kudesigner/kudesignerui.rc line 16
 #: rc.cpp:9
 #, no-c-format
@@ -600,30 +769,6 @@ msgstr "Шӯъбаҳо"
 #, no-c-format
 msgid "Items"
 msgstr "Ҷузъҳо"
-
-#: _translatorinfo.cpp:1
-msgid ""
-"_: NAME OF TRANSLATORS\n"
-"Your names"
-msgstr ""
-
-#: _translatorinfo.cpp:3
-msgid ""
-"_: EMAIL OF TRANSLATORS\n"
-"Your emails"
-msgstr ""
-
-#~ msgid "Add Detail Header"
-#~ msgstr "Афзудани унвони ҷузъиёт"
-
-#~ msgid "Enter detail level:"
-#~ msgstr "Дараҷоти ҷузъиётро ворид кунед: "
-
-#~ msgid "Add Detail"
-#~ msgstr "Афзудани ҷузъиёт "
-
-#~ msgid "Add Detail Footer"
-#~ msgstr "Афзудани ҷамбастоти ҷузиъёт"
 
 #~ msgid "Insert Label"
 #~ msgstr "Гузориши навиштаҷот "
@@ -664,11 +809,6 @@ msgstr ""
 #~ "_: candefs\n"
 #~ "Insert Line"
 #~ msgstr "Гузориши хат "
-
-#~ msgid ""
-#~ "_: candefs\n"
-#~ "Insert Report Item"
-#~ msgstr "Гузориши ҷузъи ҳисобот "
 
 #~ msgid "Detail height"
 #~ msgstr "Бузургии ҷузъиёт"
@@ -745,30 +885,6 @@ msgstr ""
 #~ msgid "Field type to display"
 #~ msgstr "Намуди соҳа барои намоиш"
 
-#~ msgid "Insert Detail Footer Section"
-#~ msgstr "Даровардани Поҳои Шӯъбаи Тафсилот"
-
-#~ msgid "Insert Detail Section"
-#~ msgstr "Даровардани Шӯъбаи Тафсилот"
-
-#~ msgid "Insert Detail Header Section"
-#~ msgstr "Даровардани Сарлавҳаи Шӯъбаи Тафсилот"
-
-#~ msgid "Insert Page Footer Section"
-#~ msgstr "Даровардани Поҳои Шӯъбаи Саҳифа"
-
-#~ msgid "Insert Page Header Section"
-#~ msgstr "Даровардани Сарлавҳаи Шӯъбаи Саҳифа"
-
-#~ msgid "Insert Report Footer Section"
-#~ msgstr "Даровардани Поҳои Шӯъбаи Ҳисоб"
-
-#~ msgid "Insert Report Header Section"
-#~ msgstr "Даровардани Сарлавҳаи Шӯъбаи Ҳисоб"
-
-#~ msgid "Delete Report Item(s)"
-#~ msgstr "Нобудкардани Ҷузъ(ҳо)и Ҳисоб"
-
 #~ msgid "Custom..."
 #~ msgstr "Оддӣ..."
 
@@ -787,9 +903,6 @@ msgstr ""
 #~ msgid "Property"
 #~ msgstr "Ҳосият"
 
-#~ msgid "Kugar"
-#~ msgstr "Kugar"
-
 #~ msgid "A template driven report viewer for XML data."
 #~ msgstr "Системаи дар асоси қолиб ташкилёфтаи эҷоди ҳисоботҳо аз рӯи маълумоти дар формати XML буда."
 
@@ -800,14 +913,8 @@ msgstr ""
 #~ "Kugar файли маълумотро дар XML бо файли қолиби XML барои\n"
 #~ "намоиш ва чопи ҳисоботҳои баландсифат низ пайваст мекунад."
 
-#~ msgid "Current maintainer, Report Designer, General Enhancements, Bugfixes"
-#~ msgstr "Таклимкунандаи ҳозира, Ҳисоби Дизайнгар, Тақвияти Умумӣ, Хатои душвориҳо"
-
 #~ msgid "Former maintainer, Shell, Konqueror Part"
 #~ msgstr "Эҷодкунанда, тадқиқкунандаи муҳит ва компонент барои Konqueror"
-
-#~ msgid "Original author"
-#~ msgstr "Муаллифи аввалӣ"
 
 #~ msgid "The XML data file"
 #~ msgstr "Таърихи файл XML"
@@ -817,6 +924,3 @@ msgstr ""
 
 #~ msgid "&Go"
 #~ msgstr "&Гузаштан"
-
-#~ msgid "Kugar Designer"
-#~ msgstr "Дизайнери қолиби ҳисоботҳои Kugar"
