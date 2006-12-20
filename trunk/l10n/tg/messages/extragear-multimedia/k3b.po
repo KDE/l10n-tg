@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: k3b\n"
-"POT-Creation-Date: 2006-12-19 08:59+0100\n"
+"POT-Creation-Date: 2006-12-20 08:53+0100\n"
 "PO-Revision-Date: 2005-09-23 18:02+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -85,7 +85,7 @@ msgstr "Оё мехоҳед ин файлҳоро ивваз кунед?"
 msgid "Files Exist"
 msgstr "Файл аллакай мавҷуд аст"
 
-#: k3b.cpp:919 k3bdebuggingoutputdialog.cpp:142 k3bemptydiscwaiter.cpp:347
+#: k3b.cpp:920 k3bdebuggingoutputdialog.cpp:142 k3bemptydiscwaiter.cpp:347
 #: k3bemptydiscwaiter.cpp:417 misc/k3bcdcopydialog.cpp:297
 #: misc/k3bcdcopydialog.cpp:305 misc/k3bdvdcopydialog.cpp:251
 #: option/k3bthemeoptiontab.cpp:190 projects/k3bdataburndialog.cpp:183
@@ -1111,11 +1111,17 @@ msgstr ""
 msgid "Unmounting failed"
 msgstr "Монтаж карда натавонист."
 
-#: k3bmedium.cpp:299 rip/videodvd/k3bvideodvdrippingview.cpp:100
+#: rip/videodvd/k3bvideodvdrippingview.cpp:104
+msgid ""
+"<p>Unable to read Video DVD contents: Found encrypted Video DVD."
+"<p>Install <i>libdvdcss</i> to get Video DVD decryption support."
+msgstr ""
+
+#: k3bmedium.cpp:299 rip/videodvd/k3bvideodvdrippingview.cpp:115
 msgid "Video DVD"
 msgstr "Видео DVD"
 
-#: rip/videodvd/k3bvideodvdrippingview.cpp:101
+#: rip/videodvd/k3bvideodvdrippingview.cpp:116
 #, fuzzy, c-format
 msgid ""
 "_n: %n title\n"
@@ -1124,21 +1130,15 @@ msgstr ""
 "%n тарона\n"
 "%n таронаҳо"
 
-#: rip/videodvd/k3bvideodvdrippingview.cpp:109
+#: rip/videodvd/k3bvideodvdrippingview.cpp:124
 msgid "K3b uses transcode to rip Video DVDs. Please make sure it is installed."
 msgstr ""
 
-#: rip/videodvd/k3bvideodvdrippingview.cpp:123
+#: rip/videodvd/k3bvideodvdrippingview.cpp:138
 msgid ""
 "<p>K3b uses transcode to rip Video DVDs. Your installation of transcode (<em>"
 "%1</em>) lacks support for any of the codecs supported by K3b."
 "<p>Please make sure it is installed properly."
-msgstr ""
-
-#: rip/videodvd/k3bvideodvdrippingview.cpp:144
-msgid ""
-"<p>Unable to read Video DVD contents: Found encrypted Video DVD."
-"<p>Install <i>libdvdcss</i> to get Video DVD decryption support."
 msgstr ""
 
 #: rip/videodvd/k3bvideodvdrippingview.cpp:151
@@ -1476,7 +1476,7 @@ msgid ""
 "There seems to be not enough free space in temporary directory. Write anyway?"
 msgstr ""
 
-#: k3b.cpp:918 k3bdebuggingoutputdialog.cpp:141 misc/k3bcdcopydialog.cpp:296
+#: k3b.cpp:919 k3bdebuggingoutputdialog.cpp:141 misc/k3bcdcopydialog.cpp:296
 #: misc/k3bcdcopydialog.cpp:304 misc/k3bdvdcopydialog.cpp:250
 #: projects/k3bdataburndialog.cpp:182 projects/k3bdvdburndialog.cpp:285
 #: projects/k3bmovixburndialog.cpp:227 projects/k3bmovixdvdburndialog.cpp:194
@@ -1484,7 +1484,7 @@ msgstr ""
 msgid "Do you want to overwrite %1?"
 msgstr "Оё мехоҳед файли мавҷудбударо бо %1 ивваз кунед?"
 
-#: k3b.cpp:919 k3bdebuggingoutputdialog.cpp:142 misc/k3bcdcopydialog.cpp:297
+#: k3b.cpp:920 k3bdebuggingoutputdialog.cpp:142 misc/k3bcdcopydialog.cpp:297
 #: misc/k3bcdcopydialog.cpp:305 misc/k3bdvdcopydialog.cpp:251
 #: projects/k3bdataburndialog.cpp:183 projects/k3bdvdburndialog.cpp:286
 #: projects/k3bmovixburndialog.cpp:228 projects/k3bmovixdvdburndialog.cpp:195
@@ -1559,7 +1559,7 @@ msgstr "*.cue *.CUE|Файлҳои Cue"
 msgid "*.toc *.TOC|Cdrdao TOC Files and Cdrecord Clone Images"
 msgstr "*.toc *.TOC|TOC-файлҳо cdrdao ва образҳои клони cdrecord"
 
-#: k3b.cpp:1246 k3bfileview.cpp:103 misc/k3bcdimagewritingdialog.cpp:191
+#: k3b.cpp:1247 k3bfileview.cpp:103 misc/k3bcdimagewritingdialog.cpp:191
 #: misc/k3bisoimagewritingdialog.cpp:157
 msgid "*|All Files"
 msgstr "*|Ҳамаи файлҳо"
@@ -2415,7 +2415,7 @@ msgstr "Оё ҳақиқатан мехоҳед лоиҳаи ҷориро пок 
 msgid "Open the CD copy dialog, optionally specify the source device"
 msgstr ""
 
-#: k3b.cpp:336 main.cpp:60
+#: k3b.cpp:337 main.cpp:60
 msgid "Open the DVD copy dialog"
 msgstr "Кушодани диалоги нусхабардории DVD"
 
@@ -2559,369 +2559,369 @@ msgstr ""
 msgid "Keep Open"
 msgstr ""
 
-#: k3b.cpp:154
+#: k3b.cpp:155
 msgid "K3b - The CD and DVD Kreator"
 msgstr "K3b - Эҷодкори CD ва DVD"
 
-#: k3b.cpp:217
+#: k3b.cpp:218
 msgid "Save All"
 msgstr "Захира кардани ҳама"
 
-#: k3b.cpp:220
+#: k3b.cpp:221
 msgid "Close All"
 msgstr "Махкам кардани ҳама"
 
-#: k3b.cpp:234
+#: k3b.cpp:235
 msgid "&New Project"
 msgstr "Эҷод намудани &лоиҳа"
 
-#: k3b.cpp:235
+#: k3b.cpp:236
 msgid "New &Audio CD Project"
 msgstr "Лоиҳаи нави &аудио CD"
 
-#: k3b.cpp:237
+#: k3b.cpp:238
 msgid "New Data &CD Project"
 msgstr "Лоиҳаи нави CD бо &маълумотҳо"
 
-#: k3b.cpp:239
+#: k3b.cpp:240
 msgid "New &Mixed Mode CD Project"
 msgstr "Лоиҳаи нави &CD-и универсалӣ"
 
-#: k3b.cpp:241
+#: k3b.cpp:242
 msgid "New &Video CD Project"
 msgstr "Ло&иҳаи нави Video CD"
 
-#: k3b.cpp:243
+#: k3b.cpp:244
 msgid "New &eMovix CD Project"
 msgstr "Лоиҳаи нави &eMovix CD"
 
-#: k3b.cpp:245
+#: k3b.cpp:246
 msgid "New &eMovix DVD Project"
 msgstr "Лоиҳаи нави &eMovix DVD"
 
-#: k3b.cpp:247
+#: k3b.cpp:248
 msgid "New Data &DVD Project"
 msgstr "Лоиҳаи нави DVD бо &маълумотҳо"
 
-#: k3b.cpp:249
+#: k3b.cpp:250
 msgid "New V&ideo DVD Project"
 msgstr "Лоиҳаи &нави Video DVD"
 
-#: k3b.cpp:251
+#: k3b.cpp:252
 msgid "Continue Multisession Project"
 msgstr ""
 
-#: k3b.cpp:273
+#: k3b.cpp:274
 msgid "&Add Files..."
 msgstr "&Илова намудани файлҳо..."
 
-#: k3b.cpp:276
+#: k3b.cpp:277
 msgid "&Clear Project"
 msgstr "&Пок намудани лоиҳа"
 
-#: k3b.cpp:279
+#: k3b.cpp:280
 msgid "Show Directories"
 msgstr "Шохаҳои каталог"
 
-#: k3b.cpp:282
+#: k3b.cpp:283
 msgid "Show Contents"
 msgstr "Дохили каталогҳо"
 
-#: k3b.cpp:285
+#: k3b.cpp:286
 msgid "Show Document Header"
 msgstr "Сарлавҳаи ҳуҷҷат"
 
-#: k3b.cpp:288
+#: k3b.cpp:289
 msgid "&Erase CD-RW..."
 msgstr "&Пок намудани CD-RW..."
 
-#: k3b.cpp:290
+#: k3b.cpp:291
 #, fuzzy
 msgid "&Format DVD%1RW..."
 msgstr "Формат кардани DVD-RW"
 
-#: k3b.cpp:292
+#: k3b.cpp:293
 msgid "&Burn CD Image..."
 msgstr "Сабт кардани &образи компакт-диск..."
 
-#: k3b.cpp:294
+#: k3b.cpp:295
 msgid "&Burn DVD ISO Image..."
 msgstr "Сабт кардани &образи DVD..."
 
-#: k3b.cpp:297
+#: k3b.cpp:298
 msgid "&Copy CD..."
 msgstr "&Нусха бардоштани компакт-диск..."
 
-#: k3b.cpp:300
+#: k3b.cpp:301
 msgid "Copy &DVD..."
 msgstr "Нусха &бардоштани DVD...."
 
-#: k3b.cpp:303
+#: k3b.cpp:304
 #, fuzzy
 msgid "Rip Audio CD..."
 msgstr "Аудио компакт-диск"
 
-#: k3b.cpp:305
+#: k3b.cpp:306
 #, fuzzy
 msgid "Rip Video DVD..."
 msgstr "Хондани Video DVD"
 
-#: k3b.cpp:307
+#: k3b.cpp:308
 #, fuzzy
 msgid "Rip Video CD..."
 msgstr "Хондани Video DVD"
 
-#: k3b.cpp:310
+#: k3b.cpp:311
 msgid "System Check"
 msgstr "Тафтиши система"
 
-#: k3b.cpp:314
+#: k3b.cpp:315
 msgid "&Setup System Permissions..."
 msgstr ""
 
-#: k3b.cpp:324
+#: k3b.cpp:325
 msgid "Creates a new project"
 msgstr "Эҷод намудани лоиҳаи нав"
 
-#: k3b.cpp:325
+#: k3b.cpp:326
 msgid "Creates a new data CD project"
 msgstr "Эҷод намудани лоиҳаи нави CD бо файлҳои маълумот"
 
-#: k3b.cpp:326
+#: k3b.cpp:327
 msgid "Creates a new audio CD project"
 msgstr "Эҷод намудани лоиҳаи аудио CD"
 
-#: k3b.cpp:327
+#: k3b.cpp:328
 msgid "Creates a new eMovix DVD project"
 msgstr "Эҷод намудани лоиҳаи нави eMovix DVD"
 
-#: k3b.cpp:328
+#: k3b.cpp:329
 msgid "Creates a new data DVD project"
 msgstr "Эҷод намудани лоиҳаи нави DVD бо файлҳои маълумот"
 
-#: k3b.cpp:329
+#: k3b.cpp:330
 msgid "Creates a new eMovix CD project"
 msgstr "Эҷод намудани лоиҳаи нави eMovix CD"
 
-#: k3b.cpp:330
+#: k3b.cpp:331
 msgid "Creates a new Video CD project"
 msgstr "Эҷод намудани лоиҳаи нави Video CD"
 
-#: k3b.cpp:331
+#: k3b.cpp:332
 #, fuzzy
 msgid "Open the CD-RW erasing dialog"
 msgstr "Кушодани диалоги нусхабардории компакт-дискҳо"
 
-#: k3b.cpp:332
+#: k3b.cpp:333
 #, fuzzy
 msgid "Open the DVD%1RW formatting dialog"
 msgstr "Кушодани диалоги нусхабардории DVD"
 
-#: k3b.cpp:333
+#: k3b.cpp:334
 msgid "Open the CD copy dialog"
 msgstr "Кушодани диалоги нусхабардории компакт-дискҳо"
 
-#: k3b.cpp:334
+#: k3b.cpp:335
 #, fuzzy
 msgid "Write an Iso9660, cue/bin, or cdrecord clone image to CD"
 msgstr "Сабт кардани Iso9660, cue/bin, ё инки нусхаи монанд барои cdrecord"
 
-#: k3b.cpp:335
+#: k3b.cpp:336
 #, fuzzy
 msgid "Write an Iso9660 image to DVD"
 msgstr "Сабт намудани образи DVD ISO9660 дар DVD±R(W)"
 
-#: k3b.cpp:337
+#: k3b.cpp:338
 msgid "Opens an existing project"
 msgstr "Кушодани лоиҳаи мавҷуд буда"
 
-#: k3b.cpp:338
+#: k3b.cpp:339
 msgid "Opens a recently used file"
 msgstr "Кушодани яке аз лоиҳаи охирин бор кушода"
 
-#: k3b.cpp:339
+#: k3b.cpp:340
 #, fuzzy
 msgid "Saves the current project"
 msgstr "Захира намудани лоиҳаи ҷорӣ"
 
-#: k3b.cpp:340
+#: k3b.cpp:341
 #, fuzzy
 msgid "Saves the current project to a new url"
 msgstr "Захира намудани лоиҳаи ҷорӣ"
 
-#: k3b.cpp:341
+#: k3b.cpp:342
 #, fuzzy
 msgid "Saves all open projects"
 msgstr "Захира намудани лоиҳаи ҷорӣ"
 
-#: k3b.cpp:342
+#: k3b.cpp:343
 #, fuzzy
 msgid "Closes the current project"
 msgstr "Пӯшидани лоиҳаи ҷорӣ"
 
-#: k3b.cpp:343
+#: k3b.cpp:344
 #, fuzzy
 msgid "Closes all open projects"
 msgstr "Пӯшидани лоиҳаи ҷорӣ"
 
-#: k3b.cpp:344
+#: k3b.cpp:345
 msgid "Quits the application"
 msgstr "Баромад аз барнома"
 
-#: k3b.cpp:345
+#: k3b.cpp:346
 #, fuzzy
 msgid "Configure K3b settings"
 msgstr "Танзим намудани модул"
 
-#: k3b.cpp:347
+#: k3b.cpp:348
 msgid "Setup the system permissions (requires root privileges)"
 msgstr ""
 
-#: k3b.cpp:349
+#: k3b.cpp:350
 msgid "Digitally extract tracks from an audio CD"
 msgstr ""
 
-#: k3b.cpp:350
+#: k3b.cpp:351
 #, fuzzy
 msgid "Transcode Video DVD titles"
 msgstr "Хондани Video DVD"
 
-#: k3b.cpp:351
+#: k3b.cpp:352
 #, fuzzy
 msgid "Extract tracks from a Video CD"
 msgstr "Хониши файлҳо аз %1 ба %2."
 
-#: k3b.cpp:352
+#: k3b.cpp:353
 #, fuzzy
 msgid "Add files to the current project"
 msgstr "Пӯшидани лоиҳаи ҷорӣ"
 
-#: k3b.cpp:353
+#: k3b.cpp:354
 #, fuzzy
 msgid "Clear the current project"
 msgstr "Пӯшидани лоиҳаи ҷорӣ"
 
-#: k3b.cpp:382
+#: k3b.cpp:383
 msgid "Project View"
 msgstr "Лоиҳаҳои ҷорӣ"
 
-#: k3b.cpp:399
+#: k3b.cpp:400
 msgid "Current Projects"
 msgstr "Лоиҳаҳои ҷорӣ"
 
-#: k3b.cpp:413
+#: k3b.cpp:414
 msgid "Quickstart"
 msgstr ""
 
-#: k3b.cpp:421
+#: k3b.cpp:422
 msgid "Sidepanel"
 msgstr "Панели паҳлӯӣ"
 
-#: k3b.cpp:435
+#: k3b.cpp:436
 msgid "Contents View"
 msgstr "Мундариҷа"
 
-#: k3b.cpp:454
+#: k3b.cpp:455
 msgid "&Quick Dir Selector"
 msgstr "Панели &адрес"
 
-#: k3b.cpp:458
+#: k3b.cpp:459
 msgid "Go"
 msgstr "Go"
 
-#: k3b.cpp:530 k3b.cpp:835 k3b.cpp:849
+#: k3b.cpp:531 k3b.cpp:836 k3b.cpp:850
 msgid "Opening file..."
 msgstr "Кушодани файл..."
 
-#: k3b.cpp:555
+#: k3b.cpp:556
 msgid "Could not open document!"
 msgstr "Қодир ба кушодани файл набудам!"
 
-#: k3b.cpp:555
+#: k3b.cpp:556
 msgid "Error!"
 msgstr "Хатогӣ!"
 
-#: k3b.cpp:804
+#: k3b.cpp:805
 msgid "%1 has unsaved data."
 msgstr "%1 дорои маълумотҳои захира нашуда мебошад."
 
-#: k3b.cpp:805
+#: k3b.cpp:806
 msgid "Closing Project"
 msgstr "Пӯшидани лоиҳа"
 
-#: k3b.cpp:838 k3b.cpp:905
+#: k3b.cpp:839 k3b.cpp:906
 msgid "*.k3b|K3b Projects"
 msgstr "*.k3b|Лоиҳаҳои K3b"
 
-#: k3b.cpp:840
+#: k3b.cpp:841
 msgid "Open Files"
 msgstr "Кушодани файл(ҳо)"
 
-#: k3b.cpp:873
+#: k3b.cpp:874
 msgid "Saving file..."
 msgstr "Захира намудани файл..."
 
-#: k3b.cpp:882 k3b.cpp:923
+#: k3b.cpp:883 k3b.cpp:924
 msgid "Could not save the current document!"
 msgstr "Қодир ба захира намудани ҳуҷҷати ҷорӣ набудам!"
 
-#: k3b.cpp:882 k3b.cpp:923
+#: k3b.cpp:883 k3b.cpp:924
 msgid "I/O Error"
 msgstr "Хатои ворид/хориҷ"
 
-#: k3b.cpp:897
+#: k3b.cpp:898
 msgid "Saving file with a new filename..."
 msgstr "Захира намудани файл бо номи нав..."
 
-#: k3b.cpp:936
+#: k3b.cpp:937
 msgid "Closing file..."
 msgstr "Пӯшидани файл..."
 
-#: k3b.cpp:1047
+#: k3b.cpp:1048
 msgid "Creating new Audio CD Project."
 msgstr "Эҷод намудани лоиҳаи аудио."
 
-#: k3b.cpp:1056
+#: k3b.cpp:1057
 msgid "Creating new Data CD Project."
 msgstr "Эҷод намудани лоиҳаи CD бо файлҳои маълумот."
 
-#: k3b.cpp:1066
+#: k3b.cpp:1067
 msgid "Creating new Data DVD Project."
 msgstr "Эҷод намудани лоиҳаи DVD бо файлҳои маълумот."
 
-#: k3b.cpp:1082
+#: k3b.cpp:1083
 msgid "Creating new VideoDVD Project."
 msgstr "Эҷод намудани лоиҳаи VideoDVD."
 
-#: k3b.cpp:1092
+#: k3b.cpp:1093
 msgid "Creating new Mixed Mode CD Project."
 msgstr "Эҷод намудани лоиҳаи CD-и универсалӣ (омехта)."
 
-#: k3b.cpp:1101
+#: k3b.cpp:1102
 msgid "Creating new Video CD Project."
 msgstr "Эҷод намудани лоиҳаи Video CD."
 
-#: k3b.cpp:1111
+#: k3b.cpp:1112
 msgid "Creating new eMovix CD Project."
 msgstr "Эҷод намудани лоиҳаи eMovix CD."
 
-#: k3b.cpp:1121
+#: k3b.cpp:1122
 msgid "Creating new eMovix DVD Project."
 msgstr "Эҷод намудани лоиҳаи eMovix DVD."
 
-#: k3b.cpp:1248
+#: k3b.cpp:1249
 msgid "Select Files to Add to Project"
 msgstr "Интихоби файлҳо барои замима намудан ба лоиҳа"
 
-#: k3b.cpp:1262
+#: k3b.cpp:1263
 msgid "Please create a project before adding files"
 msgstr "Лутфан пеш аз замима намудани файлҳо, лоиҳа эҷод кунед"
 
-#: k3b.cpp:1262
+#: k3b.cpp:1263
 msgid "No Active Project"
 msgstr "Лоиҳаҳои ҷорӣ мавҷуд нестанд"
 
-#: k3b.cpp:1271
+#: k3b.cpp:1272
 msgid ""
 "Could not find kdesu to run K3bSetup with root privileges. Please run it "
 "manually as root."
@@ -2929,30 +2929,30 @@ msgstr ""
 "Қодир ба дарёфт намудани kdesu барои оғоз намудани K3bSetup бо тарҷеҳоти "
 "корванд низ набудам. Ин барномаро бо чунин ҳуқуқҳо муқаррарӣ оғоз намоед."
 
-#: k3b.cpp:1498
+#: k3b.cpp:1508
 msgid "Do you really want to clear the current project?"
 msgstr "Оё ҳақиқатан мехоҳед лоиҳаи ҷориро пок намоед?"
 
-#: k3b.cpp:1499
+#: k3b.cpp:1509
 msgid "Clear Project"
 msgstr "Пок намудани лоиҳа"
 
-#: k3b.cpp:1541
+#: k3b.cpp:1551
 #, fuzzy
 msgid "Audio CD Rip"
 msgstr "Аудио компакт-диск"
 
-#: k3b.cpp:1556
+#: k3b.cpp:1566
 #, fuzzy
 msgid "Video DVD Rip"
 msgstr "Хондани Video CD"
 
-#: k3b.cpp:1577
+#: k3b.cpp:1587
 #, fuzzy
 msgid "Video CD Rip"
 msgstr "Хондани Video CD"
 
-#: k3b.cpp:1592
+#: k3b.cpp:1602
 msgid "Audio Output Problem"
 msgstr ""
 
@@ -9226,10 +9226,6 @@ msgstr ""
 #, fuzzy
 msgid "Welcome to K3b - The CD and DVD Kreator"
 msgstr "K3b - Эҷодкори CD ва DVD"
-
-#: k3bwelcomewidget.cpp:57
-msgid "<qt align=\"center\">K3b %1 (c) 1999 - 2006 Sebastian Trüg"
-msgstr ""
 
 #: k3bwelcomewidget.cpp:67
 msgid "Further actions..."
