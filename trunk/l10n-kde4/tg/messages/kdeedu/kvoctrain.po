@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kvoctrain\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-03-04 08:33+0100\n"
+"POT-Creation-Date: 2007-03-06 13:38+0100\n"
 "PO-Revision-Date: 2005-09-23 17:17+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -366,9 +366,15 @@ msgstr ""
 msgid "Deleting Tense Description"
 msgstr "Нест кардани тасвири вақт"
 
+#: kvttablemodel.cpp:130 kvttablemodel.cpp:133 kvttablemodel.cpp:135
+#: kvttablemodel.cpp:140
+#, fuzzy
+msgid "Default lesson"
+msgstr "Нест кардани дарс"
+
 #. i18n: tag string
 #. i18n: file ./statistics-dialogs/StatisticsPageForm.ui line 72
-#: kvttablemodel.cpp:176 rc.cpp:1570
+#: kvttablemodel.cpp:197 rc.cpp:1570 kvtlessonmodel.cpp:57
 #, no-c-format
 msgid "Lesson"
 msgstr "Дарс"
@@ -4440,67 +4446,67 @@ msgstr "Кушодани файл..."
 msgid "Open Vocabulary Document"
 msgstr "Кушодани файли луғати мисол"
 
-#: kva_io.cpp:168 kva_io.cpp:222
+#: kva_io.cpp:168 kva_io.cpp:234
 #, qt-format
 msgid "Loading %1"
 msgstr "Пурборкардани %1"
 
-#: kva_io.cpp:191
+#: kva_io.cpp:203
 msgid "Opening example file..."
 msgstr "Кушодани файли мисол..."
 
-#: kva_io.cpp:195
+#: kva_io.cpp:207
 #, fuzzy
 msgid "Open Example Vocabulary Document"
 msgstr "Кушодани файли луғати мисол"
 
-#: kva_io.cpp:215
+#: kva_io.cpp:227
 msgid "Merging file..."
 msgstr "Ҳамҷоя кардани файи..."
 
-#: kva_io.cpp:218
+#: kva_io.cpp:230
 msgid "Merge Vocabulary File"
 msgstr "Ҳамҷоя кардани файли луғат"
 
-#: kva_io.cpp:246
+#: kva_io.cpp:258
 #, qt-format
 msgid "Merging %1"
 msgstr "Ҳамҷоя кардани %1"
 
-#: kva_io.cpp:463
+#: kva_io.cpp:475
 #, fuzzy
 msgid "Untitled"
 msgstr "сарлавҳа"
 
-#: kva_io.cpp:468 kva_io.cpp:506 kva_io.cpp:623
+#: kva_io.cpp:480 kva_io.cpp:518 kva_io.cpp:635
 #, qt-format
 msgid "Saving %1"
 msgstr "Нигоҳ доштани %1"
 
-#: kva_io.cpp:488
+#: kva_io.cpp:500
 msgid "Saving file under new filename..."
 msgstr "Нигоҳ доштани файл бо дигар ном..."
 
-#: kva_io.cpp:493 kva_io.cpp:610
+#: kva_io.cpp:505 kva_io.cpp:622
 msgid "Save Vocabulary As"
 msgstr "Нигоҳ доштани луғат монанди"
 
-#: kva_io.cpp:498 kva_io.cpp:616
+#: kva_io.cpp:510 kva_io.cpp:628
 #, qt-format
 msgid ""
 "<qt>The file<br><b>%1</b><br>already exists. Do you want to overwrite it?</"
 "qt>"
 msgstr ""
 
-#: kva_io.cpp:594
+#: kva_io.cpp:606
 msgid "Saving selected area under new filename..."
 msgstr "Нигоҳ доштани ҷои интихобшуда бономи нав..."
 
-#: kva_io.cpp:667
+#: kva_io.cpp:679
 msgid "Original"
 msgstr "Ҳақиқӣ"
 
-#: kva_io.cpp:668
+#: kva_io.cpp:680
 #, fuzzy
 msgid "Translation"
 msgstr "&Тарҷума"
@@ -4896,19 +4902,42 @@ msgstr "Намоиши Диалоги Интихоботҳои Умумӣ"
 msgid "Toggle display of the toolbars"
 msgstr ""
 
-#: kva_init.cpp:395
+#: kva_init.cpp:399
+msgid ""
+"Double click to rename a lesson. With the checkboxes you can select which "
+"lessons you want to be tested. Only checked lessons [x] will be asked!"
+msgstr ""
+
+#: kva_init.cpp:404
+#, fuzzy
+msgid "Edit current lesson"
+msgstr "Интихоби дарси равон"
+
+#: kva_init.cpp:405
+#, fuzzy
+msgid "Edit lessons in test"
+msgstr "Муҳаррири номҳо дарс"
+
+#: kva_init.cpp:406
+#, fuzzy
+msgid "Edit all lessons"
+msgstr "Дарсҳо"
+
+#: kva_init.cpp:407
+msgid "Here you select which lessons you want to edit on the right."
+msgstr ""
+
+#: kva_init.cpp:409 kvtlessonview.cpp:53 kvtlessonview.cpp:57
+#: kvtlessonview.cpp:63
 #, fuzzy
 msgid "New lesson"
 msgstr "Сохтани дарс"
 
-#: kvtlessonmodel.cpp:35
-#, fuzzy
-msgid "All Lessons"
-msgstr "Дарсҳо"
-
-#: kvtlessonmodel.cpp:36
-msgid "<no lesson>"
-msgstr "<no lesson>"
+#: kva_init.cpp:410
+msgid ""
+"Click here to create a new lesson. You can then type its name directly in "
+"the list."
+msgstr ""
 
 #: query-dialogs/RandomQueryDlg.cpp:142
 msgid "Random Query"
@@ -5040,6 +5069,9 @@ msgid ""
 "td><td>%10</td></tr><tr><td>%11</td><td>%12</td></tr><tr><td>%13</td><td>%"
 "14</td></tr><tr><td>%15</td><td>%16</td></tr></table></html>"
 msgstr ""
+
+#~ msgid "<no lesson>"
+#~ msgstr "<no lesson>"
 
 #~ msgid "Original &expression in %1:"
 #~ msgstr "Ифодаи &ҳақиқӣ дар %1:"
