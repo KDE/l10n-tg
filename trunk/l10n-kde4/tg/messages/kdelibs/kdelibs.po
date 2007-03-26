@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-03-23 18:03+0100\n"
+"POT-Creation-Date: 2007-03-26 05:28+0200\n"
 "PO-Revision-Date: 2007-02-23 16:04+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik Language\n"
@@ -701,7 +701,7 @@ msgstr "Ахбороти ҳуҷҷат"
 
 #. i18n: tag string
 #. i18n: file ./khtml/htmlpageinfo.ui line 36
-#: rc.cpp:387 kross/modules/scriptmanager.cpp:475
+#: rc.cpp:387 kross/core/view.cpp:518
 #, no-c-format
 msgid "General"
 msgstr "Умумӣ"
@@ -751,7 +751,6 @@ msgstr "Мушаххасот"
 #. i18n: tag string
 #. i18n: file ./khtml/htmlpageinfo.ui line 222
 #: rc.cpp:415 khtml/java/kjavaappletviewer.cpp:142
-#: kross/modules/scriptmanagereditor.cpp:87
 #, no-c-format
 msgid "Value"
 msgstr "Миқдор"
@@ -806,7 +805,7 @@ msgstr "&Пок кардан"
 
 #. i18n: tag string
 #. i18n: file ./kross/test/testguiform.ui line 47
-#: rc.cpp:455 kross/modules/scriptmanagereditor.cpp:307 kcert/kcertpart.cc:196
+#: rc.cpp:455 kross/core/view.cpp:213 kcert/kcertpart.cc:196
 #: kcert/kcertpart.cc:287
 #, no-c-format
 msgid "File:"
@@ -1347,7 +1346,7 @@ msgstr "Баромадан аз барнома"
 
 #. i18n: tag string
 #. i18n: file ./kjsembed/console/jsconsole.ui line 197
-#: rc.cpp:758 kross/modules/scriptmanager.cpp:141
+#: rc.cpp:758 kross/core/view.cpp:306
 #, fuzzy, no-c-format
 msgid "Run"
 msgstr "Рунӣ"
@@ -1394,7 +1393,7 @@ msgstr ""
 #: rc.cpp:782 rc.cpp:1358 kdeui/util/kstandardguiitem.cpp:265
 #: kdeui/util/kkeyserver_x11.cpp:109 kdeui/findreplace/kreplace.cpp:323
 #: khtml/ecma/kjs_debugwin.cpp:481 khtml/ecma/debugger/debugwindow.cpp:176
-#: kross/modules/scriptmanager.cpp:147
+#: kross/core/view.cpp:313
 #, no-c-format
 msgid "Stop"
 msgstr "Ист"
@@ -3477,19 +3476,19 @@ msgstr "Клиенти NEC SOCKS"
 msgid "Dante SOCKS client"
 msgstr "Клиенти Dante SOCKS"
 
-#: kdecore/kernel/kcmdlineargs.cpp:64
+#: kdecore/kernel/kcmdlineargs.cpp:63
 msgid "Use the X-server display 'displayname'"
 msgstr "Истифода аз сафҳанамоиши 'displayname' сервери X"
 
-#: kdecore/kernel/kcmdlineargs.cpp:66
+#: kdecore/kernel/kcmdlineargs.cpp:65
 msgid "Use the QWS display 'displayname'"
 msgstr "Истифода аз сафҳанамоиши 'displayname' сервиси QWS"
 
-#: kdecore/kernel/kcmdlineargs.cpp:69
+#: kdecore/kernel/kcmdlineargs.cpp:68
 msgid "Restore the application for the given 'sessionId'"
 msgstr "Бозсозии барнома барои ин 'шумораи нишаст'"
 
-#: kdecore/kernel/kcmdlineargs.cpp:70
+#: kdecore/kernel/kcmdlineargs.cpp:69
 msgid ""
 "Causes the application to install a private color\n"
 "map on an 8-bit display"
@@ -3497,7 +3496,7 @@ msgstr ""
 "Боиси насби як нақшаи ранги хусусӣ\n"
 "рӯи як сафҳанамоиши 8-бите мешавад"
 
-#: kdecore/kernel/kcmdlineargs.cpp:71
+#: kdecore/kernel/kcmdlineargs.cpp:70
 msgid ""
 "Limits the number of colors allocated in the color\n"
 "cube on an 8-bit display, if the application is\n"
@@ -3509,11 +3508,11 @@ msgstr ""
 "рангҳои тахсис дода шуда дар куби рангро ба андозаи як сафҳанамоиши 8-бити\n"
 "маҳдуд мекунад"
 
-#: kdecore/kernel/kcmdlineargs.cpp:72
+#: kdecore/kernel/kcmdlineargs.cpp:71
 msgid "tells Qt to never grab the mouse or the keyboard"
 msgstr "аз тасоҳиби муш ё забонак тавассути Qt ҷилвагирӣ мекунад"
 
-#: kdecore/kernel/kcmdlineargs.cpp:73
+#: kdecore/kernel/kcmdlineargs.cpp:72
 msgid ""
 "running under a debugger can cause an implicit\n"
 "-nograb, use -dograb to override"
@@ -3521,15 +3520,15 @@ msgstr ""
 "кор кардан бо барномаи ғалатёб  метавонад сабаби номуайяние \n"
 "-нограб, дограб барои рад кардан"
 
-#: kdecore/kernel/kcmdlineargs.cpp:74
+#: kdecore/kernel/kcmdlineargs.cpp:73
 msgid "switches to synchronous mode for debugging"
 msgstr "куштани усули синхронизатсия барои барномаи ғалатёб"
 
-#: kdecore/kernel/kcmdlineargs.cpp:76
+#: kdecore/kernel/kcmdlineargs.cpp:75
 msgid "defines the application font"
 msgstr "Харфи барномаро таъриф мекунад"
 
-#: kdecore/kernel/kcmdlineargs.cpp:78
+#: kdecore/kernel/kcmdlineargs.cpp:77
 msgid ""
 "sets the default background color and an\n"
 "application palette (light and dark shades are\n"
@@ -3538,23 +3537,23 @@ msgstr ""
 "Ранги пешфарзи пасзамина ва тахтаранги барномаро танзим мекунад (сояҳои "
 "равшан ва тираи муҳосиба мешаванд)"
 
-#: kdecore/kernel/kcmdlineargs.cpp:80
+#: kdecore/kernel/kcmdlineargs.cpp:79
 msgid "sets the default foreground color"
 msgstr "Ранги пешфарзи пешзаминаро танзим мекунад"
 
-#: kdecore/kernel/kcmdlineargs.cpp:82
+#: kdecore/kernel/kcmdlineargs.cpp:81
 msgid "sets the default button color"
 msgstr "Ранги пешфарзи кнопкаҳоро танзим мекунад"
 
-#: kdecore/kernel/kcmdlineargs.cpp:83
+#: kdecore/kernel/kcmdlineargs.cpp:82
 msgid "sets the application name"
 msgstr "Номи барномаро танзим мекунад"
 
-#: kdecore/kernel/kcmdlineargs.cpp:84
+#: kdecore/kernel/kcmdlineargs.cpp:83
 msgid "sets the application title (caption)"
 msgstr "Унвони барномаро танзим мекунад"
 
-#: kdecore/kernel/kcmdlineargs.cpp:86
+#: kdecore/kernel/kcmdlineargs.cpp:85
 msgid ""
 "forces the application to use a TrueColor visual on\n"
 "an 8-bit display"
@@ -3562,7 +3561,7 @@ msgstr ""
 "Барномаро маҷбур ба истифода аз True Color бар рӯи \n"
 "сафҳонамоишҳои 8 битӣ меканад"
 
-#: kdecore/kernel/kcmdlineargs.cpp:87
+#: kdecore/kernel/kcmdlineargs.cpp:86
 msgid ""
 "sets XIM (X Input Method) input style. Possible\n"
 "values are onthespot, overthespot, offthespot and\n"
@@ -3572,47 +3571,47 @@ msgstr ""
 "мумкини onthespot, overthespot, offthespot ва\n"
 "root ҳастанд"
 
-#: kdecore/kernel/kcmdlineargs.cpp:88
+#: kdecore/kernel/kcmdlineargs.cpp:87
 msgid "set XIM server"
 msgstr "Танзими сервери XIM"
 
-#: kdecore/kernel/kcmdlineargs.cpp:89
+#: kdecore/kernel/kcmdlineargs.cpp:88
 msgid "disable XIM"
 msgstr "Ғайрифаъолсозии XIM"
 
-#: kdecore/kernel/kcmdlineargs.cpp:92
+#: kdecore/kernel/kcmdlineargs.cpp:91
 msgid "forces the application to run as QWS Server"
 msgstr "Барномаро маҷбур мекунад ба унвони сервери QWS амал кунад"
 
-#: kdecore/kernel/kcmdlineargs.cpp:94
+#: kdecore/kernel/kcmdlineargs.cpp:93
 msgid "mirrors the whole layout of widgets"
 msgstr "ҳамаи таҳрбандии виджетҳоро инъикос мекунад"
 
-#: kdecore/kernel/kcmdlineargs.cpp:100
+#: kdecore/kernel/kcmdlineargs.cpp:99
 msgid "Use 'caption' as name in the titlebar"
 msgstr "Истифода аз 'Сарлавҳа'-и ба ҷои номи дар сарлавҳа буда"
 
-#: kdecore/kernel/kcmdlineargs.cpp:101
+#: kdecore/kernel/kcmdlineargs.cpp:100
 msgid "Use 'icon' as the application icon"
 msgstr "Истифода аз 'нишона' ба унвони нишонаи барнома"
 
-#: kdecore/kernel/kcmdlineargs.cpp:102
+#: kdecore/kernel/kcmdlineargs.cpp:101
 msgid "Use alternative configuration file"
 msgstr "Истифода аз як файли танзимоти дигар"
 
-#: kdecore/kernel/kcmdlineargs.cpp:103
+#: kdecore/kernel/kcmdlineargs.cpp:102
 msgid "Disable crash handler, to get core dumps"
 msgstr "Барои ба даст овардани тахлия ҳастае, коргардон "
 
-#: kdecore/kernel/kcmdlineargs.cpp:104
+#: kdecore/kernel/kcmdlineargs.cpp:103
 msgid "Waits for a WM_NET compatible windowmanager"
 msgstr "Дар интизори як мудири тирезаи ҳамсоз бо WM_NET мебоянд"
 
-#: kdecore/kernel/kcmdlineargs.cpp:105
+#: kdecore/kernel/kcmdlineargs.cpp:104
 msgid "sets the application GUI style"
 msgstr "мушаххас кардани корбурди навъи GUI"
 
-#: kdecore/kernel/kcmdlineargs.cpp:106
+#: kdecore/kernel/kcmdlineargs.cpp:105
 msgid ""
 "sets the client geometry of the main widget - see man X for the argument "
 "format"
@@ -3620,17 +3619,17 @@ msgstr ""
 "мемонад мизоҷони геометриро аз асбоби умумӣ - нигоҳ кунед одамиХ -ро барои "
 "фармати аргументӣ"
 
-#: kdecore/kernel/kcmdlineargs.cpp:539 kdecore/kernel/kcmdlineargs.cpp:559
+#: kdecore/kernel/kcmdlineargs.cpp:531 kdecore/kernel/kcmdlineargs.cpp:551
 #, qt-format
 msgid "Unknown option '%1'."
 msgstr "Интихоби ношинохтаи '%1'."
 
-#: kdecore/kernel/kcmdlineargs.cpp:567
+#: kdecore/kernel/kcmdlineargs.cpp:559
 #, qt-format
 msgid "'%1' missing."
 msgstr "'%1' мавҷуд намебошад."
 
-#: kdecore/kernel/kcmdlineargs.cpp:662
+#: kdecore/kernel/kcmdlineargs.cpp:654
 #, qt-format
 msgctxt "the 2nd argument is a list of name+address, one on each line"
 msgid ""
@@ -3640,89 +3639,89 @@ msgstr ""
 "%1 Тавассути ин афрод навишта шудааст\n"
 "%2"
 
-#: kdecore/kernel/kcmdlineargs.cpp:665
+#: kdecore/kernel/kcmdlineargs.cpp:657
 msgid "This application was written by somebody who wants to remain anonymous."
 msgstr "Тавассути касе навишта шудааст, ки мехоҳад ношинос бимонад."
 
-#: kdecore/kernel/kcmdlineargs.cpp:672
+#: kdecore/kernel/kcmdlineargs.cpp:664
 msgid "Please use http://bugs.kde.org to report bugs.\n"
 msgstr ""
 "Илтимос мушколотро ба http://bugs.kde.org гузориш кунед, ва мустақиман ба "
 "муаллифон нафиристед.\n"
 
-#: kdecore/kernel/kcmdlineargs.cpp:675 kdecore/kernel/kcmdlineargs.cpp:677
+#: kdecore/kernel/kcmdlineargs.cpp:667 kdecore/kernel/kcmdlineargs.cpp:669
 #, qt-format
 msgid "Please report bugs to %1.\n"
 msgstr "Илтимос барои гузориши мушколотро ба %1 гуед.\n"
 
-#: kdecore/kernel/kcmdlineargs.cpp:703
+#: kdecore/kernel/kcmdlineargs.cpp:695
 #, qt-format
 msgid "Unexpected argument '%1'."
 msgstr "Бурҳони тассодуфӣ '%1'."
 
-#: kdecore/kernel/kcmdlineargs.cpp:825
+#: kdecore/kernel/kcmdlineargs.cpp:817
 msgid "Use --help to get a list of available command line options."
 msgstr ""
 "Барои дарёфти рӯйхати интихоботҳои мавҷуд аз интихоби  --help истифода кунед."
 
-#: kdecore/kernel/kcmdlineargs.cpp:848
+#: kdecore/kernel/kcmdlineargs.cpp:840
 msgid "[options] "
 msgstr "[интихоботҳо] "
 
-#: kdecore/kernel/kcmdlineargs.cpp:855
+#: kdecore/kernel/kcmdlineargs.cpp:847
 #, qt-format
 msgid "[%1-options]"
 msgstr "[%1-интихобҳо]"
 
-#: kdecore/kernel/kcmdlineargs.cpp:877
+#: kdecore/kernel/kcmdlineargs.cpp:869
 #, qt-format
 msgid "Usage: %1 %2\n"
 msgstr "Корбурди: %1 %2\n"
 
-#: kdecore/kernel/kcmdlineargs.cpp:880
+#: kdecore/kernel/kcmdlineargs.cpp:872
 #, fuzzy
 msgid ""
 "\n"
 "Generic options:\n"
 msgstr "Интихобҳои умумӣ"
 
-#: kdecore/kernel/kcmdlineargs.cpp:881
+#: kdecore/kernel/kcmdlineargs.cpp:873
 msgid "Show help about options"
 msgstr "Намоиши роҳнамои интихобҳо"
 
-#: kdecore/kernel/kcmdlineargs.cpp:889
+#: kdecore/kernel/kcmdlineargs.cpp:881
 #, qt-format
 msgid "Show %1 specific options"
 msgstr "Намоиши интихобҳои %1"
 
-#: kdecore/kernel/kcmdlineargs.cpp:896
+#: kdecore/kernel/kcmdlineargs.cpp:888
 msgid "Show all options"
 msgstr "Намоиши ҳамаи интихобҳо"
 
-#: kdecore/kernel/kcmdlineargs.cpp:897
+#: kdecore/kernel/kcmdlineargs.cpp:889
 msgid "Show author information"
 msgstr "Намоиши ахбороти муаллиф"
 
-#: kdecore/kernel/kcmdlineargs.cpp:898
+#: kdecore/kernel/kcmdlineargs.cpp:890
 msgid "Show version information"
 msgstr "Намоиши иттилооти ривоят"
 
-#: kdecore/kernel/kcmdlineargs.cpp:899
+#: kdecore/kernel/kcmdlineargs.cpp:891
 msgid "Show license information"
 msgstr "Намоиши ахбороти иҷозатнома"
 
-#: kdecore/kernel/kcmdlineargs.cpp:900
+#: kdecore/kernel/kcmdlineargs.cpp:892
 msgid "End of options"
 msgstr "Поёни интихобҳо"
 
-#: kdecore/kernel/kcmdlineargs.cpp:922
+#: kdecore/kernel/kcmdlineargs.cpp:914
 #, fuzzy, qt-format
 msgid ""
 "\n"
 "%1 options:\n"
 msgstr "%1 интихобҳо"
 
-#: kdecore/kernel/kcmdlineargs.cpp:924
+#: kdecore/kernel/kcmdlineargs.cpp:916
 msgid ""
 "\n"
 "Options:\n"
@@ -3730,7 +3729,7 @@ msgstr ""
 "\n"
 "Интихобҳо:\n"
 
-#: kdecore/kernel/kcmdlineargs.cpp:981
+#: kdecore/kernel/kcmdlineargs.cpp:973
 msgid ""
 "\n"
 "Arguments:\n"
@@ -3738,7 +3737,7 @@ msgstr ""
 "\n"
 "Далелҳо:\n"
 
-#: kdecore/kernel/kcmdlineargs.cpp:1344
+#: kdecore/kernel/kcmdlineargs.cpp:1348
 msgid "The files/URLs opened by the application will be deleted after use"
 msgstr ""
 "Файлҳои/URLs кушода шуданд аз тарафи барнома нест карда мешаванд баъд аз "
@@ -3988,7 +3987,7 @@ msgid "Share Hot New Stuff"
 msgstr "Тақсимоти таъиншудаи гузоришоти нав"
 
 #: knewstuff/uploaddialog.cpp:62 kdeui/dialogs/kcolordialog.cpp:1156
-#: kross/modules/scriptmanagereditor.cpp:249
+#: kross/core/view.cpp:155
 msgid "Name:"
 msgstr "Ном:"
 
@@ -4085,7 +4084,6 @@ msgstr "Аз ҳама охирон"
 
 #: knewstuff/downloaddialog.cpp:239 knewstuff/downloaddialog.cpp:244
 #: knewstuff/downloaddialog.cpp:249 knewstuff/providerdialog.cpp:71
-#: kross/modules/scriptmanagereditor.cpp:87
 msgid "Name"
 msgstr "Ном"
 
@@ -4733,12 +4731,10 @@ msgstr "&Ёфтан"
 
 #: kdeui/util/kstandardguiitem.cpp:270 kross/modules/scriptmanageradd.cpp:249
 #: kross/modules/scriptmanageradd.cpp:252
-#: kross/modules/scriptmanagereditor.cpp:104
 msgid "Add"
 msgstr "Илова кардан"
 
-#: kdeui/util/kstandardguiitem.cpp:275 kross/modules/scriptmanager.cpp:169
-#: kross/modules/scriptmanagereditor.cpp:109
+#: kdeui/util/kstandardguiitem.cpp:275 kross/core/view.cpp:334
 msgid "Remove"
 msgstr "Нобуд кардан"
 
@@ -4746,7 +4742,7 @@ msgstr "Нобуд кардан"
 msgid "Test"
 msgstr "Санҷиш"
 
-#: kdeui/util/kstandardguiitem.cpp:285 kross/modules/scriptmanager.cpp:477
+#: kdeui/util/kstandardguiitem.cpp:285
 msgid "Properties"
 msgstr "Мушаххасот"
 
@@ -4929,22 +4925,22 @@ msgstr ""
 msgid "Low Password Strength"
 msgstr "Қуввуи пасти гузарвожа"
 
-#: kdeui/dialogs/kkeydialog.cpp:293
+#: kdeui/dialogs/kkeydialog.cpp:294
 msgid "Shortcuts"
 msgstr "Тугмачаҳои тез"
 
-#: kdeui/dialogs/kkeydialog.cpp:376 kdeui/dialogs/kkeydialog.cpp:377
+#: kdeui/dialogs/kkeydialog.cpp:377 kdeui/dialogs/kkeydialog.cpp:378
 #, fuzzy
 msgid "none"
 msgstr "Ҳеҷ кадом"
 
-#: kdeui/dialogs/kkeydialog.cpp:376 kdeui/dialogs/kkeydialog.cpp:377
+#: kdeui/dialogs/kkeydialog.cpp:377 kdeui/dialogs/kkeydialog.cpp:378
 #, fuzzy, qt-format
 msgctxt "Default (default shortcut)"
 msgid "De&fault (%1)"
 msgstr "Пешфарзи - %1"
 
-#: kdeui/dialogs/kkeydialog.cpp:521 kdeui/dialogs/kkeydialog.cpp:554
+#: kdeui/dialogs/kkeydialog.cpp:522 kdeui/dialogs/kkeydialog.cpp:555
 #, fuzzy, qt-format
 msgid ""
 "In order to use the '%1' key as a shortcut, it must be combined with the "
@@ -4953,15 +4949,15 @@ msgstr ""
 "Барои истифода аз калиди '%1' ба унвони як тугмачаи тез, онро бо яке аз "
 "калидҳои Win, Alt, Ctrl, ва ё Shift таркиб кунед."
 
-#: kdeui/dialogs/kkeydialog.cpp:524 kdeui/dialogs/kkeydialog.cpp:557
+#: kdeui/dialogs/kkeydialog.cpp:525 kdeui/dialogs/kkeydialog.cpp:558
 msgid "Invalid Shortcut Key"
 msgstr "Калиди тугмачаи тез нодуруст аст"
 
-#: kdeui/dialogs/kkeydialog.cpp:795
+#: kdeui/dialogs/kkeydialog.cpp:796
 msgid "Conflict with Standard Application Shortcut"
 msgstr "Мухолифат ба гузориши гугмачаи тези якхела"
 
-#: kdeui/dialogs/kkeydialog.cpp:796
+#: kdeui/dialogs/kkeydialog.cpp:797
 #, qt-format
 msgid ""
 "The '%1' key combination has already been allocated to the standard action "
@@ -4971,11 +4967,11 @@ msgstr ""
 "Таркиби калиди '%1' қаблан ба каниши \"%2\"нисбат дода шудааст.\n"
 "Оё мехоҳед онро барои ин каниши нав ба кор баред?"
 
-#: kdeui/dialogs/kkeydialog.cpp:802
+#: kdeui/dialogs/kkeydialog.cpp:803
 msgid "Conflict with Global Shortcut"
 msgstr "Мухолифат бо тугмачаҳои тези умумӣ"
 
-#: kdeui/dialogs/kkeydialog.cpp:803
+#: kdeui/dialogs/kkeydialog.cpp:804
 #, qt-format
 msgid ""
 "The '%1' key combination has already been allocated to the global action \"%2"
@@ -4985,11 +4981,11 @@ msgstr ""
 "Таркиби калиди '%1' қаблан ба каниши умумӣ \"%2\"нисбат дода шудааст.\n"
 "Оё мехоҳед онро барои ин каниши нав ба кор баред?"
 
-#: kdeui/dialogs/kkeydialog.cpp:809
+#: kdeui/dialogs/kkeydialog.cpp:810
 msgid "Key Conflict"
 msgstr "Калиди нодуруст"
 
-#: kdeui/dialogs/kkeydialog.cpp:810
+#: kdeui/dialogs/kkeydialog.cpp:811
 #, qt-format
 msgid ""
 "The '%1' key combination has already been allocated to the \"%2\" action.\n"
@@ -4998,11 +4994,11 @@ msgstr ""
 "Таркиби калиди '%1' қаблан ба каниши \"%2\"нисбат дода шудааст.\n"
 "Оё мехоҳед онро барои ин каниши нав ба кор баред?"
 
-#: kdeui/dialogs/kkeydialog.cpp:816
+#: kdeui/dialogs/kkeydialog.cpp:817
 msgid "Reassign"
 msgstr "Аз нав даромадан"
 
-#: kdeui/dialogs/kkeydialog.cpp:945
+#: kdeui/dialogs/kkeydialog.cpp:946
 msgid "Configure Shortcuts"
 msgstr "Танзими тугмачаҳои тез "
 
@@ -6015,7 +6011,7 @@ msgstr "Ибораҳои доимӣ нодуруст аст."
 
 #: kdeui/findreplace/kreplace.cpp:47 kdeui/findreplace/kreplace.cpp:51
 #: kdeui/shortcuts/kstandardshortcut.cpp:87
-#: kross/modules/scriptmanager.cpp:402 kcert/kcertpart.cc:739
+#: kross/modules/scriptmanager.cpp:263 kcert/kcertpart.cc:739
 #: kcert/kcertpart.cc:755
 msgid "Replace"
 msgstr "Ҷойгузорӣ кардан"
@@ -6136,6 +6132,41 @@ msgstr "Ҳар сутунҳои визуалӣ"
 #: kde3support/kdeui/k3listviewsearchline.cpp:557
 msgid "S&earch:"
 msgstr "&Ҷустуҷӯ:"
+
+#: kdeui/shortcuts/kgesture.cpp:379
+msgctxt "left mouse button"
+msgid "left button"
+msgstr ""
+
+#: kdeui/shortcuts/kgesture.cpp:382
+msgctxt "middle mouse button"
+msgid "middle button"
+msgstr ""
+
+#: kdeui/shortcuts/kgesture.cpp:385
+msgctxt "right mouse button"
+msgid "right button"
+msgstr ""
+
+#: kdeui/shortcuts/kgesture.cpp:388
+msgctxt "a nonexistent value of mouse button"
+msgid "invalid button"
+msgstr ""
+
+#: kdeui/shortcuts/kgesture.cpp:398
+msgctxt ""
+"an invalid mouse gesture of type \"hold down one button, then press another "
+"button\""
+msgid "invalid rocker gesture"
+msgstr ""
+
+#: kdeui/shortcuts/kgesture.cpp:401
+#, qt-format
+msgctxt ""
+"a kind of mouse gesture: hold down one mouse button, then press another "
+"button"
+msgid "Hold %1, then push %2"
+msgstr ""
 
 #: kdeui/shortcuts/kstandardshortcut.cpp:65
 msgid "New"
@@ -8012,12 +8043,21 @@ msgstr ""
 msgid "Incompatible interpreter library."
 msgstr ""
 
-#: kross/core/manager.cpp:114
+#: kross/core/manager.cpp:116
 msgid "Level of safety of the Ruby interpreter"
 msgstr ""
 
-#: kross/core/manager.cpp:139
+#: kross/core/manager.cpp:141
 msgid "Restricted mode for untrusted scripts"
+msgstr ""
+
+#: kross/core/manager.cpp:317
+#, fuzzy
+msgid "Execute Script File"
+msgstr "Ҷойнавишти файл?"
+
+#: kross/core/manager.cpp:341
+msgid "Failed to load the Script Manager."
 msgstr ""
 
 #: kross/core/action.cpp:443
@@ -8060,19 +8100,66 @@ msgstr "&Дастнавис"
 msgid "Execute Script File..."
 msgstr "Ҷойнавишти файл?"
 
-#: kross/core/guiclient.cpp:81
+#: kross/core/guiclient.cpp:82
 #, fuzzy
 msgid "Script Manager..."
 msgstr "&Мудирияти рамз гузорӣ..."
 
-#: kross/core/guiclient.cpp:250
+#: kross/core/view.cpp:163
 #, fuzzy
-msgid "Execute Script File"
-msgstr "Ҷойнавишти файл?"
+msgid "Text:"
+msgstr "Санҷиш"
 
-#: kross/core/guiclient.cpp:275
-msgid "Failed to load the Script Manager."
+#: kross/core/view.cpp:170
+#, fuzzy
+msgid "Comment:"
+msgstr "Тавзеҳ"
+
+#: kross/core/view.cpp:177
+#, fuzzy
+msgid "Icon:"
+msgstr "Нишонаҳо"
+
+#: kross/core/view.cpp:198
+#, fuzzy
+msgid "Interpreter:"
+msgstr "Ҷустуҷӯи интернет"
+
+#: kross/core/view.cpp:308
+#, fuzzy
+msgid "Execute the selected script."
+msgstr "Пешнамоиши ҳарфи интихобшуда"
+
+#: kross/core/view.cpp:315
+#, fuzzy
+msgid "Stop execution of the selected script."
+msgstr "Пешнамоиши ҳарфи интихобшуда"
+
+#: kross/core/view.cpp:320
+#, fuzzy
+msgid "Edit..."
+msgstr "&Таҳрир кардан..."
+
+#: kross/core/view.cpp:322
+msgid "Edit selected script."
 msgstr ""
+
+#: kross/core/view.cpp:327
+#, fuzzy
+msgid "Add..."
+msgstr "&Илова кардан..."
+
+#: kross/core/view.cpp:329
+msgid "Add a new script."
+msgstr ""
+
+#: kross/core/view.cpp:336
+msgid "Remove selected script."
+msgstr ""
+
+#: kross/core/view.cpp:511
+msgid "Edit"
+msgstr "Муҳаррир"
 
 #: kross/modules/scriptmanageradd.cpp:53
 msgid ""
@@ -8111,65 +8198,33 @@ msgstr "&Дастнавис"
 msgid "Collection"
 msgstr "Аломати баён (:)"
 
-#: kross/modules/scriptmanager.cpp:142
-#, fuzzy
-msgid "Execute the selected script."
-msgstr "Пешнамоиши ҳарфи интихобшуда"
-
-#: kross/modules/scriptmanager.cpp:148
-#, fuzzy
-msgid "Stop execution of the selected script."
-msgstr "Пешнамоиши ҳарфи интихобшуда"
-
-#: kross/modules/scriptmanager.cpp:157
-#, fuzzy
-msgid "Edit..."
-msgstr "&Таҳрир кардан..."
-
-#: kross/modules/scriptmanager.cpp:158
-msgid "Edit selected script."
-msgstr ""
-
-#: kross/modules/scriptmanager.cpp:163
-#, fuzzy
-msgid "Add..."
-msgstr "&Илова кардан..."
-
-#: kross/modules/scriptmanager.cpp:164
-msgid "Add a new script."
-msgstr ""
-
-#: kross/modules/scriptmanager.cpp:170
-msgid "Remove selected script."
-msgstr ""
-
-#: kross/modules/scriptmanager.cpp:308
+#: kross/modules/scriptmanager.cpp:169
 msgid "Install Script Package"
 msgstr ""
 
-#: kross/modules/scriptmanager.cpp:371
+#: kross/modules/scriptmanager.cpp:232
 #, fuzzy, qt-format
 msgid "Could not read the package \"%1\"."
 msgstr "Наметавон файлро бор кард."
 
-#: kross/modules/scriptmanager.cpp:378
+#: kross/modules/scriptmanager.cpp:239
 #, qt-format
 msgid "The package \"%1\" does not contain a valid install.rc file."
 msgstr ""
 
-#: kross/modules/scriptmanager.cpp:385
+#: kross/modules/scriptmanager.cpp:246
 #, qt-format
 msgid "Failed to parse the install.rc file at package \"%1\"."
 msgstr ""
 
-#: kross/modules/scriptmanager.cpp:391
+#: kross/modules/scriptmanager.cpp:252
 #, qt-format
 msgid ""
 "Failed to determinate location where the package \"%1\" should be installed "
 "to."
 msgstr ""
 
-#: kross/modules/scriptmanager.cpp:401
+#: kross/modules/scriptmanager.cpp:262
 #, fuzzy, qt-format
 msgid ""
 "A script package with the name \"%1\" already exists. Replace this package?"
@@ -8177,62 +8232,30 @@ msgstr ""
 "Сертификат бо он ном дар ҳоли ҳозира мавҷуд мебошад. Мутамаддунед ки мехоҳед "
 "ҷойгузорӣ кунед?"
 
-#: kross/modules/scriptmanager.cpp:405
+#: kross/modules/scriptmanager.cpp:266
 #, qt-format
 msgid ""
 "Could not uninstall this script package. You may not have sufficient "
 "permissions to delete the folder \"%1\"."
 msgstr ""
 
-#: kross/modules/scriptmanager.cpp:435
+#: kross/modules/scriptmanager.cpp:296
 #, qt-format
 msgid ""
 "Could not uninstall the script package \"%1\" since the script is not "
 "installed."
 msgstr ""
 
-#: kross/modules/scriptmanager.cpp:441
+#: kross/modules/scriptmanager.cpp:302
 msgid ""
 "Could not uninstall the script package \"%1\". You may not have sufficient "
 "permissions to delete the folder \"%1\"."
 msgstr ""
 
-#: kross/modules/scriptmanager.cpp:458
-msgid "Edit"
-msgstr "Муҳаррир"
-
-#: kross/modules/scriptmanager.cpp:495
+#: kross/modules/scriptmanager.cpp:319
 #, fuzzy
 msgid "Script Manager"
 msgstr "&Мудирияти рамз гузорӣ..."
-
-#: kross/modules/scriptmanagereditor.cpp:105
-msgid "Add new property"
-msgstr ""
-
-#: kross/modules/scriptmanagereditor.cpp:110
-msgid "Remove selected property"
-msgstr ""
-
-#: kross/modules/scriptmanagereditor.cpp:257
-#, fuzzy
-msgid "Text:"
-msgstr "Санҷиш"
-
-#: kross/modules/scriptmanagereditor.cpp:264
-#, fuzzy
-msgid "Comment:"
-msgstr "Тавзеҳ"
-
-#: kross/modules/scriptmanagereditor.cpp:271
-#, fuzzy
-msgid "Icon:"
-msgstr "Нишонаҳо"
-
-#: kross/modules/scriptmanagereditor.cpp:292
-#, fuzzy
-msgid "Interpreter:"
-msgstr "Ҷустуҷӯи интернет"
 
 #: solid/kcm/kcmsolid.cpp:41
 #, fuzzy
@@ -9751,130 +9774,130 @@ msgstr "Роҳчаи истифодакунанда: desktop|autostart|trash|doc
 msgid "Prefix to install resource files to"
 msgstr "Префикс барои сабт кардани файлҳои манбаъ ба"
 
-#: kdecore/kde-config.cpp.in:178
+#: kdecore/kde-config.cpp.in:248
 msgid "Applications menu (.desktop files)"
 msgstr "Менюи барномаҳо (файлҳои .desktop)"
 
-#: kdecore/kde-config.cpp.in:179
+#: kdecore/kde-config.cpp.in:249
 msgid "CGIs to run from kdehelp"
 msgstr ""
 
-#: kdecore/kde-config.cpp.in:180
+#: kdecore/kde-config.cpp.in:250
 msgid "Configuration files"
 msgstr "Файлҳои танзимотӣ"
 
-#: kdecore/kde-config.cpp.in:181
+#: kdecore/kde-config.cpp.in:251
 #, fuzzy
 msgid "Where applications store data"
 msgstr "Барномаро ба роҳи ҳозиразамонӣ нанависед"
 
-#: kdecore/kde-config.cpp.in:182
+#: kdecore/kde-config.cpp.in:252
 #, fuzzy
 msgid "Emoticons"
 msgstr "[интихоботҳо] "
 
-#: kdecore/kde-config.cpp.in:183
+#: kdecore/kde-config.cpp.in:253
 msgid "Executables in $prefix/bin"
 msgstr ""
 
-#: kdecore/kde-config.cpp.in:184
+#: kdecore/kde-config.cpp.in:254
 msgid "HTML documentation"
 msgstr "Ҳуҷҷтҳои HTML"
 
-#: kdecore/kde-config.cpp.in:185
+#: kdecore/kde-config.cpp.in:255
 msgid "Icons"
 msgstr "Нишонаҳо"
 
-#: kdecore/kde-config.cpp.in:186
+#: kdecore/kde-config.cpp.in:256
 msgid "Configuration description files"
 msgstr "Файлҳои тасвири танзимот"
 
-#: kdecore/kde-config.cpp.in:187
+#: kdecore/kde-config.cpp.in:257
 msgid "Libraries"
 msgstr "Китобхонаҳо"
 
-#: kdecore/kde-config.cpp.in:188
+#: kdecore/kde-config.cpp.in:258
 msgid "Includes/Headers"
 msgstr ""
 
-#: kdecore/kde-config.cpp.in:189
+#: kdecore/kde-config.cpp.in:259
 msgid "Translation files for KLocale"
 msgstr "Файлҳои тарҷумавӣ барои KLocale"
 
-#: kdecore/kde-config.cpp.in:190
+#: kdecore/kde-config.cpp.in:260
 msgid "Mime types"
 msgstr "Намудҳои Mime"
 
-#: kdecore/kde-config.cpp.in:191
+#: kdecore/kde-config.cpp.in:261
 msgid "Loadable modules"
 msgstr "Модулҳои пурборшавӣ"
 
-#: kdecore/kde-config.cpp.in:192 kdecore/kde-config.cpp.in:202
+#: kdecore/kde-config.cpp.in:262 kdecore/kde-config.cpp.in:272
 msgid "Legacy pixmaps"
 msgstr ""
 
-#: kdecore/kde-config.cpp.in:193
+#: kdecore/kde-config.cpp.in:263
 msgid "Qt plugins"
 msgstr "Иловагиҳои Qt"
 
-#: kdecore/kde-config.cpp.in:194
+#: kdecore/kde-config.cpp.in:264
 msgid "Services"
 msgstr "Хизматгузориҳо"
 
-#: kdecore/kde-config.cpp.in:195
+#: kdecore/kde-config.cpp.in:265
 msgid "Service types"
 msgstr "Намудҳои хизматрасонӣ"
 
-#: kdecore/kde-config.cpp.in:196
+#: kdecore/kde-config.cpp.in:266
 msgid "Application sounds"
 msgstr "Овозҳои барномавӣ"
 
-#: kdecore/kde-config.cpp.in:197
+#: kdecore/kde-config.cpp.in:267
 msgid "Templates"
 msgstr "Қолибҳо"
 
-#: kdecore/kde-config.cpp.in:198
+#: kdecore/kde-config.cpp.in:268
 msgid "Wallpapers"
 msgstr "Расмҳои мизи корӣ"
 
-#: kdecore/kde-config.cpp.in:199
+#: kdecore/kde-config.cpp.in:269
 msgid "XDG Application menu (.desktop files)"
 msgstr "Менюи барномаи XDG (файлҳои .desktop)"
 
-#: kdecore/kde-config.cpp.in:200
+#: kdecore/kde-config.cpp.in:270
 msgid "XDG Menu descriptions (.directory files)"
 msgstr "Тасвири менюи XDG (файлҳои .directory)"
 
-#: kdecore/kde-config.cpp.in:201
+#: kdecore/kde-config.cpp.in:271
 #, fuzzy
 msgid "XDG Icons"
 msgstr "Нишонаҳо"
 
-#: kdecore/kde-config.cpp.in:203
+#: kdecore/kde-config.cpp.in:273
 #, fuzzy
 msgid "XDG Mime Types"
 msgstr "Намудҳои Mime"
 
-#: kdecore/kde-config.cpp.in:204
+#: kdecore/kde-config.cpp.in:274
 msgid "XDG Menu layout (.menu files)"
 msgstr "Нақшаи менюи XDG (файлҳои .menu)"
 
-#: kdecore/kde-config.cpp.in:205
+#: kdecore/kde-config.cpp.in:275
 msgid "Temporary files (specific for both current host and current user)"
 msgstr ""
 "Файлҳои муваққатӣ (махсус барои истифодакунандаи равон ва истифодакунандаи "
 "доимӣ)"
 
-#: kdecore/kde-config.cpp.in:206
+#: kdecore/kde-config.cpp.in:276
 msgid "UNIX Sockets (specific for both current host and current user)"
 msgstr ""
 
-#: kdecore/kde-config.cpp.in:218
+#: kdecore/kde-config.cpp.in:288
 #, qt-format
 msgid "%1 - unknown type\n"
 msgstr "%1 - навъи номуайян\n"
 
-#: kdecore/kde-config.cpp.in:280
+#: kdecore/kde-config.cpp.in:350
 #, qt-format
 msgid "%1 - unknown type of userpath\n"
 msgstr "%1 - намуди роҳчаи ношинос\n"
