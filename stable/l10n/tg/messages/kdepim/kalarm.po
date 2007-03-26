@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
-"POT-Creation-Date: 2007-03-23 14:08+0100\n"
+"POT-Creation-Date: 2007-03-26 02:16+0200\n"
 "PO-Revision-Date: 2005-09-16 16:30+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -200,7 +200,7 @@ msgstr "Вақт"
 msgid "Time To"
 msgstr "Вақт то"
 
-#: alarmlistview.cpp:71 sounddlg.cpp:50
+#: alarmlistview.cpp:71 sounddlg.cpp:56
 msgid "Repeat"
 msgstr "Такрор"
 
@@ -789,7 +789,7 @@ msgstr ""
 "Номи файл ё истинодоти Интернетро ба файли матнӣ ё тасовироти барои намоишро "
 "низ ворид кунед."
 
-#: editdlg.cpp:456 editdlg.cpp:548 sounddlg.cpp:77 soundpicker.cpp:86
+#: editdlg.cpp:456 editdlg.cpp:548 sounddlg.cpp:91
 msgid "Choose a file"
 msgstr "Файл интихоб кунед"
 
@@ -1897,7 +1897,7 @@ msgstr "Номи файли ишорашуда, каталог мебошад"
 msgid "Failed to open file"
 msgstr "Хатои боз кардани файл"
 
-#: messagewin.cpp:367
+#: messagewin.cpp:367 sounddlg.cpp:331
 msgid "File not found"
 msgstr "Файл ёфт нашуд"
 
@@ -2653,7 +2653,7 @@ msgstr "Намоиши хотиррасониҳои кӯҳнашуда дар р
 msgid "System tray icon &update interval:"
 msgstr "Фосилоти &бозсозии ишорот дар новаи системавӣ:"
 
-#: prefdlg.cpp:1263 sounddlg.cpp:135
+#: prefdlg.cpp:1263 sounddlg.cpp:149
 msgid "seconds"
 msgstr "сония"
 
@@ -3132,31 +3132,40 @@ msgstr ""
 msgid "Enter the length of time to repeat the alarm"
 msgstr "Вақти охирини такророти хотиррасониро ворид кунед"
 
-#: sounddlg.cpp:48
+#: sounddlg.cpp:54
 msgid "Set volume"
 msgstr "Сабт кардани баландӣ"
 
-#: sounddlg.cpp:49
+#: sounddlg.cpp:55
 msgid "Set &volume"
 msgstr "Сабт кардани &баландӣ"
 
-#: sounddlg.cpp:51
+#: sounddlg.cpp:57
 msgid "Re&peat"
 msgstr "&Такророт"
 
-#: sounddlg.cpp:70
+#: sounddlg.cpp:78
+#, fuzzy
+msgid "Test the sound"
+msgstr "Боздоштани навозиши садо"
+
+#: sounddlg.cpp:79
+msgid "Play the selected sound file."
+msgstr ""
+
+#: sounddlg.cpp:84
 #, fuzzy
 msgid "Enter the name or URL of a sound file to play."
 msgstr ""
 "Номи файл ё истинодоти Интернетро ба файли матнӣ ё тасовироти барои намоишро "
 "низ ворид кунед."
 
-#: sounddlg.cpp:78
+#: sounddlg.cpp:92
 #, fuzzy
 msgid "Select a sound file to play."
 msgstr "Интихоби файли матнӣ ё тасвирот барои намоиш."
 
-#: sounddlg.cpp:84
+#: sounddlg.cpp:98
 msgid ""
 "If checked, the sound file will be played repeatedly for as long as the message "
 "is displayed."
@@ -3164,45 +3173,45 @@ msgstr ""
 "Ҳангоми фаъол сохтани ин интихобот файли садо то вақте, ки иттилоот намоиш дода "
 "истодааст, беист навозиш мекунад."
 
-#: sounddlg.cpp:88
+#: sounddlg.cpp:102
 #, fuzzy
 msgid "Volume"
 msgstr "Сабт кардани баландӣ"
 
-#: sounddlg.cpp:107
+#: sounddlg.cpp:121
 msgid "Select to choose the volume for playing the sound file."
 msgstr "Баландии навозишоти файли садоро интихоб кунед."
 
-#: sounddlg.cpp:114
+#: sounddlg.cpp:128
 msgid "Choose the volume for playing the sound file."
 msgstr "Баландии навозишоти файли садоро интихоб кунед."
 
-#: sounddlg.cpp:118
+#: sounddlg.cpp:132
 msgid "Fade"
 msgstr ""
 
-#: sounddlg.cpp:122
+#: sounddlg.cpp:136
 #, fuzzy
 msgid "Select to fade the volume when the sound file first starts to play."
 msgstr "Баландии навозишоти файли садоро интихоб кунед."
 
-#: sounddlg.cpp:129
+#: sounddlg.cpp:143
 msgid ""
 "_: Time period over which to fade the sound\n"
 "Fade time:"
 msgstr ""
 
-#: sounddlg.cpp:137
+#: sounddlg.cpp:151
 msgid ""
 "Enter how many seconds to fade the sound before reaching the set volume."
 msgstr ""
 
-#: sounddlg.cpp:143
+#: sounddlg.cpp:157
 #, fuzzy
 msgid "Initial volume:"
 msgstr "Сабт кардани баландӣ"
 
-#: sounddlg.cpp:150
+#: sounddlg.cpp:164
 #, fuzzy
 msgid "Choose the initial volume for playing the sound file."
 msgstr "Баландии навозишоти файли садоро интихоб кунед."
@@ -3232,6 +3241,11 @@ msgid ""
 "_: An audio sound\n"
 "&Sound:"
 msgstr "Навозиши &садо"
+
+#: soundpicker.cpp:86
+#, fuzzy
+msgid "Configure sound file"
+msgstr "Файли садо интихоб кунед"
 
 #: soundpicker.cpp:87
 #, fuzzy
@@ -3293,11 +3307,11 @@ msgstr ""
 msgid "Special Alarm Actions"
 msgstr "Амалҳои махсуси хотиррасонӣ"
 
-#: specialactions.cpp:158
+#: specialactions.cpp:140
 msgid "Pre-a&larm action:"
 msgstr "Амали п&еш аз намоишот:"
 
-#: specialactions.cpp:165
+#: specialactions.cpp:147
 #, fuzzy
 msgid ""
 "Enter a shell command to execute before the alarm is displayed. N.B. KAlarm "
@@ -3306,11 +3320,11 @@ msgstr ""
 "Дастурро барои пеш аз намоиши хотиррасонӣ иҷро намудан ворид кунед. %1, дар "
 "интизори итмомоти дастур пеш аз намоиши хотиррасонӣ низ мешавад."
 
-#: specialactions.cpp:171
+#: specialactions.cpp:153
 msgid "Post-alar&m action:"
 msgstr "Амал п&еш аз намоиш:"
 
-#: specialactions.cpp:177
+#: specialactions.cpp:159
 msgid "Enter a shell command to execute after the alarm window is closed."
 msgstr ""
 "Дастурро барои иҷро намудан баъди пӯшидани тирезаи хотиррасонӣ, ворид кунед."
