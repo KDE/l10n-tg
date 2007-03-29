@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
-"POT-Creation-Date: 2007-03-28 02:15+0200\n"
+"POT-Creation-Date: 2007-03-29 02:16+0200\n"
 "PO-Revision-Date: 2005-12-21 14:47+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: \n"
@@ -894,7 +894,7 @@ msgstr "Полное вычисление логических выражени�
 #, no-c-format
 msgid ""
 "Completely evaluate member-types of \n"
-"template-classes(this includes types \n"
+"template-classes (this includes types \n"
 "of member-variables and return-types \n"
 "of member-functions) in the \n"
 "completion-box."
@@ -3088,7 +3088,8 @@ msgid "Enter details about this document below."
 msgstr "Введите подробную информацию об этом документе."
 
 #. i18n: file ./languages/python/app_templates/pyqt/documentdetails.ui line 46
-#: parts/snippet/snippet_part.cpp:88 rc.cpp:2097 rc.cpp:2492 rc.cpp:2660
+#: parts/snippet/snippet_part.cpp:88 vcs/subversion/svn_blamewidget.cpp:19
+#: vcs/subversion/svn_logviewwidget.cpp:47 rc.cpp:2097 rc.cpp:2492 rc.cpp:2660
 #, no-c-format
 msgid "Author"
 msgstr "Муаллиф"
@@ -3659,20 +3660,23 @@ msgid "SvnLogViewWidgetBase"
 msgstr ""
 
 #. i18n: file ./vcs/subversion/svn_logviewwidgetbase.ui line 32
-#: rc.cpp:2486
+#: vcs/subversion/svn_blamewidget.cpp:17
+#: vcs/subversion/svn_logviewwidget.cpp:45 rc.cpp:2486
 #, fuzzy, no-c-format
 msgid "Rev"
 msgstr "Сурх"
 
 #. i18n: file ./vcs/subversion/svn_logviewwidgetbase.ui line 43
 #: parts/documentation/searchview.cpp:75 vcs/cvsservice/editorsdialog.cpp:88
-#: vcs/cvsservice/editorsdialog.cpp:101 rc.cpp:2489 rc.cpp:2657
+#: vcs/cvsservice/editorsdialog.cpp:101 vcs/subversion/svn_blamewidget.cpp:18
+#: vcs/subversion/svn_logviewwidget.cpp:46 rc.cpp:2489 rc.cpp:2657
 #, fuzzy, no-c-format
 msgid "Date"
 msgstr "Таърих"
 
 #. i18n: file ./vcs/subversion/svn_logviewwidgetbase.ui line 65
-#: languages/cpp/cppcodecompletion.cpp:708 rc.cpp:2495
+#: languages/cpp/cppcodecompletion.cpp:762
+#: vcs/subversion/svn_logviewwidget.cpp:48 rc.cpp:2495
 #, fuzzy, no-c-format
 msgid "Comment"
 msgstr "&Шарҳ:"
@@ -3878,7 +3882,7 @@ msgstr "Сообщения Subversion"
 #: languages/ada/problemreporter.cpp:89 languages/cpp/problemreporter.cpp:219
 #: languages/java/problemreporter.cpp:93
 #: languages/pascal/problemreporter.cpp:83 languages/php/phperrorview.cpp:184
-#: rc.cpp:2651
+#: vcs/subversion/svn_blamewidget.cpp:16 rc.cpp:2651
 #, fuzzy, no-c-format
 msgid "Line"
 msgstr "Строка"
@@ -3890,7 +3894,7 @@ msgid "Revision"
 msgstr "Ревизия"
 
 #. i18n: file ./vcs/subversion/svn_blamewidgetbase.ui line 97
-#: rc.cpp:2663
+#: vcs/subversion/svn_blamewidget.cpp:20 rc.cpp:2663
 #, fuzzy, no-c-format
 msgid "Content"
 msgstr "Пайвастшавӣ"
@@ -13416,7 +13420,7 @@ msgstr ""
 "<p>Это окно показывает различные проблемы в вашем проекте. Оно отображает "
 "ошибки, найденные синтаксическим анализатором языка."
 
-#: languages/ada/adasupportpart.cpp:128 languages/cpp/cppsupportpart.cpp:1466
+#: languages/ada/adasupportpart.cpp:128 languages/cpp/cppsupportpart.cpp:1468
 #: languages/csharp/csharpsupportpart.cpp:264
 #: languages/java/javasupportpart.cpp:511
 #: languages/perl/perlsupportpart.cpp:264 languages/php/phpsupportpart.cpp:427
@@ -13424,7 +13428,7 @@ msgstr ""
 msgid "Updating..."
 msgstr "Обновление..."
 
-#: languages/ada/adasupportpart.cpp:155 languages/cpp/cppsupportpart.cpp:1627
+#: languages/ada/adasupportpart.cpp:155 languages/cpp/cppsupportpart.cpp:1629
 #: languages/csharp/csharpsupportpart.cpp:293
 #: languages/java/javasupportpart.cpp:614
 #: languages/perl/perlsupportpart.cpp:293 languages/php/phpsupportpart.cpp:479
@@ -13762,8 +13766,8 @@ msgstr "Генерировать новый класс"
 msgid "<b>New Class</b><p>Calls the <b>New Class</b> wizard."
 msgstr "<b>Новый класс</b><p>Вызывает мастер создания нового класса."
 
-#: languages/cpp/cppsupportpart.cpp:412 languages/cpp/cppsupportpart.cpp:1968
-#: languages/cpp/cppsupportpart.cpp:2270
+#: languages/cpp/cppsupportpart.cpp:412 languages/cpp/cppsupportpart.cpp:1970
+#: languages/cpp/cppsupportpart.cpp:2272
 #, fuzzy
 msgid "C++ Support"
 msgstr "Поддержка C++"
@@ -13865,12 +13869,12 @@ msgstr ""
 "<p>Создать или выбрать подкласс выделенной формы для использования в "
 "интегрированном KDevDesigner."
 
-#: languages/cpp/cppsupportpart.cpp:1418 languages/cpp/cppsupportpart.cpp:1430
+#: languages/cpp/cppsupportpart.cpp:1420 languages/cpp/cppsupportpart.cpp:1432
 #, fuzzy
 msgid "Please select a class."
 msgstr "Выберите класс."
 
-#: languages/cpp/cppsupportpart.cpp:1968
+#: languages/cpp/cppsupportpart.cpp:1970
 #: languages/java/javasupportpart.cpp:736
 #, fuzzy
 msgid ""
@@ -13882,186 +13886,190 @@ msgstr ""
 "хранилища.\n"
 "Удалить старые файлы хранилища? "
 
-#: languages/cpp/cppsupportpart.cpp:2269
+#: languages/cpp/cppsupportpart.cpp:2271
 #, fuzzy
 msgid "File %1 already exists"
 msgstr "Файл %1 уже существует"
 
-#: languages/cpp/cppcodecompletion.cpp:353
+#: languages/cpp/cppcodecompletion.cpp:358
 #, fuzzy
 msgid "Jump to %1 %2"
 msgstr "Тип %1 - %2"
 
-#: languages/cpp/cppcodecompletion.cpp:431
+#: languages/cpp/cppcodecompletion.cpp:436
 msgid "Jump to declaration of %1(...)"
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:432
+#: languages/cpp/cppcodecompletion.cpp:437
 msgid "Jump to definition of %1(...)"
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:434
-#: languages/cpp/cppcodecompletion.cpp:1467
+#: languages/cpp/cppcodecompletion.cpp:439
+#: languages/cpp/cppcodecompletion.cpp:1550
 #, c-format
 msgid "Jump to %1"
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:438
-#: languages/cpp/cppcodecompletion.cpp:582
+#: languages/cpp/cppcodecompletion.cpp:443
+#: languages/cpp/cppcodecompletion.cpp:592
 msgid " is unresolved"
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:440
-#: languages/cpp/cppcodecompletion.cpp:584
+#: languages/cpp/cppcodecompletion.cpp:445
+#: languages/cpp/cppcodecompletion.cpp:594
 msgid "  (builtin "
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:528
+#: languages/cpp/cppcodecompletion.cpp:538
 #, fuzzy
 msgid "Show %1 %2"
 msgstr "Показать %1"
 
-#: languages/cpp/cppcodecompletion.cpp:575
+#: languages/cpp/cppcodecompletion.cpp:585
 #, fuzzy, c-format
 msgid "Show %1"
 msgstr "Показать %1"
 
-#: languages/cpp/cppcodecompletion.cpp:627
-#: languages/cpp/cppcodecompletion.cpp:736
+#: languages/cpp/cppcodecompletion.cpp:646
+msgid "#include \"%1\" ( defines %2 )"
+msgstr ""
+
+#: languages/cpp/cppcodecompletion.cpp:681
+#: languages/cpp/cppcodecompletion.cpp:794
 #, fuzzy, c-format
 msgid "Comment on %1"
 msgstr "&Шарҳ:"
 
-#: languages/cpp/cppcodecompletion.cpp:643
+#: languages/cpp/cppcodecompletion.cpp:697
 msgid "Specialized from \"%1\""
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:652
+#: languages/cpp/cppcodecompletion.cpp:706
 #, fuzzy
 msgid "Template-param \"%1\""
 msgstr "Имя шаблона"
 
-#: languages/cpp/cppcodecompletion.cpp:664
+#: languages/cpp/cppcodecompletion.cpp:718
 #, fuzzy
 msgid "Return-type \"%1\""
 msgstr "Возвращаемое &значение:"
 
-#: languages/cpp/cppcodecompletion.cpp:672
+#: languages/cpp/cppcodecompletion.cpp:726
 #, fuzzy
 msgid "Argument-types"
 msgstr "Ар&гументҳо"
 
-#: languages/cpp/cppcodecompletion.cpp:682
+#: languages/cpp/cppcodecompletion.cpp:736
 #, fuzzy
 msgid "Argument \"%1\""
 msgstr "Ар&гументҳо"
 
-#: languages/cpp/cppcodecompletion.cpp:694
+#: languages/cpp/cppcodecompletion.cpp:748
 #, fuzzy
 msgid "Trace"
 msgstr "True"
 
-#: languages/cpp/cppcodecompletion.cpp:701
+#: languages/cpp/cppcodecompletion.cpp:755
 #, fuzzy
 msgid "%1 -> %2"
 msgstr "%1 дар %2"
 
-#: languages/cpp/cppcodecompletion.cpp:723
+#: languages/cpp/cppcodecompletion.cpp:781
 #, fuzzy
 msgid "Base-class \"%1\""
 msgstr "Базовый класс:"
 
-#: languages/cpp/cppcodecompletion.cpp:729
+#: languages/cpp/cppcodecompletion.cpp:787
 msgid "Nested in \"%1\""
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:873
+#: languages/cpp/cppcodecompletion.cpp:951
 #, fuzzy
 msgid "Jump to declaration under cursor"
 msgstr "Ошибка в синтаксисе объявления"
 
-#: languages/cpp/cppcodecompletion.cpp:877
+#: languages/cpp/cppcodecompletion.cpp:955
 msgid "Jump to definition under cursor"
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:1463
-#: languages/cpp/cppcodecompletion.cpp:1465
+#: languages/cpp/cppcodecompletion.cpp:1546
+#: languages/cpp/cppcodecompletion.cpp:1548
 msgid "Navigate by Macro \"%1\""
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:1469
+#: languages/cpp/cppcodecompletion.cpp:1552
 #, fuzzy
 msgid "Body"
 msgstr "Ғафс"
 
-#: languages/cpp/cppcodecompletion.cpp:1503
-#: languages/cpp/cppcodecompletion.cpp:1505
+#: languages/cpp/cppcodecompletion.cpp:1585
+#: languages/cpp/cppcodecompletion.cpp:1587
 msgid "Navigate by \"%1\""
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:1507
+#: languages/cpp/cppcodecompletion.cpp:1589
 msgid ""
 "<b>Navigation</b>"
 "<p>Provides a menu to navigate to positions of items that are involved in this "
 "expression"
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:1523
-#: languages/cpp/cppcodecompletion.cpp:1525
+#: languages/cpp/cppcodecompletion.cpp:1605
+#: languages/cpp/cppcodecompletion.cpp:1607
 msgid "Navigate Class-View by \"%1\""
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:1527
+#: languages/cpp/cppcodecompletion.cpp:1609
 msgid ""
 "<b>Navigation</b>"
 "<p>Provides a menu to show involved items in the class-view "
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:1597
+#: languages/cpp/cppcodecompletion.cpp:1679
 #, fuzzy
 msgid "Type of \"%1\" is \"%2\""
 msgstr "Тип %1 - %2"
 
-#: languages/cpp/cppcodecompletion.cpp:1599
+#: languages/cpp/cppcodecompletion.cpp:1681
 msgid "Comment on variable %1: \"%1\""
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:1602
+#: languages/cpp/cppcodecompletion.cpp:1684
 msgid "Comment on %1: \"%1\""
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:1605
+#: languages/cpp/cppcodecompletion.cpp:1687
 msgid "%1 has no comment"
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:1610
+#: languages/cpp/cppcodecompletion.cpp:1692
 msgid "Type of \"%1\" is unresolved, name: \"%2\""
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:1612
+#: languages/cpp/cppcodecompletion.cpp:1694
 msgid "\"%1\" is of builtin type \"%2\", a %3"
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:1617
+#: languages/cpp/cppcodecompletion.cpp:1699
 msgid ""
 "Type of \"%1\" could not be evaluated! Tried to evaluate expression as \"%2\""
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:4155
+#: languages/cpp/cppcodecompletion.cpp:4237
 #, fuzzy
 msgid "Type of %1 is %2 %3"
 msgstr "Тип %1 - %2"
 
-#: languages/cpp/cppcodecompletion.cpp:4305
+#: languages/cpp/cppcodecompletion.cpp:4388
 msgid " (resolved) "
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:4313
-#: languages/cpp/cppcodecompletion.cpp:4322
+#: languages/cpp/cppcodecompletion.cpp:4396
+#: languages/cpp/cppcodecompletion.cpp:4405
 msgid " (unresolved) "
 msgstr ""
 
-#: languages/cpp/cppcodecompletion.cpp:4317
+#: languages/cpp/cppcodecompletion.cpp:4400
 msgid " (builtin type) "
 msgstr ""
 
@@ -20363,7 +20371,7 @@ msgstr "Вазъият"
 msgid "URL to commit"
 msgstr ""
 
-#: vcs/subversion/svn_fileselectdlg_commit.cpp:117
+#: vcs/subversion/svn_fileselectdlg_commit.cpp:119
 msgid "No added/modified/deleted file(s) to commit"
 msgstr ""
 
@@ -20621,24 +20629,47 @@ msgstr "Введите сообщение для журнала:"
 msgid "Open SSL certificate file"
 msgstr "&Открыть исходный файл"
 
-#: vcs/subversion/subversion_core.cpp:224
+#: vcs/subversion/subversion_core.cpp:225
 msgid "the local disk checked out copy."
 msgstr ""
 
-#: vcs/subversion/subversion_core.cpp:226
+#: vcs/subversion/subversion_core.cpp:227
 #, fuzzy
 msgid "the current svn HEAD version."
 msgstr "Дополнить текущее выражение"
 
-#: vcs/subversion/subversion_core.cpp:228
+#: vcs/subversion/subversion_core.cpp:229
 #, fuzzy, c-format
 msgid "No differences between the file and %1"
 msgstr "Найти различия между %1 и %2"
 
-#: vcs/subversion/subversion_core.cpp:228
+#: vcs/subversion/subversion_core.cpp:229
 #, fuzzy
 msgid "No difference"
 msgstr "Найти различия"
+
+#: vcs/subversion/subversion_core.cpp:393
+#: vcs/subversion/subversion_core.cpp:422
+#: vcs/subversion/subversion_core.cpp:479
+msgid ""
+"If you just have installed new version of KDevelop, and if the error message "
+"was unknown protocol kdevsvn+*, try to restart KDE"
+msgstr ""
+
+#: vcs/subversion/subversion_widget.cpp:37
+#, fuzzy
+msgid "Notification"
+msgstr "Нет оптимизации"
+
+#: vcs/subversion/subversion_widget.cpp:61
+#, fuzzy
+msgid "Log History"
+msgstr "Феҳрист"
+
+#: vcs/subversion/subversion_widget.cpp:70
+#, fuzzy
+msgid "Blame"
+msgstr "&Файл..."
 
 #: vcs/cvsservice/cvslogpage.cpp:116 vcs/cvsservice/editorsdialog.cpp:64
 #, fuzzy, c-format
@@ -21782,17 +21813,17 @@ msgstr ""
 msgid "Select One Argument or File of Function %1"
 msgstr "Выберите аргумент или файл функции %1"
 
-#: parts/quickopen/quickopenfunctiondialog.cpp:44
+#: parts/quickopen/quickopenfunctiondialog.cpp:45
 #, fuzzy
 msgid "Function &name:"
 msgstr "&Имя функции:"
 
-#: parts/quickopen/quickopenfunctiondialog.cpp:45
+#: parts/quickopen/quickopenfunctiondialog.cpp:46
 #, fuzzy
 msgid "Function &list:"
 msgstr "Список &функций:"
 
-#: parts/quickopen/quickopenfunctiondialog.cpp:137
+#: parts/quickopen/quickopenfunctiondialog.cpp:136
 #, fuzzy
 msgid "Error: cannot find matching name function."
 msgstr "Ошибка: Не удалось найти функцию."
