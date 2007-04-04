@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-03-31 21:45+0200\n"
+"POT-Creation-Date: 2007-04-04 05:42+0200\n"
 "PO-Revision-Date: 2004-10-23 17:38+0000\n"
 "Last-Translator: Abrorova <H_Abrorova@rambler.ru>\n"
 "Language-Team: Tajik\n"
@@ -20,100 +20,112 @@ msgstr ""
 "X-Generator: KBabel 1.0.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#. i18n: tag string
-#. i18n: file connectionwidget.ui line 41
-#. i18n: tag string
-#. i18n: file rfbconnectionwidget.ui line 37
-#: rc.cpp:4 rc.cpp:170
-#, no-c-format
-msgid "Attention"
-msgstr "Диққат"
-
-#. i18n: tag string
-#. i18n: file connectionwidget.ui line 69
-#. i18n: tag string
-#. i18n: file rfbconnectionwidget.ui line 64
-#: rc.cpp:8 rc.cpp:174
-#, no-c-format
+#: configuration.cpp:443
+#, fuzzy
 msgid ""
-"Somebody is requesting a connection to your computer. Granting this will "
-"allow the remote user to watch your desktop. "
+"When sending an invitation by email, note that everybody who reads this "
+"email will be able to connect to your computer for one hour, or until the "
+"first successful connection took place, whichever comes first. \n"
+"You should either encrypt the email or at least send it only in a secure "
+"network, but not over the Internet."
 msgstr ""
-"Касе дархости пайвастшавиро ба компютери шумо дорад. Тасдиқоти он ба "
-"корванди дурдаст имконияти назорати мизи кории шуморо медиҳад. "
+"Дар хотир доред, ки ҳангоми фиристодани таклифот бо пости электронӣ ҳар "
+"кесе, ки ин пайёмро мехонад дар давоми як соат ё пештар аз пайвастшавии "
+"бомуваффақияти якум ба компютери шумо пайваст шуда метавонад. \n"
+"Ба шумо лозим аст, ки пайёмро рамз гузоред ё аққалан онро бо шабакаи бехатар "
+"фиристед, на ба воситаи Интернет."
 
-#. i18n: tag string
-#. i18n: file connectionwidget.ui line 139
-#. i18n: tag string
-#. i18n: file rfbconnectionwidget.ui line 137
-#: rc.cpp:12 rc.cpp:178
-#, no-c-format
-msgid "123.234.123.234"
-msgstr "123.234.123.234"
+#: configuration.cpp:448
+msgid "Send Invitation via Email"
+msgstr "Фиристодани Таклифот бо ёрии Пости Электронӣ"
 
-#. i18n: tag string
-#. i18n: file connectionwidget.ui line 155
-#. i18n: tag string
-#. i18n: file rfbconnectionwidget.ui line 158
-#: rc.cpp:16 rc.cpp:186
-#, no-c-format
-msgid "Allow remote user to &control keyboard and mouse"
-msgstr "Иҷозатдиҳи ба корванди дурдаст барои &идоракунӣ бо забонак ва муш"
+#: configuration.cpp:460
+msgid "Desktop Sharing (VNC) invitation"
+msgstr "Таклифоти Дастрасии муштарак ба Мизи Корӣ (VNC)"
 
-#. i18n: tag string
-#. i18n: file connectionwidget.ui line 158
-#. i18n: tag string
-#. i18n: file rfbconnectionwidget.ui line 155
-#: rc.cpp:20 rc.cpp:182
-#, no-c-format
+#: configuration.cpp:461
+#, qt-format
 msgid ""
-"If you turn this option on, the remote user can enter keystrokes and use "
-"your mouse pointer. This gives them full control over your computer, so be "
-"careful. When the option is disabled the remote user can only watch your "
-"screen."
+"You have been invited to a VNC session. If you have the KDE Remote Desktop "
+"Connection installed, just click on the link below.\n"
+"\n"
+"vnc://invitation:%1@%2:%3\n"
+"\n"
+"Otherwise you can use any VNC client with the following parameters:\n"
+"\n"
+"Host: %4:%5\n"
+"Password: %6\n"
+"\n"
+"Alternatively you can click on the link below to start the VNC session\n"
+"within your web browser.\n"
+"\n"
+"\thttp://%7:%8/\n"
+"\n"
+"For security reasons this invitation will expire at %9."
 msgstr ""
-"Агар ин хосиятро фаъол созед, корванди дурдаст аз забонак аломатҳоро ворид "
-"карда метавонад ва бо нишонагари муш идора карда метавонад. Ин ба онҳо "
-"идораи пурраро аз болои компютери шумо медиҳад, бинобар ин эҳтиёт бошед. Бе "
-"ин хосият корванди дурдаст танҳо экрани шуморо дида метавонад."
+"Шуморо ба сеанси VNC даъват намуданд. Агар шумо  KDE Пайвастшавии Дурдасти "
+"Мизи Кориро коргузорӣ карда бошед, пас ба пайванди дар поён буда ангушт "
+"занед.\n"
+"\n"
+"vnc://invitation:%1@%2:%3\n"
+"\n"
+"Дар дигар ҳолат шумо дилхоҳ мизоҷи VNC бо параметрҳои зерин истифода бурда "
+"метавонед:\n"
+"\n"
+"Соҳиб: %4:%5\n"
+"Гузарвожа: %6\n"
+"\n"
+"Ҳамин тавр шумо ба пайванди дар поён буда барои оғози сеанси VNC\n"
+"бо web барраси худ ангушт зада метавонед.\n"
+"\n"
+"\thttp://%7:%8/\n"
+"\n"
+"For security reasons this invitation will expire at %9."
+
+#: connectiondialog.cpp:32
+#, fuzzy
+msgid "New Connection"
+msgstr "&Қабули Пайвастшавӣ"
+
+#: connectiondialog.cpp:44
+#, fuzzy
+msgid "Accept Connection"
+msgstr "&Қабули Пайвастшавӣ"
+
+#: connectiondialog.cpp:48
+#, fuzzy
+msgid "Refuse Connection"
+msgstr "&Радкунии Пайвастшавӣ"
+
+#: invitedialog.cpp:35 manageinvitationsdialog.cpp:31
+#, fuzzy
+msgid "Invitation"
+msgstr "Идоракунии &Таклифотҳо"
 
 #. i18n: tag string
-#. i18n: file connectionwidget.ui line 171
-#. i18n: tag string
-#. i18n: file rfbconnectionwidget.ui line 171
-#: rc.cpp:24 rc.cpp:190
-#, no-c-format
-msgid "Remote system:"
-msgstr "Системаи дурдаст:"
+#. i18n: file invitewidget.ui line 73
+#: invitedialog.cpp:71 rc.cpp:33
+#, qt-format
+msgid "&Manage Invitations (%1)..."
+msgstr "&Идоракунии Таклифотҳо (%1)..."
 
-#. i18n: tag string
-#. i18n: file invitewidget.ui line 35
-#. i18n: tag string
-#. i18n: file rfbinvitewidget.ui line 186
-#. i18n: tag string
-#. i18n: file rfbmanageinvitations.ui line 50
-#: rc.cpp:29 rc.cpp:221 rc.cpp:229
-#, no-c-format
-msgid "Welcome to KDE Desktop Sharing"
-msgstr "Марҳамат ба KDE Дастрасии муштарак ба Мизи Корӣ"
-
-#. i18n: tag string
-#. i18n: file invitewidget.ui line 47
-#: rc.cpp:33
-#, fuzzy, no-c-format
+#: invitedialog.cpp:77
+#, fuzzy
 msgid ""
-"KDE Desktop Sharing allows you to invite somebody at a remote location to "
-"watch and possibly control your desktop.\n"
-"<a href=\"whatsthis:<p>An invitation creates a one-time password that allows "
-"the receiver to connect to your desktop. It is valid for only one successful "
-"connection and will expire after an hour if it has not been used. When "
-"somebody connects to your computer a dialog will appear and ask you for "
-"permission. The connection will not be established before you accept it. In "
-"this dialog you can also restrict the other person to view your desktop "
-"only, without the ability to move your mouse pointer or press keys.</p><p>If "
-"you want to create a permanent password for Desktop Sharing, allow "
-"'Uninvited Connections' in the configuration.</p>\">More about invitations..."
-"</a>"
+"An invitation creates a one-time password that allows the receiver to "
+"connect to your desktop.\n"
+"It is valid for only one successful connection and will expire after an hour "
+"if it has not been used. \n"
+"When somebody connects to your computer a dialog will appear and ask you for "
+"permission.\n"
+" The connection will not be established before you accept it. In this dialog "
+"you can also\n"
+" restrict the other person to view your desktop only, without the ability to "
+"move your\n"
+" mouse pointer or press keys.\n"
+"If you want to create a permanent password for Desktop Sharing, allow "
+"'Uninvited Connections' \n"
+"in the configuration."
 msgstr ""
 "Мизи Кории Муштараки KDE ба шумо имконияти даъвати касе барои назорат кардан "
 "ва эҳтимолан идора кардани мази кории шумо, медиҳад.\n"
@@ -129,387 +141,10 @@ msgstr ""
 "офаред, дар танзимот 'Пайвастшавиҳо бе Таклифот'-ро фаъол созед."
 "\">Муфассалтар дар бораи таклифот...</a>"
 
-#. i18n: tag string
-#. i18n: file invitewidget.ui line 109
-#. i18n: tag string
-#. i18n: file rfbinvitewidget.ui line 118
-#: rc.cpp:38 rc.cpp:217
-#, no-c-format
-msgid "Create &Personal Invitation..."
-msgstr "Офаридани Таклифоти &Шахсӣ"
-
-#. i18n: tag string
-#. i18n: file invitewidget.ui line 115
-#. i18n: tag string
-#. i18n: file rfbinvitewidget.ui line 115
-#: rc.cpp:43 rc.cpp:213
-#, no-c-format
-msgid ""
-"Create a new invitation and display the connection data. Use this option if "
-"you want to invite somebody personally, for example, to give the connection "
-"data over the phone."
-msgstr ""
-"Офаридаи таклифоти нав ва намоиш додани додаҳо оиди пайвастшавӣ. Агар хоҳед, "
-"ки касеро шахсан таклиф намоед, ин хосиятро истифода баред. Масалан, "
-"фиристодани додаҳо оиди пайвастшавӣ бо телефон."
-
-#. i18n: tag string
-#. i18n: file invitewidget.ui line 157
-#. i18n: tag string
-#. i18n: file rfbinvitewidget.ui line 73
-#: rc.cpp:47 rc.cpp:209 invitedialog.cc:71
-#, no-c-format, qt-format
-msgid "&Manage Invitations (%1)..."
-msgstr "&Идоракунии Таклифотҳо (%1)..."
-
-#. i18n: tag string
-#. i18n: file invitewidget.ui line 165
-#. i18n: tag string
-#. i18n: file rfbinvitewidget.ui line 66
-#: rc.cpp:51 rc.cpp:205
-#, no-c-format
-msgid "Invite via &Email..."
-msgstr "Таклифот бо ёрии &Пости электронӣ..."
-
-#. i18n: tag string
-#. i18n: file invitewidget.ui line 168
-#. i18n: tag string
-#. i18n: file rfbinvitewidget.ui line 63
-#: rc.cpp:55 rc.cpp:201
-#, no-c-format
-msgid ""
-"This button will start your email application with a pre-configured text "
-"that explains to the recipient how to connect to your computer. "
-msgstr ""
-"Ин тугма замимаи пости электронии шуморо бо матни пешакӣ таъиншудае, ки "
-"тарзи пайвастшавиро ба компютери шумо мефаҳмонад, сар медиҳад. "
-
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 16
-#. i18n: tag string
-#. i18n: file rfbmanageinvitations.ui line 13
-#: rc.cpp:59 rc.cpp:225
-#, no-c-format
-msgid "Manage Invitations - Desktop Sharing"
-msgstr "Идоракунии Таклифотҳо - Дастрасии муштарак ба Мизи Корӣ"
-
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 68
-#. i18n: tag string
-#. i18n: file rfbmanageinvitations.ui line 69
-#: rc.cpp:63 rc.cpp:233
-#, no-c-format
-msgid "Created"
-msgstr "Офарида шуд"
-
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 79
-#: rc.cpp:67
-#, no-c-format
-msgid "Expiration"
-msgstr "Мӯҳлати кор"
-
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 104
-#: rc.cpp:72
-#, no-c-format
-msgid ""
-"Displays the open invitations. Use the buttons on the right to delete them "
-"or create a new invitation."
-msgstr ""
-"Таклифотҳои фаъолро намоиш медиҳад. Ба воситаи тугмаҳои аз рост буда онҳоро "
-"нобуд сохта ё таклифотҳои навро офарида мешавад."
-
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 112
-#. i18n: tag string
-#. i18n: file rfbmanageinvitations.ui line 172
-#: rc.cpp:76 rc.cpp:285
-#, no-c-format
-msgid "New &Personal Invitation..."
-msgstr "Таклифоти Нави &Шахсӣ..."
-
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 115
-#. i18n: tag string
-#. i18n: file rfbmanageinvitations.ui line 166
-#: rc.cpp:80 rc.cpp:277
-#, no-c-format
-msgid "Create a new personal invitation..."
-msgstr "Офаридани таклифоти нави шахсӣ..."
-
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 118
-#. i18n: tag string
-#. i18n: file rfbmanageinvitations.ui line 169
-#: rc.cpp:84 rc.cpp:281
-#, no-c-format
-msgid "Click this button to create a new personal invitation."
-msgstr "Барои офаридани таклифоти нави шахсӣ ба ин тугма ангушт занед."
-
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 126
-#. i18n: tag string
-#. i18n: file rfbmanageinvitations.ui line 159
-#: rc.cpp:88 rc.cpp:273
-#, no-c-format
-msgid "&New Email Invitation..."
-msgstr "Таклифоти &Нави Пости Электронӣ..."
-
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 129
-#. i18n: tag string
-#. i18n: file rfbmanageinvitations.ui line 153
-#: rc.cpp:92 rc.cpp:265
-#, no-c-format
-msgid "Send a new invitation via email..."
-msgstr "Фиристодани таклифоти нав бо ёрии пости электронӣ..."
-
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 132
-#. i18n: tag string
-#. i18n: file rfbmanageinvitations.ui line 156
-#: rc.cpp:96 rc.cpp:269
-#, no-c-format
-msgid "Click this button to send a new invitation via email."
-msgstr ""
-"Барои фиристодани таклифоти нав бо ёрии пости электронӣ ба ин тугма ангушт "
-"занед."
-
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 143
-#. i18n: tag string
-#. i18n: file rfbmanageinvitations.ui line 146
-#: rc.cpp:100 rc.cpp:261
-#, no-c-format
-msgid "Delete All"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 146
-#. i18n: tag string
-#. i18n: file rfbmanageinvitations.ui line 140
-#: rc.cpp:104 rc.cpp:253
-#, no-c-format
-msgid "Delete all invitations"
-msgstr "Нобуд кардани ҳамаи таклифотҳо"
-
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 149
-#. i18n: tag string
-#. i18n: file rfbmanageinvitations.ui line 143
-#: rc.cpp:108 rc.cpp:257
-#, no-c-format
-msgid "Deletes all open invitations."
-msgstr "Нобуд кардани ҳамаи таклифотҳои фаъол."
-
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 160
-#. i18n: tag string
-#. i18n: file rfbmanageinvitations.ui line 130
-#: rc.cpp:112 rc.cpp:249
-#, no-c-format
-msgid "&Delete"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 163
-#. i18n: tag string
-#. i18n: file rfbmanageinvitations.ui line 124
-#: rc.cpp:116 rc.cpp:241
-#, no-c-format
-msgid "Delete the selected invitation"
-msgstr "Нобуд кардани таклифотҳои интихобшуда."
-
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 166
-#. i18n: tag string
-#. i18n: file rfbmanageinvitations.ui line 127
-#: rc.cpp:120 rc.cpp:245
-#, no-c-format
-msgid ""
-"Delete the selected invitation. The invited person will not be able to "
-"connect using this invitation anymore."
-msgstr ""
-"Нобуд кардани ҳамаи таклифотҳои интихобшуда. Шахсони таклифшуда дигар бо "
-"воситаи ин таклифот пайваст шуда наметавонанд."
-
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 174
-#: rc.cpp:124
-#, no-c-format
-msgid "&Close"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 177
-#. i18n: tag string
-#. i18n: file manageinvitations.ui line 180
-#: rc.cpp:128 rc.cpp:132
-#, no-c-format
-msgid "Closes this window."
-msgstr "Пӯшидани ин тиреза."
-
-#. i18n: tag string
-#. i18n: file personalinvitewidget.ui line 45
-#: rc.cpp:137
-#, fuzzy, no-c-format
-msgid ""
-"<h2>Personal Invitation</h2>\n"
-"Give the information below to the person that you want to invite (<a href="
-"\"whatsthis:Desktop Sharing uses the VNC protocol. You can use any VNC "
-"client to connect. In KDE the client is called 'Remote Desktop Connection'. "
-"Enter the host information into the client and it will connect..\">how to "
-"connect</a>). Note that everybody who gets the password can connect, so be "
-"careful."
-msgstr ""
-"<h2>Даъвати Шахсӣ</h2><br>\n"
-"Ахбороти дар поён бударо ба шахсе, ки даъват кардан мехоҳед, интиқол диҳед "
-"(<a href=\"whatsthis:Истифодаи Муштараки Мизи Корӣ қарордоди VNC-ро истифода "
-"мебарад. Шумо дилхоҳ мизоҷи VNC-ро барои пайвастшавӣ истифода бурда "
-"метавонед. Дар KDE он пайвастшавии 'Пайвастшавии Мизи Кории Дурдаст' номида "
-"мешавад. Маълумотро оиди соҳиб ворид кунед ва пайваст шавед..\">чӣ тарз "
-"пайваст шудан</a>). Дар хотир доред, ки ҳар касе, ки гузарвожаи шуморо "
-"дастрас мекунад, пайваст шуда метавонад, бинобар ин эҳтиёт бошед."
-
-#. i18n: tag string
-#. i18n: file personalinvitewidget.ui line 132
-#: rc.cpp:142
-#, no-c-format
-msgid "cookie.tjansen.de:0"
-msgstr "cookie.tjansen.de:0"
-
-#. i18n: tag string
-#. i18n: file personalinvitewidget.ui line 148
-#. i18n: tag string
-#. i18n: file rfbpersonalinvitewidget.ui line 144
-#: rc.cpp:146 rc.cpp:304
-#, no-c-format
-msgid "<b>Password:</b>"
-msgstr "<b>Гузарвожа:</b>"
-
-#. i18n: tag string
-#. i18n: file personalinvitewidget.ui line 164
-#. i18n: tag string
-#. i18n: file rfbpersonalinvitewidget.ui line 162
-#: rc.cpp:150 rc.cpp:308
-#, no-c-format
-msgid "<b>Expiration time:</b>"
-msgstr "<b>Мӯҳлати кор:</b>"
-
-#. i18n: tag string
-#. i18n: file personalinvitewidget.ui line 183
-#: rc.cpp:154
-#, no-c-format
-msgid "12345"
-msgstr "12345"
-
-#. i18n: tag string
-#. i18n: file personalinvitewidget.ui line 202
-#: rc.cpp:158
-#, no-c-format
-msgid "17:12"
-msgstr "17:12"
-
-#. i18n: tag string
-#. i18n: file personalinvitewidget.ui line 218
-#. i18n: tag string
-#. i18n: file rfbpersonalinvitewidget.ui line 213
-#: rc.cpp:162 rc.cpp:312
-#, no-c-format
-msgid "<b>Host:</b>"
-msgstr "<b>Даргоҳ:</b>"
-
-#. i18n: tag string
-#. i18n: file personalinvitewidget.ui line 234
-#: rc.cpp:166
-#, no-c-format
-msgid ""
-"(<a href=\"whatsthis:This field contains the address of your computer and "
-"the display number, separated by a colon. The address is just a hint - you "
-"can use any address that can reach your computer. Desktop Sharing tries to "
-"guess your address from your network configuration, but does not always "
-"succeed in doing so. If your computer is behind a firewall it may have a "
-"different address or be unreachable for other computers.\">Help</a>)"
-msgstr ""
-"(<a href=\"whatsthis:Ин майдон суроға ва рақами дидабони компютери шуморо, "
-"ки бо ҳам бо ду нуқта ҷудоанд, дар бар мегирад. Суроға ин танҳо ишора аст - "
-"шумо дилхоҳ суроғаи компютери худро истифода бурда метавонед. Барномаи "
-"дастрасии Муштараки Мизи Корӣ кӯшиши пайдо кардани суроғаи шуморо аз "
-"танзимоти шабакавӣ мекунад, лекин на дар ҳамаи ҳолат он самарабахш аст. Агар "
-"компютери шумо дар паси экрани байни шабакавӣ бошад, он дигар суроғаро дошта "
-"метавонад ё ни, ки барои дигар компютерҳо дастнорас мегардад.\">Ёрӣ</a>)"
-
-#. i18n: tag string
-#. i18n: file rfbinvitewidget.ui line 44
-#. i18n: tag string
-#. i18n: file rfbmanageinvitations.ui line 182
-#: rc.cpp:194 rc.cpp:289
-#, no-c-format
-msgid ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">KDE Desktop Sharing allows "
-"you to invite somebody at a remote location to watch and possibly control "
-"your desktop. <a href=\"whatsthis\">More about invitations...</a></p></"
-"body></html>"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file rfbmanageinvitations.ui line 74
-#: rc.cpp:237
-#, no-c-format
-msgid "Expire Time"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file rfbpersonalinvitewidget.ui line 40
-#: rc.cpp:296
-#, no-c-format
-msgid ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">Personal Invitation</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">Give the information below "
-"to the person that you want to invite (<a href=\"htc\">how to connect</a>). "
-"Note that everybody who gets the password can connect, so be careful.</p></"
-"body></html>"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file rfbpersonalinvitewidget.ui line 234
-#: rc.cpp:316
-#, no-c-format
-msgid ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"help\">Help</a></"
-"p></body></html>"
-msgstr ""
-
-#: rc.cpp:320
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Hiromon"
-
-#: rc.cpp:321
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "H_Abrorova@rambler.ru"
+#: krfbserver.cpp:125 rfbcontroller.cpp:375
+#, qt-format
+msgid "%1@%2 (shared desktop)"
+msgstr "%1@%2 (компютер, ки пайвастшавиро интизор аст)"
 
 #: main.cpp:40
 msgid "VNC-compatible server to share KDE desktops"
@@ -555,12 +190,7 @@ msgstr "Симои пайвастшавӣ"
 msgid "KDesktop background deactivation"
 msgstr "Нофаъолгардонии паснамои KDesktop"
 
-#: manageinvitationsdialog.cpp:28 invitedialog.cc:35
-#, fuzzy
-msgid "Invitation"
-msgstr "Идоракунии &Таклифотҳо"
-
-#: manageinvitationsdialog.cpp:56
+#: manageinvitationsdialog.cpp:62
 #, fuzzy
 msgid ""
 "An invitation creates a one-time password that allows the receiver to "
@@ -592,6 +222,362 @@ msgstr ""
 "офаред, дар танзимот 'Пайвастшавиҳо бе Таклифот'-ро фаъол созед."
 "\">Муфассалтар дар бораи таклифот...</a>"
 
+#: personalinvitedialog.cpp:35
+#, fuzzy
+msgid "Personal Invitation"
+msgstr "Таклифоти Нави &Шахсӣ..."
+
+#: personalinvitedialog.cpp:83
+#, fuzzy
+msgid ""
+"Desktop Sharing uses the VNC protocol. You can use any VNC client to "
+"connect. \n"
+"In KDE the client is called 'Remote Desktop Connection'. Enter the host "
+"information\n"
+"into the client and it will connect.."
+msgstr ""
+"<h2>Даъвати Шахсӣ</h2><br>\n"
+"Ахбороти дар поён бударо ба шахсе, ки даъват кардан мехоҳед, интиқол диҳед "
+"(<a href=\"whatsthis:Истифодаи Муштараки Мизи Корӣ қарордоди VNC-ро истифода "
+"мебарад. Шумо дилхоҳ мизоҷи VNC-ро барои пайвастшавӣ истифода бурда "
+"метавонед. Дар KDE он пайвастшавии 'Пайвастшавии Мизи Кории Дурдаст' номида "
+"мешавад. Маълумотро оиди соҳиб ворид кунед ва пайваст шавед..\">чӣ тарз "
+"пайваст шудан</a>). Дар хотир доред, ки ҳар касе, ки гузарвожаи шуморо "
+"дастрас мекунад, пайваст шуда метавонад, бинобар ин эҳтиёт бошед."
+
+#: personalinvitedialog.cpp:88
+#, fuzzy
+msgid ""
+"This field contains the address of your computer and the display number, "
+"separated by a colon.\n"
+"The address is just a hint - you can use any address that can reach your "
+"computer. \n"
+"Desktop Sharing tries to guess your address from your network configuration, "
+"but does\n"
+"not always succeed in doing so. If your computer is behind a firewall it may "
+"have a\n"
+"different address or be unreachable for other computers."
+msgstr ""
+"(<a href=\"whatsthis:Ин майдон суроға ва рақами дидабони компютери шуморо, "
+"ки бо ҳам бо ду нуқта ҷудоанд, дар бар мегирад. Суроға ин танҳо ишора аст - "
+"шумо дилхоҳ суроғаи компютери худро истифода бурда метавонед. Барномаи "
+"дастрасии Муштараки Мизи Корӣ кӯшиши пайдо кардани суроғаи шуморо аз "
+"танзимоти шабакавӣ мекунад, лекин на дар ҳамаи ҳолат он самарабахш аст. Агар "
+"компютери шумо дар паси экрани байни шабакавӣ бошад, он дигар суроғаро дошта "
+"метавонад ё ни, ки барои дигар компютерҳо дастнорас мегардад.\">Ёрӣ</a>)"
+
+#. i18n: tag string
+#. i18n: file connectionwidget.ui line 37
+#: rc.cpp:3
+msgid "Attention"
+msgstr "Диққат"
+
+#. i18n: tag string
+#. i18n: file connectionwidget.ui line 64
+#: rc.cpp:6
+msgid ""
+"Somebody is requesting a connection to your computer. Granting this will "
+"allow the remote user to watch your desktop. "
+msgstr ""
+"Касе дархости пайвастшавиро ба компютери шумо дорад. Тасдиқоти он ба "
+"корванди дурдаст имконияти назорати мизи кории шуморо медиҳад. "
+
+#. i18n: tag string
+#. i18n: file connectionwidget.ui line 137
+#: rc.cpp:9
+msgid "123.234.123.234"
+msgstr "123.234.123.234"
+
+#. i18n: tag string
+#. i18n: file connectionwidget.ui line 155
+#: rc.cpp:12
+msgid ""
+"If you turn this option on, the remote user can enter keystrokes and use "
+"your mouse pointer. This gives them full control over your computer, so be "
+"careful. When the option is disabled the remote user can only watch your "
+"screen."
+msgstr ""
+"Агар ин хосиятро фаъол созед, корванди дурдаст аз забонак аломатҳоро ворид "
+"карда метавонад ва бо нишонагари муш идора карда метавонад. Ин ба онҳо "
+"идораи пурраро аз болои компютери шумо медиҳад, бинобар ин эҳтиёт бошед. Бе "
+"ин хосият корванди дурдаст танҳо экрани шуморо дида метавонад."
+
+#. i18n: tag string
+#. i18n: file connectionwidget.ui line 158
+#: rc.cpp:15
+msgid "Allow remote user to &control keyboard and mouse"
+msgstr "Иҷозатдиҳи ба корванди дурдаст барои &идоракунӣ бо забонак ва муш"
+
+#. i18n: tag string
+#. i18n: file connectionwidget.ui line 171
+#: rc.cpp:18
+msgid "Remote system:"
+msgstr "Системаи дурдаст:"
+
+#. i18n: tag string
+#. i18n: file invitewidget.ui line 44
+#. i18n: tag string
+#. i18n: file manageinvitations.ui line 191
+#: rc.cpp:21 rc.cpp:93
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">KDE Desktop Sharing allows "
+"you to invite somebody at a remote location to watch and possibly control "
+"your desktop. <a href=\"whatsthis\">More about invitations...</a></p></"
+"body></html>"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file invitewidget.ui line 63
+#: rc.cpp:27
+msgid ""
+"This button will start your email application with a pre-configured text "
+"that explains to the recipient how to connect to your computer. "
+msgstr ""
+"Ин тугма замимаи пости электронии шуморо бо матни пешакӣ таъиншудае, ки "
+"тарзи пайвастшавиро ба компютери шумо мефаҳмонад, сар медиҳад. "
+
+#. i18n: tag string
+#. i18n: file invitewidget.ui line 66
+#: rc.cpp:30
+msgid "Invite via &Email..."
+msgstr "Таклифот бо ёрии &Пости электронӣ..."
+
+#. i18n: tag string
+#. i18n: file invitewidget.ui line 115
+#: rc.cpp:36
+msgid ""
+"Create a new invitation and display the connection data. Use this option if "
+"you want to invite somebody personally, for example, to give the connection "
+"data over the phone."
+msgstr ""
+"Офаридаи таклифоти нав ва намоиш додани додаҳо оиди пайвастшавӣ. Агар хоҳед, "
+"ки касеро шахсан таклиф намоед, ин хосиятро истифода баред. Масалан, "
+"фиристодани додаҳо оиди пайвастшавӣ бо телефон."
+
+#. i18n: tag string
+#. i18n: file invitewidget.ui line 118
+#: rc.cpp:39
+msgid "Create &Personal Invitation..."
+msgstr "Офаридани Таклифоти &Шахсӣ"
+
+#. i18n: tag string
+#. i18n: file invitewidget.ui line 186
+#. i18n: tag string
+#. i18n: file manageinvitations.ui line 50
+#: rc.cpp:42 rc.cpp:48
+msgid "Welcome to KDE Desktop Sharing"
+msgstr "Марҳамат ба KDE Дастрасии муштарак ба Мизи Корӣ"
+
+#. i18n: tag string
+#. i18n: file manageinvitations.ui line 13
+#: rc.cpp:45
+msgid "Manage Invitations - Desktop Sharing"
+msgstr "Идоракунии Таклифотҳо - Дастрасии муштарак ба Мизи Корӣ"
+
+#. i18n: tag string
+#. i18n: file manageinvitations.ui line 78
+#: rc.cpp:51
+msgid "Created"
+msgstr "Офарида шуд"
+
+#. i18n: tag string
+#. i18n: file manageinvitations.ui line 83
+#: rc.cpp:54
+msgid "Expire Time"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file manageinvitations.ui line 133
+#: rc.cpp:57
+msgid "Delete the selected invitation"
+msgstr "Нобуд кардани таклифотҳои интихобшуда."
+
+#. i18n: tag string
+#. i18n: file manageinvitations.ui line 136
+#: rc.cpp:60
+msgid ""
+"Delete the selected invitation. The invited person will not be able to "
+"connect using this invitation anymore."
+msgstr ""
+"Нобуд кардани ҳамаи таклифотҳои интихобшуда. Шахсони таклифшуда дигар бо "
+"воситаи ин таклифот пайваст шуда наметавонанд."
+
+#. i18n: tag string
+#. i18n: file manageinvitations.ui line 139
+#: rc.cpp:63
+msgid "&Delete"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file manageinvitations.ui line 149
+#: rc.cpp:66
+msgid "Delete all invitations"
+msgstr "Нобуд кардани ҳамаи таклифотҳо"
+
+#. i18n: tag string
+#. i18n: file manageinvitations.ui line 152
+#: rc.cpp:69
+msgid "Deletes all open invitations."
+msgstr "Нобуд кардани ҳамаи таклифотҳои фаъол."
+
+#. i18n: tag string
+#. i18n: file manageinvitations.ui line 155
+#: rc.cpp:72
+msgid "Delete All"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file manageinvitations.ui line 162
+#: rc.cpp:75
+msgid "Send a new invitation via email..."
+msgstr "Фиристодани таклифоти нав бо ёрии пости электронӣ..."
+
+#. i18n: tag string
+#. i18n: file manageinvitations.ui line 165
+#: rc.cpp:78
+msgid "Click this button to send a new invitation via email."
+msgstr ""
+"Барои фиристодани таклифоти нав бо ёрии пости электронӣ ба ин тугма ангушт "
+"занед."
+
+#. i18n: tag string
+#. i18n: file manageinvitations.ui line 168
+#: rc.cpp:81
+msgid "&New Email Invitation..."
+msgstr "Таклифоти &Нави Пости Электронӣ..."
+
+#. i18n: tag string
+#. i18n: file manageinvitations.ui line 175
+#: rc.cpp:84
+msgid "Create a new personal invitation..."
+msgstr "Офаридани таклифоти нави шахсӣ..."
+
+#. i18n: tag string
+#. i18n: file manageinvitations.ui line 178
+#: rc.cpp:87
+msgid "Click this button to create a new personal invitation."
+msgstr "Барои офаридани таклифоти нави шахсӣ ба ин тугма ангушт занед."
+
+#. i18n: tag string
+#. i18n: file manageinvitations.ui line 181
+#: rc.cpp:90
+msgid "New &Personal Invitation..."
+msgstr "Таклифоти Нави &Шахсӣ..."
+
+#. i18n: tag string
+#. i18n: file personalinvitewidget.ui line 40
+#: rc.cpp:99
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Personal Invitation</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Give the information below "
+"to the person that you want to invite (<a href=\"htc\">how to connect</a>). "
+"Note that everybody who gets the password can connect, so be careful.</p></"
+"body></html>"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file personalinvitewidget.ui line 144
+#: rc.cpp:106
+msgid "<b>Password:</b>"
+msgstr "<b>Гузарвожа:</b>"
+
+#. i18n: tag string
+#. i18n: file personalinvitewidget.ui line 162
+#: rc.cpp:109
+msgid "<b>Expiration time:</b>"
+msgstr "<b>Мӯҳлати кор:</b>"
+
+#. i18n: tag string
+#. i18n: file personalinvitewidget.ui line 213
+#: rc.cpp:112
+msgid "<b>Host:</b>"
+msgstr "<b>Даргоҳ:</b>"
+
+#. i18n: tag string
+#. i18n: file personalinvitewidget.ui line 234
+#: rc.cpp:115
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"help\">Help</a></"
+"p></body></html>"
+msgstr ""
+
+#: rc.cpp:119
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Hiromon"
+
+#: rc.cpp:120
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "H_Abrorova@rambler.ru"
+
+#: rfbcontroller.cpp:513
+#, qt-format
+msgid "User accepts connection from %1"
+msgstr "Корванд пайвастшавиро аз %1 қабул мекунад"
+
+#: rfbcontroller.cpp:526
+#, qt-format
+msgid "User refuses connection from %1"
+msgstr "Корванд пайвастшавиро аз %1 рад мекунад"
+
+#: rfbcontroller.cpp:576
+#, qt-format
+msgid "Closed connection: %1."
+msgstr "Пайвастшавии хомӯш гардида: %1."
+
+#: rfbcontroller.cpp:705 rfbcontroller.cpp:710
+#, qt-format
+msgid "Failed login attempt from %1: wrong password"
+msgstr "Хатогии ворид ба система аз %1: гузарвожаи нодуруст"
+
+#: rfbcontroller.cpp:751
+#, qt-format
+msgid "Connection refused from %1, already connected."
+msgstr "Аз %1 пайвастшавӣ рад гардид, аллакай пайваст аст."
+
+#: rfbcontroller.cpp:761
+#, qt-format
+msgid "Accepted uninvited connection from %1"
+msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
+
+#: rfbcontroller.cpp:769
+#, qt-format
+msgid "Received connection from %1, on hold (waiting for confirmation)"
+msgstr "Дархости пайвастшавӣ аз %1қабул гардид, ҳолати (интизории тасдиқот)"
+
+#: rfbcontroller.cpp:894
+msgid ""
+"Your X11 Server does not support the required XTest extension version 2.2. "
+"Sharing your desktop is not possible."
+msgstr ""
+"Хидматрасони X11 шумо вусъати XTest-и нусхаи 2.2-ро пуштибонӣ намекунад. "
+"Дастрасии муштараки мизи кории шумо ғайри имкон аст."
+
+#: rfbcontroller.cpp:895
+msgid "Desktop Sharing Error"
+msgstr "Хатогии Дастрасии муштарак ба Мизи Корӣ"
+
 #: trayicon.cpp:39 trayicon.cpp:89
 msgid "Desktop Sharing - disconnected"
 msgstr "Дастрасии муштарак ба Мизи Корӣ - канда шудааст"
@@ -617,210 +603,95 @@ msgstr "Дастрасии муштарак ба Мизи Корӣ - бо %1 п�
 msgid "The remote user has closed the connection."
 msgstr "Корванди дурдаст пайвастагиро хомӯш сохт."
 
-#: configuration.cc:443
 #, fuzzy
-msgid ""
-"When sending an invitation by email, note that everybody who reads this "
-"email will be able to connect to your computer for one hour, or until the "
-"first successful connection took place, whichever comes first. \n"
-"You should either encrypt the email or at least send it only in a secure "
-"network, but not over the Internet."
-msgstr ""
-"Дар хотир доред, ки ҳангоми фиристодани таклифот бо пости электронӣ ҳар "
-"кесе, ки ин пайёмро мехонад дар давоми як соат ё пештар аз пайвастшавии "
-"бомуваффақияти якум ба компютери шумо пайваст шуда метавонад. \n"
-"Ба шумо лозим аст, ки пайёмро рамз гузоред ё аққалан онро бо шабакаи бехатар "
-"фиристед, на ба воситаи Интернет."
+#~ msgid ""
+#~ "KDE Desktop Sharing allows you to invite somebody at a remote location to "
+#~ "watch and possibly control your desktop.\n"
+#~ "<a href=\"whatsthis:<p>An invitation creates a one-time password that "
+#~ "allows the receiver to connect to your desktop. It is valid for only one "
+#~ "successful connection and will expire after an hour if it has not been "
+#~ "used. When somebody connects to your computer a dialog will appear and "
+#~ "ask you for permission. The connection will not be established before you "
+#~ "accept it. In this dialog you can also restrict the other person to view "
+#~ "your desktop only, without the ability to move your mouse pointer or "
+#~ "press keys.</p><p>If you want to create a permanent password for Desktop "
+#~ "Sharing, allow 'Uninvited Connections' in the configuration.</p>\">More "
+#~ "about invitations...</a>"
+#~ msgstr ""
+#~ "Мизи Кории Муштараки KDE ба шумо имконияти даъвати касе барои назорат "
+#~ "кардан ва эҳтимолан идора кардани мази кории шумо, медиҳад.\n"
+#~ "<a href=\"whatsthis:<p>Таклифот гузарвожаи якбор истифодашавандаро "
+#~ "меофарад, ки ба шахси гирандаи он имконияти пайвастшвиро ба мизи кории "
+#~ "шумо медиҳад. Он танҳо барои як пайвастшавӣ дуруст аст ва  баъди "
+#~ "гузаштани зиёда аз як соат он бекор мегардад. Вақте, ки касе кӯшиши "
+#~ "пайвастшавиро ба компютери шумо мекунад, мокалома пайдо мешавад, ки аз "
+#~ "ушмо имтиёзҳоро пурсон мешавад. То он даме, ки онро қабул накунед, "
+#~ "пайвастшавӣ барқарор намегардад. Дар ин муколама инчунин шумо дигар "
+#~ "шухсонро барои азназаргузаронии Мизи Кории худ маҳдуд карда метавонед бе "
+#~ "имконияти ҳаракатдиҳии нишонагари муш ё пахши калид.</p><p>Агар хоҳед, ки "
+#~ "гузарвожаи доимиро барои Мизи Кории Муштарак офаред, дар танзимот "
+#~ "'Пайвастшавиҳо бе Таклифот'-ро фаъол созед.\">Муфассалтар дар бораи "
+#~ "таклифот...</a>"
 
-#: configuration.cc:448
-msgid "Send Invitation via Email"
-msgstr "Фиристодани Таклифот бо ёрии Пости Электронӣ"
+#~ msgid "Expiration"
+#~ msgstr "Мӯҳлати кор"
 
-#: configuration.cc:460
-msgid "Desktop Sharing (VNC) invitation"
-msgstr "Таклифоти Дастрасии муштарак ба Мизи Корӣ (VNC)"
+#~ msgid ""
+#~ "Displays the open invitations. Use the buttons on the right to delete "
+#~ "them or create a new invitation."
+#~ msgstr ""
+#~ "Таклифотҳои фаъолро намоиш медиҳад. Ба воситаи тугмаҳои аз рост буда "
+#~ "онҳоро нобуд сохта ё таклифотҳои навро офарида мешавад."
 
-#: configuration.cc:461
-#, qt-format
-msgid ""
-"You have been invited to a VNC session. If you have the KDE Remote Desktop "
-"Connection installed, just click on the link below.\n"
-"\n"
-"vnc://invitation:%1@%2:%3\n"
-"\n"
-"Otherwise you can use any VNC client with the following parameters:\n"
-"\n"
-"Host: %4:%5\n"
-"Password: %6\n"
-"\n"
-"Alternatively you can click on the link below to start the VNC session\n"
-"within your web browser.\n"
-"\n"
-"\thttp://%7:%8/\n"
-"\n"
-"For security reasons this invitation will expire at %9."
-msgstr ""
-"Шуморо ба сеанси VNC даъват намуданд. Агар шумо  KDE Пайвастшавии Дурдасти "
-"Мизи Кориро коргузорӣ карда бошед, пас ба пайванди дар поён буда ангушт "
-"занед.\n"
-"\n"
-"vnc://invitation:%1@%2:%3\n"
-"\n"
-"Дар дигар ҳолат шумо дилхоҳ мизоҷи VNC бо параметрҳои зерин истифода бурда "
-"метавонед:\n"
-"\n"
-"Соҳиб: %4:%5\n"
-"Гузарвожа: %6\n"
-"\n"
-"Ҳамин тавр шумо ба пайванди дар поён буда барои оғози сеанси VNC\n"
-"бо web барраси худ ангушт зада метавонед.\n"
-"\n"
-"\thttp://%7:%8/\n"
-"\n"
-"For security reasons this invitation will expire at %9."
+#~ msgid "Closes this window."
+#~ msgstr "Пӯшидани ин тиреза."
 
-#: connectiondialog.cc:32
 #, fuzzy
-msgid "New Connection"
-msgstr "&Қабули Пайвастшавӣ"
+#~ msgid ""
+#~ "<h2>Personal Invitation</h2>\n"
+#~ "Give the information below to the person that you want to invite (<a href="
+#~ "\"whatsthis:Desktop Sharing uses the VNC protocol. You can use any VNC "
+#~ "client to connect. In KDE the client is called 'Remote Desktop "
+#~ "Connection'. Enter the host information into the client and it will "
+#~ "connect..\">how to connect</a>). Note that everybody who gets the "
+#~ "password can connect, so be careful."
+#~ msgstr ""
+#~ "<h2>Даъвати Шахсӣ</h2><br>\n"
+#~ "Ахбороти дар поён бударо ба шахсе, ки даъват кардан мехоҳед, интиқол "
+#~ "диҳед (<a href=\"whatsthis:Истифодаи Муштараки Мизи Корӣ қарордоди VNC-ро "
+#~ "истифода мебарад. Шумо дилхоҳ мизоҷи VNC-ро барои пайвастшавӣ истифода "
+#~ "бурда метавонед. Дар KDE он пайвастшавии 'Пайвастшавии Мизи Кории "
+#~ "Дурдаст' номида мешавад. Маълумотро оиди соҳиб ворид кунед ва пайваст "
+#~ "шавед..\">чӣ тарз пайваст шудан</a>). Дар хотир доред, ки ҳар касе, ки "
+#~ "гузарвожаи шуморо дастрас мекунад, пайваст шуда метавонад, бинобар ин "
+#~ "эҳтиёт бошед."
 
-#: connectiondialog.cc:44
-#, fuzzy
-msgid "Accept Connection"
-msgstr "&Қабули Пайвастшавӣ"
+#~ msgid "cookie.tjansen.de:0"
+#~ msgstr "cookie.tjansen.de:0"
 
-#: connectiondialog.cc:48
-#, fuzzy
-msgid "Refuse Connection"
-msgstr "&Радкунии Пайвастшавӣ"
+#~ msgid "12345"
+#~ msgstr "12345"
 
-#: invitedialog.cc:77
-#, fuzzy
-msgid ""
-"An invitation creates a one-time password that allows the receiver to "
-"connect to your desktop.\n"
-"It is valid for only one successful connection and will expire after an hour "
-"if it has not been used. \n"
-"When somebody connects to your computer a dialog will appear and ask you for "
-"permission.\n"
-" The connection will not be established before you accept it. In this dialog "
-"you can also\n"
-" restrict the other person to view your desktop only, without the ability to "
-"move your\n"
-" mouse pointer or press keys.\n"
-"If you want to create a permanent password for Desktop Sharing, allow "
-"'Uninvited Connections' \n"
-"in the configuration."
-msgstr ""
-"Мизи Кории Муштараки KDE ба шумо имконияти даъвати касе барои назорат кардан "
-"ва эҳтимолан идора кардани мази кории шумо, медиҳад.\n"
-"<a href=\"whatsthis:<p>Таклифот гузарвожаи якбор истифодашавандаро меофарад, "
-"ки ба шахси гирандаи он имконияти пайвастшвиро ба мизи кории шумо медиҳад. "
-"Он танҳо барои як пайвастшавӣ дуруст аст ва  баъди гузаштани зиёда аз як "
-"соат он бекор мегардад. Вақте, ки касе кӯшиши пайвастшавиро ба компютери "
-"шумо мекунад, мокалома пайдо мешавад, ки аз ушмо имтиёзҳоро пурсон мешавад. "
-"То он даме, ки онро қабул накунед, пайвастшавӣ барқарор намегардад. Дар ин "
-"муколама инчунин шумо дигар шухсонро барои азназаргузаронии Мизи Кории худ "
-"маҳдуд карда метавонед бе имконияти ҳаракатдиҳии нишонагари муш ё пахши "
-"калид.</p><p>Агар хоҳед, ки гузарвожаи доимиро барои Мизи Кории Муштарак "
-"офаред, дар танзимот 'Пайвастшавиҳо бе Таклифот'-ро фаъол созед."
-"\">Муфассалтар дар бораи таклифот...</a>"
+#~ msgid "17:12"
+#~ msgstr "17:12"
 
-#: personalinvitedialog.cc:35
-#, fuzzy
-msgid "Personal Invitation"
-msgstr "Таклифоти Нави &Шахсӣ..."
-
-#: personalinvitedialog.cc:83
-#, fuzzy
-msgid ""
-"Desktop Sharing uses the VNC protocol. You can use any VNC client to "
-"connect. \n"
-"In KDE the client is called 'Remote Desktop Connection'. Enter the host "
-"information\n"
-"into the client and it will connect.."
-msgstr ""
-"<h2>Даъвати Шахсӣ</h2><br>\n"
-"Ахбороти дар поён бударо ба шахсе, ки даъват кардан мехоҳед, интиқол диҳед "
-"(<a href=\"whatsthis:Истифодаи Муштараки Мизи Корӣ қарордоди VNC-ро истифода "
-"мебарад. Шумо дилхоҳ мизоҷи VNC-ро барои пайвастшавӣ истифода бурда "
-"метавонед. Дар KDE он пайвастшавии 'Пайвастшавии Мизи Кории Дурдаст' номида "
-"мешавад. Маълумотро оиди соҳиб ворид кунед ва пайваст шавед..\">чӣ тарз "
-"пайваст шудан</a>). Дар хотир доред, ки ҳар касе, ки гузарвожаи шуморо "
-"дастрас мекунад, пайваст шуда метавонад, бинобар ин эҳтиёт бошед."
-
-#: personalinvitedialog.cc:88
-#, fuzzy
-msgid ""
-"This field contains the address of your computer and the display number, "
-"separated by a colon.\n"
-"The address is just a hint - you can use any address that can reach your "
-"computer. \n"
-"Desktop Sharing tries to guess your address from your network configuration, "
-"but does\n"
-"not always succeed in doing so. If your computer is behind a firewall it may "
-"have a\n"
-"different address or be unreachable for other computers."
-msgstr ""
-"(<a href=\"whatsthis:Ин майдон суроға ва рақами дидабони компютери шуморо, "
-"ки бо ҳам бо ду нуқта ҷудоанд, дар бар мегирад. Суроға ин танҳо ишора аст - "
-"шумо дилхоҳ суроғаи компютери худро истифода бурда метавонед. Барномаи "
-"дастрасии Муштараки Мизи Корӣ кӯшиши пайдо кардани суроғаи шуморо аз "
-"танзимоти шабакавӣ мекунад, лекин на дар ҳамаи ҳолат он самарабахш аст. Агар "
-"компютери шумо дар паси экрани байни шабакавӣ бошад, он дигар суроғаро дошта "
-"метавонад ё ни, ки барои дигар компютерҳо дастнорас мегардад.\">Ёрӣ</a>)"
-
-#: rfbcontroller.cc:375
-#, qt-format
-msgid "%1@%2 (shared desktop)"
-msgstr "%1@%2 (компютер, ки пайвастшавиро интизор аст)"
-
-#: rfbcontroller.cc:513
-#, qt-format
-msgid "User accepts connection from %1"
-msgstr "Корванд пайвастшавиро аз %1 қабул мекунад"
-
-#: rfbcontroller.cc:526
-#, qt-format
-msgid "User refuses connection from %1"
-msgstr "Корванд пайвастшавиро аз %1 рад мекунад"
-
-#: rfbcontroller.cc:576
-#, qt-format
-msgid "Closed connection: %1."
-msgstr "Пайвастшавии хомӯш гардида: %1."
-
-#: rfbcontroller.cc:705 rfbcontroller.cc:710
-#, qt-format
-msgid "Failed login attempt from %1: wrong password"
-msgstr "Хатогии ворид ба система аз %1: гузарвожаи нодуруст"
-
-#: rfbcontroller.cc:751
-#, qt-format
-msgid "Connection refused from %1, already connected."
-msgstr "Аз %1 пайвастшавӣ рад гардид, аллакай пайваст аст."
-
-#: rfbcontroller.cc:761
-#, qt-format
-msgid "Accepted uninvited connection from %1"
-msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
-
-#: rfbcontroller.cc:769
-#, qt-format
-msgid "Received connection from %1, on hold (waiting for confirmation)"
-msgstr "Дархости пайвастшавӣ аз %1қабул гардид, ҳолати (интизории тасдиқот)"
-
-#: rfbcontroller.cc:894
-msgid ""
-"Your X11 Server does not support the required XTest extension version 2.2. "
-"Sharing your desktop is not possible."
-msgstr ""
-"Хидматрасони X11 шумо вусъати XTest-и нусхаи 2.2-ро пуштибонӣ намекунад. "
-"Дастрасии муштараки мизи кории шумо ғайри имкон аст."
-
-#: rfbcontroller.cc:895
-msgid "Desktop Sharing Error"
-msgstr "Хатогии Дастрасии муштарак ба Мизи Корӣ"
+#~ msgid ""
+#~ "(<a href=\"whatsthis:This field contains the address of your computer and "
+#~ "the display number, separated by a colon. The address is just a hint - "
+#~ "you can use any address that can reach your computer. Desktop Sharing "
+#~ "tries to guess your address from your network configuration, but does not "
+#~ "always succeed in doing so. If your computer is behind a firewall it may "
+#~ "have a different address or be unreachable for other computers.\">Help</"
+#~ "a>)"
+#~ msgstr ""
+#~ "(<a href=\"whatsthis:Ин майдон суроға ва рақами дидабони компютери "
+#~ "шуморо, ки бо ҳам бо ду нуқта ҷудоанд, дар бар мегирад. Суроға ин танҳо "
+#~ "ишора аст - шумо дилхоҳ суроғаи компютери худро истифода бурда метавонед. "
+#~ "Барномаи дастрасии Муштараки Мизи Корӣ кӯшиши пайдо кардани суроғаи "
+#~ "шуморо аз танзимоти шабакавӣ мекунад, лекин на дар ҳамаи ҳолат он "
+#~ "самарабахш аст. Агар компютери шумо дар паси экрани байни шабакавӣ бошад, "
+#~ "он дигар суроғаро дошта метавонад ё ни, ки барои дигар компютерҳо "
+#~ "дастнорас мегардад.\">Ёрӣ</a>)"
 
 #~ msgid "Desktop Sharing - connecting"
 #~ msgstr "Дастрасии муштарак ба Мизи Корӣ - пайвастшавӣ"
