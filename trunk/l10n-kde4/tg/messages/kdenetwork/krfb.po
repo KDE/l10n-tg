@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-04-07 05:40+0200\n"
+"POT-Creation-Date: 2007-04-08 05:47+0200\n"
 "PO-Revision-Date: 2004-10-23 17:38+0000\n"
 "Last-Translator: Abrorova <H_Abrorova@rambler.ru>\n"
 "Language-Team: Tajik\n"
@@ -82,17 +82,17 @@ msgstr ""
 "\n"
 "For security reasons this invitation will expire at %9."
 
-#: connectioncontroller.cpp:96 rfbcontroller.cpp:761
+#: connectioncontroller.cpp:92 rfbcontroller.cpp:761
 #, qt-format
 msgid "Accepted uninvited connection from %1"
 msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
 
-#: connectioncontroller.cpp:104 rfbcontroller.cpp:769
+#: connectioncontroller.cpp:100 rfbcontroller.cpp:769
 #, qt-format
 msgid "Received connection from %1, on hold (waiting for confirmation)"
 msgstr "Дархости пайвастшавӣ аз %1қабул гардид, ҳолати (интизории тасдиқот)"
 
-#: connectioncontroller.cpp:153 connectioncontroller.cpp:157
+#: connectioncontroller.cpp:146 connectioncontroller.cpp:150
 #: rfbcontroller.cpp:705 rfbcontroller.cpp:710
 #, qt-format
 msgid "Failed login attempt from %1: wrong password"
@@ -113,14 +113,14 @@ msgstr "&Қабули Пайвастшавӣ"
 msgid "Refuse Connection"
 msgstr "&Радкунии Пайвастшавӣ"
 
-#: invitedialog.cpp:35 manageinvitationsdialog.cpp:31
+#: invitedialog.cpp:35 manageinvitationsdialog.cpp:53
 #, fuzzy
 msgid "Invitation"
 msgstr "Идоракунии &Таклифотҳо"
 
 #. i18n: tag string
 #. i18n: file invitewidget.ui line 73
-#: invitedialog.cpp:71 rc.cpp:33
+#: invitedialog.cpp:71 rc.cpp:57
 #, qt-format
 msgid "&Manage Invitations (%1)..."
 msgstr "&Идоракунии Таклифотҳо (%1)..."
@@ -157,7 +157,7 @@ msgstr ""
 "офаред, дар танзимот 'Пайвастшавиҳо бе Таклифот'-ро фаъол созед."
 "\">Муфассалтар дар бораи таклифот...</a>"
 
-#: krfbserver.cpp:161 rfbcontroller.cpp:375
+#: krfbserver.cpp:156 rfbcontroller.cpp:375
 #, qt-format
 msgid "%1@%2 (shared desktop)"
 msgstr "%1@%2 (компютер, ки пайвастшавиро интизор аст)"
@@ -206,7 +206,7 @@ msgstr "Симои пайвастшавӣ"
 msgid "KDesktop background deactivation"
 msgstr "Нофаъолгардонии паснамои KDesktop"
 
-#: manageinvitationsdialog.cpp:62
+#: manageinvitationsdialog.cpp:85
 #, fuzzy
 msgid ""
 "An invitation creates a one-time password that allows the receiver to "
@@ -237,6 +237,14 @@ msgstr ""
 "калид.</p><p>Агар хоҳед, ки гузарвожаи доимиро барои Мизи Кории Муштарак "
 "офаред, дар танзимот 'Пайвастшавиҳо бе Таклифот'-ро фаъол созед."
 "\">Муфассалтар дар бораи таклифот...</a>"
+
+#: manageinvitationsdialog.cpp:127
+msgid "Network"
+msgstr ""
+
+#: manageinvitationsdialog.cpp:128
+msgid "Security"
+msgstr ""
 
 #: personalinvitedialog.cpp:35
 #, fuzzy
@@ -283,14 +291,66 @@ msgstr ""
 "метавонад ё ни, ки барои дигар компютерҳо дастнорас мегардад.\">Ёрӣ</a>)"
 
 #. i18n: tag string
+#. i18n: file configsecurity.ui line 13
+#. i18n: tag string
+#. i18n: file configtcp.ui line 13
+#: rc.cpp:3 rc.cpp:18
+msgid "Form"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file configsecurity.ui line 19
+#: rc.cpp:6
+#, fuzzy
+#| msgid "Accepted uninvited connection from %1"
+msgid "Allow uninvited connections"
+msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
+
+#. i18n: tag string
+#. i18n: file configsecurity.ui line 26
+#: rc.cpp:9
+#, fuzzy
+#| msgid "Allow remote user to &control keyboard and mouse"
+msgid "Allow remote connections to control your desktop"
+msgstr "Иҷозатдиҳи ба корванди дурдаст барои &идоракунӣ бо забонак ва муш"
+
+#. i18n: tag string
+#. i18n: file configsecurity.ui line 39
+#: rc.cpp:12
+#, fuzzy
+#| msgid "Accepted uninvited connection from %1"
+msgid "Ask before accepting an uninvited connection"
+msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
+
+#. i18n: tag string
+#. i18n: file configsecurity.ui line 52
+#: rc.cpp:15
+#, fuzzy
+#| msgid "Accepted uninvited connection from %1"
+msgid "Uninvited connections password"
+msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
+
+#. i18n: tag string
+#. i18n: file configtcp.ui line 19
+#: rc.cpp:21
+msgid "Use default port"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file configtcp.ui line 46
+#: rc.cpp:24
+msgid "Listening Port:"
+msgstr ""
+
+#. i18n: tag string
 #. i18n: file connectionwidget.ui line 37
-#: rc.cpp:3
+#: rc.cpp:27
 msgid "Attention"
 msgstr "Диққат"
 
 #. i18n: tag string
 #. i18n: file connectionwidget.ui line 64
-#: rc.cpp:6
+#: rc.cpp:30
 msgid ""
 "Somebody is requesting a connection to your computer. Granting this will "
 "allow the remote user to watch your desktop. "
@@ -300,13 +360,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file connectionwidget.ui line 137
-#: rc.cpp:9
+#: rc.cpp:33
 msgid "123.234.123.234"
 msgstr "123.234.123.234"
 
 #. i18n: tag string
 #. i18n: file connectionwidget.ui line 155
-#: rc.cpp:12
+#: rc.cpp:36
 msgid ""
 "If you turn this option on, the remote user can enter keystrokes and use "
 "your mouse pointer. This gives them full control over your computer, so be "
@@ -320,13 +380,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file connectionwidget.ui line 158
-#: rc.cpp:15
+#: rc.cpp:39
 msgid "Allow remote user to &control keyboard and mouse"
 msgstr "Иҷозатдиҳи ба корванди дурдаст барои &идоракунӣ бо забонак ва муш"
 
 #. i18n: tag string
 #. i18n: file connectionwidget.ui line 171
-#: rc.cpp:18
+#: rc.cpp:42
 msgid "Remote system:"
 msgstr "Системаи дурдаст:"
 
@@ -334,7 +394,7 @@ msgstr "Системаи дурдаст:"
 #. i18n: file invitewidget.ui line 44
 #. i18n: tag string
 #. i18n: file manageinvitations.ui line 191
-#: rc.cpp:21 rc.cpp:93
+#: rc.cpp:45 rc.cpp:135
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -350,7 +410,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file invitewidget.ui line 63
-#: rc.cpp:27
+#: rc.cpp:51
 msgid ""
 "This button will start your email application with a pre-configured text "
 "that explains to the recipient how to connect to your computer. "
@@ -360,13 +420,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file invitewidget.ui line 66
-#: rc.cpp:30
+#: rc.cpp:54
 msgid "Invite via &Email..."
 msgstr "Таклифот бо ёрии &Пости электронӣ..."
 
 #. i18n: tag string
 #. i18n: file invitewidget.ui line 115
-#: rc.cpp:36
+#: rc.cpp:60
 msgid ""
 "Create a new invitation and display the connection data. Use this option if "
 "you want to invite somebody personally, for example, to give the connection "
@@ -378,7 +438,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file invitewidget.ui line 118
-#: rc.cpp:39
+#: rc.cpp:63
 msgid "Create &Personal Invitation..."
 msgstr "Офаридани Таклифоти &Шахсӣ"
 
@@ -386,37 +446,75 @@ msgstr "Офаридани Таклифоти &Шахсӣ"
 #. i18n: file invitewidget.ui line 186
 #. i18n: tag string
 #. i18n: file manageinvitations.ui line 50
-#: rc.cpp:42 rc.cpp:48
+#: rc.cpp:66 rc.cpp:90
 msgid "Welcome to KDE Desktop Sharing"
 msgstr "Марҳамат ба KDE Дастрасии муштарак ба Мизи Корӣ"
 
+#. i18n: tag label
+#. i18n: file krfb.kcfg line 8
+#: rc.cpp:69
+msgid "Use the default port for VNC (5900)"
+msgstr ""
+
+#. i18n: tag label
+#. i18n: file krfb.kcfg line 12
+#: rc.cpp:72
+msgid "This is the port on wich krfb will listen."
+msgstr ""
+
+#. i18n: tag label
+#. i18n: file krfb.kcfg line 18
+#: rc.cpp:75
+msgid "Allow remote connections to manage the desktop."
+msgstr ""
+
+#. i18n: tag label
+#. i18n: file krfb.kcfg line 22
+#: rc.cpp:78
+msgid "Ask before allowing a remote connection."
+msgstr ""
+
+#. i18n: tag label
+#. i18n: file krfb.kcfg line 26
+#: rc.cpp:81
+msgid "Allow connections without an invitation."
+msgstr ""
+
+#. i18n: tag label
+#. i18n: file krfb.kcfg line 30
+#: rc.cpp:84
+#, fuzzy
+#| msgid "Accepted uninvited connection from %1"
+msgid "Password for uninvited connections."
+msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
+
 #. i18n: tag string
 #. i18n: file manageinvitations.ui line 13
-#: rc.cpp:45
+#: rc.cpp:87
 msgid "Manage Invitations - Desktop Sharing"
 msgstr "Идоракунии Таклифотҳо - Дастрасии муштарак ба Мизи Корӣ"
 
 #. i18n: tag string
 #. i18n: file manageinvitations.ui line 78
-#: rc.cpp:51
+#: rc.cpp:93
 msgid "Created"
 msgstr "Офарида шуд"
 
 #. i18n: tag string
 #. i18n: file manageinvitations.ui line 83
-#: rc.cpp:54
+#: rc.cpp:96
 msgid "Expire Time"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file manageinvitations.ui line 133
-#: rc.cpp:57
+#: rc.cpp:99
 msgid "Delete the selected invitation"
 msgstr "Нобуд кардани таклифотҳои интихобшуда."
 
 #. i18n: tag string
 #. i18n: file manageinvitations.ui line 136
-#: rc.cpp:60
+#: rc.cpp:102
 msgid ""
 "Delete the selected invitation. The invited person will not be able to "
 "connect using this invitation anymore."
@@ -426,37 +524,37 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file manageinvitations.ui line 139
-#: rc.cpp:63
+#: rc.cpp:105
 msgid "&Delete"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file manageinvitations.ui line 149
-#: rc.cpp:66
+#: rc.cpp:108
 msgid "Delete all invitations"
 msgstr "Нобуд кардани ҳамаи таклифотҳо"
 
 #. i18n: tag string
 #. i18n: file manageinvitations.ui line 152
-#: rc.cpp:69
+#: rc.cpp:111
 msgid "Deletes all open invitations."
 msgstr "Нобуд кардани ҳамаи таклифотҳои фаъол."
 
 #. i18n: tag string
 #. i18n: file manageinvitations.ui line 155
-#: rc.cpp:72
+#: rc.cpp:114
 msgid "Delete All"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file manageinvitations.ui line 162
-#: rc.cpp:75
+#: rc.cpp:117
 msgid "Send a new invitation via email..."
 msgstr "Фиристодани таклифоти нав бо ёрии пости электронӣ..."
 
 #. i18n: tag string
 #. i18n: file manageinvitations.ui line 165
-#: rc.cpp:78
+#: rc.cpp:120
 msgid "Click this button to send a new invitation via email."
 msgstr ""
 "Барои фиристодани таклифоти нав бо ёрии пости электронӣ ба ин тугма ангушт "
@@ -464,31 +562,31 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file manageinvitations.ui line 168
-#: rc.cpp:81
+#: rc.cpp:123
 msgid "&New Email Invitation..."
 msgstr "Таклифоти &Нави Пости Электронӣ..."
 
 #. i18n: tag string
 #. i18n: file manageinvitations.ui line 175
-#: rc.cpp:84
+#: rc.cpp:126
 msgid "Create a new personal invitation..."
 msgstr "Офаридани таклифоти нави шахсӣ..."
 
 #. i18n: tag string
 #. i18n: file manageinvitations.ui line 178
-#: rc.cpp:87
+#: rc.cpp:129
 msgid "Click this button to create a new personal invitation."
 msgstr "Барои офаридани таклифоти нави шахсӣ ба ин тугма ангушт занед."
 
 #. i18n: tag string
 #. i18n: file manageinvitations.ui line 181
-#: rc.cpp:90
+#: rc.cpp:132
 msgid "New &Personal Invitation..."
 msgstr "Таклифоти Нави &Шахсӣ..."
 
 #. i18n: tag string
 #. i18n: file personalinvitewidget.ui line 40
-#: rc.cpp:99
+#: rc.cpp:141
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -507,25 +605,25 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file personalinvitewidget.ui line 144
-#: rc.cpp:106
+#: rc.cpp:148
 msgid "<b>Password:</b>"
 msgstr "<b>Гузарвожа:</b>"
 
 #. i18n: tag string
 #. i18n: file personalinvitewidget.ui line 162
-#: rc.cpp:109
+#: rc.cpp:151
 msgid "<b>Expiration time:</b>"
 msgstr "<b>Мӯҳлати кор:</b>"
 
 #. i18n: tag string
 #. i18n: file personalinvitewidget.ui line 213
-#: rc.cpp:112
+#: rc.cpp:154
 msgid "<b>Host:</b>"
 msgstr "<b>Даргоҳ:</b>"
 
 #. i18n: tag string
 #. i18n: file personalinvitewidget.ui line 234
-#: rc.cpp:115
+#: rc.cpp:157
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -537,12 +635,12 @@ msgid ""
 "p></body></html>"
 msgstr ""
 
-#: rc.cpp:119
+#: rc.cpp:161
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Hiromon"
 
-#: rc.cpp:120
+#: rc.cpp:162
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "H_Abrorova@rambler.ru"
