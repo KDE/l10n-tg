@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-04-13 06:11+0200\n"
+"POT-Creation-Date: 2007-04-14 05:46+0200\n"
 "PO-Revision-Date: 2005-12-21 14:47+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: \n"
@@ -197,14 +197,14 @@ msgstr "Сообщение"
 
 #. i18n: tag string
 #. i18n: file ./lib/plugins/vcs/cvs/editorsview.ui line 13
-#: rc.cpp:66 lib/plugins/vcs/cvs/cvs_part.cpp:396
+#: rc.cpp:66 lib/plugins/vcs/cvs/cvspart.cpp:396
 #, fuzzy
 msgid "Editors"
 msgstr "Редакторы"
 
 #. i18n: tag string
 #. i18n: file ./lib/plugins/vcs/cvs/logview.ui line 13
-#: rc.cpp:69 lib/plugins/vcs/cvs/cvs_part.cpp:281
+#: rc.cpp:69 lib/plugins/vcs/cvs/cvspart.cpp:281
 #, fuzzy
 msgid "Log"
 msgstr "Log"
@@ -1851,37 +1851,93 @@ msgstr "Файл изменён другой программой"
 msgid "Process exited with status %1"
 msgstr "Процесс завершён с кодом %1"
 
-#: lib/plugins/vcs/cvs/editorsview.cpp:55
+#: lib/plugins/vcs/cvs/editorsview.cpp:47
 #, fuzzy
 msgid "Listing editors failed"
 msgstr "Запуск htdig завершился неудачно"
 
-#: lib/plugins/vcs/cvs/editorsview.cpp:107
+#: lib/plugins/vcs/cvs/editorsview.cpp:62
 #, fuzzy
 msgid "No files from your query are marked as being edited."
 msgstr "Файлы не отмечены изменёнными."
 
-#: lib/plugins/vcs/cvs/editorsview.cpp:115 lib/plugins/vcs/cvs/logview.cpp:119
+#: lib/plugins/vcs/cvs/editorsview.cpp:70 lib/plugins/vcs/cvs/logview.cpp:67
 #, fuzzy
 msgid "User"
 msgstr "Пользователь"
 
-#: lib/plugins/vcs/cvs/editorsview.cpp:116 lib/plugins/vcs/cvs/logview.cpp:120
+#: lib/plugins/vcs/cvs/editorsview.cpp:71 lib/plugins/vcs/cvs/logview.cpp:68
 #: lib/plugins/vcs/subversion/svn_models.cpp:209
 #: lib/plugins/vcs/subversion/svn_models.cpp:264
 #, fuzzy
 msgid "Date"
 msgstr "Таърих"
 
-#: lib/plugins/vcs/cvs/editorsview.cpp:117
+#: lib/plugins/vcs/cvs/editorsview.cpp:72
 #, fuzzy
 msgid "Machine"
 msgstr "Man"
 
-#: lib/plugins/vcs/cvs/editorsview.cpp:118 plugins/snippet/snippetview.cpp:135
+#: lib/plugins/vcs/cvs/editorsview.cpp:73 plugins/snippet/snippetview.cpp:135
 #, fuzzy
 msgid "Repository"
 msgstr "&Хранилище:"
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:96
+#, fuzzy
+msgid "Show log"
+msgstr "Нишон додан"
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:100
+#, fuzzy
+#| msgid "Edit preferences..."
+msgid "Show differences..."
+msgstr "Иваз кардани танзимотҳо..."
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:104
+msgid "Edit..."
+msgstr "Тағъир кардан..."
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:108
+#, fuzzy
+msgid "Unedit..."
+msgstr "Файлҳои &UI:"
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:112
+#, fuzzy
+msgid "Show Editors..."
+msgstr "&Показать редактирующих"
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:116
+#, fuzzy
+msgid "Add Files..."
+msgstr "Илова кардани синф"
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:120
+#, fuzzy
+msgid "Commit Files..."
+msgstr "Передать файл(ы)"
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:124
+#, fuzzy
+msgid "Update Files..."
+msgstr "Обновление..."
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:350
+#: lib/plugins/vcs/subversion/subversion_view.cpp:149
+#, fuzzy
+msgid "Diff"
+msgstr "Просмотр различий"
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:372
+#, fuzzy
+msgid "Do you really want to unedit the selected files?"
+msgstr "Действительно удалить подпроект %1 со всеми целями или файлами?"
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:373
+#, fuzzy
+msgid "Unedit Files"
+msgstr "&Отметить как неизменённые"
 
 #: lib/plugins/vcs/cvs/cvsmainview.cpp:37
 msgid "CVS"
@@ -1892,76 +1948,20 @@ msgstr ""
 msgid "Job exited normally"
 msgstr "*** Нормальное завершение ***"
 
-#: lib/plugins/vcs/cvs/logview.cpp:55
+#: lib/plugins/vcs/cvs/logview.cpp:48
 #, fuzzy
 msgid "Listing the files's log failed"
 msgstr "Запуск htdig завершился неудачно"
 
-#: lib/plugins/vcs/cvs/logview.cpp:113
+#: lib/plugins/vcs/cvs/logview.cpp:61
 #, fuzzy
 msgid "No log information found"
 msgstr "Нет информации"
 
-#: lib/plugins/vcs/cvs/logview.cpp:118
+#: lib/plugins/vcs/cvs/logview.cpp:66
 #, fuzzy
 msgid "Revision"
 msgstr "Ревизия"
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:96
-#, fuzzy
-msgid "Show log"
-msgstr "Нишон додан"
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:100
-#, fuzzy
-#| msgid "Edit preferences..."
-msgid "Show differences..."
-msgstr "Иваз кардани танзимотҳо..."
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:104
-msgid "Edit..."
-msgstr "Тағъир кардан..."
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:108
-#, fuzzy
-msgid "Unedit..."
-msgstr "Файлҳои &UI:"
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:112
-#, fuzzy
-msgid "Show Editors..."
-msgstr "&Показать редактирующих"
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:116
-#, fuzzy
-msgid "Add Files..."
-msgstr "Илова кардани синф"
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:120
-#, fuzzy
-msgid "Commit Files..."
-msgstr "Передать файл(ы)"
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:124
-#, fuzzy
-msgid "Update Files..."
-msgstr "Обновление..."
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:350
-#: lib/plugins/vcs/subversion/subversion_view.cpp:149
-#, fuzzy
-msgid "Diff"
-msgstr "Просмотр различий"
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:372
-#, fuzzy
-msgid "Do you really want to unedit the selected files?"
-msgstr "Действительно удалить подпроект %1 со всеми целями или файлами?"
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:373
-#, fuzzy
-msgid "Unedit Files"
-msgstr "&Отметить как неизменённые"
 
 #: lib/plugins/vcs/subversion/subversion_part.cpp:81
 #, fuzzy
