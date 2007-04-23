@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-04-21 05:46+0200\n"
+"POT-Creation-Date: 2007-04-23 05:42+0200\n"
 "PO-Revision-Date: 2005-12-21 14:47+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: \n"
@@ -185,7 +185,8 @@ msgid "Tag/Branch:"
 msgstr "&Tag/branch:"
 
 #: rc.cpp:102 rc.cpp:147 rc.cpp:201 rc.cpp:510 rc.cpp:516 rc.cpp:531
-#: rc.cpp:611
+#: rc.cpp:648 rc.cpp:654 rc.cpp:657 rc.cpp:678 rc.cpp:780 rc.cpp:804
+#: rc.cpp:849 rc.cpp:885 rc.cpp:945 rc.cpp:999 rc.cpp:1079
 #, fuzzy
 msgid "Form"
 msgstr "Формы"
@@ -195,7 +196,7 @@ msgstr "Формы"
 msgid "Commit to Repository"
 msgstr "&Передать в хранилище"
 
-#: rc.cpp:108
+#: rc.cpp:108 rc.cpp:588
 #, fuzzy
 msgid "Message"
 msgstr "Сообщение"
@@ -205,7 +206,7 @@ msgstr "Сообщение"
 msgid "Editors"
 msgstr "Редакторы"
 
-#: rc.cpp:114 lib/plugins/vcs/cvs/cvspart.cpp:347
+#: rc.cpp:114 rc.cpp:633 rc.cpp:663 lib/plugins/vcs/cvs/cvspart.cpp:347
 #, fuzzy
 msgid "Log"
 msgstr "Log"
@@ -329,7 +330,7 @@ msgstr "Alt+1"
 msgid "C&ancel"
 msgstr "&Расположить окна каскадом"
 
-#: rc.cpp:198 rc.cpp:563
+#: rc.cpp:198 rc.cpp:1031
 #, fuzzy
 msgid "Alt+A"
 msgstr "Alt+1"
@@ -369,12 +370,12 @@ msgstr ""
 msgid "Specify By number"
 msgstr "Муайянкунанда"
 
-#: rc.cpp:228 rc.cpp:285 rc.cpp:294 rc.cpp:605
+#: rc.cpp:228 rc.cpp:285 rc.cpp:294 rc.cpp:1073
 #: lib/plugins/vcs/subversion/svn_blamewidgets.cpp:56
 msgid "OK"
 msgstr ""
 
-#: rc.cpp:231 rc.cpp:288 rc.cpp:297 rc.cpp:608
+#: rc.cpp:231 rc.cpp:288 rc.cpp:297 rc.cpp:1076
 #: lib/plugins/vcs/subversion/svn_blamewidgets.cpp:57
 #, fuzzy
 msgid "Cancel"
@@ -461,12 +462,12 @@ msgstr "&Хранилище:"
 msgid "&Build"
 msgstr "&Сохтан"
 
-#: rc.cpp:342 rc.cpp:671
+#: rc.cpp:342 rc.cpp:1139
 #, fuzzy
 msgid "&File"
 msgstr "&Файлы:"
 
-#: rc.cpp:345 rc.cpp:674
+#: rc.cpp:345 rc.cpp:1142
 #, fuzzy
 msgid "&Edit"
 msgstr "&Тағъир кардан..."
@@ -484,7 +485,7 @@ msgstr "&Лоиҳа"
 msgid "Bu&ild"
 msgstr "Сох&тан"
 
-#: rc.cpp:357 rc.cpp:668
+#: rc.cpp:357 rc.cpp:1136
 msgid "&Debug"
 msgstr "&Debug"
 
@@ -507,7 +508,7 @@ msgstr "Танзимотҳо"
 msgid "&Help"
 msgstr "Салом"
 
-#: rc.cpp:372 rc.cpp:680
+#: rc.cpp:372 rc.cpp:1148
 #, fuzzy
 msgid "Main Toolbar"
 msgstr "Пайраҳаи асбоб"
@@ -534,11 +535,12 @@ msgstr "Редактор профилей KDevelop"
 msgid "Add Profile"
 msgstr "Добавить профиль"
 
-#: rc.cpp:390 rc.cpp:438 rc.cpp:453 rc.cpp:492 rc.cpp:584 rc.cpp:599
+#: rc.cpp:390 rc.cpp:438 rc.cpp:453 rc.cpp:492 rc.cpp:906 rc.cpp:1052
+#: rc.cpp:1067
 msgid "Name"
 msgstr "Ном"
 
-#: rc.cpp:393
+#: rc.cpp:393 rc.cpp:894
 msgid "Description"
 msgstr "Тасвир"
 
@@ -548,17 +550,17 @@ msgstr "Тасвир"
 msgid "Remove Profile"
 msgstr "Удалить профиль"
 
-#: rc.cpp:399 rc.cpp:459 rc.cpp:534
+#: rc.cpp:399 rc.cpp:459 rc.cpp:1002
 #, fuzzy
 msgid "Properties"
 msgstr "&Хусусиятҳо"
 
-#: rc.cpp:402
+#: rc.cpp:402 rc.cpp:792
 #, fuzzy
 msgid "Add"
 msgstr "Ило&ва кардан"
 
-#: rc.cpp:405 plugins/snippet/snippetview.cpp:154
+#: rc.cpp:405 rc.cpp:798 plugins/snippet/snippetview.cpp:154
 #, fuzzy
 msgid "Remove"
 msgstr "Дур &кардан"
@@ -708,31 +710,700 @@ msgstr "Только когда открыто несколько файлов"
 msgid "Number of simultaneous jobs:"
 msgstr "Число &одновременных процессов:"
 
+#: rc.cpp:534
+#, fuzzy
+msgid "Connection"
+msgstr "Пайвастшавӣ"
+
 #: rc.cpp:537
+#, fuzzy
+#| msgid "Local Directory"
+msgid "Local server"
+msgstr "Феҳристи дохилӣ"
+
+#: rc.cpp:540
+#, fuzzy
+#| msgid "&Connections:"
+msgid "Connected clients:"
+msgstr "&Бандҳо:"
+
+#: rc.cpp:543
+msgid "Allow incoming"
+msgstr ""
+
+#: rc.cpp:546
+#, fuzzy
+msgid "Servers"
+msgstr "Никогда"
+
+#: rc.cpp:549
+msgid "the password for logging into the server"
+msgstr ""
+
+#: rc.cpp:552
+msgid ""
+"connect to the given server using the given login-information(if the name is "
+"blank the local name is used)"
+msgstr ""
+
+#: rc.cpp:555
+msgid "Connect"
+msgstr "Пайвастшавӣ"
+
+#: rc.cpp:558
+msgid "the server to connect"
+msgstr ""
+
+#: rc.cpp:561
+msgid "Connected servers:"
+msgstr ""
+
+#: rc.cpp:564
+msgid "the user-name for logging into the server"
+msgstr ""
+
+#: rc.cpp:567 rc.cpp:870
+#, fuzzy
+msgid "Developers"
+msgstr "Тавлидгар"
+
+#: rc.cpp:570
+#, fuzzy
+msgid "Available:"
+msgstr "&Доступно:"
+
+#: rc.cpp:573
+msgid "Collaborating:"
+msgstr ""
+
+#: rc.cpp:576
+#, fuzzy
+msgid "Messaging"
+msgstr "Сообщение"
+
+#: rc.cpp:579
+msgid "target-user"
+msgstr ""
+
+#: rc.cpp:582 plugins/teamwork/kdevteamwork.cpp:1155
+msgid "Answer To"
+msgstr ""
+
+#: rc.cpp:585 rc.cpp:864
+#, fuzzy
+msgid "Type:"
+msgstr "Тип:"
+
+#: rc.cpp:591 lib/plugins/vcs/subversion/svn_models.cpp:277
+#, fuzzy
+msgid "Comment"
+msgstr "&Шарҳ:"
+
+#: rc.cpp:594
+#, fuzzy
+msgid "Source-discussion"
+msgstr "Пакет с &исходным кодом"
+
+#: rc.cpp:597
+#, fuzzy
+msgid "Thread:"
+msgstr "Поток"
+
+#: rc.cpp:600
+#, fuzzy
+msgid "Reference:"
+msgstr "Настройки"
+
+#: rc.cpp:603 rc.cpp:627 rc.cpp:636
+#, fuzzy
+#| msgid "Clean"
+msgid "Clear"
+msgstr "Тоза кардан"
+
+#: rc.cpp:606
+#, fuzzy
+msgid "&Send message"
+msgstr "сообщение gdb:\n"
+
+#: rc.cpp:609
+msgid "S"
+msgstr ""
+
+#: rc.cpp:612
+msgid "the message you wish to send"
+msgstr ""
+
+#: rc.cpp:615
+#, fuzzy
+#| msgid "Local"
+msgid "Local state"
+msgstr "Дохилӣ"
+
+#: rc.cpp:618
+#, fuzzy
+msgid "Manage local patches"
+msgstr "Изменить доступность слота"
+
+#: rc.cpp:621 rc.cpp:852
+#, fuzzy
+msgid "Messages"
+msgstr "Паёмҳо"
+
+#: rc.cpp:624
+#, fuzzy
+#| msgid "All Files"
+msgid "All Users"
+msgstr "Ҳар файлҳо"
+
+#: rc.cpp:630 rc.cpp:891 rc.cpp:951
+#, fuzzy
+msgid "History"
+msgstr "&Хранилище:"
+
+#: rc.cpp:639
+#, fuzzy
+msgid "Save"
+msgstr "Сохранить все"
+
+#: rc.cpp:642 plugins/teamwork/kdevteamwork.cpp:231
+#: plugins/codeview/kdevcodeview.cpp:112 plugins/codeview/kdevcodeview.cpp:116
+#, fuzzy
+msgid "Filter"
+msgstr "Фильтровано"
+
+#: rc.cpp:645
+#, fuzzy
+msgid "Enable Collaboration"
+msgstr "Создавать диаграммы взаимодействия"
+
+#: rc.cpp:651
+msgid "Jump to Position"
+msgstr ""
+
+#: rc.cpp:660
+msgid "Timestamps"
+msgstr ""
+
+#: rc.cpp:666
+msgid "To Tail State"
+msgstr ""
+
+#: rc.cpp:669
+#, fuzzy
+msgid "Clear Log"
+msgstr "очистить "
+
+#: rc.cpp:672
+msgid "Current State:    Tail State: "
+msgstr ""
+
+#: rc.cpp:675
+#, fuzzy
+#| msgid "Find"
+msgid "Finish"
+msgstr "Ҷустуҷӯ"
+
+#: rc.cpp:681
+#, fuzzy
+msgid "Tail"
+msgstr "Выстроить"
+
+#: rc.cpp:684
+#, fuzzy
+msgid "None"
+msgstr "Отсутствует"
+
+#: rc.cpp:687
+#, fuzzy
+msgid "Enable All(x)"
+msgstr "Включить"
+
+#: rc.cpp:690
+msgid "(last stamp)"
+msgstr ""
+
+#: rc.cpp:693
+msgid "(last date)"
+msgstr ""
+
+#: rc.cpp:696
+#, fuzzy
+msgid "Enable"
+msgstr "Включить"
+
+#: rc.cpp:699
+#, fuzzy
+msgid "replacement-text"
+msgstr "Текст для &замены:"
+
+#: rc.cpp:702
+#, fuzzy
+msgid "Edit Patch"
+msgstr "Изменить палитру"
+
+#: rc.cpp:705
+#, fuzzy
+msgid "File"
+msgstr "&Файлы:"
+
+#: rc.cpp:708
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" "
+"white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">File:</span></"
+"p></body></html>"
+msgstr ""
+
+#: rc.cpp:711
+msgid "command-output"
+msgstr ""
+
+#: rc.cpp:714
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" "
+"white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Command:</"
+"span></p></body></html>"
+msgstr ""
+
+#: rc.cpp:717
+#, fuzzy
+msgid "To File"
+msgstr "No File"
+
+#: rc.cpp:720
+#, fuzzy
+msgid "Files"
+msgstr "&Файлы:"
+
+#: rc.cpp:723
+#, fuzzy
+msgid "Highlight"
+msgstr "Подсветка синтаксиса"
+
+#: rc.cpp:726
+#, fuzzy
+msgid "Previous Hunk"
+msgstr "Предыдущее окно"
+
+#: rc.cpp:729
+#, fuzzy
+msgid "Next Hunk"
+msgstr "Следующее окно"
+
+#: rc.cpp:732
+#, fuzzy
+msgid "Author:"
+msgstr "&Автор:"
+
+#: rc.cpp:735 rc.cpp:987 lib/plugins/vcs/cvs/editorsview.cpp:70
+#: lib/plugins/vcs/cvs/logview.cpp:67
+#, fuzzy
+msgid "User"
+msgstr "Пользователь"
+
+#: rc.cpp:738
+#, fuzzy
+#| msgid "Delete item"
+msgid "Determine"
+msgstr "Нест кардани чиз"
+
+#: rc.cpp:741
+#, fuzzy
+msgid "State:"
+msgstr "Начать:"
+
+#: rc.cpp:744
+#, fuzzy
+#| msgid "Acce&ss:"
+msgid "Access:"
+msgstr "Дастра&с:"
+
+#: rc.cpp:747
+msgid "recommended unapply-command:"
+msgstr ""
+
+#: rc.cpp:750
+msgid "Dependencies:"
+msgstr ""
+
+#: rc.cpp:753
+msgid "recommended apply-command:"
+msgstr ""
+
+#: rc.cpp:756
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" "
+"white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\">N<span style=\" font-weight:600;\">ame:</span></"
+"p></body></html>"
+msgstr ""
+
+#: rc.cpp:759
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" "
+"white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Type:</span></"
+"p></body></html>"
+msgstr ""
+
+#: rc.cpp:762
+#, fuzzy
+msgid "Choose"
+msgstr "&Закрыть"
+
+#: rc.cpp:765
+msgid "Description:"
+msgstr "Тасвир:"
+
+#: rc.cpp:768
+msgid "Apply"
+msgstr ""
+
+#: rc.cpp:771
+msgid "Unapply"
+msgstr ""
+
+#: rc.cpp:774
+#, fuzzy
+msgid "Show"
+msgstr "Тень"
+
+#: rc.cpp:777 rc.cpp:801 lib/plugins/vcs/subversion/subversion_view.cpp:65
+#, fuzzy
+msgid "Close"
+msgstr "&Закрыть"
+
+#: rc.cpp:783
+#, fuzzy
+msgid "Context-Lines:"
+msgstr "&Строки контекста:"
+
+#: rc.cpp:786
+#, fuzzy
+msgid "Manage Patches"
+msgstr "Исправления"
+
+#: rc.cpp:789
+#, fuzzy
+msgid "Available patches:"
+msgstr "Доступные &действия:"
+
+#: rc.cpp:795 plugins/snippet/snippetview.cpp:124
+#: plugins/snippet/snippetview.cpp:146
+#, fuzzy
+msgid "Edit"
+msgstr "&Тағъир кардан..."
+
+#: rc.cpp:807
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">File</span>:</p></body></html>"
+msgstr ""
+
+#: rc.cpp:813
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration: underline;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-"
+"decoration:none;\">file</span></p></body></html>"
+msgstr ""
+
+#: rc.cpp:819
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:Sans;\"><span "
+"style=\" font-weight:600;\">Position</span>: </p></body></html>"
+msgstr ""
+
+#: rc.cpp:825
+#, fuzzy
+msgid "position"
+msgstr "Условие"
+
+#: rc.cpp:828
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:Sans;\"><span "
+"style=\" font-weight:600;\">Context</span>: </p></body></html>"
+msgstr ""
+
+#: rc.cpp:834
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration: underline;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-"
+"decoration:none;\">Context</span></p></body></html>"
+msgstr ""
+
+#: rc.cpp:840
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Reference-Type</span>: </p></body></html>"
+msgstr ""
+
+#: rc.cpp:846
+#, fuzzy
+msgid "referenceType"
+msgstr "Настройки"
+
+#: rc.cpp:855
+#, fuzzy
+msgid "From:"
+msgstr "Формы"
+
+#: rc.cpp:858
+#, fuzzy
+msgid "Until:"
+msgstr "Детали"
+
+#: rc.cpp:861 rc.cpp:873
+msgid "All"
+msgstr "Ҳама"
+
+#: rc.cpp:867
+#, fuzzy
+msgid "Context:"
+msgstr "Контекстное меню"
+
+#: rc.cpp:876
+#, fuzzy
+msgid "Exit"
+msgstr "Баромадан"
+
+#: rc.cpp:879
+#, fuzzy
+msgid "Internal Message"
+msgstr "Введите сообщение для журнала:"
+
+#: rc.cpp:882
+#, fuzzy
+#| msgid "Actions"
+msgid "actions"
+msgstr "Амалиёт"
+
+#: rc.cpp:888 rc.cpp:948
+#, fuzzy
+#| msgid "Add Menu"
+msgid "Menu"
+msgstr "Иловаи меню"
+
+#: rc.cpp:897
+#, fuzzy
+msgid "TextLabel"
+msgstr "Текстовые метки"
+
+#: rc.cpp:900
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Name</span>:</p></body></html>"
+msgstr ""
+
+#: rc.cpp:909
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">E-Mail</span>:</p></body></html>"
+msgstr ""
+
+#: rc.cpp:915
+#, fuzzy
+#| msgid "Email:"
+msgid "E-Mail"
+msgstr "Почтаи электронӣ:"
+
+#: rc.cpp:918
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">State</span>:</p></body></html>"
+msgstr ""
+
+#: rc.cpp:924
+#, fuzzy
+msgid "IP-Adress"
+msgstr "Адрес"
+
+#: rc.cpp:927 rc.cpp:969
+#, fuzzy
+msgid "State"
+msgstr "Начать"
+
+#: rc.cpp:930
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">IP-Adress</span>:</p></body></html>"
+msgstr ""
+
+#: rc.cpp:936
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Rights</span>: </p></body></html>"
+msgstr ""
+
+#: rc.cpp:942
+#, fuzzy
+msgid "Rights"
+msgstr "Светло"
+
+#: rc.cpp:954
+msgid "Is Reply To"
+msgstr ""
+
+#: rc.cpp:957 rc.cpp:960
+#, fuzzy
+msgid "Text"
+msgstr "Текст"
+
+#: rc.cpp:963
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">State</span>: </p></body></html>"
+msgstr ""
+
+#: rc.cpp:972
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Time</span>: </p></body></html>"
+msgstr ""
+
+#: rc.cpp:978
+#, fuzzy
+msgid "Time"
+msgstr "Выстроить"
+
+#: rc.cpp:981
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">User</span>:</p></body></html>"
+msgstr ""
+
+#: rc.cpp:990
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Direction</span>: </p></body></html>"
+msgstr ""
+
+#: rc.cpp:996
+#, fuzzy
+msgid "Direction"
+msgstr "Направление"
+
+#: rc.cpp:1005
 #, fuzzy
 msgid "Final Location:"
 msgstr "Конечное расположение:"
 
-#: rc.cpp:540 rc.cpp:575
+#: rc.cpp:1008 rc.cpp:1043
 #, fuzzy
 msgid "Location:"
 msgstr "&Расположение:"
 
-#: rc.cpp:543
+#: rc.cpp:1011
 #, fuzzy
 msgid "Application Name:"
 msgstr "&Имя приложения:"
 
-#: rc.cpp:546
+#: rc.cpp:1014
 #, fuzzy
 msgid "(invalid)"
 msgstr " (неверно)"
 
-#: rc.cpp:549
+#: rc.cpp:1017
 msgid "Display document categories (mimetypes) in the view"
 msgstr ""
 
-#: rc.cpp:552
+#: rc.cpp:1020
 msgid ""
 "If this option is set, the Document View will organize documents\n"
 "        by their mimetype. If this option is not set, the Document View will "
@@ -740,131 +1411,131 @@ msgid ""
 "        organize the open documents by type."
 msgstr ""
 
-#: rc.cpp:557
+#: rc.cpp:1025
 #, fuzzy
 msgid "Form2"
 msgstr "Form1"
 
-#: rc.cpp:560
+#: rc.cpp:1028
 msgid "Display document &categories"
 msgstr ""
 
-#: rc.cpp:566
+#: rc.cpp:1034
 #, fuzzy
 msgid "Add an existing Repository"
 msgstr "Добавить в хранилище"
 
-#: rc.cpp:569 rc.cpp:593 rc.cpp:620
+#: rc.cpp:1037 rc.cpp:1061 rc.cpp:1088
 msgid "..."
 msgstr "..."
 
-#: rc.cpp:572
+#: rc.cpp:1040
 msgid "Name:"
 msgstr "Ном:"
 
-#: rc.cpp:578
+#: rc.cpp:1046
 #, fuzzy
 msgid "Edit Snippet"
 msgstr "Редактировать заготовку"
 
-#: rc.cpp:581 plugins/snippet/snippetview.cpp:119
+#: rc.cpp:1049 plugins/snippet/snippetview.cpp:119
 #, fuzzy
 msgid "Snippet"
 msgstr "&Заготовка:"
 
-#: rc.cpp:587
+#: rc.cpp:1055
 msgid "Keywords"
 msgstr ""
 
-#: rc.cpp:590
+#: rc.cpp:1058
 #, fuzzy
 msgid "Move Repository"
 msgstr "&Хранилище:"
 
-#: rc.cpp:596
+#: rc.cpp:1064
 #, fuzzy
 msgid "New Location"
 msgstr "Ҷойгиршавӣ"
 
-#: rc.cpp:602
+#: rc.cpp:1070
 #, fuzzy
 msgid "Variable Substitution"
 msgstr "Изменить подстановку"
 
-#: rc.cpp:614
+#: rc.cpp:1082
 msgid "Define filter here"
 msgstr ""
 
-#: rc.cpp:617
+#: rc.cpp:1085
 #, fuzzy
 msgid "Apply filter"
 msgstr "Применить предыдущий фильтр (\"%1\")"
 
-#: rc.cpp:623
+#: rc.cpp:1091
 #, fuzzy
 msgid "Valgrind"
 msgstr "Valgrind"
 
-#: rc.cpp:626
+#: rc.cpp:1094
 #, fuzzy
 msgid "&Executable:"
 msgstr "&Исполняемый файл:"
 
-#: rc.cpp:629
+#: rc.cpp:1097
 msgid "&Parameters:"
 msgstr "&Параметрҳо:"
 
-#: rc.cpp:632
+#: rc.cpp:1100
 #, fuzzy
 msgid "Callgrind"
 msgstr "Valgrind"
 
-#: rc.cpp:635 rc.cpp:659
+#: rc.cpp:1103 rc.cpp:1127
 #, fuzzy
 msgid "&Trace children"
 msgstr "&Следить за дочерними процессами"
 
-#: rc.cpp:638 rc.cpp:665
+#: rc.cpp:1106 rc.cpp:1133
 #, fuzzy
 msgid "E&xecutable:"
 msgstr "&Исполняемый файл:"
 
-#: rc.cpp:641 rc.cpp:662
+#: rc.cpp:1109 rc.cpp:1130
 #, fuzzy
 msgid "Additional p&arameters:"
 msgstr "Дополнительные &параметры:"
 
-#: rc.cpp:644
+#: rc.cpp:1112
 #, fuzzy
 msgid "KCacheGrind"
 msgstr "KCachegrind"
 
-#: rc.cpp:647
+#: rc.cpp:1115
 #, fuzzy
 msgid "Executable:"
 msgstr "Исполняемый файл:"
 
-#: rc.cpp:650
+#: rc.cpp:1118
 #, fuzzy
 msgid "Memcheck"
 msgstr "Проверить &утечки памяти"
 
-#: rc.cpp:653
+#: rc.cpp:1121
 #, fuzzy
 msgid "Memory &leak check"
 msgstr "Проверить &утечки памяти"
 
-#: rc.cpp:656
+#: rc.cpp:1124
 #, fuzzy
 msgid "&Show still reachable blocks"
 msgstr "&Показать ещё доступные блоки"
 
-#: rc.cpp:677
+#: rc.cpp:1145
 #, fuzzy
 msgid "F&orm"
 msgstr "Формы"
 
-#: rc.cpp:683
+#: rc.cpp:1151
 #, fuzzy
 msgid "Designer Layout Toolbar"
 msgstr "Нақшаи пайраҳаи асбоб"
@@ -1339,6 +2010,67 @@ msgstr ""
 msgid "Document Externally Modified"
 msgstr "Файл изменён другой программой"
 
+#: lib/libdiff2/komparemodellist.cpp:240 lib/libdiff2/komparemodellist.cpp:264
+#, qt-format
+msgid ""
+"<qt>No models or no differences, this file: <b>%1</b>, is not a valid diff "
+"file.</qt>"
+msgstr ""
+
+#: lib/libdiff2/komparemodellist.cpp:248
+#, qt-format
+msgid ""
+"<qt>There were problems applying the diff <b>%1</b> to the file <b>%2</b>.</"
+"qt>"
+msgstr ""
+
+#: lib/libdiff2/komparemodellist.cpp:273
+#, qt-format
+msgid ""
+"<qt>There were problems applying the diff <b>%1</b> to the folder <b>%2</b>."
+"</qt>"
+msgstr ""
+
+#: lib/libdiff2/komparemodellist.cpp:301 lib/libdiff2/komparemodellist.cpp:578
+#, fuzzy
+msgid "Could not open a temporary file."
+msgstr "Не удалось загрузить файл '%1'."
+
+#: lib/libdiff2/komparemodellist.cpp:352
+#, qt-format
+msgid "<qt>Could not write to the temporary file <b>%1</b>, deleting it.</qt>"
+msgstr ""
+
+#: lib/libdiff2/komparemodellist.cpp:371
+#, qt-format
+msgid ""
+"<qt>Could not create destination directory <b>%1</b>.\n"
+"The file has not been saved.</qt>"
+msgstr ""
+
+#: lib/libdiff2/komparemodellist.cpp:386
+#, qt-format
+msgid ""
+"<qt>Could not upload the temporary file to the destination location <b>%1</"
+"b>. The temporary file is still available under: <b>%2</b>. You can manually "
+"copy it to the right place.</qt>"
+msgstr ""
+
+#: lib/libdiff2/komparemodellist.cpp:431 lib/libdiff2/komparemodellist.cpp:544
+#, fuzzy
+msgid "Could not parse diff output."
+msgstr "Невозможно открыть вывод valgrind: %1"
+
+#: lib/libdiff2/komparemodellist.cpp:447
+#, fuzzy
+msgid "The files are identical."
+msgstr "Файл уже в цели."
+
+#: lib/libdiff2/komparemodellist.cpp:609
+#, fuzzy
+msgid "Could not write to the temporary file."
+msgstr "Невозможно записать файл проекта."
+
 #: lib/plugins/vcs/cvs/importdialog.cpp:50
 #, fuzzy
 msgid "Error on importing"
@@ -1369,11 +2101,6 @@ msgstr "Запуск htdig завершился неудачно"
 #, fuzzy
 msgid "No files from your query are marked as being edited."
 msgstr "Файлы не отмечены изменёнными."
-
-#: lib/plugins/vcs/cvs/editorsview.cpp:70 lib/plugins/vcs/cvs/logview.cpp:67
-#, fuzzy
-msgid "User"
-msgstr "Пользователь"
 
 #: lib/plugins/vcs/cvs/editorsview.cpp:71 lib/plugins/vcs/cvs/logview.cpp:68
 #: lib/plugins/vcs/subversion/svn_models.cpp:220
@@ -1764,11 +2491,6 @@ msgstr ""
 msgid "Notification"
 msgstr "Нет оптимизации"
 
-#: lib/plugins/vcs/subversion/subversion_view.cpp:65
-#, fuzzy
-msgid "Close"
-msgstr "&Закрыть"
-
 #: lib/plugins/vcs/subversion/subversion_view.cpp:69
 #, fuzzy
 msgid "Subversion"
@@ -1862,11 +2584,6 @@ msgstr "Муаллиф:"
 #, fuzzy
 msgid "Contents"
 msgstr "Клиенты"
-
-#: lib/plugins/vcs/subversion/svn_models.cpp:277
-#, fuzzy
-msgid "Comment"
-msgstr "&Шарҳ:"
 
 #: lib/plugins/vcs/subversion/svnkjobbase.cpp:67
 #, fuzzy
@@ -2399,6 +3116,11 @@ msgstr "Объекты для установки"
 msgid "Uninstalled headers"
 msgstr "Объекты для установки"
 
+#: plugins/teamwork/documentwrapper.cpp:172
+#, qt-format
+msgid "The buffer of %1 is modified, should the content be replaced?"
+msgstr ""
+
 #: plugins/filemanager/filemanager.cpp:140
 #: plugins/filemanager/filemanager.cpp:260
 #, fuzzy
@@ -2521,11 +3243,6 @@ msgstr "Нормальный режим"
 msgid "&Aggregate"
 msgstr "&Сохтан"
 
-#: plugins/codeview/kdevcodeview.cpp:112 plugins/codeview/kdevcodeview.cpp:116
-#, fuzzy
-msgid "Filter"
-msgstr "Фильтровано"
-
 #: plugins/snippet/snippetview.cpp:103 plugins/snippet/snippetpart.cpp:52
 #, fuzzy
 msgid "Snippets"
@@ -2540,11 +3257,6 @@ msgstr "Добавить в хранилище"
 #, fuzzy
 msgid "Sync"
 msgstr "Синхронизировать"
-
-#: plugins/snippet/snippetview.cpp:124 plugins/snippet/snippetview.cpp:146
-#, fuzzy
-msgid "Edit"
-msgstr "&Тағъир кардан..."
 
 #: plugins/snippet/snippetview.cpp:127
 #, fuzzy
@@ -2833,14 +3545,8 @@ msgstr "Тавлидгар"
 #~ msgid "Version:"
 #~ msgstr "Ривоят:"
 
-#~ msgid "Email:"
-#~ msgstr "Почтаи электронӣ:"
-
 #~ msgid "Project directory:"
 #~ msgstr "Феҳристи лоиҳа:"
-
-#~ msgid "Description:"
-#~ msgstr "Тасвир:"
 
 #, fuzzy
 #~ msgid "Absolute Path"
@@ -3064,10 +3770,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid " Line: %1 Col: %2 "
 #~ msgstr " Строка: %1 Столбец: %2 "
-
-#, fuzzy
-#~ msgid "Untitled"
-#~ msgstr "Детали"
 
 #, fuzzy
 #~ msgid "Document to open"
@@ -3345,10 +4047,6 @@ msgstr "Тавлидгар"
 #~ msgstr "Целевая строка"
 
 #, fuzzy
-#~ msgid "&Replacement text:"
-#~ msgstr "Текст для &замены:"
-
-#, fuzzy
 #~ msgid "The replacement string"
 #~ msgstr "Заменяющая строка"
 
@@ -3598,10 +4296,6 @@ msgstr "Тавлидгар"
 #~ msgstr "KDE"
 
 #, fuzzy
-#~ msgid "Developer"
-#~ msgstr "Тавлидгар"
-
-#, fuzzy
 #~ msgid "&Plugin Action"
 #~ msgstr "&Plugin Action"
 
@@ -3624,10 +4318,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "You have to select a file to import."
 #~ msgstr "You have to select a file to import."
-
-#, fuzzy
-#~ msgid "No File"
-#~ msgstr "No File"
 
 #, fuzzy
 #~ msgid "Helpful information about the %{APPNAMELC} module."
@@ -3915,10 +4605,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "&Save As..."
 #~ msgstr "Сохранить &как..."
-
-#, fuzzy
-#~ msgid "Highlight Syntax"
-#~ msgstr "Подсветка синтаксиса"
 
 #, fuzzy
 #~ msgid "Unable to open file."
@@ -4352,10 +5038,6 @@ msgstr "Тавлидгар"
 #~ "курсор на строку, что вызвала ошибку/предупреждение компилятора."
 
 #, fuzzy
-#~ msgid "Messages"
-#~ msgstr "Паёмҳо"
-
-#, fuzzy
 #~ msgid "Compiler output messages"
 #~ msgstr "Сообщения компилятора"
 
@@ -4485,10 +5167,6 @@ msgstr "Тавлидгар"
 #~ "быть использованы для открытия выбранного файла."
 
 #, fuzzy
-#~ msgid "&Available:"
-#~ msgstr "&Доступно:"
-
-#, fuzzy
 #~ msgid "&Selected:"
 #~ msgstr "&Выбрано:"
 
@@ -4550,10 +5228,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "Toolbar"
 #~ msgstr "Панель инструментов"
-
-#, fuzzy
-#~ msgid "A&vailable actions:"
-#~ msgstr "Доступные &действия:"
 
 #, fuzzy
 #~ msgid "S&elected actions:"
@@ -4654,10 +5328,6 @@ msgstr "Тавлидгар"
 
 #~ msgid "No."
 #~ msgstr "№"
-
-#, fuzzy
-#~ msgid "Thread"
-#~ msgstr "Поток"
 
 #, fuzzy
 #~ msgid "&Open Valgrind Output..."
@@ -4902,9 +5572,6 @@ msgstr "Тавлидгар"
 #~ "унаследован от QWidget. Если не было названо базового класса, то новый "
 #~ "класс не будет иметь родительского класса. Вы так же можете использовать "
 #~ "здесь шаблоны, как BaseClass<int, int>"
-
-#~ msgid "Local"
-#~ msgstr "Дохилӣ"
 
 #~ msgid "Virtual"
 #~ msgstr "Виртуалӣ"
@@ -5265,9 +5932,6 @@ msgstr "Тавлидгар"
 
 #~ msgid "&Inline"
 #~ msgstr "&Inline"
-
-#~ msgid "Acce&ss:"
-#~ msgstr "Дастра&с:"
 
 #~ msgid "I&mplementation File"
 #~ msgstr "&Файли иҷрошавӣ"
@@ -5900,9 +6564,6 @@ msgstr "Тавлидгар"
 #~ msgid "Ar&guments:"
 #~ msgstr "Ар&гументҳо:"
 
-#~ msgid "All"
-#~ msgstr "Ҳама"
-
 #~ msgid "Only the following:"
 #~ msgstr "Танҳо додашуда:"
 
@@ -5981,9 +6642,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "This Project has Standard &Trunk/Branches/Tags/Directories"
 #~ msgstr "Проект имеет стандартные &Стволы(trunk)/ветки/метки/каталоги"
-
-#~ msgid "Local Directory"
-#~ msgstr "Феҳристи дохилӣ"
 
 #, fuzzy
 #~ msgid "C&heckout in:"
@@ -6267,10 +6925,6 @@ msgstr "Тавлидгар"
 #~ msgstr "Использовать &дополнительные параметры:"
 
 #, fuzzy
-#~ msgid "Con&text lines:"
-#~ msgstr "&Строки контекста:"
-
-#, fuzzy
 #~ msgid "&Init Local Repository..."
 #~ msgstr "&Создать локальное хранилище..."
 
@@ -6310,10 +6964,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "<H2>Project Packaging & Publishing</H2>"
 #~ msgstr "<H2>Публикация и распространение проекта</H2>"
-
-#, fuzzy
-#~ msgid "&Source Distribution"
-#~ msgstr "Пакет с &исходным кодом"
 
 #, fuzzy
 #~ msgid "&Use custom options"
@@ -6552,10 +7202,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "&Email:"
 #~ msgstr "&Электронная почта:"
-
-#, fuzzy
-#~ msgid "&Author:"
-#~ msgstr "&Автор:"
 
 #, fuzzy
 #~ msgid "Generate build system infrastructure"
@@ -7427,10 +8073,6 @@ msgstr "Тавлидгар"
 #~ msgstr "300"
 
 #, fuzzy
-#~ msgid "Type:"
-#~ msgstr "Тип:"
-
-#, fuzzy
 #~ msgid "Find Documentation Options"
 #~ msgstr "Настройки поиска в документации"
 
@@ -7540,10 +8182,6 @@ msgstr "Тавлидгар"
 #~ msgstr "Только когда открыто несколько файлов"
 
 #, fuzzy
-#~ msgid "Never"
-#~ msgstr "Никогда"
-
-#, fuzzy
 #~ msgid "Use Close on Hover"
 #~ msgstr "Кнопка закрытия при наведении"
 
@@ -7575,10 +8213,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "Icons"
 #~ msgstr "Нишонаҳо"
-
-#, fuzzy
-#~ msgid "Text"
-#~ msgstr "Текст"
 
 #, fuzzy
 #~ msgid "Text and icons"
@@ -8823,9 +9457,6 @@ msgstr "Тавлидгар"
 #~ msgid "View & Edit Connections"
 #~ msgstr "Отобразить и изменить соединения"
 
-#~ msgid "&Connections:"
-#~ msgstr "&Бандҳо:"
-
 #, fuzzy
 #~ msgid "&Edit Slots..."
 #~ msgstr "&Изменить слоты..."
@@ -8978,10 +9609,6 @@ msgstr "Тавлидгар"
 #~ msgstr "Разрешить подсчёт цветов трёхмерных эффектов из цвета кнопки."
 
 #, fuzzy
-#~ msgid "Light"
-#~ msgstr "Светло"
-
-#, fuzzy
 #~ msgid "Midlight"
 #~ msgstr "Полусвет"
 
@@ -8992,10 +9619,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "Dark"
 #~ msgstr "Темно"
-
-#, fuzzy
-#~ msgid "Shadow"
-#~ msgstr "Тень"
 
 #, fuzzy
 #~ msgid "Choose 3D-effect color role"
@@ -9049,10 +9672,6 @@ msgstr "Тавлидгар"
 #~ msgstr "Начать с &начала"
 
 #, fuzzy
-#~ msgid "Direction"
-#~ msgstr "Направление"
-
-#, fuzzy
 #~ msgid "Forwar&d"
 #~ msgstr "Вперё&д"
 
@@ -9072,9 +9691,6 @@ msgstr "Тавлидгар"
 
 #~ msgid "Connect current Action"
 #~ msgstr "Пайваст кардани амалиёти ҳозира"
-
-#~ msgid "Connect"
-#~ msgstr "Пайвастшавӣ"
 
 #~ msgid "Connection Details"
 #~ msgstr "Тафсилотҳои пайвастшавӣ"
@@ -9111,9 +9727,6 @@ msgstr "Тавлидгар"
 
 #~ msgid "&Delete Item"
 #~ msgstr "&Нест кардани чиз"
-
-#~ msgid "Delete item"
-#~ msgstr "Нест кардани чиз"
 
 #, fuzzy
 #~ msgid "Delete the selected item."
@@ -9188,10 +9801,6 @@ msgstr "Тавлидгар"
 #~ msgstr "&Базовый класс для шаблона:"
 
 #, fuzzy
-#~ msgid "Preferences"
-#~ msgstr "Настройки"
-
-#, fuzzy
 #~ msgid ""
 #~ "<b>Preferences</b><p>Change the preferences of Qt Designer. There is "
 #~ "always one tab with general preferences. There may be additional tabs, "
@@ -9259,10 +9868,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "Show toolbutton lab&els"
 #~ msgstr "Показывать метки к&нопок панелей инструментов"
-
-#, fuzzy
-#~ msgid "Text Labels"
-#~ msgstr "Текстовые метки"
 
 #, fuzzy
 #~ msgid "Text labels will be used in the toolbars if this is checked."
@@ -9551,10 +10156,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "The list of columns."
 #~ msgstr "Список столбцов."
-
-#, fuzzy
-#~ msgid "Edit Palette"
-#~ msgstr "Изменить палитру"
 
 #, fuzzy
 #~ msgid "Build Palette"
@@ -9882,10 +10483,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "protected"
 #~ msgstr "protected"
-
-#, fuzzy
-#~ msgid "Change slot access"
-#~ msgstr "Изменить доступность слота"
 
 #, fuzzy
 #~ msgid ""
@@ -10510,10 +11107,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "&Delete Connection"
 #~ msgstr "&Удалить соединение"
-
-#, fuzzy
-#~ msgid "Connection"
-#~ msgstr "Пайвастшавӣ"
 
 #, fuzzy
 #~ msgid "Connec&t"
@@ -12085,11 +12678,6 @@ msgstr "Тавлидгар"
 #~ msgstr "Присоединяется процесс %1"
 
 #, fuzzy
-#~ msgctxt "To start something"
-#~ msgid "Start"
-#~ msgstr "Начать"
-
-#, fuzzy
 #~ msgid "Restart the program in the debugger"
 #~ msgstr "Перезапустить приложение в отладчике"
 
@@ -12232,10 +12820,6 @@ msgstr "Тавлидгар"
 #~ "KDevelop."
 
 #, fuzzy
-#~ msgid "gdb message:\n"
-#~ msgstr "сообщение gdb:\n"
-
-#, fuzzy
 #~ msgid "The symbols gdb resolves may be suspect"
 #~ msgstr "Разобранные gdb символы могут быть только предполагаемыми"
 
@@ -12355,16 +12939,8 @@ msgstr "Тавлидгар"
 #~ msgstr "Точка наблюдения"
 
 #, fuzzy
-#~ msgid "Address"
-#~ msgstr "Адрес"
-
-#, fuzzy
 #~ msgid "Method()"
 #~ msgstr "Метод()"
-
-#, fuzzy
-#~ msgid "Condition"
-#~ msgstr "Условие"
 
 #, fuzzy
 #~ msgid "Ignore Count"
@@ -12381,10 +12957,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "Disable"
 #~ msgstr "Отключить"
-
-#, fuzzy
-#~ msgid "Enable"
-#~ msgstr "Включить"
 
 #, fuzzy
 #~ msgid "&GDB cmd:"
@@ -12698,12 +13270,6 @@ msgstr "Тавлидгар"
 
 #, fuzzy
 #~ msgctxt ""
-#~ "Breakpoint state. The 'clear ' state is appended to the other states"
-#~ msgid "clear "
-#~ msgstr "очистить "
-
-#, fuzzy
-#~ msgctxt ""
 #~ "Breakpoint state. The 'modify ' state is appended to the other states"
 #~ msgid "modify "
 #~ msgstr "изменить "
@@ -12889,11 +13455,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "Watch:"
 #~ msgstr "Наблюдение за:"
-
-#, fuzzy
-#~ msgctxt "the beginning"
-#~ msgid "Start:"
-#~ msgstr "Начать:"
 
 #, fuzzy
 #~ msgid "Amount/End address (memory/disassemble):"
@@ -14714,10 +15275,6 @@ msgstr "Тавлидгар"
 #~ msgstr "Комментарий Clearcase"
 
 #, fuzzy
-#~ msgid "Enter log message:"
-#~ msgstr "Введите сообщение для журнала:"
-
-#, fuzzy
 #~ msgid "Reserve"
 #~ msgstr "Резервировать"
 
@@ -16145,10 +16702,6 @@ msgstr "Тавлидгар"
 #~ msgstr "Создавать диаграммы классов"
 
 #, fuzzy
-#~ msgid "Generate collaboration graphs"
-#~ msgstr "Создавать диаграммы взаимодействия"
-
-#, fuzzy
 #~ msgid "Generate UML looking inheritance and colloboration diagrams"
 #~ msgstr "Создавать диаграммы классов и взаимодействия в стиле UML"
 
@@ -16287,11 +16840,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "&Remove Favorite"
 #~ msgstr "&Удалить из избранного"
-
-#, fuzzy
-#~ msgctxt "no version control system"
-#~ msgid "None"
-#~ msgstr "Отсутствует"
 
 #, fuzzy
 #~ msgid "Version Control System"
@@ -18377,9 +18925,6 @@ msgstr "Тавлидгар"
 #~ msgid "a subdirs project"
 #~ msgstr "проект с подкаталогами"
 
-#~ msgid "All Files"
-#~ msgstr "Ҳар файлҳо"
-
 #, fuzzy
 #~ msgid "Insert Existing Files"
 #~ msgstr "Добавить существующие файлы"
@@ -19366,9 +19911,6 @@ msgstr "Тавлидгар"
 #~ msgid "Force Reedit"
 #~ msgstr "Пересоздать"
 
-#~ msgid "Clean"
-#~ msgstr "Тоза кардан"
-
 #, fuzzy
 #~ msgid "Expand Subtree"
 #~ msgstr "Развернуть нижеследующее"
@@ -19566,10 +20108,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "You have to enter a service name."
 #~ msgstr "Необходимо ввести имя сервиса."
-
-#, fuzzy
-#~ msgid "This file is already in the target."
-#~ msgstr "Файл уже в цели."
 
 #, fuzzy
 #~ msgid ""
@@ -19819,9 +20357,6 @@ msgstr "Тавлидгар"
 #~ msgid "Signal Handlers"
 #~ msgstr "Обработчики событий"
 
-#~ msgid "Actions"
-#~ msgstr "Амалиёт"
-
 #~ msgid "New &Action"
 #~ msgstr "&Амалиёти нав"
 
@@ -19994,9 +20529,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "Opens a dialog to change preferences"
 #~ msgstr "Открыть диалог для изменения настроек"
-
-#~ msgid "Find"
-#~ msgstr "Ҷустуҷӯ"
 
 #, fuzzy
 #~ msgid "Find Incremental"
@@ -20251,10 +20783,6 @@ msgstr "Тавлидгар"
 #~ msgstr "Сохранить текущую форму под другим именем"
 
 #, fuzzy
-#~ msgid "Save All"
-#~ msgstr "Сохранить все"
-
-#, fuzzy
 #~ msgid "Sa&ve All"
 #~ msgstr "Сохранить &все"
 
@@ -20277,10 +20805,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "Recently Opened Projects"
 #~ msgstr "Недавно открытые проекты"
-
-#, fuzzy
-#~ msgid "Exit"
-#~ msgstr "Баромадан"
 
 #, fuzzy
 #~ msgid ""
@@ -20420,10 +20944,6 @@ msgstr "Тавлидгар"
 #~ "соединения формы. %2</p>"
 
 #, fuzzy
-#~ msgid "Tile"
-#~ msgstr "Выстроить"
-
-#, fuzzy
 #~ msgid "Tiles the windows so that they are all visible"
 #~ msgstr "Выстроить окна так, чтобы все он были видимы"
 
@@ -20452,20 +20972,12 @@ msgstr "Тавлидгар"
 #~ msgstr "Закрыть все формы"
 
 #, fuzzy
-#~ msgid "Next"
-#~ msgstr "Следующее окно"
-
-#, fuzzy
 #~ msgid "Ne&xt"
 #~ msgstr "&Следующее окно"
 
 #, fuzzy
 #~ msgid "Activates the next window"
 #~ msgstr "Перейти к следующему окну"
-
-#, fuzzy
-#~ msgid "Previous"
-#~ msgstr "Предыдущее окно"
 
 #, fuzzy
 #~ msgid "Pre&vious"
@@ -21032,9 +21544,6 @@ msgstr "Тавлидгар"
 #, fuzzy
 #~ msgid "new separator"
 #~ msgstr "новый разделитель"
-
-#~ msgid "Add Menu"
-#~ msgstr "Иловаи меню"
 
 #, fuzzy
 #~ msgid "separator"
