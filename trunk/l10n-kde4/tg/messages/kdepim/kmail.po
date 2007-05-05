@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-05-04 05:46+0200\n"
+"POT-Creation-Date: 2007-05-05 05:45+0200\n"
 "PO-Revision-Date: 2005-09-17 13:29+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -536,8 +536,8 @@ msgstr "&Филтратсия"
 msgid "<none>"
 msgstr "<none>"
 
-#: accountdialog.cpp:1496 accountdialog.cpp:1503 kmfoldercachedimap.cpp:226
-#: kmfoldercachedimap.cpp:1954 kmfolderimap.cpp:229 kmfolderimap.cpp:918
+#: accountdialog.cpp:1496 accountdialog.cpp:1503 kmfoldercachedimap.cpp:244
+#: kmfoldercachedimap.cpp:2059 kmfolderimap.cpp:229 kmfolderimap.cpp:918
 #: kmkernel.cpp:1220 subscriptiondialog.cpp:171
 msgid "inbox"
 msgstr "Воридшаванда"
@@ -3149,7 +3149,7 @@ msgid "Connecting to server %1, please wait..."
 msgstr "Васл кардан ба сервери %1, лутфан интизор шавед..."
 
 #: folderdiaacltab.cpp:475 folderdiaquotatab.cpp:140
-#: kmfoldercachedimap.cpp:742
+#: kmfoldercachedimap.cpp:769
 #, qt-format
 msgid "Error connecting to server %1"
 msgstr "Хатогии васл кардан ба сервери %1"
@@ -6205,11 +6205,11 @@ msgstr "<qt>Хатои эҷод кардани файл<b>%1</b>:<br>%2</qt>"
 msgid "Failed to create folder"
 msgstr "Натавонистам папка эҷод кунам"
 
-#: kmfoldercachedimap.cpp:112
+#: kmfoldercachedimap.cpp:121
 msgid "Troubleshooting IMAP Cache"
 msgstr "Барқарор кардани кеши IMAP"
 
-#: kmfoldercachedimap.cpp:121
+#: kmfoldercachedimap.cpp:130
 #, fuzzy
 msgid ""
 "<p><b>Troubleshooting the IMAP cache.</b></p><p>If you have problems with "
@@ -6226,40 +6226,40 @@ msgstr ""
 "тағйиротҳое, ки дар папкаи локалӣ ва зерпапкаҳои он карда буд, нест хоҳанд "
 "шуд.</p>"
 
-#: kmfoldercachedimap.cpp:135
+#: kmfoldercachedimap.cpp:144
 msgid "Rebuild &Index"
 msgstr "Аз нав тартиб додани &индекс"
 
-#: kmfoldercachedimap.cpp:140
+#: kmfoldercachedimap.cpp:149
 msgid "Scope:"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:143
+#: kmfoldercachedimap.cpp:152
 #, fuzzy
 msgid "Only current folder"
 msgstr "Доиравӣ аз рӯи папкаи ҷорӣ"
 
-#: kmfoldercachedimap.cpp:144
+#: kmfoldercachedimap.cpp:153
 #, fuzzy
 msgid "Current folder and all subfolders"
 msgstr "Папкаи &IMAP дорои зерпапкаи зерин аст:"
 
-#: kmfoldercachedimap.cpp:145
+#: kmfoldercachedimap.cpp:154
 #, fuzzy
 msgid "All folders of this account"
 msgstr "Папкаи &IMAP дорои зерпапкаи зерин аст:"
 
-#: kmfoldercachedimap.cpp:150
+#: kmfoldercachedimap.cpp:159
 msgid "Refresh &Cache"
 msgstr "Бозсозии &кеш"
 
-#: kmfoldercachedimap.cpp:482
+#: kmfoldercachedimap.cpp:502
 msgid "You must synchronize with the server before renaming IMAP folders."
 msgstr ""
 "Барои тағйир додани номи папкаҳои IMAP, бояд дар аввал бо сервер "
 "синхронизатсия кардан лозим аст."
 
-#: kmfoldercachedimap.cpp:580
+#: kmfoldercachedimap.cpp:609
 msgid ""
 "No account setup for this folder.\n"
 "Please try running a sync before this."
@@ -6267,7 +6267,7 @@ msgstr ""
 "Папкаи додашуда қайд нашудааст.\n"
 "Дар аввал сайъ кунед бо сервер синхронизатсия кунед."
 
-#: kmfoldercachedimap.cpp:584
+#: kmfoldercachedimap.cpp:613
 #, fuzzy, qt-format
 msgid ""
 "Are you sure you want to refresh the IMAP cache of the folder %1 and all its "
@@ -6278,19 +6278,19 @@ msgstr ""
 "бозсозӣ кунед?\n"
 "Тамоми тағйиротҳое, ки дар папкаи локалӣ бо шумо иҷро шуда буд, гум мешаванд"
 
-#: kmfoldercachedimap.cpp:588 kmmainwidget.cpp:1309
+#: kmfoldercachedimap.cpp:617 kmmainwidget.cpp:1309
 msgid "Refresh IMAP Cache"
 msgstr "Бозсозии кеши IMAP "
 
-#: kmfoldercachedimap.cpp:589 kmmainwidget.cpp:1309
+#: kmfoldercachedimap.cpp:618 kmmainwidget.cpp:1309
 msgid "&Refresh"
 msgstr "&Бозсозӣ кардан"
 
-#: kmfoldercachedimap.cpp:612
+#: kmfoldercachedimap.cpp:644
 msgid "The index of this folder has been recreated."
 msgstr "Индекси папка нав карда шуд."
 
-#: kmfoldercachedimap.cpp:620
+#: kmfoldercachedimap.cpp:654
 #, qt-format
 msgid ""
 "Folder %1 is not in initial sync state (state was %2). Do you want to reset "
@@ -6299,112 +6299,108 @@ msgstr ""
 "Папкаи %1 синхронизатсия нашудааст (дар ҳолати %2 аст). Оё дар ҳақиқат "
 "мехоҳед онро аз рӯи нав синхронизатсия кунед?"
 
-#: kmfoldercachedimap.cpp:620
+#: kmfoldercachedimap.cpp:657
 msgid "Reset && Sync"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:640
-msgid "Synchronization skipped"
-msgstr "Синхронизатсия роҳ дода шуд"
-
-#: kmfoldercachedimap.cpp:730
+#: kmfoldercachedimap.cpp:757
 msgid "Synchronizing"
 msgstr "Синхронизатсия"
 
-#: kmfoldercachedimap.cpp:749
+#: kmfoldercachedimap.cpp:775
 #, qt-format
 msgid "Connecting to %1"
 msgstr "Пайвастшавӣ ба %1"
 
-#: kmfoldercachedimap.cpp:771
+#: kmfoldercachedimap.cpp:794
 msgid "Checking permissions"
 msgstr "Озмоиши ҳуқуқи дастрасӣ"
 
-#: kmfoldercachedimap.cpp:785
+#: kmfoldercachedimap.cpp:808
 msgid "Renaming folder"
 msgstr "Тағйири номи папка"
 
-#: kmfoldercachedimap.cpp:842
+#: kmfoldercachedimap.cpp:865
 msgid "Retrieving folderlist"
 msgstr "Қабул намудани рӯйхати папкаҳо"
 
-#: kmfoldercachedimap.cpp:846
+#: kmfoldercachedimap.cpp:869
 msgid "Error while retrieving the folderlist"
 msgstr "Хатои қабул намудани рӯйхати папкаҳо"
 
-#: kmfoldercachedimap.cpp:853
+#: kmfoldercachedimap.cpp:876
 msgid "Retrieving subfolders"
 msgstr "Қабул намудани зерпапкаҳо"
 
-#: kmfoldercachedimap.cpp:860
+#: kmfoldercachedimap.cpp:883
 msgid "Deleting folders from server"
 msgstr "Ҳузфи папка аз сервер "
 
-#: kmfoldercachedimap.cpp:875
+#: kmfoldercachedimap.cpp:898
 msgid "Retrieving message list"
 msgstr "Қабул намудани рӯйхати иттилоот"
 
-#: kmfoldercachedimap.cpp:888
+#: kmfoldercachedimap.cpp:911
 msgid "No messages to delete..."
 msgstr "Иттилоот барои ҳузф мавҷуд нест..."
 
-#: kmfoldercachedimap.cpp:899
+#: kmfoldercachedimap.cpp:922
 msgid "Expunging deleted messages"
 msgstr "Нобуд кардани иттилоотҳои ҳузфшуда"
 
-#: kmfoldercachedimap.cpp:913
+#: kmfoldercachedimap.cpp:936
 msgid "Retrieving new messages"
 msgstr "Қабул намудани иттилоотҳои нав"
 
-#: kmfoldercachedimap.cpp:925
+#: kmfoldercachedimap.cpp:948
 msgid "No new messages from server"
 msgstr "Иттилооти нав аз сервер нест"
 
-#: kmfoldercachedimap.cpp:953
+#: kmfoldercachedimap.cpp:982
 #, fuzzy
 msgid "Checking annotation support"
 msgstr "Танзими ҳуқуқи дастрасӣ"
 
-#: kmfoldercachedimap.cpp:1000
+#: kmfoldercachedimap.cpp:1033
 #, fuzzy
 msgid "Retrieving annotations"
 msgstr "Қабул намудани маълумот оиди ҳуқуқи дастрасӣ"
 
-#: kmfoldercachedimap.cpp:1022
+#: kmfoldercachedimap.cpp:1055
 #, fuzzy
 msgid "Setting annotations"
 msgstr "Танзими ҳуқуқи дастрасӣ"
 
-#: kmfoldercachedimap.cpp:1063
+#: kmfoldercachedimap.cpp:1101
 msgid "Setting permissions"
 msgstr "Танзими ҳуқуқи дастрасӣ"
 
-#: kmfoldercachedimap.cpp:1082
+#: kmfoldercachedimap.cpp:1121
 msgid "Retrieving permissions"
 msgstr "Қабул намудани маълумот оиди ҳуқуқи дастрасӣ"
 
-#: kmfoldercachedimap.cpp:1092
+#: kmfoldercachedimap.cpp:1131
 #, fuzzy
 msgid "Getting quota information"
 msgstr "Танзими ҳуқуқи дастрасӣ"
 
-#: kmfoldercachedimap.cpp:1107
+#: kmfoldercachedimap.cpp:1146
 msgid "Updating cache file"
 msgstr "Бозсозии файли кеш"
 
-#: kmfoldercachedimap.cpp:1135
+#: kmfoldercachedimap.cpp:1175
 msgid "Synchronization done"
 msgstr "Синхронизатсия хотима ёфт"
 
-#: kmfoldercachedimap.cpp:1217
+#: kmfoldercachedimap.cpp:1256
 msgid "Uploading messages to server"
 msgstr "Диҳиши иттилоот ба сервер"
 
-#: kmfoldercachedimap.cpp:1242 kmfoldercachedimap.cpp:1245
+#: kmfoldercachedimap.cpp:1283 kmfoldercachedimap.cpp:1286
 msgid "lost+found"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:1280
+#: kmfoldercachedimap.cpp:1331
 #, qt-format
 msgid ""
 "<p>There are new messages in folder <b>%1</b>, which have not been uploaded "
@@ -6413,11 +6409,11 @@ msgid ""
 "moved to <b>%2</b>to avoid data loss.</p>"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:1285
+#: kmfoldercachedimap.cpp:1336
 msgid "Insufficient access rights"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:1291
+#: kmfoldercachedimap.cpp:1343
 #, qt-format
 msgid ""
 "<p>There are new messages in this folder (%1), which have not been uploaded "
@@ -6427,58 +6423,58 @@ msgid ""
 "you want to move these messages to another folder now?</p>"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:1297 kmkernel.cpp:1640
+#: kmfoldercachedimap.cpp:1351 kmkernel.cpp:1640
 #, fuzzy
 msgid "Move"
 msgstr "&Ҷойгир кардан ба"
 
-#: kmfoldercachedimap.cpp:1297 kmkernel.cpp:1642
+#: kmfoldercachedimap.cpp:1352 kmkernel.cpp:1642
 #, fuzzy
 msgid "Do Not Move"
 msgstr "&Имзо накардан"
 
-#: kmfoldercachedimap.cpp:1299
+#: kmfoldercachedimap.cpp:1354
 #, fuzzy
 msgid "Move Messages to Folder"
 msgstr "Гузаронидани иттилоот - интихоби папка"
 
-#: kmfoldercachedimap.cpp:1324
+#: kmfoldercachedimap.cpp:1385
 #, qt-format
 msgid ""
 "<p>Your access rights to folder <b>%1</b> have been restricted, it will no "
 "longer be possible to add messages to this folder.</p>"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:1326
+#: kmfoldercachedimap.cpp:1388
 msgid "Acces rights revoked"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:1329 kmfoldercachedimap.cpp:1384
+#: kmfoldercachedimap.cpp:1391 kmfoldercachedimap.cpp:1448
 msgid "No messages to upload to server"
 msgstr "Иттилоот барои ба сервер додан мавҷуд нест"
 
-#: kmfoldercachedimap.cpp:1348
+#: kmfoldercachedimap.cpp:1411
 msgid "Uploading status of messages to server"
 msgstr "Диҳиши вазъияти иттилоот ба сервер"
 
-#: kmfoldercachedimap.cpp:1425
+#: kmfoldercachedimap.cpp:1489
 msgid "Creating subfolders on server"
 msgstr "Эҷоди зерпапкаҳо ба сервер"
 
-#: kmfoldercachedimap.cpp:1483
+#: kmfoldercachedimap.cpp:1552
 msgid "Deleting removed messages from server"
 msgstr "Нобуд сохтани иттилоотҳои ҳузфшуда дар сервер"
 
-#: kmfoldercachedimap.cpp:1514
+#: kmfoldercachedimap.cpp:1588
 msgid "Checking folder validity"
 msgstr "Озмоиши бутун будани папка"
 
-#: kmfoldercachedimap.cpp:1758
+#: kmfoldercachedimap.cpp:1859
 #, fuzzy, qt-format
 msgid "Retrieving folders for namespace %1"
 msgstr "Қабул намудани рӯйхати папкаҳо"
 
-#: kmfoldercachedimap.cpp:1999
+#: kmfoldercachedimap.cpp:2108
 #, qt-format
 msgid ""
 "<qt><p>It seems that the folder <b>%1</b> was deleted. Do you want to delete "
@@ -6486,25 +6482,25 @@ msgid ""
 msgstr ""
 "<qt><p>Папкаи <b>%1</b> ҳузф шуда буд. Онро аз сервер ҳузф кунам?</p></qt>"
 
-#: kmfoldercachedimap.cpp:2275
+#: kmfoldercachedimap.cpp:2410
 msgid "Aborted"
 msgstr "Хароб гашт"
 
-#: kmfoldercachedimap.cpp:2456
+#: kmfoldercachedimap.cpp:2617
 #, qt-format
 msgid ""
 "The IMAP server %1 does not have support for IMAP annotations. The XML "
 "storage cannot be used on this server; please re-configure KMail differently."
 msgstr ""
 
-#: kmfoldercachedimap.cpp:2484
+#: kmfoldercachedimap.cpp:2657
 #, qt-format
 msgid ""
 "The IMAP server %1 does not support annotations. The XML storage cannot be "
 "used on this server, please re-configure KMail differently"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:2594
+#: kmfoldercachedimap.cpp:2802
 #, fuzzy
 msgid "Error while setting annotation: "
 msgstr "Хатогӣ ҳангоми қабул намудани маълумот оиди папка."
@@ -14339,6 +14335,9 @@ msgstr "Қабулкунанда: "
 #, fuzzy
 msgid "Has Attachment"
 msgstr "бо замимот"
+
+#~ msgid "Synchronization skipped"
+#~ msgstr "Синхронизатсия роҳ дода шуд"
 
 #, fuzzy
 #~ msgid "Remove recipient line"
