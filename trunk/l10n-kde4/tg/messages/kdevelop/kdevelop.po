@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-05-08 05:50+0200\n"
+"POT-Creation-Date: 2007-05-10 05:51+0200\n"
 "PO-Revision-Date: 2005-12-21 14:47+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: \n"
@@ -3035,6 +3035,11 @@ msgstr "Открыть недавний проект"
 msgid "Could not load project management view plugin %1."
 msgstr "Невозможно создать модуль управления проектом %1."
 
+#: lib/shell/plugincontroller.cpp:469
+#, fuzzy, qt-format
+msgid " (%1)"
+msgstr "hw %1"
+
 #: lib/shell/textdocument.cpp:141
 #, fuzzy, qt-format
 msgid ""
@@ -3612,43 +3617,48 @@ msgstr "Клиенты"
 msgid "An error occured during subversion operation"
 msgstr "Игнорировать при выполнении операций с Subversion"
 
-#: lib/plugins/projectmanagerview/projectmanagerview.cpp:123
+#: lib/plugins/projectmanagerview/projectmanagerview.cpp:107
 msgid "Project Overview"
 msgstr "Пешнамоиши лоиҳа"
 
-#: lib/plugins/projectmanagerview/projectmanagerview.cpp:135
+#: lib/plugins/projectmanagerview/projectmanagerview.cpp:119
 #, fuzzy
 msgid "Project Details"
 msgstr "Параметры проекта"
 
-#: lib/plugins/projectmanagerview/projectmanagerview.cpp:160
-#: lib/plugins/projectmanagerview/projectmanagerview.cpp:161
+#: lib/plugins/projectmanagerview/projectmanagerview.cpp:144
+#: lib/plugins/projectmanagerview/projectmanagerview.cpp:145
 #, fuzzy
 msgid "Project Manager"
 msgstr "Роҳбари лоиҳа"
 
-#: lib/plugins/projectmanagerview/projectmanagerview.cpp:164
-#: lib/plugins/projectmanagerview/projectmanagerview.cpp:166
+#: lib/plugins/projectmanagerview/projectmanagerview.cpp:148
+#: lib/plugins/projectmanagerview/projectmanagerview.cpp:150
 #, fuzzy
 msgid "Build Selected Project"
 msgstr "&Собрать проект"
 
-#: lib/plugins/projectmanagerview/projectmanagerview.cpp:167
+#: lib/plugins/projectmanagerview/projectmanagerview.cpp:151
 #, fuzzy
 msgid "<b>Build Selected Project</b><p>Builds the currently selected project."
 msgstr "<b>Закрыть проект</b><p>Закрывает текущий проект."
 
-#: lib/plugins/projectmanagerview/projecttreeview.cpp:170
+#: lib/plugins/projectmanagerview/projectmanagerview_part.cpp:164
 #, qt-format
 msgid "Folder: %1"
 msgstr "Феҳрист: %1"
 
-#: lib/plugins/projectmanagerview/projecttreeview.cpp:174
+#: lib/plugins/projectmanagerview/projectmanagerview_part.cpp:166
+#, fuzzy
+msgid "Build this project"
+msgstr "Собрать проект"
+
+#: lib/plugins/projectmanagerview/projectmanagerview_part.cpp:180
 #, qt-format
 msgid "File: %1"
 msgstr "Файл: %1"
 
-#: lib/plugins/projectmanagerview/projecttreeview.cpp:178
+#: lib/plugins/projectmanagerview/projectmanagerview_part.cpp:184
 #, fuzzy, qt-format
 msgid "Target: %1"
 msgstr "Цель: %1"
@@ -14358,10 +14368,6 @@ msgstr "Тавлидгар"
 #~ msgstr "\tсчётчик игнорирования %1"
 
 #, fuzzy
-#~ msgid "hw %1"
-#~ msgstr "hw %1"
-
-#, fuzzy
 #~ msgctxt "Breakpoint state. The 'add ' state is appended to the other states"
 #~ msgid "add "
 #~ msgstr "добавить "
@@ -19444,10 +19450,6 @@ msgstr "Тавлидгар"
 #~ "Произошла ошибка при загрузке модуля %1.\n"
 #~ "Ошибка:\n"
 #~ "%2"
-
-#, fuzzy
-#~ msgid "Build project"
-#~ msgstr "Собрать проект"
 
 #, fuzzy
 #~ msgid ""
