@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kbattleship\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-06-13 17:42+0200\n"
+"POT-Creation-Date: 2007-06-21 05:10+0200\n"
 "PO-Revision-Date: 2005-10-22 15:07+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -24,19 +24,49 @@ msgstr ""
 "X-Generator: KBabel 1.10\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: generalcontroller.cpp:47 gamechooser.cpp:312
+#: generalcontroller.cpp:47 gamechooser.cpp:314
 #, fuzzy
 #| msgid "Computer Player"
 msgid "Computer"
 msgstr "Бозингари Компютер"
 
-#: main.cpp:27
+#: main.cpp:25
 msgid "KBattleship"
 msgstr "KҶанги Киштиҳо"
 
-#: main.cpp:27
+#: main.cpp:25
 msgid "The KDE Battleship clone"
 msgstr "KDE клони Ҷанги Киштиҳо"
+
+#: simplemenu.cpp:25
+#, fuzzy
+#| msgid "S&ingle Player"
+msgid "Single player"
+msgstr "Бозингари &Ягона"
+
+#: simplemenu.cpp:26
+msgid "Host network game"
+msgstr ""
+
+#: simplemenu.cpp:27
+#, fuzzy
+#| msgid "Connect to Server"
+msgid "Connect to network game"
+msgstr "Пайвастшавӣ ба Хидматрасон"
+
+#: networkdialog.cpp:24
+#, fuzzy
+#| msgid "&Nick name:"
+msgid "&Nickname:"
+msgstr "&Ник:"
+
+#: networkdialog.cpp:37
+msgid "&Hostname:"
+msgstr ""
+
+#: networkdialog.cpp:53
+msgid "&Port:"
+msgstr "&Даргоҳ:"
 
 #: playfield.cpp:59
 msgid "Shots"
@@ -50,67 +80,87 @@ msgstr "Ба нишон расида"
 msgid "Misses"
 msgstr ""
 
-#: playfield.cpp:197
+#: playfield.cpp:195
 msgid "You win!"
 msgstr ""
 
-#: playfield.cpp:200
+#: playfield.cpp:198
 #, fuzzy
 #| msgid "You lost the game. :("
 msgid "You lose."
 msgstr "Шумо бохтан шудед :("
 
+#. i18n: tag label
+#. i18n: file kbattleship.kcfg line 9
+#: rc.cpp:3
+msgid "Default hostname for multiplayer games."
+msgstr ""
+
+#. i18n: tag label
+#. i18n: file kbattleship.kcfg line 13
+#: rc.cpp:6
+msgid "Default port for multiplayer games."
+msgstr ""
+
+#. i18n: tag label
+#. i18n: file kbattleship.kcfg line 19
+#: rc.cpp:9
+msgid "User nickname."
+msgstr ""
+
 #. i18n: tag text
 #. i18n: file kbattleshipui.rc line 6
-#: rc.cpp:3
+#: rc.cpp:12
 #, fuzzy
 msgid "&Game"
 msgstr "&Номи бозӣ:"
 
 #. i18n: tag text
 #. i18n: file kbattleshipui.rc line 10
-#: rc.cpp:6
+#: rc.cpp:15
 msgid "&Settings"
 msgstr ""
 
-#: rc.cpp:7
+#: rc.cpp:16
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Абророва Хиромон"
 
-#: rc.cpp:8
+#: rc.cpp:17
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "H_Abrorova@rambler.ru"
 
-#: gamechooser.cpp:133
+#: gamechooser.cpp:135
 msgid "Easy"
 msgstr ""
 
-#: gamechooser.cpp:136
+#: gamechooser.cpp:138
 msgid "Medium"
 msgstr ""
 
-#: gamechooser.cpp:139
+#: gamechooser.cpp:141
 msgid "Hard"
 msgstr ""
 
-#: gamechooser.cpp:190
+#: gamechooser.cpp:192
 msgid "Wait for a connection"
 msgstr ""
 
-#: gamechooser.cpp:193
+#: gamechooser.cpp:195
 #, fuzzy
 #| msgid "&Connect to server"
 msgid "Connect to a server"
 msgstr "&Пайвастшавӣ ба хидматрасон"
 
-#: gamechooser.cpp:308
-msgid "You"
-msgstr ""
+#: gamechooser.cpp:310
+#, fuzzy
+#| msgid "LAN games:"
+msgid "Local game"
+msgstr "Бозии шабакагӣ:"
 
-#: gamechooser.cpp:316
-msgid "Over the network"
+#: gamechooser.cpp:318
+msgid "Network play"
 msgstr ""
 
 #: kwelcomescreen/test.cpp:32
@@ -125,16 +175,6 @@ msgstr ""
 msgid "Test class for KWelcomeScreen"
 msgstr ""
 
-#: mainwindow.cpp:53
-#, fuzzy
-#| msgid "Start Server"
-msgid "Start Ser&ver"
-msgstr "Оғозёбии Хидматрасон"
-
-#: mainwindow.cpp:57
-msgid "&Connect"
-msgstr "&Пайвастшавӣ"
-
 #: playerentity.cpp:166
 #, qt-format
 msgid "Your opponent is now known as %1"
@@ -146,6 +186,14 @@ msgid ""
 "to the rules enforced by old clients, ships cannot be placed adjacent to one "
 "another."
 msgstr ""
+
+#, fuzzy
+#~| msgid "Start Server"
+#~ msgid "Start Ser&ver"
+#~ msgstr "Оғозёбии Хидматрасон"
+
+#~ msgid "&Connect"
+#~ msgstr "&Пайвастшавӣ"
 
 #~ msgid "     Player 1: %1     "
 #~ msgstr "     Бозигари 1: %1     "
@@ -294,9 +342,6 @@ msgstr ""
 #~ msgid "The connection broke down!"
 #~ msgstr "Пайвастшавӣ канда шудааст!"
 
-#~ msgid "Connect to Server"
-#~ msgstr "Пайвастшавӣ ба Хидматрасон"
-
 #~ msgid "Connection to client lost. Aborting the game."
 #~ msgstr "Пайвастшавӣ бо мизоҷ гум шудааст. Кандашавии бозӣ."
 
@@ -401,20 +446,11 @@ msgstr ""
 #~ msgid "Chat Dialog:"
 #~ msgstr "Муколамаи Чат:"
 
-#~ msgid "&Nick name:"
-#~ msgstr "&Ник:"
-
 #~ msgid "Enter a name that identifies you in the game"
 #~ msgstr "Номеро, ки шуморо дар бозӣ мешиносонад, ворид кунед"
 
 #~ msgid "&Server:"
 #~ msgstr "&Хидматгора:"
-
-#~ msgid "LAN games:"
-#~ msgstr "Бозии шабакагӣ:"
-
-#~ msgid "&Port:"
-#~ msgstr "&Даргоҳ:"
 
 #~ msgid "Choose a port to connect to"
 #~ msgstr "Даргоҳро барои пайвастшавӣ интихоб кунед"
@@ -463,9 +499,6 @@ msgstr ""
 
 #~ msgid "Shows all water shots"
 #~ msgstr "Ҳамаи тирпарониҳои ғалатҳоро нишон диҳед"
-
-#~ msgid "S&ingle Player"
-#~ msgstr "Бозингари &Ягона"
 
 #~ msgid "S&ingle game"
 #~ msgstr "Бозии &ягона"
