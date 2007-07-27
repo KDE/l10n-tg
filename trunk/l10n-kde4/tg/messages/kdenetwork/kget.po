@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-26 05:31+0200\n"
+"POT-Creation-Date: 2007-07-27 05:45+0200\n"
 "PO-Revision-Date: 2004-07-26 11:18+0000\n"
 "Last-Translator: Hiromon\n"
 "Language-Team:  Tajik\n"
@@ -83,6 +83,12 @@ msgid "Start KGet with drop target"
 msgstr "Оғози KGet бо мақсади кашолакунӣ"
 
 #: main.cpp:128
+#, fuzzy
+#| msgid "Start KGet with drop target"
+msgid "Start KGet with hidden main window"
+msgstr "Оғози KGet бо мақсади кашолакунӣ"
+
+#: main.cpp:129
 msgid "URL(s) to download"
 msgstr "URL(ҳо) барои боркунӣ"
 
@@ -103,14 +109,13 @@ msgstr "&Содироти Рӯйхати Интиқол..."
 msgid "Edit Groups..."
 msgstr ""
 
-#: mainwindow.cpp:120
-#, fuzzy
-msgid "Delete Group."
-msgstr "Феҳрист бо Нобаёнӣ"
+#: mainwindow.cpp:120 ui/groupseditdialog.cpp:37
+msgid "Delete Group"
+msgstr ""
 
 #: mainwindow.cpp:125
 #, fuzzy
-msgid "Rename Group."
+msgid "Rename Group"
 msgstr "Феҳрист бо Нобаёнӣ"
 
 #: mainwindow.cpp:130
@@ -183,38 +188,38 @@ msgstr "H_Abrorova@rambler.ru"
 msgid "Copy URL to Clipboard"
 msgstr "&Нусхабардории URL ба Силули Мухобиротӣ"
 
-#: mainwindow.cpp:253
+#: mainwindow.cpp:250
 #, fuzzy
 msgid ""
 "This is the first time you have run KGet.\n"
-"Would you like to use KGet as the download manager for Konqueror?"
+"Would you like to enable KGet as the download manager for Konqueror?"
 msgstr ""
 "Ин бори аввлест, ки шумо KGet-ро сар медиҳед.\n"
 "Муттаҳидгардӣ бо Konqueror-ро даргиронам?"
 
-#: mainwindow.cpp:255
+#: mainwindow.cpp:252
 #, fuzzy
 msgid "Konqueror Integration"
 msgstr "Муттаҳидгардӣ бо Konqueror"
 
-#: mainwindow.cpp:255
+#: mainwindow.cpp:252
 msgid "Enable"
 msgstr ""
 
-#: mainwindow.cpp:256
+#: mainwindow.cpp:253
 msgid "Do Not Enable"
 msgstr ""
 
-#: mainwindow.cpp:282
+#: mainwindow.cpp:284
 msgid "All Openable Files"
 msgstr ""
 
-#: mainwindow.cpp:283
+#: mainwindow.cpp:285
 #, fuzzy
 msgid "Open File"
 msgstr "Кушодани &Файл"
 
-#: mainwindow.cpp:299
+#: mainwindow.cpp:301
 #, fuzzy
 msgid ""
 "Some transfers are still running.\n"
@@ -223,38 +228,38 @@ msgstr ""
 "Баъзе вогузориҳо то ба ҳол фаъоланд.\n"
 "Дар ҳақиқат мехоҳед, ки KGet-ро хомӯш созед?"
 
-#: mainwindow.cpp:301
+#: mainwindow.cpp:303
 msgid "Confirm Quit"
 msgstr ""
 
-#: mainwindow.cpp:334
+#: mainwindow.cpp:336
 #, fuzzy
 msgid "KGet Transfer List"
 msgstr "Кушодани вогузорӣ:"
 
-#: mainwindow.cpp:336
+#: mainwindow.cpp:338
 #, fuzzy
 msgid "Export Transfers"
 msgstr "&Содироти Рӯйхати Интиқол..."
 
-#: mainwindow.cpp:366 ui/groupseditdialog.cpp:65
+#: mainwindow.cpp:368 ui/groupseditdialog.cpp:65
 #, fuzzy
 msgid "Enter Group Name"
 msgstr "Абророва Хиромон"
 
-#: mainwindow.cpp:367 ui/groupseditdialog.cpp:66
+#: mainwindow.cpp:369 ui/groupseditdialog.cpp:66
 #, fuzzy
 msgid "Group name:"
 msgstr "Абророва Хиромон"
 
-#: mainwindow.cpp:545
+#: mainwindow.cpp:547
 msgid ""
 "KGet has been temporarily disabled as download manager for Konqueror. If you "
 "want to disable it forever, go to Settings->Advanced and disable \"Use as "
 "download manager for Konqueror\"."
 msgstr ""
 
-#: mainwindow.cpp:548
+#: mainwindow.cpp:550
 #, fuzzy
 msgid "Konqueror Integration disabled"
 msgstr "Муттаҳидгардӣ бо Konqueror"
@@ -794,32 +799,42 @@ msgstr "Муколамаи Амалиёт"
 msgid "Speed"
 msgstr "Суръат"
 
-#: ui/droptarget.cpp:82
-#, fuzzy
-msgid "Hide Me"
-msgstr "Номи Файл"
-
 #: ui/droptarget.cpp:83
+#, fuzzy
+msgid "Hide Drop Target"
+msgstr "Пинҳон кардани Ҳадафи Кашолакунӣ"
+
+#: ui/droptarget.cpp:84
 msgid "Sticky"
 msgstr "Часбанда"
 
-#: ui/droptarget.cpp:254
+#: ui/droptarget.cpp:260
 #, fuzzy
 msgid "Show Main Window"
 msgstr "Тирезаи асосиро дар оғозёбӣ нишон додан"
 
-#: ui/droptarget.cpp:255
+#: ui/droptarget.cpp:261
 #, fuzzy
 msgid "Hide Main Window"
 msgstr "Пинҳонкунии Тирезаи &Номнавис"
 
-#: ui/droptarget.cpp:375
+#: ui/droptarget.cpp:338
+#, fuzzy
+#| msgid "Drop target"
+msgid "Drop Target"
+msgstr "Ҳадафи кашолакунӣ"
+
+#: ui/droptarget.cpp:339
+msgid "You can drag download links into the drop target."
+msgstr ""
+
+#: ui/droptarget.cpp:385
 msgid ""
 "Drop target has been hidden. If you want to show it again, go to Settings-"
 ">Configure KGet->Look & Feel."
 msgstr ""
 
-#: ui/droptarget.cpp:377
+#: ui/droptarget.cpp:387
 #, fuzzy
 msgid "Hiding drop target"
 msgstr "Пинҳон кардани Ҳадафи Кашолакунӣ"
@@ -830,10 +845,6 @@ msgstr ""
 
 #: ui/groupseditdialog.cpp:32
 msgid "Add Group..."
-msgstr ""
-
-#: ui/groupseditdialog.cpp:37
-msgid "Delete Group"
 msgstr ""
 
 #: ui/groupseditdialog.cpp:74
@@ -892,6 +903,14 @@ msgstr "&Интиқол"
 #, fuzzy
 msgid "Transfer details:"
 msgstr "Вогузориҳо: %1"
+
+#, fuzzy
+#~ msgid "Delete Group."
+#~ msgstr "Феҳрист бо Нобаёнӣ"
+
+#, fuzzy
+#~ msgid "Hide Me"
+#~ msgstr "Номи Файл"
 
 #~ msgid ""
 #~ "Each row consists of exactly one\n"
@@ -1558,9 +1577,6 @@ msgstr "Вогузориҳо: %1"
 
 #~ msgid "Font:"
 #~ msgstr "Ҳуруф:"
-
-#~ msgid "Drop target"
-#~ msgstr "Ҳадафи кашолакунӣ"
 
 #~ msgid "Copy file from: %1"
 #~ msgstr "Нусхабардории файл аз: %1"
