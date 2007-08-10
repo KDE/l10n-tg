@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fsview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-03 05:07+0200\n"
+"POT-Creation-Date: 2007-08-10 05:32+0200\n"
 "PO-Revision-Date: 2004-09-07 14:07+0500\n"
 "Last-Translator: Marina Kolucheva <youth_opportunities@tajik.net>\n"
 "Language-Team: \n"
@@ -20,21 +20,86 @@ msgstr ""
 "X-Generator: KBabel 1.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: main.cpp:21 fsview_part.cpp:90
-msgid "FSView"
-msgstr "FSНамуд"
+#: fsview.cpp:52 fsview.cpp:392
+msgid "Name"
+msgstr "Ном"
 
-#: main.cpp:22
-msgid "Filesystem Viewer"
-msgstr "Тасвир карданифайли системави"
+#: fsview.cpp:53
+msgid "Size"
+msgstr "Андоза"
 
-#: main.cpp:24
-msgid "(c) 2002, Josef Weidendorfer"
-msgstr "(c) 2002, Josef Weidendorfer"
+#: fsview.cpp:54
+msgid "File Count"
+msgstr "Миқдори файлҳо"
 
-#: main.cpp:28
-msgid "View filesystem starting from this folder"
-msgstr "Тасвир кардани системаи файли аз ин кааталог сар карда"
+#: fsview.cpp:55
+msgid "Directory Count"
+msgstr "Шумораи рӯйхатҳо"
+
+#: fsview.cpp:56
+msgid "Last Modified"
+msgstr "Дигаргуниҳои охирин"
+
+#: fsview.cpp:57 fsview.cpp:393
+msgid "Owner"
+msgstr "Соҳиб"
+
+#: fsview.cpp:58 fsview.cpp:394
+msgid "Group"
+msgstr "Гуруҳ"
+
+#: fsview.cpp:59 fsview.cpp:395
+msgid "Mime Type"
+msgstr "Намуди Mime"
+
+#: fsview.cpp:283
+msgid "Go To"
+msgstr "Гузаштан ба"
+
+#: fsview.cpp:285
+msgid "Go Up"
+msgstr "Гузаштан ба боло"
+
+#: fsview.cpp:287
+msgid "Stop Refresh"
+msgstr "Манъ кардани аз нав сози"
+
+#: fsview.cpp:289
+msgid "Refresh"
+msgstr "Аз нав сохтан"
+
+#: fsview.cpp:292
+#, qt-format
+msgid "Refresh '%1'"
+msgstr "Аз нав сохтан '%1'  "
+
+#: fsview.cpp:295 fsview_part.cpp:125
+msgid "Stop at Depth"
+msgstr "Истодан дар чуқури"
+
+#: fsview.cpp:297 fsview_part.cpp:122
+msgid "Stop at Area"
+msgstr " Дар минтақа истодан"
+
+#: fsview.cpp:299
+msgid "Stop at Name"
+msgstr "Истодан дар ном"
+
+#: fsview.cpp:305 fsview_part.cpp:132
+msgid "Color Mode"
+msgstr "Тартиботи ранга"
+
+#: fsview.cpp:308 fsview_part.cpp:128
+msgid "Visualization"
+msgstr "Аз назар гузарони"
+
+#: fsview.cpp:390
+msgid "None"
+msgstr "Нест"
+
+#: fsview.cpp:391
+msgid "Depth"
+msgstr "Чуқури"
 
 #: fsview_part.cpp:76
 #, fuzzy, qt-format
@@ -49,6 +114,10 @@ msgid "1 folder"
 msgid_plural "%1 folders"
 msgstr[0] "_n: 1 каталог"
 msgstr[1] "%1 каталогҳо "
+
+#: fsview_part.cpp:90 main.cpp:21
+msgid "FSView"
+msgstr "FSНамуд"
 
 #: fsview_part.cpp:91
 msgid "Filesystem Utilization Viewer"
@@ -72,22 +141,6 @@ msgstr ""
 "тартиби файлҳо дигар шавад тасвир <b> нав</b>  намешавад.</p> Барои "
 "маълумоти пурра гирифтан ба маълумотгир нигоҳ кунед. /Роҳбари FSView.</p>"
 
-#: fsview_part.cpp:122 fsview.cpp:297
-msgid "Stop at Area"
-msgstr " Дар минтақа истодан"
-
-#: fsview_part.cpp:125 fsview.cpp:295
-msgid "Stop at Depth"
-msgstr "Истодан дар чуқури"
-
-#: fsview_part.cpp:128 fsview.cpp:308
-msgid "Visualization"
-msgstr "Аз назар гузарони"
-
-#: fsview_part.cpp:132 fsview.cpp:305
-msgid "Color Mode"
-msgstr "Тартиботи ранга"
-
 #: fsview_part.cpp:138
 msgid "&FSView Manual"
 msgstr "&Роҳбарии FSНамуд"
@@ -110,6 +163,18 @@ msgstr ""
 "Бо тарзи автоматики нигоҳ надоштани FSView дар ҳолати аз берун тасвири "
 "системаи файлҳо дигар кардан. \n"
 "Барои маълумоти пурра гирифтан ба маълумотгир нигоҳ кунед/ Роҳбарии FSView."
+
+#: main.cpp:22
+msgid "Filesystem Viewer"
+msgstr "Тасвир карданифайли системави"
+
+#: main.cpp:24
+msgid "(c) 2002, Josef Weidendorfer"
+msgstr "(c) 2002, Josef Weidendorfer"
+
+#: main.cpp:28
+msgid "View filesystem starting from this folder"
+msgstr "Тасвир кардани системаи файли аз ин кааталог сар карда"
 
 #. i18n: tag Text
 #. i18n: file fsview_part.rc line 4
@@ -287,68 +352,3 @@ msgstr "Кам кардан (то %1)"
 #, qt-format
 msgid "Increment (to %1)"
 msgstr "Зиёд кардан(то %1)"
-
-#: fsview.cpp:52 fsview.cpp:392
-msgid "Name"
-msgstr "Ном"
-
-#: fsview.cpp:53
-msgid "Size"
-msgstr "Андоза"
-
-#: fsview.cpp:54
-msgid "File Count"
-msgstr "Миқдори файлҳо"
-
-#: fsview.cpp:55
-msgid "Directory Count"
-msgstr "Шумораи рӯйхатҳо"
-
-#: fsview.cpp:56
-msgid "Last Modified"
-msgstr "Дигаргуниҳои охирин"
-
-#: fsview.cpp:57 fsview.cpp:393
-msgid "Owner"
-msgstr "Соҳиб"
-
-#: fsview.cpp:58 fsview.cpp:394
-msgid "Group"
-msgstr "Гуруҳ"
-
-#: fsview.cpp:59 fsview.cpp:395
-msgid "Mime Type"
-msgstr "Намуди Mime"
-
-#: fsview.cpp:283
-msgid "Go To"
-msgstr "Гузаштан ба"
-
-#: fsview.cpp:285
-msgid "Go Up"
-msgstr "Гузаштан ба боло"
-
-#: fsview.cpp:287
-msgid "Stop Refresh"
-msgstr "Манъ кардани аз нав сози"
-
-#: fsview.cpp:289
-msgid "Refresh"
-msgstr "Аз нав сохтан"
-
-#: fsview.cpp:292
-#, qt-format
-msgid "Refresh '%1'"
-msgstr "Аз нав сохтан '%1'  "
-
-#: fsview.cpp:299
-msgid "Stop at Name"
-msgstr "Истодан дар ном"
-
-#: fsview.cpp:390
-msgid "None"
-msgstr "Нест"
-
-#: fsview.cpp:391
-msgid "Depth"
-msgstr "Чуқури"
