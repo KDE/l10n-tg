@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcminput\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-03 05:05+0200\n"
+"POT-Creation-Date: 2007-08-11 05:31+0200\n"
 "PO-Revision-Date: 2004-04-04 16:27+0500\n"
 "Last-Translator: Tolib Marupov <tolibm@yahoo.com> \n"
 "Language-Team:  Tajik\n"
@@ -543,20 +543,20 @@ msgstr ""
 msgid "Select the cursor theme you want to use:"
 msgstr "Мавзӯъи нишоннаморо, ки истифода бурдан мехоҳед, интихоб намоед:"
 
-#: core/themepage.cpp:66 xcursor/themepage.cpp:96
+#: core/themepage.cpp:66 xcursor/thememodel.cpp:66
 msgid "Name"
 msgstr "Ном"
 
-#: core/themepage.cpp:67 xcursor/themepage.cpp:97
+#: core/themepage.cpp:67 xcursor/thememodel.cpp:69
 msgid "Description"
 msgstr "Тасвир"
 
-#: core/themepage.cpp:106 xcursor/themepage.cpp:143
+#: core/themepage.cpp:106 xcursor/themepage.cpp:122
 msgid "You have to restart KDE for these changes to take effect."
 msgstr ""
 "Барои он ки ин тағиротҳо натиҷа диҳанд, шумо баяд KDE-ро аз нав оғозёбед."
 
-#: core/themepage.cpp:107 xcursor/themepage.cpp:144
+#: core/themepage.cpp:107 xcursor/themepage.cpp:123
 msgid "Cursor Settings Changed"
 msgstr "Гузоришҳои Нишоннамо Тағир ёфтаанд"
 
@@ -592,29 +592,24 @@ msgstr "Калони сафед"
 msgid "Large white cursors"
 msgstr "Нишоннамои калони сафед"
 
-#: xcursor/themepage.cpp:84
-#, fuzzy
-msgid "Select the cursor theme you want to use (hover preview to test cursor):"
-msgstr "Мавзӯъи нишоннаморо, ки истифода бурдан мехоҳед, интихоб намоед:"
+#: xcursor/legacytheme.cpp:324
+msgid "KDE Classic"
+msgstr ""
 
-#: xcursor/themepage.cpp:108
-msgid "Install New Theme..."
-msgstr "Коргузории Мавзӯи Нав..."
+#: xcursor/legacytheme.cpp:324
+msgid "The default cursor theme in KDE 2 and 3"
+msgstr ""
 
-#: xcursor/themepage.cpp:109
-msgid "Remove Theme"
-msgstr "Хориҷкунии Мавзӯъ"
-
-#: xcursor/themepage.cpp:210
+#: xcursor/themepage.cpp:201
 msgid "Drag or Type Theme URL"
 msgstr "Кашолакунӣ ё Хориҷкунии Мавзӯи URL"
 
-#: xcursor/themepage.cpp:219
+#: xcursor/themepage.cpp:212
 #, fuzzy, qt-format
 msgid "Unable to find the cursor theme archive %1."
 msgstr "Пайдокунии бойгонии %1 мавзӯъҳои нишоннамо ғайри имкон аст!"
 
-#: xcursor/themepage.cpp:222
+#: xcursor/themepage.cpp:215
 #, fuzzy, qt-format
 msgid ""
 "Unable to download the cursor theme archive; please check that the address %"
@@ -623,26 +618,35 @@ msgstr ""
 "Боркунии бойгонии мавзӯъҳои нишоннамо ғайри имкон аст! Дурустии суроғаи %1-"
 "ро санҷед."
 
-#: xcursor/themepage.cpp:231
+#: xcursor/themepage.cpp:224
 #, qt-format
 msgid "The file %1 does not appear to be a valid cursor theme archive."
 msgstr "Файли %1 ҳамчун нишоннамои дурусти бойгонии мавзӯъҳо наменамояд."
 
-#: xcursor/themepage.cpp:240
-#, qt-format
+#: xcursor/themepage.cpp:239
 msgid ""
-"<qt>Are you sure you want to remove the <strong>%1</strong> cursor theme?"
-"<br>This will delete all the files installed by this theme.</qt>"
+"<qt>You can't delete the theme you're currently using.<br>You have to switch "
+"to another theme first.</qt>"
+msgstr ""
+
+#: xcursor/themepage.cpp:245
+#, fuzzy, qt-format
+#| msgid ""
+#| "<qt>Are you sure you want to remove the <strong>%1</strong> cursor theme?"
+#| "<br>This will delete all the files installed by this theme.</qt>"
+msgid ""
+"<qt>Are you sure you want to remove the <i>%1</i> cursor theme?<br>This will "
+"delete all the files installed by this theme.</qt>"
 msgstr ""
 "<qt>Дар ҳақиқат мехоҳед, ки <strong>%1</strong> нишоннамои мавзӯъҳоро хориҷ "
 "кунед?<br>Ин ҳамаи файлҳоеро, ки аз тарафи ин мавзӯъ коргузорӣ шудаанд, "
 "нобуд месозад.</qt>"
 
-#: xcursor/themepage.cpp:246
+#: xcursor/themepage.cpp:251
 msgid "Confirmation"
 msgstr "Мувофиқаткунӣ"
 
-#: xcursor/themepage.cpp:299
+#: xcursor/themepage.cpp:308
 #, qt-format
 msgid ""
 "A theme named %1 already exists in your icon theme folder. Do you want "
@@ -651,32 +655,32 @@ msgstr ""
 "Файл бо номи %1 аллакай дар феҳристи мавзӯъҳои тасвирӣ мавҷуд аст. Оё "
 "мехоҳед, ки онро бо яке аз инҳо ҷойиваз кунед?"
 
-#: xcursor/themepage.cpp:301
+#: xcursor/themepage.cpp:312
 #, fuzzy
 msgid "Overwrite Theme?"
 msgstr "Мавзӯъҳоро рӯиҳам нависам?"
 
-#: xcursor/themepage.cpp:301
-msgid "Replace"
-msgstr ""
-
-#: xcursor/themepage.cpp:335 xcursor/themepage.cpp:482
+#: xcursor/xcursortheme.cpp:39
 msgid "No description available"
 msgstr "Ягон шарҳдиҳии дастрас нест"
 
-#: xcursor/themepage.cpp:536
-msgid "No theme"
-msgstr "Мавзӯъ нест"
-
-#: xcursor/themepage.cpp:536
-msgid "The old classic X cursors"
-msgstr "X курсори кӯҳнаи классикӣ"
-
-#: xcursor/themepage.cpp:538
 #, fuzzy
-msgid "System theme"
-msgstr "Мавзӯъ нест"
+#~ msgid ""
+#~ "Select the cursor theme you want to use (hover preview to test cursor):"
+#~ msgstr "Мавзӯъи нишоннаморо, ки истифода бурдан мехоҳед, интихоб намоед:"
 
-#: xcursor/themepage.cpp:538
-msgid "Do not change cursor theme"
-msgstr ""
+#~ msgid "Install New Theme..."
+#~ msgstr "Коргузории Мавзӯи Нав..."
+
+#~ msgid "Remove Theme"
+#~ msgstr "Хориҷкунии Мавзӯъ"
+
+#~ msgid "No theme"
+#~ msgstr "Мавзӯъ нест"
+
+#~ msgid "The old classic X cursors"
+#~ msgstr "X курсори кӯҳнаи классикӣ"
+
+#, fuzzy
+#~ msgid "System theme"
+#~ msgstr "Мавзӯъ нест"

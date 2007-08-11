@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: thesaurus_tool\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2006-12-13 08:25+0100\n"
+"POT-Creation-Date: 2007-08-11 05:35+0200\n"
 "PO-Revision-Date: 2007-08-03 08:27-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik Language\n"
@@ -18,68 +18,78 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: main.cc:86
+#: Thesaurus.cpp:90
 msgid "(No match)"
 msgstr "(Монанди надорад)"
 
-#: main.cc:99
+#: Thesaurus.cpp:102
 msgid "&Search for:"
 msgstr "&Ҷустуҷӯи :"
 
-#: main.cc:102
+#: Thesaurus.cpp:105
 msgid "S&earch"
 msgstr "Ҷу&стуҷӯ"
 
-#: main.cc:110
+#: Thesaurus.cpp:112 Thesaurus.cpp:116
+#, fuzzy
+#| msgid "Back"
+msgctxt "@action:button"
 msgid "Back"
 msgstr "Пешина"
 
-#: main.cc:114
-msgid "Forward"
-msgstr "Навбатӣ"
-
-#: main.cc:116
+#: Thesaurus.cpp:119
 msgid "Change Language..."
 msgstr "Забон Дигаргун кунед..."
 
-#: main.cc:130
+#: Thesaurus.cpp:133
 msgid "&Thesaurus"
 msgstr "&Тезаурус"
 
-#: main.cc:140
+#: Thesaurus.cpp:138
 msgid "Synonyms"
 msgstr "Синонимҳо"
 
-#: main.cc:146
+#: Thesaurus.cpp:145
 msgid "More General Words"
 msgstr "Бештар бо калимаҳои умумӣ"
 
-#: main.cc:152
+#: Thesaurus.cpp:152
 msgid "More Specific Words"
 msgstr "Бештар бо калимаҳои махсус"
 
-#: main.cc:195
-msgid "&WordNet"
+#: Thesaurus.cpp:182
+#, fuzzy
+#| msgid "&WordNet"
+msgid "&Wordnet"
 msgstr "&Шабақаи калима (WordNet)"
 
-#: main.cc:220
+#: Thesaurus.cpp:206
 msgid "&Replace with:"
 msgstr "Аз ҷое ба &ҷое гузаронед бо:"
 
-#: main.cc:284
-msgid "&Replace"
-msgstr "&Аз ҷое ба ҷое гузаронед"
-
-#: main.cc:289
+#: Thesaurus.cpp:252
+#, fuzzy
+#| msgid "&Close"
+msgctxt "@action:button Close thesaurus dialog"
 msgid "&Close"
 msgstr "&Пӯшидан"
 
-#: main.cc:337
+#: Thesaurus.cpp:264
+msgid "&Replace"
+msgstr "&Аз ҷое ба ҷое гузаронед"
+
+#: Thesaurus.cpp:276
+#, fuzzy
+#| msgid "&Replace"
+msgid "Replace Word"
+msgstr "&Аз ҷое ба ҷое гузаронед"
+
+#: Thesaurus.cpp:305
 #, qt-format
 msgid "Related Words - %1"
 msgstr "Калимаҳои алоқадор - %1"
 
-#: main.cc:462
+#: Thesaurus.cpp:419
 #, qt-format
 msgid ""
 "The thesaurus file '%1' was not found. Please use 'Change Language...' to "
@@ -88,72 +98,69 @@ msgstr ""
 "Файли луғат'%1' ёфта нашуд.Барои интихоби файли луғат'Дигаргункунии "
 "забон...'истифода баред."
 
-#: main.cc:480
-msgid "Failed to execute grep."
-msgstr "Хатогии иҷрокунии барномаи grep."
-
-#: main.cc:492
-#, qt-format
-msgid "<b>Error:</b> Failed to execute grep. Output:<br>%1"
+#: Thesaurus.cpp:439
+#, fuzzy
+#| msgid "<b>Error:</b> Failed to execute grep. Output:<br>%1"
+msgid "<b>Error:</b> Failed to execute grep."
 msgstr ""
 "<b>Хатоги::</b> Сар додани програмаи grep номумкин аст. Хабаррасони:<br>%1"
 
-#: main.cc:651
+#: Thesaurus.cpp:595
 msgid "Synonyms/Hypernyms - Ordered by Frequency"
 msgstr "Синонимҳо /гиперболҳо -ба ҷафсии такроркуни ҷойгир кардан."
 
-#: main.cc:652
+#: Thesaurus.cpp:596
 msgid "Synonyms - Ordered by Similarity of Meaning (verbs only)"
 msgstr "Синонимҳо - бо маъни ҷойгир кардан (танҳо барои феъл)"
 
-#: main.cc:653
+#: Thesaurus.cpp:597
 msgid "Antonyms - Words with Opposite Meanings"
 msgstr "Антонимҳо - калимаҳои муқобилмаъно"
 
-#: main.cc:654
+#: Thesaurus.cpp:598
 #, qt-format
 msgid "Hyponyms - ... is a (kind of) %1"
 msgstr "Гиперболҳо - ...ин(ба вуҷуд меояд аз)%1"
 
-#: main.cc:655
+#: Thesaurus.cpp:599
 #, qt-format
 msgid "Meronyms - %1 has a ..."
 msgstr "Маҷозҳо - %1 доранд...."
 
-#: main.cc:657
+#: Thesaurus.cpp:601
 #, qt-format
 msgid "Holonyms - ... has a %1"
 msgstr "Галонимҳо -... %1доранд"
 
-#: main.cc:658
+#: Thesaurus.cpp:602
 msgid "Attributes"
 msgstr "Хусусиятҳо"
 
-#: main.cc:659
+#: Thesaurus.cpp:603
 msgid "Cause To (for some verbs only)"
 msgstr "Интихоб аз(танҳо барои баъзе феълҳо)"
 
-#: main.cc:660
+#: Thesaurus.cpp:604
 msgid "Verb Entailment (for some verbs only)"
 msgstr "Шаклҳои феъл(танҳо барои баъзе фелҳо)."
 
-#: main.cc:661
+#: Thesaurus.cpp:605
 msgid "Familiarity & Polysemy Count"
 msgstr "Миқдори ҳамрешаҳои монанд"
 
-#: main.cc:663
+#: Thesaurus.cpp:607
 msgid "Verb Frames (examples of use)"
 msgstr "Гуруҳои феъл(мисолҳо барои истифода)"
 
-#: main.cc:664
+#: Thesaurus.cpp:608
 msgid "List of Compound Words"
 msgstr "Рӯйхати калимаҳои мураккаб"
 
-#: main.cc:665
+#: Thesaurus.cpp:609
 msgid "Overview of Senses"
 msgstr "Тафсири ҳис"
 
-#: main.cc:693
+#: Thesaurus.cpp:637
 msgid ""
 "<b>Error:</b> Failed to execute WordNet program 'wn'. WordNet has to be "
 "installed on your computer if you want to use it, and 'wn' has to be in your "
@@ -168,12 +175,16 @@ msgstr ""
 "~wn/\">http://www.cogsci.princeton.edu/~wn/</a>дарёфтан. Қайд кардан шарт "
 "аст ,киWordNet танҳо забони англисиро нигоҳ дорад."
 
-#: main.cc:711
-#, qt-format
-msgid "<b>Error:</b> Failed to execute WordNet program 'wn'. Output:<br>%1"
-msgstr "<b>Хатоги:</b> БарномаиWordNet 'wn'. Хабаррасонӣ:<br>%1"
-
-#: main.cc:718
+#: Thesaurus.cpp:649
 #, qt-format
 msgid "No match for '%1'."
 msgstr "Монанди ба '%1' нест."
+
+#~ msgid "Forward"
+#~ msgstr "Навбатӣ"
+
+#~ msgid "Failed to execute grep."
+#~ msgstr "Хатогии иҷрокунии барномаи grep."
+
+#~ msgid "<b>Error:</b> Failed to execute WordNet program 'wn'. Output:<br>%1"
+#~ msgstr "<b>Хатоги:</b> БарномаиWordNet 'wn'. Хабаррасонӣ:<br>%1"
