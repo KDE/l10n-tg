@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpilot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-18 05:32+0200\n"
+"POT-Creation-Date: 2007-08-20 05:32+0200\n"
 "PO-Revision-Date: 2004-10-25 15:26+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -973,11 +973,11 @@ msgstr ""
 msgid "Password invalid!"
 msgstr "Ҳимояташ бо нишон"
 
-#: conduits/keyringconduit/keyringconduit.cc:117
+#: conduits/keyringconduit/keyringconduit.cc:114
 msgid "Password invalid! Update your password in the settings dialog."
 msgstr ""
 
-#: conduits/keyringconduit/keyringconduit.cc:168
+#: conduits/keyringconduit/keyringconduit.cc:165
 msgid "Enter your Keyring password"
 msgstr ""
 
@@ -1428,7 +1428,7 @@ msgstr ""
 
 #: conduits/docconduit/kpalmdoc_dlg.cc:458
 #: conduits/docconduit/kpalmdoc_dlg.cc:503 kpilot/logWidget.cc:265
-#: kpilot/addressWidget.cc:651
+#: kpilot/addressWidget.cc:385
 #, fuzzy
 msgid "Overwrite"
 msgstr "Аз копютери персоналӣ гирифтан."
@@ -2072,11 +2072,6 @@ msgstr ""
 msgid "Changing Database Flags"
 msgstr "Дигаргунии байрақчаҳои базаи маълумотӣ"
 
-#: kpilot/todoEditor.cc:54
-#, fuzzy
-msgid "To-do Editor"
-msgstr "Муҳаррири машқҳо"
-
 #: kpilot/logWidget.cc:89
 msgid ""
 "<qt>This lists all the messages received during the current HotSync</qt>"
@@ -2538,22 +2533,26 @@ msgid ""
 "(c) 2005-2007, Jason 'vanRijn' Kasper"
 msgstr ""
 
-#: kpilot/memoWidget.cc:223
+#: kpilot/memoWidget.cc:220
+#, fuzzy
+#| msgid ""
+#| "Select the category of addresses\n"
+#| "to display here."
 msgid ""
-"Select the category of addresses\n"
+"Select the category of memos\n"
 "to display here."
 msgstr "Категорияи адресҳо барои нишондот интихоб кунед."
 
-#: kpilot/memoWidget.cc:226
+#: kpilot/memoWidget.cc:223
 msgid "Memos:"
 msgstr "Қайдҳо:"
 
-#: kpilot/memoWidget.cc:227 kpilot/todoWidget.cc:122
-#: kpilot/addressWidget.cc:201
+#: kpilot/memoWidget.cc:224 kpilot/todoWidget.cc:105
+#: kpilot/addressWidget.cc:184
 msgid "Category:"
 msgstr "Категория:"
 
-#: kpilot/memoWidget.cc:238
+#: kpilot/memoWidget.cc:235
 msgid ""
 "This list displays all the memos\n"
 "in the selected category. Click on\n"
@@ -2563,165 +2562,21 @@ msgstr ""
 " категорияи интихобшударо нишон медиҳад. Қайдро барои нишондоди мундариҷаи "
 "рост интихоб кунед."
 
-#: kpilot/memoWidget.cc:242
+#: kpilot/memoWidget.cc:239
 msgid "Memo text:"
 msgstr "Матни қайдҳо:"
 
-#: kpilot/memoWidget.cc:253
+#: kpilot/memoWidget.cc:248
 msgid "The text of the selected memo appears here."
 msgstr "Дар ин ҷо матни интихобшудаи қайдҳоро нишон медиҳад."
 
-#: kpilot/memoWidget.cc:256
-msgid "Import Memo..."
-msgstr "Импорти қайдҳо..."
-
-#: kpilot/memoWidget.cc:260
-msgid "Read a text file and add it to the Pilot's memo database."
-msgstr "Матни файлро кушода ва ба базаи қайдҳои Pilot дохил кунед"
-
-#: kpilot/memoWidget.cc:261
-msgid "<qt><i>Import is disabled by the 'internal editors' setting.</i></qt>"
-msgstr "<qt><i>Import is disabled by the 'internal editors' setting.</i></qt>"
-
-#: kpilot/memoWidget.cc:264
+#: kpilot/memoWidget.cc:250
 msgid "Export Memo..."
 msgstr "Экспорти қайдҳо..."
 
-#: kpilot/memoWidget.cc:269
+#: kpilot/memoWidget.cc:255
 msgid "Write the selected memo to a file."
 msgstr "Нигоҳ доштани қайди интихобшуда дар файл."
-
-#: kpilot/memoWidget.cc:271
-msgid "Delete Memo"
-msgstr "Тоза кардани қайд"
-
-#: kpilot/memoWidget.cc:276
-msgid "Delete the selected memo."
-msgstr "Тоза кардани қайди интихобгардида."
-
-#: kpilot/memoWidget.cc:277 kpilot/todoWidget.cc:170
-#: kpilot/addressWidget.cc:250
-msgid "<qt><i>Deleting is disabled by the 'internal editors' setting.</i></qt>"
-msgstr "<qt><i>"
-
-#: kpilot/memoWidget.cc:280
-msgid "Add Memo"
-msgstr ""
-
-#: kpilot/memoWidget.cc:283
-#, fuzzy
-msgid "Add a new memo to the database."
-msgstr "<qt>Дохил кардани машқ ба рӯйхати машқҳо</qt>"
-
-#: kpilot/memoWidget.cc:326
-msgid "Delete currently selected memo?"
-msgstr "Қайди интихобшударо тоза кардан?"
-
-#: kpilot/memoWidget.cc:327
-msgid "Delete Memo?"
-msgstr "Қайдро тоза кардан?"
-
-#: kpilot/memoWidget.cc:345
-msgid "Cannot open MemoDB to delete record."
-msgstr ""
-
-#: kpilot/memoWidget.cc:346
-#, fuzzy
-msgid "Cannot Delete Memo"
-msgstr "Тоза кардани қайд"
-
-#: kpilot/addressEditor.cc:56
-msgid "Address Editor"
-msgstr "Муаллифи адресҳо"
-
-#: kpilot/addressEditor.cc:90
-msgid "Phone"
-msgstr "Телефон"
-
-#: kpilot/addressEditor.cc:166
-msgid "Last name:"
-msgstr "Фамилия:"
-
-#: kpilot/addressEditor.cc:167
-msgid "First name:"
-msgstr "Ном:"
-
-#: kpilot/addressEditor.cc:168
-#, fuzzy
-#| msgid "Title:"
-msgctxt "Tile of the person."
-msgid "Title:"
-msgstr "Сарлавҳа:"
-
-#: kpilot/addressEditor.cc:169
-#, fuzzy
-#| msgid "Company:"
-msgctxt "Company where the person works."
-msgid "Company:"
-msgstr "Корхона:"
-
-#: kpilot/addressEditor.cc:178
-#, fuzzy
-#| msgid "Address:"
-msgctxt "Address where the person lives."
-msgid "Address:"
-msgstr "Адрес:"
-
-#: kpilot/addressEditor.cc:179
-#, fuzzy
-#| msgid "City:"
-msgctxt "City where the person lives."
-msgid "City:"
-msgstr "Шаҳр:"
-
-#: kpilot/addressEditor.cc:180
-#, fuzzy
-#| msgid "State:"
-msgctxt "State where the person lives."
-msgid "State:"
-msgstr "Штат:"
-
-#: kpilot/addressEditor.cc:181
-#, fuzzy
-#| msgid "Zip code:"
-msgctxt "Zip or postalcode of Address."
-msgid "Zip code:"
-msgstr "Индекси почта:"
-
-#: kpilot/addressEditor.cc:182
-#, fuzzy
-#| msgid "Country:"
-msgctxt "Country where the person lives"
-msgid "Country:"
-msgstr "Мамлакат:"
-
-#: kpilot/addressEditor.cc:183
-#, fuzzy
-#| msgid "Custom 1:"
-msgctxt "Custom field"
-msgid "Custom 1:"
-msgstr "Шарҳи 1:"
-
-#: kpilot/addressEditor.cc:184
-#, fuzzy
-#| msgid "Custom 2:"
-msgctxt "Custom field"
-msgid "Custom 2:"
-msgstr "Шарҳи 2:"
-
-#: kpilot/addressEditor.cc:185
-#, fuzzy
-#| msgid "Custom 3:"
-msgctxt "Custom field"
-msgid "Custom 3:"
-msgstr "Шарҳи 3:"
-
-#: kpilot/addressEditor.cc:186
-#, fuzzy
-#| msgid "Custom 4:"
-msgctxt "Custom field"
-msgid "Custom 4:"
-msgstr "Шарҳи 4:"
 
 #: kpilot/pilotComponent.cc:149
 #, fuzzy
@@ -2838,12 +2693,12 @@ msgstr ""
 msgid "Deleting Record"
 msgstr "Тоза шудани сабтҳо"
 
-#: kpilot/todoWidget.cc:120
+#: kpilot/todoWidget.cc:114
 #, fuzzy
 msgid "<qt>Select the category of to-dos to display here.</qt>"
 msgstr "<qt>Интихоб кардани категорияи машқҳо барои нишондот.</qt>"
 
-#: kpilot/todoWidget.cc:131
+#: kpilot/todoWidget.cc:121
 #, fuzzy
 msgid ""
 "<qt>This list displays all the to-dos in the selected category. Click on one "
@@ -2853,98 +2708,10 @@ msgstr ""
 "нишон медиҳад.Машқро интихоб намоед ва дар тарафи рост ахборот дар бораи у "
 "нишон медиҳад.</qt>"
 
-#: kpilot/todoWidget.cc:135
+#: kpilot/todoWidget.cc:125
 #, fuzzy
 msgid "To-do info:"
 msgstr "Ахборот дар бораи машқ:"
-
-#: kpilot/todoWidget.cc:146 kpilot/addressWidget.cc:226
-msgid "Edit Record..."
-msgstr "Дигар кардани сабт..."
-
-#: kpilot/todoWidget.cc:151
-#, fuzzy
-msgid "<qt>You can edit a to-do when it is selected.</qt>"
-msgstr "<qt>Шумо метавонед машқи интихоб шударо муҳарирӣ намоед. </qt>"
-
-#: kpilot/todoWidget.cc:152 kpilot/addressWidget.cc:231
-msgid "<qt><i>Editing is disabled by the 'internal editors' setting.</i></qt>"
-msgstr ""
-"<qt><i>Муҳарир қобилияти меҳнатии гум кардаи чанбараки дохилиро таҳрир кард"
-
-#: kpilot/todoWidget.cc:155 kpilot/addressWidget.cc:234
-msgid "New Record..."
-msgstr "Сабти нав..."
-
-#: kpilot/todoWidget.cc:159
-#, fuzzy
-msgid "<qt>Add a new to-do to the to-do list.</qt>"
-msgstr "<qt>Дохил кардани машқ ба рӯйхати машқҳо</qt>"
-
-#: kpilot/todoWidget.cc:160
-#, fuzzy
-msgid ""
-"<qt><i>Adding new to-dos is disabled by the 'internal editors' setting.</i></"
-"qt>"
-msgstr ""
-"<qt><i>Дохил кардани машқ номумкин аст бо усули нашркунандаи дохилӣ  </i></"
-"qt> "
-
-#: kpilot/todoWidget.cc:164 kpilot/addressWidget.cc:244
-msgid "Delete Record"
-msgstr "Тоза кардани сабт"
-
-#: kpilot/todoWidget.cc:169
-#, fuzzy
-msgid "<qt>Delete the selected to-do from the to-do list.</qt>"
-msgstr "<qt>Тоза кардани машқи интихобшуда аз рӯйхати машқҳо.</qt>"
-
-#: kpilot/todoWidget.cc:258
-#, fuzzy, qt-format
-msgid "There is still a to-do editing window open."
-msgid_plural "There are still %1 to-do editing windows open."
-msgstr[0] "%1 панҷараи дигаркуни адрес ҳоло ҳам кушодааст."
-msgstr[1] "%1 панҷараҳои дигаркуни адрес ҳоло ҳам кушодааст."
-
-#: kpilot/todoWidget.cc:382 kpilot/addressWidget.cc:401
-msgid "Cannot edit new records until HotSynced with Pilot."
-msgstr ""
-"Дигар кардани сабтҳои нав муқаррар карда намешавад то вақте ки "
-"синхронизатсия бо Pilot рафта истодаст."
-
-#: kpilot/todoWidget.cc:384 kpilot/todoWidget.cc:525
-#: kpilot/addressWidget.cc:403 kpilot/addressWidget.cc:536
-msgid "HotSync Required"
-msgstr "Талаб кардани синхронизатсия"
-
-#: kpilot/todoWidget.cc:427
-#, fuzzy
-msgid ""
-"You cannot add to-dos to the to-do list until you have done a HotSync at "
-"least once to retrieve the database layout from your Pilot."
-msgstr ""
-"Шумо илова кардани машқро дар руйхат наметавонед то он вақте ки машқ ба      "
-"ба  синхронизациа камаш як бор гузаронда шавад,то ки маълумот дар бораи база "
-"ё ин ки малумот аз Pilot."
-
-#: kpilot/todoWidget.cc:430
-#, fuzzy
-msgid "Cannot Add New To-do"
-msgstr "Дохил кардани машқи нав муяссар карда намешавад."
-
-#: kpilot/todoWidget.cc:523 kpilot/addressWidget.cc:534
-msgid "New records cannot be deleted until HotSynced with pilot."
-msgstr ""
-"Сабтҳои нав тоза карда намешаванд, то он вақте ки синхронизатсия бо Pilotба "
-"анҷом мерасад."
-
-#: kpilot/todoWidget.cc:530 kpilot/addressWidget.cc:541
-msgid "Delete currently selected record?"
-msgstr "Сабти интихобшударо тоза кардан?"
-
-#: kpilot/todoWidget.cc:531 kpilot/addressWidget.cc:542
-msgid "Delete Record?"
-msgstr "Сабтро тоза кардан?"
 
 #: kpilot/internalEditorAction.cc:62
 msgid "[Internal Editors]"
@@ -3735,18 +3502,11 @@ msgstr ""
 msgid "Conduit Actions"
 msgstr "Мизроб кардани канали нулевой."
 
-#: kpilot/addressWidget.cc:165
-#, qt-format
-msgid "There is still an address editing window open."
-msgid_plural "There are still %1 address editing windows open."
-msgstr[0] "Тағир додани дарачаи %1 адрес ҳоло ҳам кушодааст."
-msgstr[1] "Тағир додани дарачаи %1 адресҳо ҳоло ҳам кушодааст."
-
-#: kpilot/addressWidget.cc:199
+#: kpilot/addressWidget.cc:182
 msgid "<qt>Select the category of addresses to display here.</qt>"
 msgstr "<qt>Интихоби дараҷаи адресҳо барои тасвир кардан.</qt>"
 
-#: kpilot/addressWidget.cc:212
+#: kpilot/addressWidget.cc:194
 msgid ""
 "<qt>This list displays all the addresses in the selected category. Click on "
 "one to display it to the right.</qt>"
@@ -3755,36 +3515,18 @@ msgstr ""
 "нишон медиҳад. Адресро интихоб кунед ва аз тарафи рост маълумот дар бораи "
 "вай пайдо мешавад.</qt>"
 
-#: kpilot/addressWidget.cc:216
+#: kpilot/addressWidget.cc:198
 msgid "Address info:"
 msgstr "Ахбороти адрес:"
 
-#: kpilot/addressWidget.cc:230
-msgid "<qt>You can edit an address when it is selected.</qt>"
-msgstr ""
-"<qt>Шумо метавонед адрес ихтиро кунед дар он вақте ки он интихоб карда бошад."
-"</qt>"
-
-#: kpilot/addressWidget.cc:238
-msgid "<qt>Add a new address to the address book.</qt>"
-msgstr "<qt>Илова кардани адреси нав ба китоби суроға.</qt>"
-
-#: kpilot/addressWidget.cc:239
-msgid "<qt><i>Adding is disabled by the 'internal editors' setting.</i></qt>"
-msgstr "<qt><i>Илова карда намешавад бо ёрии 'internal editors.</i></qt>"
-
-#: kpilot/addressWidget.cc:249
-msgid "<qt>Delete the selected address from the address book.</qt>"
-msgstr "<qt>Нест кардани суроға аз китоби суроға.</qt>"
-
-#: kpilot/addressWidget.cc:253
+#: kpilot/addressWidget.cc:205
 #, fuzzy
 #| msgid "Export Memo..."
 msgctxt "Export addresses to file"
 msgid "Export..."
 msgstr "Экспорти қайдҳо..."
 
-#: kpilot/addressWidget.cc:257
+#: kpilot/addressWidget.cc:209
 #, fuzzy
 #| msgid ""
 #| "<qt>This list displays all the addresses in the selected category. Click "
@@ -3795,45 +3537,33 @@ msgstr ""
 "нишон медиҳад. Адресро интихоб кунед ва аз тарафи рост маълумот дар бораи "
 "вай пайдо мешавад.</qt>"
 
-#: kpilot/addressWidget.cc:356
+#: kpilot/addressWidget.cc:308
 #, fuzzy
 #| msgid "[unknown]"
 msgctxt "The title is inknown."
 msgid "[unknown]"
 msgstr "[номаълум]"
 
-#: kpilot/addressWidget.cc:442
-msgid ""
-"You cannot add addresses to the address book until you have done a HotSync "
-"at least once to retrieve the database layout from your Pilot."
-msgstr ""
-"Шумо наметавонед ба китоби суроға суроға илова кунед то он вақте ки "
-"синхронизация бо Pilot  тамом шавад"
-
-#: kpilot/addressWidget.cc:445
-msgid "Cannot Add New Address"
-msgstr "Иловаи адреси нав натавонистан"
-
-#: kpilot/addressWidget.cc:632
+#: kpilot/addressWidget.cc:366
 msgid "Export All Addresses"
 msgstr ""
 
-#: kpilot/addressWidget.cc:633
+#: kpilot/addressWidget.cc:367
 #, qt-format
 msgid "Export Address Category %1"
 msgstr ""
 
-#: kpilot/addressWidget.cc:649
+#: kpilot/addressWidget.cc:383
 #, fuzzy, qt-format
 msgid "The file <i>%1</i> exists. Overwrite?"
 msgstr ""
 "<qt>Матни файли <em>%1</em> аллакай вуҷуд дорад.Аз нав ӯро нависанд?</qt>"
 
-#: kpilot/addressWidget.cc:650
+#: kpilot/addressWidget.cc:384
 msgid "Overwrite File?"
 msgstr ""
 
-#: kpilot/addressWidget.cc:661
+#: kpilot/addressWidget.cc:395
 #, fuzzy, qt-format
 msgid "The file <i>%1</i> could not be opened for writing."
 msgstr ""
@@ -3850,6 +3580,226 @@ msgstr ""
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "youth_opportunities@tajik.net"
+
+#, fuzzy
+#~ msgid "To-do Editor"
+#~ msgstr "Муҳаррири машқҳо"
+
+#~ msgid "Import Memo..."
+#~ msgstr "Импорти қайдҳо..."
+
+#~ msgid "Read a text file and add it to the Pilot's memo database."
+#~ msgstr "Матни файлро кушода ва ба базаи қайдҳои Pilot дохил кунед"
+
+#~ msgid ""
+#~ "<qt><i>Import is disabled by the 'internal editors' setting.</i></qt>"
+#~ msgstr ""
+#~ "<qt><i>Import is disabled by the 'internal editors' setting.</i></qt>"
+
+#~ msgid "Delete Memo"
+#~ msgstr "Тоза кардани қайд"
+
+#~ msgid "Delete the selected memo."
+#~ msgstr "Тоза кардани қайди интихобгардида."
+
+#~ msgid ""
+#~ "<qt><i>Deleting is disabled by the 'internal editors' setting.</i></qt>"
+#~ msgstr "<qt><i>"
+
+#, fuzzy
+#~ msgid "Add a new memo to the database."
+#~ msgstr "<qt>Дохил кардани машқ ба рӯйхати машқҳо</qt>"
+
+#~ msgid "Delete currently selected memo?"
+#~ msgstr "Қайди интихобшударо тоза кардан?"
+
+#~ msgid "Delete Memo?"
+#~ msgstr "Қайдро тоза кардан?"
+
+#, fuzzy
+#~ msgid "Cannot Delete Memo"
+#~ msgstr "Тоза кардани қайд"
+
+#~ msgid "Address Editor"
+#~ msgstr "Муаллифи адресҳо"
+
+#~ msgid "Phone"
+#~ msgstr "Телефон"
+
+#~ msgid "Last name:"
+#~ msgstr "Фамилия:"
+
+#~ msgid "First name:"
+#~ msgstr "Ном:"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "Tile of the person."
+#~ msgid "Title:"
+#~ msgstr "Сарлавҳа:"
+
+#, fuzzy
+#~| msgid "Company:"
+#~ msgctxt "Company where the person works."
+#~ msgid "Company:"
+#~ msgstr "Корхона:"
+
+#, fuzzy
+#~| msgid "Address:"
+#~ msgctxt "Address where the person lives."
+#~ msgid "Address:"
+#~ msgstr "Адрес:"
+
+#, fuzzy
+#~| msgid "City:"
+#~ msgctxt "City where the person lives."
+#~ msgid "City:"
+#~ msgstr "Шаҳр:"
+
+#, fuzzy
+#~| msgid "State:"
+#~ msgctxt "State where the person lives."
+#~ msgid "State:"
+#~ msgstr "Штат:"
+
+#, fuzzy
+#~| msgid "Zip code:"
+#~ msgctxt "Zip or postalcode of Address."
+#~ msgid "Zip code:"
+#~ msgstr "Индекси почта:"
+
+#, fuzzy
+#~| msgid "Country:"
+#~ msgctxt "Country where the person lives"
+#~ msgid "Country:"
+#~ msgstr "Мамлакат:"
+
+#, fuzzy
+#~| msgid "Custom 1:"
+#~ msgctxt "Custom field"
+#~ msgid "Custom 1:"
+#~ msgstr "Шарҳи 1:"
+
+#, fuzzy
+#~| msgid "Custom 2:"
+#~ msgctxt "Custom field"
+#~ msgid "Custom 2:"
+#~ msgstr "Шарҳи 2:"
+
+#, fuzzy
+#~| msgid "Custom 3:"
+#~ msgctxt "Custom field"
+#~ msgid "Custom 3:"
+#~ msgstr "Шарҳи 3:"
+
+#, fuzzy
+#~| msgid "Custom 4:"
+#~ msgctxt "Custom field"
+#~ msgid "Custom 4:"
+#~ msgstr "Шарҳи 4:"
+
+#~ msgid "Edit Record..."
+#~ msgstr "Дигар кардани сабт..."
+
+#, fuzzy
+#~ msgid "<qt>You can edit a to-do when it is selected.</qt>"
+#~ msgstr "<qt>Шумо метавонед машқи интихоб шударо муҳарирӣ намоед. </qt>"
+
+#~ msgid ""
+#~ "<qt><i>Editing is disabled by the 'internal editors' setting.</i></qt>"
+#~ msgstr ""
+#~ "<qt><i>Муҳарир қобилияти меҳнатии гум кардаи чанбараки дохилиро таҳрир "
+#~ "кард"
+
+#~ msgid "New Record..."
+#~ msgstr "Сабти нав..."
+
+#, fuzzy
+#~ msgid "<qt>Add a new to-do to the to-do list.</qt>"
+#~ msgstr "<qt>Дохил кардани машқ ба рӯйхати машқҳо</qt>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt><i>Adding new to-dos is disabled by the 'internal editors' setting.</"
+#~ "i></qt>"
+#~ msgstr ""
+#~ "<qt><i>Дохил кардани машқ номумкин аст бо усули нашркунандаи дохилӣ  </"
+#~ "i></qt> "
+
+#~ msgid "Delete Record"
+#~ msgstr "Тоза кардани сабт"
+
+#, fuzzy
+#~ msgid "<qt>Delete the selected to-do from the to-do list.</qt>"
+#~ msgstr "<qt>Тоза кардани машқи интихобшуда аз рӯйхати машқҳо.</qt>"
+
+#, fuzzy
+#~ msgid "There is still a to-do editing window open."
+#~ msgid_plural "There are still %1 to-do editing windows open."
+#~ msgstr[0] "%1 панҷараи дигаркуни адрес ҳоло ҳам кушодааст."
+#~ msgstr[1] "%1 панҷараҳои дигаркуни адрес ҳоло ҳам кушодааст."
+
+#~ msgid "Cannot edit new records until HotSynced with Pilot."
+#~ msgstr ""
+#~ "Дигар кардани сабтҳои нав муқаррар карда намешавад то вақте ки "
+#~ "синхронизатсия бо Pilot рафта истодаст."
+
+#~ msgid "HotSync Required"
+#~ msgstr "Талаб кардани синхронизатсия"
+
+#, fuzzy
+#~ msgid ""
+#~ "You cannot add to-dos to the to-do list until you have done a HotSync at "
+#~ "least once to retrieve the database layout from your Pilot."
+#~ msgstr ""
+#~ "Шумо илова кардани машқро дар руйхат наметавонед то он вақте ки машқ "
+#~ "ба      ба  синхронизациа камаш як бор гузаронда шавад,то ки маълумот дар "
+#~ "бораи база ё ин ки малумот аз Pilot."
+
+#, fuzzy
+#~ msgid "Cannot Add New To-do"
+#~ msgstr "Дохил кардани машқи нав муяссар карда намешавад."
+
+#~ msgid "New records cannot be deleted until HotSynced with pilot."
+#~ msgstr ""
+#~ "Сабтҳои нав тоза карда намешаванд, то он вақте ки синхронизатсия бо "
+#~ "Pilotба анҷом мерасад."
+
+#~ msgid "Delete currently selected record?"
+#~ msgstr "Сабти интихобшударо тоза кардан?"
+
+#~ msgid "Delete Record?"
+#~ msgstr "Сабтро тоза кардан?"
+
+#~ msgid "There is still an address editing window open."
+#~ msgid_plural "There are still %1 address editing windows open."
+#~ msgstr[0] "Тағир додани дарачаи %1 адрес ҳоло ҳам кушодааст."
+#~ msgstr[1] "Тағир додани дарачаи %1 адресҳо ҳоло ҳам кушодааст."
+
+#~ msgid "<qt>You can edit an address when it is selected.</qt>"
+#~ msgstr ""
+#~ "<qt>Шумо метавонед адрес ихтиро кунед дар он вақте ки он интихоб карда "
+#~ "бошад.</qt>"
+
+#~ msgid "<qt>Add a new address to the address book.</qt>"
+#~ msgstr "<qt>Илова кардани адреси нав ба китоби суроға.</qt>"
+
+#~ msgid ""
+#~ "<qt><i>Adding is disabled by the 'internal editors' setting.</i></qt>"
+#~ msgstr "<qt><i>Илова карда намешавад бо ёрии 'internal editors.</i></qt>"
+
+#~ msgid "<qt>Delete the selected address from the address book.</qt>"
+#~ msgstr "<qt>Нест кардани суроға аз китоби суроға.</qt>"
+
+#~ msgid ""
+#~ "You cannot add addresses to the address book until you have done a "
+#~ "HotSync at least once to retrieve the database layout from your Pilot."
+#~ msgstr ""
+#~ "Шумо наметавонед ба китоби суроға суроға илова кунед то он вақте ки "
+#~ "синхронизация бо Pilot  тамом шавад"
+
+#~ msgid "Cannot Add New Address"
+#~ msgstr "Иловаи адреси нав натавонистан"
 
 #, fuzzy
 #~ msgid "Unable to open the %1 database on the handheld."
