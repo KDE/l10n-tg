@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-19 05:35+0200\n"
+"POT-Creation-Date: 2007-08-21 05:37+0200\n"
 "PO-Revision-Date: 2005-12-21 14:47+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: \n"
@@ -891,48 +891,79 @@ msgstr "Формы"
 msgid "Designer Layout Toolbar"
 msgstr "Нақшаи пайраҳаи асбоб"
 
-#: languages/cpp/navigationwidget.cpp:49
+#: languages/cpp/navigationwidget.cpp:75
 #, fuzzy
 msgctxt "An unknown c++ declaration that is unknown"
 msgid "Unknown"
 msgstr "&Неизвестно:"
 
-#: languages/cpp/navigationwidget.cpp:278
+#: languages/cpp/navigationwidget.cpp:243
+#: languages/cpp/navigationwidget.cpp:245
+msgid "Class"
+msgstr "Синф"
+
+#: languages/cpp/navigationwidget.cpp:249
+#, fuzzy
+msgid "Variable"
+msgstr "Переменная"
+
+#: languages/cpp/navigationwidget.cpp:253
+#, fuzzy
+#| msgid "Name&space:"
+msgid "Namespace import"
+msgstr "Фосилаи &номҳо:"
+
+#: languages/cpp/navigationwidget.cpp:255
+#, fuzzy
+#| msgid "Name&space:"
+msgid "Namespace alias"
+msgstr "Фосилаи &номҳо:"
+
+#: languages/cpp/navigationwidget.cpp:273
+#, fuzzy
+msgid "Function"
+msgstr "Функция"
+
+#: languages/cpp/navigationwidget.cpp:362
+msgid "(forward-declaration)"
+msgstr ""
+
+#: languages/cpp/navigationwidget.cpp:372
 #, fuzzy
 msgid "Container: "
 msgstr "Элемент-контейнер"
 
-#: languages/cpp/navigationwidget.cpp:283
-#, fuzzy, qt-format
-#| msgid "Acce&ss:"
-msgid "Scope: %1<br />"
-msgstr "Дастра&с:"
-
-#: languages/cpp/navigationwidget.cpp:288
-#, fuzzy, qt-format
-#| msgid "Acce&ss:"
-msgid "Access: %1<br />"
-msgstr "Дастра&с:"
-
-#: languages/cpp/navigationwidget.cpp:307
-#, qt-format
-msgid "Kind: %1 (%2)<br />"
-msgstr ""
-
-#: languages/cpp/navigationwidget.cpp:309
-#, fuzzy, qt-format
-msgid "Kind: %1<br />"
-msgstr "Элемент-контейнер"
-
-#: languages/cpp/navigationwidget.cpp:311
-#, fuzzy, qt-format
-msgid "Modifiers: %1<br />"
-msgstr "Элемент-контейнер"
-
-#: languages/cpp/navigationwidget.cpp:315
+#: languages/cpp/navigationwidget.cpp:378
 #, fuzzy
-msgid "Declaration: "
+#| msgid "Score"
+msgid "Scope: "
+msgstr "Ҳисоб"
+
+#: languages/cpp/navigationwidget.cpp:383
+#, fuzzy
+msgid "Access: "
+msgstr "&Доступ:"
+
+#: languages/cpp/navigationwidget.cpp:402
+#: languages/cpp/navigationwidget.cpp:404
+#, fuzzy
+#| msgid "&Find:"
+msgid "Kind: "
+msgstr "&Ҷустуҷӯ:"
+
+#: languages/cpp/navigationwidget.cpp:406
+#, fuzzy
+msgid "Modifiers: "
+msgstr "&Изменено:"
+
+#: languages/cpp/navigationwidget.cpp:420
+#, fuzzy
+msgid "Decl.: "
 msgstr "&Эълон:"
+
+#: languages/cpp/navigationwidget.cpp:425
+msgid "Def.: "
+msgstr ""
 
 #: languages/cpp/includepathresolver.cpp:260
 msgid ""
@@ -2127,6 +2158,24 @@ msgstr "Редактор действий"
 #, fuzzy
 msgid "Object Inspector"
 msgstr "Обозреватель объектов"
+
+#, fuzzy
+#~| msgid "Acce&ss:"
+#~ msgid "Scope: %1<br />"
+#~ msgstr "Дастра&с:"
+
+#, fuzzy
+#~| msgid "Acce&ss:"
+#~ msgid "Access: %1<br />"
+#~ msgstr "Дастра&с:"
+
+#, fuzzy
+#~ msgid "Kind: %1<br />"
+#~ msgstr "Элемент-контейнер"
+
+#, fuzzy
+#~ msgid "Modifiers: %1<br />"
+#~ msgstr "Элемент-контейнер"
 
 #, fuzzy
 #~| msgid "Internet"
@@ -3425,10 +3474,6 @@ msgstr "Обозреватель объектов"
 #, fuzzy
 #~ msgid "Directoryname"
 #~ msgstr "Феҳрист"
-
-#, fuzzy
-#~ msgid "Variable"
-#~ msgstr "Переменная"
 
 #, fuzzy
 #~ msgid "Empty name"
@@ -5417,9 +5462,6 @@ msgstr "Обозреватель объектов"
 #~ " мешавад дар вақте ки Шумо номи синф интихоб\n"
 #~ " мекунед, лекин Шумо ҳам метавонед номи унвон дигаргун кунед."
 
-#~ msgid "Class"
-#~ msgstr "Синф"
-
 #~ msgid ""
 #~ "Insert your new classname here.\n"
 #~ "You can also define template classes by specifying\n"
@@ -5429,9 +5471,6 @@ msgstr "Обозреватель объектов"
 #~ "Шумо ҳам метавонед синфҳои нусха ворид кунед, бо муайян кардани номи "
 #~ "синфи\n"
 #~ "нусха бо <params>"
-
-#~ msgid "Name&space:"
-#~ msgstr "Фосилаи &номҳо:"
 
 #~ msgid ""
 #~ "Insert a name of the namespace here.\n"
@@ -7350,10 +7389,6 @@ msgstr "Обозреватель объектов"
 #, fuzzy
 #~ msgid "Colors to Use for Version Control Feedback"
 #~ msgstr "Цвета для отметки параметров систем управления версиями"
-
-#, fuzzy
-#~ msgid "&Modified:"
-#~ msgstr "&Изменено:"
 
 #, fuzzy
 #~ msgid "Co&nflict:"
@@ -9490,9 +9525,6 @@ msgstr "Обозреватель объектов"
 #~ msgid "R&eplace:"
 #~ msgstr "&Заменить:"
 
-#~ msgid "&Find:"
-#~ msgstr "&Ҷустуҷӯ:"
-
 #, fuzzy
 #~ msgid "&Replace"
 #~ msgstr "&Заменить"
@@ -10307,10 +10339,6 @@ msgstr "Обозреватель объектов"
 #~ msgstr "Изменить имя слота"
 
 #, fuzzy
-#~ msgid "&Access:"
-#~ msgstr "&Доступ:"
-
-#, fuzzy
 #~ msgid "public"
 #~ msgstr "public"
 
@@ -10958,10 +10986,6 @@ msgstr "Обозреватель объектов"
 #~ "<b>Изменить функции</b><p>Добавить, изменить или удалить слоты или "
 #~ "функции текущей формы.</p>При удалении приёмника также будут удалены все "
 #~ "соединения с ним.</p>"
-
-#, fuzzy
-#~ msgid "Function"
-#~ msgstr "Функция"
 
 #, fuzzy
 #~ msgid "In Use"
@@ -17598,9 +17622,6 @@ msgstr "Обозреватель объектов"
 
 #~ msgid "&Method:"
 #~ msgstr "&Услуб:"
-
-#~ msgid "Score"
-#~ msgstr "Ҳисоб"
 
 #, fuzzy
 #~ msgid "S&ort by:"
