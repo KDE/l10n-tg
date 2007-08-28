@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-27 05:31+0200\n"
+"POT-Creation-Date: 2007-08-28 05:43+0200\n"
 "PO-Revision-Date: 2005-09-16 16:30+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -211,8 +211,8 @@ msgid "To:"
 msgstr "Ба кӣ:"
 
 #: alarmtext.cpp:250
-msgctxt "@info/plain"
-msgid "Copy-to in email headers"
+msgctxt "@info/plain Copy-to in email headers"
+msgid "Cc:"
 msgstr ""
 
 #: alarmtext.cpp:251
@@ -484,12 +484,11 @@ msgstr "Интихоби рӯзҳои таваллуд"
 #| "the list, or by clicking the mouse while pressing Ctrl or Shift."
 msgctxt "@info:whatsthis"
 msgid ""
-"Select birthdays to set alarms for.\n"
-"This list shows all birthdays in <application>KAddressBook</application> "
-"except those for which alarms already exist.\n"
-"\n"
-"You can select multiple birthdays at one time by dragging the mouse over the "
-"list, or by clicking the mouse while pressing Ctrl or Shift."
+"<para>Select birthdays to set alarms for.<br />This list shows all birthdays "
+"in <application>KAddressBook</application> except those for which alarms "
+"already exist.</para><para>You can select multiple birthdays at one time by "
+"dragging the mouse over the list, or by clicking the mouse while pressing "
+"Ctrl or Shift.</para>"
 msgstr ""
 "Интихоби рӯзи таваллуд барои эҷоди хотиррасонӣ.\n"
 "Ин рӯйхат тамоми рӯзҳои таваллудро ба китоби адресии KDE ғайр аз онҳое, ки "
@@ -546,10 +545,10 @@ msgctxt "@info"
 msgid "Error reading address book"
 msgstr "Хатои боз кардани китоби адресӣ"
 
-#: birthdaymodel.cpp:113 eventlistmodel.cpp:315
+#: birthdaymodel.cpp:113
 #, fuzzy
 #| msgid "Name"
-msgctxt "@title:column"
+msgctxt "@title:column Name of person"
 msgid "Name"
 msgstr "Ном"
 
@@ -598,7 +597,7 @@ msgstr "Демони соати зангдори рӯимизӣ ёфт нашу�
 #, qt-format
 msgctxt "@info"
 msgid ""
-"Alarms will be disabled if you stop <application>KAlarm</application>.\n"
+"Alarms will be disabled if you stop <application>KAlarm</application>.<br />"
 "(Installation or configuration error: <command>%1</command> cannot locate "
 "<command>%2</command> executable.)"
 msgstr ""
@@ -610,28 +609,26 @@ msgstr ""
 #| "Failed to register with Alarm Daemon (%1)"
 msgctxt "@info"
 msgid ""
-"Cannot enable alarms:\n"
-"Failed to register with <application>Alarm Daemon</application> (<command>%"
-"1</command>)"
+"Cannot enable alarms:<br />Failed to register with <application>Alarm "
+"Daemon</application> (<command>%1</command>)"
 msgstr ""
 "Наметавонам хотиррасониро фаъол созам:\n"
 "ба демони соати зангдори рӯимизӣ, васл кардан имконпазир нест (%1)"
 
-#: daemon.cpp:308
+#: daemon.cpp:309
 #, fuzzy, qt-format
 #| msgid ""
 #| "Cannot enable alarms:\n"
 #| "Failed to start Alarm Daemon (%1)"
 msgctxt "@info"
 msgid ""
-"Cannot enable alarms:\n"
-"Failed to start <application>Alarm Daemon</application> (<command>%1</"
-"command>)"
+"Cannot enable alarms:<br />Failed to start <application>Alarm Daemon</"
+"application> (<command>%1</command>)"
 msgstr ""
 "Наметавонам хотиррасониро фаъол созам:\n"
 "демони соати зангдори рӯимизиро ба кор сар додан имконпазир нест (%1)"
 
-#: daemon.cpp:794
+#: daemon.cpp:795
 #, fuzzy
 #| msgid "Enable &Alarms"
 msgctxt "@action"
@@ -1568,8 +1565,15 @@ msgctxt "@title:column"
 msgid "Message, File or Command"
 msgstr "Хабар, файл ё дастур"
 
+#: eventlistmodel.cpp:315
+#, fuzzy
+#| msgid "Name"
+msgctxt "@title:column Template name"
+msgid "Name"
+msgstr "Ном"
+
 #: eventlistmodel.cpp:579 eventlistmodel.cpp:616
-msgctxt "@info"
+msgctxt "@info Alarm never occurs"
 msgid "Never"
 msgstr ""
 
@@ -1980,8 +1984,7 @@ msgstr "Ғайри&фаъол сохтан"
 #| "Failed to start Alarm Daemon (%1)"
 msgctxt "@info"
 msgid ""
-"Unable to start <application>KMail</application>\n"
-"(<message>%1</message>)"
+"Unable to start <application>KMail</application><br />(<message>%1</message>)"
 msgstr ""
 "Наметавонам хотиррасониро фаъол созам:\n"
 "демони соати зангдори рӯимизиро ба кор сар додан имконпазир нест (%1)"
@@ -2028,7 +2031,7 @@ msgctxt "Name of the weekday"
 msgid "Sunday"
 msgstr "Навозиши садо"
 
-#: kalarmapp.cpp:322
+#: kalarmapp.cpp:321
 #, fuzzy, qt-format
 #| msgid "%1 incompatible with %2"
 msgctxt "@info:shell"
@@ -2036,55 +2039,55 @@ msgid ""
 "<icode>%1</icode>, <icode>%2</icode>, <icode>%3</icode> mutually exclusive"
 msgstr "%1 бо %2 номувофиқ аст"
 
-#: kalarmapp.cpp:354
+#: kalarmapp.cpp:353
 #, qt-format
 msgctxt "@info:shell"
 msgid ""
 "<icode>%1</icode>: Event <resource>%2</resource> not found, or not editable"
 msgstr ""
 
-#: kalarmapp.cpp:386 kalarmapp.cpp:388 kalarmapp.cpp:398 kalarmapp.cpp:487
-#: kalarmapp.cpp:489 kalarmapp.cpp:498 kalarmapp.cpp:569 kalarmapp.cpp:571
-#: kalarmapp.cpp:573 kalarmapp.cpp:589 kalarmapp.cpp:599 kalarmapp.cpp:602
-#: kalarmapp.cpp:604
+#: kalarmapp.cpp:385 kalarmapp.cpp:387 kalarmapp.cpp:397 kalarmapp.cpp:486
+#: kalarmapp.cpp:488 kalarmapp.cpp:497 kalarmapp.cpp:568 kalarmapp.cpp:570
+#: kalarmapp.cpp:572 kalarmapp.cpp:588 kalarmapp.cpp:598 kalarmapp.cpp:601
+#: kalarmapp.cpp:603
 #, fuzzy, qt-format
 #| msgid "%1 incompatible with %2"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> incompatible with <icode>%2</icode>"
 msgstr "%1 бо %2 номувофиқ аст"
 
-#: kalarmapp.cpp:390
+#: kalarmapp.cpp:389
 #, fuzzy, qt-format
 #| msgid "message incompatible with %1"
 msgctxt "@info:shell"
 msgid "message incompatible with <icode>%1</icode>"
 msgstr "иттилоот бо %1 номувофиқ аст"
 
-#: kalarmapp.cpp:420
+#: kalarmapp.cpp:419
 #, fuzzy, qt-format
 #| msgid "%1: invalid email address"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode>: invalid email address"
 msgstr "%1: хатогӣ дар адреси почтаи электронӣ"
 
-#: kalarmapp.cpp:438 kalarmapp.cpp:440 kalarmapp.cpp:442 kalarmapp.cpp:444
-#: kalarmapp.cpp:507 kalarmapp.cpp:557 kalarmapp.cpp:559 kalarmapp.cpp:634
+#: kalarmapp.cpp:437 kalarmapp.cpp:439 kalarmapp.cpp:441 kalarmapp.cpp:443
+#: kalarmapp.cpp:506 kalarmapp.cpp:556 kalarmapp.cpp:558 kalarmapp.cpp:633
 #, fuzzy, qt-format
 #| msgid "%1 incompatible with %2"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> requires <icode>%2</icode>"
 msgstr "%1 бо %2 номувофиқ аст"
 
-#: kalarmapp.cpp:461 kalarmapp.cpp:471 kalarmapp.cpp:478 kalarmapp.cpp:504
-#: kalarmapp.cpp:518 kalarmapp.cpp:534 kalarmapp.cpp:580 kalarmapp.cpp:622
-#: kalarmapp.cpp:631
+#: kalarmapp.cpp:460 kalarmapp.cpp:470 kalarmapp.cpp:477 kalarmapp.cpp:503
+#: kalarmapp.cpp:517 kalarmapp.cpp:533 kalarmapp.cpp:579 kalarmapp.cpp:621
+#: kalarmapp.cpp:630
 #, fuzzy, qt-format
 #| msgid "Invalid %1 parameter"
 msgctxt "@info:shell"
 msgid "Invalid <icode>%1</icode> parameter"
 msgstr "Параметри %1 нодуруст аст"
 
-#: kalarmapp.cpp:520 kalarmapp.cpp:536 kalarmapp.cpp:614
+#: kalarmapp.cpp:519 kalarmapp.cpp:535 kalarmapp.cpp:613
 #, fuzzy, qt-format
 #| msgid "Invalid %1 parameter for date-only alarm"
 msgctxt "@info:shell"
@@ -2092,14 +2095,14 @@ msgid "Invalid <icode>%1</icode> parameter for date-only alarm"
 msgstr ""
 "Параметри нодурусти %1 барои хотиррасонӣ ғайри ишора намудани муддат аст"
 
-#: kalarmapp.cpp:524
+#: kalarmapp.cpp:523
 #, fuzzy, qt-format
 #| msgid "%1 incompatible with %2"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> earlier than <icode>%2</icode>"
 msgstr "%1 бо %2 номувофиқ аст"
 
-#: kalarmapp.cpp:543
+#: kalarmapp.cpp:542
 #, qt-format
 msgctxt "@info:shell"
 msgid ""
@@ -2107,21 +2110,21 @@ msgid ""
 "longer than <icode>%3</icode> interval"
 msgstr ""
 
-#: kalarmapp.cpp:585
+#: kalarmapp.cpp:584
 #, fuzzy, qt-format
 #| msgid "%1 incompatible with %2"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> requires <icode>%2</icode> or <icode>%3</icode>"
 msgstr "%1 бо %2 номувофиқ аст"
 
-#: kalarmapp.cpp:591
+#: kalarmapp.cpp:590
 #, qt-format
 msgctxt "@info:shell"
 msgid ""
 "<icode>%1</icode> requires speech synthesis to be configured using KTTSD"
 msgstr ""
 
-#: kalarmapp.cpp:719
+#: kalarmapp.cpp:718
 #, fuzzy, qt-format
 #| msgid ": option(s) only valid with a message/%1/%2"
 msgctxt "@info:shell"
@@ -2129,7 +2132,7 @@ msgid ""
 ": option(s) only valid with a message/<icode>%1</icode>/<icode>%2</icode>"
 msgstr ": интихобот, танҳо бо иттилооти/%1/%2 дастрас аст"
 
-#: kalarmapp.cpp:739
+#: kalarmapp.cpp:738
 #, fuzzy
 #| msgid ""
 #| "\n"
@@ -2143,7 +2146,7 @@ msgstr ""
 "Параметри --help-ро барои қабул намудани рӯйхати параметрҳои дастрасии сатри "
 "дастурӣ, истифода кунед.\n"
 
-#: kalarmapp.cpp:811
+#: kalarmapp.cpp:810
 #, fuzzy
 #| msgid ""
 #| "Quitting will disable alarms\n"
@@ -2155,20 +2158,20 @@ msgstr ""
 "Баъди баромадан аз барнома, хотиррасонӣ намоиш нахоҳад шуд\n"
 "(агар тамоми тирезаҳои хотиррасонӣ низ ҳам пӯшида шуда бошанд)."
 
-#: kalarmapp.cpp:1764
+#: kalarmapp.cpp:1763
 #, fuzzy
 msgctxt "@info"
 msgid "Error creating temporary script file"
 msgstr "Хатои талаби KMail"
 
-#: kalarmapp.cpp:1856
+#: kalarmapp.cpp:1855
 #, fuzzy
 #| msgid "Pre-alarm action:"
 msgctxt "@info"
 msgid "Pre-alarm action:"
 msgstr "Амали пешакӣ:"
 
-#: kalarmapp.cpp:1861
+#: kalarmapp.cpp:1860
 #, fuzzy
 #| msgid "Post-alarm action:"
 msgctxt "@info"
@@ -2195,84 +2198,85 @@ msgid "sent-mail"
 msgstr "&Sendmail"
 
 #: kamail.cpp:117
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "Cannot enable alarms:\n"
+#| "Failed to start Alarm Daemon (%1)"
 msgctxt "@info"
 msgid ""
-"Invalid 'From' email address.\n"
-"<application>KMail</application> identity <resource>%1</resource> not found."
+"Invalid 'From' email address.<br /><application>KMail</application> identity "
+"<resource>%1</resource> not found."
 msgstr ""
+"Наметавонам хотиррасониро фаъол созам:\n"
+"демони соати зангдори рӯимизиро ба кор сар додан имконпазир нест (%1)"
 
 #: kamail.cpp:126
 #, fuzzy
 msgctxt "@info"
 msgid ""
-"No 'From' email address is configured (no default <application>KMail</"
-"application> identity found)\n"
-"Please set it in <application>KMail</application> or in the "
-"<application>KAlarm</application> Preferences dialog."
+"<para>No 'From' email address is configured (no default <application>KMail</"
+"application> identity found)</para><para>Please set it in "
+"<application>KMail</application> or in the <application>KAlarm</application> "
+"Preferences dialog.</para>"
 msgstr ""
 "Адреси фиристанда танзим нашудааст.\n"
 "Онро дар танзимоти %1 сабт кунед."
 
-#: kamail.cpp:129
+#: kamail.cpp:130
 #, fuzzy
 msgctxt "@info"
 msgid ""
-"No 'From' email address is configured.\n"
-"Please set it in the KDE Control Center or in the <application>KAlarm</"
-"application> Preferences dialog."
+"<para>No 'From' email address is configured.</para><para>Please set it in "
+"the KDE Control Center or in the <application>KAlarm</application> "
+"Preferences dialog.</para>"
 msgstr ""
 "Фиристандаи танзимшудае нест.\n"
 "Онро дар маркази идоракунӣ ё дар танзимоти %1 ислоҳ кунед."
 
-#: kamail.cpp:133
+#: kamail.cpp:135
 #, fuzzy
 msgctxt "@info"
 msgid ""
-"No 'From' email address is configured.\n"
-"Please set it in the <application>KAlarm</application> Preferences dialog."
+"<para>No 'From' email address is configured.</para><para>Please set it in "
+"the <application>KAlarm</application> Preferences dialog.</para>"
 msgstr ""
 "Адреси фиристанда танзим нашудааст.\n"
 "Онро дар танзимоти %1 сабт кунед."
 
-#: kamail.cpp:160
+#: kamail.cpp:163
 #, qt-format
 msgctxt "@info"
 msgid "<command>%1</command> not found"
 msgstr ""
 
-#: kamail.cpp:259 kamail.cpp:304
+#: kamail.cpp:262 kamail.cpp:307
 msgctxt "@info"
 msgid "Error calling <application>KMail</application>"
 msgstr ""
 
-#: kamail.cpp:375
+#: kamail.cpp:378
 #, fuzzy, qt-format
 #| msgid ""
 #| "Error attaching file:\n"
 #| "%1"
 msgctxt "@info"
-msgid ""
-"Error attaching file:\n"
-"<filename>%1</filename>"
+msgid "Error attaching file: <filename>%1</filename>"
 msgstr ""
 "Хатои замимаи файл:\n"
 "%1"
 
-#: kamail.cpp:380
+#: kamail.cpp:383
 #, fuzzy, qt-format
 #| msgid ""
 #| "Attachment not found:\n"
 #| "%1"
 msgctxt "@info"
-msgid ""
-"Attachment not found:\n"
-"<filename>%1</filename>"
+msgid "Attachment not found: <filename>%1</filename>"
 msgstr ""
 "Файли замимот ёфт нашуд:\n"
 "%1"
 
-#: kamail.cpp:460
+#: kamail.cpp:463
 #, fuzzy
 #| msgid "An email has been queued to be sent by KMail"
 msgctxt "@info"
@@ -2280,21 +2284,21 @@ msgid "An email has been queued to be sent by <application>KMail</application>"
 msgstr ""
 "Мактуби электронӣ дар навбати KMail барои фиристодан ҷойгир карда шудааст"
 
-#: kamail.cpp:461
+#: kamail.cpp:464
 #, fuzzy
 #| msgid "An email has been queued to be sent"
 msgctxt "@info"
 msgid "An email has been queued to be sent"
 msgstr "Мактуби электронӣ дар навбат барои фиристодан ҷойгир карда шудааст"
 
-#: kamail.cpp:743
+#: kamail.cpp:746
 #, fuzzy
 #| msgid "Failed to send email"
 msgctxt "@info"
 msgid "Failed to send email"
 msgstr "Хатои фиристодани почтаи электорнӣ"
 
-#: kamail.cpp:744
+#: kamail.cpp:747
 #, qt-format
 msgctxt "@info"
 msgid ""
@@ -2362,7 +2366,7 @@ msgstr "&Барҳам додан агар дертар аз"
 #: latecancel.cpp:75
 #, fuzzy
 #| msgid "Enter how late will cause the alarm to be canceled"
-msgctxt "@label:whatsthis"
+msgctxt "@info:whatsthis"
 msgid "Enter how late will cause the alarm to be canceled"
 msgstr "Вақтро ворид кунед, ки дар муддати он хотиррасонӣ барҳам дода шавад"
 
@@ -2612,12 +2616,17 @@ msgid "Hide Archived Alarms"
 msgstr "Пинҳони хотиррасонии &кӯҳнашуда"
 
 #: mainwindow.cpp:357
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "Failed to save calendar to\n"
+#| "'%1'"
 msgctxt "@info"
 msgid ""
-"Failure to create menus\n"
-"(perhaps <filename>%1</filename> missing or corrupted)"
+"Failure to create menus (perhaps <filename>%1</filename> missing or "
+"corrupted)"
 msgstr ""
+"Натавонистам тақвимро дар \n"
+"'%1' нигоҳ дорам"
 
 #: mainwindow.cpp:388
 #, fuzzy
@@ -2964,7 +2973,7 @@ msgstr "Боздоштани навозиши садо"
 #, fuzzy
 #| msgid "An email has been queued to be sent by KMail"
 msgctxt "@info:tooltip Locate this email in KMail"
-msgid "Locate in <application>KMail<application>"
+msgid "Locate in <application>KMail</application>"
 msgstr ""
 "Мактуби электронӣ дар навбати KMail барои фиристодан ҷойгир карда шудааст"
 
@@ -6022,7 +6031,7 @@ msgstr "Намоиши танзимот"
 
 #: resourceconfigdialog.cpp:62
 #, fuzzy
-msgctxt "@label:textbox"
+msgctxt "@label:textbox Resource name"
 msgid "Name:"
 msgstr "Ном"
 
@@ -6148,9 +6157,9 @@ msgstr "Таъғири қолиби хотиррасонии интихобшу�
 #: resourceselector.cpp:107
 msgctxt "@info:whatsthis"
 msgid ""
-"Remove the highlighted resource from the list.\n"
-"The resource itself is left intact, and may subsequently be reinstated in "
-"the list if desired."
+"<para>Remove the highlighted resource from the list.</para><para>The "
+"resource itself is left intact, and may subsequently be reinstated in the "
+"list if desired.</para>"
 msgstr ""
 
 #: resourceselector.cpp:131
@@ -6351,7 +6360,7 @@ msgstr ""
 
 #: sounddlg.cpp:104
 #, fuzzy
-msgctxt "@title:group"
+msgctxt "@title:group Sound volume"
 msgid "Volume"
 msgstr "Сабт кардани баландӣ"
 
