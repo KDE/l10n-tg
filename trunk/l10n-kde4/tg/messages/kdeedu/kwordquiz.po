@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwordquiz\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-31 05:52+0200\n"
+"POT-Creation-Date: 2007-09-01 05:38+0200\n"
 "PO-Revision-Date: 2005-09-23 17:34+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -30,7 +30,7 @@ msgstr "Комбинатсияи тугмачаҳо"
 msgid "Character"
 msgstr "Аломат"
 
-#: prefcharacter.cpp:55
+#: prefcharacter.cpp:55 kwordquiz.cpp:412
 #, fuzzy, qt-format
 msgid "Special Character %1"
 msgstr "Аломатҳои махсус 1"
@@ -65,7 +65,7 @@ msgstr "Ҳисобот"
 msgid "&Undo Sort"
 msgstr "&Бе кор кардани мураттабсозӣ"
 
-#: kwqtableview.cpp:340 kwordquiz.cpp:85 kwordquiz.cpp:950
+#: kwqtableview.cpp:340 kwordquiz.cpp:85 kwordquiz.cpp:835
 msgid "Cannot &Undo"
 msgstr "Иҷро карда &наметавонам "
 
@@ -253,7 +253,7 @@ msgstr ""
 msgid "File to open"
 msgstr "Кушодани файл"
 
-#: kwqtablemodel.cpp:170 kwordquiz.cpp:699 kwordquiz.cpp:757 kwordquiz.cpp:860
+#: kwqtablemodel.cpp:170 kwordquiz.cpp:584 kwordquiz.cpp:642 kwordquiz.cpp:745
 msgid "Untitled"
 msgstr ""
 
@@ -2023,7 +2023,7 @@ msgstr "Ивазша&ии ҷой"
 msgid "Shuffles the entries of the active vocabulary"
 msgstr "Ивазшавии ҷойи луғати фаъолро ворид намоед"
 
-#: kwordquiz.cpp:264 kwordquiz.cpp:1516
+#: kwordquiz.cpp:264 kwordquiz.cpp:1404
 msgid "Enable Leitner system"
 msgstr ""
 
@@ -2055,191 +2055,147 @@ msgstr "&Тартибот"
 msgid "Changes the mode used in quiz sessions"
 msgstr "Дигаргун кардани ҳолати истифода шуда дар санҷиши дарсҳо"
 
-#: kwordquiz.cpp:296 kwordquiz.cpp:307 kwordquiz.cpp:318 kwordquiz.cpp:329
-#: kwordquiz.cpp:340
+#: kwordquiz.cpp:298
 msgid "Selects this mode"
 msgstr "Интихоби ҳамин ҳолат"
 
-#: kwordquiz.cpp:348
+#: kwordquiz.cpp:307
 msgid "&Editor"
 msgstr "&Муҳаррир"
 
-#: kwordquiz.cpp:350
+#: kwordquiz.cpp:309
 msgid "Activates the vocabulary editor"
 msgstr "Фаъолияти луғати муҳаррир"
 
-#: kwordquiz.cpp:357
+#: kwordquiz.cpp:316
 msgid "&Flashcard"
 msgstr "&Варақа"
 
-#: kwordquiz.cpp:359
+#: kwordquiz.cpp:318
 msgid "Starts a flashcard session using the active vocabulary"
 msgstr "Варақаи дарсиро барои истифода намудан бо ёрии луғати фаъол оғоз созед"
 
-#: kwordquiz.cpp:366
+#: kwordquiz.cpp:325
 msgid "&Multiple Choice"
 msgstr "&Интихоби зиёд"
 
-#: kwordquiz.cpp:368
+#: kwordquiz.cpp:327
 msgid "Starts a multiple choice session using the active vocabulary"
 msgstr "Интихоби дарси зиёдро барои истифода бурдани луғати фаъол оғоз намоед"
 
-#: kwordquiz.cpp:375
+#: kwordquiz.cpp:334
 msgid "&Question && Answer"
 msgstr "&Савол ва ҷавоб"
 
-#: kwordquiz.cpp:376
+#: kwordquiz.cpp:335
 msgid "Q&&A"
 msgstr ""
 
-#: kwordquiz.cpp:378
+#: kwordquiz.cpp:337
 msgid "Starts a question and answer session using the active vocabulary"
 msgstr "Савол ва ҷавоби дарсро бо воситаи луғати фаъол оғоз намоед"
 
-#: kwordquiz.cpp:385
+#: kwordquiz.cpp:344
 msgid "&Check"
 msgstr "&Тафтиш"
 
-#: kwordquiz.cpp:387
+#: kwordquiz.cpp:346
 msgid "Checks your answer to this question"
 msgstr "Ҷавоб ба ин савол тафтиш карда шавад"
 
-#: kwordquiz.cpp:393
+#: kwordquiz.cpp:352
 msgid "I &Know"
 msgstr "Ман &Медонам"
 
-#: kwordquiz.cpp:395
+#: kwordquiz.cpp:354
 msgid "Counts this card as correct and shows the next card"
 msgstr "Ин кортро саҳеҳтар ҳисоб намудан ва намоиши корти навбатӣ"
 
-#: kwordquiz.cpp:401
+#: kwordquiz.cpp:360
 msgid "I &Do Not Know"
 msgstr "Ман &ин амалро иҷро намуда наметавонам"
 
-#: kwordquiz.cpp:403
+#: kwordquiz.cpp:362
 msgid "Counts this card as incorrect and shows the next card"
 msgstr "Ин кортро нодуруст ҳисоб намоед ва корти навбатиро намоиш намоед"
 
-#: kwordquiz.cpp:409
+#: kwordquiz.cpp:368
 msgid "&Hint"
 msgstr "&Ишора"
 
-#: kwordquiz.cpp:411
+#: kwordquiz.cpp:370
 msgid "Gets the next correct letter of the answer"
 msgstr "Ҷавоби дурусти мактуби ояндаро интихоб намоед"
 
-#: kwordquiz.cpp:417
+#: kwordquiz.cpp:376
 msgid "&Restart"
 msgstr "&Аз нав бор кардан"
 
-#: kwordquiz.cpp:419
+#: kwordquiz.cpp:378
 msgid "Restarts the quiz session from the beginning"
 msgstr "Санҷиши дарсро аз аввал оғоз намоед"
 
-#: kwordquiz.cpp:425
+#: kwordquiz.cpp:384
 msgid "Repeat &Errors"
 msgstr "Такрор кардани &хатоҳо"
 
-#: kwordquiz.cpp:427
+#: kwordquiz.cpp:386
 msgid "Repeats all incorrectly answered questions"
 msgstr "Ҳамаи саволҳои нодуруст ҷавоб дода шударо такрор намоед"
 
-#: kwordquiz.cpp:432
+#: kwordquiz.cpp:391
 msgid "Show Se&arch"
 msgstr ""
 
-#: kwordquiz.cpp:434
+#: kwordquiz.cpp:393
 #, fuzzy
 #| msgid "Toggles display of the toolbars"
 msgid "Toggle display of the search bar"
 msgstr "Намоиши тугмаҳо дар панели асбобҳо"
 
-#: kwordquiz.cpp:439
+#: kwordquiz.cpp:398
 msgid "Configures sound and other notifications for certain events"
 msgstr "Овоз ва дигар хабарномаро барои воқеаи муаян ташкил медиҳад"
 
-#: kwordquiz.cpp:444
+#: kwordquiz.cpp:403
 msgid "Specifies preferences for the vocabulary editor and quiz sessions"
 msgstr "Афзал донистан барои луғати муҳарир ва санҷиши дарсҳо муаян месозад"
 
-#: kwordquiz.cpp:452
-msgid "Special Character 1"
-msgstr "Аломатҳои махсус 1"
-
-#: kwordquiz.cpp:454 kwordquiz.cpp:462 kwordquiz.cpp:470 kwordquiz.cpp:478
-#: kwordquiz.cpp:486 kwordquiz.cpp:494 kwordquiz.cpp:502 kwordquiz.cpp:510
-#: kwordquiz.cpp:518
-#, fuzzy
-msgid "Insert this character"
-msgstr "Аломати %1 ворид намоед"
-
-#: kwordquiz.cpp:460
-msgid "Special Character 2"
-msgstr "Аломатҳои махсус 2"
-
-#: kwordquiz.cpp:468
-msgid "Special Character 3"
-msgstr "Аломатҳои махсус 3"
-
-#: kwordquiz.cpp:476
-msgid "Special Character 4"
-msgstr "Аломатҳои махсус 4"
-
-#: kwordquiz.cpp:484
-msgid "Special Character 5"
-msgstr "Аломатҳои махсус 5"
-
-#: kwordquiz.cpp:492
-msgid "Special Character 6"
-msgstr "Аломатҳои махсус 6"
-
-#: kwordquiz.cpp:500
-msgid "Special Character 7"
-msgstr "Аломатҳои махсус 7"
-
-#: kwordquiz.cpp:508
-msgid "Special Character 8"
-msgstr "Аломатҳои махсус 8"
-
-#: kwordquiz.cpp:516
-msgid "Special Character 9"
-msgstr "Аломатҳои махсус 9"
-
-#: kwordquiz.cpp:541
+#: kwordquiz.cpp:426
 msgid "Toggles display of the toolbars"
 msgstr "Намоиши тугмаҳо дар панели асбобҳо"
 
-#: kwordquiz.cpp:560
+#: kwordquiz.cpp:445
 msgid "Column 1"
 msgstr "Сутун 1"
 
-#: kwordquiz.cpp:563
+#: kwordquiz.cpp:448
 msgid "Column 2"
 msgstr "Сутун 2"
 
-#: kwordquiz.cpp:595
+#: kwordquiz.cpp:480
 msgid "Enter search terms here"
 msgstr ""
 
-#: kwordquiz.cpp:598
+#: kwordquiz.cpp:483
 msgid "S&earch:"
 msgstr ""
 
-#: kwordquiz.cpp:667 kwordquiz.cpp:804 kwordquiz.cpp:851
+#: kwordquiz.cpp:552 kwordquiz.cpp:689 kwordquiz.cpp:736
 msgid "Opening file..."
 msgstr "Кушодани файл..."
 
-#: kwordquiz.cpp:678 kwordquiz.cpp:799 kwordquiz.cpp:846 kwordquiz.cpp:854
-#: kwordquiz.cpp:870 kwordquiz.cpp:888 kwordquiz.cpp:956 kwordquiz.cpp:971
-#: kwordquiz.cpp:1005 kwordquiz.cpp:1012 kwordquiz.cpp:1019 kwordquiz.cpp:1026
-#: kwordquiz.cpp:1033 kwordquiz.cpp:1040 kwordquiz.cpp:1047 kwordquiz.cpp:1054
-#: kwordquiz.cpp:1061 kwordquiz.cpp:1083 kwordquiz.cpp:1100 kwordquiz.cpp:1107
-#: kwordquiz.cpp:1114 kwordquiz.cpp:1123 kwordquiz.cpp:1131 kwordquiz.cpp:1145
-#: kwordquiz.cpp:1153 kwordquiz.cpp:1160 kwordquiz.cpp:1167 kwordquiz.cpp:1174
+#: kwordquiz.cpp:563 kwordquiz.cpp:684 kwordquiz.cpp:731 kwordquiz.cpp:739
+#: kwordquiz.cpp:755 kwordquiz.cpp:773 kwordquiz.cpp:841 kwordquiz.cpp:856
+#: kwordquiz.cpp:890 kwordquiz.cpp:897 kwordquiz.cpp:904 kwordquiz.cpp:911
+#: kwordquiz.cpp:918 kwordquiz.cpp:925 kwordquiz.cpp:932 kwordquiz.cpp:939
+#: kwordquiz.cpp:946 kwordquiz.cpp:968 kwordquiz.cpp:985 kwordquiz.cpp:992
+#: kwordquiz.cpp:999 kwordquiz.cpp:1008 kwordquiz.cpp:1016 kwordquiz.cpp:1030
+#: kwordquiz.cpp:1038 kwordquiz.cpp:1045 kwordquiz.cpp:1052 kwordquiz.cpp:1059
 msgid "Ready"
 msgstr "Тайёр шуд"
 
-#: kwordquiz.cpp:749
+#: kwordquiz.cpp:634
 #, fuzzy
 msgid ""
 "The current document has been modified.\n"
@@ -2248,31 +2204,31 @@ msgstr ""
 "Файл ҷорӣ тағйир ёфт.\n"
 "Шумо мехоҳед,ки онро нигоҳ доред?"
 
-#: kwordquiz.cpp:794
+#: kwordquiz.cpp:679
 msgid "Opening a new document window..."
 msgstr "Кушодани тирезаи ҳуҷҷати нав..."
 
-#: kwordquiz.cpp:806
+#: kwordquiz.cpp:691
 msgid "&Merge selected files with the current document"
 msgstr ""
 
-#: kwordquiz.cpp:814
+#: kwordquiz.cpp:699
 msgid "Open Vocabulary Document"
 msgstr "Кушодани ҳуҷҷати луғат"
 
-#: kwordquiz.cpp:859
+#: kwordquiz.cpp:744
 msgid "Saving file..."
 msgstr "Нигоҳ доштани файл..."
 
-#: kwordquiz.cpp:886
+#: kwordquiz.cpp:771
 msgid "Saving file with a new filename..."
 msgstr "Нигоҳ доштани файл аз номи файли нав..."
 
-#: kwordquiz.cpp:899
+#: kwordquiz.cpp:784
 msgid "Save Vocabulary Document As"
 msgstr "Нигоҳ доштани ҳуҷҷати луғат ҳамчун"
 
-#: kwordquiz.cpp:915
+#: kwordquiz.cpp:800
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>The file<br><b>%1</b><br>already exists. Do you want to overwrite it?"
@@ -2283,157 +2239,163 @@ msgstr ""
 "<qt>Файли<br><b>%1</b><br>аллакай мавҷуд аст.Шумо дар ҳақиқат мехоҳед онро "
 "тағир диҳед?</qt>"
 
-#: kwordquiz.cpp:938
+#: kwordquiz.cpp:823
 msgid "Closing file..."
 msgstr "Пушидани файл..."
 
-#: kwordquiz.cpp:961
+#: kwordquiz.cpp:846
 msgid "Printing..."
 msgstr "Чоп..."
 
-#: kwordquiz.cpp:976
+#: kwordquiz.cpp:861
 msgid "Exiting..."
 msgstr "Гузариш..."
 
-#: kwordquiz.cpp:1003
+#: kwordquiz.cpp:888
 msgid "Undoing previous command..."
 msgstr "Фармони пештара иҷро карда нашуд..."
 
-#: kwordquiz.cpp:1010
+#: kwordquiz.cpp:895
 msgid "Cutting selection..."
 msgstr "Буридани интихоб..."
 
-#: kwordquiz.cpp:1017
+#: kwordquiz.cpp:902
 msgid "Copying selection to clipboard..."
 msgstr "Интихоби нусхабардорӣ дар клипборд..."
 
-#: kwordquiz.cpp:1024
+#: kwordquiz.cpp:909
 msgid "Inserting clipboard contents..."
 msgstr "Мондани мавзӯи клипборд..."
 
-#: kwordquiz.cpp:1031
+#: kwordquiz.cpp:916
 msgid "Clearing the selected cells..."
 msgstr "Ячейкаҳои интихоб карда шударо тоза намоед..."
 
-#: kwordquiz.cpp:1038
+#: kwordquiz.cpp:923
 msgid "Inserting rows..."
 msgstr "Мондани қаторҳо..."
 
-#: kwordquiz.cpp:1045
+#: kwordquiz.cpp:930
 msgid "Deleting selected rows..."
 msgstr "Нобуд кардани қаторҳои интихобшуда..."
 
-#: kwordquiz.cpp:1052
+#: kwordquiz.cpp:937
 msgid "Marking selected text as a blank..."
 msgstr "Бо макёр интихоб намудани матни ҳамчун бланк интихоб шуда..."
 
-#: kwordquiz.cpp:1059
+#: kwordquiz.cpp:944
 msgid "Removing blank markings..."
 msgstr "Нобуд сохтани макёри тоза..."
 
-#: kwordquiz.cpp:1071
+#: kwordquiz.cpp:956
 msgid "Setting the column titles of the vocabulary..."
 msgstr "Банизомдории унвони сутуни луғат..."
 
-#: kwordquiz.cpp:1088
+#: kwordquiz.cpp:973
 msgid "Setting the font of the vocabulary..."
 msgstr "Банизомдории ҳарфи луғат..."
 
-#: kwordquiz.cpp:1105
+#: kwordquiz.cpp:990
 msgid "Changing the keyboard layout..."
 msgstr "Тағирдаҳии  ҷойгиршудаи ишораҳо дар тугмача..."
 
-#: kwordquiz.cpp:1106
+#: kwordquiz.cpp:991
 msgid "Not implemented yet"
 msgstr "Иҷронашаванда"
 
-#: kwordquiz.cpp:1112
+#: kwordquiz.cpp:997
 msgid "Changing row and column properties..."
 msgstr "Сифати қатор ва сутунро иваз намоед..."
 
-#: kwordquiz.cpp:1120
+#: kwordquiz.cpp:1005
 #, fuzzy
 #| msgid "Inserting rows..."
 msgid "Adjusting row heights..."
 msgstr "Мондани қаторҳо..."
 
-#: kwordquiz.cpp:1129
+#: kwordquiz.cpp:1014
 msgid "Randomizing the vocabulary..."
 msgstr "Маҳлутсозии луғат..."
 
-#: kwordquiz.cpp:1137
+#: kwordquiz.cpp:1022
 msgid "Updating mode..."
 msgstr "Нав кардани ҳолат..."
 
-#: kwordquiz.cpp:1151
+#: kwordquiz.cpp:1036
 msgid "Starting editor session..."
 msgstr "Муҳарири дарсро оғоз намоед..."
 
-#: kwordquiz.cpp:1158
+#: kwordquiz.cpp:1043
 msgid "Starting flashcard session..."
 msgstr "Рафтори корти сеансро нишон диҳед..."
 
-#: kwordquiz.cpp:1165
+#: kwordquiz.cpp:1050
 msgid "Starting multiple choice session..."
 msgstr "Чандин интихоби дарсро оғоз намоед..."
 
-#: kwordquiz.cpp:1172
+#: kwordquiz.cpp:1057
 #, fuzzy
 msgid "Starting question & answer session..."
 msgstr "Савол ва ҷавоби & дарстро оғоз намоед..."
 
-#: kwordquiz.cpp:1350
+#: kwordquiz.cpp:1235
+#, fuzzy, qt-format
+#| msgid "&Insert Row"
+msgid "Insert %1"
+msgstr "&Мондани қатор"
+
+#: kwordquiz.cpp:1236
 #, qt-format
 msgid "Inserts the character %1"
 msgstr "Аломати %1 ворид намоед"
 
-#: kwordquiz.cpp:1405
+#: kwordquiz.cpp:1293
 msgid "This will restart your quiz. Do you wish to continue?"
 msgstr "Ин санҷишро аз нав бор менамояд.Шумо дар ҳақтқат мехоҳед давом додан?"
 
-#: kwordquiz.cpp:1421
+#: kwordquiz.cpp:1309
 #, qt-format
 msgid "&1 %1 -> %2 In Order"
 msgstr "&1 %1 -> %2 барои он ки"
 
-#: kwordquiz.cpp:1422
+#: kwordquiz.cpp:1310
 #, qt-format
 msgid "&2 %1 -> %2 In Order"
 msgstr "&2 %1 -> %2 барои он ки"
 
-#: kwordquiz.cpp:1423
+#: kwordquiz.cpp:1311
 #, qt-format
 msgid "&3 %1 -> %2 Randomly"
 msgstr "&3 %1 -> %2 Ихтиёрӣ"
 
-#: kwordquiz.cpp:1424
+#: kwordquiz.cpp:1312
 #, qt-format
 msgid "&4 %1 -> %2 Randomly"
 msgstr "&4 %1 -> %2 Ихтиёрӣ"
 
-#: kwordquiz.cpp:1425
+#: kwordquiz.cpp:1313
 #, fuzzy, qt-format
 #| msgid "&5 %1 <-> %2 Randomly"
 msgid "&5 %1 &lt;-&gt; %2 Randomly"
 msgstr "&5 %1 <-> %2 Тасодуфӣ"
 
-#: kwordquiz.cpp:1432 kwordquiz.cpp:1435
+#: kwordquiz.cpp:1320 kwordquiz.cpp:1323
 #, qt-format
 msgid "%1 -> %2 In Order"
 msgstr "%1 -> %2 барои он ки"
 
-#: kwordquiz.cpp:1438 kwordquiz.cpp:1441
+#: kwordquiz.cpp:1326 kwordquiz.cpp:1329
 #, qt-format
 msgid "%1 -> %2 Randomly"
 msgstr "%1 -> %2 Тасодуфӣ"
 
-#: kwordquiz.cpp:1444
+#: kwordquiz.cpp:1332
 #, fuzzy, qt-format
 #| msgid "%1 -> %2 Randomly"
 msgid "%1 &lt;-&gt; %2 Randomly"
 msgstr "%1 -> %2 Тасодуфӣ"
 
-#: kwordquiz.cpp:1522
+#: kwordquiz.cpp:1410
 msgid "Disable Leitner system"
 msgstr ""
 
@@ -2497,6 +2459,37 @@ msgstr "&Интихоб"
 #: dlgspecchar.cpp:37
 msgid "Select this character"
 msgstr "Ҳамин аломатро интихоб кунед"
+
+#~ msgid "Special Character 1"
+#~ msgstr "Аломатҳои махсус 1"
+
+#, fuzzy
+#~ msgid "Insert this character"
+#~ msgstr "Аломати %1 ворид намоед"
+
+#~ msgid "Special Character 2"
+#~ msgstr "Аломатҳои махсус 2"
+
+#~ msgid "Special Character 3"
+#~ msgstr "Аломатҳои махсус 3"
+
+#~ msgid "Special Character 4"
+#~ msgstr "Аломатҳои махсус 4"
+
+#~ msgid "Special Character 5"
+#~ msgstr "Аломатҳои махсус 5"
+
+#~ msgid "Special Character 6"
+#~ msgstr "Аломатҳои махсус 6"
+
+#~ msgid "Special Character 7"
+#~ msgstr "Аломатҳои махсус 7"
+
+#~ msgid "Special Character 8"
+#~ msgstr "Аломатҳои махсус 8"
+
+#~ msgid "Special Character 9"
+#~ msgstr "Аломатҳои махсус 9"
 
 #~ msgid "%1 <-> %2 Randomly"
 #~ msgstr "%1 <-> %2 Ихтиёрӣ"
