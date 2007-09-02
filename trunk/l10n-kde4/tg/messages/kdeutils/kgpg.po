@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-01 05:36+0200\n"
+"POT-Creation-Date: 2007-09-02 05:41+0200\n"
 "PO-Revision-Date: 2005-09-17 12:46+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -150,7 +150,7 @@ msgstr "Вориди Калид"
 
 #: keylistview.cpp:386 keylistview.cpp:442 keylistview.cpp:557
 #: keylistview.cpp:624 keysmanager.cpp:577 keysmanager.cpp:1232
-#: keysmanager.cpp:1753 keysmanager.cpp:1833 keysmanager.cpp:2407
+#: keysmanager.cpp:1753 keysmanager.cpp:1833 keysmanager.cpp:2399
 #, qt-format
 msgid "%1 Keys, %2 Groups"
 msgstr "%1 Калидҳо, %2 Гурӯҳо"
@@ -289,7 +289,7 @@ msgstr "Воридоти Калид Аз Хидматрасони Калидҳо
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 141
-#: keyservers.cpp:391 kgpgview.cpp:393 rc.cpp:425
+#: keyservers.cpp:391 kgpgview.cpp:392 rc.cpp:425
 msgid "&Import"
 msgstr "&Воридот"
 
@@ -342,7 +342,7 @@ msgstr "Азназаргузаронии Дастии GnuPG"
 msgid "&Open Editor"
 msgstr "&Кушодани Муҳаррир"
 
-#: keysmanager.cpp:167 selectpublickeydialog.cpp:224
+#: keysmanager.cpp:167 selectpublickeydialog.cpp:230
 msgid "&Go to Default Key"
 msgstr "&Гузариш ба Калидҳо Бо Нобаёнӣ"
 
@@ -683,7 +683,7 @@ msgstr ""
 "Содироти калидро давом диҳам?"
 
 #: keysmanager.cpp:1488 keysmanager.cpp:1736 keysmanager.cpp:2268
-#: keysmanager.cpp:2342 kgpg.cpp:648 kgpgeditor.cpp:314 kgpgeditor.cpp:324
+#: keysmanager.cpp:2336 kgpg.cpp:648 kgpgeditor.cpp:314 kgpgeditor.cpp:324
 #: kgpglibrary.cpp:210
 msgid "Warning"
 msgstr ""
@@ -919,7 +919,17 @@ msgstr ""
 "ҷуфти калидҳо маънои онро дорад, ки шумо ҳеҷ гоҳ файлҳоро, ки ба ин калид "
 "рамз кунонида мешаванд, рамзкунонӣ карда наметавонед."
 
-#: keysmanager.cpp:2334
+#: keysmanager.cpp:2292
+#, qt-format
+msgid "Can not delete key <b>%1</b> while it is edited in terminal."
+msgstr ""
+
+#: keysmanager.cpp:2292
+#, fuzzy
+msgid "Delete key"
+msgstr "&Нобудкунии Калид(ҳо)"
+
+#: keysmanager.cpp:2328
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>The following are secret key pairs:<br><b>%1</b>They will not be "
@@ -931,21 +941,21 @@ msgstr ""
 "<qt>Ҷуфти калидҳи зерин махфианд:<br><b>%1</b>Онҳо нобуд карда намешаванд."
 "<br></qt>"
 
-#: keysmanager.cpp:2342
+#: keysmanager.cpp:2336
 #, fuzzy, qt-format
 msgid "<qt><b>Delete the following public key?</b></qt>"
 msgid_plural "<qt><b>Delete the following %1 public keys?</b></qt>"
 msgstr[0] "<qt><b>Калид(ҳо)и зерини оммавиро нобуд кунам  ?</b></qt>"
 
-#: keysmanager.cpp:2413
+#: keysmanager.cpp:2405
 msgid "Key Import"
 msgstr "Вориди Калид"
 
-#: keysmanager.cpp:2420
+#: keysmanager.cpp:2412
 msgid "Open File"
 msgstr "Кушодани Файл"
 
-#: keysmanager.cpp:2427
+#: keysmanager.cpp:2419
 msgid "Importing..."
 msgstr "Воридоткунӣ..."
 
@@ -1483,7 +1493,7 @@ msgstr ""
 "<qt><b>Имзои НОДУРУСТ</b> аз:<br> %1<br>Шиносаи калид: %2<br><br><b>Файл "
 "хароб гаштааст!</b></qt>"
 
-#: kgpginterface.cpp:2944 kgpgview.cpp:400
+#: kgpginterface.cpp:2944 kgpgview.cpp:399
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -1648,7 +1658,7 @@ msgstr ""
 "<p>Файли <b>%1</b>  калиди шахсӣ аст. Марҳамат карда барои воридоти он "
 "мудири калидҳои KGpg-ро истифода баред.</p>"
 
-#: kgpglibrary.cpp:231 kgpgview.cpp:314 kgpgview.cpp:355
+#: kgpglibrary.cpp:231 kgpgview.cpp:313 kgpgview.cpp:354
 msgid "Decryption failed."
 msgstr "Рамзкушоӣ бо нокомӣ анҷомид."
 
@@ -1843,11 +1853,11 @@ msgstr ""
 msgid "Could not download file."
 msgstr "Боркунии файл ғайри имкон аст."
 
-#: kgpgview.cpp:228
+#: kgpgview.cpp:227
 msgid "Unable to read file."
 msgstr "Хондани файл ғайри имкон аст."
 
-#: kgpgview.cpp:269
+#: kgpgview.cpp:268
 #, fuzzy
 msgid ""
 "<qt>This file is a <b>public</b> key.\n"
@@ -1856,7 +1866,7 @@ msgstr ""
 "Ин файл калиди шахсӣ аст.\n"
 "Марҳамат карда идоракунии калиди kgpg-ро борои воридкунӣ истифода баред."
 
-#: kgpgview.cpp:275
+#: kgpgview.cpp:274
 #, fuzzy
 #| msgid ""
 #| "This file is a private key.\n"
@@ -1868,41 +1878,41 @@ msgstr ""
 "Ин файл калиди шахсӣ аст.\n"
 "Марҳамат карда идоракунии калиди kgpg-ро борои воридкунӣ истифода баред."
 
-#: kgpgview.cpp:326
+#: kgpgview.cpp:325
 msgid "Encryption failed."
 msgstr "Рамзкунонӣ бо нокомӣ анҷомид."
 
-#: kgpgview.cpp:363
+#: kgpgview.cpp:362
 msgid "Signing not possible: bad passphrase or missing key"
 msgstr "Имзонамоӣ ғайри имкон аст: гузарвожаи бад ё калид партофта шудааст"
 
-#: kgpgview.cpp:394
+#: kgpgview.cpp:393
 #, fuzzy
 msgid "Import key in your list"
 msgstr "Воридто ба ҳалқаи калидҳо"
 
-#: kgpgview.cpp:397
+#: kgpgview.cpp:396
 #, fuzzy
 msgid "Do &Not Import"
 msgstr "Вориди Калид"
 
-#: kgpgview.cpp:398
+#: kgpgview.cpp:397
 msgid "Will not import this key in your list"
 msgstr ""
 
-#: kgpgview.cpp:400
+#: kgpgview.cpp:399
 msgid "Missing Key"
 msgstr "Калиди Партофташуда"
 
-#: kgpgview.cpp:425
+#: kgpgview.cpp:424
 msgid "S&ign/Verify"
 msgstr "&Имзокунӣ/Санҷидан"
 
-#: kgpgview.cpp:426
+#: kgpgview.cpp:425
 msgid "En&crypt"
 msgstr "&Рамзкунонӣ"
 
-#: kgpgview.cpp:427
+#: kgpgview.cpp:426
 msgid "&Decrypt"
 msgstr "&Рамзкушоӣ"
 
@@ -2048,7 +2058,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 42
-#: rc.cpp:30 selectpublickeydialog.cpp:164
+#: rc.cpp:30 selectpublickeydialog.cpp:169
 msgid "ASCII armored encryption"
 msgstr "ASCII рамзкунонии ҳамсоз"
 
@@ -2089,7 +2099,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 64
-#: rc.cpp:44 selectpublickeydialog.cpp:174
+#: rc.cpp:44 selectpublickeydialog.cpp:180
 msgid "Hide user id"
 msgstr "Шиносаи корвандро пинҳон кунед"
 
@@ -2116,7 +2126,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 75
-#: rc.cpp:51 selectpublickeydialog.cpp:186
+#: rc.cpp:51 selectpublickeydialog.cpp:192
 msgid "Shred source file"
 msgstr "Нобудкунии файли сарчашмавӣ"
 
@@ -2219,7 +2229,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 172
-#: rc.cpp:79 selectpublickeydialog.cpp:168
+#: rc.cpp:79 selectpublickeydialog.cpp:174
 msgid "Allow encryption with untrusted keys"
 msgstr "Рамзкунониро бо калидҳои нобоваринок иҷозат медиҳад"
 
@@ -3587,7 +3597,7 @@ msgstr ""
 "<b>Рӯйхати калидҳои оммавӣ</b>: калидеро, ки барои рамзкунонӣ истифода хоҳад "
 "шуд, интихоб намоед."
 
-#: selectpublickeydialog.cpp:166
+#: selectpublickeydialog.cpp:171
 msgid ""
 "<b>ASCII encryption</b>: makes it possible to open the encrypted file/"
 "message in a text editor"
@@ -3595,7 +3605,7 @@ msgstr ""
 "<b>Рамзкунонии ASCII</b>: имконияти кушодани файл/паёмро дар муҳаррири матнӣ "
 "медиҳад"
 
-#: selectpublickeydialog.cpp:170
+#: selectpublickeydialog.cpp:176
 msgid ""
 "<b>Allow encryption with untrusted keys</b>: when you import a public key, "
 "it is usually marked as untrusted and you cannot use it unless you sign it "
@@ -3607,7 +3617,7 @@ msgstr ""
 "карда мешавад ва шумо то он даме, ки онро ҳамчун 'боваринок' имзо накунед, "
 "онро истифода бурда намешавад."
 
-#: selectpublickeydialog.cpp:176
+#: selectpublickeydialog.cpp:182
 msgid ""
 "<b>Hide user ID</b>: Do not put the keyid into encrypted packets. This "
 "option hides the receiver of the message and is a countermeasure against "
@@ -3619,7 +3629,7 @@ msgstr ""
 "ва чораи муҳим бар зидди таҳлили трафик мебошад. Он ҷараёни рамзкушоиро суст "
 "мекунад, зеро ҳамаи калидҳои махфии имконпазир истифода бурда мешаванд."
 
-#: selectpublickeydialog.cpp:187
+#: selectpublickeydialog.cpp:193
 msgid ""
 "<b>Shred source file</b>: permanently remove source file. No recovery will "
 "be possible"
@@ -3627,7 +3637,7 @@ msgstr ""
 "<b>Файли сарчашмавиро нобуд созед</b>: пурра хориҷкунии файли сачашмавӣ. "
 "Барқароркунии он ғайри имкон аст"
 
-#: selectpublickeydialog.cpp:191
+#: selectpublickeydialog.cpp:197
 msgid ""
 "<qt><b>Shred source file:</b><br /><p>Checking this option will shred "
 "(overwrite several times before erasing) the files you have encrypted. This "
@@ -3646,17 +3656,17 @@ msgstr ""
 "гузашта дар муҳаррир кушода бошед ё кӯшиши чопкунии онро карда бошед. Он "
 "танҳо барои кор дар файлҳо аст (на дар феҳристҳо).</p></qt>"
 
-#: selectpublickeydialog.cpp:193
+#: selectpublickeydialog.cpp:199
 #, fuzzy, qt-format
 msgid "<a href=\"whatsthis:%1\">Read this before using shredding</a>"
 msgstr ""
 "<a href=\"whatsthis:%1\">Пеш аз истифода бурдани нобудкунӣ инро хонед</a>"
 
-#: selectpublickeydialog.cpp:198
+#: selectpublickeydialog.cpp:204
 msgid "Symmetrical encryption"
 msgstr "Рамзкунонии симметрӣ"
 
-#: selectpublickeydialog.cpp:199
+#: selectpublickeydialog.cpp:205
 msgid ""
 "<b>Symmetrical encryption</b>: encryption does not use keys. You just need "
 "to give a password to encrypt/decrypt the file"
@@ -3664,11 +3674,11 @@ msgstr ""
 "<b>Рамзкунонии симметрӣ</b>: рамзкунонӣ калидҳоро истифода намебарад. Ба "
 "шумо лозим аст, ки барои рамзкунонӣ/рамзкушоӣ гузарвожаро пешкаш кунед"
 
-#: selectpublickeydialog.cpp:213
+#: selectpublickeydialog.cpp:219
 msgid "Custom option:"
 msgstr "Интихобҳои гумрукӣ:"
 
-#: selectpublickeydialog.cpp:217
+#: selectpublickeydialog.cpp:223
 msgid ""
 "<b>Custom option</b>: for experienced users only, allows you to enter a gpg "
 "command line option, like: '--armor'"
