@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpilot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-26 05:48+0200\n"
+"POT-Creation-Date: 2007-09-27 05:43+0200\n"
 "PO-Revision-Date: 2004-10-25 15:26+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -539,23 +539,55 @@ msgstr "тоза шудааст"
 msgid "No changes made. "
 msgstr "дигаргуниҳо нестанд"
 
-#: conduits/base/hhrecord.cc:53 conduits/base/hhrecord.cc:107
-#: conduits/base/recordconduit.cc:987 conduits/base/recordconduit.cc:1032
+#: conduits/base/hhrecord.cc:55 conduits/base/hhrecord.cc:109
+#: conduits/base/recordconduit.cc:1024 conduits/base/recordconduit.cc:1069
 msgctxt "No category set for this record"
 msgid "Unfiled"
 msgstr ""
 
-#: conduits/base/recordconduit.cc:172
+#: conduits/base/recordconduit.cc:84
+msgid "One of the data proxies could not be initialized."
+msgstr ""
+
+#: conduits/base/recordconduit.cc:154
+#, fuzzy
+#| msgid "Could not open the calendar databases."
+msgid "Could not open or create PC data store."
+msgstr "Кушодани базаи маълумотҳои тақвим."
+
+#: conduits/base/recordconduit.cc:170
+#, fuzzy
+#| msgid "Could not open the calendar databases."
+msgid "Could not open or create Palm data store."
+msgstr "Кушодани базаи маълумотҳои тақвим."
+
+#: conduits/base/recordconduit.cc:178
 #, fuzzy
 msgid ""
-"Failed to open the pc database and the handheld datbase, no data to sync."
+"Failed to open the pc database and the handheld database, no data to sync."
 msgstr "Кушодани дафтари адреҳо дар КПК муяссар намешавад."
 
-#: conduits/base/recordconduit.cc:277
+#: conduits/base/recordconduit.cc:196
+msgid "Data mapping invalid after sync. Sync failed."
+msgstr ""
+
+#: conduits/base/recordconduit.cc:204
+msgid "Changes are too volatile. Sync failed."
+msgstr ""
+
+#: conduits/base/recordconduit.cc:216
+msgid "Couldn't save Palm changes Sync failed."
+msgstr ""
+
+#: conduits/base/recordconduit.cc:224
+msgid "Couldn't save PC changes Sync failed."
+msgstr ""
+
+#: conduits/base/recordconduit.cc:283
 msgid "Large Changes Detected"
 msgstr ""
 
-#: conduits/base/recordconduit.cc:279
+#: conduits/base/recordconduit.cc:285
 #, qt-format
 msgid ""
 "The %1 conduit has made a large number of changes to your %2.  Do you want "
@@ -564,17 +596,17 @@ msgid ""
 "\t%3"
 msgstr ""
 
-#: conduits/base/recordconduit.cc:290
+#: conduits/base/recordconduit.cc:296
 #, fuzzy
 #| msgid "Handheld"
 msgid "handheld"
 msgstr "КПК"
 
-#: conduits/base/recordconduit.cc:303
+#: conduits/base/recordconduit.cc:309
 msgid "pc"
 msgstr ""
 
-#: conduits/base/recordconduit.cc:877
+#: conduits/base/recordconduit.cc:914
 #: conduits/vcalconduit/vcal-conduitbase.cc:417
 #, fuzzy
 msgid ""
@@ -586,14 +618,14 @@ msgstr ""
 "дигаргун шудаанд. Элементҳо дар компютери персоналӣ:\n"
 "\t"
 
-#: conduits/base/recordconduit.cc:885
+#: conduits/base/recordconduit.cc:922
 #, fuzzy
 #| msgid "deleted"
 msgctxt "The pc record is deleted."
 msgid "deleted"
 msgstr "тоза шудааст"
 
-#: conduits/base/recordconduit.cc:887
+#: conduits/base/recordconduit.cc:924
 #: conduits/vcalconduit/vcal-conduitbase.cc:420
 #, fuzzy
 msgid ""
@@ -602,14 +634,14 @@ msgid ""
 "\t"
 msgstr "Истифодабарандаи КПК:"
 
-#: conduits/base/recordconduit.cc:894
+#: conduits/base/recordconduit.cc:931
 #, fuzzy
 #| msgid "deleted"
 msgctxt "The pilot record is deleted."
 msgid "deleted"
 msgstr "тоза шудааст"
 
-#: conduits/base/recordconduit.cc:896
+#: conduits/base/recordconduit.cc:933
 #: conduits/vcalconduit/vcal-conduitbase.cc:422
 msgid ""
 "\n"
@@ -617,23 +649,23 @@ msgid ""
 "Which entry do you want to keep? It will overwrite the other entry."
 msgstr ""
 
-#: conduits/base/recordconduit.cc:901
+#: conduits/base/recordconduit.cc:938
 #: conduits/vcalconduit/vcal-conduitbase.cc:427
 msgid "Conflicting Entries"
 msgstr "Элементҳои низоъи"
 
-#: conduits/base/recordconduit.cc:904
+#: conduits/base/recordconduit.cc:941
 #: conduits/abbrowserconduit/abbrowser-conduit.cc:1508
 #: conduits/vcalconduit/vcal-conduitbase.cc:430
 msgid "Handheld"
 msgstr "КПК"
 
-#: conduits/base/recordconduit.cc:904
+#: conduits/base/recordconduit.cc:941
 #: conduits/vcalconduit/vcal-conduitbase.cc:430
 msgid "PC"
 msgstr ""
 
-#: conduits/base/hhdataproxy.cc:178
+#: conduits/base/hhdataproxy.cc:179
 msgctxt "Category not set for the record"
 msgid "Unfiled"
 msgstr ""
@@ -987,17 +1019,17 @@ msgstr ""
 msgid "Enter your Keyring password"
 msgstr ""
 
-#: conduits/keyringconduit/keyringhhdataproxy.cc:234
+#: conduits/keyringconduit/keyringhhdataproxy.cc:250
 #, fuzzy
 #| msgid "KPilotTest"
 msgid "KPilot cares"
 msgstr "Санҷиши KPilot"
 
-#: conduits/keyringconduit/keyringhhdataproxy.cc:234
+#: conduits/keyringconduit/keyringhhdataproxy.cc:250
 msgid "KDE"
 msgstr ""
 
-#: conduits/keyringconduit/keyringhhdataproxy.cc:235
+#: conduits/keyringconduit/keyringhhdataproxy.cc:251
 #, fuzzy
 #| msgid "Entry in KPilot"
 msgid "Thanks for using KPilot!"
