@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-21 05:47+0200\n"
+"POT-Creation-Date: 2007-10-22 05:40+0200\n"
 "PO-Revision-Date: 2005-09-16 16:30+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -1670,7 +1670,7 @@ msgctxt "@info:whatsthis"
 msgid "Check to display the system tray icon whenever you start KDE."
 msgstr "Намоиши ишорот дар новаи системавӣ ҳангоми оғози KDE."
 
-#: prefdlg.cpp:552
+#: prefdlg.cpp:552 alarmtimewidget.cpp:207
 #, fuzzy
 msgctxt "@label:listbox"
 msgid "Time zone:"
@@ -2947,7 +2947,7 @@ msgid ""
 "2</para>"
 msgstr "Вақти охирини такророти хотиррасониро ворид кунед"
 
-#: recurrenceedit.cpp:262
+#: recurrenceedit.cpp:262 alarmtimewidget.cpp:141
 #, fuzzy
 #| msgid "Any time"
 msgctxt "@option:check"
@@ -3812,127 +3812,109 @@ msgid ""
 "cancellation period"
 msgstr "Худкорона пӯшидани тиреза баъди итмомоти даври озмоишоти дермонӣ"
 
-#: editdlg.cpp:91
+#: editdlg.cpp:88
+#, fuzzy, kde-format
+#| msgid "&Recurrence"
+msgctxt "@title:tab"
+msgid "&Recurrence - [%1]"
+msgstr "&Такроршавӣ"
+
+#: editdlg.cpp:93
 msgctxt "@option:check"
 msgid "Show in KOrganizer"
 msgstr ""
 
-#: editdlg.cpp:197
+#: editdlg.cpp:199
 #, fuzzy
 msgctxt "@title:window"
 msgid "Archived Alarm [read-only]"
 msgstr "Фаъол сохтани %1"
 
-#: editdlg.cpp:198
+#: editdlg.cpp:200
 #, fuzzy
 #| msgid "View Alarm"
 msgctxt "@title:window"
 msgid "View Alarm"
 msgstr "Намоиши хотиррасонӣ"
 
-#: editdlg.cpp:204
+#: editdlg.cpp:206
 #, fuzzy
 #| msgid "Load Template..."
 msgctxt "@action:button"
 msgid "Load Template..."
 msgstr "Боргирии қолиб..."
 
-#: editdlg.cpp:215
+#: editdlg.cpp:217
 #, fuzzy
 #| msgid "Template name:"
 msgctxt "@label:textbox"
 msgid "Template name:"
 msgstr "Номи қолиб:"
 
-#: editdlg.cpp:220
+#: editdlg.cpp:222
 #, fuzzy
 #| msgid "Enter the name of the alarm template"
 msgctxt "@info:whatsthis"
 msgid "Enter the name of the alarm template"
 msgstr "Номи қолиби хотиррасониро ворид кунед"
 
-#: editdlg.cpp:228
+#: editdlg.cpp:230
 #, fuzzy
 #| msgid "&Alarm"
 msgctxt "@title:tab"
 msgid "&Alarm"
 msgstr "&Соати зангдори рӯимизӣ"
 
-#: editdlg.cpp:239
-#, fuzzy
-#| msgid "&Recurrence"
-msgctxt "@title:tab"
-msgid "&Recurrence"
-msgstr "&Такроршавӣ"
-
-#: editdlg.cpp:248
+#: editdlg.cpp:250
 #, fuzzy
 #| msgid "Action"
 msgctxt "@title:group"
 msgid "Action"
 msgstr "Амалиёт"
 
-#: editdlg.cpp:257
+#: editdlg.cpp:259
 #, fuzzy
 #| msgid "Deferred Alarm"
 msgctxt "@title:group"
 msgid "Deferred Alarm"
 msgstr "Хотиррасонии таъхиршуда"
 
-#: editdlg.cpp:262
+#: editdlg.cpp:264
 #, fuzzy
 #| msgid "Deferred to:"
 msgctxt "@label"
 msgid "Deferred to:"
 msgstr "Гузарондан ба:"
 
-#: editdlg.cpp:268
+#: editdlg.cpp:270
 #, fuzzy
 #| msgid "C&hange..."
 msgctxt "@action:button"
 msgid "Change..."
 msgstr "&Таъғирдиҳӣ..."
 
-#: editdlg.cpp:271
+#: editdlg.cpp:273
 #, fuzzy
 #| msgid "Change the alarm's deferred time, or cancel the deferral"
 msgctxt "@info:whatsthis"
 msgid "Change the alarm's deferred time, or cancel the deferral"
 msgstr "Тағйир додани мӯҳлати таъхири хотиррасонӣ ё барҳам додани таъхирот"
 
-#: editdlg.cpp:283
-#, fuzzy
-#| msgid "Recurrence:"
-msgctxt "@label"
-msgid "Recurrence:"
-msgstr "Такроршавӣ:"
-
-#: editdlg.cpp:287
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>How often the alarm recurs.</para><para>The times shown are those "
-"configured in the Recurrence tab for the recurrence and optional sub-"
-"repetition.</para>"
-msgstr ""
-"Зичии такроршавии хотиррасонӣ.\n"
-"Такророти хотиррасонӣ ба варақаи замимаи Такроршавӣ танзим шуда истодааст."
-
-#: editdlg.cpp:294 editdlg.cpp:361
+#: editdlg.cpp:284 editdlg.cpp:348
 #, fuzzy
 #| msgid "Time"
 msgctxt "@title:group"
 msgid "Time"
 msgstr "Вақт"
 
-#: editdlg.cpp:302
+#: editdlg.cpp:292
 #, fuzzy
 #| msgid "&Default time"
 msgctxt "@option:radio"
 msgid "Default time"
 msgstr "&Вақти пешфарзӣ"
 
-#: editdlg.cpp:305
+#: editdlg.cpp:295
 #, fuzzy
 #| msgid ""
 #| "Do not specify a start time for alarms based on this template. The normal "
@@ -3945,14 +3927,14 @@ msgstr ""
 "Муддати ибтидоиро ба хотиррасонӣ, ки дар ин қолиб асос гузоштааст, ишора "
 "накунед. Бояд муддати ибтидоии пешфарзӣ низ истифода шавад."
 
-#: editdlg.cpp:313
+#: editdlg.cpp:303
 #, fuzzy
 #| msgid "Time:"
 msgctxt "@option:radio"
 msgid "Time:"
 msgstr "Вақт:"
 
-#: editdlg.cpp:316
+#: editdlg.cpp:306
 #, fuzzy
 #| msgid "Specify a start time for alarms based on this template."
 msgctxt "@info:whatsthis"
@@ -3961,7 +3943,7 @@ msgstr ""
 "Муддати ибтидоии барои хотиррасоние, ки ба ин қолиб асос гузоштааст, ишора "
 "кунед."
 
-#: editdlg.cpp:322
+#: editdlg.cpp:312
 #, fuzzy, kde-format
 #| msgid "Enter the start time for alarms based on this template."
 msgctxt "@info:whatsthis"
@@ -3972,13 +3954,13 @@ msgstr ""
 "Муддати ибтидоии барои хотиррасоние, ки ба ин қолиб асос гузоштааст, ворид "
 "кунед."
 
-#: editdlg.cpp:328
+#: editdlg.cpp:318
 #, fuzzy
 msgctxt "@option:radio"
 msgid "Date only"
 msgstr "Сана:"
 
-#: editdlg.cpp:331
+#: editdlg.cpp:321
 #, fuzzy
 #| msgid "Set the '%1' option for alarms based on this template."
 msgctxt "@info:whatsthis"
@@ -3988,14 +3970,14 @@ msgstr ""
 "Параметри '%1'-ро барои хотиррасоние, ки ба ин қолиб асос гузоштааст, сабт "
 "кунед."
 
-#: editdlg.cpp:338
+#: editdlg.cpp:328 alarmtimewidget.cpp:148
 #, fuzzy
 #| msgid "Time from no&w:"
 msgctxt "@option:radio"
 msgid "Time from now:"
 msgstr "&Баъд аз:"
 
-#: editdlg.cpp:342
+#: editdlg.cpp:332
 #, fuzzy
 msgctxt "@info:whatsthis"
 msgid ""
@@ -4003,51 +3985,51 @@ msgid ""
 "from when the alarm is created."
 msgstr "Хотиррасониро баъд аз танаффуси муваққатии ишорашуда муайян намудан."
 
-#: editdlg.cpp:349 alarmtimewidget.cpp:196
+#: editdlg.cpp:339 alarmtimewidget.cpp:159
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "<para>%1</para><para>%2</para>"
 msgstr ""
 
-#: editdlg.cpp:395
+#: editdlg.cpp:382
 msgctxt "@info:whatsthis"
 msgid "Check to copy the alarm into KOrganizer's calendar"
 msgstr ""
 
-#: editdlg.cpp:399
+#: editdlg.cpp:386
 #, fuzzy
 #| msgid "Schedule the alarm at the specified time."
 msgctxt "@info:whatsthis"
 msgid "Schedule the alarm at the specified time."
 msgstr "Хотиррасониро ба муддати ишорашуда муқаррар намудан."
 
-#: editdlg.cpp:791
+#: editdlg.cpp:778
 #, fuzzy
 #| msgid "You must enter a name for the alarm template"
 msgctxt "@info"
 msgid "You must enter a name for the alarm template"
 msgstr "Шумо бояд ном барои қолиби хотиррасонӣ ворид кунед"
 
-#: editdlg.cpp:795
+#: editdlg.cpp:782
 #, fuzzy
 #| msgid "Template name is already in use"
 msgctxt "@info"
 msgid "Template name is already in use"
 msgstr "Номи қолиб аллакай истифода шуда истодааст"
 
-#: editdlg.cpp:838
+#: editdlg.cpp:825
 #, fuzzy
 #| msgid "Recurrence has already expired"
 msgctxt "@info"
 msgid "Recurrence has already expired"
 msgstr "Муддати хотиррасонӣ аллакай гузашт"
 
-#: editdlg.cpp:843
+#: editdlg.cpp:830
 msgctxt "@info"
 msgid "The alarm will never occur during working hours"
 msgstr ""
 
-#: editdlg.cpp:872
+#: editdlg.cpp:859
 #, fuzzy, kde-format
 #| msgid ""
 #| "Reminder period must be less than the recurrence interval, unless '%1' is "
@@ -4060,7 +4042,7 @@ msgstr ""
 "Агар '%1' сабт шуда бошад, даври пешхотиррасонӣ бояд кам аз даври такроршавӣ "
 "бошад."
 
-#: editdlg.cpp:886
+#: editdlg.cpp:873
 #, fuzzy
 msgctxt "@info"
 msgid ""
@@ -4070,14 +4052,14 @@ msgstr ""
 "Агар '%1' сабт шуда бошад, даври пешхотиррасонӣ бояд кам аз даври такроршавӣ "
 "бошад."
 
-#: editdlg.cpp:893
+#: editdlg.cpp:880
 msgctxt "@info"
 msgid ""
 "For a repetition within the recurrence, its period must be in units of days "
 "or weeks for a date-only alarm"
 msgstr ""
 
-#: editdlg.cpp:923
+#: editdlg.cpp:910
 #, fuzzy
 msgctxt "@info"
 msgid "You must select a resource to save the alarm in"
@@ -4262,7 +4244,7 @@ msgstr "Баландии навозиши файли садо"
 msgid "Message text to display"
 msgstr "Матни хотиррасонӣ"
 
-#: alarmtimewidget.cpp:49
+#: alarmtimewidget.cpp:50
 #, fuzzy
 #| msgid ""
 #| "Enter the length of time (in hours and minutes) after the current time to "
@@ -4275,7 +4257,7 @@ msgstr ""
 "Вақтро ворид кунед (соат ва дақиқа), аз кадоме хотиррасониро намоиш додан "
 "лозим аст."
 
-#: alarmtimewidget.cpp:81
+#: alarmtimewidget.cpp:82
 #, fuzzy
 msgctxt "@info/plain"
 msgid ""
@@ -4285,7 +4267,7 @@ msgstr ""
 "Агар такророт танзим шуда бошад, сана/муддати ибтидоӣ ба такроршавии аввала "
 "дар/баъди сана/муддати ишорашуда низ сабт карда хоҳад шуд."
 
-#: alarmtimewidget.cpp:84
+#: alarmtimewidget.cpp:85
 #, fuzzy
 msgctxt "@info/plain"
 msgid "This uses KAlarm's default time zone, set in the Preferences dialog."
@@ -4293,53 +4275,42 @@ msgstr ""
 "%1\n"
 "Лутфан онро дар танзимот ишора кунед."
 
-#: alarmtimewidget.cpp:105
+#: alarmtimewidget.cpp:106
 #, fuzzy
 #| msgid "&Defer to date/time:"
 msgctxt "@option:radio"
 msgid "Defer to date/time:"
 msgstr "&Монондан ба санаи/муддати:"
 
-#: alarmtimewidget.cpp:105
+#: alarmtimewidget.cpp:106
 #, fuzzy
+#| msgid "&Defer to date/time:"
 msgctxt "@option:radio"
-msgid "Date/time"
-msgstr "&Ба санаи/муддати:"
+msgid "At date/time:"
+msgstr "&Монондан ба санаи/муддати:"
 
-#: alarmtimewidget.cpp:107
+#: alarmtimewidget.cpp:108
 #, fuzzy
 #| msgid "Reschedule the alarm to the specified date and time."
 msgctxt "@info:whatsthis"
 msgid "Reschedule the alarm to the specified date and time."
 msgstr "Монондани хотиррасонӣ ба санаи/муддати дигар."
 
-#: alarmtimewidget.cpp:108
+#: alarmtimewidget.cpp:109
 #, fuzzy
-#| msgid "Schedule the alarm at the specified date and time."
+#| msgid "Next scheduled date and time of the alarm"
 msgctxt "@info:whatsthis"
-msgid "Schedule the alarm at the specified date and time."
-msgstr "Хотиррасонӣ кардан дар сана ва муддати ишорашуда."
+msgid "Specify the date, or date and time, to schedule the alarm."
+msgstr "Санаи навбатӣ ва муддати хотиррасонӣ"
 
-#: alarmtimewidget.cpp:124
-#, fuzzy
-msgctxt "@option:radio"
-msgid "Date"
-msgstr "Сана:"
-
-#: alarmtimewidget.cpp:126
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Schedule the alarm on the specified date."
-msgstr "Хотиррасониро ба муддати ишорашуда муқаррар намудан."
-
-#: alarmtimewidget.cpp:138
+#: alarmtimewidget.cpp:117
 #, fuzzy, kde-format
 #| msgid "Enter the date to schedule the alarm."
 msgctxt "@info:whatsthis"
 msgid "<para>Enter the date to schedule the alarm.</para><para>%1</para>"
 msgstr "Санаи хотиррасониро ворид кунед."
 
-#: alarmtimewidget.cpp:150
+#: alarmtimewidget.cpp:128
 #, fuzzy, kde-format
 #| msgid "Enter the time to schedule the alarm."
 msgctxt "@info:whatsthis"
@@ -4348,19 +4319,57 @@ msgid ""
 "para>"
 msgstr "Муддати хотиррасониро ворид кунед."
 
-#: alarmtimewidget.cpp:161
+#: alarmtimewidget.cpp:144
+#, fuzzy
+#| msgid ""
+#| "Stop repeating the alarm after your first login on or after the specified "
+#| "end date"
+msgctxt "@info:whatsthis"
+msgid "Trigger the alarm at the first opportunity on the selected date."
+msgstr ""
+"Хотиррасониро баъди намоиши ибтидоӣ ҳангоми қайдкунӣ дар система ё баъди "
+"санаи хотимаи такророт намоиш надодан"
+
+#: alarmtimewidget.cpp:148
+#, fuzzy
+#| msgid "Defer for time &interval:"
+msgctxt "@option:radio"
+msgid "Defer for time interval:"
+msgstr "Монондан ба &муддати муайян:"
+
+#: alarmtimewidget.cpp:150
+#, fuzzy
+#| msgid "Reschedule the alarm for the specified time interval after now."
+msgctxt "@info:whatsthis"
+msgid "Reschedule the alarm for the specified time interval after now."
+msgstr "Хотиррасониро ба танаффуси муваққатии ишорашуда монондан."
+
+#: alarmtimewidget.cpp:151
+#, fuzzy
+#| msgid "Schedule the alarm after the specified time interval from now."
+msgctxt "@info:whatsthis"
+msgid "Schedule the alarm after the specified time interval from now."
+msgstr "Хотиррасониро баъд аз танаффуси муваққатии ишорашуда муайян намудан."
+
+#: alarmtimewidget.cpp:160
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "<para>%1</para><para>%2</para><para>%3</para>"
+msgstr ""
+
+#: alarmtimewidget.cpp:210
 #, fuzzy
 msgctxt "@info:whatsthis"
 msgid "Select the time zone to use for this alarm."
 msgstr "Муддати хотиррасониро ворид кунед."
 
-#: alarmtimewidget.cpp:165
+#: alarmtimewidget.cpp:215
 #, fuzzy
 msgctxt "@option:check"
 msgid "Ignore time zone"
 msgstr "Вақт то"
 
-#: alarmtimewidget.cpp:168
+#: alarmtimewidget.cpp:218
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>Check to use the local computer time, ignoring time zones.</"
@@ -4369,62 +4378,28 @@ msgid ""
 "unexpected times after daylight saving time shifts.</para>"
 msgstr ""
 
-#: alarmtimewidget.cpp:178
-#, fuzzy
-#| msgid "Defer for time &interval:"
-msgctxt "@option:radio"
-msgid "Defer for time interval:"
-msgstr "Монондан ба &муддати муайян:"
-
-#: alarmtimewidget.cpp:179
-#, fuzzy
-#| msgid "Reschedule the alarm for the specified time interval after now."
-msgctxt "@info:whatsthis"
-msgid "Reschedule the alarm for the specified time interval after now."
-msgstr "Хотиррасониро ба танаффуси муваққатии ишорашуда монондан."
-
-#: alarmtimewidget.cpp:184
-#, fuzzy
-#| msgid "Time from no&w:"
-msgctxt "@option:check"
-msgid "Time from now:"
-msgstr "&Баъд аз:"
-
-#: alarmtimewidget.cpp:186
-#, fuzzy
-#| msgid "Schedule the alarm after the specified time interval from now."
-msgctxt "@info:whatsthis"
-msgid "Schedule the alarm after the specified time interval from now."
-msgstr "Хотиррасониро баъд аз танаффуси муваққатии ишорашуда муайян намудан."
-
-#: alarmtimewidget.cpp:197
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid "<para>%1</para><para>%2</para><para>%3</para>"
-msgstr ""
-
-#: alarmtimewidget.cpp:279 alarmtimewidget.cpp:305
+#: alarmtimewidget.cpp:285 alarmtimewidget.cpp:311
 #, fuzzy
 #| msgid "Invalid time"
 msgctxt "@info"
 msgid "Invalid time"
 msgstr "Вақти нодуруст"
 
-#: alarmtimewidget.cpp:298
+#: alarmtimewidget.cpp:304
 #, fuzzy
 #| msgid "Invalid date"
 msgctxt "@info"
 msgid "Invalid date"
 msgstr "Санаи нодуруст"
 
-#: alarmtimewidget.cpp:319
+#: alarmtimewidget.cpp:325
 #, fuzzy
 #| msgid "Alarm date has already expired"
 msgctxt "@info"
 msgid "Alarm date has already expired"
 msgstr "Санаи хотиррасонӣ аллакай гузашт"
 
-#: alarmtimewidget.cpp:331
+#: alarmtimewidget.cpp:337
 #, fuzzy
 #| msgid "Alarm time has already expired"
 msgctxt "@info"
@@ -7300,6 +7275,49 @@ msgstr "Сана:"
 msgctxt "@info/plain Email subject"
 msgid "Subject:"
 msgstr "Мавзӯъ:"
+
+#, fuzzy
+#~| msgid "Recurrence:"
+#~ msgctxt "@label"
+#~ msgid "Recurrence:"
+#~ msgstr "Такроршавӣ:"
+
+#, fuzzy
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>How often the alarm recurs.</para><para>The times shown are those "
+#~ "configured in the Recurrence tab for the recurrence and optional sub-"
+#~ "repetition.</para>"
+#~ msgstr ""
+#~ "Зичии такроршавии хотиррасонӣ.\n"
+#~ "Такророти хотиррасонӣ ба варақаи замимаи Такроршавӣ танзим шуда истодааст."
+
+#, fuzzy
+#~ msgctxt "@option:radio"
+#~ msgid "Date/time"
+#~ msgstr "&Ба санаи/муддати:"
+
+#, fuzzy
+#~| msgid "Schedule the alarm at the specified date and time."
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Schedule the alarm at the specified date and time."
+#~ msgstr "Хотиррасонӣ кардан дар сана ва муддати ишорашуда."
+
+#, fuzzy
+#~ msgctxt "@option:radio"
+#~ msgid "Date"
+#~ msgstr "Сана:"
+
+#, fuzzy
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Schedule the alarm on the specified date."
+#~ msgstr "Хотиррасониро ба муддати ишорашуда муқаррар намудан."
+
+#, fuzzy
+#~| msgid "Time from no&w:"
+#~ msgctxt "@option:check"
+#~ msgid "Time from now:"
+#~ msgstr "&Баъд аз:"
 
 #, fuzzy
 #~| msgctxt "hours:minutes"
