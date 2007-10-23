@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeprint4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-20 05:39+0200\n"
+"POT-Creation-Date: 2007-10-23 05:44+0200\n"
 "PO-Revision-Date: 2005-09-17 13:11+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -1991,30 +1991,21 @@ msgid "<b>Model</b>: %1<br />"
 msgstr "<b>Шакл</b>: %1<br>"
 
 #: cups/kmwippprinter.cpp:180 kmprinter.cpp:135
-#, fuzzy
-#| msgid "Idle"
-msgctxt "@item:intext Printer state"
 msgid "Idle"
 msgstr "Интизорӣ"
 
 #: cups/kmwippprinter.cpp:181 kmprinter.cpp:137
-#, fuzzy
-#| msgid "Stopped"
-msgctxt "@item:intext Printer state"
 msgid "Stopped"
 msgstr "Ҳисобот барҳам дода шуд"
 
-#: cups/kmwippprinter.cpp:182 kmprinter.cpp:136
+#: cups/kmwippprinter.cpp:182 kmjob.cpp:110 kmprinter.cpp:136
 #, fuzzy
 #| msgid "Processing..."
-msgctxt "@item:intext Printer state"
 msgid "Processing..."
 msgstr "Коркард..."
 
-#: cups/kmwippprinter.cpp:183 kmprinter.cpp:138
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "@item:intext Printer state"
+#: cups/kmwippprinter.cpp:183 kmjob.cpp:131 kmprinter.cpp:138
+msgctxt "Unknown State"
 msgid "Unknown"
 msgstr "Номуайян"
 
@@ -2536,59 +2527,39 @@ msgstr "Системаи чоп"
 msgid "Authentication failed (user name=%1)"
 msgstr "Хатои муайян кардани истифодакунанда (номи истифодакунанда=%1)"
 
-#: kmjob.cpp:110
-#, fuzzy
-#| msgid "Processing..."
-msgctxt "@item:intext Job state"
-msgid "Processing..."
-msgstr "Коркард..."
-
 #: kmjob.cpp:113
 #, fuzzy
 #| msgid "Queued"
-msgctxt "@item:intext Job state"
 msgid "Queued"
 msgstr "Дар навбат"
 
 #: kmjob.cpp:116
 #, fuzzy
 #| msgid "Held"
-msgctxt "@item:intext Job state"
 msgid "Held"
 msgstr "Мононда шуд"
 
-#: kmjob.cpp:119
-msgctxt "@item:intext Job state"
+#: kmjob.cpp:119 tools/escputil/escpwidget.cpp:228
 msgid "Error"
 msgstr ""
 
 #: kmjob.cpp:122
 #, fuzzy
 #| msgid "Canceled"
-msgctxt "@item:intext Job state"
 msgid "Canceled"
 msgstr "Барҳам дода шуд"
 
 #: kmjob.cpp:125
 #, fuzzy
 #| msgid "Aborted"
-msgctxt "@item:intext Job state"
 msgid "Aborted"
 msgstr "Канда шуд"
 
 #: kmjob.cpp:128
 #, fuzzy
 #| msgid "Completed"
-msgctxt "@item:intext Job state"
 msgid "Completed"
 msgstr "Хотима дода шуд"
-
-#: kmjob.cpp:131
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "@item:intext Job state"
-msgid "Unknown"
-msgstr "Номуайян"
 
 #: tests/main.cpp:18
 msgid "helpviewer"
@@ -2672,10 +2643,6 @@ msgstr "Амалиёт бо хато ба итмом расид."
 #: tools/escputil/escpwidget.cpp:226 kpfilterpage.cpp:399
 msgid "Output"
 msgstr "Хурӯҷ"
-
-#: tools/escputil/escpwidget.cpp:228
-msgid "Error"
-msgstr ""
 
 #: management/kmmainview.cpp:73
 #, kde-format
@@ -6247,15 +6214,35 @@ msgstr "&Сиёҳ ва сафед"
 msgid "Ot&her"
 msgstr "Ди&гар"
 
-#~ msgctxt "Unknown State"
-#~ msgid "Unknown"
-#~ msgstr "Номуайян"
-
+#, fuzzy
+#~| msgid "Idle"
+#~ msgctxt "@item:intext Printer state"
 #~ msgid "Idle"
 #~ msgstr "Интизорӣ"
 
+#, fuzzy
+#~| msgid "Stopped"
+#~ msgctxt "@item:intext Printer state"
 #~ msgid "Stopped"
 #~ msgstr "Ҳисобот барҳам дода шуд"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "@item:intext Printer state"
+#~ msgid "Unknown"
+#~ msgstr "Номуайян"
+
+#, fuzzy
+#~| msgid "Processing..."
+#~ msgctxt "@item:intext Job state"
+#~ msgid "Processing..."
+#~ msgstr "Коркард..."
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "@item:intext Job state"
+#~ msgid "Unknown"
+#~ msgstr "Номуайян"
 
 #~ msgid "Daytime (6 am - 6 pm)"
 #~ msgstr "Вақти рӯзона (6 саҳар - 6 бегоҳӣ)"
