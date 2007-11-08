@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-07 05:55+0100\n"
+"POT-Creation-Date: 2007-11-08 06:00+0100\n"
 "PO-Revision-Date: 2005-09-17 13:14+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -4959,51 +4959,86 @@ msgid "Otherwise, the request would have succeeded."
 msgstr "Дар ҳолати ақс талабот иҷро мешуд."
 
 #: ../kioslave/http/http.cpp:1465
+#, fuzzy
+#| msgid "retrieve property values"
+msgctxt "request type"
 msgid "retrieve property values"
 msgstr "Кабул кардани маънои хусусият"
 
 #: ../kioslave/http/http.cpp:1468
+#, fuzzy
+#| msgid "set property values"
+msgctxt "request type"
 msgid "set property values"
 msgstr "Маънои хусусияташро муайян кардан"
 
 #: ../kioslave/http/http.cpp:1471
+#, fuzzy
+#| msgid "create the requested folder"
+msgctxt "request type"
 msgid "create the requested folder"
 msgstr "Феҳристи талабшударо месозад"
 
 #: ../kioslave/http/http.cpp:1474
+#, fuzzy
+#| msgid "copy the specified file or folder"
+msgctxt "request type"
 msgid "copy the specified file or folder"
 msgstr "Нусха бардоштани файил ё феҳристи муайяншуда "
 
 #: ../kioslave/http/http.cpp:1477
+#, fuzzy
+#| msgid "move the specified file or folder"
+msgctxt "request type"
 msgid "move the specified file or folder"
 msgstr "Ҷойивазкунии файл ё феҳристи муайян кардашуда"
 
 #: ../kioslave/http/http.cpp:1480
+#, fuzzy
+#| msgid "search in the specified folder"
+msgctxt "request type"
 msgid "search in the specified folder"
 msgstr "Ҷустуҷӯ дар феҳристи муайяншуда"
 
 #: ../kioslave/http/http.cpp:1483
+#, fuzzy
+#| msgid "lock the specified file or folder"
+msgctxt "request type"
 msgid "lock the specified file or folder"
 msgstr "Иҳота кардани файл ё феҳристи муайян кардашуда"
 
 #: ../kioslave/http/http.cpp:1486
+#, fuzzy
+#| msgid "unlock the specified file or folder"
+msgctxt "request type"
 msgid "unlock the specified file or folder"
 msgstr "Иҳота кардани файл ё феҳристи муайян кардашударо нест кардан"
 
 #: ../kioslave/http/http.cpp:1489
+#, fuzzy
+#| msgid "delete the specified file or folder"
+msgctxt "request type"
 msgid "delete the specified file or folder"
 msgstr "Файл ё феҳристи муайяншударо нест мекунад"
 
 #: ../kioslave/http/http.cpp:1492
+#, fuzzy
+#| msgid "query the server's capabilities"
+msgctxt "request type"
 msgid "query the server's capabilities"
 msgstr "Имконияҳои серверро мепурсад"
 
 #: ../kioslave/http/http.cpp:1495
+#, fuzzy
+#| msgid "retrieve the contents of the specified file or folder"
+msgctxt "request type"
 msgid "retrieve the contents of the specified file or folder"
 msgstr "Кабул кардани маълумотҳои дохили файл ё феҳрист."
 
-#: ../kioslave/http/http.cpp:1507 ../kioslave/http/http.cpp:1660
-#, kde-format
+#: ../kioslave/http/http.cpp:1507
+#, fuzzy, kde-format
+#| msgid "An unexpected error (%1) occurred while attempting to %2."
+msgctxt "%1: code, %2: request type"
 msgid "An unexpected error (%1) occurred while attempting to %2."
 msgstr "Ба хатогии ногаҳонӣ(%1), ҳангоми кӯшиши %2 даст дода шуд."
 
@@ -5012,7 +5047,11 @@ msgid "The server does not support the WebDAV protocol."
 msgstr "Сервер протоколи WebDAV-ро дастгирӣ намекунад."
 
 #: ../kioslave/http/http.cpp:1556
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "An error occurred while attempting to %1, %2. A summary of the reasons is "
+#| "below.<ul>"
+msgctxt "%1: request type, %2: url"
 msgid ""
 "An error occurred while attempting to %1, %2. A summary of the reasons is "
 "below.<ul>"
@@ -5021,7 +5060,9 @@ msgstr ""
 "поёнтар.<ul>"
 
 #: ../kioslave/http/http.cpp:1568 ../kioslave/http/http.cpp:1671
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Access was denied while attempting to %1."
+msgctxt "%1: request type"
 msgid "Access was denied while attempting to %1."
 msgstr "Дастрас маън карда шуда буд, ҳангоми кӯшиши %1"
 
@@ -5058,7 +5099,9 @@ msgid "The server does not support the request type of the body."
 msgstr "Намуди элементи ҷисми додашударо бо ин сервер дастгирӣ намекунад."
 
 #: ../kioslave/http/http.cpp:1611 ../kioslave/http/http.cpp:1683
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Unable to %1 because the resource is locked."
+msgctxt "%1: request type"
 msgid "Unable to %1 because the resource is locked."
 msgstr "%1 нашуда истодааст, барои он ки захира ғайри дастрас аст."
 
@@ -5067,7 +5110,11 @@ msgid "This action was prevented by another error."
 msgstr "Ин амалиёт аз сабаби дигар хатогиҳо иҷро карда нашуд."
 
 #: ../kioslave/http/http.cpp:1622 ../kioslave/http/http.cpp:1688
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Unable to %1 because the destination server refuses to accept the file or "
+#| "folder."
+msgctxt "%1: request type"
 msgid ""
 "Unable to %1 because the destination server refuses to accept the file or "
 "folder."
@@ -5084,9 +5131,18 @@ msgstr ""
 "усул."
 
 #: ../kioslave/http/http.cpp:1651
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "upload %1"
+msgctxt "request type"
 msgid "upload %1"
 msgstr "фиристодан %1"
+
+#: ../kioslave/http/http.cpp:1660
+#, fuzzy, kde-format
+#| msgid "An unexpected error (%1) occurred while attempting to %2."
+msgctxt "%1: response code, %2: request type"
+msgid "An unexpected error (%1) occurred while attempting to %2."
+msgstr "Ба хатогии ногаҳонӣ(%1), ҳангоми кӯшиши %2 даст дода шуд."
 
 #: ../kioslave/http/http.cpp:1969
 #, kde-format
