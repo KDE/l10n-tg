@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-12 05:59+0100\n"
+"POT-Creation-Date: 2007-11-13 06:01+0100\n"
 "PO-Revision-Date: 2005-12-21 14:47+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: \n"
@@ -1235,42 +1235,48 @@ msgstr "Первый импорт"
 msgid "Files"
 msgstr "&Файлы:"
 
-#: languages/cpp/parser/rpp/pp-macro-expander.cpp:61
+#: languages/cpp/parser/rpp/pp-macro-expander.cpp:63
 #, kde-format
 msgid "Call to macro %1 missing argument number %2"
 msgstr ""
 
-#: languages/cpp/parser/rpp/pp-engine.cpp:546
+#: languages/cpp/parser/rpp/pp-engine.cpp:384
+#, fuzzy
+msgid "Unterminated #if statement"
+msgstr "Пройти к следующей строке"
+
+#: languages/cpp/parser/rpp/pp-engine.cpp:551
 #, kde-format
 msgid "expected ``identifier'' found: %1"
 msgstr ""
 
-#: languages/cpp/parser/rpp/pp-engine.cpp:559
+#: languages/cpp/parser/rpp/pp-engine.cpp:567
 #, fuzzy
 msgid "expected ``)''"
 msgstr "ожидается }"
 
-#: languages/cpp/parser/rpp/pp-engine.cpp:585
+#: languages/cpp/parser/rpp/pp-engine.cpp:597
 #, kde-format
 msgid "expected ``)'' = %1"
 msgstr ""
 
-#: languages/cpp/parser/rpp/pp-engine.cpp:614
-#: languages/cpp/parser/rpp/pp-engine.cpp:623
-msgid "division by zero"
-msgstr ""
+#: languages/cpp/parser/rpp/pp-engine.cpp:630
+#: languages/cpp/parser/rpp/pp-engine.cpp:642
+#, fuzzy
+msgid "Division by zero"
+msgstr "&Деления"
 
-#: languages/cpp/parser/rpp/pp-engine.cpp:857
+#: languages/cpp/parser/rpp/pp-engine.cpp:879
 #, kde-format
 msgid "expected ``:'' = %1"
 msgstr ""
 
-#: languages/cpp/parser/rpp/pp-engine.cpp:917
-#: languages/cpp/parser/rpp/pp-engine.cpp:938
+#: languages/cpp/parser/rpp/pp-engine.cpp:942
+#: languages/cpp/parser/rpp/pp-engine.cpp:966
 msgid "#else without #if"
 msgstr ""
 
-#: languages/cpp/parser/rpp/pp-engine.cpp:973
+#: languages/cpp/parser/rpp/pp-engine.cpp:1004
 #, kde-format
 msgid "#endif without #if at output line %1"
 msgstr ""
@@ -2295,50 +2301,6 @@ msgstr "Санадсозӣ"
 msgid "Document View"
 msgstr "Санадсозӣ"
 
-#: plugins/codeview/kdevcodeview.cpp:48 plugins/codeview/kdevcodeview.cpp:51
-#: plugins/codeview/kdevcodeview.cpp:52 plugins/codeview/kdevcodeview.cpp:91
-#: plugins/codeview/kdevcodeview.cpp:142
-#, fuzzy
-msgid "Code View"
-msgstr "Ёргирии рамз"
-
-#: plugins/codeview/kdevcodeview.cpp:64
-#, fuzzy
-msgid "No active language part loaded!"
-msgstr "Не найдена активная цель"
-
-#: plugins/codeview/kdevcodeview.cpp:78
-msgid "Active language part does not offer a proper codemodel!"
-msgstr ""
-
-#: plugins/codeview/kdevcodeview.cpp:97 plugins/codeview/kdevcodeview.cpp:101
-#, fuzzy
-msgid "Mode"
-msgstr "Модул"
-
-#: plugins/codeview/kdevcodeview.cpp:102
-#, fuzzy
-msgctxt "Current View"
-msgid "&Current"
-msgstr "Ҷорӣ"
-
-#: plugins/codeview/kdevcodeview.cpp:103
-#, fuzzy
-msgctxt "Normalize View"
-msgid "&Normalize"
-msgstr "Нормальный режим"
-
-#: plugins/codeview/kdevcodeview.cpp:104
-#, fuzzy
-msgctxt "Aggregate View"
-msgid "&Aggregate"
-msgstr "&Сохтан"
-
-#: plugins/codeview/kdevcodeview.cpp:112 plugins/codeview/kdevcodeview.cpp:116
-#, fuzzy
-msgid "Filter"
-msgstr "Фильтровано"
-
 #: plugins/valgrind/valgrind_dialog.cpp:100
 #, fuzzy
 msgid ""
@@ -2477,6 +2439,37 @@ msgstr "Редактор действий"
 #, fuzzy
 msgid "Object Inspector"
 msgstr "Обозреватель объектов"
+
+#, fuzzy
+#~ msgid "Code View"
+#~ msgstr "Ёргирии рамз"
+
+#, fuzzy
+#~ msgid "No active language part loaded!"
+#~ msgstr "Не найдена активная цель"
+
+#, fuzzy
+#~ msgid "Mode"
+#~ msgstr "Модул"
+
+#, fuzzy
+#~ msgctxt "Current View"
+#~ msgid "&Current"
+#~ msgstr "Ҷорӣ"
+
+#, fuzzy
+#~ msgctxt "Normalize View"
+#~ msgid "&Normalize"
+#~ msgstr "Нормальный режим"
+
+#, fuzzy
+#~ msgctxt "Aggregate View"
+#~ msgid "&Aggregate"
+#~ msgstr "&Сохтан"
+
+#, fuzzy
+#~ msgid "Filter"
+#~ msgstr "Фильтровано"
 
 #, fuzzy
 #~ msgid "Form"
@@ -6756,10 +6749,6 @@ msgstr "Обозреватель объектов"
 #, fuzzy
 #~ msgid "&External subprograms without definition"
 #~ msgstr "&Внешние подпрограммы без определения"
-
-#, fuzzy
-#~ msgid "&Divisions"
-#~ msgstr "&Деления"
 
 #, fuzzy
 #~ msgid "&Identifiers without explicit type"
@@ -12557,10 +12546,6 @@ msgstr "Обозреватель объектов"
 #, fuzzy
 #~ msgid "Step &Into"
 #~ msgstr "П&ройти к следующей строке"
-
-#, fuzzy
-#~ msgid "Step into the next statement"
-#~ msgstr "Пройти к следующей строке"
 
 #, fuzzy
 #~ msgid ""
