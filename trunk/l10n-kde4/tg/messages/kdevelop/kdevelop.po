@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-04 06:06+0100\n"
+"POT-Creation-Date: 2007-12-05 06:00+0100\n"
 "PO-Revision-Date: 2005-12-21 14:47+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: \n"
@@ -1768,68 +1768,78 @@ msgctxt "Code breakpoint"
 msgid "Code"
 msgstr "&Код:"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:303
+#: languages/cpp/debugger/gdbcontroller.cpp:309
 #, kde-format
 msgid ""
 "<b>Gdb command sent when debugger is not running</b><br>The command was:<br> "
 "%1"
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:305
+#: languages/cpp/debugger/gdbcontroller.cpp:311
 #: languages/cpp/debugger/variablewidget.cpp:773
 #, fuzzy
 msgid "Internal error"
 msgstr "Внутренняя ошибка"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:398
-msgid "<b>Invalid debugger command</b><br>"
+#: languages/cpp/debugger/gdbcontroller.cpp:404
+#, kde-format
+msgid "<b>Invalid debugger command</b><br>%1"
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:400
+#: languages/cpp/debugger/gdbcontroller.cpp:405
 msgid "Invalid debugger command"
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:490
+#: languages/cpp/debugger/gdbcontroller.cpp:495
 msgid ""
 "<b>Invalid gdb reply</b><p>The 'stopped' packet does not include the "
 "'reason' field'."
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:492
+#: languages/cpp/debugger/gdbcontroller.cpp:497
 msgid "The gdb reply is: bla-bla-bla"
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:493
-#: languages/cpp/debugger/gdbcontroller.cpp:729
+#: languages/cpp/debugger/gdbcontroller.cpp:498
+#: languages/cpp/debugger/gdbcontroller.cpp:730
 msgid "Invalid gdb reply"
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:508
+#: languages/cpp/debugger/gdbcontroller.cpp:513
 #, fuzzy, kde-format
 msgid "Exited on signal %1"
 msgstr "Добавить новый сигнал"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:562
+#: languages/cpp/debugger/gdbcontroller.cpp:566
 #, kde-format
 msgid "Program received signal %1 (%2)"
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:564
+#: languages/cpp/debugger/gdbcontroller.cpp:567
 #, fuzzy
 msgid "Received signal"
 msgstr "Удалить сигнал"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:656
-#, fuzzy
-msgid "gdb message:\n"
+#: languages/cpp/debugger/gdbcontroller.cpp:657
+#, fuzzy, kde-format
+msgid ""
+"gdb message:\n"
+"%1"
 msgstr "сообщение rdb:\n"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:698
+#: languages/cpp/debugger/gdbcontroller.cpp:657
+#: languages/cpp/debugger/gdbcontroller.cpp:911
+#, fuzzy
+#| msgid "Parsing"
+msgid "Warning"
+msgstr "Санҷиши имло"
+
+#: languages/cpp/debugger/gdbcontroller.cpp:699
 #, fuzzy
 msgid "No such file or directory."
 msgstr "Нет такого файла или каталога."
 
-#: languages/cpp/debugger/gdbcontroller.cpp:722
+#: languages/cpp/debugger/gdbcontroller.cpp:723
 #, kde-format
 msgid ""
 "Invalid gdb reply\n"
@@ -1838,12 +1848,17 @@ msgid ""
 "Invalid response kind: \"%3\""
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1006
-#, fuzzy
-msgid "Debugger stopped"
-msgstr "Отладчик остановлен"
+#: languages/cpp/debugger/gdbcontroller.cpp:832
+#, fuzzy, kde-format
+msgid "Could not locate the debugging shell '%1'."
+msgstr "Невозможно обнаружить отладочную оболочку '%1'."
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1071
+#: languages/cpp/debugger/gdbcontroller.cpp:833
+#, fuzzy
+msgid "Debugging Shell Not Found"
+msgstr "Отладочная оболочка не найдена"
+
+#: languages/cpp/debugger/gdbcontroller.cpp:907
 #, fuzzy
 msgid ""
 "GDB cannot use the tty* or pty* devices.\n"
@@ -1856,7 +1871,12 @@ msgstr ""
 "Добавьте пользователя в группу, имеющую права доступа по записи к ним или "
 "попросите администратора системы сделать это."
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1118
+#: languages/cpp/debugger/gdbcontroller.cpp:1098
+#, fuzzy
+msgid "Running program"
+msgstr "&Барномаи умумӣ:"
+
+#: languages/cpp/debugger/gdbcontroller.cpp:1138
 #, kde-format
 msgid ""
 "<b>Application does not exist</b><p>The application you're trying to debug,"
@@ -1865,12 +1885,12 @@ msgid ""
 "debugger configuration."
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1124
+#: languages/cpp/debugger/gdbcontroller.cpp:1144
 #, fuzzy
 msgid "Application does not exist"
 msgstr "'%1' не существует."
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1136
+#: languages/cpp/debugger/gdbcontroller.cpp:1156
 #, kde-format
 msgid ""
 "<b>Could not run application '%1'.</b><p>The application does not have the "
@@ -1878,63 +1898,85 @@ msgid ""
 "manually."
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1141
+#: languages/cpp/debugger/gdbcontroller.cpp:1161
 #, fuzzy
 msgid "Could not run application"
 msgstr "Сохтани барнома"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1312
-#: languages/cpp/debugger/gdbcontroller.cpp:1666
-#, fuzzy
-msgid "Process exited"
-msgstr "Процесс завершён"
-
-#: languages/cpp/debugger/gdbcontroller.cpp:1319
-msgid "<b>Debugger error</b><p>Debugger reported the following error:<p><tt>"
+#: languages/cpp/debugger/gdbcontroller.cpp:1329
+#, kde-format
+msgid "<b>Debugger error</b><p>Debugger reported the following error:<p><tt>%1"
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1322
+#: languages/cpp/debugger/gdbcontroller.cpp:1332
 #: languages/cpp/debugger/variablewidget.cpp:908
 #, fuzzy
 #| msgid "Debugger Toolbar"
 msgid "Debugger error"
 msgstr "Пайраҳаи асбоби Debugger "
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1550
+#: languages/cpp/debugger/gdbcontroller.cpp:1559
 msgctxt "<b>Internal debugger error</b>"
 msgid ""
 "<p>The debugger component encountered internal error while processing reply "
 "from gdb. Please submit a bug report."
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1552
+#: languages/cpp/debugger/gdbcontroller.cpp:1561
 #, kde-format
 msgid ""
 "The exception is: %1\n"
 "The MI response is: %2"
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1554
+#: languages/cpp/debugger/gdbcontroller.cpp:1563
 #, fuzzy
 msgid "Internal debugger error"
 msgstr "Внутренняя ошибка"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1677
+#: languages/cpp/debugger/gdbcontroller.cpp:1673
+#: languages/cpp/debugger/debuggerplugin.cpp:866
+#, fuzzy
+msgid "Process exited"
+msgstr "Процесс завершён"
+
+#: languages/cpp/debugger/gdbcontroller.cpp:1686
 #, kde-format
 msgid ""
 "<b>Could not start debugger.</b><p>Could not run '%1'. Make sure that the "
 "path name is specified correctly."
 msgstr ""
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1681
+#: languages/cpp/debugger/gdbcontroller.cpp:1690
 #, fuzzy
 msgid "Could not start debugger"
 msgstr "Запустить в отладчике"
 
-#: languages/cpp/debugger/gdbcontroller.cpp:1692
+#: languages/cpp/debugger/gdbcontroller.cpp:1701
 #, fuzzy
 msgid "Process didn't start"
 msgstr "Процесс завершён с кодом %1"
+
+#: languages/cpp/debugger/gdbcontroller.cpp:1727
+#, kde-format
+msgid ""
+"%1 commands in queue\n"
+"%2 commands being processed by gdb\n"
+"Debugger state: %3\n"
+msgstr ""
+
+#: languages/cpp/debugger/gdbcontroller.cpp:1733
+#, kde-format
+msgid ""
+"Current command class: '%1'\n"
+"Current command text: '%2'\n"
+"Current command original text: '%3'\n"
+msgstr ""
+
+#: languages/cpp/debugger/gdbcontroller.cpp:1740
+#, fuzzy
+msgid "Debugger status"
+msgstr "Отладчик остановлен"
 
 #: languages/cpp/debugger/disassemblewidget.cpp:54
 #, fuzzy
@@ -2060,7 +2102,7 @@ msgid "Show text"
 msgstr "Матни нав"
 
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:265
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:770
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:766
 #, fuzzy
 msgid "Disable"
 msgstr "Отключить"
@@ -2092,7 +2134,7 @@ msgid ""
 "value: %3<br>New value: %4"
 msgstr ""
 
-#: languages/cpp/debugger/gdbbreakpointwidget.cpp:774
+#: languages/cpp/debugger/gdbbreakpointwidget.cpp:770
 #, fuzzy
 msgid "Enable"
 msgstr "Включить"
@@ -2116,18 +2158,18 @@ msgstr "Команда &GDB:"
 msgid "Pause execution of the app to enter gdb commands"
 msgstr "Приостановить выполнение приложения для ввода команд gdb"
 
-#: languages/cpp/debugger/gdboutputwidget.cpp:351
+#: languages/cpp/debugger/gdboutputwidget.cpp:352
 msgid "Show Internal Commands"
 msgstr ""
 
-#: languages/cpp/debugger/gdboutputwidget.cpp:358
+#: languages/cpp/debugger/gdboutputwidget.cpp:359
 msgid ""
 "Controls if commands issued internally by KDevelop will be shown or not."
 "<br>This option will affect only future commands, it won't add or remove "
 "already issued commands from the view."
 msgstr ""
 
-#: languages/cpp/debugger/gdboutputwidget.cpp:363
+#: languages/cpp/debugger/gdboutputwidget.cpp:364
 #, fuzzy
 msgid "Copy All"
 msgstr "Свернуть всё"
@@ -2272,8 +2314,10 @@ msgid "Locals"
 msgstr "локалӣ"
 
 #: languages/cpp/debugger/variablewidget.cpp:907
-msgid "<b>Debugger error</b><br>"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Debugger Toolbar"
+msgid "<b>Debugger error</b><br>%1"
+msgstr "Пайраҳаи асбоби Debugger "
 
 #: languages/cpp/debugger/variablewidget.cpp:1990
 #, fuzzy
@@ -2352,7 +2396,7 @@ msgid "Debug views"
 msgstr "Представления отладчика"
 
 #: languages/cpp/debugger/debuggerplugin.cpp:285
-#: languages/cpp/debugger/debuggerplugin.cpp:688
+#: languages/cpp/debugger/debuggerplugin.cpp:795
 #, fuzzy
 msgid "&Start"
 msgstr "&Запуск:"
@@ -2663,50 +2707,48 @@ msgstr ""
 "<b>Наблюдение</b><p>Добавляет выражение под курсором в список \"Наблюдение и "
 "переменные\""
 
-#: languages/cpp/debugger/debuggerplugin.cpp:622
-#, fuzzy, kde-format
-msgid "Could not locate the debugging shell '%1'."
-msgstr "Невозможно обнаружить отладочную оболочку '%1'."
-
-#: languages/cpp/debugger/debuggerplugin.cpp:623
-#, fuzzy
-msgid "Debugging Shell Not Found"
-msgstr "Отладочная оболочка не найдена"
-
-#: languages/cpp/debugger/debuggerplugin.cpp:634
-#: languages/cpp/debugger/debuggerplugin.cpp:768
-#, fuzzy
-msgid "&Continue"
-msgstr "&Продолжить"
-
-#: languages/cpp/debugger/debuggerplugin.cpp:635
-#: languages/cpp/debugger/debuggerplugin.cpp:769
-#, fuzzy
-msgid "Continues the application execution"
-msgstr "Прервать выполнение приложения"
-
-#: languages/cpp/debugger/debuggerplugin.cpp:637
-#: languages/cpp/debugger/debuggerplugin.cpp:770
-#, fuzzy
+#: languages/cpp/debugger/debuggerplugin.cpp:613
 msgid ""
-"Continue application execution\n"
-"\n"
-"Continues the execution of your application in the debugger. This only takes "
-"effect when the application has been halted by the debugger (i.e. a "
-"breakpoint has been activated or the interrupt was pressed)."
+"<b>GDB exited abnormally</b><p>This is likely a bug in GDB. Examine the gdb "
+"output window and then stop the debugger"
 msgstr ""
-"Продолжить выполнение приложения\n"
-"\n"
-"Продолжает выполнение приложения в отладчике. Это работает только, если "
-"приложение было приостановлено отладчиком (т.е. отладчик дошёл до точки "
-"остановки или кнопка \"приостановить\" была нажата)."
 
-#: languages/cpp/debugger/debuggerplugin.cpp:690
+#: languages/cpp/debugger/debuggerplugin.cpp:616
+#, fuzzy
+msgid "GDB exited abnormally"
+msgstr "*** Нормальное завершение ***"
+
+#: languages/cpp/debugger/debuggerplugin.cpp:640
+#, fuzzy
+msgid "Choose a core file to examine..."
+msgstr "Выберите файл core для загрузки..."
+
+#: languages/cpp/debugger/debuggerplugin.cpp:646
+#, fuzzy, kde-format
+msgid "Examining core file %1"
+msgstr "Загружается core файл %1"
+
+#: languages/cpp/debugger/debuggerplugin.cpp:654
+#, fuzzy
+msgid "Choose a process to attach to..."
+msgstr "Выберите процесс для присоединения к нему..."
+
+#: languages/cpp/debugger/debuggerplugin.cpp:666
+#, fuzzy, kde-format
+msgid "Attaching to process %1"
+msgstr "Присоединяется процесс %1"
+
+#: languages/cpp/debugger/debuggerplugin.cpp:767
+#, fuzzy
+msgid "Debugger"
+msgstr "Отладчик"
+
+#: languages/cpp/debugger/debuggerplugin.cpp:796
 #, fuzzy
 msgid "Runs the program in the debugger"
 msgstr "Запустить программу в отладчике"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:691
+#: languages/cpp/debugger/debuggerplugin.cpp:797
 #, fuzzy
 msgid ""
 "Start in debugger\n"
@@ -2721,73 +2763,35 @@ msgstr ""
 "остановки до этого, или вы можете приостановить приложение, пока оно "
 "запущено, чтобы получить информацию о переменных, стеке вызова и.т.п."
 
-#: languages/cpp/debugger/debuggerplugin.cpp:709
-msgid ""
-"<b>GDB exited abnormally</b><p>This is likely a bug in GDB. Examine the gdb "
-"output window and then stop the debugger"
-msgstr ""
-
-#: languages/cpp/debugger/debuggerplugin.cpp:712
-#, fuzzy
-msgid "GDB exited abnormally"
-msgstr "*** Нормальное завершение ***"
-
-#: languages/cpp/debugger/debuggerplugin.cpp:751
-#, fuzzy
-msgid "Debugging program"
-msgstr "Идёт отладка программы"
-
-#: languages/cpp/debugger/debuggerplugin.cpp:776
-#, fuzzy
-msgid "Running program"
-msgstr "&Барномаи умумӣ:"
-
-#: languages/cpp/debugger/debuggerplugin.cpp:790
-#, fuzzy
-msgid "Choose a core file to examine..."
-msgstr "Выберите файл core для загрузки..."
-
-#: languages/cpp/debugger/debuggerplugin.cpp:796
-#, fuzzy, kde-format
-msgid "Examining core file %1"
-msgstr "Загружается core файл %1"
-
 #: languages/cpp/debugger/debuggerplugin.cpp:805
 #, fuzzy
-msgid "Choose a process to attach to..."
-msgstr "Выберите процесс для присоединения к нему..."
+msgid "Debugger stopped"
+msgstr "Отладчик остановлен"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:817
-#, fuzzy, kde-format
-msgid "Attaching to process %1"
-msgstr "Присоединяется процесс %1"
-
-#: languages/cpp/debugger/debuggerplugin.cpp:911
+#: languages/cpp/debugger/debuggerplugin.cpp:820
 #, fuzzy
-msgctxt "To start something"
-msgid "Start"
-msgstr "&Запуск:"
+msgid "&Continue"
+msgstr "&Продолжить"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:912
+#: languages/cpp/debugger/debuggerplugin.cpp:821
 #, fuzzy
-msgid "Restart the program in the debugger"
-msgstr "Перезапустить приложение в отладчике"
+msgid "Continues the application execution"
+msgstr "Прервать выполнение приложения"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:913
+#: languages/cpp/debugger/debuggerplugin.cpp:822
 #, fuzzy
 msgid ""
-"Restart in debugger\n"
+"Continue application execution\n"
 "\n"
-"Restarts the program in the debugger"
+"Continues the execution of your application in the debugger. This only takes "
+"effect when the application has been halted by the debugger (i.e. a "
+"breakpoint has been activated or the interrupt was pressed)."
 msgstr ""
-"Перезапуск в отладчике\n"
+"Продолжить выполнение приложения\n"
 "\n"
-"Перезапускает программу в отладчике"
-
-#: languages/cpp/debugger/debuggerplugin.cpp:1006
-#, fuzzy
-msgid "Debugger"
-msgstr "Отладчик"
+"Продолжает выполнение приложения в отладчике. Это работает только, если "
+"приложение было приостановлено отладчиком (т.е. отладчик дошёл до точки "
+"остановки или кнопка \"приостановить\" была нажата)."
 
 #: languages/cpp/debugger/stty.cpp:335
 #, fuzzy
@@ -4065,6 +4069,29 @@ msgstr "Точка наблюдения"
 #, fuzzy
 msgid "Read Watchpoint"
 msgstr "Точка наблюдения"
+
+#, fuzzy
+#~ msgid "Debugging program"
+#~ msgstr "Идёт отладка программы"
+
+#, fuzzy
+#~ msgctxt "To start something"
+#~ msgid "Start"
+#~ msgstr "&Запуск:"
+
+#, fuzzy
+#~ msgid "Restart the program in the debugger"
+#~ msgstr "Перезапустить приложение в отладчике"
+
+#, fuzzy
+#~ msgid ""
+#~ "Restart in debugger\n"
+#~ "\n"
+#~ "Restarts the program in the debugger"
+#~ msgstr ""
+#~ "Перезапуск в отладчике\n"
+#~ "\n"
+#~ "Перезапускает программу в отладчике"
 
 #, fuzzy
 #~ msgid "<b>Toggle breakpoint</b><p>Toggles breakpoint at the current line."
@@ -7488,9 +7515,6 @@ msgstr "Точка наблюдения"
 
 #~ msgid "Library Settings"
 #~ msgstr "Танзими Library"
-
-#~ msgid "Parsing"
-#~ msgstr "Санҷиши имло"
 
 #~ msgid "msec"
 #~ msgstr "msec"
