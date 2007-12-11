@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-10 05:59+0100\n"
+"POT-Creation-Date: 2007-12-11 06:01+0100\n"
 "PO-Revision-Date: 2005-12-21 14:47+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: \n"
@@ -1612,7 +1612,7 @@ msgid "Class"
 msgstr "Синф"
 
 #: languages/cpp/cppduchain/navigationwidget.cpp:222
-#: languages/cpp/debugger/variablecollection.cpp:190
+#: languages/cpp/debugger/variablecollection.cpp:185
 #, fuzzy
 msgid "Variable"
 msgstr "Переменная"
@@ -1630,6 +1630,7 @@ msgid "Namespace alias"
 msgstr "Фосилаи &номҳо:"
 
 #: languages/cpp/cppduchain/navigationwidget.cpp:232
+#: languages/cpp/debugger/stackmanager.cpp:267
 #, fuzzy
 msgid "Function"
 msgstr "Функция"
@@ -1711,6 +1712,22 @@ msgstr "Эълон"
 #: languages/cpp/cppduchain/navigationwidget.cpp:697
 msgid "not parsed yet"
 msgstr ""
+
+#: languages/cpp/debugger/stackmanager.cpp:250
+#: languages/cpp/debugger/framestackwidget.cpp:529
+#, fuzzy, kde-format
+msgid "Thread %1"
+msgstr "Поток"
+
+#: languages/cpp/debugger/stackmanager.cpp:265
+msgid "ID"
+msgstr ""
+
+#: languages/cpp/debugger/stackmanager.cpp:269
+#, fuzzy
+#| msgid "Source"
+msgid "Source"
+msgstr "Манбаъи рамзӣ"
 
 #: languages/cpp/debugger/breakpoint.cpp:269
 #, fuzzy
@@ -1966,11 +1983,6 @@ msgstr ""
 "чтобы попасть в данную точку программы. Нажав на элемент в этом списке, вы "
 "можете просмотреть любое значение в любой предыдущей вызывающей функции."
 
-#: languages/cpp/debugger/framestackwidget.cpp:529
-#, fuzzy, kde-format
-msgid "Thread %1"
-msgstr "Поток"
-
 #: languages/cpp/debugger/variableitem.cpp:871
 #, fuzzy, kde-format
 #| msgid "Debugger Toolbar"
@@ -2004,7 +2016,7 @@ msgstr ""
 "изменить и перенесёт вас в окне исходного кода к соответствующей строке."
 
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:240
-#: languages/cpp/debugger/variablecollection.cpp:196
+#: languages/cpp/debugger/variablecollection.cpp:191
 #: buildtools/managers/cmake/cmakecachemodel.cpp:14
 #, fuzzy
 msgid "Type"
@@ -2275,6 +2287,11 @@ msgstr "Удалить выделенную точку останова"
 #| msgid "Value"
 msgid "Copy Value"
 msgstr "Аҳамият"
+
+#: languages/cpp/debugger/framestackitem.cpp:39
+#, fuzzy
+msgid "<Loading...>"
+msgstr "Загрузка: %1"
 
 #: languages/cpp/debugger/memviewdlg.cpp:97
 #, fuzzy
@@ -2751,7 +2768,7 @@ msgstr ""
 "приложение было приостановлено отладчиком (т.е. отладчик дошёл до точки "
 "остановки или кнопка \"приостановить\" была нажата)."
 
-#: languages/cpp/debugger/variablecollection.cpp:193
+#: languages/cpp/debugger/variablecollection.cpp:188
 #: buildtools/managers/cmake/cmakecachemodel.cpp:15
 msgid "Value"
 msgstr "Аҳамият"
@@ -5271,11 +5288,6 @@ msgstr "Точка наблюдения"
 #~| msgid "Port"
 #~ msgid " Abort"
 #~ msgstr "Порт"
-
-#, fuzzy
-#~| msgid "Source"
-#~ msgid "Source:"
-#~ msgstr "Манбаъи рамзӣ"
 
 #, fuzzy
 #~ msgid "Destination:"
@@ -15996,10 +16008,6 @@ msgstr "Точка наблюдения"
 #, fuzzy
 #~ msgid "&Tile..."
 #~ msgstr "В&ыстроить..."
-
-#, fuzzy
-#~ msgid "Loading: %1"
-#~ msgstr "Загрузка: %1"
 
 #, fuzzy
 #~ msgid "Reopen"
