@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpilot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-04 06:20+0100\n"
+"POT-Creation-Date: 2007-12-20 06:14+0100\n"
 "PO-Revision-Date: 2004-10-25 15:26+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -52,6 +52,24 @@ msgstr "<b><em>Қайд:</em></b><br>"
 #: lib/pilotTodoEntry.cc:157 lib/pilotDateEntry.cc:275
 msgid "Note:\n"
 msgstr "Қайд:\n"
+
+#: lib/kpilotdevicelinkPrivate.h:304
+msgid " The port does not exist."
+msgstr "Порт мавҷуд нест."
+
+#: lib/kpilotdevicelinkPrivate.h:307
+#, fuzzy
+#| msgid " These is no such device."
+msgid " There is no such device."
+msgstr "Ин хел сохт нест."
+
+#: lib/kpilotdevicelinkPrivate.h:310
+msgid " You do not have permission to open the Pilot device."
+msgstr "Шумо ҳақ надоред бо Pilot aлоқа кунед."
+
+#: lib/kpilotdevicelinkPrivate.h:314
+msgid " Check Pilot path and permissions."
+msgstr "Роҳҳо ва ҳуқуқи даромадани Pilot-po тафтиш кунед."
 
 #: lib/pilotMemo.cc:72
 #, fuzzy, kde-format
@@ -170,67 +188,54 @@ msgstr "Савол"
 msgid "&Do not ask again"
 msgstr "Бори дигар напурсед"
 
-#: lib/kpilotdevicelink.cc:294
-msgid " The port does not exist."
-msgstr "Порт мавҷуд нест."
+#: lib/kpilotdevicelink.cc:154
+#, kde-format
+msgid "Could not open device: %1 (will retry)"
+msgstr "Сохт кушода намешавад: %1 (кушиш такрор мешавад)"
 
-#: lib/kpilotdevicelink.cc:297
-#, fuzzy
-#| msgid " These is no such device."
-msgid " There is no such device."
-msgstr "Ин хел сохт нест."
-
-#: lib/kpilotdevicelink.cc:300
-msgid " You do not have permission to open the Pilot device."
-msgstr "Шумо ҳақ надоред бо Pilot aлоқа кунед."
-
-#: lib/kpilotdevicelink.cc:304
-msgid " Check Pilot path and permissions."
-msgstr "Роҳҳо ва ҳуқуқи даромадани Pilot-po тафтиш кунед."
-
-#: lib/kpilotdevicelink.cc:334
+#: lib/kpilotdevicelink.cc:193
 #, kde-format
 msgid "Trying to open device %1..."
 msgstr "Кӯшиши кушодани сохти %1..."
 
-#: lib/kpilotdevicelink.cc:377
+#: lib/kpilotdevicelink.cc:247
 msgid "Already listening on that device"
 msgstr "Акнун ба сохт дастрас аст"
 
-#: lib/kpilotdevicelink.cc:397
+#: lib/kpilotdevicelink.cc:267
 #, fuzzy, kde-format
 #| msgid "Cannot create socket for communicating with the Pilot"
 msgid "Cannot create socket for communicating with the Pilot (%1)"
 msgstr "Сохтани сокет барои алоқа бо Pilot муяссар нашуд"
 
-#: lib/kpilotdevicelink.cc:423
+#: lib/kpilotdevicelink.cc:295
 #, kde-format
 msgid "Cannot open Pilot port \"%1\". "
 msgstr "Порти Pilot\"%1\". кушодан муяссар нест. "
 
-#: lib/kpilotdevicelink.cc:456
+#: lib/kpilotdevicelink.cc:397
 #, kde-format
 msgid "Cannot listen on Pilot socket (%1)"
 msgstr "Хондан аз сокети Pilot (%1)муяссар нест"
 
-#: lib/kpilotdevicelink.cc:480 lib/kpilotdevicelink.cc:494
+#: lib/kpilotdevicelink.cc:417 lib/kpilotdevicelink.cc:432
 #, kde-format
 msgid "Cannot accept Pilot (%1)"
 msgstr "Қабул кардани дархостҳо аз Pilot (%1)муяссар нест"
 
-#: lib/kpilotdevicelink.cc:494
+#: lib/kpilotdevicelink.cc:433
 msgid "already connected"
 msgstr "аллакай пайваст шуд"
 
-#: lib/kpilotdevicelink.cc:509
+#: lib/kpilotdevicelink.cc:447
 msgid "Unable to read system information from Pilot"
 msgstr "Хондани системаи информация аз Pilot муяссар намешавад."
 
-#: lib/kpilotdevicelink.cc:541
+#: lib/kpilotdevicelink.cc:484
 msgid "Checking last PC..."
 msgstr "Тафтиши охирини PC..."
 
-#: lib/kpilotdevicelink.cc:550
+#: lib/kpilotdevicelink.cc:493
 msgid ""
 "Could not read user information from the Pilot. Perhaps you have a password "
 "set on the device?"
@@ -238,33 +243,28 @@ msgstr ""
 "Гирифтани информатсия дар бораи истифодабаранда аз Pilot муяссар намешавад. "
 "Мумкин шумо парол барқарор кардед?"
 
-#: lib/kpilotdevicelink.cc:608
-#, kde-format
-msgid "Could not open device: %1 (will retry)"
-msgstr "Сохт кушода намешавад: %1 (кушиш такрор мешавад)"
-
-#: lib/kpilotdevicelink.cc:795
+#: lib/kpilotdevicelink.cc:679
 msgid "The Pilot device is not configured yet."
 msgstr "Сохти Pilot ҳоло cоз нашудааст."
 
-#: lib/kpilotdevicelink.cc:836
+#: lib/kpilotdevicelink.cc:720
 #, kde-format
 msgid "Pilot device %1 is not read-write."
 msgstr "Сохти Pilot %1 барои хондан ва навиштан нест."
 
-#: lib/kpilotdevicelink.cc:844
+#: lib/kpilotdevicelink.cc:728
 #, kde-format
 msgid ""
 "Pilot device %1 does not exist. Probably it is a USB device and will appear "
 "during a HotSync."
 msgstr ""
 
-#: lib/kpilotdevicelink.cc:892 lib/kpilotdevicelink.cc:900
+#: lib/kpilotdevicelink.cc:776 lib/kpilotdevicelink.cc:784
 #, kde-format
 msgid "<qt>Cannot install the file &quot;%1&quot;.</qt>"
 msgstr "<qt>Барқарор кардани файл муяссар намешавад &quot;%1&quot;.</qt>"
 
-#: lib/kpilotdevicelink.cc:971
+#: lib/kpilotdevicelink.cc:855
 msgid "End of HotSync\n"
 msgstr "Анҷоми синхронизатсия\n"
 
