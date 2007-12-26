@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katecppsymbolviewer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-01-24 08:11+0100\n"
+"POT-Creation-Date: 2007-12-25 06:09+0100\n"
 "PO-Revision-Date: 2004-09-07 14:45+0500\n"
 "Last-Translator: Marina Kolucheva <youth_opportunities@tajik.net>\n"
 "Language-Team: tajik\n"
@@ -20,83 +20,180 @@ msgstr ""
 "X-Generator: KBabel 1.3.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: cpp_parser.cpp:43
+#: cpp_parser.cpp:43 php_parser.cpp:42
 msgid "Macros"
 msgstr "Макросҳо"
 
-#: cpp_parser.cpp:44
+#: cpp_parser.cpp:44 php_parser.cpp:43
 msgid "Structures"
 msgstr "Таркибҳо"
 
-#: cpp_parser.cpp:45 tcl_parser.cpp:43
+#: cpp_parser.cpp:45 fortran_parser.cpp:50 php_parser.cpp:44 tcl_parser.cpp:42
 msgid "Functions"
 msgstr "Функсияҳо"
 
-#: plugin_katesymbolviewer.cpp:67
+#: fortran_parser.cpp:43 perl_parser.cpp:25
+#, fuzzy
+#| msgid "Show Structures"
+msgid "Show Subroutines"
+msgstr "Намоиши таркибҳо"
+
+#: fortran_parser.cpp:44
+#, fuzzy
+#| msgid "Show Macros"
+msgid "Show Modules"
+msgstr "Намоиши макрос"
+
+#: fortran_parser.cpp:45 plugin_katesymbolviewer.cpp:81
+msgid "Show Functions"
+msgstr "Намоиши функсияҳо"
+
+#: fortran_parser.cpp:51 perl_parser.cpp:44
+msgid "Subroutines"
+msgstr ""
+
+#: fortran_parser.cpp:52
+msgid "Modules"
+msgstr ""
+
+#: perl_parser.cpp:23
+#, fuzzy
+#| msgid "Show Macros"
+msgid "Show Uses"
+msgstr "Намоиши макрос"
+
+#: perl_parser.cpp:24
+#, fuzzy
+#| msgid "Show Macros"
+msgid "Show Pragmas"
+msgstr "Намоиши макрос"
+
+#: perl_parser.cpp:42
+msgid "Uses"
+msgstr ""
+
+#: perl_parser.cpp:43
+msgid "Pragmas"
+msgstr ""
+
+#: plugin_katesymbolviewer.cpp:65
 msgid "Hide Symbols"
 msgstr "Пинҳони аломатҳо"
 
-#: plugin_katesymbolviewer.cpp:69
+#: plugin_katesymbolviewer.cpp:67
 #, fuzzy
 msgid "Show Symbols"
 msgstr "Намоиши аломатҳо"
 
-#: plugin_katesymbolviewer.cpp:79
+#: plugin_katesymbolviewer.cpp:77
 msgid "Refresh List"
 msgstr "Рӯйхатро аз нав кунед"
 
-#: plugin_katesymbolviewer.cpp:81
+#: plugin_katesymbolviewer.cpp:79
 msgid "Show Macros"
 msgstr "Намоиши макрос"
 
-#: plugin_katesymbolviewer.cpp:82
+#: plugin_katesymbolviewer.cpp:80
 msgid "Show Structures"
 msgstr "Намоиши таркибҳо"
 
 #: plugin_katesymbolviewer.cpp:83
-msgid "Show Functions"
-msgstr "Намоиши функсияҳо"
-
-#: plugin_katesymbolviewer.cpp:85
 msgid "List/Tree Mode"
 msgstr "Рӯйхат/Ҳолати дараҳт"
+
+#: plugin_katesymbolviewer.cpp:84
+msgid "Enable sorting"
+msgstr ""
 
 #: plugin_katesymbolviewer.cpp:133
 msgid "Symbol List"
 msgstr "Рӯйхати аломат"
 
-#: plugin_katesymbolviewer.cpp:146
-msgid "Symbols"
-msgstr "Аломатҳо"
-
-#: plugin_katesymbolviewer.cpp:147
-msgid "Position"
+#: plugin_katesymbolviewer.cpp:251
+msgid "Sorry. Language not supported yet"
 msgstr ""
 
-#: plugin_katesymbolviewer.cpp:326
+#: plugin_katesymbolviewer.cpp:343
 msgid "Parser Options"
 msgstr ""
 
-#: plugin_katesymbolviewer.cpp:330
-msgid "Display functions' parameters"
+#: plugin_katesymbolviewer.cpp:345
+msgid "Display functions parameters"
 msgstr ""
 
-#. i18n: tag Text
-#. i18n: file ui.rc line 4
-#: rc.cpp:4
-#, no-c-format
-msgid "&Settings"
+#: plugin_katesymbolviewer.cpp:346
+msgid "Automatically expand nodes in tree mode"
 msgstr ""
 
-#: tcl_parser.cpp:44
+#: python_parser.cpp:23 ruby_parser.cpp:23
+#, fuzzy
+#| msgid "Globals"
+msgid "Show Globals"
+msgstr "Глобалӣ"
+
+#: python_parser.cpp:24 ruby_parser.cpp:24
+#, fuzzy
+#| msgid "Show Macros"
+msgid "Show Methods"
+msgstr "Намоиши макрос"
+
+#: python_parser.cpp:25 ruby_parser.cpp:25
+#, fuzzy
+#| msgid "Show Macros"
+msgid "Show Classes"
+msgstr "Намоиши макрос"
+
+#: python_parser.cpp:43 ruby_parser.cpp:44
+msgid "Classes"
+msgstr ""
+
+#: python_parser.cpp:44 tcl_parser.cpp:43
 msgid "Globals"
 msgstr "Глобалӣ"
 
-#: plugin_katesymbolviewer.h:160
+#. i18n: tag Text
+#. i18n: file ui.rc line 4
+#: rc.cpp:3
+msgid "&Settings"
+msgstr ""
+
+#: xslt_parser.cpp:24
+#, fuzzy
+#| msgid "Show Macros"
+msgid "Show Params"
+msgstr "Намоиши макрос"
+
+#: xslt_parser.cpp:25
+#, fuzzy
+#| msgid "Show Macros"
+msgid "Show Variables"
+msgstr "Намоиши макрос"
+
+#: xslt_parser.cpp:26
+#, fuzzy
+msgid "Show Templates"
+msgstr "Намоиши аломатҳо"
+
+#: xslt_parser.cpp:50
+msgid "Params"
+msgstr ""
+
+#: xslt_parser.cpp:51
+msgid "Variables"
+msgstr ""
+
+#: xslt_parser.cpp:52
+msgid "Templates"
+msgstr ""
+
+#: plugin_katesymbolviewer.h:143
 #, fuzzy
 msgid "Symbol Viewer"
 msgstr "Рӯйхати аломат"
 
-#: plugin_katesymbolviewer.h:161
+#: plugin_katesymbolviewer.h:144
 msgid "Symbol Viewer Configuration Page"
 msgstr ""
+
+#~ msgid "Symbols"
+#~ msgstr "Аломатҳо"
