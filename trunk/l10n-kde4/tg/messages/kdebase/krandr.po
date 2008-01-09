@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krandr\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-03 06:19+0100\n"
+"POT-Creation-Date: 2008-01-09 07:16+0100\n"
 "PO-Revision-Date: 2006-12-22 19:04+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik Language\n"
@@ -20,79 +20,79 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: krandrmodule.cpp:57
+#: krandrmodule.cpp:59
 #, fuzzy
 msgid ""
 "Your X server does not support resizing and rotating the display. Please "
-"update to version 4.3 or greater. You need the X Resize And Rotate extension "
-"(RANDR) version 1.1 or greater to use this feature."
+"update to version 4.3 or greater. You need the X Resize, Rotate, and Reflect "
+"extension (RANDR) version 1.1 or greater to use this feature."
 msgstr ""
 "<qt>X-хидматрасони шумо тағири андоза ва гардиши экранро пуштибонӣ "
 "намекунад. Марҳамат карда онро то нусхаи 4.3 ё беҳтар нав кунед. Инчунин "
 "шумо эҳтиёҷ ба паҳншавии X Андоза ва Гардишe (RANDR) нусхаи 1.1 ё беҳтар "
 "барои истифодаи ин хусусият доред.</qt>"
 
-#: krandrtray.cpp:51
+#: krandrtray.cpp:52
 msgid "Screen resize & rotate"
 msgstr "Тағири Андоза ва Гардиш"
 
-#: krandrtray.cpp:67
+#: krandrtray.cpp:68
 msgid "Required X Extension Not Available"
 msgstr "Паҳншавии X-и Талабшуда Ғайри имкон аст"
 
-#: krandrtray.cpp:89 legacyrandrconfig.cpp:36
+#: krandrtray.cpp:90 legacyrandrconfig.cpp:37
 #, kde-format
 msgid "Screen %1"
 msgstr "Экран %1"
 
-#: krandrtray.cpp:110
+#: krandrtray.cpp:111
 msgid "Configure Display..."
 msgstr "Батанзимдарории Экрани..."
 
-#: krandrtray.cpp:142
+#: krandrtray.cpp:143
 msgid "Screen configuration has changed"
 msgstr "Батанзимдарории экран иваз шудааст"
 
-#: krandrtray.cpp:177 krandrtray.cpp:285
+#: krandrtray.cpp:178 krandrtray.cpp:286
 msgid "Screen Size"
 msgstr "Андозаи Экран"
 
-#: krandrtray.cpp:185 krandrtray.cpp:246 krandrtray.cpp:298
+#: krandrtray.cpp:186 krandrtray.cpp:247 krandrtray.cpp:299
 #, fuzzy
 msgid "Orientation"
 msgstr "Тамоюли номаълум"
 
-#: krandrtray.cpp:202
+#: krandrtray.cpp:203
 msgid "Outputs"
 msgstr ""
 
-#: krandrtray.cpp:214
+#: krandrtray.cpp:215
 #, fuzzy, kde-format
 #| msgid "Screen Size"
 msgid "%1 - Screen Size"
 msgstr "Андозаи Экран"
 
-#: krandrtray.cpp:230
+#: krandrtray.cpp:231
 msgid "Disable"
 msgstr ""
 
-#: krandrtray.cpp:256 krandrtray.cpp:307
+#: krandrtray.cpp:257 krandrtray.cpp:308
 msgid "Refresh Rate"
 msgstr "Зуддии Навсозӣ"
 
-#: krandrtray.cpp:271
+#: krandrtray.cpp:272
 msgid "Unify Outputs"
 msgstr ""
 
-#: krandrtray.cpp:367 legacyrandrconfig.cpp:268 legacyrandrscreen.cpp:245
-#: outputconfig.cpp:107
+#: krandrtray.cpp:368 legacyrandrconfig.cpp:269 legacyrandrscreen.cpp:245
+#: outputconfig.cpp:249
 #, fuzzy, kde-format
 #| msgctxt "Refresh rate in Hertz (Hz)"
 #| msgid "%1 Hz"
 msgid "%1 Hz"
 msgstr "%1 Hz"
 
-#: krandrtray.cpp:460
+#: krandrtray.cpp:461
 msgid "Configure Display"
 msgstr "Батанзимдарории Экран"
 
@@ -102,11 +102,6 @@ msgid "1 second remaining:"
 msgid_plural "%1 seconds remaining:"
 msgstr[0] "1 second remaining:"
 msgstr[1] "%1 seconds remaining:"
-
-#: legacyrandrconfig.cpp:125
-#, kde-format
-msgid "%1 x %2"
-msgstr "%1 x %2"
 
 #: legacyrandrscreen.cpp:140
 #, kde-format
@@ -143,7 +138,9 @@ msgid "Resize and Rotate"
 msgstr "Тағири Андоза ва Гардиш"
 
 #: main.cpp:35
-msgid "Resize and Rotate System Tray App"
+#, fuzzy
+#| msgid "Resize and Rotate System Tray App"
+msgid "X Resize and Rotate System Tray App"
 msgstr "Тағири Андоза ва Гардиши Қуттии Апплетии Системавӣ"
 
 #: main.cpp:36
@@ -174,91 +171,141 @@ msgstr ""
 msgid "Many fixes"
 msgstr "Бисёр созкуниҳо"
 
-#: main.cpp:45
+#: main.cpp:40
+msgid "Harry Bock"
+msgstr ""
+
+#: main.cpp:40
+msgid "Many fixes, multi-head support"
+msgstr ""
+
+#: main.cpp:46
 msgid "Application is being auto-started at KDE session start"
 msgstr "Замима ҳамроҳи оғозёбии сеанси KDE худоғоз меёбад"
 
-#: randr.cpp:34 randr.cpp:51
-msgid "Normal"
-msgstr "Муқаррарӣ"
+#: outputconfig.cpp:124
+msgid "Left of"
+msgstr ""
 
-#: randr.cpp:36
+#: outputconfig.cpp:125
+msgid "Right of"
+msgstr ""
+
+#: outputconfig.cpp:126
+msgctxt "Output is placed above another one"
+msgid "Above"
+msgstr ""
+
+#: outputconfig.cpp:127
+msgctxt "Output is placed below another one"
+msgid "Below"
+msgstr ""
+
+#: outputconfig.cpp:128
+msgid "Clone of"
+msgstr ""
+
+#: outputconfig.cpp:131
+msgid "No relative position"
+msgstr ""
+
+#: outputconfig.cpp:217
+msgid "Disabled"
+msgstr ""
+
+#: outputconfig.cpp:243
+msgctxt "Automatic configuration"
+msgid "Auto"
+msgstr ""
+
+#: randr.cpp:31
+#, fuzzy
+msgid "No Rotation"
+msgstr "Тамоюли номаълум"
+
+#: randr.cpp:33
 msgid "Left (90 degrees)"
 msgstr "Ба чап (ба 90 дараҷа)"
 
-#: randr.cpp:38
+#: randr.cpp:35
 msgid "Upside-down (180 degrees)"
 msgstr "Гардиш (ба 180 дараҷа)"
 
-#: randr.cpp:40
+#: randr.cpp:37
 msgid "Right (270 degrees)"
 msgstr "Ба рост (ба 270 дараҷа)"
 
-#: randr.cpp:42
+#: randr.cpp:39
 msgid "Mirror horizontally"
 msgstr "Уфуқӣ инъикос кардан"
 
-#: randr.cpp:44
+#: randr.cpp:41
 msgid "Mirror vertically"
 msgstr "Амудӣ инъикос кардан"
 
-#: randr.cpp:46 randr.cpp:77
+#: randr.cpp:43 randr.cpp:74
 msgid "Unknown orientation"
 msgstr "Тамоюли номаълум"
 
-#: randr.cpp:53
+#: randr.cpp:48
+msgid "Not rotated"
+msgstr ""
+
+#: randr.cpp:50
 msgid "Rotated 90 degrees counterclockwise"
 msgstr "Гардиш ба 90 дараҷа муқобили ақрабаки соат"
 
-#: randr.cpp:55
+#: randr.cpp:52
 msgid "Rotated 180 degrees counterclockwise"
 msgstr "Гардиш ба 180 дараҷа муқобили ақрабаки соат"
 
-#: randr.cpp:57
+#: randr.cpp:54
 msgid "Rotated 270 degrees counterclockwise"
 msgstr "Гардиш ба 270 дараҷа муқобили ақрабаки соат"
 
-#: randr.cpp:62
+#: randr.cpp:59
 msgid "Mirrored horizontally and vertically"
 msgstr "Уфуқӣ ва амудӣ инъикос шудааст"
 
-#: randr.cpp:64
+#: randr.cpp:61
 msgid "mirrored horizontally and vertically"
 msgstr "уфуқӣ ва амудӣ инъикос шудааст"
 
-#: randr.cpp:67
+#: randr.cpp:64
 msgid "Mirrored horizontally"
 msgstr "Уфуқӣ инъикос шудааст"
 
-#: randr.cpp:69
+#: randr.cpp:66
 msgid "mirrored horizontally"
 msgstr "уфуқӣ инъикос шудааст"
 
-#: randr.cpp:72
+#: randr.cpp:69
 msgid "Mirrored vertically"
 msgstr "Амудӣ инъикос шудааст"
 
-#: randr.cpp:74
+#: randr.cpp:71
 msgid "mirrored vertically"
 msgstr "амудӣ инъикос шудааст"
 
-#: randr.cpp:79
+#: randr.cpp:76
 msgid "unknown orientation"
 msgstr "тамоюли номаълум"
 
-#: randr.cpp:132
+#: randr.cpp:125
 msgid "Confirm Display Setting Change"
 msgstr "Тасдиқи Тағироти Гузоришҳои Экран"
 
-#: randr.cpp:136
+#: randr.cpp:129
 msgid "&Accept Configuration"
 msgstr "&Қабули Батанзимдарорӣ"
 
-#: randr.cpp:137
-msgid "&Return to Previous Configuration"
+#: randr.cpp:130
+#, fuzzy
+#| msgid "&Return to Previous Configuration"
+msgid "&Revert to Previous Configuration"
 msgstr "&Бозгашт ба Батанзимдарории Гузашта"
 
-#: randr.cpp:139
+#: randr.cpp:132
 #, fuzzy
 #| msgid ""
 #| "Your screen orientation, size and refresh rate have been changed to the "
@@ -303,7 +350,7 @@ msgstr ""
 #: rc.cpp:9
 #, fuzzy
 #| msgid "Settings for screen:"
-msgid "Settings for Screen:"
+msgid "Settings for screen:"
 msgstr "Гузоришҳо барои экран:"
 
 #. i18n: tag string
@@ -319,10 +366,8 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file legacyrandrconfigbase.ui line 45
 #: rc.cpp:15
-#, fuzzy
-#| msgid "Screen Size"
-msgid "Screen Size:"
-msgstr "Андозаи Экран"
+msgid "Screen size:"
+msgstr "Андозаи экран:"
 
 #. i18n: tag string
 #. i18n: file legacyrandrconfigbase.ui line 55
@@ -337,10 +382,8 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file legacyrandrconfigbase.ui line 66
 #: rc.cpp:21
-#, fuzzy
-#| msgid "Refresh Rate"
-msgid "Refresh Rate:"
-msgstr "Зуддии Навсозӣ"
+msgid "Refresh rate:"
+msgstr "Зуддии навсозӣ:"
 
 #. i18n: tag string
 #. i18n: file legacyrandrconfigbase.ui line 73
@@ -394,39 +437,37 @@ msgid "Output Config"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file outputconfigbase.ui line 25
+#. i18n: file outputconfigbase.ui line 27
 #: rc.cpp:45
-msgid "Active"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file outputconfigbase.ui line 34
-#: rc.cpp:48
 msgid "Size:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file outputconfigbase.ui line 47
-#: rc.cpp:51
+#. i18n: file outputconfigbase.ui line 40
+#: rc.cpp:48
 #, fuzzy
 #| msgid "Refresh Rate"
 msgid "Refresh:"
 msgstr "Зуддии Навсозӣ"
 
 #. i18n: tag string
-#. i18n: file outputconfigbase.ui line 80
-#: rc.cpp:54
+#. i18n: file outputconfigbase.ui line 73
+#: rc.cpp:51
 #, fuzzy
 msgid "Orientation:"
 msgstr "Тамоюли номаълум"
 
 #. i18n: tag string
+#. i18n: file outputconfigbase.ui line 100
+#: rc.cpp:54
+msgid "Position:"
+msgstr ""
+
+#. i18n: tag string
 #. i18n: file randrconfigbase.ui line 13
 #: rc.cpp:57
-#, fuzzy
-#| msgid "Screen resize & rotate"
-msgid "Screen Resize and Rotate Configuration"
-msgstr "Тағири Андоза ва Гардиш"
+msgid "Display Configuration (X11 Resize, Rotate and Reflect)"
+msgstr ""
 
 #: rc.cpp:58
 msgctxt "NAME OF TRANSLATORS"
@@ -438,17 +479,28 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "youth_opportunities@tajikngo.org, H_Abrorova@rambler.ru"
 
+#~ msgid "%1 x %2"
+#~ msgstr "%1 x %2"
+
+#~ msgid "Normal"
+#~ msgstr "Муқаррарӣ"
+
 #, fuzzy
-#~ msgid "Rotation"
-#~ msgstr "Тамоюли номаълум"
+#~| msgid "Screen Size"
+#~ msgid "Screen Size:"
+#~ msgstr "Андозаи Экран"
+
+#, fuzzy
+#~| msgid "Refresh Rate"
+#~ msgid "Refresh Rate:"
+#~ msgstr "Зуддии Навсозӣ"
+
+#, fuzzy
+#~| msgid "Screen resize & rotate"
+#~ msgid "Screen Resize and Rotate Configuration"
+#~ msgstr "Тағири Андоза ва Гардиш"
 
 #, fuzzy
 #~| msgid "Screen Size"
 #~ msgid "Screen SIze:"
 #~ msgstr "Андозаи Экран"
-
-#~ msgid "Screen size:"
-#~ msgstr "Андозаи экран:"
-
-#~ msgid "Refresh rate:"
-#~ msgstr "Зуддии навсозӣ:"
