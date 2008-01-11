@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-09 07:18+0100\n"
+"POT-Creation-Date: 2008-01-11 09:44+0100\n"
 "PO-Revision-Date: 2004-07-26 11:18+0000\n"
 "Last-Translator: Hiromon\n"
 "Language-Team:  Tajik\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: conf/transfersgroupwidget.cpp:87 core/transfergrouphandler.cpp:187
-#: core/kget.cpp:580
+#: core/kget.cpp:581
 #, fuzzy
 msgid "My Downloads"
 msgstr "Боркунӣ идома дода шудааст"
@@ -115,8 +115,8 @@ msgstr ""
 msgid "Folder and extension can not be empty."
 msgstr ""
 
-#: conf/dlgdirectories.cpp:140 core/transfergroup.cpp:115 core/kget.cpp:450
-#: core/kget.cpp:736 ui/transferhistory.cpp:168 ui/transferhistory.cpp:214
+#: conf/dlgdirectories.cpp:140 core/transfergroup.cpp:117 core/kget.cpp:451
+#: core/kget.cpp:753 ui/transferhistory.cpp:177 ui/transferhistory.cpp:224
 msgid "Error"
 msgstr ""
 
@@ -151,8 +151,20 @@ msgctxt "speed of download"
 msgid "Speed"
 msgstr "Суръат"
 
-#: core/transfergroup.cpp:115 ui/transferhistory.cpp:168
-#: ui/transferhistory.cpp:214
+#: core/transfergroup.cpp:112 ui/transferhistory.cpp:52
+#, fuzzy
+#| msgid "Finished"
+msgctxt "the transfer has been finished"
+msgid "Finished"
+msgstr "Тайёр"
+
+#: core/transfergroup.cpp:114
+msgctxt "the transfer has been aborted"
+msgid "Aborted"
+msgstr ""
+
+#: core/transfergroup.cpp:117 ui/transferhistory.cpp:177
+#: ui/transferhistory.cpp:224
 msgid "History-File cannot be opened correctly!"
 msgstr ""
 
@@ -191,13 +203,13 @@ msgctxt "stop transfergroup downloads"
 msgid "Stop"
 msgstr "Суръат"
 
-#: core/kget.h:54 ui/droptarget.cpp:92
+#: core/kget.h:55 ui/droptarget.cpp:92
 #, fuzzy
 #| msgid "KGet"
 msgid "Quit KGet"
 msgstr "KGet"
 
-#: core/kget.h:55
+#: core/kget.h:56
 #, fuzzy
 msgid "KGet quits now because all downloads have been completed."
 msgstr "Боркуни ба итмом расид"
@@ -206,8 +218,8 @@ msgstr "Боркуни ба итмом расид"
 #: transfer-plugins/kio/transferKio.cpp:53
 #: transfer-plugins/metalink/metalink.cpp:53
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:60
-#: transfer-plugins/bittorrent/bttransfer.cpp:146
-#: transfer-plugins/bittorrent/bttransfer.cpp:239
+#: transfer-plugins/bittorrent/bttransfer.cpp:167
+#: transfer-plugins/bittorrent/bttransfer.cpp:260
 #, fuzzy
 msgctxt "transfer state: stopped"
 msgid "Stopped"
@@ -223,21 +235,21 @@ msgstr "Ба ақиб гузошта"
 #: core/transfer.cpp:119 transfer-plugins/kio/transferKio.cpp:114
 #: transfer-plugins/metalink/metalink.cpp:113
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:198
-#: transfer-plugins/bittorrent/bttransfer.cpp:141
-#: transfer-plugins/bittorrent/bttransfer.cpp:236
+#: transfer-plugins/bittorrent/bttransfer.cpp:162
+#: transfer-plugins/bittorrent/bttransfer.cpp:257
 #, fuzzy
 #| msgid "Finished"
 msgctxt "transfer state: finished"
 msgid "Finished"
 msgstr "Тайёр"
 
-#: core/kget.cpp:179
+#: core/kget.cpp:180
 #, fuzzy
 #| msgid "Open Transfer"
 msgid "Rename transfer"
 msgstr "Кушодани Вогузорӣ"
 
-#: core/kget.cpp:422
+#: core/kget.cpp:423
 #, fuzzy, kde-format
 msgid ""
 "The file %1 already exists.\n"
@@ -248,27 +260,27 @@ msgstr ""
 "аллакай мавҷуд аст.\n"
 "Онро рӯиҳам навиштан мехоҳед?"
 
-#: core/kget.cpp:423
+#: core/kget.cpp:424
 msgid "Overwrite existing file?"
 msgstr ""
 
-#: core/kget.cpp:449
+#: core/kget.cpp:450
 #, kde-format
 msgid "Unable to save to: %1"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/newtransferwidget.ui line 24
-#: core/kget.cpp:673 ui/newtransferdialog.cpp:33 rc.cpp:339
+#: core/kget.cpp:690 ui/newtransferdialog.cpp:33 rc.cpp:339
 #, fuzzy
 msgid "New Download"
 msgstr "Мудири Боркунӣ"
 
-#: core/kget.cpp:673
+#: core/kget.cpp:690
 msgid "Enter URL:"
 msgstr ""
 
-#: core/kget.cpp:735
+#: core/kget.cpp:752
 #, kde-format
 msgid ""
 "Malformed URL:\n"
@@ -277,7 +289,7 @@ msgstr ""
 "URL-и нодуруст:\n"
 "%1"
 
-#: core/kget.cpp:747
+#: core/kget.cpp:764
 #, fuzzy, kde-format
 msgid ""
 "URL already saved:\n"
@@ -288,16 +300,16 @@ msgstr ""
 "%1\n"
 "Бори дигар бор кунам?"
 
-#: core/kget.cpp:748
+#: core/kget.cpp:765
 #, fuzzy
 msgid "Download URL again?"
 msgstr "Мудири Боркунӣ"
 
-#: core/kget.cpp:773
+#: core/kget.cpp:790
 msgid "Directory is not writable"
 msgstr ""
 
-#: core/kget.cpp:782
+#: core/kget.cpp:799
 #, kde-format
 msgid ""
 "Destination file \n"
@@ -310,13 +322,13 @@ msgstr ""
 "аллакай мавҷуд аст.\n"
 "Онро рӯиҳам навиштан мехоҳед?"
 
-#: core/kget.cpp:894
+#: core/kget.cpp:911
 #, kde-format
 msgid ""
 "<html><p>KPluginFactory could not load the plugin:<br/><i>%1</i></p></html>"
 msgstr ""
 
-#: core/kget.cpp:911
+#: core/kget.cpp:928
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -327,11 +339,11 @@ msgstr ""
 "%1\n"
 "аз баски он раҳнамо аст."
 
-#: core/kget.cpp:913 core/kget.cpp:924
+#: core/kget.cpp:930 core/kget.cpp:941
 msgid "Not Deleted"
 msgstr "Нобуд Нагаштааст"
 
-#: core/kget.cpp:922
+#: core/kget.cpp:939
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -357,6 +369,10 @@ msgid "Aborted"
 msgstr ""
 
 #: transfer-plugins/kio/transferKio.cpp:153
+#, fuzzy
+msgid "Downloading..."
+msgstr "Боркунӣ идома дода шудааст"
+
 #: transfer-plugins/kio/transferKio.cpp:167
 #: transfer-plugins/kio/transferKio.cpp:182
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:240
@@ -484,12 +500,12 @@ msgid "Trackers"
 msgstr "&Интиқол"
 
 #: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:76
-#: transfer-plugins/bittorrent/bttransfer.cpp:195
+#: transfer-plugins/bittorrent/bttransfer.cpp:216
 msgid "Cannot add a tracker to a private torrent."
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:92
-#: transfer-plugins/bittorrent/bttransfer.cpp:201
+#: transfer-plugins/bittorrent/bttransfer.cpp:222
 #, fuzzy
 #| msgid "Malformed URL:\n"
 msgid "Malformed URL."
@@ -700,22 +716,22 @@ msgstr "Интихоботҳои Беҳбудшуда"
 msgid "&Speed Limits"
 msgstr "Суръат"
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:84
+#: transfer-plugins/bittorrent/bttransfer.cpp:85
 #, fuzzy
 msgid "Downloading Torrent-File.."
 msgstr "Боркунӣ идома дода шудааст"
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:220
+#: transfer-plugins/bittorrent/bttransfer.cpp:241
 #, fuzzy
 msgctxt "transfer state: downloading"
 msgid "Downloading.."
 msgstr "Боркунӣ идома дода шудааст"
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:265
+#: transfer-plugins/bittorrent/bttransfer.cpp:286
 msgid "Analizing torrent.."
 msgstr ""
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:340
+#: transfer-plugins/bittorrent/bttransfer.cpp:361
 #, fuzzy
 #| msgid "Scheduling"
 msgctxt "Transfer status: seeding"
@@ -727,7 +743,7 @@ msgstr "Ба нақшагирӣ"
 msgid "Transfer details"
 msgstr "Вогузориҳо: %1"
 
-#: ui/transferhistory.cpp:30
+#: ui/transferhistory.cpp:33
 #, fuzzy
 msgid "Transfer History"
 msgstr "Кушодани вогузорӣ:"
@@ -881,55 +897,55 @@ msgstr ""
 msgid "Show:"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:92
-#: extensions/konqueror/kget_linkview.cpp:249
+#: extensions/konqueror/kget_linkview.cpp:90
+#: extensions/konqueror/kget_linkview.cpp:247
 msgid "Select all"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:93
+#: extensions/konqueror/kget_linkview.cpp:91
 msgid "Show web content"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:94
+#: extensions/konqueror/kget_linkview.cpp:92
 #, fuzzy
 #| msgid "Download finished"
 msgid "Download checked"
 msgstr "Боркуни ба итмом расид"
 
-#: extensions/konqueror/kget_linkview.cpp:96
+#: extensions/konqueror/kget_linkview.cpp:94
 msgid "Cancel"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:132
+#: extensions/konqueror/kget_linkview.cpp:130
 msgid "Auxiliar header"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:133
+#: extensions/konqueror/kget_linkview.cpp:131
 #, fuzzy
 #| msgid "Local File Name"
 msgid "File Name"
 msgstr "Номи Файли Маҳаллӣ"
 
-#: extensions/konqueror/kget_linkview.cpp:134
+#: extensions/konqueror/kget_linkview.cpp:132
 msgid "Description"
 msgstr "Тавсифот"
 
-#: extensions/konqueror/kget_linkview.cpp:135
+#: extensions/konqueror/kget_linkview.cpp:133
 #, fuzzy
 msgctxt "list header: type of file"
 msgid "File Type"
 msgstr "Навъи Файл"
 
-#: extensions/konqueror/kget_linkview.cpp:136
+#: extensions/konqueror/kget_linkview.cpp:134
 msgid "Location (URL)"
 msgstr "Ҷойгиршавӣ (URL)"
 
-#: extensions/konqueror/kget_linkview.cpp:197
+#: extensions/konqueror/kget_linkview.cpp:195
 #, kde-format
 msgid "Links in: %1 - KGet"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:249
+#: extensions/konqueror/kget_linkview.cpp:247
 msgid "Select all filtered"
 msgstr ""
 
@@ -1857,7 +1873,7 @@ msgstr "Суръат"
 #: rc.cpp:375
 #, fuzzy
 #| msgid "Source:"
-msgid "Source"
+msgid "Source-File"
 msgstr "Сарчашма:"
 
 #. i18n: tag string
@@ -1880,73 +1896,84 @@ msgstr "Вақтсанҷ"
 #. i18n: file ui/transferhistory.ui line 62
 #: rc.cpp:384
 #, fuzzy
-msgid "State"
+msgid "File-Size"
+msgstr "Кушодани &Файл"
+
+#. i18n: tag string
+#. i18n: file ui/transferhistory.ui line 67
+#: rc.cpp:387
+#, fuzzy
+msgid "Status"
 msgstr "&Боз оғоз намудан"
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 78
-#: rc.cpp:387
+#. i18n: file ui/transferhistory.ui line 83
+#: rc.cpp:390
 msgid "Clear History"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 104
-#: rc.cpp:390
+#. i18n: file ui/transferhistory.ui line 109
+#: rc.cpp:393
 msgid "Filter history..."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 113
-#: rc.cpp:393
+#. i18n: file ui/transferhistory.ui line 118
+#: rc.cpp:396
 #, fuzzy
 msgctxt "delete selected transfer"
 msgid "Delete Selected"
 msgstr "Ягон Файл Интихоб нашудааст"
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 118
-#: rc.cpp:396
+#. i18n: file ui/transferhistory.ui line 123
+#: rc.cpp:399
 #, fuzzy
 msgid "Download"
 msgstr "Боркунӣ идома дода шудааст"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 4
-#: rc.cpp:399
+#: rc.cpp:402
 #, fuzzy
 msgid "&File"
 msgstr "Кушодани &Файл"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 14
-#: rc.cpp:402
+#: rc.cpp:405
 #, fuzzy
 msgid "&Downloads"
 msgstr "Боркунӣ идома дода шудааст"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 23
-#: rc.cpp:405
+#: rc.cpp:408
 msgid "&Settings"
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 35
-#: rc.cpp:408
+#: rc.cpp:411
 msgid "&Help"
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 38
-#: rc.cpp:411
+#: rc.cpp:414
 msgid "Main Toolbar"
 msgstr ""
 
 #. i18n: tag Text
 #. i18n: file extensions/konqueror/kget_plug_in.rc line 4
-#: rc.cpp:414
+#: rc.cpp:417
 msgid "&Tools"
 msgstr ""
+
+#, fuzzy
+#~ msgid "State"
+#~ msgstr "&Боз оғоз намудан"
 
 #, fuzzy
 #~ msgid "Hide Drop Target"
