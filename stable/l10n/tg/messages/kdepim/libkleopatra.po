@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: libkleopatra\n"
-"POT-Creation-Date: 2007-09-21 01:15+0200\n"
+"POT-Creation-Date: 2008-01-26 01:19+0100\n"
 "PO-Revision-Date: 2005-09-17 12:47+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -650,6 +650,96 @@ msgstr "Натиҷаи рӯйхати калидҳо"
 msgid "Recheck Key"
 msgstr "Аз нав санҷидани калид"
 
+#: ui/messagebox.cpp:60
+msgid "&Save to Disk..."
+msgstr ""
+
+#: ui/messagebox.cpp:64
+msgid "&Copy to Clipboard"
+msgstr ""
+
+#: ui/messagebox.cpp:64
+msgid "Copy Audit Log to Clipboard"
+msgstr ""
+
+#: ui/messagebox.cpp:68
+msgid "&Show Audit Log"
+msgstr ""
+
+#: ui/messagebox.cpp:75
+msgid "View GnuPG Audit Log"
+msgstr ""
+
+#: ui/messagebox.cpp:94
+msgid "Choose File to Save GnuPG Audit Log to"
+msgstr ""
+
+#: ui/messagebox.cpp:106
+msgid "Couldn't save to file \"%1\": %2"
+msgstr ""
+
+#: ui/messagebox.cpp:108
+msgid "File Save Error"
+msgstr ""
+
+#: ui/messagebox.cpp:129
+msgid "Your system does not have support for GnuPG Audit Logs"
+msgstr ""
+
+#: ui/messagebox.cpp:130
+msgid "System Error"
+msgstr ""
+
+#: ui/messagebox.cpp:136
+msgid "No GnuPG Audit Log available for this operation."
+msgstr ""
+
+#: ui/messagebox.cpp:137
+msgid "No GnuPG Audit Log"
+msgstr ""
+
+#: ui/messagebox.cpp:153 ui/messagebox.cpp:158
+msgid "GnuPG Audit Log Viewer"
+msgstr ""
+
+#: ui/messagebox.cpp:163
+#, c-format
+msgid "Signing failed: %1"
+msgstr "Хатои имзои: %1"
+
+#: ui/messagebox.cpp:164
+msgid "Signing successful"
+msgstr ""
+
+#: backends/chiasmus/chiasmusjob.cpp:209 ui/messagebox.cpp:173
+#, c-format
+msgid "Encryption failed: %1"
+msgstr "Хатои рамзгузорӣ: %1"
+
+#: ui/messagebox.cpp:174
+#, fuzzy
+msgid "Encryption successful"
+msgstr "Калиди рамзгузоӣ:"
+
+#: ui/messagebox.cpp:191
+#, fuzzy
+msgid "Signing Result"
+msgstr "Сарҳисоби сканеркуни"
+
+#: ui/messagebox.cpp:201
+msgid "Signing Error"
+msgstr ""
+
+#: ui/messagebox.cpp:211 ui/messagebox.cpp:231
+#, fuzzy
+msgid "Encryption Result"
+msgstr "Калиди рамзгузоӣ:"
+
+#: ui/messagebox.cpp:221 ui/messagebox.cpp:241
+#, fuzzy
+msgid "Encryption Error"
+msgstr "Калиди рамзгузоӣ:"
+
 #: ui/passphrasedialog.cpp:85
 msgid "Please enter your passphrase:"
 msgstr "Калимаи махфиро ворид кунед:"
@@ -686,13 +776,6 @@ msgstr ""
 #: backends/chiasmus/chiasmusjob.cpp:168
 msgid "Output from chiasmus"
 msgstr ""
-
-#: backends/chiasmus/chiasmusjob.cpp:209
-#: backends/qgpgme/qgpgmeencryptjob.cpp:103
-#: backends/qgpgme/qgpgmesignencryptjob.cpp:119
-#, c-format
-msgid "Encryption failed: %1"
-msgstr "Хатои рамзгузорӣ: %1"
 
 #: backends/chiasmus/chiasmusjob.cpp:210
 #, fuzzy, c-format
@@ -789,7 +872,7 @@ msgstr ""
 msgid "Error from gpgconf while saving configuration: %1"
 msgstr "Хатои дар gpgconf мавриди нигаҳдории конфигуратсияҳои: %1"
 
-#: backends/qgpgme/qgpgmejob.cpp:258
+#: backends/qgpgme/qgpgmejob.cpp:277
 msgid ""
 "You need a passphrase to unlock the secret key for user:"
 "<br/> %1 (retry)"
@@ -798,7 +881,7 @@ msgstr ""
 "ишора кунед:"
 "<br/> %1 (такрор)"
 
-#: backends/qgpgme/qgpgmejob.cpp:259
+#: backends/qgpgme/qgpgmejob.cpp:278
 #, c-format
 msgid "You need a passphrase to unlock the secret key for user:<br/> %1"
 msgstr ""
@@ -806,7 +889,7 @@ msgstr ""
 "ишора кунед:"
 "<br/> %1"
 
-#: backends/qgpgme/qgpgmejob.cpp:262
+#: backends/qgpgme/qgpgmejob.cpp:281
 #, fuzzy
 msgid ""
 "This dialog will reappear every time the passphrase is needed. For a more "
@@ -816,25 +899,25 @@ msgstr ""
 "мешавад. Агар шумо нахоҳед, ки онро ҳар дафъа ворид кунед gpg-agent-ро сабт "
 "кунед."
 
-#: backends/qgpgme/qgpgmejob.cpp:265
+#: backends/qgpgme/qgpgmejob.cpp:284
 msgid "gpg-agent was found in %1, but does not appear to be running."
 msgstr ""
 
-#: backends/qgpgme/qgpgmejob.cpp:268
+#: backends/qgpgme/qgpgmejob.cpp:287
 msgid "gpg-agent is part of gnupg-%1, which you can download from %2"
 msgstr "gpg-agent қисми пакети gnupg-%1 аст, ки метавон бо %2 пурбор куни"
 
-#: backends/qgpgme/qgpgmejob.cpp:273
+#: backends/qgpgme/qgpgmejob.cpp:292
 #, c-format
 msgid "For information on how to set up gpg-agent, see %1"
 msgstr ""
 
-#: backends/qgpgme/qgpgmejob.cpp:276
+#: backends/qgpgme/qgpgmejob.cpp:295
 #, fuzzy
 msgid "Enter passphrase:"
 msgstr "Калимаи ғайри махфӣ."
 
-#: backends/qgpgme/qgpgmejob.cpp:277
+#: backends/qgpgme/qgpgmejob.cpp:296
 msgid "Passphrase Dialog"
 msgstr "Мубоҳисаи калимаи махфи"
 
@@ -869,9 +952,3 @@ msgid ""
 msgstr ""
 "Оғоз намудани gpg-agent (ба ҷои ин шумо бояд нусхаи глобалиро истифода "
 "кунед)..."
-
-#: backends/qgpgme/qgpgmesignencryptjob.cpp:118
-#: backends/qgpgme/qgpgmesignjob.cpp:108
-#, c-format
-msgid "Signing failed: %1"
-msgstr "Хатои имзои: %1"
