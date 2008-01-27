@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kontact\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-09 07:18+0100\n"
+"POT-Creation-Date: 2008-01-27 10:35+0100\n"
 "PO-Revision-Date: 2004-08-17 18:42+0500\n"
 "Last-Translator: Erkin Pulatov <erkin_pulatov@mail.ru>\n"
 "Language-Team: Tajik\n"
@@ -127,7 +127,8 @@ msgstr "(c), 2003 Корнелиус Шумахер"
 #: plugins/knotes/knotes_plugin.cpp:91
 #: plugins/korganizer/kcmapptsummary.cpp:140
 #: plugins/korganizer/kcmtodosummary.cpp:166
-#: plugins/newsticker/kcmkontactknt.cpp:476
+#: plugins/newsticker/kcmkontactknt.cpp:476 plugins/planner/kcmplanner.cpp:76
+#: plugins/planner/plannerplugin.cpp:66
 #: plugins/specialdates/kcmsdsummary.cpp:195
 #: plugins/specialdates/specialdates_plugin.cpp:65
 #: plugins/summary/kcmkontactsummary.cpp:119
@@ -457,7 +458,7 @@ msgstr "(C) 2001-2004, коргардони Kontact"
 msgid "Michael Brade"
 msgstr ""
 
-#: plugins/knotes/knotes_plugin.cpp:90
+#: plugins/knotes/knotes_plugin.cpp:90 plugins/planner/plannerplugin.cpp:65
 #: plugins/specialdates/specialdates_plugin.cpp:64
 #, fuzzy
 #| msgid "Maintainer"
@@ -510,6 +511,7 @@ msgid "now"
 msgstr "ношинос"
 
 #: plugins/korganizer/apptsummarywidget.cpp:270
+#: plugins/planner/planner.cpp:415
 #, kde-format
 msgctxt "Time from - to"
 msgid "%1 - %2"
@@ -524,11 +526,13 @@ msgstr[1] ""
 "Не ягон рӯзи таввалуд ё солгард дар зарфи %1 рӯзҳо гузаронида мешавад."
 
 #: plugins/korganizer/apptsummarywidget.cpp:317
+#: plugins/planner/planner.cpp:581
 #, fuzzy
 msgid "&Edit Appointment..."
 msgstr "Вохӯриҳо"
 
 #: plugins/korganizer/apptsummarywidget.cpp:318
+#: plugins/planner/planner.cpp:582
 #, fuzzy
 msgid "&Delete Appointment"
 msgstr "Вохӯриҳо"
@@ -548,7 +552,7 @@ msgid "Synchronize Journal"
 msgstr ""
 
 #: plugins/korganizer/kcmapptsummary.cpp:81
-#: plugins/korganizer/kcmtodosummary.cpp:88
+#: plugins/korganizer/kcmtodosummary.cpp:88 plugins/planner/kcmplanner.cpp:107
 #: plugins/specialdates/kcmsdsummary.cpp:93
 msgid " day"
 msgid_plural " days"
@@ -572,7 +576,8 @@ msgid "(c) 2003 - 2004 Tobias Koenig"
 msgstr "(c) 2003 - 2004, Тобиас Коэниг"
 
 #: plugins/korganizer/kcmapptsummary.cpp:141
-#: plugins/korganizer/kcmtodosummary.cpp:167
+#: plugins/korganizer/kcmtodosummary.cpp:167 plugins/planner/kcmplanner.cpp:77
+#: plugins/planner/plannerplugin.cpp:64
 #: plugins/specialdates/kcmsdsummary.cpp:194
 #: plugins/specialdates/specialdates_plugin.cpp:64
 msgid "Allen Winter"
@@ -661,20 +666,24 @@ msgstr[1] ""
 "Не ягон рӯзи таввалуд ё солгард дар зарфи %1 рӯзҳо гузаронида мешавад."
 
 #: plugins/korganizer/todosummarywidget.cpp:335
+#: plugins/planner/planner.cpp:644
 #, fuzzy
 msgid "&Edit To-do..."
 msgstr "Масъалаи нав..."
 
 #: plugins/korganizer/todosummarywidget.cpp:336
+#: plugins/planner/planner.cpp:645
 #, fuzzy
 msgid "&Delete To-do"
 msgstr "Нест кардани диҳиш"
 
 #: plugins/korganizer/todosummarywidget.cpp:342
+#: plugins/planner/planner.cpp:651
 msgid "&Mark To-do Completed"
 msgstr ""
 
 #: plugins/korganizer/todosummarywidget.cpp:363
+#: plugins/planner/planner.cpp:744
 #, kde-format
 msgid "Edit To-do: \"%1\""
 msgstr ""
@@ -808,6 +817,222 @@ msgstr ""
 msgid "Copy URL to Clipboard"
 msgstr ""
 
+#: plugins/planner/kcmplanner.cpp:71
+msgid "kcmplanner"
+msgstr ""
+
+#: plugins/planner/kcmplanner.cpp:72
+msgid "Schedule Configuration Dialog"
+msgstr "Дуруст кардани тақвимот"
+
+#: plugins/planner/kcmplanner.cpp:74
+msgid "(c) 2007-2008 Oral Timocin"
+msgstr ""
+
+#: plugins/planner/kcmplanner.cpp:146
+msgid "Calendar View"
+msgstr ""
+
+#: plugins/planner/kcmplanner.cpp:149
+msgid "One day"
+msgstr "Як рӯз"
+
+#: plugins/planner/kcmplanner.cpp:152
+msgid "Five days"
+msgstr "Панҷ рӯз"
+
+#: plugins/planner/kcmplanner.cpp:155
+msgid "One week"
+msgstr "Як ҳафта"
+
+#: plugins/planner/kcmplanner.cpp:158
+msgid "One month"
+msgstr "Як моҳ"
+
+#: plugins/planner/kcmplanner.cpp:181
+#, fuzzy
+msgid "Show To-dos?"
+msgstr "Намоиши ҳама масъалаҳо"
+
+#: plugins/planner/kcmplanner.cpp:184
+#, fuzzy
+msgid "Show all to-dos"
+msgstr "Намоиши ҳама масъалаҳо"
+
+#: plugins/planner/kcmplanner.cpp:185
+#, fuzzy
+msgid "Overdue To-dos"
+msgstr "Масъалаҳо"
+
+#: plugins/planner/kcmplanner.cpp:186
+#, fuzzy
+msgid "Starting to-dos"
+msgstr "Масъалаҳо"
+
+#: plugins/planner/kcmplanner.cpp:187
+#, fuzzy
+msgid "Ending to-dos"
+msgstr "Масъалаҳо"
+
+#: plugins/planner/kcmplanner.cpp:188
+#, fuzzy
+msgid "To-dos in progress"
+msgstr "иҷро шуда истодааст"
+
+#: plugins/planner/kcmplanner.cpp:189
+#, fuzzy
+msgid "Completed To-dos"
+msgstr "Нест кардани диҳиш"
+
+#: plugins/planner/kcmplanner.cpp:219
+#, fuzzy
+msgid "Show Special Dates?"
+msgstr "Робитаи ҷамъ"
+
+#: plugins/planner/kcmplanner.cpp:246
+#, fuzzy
+msgid "Calendar"
+msgstr "Тақвим"
+
+#: plugins/planner/kcmplanner.cpp:247
+#, fuzzy
+msgid "To-dos"
+msgstr "Масъалаҳо"
+
+#: plugins/planner/kcmplanner.cpp:248
+#, fuzzy
+msgid "Special Dates"
+msgstr "Робитаи ҷамъ"
+
+#: plugins/planner/planner.cpp:71
+msgid "Planner"
+msgstr ""
+
+#: plugins/planner/planner.cpp:236 plugins/planner/planner.cpp:257
+#: plugins/planner/planner.cpp:269 plugins/planner/planner.cpp:616
+#, fuzzy
+#| msgid "overdue"
+msgctxt "to-do is overdue"
+msgid "overdue"
+msgstr "таъхир карда шуда"
+
+#: plugins/planner/planner.cpp:511
+#, fuzzy
+#| msgid "Today"
+msgctxt "today"
+msgid "Today"
+msgstr "Имрӯз"
+
+#: plugins/planner/planner.cpp:515
+#, fuzzy
+#| msgid "Tomorrow"
+msgctxt "tomorrow"
+msgid "Tomorrow"
+msgstr "Пагоҳ"
+
+#: plugins/planner/planner.cpp:549
+#, fuzzy, kde-format
+msgid "No appointments pending within the next day"
+msgid_plural "No appointments pending within the next %1 days"
+msgstr[0] "Не ягон рӯзи таввалуд ё солгард дар зарфи рӯз гузаронида мешавад."
+msgstr[1] ""
+"Не ягон рӯзи таввалуд ё солгард дар зарфи %1 рӯзҳо гузаронида мешавад."
+
+#: plugins/planner/planner.cpp:599
+#, fuzzy, kde-format
+msgid "Edit Appointment: \"%1\""
+msgstr "Вохӯриҳо"
+
+#: plugins/planner/planner.cpp:623
+#, fuzzy
+msgctxt "work on to-do is in progress"
+msgid "in progress"
+msgstr "иҷро шуда истодааст"
+
+#: plugins/planner/planner.cpp:628
+#, fuzzy
+#| msgid "starts today"
+msgctxt "to-do starts today"
+msgid "starts today"
+msgstr "Ҳамин рӯз сар мешавад"
+
+#: plugins/planner/planner.cpp:633
+#, fuzzy
+#| msgid "ends today"
+msgctxt "to-do ends today"
+msgid "ends today"
+msgstr "Ҳамин рӯз тамом мешавад"
+
+#: plugins/planner/planner.cpp:636
+msgctxt "to-do is completed"
+msgid "completed"
+msgstr ""
+
+#: plugins/planner/planner.cpp:696
+msgid "0%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:697
+msgid "10%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:698
+msgid "20%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:699
+msgid "30%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:700
+msgid "40%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:701
+msgid "50%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:702
+msgid "60%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:703
+msgid "70%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:704
+msgid "80%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:705
+msgid "90%"
+msgstr ""
+
+#: plugins/planner/planner.cpp:706
+msgid "100%"
+msgstr ""
+
+#: plugins/planner/plannerplugin.cpp:59
+#, fuzzy
+#| msgid "Summary"
+msgid "Planner Summary"
+msgstr "Резюме"
+
+#: plugins/planner/plannerplugin.cpp:61
+#, fuzzy
+#| msgid "Kontact Summary"
+msgid "Kontact Planner Summary"
+msgstr "Робитаи ҷамъ"
+
+#: plugins/planner/plannerplugin.cpp:63
+#: plugins/specialdates/specialdates_plugin.cpp:63
+msgid "(c) 2004-2005 The KDE PIM Team"
+msgstr ""
+
+#: plugins/planner/plannerplugin.cpp:68
+msgid "Oral Timocin"
+msgstr ""
+
 #: plugins/specialdates/kcmsdsummary.cpp:189
 #, fuzzy
 msgid "kcmsdsummary"
@@ -906,10 +1131,6 @@ msgstr ""
 msgid "Kontact Special Dates Summary"
 msgstr "Робитаи ҷамъ"
 
-#: plugins/specialdates/specialdates_plugin.cpp:63
-msgid "(c) 2004-2005 The KDE PIM Team"
-msgstr ""
-
 #: plugins/summary/kcmkontactsummary.cpp:86
 msgid "Name"
 msgstr "Ном"
@@ -943,7 +1164,7 @@ msgstr "&Мизроб кардани дайджест..."
 msgid "Summary for %1"
 msgstr "Резюме"
 
-#: plugins/summary/summaryview_part.cpp:311
+#: plugins/summary/summaryview_part.cpp:312
 msgid "What's next?"
 msgstr "Баъд аз он чӣ?"
 
@@ -1033,9 +1254,6 @@ msgstr "Номаълум"
 #~ msgid "kcmkorgsummary"
 #~ msgstr "kcmkorgsummary"
 
-#~ msgid "Schedule Configuration Dialog"
-#~ msgstr "Дуруст кардани тақвимот"
-
 #~ msgid "Appointments"
 #~ msgstr "Вохӯриҳо"
 
@@ -1043,28 +1261,9 @@ msgstr "Номаълум"
 #~ msgid "How many days should the calendar show at once?"
 #~ msgstr "Чанд рӯзро дар тақвимот нишон диҳам?"
 
-#~ msgid "One day"
-#~ msgstr "Як рӯз"
-
-#~ msgid "Five days"
-#~ msgstr "Панҷ рӯз"
-
-#~ msgid "One week"
-#~ msgstr "Як ҳафта"
-
-#~ msgid "One month"
-#~ msgstr "Як моҳ"
-
-#, fuzzy
-#~ msgid "Show all to-dos"
-#~ msgstr "Намоиши ҳама масъалаҳо"
-
 #, fuzzy
 #~ msgid "Show today's to-dos only"
 #~ msgstr "Намоиши масъалаи имрӯз"
-
-#~ msgid "ends today"
-#~ msgstr "Ҳамин рӯз тамом мешавад"
 
 #, fuzzy
 #~ msgid "No to-dos pending"
