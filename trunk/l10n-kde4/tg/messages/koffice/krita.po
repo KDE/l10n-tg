@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-29 14:44+0100\n"
+"POT-Creation-Date: 2008-03-05 10:23+0100\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -4069,7 +4069,7 @@ msgstr "-"
 
 #. i18n: tag string
 #. i18n: file ./plugins/viewplugins/shearimage/wdg_shearimage.ui line 16
-#: rc.cpp:1616 image/kis_image.cc:531
+#: rc.cpp:1616 image/kis_image.cc:526
 #: plugins/viewplugins/shearimage/dlg_shearimage.cc:31
 #: plugins/viewplugins/shearimage/shearimage.cc:91
 #, fuzzy
@@ -4378,7 +4378,7 @@ msgstr "&Ҷудокуни"
 
 #. i18n: tag string
 #. i18n: file ./plugins/viewplugins/rotateimage/wdg_rotateimage.ui line 16
-#: rc.cpp:1831 image/kis_image.cc:479
+#: rc.cpp:1831 image/kis_image.cc:474
 #: plugins/viewplugins/rotateimage/rotateimage.cc:115
 #: plugins/viewplugins/rotateimage/dlg_rotateimage.cc:31
 #, fuzzy
@@ -6570,7 +6570,7 @@ msgstr "Масштаби Табақа..."
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:821 image/kis_image.cc:807
+#: ui/kis_layer_manager.cc:821 image/kis_image.cc:803
 #, fuzzy
 msgid "Flatten Image"
 msgstr "Дучанда кардани Тасвир"
@@ -6965,12 +6965,12 @@ msgid ""
 "information that are identical..."
 msgstr ""
 
-#: image/kis_paint_layer.cc:167
+#: image/kis_paint_layer.cc:158
 #, fuzzy
 msgid "ColorSpace"
 msgstr "Ранги ҷамъкунанда"
 
-#: image/kis_paint_layer.cc:169
+#: image/kis_paint_layer.cc:160
 msgid "Profile"
 msgstr ""
 
@@ -6995,11 +6995,11 @@ msgstr "Ҷамъ"
 msgid "Change Filter"
 msgstr "&Сафед"
 
-#: image/commands/kis_image_commands.cc:80 image/kis_image.cc:383
+#: image/commands/kis_image_commands.cc:80 image/kis_image.cc:378
 msgid "Resize Image"
 msgstr "Санҷидаи Тасвир"
 
-#: image/commands/kis_image_commands.cc:99 image/kis_image.cc:566
+#: image/commands/kis_image_commands.cc:99 image/kis_image.cc:561
 #, fuzzy
 msgid "Convert Image Type"
 msgstr "&Даровардани Тасвир ҳамчун Табақа..."
@@ -7098,26 +7098,26 @@ msgstr ""
 msgid "Non-photorealistic"
 msgstr ""
 
-#: image/kis_image.cc:272
+#: image/kis_image.cc:267
 msgid "background"
 msgstr "замина"
 
-#: image/kis_image.cc:275
+#: image/kis_image.cc:270
 #, kde-format
 msgid "Layer %1"
 msgstr "Табақа %1"
 
-#: image/kis_image.cc:381
+#: image/kis_image.cc:376
 #, fuzzy
 msgid "Crop Image"
 msgstr "Табақа ба Тасвир"
 
-#: image/kis_image.cc:439
+#: image/kis_image.cc:434
 #, fuzzy
 msgid "Scale Image"
 msgstr "Тасвири Нав"
 
-#: image/kis_image.cc:837
+#: image/kis_image.cc:839
 #, fuzzy
 msgid "Merge with Layer Below"
 msgstr "Якшавии &Ҳама Табақаҳо"
@@ -7160,7 +7160,7 @@ msgstr ""
 #: colorspaces/ycbcr/kis_ycbcr_u16_colorspace.cc:41
 #: colorspaces/xyz_u16/kis_xyz_u16_colorspace.cc:38
 #: colorspaces/xyz_float_hdr/kis_xyz_hdr_colorspace.h:70
-#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:59
+#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:167
 #: colorspaces/rgb_float_hdr/kis_rgb_float_hdr_colorspace.h:121
 #: plugins/painterlyframework/kis_ks_colorspace.h:139
 msgid "Alpha"
@@ -7231,32 +7231,42 @@ msgstr ""
 msgid "XYZ (32-bit float/channel) for High Dynamic Range imaging"
 msgstr ""
 
-#: colorspaces/lms_f32/lms_f32_plugin.cc:54
+#: colorspaces/lms_f32/lms_f32_plugin.cc:52
 #, fuzzy
 msgid "Float32 Histogram"
 msgstr "Собиқанамо"
 
-#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:52
+#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:27
+#: colorspaces/lms_f32/kis_lms_f32_colorspace.h:189
+msgid "LMS Cone Space (32-bit float/channel)"
+msgstr ""
+
+#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:42
+#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:82
+msgid "Long Middle Short Cone Space"
+msgstr ""
+
+#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:72
+msgid "Long Middle Short Cone Space (32-bit float/channel)"
+msgstr ""
+
+#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:160
 msgid "LMS (32-bit float/channel)"
 msgstr ""
 
-#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:56
+#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:164
 msgid "Long"
 msgstr ""
 
-#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:57
+#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:165
 #, fuzzy
 msgid "Middle"
 msgstr "Усул:"
 
-#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:58
+#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:166
 #, fuzzy
 msgid "Short"
 msgstr "Ҷок кардан"
-
-#: colorspaces/lms_f32/kis_lms_f32_colorspace.h:140
-msgid "LMS Cone Space (32-bit float/channel)"
-msgstr ""
 
 #: colorspaces/gray_u8_no_alpha/kis_gray_colorspace.cc:34
 msgid "Grayscale without alpha (8-bit integer/channel)"
