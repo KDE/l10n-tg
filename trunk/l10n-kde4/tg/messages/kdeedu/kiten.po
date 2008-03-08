@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiten\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-03-03 14:26+0100\n"
+"POT-Creation-Date: 2008-03-07 20:13+0100\n"
 "PO-Revision-Date: 2005-09-23 18:20+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -32,47 +32,47 @@ msgstr ""
 msgid "S&earch"
 msgstr "&Ҷустуҷӯ"
 
-#: app/kiten.cpp:188
+#: app/kiten.cpp:187
 msgid "&Automatically Search Clipboard Selections"
 msgstr "&Интихобҳои ҷустуҷӯи автоматикӣ аз хотираи нусха"
 
-#: app/kiten.cpp:190
+#: app/kiten.cpp:189
 msgid "Search &in Results"
 msgstr "&Ҷустуҷӯ дар Натиҷаҳо"
 
-#: app/kiten.cpp:195
+#: app/kiten.cpp:194
 msgid "Configure &Global Shortcuts..."
 msgstr ""
 
-#: app/kiten.cpp:199
+#: app/kiten.cpp:198
 msgid "On The Spo&t Search"
 msgstr ""
 
-#: app/kiten.cpp:218
+#: app/kiten.cpp:219
 msgid "Export List"
 msgstr ""
 
-#: app/kiten.cpp:249
+#: app/kiten.cpp:250
 #, fuzzy
 msgid "Initialising Dictionaries"
 msgstr "Луғатҳо"
 
-#: app/kiten.cpp:260
+#: app/kiten.cpp:261
 msgid "Welcome to Kiten"
 msgstr "Марҳамат ба Kiten"
 
-#: app/kiten.cpp:329 app/kiten.cpp:349
+#: app/kiten.cpp:330 app/kiten.cpp:350
 msgid "Searching..."
 msgstr "Ҷустуҷӯ..."
 
-#: app/kiten.cpp:366
+#: app/kiten.cpp:367
 #, fuzzy, kde-format
 msgid "Found 1 result"
 msgid_plural "Found %1 results"
 msgstr[0] " %1 натиҷа"
 msgstr[1] " %1 натиҷа"
 
-#: app/kiten.cpp:368
+#: app/kiten.cpp:369
 #, fuzzy
 msgid "No results found"
 msgstr "Натиҷаҳои умумӣ аз %1"
@@ -200,7 +200,7 @@ msgstr ""
 #: app/searchStringInput.cpp:54
 #, fuzzy
 #| msgid "Search &Anywhere"
-msgid "Match Anywhere"
+msgid "Match Anywhere (Kanji Only)"
 msgstr "&Ҷустуҷӯи дар ҳар ҷо"
 
 #: app/searchStringInput.cpp:57
@@ -234,11 +234,11 @@ msgstr ""
 msgid "Search t&ext"
 msgstr "Муҳаррири Ҷустуҷӯ"
 
-#: lib/dictKanjidic/entryKanjidic.cpp:96
+#: lib/dictKanjidic/entryKanjidic.cpp:54
 msgid "In names: "
 msgstr "Дар номҳо: "
 
-#: lib/dictKanjidic/entryKanjidic.cpp:100
+#: lib/dictKanjidic/entryKanjidic.cpp:58
 msgid "As radical: "
 msgstr "Ба таври қатъӣ: "
 
@@ -289,47 +289,49 @@ msgctxt "@option:radio selects japanese translation"
 msgid "Kana"
 msgstr "Кана"
 
-#: lib/dictEdict/entryEdict.cpp:207
+#: lib/dictEdict/entryEdict.cpp:205
 #, fuzzy
-#| msgid "no"
+#| msgid "None"
 msgctxt "This must be a single word"
-msgid "noun"
-msgstr "не"
+msgid "Noun"
+msgstr "Ҳеҷ"
+
+#: lib/dictEdict/entryEdict.cpp:206
+msgctxt "This must be a single word"
+msgid "Verb"
+msgstr ""
+
+#: lib/dictEdict/entryEdict.cpp:207
+msgctxt "This must be a single word"
+msgid "Adjective"
+msgstr ""
 
 #: lib/dictEdict/entryEdict.cpp:208
 msgctxt "This must be a single word"
-msgid "verb"
+msgid "Adverb"
 msgstr ""
 
 #: lib/dictEdict/entryEdict.cpp:209
 msgctxt "This must be a single word"
-msgid "adjective"
+msgid "Particle"
 msgstr ""
 
 #: lib/dictEdict/entryEdict.cpp:210
-msgctxt "This must be a single word"
-msgid "adverb"
-msgstr ""
-
-#: lib/dictEdict/entryEdict.cpp:211
-msgctxt "This must be a single word"
-msgid "particle"
-msgstr ""
-
-#: lib/dictEdict/entryEdict.cpp:212
 msgctxt ""
 "This is a technical japanese linguist's term... and probably should not be "
 "translated(except possibly in far-eastern languages), this must be a single "
 "word"
-msgid "ichidan"
+msgid "Ichidan"
 msgstr ""
 
-#: lib/dictEdict/entryEdict.cpp:213
+#: lib/dictEdict/entryEdict.cpp:211
+#, fuzzy
+#| msgid "Good!"
 msgctxt ""
 "This is a technical japanese linguist's term... and probably should not be "
 "translated, this must be a single word"
-msgid "godan"
-msgstr ""
+msgid "Godan"
+msgstr "Хуб!"
 
 #: lib/dictEdict/dictFilePreferenceDialog.cpp:42
 msgid "&Available List Fields:"
@@ -768,6 +770,12 @@ msgstr ""
 msgid "漢字 かな"
 msgstr ""
 
+#, fuzzy
+#~| msgid "no"
+#~ msgctxt "This must be a single word"
+#~ msgid "noun"
+#~ msgstr "не"
+
 #~ msgid "Search with &Beginning of Word"
 #~ msgstr "&Ҷустуҷӯ бо калимаи сар"
 
@@ -949,9 +957,6 @@ msgstr ""
 
 #~ msgid "Learning List"
 #~ msgstr "Рӯйхати Аз ёд кардани"
-
-#~ msgid "Good!"
-#~ msgstr "Хуб!"
 
 #~ msgid "Wrong"
 #~ msgstr "Нодуруст"
