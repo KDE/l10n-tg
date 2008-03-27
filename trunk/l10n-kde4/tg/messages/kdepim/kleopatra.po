@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-03-22 20:29+0100\n"
+"POT-Creation-Date: 2008-03-27 15:24+0100\n"
 "PO-Revision-Date: 2005-09-17 13:34+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -370,7 +370,7 @@ msgstr "Файлро болонависӣ кунам?"
 msgid "Serial"
 msgstr "Сериявӣ"
 
-#: certmanager.cpp:274 mainwindow.cpp:364
+#: certmanager.cpp:274 mainwindow.cpp:365
 msgid "Stop Operation"
 msgstr "Боздоштани амалиёт"
 
@@ -402,7 +402,7 @@ msgstr "Бекор кардан"
 msgid "Extend"
 msgstr "Вусъат додан"
 
-#: certmanager.cpp:316 certmanager.cpp:1118 mainwindow.cpp:369
+#: certmanager.cpp:316 certmanager.cpp:1118 mainwindow.cpp:370
 msgid "Delete"
 msgstr ""
 
@@ -410,7 +410,7 @@ msgstr ""
 msgid "Validate"
 msgstr "Санҷидан"
 
-#: certmanager.cpp:329 mainwindow.cpp:357
+#: certmanager.cpp:329 mainwindow.cpp:358
 msgid "Import Certificates..."
 msgstr "Воридоти сертификатҳо..."
 
@@ -418,7 +418,7 @@ msgstr "Воридоти сертификатҳо..."
 msgid "Import CRLs..."
 msgstr "Воридоти CRL..."
 
-#: certmanager.cpp:340 mainwindow.cpp:355
+#: certmanager.cpp:340 mainwindow.cpp:356
 msgid "Export Certificates..."
 msgstr "Содироти сертификатҳо..."
 
@@ -426,7 +426,7 @@ msgstr "Содироти сертификатҳо..."
 msgid "Export Secret Key..."
 msgstr "Содироти калиди баста..."
 
-#: certmanager.cpp:350 mainwindow.cpp:366
+#: certmanager.cpp:350 mainwindow.cpp:367
 #, fuzzy
 #| msgid "Certificate Details..."
 msgid "Certificate Details"
@@ -436,13 +436,13 @@ msgstr "Маълумот оиди сертификат..."
 msgid "Download"
 msgstr "Пурборкунӣ"
 
-#: certmanager.cpp:359 mainwindow.cpp:376
+#: certmanager.cpp:359 mainwindow.cpp:377
 #, fuzzy
 #| msgid "Dump CRL Cache..."
 msgid "Dump CRL Cache"
 msgstr "Сурати кзши CRL..."
 
-#: certmanager.cpp:364 mainwindow.cpp:374
+#: certmanager.cpp:364 mainwindow.cpp:375
 #, fuzzy
 #| msgid "Clear CRL Cache..."
 msgid "Clear CRL Cache"
@@ -894,44 +894,81 @@ msgstr ""
 msgid "S/MIME export file:"
 msgstr ""
 
-#: main.cpp:152
+#: main.cpp:128
+msgid ""
+"Kleopatra detected an obsolete registry key (\"HKLM\\GNU\\GnuPG\\gpgProgram"
+"\"),added by either previous gpg4win versions or applications such as WinPT "
+"or EnigMail.Keeping the entry might lead to problems during operations (old "
+"GnuPG backend being used).It is advised to delete the key."
+msgstr ""
+
+#: main.cpp:132
+msgid "Old Registry Entries Detected"
+msgstr ""
+
+#: main.cpp:133
+msgid "Delete Registry Key"
+msgstr ""
+
+#: main.cpp:147
+#, kde-format
+msgid ""
+"Could not open key \"HKLM\\GNU\\GnuPG\\gpgProgram\" from the registry.\n"
+"Error: \"%1\""
+msgstr ""
+
+#: main.cpp:148 main.cpp:161
+#, fuzzy
+#| msgid "Deleting keys..."
+msgid "Error Deleting Key"
+msgstr "Ҳузфи калидҳо..."
+
+#: main.cpp:160
+#, kde-format
+msgid ""
+"Could not delete the key \"HKLM\\GNU\\GnuPG\\gpgProgram\" from the "
+"registry.\n"
+"Error: \"%1\""
+msgstr ""
+
+#: main.cpp:219
 #, fuzzy
 #| msgid "Exporting certificate..."
 msgid "Loading certificate cache..."
 msgstr "Содироти сертификат..."
 
-#: main.cpp:155
+#: main.cpp:222
 #, fuzzy
 #| msgid "Certificate Download Failed"
 msgid "Certificate cache loaded."
 msgstr "Наметавонам сертификатро пурбор кунам."
 
-#: main.cpp:167
+#: main.cpp:234
 msgid "Search for external certificates initially"
 msgstr "Аввал дар сертификатҳои хориҷӣ ҷустуҷӯ кардан"
 
-#: main.cpp:168
+#: main.cpp:235
 msgid "Initial query string"
 msgstr "Сатри ибтидоии дархост"
 
-#: main.cpp:170
+#: main.cpp:237
 msgid "Run UI server only, hide main window"
 msgstr ""
 
-#: main.cpp:172
+#: main.cpp:239
 msgid "Name of certificate file to import"
 msgstr "Номи файли сертификат барои воридот"
 
-#: main.cpp:174
+#: main.cpp:241
 msgid "Location of the socket the ui server is listening on"
 msgstr ""
 
-#: main.cpp:233
+#: main.cpp:300
 #, kde-format
 msgid "Kleopatra UI Server listening on %1"
 msgstr ""
 
-#: main.cpp:240
+#: main.cpp:307
 #, fuzzy
 #| msgid ""
 #| "<qt>The crypto plugin could not be initialized.<br>Certificate Manager "
@@ -943,11 +980,11 @@ msgstr ""
 "<qt>Модули рамзгузорӣ набояд инитсиализатсия карда шуда бошад.<br>Кори "
 "мудири сертификат ба итмом хоҳад расид.</qt>"
 
-#: main.cpp:286
+#: main.cpp:356
 msgid "GPG UI Server Error"
 msgstr ""
 
-#: main.cpp:287
+#: main.cpp:357
 #, kde-format
 msgid ""
 "<qt>The Kleopatra GPG UI Server Module couldn't be initialized.<br/>The "
@@ -986,39 +1023,39 @@ msgstr ""
 msgid "Configure GnuPG Backend..."
 msgstr "Танзими чархаки &GpgME"
 
-#: mainwindow.cpp:353
+#: mainwindow.cpp:354
 #, fuzzy
 #| msgid "Save Certificate"
 msgid "New Certificate..."
 msgstr "Нигоҳ доштани сертификат"
 
-#: mainwindow.cpp:359
+#: mainwindow.cpp:360
 msgid "Sign/Encrypt Files..."
 msgstr ""
 
-#: mainwindow.cpp:371
+#: mainwindow.cpp:372
 msgid "Change Expiry Date..."
 msgstr ""
 
-#: mainwindow.cpp:378
+#: mainwindow.cpp:379
 #, fuzzy
 #| msgid "Import CRLs..."
 msgid "Import CRL From File..."
 msgstr "Воридоти CRL..."
 
-#: mainwindow.cpp:416
+#: mainwindow.cpp:417
 msgid "GnuPG Configuration Self-Check Results"
 msgstr ""
 
-#: mainwindow.cpp:418
+#: mainwindow.cpp:419
 msgid "This is the result of the GnuPG configuration self-check:"
 msgstr ""
 
-#: mainwindow.cpp:452
+#: mainwindow.cpp:453
 msgid "The process terminated prematurely"
 msgstr ""
 
-#: mainwindow.cpp:457
+#: mainwindow.cpp:458
 #, kde-format
 msgid ""
 "There was an error executing the GnuPG configuration self-check:\n"
@@ -1028,7 +1065,7 @@ msgid ""
 "Diagnostics:"
 msgstr ""
 
-#: mainwindow.cpp:462
+#: mainwindow.cpp:463
 #, kde-format
 msgid ""
 "There was an error executing \"gpgconf --check-config\":\n"
@@ -1036,7 +1073,7 @@ msgid ""
 "You might want to execute \"gpgconf --check-config\" on the command line."
 msgstr ""
 
-#: mainwindow.cpp:467
+#: mainwindow.cpp:468
 #, kde-format
 msgid ""
 "The GnuPG configuration self-check failed.\n"
@@ -1045,49 +1082,49 @@ msgid ""
 "Diagnostics:"
 msgstr ""
 
-#: mainwindow.cpp:471
+#: mainwindow.cpp:472
 #, kde-format
 msgid ""
 "The GnuPG configuration self-check failed with error code %1.\n"
 "No output was received."
 msgstr ""
 
-#: mainwindow.cpp:475
+#: mainwindow.cpp:476
 msgid ""
 "The GnuPG configuration self-check succeeded.\n"
 "\n"
 "Diagnostics:"
 msgstr ""
 
-#: mainwindow.cpp:478
+#: mainwindow.cpp:479
 msgid "The GnuPG configuration self-check succeeded."
 msgstr ""
 
-#: mainwindow.cpp:488
+#: mainwindow.cpp:489
 msgid "Could not configure the cryptography backend (gpgconf tool not found)"
 msgstr ""
 
-#: mainwindow.cpp:488
+#: mainwindow.cpp:489
 msgid "Configuration Error"
 msgstr ""
 
-#: mainwindow.cpp:585
+#: mainwindow.cpp:586
 msgid "Sign/Encrypt..."
 msgstr ""
 
-#: mainwindow.cpp:587
+#: mainwindow.cpp:588
 #, fuzzy
 #| msgid "Import Certificates..."
 msgid "Import Certificates"
 msgstr "Воридоти сертификатҳо..."
 
-#: mainwindow.cpp:588
+#: mainwindow.cpp:589
 #, fuzzy
 #| msgid "Import CRLs..."
 msgid "Import CRLs"
 msgstr "Воридоти CRL..."
 
-#: mainwindow.cpp:590
+#: mainwindow.cpp:591
 #, fuzzy
 #| msgid "Canceled."
 msgid "Cancel"
