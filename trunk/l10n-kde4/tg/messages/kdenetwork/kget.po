@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-10 23:12+0200\n"
+"POT-Creation-Date: 2008-04-12 19:07+0200\n"
 "PO-Revision-Date: 2004-07-26 11:18+0000\n"
 "Last-Translator: Hiromon\n"
 "Language-Team:  Tajik\n"
@@ -44,7 +44,7 @@ msgid "New Group"
 msgstr "Феҳрист бо Нобаёнӣ"
 
 #: conf/transfersgroupwidget.cpp:127 core/transfergrouphandler.cpp:192
-#: core/kget.cpp:664
+#: core/kget.cpp:677
 #, fuzzy
 msgid "My Downloads"
 msgstr "Боркунӣ идома дода шудааст"
@@ -160,7 +160,7 @@ msgstr ""
 msgid "Folder and extension can not be empty."
 msgstr ""
 
-#: conf/dlgdirectories.cpp:140 core/kget.cpp:459 core/kget.cpp:838
+#: conf/dlgdirectories.cpp:140 core/kget.cpp:472 core/kget.cpp:851
 msgid "Error"
 msgstr ""
 
@@ -290,7 +290,7 @@ msgstr "Тайёр"
 msgid "Rename transfer"
 msgstr "Кушодани Вогузорӣ"
 
-#: core/kget.cpp:431
+#: core/kget.cpp:444
 #, fuzzy, kde-format
 msgid ""
 "The file %1 already exists.\n"
@@ -301,27 +301,27 @@ msgstr ""
 "аллакай мавҷуд аст.\n"
 "Онро рӯиҳам навиштан мехоҳед?"
 
-#: core/kget.cpp:432
+#: core/kget.cpp:445
 msgid "Overwrite existing file?"
 msgstr ""
 
-#: core/kget.cpp:458
+#: core/kget.cpp:471
 #, kde-format
 msgid "Unable to save to: %1"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/newtransferwidget.ui line 24
-#: core/kget.cpp:775 ui/newtransferdialog.cpp:37 rc.cpp:389
+#: core/kget.cpp:788 ui/newtransferdialog.cpp:37 rc.cpp:389
 #, fuzzy
 msgid "New Download"
 msgstr "Мудири Боркунӣ"
 
-#: core/kget.cpp:775
+#: core/kget.cpp:788
 msgid "Enter URL:"
 msgstr ""
 
-#: core/kget.cpp:837
+#: core/kget.cpp:850
 #, kde-format
 msgid ""
 "Malformed URL:\n"
@@ -330,7 +330,7 @@ msgstr ""
 "URL-и нодуруст:\n"
 "%1"
 
-#: core/kget.cpp:849
+#: core/kget.cpp:862
 #, fuzzy, kde-format
 msgid ""
 "URL already saved:\n"
@@ -341,16 +341,16 @@ msgstr ""
 "%1\n"
 "Бори дигар бор кунам?"
 
-#: core/kget.cpp:850
+#: core/kget.cpp:863
 #, fuzzy
 msgid "Download URL again?"
 msgstr "Мудири Боркунӣ"
 
-#: core/kget.cpp:878 core/kget.cpp:885
+#: core/kget.cpp:891 core/kget.cpp:898
 msgid "Directory is not writable"
 msgstr ""
 
-#: core/kget.cpp:895
+#: core/kget.cpp:908
 #, kde-format
 msgid ""
 "Destination file \n"
@@ -363,13 +363,13 @@ msgstr ""
 "аллакай мавҷуд аст.\n"
 "Онро рӯиҳам навиштан мехоҳед?"
 
-#: core/kget.cpp:1010
+#: core/kget.cpp:1023
 #, kde-format
 msgid ""
 "<html><p>KPluginFactory could not load the plugin:<br/><i>%1</i></p></html>"
 msgstr ""
 
-#: core/kget.cpp:1027
+#: core/kget.cpp:1040
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -380,11 +380,11 @@ msgstr ""
 "%1\n"
 "аз баски он раҳнамо аст."
 
-#: core/kget.cpp:1029 core/kget.cpp:1040
+#: core/kget.cpp:1042 core/kget.cpp:1053
 msgid "Not Deleted"
 msgstr "Нобуд Нагаштааст"
 
-#: core/kget.cpp:1038
+#: core/kget.cpp:1051
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -1575,12 +1575,12 @@ msgctxt "fix position for droptarget"
 msgid "Sticky"
 msgstr "Часбанда"
 
-#: ui/droptarget.cpp:221 mainwindow.cpp:762
+#: ui/droptarget.cpp:221 mainwindow.cpp:777
 #, fuzzy
 msgid "&Download"
 msgstr "Боркунӣ идома дода шудааст"
 
-#: ui/droptarget.cpp:222 mainwindow.cpp:763
+#: ui/droptarget.cpp:222 mainwindow.cpp:778
 #, fuzzy
 msgid "&Load transferlist"
 msgstr "Кушодани вогузорӣ:"
@@ -1670,7 +1670,7 @@ msgstr ""
 msgid "Download Manager"
 msgstr "Мудири Боркунӣ"
 
-#: extensions/konqueror/kget_plug_in.cpp:51 mainwindow.cpp:251
+#: extensions/konqueror/kget_plug_in.cpp:51 mainwindow.cpp:256
 #, fuzzy
 msgid "Show Drop Target"
 msgstr "Намоиш додани Ҳадафи Кашолакунӣ"
@@ -1921,74 +1921,79 @@ msgid "Delete Selected"
 msgstr "Ягон Файл Интихоб нашудааст"
 
 #: mainwindow.cpp:188
+msgctxt "delete all finished transfers"
+msgid "Delete all finished"
+msgstr ""
+
+#: mainwindow.cpp:193
 #, fuzzy
 #| msgid "Download finished"
 msgctxt "redownload selected transfer item"
 msgid "Redownload Selected"
 msgstr "Боркуни ба итмом расид"
 
-#: mainwindow.cpp:193
+#: mainwindow.cpp:198
 msgid "Start / Resume All"
 msgstr ""
 
-#: mainwindow.cpp:199
+#: mainwindow.cpp:204
 #, fuzzy
 msgid "Start / Resume Selected"
 msgstr "Ягон Файл Интихоб нашудааст"
 
-#: mainwindow.cpp:204
+#: mainwindow.cpp:209
 msgid "Stop All"
 msgstr ""
 
-#: mainwindow.cpp:210
+#: mainwindow.cpp:215
 #, fuzzy
 msgid "Stop Selected"
 msgstr "Ягон Файл Интихоб нашудааст"
 
-#: mainwindow.cpp:214
+#: mainwindow.cpp:219
 msgid "Start / Resume"
 msgstr ""
 
-#: mainwindow.cpp:222
+#: mainwindow.cpp:227
 #, fuzzy
 msgid "Stop"
 msgstr "Суръат"
 
-#: mainwindow.cpp:231
+#: mainwindow.cpp:236
 #, fuzzy
 msgid "Open Destination"
 msgstr "Кушодани &Мақсад"
 
-#: mainwindow.cpp:236 mainwindow.cpp:367
+#: mainwindow.cpp:241 mainwindow.cpp:372
 #, fuzzy
 msgid "Open File"
 msgstr "Кушодани &Файл"
 
-#: mainwindow.cpp:241
+#: mainwindow.cpp:246
 #, fuzzy
 msgid "Show Details"
 msgstr "H_Abrorova@rambler.ru"
 
-#: mainwindow.cpp:246
+#: mainwindow.cpp:251
 #, fuzzy
 msgid "Copy URL to Clipboard"
 msgstr "&Нусхабардории URL ба Силули Мухобиротӣ"
 
-#: mainwindow.cpp:257
+#: mainwindow.cpp:262
 #, fuzzy
 msgid "&Transfer History"
 msgstr "Кушодани вогузорӣ:"
 
-#: mainwindow.cpp:263
+#: mainwindow.cpp:268
 msgid "&Group Settings"
 msgstr ""
 
-#: mainwindow.cpp:269
+#: mainwindow.cpp:274
 #, fuzzy
 msgid "&Transfer Settings"
 msgstr "Вогузориҳо: %1"
 
-#: mainwindow.cpp:308
+#: mainwindow.cpp:313
 #, fuzzy
 msgid ""
 "This is the first time you have run KGet.\n"
@@ -1997,24 +2002,24 @@ msgstr ""
 "Ин бори аввлест, ки шумо KGet-ро сар медиҳед.\n"
 "Муттаҳидгардӣ бо Konqueror-ро даргиронам?"
 
-#: mainwindow.cpp:310
+#: mainwindow.cpp:315
 #, fuzzy
 msgid "Konqueror Integration"
 msgstr "Муттаҳидгардӣ бо Konqueror"
 
-#: mainwindow.cpp:310
+#: mainwindow.cpp:315
 msgid "Enable"
 msgstr ""
 
-#: mainwindow.cpp:311
+#: mainwindow.cpp:316
 msgid "Do Not Enable"
 msgstr ""
 
-#: mainwindow.cpp:366
+#: mainwindow.cpp:371
 msgid "All Openable Files"
 msgstr ""
 
-#: mainwindow.cpp:383
+#: mainwindow.cpp:388
 #, fuzzy
 msgid ""
 "Some transfers are still running.\n"
@@ -2023,38 +2028,38 @@ msgstr ""
 "Баъзе вогузориҳо то ба ҳол фаъоланд.\n"
 "Дар ҳақиқат мехоҳед, ки KGet-ро хомӯш созед?"
 
-#: mainwindow.cpp:385
+#: mainwindow.cpp:390
 msgid "Confirm Quit"
 msgstr ""
 
-#: mainwindow.cpp:418
+#: mainwindow.cpp:423
 #, fuzzy
 msgid "KGet Transfer List"
 msgstr "Кушодани вогузорӣ:"
 
-#: mainwindow.cpp:420
+#: mainwindow.cpp:425
 #, fuzzy
 msgid "Export Transfers"
 msgstr "&Содироти Рӯйхати Интиқол..."
 
-#: mainwindow.cpp:443
+#: mainwindow.cpp:448
 #, fuzzy
 msgid "Enter Group Name"
 msgstr "Абророва Хиромон"
 
-#: mainwindow.cpp:444
+#: mainwindow.cpp:449
 #, fuzzy
 msgid "Group name:"
 msgstr "Абророва Хиромон"
 
-#: mainwindow.cpp:674
+#: mainwindow.cpp:689
 msgid ""
 "KGet has been temporarily disabled as download manager for Konqueror. If you "
 "want to disable it forever, go to Settings->Advanced and disable \"Use as "
 "download manager for Konqueror\"."
 msgstr ""
 
-#: mainwindow.cpp:677
+#: mainwindow.cpp:692
 #, fuzzy
 msgid "Konqueror Integration disabled"
 msgstr "Муттаҳидгардӣ бо Konqueror"
@@ -2938,19 +2943,19 @@ msgid "&Downloads"
 msgstr "Боркунӣ идома дода шудааст"
 
 #. i18n: tag text
-#. i18n: file ui/kgetui.rc line 23
+#. i18n: file ui/kgetui.rc line 24
 #: rc.cpp:482
 msgid "&Settings"
 msgstr ""
 
 #. i18n: tag text
-#. i18n: file ui/kgetui.rc line 35
+#. i18n: file ui/kgetui.rc line 36
 #: rc.cpp:485
 msgid "&Help"
 msgstr ""
 
 #. i18n: tag text
-#. i18n: file ui/kgetui.rc line 38
+#. i18n: file ui/kgetui.rc line 39
 #: rc.cpp:488
 msgid "Main Toolbar"
 msgstr ""
