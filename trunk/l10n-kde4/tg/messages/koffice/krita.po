@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-10 23:27+0200\n"
+"POT-Creation-Date: 2008-04-16 16:11+0200\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -1486,7 +1486,7 @@ msgstr "Экран"
 
 #. i18n: tag string
 #. i18n: file ./ui/forms/wdgnewimage.ui line 246
-#: rc.cpp:245 ui/kis_dlg_preferences.cc:409
+#: rc.cpp:245 ui/dialogs/kis_dlg_preferences.cc:409
 #, fuzzy
 msgid "Color"
 msgstr "Ранг кардан"
@@ -1683,7 +1683,8 @@ msgstr "&Мил:"
 
 #. i18n: tag string
 #. i18n: file ./ui/forms/wdgautogradient.ui line 25
-#: rc.cpp:335 ui/kis_gradient_chooser.cc:41 ui/kis_gradient_chooser.cc:46
+#: rc.cpp:335 ui/widgets/kis_gradient_chooser.cc:41
+#: ui/widgets/kis_gradient_chooser.cc:46
 #, fuzzy
 msgid "Custom Gradient"
 msgstr "Градиент:"
@@ -1800,8 +1801,8 @@ msgstr ""
 #. i18n: file ./ui/forms/wdgcolorsettings.ui line 60
 #. i18n: tag string
 #. i18n: file ./ui/forms/wdgdisplaysettings.ui line 13
-#: rc.cpp:398 rc.cpp:473 ui/kis_dlg_preferences.cc:400
-#: ui/kis_dlg_preferences.cc:401
+#: rc.cpp:398 rc.cpp:473 ui/dialogs/kis_dlg_preferences.cc:400
+#: ui/dialogs/kis_dlg_preferences.cc:401
 #, fuzzy
 msgid "Display"
 msgstr "Сириштан"
@@ -2199,7 +2200,7 @@ msgstr ""
 #. i18n: file ./ui/forms/wdgcustombrush.ui line 98
 #. i18n: tag string
 #. i18n: file ./plugins/brushes/imagepipe/wdgcustombrush.ui line 98
-#: rc.cpp:578 rc.cpp:2731 ui/kis_brush_chooser.cc:44
+#: rc.cpp:578 rc.cpp:2731 ui/widgets/kis_brush_chooser.cc:44
 msgid "Use color as mask"
 msgstr "Истифодаи ранг ҳамчун ниқоб"
 
@@ -3708,7 +3709,7 @@ msgstr "Ҳосиятҳои Табақа"
 
 #. i18n: tag string
 #. i18n: file ./plugins/viewplugins/compose/wdg_compose.ui line 22
-#: rc.cpp:1393 ui/kis_dlg_adj_layer_props.cc:75
+#: rc.cpp:1393 ui/dialogs/kis_dlg_adj_layer_props.cc:75
 #, fuzzy
 msgid "Layer name:"
 msgstr "Намуди табақа:"
@@ -5142,7 +5143,7 @@ msgstr "Нест кардани Табақа"
 
 #. i18n: tag string
 #. i18n: file ./plugins/viewplugins/scripting/scripts/pilimport.ui line 134
-#: rc.cpp:2227 ui/kis_dlg_new_layer.cc:51
+#: rc.cpp:2227 ui/dialogs/kis_dlg_new_layer.cc:51
 msgid "New Layer"
 msgstr "Табақаи Нав"
 
@@ -6001,21 +6002,6 @@ msgstr "Интихоб кардан"
 msgid "&Rotate"
 msgstr "Занондан"
 
-#: ui/kis_dlg_image_properties.cc:52
-#, fuzzy
-msgid "Image Properties"
-msgstr "Ҳосиятҳои Табақа"
-
-#: ui/kis_gradient_chooser.cc:55
-#, fuzzy
-msgid "Custom Gradient..."
-msgstr "Градиент:"
-
-#: ui/kis_gradient_chooser.cc:90
-#, fuzzy
-msgid "Choose Gradient to Add"
-msgstr "Намунаҳо"
-
 #: ui/kis_image_manager.cc:57
 msgid "I&nsert Image as Layer..."
 msgstr "&Даровардани Тасвир ҳамчун Табақа..."
@@ -6029,36 +6015,64 @@ msgstr "Ҳосиятҳои Табақа..."
 msgid "Import Image"
 msgstr "Воридоти Тасвир"
 
-#: ui/kis_dlg_preferences.cc:148
+#: ui/dialogs/kis_dlg_image_properties.cc:52
+#, fuzzy
+msgid "Image Properties"
+msgstr "Ҳосиятҳои Табақа"
+
+#: ui/dialogs/kis_dlg_preferences.cc:148
 msgid "Monitor profile: "
 msgstr ""
 
-#: ui/kis_dlg_preferences.cc:152
+#: ui/dialogs/kis_dlg_preferences.cc:152
 msgid "&Monitor profile: "
 msgstr ""
 
-#: ui/kis_dlg_preferences.cc:387
+#: ui/dialogs/kis_dlg_preferences.cc:387
 msgid "Preferences"
 msgstr "Имтиёзҳо"
 
-#: ui/kis_dlg_preferences.cc:393 ui/kis_dlg_preferences.cc:394
+#: ui/dialogs/kis_dlg_preferences.cc:393 ui/dialogs/kis_dlg_preferences.cc:394
 msgid "General"
 msgstr "Умумӣ"
 
-#: ui/kis_dlg_preferences.cc:408
+#: ui/dialogs/kis_dlg_preferences.cc:408
 #, fuzzy
 msgid "Color Management"
 msgstr "Ранги роҳбар"
 
-#: ui/kis_dlg_preferences.cc:415 ui/kis_dlg_preferences.cc:416
+#: ui/dialogs/kis_dlg_preferences.cc:415 ui/dialogs/kis_dlg_preferences.cc:416
 #, fuzzy
 msgid "Performance"
 msgstr "Имтиёзҳо"
 
-#: ui/kis_dlg_preferences.cc:421 ui/kis_dlg_preferences.cc:422
+#: ui/dialogs/kis_dlg_preferences.cc:421 ui/dialogs/kis_dlg_preferences.cc:422
 #, fuzzy
 msgid "Grid"
 msgstr "Кабуд"
+
+#: ui/dialogs/kis_dlg_layer_properties.cc:58
+msgid "Layer Properties"
+msgstr "Ҳосиятҳои Табақа"
+
+#: ui/dialogs/kis_dlg_apply_profile.cc:45
+msgid "Apply Image Profile to Clipboard Data"
+msgstr ""
+
+#: ui/dialogs/kis_dlg_adjustment_layer.cc:62
+#, fuzzy
+msgid "Name:"
+msgstr "Ном:"
+
+#: ui/dialogs/kis_dlg_adjustment_layer.cc:77
+#, fuzzy
+msgid "Configuration"
+msgstr "Тазод :"
+
+#: ui/dialogs/kis_dlg_adjustment_layer.cc:83
+#: ui/dialogs/kis_dlg_adj_layer_props.cc:93
+msgid "No configuration options are available for this filter"
+msgstr ""
 
 #: ui/kis_paintop_box.cc:68
 #, fuzzy
@@ -6074,29 +6088,10 @@ msgstr ""
 msgid "Edit brush settings"
 msgstr "Ҳосиятҳои Табақа..."
 
-#: ui/kis_previewwidget.cc:113 ui/kis_previewwidget.cc:165
-#, fuzzy
-msgid "Preview: "
-msgstr "Пешнамоиш"
-
-#: ui/kis_previewwidget.cc:168
-#, fuzzy
-msgid "Original: "
-msgstr "Аслӣ"
-
-#: ui/kis_previewwidget.cc:176
-msgid "Preview (needs update)"
-msgstr ""
-
 #: ui/kis_bookmarked_configurations_editor.cc:63
 #, fuzzy, kde-format
 msgid "New configuration %1"
 msgstr "Тазод :"
-
-#: ui/kis_pattern_chooser.cc:71
-#, fuzzy
-msgid "Choose Pattern to Add"
-msgstr "Намунаҳо"
 
 #: ui/kis_mask_manager.cc:84 ui/kis_mask_manager.cc:197
 #, fuzzy
@@ -6208,38 +6203,9 @@ msgstr ""
 msgid "Apply Filter Again: %1"
 msgstr ""
 
-#: ui/kis_dlg_layer_properties.cc:58
-msgid "Layer Properties"
-msgstr "Ҳосиятҳои Табақа"
-
-#: ui/kis_gradient_slider_widget.cc:48
-msgid "Split Segment"
-msgstr ""
-
-#: ui/kis_gradient_slider_widget.cc:49
-#, fuzzy
-msgid "Duplicate Segment"
-msgstr "Дучанда кардани Тасвир"
-
-#: ui/kis_gradient_slider_widget.cc:50
-#, fuzzy
-msgid "Mirror Segment"
-msgstr "Рӯяноби зиёдтарин"
-
-#: ui/kis_gradient_slider_widget.cc:52
-#, fuzzy
-msgid "Remove Segment"
-msgstr "Нест кардани Интихобот"
-
 #: ui/kis_birdeye_box.cc:214
 msgid "Exposure:"
 msgstr ""
-
-#: ui/kis_filter_dialog.cc:144
-#: plugins/viewplugins/tonemapping/kis_tonemapping_dialog.cc:121
-#, fuzzy
-msgid "No configuration option."
-msgstr "Тазод :"
 
 #: ui/kis_layer_manager.cc:138
 #, fuzzy
@@ -6406,34 +6372,6 @@ msgstr "Дучанда кардани Тасвир"
 msgid "Export Layer"
 msgstr "Содироти Табақа"
 
-#: ui/kis_dlg_apply_profile.cc:45
-msgid "Apply Image Profile to Clipboard Data"
-msgstr ""
-
-#: ui/kis_brush_chooser.cc:38
-#, fuzzy
-msgid "Spacing: "
-msgstr "Фосила: "
-
-#: ui/kis_brush_chooser.cc:114
-#, fuzzy
-msgid "Choose Brush to Add"
-msgstr "&Интихоби тоза кардан"
-
-#: ui/kis_dlg_adjustment_layer.cc:62
-#, fuzzy
-msgid "Name:"
-msgstr "Ном:"
-
-#: ui/kis_dlg_adjustment_layer.cc:77
-#, fuzzy
-msgid "Configuration"
-msgstr "Тазод :"
-
-#: ui/kis_dlg_adjustment_layer.cc:83 ui/kis_dlg_adj_layer_props.cc:93
-msgid "No configuration options are available for this filter"
-msgstr ""
-
 #: ui/kis_custom_palette.cc:104 ui/kis_custom_palette.cc:142
 #: plugins/tools/defaulttools/kis_tool_colorpicker.cc:181
 #, kde-format
@@ -6514,6 +6452,68 @@ msgid ""
 "The rulers show the horizontal and vertical positions of the mouse on the "
 "image and can be used to position your mouse at the right place on the "
 "canvas. <p>Uncheck this to hide the rulers."
+msgstr ""
+
+#: ui/widgets/kis_gradient_chooser.cc:55
+#, fuzzy
+msgid "Custom Gradient..."
+msgstr "Градиент:"
+
+#: ui/widgets/kis_gradient_chooser.cc:90
+#, fuzzy
+msgid "Choose Gradient to Add"
+msgstr "Намунаҳо"
+
+#: ui/widgets/kis_previewwidget.cc:113 ui/widgets/kis_previewwidget.cc:165
+#, fuzzy
+msgid "Preview: "
+msgstr "Пешнамоиш"
+
+#: ui/widgets/kis_previewwidget.cc:168
+#, fuzzy
+msgid "Original: "
+msgstr "Аслӣ"
+
+#: ui/widgets/kis_previewwidget.cc:176
+msgid "Preview (needs update)"
+msgstr ""
+
+#: ui/widgets/kis_pattern_chooser.cc:71
+#, fuzzy
+msgid "Choose Pattern to Add"
+msgstr "Намунаҳо"
+
+#: ui/widgets/kis_gradient_slider_widget.cc:48
+msgid "Split Segment"
+msgstr ""
+
+#: ui/widgets/kis_gradient_slider_widget.cc:49
+#, fuzzy
+msgid "Duplicate Segment"
+msgstr "Дучанда кардани Тасвир"
+
+#: ui/widgets/kis_gradient_slider_widget.cc:50
+#, fuzzy
+msgid "Mirror Segment"
+msgstr "Рӯяноби зиёдтарин"
+
+#: ui/widgets/kis_gradient_slider_widget.cc:52
+#, fuzzy
+msgid "Remove Segment"
+msgstr "Нест кардани Интихобот"
+
+#: ui/widgets/kis_brush_chooser.cc:38
+#, fuzzy
+msgid "Spacing: "
+msgstr "Фосила: "
+
+#: ui/widgets/kis_brush_chooser.cc:114
+#, fuzzy
+msgid "Choose Brush to Add"
+msgstr "&Интихоби тоза кардан"
+
+#: ui/widgets/kis_meta_data_merge_strategy_chooser_widget.cc:61
+msgid "Choose meta data merge strategy"
 msgstr ""
 
 #: ui/kis_selection_manager.cc:144
@@ -6616,10 +6616,6 @@ msgstr "Шакл:"
 msgid "Border"
 msgstr "Бор кардан..."
 
-#: ui/kis_meta_data_merge_strategy_chooser_widget.cc:61
-msgid "Choose meta data merge strategy"
-msgstr ""
-
 #: ui/kis_tool_paint.cc:131
 #, fuzzy
 msgid "Mode: "
@@ -6645,7 +6641,6 @@ msgid "Opacity"
 msgstr "Норавшанӣ:"
 
 #: image/kis_layer.cc:99
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:209
 #, kde-format
 msgid "%1%"
 msgstr ""
@@ -7768,6 +7763,11 @@ msgstr "Тасвири Нав"
 #: plugins/viewplugins/tonemapping/tonemapping.cc:53
 msgid "Tonemapping"
 msgstr ""
+
+#: plugins/viewplugins/tonemapping/kis_tonemapping_dialog.cc:121
+#, fuzzy
+msgid "No configuration option."
+msgstr "Тазод :"
 
 #: plugins/viewplugins/tonemapping/operators/icam/kis_icam_operator.cc:67
 msgid "Icam"
