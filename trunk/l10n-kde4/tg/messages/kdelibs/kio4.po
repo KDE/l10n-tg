@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-28 18:44+0200\n"
+"POT-Creation-Date: 2008-05-03 09:05+0200\n"
 "PO-Revision-Date: 2005-09-17 13:14+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -41,12 +41,12 @@ msgctxt "@title job"
 msgid "Moving"
 msgstr "Дар ҳоли ҳаракат кардан"
 
-#: kio/job.cpp:132 kio/job.cpp:139 kio/job.cpp:164
+#: kio/job.cpp:132 kio/job.cpp:139 kio/job.cpp:164 kio/fileundomanager.cpp:120
 #, fuzzy
 msgid "Source"
 msgstr "Манбаъ:"
 
-#: kio/job.cpp:133 kio/job.cpp:140
+#: kio/job.cpp:133 kio/job.cpp:140 kio/fileundomanager.cpp:121
 #, fuzzy
 msgid "Destination"
 msgstr "Ҷойгиршавӣ:"
@@ -64,7 +64,7 @@ msgctxt "@title job"
 msgid "Creating directory"
 msgstr "Сохтани Феҳрист"
 
-#: kio/job.cpp:146
+#: kio/job.cpp:146 kio/fileundomanager.cpp:117
 msgid "Directory"
 msgstr ""
 
@@ -74,7 +74,7 @@ msgctxt "@title job"
 msgid "Deleting"
 msgstr " (Нест кардан)"
 
-#: kio/job.cpp:152 kio/job.cpp:158
+#: kio/job.cpp:152 kio/job.cpp:158 kio/fileundomanager.cpp:124
 #, fuzzy
 msgid "File"
 msgstr "&Филтр:"
@@ -114,7 +114,7 @@ msgctxt "@title job"
 msgid "Unmounting"
 msgstr "Ҷудо кардан"
 
-#: kio/job.cpp:1954 kio/paste.cpp:63 kio/copyjob.cpp:1170 kio/copyjob.cpp:1698
+#: kio/job.cpp:1954 kio/paste.cpp:63 kio/copyjob.cpp:1170 kio/copyjob.cpp:1699
 #: kio/global.cpp:677
 msgid "File Already Exists"
 msgstr "Файл аллакай мавҷуд аст"
@@ -490,7 +490,7 @@ msgstr "Гузаронидани ҳамааш"
 msgid "Folder Already Exists"
 msgstr "Феҳрист аллакай мавҷуд аст"
 
-#: kio/copyjob.cpp:1170 kio/copyjob.cpp:1698
+#: kio/copyjob.cpp:1170 kio/copyjob.cpp:1699
 msgid "Already Exists as Folder"
 msgstr "Аллакай монанди феҳрист низ мавҷуд аст"
 
@@ -2511,6 +2511,70 @@ msgstr "Дастрасӣ:"
 #, kde-format
 msgid "No service implementing %1"
 msgstr "Хизмати нест барои иҷрои %1"
+
+#: kio/fileundomanager.cpp:116
+#, fuzzy
+msgid "Creating directory"
+msgstr "Сохтани Феҳрист"
+
+#: kio/fileundomanager.cpp:119
+#, fuzzy
+#| msgid "Moving"
+msgid "Moving"
+msgstr "Дар ҳоли ҳаракат кардан"
+
+#: kio/fileundomanager.cpp:123
+#, fuzzy
+msgid "Deleting"
+msgstr " (Нест кардан)"
+
+#: kio/fileundomanager.cpp:276
+msgid "Und&o"
+msgstr ""
+
+#: kio/fileundomanager.cpp:280
+msgid "Und&o: Copy"
+msgstr ""
+
+#: kio/fileundomanager.cpp:282
+msgid "Und&o: Link"
+msgstr ""
+
+#: kio/fileundomanager.cpp:284
+msgid "Und&o: Move"
+msgstr ""
+
+#: kio/fileundomanager.cpp:286
+#, fuzzy
+#| msgid "&Rename"
+msgid "Und&o: Rename"
+msgstr "&Тағйири исм"
+
+#: kio/fileundomanager.cpp:288
+#, fuzzy
+msgid "Und&o: Trash"
+msgstr "Файлҳои муваққатӣ"
+
+#: kio/fileundomanager.cpp:290
+#, fuzzy
+#| msgid "Could Not Create Folder"
+msgid "Und&o: Create Folder"
+msgstr "Феҳристро сохта карда натавонист"
+
+#: kio/fileundomanager.cpp:756
+#, kde-format
+msgid ""
+"The file %1 was copied from %2, but since then it has apparently been "
+"modified at %3.\n"
+"Undoing the copy will delete the file, and all modifications will be lost.\n"
+"Are you sure you want to delete %4?"
+msgstr ""
+
+#: kio/fileundomanager.cpp:759
+#, fuzzy
+#| msgid "Updating System Configuration"
+msgid "Undo File Copy Confirmation"
+msgstr "Боз созии танзимоти система"
 
 #: kio/slave.cpp:406
 #, kde-format
@@ -5805,18 +5869,24 @@ msgstr "Маълуматҳои meta барои %1 нест"
 msgid "No metainfo for %1"
 msgstr "Маълуматҳои meta барои %1 нест"
 
-#: ../kfile/kfileplacesview.cpp:403
+#: ../kfile/kfileplacesview.cpp:408
+#, fuzzy
+msgctxt "@action:inmenu"
+msgid "Empty Trash"
+msgstr "Файлҳои муваққатӣ"
+
+#: ../kfile/kfileplacesview.cpp:414
 #, fuzzy, kde-format
 #| msgid "&Edit..."
 msgid "&Edit '%1'..."
 msgstr "&Тағйир додан..."
 
-#: ../kfile/kfileplacesview.cpp:406
+#: ../kfile/kfileplacesview.cpp:417
 #, kde-format
 msgid "&Hide '%1'"
 msgstr ""
 
-#: ../kfile/kfileplacesview.cpp:413
+#: ../kfile/kfileplacesview.cpp:424
 #, fuzzy
 #| msgid ""
 #| "Show\n"
@@ -5826,10 +5896,22 @@ msgstr ""
 "Намоиши\n"
 "Вурудҳо"
 
-#: ../kfile/kfileplacesview.cpp:423
+#: ../kfile/kfileplacesview.cpp:434
 #, fuzzy, kde-format
 msgid "&Remove '%1'"
 msgstr "&Ҳузфи навиштаҷот"
+
+#: ../kfile/kfileplacesview.cpp:450
+#, fuzzy
+msgctxt "@info"
+msgid "Do you really want to empty the Trash? All items will be deleted."
+msgstr "Шумо мехоҳед ин ҷузъ нобуд созед?"
+
+#: ../kfile/kfileplacesview.cpp:454
+#, fuzzy
+msgctxt "@action:button"
+msgid "Empty Trash"
+msgstr "Файлҳои муваққатӣ"
 
 #: ../kfile/kfilefiltercombo.cpp:36 ../kfile/kfilewidget.cpp:1479
 msgid "*|All Files"
