@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-11 10:16+0200\n"
+"POT-Creation-Date: 2008-05-13 19:54+0200\n"
 "PO-Revision-Date: 2005-12-23 20:42-0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -1933,70 +1933,6 @@ msgctxt "Style name"
 msgid "Gray Top and Bottom"
 msgstr "Боло ва поён хокистарӣ аст"
 
-#: part/KWOpenDocumentLoader.cpp:323
-#, fuzzy
-msgid "Invalid OASIS OpenDocument file. No office:body tag found."
-msgstr "Ҳуҷҷати OASIS нодуруст. Бе офис:тани барчасп кофта ёфта шуд."
-
-#: part/KWOpenDocumentLoader.cpp:335
-#, fuzzy
-msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
-msgstr "Ҳуҷҷати OASIS нодуруст. Бе офис:тани барчасп кофта ёфта шуд."
-
-#: part/KWOpenDocumentLoader.cpp:337
-#, kde-format
-msgid ""
-"This is not a word processing document, but %1. Please try opening it with "
-"the appropriate application."
-msgstr ""
-
-#: part/KWOpenDocumentLoader.cpp:428 part/KWOpenDocumentLoader.cpp:468
-msgid "Main Text Frameset"
-msgstr "Чорчӯбаи матни асосӣ"
-
-#: part/KWOpenDocumentLoader.cpp:641
-msgid ""
-"Invalid document. 'fo' has the wrong namespace. The application which "
-"produced this document is not OASIS-compliant."
-msgstr ""
-
-#: part/KWOpenDocumentLoader.cpp:643 part/KWDLoader.cpp:101
-#, kde-format
-msgid "Invalid document. Paper size: %1x%2"
-msgstr "Ҳуҷҷати нодуруст. Андозаи қоғаз: %1x%2"
-
-#: part/KWOpenDocumentLoader.cpp:681
-msgid "Header"
-msgstr "Сарлавҳа"
-
-#: part/KWOpenDocumentLoader.cpp:681 part/frames/KWTextFrameSet.cpp:78
-msgid "Odd Pages Header"
-msgstr "Сарлавҳаи саҳифаҳои ноҷуфт"
-
-#: part/KWOpenDocumentLoader.cpp:685 part/frames/KWTextFrameSet.cpp:81
-msgid "Even Pages Header"
-msgstr "Сарлавҳаи саҳифаҳоро ҳамвор кунед"
-
-#: part/KWOpenDocumentLoader.cpp:689
-msgid "Footer"
-msgstr "Унвон"
-
-#: part/KWOpenDocumentLoader.cpp:689 part/frames/KWTextFrameSet.cpp:87
-msgid "Odd Pages Footer"
-msgstr "Сарлавҳаи поёни саҳифаҳои ноҷуфт"
-
-#: part/KWOpenDocumentLoader.cpp:693 part/frames/KWTextFrameSet.cpp:90
-msgid "Even Pages Footer"
-msgstr "Сарлавҳаи поёни саҳифаҳоро ҳамвор кунед"
-
-#: part/KWOpenDocumentLoader.cpp:697 part/frames/KWTextFrameSet.cpp:75
-msgid "First Page Header"
-msgstr "Сарлавҳаи саҳифаи аввлум"
-
-#: part/KWOpenDocumentLoader.cpp:701 part/frames/KWTextFrameSet.cpp:84
-msgid "First Page Footer"
-msgstr "Сарлавҳаи поёни саҳифаи аввлум"
-
 #: part/dialogs/KWShapeConfigFactory.cpp:38 part/dialogs/KWFrameDialog.cpp:47
 msgid "Connect Text Frames"
 msgstr "Алоқаи матн ва чорчӯба"
@@ -2158,6 +2094,11 @@ msgstr ""
 "Нодурустии андозаи ҳуҷат.Тахмин кардани намуди MIME apрlication/x-kword еки "
 "application/vnd. kde.kword,ба даст оварда шуд%1"
 
+#: part/KWDLoader.cpp:101 part/KWOdfLoader.cpp:420
+#, kde-format
+msgid "Invalid document. Paper size: %1x%2"
+msgstr "Ҳуҷҷати нодуруст. Андозаи қоғаз: %1x%2"
+
 #: part/commands/KWPageRemoveCommand.cpp:29
 #, fuzzy
 #| msgid "Remove entry"
@@ -2188,6 +2129,30 @@ msgstr "Мондани саҳифа"
 #: part/commands/KWFrameDeleteCommand.cpp:29 part/KWView.cpp:153
 msgid "Delete Frame"
 msgstr "Нест кардани чорчӯба"
+
+#: part/frames/KWTextFrameSet.cpp:75 part/KWOdfLoader.cpp:474
+msgid "First Page Header"
+msgstr "Сарлавҳаи саҳифаи аввлум"
+
+#: part/frames/KWTextFrameSet.cpp:78 part/KWOdfLoader.cpp:458
+msgid "Odd Pages Header"
+msgstr "Сарлавҳаи саҳифаҳои ноҷуфт"
+
+#: part/frames/KWTextFrameSet.cpp:81 part/KWOdfLoader.cpp:462
+msgid "Even Pages Header"
+msgstr "Сарлавҳаи саҳифаҳоро ҳамвор кунед"
+
+#: part/frames/KWTextFrameSet.cpp:84 part/KWOdfLoader.cpp:478
+msgid "First Page Footer"
+msgstr "Сарлавҳаи поёни саҳифаи аввлум"
+
+#: part/frames/KWTextFrameSet.cpp:87 part/KWOdfLoader.cpp:466
+msgid "Odd Pages Footer"
+msgstr "Сарлавҳаи поёни саҳифаҳои ноҷуфт"
+
+#: part/frames/KWTextFrameSet.cpp:90 part/KWOdfLoader.cpp:470
+msgid "Even Pages Footer"
+msgstr "Сарлавҳаи поёни саҳифаҳоро ҳамвор кунед"
 
 #: part/frames/KWTextFrameSet.cpp:93
 #, fuzzy
@@ -2610,6 +2575,41 @@ msgstr ""
 msgid "Zoom Controller"
 msgstr ""
 
+#: part/KWOdfLoader.cpp:100
+#, fuzzy
+msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgstr "Ҳуҷҷати OASIS нодуруст. Бе офис:тани барчасп кофта ёфта шуд."
+
+#: part/KWOdfLoader.cpp:112
+#, fuzzy
+msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgstr "Ҳуҷҷати OASIS нодуруст. Бе офис:тани барчасп кофта ёфта шуд."
+
+#: part/KWOdfLoader.cpp:114
+#, kde-format
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
+msgstr ""
+
+#: part/KWOdfLoader.cpp:205 part/KWOdfLoader.cpp:245
+msgid "Main Text Frameset"
+msgstr "Чорчӯбаи матни асосӣ"
+
+#: part/KWOdfLoader.cpp:418
+msgid ""
+"Invalid document. 'fo' has the wrong namespace. The application which "
+"produced this document is not OASIS-compliant."
+msgstr ""
+
+#: part/KWOdfLoader.cpp:458
+msgid "Header"
+msgstr "Сарлавҳа"
+
+#: part/KWOdfLoader.cpp:466
+msgid "Footer"
+msgstr "Унвон"
+
 #: part/KWAboutData.h:27
 msgid "KOffice Word Processor"
 msgstr "Протсессори KOffice Word"
@@ -2709,17 +2709,17 @@ msgstr ""
 msgid "Michael Johnson"
 msgstr ""
 
-#: part/KWDocument.cpp:434
+#: part/KWDocument.cpp:442
 #, fuzzy
 #| msgid "Copy%1-%2"
 msgid "Copy"
 msgstr "Нусхаи%1-%2"
 
-#: part/KWDocument.cpp:688
+#: part/KWDocument.cpp:695
 msgid "Can not find needed text component, KWord will quit now"
 msgstr ""
 
-#: part/KWDocument.cpp:689
+#: part/KWDocument.cpp:696
 msgid "Installation Error"
 msgstr ""
 
