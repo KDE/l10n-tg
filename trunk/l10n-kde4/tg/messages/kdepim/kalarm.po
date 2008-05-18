@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-11 10:13+0200\n"
+"POT-Creation-Date: 2008-05-18 07:31+0200\n"
 "PO-Revision-Date: 2005-09-16 16:30+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -59,22 +59,33 @@ msgstr ""
 #, fuzzy
 #| msgid "Failed to execute command (shell access not authorized):"
 msgctxt "@info"
-msgid "Failed to execute command (shell access not authorized):"
+msgid "Failed to execute command (shell access not authorized)"
 msgstr "Хатои оғоз намудани дастурот (дастрасӣ ба ҷилд манъ аст):"
 
 #: lib/shellprocess.cpp:161
 #, fuzzy
 #| msgid "Failed to execute command:"
 msgctxt "@info"
-msgid "Failed to execute command:"
+msgid "Failed to execute command"
 msgstr "Хатои оғоз намудани дастурот:"
 
 #: lib/shellprocess.cpp:163
 #, fuzzy
 #| msgid "Command execution error:"
 msgctxt "@info"
-msgid "Command execution error:"
+msgid "Command execution error"
 msgstr "Хатои иҷро намудани дастурот:"
+
+#: lib/shellprocess.cpp:166
+#, fuzzy, kde-format
+#| msgid ""
+#| "Command executed:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Command exit code: %1"
+msgstr ""
+"Дастури зерин иҷро шуд:\n"
+"%1"
 
 #: lib/timespinbox.cpp:77
 #, fuzzy
@@ -236,20 +247,20 @@ msgstr ""
 "Баъди баромадан аз барнома, хотиррасонӣ намоиш нахоҳад шуд\n"
 "(агар тамоми тирезаҳои хотиррасонӣ низ ҳам пӯшида шуда бошанд)."
 
-#: kalarmapp.cpp:1862
+#: kalarmapp.cpp:1866
 #, fuzzy
 msgctxt "@info"
 msgid "Error creating temporary script file"
 msgstr "Хатои талаби KMail"
 
-#: kalarmapp.cpp:1926
+#: kalarmapp.cpp:1944
 #, fuzzy
 #| msgid "Pre-alarm action:"
 msgctxt "@info"
 msgid "Pre-alarm action:"
 msgstr "Амали пешакӣ:"
 
-#: kalarmapp.cpp:1931
+#: kalarmapp.cpp:1949
 #, fuzzy
 #| msgid "Post-alarm action:"
 msgctxt "@info"
@@ -2384,27 +2395,27 @@ msgid "Specify actions to execute before and after the alarm is displayed."
 msgstr ""
 "Амалеро ишора кунед, ки бояд то ва баъди намоиши хотиррасонӣ иҷро шавад."
 
-#: specialactions.cpp:100
+#: specialactions.cpp:103
 #, fuzzy
 #| msgid "Special Alarm Actions"
 msgctxt "@title:window"
 msgid "Special Alarm Actions"
 msgstr "Амалҳои махсуси хотиррасонӣ"
 
-#: specialactions.cpp:158
+#: specialactions.cpp:161
 #, fuzzy
 msgctxt "@title:group"
 msgid "Pre-Alarm Action"
 msgstr "Амали пешакӣ:"
 
-#: specialactions.cpp:168 specialactions.cpp:194
+#: specialactions.cpp:171 specialactions.cpp:197
 #, fuzzy
 #| msgid "Co&mmand"
 msgctxt "@label:textbox"
 msgid "Command:"
 msgstr "&Дастур"
 
-#: specialactions.cpp:173
+#: specialactions.cpp:176
 #, fuzzy
 msgctxt "@info:whatsthis"
 msgid ""
@@ -2417,25 +2428,25 @@ msgstr ""
 "Дастурро барои пеш аз намоиши хотиррасонӣ иҷро намудан ворид кунед. %1, дар "
 "интизори итмомоти дастур пеш аз намоиши хотиррасонӣ низ мешавад."
 
-#: specialactions.cpp:179
+#: specialactions.cpp:182
 msgctxt "@option:check"
 msgid "Cancel alarm on error"
 msgstr ""
 
-#: specialactions.cpp:180
+#: specialactions.cpp:183
 msgctxt "@info:whatsthis"
 msgid ""
 "Cancel the alarm if the pre-alarm command fails, i.e. do not display the "
 "alarm or execute any post-alarm action command."
 msgstr ""
 
-#: specialactions.cpp:184
+#: specialactions.cpp:187
 #, fuzzy
 msgctxt "@title:group"
 msgid "Post-Alarm Action"
 msgstr "Амал баъди хотиррасонӣ:"
 
-#: specialactions.cpp:198
+#: specialactions.cpp:201
 #, fuzzy
 msgctxt "@info:whatsthis"
 msgid ""
@@ -6501,7 +6512,7 @@ msgctxt "@info"
 msgid "Error reading address book"
 msgstr "Хатои боз кардани китоби адресӣ"
 
-#: alarmevent.cpp:2858
+#: alarmevent.cpp:2856
 #, fuzzy
 #| msgctxt "Brief form of 'At Login'"
 #| msgid "Login"
@@ -6509,14 +6520,14 @@ msgctxt "@info/plain Brief form of 'At Login'"
 msgid "Login"
 msgstr "Ҳангоми ба қайдгирӣ"
 
-#: alarmevent.cpp:2858
+#: alarmevent.cpp:2856
 #, fuzzy
 #| msgid "At login"
 msgctxt "@info/plain"
 msgid "At login"
 msgstr "Ҳангоми қайдкунӣ дар система"
 
-#: alarmevent.cpp:2866 alarmevent.cpp:2904
+#: alarmevent.cpp:2864 alarmevent.cpp:2902
 #, fuzzy, kde-format
 #| msgid "1 Minute"
 #| msgid_plural "%1 Minutes"
@@ -6526,7 +6537,7 @@ msgid_plural "%1 Minutes"
 msgstr[0] "%1 дақиқа"
 msgstr[1] "%1 дақиқаҳо"
 
-#: alarmevent.cpp:2868 alarmevent.cpp:2906
+#: alarmevent.cpp:2866 alarmevent.cpp:2904
 #, fuzzy, kde-format
 #| msgid "1 Hour"
 #| msgid_plural "%1 Hours"
@@ -6536,7 +6547,7 @@ msgid_plural "%1 Hours"
 msgstr[0] "%1 соат"
 msgstr[1] "%1 соатҳо"
 
-#: alarmevent.cpp:2872 alarmevent.cpp:2908
+#: alarmevent.cpp:2870 alarmevent.cpp:2906
 #, fuzzy, kde-format
 #| msgctxt "Hours and Minutes"
 #| msgid "%1H %2M"
@@ -6546,7 +6557,7 @@ msgstr ""
 "Соатҳо ва дақиқаҳо\n"
 "%1С %2Д"
 
-#: alarmevent.cpp:2875 alarmevent.cpp:2912
+#: alarmevent.cpp:2873 alarmevent.cpp:2910
 #, fuzzy, kde-format
 #| msgid "1 Day"
 #| msgid_plural "%1 Days"
@@ -6556,7 +6567,7 @@ msgid_plural "%1 Days"
 msgstr[0] "%1 рӯз"
 msgstr[1] "%1 рӯзҳо"
 
-#: alarmevent.cpp:2877 alarmevent.cpp:2913
+#: alarmevent.cpp:2875 alarmevent.cpp:2911
 #, fuzzy, kde-format
 #| msgid "1 Week"
 #| msgid_plural "%1 Weeks"
@@ -6566,7 +6577,7 @@ msgid_plural "%1 Weeks"
 msgstr[0] "%1 ҳафта"
 msgstr[1] "%1 ҳафтаҳо"
 
-#: alarmevent.cpp:2879
+#: alarmevent.cpp:2877
 #, fuzzy, kde-format
 #| msgid "1 Month"
 #| msgid_plural "%1 Months"
@@ -6576,7 +6587,7 @@ msgid_plural "%1 Months"
 msgstr[0] "%1 моҳ"
 msgstr[1] "%1 моҳҳо"
 
-#: alarmevent.cpp:2881
+#: alarmevent.cpp:2879
 #, fuzzy, kde-format
 #| msgid "1 Year"
 #| msgid_plural "%1 Years"
@@ -6586,14 +6597,14 @@ msgid_plural "%1 Years"
 msgstr[0] "%1 сол"
 msgstr[1] "%1 солҳо"
 
-#: alarmevent.cpp:2887
+#: alarmevent.cpp:2885
 #, fuzzy
 #| msgid "None"
 msgctxt "@info/plain No recurrence"
 msgid "None"
 msgstr "Нест"
 
-#: alarmevent.cpp:2915
+#: alarmevent.cpp:2913
 #, fuzzy
 #| msgid "None"
 msgctxt "@info/plain No repetition"
