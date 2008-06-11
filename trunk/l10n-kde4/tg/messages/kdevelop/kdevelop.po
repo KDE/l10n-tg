@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-06-10 18:18+0200\n"
+"POT-Creation-Date: 2008-06-11 10:04+0200\n"
 "PO-Revision-Date: 2005-12-21 14:47+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: \n"
@@ -1263,7 +1263,7 @@ msgstr "&Резюме:"
 #. i18n: tag string
 #. i18n: file ./plugins/xtest/qxrunner/runnerwindow.ui line 270
 #: rc.cpp:518 languages/cpp/debugger/debuggerplugin.cpp:203
-#: languages/cpp/debugger/debuggerplugin.cpp:673
+#: languages/cpp/debugger/debuggerplugin.cpp:678
 #, fuzzy
 msgid "&Start"
 msgstr "&Запуск:"
@@ -2022,7 +2022,7 @@ msgstr ""
 msgid "Folder: \"%1\"  Command: \"%2\"Output: \"%3\""
 msgstr ""
 
-#: languages/cpp/codecompletioncontext.cpp:640
+#: languages/cpp/codecompletioncontext.cpp:614
 #, kde-format
 msgid "%1 overloads of"
 msgstr ""
@@ -2939,6 +2939,7 @@ msgid "Disassemble"
 msgstr "Дизассемблер"
 
 #: languages/cpp/debugger/debuggerplugin.cpp:162
+#: languages/cpp/debugger/debuggerplugin.cpp:610
 #, fuzzy
 msgid "GDB"
 msgstr "GDB"
@@ -3285,22 +3286,22 @@ msgstr "Выберите процесс для присоединения к н�
 msgid "Attaching to process %1"
 msgstr "Присоединяется процесс %1"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:621
+#: languages/cpp/debugger/debuggerplugin.cpp:626
 #, fuzzy
 msgid "Debugger"
 msgstr "Отладчик"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:644
+#: languages/cpp/debugger/debuggerplugin.cpp:649
 #, fuzzy
 msgid "Debugger stopped"
 msgstr "Отладчик остановлен"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:674
+#: languages/cpp/debugger/debuggerplugin.cpp:679
 #, fuzzy
 msgid "Runs the program in the debugger"
 msgstr "Запустить программу в отладчике"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:675
+#: languages/cpp/debugger/debuggerplugin.cpp:680
 #, fuzzy
 msgid ""
 "Start in debugger\n"
@@ -3315,17 +3316,17 @@ msgstr ""
 "остановки до этого, или вы можете приостановить приложение, пока оно "
 "запущено, чтобы получить информацию о переменных, стеке вызова и.т.п."
 
-#: languages/cpp/debugger/debuggerplugin.cpp:689
+#: languages/cpp/debugger/debuggerplugin.cpp:694
 #, fuzzy
 msgid "&Continue"
 msgstr "&Продолжить"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:690
+#: languages/cpp/debugger/debuggerplugin.cpp:695
 #, fuzzy
 msgid "Continues the application execution"
 msgstr "Прервать выполнение приложения"
 
-#: languages/cpp/debugger/debuggerplugin.cpp:691
+#: languages/cpp/debugger/debuggerplugin.cpp:696
 #, fuzzy
 msgid ""
 "Continue application execution\n"
@@ -3340,7 +3341,7 @@ msgstr ""
 "приложение было приостановлено отладчиком (т.е. отладчик дошёл до точки "
 "остановки или кнопка \"приостановить\" была нажата)."
 
-#: languages/cpp/debugger/debuggerplugin.cpp:722
+#: languages/cpp/debugger/debuggerplugin.cpp:727
 #, fuzzy
 msgid "Process exited"
 msgstr "Процесс завершён"
@@ -4296,28 +4297,28 @@ msgstr "Объекты для установки"
 msgid "Uninstalled headers"
 msgstr "Объекты для установки"
 
-#: buildtools/builders/cmakebuilder/cmakejob.cpp:81
-#, fuzzy, kde-format
-msgid "CMake: %1"
-msgstr "Цель: %1"
-
 #: buildtools/builders/cmakebuilder/cmakejob.cpp:103
-#: buildtools/builders/makebuilder/makejob.cpp:257
+#: buildtools/builders/makebuilder/makejob.cpp:258
 #, fuzzy
 msgid "Job failed"
 msgstr "Журнал не получен"
 
-#: buildtools/builders/qmakebuilder/qmakejob.cpp:60
+#: buildtools/builders/cmakebuilder/cmakejob.cpp:154
+#, fuzzy, kde-format
+msgid "CMake: %1"
+msgstr "Цель: %1"
+
+#: buildtools/builders/qmakebuilder/qmakejob.cpp:62
 #, fuzzy
 msgid "No project specified."
 msgstr "Менеджер проектов QMake"
 
-#: buildtools/builders/qmakebuilder/qmakejob.cpp:65
+#: buildtools/builders/qmakebuilder/qmakejob.cpp:97
 #, fuzzy, kde-format
 msgid "QMake: %1"
 msgstr "Цель: %1"
 
-#: buildtools/builders/qmakebuilder/qmakejob.cpp:100
+#: buildtools/builders/qmakebuilder/qmakejob.cpp:105
 #, fuzzy
 msgid "Configure error"
 msgstr "&Закрыть проект"
@@ -4364,34 +4365,34 @@ msgstr "создание"
 msgid "installing"
 msgstr "сабткунӣ"
 
-#: buildtools/builders/makebuilder/makejob.cpp:81
+#: buildtools/builders/makebuilder/makejob.cpp:69
+#: buildtools/builders/makebuilder/makejob.cpp:71
+#, fuzzy, kde-format
+msgid "Make: %1"
+msgstr "Цель: %1"
+
+#: buildtools/builders/makebuilder/makejob.cpp:90
 #, fuzzy, kde-format
 #| msgid "Add Subdirectory"
 msgid "Invalid build directory '%1'"
 msgstr "Иловаи зерфеҳрист"
 
-#: buildtools/builders/makebuilder/makejob.cpp:88
+#: buildtools/builders/makebuilder/makejob.cpp:97
 #, fuzzy, kde-format
 msgid "Could not create build command for target '%1'"
 msgstr "Невозможно создать подкаталог %1."
 
-#: buildtools/builders/makebuilder/makejob.cpp:97
-#: buildtools/builders/makebuilder/makejob.cpp:100
-#, fuzzy, kde-format
-msgid "Make: %1"
-msgstr "Цель: %1"
-
-#: buildtools/builders/makebuilder/makejob.cpp:258
+#: buildtools/builders/makebuilder/makejob.cpp:259
 #, fuzzy
 msgid "*** Failed ***"
 msgstr "*** Успешное завершение ***"
 
-#: buildtools/builders/makebuilder/makejob.cpp:261
+#: buildtools/builders/makebuilder/makejob.cpp:262
 #, fuzzy
 msgid "*** Aborted ***"
 msgstr "*** Процесс прерван ***"
 
-#: buildtools/builders/makebuilder/makejob.cpp:268
+#: buildtools/builders/makebuilder/makejob.cpp:269
 msgid "*** Finished ***"
 msgstr ""
 
@@ -4400,42 +4401,47 @@ msgstr ""
 msgid "Search"
 msgstr "Поиск"
 
-#: plugins/grepview/grepjob.cpp:119
+#: plugins/grepview/grepjob.cpp:65
+#, fuzzy, kde-format
+msgid "Grep: %1"
+msgstr "Grep: %1"
+
+#: plugins/grepview/grepjob.cpp:131
 #, fuzzy
 msgid "Unable to create a temporary file for search."
 msgstr "Не удалось создать временный файл '%1'"
 
-#: plugins/grepview/grepjob.cpp:222
+#: plugins/grepview/grepjob.cpp:234
 #, fuzzy
 msgid "Find in Files"
 msgstr "Поиск в файлах"
 
-#: plugins/grepview/grepjob.cpp:300
+#: plugins/grepview/grepjob.cpp:313
 #, fuzzy
 msgid "Process failed to start."
 msgstr "Процесс завершён с кодом %1"
 
-#: plugins/grepview/grepjob.cpp:303
+#: plugins/grepview/grepjob.cpp:316
 #, fuzzy
 msgid "Process crashed."
 msgstr "Процесс завершён"
 
-#: plugins/grepview/grepjob.cpp:306
+#: plugins/grepview/grepjob.cpp:319
 #, fuzzy
 msgid "Process timed out."
 msgstr "Valgrind"
 
-#: plugins/grepview/grepjob.cpp:309
+#: plugins/grepview/grepjob.cpp:322
 #, fuzzy
 msgid "Error while writing to process."
 msgstr "Ошибка при добавлении файлов"
 
-#: plugins/grepview/grepjob.cpp:312
+#: plugins/grepview/grepjob.cpp:325
 #, fuzzy
 msgid "Error while reading from process."
 msgstr "Ошибка при добавлении файлов"
 
-#: plugins/grepview/grepjob.cpp:315
+#: plugins/grepview/grepjob.cpp:328
 #, fuzzy
 msgid "Unknown process error."
 msgstr "Неизвестная ошибка."
@@ -4635,15 +4641,55 @@ msgstr ""
 "<b>Проверка утечек памяти при помощи Valgrind</b><p>Запускает Valgrind - "
 "инструмент поиска проблем организации работы с памятью в ваших приложениях."
 
-#: plugins/valgrind/valgrindplugin.cpp:111
+#: plugins/valgrind/valgrindplugin.cpp:112
 #, fuzzy
 msgid "Open Valgrind Output"
 msgstr "Открыть вывод Valgrind"
 
-#: plugins/valgrind/valgrindplugin.cpp:117
+#: plugins/valgrind/valgrindplugin.cpp:118
 #, fuzzy, kde-format
 msgid "Could not open valgrind output: %1"
 msgstr "Невозможно открыть вывод valgrind: %1"
+
+#: plugins/valgrind/valgrindplugin.cpp:173
+#, fuzzy
+msgid "Valgrind (Memcheck)"
+msgstr "Проверка памяти при помощи Valgrind"
+
+#: plugins/valgrind/valgrindplugin.cpp:173
+#, fuzzy
+msgid "Valgrind (Callgrind)"
+msgstr "Valgrind"
+
+#: plugins/valgrind/valgrindplugin.cpp:173
+#, fuzzy
+msgid "Valgrind (Cachegrind)"
+msgstr "Valgrind"
+
+#: plugins/valgrind/valgrindplugin.cpp:173
+#, fuzzy
+msgid "Valgrind (Helgrind)"
+msgstr "Valgrind"
+
+#: plugins/valgrind/valgrindplugin.cpp:173
+#, fuzzy
+msgid "Valgrind (Massif)"
+msgstr "Valgrind"
+
+#: plugins/valgrind/valgrindplugin.cpp:173
+#, fuzzy
+msgid "Valgrind (DRD)"
+msgstr "Valgrind"
+
+#: plugins/valgrind/valgrindplugin.cpp:173
+#, fuzzy
+msgid "Valgrind (Omega)"
+msgstr "Valgrind"
+
+#: plugins/valgrind/valgrindplugin.cpp:173
+#, fuzzy
+msgid "Valgrind (Lackey)"
+msgstr "Valgrind"
 
 #: plugins/valgrind/valgrindcontrol.cpp:125
 #, kde-format
@@ -4868,10 +4914,6 @@ msgstr "Точка наблюдения"
 
 #~ msgid "Extra Toolbar"
 #~ msgstr "Пайраҳаи асбоби иловагӣ"
-
-#, fuzzy
-#~ msgid "Valgrind Warning"
-#~ msgstr "Valgrind"
 
 #, fuzzy
 #~ msgid "No such file or directory."
@@ -7975,10 +8017,6 @@ msgstr "Точка наблюдения"
 #~ "восстанавливаться.<p><strong>Заметьте</strong>, что некоторые настройки "
 #~ "автосинхронизации могут перекрыть восстановленное местоположение, если "
 #~ "они включены."
-
-#, fuzzy
-#~ msgid "Valgrind Memory Check"
-#~ msgstr "Проверка памяти при помощи Valgrind"
 
 #~ msgid "No."
 #~ msgstr "№"
@@ -17492,10 +17530,6 @@ msgstr "Точка наблюдения"
 #, fuzzy
 #~ msgid "Error: cannot find matching name function."
 #~ msgstr "Ошибка: Не удалось найти функцию."
-
-#, fuzzy
-#~ msgid "Grep: %1"
-#~ msgstr "Grep: %1"
 
 #, fuzzy
 #~ msgid "Browse to a file"
