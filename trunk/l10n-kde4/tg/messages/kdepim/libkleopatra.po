@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-25 11:06+0200\n"
+"POT-Creation-Date: 2008-06-22 02:53+0200\n"
 "PO-Revision-Date: 2005-09-17 12:47+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -136,7 +136,7 @@ msgstr ""
 #: rc.cpp:53
 msgid ""
 "Click this button to remove the currently selected directory service. The "
-"change will only take effect once you acknowledge the mail configuration "
+"change will only take effect once you acknowledge the main configuration "
 "dialog."
 msgstr ""
 
@@ -149,6 +149,14 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ui/directoryserviceswidget.ui line 119
 #: rc.cpp:59
+msgid ""
+"Use this option to switch display of username and password information on or "
+"off in the above table."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ui/directoryserviceswidget.ui line 122
+#: rc.cpp:62
 msgid "Show user and password information"
 msgstr ""
 
@@ -311,19 +319,23 @@ msgctxt "progress info: \"%1 of %2\""
 msgid "%1/%2"
 msgstr "%1 аз /%2"
 
-#: kleo/keyfiltermanager.cpp:79
+#: kleo/keyfiltermanager.cpp:77
+msgid "All Certificates"
+msgstr ""
+
+#: kleo/keyfiltermanager.cpp:91
 msgid "My Certificates"
 msgstr ""
 
-#: kleo/keyfiltermanager.cpp:97
+#: kleo/keyfiltermanager.cpp:109
 msgid "Trusted Certificates"
 msgstr ""
 
-#: kleo/keyfiltermanager.cpp:113
+#: kleo/keyfiltermanager.cpp:125
 msgid "Other Certificates"
 msgstr ""
 
-#: ui/backendconfigwidget.cpp:146 ui/directoryserviceswidget.cpp:582
+#: ui/backendconfigwidget.cpp:146 ui/directoryserviceswidget.cpp:634
 msgid "OpenPGP"
 msgstr "OpenPGP"
 
@@ -405,28 +417,38 @@ msgstr ""
 msgid "Set the debugging level to"
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:783 ui/cryptoconfigmodule.cpp:851
+#: ui/cryptoconfigmodule.cpp:783
+msgid "Show..."
+msgstr ""
+
+#: ui/cryptoconfigmodule.cpp:783 ui/cryptoconfigmodule.cpp:870
 msgid "Edit..."
 msgstr "Таъғир додан..."
 
-#: ui/cryptoconfigmodule.cpp:818 ui/cryptoconfigmodule.cpp:894
+#: ui/cryptoconfigmodule.cpp:836
 msgid "Configure LDAP Servers"
 msgstr "Танзимоти сервери LDAP"
 
-#: ui/cryptoconfigmodule.cpp:836
+#: ui/cryptoconfigmodule.cpp:855
 msgid "No server configured yet"
 msgstr "Ягон сервер танзим карда нашудааст"
 
-#: ui/cryptoconfigmodule.cpp:838
+#: ui/cryptoconfigmodule.cpp:857
 #, fuzzy, kde-format
 msgid "1 server configured"
 msgid_plural "%1 servers configured"
 msgstr[0] "Танзими %1 сервери"
 msgstr[1] "Танзими %1 серверҳо"
 
-#: ui/cryptoconfigmodule.cpp:855
+#: ui/cryptoconfigmodule.cpp:874
 msgid "Use keyserver at"
 msgstr ""
+
+#: ui/cryptoconfigmodule.cpp:913
+#, fuzzy
+#| msgid "Configure LDAP Servers"
+msgid "Configure Keyservers"
+msgstr "Танзимоти сервери LDAP"
 
 #: ui/directoryserviceswidget.cpp:64
 #, fuzzy
@@ -463,88 +485,98 @@ msgstr ""
 msgid "ldaps"
 msgstr ""
 
-#: ui/directoryserviceswidget.cpp:468
+#: ui/directoryserviceswidget.cpp:507
 msgctxt "New X.509 Directory Server"
 msgid "X.509"
 msgstr ""
 
-#: ui/directoryserviceswidget.cpp:469
+#: ui/directoryserviceswidget.cpp:508
 #, fuzzy
 #| msgid "OpenPGP"
 msgctxt "New OpenPGP Directory Server"
 msgid "OpenPGP"
 msgstr "OpenPGP"
 
-#: ui/directoryserviceswidget.cpp:575
+#: ui/directoryserviceswidget.cpp:627
 msgid "Scheme"
 msgstr ""
 
-#: ui/directoryserviceswidget.cpp:576
+#: ui/directoryserviceswidget.cpp:628
 msgid "Server Name"
 msgstr ""
 
-#: ui/directoryserviceswidget.cpp:577
+#: ui/directoryserviceswidget.cpp:629
 msgid "Server Port"
 msgstr ""
 
-#: ui/directoryserviceswidget.cpp:578
+#: ui/directoryserviceswidget.cpp:630
 msgid "Base DN"
 msgstr ""
 
-#: ui/directoryserviceswidget.cpp:579
+#: ui/directoryserviceswidget.cpp:631
 #, fuzzy
 msgid "User Name"
 msgstr "Идентификатори қабулкунанда"
 
-#: ui/directoryserviceswidget.cpp:580
+#: ui/directoryserviceswidget.cpp:632
 msgid "Password"
 msgstr ""
 
-#: ui/directoryserviceswidget.cpp:581
+#: ui/directoryserviceswidget.cpp:633
 msgid "X.509"
 msgstr ""
 
-#: ui/directoryserviceswidget.cpp:762
+#: ui/directoryserviceswidget.cpp:653
+msgid "(read-only)"
+msgstr ""
+
+#: ui/directoryserviceswidget.cpp:655
+#, kde-format
+msgctxt "amended tooltip; %1: original tooltip"
+msgid "%1 (read-only)"
+msgstr ""
+
+#: ui/directoryserviceswidget.cpp:837
 msgid ""
 "Select the access protocol (scheme) that the directory service is available "
 "through."
 msgstr ""
 
-#: ui/directoryserviceswidget.cpp:764
+#: ui/directoryserviceswidget.cpp:839
 msgid ""
 "Enter the name or IP address of the server hosting the directory service."
 msgstr ""
 
-#: ui/directoryserviceswidget.cpp:766
+#: ui/directoryserviceswidget.cpp:841
 msgid ""
 "<b>(Optional, the default is fine in most cases)</b> Pick the port number "
 "the directory service is listening on."
 msgstr ""
 
-#: ui/directoryserviceswidget.cpp:769
+#: ui/directoryserviceswidget.cpp:844
 msgid ""
 "<b>(Only for LDAP)</b> Enter the base DN for this LDAP server to limit "
 "searches to only that subtree of the directory."
 msgstr ""
 
-#: ui/directoryserviceswidget.cpp:772
+#: ui/directoryserviceswidget.cpp:847
 msgid "<b>(Optional)</b> Enter your user name here, if needed."
 msgstr ""
 
-#: ui/directoryserviceswidget.cpp:774
+#: ui/directoryserviceswidget.cpp:849
 msgid ""
 "<b>(Optional, not recommended)</b> Enter your password here, if needed. Note "
 "that the password will be saved in the clear in a config file in your home "
 "directory."
 msgstr ""
 
-#: ui/directoryserviceswidget.cpp:778
+#: ui/directoryserviceswidget.cpp:853
 msgid ""
 "Check this column if this directory service is providing S/MIME (X.509) "
 "certificates."
 msgstr ""
 
-#: ui/directoryserviceswidget.cpp:780
+#: ui/directoryserviceswidget.cpp:855
 msgid ""
 "Check this column if this directory service is providing OpenPGP "
 "certificates."
@@ -651,7 +683,7 @@ msgid "<placeholder>unknown</placeholder>"
 msgstr ""
 
 #: ui/keyrequester.cpp:231 ui/keyselectiondialog.cpp:535
-#: backends/qgpgme/qgpgmekeylistjob.cpp:176
+#: backends/qgpgme/qgpgmekeylistjob.cpp:148
 #, kde-format
 msgid ""
 "<qt><p>An error occurred while fetching the keys from the backend:</p><p><b>%"
@@ -717,7 +749,7 @@ msgstr "ҳеҷ гоҳ"
 
 #: ui/keyselectiondialog.cpp:247 ui/keyselectiondialog.cpp:249
 #: ui/keyselectiondialog.cpp:256 ui/keyselectiondialog.cpp:258
-#: ui/keyselectiondialog.cpp:259 backends/qgpgme/qgpgmebackend.cpp:84
+#: ui/keyselectiondialog.cpp:259 backends/qgpgme/qgpgmebackend.cpp:85
 msgid "unknown"
 msgstr "номаълум"
 
@@ -817,23 +849,23 @@ msgstr "Натиҷаи рӯйхати калидҳо"
 msgid "Recheck Key"
 msgstr "Аз нав санҷидани калид"
 
-#: ui/messagebox.cpp:61
+#: ui/messagebox.cpp:63
 msgid "&Save to Disk..."
 msgstr ""
 
-#: ui/messagebox.cpp:65
+#: ui/messagebox.cpp:67
 msgid "&Copy to Clipboard"
 msgstr ""
 
-#: ui/messagebox.cpp:65
+#: ui/messagebox.cpp:67
 msgid "Copy Audit Log to Clipboard"
 msgstr ""
 
-#: ui/messagebox.cpp:69
+#: ui/messagebox.cpp:71
 msgid "&Show Audit Log"
 msgstr ""
 
-#: ui/messagebox.cpp:79
+#: ui/messagebox.cpp:80
 msgid "View GnuPG Audit Log"
 msgstr ""
 
@@ -850,63 +882,63 @@ msgstr ""
 msgid "File Save Error"
 msgstr ""
 
-#: ui/messagebox.cpp:145
+#: ui/messagebox.cpp:140
 msgid "Your system does not have support for GnuPG Audit Logs"
 msgstr ""
 
-#: ui/messagebox.cpp:146
+#: ui/messagebox.cpp:141
 msgid "System Error"
 msgstr ""
 
-#: ui/messagebox.cpp:152
+#: ui/messagebox.cpp:147
 msgid "No GnuPG Audit Log available for this operation."
 msgstr ""
 
-#: ui/messagebox.cpp:153
+#: ui/messagebox.cpp:148
 msgid "No GnuPG Audit Log"
 msgstr ""
 
-#: ui/messagebox.cpp:170 ui/messagebox.cpp:175
+#: ui/messagebox.cpp:165 ui/messagebox.cpp:170
 msgid "GnuPG Audit Log Viewer"
 msgstr ""
 
-#: ui/messagebox.cpp:180
+#: ui/messagebox.cpp:175
 #, kde-format
 msgid "Signing failed: %1"
 msgstr "Хатои имзои: %1"
 
-#: ui/messagebox.cpp:181
+#: ui/messagebox.cpp:176
 msgid "Signing successful"
 msgstr ""
 
-#: ui/messagebox.cpp:190 backends/chiasmus/chiasmusjob.cpp:206
+#: ui/messagebox.cpp:185 backends/chiasmus/chiasmusjob.cpp:206
 #, kde-format
 msgid "Encryption failed: %1"
 msgstr "Хатои рамзгузорӣ: %1"
 
-#: ui/messagebox.cpp:191
+#: ui/messagebox.cpp:186
 #, fuzzy
 #| msgid "Encryption keys:"
 msgid "Encryption successful"
 msgstr "Калиди рамзгузоӣ:"
 
-#: ui/messagebox.cpp:208
+#: ui/messagebox.cpp:203
 #, fuzzy
 #| msgid "Scan Results"
 msgid "Signing Result"
 msgstr "Сарҳисоби сканеркуни"
 
-#: ui/messagebox.cpp:218
+#: ui/messagebox.cpp:213
 msgid "Signing Error"
 msgstr ""
 
-#: ui/messagebox.cpp:228 ui/messagebox.cpp:248
+#: ui/messagebox.cpp:223 ui/messagebox.cpp:243
 #, fuzzy
 #| msgid "Encryption keys:"
 msgid "Encryption Result"
 msgstr "Калиди рамзгузоӣ:"
 
-#: ui/messagebox.cpp:238 ui/messagebox.cpp:258
+#: ui/messagebox.cpp:233 ui/messagebox.cpp:253
 #, fuzzy
 #| msgid "Encryption keys:"
 msgid "Encryption Error"
@@ -917,29 +949,29 @@ msgstr "Калиди рамзгузоӣ:"
 msgid "%1: %2"
 msgstr "%1: %2"
 
-#: backends/chiasmus/chiasmusbackend.cpp:262
+#: backends/chiasmus/chiasmusbackend.cpp:264
 #, fuzzy
 msgid "General"
 msgstr "Хатои умумӣ."
 
-#: backends/chiasmus/chiasmusbackend.cpp:317
-#: backends/chiasmus/chiasmusbackend.cpp:414
+#: backends/chiasmus/chiasmusbackend.cpp:319
+#: backends/chiasmus/chiasmusbackend.cpp:416
 msgid "Chiasmus"
 msgstr ""
 
-#: backends/chiasmus/chiasmusbackend.cpp:362
+#: backends/chiasmus/chiasmusbackend.cpp:364
 msgid "Chiasmus command line tool"
 msgstr ""
 
-#: backends/chiasmus/chiasmusbackend.cpp:434
-#: backends/chiasmus/chiasmusbackend.cpp:440
-#: backends/chiasmus/chiasmusbackend.cpp:469
-#: backends/qgpgme/qgpgmebackend.cpp:332
+#: backends/chiasmus/chiasmusbackend.cpp:436
+#: backends/chiasmus/chiasmusbackend.cpp:442
+#: backends/chiasmus/chiasmusbackend.cpp:471
+#: backends/qgpgme/qgpgmebackend.cpp:343
 #, kde-format
 msgid "Unsupported protocol \"%1\""
 msgstr ""
 
-#: backends/chiasmus/chiasmusbackend.cpp:456
+#: backends/chiasmus/chiasmusbackend.cpp:458
 #, kde-format
 msgid "File \"%1\" does not exist or is not executable."
 msgstr ""
@@ -975,28 +1007,28 @@ msgstr ""
 msgid "Scanning directory %1..."
 msgstr ""
 
-#: backends/qgpgme/qgpgmebackend.cpp:286
+#: backends/qgpgme/qgpgmebackend.cpp:297
 msgid "GpgME"
 msgstr "GpgME"
 
-#: backends/qgpgme/qgpgmebackend.cpp:306
+#: backends/qgpgme/qgpgmebackend.cpp:317
 #, kde-format
 msgid "GPGME was compiled without support for %1."
 msgstr "GPGME бе дастгирӣ эҷод шуд %1."
 
-#: backends/qgpgme/qgpgmebackend.cpp:308
+#: backends/qgpgme/qgpgmebackend.cpp:319
 #, kde-format
 msgid "Engine %1 is not installed properly."
 msgstr "Кумаки %1нодуруст танзим шудааст."
 
-#: backends/qgpgme/qgpgmebackend.cpp:310
+#: backends/qgpgme/qgpgmebackend.cpp:321
 #, kde-format
 msgid "Engine %1 version %2 installed, but at least version %3 is required."
 msgstr ""
 "Хизматгоҳи %1 раванди %2 сабт шудааст, аммо барои кор бо барнома раванди на "
 "поёнтар аз %3 бошад."
 
-#: backends/qgpgme/qgpgmebackend.cpp:314
+#: backends/qgpgme/qgpgmebackend.cpp:325
 #, kde-format
 msgid "Unknown problem with engine for protocol %1."
 msgstr "Масъалаи номаълум дар кӯмаки протокол %1."
@@ -1037,72 +1069,6 @@ msgstr ""
 msgid "Error from gpgconf while saving configuration: %1"
 msgstr "Хатои дар gpgconf мавриди нигаҳдории конфигуратсияҳои: %1"
 
-#: backends/qgpgme/qgpgmedecryptjob.cpp:95
-msgid "Can't start decrypt job"
-msgstr ""
-
-#: backends/qgpgme/qgpgmedecryptverifyjob.cpp:96
-msgid "Can't start combined decrypt/verify operation"
-msgstr ""
-
-#: backends/qgpgme/qgpgmeencryptjob.cpp:111
-msgid "Can't start encrypt job"
-msgstr ""
-
-#: backends/qgpgme/qgpgmejob.cpp:239
-#, kde-format
-msgid "Error adding signer %1."
-msgstr ""
-
-#: backends/qgpgme/qgpgmejob.cpp:328
-#, kde-format
-msgid ""
-"You need a passphrase to unlock the secret key for user:<br/> %1 (retry)"
-msgstr ""
-"Бояд калимаи махфиро барои истифода бурдани калиди истифодабарандаи зерин "
-"низ ишора кунед:<br/> %1 (такрор)"
-
-#: backends/qgpgme/qgpgmejob.cpp:330
-#, kde-format
-msgid "You need a passphrase to unlock the secret key for user:<br/> %1"
-msgstr ""
-"Бояд калимаи махфиро барои истифода бурдани калиди истифодабарандаи зерин "
-"низ ишора кунед:<br/> %1"
-
-#: backends/qgpgme/qgpgmejob.cpp:334
-#, fuzzy
-msgid ""
-"This dialog will reappear every time the passphrase is needed. For a more "
-"secure solution that also allows caching the passphrase, use gpg-agent."
-msgstr ""
-"Ин мубоҳиса ҳар гоҳе, ки калимаи махфиро ишора намудан лозим бошад, зоҳир "
-"мешавад. Агар шумо нахоҳед, ки онро ҳар дафъа ворид кунед gpg-agent-ро сабт "
-"кунед."
-
-#: backends/qgpgme/qgpgmejob.cpp:337
-#, kde-format
-msgid "gpg-agent was found in %1, but does not appear to be running."
-msgstr ""
-
-#: backends/qgpgme/qgpgmejob.cpp:340
-#, kde-format
-msgid "gpg-agent is part of gnupg-%1, which you can download from %2"
-msgstr "gpg-agent қисми пакети gnupg-%1 аст, ки метавон бо %2 пурбор куни"
-
-#: backends/qgpgme/qgpgmejob.cpp:345
-#, kde-format
-msgid "For information on how to set up gpg-agent, see %1"
-msgstr ""
-
-#: backends/qgpgme/qgpgmejob.cpp:348
-#, fuzzy
-msgid "Enter passphrase:"
-msgstr "Калимаи ғайри махфӣ."
-
-#: backends/qgpgme/qgpgmejob.cpp:351
-msgid "Passphrase Dialog"
-msgstr "Мубоҳисаи калимаи махфи"
-
 #: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:50
 msgid "Generating DSA key..."
 msgstr "Эҷоди калиди DSA..."
@@ -1139,21 +1105,35 @@ msgstr ""
 "Оғоз намудани gpg-agent (ба ҷои ин шумо бояд нусхаи глобалиро истифода "
 "кунед)..."
 
-#: backends/qgpgme/qgpgmesignencryptjob.cpp:123
-msgid "Can't start combined sign-encrypt job"
-msgstr ""
+#~ msgid ""
+#~ "You need a passphrase to unlock the secret key for user:<br/> %1 (retry)"
+#~ msgstr ""
+#~ "Бояд калимаи махфиро барои истифода бурдани калиди истифодабарандаи зерин "
+#~ "низ ишора кунед:<br/> %1 (такрор)"
 
-#: backends/qgpgme/qgpgmesignjob.cpp:119
-msgid "Can't start sign job"
-msgstr ""
+#~ msgid "You need a passphrase to unlock the secret key for user:<br/> %1"
+#~ msgstr ""
+#~ "Бояд калимаи махфиро барои истифода бурдани калиди истифодабарандаи зерин "
+#~ "низ ишора кунед:<br/> %1"
 
-#: backends/qgpgme/qgpgmeverifydetachedjob.cpp:99
-msgid "Can't start detached signature verification"
-msgstr ""
+#, fuzzy
+#~ msgid ""
+#~ "This dialog will reappear every time the passphrase is needed. For a more "
+#~ "secure solution that also allows caching the passphrase, use gpg-agent."
+#~ msgstr ""
+#~ "Ин мубоҳиса ҳар гоҳе, ки калимаи махфиро ишора намудан лозим бошад, зоҳир "
+#~ "мешавад. Агар шумо нахоҳед, ки онро ҳар дафъа ворид кунед gpg-agent-ро "
+#~ "сабт кунед."
 
-#: backends/qgpgme/qgpgmeverifyopaquejob.cpp:95
-msgid "Can't start opaque signature verification"
-msgstr ""
+#~ msgid "gpg-agent is part of gnupg-%1, which you can download from %2"
+#~ msgstr "gpg-agent қисми пакети gnupg-%1 аст, ки метавон бо %2 пурбор куни"
+
+#, fuzzy
+#~ msgid "Enter passphrase:"
+#~ msgstr "Калимаи ғайри махфӣ."
+
+#~ msgid "Passphrase Dialog"
+#~ msgstr "Мубоҳисаи калимаи махфи"
 
 #, fuzzy
 #~ msgid "Configure"
