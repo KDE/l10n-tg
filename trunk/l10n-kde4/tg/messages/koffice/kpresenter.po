@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-07-09 18:25+0200\n"
+"POT-Creation-Date: 2008-07-15 12:09+0200\n"
 "PO-Revision-Date: 2005-12-23 20:24-0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -869,12 +869,16 @@ msgstr "Пардаҳои Уфуқ"
 #: plugins/pageeffects/matrixwipe/parallelsnakes/KPrParallelSnakesWipeEffectFactory.cpp:87
 #: plugins/pageeffects/matrixwipe/spiralwipe/KPrSpiralWipeEffectFactory.cpp:77
 #: plugins/pageeffects/matrixwipe/snakewipe/KPrSnakeWipeEffectFactory.cpp:68
-#: plugins/pageeffects/iriswipe/pentagonWipe/KPrPentagonWipeEffectFactory.cpp:69
-#: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:67
-#: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:64
-#: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:43
-#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:83
-#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:87
+#: plugins/pageeffects/iriswipe/pentagonWipe/KPrPentagonWipeEffectFactory.cpp:77
+#: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:75
+#: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:74
+#: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:76
+#: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:50
+#: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:71
+#: plugins/pageeffects/iriswipe/hexagonWipe/KPrHexagonWipeEffectFactory.cpp:81
+#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:99
+#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:103
+#: plugins/pageeffects/iriswipe/starWipe/KPrStarWipeEffectFactory.cpp:108
 #: plugins/pageeffects/clockwipe/doublesweepwipe/KPrDoubleSweepWipeEffectFactory.cpp:68
 #: plugins/pageeffects/clockwipe/fanwipe/KPrFanWipeEffectFactory.cpp:70
 #: plugins/pageeffects/clockwipe/pinwheelwipe/KPrPinWheelWipeEffectFactory.cpp:56
@@ -1245,20 +1249,37 @@ msgstr "Омадан аз поён"
 msgid "Pentagon Wipe Effect"
 msgstr "Тасвири &таъсир:"
 
-#: plugins/pageeffects/iriswipe/pentagonWipe/KPrPentagonWipeEffectFactory.cpp:60
-#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:72
-#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:76
+#: plugins/pageeffects/iriswipe/pentagonWipe/KPrPentagonWipeEffectFactory.cpp:66
+#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:84
+#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:88
 #: plugins/pageeffects/clockwipe/windshieldwipe/KPrWindShieldWipeEffectFactory.cpp:47
 msgid "Up"
 msgstr ""
 
-#: plugins/pageeffects/iriswipe/pentagonWipe/KPrPentagonWipeEffectFactory.cpp:61
-#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:74
-#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:78
+#: plugins/pageeffects/iriswipe/pentagonWipe/KPrPentagonWipeEffectFactory.cpp:67
+#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:85
+#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:89
+#: plugins/pageeffects/clockwipe/windshieldwipe/KPrWindShieldWipeEffectFactory.cpp:51
+#, fuzzy
+#| msgid "Vertical Lines"
+msgid "Up Reverse"
+msgstr "Хатҳои Амудӣ"
+
+#: plugins/pageeffects/iriswipe/pentagonWipe/KPrPentagonWipeEffectFactory.cpp:68
+#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:88
+#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:92
 #, fuzzy
 #| msgid "Done"
 msgid "Down"
 msgstr "Шуд"
+
+#: plugins/pageeffects/iriswipe/pentagonWipe/KPrPentagonWipeEffectFactory.cpp:69
+#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:89
+#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:93
+#, fuzzy
+#| msgid "Vertical Lines"
+msgid "Down Reverse"
+msgstr "Хатҳои Амудӣ"
 
 #: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:31
 #, fuzzy
@@ -1266,8 +1287,10 @@ msgstr "Шуд"
 msgid "RoundRect Wipe Effect"
 msgstr "Тасвири &таъсир:"
 
-#: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:58
-#: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:55
+#: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:64
+#: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:65
+#: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:62
+#: plugins/pageeffects/iriswipe/hexagonWipe/KPrHexagonWipeEffectFactory.cpp:70
 #: plugins/pageeffects/clockwipe/windshieldwipe/KPrWindShieldWipeEffectFactory.cpp:49
 #: plugins/pageeffects/edgewipe/barndoorwipe/BarnDoorWipeEffectFactory.cpp:47
 #: plugins/pageeffects/edgewipe/barnzigzagwipe/BarnZigZagWipeEffectFactory.cpp:42
@@ -1275,8 +1298,21 @@ msgstr "Тасвири &таъсир:"
 msgid "Horizontal"
 msgstr "Кушодани Уфуқӣ"
 
-#: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:59
-#: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:56
+#: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:65
+#: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:66
+#: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:63
+#: plugins/pageeffects/iriswipe/hexagonWipe/KPrHexagonWipeEffectFactory.cpp:71
+#: plugins/pageeffects/clockwipe/windshieldwipe/KPrWindShieldWipeEffectFactory.cpp:53
+#: plugins/pageeffects/edgewipe/barndoorwipe/BarnDoorWipeEffectFactory.cpp:48
+#, fuzzy
+#| msgid "Horizontal Lines"
+msgid "Horizontal Reverse"
+msgstr "Хатҳои Уфуқ"
+
+#: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:66
+#: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:67
+#: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:60
+#: plugins/pageeffects/iriswipe/hexagonWipe/KPrHexagonWipeEffectFactory.cpp:72
 #: plugins/pageeffects/clockwipe/windshieldwipe/KPrWindShieldWipeEffectFactory.cpp:48
 #: plugins/pageeffects/edgewipe/barndoorwipe/BarnDoorWipeEffectFactory.cpp:45
 #: plugins/pageeffects/edgewipe/barnzigzagwipe/BarnZigZagWipeEffectFactory.cpp:41
@@ -1284,15 +1320,60 @@ msgstr "Кушодани Уфуқӣ"
 msgid "Vertical"
 msgstr "Кушодани Амудӣ"
 
+#: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:67
+#: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:68
+#: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:61
+#: plugins/pageeffects/iriswipe/hexagonWipe/KPrHexagonWipeEffectFactory.cpp:73
+#: plugins/pageeffects/clockwipe/windshieldwipe/KPrWindShieldWipeEffectFactory.cpp:52
+#: plugins/pageeffects/edgewipe/barndoorwipe/BarnDoorWipeEffectFactory.cpp:46
+#, fuzzy
+#| msgid "Vertical Lines"
+msgid "Vertical Reverse"
+msgstr "Хатҳои Амудӣ"
+
+#: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:31
+#, fuzzy
+#| msgid "Image &effect:"
+msgid "Misc Wipe Effect"
+msgstr "Тасвири &таъсир:"
+
+#: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:63
+#, fuzzy
+#| msgid "Header"
+msgid "Heart"
+msgstr "Сарлавҳа"
+
+#: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:64
+#, fuzzy
+#| msgid "Vertical Lines"
+msgid "Heart Reverse"
+msgstr "Хатҳои Амудӣ"
+
+#: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:65
+msgid "Keyhole"
+msgstr ""
+
+#: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:66
+#, fuzzy
+#| msgid "Vertical Lines"
+msgid "Keyhole Reverse"
+msgstr "Хатҳои Амудӣ"
+
 #: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:30
 #, fuzzy
 #| msgid "Image &effect:"
 msgid "Ellipse Wipe Effect"
 msgstr "Тасвири &таъсир:"
 
-#: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:54
+#: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:63
 msgid "Circle"
 msgstr "Доира"
+
+#: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:64
+#, fuzzy
+#| msgid "Vertical Lines"
+msgid "Circle Reverse"
+msgstr "Хатҳои Амудӣ"
 
 #: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:9
 #, fuzzy
@@ -1300,17 +1381,41 @@ msgstr "Доира"
 msgid "Iris Wipe Effect"
 msgstr "Тасвири &таъсир:"
 
-#: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:34
+#: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:39
 #, fuzzy
 #| msgid "Rectangle"
 msgid "Rectangular"
 msgstr "Росткунҷа"
 
-#: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:35
+#: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:40
+#, fuzzy
+#| msgid "Rectangle"
+msgid "Rectangular Reverse"
+msgstr "Росткунҷа"
+
+#: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:41
 #, fuzzy
 #| msgid "Double Arrow"
 msgid "Diamond"
 msgstr "Ақробаки Дутагӣ"
+
+#: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:42
+#, fuzzy
+#| msgid "Horizontal Lines"
+msgid "Diamond Reverse"
+msgstr "Хатҳои Уфуқ"
+
+#: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:31
+#, fuzzy
+#| msgid "Image &effect:"
+msgid "Eye Wipe Effect"
+msgstr "Тасвири &таъсир:"
+
+#: plugins/pageeffects/iriswipe/hexagonWipe/KPrHexagonWipeEffectFactory.cpp:30
+#, fuzzy
+#| msgid "Image &effect:"
+msgid "Hexagon Wipe Effect"
+msgstr "Тасвири &таъсир:"
 
 #: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:30
 #, fuzzy
@@ -1318,26 +1423,77 @@ msgstr "Ақробаки Дутагӣ"
 msgid "Triangle Wipe Effect"
 msgstr "Тасвири &таъсир:"
 
-#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:73
-#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:77
+#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:86
+#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:90
 #: plugins/pageeffects/clockwipe/windshieldwipe/KPrWindShieldWipeEffectFactory.cpp:46
 #, fuzzy
 #| msgid "Rig&ht:"
 msgid "Right"
 msgstr "&Дасти рост:"
 
-#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:75
-#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:79
+#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:87
+#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:91
+#: plugins/pageeffects/clockwipe/windshieldwipe/KPrWindShieldWipeEffectFactory.cpp:50
+#, fuzzy
+#| msgid "Horizontal Lines"
+msgid "Right Reverse"
+msgstr "Хатҳои Уфуқ"
+
+#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:90
+#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:94
 #, fuzzy
 #| msgid "&Length:"
 msgid "Left"
 msgstr "&Дарозӣ:"
+
+#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:91
+#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:95
+#, fuzzy
+#| msgid "Vertical Lines"
+msgid "Left Reverse"
+msgstr "Хатҳои Амудӣ"
 
 #: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:31
 #, fuzzy
 #| msgid "Image &effect:"
 msgid "ArrowHead Wipe Effect"
 msgstr "Тасвири &таъсир:"
+
+#: plugins/pageeffects/iriswipe/starWipe/KPrStarWipeEffectFactory.cpp:31
+#, fuzzy
+#| msgid "Image &effect:"
+msgid "Star Wipe Effect"
+msgstr "Тасвири &таъсир:"
+
+#: plugins/pageeffects/iriswipe/starWipe/KPrStarWipeEffectFactory.cpp:95
+msgid "Four Point Star"
+msgstr ""
+
+#: plugins/pageeffects/iriswipe/starWipe/KPrStarWipeEffectFactory.cpp:96
+#, fuzzy
+#| msgid "Horizontal Lines"
+msgid "Four Point Star Reverse"
+msgstr "Хатҳои Уфуқ"
+
+#: plugins/pageeffects/iriswipe/starWipe/KPrStarWipeEffectFactory.cpp:97
+msgid "Five Point Star"
+msgstr ""
+
+#: plugins/pageeffects/iriswipe/starWipe/KPrStarWipeEffectFactory.cpp:98
+#, fuzzy
+#| msgid "Horizontal Lines"
+msgid "Five Point Star Reverse"
+msgstr "Хатҳои Уфуқ"
+
+#: plugins/pageeffects/iriswipe/starWipe/KPrStarWipeEffectFactory.cpp:99
+msgid "Six Point Star"
+msgstr ""
+
+#: plugins/pageeffects/iriswipe/starWipe/KPrStarWipeEffectFactory.cpp:100
+#, fuzzy
+#| msgid "Horizontal Lines"
+msgid "Six Point Star Reverse"
+msgstr "Хатҳои Уфуқ"
 
 #: plugins/pageeffects/clockwipe/doublesweepwipe/KPrDoubleSweepWipeEffectFactory.cpp:28
 #, fuzzy
@@ -1603,32 +1759,6 @@ msgstr "Пӯшидани ба Рост"
 #| msgid "Image &effect:"
 msgid "Windshield Wipe Effect"
 msgstr "Тасвири &таъсир:"
-
-#: plugins/pageeffects/clockwipe/windshieldwipe/KPrWindShieldWipeEffectFactory.cpp:50
-#, fuzzy
-#| msgid "Horizontal Lines"
-msgid "Right Reverse"
-msgstr "Хатҳои Уфуқ"
-
-#: plugins/pageeffects/clockwipe/windshieldwipe/KPrWindShieldWipeEffectFactory.cpp:51
-#, fuzzy
-#| msgid "Vertical Lines"
-msgid "Up Reverse"
-msgstr "Хатҳои Амудӣ"
-
-#: plugins/pageeffects/clockwipe/windshieldwipe/KPrWindShieldWipeEffectFactory.cpp:52
-#: plugins/pageeffects/edgewipe/barndoorwipe/BarnDoorWipeEffectFactory.cpp:46
-#, fuzzy
-#| msgid "Vertical Lines"
-msgid "Vertical Reverse"
-msgstr "Хатҳои Амудӣ"
-
-#: plugins/pageeffects/clockwipe/windshieldwipe/KPrWindShieldWipeEffectFactory.cpp:53
-#: plugins/pageeffects/edgewipe/barndoorwipe/BarnDoorWipeEffectFactory.cpp:48
-#, fuzzy
-#| msgid "Horizontal Lines"
-msgid "Horizontal Reverse"
-msgstr "Хатҳои Уфуқ"
 
 #: plugins/pageeffects/clockwipe/doublefanwipe/KPrDoubleFanWipeEffectFactory.cpp:29
 #, fuzzy
@@ -3376,9 +3506,6 @@ msgstr "Тасвири &таъсир:"
 
 #~ msgid "Footer"
 #~ msgstr "Поҳо"
-
-#~ msgid "Header"
-#~ msgstr "Сарлавҳа"
 
 #~ msgid "(%1)"
 #~ msgstr "(%1)"
