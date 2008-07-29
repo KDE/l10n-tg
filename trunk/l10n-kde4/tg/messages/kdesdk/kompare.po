@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kompare\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-16 18:20+0200\n"
+"POT-Creation-Date: 2008-07-29 08:30+0200\n"
 "PO-Revision-Date: 2005-09-23 17:16+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -31,7 +31,8 @@ msgstr "Аз назар гузаронидани матн"
 msgid "View Settings"
 msgstr "Ҷур кардани намудҳо"
 
-#: komparepart/kompareprefdlg.cpp:49 kompareurldialog.cpp:47
+#: komparepart/kompareprefdlg.cpp:49 libdialogpages/diffpage.cpp:229
+#: kompareurldialog.cpp:47
 msgid "Diff"
 msgstr "Фарқият"
 
@@ -288,8 +289,10 @@ msgstr "Табуляторҳо ба фосилаҳо"
 msgid "Number of spaces to convert a tab character to:"
 msgstr "Андозаи фосилаҳо барои табдил додани характери табулясия:"
 
-#: libdialogpages/viewpage.cpp:116
-msgid "A&ppearance"
+#: libdialogpages/viewpage.cpp:116 kompareurldialog.cpp:55
+#, fuzzy
+#| msgid "A&ppearance"
+msgid "Appearance"
 msgstr "Т&ақдимот"
 
 #: libdialogpages/viewpage.cpp:124
@@ -306,7 +309,7 @@ msgstr "Андоза:"
 
 #: libdialogpages/viewpage.cpp:140
 #, fuzzy
-msgid "&Fonts"
+msgid "Fonts"
 msgstr "Шрифт:"
 
 #: libdialogpages/diffpage.cpp:218
@@ -322,10 +325,6 @@ msgstr ""
 "Шумо метавонед интихоб кунед барномаи diff-и ҳархеларо дар инҷо.Дар Solaris "
 "стандарти барномаи diff тарафдори намекунад ҳамаи интихоботро ,ки тафсири "
 "GNU тарафдори мекунад.Бо ин роҳ шумо метавонед тафсирро интихоб намоед."
-
-#: libdialogpages/diffpage.cpp:229
-msgid "&Diff"
-msgstr ""
 
 #: libdialogpages/diffpage.cpp:241
 msgid ""
@@ -362,9 +361,11 @@ msgstr ""
 "хондан ва дар бисёр корҳо зарур аст. Зиёда аз 3 хатҳо танҳо diff-ро беҳуда "
 "дам мекунад."
 
-#: libdialogpages/diffpage.cpp:275
-msgid "&Format"
-msgstr "&Формат"
+#. i18n: tag string
+#. i18n: file komparepart/komparesaveoptionsbase.ui line 198
+#: libdialogpages/diffpage.cpp:275 rc.cpp:62
+msgid "Format"
+msgstr "Андоза"
 
 #: libdialogpages/diffpage.cpp:289
 msgid "General"
@@ -467,8 +468,11 @@ msgstr "А&ҳамият надодан ба фазои фосила"
 msgid "This option corresponds to the -E diff option."
 msgstr "Ҷавоб медиҳад ба калиди -E."
 
-#: libdialogpages/diffpage.cpp:349
-msgid "O&ptions"
+#. i18n: tag string
+#. i18n: file komparepart/komparesaveoptionsbase.ui line 102
+#: libdialogpages/diffpage.cpp:349 rc.cpp:32
+#, fuzzy
+msgid "Options"
 msgstr "П&араметрҳо"
 
 #: libdialogpages/diffpage.cpp:360
@@ -483,7 +487,7 @@ msgstr ""
 "Агар ин тафтиш шуда бошад шумо метавонед ба намунаи пардозандаи фармонҳо дар "
 "қуттии матнии рост ё аз рӯйхат ҷудокардаи дохилшудаҳоро дохил кунед."
 
-#: libdialogpages/diffpage.cpp:364
+#: libdialogpages/diffpage.cpp:367
 msgid ""
 "Here you can enter or remove a shell pattern or select one or more entries "
 "from the list."
@@ -491,18 +495,18 @@ msgstr ""
 "Дар ин ҷо шумо метавонед ворид гардед ё намунаи пардозандаи фармонҳоро ё ин "
 "ки як ё зиёда воридгаштаҳои ҷудо кардаро аз рӯйхат нест кунед."
 
-#: libdialogpages/diffpage.cpp:371
+#: libdialogpages/diffpage.cpp:374
 msgid "File with Filenames to Exclude"
 msgstr "Файл бо номҳои файл барои хориҷ кардан"
 
-#: libdialogpages/diffpage.cpp:373
+#: libdialogpages/diffpage.cpp:376
 msgid ""
 "If this is checked you can enter a filename in the combo box on the right."
 msgstr ""
 "Агар ин тафтиш карда шуда бошад шумо метавонед ба номфайли дар combo қуттии "
 "рост буда дохил шавед."
 
-#: libdialogpages/diffpage.cpp:376
+#: libdialogpages/diffpage.cpp:379
 msgid ""
 "Here you can enter the URL of a file with shell patterns to ignore during "
 "the comparison of the folders."
@@ -510,7 +514,7 @@ msgstr ""
 "Дар ин ҷо шумо метавонед ба файли URL дароед бо варақаи мисолҳо дар вақти "
 "муқоисакунии папкаҳо аҳамият дода нашавад."
 
-#: libdialogpages/diffpage.cpp:379
+#: libdialogpages/diffpage.cpp:382
 msgid ""
 "Any file you select in the dialog that pops up when you click it will be put "
 "in the dialog to the left of this button."
@@ -518,8 +522,10 @@ msgstr ""
 "Ягон файли шумо дар диалог ҷудокарда,ки дар боло ногаҳон пайдо мешавад вақте,"
 "ки шумо онро дар диалог гузошта тугмаи чапи онро пахш мекунед."
 
-#: libdialogpages/diffpage.cpp:387
-msgid "&Exclude"
+#: libdialogpages/diffpage.cpp:390
+#, fuzzy
+#| msgid "&Exclude"
+msgid "Exclude"
 msgstr "&Хориҷ кардан"
 
 #: libdialogpages/filespage.cpp:53
@@ -670,12 +676,6 @@ msgstr "Дар инҷо файл барои муқоиса кардан вори
 msgid "Here you can change the options for comparing the files."
 msgstr "Дар инҷо параметрҳо барои муқоиса, танзим карда мешавад."
 
-#: kompareurldialog.cpp:55
-#, fuzzy
-#| msgid "A&ppearance"
-msgid "Appearance"
-msgstr "Т&ақдимот"
-
 #: kompareurldialog.cpp:57
 msgid "Here you can change the options for the view."
 msgstr "Дар инҷо параметрҳои визуалӣ танзим карда мешаванд."
@@ -816,13 +816,6 @@ msgid "cd dir && diff -udHprNa -- source destination"
 msgstr "cd dir && diff -udHprNa - манбаъи фармон"
 
 #. i18n: tag string
-#. i18n: file komparepart/komparesaveoptionsbase.ui line 102
-#: rc.cpp:32
-#, fuzzy
-msgid "Options"
-msgstr "П&араметрҳо"
-
-#. i18n: tag string
 #. i18n: file komparepart/komparesaveoptionsbase.ui line 114
 #: rc.cpp:35
 msgid "Look for smaller changes"
@@ -875,12 +868,6 @@ msgstr "Муқоиса кардани каталогҳо бозгашт "
 #: rc.cpp:59
 msgid "Treat new files as empty"
 msgstr "Аҳамият додани файлҳои нав ба мисли холӣ"
-
-#. i18n: tag string
-#. i18n: file komparepart/komparesaveoptionsbase.ui line 198
-#: rc.cpp:62
-msgid "Format"
-msgstr "Андоза"
 
 #. i18n: tag string
 #. i18n: file komparepart/komparesaveoptionsbase.ui line 248
@@ -1059,7 +1046,7 @@ msgstr ""
 "Дар вақти истифодаи diff ба чанд проблемаҳо шуд<b>%1</b> ба каталоги <b>%2</"
 "b>."
 
-#: libdiff2/komparemodellist.cpp:309 libdiff2/komparemodellist.cpp:593
+#: libdiff2/komparemodellist.cpp:309 libdiff2/komparemodellist.cpp:596
 msgid "Could not open a temporary file."
 msgstr "Файли муввақатӣ кашода намешавад."
 
@@ -1086,17 +1073,26 @@ msgstr ""
 "буда ҳоло ҳам ҳақиқатан дар таг: <b>%2</b>. Шумо метавонед дастурро дастӣ "
 "нусхабардорӣ намоед."
 
-#: libdiff2/komparemodellist.cpp:445 libdiff2/komparemodellist.cpp:558
+#: libdiff2/komparemodellist.cpp:448 libdiff2/komparemodellist.cpp:561
 msgid "Could not parse diff output."
 msgstr "Баромади diff такмил дода намешавад."
 
-#: libdiff2/komparemodellist.cpp:461
+#: libdiff2/komparemodellist.cpp:464
 msgid "The files are identical."
 msgstr "Файлҳо мутобиқ ҳастанд."
 
-#: libdiff2/komparemodellist.cpp:625
+#: libdiff2/komparemodellist.cpp:628
 msgid "Could not write to the temporary file."
 msgstr "Ба файли муввақатӣ навишта намешавад."
+
+#~ msgid "A&ppearance"
+#~ msgstr "Т&ақдимот"
+
+#~ msgid "&Format"
+#~ msgstr "&Формат"
+
+#~ msgid "O&ptions"
+#~ msgstr "П&араметрҳо"
 
 #~ msgid "Hide T&ext View"
 #~ msgstr "Пинҳ&он кардани аз назар гузаронии матн"
