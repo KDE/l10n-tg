@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-14 08:43+0200\n"
+"POT-Creation-Date: 2008-08-15 08:27+0200\n"
 "PO-Revision-Date: 2005-09-17 12:46+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -287,7 +287,7 @@ msgstr "Воридоти Калид Аз Хидматрасони Калидҳо
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 140
-#: keyservers.cpp:260 kgpgview.cpp:395 rc.cpp:318
+#: keyservers.cpp:260 rc.cpp:318 editor/kgpgview.cpp:395
 msgid "&Import"
 msgstr "&Воридот"
 
@@ -469,19 +469,19 @@ msgstr "&Имзокунии Калид(ҳо)..."
 msgid "Import key(s) from keyserver"
 msgstr "Воридоти Калид Аз Хидматрасони Калидҳо"
 
-#: keysmanager.cpp:283 kgpgitemmodel.cpp:271
+#: keysmanager.cpp:283 model/kgpgitemmodel.cpp:271
 msgid "Trust"
 msgstr "Боварӣ"
 
-#: keysmanager.cpp:286 kgpgitemmodel.cpp:272
+#: keysmanager.cpp:286 model/kgpgitemmodel.cpp:272
 msgid "Size"
 msgstr "Андоза"
 
-#: keysmanager.cpp:289 kgpgitemmodel.cpp:274
+#: keysmanager.cpp:289 model/kgpgitemmodel.cpp:274
 msgid "Creation"
 msgstr "Офариниш"
 
-#: keysmanager.cpp:292 kgpgitemmodel.cpp:273
+#: keysmanager.cpp:292 model/kgpgitemmodel.cpp:273
 msgid "Expiration"
 msgstr "Мӯҳлати Истифода"
 
@@ -764,7 +764,7 @@ msgstr ""
 msgid "Public Key Export"
 msgstr "Содироти Килиди Оммавӣ"
 
-#: keysmanager.cpp:1459 kgpgeditor.cpp:451
+#: keysmanager.cpp:1459 editor/kgpgeditor.cpp:451
 msgid "Save File"
 msgstr "Захиракунии Файл"
 
@@ -1191,7 +1191,7 @@ msgstr "BОмехтакунии фаврии2"
 msgid "Tar"
 msgstr ""
 
-#: kgpg.cpp:295 kgpg.cpp:487 kgpgeditor.cpp:473 kgpglibrary.cpp:116
+#: kgpg.cpp:295 kgpg.cpp:487 kgpglibrary.cpp:116 editor/kgpgeditor.cpp:473
 msgid "File Already Exists"
 msgstr "Файл аллакай Мавҷуд аст"
 
@@ -1215,7 +1215,8 @@ msgid_plural "Decryption of these files failed:"
 msgstr[0] "Рамзкушоӣ бо нокомӣ анҷомид."
 msgstr[1] "Рамзкушоӣ бо нокомӣ анҷомид."
 
-#: kgpg.cpp:519 kgpglibrary.cpp:229 kgpgview.cpp:316 kgpgview.cpp:357
+#: kgpg.cpp:519 kgpglibrary.cpp:229 editor/kgpgview.cpp:316
+#: editor/kgpgview.cpp:357
 msgid "Decryption failed."
 msgstr "Рамзкушоӣ бо нокомӣ анҷомид."
 
@@ -1373,102 +1374,6 @@ msgstr "Имзокунии феҳрист ғайри имкон аст."
 msgid "Cannot verify folder."
 msgstr "Бозбинӣ намудани феҳрист ғайри имкон аст."
 
-#: kgpgeditor.cpp:70 kgpgeditor.cpp:194 kgpgeditor.cpp:669 kgpgeditor.cpp:695
-#, fuzzy
-msgid "Untitled"
-msgstr "беунвон"
-
-#: kgpgeditor.cpp:158
-msgid "&Encrypt File..."
-msgstr "&Рамзкунии Файл..."
-
-#: kgpgeditor.cpp:162
-msgid "&Decrypt File..."
-msgstr "&Рамзкушоии Файл..."
-
-#: kgpgeditor.cpp:166
-msgid "&Open Key Manager"
-msgstr "&Кушодани мудири калид"
-
-#: kgpgeditor.cpp:169
-msgid "&Generate Signature..."
-msgstr "&Тавлиди Имзо..."
-
-#: kgpgeditor.cpp:172
-msgid "&Verify Signature..."
-msgstr "&Санҷидани Имзо..."
-
-#: kgpgeditor.cpp:175
-msgid "&Check MD5 Sum..."
-msgstr "&Санҷидани Ҳосили Ҷамъи MD5..."
-
-#: kgpgeditor.cpp:179
-msgid "&Unicode (utf-8) Encoding"
-msgstr ""
-
-#: kgpgeditor.cpp:198
-#, kde-format
-msgid ""
-"The document \"%1\" has changed.\n"
-"Do you want to save it?"
-msgstr ""
-
-#: kgpgeditor.cpp:199
-msgid "Close the document"
-msgstr ""
-
-#: kgpgeditor.cpp:246
-msgid ""
-"The document could not been saved, as the selected encoding cannot encode "
-"every unicode character in it."
-msgstr ""
-"Санад захира карда намешавад, зеро рамзкунонии интихобшуда ҳамаи аломатҳои "
-"рамзи ягонаро дар бар намегирад."
-
-#: kgpgeditor.cpp:255 kgpgeditor.cpp:274
-msgid ""
-"The document could not be saved, please check your permissions and disk "
-"space."
-msgstr ""
-"Санад захира карда намешавад, марҳамат карда рухсатҳои худ ва фазои дискро "
-"санҷед."
-
-#: kgpgeditor.cpp:299 kgpgeditor.cpp:309
-#, kde-format
-msgid "Overwrite existing file %1?"
-msgstr "Файли %1-и мавҷударо рӯиҳам нависам?"
-
-#: kgpgeditor.cpp:420 kgpgeditor.cpp:428 kgpgeditor.cpp:565 kgpgeditor.cpp:606
-#: kgpgeditor.cpp:639
-msgid "*|All Files"
-msgstr "*|Ҳамаи Файлҳо"
-
-#: kgpgeditor.cpp:420
-msgid "Open File to Encode"
-msgstr "Кушодани Файл барои Рамзкунонӣ"
-
-#: kgpgeditor.cpp:428
-msgid "Open File to Decode"
-msgstr "Кушодани Файл барои Рамзкушоӣ"
-
-#: kgpgeditor.cpp:442
-msgid "Decrypt File To"
-msgstr "Рамзкушоии Файл ба"
-
-#. i18n: tag string
-#. i18n: file conf_misc.ui line 135
-#: kgpgeditor.cpp:453 rc.cpp:150
-msgid "Editor"
-msgstr "Муҳаррир"
-
-#: kgpgeditor.cpp:565
-msgid "Open File to Sign"
-msgstr "Кушодани Файл барои Имзо"
-
-#: kgpgeditor.cpp:606 kgpgeditor.cpp:639
-msgid "Open File to Verify"
-msgstr "Кушодани Файл барои Санҷидан"
-
 #: kgpginterface.cpp:392 kgpgtextinterface.cpp:106
 msgid " or "
 msgstr " ё "
@@ -1515,7 +1420,7 @@ msgstr ""
 msgid "work in progress..."
 msgstr ""
 
-#: kgpginterface.cpp:1162 kgpgitemnode.cpp:530 kgpgtextinterface.cpp:104
+#: kgpginterface.cpp:1162 kgpgtextinterface.cpp:104 model/kgpgitemnode.cpp:530
 msgid "[No user id found]"
 msgstr "[Шиносаи корванд пайдо нагардид]"
 
@@ -1664,75 +1569,6 @@ msgstr "Эҷод кардани сертификати бозхонӣ бо но�
 #| msgid "<qt>%1 Enter passphrase for <b>%2</b>:</qt>"
 msgid "<qt>Enter passphrase for <b>%1</b>:</qt>"
 msgstr "<qt>%1 Гузарвожаро барои <b>%2</b>:</qt> ворид кунед"
-
-#: kgpgitemmodel.cpp:193
-#, fuzzy, kde-format
-msgid "1 Key"
-msgid_plural "%1 Keys"
-msgstr[0] "&Калидҳо"
-msgstr[1] "&Калидҳо"
-
-#: kgpgitemmodel.cpp:198
-#, fuzzy, kde-format
-#| msgid "Key Group"
-msgid "1 Group"
-msgid_plural "%1 Groups"
-msgstr[0] "Калиди гурӯҳ"
-msgstr[1] "Калиди гурӯҳ"
-
-#. i18n: tag string
-#. i18n: file groupedit.ui line 51
-#. i18n: tag string
-#. i18n: file groupedit.ui line 135
-#: kgpgitemmodel.cpp:269 rc.cpp:247 rc.cpp:259
-msgid "Name"
-msgstr "Ном"
-
-#. i18n: tag string
-#. i18n: file groupedit.ui line 56
-#. i18n: tag string
-#. i18n: file groupedit.ui line 140
-#. i18n: tag string
-#. i18n: file keyexport.ui line 34
-#: kgpgitemmodel.cpp:270 rc.cpp:250 rc.cpp:262 rc.cpp:268
-msgid "Email"
-msgstr "Пости Электронӣ"
-
-#: kgpgitemmodel.cpp:275
-msgid "ID"
-msgstr "Шиноса"
-
-#: kgpgitemnode.cpp:51
-#, kde-format
-msgctxt "Name of uid (comment)"
-msgid "%1 (%2)"
-msgstr ""
-
-#: kgpgitemnode.cpp:287 kgpgitemnode.cpp:315 kgpgitemnode.cpp:386
-#: kgpgitemnode.cpp:418
-#, fuzzy, kde-format
-#| msgid "Signature"
-msgid "1 signature"
-msgid_plural "%1 signatures"
-msgstr[0] "Имзо"
-msgstr[1] "Имзо"
-
-#: kgpgitemnode.cpp:374
-#, kde-format
-msgid "%1 subkey"
-msgstr "%1 зеркалид"
-
-#: kgpgitemnode.cpp:400
-msgid "Photo id"
-msgstr "Сурати Шиноса"
-
-#: kgpgitemnode.cpp:451
-#, fuzzy, kde-format
-#| msgid "%1 subkey"
-msgid "1 key"
-msgid_plural "%1 keys"
-msgstr[0] "%1 зеркалид"
-msgstr[1] "%1 зеркалид"
 
 #: kgpgkeygenerate.cpp:41
 msgid "Key Generation"
@@ -1889,37 +1725,8 @@ msgstr ""
 "калиди шумо низ хеле калон мегардад! Андозаи беҳтарини симо 240x288 нуқта "
 "маслиҳат дода мешавад."
 
-#: kgpgmd5widget.cpp:28
-msgid "MD5 Checksum"
-msgstr "Ҷамъи Санҷиши MD5"
-
-#: kgpgmd5widget.cpp:31
-msgid "Compare MD5 with Clipboard"
-msgstr "Муқоисаи MD5 бо Силули Мухобиротӣ"
-
-#: kgpgmd5widget.cpp:46
-#, kde-format
-msgid "MD5 sum for <b>%1</b> is:"
-msgstr "Ҳосили ҷамъи MD5 барои <b>%1</b>:"
-
-#: kgpgmd5widget.cpp:59
-msgid "<b>Unknown status</b>"
-msgstr "<b>Ҳолати номаълум</b>"
-
-#: kgpgmd5widget.cpp:84
-msgid "Clipboard content is not a MD5 sum."
-msgstr "Таркиби силули мухобиротӣ ҳосили ҷамъ MD5 нест."
-
-#: kgpgmd5widget.cpp:88
-msgid "<b>Correct checksum</b>, file is ok."
-msgstr "<b>Ҳосили ҷамъ санҷишӣ дуруст аст</b>, файл тағир нашудааст."
-
-#: kgpgmd5widget.cpp:94
-msgid "<b>Wrong checksum, <em>file corrupted</em></b>"
-msgstr ""
-
 #: kgpgoptions.cpp:54 kgpgoptions.cpp:66 kgpgoptions.cpp:68
-#: kgpgoptions.cpp:210 kgpgoptions.cpp:236 kgpgoptions.cpp:245
+#: kgpgoptions.cpp:210
 #, fuzzy
 #| msgid "(Default)"
 msgctxt "Mark default keyserver in GUI"
@@ -2009,18 +1816,25 @@ msgstr "Хидматкунандаи URL:"
 msgid "Edit Key Server"
 msgstr "Хидматрасони Калид"
 
-#: kgpgoptions.cpp:435 kgpgoptions.cpp:436
+#: kgpgoptions.cpp:235 kgpgoptions.cpp:243
+#, fuzzy, kde-format
+#| msgid "(Default)"
+msgctxt "Mark default keyserver in GUI"
+msgid "%1 (Default)"
+msgstr "(Нобаён)"
+
+#: kgpgoptions.cpp:433 kgpgoptions.cpp:434
 #, fuzzy
 #| msgid "none"
 msgctxt "no key available"
 msgid "none"
 msgstr "нест"
 
-#: kgpgoptions.cpp:471
+#: kgpgoptions.cpp:469
 msgid "Decrypt File"
 msgstr "Рамзкунонии Файл"
 
-#: kgpgoptions.cpp:490
+#: kgpgoptions.cpp:488
 msgid "Sign File"
 msgstr "Имзокунии Файл"
 
@@ -2079,7 +1893,7 @@ msgid ""
 "<qt>The signature is valid, and the key is ultimately trusted<br /></qt>"
 msgstr "Имзо дастрас аст ва калид қатъӣ дуруст аст"
 
-#: kgpgtextinterface.cpp:608 kgpgview.cpp:402
+#: kgpgtextinterface.cpp:608 editor/kgpgview.cpp:402
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -2090,88 +1904,6 @@ msgid ""
 msgstr ""
 "<qt><b>Имзои партофташуда:</b><br>Шиносаи калид: %1<br><br>Мехоҳед, ки ин "
 "калидро аз хидматрасони калид ворид созед?</qt>"
-
-#: kgpgview.cpp:88
-#, fuzzy
-#| msgid ""
-#| "<qt><b>Remote file dropped</b>.<br>The remote file will now be copied to "
-#| "a temporary file to process requested operation. This temporary file will "
-#| "be deleted after operation.</qt>"
-msgid ""
-"<qt><b>Remote file dropped</b>.<br />The remote file will now be copied to a "
-"temporary file to process requested operation. This temporary file will be "
-"deleted after operation.</qt>"
-msgstr ""
-"<qt><b>Файли дурдаст аз шабака партофта шудааст</b>.<br>Файли дурдаст ба "
-"файли муқаррарӣ нусха бардошта намешавад, барои иҷрои амалиёти талабшуда. Ин "
-"файли муқаррарӣ баъди ба охиррасии амалиёт нобуд карда мешавад.</qt>"
-
-#: kgpgview.cpp:93
-msgid "Could not download file."
-msgstr "Боркунии файл ғайри имкон аст."
-
-#: kgpgview.cpp:227
-msgid "Unable to read file."
-msgstr "Хондани файл ғайри имкон аст."
-
-#: kgpgview.cpp:268
-#, fuzzy
-msgid ""
-"<qt>This file is a <b>public</b> key.\n"
-"Please use kgpg key management to import it.</qt>"
-msgstr ""
-"Ин файл калиди шахсӣ аст.\n"
-"Марҳамат карда идоракунии калиди kgpg-ро борои воридкунӣ истифода баред."
-
-#: kgpgview.cpp:274
-#, fuzzy
-#| msgid ""
-#| "This file is a private key.\n"
-#| "Please use kgpg key management to import it."
-msgid ""
-"<qt>This file is a <b>private</b> key.\n"
-"Please use kgpg key management to import it.</qt>"
-msgstr ""
-"Ин файл калиди шахсӣ аст.\n"
-"Марҳамат карда идоракунии калиди kgpg-ро борои воридкунӣ истифода баред."
-
-#: kgpgview.cpp:328
-msgid "Encryption failed."
-msgstr "Рамзкунонӣ бо нокомӣ анҷомид."
-
-#: kgpgview.cpp:365
-msgid "Signing not possible: bad passphrase or missing key"
-msgstr "Имзонамоӣ ғайри имкон аст: гузарвожаи бад ё калид партофта шудааст"
-
-#: kgpgview.cpp:396
-#, fuzzy
-msgid "Import key in your list"
-msgstr "Воридто ба ҳалқаи калидҳо"
-
-#: kgpgview.cpp:399
-#, fuzzy
-msgid "Do &Not Import"
-msgstr "Вориди Калид"
-
-#: kgpgview.cpp:400
-msgid "Will not import this key in your list"
-msgstr ""
-
-#: kgpgview.cpp:402
-msgid "Missing Key"
-msgstr "Калиди Партофташуда"
-
-#: kgpgview.cpp:426
-msgid "S&ign/Verify"
-msgstr "&Имзокунӣ/Санҷидан"
-
-#: kgpgview.cpp:427
-msgid "En&crypt"
-msgstr "&Рамзкунонӣ"
-
-#: kgpgview.cpp:428
-msgid "&Decrypt"
-msgstr "&Рамзкушоӣ"
 
 #: main.cpp:28
 #, fuzzy
@@ -2713,6 +2445,12 @@ msgid "Key Manager"
 msgstr "Идораи Калид"
 
 #. i18n: tag string
+#. i18n: file conf_misc.ui line 135
+#: rc.cpp:150 editor/kgpgeditor.cpp:453
+msgid "Editor"
+msgstr "Муҳаррир"
+
+#. i18n: tag string
 #. i18n: file conf_misc.ui line 145
 #: rc.cpp:153
 msgid "Konqueror Service Menus"
@@ -2918,6 +2656,24 @@ msgstr "Муҳаррири ҳарф"
 #: rc.cpp:244
 msgid "Available Trusted Keys"
 msgstr "Калидҳои Дастрасии Боваринок"
+
+#. i18n: tag string
+#. i18n: file groupedit.ui line 51
+#. i18n: tag string
+#. i18n: file groupedit.ui line 135
+#: rc.cpp:247 rc.cpp:259 model/kgpgitemmodel.cpp:269
+msgid "Name"
+msgstr "Ном"
+
+#. i18n: tag string
+#. i18n: file groupedit.ui line 56
+#. i18n: tag string
+#. i18n: file groupedit.ui line 140
+#. i18n: tag string
+#. i18n: file keyexport.ui line 34
+#: rc.cpp:250 rc.cpp:262 rc.cpp:268 model/kgpgitemmodel.cpp:270
+msgid "Email"
+msgstr "Пости Электронӣ"
 
 #. i18n: tag string
 #. i18n: file groupedit.ui line 61
@@ -4089,6 +3845,260 @@ msgstr "Номаълум"
 msgctxt "Unlimited key lifetime"
 msgid "Unlimited"
 msgstr "Номаҳдуд"
+
+#: editor/kgpgeditor.cpp:70 editor/kgpgeditor.cpp:194
+#: editor/kgpgeditor.cpp:669 editor/kgpgeditor.cpp:695
+#, fuzzy
+msgid "Untitled"
+msgstr "беунвон"
+
+#: editor/kgpgeditor.cpp:158
+msgid "&Encrypt File..."
+msgstr "&Рамзкунии Файл..."
+
+#: editor/kgpgeditor.cpp:162
+msgid "&Decrypt File..."
+msgstr "&Рамзкушоии Файл..."
+
+#: editor/kgpgeditor.cpp:166
+msgid "&Open Key Manager"
+msgstr "&Кушодани мудири калид"
+
+#: editor/kgpgeditor.cpp:169
+msgid "&Generate Signature..."
+msgstr "&Тавлиди Имзо..."
+
+#: editor/kgpgeditor.cpp:172
+msgid "&Verify Signature..."
+msgstr "&Санҷидани Имзо..."
+
+#: editor/kgpgeditor.cpp:175
+msgid "&Check MD5 Sum..."
+msgstr "&Санҷидани Ҳосили Ҷамъи MD5..."
+
+#: editor/kgpgeditor.cpp:179
+msgid "&Unicode (utf-8) Encoding"
+msgstr ""
+
+#: editor/kgpgeditor.cpp:198
+#, kde-format
+msgid ""
+"The document \"%1\" has changed.\n"
+"Do you want to save it?"
+msgstr ""
+
+#: editor/kgpgeditor.cpp:199
+msgid "Close the document"
+msgstr ""
+
+#: editor/kgpgeditor.cpp:246
+msgid ""
+"The document could not been saved, as the selected encoding cannot encode "
+"every unicode character in it."
+msgstr ""
+"Санад захира карда намешавад, зеро рамзкунонии интихобшуда ҳамаи аломатҳои "
+"рамзи ягонаро дар бар намегирад."
+
+#: editor/kgpgeditor.cpp:255 editor/kgpgeditor.cpp:274
+msgid ""
+"The document could not be saved, please check your permissions and disk "
+"space."
+msgstr ""
+"Санад захира карда намешавад, марҳамат карда рухсатҳои худ ва фазои дискро "
+"санҷед."
+
+#: editor/kgpgeditor.cpp:299 editor/kgpgeditor.cpp:309
+#, kde-format
+msgid "Overwrite existing file %1?"
+msgstr "Файли %1-и мавҷударо рӯиҳам нависам?"
+
+#: editor/kgpgeditor.cpp:420 editor/kgpgeditor.cpp:428
+#: editor/kgpgeditor.cpp:565 editor/kgpgeditor.cpp:606
+#: editor/kgpgeditor.cpp:639
+msgid "*|All Files"
+msgstr "*|Ҳамаи Файлҳо"
+
+#: editor/kgpgeditor.cpp:420
+msgid "Open File to Encode"
+msgstr "Кушодани Файл барои Рамзкунонӣ"
+
+#: editor/kgpgeditor.cpp:428
+msgid "Open File to Decode"
+msgstr "Кушодани Файл барои Рамзкушоӣ"
+
+#: editor/kgpgeditor.cpp:442
+msgid "Decrypt File To"
+msgstr "Рамзкушоии Файл ба"
+
+#: editor/kgpgeditor.cpp:565
+msgid "Open File to Sign"
+msgstr "Кушодани Файл барои Имзо"
+
+#: editor/kgpgeditor.cpp:606 editor/kgpgeditor.cpp:639
+msgid "Open File to Verify"
+msgstr "Кушодани Файл барои Санҷидан"
+
+#: editor/kgpgmd5widget.cpp:28
+msgid "MD5 Checksum"
+msgstr "Ҷамъи Санҷиши MD5"
+
+#: editor/kgpgmd5widget.cpp:31
+msgid "Compare MD5 with Clipboard"
+msgstr "Муқоисаи MD5 бо Силули Мухобиротӣ"
+
+#: editor/kgpgmd5widget.cpp:46
+#, kde-format
+msgid "MD5 sum for <b>%1</b> is:"
+msgstr "Ҳосили ҷамъи MD5 барои <b>%1</b>:"
+
+#: editor/kgpgmd5widget.cpp:59
+msgid "<b>Unknown status</b>"
+msgstr "<b>Ҳолати номаълум</b>"
+
+#: editor/kgpgmd5widget.cpp:84
+msgid "Clipboard content is not a MD5 sum."
+msgstr "Таркиби силули мухобиротӣ ҳосили ҷамъ MD5 нест."
+
+#: editor/kgpgmd5widget.cpp:88
+msgid "<b>Correct checksum</b>, file is ok."
+msgstr "<b>Ҳосили ҷамъ санҷишӣ дуруст аст</b>, файл тағир нашудааст."
+
+#: editor/kgpgmd5widget.cpp:94
+msgid "<b>Wrong checksum, <em>file corrupted</em></b>"
+msgstr ""
+
+#: editor/kgpgview.cpp:88
+#, fuzzy
+#| msgid ""
+#| "<qt><b>Remote file dropped</b>.<br>The remote file will now be copied to "
+#| "a temporary file to process requested operation. This temporary file will "
+#| "be deleted after operation.</qt>"
+msgid ""
+"<qt><b>Remote file dropped</b>.<br />The remote file will now be copied to a "
+"temporary file to process requested operation. This temporary file will be "
+"deleted after operation.</qt>"
+msgstr ""
+"<qt><b>Файли дурдаст аз шабака партофта шудааст</b>.<br>Файли дурдаст ба "
+"файли муқаррарӣ нусха бардошта намешавад, барои иҷрои амалиёти талабшуда. Ин "
+"файли муқаррарӣ баъди ба охиррасии амалиёт нобуд карда мешавад.</qt>"
+
+#: editor/kgpgview.cpp:93
+msgid "Could not download file."
+msgstr "Боркунии файл ғайри имкон аст."
+
+#: editor/kgpgview.cpp:227
+msgid "Unable to read file."
+msgstr "Хондани файл ғайри имкон аст."
+
+#: editor/kgpgview.cpp:268
+#, fuzzy
+msgid ""
+"<qt>This file is a <b>public</b> key.\n"
+"Please use kgpg key management to import it.</qt>"
+msgstr ""
+"Ин файл калиди шахсӣ аст.\n"
+"Марҳамат карда идоракунии калиди kgpg-ро борои воридкунӣ истифода баред."
+
+#: editor/kgpgview.cpp:274
+#, fuzzy
+#| msgid ""
+#| "This file is a private key.\n"
+#| "Please use kgpg key management to import it."
+msgid ""
+"<qt>This file is a <b>private</b> key.\n"
+"Please use kgpg key management to import it.</qt>"
+msgstr ""
+"Ин файл калиди шахсӣ аст.\n"
+"Марҳамат карда идоракунии калиди kgpg-ро борои воридкунӣ истифода баред."
+
+#: editor/kgpgview.cpp:328
+msgid "Encryption failed."
+msgstr "Рамзкунонӣ бо нокомӣ анҷомид."
+
+#: editor/kgpgview.cpp:365
+msgid "Signing not possible: bad passphrase or missing key"
+msgstr "Имзонамоӣ ғайри имкон аст: гузарвожаи бад ё калид партофта шудааст"
+
+#: editor/kgpgview.cpp:396
+#, fuzzy
+msgid "Import key in your list"
+msgstr "Воридто ба ҳалқаи калидҳо"
+
+#: editor/kgpgview.cpp:399
+#, fuzzy
+msgid "Do &Not Import"
+msgstr "Вориди Калид"
+
+#: editor/kgpgview.cpp:400
+msgid "Will not import this key in your list"
+msgstr ""
+
+#: editor/kgpgview.cpp:402
+msgid "Missing Key"
+msgstr "Калиди Партофташуда"
+
+#: editor/kgpgview.cpp:426
+msgid "S&ign/Verify"
+msgstr "&Имзокунӣ/Санҷидан"
+
+#: editor/kgpgview.cpp:427
+msgid "En&crypt"
+msgstr "&Рамзкунонӣ"
+
+#: editor/kgpgview.cpp:428
+msgid "&Decrypt"
+msgstr "&Рамзкушоӣ"
+
+#: model/kgpgitemmodel.cpp:193
+#, fuzzy, kde-format
+msgid "1 Key"
+msgid_plural "%1 Keys"
+msgstr[0] "&Калидҳо"
+msgstr[1] "&Калидҳо"
+
+#: model/kgpgitemmodel.cpp:198
+#, fuzzy, kde-format
+#| msgid "Key Group"
+msgid "1 Group"
+msgid_plural "%1 Groups"
+msgstr[0] "Калиди гурӯҳ"
+msgstr[1] "Калиди гурӯҳ"
+
+#: model/kgpgitemmodel.cpp:275
+msgid "ID"
+msgstr "Шиноса"
+
+#: model/kgpgitemnode.cpp:51
+#, kde-format
+msgctxt "Name of uid (comment)"
+msgid "%1 (%2)"
+msgstr ""
+
+#: model/kgpgitemnode.cpp:287 model/kgpgitemnode.cpp:315
+#: model/kgpgitemnode.cpp:386 model/kgpgitemnode.cpp:418
+#, fuzzy, kde-format
+#| msgid "Signature"
+msgid "1 signature"
+msgid_plural "%1 signatures"
+msgstr[0] "Имзо"
+msgstr[1] "Имзо"
+
+#: model/kgpgitemnode.cpp:374
+#, kde-format
+msgid "%1 subkey"
+msgstr "%1 зеркалид"
+
+#: model/kgpgitemnode.cpp:400
+msgid "Photo id"
+msgstr "Сурати Шиноса"
+
+#: model/kgpgitemnode.cpp:451
+#, fuzzy, kde-format
+#| msgid "%1 subkey"
+msgid "1 key"
+msgid_plural "%1 keys"
+msgstr[0] "%1 зеркалид"
+msgstr[1] "%1 зеркалид"
 
 #~ msgid "Could not change expiration"
 #~ msgstr "Ивази мӯҳлати истифода нашуда истодааст"
