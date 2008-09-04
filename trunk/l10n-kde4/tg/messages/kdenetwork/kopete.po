@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-03 10:07+0200\n"
+"POT-Creation-Date: 2008-09-04 09:43+0200\n"
 "PO-Revision-Date: 2005-09-17 13:26+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -16409,14 +16409,12 @@ msgstr ""
 
 #: protocols/irc/libkirc/kircengine_numericreplies.cpp:204
 #: protocols/irc/libkirc/client/tasks/kirci18ntask.cpp:400
-#: protocols/irc/libkirc/client/kircclienthandler.cpp:525
 #, kde-format
 msgid "Server was too busy to execute %1."
 msgstr ""
 
 #: protocols/irc/libkirc/kircengine_numericreplies.cpp:270
 #: protocols/irc/libkirc/client/tasks/kirci18ntask.cpp:466
-#: protocols/irc/libkirc/client/kircclienthandler.cpp:597
 #, fuzzy
 msgid "You have been marked as being away."
 msgstr "Ҳоло шумо ҳамчун %1 нишона карда шудаед."
@@ -16501,29 +16499,7 @@ msgstr "Тахаллуси %1 аллакай дар истифода аст."
 msgid "Incorrect password."
 msgstr "Гузарвожаи нодуруст."
 
-#: protocols/irc/libkirc/client/kircclienthandler.cpp:475
-#, fuzzy, kde-format
-msgid "There is %1 operator online."
-msgid_plural "There are %1 operators online."
-msgstr[0] "Хатогии пайвастшавӣ рух дод: %1"
-msgstr[1] "Хатогии пайвастшавӣ рух дод: %1"
-
-#: protocols/irc/libkirc/client/kircclienthandler.cpp:490
-#, fuzzy, kde-format
-msgid "There is %1 unknown connection."
-msgid_plural "There are %1 unknown connections."
-msgstr[0] "Хатогии пайвастшавӣ рух дод: %1"
-msgstr[1] "Хатогии пайвастшавӣ рух дод: %1"
-
-#: protocols/irc/libkirc/client/kircclienthandler.cpp:505
-#, fuzzy, kde-format
-#| msgid "The certificate has been revoked."
-msgid "There has been %1 channel formed."
-msgid_plural "There have been %1 channels formed."
-msgstr[0] "Сертификат баргардонида шуд."
-msgstr[1] "Сертификат баргардонида шуд."
-
-#: protocols/irc/libkirc/client/kircclienthandler.cpp:861
+#: protocols/irc/libkirc/client/kircclienthandler.cpp:886
 #, fuzzy
 msgid "Password Incorect"
 msgstr "Дархости гузарвожа"
@@ -16533,15 +16509,24 @@ msgstr "Дархости гузарвожа"
 msgid "Acknowledge size is greater then the expected file size"
 msgstr "Андозаи номаълум назар ба андозаи интизоршавандаи файл калонтар аст"
 
-#: protocols/irc/ircaccount.cpp:176
+#: protocols/irc/ircaccount.cpp:149
+#, kde-format
+msgid "Temporary Network - %1"
+msgstr "Шабакаи Муқаррарӣ - %1"
+
+#: protocols/irc/ircaccount.cpp:150
+msgid "Network imported from previous version of Kopete, or an IRC URI"
+msgstr "Шабакаи аз нусхаи пешинаи Kopete, ё IRC URI ворд карда шуда"
+
+#: protocols/irc/ircaccount.cpp:182
 msgid "Join Channel..."
 msgstr "Ҳамроҳ шудан ба Маҷро..."
 
-#: protocols/irc/ircaccount.cpp:178
+#: protocols/irc/ircaccount.cpp:184
 msgid "Search Channels..."
 msgstr "Ҷустуҷӯ дар маҷроҳо..."
 
-#: protocols/irc/ircaccount.cpp:243
+#: protocols/irc/ircaccount.cpp:253
 #, fuzzy
 msgid ""
 "<qt>The network associated with this account has no valid hosts. Please "
@@ -16550,11 +16535,11 @@ msgstr ""
 "<qt>Шабакаи бо ин ҳисоб вобаста <b>%1</b>, соҳиби дуруст надорад.Марҳамат "
 "карда боварӣ ҳосил намоед, ки ҳисоб шабакаи дастрасро дорост.</qt> "
 
-#: protocols/irc/ircaccount.cpp:245 protocols/irc/ircaccount.cpp:253
+#: protocols/irc/ircaccount.cpp:255 protocols/irc/ircaccount.cpp:263
 msgid "Network is Empty"
 msgstr "Шабака Холӣ аст"
 
-#: protocols/irc/ircaccount.cpp:251
+#: protocols/irc/ircaccount.cpp:261
 #, kde-format
 msgid ""
 "<qt>The network associated with this account, <b>%1</b>, has no valid hosts. "
@@ -16563,14 +16548,14 @@ msgstr ""
 "<qt>Шабакаи бо ин ҳисоб вобаста <b>%1</b>, соҳиби дуруст надорад.Марҳамат "
 "карда боварӣ ҳосил намоед, ки ҳисоб шабакаи дастрасро дорост.</qt> "
 
-#: protocols/irc/ircaccount.cpp:259
+#: protocols/irc/ircaccount.cpp:269
 #, kde-format
 msgid ""
 "<qt>Kopete could not connect to any of the servers in the network associated "
 "with this account (<b>%1</b>). Please try again later.</qt>"
 msgstr ""
 
-#: protocols/irc/ircaccount.cpp:262
+#: protocols/irc/ircaccount.cpp:272
 #, fuzzy
 msgid "Network is Unavailable"
 msgstr "Хадамот дастрас нест"
@@ -22804,6 +22789,25 @@ msgid ""
 "Avahi Daemon is Running"
 msgstr ""
 
+#, fuzzy
+#~ msgid "There is %1 operator online."
+#~ msgid_plural "There are %1 operators online."
+#~ msgstr[0] "Хатогии пайвастшавӣ рух дод: %1"
+#~ msgstr[1] "Хатогии пайвастшавӣ рух дод: %1"
+
+#, fuzzy
+#~ msgid "There is %1 unknown connection."
+#~ msgid_plural "There are %1 unknown connections."
+#~ msgstr[0] "Хатогии пайвастшавӣ рух дод: %1"
+#~ msgstr[1] "Хатогии пайвастшавӣ рух дод: %1"
+
+#, fuzzy
+#~| msgid "The certificate has been revoked."
+#~ msgid "There has been %1 channel formed."
+#~ msgid_plural "There have been %1 channels formed."
+#~ msgstr[0] "Сертификат баргардонида шуд."
+#~ msgstr[1] "Сертификат баргардонида шуд."
+
 #~ msgid "A User Would Like to Send You a File"
 #~ msgstr "Корванд Мехоҳад ба Шумо Файл Фиристонад"
 
@@ -24449,12 +24453,6 @@ msgstr ""
 
 #~ msgid "Set Away"
 #~ msgstr "Барпосозии Ҳозир набудан"
-
-#~ msgid "Temporary Network - %1"
-#~ msgstr "Шабакаи Муқаррарӣ - %1"
-
-#~ msgid "Network imported from previous version of Kopete, or an IRC URI"
-#~ msgstr "Шабакаи аз нусхаи пешинаи Kopete, ё IRC URI ворд карда шуда"
 
 #~ msgid "Plugin Unloaded"
 #~ msgstr "Модул Аз Хотира Бароварда Шудааст"
