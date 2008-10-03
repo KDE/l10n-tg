@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-02 09:44+0200\n"
+"POT-Creation-Date: 2008-10-03 09:40+0200\n"
 "PO-Revision-Date: 2005-09-17 13:14+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -114,7 +114,7 @@ msgctxt "@title job"
 msgid "Unmounting"
 msgstr "Ҷудо кардан"
 
-#: kio/job.cpp:1987 kio/paste.cpp:63 kio/copyjob.cpp:1185 kio/copyjob.cpp:1715
+#: kio/job.cpp:1987 kio/paste.cpp:63 kio/copyjob.cpp:1191 kio/copyjob.cpp:1722
 #: kio/global.cpp:652
 msgid "File Already Exists"
 msgstr "Файл аллакай мавҷуд аст"
@@ -167,7 +167,7 @@ msgstr ""
 msgid "The clipboard is empty"
 msgstr "Буфери иввазот холист"
 
-#: kio/paste.cpp:203 kio/renamedialog.cpp:392 kio/kdirlister.cpp:321
+#: kio/paste.cpp:203 kio/renamedialog.cpp:400 kio/kdirlister.cpp:321
 #: kio/krun.cpp:820
 #, kde-format
 msgid ""
@@ -227,27 +227,82 @@ msgstr "&Исми навро пешниҳод кунед"
 msgid "&Skip"
 msgstr "&Гузарондан"
 
-#: kio/renamedialog.cpp:113
+#: kio/renamedialog.cpp:111
+msgid "Do not copy or move this folder, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:112
+msgid "Do not copy or move this file, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:115
 msgid "&Auto Skip"
 msgstr "&Худкорона гузаронидан"
 
-#: kio/renamedialog.cpp:118
+#: kio/renamedialog.cpp:116
+msgid ""
+"Do not copy or move any folder that already exists in the destination "
+"folder.\n"
+"You will be prompted again in case of a conflict with an existing file "
+"though."
+msgstr ""
+
+#: kio/renamedialog.cpp:117
+msgid ""
+"Do not copy or move any file that already exists in the destination folder.\n"
+"You will be prompted again in case of a conflict with an existing directory "
+"though."
+msgstr ""
+
+#: kio/renamedialog.cpp:122
+#, fuzzy
+#| msgid "Write"
+msgctxt "Write files into an existing folder"
+msgid "&Write Into"
+msgstr "Навиштан"
+
+#: kio/renamedialog.cpp:122
 msgid "&Overwrite"
 msgstr "&Ивваз кардан"
 
-#: kio/renamedialog.cpp:122
-msgid "O&verwrite All"
+#: kio/renamedialog.cpp:124
+msgid ""
+"Files and folders will be copied into the existing directory, alongside its "
+"existing contents.\n"
+"You will be prompted again in case of a conflict with an existing file in "
+"the directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:128
+#, fuzzy
+#| msgid "O&verwrite All"
+msgctxt "Write files into any existing directory"
+msgid "&Write Into All"
 msgstr "&Иввазоти ҳамааш"
 
 #: kio/renamedialog.cpp:128
+#, fuzzy
+#| msgid "O&verwrite All"
+msgid "&Overwrite All"
+msgstr "&Иввазоти ҳамааш"
+
+#: kio/renamedialog.cpp:130
+msgid ""
+"Files and folders will be copied into any existing directory, alongside its "
+"existing contents.\n"
+"You will be prompted again in case of a conflict with an existing file in a "
+"directory, but not in case of another existing directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:136
 msgid "&Resume"
 msgstr "&Идома додан"
 
-#: kio/renamedialog.cpp:133
+#: kio/renamedialog.cpp:141
 msgid "R&esume All"
 msgstr "&Идомаи ҳамааш"
 
-#: kio/renamedialog.cpp:145
+#: kio/renamedialog.cpp:153
 #, kde-format
 msgid ""
 "This action would overwrite '%1' with itself.\n"
@@ -256,41 +311,41 @@ msgstr ""
 "Ин амал '%1'-ро худнависӣ мекунад.\n"
 "Лутфан номи файли навро ворид кунед:"
 
-#: kio/renamedialog.cpp:147
+#: kio/renamedialog.cpp:155
 msgid "C&ontinue"
 msgstr "&Идома"
 
-#: kio/renamedialog.cpp:194 kio/renamedialog.cpp:272
+#: kio/renamedialog.cpp:202 kio/renamedialog.cpp:280
 #, kde-format
 msgid "An older item named '%1' already exists."
 msgstr "Элементи кӯҳнатарин бо номи '%1' мавҷуд аст."
 
-#: kio/renamedialog.cpp:196 kio/renamedialog.cpp:274
+#: kio/renamedialog.cpp:204 kio/renamedialog.cpp:282
 #, kde-format
 msgid "A similar file named '%1' already exists."
 msgstr "Файли мутобиқ бо номи %1 аллакай мавҷуд аст."
 
-#: kio/renamedialog.cpp:198 kio/renamedialog.cpp:276
+#: kio/renamedialog.cpp:206 kio/renamedialog.cpp:284
 #, kde-format
 msgid "A newer item named '%1' already exists."
 msgstr "Элементи навтарин бо номи '%1' мавҷуд аст."
 
-#: kio/renamedialog.cpp:210 kio/renamedialog.cpp:245
+#: kio/renamedialog.cpp:218 kio/renamedialog.cpp:253
 #, kde-format
 msgid "size %1"
 msgstr "Андозаи: %1"
 
-#: kio/renamedialog.cpp:218 kio/renamedialog.cpp:252
+#: kio/renamedialog.cpp:226 kio/renamedialog.cpp:260
 #, kde-format
 msgid "created on %1"
 msgstr "дар %1 эҷод карда шуд"
 
-#: kio/renamedialog.cpp:225 kio/renamedialog.cpp:259
+#: kio/renamedialog.cpp:233 kio/renamedialog.cpp:267
 #, kde-format
 msgid "modified on %1"
 msgstr "дар %1 тағйир дода шуд"
 
-#: kio/renamedialog.cpp:234
+#: kio/renamedialog.cpp:242
 #, kde-format
 msgid "The source file is '%1'"
 msgstr "Файли ибтидоии - '%1'"
@@ -439,14 +494,14 @@ msgstr ""
 "Сертификати SSL бо мувофақияти танзимот рад карда шуд. Шумо метавонед ин "
 "танзимотҳоро дар Маркази Идоракунии KDE-ро дигаргун кунед."
 
-#: kio/jobuidelegate.cpp:130 ../kfile/kdiroperator.cpp:748
+#: kio/jobuidelegate.cpp:130 ../kfile/kdiroperator.cpp:766
 #, fuzzy, kde-format
 msgid "Do you really want to delete this item?"
 msgid_plural "Do you really want to delete these %1 items?"
 msgstr[0] "Шумо мехоҳед ин ҷузъ нобуд созед?"
 msgstr[1] "Шумо мехоҳед %1 ҷузъҳо нобуд созед?"
 
-#: kio/jobuidelegate.cpp:132 ../kfile/kdiroperator.cpp:750
+#: kio/jobuidelegate.cpp:132 ../kfile/kdiroperator.cpp:768
 msgid "Delete Files"
 msgstr "Нобуд кардани файлҳо"
 
@@ -457,7 +512,7 @@ msgid_plural "Do you really want to move these %1 items to the trash?"
 msgstr[0] "Шумо мехоҳед ин ҷузъ нобуд созед?"
 msgstr[1] "Шумо мехоҳед %1 ҷузъҳо нобуд созед?"
 
-#: kio/jobuidelegate.cpp:144 ../kfile/kdiroperator.cpp:1653
+#: kio/jobuidelegate.cpp:144 ../kfile/kdiroperator.cpp:1733
 msgid "Move to Trash"
 msgstr ""
 
@@ -481,11 +536,11 @@ msgstr "Гузарондан"
 msgid "AutoSkip"
 msgstr "Гузаронидани ҳамааш"
 
-#: kio/copyjob.cpp:902 kio/global.cpp:662
+#: kio/copyjob.cpp:910 kio/global.cpp:662
 msgid "Folder Already Exists"
 msgstr "Феҳрист аллакай мавҷуд аст"
 
-#: kio/copyjob.cpp:1185 kio/copyjob.cpp:1715
+#: kio/copyjob.cpp:1191 kio/copyjob.cpp:1722
 msgid "Already Exists as Folder"
 msgstr "Аллакай монанди феҳрист низ мавҷуд аст"
 
@@ -2620,49 +2675,49 @@ msgstr "Барои эҷод намудани каталоги нав ба рӯи
 msgid "Unable to create io-slave: %1"
 msgstr "io-slave: %1-ро сохта натавонист"
 
-#: kio/kdirmodel.cpp:767
+#: kio/kdirmodel.cpp:771
 #, fuzzy
 #| msgid "Name"
 msgctxt "@title:column"
 msgid "Name"
 msgstr "Ном"
 
-#: kio/kdirmodel.cpp:769
+#: kio/kdirmodel.cpp:773
 #, fuzzy
 #| msgid "Size"
 msgctxt "@title:column"
 msgid "Size"
 msgstr "Андоза"
 
-#: kio/kdirmodel.cpp:771
+#: kio/kdirmodel.cpp:775
 #, fuzzy
 #| msgid "Date"
 msgctxt "@title:column"
 msgid "Date"
 msgstr "Таърих"
 
-#: kio/kdirmodel.cpp:773
+#: kio/kdirmodel.cpp:777
 #, fuzzy
 #| msgid "Permissions"
 msgctxt "@title:column"
 msgid "Permissions"
 msgstr "Имконпазирҳо"
 
-#: kio/kdirmodel.cpp:775
+#: kio/kdirmodel.cpp:779
 #, fuzzy
 #| msgid "Owner"
 msgctxt "@title:column"
 msgid "Owner"
 msgstr "Соҳиб"
 
-#: kio/kdirmodel.cpp:777
+#: kio/kdirmodel.cpp:781
 #, fuzzy
 #| msgid "Group"
 msgctxt "@title:column"
 msgid "Group"
 msgstr "Гурӯҳ"
 
-#: kio/kdirmodel.cpp:779
+#: kio/kdirmodel.cpp:783
 #, fuzzy
 msgctxt "@title:column"
 msgid "Type"
@@ -3328,7 +3383,7 @@ msgstr "Сарсухан"
 msgid "Mimetypes"
 msgstr "Намуди Mime"
 
-#: kfile/kicondialog.cpp:364 ../kfile/kfilewidget.cpp:1022
+#: kfile/kicondialog.cpp:364 ../kfile/kfilewidget.cpp:1063
 msgid "Places"
 msgstr ""
 
@@ -4610,7 +4665,7 @@ msgstr ""
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:102
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: rc.cpp:184 ../kfile/kfilewidget.cpp:467
+#: rc.cpp:184 ../kfile/kfilewidget.cpp:500
 msgid "&Name:"
 msgstr "&Ном:"
 
@@ -4805,7 +4860,7 @@ msgid "<!-- This file was generated by Konqueror -->"
 msgstr "<!-- Ин файл бо барномаи Konqueror эҷод шуда буд -->"
 
 #: bookmarks/kbookmarkimporter_ns.cc:165 bookmarks/kbookmarkimporter_ns.cc:166
-#: bookmarks/kbookmarkdialog.cc:325 ../kfile/kfilewidget.cpp:2105
+#: bookmarks/kbookmarkdialog.cc:325 ../kfile/kfilewidget.cpp:2146
 #, fuzzy
 msgid "Bookmarks"
 msgstr "Гузориш"
@@ -4827,7 +4882,7 @@ msgstr "Монданҳо"
 msgid "Delete Folder"
 msgstr "Ҳузфи феҳрист"
 
-#: bookmarks/kbookmarkmenu.cc:281 ../kfile/kdiroperator.cpp:1731
+#: bookmarks/kbookmarkmenu.cc:281 ../kfile/kdiroperator.cpp:1829
 #, fuzzy
 msgid "Properties"
 msgstr "Хусусиятҳо барои %1"
@@ -5632,7 +5687,7 @@ msgctxt "@action:button"
 msgid "Empty Trash"
 msgstr "Файлҳои муваққатӣ"
 
-#: ../kfile/kfilefiltercombo.cpp:36 ../kfile/kfilewidget.cpp:1479
+#: ../kfile/kfilefiltercombo.cpp:36 ../kfile/kfilewidget.cpp:1520
 msgid "*|All Files"
 msgstr "*|Ҳама файлҳо"
 
@@ -5640,7 +5695,7 @@ msgstr "*|Ҳама файлҳо"
 msgid "All Supported Files"
 msgstr "Тамоми файлҳои дастгиршаванда"
 
-#: ../kfile/kfilewidget.cpp:270
+#: ../kfile/kfilewidget.cpp:277
 #, fuzzy
 #| msgid ""
 #| "<p>While typing in the text area, you may be presented with possible "
@@ -5656,12 +5711,12 @@ msgstr ""
 "пешкаш хоҳанд шуд. Ин функсияро метавонед бо пахши кнопкаи рости муш ва бо "
 "интихоби тартиботи дар меню <b>Анҷомдиҳии матн</b> низ танзим кунед."
 
-#: ../kfile/kfilewidget.cpp:331
+#: ../kfile/kfilewidget.cpp:338
 #, fuzzy, kde-format
 msgid "Drive: %1"
 msgstr "Андозаи: %1"
 
-#: ../kfile/kfilewidget.cpp:386
+#: ../kfile/kfilewidget.cpp:393
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Click this button to enter the parent folder.<p>For instance, if the "
@@ -5676,42 +5731,42 @@ msgstr ""
 "агар каталоги равон file:/home/%1бошад, пахши ин кнопка, шуморо ба file:/"
 "home хоҳад гузаронд.</qt>"
 
-#: ../kfile/kfilewidget.cpp:390
+#: ../kfile/kfilewidget.cpp:397
 msgid "Click this button to move backwards one step in the browsing history."
 msgstr ""
 "Барои ба як қадам ақиб гузаштан аз журнали намоиш, ин кнопкаро пахш кунед."
 
-#: ../kfile/kfilewidget.cpp:391
+#: ../kfile/kfilewidget.cpp:398
 msgid "Click this button to move forward one step in the browsing history."
 msgstr ""
 "Барои ба як қадам пеш гузаштан аз журнали намоиш, ин кнопкаро пахш кунед."
 
-#: ../kfile/kfilewidget.cpp:393
+#: ../kfile/kfilewidget.cpp:400
 msgid "Click this button to reload the contents of the current location."
 msgstr "Барои нав кардани дохили саҳифаи равон, ин кнопкаро пахш кунед."
 
-#: ../kfile/kfilewidget.cpp:395
+#: ../kfile/kfilewidget.cpp:402
 msgid "Click this button to create a new folder."
 msgstr "Барои эҷоди феҳристи нав, ин кнопкаро пахш кунед."
 
-#: ../kfile/kfilewidget.cpp:401
+#: ../kfile/kfilewidget.cpp:408
 #, fuzzy
 #| msgid "Show Quick Access Navigation Panel"
 msgid "Show Places Navigation Panel"
 msgstr "Намоиши панели дастрасии зуд"
 
-#: ../kfile/kfilewidget.cpp:408
+#: ../kfile/kfilewidget.cpp:415
 #, fuzzy
 msgid "Show Bookmarks"
 msgstr "Гузориш"
 
-#: ../kfile/kfilewidget.cpp:413
+#: ../kfile/kfilewidget.cpp:420
 #, fuzzy
 #| msgid "Operation"
 msgid "Options"
 msgstr "Амалиёт"
 
-#: ../kfile/kfilewidget.cpp:415
+#: ../kfile/kfilewidget.cpp:422
 #, fuzzy
 #| msgid ""
 #| "<qt>This is the configuration menu for the file dialog. Various options "
@@ -5732,7 +5787,19 @@ msgstr ""
 "рӯйхати</li><li></li><li>панели дастрасии Зуд</li><li>пешнамоишоти файли</"
 "li><li>ҷудо кардани каталогҳо аз файлҳо</li></ul></qt>"
 
-#: ../kfile/kfilewidget.cpp:507
+#: ../kfile/kfilewidget.cpp:449
+#, fuzzy
+#| msgid "Show Preview"
+msgid "Show Inline Preview"
+msgstr "Пешнамоиш нишон диҳед"
+
+#: ../kfile/kfilewidget.cpp:466
+#, fuzzy
+#| msgid "Icon View"
+msgid "Icon Size"
+msgstr "Намоиши нишона"
+
+#: ../kfile/kfilewidget.cpp:540
 #, fuzzy
 #| msgid ""
 #| "<qt>This is the filter to apply to the file list. File names that do not "
@@ -5751,37 +5818,37 @@ msgstr ""
 "заминаи вурудот низ ворид кунед. <p>Қолибҳо, чунини * ва ? роҳ дода мешаванд."
 "</qt>"
 
-#: ../kfile/kfilewidget.cpp:513
+#: ../kfile/kfilewidget.cpp:546
 msgid "&Filter:"
 msgstr "&Филтр:"
 
-#: ../kfile/kfilewidget.cpp:693
+#: ../kfile/kfilewidget.cpp:734
 #, fuzzy
 #| msgid "You can only select local files."
 msgid "You can only select one file"
 msgstr "Шумо метавонед фақат файлҳои локалӣ интихоб кунед."
 
-#: ../kfile/kfilewidget.cpp:694
+#: ../kfile/kfilewidget.cpp:735
 msgid "More than one file provided"
 msgstr ""
 
-#: ../kfile/kfilewidget.cpp:715
+#: ../kfile/kfilewidget.cpp:756
 #, fuzzy
 #| msgid "You can only select local files."
 msgid "You can only select local files"
 msgstr "Шумо метавонед фақат файлҳои локалӣ интихоб кунед."
 
-#: ../kfile/kfilewidget.cpp:716
+#: ../kfile/kfilewidget.cpp:757
 #, fuzzy
 #| msgid "Remote Files Not Accepted"
 msgid "Remote files not accepted"
 msgstr "Файлҳои ҳузфшуда дастгирӣ нахоҳанд шуд"
 
-#: ../kfile/kfilewidget.cpp:996
+#: ../kfile/kfilewidget.cpp:1037
 msgid "This is the name to save the file as."
 msgstr "<qt>Ин номест, ки дар он файл нигоҳ дошта хоҳад шуд."
 
-#: ../kfile/kfilewidget.cpp:1001
+#: ../kfile/kfilewidget.cpp:1042
 msgid ""
 "This is the list of files to open. More than one file can be specified by "
 "listing several files, separated by spaces."
@@ -5789,22 +5856,22 @@ msgstr ""
 "Ин рӯйхати файлҳоест, ки боз хоҳанд шуд. Агар якчанд файле ишора шуда истода "
 "бошад, онҳо бояд бо фосила ҷудо карда шаванд."
 
-#: ../kfile/kfilewidget.cpp:1008
+#: ../kfile/kfilewidget.cpp:1049
 msgid "This is the name of the file to open."
 msgstr "Ин номи файлест, ки боз хоҳад шуд."
 
-#: ../kfile/kfilewidget.cpp:1210
+#: ../kfile/kfilewidget.cpp:1251
 #, kde-format
 msgid "The file \"%1\" already exists. Do you wish to overwrite it?"
 msgstr ""
 
-#: ../kfile/kfilewidget.cpp:1211
+#: ../kfile/kfilewidget.cpp:1252
 #, fuzzy
 #| msgid "O&verwrite All"
 msgid "Overwrite File?"
 msgstr "&Иввазоти ҳамааш"
 
-#: ../kfile/kfilewidget.cpp:1342
+#: ../kfile/kfilewidget.cpp:1383
 msgid ""
 "The chosen filenames do not\n"
 "appear to be valid."
@@ -5812,46 +5879,46 @@ msgstr ""
 "Файли интихобшуда\n"
 "нодуруст аст."
 
-#: ../kfile/kfilewidget.cpp:1344
+#: ../kfile/kfilewidget.cpp:1385
 msgid "Invalid Filenames"
 msgstr "Номҳои нодуруст"
 
-#: ../kfile/kfilewidget.cpp:1405
+#: ../kfile/kfilewidget.cpp:1446
 msgid "You can only select local files."
 msgstr "Шумо метавонед фақат файлҳои локалӣ интихоб кунед."
 
-#: ../kfile/kfilewidget.cpp:1406
+#: ../kfile/kfilewidget.cpp:1447
 msgid "Remote Files Not Accepted"
 msgstr "Файлҳои ҳузфшуда дастгирӣ нахоҳанд шуд"
 
-#: ../kfile/kfilewidget.cpp:1476
+#: ../kfile/kfilewidget.cpp:1517
 msgid "*|All Folders"
 msgstr "*|Ҳама феҳристҳо"
 
-#: ../kfile/kfilewidget.cpp:1630
+#: ../kfile/kfilewidget.cpp:1671
 #, fuzzy
 msgid "&Open"
 msgstr "&Боз кардан"
 
-#: ../kfile/kfilewidget.cpp:1797
+#: ../kfile/kfilewidget.cpp:1838
 #, kde-format
 msgid "Automatically select filename e&xtension (%1)"
 msgstr "Васеъи номи файл бо &автоматикӣ интихоб кунед (%1)"
 
-#: ../kfile/kfilewidget.cpp:1798
+#: ../kfile/kfilewidget.cpp:1839
 #, kde-format
 msgid "the extension <b>%1</b>"
 msgstr "васеъи <b>%1</b>"
 
-#: ../kfile/kfilewidget.cpp:1806
+#: ../kfile/kfilewidget.cpp:1847
 msgid "Automatically select filename e&xtension"
 msgstr "Васеъи номи файл бо &автоматикӣ интихоб кунед"
 
-#: ../kfile/kfilewidget.cpp:1807
+#: ../kfile/kfilewidget.cpp:1848
 msgid "a suitable extension"
 msgstr " Васеъкунии муносиб"
 
-#: ../kfile/kfilewidget.cpp:1817
+#: ../kfile/kfilewidget.cpp:1858
 #, fuzzy, kde-format
 #| msgid ""
 #| "This option enables some convenient features for saving files with "
@@ -5891,7 +5958,7 @@ msgstr ""
 "automatically removed).</li></ol>If unsure, keep this option enabled as it "
 "makes your files more manageable."
 
-#: ../kfile/kfilewidget.cpp:2109
+#: ../kfile/kfilewidget.cpp:2150
 #, fuzzy
 #| msgid ""
 #| "<qt>This button allows you to bookmark specific locations. Click on this "
@@ -5996,12 +6063,12 @@ msgstr ""
 "Сохтани феҳристи нав дар:\n"
 "%1"
 
-#: ../kfile/kdirselectdialog.cpp:143 ../kfile/kdiroperator.cpp:701
+#: ../kfile/kdirselectdialog.cpp:143 ../kfile/kdiroperator.cpp:719
 #, kde-format
 msgid "A file or folder named %1 already exists."
 msgstr "Каталог бо номи %1 аллакай мавҷуд мебошад."
 
-#: ../kfile/kdirselectdialog.cpp:147 ../kfile/kdiroperator.cpp:704
+#: ../kfile/kdirselectdialog.cpp:147 ../kfile/kdiroperator.cpp:722
 msgid "You do not have permission to create that folder."
 msgstr "Шумо барои сохтани  пӯша иҷозат надоред."
 
@@ -6110,11 +6177,11 @@ msgstr ""
 msgid "Show Hidden Folders"
 msgstr "Намоиши феҳристҳои пинҳонӣ"
 
-#: ../kfile/kdiroperator.cpp:666 ../kfile/kdiroperator.cpp:674
+#: ../kfile/kdiroperator.cpp:684 ../kfile/kdiroperator.cpp:692
 msgid "New Folder"
 msgstr "Феҳристи нав"
 
-#: ../kfile/kdiroperator.cpp:675
+#: ../kfile/kdiroperator.cpp:693
 #, kde-format
 msgid ""
 "Create new folder in:\n"
@@ -6123,15 +6190,15 @@ msgstr ""
 "Сохтани феҳристи нав дар:\n"
 "%1"
 
-#: ../kfile/kdiroperator.cpp:719
+#: ../kfile/kdiroperator.cpp:737
 msgid "You did not select a file to delete."
 msgstr "Барои нест кардан ягон файл интихоб нашудааст."
 
-#: ../kfile/kdiroperator.cpp:720
+#: ../kfile/kdiroperator.cpp:738
 msgid "Nothing to Delete"
 msgstr "Барои нест кардан чизе нест."
 
-#: ../kfile/kdiroperator.cpp:741
+#: ../kfile/kdiroperator.cpp:759
 #, kde-format
 msgid ""
 "<qt>Do you really want to delete\n"
@@ -6140,21 +6207,21 @@ msgstr ""
 "<qt>Шумо ҳақиқатан мехоҳед\n"
 " <b>'%1'</b>-ро ҳузф кунед?</qt>"
 
-#: ../kfile/kdiroperator.cpp:743
+#: ../kfile/kdiroperator.cpp:761
 msgid "Delete File"
 msgstr "Нобуд кардани файл"
 
-#: ../kfile/kdiroperator.cpp:781
+#: ../kfile/kdiroperator.cpp:799
 #, fuzzy
 msgid "You did not select a file to trash."
 msgstr "Барои нест кардан ягон файл интихоб нашудааст."
 
-#: ../kfile/kdiroperator.cpp:782
+#: ../kfile/kdiroperator.cpp:800
 #, fuzzy
 msgid "Nothing to Trash"
 msgstr "Барои нест кардан чизе нест."
 
-#: ../kfile/kdiroperator.cpp:799
+#: ../kfile/kdiroperator.cpp:817
 #, fuzzy, kde-format
 msgid ""
 "<qt>Do you really want to trash\n"
@@ -6163,113 +6230,125 @@ msgstr ""
 "<qt>Шумо ҳақиқатан мехоҳед\n"
 " <b>'%1'</b>-ро ҳузф кунед?</qt>"
 
-#: ../kfile/kdiroperator.cpp:801
+#: ../kfile/kdiroperator.cpp:819
 #, fuzzy
 msgid "Trash File"
 msgstr "Файлҳои муваққатӣ"
 
-#: ../kfile/kdiroperator.cpp:802 ../kfile/kdiroperator.cpp:809
+#: ../kfile/kdiroperator.cpp:820 ../kfile/kdiroperator.cpp:827
 msgctxt "to trash"
 msgid "&Trash"
 msgstr ""
 
-#: ../kfile/kdiroperator.cpp:806
+#: ../kfile/kdiroperator.cpp:824
 #, fuzzy, kde-format
 msgid "translators: not called for n == 1"
 msgid_plural "Do you really want to trash these %1 items?"
 msgstr[0] "Шумо мехоҳед ин ҷузъ нобуд созед?"
 msgstr[1] "Шумо мехоҳед %1 ҷузъҳо нобуд созед?"
 
-#: ../kfile/kdiroperator.cpp:808
+#: ../kfile/kdiroperator.cpp:826
 #, fuzzy
 msgid "Trash Files"
 msgstr "Файлҳои муваққатӣ"
 
-#: ../kfile/kdiroperator.cpp:935 ../kfile/kdiroperator.cpp:1052
+#: ../kfile/kdiroperator.cpp:1014 ../kfile/kdiroperator.cpp:1131
 msgid "The specified folder does not exist or was not readable."
 msgstr "Каталоги ишорашуда вуҷуд надорад ёки барои хондан дастрас намебошад."
 
-#: ../kfile/kdiroperator.cpp:1631
+#: ../kfile/kdiroperator.cpp:1711
 msgid "Menu"
 msgstr "Меню"
 
-#: ../kfile/kdiroperator.cpp:1635
+#: ../kfile/kdiroperator.cpp:1715
 msgid "Parent Folder"
 msgstr "Феҳристи оилавӣ"
 
-#: ../kfile/kdiroperator.cpp:1642
+#: ../kfile/kdiroperator.cpp:1722
 msgid "Home Folder"
 msgstr "Феҳристи хона"
 
-#: ../kfile/kdiroperator.cpp:1645
+#: ../kfile/kdiroperator.cpp:1725
 #, fuzzy
 msgid "Reload"
 msgstr "Хондан"
 
-#: ../kfile/kdiroperator.cpp:1648
+#: ../kfile/kdiroperator.cpp:1728
 msgid "New Folder..."
 msgstr "Феҳристи нав..."
 
-#: ../kfile/kdiroperator.cpp:1659
+#: ../kfile/kdiroperator.cpp:1739
 #, fuzzy
 msgid "Delete"
 msgstr "Дар ҳоли нест кардан"
 
-#: ../kfile/kdiroperator.cpp:1666
+#: ../kfile/kdiroperator.cpp:1746
 msgid "Sorting"
 msgstr "Тартиби хел-хел ҷудо кардан"
 
-#: ../kfile/kdiroperator.cpp:1669
+#: ../kfile/kdiroperator.cpp:1749
 msgid "By Name"
 msgstr "Бо ном"
 
-#: ../kfile/kdiroperator.cpp:1673
+#: ../kfile/kdiroperator.cpp:1753
 msgid "By Size"
 msgstr "Бо андоза"
 
-#: ../kfile/kdiroperator.cpp:1677
+#: ../kfile/kdiroperator.cpp:1757
 msgid "By Date"
 msgstr "Бо таърих"
 
-#: ../kfile/kdiroperator.cpp:1681
+#: ../kfile/kdiroperator.cpp:1761
 #, fuzzy
 msgid "By Type"
 msgstr "Намуд:"
 
-#: ../kfile/kdiroperator.cpp:1685
+#: ../kfile/kdiroperator.cpp:1765
 #, fuzzy
 msgid "Descending"
 msgstr " (Нест кардан)"
 
-#: ../kfile/kdiroperator.cpp:1695
+#: ../kfile/kdiroperator.cpp:1775
+msgid "Icon Position"
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:1778
+msgid "Next to the filename"
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:1782
+msgid "Above the filename"
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:1793
 msgid "Short View"
 msgstr "Тасвироти кӯтоҳ"
 
-#: ../kfile/kdiroperator.cpp:1700
+#: ../kfile/kdiroperator.cpp:1798
 msgid "Detailed View"
 msgstr "Намоиши тафсилот"
 
-#: ../kfile/kdiroperator.cpp:1705
+#: ../kfile/kdiroperator.cpp:1803
 #, fuzzy
 #| msgid "Detailed View"
 msgid "Tree View"
 msgstr "Намоиши тафсилот"
 
-#: ../kfile/kdiroperator.cpp:1710
+#: ../kfile/kdiroperator.cpp:1808
 #, fuzzy
 #| msgid "Detailed View"
 msgid "Detailed Tree View"
 msgstr "Намоиши тафсилот"
 
-#: ../kfile/kdiroperator.cpp:1721
+#: ../kfile/kdiroperator.cpp:1819
 msgid "Show Hidden Files"
 msgstr "Намоиши файлҳои пинҳонӣ"
 
-#: ../kfile/kdiroperator.cpp:1725
+#: ../kfile/kdiroperator.cpp:1823
 msgid "Show Preview"
 msgstr "Пешнамоиш нишон диҳед"
 
-#: ../kfile/kdiroperator.cpp:1738
+#: ../kfile/kdiroperator.cpp:1836
 #, fuzzy
 msgid "&View"
 msgstr "&Пешнамоиш"
@@ -6734,9 +6813,6 @@ msgstr ""
 
 #~ msgid "Thumbnail Previews"
 #~ msgstr "Мини-тасвирот"
-
-#~ msgid "Icon View"
-#~ msgstr "Намоиши нишона"
 
 #~ msgid "Size"
 #~ msgstr "Андоза"
