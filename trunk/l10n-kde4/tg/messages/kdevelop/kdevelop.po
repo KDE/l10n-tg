@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-09 09:46+0200\n"
+"POT-Creation-Date: 2008-10-12 09:42+0200\n"
 "PO-Revision-Date: 2005-12-21 14:47+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: \n"
@@ -2365,12 +2365,12 @@ msgstr "Разбор файла: %1"
 msgid "Parsing actual file"
 msgstr "Разбор файла: %1"
 
-#: languages/cpp/cppparsejob.cpp:536
+#: languages/cpp/cppparsejob.cpp:535
 #, fuzzy
 msgid "Building uses"
 msgstr "Сборка пакета"
 
-#: languages/cpp/cppparsejob.cpp:627
+#: languages/cpp/cppparsejob.cpp:626
 #, fuzzy
 msgid "Ready"
 msgstr "Обновить дерево"
@@ -3638,6 +3638,11 @@ msgstr "kdevelop: Консоль отладки приложения"
 #, fuzzy, kde-format
 msgid "<%1 items>"
 msgstr "%1 атрибутов"
+
+#: languages/cpp/parser/lexer.cpp:938
+#, fuzzy, kde-format
+msgid "invalid input: %1"
+msgstr "Аҳамият"
 
 #: languages/cpp/parser/rpp/pp-macro-expander.cpp:88
 #, fuzzy
@@ -5118,6 +5123,82 @@ msgstr "Сохраняет все открытые документы"
 msgid "Documents"
 msgstr "Санадсозӣ"
 
+#: plugins/coverage/annotationmodel.cpp:86
+#, fuzzy
+msgid "Number of times visited."
+msgstr "Число &одновременных процессов:"
+
+#: plugins/coverage/annotationmodel.cpp:88
+#, fuzzy
+msgid "Line not reachable."
+msgstr "'%1' не является читаемым."
+
+#: plugins/coverage/reportmodel.cpp:192
+#, fuzzy
+#| msgid "Source"
+msgid "source"
+msgstr "Манбаъи рамзӣ"
+
+#: plugins/coverage/reportmodel.cpp:193
+#, fuzzy
+#| msgid "Storage"
+msgid "coverage"
+msgstr "Синфи хотир"
+
+#: plugins/coverage/reportmodel.cpp:194
+#, fuzzy
+msgid "visited"
+msgstr "Посещённая ссылка"
+
+#: plugins/coverage/reportmodel.cpp:195
+msgid "SLOC"
+msgstr ""
+
+#: plugins/coverage/lcovjob.cpp:126
+#, fuzzy
+#| msgid "Init &root"
+msgid "Cov verbose output"
+msgstr "&Решаи Init"
+
+#: plugins/coverage/reportwidget.cpp:148
+msgid "Line Coverage:"
+msgstr ""
+
+#: plugins/coverage/reportwidget.cpp:149
+#, fuzzy
+msgid "Total SLOC:"
+msgstr "Таблица:"
+
+#: plugins/coverage/reportwidget.cpp:150
+#, fuzzy
+msgid "Instrumented Lines:"
+msgstr "&Строки контекста:"
+
+#: plugins/coverage/reportwidget.cpp:218
+#, fuzzy
+msgid "Coverage Report"
+msgstr "Поддержка ClearCase"
+
+#: plugins/coverage/reportwidget.cpp:219
+msgid "GCOV code coverage statistics."
+msgstr ""
+
+#: plugins/coverage/coverageplugin.cpp:89
+msgid "Spawn Report"
+msgstr ""
+
+#: plugins/coverage/coverageplugin.cpp:97
+#, fuzzy
+msgid "Reset Data"
+msgstr "Перезапуск"
+
+#: plugins/coverage/coverageplugin.cpp:105
+#, fuzzy
+msgid "Insert Build Flags"
+msgstr ""
+"Импортировать\n"
+"файлы сборки"
+
 #: plugins/formatters/astyle_plugin.cpp:34
 msgid "Astyle Formatter"
 msgstr ""
@@ -5578,10 +5659,6 @@ msgstr "Точка наблюдения"
 #, fuzzy
 #~ msgid "seconds"
 #~ msgstr "Нишонаҳо"
-
-#, fuzzy
-#~ msgid "Total:"
-#~ msgstr "Таблица:"
 
 #, fuzzy
 #~ msgid "Selected:"
@@ -6375,10 +6452,6 @@ msgstr "Точка наблюдения"
 #, fuzzy
 #~ msgid "Show"
 #~ msgstr "Тень"
-
-#, fuzzy
-#~ msgid "Context-Lines:"
-#~ msgstr "&Строки контекста:"
 
 #, fuzzy
 #~ msgid "Manage Patches"
@@ -9315,9 +9388,6 @@ msgstr "Точка наблюдения"
 #~ msgid "Inline"
 #~ msgstr "Inline"
 
-#~ msgid "Storage"
-#~ msgstr "Синфи хотир"
-
 #, fuzzy
 #~ msgid "Return Type"
 #~ msgstr "Возвращаемое значение"
@@ -10238,14 +10308,6 @@ msgstr "Точка наблюдения"
 #~ "Build Files"
 #~ msgstr ""
 #~ "Экспортировать\n"
-#~ "файлы сборки"
-
-#, fuzzy
-#~ msgid ""
-#~ "Import \n"
-#~ "Build Files"
-#~ msgstr ""
-#~ "Импортировать\n"
 #~ "файлы сборки"
 
 #, fuzzy
@@ -12460,10 +12522,6 @@ msgstr "Точка наблюдения"
 
 #~ msgid "Link"
 #~ msgstr "Алоқа"
-
-#, fuzzy
-#~ msgid "LinkVisited"
-#~ msgstr "Посещённая ссылка"
 
 #, fuzzy
 #~ msgid "Choose the central color role"
@@ -15910,10 +15968,6 @@ msgstr "Точка наблюдения"
 #~ "\"самом дальнем блоке\" (т.е. в main()), тогда эта операция не сработает."
 
 #, fuzzy
-#~ msgid "Restart"
-#~ msgstr "Перезапуск"
-
-#, fuzzy
 #~ msgid "KDevelop ruby debugger: Click to execute one line of code (\"step\")"
 #~ msgstr ""
 #~ "Ruby-отладчик KDevelop: Щёлкните мышью для выполнения одной строки кода "
@@ -17920,10 +17974,6 @@ msgstr "Точка наблюдения"
 #~ msgstr ""
 #~ "Команда импорта cvs завершилась со статусом %1. Проверьте правильность "
 #~ "расположения cvs."
-
-#, fuzzy
-#~ msgid "File '%1' is not readable"
-#~ msgstr "'%1' не является читаемым."
 
 #, fuzzy
 #~ msgid "<b>Edit</b><p>Opens file(s) in a client workspace for edit."
