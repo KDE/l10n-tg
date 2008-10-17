@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-15 10:39+0200\n"
+"POT-Creation-Date: 2008-10-17 09:36+0200\n"
 "PO-Revision-Date: 2005-09-17 13:26+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -554,7 +554,7 @@ msgstr "%2 <%1>"
 msgid "Properties"
 msgstr "&Хусусиятҳо"
 
-#: libkopete/kopeteaccount.cpp:574
+#: libkopete/kopeteaccount.cpp:576
 msgid "Edit Account"
 msgstr "Таҳрири Навиштаҷот"
 
@@ -1138,30 +1138,18 @@ msgstr "<qt>Пайёми воридшаванда аз %1<br>\"%2\"</qt>"
 msgid "<qt>A highlighted message arrived from %1<br />\"%2\"</qt>"
 msgstr "<qt>Пайёми равшан гардида аз %1<br>\"%2\"</qt> қабул гардид"
 
-#: libkopete/private/kopeteviewmanager.cpp:335 kopete/infoeventwidget.cpp:206
+#: libkopete/private/kopeteviewmanager.cpp:335
 #, fuzzy
+msgctxt "@action"
 msgid "View"
 msgstr "Дидан"
 
-#. i18n: file: protocols/irc/ui/irceditaccount.ui:700
-#. i18n: ectx: property (text), item, widget (QComboBox, serverNotices_2)
-#. i18n: file: protocols/irc/ui/irceditaccount.ui:732
-#. i18n: ectx: property (text), item, widget (QComboBox, serverMessages_2)
-#. i18n: file: protocols/irc/ui/irceditaccount.ui:781
-#. i18n: ectx: property (text), item, widget (QComboBox, informationReplies_2)
-#. i18n: file: protocols/irc/ui/irceditaccount.ui:820
-#. i18n: ectx: property (text), item, widget (QComboBox, errorMessages_2)
-#. i18n: file: protocols/irc/ui/irceditaccount.ui:700
-#. i18n: ectx: property (text), item, widget (QComboBox, serverNotices_2)
-#. i18n: file: protocols/irc/ui/irceditaccount.ui:732
-#. i18n: ectx: property (text), item, widget (QComboBox, serverMessages_2)
-#. i18n: file: protocols/irc/ui/irceditaccount.ui:781
-#. i18n: ectx: property (text), item, widget (QComboBox, informationReplies_2)
-#. i18n: file: protocols/irc/ui/irceditaccount.ui:820
-#. i18n: ectx: property (text), item, widget (QComboBox, errorMessages_2)
-#: libkopete/private/kopeteviewmanager.cpp:335 rc.cpp:2347 rc.cpp:2362
-#: rc.cpp:2380 rc.cpp:2398 protocols/yahoo/yahooaccount.cpp:1111
-#: protocols/yahoo/yahooaccount.cpp:1563 protocols/yahoo/yahooaccount.cpp:1774
+#: libkopete/private/kopeteviewmanager.cpp:335
+#: protocols/yahoo/yahooaccount.cpp:1111 protocols/yahoo/yahooaccount.cpp:1563
+#: protocols/yahoo/yahooaccount.cpp:1774
+#, fuzzy
+#| msgid "Ignore"
+msgctxt "@action"
 msgid "Ignore"
 msgstr "Рад кардан"
 
@@ -1251,6 +1239,11 @@ msgstr "Тахаллус"
 #, fuzzy
 msgid "Photo"
 msgstr "Қарордод"
+
+#: kopete/infoeventwidget.cpp:206
+#, fuzzy
+msgid "View"
+msgstr "Дидан"
 
 #: kopete/kopetewindow.cpp:129
 #, fuzzy
@@ -8858,6 +8851,29 @@ msgstr "Тирезаи Ношиносон"
 #: rc.cpp:2344 rc.cpp:2359 rc.cpp:2377 rc.cpp:2395
 msgid "KNotify"
 msgstr "KОгоҳонӣ."
+
+#. i18n: file: protocols/irc/ui/irceditaccount.ui:700
+#. i18n: ectx: property (text), item, widget (QComboBox, serverNotices_2)
+#. i18n: file: protocols/irc/ui/irceditaccount.ui:732
+#. i18n: ectx: property (text), item, widget (QComboBox, serverMessages_2)
+#. i18n: file: protocols/irc/ui/irceditaccount.ui:781
+#. i18n: ectx: property (text), item, widget (QComboBox, informationReplies_2)
+#. i18n: file: protocols/irc/ui/irceditaccount.ui:820
+#. i18n: ectx: property (text), item, widget (QComboBox, errorMessages_2)
+#. i18n: file: protocols/irc/ui/irceditaccount.ui:700
+#. i18n: ectx: property (text), item, widget (QComboBox, serverNotices_2)
+#. i18n: file: protocols/irc/ui/irceditaccount.ui:732
+#. i18n: ectx: property (text), item, widget (QComboBox, serverMessages_2)
+#. i18n: file: protocols/irc/ui/irceditaccount.ui:781
+#. i18n: ectx: property (text), item, widget (QComboBox, informationReplies_2)
+#. i18n: file: protocols/irc/ui/irceditaccount.ui:820
+#. i18n: ectx: property (text), item, widget (QComboBox, errorMessages_2)
+#: rc.cpp:2347 rc.cpp:2362 rc.cpp:2380 rc.cpp:2398
+#, fuzzy
+#| msgid "Ignore"
+msgctxt "@item:inlistbox"
+msgid "Ignore"
+msgstr "Рад кардан"
 
 #. i18n: file: protocols/irc/ui/irceditaccount.ui:750
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_3_2)
@@ -16713,7 +16729,7 @@ msgstr "Дархости гузарвожа"
 
 #: protocols/irc/libkirc/plugins/ctcp/kirctransfer.cpp:359
 #, fuzzy
-msgid "Acknowledge size is greater then the expected file size"
+msgid "Acknowledge size is greater than the expected file size"
 msgstr "Андозаи номаълум назар ба андозаи интизоршавандаи файл калонтар аст"
 
 #: protocols/irc/ircaccount.cpp:155
@@ -16833,8 +16849,7 @@ msgstr ""
 msgid "Webcam invitation - Kopete MSN Plugin"
 msgstr "Алоқа Гум Шуд -- Модули MSN"
 
-#: protocols/msn/webcam.cpp:97 protocols/yahoo/yahooaccount.cpp:1111
-#: protocols/yahoo/yahooaccount.cpp:1563 protocols/yahoo/yahooaccount.cpp:1774
+#: protocols/msn/webcam.cpp:97
 msgid "Accept"
 msgstr "Қабул кардан"
 
@@ -20390,6 +20405,14 @@ msgid ""
 "\n"
 "Accept?"
 msgstr ""
+
+#: protocols/yahoo/yahooaccount.cpp:1111 protocols/yahoo/yahooaccount.cpp:1563
+#: protocols/yahoo/yahooaccount.cpp:1774
+#, fuzzy
+#| msgid "Accept"
+msgctxt "@action"
+msgid "Accept"
+msgstr "Қабул кардан"
 
 #: protocols/yahoo/yahooaccount.cpp:1204
 #, fuzzy, kde-format
