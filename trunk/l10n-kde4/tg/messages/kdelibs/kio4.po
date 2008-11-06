@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-05 10:42+0100\n"
+"POT-Creation-Date: 2008-11-06 09:43+0100\n"
 "PO-Revision-Date: 2005-09-17 13:14+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -116,7 +116,7 @@ msgid "Unmounting"
 msgstr "Ҷудо кардан"
 
 #: kio/job.cpp:1987 kio/paste.cpp:63 kio/copyjob.cpp:1191 kio/copyjob.cpp:1722
-#: kio/global.cpp:652
+#: kio/global.cpp:667
 msgid "File Already Exists"
 msgstr "Файл аллакай мавҷуд аст"
 
@@ -537,7 +537,7 @@ msgstr "Гузарондан"
 msgid "AutoSkip"
 msgstr "Гузаронидани ҳамааш"
 
-#: kio/copyjob.cpp:910 kio/global.cpp:662
+#: kio/copyjob.cpp:910 kio/global.cpp:677
 msgid "Folder Already Exists"
 msgstr "Феҳрист аллакай мавҷуд аст"
 
@@ -560,74 +560,78 @@ msgid_plural "%1 days %2"
 msgstr[0] ""
 msgstr[1] ""
 
-#: kio/global.cpp:122
-msgid "No Items"
-msgstr ""
-
-#: kio/global.cpp:122
-#, kde-format
-msgid "One Item"
-msgid_plural "%1 Items"
-msgstr[0] "%1 Ҷӯзъ"
-msgstr[1] "%1 Ҷӯзъ"
-
 #: kio/global.cpp:123
 #, fuzzy
-msgid "No Files"
-msgstr "*|Ҳама файлҳо"
-
-#: kio/global.cpp:123
-#, kde-format
-msgid "One File"
-msgid_plural "%1 Files"
-msgstr[0] "%1 файл"
-msgstr[1] "%1 Файл"
-
-#: kio/global.cpp:124
-#, fuzzy
-msgid "No Folders"
-msgstr "Феҳристи нав"
-
-#: kio/global.cpp:124
-#, kde-format
-msgid "One Folder"
-msgid_plural "%1 Folders"
-msgstr[0] "%1 феҳрист"
-msgstr[1] "%1 Феҳрист"
-
-#: kio/global.cpp:126
-#, kde-format
-msgid "(%1 Total)"
-msgstr "(%1 Ҳамагӣ)"
+#| msgid "One Item"
+#| msgid_plural "%1 Items"
+msgid "0 Items"
+msgstr "%1 Ҷӯзъ"
 
 #: kio/global.cpp:127
 #, fuzzy, kde-format
-msgctxt "Items (Folders, Files), Size"
-msgid "%1 (%2, %3), %4"
-msgstr "%1 (порт %2)"
+#| msgid "%1 folder"
+#| msgid_plural "%1 folders"
+msgid "1 Folder"
+msgid_plural "%1 Folders"
+msgstr[0] "%1 Феҳрист"
+msgstr[1] "%1 Феҳристҳо"
 
-#: kio/global.cpp:129
+#: kio/global.cpp:128
 #, fuzzy, kde-format
-msgctxt "Items (Folders, Files)"
-msgid "%1 (%2, %3)"
+#| msgid "1 file"
+#| msgid_plural "%1 files"
+msgid "1 File"
+msgid_plural "%1 Files"
+msgstr[0] "%1 файлҳо"
+msgstr[1] "%1 файлҳо"
+
+#: kio/global.cpp:131
+#, fuzzy, kde-format
+msgctxt "folders, files (size)"
+msgid "%1, %2 (%3)"
 msgstr "%1 (порт %2)"
 
-#: kio/global.cpp:157
+#: kio/global.cpp:132
+#, fuzzy, kde-format
+msgctxt "folders, files"
+msgid "%1, %2"
+msgstr "%1 Б"
+
+#: kio/global.cpp:134
+#, fuzzy, kde-format
+msgctxt "files (size)"
+msgid "%1 (%2)"
+msgstr "%1 (порт %2)"
+
+#: kio/global.cpp:140
+#, fuzzy, kde-format
+msgid "1 Item"
+msgid_plural "%1 Items"
+msgstr[0] "%1 файлҳо"
+msgstr[1] "%1 файлҳо"
+
+#: kio/global.cpp:141
+#, fuzzy, kde-format
+msgctxt "items: folders, files (size)"
+msgid "%1: %2"
+msgstr "%1 Б"
+
+#: kio/global.cpp:172
 #, kde-format
 msgid "Could not read %1."
 msgstr "%1 -ро хонда натавонист."
 
-#: kio/global.cpp:160
+#: kio/global.cpp:175
 #, kde-format
 msgid "Could not write to %1."
 msgstr "Ба %1 навишта натавонист."
 
-#: kio/global.cpp:163
+#: kio/global.cpp:178
 #, kde-format
 msgid "Could not start process %1."
 msgstr "Амалиёти %1 сар карда натавонист."
 
-#: kio/global.cpp:166
+#: kio/global.cpp:181
 #, kde-format
 msgid ""
 "Internal Error\n"
@@ -639,61 +643,61 @@ msgstr ""
 "бифиристед\n"
 "%1"
 
-#: kio/global.cpp:169
+#: kio/global.cpp:184
 #, kde-format
 msgid "Malformed URL %1."
 msgstr "%1 URL-и нодуруст."
 
-#: kio/global.cpp:172
+#: kio/global.cpp:187
 #, kde-format
 msgid "The protocol %1 is not supported."
 msgstr "Протоколи %1 дастгирӣ надорад."
 
-#: kio/global.cpp:175
+#: kio/global.cpp:190
 #, kde-format
 msgid "The protocol %1 is only a filter protocol."
 msgstr "Протоколи %1 - протоколи филтр мебошад."
 
-#: kio/global.cpp:182
+#: kio/global.cpp:197
 #, kde-format
 msgid "%1 is a folder, but a file was expected."
 msgstr "%1 Ин феҳристест, ки дар сурати интизори файл мерафт."
 
-#: kio/global.cpp:185
+#: kio/global.cpp:200
 #, kde-format
 msgid "%1 is a file, but a folder was expected."
 msgstr "%1 Ин файлест, ки дар сурати интизори феҳрист мерафт"
 
-#: kio/global.cpp:188
+#: kio/global.cpp:203
 #, kde-format
 msgid "The file or folder %1 does not exist."
 msgstr "Файл ё феҳристи %1 вуҷуд надорад."
 
-#: kio/global.cpp:191
+#: kio/global.cpp:206
 #, kde-format
 msgid "A file named %1 already exists."
 msgstr "Файл бо номи %1 аллакаи мавҷуд аст."
 
-#: kio/global.cpp:194
+#: kio/global.cpp:209
 #, kde-format
 msgid "A folder named %1 already exists."
 msgstr "Феҳрист бо номи %1 аллакай мавҷуд аст."
 
-#: kio/global.cpp:197
+#: kio/global.cpp:212
 msgid "No hostname specified."
 msgstr "Ягон узел муайян нашудааст"
 
-#: kio/global.cpp:197
+#: kio/global.cpp:212
 #, kde-format
 msgid "Unknown host %1"
 msgstr "Узели ношинос %1"
 
-#: kio/global.cpp:200
+#: kio/global.cpp:215
 #, kde-format
 msgid "Access denied to %1."
 msgstr "Даромадан ба %1 рад карда шуд"
 
-#: kio/global.cpp:203
+#: kio/global.cpp:218
 #, kde-format
 msgid ""
 "Access denied.\n"
@@ -702,47 +706,47 @@ msgstr ""
 "Даромадан рад карда шуд\n"
 "Ба %1 -ро навишта натавонист"
 
-#: kio/global.cpp:206
+#: kio/global.cpp:221
 #, kde-format
 msgid "Could not enter folder %1."
 msgstr "Дар феҳристи %1 даромада натавонист."
 
-#: kio/global.cpp:209
+#: kio/global.cpp:224
 #, kde-format
 msgid "The protocol %1 does not implement a folder service."
 msgstr "Протоколи %1 шомили ҳеҷгунаи хадамоти роҳнамо нест."
 
-#: kio/global.cpp:212
+#: kio/global.cpp:227
 #, kde-format
 msgid "Found a cyclic link in %1."
 msgstr "Пайвапнди давронӣ дар %1 пайдо шуд."
 
-#: kio/global.cpp:218
+#: kio/global.cpp:233
 #, kde-format
 msgid "Found a cyclic link while copying %1."
 msgstr "Пайванди давронӣ дар ҳоли нусха бардоштани %1 пайдо шуд."
 
-#: kio/global.cpp:221
+#: kio/global.cpp:236
 #, kde-format
 msgid "Could not create socket for accessing %1."
 msgstr "socket барои даромадани %1 сохта карда натавонист."
 
-#: kio/global.cpp:224
+#: kio/global.cpp:239
 #, kde-format
 msgid "Could not connect to host %1."
 msgstr "Ба узели %1-ро алоқа карда натавонист"
 
-#: kio/global.cpp:227
+#: kio/global.cpp:242
 #, kde-format
 msgid "Connection to host %1 is broken."
 msgstr "Алоқа ба узели %1 шикаст."
 
-#: kio/global.cpp:230
+#: kio/global.cpp:245
 #, kde-format
 msgid "The protocol %1 is not a filter protocol."
 msgstr "Протоколи %1 - протоколи филтр нест."
 
-#: kio/global.cpp:233
+#: kio/global.cpp:248
 #, kde-format
 msgid ""
 "Could not mount device.\n"
@@ -753,7 +757,7 @@ msgstr ""
 "Хатои додашуда:\n"
 "%1"
 
-#: kio/global.cpp:236
+#: kio/global.cpp:251
 #, kde-format
 msgid ""
 "Could not unmount device.\n"
@@ -764,83 +768,83 @@ msgstr ""
 "Хатои гузориш шуда:\n"
 "%1"
 
-#: kio/global.cpp:239
+#: kio/global.cpp:254
 #, kde-format
 msgid "Could not read file %1."
 msgstr "Файли %1 хонда натавонист."
 
-#: kio/global.cpp:242
+#: kio/global.cpp:257
 #, kde-format
 msgid "Could not write to file %1."
 msgstr "Ба файли %1 навишта натавонист."
 
-#: kio/global.cpp:245
+#: kio/global.cpp:260
 #, kde-format
 msgid "Could not bind %1."
 msgstr "Ҳамҷоякардани %1 имконпазир набуд."
 
-#: kio/global.cpp:248
+#: kio/global.cpp:263
 #, kde-format
 msgid "Could not listen %1."
 msgstr "Гӯш додан ба %1 имконпазир набуд."
 
-#: kio/global.cpp:251
+#: kio/global.cpp:266
 #, kde-format
 msgid "Could not accept %1."
 msgstr "Кабул карда натавонист %1."
 
-#: kio/global.cpp:257
+#: kio/global.cpp:272
 #, kde-format
 msgid "Could not access %1."
 msgstr "Ба %1 -ро даромада натавонист."
 
-#: kio/global.cpp:260
+#: kio/global.cpp:275
 #, kde-format
 msgid "Could not terminate listing %1."
 msgstr "Листгирии %1 анҷом дода натавонист."
 
-#: kio/global.cpp:263
+#: kio/global.cpp:278
 #, kde-format
 msgid "Could not make folder %1."
 msgstr "Феҳристи %1 сохта карда натавонист."
 
-#: kio/global.cpp:266
+#: kio/global.cpp:281
 #, kde-format
 msgid "Could not remove folder %1."
 msgstr "Феҳристи %1 нест карда натавонист."
 
-#: kio/global.cpp:269
+#: kio/global.cpp:284
 #, kde-format
 msgid "Could not resume file %1."
 msgstr "Файли %1 идома дода нашуд."
 
-#: kio/global.cpp:272
+#: kio/global.cpp:287
 #, kde-format
 msgid "Could not rename file %1."
 msgstr "Номи дигар барои файли %1 дода шуда натавонист"
 
-#: kio/global.cpp:275
+#: kio/global.cpp:290
 #, kde-format
 msgid "Could not change permissions for %1."
 msgstr "Дастрасӣ барои %1 дигаргун карда натавонист"
 
-#: kio/global.cpp:278
+#: kio/global.cpp:293
 #, fuzzy, kde-format
 #| msgid "Could not change permissions for %1."
 msgid "Could not change ownership for %1."
 msgstr "Дастрасӣ барои %1 дигаргун карда натавонист"
 
-#: kio/global.cpp:281
+#: kio/global.cpp:296
 #, kde-format
 msgid "Could not delete file %1."
 msgstr "Файли %1 нест карда натавонист"
 
-#: kio/global.cpp:284
+#: kio/global.cpp:299
 #, kde-format
 msgid "The process for the %1 protocol died unexpectedly."
 msgstr "Амалиёт барои протоколи %1 ба таври ғайри мунтазарӣ кушта шуд."
 
-#: kio/global.cpp:287
+#: kio/global.cpp:302
 #, kde-format
 msgid ""
 "Error. Out of memory.\n"
@@ -849,19 +853,19 @@ msgstr ""
 "Хато. Калон аз андозаи хотир.\n"
 "%1"
 
-#: kio/global.cpp:290
+#: kio/global.cpp:305
 #, kde-format
 msgid ""
 "Unknown proxy host\n"
 "%1"
 msgstr "Вакили ношинос хӯҷаин.%1"
 
-#: kio/global.cpp:293
+#: kio/global.cpp:308
 #, kde-format
 msgid "Authorization failed, %1 authentication not supported"
 msgstr "Иҷозатёбӣ шикаст хӯрд, %1 дурустӣ(асл) дасгири карда намешавад."
 
-#: kio/global.cpp:296
+#: kio/global.cpp:311
 #, kde-format
 msgid ""
 "User canceled action\n"
@@ -870,7 +874,7 @@ msgstr ""
 "Истифодабаранда амалро қатъ кард.\n"
 "%1"
 
-#: kio/global.cpp:299
+#: kio/global.cpp:314
 #, kde-format
 msgid ""
 "Internal error in server\n"
@@ -879,14 +883,14 @@ msgstr ""
 "Хатои дарунӣ дар сервер\n"
 "%1"
 
-#: kio/global.cpp:302
+#: kio/global.cpp:317
 #, kde-format
 msgid ""
 "Timeout on server\n"
 "%1"
 msgstr "Дар пардозишгар вақт тамом шуд.%1"
 
-#: kio/global.cpp:305
+#: kio/global.cpp:320
 #, kde-format
 msgid ""
 "Unknown error\n"
@@ -895,7 +899,7 @@ msgstr ""
 "Хатои ношинос\n"
 "%1"
 
-#: kio/global.cpp:308
+#: kio/global.cpp:323
 #, kde-format
 msgid ""
 "Unknown interrupt\n"
@@ -904,7 +908,7 @@ msgstr ""
 "Қатъи ношинос \n"
 "%1"
 
-#: kio/global.cpp:319
+#: kio/global.cpp:334
 #, kde-format
 msgid ""
 "Could not delete original file %1.\n"
@@ -913,7 +917,7 @@ msgstr ""
 "Файли аслии %1 нест карда натавонист.\n"
 "Марҳамат карда иҷозатномаҳоро тафтиш кунед."
 
-#: kio/global.cpp:322
+#: kio/global.cpp:337
 #, kde-format
 msgid ""
 "Could not delete partial file %1.\n"
@@ -922,7 +926,7 @@ msgstr ""
 "Файли қисмии %1 нест карда натавонист.\n"
 "Дастрасии шумо санҷет."
 
-#: kio/global.cpp:325
+#: kio/global.cpp:340
 #, kde-format
 msgid ""
 "Could not rename original file %1.\n"
@@ -931,7 +935,7 @@ msgstr ""
 "Номи файли аслии %1 номи дигар шуда натавонист..\n"
 "Лутфан иҷозатномаҳоро тафтиш кунед."
 
-#: kio/global.cpp:328
+#: kio/global.cpp:343
 #, kde-format
 msgid ""
 "Could not rename partial file %1.\n"
@@ -940,37 +944,37 @@ msgstr ""
 "Барои файли қисмии %1 номи дигар дода нашу Лутфан иҷозатномаҳоро тафтиш "
 "кунед."
 
-#: kio/global.cpp:331
+#: kio/global.cpp:346
 #, kde-format
 msgid ""
 "Could not create symlink %1.\n"
 "Please check permissions."
 msgstr "Пайванди%1 нашуд.Лутфан иҷозатномаҳоро тафтиш кунед."
 
-#: kio/global.cpp:337
+#: kio/global.cpp:352
 #, kde-format
 msgid ""
 "Could not write file %1.\n"
 "Disk full."
 msgstr "Файли  %1 навишта нашуд.Диск пур аст."
 
-#: kio/global.cpp:340
+#: kio/global.cpp:355
 #, kde-format
 msgid ""
 "The source and destination are the same file.\n"
 "%1"
 msgstr "Манбаъ ва ҷойгиршавӣ ҳамон як файл аст.%1"
 
-#: kio/global.cpp:346
+#: kio/global.cpp:361
 #, kde-format
 msgid "%1 is required by the server, but is not available."
 msgstr "Сервер %1-ро талаб мекунад, аммо дастрас нест."
 
-#: kio/global.cpp:349
+#: kio/global.cpp:364
 msgid "Access to restricted port in POST denied."
 msgstr "Дастрасӣ ба даргоҳи маҳдудшуда дар POST рад шуд."
 
-#: kio/global.cpp:352
+#: kio/global.cpp:367
 #, kde-format
 msgid ""
 "Unknown error code %1\n"
@@ -981,167 +985,167 @@ msgstr ""
 "%2\n"
 "Ахборот дар бораи ин хатогӣ ба адреси http://bugs.kde.org бифиристед."
 
-#: kio/global.cpp:362
+#: kio/global.cpp:377
 #, kde-format
 msgid "Opening connections is not supported with the protocol %1."
 msgstr "Кушодани алоқаҳо ҳамроҳи протоколи %1 дастгирӣ карда намешавад."
 
-#: kio/global.cpp:364
+#: kio/global.cpp:379
 #, kde-format
 msgid "Closing connections is not supported with the protocol %1."
 msgstr "Пӯшидани алоқаҳо ҳамроҳи протоколи %1 дастгирӣ надорад"
 
-#: kio/global.cpp:366
+#: kio/global.cpp:381
 #, kde-format
 msgid "Accessing files is not supported with the protocol %1."
 msgstr "Даромадани файлҳо ҳамроҳи протоколи %1 дастгирӣ надорад"
 
-#: kio/global.cpp:368
+#: kio/global.cpp:383
 #, kde-format
 msgid "Writing to %1 is not supported."
 msgstr "Навиштан ба %1 дастгирӣ надорад"
 
-#: kio/global.cpp:370
+#: kio/global.cpp:385
 #, kde-format
 msgid "There are no special actions available for protocol %1."
 msgstr "Амалиётҳои дастрасии маҳсус барои протоколи %1 вуҷуд надорад."
 
-#: kio/global.cpp:372
+#: kio/global.cpp:387
 #, kde-format
 msgid "Listing folders is not supported for protocol %1."
 msgstr "Феҳристҳои додашуда барои протоколи %1 дастгирӣ надорад"
 
-#: kio/global.cpp:374
+#: kio/global.cpp:389
 #, kde-format
 msgid "Retrieving data from %1 is not supported."
 msgstr "Бозёфти додаҳо аз %1 пуштибонӣ намешавад."
 
-#: kio/global.cpp:376
+#: kio/global.cpp:391
 #, kde-format
 msgid "Retrieving mime type information from %1 is not supported."
 msgstr "Бозёфти ахбороти намуди mime аз %1 пуштибонӣ намешавад."
 
-#: kio/global.cpp:378
+#: kio/global.cpp:393
 #, kde-format
 msgid "Renaming or moving files within %1 is not supported."
 msgstr "Таъғири ном ё ҷобаҷоии файлҳои дарунии %1 пуштибонӣ намешавад."
 
-#: kio/global.cpp:380
+#: kio/global.cpp:395
 #, kde-format
 msgid "Creating symlinks is not supported with protocol %1."
 msgstr "Эҷоди пайванди миҷози бо протокори %1 пуштибонӣ намешавад"
 
-#: kio/global.cpp:382
+#: kio/global.cpp:397
 #, kde-format
 msgid "Copying files within %1 is not supported."
 msgstr "Нусха бардоштани файлҳо дар %1 дастгирӣ .надорад"
 
-#: kio/global.cpp:384
+#: kio/global.cpp:399
 #, kde-format
 msgid "Deleting files from %1 is not supported."
 msgstr "Нест кардани файлҳо аз %1 дастгирӣ надорад."
 
-#: kio/global.cpp:386
+#: kio/global.cpp:401
 #, kde-format
 msgid "Creating folders is not supported with protocol %1."
 msgstr "Сохтани феҳристҳо ҳамроҳи протоколи %1 дастгирӣ надорад."
 
-#: kio/global.cpp:388
+#: kio/global.cpp:403
 #, kde-format
 msgid "Changing the attributes of files is not supported with protocol %1."
 msgstr "Таъғири мушахасотҳои файлҳо бо протоколи %1 пуштибонӣ намешавад."
 
-#: kio/global.cpp:390
+#: kio/global.cpp:405
 #, fuzzy, kde-format
 #| msgid "Changing the attributes of files is not supported with protocol %1."
 msgid "Changing the ownership of files is not supported with protocol %1."
 msgstr "Таъғири мушахасотҳои файлҳо бо протоколи %1 пуштибонӣ намешавад."
 
-#: kio/global.cpp:392
+#: kio/global.cpp:407
 #, kde-format
 msgid "Using sub-URLs with %1 is not supported."
 msgstr "Истифода аз зернишониҳо бо %1 пуштибонӣ намешавад."
 
-#: kio/global.cpp:394
+#: kio/global.cpp:409
 #, kde-format
 msgid "Multiple get is not supported with protocol %1."
 msgstr "Протоколи %1 аз дарёфти чандгона пуштибонӣ намекунад."
 
-#: kio/global.cpp:396
+#: kio/global.cpp:411
 #, fuzzy, kde-format
 msgid "Opening files is not supported with protocol %1."
 msgstr "Сохтани феҳристҳо ҳамроҳи протоколи %1 дастгирӣ надорад."
 
-#: kio/global.cpp:398
+#: kio/global.cpp:413
 #, kde-format
 msgid "Protocol %1 does not support action %2."
 msgstr "Протоколи %1 барои амалиёти %2 дастгири надорад."
 
-#: kio/global.cpp:418
+#: kio/global.cpp:433
 #, fuzzy
 #| msgid "(unknown)"
 msgctxt "@info url"
 msgid "(unknown)"
 msgstr "(ношинос)"
 
-#: kio/global.cpp:426
+#: kio/global.cpp:441
 #, kde-format
 msgctxt "@info %1 error name, %2 description"
 msgid "<qt><p><b>%1</b></p><p>%2</p></qt>"
 msgstr ""
 
-#: kio/global.cpp:430
+#: kio/global.cpp:445
 msgid "<b>Technical reason</b>: "
 msgstr "<b>Сабаби техникӣ</b>: "
 
-#: kio/global.cpp:432
+#: kio/global.cpp:447
 #, fuzzy
 #| msgid "</p><p><b>Details of the request</b>:"
 msgid "<b>Details of the request</b>:"
 msgstr "</p><p><b>Тафсилотҳои талаботи дархост</b>:"
 
-#: kio/global.cpp:433
+#: kio/global.cpp:448
 #, fuzzy, kde-format
 #| msgid "</p><ul><li>URL: %1</li>"
 msgid "<li>URL: %1</li>"
 msgstr "</p><ul><li>URL: %1</li>"
 
-#: kio/global.cpp:435
+#: kio/global.cpp:450
 #, kde-format
 msgid "<li>Protocol: %1</li>"
 msgstr "<li>Протокол: %1</li>"
 
-#: kio/global.cpp:437
+#: kio/global.cpp:452
 #, kde-format
 msgid "<li>Date and time: %1</li>"
 msgstr "<li>Таърих ва вақт: %1</li>"
 
-#: kio/global.cpp:438
+#: kio/global.cpp:453
 #, fuzzy, kde-format
 #| msgid "<li>Additional information: %1</li></ul>"
 msgid "<li>Additional information: %1</li>"
 msgstr "<li>Ахюороти иловагӣ: %1</li></ul>"
 
-#: kio/global.cpp:441
+#: kio/global.cpp:456
 #, fuzzy
 #| msgid "<p><b>Possible causes</b>:</p><ul><li>"
 msgid "<b>Possible causes</b>:"
 msgstr "<p><b>Сабабҳои мумкинӣ</b>:</p><ul><li>"
 
-#: kio/global.cpp:446
+#: kio/global.cpp:461
 #, fuzzy
 #| msgid "<p><b>Possible solutions</b>:</p><ul><li>"
 msgid "<b>Possible solutions</b>:"
 msgstr "<p><b>Роҳи халҳои мумкинӣ</b>:</p><ul><li>"
 
-#: kio/global.cpp:479
+#: kio/global.cpp:494
 #, fuzzy
 #| msgid "(unknown)"
 msgctxt "@info protocol"
 msgid "(unknown)"
 msgstr "(ношинос)"
 
-#: kio/global.cpp:489
+#: kio/global.cpp:504
 msgid ""
 "Contact your appropriate computer support system, whether the system "
 "administrator, or technical support group for further assistance."
@@ -1149,15 +1153,15 @@ msgstr ""
 "Барои кумаки бештар бо пуштибони системаи компютер марбутаи худ ё мудири "
 "сисмематон ё гурӯҳи пуштибони фанӣ тамос бигиред."
 
-#: kio/global.cpp:492
+#: kio/global.cpp:507
 msgid "Contact the administrator of the server for further assistance."
 msgstr "Барои роҳнамоии бештар бо мудири сервер мавриди назар тамос бигиред."
 
-#: kio/global.cpp:495
+#: kio/global.cpp:510
 msgid "Check your access permissions on this resource."
 msgstr "Иҷозатҳои дастрасии худро барои ин манбаъ баррасӣ кунед."
 
-#: kio/global.cpp:496
+#: kio/global.cpp:511
 msgid ""
 "Your access permissions may be inadequate to perform the requested operation "
 "on this resource."
@@ -1165,14 +1169,14 @@ msgstr ""
 "Шояд иҷозатномаҳоои дастраси шумо барои анҷоми амали дархостшуда рӯи манбаъ "
 "кофӣ набошад."
 
-#: kio/global.cpp:498
+#: kio/global.cpp:513
 msgid ""
 "The file may be in use (and thus locked) by another user or application."
 msgstr ""
 "Мумкин аст ин файл бо истифодаи барномаи дигар ё истифадакунанда блоконида "
 "мебошад."
 
-#: kio/global.cpp:500
+#: kio/global.cpp:515
 msgid ""
 "Check to make sure that no other application or user is using the file or "
 "has locked the file."
@@ -1180,16 +1184,16 @@ msgstr ""
 "Боварӣ¯ҳосил кунед,ки ягон корбурд ёистифодабарандаи дигар файлро истифода "
 "намебарад ё ин ки файл қулф карда шудааст."
 
-#: kio/global.cpp:502
+#: kio/global.cpp:517
 msgid "Although unlikely, a hardware error may have occurred."
 msgstr ""
 "Гарчи эҳтимоли он кам аст, вале мумкин аст як хатои сахтафзоре дода бошад."
 
-#: kio/global.cpp:504
+#: kio/global.cpp:519
 msgid "You may have encountered a bug in the program."
 msgstr "Мумкин аст бо як ишкол дар барнома рӯбарӯ шуда бошед."
 
-#: kio/global.cpp:505
+#: kio/global.cpp:520
 msgid ""
 "This is most likely to be caused by a bug in the program. Please consider "
 "submitting a full bug report as detailed below."
@@ -1197,7 +1201,7 @@ msgstr ""
 "Ба эҳтимоли зиёд боиси ин, як ишкол дар барнома бошад. Илтимос ирсоли як "
 "гузориши ишколи комилро дар назар бигиред."
 
-#: kio/global.cpp:507
+#: kio/global.cpp:522
 msgid ""
 "Update your software to the latest version. Your distribution should provide "
 "tools to update your software."
@@ -1205,7 +1209,7 @@ msgstr ""
 "Нармафзори худро ба навтарин нусха ба рӯз расонед. Пахши шумо бояд обзорҳои "
 "ба рӯзрасонии нармафзорро дар ихтиёри худ қарор диҳад."
 
-#: kio/global.cpp:509
+#: kio/global.cpp:524
 msgid ""
 "When all else fails, please consider helping the KDE team or the third party "
 "maintainer of this software by submitting a high quality bug report. If the "
@@ -1225,11 +1229,11 @@ msgstr ""
 "дар гузориши ишколи худ, ҳамроҳи бо ҳар иттилооти дигаре, ки фикр мекунед, "
 "мумкин аст муфид бошад, қарор диҳед."
 
-#: kio/global.cpp:517
+#: kio/global.cpp:532
 msgid "There may have been a problem with your network connection."
 msgstr "Мумкин аст тамоси шабақаатон дучор мушкиле шуда бошад."
 
-#: kio/global.cpp:520
+#: kio/global.cpp:535
 msgid ""
 "There may have been a problem with your network configuration. If you have "
 "been accessing the Internet with no problems recently, this is unlikely."
@@ -1237,7 +1241,7 @@ msgstr ""
 "Эҳтимолан мушкилоте дар танзимоти шабақаи шумо будааст. Агар охиро аз "
 "интернет бе мушкил истифода кардаед, ин номуҳтамал аст."
 
-#: kio/global.cpp:523
+#: kio/global.cpp:538
 msgid ""
 "There may have been a problem at some point along the network path between "
 "the server and this computer."
@@ -1245,40 +1249,40 @@ msgstr ""
 "Эҳтимолие дорад ҷои дар роҳчаи шабақа байни коргузор ва ин компютер, "
 "мушкилие вуҷуд доштааст."
 
-#: kio/global.cpp:525
+#: kio/global.cpp:540
 msgid "Try again, either now or at a later time."
 msgstr "Дубора талош кунед ё ҳоло ё дертар."
 
-#: kio/global.cpp:526
+#: kio/global.cpp:541
 msgid "A protocol error or incompatibility may have occurred."
 msgstr "Мумкин аст як хато ё носозгории қарордоде рах дода бошад."
 
-#: kio/global.cpp:527
+#: kio/global.cpp:542
 msgid "Ensure that the resource exists, and try again."
 msgstr "Мутмаъин шавед, ки ин манбаъ вуҷуд дорад, ва дубора сайъ кунед."
 
-#: kio/global.cpp:528
+#: kio/global.cpp:543
 msgid "The specified resource may not exist."
 msgstr "Мумкин аст манбаъ мушаххас шуда вуҷуд надошта бошад."
 
-#: kio/global.cpp:529
+#: kio/global.cpp:544
 msgid "You may have incorrectly typed the location."
 msgstr "Мумкин аст мавқеъиятро иштибоҳи намуд карда бошед."
 
-#: kio/global.cpp:530
+#: kio/global.cpp:545
 msgid "Double-check that you have entered the correct location and try again."
 msgstr ""
 "Мутмаъин шавед, ки мавқеъиятро дуруст ворид кардаед ва дубора сайъ кунед."
 
-#: kio/global.cpp:532
+#: kio/global.cpp:547
 msgid "Check your network connection status."
 msgstr "Вазъияти иртиботи шабақаатонро баррасӣ кунед."
 
-#: kio/global.cpp:536
+#: kio/global.cpp:551
 msgid "Cannot Open Resource For Reading"
 msgstr "Қодир ба кушодани манбаъ барои хондан набудам "
 
-#: kio/global.cpp:537
+#: kio/global.cpp:552
 #, kde-format
 msgid ""
 "This means that the contents of the requested file or folder <strong>%1</"
@@ -1287,16 +1291,16 @@ msgstr ""
 "Ин маънии онро дорад, ки файл ё феҳристи дархости <strong>%1</strong>буда "
 "натавонист дастёбӣ шавад, аз он ҷое ки дастрасшавии хондан, гирифта нашуд."
 
-#: kio/global.cpp:540
+#: kio/global.cpp:555
 msgid "You may not have permissions to read the file or open the folder."
 msgstr ""
 "Мумкин аст иҷозати хонандаи файл ва ё боз кардани шохаро надошта бошед."
 
-#: kio/global.cpp:546
+#: kio/global.cpp:561
 msgid "Cannot Open Resource For Writing"
 msgstr "Қодир ба кушодани манбаъ барои навиштан нестам"
 
-#: kio/global.cpp:547
+#: kio/global.cpp:562
 #, kde-format
 msgid ""
 "This means that the file, <strong>%1</strong>, could not be written to as "
@@ -1306,16 +1310,16 @@ msgstr ""
 "дархост навишта шавад, аз он ҷое ки дастрасӣ ба иҷозати навиштан, гирифта "
 "нашуд."
 
-#: kio/global.cpp:555
+#: kio/global.cpp:570
 #, kde-format
 msgid "Cannot Initiate the %1 Protocol"
 msgstr "Қодир ба роҳандозии қарордоди %1 набудам"
 
-#: kio/global.cpp:556
+#: kio/global.cpp:571
 msgid "Unable to Launch Process"
 msgstr "Роҳандозии пардозиш имконпазир набуд"
 
-#: kio/global.cpp:557
+#: kio/global.cpp:572
 #, kde-format
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
@@ -1326,7 +1330,7 @@ msgstr ""
 "фароҳам меоварад, натавонист роҳандозӣ шавад. Ин маъмулан бо хосиятҳои "
 "техникӣ ба амал меояд."
 
-#: kio/global.cpp:560
+#: kio/global.cpp:575
 msgid ""
 "The program which provides compatibility with this protocol may not have "
 "been updated with your last update of KDE. This can cause the program to be "
@@ -1336,11 +1340,11 @@ msgstr ""
 "рӯзсозии KDE-и шумо ба рӯз нашуд. Ин мумкин аст боис шавад, ки барномаҳо бо "
 "нусхаи феълии носозгор гарданд ва дар натиҷа оғоз нашаванд."
 
-#: kio/global.cpp:568
+#: kio/global.cpp:583
 msgid "Internal Error"
 msgstr "Хатои дохилӣ"
 
-#: kio/global.cpp:569
+#: kio/global.cpp:584
 #, kde-format
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
@@ -1349,11 +1353,11 @@ msgstr ""
 "Барномаи рӯи компютери шумо, ки дастрасӣ ба қарордоди <strong>%1</strong>-ро "
 "фароҳам меоварад, гузориши хатои дохилӣ додааст."
 
-#: kio/global.cpp:577
+#: kio/global.cpp:592
 msgid "Improperly Formatted URL"
 msgstr "URL бо андозаи иштибоҳ"
 
-#: kio/global.cpp:578
+#: kio/global.cpp:593
 msgid ""
 "The <strong>U</strong>niform <strong>R</strong>esource <strong>L</"
 "strong>ocator (URL) that you entered was not properly formatted. The format "
@@ -1366,12 +1370,12 @@ msgstr ""
 "<blockquote><strong>protocol://user:password@www.example.org:port/directory/"
 "filename.extension?query=value</strong></blockquote>"
 
-#: kio/global.cpp:587
+#: kio/global.cpp:602
 #, kde-format
 msgid "Unsupported Protocol %1"
 msgstr "Протоколи %1 дастгирӣ надорад"
 
-#: kio/global.cpp:588
+#: kio/global.cpp:603
 #, kde-format
 msgid ""
 "The protocol <strong>%1</strong> is not supported by the KDE programs "
@@ -1380,11 +1384,11 @@ msgstr ""
 "Қарордоди <strong>%1</strong> тавассути барномаҳои KDE-и феъли насб шуда,рӯи "
 "ин компютер пуштибонӣ намешавад."
 
-#: kio/global.cpp:591
+#: kio/global.cpp:606
 msgid "The requested protocol may not be supported."
 msgstr "Мумкин аст қарордоди дархостӣ пуштибонӣ нашавад."
 
-#: kio/global.cpp:592
+#: kio/global.cpp:607
 #, kde-format
 msgid ""
 "The versions of the %1 protocol supported by this computer and the server "
@@ -1393,7 +1397,7 @@ msgstr ""
 "Нусхаҳои қарордоди %1 пуштибонӣ шуда, рӯи ин компютер ва коргузор мумкин аст "
 "носозгорӣ бошанд."
 
-#: kio/global.cpp:594
+#: kio/global.cpp:609
 msgid ""
 "You may perform a search on the Internet for a KDE program (called a "
 "kioslave or ioslave) which supports this protocol. Places to search include "
@@ -1405,15 +1409,15 @@ msgstr ""
 "ҷустуҷӯиро аз <a href=\"http://apps.kde.com/\">http://apps.kde.com/</a> ва "
 "<a href=\"http://freshmeat.net/\">http://freshmeat.net/</a> ёфта метавонед."
 
-#: kio/global.cpp:603
+#: kio/global.cpp:618
 msgid "URL Does Not Refer to a Resource."
 msgstr "URL ба ягон манбаъ ишора намекунад."
 
-#: kio/global.cpp:604
+#: kio/global.cpp:619
 msgid "Protocol is a Filter Protocol"
 msgstr "Ин протокол - протоколи филтр мебошад"
 
-#: kio/global.cpp:605
+#: kio/global.cpp:620
 msgid ""
 "The <strong>U</strong>niform <strong>R</strong>esource <strong>L</"
 "strong>ocator (URL) that you entered did not refer to a specific resource."
@@ -1421,7 +1425,7 @@ msgstr ""
 "Маконёби<strong>U</strong> воҳиди <strong>R</strong>манбаъи (URL), ки воҳид "
 "<strong>L</strong>кардаед ба ягон манбаъи хосе ишора намекунад."
 
-#: kio/global.cpp:608
+#: kio/global.cpp:623
 msgid ""
 "KDE is able to communicate through a protocol within a protocol; the "
 "protocol specified is only for use in such situations, however this is not "
@@ -1433,12 +1437,12 @@ msgstr ""
 "мавқеъот нест. Ин иттифоқи нодир аст ва эҳтимолан байёнгари хатои барнома "
 "мебошад."
 
-#: kio/global.cpp:616
+#: kio/global.cpp:631
 #, kde-format
 msgid "Unsupported Action: %1"
 msgstr "Амалиёти: %1 дастгирӣ надорад"
 
-#: kio/global.cpp:617
+#: kio/global.cpp:632
 #, kde-format
 msgid ""
 "The requested action is not supported by the KDE program which is "
@@ -1447,7 +1451,7 @@ msgstr ""
 "Амали дархост шуда тавассути барномаи KDE, ки қарордоди <strong>%1</strong>-"
 "ро пуштибонӣ мекунад, пиёдасозӣ нашудааст."
 
-#: kio/global.cpp:620
+#: kio/global.cpp:635
 msgid ""
 "This error is very much dependent on the KDE program. The additional "
 "information should give you more information than is available to the KDE "
@@ -1457,15 +1461,15 @@ msgstr ""
 "иттилооти бештар аз он чи барои сохтори вуруд/хурӯҷи KDE муҳайё аст, фароҳам "
 "кунед."
 
-#: kio/global.cpp:623
+#: kio/global.cpp:638
 msgid "Attempt to find another way to accomplish the same outcome."
 msgstr "Сайъ кунед роҳи дигаре, барои расидани ба ҳамон натиҷа пеш бигиред."
 
-#: kio/global.cpp:628
+#: kio/global.cpp:643
 msgid "File Expected"
 msgstr "Интизори файл мерафт"
 
-#: kio/global.cpp:629
+#: kio/global.cpp:644
 #, kde-format
 msgid ""
 "The request expected a file, however the folder <strong>%1</strong> was "
@@ -1474,15 +1478,15 @@ msgstr ""
 "Дархости дар интизори файлҳо бувад, дар ҳолики феҳристи <strong>%1</"
 "strong>пайдо шуд."
 
-#: kio/global.cpp:631
+#: kio/global.cpp:646
 msgid "This may be an error on the server side."
 msgstr "Ин хато мумкин аст дар тарҳи коргузор бошад."
 
-#: kio/global.cpp:636
+#: kio/global.cpp:651
 msgid "Folder Expected"
 msgstr "Интизори феҳрист мерафт"
 
-#: kio/global.cpp:637
+#: kio/global.cpp:652
 #, kde-format
 msgid ""
 "The request expected a folder, however the file <strong>%1</strong> was "
@@ -1491,16 +1495,16 @@ msgstr ""
 "Дархости дар интизори феҳрист бувад, дар ҳолики файли <strong>%1</"
 "strong>пайдо шуд."
 
-#: kio/global.cpp:644
+#: kio/global.cpp:659
 msgid "File or Folder Does Not Exist"
 msgstr "Файл ё ки феҳрсит вуҷуд надорад"
 
-#: kio/global.cpp:645
+#: kio/global.cpp:660
 #, kde-format
 msgid "The specified file or folder <strong>%1</strong> does not exist."
 msgstr "Файли ё феҳрист муайян шуда<strong>%1</strong> мавҷуд нест."
 
-#: kio/global.cpp:653
+#: kio/global.cpp:668
 msgid ""
 "The requested file could not be created because a file with the same name "
 "already exists."
@@ -1508,19 +1512,19 @@ msgstr ""
 "Файли дархостшуда эҷод нашуд, аз он ҷое ки файлҳои бо ин ном ҳам акнун вуҷуд "
 "дорад."
 
-#: kio/global.cpp:655
+#: kio/global.cpp:670
 msgid "Try moving the current file out of the way first, and then try again."
 msgstr "Файли феълиро аз сар роҳ бардоред ва дубора сайъ кунед."
 
-#: kio/global.cpp:657
+#: kio/global.cpp:672
 msgid "Delete the current file and try again."
 msgstr "Файли равонро нест кунед ва аз сари нав кӯшиш кунед."
 
-#: kio/global.cpp:658
+#: kio/global.cpp:673
 msgid "Choose an alternate filename for the new file."
 msgstr "Номи алтернативӣ барои файли нав интихоб кунед."
 
-#: kio/global.cpp:663
+#: kio/global.cpp:678
 msgid ""
 "The requested folder could not be created because a folder with the same "
 "name already exists."
@@ -1528,23 +1532,23 @@ msgstr ""
 "Феҳристи дархостшуда эҷод нашуд, аз он ҷой ки феҳристи бо ин ном ҳам акнун "
 "вуҷуд дорад."
 
-#: kio/global.cpp:665
+#: kio/global.cpp:680
 msgid "Try moving the current folder out of the way first, and then try again."
 msgstr "Феҳристи феълиро аз сар роҳ бардоред ва дубора сайъ кунед."
 
-#: kio/global.cpp:667
+#: kio/global.cpp:682
 msgid "Delete the current folder and try again."
 msgstr "Феҳристи равонро нест кунед ва кӯшиш кунед."
 
-#: kio/global.cpp:668
+#: kio/global.cpp:683
 msgid "Choose an alternate name for the new folder."
 msgstr "Номи алтернативӣ барои феҳристи нав интихоб кунед."
 
-#: kio/global.cpp:672
+#: kio/global.cpp:687
 msgid "Unknown Host"
 msgstr "Узели ношинос"
 
-#: kio/global.cpp:673
+#: kio/global.cpp:688
 #, kde-format
 msgid ""
 "An unknown host error indicates that the server with the requested name, "
@@ -1553,7 +1557,7 @@ msgstr ""
 "Хатои ношинохта баёнгари он аст ки коргузори бо номи дархостшудаи <strong>%"
 "1</strong>,дар интернет имконёбӣ нашуд."
 
-#: kio/global.cpp:676
+#: kio/global.cpp:691
 #, kde-format
 msgid ""
 "The name that you typed, %1, may not exist: it may be incorrectly typed."
@@ -1561,27 +1565,27 @@ msgstr ""
 "Номе ки шумо навистаед %1, мумкин аст вуҷуд надошта бошад: мумкин аст ин "
 "нодуруст навишта шуда буд."
 
-#: kio/global.cpp:683
+#: kio/global.cpp:698
 msgid "Access Denied"
 msgstr "Даромадан рад карда шуд"
 
-#: kio/global.cpp:684
+#: kio/global.cpp:699
 #, kde-format
 msgid "Access was denied to the specified resource, <strong>%1</strong>."
 msgstr "Даромадан ба манбаъи муайяншудаи <strong>%1</strong> рад карда шуд."
 
-#: kio/global.cpp:686 kio/global.cpp:902
+#: kio/global.cpp:701 kio/global.cpp:917
 msgid "You may have supplied incorrect authentication details or none at all."
 msgstr ""
 "Мумкин аст ҷузъиёти шиносоиро нодуруст карда бошед ёки асло надода бошед."
 
-#: kio/global.cpp:688 kio/global.cpp:904
+#: kio/global.cpp:703 kio/global.cpp:919
 msgid "Your account may not have permission to access the specified resource."
 msgstr ""
 "Мумкин аст ҳисоби шумо иҷозати дастрасӣ ба манбаъи мушаххасшуда, надошта "
 "бошед."
 
-#: kio/global.cpp:690 kio/global.cpp:906 kio/global.cpp:918
+#: kio/global.cpp:705 kio/global.cpp:921 kio/global.cpp:933
 msgid ""
 "Retry the request and ensure your authentication details are entered "
 "correctly."
@@ -1589,11 +1593,11 @@ msgstr ""
 "Дархости худро такрор кунед ва мутмаъин шавед, ки ҷузъиёти шиносоиро дуруст "
 "ворид кардаед."
 
-#: kio/global.cpp:696
+#: kio/global.cpp:711
 msgid "Write Access Denied"
 msgstr "Дастрасии навиштан рад карда шуд"
 
-#: kio/global.cpp:697
+#: kio/global.cpp:712
 #, kde-format
 msgid ""
 "This means that an attempt to write to the file <strong>%1</strong> was "
@@ -1602,11 +1606,11 @@ msgstr ""
 "Ин маънои онро дорад ки иҷозати навиштан дар файли <strong>%1</strong> дода "
 "нашуд."
 
-#: kio/global.cpp:704
+#: kio/global.cpp:719
 msgid "Unable to Enter Folder"
 msgstr "Дар ин феҳрист даромада натавонист"
 
-#: kio/global.cpp:705
+#: kio/global.cpp:720
 #, kde-format
 msgid ""
 "This means that an attempt to enter (in other words, to open) the requested "
@@ -1615,16 +1619,16 @@ msgstr ""
 "Ин маънои онро дорад, ки иҷозати вуруди ба феҳристи <strong>%1</strong> дода "
 "нашуд."
 
-#: kio/global.cpp:713
+#: kio/global.cpp:728
 msgid "Folder Listing Unavailable"
 msgstr "Рӯйхати феҳрист дастрас намебошад"
 
-#: kio/global.cpp:714
+#: kio/global.cpp:729
 #, kde-format
 msgid "Protocol %1 is not a Filesystem"
 msgstr "Пртоколи %1 - системаи файл нест"
 
-#: kio/global.cpp:715
+#: kio/global.cpp:730
 msgid ""
 "This means that a request was made which requires determining the contents "
 "of the folder, and the KDE program supporting this protocol is unable to do "
@@ -1633,11 +1637,11 @@ msgstr ""
 "Ин маънии онро дорад, ки дархости мушаххаскунандаи дорои феҳрист эҷод шуд, "
 "ки барномаи KDE пуштибони ин қарордод, қодир ба анҷом намебошад."
 
-#: kio/global.cpp:723
+#: kio/global.cpp:738
 msgid "Cyclic Link Detected"
 msgstr "Пайванди давронӣ пайдо шуд"
 
-#: kio/global.cpp:724
+#: kio/global.cpp:739
 msgid ""
 "UNIX environments are commonly able to link a file or folder to a separate "
 "name and/or location. KDE detected a link or series of links that results in "
@@ -1648,7 +1652,7 @@ msgstr ""
 "кунанд. KDE пайванд ё пайвандҳоро ки ба ҳалқаи номуайян мешударо шиносоӣ "
 "мекунад - мисоли файл ба худаш пайванд шуда буд."
 
-#: kio/global.cpp:728 kio/global.cpp:750
+#: kio/global.cpp:743 kio/global.cpp:765
 msgid ""
 "Delete one part of the loop in order that it does not cause an infinite "
 "loop, and try again."
@@ -1656,23 +1660,23 @@ msgstr ""
 "Як қисмати ҳалқаро бо тартиб, ки ба ҳалқаи номуайян намеорад, нобуд созед ва "
 "боз як бори дигар талош кунед. "
 
-#: kio/global.cpp:737
+#: kio/global.cpp:752
 msgid "Request Aborted By User"
 msgstr "Корбари дархостро хотима дод"
 
-#: kio/global.cpp:738 kio/global.cpp:1039
+#: kio/global.cpp:753 kio/global.cpp:1054
 msgid "The request was not completed because it was aborted."
 msgstr "Ба улти хотимаи ғайри оддӣ, дархост такмил нашуд."
 
-#: kio/global.cpp:740 kio/global.cpp:934 kio/global.cpp:1041
+#: kio/global.cpp:755 kio/global.cpp:949 kio/global.cpp:1056
 msgid "Retry the request."
 msgstr "Таҷдиди дархост кунед."
 
-#: kio/global.cpp:744
+#: kio/global.cpp:759
 msgid "Cyclic Link Detected During Copy"
 msgstr "Дар ҳангоми нусха гирӣ, пайванди давронӣ шиносоӣ шуд"
 
-#: kio/global.cpp:745
+#: kio/global.cpp:760
 msgid ""
 "UNIX environments are commonly able to link a file or folder to a separate "
 "name and/or location. During the requested copy operation, KDE detected a "
@@ -1684,15 +1688,15 @@ msgstr ""
 "манҷар ба ҳалқаи номутаносиб мешаванд, шиносоӣ мекунад - мисол файл ба худаш "
 "пайванд шуда буд."
 
-#: kio/global.cpp:755
+#: kio/global.cpp:770
 msgid "Could Not Create Network Connection"
 msgstr "Алоқаи шабақаро сохта натавонист"
 
-#: kio/global.cpp:756
+#: kio/global.cpp:771
 msgid "Could Not Create Socket"
 msgstr "Socket-ро сохта натавонист"
 
-#: kio/global.cpp:757
+#: kio/global.cpp:772
 msgid ""
 "This is a fairly technical error in which a required device for network "
 "communications (a socket) could not be created."
@@ -1700,7 +1704,7 @@ msgstr ""
 "Ин хатои техникӣ мебошад, ки дар натиҷа дастгоҳи лозимӣ ёки пайвастагии "
 "шабақа (socket) эҷод нашуд."
 
-#: kio/global.cpp:759 kio/global.cpp:872 kio/global.cpp:883 kio/global.cpp:892
+#: kio/global.cpp:774 kio/global.cpp:887 kio/global.cpp:898 kio/global.cpp:907
 msgid ""
 "The network connection may be incorrectly configured, or the network "
 "interface may not be enabled."
@@ -1708,11 +1712,11 @@ msgstr ""
 "Мумкин аст иртиботи шабақае ба нодурустӣ танзим шудааст, ё воситаи шабақа "
 "фаъол нашудааст."
 
-#: kio/global.cpp:765
+#: kio/global.cpp:780
 msgid "Connection to Server Refused"
 msgstr "Алоқа ба сервер рад карда шуд"
 
-#: kio/global.cpp:766
+#: kio/global.cpp:781
 #, kde-format
 msgid ""
 "The server <strong>%1</strong> refused to allow this computer to make a "
@@ -1721,7 +1725,7 @@ msgstr ""
 "Сервери <strong>%1</strong> иҷозати пайваст шуданро бо ин компютер барҳам "
 "дод."
 
-#: kio/global.cpp:768
+#: kio/global.cpp:783
 msgid ""
 "The server, while currently connected to the Internet, may not be configured "
 "to allow requests."
@@ -1729,7 +1733,7 @@ msgstr ""
 "Сервер, бо вуҷуди онки ҳам акнун ба интернет васл аст, шояд барои иҷозат "
 "додани ба дархостҳо, танзим нашудааст."
 
-#: kio/global.cpp:770
+#: kio/global.cpp:785
 #, kde-format
 msgid ""
 "The server, while currently connected to the Internet, may not be running "
@@ -1738,7 +1742,7 @@ msgstr ""
 "Сервер, бо вуҷуди онки ҳам акнун ба интернет васл аст, шояд сервиси "
 "дархостшударо (%1) иҷро намекунад."
 
-#: kio/global.cpp:772
+#: kio/global.cpp:787
 msgid ""
 "A network firewall (a device which restricts Internet requests), either "
 "protecting your network or the network of the server, may have intervened, "
@@ -1748,11 +1752,11 @@ msgstr ""
 "ё аз шабақаи шумо ё аз шабақаи сервер муҳофизат мекунад, эҳтимолан ҷилваи ин "
 "дархостро гирифтааст."
 
-#: kio/global.cpp:779
+#: kio/global.cpp:794
 msgid "Connection to Server Closed Unexpectedly"
 msgstr "Тамос бо сервер ба таври ғайримунтазарӣ баста шуд"
 
-#: kio/global.cpp:780
+#: kio/global.cpp:795
 #, kde-format
 msgid ""
 "Although a connection was established to <strong>%1</strong>, the connection "
@@ -1761,7 +1765,7 @@ msgstr ""
 "Бовуҷуди онки итсоли ба <strong>%1</strong> барқарор шуд, иртибот дар нуқтаи "
 "ғайримунтазарӣ қатъ шуд."
 
-#: kio/global.cpp:783
+#: kio/global.cpp:798
 msgid ""
 "A protocol error may have occurred, causing the server to close the "
 "connection as a response to the error."
@@ -1769,16 +1773,16 @@ msgstr ""
 "Эҳтимолан хатои қарордоде иттифоқ афтид, ки боиси гардиши сервери иртиботро "
 "ба улти хато қатъ кард."
 
-#: kio/global.cpp:789
+#: kio/global.cpp:804
 msgid "URL Resource Invalid"
 msgstr "Манбаъи нишонии интернети номӯътабар"
 
-#: kio/global.cpp:790
+#: kio/global.cpp:805
 #, kde-format
 msgid "Protocol %1 is not a Filter Protocol"
 msgstr "Протоколи %1 - протоколи филтр нест"
 
-#: kio/global.cpp:791
+#: kio/global.cpp:806
 #, kde-format
 msgid ""
 "The <strong>U</strong>niform <strong>R</strong>esource <strong>L</"
@@ -1789,7 +1793,7 @@ msgstr ""
 "(URL) ки шумо ворид гаштаед  ба механизми қавии дастрасии манбаъи хоса, "
 "<strong>%1%2</strong>."
 
-#: kio/global.cpp:796
+#: kio/global.cpp:811
 msgid ""
 "KDE is able to communicate through a protocol within a protocol. This "
 "request specified a protocol be used as such, however this protocol is not "
@@ -1801,15 +1805,15 @@ msgstr ""
 "чунин кореро надорад. Ин иттифоқи нодир аст, ва эҳтимолан баёнгари хатои "
 "барномае мебошад."
 
-#: kio/global.cpp:804
+#: kio/global.cpp:819
 msgid "Unable to Initialize Input/Output Device"
 msgstr "Қодир ба роҳандозии дастгоҳи вурудӣ/хурӯҷӣ нестам"
 
-#: kio/global.cpp:805
+#: kio/global.cpp:820
 msgid "Could Not Mount Device"
 msgstr "Сохтмонро васл карда натавонист"
 
-#: kio/global.cpp:806
+#: kio/global.cpp:821
 #, kde-format
 msgid ""
 "The requested device could not be initialized (\"mounted\"). The reported "
@@ -1818,7 +1822,7 @@ msgstr ""
 "Дастгоҳи дархостшудаи роҳандозӣ  (\"монтажонида\") нашуд. Ин хато гузориш "
 "шуд: <strong>%1</strong>"
 
-#: kio/global.cpp:809
+#: kio/global.cpp:824
 msgid ""
 "The device may not be ready, for example there may be no media in a "
 "removable media device (i.e. no CD-ROM in a CD drive), or in the case of a "
@@ -1828,7 +1832,7 @@ msgstr ""
 "ҷудошудане (мисли CD-ROM дар ҷойгоҳи CD) нест, ё дар мавриди дастгоҳи қобили "
 "кор, дастгоҳи эҳтимолан ба дурустӣ васл нашудааст."
 
-#: kio/global.cpp:813
+#: kio/global.cpp:828
 msgid ""
 "You may not have permissions to initialize (\"mount\") the device. On UNIX "
 "systems, often system administrator privileges are required to initialize a "
@@ -1838,7 +1842,7 @@ msgstr ""
 "надошта бошед. Дар системаҳои UNIX имтиёзҳои администратори система сар "
 "кардани корро бо асбоб талаб мекунад."
 
-#: kio/global.cpp:817
+#: kio/global.cpp:832
 msgid ""
 "Check that the device is ready; removable drives must contain media, and "
 "portable devices must be connected and powered on.; and try again."
@@ -1847,15 +1851,15 @@ msgstr ""
 "бошад, ва дастгоҳи қобили кор бояд мутассал ва равшан бошад; маҷдудан талош "
 "кунед."
 
-#: kio/global.cpp:823
+#: kio/global.cpp:838
 msgid "Unable to Uninitialize Input/Output Device"
 msgstr "Қодир набудам дастгоҳи вурудӣ/хурӯҷиро аз кор биандозам"
 
-#: kio/global.cpp:824
+#: kio/global.cpp:839
 msgid "Could Not Unmount Device"
 msgstr "Натавонистам дастгоҳро пайдо кунам"
 
-#: kio/global.cpp:825
+#: kio/global.cpp:840
 #, kde-format
 msgid ""
 "The requested device could not be uninitialized (\"unmounted\"). The "
@@ -1863,7 +1867,7 @@ msgid ""
 msgstr ""
 "Дастгоҳи дархостшуда пайдо нашуд. Ин хато гузориш шуд: <strong>%1</strong>"
 
-#: kio/global.cpp:828
+#: kio/global.cpp:843
 msgid ""
 "The device may be busy, that is, still in use by another application or "
 "user. Even such things as having an open browser window on a location on "
@@ -1873,7 +1877,7 @@ msgstr ""
 "истифода мекунад. Ҳатто browser-и бозӣ ки ба ҷои бар рӯи дастгоҳ ишора "
 "мекунад, метавонад боиси машғул монанди дастгоҳ шавад."
 
-#: kio/global.cpp:832
+#: kio/global.cpp:847
 msgid ""
 "You may not have permissions to uninitialize (\"unmount\") the device. On "
 "UNIX systems, system administrator privileges are often required to "
@@ -1883,17 +1887,17 @@ msgstr ""
 "системаҳои UNIX умуман барои пиёдасозии дастгоҳҳо ниёз ба иҷозати мудири "
 "система мебошад."
 
-#: kio/global.cpp:836
+#: kio/global.cpp:851
 msgid "Check that no applications are accessing the device, and try again."
 msgstr ""
 "Баррасӣ кунед, ки ягон барномаи дар ҳоли дастрасӣ ба дастгоҳ набошад ва "
 "дубора сайъ кунед."
 
-#: kio/global.cpp:841
+#: kio/global.cpp:856
 msgid "Cannot Read From Resource"
 msgstr "Қодир ба хондан аз манбаъ нестам"
 
-#: kio/global.cpp:842
+#: kio/global.cpp:857
 #, kde-format
 msgid ""
 "This means that although the resource, <strong>%1</strong>, was able to be "
@@ -1902,15 +1906,15 @@ msgstr ""
 "Ин маънии онро дорад, ки бо вуҷуди онки манбаъи <strong>%1</strong> қодир ба "
 "кушода шудан буд, хатои ҳангоми хондани дохили манбаъ ҳодиса шуд."
 
-#: kio/global.cpp:845
+#: kio/global.cpp:860
 msgid "You may not have permissions to read from the resource."
 msgstr "Мумкин аст шумо иҷозати хондан аз манбаъро надошта бошед."
 
-#: kio/global.cpp:854
+#: kio/global.cpp:869
 msgid "Cannot Write to Resource"
 msgstr "Қодири навиштан ба манбаъ нестам"
 
-#: kio/global.cpp:855
+#: kio/global.cpp:870
 #, kde-format
 msgid ""
 "This means that although the resource, <strong>%1</strong>, was able to be "
@@ -1919,19 +1923,19 @@ msgstr ""
 "Ин маънии онро дорад, ки бо вуҷуди онки манбаъи <strong>%1</strong> қодири "
 "кушода шудан буд, хатоӣ ҳангоми навиштан бар рӯи манбаъ ҳодиса шуд."
 
-#: kio/global.cpp:858
+#: kio/global.cpp:873
 msgid "You may not have permissions to write to the resource."
 msgstr "Мумкин аст шумо иҷозати навиштан ба манбаъро надошта бошед."
 
-#: kio/global.cpp:867 kio/global.cpp:878
+#: kio/global.cpp:882 kio/global.cpp:893
 msgid "Could Not Listen for Network Connections"
 msgstr "Натавонистам ба тамосҳои шабақае гӯш кунам"
 
-#: kio/global.cpp:868
+#: kio/global.cpp:883
 msgid "Could Not Bind"
 msgstr "Натавонистам Bind-ро иҷро кунам"
 
-#: kio/global.cpp:869 kio/global.cpp:880
+#: kio/global.cpp:884 kio/global.cpp:895
 msgid ""
 "This is a fairly technical error in which a required device for network "
 "communications (a socket) could not be established to listen for incoming "
@@ -1941,15 +1945,15 @@ msgstr ""
 "барои иртиботи шабақа (як socket) барои гӯш додан ба иртиботҳои шабақа "
 "вуруде набуд."
 
-#: kio/global.cpp:879
+#: kio/global.cpp:894
 msgid "Could Not Listen"
 msgstr "Натавонистам гӯш кунам"
 
-#: kio/global.cpp:889
+#: kio/global.cpp:904
 msgid "Could Not Accept Network Connection"
 msgstr "Қодир ба қабул кардани тамоси шабақа нестам"
 
-#: kio/global.cpp:890
+#: kio/global.cpp:905
 msgid ""
 "This is a fairly technical error in which an error occurred while attempting "
 "to accept an incoming network connection."
@@ -1957,30 +1961,30 @@ msgstr ""
 "Ин хатои нисбатан техникӣ аст, ки дар ҳангоми талош барои қабули иртиботи "
 "шабақае вуруд ҳодиса шуд."
 
-#: kio/global.cpp:894
+#: kio/global.cpp:909
 msgid "You may not have permissions to accept the connection."
 msgstr "Мумкин аст шумо иҷозати пазируфтани тамосро надошта бошед."
 
-#: kio/global.cpp:899
+#: kio/global.cpp:914
 #, kde-format
 msgid "Could Not Login: %1"
 msgstr "вуруд кардан натавонист: %1"
 
-#: kio/global.cpp:900
+#: kio/global.cpp:915
 msgid ""
 "An attempt to login to perform the requested operation was unsuccessful."
 msgstr ""
 "Сайъ барои вуруд ба система ҷиҳати анҷоми амалиёти дархостӣ, номуваффақ буд."
 
-#: kio/global.cpp:911
+#: kio/global.cpp:926
 msgid "Could Not Determine Resource Status"
 msgstr "Натавонистам вазъияти манбаъро таъин кунам"
 
-#: kio/global.cpp:912
+#: kio/global.cpp:927
 msgid "Could Not Stat Resource"
 msgstr "Натавонистам аз манбаъи омор бигирем"
 
-#: kio/global.cpp:913
+#: kio/global.cpp:928
 #, kde-format
 msgid ""
 "An attempt to determine information about the status of the resource <strong>"
@@ -1989,59 +1993,59 @@ msgstr ""
 "Талоше дар ҷиҳати ташхиси иттилооте дар мавриди манбаъи <strong>%1</strong>, "
 "монанди ном, навъ, андоза ва ғайра мушаххасоти манбаъ муваффақ набуд."
 
-#: kio/global.cpp:916
+#: kio/global.cpp:931
 msgid "The specified resource may not have existed or may not be accessible."
 msgstr ""
 "Манбаъи мушаххасшуда мумкин аст мавҷуд набуда бошад ё дар дастрасӣ набошад."
 
-#: kio/global.cpp:924
+#: kio/global.cpp:939
 msgid "Could Not Cancel Listing"
 msgstr "Натавонистам рӯйхатгириро канда кунам"
 
-#: kio/global.cpp:925
+#: kio/global.cpp:940
 msgid "FIXME: Document this"
 msgstr "ДУРУСТАМ КУНЕД: Бароем мустанадот бинависед"
 
-#: kio/global.cpp:929
+#: kio/global.cpp:944
 msgid "Could Not Create Folder"
 msgstr "Феҳристро сохта карда натавонист"
 
-#: kio/global.cpp:930
+#: kio/global.cpp:945
 msgid "An attempt to create the requested folder failed."
 msgstr "Сайъ барои эҷоди шохаи дархости номуваффақ буд."
 
-#: kio/global.cpp:931
+#: kio/global.cpp:946
 msgid "The location where the folder was to be created may not exist."
 msgstr "Мумкин аст макони эҷоди шоха вуҷуд надошта бошад."
 
-#: kio/global.cpp:938
+#: kio/global.cpp:953
 msgid "Could Not Remove Folder"
 msgstr "Феҳристро нест карда натавонист"
 
-#: kio/global.cpp:939
+#: kio/global.cpp:954
 #, kde-format
 msgid "An attempt to remove the specified folder, <strong>%1</strong>, failed."
 msgstr ""
 "Сайъе барои ҳузфи шохаи мушаххас шудаи <strong>%1</strong>, номуваффақ буд."
 
-#: kio/global.cpp:941
+#: kio/global.cpp:956
 msgid "The specified folder may not exist."
 msgstr "Феҳристи муайяншуда мумкин аст мавҷуд нест."
 
-#: kio/global.cpp:942
+#: kio/global.cpp:957
 msgid "The specified folder may not be empty."
 msgstr "Феҳристи муайяншуда мумкин аст холӣ нест."
 
-#: kio/global.cpp:945
+#: kio/global.cpp:960
 msgid "Ensure that the folder exists and is empty, and try again."
 msgstr ""
 "Мутмаъин шавед, ки феҳрист мавҷуд ва холӣ мебошад, ва дубора сайъ кунед."
 
-#: kio/global.cpp:950
+#: kio/global.cpp:965
 msgid "Could Not Resume File Transfer"
 msgstr "Натавонистам интиқоли файлро идома бидиҳам"
 
-#: kio/global.cpp:951
+#: kio/global.cpp:966
 #, kde-format
 msgid ""
 "The specified request asked that the transfer of file <strong>%1</strong> be "
@@ -2050,28 +2054,28 @@ msgstr ""
 "Дар дархост нишон дода буд, ки интиқоли файли <strong>%1</strong> бояд аз "
 "ҷои муайян давом дода шавад. Ин имконнопазир буд."
 
-#: kio/global.cpp:954
+#: kio/global.cpp:969
 msgid "The protocol, or the server, may not support file resuming."
 msgstr "Мумкин аст протокол, ё сервер идомаи интиқолиро пуштибонӣ накунад."
 
-#: kio/global.cpp:956
+#: kio/global.cpp:971
 msgid "Retry the request without attempting to resume transfer."
 msgstr "Дархостро бе сайъ барои идомаи интиқолӣ такрор кунед."
 
-#: kio/global.cpp:961
+#: kio/global.cpp:976
 msgid "Could Not Rename Resource"
 msgstr "Натавонистам номи манбаъро таъғир диҳам"
 
-#: kio/global.cpp:962
+#: kio/global.cpp:977
 #, kde-format
 msgid "An attempt to rename the specified resource <strong>%1</strong> failed."
 msgstr "Сайъ барои таъғири номи манбаъи <strong>%1</strong> номуваффақ буд."
 
-#: kio/global.cpp:970
+#: kio/global.cpp:985
 msgid "Could Not Alter Permissions of Resource"
 msgstr "Натавонистам иҷозатҳои манбаъро таъғир диҳам"
 
-#: kio/global.cpp:971
+#: kio/global.cpp:986
 #, kde-format
 msgid ""
 "An attempt to alter the permissions on the specified resource <strong>%1</"
@@ -2079,13 +2083,13 @@ msgid ""
 msgstr ""
 "Сайъи барои таъғири иҷозатҳои манбаъи <strong>%1</strong> номуваффақ буд."
 
-#: kio/global.cpp:978
+#: kio/global.cpp:993
 #, fuzzy
 #| msgid "Could Not Alter Permissions of Resource"
 msgid "Could Not Change Ownership of Resource"
 msgstr "Натавонистам иҷозатҳои манбаъро таъғир диҳам"
 
-#: kio/global.cpp:979
+#: kio/global.cpp:994
 #, fuzzy, kde-format
 #| msgid ""
 #| "An attempt to alter the permissions on the specified resource <strong>%1</"
@@ -2096,20 +2100,20 @@ msgid ""
 msgstr ""
 "Сайъи барои таъғири иҷозатҳои манбаъи <strong>%1</strong> номуваффақ буд."
 
-#: kio/global.cpp:986
+#: kio/global.cpp:1001
 msgid "Could Not Delete Resource"
 msgstr "Манбаъи интихобшуда нест карда натавонист"
 
-#: kio/global.cpp:987
+#: kio/global.cpp:1002
 #, kde-format
 msgid "An attempt to delete the specified resource <strong>%1</strong> failed."
 msgstr "Сайъи барои ҳузфи манбаъи <strong>%1</strong> номуваффақ буд."
 
-#: kio/global.cpp:994
+#: kio/global.cpp:1009
 msgid "Unexpected Program Termination"
 msgstr "Поёни ғайримунтазарии барнома"
 
-#: kio/global.cpp:995
+#: kio/global.cpp:1010
 #, kde-format
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
@@ -2118,11 +2122,11 @@ msgstr ""
 "Барномае ки дар компютери шумо иҷозати дастрасӣ ба протоколи <strong>%1</"
 "strong>бударо медиҳад, ба таври ғайримунтазарӣ, поён ёфт."
 
-#: kio/global.cpp:1003
+#: kio/global.cpp:1018
 msgid "Out of Memory"
 msgstr "Калон аз хотир"
 
-#: kio/global.cpp:1004
+#: kio/global.cpp:1019
 #, kde-format
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
@@ -2132,11 +2136,11 @@ msgstr ""
 "strong> бударо медиҳад, натавонист ба хотира мавриди ниёзи ҷиҳати идома кори "
 "дастрасӣ пайдо кунад."
 
-#: kio/global.cpp:1012
+#: kio/global.cpp:1027
 msgid "Unknown Proxy Host"
 msgstr "Узели Proxy ношинос аст"
 
-#: kio/global.cpp:1013
+#: kio/global.cpp:1028
 #, kde-format
 msgid ""
 "While retrieving information about the specified proxy host, <strong>%1</"
@@ -2147,7 +2151,7 @@ msgstr ""
 "strong>, бо хатои мизбони ношинохта муоҷа шудам, хатои мизбони ношинохта "
 "маънии онро дорад, ки номи дархостшуда рӯи интернет маконёбӣ нашуд."
 
-#: kio/global.cpp:1017
+#: kio/global.cpp:1032
 msgid ""
 "There may have been a problem with your network configuration, specifically "
 "your proxy's hostname. If you have been accessing the Internet with no "
@@ -2157,16 +2161,16 @@ msgstr ""
 "мизбони proxy-и шумо. Агар охиро бе мушкилӣ аз интернет истифода кардаед, ин "
 "бисёр нодир аст."
 
-#: kio/global.cpp:1021
+#: kio/global.cpp:1036
 msgid "Double-check your proxy settings and try again."
 msgstr "Танзимоти proxy-ро баррасии комил кунед, ва дубора сайъ кунед."
 
-#: kio/global.cpp:1026
+#: kio/global.cpp:1041
 #, kde-format
 msgid "Authentication Failed: Method %1 Not Supported"
 msgstr "Шиносоӣ номуваффақ буд: равиши %1 пуштибонӣ намешавад"
 
-#: kio/global.cpp:1028
+#: kio/global.cpp:1043
 #, kde-format
 msgid ""
 "Although you may have supplied the correct authentication details, the "
@@ -2177,7 +2181,7 @@ msgstr ""
 "шиносоии муваффақият омез набуд барои онки равише, ки коргузорӣ истиода "
 "мекунадтавассути барномаи KDE пиёдакунандаи протоколи %1 пуштибонӣ намешавад."
 
-#: kio/global.cpp:1032
+#: kio/global.cpp:1047
 msgid ""
 "Please file a bug at <a href=\"http://bugs.kde.org/\">http://bugs.kde.org/</"
 "a> to inform the KDE team of the unsupported authentication method."
@@ -2186,15 +2190,15 @@ msgstr ""
 "хатоие ташкил диҳед ва гурӯҳи KDE-ро аз равиши шиносоии пуштибонӣ нашуда "
 "мутлақ созед."
 
-#: kio/global.cpp:1038
+#: kio/global.cpp:1053
 msgid "Request Aborted"
 msgstr "Дархост хотима дода шуд"
 
-#: kio/global.cpp:1045
+#: kio/global.cpp:1060
 msgid "Internal Error in Server"
 msgstr "Хатои дарунӣ дар сервер"
 
-#: kio/global.cpp:1046
+#: kio/global.cpp:1061
 #, fuzzy, kde-format
 msgid ""
 "The program on the server which provides access to the <strong>%1</strong> "
@@ -2203,7 +2207,7 @@ msgstr ""
 "Барномаи рӯи сервер ки дастрасӣ ба протоколи <strong>%1</strong> бударо "
 "муҳайё месозад, хатои дохилии %0-ро кардааст."
 
-#: kio/global.cpp:1049
+#: kio/global.cpp:1064
 msgid ""
 "This is most likely to be caused by a bug in the server program. Please "
 "consider submitting a full bug report as detailed below."
@@ -2212,11 +2216,11 @@ msgstr ""
 "аст. Илтимос фиристодани гузориши хатои комили он чинор, ки дар зери баён "
 "шудааст, таъти назар қарор диҳед."
 
-#: kio/global.cpp:1052
+#: kio/global.cpp:1067
 msgid "Contact the administrator of the server to advise them of the problem."
 msgstr "Илтимос бо мудири коргузори тамосгирифта ва мушкилиро иттилоъ диҳед."
 
-#: kio/global.cpp:1054
+#: kio/global.cpp:1069
 msgid ""
 "If you know who the authors of the server software are, submit the bug "
 "report directly to them."
@@ -2224,11 +2228,11 @@ msgstr ""
 "Агар бидонед, ки нависандагони барномаҳои компютерии сервер чӣ касоне "
 "ҳастанд, гузориши ишколро мустақиман ба онҳо ирсол кунед."
 
-#: kio/global.cpp:1059
+#: kio/global.cpp:1074
 msgid "Timeout Error"
 msgstr "Хатои итмоми вақт"
 
-#: kio/global.cpp:1060
+#: kio/global.cpp:1075
 #, kde-format
 msgid ""
 "Although contact was made with the server, a response was not received "
@@ -2245,15 +2249,15 @@ msgstr ""
 "ul>Илтимос таваҷҷӯъ дошта бошед, ки метавонеддар маркази контроли KDE дар "
 "қисмати шабақа -> тарҷеҳоти ин танзимотро тағйир диҳед."
 
-#: kio/global.cpp:1071
+#: kio/global.cpp:1086
 msgid "The server was too busy responding to other requests to respond."
 msgstr "Сервер ба улти посух додан ба дархостҳои дигар машғул мебошад."
 
-#: kio/global.cpp:1077
+#: kio/global.cpp:1092
 msgid "Unknown Error"
 msgstr "Хатои ношинос"
 
-#: kio/global.cpp:1078
+#: kio/global.cpp:1093
 #, kde-format
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
@@ -2262,11 +2266,11 @@ msgstr ""
 "Барномаи рӯи компютери шумо, ки дастрасӣ ба протоколи <strong>%1</strong>-"
 "ро  фароҳам меоварад, хатоӣ ба шарҳи зер кардааст: %2."
 
-#: kio/global.cpp:1086
+#: kio/global.cpp:1101
 msgid "Unknown Interruption"
 msgstr "Қатъи ношинос"
 
-#: kio/global.cpp:1087
+#: kio/global.cpp:1102
 #, kde-format
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
@@ -2275,11 +2279,11 @@ msgstr ""
 "Барнома дар компютери шумо, ки дастрасӣ ба протоколи <strong>%1</strong> "
 "медиҳад, ахборот дар бораи каниш бо коди номуайяни хаторо дод: %2."
 
-#: kio/global.cpp:1095
+#: kio/global.cpp:1110
 msgid "Could Not Delete Original File"
 msgstr "Файли аслӣ нест карда натавонист"
 
-#: kio/global.cpp:1096
+#: kio/global.cpp:1111
 #, kde-format
 msgid ""
 "The requested operation required the deleting of the original file, most "
@@ -2289,11 +2293,11 @@ msgstr ""
 "Амали дархостшуда ниёз ба ҳузфи файли аслӣ аст, эҳтимолан дар интиҳои амал "
 "ҷобаҷоӣ доштанаш мумкин. Файли аслии <strong>%1</strong> ҳузф нашуд."
 
-#: kio/global.cpp:1105
+#: kio/global.cpp:1120
 msgid "Could Not Delete Temporary File"
 msgstr "Натавонистам файли муваққатиро ҳузф кунам"
 
-#: kio/global.cpp:1106
+#: kio/global.cpp:1121
 #, kde-format
 msgid ""
 "The requested operation required the creation of a temporary file in which "
@@ -2304,11 +2308,11 @@ msgstr ""
 "ҳангоми бор шудани дар он қарор диҳад. Файли муваққатии <strong>%1</strong> "
 "ҳузф нашуд."
 
-#: kio/global.cpp:1115
+#: kio/global.cpp:1130
 msgid "Could Not Rename Original File"
 msgstr "Натавонистам номи файли аслиро таъғир бидиҳам"
 
-#: kio/global.cpp:1116
+#: kio/global.cpp:1131
 #, kde-format
 msgid ""
 "The requested operation required the renaming of the original file <strong>%"
@@ -2317,11 +2321,11 @@ msgstr ""
 "Амали дархостшуда ниёз ба таъғири номи файли аслии <strong>%1</strong> дошта "
 "бо ин вуҷуди номи ин файл ивваз нашуд."
 
-#: kio/global.cpp:1124
+#: kio/global.cpp:1139
 msgid "Could Not Rename Temporary File"
 msgstr "Натавонистам номи файли муваққатиро таъғир бидиҳам"
 
-#: kio/global.cpp:1125
+#: kio/global.cpp:1140
 #, kde-format
 msgid ""
 "The requested operation required the creation of a temporary file <strong>%"
@@ -2330,28 +2334,28 @@ msgstr ""
 "Амали дархостшуда ниёз ба эҷоди файли нави <strong>%1</strong>, дошта бо ин "
 "вуҷуди номи ин файл ташкил нашуд."
 
-#: kio/global.cpp:1133
+#: kio/global.cpp:1148
 msgid "Could Not Create Link"
 msgstr "Алоқаро сахта карда натавонист"
 
-#: kio/global.cpp:1134
+#: kio/global.cpp:1149
 msgid "Could Not Create Symbolic Link"
 msgstr "Натавонистам пайванди намудӣ эҷод кунам"
 
-#: kio/global.cpp:1135
+#: kio/global.cpp:1150
 #, kde-format
 msgid "The requested symbolic link %1 could not be created."
 msgstr "Натавонистам пайванди намуди дархости %1-ро эҷод кунам."
 
-#: kio/global.cpp:1142
+#: kio/global.cpp:1157
 msgid "No Content"
 msgstr "Бе окана"
 
-#: kio/global.cpp:1147
+#: kio/global.cpp:1162
 msgid "Disk Full"
 msgstr "Диск пур аст"
 
-#: kio/global.cpp:1148
+#: kio/global.cpp:1163
 #, kde-format
 msgid ""
 "The requested file <strong>%1</strong> could not be written to as there is "
@@ -2360,7 +2364,7 @@ msgstr ""
 "Бар рӯи файли дархостшудаи <strong>%1</strong> навишта нашуд, аз он ҷое ки "
 "фазои диски кофӣ вуҷуд надорад."
 
-#: kio/global.cpp:1150
+#: kio/global.cpp:1165
 msgid ""
 "Free up enough disk space by 1) deleting unwanted and temporary files; 2) "
 "archiving files to removable media storage such as CD-Recordable discs; or "
@@ -2370,11 +2374,11 @@ msgstr ""
 "ва муваққатӣ: 2) захираи файлҳо бар рӯи media, захираи ҷудо шудани "
 "ҳаммонанди CD-ҳои навиштанӣ; ёки 3) таҳияи фазои захираи бештар."
 
-#: kio/global.cpp:1157
+#: kio/global.cpp:1172
 msgid "Source and Destination Files Identical"
 msgstr "Файлҳои манбаъ ва мақсади яксонавӣ"
 
-#: kio/global.cpp:1158
+#: kio/global.cpp:1173
 msgid ""
 "The operation could not be completed because the source and destination "
 "files are the same file."
@@ -2382,11 +2386,11 @@ msgstr ""
 "Ин амал комили анҷом нашуд аз он ҷой, ки файлҳои манбаъ ва мақсади яке "
 "ҳастанд."
 
-#: kio/global.cpp:1160
+#: kio/global.cpp:1175
 msgid "Choose a different filename for the destination file."
 msgstr "Барои файли мақсад як номи дигар интихоб кунед."
 
-#: kio/global.cpp:1171
+#: kio/global.cpp:1186
 msgid "Undocumented Error"
 msgstr "Хатои бе мустанад"
 
@@ -6450,6 +6454,32 @@ msgid "Show Full Path"
 msgstr ""
 
 #, fuzzy
+#~ msgid "No Files"
+#~ msgstr "*|Ҳама файлҳо"
+
+#~ msgid "One File"
+#~ msgid_plural "%1 Files"
+#~ msgstr[0] "%1 файл"
+#~ msgstr[1] "%1 Файл"
+
+#, fuzzy
+#~ msgid "No Folders"
+#~ msgstr "Феҳристи нав"
+
+#~ msgid "One Folder"
+#~ msgid_plural "%1 Folders"
+#~ msgstr[0] "%1 феҳрист"
+#~ msgstr[1] "%1 Феҳрист"
+
+#~ msgid "(%1 Total)"
+#~ msgstr "(%1 Ҳамагӣ)"
+
+#, fuzzy
+#~ msgctxt "Items (Folders, Files), Size"
+#~ msgid "%1 (%2, %3), %4"
+#~ msgstr "%1 (порт %2)"
+
+#, fuzzy
 #~ msgctxt "@title job"
 #~ msgid "Stating"
 #~ msgstr "Тартиби хел-хел ҷудо кардан"
@@ -7164,11 +7194,6 @@ msgstr ""
 #~ msgid "Open &Destination"
 #~ msgstr "Кушодани &Ҷойгиршавӣ"
 
-#~ msgid "%1 folder"
-#~ msgid_plural "%1 folders"
-#~ msgstr[0] "%1 Феҳрист"
-#~ msgstr[1] "%1 Феҳристҳо"
-
 #~ msgid "%1 file"
 #~ msgid_plural "%1 files"
 #~ msgstr[0] "%1 файл"
@@ -7182,10 +7207,6 @@ msgstr ""
 #~ msgid_plural "%2 % of %1 files"
 #~ msgstr[0] "%2 / %1 файл"
 #~ msgstr[1] "%2 / %1 файлҳо"
-
-#, fuzzy
-#~ msgid "%1 %"
-#~ msgstr "%1 Б"
 
 #~ msgid " (Copying)"
 #~ msgstr " (Нусха бардоштан)"
