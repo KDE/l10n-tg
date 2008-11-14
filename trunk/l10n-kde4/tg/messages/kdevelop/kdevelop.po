@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-13 10:10+0100\n"
+"POT-Creation-Date: 2008-11-14 10:05+0100\n"
 "PO-Revision-Date: 2005-12-21 14:47+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: \n"
@@ -782,7 +782,7 @@ msgstr "Ило&ва кардан"
 #. i18n: ectx: property (text), widget (KPushButton)
 #. i18n: file: buildtools/managers/cmake/settings/cmakebuildsettings.ui:46
 #. i18n: ectx: property (text), widget (QPushButton, removeBuildDir)
-#: rc.cpp:277 rc.cpp:391 buildtools/managers/cmake/applychangeswidget.cpp:89
+#: rc.cpp:277 rc.cpp:391 buildtools/managers/cmake/applychangeswidget.cpp:117
 #, fuzzy
 msgid "Remove"
 msgstr "Дур &кардан"
@@ -4433,51 +4433,63 @@ msgstr "Не найден модуль поддержки языка %1."
 msgid "Could not create language plugin for %1."
 msgstr "Невозможно создать модуль поддержки языка %1."
 
-#: buildtools/managers/cmake/cmakemanager.cpp:81
+#: buildtools/managers/cmake/cmakemanager.cpp:82
 #, fuzzy
 #| msgid "QMake Manager"
 msgid "CMake Manager"
 msgstr "QMake Manager"
 
-#: buildtools/managers/cmake/cmakemanager.cpp:81
+#: buildtools/managers/cmake/cmakemanager.cpp:82
 msgid "Support for managing CMake projects"
 msgstr ""
 
-#: buildtools/managers/cmake/cmakemanager.cpp:899
+#: buildtools/managers/cmake/cmakemanager.cpp:909
 #, fuzzy
 msgid "Jump to target definition"
 msgstr "определение фрагмента"
 
-#: buildtools/managers/cmake/cmakemanager.cpp:975
-#: buildtools/managers/cmake/cmakemanager.cpp:984
+#: buildtools/managers/cmake/cmakemanager.cpp:973
+#, fuzzy, kde-format
+msgid "Create a folder called '%1'."
+msgstr "Сохтани файли нав"
+
+#: buildtools/managers/cmake/cmakemanager.cpp:985
+#: buildtools/managers/cmake/cmakemanager.cpp:994
+#: buildtools/managers/cmake/cmakemanager.cpp:1015
 msgid "KDevelop - CMake Support"
 msgstr ""
 
-#: buildtools/managers/cmake/cmakemanager.cpp:976
+#: buildtools/managers/cmake/cmakemanager.cpp:986
 #, fuzzy
 msgid "Could not create the directory's CMakeLists.txt file."
 msgstr "Невозможно создать файл."
 
-#: buildtools/managers/cmake/cmakemanager.cpp:985
+#: buildtools/managers/cmake/cmakemanager.cpp:995
+#: buildtools/managers/cmake/cmakemanager.cpp:1016
 #, fuzzy
 msgid "Could not save the change."
 msgstr "Невозможно создать файл."
 
-#: buildtools/managers/cmake/applychangeswidget.cpp:29
+#: buildtools/managers/cmake/cmakemanager.cpp:1005
+#, fuzzy, kde-format
+msgid "Remove a folder called '%1'."
+msgstr "Удалить файлы из '%1'"
+
+#: buildtools/managers/cmake/applychangeswidget.cpp:50
 #, fuzzy
 msgid "Text"
 msgstr "Текст"
 
-#: buildtools/managers/cmake/applychangeswidget.cpp:29
+#: buildtools/managers/cmake/applychangeswidget.cpp:50
 msgid "Action"
 msgstr "Амалиёт"
 
-#: buildtools/managers/cmake/applychangeswidget.cpp:79
+#: buildtools/managers/cmake/applychangeswidget.cpp:107
 #, fuzzy
 msgid "Change"
 msgstr "Список &изменений:"
 
-#: buildtools/managers/cmake/applychangeswidget.cpp:84
+#: buildtools/managers/cmake/applychangeswidget.cpp:112
 #, fuzzy
 msgid "Insert"
 msgstr "Вставить %1"
@@ -5086,31 +5098,36 @@ msgstr "Создать новый проект"
 msgid "The file %1 cannot be created."
 msgstr "Не удалось создать файл %1."
 
-#: plugins/appwizard/importproject.cpp:70
+#: plugins/appwizard/importproject.cpp:60
+msgid ""
+"The given name is used by an already opened project. Choose a different name"
+msgstr ""
+
+#: plugins/appwizard/importproject.cpp:80
 #, fuzzy
 msgid "Please choose an existing folder."
 msgstr "Выберите правильный каталог"
 
-#: plugins/appwizard/importproject.cpp:75
+#: plugins/appwizard/importproject.cpp:85
 #, fuzzy
 #| msgid "You have to choose a project name."
 msgid "Please choose a project name."
 msgstr "Шумо бояд номи лоиҳаро интихоб кунед."
 
-#: plugins/appwizard/importproject.cpp:84
+#: plugins/appwizard/importproject.cpp:94
 msgid ""
 "Cannot create project file.<p><b>Suggestion</b>: check permissions on the "
 "selected directory"
 msgstr ""
 
-#: plugins/appwizard/importproject.cpp:85
-#: plugins/appwizard/importproject.cpp:93
+#: plugins/appwizard/importproject.cpp:95
+#: plugins/appwizard/importproject.cpp:103
 #, fuzzy
 #| msgid "Project directory:"
 msgid "Project import error"
 msgstr "Феҳристи лоиҳа:"
 
-#: plugins/appwizard/importproject.cpp:93
+#: plugins/appwizard/importproject.cpp:103
 #, fuzzy
 msgid "Could not create temporary file to upload."
 msgstr "Не удалось загрузить файл '%1'."
@@ -7229,10 +7246,6 @@ msgstr "Точка наблюдения"
 #, fuzzy
 #~ msgid "New Folder"
 #~ msgstr "Файли нав"
-
-#, fuzzy
-#~ msgid "Create new folder in:\n"
-#~ msgstr "Сохтани файли нав"
 
 #, fuzzy
 #~ msgid "File Manager"
@@ -22039,10 +22052,6 @@ msgstr "Точка наблюдения"
 #, fuzzy
 #~ msgid "Add Existing Files to '%1'"
 #~ msgstr "Добавить существующие файлы в '%1'"
-
-#, fuzzy
-#~ msgid "Remove File From '%1'"
-#~ msgstr "Удалить файлы из '%1'"
 
 #, fuzzy
 #~ msgid "Remove Target From '%1'"
