@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kvoctrain\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-11 09:58+0100\n"
+"POT-Creation-Date: 2008-11-15 11:43+0100\n"
 "PO-Revision-Date: 2005-09-23 17:17+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -247,7 +247,7 @@ msgstr ""
 #: src/main.cpp:92
 #, fuzzy
 #| msgid "Starting special query..."
-msgid "Start Practice instead of editor"
+msgid "Start practice instead of editor"
 msgstr "Ба кор даровардани дархости махсус..."
 
 #: src/main.cpp:93
@@ -649,9 +649,7 @@ msgstr ""
 msgid "Automatic Translation"
 msgstr "&Тарҷума"
 
-#. i18n: file: src/settings/parley.kcfg:50
-#. i18n: ectx: label, entry (AutomaticTranslation), group (General)
-#: src/editor/editor.cpp:422 rc.cpp:1334
+#: src/editor/editor.cpp:422
 msgid "Enable for automatic translation of the lesson entries."
 msgstr ""
 
@@ -871,16 +869,19 @@ msgstr "&Замон:"
 msgid "Continue"
 msgstr "Нигоҳ дорад дар"
 
-#: src/practice/answervalidator.cpp:257
-msgid "<font color=\"#006633\">Correct!</font> "
+#: src/practice/answervalidator.cpp:257 src/practice/answervalidator.cpp:417
+#: src/practice/answervalidator.cpp:436
+msgid "Correct!"
 msgstr ""
 
 #: src/practice/answervalidator.cpp:264
-msgid "<font color=\"#8C1818\">Empty answers are never correct.</font> "
-msgstr ""
+#, fuzzy
+#| msgid "Your answer was wrong. %1% done."
+msgid "Empty answers are never correct."
+msgstr "Ҷавоби Шумо нодуруст аст. %1% ислоҳ кардед."
 
 #: src/practice/answervalidator.cpp:338
-msgid "<font color=\"#8C1818\">You're missing an article.</font> "
+msgid "There is an article missing."
 msgstr ""
 
 #: src/practice/answervalidator.cpp:378
@@ -899,68 +900,53 @@ msgstr ""
 msgid "%1 has a problem..."
 msgstr ""
 
-#: src/practice/answervalidator.cpp:417
-msgid "<font color=\"#000fff000\">Correct!</font>"
-msgstr ""
-
-#: src/practice/answervalidator.cpp:436
-msgid "<font color=\"#000fff000\">Correct!</font> "
-msgstr ""
-
 #: src/practice/answervalidator.cpp:446
-msgid "<font color=\"#8C1818\">Correct answer, capitalized wrong.</font> "
-msgstr ""
+#, fuzzy
+#| msgid "Your answer was wrong. %1% done."
+msgid "Correct answer, capitalized wrong."
+msgstr "Ҷавоби Шумо нодуруст аст. %1% ислоҳ кардед."
 
 #: src/practice/answervalidator.cpp:456
-msgid ""
-"<font color=\"#8C1818\">Correct, but you have an accent problem.</font> "
+msgid "Correct, but you have an accent problem."
 msgstr ""
 
 #: src/practice/answervalidator.cpp:477
-msgid "<font color=\"#8C1818\">Try improving your spelling.</font> "
+msgid "Try improving your spelling."
 msgstr ""
 
 #: src/practice/answervalidator.cpp:485
-msgid "<font color=\"#8C1818\">NOOOO! That was a false friend!</font> "
+msgid "No! That was a false friend!"
 msgstr ""
 
 #: src/practice/answervalidator.cpp:494
 msgid ""
-"<font color=\"#8C1818\">Do you have any idea what you are talking about? "
-"(Wrong word, you spelled it correct I guess.)</font> "
+"Do you have any idea what you are talking about? (Wrong word, you spelled it "
+"correct I guess.)"
 msgstr ""
 
 #: src/practice/answervalidator.cpp:504
-msgid "<font color=\"#8C1818\">Seems like you got the spelling wrong.</font> "
+msgid "Seems like you got the spelling wrong."
 msgstr ""
 
 #: src/practice/answervalidator.cpp:510
-msgid ""
-"<font color=\"#8C1818\">I don't know that word and it is not similar to the "
-"solution.</font> "
-msgstr ""
-
-#: src/practice/answervalidator.cpp:521
-msgid ""
-"<font color=\"#8C1818\">No spellchecker, but seems like a spelling error.</"
-"font> "
+msgid "I don't know that word and it is not similar to the solution."
 msgstr ""
 
 #: src/practice/answervalidator.cpp:528 src/practice/answervalidator.cpp:535
-msgid "<font color=\"#8C1818\">No dictionary and no clue.</font> "
+msgid "No dictionary and no clue."
 msgstr ""
 
-#: src/practice/answervalidator.cpp:590
-msgid "<font color=\"#188C18\">"
-msgstr ""
+#: src/practice/answervalidator.cpp:587
+#, fuzzy
+#| msgid "Count:"
+msgid "Correct:"
+msgstr "Ҳисоб:"
 
-#: src/practice/answervalidator.cpp:590 src/practice/answervalidator.cpp:597
-msgid "</font> "
-msgstr ""
-
-#: src/practice/answervalidator.cpp:597
-msgid "<font color=\"#8C1818\">"
-msgstr ""
+#: src/practice/answervalidator.cpp:595
+#, fuzzy
+#| msgid "&Wrong:"
+msgid "Wrong:"
+msgstr "&Хатогӣ:"
 
 #: src/practice/modespecifics.cpp:100 src/practice/modeindependent.cpp:272
 #, fuzzy
@@ -4296,6 +4282,12 @@ msgstr ""
 msgid "Time interval between two automatic backups"
 msgstr ""
 
+#. i18n: file: src/settings/parley.kcfg:50
+#. i18n: ectx: label, entry (AutomaticTranslation), group (General)
+#: rc.cpp:1334
+msgid "Enable automatic translation of the lesson entries."
+msgstr ""
+
 #. i18n: file: src/settings/parley.kcfg:57
 #. i18n: ectx: label, entry (FlashcardsFrontImage), group (PracticeOptions)
 #: rc.cpp:1337
@@ -5094,7 +5086,7 @@ msgstr "&Намоиши қарор"
 #. i18n: file: plasmoid/config.ui:87
 #. i18n: ectx: property (text), widget (QRadioButton, solutionOnHover)
 #: rc.cpp:1734
-msgid "Reveal solution when mouse cursor is over the plasmoid"
+msgid "Reveal solution when mouse cursor is over the widget"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:97
@@ -5265,7 +5257,7 @@ msgstr ""
 
 #: tips.cpp:63
 msgid ""
-"<p> Want to enter pronunciation symbols quickly? <em>Doubleclick</em> the "
+"<p>Want to enter pronunciation symbols quickly? <em>Doubleclick</em> the "
 "symbol you need to directly add it.</p>\n"
 msgstr ""
 
