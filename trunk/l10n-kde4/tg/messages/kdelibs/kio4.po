@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-30 09:46+0100\n"
+"POT-Creation-Date: 2008-12-01 10:26+0100\n"
 "PO-Revision-Date: 2005-09-17 13:14+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -2517,50 +2517,50 @@ msgstr "Баровардан"
 msgid "Unmount"
 msgstr "Ғайрифаъол"
 
-#: kio/kfileitem.cpp:958
+#: kio/kfileitem.cpp:959
 #, fuzzy, kde-format
 #| msgid "Symbolic Link"
 msgid "(Symbolic Link to %1)"
 msgstr "Ишораи истинод"
 
-#: kio/kfileitem.cpp:960
+#: kio/kfileitem.cpp:961
 #, fuzzy, kde-format
 #| msgid "Link to %1 (%2)"
 msgid "(%1, Link to %2)"
 msgstr "Алоқа ба %1 (%2)"
 
-#: kio/kfileitem.cpp:964
+#: kio/kfileitem.cpp:965
 #, fuzzy, kde-format
 #| msgid "Points to:"
 msgid " (Points to %1)"
 msgstr "Ишора шуда истодааст ба:"
 
-#: kio/kfileitem.cpp:991 ../kioslave/http/kcookiejar/kcookiewin.cpp:215
+#: kio/kfileitem.cpp:993 ../kioslave/http/kcookiejar/kcookiewin.cpp:215
 msgid "Name:"
 msgstr "Ном:"
 
-#: kio/kfileitem.cpp:992 kfile/kpropertiesdialog.cpp:953
+#: kio/kfileitem.cpp:994 kfile/kpropertiesdialog.cpp:953
 msgid "Type:"
 msgstr "Намуд:"
 
-#: kio/kfileitem.cpp:996
+#: kio/kfileitem.cpp:998
 #, kde-format
 msgid "Link to %1 (%2)"
 msgstr "Алоқа ба %1 (%2)"
 
-#: kio/kfileitem.cpp:1001 kfile/kpropertiesdialog.cpp:1007
+#: kio/kfileitem.cpp:1003 kfile/kpropertiesdialog.cpp:1007
 msgid "Size:"
 msgstr "Андоза:"
 
-#: kio/kfileitem.cpp:1005 kfile/kpropertiesdialog.cpp:1069
+#: kio/kfileitem.cpp:1007 kfile/kpropertiesdialog.cpp:1069
 msgid "Modified:"
 msgstr "Дигаргуншуда:"
 
-#: kio/kfileitem.cpp:1008
+#: kio/kfileitem.cpp:1010
 msgid "Owner:"
 msgstr "Соҳиб:"
 
-#: kio/kfileitem.cpp:1009
+#: kio/kfileitem.cpp:1011
 msgid "Permissions:"
 msgstr "Дастрасӣ:"
 
@@ -5140,23 +5140,12 @@ msgstr "Бо муваффақият авторизатсия шуд"
 msgid "Could not login to %1."
 msgstr "Натавонистам вуруд ба %1 шавам."
 
-#: ../kioslave/file/file.cpp:206
-#, fuzzy, kde-format
-msgid "Setting ACL for %1"
-msgstr "Фиристодани маълумот ба %1"
-
-#: ../kioslave/file/file.cpp:235
-#, fuzzy, kde-format
-#| msgid "Could not enter folder %1."
-msgid "Could not get user id for given user name %1"
-msgstr "Дар феҳристи %1 даромада натавонист."
-
-#: ../kioslave/file/file.cpp:248
+#: ../kioslave/file/file_unix.cpp:200
 #, kde-format
-msgid "Could not get group id for given group name %1"
+msgid "Cannot copy file from %1 to %2. (Errno: %3)"
 msgstr ""
 
-#: ../kioslave/file/file.cpp:791 ../kioslave/file/file.cpp:1026
+#: ../kioslave/file/file_unix.cpp:269 ../kioslave/file/file.cpp:726
 #, kde-format
 msgid ""
 "Could not change permissions for\n"
@@ -5165,35 +5154,46 @@ msgstr ""
 "Наметавонам ҳуқуқи дастрасиро барои\n"
 "%1, тағйир диҳам"
 
-#: ../kioslave/file/file.cpp:957
-#, kde-format
-msgid "Cannot copy file from %1 to %2. (Errno: %3)"
-msgstr ""
-
-#: ../kioslave/file/file.cpp:1374
+#: ../kioslave/file/file_unix.cpp:322
 #, fuzzy, kde-format
 msgid "No media in device for %1"
 msgstr "Маълуматҳои meta барои %1 нест"
 
-#: ../kioslave/file/file.cpp:1524
+#: ../kioslave/file/file_unix.cpp:535
+#, fuzzy, kde-format
+#| msgid "Could not enter folder %1."
+msgid "Could not get user id for given user name %1"
+msgstr "Дар феҳристи %1 даромада натавонист."
+
+#: ../kioslave/file/file_unix.cpp:548
+#, kde-format
+msgid "Could not get group id for given group name %1"
+msgstr ""
+
+#: ../kioslave/file/file.cpp:205
+#, fuzzy, kde-format
+msgid "Setting ACL for %1"
+msgstr "Фиристодани маълумот ба %1"
+
+#: ../kioslave/file/file.cpp:990
 msgid "No Media inserted or Media not recognized."
 msgstr ""
 
-#: ../kioslave/file/file.cpp:1534 ../kioslave/file/file.cpp:1735
+#: ../kioslave/file/file.cpp:1000 ../kioslave/file/file.cpp:1201
 msgid "\"vold\" is not running."
 msgstr ""
 
-#: ../kioslave/file/file.cpp:1569
+#: ../kioslave/file/file.cpp:1035
 #, fuzzy
 msgid "Could not find program \"mount\""
 msgstr "Барномаи '%1' -ро ёфта натавонист"
 
-#: ../kioslave/file/file.cpp:1748
+#: ../kioslave/file/file.cpp:1214
 #, fuzzy
 msgid "Could not find program \"umount\""
 msgstr "Барномаи '%1' -ро ёфта натавонист"
 
-#: ../kioslave/file/file.cpp:1836
+#: ../kioslave/file/file.cpp:1302
 #, kde-format
 msgid "Could not read %1"
 msgstr "Хатои хондани %1"
@@ -6101,7 +6101,7 @@ msgstr ""
 msgid "An error occurred while accessing '%1'"
 msgstr "Ба хатогии ногаҳонӣ(%1), ҳангоми кӯшиши %2 даст дода шуд."
 
-#: ../kfile/kurlnavigator.cpp:582
+#: ../kfile/kurlnavigator.cpp:585
 msgid "Custom Path"
 msgstr ""
 
