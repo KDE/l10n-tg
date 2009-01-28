@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krunner\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-23 10:13+0100\n"
+"POT-Creation-Date: 2009-01-28 09:13+0100\n"
 "PO-Revision-Date: 2009-01-13 13:50+0000\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -16,17 +16,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 0.2\n"
 
-#: interfaces/default/interface.cpp:76 interfaces/default/interface.cpp:77
+#: interfaces/default/interface.cpp:77 interfaces/default/interface.cpp:78
 #: interfaces/quicksand/qs_dialog.cpp:50 interfaces/quicksand/qs_dialog.cpp:51
 msgid "Settings"
 msgstr "Танзимот"
 
-#: interfaces/default/interface.cpp:96 interfaces/default/interface.cpp:97
-#: krunnerapp.cpp:202 krunnerapp.cpp:203
+#: interfaces/default/interface.cpp:97 interfaces/default/interface.cpp:98
+#: krunnerapp.cpp:204 krunnerapp.cpp:205
 msgid "Show System Activity"
 msgstr "Намоиши фаъолияти система"
 
-#: interfaces/default/interface.cpp:456
+#: interfaces/default/interface.cpp:458
 #, kde-format
 msgid "%1: %2"
 msgstr "%1: %2"
@@ -87,85 +87,91 @@ msgstr[1] ""
 "<qt><nobr>Шумо баъд аз %1 сония аз система хуруҷ карда мешавед</nobr></qt>"
 
 #: lock/main.cc:61
-msgid "KRunner Locker"
-msgstr "Қулфкунандаи KRunner"
+msgid "KDE Screen Locker"
+msgstr ""
 
-#: lock/main.cc:61
-msgid "Session Locker for KRunner"
+#: lock/main.cc:62
+#, fuzzy
+#| msgid "Session Locker for KRunner"
+msgid "Session Locker for KDE Workspace"
 msgstr "Сеанс барои KRunner қулф карда шуд"
 
-#: lock/main.cc:64
+#: lock/main.cc:65
 msgid "Force session locking"
 msgstr "Қулфкунии сеанс"
 
-#: lock/main.cc:65
+#: lock/main.cc:66
 msgid "Only start screen saver"
 msgstr "Танҳо пардаи экранро оғоз кунед"
 
-#: lock/main.cc:66
+#: lock/main.cc:67
 msgid "Only use the blank screen saver"
 msgstr "Танҳо пардаи экрани холиро истифода баред"
 
-#: lock/main.cc:67
+#: lock/main.cc:68
 msgid "start with plasma unlocked for configuring"
 msgstr "Барои танзимот plasma'и қулфкушодашуда оғоз кунед"
 
-#: lock/lockprocess.cc:796
+#: lock/lockprocess.cc:795
 msgid "Will not lock the session, as unlocking would be impossible:\n"
 msgstr "Сеансро қулф намекунад. Қулфкушоӣ имконнопазир аст:\n"
 
-#: lock/lockprocess.cc:800
+#: lock/lockprocess.cc:799
 msgid "Cannot start <i>kcheckpass</i>."
 msgstr "Оғоз карда намешавад <i>kcheckpass</i>."
 
-#: lock/lockprocess.cc:801
+#: lock/lockprocess.cc:800
 msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not setuid root."
 msgstr "<i>kcheckpass</i> оғоз карда намешавад. Мумкин аст, ки ин root аст."
 
-#: lock/lockprocess.cc:863
+#: lock/lockprocess.cc:862
 msgid "No appropriate greeter plugin configured."
 msgstr "Васлкунаки оғозӣ танзим нашудааст."
 
-#: lock/lockdlg.cc:98
+#: lock/lockdlg.cc:97
 msgid "<nobr><b>The session is locked</b></nobr><br />"
 msgstr "<nobr><b>Сеанс қулф карда шуд</b></nobr><br />"
 
-#: lock/lockdlg.cc:99
+#: lock/lockdlg.cc:98
 #, kde-format
 msgid "<nobr><b>The session was locked by %1</b></nobr><br />"
 msgstr "<nobr><b>Сеанс бо %1 қулф карда шуд</b></nobr><br />"
 
-#: lock/lockdlg.cc:112
+#: lock/lockdlg.cc:111
 msgid "Unl&ock"
 msgstr "Қу&лфкушоӣ"
 
-#: lock/lockdlg.cc:114
+#: lock/lockdlg.cc:113
 msgid "Sw&itch User..."
 msgstr "&Мубодилаи корбар..."
 
-#: lock/lockdlg.cc:182
+#: lock/lockdlg.cc:181
 msgid "<b>Unlocking failed</b>"
 msgstr "<b>Қулфкушоӣ қатъ карда шуд</b>"
 
-#: lock/lockdlg.cc:190
+#: lock/lockdlg.cc:189
 msgid "<b>Warning: Caps Lock on</b>"
 msgstr "<b>Хабарнома: Caps Lock фаъол аст</b>"
 
-#: lock/lockdlg.cc:422
-#, kde-format
+#: lock/lockdlg.cc:421
+#, fuzzy, kde-format
+#| msgid ""
+#| "Cannot unlock the session because the authentication system failed to "
+#| "work;\n"
+#| "you must kill krunner_lock (pid %1) manually."
 msgid ""
 "Cannot unlock the session because the authentication system failed to work;\n"
-"you must kill krunner_lock (pid %1) manually."
+"you must kill kscreenlocker (pid %1) manually."
 msgstr ""
 "Ба сабаби қатъкунии муайяншавии система, қулфкушоии сеанс имконнопазир аст;\n"
 "Шумо метавонед фармони қулфкушоии krunner_lock (pid %1) ба таври дастӣ иҷро "
 "кунед."
 
-#: lock/lockdlg.cc:511
+#: lock/lockdlg.cc:510
 msgid "&Start New Session"
 msgstr "&Оғозкунии сеанси нав"
 
-#: lock/lockdlg.cc:519
+#: lock/lockdlg.cc:518
 #, kde-format
 msgid ""
 "You have chosen to open another desktop session instead of resuming the "
@@ -186,28 +192,28 @@ msgstr ""
 "мубодила кунед. Шумо ҳам метавонед панели KDE ва менюи мизи корӣ дар байни "
 "сеансҳо мубодила кунед."
 
-#: lock/lockdlg.cc:532
+#: lock/lockdlg.cc:531
 msgid "&Do not ask again"
 msgstr "&Боз напурсед"
 
-#: lock/lockdlg.cc:588
+#: lock/lockdlg.cc:587
 msgid "Session"
 msgstr "Сеанс"
 
-#: lock/lockdlg.cc:588
+#: lock/lockdlg.cc:587
 msgid "Location"
 msgstr "Ҷойгиршавӣ"
 
-#: lock/lockdlg.cc:616
+#: lock/lockdlg.cc:615
 msgctxt "session"
 msgid "&Activate"
 msgstr "&Фаъол кардан"
 
-#: lock/lockdlg.cc:625
+#: lock/lockdlg.cc:624
 msgid "Start &New Session"
 msgstr "Оғозкунии сеанси &нав"
 
-#: krunnerdialog.cpp:57 krunnerapp.cpp:191 krunnerapp.cpp:192
+#: krunnerdialog.cpp:57 krunnerapp.cpp:193 krunnerapp.cpp:194
 msgid "Run Command"
 msgstr "Иҷрои фармон"
 
@@ -269,39 +275,39 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "victor.ibragimov@gmail.com"
 
-#: krunnerapp.cpp:196 krunnerapp.cpp:197
+#: krunnerapp.cpp:198 krunnerapp.cpp:199
 msgid "Run Command on clipboard contents"
 msgstr "Иҷрои фармон аз дорои хотира"
 
-#: krunnerapp.cpp:214 krunnerapp.cpp:215
+#: krunnerapp.cpp:216 krunnerapp.cpp:217
 msgid "Switch User"
 msgstr "Мубодилаи корбар"
 
-#: krunnerapp.cpp:221 krunnerapp.cpp:222
+#: krunnerapp.cpp:223 krunnerapp.cpp:224
 msgid "Lock Session"
 msgstr "Қулфи сеанс"
 
-#: krunnerapp.cpp:229 krunnerapp.cpp:230
+#: krunnerapp.cpp:231 krunnerapp.cpp:232
 msgid "Log Out"
 msgstr "Хуруҷ"
 
-#: krunnerapp.cpp:234 krunnerapp.cpp:235
+#: krunnerapp.cpp:236 krunnerapp.cpp:237
 msgid "Log Out Without Confirmation"
 msgstr "Хуруҷ бе тасдиқот"
 
-#: krunnerapp.cpp:239 krunnerapp.cpp:240
+#: krunnerapp.cpp:241 krunnerapp.cpp:242
 msgid "Halt Without Confirmation"
 msgstr "Хомӯш бе тасдиқот"
 
-#: krunnerapp.cpp:244 krunnerapp.cpp:245
+#: krunnerapp.cpp:246 krunnerapp.cpp:247
 msgid "Reboot Without Confirmation"
 msgstr "Бозборкунӣ бе тасдиқот"
 
-#: krunnerapp.cpp:296
+#: krunnerapp.cpp:298
 msgid "System Activity"
 msgstr "Фаъолияти система"
 
-#: krunnerapp.cpp:405
+#: krunnerapp.cpp:407
 msgid ""
 "Could not log out properly.\n"
 "The session manager cannot be contacted. You can try to force a shutdown by "
@@ -311,3 +317,6 @@ msgstr ""
 "Ба зӯр хуруҷ карда нашуд.\n"
 "Мудири сеанс қатъ карда шуд. Шумо метавонед хомӯшкунии система бо "
 "тугмаҳоиCtrl+Alt+Backspace амал кунед; Ёддошт: сеанс захира карда намешавад."
+
+#~ msgid "KRunner Locker"
+#~ msgstr "Қулфкунандаи KRunner"
