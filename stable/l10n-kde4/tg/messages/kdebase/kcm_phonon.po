@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_phonon\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-31 11:06+0100\n"
+"POT-Creation-Date: 2009-01-27 08:23+0100\n"
 "PO-Revision-Date: 2009-01-12 22:49+0000\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -36,19 +36,15 @@ msgstr "Хусусиятҳои дастгоҳ"
 msgid "Backend"
 msgstr "Пуштибонӣ"
 
-#: devicepreference.cpp:76
+#: devicepreference.cpp:72
 msgid "Audio Output"
 msgstr "Хуруҷи аудиоӣ"
 
-#: devicepreference.cpp:76
+#: devicepreference.cpp:72
 msgid "Audio Capture"
 msgstr "Сабти аудиоӣ"
 
-#: devicepreference.cpp:112
-msgid "Play a test sound on the selected device"
-msgstr "Иҷро кардани овози санҷишӣ дар дастгоҳи интихобшуда"
-
-#: devicepreference.cpp:133 devicepreference.cpp:140
+#: devicepreference.cpp:228 devicepreference.cpp:235
 msgid ""
 "Defines the default ordering of devices which can be overridden by "
 "individual categories."
@@ -56,25 +52,31 @@ msgstr ""
 "Муайянкунии тартиботи дастгоҳҳои стандартие, ки метавонанд бо интихоби шахси "
 "ба кор дароварда шаванд."
 
-#: devicepreference.cpp:214
-msgid "Default Output Device Preference"
+#: devicepreference.cpp:306
+#, fuzzy
+#| msgid "Default Output Device Preference"
+msgid "Default Output Device Preference:"
 msgstr "Хусусиятҳот хуруҷи дастгоҳҳои стандартӣ"
 
-#: devicepreference.cpp:216
-msgid "Default Capture Device Preference"
+#: devicepreference.cpp:308
+#, fuzzy
+#| msgid "Default Capture Device Preference"
+msgid "Default Capture Device Preference:"
 msgstr "Хусусиятҳои сабти дастгоҳҳои стандартӣ"
 
-#: devicepreference.cpp:220
-#, kde-format
-msgid "Output Device Preference for the '%1' Category"
+#: devicepreference.cpp:312
+#, fuzzy, kde-format
+#| msgid "Output Device Preference for the '%1' Category"
+msgid "Output Device Preference for the '%1' Category:"
 msgstr "Хусусиятҳои хуруҷи дастгоҳ барои '%1'"
 
-#: devicepreference.cpp:222
-#, kde-format
-msgid "Capture Device Preference for the '%1' Category"
+#: devicepreference.cpp:314
+#, fuzzy, kde-format
+#| msgid "Capture Device Preference for the '%1' Category"
+msgid "Capture Device Preference for the '%1' Category:"
 msgstr "Хусусиятҳои сабти дасгоҳ барои '%1'"
 
-#: devicepreference.cpp:602
+#: devicepreference.cpp:655
 msgid ""
 "Apply the currently shown device preference list to the following other "
 "audio output categories:"
@@ -82,7 +84,7 @@ msgstr ""
 "Рӯйхати хусусиятҳои дастгоҳи нишоншуда барои хуруҷи аудиоии мувофиқ қабул "
 "кунед:"
 
-#: devicepreference.cpp:609
+#: devicepreference.cpp:662
 msgid "Default/Unspecified Category"
 msgstr "Категорияи стандартӣ/номуайян"
 
@@ -100,17 +102,17 @@ msgstr ""
 
 #. i18n: file: backendselection.ui:58
 #. i18n: ectx: property (text), widget (QToolButton, m_up)
-#. i18n: file: devicepreference.ui:197
+#. i18n: file: devicepreference.ui:184
 #. i18n: ectx: property (text), widget (QToolButton, preferButton)
-#: rc.cpp:9 rc.cpp:43
+#: rc.cpp:9 rc.cpp:40
 msgid "Prefer"
 msgstr "Мақбул"
 
 #. i18n: file: backendselection.ui:71
 #. i18n: ectx: property (text), widget (QToolButton, m_down)
-#. i18n: file: devicepreference.ui:213
+#. i18n: file: devicepreference.ui:200
 #. i18n: ectx: property (text), widget (QToolButton, deferButton)
-#: rc.cpp:12 rc.cpp:49
+#: rc.cpp:12 rc.cpp:46
 msgid "Defer"
 msgstr "Қатъ"
 
@@ -129,7 +131,9 @@ msgstr ""
 #. i18n: file: devicepreference.ui:46
 #. i18n: ectx: property (text), widget (QCheckBox, showCheckBox)
 #: rc.cpp:21
-msgid "Show advanced devices"
+#, fuzzy
+#| msgid "Show advanced devices"
+msgid "Show Advanced Devices"
 msgstr "Намоиши дастгоҳҳои иловагӣ"
 
 #. i18n: file: devicepreference.ui:76
@@ -167,30 +171,30 @@ msgstr ""
 msgid "Remove"
 msgstr "Тоза кардан"
 
-#. i18n: file: devicepreference.ui:178
-#. i18n: ectx: property (text), widget (QToolButton, testPlaybackButton)
-#: rc.cpp:37
-msgid "Test"
-msgstr "Санҷиш"
-
-#. i18n: file: devicepreference.ui:194
+#. i18n: file: devicepreference.ui:181
 #. i18n: ectx: property (toolTip), widget (QToolButton, preferButton)
-#: rc.cpp:40
+#: rc.cpp:37
 msgid "prefer the selected device"
 msgstr "имконоти дастгоҳи интихобшуда"
 
-#. i18n: file: devicepreference.ui:210
+#. i18n: file: devicepreference.ui:197
 #. i18n: ectx: property (toolTip), widget (QToolButton, deferButton)
-#: rc.cpp:46
+#: rc.cpp:43
 msgid "no preference for the selected device"
 msgstr "имконоти дастгоҳи интихобшуда маҷуд нест"
 
-#: rc.cpp:50
+#: rc.cpp:47
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Виктор Ибрагимов"
 
-#: rc.cpp:51
+#: rc.cpp:48
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "victor.ibragimov@gmail.com"
+
+#~ msgid "Play a test sound on the selected device"
+#~ msgstr "Иҷро кардани овози санҷишӣ дар дастгоҳи интихобшуда"
+
+#~ msgid "Test"
+#~ msgstr "Санҷиш"
