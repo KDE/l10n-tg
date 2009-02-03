@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_system-monitor\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-02 11:20+0100\n"
+"POT-Creation-Date: 2009-02-03 11:13+0100\n"
 "PO-Revision-Date: 2009-01-14 15:25+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -20,9 +20,17 @@ msgstr ""
 msgid "CPU"
 msgstr "CPU"
 
-#: cpu.cpp:154
+#: cpu.cpp:155
 msgid "CPUs"
 msgstr "CPUs"
+
+#: cpu.cpp:163 net.cpp:179 temperature.cpp:111
+#, fuzzy
+#| msgid "seconds"
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "сония"
+msgstr[1] "сония"
 
 #: hdd.cpp:49
 msgid "Disk Space"
@@ -36,20 +44,28 @@ msgstr "Нуқтаи васл"
 msgid "Name"
 msgstr "Ном"
 
-#: hdd.cpp:83
+#: hdd.cpp:84
 msgid "Partitions"
 msgstr "Қисмҳои диски компютерӣ"
 
-#: hdd.cpp:125
+#: hdd.cpp:92
+#, fuzzy
+#| msgid "minutes"
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "дақиқа"
+msgstr[1] "дақиқа"
+
+#: hdd.cpp:132
 msgctxt "the root filesystem"
 msgid "root"
 msgstr "root"
 
-#: hdd.cpp:132
+#: hdd.cpp:139
 msgid "Unknown filesystem"
 msgstr "Системаи нодуруст"
 
-#: hdd.cpp:142
+#: hdd.cpp:149
 #, kde-format
 msgctxt "hard disk label (not mounted or accessible)"
 msgid "%1 (not accessible)"
@@ -79,7 +95,7 @@ msgstr "Шабакаи Интернет"
 msgid "Network interface"
 msgstr "Интерфейси шабака"
 
-#: net.cpp:170
+#: net.cpp:171
 msgid "Interfaces"
 msgstr "Интерфейс"
 
@@ -97,45 +113,31 @@ msgstr "&CPUs:"
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: file: temperature-config.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:6 rc.cpp:15 rc.cpp:24 rc.cpp:36
+#: rc.cpp:6 rc.cpp:12 rc.cpp:18 rc.cpp:27
 msgid "Update &interval:"
 msgstr "Фосилаи &навсозӣ:"
 
-#. i18n: file: cpu-config.ui:83
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#. i18n: file: net-config.ui:83
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:9 rc.cpp:27
-msgid "seconds"
-msgstr "сония"
-
 #. i18n: file: hdd-config.ui:31
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:12
+#: rc.cpp:9
 msgid "Hard &disks:"
 msgstr "Дискҳои &компютерӣ:"
 
-#. i18n: file: hdd-config.ui:92
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:18
-msgid "minutes"
-msgstr "дақиқа"
-
 #. i18n: file: net-config.ui:22
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:21
+#: rc.cpp:15
 msgid "&Network Interfaces:"
 msgstr "&Воситаҳои шабака"
 
 #. i18n: file: temperature-config.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:30
+#: rc.cpp:21
 msgid "&Available temperatures:"
 msgstr "&Ҳароратҳои дастрас"
 
 #. i18n: file: temperature-config.ui:42
 #. i18n: ectx: property (text), widget (QCheckBox, showPlotters)
-#: rc.cpp:33
+#: rc.cpp:24
 msgid "Show plotters"
 msgstr "Намоиши плотер"
 
@@ -147,14 +149,6 @@ msgstr "Ҳарорат"
 msgid "Sensor"
 msgstr "Сенсор"
 
-#: temperature.cpp:111
-#, fuzzy
-#| msgid "seconds"
-msgid " second"
-msgid_plural " seconds"
-msgstr[0] "сония"
-msgstr[1] "сония"
-
 #: temperature.cpp:235
 #, kde-format
 msgid "%1 °C"
@@ -164,3 +158,10 @@ msgstr "%1 °C"
 #, kde-format
 msgid "%1 °F"
 msgstr "%1 °F"
+
+#, fuzzy
+#~| msgid "seconds"
+#~ msgid " second"
+#~ msgid_plural " seconds"
+#~ msgstr[0] "сония"
+#~ msgstr[1] "сония"
