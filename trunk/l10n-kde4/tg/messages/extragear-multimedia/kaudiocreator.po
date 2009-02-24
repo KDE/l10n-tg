@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaudiocreator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-14 10:21+0100\n"
+"POT-Creation-Date: 2009-02-24 11:07+0100\n"
 "PO-Revision-Date: 2004-06-10 20:51+0000\n"
 "Last-Translator: Abrorova\n"
 "Language-Team:  <tajik>\n"
@@ -21,15 +21,27 @@ msgstr ""
 "X-Generator: KBabel 1.0.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: encodefileimp.cpp:31
-msgid "Encode File"
+#: encodefileimp.cpp:39
+#, fuzzy
+#| msgid "Encode File"
+msgid "Encode Files"
 msgstr "Файли Рамзгузошта"
 
-#: encodefileimp.cpp:33
-msgid "&Encode File"
-msgstr "Файли &Рамзгузошта"
+#: encodefileimp.cpp:41
+msgid "&Add to queue"
+msgstr ""
 
-#: encodefileimp.cpp:75 tracksimp.cpp:410
+#: encodefileimp.cpp:68
+#, fuzzy, kde-format
+#| msgid "Track"
+msgid "track_%1"
+msgstr "Шиор"
+
+#: encodefileimp.cpp:69 encodefileimp.cpp:70
+msgid "unknown"
+msgstr ""
+
+#: encodefileimp.cpp:152 tracksimp.cpp:410
 #, kde-format
 msgid ""
 "%1 Job(s) have been started.  You can watch their progress in the jobs "
@@ -38,11 +50,11 @@ msgstr ""
 "%1 Супориш(ҳо) сар дода шудааст. Иҷроиши онро шумо дар қисмати супоришҳо "
 "дида метавонед."
 
-#: encodefileimp.cpp:77 tracksimp.cpp:412
+#: encodefileimp.cpp:154 tracksimp.cpp:412
 msgid "Jobs have started"
 msgstr "Супориш оғоз ёфтааст"
 
-#: encoder.cpp:68
+#: encoder.cpp:71
 msgid ""
 "No encoder has been selected.\n"
 "Please select an encoder in the configuration."
@@ -50,32 +62,32 @@ msgstr ""
 "Ягон рамзгузор интихоб нашудааст.\n"
 "Марҳамат карда дар танзимкунӣ рамзгузорро интихоб кунед."
 
-#: encoder.cpp:68 encoderconfigimp.cpp:169 encoderconfigimp.cpp:198
+#: encoder.cpp:71 encoderconfigimp.cpp:124 encoderconfigimp.cpp:164
 msgid "No Encoder Selected"
 msgstr "Ягон Рамзгузор Интихоб Нашудааст."
 
-#: encoder.cpp:147
+#: encoder.cpp:155
 #, kde-format
 msgid "Encoding (%1): %2 - %3"
 msgstr "Рамзгузорӣ (%1): %2 - %3"
 
-#: encoder.cpp:187
+#: encoder.cpp:196
 msgid "File Already Exists"
 msgstr ""
 
-#: encoder.cpp:187
+#: encoder.cpp:196
 msgid "Sorry, file already exists. Please pick a new name:"
 msgstr ""
 
-#: encoder.cpp:201
+#: encoder.cpp:210
 msgid "Cannot place file, unable to make directories."
 msgstr ""
 
-#: encoder.cpp:201 encoder.cpp:303 encoder.cpp:309 encoder.cpp:324
+#: encoder.cpp:210 encoder.cpp:312 encoder.cpp:318 encoder.cpp:333
 msgid "Encoding Failed"
 msgstr "Рамзикунонӣ бо Нокомӣ анҷомид"
 
-#: encoder.cpp:303
+#: encoder.cpp:312
 #, kde-format
 msgid ""
 "The selected encoder was not found.\n"
@@ -84,7 +96,7 @@ msgstr ""
 "Рамзгузори интихобшуда паёдо нагардид.\n"
 "Файли wav хориҷ гардидааст. Фармон чунин: %1"
 
-#: encoder.cpp:309
+#: encoder.cpp:318
 #, fuzzy
 msgid ""
 "The encoder exited with a error.  Please check that the file was created.\n"
@@ -95,17 +107,17 @@ msgstr ""
 "Файли wav хориҷ гардидааст.\n"
 "Оё мехоҳед, ки ҳосили пурраи рамзгузорро бинед?"
 
-#: encoder.cpp:309 encoder.cpp:324
+#: encoder.cpp:318 encoder.cpp:333
 #, fuzzy
 msgid "Show Output"
 msgstr "Ҳосил:"
 
-#: encoder.cpp:309 encoder.cpp:324
+#: encoder.cpp:318 encoder.cpp:333
 #, fuzzy
 msgid "Skip Output"
 msgstr "Ҳосил:"
 
-#: encoder.cpp:324
+#: encoder.cpp:333
 msgid ""
 "The encoded file was not created.\n"
 "Please check the encoder options.\n"
@@ -117,48 +129,32 @@ msgstr ""
 "Файли wav хориҷ гардидааст.\n"
 "Оё мехоҳед, ки ҳосили пурраи рамзгузорро бинед?"
 
-#: encoderconfigimp.cpp:56
-msgid "Ogg Vorbis"
-msgstr ""
-
-#: encoderconfigimp.cpp:63
-msgid "MP3"
-msgstr ""
-
-#: encoderconfigimp.cpp:70
-msgid "WAV"
-msgstr ""
-
-#: encoderconfigimp.cpp:77
-msgid "FLAC"
-msgstr "FLAC"
-
-#: encoderconfigimp.cpp:151 encoderconfigimp.cpp:212
+#: encoderconfigimp.cpp:90 encoderconfigimp.cpp:180
 msgid "Configure Encoder"
 msgstr "Танзимкунии Рамзгузор"
 
-#: encoderconfigimp.cpp:152 encoderconfigimp.cpp:213 kaudiocreator.cpp:316
+#: encoderconfigimp.cpp:91 encoderconfigimp.cpp:181 kaudiocreator.cpp:372
 msgid "Encoder Configuration"
 msgstr "Танзимотҳои Рамзгузор"
 
-#: encoderconfigimp.cpp:169 encoderconfigimp.cpp:198
+#: encoderconfigimp.cpp:124 encoderconfigimp.cpp:164
 msgid "Please select an encoder."
 msgstr "Рамзгузорро интихоб кунед."
 
-#: encoderconfigimp.cpp:173
+#: encoderconfigimp.cpp:129
 msgid "At least one encoder must exist."
 msgstr "Ақалан бояд як рамзгузор мавҷуд бошад."
 
-#: encoderconfigimp.cpp:173
+#: encoderconfigimp.cpp:129
 msgid "Can Not Remove"
 msgstr "Хориҷ Карда Намешавад."
 
-#: encoderconfigimp.cpp:176
+#: encoderconfigimp.cpp:133
 #, fuzzy
 msgid "Delete encoder?"
 msgstr "Рамзгузорро Хориҷ кунам?"
 
-#: encoderconfigimp.cpp:176
+#: encoderconfigimp.cpp:133
 msgid "Delete Encoder"
 msgstr "Хориҷкунии Рамзгузор"
 
@@ -183,7 +179,7 @@ msgstr ""
 
 #. i18n: file: jobque.ui:28
 #. i18n: ectx: property (text), widget (QLabel, queLabel)
-#: jobqueimp.cpp:190 jobqueimp.cpp:249 rc.cpp:218
+#: jobqueimp.cpp:190 jobqueimp.cpp:249 rc.cpp:242
 msgid "No jobs are in the queue"
 msgstr "Дар саф супориш нест"
 
@@ -196,123 +192,144 @@ msgstr "KAudioCreator %1-ро ба охир нарасонид.  Ба ҳар ҳ�
 msgid "&CD Tracks"
 msgstr "Шиори &Диски Фишурда"
 
-#: kaudiocreator.cpp:70
+#: kaudiocreator.cpp:72
 msgid "&Jobs"
 msgstr "&Супоришҳо"
 
-#: kaudiocreator.cpp:99
+#: kaudiocreator.cpp:101
 msgid "&Eject CD"
 msgstr "&Берункашии Диски Фишурда"
 
-#: kaudiocreator.cpp:103
+#: kaudiocreator.cpp:105
 msgid "&Configure KAudioCreator..."
 msgstr "&Танзимкунии KAudioCreator..."
 
 #. i18n: file: tracks.ui:161
 #. i18n: ectx: property (text), widget (QPushButton, selectAllTracksButton)
-#: kaudiocreator.cpp:107 rc.cpp:354
+#: kaudiocreator.cpp:109 rc.cpp:381
 msgid "Select &All Tracks"
 msgstr "Ҷудосозии &Ҳамаи Шиораҳо"
 
-#: kaudiocreator.cpp:112
+#: kaudiocreator.cpp:114
 msgid "Deselect &All Tracks"
 msgstr "Бекоркунии Ҷудосозии &Ҳамаи Шиораҳо"
 
-#: kaudiocreator.cpp:119 kaudiocreator.cpp:129
+#: kaudiocreator.cpp:121 kaudiocreator.cpp:131
 msgid "Rip &Selection"
 msgstr "Хондани &Интихоб"
 
-#: kaudiocreator.cpp:137
+#: kaudiocreator.cpp:139
 msgid "Remove &Completed Jobs"
 msgstr "Хориҷкунии Супоришҳои &Иҷрошуда"
 
-#: kaudiocreator.cpp:141
+#: kaudiocreator.cpp:143
 #, fuzzy
 msgid "&Edit Album..."
 msgstr "&Таҳрири Албом"
 
-#: kaudiocreator.cpp:147
+#: kaudiocreator.cpp:149
 #, fuzzy
-msgid "Encode &File..."
-msgstr "Рамзикунии &Файл"
+#| msgid "Encode File"
+msgid "Encode &Files from disk"
+msgstr "Файли Рамзгузошта"
 
-#: kaudiocreator.cpp:151
+#: kaudiocreator.cpp:153
 msgid "&CDDB Lookup"
 msgstr "Дидабароии &CDDB"
 
-#: kaudiocreator.cpp:172 kaudiocreator.cpp:214
+#: kaudiocreator.cpp:174 kaudiocreator.cpp:265
 msgid "No Audio CD detected"
 msgstr "Ягон Диски Фишурдаи Садоӣ муайян нагардидааст"
 
-#: kaudiocreator.cpp:212
+#: kaudiocreator.cpp:196
+msgid "WAV"
+msgstr ""
+
+#: kaudiocreator.cpp:203
+msgid "Ogg Default"
+msgstr ""
+
+#: kaudiocreator.cpp:210
+msgid "MP3 Lame Standard"
+msgstr ""
+
+#: kaudiocreator.cpp:217
+#, fuzzy
+#| msgid "FLAC"
+msgid "FLAC Best"
+msgstr "FLAC"
+
+#: kaudiocreator.cpp:263
 msgid "CD Inserted"
 msgstr "Диски Фишурда Ҷойгузорӣ шудааст"
 
-#: kaudiocreator.cpp:221
+#: kaudiocreator.cpp:272
 #, fuzzy, kde-format
 msgid "Default encoder: %1"
 msgstr "Рамзгузорро Хориҷ кунам?"
 
-#: kaudiocreator.cpp:226
+#: kaudiocreator.cpp:277
 msgid "Idle."
 msgstr "Тасвир."
 
-#: kaudiocreator.cpp:235
+#: kaudiocreator.cpp:286
 #, kde-format
 msgid "Ripping (%1 active, %2 queued)"
 msgstr "Хониши (%1 фаъол, %2 дар саф)"
 
-#: kaudiocreator.cpp:239
+#: kaudiocreator.cpp:290
 #, kde-format
 msgid "Encoding (%1 active, %2 queued)"
 msgstr "Рамзгузорӣ (%1 фаъол, %2 дар саф)"
 
-#: kaudiocreator.cpp:257
+#: kaudiocreator.cpp:308
 msgid "There are unfinished jobs in the queue. Would you like to quit anyway?"
 msgstr ""
 "Дар саф супоришҳои ба охир нарасида мавҷуданд. Оё мехоҳед, ки ба ҳар ҳол "
 "бароед?"
 
-#: kaudiocreator.cpp:257
+#: kaudiocreator.cpp:308
 #, fuzzy
 msgid "Unfinished Jobs in Queue"
 msgstr "Супориши иҷронашуда дар саф."
 
 #. i18n: file: general.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, General)
-#: kaudiocreator.cpp:293 rc.cpp:118
+#: kaudiocreator.cpp:349 rc.cpp:142
 msgid "General"
 msgstr "Умумӣ"
 
-#: kaudiocreator.cpp:294
+#: kaudiocreator.cpp:350
 msgid "General Configuration"
 msgstr "Танзимотҳои Умумӣ"
 
-#: kaudiocreator.cpp:296
+#: kaudiocreator.cpp:352
 msgid "CD"
 msgstr "Диски Фишурда"
 
-#: kaudiocreator.cpp:297
+#: kaudiocreator.cpp:353
 msgid "CD Configuration"
 msgstr "Танзимдарории Диски Фишурда"
 
-#: kaudiocreator.cpp:307
+#: kaudiocreator.cpp:363
 msgid "CDDB"
 msgstr "CDDB"
 
-#: kaudiocreator.cpp:307
+#: kaudiocreator.cpp:363
 msgid "CDDB Configuration"
 msgstr "Танзимдарории CDDB"
 
-#: kaudiocreator.cpp:313
+#: kaudiocreator.cpp:369
 msgid "Ripper"
 msgstr "Хонанда"
 
-#: kaudiocreator.cpp:313
+#: kaudiocreator.cpp:369
 msgid "Ripper Configuration"
 msgstr "Танзимдарории Хонанда"
 
-#: kaudiocreator.cpp:316
+#. i18n: file: encodefile.ui:75
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
+#: kaudiocreator.cpp:372 rc.cpp:33
 msgid "Encoder"
 msgstr "Рамзгузор"
 
@@ -353,94 +370,145 @@ msgstr "&Пешкаши азназаргузаронии худкори CDDB"
 msgid "&Automatically rip all tracks upon a successful CDDB retrieval"
 msgstr "Хондани &худкори ҳамаи сурудҳо баъди бозёбии бомувафақияти CDDB"
 
-#. i18n: file: encodefile.ui:33
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#. i18n: file: encodefile.ui:35
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
 #: rc.cpp:9
 #, fuzzy
-msgid "&File to encode:"
-msgstr "Файл барои рамзгузорӣ:"
+msgid "File"
+msgstr "Унвон:"
 
-#. i18n: file: encodefile.ui:48
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
+#. i18n: file: encodefile.ui:40
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
+#. i18n: file: tracks.ui:135
+#. i18n: ectx: property (text), widget (QTreeWidget, trackListing)
+#: rc.cpp:12 rc.cpp:378
+#, fuzzy
+msgid "Title"
+msgstr "Унвон:"
+
+#. i18n: file: encodefile.ui:45
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
+#: rc.cpp:15
+#, fuzzy
+#| msgid "Artist:"
+msgid "Artist"
+msgstr "Иҷрокунанда:"
+
+#. i18n: file: encodefile.ui:50
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
+#. i18n: file: infodialog.ui:91
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
+#: rc.cpp:18 rc.cpp:212
+msgid "Album"
+msgstr "Албом"
+
+#. i18n: file: encodefile.ui:55
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
+#: rc.cpp:21
+#, fuzzy
+#| msgid "Comment:"
+msgid "Comment"
+msgstr "Тавсифот:"
+
+#. i18n: file: encodefile.ui:60
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
+#: rc.cpp:24
+#, fuzzy
+#| msgid "Genre:"
+msgid "Genre"
+msgstr "Услуб:"
+
+#. i18n: file: encodefile.ui:65
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
 #. i18n: file: tracks.ui:125
 #. i18n: ectx: property (text), widget (QTreeWidget, trackListing)
-#: rc.cpp:12 rc.cpp:345
+#: rc.cpp:27 rc.cpp:372
 msgid "Track"
 msgstr "Шиор"
 
-#. i18n: file: encodefile.ui:67
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
-#: rc.cpp:15
-msgid "Track:"
-msgstr "Шиор:"
+#. i18n: file: encodefile.ui:70
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
+#: rc.cpp:30
+#, fuzzy
+#| msgid "Year:"
+msgid "Year"
+msgstr "Сол:"
 
-#. i18n: file: encodefile.ui:77
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#. i18n: file: encodefile.ui:187
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#. i18n: file: infodialog.ui:40
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#. i18n: file: infodialog.ui:168
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:18 rc.cpp:42 rc.cpp:179 rc.cpp:203
-msgid "Comment:"
-msgstr "Тавсифот:"
+#. i18n: file: encodefile.ui:88
+#. i18n: ectx: property (text), widget (QPushButton, addFilesButton)
+#: rc.cpp:36
+#, fuzzy
+#| msgid "Encode File"
+msgid "Add Files"
+msgstr "Файли Рамзгузошта"
 
-#. i18n: file: encodefile.ui:90
-#. i18n: ectx: property (text), widget (QLabel, trackLabel)
-#. i18n: file: infodialog.ui:56
-#. i18n: ectx: property (text), widget (QLabel, trackLabel)
-#: rc.cpp:21 rc.cpp:182
-msgid "Title:"
-msgstr "Унвон:"
+#. i18n: file: encodefile.ui:95
+#. i18n: ectx: property (text), widget (QPushButton, clearButton)
+#: rc.cpp:39
+msgid "Clear List"
+msgstr ""
 
-#. i18n: file: encodefile.ui:100
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#. i18n: file: encodefile.ui:134
+#. i18n: file: encodefile.ui:108
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
+#: rc.cpp:42
+#, fuzzy
+#| msgid "Select &All Tracks"
+msgid "Selected Tracks"
+msgstr "Ҷудосозии &Ҳамаи Шиораҳо"
+
+#. i18n: file: encodefile.ui:114
 #. i18n: ectx: property (text), widget (QLabel, TextLabel5)
 #. i18n: file: infodialog.ui:72
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #. i18n: file: infodialog.ui:103
 #. i18n: ectx: property (text), widget (QLabel, TextLabel5)
-#: rc.cpp:24 rc.cpp:30 rc.cpp:185 rc.cpp:191
+#: rc.cpp:45 rc.cpp:209 rc.cpp:215
 msgid "Artist:"
 msgstr "Иҷрокунанда:"
 
-#. i18n: file: encodefile.ui:119
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
-#. i18n: file: infodialog.ui:91
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
-#: rc.cpp:27 rc.cpp:188
-msgid "Album"
-msgstr "Албом"
-
-#. i18n: file: encodefile.ui:144
+#. i18n: file: encodefile.ui:127
 #. i18n: ectx: property (text), widget (QLabel, TextLabel6)
 #. i18n: file: infodialog.ui:116
 #. i18n: ectx: property (text), widget (QLabel, TextLabel6)
-#: rc.cpp:33 rc.cpp:194
+#: rc.cpp:48 rc.cpp:218
 msgid "Album:"
 msgstr "Албом:"
 
-#. i18n: file: encodefile.ui:164
+#. i18n: file: encodefile.ui:140
 #. i18n: ectx: property (text), widget (QLabel, TextLabel7)
 #. i18n: file: infodialog.ui:139
 #. i18n: ectx: property (text), widget (QLabel, TextLabel7)
-#: rc.cpp:36 rc.cpp:197
+#: rc.cpp:51 rc.cpp:221
 msgid "Year:"
 msgstr "Сол:"
 
-#. i18n: file: encodefile.ui:174
+#. i18n: file: encodefile.ui:157
 #. i18n: ectx: property (text), widget (QLabel, TextLabel1)
 #. i18n: file: infodialog.ui:152
 #. i18n: ectx: property (text), widget (QLabel, TextLabel1)
-#: rc.cpp:39 rc.cpp:200
+#: rc.cpp:54 rc.cpp:224
 msgid "Genre:"
 msgstr "Услуб:"
 
+#. i18n: file: encodefile.ui:170
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: file: infodialog.ui:40
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#. i18n: file: infodialog.ui:168
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rc.cpp:57 rc.cpp:203 rc.cpp:227
+msgid "Comment:"
+msgstr "Тавсифот:"
+
+#. i18n: file: encodefile.ui:183
+#. i18n: ectx: property (text), widget (QPushButton, assignButton)
+#: rc.cpp:60
+msgid "Assign to selected tracks"
+msgstr ""
+
 #. i18n: file: encoderconfig.ui:19
 #. i18n: ectx: property (toolTip), widget (QPushButton, addEncoder)
-#: rc.cpp:45
+#: rc.cpp:63
 #, fuzzy
 #| msgid "Encoder Configuration"
 msgid "Add a new encoder configuration."
@@ -448,13 +516,13 @@ msgstr "Танзимотҳои Рамзгузор"
 
 #. i18n: file: encoderconfig.ui:22
 #. i18n: ectx: property (text), widget (QPushButton, addEncoder)
-#: rc.cpp:48
+#: rc.cpp:66
 msgid "&Add..."
 msgstr "&Иловакунӣ..."
 
 #. i18n: file: encoderconfig.ui:29
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeEncoder)
-#: rc.cpp:51
+#: rc.cpp:69
 #, fuzzy
 #| msgid "At least one encoder must exist."
 msgid "Remove encoder from list."
@@ -462,129 +530,141 @@ msgstr "Ақалан бояд як рамзгузор мавҷуд бошад."
 
 #. i18n: file: encoderconfig.ui:32
 #. i18n: ectx: property (text), widget (QPushButton, removeEncoder)
-#: rc.cpp:54
+#: rc.cpp:72
 msgid "&Remove"
 msgstr ""
 
 #. i18n: file: encoderconfig.ui:39
 #. i18n: ectx: property (toolTip), widget (QPushButton, configureEncoder)
-#: rc.cpp:57
+#: rc.cpp:75
 msgid "Set encoder details."
 msgstr ""
 
 #. i18n: file: encoderconfig.ui:42
 #. i18n: ectx: property (text), widget (QPushButton, configureEncoder)
-#: rc.cpp:60
+#: rc.cpp:78
 msgid "&Configure..."
 msgstr "&Батанзимдарорӣ..."
 
 #. i18n: file: encoderconfig.ui:51
 #. i18n: ectx: property (text), widget (QLabel, currentEncoderText)
-#: rc.cpp:63
+#: rc.cpp:81
 #, fuzzy
 #| msgid "Current encoder:"
 msgid "Current default encoder:"
 msgstr "Рамзгузори ҷорӣ:"
 
-#. i18n: file: encoderconfig.ui:92
+#. i18n: file: encoderconfig.ui:95
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:66
+#: rc.cpp:84
 msgid "Encoded File Location"
 msgstr "Мавқеъи Файли Рамзгузошта"
 
-#. i18n: file: encoderconfig.ui:98
+#. i18n: file: encoderconfig.ui:101
 #. i18n: ectx: property (text), widget (QLabel, TextLabel2_2)
-#: rc.cpp:69
+#: rc.cpp:87
 msgid "Location:"
 msgstr "Мавқеъ:"
 
-#. i18n: file: encoderconfig.ui:111
+#. i18n: file: encoderconfig.ui:114
 #. i18n: ectx: property (text), widget (QPushButton, encoderWizardButton)
-#: rc.cpp:72
+#: rc.cpp:90
 #, fuzzy
 msgid "&Wizard"
 msgstr "&Устод..."
 
-#. i18n: file: encoderconfig.ui:121
+#. i18n: file: encoderconfig.ui:124
 #. i18n: ectx: property (text), widget (QLabel, TextLabel1_2)
-#: rc.cpp:75
+#: rc.cpp:93
 msgid "&Number of wav files to encode at a time:"
 msgstr "&Шумораи файлҳои wav-и дар як вақт рамзгузоришаванда:"
 
-#. i18n: file: encoderconfig.ui:144
+#. i18n: file: encoderconfig.ui:147
 #. i18n: ectx: property (title), widget (QGroupBox, niceLevelBox)
-#: rc.cpp:78
+#: rc.cpp:96
 #, fuzzy
 #| msgid "Encode File"
 msgid "Encoder nice level"
 msgstr "Файли Рамзгузошта"
 
-#. i18n: file: encoderconfig.ui:177
+#. i18n: file: encoderconfig.ui:180
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:81
+#: rc.cpp:99
 msgid "-19"
 msgstr ""
 
-#. i18n: file: encoderconfig.ui:203
+#. i18n: file: encoderconfig.ui:206
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:84
+#: rc.cpp:102
 #, fuzzy
 #| msgid "Current encoder:"
 msgid "Current:"
 msgstr "Рамзгузори ҷорӣ:"
 
-#. i18n: file: encoderconfig.ui:216
+#. i18n: file: encoderconfig.ui:219
 #. i18n: ectx: property (text), widget (QLabel, niceLevelLabel)
-#: rc.cpp:87
+#: rc.cpp:105
 msgid "0"
 msgstr ""
 
-#. i18n: file: encoderconfig.ui:242
+#. i18n: file: encoderconfig.ui:245
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:90
+#: rc.cpp:108
 msgid "19"
 msgstr ""
 
-#. i18n: file: encoderedit.ui:19
-#. i18n: ectx: property (text), widget (QLineEdit, kcfg_commandLine)
-#: rc.cpp:94
-#, no-c-format
-msgid "app.exe %f %o"
-msgstr "app.exe %f %o"
+#. i18n: file: encoderconfig.ui:276
+#. i18n: ectx: property (text), widget (QPushButton, defaultButton)
+#: rc.cpp:111
+msgid "Set as default"
+msgstr ""
+
+#. i18n: file: encoderedit.ui:16
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#: rc.cpp:114
+msgid "Name:"
+msgstr "Ном:"
 
 #. i18n: file: encoderedit.ui:32
 #. i18n: ectx: property (text), widget (QLineEdit, kcfg_encoderName)
-#: rc.cpp:97
+#: rc.cpp:117
 msgid "Unknown Encoder"
 msgstr "Рамзгузори Номаълум"
 
 #. i18n: file: encoderedit.ui:39
-#. i18n: ectx: property (text), widget (QLineEdit, kcfg_extension)
-#: rc.cpp:100
-msgid "wav"
-msgstr "wav"
-
-#. i18n: file: encoderedit.ui:46
-#. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: rc.cpp:103
-msgid "Extension:"
-msgstr "Вусъат:"
-
-#. i18n: file: encoderedit.ui:56
 #. i18n: ectx: property (text), widget (QLabel, textLabel6)
-#: rc.cpp:106
+#: rc.cpp:120
 msgid "Command line:"
 msgstr "Сатри фармон:"
 
+#. i18n: file: encoderedit.ui:49
+#. i18n: ectx: property (text), widget (QLineEdit, kcfg_commandLine)
+#: rc.cpp:124
+#, no-c-format
+msgid "app.exe %f %o"
+msgstr "app.exe %f %o"
+
+#. i18n: file: encoderedit.ui:56
+#. i18n: ectx: property (text), widget (QLabel, textLabel5)
+#: rc.cpp:127
+msgid "Extension:"
+msgstr "Вусъат:"
+
 #. i18n: file: encoderedit.ui:66
-#. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: rc.cpp:109
-msgid "Name:"
-msgstr "Ном:"
+#. i18n: ectx: property (text), widget (QLineEdit, kcfg_extension)
+#: rc.cpp:130
+msgid "ext"
+msgstr ""
+
+#. i18n: file: encoderedit.ui:73
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:133
+msgid "Percent length"
+msgstr ""
 
 #. i18n: file: encoderoutput.ui:13
 #. i18n: ectx: property (windowTitle), widget (QDialog, EncoderOutput)
-#: rc.cpp:112
+#: rc.cpp:136
 msgid "Encoder Output"
 msgstr "Ҳосили Рамзгузор"
 
@@ -594,13 +674,13 @@ msgstr "Ҳосили Рамзгузор"
 #. i18n: ectx: property (text), widget (QPushButton, buttonOk)
 #. i18n: file: wizard.ui:270
 #. i18n: ectx: property (text), widget (QPushButton, buttonOk)
-#: rc.cpp:115 rc.cpp:212 rc.cpp:413
+#: rc.cpp:139 rc.cpp:236 rc.cpp:440
 msgid "&OK"
 msgstr ""
 
 #. i18n: file: general.ui:19
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_removeCompletedJobs)
-#: rc.cpp:121
+#: rc.cpp:145
 msgid "&Automatically remove jobs when finished"
 msgstr "Ҳангоми ба охиррасонӣ ба таври &худкор супоришҳоро хориҷ кардан"
 
@@ -608,25 +688,25 @@ msgstr "Ҳангоми ба охиррасонӣ ба таври &худкор �
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_promptIfIncompleteInfo)
 #. i18n: file: kaudiocreator.kcfg:22
 #. i18n: ectx: label, entry (promptIfIncompleteInfo), group (CD)
-#: rc.cpp:124 rc.cpp:248
+#: rc.cpp:148 rc.cpp:272
 msgid "Prompt if information is not complete"
 msgstr "Ҳангоми нопурра будани ахборот, кӯшиш кунед"
 
 #. i18n: file: general.ui:33
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: rc.cpp:127
+#: rc.cpp:151
 msgid "File Regular Expression Replacement"
 msgstr "Бозҷойгирии Ифодаҳои Муқаррарии Файл"
 
 #. i18n: file: general.ui:51
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:130
+#: rc.cpp:154
 msgid "Selection:"
 msgstr "Интихоб:"
 
 #. i18n: file: general.ui:62
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:133
+#: rc.cpp:157
 msgid ""
 "Regular expression used on all file names. For example using selection \" \" "
 "and replace with \"_\" would replace all the spaces with underlines.\n"
@@ -637,19 +717,19 @@ msgstr ""
 
 #. i18n: file: general.ui:75
 #. i18n: ectx: property (text), widget (QLabel, inputlabel)
-#: rc.cpp:137
+#: rc.cpp:161
 msgid "Input:"
 msgstr "Ворид:"
 
 #. i18n: file: general.ui:85
 #. i18n: ectx: property (text), widget (QLabel, outputLabel)
-#: rc.cpp:140
+#: rc.cpp:164
 msgid "Output:"
 msgstr "Ҳосил:"
 
 #. i18n: file: general.ui:95
 #. i18n: ectx: property (text), widget (QLabel, exampleLabel)
-#: rc.cpp:143
+#: rc.cpp:167
 msgid "Example"
 msgstr "Мисол"
 
@@ -657,75 +737,81 @@ msgstr "Мисол"
 #. i18n: ectx: property (text), widget (QLabel, exampleOutput)
 #. i18n: file: general.ui:115
 #. i18n: ectx: property (text), widget (QLineEdit, example)
-#: rc.cpp:146 rc.cpp:149
+#: rc.cpp:170 rc.cpp:173
 msgid "Cool artist - example audio file.wav"
 msgstr "Иҷрокунандаи олиҷаноб - масалан садои file.wav"
 
 #. i18n: file: general.ui:128
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:152
+#: rc.cpp:176
 msgid "Replace with:"
 msgstr "Ҷойгузорӣ бо:"
 
 #. i18n: file: general.ui:151
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_seperateMultiArtist)
-#: rc.cpp:155
+#: rc.cpp:179
 msgid "Automatically Separate Multi-Artist CDDB Entries"
 msgstr ""
 
 #. i18n: file: general.ui:163
 #. i18n: ectx: property (title), widget (KButtonGroup, kbuttongroup)
-#: rc.cpp:158
+#: rc.cpp:182
 #, fuzzy
 msgid "Format"
 msgstr "Муқаррарӣ"
 
 #. i18n: file: general.ui:169
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_format_titleArtist)
-#: rc.cpp:161
+#: rc.cpp:185
 msgid "Title - Artist"
 msgstr ""
 
 #. i18n: file: general.ui:176
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_format_artistTitle)
-#: rc.cpp:164
+#: rc.cpp:188
 msgid "Artist - Title"
 msgstr ""
 
 #. i18n: file: general.ui:203
 #. i18n: ectx: property (text), widget (QLabel, delimiterLabel)
-#: rc.cpp:167
+#: rc.cpp:191
 msgid "Delimiter:"
 msgstr ""
 
 #. i18n: file: general.ui:213
 #. i18n: ectx: property (text), widget (QLabel, genArtistLabel)
-#: rc.cpp:170
+#: rc.cpp:194
 #, fuzzy
 msgid "Generic artist:"
 msgstr "&Иҷрокунанда"
 
 #. i18n: file: infodialog.ui:16
 #. i18n: ectx: property (windowTitle), widget (QDialog, AlbumEditor)
-#: rc.cpp:173
+#: rc.cpp:197
 msgid "Album Editor"
 msgstr "Муҳаррири Албом"
 
 #. i18n: file: infodialog.ui:31
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: rc.cpp:176
+#: rc.cpp:200
 msgid "Current Track"
 msgstr "Шиори Ҷорӣ"
 
+#. i18n: file: infodialog.ui:56
+#. i18n: ectx: property (text), widget (QLabel, trackLabel)
+#: rc.cpp:206
+msgid "Title:"
+msgstr "Унвон:"
+
 #. i18n: file: infodialog.ui:208
 #. i18n: ectx: property (text), widget (QPushButton, buttonPrevious)
-#: rc.cpp:206
+#: rc.cpp:230
 msgid "&Previous Track"
 msgstr "Шиори &Гузашта"
 
 #. i18n: file: infodialog.ui:215
 #. i18n: ectx: property (text), widget (QPushButton, buttonNext)
-#: rc.cpp:209
+#: rc.cpp:233
 msgid "&Next Track"
 msgstr "Шиори &Оянда"
 
@@ -733,62 +819,62 @@ msgstr "Шиори &Оянда"
 #. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
 #. i18n: file: wizard.ui:283
 #. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
-#: rc.cpp:215 rc.cpp:416
+#: rc.cpp:239 rc.cpp:443
 msgid "&Cancel"
 msgstr ""
 
 #. i18n: file: jobque.ui:54
 #. i18n: ectx: property (text), widget (QTreeWidget, todoQue)
-#: rc.cpp:221
+#: rc.cpp:245
 msgid "Job"
 msgstr "Супориш"
 
 #. i18n: file: jobque.ui:59
 #. i18n: ectx: property (text), widget (QTreeWidget, todoQue)
-#: rc.cpp:224
+#: rc.cpp:248
 msgid "Progress"
 msgstr "Иҷроиш"
 
 #. i18n: file: jobque.ui:64
 #. i18n: ectx: property (text), widget (QTreeWidget, todoQue)
-#: rc.cpp:227
+#: rc.cpp:251
 msgid "Description"
 msgstr "Тавсифот"
 
 #. i18n: file: jobque.ui:90
 #. i18n: ectx: property (text), widget (QPushButton, removeDoneJobs)
-#: rc.cpp:230
+#: rc.cpp:254
 msgid "Remove Completed Jobs"
 msgstr "Хориҷкунии Супоришҳои Иҷрошуда"
 
 #. i18n: file: jobque.ui:97
 #. i18n: ectx: property (text), widget (QPushButton, removeAll)
-#: rc.cpp:233
+#: rc.cpp:257
 msgid "Remove All Jobs"
 msgstr "Хориҷкунии Ҳамаи Супоришҳо"
 
 #. i18n: file: jobque.ui:104
 #. i18n: ectx: property (text), widget (QPushButton, removeSelected)
-#: rc.cpp:236
+#: rc.cpp:260
 msgid "Remove Selected Jobs"
 msgstr "Хориҷкунии Супоришҳои Интихобгашта"
 
 #. i18n: file: kaudiocreator.kcfg:10
 #. i18n: ectx: label, entry (performCDDBauto), group (CD)
-#: rc.cpp:239
+#: rc.cpp:263
 msgid "Perform automatic CDDB lookups."
 msgstr "Пешкаши азназаргузаронии худкори CDDB."
 
 #. i18n: file: kaudiocreator.kcfg:14
 #. i18n: ectx: label, entry (autoRip), group (CD)
-#: rc.cpp:242
+#: rc.cpp:266
 #, fuzzy
 msgid "Automatically rip all tracks upon a successful CDDB retrieval"
 msgstr "Хондани худкори ҳамаи сурудҳо баъди бозёбии бомувафақияти CDDB"
 
 #. i18n: file: kaudiocreator.kcfg:18
 #. i18n: ectx: label, entry (lastUsedDevice), group (CD)
-#: rc.cpp:245
+#: rc.cpp:269
 #, fuzzy
 #| msgid "CD device"
 msgid "Last used CD device"
@@ -796,19 +882,19 @@ msgstr "Дастгоҳи Диски Фишурда"
 
 #. i18n: file: kaudiocreator.kcfg:28
 #. i18n: ectx: label, entry (removeCompletedJobs), group (General)
-#: rc.cpp:251
+#: rc.cpp:275
 msgid "Automatically remove jobs when finished"
 msgstr "Ҳангоми ба охиррасонӣ ба таври худкор супоришҳоро хориҷ кардан"
 
 #. i18n: file: kaudiocreator.kcfg:32
 #. i18n: ectx: label, entry (replaceInput), group (General)
-#: rc.cpp:254
+#: rc.cpp:278
 msgid "Regexp to match file names with"
 msgstr "Ифодаҳои муқаррарӣ барои мувофиқат бо номҳои файл"
 
 #. i18n: file: kaudiocreator.kcfg:35
 #. i18n: ectx: label, entry (replaceOutput), group (General)
-#: rc.cpp:257
+#: rc.cpp:281
 msgid "String used to replace the parts that match the selection regexp"
 msgstr ""
 "Сатр барои ҷой иваз кардани қисмҳое, ки бо ифодаҳои муқаррарии интихобшуда "
@@ -816,116 +902,124 @@ msgstr ""
 
 #. i18n: file: kaudiocreator.kcfg:55
 #. i18n: ectx: label, entry (currentEncoder), group (Encoder)
-#: rc.cpp:260
+#: rc.cpp:284
 msgid "Currently selected encoder"
 msgstr "Рамзгузори интихобгаштаи ҷорӣ"
 
 #. i18n: file: kaudiocreator.kcfg:59
+#. i18n: ectx: label, entry (defaultEncoder), group (Encoder)
+#: rc.cpp:287
+#, fuzzy
+#| msgid "Current encoder:"
+msgid "Current default encoder"
+msgstr "Рамзгузори ҷорӣ:"
+
+#. i18n: file: kaudiocreator.kcfg:63
 #. i18n: ectx: label, entry (lastKnownEncoder), group (Encoder)
-#: rc.cpp:263
+#: rc.cpp:290
 msgid "Last encoder in the list"
 msgstr "Рамзгузори охирон дар рӯйхат"
 
-#. i18n: file: kaudiocreator.kcfg:63
+#. i18n: file: kaudiocreator.kcfg:67
 #. i18n: ectx: label, entry (numberOfCpus), group (Encoder)
-#: rc.cpp:266
+#: rc.cpp:293
 msgid "Number of files to encode at a time"
 msgstr "Шумораи файлҳои дар як вақт рамзшаванда"
 
-#. i18n: file: kaudiocreator.kcfg:67
+#. i18n: file: kaudiocreator.kcfg:71
 #. i18n: ectx: label, entry (fileFormat), group (Encoder)
-#: rc.cpp:269
+#: rc.cpp:296
 msgid "Location pattern for encoded files"
 msgstr "Намунаи мавқеъ барои файлҳои рамзишуда"
 
-#. i18n: file: kaudiocreator.kcfg:71
+#. i18n: file: kaudiocreator.kcfg:75
 #. i18n: ectx: label, entry (NiceLevel), group (Encoder)
-#: rc.cpp:272
+#: rc.cpp:299
 msgid "Encoder priority"
 msgstr "Имтиёзҳои рамзгузор"
 
-#. i18n: file: kaudiocreator.kcfg:77
+#. i18n: file: kaudiocreator.kcfg:81
 #. i18n: ectx: label, entry (FullDecoderDebug), group (Encoder)
-#: rc.cpp:275
+#: rc.cpp:302
 msgid "Enable full decoder debugging"
 msgstr "Даргиронидани рамзкушоии пурраи ғалатёбӣ"
 
-#. i18n: file: kaudiocreator.kcfg:83
+#. i18n: file: kaudiocreator.kcfg:87
 #. i18n: ectx: label, entry (maxWavFiles), group (Ripper)
-#: rc.cpp:278
+#: rc.cpp:305
 msgid "Number of tracks to rip at a time"
 msgstr "Шумораи шиорҳои дар як вақт хондашаванда"
 
-#. i18n: file: kaudiocreator.kcfg:87
+#. i18n: file: kaudiocreator.kcfg:91
 #. i18n: ectx: label, entry (beepAfterRip), group (Ripper)
-#: rc.cpp:281
+#: rc.cpp:308
 msgid "Beep after rip"
 msgstr "Додани аломати овозӣ баъди хондан"
 
-#. i18n: file: kaudiocreator.kcfg:91
+#. i18n: file: kaudiocreator.kcfg:95
 #. i18n: ectx: label, entry (autoEjectAfterRip), group (Ripper)
-#: rc.cpp:284
+#: rc.cpp:311
 #, fuzzy
 msgid "Eject CD after last track is ripped"
 msgstr "Баъди он, ки суруди охирон хонда мешавад, Диски Фишурдаро берун кашед"
 
-#. i18n: file: kaudiocreator.kcfg:95
+#. i18n: file: kaudiocreator.kcfg:99
 #. i18n: ectx: label, entry (autoEjectDelay), group (Ripper)
-#: rc.cpp:287
+#: rc.cpp:314
 msgid "Auto-eject delay"
 msgstr "Интизорӣ пеш аз берункашии худкор"
 
-#. i18n: file: kaudiocreator.kcfg:99
+#. i18n: file: kaudiocreator.kcfg:103
 #. i18n: ectx: label, entry (enableTempDir), group (Ripper)
-#: rc.cpp:290
+#: rc.cpp:317
 msgid "Specify temporary directory"
 msgstr "Таъинсозии феҳристи муваққатӣ"
 
-#. i18n: file: kaudiocreator.kcfg:103
+#. i18n: file: kaudiocreator.kcfg:107
 #. i18n: ectx: label, entry (tempDir), group (Ripper)
-#: rc.cpp:293
+#: rc.cpp:320
 msgid "Location of temporary directory to use"
 msgstr "Мавқеъи феҳристи муваққатӣ барои истифода"
 
 #. i18n: file: kaudiocreator_encoders.kcfg:12
 #. i18n: ectx: label, entry (encoderName), group ($(encoder))
-#: rc.cpp:296
+#: rc.cpp:323
 msgid "Name of the encoder"
 msgstr "Номи рамзгузор"
 
 #. i18n: file: kaudiocreator_encoders.kcfg:16
 #. i18n: ectx: label, entry (commandLine), group ($(encoder))
-#: rc.cpp:299
+#: rc.cpp:326
 msgid "Command line to invoke encoder"
 msgstr "Сатри фармон барои берункашии рамзгузор"
 
 #. i18n: file: kaudiocreator_encoders.kcfg:20
 #. i18n: ectx: label, entry (extension), group ($(encoder))
-#: rc.cpp:302
+#: rc.cpp:329
 msgid "File extension"
 msgstr "Вусъати файл"
 
 #. i18n: file: kaudiocreatorui.rc:14
 #. i18n: ectx: Menu (file)
-#: rc.cpp:306
+#: rc.cpp:333
 msgid "&Program"
 msgstr "&Барнома"
 
 #. i18n: file: ripconfig.ui:16
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_beepAfterRip)
-#: rc.cpp:309
+#: rc.cpp:336
 msgid "&Beep after each rip is done"
 msgstr "&Аломати овозӣ баъди ҳар каниш"
 
 #. i18n: file: ripconfig.ui:40
 #. i18n: ectx: property (text), widget (QLabel, TextLabel14)
-#: rc.cpp:312
+#: rc.cpp:339
 msgid "&Number of tracks to rip at a time:"
 msgstr "&Шумораи шиорҳои дар як вақт хондашаванда:"
 
 #. i18n: file: ripconfig.ui:65
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_autoEjectAfterRip)
-#: rc.cpp:315
+#: rc.cpp:342
 #, fuzzy
 msgid "&Auto-eject CD after last track is ripped"
 msgstr ""
@@ -934,19 +1028,19 @@ msgstr ""
 
 #. i18n: file: ripconfig.ui:92
 #. i18n: ectx: property (text), widget (QLabel, autoEjectLabel)
-#: rc.cpp:318
+#: rc.cpp:345
 msgid "Auto-&eject delay:"
 msgstr "Интизорӣ пеш аз &берункашии худкор:"
 
 #. i18n: file: ripconfig.ui:108
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_autoEjectDelay)
-#: rc.cpp:321
+#: rc.cpp:348
 msgid " seconds"
 msgstr " сонияҳо"
 
 #. i18n: file: ripconfig.ui:120
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_enableTempDir)
-#: rc.cpp:324
+#: rc.cpp:351
 #, fuzzy
 #| msgid "Default Temporary Directory"
 msgid "Use custom temporary directory"
@@ -954,7 +1048,7 @@ msgstr "Феҳристи Муваққатӣ бо Нобаёнӣ"
 
 #. i18n: file: ripconfig.ui:132
 #. i18n: ectx: property (text), widget (QLabel, temporaryDirectoryLabel)
-#: rc.cpp:327
+#: rc.cpp:354
 #, fuzzy
 #| msgid "Specify temporary directory"
 msgid "Temporary directory:"
@@ -962,62 +1056,55 @@ msgstr "Таъинсозии феҳристи муваққатӣ"
 
 #. i18n: file: tracks.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, Tracks)
-#: rc.cpp:330
+#: rc.cpp:357
 msgid "Tracks"
 msgstr "Шиорҳо"
 
 #. i18n: file: tracks.ui:39
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:333
+#: rc.cpp:360
 msgid "Device:"
 msgstr "Дастгоҳ:"
 
 #. i18n: file: tracks.ui:59
 #. i18n: ectx: property (text), item, widget (KComboBox, deviceCombo)
-#: rc.cpp:336
+#: rc.cpp:363
 msgid "/dev/cdrom"
 msgstr "/dev/cdrom"
 
 #. i18n: file: tracks.ui:91
 #. i18n: ectx: property (text), widget (QLabel, albumName)
-#: rc.cpp:339
+#: rc.cpp:366
 msgid "Unknown Artist - Unknown Album"
 msgstr "Иҷрокунандаи Номаълум - Албоми Номаълум"
 
 #. i18n: file: tracks.ui:120
 #. i18n: ectx: property (text), widget (QTreeWidget, trackListing)
-#: rc.cpp:342 tracksimp.cpp:375
+#: rc.cpp:369 tracksimp.cpp:375
 msgid "Rip"
 msgstr "Хондан"
 
 #. i18n: file: tracks.ui:130
 #. i18n: ectx: property (text), widget (QTreeWidget, trackListing)
-#: rc.cpp:348
+#: rc.cpp:375
 msgid "Length"
 msgstr "Дарозӣ"
 
-#. i18n: file: tracks.ui:135
-#. i18n: ectx: property (text), widget (QTreeWidget, trackListing)
-#: rc.cpp:351
-#, fuzzy
-msgid "Title"
-msgstr "Унвон:"
-
 #. i18n: file: tracks.ui:168
 #. i18n: ectx: property (text), widget (QPushButton, deselectAllTracksButton)
-#: rc.cpp:357
+#: rc.cpp:384
 msgid "&Deselect All Tracks"
 msgstr "Интихоби Ҳамаи Шиорҳоро &Рад кунед"
 
 #. i18n: file: wizard.ui:19
 #. i18n: ectx: property (windowTitle), widget (QDialog, fileWizard)
-#: rc.cpp:360
+#: rc.cpp:387
 msgid "File Location Wizard"
 msgstr "Устоди Мавҷеъи Файлҳо"
 
 #. i18n: file: wizard.ui:46
 #. i18n: ectx: property (text), widget (QLabel, TextLabel8)
-#: rc.cpp:364
+#: rc.cpp:391
 #, fuzzy, no-c-format
 msgid ""
 "When files have finished being processed, they are saved based upon the "
@@ -1038,106 +1125,106 @@ msgstr ""
 
 #. i18n: file: wizard.ui:95
 #. i18n: ectx: property (text), widget (QLabel, TextLabel9)
-#: rc.cpp:367
+#: rc.cpp:394
 msgid "&File location:"
 msgstr "Мавқеъи &файл:"
 
 #. i18n: file: wizard.ui:108
 #. i18n: ectx: property (text), widget (QLineEdit, fileFormat)
-#: rc.cpp:371
+#: rc.cpp:398
 #, no-c-format
 msgid "~/%{extension}/%{artist}/%{album}/%{artist} - %{album}.m3u"
 msgstr "~/%{extension}/%{artist}/%{album}/%{artist} - %{album}.m3u"
 
 #. i18n: file: wizard.ui:117
 #. i18n: ectx: property (text), widget (QLabel, exampleLabel)
-#: rc.cpp:374
+#: rc.cpp:401
 msgid "Example: ~/mp3/Staind/Lost Love/Staind - Lost Love.m3u"
 msgstr "Мисол: ~/mp3/Staind/Lost Love/Staind - Lost Love.m3u"
 
 #. i18n: file: wizard.ui:141
 #. i18n: ectx: property (text), widget (QPushButton, artistButton)
-#: rc.cpp:377
+#: rc.cpp:404
 msgid "&Artist"
 msgstr "&Иҷрокунанда"
 
 #. i18n: file: wizard.ui:148
 #. i18n: ectx: property (text), widget (QPushButton, homeDirButton)
-#: rc.cpp:380
+#: rc.cpp:407
 msgid "&Home Folder"
 msgstr "Феҳристи &Хонагӣ"
 
 #. i18n: file: wizard.ui:155
 #. i18n: ectx: property (text), widget (QPushButton, trackNumberButton)
-#: rc.cpp:383
+#: rc.cpp:410
 #, fuzzy
 msgid "&Track Number"
 msgstr "&Шиор"
 
 #. i18n: file: wizard.ui:162
 #. i18n: ectx: property (text), widget (QPushButton, extensionButton)
-#: rc.cpp:386
+#: rc.cpp:413
 msgid "&Extension"
 msgstr "&Вусъат"
 
 #. i18n: file: wizard.ui:169
 #. i18n: ectx: property (text), widget (QPushButton, trackTitleButton)
-#: rc.cpp:389
+#: rc.cpp:416
 #, fuzzy
 msgid "Track T&itle"
 msgstr "Trailer"
 
 #. i18n: file: wizard.ui:176
 #. i18n: ectx: property (text), widget (QPushButton, trackCommentButton)
-#: rc.cpp:392
+#: rc.cpp:419
 #, fuzzy
 msgid "T&rack Comment"
 msgstr "Шарҳдиҳӣ"
 
 #. i18n: file: wizard.ui:183
 #. i18n: ectx: property (text), widget (QPushButton, genreButton)
-#: rc.cpp:395
+#: rc.cpp:422
 msgid "&Genre"
 msgstr "&Услуб"
 
 #. i18n: file: wizard.ui:190
 #. i18n: ectx: property (text), widget (QPushButton, yearButton)
-#: rc.cpp:398
+#: rc.cpp:425
 msgid "&Year"
 msgstr "&Сол"
 
 #. i18n: file: wizard.ui:197
 #. i18n: ectx: property (text), widget (QPushButton, albumButton)
-#: rc.cpp:401
+#: rc.cpp:428
 msgid "Al&bum"
 msgstr "&Албом"
 
 #. i18n: file: wizard.ui:204
 #. i18n: ectx: property (text), widget (QPushButton, trackArtistButton)
-#: rc.cpp:404
+#: rc.cpp:431
 #, fuzzy
 msgid "Trac&k Artist"
 msgstr "&Иҷрокунанда"
 
 #. i18n: file: wizard.ui:211
 #. i18n: ectx: property (text), widget (QPushButton, commentButton)
-#: rc.cpp:407
+#: rc.cpp:434
 #, fuzzy
 msgid "Co&mment"
 msgstr "Шарҳдиҳӣ"
 
 #. i18n: file: wizard.ui:218
 #. i18n: ectx: property (text), widget (QPushButton, artistInitialButton)
-#: rc.cpp:410
+#: rc.cpp:437
 msgid "Arti&st's Initial"
 msgstr ""
 
-#: rc.cpp:417
+#: rc.cpp:444
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Абророва Хиромон"
 
-#: rc.cpp:418
+#: rc.cpp:445
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "H_Abrorova@rambler.ru"
@@ -1247,6 +1334,23 @@ msgstr "Мисол: %1"
 #: job.h:32
 msgid "Other"
 msgstr "Other"
+
+#~ msgid "&Encode File"
+#~ msgstr "Файли &Рамзгузошта"
+
+#, fuzzy
+#~ msgid "Encode &File..."
+#~ msgstr "Рамзикунии &Файл"
+
+#, fuzzy
+#~ msgid "&File to encode:"
+#~ msgstr "Файл барои рамзгузорӣ:"
+
+#~ msgid "Track:"
+#~ msgstr "Шиор:"
+
+#~ msgid "wav"
+#~ msgstr "wav"
 
 #~ msgid "Encoder Priority"
 #~ msgstr "Имтиёзҳои Рамзгузор"
