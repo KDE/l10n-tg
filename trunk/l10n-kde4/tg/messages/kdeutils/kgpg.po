@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-23 09:46+0100\n"
+"POT-Creation-Date: 2009-02-25 11:42+0100\n"
 "PO-Revision-Date: 2005-09-17 12:46+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -269,7 +269,7 @@ msgid "<qt><b>%1 key imported:</b><br/></qt>"
 msgid_plural "<qt><b>%1 keys imported:</b><br/></qt>"
 msgstr[0] "<qt><b>%2 калид(ҳо)и махфӣ ворид карда шудаанд.</b><br></qt>"
 
-#: keyservers.cpp:192 kgpginterface.cpp:1246
+#: keyservers.cpp:192 kgpginterface.cpp:1247
 msgid ""
 "No key imported... \n"
 "Check detailed log for more infos"
@@ -304,14 +304,16 @@ msgstr "%1 калидҳои мувофиқ пайдо гардиданд"
 msgid "You must choose a key."
 msgstr "Шумо бояд калидро интихоб кунед."
 
-#: keyservers.cpp:508
+#: keyservers.cpp:509
 #, kde-format
-msgid "ID %1, %2 bit %3 key, created %4 revoked"
+msgctxt "example: ID abc123xy, 1024-bit RSA key, created Jan 12 2009, revoked"
+msgid "ID %1, %2-bit %3 key, created %4, revoked"
 msgstr ""
 
-#: keyservers.cpp:514
+#: keyservers.cpp:516
 #, kde-format
-msgid "ID %1, %2 bit %3 key, created %4"
+msgctxt "example: ID abc123xy, 1024-bit RSA key, created Jan 12 2009"
+msgid "ID %1, %2-bit %3 key, created %4"
 msgstr ""
 
 #: keysmanager.cpp:107
@@ -782,7 +784,7 @@ msgstr "Содироти КАЛИДИ ШАХСӢ Ҳамчун"
 #| "Your PRIVATE key \"%1\" was successfully exported.\n"
 #| "DO NOT leave it in an insecure place."
 msgid ""
-"<qt>Your <b>private</b> key \"%1\" was successfully exported to<br/>%2 .<br/"
+"<qt>Your <b>private</b> key \"%1\" was successfully exported to<br/>%2.<br/"
 "><b>Do not</b> leave it in an insecure place.</qt>"
 msgstr ""
 "Калиди ШАХСИИ шумо \"%1\" бо мувафақият содир карда шуд.\n"
@@ -1165,12 +1167,12 @@ msgstr ""
 
 #. i18n: file: keyserver.ui:32
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: keytreeview.cpp:148 kgpgtextinterface.cpp:625 rc.cpp:292
+#: keytreeview.cpp:148 kgpgtextinterface.cpp:626 rc.cpp:292
 #, fuzzy
 msgid "Import"
 msgstr "&Воридот"
 
-#: keytreeview.cpp:149 kgpgtextinterface.cpp:625
+#: keytreeview.cpp:149 kgpgtextinterface.cpp:626
 #, fuzzy
 msgid "Do Not Import"
 msgstr "Вориди Калид"
@@ -1532,15 +1534,17 @@ msgstr " ё "
 #: kgpginterface.cpp:1010 kgpgtextinterface.cpp:114
 #, fuzzy, kde-format
 #| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
-msgid "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
-msgstr "<b>Гузарвожаи бад</b>. Танҳо %1 кӯшиш боқӣ монд.<br>"
+msgid "<p><b>Bad passphrase</b>. You have 1 try left.</p>"
+msgid_plural "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
+msgstr[0] "<b>Гузарвожаи бад</b>. Танҳо %1 кӯшиш боқӣ монд.<br>"
+msgstr[1] "<b>Гузарвожаи бад</b>. Танҳо %1 кӯшиш боқӣ монд.<br>"
 
-#: kgpginterface.cpp:1011 kgpgtextinterface.cpp:118
+#: kgpginterface.cpp:1012 kgpgtextinterface.cpp:119
 #, kde-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "Гузарвожаро барои <b>%1</b> ворид намоед"
 
-#: kgpginterface.cpp:1052
+#: kgpginterface.cpp:1053
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Signing key <b>%1</b> with key <b>%2</b> failed.<br>Do you want to "
@@ -1552,85 +1556,85 @@ msgstr ""
 "<qt>Имзокунии калиди <b>%1</b> бо калиди <b>%2</b> бо нокомӣ анҷомид."
 "<br>Мехоҳед, ки ин калидро дар усули нозиргоҳ имзо кунед?</qt>"
 
-#: kgpginterface.cpp:1205
+#: kgpginterface.cpp:1206
 #, fuzzy, kde-format
 msgid "<qt>%1 key processed.</qt>"
 msgid_plural "<qt>%1 keys processed.</qt>"
 msgstr[0] "<qt>%2 калид(ҳо)и махфӣ пардохта шудаанд.<br></qt>"
 
-#: kgpginterface.cpp:1208
+#: kgpginterface.cpp:1209
 #, fuzzy, kde-format
 msgid "<qt>One key without ID.</qt>"
 msgid_plural "<qt>%1 keys without ID.</qt>"
 msgstr[0] "<qt>%2 калид(ҳо) бе Шиноса мебошанд.<br></qt>"
 
-#: kgpginterface.cpp:1210
+#: kgpginterface.cpp:1211
 #, fuzzy, kde-format
 msgid "<qt><b>One key imported:</b></qt>"
 msgid_plural "<qt><b>%1 keys imported:</b></qt>"
 msgstr[0] "<qt><b>%2 калид(ҳо)и махфӣ ворид карда шудаанд.</b><br></qt>"
 
-#: kgpginterface.cpp:1212
+#: kgpginterface.cpp:1213
 #, fuzzy, kde-format
 msgid "<qt>One RSA key imported.</qt>"
 msgid_plural "<qt>%1 RSA keys imported.</qt>"
 msgstr[0] "<qt>%2 RSA калид(ҳо) ворид карда шудаанд.<br></qt>"
 
-#: kgpginterface.cpp:1214
+#: kgpginterface.cpp:1215
 #, fuzzy, kde-format
 msgid "<qt>One key unchanged.</qt>"
 msgid_plural "<qt>%1 keys unchanged.</qt>"
 msgstr[0] "<qt>%2 калид(ҳо)и махфӣ иваз карда шудаанд.<br></qt>"
 
-#: kgpginterface.cpp:1216
+#: kgpginterface.cpp:1217
 #, fuzzy, kde-format
 msgid "<qt>One user ID imported.</qt>"
 msgid_plural "<qt>%1 user IDs imported.</qt>"
 msgstr[0] "<qt>%2 Шиноса(ҳо)и корванд ворид карда шудаанд.<br></qt>"
 
-#: kgpginterface.cpp:1218
+#: kgpginterface.cpp:1219
 #, fuzzy, kde-format
 msgid "<qt>One subkey imported.</qt>"
 msgid_plural "<qt>%1 subkeys imported.</qt>"
 msgstr[0] "<qt>%2 зеркалид(ҳо) ворид карда шудаанд.<br></qt>"
 
-#: kgpginterface.cpp:1220
+#: kgpginterface.cpp:1221
 #, fuzzy, kde-format
 msgid "<qt>One signature imported.</qt>"
 msgid_plural "<qt>%1 signatures imported.</qt>"
 msgstr[0] "<qt>%2 имзо(ҳо) ворид карда шудаанд.<br></qt>"
 
-#: kgpginterface.cpp:1223
+#: kgpginterface.cpp:1224
 #, fuzzy, kde-format
 msgid "<qt>One revocation certificate imported.</qt>"
 msgid_plural "<qt>%1 revocation certificates imported.</qt>"
 msgstr[0] "<qt>%2 сертификат(ҳо)и бозхонӣ ворид карда шудаанд.<br></qt>"
 
-#: kgpginterface.cpp:1229
+#: kgpginterface.cpp:1230
 #, fuzzy, kde-format
 msgid "<qt>One secret key processed.</qt>"
 msgid_plural "<qt>%1 secret keys processed.</qt>"
 msgstr[0] "<qt>%2 калид(ҳо)и махфӣ пардохта шудаанд.<br></qt>"
 
-#: kgpginterface.cpp:1233
+#: kgpginterface.cpp:1234
 #, fuzzy, kde-format
 msgid "<qt><b>One secret key imported.</b></qt>"
 msgid_plural "<qt><b>%1 secret keys imported.</b></qt>"
 msgstr[0] "<qt><b>%2 калид(ҳо)и махфӣ ворид карда шудаанд.</b><br></qt>"
 
-#: kgpginterface.cpp:1235
+#: kgpginterface.cpp:1236
 #, fuzzy, kde-format
 msgid "<qt>One secret key unchanged.</qt>"
 msgid_plural "<qt>%1 secret keys unchanged.</qt>"
 msgstr[0] "<qt>%2 калид(ҳо)и махфӣ иваз карда шудаанд.<br></qt>"
 
-#: kgpginterface.cpp:1237
+#: kgpginterface.cpp:1238
 #, fuzzy, kde-format
 msgid "<qt>One secret key not imported.</qt>"
 msgid_plural "<qt>%1 secret keys not imported.</qt>"
 msgstr[0] "<qt>%2 калид(ҳо)и махфӣ ворид карда нашудаанд.<br></qt>"
 
-#: kgpginterface.cpp:1240
+#: kgpginterface.cpp:1241
 #, fuzzy
 #| msgid ""
 #| "<qt><br><b>You have imported a secret key.</b> <br>Please note that "
@@ -1649,11 +1653,11 @@ msgstr ""
 "бояд калидро таҳрир кунед (пахши дуборп дар он) ва боварии онро ба Пурра ё "
 "қатъӣ барқарор кунед.</qt>"
 
-#: kgpginterface.cpp:1491
+#: kgpginterface.cpp:1492
 msgid "Creation of the revocation certificate failed..."
 msgstr "Эҷод кардани сертификати бозхонӣ бо нокомӣ анҷомид..."
 
-#: kgpginterface.cpp:1522
+#: kgpginterface.cpp:1523
 #, fuzzy, kde-format
 #| msgid "<qt>%1 Enter passphrase for <b>%2</b>:</qt>"
 msgid "<qt>Enter passphrase for <b>%1</b>:</qt>"
@@ -1743,13 +1747,17 @@ msgstr ""
 msgid "&Algorithm:"
 msgstr "Алгоритм:"
 
-#: kgpgkeygenerate.cpp:99
+#: kgpgkeygenerate.cpp:99 core/convert.cpp:39
 #, fuzzy
 #| msgid "ElGamal"
+msgctxt "Encryption algorithm"
 msgid "DSA & ElGamal"
 msgstr "ElGamal"
 
-#: kgpgkeygenerate.cpp:100
+#: kgpgkeygenerate.cpp:100 core/convert.cpp:36
+#, fuzzy
+#| msgid "RSA"
+msgctxt "Encryption algorithm"
 msgid "RSA"
 msgstr "RSA"
 
@@ -1950,28 +1958,28 @@ msgstr ""
 "<b>Шиносаи корванд пайдо нагардид</b>. Ҳамаи калидҳои махфӣ истифода хоҳанд "
 "шуд.<br>"
 
-#: kgpgtextinterface.cpp:116
+#: kgpgtextinterface.cpp:117
 #, fuzzy
 #| msgid "Bad passphrase"
 msgid "Enter passphrase"
 msgstr "Гузарвожаи нодуруст"
 
-#: kgpgtextinterface.cpp:308
+#: kgpgtextinterface.cpp:309
 msgid "Bad MDC detected. The encrypted text has been manipulated."
 msgstr "MDC-и бад муайян гардид. Матни рамзкунонишуда дасткорӣ карда шудааст."
 
-#: kgpgtextinterface.cpp:399 kgpgtextinterface.cpp:592
-#: kgpgtextinterface.cpp:619
+#: kgpgtextinterface.cpp:400 kgpgtextinterface.cpp:593
+#: kgpgtextinterface.cpp:620
 msgid "No signature found."
 msgstr "Имзо пайдо нагардид."
 
-#: kgpgtextinterface.cpp:595
+#: kgpgtextinterface.cpp:596
 #, fuzzy, kde-format
 #| msgid "<qt>Good signature from:<br><b>%1</b><br>Key ID: %2</qt>"
 msgid "<qt>Good signature from:<br /><b>%1</b><br />Key ID: %2<br /></qt>"
 msgstr "<qt>Имзои хуб аз:<br><b>%1</b><br>Шиносаи Калид: %2</qt>"
 
-#: kgpgtextinterface.cpp:600
+#: kgpgtextinterface.cpp:601
 #, fuzzy, kde-format
 msgid ""
 "<qt><b>BAD signature</b> from:<br /> %1<br />Key id: %2<br /><br /><b>The "
@@ -1980,20 +1988,20 @@ msgstr ""
 "<qt><b>Имзои НОДУРУСТ</b> аз:<br> %1<br>Шиносаи калид: %2<br><br><b>Файл "
 "хароб гаштааст!</b></qt>"
 
-#: kgpgtextinterface.cpp:607
+#: kgpgtextinterface.cpp:608
 #, fuzzy
 #| msgid "The signature is valid, but the key is untrusted"
 msgid "<qt>The signature is valid, but the key is untrusted<br /></qt>"
 msgstr "Имзо дастрас аст аммо калид нодуруст аст"
 
-#: kgpgtextinterface.cpp:609
+#: kgpgtextinterface.cpp:610
 #, fuzzy
 #| msgid "The signature is valid, and the key is ultimately trusted"
 msgid ""
 "<qt>The signature is valid, and the key is ultimately trusted<br /></qt>"
 msgstr "Имзо дастрас аст ва калид қатъӣ дуруст аст"
 
-#: kgpgtextinterface.cpp:624 editor/kgpgview.cpp:397
+#: kgpgtextinterface.cpp:625 editor/kgpgview.cpp:397
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -3769,13 +3777,6 @@ msgid ""
 "work.</p>\n"
 msgstr ""
 
-#: core/convert.cpp:36
-#, fuzzy
-#| msgid "RSA"
-msgctxt "Encryption algorithm"
-msgid "RSA"
-msgstr "RSA"
-
 #: core/convert.cpp:37
 #, fuzzy
 #| msgid "DSA"
@@ -3788,13 +3789,6 @@ msgstr "DSA"
 #| msgid "ElGamal"
 msgctxt "Encryption algorithm"
 msgid "ElGamal"
-msgstr "ElGamal"
-
-#: core/convert.cpp:39
-#, fuzzy
-#| msgid "ElGamal"
-msgctxt "Encryption algorithm"
-msgid "DSA - ElGamal"
 msgstr "ElGamal"
 
 #: core/convert.cpp:41
@@ -4156,6 +4150,15 @@ msgid "1 key"
 msgid_plural "%1 keys"
 msgstr[0] "%1 зеркалид"
 msgstr[1] "%1 зеркалид"
+
+#~ msgid "RSA"
+#~ msgstr "RSA"
+
+#, fuzzy
+#~| msgid "ElGamal"
+#~ msgctxt "Encryption algorithm"
+#~ msgid "DSA - ElGamal"
+#~ msgstr "ElGamal"
 
 #~ msgid "Filter Search"
 #~ msgstr "Филтри ҷустуҷӯ"
