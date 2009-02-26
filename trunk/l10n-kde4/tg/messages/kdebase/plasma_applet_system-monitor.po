@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_system-monitor\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-25 11:41+0100\n"
+"POT-Creation-Date: 2009-02-26 10:41+0100\n"
 "PO-Revision-Date: 2009-01-14 15:25+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -24,11 +24,11 @@ msgstr "CPU"
 msgid "CPUs"
 msgstr "CPUs"
 
-#: cpu.cpp:183 net.cpp:194 temperature.cpp:116
+#: cpu.cpp:183 net.cpp:194 ram.cpp:183 temperature.cpp:116
 msgid "Advanced"
 msgstr ""
 
-#: cpu.cpp:191 net.cpp:202 temperature.cpp:124
+#: cpu.cpp:191 net.cpp:202 ram.cpp:191 temperature.cpp:124
 #, fuzzy
 #| msgid "seconds"
 msgid "second"
@@ -103,6 +103,10 @@ msgstr "Интерфейси шабака"
 msgid "Interfaces"
 msgstr "Интерфейс"
 
+#: ram.cpp:45 ram.cpp:156 ram.cpp:176
+msgid "RAM"
+msgstr ""
+
 #. i18n: file: cpu-config-adv.ui:17
 #. i18n: ectx: property (text), widget (QCheckBox, showTopBarCheckBox)
 #: rc.cpp:3
@@ -113,9 +117,11 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, showBackgroundCheckBox)
 #. i18n: file: net-config-adv.ui:24
 #. i18n: ectx: property (text), widget (QCheckBox, showBackgroundCheckBox)
+#. i18n: file: ram-config-adv.ui:24
+#. i18n: ectx: property (text), widget (QCheckBox, showBackgroundCheckBox)
 #. i18n: file: temperature-config-adv.ui:31
 #. i18n: ectx: property (text), widget (QCheckBox, showBackgroundCheckBox)
-#: rc.cpp:6 rc.cpp:27 rc.cpp:48
+#: rc.cpp:6 rc.cpp:27 rc.cpp:45 rc.cpp:66
 #, fuzzy
 #| msgid "Show plotters"
 msgid "Show Plotter Background"
@@ -123,9 +129,11 @@ msgstr "Намоиши плотер"
 
 #. i18n: file: cpu-config-adv.ui:33
 #. i18n: ectx: property (text), widget (QLabel, graphLabel)
+#. i18n: file: ram-config-adv.ui:33
+#. i18n: ectx: property (text), widget (QLabel, graphLabel)
 #. i18n: file: temperature-config-adv.ui:40
 #. i18n: ectx: property (text), widget (QLabel, graphLabel)
-#: rc.cpp:9 rc.cpp:51
+#: rc.cpp:9 rc.cpp:48 rc.cpp:69
 msgid "Graph Color:"
 msgstr ""
 
@@ -141,9 +149,11 @@ msgstr "&CPUs:"
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: file: net-config.ui:48
 #. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: file: ram-config.ui:47
+#. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: file: temperature-config.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:15 rc.cpp:21 rc.cpp:39 rc.cpp:57
+#: rc.cpp:15 rc.cpp:21 rc.cpp:39 rc.cpp:54 rc.cpp:75
 msgid "Update &interval:"
 msgstr "Фосилаи &навсозӣ:"
 
@@ -157,7 +167,7 @@ msgstr "Дискҳои &компютерӣ:"
 #. i18n: ectx: property (text), widget (QCheckBox, showTopBarCheckBox)
 #. i18n: file: temperature-config-adv.ui:24
 #. i18n: ectx: property (text), widget (QCheckBox, showTopBarCheckBox)
-#: rc.cpp:24 rc.cpp:45
+#: rc.cpp:24 rc.cpp:63
 msgid "Show Interface Name Above The Graph"
 msgstr ""
 
@@ -179,9 +189,29 @@ msgstr ""
 msgid "&Network Interfaces:"
 msgstr "&Воситаҳои шабака"
 
+#. i18n: file: ram-config-adv.ui:17
+#. i18n: ectx: property (text), widget (QCheckBox, showTopBarCheckBox)
+#: rc.cpp:42
+msgid "Show RAM Name Above The Graph"
+msgstr ""
+
+#. i18n: file: ram-config.ui:22
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:51
+msgid "&Memory:"
+msgstr ""
+
+#. i18n: file: ram-config.ui:83
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:57
+#, fuzzy
+#| msgid "seconds"
+msgid "seconds"
+msgstr "сония"
+
 #. i18n: file: temperature-config-adv.ui:17
 #. i18n: ectx: property (text), widget (QCheckBox, showPlotters)
-#: rc.cpp:42
+#: rc.cpp:60
 #, fuzzy
 #| msgid "Show plotters"
 msgid "Show Plotters"
@@ -189,7 +219,7 @@ msgstr "Намоиши плотер"
 
 #. i18n: file: temperature-config.ui:20
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:54
+#: rc.cpp:72
 msgid "&Available temperatures:"
 msgstr "&Ҳароратҳои дастрас"
 
@@ -201,12 +231,12 @@ msgstr "Ҳарорат"
 msgid "Sensor"
 msgstr "Сенсор"
 
-#: temperature.cpp:257
+#: temperature.cpp:265
 #, kde-format
 msgid "%1 °C"
 msgstr "%1 °C"
 
-#: temperature.cpp:259
+#: temperature.cpp:267
 #, kde-format
 msgid "%1 °F"
 msgstr "%1 °F"

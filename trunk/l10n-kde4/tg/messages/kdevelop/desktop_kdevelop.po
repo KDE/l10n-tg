@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop_kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-25 10:54+0000\n"
+"POT-Creation-Date: 2009-02-26 09:53+0000\n"
 "PO-Revision-Date: 2005-12-21 14:57+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: \n"
@@ -162,7 +162,7 @@ msgctxt "Name"
 msgid "GDB Support"
 msgstr "Ёрӣ намудани забони C"
 
-#: debuggers/gdb/kdevgdb.desktop:40
+#: debuggers/gdb/kdevgdb.desktop:40 debuggers/valgrind/kdevvalgrind.desktop:46
 msgctxt "GenericName"
 msgid "Debugger Frontend"
 msgstr "Интеграл ёфтани созгузор"
@@ -199,17 +199,12 @@ msgctxt "Name"
 msgid "Valgrind Support"
 msgstr "Интеграл ёфтани созгузор"
 
-#: debuggers/valgrind/kdevvalgrind.desktop:46
-msgctxt "GenericName"
-msgid "Valgrind Frontend"
-msgstr "Интерфейс дар Valgrind "
-
 #: documentation/qthelp/kdevqthelp.desktop:4
 msgctxt "Comment"
 msgid "This plugin provides QtHelp integration"
 msgstr ""
 
-#: documentation/qthelp/kdevqthelp.desktop:13
+#: documentation/qthelp/kdevqthelp.desktop:5
 #, fuzzy
 #| msgctxt "Comment"
 #| msgid "KDevelop"
@@ -217,7 +212,7 @@ msgctxt "Name"
 msgid "KDevQtHelp"
 msgstr "KDevelop"
 
-#: documentation/qthelp/kdevqthelp.desktop:16
+#: documentation/qthelp/kdevqthelp.desktop:6
 msgctxt "GenericName"
 msgid "Qt Help"
 msgstr ""
@@ -235,17 +230,19 @@ msgstr "Модул барои қолабгузории код аз рӯи қон
 
 #: formatters/kdevastyle.desktop:25
 #, fuzzy
-#| msgctxt "GenericName"
-#| msgid "Source Code Formatter"
+#| msgctxt "Name"
+#| msgid "Source Formatter Interface"
 msgctxt "Name"
-msgid "Source Code Formatter"
-msgstr "Қолабгузори коди берунӣ"
+msgid "AStyle Formatter Backend"
+msgstr "Интерфейс қолабгузори коди берунӣ"
 
 #: formatters/kdevastyle.desktop:42
 #, fuzzy
+#| msgctxt "Name"
+#| msgid "Source Formatter Interface"
 msgctxt "GenericName"
-msgid "AStyle Plugin"
-msgstr "Якум модули ман дар Kate"
+msgid "Formatter Backend"
+msgstr "Интерфейс қолабгузори коди берунӣ"
 
 #: formatters/kdevindent.desktop:5
 msgctxt "Comment"
@@ -254,9 +251,11 @@ msgstr ""
 
 #: formatters/kdevindent.desktop:23
 #, fuzzy
+#| msgctxt "Name"
+#| msgid "Source Formatter Interface"
 msgctxt "Name"
-msgid "KDevIndent"
-msgstr "KDevCppSupport"
+msgid "Indent Formatter Backend"
+msgstr "Интерфейс қолабгузори коди берунӣ"
 
 #: languages/cpp/kdevcppsupport.desktop:4
 #, fuzzy
@@ -265,21 +264,24 @@ msgid "C/C++ Language Support"
 msgstr "Ёри намудани забони Ada "
 
 #: languages/cpp/kdevcppsupport.desktop:31
+#, fuzzy
+#| msgctxt "Comment"
+#| msgid "C++ Support"
 msgctxt "Name"
-msgid "KDevCppSupport"
-msgstr "KDevCppSupport"
+msgid "C++ Support"
+msgstr "Ёрӣ намудани забони C++ "
 
 #: languages/cpp/kdevcppsupport.desktop:42
 #, fuzzy
 msgctxt "GenericName"
-msgid "C/C++ Support"
-msgstr "Ёрӣ намудани забони C++ "
+msgid "Language Support"
+msgstr "Ёри намудани забони Ada "
 
 #: projectbuilders/cmakebuilder/kdevcmakebuilder.desktop:3
 #, fuzzy
 msgctxt "Name"
-msgid "KDevCMakeBuilder"
-msgstr "KDevMakeView"
+msgid "CMake Project Builder"
+msgstr "Лоиҳаи интерфейс"
 
 #: projectbuilders/cmakebuilder/kdevcmakebuilder.desktop:7
 #, fuzzy
@@ -300,8 +302,8 @@ msgstr ""
 #: projectbuilders/makebuilder/kdevmakebuilder.desktop:3
 #, fuzzy
 msgctxt "Name"
-msgid "KDevMakeBuilder"
-msgstr "KDevMakeView"
+msgid "Make Project Builder"
+msgstr "Лоиҳаи интерфейс"
 
 #: projectbuilders/makebuilder/kdevmakebuilder.desktop:9
 #, fuzzy
@@ -310,7 +312,6 @@ msgid "KDevelop Make Builder"
 msgstr "KDevMakeView"
 
 #: projectbuilders/qmakebuilder/kcm_kdev_qmakebuilder.desktop:13
-#: projectmanagers/qmake/kdevqmakemanager.desktop:3
 msgctxt "Name"
 msgid "QMake"
 msgstr ""
@@ -323,9 +324,11 @@ msgstr "Интихоби интерфейси истифодабаранда"
 
 #: projectbuilders/qmakebuilder/kdevqmakebuilder.desktop:3
 #, fuzzy
+#| msgctxt "GenericName"
+#| msgid "QMake Project"
 msgctxt "Name"
-msgid "KDevQMakeBuilder"
-msgstr "KDevMakeView"
+msgid "QMake Project Builder"
+msgstr "Лоиҳаи QMake"
 
 #: projectbuilders/qmakebuilder/kdevqmakebuilder.desktop:8
 #, fuzzy
@@ -334,7 +337,6 @@ msgid "Builds QMake Projects"
 msgstr "Лоиҳаи QMake "
 
 #: projectmanagers/cmake/kcm_kdevcmake_settings.desktop:13
-#: projectmanagers/cmake/kdevcmakemanager.desktop:3
 msgctxt "Name"
 msgid "CMake"
 msgstr ""
@@ -344,21 +346,34 @@ msgctxt "Comment"
 msgid "Configure CMake settings"
 msgstr ""
 
+#: projectmanagers/cmake/kdevcmakemanager.desktop:3
+#, fuzzy
+msgctxt "Name"
+msgid "CMake Project Manager"
+msgstr "Лоиҳаи TMake"
+
 #: projectmanagers/cmake/kdevcmakemanager.desktop:7
 msgctxt "Comment"
 msgid "Allows KDevelop to manager CMake based projects"
 msgstr ""
 
 #: projectmanagers/custommake/kdevcustommakemanager.desktop:3
+#, fuzzy
 msgctxt "Name"
-msgid "Custom Makefile"
-msgstr ""
+msgid "Custom Makefile Project Manager"
+msgstr "Лоиҳаи TMake"
 
 #: projectmanagers/custommake/kdevcustommakemanager.desktop:20
 #, fuzzy
 msgctxt "Comment"
 msgid "Imports and edits custom make projects"
 msgstr "Нақшаи Automake"
+
+#: projectmanagers/qmake/kdevqmakemanager.desktop:3
+#, fuzzy
+msgctxt "Name"
+msgid "QMake Project Manager"
+msgstr "Лоиҳаи TMake"
 
 #: projectmanagers/qmake/kdevqmakemanager.desktop:7
 #, fuzzy
@@ -373,7 +388,7 @@ msgstr ""
 
 #: tools/coverage/kdevcoverage.desktop:23
 msgctxt "Name"
-msgid "Code coverage report"
+msgid "Code Coverage Report"
 msgstr ""
 
 #: tools/documentview/kdevdocumentview.desktop:4
@@ -393,7 +408,7 @@ msgstr "Аз назар бо ҳуҷҷатнок гузарондан "
 #: tools/documentview/kdevdocumentview.desktop:50
 #, fuzzy
 msgctxt "GenericName"
-msgid "Document View"
+msgid "Document Tool"
 msgstr "Аз назар бо ҳуҷҷатнок гузарондан "
 
 #: tools/documentview/settings/kcm_documentview_settings.desktop:37
@@ -416,17 +431,14 @@ msgstr ""
 "ботартиб имкон медиҳад бо якчанд файлҳо ковтуковро барпо намоед."
 
 #: tools/grepview/kdevgrepview.desktop:22
-#, fuzzy
-#| msgctxt "GenericName"
-#| msgid "Final Packaging Support"
 msgctxt "Name"
-msgid "File Searching Support"
-msgstr "Ҷамъкунӣ ва ҷорӣ намудани пакетҳо"
+msgid "Find In Files"
+msgstr ""
 
 #: tools/grepview/kdevgrepview.desktop:39
 msgctxt "GenericName"
-msgid "Grep Frontend"
-msgstr "Интегратсияи Grep "
+msgid "Search Tool"
+msgstr ""
 
 #: tools/qtdesigner/kdevqtdesigner.desktop:4
 msgctxt "Comment"
@@ -435,15 +447,19 @@ msgstr ""
 
 #: tools/qtdesigner/kdevqtdesigner.desktop:28
 #, fuzzy
+#| msgctxt "GenericName"
+#| msgid "ClearCase Integration"
 msgctxt "Name"
-msgid "Qt Designer Support"
-msgstr "KDevPerlSupport"
+msgid "Qt Designer Integration"
+msgstr "Интегратсияи ClearCase "
 
 #: tools/qtdesigner/kdevqtdesigner.desktop:53
 #, fuzzy
+#| msgctxt "GenericName"
+#| msgid "ClearCase Integration"
 msgctxt "GenericName"
-msgid "KDevelop Qt Designer Support"
-msgstr "Дизайнгари KDevelop"
+msgid "GUI Designer Integration"
+msgstr "Интегратсияи ClearCase "
 
 #: xtest/config/kcm_kdev_veritassettings.desktop:13
 msgctxt "Name"
@@ -463,13 +479,79 @@ msgstr ""
 
 #: xtest/qtest/kdevqtest.desktop:25
 msgctxt "Name"
-msgid "QTest runner"
+msgid "QTest Runner"
 msgstr ""
 
 #: xtest/qtest/kdevqtest.desktop:44
 msgctxt "GenericName"
 msgid "Unit test runner"
 msgstr ""
+
+#~ msgctxt "GenericName"
+#~ msgid "Valgrind Frontend"
+#~ msgstr "Интерфейс дар Valgrind "
+
+#, fuzzy
+#~| msgctxt "GenericName"
+#~| msgid "Source Code Formatter"
+#~ msgctxt "Name"
+#~ msgid "Source Code Formatter"
+#~ msgstr "Қолабгузори коди берунӣ"
+
+#, fuzzy
+#~ msgctxt "GenericName"
+#~ msgid "AStyle Plugin"
+#~ msgstr "Якум модули ман дар Kate"
+
+#, fuzzy
+#~ msgctxt "Name"
+#~ msgid "KDevIndent"
+#~ msgstr "KDevCppSupport"
+
+#~ msgctxt "Name"
+#~ msgid "KDevCppSupport"
+#~ msgstr "KDevCppSupport"
+
+#, fuzzy
+#~ msgctxt "GenericName"
+#~ msgid "C/C++ Support"
+#~ msgstr "Ёрӣ намудани забони C++ "
+
+#, fuzzy
+#~ msgctxt "Name"
+#~ msgid "KDevCMakeBuilder"
+#~ msgstr "KDevMakeView"
+
+#, fuzzy
+#~ msgctxt "Name"
+#~ msgid "KDevMakeBuilder"
+#~ msgstr "KDevMakeView"
+
+#, fuzzy
+#~ msgctxt "Name"
+#~ msgid "KDevQMakeBuilder"
+#~ msgstr "KDevMakeView"
+
+#, fuzzy
+#~| msgctxt "GenericName"
+#~| msgid "Final Packaging Support"
+#~ msgctxt "Name"
+#~ msgid "File Searching Support"
+#~ msgstr "Ҷамъкунӣ ва ҷорӣ намудани пакетҳо"
+
+#~ msgctxt "GenericName"
+#~ msgid "Grep Frontend"
+#~ msgstr "Интегратсияи Grep "
+
+#, fuzzy
+#~ msgctxt "Name"
+#~ msgid "Qt Designer Support"
+#~ msgstr "KDevPerlSupport"
+
+#, fuzzy
+#~ msgctxt "GenericName"
+#~ msgid "KDevelop Qt Designer Support"
+#~ msgstr "Дизайнгари KDevelop"
 
 #~ msgctxt "Comment"
 #~ msgid "Application Wizard"
@@ -579,11 +661,6 @@ msgstr ""
 #~ msgctxt "Comment"
 #~ msgid "KDevProjectManager"
 #~ msgstr "Файли лоиҳаи KDevelop "
-
-#, fuzzy
-#~ msgctxt "GenericName"
-#~ msgid "Project Manager"
-#~ msgstr "Лоиҳаи TMake"
 
 #, fuzzy
 #~| msgctxt "Name"
@@ -720,11 +797,6 @@ msgstr ""
 
 #, fuzzy
 #~ msgctxt "Name"
-#~ msgid "KDevelop Project Builder"
-#~ msgstr "Лоиҳаи интерфейс"
-
-#, fuzzy
-#~ msgctxt "Name"
 #~ msgid "Project"
 #~ msgstr "Лоиҳаи Ada"
 
@@ -750,11 +822,6 @@ msgstr ""
 #~ msgctxt "GenericName"
 #~ msgid "Documentation Viewer"
 #~ msgstr "Аз назар бо ҳуҷҷатнок гузарондан "
-
-#, fuzzy
-#~ msgctxt "Comment"
-#~ msgid "C# Language Support"
-#~ msgstr "Ёри намудани забони Ada "
 
 #, fuzzy
 #~ msgctxt "Name"
@@ -903,10 +970,6 @@ msgstr ""
 #~ msgctxt "Name"
 #~ msgid "KDevTrollProject"
 #~ msgstr "KDevTrollProject"
-
-#~ msgctxt "GenericName"
-#~ msgid "QMake Project"
-#~ msgstr "Лоиҳаи QMake"
 
 #~ msgctxt "Comment"
 #~ msgid "Scripting Language Project"
@@ -1404,10 +1467,6 @@ msgstr ""
 #~ msgid "GppOptions"
 #~ msgstr "GppOptions"
 
-#~ msgctxt "Comment"
-#~ msgid "C++ Support"
-#~ msgstr "Ёрӣ намудани забони C++ "
-
 #, fuzzy
 #~ msgctxt "Name"
 #~ msgid "KDevPCSCustomImporter"
@@ -1697,10 +1756,6 @@ msgstr ""
 #~ msgctxt "Name"
 #~ msgid "Make Frontend Interface"
 #~ msgstr "Интерфейс пӯсти Make "
-
-#~ msgctxt "Name"
-#~ msgid "Source Formatter Interface"
-#~ msgstr "Интерфейс қолабгузори коди берунӣ"
 
 #~ msgctxt "Name"
 #~ msgid "KDevelop Version Control Interface"
@@ -2229,10 +2284,6 @@ msgstr ""
 #~ msgctxt "Name"
 #~ msgid "KDevClearCase"
 #~ msgstr "KDevClearCase"
-
-#~ msgctxt "GenericName"
-#~ msgid "ClearCase Integration"
-#~ msgstr "Интегратсияи ClearCase "
 
 #, fuzzy
 #~ msgctxt "Name"
