@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-02 10:00+0100\n"
+"POT-Creation-Date: 2009-03-03 10:24+0100\n"
 "PO-Revision-Date: 2005-09-23 19:18+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -21,12 +21,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: koeventpopupmenu.cpp:55 views/todoview/kotodoview.cpp:150
-#: actionmanager.cpp:517 actionmanager.cpp:1595 actionmanager.cpp:1628
+#: actionmanager.cpp:527 actionmanager.cpp:1605 actionmanager.cpp:1638
 msgid "&Show"
 msgstr "&Нишон додан"
 
 #: koeventpopupmenu.cpp:56 views/todoview/kotodoview.cpp:153
-#: actionmanager.cpp:522 actionmanager.cpp:1598 actionmanager.cpp:1629
+#: actionmanager.cpp:532 actionmanager.cpp:1608 actionmanager.cpp:1639
 #: resourceview.cpp:669
 msgid "&Edit..."
 msgstr "&Таъғир додан..."
@@ -1760,18 +1760,18 @@ msgstr ""
 #. i18n: file: filteredit_base.ui:35
 #. i18n: ectx: property (text), widget (QPushButton, mDeleteButton)
 #: views/todoview/kotodoview.cpp:169 views/journalview/journalview.cpp:185
-#: calendarview.cpp:825 actionmanager.cpp:330 actionmanager.cpp:527
-#: actionmanager.cpp:1601 actionmanager.cpp:1630 rc.cpp:6 rc.cpp:2852
+#: calendarview.cpp:825 actionmanager.cpp:340 actionmanager.cpp:537
+#: actionmanager.cpp:1611 actionmanager.cpp:1640 rc.cpp:6 rc.cpp:2852
 #, fuzzy
 msgid "&Delete"
 msgstr "Нест кардани %1"
 
-#: views/todoview/kotodoview.cpp:176 kodaymatrix.cpp:420 actionmanager.cpp:495
+#: views/todoview/kotodoview.cpp:176 kodaymatrix.cpp:420 actionmanager.cpp:505
 #, fuzzy
 msgid "New &To-do..."
 msgstr "Масъалаи &нав"
 
-#: views/todoview/kotodoview.cpp:179 actionmanager.cpp:502
+#: views/todoview/kotodoview.cpp:179 actionmanager.cpp:512
 #, fuzzy
 msgid "New Su&b-to-do..."
 msgstr "Зермасъалаи &нав..."
@@ -3134,11 +3134,11 @@ msgstr "(Ном нест)"
 msgid "(EmptyEmail)"
 msgstr "(Адреси почтаи электронӣ мавҷуд нест)"
 
-#: kodaymatrix.cpp:418 actionmanager.cpp:488
+#: kodaymatrix.cpp:418 actionmanager.cpp:498
 msgid "New E&vent..."
 msgstr "Ҳ&одисаи нав..."
 
-#: kodaymatrix.cpp:422 actionmanager.cpp:510
+#: kodaymatrix.cpp:422 actionmanager.cpp:520
 #, fuzzy
 msgid "New &Journal..."
 msgstr "&Журнал"
@@ -3185,7 +3185,7 @@ msgstr ""
 msgid "Delete Old Items"
 msgstr "Нобуд кардани ҳодисаҳои кӯҳнашуда"
 
-#: eventarchiver.cpp:220
+#: eventarchiver.cpp:220 calendarview.cpp:1622 calendarview.cpp:1663
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr ""
@@ -3382,7 +3382,7 @@ msgid "The item \"%1\" will be permanently deleted."
 msgstr "Ин чизи сабт карда шуда тамоман нест карда мешавад."
 
 #: calendarview.cpp:824 calendarview.cpp:1268 calendarview.cpp:1281
-#: calendarview.cpp:2117 calendarview.cpp:2180 calendarview.cpp:2191
+#: calendarview.cpp:2140 calendarview.cpp:2203 calendarview.cpp:2214
 msgid "KOrganizer Confirmation"
 msgstr "Тасдиқи KOrganizer"
 
@@ -3518,50 +3518,66 @@ msgid ""
 msgstr ""
 
 #: calendarview.cpp:1607
-msgid "*.ics|ICalendars"
+#, fuzzy
+#| msgid "*.ics|ICalendars"
+msgid "*.ics|iCalendars"
 msgstr "*.ics|IТақвимҳо"
 
-#: calendarview.cpp:1625
+#: calendarview.cpp:1626
+#, fuzzy, kde-format
+#| msgid "Cannot write archive file %1."
+msgctxt "@info"
+msgid "Cannot write iCalendar file %1. %2"
+msgstr "Нигоҳ доштани файли архив натавонист %1."
+
+#: calendarview.cpp:1637
 msgid "The journal entries can not be exported to a vCalendar file."
 msgstr "Даромадҳои маҷалла ба файли vТақвим содирот карда намешавад."
 
-#: calendarview.cpp:1626
+#: calendarview.cpp:1638
 msgid "Data Loss Warning"
 msgstr "Пешаки огоҳ кардани гум шудани маълумотҳо"
 
-#: calendarview.cpp:1627 actionmanager.cpp:1040
+#: calendarview.cpp:1639 actionmanager.cpp:1050
 msgid "Proceed"
 msgstr "Идома кардан"
 
-#: calendarview.cpp:1637
+#: calendarview.cpp:1649
 msgid "*.vcs|vCalendars"
 msgstr "*.vcs|vТақвимҳо"
 
-#: calendarview.cpp:1663
+#: calendarview.cpp:1667
+#, fuzzy, kde-format
+#| msgid "Cannot write archive file %1."
+msgctxt "@info"
+msgid "Cannot write vCalendar file %1. %2"
+msgstr "Нигоҳ доштани файли архив натавонист %1."
+
+#: calendarview.cpp:1686
 msgid "&Previous Day"
 msgstr "&Рӯзи пешина"
 
-#: calendarview.cpp:1664 actionmanager.cpp:366 actionmanager.cpp:1320
+#: calendarview.cpp:1687 actionmanager.cpp:376 actionmanager.cpp:1330
 #, kde-format
 msgid "&Next Day"
 msgid_plural "&Next %1 Days"
 msgstr[0] "&Рӯзи %1 оянда"
 msgstr[1] "&Рӯзҳои %1 оянда"
 
-#: calendarview.cpp:1666
+#: calendarview.cpp:1689
 msgid "&Previous Week"
 msgstr "&Ҳафтаи пешина"
 
-#: calendarview.cpp:1667
+#: calendarview.cpp:1690
 msgid "&Next Week"
 msgstr "&Ҳафтаи оянда"
 
-#: calendarview.cpp:1751 calendarview.cpp:1791
+#: calendarview.cpp:1774 calendarview.cpp:1814
 #, fuzzy
 msgid "No filter"
 msgstr "Истифодаи Намоиши филтр"
 
-#: calendarview.cpp:2112
+#: calendarview.cpp:2135
 #, kde-format
 msgid ""
 "The item \"%1\" has sub-to-dos. Do you want to delete just this item and "
@@ -3569,32 +3585,32 @@ msgid ""
 "dos?"
 msgstr ""
 
-#: calendarview.cpp:2118
+#: calendarview.cpp:2141
 #, fuzzy
 msgid "Delete Only This"
 msgstr "Узфи воқеъаҳои кӯҳна шуда"
 
-#: calendarview.cpp:2119 calendarview.cpp:2181
+#: calendarview.cpp:2142 calendarview.cpp:2204
 #, fuzzy
 msgid "Delete All"
 msgstr "Нест кардани %1"
 
-#: calendarview.cpp:2121
+#: calendarview.cpp:2144
 msgid "Deleting sub-to-dos"
 msgstr ""
 
-#: calendarview.cpp:2145
+#: calendarview.cpp:2168
 #, kde-format
 msgid ""
 "The item \"%1\" is marked read-only and cannot be deleted; it probably "
 "belongs to a read-only calendar resource."
 msgstr ""
 
-#: calendarview.cpp:2149
+#: calendarview.cpp:2172
 msgid "Removing not possible"
 msgstr ""
 
-#: calendarview.cpp:2177
+#: calendarview.cpp:2200
 #, fuzzy, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates; are you sure you want "
@@ -3603,7 +3619,7 @@ msgstr ""
 "Ин воқеа баъд аз чанд вақт бармегардад. Шумо дар ҳақиқат мехоҳед ин воқеа ва "
 "такрорҳои ӯро тоза кунед?"
 
-#: calendarview.cpp:2186
+#: calendarview.cpp:2209
 #, fuzzy, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates. Do you want to delete "
@@ -3613,72 +3629,72 @@ msgstr ""
 "Ин воқеа баъд аз чанд вақт бармегардад. Шумо мехоҳед такрорҳои ӯро тоза "
 "кунед,ё фақат ҷараёни як дар %1?"
 
-#: calendarview.cpp:2192
+#: calendarview.cpp:2215
 #, fuzzy
 msgid "Delete C&urrent"
 msgstr "Нобуд кардани равон"
 
-#: calendarview.cpp:2193
+#: calendarview.cpp:2216
 #, fuzzy
 msgid "Delete &Future"
 msgstr "Нобуд кардани равон"
 
-#: calendarview.cpp:2194
+#: calendarview.cpp:2217
 #, fuzzy
 msgid "Delete &All"
 msgstr "Нест кардани %1"
 
-#: calendarview.cpp:2280
+#: calendarview.cpp:2303
 #, fuzzy
 msgid "Delete all completed to-dos?"
 msgstr "Ҳамаи масъалаҳои ба анҷом расидаро нест кардан?"
 
-#: calendarview.cpp:2281
+#: calendarview.cpp:2304
 #, fuzzy
 msgid "Purge To-dos"
 msgstr "Масъалаҳоро тоза кардан"
 
-#: calendarview.cpp:2282
+#: calendarview.cpp:2305
 msgid "Purge"
 msgstr "Тоза кардан"
 
-#: calendarview.cpp:2286
+#: calendarview.cpp:2309
 msgid "Purging completed to-dos"
 msgstr "Тоза кардани масъалаҳо ба итмом расид"
 
-#: calendarview.cpp:2303
+#: calendarview.cpp:2326
 #, fuzzy
 msgid "Unable to purge to-dos with uncompleted children."
 msgstr "Тоза кардани масъала, ки машқи нотамом дорад, муяссар карда намешавад."
 
-#: calendarview.cpp:2304
+#: calendarview.cpp:2327
 #, fuzzy
 msgid "Delete To-do"
 msgstr "Нобуд кардани масъала"
 
-#: calendarview.cpp:2313
+#: calendarview.cpp:2336
 #, fuzzy
 msgid "Unable to edit item: it is locked by another process."
 msgstr ""
 "Дигар кардани сабт муяссар карда намешавад. Вай бо протсеси дигар банд "
 "шудааст."
 
-#: calendarview.cpp:2346
+#: calendarview.cpp:2369
 #, fuzzy, kde-format
 msgid "Unable to copy the item to %1."
 msgstr "Қодир ба эҷодкунии файл барои пурборкуни нестам"
 
-#: calendarview.cpp:2347
+#: calendarview.cpp:2370
 #, fuzzy
 msgid "Copying Failed"
 msgstr "Хатогӣ дар вақти пур кардан"
 
-#: calendarview.cpp:2391
+#: calendarview.cpp:2414
 #, fuzzy, kde-format
 msgid "Unable to move the item to  %1."
 msgstr "Нигоҳ доштани ҳодиса натавонист."
 
-#: calendarview.cpp:2392
+#: calendarview.cpp:2415
 #, fuzzy
 msgid "Moving Failed"
 msgstr "Хатогӣ дар вақти пур кардан"
@@ -4323,303 +4339,326 @@ msgstr "Нусхаи '%1' маҷаллаи дар формати дуруст н
 msgid "Import &Calendar..."
 msgstr "Воридоти тақвим"
 
+#: actionmanager.cpp:273
+#, fuzzy
+msgid "Merge the contents of another iCalendar"
+msgstr "Дароварданро ҳамроҳ кунед"
+
 #: actionmanager.cpp:275
+msgid ""
+"Select this menu entry if you would like to merge the contents of another "
+"iCalendar into your current calendar."
+msgstr ""
+
+#: actionmanager.cpp:280
 #, fuzzy
 msgid "&Import From UNIX Ical tool"
 msgstr "&Воридоти аз Ical"
 
-#: actionmanager.cpp:279
+#: actionmanager.cpp:282
+#, fuzzy
+#| msgid "Import calendar at '%1' into KOrganizer."
+msgid "Import a calendar in another format"
+msgstr "Воридоти тақвими '%1' ба ташкилкунандаи KDE"
+
+#: actionmanager.cpp:284
+msgid ""
+"Select this menu entry if you would like to import the contents of a non-"
+"iCalendar formatted file into your current calendar."
+msgstr ""
+
+#: actionmanager.cpp:289
 #, fuzzy
 msgid "Get &Hot New Stuff..."
 msgstr "Материали нав дастрас кардан..."
 
-#: actionmanager.cpp:283
+#: actionmanager.cpp:293
 #, fuzzy
 msgid "Export &Web Page..."
 msgstr "Содирот ба саҳифаи веб..."
 
-#: actionmanager.cpp:287
+#: actionmanager.cpp:297
 #, fuzzy
 msgid "&iCalendar..."
 msgstr "iТақвим..."
 
-#: actionmanager.cpp:291
+#: actionmanager.cpp:301
 #, fuzzy
 msgid "&vCalendar..."
 msgstr "vТақвим..."
 
-#: actionmanager.cpp:295
+#: actionmanager.cpp:305
 #, fuzzy
 msgid "Upload &Hot New Stuff..."
 msgstr "Материали навро пурбор кардан"
 
-#: actionmanager.cpp:299
+#: actionmanager.cpp:309
 #, fuzzy
 msgid "Archive O&ld Entries..."
 msgstr "Архив кардани сабтҳои кӯҳна"
 
-#: actionmanager.cpp:303
+#: actionmanager.cpp:313
 #, fuzzy
 msgid "Pur&ge Completed To-dos"
 msgstr "Ҳузфи масъалаҳои иҷрокардашуда"
 
-#: actionmanager.cpp:352
+#: actionmanager.cpp:362
 msgid "What's &Next"
 msgstr "&Баъд аз он чӣ?"
 
-#: actionmanager.cpp:357
+#: actionmanager.cpp:367
 msgid "&Day"
 msgstr "&Рӯз"
 
-#: actionmanager.cpp:367
+#: actionmanager.cpp:377
 msgid "&Month"
 msgstr "&Моҳ"
 
-#: actionmanager.cpp:372
+#: actionmanager.cpp:382
 msgid "W&ork Week"
 msgstr "Ҳафтаи &корӣ"
 
-#: actionmanager.cpp:377
+#: actionmanager.cpp:387
 msgid "&Week"
 msgstr "&Ҳафта"
 
-#: actionmanager.cpp:382
+#: actionmanager.cpp:392
 #, fuzzy
 #| msgid "&Events"
 msgid "&Event List"
 msgstr "&Воқеъот"
 
-#: actionmanager.cpp:387
+#: actionmanager.cpp:397
 #, fuzzy
 msgid "&To-do List"
 msgstr "&Масъалаҳо"
 
-#: actionmanager.cpp:392
+#: actionmanager.cpp:402
 msgid "&Journal"
 msgstr "&Журнал"
 
-#: actionmanager.cpp:397
+#: actionmanager.cpp:407
 #, fuzzy
 msgid "Time&line"
 msgstr "Минтақаи вақт:"
 
-#: actionmanager.cpp:402
+#: actionmanager.cpp:412
 #, fuzzy
 msgid "Time&spent"
 msgstr "&Панели муддат"
 
-#: actionmanager.cpp:408
+#: actionmanager.cpp:418
 #, fuzzy
 msgid "&Refresh"
 msgstr "Бозсозӣ"
 
-#: actionmanager.cpp:416
+#: actionmanager.cpp:426
 #, fuzzy
 msgid "F&ilter"
 msgstr "Иловаи филтр"
 
-#: actionmanager.cpp:431
+#: actionmanager.cpp:441
 msgid "In Horizontally"
 msgstr ""
 
-#: actionmanager.cpp:436
+#: actionmanager.cpp:446
 msgid "Out Horizontally"
 msgstr ""
 
-#: actionmanager.cpp:441
+#: actionmanager.cpp:451
 msgid "In Vertically"
 msgstr ""
 
-#: actionmanager.cpp:446
+#: actionmanager.cpp:456
 msgid "Out Vertically"
 msgstr ""
 
-#: actionmanager.cpp:455
+#: actionmanager.cpp:465
 #, fuzzy
 #| msgid "day"
 msgctxt "@action Jump to today"
 msgid "To &Today"
 msgstr "рӯз"
 
-#: actionmanager.cpp:456
+#: actionmanager.cpp:466
 #, fuzzy
 #| msgid "day"
 msgid "Today"
 msgstr "рӯз"
 
-#: actionmanager.cpp:457
+#: actionmanager.cpp:467
 #, fuzzy
 #| msgid "Go to &Today"
 msgid "Scroll to Today"
 msgstr "&Имрӯз"
 
-#: actionmanager.cpp:462
+#: actionmanager.cpp:472
 #, fuzzy
 #| msgid "Go &Backward"
 msgctxt "scroll backward"
 msgid "&Backward"
 msgstr "&Ба қафо"
 
-#: actionmanager.cpp:463
+#: actionmanager.cpp:473
 #, fuzzy
 #| msgid "Balak"
 msgctxt "scroll backward"
 msgid "Back"
 msgstr "Балак"
 
-#: actionmanager.cpp:464
+#: actionmanager.cpp:474
 #, fuzzy
 #| msgid "Go &Backward"
 msgid "Scroll Backward"
 msgstr "&Ба қафо"
 
-#: actionmanager.cpp:477
+#: actionmanager.cpp:487
 #, fuzzy
 #| msgid "Go &Forward"
 msgctxt "scroll forward"
 msgid "&Forward"
 msgstr " &Ба пеш"
 
-#: actionmanager.cpp:478
+#: actionmanager.cpp:488
 #, fuzzy
 #| msgid "Go &Forward"
 msgctxt "scoll forward"
 msgid "Forward"
 msgstr " &Ба пеш"
 
-#: actionmanager.cpp:479
+#: actionmanager.cpp:489
 #, fuzzy
 #| msgid "Go &Forward"
 msgid "Scroll Forward"
 msgstr " &Ба пеш"
 
-#: actionmanager.cpp:489
+#: actionmanager.cpp:499
 #, fuzzy
 msgctxt "@action:intoolbar create a new event"
 msgid "Event"
 msgstr "Воқеъаҳо:"
 
-#: actionmanager.cpp:490
+#: actionmanager.cpp:500
 msgid "Create a new Event"
 msgstr ""
 
-#: actionmanager.cpp:496
+#: actionmanager.cpp:506
 #, fuzzy
 msgid "To-do"
 msgstr "Масъала:"
 
-#: actionmanager.cpp:497
+#: actionmanager.cpp:507
 #, fuzzy
 msgid "Create a new To-do"
 msgstr "Барои афзудани масъалаи нав пахш кунед"
 
-#: actionmanager.cpp:511
+#: actionmanager.cpp:521
 #, fuzzy
 #| msgid "&Journal"
 msgid "Journal"
 msgstr "&Журнал"
 
-#: actionmanager.cpp:512
+#: actionmanager.cpp:522
 msgid "Create a new Journal"
 msgstr ""
 
-#: actionmanager.cpp:533
+#: actionmanager.cpp:543
 #, fuzzy
 msgid "&Make Sub-to-do Independent"
 msgstr "&Зермасъаларо мустаъқил кардан"
 
-#: actionmanager.cpp:550
+#: actionmanager.cpp:560
 msgid "&Publish Item Information..."
 msgstr ""
 
-#: actionmanager.cpp:555
+#: actionmanager.cpp:565
 msgid "Send &Invitation to Attendees"
 msgstr ""
 
-#: actionmanager.cpp:562
+#: actionmanager.cpp:572
 #, fuzzy
 msgid "Re&quest Update"
 msgstr "Дархост Пурсиш"
 
-#: actionmanager.cpp:569
+#: actionmanager.cpp:579
 msgid "Send &Cancellation to Attendees"
 msgstr ""
 
-#: actionmanager.cpp:576
+#: actionmanager.cpp:586
 #, fuzzy
 msgid "Send Status &Update"
 msgstr "Интиҳо:"
 
-#: actionmanager.cpp:583
+#: actionmanager.cpp:593
 #, fuzzy
 msgctxt "counter proposal"
 msgid "Request Chan&ge"
 msgstr "Такрор кардан Ҳисобкунанда"
 
-#: actionmanager.cpp:590
+#: actionmanager.cpp:600
 #, fuzzy
 msgid "&Mail Free Busy Information..."
 msgstr "Машғулияти Ахбороти Озоди Почта"
 
-#: actionmanager.cpp:595
+#: actionmanager.cpp:605
 #, fuzzy
 msgid "&Send as iCalendar..."
 msgstr "iТақвим..."
 
-#: actionmanager.cpp:600
+#: actionmanager.cpp:610
 #, fuzzy
 msgid "&Upload Free Busy Information"
 msgstr "Нашр кардани Ахбороти Озоди Машғул"
 
-#: actionmanager.cpp:606
+#: actionmanager.cpp:616
 #, fuzzy
 msgid "&Addressbook"
 msgstr "Китобчаи адрес"
 
-#: actionmanager.cpp:614
+#: actionmanager.cpp:624
 #, fuzzy
 msgid "Show Date Navigator"
 msgstr "Навигатсияи дар таърих"
 
-#: actionmanager.cpp:618
+#: actionmanager.cpp:628
 #, fuzzy
 msgid "Show To-do View"
 msgstr "Машқҳо"
 
-#: actionmanager.cpp:622
+#: actionmanager.cpp:632
 #, fuzzy
 msgid "Show Item Viewer"
 msgstr "Намоиши ҳодиса"
 
-#: actionmanager.cpp:637
+#: actionmanager.cpp:647
 #, fuzzy
 msgid "Show Resource View"
 msgstr "Танзимоти манбаъот"
 
-#: actionmanager.cpp:647
+#: actionmanager.cpp:657
 msgid "Configure &Date && Time..."
 msgstr "Танзими &Таърих ва вақт..."
 
-#: actionmanager.cpp:656
+#: actionmanager.cpp:666
 #, fuzzy
 msgid "Manage View &Filters..."
 msgstr "Муҳаррири &филтрҳо..."
 
-#: actionmanager.cpp:661
+#: actionmanager.cpp:671
 #, fuzzy
 msgid "Manage C&ategories..."
 msgstr "Муҳаррири К&атегорияҳо..."
 
-#: actionmanager.cpp:667
+#: actionmanager.cpp:677
 #, fuzzy
 msgid "&Configure Calendar..."
 msgstr "Танзимоти &плагинҳо..."
 
-#: actionmanager.cpp:750 actionmanager.cpp:842
+#: actionmanager.cpp:760 actionmanager.cpp:852
 msgid "*.vcs *.ics|Calendar Files"
 msgstr "*.vcs *.ics|Файлҳои тақвим"
 
-#: actionmanager.cpp:795
+#: actionmanager.cpp:805
 msgid ""
 "You have no ical file in your home directory.\n"
 "Import cannot proceed.\n"
@@ -4627,7 +4666,7 @@ msgstr ""
 "Шумо файли ical дар директорияи хонаатонро  надоред .\n"
 "Воридот давом дода намешаывад.\n"
 
-#: actionmanager.cpp:816
+#: actionmanager.cpp:826
 msgid ""
 "KOrganizer successfully imported and merged your .calendar file from ical "
 "into the currently opened calendar."
@@ -4635,7 +4674,7 @@ msgstr ""
 "KOrganiser бо муваффақият шуморо ворид ва якҷо кард.файли календар аз ical "
 "ба календари навкушода."
 
-#: actionmanager.cpp:822
+#: actionmanager.cpp:832
 msgid ""
 "KOrganizer encountered some unknown fields while parsing your .calendar ical "
 "file, and had to discard them; please check to see that all your relevant "
@@ -4646,11 +4685,11 @@ msgstr ""
 "санҷида бубинед,ки ҳамаи маълумоти  бамавриди шумо дуруст ворид гардида "
 "шудааст."
 
-#: actionmanager.cpp:826
+#: actionmanager.cpp:836
 msgid "ICal Import Successful with Warning"
 msgstr "Воридот аз ICal хушбахтона ба анҷом расид вале бо огоҳ кунӣ"
 
-#: actionmanager.cpp:830
+#: actionmanager.cpp:840
 msgid ""
 "KOrganizer encountered an error parsing your .calendar file from ical; "
 "import has failed."
@@ -4658,7 +4697,7 @@ msgstr ""
 "KOrganiser ба хаттогӣ дучор шуд дар вақте ,ки сарфаҳм кардани файли "
 "календари шумо аз ical; воридот қатъ гардида шуд."
 
-#: actionmanager.cpp:834
+#: actionmanager.cpp:844
 msgid ""
 "KOrganizer does not think that your .calendar file is a valid ical calendar; "
 "import has failed."
@@ -4666,37 +4705,37 @@ msgstr ""
 "KOrganiser фикр намекунад,ки файли  календари шумо календари ical-и "
 "ҳақиқиист; воридот қатъ гардида шуд."
 
-#: actionmanager.cpp:920
+#: actionmanager.cpp:930
 #, kde-format
 msgid "New calendar '%1'."
 msgstr "Тақвими нав '%1'."
 
-#: actionmanager.cpp:955
+#: actionmanager.cpp:965
 #, kde-format
 msgid "Cannot download calendar from '%1'."
 msgstr "Тақвим пурбор карда нашуда истодааст '%1'."
 
-#: actionmanager.cpp:992
+#: actionmanager.cpp:1002
 #, kde-format
 msgid "Added calendar resource for URL '%1'."
 msgstr ""
 
-#: actionmanager.cpp:1000
+#: actionmanager.cpp:1010
 #, fuzzy, kde-format
 msgid "Unable to create calendar resource '%1'."
 msgstr "Нигоҳ доштани элементи рӯйхати масъала натавонист."
 
-#: actionmanager.cpp:1010
+#: actionmanager.cpp:1020
 #, kde-format
 msgid "Merged calendar '%1'."
 msgstr "Якҷоя шави бо тақвими '%1'."
 
-#: actionmanager.cpp:1013
+#: actionmanager.cpp:1023
 #, kde-format
 msgid "Opened calendar '%1'."
 msgstr "Тақвими кушода %1'."
 
-#: actionmanager.cpp:1038
+#: actionmanager.cpp:1048
 msgid ""
 "Your calendar will be saved in iCalendar format. Use 'Export vCalendar' to "
 "save in vCalendar format."
@@ -4704,35 +4743,35 @@ msgstr ""
 "Календари шумо дар формати IКалендар дар хотира гузошта мешавад.Export "
 "vКалендар-ро дар хотира гузарондани дар формат vКалендар истифода баред. "
 
-#: actionmanager.cpp:1040
+#: actionmanager.cpp:1050
 msgid "Format Conversion"
 msgstr "Тағирдиҳии Формат"
 
-#: actionmanager.cpp:1068
+#: actionmanager.cpp:1078
 #, kde-format
 msgid "Cannot upload calendar to '%1'"
 msgstr "Имконият нест, ки тақвим ҷоӣгир карда шавад '%1'"
 
-#: actionmanager.cpp:1081
+#: actionmanager.cpp:1091
 #, kde-format
 msgid "Saved calendar '%1'."
 msgstr "Тақвимро нигоҳ дода шуда '%1'."
 
-#: actionmanager.cpp:1143
+#: actionmanager.cpp:1153
 msgid "Could not upload file."
 msgstr "Фаӣлро ҷоӣгир карда нашуда истодааст."
 
-#: actionmanager.cpp:1186
+#: actionmanager.cpp:1196
 #, fuzzy, kde-format
 msgid "Unable to save calendar to the file %1."
 msgstr "Нигоҳ доштани элементи рӯйхати масъала натавонист."
 
-#: actionmanager.cpp:1187
+#: actionmanager.cpp:1197
 #, fuzzy
 msgid "Error"
 msgstr "Ғайри хато"
 
-#: actionmanager.cpp:1213
+#: actionmanager.cpp:1223
 msgid ""
 "The calendar has been modified.\n"
 "Do you want to save it?"
@@ -4740,100 +4779,100 @@ msgstr ""
 "Тақвим тағир дода шуд.\n"
 "Шумо мехоҳед, ки инро нигоҳ доред?"
 
-#: actionmanager.cpp:1240
+#: actionmanager.cpp:1250
 #, fuzzy
 #| msgid "*.vcs *.ics|Calendar Files"
 msgid "*.ics *.vcs|Calendar Files"
 msgstr "*.vcs *.ics|Файлҳои тақвим"
 
-#: actionmanager.cpp:1362
+#: actionmanager.cpp:1372
 msgid "Could not start control module for date and time format."
 msgstr ""
 "Оғозидиҳии назорат аз болои модул барои сана ва формати вақт ,намешавад. "
 
-#: actionmanager.cpp:1497
+#: actionmanager.cpp:1507
 msgid "Could not load calendar."
 msgstr "Бор кардани тақвим натавонист."
 
-#: actionmanager.cpp:1512
+#: actionmanager.cpp:1522
 msgid "The downloaded events will be merged into your current calendar."
 msgstr "Воқеаҳои кучондашуда бо тақвими шумо пайваст карда мешаванд."
 
-#: actionmanager.cpp:1568
+#: actionmanager.cpp:1578
 msgid "&Show Event"
 msgstr "&Намоиши ҳодиса"
 
-#: actionmanager.cpp:1571
+#: actionmanager.cpp:1581
 msgid "&Edit Event..."
 msgstr "&Муҳаррири ҳодиса..."
 
-#: actionmanager.cpp:1574
+#: actionmanager.cpp:1584
 msgid "&Delete Event"
 msgstr "&Нобуд кардани ҳодиса"
 
-#: actionmanager.cpp:1580
+#: actionmanager.cpp:1590
 #, fuzzy
 msgid "&Show To-do"
 msgstr "&Намоиши масъала"
 
-#: actionmanager.cpp:1583
+#: actionmanager.cpp:1593
 #, fuzzy
 msgid "&Edit To-do..."
 msgstr "&Муҳаррири масъала..."
 
-#: actionmanager.cpp:1586
+#: actionmanager.cpp:1596
 #, fuzzy
 msgid "&Delete To-do"
 msgstr "&Нобуд кардани масъала"
 
-#: actionmanager.cpp:1717 actionmanager.cpp:1814
+#: actionmanager.cpp:1727 actionmanager.cpp:1824
 msgid "Attach as &link"
 msgstr ""
 
-#: actionmanager.cpp:1718 actionmanager.cpp:1815
+#: actionmanager.cpp:1728 actionmanager.cpp:1825
 #, fuzzy
 msgid "Attach &inline"
 msgstr "Дароварданро ҳамроҳ кунед"
 
-#: actionmanager.cpp:1719
+#: actionmanager.cpp:1729
 msgid "Attach inline &without attachments"
 msgstr ""
 
-#: actionmanager.cpp:1721 actionmanager.cpp:1817
+#: actionmanager.cpp:1731 actionmanager.cpp:1827
 msgid "C&ancel"
 msgstr ""
 
-#: actionmanager.cpp:1752
+#: actionmanager.cpp:1762
 msgid "Removing attachments from an email might invalidate its signature."
 msgstr ""
 
-#: actionmanager.cpp:1753
+#: actionmanager.cpp:1763
 #, fuzzy
 msgid "Remove Attachments"
 msgstr "Замимаҳо"
 
-#: actionmanager.cpp:1897 actionmanager.cpp:1906
+#: actionmanager.cpp:1907 actionmanager.cpp:1916
 #, fuzzy
 msgid "Undo"
 msgstr "Бекор кардан (%1)"
 
-#: actionmanager.cpp:1903
+#: actionmanager.cpp:1913
 #, fuzzy, kde-format
 #| msgid "Undo (%1)"
 msgid "Undo: %1"
 msgstr "Бекор кардан (%1)"
 
-#: actionmanager.cpp:1913 actionmanager.cpp:1917
+#: actionmanager.cpp:1923 actionmanager.cpp:1927
 #, fuzzy
 msgid "Redo"
 msgstr "Такрор кардан (%1)"
 
-#: actionmanager.cpp:1919
+#: actionmanager.cpp:1929
 #, kde-format
 msgid "Redo (%1)"
 msgstr "Такрор кардан (%1)"
 
-#: actionmanager.cpp:1933
+#: actionmanager.cpp:1943
 #, fuzzy
 msgid ""
 "The calendar contains unsaved changes. Do you want to save them before "
@@ -4842,15 +4881,15 @@ msgstr ""
 "Тақвим тағир дода шуд.\n"
 "Шумо мехоҳед, ки инро нигоҳ доред?"
 
-#: actionmanager.cpp:1941
+#: actionmanager.cpp:1951
 msgid "Unable to save the calendar. Do you still want to close this window?"
 msgstr ""
 
-#: actionmanager.cpp:1965
+#: actionmanager.cpp:1975
 msgid "Unable to exit. Saving still in progress."
 msgstr "Ба даромадан имконият нест. Нигоҳ доштан ҳоло ба анҷом нарасидааст."
 
-#: actionmanager.cpp:2009
+#: actionmanager.cpp:2019
 #, fuzzy, kde-format
 #| msgid ""
 #| "Saving of '%1' failed. Check that the resource is properly configured.\n"
@@ -4863,20 +4902,20 @@ msgstr ""
 "шавад.\n"
 "Ба масъала аҳамият надода ва бе дар хотир гузоштан ё қатъ кардан давом диҳед?"
 
-#: actionmanager.cpp:2012
+#: actionmanager.cpp:2022
 msgid "Save Error"
 msgstr "Хатогиро нигоҳ доштан"
 
-#: actionmanager.cpp:2013
+#: actionmanager.cpp:2023
 msgid "Continue Save"
 msgstr ""
 
-#: actionmanager.cpp:2014
+#: actionmanager.cpp:2024
 #, fuzzy
 msgid "Cancel Save"
 msgstr "&Дигаргун кунед"
 
-#: actionmanager.cpp:2027
+#: actionmanager.cpp:2037
 #, kde-format
 msgid "URL '%1' is invalid."
 msgstr "'%1' - URL нодуруст аст."
@@ -8519,7 +8558,7 @@ msgid ""
 "calendar, which can take a lot of space depending on the size of the "
 "attachment. If this option is not checked, then only a link pointing to the "
 "attachment will be stored.  Do not use a link for attachments that change "
-"often or may be moved (or removed) from its current location."
+"often or may be moved (or removed) from their current location."
 msgstr ""
 
 #: koeditorattachments.cpp:253
@@ -11470,9 +11509,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "9 (lowest)"
 #~ msgstr "5 (пастарин)"
-
-#~ msgid "Import calendar at '%1' into KOrganizer."
-#~ msgstr "Воридоти тақвими '%1' ба ташкилкунандаи KDE"
 
 #, fuzzy
 #~| msgid "Month View"

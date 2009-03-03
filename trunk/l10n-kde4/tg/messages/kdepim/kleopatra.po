@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-26 10:44+0100\n"
+"POT-Creation-Date: 2009-03-03 10:24+0100\n"
 "PO-Revision-Date: 2005-09-17 13:34+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -1218,9 +1218,10 @@ msgid "Could not find clipboard"
 msgstr ""
 
 #: utils/log.cpp:157
-#, kde-format
-msgid "Log Error: Could not open log file \"%1\" for write"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Could not generate certificate: %1"
+msgid "Log Error: Could not open log file \"%1\" for writing."
+msgstr "Наметавонам сертификаи зеринро эҷод кунам: %1"
 
 #: utils/input.cpp:155
 #, kde-format
@@ -1336,33 +1337,32 @@ msgstr ""
 #: crypto/gui/signencryptfileswizard.cpp:90
 msgid ""
 "Only OpenPGP certificates will be offered for selection because you "
-"specified a combined sign/encrypt operation, which is only available for "
+"specified a combined sign/encrypt operation that is only available for "
 "OpenPGP."
 msgstr ""
 
 #: crypto/gui/signencryptfileswizard.cpp:93
 msgid ""
-"Only OpenPGP certificates will be offered for selection because you "
-"specified an OpenPGP signing certificate only."
+"Only OpenPGP certificates will be offered for selection because you only "
+"specified an OpenPGP signing certificate."
 msgstr ""
 
 #: crypto/gui/signencryptfileswizard.cpp:96
 msgid ""
-"Only S/MIME certificates will be offered for selection because you specified "
-"an S/MIME signing certificate only."
+"Only S/MIME certificates will be offered for selection because you only "
+"specified an S/MIME signing certificate."
 msgstr ""
 
 #: crypto/gui/signencryptfileswizard.cpp:102
 msgid ""
-"You have selected signing certificates of both type OpenPGP and S/MIME, thus "
+"You have selected both OpenPGP and S/MIME signing certificate types, thus "
 "two signatures will be created."
 msgstr ""
 
 #: crypto/gui/signencryptfileswizard.cpp:106
 msgid ""
-"If you select recipient certificates of both type OpenPGP and S/MIME, two "
-"encrypted files will be created. One for OpenPGP recipients, one for S/MIME "
-"recipients."
+"If you select both OpenPGP and S/MIME receipient certificates, two encrypted "
+"files will be created: one for OpenPGP recipients, one for S/MIME recipients."
 msgstr ""
 
 #: crypto/gui/signencryptfileswizard.cpp:131
@@ -1500,8 +1500,8 @@ msgstr ""
 
 #: crypto/gui/resolverecipientspage.cpp:450
 msgid ""
-"<b>Warning:</b> None of the selected certificates seems to be your own "
-"certificate. You will not be able to decrypt the encrypted data again."
+"<b>Warning:</b> None of the selected certificates seem to be your own. You "
+"will not be able to decrypt the encrypted data again."
 msgstr ""
 
 #: crypto/gui/resolverecipientspage.cpp:567
@@ -2240,7 +2240,7 @@ msgid ""
 "<para>Refreshing X.509 certificates implies downloading CRLs for all "
 "certificates, even if they might otherwise still be valid.</para><para>This "
 "can put a severe strain on your own as well as other people's network "
-"connection, and can take up to an hour or more to complete, depending on "
+"connections, and can take up to an hour or more to complete, depending on "
 "your network connection, and the number of certificates to check.</para> "
 "<para>Are you sure you want to continue?</para>"
 msgstr ""
@@ -2463,15 +2463,13 @@ msgstr ""
 
 #: commands/lookupcertificatescommand.cpp:373
 #: commands/lookupcertificatescommand.cpp:381
-#, fuzzy
-#| msgid "Certificate Download Failed"
-msgid "Certificate Downloads Failed"
+msgid "Certificate Download Failed"
 msgstr "Наметавонам сертификатро пурбор кунам."
 
 #: commands/lookupcertificatescommand.cpp:378
 msgid ""
-"Some certificates failed to download. Do you want to proceed importing the "
-"following, succeeded, downloads?"
+"Some certificates failed to download. Do you want to proceed with importing "
+"the following successful downloads?"
 msgstr ""
 
 #: commands/lookupcertificatescommand.cpp:418
@@ -3100,9 +3098,9 @@ msgid ""
 "<para>Refreshing OpenPGP certificates implies downloading all certificates "
 "anew, to check if any of them have been revoked in the meantime.</"
 "para><para>This can put a severe strain on your own as well as other "
-"people's network connection, and can take up to an hour or more to complete, "
-"depending on your network connection, and the number of certificates to "
-"check.</para> <para>Are you sure you want to continue?</para>"
+"people's network connections, and can take up to an hour or more to "
+"complete, depending on your network connection, and the number of "
+"certificates to check.</para> <para>Are you sure you want to continue?</para>"
 msgstr ""
 
 #: commands/refreshopenpgpcertscommand.cpp:112
@@ -3337,7 +3335,7 @@ msgstr ""
 #: uiserver/uiserver.cpp:219
 #, kde-format
 msgid ""
-"Cannot determine the GnuPG home directory: %1 exists but is no directory."
+"Cannot determine the GnuPG home directory: %1 exists but is not a directory."
 msgstr ""
 
 #: uiserver/uiserver.cpp:225
@@ -3445,7 +3443,7 @@ msgid "Caught unexpected exception: %1"
 msgstr ""
 
 #: uiserver/assuanserverconnection.cpp:1020
-msgid "Caught unknown exception - fix the program!"
+msgid "Caught unknown exception - please report this error to the developers."
 msgstr ""
 
 #: uiserver/assuanserverconnection.cpp:1185
@@ -3816,7 +3814,7 @@ msgstr ""
 #: rc.cpp:86
 msgid ""
 "If this option is checked, missing issuer certificates are fetched when "
-"necessary (this applies to both validation methods, CRLs and OCSP)"
+"necessary (this applies to both validation methods, CRLs and OCSP)."
 msgstr ""
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:163
@@ -4058,7 +4056,7 @@ msgstr ""
 #: rc.cpp:192
 msgid ""
 "Minimize the number of steps when signing emails, use preset defaults unless "
-"problems occurr"
+"problems occur."
 msgstr ""
 
 #. i18n: file: kcfg/emailoperationspreferences.kcfg:15
@@ -4072,7 +4070,7 @@ msgstr ""
 #: rc.cpp:198
 msgid ""
 "Minimize the number of steps when encrypting emails, use preset defaults "
-"unless problems occurr"
+"unless problems occur."
 msgstr ""
 
 #. i18n: file: kcfg/emailoperationspreferences.kcfg:20
@@ -4304,7 +4302,7 @@ msgstr ""
 #. i18n: file: dialogs/ownertrustdialog.ui:28
 #. i18n: ectx: property (text), widget (QRadioButton, unknownRB)
 #: rc.cpp:310
-msgid "I don't know"
+msgid "I do not know"
 msgstr ""
 
 #. i18n: file: dialogs/ownertrustdialog.ui:41
@@ -4419,7 +4417,7 @@ msgstr ""
 #: rc.cpp:355
 msgid ""
 "<b>Step 2:</b> How thoroughly have you checked that this key actually "
-"belongs to the person it claims it's from?"
+"belongs to the person it claims it is from?"
 msgstr ""
 
 #. i18n: file: dialogs/selectchecklevelwidget.ui:26
@@ -4444,8 +4442,9 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:367
 msgid ""
-"Choose this if you know the person, and have asked him whether this was his "
-"key, but you have not verified he is actually in posession of the secret key."
+"Choose this if you know the person, and have asked them whether this was "
+"their key, but you have not verified they are actually in possession of the "
+"secret key."
 msgstr ""
 
 #. i18n: file: dialogs/selectchecklevelwidget.ui:98
@@ -4458,9 +4457,9 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:373
 msgid ""
-"Choose this if you have e.g. checked the ID card of the person, and have "
-"verified that he is in posession of the secret key (e.g. by sending "
-"encrypted mails to him and asking him to decrypt them)."
+"Choose this if you have, for instance, checked the ID card of the person, "
+"and have verified that they are in possession of the secret key (e.g. by "
+"sending them encrypted mail and asking for it to be decrypted)."
 msgstr ""
 
 #. i18n: file: dialogs/adduseriddialog.ui:13
@@ -4520,7 +4519,7 @@ msgstr ""
 #. i18n: file: dialogs/selftestdialog.ui:124
 #. i18n: ectx: property (text), widget (QPushButton, doItPB)
 #: rc.cpp:400
-msgid "Do It!"
+msgid "Do It"
 msgstr ""
 
 #. i18n: file: dialogs/selftestdialog.ui:137
@@ -4805,7 +4804,7 @@ msgstr ""
 msgid ""
 "The process of creating a key requires large amounts of random numbers. To "
 "foster this process, you can use the entry field below to enter some "
-"gibberish. The text itself won't be used at all, only the inter-character "
+"gibberish. The text itself does not matter - only the inter-character "
 "timing. You can also move this window around with your mouse, or start some "
 "disk-intensive application."
 msgstr ""
@@ -4837,8 +4836,8 @@ msgstr ""
 msgid ""
 "OpenPGP key pairs are created locally, and certified by your friends and "
 "acquaintances. There is no central certification authority; instead, every "
-"individual creates a personal Web Of Trust by certifying other user's key "
-"pairs with his own certificate."
+"individual creates a personal Web Of Trust by certifying other users' key "
+"pairs with their own certificate."
 msgstr ""
 
 #. i18n: file: newcertificatewizard/chooseprotocolpage.ui:41
@@ -5971,7 +5970,7 @@ msgstr ""
 msgid ""
 "The watchgnupg logging process could not be started.\n"
 "Please install watchgnupg somewhere in your $PATH.\n"
-"This log window is now completely useless."
+"This log window is unable to display any useful information."
 msgstr ""
 
 #: kwatchgnupg/kwatchgnupgmainwin.cpp:158
@@ -6004,7 +6003,7 @@ msgstr ""
 #: kwatchgnupg/kwatchgnupgmainwin.cpp:203
 msgid ""
 "The watchgnupg logging process is not running.\n"
-"This log window is now completely useless."
+"This log window is unable to display any useful information."
 msgstr ""
 
 #: kwatchgnupg/kwatchgnupgmainwin.cpp:234
@@ -6077,7 +6076,7 @@ msgstr ""
 #| "installation!"
 msgid ""
 "Could not start the GnuPG Log Viewer (kwatchgnupg). Please check your "
-"installation!"
+"installation."
 msgstr ""
 "Наметавонам барномаи намоиши журнали GnuPG-ро (kwatchgnupg) оғоз кунам. "
 "Сабти худро биозмоед!"
@@ -6095,7 +6094,7 @@ msgstr "Танзими чархаки &GpgME"
 #| "installation!"
 msgid ""
 "Could not start the GnuPG Administrative Console (kgpgconf). Please check "
-"your installation!"
+"your installation."
 msgstr ""
 "Наметавонам барномаи намоиши журнали GnuPG-ро (kwatchgnupg) оғоз кунам. "
 "Сабти худро биозмоед!"
@@ -6285,6 +6284,11 @@ msgid "The GpgSM process ended prematurely because of an unexpected error."
 msgstr "Амалиёти GpgSM, аз барои хатои номаълум пеш аз мӯҳлат ба итмом расид."
 
 #, fuzzy
+#~| msgid "Certificate Download Failed"
+#~ msgid "Certificate Downloads Failed"
+#~ msgstr "Наметавонам сертификатро пурбор кунам."
+
+#, fuzzy
 #~| msgid "Importing certificates..."
 #~ msgid "Importing certificate..."
 #~ msgstr "Воридоти сертификатҳо..."
@@ -6408,9 +6412,6 @@ msgstr "Амалиёти GpgSM, аз барои хатои номаълум пе
 #~ msgstr ""
 #~ "<qt><p>Ҳангоми кӯшиши пурбор кардани сертификати%1, хатогии зерин рӯй дод:"
 #~ "</p><p><b>%2</b></p></qt>"
-
-#~ msgid "Certificate Download Failed"
-#~ msgstr "Наметавонам сертификатро пурбор кунам."
 
 #~ msgid "Fetching certificate from server..."
 #~ msgstr "Қабул кардани сертификат аз коргузор..."
