@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-25 11:42+0100\n"
+"POT-Creation-Date: 2009-03-05 10:36+0100\n"
 "PO-Revision-Date: 2005-09-17 12:46+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -1528,10 +1528,12 @@ msgstr ""
 "кунед (http://gnupg.org)."
 
 #: kgpginterface.cpp:458 kgpgtextinterface.cpp:108
+#: transactions/kgpgtransaction.cpp:149
 msgid " or "
 msgstr " ё "
 
 #: kgpginterface.cpp:1010 kgpgtextinterface.cpp:114
+#: transactions/kgpgtransaction.cpp:175
 #, fuzzy, kde-format
 #| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
 msgid "<p><b>Bad passphrase</b>. You have 1 try left.</p>"
@@ -1540,6 +1542,7 @@ msgstr[0] "<b>Гузарвожаи бад</b>. Танҳо %1 кӯшиш боқӣ
 msgstr[1] "<b>Гузарвожаи бад</b>. Танҳо %1 кӯшиш боқӣ монд.<br>"
 
 #: kgpginterface.cpp:1012 kgpgtextinterface.cpp:119
+#: transactions/kgpgchangeexpire.cpp:72 transactions/kgpgtransaction.cpp:177
 #, kde-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "Гузарвожаро барои <b>%1</b> ворид намоед"
@@ -1947,6 +1950,7 @@ msgid "Enter passphrase (symmetrical encryption)"
 msgstr "Гузарвожаро ворид кунед (рамзкунонии симметрӣ)"
 
 #: kgpgtextinterface.cpp:106 model/kgpgitemnode.cpp:836
+#: transactions/kgpgtransaction.cpp:170
 msgid "[No user id found]"
 msgstr "[Шиносаи корванд пайдо нагардид]"
 
@@ -4151,6 +4155,80 @@ msgid_plural "%1 keys"
 msgstr[0] "%1 зеркалид"
 msgstr[1] "%1 зеркалид"
 
+#: transactions/kgpgaddphoto.cpp:52
+msgid "This image is very large. Use it anyway?"
+msgstr "Ин расм хеле калон аст. Истифода кардан?"
+
+#: transactions/kgpgaddphoto.cpp:52
+msgid "Use Anyway"
+msgstr ""
+
+#: transactions/kgpgaddphoto.cpp:52
+#, fuzzy
+msgid "Do Not Use"
+msgstr "Эҷод кардан"
+
+#: transactions/kgpgchangeexpire.cpp:71
+#, fuzzy, kde-format
+#| msgid "<b>Bad passphrase</b>. you have %1 tries left.<br>"
+msgid "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
+msgstr "<b>Гузарвожаи бад</b>. %1 кӯшишҳо боқӣ мондааст.<br>"
+
+#: transactions/kgpgchangeexpire.cpp:98
+#, fuzzy
+#| msgid ""
+#| "<qt><b>Changing expiration failed.</b><br>Do you want to try changing the "
+#| "key expiration in console mode?</qt>"
+msgid ""
+"<qt><b>Changing expiration failed.</b><br />Do you want to try changing the "
+"key expiration in console mode?</qt>"
+msgstr ""
+"<qt><b>Ивази мӯҳлати иҷроиш бо нокомӣ анҷомид.</b><br>Оё мехоҳед, ки ивази "
+"мӯҳлати калидро дар усули нозиргоҳ иҷро кунед?</qt>"
+
+#: transactions/kgpgchangeexpire.cpp:101
+msgid "work in progress..."
+msgstr ""
+
+#: transactions/kgpgchangepass.cpp:64
+#, fuzzy, kde-format
+msgid "Enter old passphrase for <b>%1</b>"
+msgstr "Гузарвожаро барои <b>%1</b> ворид намоед"
+
+#: transactions/kgpgchangepass.cpp:67
+#, fuzzy, kde-format
+msgid ""
+"<qt>Enter new passphrase for <b>%1</b><br />If you forget this passphrase "
+"all your encrypted files and messages will be inaccessible!</qt>"
+msgstr ""
+"<qt>Барои <b>%1</b><br>гузарвожаи навро ворид кунед. Агар шумо ин "
+"гузарвожаро аз хотир бароварда бошед, ҳамаи файлҳо ва паёмҳои шумо гум "
+"мешаванд!<br></qt>"
+
+#: transactions/kgpggeneratekey.cpp:113
+#, fuzzy, kde-format
+#| msgid ""
+#| "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
+#| "alphanumeric characters and random sequences"
+msgid ""
+"<p><b>Enter passphrase for %1 &lt;%2&gt;</b>:<br />Passphrase should include "
+"non alphanumeric characters and random sequences</p>"
+msgstr ""
+"<b>Гузарвожаро барои %1 ворид кунед</b>:<br>Гузарвожа бояд мушкил бошад ва "
+"бояд на танҳо аз ҳарфу рақамҳо иборат бошад"
+
+#: transactions/kgpggeneratekey.cpp:115
+#, fuzzy, kde-format
+#| msgid ""
+#| "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
+#| "alphanumeric characters and random sequences"
+msgid ""
+"<p><b>Enter passphrase for %1</b>:<br />Passphrase should include non "
+"alphanumeric characters and random sequences</p>"
+msgstr ""
+"<b>Гузарвожаро барои %1 ворид кунед</b>:<br>Гузарвожа бояд мушкил бошад ва "
+"бояд на танҳо аз ҳарфу рақамҳо иборат бошад"
+
 #~ msgid "RSA"
 #~ msgstr "RSA"
 
@@ -4162,44 +4240,6 @@ msgstr[1] "%1 зеркалид"
 
 #~ msgid "Filter Search"
 #~ msgstr "Филтри ҷустуҷӯ"
-
-#, fuzzy
-#~| msgid ""
-#~| "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
-#~| "alphanumeric characters and random sequences"
-#~ msgid ""
-#~ "<p><b>Enter passphrase for %1</b>:<br />Passphrase should include non "
-#~ "alphanumeric characters and random sequences</p>"
-#~ msgstr ""
-#~ "<b>Гузарвожаро барои %1 ворид кунед</b>:<br>Гузарвожа бояд мушкил бошад "
-#~ "ва бояд на танҳо аз ҳарфу рақамҳо иборат бошад"
-
-#~ msgid "This image is very large. Use it anyway?"
-#~ msgstr "Ин расм хеле калон аст. Истифода кардан?"
-
-#, fuzzy
-#~| msgid ""
-#~| "<qt><b>Changing expiration failed.</b><br>Do you want to try changing "
-#~| "the key expiration in console mode?</qt>"
-#~ msgid ""
-#~ "<qt><b>Changing expiration failed.</b><br />Do you want to try changing "
-#~ "the key expiration in console mode?</qt>"
-#~ msgstr ""
-#~ "<qt><b>Ивази мӯҳлати иҷроиш бо нокомӣ анҷомид.</b><br>Оё мехоҳед, ки "
-#~ "ивази мӯҳлати калидро дар усули нозиргоҳ иҷро кунед?</qt>"
-
-#, fuzzy
-#~ msgid "Enter old passphrase for <b>%1</b>"
-#~ msgstr "Гузарвожаро барои <b>%1</b> ворид намоед"
-
-#, fuzzy
-#~ msgid ""
-#~ "<qt>Enter new passphrase for <b>%1</b><br />If you forget this passphrase "
-#~ "all your encrypted files and messages will be inaccessible<br /></qt>"
-#~ msgstr ""
-#~ "<qt>Барои <b>%1</b><br>гузарвожаи навро ворид кунед. Агар шумо ин "
-#~ "гузарвожаро аз хотир бароварда бошед, ҳамаи файлҳо ва паёмҳои шумо гум "
-#~ "мешаванд!<br></qt>"
 
 #, fuzzy
 #~ msgid "Start Wizard"
@@ -4384,11 +4424,6 @@ msgstr[1] "%1 зеркалид"
 
 #~ msgid "Bad passphrase, signature was not created."
 #~ msgstr "Гузарвожаи нодуруст, имзо офарида нашудааст."
-
-#, fuzzy
-#~| msgid "<b>Bad passphrase</b>. you have %1 tries left.<br>"
-#~ msgid "<p><b>Bad passphrase</b>. you have %1 tries left.</p>"
-#~ msgstr "<b>Гузарвожаи бад</b>. %1 кӯшишҳо боқӣ мондааст.<br>"
 
 #~ msgid "Shred Files"
 #~ msgstr "Дарондани файл"
