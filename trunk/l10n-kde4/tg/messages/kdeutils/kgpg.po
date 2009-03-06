@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-05 10:36+0100\n"
+"POT-Creation-Date: 2009-03-06 10:19+0100\n"
 "PO-Revision-Date: 2005-09-17 12:46+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -678,8 +678,8 @@ msgstr "Иловакунии Шиносаи Нави Корванд"
 #| "use."
 msgid ""
 "The image must be a JPEG file. Remember that the image is stored within your "
-"public key. If you use a very large picture, your key will become very large "
-"as well! Keeping the image close to 240x288 is a good size to use."
+"public key, so if you use a very large picture, your key will become very "
+"large as well. An image size of around 240x288 is a good size to use."
 msgstr ""
 "Симоҳо боянд, ки файли JPEG бошанд. Дар хотир доред, ки симоҳо бо калидҳои "
 "оммавӣ захира мешаванд. Агар шумо расмҳои ҳаҷмашон калонро истифода баред, "
@@ -767,7 +767,7 @@ msgstr ""
 msgid ""
 "<qt>Secret keys <b>should not</b> be saved in an unsafe place.<br/>If "
 "someone else can access this file, encryption with this key will be "
-"compromised!<br/>Continue key export?</qt>"
+"compromised.<br/>Continue key export?</qt>"
 msgstr ""
 "Калиди махфӣ НАБОЯД, ки дар ҷойҳои хатарнок нигоҳ дошта шавад.\n"
 "Агар каси дигаре ин файлро дастрасӣ намояд, ҳамаи додаҳо бо ин калид рамзӣ "
@@ -923,7 +923,7 @@ msgid ""
 "<qt>You are about to sign key:<br /><br />%1<br />ID: %2<br />Fingerprint: "
 "<br /><b>%3</b>.<br /><br />You should check the key fingerprint by phoning "
 "or meeting the key owner to be sure that someone is not trying to intercept "
-"your communications</qt>"
+"your communications.</qt>"
 msgstr ""
 "<qt>Шумо кӯшиши имзокунии калидро карда истодаед:<br><br>%1<br>Шиноса: %"
 "2<br>Fingerprint: <br><b>%3</b>.<br><br>Шумо бояд суммаи назоратиро аз "
@@ -941,7 +941,7 @@ msgid ""
 "<qt>You are about to sign key:<br /><br />%1 (%2)<br />ID: %3<br /"
 ">Fingerprint: <br /><b>%4</b>.<br /><br />You should check the key "
 "fingerprint by phoning or meeting the key owner to be sure that someone is "
-"not trying to intercept your communications</qt>"
+"not trying to intercept your communications.</qt>"
 msgstr ""
 "<qt>Шумо кӯшиши имзокунии калидро карда истодаед:<br><br>%1<br>Шиноса: %"
 "2<br>Fingerprint: <br><b>%3</b>.<br><br>Шумо бояд суммаи назоратиро аз "
@@ -990,7 +990,7 @@ msgid ""
 "<qt>You are about to sign user id:<br /><br />%1<br />ID: %2<br /"
 ">Fingerprint: <br /><b>%3</b>.<br /><br />You should check the key "
 "fingerprint by phoning or meeting the key owner to be sure that someone is "
-"not trying to intercept your communications</qt>"
+"not trying to intercept your communications.</qt>"
 msgstr ""
 "<qt>Шумо кӯшиши имзокунии калидро карда истодаед:<br><br>%1<br>Шиноса: %"
 "2<br>Fingerprint: <br><b>%3</b>.<br><br>Шумо бояд суммаи назоратиро аз "
@@ -1008,7 +1008,7 @@ msgid ""
 "<qt>You are about to sign user id:<br /><br />%1 (%2)<br />ID: %3<br /"
 ">Fingerprint: <br /><b>%4</b>.<br /><br />You should check the key "
 "fingerprint by phoning or meeting the key owner to be sure that someone is "
-"not trying to intercept your communications</qt>"
+"not trying to intercept your communications.</qt>"
 msgstr ""
 "<qt>Шумо кӯшиши имзокунии калидро карда истодаед:<br><br>%1<br>Шиноса: %"
 "2<br>Fingerprint: <br><b>%3</b>.<br><br>Шумо бояд суммаи назоратиро аз "
@@ -1248,7 +1248,7 @@ msgstr "Файл аллакай Мавҷуд аст"
 msgid "Processing folder compression and encryption"
 msgstr "Ҷараёни фишорӣ ва рамзкунонии феҳрист"
 
-#: kgpg.cpp:284 kgpglibrary.cpp:202 kgpglibrary.cpp:214
+#: kgpg.cpp:284 kgpglibrary.cpp:199 kgpglibrary.cpp:211
 msgid "Please wait..."
 msgstr "Лутфан, интизор шавед..."
 
@@ -1533,7 +1533,7 @@ msgid " or "
 msgstr " ё "
 
 #: kgpginterface.cpp:1010 kgpgtextinterface.cpp:114
-#: transactions/kgpgtransaction.cpp:175
+#: transactions/kgpgchangeexpire.cpp:71 transactions/kgpgtransaction.cpp:175
 #, fuzzy, kde-format
 #| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
 msgid "<p><b>Bad passphrase</b>. You have 1 try left.</p>"
@@ -1677,7 +1677,7 @@ msgstr "Усули Кордон"
 
 #: kgpgkeygenerate.cpp:45
 #, fuzzy
-msgid "Go to the expert mode"
+msgid "Go to Expert Mode"
 msgstr "Калид барои содирот:"
 
 #: kgpgkeygenerate.cpp:50
@@ -1789,35 +1789,29 @@ msgstr "Суроғаи пости электронӣ"
 msgid "You have not chosen an encryption key."
 msgstr "Шумо калиди рамзкунониро интихоб накардед."
 
-#: kgpglibrary.cpp:128
+#: kgpglibrary.cpp:127
 #, fuzzy, kde-format
-#| msgid ""
-#| "<b>%1 Files left.</b>\n"
-#| "Encrypting </b>%2"
-msgid "<p><b>%1 Files left.</b><br /><b>Encrypting </b>%2</p>"
-msgstr "<b>%1 Файлҳо мондаанд. Рамзкунии </b>%2"
+msgid "<p><b>Encrypting </b>%2</p>"
+msgid_plural "<p><b>%1 Files left.</b><br /><b>Encrypting </b>%2</p>"
+msgstr[0] "<b>Рамзкунӣ </b>%2"
+msgstr[1] "<b>Рамзкунӣ </b>%2"
 
-#: kgpglibrary.cpp:130
-#, fuzzy, kde-format
-msgid "<b>Encrypting </b>%1"
-msgstr "<b>Рамзкунӣ </b>%2"
-
-#: kgpglibrary.cpp:165
+#: kgpglibrary.cpp:162
 #, fuzzy
 #| msgid "<b>Process halted</b>.<br>Not all files were encrypted."
 msgid "<p><b>Process halted</b>.<br />Not all files were encrypted.</p>"
 msgstr "<b>Амалиёт боз истод</b>.<br>На ҳамаи файлҳо нобуд шудаанд."
 
-#: kgpglibrary.cpp:199
+#: kgpglibrary.cpp:196
 #, kde-format
 msgid "Decrypting %1"
 msgstr "Рамзкунӣ %1"
 
-#: kgpglibrary.cpp:202
+#: kgpglibrary.cpp:199
 msgid "Processing decryption"
 msgstr "Ҷараёни рамзкушоӣ"
 
-#: kgpglibrary.cpp:214
+#: kgpglibrary.cpp:211
 #, kde-format
 msgid "Processing encryption (%1)"
 msgstr "Ҷараёни рамзкунонӣ (%1)"
@@ -2350,7 +2344,7 @@ msgstr "Рамзкунониро бо калидҳои нобоваринок и
 msgid ""
 "<qt><b>Allow encryption with untrusted keys:</b><br />\n"
 "<p>When importing a public key, the key is usually marked as untrusted and "
-"as such cannot be used unless it is signed by the default key (Thus, making "
+"as such cannot be used unless it is signed by the default key (thus making "
 "it 'trusted'). Checking this box enables any key to be used even if it is "
 "untrusted.</p></qt>"
 msgstr ""
@@ -3738,7 +3732,7 @@ msgstr ""
 #| "prompted for password & that's all!</p>\n"
 msgid ""
 "<p>Decrypt a file with a single mouse click on it. You will then be prompted "
-"for password and that's all!</p>\n"
+"for password, and then that is it!</p>\n"
 msgstr ""
 "<p>Рамзкушоии файл бо як ангуштзании муш. Баъд аз шумо танҳо гузарвожа "
 "пурсида мешаваду & халос!</p>\n"
@@ -4168,12 +4162,6 @@ msgstr ""
 msgid "Do Not Use"
 msgstr "Эҷод кардан"
 
-#: transactions/kgpgchangeexpire.cpp:71
-#, fuzzy, kde-format
-#| msgid "<b>Bad passphrase</b>. you have %1 tries left.<br>"
-msgid "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
-msgstr "<b>Гузарвожаи бад</b>. %1 кӯшишҳо боқӣ мондааст.<br>"
-
 #: transactions/kgpgchangeexpire.cpp:98
 #, fuzzy
 #| msgid ""
@@ -4187,7 +4175,7 @@ msgstr ""
 "мӯҳлати калидро дар усули нозиргоҳ иҷро кунед?</qt>"
 
 #: transactions/kgpgchangeexpire.cpp:101
-msgid "work in progress..."
+msgid "Work in progress...."
 msgstr ""
 
 #: transactions/kgpgchangepass.cpp:64
@@ -4199,7 +4187,7 @@ msgstr "Гузарвожаро барои <b>%1</b> ворид намоед"
 #, fuzzy, kde-format
 msgid ""
 "<qt>Enter new passphrase for <b>%1</b><br />If you forget this passphrase "
-"all your encrypted files and messages will be inaccessible!</qt>"
+"all your encrypted files and messages will be inaccessible.</qt>"
 msgstr ""
 "<qt>Барои <b>%1</b><br>гузарвожаи навро ворид кунед. Агар шумо ин "
 "гузарвожаро аз хотир бароварда бошед, ҳамаи файлҳо ва паёмҳои шумо гум "
@@ -4212,7 +4200,7 @@ msgstr ""
 #| "alphanumeric characters and random sequences"
 msgid ""
 "<p><b>Enter passphrase for %1 &lt;%2&gt;</b>:<br />Passphrase should include "
-"non alphanumeric characters and random sequences</p>"
+"non alphanumeric characters and random sequences.</p>"
 msgstr ""
 "<b>Гузарвожаро барои %1 ворид кунед</b>:<br>Гузарвожа бояд мушкил бошад ва "
 "бояд на танҳо аз ҳарфу рақамҳо иборат бошад"
@@ -4224,10 +4212,22 @@ msgstr ""
 #| "alphanumeric characters and random sequences"
 msgid ""
 "<p><b>Enter passphrase for %1</b>:<br />Passphrase should include non "
-"alphanumeric characters and random sequences</p>"
+"alphanumeric characters and random sequences.</p>"
 msgstr ""
 "<b>Гузарвожаро барои %1 ворид кунед</b>:<br>Гузарвожа бояд мушкил бошад ва "
 "бояд на танҳо аз ҳарфу рақамҳо иборат бошад"
+
+#, fuzzy
+#~| msgid ""
+#~| "<b>%1 Files left.</b>\n"
+#~| "Encrypting </b>%2"
+#~ msgid "<p><b>%1 Files left.</b><br /><b>Encrypting </b>%2</p>"
+#~ msgstr "<b>%1 Файлҳо мондаанд. Рамзкунии </b>%2"
+
+#, fuzzy
+#~| msgid "<b>Bad passphrase</b>. you have %1 tries left.<br>"
+#~ msgid "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
+#~ msgstr "<b>Гузарвожаи бад</b>. %1 кӯшишҳо боқӣ мондааст.<br>"
 
 #~ msgid "RSA"
 #~ msgstr "RSA"
