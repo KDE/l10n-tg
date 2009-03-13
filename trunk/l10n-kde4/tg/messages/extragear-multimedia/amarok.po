@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-12 10:29+0100\n"
+"POT-Creation-Date: 2009-03-13 10:26+0100\n"
 "PO-Revision-Date: 2009-01-20 18:25+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -43,57 +43,57 @@ msgctxt "The Value is not known"
 msgid "Unknown"
 msgstr ""
 
-#: meta/MetaUtility.cpp:498
+#: meta/MetaUtility.cpp:510
 msgctxt "The quality of music"
 msgid "Awful"
 msgstr ""
 
-#: meta/MetaUtility.cpp:499
+#: meta/MetaUtility.cpp:511
 msgctxt "The quality of music"
 msgid "Bad"
 msgstr ""
 
-#: meta/MetaUtility.cpp:500
+#: meta/MetaUtility.cpp:512
 msgctxt "The quality of music"
 msgid "Barely tolerable"
 msgstr ""
 
-#: meta/MetaUtility.cpp:501
+#: meta/MetaUtility.cpp:513
 msgctxt "The quality of music"
 msgid "Tolerable"
 msgstr ""
 
-#: meta/MetaUtility.cpp:502
+#: meta/MetaUtility.cpp:514
 msgctxt "The quality of music"
 msgid "Okay"
 msgstr ""
 
-#: meta/MetaUtility.cpp:503
+#: meta/MetaUtility.cpp:515
 msgctxt "The quality of music"
 msgid "Good"
 msgstr ""
 
-#: meta/MetaUtility.cpp:504
+#: meta/MetaUtility.cpp:516
 msgctxt "The quality of music"
 msgid "Very good"
 msgstr ""
 
-#: meta/MetaUtility.cpp:505
+#: meta/MetaUtility.cpp:517
 msgctxt "The quality of music"
 msgid "Excellent"
 msgstr ""
 
-#: meta/MetaUtility.cpp:506
+#: meta/MetaUtility.cpp:518
 msgctxt "The quality of music"
 msgid "Amazing"
 msgstr ""
 
-#: meta/MetaUtility.cpp:507
+#: meta/MetaUtility.cpp:519
 msgctxt "The quality of music"
 msgid "Favorite"
 msgstr ""
 
-#: meta/MetaUtility.cpp:508
+#: meta/MetaUtility.cpp:520
 msgctxt "The quality of music"
 msgid "Not rated"
 msgstr ""
@@ -242,6 +242,7 @@ msgid "Delete Files"
 msgstr ""
 
 #: collection/sqlcollection/OrganizeCollectionDialog.cpp:163
+#: collection/sqlcollection/ScanManager.cpp:658
 #: browsers/collectionbrowser/CollectionTreeItem.cpp:153
 #: playlist/view/graphic/PlaylistGraphicsItem.cpp:343
 #: covermanager/CoverViewDialog.h:45 covermanager/CoverManager.cpp:852
@@ -1253,7 +1254,7 @@ msgctxt "The collection this track is part of"
 msgid "None"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:1016
+#: dialogs/TagDialog.cpp:1017
 #, kde-format
 msgctxt "The amount of tracks being edited"
 msgid "1 Track"
@@ -1261,27 +1262,32 @@ msgid_plural "Information for %1 Tracks"
 msgstr[0] ""
 msgstr[1] ""
 
-#: dialogs/TagDialog.cpp:1131
+#: dialogs/TagDialog.cpp:1132
 #, kde-format
 msgid "Editing 1 file"
 msgid_plural "Editing %1 files"
 msgstr[0] ""
 msgstr[1] ""
 
-#: dialogs/TagDialog.cpp:1136
+#: dialogs/TagDialog.cpp:1137
 msgid "Rated Songs:"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:1138
+#: dialogs/TagDialog.cpp:1139
 msgid "Average Rating:"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:1140
+#: dialogs/TagDialog.cpp:1141
 msgid "Scored Songs:"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:1142
+#: dialogs/TagDialog.cpp:1143
 msgid "Average Score:"
+msgstr ""
+
+#: dialogs/TagDialog.cpp:1441
+msgid ""
+"Writing to file failed. Please check permissions and available disc space."
 msgstr ""
 
 #: dialogs/EditFilterDialog.cpp:44
@@ -1737,7 +1743,7 @@ msgstr ""
 
 #: podcasts/sql/SqlPodcastProvider.h:46
 #: browsers/playlistbrowser/PodcastModel.cpp:595
-#: services/opmldirectory/OpmlDirectoryService.cpp:240
+#: services/opmldirectory/OpmlDirectoryService.cpp:238
 msgid "Local Podcasts"
 msgstr ""
 
@@ -5857,58 +5863,62 @@ msgstr ""
 msgid "Peak acceleration: "
 msgstr ""
 
-#: services/ServiceBase.cpp:173
+#: services/ServiceBase.cpp:178
 msgid "Group By"
 msgstr ""
 
-#: services/ServiceBase.cpp:403
+#: services/ServiceBase.cpp:416
 msgid "This service does not accept any messages"
 msgstr ""
 
-#: services/ServiceBase.cpp:410
+#: services/ServiceBase.cpp:423
 msgid "ERROR: unknown message"
 msgstr ""
 
 #: services/opmldirectory/OpmlDirectoryXmlParser.cpp:63
 #, kde-format
 msgctxt ""
-"This string is the first part of the following example phrase: OpmlDirectory "
-"update complete. Added 4 feeds in 6 categories."
-msgid "OpmlDirectory update complete. Added 1 feed in "
-msgid_plural "OpmlDirectory update complete. Added %1 feeds in "
+"This string is the first part of the following example phrase: Podcast "
+"Directory update complete. Added 4 feeds in 6 categories."
+msgid "Podcast Directory update complete. Added 1 feed in "
+msgid_plural "Podcast Directory update complete. Added %1 feeds in "
 msgstr[0] ""
 msgstr[1] ""
 
 #: services/opmldirectory/OpmlDirectoryXmlParser.cpp:64
 #, kde-format
 msgctxt ""
-"This string is the second part of the following example phrase: "
-"OpmlDirectory update complete. Added 4 feeds in 6 categories."
+"This string is the second part of the following example phrase: Podcast "
+"Directory update complete. Added 4 feeds in 6 categories."
 msgid "1 category."
 msgid_plural "%1 categories."
 msgstr[0] ""
 msgstr[1] ""
 
-#: services/opmldirectory/OpmlDirectoryService.cpp:71
+#: services/opmldirectory/OpmlDirectoryService.cpp:40
+msgid "Podcast Directory"
+msgstr ""
+
+#: services/opmldirectory/OpmlDirectoryService.cpp:70
 msgid "A large listing of podcasts"
 msgstr ""
 
-#: services/opmldirectory/OpmlDirectoryService.cpp:96
+#: services/opmldirectory/OpmlDirectoryService.cpp:95
 #: services/jamendo/JamendoService.cpp:102
 msgctxt "Fetch new information from the website"
 msgid "Update"
 msgstr ""
 
-#: services/opmldirectory/OpmlDirectoryService.cpp:103
+#: services/opmldirectory/OpmlDirectoryService.cpp:102
 msgid "Subscribe"
 msgstr ""
 
-#: services/opmldirectory/OpmlDirectoryService.cpp:148
-msgid "Downloading OpmlDirectory Database"
+#: services/opmldirectory/OpmlDirectoryService.cpp:147
+msgid "Downloading Podcast Directory Database"
 msgstr ""
 
-#: services/opmldirectory/OpmlDirectoryService.cpp:177
-msgid "Updating the local OPML database."
+#: services/opmldirectory/OpmlDirectoryService.cpp:176
+msgid "Updating the local Podcast database."
 msgstr ""
 
 #: services/opmldirectory/OpmlDirectoryInfoParser.cpp:58
@@ -6178,6 +6188,10 @@ msgstr ""
 
 #: services/lastfm/LastFmServiceCollection.cpp:136
 msgid "last.fm"
+msgstr ""
+
+#: services/shoutcast/ShoutcastService.cpp:33
+msgid "Shoutcast Directory"
 msgstr ""
 
 #: services/shoutcast/ShoutcastService.cpp:62
