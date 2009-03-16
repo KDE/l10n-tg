@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-14 06:22+0100\n"
+"POT-Creation-Date: 2009-03-16 06:13+0100\n"
 "PO-Revision-Date: 2005-09-23 19:18+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -1330,7 +1330,7 @@ msgid "Do you really want to cancel?"
 msgstr ""
 
 #: koincidenceeditor.cpp:116 koeditorattachments.cpp:677 koeventeditor.cpp:420
-#: kotodoeditor.cpp:354
+#: kotodoeditor.cpp:356
 #, fuzzy
 #| msgid "KOrganizer Confirmation"
 msgctxt "@title:window"
@@ -1591,13 +1591,13 @@ msgstr ""
 msgid "Attendee added"
 msgstr "Даъватшудагон"
 
-#: views/agendaview/koagendaitem.cpp:911
-#: views/agendaview/koagendaitem.cpp:1014
+#: views/agendaview/koagendaitem.cpp:902
+#: views/agendaview/koagendaitem.cpp:1005
 #, kde-format
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: views/agendaview/koagendaitem.cpp:925
+#: views/agendaview/koagendaitem.cpp:916
 #, kde-format
 msgid "- %1"
 msgstr "- %1"
@@ -1988,12 +1988,12 @@ msgstr ""
 "%1 - %2\n"
 "Ҳафта %3"
 
-#: views/timespentview/kotimespentview.cpp:88
+#: views/timespentview/kotimespentview.cpp:134
 #, fuzzy
 msgid "No category"
 msgstr "Категорияҳо"
 
-#: views/timespentview/kotimespentview.cpp:128
+#: views/timespentview/kotimespentview.cpp:174
 #, fuzzy, kde-format
 #| msgid "1 hour"
 #| msgid_plural "%1 hours"
@@ -2003,7 +2003,7 @@ msgid_plural "%1 hours"
 msgstr[0] "%1 соат"
 msgstr[1] "%1 соатҳо"
 
-#: views/timespentview/kotimespentview.cpp:129
+#: views/timespentview/kotimespentview.cpp:175
 #, fuzzy, kde-format
 #| msgid "Redo (%1)"
 msgctxt "percent of hours spent"
@@ -2032,7 +2032,7 @@ msgstr "&Фиристодани млумотҳо"
 msgid "Do Not Send"
 msgstr "Бо марказ дар саршави"
 
-#: incidencechanger.cpp:371 kodialogmanager.cpp:126
+#: incidencechanger.cpp:372 kodialogmanager.cpp:126
 #, fuzzy, kde-format
 msgid "Unable to save %1 \"%2\"."
 msgstr "Нигоҳ доштани ҳодиса натавонист."
@@ -2137,13 +2137,18 @@ msgctxt "@title:tab"
 msgid "Regional"
 msgstr "Шахсӣ"
 
-#: koprefsdialog.cpp:226
+#: koprefsdialog.cpp:224
+msgctxt "@title:group"
+msgid "General Time and Date"
+msgstr ""
+
+#: koprefsdialog.cpp:232
 #, fuzzy
 msgctxt "@label"
 msgid "Time zone:"
 msgstr "Минтақаи вақт:"
 
-#: koprefsdialog.cpp:228
+#: koprefsdialog.cpp:234
 msgctxt "@info:whatsthis"
 msgid ""
 "Select your time zone from the list of locations on this drop down box. If "
@@ -2151,38 +2156,45 @@ msgid ""
 "KOrganizer will automatically adjust for daylight savings."
 msgstr ""
 
-#: koprefsdialog.cpp:239
+#: koprefsdialog.cpp:245
 #, fuzzy
 #| msgid "Unknown"
 msgctxt "@item:inlistbox unknown timezone"
 msgid "Unknown"
 msgstr "Номаълум"
 
-#: koprefsdialog.cpp:254
+#: koprefsdialog.cpp:260
 #, fuzzy
 #| msgid "[No selection]"
 msgctxt "@item:inlistbox no timezone selected"
 msgid "[No selection]"
 msgstr "[Интихоб нест]"
 
-#: koprefsdialog.cpp:273
+#: koprefsdialog.cpp:280
+#, fuzzy
+#| msgid "Holiday"
+msgctxt "@title:group"
+msgid "Holidays"
+msgstr "Рӯзи истироҳат"
+
+#: koprefsdialog.cpp:290
 msgctxt "@label"
 msgid "Use holiday region:"
 msgstr ""
 
-#: koprefsdialog.cpp:308
+#: koprefsdialog.cpp:325
 msgctxt "@item:inlistbox do not use holidays"
 msgid "(None)"
 msgstr ""
 
-#: koprefsdialog.cpp:325
+#: koprefsdialog.cpp:337
 #, fuzzy
 #| msgid "Working Hours"
 msgctxt "@title:group"
 msgid "Working Hours"
 msgstr "Вақти корӣ"
 
-#: koprefsdialog.cpp:346
+#: koprefsdialog.cpp:358
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box to make KOrganizer mark the working hours for this day of the "
@@ -2190,14 +2202,27 @@ msgid ""
 "will not be marked with color."
 msgstr ""
 
-#: koprefsdialog.cpp:384
+#: koprefsdialog.cpp:396
 #, fuzzy
 #| msgid "Default Calendar"
 msgctxt "@title:tab"
 msgid "Default Values"
 msgstr "Тақвими пешфарзӣ"
 
-#: koprefsdialog.cpp:399
+#: koprefsdialog.cpp:401
+#, fuzzy
+#| msgid "Appointment"
+msgctxt "@title:group"
+msgid "Appointments"
+msgstr "Мулоқот"
+
+#: koprefsdialog.cpp:417
+#, fuzzy
+msgctxt "@title:group"
+msgid "Reminders"
+msgstr "Ба ёд &овардани:"
+
+#: koprefsdialog.cpp:423
 #, fuzzy
 #| msgid "1 minute"
 #| msgid_plural "%1 minutes"
@@ -2205,68 +2230,68 @@ msgctxt "@item:inlistbox"
 msgid "1 minute"
 msgstr "%1 дақиқа"
 
-#: koprefsdialog.cpp:400
+#: koprefsdialog.cpp:424
 #, fuzzy
 #| msgid "5 minutes"
 msgctxt "@item:inlistbox"
 msgid "5 minutes"
 msgstr "5 дақиқа"
 
-#: koprefsdialog.cpp:401
+#: koprefsdialog.cpp:425
 #, fuzzy
 #| msgid "10 minutes"
 msgctxt "@item:inlistbox"
 msgid "10 minutes"
 msgstr "10 дақиқа"
 
-#: koprefsdialog.cpp:402
+#: koprefsdialog.cpp:426
 #, fuzzy
 #| msgid "15 minutes"
 msgctxt "@item:inlistbox"
 msgid "15 minutes"
 msgstr "15 дақиқа"
 
-#: koprefsdialog.cpp:403
+#: koprefsdialog.cpp:427
 #, fuzzy
 #| msgid "30 minutes"
 msgctxt "@item:inlistbox"
 msgid "30 minutes"
 msgstr "30 дақиқа"
 
-#: koprefsdialog.cpp:404
+#: koprefsdialog.cpp:428
 #, fuzzy
 msgctxt "@label"
 msgid "Default reminder time:"
 msgstr "Фосилаи ба ёд овардаи зикр шуда:"
 
-#: koprefsdialog.cpp:512
+#: koprefsdialog.cpp:536
 #, fuzzy
 #| msgid "General"
 msgctxt "@title:tab general settings"
 msgid "General"
 msgstr "Умумӣ"
 
-#: koprefsdialog.cpp:529
+#: koprefsdialog.cpp:553
 #, fuzzy
 #| msgid "Date Navigator"
 msgctxt "@title:group"
 msgid "Date Navigator"
 msgstr "Навигатсияи дар таърих"
 
-#: koprefsdialog.cpp:541
+#: koprefsdialog.cpp:565
 #, fuzzy
 #| msgid "Agenda View"
 msgctxt "@title:tab"
 msgid "Agenda View"
 msgstr "Огоҳномаи рӯз"
 
-#: koprefsdialog.cpp:546
+#: koprefsdialog.cpp:570
 #, fuzzy
 msgctxt "@title:group"
 msgid "Display Options"
 msgstr "Ба ёд &овардани:"
 
-#: koprefsdialog.cpp:554
+#: koprefsdialog.cpp:578
 #, fuzzy
 #| msgctxt "suffix in the hour size spin box"
 #| msgid " pixel"
@@ -2274,7 +2299,7 @@ msgctxt "@label suffix in the hour size spin box"
 msgid " pixel"
 msgstr " пиксел"
 
-#: koprefsdialog.cpp:566
+#: koprefsdialog.cpp:590
 #, fuzzy
 #| msgctxt "suffix in the N days spin box"
 #| msgid " days"
@@ -2282,100 +2307,100 @@ msgctxt "@label suffix in the N days spin box"
 msgid " days"
 msgstr " рӯзҳо"
 
-#: koprefsdialog.cpp:597
+#: koprefsdialog.cpp:621
 #, fuzzy
 #| msgid "Month View"
 msgctxt "@title:tab"
 msgid "Month View"
 msgstr "Моҳ"
 
-#: koprefsdialog.cpp:616
+#: koprefsdialog.cpp:640
 #, fuzzy
 msgctxt "@title:tab"
 msgid "Todo View"
 msgstr "Машқҳо"
 
-#: koprefsdialog.cpp:655
+#: koprefsdialog.cpp:679
 msgctxt "@title:tab"
 msgid "Colors"
 msgstr ""
 
-#: koprefsdialog.cpp:690
+#: koprefsdialog.cpp:714
 #, fuzzy
 #| msgid "Categories"
 msgctxt "@title:group"
 msgid "Categories"
 msgstr "Категорияҳо"
 
-#: koprefsdialog.cpp:700
+#: koprefsdialog.cpp:724
 msgctxt "@info:whatsthis"
 msgid ""
 "Select here the event category you want to modify. You can change the "
 "selected category color using the button below."
 msgstr ""
 
-#: koprefsdialog.cpp:709
+#: koprefsdialog.cpp:733
 msgctxt "@info:whatsthis"
 msgid ""
 "Choose here the color of the event category selected using the combo box "
 "above."
 msgstr ""
 
-#: koprefsdialog.cpp:717
+#: koprefsdialog.cpp:741
 #, fuzzy
 msgctxt "@title:group"
 msgid "Resources"
 msgstr "манбаъ %1"
 
-#: koprefsdialog.cpp:726
+#: koprefsdialog.cpp:750
 msgctxt "@info:whatsthis"
 msgid ""
 "Select here resource you want to modify. You can change the selected "
 "resource color using the button below."
 msgstr ""
 
-#: koprefsdialog.cpp:735
+#: koprefsdialog.cpp:759
 msgctxt "@info:whatsthis"
 msgid ""
 "Choose here the color of the resource selected using the combo box above."
 msgstr ""
 
-#: koprefsdialog.cpp:746
+#: koprefsdialog.cpp:770
 #, fuzzy
 #| msgid "month(s)"
 msgctxt "@title:tab"
 msgid "Fonts"
 msgstr "моҳ(ҳо)"
 
-#: koprefsdialog.cpp:761 koprefsdialog.cpp:769
+#: koprefsdialog.cpp:785 koprefsdialog.cpp:793
 #, fuzzy
 #| msgid "Event text"
 msgctxt "@label"
 msgid "Event text"
 msgstr "Матни воқеаҳо"
 
-#: koprefsdialog.cpp:919
+#: koprefsdialog.cpp:943
 #, fuzzy
 #| msgid "Scheduler Mail Client"
 msgctxt "@title"
 msgid "Scheduler Mail Client"
 msgstr "Ҷадвали мизоҷони почта"
 
-#: koprefsdialog.cpp:921
+#: koprefsdialog.cpp:945
 #, fuzzy
 #| msgid "Mail client"
 msgctxt "@option:radio"
 msgid "Mail client"
 msgstr "Мизоҷони почта"
 
-#: koprefsdialog.cpp:927
+#: koprefsdialog.cpp:951
 #, fuzzy
 #| msgid "Additional email addresses:"
 msgctxt "@label"
 msgid "Additional email addresses:"
 msgstr "Иловаи суроғаҳои почтаи электронӣ:"
 
-#: koprefsdialog.cpp:929
+#: koprefsdialog.cpp:953
 msgctxt "@info:whatsthis"
 msgid ""
 "Add, edit or remove additional e-mails addresses here. These email addresses "
@@ -2384,21 +2409,21 @@ msgid ""
 "need to list this address here so KOrganizer can recognize it as yours."
 msgstr ""
 
-#: koprefsdialog.cpp:941
+#: koprefsdialog.cpp:965
 #, fuzzy
 #| msgid "Email"
 msgctxt "@title:column email addresses"
 msgid "Email"
 msgstr "Почтаи электронӣ"
 
-#: koprefsdialog.cpp:944
+#: koprefsdialog.cpp:968
 #, fuzzy
 #| msgid "Additional email address:"
 msgctxt "@label"
 msgid "Additional email address:"
 msgstr "Адреси афзудани почтаи электронӣ:"
 
-#: koprefsdialog.cpp:946
+#: koprefsdialog.cpp:970
 msgctxt "@info:whatsthis"
 msgid ""
 "Edit additional e-mails addresses here. To edit an address select it from "
@@ -2406,98 +2431,98 @@ msgid ""
 "the ones you have in addition to the one set in personal preferences."
 msgstr ""
 
-#: koprefsdialog.cpp:959
+#: koprefsdialog.cpp:983
 #, fuzzy
 #| msgid "New"
 msgctxt "@action:button add a new email address"
 msgid "New"
 msgstr "Эҷод кардан"
 
-#: koprefsdialog.cpp:962
+#: koprefsdialog.cpp:986
 msgctxt "@info:whatsthis"
 msgid ""
 "Press this button to add a new entry to the additional e-mail addresses "
 "list. Use the edit box above to edit the new entry."
 msgstr ""
 
-#: koprefsdialog.cpp:967
+#: koprefsdialog.cpp:991
 #, fuzzy
 msgctxt "@action:button"
 msgid "Remove"
 msgstr "Вазифа"
 
-#: koprefsdialog.cpp:1010
+#: koprefsdialog.cpp:1034
 #, fuzzy
 #| msgid "(EmptyEmail)"
 msgctxt "@label"
 msgid "(EmptyEmail)"
 msgstr "(Адреси почтаи электронӣ мавҷуд нест)"
 
-#: koprefsdialog.cpp:1230
+#: koprefsdialog.cpp:1254
 #, fuzzy
 #| msgid "Name"
 msgctxt "@title:column plugin name"
 msgid "Name"
 msgstr "Ном"
 
-#: koprefsdialog.cpp:1249
+#: koprefsdialog.cpp:1273
 #, fuzzy
 msgctxt "@action:button"
 msgid "Configure &Plugin..."
 msgstr "Танзимоти &плагинҳо..."
 
-#: koprefsdialog.cpp:1252
+#: koprefsdialog.cpp:1276
 msgctxt "@info:whatsthis"
 msgid ""
 "This button allows you to configure the plugin that you have selected in the "
 "list above"
 msgstr ""
 
-#: koprefsdialog.cpp:1259
+#: koprefsdialog.cpp:1283
 #, fuzzy
 #| msgid "Destination"
 msgctxt "@title:group"
 msgid "Position"
 msgstr "Ҷои таъиншуда"
 
-#: koprefsdialog.cpp:1261
+#: koprefsdialog.cpp:1285
 #, fuzzy
 msgctxt "@option:check"
 msgid "Show in the month view"
 msgstr "Намоиш додани танҳо интихобшудаҳо"
 
-#: koprefsdialog.cpp:1263
+#: koprefsdialog.cpp:1287
 #, fuzzy
 msgctxt "@option:check"
 msgid "Show at the top of the agenda views"
 msgstr "Намоиш додани танҳо интихобшудаҳо"
 
-#: koprefsdialog.cpp:1265
+#: koprefsdialog.cpp:1289
 #, fuzzy
 msgctxt "@option:check"
 msgid "Show at the bottom of the agenda views"
 msgstr "Намоиш додани танҳо интихобшудаҳо"
 
-#: koprefsdialog.cpp:1298
+#: koprefsdialog.cpp:1322
 #, fuzzy
 #| msgid "Calendar"
 msgctxt "@title:group"
 msgid "Calendar Decorations"
 msgstr "Тақвим"
 
-#: koprefsdialog.cpp:1301
+#: koprefsdialog.cpp:1325
 #, fuzzy
 msgctxt "@title:group"
 msgid "Print Plugins"
 msgstr "Рӯйхати воқеъот"
 
-#: koprefsdialog.cpp:1304
+#: koprefsdialog.cpp:1328
 #, fuzzy
 msgctxt "@title:group"
 msgid "Other Plugins"
 msgstr "&Тасвиротҳо"
 
-#: koprefsdialog.cpp:1372
+#: koprefsdialog.cpp:1396
 #, fuzzy
 #| msgid "Unable to configure this plugin"
 msgctxt "@info"
@@ -2698,30 +2723,30 @@ msgctxt "advanced alarm settings"
 msgid "Advanced..."
 msgstr "Интихоботҳои иловагӣ"
 
-#: koeditorgeneral.cpp:409
+#: koeditorgeneral.cpp:411
 #, fuzzy, kde-format
 msgid "1 reminder configured"
 msgid_plural "%1 reminders configured"
 msgstr[0] "Ба ёд &овардани:"
 msgstr[1] "Ба ёд &овардани:"
 
-#: koeditorgeneral.cpp:436
+#: koeditorgeneral.cpp:438
 msgid "1 advanced reminder configured"
 msgstr ""
 
-#: koeditorgeneral.cpp:577
+#: koeditorgeneral.cpp:579
 #, fuzzy
 msgid "No attendees"
 msgstr "Даъв&ат карда шудаҳо"
 
-#: koeditorgeneral.cpp:579
+#: koeditorgeneral.cpp:581
 #, fuzzy, kde-format
 msgid "One attendee"
 msgid_plural "%1 attendees"
 msgstr[0] "%1 дақиқа"
 msgstr[1] "%1 дақиқаҳо"
 
-#: koeditorgeneral.cpp:587
+#: koeditorgeneral.cpp:589
 #, fuzzy
 #| msgid "Please specify a valid start date."
 msgid "Please specify a summary."
@@ -3434,57 +3459,57 @@ msgstr "Нобуд кардани равон"
 msgid "Delete &All"
 msgstr "Нест кардани %1"
 
-#: calendarview.cpp:2248
+#: calendarview.cpp:2250
 #, fuzzy
 msgid "Delete all completed to-dos?"
 msgstr "Ҳамаи масъалаҳои ба анҷом расидаро нест кардан?"
 
-#: calendarview.cpp:2249
+#: calendarview.cpp:2251
 #, fuzzy
 msgid "Purge To-dos"
 msgstr "Масъалаҳоро тоза кардан"
 
-#: calendarview.cpp:2250
+#: calendarview.cpp:2252
 msgid "Purge"
 msgstr "Тоза кардан"
 
-#: calendarview.cpp:2254
+#: calendarview.cpp:2256
 msgid "Purging completed to-dos"
 msgstr "Тоза кардани масъалаҳо ба итмом расид"
 
-#: calendarview.cpp:2271
+#: calendarview.cpp:2273
 #, fuzzy
 msgid "Unable to purge to-dos with uncompleted children."
 msgstr "Тоза кардани масъала, ки машқи нотамом дорад, муяссар карда намешавад."
 
-#: calendarview.cpp:2272
+#: calendarview.cpp:2274
 #, fuzzy
 msgid "Delete To-do"
 msgstr "Нобуд кардани масъала"
 
-#: calendarview.cpp:2281
+#: calendarview.cpp:2283
 #, fuzzy
 msgid "Unable to edit item: it is locked by another process."
 msgstr ""
 "Дигар кардани сабт муяссар карда намешавад. Вай бо протсеси дигар банд "
 "шудааст."
 
-#: calendarview.cpp:2314
+#: calendarview.cpp:2316
 #, fuzzy, kde-format
 msgid "Unable to copy the item to %1."
 msgstr "Қодир ба эҷодкунии файл барои пурборкуни нестам"
 
-#: calendarview.cpp:2315
+#: calendarview.cpp:2317
 #, fuzzy
 msgid "Copying Failed"
 msgstr "Хатогӣ дар вақти пур кардан"
 
-#: calendarview.cpp:2359
+#: calendarview.cpp:2361
 #, fuzzy, kde-format
 msgid "Unable to move the item to  %1."
 msgstr "Нигоҳ доштани ҳодиса натавонист."
 
-#: calendarview.cpp:2360
+#: calendarview.cpp:2362
 #, fuzzy
 msgid "Moving Failed"
 msgstr "Хатогӣ дар вақти пур кардан"
@@ -8717,7 +8742,7 @@ msgid ""
 "The General tab allows you to set the most common options for the event."
 msgstr ""
 
-#: koeventeditor.cpp:153 kotodoeditor.cpp:120
+#: koeventeditor.cpp:153 kotodoeditor.cpp:122
 #, fuzzy
 #| msgid "Details"
 msgctxt "@title:tab"
@@ -8731,7 +8756,7 @@ msgctxt "@title:tab general event settings"
 msgid "&General"
 msgstr "&Умумӣ"
 
-#: koeventeditor.cpp:198 kotodoeditor.cpp:167
+#: koeventeditor.cpp:198 kotodoeditor.cpp:169
 #, fuzzy
 #| msgid "Rec&urrence"
 msgctxt "@title:tab"
@@ -8786,7 +8811,7 @@ msgstr "Модули Exchange "
 msgid "My counter proposal for: %1"
 msgstr "Маҷалла барои %1"
 
-#: koeventeditor.cpp:419 kotodoeditor.cpp:353
+#: koeventeditor.cpp:419 kotodoeditor.cpp:355
 #, fuzzy
 #| msgid "This item will be permanently deleted."
 msgctxt "@info"
@@ -8806,33 +8831,33 @@ msgctxt "@info"
 msgid "Template does not contain a valid event."
 msgstr "Нусха воқеаи рости форматро надорад."
 
-#: kotodoeditor.cpp:106
+#: kotodoeditor.cpp:108
 #, fuzzy
 #| msgid "General"
 msgctxt "@title:tab general to-do settings"
 msgid "General"
 msgstr "Умумӣ"
 
-#: kotodoeditor.cpp:136
+#: kotodoeditor.cpp:138
 #, fuzzy
 #| msgid "&General"
 msgctxt "@title:tab general to-do settings"
 msgid "&General"
 msgstr "&Умумӣ"
 
-#: kotodoeditor.cpp:191
+#: kotodoeditor.cpp:193
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Edit To-do: %1"
 msgstr "Таъғироти масъала"
 
-#: kotodoeditor.cpp:199
+#: kotodoeditor.cpp:201
 #, fuzzy
 msgctxt "@title:window"
 msgid "New To-do"
 msgstr "Масъалаи нав..."
 
-#: kotodoeditor.cpp:371
+#: kotodoeditor.cpp:373
 #, fuzzy
 msgctxt "@info"
 msgid "Template does not contain a valid to-do."
