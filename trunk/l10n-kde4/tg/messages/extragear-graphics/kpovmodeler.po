@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpovmodeler\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-18 09:58+0200\n"
+"POT-Creation-Date: 2009-03-17 10:52+0100\n"
 "PO-Revision-Date: 2004-07-07 14:58-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -1417,8 +1417,10 @@ msgstr "Тафсилотҳо"
 
 #: pminserterrordialog.cpp:37
 #, fuzzy, kde-format
-msgid "%1 of %2 objects could not be inserted."
-msgstr "%1 аз %2 объектҳо низ гузошта нахоҳанд шуд."
+msgid "%2 of 1 object could not be inserted."
+msgid_plural "%2 of %1 objects could not be inserted."
+msgstr[0] "%1 аз %2 объектҳо низ гузошта нахоҳанд шуд."
+msgstr[1] "%1 аз %2 объектҳо низ гузошта нахоҳанд шуд."
 
 #: pminserterrordialog.cpp:40
 msgid "Objects not inserted:"
@@ -2068,18 +2070,18 @@ msgstr "Ҷойгир кардани объектҳо"
 
 #: pmmovecommand.cpp:362
 #, fuzzy, kde-format
-msgid "Can not insert the declare \"%1\" at that point."
+msgid "Cannot insert the declare \"%1\" at that point."
 msgstr "Наметавонам декларатсияи \"%1\"-ро дар ин ҳолат низ гузорам."
 
 #: pmmovecommand.cpp:365
 #, fuzzy, kde-format
-msgid "The declare \"%1\" can not be moved behind linked objects."
+msgid "The declare \"%1\" cannot be moved behind linked objects."
 msgstr "Эълоноти \"%1\" байни объектҳои пайвастшуда, гузаронида нахоҳад шуд."
 
 #: pmmovecommand.cpp:449
 #, fuzzy, kde-format
 msgid ""
-"The %1 \"%2\" can not be moved because it contains a link to the declare \"%3"
+"The %1 \"%2\" cannot be moved because it contains a link to the declare \"%3"
 "\" and the insert point is not after the declare."
 msgstr ""
 "%1 \"%2\" набояд гузаронида шавад, барои инки он дорои истинод дар "
@@ -2269,7 +2271,7 @@ msgstr "Ахборот"
 
 #: pmparser.cpp:251 pmparser.cpp:267
 #, fuzzy, kde-format
-msgid "Can not insert %1 into %2."
+msgid "Cannot insert %1 into %2."
 msgstr "Наметавонам %1-ро дар %2 гузорам."
 
 #: pmparser.cpp:378 pmparser.cpp:380
@@ -3067,31 +3069,33 @@ msgstr "Ифодоти float лозим аст"
 
 #: pmpovrayparser.cpp:1338 pmpovrayparser.cpp:1352
 #, fuzzy
-msgid "You can not multiply a vector with a color"
+msgid "Cannot multiply a vector by a color."
 msgstr "Шумо имкони вусъат додани вектори рангро надоред"
 
 #: pmpovrayparser.cpp:1398
-msgid "You can't divide a vector by a color"
+#, fuzzy
+#| msgid "You can't divide a vector by a color"
+msgid "Cannot divide a vector by a color."
 msgstr "Шумо наметавонед векторро бо ранг ҷудо кунед"
 
 #: pmpovrayparser.cpp:1412
 #, fuzzy
-msgid "You can not divide a color by a vector"
+msgid "Cannot divide a color by a vector."
 msgstr "Шумо наметавонед рангро бо вектор ҷудо кунед"
 
-#: pmpovrayparser.cpp:1454
+#: pmpovrayparser.cpp:1454 pmpovrayparser.cpp:1468
 #, fuzzy
-msgid "You can not add a vector and a color"
+msgid "Cannot add a vector and a color."
 msgstr "Шумо наметавонед вектор ва рангро илова кунед"
 
-#: pmpovrayparser.cpp:1468
+#: pmpovrayparser.cpp:1510
 #, fuzzy
-msgid "You can not add a vector with a color"
-msgstr "Шумо наметавонед векторро якҷоя бо ранг илова кунед"
+msgid "Cannot subtract a color from a vector."
+msgstr "Шумо наметавонед вектор ва рангро кам кунед"
 
-#: pmpovrayparser.cpp:1510 pmpovrayparser.cpp:1524
+#: pmpovrayparser.cpp:1524
 #, fuzzy
-msgid "You can not subtract a vector and a color"
+msgid "Cannot subtract a vector from a color."
 msgstr "Шумо наметавонед вектор ва рангро кам кунед"
 
 #: pmpovrayparser.cpp:1617 pmpovrayparser.cpp:1628
@@ -3238,7 +3242,7 @@ msgstr "Як объекти графикӣ лозим аст"
 
 #: pmpovrayrenderwidget.cpp:70
 #, fuzzy
-msgid "Can not render an empty scene.\n"
+msgid "Cannot render an empty scene.\n"
 msgstr "Натавонистам намунаи холиро ба шакли муайян дарорам.\n"
 
 #: pmpovrayrenderwidget.cpp:80
@@ -4319,7 +4323,7 @@ msgstr "Масофа байни узелҳо:"
 
 #: pmxmlparser.cpp:64
 #, fuzzy
-msgid "Could not load the documents data."
+msgid "Could not load the document's data."
 msgstr "Наметавонам иттилооти санадро пурбор кунам!"
 
 #: pmxmlparser.cpp:96
@@ -4481,6 +4485,10 @@ msgstr "Виктор Ибрагимов, Акмал Саломов"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "youth_opportunities@tajik.net"
+
+#, fuzzy
+#~ msgid "You can not add a vector with a color"
+#~ msgstr "Шумо наметавонед векторро якҷоя бо ранг илова кунед"
 
 #~ msgid "Disables OpenGL rendering"
 #~ msgstr "Ғайрифаъол кардани OpenGL"
