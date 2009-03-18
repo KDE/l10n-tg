@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-17 10:53+0100\n"
+"POT-Creation-Date: 2009-03-18 11:01+0100\n"
 "PO-Revision-Date: 2009-01-20 18:25+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -25,8 +25,8 @@ msgstr "Сурудро интихоб намо!"
 msgid "No information available for this track"
 msgstr ""
 
-#: meta/file/File_p.h:314 meta/file/File_p.h:361 meta/file/File_p.h:364
-#: meta/file/File_p.h:402 meta/file/File_p.h:431 meta/file/File_p.h:460
+#: meta/file/File_p.h:317 meta/file/File_p.h:364 meta/file/File_p.h:367
+#: meta/file/File_p.h:405 meta/file/File_p.h:434 meta/file/File_p.h:463
 #: meta/default/DefaultMetaTypes.h:41 meta/default/DefaultMetaTypes.h:81
 #: meta/default/DefaultMetaTypes.h:99
 #: services/scriptable/ScriptableServiceMeta_p.h:105
@@ -331,7 +331,7 @@ msgid ""
 ">Configure Amarok</p>"
 msgstr ""
 
-#: collection/CollectionManager.cpp:116
+#: collection/CollectionManager.cpp:122
 msgid ""
 "<p>Amarok could not find any collection plugins. Amarok is now updating the "
 "KDE configuration database. Please wait a couple of minutes, then restart "
@@ -930,7 +930,7 @@ msgstr ""
 #: browsers/collectionbrowser/CollectionWidget.cpp:110
 #: browsers/collectionbrowser/CollectionWidget.cpp:142
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:245 rc.cpp:915
-#: services/lastfm/LastFmService.cpp:505
+#: services/lastfm/LastFmService.cpp:512
 #: services/magnatune/MagnatuneStore.cpp:194
 #: services/jamendo/JamendoInfoParser.cpp:54 playlist/PlaylistDefines.h:71
 #: playlist/PlaylistHeader.cpp:42 playlist/PlaylistModel.cpp:693
@@ -1062,71 +1062,116 @@ msgstr ""
 
 #. i18n: file: dialogs/PlaylistLayoutEditDialog.ui:171
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: dialogs/PlaylistLayoutEditDialog.cpp:77 rc.cpp:743
+#: dialogs/PlaylistLayoutEditDialog.cpp:78 rc.cpp:743
 msgid "Head"
 msgstr ""
 
-#: dialogs/PlaylistLayoutEditDialog.cpp:78
+#: dialogs/PlaylistLayoutEditDialog.cpp:79
 msgid "Body"
 msgstr ""
 
-#: dialogs/PlaylistLayoutEditDialog.cpp:79
+#: dialogs/PlaylistLayoutEditDialog.cpp:80
 msgid "Single"
 msgstr ""
 
-#: dialogs/PlaylistLayoutEditDialog.cpp:102
+#: dialogs/PlaylistLayoutEditDialog.cpp:103
 #, fuzzy
 #| msgid "&Playlist"
 msgid "New playlist layout"
 msgstr "&Рӯйхати мусиқӣ"
 
-#: dialogs/PlaylistLayoutEditDialog.cpp:107
+#: dialogs/PlaylistLayoutEditDialog.cpp:108
 #, fuzzy
 #| msgid "&Playlist"
 msgid "Copy playlist layout"
 msgstr "&Рӯйхати мусиқӣ"
 
-#: dialogs/PlaylistLayoutEditDialog.cpp:111
+#: dialogs/PlaylistLayoutEditDialog.cpp:113
 #, fuzzy
 #| msgid "&Playlist"
 msgid "Delete playlist layout"
 msgstr "&Рӯйхати мусиқӣ"
 
-#: dialogs/PlaylistLayoutEditDialog.cpp:117
+#: dialogs/PlaylistLayoutEditDialog.cpp:119
 #, fuzzy
 #| msgid "&Playlist"
 msgid "Rename playlist layout"
 msgstr "&Рӯйхати мусиқӣ"
 
-#: dialogs/PlaylistLayoutEditDialog.cpp:134
+#: dialogs/PlaylistLayoutEditDialog.cpp:137
+#: dialogs/PlaylistLayoutEditDialog.cpp:174
 #, fuzzy
 #| msgid "&Playlist"
 msgid "Choose a name for the new playlist layout"
 msgstr "&Рӯйхати мусиқӣ"
 
-#: dialogs/PlaylistLayoutEditDialog.cpp:135
+#: dialogs/PlaylistLayoutEditDialog.cpp:138
 msgid "Please enter a name for the playlist layout you are about to define:"
 msgstr ""
 
-#: dialogs/PlaylistLayoutEditDialog.cpp:137
+#: dialogs/PlaylistLayoutEditDialog.cpp:140
+#: dialogs/PlaylistLayoutEditDialog.cpp:142
+#: dialogs/PlaylistLayoutEditDialog.cpp:178
+#: dialogs/PlaylistLayoutEditDialog.cpp:180
+#: dialogs/PlaylistLayoutEditDialog.cpp:223
+#: dialogs/PlaylistLayoutEditDialog.cpp:227
+#: dialogs/PlaylistLayoutEditDialog.cpp:229
 #, fuzzy
 #| msgctxt "NAME OF TRANSLATORS"
 #| msgid "Your names"
 msgid "Layout name error"
 msgstr "Виктор Ибрагимов"
 
-#: dialogs/PlaylistLayoutEditDialog.cpp:137
+#: dialogs/PlaylistLayoutEditDialog.cpp:140
+#: dialogs/PlaylistLayoutEditDialog.cpp:178
 msgid "Can't create a layout with no name."
 msgstr ""
 
-#: dialogs/PlaylistLayoutEditDialog.cpp:234
+#: dialogs/PlaylistLayoutEditDialog.cpp:142
+#: dialogs/PlaylistLayoutEditDialog.cpp:180
+msgid "Can't create a layout with the same name as an existing layout."
+msgstr ""
+
+#: dialogs/PlaylistLayoutEditDialog.cpp:175
+#, kde-format
+msgid ""
+"Please enter a name for the playlist layout you are about to define as copy "
+"of the layout '%1':"
+msgstr ""
+
+#: dialogs/PlaylistLayoutEditDialog.cpp:219
+#, fuzzy
+#| msgid "&Playlist"
+msgid "Choose a new name for the playlist layout"
+msgstr "&Рӯйхати мусиқӣ"
+
+#: dialogs/PlaylistLayoutEditDialog.cpp:220
+msgid ""
+"Please enter a new name for the playlist layout you are about to rename:"
+msgstr ""
+
+#: dialogs/PlaylistLayoutEditDialog.cpp:223
+#, fuzzy
+#| msgid "&Playlist"
+msgid "Can't rename one of the default layouts."
+msgstr "&Рӯйхати мусиқӣ"
+
+#: dialogs/PlaylistLayoutEditDialog.cpp:227
+msgid "Can't rename a layout with no name."
+msgstr ""
+
+#: dialogs/PlaylistLayoutEditDialog.cpp:229
+msgid "Can't rename a layout with the same name as an existing layout."
+msgstr ""
+
+#: dialogs/PlaylistLayoutEditDialog.cpp:311
 #, kde-format
 msgid ""
 "The layout '%1' you modified is one of the default layouts and cannot be "
 "overwritten.                 Please select a different name to save a copy."
 msgstr ""
 
-#: dialogs/PlaylistLayoutEditDialog.cpp:236
+#: dialogs/PlaylistLayoutEditDialog.cpp:313
 msgid "Reserved Layout Name"
 msgstr ""
 
@@ -6117,68 +6162,84 @@ msgid "Neighbors"
 msgstr ""
 
 #: services/lastfm/LoveTrackAction.cpp:28
-#: services/lastfm/LastFmService.cpp:264
+#: services/lastfm/LastFmService.cpp:265
 msgid "Last.fm: Love"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:178
+#: services/lastfm/LastFmService.cpp:179
 msgid "Last.fm: The social music revolution."
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:266
+#: services/lastfm/LastFmService.cpp:267
 msgid "Ctrl+L"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:301
+#: services/lastfm/LastFmService.cpp:302
 msgctxt "Last.fm: errorMessage"
 msgid "Either the username was not recognized, or the password was incorrect."
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:305
+#: services/lastfm/LastFmService.cpp:306
 msgctxt "Last.fm: errorMessage"
 msgid ""
 "There was a problem communicating with the Last.fm services. Please try "
 "again later."
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:310
+#: services/lastfm/LastFmService.cpp:311
 msgctxt "Last.fm: errorMessage"
 msgid "Last.fm cannot be reached. Please check your firewall settings."
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:411
+#: services/lastfm/LastFmService.cpp:412
 msgid "Enter an artist name"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:414
+#: services/lastfm/LastFmService.cpp:415
 msgid "Enter a tag"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:417
+#: services/lastfm/LastFmService.cpp:418
 msgid "Enter a last.fm user name"
 msgstr ""
 
+#: services/lastfm/LastFmService.cpp:432
+msgid "Username: "
+msgstr ""
+
+#: services/lastfm/LastFmService.cpp:433
+msgid "Age: "
+msgstr ""
+
 #: services/lastfm/LastFmService.cpp:434
+msgid "Gender: "
+msgstr ""
+
+#: services/lastfm/LastFmService.cpp:441
+msgid "Play Count: "
+msgstr ""
+
+#: services/lastfm/LastFmService.cpp:441
 msgid " plays"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:444
+#: services/lastfm/LastFmService.cpp:451
 msgid "Enter login information for Last.fm"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:502
+#: services/lastfm/LastFmService.cpp:509
 msgid "Create a Custom Last.fm Station"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:505
+#: services/lastfm/LastFmService.cpp:512
 msgid "Tag"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:505
+#: services/lastfm/LastFmService.cpp:512
 msgid "User"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:538 services/lastfm/LastFmService.cpp:551
+#: services/lastfm/LastFmService.cpp:545 services/lastfm/LastFmService.cpp:558
 #, kde-format
 msgctxt "As in, lastfm"
 msgid "Loved Track: %1"
@@ -6867,13 +6928,13 @@ msgstr ""
 msgid "Cannot Delete Default Layouts"
 msgstr ""
 
-#: playlist/layouts/LayoutConfigAction.cpp:44
+#: playlist/layouts/LayoutConfigAction.cpp:43
 #, fuzzy
 #| msgid "Settings"
 msgid "Playlist layouts"
 msgstr "Хизматҳо"
 
-#: playlist/layouts/LayoutConfigAction.cpp:71
+#: playlist/layouts/LayoutConfigAction.cpp:70
 #, fuzzy
 #| msgid "&Playlist"
 msgid "Configure playlist layouts..."
@@ -7091,7 +7152,7 @@ msgid_plural "%1 tracks"
 msgstr[0] ""
 msgstr[1] ""
 
-#: statusbar/ProgressBar.cpp:43 statusbar/CompoundProgressBar.cpp:77
+#: statusbar/ProgressBar.cpp:50 statusbar/CompoundProgressBar.cpp:77
 #: statusbar/CompoundProgressBar.cpp:149 statusbar/CompoundProgressBar.cpp:184
 #: covermanager/CoverManager.cpp:260
 msgid "Abort"
