@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: filetypes\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-24 10:59+0100\n"
+"POT-Creation-Date: 2009-03-22 10:17+0100\n"
 "PO-Revision-Date: 2009-01-16 13:26+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik Language\n"
@@ -80,7 +80,7 @@ msgstr ""
 "унвони мунтахаб файлҳои мавриди истифода қарор гиранд. Барои мисол, вориди *."
 "txt бо навъи файли 'text/plain'"
 
-#: filetypedetails.cpp:110 filetypesview.cpp:124 kservicelistwidget.cpp:129
+#: filetypedetails.cpp:110 filetypesview.cpp:121 kservicelistwidget.cpp:129
 msgid "Add..."
 msgstr "Илова..."
 
@@ -155,7 +155,7 @@ msgstr "Намуди файл %1"
 msgid "Use settings for '%1' group"
 msgstr "Сохтаниҳои барои гурӯҳи '%1' истифода кунед."
 
-#: filetypesview.cpp:63
+#: filetypesview.cpp:60
 msgid ""
 "<p><h1>File Associations</h1> This module allows you to choose which "
 "applications are associated with a given type of file. File types are also "
@@ -191,11 +191,13 @@ msgstr ""
 "ними масок. В этом случае KDE может распознать MIME-тип непосредственно по "
 "содержимому файла.</p>"
 
-#: filetypesview.cpp:94
-msgid "F&ind file type or filename pattern:"
+#: filetypesview.cpp:91
+#, fuzzy
+#| msgid "F&ind file type or filename pattern:"
+msgid "Find file type or filename pattern"
 msgstr "&Ҷусуҷӯи намуд ё номи файл:"
 
-#: filetypesview.cpp:100
+#: filetypesview.cpp:97
 msgid ""
 "Enter a part of a filename pattern, and only file types with a matching file "
 "pattern will appear in the list. Alternatively, enter a part of a file type "
@@ -205,11 +207,11 @@ msgstr ""
 "совпадающие файлы. Либо введите часть имени файла, как оно появляется в "
 "списке."
 
-#: filetypesview.cpp:108
+#: filetypesview.cpp:105
 msgid "Known Types"
 msgstr "Намуди муайян."
 
-#: filetypesview.cpp:115
+#: filetypesview.cpp:112
 msgid ""
 "Here you can see a hierarchical list of the file types which are known on "
 "your system. Click on the '+' sign to expand a category, or the '-' sign to "
@@ -223,21 +225,49 @@ msgstr ""
 "намоиш/таҳрири иттилооти он навъи файл аз контролҳои самти рост истифода "
 "кунед."
 
-#: filetypesview.cpp:129
+#: filetypesview.cpp:126
 msgid "Click here to add a new file type."
 msgstr "Барои иловакардани файли намуди нав, дар ин ҷо пахш кунед."
 
-#: filetypesview.cpp:131
+#: filetypesview.cpp:128 filetypesview.cpp:389
 msgid "&Remove"
 msgstr "&Несткунӣ"
 
-#: filetypesview.cpp:137
-msgid "Click here to remove the selected file type."
-msgstr "Барои нобудсохтани файли намуди интихобшуда, дар ин ҷо пахш кунед."
-
-#: filetypesview.cpp:159
+#: filetypesview.cpp:155
 msgid "Select a file type by name or by extension"
 msgstr "Намуди Файлро бо ном ё бо ҳаҷмаш нитихоб кунед."
+
+#: filetypesview.cpp:385
+#, fuzzy
+#| msgid "&Remove"
+msgid "&Revert"
+msgstr "&Несткунӣ"
+
+#: filetypesview.cpp:386
+msgid "Revert this file type to its initial system-wide definition"
+msgstr ""
+
+#: filetypesview.cpp:387
+msgid ""
+"Click here to revert this file type to its initial system-wide definition, "
+"which undoes any changes made to the file type. Note that system-wide file "
+"types cannot be deleted. You can however empty their pattern list, to "
+"minimize the chances of them being used (but the file type determination "
+"from file contents can still end up using them)."
+msgstr ""
+
+#: filetypesview.cpp:390
+msgid "Delete this file type definition completely"
+msgstr ""
+
+#: filetypesview.cpp:391
+msgid ""
+"Click here to delete this file type definition completely. This is only "
+"possible for user-defined file types. System-wide file types cannot be "
+"deleted. You can however empty their pattern list, to minimize the chances "
+"of them being used (but the file type determination from file contents can "
+"still end up using them)."
+msgstr ""
 
 #: keditfiletype.cpp:122
 msgid "KEditFileType"
@@ -422,15 +452,15 @@ msgstr "Намуди файли нав сохтан"
 msgid "Group:"
 msgstr "Гурӯҳ:"
 
-#: newtypedlg.cpp:56
+#: newtypedlg.cpp:57
 msgid "Select the category under which the new file type should be added."
 msgstr "Дастаеро ки навъи файли нав бояд ба он изофа шударо интихоб кунед."
 
-#: newtypedlg.cpp:61
+#: newtypedlg.cpp:62
 msgid "Type name:"
 msgstr "Намуди Номӣ:"
 
-#: newtypedlg.cpp:66
+#: newtypedlg.cpp:67
 msgid ""
 "Type the name of the file type. For instance, if you selected 'image' as "
 "category and you type 'custom' here, the file type 'image/custom' will be "
@@ -449,6 +479,9 @@ msgstr ""
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "rkovacs@khujand.org youth_opportunities@tajik.net"
+
+#~ msgid "Click here to remove the selected file type."
+#~ msgstr "Барои нобудсохтани файли намуди интихобшуда, дар ин ҷо пахш кунед."
 
 #~ msgid "None"
 #~ msgstr "Ҳеҷ чиз"
