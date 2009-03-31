@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klipper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-27 10:50+0100\n"
+"POT-Creation-Date: 2009-03-31 10:41+0200\n"
 "PO-Revision-Date: 2009-01-11 13:46+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik\n"
@@ -20,70 +20,74 @@ msgstr ""
 "X-Generator: KBabel 1.0.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: configdialog.cpp:156
+#. i18n: file: editactiondialog.ui:138
+#. i18n: ectx: property (text), widget (QPushButton, pbAddCommand)
+#: configdialog.cpp:161 rc.cpp:46
 msgid "Add Command"
 msgstr "Иловакунии Фармон"
 
-#: configdialog.cpp:157
+#. i18n: file: editactiondialog.ui:145
+#. i18n: ectx: property (text), widget (QPushButton, pbRemoveCommand)
+#: configdialog.cpp:162 rc.cpp:49
 msgid "Remove Command"
 msgstr "Хориҷкунии Фармон"
 
-#: configdialog.cpp:166
+#: configdialog.cpp:171
 #, fuzzy
 #| msgid "Click here to set the command to be executed"
 msgid "Double-click here to set the command to be executed"
 msgstr "Барои гузориши фармон баҳри иҷрогардӣ дар ин ҷо ангушт занед"
 
-#: configdialog.cpp:167
+#: configdialog.cpp:172
 msgid "<new command>"
 msgstr "<фармони нав>"
 
-#: configdialog.cpp:191
+#: configdialog.cpp:208
 #, fuzzy
 #| msgid "Click here to set the regexp"
 msgid "Double-click here to set the regular expression"
 msgstr "Барои барпои regexp дар ин ҷо ангушт занед"
 
-#: configdialog.cpp:192
+#: configdialog.cpp:209
 msgid "<new action>"
 msgstr "<амали нав>"
 
-#: configdialog.cpp:209
+#: configdialog.cpp:248
 msgid "Advanced Settings"
 msgstr "Гузоришҳои Беҳбудшуда"
 
-#: configdialog.cpp:231
+#: configdialog.cpp:270
 msgctxt "General Config"
 msgid "General"
 msgstr "Умумӣ"
 
-#: configdialog.cpp:231
+#: configdialog.cpp:270
 msgid "General Config"
 msgstr "Танзимоти умумӣ"
 
-#: configdialog.cpp:232
+#: configdialog.cpp:271
 msgctxt "Actions Config"
 msgid "Actions"
 msgstr "Амалҳо"
 
-#: configdialog.cpp:232
+#: configdialog.cpp:271
 msgid "Actions Config"
 msgstr "Танзимоти амалҳо"
 
-#: configdialog.cpp:236
+#: configdialog.cpp:275
 msgctxt "Shortcuts Config"
 msgid "Shortcuts"
 msgstr "Тугмаҳои тез"
 
-#: configdialog.cpp:236
+#: configdialog.cpp:275
 msgid "Shortcuts Config"
 msgstr "Танзимоти тугмаҳои тез"
 
-#: configdialog.cpp:319
+#: configdialog.cpp:358
 msgid "D&isable Actions for Windows of Type WM_CLASS"
 msgstr "Амалиётҳоро барои Тирезаҳои Навъи WM_CLASS &Хомӯш созед"
 
-#: configdialog.cpp:324
+#: configdialog.cpp:363
 #, fuzzy
 msgid ""
 "<qt>This lets you specify windows in which Klipper should not invoke "
@@ -98,6 +102,10 @@ msgstr ""
 "<br>Баъд, дар тирезае, ки санҷидан мехоҳед, ангушт занед. Сатри<br>якуми он "
 "ҳосилкунӣ, баъди аломати баробар ин ҳамоне<br>, ки шумо дар ин ҷо ворид "
 "кардан мехоҳед, мебошад.</qt>"
+
+#: editactiondialog.cpp:32
+msgid "Action Properties"
+msgstr ""
 
 #: klipper.cpp:141
 #, fuzzy
@@ -236,7 +244,7 @@ msgstr "Клиппер - Асбоби Силули Мухобиротӣ"
 msgid "&More"
 msgstr "&Бештар"
 
-#. i18n: file: actionsconfig.ui:16
+#. i18n: file: actionsconfig.ui:17
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:3
 #, fuzzy
@@ -245,19 +253,21 @@ msgid "Action list (right click to add/remove commands):"
 msgstr ""
 "Амалиёт ва &рӯйхат (ангуштзании рост барои иловакунӣ/фармонҳои хориҷшавӣ):"
 
-#. i18n: file: actionsconfig.ui:27
+#. i18n: file: actionsconfig.ui:28
 #. i18n: ectx: property (text), widget (ActionsTreeWidget, kcfg_ActionList)
 #: rc.cpp:6
 msgid "Regular Expression"
 msgstr "Қоидаҳои умумӣ"
 
-#. i18n: file: actionsconfig.ui:32
+#. i18n: file: actionsconfig.ui:33
 #. i18n: ectx: property (text), widget (ActionsTreeWidget, kcfg_ActionList)
-#: rc.cpp:9
+#. i18n: file: editactiondialog.ui:80
+#. i18n: ectx: property (text), widget (QTreeWidget, twCommandList)
+#: rc.cpp:9 rc.cpp:43
 msgid "Description"
 msgstr "Шарҳдиҳӣ"
 
-#. i18n: file: actionsconfig.ui:42
+#. i18n: file: actionsconfig.ui:43
 #. i18n: ectx: property (text), widget (QPushButton, pbAddAction)
 #: rc.cpp:12
 #, fuzzy
@@ -265,23 +275,31 @@ msgstr "Шарҳдиҳӣ"
 msgid "Add Action"
 msgstr "&Иловакунии Амалиёт"
 
-#. i18n: file: actionsconfig.ui:49
-#. i18n: ectx: property (text), widget (QPushButton, pbDelAction)
+#. i18n: file: actionsconfig.ui:50
+#. i18n: ectx: property (text), widget (QPushButton, pbEditAction)
 #: rc.cpp:15
+#, fuzzy
+#| msgid "&Add Action"
+msgid "Edit Action"
+msgstr "&Иловакунии Амалиёт"
+
+#. i18n: file: actionsconfig.ui:57
+#. i18n: ectx: property (text), widget (QPushButton, pbDelAction)
+#: rc.cpp:18
 #, fuzzy
 #| msgid "&Delete Action"
 msgid "Delete Action"
 msgstr "&Нобудкунии Амалиёт"
 
-#. i18n: file: actionsconfig.ui:56
+#. i18n: file: actionsconfig.ui:64
 #. i18n: ectx: property (text), widget (QPushButton, pbAdvanced)
-#: rc.cpp:18
+#: rc.cpp:21
 msgid "Advanced"
 msgstr "Иловагӣ"
 
-#. i18n: file: actionsconfig.ui:65
+#. i18n: file: actionsconfig.ui:73
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:22
+#: rc.cpp:25
 #, no-c-format
 msgid ""
 "Click on a highlighted item's column to change it. \"%s\" in a command will "
@@ -290,9 +308,45 @@ msgid ""
 "wikipedia.org/wiki/Regular_expression\">Wikipedia entry about this topic</a>."
 msgstr ""
 
+#. i18n: file: editactiondialog.ui:23
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:28
+msgid "Action properties:"
+msgstr ""
+
+#. i18n: file: editactiondialog.ui:45
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:31
+#, fuzzy
+#| msgid "Regular Expression"
+msgid "Regular Expression:"
+msgstr "Қоидаҳои умумӣ"
+
+#. i18n: file: editactiondialog.ui:55
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:34
+#, fuzzy
+#| msgid "Description"
+msgid "Description:"
+msgstr "Шарҳдиҳӣ"
+
+#. i18n: file: editactiondialog.ui:67
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:37
+msgid "List of commands for this action:"
+msgstr ""
+
+#. i18n: file: editactiondialog.ui:75
+#. i18n: ectx: property (text), widget (QTreeWidget, twCommandList)
+#: rc.cpp:40
+#, fuzzy
+#| msgid "Add Command"
+msgid "Command"
+msgstr "Иловакунии Фармон"
+
 #. i18n: file: generalconfig.ui:16
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PopupAtMousePosition)
-#: rc.cpp:25
+#: rc.cpp:52
 #, fuzzy
 #| msgid "&Popup menu at mouse-cursor position"
 msgid "Popup menu at mouse-cursor position"
@@ -300,7 +354,7 @@ msgstr "Менюи ба &рӯй бароянда дар мавқеъи ҷойг�
 
 #. i18n: file: generalconfig.ui:23
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_KeepClipboardContents)
-#: rc.cpp:28
+#: rc.cpp:55
 #, fuzzy
 #| msgid "Save clipboard contents on e&xit"
 msgid "Save clipboard contents on exit"
@@ -308,13 +362,13 @@ msgstr "Мазмуни силули мухобиротиро дар &баром�
 
 #. i18n: file: generalconfig.ui:30
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_StripWhiteSpace)
-#: rc.cpp:31
+#: rc.cpp:58
 msgid "Remove whitespace when executing actions"
 msgstr "Ҳангоми иҷроиши амалиётҳо фазои холиро хориҷ кунед"
 
 #. i18n: file: generalconfig.ui:37
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ReplayActionInHistory)
-#: rc.cpp:34
+#: rc.cpp:61
 #, fuzzy
 #| msgid "&Replay actions on an item selected from history"
 msgid "Replay actions on an item selected from history"
@@ -324,7 +378,7 @@ msgstr "Амалиёт ва пунктҳои аз таърих интихобш�
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PreventEmptyClipboard)
 #. i18n: file: klipper.kcfg:29
 #. i18n: ectx: label, entry (PreventEmptyClipboard), group (General)
-#: rc.cpp:37 rc.cpp:85
+#: rc.cpp:64 rc.cpp:112
 #, fuzzy
 #| msgid "Pre&vent empty clipboard"
 msgid "Prevent empty clipboard"
@@ -334,7 +388,7 @@ msgstr "&Пешгирии силули мухобиротии холӣ"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_IgnoreSelection)
 #. i18n: file: klipper.kcfg:34
 #. i18n: ectx: label, entry (IgnoreSelection), group (General)
-#: rc.cpp:40 rc.cpp:91
+#: rc.cpp:67 rc.cpp:118
 #, fuzzy
 #| msgid "&Ignore selection"
 msgid "Ignore selection"
@@ -344,19 +398,19 @@ msgstr "Интихоботро &инкор кунед"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_IgnoreImages)
 #. i18n: file: klipper.kcfg:39
 #. i18n: ectx: label, entry (IgnoreImages), group (General)
-#: rc.cpp:43 rc.cpp:97
+#: rc.cpp:70 rc.cpp:124
 msgid "Ignore images"
 msgstr "Радкунии тасвирҳо"
 
 #. i18n: file: generalconfig.ui:65
 #. i18n: ectx: property (title), widget (KButtonGroup, kcfg_Synchronize)
-#: rc.cpp:46
+#: rc.cpp:73
 msgid "Clipboard/Selection Behavior"
 msgstr "Силули мухобиротӣ/Интихоби Рафтор"
 
 #. i18n: file: generalconfig.ui:71
 #. i18n: ectx: property (text), widget (QRadioButton, rbSynchronize)
-#: rc.cpp:49
+#: rc.cpp:76
 #, fuzzy
 #| msgid "Sy&nchronize contents of the clipboard and the selection"
 msgid "Synchronize contents of the clipboard and the selection"
@@ -364,13 +418,13 @@ msgstr "Мазмуни силули мухобиротӣ ва интихобот
 
 #. i18n: file: generalconfig.ui:78
 #. i18n: ectx: property (text), widget (QRadioButton, rbSeparate)
-#: rc.cpp:52
+#: rc.cpp:79
 msgid "Separate clipboard and selection"
 msgstr "Ҷудосозии силули мухобиротӣ ва интихобот"
 
 #. i18n: file: generalconfig.ui:88
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:55
+#: rc.cpp:82
 #, fuzzy
 #| msgid "Tim&eout for action popups:"
 msgid "Timeout for action popups:"
@@ -378,13 +432,13 @@ msgstr "Итмоми &вақт барои амалиёти ба рӯй меба�
 
 #. i18n: file: generalconfig.ui:98
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_TimeoutForActionPopups)
-#: rc.cpp:58
+#: rc.cpp:85
 msgid " sec"
 msgstr " сония"
 
 #. i18n: file: generalconfig.ui:105
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:61
+#: rc.cpp:88
 #, fuzzy
 #| msgid "C&lipboard history size:"
 msgid "Clipboard history size:"
@@ -392,7 +446,7 @@ msgstr "Андозаи таърихии &силули мухобиротӣ:"
 
 #. i18n: file: generalconfig.ui:115
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_MaxClipItems)
-#: rc.cpp:64
+#: rc.cpp:91
 #, fuzzy
 #| msgid " entry"
 #| msgid_plural " entries"
@@ -401,7 +455,7 @@ msgstr " entry"
 
 #. i18n: file: klipper.kcfg:9
 #. i18n: ectx: label, entry (Version), group (General)
-#: rc.cpp:67
+#: rc.cpp:94
 #, fuzzy
 #| msgid "Klipper"
 msgid "Klipper version"
@@ -409,7 +463,7 @@ msgstr "Клиппер"
 
 #. i18n: file: klipper.kcfg:12
 #. i18n: ectx: label, entry (PopupAtMousePosition), group (General)
-#: rc.cpp:70
+#: rc.cpp:97
 #, fuzzy
 #| msgid "&Popup menu at mouse-cursor position"
 msgid "Popup at mouse position"
@@ -417,7 +471,7 @@ msgstr "Менюи ба &рӯй бароянда дар мавқеъи ҷойг�
 
 #. i18n: file: klipper.kcfg:16
 #. i18n: ectx: label, entry (KeepClipboardContents), group (General)
-#: rc.cpp:73
+#: rc.cpp:100
 #, fuzzy
 #| msgid "Save clipboard contents on e&xit"
 msgid "Keep clipboard contents"
@@ -425,7 +479,7 @@ msgstr "Мазмуни силули мухобиротиро дар &баром�
 
 #. i18n: file: klipper.kcfg:20
 #. i18n: ectx: label, entry (StripWhiteSpace), group (General)
-#: rc.cpp:76
+#: rc.cpp:103
 #, fuzzy
 #| msgid "Remove whitespace when executing actions"
 msgid "Strip whitespace when executing an action"
@@ -433,7 +487,7 @@ msgstr "Ҳангоми иҷроиши амалиётҳо фазои холиро
 
 #. i18n: file: klipper.kcfg:22
 #. i18n: ectx: whatsthis, entry (StripWhiteSpace), group (General)
-#: rc.cpp:79
+#: rc.cpp:106
 msgid ""
 "Sometimes, the selected text has some whitespace at the end, which, if "
 "loaded as URL in a browser would cause an error. Enabling this option "
@@ -447,7 +501,7 @@ msgstr ""
 
 #. i18n: file: klipper.kcfg:25
 #. i18n: ectx: label, entry (ReplayActionInHistory), group (General)
-#: rc.cpp:82
+#: rc.cpp:109
 #, fuzzy
 #| msgid "&Replay actions on an item selected from history"
 msgid "Replay action in history"
@@ -455,7 +509,7 @@ msgstr "Амалиёт ва пунктҳои аз таърих интихобш�
 
 #. i18n: file: klipper.kcfg:31
 #. i18n: ectx: whatsthis, entry (PreventEmptyClipboard), group (General)
-#: rc.cpp:88
+#: rc.cpp:115
 msgid ""
 "Selecting this option has the effect, that the clipboard can never be "
 "emptied. E.g. when an application exits, the clipboard would usually be "
@@ -467,7 +521,7 @@ msgstr ""
 
 #. i18n: file: klipper.kcfg:36
 #. i18n: ectx: whatsthis, entry (IgnoreSelection), group (General)
-#: rc.cpp:94
+#: rc.cpp:121
 msgid ""
 "This option prevents the selection being recorded in the clipboard history. "
 "Only explicit clipboard changes are recorded."
@@ -477,7 +531,7 @@ msgstr ""
 
 #. i18n: file: klipper.kcfg:43
 #. i18n: ectx: label, entry (Synchronize), group (General)
-#: rc.cpp:100
+#: rc.cpp:127
 #, fuzzy
 #| msgid "Separate clipboard and selection"
 msgid "Synchronize clipboard and selection"
@@ -485,13 +539,13 @@ msgstr "Ҷудосозии силули мухобиротӣ ва интихоб
 
 #. i18n: file: klipper.kcfg:47
 #. i18n: ectx: label, entry (SelectionTextOnly), group (General)
-#: rc.cpp:103
+#: rc.cpp:130
 msgid "Selection text only"
 msgstr ""
 
 #. i18n: file: klipper.kcfg:49
 #. i18n: ectx: whatsthis, entry (SelectionTextOnly), group (General)
-#: rc.cpp:106
+#: rc.cpp:133
 #, fuzzy
 msgid ""
 "<qt>There are two different clipboard buffers available:<br /><br /"
@@ -511,25 +565,25 @@ msgstr ""
 
 #. i18n: file: klipper.kcfg:52
 #. i18n: ectx: label, entry (UseGUIRegExpEditor), group (General)
-#: rc.cpp:109
+#: rc.cpp:136
 msgid "Use graphical regexp editor"
 msgstr ""
 
 #. i18n: file: klipper.kcfg:56
 #. i18n: ectx: label, entry (URLGrabberEnabled), group (General)
-#: rc.cpp:112
+#: rc.cpp:139
 msgid "URL grabber enabled"
 msgstr ""
 
 #. i18n: file: klipper.kcfg:61
 #. i18n: ectx: label, entry (NoActionsForWM_CLASS), group (General)
-#: rc.cpp:115
+#: rc.cpp:142
 msgid "No actions for WM_CLASS"
 msgstr ""
 
 #. i18n: file: klipper.kcfg:64
 #. i18n: ectx: label, entry (TimeoutForActionPopups), group (General)
-#: rc.cpp:118
+#: rc.cpp:145
 #, fuzzy
 #| msgid "Tim&eout for action popups:"
 msgid "Timeout for action popups (seconds)"
@@ -537,13 +591,13 @@ msgstr "Итмоми &вақт барои амалиёти ба рӯй меба�
 
 #. i18n: file: klipper.kcfg:68
 #. i18n: ectx: tooltip, entry (TimeoutForActionPopups), group (General)
-#: rc.cpp:121
+#: rc.cpp:148
 msgid "A value of 0 disables the timeout"
 msgstr "Қиммати 0 тамомшавии вақтро дар мегиронад"
 
 #. i18n: file: klipper.kcfg:71
 #. i18n: ectx: label, entry (MaxClipItems), group (General)
-#: rc.cpp:124
+#: rc.cpp:151
 #, fuzzy
 #| msgid "C&lipboard history size:"
 msgid "Clipboard history size"
@@ -551,16 +605,16 @@ msgstr "Андозаи таърихии &силули мухобиротӣ:"
 
 #. i18n: file: klipper.kcfg:77
 #. i18n: ectx: label, entry (ActionList), group (General)
-#: rc.cpp:127
+#: rc.cpp:154
 msgid "Dummy entry for indicating changes in an action's tree widget"
 msgstr ""
 
-#: rc.cpp:128
+#: rc.cpp:155
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Абророва Хиромон"
 
-#: rc.cpp:129
+#: rc.cpp:156
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "H_Abrorova@rambler.ru"
@@ -569,24 +623,24 @@ msgstr "H_Abrorova@rambler.ru"
 msgid "Klipper - clipboard tool"
 msgstr "Клиппер - асбоби силули мухобиротӣ"
 
-#: urlgrabber.cpp:162
+#: urlgrabber.cpp:178
 #, kde-format
 msgid "%1 - Actions For: %2"
 msgstr "%1 - Амалҳо барои: %2"
 
-#: urlgrabber.cpp:187
+#: urlgrabber.cpp:206
 msgid "Disable This Popup"
 msgstr "Хомӯшсозии Ин Ба Рӯй Бароянда"
 
-#: urlgrabber.cpp:193
+#: urlgrabber.cpp:212
 msgid "&Edit Contents..."
 msgstr "&Таҳрири Мазмун..."
 
-#: urlgrabber.cpp:197
+#: urlgrabber.cpp:216
 msgid "&Cancel"
 msgstr "&Бекор кардан"
 
-#: urlgrabber.cpp:268
+#: urlgrabber.cpp:293
 msgid "Edit Contents"
 msgstr "Таҳрири Мазмун"
 
