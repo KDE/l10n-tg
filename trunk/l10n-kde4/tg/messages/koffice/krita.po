@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-01 11:22+0200\n"
+"POT-Creation-Date: 2009-04-02 11:32+0200\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -2218,7 +2218,7 @@ msgstr "FG ба Шаффоф"
 #. i18n: file: ui/forms/wdgdisplaysettings.ui:69
 #. i18n: ectx: property (text), widget (QLabel, lblColor)
 #: rc.cpp:482
-msgid "Checkers Color:"
+msgid "Checkers' Color:"
 msgstr ""
 
 #. i18n: file: ui/forms/wdgdisplaysettings.ui:76
@@ -2244,7 +2244,7 @@ msgstr ""
 #. i18n: file: ui/forms/wdgdisplaysettings.ui:102
 #. i18n: ectx: property (text), widget (QLabel, lblCheckSize)
 #: rc.cpp:494
-msgid "&Checkers size"
+msgid "&Checkers' size"
 msgstr ""
 
 #. i18n: file: ui/forms/wdgshapeoptions.ui:13
@@ -5857,7 +5857,7 @@ msgstr ""
 #. i18n: file: plugins/viewplugins/metadataeditor/editors/exif.ui:659
 #. i18n: ectx: property (text), item, widget (QComboBox, editLightSource)
 #: rc.cpp:2231
-msgid "Tugnsten"
+msgid "Tungsten"
 msgstr ""
 
 #. i18n: file: plugins/viewplugins/metadataeditor/editors/exif.ui:689
@@ -8593,6 +8593,45 @@ msgstr ""
 msgid "Crop the image to an area"
 msgstr ""
 
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:57
+msgid "Dyna"
+msgstr ""
+
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:184
+#: plugins/tools/defaulttools/kis_tool_brush.cc:148
+#, fuzzy
+msgctxt "smooth out the curves while drawing"
+msgid "Smoothness"
+msgstr "Равшанӣ :"
+
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:197
+msgid "Queue paint tasks"
+msgstr ""
+
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:201
+#: plugins/tools/defaulttools/kis_tool_brush.cc:162
+#, fuzzy
+msgid "Assistant:"
+msgstr "Сириштан"
+
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:203
+#: plugins/tools/defaulttools/kis_tool_brush.cc:164
+#, fuzzy
+#| msgid "Magentas"
+msgid "Magnetism:"
+msgstr "Рӯянобҳо"
+
+#: plugins/tools/tool_dyna/kis_tool_dyna.h:148
+#: plugins/tools/defaulttools/kis_tool_brush.h:77
+#, fuzzy
+msgid "Paint"
+msgstr "нуқтаҳо"
+
+#: plugins/tools/tool_dyna/kis_tool_dyna.h:150
+#, fuzzy
+msgid "Paint with brushes using dynamic movements"
+msgstr "нуқтаҳо"
+
 #: plugins/tools/tool_grid/kis_tool_grid.h:68
 msgid "Edit the grid"
 msgstr ""
@@ -8646,23 +8685,6 @@ msgstr "эллипс"
 #: plugins/tools/defaulttools/kis_tool_colorpicker.h:89
 msgid "Select a color from the image or current layer"
 msgstr ""
-
-#: plugins/tools/defaulttools/kis_tool_brush.cc:148
-#, fuzzy
-msgctxt "smooth out the curves while drawing"
-msgid "Smoothness"
-msgstr "Равшанӣ :"
-
-#: plugins/tools/defaulttools/kis_tool_brush.cc:162
-#, fuzzy
-msgid "Assistant:"
-msgstr "Сириштан"
-
-#: plugins/tools/defaulttools/kis_tool_brush.cc:164
-#, fuzzy
-#| msgid "Magentas"
-msgid "Magnetism:"
-msgstr "Рӯянобҳо"
 
 #: plugins/tools/defaulttools/kis_tool_line.cc:137
 #, fuzzy
@@ -8831,11 +8853,6 @@ msgstr "Остона: "
 #, fuzzy
 msgid "Preview opacity:"
 msgstr "Пешнамоиш"
-
-#: plugins/tools/defaulttools/kis_tool_brush.h:77
-#, fuzzy
-msgid "Paint"
-msgstr "нуқтаҳо"
 
 #: plugins/tools/defaulttools/kis_tool_brush.h:79
 #, fuzzy
@@ -9164,6 +9181,25 @@ msgstr ""
 msgid "Painterly Color Mixer"
 msgstr "Асбобҳои Рассомӣ"
 
+#: plugins/paintops/chalk/kis_chalkop_option.cpp:37
+#: plugins/paintops/spray/kis_sprayop_option.cpp:37
+#: plugins/paintops/dynadraw/kis_dyna_option.cpp:37
+#: plugins/paintops/dynadraw/kis_dynaop_option.cpp:37
+#: plugins/filters/oilpaintfilter/kis_oilpaint_filter.cc:245
+#, fuzzy
+msgid "Brush size"
+msgstr "Тоза карданиҳо"
+
+#: plugins/paintops/chalk/kis_chalk_paintop_factory.h:48
+#, fuzzy
+msgid "Chalk brush"
+msgstr "&Интихоби тоза кардан"
+
+#: plugins/paintops/spray/kis_spray_paintop_factory.h:48
+#, fuzzy
+msgid "Spray brush"
+msgstr "&Интихоби тоза кардан"
+
 #: plugins/paintops/sumie/kis_sumi_paintop_factory.h:48
 #, fuzzy
 msgid "Sumi-e brush"
@@ -9364,17 +9400,20 @@ msgstr "Нест кардани Табақа"
 msgid "Chinese Brush"
 msgstr "&Интихоби тоза кардан"
 
-#: plugins/paintops/dynadraw/kis_dyna_option.cpp:37
-#: plugins/paintops/dynadraw/kis_dynaop_option.cpp:37
-#: plugins/filters/oilpaintfilter/kis_oilpaint_filter.cc:245
+#: plugins/paintops/deform/kis_deform_paintop_factory.h:47
 #, fuzzy
-msgid "Brush size"
-msgstr "Тоза карданиҳо"
+msgid "Deform brush"
+msgstr "Ҳақиқии сохтмон"
 
 #: plugins/paintops/dynadraw/kis_dyna_paintop_factory.h:48
 #, fuzzy
 msgid "Dyna brush"
 msgstr "Дучанда кардан"
+
+#: plugins/paintops/curvebrush/kis_curve_paintop_factory.h:47
+#, fuzzy
+msgid "Curve brush"
+msgstr "&Интихоби тоза кардан"
 
 #: plugins/viewplugins/glsl/dlg_glsl.cc:60
 #, fuzzy
@@ -10214,14 +10253,6 @@ msgstr "Пур кардани Интихоб."
 #~ msgstr "Аслӣ"
 
 #, fuzzy
-#~ msgid "Chalk brush"
-#~ msgstr "&Интихоби тоза кардан"
-
-#, fuzzy
-#~ msgid "Curve brush"
-#~ msgstr "&Интихоби тоза кардан"
-
-#, fuzzy
 #~ msgid "&Use linear interpolation"
 #~ msgstr "Ранги ҷамъкунанда"
 
@@ -10313,10 +10344,6 @@ msgstr "Пур кардани Интихоб."
 #, fuzzy
 #~ msgid "Paint freely"
 #~ msgstr "нуқтаҳо"
-
-#, fuzzy
-#~ msgid "Smeary Brush"
-#~ msgstr "&Интихоби тоза кардан"
 
 #, fuzzy
 #~ msgid "&Filters Gallery"
