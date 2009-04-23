@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-15 12:04+0200\n"
+"POT-Creation-Date: 2009-04-23 11:12+0200\n"
 "PO-Revision-Date: 2005-09-17 13:34+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -371,6 +371,64 @@ msgstr ""
 #: dialogs/exportcertificatesdialog.cpp:77
 msgid "S/MIME export file:"
 msgstr ""
+
+#: dialogs/deletecertificatesdialog.cpp:94
+msgid "These are the certificates you have selected for deletion:"
+msgstr ""
+
+#: dialogs/deletecertificatesdialog.cpp:96
+msgid ""
+"These certificates will be deleted even though you did <emphasis>not</"
+"emphasis><nl> explicitly select them (<a href=\"whatsthis://\">Why?</a>):"
+msgstr ""
+
+#: dialogs/deletecertificatesdialog.cpp:117
+msgctxt "@info:whatsthis"
+msgid ""
+"<title>Why do you want to delete more certificates than I selected?</"
+"title><para>When you delete CA certificates (both root CAs and intermediate "
+"CAs), the certificates issued by them will also be deleted.</para><para>This "
+"can be nicely seen in <application>Kleopatra</application>'s hierarchical "
+"view mode: In this mode, if you delete a certificate that has children, "
+"those children will also be deleted. Think of CA certificates as folders "
+"containing other certificates: When you delete the folder, you delete its "
+"contents, too.</para>"
+msgstr ""
+
+#: dialogs/deletecertificatesdialog.cpp:129
+msgctxt "@action:button"
+msgid "Delete"
+msgstr ""
+
+#: dialogs/deletecertificatesdialog.cpp:189
+msgid ""
+"The certificate to be deleted is your own. It contains private key material, "
+"which is needed to decrypt past communication encrypted to the certificate, "
+"and should therefore not be deleted."
+msgid_plural ""
+"All of the certificates to be deleted are your own. They contain private key "
+"material, which is needed to decrypt past communication encrypted to the "
+"certificate, and should therefore not be deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: dialogs/deletecertificatesdialog.cpp:203
+msgid ""
+"One of the certificates to be deleted is your own. It contains private key "
+"material, which is needed to decrypt past communication encrypted to the "
+"certificate, and should therefore not be deleted."
+msgid_plural ""
+"Some of the certificates to be deleted are your own. They contain private "
+"key material, which is needed to decrypt past communication encrypted to the "
+"certificate, and should therefore not be deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: dialogs/deletecertificatesdialog.cpp:218
+#, fuzzy
+#| msgid "Secret Key Export"
+msgid "Secret Key Deletion"
+msgstr "Содироти калиди басташуда"
 
 #: dialogs/certificateselectiondialog.cpp:110
 msgid "Please select one or more of the following certificates:"
@@ -2925,148 +2983,69 @@ msgstr ""
 "Ҳангоми сайъи вориди файли CRL, хатогӣ рӯй дод. Хулосаи GpgSM чунин аст:\n"
 "%1"
 
-#: commands/deletecertificatescommand.cpp:140
+#: commands/deletecertificatescommand.cpp:98
+#, fuzzy
+#| msgid "Deleting CA Certificates"
+msgctxt "@title:window"
+msgid "Delete Certificates"
+msgstr "Ҳузфи сертификатҳои CA"
+
+#: commands/deletecertificatescommand.cpp:163
 msgid ""
 "Neither the OpenPGP nor the CMS backends support certificate deletion.\n"
 "Check your installation."
 msgstr ""
 
-#: commands/deletecertificatescommand.cpp:144
+#: commands/deletecertificatescommand.cpp:167
 msgid ""
 "The OpenPGP backend does not support certificate deletion.\n"
 "Check your installation.\n"
 "Only the selected CMS certificates will be deleted."
 msgstr ""
 
-#: commands/deletecertificatescommand.cpp:151
-#: commands/deletecertificatescommand.cpp:155
+#: commands/deletecertificatescommand.cpp:174
+#: commands/deletecertificatescommand.cpp:178
 msgid ""
 "The OpenPGP backend does not support certificate deletion.\n"
 "Check your installation."
 msgstr ""
 
-#: commands/deletecertificatescommand.cpp:161
+#: commands/deletecertificatescommand.cpp:184
 msgid ""
 "The CMS backend does not support certificate deletion.\n"
 "Check your installation.\n"
 "Only the selected OpenPGP certificates will be deleted."
 msgstr ""
 
-#: commands/deletecertificatescommand.cpp:177
-#: commands/deletecertificatescommand.cpp:190
+#: commands/deletecertificatescommand.cpp:200
+#: commands/deletecertificatescommand.cpp:213
 msgid ""
 "The CMS backend does not support certificate deletion.\n"
 "Check your installation."
 msgstr ""
 
-#: commands/deletecertificatescommand.cpp:219
-msgid ""
-"The certificate to be deleted is your own. It contains private key material, "
-"which is needed to decrypt past communication encrypted to the certificate, "
-"and can therefore not be deleted."
-msgid_plural ""
-"All of the certificates to be deleted are your own. They contain private key "
-"material, which is needed to decrypt past communication encrypted to the "
-"certificate, and can therefore not be deleted."
-msgstr[0] ""
-msgstr[1] ""
-
-#: commands/deletecertificatescommand.cpp:233
-#: commands/deletecertificatescommand.cpp:277
-#: commands/deletecertificatescommand.cpp:316
-#, fuzzy
-#| msgid "Secret Key Export"
-msgid "Secret Key Deletion"
-msgstr "Содироти калиди басташуда"
-
-#: commands/deletecertificatescommand.cpp:255
-msgid ""
-"All of the certificates to be deleted are either your own, or are issuers of "
-"one of your own certificates. Your own certificates contain private key "
-"material, which is needed to decrypt past communication encrypted to the "
-"certificate. They can therefore not be deleted, and neither can their "
-"issuers."
-msgstr ""
-
-#: commands/deletecertificatescommand.cpp:262
-msgid ""
-"The certificate to be deleted is an issuer of one of your own certificates. "
-"Your own certificates contain private key material, which is needed to "
-"decrypt past communication encrypted to the certificate. They can therefore "
-"not be deleted, and neither can their issuers."
-msgid_plural ""
-"All of the certificates to be deleted are issuers of one of your own "
-"certificates. Your own certificates contain private key material, which is "
-"needed to decrypt past communication encrypted to the certificate. They can "
-"therefore not be deleted, and neither can their issuers."
-msgstr[0] ""
-msgstr[1] ""
-
-#: commands/deletecertificatescommand.cpp:290
-msgid ""
-"Some of the certificates to be deleted are your own, or are issuers of one "
-"of your own certificates. Your own certificates contain private key "
-"material, which is needed to decrypt past communication encrypted to the "
-"certificate. They can therefore not be deleted, and neither can their "
-"issuers.\n"
-"If you choose to continue, your own, as well as any issuer certificates, "
-"will be skipped from deletion."
-msgstr ""
-
-#: commands/deletecertificatescommand.cpp:300
-msgid ""
-"Some of the certificates to be deleted are your own. They contain private "
-"key material, which is needed to decrypt past communication encrypted to the "
-"certificate. They can therefore not be deleted.\n"
-"If you choose to continue, they will be skipped from deletion."
-msgstr ""
-
-#: commands/deletecertificatescommand.cpp:308
-msgid ""
-"Some of the certificates to be deleted are issuers of one of your own "
-"certificates. Your own certificates contain private key material, which is "
-"needed to decrypt past communication encrypted to the certificate. They can "
-"therefore not be deleted, and neither can their issuers.\n"
-"If you choose to continue, they will be skipped from deletion."
-msgstr ""
-
-#: commands/deletecertificatescommand.cpp:350
-msgid ""
-"Some or all of the selected certificates are issuers (CA certificates) for "
-"other, non-selected certificates.\n"
-"Deleting a CA certificate will also delete all certificates issued by it."
-msgstr ""
-"Якчанд ё тамоми сертификатҳои интихобшуда, дигар сертификатҳои интихоб "
-"нашударо имзо мекарданд.\n"
-"Ҳузфи чунин сертификат ҳамчунин тамоми сертификатҳои бо ин имзошударо нин "
-"ҳузф мекунад."
-
-#: commands/deletecertificatescommand.cpp:355
-msgid "Deleting CA Certificates"
-msgstr "Ҳузфи сертификатҳои CA"
-
-#: commands/deletecertificatescommand.cpp:373
-#: commands/deletecertificatescommand.cpp:439
+#: commands/deletecertificatescommand.cpp:281
+#: commands/deletecertificatescommand.cpp:346
 msgid "Certificate Deletion Failed"
 msgstr "Наметавонам сертификатро ҳузф кунам"
 
-#: commands/deletecertificatescommand.cpp:374
+#: commands/deletecertificatescommand.cpp:282
 #, fuzzy
 #| msgid "Certificate Deletion Failed"
 msgid "Certificate Deletion Problem"
 msgstr "Наметавонам сертификатро ҳузф кунам"
 
-#: commands/deletecertificatescommand.cpp:430
+#: commands/deletecertificatescommand.cpp:337
 #, kde-format
 msgid "OpenPGP backend: %1"
 msgstr ""
 
-#: commands/deletecertificatescommand.cpp:433
+#: commands/deletecertificatescommand.cpp:340
 #, kde-format
 msgid "CMS backend: %1"
 msgstr ""
 
-#: commands/deletecertificatescommand.cpp:435
+#: commands/deletecertificatescommand.cpp:342
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><p>An error occurred while trying to delete the certificates:</"
@@ -6328,6 +6307,16 @@ msgstr "Хатои мудири сертификатҳо"
 #: crlview.cpp:145
 msgid "The GpgSM process ended prematurely because of an unexpected error."
 msgstr "Амалиёти GpgSM, аз барои хатои номаълум пеш аз мӯҳлат ба итмом расид."
+
+#~ msgid ""
+#~ "Some or all of the selected certificates are issuers (CA certificates) "
+#~ "for other, non-selected certificates.\n"
+#~ "Deleting a CA certificate will also delete all certificates issued by it."
+#~ msgstr ""
+#~ "Якчанд ё тамоми сертификатҳои интихобшуда, дигар сертификатҳои интихоб "
+#~ "нашударо имзо мекарданд.\n"
+#~ "Ҳузфи чунин сертификат ҳамчунин тамоми сертификатҳои бо ин имзошударо нин "
+#~ "ҳузф мекунад."
 
 #, fuzzy
 #~| msgid "Certificate Download Failed"
