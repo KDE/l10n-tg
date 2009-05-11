@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop_kdepim\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-27 00:17+0000\n"
+"POT-Creation-Date: 2009-05-10 23:18+0000\n"
 "PO-Revision-Date: 2004-08-18 16:36+0500\n"
 "Last-Translator: Erkin Pulatov <erkin_pulatov@mail.ru>\n"
 "Language-Team: Tajik\n"
@@ -470,12 +470,6 @@ msgstr "Name=KAlarm"
 msgid "GenericName=Personal Alarm Scheduler"
 msgstr "GenericName=Идоракунии хотиррасониҳои шахсӣ"
 
-#: kalarm/kalarm.tray.desktop:22
-msgid "Comment=Personal Alarm Scheduler: start as system tray icon"
-msgstr ""
-"Comment=Соати рӯимизии зангдори шахсӣ (ба намуди ишорот дар панели вазифа ба "
-"кор дароварда мешавад)"
-
 #: kalarm/kalarmd/kalarmd.autostart.desktop:3 kalarm/kalarmd/kalarmd.desktop:3
 #, fuzzy
 msgid "Name=KAlarm Daemon"
@@ -486,6 +480,12 @@ msgstr "Name=Демони соати рӯимизии зангдор"
 msgid "Comment=KAlarm alarm daemon autostart at login"
 msgstr ""
 "Comment=Хизматгоҳҳои KOrganizer/KAlarm якҷоя бо KDE ба кор дароварда мешавад"
+
+#: kalarm/kalarm.tray.desktop:22
+msgid "Comment=Personal Alarm Scheduler: start as system tray icon"
+msgstr ""
+"Comment=Соати рӯимизии зангдори шахсӣ (ба намуди ишорот дар панели вазифа ба "
+"кор дароварда мешавад)"
 
 #: kandy/src/kandy.desktop:2
 msgid "Name=Kandy"
@@ -542,14 +542,6 @@ msgstr "Name=Мудири синхронизатсияи KitchenSync"
 #, fuzzy
 msgid "GenericName=Synchronization"
 msgstr "Name=Синхронизатсия"
-
-#: kmail/KMail.desktop:2 kmail/kmail_view.desktop:2
-msgid "Name=KMail"
-msgstr "Name=KMail"
-
-#: kmail/KMail.desktop:17
-msgid "GenericName=Mail Client"
-msgstr "GenericName=Клиенти почтавӣ"
 
 #: kmail/application_octetstream.desktop:2
 #: plugins/kmail/bodypartformatter/text_calendar.desktop:2
@@ -649,6 +641,14 @@ msgstr "Comment=Танзимоти амният"
 #: kmail/kmail_config_security.desktop:123
 msgid "Keywords=kmail,security"
 msgstr "Keywords=kmail,security,амният"
+
+#: kmail/KMail.desktop:2 kmail/kmail_view.desktop:2
+msgid "Name=KMail"
+msgstr "Name=KMail"
+
+#: kmail/KMail.desktop:17
+msgid "GenericName=Mail Client"
+msgstr "GenericName=Клиенти почтавӣ"
 
 #: kmail/profiles/profile-default-rc.desktop:2
 msgid "Name=Default"
@@ -767,14 +767,6 @@ msgstr "Comment=Мудири дастгоҳи мобилии KDE"
 msgid "Name=KDE Mobile Device Lowlevel Hardware Driver"
 msgstr "Name=Драйвери пастдараҷавии кор бо дастгоҳи мобилӣ дар KDE"
 
-#: knode/KNode.desktop:7
-msgid "Name=KNode"
-msgstr "Name=KNode"
-
-#: knode/KNode.desktop:16
-msgid "GenericName=News Reader"
-msgstr "GenericName=Барнома барои хондани иттилоот"
-
 #: knode/knode_config_accounts.desktop:71
 msgid "Comment=Setup for Newsgroup and Mail Servers"
 msgstr ""
@@ -812,6 +804,14 @@ msgstr "Comment=Муҳофизати иттилоот ба воситаи имз
 msgid "Name=Reading News"
 msgstr "Name=Хондани ахборот"
 
+#: knode/KNode.desktop:7
+msgid "Name=KNode"
+msgstr "Name=KNode"
+
+#: knode/KNode.desktop:16
+msgid "GenericName=News Reader"
+msgstr "GenericName=Барнома барои хондани иттилоот"
+
 #: knotes/knotes.desktop:8
 msgid "GenericName=Popup Notes"
 msgstr "GenericName=Хабарҳои ошкоршаванда"
@@ -837,20 +837,20 @@ msgstr "Name=KonsoleKalendar"
 msgid "Name=Kontact Plugin"
 msgstr "Name=Модули Kontact"
 
-#: kontact/plugins/akregator/akregatorplugin.desktop:16
+#: kontact/plugins/akregator/akregatorplugin3.2.desktop:15
 #, fuzzy
-msgid "Comment=Feed Reader Component (Akregator Plugin)"
+msgid "Comment=Akregator Plugin"
 msgstr "Comment=Модул барои тақвимот"
 
-#: kontact/plugins/akregator/akregatorplugin.desktop:40
 #: kontact/plugins/akregator/akregatorplugin3.2.desktop:65
+#: kontact/plugins/akregator/akregatorplugin.desktop:40
 #, fuzzy
 msgid "Name=Feeds"
 msgstr "Name=Озод/машғул аст"
 
-#: kontact/plugins/akregator/akregatorplugin3.2.desktop:15
+#: kontact/plugins/akregator/akregatorplugin.desktop:16
 #, fuzzy
-msgid "Comment=Akregator Plugin"
+msgid "Comment=Feed Reader Component (Akregator Plugin)"
 msgstr "Comment=Модул барои тақвимот"
 
 #: kontact/plugins/kaddressbook/kaddressbookplugin.desktop:18
@@ -1058,10 +1058,18 @@ msgstr "Comment=Модули пешгӯии ҳавои Kontact"
 msgid "Name=Weather Service"
 msgstr "Name=Пешгӯии ҳаво"
 
-#: kontact/src/Kontact.desktop:2 kontact/src/kontactconfig.desktop:15
-#: kontact/src/kontactdcop.desktop:2
+#: kontact/src/kontactconfig.desktop:15 kontact/src/kontactdcop.desktop:2
+#: kontact/src/Kontact.desktop:2
 msgid "Name=Kontact"
 msgstr "Name=Kontact"
+
+#: kontact/src/kontactconfig.desktop:23
+msgid "Comment=KDE Kontact"
+msgstr "Comment=KDE Kontact"
+
+#: kontact/src/kontactconfig.desktop:39
+msgid "Keywords=kontact"
+msgstr "Keywords=kontact"
 
 #: kontact/src/Kontact.desktop:13
 msgid "GenericName=Personal Information Manager"
@@ -1127,14 +1135,6 @@ msgstr "Comment=Маълумоти шахсӣ"
 msgid "Comment=News Ticker Component"
 msgstr "Comment=Танзимотгоҳи махзани маълумот"
 
-#: kontact/src/kontactconfig.desktop:23
-msgid "Comment=KDE Kontact"
-msgstr "Comment=KDE Kontact"
-
-#: kontact/src/kontactconfig.desktop:39
-msgid "Keywords=kontact"
-msgstr "Keywords=kontact"
-
 #: korganizer/dcopcalendar.desktop:4
 msgid "Comment=Organizer with a DCOP interface"
 msgstr "Comment=Органайзер бо интерфейси DCOP"
@@ -1161,18 +1161,6 @@ msgstr "Name=Клиенти соати зангдори рӯи мизии KOrgan
 #, fuzzy
 msgid "GenericName=KOrganizer Reminder Daemon Client"
 msgstr "GenericName=Коргири демони соати зангдори рӯимизии KOrganizer"
-
-#: korganizer/korganizer.desktop:3
-msgid "Comment=Calendar and Scheduling Program"
-msgstr "Comment=Тақвимот ва ҷадвали шахсӣ"
-
-#: korganizer/korganizer.desktop:74
-msgid "Name=KOrganizer"
-msgstr "Name=KOrganizer"
-
-#: korganizer/korganizer.desktop:88
-msgid "GenericName=Personal Organizer"
-msgstr "GenericName=Органайзери инфиродӣ"
 
 #: korganizer/korganizer_configcolors.desktop:14
 msgid "Name=Colors"
@@ -1289,6 +1277,18 @@ msgstr "Comment=Танзимоти намудҳои органайзери KDE"
 #: korganizer/korganizer_configviews.desktop:124
 msgid "Keywords=korganizer,view"
 msgstr "Keywords=korganizer,view,органайзер,намудҳо"
+
+#: korganizer/korganizer.desktop:3
+msgid "Comment=Calendar and Scheduling Program"
+msgstr "Comment=Тақвимот ва ҷадвали шахсӣ"
+
+#: korganizer/korganizer.desktop:74
+msgid "Name=KOrganizer"
+msgstr "Name=KOrganizer"
+
+#: korganizer/korganizer.desktop:88
+msgid "GenericName=Personal Organizer"
+msgstr "GenericName=Органайзери инфиродӣ"
 
 #: korganizer/plugins/datenums/datenums.desktop:3
 msgid "Name=Date Numbers Plugin for Calendars"
@@ -1514,13 +1514,9 @@ msgid ""
 "Comment=This conduit synchronizes your handheld with the KOrganizer datebook."
 msgstr "Comment=Канали синхронизатсияитақвимотиPilot ва органайзери KDE"
 
-#: kpilot/kpilot/kpilot.desktop:3
-msgid "Name=KPilot"
-msgstr "Name=KPilot"
-
-#: kpilot/kpilot/kpilot.desktop:16
-msgid "GenericName=PalmPilot Tool"
-msgstr "GenericName=Синхронизатсияи маълумот аз PalmPilot"
+#: kpilot/kpilot/kpilotconduit.desktop:4
+msgid "Comment=KPilot Conduit"
+msgstr "Comment=Канали KPilot"
 
 #: kpilot/kpilot/kpilot_config.desktop:13
 msgid "Name=KPilot Configuration"
@@ -1534,13 +1530,17 @@ msgstr "Comment=Параметрҳои умумии KPilot"
 msgid "Keywords=kpilot,main"
 msgstr "Keywords=kpilot,main,умумӣ,танзимот"
 
-#: kpilot/kpilot/kpilotconduit.desktop:4
-msgid "Comment=KPilot Conduit"
-msgstr "Comment=Канали KPilot"
-
 #: kpilot/kpilot/kpilotdaemon.desktop:3
 msgid "Name=KPilotDaemon"
 msgstr "Name=Демони KPilot"
+
+#: kpilot/kpilot/kpilot.desktop:3
+msgid "Name=KPilot"
+msgstr "Name=KPilot"
+
+#: kpilot/kpilot/kpilot.desktop:16
+msgid "GenericName=PalmPilot Tool"
+msgstr "GenericName=Синхронизатсияи маълумот аз PalmPilot"
 
 #: kresources/birthdays/kabc.desktop:2
 msgid "Name=Birthdays From KAddressBook"
@@ -1557,14 +1557,14 @@ msgstr ""
 msgid "Name=eGroupware Server (via XML-RPC)"
 msgstr "Name=Ахборот"
 
-#: kresources/exchange/exchange.desktop:7
-#, fuzzy
-msgid "Name=Exchange 2000 Server"
-msgstr "Name=Тақвимоти Microsoft Exchange 2000"
-
 #: kresources/exchange/exchange_deprecated.desktop:3
 #, fuzzy
 msgid "Name=Exchange 2000 Server (deprecated)"
+msgstr "Name=Тақвимоти Microsoft Exchange 2000"
+
+#: kresources/exchange/exchange.desktop:7
+#, fuzzy
+msgid "Name=Exchange 2000 Server"
 msgstr "Name=Тақвимоти Microsoft Exchange 2000"
 
 #: kresources/featureplan/kcal_resourcefeatureplan.desktop:2
