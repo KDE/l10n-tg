@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-15 11:35+0200\n"
+"POT-Creation-Date: 2009-05-21 11:32+0200\n"
 "PO-Revision-Date: 2005-09-17 13:29+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -175,31 +175,44 @@ msgstr "<qt>Хатои эҷод кардани файл<b>%1</b>:<br>%2</qt>"
 msgid "Failed to create folder"
 msgstr "Натавонистам папка эҷод кунам"
 
-#: keyresolver.cpp:264
+#: keyresolver.cpp:302
 msgid ""
 "One or more of your configured OpenPGP encryption keys or S/MIME "
 "certificates is not fully trusted for encryption."
 msgstr ""
 
-#: keyresolver.cpp:270
+#: keyresolver.cpp:305
+#, kde-format
+msgid ""
+"One or more of the OpenPGP encryption keys or S/MIME certificates for "
+"recipient \"%1\" is not fully trusted for encryption."
+msgstr ""
+
+#: keyresolver.cpp:311
 msgid ""
 "\n"
 "The following keys are only marginally trusted: \n"
 msgstr ""
 
-#: keyresolver.cpp:274
+#: keyresolver.cpp:315
 msgid ""
 "\n"
 "The following keys or certificates have unknown trust level: \n"
 msgstr ""
 
-#: keyresolver.cpp:278
+#: keyresolver.cpp:319
+msgid ""
+"\n"
+"The following keys or certificates are <b>revoked</b>: \n"
+msgstr ""
+
+#: keyresolver.cpp:323
 #, fuzzy
 #| msgid "Unusable Encryption Keys"
 msgid "Not Fully Trusted Encryption Keys"
 msgstr "Калиди рамзгузориро истифода бурдан имконпазир нест"
 
-#: keyresolver.cpp:567
+#: keyresolver.cpp:612
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Your OpenPGP signing key</p><p align=center><b>%2</b> (KeyID 0x%3)</"
@@ -220,7 +233,7 @@ msgstr[1] ""
 "<p>Мӯҳлати амали калиди имзоии OpenPGP-и шумо </p><p align=center><b>%2</b> "
 "(KeyID 0x%3)</p><p>кам аз %1 рӯзҳо ба итмом мерасад.</p>"
 
-#: keyresolver.cpp:571
+#: keyresolver.cpp:616
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Your OpenPGP encryption key</p><p align=center><b>%2</b> (KeyID 0x%3)</"
@@ -241,7 +254,7 @@ msgstr[1] ""
 "<p>Мӯҳлати амали калиди рамзгузории OpenPGP-и шумо </p><p align=center><b>%"
 "2</b> (KeyID 0x%3)</p><p>кам аз %1 рӯз ба итмом мерасад.</p>"
 
-#: keyresolver.cpp:575
+#: keyresolver.cpp:620
 #, fuzzy, kde-format
 msgid ""
 "<p>The OpenPGP key for</p><p align=center><b>%2</b> (KeyID 0x%3)</"
@@ -256,7 +269,7 @@ msgstr[1] ""
 "<p>Калиди OpenPGP барои</p><p ба саф баровардани=марказ><b>%2</b> (КалидID 0x"
 "%3)</p><p>дар муддати рӯзҳо %1 нест мешавад.</p>"
 
-#: keyresolver.cpp:586
+#: keyresolver.cpp:631
 #, fuzzy, kde-format
 msgid ""
 "<p>The root certificate</p><p align=center><b>%4</b></p><p>for your S/MIME "
@@ -275,7 +288,7 @@ msgstr[1] ""
 "MIME сертификати рамзгузориатон</p><p ба саф баровардани=марказ><b>%2</b> "
 "(рақами серявӣ %3)</p><p>дар мудатти %1 рӯзҳо ба нест мешавад.</p>"
 
-#: keyresolver.cpp:592
+#: keyresolver.cpp:637
 #, fuzzy, kde-format
 msgid ""
 "<p>The root certificate</p><p align=center><b>%4</b></p><p>for your S/MIME "
@@ -294,7 +307,7 @@ msgstr[1] ""
 "MIME сертификати рамзгузориатон</p><p ба саф баровардани=марказ><b>%2</b> "
 "(рақами серявӣ %3)</p><p>дар мудатти %1 рӯзҳо ба нест мешавад.</p>"
 
-#: keyresolver.cpp:598
+#: keyresolver.cpp:643
 #, fuzzy, kde-format
 msgid ""
 "<p>The root certificate</p><p align=center><b>%4</b></p><p>for S/MIME "
@@ -313,7 +326,7 @@ msgstr[1] ""
 "MIME сертификати рамзгузориатон</p><p ба саф баровардани=марказ><b>%2</b> "
 "(рақами серявӣ %3)</p><p>дар мудатти %1 рӯзҳо ба нест мешавад.</p>"
 
-#: keyresolver.cpp:605
+#: keyresolver.cpp:650
 #, fuzzy, kde-format
 msgid ""
 "<p>The intermediate CA certificate</p><p align=center><b>%4</b></p><p>for "
@@ -332,7 +345,7 @@ msgstr[1] ""
 "p><p>барои S/MIME сертификати имзоятон</p><p ба саф баромадани=марказ><b>%2</"
 "b> (рақамисерявӣ %3)</p><p>дар муддати рӯзҳо %1 нест мешавад.</p>"
 
-#: keyresolver.cpp:611
+#: keyresolver.cpp:656
 #, fuzzy, kde-format
 msgid ""
 "<p>The intermediate CA certificate</p><p align=center><b>%4</b></p><p>for "
@@ -351,7 +364,7 @@ msgstr[1] ""
 "сертификати S/MIME -и шумо </p><p ба саф овардан=марказ><b>%2</b> (шумораи "
 "бонавбат%3)</p><p>тамом шудан дар рӯзҳои %1. </p>"
 
-#: keyresolver.cpp:617
+#: keyresolver.cpp:662
 #, fuzzy, kde-format
 msgid ""
 "<p>The intermediate CA certificate</p><p align=center><b>%4</b></p><p>for S/"
@@ -370,7 +383,7 @@ msgstr[1] ""
 "сертификати S/MIME </p><p ба саф овардан=марказ><b>%2</b> (шумораи бонавбат %"
 "3)</p><p>дар рӯзҳои %1 ба охир мерасад.</p>"
 
-#: keyresolver.cpp:629
+#: keyresolver.cpp:674
 #, fuzzy, kde-format
 msgid ""
 "<p>Your S/MIME signing certificate</p><p align=center><b>%2</b> (serial "
@@ -385,7 +398,7 @@ msgstr[1] ""
 "<pСертификати аломатии S/MIME -и шумо</p><p ба саф овардан=марказ><b>%2</b> "
 "( шумораи  бонавбати %3)</p><p> тамом шудан камтар аз рӯзҳои%3)</p><p>"
 
-#: keyresolver.cpp:633
+#: keyresolver.cpp:678
 #, fuzzy, kde-format
 msgid ""
 "<p>Your S/MIME encryption certificate</p><p align=center><b>%2</b> (serial "
@@ -400,7 +413,7 @@ msgstr[1] ""
 "<p>Сертификати навиштаҷоти S/MIME-и шумо  </p><p ба саф овардан =марказ><b>%"
 "2</b> (шумораи бонавбат %3)</p><p>дар рӯзҳои %1 тамом мешавад.</p>"
 
-#: keyresolver.cpp:637
+#: keyresolver.cpp:682
 #, fuzzy, kde-format
 msgid ""
 "<p>The S/MIME certificate for</p><p align=center><b>%2</b> (serial number %3)"
@@ -415,19 +428,19 @@ msgstr[1] ""
 "<p>Сертификати S/MIME барои </p><p ба саф овардан=марказ ><b>%2</b> (шумораи "
 "бонавбат) %3)</p><p>дар рӯзҳои %1 ба охир мерасад.</p>"
 
-#: keyresolver.cpp:648
+#: keyresolver.cpp:693
 #, fuzzy
 #| msgid "OpenPGP Key Expires Soon"
 msgid "OpenPGP Key Expired"
 msgstr "Мӯҳлати амали калиди OpenPGP гузашта истодааст"
 
-#: keyresolver.cpp:649
+#: keyresolver.cpp:694
 #, fuzzy
 #| msgid "S/MIME Certificate Expires Soon"
 msgid "S/MIME Certificate Expired"
 msgstr "Мӯҳлати амали сертификати S/MIME гузашта истодааст"
 
-#: keyresolver.cpp:672
+#: keyresolver.cpp:717
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Your OpenPGP signing key</p><p align=center><b>%2</b> (KeyID 0x%3)</"
@@ -448,7 +461,7 @@ msgstr[1] ""
 "<p>Мӯҳлати амали калиди имзоии OpenPGP-и шумо </p><p align=center><b>%2</b> "
 "(KeyID 0x%3)</p><p>кам аз %1 рӯзҳо ба итмом мерасад.</p>"
 
-#: keyresolver.cpp:676
+#: keyresolver.cpp:721
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Your OpenPGP encryption key</p><p align=center><b>%2</b> (KeyID 0x%3)</"
@@ -469,7 +482,7 @@ msgstr[1] ""
 "<p>Мӯҳлати амали калиди рамзгузории OpenPGP-и шумо </p><p align=center><b>%"
 "2</b> (KeyID 0x%3)</p><p>кам аз %1 рӯз ба итмом мерасад.</p>"
 
-#: keyresolver.cpp:680
+#: keyresolver.cpp:725
 #, fuzzy, kde-format
 msgid ""
 "<p>The OpenPGP key for</p><p align=\"center\"><b>%2</b> (KeyID 0x%3)</"
@@ -484,7 +497,7 @@ msgstr[1] ""
 "<p>Калиди OpenPGP барои</p><p ба саф баровардани=марказ><b>%2</b> (КалидID 0x"
 "%3)</p><p>дар муддати рӯзҳо %1 нест мешавад.</p>"
 
-#: keyresolver.cpp:691
+#: keyresolver.cpp:736
 #, fuzzy, kde-format
 msgid ""
 "<p>The root certificate</p><p align=\"center\"><b>%4</b></p><p>for your S/"
@@ -503,7 +516,7 @@ msgstr[1] ""
 "MIME сертификати рамзгузориатон</p><p ба саф баровардани=марказ><b>%2</b> "
 "(рақами серявӣ %3)</p><p>дар мудатти %1 рӯзҳо ба нест мешавад.</p>"
 
-#: keyresolver.cpp:697
+#: keyresolver.cpp:742
 #, fuzzy, kde-format
 msgid ""
 "<p>The root certificate</p><p align=\"center\"><b>%4</b></p><p>for your S/"
@@ -522,7 +535,7 @@ msgstr[1] ""
 "MIME сертификати рамзгузориатон</p><p ба саф баровардани=марказ><b>%2</b> "
 "(рақами серявӣ %3)</p><p>дар мудатти %1 рӯзҳо ба нест мешавад.</p>"
 
-#: keyresolver.cpp:703
+#: keyresolver.cpp:748
 #, fuzzy, kde-format
 msgid ""
 "<p>The root certificate</p><p align=\"center\"><b>%4</b></p><p>for S/MIME "
@@ -541,7 +554,7 @@ msgstr[1] ""
 "MIME сертификати рамзгузориатон</p><p ба саф баровардани=марказ><b>%2</b> "
 "(рақами серявӣ %3)</p><p>дар мудатти %1 рӯзҳо ба нест мешавад.</p>"
 
-#: keyresolver.cpp:710
+#: keyresolver.cpp:755
 #, fuzzy, kde-format
 msgid ""
 "<p>The intermediate CA certificate</p><p align=\"center\"><b>%4</b></"
@@ -560,7 +573,7 @@ msgstr[1] ""
 "p><p>барои S/MIME сертификати имзоятон</p><p ба саф баромадани=марказ><b>%2</"
 "b> (рақамисерявӣ %3)</p><p>дар муддати рӯзҳо %1 нест мешавад.</p>"
 
-#: keyresolver.cpp:716
+#: keyresolver.cpp:761
 #, fuzzy, kde-format
 msgid ""
 "<p>The intermediate CA certificate</p><p align=\"center\"><b>%4</b></"
@@ -579,7 +592,7 @@ msgstr[1] ""
 "сертификати S/MIME -и шумо </p><p ба саф овардан=марказ><b>%2</b> (шумораи "
 "бонавбат%3)</p><p>тамом шудан дар рӯзҳои %1. </p>"
 
-#: keyresolver.cpp:722
+#: keyresolver.cpp:767
 #, fuzzy, kde-format
 msgid ""
 "<p>The intermediate CA certificate</p><p align=\"center\"><b>%4</b></"
@@ -598,7 +611,7 @@ msgstr[1] ""
 "сертификати S/MIME </p><p ба саф овардан=марказ><b>%2</b> (шумораи бонавбат %"
 "3)</p><p>дар рӯзҳои %1 ба охир мерасад.</p>"
 
-#: keyresolver.cpp:734
+#: keyresolver.cpp:779
 #, fuzzy, kde-format
 msgid ""
 "<p>Your S/MIME signing certificate</p><p align=\"center\"><b>%2</b> (serial "
@@ -613,7 +626,7 @@ msgstr[1] ""
 "<pСертификати аломатии S/MIME -и шумо</p><p ба саф овардан=марказ><b>%2</b> "
 "( шумораи  бонавбати %3)</p><p> тамом шудан камтар аз рӯзҳои%3)</p><p>"
 
-#: keyresolver.cpp:738
+#: keyresolver.cpp:783
 #, fuzzy, kde-format
 msgid ""
 "<p>Your S/MIME encryption certificate</p><p align=\"center\"><b>%2</b> "
@@ -628,7 +641,7 @@ msgstr[1] ""
 "<p>Сертификати навиштаҷоти S/MIME-и шумо  </p><p ба саф овардан =марказ><b>%"
 "2</b> (шумораи бонавбат %3)</p><p>дар рӯзҳои %1 тамом мешавад.</p>"
 
-#: keyresolver.cpp:742
+#: keyresolver.cpp:787
 #, fuzzy, kde-format
 msgid ""
 "<p>The S/MIME certificate for</p><p align=\"center\"><b>%2</b> (serial "
@@ -643,15 +656,15 @@ msgstr[1] ""
 "<p>Сертификати S/MIME барои </p><p ба саф овардан=марказ ><b>%2</b> (шумораи "
 "бонавбат) %3)</p><p>дар рӯзҳои %1 ба охир мерасад.</p>"
 
-#: keyresolver.cpp:753
+#: keyresolver.cpp:798
 msgid "OpenPGP Key Expires Soon"
 msgstr "Мӯҳлати амали калиди OpenPGP гузашта истодааст"
 
-#: keyresolver.cpp:754
+#: keyresolver.cpp:799
 msgid "S/MIME Certificate Expires Soon"
 msgstr "Мӯҳлати амали сертификати S/MIME гузашта истодааст"
 
-#: keyresolver.cpp:789
+#: keyresolver.cpp:834
 msgid ""
 "One or more of your configured OpenPGP encryption keys or S/MIME "
 "certificates is not usable for encryption. Please reconfigure your "
@@ -667,11 +680,11 @@ msgstr ""
 "Агар шумо хоҳиши давом додан дошта  бошед ва калидҳо баъдтар лозиманд ба "
 "шумо мусоидат мекунанд,ки калидҳоро барои истифода бурдан тасниф диҳед."
 
-#: keyresolver.cpp:797 keyresolver.cpp:1112 keyresolver.cpp:1139
+#: keyresolver.cpp:842 keyresolver.cpp:1157 keyresolver.cpp:1184
 msgid "Unusable Encryption Keys"
 msgstr "Калиди рамзгузориро истифода бурдан имконпазир нест"
 
-#: keyresolver.cpp:833
+#: keyresolver.cpp:878
 msgid ""
 "One or more of your configured OpenPGP signing keys or S/MIME signing "
 "certificates is not usable for signing. Please reconfigure your signing keys "
@@ -686,11 +699,11 @@ msgstr ""
 "Агар шумо давом доданро интихоб кунед, калидҳо баъдтар лозим мешаванд, ба "
 "шумо барои таснифоти калидҳо барои истифода бурдан мусоидат хоҳанд кард."
 
-#: keyresolver.cpp:841 keyresolver.cpp:1166 keyresolver.cpp:1183
+#: keyresolver.cpp:886 keyresolver.cpp:1211 keyresolver.cpp:1228
 msgid "Unusable Signing Keys"
 msgstr "Калиди имзоиро истифода бурдан имконпазир нест"
 
-#: keyresolver.cpp:1103
+#: keyresolver.cpp:1148
 msgid ""
 "Examination of recipient's encryption preferences yielded that the message "
 "should be encrypted using OpenPGP, at least for some recipients;\n"
@@ -705,7 +718,7 @@ msgstr ""
 "Шумо метавонед ғайри рамзгузорӣ, худ низ идома диҳед, аммо баъд наметавонед "
 "иттилооти худро бихонед."
 
-#: keyresolver.cpp:1130
+#: keyresolver.cpp:1175
 msgid ""
 "Examination of recipient's encryption preferences yielded that the message "
 "should be encrypted using S/MIME, at least for some recipients;\n"
@@ -720,7 +733,7 @@ msgstr ""
 "Шумо метавонед ғайри рамзгузорӣ, худ низ идома диҳед, аммо баъд наметавонед "
 "иттилооти худро бихонед."
 
-#: keyresolver.cpp:1160
+#: keyresolver.cpp:1205
 msgid ""
 "Examination of recipient's signing preferences yielded that the message "
 "should be signed using OpenPGP, at least for some recipients;\n"
@@ -732,11 +745,11 @@ msgstr ""
 "карда шавад, аммо дар профили ҷорӣ, калидҳои имзоии OpenPGP-и озмоида "
 "танзимшудае нест."
 
-#: keyresolver.cpp:1167
+#: keyresolver.cpp:1212
 msgid "Do Not OpenPGP-Sign"
 msgstr "Имзо накардани OpenPGP"
 
-#: keyresolver.cpp:1177
+#: keyresolver.cpp:1222
 msgid ""
 "Examination of recipient's signing preferences yielded that the message "
 "should be signed using S/MIME, at least for some recipients;\n"
@@ -748,11 +761,11 @@ msgstr ""
 "карда шавад, аммо дар профили ҷорӣ, калидҳои имзоии S/MIME-и озмоида "
 "танзимшудае нест."
 
-#: keyresolver.cpp:1184
+#: keyresolver.cpp:1229
 msgid "Do Not S/MIME-Sign"
 msgstr "Имзо накардани S/MIME"
 
-#: keyresolver.cpp:1241
+#: keyresolver.cpp:1286
 #, fuzzy
 msgid ""
 "Examination of recipient's signing preferences showed no common type of "
@@ -763,12 +776,12 @@ msgstr ""
 "пурсанд, ки оё мактубча имзо карда шавад ё ин ки не.\n"
 "Ин мактубча имзо карда шавад?"
 
-#: keyresolver.cpp:1245
+#: keyresolver.cpp:1290
 #, fuzzy
 msgid "No signing possible"
 msgstr "Барои имзо"
 
-#: keyresolver.cpp:1400
+#: keyresolver.cpp:1445
 msgid ""
 "You did not select an encryption key for yourself (encrypt to self). You "
 "will not be able to decrypt your own message if you encrypt it."
@@ -776,16 +789,16 @@ msgstr ""
 "Шумо калиди рамзгузориро барои худ интихоб накардаед.Агар иттилоотро "
 "рамзгузорӣ кунед, онро хонда наметавонед."
 
-#: keyresolver.cpp:1404 keyresolver.cpp:1428 keyresolver.cpp:1442
+#: keyresolver.cpp:1449 keyresolver.cpp:1473 keyresolver.cpp:1487
 msgid "Missing Key Warning"
 msgstr "Калиди имзоӣ дастрас нест"
 
-#: keyresolver.cpp:1405 keyresolver.cpp:1443 messagecomposer.cpp:926
+#: keyresolver.cpp:1450 keyresolver.cpp:1488 messagecomposer.cpp:926
 #: messagecomposer.cpp:951 messagecomposer.cpp:998
 msgid "&Encrypt"
 msgstr "&Рамзгузорӣ"
 
-#: keyresolver.cpp:1421
+#: keyresolver.cpp:1466
 msgid ""
 "You did not select an encryption key for the recipient of this message; "
 "therefore, the message will not be encrypted."
@@ -793,7 +806,7 @@ msgstr ""
 "Шумо калиди рамзгузории қабулкунандаи ин хатро интихоб накардаед. Иттилоот "
 "рамзгузорӣ нахоҳад шуд."
 
-#: keyresolver.cpp:1424
+#: keyresolver.cpp:1469
 msgid ""
 "You did not select an encryption key for any of the recipients of this "
 "message; therefore, the message will not be encrypted."
@@ -801,11 +814,11 @@ msgstr ""
 "Шумо калиди рамзгузориро барои қабулкунандаҳоинтихоб накардаед. Иттилоот "
 "рамзгузорӣ нахоҳад шуд."
 
-#: keyresolver.cpp:1429 messagecomposer.cpp:974
+#: keyresolver.cpp:1474 messagecomposer.cpp:974
 msgid "Send &Unencrypted"
 msgstr "Ғайрирамзгузорӣ &фиристониш"
 
-#: keyresolver.cpp:1434
+#: keyresolver.cpp:1479
 msgid ""
 "You did not select an encryption key for one of the recipients: this person "
 "will not be able to decrypt the message if you encrypt it."
@@ -813,7 +826,7 @@ msgstr ""
 "Шумо калиди рамзгузориро барои яке аз қабулкунандаҳо интихоб накардаед. Агар "
 "шумо иттилоотро рамзгузорӣ кунед, он иттилоотро натавонад хонд."
 
-#: keyresolver.cpp:1437
+#: keyresolver.cpp:1482
 msgid ""
 "You did not select encryption keys for some of the recipients: these persons "
 "will not be able to decrypt the message if you encrypt it."
@@ -821,11 +834,11 @@ msgstr ""
 "Шумо калидҳои рамзгузориро барои якчанд қабулкунандаҳо интихоб накардаед. "
 "Агар шумо иттилоотро рамзгузорӣ кунед, онҳо иттилоотро натавонанд хонд."
 
-#: keyresolver.cpp:1495
+#: keyresolver.cpp:1540
 msgid "Encryption Key Selection"
 msgstr "Интихоби калиди рамзгузорӣ"
 
-#: keyresolver.cpp:1537
+#: keyresolver.cpp:1582
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "if in your language something like 'key(s)' isn't possible please use the "
@@ -846,7 +859,7 @@ msgstr ""
 "\n"
 "Боз як бори дигар сайъ кунед, ки калид(ҳо)-ро барои ин муштарӣ интихоб кунед."
 
-#: keyresolver.cpp:1580
+#: keyresolver.cpp:1625
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "if in your language something like 'key(s)' isn't possible please use the "
@@ -869,7 +882,7 @@ msgstr ""
 "Калид(ҳо)-ро, ки барои ин қабулкунанда истифода бурдан лозим аст, интихоб "
 "кунед."
 
-#: keyresolver.cpp:1590
+#: keyresolver.cpp:1635
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "if in your language something like 'key(s)' isn't possible please use the "
@@ -890,12 +903,12 @@ msgstr ""
 "\n"
 "Калид(ҳо)-ро, ки барои ин муштарӣ истифода бурдан лозим аст, ишора кунед."
 
-#: keyresolver.cpp:1697
+#: keyresolver.cpp:1742
 #, fuzzy
 msgid "Name Selection"
 msgstr "Барҳам додани ҷудокунӣ"
 
-#: keyresolver.cpp:1697
+#: keyresolver.cpp:1742
 #, kde-format
 msgid "Which name shall the contact '%1' have in your address book?"
 msgstr ""
@@ -1181,7 +1194,7 @@ msgstr "Нав ё тағйирёфта: %1 (калиди пинҳонӣ даст
 msgid "New or changed: %1"
 msgstr "Нав ё тағйирёфта: %1"
 
-#: objecttreeparser.cpp:1716 kmcommands.cpp:3083 kmcomposewin.cpp:4270
+#: objecttreeparser.cpp:1716 kmcommands.cpp:3083 kmcomposewin.cpp:4268
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
@@ -1190,18 +1203,18 @@ msgstr ""
 #: objecttreeparser.cpp:1722 messagecomposer.cpp:592 messagecomposer.cpp:600
 #: messagecomposer.cpp:614 kmcommands.cpp:3085 kmcommands.cpp:3090
 #: kmcommands.cpp:3099 kmcommands.cpp:3108 kmcommands.cpp:3126
-#: kmcommands.cpp:3137 kmcommands.cpp:3177 kmcomposewin.cpp:4272
-#: kmcomposewin.cpp:4277 kmcomposewin.cpp:4286
+#: kmcommands.cpp:3137 kmcommands.cpp:3177 kmcomposewin.cpp:4270
+#: kmcomposewin.cpp:4275 kmcomposewin.cpp:4284
 msgid "Chiasmus Backend Error"
 msgstr ""
 
-#: objecttreeparser.cpp:1728 kmcommands.cpp:3096 kmcomposewin.cpp:4283
+#: objecttreeparser.cpp:1728 kmcommands.cpp:3096 kmcomposewin.cpp:4281
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
 msgstr ""
 
-#: objecttreeparser.cpp:1736 kmcommands.cpp:3105 kmcomposewin.cpp:4292
+#: objecttreeparser.cpp:1736 kmcommands.cpp:3105 kmcomposewin.cpp:4290
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
@@ -2806,17 +2819,17 @@ msgstr "Андоза"
 msgid "Save &As..."
 msgstr "Нигоҳ доштан &ҳамчун..."
 
-#: kmmimeparttree.cpp:173 kmreaderwin.cpp:2038 kmcomposewin.cpp:2669
+#: kmmimeparttree.cpp:173 kmreaderwin.cpp:2059 kmcomposewin.cpp:2669
 #, fuzzy
 msgctxt "to open"
 msgid "Open"
 msgstr "Намуд"
 
-#: kmmimeparttree.cpp:175 kmreaderwin.cpp:2042
+#: kmmimeparttree.cpp:175 kmreaderwin.cpp:2063
 msgid "Open With..."
 msgstr "Кушодан бо ёрии..."
 
-#: kmmimeparttree.cpp:176 kmreaderwin.cpp:2046
+#: kmmimeparttree.cpp:176 kmreaderwin.cpp:2067
 msgctxt "to view something"
 msgid "View"
 msgstr "Дида баромадан"
@@ -2825,23 +2838,23 @@ msgstr "Дида баромадан"
 msgid "Save All Attachments..."
 msgstr "Нигоҳ доштани тамоми замимот..."
 
-#: kmmimeparttree.cpp:192 kmreaderwin.cpp:2054 kmfilterdlg.cpp:657
+#: kmmimeparttree.cpp:192 kmreaderwin.cpp:2075 kmfilterdlg.cpp:657
 #, fuzzy
 msgid "Copy"
 msgstr "&Копӣ кардан ба"
 
-#: kmmimeparttree.cpp:195 kmreaderwin.cpp:2067 kmreaderwin.cpp:2718
+#: kmmimeparttree.cpp:195 kmreaderwin.cpp:2088 kmreaderwin.cpp:2739
 #, fuzzy
 #| msgid "&Remove Attachment"
 msgid "Delete Attachment"
 msgstr "&Ҳузфи замимот"
 
-#: kmmimeparttree.cpp:198 kmreaderwin.cpp:2061 kmreaderwin.cpp:2731
+#: kmmimeparttree.cpp:198 kmreaderwin.cpp:2082 kmreaderwin.cpp:2752
 #, fuzzy
 msgid "Edit Attachment"
 msgstr "attach"
 
-#: kmmimeparttree.cpp:203 kmreaderwin.cpp:2078 kmcomposewin.cpp:2679
+#: kmmimeparttree.cpp:203 kmreaderwin.cpp:2099 kmcomposewin.cpp:2679
 #, fuzzy
 msgid "Properties"
 msgstr "&Хусусиятҳо"
@@ -4961,7 +4974,7 @@ msgstr ""
 #: configuredialog.cpp:3998 configuredialog.cpp:3999 configuredialog.cpp:4000
 #: configuredialog.cpp:4001 configuredialog.cpp:4002 configuredialog.cpp:4003
 #: vacationdialog.cpp:184 expirypropertiesdialog.cpp:206
-#: expirypropertiesdialog.cpp:207 accountdialog.cpp:889
+#: expirypropertiesdialog.cpp:207 accountdialog.cpp:899
 msgid " day"
 msgid_plural " days"
 msgstr[0] ""
@@ -5421,71 +5434,71 @@ msgstr ""
 "Мизоҷон нақшаҳои папкаро барои ҳамони \"%1\"вуҷуд надорад(ягон вақт); Барои "
 "ин нақшаҳои зикр нагаштаи папка метавонад истифода бурда шавад."
 
-#: imapaccountbase.cpp:315 popaccount.cpp:148
+#: imapaccountbase.cpp:316 popaccount.cpp:148
 msgid "You need to supply a username and a password to access this mailbox."
 msgstr ""
 "Шумо бояд номи истифодабарандаро ва гузарвожаро барои онки почтаро аз ин "
 "қуттӣ қабул кунед, ишора кунед."
 
-#: imapaccountbase.cpp:324
+#: imapaccountbase.cpp:325
 msgid "Authorization Dialog"
 msgstr ""
 
-#: imapaccountbase.cpp:325 popaccount.cpp:149
+#: imapaccountbase.cpp:326 popaccount.cpp:149
 msgid "Account:"
 msgstr "Қуттии хатнависӣ:"
 
-#: imapaccountbase.cpp:354
+#: imapaccountbase.cpp:355
 #, kde-format
 msgid "Could not start process for %1."
 msgstr "Наметавонам амалро барои %1 оғоз кунам."
 
-#: imapaccountbase.cpp:443
+#: imapaccountbase.cpp:444
 #, kde-format
 msgid "Error while trying to subscribe to %1:"
 msgstr "Натавонистам ба %1 обуна шавам:"
 
-#: imapaccountbase.cpp:711
+#: imapaccountbase.cpp:712
 #, fuzzy
 msgid "Retrieving Namespaces"
 msgstr "Қабул намудани иттилоот"
 
-#: imapaccountbase.cpp:804
+#: imapaccountbase.cpp:805
 #, kde-format
 msgid ""
 "KMail has detected a prefix entry in the configuration of the account \"%1\" "
 "which is obsolete with the support of IMAP namespaces."
 msgstr ""
 
-#: imapaccountbase.cpp:818 imapaccountbase.cpp:832
+#: imapaccountbase.cpp:819 imapaccountbase.cpp:833
 msgid ""
 "The configuration was automatically migrated but you should check your "
 "account configuration."
 msgstr ""
 
-#: imapaccountbase.cpp:836
+#: imapaccountbase.cpp:837
 msgid ""
 "It was not possible to migrate your configuration automatically so please "
 "check your account configuration."
 msgstr ""
 
-#: imapaccountbase.cpp:950
+#: imapaccountbase.cpp:951
 #, fuzzy
 msgctxt "Unknown subject."
 msgid "<placeholder>unknown</placeholder>"
 msgstr "Қабулкунандаҳои пинҳонӣ"
 
-#: imapaccountbase.cpp:953
+#: imapaccountbase.cpp:954
 #, fuzzy
 msgctxt "Unknown sender."
 msgid "<placeholder>unknown</placeholder>"
 msgstr "Қабулкунандаҳои пинҳонӣ"
 
-#: imapaccountbase.cpp:955
+#: imapaccountbase.cpp:956
 msgid "Error while uploading message"
 msgstr "Хатогӣ ҳангоми диҳиши иттилоот ба сервер"
 
-#: imapaccountbase.cpp:957
+#: imapaccountbase.cpp:958
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not upload the message dated %1 from %2 with subject %3 on the "
@@ -5497,60 +5510,60 @@ msgstr ""
 "Натавонистам иттилоотро ба сервер, ки санаи %1 аз %2 бо мавзӯъи %3 муайян "
 "шудааст, бидиҳам."
 
-#: imapaccountbase.cpp:961
+#: imapaccountbase.cpp:962
 #, fuzzy, kde-format
 msgid "The destination folder was: <b>%1</b>."
 msgstr "Папкаи вазифот: "
 
-#: imapaccountbase.cpp:964
+#: imapaccountbase.cpp:965
 msgid "The server reported:"
 msgstr ""
 
-#: imapaccountbase.cpp:974
+#: imapaccountbase.cpp:975
 #, fuzzy
 #| msgid "No status information available."
 msgid "No detailed quota information available."
 msgstr "Иттилооти вазъият мавҷуд нест."
 
-#: imapaccountbase.cpp:986
+#: imapaccountbase.cpp:987
 #, kde-format
 msgid "The folder is too close to its quota limit. (%1)"
 msgstr ""
 
-#: imapaccountbase.cpp:988
+#: imapaccountbase.cpp:989
 msgid ""
 "\n"
 "Since you do not have write privileges on this folder, please ask the owner "
 "of the folder to free up some space in it."
 msgstr ""
 
-#: imapaccountbase.cpp:1040
+#: imapaccountbase.cpp:1041
 #, fuzzy
 msgid "Error"
 msgstr "Хатогӣ: %1"
 
-#: imapaccountbase.cpp:1044
+#: imapaccountbase.cpp:1045
 #, kde-format
 msgid ""
 "The connection to the server %1 was unexpectedly closed or timed out. It "
 "will be re-established automatically if possible."
 msgstr ""
 
-#: imapaccountbase.cpp:1050
+#: imapaccountbase.cpp:1051
 #, kde-format
 msgid "The connection to account %1 was broken."
 msgstr ""
 
-#: imapaccountbase.cpp:1053
+#: imapaccountbase.cpp:1054
 #, kde-format
 msgid "The connection to account %1 timed out."
 msgstr ""
 
-#: imapaccountbase.cpp:1347
+#: imapaccountbase.cpp:1348
 msgid "Error while uploading status of messages to server: "
 msgstr "Хатогӣ ҳангоми диҳиши вазъияти иттилоот ба сервери: "
 
-#: imapaccountbase.cpp:1388 listjob.cpp:116
+#: imapaccountbase.cpp:1389 listjob.cpp:116
 msgid "retrieving folders"
 msgstr "қабул намудани рӯйхати папкаҳо"
 
@@ -6716,7 +6729,7 @@ msgid "You do not have your own contact defined in the address book."
 msgstr ""
 
 #: kmstartup.cpp:141 mailinglistpropertiesdialog.cpp:110 aboutdata.cpp:216
-#: kmreaderwin.cpp:1388
+#: kmreaderwin.cpp:1409
 msgid "KMail"
 msgstr "KMail"
 
@@ -6779,8 +6792,8 @@ msgid "Exit"
 msgstr "Баромадан"
 
 #: subscriptiondialog.cpp:183 kmfoldercachedimap.cpp:272
-#: kmfoldercachedimap.cpp:2242 kmkernel.cpp:1321 accountdialog.cpp:605
-#: accountdialog.cpp:612 kmfolderimap.cpp:207 kmfolderimap.cpp:925
+#: kmfoldercachedimap.cpp:2242 kmkernel.cpp:1321 accountdialog.cpp:607
+#: accountdialog.cpp:614 kmfolderimap.cpp:207 kmfolderimap.cpp:925
 msgid "inbox"
 msgstr "Воридшаванда"
 
@@ -9720,7 +9733,7 @@ msgctxt "Accepted the invitation."
 msgid "Accepted: %1"
 msgstr "Қуттии хатнависии %1"
 
-#: callback.cpp:179
+#: callback.cpp:180
 #, fuzzy
 msgid ""
 "<qt>None of your identities match the receiver of this message,<br />please "
@@ -9730,7 +9743,7 @@ msgstr ""
 "<qt>Ягон яки аз профили шумо ба қабулкунандаи, мактуби шумо мутобиқ нест. "
 "<br>Интихоб кунед, ки кадом яки адресҳои зерин азони шумост:"
 
-#: callback.cpp:186
+#: callback.cpp:187
 #, fuzzy
 msgid ""
 "<qt>Several of your identities match the receiver of this message,<br /"
@@ -9739,7 +9752,7 @@ msgstr ""
 "<qt>Ягон яки аз профили шумо ба қабулкунандаи, мактуби шумо мутобиқ нест. "
 "<br>Интихоб кунед, ки кадом яки адресҳои зерин азони шумост:"
 
-#: callback.cpp:197
+#: callback.cpp:198
 msgid "Select Address"
 msgstr "Адрес интихоб кунед"
 
@@ -14778,23 +14791,23 @@ msgstr ""
 msgid "Scroll Message Down (More)"
 msgstr ""
 
-#: kmreaderwin.cpp:1390
+#: kmreaderwin.cpp:1411
 msgid "The email client for the K Desktop Environment."
 msgstr ""
 
-#: kmreaderwin.cpp:1398
+#: kmreaderwin.cpp:1419
 msgid ""
 "<h2 style='margin-top: 0px;'>Retrieving Folder Contents</h2><p>Please "
 "wait . . .</p>&nbsp;"
 msgstr ""
 
-#: kmreaderwin.cpp:1406
+#: kmreaderwin.cpp:1427
 msgid ""
 "<h2 style='margin-top: 0px;'>Offline</h2><p>KMail is currently in offline "
 "mode. Click <a href=\"kmail:goOnline\">here</a> to go online . . .</p>&nbsp;"
 msgstr ""
 
-#: kmreaderwin.cpp:1422
+#: kmreaderwin.cpp:1443
 #, fuzzy, kde-format
 msgctxt ""
 "%1: KMail version; %2: help:// URL; %3: homepage URL; %4: generated list of "
@@ -14835,14 +14848,14 @@ msgstr ""
 "<p>Миннатдорем,</p>\n"
 "<p>&nbsp; &nbsp; дастаи тайёркунандагони KMail</p>"
 
-#: kmreaderwin.cpp:1442
+#: kmreaderwin.cpp:1463
 #, kde-format
 msgid ""
 "<p>Some of the new features in this release of KMail include (compared to "
 "KMail %1, which is part of KDE %2):</p>\n"
 msgstr ""
 
-#: kmreaderwin.cpp:1455
+#: kmreaderwin.cpp:1476
 msgid ""
 "<p>Please take a moment to fill in the KMail configuration panel at Settings-"
 "&gt;Configure KMail.\n"
@@ -14854,41 +14867,41 @@ msgstr ""
 "Бояд профили асосиро ва ақалан як навиштаҷотро барои почтаи фиристодашаванда "
 "ва дохилшаванда ишора намудан лозим аст.</p>\n"
 
-#: kmreaderwin.cpp:1467
+#: kmreaderwin.cpp:1488
 #, kde-format
 msgid ""
 "<p><span style='font-size:125%; font-weight:bold;'>Important changes</span> "
 "(compared to KMail %1):</p>\n"
 msgstr ""
 
-#: kmreaderwin.cpp:1472
+#: kmreaderwin.cpp:1493
 #, kde-format
 msgid "<li>%1</li>\n"
 msgstr "<li>%1</li>\n"
 
-#: kmreaderwin.cpp:1600
+#: kmreaderwin.cpp:1621
 msgid "( body part )"
 msgstr "( тани иттилоот )"
 
-#: kmreaderwin.cpp:1913
+#: kmreaderwin.cpp:1934
 msgid "Could not send MDN."
 msgstr "Натавонистам иттилооти оиди коркардро бифиристам."
 
-#: kmreaderwin.cpp:2050 kmcomposewin.cpp:2677
+#: kmreaderwin.cpp:2071 kmcomposewin.cpp:2677
 #, fuzzy
 msgid "Save As..."
 msgstr "Нигоҳ доштан &ҳамчун..."
 
-#: kmreaderwin.cpp:2074
+#: kmreaderwin.cpp:2095
 msgid "Decrypt With Chiasmus..."
 msgstr ""
 
-#: kmreaderwin.cpp:2242 kmreaderwin.cpp:2278 kmreaderwin.cpp:2298
+#: kmreaderwin.cpp:2263 kmreaderwin.cpp:2299 kmreaderwin.cpp:2319
 #, kde-format
 msgid "View Attachment: %1"
 msgstr "Намоиши замимот: %1"
 
-#: kmreaderwin.cpp:2290
+#: kmreaderwin.cpp:2311
 #, kde-format
 msgid ""
 "[KMail: Attachment contains binary data. Trying to show first character.]"
@@ -14900,16 +14913,16 @@ msgstr[1] ""
 "[KMail: Замимот дорои маълумотҳои дубора мебошад.Ишораҳои якӯми %1 намоиш "
 "шудаанд.]"
 
-#: kmreaderwin.cpp:2391
+#: kmreaderwin.cpp:2412
 #, kde-format
 msgid "&Open with '%1'"
 msgstr "&Кушодан бо ёрии '%1'"
 
-#: kmreaderwin.cpp:2393
+#: kmreaderwin.cpp:2414
 msgid "&Open With..."
 msgstr "&Кушодан бо ёрии..."
 
-#: kmreaderwin.cpp:2395
+#: kmreaderwin.cpp:2416
 #, kde-format
 msgid ""
 "Open attachment '%1'?\n"
@@ -14918,28 +14931,28 @@ msgstr ""
 "Замимоти '%1'-ро кушоям?\n"
 "Дар хотир доред, ки ин метавонад амнияти системаи шуморо нуқсон кунад."
 
-#: kmreaderwin.cpp:2400
+#: kmreaderwin.cpp:2421
 msgid "Open Attachment?"
 msgstr "Замимотро кушоям?"
 
-#: kmreaderwin.cpp:2717
+#: kmreaderwin.cpp:2738
 msgid ""
 "Deleting an attachment might invalidate any digital signature on this "
 "message."
 msgstr ""
 
-#: kmreaderwin.cpp:2730
+#: kmreaderwin.cpp:2751
 msgid ""
 "Modifying an attachment might invalidate any digital signature on this "
 "message."
 msgstr ""
 
-#: kmreaderwin.cpp:2731 kmcomposewin.cpp:2673 vacation.cpp:662
+#: kmreaderwin.cpp:2752 kmcomposewin.cpp:2673 vacation.cpp:662
 #, fuzzy
 msgid "Edit"
 msgstr "Баромадан"
 
-#: kmreaderwin.cpp:2782
+#: kmreaderwin.cpp:2803
 #, fuzzy
 #| msgctxt "Config->Composer->Attachments"
 #| msgid "A&ttachments"
@@ -15479,12 +15492,12 @@ msgstr "&Танзими KMail..."
 msgid " Spellcheck: %1 "
 msgstr "Барномаи тафтиши имло"
 
-#: kmcomposewin.cpp:1346 kmcomposewin.cpp:4211
+#: kmcomposewin.cpp:1346 kmcomposewin.cpp:4209
 #, kde-format
 msgid " Column: %1 "
 msgstr " Сутун: %1 "
 
-#: kmcomposewin.cpp:1348 kmcomposewin.cpp:4209
+#: kmcomposewin.cpp:1348 kmcomposewin.cpp:4207
 #, fuzzy, kde-format
 #| msgid " Line: %1 "
 msgctxt "Shows the linenumber of the cursor position."
@@ -15807,62 +15820,62 @@ msgstr "<recipients>"
 msgid "&Edit Recipients"
 msgstr "Қабулкунандаҳои иловагӣ"
 
-#: kmcomposewin.cpp:3919
+#: kmcomposewin.cpp:3917
 #, fuzzy
 msgid "Spellcheck: on"
 msgstr "Барномаи тафтиши имло"
 
-#: kmcomposewin.cpp:3921
+#: kmcomposewin.cpp:3919
 #, fuzzy
 msgid "Spellcheck: off"
 msgstr "Барномаи тафтиши имло"
 
-#: kmcomposewin.cpp:4257
+#: kmcomposewin.cpp:4255
 msgid ""
 "Please configure a Crypto Backend to use for Chiasmus encryption first.\n"
 "You can do this in the Crypto Backends tab of the configure dialog's "
 "Security page."
 msgstr ""
 
-#: kmcomposewin.cpp:4261
+#: kmcomposewin.cpp:4259
 msgid ""
 "It looks as though libkleopatra was compiled without Chiasmus support. You "
 "might want to recompile libkleopatra with --enable-chiasmus."
 msgstr ""
 
-#: kmcomposewin.cpp:4264
+#: kmcomposewin.cpp:4262
 msgid "No Chiasmus Backend Configured"
 msgstr ""
 
-#: kmcomposewin.cpp:4295
+#: kmcomposewin.cpp:4293
 #, fuzzy
 msgid "No Chiasmus Keys Found"
 msgstr "Имзо ёфт нашуд"
 
-#: kmcomposewin.cpp:4299
+#: kmcomposewin.cpp:4297
 #, fuzzy
 msgid "Chiasmus Encryption Key Selection"
 msgstr "Интихоби калиди рамзгузорӣ"
 
-#: kmcomposewin.cpp:4381
+#: kmcomposewin.cpp:4379
 #, fuzzy
 #| msgid "Message was signed by %1."
 msgid "Message will be signed"
 msgstr "Иттилоот бо %1 имзо шудааст."
 
-#: kmcomposewin.cpp:4382
+#: kmcomposewin.cpp:4380
 #, fuzzy
 #| msgid "Message List - Date Field"
 msgid "Message will not be signed"
 msgstr "Рӯйхати иттилоот - заминаи сана"
 
-#: kmcomposewin.cpp:4384
+#: kmcomposewin.cpp:4382
 #, fuzzy
 #| msgid "Store sent messages encry&pted"
 msgid "Message will be encrypted"
 msgstr "Иттилоотҳои фиристодашударо ба тарзи &рамзгузошташуда захира кардан"
 
-#: kmcomposewin.cpp:4385
+#: kmcomposewin.cpp:4383
 #, fuzzy
 #| msgid "Store sent messages encry&pted"
 msgid "Message will not be encrypted"
@@ -16261,19 +16274,19 @@ msgstr "Навъи қуттии хатнависӣ: қуттии ғайрифа�
 msgid "Account Type: IMAP Account"
 msgstr "Навъи қуттии хатнависӣ: IMAP"
 
-#: accountdialog.cpp:331
+#: accountdialog.cpp:333
 #, fuzzy
 #| msgid "&Filtering"
 msgid "Filtering"
 msgstr "&Филтратсия"
 
-#: accountdialog.cpp:585
+#: accountdialog.cpp:587
 #, fuzzy
 msgctxt "Placeholder for the case that there is no folder."
 msgid "<placeholder>none</placeholder>"
 msgstr "Қабулкунандаҳои пинҳонӣ"
 
-#: accountdialog.cpp:640
+#: accountdialog.cpp:642
 msgid ""
 "The server does not seem to support unique message numbers, but this is a "
 "requirement for leaving messages on the server.\n"
@@ -16285,7 +16298,7 @@ msgstr ""
 "Аз вақте ,ки якчанд серверҳо хато эълон мекунанд қобилиятҳояшонро шумо ҳоло "
 "қобилият доред дар гирондан ахборотҳои гирифтагиро дар сервер."
 
-#: accountdialog.cpp:656
+#: accountdialog.cpp:658
 msgid ""
 "The server does not seem to support fetching message headers, but this is a "
 "requirement for filtering messages on the server.\n"
@@ -16297,7 +16310,7 @@ msgstr ""
 "Аз вақте,ки серверҳо хато эълон мекунанд қобилиятҳояшонро шумо ҳоло доред "
 "имконият барои дар гирондан ахборотҳои филтериро дар сервер."
 
-#: accountdialog.cpp:671
+#: accountdialog.cpp:673
 msgid ""
 "Please note that this feature can cause some POP3 servers that do not "
 "support pipelining to send corrupted mail;\n"
@@ -16319,11 +16332,11 @@ msgstr ""
 "аввало бояд якчанд иттилоотроба он бифиристед ва баъд сайъ кунед онро қабул "
 "кунед."
 
-#: accountdialog.cpp:723 accountdialog.cpp:753
+#: accountdialog.cpp:733 accountdialog.cpp:763
 msgid "Please specify a server and port on the General tab first."
 msgstr "Сервер ва портро дар танзимот ишора кунед."
 
-#: accountdialog.cpp:822
+#: accountdialog.cpp:832
 msgid ""
 "The server does not seem to support pipelining; therefore, this option has "
 "been disabled.\n"
@@ -16344,7 +16357,7 @@ msgstr ""
 "аввал вайро бо фиристондани шумораи калони мактубчаҳо, ки шумо ҳамаи онро "
 "фаровир кардед,санҷед аз пардозишгари POP сар кунед."
 
-#: accountdialog.cpp:843
+#: accountdialog.cpp:853
 msgid ""
 "The server does not seem to support unique message numbers, but this is a "
 "requirement for leaving messages on the server; therefore, this option has "
@@ -16358,7 +16371,7 @@ msgstr ""
 "Ҳанӯз, ки баъзе серверҳо қувватнокии худро эълон накардаанд шумо имконият "
 "доред, ки мактубҳоро ба сервер баргардонед."
 
-#: accountdialog.cpp:858
+#: accountdialog.cpp:868
 msgid ""
 "The server does not seem to support fetching message headers, but this is a "
 "requirement for filtering messages on the server; therefore, this option has "
@@ -16372,55 +16385,55 @@ msgstr ""
 "То он вақте ки баъзе серверҳо қувватнокии худро дуруст эълон накардаанд шумо "
 "имконияти баргардондани мактубҳои филтршавандаро ба сервер доред."
 
-#: accountdialog.cpp:895
+#: accountdialog.cpp:905
 #, fuzzy
 msgid " message"
 msgid_plural " messages"
 msgstr[0] "%1 иттилоот, %2."
 msgstr[1] "%1 иттилоотҳо, %2."
 
-#: accountdialog.cpp:901
+#: accountdialog.cpp:911
 msgid " byte"
 msgid_plural " bytes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: accountdialog.cpp:1148 accountdialog.cpp:1175
+#: accountdialog.cpp:1158 accountdialog.cpp:1185
 msgid "Choose Location"
 msgstr "Интихоби макон"
 
-#: accountdialog.cpp:1163
+#: accountdialog.cpp:1173
 msgid "Only local files are currently supported."
 msgstr "Танҳо файлҳои маҳаллӣ пуштибонӣ шуда истодаанд."
 
-#: accountdialog.cpp:1257
+#: accountdialog.cpp:1267
 #, fuzzy
 msgid "Fetching Namespaces..."
 msgstr "Қабул намудани иттилоот"
 
-#: accountdialog.cpp:1318
+#: accountdialog.cpp:1328
 #, fuzzy
 msgctxt "Empty namespace string."
 msgid "Empty"
 msgstr "&Пок кардан"
 
-#: accountdialog.cpp:1432
+#: accountdialog.cpp:1442
 #, fuzzy
 msgctxt "Personal namespace"
 msgid "Personal"
 msgstr "Ҳуқуқҳои дастрасӣ"
 
-#: accountdialog.cpp:1434
+#: accountdialog.cpp:1444
 msgctxt "Namespace accessible for others."
 msgid "Other Users"
 msgstr ""
 
-#: accountdialog.cpp:1436
+#: accountdialog.cpp:1446
 #, fuzzy
 msgid "Shared"
 msgstr "хондашуда"
 
-#: accountdialog.cpp:1438
+#: accountdialog.cpp:1448
 #, fuzzy, kde-format
 msgid "Edit Namespace '%1'"
 msgstr "Ном"
@@ -16686,7 +16699,7 @@ msgctxt "@info:status Number of emails retrieved."
 msgid " completed"
 msgstr " хотима ёфт"
 
-#: kmacctimap.cpp:621
+#: kmacctimap.cpp:617
 #, fuzzy
 #| msgid "Unable to process messages: "
 msgctxt "@info:status"
