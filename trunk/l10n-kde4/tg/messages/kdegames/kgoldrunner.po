@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgoldrunner\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-25 11:37+0200\n"
+"POT-Creation-Date: 2009-05-31 11:44+0200\n"
 "PO-Revision-Date: 2005-10-22 16:20+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -3496,13 +3496,13 @@ msgstr ""
 msgid "Paint gold pieces (or other treasure)"
 msgstr ""
 
-#: src/kgrcanvas.cpp:41
+#: src/kgrcanvas.cpp:46
 #, fuzzy
 #| msgid "   Score: "
 msgid "Score: "
 msgstr "   Холҳо: "
 
-#: src/kgrcanvas.cpp:46
+#: src/kgrcanvas.cpp:51
 #, fuzzy
 #| msgid "   Lives: "
 msgid "Lives: "
@@ -3633,8 +3633,8 @@ msgstr "&Дохилкунии Сатҳ"
 msgid "&Cancel"
 msgstr ""
 
-#: src/kgreditor.cpp:273 src/kgreditor.cpp:799 src/kgrgame.cpp:1299
-#: src/kgrgame.cpp:1505
+#: src/kgreditor.cpp:273 src/kgreditor.cpp:799 src/kgrgame.cpp:1292
+#: src/kgrgame.cpp:1501
 #, kde-format
 msgid "Cannot open file '%1' for output."
 msgstr "Барои ҳосилкунӣ файли '%1' кушода нашуда итодааст."
@@ -3970,8 +3970,8 @@ msgstr "Истодан дар Усули &Муш"
 msgid "Keyboard Mode"
 msgstr "Гузариш ба Усули Забонак"
 
-#: src/kgrgame.cpp:1264 src/kgrgame.cpp:1276 src/kgrgame.cpp:1298
-#: src/kgrgame.cpp:1308 src/kgrgame.cpp:1327 src/kgrgame.cpp:1331
+#: src/kgrgame.cpp:1264 src/kgrgame.cpp:1291 src/kgrgame.cpp:1301
+#: src/kgrgame.cpp:1320 src/kgrgame.cpp:1327
 msgid "Save Game"
 msgstr "Захиракунии Бозӣ"
 
@@ -3984,7 +3984,13 @@ msgstr ""
 "Бубахшед, шумо бозиро ҳангоми таҳриркунӣ захира карда наметавонед. Марҳамат "
 "карда пункти %1-и менюро санҷед."
 
-#: src/kgrgame.cpp:1277
+#: src/kgrgame.cpp:1302 src/kgrgame.cpp:1347 src/kgrgame.cpp:1462
+#: src/kgrgame.cpp:1663 src/kgrgame.cpp:1857 src/kgrgameio.cpp:164
+#, kde-format
+msgid "Cannot open file '%1' for read-only."
+msgstr "Кушодани файли '%1' танҳо барои хониш, нашуда истоааст."
+
+#: src/kgrgame.cpp:1321
 msgid ""
 "Please note: for reasons of simplicity, your saved game position and score "
 "will be as they were at the start of this level, not as they are now."
@@ -3993,42 +3999,32 @@ msgstr ""
 "холҳои бозӣ дар ҳолати оғозёбии бозӣ боқӣ мемонанд, на он ҳолате, ки ҳозир "
 "доранд."
 
-#: src/kgrgame.cpp:1309 src/kgrgame.cpp:1351 src/kgrgame.cpp:1466
-#: src/kgrgame.cpp:1667 src/kgrgame.cpp:1861 src/kgrgameio.cpp:164
-#, kde-format
-msgid "Cannot open file '%1' for read-only."
-msgstr "Кушодани файли '%1' танҳо барои хониш, нашуда истоааст."
-
 #: src/kgrgame.cpp:1328
-msgid "Your game has been saved."
-msgstr "Бозии шумо захира карда шудааст."
-
-#: src/kgrgame.cpp:1332
 msgid "Error: Failed to save your game."
 msgstr ""
 
-#: src/kgrgame.cpp:1344 src/kgrgame.cpp:1350 src/kgrgame.cpp:1388
+#: src/kgrgame.cpp:1340 src/kgrgame.cpp:1346 src/kgrgame.cpp:1384
 msgid "Load Game"
 msgstr "Боркунии Бозӣ"
 
-#: src/kgrgame.cpp:1345
+#: src/kgrgame.cpp:1341
 msgid "Sorry, there are no saved games."
 msgstr "Бубахшед,бозиҳои захирашуда нестанд."
 
-#: src/kgrgame.cpp:1389
+#: src/kgrgame.cpp:1385
 #, kde-format
 msgid "Cannot find the game with prefix '%1'."
 msgstr "Бозӣ бо пешванди '%1' пайдо карда нашуд."
 
-#: src/kgrgame.cpp:1447
+#: src/kgrgame.cpp:1443
 msgid "Unknown"
 msgstr "Номаълум"
 
-#: src/kgrgame.cpp:1465 src/kgrgame.cpp:1504
+#: src/kgrgame.cpp:1461 src/kgrgame.cpp:1500
 msgid "Check for High Score"
 msgstr "Тафтиши Холи Баланд"
 
-#: src/kgrgame.cpp:1522
+#: src/kgrgame.cpp:1518
 #, fuzzy
 msgid ""
 "<html><b>Congratulations !!!</b><br>You have achieved a high score in this "
@@ -4039,28 +4035,28 @@ msgstr ""
 "Марҳамат карда номи худро ворид кунед, то ки он дар Китоби рекордҳои "
 "KҶӯяндаи тилло захира карда шавад."
 
-#: src/kgrgame.cpp:1534 src/kgrgame.cpp:1621
+#: src/kgrgame.cpp:1530 src/kgrgame.cpp:1617
 msgid "Save High Score"
 msgstr "Захиракунии Ҳисоби Баланд"
 
-#: src/kgrgame.cpp:1622
+#: src/kgrgame.cpp:1618
 msgid "Error: Failed to save your high score."
 msgstr ""
 
-#: src/kgrgame.cpp:1634 src/kgrgame.cpp:1657 src/kgrgame.cpp:1666
+#: src/kgrgame.cpp:1630 src/kgrgame.cpp:1653 src/kgrgame.cpp:1662
 msgid "Show High Scores"
 msgstr "Нишон додани Ҳисоби Баландтарин"
 
-#: src/kgrgame.cpp:1635
+#: src/kgrgame.cpp:1631
 msgid "Sorry, we do not keep high scores for tutorial games."
 msgstr "Бубахшед, мо ҳисоби баландро дар бозиҳои ёдгирӣ захира намекунем."
 
-#: src/kgrgame.cpp:1658
+#: src/kgrgame.cpp:1654
 #, fuzzy, kde-format
 msgid "Sorry, there are no high scores for the \"%1\" game yet."
 msgstr "Бубахшед, то ҳал барои бозии %1 ҳисоби баланд нестаст."
 
-#: src/kgrgame.cpp:1682
+#: src/kgrgame.cpp:1678
 #, fuzzy, kde-format
 msgid ""
 "<center><h2>KGoldrunner Hall of Fame</h2></center><center><h3>\"%1\" Game</"
@@ -4069,49 +4065,49 @@ msgstr ""
 "<center><h2>Китоби рекордҳои бозии KҶӯяндаи тилло</h2></"
 "center><br><center><h3>\"%1\" </h3></center>"
 
-#: src/kgrgame.cpp:1692
+#: src/kgrgame.cpp:1688
 msgctxt "1, 2, 3 etc."
 msgid "Rank"
 msgstr ""
 
-#: src/kgrgame.cpp:1693
+#: src/kgrgame.cpp:1689
 #, fuzzy
 #| msgid "Game"
 msgctxt "Person"
 msgid "Name"
 msgstr "Бозӣ"
 
-#: src/kgrgame.cpp:1694
+#: src/kgrgame.cpp:1690
 #, fuzzy
 #| msgid "0 levels"
 msgctxt "Game level reached"
 msgid "Level"
 msgstr "0 сатҳҳо"
 
-#: src/kgrgame.cpp:1695
+#: src/kgrgame.cpp:1691
 #, fuzzy
 #| msgid "   Score: "
 msgid "Score"
 msgstr "   Холҳо: "
 
-#: src/kgrgame.cpp:1696
+#: src/kgrgame.cpp:1692
 msgid "Date"
 msgstr ""
 
-#: src/kgrgame.cpp:1699
+#: src/kgrgame.cpp:1695
 msgid "High Scores"
 msgstr "Ҳисоби Баланд"
 
-#: src/kgrgame.cpp:1854 src/kgrgame.cpp:1860 src/kgrgame.cpp:1864
+#: src/kgrgame.cpp:1850 src/kgrgame.cpp:1856 src/kgrgame.cpp:1860
 msgid "Load Game Info"
 msgstr "Боркунии Додаҳои Бозӣ"
 
-#: src/kgrgame.cpp:1855
+#: src/kgrgame.cpp:1851
 #, kde-format
 msgid "Cannot find game info file '%1'."
 msgstr "Файли додаҳои бозии '%1' пайдо нагардид."
 
-#: src/kgrgame.cpp:1865
+#: src/kgrgame.cpp:1861
 #, kde-format
 msgid "Reached end of file '%1' before finding end of game-data."
 msgstr ""
@@ -4561,6 +4557,9 @@ msgstr ""
 #: src/main.cpp:96
 msgid "Artwork for the Treasure of Egypt theme"
 msgstr ""
+
+#~ msgid "Your game has been saved."
+#~ msgstr "Бозии шумо захира карда шудааст."
 
 #~ msgid "or"
 #~ msgstr "ё"
