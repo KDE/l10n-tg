@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-06-12 11:21+0200\n"
+"POT-Creation-Date: 2009-06-17 12:23+0200\n"
 "PO-Revision-Date: 2005-11-06 23:03+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -445,7 +445,7 @@ msgstr "Вақти ғуруб нест: Ҳеҷ вақт баромадан"
 msgid "Catalogs"
 msgstr "Рӯйхатҳо"
 
-#: kstarsactions.cpp:410 tools/astrocalc.cpp:163 dialogs/finddialog.cpp:37
+#: kstarsactions.cpp:410 tools/astrocalc.cpp:167 dialogs/finddialog.cpp:37
 msgid "Solar System"
 msgstr "Системаи Офтобӣ"
 
@@ -718,7 +718,8 @@ msgstr "галаситора"
 #. i18n: file: tools/modcalcplanets.ui:497
 #. i18n: ectx: property (text), item, widget (KComboBox, PlanetComboBoxBatch)
 #: kstarsdata.cpp:96 rc.cpp:2465 rc.cpp:2868 rc.cpp:2952
-#: tools/modcalcplanets.cpp:315 skyobjects/ksmoon.cpp:33
+#: tools/conjunctions.cpp:84 tools/modcalcplanets.cpp:315
+#: skyobjects/ksmoon.cpp:33
 msgid "Moon"
 msgstr "Моҳ"
 
@@ -29910,7 +29911,7 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
 #. i18n: file: tools/modcalcplanets.ui:226
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:2123 rc.cpp:2153 rc.cpp:2883 tools/astrocalc.cpp:156
+#: rc.cpp:2123 rc.cpp:2153 rc.cpp:2883 tools/astrocalc.cpp:160
 msgid "Horizontal Coordinates"
 msgstr "Хати уфуқии Координатаҳо"
 
@@ -30260,7 +30261,7 @@ msgstr "Давидан"
 
 #. i18n: file: tools/modcalcangdist.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, modCalcAngDistDlg)
-#: rc.cpp:2222 tools/astrocalc.cpp:158
+#: rc.cpp:2222 tools/astrocalc.cpp:162
 msgid "Angular Distance"
 msgstr "Фосилаи Кунҷ"
 
@@ -30345,7 +30346,7 @@ msgstr "Гузориши майлон:"
 
 #. i18n: file: tools/modcalcapcoord.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, modCalcApCoordDlg)
-#: rc.cpp:2303 tools/astrocalc.cpp:155
+#: rc.cpp:2303 tools/astrocalc.cpp:159
 msgid "Apparent Coordinates"
 msgstr "Координатҳои Равшан"
 
@@ -30405,7 +30406,7 @@ msgstr "Хатогии кушодани файли FITS."
 #. i18n: ectx: property (windowTitle), widget (QWidget, modCalcDayLengthDlg)
 #. i18n: file: tools/wutdialog.ui:153
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:2405 rc.cpp:3610 tools/astrocalc.cpp:148
+#: rc.cpp:2405 rc.cpp:3610 tools/astrocalc.cpp:152
 msgid "Almanac"
 msgstr "Алманах"
 
@@ -30423,8 +30424,9 @@ msgstr "Муҳовараи намуд"
 #. i18n: ectx: property (text), item, widget (KComboBox, PlanetComboBox)
 #. i18n: file: tools/modcalcplanets.ui:502
 #. i18n: ectx: property (text), item, widget (KComboBox, PlanetComboBoxBatch)
-#: rc.cpp:2420 rc.cpp:2871 rc.cpp:2955 tools/modcalcplanets.cpp:315
-#: dialogs/finddialog.cpp:168 skyobjects/kssun.cpp:29
+#: rc.cpp:2420 rc.cpp:2871 rc.cpp:2955 tools/conjunctions.cpp:83
+#: tools/modcalcplanets.cpp:315 dialogs/finddialog.cpp:168
+#: skyobjects/kssun.cpp:29
 msgid "Sun"
 msgstr "Офтоб"
 
@@ -30614,7 +30616,7 @@ msgstr "Координатҳои Экваториали"
 
 #. i18n: file: tools/modcalceclipticcoords.ui:124
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:2556 tools/astrocalc.cpp:157
+#: rc.cpp:2556 tools/astrocalc.cpp:161
 msgid "Ecliptic Coordinates"
 msgstr "Координатҳои Эклиптикӣ"
 
@@ -31123,7 +31125,7 @@ msgstr "Давраро гузоред:"
 
 #. i18n: file: tools/modcalcsidtime.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, modCalcSidTimeDlg)
-#: rc.cpp:3006 tools/astrocalc.cpp:147
+#: rc.cpp:3006 tools/astrocalc.cpp:151
 msgid "Sidereal Time"
 msgstr "Вақти Ситорагӣ"
 
@@ -36816,42 +36818,42 @@ msgstr "Ҳисоб кардан"
 msgid "Calculator modules"
 msgstr "Ҳисоб кардан"
 
-#: tools/astrocalc.cpp:143
+#: tools/astrocalc.cpp:147
 msgid "Time Calculators"
 msgstr "Вақтро ҳисоб кунед"
 
-#: tools/astrocalc.cpp:146
+#: tools/astrocalc.cpp:150
 msgid "Julian Day"
 msgstr "Рӯзи Юлианӣ"
 
-#: tools/astrocalc.cpp:149
+#: tools/astrocalc.cpp:153
 msgid "Equinoxes & Solstices"
 msgstr ""
 
-#: tools/astrocalc.cpp:153
+#: tools/astrocalc.cpp:157
 #, fuzzy
 msgid "Coordinate Converters"
 msgstr "Шабакаи координатӣ "
 
-#: tools/astrocalc.cpp:154
+#: tools/astrocalc.cpp:158
 #, fuzzy
 msgid "Equatorial/Galactic"
 msgstr "Экваториалӣ"
 
-#: tools/astrocalc.cpp:159
+#: tools/astrocalc.cpp:163
 msgid "Geodetic Coordinates"
 msgstr "Координатҳои Геодетикӣ"
 
-#: tools/astrocalc.cpp:160
+#: tools/astrocalc.cpp:164
 msgid "LSR Velocity"
 msgstr ""
 
-#: tools/astrocalc.cpp:165
+#: tools/astrocalc.cpp:169
 #, fuzzy
 msgid "Planets Coordinates"
 msgstr "Координатаҳо"
 
-#: tools/astrocalc.cpp:166
+#: tools/astrocalc.cpp:170
 #, fuzzy
 #| msgid "Connection"
 msgid "Conjunctions"
