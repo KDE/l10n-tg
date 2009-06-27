@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-06-26 12:12+0200\n"
+"POT-Creation-Date: 2009-06-27 13:08+0200\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -986,7 +986,7 @@ msgstr "&Тасвир"
 #. i18n: file: plugins/extensions/tonemapping/tonemapping.rc:4
 #. i18n: ectx: Menu (Layer)
 #: rc.cpp:18 rc.cpp:3428 rc.cpp:3491 rc.cpp:3497 rc.cpp:3542 rc.cpp:3554
-#: ui/kis_layer_box.cpp:289
+#: ui/kis_layer_box.cpp:291
 msgid "&Layer"
 msgstr "Та&бақа"
 
@@ -3617,7 +3617,7 @@ msgstr "Тазод :"
 
 #. i18n: file: plugins/paintops/sumie/wdgsumieoptions.ui:278
 #. i18n: ectx: property (text), widget (QCheckBox, opacityCBox)
-#: rc.cpp:1036 image/kis_layer.cc:97
+#: rc.cpp:1036 image/kis_layer.cc:96
 #: plugins/paintops/libpaintop/kis_pressure_opacity_option.cpp:27
 #, fuzzy
 msgid "Opacity"
@@ -4158,7 +4158,7 @@ msgstr "Занондан"
 #. i18n: file: plugins/filters/wavefilter/wdgwaveoptions.ui:197
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2_2)
 #: rc.cpp:1305 rc.cpp:1613 rc.cpp:1646 rc.cpp:1667
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:338
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:336
 msgid "Shape:"
 msgstr "Шакл:"
 
@@ -4186,7 +4186,7 @@ msgstr "нуқтаҳо"
 #. i18n: file: plugins/paintops/dynamicbrush/DynamicBrushOptions.ui:71
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBoxColoring)
 #: rc.cpp:1323 plugins/tools/defaulttools/kis_tool_gradient.h:116
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:266
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:265
 #, fuzzy
 msgid "Gradient"
 msgstr "Градиент:"
@@ -4535,7 +4535,8 @@ msgstr ""
 #. i18n: file: plugins/paintops/deform/wdgdeformoptions.ui:73
 #. i18n: ectx: property (text), widget (QRadioButton, moveBtn)
 #: rc.cpp:1496 image/commands/kis_node_move_command.cpp:24
-#: plugins/tools/defaulttools/kis_tool_move.h:89
+#: plugins/tools/defaulttools/kis_tool_move.h:92
+#: plugins/tools/defaulttools/kis_tool_move.cc:148
 #, fuzzy
 msgid "Move"
 msgstr "&Усул"
@@ -6483,7 +6484,7 @@ msgstr "Нағз"
 
 #. i18n: file: plugins/extensions/shearimage/wdg_shearimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
-#: rc.cpp:2524 image/kis_image.cc:546
+#: rc.cpp:2524 image/kis_image.cc:553
 #: plugins/extensions/shearimage/dlg_shearimage.cc:32
 #: plugins/extensions/shearimage/shearimage.cc:90
 #, fuzzy
@@ -6873,7 +6874,7 @@ msgstr "&Ҷудокуни"
 
 #. i18n: file: plugins/extensions/rotateimage/wdg_rotateimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgRotateImage)
-#: rc.cpp:2777 image/kis_image.cc:494
+#: rc.cpp:2777 image/kis_image.cc:501
 #: plugins/extensions/rotateimage/rotateimage.cc:115
 #: plugins/extensions/rotateimage/dlg_rotateimage.cc:31
 #, fuzzy
@@ -8212,7 +8213,7 @@ msgid "I&nsert Image as Layer..."
 msgstr "&Даровардани Тасвир ҳамчун Табақа..."
 
 #: ui/kis_image_manager.cc:60 ui/kis_mask_manager.cc:148
-#: ui/kis_layer_manager.cc:214
+#: ui/kis_layer_manager.cc:215
 #, fuzzy
 msgid "Properties..."
 msgstr "Ҳосиятҳои Табақа..."
@@ -8368,13 +8369,13 @@ msgstr "&Нест кардани Табақа"
 msgid "Show"
 msgstr "&Сояҳо"
 
-#: ui/kis_mask_manager.cc:124 ui/kis_layer_manager.cc:194
+#: ui/kis_mask_manager.cc:124 ui/kis_layer_manager.cc:195
 #: image/commands/kis_image_node_raise_command.cpp:28
 #, fuzzy
 msgid "Raise"
 msgstr "Бардоштан %1"
 
-#: ui/kis_mask_manager.cc:128 ui/kis_layer_manager.cc:199
+#: ui/kis_mask_manager.cc:128 ui/kis_layer_manager.cc:200
 #: image/commands/kis_image_node_to_top_command.cpp:28
 #: image/commands/kis_image_node_to_bottom_command.cpp:29
 #: image/commands/kis_image_node_lower_command.cpp:28
@@ -8382,22 +8383,22 @@ msgstr "Бардоштан %1"
 msgid "Lower"
 msgstr "Поёнтар %1"
 
-#: ui/kis_mask_manager.cc:132 ui/kis_layer_manager.cc:204
+#: ui/kis_mask_manager.cc:132 ui/kis_layer_manager.cc:205
 #, fuzzy
 msgid "To Top"
 msgstr "&Ҳаракат кардан"
 
-#: ui/kis_mask_manager.cc:136 ui/kis_layer_manager.cc:209
+#: ui/kis_mask_manager.cc:136 ui/kis_layer_manager.cc:210
 #, fuzzy
 msgid "To Bottom"
 msgstr "Табақа ба Поён"
 
-#: ui/kis_mask_manager.cc:140 ui/kis_layer_manager.cc:222
+#: ui/kis_mask_manager.cc:140 ui/kis_layer_manager.cc:223
 #, fuzzy
 msgid "Mirror Horizontally"
 msgstr "Ҷоки уфуқӣ"
 
-#: ui/kis_mask_manager.cc:144 ui/kis_layer_manager.cc:226
+#: ui/kis_mask_manager.cc:144 ui/kis_layer_manager.cc:227
 #, fuzzy
 msgid "Mirror Vertically"
 msgstr "Амудӣ:"
@@ -8431,7 +8432,7 @@ msgstr "Сохтани нав %1"
 msgid "Mirror Mask X"
 msgstr "Фуровардани Табақа"
 
-#: ui/kis_mask_manager.cc:441 ui/kis_layer_manager.cc:823
+#: ui/kis_mask_manager.cc:441 ui/kis_layer_manager.cc:832
 #, fuzzy
 msgid "Mirror Layer Y"
 msgstr "Фуровардани Табақа"
@@ -8605,154 +8606,154 @@ msgstr ""
 msgid "Exposure:"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:144
+#: ui/kis_layer_manager.cc:145
 #, fuzzy
 msgid "&Flatten image"
 msgstr "Дучанда кардани Тасвир"
 
-#: ui/kis_layer_manager.cc:149
+#: ui/kis_layer_manager.cc:150
 #, fuzzy
 msgid "&Merge with Layer Below"
 msgstr "Якшавии &Ҳама Табақаҳо"
 
-#: ui/kis_layer_manager.cc:154
+#: ui/kis_layer_manager.cc:155
 #, fuzzy
 msgid "&Flatten Layer"
 msgstr "&Сафед"
 
-#: ui/kis_layer_manager.cc:158 ui/kis_layer_box.cpp:137
+#: ui/kis_layer_manager.cc:159 ui/kis_layer_box.cpp:137
 #, fuzzy
 #| msgid "&Layer"
 msgid "&Paint Layer"
 msgstr "Та&бақа"
 
-#: ui/kis_layer_manager.cc:163 ui/kis_layer_box.cpp:141
-#: ui/kis_layer_box.cpp:293
+#: ui/kis_layer_manager.cc:164 ui/kis_layer_box.cpp:141
+#: ui/kis_layer_box.cpp:295
 #, fuzzy
 msgid "&Filter Layer..."
 msgstr "&Сафед"
 
-#: ui/kis_layer_manager.cc:167
+#: ui/kis_layer_manager.cc:168
 #, fuzzy
 msgid "&Generator Layer..."
 msgstr "Масштаби Табақа..."
 
-#: ui/kis_layer_manager.cc:171 ui/kis_layer_box.cpp:139
-#: ui/kis_layer_box.cpp:291
+#: ui/kis_layer_manager.cc:172 ui/kis_layer_box.cpp:139
+#: ui/kis_layer_box.cpp:293
 #, fuzzy
 msgid "&Clone Layer"
 msgstr "Нест кардани Табақа"
 
-#: ui/kis_layer_manager.cc:175 ui/kis_layer_box.cpp:140
-#: ui/kis_layer_box.cpp:292
+#: ui/kis_layer_manager.cc:176 ui/kis_layer_box.cpp:140
+#: ui/kis_layer_box.cpp:294
 #, fuzzy
 msgid "&Shape Layer"
 msgstr "Масштаби Табақа..."
 
-#: ui/kis_layer_manager.cc:179
+#: ui/kis_layer_manager.cc:180
 #, fuzzy
 msgid "&Remove"
 msgstr "&Нест кардани Табақа"
 
-#: ui/kis_layer_manager.cc:183
+#: ui/kis_layer_manager.cc:184
 #, fuzzy
 msgid "Duplicate current Layer"
 msgstr "Ранги равон аз нав кардан"
 
-#: ui/kis_layer_manager.cc:187
+#: ui/kis_layer_manager.cc:188
 #, fuzzy
 msgid "&Hide"
 msgstr "&Пинҳои кардани/Намоиши Табақа"
 
-#: ui/kis_layer_manager.cc:191
+#: ui/kis_layer_manager.cc:192
 #, fuzzy
 msgid "&Show"
 msgstr "&Сояҳо"
 
-#: ui/kis_layer_manager.cc:218
+#: ui/kis_layer_manager.cc:219
 msgid "Save Layer as Image..."
 msgstr "Нигоҳдоштани Табақа ҳамчун Тасвир..."
 
-#: ui/kis_layer_manager.cc:230
+#: ui/kis_layer_manager.cc:231
 #, fuzzy
 msgid "Size Canvas to Size of Current Layer"
 msgstr "Санҷидани Тасвир ба Табақаи Ҳозира"
 
-#: ui/kis_layer_manager.cc:295
+#: ui/kis_layer_manager.cc:296
 #, fuzzy
 msgid "Resize Image to Size of Current Layer"
 msgstr "Санҷидани Тасвир ба Табақаи Ҳозира"
 
-#: ui/kis_layer_manager.cc:382
+#: ui/kis_layer_manager.cc:391
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Filter Layer Properties"
 msgstr "Ҳосиятҳои Табақа"
 
-#: ui/kis_layer_manager.cc:411
+#: ui/kis_layer_manager.cc:420
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Generator Layer Properties"
 msgstr "Ҳосиятҳои Табақа"
 
-#: ui/kis_layer_manager.cc:496 ui/kis_layer_manager.cc:511
-#: ui/kis_layer_manager.cc:553 ui/kis_layer_manager.cc:585
-#: ui/kis_layer_manager.cc:722
+#: ui/kis_layer_manager.cc:505 ui/kis_layer_manager.cc:520
+#: ui/kis_layer_manager.cc:562 ui/kis_layer_manager.cc:594
+#: ui/kis_layer_manager.cc:731
 msgid "Could not add layer to image."
 msgstr "Табақа ба тасвир илова кардан наметавонад."
 
-#: ui/kis_layer_manager.cc:496 ui/kis_layer_manager.cc:511
-#: ui/kis_layer_manager.cc:553 ui/kis_layer_manager.cc:585
-#: ui/kis_layer_manager.cc:722
+#: ui/kis_layer_manager.cc:505 ui/kis_layer_manager.cc:520
+#: ui/kis_layer_manager.cc:562 ui/kis_layer_manager.cc:594
+#: ui/kis_layer_manager.cc:731
 msgid "Layer Error"
 msgstr "Табақаи Хато"
 
-#: ui/kis_layer_manager.cc:615
+#: ui/kis_layer_manager.cc:624
 #, fuzzy
 msgid "New Filter Layer"
 msgstr "&Сафед"
 
-#: ui/kis_layer_manager.cc:715
+#: ui/kis_layer_manager.cc:724
 #, fuzzy, kde-format
 msgid "Duplicate of '%1'"
 msgstr "Дучанда кардан"
 
-#: ui/kis_layer_manager.cc:801
+#: ui/kis_layer_manager.cc:810
 #, fuzzy
 msgid "Mirror Layer X"
 msgstr "Фуровардани Табақа"
 
-#: ui/kis_layer_manager.cc:846
+#: ui/kis_layer_manager.cc:855
 #, fuzzy
 msgid "Scale Layer"
 msgstr "Масштаби Табақа..."
 
-#: ui/kis_layer_manager.cc:871
+#: ui/kis_layer_manager.cc:880
 #: plugins/extensions/rotateimage/rotateimage.cc:149
 #, fuzzy
 msgid "Rotate Layer"
 msgstr "&Нест кардани Табақа"
 
-#: ui/kis_layer_manager.cc:905 ui/kis_layer_manager.cc:909
+#: ui/kis_layer_manager.cc:914 ui/kis_layer_manager.cc:918
 #, fuzzy
 msgid "Shear layer"
 msgstr "Масштаби Табақа..."
 
-#: ui/kis_layer_manager.cc:932
+#: ui/kis_layer_manager.cc:941
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:933 image/kis_image.cc:744
+#: ui/kis_layer_manager.cc:942 image/kis_image.cc:748
 #, fuzzy
 msgid "Flatten Image"
 msgstr "Дучанда кардани Тасвир"
 
-#: ui/kis_layer_manager.cc:934
+#: ui/kis_layer_manager.cc:943
 #, fuzzy
 msgid "&Flatten Image"
 msgstr "Дучанда кардани Тасвир"
 
-#: ui/kis_layer_manager.cc:998
+#: ui/kis_layer_manager.cc:1007
 #: plugins/extensions/separate_channels/kis_channel_separator.cc:242
 msgid "Export Layer"
 msgstr "Содироти Табақа"
@@ -8972,7 +8973,7 @@ msgstr "&Даровардани Асбоб"
 msgid "Edit Palette..."
 msgstr "Намунаҳо"
 
-#: ui/kis_view2.cpp:649 ui/kis_view2.cpp:652
+#: ui/kis_view2.cpp:646 ui/kis_view2.cpp:649
 #, fuzzy
 msgid "Edit Palette"
 msgstr "Намунаҳо"
@@ -8998,17 +8999,17 @@ msgstr ""
 msgid "View mode"
 msgstr "Табақаи Нав"
 
-#: ui/kis_layer_box.cpp:138 ui/kis_layer_box.cpp:290
+#: ui/kis_layer_box.cpp:138 ui/kis_layer_box.cpp:292
 #, fuzzy
 msgid "&Group Layer"
 msgstr "Масштаби Табақа..."
 
-#: ui/kis_layer_box.cpp:142 ui/kis_layer_box.cpp:294
+#: ui/kis_layer_box.cpp:142 ui/kis_layer_box.cpp:296
 #, fuzzy
 msgid "&Generated Layer..."
 msgstr "Масштаби Табақа..."
 
-#: ui/kis_layer_box.cpp:144 ui/kis_layer_box.cpp:296
+#: ui/kis_layer_box.cpp:144 ui/kis_layer_box.cpp:298
 #, fuzzy
 msgid "&Transparency Mask"
 msgstr "FG ба Шаффоф"
@@ -9018,32 +9019,32 @@ msgstr "FG ба Шаффоф"
 msgid "&Filter Mask..."
 msgstr "&Сафед"
 
-#: ui/kis_layer_box.cpp:147 ui/kis_layer_box.cpp:298
+#: ui/kis_layer_box.cpp:147 ui/kis_layer_box.cpp:300
 #, fuzzy
 msgid "&Transformation Mask..."
 msgstr "&Асбоби Хат задани"
 
-#: ui/kis_layer_box.cpp:149 ui/kis_layer_box.cpp:299
+#: ui/kis_layer_box.cpp:149 ui/kis_layer_box.cpp:301
 #, fuzzy
 msgid "&Local Selection"
 msgstr "Ҳаракат кардани Интихобот"
 
-#: ui/kis_layer_box.cpp:282
+#: ui/kis_layer_box.cpp:284
 #, fuzzy
 msgid "&Properties..."
 msgstr "Ҳосиятҳои Табақа..."
 
-#: ui/kis_layer_box.cpp:284
+#: ui/kis_layer_box.cpp:286
 msgid "&Remove Layer"
 msgstr "&Нест кардани Табақа"
 
-#: ui/kis_layer_box.cpp:285
+#: ui/kis_layer_box.cpp:287
 #, fuzzy
 #| msgid "Duplicate"
 msgid "&Duplicate Layer or Mask"
 msgstr "Дучанда кардан"
 
-#: ui/kis_layer_box.cpp:297
+#: ui/kis_layer_box.cpp:299
 #, fuzzy
 msgid "&Effect Mask..."
 msgstr "Интихоби поккун"
@@ -9212,12 +9213,12 @@ msgstr "Ҳаракат кардани Интихобот"
 msgid "No profile"
 msgstr ""
 
-#: image/kis_layer.cc:97
+#: image/kis_layer.cc:96
 #, kde-format
 msgid "%1%"
 msgstr ""
 
-#: image/kis_layer.cc:99
+#: image/kis_layer.cc:98
 #, fuzzy
 msgid "Composite Mode"
 msgstr "Ҳолатро ташкил кардан:"
@@ -9339,7 +9340,7 @@ msgstr ""
 msgid "Mitchell"
 msgstr ""
 
-#: image/commands/kis_image_resize_command.cpp:38 image/kis_image.cc:372
+#: image/commands/kis_image_resize_command.cpp:38 image/kis_image.cc:379
 msgid "Resize Image"
 msgstr "Санҷидаи Тасвир"
 
@@ -9356,7 +9357,7 @@ msgstr "&Ҷудокуни"
 msgid "Property Changes"
 msgstr "Дигаргунии ҳосиятҳо"
 
-#: image/commands/kis_image_convert_type_command.cpp:38 image/kis_image.cc:581
+#: image/commands/kis_image_convert_type_command.cpp:38 image/kis_image.cc:588
 #, fuzzy
 msgid "Convert Image Type"
 msgstr "&Даровардани Тасвир ҳамчун Табақа..."
@@ -9446,37 +9447,37 @@ msgstr ""
 msgid "Rotate Node"
 msgstr "Занондан"
 
-#: image/kis_image.cc:269
+#: image/kis_image.cc:274
 msgid "background"
 msgstr "замина"
 
-#: image/kis_image.cc:272
+#: image/kis_image.cc:277
 #, kde-format
 msgid "Layer %1"
 msgstr "Табақа %1"
 
-#: image/kis_image.cc:370
+#: image/kis_image.cc:377
 #, fuzzy
 msgid "Crop Image"
 msgstr "Табақа ба Тасвир"
 
-#: image/kis_image.cc:404
+#: image/kis_image.cc:411
 #, fuzzy
 #| msgid "Canvas"
 msgid "Size Canvas"
 msgstr "Манзара"
 
-#: image/kis_image.cc:453
+#: image/kis_image.cc:460
 #, fuzzy
 msgid "Scale Image"
 msgstr "Тасвири Нав"
 
-#: image/kis_image.cc:780
+#: image/kis_image.cc:784
 #, fuzzy
 msgid "Merge with Layer Below"
 msgstr "Якшавии &Ҳама Табақаҳо"
 
-#: image/kis_image.cc:820
+#: image/kis_image.cc:824
 #, fuzzy
 msgid "Flatten Layer"
 msgstr "Дучанда кардани Тасвир"
@@ -9683,7 +9684,7 @@ msgstr "&Хатти"
 msgid "Draw a straight line with the current brush"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_move.h:90
+#: plugins/tools/defaulttools/kis_tool_move.h:93
 #, fuzzy
 msgid "Move a layer"
 msgstr "Нест кардани Табақа"
@@ -9817,76 +9818,76 @@ msgstr "нуқтаҳо"
 msgid "Draw a gradient."
 msgstr "Градиент:"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:339
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:337
 msgid "Repeat:"
 msgstr "Такрор кардан:"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:341
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:339
 #, fuzzy
 msgctxt "the gradient will be drawn with the color order reversed"
 msgid "Reverse"
 msgstr "Санҷидан"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:348
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:346
 #, fuzzy
 msgctxt "the gradient will be drawn linearly"
 msgid "Linear"
 msgstr "&Хатти"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:349
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:347
 #, fuzzy
 msgctxt "the gradient will be drawn bilinearly"
 msgid "Bi-Linear"
 msgstr "&Хатти"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:350
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:348
 #, fuzzy
 msgctxt "the gradient will be drawn radially"
 msgid "Radial"
 msgstr "Ҳақиқии сохтмон"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:351
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:349
 #, fuzzy
 msgctxt "the gradient will be drawn in a square around a centre"
 msgid "Square"
 msgstr "масоҳат"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:352
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:350
 #, fuzzy
 msgctxt "the gradient will be drawn as an assymmetric cone"
 msgid "Conical"
 msgstr "Милҳо"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:353
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:351
 msgctxt "the gradient will be drawn as a symmetric cone"
 msgid "Conical Symmetric"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:358
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:356
 #, fuzzy
 #| msgid "None"
 msgctxt "The gradient will not repeat"
 msgid "None"
 msgstr "Ҳеҷ"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:359
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:357
 #, fuzzy
 msgctxt "The gradient will repeat forwards"
 msgid "Forwards"
 msgstr "Воридоти Тасвир"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:360
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:358
 #, fuzzy
 msgctxt "The gradient will repeat alternatingly"
 msgid "Alternating"
 msgstr "Андозаи чоп"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:368
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:366
 #, fuzzy
 msgid "Anti-alias threshold:"
 msgstr "Остона: "
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:380
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:378
 #, fuzzy
 msgid "Preview opacity:"
 msgstr "Пешнамоиш"
