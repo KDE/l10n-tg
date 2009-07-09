@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kvoctrain\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-01 12:50+0200\n"
+"POT-Creation-Date: 2009-07-09 12:19+0200\n"
 "PO-Revision-Date: 2005-09-23 17:17+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -18,18 +18,41 @@ msgstr ""
 "X-Generator: KBabel 1.10\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: src/scripts/scriptmanager.cpp:122
+#: src/scripts/scriptmanager.cpp:131
+#, kde-format
+msgid "A script could not be activated and has been disabled."
+msgid_plural "%1 scripts could not be activated and have been disabled."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/scripts/scriptmanager.cpp:131
+msgid ""
+"This probably means that there are errors in the script or that the required "
+"packages are not installed."
+msgstr ""
+
+#: src/scripts/scriptmanager.cpp:133
 #, fuzzy
 msgid "Script Activation"
 msgstr "Рех&тан"
 
-#: src/scripts/scriptmanager.cpp:122
-msgid ""
-"The following script could not be activated due to errors in the script:\n"
-msgstr ""
-
 #: src/scripts/scriptdialog.cpp:35
 msgid "Script Dialog"
+msgstr ""
+
+#: src/scripts/script.cpp:54
+msgid "The script file does not exist."
+msgstr ""
+
+#: src/scripts/script.cpp:86
+#, fuzzy, kde-format
+#| msgid "Error in lex file"
+msgid "Error in file %1 at line %2:"
+msgstr "Хато дар файли lex"
+
+#: src/scripts/script.cpp:88
+msgctxt "debug information in error message"
+msgid "Backtrace:"
 msgstr ""
 
 #: src/parleymainwindow.cpp:110 src/export/exportdialog.cpp:107
@@ -7917,9 +7940,6 @@ msgstr ""
 
 #~ msgid "Error in csv file"
 #~ msgstr "Хато дар файли csv"
-
-#~ msgid "Error in lex file"
-#~ msgstr "Хато дар файли lex"
 
 #~ msgid "expected ending tag <%1>"
 #~ msgstr "теги охирин мунтазир мешавадnpr <%1>"
