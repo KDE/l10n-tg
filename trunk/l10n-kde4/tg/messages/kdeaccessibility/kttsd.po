@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kttsd\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-18 13:03+0200\n"
+"POT-Creation-Date: 2009-07-28 06:53+0200\n"
 "PO-Revision-Date: 2005-12-22 15:49+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -134,7 +134,7 @@ msgstr "&Боло"
 #. i18n: ectx: property (text), widget (KPushButton, lowerFilterPriorityButton)
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:291
 #. i18n: ectx: property (text), widget (QPushButton, downButton)
-#: rc.cpp:50 rc.cpp:83 rc.cpp:317
+#: rc.cpp:50 rc.cpp:83 rc.cpp:287
 msgid "Do&wn"
 msgstr "&Поён"
 
@@ -164,7 +164,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (KPushButton, removeFilterButton)
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:333
 #. i18n: ectx: property (text), widget (KPushButton, removeButton)
-#: rc.cpp:62 rc.cpp:95 rc.cpp:329
+#: rc.cpp:62 rc.cpp:95 rc.cpp:299
 #, fuzzy
 msgid "&Remove"
 msgstr "&Нест кардан"
@@ -217,15 +217,55 @@ msgstr ""
 msgid "Jobs"
 msgstr ""
 
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:55
-#. i18n: ectx: property (text), widget (KPushButton, job_stop)
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: rc.cpp:101
-msgid "&Stop"
+msgid "Speech Control"
 msgstr ""
 
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:65
-#. i18n: ectx: property (whatsThis), widget (KPushButton, job_pause)
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:26
+#. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:104
+#, fuzzy
+#| msgid "&Speed:"
+msgid "&Speed"
+msgstr "&Суръат:"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:58
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:107
+msgid "&Pitch"
+msgstr ""
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:90
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:110
+msgid "&Volume"
+msgstr ""
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:127
+#. i18n: ectx: property (text), widget (KPushButton, stopButton)
+#: rc.cpp:113
+msgid "Stop"
+msgstr ""
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:137
+#. i18n: ectx: property (whatsThis), widget (KPushButton, cancelButton)
+#: rc.cpp:116
+msgid ""
+"<p>Deletes the job.  If it is currently speaking, it stops speaking.  The "
+"next speakable job in the list begins speaking.</p>"
+msgstr ""
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:140
+#. i18n: ectx: property (text), widget (KPushButton, cancelButton)
+#: rc.cpp:119
+msgid "Cancel"
+msgstr ""
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:150
+#. i18n: ectx: property (whatsThis), widget (KPushButton, pauseButton)
+#: rc.cpp:122
 msgid ""
 "<p>Changes a job to Paused state.  If currently speaking, the job stops "
 "speaking. Paused jobs prevent jobs that follow them from speaking, so either "
@@ -233,98 +273,29 @@ msgid ""
 "it down in the list.</p>"
 msgstr ""
 
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:68
-#. i18n: ectx: property (text), widget (KPushButton, job_pause)
-#: rc.cpp:107
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:153
+#. i18n: ectx: property (text), widget (KPushButton, pauseButton)
+#: rc.cpp:125
 msgid "Pause"
 msgstr ""
 
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:78
-#. i18n: ectx: property (whatsThis), widget (KPushButton, job_resume)
-#: rc.cpp:110
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:163
+#. i18n: ectx: property (whatsThis), widget (KPushButton, resumeButton)
+#: rc.cpp:128
 msgid ""
 "<p>Resumes a paused job or changes a Queued job to Waiting.  If the job is "
 "the top speakable job in the list, it begins speaking.</p>"
 msgstr ""
 
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:81
-#. i18n: ectx: property (text), widget (KPushButton, job_resume)
-#: rc.cpp:113
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:166
+#. i18n: ectx: property (text), widget (KPushButton, resumeButton)
+#: rc.cpp:131
 msgid "Resume"
 msgstr ""
 
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:91
-#. i18n: ectx: property (whatsThis), widget (KPushButton, job_restart)
-#: rc.cpp:116
-msgid ""
-"<p>Rewinds a job to the beginning and changes its state to Waiting.  If the "
-"job is the top speakable job in the list, it begins speaking.</p>"
-msgstr ""
-
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:94
-#. i18n: ectx: property (text), widget (KPushButton, job_restart)
-#: rc.cpp:119
-#, fuzzy
-#| msgid "&Test"
-msgctxt "Restart a job to the beginning"
-msgid "R&estart"
-msgstr "&Санҷиш"
-
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:104
-#. i18n: ectx: property (whatsThis), widget (KPushButton, job_remove)
-#: rc.cpp:122
-msgid ""
-"<p>Deletes the job.  If it is currently speaking, it stops speaking.  The "
-"next speakable job in the list begins speaking.</p>"
-msgstr ""
-
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:107
-#. i18n: ectx: property (text), widget (KPushButton, job_remove)
-#: rc.cpp:125
-msgid "Re&move"
-msgstr "&Нест кардан"
-
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:117
-#. i18n: ectx: property (whatsThis), widget (KPushButton, job_later)
-#: rc.cpp:128
-msgid ""
-"<p>Moves a job downward in the list so that it will be spoken later.  If the "
-"job is currently speaking, its state changes to Paused.</p>"
-msgstr ""
-
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:120
-#. i18n: ectx: property (text), widget (KPushButton, job_later)
-#: rc.cpp:131
-msgid "&Later"
-msgstr ""
-
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:131
-#. i18n: ectx: property (whatsThis), widget (KPushButton, job_prevsentence)
-#: rc.cpp:134
-msgid "<p>Rewinds a job to the previous sentence.</p>"
-msgstr ""
-
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:134
-#. i18n: ectx: property (text), widget (KPushButton, job_prevsentence)
-#: rc.cpp:137
-msgid "&Previous Sentence"
-msgstr ""
-
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:141
-#. i18n: ectx: property (whatsThis), widget (KPushButton, job_nextsentence)
-#: rc.cpp:140
-msgid "<p>Advances a job to the next sentence.</p>"
-msgstr ""
-
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:144
-#. i18n: ectx: property (text), widget (KPushButton, job_nextsentence)
-#: rc.cpp:143
-msgid "&Next Sentence"
-msgstr ""
-
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:155
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:177
 #. i18n: ectx: property (whatsThis), widget (KPushButton, speak_clipboard)
-#: rc.cpp:146
+#: rc.cpp:134
 msgid ""
 "<p>Queues the current contents of the clipboard for speaking and sets its "
 "state to Waiting.  If the job is the topmost in the list, it begins "
@@ -332,15 +303,15 @@ msgid ""
 "b> tab.</p>"
 msgstr ""
 
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:158
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:180
 #. i18n: ectx: property (text), widget (KPushButton, speak_clipboard)
-#: rc.cpp:149
+#: rc.cpp:137
 msgid "&Speak Clipboard"
 msgstr ""
 
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:165
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:187
 #. i18n: ectx: property (whatsThis), widget (KPushButton, speak_file)
-#: rc.cpp:152
+#: rc.cpp:140
 msgid ""
 "<p>Prompts you for a file name and queues the contents of the file for "
 "speaking.  You must click the <b>Resume</b> button before the job will be "
@@ -348,72 +319,36 @@ msgid ""
 "b> tab.</p>"
 msgstr ""
 
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:168
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:190
 #. i18n: ectx: property (text), widget (KPushButton, speak_file)
-#: rc.cpp:155
+#: rc.cpp:143
 msgid "Spea&k File"
 msgstr ""
 
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:175
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:197
 #. i18n: ectx: property (whatsThis), widget (KPushButton, job_changetalker)
-#: rc.cpp:158
+#: rc.cpp:146
 msgid ""
 "<p>Prompts you with a list of your configured Talkers from the <b>Talkers</"
 "b> tab.  The job will be spoken using the selected Talker.</p>"
 msgstr ""
 
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:178
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:200
 #. i18n: ectx: property (text), widget (KPushButton, job_changetalker)
-#: rc.cpp:161
+#: rc.cpp:149
 msgid "Change Talker"
-msgstr ""
-
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:185
-#. i18n: ectx: property (whatsThis), widget (KPushButton, refresh)
-#: rc.cpp:164
-msgid "<p>Refresh the list of jobs.</p>"
-msgstr ""
-
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:188
-#. i18n: ectx: property (text), widget (KPushButton, refresh)
-#: rc.cpp:167
-msgid "&Refresh"
-msgstr ""
-
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:197
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:170
-msgid "Latest job info:"
-msgstr ""
-
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:209
-#. i18n: ectx: property (whatsThis), widget (KTextEdit, m_currentSentence)
-#: rc.cpp:173
-msgid "<p>The text of the sentence currently speaking.</p>"
-msgstr ""
-
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:225
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:176
-msgid "Message text:"
-msgstr ""
-
-#. i18n: file: kttsjobmgr/kttsjobmgr.ui:232
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:179
-msgid "Filtered text:"
 msgstr ""
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:22
 #. i18n: ectx: property (windowTitle), widget (QWidget, SelectTalkerWidget)
-#: rc.cpp:182 kttsjobmgr/kttsjobmgr.cpp:285 libkttsd/selecttalkerdlg.h:59
+#: rc.cpp:152 kttsjobmgr/kttsjobmgr.cpp:215 libkttsd/selecttalkerdlg.h:59
 #: filters/talkerchooser/talkerchooserconf.cpp:220
 msgid "Select Talker"
 msgstr ""
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:66
 #. i18n: ectx: property (text), widget (QLabel, languageLabelLabel)
-#: rc.cpp:185
+#: rc.cpp:155
 msgid "&Language:"
 msgstr "&Забон:"
 
@@ -427,43 +362,43 @@ msgstr "&Забон:"
 #. i18n: ectx: property (text), widget (KPushButton, reEditorButton)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:206
 #. i18n: ectx: property (text), widget (KPushButton, talkerButton)
-#: rc.cpp:188 rc.cpp:239 rc.cpp:278 rc.cpp:380 rc.cpp:398
+#: rc.cpp:158 rc.cpp:209 rc.cpp:248 rc.cpp:350 rc.cpp:368
 msgid "..."
 msgstr "..."
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:141
 #. i18n: ectx: property (text), widget (QLabel, preferredLabel)
-#: rc.cpp:191
+#: rc.cpp:161
 msgid "Checked items are preferred over unchecked items."
 msgstr ""
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:156
 #. i18n: ectx: property (text), widget (QLabel, synthLabel)
-#: rc.cpp:194
+#: rc.cpp:164
 msgid "&Synthesizer:"
 msgstr ""
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:212
 #. i18n: ectx: property (text), widget (QLabel, rateLabel)
-#: rc.cpp:197
+#: rc.cpp:167
 msgid "&Rate:"
 msgstr ""
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:265
 #. i18n: ectx: property (text), widget (QLabel, genderLabel)
-#: rc.cpp:200
+#: rc.cpp:170
 msgid "&Gender:"
 msgstr ""
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:334
 #. i18n: ectx: property (text), widget (QLabel, volumeLabel)
-#: rc.cpp:203
+#: rc.cpp:173
 msgid "&Volume:"
 msgstr ""
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:427
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, useClosestMatchRadioButton)
-#: rc.cpp:206
+#: rc.cpp:176
 msgid ""
 "When checked, will use a configured Talker most closely matching the "
 "attributes you choose.  Attributes with checks next to them will be "
@@ -472,13 +407,13 @@ msgstr ""
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:430
 #. i18n: ectx: property (text), widget (QRadioButton, useClosestMatchRadioButton)
-#: rc.cpp:209
+#: rc.cpp:179
 msgid "Use closest &matching Talker having"
 msgstr ""
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:437
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, useDefaultRadioButton)
-#: rc.cpp:212
+#: rc.cpp:182
 msgid ""
 "When checked, will use the default Talker, which is the topmost Talker "
 "listed in the Talkers tab."
@@ -486,13 +421,13 @@ msgstr ""
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:440
 #. i18n: ectx: property (text), widget (QRadioButton, useDefaultRadioButton)
-#: rc.cpp:215
+#: rc.cpp:185
 msgid "&Use default Talker"
 msgstr ""
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:447
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, useSpecificTalkerRadioButton)
-#: rc.cpp:218
+#: rc.cpp:188
 msgid ""
 "When checked, will use the specific Talker (if it is still configured), "
 "otherwise the Talker most closely matching."
@@ -500,49 +435,49 @@ msgstr ""
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:450
 #. i18n: ectx: property (text), widget (QRadioButton, useSpecificTalkerRadioButton)
-#: rc.cpp:221
+#: rc.cpp:191
 msgid "Use specific &Talker"
 msgstr ""
 
 #. i18n: file: filters/stringreplacer/editreplacementwidget.ui:23
 #. i18n: ectx: property (title), widget (QGroupBox, typeGroupBox)
-#: rc.cpp:224
+#: rc.cpp:194
 msgid "&Type"
 msgstr ""
 
 #. i18n: file: filters/stringreplacer/editreplacementwidget.ui:35
 #. i18n: ectx: property (text), widget (QRadioButton, wordRadioButton)
-#: rc.cpp:227
+#: rc.cpp:197
 msgid "&Word"
 msgstr "&Калима"
 
 #. i18n: file: filters/stringreplacer/editreplacementwidget.ui:45
 #. i18n: ectx: property (text), widget (QRadioButton, regexpRadioButton)
-#: rc.cpp:230
+#: rc.cpp:200
 msgid "Regular &expression"
 msgstr ""
 
 #. i18n: file: filters/stringreplacer/editreplacementwidget.ui:63
 #. i18n: ectx: property (text), widget (QLabel, matchLabel)
-#: rc.cpp:233
+#: rc.cpp:203
 msgid "&Match:"
 msgstr ""
 
 #. i18n: file: filters/stringreplacer/editreplacementwidget.ui:76
 #. i18n: ectx: property (text), widget (QLabel, substLabel)
-#: rc.cpp:236
+#: rc.cpp:206
 msgid "&Replace with:"
 msgstr ""
 
 #. i18n: file: filters/stringreplacer/editreplacementwidget.ui:133
 #. i18n: ectx: property (text), widget (QCheckBox, matchCaseCheckBox)
-#: rc.cpp:242
+#: rc.cpp:212
 msgid "Match &case"
 msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:15
 #. i18n: ectx: property (windowTitle), widget (QWidget, StringReplacerConfWidget)
-#: rc.cpp:245
+#: rc.cpp:215
 msgid "Configure String Replacer"
 msgstr ""
 
@@ -550,7 +485,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QLabel, nameLabel)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:35
 #. i18n: ectx: property (whatsThis), widget (QLabel, nameLabel)
-#: rc.cpp:248 rc.cpp:347
+#: rc.cpp:218 rc.cpp:317
 msgctxt "What's this text"
 msgid "Enter any name you like for this filter."
 msgstr ""
@@ -561,7 +496,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:92
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: rc.cpp:251 rc.cpp:350 rc.cpp:434
+#: rc.cpp:221 rc.cpp:320 rc.cpp:404
 msgid "&Name:"
 msgstr "&Ном:"
 
@@ -569,7 +504,7 @@ msgstr "&Ном:"
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, nameLineEdit)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:51
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, nameLineEdit)
-#: rc.cpp:254 rc.cpp:353
+#: rc.cpp:224 rc.cpp:323
 msgid "Enter any name you like for this filter."
 msgstr ""
 
@@ -579,13 +514,13 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, applyGroupBox)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:139
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, applyGroupBox)
-#: rc.cpp:257 rc.cpp:356 rc.cpp:449
+#: rc.cpp:227 rc.cpp:326 rc.cpp:419
 msgid "These settings determines when the filter is applied to text."
 msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:80
 #. i18n: ectx: property (whatsThis), widget (QLabel, languageLabel)
-#: rc.cpp:260
+#: rc.cpp:230
 msgctxt "What's this text"
 msgid ""
 "This filter is applied to text jobs of the specified language.  You may "
@@ -596,7 +531,7 @@ msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:83
 #. i18n: ectx: property (text), widget (QLabel, languageLabel)
-#: rc.cpp:263
+#: rc.cpp:233
 msgid "Lan&guage is:"
 msgstr "&Забон:"
 
@@ -604,7 +539,7 @@ msgstr "&Забон:"
 #. i18n: ectx: property (whatsThis), widget (QLabel, appIdLabel)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:99
 #. i18n: ectx: property (whatsThis), widget (QLabel, appIdLabel)
-#: rc.cpp:266 rc.cpp:368
+#: rc.cpp:236 rc.cpp:338
 msgid ""
 "Enter a D-Bus Application ID.  This filter will only apply to text jobs "
 "queued by that application.  You may enter more than one ID separated by "
@@ -617,13 +552,13 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, appIdLabel)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:102
 #. i18n: ectx: property (text), widget (QLabel, appIdLabel)
-#: rc.cpp:269 rc.cpp:371
+#: rc.cpp:239 rc.cpp:341
 msgid "Application &ID contains:"
 msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:133
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, languageLineEdit)
-#: rc.cpp:272
+#: rc.cpp:242
 msgid ""
 "This filter is applied to text jobs of the specified language.  You may "
 "select more than one language by clicking the browse button and Ctrl-"
@@ -635,7 +570,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KPushButton, languageBrowseButton)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:140
 #. i18n: ectx: property (whatsThis), widget (KPushButton, reEditorButton)
-#: rc.cpp:275 rc.cpp:377
+#: rc.cpp:245 rc.cpp:347
 msgid ""
 "Click to select one or more languages.  This filter will be applied to text "
 "jobs of those languages."
@@ -645,7 +580,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, appIdLineEdit)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:152
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, appIdLineEdit)
-#: rc.cpp:281 rc.cpp:383
+#: rc.cpp:251 rc.cpp:353
 msgid ""
 "<qt>Enter a D-Bus Application ID.  This filter will only apply to text jobs "
 "queued by that application.  You may enter more than one ID separated by "
@@ -658,13 +593,13 @@ msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:180
 #. i18n: ectx: property (whatsThis), widget (KPushButton, loadButton)
-#: rc.cpp:284
+#: rc.cpp:254
 msgid "Click to load a word list from a file."
 msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:183
 #. i18n: ectx: property (text), widget (KPushButton, loadButton)
-#: rc.cpp:287
+#: rc.cpp:257
 #, fuzzy
 msgctxt "Load a word list from a file"
 msgid "Load"
@@ -672,26 +607,26 @@ msgstr "Бор кардан..."
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:198
 #. i18n: ectx: property (whatsThis), widget (KPushButton, saveButton)
-#: rc.cpp:290
+#: rc.cpp:260
 msgid "Click to save word list to a file."
 msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:201
 #. i18n: ectx: property (text), widget (KPushButton, saveButton)
-#: rc.cpp:293
+#: rc.cpp:263
 #, fuzzy
 msgid "&Save"
 msgstr "&Нигоҳ доштан..."
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:216
 #. i18n: ectx: property (whatsThis), widget (KPushButton, clearButton)
-#: rc.cpp:296
+#: rc.cpp:266
 msgid "Click to empty the word list."
 msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:219
 #. i18n: ectx: property (text), widget (KPushButton, clearButton)
-#: rc.cpp:299
+#: rc.cpp:269
 #, fuzzy
 msgctxt "Clear the word list"
 msgid "Clear"
@@ -699,20 +634,20 @@ msgstr "&Тоза кардан"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:252
 #. i18n: ectx: property (whatsThis), widget (KPushButton, addButton)
-#: rc.cpp:302
+#: rc.cpp:272
 msgid "Click to add another word or regular expression to the list."
 msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:255
 #. i18n: ectx: property (text), widget (KPushButton, addButton)
-#: rc.cpp:305
+#: rc.cpp:275
 #, fuzzy
 msgid "&Add"
 msgstr "&Илова кардан..."
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:270
 #. i18n: ectx: property (whatsThis), widget (QPushButton, upButton)
-#: rc.cpp:308
+#: rc.cpp:278
 msgid ""
 "Click to move selected word up in the list.  Words higher in the list are "
 "applied first."
@@ -720,13 +655,13 @@ msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:273
 #. i18n: ectx: property (text), widget (QPushButton, upButton)
-#: rc.cpp:311
+#: rc.cpp:281
 msgid "&Up"
 msgstr "&Боло"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:288
 #. i18n: ectx: property (whatsThis), widget (QPushButton, downButton)
-#: rc.cpp:314
+#: rc.cpp:284
 msgid ""
 "Click to move a word down in the list.  Words lower in the list are applied "
 "last."
@@ -734,61 +669,61 @@ msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:309
 #. i18n: ectx: property (whatsThis), widget (KPushButton, editButton)
-#: rc.cpp:320
+#: rc.cpp:290
 msgid "Click to modify an existing word or regular expression in the list."
 msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:312
 #. i18n: ectx: property (text), widget (KPushButton, editButton)
-#: rc.cpp:323
+#: rc.cpp:293
 msgid "&Edit"
 msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:330
 #. i18n: ectx: property (whatsThis), widget (KPushButton, removeButton)
-#: rc.cpp:326
+#: rc.cpp:296
 msgid "Click to remove a word or regular expression from the list."
 msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:371
 #. i18n: ectx: property (text), widget (QTableWidget, substLView)
-#: rc.cpp:332
+#: rc.cpp:302
 msgid "Type"
 msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:376
 #. i18n: ectx: property (text), widget (QTableWidget, substLView)
-#: rc.cpp:335
+#: rc.cpp:305
 msgid "Match Case"
 msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:381
 #. i18n: ectx: property (text), widget (QTableWidget, substLView)
-#: rc.cpp:338
+#: rc.cpp:308
 msgid "Match"
 msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:386
 #. i18n: ectx: property (text), widget (QTableWidget, substLView)
-#: rc.cpp:341
+#: rc.cpp:311
 msgid "Replace With"
 msgstr ""
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:15
 #. i18n: ectx: property (windowTitle), widget (QWidget, TalkerChooserConfWidget)
-#: rc.cpp:344
+#: rc.cpp:314
 msgid "Configure Talker Chooser"
 msgstr ""
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:63
 #. i18n: ectx: property (title), widget (QGroupBox, applyGroupBox)
-#: rc.cpp:359
+#: rc.cpp:329
 msgid "&Apply This Filter When"
 msgstr ""
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:83
 #. i18n: ectx: property (whatsThis), widget (QLabel, reLabel)
-#: rc.cpp:362
+#: rc.cpp:332
 msgctxt "What's this text"
 msgid ""
 "This filter is applied to text jobs of the specified language.  You may "
@@ -799,13 +734,13 @@ msgstr ""
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:86
 #. i18n: ectx: property (text), widget (QLabel, reLabel)
-#: rc.cpp:365
+#: rc.cpp:335
 msgid "Te&xt contains:"
 msgstr ""
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:133
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, reLineEdit)
-#: rc.cpp:374
+#: rc.cpp:344
 msgid ""
 "This filter is applied to text jobs of the specified language.  You may "
 "select more than one language by clicking the browse button and Ctrl-"
@@ -817,7 +752,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QLabel, talkerLabel)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:196
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, talkerLineEdit)
-#: rc.cpp:386 rc.cpp:392
+#: rc.cpp:356 rc.cpp:362
 msgid ""
 "The new Talker that will be used when the conditions above are met.  The "
 "default Talker is the topmost in the Talkers tab.  Click the button to "
@@ -826,61 +761,61 @@ msgstr ""
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:183
 #. i18n: ectx: property (text), widget (QLabel, talkerLabel)
-#: rc.cpp:389
+#: rc.cpp:359
 msgid "&Talker:"
 msgstr ""
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:203
 #. i18n: ectx: property (whatsThis), widget (KPushButton, talkerButton)
-#: rc.cpp:395
+#: rc.cpp:365
 msgid "Click to select a Talker."
 msgstr ""
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:231
 #. i18n: ectx: property (whatsThis), widget (KPushButton, loadButton)
-#: rc.cpp:401
+#: rc.cpp:371
 msgid "Click to load a Talker Chooser configuration from a file."
 msgstr ""
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:234
 #. i18n: ectx: property (text), widget (KPushButton, loadButton)
-#: rc.cpp:404
+#: rc.cpp:374
 msgid "&Load..."
 msgstr "&Бор кардан..."
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:249
 #. i18n: ectx: property (whatsThis), widget (KPushButton, saveButton)
-#: rc.cpp:407
+#: rc.cpp:377
 msgid "Click to save this Talker Chooser to a file."
 msgstr ""
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:252
 #. i18n: ectx: property (text), widget (KPushButton, saveButton)
-#: rc.cpp:410
+#: rc.cpp:380
 msgid "&Save..."
 msgstr "&Нигоҳ доштан..."
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:267
 #. i18n: ectx: property (whatsThis), widget (KPushButton, clearButton)
-#: rc.cpp:413
+#: rc.cpp:383
 msgid "Click to clear everything."
 msgstr ""
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:270
 #. i18n: ectx: property (text), widget (KPushButton, clearButton)
-#: rc.cpp:416
+#: rc.cpp:386
 msgid "Cl&ear"
 msgstr "&Тоза кардан"
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, XmlTransformerConfWidget)
-#: rc.cpp:419
+#: rc.cpp:389
 msgid "Configure XML Transformer"
 msgstr ""
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:42
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, nameLineEdit)
-#: rc.cpp:422
+#: rc.cpp:392
 msgid "Enter any descriptive name you like for this filter."
 msgstr ""
 
@@ -888,7 +823,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, xsltPath)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:105
 #. i18n: ectx: property (whatsThis), widget (QLabel, xsltLabel)
-#: rc.cpp:425 rc.cpp:437
+#: rc.cpp:395 rc.cpp:407
 msgid ""
 "Enter the full path to an XML Style Language - Transforms (XSLT) stylesheet "
 "file.  XSLT files usually end with extension .xsl."
@@ -898,7 +833,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, xsltprocPath)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:121
 #. i18n: ectx: property (whatsThis), widget (QLabel, xsltprocLabel)
-#: rc.cpp:428 rc.cpp:443
+#: rc.cpp:398 rc.cpp:413
 msgid ""
 "Enter the path to the xsltproc executable program.  If it is in the PATH "
 "environment variable, just enter \"xsltproc\"."
@@ -906,32 +841,32 @@ msgstr ""
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:89
 #. i18n: ectx: property (whatsThis), widget (QLabel, nameLabel)
-#: rc.cpp:431
+#: rc.cpp:401
 msgctxt "What's this text"
 msgid "Enter any descriptive name you like for this filter."
 msgstr ""
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:108
 #. i18n: ectx: property (text), widget (QLabel, xsltLabel)
-#: rc.cpp:440
+#: rc.cpp:410
 msgid "&XSLT file:"
 msgstr "&Файли XSLT:"
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, xsltprocLabel)
-#: rc.cpp:446
+#: rc.cpp:416
 msgid "xsltproc &executable:"
 msgstr ""
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:142
 #. i18n: ectx: property (title), widget (QGroupBox, applyGroupBox)
-#: rc.cpp:452
+#: rc.cpp:422
 msgid "Apply This &Filter When"
 msgstr ""
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:170
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, rootElementLineEdit)
-#: rc.cpp:455
+#: rc.cpp:425
 msgid ""
 "This filter will be applied only to text having the specified XML root "
 "element.  If blank, applies to all text.  You may enter more than one root "
@@ -942,7 +877,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, doctypeLineEdit)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:233
 #. i18n: ectx: property (whatsThis), widget (QLabel, doctypeLabel)
-#: rc.cpp:458 rc.cpp:470
+#: rc.cpp:428 rc.cpp:440
 msgid ""
 "This filter will be applied only to text having the specified DOCTYPE "
 "specification.  If blank, applies to all text.  You may enter more than one "
@@ -953,7 +888,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, appIdLineEdit)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:249
 #. i18n: ectx: property (whatsThis), widget (QLabel, appIdLabel)
-#: rc.cpp:461 rc.cpp:476
+#: rc.cpp:431 rc.cpp:446
 msgid ""
 "<qt>Enter a D-Bus Application ID.  This filter will only apply to text "
 "queued by that application.  You may enter more than one ID separated by "
@@ -966,7 +901,7 @@ msgstr ""
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:217
 #. i18n: ectx: property (whatsThis), widget (QLabel, rootElementLabel)
-#: rc.cpp:464
+#: rc.cpp:434
 msgctxt "What's this text"
 msgid ""
 "This filter will be applied only to text having the specified XML root "
@@ -976,19 +911,19 @@ msgstr ""
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:220
 #. i18n: ectx: property (text), widget (QLabel, rootElementLabel)
-#: rc.cpp:467
+#: rc.cpp:437
 msgid "&Root element is:"
 msgstr ""
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:236
 #. i18n: ectx: property (text), widget (QLabel, doctypeLabel)
-#: rc.cpp:473
+#: rc.cpp:443
 msgid "or DOC&TYPE is:"
 msgstr ""
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:252
 #. i18n: ectx: property (text), widget (QLabel, appIdLabel)
-#: rc.cpp:479
+#: rc.cpp:449
 msgid "and Application &ID contains:"
 msgstr ""
 
@@ -1124,7 +1059,7 @@ msgstr ""
 msgid "Filter Configuration"
 msgstr "Танзимоти филтр"
 
-#: kttsd/kspeech.cpp:360 kttsmgr/kttsmgr.cpp:339
+#: kttsd/kspeech.cpp:397 kttsmgr/kttsmgr.cpp:339
 msgid "KDE Text-to-Speech"
 msgstr ""
 
@@ -1523,6 +1458,15 @@ msgid "XML Transformer"
 msgstr ""
 
 #, fuzzy
+#~| msgid "&Test"
+#~ msgctxt "Restart a job to the beginning"
+#~ msgid "R&estart"
+#~ msgstr "&Санҷиш"
+
+#~ msgid "Re&move"
+#~ msgstr "&Нест кардан"
+
+#, fuzzy
 #~ msgid "Remove &All"
 #~ msgstr "&Нест кардан"
 
@@ -1542,9 +1486,6 @@ msgstr ""
 
 #~ msgid "ALSA"
 #~ msgstr "ALSA"
-
-#~ msgid "&Speed:"
-#~ msgstr "&Суръат:"
 
 #~ msgid " %"
 #~ msgstr " %"
