@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-04 07:12+0200\n"
+"POT-Creation-Date: 2009-09-05 07:10+0200\n"
 "PO-Revision-Date: 2009-01-20 18:25+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -374,10 +374,6 @@ msgstr ""
 msgid "Could not save playlist."
 msgstr ""
 
-#: collection/mediadevicecollection/CollectionCapabilityMediaDevice.cpp:39
-msgid "&Disconnect Device"
-msgstr ""
-
 #: collection/mediadevicecollection/handler/MediaDeviceHandler.cpp:301
 msgid "Copying Tracks Failed"
 msgstr ""
@@ -457,6 +453,10 @@ msgstr ""
 msgid "Media Device playlists"
 msgstr "&Рӯйхати мусиқӣ"
 
+#: collection/mediadevicecollection/MediaDeviceCollection.cpp:291
+msgid "&Disconnect Device"
+msgstr ""
+
 #: collection/nepomukcollection/NepomukCollection.cpp:129
 msgid "Nepomuk Collection"
 msgstr ""
@@ -471,17 +471,17 @@ msgstr ""
 msgid "Imported Playlist Files"
 msgstr "&Рӯйхати мусиқӣ"
 
-#: collection/sqlcollection/ScanResultProcessor.cpp:142
+#: collection/sqlcollection/ScanResultProcessor.cpp:139
 msgctxt "front"
 msgid "Front cover of an album"
 msgstr ""
 
-#: collection/sqlcollection/ScanResultProcessor.cpp:154
+#: collection/sqlcollection/ScanResultProcessor.cpp:151
 msgctxt "cover"
 msgid "(Front) Cover of an album"
 msgstr ""
 
-#: collection/sqlcollection/ScanResultProcessor.cpp:166
+#: collection/sqlcollection/ScanResultProcessor.cpp:163
 msgctxt "large"
 msgid "(Large front) Cover of an album"
 msgstr ""
@@ -518,7 +518,7 @@ msgstr ""
 
 #: collection/sqlcollection/ScanManager.cpp:678
 #: dialogs/OrganizeCollectionDialog.cpp:143
-#: browsers/CollectionTreeItem.cpp:163 covermanager/CoverViewDialog.h:45
+#: browsers/CollectionTreeItem.cpp:192 covermanager/CoverViewDialog.h:45
 #: covermanager/CoverManager.cpp:784
 msgid "Various Artists"
 msgstr ""
@@ -548,10 +548,10 @@ msgstr ""
 msgid "&Eject"
 msgstr ""
 
-#: collection/audiocd/AudioCdCollection.cpp:385
-#: collection/audiocd/AudioCdCollection.cpp:386
-#: collection/audiocd/AudioCdCollection.cpp:387
-#: collection/audiocd/AudioCdCollection.cpp:388
+#: collection/audiocd/AudioCdCollection.cpp:391
+#: collection/audiocd/AudioCdCollection.cpp:392
+#: collection/audiocd/AudioCdCollection.cpp:393
+#: collection/audiocd/AudioCdCollection.cpp:394
 #: context/applets/albums/AlbumItem.cpp:72 MainWindow.cpp:1011
 #: amarokurls/BookmarkTreeView.cpp:328 amarokurls/BookmarkTreeView.cpp:329
 #: amarokurls/BookmarkTreeView.cpp:330
@@ -972,7 +972,7 @@ msgid "Favorite tracks"
 msgstr "роҳчаҳо"
 
 #: context/applets/albums/AlbumsView.cpp:110 Systray.cpp:241
-#: browsers/CollectionTreeView.cpp:817
+#: browsers/CollectionTreeView.cpp:818
 #: browsers/filebrowser/MyDirOperator.cpp:270
 #: browsers/playlistbrowser/UserPlaylistModel.cpp:537
 #: browsers/playlistbrowser/PodcastModel.cpp:688
@@ -983,7 +983,7 @@ msgid "&Add to Playlist"
 msgstr "&Рӯйхати мусиқӣ"
 
 #: context/applets/albums/AlbumsView.cpp:111
-#: browsers/CollectionTreeView.cpp:826
+#: browsers/CollectionTreeView.cpp:827
 #: browsers/filebrowser/MyDirOperator.cpp:271
 #: browsers/playlistbrowser/UserPlaylistModel.cpp:544
 #: browsers/playlistbrowser/PodcastModel.cpp:700
@@ -1110,13 +1110,13 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
 #: context/applets/wikipedia/WikipediaApplet.cpp:121
 #: dialogs/FilenameLayoutDialog.cpp:125 dialogs/FilenameLayoutDialog.cpp:340
-#: dialogs/transferdialog.cpp:88 browsers/CollectionTreeItemModelBase.cpp:760
-#: browsers/collectionbrowser/CollectionWidget.cpp:121
-#: browsers/collectionbrowser/CollectionWidget.cpp:150
-#: browsers/collectionbrowser/CollectionWidget.cpp:182
+#: dialogs/transferdialog.cpp:88 browsers/CollectionTreeItemModelBase.cpp:920
+#: browsers/collectionbrowser/CollectionWidget.cpp:122
+#: browsers/collectionbrowser/CollectionWidget.cpp:151
+#: browsers/collectionbrowser/CollectionWidget.cpp:183
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:243 rc.cpp:1145
-#: services/lastfm/LastFmService.cpp:539
-#: services/magnatune/MagnatuneStore.cpp:203
+#: services/lastfm/LastFmService.cpp:541
+#: services/magnatune/MagnatuneStore.cpp:205
 #: services/jamendo/JamendoInfoParser.cpp:51 playlist/PlaylistHeader.cpp:40
 #: playlist/PlaylistModel.cpp:649 widgets/SmartPlaylistEditor.cpp:183
 #: widgets/SmartPlaylistEditor.cpp:197
@@ -1127,12 +1127,12 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
 #: context/applets/wikipedia/WikipediaApplet.cpp:128
 #: dialogs/FilenameLayoutDialog.cpp:128 dialogs/FilenameLayoutDialog.cpp:355
-#: dialogs/transferdialog.cpp:89 browsers/CollectionTreeItemModelBase.cpp:759
-#: browsers/collectionbrowser/CollectionWidget.cpp:124
-#: browsers/collectionbrowser/CollectionWidget.cpp:153
-#: browsers/collectionbrowser/CollectionWidget.cpp:185
+#: dialogs/transferdialog.cpp:89 browsers/CollectionTreeItemModelBase.cpp:919
+#: browsers/collectionbrowser/CollectionWidget.cpp:125
+#: browsers/collectionbrowser/CollectionWidget.cpp:154
+#: browsers/collectionbrowser/CollectionWidget.cpp:186
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:245 rc.cpp:1142
-#: services/magnatune/MagnatuneStore.cpp:209
+#: services/magnatune/MagnatuneStore.cpp:211
 #: services/jamendo/JamendoInfoParser.cpp:83 playlist/PlaylistHeader.cpp:40
 #: playlist/PlaylistModel.cpp:653 widgets/SmartPlaylistEditor.cpp:183
 #: widgets/SmartPlaylistEditor.cpp:197
@@ -1292,7 +1292,7 @@ msgstr ""
 msgid "&Repeat"
 msgstr ""
 
-#: ActionClasses.cpp:364 ActionClasses.cpp:378 ActionClasses.cpp:414
+#: ActionClasses.cpp:364 ActionClasses.cpp:378 ActionClasses.cpp:421
 msgctxt "State, as in, disabled"
 msgid "&Off"
 msgstr ""
@@ -1318,41 +1318,41 @@ msgstr ""
 msgid "&Equalizer"
 msgstr ""
 
-#: ActionClasses.cpp:409
+#: ActionClasses.cpp:416
 msgid "Your current setup does not support the equalizer feature"
 msgstr ""
 
-#: ActionClasses.cpp:465
+#: ActionClasses.cpp:472
 msgid "Burn"
 msgstr ""
 
-#: ActionClasses.cpp:504 playlistmanager/PlaylistManager.cpp:227
+#: ActionClasses.cpp:511 playlistmanager/PlaylistManager.cpp:227
 #: playlistmanager/PlaylistManager.cpp:246
 #: playlistmanager/PlaylistManager.cpp:265
 msgid "Current Playlist"
 msgstr ""
 
-#: ActionClasses.cpp:505
+#: ActionClasses.cpp:512
 msgid "Selected Tracks"
 msgstr ""
 
-#: ActionClasses.cpp:537
+#: ActionClasses.cpp:544
 msgid "Stop"
 msgstr ""
 
-#: ActionClasses.cpp:572
+#: ActionClasses.cpp:579
 #, fuzzy
 #| msgid "soundtrack"
 msgid "Stop after current Track"
 msgstr "суруд"
 
-#: ActionClasses.cpp:587
+#: ActionClasses.cpp:594
 #, fuzzy
 #| msgid "soundtrack"
 msgid "Stop after current track: On"
 msgstr "суруд"
 
-#: ActionClasses.cpp:592
+#: ActionClasses.cpp:599
 #, fuzzy
 #| msgid "soundtrack"
 msgid "Stop after current track: Off"
@@ -1429,8 +1429,10 @@ msgid "Off"
 msgstr ""
 
 #: configdialog/dialogs/PlaybackConfig.cpp:250
-msgid "Can't delete this preset"
-msgstr ""
+#, fuzzy
+#| msgid "tracks"
+msgid "Can not delete this preset"
+msgstr "роҳчаҳо"
 
 #: configdialog/dialogs/PlaybackConfig.cpp:251
 msgid "Default presets can not be deleted"
@@ -1705,10 +1707,10 @@ msgstr ""
 #. i18n: file: dialogs/EditFilterDialog.ui:90
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
 #: dialogs/FilenameLayoutDialog.cpp:126 dialogs/FilenameLayoutDialog.cpp:345
-#: browsers/CollectionTreeItemModelBase.cpp:761
-#: browsers/collectionbrowser/CollectionWidget.cpp:130
-#: browsers/collectionbrowser/CollectionWidget.cpp:159
-#: browsers/collectionbrowser/CollectionWidget.cpp:191
+#: browsers/CollectionTreeItemModelBase.cpp:921
+#: browsers/collectionbrowser/CollectionWidget.cpp:131
+#: browsers/collectionbrowser/CollectionWidget.cpp:160
+#: browsers/collectionbrowser/CollectionWidget.cpp:192
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:244 rc.cpp:1148
 #: playlist/PlaylistModel.cpp:651 widgets/SmartPlaylistEditor.cpp:183
 #: widgets/SmartPlaylistEditor.cpp:197
@@ -1718,7 +1720,7 @@ msgstr ""
 #. i18n: file: dialogs/EditFilterDialog.ui:120
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
 #: dialogs/FilenameLayoutDialog.cpp:127 dialogs/FilenameLayoutDialog.cpp:350
-#: browsers/CollectionTreeItemModelBase.cpp:763
+#: browsers/CollectionTreeItemModelBase.cpp:923
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:248
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:691 rc.cpp:1166
 #: playlist/PlaylistModel.cpp:652 widgets/SmartPlaylistEditor.cpp:184
@@ -1735,10 +1737,10 @@ msgstr ""
 #. i18n: file: dialogs/EditFilterDialog.ui:95
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
 #: dialogs/FilenameLayoutDialog.cpp:130 dialogs/FilenameLayoutDialog.cpp:365
-#: dialogs/transferdialog.cpp:90 browsers/CollectionTreeItemModelBase.cpp:762
-#: browsers/collectionbrowser/CollectionWidget.cpp:127
-#: browsers/collectionbrowser/CollectionWidget.cpp:156
-#: browsers/collectionbrowser/CollectionWidget.cpp:188
+#: dialogs/transferdialog.cpp:90 browsers/CollectionTreeItemModelBase.cpp:922
+#: browsers/collectionbrowser/CollectionWidget.cpp:128
+#: browsers/collectionbrowser/CollectionWidget.cpp:157
+#: browsers/collectionbrowser/CollectionWidget.cpp:189
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:247 rc.cpp:1151
 #: playlist/ProgressiveSearchWidget.cpp:96 playlist/PlaylistModel.cpp:657
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
@@ -2150,8 +2152,8 @@ msgid "Select third grouping:\n"
 msgstr ""
 
 #: dialogs/transferdialog.cpp:87
-#: browsers/collectionbrowser/CollectionWidget.cpp:147
-#: browsers/collectionbrowser/CollectionWidget.cpp:179
+#: browsers/collectionbrowser/CollectionWidget.cpp:148
+#: browsers/collectionbrowser/CollectionWidget.cpp:180
 msgid "None"
 msgstr ""
 
@@ -3298,25 +3300,25 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: browsers/CollectionTreeView.cpp:246
+#: browsers/CollectionTreeView.cpp:247
 #: browsers/filebrowser/MyDirOperator.cpp:113
 msgid "Copy to Collection"
 msgstr ""
 
-#: browsers/CollectionTreeView.cpp:257
+#: browsers/CollectionTreeView.cpp:258
 #: browsers/filebrowser/MyDirOperator.cpp:104
 msgid "Move to Collection"
 msgstr ""
 
-#: browsers/CollectionTreeView.cpp:511 services/lastfm/LastFmTreeView.cpp:202
+#: browsers/CollectionTreeView.cpp:512 services/lastfm/LastFmTreeView.cpp:202
 msgid "More..."
 msgstr ""
 
-#: browsers/CollectionTreeView.cpp:845
+#: browsers/CollectionTreeView.cpp:846
 msgid "&Edit Track Details"
 msgstr ""
 
-#: browsers/CollectionTreeView.cpp:881
+#: browsers/CollectionTreeView.cpp:882
 msgctxt "Organize Files"
 msgid "Organize Files"
 msgstr ""
@@ -3337,145 +3339,145 @@ msgstr ""
 msgid "Previous Browser"
 msgstr "&Пешина"
 
-#: browsers/CollectionTreeItemModelBase.cpp:524
+#: browsers/CollectionTreeItemModelBase.cpp:554
 msgid "album"
 msgstr ""
 
-#: browsers/CollectionTreeItemModelBase.cpp:529
+#: browsers/CollectionTreeItemModelBase.cpp:559
 msgid "artist"
 msgstr ""
 
-#: browsers/CollectionTreeItemModelBase.cpp:534
+#: browsers/CollectionTreeItemModelBase.cpp:564
 msgid "genre"
 msgstr ""
 
-#: browsers/CollectionTreeItemModelBase.cpp:539
+#: browsers/CollectionTreeItemModelBase.cpp:569
 msgid "composer"
 msgstr ""
 
-#: browsers/CollectionTreeItemModelBase.cpp:544
+#: browsers/CollectionTreeItemModelBase.cpp:574
 msgid "year"
 msgstr "сол"
 
-#: browsers/CollectionTreeItemModelBase.cpp:549
+#: browsers/CollectionTreeItemModelBase.cpp:579
 msgid "comment"
 msgstr ""
 
-#: browsers/CollectionTreeItemModelBase.cpp:553
+#: browsers/CollectionTreeItemModelBase.cpp:583
 msgid "rating"
 msgstr ""
 
-#: browsers/CollectionTreeItemModelBase.cpp:557
+#: browsers/CollectionTreeItemModelBase.cpp:587
 msgid "score"
 msgstr ""
 
-#: browsers/CollectionTreeItemModelBase.cpp:561
+#: browsers/CollectionTreeItemModelBase.cpp:591
 msgid "playcount"
 msgstr ""
 
-#: browsers/CollectionTreeItemModelBase.cpp:565
+#: browsers/CollectionTreeItemModelBase.cpp:595
 msgid "length"
 msgstr ""
 
-#: browsers/CollectionTreeItemModelBase.cpp:569
+#: browsers/CollectionTreeItemModelBase.cpp:599
 msgid "discnumber"
 msgstr ""
 
-#: browsers/CollectionTreeItemModelBase.cpp:573
+#: browsers/CollectionTreeItemModelBase.cpp:603
 msgid "tracknumber"
 msgstr "рақами роҳча"
 
-#: browsers/CollectionTreeItemModelBase.cpp:577
+#: browsers/CollectionTreeItemModelBase.cpp:607
 msgid "added"
 msgstr ""
 
-#: browsers/CollectionTreeItemModelBase.cpp:583
+#: browsers/CollectionTreeItemModelBase.cpp:613
 msgid "today"
 msgstr ""
 
-#: browsers/CollectionTreeItemModelBase.cpp:585
+#: browsers/CollectionTreeItemModelBase.cpp:615
 msgid "last week"
 msgstr ""
 
-#: browsers/CollectionTreeItemModelBase.cpp:587
+#: browsers/CollectionTreeItemModelBase.cpp:617
 msgid "last month"
 msgstr ""
 
-#: browsers/CollectionTreeItemModelBase.cpp:589
+#: browsers/CollectionTreeItemModelBase.cpp:619
 msgid "two months ago"
 msgstr ""
 
-#: browsers/CollectionTreeItemModelBase.cpp:591
+#: browsers/CollectionTreeItemModelBase.cpp:621
 msgid "three months ago"
 msgstr ""
 
-#: browsers/CollectionTreeItemModelBase.cpp:759
+#: browsers/CollectionTreeItemModelBase.cpp:919
 msgid "Year - Album"
 msgstr ""
 
-#: browsers/collectionbrowser/CollectionTreeItemDelegate.cpp:140
+#: browsers/collectionbrowser/CollectionTreeItemDelegate.cpp:143
 #, kde-format
 msgid "%1% used"
 msgstr ""
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:60
+#: browsers/collectionbrowser/CollectionWidget.cpp:61
 msgid "Search collection"
 msgstr ""
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:105
-#: services/magnatune/MagnatuneStore.cpp:206
+#: browsers/collectionbrowser/CollectionWidget.cpp:106
+#: services/magnatune/MagnatuneStore.cpp:208
 msgid "Artist / Album"
 msgstr ""
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:109
-#: services/magnatune/MagnatuneStore.cpp:212
-#: services/jamendo/JamendoService.cpp:141
+#: browsers/collectionbrowser/CollectionWidget.cpp:110
+#: services/magnatune/MagnatuneStore.cpp:214
+#: services/jamendo/JamendoService.cpp:143
 msgid "Genre / Artist"
 msgstr ""
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:113
-#: services/magnatune/MagnatuneStore.cpp:215
-#: services/jamendo/JamendoService.cpp:144
+#: browsers/collectionbrowser/CollectionWidget.cpp:114
+#: services/magnatune/MagnatuneStore.cpp:217
+#: services/jamendo/JamendoService.cpp:146
 msgid "Genre / Artist / Album"
 msgstr ""
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:119
+#: browsers/collectionbrowser/CollectionWidget.cpp:120
 msgid "First Level"
 msgstr ""
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:146
+#: browsers/collectionbrowser/CollectionWidget.cpp:147
 msgid "Second Level"
 msgstr ""
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:178
+#: browsers/collectionbrowser/CollectionWidget.cpp:179
 msgid "Third Level"
 msgstr ""
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:211
+#: browsers/collectionbrowser/CollectionWidget.cpp:212
 msgid "Show Years"
 msgstr ""
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:216
+#: browsers/collectionbrowser/CollectionWidget.cpp:217
 msgid "Show Cover Art"
 msgstr ""
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:294
-#: services/magnatune/MagnatuneStore.cpp:218
-#: services/jamendo/JamendoService.cpp:147
+#: browsers/collectionbrowser/CollectionWidget.cpp:295
+#: services/magnatune/MagnatuneStore.cpp:220
+#: services/jamendo/JamendoService.cpp:149
 #, fuzzy
 #| msgid "Settings"
 msgid "Sort Options"
 msgstr "Хизматҳо"
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:300
+#: browsers/collectionbrowser/CollectionWidget.cpp:301
 msgid "Toggle unified view mode"
 msgstr ""
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:301
+#: browsers/collectionbrowser/CollectionWidget.cpp:302
 msgid "Toggle unified view mode. This is an experimental feature"
 msgstr ""
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:310
+#: browsers/collectionbrowser/CollectionWidget.cpp:311
 msgid ""
 "This is where you will find your local music, as well as music from mobile "
 "audio players and cd's."
@@ -3785,16 +3787,16 @@ msgstr ""
 msgid "Add Folder"
 msgstr ""
 
-#: browsers/CollectionTreeItem.cpp:145
+#: browsers/CollectionTreeItem.cpp:174
 msgctxt "The Name is not known"
 msgid "Unknown"
 msgstr ""
 
-#: browsers/CollectionTreeItem.cpp:174
+#: browsers/CollectionTreeItem.cpp:203
 msgid "Counting"
 msgstr ""
 
-#: browsers/CollectionTreeItem.cpp:192
+#: browsers/CollectionTreeItem.cpp:221
 #: playlist/proxymodels/GroupingProxy.cpp:96
 #, fuzzy, kde-format
 #| msgid "tracks"
@@ -5336,7 +5338,7 @@ msgstr ""
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:158
 #. i18n: ectx: property (toolTip), widget (QComboBox, eqPresets)
 #: rc.cpp:647
-msgid "List of avaiable equalizer presets."
+msgid "List of available equalizer presets."
 msgstr ""
 
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:174
@@ -5354,7 +5356,7 @@ msgstr ""
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:190
 #. i18n: ectx: property (toolTip), widget (QPushButton, eqPresetDeleteBtn)
 #: rc.cpp:656
-msgid "Delete currently selected preset. Not avaiable for built-in presets."
+msgid "Delete currently selected preset. Not available for built-in presets."
 msgstr ""
 
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:193
@@ -5369,7 +5371,7 @@ msgstr "роҳчаҳо"
 #. i18n: ectx: property (toolTip), widget (QPushButton, eqPresetResetBtn)
 #: rc.cpp:662
 msgid ""
-"Reset selected preset setting to default. Avaiable only for built-in preset."
+"Reset selected preset setting to default. Available only for built-in preset."
 msgstr ""
 
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:209
@@ -6866,7 +6868,7 @@ msgstr ""
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:95
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
-#: rc.cpp:1505 services/jamendo/JamendoService.cpp:112
+#: rc.cpp:1505 services/jamendo/JamendoService.cpp:114
 msgid "Download"
 msgstr ""
 
@@ -7122,7 +7124,7 @@ msgstr ""
 
 #. i18n: file: playlist/layouts/PlaylistLayoutEditDialog.ui:203
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1630 services/ServiceBase.cpp:141
+#: rc.cpp:1630 services/ServiceBase.cpp:143
 msgid "Group By"
 msgstr ""
 
@@ -7170,11 +7172,11 @@ msgstr ""
 msgid "Peak acceleration: "
 msgstr ""
 
-#: services/ServiceBase.cpp:305
+#: services/ServiceBase.cpp:307
 msgid "This service does not accept any messages"
 msgstr ""
 
-#: services/ServiceBase.cpp:312
+#: services/ServiceBase.cpp:314
 msgid "ERROR: unknown message"
 msgstr ""
 
@@ -7198,35 +7200,35 @@ msgid_plural "%1 categories."
 msgstr[0] ""
 msgstr[1] ""
 
-#: services/opmldirectory/OpmlDirectoryService.cpp:37
+#: services/opmldirectory/OpmlDirectoryService.cpp:39
 msgid "Podcast Directory"
 msgstr ""
 
-#: services/opmldirectory/OpmlDirectoryService.cpp:67
+#: services/opmldirectory/OpmlDirectoryService.cpp:69
 msgid "A large listing of podcasts"
 msgstr ""
 
-#: services/opmldirectory/OpmlDirectoryService.cpp:71
+#: services/opmldirectory/OpmlDirectoryService.cpp:73
 msgid ""
 "A comprehensive list of searchable podcasts from www.digitalpodcast.com that "
 "you can subscribe to directly from within Amarok."
 msgstr ""
 
-#: services/opmldirectory/OpmlDirectoryService.cpp:99
-#: services/jamendo/JamendoService.cpp:106
+#: services/opmldirectory/OpmlDirectoryService.cpp:101
+#: services/jamendo/JamendoService.cpp:108
 msgctxt "Fetch new information from the website"
 msgid "Update"
 msgstr ""
 
-#: services/opmldirectory/OpmlDirectoryService.cpp:106
+#: services/opmldirectory/OpmlDirectoryService.cpp:108
 msgid "Subscribe"
 msgstr ""
 
-#: services/opmldirectory/OpmlDirectoryService.cpp:148
+#: services/opmldirectory/OpmlDirectoryService.cpp:150
 msgid "Downloading Podcast Directory Database"
 msgstr ""
 
-#: services/opmldirectory/OpmlDirectoryService.cpp:177
+#: services/opmldirectory/OpmlDirectoryService.cpp:179
 msgid "Updating the local Podcast database."
 msgstr ""
 
@@ -7401,15 +7403,15 @@ msgid "Adds songs related to currently playing track, recommended by Last.Fm"
 msgstr ""
 
 #: services/lastfm/LoveTrackAction.cpp:25
-#: services/lastfm/LastFmService.cpp:286
+#: services/lastfm/LastFmService.cpp:288
 msgid "Last.fm: Love"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:191
+#: services/lastfm/LastFmService.cpp:193
 msgid "Last.fm: The social music revolution"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:193
+#: services/lastfm/LastFmService.cpp:195
 msgid ""
 "Last.fm is a popular online service that provides personal radio stations "
 "and music recommendations. A personal listening station is tailored based on "
@@ -7419,39 +7421,39 @@ msgid ""
 "friends or that last.fm considers your musical \"neighbors\""
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:288
+#: services/lastfm/LastFmService.cpp:290
 msgid "Ctrl+L"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:340
+#: services/lastfm/LastFmService.cpp:342
 msgctxt "Last.fm: errorMessage"
 msgid "Either the username was not recognized, or the password was incorrect."
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:344
+#: services/lastfm/LastFmService.cpp:346
 msgctxt "Last.fm: errorMessage"
 msgid ""
 "There was a problem communicating with the Last.fm services. Please try "
 "again later."
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:446
+#: services/lastfm/LastFmService.cpp:448
 msgid "Enter an artist name"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:449
+#: services/lastfm/LastFmService.cpp:451
 msgid "Enter a tag"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:452
+#: services/lastfm/LastFmService.cpp:454
 msgid "Enter a last.fm user name"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:465
+#: services/lastfm/LastFmService.cpp:467
 msgid "Username: "
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:470
+#: services/lastfm/LastFmService.cpp:472
 #, fuzzy, kde-format
 #| msgid "Settings"
 msgid "Play Count: %1 play"
@@ -7459,23 +7461,23 @@ msgid_plural "Play Count: %1 plays"
 msgstr[0] "Хизматҳо"
 msgstr[1] "Хизматҳо"
 
-#: services/lastfm/LastFmService.cpp:480
+#: services/lastfm/LastFmService.cpp:482
 msgid "Enter login information for Last.fm"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:536
+#: services/lastfm/LastFmService.cpp:538
 msgid "Create a Custom Last.fm Station"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:539
+#: services/lastfm/LastFmService.cpp:541
 msgid "Tag"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:539
+#: services/lastfm/LastFmService.cpp:541
 msgid "User"
 msgstr ""
 
-#: services/lastfm/LastFmService.cpp:572 services/lastfm/LastFmService.cpp:585
+#: services/lastfm/LastFmService.cpp:574 services/lastfm/LastFmService.cpp:587
 #, kde-format
 msgctxt "As in, lastfm"
 msgid "Loved Track: %1"
@@ -7552,22 +7554,22 @@ msgstr ""
 msgid "last.fm"
 msgstr ""
 
-#: services/shoutcast/ShoutcastService.cpp:31
+#: services/shoutcast/ShoutcastService.cpp:33
 msgid "Shoutcast Directory"
 msgstr ""
 
-#: services/shoutcast/ShoutcastService.cpp:60
+#: services/shoutcast/ShoutcastService.cpp:62
 msgid "The biggest list of online radio stations on the Internet"
 msgstr ""
 
-#: services/shoutcast/ShoutcastService.cpp:81
+#: services/shoutcast/ShoutcastService.cpp:83
 #, fuzzy
 #| msgid "Settings"
 msgctxt "Fetch the 500 most popular stations"
 msgid "View Top 500 Stations"
 msgstr "Хизматҳо"
 
-#: services/shoutcast/ShoutcastService.cpp:87
+#: services/shoutcast/ShoutcastService.cpp:89
 #, fuzzy
 #| msgid "Settings"
 msgctxt "Fetch list of all stations by genre"
@@ -7738,11 +7740,11 @@ msgstr ""
 msgid "Getting list of previous Magnatune.com purchases"
 msgstr ""
 
-#: services/magnatune/MagnatuneStore.cpp:99
+#: services/magnatune/MagnatuneStore.cpp:101
 msgid "\"Fair trade\" online music store."
 msgstr ""
 
-#: services/magnatune/MagnatuneStore.cpp:103
+#: services/magnatune/MagnatuneStore.cpp:105
 #, no-c-format
 msgid ""
 "Magnatune.com is a different kind of record company with the motto \"We are "
@@ -7752,35 +7754,35 @@ msgid ""
 "lets you download as much of their music as you like."
 msgstr ""
 
-#: services/magnatune/MagnatuneStore.cpp:230
+#: services/magnatune/MagnatuneStore.cpp:232
 msgid "Re-download"
 msgstr ""
 
-#: services/magnatune/MagnatuneStore.cpp:233
+#: services/magnatune/MagnatuneStore.cpp:235
 msgid "Update Database"
 msgstr ""
 
-#: services/magnatune/MagnatuneStore.cpp:236
+#: services/magnatune/MagnatuneStore.cpp:238
 msgid "Tools"
 msgstr ""
 
-#: services/magnatune/MagnatuneStore.cpp:256
+#: services/magnatune/MagnatuneStore.cpp:258
 msgid "Download Album"
 msgstr ""
 
-#: services/magnatune/MagnatuneStore.cpp:258
+#: services/magnatune/MagnatuneStore.cpp:260
 msgid "Purchase Album"
 msgstr ""
 
-#: services/magnatune/MagnatuneStore.cpp:295
+#: services/magnatune/MagnatuneStore.cpp:297
 msgid "Downloading Magnatune.com Database"
 msgstr ""
 
-#: services/magnatune/MagnatuneStore.cpp:326
+#: services/magnatune/MagnatuneStore.cpp:328
 msgid "Updating the local Magnatune database."
 msgstr ""
 
-#: services/magnatune/MagnatuneStore.cpp:625
+#: services/magnatune/MagnatuneStore.cpp:627
 #, c-format
 msgid ""
 "The Magnatune.com service accepts the following messages: \n"
@@ -7790,23 +7792,23 @@ msgid ""
 "with %%20"
 msgstr ""
 
-#: services/magnatune/MagnatuneStore.cpp:636
+#: services/magnatune/MagnatuneStore.cpp:638
 msgid "ERROR: No arguments supplied"
 msgstr ""
 
-#: services/magnatune/MagnatuneStore.cpp:641
+#: services/magnatune/MagnatuneStore.cpp:643
 msgid "ERROR: Wrong number of arguments for addMoodyTracks"
 msgstr ""
 
-#: services/magnatune/MagnatuneStore.cpp:651
+#: services/magnatune/MagnatuneStore.cpp:653
 msgid "ERROR: Parse error for argument 2 ( count )"
 msgstr ""
 
-#: services/magnatune/MagnatuneStore.cpp:655
+#: services/magnatune/MagnatuneStore.cpp:657
 msgid "ok"
 msgstr ""
 
-#: services/magnatune/MagnatuneStore.cpp:658
+#: services/magnatune/MagnatuneStore.cpp:660
 msgid "ERROR: Unknown argument."
 msgstr ""
 
@@ -7877,25 +7879,25 @@ msgstr ""
 msgid "Loading info..."
 msgstr ""
 
-#: services/ampache/AmpacheService.cpp:118
+#: services/ampache/AmpacheService.cpp:119
 msgid "Amarok frontend for your Ampache server."
 msgstr ""
 
-#: services/ampache/AmpacheService.cpp:120
+#: services/ampache/AmpacheService.cpp:121
 msgid ""
 "Use Amarok as a seamless frontend to your Ampache server. This lets you "
 "browse and play all the Ampache contents from within Amarok."
 msgstr ""
 
-#: services/ampache/AmpacheService.cpp:200
+#: services/ampache/AmpacheService.cpp:201
 msgid "Enter the server name and a password"
 msgstr ""
 
-#: services/ampache/AmpacheService.cpp:259
+#: services/ampache/AmpacheService.cpp:260
 msgid "Authenticating with Ampache"
 msgstr ""
 
-#: services/ampache/AmpacheService.cpp:287
+#: services/ampache/AmpacheService.cpp:288
 msgid "Authentication Error"
 msgstr ""
 
@@ -8016,11 +8018,11 @@ msgstr ""
 msgid "A site where artists can freely share their music"
 msgstr ""
 
-#: services/jamendo/JamendoService.cpp:75
+#: services/jamendo/JamendoService.cpp:77
 msgid "A site where artists can showcase their creations to the world"
 msgstr ""
 
-#: services/jamendo/JamendoService.cpp:78
+#: services/jamendo/JamendoService.cpp:80
 msgid ""
 "Jamendo.com puts artists and music lovers in touch with each other. The "
 "sites allows artists to upload their own albums to share them with the world "
@@ -8028,11 +8030,11 @@ msgid ""
 "Jamendo.com contents from within Amarok."
 msgstr ""
 
-#: services/jamendo/JamendoService.cpp:177
+#: services/jamendo/JamendoService.cpp:179
 msgid "Downloading Jamendo.com Database"
 msgstr ""
 
-#: services/jamendo/JamendoService.cpp:200
+#: services/jamendo/JamendoService.cpp:202
 msgid "Updating the local Jamendo database."
 msgstr ""
 
@@ -8494,13 +8496,13 @@ msgstr ""
 msgid "Font: "
 msgstr ""
 
-#: playlist/layouts/LayoutConfigAction.cpp:40
+#: playlist/layouts/LayoutConfigAction.cpp:43
 #, fuzzy
 #| msgid "Settings"
 msgid "Playlist Layouts"
 msgstr "Хизматҳо"
 
-#: playlist/layouts/LayoutConfigAction.cpp:66
+#: playlist/layouts/LayoutConfigAction.cpp:69
 #, fuzzy
 #| msgid "&Playlist"
 msgid "Configure playlist layouts..."
@@ -8587,11 +8589,11 @@ msgstr ""
 msgid "Too many errors encountered in playlist. Playback stopped."
 msgstr ""
 
-#: playlist/PlaylistSortWidget.cpp:38
+#: playlist/PlaylistSortWidget.cpp:42
 msgid "Clear the playlist sorting configuration."
 msgstr ""
 
-#: playlist/PlaylistSortWidget.cpp:48
+#: playlist/PlaylistSortWidget.cpp:52
 msgid "Add a playlist sorting level."
 msgstr ""
 
