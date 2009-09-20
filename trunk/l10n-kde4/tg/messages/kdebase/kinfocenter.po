@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcontrol\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-01 06:17+0200\n"
+"POT-Creation-Date: 2009-09-20 06:17+0200\n"
 "PO-Revision-Date: 2009-01-15 14:59+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik\n"
@@ -49,9 +49,11 @@ msgstr "Иттилоот"
 msgid "Value"
 msgstr "Ҳаҷм"
 
-#: base/info_aix.cpp:307 base/info_hpux.cpp:356 base/info_linux.cpp:334
-#: base/info_linux.cpp:445
-msgid "MB"
+#: base/info_aix.cpp:307
+#, fuzzy
+#| msgid "MB"
+msgctxt "Mebibyte"
+msgid "MiB "
 msgstr "МБ"
 
 #: base/info_aix.cpp:312 base/info_fbsd.cpp:277 base/info_fbsd.cpp:305
@@ -196,10 +198,11 @@ msgstr "хомӯш аст"
 msgid "Numerical Coprocessor (FPU)"
 msgstr "Числовой сопроцессор (FPU)"
 
-#: base/info_hpux.cpp:242
+#: base/info_hpux.cpp:242 base/info_linux.cpp:334 base/info_linux.cpp:445
 #, fuzzy
 #| msgid "MB"
-msgid " MB"
+msgctxt "Mebibyte"
+msgid "MiB"
 msgstr "МБ"
 
 #: base/info_hpux.cpp:243
@@ -215,6 +218,10 @@ msgstr "Байт"
 #: base/info_hpux.cpp:246
 msgid "Size of One Page"
 msgstr "Размер одной страницы"
+
+#: base/info_hpux.cpp:356
+msgid "MB"
+msgstr "МБ"
 
 #: base/info_hpux.cpp:441
 msgid "Audio Name"
@@ -981,6 +988,11 @@ msgstr "Оиди %1"
 #, kde-format
 msgid "Report Bug on Module %1..."
 msgstr "Ахборот дар бораи хато дар модул бифиристед %1..."
+
+#, fuzzy
+#~| msgid "MB"
+#~ msgid " MB"
+#~ msgstr "МБ"
 
 #, fuzzy
 #~ msgid "Kernel is configured for %1 CPUs"
