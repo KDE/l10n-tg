@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-31 06:07+0200\n"
+"POT-Creation-Date: 2009-09-25 06:19+0200\n"
 "PO-Revision-Date: 2009-01-15 14:56+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik\n"
@@ -235,7 +235,7 @@ msgstr "Ирсоли почтаи эл. ба..."
 msgid "Copy Email Address"
 msgstr "Скопировать электронный адрес"
 
-#: HistorySizeDialog.cpp:51 SessionController.cpp:499
+#: HistorySizeDialog.cpp:51 SessionController.cpp:523
 msgid "Scrollback Options"
 msgstr "Паймоиши интихобҳо"
 
@@ -590,7 +590,7 @@ msgstr "Идоракунии профилҳо..."
 msgid "You have multiple tabs in this window, are you sure you want to quit?"
 msgstr "Закрыть окно с несколькими открытыми вкладками?"
 
-#: MainWindow.cpp:348 SessionController.cpp:604
+#: MainWindow.cpp:348 SessionController.cpp:628
 msgid "Confirm Close"
 msgstr "Подтверждение выхода"
 
@@ -1501,65 +1501,73 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "rkovacs@khujand.org, victor.ibragimov@gmail.com"
 
-#. i18n: file: ../desktop/sessionui.rc:43
-#. i18n: ectx: Menu (debug)
+#. i18n: file: ../desktop/sessionui.rc:14
+#. i18n: ectx: Menu (edit-copy-input-to)
 #: rc.cpp:849
+#, fuzzy
+#| msgid "Copy Input To..."
+msgid "Copy Input To"
+msgstr "Копировать ввод в..."
+
+#. i18n: file: ../desktop/sessionui.rc:47
+#. i18n: ectx: Menu (debug)
+#: rc.cpp:852
 msgid "Debug"
 msgstr "Отладка"
 
-#. i18n: file: ../desktop/sessionui.rc:62
+#. i18n: file: ../desktop/sessionui.rc:66
 #. i18n: ectx: Menu (change-profile)
 #. i18n: file: ../desktop/partui.rc:26
 #. i18n: ectx: Menu (change-profile)
-#: rc.cpp:852 rc.cpp:858
+#: rc.cpp:855 rc.cpp:861
 msgid "&Change Profile"
 msgstr "&Ивази профиль"
 
 #. i18n: file: ../desktop/partui.rc:8
 #. i18n: ectx: Menu (history)
-#: rc.cpp:855
+#: rc.cpp:858
 msgid "S&crollback"
 msgstr "&Буфер вывода"
 
 #. i18n: file: ../desktop/konsoleui.rc:5
 #. i18n: ectx: Menu (file)
-#: rc.cpp:861
+#: rc.cpp:864
 msgid "File"
 msgstr "Файл"
 
 #. i18n: file: ../desktop/konsoleui.rc:15
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:864
+#: rc.cpp:867
 msgid "Edit"
 msgstr "Таҳрир кардан"
 
 #. i18n: file: ../desktop/konsoleui.rc:18
 #. i18n: ectx: Menu (history)
-#: rc.cpp:867
+#: rc.cpp:870
 msgid "Scrollback"
 msgstr "Буфер вывода"
 
 #. i18n: file: ../desktop/konsoleui.rc:21
 #. i18n: ectx: Menu (view)
-#: rc.cpp:870
+#: rc.cpp:873
 msgid "View"
 msgstr "Намоиш"
 
 #. i18n: file: ../desktop/konsoleui.rc:22
 #. i18n: ectx: Menu (view-split)
-#: rc.cpp:873
+#: rc.cpp:876
 msgid "Split View"
 msgstr "Разделить на две части"
 
 #. i18n: file: ../desktop/konsoleui.rc:40
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:876
+#: rc.cpp:879
 msgid "Settings"
 msgstr "Танзимотҳо"
 
 #. i18n: file: ../desktop/konsoleui.rc:47
 #. i18n: ectx: Menu (help)
-#: rc.cpp:879
+#: rc.cpp:882
 msgid "Help"
 msgstr "Роҳнамо"
 
@@ -1615,106 +1623,117 @@ msgstr "Консоли Solaris"
 msgid "DEC VT420 Terminal"
 msgstr "Терминали DEC VT420"
 
-#: SessionController.cpp:384
+#: SessionController.cpp:391
 msgid "&Close Tab"
 msgstr "&Хуруҷи ҷадвалбандӣ"
 
-#: SessionController.cpp:390
+#: SessionController.cpp:397
 msgid "Open File Manager"
 msgstr ""
 
-#: SessionController.cpp:397
+#: SessionController.cpp:404
 msgid "&Copy"
 msgstr "&Нусха"
 
-#: SessionController.cpp:401
+#: SessionController.cpp:408
 msgid "&Paste"
 msgstr "&Часпондан"
 
-#: SessionController.cpp:414
+#: SessionController.cpp:421
 msgid "Paste Selection"
 msgstr "Интихоб даровардан"
 
-#: SessionController.cpp:420
+#: SessionController.cpp:427
 msgid "&Rename Tab..."
 msgstr "&Ивази номи ҷадвалбандӣ"
 
-#: SessionController.cpp:426
-msgid "Copy Input To..."
-msgstr "Копировать ввод в..."
+#: SessionController.cpp:434
+msgid "&All Tabs in Current Window"
+msgstr ""
 
-#: SessionController.cpp:431
+#: SessionController.cpp:441
+#, fuzzy
+#| msgid "&Rename Tab..."
+msgid "&Select Tabs..."
+msgstr "&Ивази номи ҷадвалбандӣ"
+
+#: SessionController.cpp:448
+#, fuzzy
+msgid "&None"
+msgstr "&Ҳеҷ чиз"
+
+#: SessionController.cpp:455
 msgid "Clear && Reset"
 msgstr "Очистить и сбросить"
 
-#: SessionController.cpp:436
+#: SessionController.cpp:460
 msgid "&ZModem Upload..."
 msgstr "&ZМодем пурборкардан"
 
-#: SessionController.cpp:442
+#: SessionController.cpp:466
 msgid "Monitor for &Activity"
 msgstr "Тамошо барои &Фаъол кардан"
 
-#: SessionController.cpp:447
+#: SessionController.cpp:471
 msgid "Monitor for &Silence"
 msgstr "Нишон барои &Хомӯшӣ"
 
-#: SessionController.cpp:453
+#: SessionController.cpp:477
 msgid "Character Encoding"
 msgstr "Кодировка"
 
-#: SessionController.cpp:460
+#: SessionController.cpp:484
 msgid "Increase Text Size"
 msgstr "Увеличить размер шрифта"
 
-#: SessionController.cpp:466
+#: SessionController.cpp:490
 msgid "Decrease Text Size"
 msgstr "Уменьшить размер шрифта"
 
-#: SessionController.cpp:472
+#: SessionController.cpp:496
 msgid "Search Output..."
 msgstr "Ҷустуҷӯи хуруҷ..."
 
-#: SessionController.cpp:481
+#: SessionController.cpp:505
 msgid "Find Next"
 msgstr "Ҷустуҷӯи дигар"
 
-#: SessionController.cpp:488
+#: SessionController.cpp:512
 msgid "Find Previous"
 msgstr "Ҷустуҷӯи пешина"
 
-#: SessionController.cpp:494
+#: SessionController.cpp:518
 msgid "Save Output..."
 msgstr "Сохранить сеанс..."
 
-#: SessionController.cpp:504
+#: SessionController.cpp:528
 msgid "Clear Scrollback && Reset"
 msgstr "Очистить сеанс и сбросить"
 
-#: SessionController.cpp:510
+#: SessionController.cpp:534
 msgid "Edit Current Profile..."
 msgstr "Настроить профиль..."
 
-#: SessionController.cpp:514
+#: SessionController.cpp:538
 msgid "Change Profile"
 msgstr "Иваз кардани профил"
 
-#: SessionController.cpp:554
+#: SessionController.cpp:578
 msgid "Rename Tab"
 msgstr "Переименовать вкладку"
 
-#: SessionController.cpp:555
+#: SessionController.cpp:579
 msgid "Enter new tab text:"
 msgstr "Название сеанса:"
 
-#: SessionController.cpp:598
+#: SessionController.cpp:622
 #, fuzzy
 msgid ""
 "A program is currently running in this session.  Are you sure you want to "
 "close it?"
 msgstr "В сеансе выполняется программа.  Вы действительно хотите закрыть ее?"
 
-#: SessionController.cpp:601
+#: SessionController.cpp:625
 #, fuzzy, kde-format
 msgid ""
 "The program '%1' is currently running in this session.  Are you sure you "
@@ -1722,13 +1741,13 @@ msgid ""
 msgstr ""
 "В сеансе выполняется программа \"%1\". Вы действительно хотите закрыть ее?"
 
-#: SessionController.cpp:1068
+#: SessionController.cpp:1177
 #, fuzzy
 #| msgid "&ZModem Upload..."
 msgid "Save ZModem Download to..."
 msgstr "&ZМодем пурборкардан"
 
-#: SessionController.cpp:1077
+#: SessionController.cpp:1186
 #, fuzzy
 #| msgid ""
 #| "<p>A ZModem file transfer attempt has been detected, but no suitable "
@@ -1743,11 +1762,11 @@ msgstr ""
 "ZModem номуносиб  дар система кофта ёфтан.\n"
 "<p>Шумо, шояд, мехоед пакети 'rzsz' ё 'lrzsz' барпо кардан.\n"
 
-#: SessionController.cpp:1089
+#: SessionController.cpp:1198
 msgid "<p>The current session already has a ZModem file transfer in progress."
 msgstr "<p>Сессияи шоранда аллакай файли мутараққӣ ZModem доштан. "
 
-#: SessionController.cpp:1098
+#: SessionController.cpp:1207
 #, fuzzy
 #| msgid ""
 #| "<p>No suitable ZModem software was found on the system.\n"
@@ -1759,23 +1778,23 @@ msgstr ""
 "<p>Программаи компьютер ZModem номуносиб  дар система кофта ёфтан.\n"
 "<p>Шумо, шояд, мехоед пакети 'rzsz' ё 'lrzsz' барпо кардан.\n"
 
-#: SessionController.cpp:1104
+#: SessionController.cpp:1213
 #, fuzzy
 #| msgid "Select Files to Upload"
 msgid "Select Files for ZModem Upload"
 msgstr "Файлҳо интхоб кардан барои пурборкардан"
 
-#: SessionController.cpp:1176
+#: SessionController.cpp:1285
 #, fuzzy, kde-format
 msgid "Save Output From %1"
 msgstr "Сохранить вывод %1"
 
-#: SessionController.cpp:1187
+#: SessionController.cpp:1296
 #, fuzzy, kde-format
 msgid "%1 is an invalid URL, the output could not be saved."
 msgstr "Неверный адрес %1, вывод не будет сохранён."
 
-#: SessionController.cpp:1276
+#: SessionController.cpp:1385
 #, fuzzy, kde-format
 msgid ""
 "A problem occurred when saving the output.\n"
@@ -2461,10 +2480,6 @@ msgstr "&Исто"
 
 #~ msgid "&Visible Bell"
 #~ msgstr "&Занги Зоҳир"
-
-#, fuzzy
-#~ msgid "N&one"
-#~ msgstr "&Ҳеҷ чиз"
 
 #, fuzzy
 #~ msgid "Default"
