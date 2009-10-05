@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaudiocreator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-02 06:13+0200\n"
+"POT-Creation-Date: 2009-10-05 06:16+0200\n"
 "PO-Revision-Date: 2004-06-10 20:51+0000\n"
 "Last-Translator: Abrorova\n"
 "Language-Team:  <tajik>\n"
@@ -57,7 +57,7 @@ msgstr "Шиор"
 msgid "unknown"
 msgstr ""
 
-#: encodefileimp.cpp:414 tracksimp.cpp:458
+#: encodefileimp.cpp:414 tracksimp.cpp:480
 #, kde-format
 msgid ""
 "%1 Job(s) have been started.  You can watch their progress in the jobs "
@@ -66,7 +66,7 @@ msgstr ""
 "%1 Супориш(ҳо) сар дода шудааст. Иҷроиши онро шумо дар қисмати супоришҳо "
 "дида метавонед."
 
-#: encodefileimp.cpp:416 tracksimp.cpp:460
+#: encodefileimp.cpp:416 tracksimp.cpp:482
 msgid "Jobs have started"
 msgstr "Супориш оғоз ёфтааст"
 
@@ -75,12 +75,12 @@ msgstr "Супориш оғоз ёфтааст"
 msgid "File"
 msgstr "Унвон:"
 
-#: encodefilemodel.cpp:29 tracksimp.cpp:55 tracksimp.cpp:525
+#: encodefilemodel.cpp:29 tracksimp.cpp:55 tracksimp.cpp:551
 #, fuzzy
 msgid "Title"
 msgstr "Унвон:"
 
-#: encodefilemodel.cpp:29 tracksimp.cpp:55 tracksimp.cpp:525
+#: encodefilemodel.cpp:29 tracksimp.cpp:55 tracksimp.cpp:551
 #, fuzzy
 #| msgid "Artist:"
 msgid "Artist"
@@ -92,7 +92,7 @@ msgstr "Иҷрокунанда:"
 msgid "Album"
 msgstr "Албом"
 
-#: encodefilemodel.cpp:30 tracksimp.cpp:55 tracksimp.cpp:525
+#: encodefilemodel.cpp:30 tracksimp.cpp:55 tracksimp.cpp:551
 #, fuzzy
 #| msgid "Comment:"
 msgid "Comment"
@@ -104,7 +104,7 @@ msgstr "Тавсифот:"
 msgid "Genre"
 msgstr "Услуб:"
 
-#: encodefilemodel.cpp:31 tracksimp.cpp:55 tracksimp.cpp:525
+#: encodefilemodel.cpp:31 tracksimp.cpp:55 tracksimp.cpp:551
 msgid "Track"
 msgstr "Шиор"
 
@@ -570,7 +570,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, TextLabel6)
 #. i18n: file: infodialog.ui:116
 #. i18n: ectx: property (text), widget (QLabel, TextLabel6)
-#. i18n: file: tracks.ui:175
+#. i18n: file: tracks.ui:172
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:33 rc.cpp:307 rc.cpp:467
 msgid "Album:"
@@ -588,7 +588,9 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #. i18n: file: infodialog.ui:168
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:42 rc.cpp:292 rc.cpp:316
+#. i18n: file: tracks.ui:182
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:42 rc.cpp:292 rc.cpp:316 rc.cpp:470
 msgid "Comment:"
 msgstr "Тавсифот:"
 
@@ -602,9 +604,9 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, TextLabel1)
 #. i18n: file: infodialog.ui:152
 #. i18n: ectx: property (text), widget (QLabel, TextLabel1)
-#. i18n: file: tracks.ui:185
+#. i18n: file: tracks.ui:222
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:51 rc.cpp:313 rc.cpp:470
+#: rc.cpp:51 rc.cpp:313 rc.cpp:479
 msgid "Genre:"
 msgstr "Услуб:"
 
@@ -632,9 +634,9 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, TextLabel7)
 #. i18n: file: infodialog.ui:139
 #. i18n: ectx: property (text), widget (QLabel, TextLabel7)
-#. i18n: file: tracks.ui:165
+#. i18n: file: tracks.ui:199
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:72 rc.cpp:310 rc.cpp:464
+#: rc.cpp:72 rc.cpp:310 rc.cpp:476
 msgid "Year:"
 msgstr "Сол:"
 
@@ -903,7 +905,7 @@ msgstr "Ҳосили Рамзгузор"
 #. i18n: ectx: property (text), widget (QPushButton, buttonOk)
 #. i18n: file: wizard.ui:270
 #. i18n: ectx: property (text), widget (QPushButton, buttonOk)
-#: rc.cpp:209 rc.cpp:325 rc.cpp:526
+#: rc.cpp:209 rc.cpp:325 rc.cpp:535
 msgid "&OK"
 msgstr ""
 
@@ -1084,7 +1086,7 @@ msgstr "Шиори &Оянда"
 #. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
 #. i18n: file: wizard.ui:283
 #. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
-#: rc.cpp:328 rc.cpp:529
+#: rc.cpp:328 rc.cpp:538
 msgid "&Cancel"
 msgstr ""
 
@@ -1343,15 +1345,23 @@ msgstr "Интихоби Ҳамаи Шиорҳоро &Рад кунед"
 msgid "Album properties"
 msgstr ""
 
+#. i18n: file: tracks.ui:165
+#. i18n: ectx: property (text), widget (QPushButton, artistEditButton)
+#. i18n: file: tracks.ui:192
+#. i18n: ectx: property (text), widget (QPushButton, commentEditButton)
+#: rc.cpp:464 rc.cpp:473
+msgid "Assign to all tracks"
+msgstr ""
+
 #. i18n: file: wizard.ui:19
 #. i18n: ectx: property (windowTitle), widget (QDialog, fileWizard)
-#: rc.cpp:473
+#: rc.cpp:482
 msgid "File Location Wizard"
 msgstr "Устоди Мавҷеъи Файлҳо"
 
 #. i18n: file: wizard.ui:46
 #. i18n: ectx: property (text), widget (QLabel, TextLabel8)
-#: rc.cpp:477
+#: rc.cpp:486
 #, fuzzy, no-c-format
 msgid ""
 "When files have finished being processed, they are saved based upon the "
@@ -1372,106 +1382,106 @@ msgstr ""
 
 #. i18n: file: wizard.ui:95
 #. i18n: ectx: property (text), widget (QLabel, TextLabel9)
-#: rc.cpp:480
+#: rc.cpp:489
 msgid "&File location:"
 msgstr "Мавқеъи &файл:"
 
 #. i18n: file: wizard.ui:108
 #. i18n: ectx: property (text), widget (QLineEdit, fileFormat)
-#: rc.cpp:484
+#: rc.cpp:493
 #, no-c-format
 msgid "~/%{extension}/%{artist}/%{album}/%{artist} - %{album}.m3u"
 msgstr "~/%{extension}/%{artist}/%{album}/%{artist} - %{album}.m3u"
 
 #. i18n: file: wizard.ui:117
 #. i18n: ectx: property (text), widget (QLabel, exampleLabel)
-#: rc.cpp:487
+#: rc.cpp:496
 msgid "Example: ~/mp3/Staind/Lost Love/Staind - Lost Love.m3u"
 msgstr "Мисол: ~/mp3/Staind/Lost Love/Staind - Lost Love.m3u"
 
 #. i18n: file: wizard.ui:141
 #. i18n: ectx: property (text), widget (QPushButton, artistButton)
-#: rc.cpp:490
+#: rc.cpp:499
 msgid "&Artist"
 msgstr "&Иҷрокунанда"
 
 #. i18n: file: wizard.ui:148
 #. i18n: ectx: property (text), widget (QPushButton, homeDirButton)
-#: rc.cpp:493
+#: rc.cpp:502
 msgid "&Home Folder"
 msgstr "Феҳристи &Хонагӣ"
 
 #. i18n: file: wizard.ui:155
 #. i18n: ectx: property (text), widget (QPushButton, trackNumberButton)
-#: rc.cpp:496
+#: rc.cpp:505
 #, fuzzy
 msgid "&Track Number"
 msgstr "&Шиор"
 
 #. i18n: file: wizard.ui:162
 #. i18n: ectx: property (text), widget (QPushButton, extensionButton)
-#: rc.cpp:499
+#: rc.cpp:508
 msgid "&Extension"
 msgstr "&Вусъат"
 
 #. i18n: file: wizard.ui:169
 #. i18n: ectx: property (text), widget (QPushButton, trackTitleButton)
-#: rc.cpp:502
+#: rc.cpp:511
 #, fuzzy
 msgid "Track T&itle"
 msgstr "Trailer"
 
 #. i18n: file: wizard.ui:176
 #. i18n: ectx: property (text), widget (QPushButton, trackCommentButton)
-#: rc.cpp:505
+#: rc.cpp:514
 #, fuzzy
 msgid "T&rack Comment"
 msgstr "Шарҳдиҳӣ"
 
 #. i18n: file: wizard.ui:183
 #. i18n: ectx: property (text), widget (QPushButton, genreButton)
-#: rc.cpp:508
+#: rc.cpp:517
 msgid "&Genre"
 msgstr "&Услуб"
 
 #. i18n: file: wizard.ui:190
 #. i18n: ectx: property (text), widget (QPushButton, yearButton)
-#: rc.cpp:511
+#: rc.cpp:520
 msgid "&Year"
 msgstr "&Сол"
 
 #. i18n: file: wizard.ui:197
 #. i18n: ectx: property (text), widget (QPushButton, albumButton)
-#: rc.cpp:514
+#: rc.cpp:523
 msgid "Al&bum"
 msgstr "&Албом"
 
 #. i18n: file: wizard.ui:204
 #. i18n: ectx: property (text), widget (QPushButton, trackArtistButton)
-#: rc.cpp:517
+#: rc.cpp:526
 #, fuzzy
 msgid "Trac&k Artist"
 msgstr "&Иҷрокунанда"
 
 #. i18n: file: wizard.ui:211
 #. i18n: ectx: property (text), widget (QPushButton, commentButton)
-#: rc.cpp:520
+#: rc.cpp:529
 #, fuzzy
 msgid "Co&mment"
 msgstr "Шарҳдиҳӣ"
 
 #. i18n: file: wizard.ui:218
 #. i18n: ectx: property (text), widget (QPushButton, artistInitialButton)
-#: rc.cpp:523
+#: rc.cpp:532
 msgid "Arti&st's Initial"
 msgstr ""
 
-#: rc.cpp:530
+#: rc.cpp:539
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Абророва Хиромон"
 
-#: rc.cpp:531
+#: rc.cpp:540
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "H_Abrorova@rambler.ru"
@@ -1481,21 +1491,21 @@ msgstr "H_Abrorova@rambler.ru"
 msgid "Ripping: %1 - %2"
 msgstr "Хондани: %1 - %2"
 
-#: tracksimp.cpp:55 tracksimp.cpp:429 tracksimp.cpp:525
+#: tracksimp.cpp:55 tracksimp.cpp:451 tracksimp.cpp:551
 msgid "Rip"
 msgstr "Хондан"
 
-#: tracksimp.cpp:55 tracksimp.cpp:525
+#: tracksimp.cpp:55 tracksimp.cpp:551
 msgid "Length"
 msgstr "Дарозӣ"
 
-#: tracksimp.cpp:104
+#: tracksimp.cpp:109
 #, fuzzy
 #| msgid "No Encoder Selected"
 msgid "none detected"
 msgstr "Ягон Рамзгузор Интихоб Нашудааст."
 
-#: tracksimp.cpp:211
+#: tracksimp.cpp:216
 #, fuzzy, kde-format
 msgid ""
 "CDROM read or access error (or no audio disk in drive).\n"
@@ -1506,58 +1516,58 @@ msgstr ""
 "Боварӣ ҳосил кунед, ки рухсатҳои дастрасӣ доред:\n"
 "%1"
 
-#: tracksimp.cpp:214
+#: tracksimp.cpp:219
 msgid "Error"
 msgstr ""
 
-#: tracksimp.cpp:224
+#: tracksimp.cpp:229
 msgid "Please insert a disk."
 msgstr "Дискро ҷойгир кунед."
 
-#: tracksimp.cpp:225 tracksimp.cpp:251
+#: tracksimp.cpp:230 tracksimp.cpp:256
 msgid "CDDB Failed"
 msgstr "CDDB бо Нокомӣ дучор шуд"
 
-#: tracksimp.cpp:251
+#: tracksimp.cpp:256
 msgid "Unable to retrieve CDDB information."
 msgstr "Бозёбии ахборот аз CDDB ғайри имкон аст."
 
-#: tracksimp.cpp:271
+#: tracksimp.cpp:276
 #, fuzzy
 msgid "Select CDDB entry"
 msgstr "Интихоби элементи CDDB:"
 
-#: tracksimp.cpp:272
+#: tracksimp.cpp:277
 msgid "Select a CDDB entry:"
 msgstr "Интихоби элементи CDDB:"
 
-#: tracksimp.cpp:340
+#: tracksimp.cpp:362
 #, fuzzy
 msgid "CD Editor"
 msgstr "Муҳаррири Албом"
 
-#: tracksimp.cpp:403
+#: tracksimp.cpp:425
 msgid "No tracks have been selected.  Would you like to rip the entire CD?"
 msgstr ""
 
-#: tracksimp.cpp:404
+#: tracksimp.cpp:426
 msgid "No Tracks Selected"
 msgstr "Шиорҳои Интихобшуда Нестанд"
 
-#: tracksimp.cpp:404
+#: tracksimp.cpp:426
 #, fuzzy
 msgid "Rip CD"
 msgstr "Хондан"
 
-#: tracksimp.cpp:413
+#: tracksimp.cpp:435
 msgid "Could not find audiocd:/ protocol. Please install the audiocd ioslave"
 msgstr ""
 
-#: tracksimp.cpp:414
+#: tracksimp.cpp:436
 msgid "Protocol Not Found"
 msgstr ""
 
-#: tracksimp.cpp:429
+#: tracksimp.cpp:451
 #, fuzzy, kde-format
 msgid ""
 "Part of the album is not set: %1.\n"
@@ -1568,15 +1578,15 @@ msgstr ""
 " (Барои ивази ахбороти албом ба тугмаи \"Таҳрири Ахборот\" ангушт занед.)\n"
 " Ба ҳар ҳол мехоҳед, ки хондани шиори интихобшударо давом диҳед?"
 
-#: tracksimp.cpp:429
+#: tracksimp.cpp:451
 msgid "Album Information Incomplete"
 msgstr "Ахбороти Албом Нопурра аст"
 
-#: tracksimp.cpp:580
+#: tracksimp.cpp:606
 msgid " - "
 msgstr ""
 
-#: tracksimp.cpp:582
+#: tracksimp.cpp:608
 #, fuzzy
 msgid "No disc"
 msgstr "Noise"
