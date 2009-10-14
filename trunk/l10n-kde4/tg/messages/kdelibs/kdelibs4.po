@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-12 06:27+0200\n"
+"POT-Creation-Date: 2009-10-14 06:36+0200\n"
 "PO-Revision-Date: 2009-07-31 01:31+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik Language\n"
@@ -2000,8 +2000,8 @@ msgstr ""
 "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 "indent:0px;\">(ҳоло намедонам)</p></body></html>"
 
-#: kjs/object.cpp:584 kdeui/dialogs/kmessagebox.cpp:835
-#: kdeui/dialogs/kmessagebox.cpp:868 khtml/rendering/render_form.cpp:750
+#: kjs/object.cpp:584 kdeui/dialogs/kmessagebox.cpp:830
+#: kdeui/dialogs/kmessagebox.cpp:862 khtml/rendering/render_form.cpp:750
 msgid "Error"
 msgstr "Хато"
 
@@ -6720,34 +6720,34 @@ msgstr "."
 msgid "Details"
 msgstr "Тафсилот"
 
-#: kdeui/dialogs/kmessagebox.cpp:457 kdeui/dialogs/kmessagebox.cpp:519
+#: kdeui/dialogs/kmessagebox.cpp:457 kdeui/dialogs/kmessagebox.cpp:518
 msgid "Question"
 msgstr "Савол"
 
-#: kdeui/dialogs/kmessagebox.cpp:475 kdeui/dialogs/kmessagebox.cpp:538
-#: kdeui/dialogs/kmessagebox.cpp:626 kdeui/dialogs/kmessagebox.cpp:707
-#: kdeui/dialogs/kmessagebox.cpp:795
+#: kdeui/dialogs/kmessagebox.cpp:474 kdeui/dialogs/kmessagebox.cpp:536
+#: kdeui/dialogs/kmessagebox.cpp:623 kdeui/dialogs/kmessagebox.cpp:703
+#: kdeui/dialogs/kmessagebox.cpp:790
 msgid "Do not ask again"
 msgstr "Ин саволро боз напурсед"
 
-#: kdeui/dialogs/kmessagebox.cpp:608 kdeui/dialogs/kmessagebox.cpp:689
-#: kdeui/dialogs/kmessagebox.cpp:777
+#: kdeui/dialogs/kmessagebox.cpp:606 kdeui/dialogs/kmessagebox.cpp:686
+#: kdeui/dialogs/kmessagebox.cpp:773
 msgid "Warning"
 msgstr "Огоҳӣ"
 
-#: kdeui/dialogs/kmessagebox.cpp:914 kdeui/dialogs/kmessagebox.cpp:945
+#: kdeui/dialogs/kmessagebox.cpp:907 kdeui/dialogs/kmessagebox.cpp:937
 msgid "Sorry"
 msgstr "Хато"
 
-#: kdeui/dialogs/kmessagebox.cpp:991
+#: kdeui/dialogs/kmessagebox.cpp:982
 msgid "Information"
 msgstr "Иттилоот"
 
-#: kdeui/dialogs/kmessagebox.cpp:1009
+#: kdeui/dialogs/kmessagebox.cpp:999
 msgid "Do not show this message again"
 msgstr "Ин иттилоотро боз нишон надиҳед"
 
-#: kdeui/dialogs/kmessagebox.cpp:1054
+#: kdeui/dialogs/kmessagebox.cpp:1044
 #: kdeui/dialogs/kaboutapplicationdialog.cpp:87
 #: kdeui/widgets/khelpmenu.cpp:264 kde3support/kdeui/k3aboutdialog.cpp:1045
 #, kde-format
@@ -10433,7 +10433,7 @@ msgid "a basic web browser using the KHTML library"
 msgstr ""
 
 #: khtml/khtml_run.cpp:95 khtml/khtml_part.cpp:3728 khtml/khtml_part.cpp:3938
-#: khtml/khtml_part.cpp:4330 kparts/browserrun.cpp:455
+#: khtml/khtml_part.cpp:4330 kparts/browserrun.cpp:395
 msgid "Save As"
 msgstr "Нигоҳ доштан ҳамчун"
 
@@ -10701,12 +10701,12 @@ msgstr "Файлро бозномнависӣ мекунед?"
 msgid "Overwrite"
 msgstr "Бозномнависӣ"
 
-#: khtml/khtml_ext.cpp:993 kparts/browserrun.cpp:426
+#: khtml/khtml_ext.cpp:993 kparts/browserrun.cpp:366
 #, kde-format
 msgid "The Download Manager (%1) could not be found in your $PATH "
 msgstr "Не удаётся найти программу менеджера загрузки (%1) в пути $PATH."
 
-#: khtml/khtml_ext.cpp:994 kparts/browserrun.cpp:427
+#: khtml/khtml_ext.cpp:994 kparts/browserrun.cpp:367
 #, fuzzy
 msgid ""
 "Try to reinstall it  \n"
@@ -12244,6 +12244,76 @@ msgstr "Ҷустуҷӯи интернет"
 msgid "&Search"
 msgstr "&Ҷустуҷӯ"
 
+#: kparts/browseropenorsavequestion.cpp:91
+#, fuzzy, kde-format
+#| msgid "Name: "
+msgctxt "@label File name"
+msgid "Name: %1"
+msgstr "Ном:"
+
+#: kparts/browseropenorsavequestion.cpp:92
+msgctxt "@info:whatsthis"
+msgid "This is the file name suggested by the server"
+msgstr ""
+
+#: kparts/browseropenorsavequestion.cpp:102
+#, fuzzy, kde-format
+#| msgid "Re: %1"
+msgctxt "@label Type of file"
+msgid "Type: %1"
+msgstr "Ҷавоб: %1"
+
+#: kparts/browseropenorsavequestion.cpp:109
+#, fuzzy
+#| msgid "Do &not store this time"
+msgctxt "@label:checkbox"
+msgid "Do not ask again for files of this type"
+msgstr "Дар ин &вақт захира накунед"
+
+#: kparts/browseropenorsavequestion.cpp:142
+#: kparts/browseropenorsavequestion.cpp:212
+#, fuzzy, kde-format
+#| msgid "&Open with '%1'"
+msgctxt "@label:button"
+msgid "&Open with %1"
+msgstr "&Кушодан бо '%1'"
+
+#: kparts/browseropenorsavequestion.cpp:188
+#, fuzzy, kde-format
+#| msgid "&Open with '%1'"
+msgctxt "@action:inmenu"
+msgid "Open &with %1"
+msgstr "&Кушодан бо '%1'"
+
+#: kparts/browseropenorsavequestion.cpp:199
+#: kparts/browseropenorsavequestion.cpp:277
+#, fuzzy, kde-format
+#| msgid "Open '%1'"
+msgctxt "@info"
+msgid "Open '%1'?"
+msgstr "Кушодани '%1'"
+
+#: kparts/browseropenorsavequestion.cpp:207
+#, fuzzy
+#| msgid "&Open with..."
+msgctxt "@label:button"
+msgid "&Open with..."
+msgstr "&Кушодан бо..."
+
+#: kparts/browseropenorsavequestion.cpp:218
+#, fuzzy
+#| msgid "&Open with..."
+msgctxt "@label:button"
+msgid "&Open with"
+msgstr "&Кушодан бо..."
+
+#: kparts/browseropenorsavequestion.cpp:274
+#, fuzzy
+#| msgid "&Open"
+msgctxt "@label:button"
+msgid "&Open"
+msgstr "&Кушодан"
+
 #: kparts/part.cpp:757
 msgid "Untitled"
 msgstr "Бесарлавҳа"
@@ -12269,39 +12339,6 @@ msgstr "Оё воқеъан мехоҳед '%1'-ро иҷро кунед? "
 #: kparts/browserrun.cpp:311
 msgid "Execute File?"
 msgstr "Ҷойнавишти файл?"
-
-#: kparts/browserrun.cpp:329
-#, kde-format
-msgid ""
-"Open '%2'?\n"
-"Type: %1"
-msgstr ""
-"Кушодани '%2'?\n"
-"Намуд: %1"
-
-#: kparts/browserrun.cpp:331
-#, kde-format
-msgid ""
-"Open '%3'?\n"
-"Name: %2\n"
-"Type: %1"
-msgstr ""
-"Кушодани '%3'?\n"
-"Ном: %2\n"
-"Намуд: %1"
-
-#: kparts/browserrun.cpp:343
-#, kde-format
-msgid "&Open with '%1'"
-msgstr "&Кушодан бо '%1'"
-
-#: kparts/browserrun.cpp:345
-msgid "&Open with..."
-msgstr "&Кушодан бо..."
-
-#: kparts/browserrun.cpp:389
-msgid "&Open"
-msgstr "&Кушодан"
 
 #: kutils/kcmoduleloader.cpp:75
 #, kde-format
@@ -13384,6 +13421,22 @@ msgstr "Хабари &рӯз"
 #, kde-format
 msgid "No such function \"%1\""
 msgstr "Чунин вазифа мавҷуд нест \"%1\""
+
+#~ msgid ""
+#~ "Open '%2'?\n"
+#~ "Type: %1"
+#~ msgstr ""
+#~ "Кушодани '%2'?\n"
+#~ "Намуд: %1"
+
+#~ msgid ""
+#~ "Open '%3'?\n"
+#~ "Name: %2\n"
+#~ "Type: %1"
+#~ msgstr ""
+#~ "Кушодани '%3'?\n"
+#~ "Ном: %2\n"
+#~ "Намуд: %1"
 
 #~ msgid "Path for the trash can"
 #~ msgstr "Роҳча барои қуттӣ"
