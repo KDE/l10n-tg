@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-12 07:19+0200\n"
+"POT-Creation-Date: 2009-10-16 06:21+0200\n"
 "PO-Revision-Date: 2008-10-07 03:46-0800\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik Language\n"
@@ -68,25 +68,6 @@ msgctxt "@option:radio <City> is the capital of..."
 msgid "%1"
 msgstr "%1"
 
-#: capitaldivisionasker.cpp:34
-#, kde-format
-msgctxt "@title:group"
-msgid "%1 is the capital of..."
-msgstr "Пойтахти %1 муайян кунед..."
-
-#: capitaldivisionasker.cpp:65
-#, kde-format
-msgctxt "@title"
-msgid "%1 by Capital"
-msgstr "%1ро бо пойтахташон"
-
-#: divisioncapitalasker.cpp:31
-#, fuzzy, kde-format
-#| msgid "The capital of %1 is..."
-msgctxt "@title:group"
-msgid "The capital of %1 is..."
-msgstr "Пойтахти %1 муайян кунед..."
-
 #: divisioncapitalasker.cpp:32 divisionflagasker.cpp:34 mapasker.cpp:154
 #: placeasker.cpp:118
 #, kde-format
@@ -100,12 +81,6 @@ msgstr "%1"
 msgctxt "@option:radio The capital of <Region> is..."
 msgid "%1"
 msgstr "%1"
-
-#: divisioncapitalasker.cpp:81
-#, fuzzy, kde-format
-msgctxt "@title"
-msgid "Capital of %1"
-msgstr "Пойтахти кишвар"
 
 #: divisionflagasker.cpp:32
 #, fuzzy, kde-format
@@ -276,16 +251,6 @@ msgstr "&Мавқеи %1"
 msgid "&Place %1 in the Map"
 msgstr ""
 
-#: kgeography.cpp:382
-#, kde-format
-msgid "%1 by Capital"
-msgstr ""
-
-#: kgeography.cpp:383
-#, fuzzy, kde-format
-msgid "&Capitals of %1"
-msgstr "Пойтахти кишвар"
-
 #: kgeography.cpp:384
 #, kde-format
 msgid "%1 by Flag"
@@ -408,27 +373,37 @@ msgstr "Саҳв дар кушодани %1: %2"
 msgid "Error parsing"
 msgstr "Саҳв дар кушодани %1: %2"
 
-#: map.cpp:119
+#: map.cpp:161
 #, fuzzy
 msgid "Regions"
 msgstr "Регина"
 
-#: mapparser.cpp:48
+#: mapparser.cpp:49
 #, fuzzy, kde-format
 msgid "The map image file for %1 does not exist"
 msgstr "Файли %1 вуҷуд надорад"
 
-#: mapparser.cpp:75
+#: mapparser.cpp:83
+#, kde-format
+msgid "%1 by Capital"
+msgstr ""
+
+#: mapparser.cpp:93
+#, fuzzy, kde-format
+msgid "&Capitals of %1"
+msgstr "Пойтахти кишвар"
+
+#: mapparser.cpp:118
 #, fuzzy, kde-format
 msgid "The flag image file for %1 does not exist"
 msgstr "Файли %1 вуҷуд надорад"
 
-#: mapparser.cpp:89
+#: mapparser.cpp:132
 #, kde-format
 msgid "Invalid value in tag %1"
 msgstr "Мазмуни нораво дар теги %1"
 
-#: mapparser.cpp:112
+#: mapparser.cpp:155
 #, kde-format
 msgid ""
 "There is already either a division called %1 or a division with the same "
@@ -437,27 +412,27 @@ msgstr ""
 "Кишвар ва ё минтақа бо номи %1 аллакай муайян гаштааст ва ё ранги амалишудаи "
 "%2 истифода мешавад"
 
-#: mapparser.cpp:121
+#: mapparser.cpp:164
 #, kde-format
 msgid "The map description file should begin with the %1 tag"
 msgstr "Файли тасвири харита бояд бо теги %1 сар шавад"
 
-#: mapparser.cpp:127
+#: mapparser.cpp:170
 #, kde-format
 msgid "Could not open %1 for reading."
 msgstr ""
 
-#: mapparser.cpp:132
+#: mapparser.cpp:175
 #, kde-format
 msgid "%1 does not exist."
 msgstr "%1 вуҷуд надорад."
 
-#: mapparser.cpp:156 mapparser.cpp:178
+#: mapparser.cpp:199 mapparser.cpp:221
 #, fuzzy, kde-format
 msgid "The map description file should have a %1 tag inside %2"
 msgstr "Файли тасвири харита бояд бо теги %1 сар шавад"
 
-#: mapparser.cpp:167 mapparser.cpp:184
+#: mapparser.cpp:210 mapparser.cpp:227
 #, fuzzy, kde-format
 msgid "The map description file should have exactly one %1 tag inside %2"
 msgstr "Файли тасвири харита бояд бо теги %1 сар шавад"
@@ -40590,6 +40565,28 @@ msgid "Continents"
 msgstr "Департаменти Кантал"
 
 #: mapsdatatranslation.cpp:6805
+#, kde-format
+msgctxt "@title:group"
+msgid "What is the highest summit of %1 ?"
+msgstr ""
+
+#: mapsdatatranslation.cpp:6806
+msgctxt "@title"
+msgid "Continents by highest summit"
+msgstr ""
+
+#: mapsdatatranslation.cpp:6807
+#, kde-format
+msgctxt "@title:group"
+msgid "Which has %1 as highest summit ?"
+msgstr ""
+
+#: mapsdatatranslation.cpp:6808
+msgctxt "@title"
+msgid "Highest summit of continents"
+msgstr ""
+
+#: mapsdatatranslation.cpp:6809
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Frontier"
@@ -40597,7 +40594,7 @@ msgctxt "world_continents.kgm"
 msgid "Frontier"
 msgstr "Сарҳад"
 
-#: mapsdatatranslation.cpp:6806
+#: mapsdatatranslation.cpp:6810
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Water"
@@ -40605,7 +40602,7 @@ msgctxt "world_continents.kgm"
 msgid "Water"
 msgstr "Обҳо"
 
-#: mapsdatatranslation.cpp:6807
+#: mapsdatatranslation.cpp:6811
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Africa"
@@ -40613,7 +40610,7 @@ msgctxt "world_continents.kgm"
 msgid "Africa"
 msgstr "Африка"
 
-#: mapsdatatranslation.cpp:6808
+#: mapsdatatranslation.cpp:6812
 #, fuzzy
 #| msgctxt "norway.kgm"
 #| msgid "Hamar"
@@ -40621,7 +40618,7 @@ msgctxt "world_continents.kgm"
 msgid "Kilimanjaro"
 msgstr "Хамар"
 
-#: mapsdatatranslation.cpp:6809
+#: mapsdatatranslation.cpp:6813
 #, fuzzy
 #| msgctxt "southamerica.kgm"
 #| msgid "South America"
@@ -40629,7 +40626,7 @@ msgctxt "world_continents.kgm"
 msgid "North America"
 msgstr "Амрикои Ҷанубӣ"
 
-#: mapsdatatranslation.cpp:6810
+#: mapsdatatranslation.cpp:6814
 #, fuzzy
 #| msgctxt "usa.kgm"
 #| msgid "Maine"
@@ -40637,7 +40634,7 @@ msgctxt "world_continents.kgm"
 msgid "Mac Kinley"
 msgstr "Штати Мэн"
 
-#: mapsdatatranslation.cpp:6811
+#: mapsdatatranslation.cpp:6815
 #, fuzzy
 #| msgctxt "southamerica.kgm"
 #| msgid "South America"
@@ -40645,7 +40642,7 @@ msgctxt "world_continents.kgm"
 msgid "South America"
 msgstr "Амрикои Ҷанубӣ"
 
-#: mapsdatatranslation.cpp:6812
+#: mapsdatatranslation.cpp:6816
 #, fuzzy
 #| msgctxt "italy.kgm"
 #| msgid "Ancona"
@@ -40653,7 +40650,7 @@ msgctxt "world_continents.kgm"
 msgid "Aconcagua"
 msgstr "Анкона"
 
-#: mapsdatatranslation.cpp:6813
+#: mapsdatatranslation.cpp:6817
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Africa"
@@ -40661,7 +40658,7 @@ msgctxt "world_continents.kgm"
 msgid "Antartica"
 msgstr "Африка"
 
-#: mapsdatatranslation.cpp:6814
+#: mapsdatatranslation.cpp:6818
 #, fuzzy
 #| msgctxt "ncamerica.kgm"
 #| msgid "Kingston"
@@ -40669,7 +40666,7 @@ msgctxt "world_continents.kgm"
 msgid "Vinson"
 msgstr "Кингстон"
 
-#: mapsdatatranslation.cpp:6815
+#: mapsdatatranslation.cpp:6819
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Asia"
@@ -40677,7 +40674,7 @@ msgctxt "world_continents.kgm"
 msgid "Asia"
 msgstr "Осиё"
 
-#: mapsdatatranslation.cpp:6816
+#: mapsdatatranslation.cpp:6820
 #, fuzzy
 #| msgctxt "europe.kgm"
 #| msgid "Bucharest"
@@ -40685,7 +40682,7 @@ msgctxt "world_continents.kgm"
 msgid "Everest"
 msgstr "Бухарест"
 
-#: mapsdatatranslation.cpp:6817
+#: mapsdatatranslation.cpp:6821
 #, fuzzy
 #| msgctxt "europe.kgm"
 #| msgid "Europe"
@@ -40693,7 +40690,7 @@ msgctxt "world_continents.kgm"
 msgid "Europe"
 msgstr "Аврупо"
 
-#: mapsdatatranslation.cpp:6818
+#: mapsdatatranslation.cpp:6822
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Cyprus"
@@ -40701,7 +40698,7 @@ msgctxt "world_continents.kgm"
 msgid "Elbrus"
 msgstr "Кипр"
 
-#: mapsdatatranslation.cpp:6819
+#: mapsdatatranslation.cpp:6823
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Oman"
@@ -40709,7 +40706,7 @@ msgctxt "world_continents.kgm"
 msgid "Oceania"
 msgstr "Уммон"
 
-#: mapsdatatranslation.cpp:6820
+#: mapsdatatranslation.cpp:6824
 #, fuzzy
 #| msgctxt "italyprovince.kgm"
 #| msgid "Catania"
@@ -40717,7 +40714,7 @@ msgctxt "world_continents.kgm"
 msgid "Carstenz"
 msgstr "Музофоти Катания"
 
-#: mapsdatatranslation.cpp:6821
+#: mapsdatatranslation.cpp:6825
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Yemen"
@@ -40725,7 +40722,7 @@ msgctxt "yemen.kgm"
 msgid "Yemen"
 msgstr "Яман"
 
-#: mapsdatatranslation.cpp:6822
+#: mapsdatatranslation.cpp:6826
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Kenya"
@@ -40733,7 +40730,7 @@ msgctxt "yemen.kgm"
 msgid "Governorates"
 msgstr "Кения"
 
-#: mapsdatatranslation.cpp:6823
+#: mapsdatatranslation.cpp:6827
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Frontier"
@@ -40741,7 +40738,7 @@ msgctxt "yemen.kgm"
 msgid "Frontier"
 msgstr "Сарҳад"
 
-#: mapsdatatranslation.cpp:6824
+#: mapsdatatranslation.cpp:6828
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Water"
@@ -40749,7 +40746,7 @@ msgctxt "yemen.kgm"
 msgid "Water"
 msgstr "Обҳо"
 
-#: mapsdatatranslation.cpp:6825
+#: mapsdatatranslation.cpp:6829
 #, fuzzy
 #| msgctxt "europe.kgm"
 #| msgid "Sweden"
@@ -40757,7 +40754,7 @@ msgctxt "yemen.kgm"
 msgid "Not Yemen"
 msgstr "Шветсия"
 
-#: mapsdatatranslation.cpp:6826
+#: mapsdatatranslation.cpp:6830
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Accra"
@@ -40765,7 +40762,7 @@ msgctxt "yemen.kgm"
 msgid "Abyan"
 msgstr "Аккра"
 
-#: mapsdatatranslation.cpp:6827
+#: mapsdatatranslation.cpp:6831
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Astana"
@@ -40773,12 +40770,12 @@ msgctxt "yemen.kgm"
 msgid "'Adan"
 msgstr "Астана"
 
-#: mapsdatatranslation.cpp:6828
+#: mapsdatatranslation.cpp:6832
 msgctxt "yemen.kgm"
 msgid "Ad Dali'"
 msgstr ""
 
-#: mapsdatatranslation.cpp:6829
+#: mapsdatatranslation.cpp:6833
 #, fuzzy
 #| msgctxt "usa.kgm"
 #| msgid "Alaska"
@@ -40786,7 +40783,7 @@ msgctxt "yemen.kgm"
 msgid "Al Bayda'"
 msgstr "Штати Аляска"
 
-#: mapsdatatranslation.cpp:6830
+#: mapsdatatranslation.cpp:6834
 #, fuzzy
 #| msgctxt "brazil.kgm"
 #| msgid "Bahia"
@@ -40794,12 +40791,12 @@ msgctxt "yemen.kgm"
 msgid "Al Hudaydah"
 msgstr "Штати Баия"
 
-#: mapsdatatranslation.cpp:6831
+#: mapsdatatranslation.cpp:6835
 msgctxt "yemen.kgm"
 msgid "Al Jawf"
 msgstr ""
 
-#: mapsdatatranslation.cpp:6832
+#: mapsdatatranslation.cpp:6836
 #, fuzzy
 #| msgctxt "brazil.kgm"
 #| msgid "Bahia"
@@ -40807,7 +40804,7 @@ msgctxt "yemen.kgm"
 msgid "Al Mahri"
 msgstr "Штати Баия"
 
-#: mapsdatatranslation.cpp:6833
+#: mapsdatatranslation.cpp:6837
 #, fuzzy
 #| msgctxt "brazil.kgm"
 #| msgid "Bahia"
@@ -40815,7 +40812,7 @@ msgctxt "yemen.kgm"
 msgid "Al Mahwit"
 msgstr "Штати Баия"
 
-#: mapsdatatranslation.cpp:6834
+#: mapsdatatranslation.cpp:6838
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Amman"
@@ -40823,7 +40820,7 @@ msgctxt "yemen.kgm"
 msgid "'Amran"
 msgstr "Уммон"
 
-#: mapsdatatranslation.cpp:6835
+#: mapsdatatranslation.cpp:6839
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Dakar"
@@ -40831,12 +40828,12 @@ msgctxt "yemen.kgm"
 msgid "Dhamar"
 msgstr "Дакар"
 
-#: mapsdatatranslation.cpp:6836
+#: mapsdatatranslation.cpp:6840
 msgctxt "yemen.kgm"
 msgid "Hadramaout"
 msgstr ""
 
-#: mapsdatatranslation.cpp:6837
+#: mapsdatatranslation.cpp:6841
 #, fuzzy
 #| msgctxt "norway.kgm"
 #| msgid "Hamar"
@@ -40844,7 +40841,7 @@ msgctxt "yemen.kgm"
 msgid "Hajjah"
 msgstr "Хамар"
 
-#: mapsdatatranslation.cpp:6838
+#: mapsdatatranslation.cpp:6842
 #, fuzzy
 #| msgctxt "europe.kgm"
 #| msgid "Prague"
@@ -40852,7 +40849,7 @@ msgctxt "yemen.kgm"
 msgid "Ibb"
 msgstr "Прага"
 
-#: mapsdatatranslation.cpp:6839
+#: mapsdatatranslation.cpp:6843
 #, fuzzy
 #| msgctxt "europe.kgm"
 #| msgid "Latvia"
@@ -40860,7 +40857,7 @@ msgctxt "yemen.kgm"
 msgid "Lahij"
 msgstr "Латвия"
 
-#: mapsdatatranslation.cpp:6840
+#: mapsdatatranslation.cpp:6844
 #, fuzzy
 #| msgctxt "southamerica.kgm"
 #| msgid "Paramaribo"
@@ -40868,7 +40865,7 @@ msgctxt "yemen.kgm"
 msgid "Ma'rib"
 msgstr "Парамарибо"
 
-#: mapsdatatranslation.cpp:6841
+#: mapsdatatranslation.cpp:6845
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Somalia"
@@ -40876,7 +40873,7 @@ msgctxt "yemen.kgm"
 msgid "Sa'dah"
 msgstr "Сомалӣ"
 
-#: mapsdatatranslation.cpp:6842
+#: mapsdatatranslation.cpp:6846
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Sana'a"
@@ -40884,7 +40881,7 @@ msgctxt "yemen.kgm"
 msgid "Sanaa"
 msgstr "Санъо"
 
-#: mapsdatatranslation.cpp:6843
+#: mapsdatatranslation.cpp:6847
 #, fuzzy
 #| msgctxt "china.kgm"
 #| msgid "Shanghai"
@@ -40892,7 +40889,7 @@ msgctxt "yemen.kgm"
 msgid "Shabwah"
 msgstr "Шанхай"
 
-#: mapsdatatranslation.cpp:6844
+#: mapsdatatranslation.cpp:6848
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Taiwan"
@@ -40900,7 +40897,7 @@ msgctxt "yemen.kgm"
 msgid "Ta'izz"
 msgstr "Тайван"
 
-#: mapsdatatranslation.cpp:6845
+#: mapsdatatranslation.cpp:6849
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Democratic Republic of the Congo"
@@ -40908,12 +40905,12 @@ msgctxt "zaire2006.kgm"
 msgid "Democratic Republic of the Congo"
 msgstr "Ҷумҳурии Демократии Конго"
 
-#: mapsdatatranslation.cpp:6846
+#: mapsdatatranslation.cpp:6850
 msgctxt "zaire2006.kgm"
 msgid "Provinces"
 msgstr "Провинсияҳо"
 
-#: mapsdatatranslation.cpp:6847
+#: mapsdatatranslation.cpp:6851
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Frontier"
@@ -40921,7 +40918,7 @@ msgctxt "zaire2006.kgm"
 msgid "Frontier"
 msgstr "Сарҳад"
 
-#: mapsdatatranslation.cpp:6848
+#: mapsdatatranslation.cpp:6852
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Water"
@@ -40929,7 +40926,7 @@ msgctxt "zaire2006.kgm"
 msgid "Water"
 msgstr "Обҳо"
 
-#: mapsdatatranslation.cpp:6849
+#: mapsdatatranslation.cpp:6853
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Democratic Republic of the Congo"
@@ -40937,7 +40934,7 @@ msgctxt "zaire2006.kgm"
 msgid "Not Democratic Republic of the Congo"
 msgstr "Ҷумҳурии Демократии Конго"
 
-#: mapsdatatranslation.cpp:6850 mapsdatatranslation.cpp:6851
+#: mapsdatatranslation.cpp:6854 mapsdatatranslation.cpp:6855
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Kinshasa"
@@ -40945,12 +40942,12 @@ msgctxt "zaire2006.kgm"
 msgid "Kinshasa"
 msgstr "Киншаса"
 
-#: mapsdatatranslation.cpp:6852
+#: mapsdatatranslation.cpp:6856
 msgctxt "zaire2006.kgm"
 msgid "Kongo central"
 msgstr ""
 
-#: mapsdatatranslation.cpp:6853
+#: mapsdatatranslation.cpp:6857
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Malawi"
@@ -40958,7 +40955,7 @@ msgctxt "zaire2006.kgm"
 msgid "Matadi"
 msgstr "Малави"
 
-#: mapsdatatranslation.cpp:6854
+#: mapsdatatranslation.cpp:6858
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Bangkok"
@@ -40966,7 +40963,7 @@ msgctxt "zaire2006.kgm"
 msgid "Kwango"
 msgstr "Бангкок"
 
-#: mapsdatatranslation.cpp:6855
+#: mapsdatatranslation.cpp:6859
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Beijing"
@@ -40974,7 +40971,7 @@ msgctxt "zaire2006.kgm"
 msgid "Kenge"
 msgstr "Пекин"
 
-#: mapsdatatranslation.cpp:6856
+#: mapsdatatranslation.cpp:6860
 #, fuzzy
 #| msgctxt "germany.kgm"
 #| msgid "Kiel"
@@ -40982,7 +40979,7 @@ msgctxt "zaire2006.kgm"
 msgid "Kwilu"
 msgstr "Кил"
 
-#: mapsdatatranslation.cpp:6857
+#: mapsdatatranslation.cpp:6861
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Kuwait"
@@ -40990,12 +40987,12 @@ msgctxt "zaire2006.kgm"
 msgid "Kikwit"
 msgstr "Кувайт"
 
-#: mapsdatatranslation.cpp:6858
+#: mapsdatatranslation.cpp:6862
 msgctxt "zaire2006.kgm"
 msgid "Mai-Ndombe"
 msgstr ""
 
-#: mapsdatatranslation.cpp:6859
+#: mapsdatatranslation.cpp:6863
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Manche"
@@ -41003,7 +41000,7 @@ msgctxt "zaire2006.kgm"
 msgid "Inongo"
 msgstr "Департаменти Манш"
 
-#: mapsdatatranslation.cpp:6860
+#: mapsdatatranslation.cpp:6864
 #, fuzzy
 #| msgctxt "usa.kgm"
 #| msgid "Kansas"
@@ -41011,7 +41008,7 @@ msgctxt "zaire2006.kgm"
 msgid "Kasaï"
 msgstr "Штати Канзас"
 
-#: mapsdatatranslation.cpp:6861
+#: mapsdatatranslation.cpp:6865
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Lebanon"
@@ -41019,7 +41016,7 @@ msgctxt "zaire2006.kgm"
 msgid "Luebo"
 msgstr "Лубнон"
 
-#: mapsdatatranslation.cpp:6862
+#: mapsdatatranslation.cpp:6866
 #, fuzzy
 #| msgctxt "italy.kgm"
 #| msgid "L'Aquila"
@@ -41027,7 +41024,7 @@ msgctxt "zaire2006.kgm"
 msgid "Lulua"
 msgstr "Л'Аквила"
 
-#: mapsdatatranslation.cpp:6863
+#: mapsdatatranslation.cpp:6867
 #, fuzzy
 #| msgctxt "ncamerica.kgm"
 #| msgid "Managua"
@@ -41035,17 +41032,17 @@ msgctxt "zaire2006.kgm"
 msgid "Kananga"
 msgstr "Манагуа"
 
-#: mapsdatatranslation.cpp:6864
+#: mapsdatatranslation.cpp:6868
 msgctxt "zaire2006.kgm"
 msgid "Kasaï oriental"
 msgstr ""
 
-#: mapsdatatranslation.cpp:6865
+#: mapsdatatranslation.cpp:6869
 msgctxt "zaire2006.kgm"
 msgid "Mbuji-Mayi"
 msgstr ""
 
-#: mapsdatatranslation.cpp:6866
+#: mapsdatatranslation.cpp:6870
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Zambia"
@@ -41053,7 +41050,7 @@ msgctxt "zaire2006.kgm"
 msgid "Lomami"
 msgstr "Замбия"
 
-#: mapsdatatranslation.cpp:6867
+#: mapsdatatranslation.cpp:6871
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Tanzania"
@@ -41061,7 +41058,7 @@ msgctxt "zaire2006.kgm"
 msgid "Kabinda"
 msgstr "Танзания"
 
-#: mapsdatatranslation.cpp:6868
+#: mapsdatatranslation.cpp:6872
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Baku"
@@ -41069,7 +41066,7 @@ msgctxt "zaire2006.kgm"
 msgid "Sankuru"
 msgstr "Боку"
 
-#: mapsdatatranslation.cpp:6869
+#: mapsdatatranslation.cpp:6873
 #, fuzzy
 #| msgctxt "spain.kgm"
 #| msgid "La Rioja"
@@ -41077,7 +41074,7 @@ msgctxt "zaire2006.kgm"
 msgid "Lodja"
 msgstr "Минтақаи худмухтори Ла Риоха"
 
-#: mapsdatatranslation.cpp:6870
+#: mapsdatatranslation.cpp:6874
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Manama"
@@ -41085,7 +41082,7 @@ msgctxt "zaire2006.kgm"
 msgid "Maniema"
 msgstr "Манама"
 
-#: mapsdatatranslation.cpp:6871
+#: mapsdatatranslation.cpp:6875
 #, fuzzy
 #| msgctxt "ncamerica.kgm"
 #| msgid "Honduras"
@@ -41093,12 +41090,12 @@ msgctxt "zaire2006.kgm"
 msgid "Kindu"
 msgstr "Гондурас"
 
-#: mapsdatatranslation.cpp:6872
+#: mapsdatatranslation.cpp:6876
 msgctxt "zaire2006.kgm"
 msgid "Sud-Kivu"
 msgstr ""
 
-#: mapsdatatranslation.cpp:6873
+#: mapsdatatranslation.cpp:6877
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Bhutan"
@@ -41106,7 +41103,7 @@ msgctxt "zaire2006.kgm"
 msgid "Bukavu"
 msgstr "Бутон"
 
-#: mapsdatatranslation.cpp:6874
+#: mapsdatatranslation.cpp:6878
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Nord"
@@ -41114,7 +41111,7 @@ msgctxt "zaire2006.kgm"
 msgid "Nord-Kivu"
 msgstr "Департаменти Нор"
 
-#: mapsdatatranslation.cpp:6875
+#: mapsdatatranslation.cpp:6879
 #, fuzzy
 #| msgctxt "brazil.kgm"
 #| msgid "Goias"
@@ -41122,7 +41119,7 @@ msgctxt "zaire2006.kgm"
 msgid "Goma"
 msgstr "Штати Гояс"
 
-#: mapsdatatranslation.cpp:6876
+#: mapsdatatranslation.cpp:6880
 #, fuzzy
 #| msgctxt "italy.kgm"
 #| msgid "Bari"
@@ -41130,7 +41127,7 @@ msgctxt "zaire2006.kgm"
 msgid "Ituri"
 msgstr "Бари"
 
-#: mapsdatatranslation.cpp:6877
+#: mapsdatatranslation.cpp:6881
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Brunei"
@@ -41138,7 +41135,7 @@ msgctxt "zaire2006.kgm"
 msgid "Bunia"
 msgstr "Бруней"
 
-#: mapsdatatranslation.cpp:6878
+#: mapsdatatranslation.cpp:6882
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Hautes-Alpes"
@@ -41146,17 +41143,17 @@ msgctxt "zaire2006.kgm"
 msgid "Haut-Uele"
 msgstr "Департаменти Алпҳои Боло"
 
-#: mapsdatatranslation.cpp:6879
+#: mapsdatatranslation.cpp:6883
 msgctxt "zaire2006.kgm"
 msgid "Isiro"
 msgstr ""
 
-#: mapsdatatranslation.cpp:6880
+#: mapsdatatranslation.cpp:6884
 msgctxt "zaire2006.kgm"
 msgid "Tshopo"
 msgstr ""
 
-#: mapsdatatranslation.cpp:6881
+#: mapsdatatranslation.cpp:6885
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Kigali"
@@ -41164,7 +41161,7 @@ msgctxt "zaire2006.kgm"
 msgid "Kisangani"
 msgstr "Кигали"
 
-#: mapsdatatranslation.cpp:6882
+#: mapsdatatranslation.cpp:6886
 #, fuzzy
 #| msgctxt "brazil.kgm"
 #| msgid "Belem"
@@ -41172,7 +41169,7 @@ msgctxt "zaire2006.kgm"
 msgid "Bas-Uele"
 msgstr "Белем"
 
-#: mapsdatatranslation.cpp:6883
+#: mapsdatatranslation.cpp:6887
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Bhutan"
@@ -41180,7 +41177,7 @@ msgctxt "zaire2006.kgm"
 msgid "Buta"
 msgstr "Бутон"
 
-#: mapsdatatranslation.cpp:6884
+#: mapsdatatranslation.cpp:6888
 #, fuzzy
 #| msgctxt "norway.kgm"
 #| msgid "Nordland"
@@ -41188,12 +41185,12 @@ msgctxt "zaire2006.kgm"
 msgid "Nord-Ubangi"
 msgstr "Фюлкеи Нурланн"
 
-#: mapsdatatranslation.cpp:6885
+#: mapsdatatranslation.cpp:6889
 msgctxt "zaire2006.kgm"
 msgid "Gbadolite"
 msgstr ""
 
-#: mapsdatatranslation.cpp:6886
+#: mapsdatatranslation.cpp:6890
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Mongolia"
@@ -41201,7 +41198,7 @@ msgctxt "zaire2006.kgm"
 msgid "Mongala"
 msgstr "Монголия"
 
-#: mapsdatatranslation.cpp:6887
+#: mapsdatatranslation.cpp:6891
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Lusaka"
@@ -41209,7 +41206,7 @@ msgctxt "zaire2006.kgm"
 msgid "Lisala"
 msgstr "Лусака"
 
-#: mapsdatatranslation.cpp:6888
+#: mapsdatatranslation.cpp:6892
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Sudan"
@@ -41217,7 +41214,7 @@ msgctxt "zaire2006.kgm"
 msgid "Sud-Ubangi"
 msgstr "Судон"
 
-#: mapsdatatranslation.cpp:6889
+#: mapsdatatranslation.cpp:6893
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Yemen"
@@ -41225,12 +41222,12 @@ msgctxt "zaire2006.kgm"
 msgid "Gemena"
 msgstr "Яман"
 
-#: mapsdatatranslation.cpp:6890
+#: mapsdatatranslation.cpp:6894
 msgctxt "zaire2006.kgm"
 msgid "Équateur"
 msgstr ""
 
-#: mapsdatatranslation.cpp:6891
+#: mapsdatatranslation.cpp:6895
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Manama"
@@ -41238,7 +41235,7 @@ msgctxt "zaire2006.kgm"
 msgid "Mbandaka"
 msgstr "Манама"
 
-#: mapsdatatranslation.cpp:6892
+#: mapsdatatranslation.cpp:6896
 #, fuzzy
 #| msgctxt "europe.kgm"
 #| msgid "Lithuania"
@@ -41246,7 +41243,7 @@ msgctxt "zaire2006.kgm"
 msgid "Tshuapa"
 msgstr "Литва"
 
-#: mapsdatatranslation.cpp:6893
+#: mapsdatatranslation.cpp:6897
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Mende"
@@ -41254,7 +41251,7 @@ msgctxt "zaire2006.kgm"
 msgid "Boende"
 msgstr "Манд"
 
-#: mapsdatatranslation.cpp:6894
+#: mapsdatatranslation.cpp:6898
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Tanzania"
@@ -41262,7 +41259,7 @@ msgctxt "zaire2006.kgm"
 msgid "Tanganyika"
 msgstr "Танзания"
 
-#: mapsdatatranslation.cpp:6895
+#: mapsdatatranslation.cpp:6899
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Valence"
@@ -41270,7 +41267,7 @@ msgctxt "zaire2006.kgm"
 msgid "Kalemie"
 msgstr "Валанс"
 
-#: mapsdatatranslation.cpp:6896
+#: mapsdatatranslation.cpp:6900
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Haute-Loire"
@@ -41278,7 +41275,7 @@ msgctxt "zaire2006.kgm"
 msgid "Haut-Lomami"
 msgstr "Департаменти Луараи Боло"
 
-#: mapsdatatranslation.cpp:6897
+#: mapsdatatranslation.cpp:6901
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Zambia"
@@ -41286,7 +41283,7 @@ msgctxt "zaire2006.kgm"
 msgid "Kamina"
 msgstr "Замбия"
 
-#: mapsdatatranslation.cpp:6898
+#: mapsdatatranslation.cpp:6902
 #, fuzzy
 #| msgctxt "southamerica.kgm"
 #| msgid "La Paz"
@@ -41294,7 +41291,7 @@ msgctxt "zaire2006.kgm"
 msgid "Lualaba"
 msgstr "Ла-Пас"
 
-#: mapsdatatranslation.cpp:6899
+#: mapsdatatranslation.cpp:6903
 #, fuzzy
 #| msgctxt "europe.kgm"
 #| msgid "Romania"
@@ -41302,7 +41299,7 @@ msgctxt "zaire2006.kgm"
 msgid "Kolwezi"
 msgstr "Руминия"
 
-#: mapsdatatranslation.cpp:6900
+#: mapsdatatranslation.cpp:6904
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Haute-Marne"
@@ -41310,7 +41307,7 @@ msgctxt "zaire2006.kgm"
 msgid "Haut-Katanga"
 msgstr "Департаменти Марнаи Боло"
 
-#: mapsdatatranslation.cpp:6901
+#: mapsdatatranslation.cpp:6905
 #, fuzzy
 #| msgctxt "poland.kgm"
 #| msgid "Lubusz"
@@ -41318,7 +41315,7 @@ msgctxt "zaire2006.kgm"
 msgid "Lubumbashi"
 msgstr "Воеводствои Любушскӣ"
 
-#: mapsdatatranslation.cpp:6902
+#: mapsdatatranslation.cpp:6906
 #, fuzzy
 #| msgctxt "brazil.kgm"
 #| msgid "Federal District"
@@ -41326,7 +41323,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Zambia (Districts)"
 msgstr "Округи Федеролӣ"
 
-#: mapsdatatranslation.cpp:6903
+#: mapsdatatranslation.cpp:6907
 #, fuzzy
 #| msgctxt "brazil.kgm"
 #| msgid "Federal District"
@@ -41334,7 +41331,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Districts"
 msgstr "Округи Федеролӣ"
 
-#: mapsdatatranslation.cpp:6904
+#: mapsdatatranslation.cpp:6908
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Frontier"
@@ -41342,7 +41339,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Frontier"
 msgstr "Сарҳад"
 
-#: mapsdatatranslation.cpp:6905
+#: mapsdatatranslation.cpp:6909
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Water"
@@ -41350,7 +41347,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Water"
 msgstr "Обҳо"
 
-#: mapsdatatranslation.cpp:6906
+#: mapsdatatranslation.cpp:6910
 #, fuzzy
 #| msgctxt "brazil.kgm"
 #| msgid "Federal District"
@@ -41358,7 +41355,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Not Zambia (Districts)"
 msgstr "Округи Федеролӣ"
 
-#: mapsdatatranslation.cpp:6907
+#: mapsdatatranslation.cpp:6911
 #, fuzzy
 #| msgctxt "italyprovince.kgm"
 #| msgid "Como"
@@ -41366,7 +41363,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Chibombo"
 msgstr "Музофоти Комо"
 
-#: mapsdatatranslation.cpp:6908
+#: mapsdatatranslation.cpp:6912
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Zimbabwe"
@@ -41374,12 +41371,12 @@ msgctxt "zambia_districts.kgm"
 msgid "Kabwe"
 msgstr "Зимбабве"
 
-#: mapsdatatranslation.cpp:6909
+#: mapsdatatranslation.cpp:6913
 msgctxt "zambia_districts.kgm"
 msgid "Kapiri Mposhi"
 msgstr ""
 
-#: mapsdatatranslation.cpp:6910
+#: mapsdatatranslation.cpp:6914
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Tunisia"
@@ -41387,7 +41384,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Mkushi"
 msgstr "Тунис"
 
-#: mapsdatatranslation.cpp:6911
+#: mapsdatatranslation.cpp:6915
 #, fuzzy
 #| msgctxt "italyprovince.kgm"
 #| msgid "Modena"
@@ -41395,7 +41392,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Mumbwa"
 msgstr "Музофоти Модена"
 
-#: mapsdatatranslation.cpp:6912
+#: mapsdatatranslation.cpp:6916
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Beijing"
@@ -41403,12 +41400,12 @@ msgctxt "zambia_districts.kgm"
 msgid "Serenje"
 msgstr "Пекин"
 
-#: mapsdatatranslation.cpp:6913
+#: mapsdatatranslation.cpp:6917
 msgctxt "zambia_districts.kgm"
 msgid "Chililabombwe"
 msgstr ""
 
-#: mapsdatatranslation.cpp:6914
+#: mapsdatatranslation.cpp:6918
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "China"
@@ -41416,7 +41413,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Chingola"
 msgstr "Хитой"
 
-#: mapsdatatranslation.cpp:6915
+#: mapsdatatranslation.cpp:6919
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Kabul"
@@ -41424,7 +41421,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Kalulushi"
 msgstr "Кобул"
 
-#: mapsdatatranslation.cpp:6916
+#: mapsdatatranslation.cpp:6920
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Nantes"
@@ -41432,7 +41429,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Kitwe"
 msgstr "Нант"
 
-#: mapsdatatranslation.cpp:6917
+#: mapsdatatranslation.cpp:6921
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Luanda"
@@ -41440,7 +41437,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Luanshya"
 msgstr "Луанда"
 
-#: mapsdatatranslation.cpp:6918
+#: mapsdatatranslation.cpp:6922
 #, fuzzy
 #| msgctxt "ncamerica.kgm"
 #| msgid "Guyana"
@@ -41448,7 +41445,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Lufwanyama"
 msgstr "Гайана"
 
-#: mapsdatatranslation.cpp:6919
+#: mapsdatatranslation.cpp:6923
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Maputo"
@@ -41456,7 +41453,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Masaiti"
 msgstr "Мапуту"
 
-#: mapsdatatranslation.cpp:6920
+#: mapsdatatranslation.cpp:6924
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Lilongwe"
@@ -41464,7 +41461,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Mpongwe"
 msgstr "Лилонгве"
 
-#: mapsdatatranslation.cpp:6921
+#: mapsdatatranslation.cpp:6925
 #, fuzzy
 #| msgctxt "world.kgm"
 #| msgid "Monaco"
@@ -41472,7 +41469,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Mufulira"
 msgstr "Монако"
 
-#: mapsdatatranslation.cpp:6922
+#: mapsdatatranslation.cpp:6926
 #, fuzzy
 #| msgctxt "usa.kgm"
 #| msgid "Nevada"
@@ -41480,7 +41477,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Ndola"
 msgstr "Штати Невада"
 
-#: mapsdatatranslation.cpp:6923
+#: mapsdatatranslation.cpp:6927
 #, fuzzy
 #| msgctxt "italyprovince.kgm"
 #| msgid "Catania"
@@ -41488,7 +41485,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Chadiza"
 msgstr "Музофоти Катания"
 
-#: mapsdatatranslation.cpp:6924
+#: mapsdatatranslation.cpp:6928
 #, fuzzy
 #| msgctxt "italyprovince.kgm"
 #| msgid "Catania"
@@ -41496,7 +41493,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Chama"
 msgstr "Музофоти Катания"
 
-#: mapsdatatranslation.cpp:6925
+#: mapsdatatranslation.cpp:6929
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "China"
@@ -41504,7 +41501,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Chipata"
 msgstr "Хитой"
 
-#: mapsdatatranslation.cpp:6926
+#: mapsdatatranslation.cpp:6930
 #, fuzzy
 #| msgctxt "italyprovince.kgm"
 #| msgid "Pavia"
@@ -41512,7 +41509,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Katete"
 msgstr "Музофоти Павия"
 
-#: mapsdatatranslation.cpp:6927
+#: mapsdatatranslation.cpp:6931
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Luanda"
@@ -41520,7 +41517,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Lundazi"
 msgstr "Луанда"
 
-#: mapsdatatranslation.cpp:6928
+#: mapsdatatranslation.cpp:6932
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Namibia"
@@ -41528,7 +41525,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Mambwe"
 msgstr "Намибия"
 
-#: mapsdatatranslation.cpp:6929
+#: mapsdatatranslation.cpp:6933
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Namibia"
@@ -41536,7 +41533,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Nyimba"
 msgstr "Намибия"
 
-#: mapsdatatranslation.cpp:6930
+#: mapsdatatranslation.cpp:6934
 #, fuzzy
 #| msgctxt "brazil.kgm"
 #| msgid "Para"
@@ -41544,7 +41541,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Petauke"
 msgstr "Штати Пара"
 
-#: mapsdatatranslation.cpp:6931
+#: mapsdatatranslation.cpp:6935
 #, fuzzy
 #| msgctxt "italyprovince.kgm"
 #| msgid "Chieti"
@@ -41552,7 +41549,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Chiengi"
 msgstr "Музофоти Кети"
 
-#: mapsdatatranslation.cpp:6932
+#: mapsdatatranslation.cpp:6936
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Kampala"
@@ -41560,7 +41557,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Kawambwa"
 msgstr "Кампала"
 
-#: mapsdatatranslation.cpp:6933
+#: mapsdatatranslation.cpp:6937
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Manila"
@@ -41568,7 +41565,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Mansa"
 msgstr "Манила"
 
-#: mapsdatatranslation.cpp:6934
+#: mapsdatatranslation.cpp:6938
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Mayenne"
@@ -41576,7 +41573,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Milenge"
 msgstr "Департаменти Майенн"
 
-#: mapsdatatranslation.cpp:6935
+#: mapsdatatranslation.cpp:6939
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Mende"
@@ -41584,7 +41581,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Mwense"
 msgstr "Манд"
 
-#: mapsdatatranslation.cpp:6936
+#: mapsdatatranslation.cpp:6940
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Beijing"
@@ -41592,7 +41589,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Nchelenge"
 msgstr "Пекин"
 
-#: mapsdatatranslation.cpp:6937
+#: mapsdatatranslation.cpp:6941
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Zambia"
@@ -41600,7 +41597,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Samfya"
 msgstr "Замбия"
 
-#: mapsdatatranslation.cpp:6938
+#: mapsdatatranslation.cpp:6942
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Lilongwe"
@@ -41608,12 +41605,12 @@ msgctxt "zambia_districts.kgm"
 msgid "Chongwe"
 msgstr "Лилонгве"
 
-#: mapsdatatranslation.cpp:6939
+#: mapsdatatranslation.cpp:6943
 msgctxt "zambia_districts.kgm"
 msgid "Kafue"
 msgstr ""
 
-#: mapsdatatranslation.cpp:6940
+#: mapsdatatranslation.cpp:6944
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Luanda"
@@ -41621,7 +41618,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Luangwa"
 msgstr "Луанда"
 
-#: mapsdatatranslation.cpp:6941
+#: mapsdatatranslation.cpp:6945
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Lusaka"
@@ -41629,7 +41626,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Lusaka"
 msgstr "Лусака"
 
-#: mapsdatatranslation.cpp:6942
+#: mapsdatatranslation.cpp:6946
 #, fuzzy
 #| msgctxt "ncamerica.kgm"
 #| msgid "Cuba"
@@ -41637,7 +41634,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Chavuma"
 msgstr "Куба"
 
-#: mapsdatatranslation.cpp:6943
+#: mapsdatatranslation.cpp:6947
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Malabo"
@@ -41645,7 +41642,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Kabompo"
 msgstr "Малабо"
 
-#: mapsdatatranslation.cpp:6944
+#: mapsdatatranslation.cpp:6948
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Kampala"
@@ -41653,7 +41650,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Kasempa"
 msgstr "Кампала"
 
-#: mapsdatatranslation.cpp:6945
+#: mapsdatatranslation.cpp:6949
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Tarbes"
@@ -41661,7 +41658,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Mufumbwe"
 msgstr "Тарб"
 
-#: mapsdatatranslation.cpp:6946
+#: mapsdatatranslation.cpp:6950
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Manila"
@@ -41669,7 +41666,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Mwinilunga"
 msgstr "Манила"
 
-#: mapsdatatranslation.cpp:6947
+#: mapsdatatranslation.cpp:6951
 #, fuzzy
 #| msgctxt "europe.kgm"
 #| msgid "Romania"
@@ -41677,7 +41674,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Solwezi"
 msgstr "Руминия"
 
-#: mapsdatatranslation.cpp:6948
+#: mapsdatatranslation.cpp:6952
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Zambia"
@@ -41685,7 +41682,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Zambezi"
 msgstr "Замбия"
 
-#: mapsdatatranslation.cpp:6949
+#: mapsdatatranslation.cpp:6953
 #, fuzzy
 #| msgctxt "southamerica.kgm"
 #| msgid "Chile"
@@ -41693,7 +41690,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Chilubi"
 msgstr "Чили"
 
-#: mapsdatatranslation.cpp:6950
+#: mapsdatatranslation.cpp:6954
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "China"
@@ -41701,7 +41698,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Chinsali"
 msgstr "Хитой"
 
-#: mapsdatatranslation.cpp:6951
+#: mapsdatatranslation.cpp:6955
 #, fuzzy
 #| msgctxt "usa.kgm"
 #| msgid "Iowa"
@@ -41709,7 +41706,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Isoka"
 msgstr "Штати Айова"
 
-#: mapsdatatranslation.cpp:6952
+#: mapsdatatranslation.cpp:6956
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Japan"
@@ -41717,7 +41714,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Kaputa"
 msgstr "Япония"
 
-#: mapsdatatranslation.cpp:6953
+#: mapsdatatranslation.cpp:6957
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Kampala"
@@ -41725,7 +41722,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Kasama"
 msgstr "Кампала"
 
-#: mapsdatatranslation.cpp:6954
+#: mapsdatatranslation.cpp:6958
 #, fuzzy
 #| msgctxt "poland.kgm"
 #| msgid "Lublin"
@@ -41733,7 +41730,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Luwingu"
 msgstr "Воеводствои Любелскӣ"
 
-#: mapsdatatranslation.cpp:6955
+#: mapsdatatranslation.cpp:6959
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Malabo"
@@ -41741,7 +41738,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Mbala"
 msgstr "Малабо"
 
-#: mapsdatatranslation.cpp:6956
+#: mapsdatatranslation.cpp:6960
 #, fuzzy
 #| msgctxt "italy.kgm"
 #| msgid "Milan"
@@ -41749,7 +41746,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Mpika"
 msgstr "Милан"
 
-#: mapsdatatranslation.cpp:6957
+#: mapsdatatranslation.cpp:6961
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Morocco"
@@ -41757,7 +41754,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Mporokoso"
 msgstr "Марокаш"
 
-#: mapsdatatranslation.cpp:6958
+#: mapsdatatranslation.cpp:6962
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Melun"
@@ -41765,7 +41762,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Mpulungu"
 msgstr "Мелён"
 
-#: mapsdatatranslation.cpp:6959
+#: mapsdatatranslation.cpp:6963
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Mongolia"
@@ -41773,7 +41770,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Mungwi"
 msgstr "Монголия"
 
-#: mapsdatatranslation.cpp:6960
+#: mapsdatatranslation.cpp:6964
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Marne"
@@ -41781,7 +41778,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Nakonde"
 msgstr "Департаменти Марна"
 
-#: mapsdatatranslation.cpp:6961
+#: mapsdatatranslation.cpp:6965
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Colmar"
@@ -41789,7 +41786,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Choma"
 msgstr "Колмар"
 
-#: mapsdatatranslation.cpp:6962
+#: mapsdatatranslation.cpp:6966
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Yemen"
@@ -41797,12 +41794,12 @@ msgctxt "zambia_districts.kgm"
 msgid "Gwembe"
 msgstr "Яман"
 
-#: mapsdatatranslation.cpp:6963
+#: mapsdatatranslation.cpp:6967
 msgctxt "zambia_districts.kgm"
 msgid "Itezhi-Tezhi"
 msgstr ""
 
-#: mapsdatatranslation.cpp:6964
+#: mapsdatatranslation.cpp:6968
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Malabo"
@@ -41810,7 +41807,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Kalomo"
 msgstr "Малабо"
 
-#: mapsdatatranslation.cpp:6965
+#: mapsdatatranslation.cpp:6969
 #, fuzzy
 #| msgctxt "usa.kgm"
 #| msgid "Kansas"
@@ -41818,7 +41815,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Kazungula"
 msgstr "Штати Канзас"
 
-#: mapsdatatranslation.cpp:6966
+#: mapsdatatranslation.cpp:6970
 #, fuzzy
 #| msgctxt "ncamerica.kgm"
 #| msgid "Kingston"
@@ -41826,7 +41823,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Livingstone"
 msgstr "Кингстон"
 
-#: mapsdatatranslation.cpp:6967
+#: mapsdatatranslation.cpp:6971
 #, fuzzy
 #| msgctxt "ncamerica.kgm"
 #| msgid "Managua"
@@ -41834,7 +41831,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Mazabuka"
 msgstr "Манагуа"
 
-#: mapsdatatranslation.cpp:6968
+#: mapsdatatranslation.cpp:6972
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Moulins"
@@ -41842,7 +41839,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Monze"
 msgstr "Мулен"
 
-#: mapsdatatranslation.cpp:6969
+#: mapsdatatranslation.cpp:6973
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Kampala"
@@ -41850,7 +41847,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Namwala"
 msgstr "Кампала"
 
-#: mapsdatatranslation.cpp:6970
+#: mapsdatatranslation.cpp:6974
 #, fuzzy
 #| msgctxt "italyprovince.kgm"
 #| msgid "Savona"
@@ -41858,7 +41855,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Siavonga"
 msgstr "Музофоти Савона"
 
-#: mapsdatatranslation.cpp:6971
+#: mapsdatatranslation.cpp:6975
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Lilongwe"
@@ -41866,7 +41863,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Sinazongwe"
 msgstr "Лилонгве"
 
-#: mapsdatatranslation.cpp:6972
+#: mapsdatatranslation.cpp:6976
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Malabo"
@@ -41874,7 +41871,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Kalabo"
 msgstr "Малабо"
 
-#: mapsdatatranslation.cpp:6973
+#: mapsdatatranslation.cpp:6977
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Colmar"
@@ -41882,7 +41879,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Kaoma"
 msgstr "Колмар"
 
-#: mapsdatatranslation.cpp:6974
+#: mapsdatatranslation.cpp:6978
 #, fuzzy
 #| msgctxt "italy.kgm"
 #| msgid "L'Aquila"
@@ -41890,7 +41887,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Lukulu"
 msgstr "Л'Аквила"
 
-#: mapsdatatranslation.cpp:6975
+#: mapsdatatranslation.cpp:6979
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Mayenne"
@@ -41898,7 +41895,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Mongu"
 msgstr "Департаменти Майенн"
 
-#: mapsdatatranslation.cpp:6976
+#: mapsdatatranslation.cpp:6980
 #, fuzzy
 #| msgctxt "china.kgm"
 #| msgid "Shenyang"
@@ -41906,12 +41903,12 @@ msgctxt "zambia_districts.kgm"
 msgid "Senanga"
 msgstr "Шэнян"
 
-#: mapsdatatranslation.cpp:6977
+#: mapsdatatranslation.cpp:6981
 msgctxt "zambia_districts.kgm"
 msgid "Sesheke"
 msgstr ""
 
-#: mapsdatatranslation.cpp:6978
+#: mapsdatatranslation.cpp:6982
 #, fuzzy
 #| msgctxt "china.kgm"
 #| msgid "Shaanxi"
@@ -41919,7 +41916,7 @@ msgctxt "zambia_districts.kgm"
 msgid "Shangombo"
 msgstr "Музофоти Шанси"
 
-#: mapsdatatranslation.cpp:6979
+#: mapsdatatranslation.cpp:6983
 #, fuzzy
 #| msgctxt "italyprovince.kgm"
 #| msgid "Italy by Provinces"
@@ -41927,12 +41924,12 @@ msgctxt "zambia_provinces.kgm"
 msgid "Zambia (Provinces)"
 msgstr "Музофотҳои Италия"
 
-#: mapsdatatranslation.cpp:6980
+#: mapsdatatranslation.cpp:6984
 msgctxt "zambia_provinces.kgm"
 msgid "Provinces"
 msgstr "Провинсияҳо"
 
-#: mapsdatatranslation.cpp:6981
+#: mapsdatatranslation.cpp:6985
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Frontier"
@@ -41940,7 +41937,7 @@ msgctxt "zambia_provinces.kgm"
 msgid "Frontier"
 msgstr "Сарҳад"
 
-#: mapsdatatranslation.cpp:6982
+#: mapsdatatranslation.cpp:6986
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Water"
@@ -41948,7 +41945,7 @@ msgctxt "zambia_provinces.kgm"
 msgid "Water"
 msgstr "Обҳо"
 
-#: mapsdatatranslation.cpp:6983
+#: mapsdatatranslation.cpp:6987
 #, fuzzy
 #| msgctxt "italyprovince.kgm"
 #| msgid "Italy by Provinces"
@@ -41956,7 +41953,7 @@ msgctxt "zambia_provinces.kgm"
 msgid "Not Zambia (Provinces)"
 msgstr "Музофотҳои Италия"
 
-#: mapsdatatranslation.cpp:6984
+#: mapsdatatranslation.cpp:6988
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Cantal"
@@ -41964,7 +41961,7 @@ msgctxt "zambia_provinces.kgm"
 msgid "Central"
 msgstr "Департаменти Кантал"
 
-#: mapsdatatranslation.cpp:6985
+#: mapsdatatranslation.cpp:6989
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Zimbabwe"
@@ -41972,12 +41969,12 @@ msgctxt "zambia_provinces.kgm"
 msgid "Kabwe"
 msgstr "Зимбабве"
 
-#: mapsdatatranslation.cpp:6986
+#: mapsdatatranslation.cpp:6990
 msgctxt "zambia_provinces.kgm"
 msgid "Copperbelt"
 msgstr ""
 
-#: mapsdatatranslation.cpp:6987
+#: mapsdatatranslation.cpp:6991
 #, fuzzy
 #| msgctxt "usa.kgm"
 #| msgid "Nevada"
@@ -41985,7 +41982,7 @@ msgctxt "zambia_provinces.kgm"
 msgid "Ndola"
 msgstr "Штати Невада"
 
-#: mapsdatatranslation.cpp:6988
+#: mapsdatatranslation.cpp:6992
 #, fuzzy
 #| msgctxt "italyprovince.kgm"
 #| msgid "La Spezia"
@@ -41993,7 +41990,7 @@ msgctxt "zambia_provinces.kgm"
 msgid "Eastern"
 msgstr "Спетсия"
 
-#: mapsdatatranslation.cpp:6989
+#: mapsdatatranslation.cpp:6993
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "China"
@@ -42001,7 +41998,7 @@ msgctxt "zambia_provinces.kgm"
 msgid "Chipata"
 msgstr "Хитой"
 
-#: mapsdatatranslation.cpp:6990
+#: mapsdatatranslation.cpp:6994
 #, fuzzy
 #| msgctxt "italyprovince.kgm"
 #| msgid "Lucca"
@@ -42009,7 +42006,7 @@ msgctxt "zambia_provinces.kgm"
 msgid "Luapula"
 msgstr "Музофоти Лукка"
 
-#: mapsdatatranslation.cpp:6991
+#: mapsdatatranslation.cpp:6995
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Manila"
@@ -42017,7 +42014,7 @@ msgctxt "zambia_provinces.kgm"
 msgid "Mansa"
 msgstr "Манила"
 
-#: mapsdatatranslation.cpp:6992 mapsdatatranslation.cpp:6993
+#: mapsdatatranslation.cpp:6996 mapsdatatranslation.cpp:6997
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Lusaka"
@@ -42025,7 +42022,7 @@ msgctxt "zambia_provinces.kgm"
 msgid "Lusaka"
 msgstr "Лусака"
 
-#: mapsdatatranslation.cpp:6994
+#: mapsdatatranslation.cpp:6998
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "North Korea"
@@ -42033,7 +42030,7 @@ msgctxt "zambia_provinces.kgm"
 msgid "Northern"
 msgstr "Ҷумҳурии Халқии Демократии Корея"
 
-#: mapsdatatranslation.cpp:6995
+#: mapsdatatranslation.cpp:6999
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Kampala"
@@ -42041,7 +42038,7 @@ msgctxt "zambia_provinces.kgm"
 msgid "Kasama"
 msgstr "Кампала"
 
-#: mapsdatatranslation.cpp:6996
+#: mapsdatatranslation.cpp:7000
 #, fuzzy
 #| msgctxt "canada.kgm"
 #| msgid "North West Territories"
@@ -42049,7 +42046,7 @@ msgctxt "zambia_provinces.kgm"
 msgid "North-Western"
 msgstr "Мавқеъҳои Шимолу Ғарбӣ"
 
-#: mapsdatatranslation.cpp:6997
+#: mapsdatatranslation.cpp:7001
 #, fuzzy
 #| msgctxt "europe.kgm"
 #| msgid "Romania"
@@ -42057,7 +42054,7 @@ msgctxt "zambia_provinces.kgm"
 msgid "Solwezi"
 msgstr "Руминия"
 
-#: mapsdatatranslation.cpp:6998
+#: mapsdatatranslation.cpp:7002
 #, fuzzy
 #| msgctxt "southamerica.kgm"
 #| msgid "South America"
@@ -42065,7 +42062,7 @@ msgctxt "zambia_provinces.kgm"
 msgid "Southern"
 msgstr "Амрикои Ҷанубӣ"
 
-#: mapsdatatranslation.cpp:6999
+#: mapsdatatranslation.cpp:7003
 #, fuzzy
 #| msgctxt "ncamerica.kgm"
 #| msgid "Kingston"
@@ -42073,7 +42070,7 @@ msgctxt "zambia_provinces.kgm"
 msgid "Livingstone"
 msgstr "Кингстон"
 
-#: mapsdatatranslation.cpp:7000
+#: mapsdatatranslation.cpp:7004
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Manche"
@@ -42081,7 +42078,7 @@ msgctxt "zambia_provinces.kgm"
 msgid "Western"
 msgstr "Департаменти Манш"
 
-#: mapsdatatranslation.cpp:7001
+#: mapsdatatranslation.cpp:7005
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Mayenne"
@@ -42089,7 +42086,7 @@ msgctxt "zambia_provinces.kgm"
 msgid "Mongu"
 msgstr "Департаменти Майенн"
 
-#: mapsdatatranslation.cpp:7002
+#: mapsdatatranslation.cpp:7006
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Zimbabwe"
@@ -42097,12 +42094,12 @@ msgctxt "zimbabwe.kgm"
 msgid "Zimbabwe"
 msgstr "Зимбабве"
 
-#: mapsdatatranslation.cpp:7003
+#: mapsdatatranslation.cpp:7007
 msgctxt "zimbabwe.kgm"
 msgid "Provinces"
 msgstr "Провинсияҳо"
 
-#: mapsdatatranslation.cpp:7004 mapsdatatranslation.cpp:7005
+#: mapsdatatranslation.cpp:7008 mapsdatatranslation.cpp:7009
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Frontier"
@@ -42110,7 +42107,7 @@ msgctxt "zimbabwe.kgm"
 msgid "Frontier"
 msgstr "Сарҳад"
 
-#: mapsdatatranslation.cpp:7006
+#: mapsdatatranslation.cpp:7010
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Zimbabwe"
@@ -42118,7 +42115,7 @@ msgctxt "zimbabwe.kgm"
 msgid "Not Zimbabwe"
 msgstr "Зимбабве"
 
-#: mapsdatatranslation.cpp:7007
+#: mapsdatatranslation.cpp:7011
 #, fuzzy
 #| msgctxt "ncamerica.kgm"
 #| msgid "Barbados"
@@ -42126,7 +42123,7 @@ msgctxt "zimbabwe.kgm"
 msgid "Bulawayo"
 msgstr "Барбадос"
 
-#: mapsdatatranslation.cpp:7008
+#: mapsdatatranslation.cpp:7012
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Harare"
@@ -42134,7 +42131,7 @@ msgctxt "zimbabwe.kgm"
 msgid "Harare"
 msgstr "Хараре"
 
-#: mapsdatatranslation.cpp:7009
+#: mapsdatatranslation.cpp:7013
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Manila"
@@ -42142,7 +42139,7 @@ msgctxt "zimbabwe.kgm"
 msgid "Manicaland"
 msgstr "Манила"
 
-#: mapsdatatranslation.cpp:7010
+#: mapsdatatranslation.cpp:7014
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Marne"
@@ -42150,12 +42147,12 @@ msgctxt "zimbabwe.kgm"
 msgid "Mutare"
 msgstr "Департаменти Марна"
 
-#: mapsdatatranslation.cpp:7011
+#: mapsdatatranslation.cpp:7015
 msgctxt "zimbabwe.kgm"
 msgid "Mashonaland central"
 msgstr ""
 
-#: mapsdatatranslation.cpp:7012
+#: mapsdatatranslation.cpp:7016
 #, fuzzy
 #| msgctxt "ncamerica.kgm"
 #| msgid "Honduras"
@@ -42163,12 +42160,12 @@ msgctxt "zimbabwe.kgm"
 msgid "Bindura"
 msgstr "Гондурас"
 
-#: mapsdatatranslation.cpp:7013
+#: mapsdatatranslation.cpp:7017
 msgctxt "zimbabwe.kgm"
 msgid "Mashonaland east"
 msgstr ""
 
-#: mapsdatatranslation.cpp:7014
+#: mapsdatatranslation.cpp:7018
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Marne"
@@ -42176,12 +42173,12 @@ msgctxt "zimbabwe.kgm"
 msgid "Marondera"
 msgstr "Департаменти Марна"
 
-#: mapsdatatranslation.cpp:7015
+#: mapsdatatranslation.cpp:7019
 msgctxt "zimbabwe.kgm"
 msgid "Mashonaland west"
 msgstr ""
 
-#: mapsdatatranslation.cpp:7016
+#: mapsdatatranslation.cpp:7020
 #, fuzzy
 #| msgctxt "europe.kgm"
 #| msgid "Chisinau"
@@ -42189,7 +42186,7 @@ msgctxt "zimbabwe.kgm"
 msgid "Chinhoyi"
 msgstr "Кишинев"
 
-#: mapsdatatranslation.cpp:7017 mapsdatatranslation.cpp:7018
+#: mapsdatatranslation.cpp:7021 mapsdatatranslation.cpp:7022
 #, fuzzy
 #| msgctxt "poland.kgm"
 #| msgid "Masovia"
@@ -42197,12 +42194,12 @@ msgctxt "zimbabwe.kgm"
 msgid "Masvingo"
 msgstr "Воеводствои Мазоветсӣ"
 
-#: mapsdatatranslation.cpp:7019
+#: mapsdatatranslation.cpp:7023
 msgctxt "zimbabwe.kgm"
 msgid "Matabeleland north"
 msgstr ""
 
-#: mapsdatatranslation.cpp:7020
+#: mapsdatatranslation.cpp:7024
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Luanda"
@@ -42210,7 +42207,7 @@ msgctxt "zimbabwe.kgm"
 msgid "Lupane"
 msgstr "Луанда"
 
-#: mapsdatatranslation.cpp:7021
+#: mapsdatatranslation.cpp:7025
 #, fuzzy
 #| msgctxt "spain.kgm"
 #| msgid "Valencian Community"
@@ -42218,7 +42215,7 @@ msgctxt "zimbabwe.kgm"
 msgid "Matabeleland south"
 msgstr "Минтақаи худмухтори Валенсия"
 
-#: mapsdatatranslation.cpp:7022
+#: mapsdatatranslation.cpp:7026
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Rwanda"
@@ -42226,7 +42223,7 @@ msgctxt "zimbabwe.kgm"
 msgid "Gwanda"
 msgstr "Руанда"
 
-#: mapsdatatranslation.cpp:7023
+#: mapsdatatranslation.cpp:7027
 #, fuzzy
 #| msgctxt "italy.kgm"
 #| msgid "Milan"
@@ -42234,7 +42231,7 @@ msgctxt "zimbabwe.kgm"
 msgid "Midlands"
 msgstr "Милан"
 
-#: mapsdatatranslation.cpp:7024
+#: mapsdatatranslation.cpp:7028
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Gers"
@@ -42242,7 +42239,7 @@ msgctxt "zimbabwe.kgm"
 msgid "Gweru"
 msgstr "Департаменти Жер"
 
-#: mapsdatatranslation.cpp:7025
+#: mapsdatatranslation.cpp:7029
 #, fuzzy
 #| msgctxt "brazil.kgm"
 #| msgid "Federal District"
@@ -42250,7 +42247,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Zimbabwe (Districts)"
 msgstr "Округи Федеролӣ"
 
-#: mapsdatatranslation.cpp:7026
+#: mapsdatatranslation.cpp:7030
 #, fuzzy
 #| msgctxt "brazil.kgm"
 #| msgid "Federal District"
@@ -42258,7 +42255,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Districts"
 msgstr "Округи Федеролӣ"
 
-#: mapsdatatranslation.cpp:7027
+#: mapsdatatranslation.cpp:7031
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Frontier"
@@ -42266,7 +42263,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Frontier"
 msgstr "Сарҳад"
 
-#: mapsdatatranslation.cpp:7028
+#: mapsdatatranslation.cpp:7032
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Water"
@@ -42274,7 +42271,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Water"
 msgstr "Обҳо"
 
-#: mapsdatatranslation.cpp:7029
+#: mapsdatatranslation.cpp:7033
 #, fuzzy
 #| msgctxt "brazil.kgm"
 #| msgid "Federal District"
@@ -42282,7 +42279,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Not Zimbabwe (Districts)"
 msgstr "Округи Федеролӣ"
 
-#: mapsdatatranslation.cpp:7030
+#: mapsdatatranslation.cpp:7034
 #, fuzzy
 #| msgctxt "ncamerica.kgm"
 #| msgid "Barbados"
@@ -42290,7 +42287,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Bulawayo"
 msgstr "Барбадос"
 
-#: mapsdatatranslation.cpp:7031
+#: mapsdatatranslation.cpp:7035
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Harare"
@@ -42298,7 +42295,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Harare"
 msgstr "Хараре"
 
-#: mapsdatatranslation.cpp:7032
+#: mapsdatatranslation.cpp:7036
 #, fuzzy
 #| msgctxt "brazil.kgm"
 #| msgid "Teresina"
@@ -42306,7 +42303,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Buhera"
 msgstr "Терезина"
 
-#: mapsdatatranslation.cpp:7033
+#: mapsdatatranslation.cpp:7037
 #, fuzzy
 #| msgctxt "italyprovince.kgm"
 #| msgid "Catania"
@@ -42314,7 +42311,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Chimanimani"
 msgstr "Музофоти Катания"
 
-#: mapsdatatranslation.cpp:7034
+#: mapsdatatranslation.cpp:7038
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "China"
@@ -42322,7 +42319,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Chipinge"
 msgstr "Хитой"
 
-#: mapsdatatranslation.cpp:7035
+#: mapsdatatranslation.cpp:7039
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Manila"
@@ -42330,7 +42327,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Makoni"
 msgstr "Манила"
 
-#: mapsdatatranslation.cpp:7036
+#: mapsdatatranslation.cpp:7040
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Marne"
@@ -42338,7 +42335,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Mutare"
 msgstr "Департаменти Марна"
 
-#: mapsdatatranslation.cpp:7037
+#: mapsdatatranslation.cpp:7041
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Dakar"
@@ -42346,7 +42343,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Mutasa"
 msgstr "Дакар"
 
-#: mapsdatatranslation.cpp:7038
+#: mapsdatatranslation.cpp:7042
 #, fuzzy
 #| msgctxt "italyprovince.kgm"
 #| msgid "Ragusa"
@@ -42354,7 +42351,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Nyanga"
 msgstr "Музофоти Рагуза"
 
-#: mapsdatatranslation.cpp:7039
+#: mapsdatatranslation.cpp:7043
 #, fuzzy
 #| msgctxt "ncamerica.kgm"
 #| msgid "Honduras"
@@ -42362,7 +42359,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Bindura"
 msgstr "Гондурас"
 
-#: mapsdatatranslation.cpp:7040
+#: mapsdatatranslation.cpp:7044
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Guéret"
@@ -42370,7 +42367,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Guruve"
 msgstr "Гере"
 
-#: mapsdatatranslation.cpp:7041
+#: mapsdatatranslation.cpp:7045
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Marne"
@@ -42378,7 +42375,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Mazowe"
 msgstr "Департаменти Марна"
 
-#: mapsdatatranslation.cpp:7042
+#: mapsdatatranslation.cpp:7046
 #, fuzzy
 #| msgctxt "china.kgm"
 #| msgid "Harbin"
@@ -42386,7 +42383,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Mount Darwin"
 msgstr "Харбин"
 
-#: mapsdatatranslation.cpp:7043
+#: mapsdatatranslation.cpp:7047
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Islamabad"
@@ -42394,7 +42391,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Muzarabani"
 msgstr "Исломобод"
 
-#: mapsdatatranslation.cpp:7044
+#: mapsdatatranslation.cpp:7048
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Russia"
@@ -42402,7 +42399,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Rushinga"
 msgstr "Русия"
 
-#: mapsdatatranslation.cpp:7045
+#: mapsdatatranslation.cpp:7049
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Zambia"
@@ -42410,7 +42407,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Shamva"
 msgstr "Замбия"
 
-#: mapsdatatranslation.cpp:7046
+#: mapsdatatranslation.cpp:7050
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "China"
@@ -42418,7 +42415,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Chikomba"
 msgstr "Хитой"
 
-#: mapsdatatranslation.cpp:7047
+#: mapsdatatranslation.cpp:7051
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Monrovia"
@@ -42426,7 +42423,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Goromonzi"
 msgstr "Монровия"
 
-#: mapsdatatranslation.cpp:7048
+#: mapsdatatranslation.cpp:7052
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Marne"
@@ -42434,7 +42431,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Marondera"
 msgstr "Департаменти Марна"
 
-#: mapsdatatranslation.cpp:7049
+#: mapsdatatranslation.cpp:7053
 #, fuzzy
 #| msgctxt "brazil.kgm"
 #| msgid "Bahia"
@@ -42442,7 +42439,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Mudzi"
 msgstr "Штати Баия"
 
-#: mapsdatatranslation.cpp:7050
+#: mapsdatatranslation.cpp:7054
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Morbihan"
@@ -42450,7 +42447,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Murehwa"
 msgstr "Департаменти Морбиан"
 
-#: mapsdatatranslation.cpp:7051
+#: mapsdatatranslation.cpp:7055
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Maputo"
@@ -42458,7 +42455,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Mutoko"
 msgstr "Мапуту"
 
-#: mapsdatatranslation.cpp:7052
+#: mapsdatatranslation.cpp:7056
 #, fuzzy
 #| msgctxt "norway.kgm"
 #| msgid "Skien"
@@ -42466,12 +42463,12 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Seke"
 msgstr "Шиен"
 
-#: mapsdatatranslation.cpp:7053
+#: mapsdatatranslation.cpp:7057
 msgctxt "zimbabwe_districts.kgm"
 msgid "UMP"
 msgstr ""
 
-#: mapsdatatranslation.cpp:7054
+#: mapsdatatranslation.cpp:7058
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Mende"
@@ -42479,7 +42476,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Wedza"
 msgstr "Манд"
 
-#: mapsdatatranslation.cpp:7055
+#: mapsdatatranslation.cpp:7059
 #, fuzzy
 #| msgctxt "china.kgm"
 #| msgid "Chengdu"
@@ -42487,7 +42484,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Chegutu"
 msgstr "Чэнду"
 
-#: mapsdatatranslation.cpp:7056
+#: mapsdatatranslation.cpp:7060
 #, fuzzy
 #| msgctxt "china.kgm"
 #| msgid "Hunan"
@@ -42495,7 +42492,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Hurungwe"
 msgstr "Музофоти Хунан"
 
-#: mapsdatatranslation.cpp:7057
+#: mapsdatatranslation.cpp:7061
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Dodoma"
@@ -42503,7 +42500,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Kadoma"
 msgstr "Додома"
 
-#: mapsdatatranslation.cpp:7058
+#: mapsdatatranslation.cpp:7062
 #, fuzzy
 #| msgctxt "brazil.kgm"
 #| msgid "Paraiba"
@@ -42511,7 +42508,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Kariba"
 msgstr "Штати Парайба"
 
-#: mapsdatatranslation.cpp:7059
+#: mapsdatatranslation.cpp:7063
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Marne"
@@ -42519,7 +42516,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Makonde"
 msgstr "Департаменти Марна"
 
-#: mapsdatatranslation.cpp:7060
+#: mapsdatatranslation.cpp:7064
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Zimbabwe"
@@ -42527,7 +42524,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Zvimba"
 msgstr "Зимбабве"
 
-#: mapsdatatranslation.cpp:7061
+#: mapsdatatranslation.cpp:7065
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Asia"
@@ -42535,7 +42532,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Bikita"
 msgstr "Осиё"
 
-#: mapsdatatranslation.cpp:7062
+#: mapsdatatranslation.cpp:7066
 #, fuzzy
 #| msgctxt "italyprovince.kgm"
 #| msgid "Chieti"
@@ -42543,7 +42540,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Chiredzi"
 msgstr "Музофоти Кети"
 
-#: mapsdatatranslation.cpp:7063
+#: mapsdatatranslation.cpp:7067
 #, fuzzy
 #| msgctxt "italyprovince.kgm"
 #| msgid "Chieti"
@@ -42551,12 +42548,12 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Chivi"
 msgstr "Музофоти Кети"
 
-#: mapsdatatranslation.cpp:7064
+#: mapsdatatranslation.cpp:7068
 msgctxt "zimbabwe_districts.kgm"
 msgid "Gutu"
 msgstr ""
 
-#: mapsdatatranslation.cpp:7065
+#: mapsdatatranslation.cpp:7069
 #, fuzzy
 #| msgctxt "poland.kgm"
 #| msgid "Masovia"
@@ -42564,7 +42561,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Masvingo"
 msgstr "Воеводствои Мазоветсӣ"
 
-#: mapsdatatranslation.cpp:7066
+#: mapsdatatranslation.cpp:7070
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Benin"
@@ -42572,7 +42569,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Mwenezi"
 msgstr "Бенин"
 
-#: mapsdatatranslation.cpp:7067
+#: mapsdatatranslation.cpp:7071
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Dakar"
@@ -42580,7 +42577,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Zaka"
 msgstr "Дакар"
 
-#: mapsdatatranslation.cpp:7068
+#: mapsdatatranslation.cpp:7072
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "Beijing"
@@ -42588,7 +42585,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Binga"
 msgstr "Пекин"
 
-#: mapsdatatranslation.cpp:7069
+#: mapsdatatranslation.cpp:7073
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Bangui"
@@ -42596,7 +42593,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Bubi"
 msgstr "Банги"
 
-#: mapsdatatranslation.cpp:7070
+#: mapsdatatranslation.cpp:7074
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Bangui"
@@ -42604,7 +42601,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Hwange"
 msgstr "Банги"
 
-#: mapsdatatranslation.cpp:7071
+#: mapsdatatranslation.cpp:7075
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Luanda"
@@ -42612,7 +42609,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Lupane"
 msgstr "Луанда"
 
-#: mapsdatatranslation.cpp:7072
+#: mapsdatatranslation.cpp:7076
 #, fuzzy
 #| msgctxt "germany.kgm"
 #| msgid "Hamburg"
@@ -42620,12 +42617,12 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Nkayi"
 msgstr "Шаҳри озодӣ ва ганзейи Гамбург"
 
-#: mapsdatatranslation.cpp:7073
+#: mapsdatatranslation.cpp:7077
 msgctxt "zimbabwe_districts.kgm"
 msgid "Tsholotsho"
 msgstr ""
 
-#: mapsdatatranslation.cpp:7074
+#: mapsdatatranslation.cpp:7078
 #, fuzzy
 #| msgctxt "southamerica.kgm"
 #| msgid "Uruguay"
@@ -42633,7 +42630,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Umguza"
 msgstr "Уругвай"
 
-#: mapsdatatranslation.cpp:7075
+#: mapsdatatranslation.cpp:7079
 #, fuzzy
 #| msgctxt "germany.kgm"
 #| msgid "Hamburg"
@@ -42641,12 +42638,12 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Beitbridge"
 msgstr "Шаҳри озодӣ ва ганзейи Гамбург"
 
-#: mapsdatatranslation.cpp:7076
+#: mapsdatatranslation.cpp:7080
 msgctxt "zimbabwe_districts.kgm"
 msgid "Bulilimamangwe"
 msgstr ""
 
-#: mapsdatatranslation.cpp:7077
+#: mapsdatatranslation.cpp:7081
 #, fuzzy
 #| msgctxt "africa.kgm"
 #| msgid "Rwanda"
@@ -42654,7 +42651,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Gwanda"
 msgstr "Руанда"
 
-#: mapsdatatranslation.cpp:7078
+#: mapsdatatranslation.cpp:7082
 #, fuzzy
 #| msgctxt "asia.kgm"
 #| msgid "India"
@@ -42662,7 +42659,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Insiza"
 msgstr "Ҳиндустон"
 
-#: mapsdatatranslation.cpp:7079
+#: mapsdatatranslation.cpp:7083
 #, fuzzy
 #| msgctxt "canada.kgm"
 #| msgid "Manitoba"
@@ -42670,12 +42667,12 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Matobo"
 msgstr "Музофоти Манитоба"
 
-#: mapsdatatranslation.cpp:7080
+#: mapsdatatranslation.cpp:7084
 msgctxt "zimbabwe_districts.kgm"
 msgid "Umzingwane"
 msgstr ""
 
-#: mapsdatatranslation.cpp:7081
+#: mapsdatatranslation.cpp:7085
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Chaumont"
@@ -42683,17 +42680,17 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Chirumhanzu"
 msgstr "Шомон"
 
-#: mapsdatatranslation.cpp:7082
+#: mapsdatatranslation.cpp:7086
 msgctxt "zimbabwe_districts.kgm"
 msgid "Gokwe north"
 msgstr ""
 
-#: mapsdatatranslation.cpp:7083
+#: mapsdatatranslation.cpp:7087
 msgctxt "zimbabwe_districts.kgm"
 msgid "Gokwe south"
 msgstr ""
 
-#: mapsdatatranslation.cpp:7084
+#: mapsdatatranslation.cpp:7088
 #, fuzzy
 #| msgctxt "france.kgm"
 #| msgid "Gers"
@@ -42701,7 +42698,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Gweru"
 msgstr "Департаменти Жер"
 
-#: mapsdatatranslation.cpp:7085
+#: mapsdatatranslation.cpp:7089
 #, fuzzy
 #| msgctxt "europe.kgm"
 #| msgid "Sweden"
@@ -42709,7 +42706,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Kwekwe"
 msgstr "Шветсия"
 
-#: mapsdatatranslation.cpp:7086
+#: mapsdatatranslation.cpp:7090
 #, fuzzy
 #| msgctxt "brazil.kgm"
 #| msgid "Teresina"
@@ -42717,7 +42714,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Mberengwa"
 msgstr "Терезина"
 
-#: mapsdatatranslation.cpp:7087
+#: mapsdatatranslation.cpp:7091
 #, fuzzy
 #| msgctxt "italy.kgm"
 #| msgid "Bari"
@@ -42725,7 +42722,7 @@ msgctxt "zimbabwe_districts.kgm"
 msgid "Shurugwi"
 msgstr "Бари"
 
-#: mapsdatatranslation.cpp:7088
+#: mapsdatatranslation.cpp:7092
 #, fuzzy
 #| msgctxt "china.kgm"
 #| msgid "Zhejiang"
@@ -42776,6 +42773,25 @@ msgstr ""
 "funtamas@mail.ru,Ms_Bob_91@mail.ru,sila_91@mail.ru,iraj_89@mail.ru,"
 "DobrininV@tajikngo.org,mc_floux@mail.ru,FiruzaP@tajikngo.org,inga_bless@mail."
 "ru,NekruzRZ@tajikngo.org"
+
+#~ msgctxt "@title:group"
+#~ msgid "%1 is the capital of..."
+#~ msgstr "Пойтахти %1 муайян кунед..."
+
+#~ msgctxt "@title"
+#~ msgid "%1 by Capital"
+#~ msgstr "%1ро бо пойтахташон"
+
+#, fuzzy
+#~| msgid "The capital of %1 is..."
+#~ msgctxt "@title:group"
+#~ msgid "The capital of %1 is..."
+#~ msgstr "Пойтахти %1 муайян кунед..."
+
+#, fuzzy
+#~ msgctxt "@title"
+#~ msgid "Capital of %1"
+#~ msgstr "Пойтахти кишвар"
 
 #~ msgctxt "italyprovince.kgm"
 #~ msgid "Verbania"
