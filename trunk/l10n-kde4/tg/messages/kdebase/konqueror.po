@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-16 06:15+0200\n"
+"POT-Creation-Date: 2009-10-17 06:44+0200\n"
 "PO-Revision-Date: 2009-01-11 17:17+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik\n"
@@ -53,7 +53,7 @@ msgstr "(c) 1999-2008. Тайёркунандагони Konqueror"
 msgid "http://konqueror.kde.org"
 msgstr "http://konqueror.kde.org"
 
-#: src/konqfactory.cpp:236 sidebar/konqsidebar.cpp:30
+#: src/konqfactory.cpp:236 sidebar/sidebar_part.cpp:30
 msgid "David Faure"
 msgstr "David Faure"
 
@@ -272,7 +272,7 @@ msgstr "Torben Weis"
 msgid "KFM author"
 msgstr "Муаллифи KFM"
 
-#: src/konqfactory.cpp:268 sidebar/konqsidebar.cpp:29
+#: src/konqfactory.cpp:268 sidebar/sidebar_part.cpp:29
 msgid "Joseph Wenninger"
 msgstr "Joseph Wenninger"
 
@@ -381,7 +381,7 @@ msgstr "Рад кардан"
 msgid "Ask Me Later"
 msgstr "Баъдтар амал кунед"
 
-#: src/konqmainwindow.cpp:518
+#: src/konqmainwindow.cpp:519
 #, kde-format
 msgid ""
 "Malformed URL\n"
@@ -390,7 +390,7 @@ msgstr ""
 "URL-и нодуруст ташкилшуда\n"
 "%1"
 
-#: src/konqmainwindow.cpp:523
+#: src/konqmainwindow.cpp:524
 #, kde-format
 msgid ""
 "Protocol not supported\n"
@@ -399,7 +399,7 @@ msgstr ""
 "Қарордод пуштибонӣ намегардад\n"
 "%1"
 
-#: src/konqmainwindow.cpp:562
+#: src/konqmainwindow.cpp:563
 msgctxt "@title:tab"
 msgid "Loading..."
 msgstr "Боркунӣ..."
@@ -425,7 +425,7 @@ msgstr ""
 #: src/konqmainwindow.cpp:2421 src/konqmainwindow.cpp:2510
 #: src/konqmainwindow.cpp:2528 src/konqmainwindow.cpp:2548
 #: src/konqmainwindow.cpp:2596 src/konqmainwindow.cpp:2629
-#: src/konqmainwindow.cpp:5075 src/konqviewmanager.cpp:1387
+#: src/konqmainwindow.cpp:5075 src/konqviewmanager.cpp:1396
 msgid "Discard Changes?"
 msgstr "Дигаргуниҳоро қабул накунанд?"
 
@@ -433,7 +433,7 @@ msgstr "Дигаргуниҳоро қабул накунанд?"
 #: src/konqmainwindow.cpp:2421 src/konqmainwindow.cpp:2510
 #: src/konqmainwindow.cpp:2528 src/konqmainwindow.cpp:2548
 #: src/konqmainwindow.cpp:2596 src/konqmainwindow.cpp:2629
-#: src/konqmainwindow.cpp:5075 src/konqviewmanager.cpp:1387
+#: src/konqmainwindow.cpp:5075 src/konqviewmanager.cpp:1396
 msgid "&Discard Changes"
 msgstr "&Қабул накардани дигаргуниҳо"
 
@@ -1006,7 +1006,7 @@ msgstr ""
 "Шумо бисёр ҷадвалбандиҳоро дар ин тиреза кушодаед, дар ҳақиқат мехоҳед "
 "бароед?"
 
-#: src/konqmainwindow.cpp:5037 src/konqviewmanager.cpp:1369
+#: src/konqmainwindow.cpp:5037 src/konqviewmanager.cpp:1378
 msgid "Confirmation"
 msgstr "Тасдиқот"
 
@@ -1206,7 +1206,7 @@ msgstr "&Беко кардан: Замимаи хуруҷшуда"
 msgid "Und&o"
 msgstr ""
 
-#: src/konqviewmanager.cpp:1367
+#: src/konqviewmanager.cpp:1376
 msgid ""
 "You have multiple tabs open in this window.\n"
 "Loading a view profile will close them."
@@ -1214,11 +1214,11 @@ msgstr ""
 "Шумо бисёр ҷадвалбандиҳоро дар ин тиреза кушодаед.\n"
 "Боргузории тахассуси нав ба баста шудани онҳо меоварад."
 
-#: src/konqviewmanager.cpp:1370
+#: src/konqviewmanager.cpp:1379
 msgid "Load View Profile"
 msgstr "Боркунии Тахассуси Панел"
 
-#: src/konqviewmanager.cpp:1386
+#: src/konqviewmanager.cpp:1395
 msgid ""
 "This tab contains changes that have not been submitted.\n"
 "Loading a profile will discard these changes."
@@ -1469,11 +1469,15 @@ msgstr "Эҷоди ҷузвдони нав..."
 msgid "Enter folder name:"
 msgstr "Вориди номи ҷузвдон:"
 
-#: sidebar/sidebar_widget.cpp:104
+#: sidebar/sidebar_part.cpp:28
+msgid "Extended Sidebar"
+msgstr "Панели Тарифии Паҳншуда"
+
+#: sidebar/sidebar_widget.cpp:99
 msgid "Rollback to System Default"
 msgstr "Барқарорсозии стандартҳои системавӣ"
 
-#: sidebar/sidebar_widget.cpp:110
+#: sidebar/sidebar_widget.cpp:105
 msgid ""
 "<qt>This removes all your entries from the sidebar and adds the system "
 "default ones.<br /><b>This procedure is irreversible</b><br />Do you want to "
@@ -1483,65 +1487,65 @@ msgstr ""
 "месозад.<br /><b>Маълумоти тозашуда барқарор карда намешавад</b><br />Давом "
 "медиҳед?</qt>"
 
-#: sidebar/sidebar_widget.cpp:240
+#: sidebar/sidebar_widget.cpp:234
 msgid "Configure Navigation Panel"
 msgstr "Батанзимдарории Панели Навигатсионӣ"
 
-#: sidebar/sidebar_widget.cpp:242
+#: sidebar/sidebar_widget.cpp:236
 msgid "Add New"
 msgstr "Иловаи нав"
 
-#: sidebar/sidebar_widget.cpp:244
+#: sidebar/sidebar_widget.cpp:238
 msgid "Multiple Views"
 msgstr "Бисёр Назарҳо"
 
-#: sidebar/sidebar_widget.cpp:246 sidebar/sidebar_widget.cpp:362
+#: sidebar/sidebar_widget.cpp:240 sidebar/sidebar_widget.cpp:353
 msgid "Show Tabs Left"
 msgstr "Нишон додани Ҷадвалбандиҳо аз Чап"
 
-#: sidebar/sidebar_widget.cpp:247
+#: sidebar/sidebar_widget.cpp:241
 msgid "Show Configuration Button"
 msgstr "Нишон додани Тугмаи Батанзимдарорӣ"
 
-#: sidebar/sidebar_widget.cpp:250
+#: sidebar/sidebar_widget.cpp:244
 msgid "Close Navigation Panel"
 msgstr "Пӯшидани Панели Навигатсионӣ"
 
-#: sidebar/sidebar_widget.cpp:293
+#: sidebar/sidebar_widget.cpp:287
 msgid "This entry already exists."
 msgstr "Ин элемент аллакай мавҷуд аст."
 
-#: sidebar/sidebar_widget.cpp:307 sidebar/web_module/web_module.cpp:217
+#: sidebar/sidebar_widget.cpp:301 sidebar/web_module/web_module.cpp:217
 msgid "Web SideBar Plugin"
 msgstr "Вориди Web Панели Тарафӣ"
 
-#: sidebar/sidebar_widget.cpp:362
+#: sidebar/sidebar_widget.cpp:353
 msgid "Show Tabs Right"
 msgstr "Намоиши замимаҳо аз тарафи рост"
 
-#: sidebar/sidebar_widget.cpp:437
+#: sidebar/sidebar_widget.cpp:424
 msgid "Set Name"
 msgstr "Ворид кардани ном"
 
-#: sidebar/sidebar_widget.cpp:437
+#: sidebar/sidebar_widget.cpp:424
 msgid "Enter the name:"
 msgstr "Ворид кардани ном"
 
-#: sidebar/sidebar_widget.cpp:455
+#: sidebar/sidebar_widget.cpp:442
 msgid "Enter a URL:"
 msgstr "URL-ро ворид кунед:"
 
-#: sidebar/sidebar_widget.cpp:463
+#: sidebar/sidebar_widget.cpp:450
 #, kde-format
 msgid "<qt><b>%1</b> does not exist</qt>"
 msgstr "<qt><b>%1</b> мавҷуд нест<qt>"
 
-#: sidebar/sidebar_widget.cpp:494
+#: sidebar/sidebar_widget.cpp:481
 #, kde-format
 msgid "<qt>Do you really want to remove the <b>%1</b> tab?</qt>"
 msgstr "<qt>Дар ҳақиқат мехоҳед, ки <b>%1</b> ҷадвалбандиро хориҷ кунед?</qt>"
 
-#: sidebar/sidebar_widget.cpp:542
+#: sidebar/sidebar_widget.cpp:529
 msgid ""
 "You have hidden the navigation panel configuration button. To make it "
 "visible again, click the right mouse button on any of the navigation panel "
@@ -1551,23 +1555,23 @@ msgstr ""
 "дида тавонистани он, тугмаи чапи мушро дар панели навигатсия ангушт занед ва "
 "\"Нишон додани Тугмаи Батанзимдарорӣ\"-ро интихоб кунед."
 
-#: sidebar/sidebar_widget.cpp:627
+#: sidebar/sidebar_widget.cpp:598
 msgid "Configure Sidebar"
 msgstr "Батанзимдарории Панели Тарафӣ"
 
-#: sidebar/sidebar_widget.cpp:744
+#: sidebar/sidebar_widget.cpp:715
 msgid "Set Name..."
 msgstr "Танзими ном..."
 
-#: sidebar/sidebar_widget.cpp:745
+#: sidebar/sidebar_widget.cpp:716
 msgid "Set URL..."
 msgstr "Насби URL..."
 
-#: sidebar/sidebar_widget.cpp:746
+#: sidebar/sidebar_widget.cpp:717
 msgid "Set Icon..."
 msgstr "Насби тасвир..."
 
-#: sidebar/sidebar_widget.cpp:748
+#: sidebar/sidebar_widget.cpp:719
 msgid "Remove"
 msgstr "Тоза кардан"
 
@@ -1590,10 +1594,6 @@ msgstr "&Кушодани Пайванд"
 #: sidebar/web_module/web_module.h:59
 msgid "Set &Automatic Reload"
 msgstr "Танзим кардани &худкорона аз нав кардан"
-
-#: sidebar/konqsidebar.cpp:28
-msgid "Extended Sidebar"
-msgstr "Панели Тарифии Паҳншуда"
 
 #: about/konq_aboutpage.cc:79 about/konq_aboutpage.cc:81
 #: about/konq_aboutpage.cc:135 about/konq_aboutpage.cc:137
