@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-18 06:30+0100\n"
+"POT-Creation-Date: 2009-11-19 06:18+0100\n"
 "PO-Revision-Date: 2005-09-17 13:14+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -503,14 +503,14 @@ msgstr ""
 "Сертификати SSL бо мувофақияти танзимот рад карда шуд. Шумо метавонед ин "
 "танзимотҳоро дар Маркази Идоракунии KDE-ро дигаргун кунед."
 
-#: kio/jobuidelegate.cpp:130 ../kfile/kdiroperator.cpp:817
+#: kio/jobuidelegate.cpp:130 ../kfile/kdiroperator.cpp:841
 #, fuzzy, kde-format
 msgid "Do you really want to delete this item?"
 msgid_plural "Do you really want to delete these %1 items?"
 msgstr[0] "Шумо мехоҳед ин ҷузъ нобуд созед?"
 msgstr[1] "Шумо мехоҳед %1 ҷузъҳо нобуд созед?"
 
-#: kio/jobuidelegate.cpp:132 ../kfile/kdiroperator.cpp:819
+#: kio/jobuidelegate.cpp:132 ../kfile/kdiroperator.cpp:843
 msgid "Delete Files"
 msgstr "Нобуд кардани файлҳо"
 
@@ -521,7 +521,7 @@ msgid_plural "Do you really want to move these %1 items to the trash?"
 msgstr[0] "Шумо мехоҳед ин ҷузъ нобуд созед?"
 msgstr[1] "Шумо мехоҳед %1 ҷузъҳо нобуд созед?"
 
-#: kio/jobuidelegate.cpp:144 ../kfile/kdiroperator.cpp:1859
+#: kio/jobuidelegate.cpp:144 ../kfile/kdiroperator.cpp:1883
 msgid "Move to Trash"
 msgstr ""
 
@@ -4978,7 +4978,7 @@ msgstr "Монданҳо"
 msgid "Delete Folder"
 msgstr "Ҳузфи феҳрист"
 
-#: bookmarks/kbookmarkmenu.cc:281 ../kfile/kdiroperator.cpp:1959
+#: bookmarks/kbookmarkmenu.cc:281 ../kfile/kdiroperator.cpp:1983
 #, fuzzy
 msgid "Properties"
 msgstr "Хусусиятҳо барои %1"
@@ -5960,7 +5960,7 @@ msgstr "%1 Ин файлест, ки дар сурати интизори феҳ
 #: ../kfile/kfilewidget.cpp:988
 #, fuzzy, kde-format
 #| msgid "The requested lock could not be granted. %1"
-msgid "The file %1 could not be found"
+msgid "The file \"%1\" could not be found"
 msgstr "Муҳосираи талабкарда тасдиқ карда намешавад. %1"
 
 #: ../kfile/kfilewidget.cpp:988
@@ -6200,12 +6200,12 @@ msgstr ""
 "Сохтани феҳристи нав дар:\n"
 "%1"
 
-#: ../kfile/kdirselectdialog.cpp:156 ../kfile/kdiroperator.cpp:770
+#: ../kfile/kdirselectdialog.cpp:156 ../kfile/kdiroperator.cpp:794
 #, kde-format
 msgid "A file or folder named %1 already exists."
 msgstr "Каталог бо номи %1 аллакай мавҷуд мебошад."
 
-#: ../kfile/kdirselectdialog.cpp:160 ../kfile/kdiroperator.cpp:773
+#: ../kfile/kdirselectdialog.cpp:160 ../kfile/kdiroperator.cpp:797
 msgid "You do not have permission to create that folder."
 msgstr "Шумо барои сохтани  пӯша иҷозат надоред."
 
@@ -6345,11 +6345,36 @@ msgstr ""
 msgid "Show Hidden Folders"
 msgstr "Намоиши феҳристҳои пинҳонӣ"
 
-#: ../kfile/kdiroperator.cpp:735 ../kfile/kdiroperator.cpp:743
+#: ../kfile/kdiroperator.cpp:735
+#, fuzzy
+msgctxt "@action:button"
+msgid "Create directory"
+msgstr "Сохтани Феҳрист"
+
+#: ../kfile/kdiroperator.cpp:737
+#, fuzzy
+#| msgid "Ru&n as a different user"
+msgctxt "@action:button"
+msgid "Enter a different name"
+msgstr "Иҷ&роӣ аз номи истифодакунандаи дигар"
+
+#: ../kfile/kdiroperator.cpp:740
+#, kde-format
+msgid ""
+"The name \"%1\" starts with a dot and will therefore the directory will be "
+"hidden by default."
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:741
+#, fuzzy
+msgid "Create hidden directory?"
+msgstr "Сохтани Феҳрист"
+
+#: ../kfile/kdiroperator.cpp:751 ../kfile/kdiroperator.cpp:758
 msgid "New Folder"
 msgstr "Феҳристи нав"
 
-#: ../kfile/kdiroperator.cpp:744
+#: ../kfile/kdiroperator.cpp:759
 #, kde-format
 msgid ""
 "Create new folder in:\n"
@@ -6358,15 +6383,15 @@ msgstr ""
 "Сохтани феҳристи нав дар:\n"
 "%1"
 
-#: ../kfile/kdiroperator.cpp:788
+#: ../kfile/kdiroperator.cpp:812
 msgid "You did not select a file to delete."
 msgstr "Барои нест кардан ягон файл интихоб нашудааст."
 
-#: ../kfile/kdiroperator.cpp:789
+#: ../kfile/kdiroperator.cpp:813
 msgid "Nothing to Delete"
 msgstr "Барои нест кардан чизе нест."
 
-#: ../kfile/kdiroperator.cpp:810
+#: ../kfile/kdiroperator.cpp:834
 #, kde-format
 msgid ""
 "<qt>Do you really want to delete\n"
@@ -6375,21 +6400,21 @@ msgstr ""
 "<qt>Шумо ҳақиқатан мехоҳед\n"
 " <b>'%1'</b>-ро ҳузф кунед?</qt>"
 
-#: ../kfile/kdiroperator.cpp:812
+#: ../kfile/kdiroperator.cpp:836
 msgid "Delete File"
 msgstr "Нобуд кардани файл"
 
-#: ../kfile/kdiroperator.cpp:850
+#: ../kfile/kdiroperator.cpp:874
 #, fuzzy
 msgid "You did not select a file to trash."
 msgstr "Барои нест кардан ягон файл интихоб нашудааст."
 
-#: ../kfile/kdiroperator.cpp:851
+#: ../kfile/kdiroperator.cpp:875
 #, fuzzy
 msgid "Nothing to Trash"
 msgstr "Барои нест кардан чизе нест."
 
-#: ../kfile/kdiroperator.cpp:868
+#: ../kfile/kdiroperator.cpp:892
 #, fuzzy, kde-format
 msgid ""
 "<qt>Do you really want to trash\n"
@@ -6398,133 +6423,133 @@ msgstr ""
 "<qt>Шумо ҳақиқатан мехоҳед\n"
 " <b>'%1'</b>-ро ҳузф кунед?</qt>"
 
-#: ../kfile/kdiroperator.cpp:870
+#: ../kfile/kdiroperator.cpp:894
 #, fuzzy
 msgid "Trash File"
 msgstr "Файлҳои муваққатӣ"
 
-#: ../kfile/kdiroperator.cpp:871 ../kfile/kdiroperator.cpp:878
+#: ../kfile/kdiroperator.cpp:895 ../kfile/kdiroperator.cpp:902
 msgctxt "to trash"
 msgid "&Trash"
 msgstr ""
 
-#: ../kfile/kdiroperator.cpp:875
+#: ../kfile/kdiroperator.cpp:899
 #, fuzzy, kde-format
 msgid "translators: not called for n == 1"
 msgid_plural "Do you really want to trash these %1 items?"
 msgstr[0] "Шумо мехоҳед ин ҷузъ нобуд созед?"
 msgstr[1] "Шумо мехоҳед %1 ҷузъҳо нобуд созед?"
 
-#: ../kfile/kdiroperator.cpp:877
+#: ../kfile/kdiroperator.cpp:901
 #, fuzzy
 msgid "Trash Files"
 msgstr "Файлҳои муваққатӣ"
 
-#: ../kfile/kdiroperator.cpp:1069 ../kfile/kdiroperator.cpp:1195
+#: ../kfile/kdiroperator.cpp:1093 ../kfile/kdiroperator.cpp:1219
 msgid "The specified folder does not exist or was not readable."
 msgstr "Каталоги ишорашуда вуҷуд надорад ёки барои хондан дастрас намебошад."
 
-#: ../kfile/kdiroperator.cpp:1837
+#: ../kfile/kdiroperator.cpp:1861
 msgid "Menu"
 msgstr "Меню"
 
-#: ../kfile/kdiroperator.cpp:1841
+#: ../kfile/kdiroperator.cpp:1865
 msgid "Parent Folder"
 msgstr "Феҳристи оилавӣ"
 
-#: ../kfile/kdiroperator.cpp:1848
+#: ../kfile/kdiroperator.cpp:1872
 msgid "Home Folder"
 msgstr "Феҳристи хона"
 
-#: ../kfile/kdiroperator.cpp:1851
+#: ../kfile/kdiroperator.cpp:1875
 #, fuzzy
 msgid "Reload"
 msgstr "Хондан"
 
-#: ../kfile/kdiroperator.cpp:1854
+#: ../kfile/kdiroperator.cpp:1878
 msgid "New Folder..."
 msgstr "Феҳристи нав..."
 
-#: ../kfile/kdiroperator.cpp:1865
+#: ../kfile/kdiroperator.cpp:1889
 #, fuzzy
 msgid "Delete"
 msgstr "Дар ҳоли нест кардан"
 
-#: ../kfile/kdiroperator.cpp:1872
+#: ../kfile/kdiroperator.cpp:1896
 msgid "Sorting"
 msgstr "Тартиби хел-хел ҷудо кардан"
 
-#: ../kfile/kdiroperator.cpp:1875
+#: ../kfile/kdiroperator.cpp:1899
 msgid "By Name"
 msgstr "Бо ном"
 
-#: ../kfile/kdiroperator.cpp:1879
+#: ../kfile/kdiroperator.cpp:1903
 msgid "By Size"
 msgstr "Бо андоза"
 
-#: ../kfile/kdiroperator.cpp:1883
+#: ../kfile/kdiroperator.cpp:1907
 msgid "By Date"
 msgstr "Бо таърих"
 
-#: ../kfile/kdiroperator.cpp:1887
+#: ../kfile/kdiroperator.cpp:1911
 #, fuzzy
 msgid "By Type"
 msgstr "Намуд:"
 
-#: ../kfile/kdiroperator.cpp:1891
+#: ../kfile/kdiroperator.cpp:1915
 #, fuzzy
 msgid "Descending"
 msgstr " (Нест кардан)"
 
-#: ../kfile/kdiroperator.cpp:1901
+#: ../kfile/kdiroperator.cpp:1925
 msgid "Icon Position"
 msgstr ""
 
-#: ../kfile/kdiroperator.cpp:1904
+#: ../kfile/kdiroperator.cpp:1928
 msgid "Next to File Name"
 msgstr ""
 
-#: ../kfile/kdiroperator.cpp:1908
+#: ../kfile/kdiroperator.cpp:1932
 #, fuzzy
 #| msgid "Local Filename"
 msgid "Above File Name"
 msgstr "Номи файли локалӣ"
 
-#: ../kfile/kdiroperator.cpp:1919
+#: ../kfile/kdiroperator.cpp:1943
 msgid "Short View"
 msgstr "Тасвироти кӯтоҳ"
 
-#: ../kfile/kdiroperator.cpp:1924
+#: ../kfile/kdiroperator.cpp:1948
 msgid "Detailed View"
 msgstr "Намоиши тафсилот"
 
-#: ../kfile/kdiroperator.cpp:1929
+#: ../kfile/kdiroperator.cpp:1953
 #, fuzzy
 #| msgid "Detailed View"
 msgid "Tree View"
 msgstr "Намоиши тафсилот"
 
-#: ../kfile/kdiroperator.cpp:1934
+#: ../kfile/kdiroperator.cpp:1958
 #, fuzzy
 #| msgid "Detailed View"
 msgid "Detailed Tree View"
 msgstr "Намоиши тафсилот"
 
-#: ../kfile/kdiroperator.cpp:1945
+#: ../kfile/kdiroperator.cpp:1969
 msgid "Show Hidden Files"
 msgstr "Намоиши файлҳои пинҳонӣ"
 
-#: ../kfile/kdiroperator.cpp:1949
+#: ../kfile/kdiroperator.cpp:1973
 #, fuzzy
 #| msgid "Show Preview"
 msgid "Show Aside Preview"
 msgstr "Пешнамоиш нишон диҳед"
 
-#: ../kfile/kdiroperator.cpp:1955
+#: ../kfile/kdiroperator.cpp:1979
 msgid "Show Preview"
 msgstr "Пешнамоиш нишон диҳед"
 
-#: ../kfile/kdiroperator.cpp:1966
+#: ../kfile/kdiroperator.cpp:1990
 #, fuzzy
 msgid "&View"
 msgstr "&Пешнамоиш"
