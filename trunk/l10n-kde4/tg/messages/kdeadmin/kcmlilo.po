@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmlilo\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-11 12:52+0200\n"
+"POT-Creation-Date: 2009-11-23 06:17+0100\n"
 "PO-Revision-Date: 2004-04-29 18:00+0500\n"
 "Last-Translator: Марина Колючева <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -146,11 +146,17 @@ msgid "Mount root filesystem &read-only"
 msgstr "Васл кардани системаи файлии реша &ба ҳолати \"фақат хондан\""
 
 #: kde/Details.cpp:79 qt/Details.cpp:77
+#, fuzzy
+#| msgid ""
+#| "Mount the root filesystem for this kernel read-only. Since the init "
+#| "scripts normally take care of remounting the root filesystem in read-"
+#| "write mode after running some checks, this should always be turned on."
+#| "<br>Don't turn this off unless you know what you're doing."
 msgid ""
 "Mount the root filesystem for this kernel read-only. Since the init scripts "
 "normally take care of remounting the root filesystem in read-write mode "
-"after running some checks, this should always be turned on.<br>Don't turn "
-"this off unless you know what you're doing."
+"after running some checks, this should always be turned on.<br>Do not turn "
+"this off unless you know what you are doing."
 msgstr ""
 "Монтажонидани системаи файли реша барои ин ядро ба тартиботи танҳо- барои "
 "хондан. Чанде аксари вақт системаи файлии решагӣ ба тартиби хондани-"
@@ -217,12 +223,19 @@ msgid "Require &password:"
 msgstr "Гузарвожа &лозим аст:"
 
 #: kde/Details.cpp:97 qt/Details.cpp:98
+#, fuzzy
+#| msgid ""
+#| "Enter the password required for bootup (if any) here. If <i>restricted</"
+#| "i> above is checked, the password is required for additional parameters "
+#| "only.<br><b>WARNING:</b> The password is stored in clear text in /etc/"
+#| "lilo.conf. You'll want to make sure nobody untrusted can read this file. "
+#| "Also, you probably don't want to use your normal/root password here."
 msgid ""
 "Enter the password required for bootup (if any) here. If <i>restricted</i> "
 "above is checked, the password is required for additional parameters only."
 "<br><b>WARNING:</b> The password is stored in clear text in /etc/lilo.conf. "
-"You'll want to make sure nobody untrusted can read this file. Also, you "
-"probably don't want to use your normal/root password here."
+"Make sure that nobody untrusted can read this file. Also, you probably do "
+"not want to use your normal/root password here."
 msgstr ""
 "Дар инҷо гузарвожаи лозимиро барои пурборкунӣ ворид кунед. Агар баъдан "
 "интихоботи <i>restricted</i> интихоб шуда бошад, гузарвожа танҳо барои "
@@ -303,12 +316,19 @@ msgid "Use &linear mode"
 msgstr "Ҳолати &хатиро истифода кунед"
 
 #: kde-qt-common/general.cpp:73
+#, fuzzy
+#| msgid ""
+#| "Check this box if you want to use the linear mode.<br>Linear mode tells "
+#| "the boot loader the location of kernels in linear addressing rather than "
+#| "sector/head/cylinder.<br>linear mode is required for some SCSI drives, "
+#| "and shouldn't hurt unless you're planning to create a boot disk to be "
+#| "used with a different computer.<br>See the lilo.conf man page for details."
 msgid ""
 "Check this box if you want to use the linear mode.<br>Linear mode tells the "
 "boot loader the location of kernels in linear addressing rather than sector/"
-"head/cylinder.<br>linear mode is required for some SCSI drives, and "
-"shouldn't hurt unless you're planning to create a boot disk to be used with "
-"a different computer.<br>See the lilo.conf man page for details."
+"head/cylinder.<br>Linear mode is required for some SCSI drives, and should "
+"not cause problems unless you are planning to create a boot disk to be used "
+"with a different computer.<br>See the lilo.conf man page for details."
 msgstr ""
 "Ин интихоботро тафтиш кунед агар шумо хоҳед ҳолати хатиро истифода кунед."
 "<br>Дар ҳолати хатӣ ҷойгиршавии ядрои пурборкунандаро ки дар адресатсияи "
@@ -368,14 +388,24 @@ msgstr ""
 "кунед."
 
 #: kde-qt-common/general.cpp:97
+#, fuzzy
+#| msgid ""
+#| "Enter the password required for bootup (if any) here. If <i>restricted</"
+#| "i> above is checked, the password is required for additional parameters "
+#| "only.<br><b>WARNING:</b> The password is stored in clear text in /etc/"
+#| "lilo.conf. You'll want to make sure nobody untrusted can read this file. "
+#| "Also, you probably don't want to use your normal/root password here."
+#| "<br>This sets a default for all Linux kernels you want to boot. If you "
+#| "need a per-kernel setting, go to the <i>Operating systems</i> tab and "
+#| "select <i>Details</i>."
 msgid ""
 "Enter the password required for bootup (if any) here. If <i>restricted</i> "
-"above is checked, the password is required for additional parameters only."
+"is checked above, the password is only required for additional parameters."
 "<br><b>WARNING:</b> The password is stored in clear text in /etc/lilo.conf. "
-"You'll want to make sure nobody untrusted can read this file. Also, you "
-"probably don't want to use your normal/root password here.<br>This sets a "
-"default for all Linux kernels you want to boot. If you need a per-kernel "
-"setting, go to the <i>Operating systems</i> tab and select <i>Details</i>."
+"Make sure that nobody untrusted can read this file. Also, you probably do "
+"not want to use your normal/root password here.<br>This sets a default for "
+"all Linux kernels you want to boot. If you need a per-kernel setting, go to "
+"the <i>Operating systems</i> tab and select <i>Details</i>."
 msgstr ""
 "Дар инҷо барои пурборкунӣ гузарвожаи даркориро ворид кунед (агар даркор "
 "бошад). Агар интихоботи <i>restricted</i> интихоб шуда бошад, гузарвожа "
@@ -468,9 +498,14 @@ msgid "&Initial ramdisk:"
 msgstr "&RAM-диск барои пурбор кардан:"
 
 #: kde-qt-common/images.cpp:73 kde-qt-common/images.cpp:195
+#, fuzzy
+#| msgid ""
+#| "If you want to use an initial ramdisk (initrd) for this kernel, enter its "
+#| "filename here. Leave this field blank if you don't intend to use an "
+#| "initial ramdisk for this kernel."
 msgid ""
 "If you want to use an initial ramdisk (initrd) for this kernel, enter its "
-"filename here. Leave this field blank if you don't intend to use an initial "
+"filename here. Leave this field blank if you do not intend to use an initial "
 "ramdisk for this kernel."
 msgstr ""
 "Агар шумо мехоҳед (initrd) диски- RAM-ро барои ин ядро истифода кунед номи "
@@ -495,7 +530,9 @@ msgid "Set &Default"
 msgstr "Соз кардани &пешфарз"
 
 #: kde-qt-common/images.cpp:84
-msgid "Boot this kernel/OS if the user doesn't make a different choice"
+#, fuzzy
+#| msgid "Boot this kernel/OS if the user doesn't make a different choice"
+msgid "Boot this kernel/OS if the user does not make a different choice"
 msgstr ""
 "Пурбор кардани ядрои/СО, агар истифодакунанда ягон интихоби дигар накунад"
 
@@ -524,7 +561,9 @@ msgid "&Check Configuration"
 msgstr "&Санҷидани танзимотҳо"
 
 #: kde-qt-common/images.cpp:94
-msgid "Run LILO in test mode to see if the configuration is ok"
+#, fuzzy
+#| msgid "Run LILO in test mode to see if the configuration is ok"
+msgid "Run LILO in test mode to see if the configuration is okay."
 msgstr "Барои санҷиши дурустии танзимотҳо, LILO дар ҳолати матнӣ ба кор дароед"
 
 #: kde-qt-common/images.cpp:95
@@ -552,19 +591,27 @@ msgid "Remove entry from the boot menu"
 msgstr "Нобуд сохтани ворид аз менюи пурбор"
 
 #: kde-qt-common/images.cpp:182
-msgid "Configuration ok. LILO said:\n"
+#, fuzzy
+#| msgid "Configuration ok. LILO said:\n"
+msgid "Configuration okay. LILO reported:\n"
 msgstr "Тазимот хато надорад. Ахбороти LILO:\n"
 
 #: kde-qt-common/images.cpp:183
-msgid "Configuration OK"
+#, fuzzy
+#| msgid "Configuration OK"
+msgid "Configuration Okay"
 msgstr "Тазимот хато надорад"
 
 #: kde-qt-common/images.cpp:185
-msgid "Configuration NOT ok. LILO said:\n"
+#, fuzzy
+#| msgid "Configuration NOT ok. LILO said:\n"
+msgid "Configuration NOT okay. LILO reported:\n"
 msgstr "Хатои танзимот. Ахбороти LILO:\n"
 
 #: kde-qt-common/images.cpp:186
-msgid "Configuration NOT ok"
+#, fuzzy
+#| msgid "Configuration NOT ok"
+msgid "Configuration NOT Okay"
 msgstr "Хатои танзимот"
 
 #: kde-qt-common/images.cpp:192
@@ -576,14 +623,21 @@ msgid "Boot from dis&k:"
 msgstr "Пурбор кардан аз &диск:"
 
 #: kde-qt-common/images.cpp:220
+#, fuzzy
+#| msgid ""
+#| "Enter the partition containing the operating system you'd like to boot "
+#| "here."
 msgid ""
-"Enter the partition containing the operating system you'd like to boot here."
+"Enter here the partition containing the operating system you would like to "
+"boot."
 msgstr ""
 "Қисматро ворид кунед, ки системаи оператсионие , ки шумо мехоҳед пурбор "
 "кунед,дошта бошад."
 
 #: kde-qt-common/images.cpp:221
-msgid "Enter the label (name) of the operating system here."
+#, fuzzy
+#| msgid "Enter the label (name) of the operating system here."
+msgid "Enter here the label (name) of the operating system."
 msgstr "Ном ё тамғаи системаи оператсионии шумо дар ин ҷо ворид кунед."
 
 #: kde-qt-common/images.cpp:302
@@ -612,9 +666,16 @@ msgid "&Operating systems"
 msgstr "&Системаи оператсионӣ"
 
 #: qt/Details.cpp:81
+#, fuzzy
+#| msgid ""
+#| "This turns off some sanity checks while writing the configuration. This "
+#| "shouldn't be used under \"normal\" circumstances, but it's useful, for "
+#| "example, for installing the possibility to boot from a floppy disk "
+#| "without having a floppy in the drive every time you run lilo.<br>This "
+#| "sets the <i>unsafe</i> keyword in lilo.conf."
 msgid ""
 "This turns off some sanity checks while writing the configuration. This "
-"shouldn't be used under \"normal\" circumstances, but it's useful, for "
+"should not be used under \"normal\" circumstances, but it is useful, for "
 "example, for installing the possibility to boot from a floppy disk without "
 "having a floppy in the drive every time you run lilo.<br>This sets the "
 "<i>unsafe</i> keyword in lilo.conf."
