@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-16 06:46+0100\n"
+"POT-Creation-Date: 2009-12-19 05:50+0100\n"
 "PO-Revision-Date: 2005-09-17 12:46+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -382,19 +382,19 @@ msgstr "&Нобудкунии Сурат"
 msgid "Import &Missing Signatures From Keyserver"
 msgstr "Воридоти &Имзоҳои ғоибуда аз Хидматрасони Калидҳо"
 
-#: keysmanager.cpp:304 model/kgpgitemmodel.cpp:281
+#: keysmanager.cpp:304 model/kgpgitemmodel.cpp:284
 msgid "Trust"
 msgstr "Боварӣ"
 
-#: keysmanager.cpp:307 model/kgpgitemmodel.cpp:282
+#: keysmanager.cpp:307 model/kgpgitemmodel.cpp:285
 msgid "Size"
 msgstr "Андоза"
 
-#: keysmanager.cpp:310 model/kgpgitemmodel.cpp:284
+#: keysmanager.cpp:310 model/kgpgitemmodel.cpp:287
 msgid "Creation"
 msgstr "Офариниш"
 
-#: keysmanager.cpp:313 model/kgpgitemmodel.cpp:283
+#: keysmanager.cpp:313 model/kgpgitemmodel.cpp:286
 msgid "Expiration"
 msgstr "Мӯҳлати Истифода"
 
@@ -1771,7 +1771,7 @@ msgstr "(Нобаён)"
 msgid "Enter passphrase (symmetrical encryption)"
 msgstr "Гузарвожаро ворид кунед (рамзкунонии симметрӣ)"
 
-#: kgpgtextinterface.cpp:106 model/kgpgitemnode.cpp:1086
+#: kgpgtextinterface.cpp:106 core/KGpgRefNode.cpp:126
 #: transactions/kgpgtransaction.cpp:260
 msgid "[No user id found]"
 msgstr "[Шиносаи корванд пайдо нагардид]"
@@ -2611,7 +2611,7 @@ msgstr "Калидҳои Дастрасии Боваринок"
 #. i18n: ectx: property (text), widget (QTableView, availableKeys)
 #. i18n: file: groupedit.ui:135
 #. i18n: ectx: property (text), widget (QTableView, groupKeys)
-#: rc.cpp:253 rc.cpp:265 model/kgpgitemmodel.cpp:279
+#: rc.cpp:253 rc.cpp:265 model/kgpgitemmodel.cpp:282
 #: model/kgpgsearchresultmodel.cpp:323
 msgid "Name"
 msgstr "Ном"
@@ -2620,7 +2620,7 @@ msgstr "Ном"
 #. i18n: ectx: property (text), widget (QTableView, availableKeys)
 #. i18n: file: groupedit.ui:140
 #. i18n: ectx: property (text), widget (QTableView, groupKeys)
-#: rc.cpp:256 rc.cpp:268 model/kgpgitemmodel.cpp:280
+#: rc.cpp:256 rc.cpp:268 model/kgpgitemmodel.cpp:283
 #: model/kgpgsearchresultmodel.cpp:325
 #, fuzzy
 #| msgid "Email"
@@ -3768,12 +3768,55 @@ msgctxt "Unknown trust in key"
 msgid "Unknown"
 msgstr "Номаълум"
 
-#: core/kgpgkey.cpp:512
+#: core/KGpgGroupNode.cpp:68
+#, fuzzy, kde-format
+#| msgid "%1 subkey"
+msgid "1 key"
+msgid_plural "%1 keys"
+msgstr[0] "%1 зеркалид"
+msgstr[1] "%1 зеркалид"
+
+#: core/kgpgkey.cpp:504
 #, fuzzy
 #| msgid "Unlimited"
 msgctxt "Unlimited key lifetime"
 msgid "Unlimited"
 msgstr "Номаҳдуд"
+
+#: core/KGpgKeyNode.cpp:76
+#, kde-format
+msgctxt "size of signing key / size of encryption key"
+msgid "%1 / %2"
+msgstr ""
+
+#: core/KGpgKeyNode.cpp:182 core/KGpgSignableNode.cpp:48
+#, fuzzy, kde-format
+#| msgid "Signature"
+msgid "1 signature"
+msgid_plural "%1 signatures"
+msgstr[0] "Имзо"
+msgstr[1] "Имзо"
+
+#: core/KGpgNode.cpp:48
+#, kde-format
+msgctxt "Name of uid (comment)"
+msgid "%1 (%2)"
+msgstr ""
+
+#: core/KGpgSignNode.cpp:63
+#, fuzzy, kde-format
+#| msgid " [Revocation signature]"
+msgid "%1 [local signature]"
+msgstr " [Имзокунии бозхонӣ]"
+
+#: core/KGpgSubkeyNode.cpp:74
+#, kde-format
+msgid "%1 subkey"
+msgstr "%1 зеркалид"
+
+#: core/KGpgUatNode.cpp:43
+msgid "Photo id"
+msgstr "Сурати Шиноса"
 
 #: editor/kgpgeditor.cpp:89 editor/kgpgeditor.cpp:246
 #: editor/kgpgeditor.cpp:723 editor/kgpgeditor.cpp:752
@@ -3996,67 +4039,32 @@ msgctxt "Name <Email>: ID"
 msgid "%1 &lt;%2&gt;: %3"
 msgstr ""
 
-#: model/kgpgitemmodel.cpp:193
+#: model/kgpgitemmodel.cpp:199
 #, fuzzy, kde-format
 msgid "1 Key"
 msgid_plural "%1 Keys"
 msgstr[0] "&Калидҳо"
 msgstr[1] "&Калидҳо"
 
-#: model/kgpgitemmodel.cpp:198
+#: model/kgpgitemmodel.cpp:201
 #, fuzzy, kde-format
-#| msgid "Key Group"
-msgid "1 Group"
-msgid_plural "%1 Groups"
-msgstr[0] "Калиди гурӯҳ"
-msgstr[1] "Калиди гурӯҳ"
+#| msgid "%1 Keys, %2 Groups"
+msgid "1 Key, 1 Group"
+msgid_plural "%1 Keys, 1 Group"
+msgstr[0] "%1 Калидҳо, %2 Гурӯҳо"
+msgstr[1] "%1 Калидҳо, %2 Гурӯҳо"
 
-#: model/kgpgitemmodel.cpp:285
+#: model/kgpgitemmodel.cpp:203
+#, fuzzy, kde-format
+#| msgid "%1 Keys, %2 Groups"
+msgid "1 Key, %2 Groups"
+msgid_plural "%1 Keys, %2 Groups"
+msgstr[0] "%1 Калидҳо, %2 Гурӯҳо"
+msgstr[1] "%1 Калидҳо, %2 Гурӯҳо"
+
+#: model/kgpgitemmodel.cpp:288
 msgid "ID"
 msgstr "Шиноса"
-
-#: model/kgpgitemnode.cpp:51
-#, kde-format
-msgctxt "Name of uid (comment)"
-msgid "%1 (%2)"
-msgstr ""
-
-#: model/kgpgitemnode.cpp:307 model/kgpgitemnode.cpp:627
-#, fuzzy, kde-format
-#| msgid "Signature"
-msgid "1 signature"
-msgid_plural "%1 signatures"
-msgstr[0] "Имзо"
-msgstr[1] "Имзо"
-
-#: model/kgpgitemnode.cpp:535
-#, kde-format
-msgctxt "size of signing key / size of encryption key"
-msgid "%1 / %2"
-msgstr ""
-
-#: model/kgpgitemnode.cpp:859
-#, fuzzy, kde-format
-#| msgid " [Revocation signature]"
-msgid "%1 [local signature]"
-msgstr " [Имзокунии бозхонӣ]"
-
-#: model/kgpgitemnode.cpp:890
-#, kde-format
-msgid "%1 subkey"
-msgstr "%1 зеркалид"
-
-#: model/kgpgitemnode.cpp:918
-msgid "Photo id"
-msgstr "Сурати Шиноса"
-
-#: model/kgpgitemnode.cpp:972
-#, fuzzy, kde-format
-#| msgid "%1 subkey"
-msgid "1 key"
-msgid_plural "%1 keys"
-msgstr[0] "%1 зеркалид"
-msgstr[1] "%1 зеркалид"
 
 #: model/kgpgsearchresultmodel.cpp:217
 #, kde-format
@@ -4350,6 +4358,13 @@ msgstr ""
 msgctxt "State of operation as in status"
 msgid "State"
 msgstr "Ултимат"
+
+#, fuzzy
+#~| msgid "Key Group"
+#~ msgid "1 Group"
+#~ msgid_plural "%1 Groups"
+#~ msgstr[0] "Калиди гурӯҳ"
+#~ msgstr[1] "Калиди гурӯҳ"
 
 #~ msgid "textLabel7"
 #~ msgstr "textLabel7"
@@ -4916,9 +4931,6 @@ msgstr "Ултимат"
 #~ msgstr ""
 #~ "Ин калид зиёда аз як Шиносаи корвандро дорост.\n"
 #~ "Барои нобудкунии инмзо калидро ба таври дастӣ таҳрир кунед."
-
-#~ msgid "%1 Keys, %2 Groups"
-#~ msgstr "%1 Калидҳо, %2 Гурӯҳо"
 
 #, fuzzy
 #~| msgid "<qt>Good signature from:<br><b>%1</b><br>Key ID: %2</qt>"
