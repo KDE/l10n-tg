@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kig\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-17 06:10+0100\n"
+"POT-Creation-Date: 2009-12-22 06:11+0100\n"
 "PO-Revision-Date: 2005-10-28 16:34+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -1598,12 +1598,14 @@ msgid "A polygon that corresponds to the convex hull of another polygon"
 msgstr "Секунҷае ки бо тани барҷастаи дигар секунҷа мувофиқ аст"
 
 #: misc/builtin_stuff.cc:536
-msgid "Bézier Quadric by its Control Points"
-msgstr ""
+#, fuzzy
+#| msgid "Cubic Curve by Nine Points"
+msgid "Bézier Quadratic by its Control Points"
+msgstr "Хати каҷи тартиботи саввум аз рӯи 9 нуқта"
 
 #: misc/builtin_stuff.cc:537
 #, fuzzy
-msgid "Construct a Bézier quadric given its three control points."
+msgid "Construct a Bézier quadratic given its three control points."
 msgstr "Сохтани қавс аз рӯи се нуқта."
 
 #: misc/builtin_stuff.cc:544
@@ -1617,13 +1619,15 @@ msgid "Construct a Bézier cubic given its four control points."
 msgstr "Сохтани хати каҷи тартиботи саввум аз ин нуқта"
 
 #: misc/builtin_stuff.cc:556
-msgid "Rational Bézier Quadric by its Control Points"
-msgstr ""
+#, fuzzy
+#| msgid "Cubic Curve by Nine Points"
+msgid "Rational Bézier Quadratic by its Control Points"
+msgstr "Хати каҷи тартиботи саввум аз рӯи 9 нуқта"
 
 #: misc/builtin_stuff.cc:557
 #, fuzzy
 #| msgid "Construct a triangle given its three vertices."
-msgid "Construct a Rational Bézier quadric given its three control points."
+msgid "Construct a Rational Bézier quadratic given its three control points."
 msgstr "Секунҷаро бо се қуллааш созед."
 
 #: misc/builtin_stuff.cc:564
@@ -2035,13 +2039,13 @@ msgid ""
 "terminate construction)"
 msgstr ""
 
-#: misc/special_constructors.cc:1227
+#: misc/special_constructors.cc:1227 objects/bezier_type.cc:40
 #, fuzzy
 #| msgid "Construct a circle with this center"
 msgid "Construct a Bézier curve with this control point"
 msgstr "Сохтани доира давра аз рӯи ҳамин нуқта ҳамчун марказ"
 
-#: misc/special_constructors.cc:1234
+#: misc/special_constructors.cc:1234 objects/bezier_type.cc:41
 #, fuzzy
 msgid "Select a point to be a control point of the new Bézier curve..."
 msgstr "Хати рост интихоб кунед..."
@@ -2069,7 +2073,7 @@ msgid ""
 "to terminate construction)"
 msgstr ""
 
-#: misc/special_constructors.cc:1345
+#: misc/special_constructors.cc:1345 objects/bezier_type.cc:358
 #, fuzzy
 #| msgid "Construct a circle with this center"
 msgid "Construct a rational Bézier curve with this control point"
@@ -2925,50 +2929,51 @@ msgid "Hide a Bézier Curve"
 msgstr "Пинҳон намудани хати каҷи тартиботи саввум"
 
 #: objects/bezier_imp.cc:240
-msgid "Bézier Quadric"
-msgstr ""
+#, fuzzy
+msgid "Bézier Quadratic"
+msgstr "Афзудани навиштаҷот"
 
 #: objects/bezier_imp.cc:241
 #, fuzzy
 #| msgid "Select this arc"
-msgid "Select this Bézier Quadric"
+msgid "Select this Bézier Quadratic"
 msgstr "Интихоб намудани ин қавс"
 
 #: objects/bezier_imp.cc:242
 #, fuzzy, kde-format
 #| msgid "Select arc %1"
-msgid "Select Bézier Quadric %1"
+msgid "Select Bézier Quadratic %1"
 msgstr "Интихоб намудани қавси %1"
 
 #: objects/bezier_imp.cc:243
 #, fuzzy
-msgid "Remove a Bézier Quadric"
+msgid "Remove a Bézier Quadratic"
 msgstr "Ҳузфи навиштаҷот"
 
 #: objects/bezier_imp.cc:244
 #, fuzzy
-msgid "Add a Bézier Quadric"
+msgid "Add a Bézier Quadratic"
 msgstr "Афзудани навиштаҷот"
 
 #: objects/bezier_imp.cc:245
 #, fuzzy
-msgid "Move a Bézier Quadric"
+msgid "Move a Bézier Quadratic"
 msgstr "Гузаронидани хати каҷ"
 
 #: objects/bezier_imp.cc:246
 #, fuzzy
 #| msgid "Attach to this arc"
-msgid "Attach to this Bézier Quadric"
+msgid "Attach to this Bézier Quadratic"
 msgstr "Ба ин қавс илова намудан"
 
 #: objects/bezier_imp.cc:247
 #, fuzzy
-msgid "Show a Bézier Quadric"
+msgid "Show a Bézier Quadratic"
 msgstr "Намоиши хати каҷ тартиботи саввум"
 
 #: objects/bezier_imp.cc:248
 #, fuzzy
-msgid "Hide a Bézier Quadric"
+msgid "Hide a Bézier Quadratic"
 msgstr "Пинҳон намудани хати каҷи тартиботи саввум"
 
 #: objects/bezier_imp.cc:258
@@ -3068,43 +3073,49 @@ msgid "Hide a Rational Bézier Curve"
 msgstr "Пинҳон намудани нуқта"
 
 #: objects/bezier_imp.cc:538
-msgid "Rational Bézier Quadric"
-msgstr ""
+#, fuzzy
+msgid "Rational Bézier Quadratic"
+msgstr "Интихоб намудани хати каҷи конусшакли %1"
 
 #: objects/bezier_imp.cc:539
 #, fuzzy
-msgid "Select this Rational Bézier Quadric"
+msgid "Select this Rational Bézier Quadratic"
 msgstr "Интихоб намудани ин хати каҷи конусшакл"
 
 #: objects/bezier_imp.cc:540
 #, fuzzy, kde-format
-msgid "Select Rational Bézier Quadric %1"
+msgid "Select Rational Bézier Quadratic %1"
 msgstr "Интихоб намудани хати каҷи конусшакли %1"
 
 #: objects/bezier_imp.cc:541
-msgid "Remove a Rational Bézier Quadric"
-msgstr ""
+#, fuzzy
+msgid "Remove a Rational Bézier Quadratic"
+msgstr "Ҳузфи нуқта"
 
 #: objects/bezier_imp.cc:542
-msgid "Add a Rational Bézier Quadric"
-msgstr ""
+#, fuzzy
+msgid "Add a Rational Bézier Quadratic"
+msgstr "Афзудани нуқта"
 
 #: objects/bezier_imp.cc:543
-msgid "Move a Rational Bézier Quadric"
-msgstr ""
+#, fuzzy
+msgid "Move a Rational Bézier Quadratic"
+msgstr "Гузаронидани нуқта"
 
 #: objects/bezier_imp.cc:544
 #, fuzzy
-msgid "Attach to this Rational Bézier Quadric"
+msgid "Attach to this Rational Bézier Quadratic"
 msgstr "Ба ин хати каҷи конусшакл илова намудан"
 
 #: objects/bezier_imp.cc:545
-msgid "Show a Rational Bézier Quadric"
-msgstr ""
+#, fuzzy
+msgid "Show a Rational Bézier Quadratic"
+msgstr "Нишон додани нуқта"
 
 #: objects/bezier_imp.cc:546
-msgid "Hide a Rational Bézier Quadric"
-msgstr ""
+#, fuzzy
+msgid "Hide a Rational Bézier Quadratic"
+msgstr "Пинҳон намудани нуқта"
 
 #: objects/bezier_imp.cc:556
 msgid "Rational Bézier Cubic"
@@ -3146,17 +3157,6 @@ msgstr ""
 msgid "Hide a Rational Bézier Cubic"
 msgstr ""
 
-#: objects/bezier_type.cc:40
-#, fuzzy
-#| msgid "Construct an arc with this center"
-msgid "Construct a quadric with this control point"
-msgstr "Сохтани давра аз рӯи ин нуқта ҳамчун марказ"
-
-#: objects/bezier_type.cc:41
-#, fuzzy
-msgid "Select a point to be a control point of the new quadric..."
-msgstr "Хати рост интихоб кунед..."
-
 #: objects/bezier_type.cc:140
 #, fuzzy
 #| msgid "Construct a circle with this center"
@@ -3168,12 +3168,6 @@ msgstr "Сохтани доира давра аз рӯи ҳамин нуқта �
 msgid "Select a point to be a control point of the new cubic..."
 msgstr "Хати рост интихоб кунед..."
 
-#: objects/bezier_type.cc:358
-#, fuzzy
-#| msgid "Construct an arc with this center"
-msgid "Construct a rational quadric with this control point"
-msgstr "Сохтани давра аз рӯи ин нуқта ҳамчун марказ"
-
 #: objects/bezier_type.cc:359
 #, fuzzy
 #| msgid ""
@@ -3181,7 +3175,7 @@ msgstr "Сохтани давра аз рӯи ин нуқта ҳамчун ма�
 #| "radical line..."
 msgid ""
 "Select three points and three numeric values as weights to construct "
-"rational quadric..."
+"rational Bézier curve..."
 msgstr ""
 "Барои сохтани тираи қатъӣ аз ду хати каҷи конусшакл, якӯмашро интихоб "
 "кунед..."
@@ -6117,6 +6111,31 @@ msgstr "Каме зиёд аз як навъ интихоб шудааст."
 #: modes/typesdialog.cpp:496
 msgid "More Than One Type Selected"
 msgstr "Зиёд аз як навъ интихоб шудааст"
+
+#, fuzzy
+#~| msgid "Construct an arc with this center"
+#~ msgid "Construct a quadric with this control point"
+#~ msgstr "Сохтани давра аз рӯи ин нуқта ҳамчун марказ"
+
+#, fuzzy
+#~ msgid "Select a point to be a control point of the new quadric..."
+#~ msgstr "Хати рост интихоб кунед..."
+
+#, fuzzy
+#~| msgid "Construct an arc with this center"
+#~ msgid "Construct a rational quadric with this control point"
+#~ msgstr "Сохтани давра аз рӯи ин нуқта ҳамчун марказ"
+
+#, fuzzy
+#~| msgid ""
+#~| "Select the first of the two conics of which you want to construct the "
+#~| "radical line..."
+#~ msgid ""
+#~ "Select three points and three numeric values as weights to construct "
+#~ "rational quadric..."
+#~ msgstr ""
+#~ "Барои сохтани тираи қатъӣ аз ду хати каҷи конусшакл, якӯмашро интихоб "
+#~ "кунед..."
 
 #, fuzzy
 #~| msgid "Hide a Curve"
