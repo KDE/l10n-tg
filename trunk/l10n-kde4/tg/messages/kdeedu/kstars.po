@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-23 06:59+0100\n"
+"POT-Creation-Date: 2009-12-24 06:07+0100\n"
 "PO-Revision-Date: 2005-11-06 23:03+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -34684,7 +34684,7 @@ msgstr "Таҳрир намудани нишонаҳои FOV "
 msgid " Welcome to KStars "
 msgstr " Хуш омадед ба KStars "
 
-#: kstarsinit.cpp:567 skymap.cpp:371 widgets/infoboxwidget.cpp:119
+#: kstarsinit.cpp:567 skymap.cpp:371 widgets/infoboxwidget.cpp:117
 msgid "nothing"
 msgstr "не"
 
@@ -46397,8 +46397,10 @@ msgstr "Ҷузъиёти тирезаро барои объекти асосӣ �
 #. i18n: ectx: property (text), widget (QPushButton, Slew)
 #: rc.cpp:5802
 #, fuzzy
-msgid "Slew Scope"
-msgstr "&Боздоштан"
+#| msgid "Setup Telescopes"
+msgctxt "Move the telescope to an object or location"
+msgid "Slew Telescope"
+msgstr "Телескопро танзим кунед"
 
 #. i18n: file: comast/execute.ui:309
 #. i18n: ectx: property (text), widget (KTitleWidget, ktitlewidget_3)
@@ -46420,8 +46422,8 @@ msgstr "Хидматгор"
 #. i18n: ectx: property (text), widget (QLabel, label_11)
 #: rc.cpp:5811
 #, fuzzy
-msgid "Scope:"
-msgstr "&Боздоштан"
+msgid "Telescope:"
+msgstr "Даргоҳи телескоп:"
 
 #. i18n: file: comast/execute.ui:341
 #. i18n: ectx: property (text), widget (QLabel, label_12)
@@ -46488,7 +46490,7 @@ msgstr "&Ғарб"
 #. i18n: ectx: property (windowTitle), widget (QWidget, ObserverAdd)
 #. i18n: file: comast/observeradd.ui:61
 #. i18n: ectx: property (text), widget (QPushButton, AddObserver)
-#: rc.cpp:5844 rc.cpp:5856 comast/observeradd.cpp:35
+#: rc.cpp:5844 rc.cpp:5856 comast/observeradd.cpp:34
 #, fuzzy
 #| msgid "Find Object"
 msgid "Add Observer"
@@ -47473,13 +47475,13 @@ msgid "Flag manager"
 msgstr ""
 
 #: tools/flagmanager.cpp:56 tools/observinglist.cpp:108
-#: tools/observinglist.cpp:111 widgets/infoboxwidget.cpp:126
+#: tools/observinglist.cpp:111 widgets/infoboxwidget.cpp:124
 msgctxt "Right Ascension"
 msgid "RA"
 msgstr "ПВ"
 
 #: tools/flagmanager.cpp:57 tools/observinglist.cpp:108
-#: tools/observinglist.cpp:111 widgets/infoboxwidget.cpp:127
+#: tools/observinglist.cpp:111 widgets/infoboxwidget.cpp:125
 msgctxt "Declination"
 msgid "Dec"
 msgstr "СКЛ"
@@ -47780,14 +47782,14 @@ msgctxt "Magnitude"
 msgid "Mag"
 msgstr "mag"
 
-#: tools/observinglist.cpp:113 widgets/infoboxwidget.cpp:130
+#: tools/observinglist.cpp:113 widgets/infoboxwidget.cpp:128
 msgctxt "Altitude"
 msgid "Alt"
 msgstr ""
 ": Баландӣ\n"
 "Бал"
 
-#: tools/observinglist.cpp:113 widgets/infoboxwidget.cpp:129
+#: tools/observinglist.cpp:113 widgets/infoboxwidget.cpp:127
 msgctxt "Azimuth"
 msgid "Az"
 msgstr "Аз"
@@ -49209,32 +49211,32 @@ msgctxt "angular size in arcminutes"
 msgid "%1 x %2 arcmin"
 msgstr "%1 дақ"
 
-#: widgets/infoboxwidget.cpp:79
+#: widgets/infoboxwidget.cpp:77
 msgctxt "Local Time"
 msgid "LT: "
 msgstr "ВМ: "
 
-#: widgets/infoboxwidget.cpp:83
+#: widgets/infoboxwidget.cpp:81
 msgctxt "Universal Time"
 msgid "UT: "
 msgstr "ВУ: "
 
-#: widgets/infoboxwidget.cpp:94
+#: widgets/infoboxwidget.cpp:92
 msgctxt "Sidereal Time"
 msgid "ST: "
 msgstr "ST: "
 
-#: widgets/infoboxwidget.cpp:95
+#: widgets/infoboxwidget.cpp:93
 msgctxt "Julian Day"
 msgid "JD: "
 msgstr "JD: "
 
-#: widgets/infoboxwidget.cpp:106
+#: widgets/infoboxwidget.cpp:104
 msgctxt "Longitude"
 msgid "Long:"
 msgstr "Дарозӣ:"
 
-#: widgets/infoboxwidget.cpp:108
+#: widgets/infoboxwidget.cpp:106
 msgctxt "Latitude"
 msgid "Lat:"
 msgstr "Вас:"
@@ -50782,25 +50784,29 @@ msgstr ""
 
 #: comast/equipmentwriter.cpp:75 comast/equipmentwriter.cpp:77
 #, fuzzy
-msgid "scope_"
+msgctxt "prefix for ID number identifying a telescope (optional)"
+msgid "scope"
 msgstr "&Боздоштан"
 
 #: comast/equipmentwriter.cpp:127 comast/equipmentwriter.cpp:129
 #, fuzzy
 #| msgid "Eyepiece"
-msgid "eyepiece_"
+msgctxt "prefix for ID number identifying an eyepiece (optional)"
+msgid "eyepiece"
 msgstr "Окуляр"
 
 #: comast/equipmentwriter.cpp:184 comast/equipmentwriter.cpp:186
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Orleans"
-msgid "lens_"
+msgctxt "prefix for ID number identifying a lens (optional)"
+msgid "lens"
 msgstr "Орлеан"
 
 #: comast/equipmentwriter.cpp:237 comast/equipmentwriter.cpp:239
 #, fuzzy
-msgid "filter_"
+msgctxt "prefix for ID number identifying a filter (optional)"
+msgid "filter"
 msgstr "Филтри тасвир"
 
 #: comast/execute.cpp:43
@@ -50841,36 +50847,44 @@ msgstr ""
 msgid "observation_"
 msgstr "Расадхонаи Диер"
 
-#: comast/observeradd.cpp:49
+#: comast/observeradd.cpp:48
 msgid "The Name field cannot be empty"
 msgstr ""
 
-#: comast/observeradd.cpp:49
+#: comast/observeradd.cpp:48
 #, fuzzy
 #| msgid "Invalid URL"
 msgid "Invalid Input"
 msgstr "URL-и нодуруст"
 
-#: comast/observeradd.cpp:54
+#: comast/observeradd.cpp:53
 msgid ""
 "Another Observer already exists with the given Name and Surname, Overwrite?"
 msgstr ""
 
-#: comast/observeradd.cpp:59 comast/observeradd.cpp:61
+#: comast/observeradd.cpp:58 comast/observeradd.cpp:60
 #, fuzzy
 #| msgid "Server"
 msgid "observer_"
 msgstr "Хидматгор"
 
-#: comast/observeradd.cpp:78
+#: comast/observeradd.cpp:77
 #, fuzzy
 #| msgid "Could not download the file."
 msgid "Could not save the observer list to the file."
 msgstr "Натавонистам файлро пурбор кард."
 
-#: comast/observeradd.cpp:78
+#: comast/observeradd.cpp:77
 msgid "Write Error"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Slew Scope"
+#~ msgstr "&Боздоштан"
+
+#, fuzzy
+#~ msgid "Scope:"
+#~ msgstr "&Боздоштан"
 
 #, fuzzy
 #~| msgctxt "City name (optional, probably does not need a translation)"
@@ -53990,9 +54004,6 @@ msgstr ""
 
 #~ msgid "Displays the longitude of the selected city"
 #~ msgstr "Намоиш додани давомнокии шаҳри интихоб карда"
-
-#~ msgid "Setup Telescopes"
-#~ msgstr "Телескопро танзим кунед"
 
 #, fuzzy
 #~ msgid ""
