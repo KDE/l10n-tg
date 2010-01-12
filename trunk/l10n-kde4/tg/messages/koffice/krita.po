@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-10 06:19+0100\n"
+"POT-Creation-Date: 2010-01-12 07:01+0100\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -4023,7 +4023,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
 #. i18n: file: plugins/extensions/dockers/defaultdockers/wdgpalettechooser.ui:74
 #. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
-#: rc.cpp:1169 rc.cpp:2464 plugins/tools/tool_polyline/kis_tool_polyline.cc:63
+#: rc.cpp:1169 rc.cpp:2464 ui/tool/kis_tool_polyline_base.cpp:42
 #, fuzzy
 msgid "&Cancel"
 msgstr "&Мил:"
@@ -8726,6 +8726,11 @@ msgstr ""
 msgid "Selection"
 msgstr "Интихоб"
 
+#: ui/tool/kis_tool_polyline_base.cpp:39
+#, fuzzy
+msgid "&Finish"
+msgstr "&Асбоби Хат"
+
 #: ui/tool/kis_tool.cc:103
 #, fuzzy
 msgid "Swap Foreground and Background Color"
@@ -8741,7 +8746,7 @@ msgstr "&Ранги пешзамина"
 msgid "No options"
 msgstr "Алфа"
 
-#: ui/tool/kis_tool_freehand.cc:409 ui/tool/kis_tool_freehand.cc:418
+#: ui/tool/kis_tool_freehand.cc:415 ui/tool/kis_tool_freehand.cc:424
 msgid "Freehand tool"
 msgstr ""
 
@@ -9035,61 +9040,65 @@ msgid "Lukáš Tvrdý"
 msgstr ""
 
 #: ui/kis_aboutdata.h:58
-msgid "Matthias Elter"
+msgid "Marc Pegon"
 msgstr ""
 
 #: ui/kis_aboutdata.h:59
-msgid "Melchior Franz"
+msgid "Matthias Elter"
 msgstr ""
 
 #: ui/kis_aboutdata.h:60
-msgid "Michael Koch"
+msgid "Melchior Franz"
 msgstr ""
 
 #: ui/kis_aboutdata.h:61
-msgid "Michael Thaler"
+msgid "Michael Koch"
 msgstr ""
 
 #: ui/kis_aboutdata.h:62
+msgid "Michael Thaler"
+msgstr ""
+
+#: ui/kis_aboutdata.h:63
 #, fuzzy
 msgid "Patrick Julien"
 msgstr "Интихоб"
 
-#: ui/kis_aboutdata.h:63
+#: ui/kis_aboutdata.h:64
 #, fuzzy
 msgid "Roger Larsson"
 msgstr "Нест кардани Табақа"
 
-#: ui/kis_aboutdata.h:64
+#: ui/kis_aboutdata.h:65
 #, fuzzy
 msgid "Samy Lange"
 msgstr "Дигаргунии ҳосиятҳо"
 
-#: ui/kis_aboutdata.h:65
+#: ui/kis_aboutdata.h:66
 msgid "Sven Langkamp"
 msgstr ""
 
-#: ui/kis_aboutdata.h:66
+#: ui/kis_aboutdata.h:67
 msgid "Toshitaka Fujioka"
 msgstr ""
 
-#: ui/kis_aboutdata.h:67
+#: ui/kis_aboutdata.h:68
 msgid "Thomas Zander"
 msgstr ""
 
-#: ui/kis_aboutdata.h:68
+#: ui/kis_aboutdata.h:69
 msgid "Tom Burdick"
 msgstr ""
 
-#: ui/kis_aboutdata.h:69
+#: ui/kis_aboutdata.h:70
 msgid "Vera Lukman"
 msgstr ""
 
-#: ui/kis_aboutdata.h:70
+#: ui/kis_aboutdata.h:71
 msgid "Sander Koning"
 msgstr ""
 
-#: ui/kis_aboutdata.h:71
+#: ui/kis_aboutdata.h:72
 msgid "Andreas Lundin"
 msgstr ""
 
@@ -10260,21 +10269,12 @@ msgstr "&Асбоби Хат задани"
 msgid "Draw a polygon. Shift-mouseclick ends the polygon."
 msgstr ""
 
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:60
-#, fuzzy
-msgid "&Finish Polyline"
-msgstr "&Асбоби Хат"
-
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:118
+#: plugins/tools/tool_polyline/kis_tool_polyline.cc:55
 #, fuzzy
 msgid "Polyline"
 msgstr "&Асбоби Хат"
 
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:317
-msgid "Press shift-mouseclick to end the polyline."
-msgstr ""
-
-#: plugins/tools/tool_polyline/kis_tool_polyline.h:81
+#: plugins/tools/tool_polyline/kis_tool_polyline.h:54
 msgid "Draw a polyline. Shift-mouseclick ends the polyline."
 msgstr ""
 
@@ -10436,8 +10436,8 @@ msgstr "Интихоб"
 msgid "Select similar colors"
 msgstr "Асбобҳои Интихобот"
 
-#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:71
-#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:82
+#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:72
+#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:83
 #, fuzzy
 msgid "Polygonal Selection"
 msgstr "&Интихоби Бисёркунҷа"
@@ -11641,16 +11641,16 @@ msgstr "Табақа"
 msgid "JPEG 2000 Export Options"
 msgstr "Интихобҳои Градиентҳо"
 
+#: plugins/formats/pdf/kis_pdf_import.cpp:100
 #: plugins/formats/pdf/kis_pdf_import.cpp:101
-#: plugins/formats/pdf/kis_pdf_import.cpp:102
 msgid "A password is required to read that pdf"
 msgstr ""
 
-#: plugins/formats/pdf/kis_pdf_import.cpp:111
+#: plugins/formats/pdf/kis_pdf_import.cpp:110
 msgid "PDF Import Options"
 msgstr ""
 
-#: plugins/formats/pdf/kis_pdf_import.cpp:142
+#: plugins/formats/pdf/kis_pdf_import.cpp:141
 #, fuzzy, kde-format
 #| msgid "Image %1"
 msgid "Page %1"
@@ -12336,6 +12336,10 @@ msgid "Ruler assistant editor tool"
 msgstr "Сириштан"
 
 #, fuzzy
+#~ msgid "&Finish Polyline"
+#~ msgstr "&Асбоби Хат"
+
+#, fuzzy
 #~ msgid "Add"
 #~ msgstr "Илова кардан %1..."
 
@@ -12374,10 +12378,6 @@ msgstr "Сириштан"
 #, fuzzy
 #~ msgid "Contiguous Fill"
 #~ msgstr "&Интихоби Ҳамҳудуд"
-
-#, fuzzy
-#~ msgid "&Finish Polygon"
-#~ msgstr "&Асбоби Хат"
 
 #, fuzzy
 #~ msgid "Example curves tool"
