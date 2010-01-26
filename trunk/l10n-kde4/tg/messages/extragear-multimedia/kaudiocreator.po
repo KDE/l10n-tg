@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaudiocreator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-27 06:14+0100\n"
+"POT-Creation-Date: 2010-01-26 06:20+0100\n"
 "PO-Revision-Date: 2004-06-10 20:51+0000\n"
 "Last-Translator: Abrorova\n"
 "Language-Team:  <tajik>\n"
@@ -57,7 +57,7 @@ msgstr "Шиор"
 msgid "unknown"
 msgstr ""
 
-#: encodefileimp.cpp:415 tracksimp.cpp:479
+#: encodefileimp.cpp:415 tracksimp.cpp:521
 #, kde-format
 msgid ""
 "%1 Job(s) have been started.  You can watch their progress in the jobs "
@@ -66,7 +66,7 @@ msgstr ""
 "%1 Супориш(ҳо) сар дода шудааст. Иҷроиши онро шумо дар қисмати супоришҳо "
 "дида метавонед."
 
-#: encodefileimp.cpp:417 tracksimp.cpp:481
+#: encodefileimp.cpp:417 tracksimp.cpp:523
 msgid "Jobs have started"
 msgstr "Супориш оғоз ёфтааст"
 
@@ -75,12 +75,12 @@ msgstr "Супориш оғоз ёфтааст"
 msgid "File"
 msgstr "Унвон:"
 
-#: encodefilemodel.cpp:29 tracksimp.cpp:49 tracksimp.cpp:550
+#: encodefilemodel.cpp:29 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
 #, fuzzy
 msgid "Title"
 msgstr "Унвон:"
 
-#: encodefilemodel.cpp:29 tracksimp.cpp:49 tracksimp.cpp:550
+#: encodefilemodel.cpp:29 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
 #, fuzzy
 #| msgid "Artist:"
 msgid "Artist"
@@ -93,7 +93,7 @@ msgctxt "@title:column"
 msgid "Album"
 msgstr "Албом"
 
-#: encodefilemodel.cpp:30 tracksimp.cpp:49 tracksimp.cpp:550
+#: encodefilemodel.cpp:30 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
 #, fuzzy
 #| msgid "Comment:"
 msgid "Comment"
@@ -105,7 +105,7 @@ msgstr "Тавсифот:"
 msgid "Genre"
 msgstr "Услуб:"
 
-#: encodefilemodel.cpp:31 tracksimp.cpp:49 tracksimp.cpp:550
+#: encodefilemodel.cpp:31 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
 msgid "Track"
 msgstr "Шиор"
 
@@ -260,7 +260,7 @@ msgstr ""
 msgid "Running"
 msgstr ""
 
-#: jobdelegate.cpp:51 tracksimp.cpp:213
+#: jobdelegate.cpp:51
 msgid "Error"
 msgstr ""
 
@@ -1525,82 +1525,83 @@ msgstr "Хондани: %1 - %2"
 msgid "Track %1.wav"
 msgstr "Шиор"
 
-#: tracksimp.cpp:49 tracksimp.cpp:550
+#: tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
 #, fuzzy
 #| msgid "Rip"
 msgctxt "@title:column"
 msgid "Rip"
 msgstr "Хондан"
 
-#: tracksimp.cpp:49 tracksimp.cpp:550
+#: tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
 msgid "Length"
 msgstr "Дарозӣ"
 
-#: tracksimp.cpp:103
+#: tracksimp.cpp:116
 #, fuzzy
 #| msgid "No Encoder Selected"
 msgid "none detected"
 msgstr "Ягон Рамзгузор Интихоб Нашудааст."
 
-#: tracksimp.cpp:210
-#, fuzzy, kde-format
-msgid ""
-"CDROM read or access error (or no audio disk in drive).\n"
-"Please make sure you have access permissions to:\n"
-"%1"
-msgstr ""
-"Хатогии хондан ё дастрасӣ ба CDROM (ё дар гардонанда диски садоӣ нест).\n"
-"Боварӣ ҳосил кунед, ки рухсатҳои дастрасӣ доред:\n"
-"%1"
+#: tracksimp.cpp:178
+#, fuzzy
+#| msgid "Unknown Artist - Unknown Album"
+msgid "Unknown Artist"
+msgstr "Иҷрокунандаи Номаълум - Албоми Номаълум"
 
-#: tracksimp.cpp:223
+#: tracksimp.cpp:178
+#, fuzzy
+#| msgid "Unknown Artist - Unknown Album"
+msgid "Unknown Album"
+msgstr "Иҷрокунандаи Номаълум - Албоми Номаълум"
+
+#: tracksimp.cpp:268
 msgid "Please insert a disk."
 msgstr "Дискро ҷойгир кунед."
 
-#: tracksimp.cpp:224 tracksimp.cpp:250
+#: tracksimp.cpp:269 tracksimp.cpp:295
 msgid "CDDB Failed"
 msgstr "CDDB бо Нокомӣ дучор шуд"
 
-#: tracksimp.cpp:250
+#: tracksimp.cpp:295
 msgid "Unable to retrieve CDDB information."
 msgstr "Бозёбии ахборот аз CDDB ғайри имкон аст."
 
-#: tracksimp.cpp:270
+#: tracksimp.cpp:316
 #, fuzzy
 msgid "Select CDDB entry"
 msgstr "Интихоби элементи CDDB:"
 
-#: tracksimp.cpp:271
+#: tracksimp.cpp:317
 msgid "Select a CDDB entry:"
 msgstr "Интихоби элементи CDDB:"
 
-#: tracksimp.cpp:361
+#: tracksimp.cpp:407
 #, fuzzy
 msgid "CD Editor"
 msgstr "Муҳаррири Албом"
 
-#: tracksimp.cpp:424
+#: tracksimp.cpp:466
 msgid "No tracks have been selected.  Would you like to rip the entire CD?"
 msgstr ""
 
-#: tracksimp.cpp:425
+#: tracksimp.cpp:467
 msgid "No Tracks Selected"
 msgstr "Шиорҳои Интихобшуда Нестанд"
 
-#: tracksimp.cpp:425
+#: tracksimp.cpp:467
 #, fuzzy
 msgid "Rip CD"
 msgstr "Хондан"
 
-#: tracksimp.cpp:434
+#: tracksimp.cpp:476
 msgid "Could not find audiocd:/ protocol. Please install the audiocd ioslave"
 msgstr ""
 
-#: tracksimp.cpp:435
+#: tracksimp.cpp:477
 msgid "Protocol Not Found"
 msgstr ""
 
-#: tracksimp.cpp:450
+#: tracksimp.cpp:492
 #, fuzzy, kde-format
 msgid ""
 "Part of the album is not set: %1.\n"
@@ -1611,19 +1612,19 @@ msgstr ""
 " (Барои ивази ахбороти албом ба тугмаи \"Таҳрири Ахборот\" ангушт занед.)\n"
 " Ба ҳар ҳол мехоҳед, ки хондани шиори интихобшударо давом диҳед?"
 
-#: tracksimp.cpp:450
+#: tracksimp.cpp:492
 msgid "Album Information Incomplete"
 msgstr "Ахбороти Албом Нопурра аст"
 
-#: tracksimp.cpp:450
+#: tracksimp.cpp:492
 msgid "Rip"
 msgstr "Хондан"
 
-#: tracksimp.cpp:605
+#: tracksimp.cpp:647
 msgid " - "
 msgstr ""
 
-#: tracksimp.cpp:607
+#: tracksimp.cpp:649
 #, fuzzy
 msgid "No disc"
 msgstr "Noise"
@@ -1636,6 +1637,16 @@ msgstr "Мисол: %1"
 #: job.h:35
 msgid "Other"
 msgstr "Other"
+
+#, fuzzy
+#~ msgid ""
+#~ "CDROM read or access error (or no audio disk in drive).\n"
+#~ "Please make sure you have access permissions to:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Хатогии хондан ё дастрасӣ ба CDROM (ё дар гардонанда диски садоӣ нест).\n"
+#~ "Боварӣ ҳосил кунед, ки рухсатҳои дастрасӣ доред:\n"
+#~ "%1"
 
 #~ msgid "Number of tracks to rip at a time"
 #~ msgstr "Шумораи шиорҳои дар як вақт хондашаванда"
