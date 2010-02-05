@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-04 06:49+0100\n"
+"POT-Creation-Date: 2010-02-05 02:50+0100\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -2628,7 +2628,7 @@ msgstr "Сохтани нав %1"
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
 #. i18n: file: plugins/extensions/tonemapping/wdgtonemappingdialog.ui:93
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:615 rc.cpp:2633 rc.cpp:3375 rc.cpp:3534 ui/kis_view2.cpp:349
+#: rc.cpp:615 rc.cpp:2633 rc.cpp:3375 rc.cpp:3534 ui/kis_view2.cpp:346
 #, fuzzy
 msgid "Cancel"
 msgstr "Милҳо"
@@ -3551,7 +3551,8 @@ msgstr "Шакл:"
 #. i18n: file: plugins/paintops/gridbrush/wdgshapeoptions.ui:36
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #: rc.cpp:956 rc.cpp:1242 rc.cpp:1566
-#: plugins/tools/defaulttools/kis_tool_ellipse.cc:66
+#: image/recorder/kis_recorded_ellipse_paint_action.cpp:52
+#: plugins/tools/defaulttools/kis_tool_ellipse.cc:67
 #, fuzzy
 msgid "Ellipse"
 msgstr "эллипс"
@@ -6351,7 +6352,7 @@ msgstr "Ҳосиятҳои Табақа"
 
 #. i18n: file: plugins/extensions/compose/wdg_compose.ui:52
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:2357 ui/tool/kis_tool_paint.cc:168
+#: rc.cpp:2357 ui/tool/kis_tool_paint.cc:167
 #, fuzzy
 msgid "Opacity: "
 msgstr "Норавшанӣ:"
@@ -8831,26 +8832,22 @@ msgstr "Интихоб"
 msgid "&Finish"
 msgstr "&Асбоби Хат"
 
-#: ui/tool/kis_tool.cc:103
+#: ui/tool/kis_tool.cc:104
 #, fuzzy
 msgid "Swap Foreground and Background Color"
 msgstr "&Ранги пешзамина"
 
-#: ui/tool/kis_tool.cc:108
+#: ui/tool/kis_tool.cc:109
 #, fuzzy
 msgid "Reset Foreground and Background Color"
 msgstr "&Ранги пешзамина"
 
-#: ui/tool/kis_tool.cc:378
+#: ui/tool/kis_tool.cc:384
 #, fuzzy
 msgid "No options"
 msgstr "Алфа"
 
-#: ui/tool/kis_tool_freehand.cc:416 ui/tool/kis_tool_freehand.cc:425
-msgid "Freehand tool"
-msgstr ""
-
-#: ui/tool/kis_tool_paint.cc:176
+#: ui/tool/kis_tool_paint.cc:175
 #, fuzzy
 msgid "Mode: "
 msgstr "Усул:"
@@ -9546,35 +9543,35 @@ msgstr ""
 msgid "Show Dockers"
 msgstr "Пайвастан"
 
-#: ui/kis_view2.cpp:238
+#: ui/kis_view2.cpp:240
 #, fuzzy
 msgid "Tools"
 msgstr "&Даровардани Асбоб"
 
-#: ui/kis_view2.cpp:343
+#: ui/kis_view2.cpp:340
 #, fuzzy
 msgid "Insert as New Layer"
 msgstr "&Даровардани Тасвир ҳамчун Табақа..."
 
-#: ui/kis_view2.cpp:344
+#: ui/kis_view2.cpp:341
 #, fuzzy
 msgid "Insert as New Layers"
 msgstr "&Даровардани Тасвир ҳамчун Табақа..."
 
-#: ui/kis_view2.cpp:346
+#: ui/kis_view2.cpp:343
 msgid "Open in New Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:347
+#: ui/kis_view2.cpp:344
 msgid "Open in New Documents"
 msgstr ""
 
-#: ui/kis_view2.cpp:549
+#: ui/kis_view2.cpp:546
 #, fuzzy
 msgid "Edit Palette..."
 msgstr "Намунаҳо"
 
-#: ui/kis_view2.cpp:686 ui/kis_view2.cpp:689
+#: ui/kis_view2.cpp:683 ui/kis_view2.cpp:686
 #, fuzzy
 msgid "Edit Palette"
 msgstr "Намунаҳо"
@@ -10038,6 +10035,16 @@ msgstr ""
 msgid "Play macro"
 msgstr "Ҷамъ"
 
+#: image/recorder/kis_recorded_polyline_paint_action.cpp:50
+#, fuzzy
+msgid "Poly line"
+msgstr "&Асбоби Хат"
+
+#: image/recorder/kis_recorded_bezier_curve_paint_action.cpp:56
+#, fuzzy
+msgid "Bezier curve"
+msgstr "&Асбоби Пур кардани"
+
 #: image/kis_clone_layer.cpp:199
 #, fuzzy
 #| msgid "Copy Green"
@@ -10184,11 +10191,6 @@ msgstr "Сириштан"
 msgid "Angle: "
 msgstr "росткунҷа"
 
-#: plugins/tools/defaulttools/kis_tool_ellipse.cc:54
-#, fuzzy
-msgid "Ellipse tool"
-msgstr "Эллипсӣ"
-
 #: plugins/tools/defaulttools/kis_tool_colorpicker.h:89
 msgid "Select a color from the image or current layer"
 msgstr ""
@@ -10209,12 +10211,7 @@ msgctxt "a straight drawn line"
 msgid "Line"
 msgstr "&Хатти"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:176
-#, fuzzy
-msgid "Line tool"
-msgstr "&Асбоби Хат"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:269
+#: plugins/tools/defaulttools/kis_tool_line.cc:270
 msgid ""
 "Alt+Drag will move the origin of the currently displayed line around, Shift"
 "+Drag will force you to draw straight lines"
@@ -10402,12 +10399,6 @@ msgstr "&Асбоби Хат задани"
 #: plugins/tools/tool_polygon/kis_tool_polygon.h:50
 msgid "Draw a polygon. Shift-mouseclick ends the polygon."
 msgstr ""
-
-#: plugins/tools/tool_polygon/kis_tool_polygon.cc:65
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:54
-#, fuzzy
-msgid "Polyline tool"
-msgstr "&Асбоби Хат"
 
 #: plugins/tools/tool_polyline/kis_tool_polyline.cc:66
 #, fuzzy
@@ -12438,7 +12429,7 @@ msgstr ""
 msgid "Index out of bound"
 msgstr ""
 
-#: plugins/extensions/scripting/scriptingpart.cpp:137
+#: plugins/extensions/scripting/scriptingpart.cpp:138
 #, fuzzy, kde-format
 msgid "&Show %1"
 msgstr "&Сояҳо"
@@ -12554,6 +12545,18 @@ msgstr "&Пинҳои кардани/Намоиши Табақа"
 #, fuzzy
 msgid "Ruler assistant editor tool"
 msgstr "Сириштан"
+
+#, fuzzy
+#~ msgid "Ellipse tool"
+#~ msgstr "Эллипсӣ"
+
+#, fuzzy
+#~ msgid "Line tool"
+#~ msgstr "&Асбоби Хат"
+
+#, fuzzy
+#~ msgid "Polyline tool"
+#~ msgstr "&Асбоби Хат"
 
 #, fuzzy
 #~ msgid "Form"

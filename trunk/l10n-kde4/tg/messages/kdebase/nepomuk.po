@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nepomuk\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-29 06:07+0100\n"
+"POT-Creation-Date: 2010-02-05 02:25+0100\n"
 "PO-Revision-Date: 2010-01-28 14:21+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -130,7 +130,15 @@ msgstr ""
 msgid "Delete Resource"
 msgstr "Ошибка удаления источника"
 
-#: kioslaves/nepomuk/kio_nepomuk.cpp:614
+#: kioslaves/nepomuk/kio_nepomuk.cpp:411
+#, kde-format
+msgctxt ""
+"%1 is a filename of a file on a removable device, %2 is the name of the "
+"removable medium which often is something like 'X GiB Removable Media."
+msgid "%1 (on unmounted medium <resource>%2</resource>)"
+msgstr ""
+
+#: kioslaves/nepomuk/kio_nepomuk.cpp:631
 #: kioslaves/search/kio_nepomuksearch.cpp:125
 msgid ""
 "The Nepomuk system is not activated. Unable to answer queries without it."
@@ -428,23 +436,31 @@ msgstr "&Новый Сайт"
 msgid "Parsing of file %1 failed (%2)"
 msgstr "Ошибка обработки файла %1: %2"
 
-#: services/strigi/strigiservice.cpp:169
+#: services/strigi/strigiservice.cpp:178
 msgctxt "@info:status"
 msgid "File indexer is suspended"
 msgstr "Индексация файлов приостановлена"
 
-#: services/strigi/strigiservice.cpp:171
+#: services/strigi/strigiservice.cpp:182
+#, fuzzy
+#| msgctxt "@info:status"
+#| msgid "Strigi is currently indexing files in folder %1"
+msgctxt "@info:status"
+msgid "Strigi is currently indexing files"
+msgstr "Strigi: индексация файлов в папке %1"
+
+#: services/strigi/strigiservice.cpp:184
 #, kde-format
 msgctxt "@info:status"
 msgid "Strigi is currently indexing files in folder %1"
 msgstr "Strigi: индексация файлов в папке %1"
 
-#: services/strigi/strigiservice.cpp:173
+#: services/strigi/strigiservice.cpp:187
 msgctxt "@info:status"
 msgid "Checking file system for new files"
 msgstr "Поиск новых файлов в системе"
 
-#: services/strigi/strigiservice.cpp:175
+#: services/strigi/strigiservice.cpp:190
 msgctxt "@info:status"
 msgid "File indexer is idle"
 msgstr "Индексация файлов не осуществляется"
@@ -501,10 +517,11 @@ msgid "Disk space is running low (%1 left). Suspending indexing of files."
 msgstr ""
 
 #: services/strigi/eventmonitor.cpp:148
-#, kde-format
-msgctxt "@info %1 is a duration formatted using KLocale::formatDuration"
+#, fuzzy, kde-format
+#| msgid "Resuming indexing of files for fast searching."
+msgctxt "@info %1 is a duration formatted using KLocale::prettyFormatDuration"
 msgid "Initial indexing of files for fast searching finished in %1"
-msgstr ""
+msgstr "Возобновление индексирования содержимого файлов для быстрого поиска."
 
 #: servicestub/main.cpp:67 servicestub/main.cpp:69
 msgid "Nepomuk Service Stub"

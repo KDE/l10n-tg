@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-26 06:17+0100\n"
+"POT-Creation-Date: 2010-02-05 02:40+0100\n"
 "PO-Revision-Date: 2005-09-16 16:50+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -117,40 +117,127 @@ msgstr[0] ""
 "Дар вақте,ки илова кардани хабар ба папкаи %2дар KMail бударо, нусха "
 "намудани хабари хатто"
 
-#: filters.cxx:146 filters.cxx:186 filters.cxx:219
+#: filters.cxx:174
 #, fuzzy, kde-format
-msgid ""
-"<b>Fatal:</b> Unable to start KMail for D-Bus communication: %1; %2<br /"
-">Make sure <i>kmail</i> is installed."
-msgstr ""
-"<b>Хатогии дағал:</b> кушодани KMail барои алоқа бо DCOP. Бинед ки "
-"программаи <i>kmail</i> доред."
-
-#: filters.cxx:154 filters.cxx:194
-#, kde-format
-msgid "Cannot make folder %1 in KMail"
-msgstr "Феҳрист сохта намешавад %1 дар KMail"
-
-#: filters.cxx:157 filters.cxx:197
-#, kde-format
-msgid "Cannot add message to folder %1 in KMail"
-msgstr "Хабар ба феҳристи %1 гузошта намешавад дар KMail"
-
-#: filters.cxx:163 filters.cxx:200
-#, kde-format
-msgid "Error while adding message to folder %1 in KMail"
+#| msgid "Error while adding message to folder %1 in KMail"
+msgid "<b>Error:<\b> Could not add message to folder %1. Reason: %2"
 msgstr "Хатоги дар вақти гузоштани хабар ба феҳристи %1 дар KMail"
 
-#: filter_kmail_archive.cxx:24
+#: filters.cxx:221
+#, kde-format
+msgid ""
+"<b>Warning:<\b> Could not check that the folder already exists. Reason: %1"
+msgstr ""
+
+#: filters.cxx:239
+#, kde-format
+msgid "<b>Error:<\b> Could not create folder. Reason: %1"
+msgstr ""
+
+#: filters.cxx:268
+#, kde-format
+msgid ""
+"<b>Warning:<\b> Could not fetch mail in folder %1. Reason: %2 You may have "
+"duplicate messages."
+msgstr ""
+
+#: filters.cxx:273
+#, kde-format
+msgid "<b>Warning:<\b> Got an invalid message in folder %1."
+msgstr ""
+
+#: filters.cxx:341
+#, kde-format
+msgid "Error: failed to read temporary file at %1"
+msgstr ""
+
+#: filters.cxx:369
+msgid "<b>Warning:<\b> Got a bad message folder, adding to root folder."
+msgstr ""
+
+#: filter_kmail_archive.cxx:33
 msgid "Import KMail Archive File"
 msgstr ""
 
-#: filter_kmail_archive.cxx:26
+#: filter_kmail_archive.cxx:35
 msgid ""
 "<p><b>KMail Archive File Import Filter</b></p><p>This filter will import "
 "archives files previously exported by KMail.</p><p>Archive files contain a "
 "complete folder subtree compressed into a single file.</p>"
 msgstr ""
+
+#: filter_kmail_archive.cxx:75
+#, kde-format
+msgid "Unable to retrieve folder for folder path %1."
+msgstr ""
+
+#: filter_kmail_archive.cxx:99
+#, fuzzy, kde-format
+msgid "Importing folder '%1'..."
+msgstr "Импорт кардани хатҳои электрони аз %1..."
+
+#: filter_kmail_archive.cxx:125
+#, kde-format
+msgid "Unexpected subfolder %1 in folder %2."
+msgstr ""
+
+#: filter_kmail_archive.cxx:130
+#, kde-format
+msgid "No subfolder named 'cur' in folder %1."
+msgstr ""
+
+#: filter_kmail_archive.cxx:155
+#, kde-format
+msgid "Unexpected subdirectory named '%1'."
+msgstr ""
+
+#: filter_kmail_archive.cxx:189
+msgid "Select KMail Archive File to Import"
+msgstr ""
+
+#: filter_kmail_archive.cxx:191
+msgid "KMail Archive Files (*.tar, *.tar.gz, *.tar.bz2, *.zip)"
+msgstr ""
+
+#: filter_kmail_archive.cxx:193
+msgid "Please select an archive file that should be imported."
+msgstr ""
+
+#: filter_kmail_archive.cxx:207
+#, kde-format
+msgid "The file '%1' does not appear to be a valid archive."
+msgstr ""
+
+#: filter_kmail_archive.cxx:212
+#, fuzzy, kde-format
+#| msgid "Unable to open mailbox %1"
+msgid "Unable to open archive file '%1'"
+msgstr "Қуттии почтаи %1 ро кушода намешавад"
+
+#: filter_kmail_archive.cxx:217
+#, fuzzy
+#| msgid "Counting files..."
+msgid "Counting files in archive..."
+msgstr "Ҳисоб кардани файлҳо..."
+
+#: filter_kmail_archive.cxx:223
+#, kde-format
+msgid "Importing the archive file '%1' into the folder '%2' succeeded."
+msgstr ""
+
+#: filter_kmail_archive.cxx:225
+#, fuzzy, kde-format
+msgid "1 message was imported."
+msgid_plural "%1 messages were imported."
+msgstr[0] ""
+"Дар вақте,ки илова кардани хабар ба папкаи %2дар KMail бударо, нусха "
+"намудани хабари хатто"
+
+#: filter_kmail_archive.cxx:229
+#, fuzzy
+#| msgid "Importing new mail files..."
+msgid "Importing the archive failed."
+msgstr "Импорти файлҳои нави хати элетрони..."
 
 #: filter_sylpheed.cxx:26
 #, fuzzy
@@ -184,17 +271,19 @@ msgstr "Импорт кардани хатҳои электрони аз %1..."
 msgid "Could not import %1"
 msgstr "Импорт карда нашуд %1"
 
-#: main.cpp:28
+#: main.cpp:28 kmailcvt.cpp:117
 msgid "KMailCVT"
 msgstr "KMailCVT"
 
 #: main.cpp:29
-msgid "KMail Import Filters"
-msgstr "Филтерҳои импорти KMail"
+#, fuzzy
+#| msgid "KMailCVT Import Tool"
+msgid "Mail Import Tool"
+msgstr "Импорти KMailCVT"
 
 #: main.cpp:30
 #, fuzzy
-msgid "(c) 2000-2009, The KMailCVT developers"
+msgid "(c) 2000-2010, The KMailCVT developers"
 msgstr "(c) 2000-2003, The KMailCVT developers"
 
 #: main.cpp:31
@@ -223,6 +312,14 @@ msgstr "Нави GUT & тозаги"
 
 #: main.cpp:34
 msgid "Daniel Molkentin"
+msgstr ""
+
+#: main.cpp:35
+msgid "Matthew James Leach"
+msgstr ""
+
+#: main.cpp:35
+msgid "Port to Akonadi"
 msgstr ""
 
 #: filter_evolution.cxx:30
@@ -273,25 +370,29 @@ msgstr "Импорти файлҳои нави хати элетрони..."
 msgid "Counting files..."
 msgstr "Ҳисоб кардани файлҳо..."
 
-#: kmailcvt.cpp:32
+#: kmailcvt.cpp:43
 msgid "KMailCVT Import Tool"
 msgstr "Импорти KMailCVT"
 
-#: kmailcvt.cpp:36
+#: kmailcvt.cpp:47
 msgid "Step 1: Select Filter"
 msgstr "Қадами 1: интихоби Филтер"
 
-#: kmailcvt.cpp:41
+#: kmailcvt.cpp:52
 msgid "Step 2: Importing..."
 msgstr "Қадами 2 : Импорт кардан"
 
-#: kmailcvt.cpp:86
+#: kmailcvt.cpp:94
 msgid "Import in progress"
 msgstr "Импорт рафта истодааст"
 
-#: kmailcvt.cpp:89
+#: kmailcvt.cpp:98
 msgid "Import finished"
 msgstr "Импорт тамом шуд"
+
+#: kmailcvt.cpp:116
+msgid "Akonadi failed to start. Please check your configuration."
+msgstr ""
 
 #: filter_pmail.cxx:28
 msgid "Import Folders From Pegasus-Mail"
@@ -392,30 +493,40 @@ msgstr "Ҳамагӣ:"
 msgid "Click 'Back' to import more emails or contacts"
 msgstr "Барои боз импорти номаҳо ё контактҳо тугмаи қафоро паҳш кунед"
 
-#. i18n: file: kselfilterpagedlg.ui:84
+#. i18n: file: kselfilterpagedlg.ui:82
 #. i18n: ectx: property (text), widget (QLabel, TextLabel6)
 #: rc.cpp:30
 msgid ""
-"<b>Welcome to KMailCVT - The KMail Import Tool</b>\n"
-"<br><br>\n"
-"This program will help you import your email from your previous email "
-"program into KMail.<br><br><br><br>\n"
-" Please select the program you would like to import from, then click 'Next'."
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'DejaVu Sans'; font-size:8pt; font-weight:600;\">Welcome to KMailCVT "
+"- The Mail Import Tool</span><span style=\" font-family:'DejaVu Sans'; font-"
+"size:8pt;\"> <br /><br />This program will help you import your email from "
+"your previous email program into Akonadi.<br /><br /><br /><br />Please "
+"select the program you would like to import from. Next, select the folder "
+"you would like to import to, then click 'Next'.</span></p></body></html>"
 msgstr ""
-"<b>Марҳамат ба KMailCVT - KMail импорти хабарҳо</b>\n"
-"<br><br>\n"
-"Ин программа барои фиристонидани хатҳои шумо аз программаи пештара ба KMail."
-"<br><br><br><br>\n"
-" ёри мерасонад  Прграммаеро ки шумо фиристонидан мехоҳед интихоб кунед ва "
-"тугмаи 'пешро' пахш кунед"
 
-#. i18n: file: kselfilterpagedlg.ui:119
+#. i18n: file: kselfilterpagedlg.ui:115
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:37
+msgid "Please select the folder to import to:"
+msgstr ""
+
+#. i18n: file: kselfilterpagedlg.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, remDupMsg)
-#: rc.cpp:36
+#: rc.cpp:40
 msgid "Remove &duplicate messages during import"
 msgstr ""
 
-#: rc.cpp:37
+#: rc.cpp:41
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr ""
@@ -426,7 +537,7 @@ msgstr ""
 "Ватаншоев, Фарход Ахмедов, Эркин Пулатов, Гулшод Довуди, Гулноз Курбанова, "
 "Зарина Косымова, Шухрат Лоиқов, Сурайё Ҷурахонова *"
 
-#: rc.cpp:38
+#: rc.cpp:42
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
@@ -592,7 +703,7 @@ msgid ""
 "Import\" in your local account.</p>"
 msgstr ""
 
-#: kselfilterpage.cpp:80
+#: kselfilterpage.cpp:100
 #, kde-format
 msgid "<p><i>Written by %1.</i></p>"
 msgstr "<p><i>Навистаги %1.</i></p>"
@@ -651,3 +762,35 @@ msgstr ""
 "mail-ҳо дар папкаи ,бо ҳамон номе ,ки дар директория буд ҷойгиранд, аз "
 "тарафи PLAIN  префикс шудааст.<p> Ин филтр e-mail-ҳои ки аз папкаҳои ,msg,"
 "eml,ва txt ворид мекунад .<p>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<b>Fatal:</b> Unable to start KMail for D-Bus communication: %1; %2<br /"
+#~ ">Make sure <i>kmail</i> is installed."
+#~ msgstr ""
+#~ "<b>Хатогии дағал:</b> кушодани KMail барои алоқа бо DCOP. Бинед ки "
+#~ "программаи <i>kmail</i> доред."
+
+#~ msgid "Cannot make folder %1 in KMail"
+#~ msgstr "Феҳрист сохта намешавад %1 дар KMail"
+
+#~ msgid "Cannot add message to folder %1 in KMail"
+#~ msgstr "Хабар ба феҳристи %1 гузошта намешавад дар KMail"
+
+#~ msgid "KMail Import Filters"
+#~ msgstr "Филтерҳои импорти KMail"
+
+#~ msgid ""
+#~ "<b>Welcome to KMailCVT - The KMail Import Tool</b>\n"
+#~ "<br><br>\n"
+#~ "This program will help you import your email from your previous email "
+#~ "program into KMail.<br><br><br><br>\n"
+#~ " Please select the program you would like to import from, then click "
+#~ "'Next'."
+#~ msgstr ""
+#~ "<b>Марҳамат ба KMailCVT - KMail импорти хабарҳо</b>\n"
+#~ "<br><br>\n"
+#~ "Ин программа барои фиристонидани хатҳои шумо аз программаи пештара ба "
+#~ "KMail.<br><br><br><br>\n"
+#~ " ёри мерасонад  Прграммаеро ки шумо фиристонидан мехоҳед интихоб кунед ва "
+#~ "тугмаи 'пешро' пахш кунед"
