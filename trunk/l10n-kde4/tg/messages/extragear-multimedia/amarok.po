@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-05 03:17+0100\n"
+"POT-Creation-Date: 2010-02-06 02:08+0100\n"
 "PO-Revision-Date: 2009-01-20 18:25+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -476,14 +476,6 @@ msgstr ""
 msgid "Nepomuk Collection (slow, Redland)"
 msgstr ""
 
-#: collection/sqlcollection/CapabilityDelegate.cpp:386
-msgid "Do not show under Various Artists"
-msgstr ""
-
-#: collection/sqlcollection/CapabilityDelegate.cpp:388
-msgid "Show under Various Artists"
-msgstr ""
-
 #: collection/sqlcollection/mysqlecollection/MySqlEmbeddedCollection.cpp:33
 #: collection/sqlcollection/mysqlservercollection/MySqlServerCollection.cpp:39
 #: collection/sqlcollection/SqlCollectionLocation.cpp:61
@@ -516,6 +508,14 @@ msgstr ""
 #: collection/sqlcollection/ScanResultProcessor.cpp:224
 msgctxt "(Front) Cover of an album"
 msgid "folder"
+msgstr ""
+
+#: collection/sqlcollection/CapabilityDelegateImpl.cpp:388
+msgid "Do not show under Various Artists"
+msgstr ""
+
+#: collection/sqlcollection/CapabilityDelegateImpl.cpp:390
+msgid "Show under Various Artists"
 msgstr ""
 
 #. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:20
@@ -1012,7 +1012,7 @@ msgstr "суруд"
 #: browsers/filebrowser/MyDirOperator.cpp:315
 #: browsers/filebrowser/FileView.cpp:156
 #: browsers/playlistbrowser/UserPlaylistModel.cpp:585
-#: browsers/playlistbrowser/PodcastModel.cpp:1005
+#: browsers/playlistbrowser/PodcastModel.cpp:1029
 #: services/lastfm/LastFmTreeView.cpp:112 TrayIcon.cpp:221
 #, fuzzy
 #| msgid "&Playlist"
@@ -1024,7 +1024,7 @@ msgstr "&Рӯйхати мусиқӣ"
 #: browsers/filebrowser/MyDirOperator.cpp:316
 #: browsers/filebrowser/FileView.cpp:165
 #: browsers/playlistbrowser/UserPlaylistModel.cpp:592
-#: browsers/playlistbrowser/PodcastModel.cpp:1017
+#: browsers/playlistbrowser/PodcastModel.cpp:1041
 #: services/lastfm/LastFmTreeView.cpp:121
 #, fuzzy
 #| msgid "&Playlist"
@@ -1697,7 +1697,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
 #: dialogs/FilenameLayoutDialog.cpp:166 dialogs/FilenameLayoutDialog.cpp:483
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:251
-#: browsers/playlistbrowser/PodcastModel.cpp:480 rc.cpp:1153
+#: browsers/playlistbrowser/PodcastModel.cpp:504 rc.cpp:1153
 #: playlist/PlaylistModel.cpp:699 widgets/SmartPlaylistEditor.cpp:183
 msgid "Title"
 msgstr ""
@@ -1944,7 +1944,7 @@ msgstr ""
 msgid "Filename Layout Chooser"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:679 browsers/playlistbrowser/PodcastModel.cpp:481
+#: dialogs/TagDialog.cpp:679 browsers/playlistbrowser/PodcastModel.cpp:505
 msgid "Summary"
 msgstr ""
 
@@ -2795,46 +2795,50 @@ msgstr ""
 msgid "&Update Channel"
 msgstr ""
 
-#: podcasts/sql/SqlPodcastProvider.cpp:596
+#: podcasts/sql/SqlPodcastProvider.cpp:559
+msgid "&Update All Channels"
+msgstr ""
+
+#: podcasts/sql/SqlPodcastProvider.cpp:613
 msgid "Unsubscribe"
 msgstr ""
 
-#: podcasts/sql/SqlPodcastProvider.cpp:600
+#: podcasts/sql/SqlPodcastProvider.cpp:617
 msgid "Do you really want to unsubscribe from "
 msgstr ""
 
-#: podcasts/sql/SqlPodcastProvider.cpp:607
+#: podcasts/sql/SqlPodcastProvider.cpp:624
 msgid "Delete downloaded episodes"
 msgstr ""
 
-#: podcasts/sql/SqlPodcastProvider.cpp:732
+#: podcasts/sql/SqlPodcastProvider.cpp:749
 msgid "Waiting for Podcast Downloads to Finish"
 msgstr ""
 
-#: podcasts/sql/SqlPodcastProvider.cpp:733
+#: podcasts/sql/SqlPodcastProvider.cpp:750
 #, kde-format
 msgid "There is still a podcast download in progress"
 msgid_plural "There are still %1 podcast downloads in progress"
 msgstr[0] ""
 msgstr[1] ""
 
-#: podcasts/sql/SqlPodcastProvider.cpp:913
+#: podcasts/sql/SqlPodcastProvider.cpp:930
 msgid "Downloading Podcast Media"
 msgstr ""
 
-#: podcasts/sql/SqlPodcastProvider.cpp:914
+#: podcasts/sql/SqlPodcastProvider.cpp:931
 #, kde-format
 msgid "Downloading Podcast \"%1\""
 msgstr ""
 
-#: podcasts/sql/SqlPodcastProvider.cpp:988
-#: podcasts/sql/SqlPodcastProvider.cpp:1134
+#: podcasts/sql/SqlPodcastProvider.cpp:1005
+#: podcasts/sql/SqlPodcastProvider.cpp:1151
 #, kde-format
 msgid "Unable to save podcast episode file to %1"
 msgstr ""
 
 #: podcasts/sql/SqlPodcastProvider.h:47
-#: browsers/playlistbrowser/PodcastModel.cpp:849
+#: browsers/playlistbrowser/PodcastModel.cpp:873
 msgid "Local Podcasts"
 msgstr ""
 
@@ -3733,7 +3737,7 @@ msgstr ""
 msgid "Year - Album"
 msgstr ""
 
-#: browsers/collectionbrowser/CollectionTreeItemDelegate.cpp:156
+#: browsers/collectionbrowser/CollectionTreeItemDelegate.cpp:157
 #, kde-format
 msgid "%1% used"
 msgstr ""
@@ -3989,7 +3993,7 @@ msgstr ""
 msgid "Strictness:"
 msgstr ""
 
-#: browsers/playlistbrowser/PodcastModel.cpp:309
+#: browsers/playlistbrowser/PodcastModel.cpp:312
 #, kde-format
 msgctxt "number of podcasts from one source"
 msgid "One channel"
@@ -3997,22 +4001,22 @@ msgid_plural "%1 channels"
 msgstr[0] ""
 msgstr[1] ""
 
-#: browsers/playlistbrowser/PodcastModel.cpp:479
+#: browsers/playlistbrowser/PodcastModel.cpp:503
 #: playlist/PlaylistModel.cpp:711 amarokurls/BookmarkModel.cpp:266
 msgid "Type"
 msgstr ""
 
-#: browsers/playlistbrowser/PodcastModel.cpp:632
+#: browsers/playlistbrowser/PodcastModel.cpp:656
 #, fuzzy
 #| msgid "&Add Podcast"
 msgid "Add Podcast"
 msgstr "&Илова кардани Podcast"
 
-#: browsers/playlistbrowser/PodcastModel.cpp:633
+#: browsers/playlistbrowser/PodcastModel.cpp:657
 msgid "Enter RSS 1.0/2.0 or Atom feed URL:"
 msgstr ""
 
-#: browsers/playlistbrowser/PodcastModel.cpp:1037
+#: browsers/playlistbrowser/PodcastModel.cpp:1061
 msgctxt "toggle the \"new\" status of this podcast episode"
 msgid "&New"
 msgstr ""
@@ -9418,17 +9422,17 @@ msgstr ""
 msgid "Dynamic Mode Enabled"
 msgstr ""
 
-#: playlist/PlaylistWidget.cpp:125
+#: playlist/PlaylistWidget.cpp:121
 #, fuzzy
 #| msgid "&Playlist"
 msgid "&Save Current Playlist"
 msgstr "&Рӯйхати мусиқӣ"
 
-#: playlist/PlaylistWidget.cpp:152
+#: playlist/PlaylistWidget.cpp:148
 msgid "Show active track"
 msgstr ""
 
-#: playlist/PlaylistWidget.cpp:201
+#: playlist/PlaylistWidget.cpp:197
 #, fuzzy, kde-format
 #| msgid "&Playlist"
 msgid "&Save playlist to \"%1\""
@@ -9677,7 +9681,7 @@ msgstr ""
 msgid "Drag in and out items from above."
 msgstr ""
 
-#: widgets/VolumeDial.cpp:215 TrayIcon.cpp:149
+#: widgets/VolumeDial.cpp:218 TrayIcon.cpp:149
 msgid "Muted"
 msgstr ""
 
