@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-13 06:53+0100\n"
+"POT-Creation-Date: 2010-02-22 07:05+0100\n"
 "PO-Revision-Date: 2005-11-06 23:03+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -187,7 +187,7 @@ msgstr ""
 "Нақша наметавонад қайд шавад."
 
 #: colorscheme.cpp:227 colorscheme.cpp:242 kstarsactions.cpp:603
-#: skymap.cpp:1470 tools/modcalcaltaz.cpp:253 tools/modcalcangdist.cpp:144
+#: skymap.cpp:1462 tools/modcalcaltaz.cpp:253 tools/modcalcangdist.cpp:144
 #: tools/modcalcapcoord.cpp:167 tools/modcalcdaylength.cpp:246
 #: tools/modcalceclipticcoords.cpp:203 tools/modcalcgalcoord.cpp:193
 #: tools/modcalcgeodcoord.cpp:232 tools/modcalcjd.cpp:123
@@ -263,41 +263,41 @@ msgstr ""
 msgid "Could not open fov.dat."
 msgstr "fov.dat.-ро кушода натавонист!"
 
-#: imageviewer.cpp:72 imageviewer.cpp:125
-msgid "KStars image viewer"
-msgstr ""
-
 #. i18n: file: tools/observinglist.ui:532
 #. i18n: ectx: property (text), widget (QPushButton, SaveImage)
 #. i18n: file: indi/telescopeprop.ui:179
 #. i18n: ectx: property (text), widget (QPushButton, saveB)
-#: imageviewer.cpp:74 rc.cpp:3336 rc.cpp:4819
+#: imageviewer.cpp:72 rc.cpp:3336 rc.cpp:4819
 #, fuzzy
 msgid "Save"
 msgstr "Хидматгори номнависӣ"
 
-#: imageviewer.cpp:74
+#: imageviewer.cpp:72
 #, fuzzy
 msgid "Save the image to disk"
 msgstr "Таъғиротро дар FITS нигоҳ дорам?"
 
-#: imageviewer.cpp:196
+#: imageviewer.cpp:102
+msgid "KStars image viewer"
+msgstr ""
+
+#: imageviewer.cpp:176
 #, kde-format
 msgid "Loading of the image %1 failed."
 msgstr "Хатоги дар пурборкунии тасвир %1."
 
-#: imageviewer.cpp:248 kstarsactions.cpp:525 tools/scriptbuilder.cpp:1041
+#: imageviewer.cpp:226 kstarsactions.cpp:525 tools/scriptbuilder.cpp:1041
 #: dialogs/addcatdialog.cpp:210 fitsviewer/fitsviewer.cpp:290
 #, kde-format
 msgid "A file named \"%1\" already exists. Overwrite it?"
 msgstr "Файл бо номи \"%1\"аллакай вуҷуд дорад. Шумо мехоҳед ӯро иваз кунед?"
 
-#: imageviewer.cpp:250 kstarsactions.cpp:527 tools/scriptbuilder.cpp:1043
+#: imageviewer.cpp:228 kstarsactions.cpp:527 tools/scriptbuilder.cpp:1043
 #: dialogs/addcatdialog.cpp:212 fitsviewer/fitsviewer.cpp:292
 msgid "Overwrite File?"
 msgstr "Файлро иваз кунам?"
 
-#: imageviewer.cpp:264
+#: imageviewer.cpp:242
 #, kde-format
 msgid "Saving of the image %1 failed."
 msgstr "Хатоги дар вақти нигоҳ доштани тасвир %1."
@@ -339,8 +339,8 @@ msgid "Show DSS Image"
 msgstr "Нишон додани тасвири SEDS "
 
 #: kspopupmenu.cpp:123 kspopupmenu.cpp:179 kstarsdata.cpp:120
-#: kstarsdata.cpp:121 kstarsinit.cpp:570 tools/observinglist.cpp:510
-#: tools/wutdialog.cpp:262 skycomponents/starcomponent.cpp:483
+#: kstarsdata.cpp:121 kstarsinit.cpp:582 tools/observinglist.cpp:510
+#: tools/wutdialog.cpp:262 skycomponents/starcomponent.cpp:481
 #: dialogs/detaildialog.cpp:134 skyobjects/starobject.cpp:597
 #: skyobjects/starobject.cpp:616 skyobjects/starobject.cpp:621
 #: skyobjects/starobject.cpp:624
@@ -589,7 +589,7 @@ msgstr ""
 msgid "Engage &Tracking"
 msgstr "Роҳ &банд аст"
 
-#: kstarsactions.cpp:728 kstars.cpp:152 skymap.cpp:416
+#: kstarsactions.cpp:728 kstars.cpp:152 skymap.cpp:409
 msgid "Stop &Tracking"
 msgstr "&Аз кор мондани соат"
 
@@ -630,11 +630,11 @@ msgstr "Ворид намудани хоҳиши минтақаи намуди �
 msgid "Enter a field-of-view angle in degrees: "
 msgstr "Ворид намудани хоҳиши минтақаи намуди фаришта бо розигӣ"
 
-#: kstarsactions.cpp:834 kstars.cpp:157 kstarsinit.cpp:218
+#: kstarsactions.cpp:834 kstars.cpp:157 kstarsinit.cpp:219
 msgid "Equatorial &Coordinates"
 msgstr "&Координатаҳои экваторӣ"
 
-#: kstarsactions.cpp:841 kstars.cpp:157 kstarsinit.cpp:218
+#: kstarsactions.cpp:841 kstars.cpp:157 kstarsinit.cpp:219
 msgid "Horizontal &Coordinates"
 msgstr "&Координатаҳои уфуқӣ"
 
@@ -34349,190 +34349,190 @@ msgstr "&Ёфтани объект..."
 msgid "Set Focus &Manually..."
 msgstr "&Дасти нишон додани пайванд..."
 
-#: kstarsinit.cpp:207
+#: kstarsinit.cpp:208
 msgid "&Default Zoom"
 msgstr "&Масштаби пешфарзи "
 
-#: kstarsinit.cpp:211
+#: kstarsinit.cpp:212
 msgid "&Zoom to Angular Size..."
 msgstr "&Тағьир андози тсасвир дар Вусъатӣ Кунҷашакл..."
 
-#: kstarsinit.cpp:222
+#: kstarsinit.cpp:223
 msgid "&Lambert Azimuthal Equal-area"
 msgstr ""
 
-#: kstarsinit.cpp:227
+#: kstarsinit.cpp:228
 msgid "&Azimuthal Equidistant"
 msgstr ""
 
-#: kstarsinit.cpp:232
+#: kstarsinit.cpp:233
 #, fuzzy
 msgid "&Orthographic"
 msgstr "Мутахассиси география"
 
-#: kstarsinit.cpp:237
+#: kstarsinit.cpp:238
 msgid "&Equirectangular"
 msgstr ""
 
-#: kstarsinit.cpp:242
+#: kstarsinit.cpp:243
 #, fuzzy
 msgid "&Stereographic"
 msgstr "Мутахассиси география"
 
-#: kstarsinit.cpp:247
+#: kstarsinit.cpp:248
 msgid "&Gnomonic"
 msgstr ""
 
-#: kstarsinit.cpp:255
+#: kstarsinit.cpp:256
 msgctxt "Show the information boxes"
 msgid "Show &Info Boxes"
 msgstr "Нишон &додани ахборот"
 
-#: kstarsinit.cpp:259
+#: kstarsinit.cpp:262
 msgctxt "Show time-related info box"
 msgid "Show &Time Box"
 msgstr "Нишон додани &вақт"
 
-#: kstarsinit.cpp:263
+#: kstarsinit.cpp:269
 msgctxt "Show focus-related info box"
 msgid "Show &Focus Box"
 msgstr "Нишон додани &пайванд"
 
-#: kstarsinit.cpp:267
+#: kstarsinit.cpp:276
 msgctxt "Show location-related info box"
 msgid "Show &Location Box"
 msgstr "Нишон додани &мавқеъ"
 
-#: kstarsinit.cpp:272
+#: kstarsinit.cpp:284
 msgid "Show Main Toolbar"
 msgstr "Панели асосии асбобҳо"
 
-#: kstarsinit.cpp:274
+#: kstarsinit.cpp:286
 msgid "Show View Toolbar"
 msgstr "Панели асбобҳои Намуд"
 
-#: kstarsinit.cpp:278
+#: kstarsinit.cpp:290
 msgid "Show Statusbar"
 msgstr "Нишон додани Вазъияти нусха"
 
-#: kstarsinit.cpp:280
+#: kstarsinit.cpp:292
 msgid "Show Az/Alt Field"
 msgstr "Нишон кардани майдони Az/Alt"
 
-#: kstarsinit.cpp:282
+#: kstarsinit.cpp:294
 msgid "Show RA/Dec Field"
 msgstr "Нишон додани майдони RA/Dec"
 
-#: kstarsinit.cpp:287
+#: kstarsinit.cpp:299
 msgid "C&olor Schemes"
 msgstr "Нақшаи &рангҳо"
 
-#: kstarsinit.cpp:288
+#: kstarsinit.cpp:300
 msgid "&Classic"
 msgstr ""
 
-#: kstarsinit.cpp:289
+#: kstarsinit.cpp:301
 msgid "&Star Chart"
 msgstr "&Харитаи ситора"
 
-#: kstarsinit.cpp:290
+#: kstarsinit.cpp:302
 msgid "&Night Vision"
 msgstr "&Осмони шабона"
 
-#: kstarsinit.cpp:291
+#: kstarsinit.cpp:303
 msgid "&Moonless Night"
 msgstr "&Шаби бемаҳтоб"
 
-#: kstarsinit.cpp:308
+#: kstarsinit.cpp:320
 msgid "&FOV Symbols"
 msgstr "&Рамзҳои FOV"
 
-#: kstarsinit.cpp:312
+#: kstarsinit.cpp:324
 msgctxt "Location on Earth"
 msgid "&Geographic..."
 msgstr "&Ҷуғрофӣ..."
 
-#: kstarsinit.cpp:317
+#: kstarsinit.cpp:329
 msgid "Startup Wizard..."
 msgstr "Устоди ба кор андохтан..."
 
-#: kstarsinit.cpp:322
+#: kstarsinit.cpp:334
 msgid "Calculator..."
 msgstr "Ҳисобкунак..."
 
-#: kstarsinit.cpp:326
+#: kstarsinit.cpp:338
 msgid "Observing List..."
 msgstr ""
 
-#: kstarsinit.cpp:331
+#: kstarsinit.cpp:343
 msgid "AAVSO Light Curves..."
 msgstr "Нурҳои каҷ AAVSO..."
 
-#: kstarsinit.cpp:335
+#: kstarsinit.cpp:347
 msgid "Altitude vs. Time..."
 msgstr "Болобароӣ/вақт..."
 
-#: kstarsinit.cpp:338
+#: kstarsinit.cpp:350
 msgid "What's up Tonight..."
 msgstr "Воқеаҳои шабона..."
 
-#: kstarsinit.cpp:341
+#: kstarsinit.cpp:353
 msgid "Sky Calendar..."
 msgstr ""
 
-#: kstarsinit.cpp:350
+#: kstarsinit.cpp:362
 msgid "Script Builder..."
 msgstr "Устоди дастнависҳо..."
 
-#: kstarsinit.cpp:353
+#: kstarsinit.cpp:365
 msgid "Solar System..."
 msgstr "Системаи Офтобӣ..."
 
-#: kstarsinit.cpp:356
+#: kstarsinit.cpp:368
 msgid "Jupiter's Moons..."
 msgstr "Маҳтобҳои Муштарӣ..."
 
-#: kstarsinit.cpp:359
+#: kstarsinit.cpp:371
 msgid "Flags..."
 msgstr ""
 
-#: kstarsinit.cpp:362
+#: kstarsinit.cpp:374
 msgid "Define Equipment..."
 msgstr ""
 
-#: kstarsinit.cpp:365
+#: kstarsinit.cpp:377
 msgid "Add Observer..."
 msgstr ""
 
-#: kstarsinit.cpp:370
+#: kstarsinit.cpp:382
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Ascension Island"
 msgid "Execute the session Plan..."
 msgstr "Ҷазираи Болобарои "
 
-#: kstarsinit.cpp:378
+#: kstarsinit.cpp:390
 msgid "Telescope Wizard..."
 msgstr "Устоди телескоп..."
 
-#: kstarsinit.cpp:381
+#: kstarsinit.cpp:393
 #, fuzzy
 msgid "Telescope Properties..."
 msgstr "Даргоҳи телескоп:"
 
-#: kstarsinit.cpp:383
+#: kstarsinit.cpp:395
 msgid "Device Manager..."
 msgstr "Роҳбарии дастгоҳо..."
 
-#: kstarsinit.cpp:387
+#: kstarsinit.cpp:399
 msgid "Capture Image Sequence..."
 msgstr "Истилои тасвири пайдарпайӣ..."
 
-#: kstarsinit.cpp:391
+#: kstarsinit.cpp:403
 msgid "INDI Control Panel..."
 msgstr "Панели идоракунии INDI..."
 
-#: kstarsinit.cpp:405
+#: kstarsinit.cpp:417
 msgctxt "Tooltip describing the nature of the time step control"
 msgid ""
 "Use this to set the rate at which time in the simulation flows.\n"
@@ -34542,48 +34542,48 @@ msgid ""
 "of 'X'."
 msgstr ""
 
-#: kstarsinit.cpp:409
+#: kstarsinit.cpp:421
 msgid "Time step control"
 msgstr ""
 
-#: kstarsinit.cpp:414
+#: kstarsinit.cpp:426
 #, fuzzy
 #| msgid "Stars"
 msgctxt "Toggle Stars in the display"
 msgid "Stars"
 msgstr "Ситораҳо"
 
-#: kstarsinit.cpp:416
+#: kstarsinit.cpp:428
 #, fuzzy
 #| msgid "Toggle Stars"
 msgid "Toggle stars"
 msgstr "Ситораҳо"
 
-#: kstarsinit.cpp:418
+#: kstarsinit.cpp:430
 #, fuzzy
 msgctxt "Toggle Deep Sky Objects in the display"
 msgid "Deep Sky"
 msgstr "Ҳавои чуқури предметҳо"
 
-#: kstarsinit.cpp:420
+#: kstarsinit.cpp:432
 #, fuzzy
 #| msgid "Toggle Deep Sky Objects"
 msgid "Toggle deep sky objects"
 msgstr "Объектҳои дур"
 
-#: kstarsinit.cpp:422
+#: kstarsinit.cpp:434
 #, fuzzy
 #| msgid "Solar System"
 msgctxt "Toggle Solar System objects in the display"
 msgid "Solar System"
 msgstr "Системаи Офтобӣ"
 
-#: kstarsinit.cpp:424
+#: kstarsinit.cpp:436
 #, fuzzy
 msgid "Toggle Solar system objects"
 msgstr "Барҷо кунед баданҳои системаи офтобиро дар вақти ҷумбиш?"
 
-#: kstarsinit.cpp:426
+#: kstarsinit.cpp:438
 #, fuzzy
 #| msgctxt "Constellation Line"
 #| msgid "Constell. Line"
@@ -34591,13 +34591,13 @@ msgctxt "Toggle Constellation Lines in the display"
 msgid "Const. Lines"
 msgstr "Хати бурҷ"
 
-#: kstarsinit.cpp:428
+#: kstarsinit.cpp:440
 #, fuzzy
 #| msgid "Toggle Constellation Lines"
 msgid "Toggle constellation lines"
 msgstr "Хатҳои бурҷҳо"
 
-#: kstarsinit.cpp:430
+#: kstarsinit.cpp:442
 #, fuzzy
 #| msgctxt "Constellation Name"
 #| msgid "Constell. Name"
@@ -34605,13 +34605,13 @@ msgctxt "Toggle Constellation Names in the display"
 msgid "Const. Names"
 msgstr "Номи бурҷ"
 
-#: kstarsinit.cpp:432
+#: kstarsinit.cpp:444
 #, fuzzy
 #| msgid "Toggle Constellation Names"
 msgid "Toggle constellation names"
 msgstr "Номи бурҷҳо"
 
-#: kstarsinit.cpp:434
+#: kstarsinit.cpp:446
 #, fuzzy
 #| msgctxt "Constellation Boundary"
 #| msgid "Constell. Boundary"
@@ -34619,51 +34619,51 @@ msgctxt "Toggle Constellation Boundaries in the display"
 msgid "C. Boundaries"
 msgstr "Сарҳади бурҷ"
 
-#: kstarsinit.cpp:436
+#: kstarsinit.cpp:448
 #, fuzzy
 #| msgid "Toggle Constellation Boundaries"
 msgid "Toggle constellation boundaries"
 msgstr "Сарҳади бурҷӣ"
 
-#: kstarsinit.cpp:438
+#: kstarsinit.cpp:450
 #, fuzzy
 #| msgid "Milky Way"
 msgctxt "Toggle Milky Way in the display"
 msgid "Milky Way"
 msgstr "Роҳи Каҳкашон"
 
-#: kstarsinit.cpp:440
+#: kstarsinit.cpp:452
 #, fuzzy
 #| msgid "Toggle Milky Way"
 msgid "Toggle milky way"
 msgstr "Роҳи коҳкашон"
 
-#: kstarsinit.cpp:442
+#: kstarsinit.cpp:454
 #, fuzzy
 #| msgid "Coordinate grid"
 msgctxt "Toggle Coordinate Grid in the display"
 msgid "Coord. grid"
 msgstr "Шабакаи координатӣ "
 
-#: kstarsinit.cpp:444
+#: kstarsinit.cpp:456
 #, fuzzy
 #| msgid "Toggle Coordinate Grid"
 msgid "Toggle coordinate grid"
 msgstr "Шабакаи координатӣ"
 
-#: kstarsinit.cpp:446
+#: kstarsinit.cpp:458
 #, fuzzy
 msgctxt "Toggle the opaque fill of the ground polygon in the display"
 msgid "Ground"
 msgstr "Армоур"
 
-#: kstarsinit.cpp:448
+#: kstarsinit.cpp:460
 #, fuzzy
 #| msgid "Toggle Ground"
 msgid "Toggle opaque ground"
 msgstr "Замин"
 
-#: kstarsinit.cpp:450
+#: kstarsinit.cpp:462
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Flagstaff"
@@ -34671,29 +34671,29 @@ msgctxt "Toggle flags in the display"
 msgid "Flags"
 msgstr "Флегстафф"
 
-#: kstarsinit.cpp:452
+#: kstarsinit.cpp:464
 #, fuzzy
 #| msgid "Toggle Stars"
 msgid "Toggle flags"
 msgstr "Ситораҳо"
 
-#: kstarsinit.cpp:479
+#: kstarsinit.cpp:491
 msgid "Edit FOV Symbols..."
 msgstr "Таҳрир намудани нишонаҳои FOV "
 
-#: kstarsinit.cpp:485
+#: kstarsinit.cpp:497
 msgid " Welcome to KStars "
 msgstr " Хуш омадед ба KStars "
 
-#: kstarsinit.cpp:568 skymap.cpp:376 widgets/infoboxwidget.cpp:117
+#: kstarsinit.cpp:580 skymap.cpp:369 widgets/infoboxwidget.cpp:117
 msgid "nothing"
 msgstr "не"
 
-#: kstarsinit.cpp:614
+#: kstarsinit.cpp:626
 msgid "Initial Position is Below Horizon"
 msgstr "Ҳолати аввала дар таги уфуқ ҷойгир аст"
 
-#: kstarsinit.cpp:615
+#: kstarsinit.cpp:627
 msgid ""
 "The initial position is below the horizon.\n"
 "Would you like to reset to the default position?"
@@ -34701,12 +34701,12 @@ msgstr ""
 "Ҳолати аввала дар таги уфуқ ҷойгир аст.\n"
 "Оё шумо мехоҳед, ки маънои нобаёнро барқарор кунед?"
 
-#: kstarsinit.cpp:617
+#: kstarsinit.cpp:629
 #, fuzzy
 msgid "Reset Position"
 msgstr "&Нуқта"
 
-#: kstarsinit.cpp:617
+#: kstarsinit.cpp:629
 msgid "Do Not Reset"
 msgstr ""
 
@@ -42395,7 +42395,7 @@ msgstr "Ҷузъиёти тирезаро барои объекти асосӣ �
 
 #. i18n: file: tools/wutdialog.ui:480
 #. i18n: ectx: property (text), widget (KPushButton, DetailButton)
-#: rc.cpp:3752 skymap.cpp:680 dialogs/detaildialog.cpp:79
+#: rc.cpp:3752 skymap.cpp:672 dialogs/detaildialog.cpp:79
 msgid "Object Details"
 msgstr "Маълумот дар бораи объект"
 
@@ -46520,15 +46520,15 @@ msgstr "Вақтро танзим карда натавонист:  Таърих
 msgid "New clock scale: %1 sec"
 msgstr "Миқёси нави соат: %1 sec"
 
-#: skymap.cpp:87 skymap.cpp:1253 skycomponents/horizoncomponent.cpp:293
+#: skymap.cpp:87 skymap.cpp:1245 skycomponents/horizoncomponent.cpp:293
 msgid "Unrecognized coordinate projection: "
 msgstr ""
 
-#: skymap.cpp:398
+#: skymap.cpp:391
 msgid "Requested Position Below Horizon"
 msgstr "Дархости Ҳолати Поёни Уфуқ"
 
-#: skymap.cpp:399
+#: skymap.cpp:392
 msgid ""
 "The requested position is below the horizon.\n"
 "Would you like to go there anyway?"
@@ -46536,16 +46536,16 @@ msgstr ""
 "Ҳолати дархост дар поёни уқуф мебошад.\n"
 "Бинобарин, ба онҷо рафтан мехоҳед?"
 
-#: skymap.cpp:401
+#: skymap.cpp:394
 msgid "Go Anyway"
 msgstr ""
 
-#: skymap.cpp:401
+#: skymap.cpp:394
 #, fuzzy
 msgid "Keep Position"
 msgstr "&Нуқта"
 
-#: skymap.cpp:481
+#: skymap.cpp:473
 #, fuzzy
 msgid ""
 "Digitized Sky Survey image provided by the Space Telescope Science Institute "
@@ -46554,22 +46554,22 @@ msgstr ""
 "Нигориши тасвири Осмон ба Фосилаи Телескопи Институти Илмӣ таъмин карда "
 "шудааст."
 
-#: skymap.cpp:520
+#: skymap.cpp:512
 msgid ""
 "Sloan Digital Sky Survey image provided by the Astrophysical Research "
 "Consortium [free for non-commercial use]."
 msgstr ""
 
-#: skymap.cpp:565
+#: skymap.cpp:557
 #, fuzzy, kde-format
 msgid "Angular distance: %1"
 msgstr "Фосилаи кунҷ: "
 
-#: skymap.cpp:680
+#: skymap.cpp:672
 msgid "No object selected."
 msgstr "Ягон объект интихоб кардагӣ нест."
 
-#: skymap.cpp:1469
+#: skymap.cpp:1461
 msgid ""
 "Custom image-links file could not be opened.\n"
 "Link cannot be recorded for future sessions."
@@ -46577,7 +46577,7 @@ msgstr ""
 "Алоқаи тасвири фали асосӣ кушода нашуд.\n"
 "Алоқаро ба сессияҳои оянда навишта гирифта намешавад."
 
-#: skymap.cpp:1487
+#: skymap.cpp:1479
 msgid ""
 "Custom information-links file could not be opened.\n"
 "Link cannot be recorded for future sessions."
@@ -46585,15 +46585,15 @@ msgstr ""
 "Маълумоти пайвастаи файли асосиро кушода натавонист.\n"
 " Алоқаро ба сессияҳои оянда навишта гирифта намешавад."
 
-#: skymap.cpp:1487
+#: skymap.cpp:1479
 msgid "Could not Open File"
 msgstr "Файлро кушода натавонист"
 
-#: skymap.cpp:1521
+#: skymap.cpp:1513
 msgid "Xplanet binary path is empty in config panel."
 msgstr ""
 
-#: skymap.cpp:1626
+#: skymap.cpp:1618
 #, fuzzy, kde-format
 msgid "Run : %1"
 msgstr "Вақти баромад: %1"
@@ -49160,12 +49160,12 @@ msgstr "Наметавонам файли маълумотҳои истифод�
 msgid "Loading solar system"
 msgstr "Системаи Офтобӣ"
 
-#: skycomponents/starcomponent.cpp:75
+#: skycomponents/starcomponent.cpp:73
 #, fuzzy
 msgid "Loading stars"
 msgstr "Ҷустуҷӯи объект"
 
-#: skycomponents/starcomponent.cpp:151
+#: skycomponents/starcomponent.cpp:149
 msgid "Please wait while re-indexing stars ..."
 msgstr ""
 
