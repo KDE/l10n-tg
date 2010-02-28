@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kiten\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-22 11:33+0200\n"
+"POT-Creation-Date: 2010-02-26 20:29+0100\n"
 "PO-Revision-Date: 2005-09-23 18:20+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -18,6 +18,36 @@ msgstr ""
 "X-Generator: KBabel 1.10\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
+#: app/configuredialog.cpp:56
+msgid "Dictionaries"
+msgstr "Луғатҳо"
+
+#. i18n: file: app/configsearching.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, ConfigSearching)
+#: app/configuredialog.cpp:62 rc.cpp:104
+msgid "Searching"
+msgstr "Ҷустуҷӯ"
+
+#. i18n: file: app/configlearn.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, ConfigLearn)
+#: app/configuredialog.cpp:66 rc.cpp:98
+msgid "Learn"
+msgstr "Омӯхтан"
+
+#: app/configuredialog.cpp:71
+msgid "Font"
+msgstr ""
+
+#: app/configuredialog.cpp:73
+msgctxt "@title:group the settings for the dictionary display"
+msgid "Display"
+msgstr ""
+
+#: app/configuredialog.cpp:75
+#, fuzzy
+msgid "Results Sorting"
+msgstr "Натиҷаҳо аз %1"
+
 #: app/kiten.cpp:157
 #, fuzzy
 msgid "Radical Selector"
@@ -25,7 +55,7 @@ msgstr "Интихобкунандаи қатъӣ"
 
 #. i18n: file: app/kitenui.rc:15
 #. i18n: ectx: Menu (search)
-#: app/kiten.cpp:166 rc.cpp:116
+#: app/kiten.cpp:166 rc.cpp:122
 msgid "S&earch"
 msgstr "&Ҷустуҷӯ"
 
@@ -75,35 +105,42 @@ msgstr[1] " %1 натиҷа"
 msgid "No results found"
 msgstr "Натиҷаҳои умумӣ аз %1"
 
-#: app/configuredialog.cpp:56
-msgid "Dictionaries"
-msgstr "Луғатҳо"
-
-#. i18n: file: app/configsearching.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, ConfigSearching)
-#: app/configuredialog.cpp:62 rc.cpp:47
-msgid "Searching"
-msgstr "Ҷустуҷӯ"
-
-#. i18n: file: app/configlearn.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, ConfigLearn)
-#: app/configuredialog.cpp:66 rc.cpp:128
-msgid "Learn"
-msgstr "Омӯхтан"
-
-#: app/configuredialog.cpp:71
-msgid "Font"
+#: app/searchStringInput.cpp:44
+msgid "Deinflect Verbs/Adjectives"
 msgstr ""
 
-#: app/configuredialog.cpp:73
-msgctxt "@title:group the settings for the dictionary display"
-msgid "Display"
-msgstr ""
-
-#: app/configuredialog.cpp:75
+#: app/searchStringInput.cpp:47
 #, fuzzy
-msgid "Results Sorting"
-msgstr "Натиҷаҳо аз %1"
+#| msgid "&Filter Rare"
+msgid "&Filter Out Rare"
+msgstr "&Филтри Ноёб"
+
+#: app/searchStringInput.cpp:50
+msgid "Match Type"
+msgstr ""
+
+#: app/searchStringInput.cpp:51
+msgid "Exact Match"
+msgstr ""
+
+#: app/searchStringInput.cpp:52
+msgid "Match Beginning"
+msgstr ""
+
+#: app/searchStringInput.cpp:53
+#, fuzzy
+#| msgid "Search &Anywhere"
+msgid "Match Anywhere"
+msgstr "&Ҷустуҷӯи дар ҳар ҷо"
+
+#: app/searchStringInput.cpp:71
+msgid "Focus input field"
+msgstr ""
+
+#: app/searchStringInput.cpp:74
+#, fuzzy
+msgid "Search Bar"
+msgstr "&Тоза кардан"
 
 #: app/main.cpp:41
 msgid "Kiten"
@@ -168,43 +205,6 @@ msgstr ""
 msgid "KDE4 rewrite"
 msgstr ""
 
-#: app/searchStringInput.cpp:44
-msgid "Deinflect Verbs/Adjectives"
-msgstr ""
-
-#: app/searchStringInput.cpp:47
-#, fuzzy
-#| msgid "&Filter Rare"
-msgid "&Filter Out Rare"
-msgstr "&Филтри Ноёб"
-
-#: app/searchStringInput.cpp:50
-msgid "Match Type"
-msgstr ""
-
-#: app/searchStringInput.cpp:51
-msgid "Exact Match"
-msgstr ""
-
-#: app/searchStringInput.cpp:52
-msgid "Match Beginning"
-msgstr ""
-
-#: app/searchStringInput.cpp:53
-#, fuzzy
-#| msgid "Search &Anywhere"
-msgid "Match Anywhere"
-msgstr "&Ҷустуҷӯи дар ҳар ҷо"
-
-#: app/searchStringInput.cpp:71
-msgid "Focus input field"
-msgstr ""
-
-#: app/searchStringInput.cpp:74
-#, fuzzy
-msgid "Search Bar"
-msgstr "&Тоза кардан"
-
 #: lib/dictKanjidic/entryKanjidic.cpp:54
 msgid "In names: "
 msgstr "Дар номҳо: "
@@ -213,63 +213,9 @@ msgstr "Дар номҳо: "
 msgid "As radical: "
 msgstr "Ба таври қатъӣ: "
 
-#: lib/dictDeinflect/dictFileDeinflect.cpp:72
-msgid ""
-"Verb deinflection information not found, so verb deinflection cannot be used."
+#: lib/dictEdict/dictFilePreferenceDialog.cpp:42
+msgid "&Available Fields:"
 msgstr ""
-"Ахборот дар бораи феълҳои тасрифнашаванда ёфт нашуд.Ин қадар ни феъл "
-"истифода карда намешавад."
-
-#: lib/dictDeinflect/dictFileDeinflect.cpp:83
-msgid ""
-"Verb deinflection information could not be loaded, so verb deinflection "
-"cannot be used."
-msgstr ""
-"Ахборот дар бораи феълҳои тасрифнашаванда пурборкарда натавонист.Ин қадар ни "
-"феъл истифода карда намешавад."
-
-#: lib/dictDeinflect/entryDeinflect.h:40
-#, kde-format
-msgid "Possible de-conjugation %1 as %2"
-msgstr ""
-
-#: lib/Entry.cpp:74
-msgid "; "
-msgstr ""
-
-#: lib/EntryList.cpp:81
-#, fuzzy
-#| msgid "Dictionaries"
-msgid "From Dictionary:"
-msgstr "Луғатҳо"
-
-#: lib/kromajiedit.cpp:47
-msgid ""
-"Romaji information file not installed, so Romaji conversion cannot be used."
-msgstr ""
-"Файли ахбороти Romaji барқарор карда нашуд, Ин қадар робитаи Romaji истифода "
-"карда намешавад. "
-
-#: lib/kromajiedit.cpp:55
-msgid ""
-"Romaji information could not be loaded, so Romaji conversion cannot be used."
-msgstr ""
-"Файли ахбороти Romaji барқарор карда нашуд, Ин қадар робитаи Romaji истифода "
-"карда намешавад. "
-
-#: lib/kromajiedit.cpp:266
-#, fuzzy
-#| msgid "English"
-msgctxt "@option:radio selects english translation"
-msgid "English"
-msgstr "Англисӣ"
-
-#: lib/kromajiedit.cpp:274
-#, fuzzy
-#| msgid "Kana"
-msgctxt "@option:radio selects japanese translation"
-msgid "Kana"
-msgstr "Кана"
 
 #: lib/dictEdict/entryEdict.cpp:220
 #, fuzzy
@@ -315,35 +261,63 @@ msgctxt ""
 msgid "Godan"
 msgstr "Хуб!"
 
-#: lib/dictEdict/dictFilePreferenceDialog.cpp:42
-msgid "&Available Fields:"
+#: lib/dictDeinflect/dictFileDeinflect.cpp:72
+msgid ""
+"Verb deinflection information not found, so verb deinflection cannot be used."
+msgstr ""
+"Ахборот дар бораи феълҳои тасрифнашаванда ёфт нашуд.Ин қадар ни феъл "
+"истифода карда намешавад."
+
+#: lib/dictDeinflect/dictFileDeinflect.cpp:83
+msgid ""
+"Verb deinflection information could not be loaded, so verb deinflection "
+"cannot be used."
+msgstr ""
+"Ахборот дар бораи феълҳои тасрифнашаванда пурборкарда натавонист.Ин қадар ни "
+"феъл истифода карда намешавад."
+
+#: lib/dictDeinflect/entryDeinflect.h:40
+#, kde-format
+msgid "Possible de-conjugation %1 as %2"
 msgstr ""
 
-#: radselect/main.cpp:28
-msgid "A KDE Application"
+#: lib/Entry.cpp:74
+msgid "; "
 msgstr ""
 
-#: radselect/main.cpp:33
-msgid "kitenradselect"
+#: lib/kromajiedit.cpp:47
+msgid ""
+"Romaji information file not installed, so Romaji conversion cannot be used."
 msgstr ""
+"Файли ахбороти Romaji барқарор карда нашуд, Ин қадар робитаи Romaji истифода "
+"карда намешавад. "
 
-#: radselect/main.cpp:35
-msgid "(C) 2005 Joseph Kerian"
+#: lib/kromajiedit.cpp:55
+msgid ""
+"Romaji information could not be loaded, so Romaji conversion cannot be used."
 msgstr ""
+"Файли ахбороти Romaji барқарор карда нашуд, Ин қадар робитаи Romaji истифода "
+"карда намешавад. "
 
-#: radselect/main.cpp:42
-msgid "Initial Search String from Kiten"
-msgstr ""
-
-#: radselect/radselectbuttongrid.cpp:117
+#: lib/kromajiedit.cpp:266
 #, fuzzy
-msgid "No Radicals Selected"
-msgstr "Интихобкунандаи қатъӣ"
+#| msgid "English"
+msgctxt "@option:radio selects english translation"
+msgid "English"
+msgstr "Англисӣ"
 
-#: radselect/radselectbuttongrid.cpp:148
+#: lib/kromajiedit.cpp:274
 #, fuzzy
-msgid "Selected Radicals: "
-msgstr "Қатъӣ: %1"
+#| msgid "Kana"
+msgctxt "@option:radio selects japanese translation"
+msgid "Kana"
+msgstr "Кана"
+
+#: lib/EntryList.cpp:81
+#, fuzzy
+#| msgid "Dictionaries"
+msgid "From Dictionary:"
+msgstr "Луғатҳо"
 
 #: radselect/radselectview.cpp:54
 msgid ""
@@ -370,6 +344,32 @@ msgstr ""
 msgid "Settings"
 msgstr "Маъноҳо"
 
+#: radselect/radselectbuttongrid.cpp:117
+#, fuzzy
+msgid "No Radicals Selected"
+msgstr "Интихобкунандаи қатъӣ"
+
+#: radselect/radselectbuttongrid.cpp:148
+#, fuzzy
+msgid "Selected Radicals: "
+msgstr "Қатъӣ: %1"
+
+#: radselect/main.cpp:28
+msgid "A KDE Application"
+msgstr ""
+
+#: radselect/main.cpp:33
+msgid "kitenradselect"
+msgstr ""
+
+#: radselect/main.cpp:35
+msgid "(C) 2005 Joseph Kerian"
+msgstr ""
+
+#: radselect/main.cpp:42
+msgid "Initial Search String from Kiten"
+msgstr ""
+
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -383,117 +383,22 @@ msgid "Your emails"
 msgstr ""
 "youth_opportunities@tajikngo.org, rkovacs@khujand.org, MarinaKL@tajikngo.org"
 
-#. i18n: file: app/configsorting.ui:15
-#. i18n: ectx: property (windowTitle), widget (QWidget, configSorting)
-#: rc.cpp:5
-msgid "sorting"
-msgstr ""
-
-#. i18n: file: app/configsorting.ui:21
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_dictionary_enable)
-#: rc.cpp:8
-msgid "Sort Se&arch Results By Dictionary"
-msgstr ""
-
-#. i18n: file: app/configsorting.ui:28
-#. i18n: ectx: property (availableLabel), widget (KActionSelector, dictionary_order)
-#: rc.cpp:11
-#, fuzzy
-msgid "Dicti&onaries Available:"
-msgstr "Луғатҳо"
-
-#. i18n: file: app/configsorting.ui:31
-#. i18n: ectx: property (selectedLabel), widget (KActionSelector, dictionary_order)
-#: rc.cpp:14
-msgid "Displa&y First:"
-msgstr ""
-
-#. i18n: file: app/configsorting.ui:48
-#. i18n: ectx: property (availableLabel), widget (KActionSelector, field_order)
-#: rc.cpp:17
-msgid "Fields to Sort &By:"
-msgstr ""
-
-#. i18n: file: app/configdictselect.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, configDictSelect)
-#: rc.cpp:20
-#, fuzzy
-msgid "Dictionary Selector"
-msgstr "&Муҳаррири Луғат..."
-
-#. i18n: file: app/configdictselect.ui:25
-#. i18n: ectx: property (text), widget (QCheckBox, __useGlobal)
-#: rc.cpp:23
-#, fuzzy
-msgid "Use prei&nstalled dict"
-msgstr "%1-и пеш барқарор шуда истифода кунед"
-
-#. i18n: file: app/configdictselect.ui:56
-#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
-#: rc.cpp:26
-msgid "Name"
-msgstr "Ном"
-
-#. i18n: file: app/configdictselect.ui:67
-#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
-#: rc.cpp:29
-msgid "File"
-msgstr ""
-
-#. i18n: file: app/configdictselect.ui:86
-#. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: rc.cpp:32
-#, fuzzy
-msgid "&Add..."
-msgstr "Илова..."
-
-#. i18n: file: app/configdictselect.ui:93
-#. i18n: ectx: property (text), widget (QPushButton, delButton)
-#: rc.cpp:35
-msgid "Delete"
-msgstr ""
-
-#. i18n: file: app/configfont.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, ConfigFont)
-#: rc.cpp:38
-msgid "Fonts"
-msgstr ""
-
-#. i18n: file: app/configfont.ui:21
-#. i18n: ectx: property (text), widget (QLabel, Listview_mainentry_label)
-#: rc.cpp:41
-msgid "Main Font"
-msgstr ""
-
-#. i18n: file: app/configfont.ui:28
-#. i18n: ectx: property (sampleText), widget (KFontRequester, kcfg_font)
-#: rc.cpp:44
-msgid "漢字 かな romaji"
-msgstr ""
-
-#. i18n: file: app/configsearching.ui:33
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_initialSearch)
-#: rc.cpp:50
-#, fuzzy
-msgid "Search for \"jiten\" on startup"
-msgstr "Саркардани \"Омӯхтан\" вақти пурборкардани барномаи Kiten"
-
 #. i18n: file: app/kiten.kcfg:10
 #. i18n: ectx: label, entry (dictionary_list), group (dict_config_types)
-#: rc.cpp:53
+#: rc.cpp:5
 msgid "List of dictionary Types, used internally, do not touch"
 msgstr ""
 
 #. i18n: file: app/kiten.kcfg:25
 #. i18n: ectx: label, entry (edict__NAMES), group (dicts_edict)
-#: rc.cpp:56
+#: rc.cpp:8
 #, fuzzy
 msgid "Edict dictionary files"
 msgstr "Луғатҳо"
 
 #. i18n: file: app/kiten.kcfg:28
 #. i18n: ectx: label, entry (edict__useGlobal), group (dicts_edict)
-#: rc.cpp:59
+#: rc.cpp:11
 #, fuzzy
 msgid "Use preinstalled edict"
 msgstr "%1-и пеш барқарор шуда истифода кунед"
@@ -504,13 +409,13 @@ msgstr "%1-и пеш барқарор шуда истифода кунед"
 #. i18n: ectx: label, entry (kanjidic__displayFields), group (dicts_kanjidic)
 #. i18n: file: app/kiten.kcfg:60
 #. i18n: ectx: label, entry (deinflect__displayFields), group (dicts_deinflect)
-#: rc.cpp:62 rc.cpp:71 rc.cpp:80
+#: rc.cpp:14 rc.cpp:23 rc.cpp:32
 msgid "Set of fields to display for this dictionary type"
 msgstr ""
 
 #. i18n: file: app/kiten.kcfg:39
 #. i18n: ectx: label, entry (kanjidic__NAMES), group (dicts_kanjidic)
-#: rc.cpp:65
+#: rc.cpp:17
 #, fuzzy
 msgid "Kanjidic dictionary files"
 msgstr "Саҳифаи ахбороти Kanjidic"
@@ -519,33 +424,33 @@ msgstr "Саҳифаи ахбороти Kanjidic"
 #. i18n: ectx: label, entry (kanjidic__useGlobal), group (dicts_kanjidic)
 #. i18n: file: app/kiten.kcfg:56
 #. i18n: ectx: label, entry (deinflect__useGlobal), group (dicts_deinflect)
-#: rc.cpp:68 rc.cpp:77
+#: rc.cpp:20 rc.cpp:29
 #, fuzzy
 msgid "Use preinstalled kanjidic"
 msgstr "%1-и пеш барқарор шуда истифода кунед"
 
 #. i18n: file: app/kiten.kcfg:53
 #. i18n: ectx: label, entry (deinflect__NAMES), group (dicts_deinflect)
-#: rc.cpp:74
+#: rc.cpp:26
 #, fuzzy
 msgid "Deinflect Dictionary Files"
 msgstr "Луғатҳо"
 
 #. i18n: file: app/kiten.kcfg:67
 #. i18n: ectx: label, entry, group (Searching Options)
-#: rc.cpp:83
+#: rc.cpp:35
 msgid "Do we search for \"jiten\" on startup"
 msgstr ""
 
 #. i18n: file: app/kiten.kcfg:71
 #. i18n: ectx: label, entry, group (Searching Options)
-#: rc.cpp:86
+#: rc.cpp:38
 msgid "Case sensitive searches"
 msgstr "Ҳолати ҷустуҷӯи ҳискунанда"
 
 #. i18n: file: app/kiten.kcfg:77
 #. i18n: ectx: label, entry, group (Sorting)
-#: rc.cpp:89
+#: rc.cpp:41
 #, fuzzy
 #| msgid "&Disable Dictionary"
 msgid "Enable Sorting By Dictionary"
@@ -553,39 +458,39 @@ msgstr "&Луғат ғайри фаъол созед"
 
 #. i18n: file: app/kiten.kcfg:81
 #. i18n: ectx: label, entry, group (Sorting)
-#: rc.cpp:92
+#: rc.cpp:44
 msgid "What order do we sort the dictionaries in?"
 msgstr ""
 
 #. i18n: file: app/kiten.kcfg:85
 #. i18n: ectx: label, entry, group (Sorting)
-#: rc.cpp:95
+#: rc.cpp:47
 msgid "What order do we sort the fields in?"
 msgstr ""
 
 #. i18n: file: app/kiten.kcfg:105
 #. i18n: ectx: label, entry, group (app)
-#: rc.cpp:98
+#: rc.cpp:50
 msgid "Limit search results to \"common\" entries only?"
 msgstr ""
 
 #. i18n: file: app/kiten.kcfg:109
 #. i18n: ectx: label, entry, group (app)
-#: rc.cpp:101
+#: rc.cpp:53
 msgid ""
 "The the users last type of search, 0=Exact, 1=Match Start, 2=Match Anywhere"
 msgstr ""
 
 #. i18n: file: app/kiten.kcfg:113
 #. i18n: ectx: label, entry, group (app)
-#: rc.cpp:104
+#: rc.cpp:56
 msgid ""
 "Limit the user's word-type choices? 0:Any, Verb, Noun, Adjective, Adverb"
 msgstr ""
 
 #. i18n: file: app/kiten.kcfg:117
 #. i18n: ectx: label, entry, group (app)
-#: rc.cpp:107
+#: rc.cpp:59
 #, fuzzy
 #| msgid "&Automatically Search Clipboard Selections"
 msgid "Automatically search for clipboard entries?"
@@ -593,40 +498,83 @@ msgstr "&Интихобҳои ҷустуҷӯи автоматикӣ аз хот�
 
 #. i18n: file: app/kiten.kcfg:121
 #. i18n: ectx: label, entry, group (app)
-#: rc.cpp:110
+#: rc.cpp:62
 msgid "Enable the Deinflection checker?"
 msgstr ""
 
-#. i18n: file: app/kitenui.rc:6
-#. i18n: ectx: Menu (file)
-#: rc.cpp:113
-msgid "&File"
+#. i18n: file: app/configdictselect.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, configDictSelect)
+#: rc.cpp:65
+#, fuzzy
+msgid "Dictionary Selector"
+msgstr "&Муҳаррири Луғат..."
+
+#. i18n: file: app/configdictselect.ui:25
+#. i18n: ectx: property (text), widget (QCheckBox, __useGlobal)
+#: rc.cpp:68
+#, fuzzy
+msgid "Use prei&nstalled dict"
+msgstr "%1-и пеш барқарор шуда истифода кунед"
+
+#. i18n: file: app/configdictselect.ui:56
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
+#: rc.cpp:71
+msgid "Name"
+msgstr "Ном"
+
+#. i18n: file: app/configdictselect.ui:67
+#. i18n: ectx: property (text), widget (QTreeWidget, fileList)
+#: rc.cpp:74
+msgid "File"
 msgstr ""
 
-#. i18n: file: app/kitenui.rc:32
-#. i18n: ectx: ToolBar (mainToolbar)
-#: rc.cpp:119
+#. i18n: file: app/configdictselect.ui:86
+#. i18n: ectx: property (text), widget (QPushButton, addButton)
+#: rc.cpp:77
 #, fuzzy
-msgid "Main Toolbar"
-msgstr "Ҷустуҷӯи Пайраҳаи асбобҳо"
+msgid "&Add..."
+msgstr "Илова..."
 
-#. i18n: file: app/kitenui.rc:42
-#. i18n: ectx: ToolBar (extraToolbar)
-#: rc.cpp:122
-#, fuzzy
-msgid "Extra Toolbar"
-msgstr "Ҷустуҷӯи Пайраҳаи асбобҳо"
+#. i18n: file: app/configdictselect.ui:93
+#. i18n: ectx: property (text), widget (QPushButton, delButton)
+#: rc.cpp:80
+msgid "Delete"
+msgstr ""
 
-#. i18n: file: app/kitenui.rc:46
-#. i18n: ectx: ToolBar (searchToolbar)
-#: rc.cpp:125
+#. i18n: file: app/configsorting.ui:15
+#. i18n: ectx: property (windowTitle), widget (QWidget, configSorting)
+#: rc.cpp:83
+msgid "sorting"
+msgstr ""
+
+#. i18n: file: app/configsorting.ui:21
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_dictionary_enable)
+#: rc.cpp:86
+msgid "Sort Se&arch Results By Dictionary"
+msgstr ""
+
+#. i18n: file: app/configsorting.ui:28
+#. i18n: ectx: property (availableLabel), widget (KActionSelector, dictionary_order)
+#: rc.cpp:89
 #, fuzzy
-msgid "Search Toolbar"
-msgstr "Ҷустуҷӯи Пайраҳаи асбобҳо"
+msgid "Dicti&onaries Available:"
+msgstr "Луғатҳо"
+
+#. i18n: file: app/configsorting.ui:31
+#. i18n: ectx: property (selectedLabel), widget (KActionSelector, dictionary_order)
+#: rc.cpp:92
+msgid "Displa&y First:"
+msgstr ""
+
+#. i18n: file: app/configsorting.ui:48
+#. i18n: ectx: property (availableLabel), widget (KActionSelector, field_order)
+#: rc.cpp:95
+msgid "Fields to Sort &By:"
+msgstr ""
 
 #. i18n: file: app/configlearn.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:131
+#: rc.cpp:101
 msgid ""
 "Learn mode is disabled in this version of kiten. There are several excellent "
 "open source flashcard programs available, such as Parley in kde-edu (and "
@@ -634,61 +582,73 @@ msgid ""
 "ichi2.net/anki)"
 msgstr ""
 
-#. i18n: file: radselect/radical_selector.ui:23
-#. i18n: ectx: property (windowTitle), widget (QWidget, radical_selector)
-#: rc.cpp:134
+#. i18n: file: app/configsearching.ui:33
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_initialSearch)
+#: rc.cpp:107
 #, fuzzy
-msgid "RadicalSelector"
-msgstr "Интихобкунандаи қатъӣ"
+msgid "Search for \"jiten\" on startup"
+msgstr "Саркардани \"Омӯхтан\" вақти пурборкардани барномаи Kiten"
 
-#. i18n: file: radselect/radical_selector.ui:43
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:137
-#, fuzzy
-msgid "Results"
-msgstr "Натиҷаҳо аз %1"
-
-#. i18n: file: radselect/radical_selector.ui:104
-#. i18n: ectx: property (text), widget (QLabel, strokes_label_2)
-#: rc.cpp:140
-#, fuzzy
-msgid "Strokes:"
-msgstr "&Хатҳо"
-
-#. i18n: file: radselect/radical_selector.ui:126
-#. i18n: ectx: property (text), widget (QLabel, strokes_label)
-#: rc.cpp:143
-msgid " - "
+#. i18n: file: app/configfont.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, ConfigFont)
+#: rc.cpp:110
+msgid "Fonts"
 msgstr ""
 
-#. i18n: file: radselect/radical_selector.ui:172
-#. i18n: ectx: property (text), widget (QPushButton, clear_button)
-#: rc.cpp:146
-#, fuzzy
-msgid "Clear"
-msgstr "Омӯхтан"
-
-#. i18n: file: radselect/radselectconfig.kcfg:11
-#. i18n: ectx: label, entry, group (Options)
-#: rc.cpp:149
-msgid "Do we close this program when searching?"
+#. i18n: file: app/configfont.ui:21
+#. i18n: ectx: property (text), widget (QLabel, Listview_mainentry_label)
+#: rc.cpp:113
+msgid "Main Font"
 msgstr ""
+
+#. i18n: file: app/configfont.ui:28
+#. i18n: ectx: property (sampleText), widget (KFontRequester, kcfg_font)
+#: rc.cpp:116
+msgid "漢字 かな romaji"
+msgstr ""
+
+#. i18n: file: app/kitenui.rc:6
+#. i18n: ectx: Menu (file)
+#: rc.cpp:119
+msgid "&File"
+msgstr ""
+
+#. i18n: file: app/kitenui.rc:32
+#. i18n: ectx: ToolBar (mainToolbar)
+#: rc.cpp:125
+#, fuzzy
+msgid "Main Toolbar"
+msgstr "Ҷустуҷӯи Пайраҳаи асбобҳо"
+
+#. i18n: file: app/kitenui.rc:42
+#. i18n: ectx: ToolBar (extraToolbar)
+#: rc.cpp:128
+#, fuzzy
+msgid "Extra Toolbar"
+msgstr "Ҷустуҷӯи Пайраҳаи асбобҳо"
+
+#. i18n: file: app/kitenui.rc:46
+#. i18n: ectx: ToolBar (searchToolbar)
+#: rc.cpp:131
+#, fuzzy
+msgid "Search Toolbar"
+msgstr "Ҷустуҷӯи Пайраҳаи асбобҳо"
 
 #. i18n: file: radselect/radselectprefdialog.ui:15
 #. i18n: ectx: property (windowTitle), widget (QWidget, radselectprefdialog)
-#: rc.cpp:152
+#: rc.cpp:134
 msgid "Preferences"
 msgstr ""
 
 #. i18n: file: radselect/radselectprefdialog.ui:24
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_closeOnSearch)
-#: rc.cpp:155
+#: rc.cpp:137
 msgid "Close radselect when you press search"
 msgstr ""
 
 #. i18n: file: radselect/radselectprefdialog.ui:36
 #. i18n: ectx: property (text), widget (QLabel, fontSize_label)
-#: rc.cpp:158
+#: rc.cpp:140
 msgid "Button Font:"
 msgstr ""
 
@@ -696,7 +656,7 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QLabel, fontSize_label)
 #. i18n: file: radselect/radselectprefdialog.ui:52
 #. i18n: ectx: property (toolTip), widget (KFontRequester, kcfg_font)
-#: rc.cpp:161 rc.cpp:170
+#: rc.cpp:143 rc.cpp:152
 msgid "The font for the main kanji/kana entry in list view"
 msgstr ""
 
@@ -704,15 +664,55 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QLabel, fontSize_label)
 #. i18n: file: radselect/radselectprefdialog.ui:55
 #. i18n: ectx: property (whatsThis), widget (KFontRequester, kcfg_font)
-#: rc.cpp:164 rc.cpp:173
+#: rc.cpp:146 rc.cpp:155
 msgid "Use this to adjust the button font"
 msgstr ""
 
 #. i18n: file: radselect/radselectprefdialog.ui:49
 #. i18n: ectx: property (sampleText), widget (KFontRequester, kcfg_font)
-#: rc.cpp:167
+#: rc.cpp:149
 msgid "漢字 かな"
 msgstr ""
+
+#. i18n: file: radselect/radselectconfig.kcfg:11
+#. i18n: ectx: label, entry, group (Options)
+#: rc.cpp:158
+msgid "Do we close this program when searching?"
+msgstr ""
+
+#. i18n: file: radselect/radical_selector.ui:23
+#. i18n: ectx: property (windowTitle), widget (QWidget, radical_selector)
+#: rc.cpp:161
+#, fuzzy
+msgid "RadicalSelector"
+msgstr "Интихобкунандаи қатъӣ"
+
+#. i18n: file: radselect/radical_selector.ui:43
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:164
+#, fuzzy
+msgid "Results"
+msgstr "Натиҷаҳо аз %1"
+
+#. i18n: file: radselect/radical_selector.ui:104
+#. i18n: ectx: property (text), widget (QLabel, strokes_label_2)
+#: rc.cpp:167
+#, fuzzy
+msgid "Strokes:"
+msgstr "&Хатҳо"
+
+#. i18n: file: radselect/radical_selector.ui:126
+#. i18n: ectx: property (text), widget (QLabel, strokes_label)
+#: rc.cpp:170
+msgid " - "
+msgstr ""
+
+#. i18n: file: radselect/radical_selector.ui:172
+#. i18n: ectx: property (text), widget (QPushButton, clear_button)
+#: rc.cpp:173
+#, fuzzy
+msgid "Clear"
+msgstr "Омӯхтан"
 
 #, fuzzy
 #~| msgid "None"
