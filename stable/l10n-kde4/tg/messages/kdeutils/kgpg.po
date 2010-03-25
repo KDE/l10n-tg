@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-03-20 19:25+0100\n"
+"POT-Creation-Date: 2010-03-25 01:22+0100\n"
 "PO-Revision-Date: 2005-09-17 12:46+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -1181,12 +1181,12 @@ msgstr ""
 
 #. i18n: file: keyserver.ui:32
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: keytreeview.cpp:168 kgpgtextinterface.cpp:628 rc.cpp:298
+#: keytreeview.cpp:168 kgpgtextinterface.cpp:671 rc.cpp:298
 #, fuzzy
 msgid "Import"
 msgstr "&Воридот"
 
-#: keytreeview.cpp:169 kgpgtextinterface.cpp:628
+#: keytreeview.cpp:169 kgpgtextinterface.cpp:671
 #, fuzzy
 msgid "Do Not Import"
 msgstr "Вориди Калид"
@@ -1479,7 +1479,7 @@ msgstr ""
 "Гурӯҳи Калидҳо дуруст кор намекунанд. Марҳамат карда барномаи GnuPG-ро нав "
 "кунед (http://gnupg.org)."
 
-#: kgpginterface.cpp:415 kgpgtextinterface.cpp:108
+#: kgpginterface.cpp:415 kgpgtextinterface.cpp:135
 #: transactions/kgpgtransaction.cpp:184
 msgid " or "
 msgstr " ё "
@@ -1767,16 +1767,16 @@ msgctxt "Remove default marker from GUI if it is there"
 msgid "(Default)"
 msgstr "(Нобаён)"
 
-#: kgpgtextinterface.cpp:92
+#: kgpgtextinterface.cpp:119
 msgid "Enter passphrase (symmetrical encryption)"
 msgstr "Гузарвожаро ворид кунед (рамзкунонии симметрӣ)"
 
-#: kgpgtextinterface.cpp:106 core/KGpgRefNode.cpp:126
+#: kgpgtextinterface.cpp:133 core/KGpgRefNode.cpp:126
 #: transactions/kgpgtransaction.cpp:260
 msgid "[No user id found]"
 msgstr "[Шиносаи корванд пайдо нагардид]"
 
-#: kgpgtextinterface.cpp:112
+#: kgpgtextinterface.cpp:139
 #, fuzzy
 #| msgid "<b>No user id found</b>. Trying all secret keys.<br>"
 msgid "<p><b>No user id found</b>. Trying all secret keys.</p>"
@@ -1784,7 +1784,7 @@ msgstr ""
 "<b>Шиносаи корванд пайдо нагардид</b>. Ҳамаи калидҳои махфӣ истифода хоҳанд "
 "шуд.<br>"
 
-#: kgpgtextinterface.cpp:114 transactions/kgpgtransaction.cpp:265
+#: kgpgtextinterface.cpp:141 transactions/kgpgtransaction.cpp:265
 #, fuzzy, kde-format
 #| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
 msgid "<p><b>Bad passphrase</b>. You have 1 try left.</p>"
@@ -1792,33 +1792,33 @@ msgid_plural "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
 msgstr[0] "<b>Гузарвожаи бад</b>. Танҳо %1 кӯшиш боқӣ монд.<br>"
 msgstr[1] "<b>Гузарвожаи бад</b>. Танҳо %1 кӯшиш боқӣ монд.<br>"
 
-#: kgpgtextinterface.cpp:117
+#: kgpgtextinterface.cpp:144
 #, fuzzy
 #| msgid "Bad passphrase"
 msgid "Enter passphrase"
 msgstr "Гузарвожаи нодуруст"
 
-#: kgpgtextinterface.cpp:119 transactions/kgpgtransaction.cpp:267
+#: kgpgtextinterface.cpp:146 transactions/kgpgtransaction.cpp:267
 #, kde-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "Гузарвожаро барои <b>%1</b> ворид намоед"
 
-#: kgpgtextinterface.cpp:308
+#: kgpgtextinterface.cpp:350
 msgid "Bad MDC detected. The encrypted text has been manipulated."
 msgstr "MDC-и бад муайян гардид. Матни рамзкунонишуда дасткорӣ карда шудааст."
 
-#: kgpgtextinterface.cpp:400 kgpgtextinterface.cpp:594
-#: kgpgtextinterface.cpp:622
+#: kgpgtextinterface.cpp:443 kgpgtextinterface.cpp:637
+#: kgpgtextinterface.cpp:665
 msgid "No signature found."
 msgstr "Имзо пайдо нагардид."
 
-#: kgpgtextinterface.cpp:597
+#: kgpgtextinterface.cpp:640
 #, fuzzy, kde-format
 #| msgid "<qt>Good signature from:<br><b>%1</b><br>Key ID: %2</qt>"
 msgid "<qt>Good signature from:<br /><b>%1</b><br />Key ID: %2<br /></qt>"
 msgstr "<qt>Имзои хуб аз:<br><b>%1</b><br>Шиносаи Калид: %2</qt>"
 
-#: kgpgtextinterface.cpp:602
+#: kgpgtextinterface.cpp:645
 #, fuzzy, kde-format
 msgid ""
 "<qt><b>BAD signature</b> from:<br /> %1<br />Key id: %2<br /><br /><b>The "
@@ -1827,20 +1827,20 @@ msgstr ""
 "<qt><b>Имзои НОДУРУСТ</b> аз:<br> %1<br>Шиносаи калид: %2<br><br><b>Файл "
 "хароб гаштааст!</b></qt>"
 
-#: kgpgtextinterface.cpp:609
+#: kgpgtextinterface.cpp:652
 #, fuzzy
 #| msgid "The signature is valid, but the key is untrusted"
 msgid "<qt>The signature is valid, but the key is untrusted<br /></qt>"
 msgstr "Имзо дастрас аст аммо калид нодуруст аст"
 
-#: kgpgtextinterface.cpp:611
+#: kgpgtextinterface.cpp:654
 #, fuzzy
 #| msgid "The signature is valid, and the key is ultimately trusted"
 msgid ""
 "<qt>The signature is valid, and the key is ultimately trusted<br /></qt>"
 msgstr "Имзо дастрас аст ва калид қатъӣ дуруст аст"
 
-#: kgpgtextinterface.cpp:627 editor/kgpgtextedit.cpp:384
+#: kgpgtextinterface.cpp:670 editor/kgpgtextedit.cpp:384
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
