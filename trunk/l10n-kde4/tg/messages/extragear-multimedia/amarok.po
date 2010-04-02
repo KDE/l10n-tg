@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-01 05:16+0200\n"
+"POT-Creation-Date: 2010-04-02 05:08+0200\n"
 "PO-Revision-Date: 2009-01-20 18:25+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -1072,9 +1072,9 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, eqBand8Value)
 #. i18n: file: dialogs/EqualizerDialog.ui:1226
 #. i18n: ectx: property (text), widget (QLabel, eqBand9Value)
-#: core/support/Amarok.cpp:142 rc.cpp:1485 rc.cpp:1491 rc.cpp:1497 rc.cpp:1503
-#: rc.cpp:1509 rc.cpp:1515 rc.cpp:1521 rc.cpp:1527 rc.cpp:1533 rc.cpp:1539
-#: rc.cpp:1545
+#: core/support/Amarok.cpp:142 rc.cpp:1404 rc.cpp:1410 rc.cpp:1416 rc.cpp:1422
+#: rc.cpp:1428 rc.cpp:1434 rc.cpp:1440 rc.cpp:1446 rc.cpp:1452 rc.cpp:1458
+#: rc.cpp:1464
 msgid "0"
 msgstr ""
 
@@ -1576,7 +1576,7 @@ msgstr ""
 #. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:21
 #. i18n: ectx: property (windowTitle), widget (QWidget, OrganizeCollectionDialogBase)
 #: core-impl/collections/sqlcollection/SqlCollectionLocation.cpp:228
-#: rc.cpp:1091
+#: rc.cpp:1470
 msgid "Organize Files"
 msgstr ""
 
@@ -1631,6 +1631,17 @@ msgstr ""
 msgid "%1 - %2"
 msgstr ""
 
+#: core-impl/collections/support/CollectionManager.cpp:162
+msgid ""
+"<p>Amarok could not find any collection plugins. It is possible that Amarok "
+"is installed under the wrong prefix, please fix your installation using:<pre>"
+"$ cd /path/to/amarok/source-code/<br>$ su -c \"make uninstall\"<br>$ cmake -"
+"DCMAKE_INSTALL_PREFIX=`kde4-config --prefix` && su -c \"make install\"<br>$ "
+"kbuildsycoca4 --noincremental<br>$ amarok</pre>More information can be found "
+"in the README file. For further assistance join us at #amarok on irc."
+"freenode.net.</p>"
+msgstr ""
+
 #: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:38
 #, kde-format
 msgctxt "@info"
@@ -1649,13 +1660,20 @@ msgstr ""
 
 #: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:56
 #, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Do you really want to move this track? It will be renamed and the "
+#| "original deleted."
+#| msgid_plural ""
+#| "Do you really want to move these %1 tracks? They will be renamed and the "
+#| "originals deleted"
 msgctxt "@info"
 msgid ""
 "Do you really want to move this track? It will be renamed and the original "
 "deleted."
 msgid_plural ""
 "Do you really want to move these %1 tracks? They will be renamed and the "
-"originals deleted"
+"originals deleted."
 msgstr[0] ""
 msgstr[1] ""
 
@@ -1684,17 +1702,6 @@ msgid ""
 "The collection does not have enough free space available or is not writeable."
 msgstr ""
 
-#: core-impl/collections/support/CollectionManager.cpp:162
-msgid ""
-"<p>Amarok could not find any collection plugins. It is possible that Amarok "
-"is installed under the wrong prefix, please fix your installation using:<pre>"
-"$ cd /path/to/amarok/source-code/<br>$ su -c \"make uninstall\"<br>$ cmake -"
-"DCMAKE_INSTALL_PREFIX=`kde4-config --prefix` && su -c \"make install\"<br>$ "
-"kbuildsycoca4 --noincremental<br>$ amarok</pre>More information can be found "
-"in the README file. For further assistance join us at #amarok on irc."
-"freenode.net.</p>"
-msgstr ""
-
 #: core-impl/collections/umscollection/handler/UmsHandler.cpp:476
 msgid "&Use as Collection"
 msgstr ""
@@ -1708,32 +1715,32 @@ msgstr ""
 msgid "Configure USB Mass Storage Device"
 msgstr ""
 
-#: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:182
+#: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:181
 #, fuzzy
 #| msgid "tracks"
 msgid "&Delete Episode"
 msgstr "роҳчаҳо"
 
-#: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:252
+#: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:251
 #: browsers/filebrowser/FileView.cpp:456
-#: playlistmanager/file/PlaylistFileProvider.cpp:272
-#: playlistmanager/sql/SqlUserPlaylistProvider.cpp:239
+#: playlistmanager/file/PlaylistFileProvider.cpp:271
+#: playlistmanager/sql/SqlUserPlaylistProvider.cpp:238
 msgid "Confirm Delete"
 msgstr ""
 
-#: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:254
+#: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:253
 #, kde-format
 msgid "Are you sure you want to delete this episode?"
 msgid_plural "Are you sure you want to delete these %1 episodes?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:270
+#: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:269
 #, kde-format
 msgid "Yes, delete from %1."
 msgstr ""
 
-#: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:326
+#: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:325
 msgid "&Delete Channel and Episodes"
 msgstr ""
 
@@ -1910,7 +1917,7 @@ msgstr ""
 #: TrayIcon.cpp:136 browsers/playlistbrowser/DynamicBiasWidgets.cpp:256
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:695
 #: context/applets/currenttrack/CurrentTrack.cpp:124
-#: context/applets/currenttrack/CurrentTrack.cpp:575 rc.cpp:1359
+#: context/applets/currenttrack/CurrentTrack.cpp:575 rc.cpp:1278
 #: playlist/PlaylistModel.cpp:711 widgets/SmartPlaylistEditor.cpp:185
 #: TrayIconLegacy.cpp:154
 msgid "Score"
@@ -1919,7 +1926,7 @@ msgstr ""
 #. i18n: file: dialogs/EditFilterDialog.ui:110
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
 #: TrayIcon.cpp:154 browsers/playlistbrowser/DynamicBiasWidgets.cpp:255
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:694 rc.cpp:1353
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:694 rc.cpp:1272
 #: playlist/PlaylistModel.cpp:712 playlist/ProgressiveSearchWidget.cpp:112
 #: widgets/SmartPlaylistEditor.cpp:185 TrayIconLegacy.cpp:172
 msgid "Rating"
@@ -2411,7 +2418,7 @@ msgstr ""
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:250
 #: context/applets/wikipedia/WikipediaApplet.cpp:127
 #: dialogs/FilenameLayoutDialog.cpp:231 dialogs/FilenameLayoutDialog.cpp:577
-#: dialogs/transferdialog.cpp:89 rc.cpp:1335
+#: dialogs/transferdialog.cpp:89 rc.cpp:1254
 #: playlist/view/PlaylistViewCommon.cpp:66 playlist/PlaylistModel.cpp:700
 #: playlist/PlaylistHeader.cpp:40 services/jamendo/JamendoInfoParser.cpp:83
 #: services/magnatune/MagnatuneStore.cpp:221
@@ -2428,7 +2435,7 @@ msgstr ""
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:248
 #: context/applets/wikipedia/WikipediaApplet.cpp:120
 #: dialogs/FilenameLayoutDialog.cpp:219 dialogs/FilenameLayoutDialog.cpp:556
-#: dialogs/transferdialog.cpp:88 rc.cpp:1338 playlist/PlaylistModel.cpp:696
+#: dialogs/transferdialog.cpp:88 rc.cpp:1257 playlist/PlaylistModel.cpp:696
 #: playlist/PlaylistHeader.cpp:40 services/jamendo/JamendoInfoParser.cpp:51
 #: services/lastfm/LastFmService.cpp:537
 #: services/magnatune/MagnatuneStore.cpp:215
@@ -2444,7 +2451,7 @@ msgstr ""
 #: browsers/collectionbrowser/CollectionWidget.cpp:191
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:249
 #: dialogs/FilenameLayoutDialog.cpp:223 dialogs/FilenameLayoutDialog.cpp:563
-#: rc.cpp:1344 playlist/PlaylistModel.cpp:698
+#: rc.cpp:1263 playlist/PlaylistModel.cpp:698
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
 msgid "Composer"
 msgstr ""
@@ -2457,7 +2464,7 @@ msgstr ""
 #: browsers/collectionbrowser/CollectionWidget.cpp:188
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:252
 #: dialogs/FilenameLayoutDialog.cpp:239 dialogs/FilenameLayoutDialog.cpp:591
-#: dialogs/transferdialog.cpp:90 rc.cpp:1347 playlist/PlaylistModel.cpp:704
+#: dialogs/transferdialog.cpp:90 rc.cpp:1266 playlist/PlaylistModel.cpp:704
 #: playlist/ProgressiveSearchWidget.cpp:98 widgets/SmartPlaylistEditor.cpp:183
 #: widgets/SmartPlaylistEditor.cpp:197
 msgid "Genre"
@@ -2469,7 +2476,7 @@ msgstr ""
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:253
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:692
 #: dialogs/FilenameLayoutDialog.cpp:227 dialogs/FilenameLayoutDialog.cpp:570
-#: rc.cpp:1368 playlist/PlaylistModel.cpp:699
+#: rc.cpp:1287 playlist/PlaylistModel.cpp:699
 #: widgets/SmartPlaylistEditor.cpp:184 widgets/SmartPlaylistEditor.cpp:197
 #: widgets/SmartPlaylistEditor.cpp:921
 msgid "Year"
@@ -2612,7 +2619,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: browsers/filebrowser/FileView.cpp:463
-#: playlistmanager/file/PlaylistFileProvider.cpp:279
+#: playlistmanager/file/PlaylistFileProvider.cpp:278
 msgid "Yes, delete from disk."
 msgstr ""
 
@@ -2648,7 +2655,7 @@ msgstr[1] ""
 #: browsers/playlistbrowser/PodcastModel.cpp:371
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:251
 #: dialogs/FilenameLayoutDialog.cpp:215 dialogs/FilenameLayoutDialog.cpp:542
-#: rc.cpp:1362 playlist/PlaylistModel.cpp:695
+#: rc.cpp:1281 playlist/PlaylistModel.cpp:695
 #: widgets/SmartPlaylistEditor.cpp:183
 msgid "Title"
 msgstr ""
@@ -3136,7 +3143,7 @@ msgstr ""
 #: context/applets/photos/PhotosApplet.cpp:134
 #: context/applets/similarartists/SimilarArtistsApplet.cpp:261
 #: context/engines/current/CurrentEngine.cpp:150 mac/GrowlInterface.cpp:39
-#: EngineController.cpp:1307 widgets/Osd.cpp:580
+#: EngineController.cpp:1313 widgets/Osd.cpp:580
 msgid "No track playing"
 msgstr "Сурудро интихоб намо!"
 
@@ -3383,7 +3390,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
 #: context/applets/wikipedia/WikipediaApplet.cpp:134
 #: dialogs/FilenameLayoutDialog.cpp:211 dialogs/FilenameLayoutDialog.cpp:549
-#: rc.cpp:1365 services/jamendo/JamendoInfoParser.cpp:109
+#: rc.cpp:1284 services/jamendo/JamendoInfoParser.cpp:109
 msgid "Track"
 msgstr ""
 
@@ -3865,12 +3872,6 @@ msgstr ""
 msgid "Hide menu"
 msgstr ""
 
-#: context/widgets/RatingWidget.cpp:66 context/widgets/RatingWidget.cpp:217
-#: context/widgets/RatingWidget.cpp:243
-#, kde-format
-msgid "Track rating: %1"
-msgstr ""
-
 #: context/widgets/TrackWidget.cpp:39
 msgctxt "Score of a track"
 msgid "Score:"
@@ -3879,6 +3880,12 @@ msgstr ""
 #: context/widgets/TrackWidget.cpp:138
 #, kde-format
 msgid "%1 - %2 (%3)"
+msgstr ""
+
+#: context/widgets/RatingWidget.cpp:68 context/widgets/RatingWidget.cpp:219
+#: context/widgets/RatingWidget.cpp:245
+#, kde-format
+msgid "Track rating: %1"
 msgstr ""
 
 #: context/LyricsManager.cpp:111
@@ -4982,13 +4989,13 @@ msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:619
 #. i18n: ectx: property (text), widget (QLabel, scoreLabel)
-#: dialogs/TagDialog.cpp:1027 rc.cpp:1250
+#: dialogs/TagDialog.cpp:1027 rc.cpp:1169
 msgid "Score:"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:648
 #. i18n: ectx: property (text), widget (QLabel, ratingLabel)
-#: dialogs/TagDialog.cpp:1029 rc.cpp:1253
+#: dialogs/TagDialog.cpp:1029 rc.cpp:1172
 msgid "Rating:"
 msgstr ""
 
@@ -7139,175 +7146,9 @@ msgstr ""
 msgid "Genre:"
 msgstr ""
 
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:38
-#. i18n: ectx: property (toolTip), widget (QLabel, folderLabel)
-#: rc.cpp:1094
-msgid "Base directory under which to put files"
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:41
-#. i18n: ectx: property (text), widget (QLabel, folderLabel)
-#: rc.cpp:1097
-msgid "C&ollection Folder:"
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:69
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:1100
-msgid "Character Replacement"
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:75
-#. i18n: ectx: property (toolTip), widget (QCheckBox, spaceCheck)
-#: rc.cpp:1103
-msgid "If checked, convert spaces to underscores."
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:78
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, spaceCheck)
-#: rc.cpp:1106
-msgid ""
-"If checked all spaces will be replaced with underscores in the file names. "
-"If not, spaces will be left as they are."
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:81
-#. i18n: ectx: property (text), widget (QCheckBox, spaceCheck)
-#: rc.cpp:1109
-msgid "Replace spaces with &underscores"
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:88
-#. i18n: ectx: property (toolTip), widget (QCheckBox, ignoreTheCheck)
-#: rc.cpp:1112
-msgid "If checked, postfix artists' names starting with 'The' with ', The'."
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:91
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, ignoreTheCheck)
-#: rc.cpp:1115
-msgid ""
-"If checked all artists that have the word \"The\" at the beginning will be "
-"treated as if the \"The\" was not there. Example, \"The Beatles\" would "
-"become \"Beatles, The\""
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:94
-#. i18n: ectx: property (text), widget (QCheckBox, ignoreTheCheck)
-#: rc.cpp:1118
-msgid "I&gnore 'The' in artist names"
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:101
-#. i18n: ectx: property (toolTip), widget (QCheckBox, asciiCheck)
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:104
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, asciiCheck)
-#: rc.cpp:1121 rc.cpp:1124
-msgid ""
-"If checked all non-ASCII characters will be replaced with underscores. Do "
-"not check this option if you have non-english characters in your tags. Most "
-"people can leave this option unchecked."
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:107
-#. i18n: ectx: property (text), widget (QCheckBox, asciiCheck)
-#: rc.cpp:1127
-msgid "Restrict to &ASCII"
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:114
-#. i18n: ectx: property (toolTip), widget (QCheckBox, vfatCheck)
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:117
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, vfatCheck)
-#: rc.cpp:1130 rc.cpp:1133
-msgid ""
-"If checked, replace characters that are incompatible with MS-DOS/VFAT file "
-"systems with underscores. Incompatible characters include |?*<\":>+[] and "
-"unicode control characters. Most people can leave this option enabled as it "
-"ensures copying to media devices will function correctly."
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:120
-#. i18n: ectx: property (text), widget (QCheckBox, vfatCheck)
-#: rc.cpp:1136
-msgid "&VFAT safe names"
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:142
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:1139
-msgid "Replace"
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:152
-#. i18n: ectx: property (toolTip), widget (KLineEdit, regexpEdit)
-#: rc.cpp:1142
-msgid "Regular expression"
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:159
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:1145
-msgid "with"
-msgstr "бо"
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:169
-#. i18n: ectx: property (toolTip), widget (KLineEdit, replaceEdit)
-#: rc.cpp:1148
-msgid "Character string"
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:187
-#. i18n: ectx: property (title), widget (QGroupBox, previewBox)
-#: rc.cpp:1151
-msgid "Destination Preview"
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:197
-#. i18n: ectx: property (text), widget (QTableWidget, previewTableWidget)
-#: rc.cpp:1154
-msgid "Original"
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:202
-#. i18n: ectx: property (text), widget (QTableWidget, previewTableWidget)
-#. i18n: file: playlist/layouts/PlaylistLayoutEditDialog.ui:336
-#. i18n: ectx: property (text), widget (QPushButton, previewButton)
-#: rc.cpp:1157 rc.cpp:1572
-#, fuzzy
-#| msgid "&Previous"
-msgid "Preview"
-msgstr "&Пешина"
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:216
-#. i18n: ectx: property (toolTip), widget (QLabel, previewText)
-#: rc.cpp:1160
-msgid "This is what the file names will look like after renaming."
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:257
-#. i18n: ectx: property (toolTip), widget (QCheckBox, overwriteCheck)
-#: rc.cpp:1163
-msgid "If checked, overwrite files of the same name without asking."
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:260
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, overwriteCheck)
-#: rc.cpp:1166
-msgid ""
-"Check this to overwrite files of the same name automatically. (Warning: "
-"Overwriting is not undoable)"
-msgstr ""
-
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:263
-#. i18n: ectx: property (text), widget (QCheckBox, overwriteCheck)
-#: rc.cpp:1169
-msgid "Overwrite &Destination"
-msgstr ""
-
 #. i18n: file: dialogs/ScriptManagerBase.ui:29
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1172
+#: rc.cpp:1091
 msgid "Installed Amarok Scripts:"
 msgstr ""
 
@@ -7315,7 +7156,7 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AutoUpdateScripts)
 #. i18n: file: dialogs/ScriptManagerBase.ui:49
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutoUpdateScripts)
-#: rc.cpp:1175 rc.cpp:1178
+#: rc.cpp:1094 rc.cpp:1097
 msgid ""
 "Automatically download and install updates for the built-in scripts from the "
 "Amarok website if available"
@@ -7323,43 +7164,43 @@ msgstr ""
 
 #. i18n: file: dialogs/ScriptManagerBase.ui:52
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoUpdateScripts)
-#: rc.cpp:1181
+#: rc.cpp:1100
 msgid "Automatically update built-in scripts"
 msgstr ""
 
 #. i18n: file: dialogs/ScriptManagerBase.ui:67
 #. i18n: ectx: property (text), widget (QPushButton, installButton)
-#: rc.cpp:1184
+#: rc.cpp:1103
 msgid "&Install Script"
 msgstr ""
 
 #. i18n: file: dialogs/ScriptManagerBase.ui:80
 #. i18n: ectx: property (text), widget (QPushButton, uninstallButton)
-#: rc.cpp:1187
+#: rc.cpp:1106
 msgid "&Uninstall"
 msgstr ""
 
 #. i18n: file: dialogs/ScriptManagerBase.ui:93
 #. i18n: ectx: property (text), widget (QPushButton, retrieveButton)
-#: rc.cpp:1190
+#: rc.cpp:1109
 msgid "&Get More Scripts"
 msgstr ""
 
 #. i18n: file: dialogs/ScriptManagerBase.ui:113
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
-#: rc.cpp:1193
+#: rc.cpp:1112
 msgid "&OK"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, TagDialogBase)
-#: rc.cpp:1196
+#: rc.cpp:1115
 msgid "Track Information"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:38
 #. i18n: ectx: attribute (title), widget (QWidget, summaryTab)
-#: rc.cpp:1199
+#: rc.cpp:1118
 msgid "S&ummary"
 msgstr ""
 
@@ -7367,115 +7208,115 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, trackArtistAlbumLabel)
 #. i18n: file: dialogs/TagDialogBase.ui:588
 #. i18n: ectx: property (text), widget (QLabel, trackArtistAlbumLabel2)
-#: rc.cpp:1202 rc.cpp:1247
+#: rc.cpp:1121 rc.cpp:1166
 msgid "Track by Artist on Album"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:155
 #. i18n: ectx: attribute (title), widget (QWidget, tagsTab)
-#: rc.cpp:1205
+#: rc.cpp:1124
 msgid "Ta&gs"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:161
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:1208
+#: rc.cpp:1127
 msgid "T&itle:"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:177
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:1211
+#: rc.cpp:1130
 msgid "&Artist:"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:206
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3_2)
-#: rc.cpp:1214
+#: rc.cpp:1133
 msgid "&Composer:"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:232
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
-#: rc.cpp:1217
+#: rc.cpp:1136
 msgid "Al&bum:"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:274
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3_2_2)
-#: rc.cpp:1220
+#: rc.cpp:1139
 msgid "&Disc Number:"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:363
 #. i18n: ectx: property (text), widget (QLabel, textLabel_BPM)
-#: rc.cpp:1223
+#: rc.cpp:1142
 msgid "B&eats Per Minute:"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:437
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_4)
-#: rc.cpp:1226
+#: rc.cpp:1145
 msgid "&Genre:"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:450
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_6_6)
-#: rc.cpp:1229
+#: rc.cpp:1148
 msgid "Trac&k:"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:487
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_5)
-#: rc.cpp:1232
+#: rc.cpp:1151
 msgid "&Year:"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:521
 #. i18n: ectx: property (text), widget (QLabel, textLabel_comment)
-#: rc.cpp:1235
+#: rc.cpp:1154
 msgid "Co&mment:"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:545
 #. i18n: ectx: property (text), widget (QPushButton, pushButton_guessTags)
-#: rc.cpp:1238
+#: rc.cpp:1157
 msgid "Guess Tags From &Filename"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:555
 #. i18n: ectx: attribute (title), widget (QWidget, lyricsTab)
-#: rc.cpp:1241
+#: rc.cpp:1160
 msgid "L&yrics"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:572
 #. i18n: ectx: attribute (title), widget (QWidget, statisticsTab)
-#: rc.cpp:1244
+#: rc.cpp:1163
 msgid "St&atistics"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:723
 #. i18n: ectx: attribute (title), widget (QWidget, labelsTab)
-#: rc.cpp:1256
+#: rc.cpp:1175
 msgid "La&bels"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:739
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1259
+#: rc.cpp:1178
 msgid "Label:"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:749
 #. i18n: ectx: property (toolTip), widget (KComboBox, kComboBox_label)
-#: rc.cpp:1262
+#: rc.cpp:1181
 msgid "Insert your custom label here or select one from the list."
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:780
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:1265
+#: rc.cpp:1184
 msgid "Custom labels for this item:"
 msgstr ""
 
@@ -7483,7 +7324,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, addButton)
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:91
 #. i18n: ectx: property (text), widget (KPushButton, addButton)
-#: rc.cpp:1268 rc.cpp:1593
+#: rc.cpp:1187 rc.cpp:1593
 msgid "Add"
 msgstr ""
 
@@ -7491,37 +7332,37 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, removeButton)
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:98
 #. i18n: ectx: property (text), widget (KPushButton, removeButton)
-#: rc.cpp:1271 rc.cpp:1596 playlistmanager/file/PlaylistFileProvider.cpp:157
+#: rc.cpp:1190 rc.cpp:1596 playlistmanager/file/PlaylistFileProvider.cpp:156
 msgid "Remove"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:854
 #. i18n: ectx: property (text), widget (QLabel, locationLabel)
-#: rc.cpp:1274
+#: rc.cpp:1193
 msgid "Location:"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:894
 #. i18n: ectx: property (text), widget (QPushButton, pushButton_previous)
-#: rc.cpp:1277 playlist/ProgressiveSearchWidget.cpp:66
+#: rc.cpp:1196 playlist/ProgressiveSearchWidget.cpp:66
 msgid "&Previous"
 msgstr "&Пешина"
 
 #. i18n: file: dialogs/TagDialogBase.ui:904
 #. i18n: ectx: property (text), widget (QPushButton, pushButton_next)
-#: rc.cpp:1280 playlist/ProgressiveSearchWidget.cpp:63
+#: rc.cpp:1199 playlist/ProgressiveSearchWidget.cpp:63
 msgid "&Next"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:911
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox_perTrack)
-#: rc.cpp:1283
+#: rc.cpp:1202
 msgid "Per Trac&k"
 msgstr ""
 
 #. i18n: file: dialogs/TagDialogBase.ui:934
 #. i18n: ectx: property (text), widget (QPushButton, pushButton_ok)
-#: rc.cpp:1286
+#: rc.cpp:1205
 msgid "Sa&ve && Close"
 msgstr ""
 
@@ -7529,49 +7370,49 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, pushButton_cancel)
 #. i18n: file: services/magnatune/MagnatuneRedownloadDialogBase.ui:36
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: rc.cpp:1289 rc.cpp:1681 TrayIconLegacy.cpp:224
+#: rc.cpp:1208 rc.cpp:1681 TrayIconLegacy.cpp:224
 msgid "&Cancel"
 msgstr ""
 
 #. i18n: file: dialogs/deletedialogbase.ui:41
 #. i18n: ectx: property (text), widget (QLabel, ddWarningIcon)
-#: rc.cpp:1292
+#: rc.cpp:1211
 msgid "Icon Placeholder, not in GUI"
 msgstr ""
 
 #. i18n: file: dialogs/deletedialogbase.ui:56
 #. i18n: ectx: property (text), widget (QLabel, ddDeleteText)
-#: rc.cpp:1295
+#: rc.cpp:1214
 msgid "Deletion method placeholder, never shown to user."
 msgstr ""
 
 #. i18n: file: dialogs/deletedialogbase.ui:79
 #. i18n: ectx: property (toolTip), widget (K3ListBox, ddFileList)
-#: rc.cpp:1298
+#: rc.cpp:1217
 msgid "List of files that are about to be deleted."
 msgstr ""
 
 #. i18n: file: dialogs/deletedialogbase.ui:82
 #. i18n: ectx: property (whatsThis), widget (K3ListBox, ddFileList)
-#: rc.cpp:1301
+#: rc.cpp:1220
 msgid "This is the list of items that are about to be deleted."
 msgstr ""
 
 #. i18n: file: dialogs/deletedialogbase.ui:89
 #. i18n: ectx: property (text), widget (QLabel, ddNumFiles)
-#: rc.cpp:1304
+#: rc.cpp:1223
 msgid "Placeholder for number of files, not in GUI"
 msgstr ""
 
 #. i18n: file: dialogs/deletedialogbase.ui:102
 #. i18n: ectx: property (text), widget (QCheckBox, ddShouldDelete)
-#: rc.cpp:1307
+#: rc.cpp:1226
 msgid "&Delete files instead of moving them to the trash"
 msgstr ""
 
 #. i18n: file: dialogs/deletedialogbase.ui:105
 #. i18n: ectx: property (toolTip), widget (QCheckBox, ddShouldDelete)
-#: rc.cpp:1310
+#: rc.cpp:1229
 msgid ""
 "If checked, files will be permanently removed instead of being placed in the "
 "Trash Bin"
@@ -7579,7 +7420,7 @@ msgstr ""
 
 #. i18n: file: dialogs/deletedialogbase.ui:110
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, ddShouldDelete)
-#: rc.cpp:1313
+#: rc.cpp:1232
 msgid ""
 "<qt><p>If this box is checked, files will be <b>permanently removed</b> "
 "instead of being placed in the Trash Bin.</p>\n"
@@ -7590,7 +7431,7 @@ msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:41
 #. i18n: ectx: property (text), widget (QLabel, mainLabel)
-#: rc.cpp:1318
+#: rc.cpp:1237
 msgid ""
 "Edit the filter for finding tracks with specific attributes, e.g. a track "
 "that has a length of three minutes."
@@ -7598,7 +7439,7 @@ msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:58
 #. i18n: ectx: property (whatsThis), widget (QLabel, attributeLabel)
-#: rc.cpp:1321
+#: rc.cpp:1240
 msgctxt "you can translate the keyword as you will do for the combobox"
 msgid ""
 "<p>Here you can choose to <i>Simple Search</i> directly or to use some "
@@ -7621,31 +7462,31 @@ msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:61
 #. i18n: ectx: property (text), widget (QLabel, attributeLabel)
-#: rc.cpp:1326
+#: rc.cpp:1245
 msgid "Attribute"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:71
 #. i18n: ectx: property (toolTip), widget (KComboBox, keywordCombo)
-#: rc.cpp:1329
+#: rc.cpp:1248
 msgid "Select an attribute for the filter"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:75
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
-#: rc.cpp:1332
+#: rc.cpp:1251
 msgid "Simple Search"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:90
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
-#: rc.cpp:1341
+#: rc.cpp:1260
 msgid "Bit Rate"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:105
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
-#: rc.cpp:1350
+#: rc.cpp:1269
 #, fuzzy
 #| msgid "Settings"
 msgid "Playcount"
@@ -7653,56 +7494,56 @@ msgstr "Хизматҳо"
 
 #. i18n: file: dialogs/EditFilterDialog.ui:115
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
-#: rc.cpp:1356 playlist/PlaylistModel.cpp:710
+#: rc.cpp:1275 playlist/PlaylistModel.cpp:710
 msgid "Sample Rate"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:140
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
-#: rc.cpp:1371 playlist/PlaylistModel.cpp:703
+#: rc.cpp:1290 playlist/PlaylistModel.cpp:703
 #: widgets/SmartPlaylistEditor.cpp:187
 msgid "BPM"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:148
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, editKeywordBox)
-#: rc.cpp:1374
+#: rc.cpp:1293
 msgid "<p>Type the attribute value or the text to look for here.</p>"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:169
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1377
+#: rc.cpp:1296
 msgid "Attribute value is"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:191
 #. i18n: ectx: property (text), item, widget (KComboBox, conditionCombo)
-#: rc.cpp:1380
+#: rc.cpp:1299
 msgid "Equal To"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:196
 #. i18n: ectx: property (text), item, widget (KComboBox, conditionCombo)
-#: rc.cpp:1383
+#: rc.cpp:1302
 msgid "Smaller Than"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:201
 #. i18n: ectx: property (text), item, widget (KComboBox, conditionCombo)
-#: rc.cpp:1386
+#: rc.cpp:1305
 msgid "Larger Than"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:206
 #. i18n: ectx: property (text), item, widget (KComboBox, conditionCombo)
-#: rc.cpp:1389
+#: rc.cpp:1308
 msgid "Between"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:221
 #. i18n: ectx: property (text), widget (QLabel, andLabel)
-#: rc.cpp:1392 widgets/SmartPlaylistEditor.cpp:934
+#: rc.cpp:1311 widgets/SmartPlaylistEditor.cpp:934
 #: widgets/SmartPlaylistEditor.cpp:956 widgets/SmartPlaylistEditor.cpp:984
 #: widgets/SmartPlaylistEditor.cpp:1003
 msgid "and"
@@ -7710,13 +7551,13 @@ msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:254
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:1395
+#: rc.cpp:1314
 msgid "Filter Action"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:260
 #. i18n: ectx: property (toolTip), widget (QRadioButton, matchAll)
-#: rc.cpp:1398
+#: rc.cpp:1317
 msgid ""
 "Check this box to look for the tracks that contain all the words you typed "
 "in the related Simple Search edit box"
@@ -7724,13 +7565,13 @@ msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:263
 #. i18n: ectx: property (text), widget (QRadioButton, matchAll)
-#: rc.cpp:1401
+#: rc.cpp:1320
 msgid "Match all words"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:270
 #. i18n: ectx: property (toolTip), widget (QRadioButton, matchAny)
-#: rc.cpp:1404
+#: rc.cpp:1323
 msgid ""
 "Check this box to look for the tracks that contain at least one of the words "
 "you typed in the related Simple Search edit box"
@@ -7738,13 +7579,13 @@ msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:273
 #. i18n: ectx: property (text), widget (QRadioButton, matchAny)
-#: rc.cpp:1407
+#: rc.cpp:1326
 msgid "Match any word"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:280
 #. i18n: ectx: property (toolTip), widget (QRadioButton, matchLiteral)
-#: rc.cpp:1410
+#: rc.cpp:1329
 msgid ""
 "Check this box to look for all the tracks that contain exactly the words you "
 "typed in the related Simple Search edit box"
@@ -7752,13 +7593,13 @@ msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:283
 #. i18n: ectx: property (text), widget (QRadioButton, matchLiteral)
-#: rc.cpp:1413
+#: rc.cpp:1332
 msgid "Exact match"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:290
 #. i18n: ectx: property (toolTip), widget (QRadioButton, matchNot)
-#: rc.cpp:1416
+#: rc.cpp:1335
 msgid ""
 "Check this box to look for all the tracks that do not contain the words you "
 "typed in the related Simple Search edit box"
@@ -7766,19 +7607,19 @@ msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:293
 #. i18n: ectx: property (text), widget (QRadioButton, matchNot)
-#: rc.cpp:1419
+#: rc.cpp:1338
 msgid "Exclude"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:315
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:1422
+#: rc.cpp:1341
 msgid "Appending Condition"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:321
 #. i18n: ectx: property (toolTip), widget (QRadioButton, andButton)
-#: rc.cpp:1425
+#: rc.cpp:1344
 msgid ""
 "Check this box if you want to add another condition and you want that the "
 "filter to match both the previous conditions and this new one"
@@ -7786,13 +7627,13 @@ msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:324
 #. i18n: ectx: property (text), widget (QRadioButton, andButton)
-#: rc.cpp:1428
+#: rc.cpp:1347
 msgid "AND"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:331
 #. i18n: ectx: property (toolTip), widget (QRadioButton, orButton)
-#: rc.cpp:1431
+#: rc.cpp:1350
 msgid ""
 "Check this box if you want to add another condition and you want that the "
 "filter to match either the previous conditions or this new one"
@@ -7800,19 +7641,19 @@ msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:334
 #. i18n: ectx: property (text), widget (QRadioButton, orButton)
-#: rc.cpp:1434
+#: rc.cpp:1353
 msgid "OR"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:344
 #. i18n: ectx: property (toolTip), widget (QCheckBox, invertButton)
-#: rc.cpp:1437
+#: rc.cpp:1356
 msgid "Check this box to negate the defined filter condition"
 msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:347
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, invertButton)
-#: rc.cpp:1440
+#: rc.cpp:1359
 msgid ""
 "<p>If this option is checked the defined filter condition will be negated. "
 "This means that, for example, you can define a filter that looks for all "
@@ -7821,43 +7662,43 @@ msgstr ""
 
 #. i18n: file: dialogs/EditFilterDialog.ui:350
 #. i18n: ectx: property (text), widget (QCheckBox, invertButton)
-#: rc.cpp:1443
+#: rc.cpp:1362
 msgid "Invert condition"
 msgstr ""
 
 #. i18n: file: dialogs/EqualizerDialog.ui:23
 #. i18n: ectx: property (title), widget (QGroupBox, EqualizerGroupBox)
-#: rc.cpp:1446
+#: rc.cpp:1365
 msgid "Sound Equalizer"
 msgstr ""
 
 #. i18n: file: dialogs/EqualizerDialog.ui:47
 #. i18n: ectx: property (toolTip), widget (QComboBox, eqPresets)
-#: rc.cpp:1449
+#: rc.cpp:1368
 msgid "List of available equalizer presets."
 msgstr ""
 
 #. i18n: file: dialogs/EqualizerDialog.ui:63
 #. i18n: ectx: property (toolTip), widget (QPushButton, eqPresetSaveBtn)
-#: rc.cpp:1452
+#: rc.cpp:1371
 msgid "Save changes of currently selected preset"
 msgstr ""
 
 #. i18n: file: dialogs/EqualizerDialog.ui:66
 #. i18n: ectx: property (text), widget (QPushButton, eqPresetSaveBtn)
-#: rc.cpp:1455
+#: rc.cpp:1374
 msgid "Save"
 msgstr ""
 
 #. i18n: file: dialogs/EqualizerDialog.ui:79
 #. i18n: ectx: property (toolTip), widget (QPushButton, eqPresetDeleteBtn)
-#: rc.cpp:1458
+#: rc.cpp:1377
 msgid "Delete currently selected preset. Not available for built-in presets."
 msgstr ""
 
 #. i18n: file: dialogs/EqualizerDialog.ui:82
 #. i18n: ectx: property (text), widget (QPushButton, eqPresetDeleteBtn)
-#: rc.cpp:1461
+#: rc.cpp:1380
 #, fuzzy
 #| msgid "tracks"
 msgid "Delete Preset"
@@ -7865,7 +7706,7 @@ msgstr "роҳчаҳо"
 
 #. i18n: file: dialogs/EqualizerDialog.ui:95
 #. i18n: ectx: property (toolTip), widget (QPushButton, eqPresetResetBtn)
-#: rc.cpp:1464
+#: rc.cpp:1383
 msgid ""
 "Reset selected preset setting to default. Available only for built-in "
 "presets."
@@ -7873,7 +7714,7 @@ msgstr ""
 
 #. i18n: file: dialogs/EqualizerDialog.ui:98
 #. i18n: ectx: property (text), widget (QPushButton, eqPresetResetBtn)
-#: rc.cpp:1467
+#: rc.cpp:1386
 #, fuzzy
 #| msgid "Settings"
 msgid "Reset to Default"
@@ -7881,31 +7722,31 @@ msgstr "Хизматҳо"
 
 #. i18n: file: dialogs/EqualizerDialog.ui:105
 #. i18n: ectx: property (text), widget (QLabel, eqPresetslabel)
-#: rc.cpp:1470
+#: rc.cpp:1389
 msgid "Presets:"
 msgstr ""
 
 #. i18n: file: dialogs/EqualizerDialog.ui:127
 #. i18n: ectx: property (title), widget (QGroupBox, eqBandsGroupBox)
-#: rc.cpp:1473
+#: rc.cpp:1392
 msgid "Bands"
 msgstr ""
 
 #. i18n: file: dialogs/EqualizerDialog.ui:168
 #. i18n: ectx: property (text), widget (QLabel, eqMaxEq)
-#: rc.cpp:1476
+#: rc.cpp:1395
 msgid "+ dB"
 msgstr ""
 
 #. i18n: file: dialogs/EqualizerDialog.ui:208
 #. i18n: ectx: property (text), widget (QLabel, eqZero)
-#: rc.cpp:1479
+#: rc.cpp:1398
 msgid "0 dB"
 msgstr ""
 
 #. i18n: file: dialogs/EqualizerDialog.ui:248
 #. i18n: ectx: property (text), widget (QLabel, eqMinEq)
-#: rc.cpp:1482
+#: rc.cpp:1401
 msgid "- dB"
 msgstr ""
 
@@ -7931,9 +7772,175 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, eqBand8Label)
 #. i18n: file: dialogs/EqualizerDialog.ui:1276
 #. i18n: ectx: property (text), widget (QLabel, eqBand9Label)
-#: rc.cpp:1488 rc.cpp:1494 rc.cpp:1500 rc.cpp:1506 rc.cpp:1512 rc.cpp:1518
-#: rc.cpp:1524 rc.cpp:1530 rc.cpp:1536 rc.cpp:1542 rc.cpp:1548
+#: rc.cpp:1407 rc.cpp:1413 rc.cpp:1419 rc.cpp:1425 rc.cpp:1431 rc.cpp:1437
+#: rc.cpp:1443 rc.cpp:1449 rc.cpp:1455 rc.cpp:1461 rc.cpp:1467
 msgid "Hz"
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:38
+#. i18n: ectx: property (toolTip), widget (QLabel, folderLabel)
+#: rc.cpp:1473
+msgid "Base directory under which to put files"
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:41
+#. i18n: ectx: property (text), widget (QLabel, folderLabel)
+#: rc.cpp:1476
+msgid "C&ollection Folder:"
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:69
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:1479
+msgid "Character Replacement"
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:75
+#. i18n: ectx: property (toolTip), widget (QCheckBox, spaceCheck)
+#: rc.cpp:1482
+msgid "If checked, convert spaces to underscores."
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:78
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, spaceCheck)
+#: rc.cpp:1485
+msgid ""
+"If checked all spaces will be replaced with underscores in the file names. "
+"If not, spaces will be left as they are."
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:81
+#. i18n: ectx: property (text), widget (QCheckBox, spaceCheck)
+#: rc.cpp:1488
+msgid "Replace spaces with &underscores"
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:88
+#. i18n: ectx: property (toolTip), widget (QCheckBox, ignoreTheCheck)
+#: rc.cpp:1491
+msgid "If checked, postfix artists' names starting with 'The' with ', The'."
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:91
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, ignoreTheCheck)
+#: rc.cpp:1494
+msgid ""
+"If checked all artists that have the word \"The\" at the beginning will be "
+"treated as if the \"The\" was not there. Example, \"The Beatles\" would "
+"become \"Beatles, The\""
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:94
+#. i18n: ectx: property (text), widget (QCheckBox, ignoreTheCheck)
+#: rc.cpp:1497
+msgid "I&gnore 'The' in artist names"
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:101
+#. i18n: ectx: property (toolTip), widget (QCheckBox, asciiCheck)
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:104
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, asciiCheck)
+#: rc.cpp:1500 rc.cpp:1503
+msgid ""
+"If checked all non-ASCII characters will be replaced with underscores. Do "
+"not check this option if you have non-English characters in your tags. Most "
+"people can leave this option unchecked."
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:107
+#. i18n: ectx: property (text), widget (QCheckBox, asciiCheck)
+#: rc.cpp:1506
+msgid "Restrict to &ASCII"
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:114
+#. i18n: ectx: property (toolTip), widget (QCheckBox, vfatCheck)
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:117
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, vfatCheck)
+#: rc.cpp:1509 rc.cpp:1512
+msgid ""
+"If checked, replace characters that are incompatible with MS-DOS/VFAT file "
+"systems with underscores. Incompatible characters include |?*<\":>+[] and "
+"unicode control characters. Most people can leave this option enabled as it "
+"ensures copying to media devices will function correctly."
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:120
+#. i18n: ectx: property (text), widget (QCheckBox, vfatCheck)
+#: rc.cpp:1515
+msgid "&VFAT safe names"
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:142
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rc.cpp:1518
+msgid "Replace"
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:152
+#. i18n: ectx: property (toolTip), widget (KLineEdit, regexpEdit)
+#: rc.cpp:1521
+msgid "Regular expression"
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:159
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: rc.cpp:1524
+msgid "with"
+msgstr "бо"
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:169
+#. i18n: ectx: property (toolTip), widget (KLineEdit, replaceEdit)
+#: rc.cpp:1527
+msgid "Character string"
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:187
+#. i18n: ectx: property (title), widget (QGroupBox, previewBox)
+#: rc.cpp:1530
+msgid "Destination Preview"
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:197
+#. i18n: ectx: property (text), widget (QTableWidget, previewTableWidget)
+#: rc.cpp:1533
+msgid "Original"
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:202
+#. i18n: ectx: property (text), widget (QTableWidget, previewTableWidget)
+#. i18n: file: playlist/layouts/PlaylistLayoutEditDialog.ui:336
+#. i18n: ectx: property (text), widget (QPushButton, previewButton)
+#: rc.cpp:1536 rc.cpp:1572
+#, fuzzy
+#| msgid "&Previous"
+msgid "Preview"
+msgstr "&Пешина"
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:216
+#. i18n: ectx: property (toolTip), widget (QLabel, previewText)
+#: rc.cpp:1539
+msgid "This is what the file names will look like after renaming."
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:257
+#. i18n: ectx: property (toolTip), widget (QCheckBox, overwriteCheck)
+#: rc.cpp:1542
+msgid "If checked, overwrite files of the same name without asking."
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:260
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, overwriteCheck)
+#: rc.cpp:1545
+msgid ""
+"Check this to overwrite files of the same name automatically. (Warning: "
+"Overwriting is not undoable)"
+msgstr ""
+
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:263
+#. i18n: ectx: property (text), widget (QCheckBox, overwriteCheck)
+#: rc.cpp:1548
+msgid "Overwrite &Destination"
 msgstr ""
 
 #. i18n: file: playlist/layouts/PlaylistLayoutEditDialog.ui:20
@@ -9139,25 +9146,33 @@ msgid "Playlist Files on Disk"
 msgstr "Хизматҳо"
 
 #: playlistmanager/file/PlaylistFileProvider.cpp:130
-#: playlistmanager/file/PlaylistFileProvider.cpp:140
+#: playlistmanager/file/PlaylistFileProvider.cpp:139
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:199
 #, kde-format
 msgctxt "Remove a track from a saved playlist"
 msgid "Remove From \"%1\""
 msgstr ""
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:274
-#: playlistmanager/sql/SqlUserPlaylistProvider.cpp:241
+#: playlistmanager/file/PlaylistFileProvider.cpp:273
+#: playlistmanager/sql/SqlUserPlaylistProvider.cpp:240
 #, kde-format
 msgid "Are you sure you want to delete this playlist?"
 msgid_plural "Are you sure you want to delete these %1 playlist files?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:321
-#: playlistmanager/file/PlaylistFileProvider.cpp:347
+#: playlistmanager/file/PlaylistFileProvider.cpp:320
+#: playlistmanager/file/PlaylistFileProvider.cpp:346
 #, kde-format
 msgid "The playlist file \"%1\" could not be loaded."
+msgstr ""
+
+#: playlistmanager/sql/SqlUserPlaylistProvider.h:44
+msgid "Internal Database"
+msgstr ""
+
+#: playlistmanager/sql/SqlUserPlaylistProvider.h:45
+msgid "Local playlists stored in the database"
 msgstr ""
 
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:82
@@ -9181,16 +9196,8 @@ msgstr ""
 msgid "&Delete..."
 msgstr ""
 
-#: playlistmanager/sql/SqlUserPlaylistProvider.cpp:246
+#: playlistmanager/sql/SqlUserPlaylistProvider.cpp:245
 msgid "Yes, delete from database."
-msgstr ""
-
-#: playlistmanager/sql/SqlUserPlaylistProvider.h:44
-msgid "Internal Database"
-msgstr ""
-
-#: playlistmanager/sql/SqlUserPlaylistProvider.h:45
-msgid "Local playlists stored in the database"
 msgstr ""
 
 #: playlistmanager/PlaylistManager.cpp:176
@@ -9222,29 +9229,29 @@ msgstr ""
 msgid "Preamp"
 msgstr ""
 
-#: EngineController.cpp:1277
+#: EngineController.cpp:1283
 #, kde-format
 msgctxt "track by artist on album"
 msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
 msgstr ""
 
-#: EngineController.cpp:1280
+#: EngineController.cpp:1286
 #, kde-format
 msgctxt "track by artist"
 msgid "<b>%1</b> by <b>%2</b>"
 msgstr ""
 
-#: EngineController.cpp:1284
+#: EngineController.cpp:1290
 #, kde-format
 msgctxt "track on album"
 msgid "<b>%1</b> on <b>%2</b>"
 msgstr ""
 
-#: EngineController.cpp:1289
+#: EngineController.cpp:1295
 msgid "Unknown track"
 msgstr ""
 
-#: EngineController.cpp:1296
+#: EngineController.cpp:1302
 #, kde-format
 msgctxt "track from source"
 msgid "from <b>%1</b>"
