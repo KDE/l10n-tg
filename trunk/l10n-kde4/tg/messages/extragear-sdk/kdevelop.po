@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-03 04:59+0200\n"
+"POT-Creation-Date: 2010-05-11 06:01+0200\n"
 "PO-Revision-Date: 2005-12-21 14:47+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: \n"
@@ -20,55 +20,35 @@ msgstr ""
 "X-Generator: KBabel 1.10.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: main_internal.cpp:82 main.cpp:61
+#: kdevideextension.cpp:48
+#, fuzzy
+msgid "Code"
+msgstr "&Код:"
+
+#: kdevideextension.cpp:59
+#, fuzzy
+msgid "KDevelop4 Project Files"
+msgstr "*.pro|Файлҳои Лоиҳаи QMAKE"
+
+#: main.cpp:61 main_internal.cpp:82
 #, fuzzy
 msgid "The KDevelop Integrated Development Environment"
 msgstr "Интегрированная среда разработки KDevelop."
 
-#: main_internal.cpp:83 main.cpp:62
+#: main.cpp:62 main_internal.cpp:83
 #, fuzzy
 msgid "KDevelop"
 msgstr "KDevelop"
-
-#: main_internal.cpp:84
-#, kde-format
-msgid "%1 (using KDevPlatform %2)"
-msgstr ""
-
-#: main_internal.cpp:85 main.cpp:64
-#, fuzzy
-msgid "Copyright 1999-2010, The KDevelop developers"
-msgstr "(c) 1999-2005, Команда разработчиков KDevelop"
-
-#: main_internal.cpp:144 main.cpp:101
-msgid "Specify the binary you want to debug."
-msgstr ""
-
-#: main_internal.cpp:151 main.cpp:108
-#, fuzzy
-#| msgid "&Debug"
-msgid "Debug"
-msgstr "&Debug"
-
-#: main_internal.cpp:172
-#, fuzzy
-msgid "Cannot find native launch configuration type"
-msgstr "Не удалось найти файл настроек htdig."
-
-#: main_internal.cpp:191
-#, fuzzy, kde-format
-msgid "Cannot find launcher %1"
-msgstr "Не удалось найти включаемый файл %1"
-
-#: main_internal.cpp:227
-#, fuzzy, kde-format
-msgid "Could not open %1"
-msgstr "Не удалось загрузить файл '%1'."
 
 #: main.cpp:63
 #, kde-format
 msgid "%1"
 msgstr ""
+
+#: main.cpp:64 main_internal.cpp:85
+#, fuzzy
+msgid "Copyright 1999-2010, The KDevelop developers"
+msgstr "(c) 1999-2005, Команда разработчиков KDevelop"
 
 #: main.cpp:67
 #, fuzzy
@@ -102,6 +82,16 @@ msgstr "Недавно открытые проекты"
 msgid "[running]"
 msgstr "ҷамъият"
 
+#: main.cpp:101 main_internal.cpp:144
+msgid "Specify the binary you want to debug."
+msgstr ""
+
+#: main.cpp:108 main_internal.cpp:151
+#, fuzzy
+#| msgid "&Debug"
+msgid "Debug"
+msgstr "&Debug"
+
 #: main.cpp:116
 #, kde-format
 msgid ""
@@ -127,15 +117,25 @@ msgid ""
 "fix your KDevelop installation."
 msgstr ""
 
-#: kdevideextension.cpp:41
-#, fuzzy
-msgid "Code"
-msgstr "&Код:"
+#: main_internal.cpp:84
+#, kde-format
+msgid "%1 (using KDevPlatform %2)"
+msgstr ""
 
-#: kdevideextension.cpp:52
+#: main_internal.cpp:172
 #, fuzzy
-msgid "KDevelop4 Project Files"
-msgstr "*.pro|Файлҳои Лоиҳаи QMAKE"
+msgid "Cannot find native launch configuration type"
+msgstr "Не удалось найти файл настроек htdig."
+
+#: main_internal.cpp:191
+#, fuzzy, kde-format
+msgid "Cannot find launcher %1"
+msgstr "Не удалось найти включаемый файл %1"
+
+#: main_internal.cpp:227
+#, fuzzy, kde-format
+msgid "Could not open %1"
+msgstr "Не удалось загрузить файл '%1'."
 
 #: shared_app_init.cpp:29
 msgid "Andreas Pakulat"
@@ -613,7 +613,7 @@ msgstr ""
 #. i18n: ectx: Menu (file)
 #. i18n: file: vendor/kate/katepartui.rc:4
 #. i18n: ectx: Menu (file)
-#: rc.cpp:3 rc.cpp:98 rc.cpp:125
+#: rc.cpp:3 rc.cpp:65 rc.cpp:125
 #, fuzzy
 msgid "&File"
 msgstr "&Файлы:"
@@ -622,14 +622,14 @@ msgstr "&Файлы:"
 #. i18n: ectx: Menu (edit)
 #. i18n: file: vendor/kate/katepartui.rc:12
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:6 rc.cpp:101 rc.cpp:128
+#: rc.cpp:6 rc.cpp:68 rc.cpp:128
 #, fuzzy
 msgid "&Edit"
 msgstr "&Тағъир кардан..."
 
 #. i18n: file: katepartui.rc:22
 #. i18n: ectx: Menu (edit_advanced)
-#: rc.cpp:9 rc.cpp:104
+#: rc.cpp:9 rc.cpp:71
 #, fuzzy
 msgid "&Advanced"
 msgstr "Показывать включённые файлы"
@@ -638,7 +638,7 @@ msgstr "Показывать включённые файлы"
 #. i18n: ectx: Menu (view)
 #. i18n: file: vendor/kate/katepartui.rc:37
 #. i18n: ectx: Menu (view)
-#: rc.cpp:12 rc.cpp:107 rc.cpp:131
+#: rc.cpp:12 rc.cpp:74 rc.cpp:131
 #, fuzzy
 msgid "&View"
 msgstr "Пре&дставления"
@@ -647,7 +647,7 @@ msgstr "Пре&дставления"
 #. i18n: ectx: Menu (codefolding)
 #. i18n: file: vendor/kate/katepartui.rc:51
 #. i18n: ectx: Menu (codefolding)
-#: rc.cpp:15 rc.cpp:110 rc.cpp:134
+#: rc.cpp:15 rc.cpp:77 rc.cpp:134
 #, fuzzy
 msgid "&Code Folding"
 msgstr "Всплывающая подсказка с кодом"
@@ -656,7 +656,7 @@ msgstr "Всплывающая подсказка с кодом"
 #. i18n: ectx: Menu (tools)
 #. i18n: file: vendor/kate/katepartui.rc:64
 #. i18n: ectx: Menu (tools)
-#: rc.cpp:18 rc.cpp:113 rc.cpp:137
+#: rc.cpp:18 rc.cpp:80 rc.cpp:137
 #, fuzzy
 msgid "&Tools"
 msgstr "Асбобҳо"
@@ -665,7 +665,7 @@ msgstr "Асбобҳо"
 #. i18n: ectx: Menu (wordcompletion)
 #. i18n: file: vendor/kate/katepartui.rc:75
 #. i18n: ectx: Menu (wordcompletion)
-#: rc.cpp:21 rc.cpp:116 rc.cpp:140
+#: rc.cpp:21 rc.cpp:83 rc.cpp:140
 #, fuzzy
 msgid "Word Completion"
 msgstr "&Авто-дополнение кода"
@@ -674,7 +674,7 @@ msgstr "&Авто-дополнение кода"
 #. i18n: ectx: Menu (settings)
 #. i18n: file: vendor/kate/katepartui.rc:104
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:24 rc.cpp:119 rc.cpp:143
+#: rc.cpp:24 rc.cpp:86 rc.cpp:143
 #, fuzzy
 msgid "&Settings"
 msgstr "Танзимотҳо"
@@ -685,16 +685,18 @@ msgstr "Танзимотҳо"
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: katepartui.rc:130
 #. i18n: ectx: ToolBar (mainToolBar)
+#. i18n: file: kdevelopui.rc:157
+#. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: vendor/kate/katepartui.rc:123
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:27 rc.cpp:60 rc.cpp:95 rc.cpp:122 rc.cpp:146
+#: rc.cpp:27 rc.cpp:60 rc.cpp:89 rc.cpp:122 rc.cpp:146
 #, fuzzy
 msgid "Main Toolbar"
 msgstr "Пайраҳаи асбоб"
 
 #. i18n: file: kdevelopui.rc:6
 #. i18n: ectx: Menu (session)
-#: rc.cpp:30 rc.cpp:65
+#: rc.cpp:30 rc.cpp:92
 #, fuzzy
 msgctxt "@title:menu"
 msgid "Session"
@@ -702,7 +704,7 @@ msgstr "Сеанс"
 
 #. i18n: file: kdevelopui.rc:10
 #. i18n: ectx: Menu (project)
-#: rc.cpp:33 rc.cpp:68
+#: rc.cpp:33 rc.cpp:95
 #, fuzzy
 #| msgid "&Project"
 msgctxt "@title:menu"
@@ -711,14 +713,14 @@ msgstr "&Лоиҳа"
 
 #. i18n: file: kdevelopui.rc:28
 #. i18n: ectx: Menu (run)
-#: rc.cpp:36 rc.cpp:71
+#: rc.cpp:36 rc.cpp:98
 #, fuzzy
 msgid "&Run"
 msgstr "&Выполнить"
 
 #. i18n: file: kdevelopui.rc:50
 #. i18n: ectx: Menu (navigation)
-#: rc.cpp:39 rc.cpp:74
+#: rc.cpp:39 rc.cpp:101
 #, fuzzy
 msgctxt "@title:menu"
 msgid "&Navigation"
@@ -726,7 +728,7 @@ msgstr "Функции файла"
 
 #. i18n: file: kdevelopui.rc:64
 #. i18n: ectx: Menu (file)
-#: rc.cpp:42 rc.cpp:77
+#: rc.cpp:42 rc.cpp:104
 #, fuzzy
 msgctxt "@title:menu"
 msgid "&File"
@@ -734,7 +736,7 @@ msgstr "&Файлы:"
 
 #. i18n: file: kdevelopui.rc:75
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:45 rc.cpp:80
+#: rc.cpp:45 rc.cpp:107
 #, fuzzy
 msgctxt "@title:menu"
 msgid "&Edit"
@@ -742,7 +744,7 @@ msgstr "&Тағъир кардан..."
 
 #. i18n: file: kdevelopui.rc:88
 #. i18n: ectx: Menu (editor)
-#: rc.cpp:48 rc.cpp:83
+#: rc.cpp:48 rc.cpp:110
 #, fuzzy
 #| msgid "Editor"
 msgctxt "@title:menu"
@@ -751,7 +753,7 @@ msgstr "Муҳаррир"
 
 #. i18n: file: kdevelopui.rc:93
 #. i18n: ectx: Menu (code)
-#: rc.cpp:51 rc.cpp:86
+#: rc.cpp:51 rc.cpp:113
 #, fuzzy
 msgctxt "@title:menu"
 msgid "Code"
@@ -759,7 +761,7 @@ msgstr "&Код:"
 
 #. i18n: file: kdevelopui.rc:100
 #. i18n: ectx: Menu (window)
-#: rc.cpp:54 rc.cpp:89
+#: rc.cpp:54 rc.cpp:116
 #, fuzzy
 #| msgid "&Window"
 msgctxt "@title:menu"
@@ -768,7 +770,7 @@ msgstr "&Тиреза"
 
 #. i18n: file: kdevelopui.rc:142
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:57 rc.cpp:92
+#: rc.cpp:57 rc.cpp:119
 #, fuzzy
 msgctxt "@title:menu"
 msgid "Settings"
