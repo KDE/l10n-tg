@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kvoctrain\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-18 06:07+0200\n"
+"POT-Creation-Date: 2010-05-19 04:48+0200\n"
 "PO-Revision-Date: 2005-09-23 17:17+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -294,7 +294,7 @@ msgstr "Нигоҳдоштани ҳуҷҷати равон"
 #. i18n: ectx: Menu (learning)
 #. i18n: file: src/practice/practicesummaryui.rc:11
 #. i18n: ectx: Menu (learning)
-#: src/welcomescreen/buttondelegate.cpp:46 rc.cpp:281 rc.cpp:1198 rc.cpp:1282
+#: src/welcomescreen/buttondelegate.cpp:46 rc.cpp:281 rc.cpp:1198 rc.cpp:1285
 #, fuzzy
 #| msgid "&Articles"
 msgid "&Practice"
@@ -1621,6 +1621,30 @@ msgstr "Малайӣ"
 msgid "Stop"
 msgstr ""
 
+#: src/practice/statustoggle.cpp:84
+msgid ""
+"This word will be counted as correct.\n"
+"Words will only be counted as correct if they are answered correctly on the "
+"first attempt."
+msgstr ""
+
+#: src/practice/statustoggle.cpp:85
+msgid "Count this word as wrong"
+msgstr ""
+
+#: src/practice/statustoggle.cpp:88
+msgid ""
+"This word will be counted as wrong.\n"
+"Words will only be counted as correct if they are answered correctly on the "
+"first attempt."
+msgstr ""
+
+#: src/practice/statustoggle.cpp:89
+#, fuzzy
+#| msgid "Your answer was wrong. %1% done."
+msgid "Count this word as correct"
+msgstr "Ҷавоби Шумо нодуруст аст. %1% ислоҳ кардед."
+
 #: src/parleyactions.cpp:69
 #, fuzzy
 msgid "Creates a new vocabulary collection"
@@ -2313,7 +2337,7 @@ msgstr ""
 #. i18n: ectx: Menu (file)
 #. i18n: file: src/practice/practiceui.rc:7
 #. i18n: ectx: Menu (file)
-#: rc.cpp:269 rc.cpp:1195 rc.cpp:1279 rc.cpp:1288
+#: rc.cpp:269 rc.cpp:1195 rc.cpp:1282 rc.cpp:1291
 #, fuzzy
 msgid "&File"
 msgstr "&Монд"
@@ -2329,7 +2353,7 @@ msgstr "Рех&тан"
 #. i18n: ectx: Menu (view)
 #. i18n: file: src/practice/practiceui.rc:12
 #. i18n: ectx: Menu (view)
-#: rc.cpp:275 rc.cpp:1291
+#: rc.cpp:275 rc.cpp:1294
 msgid "&View"
 msgstr ""
 
@@ -4009,7 +4033,7 @@ msgstr ""
 #. i18n: ectx: ToolBar (practiceToolBar)
 #. i18n: file: src/practice/practiceui.rc:18
 #. i18n: ectx: ToolBar (practiceToolBar)
-#: rc.cpp:1156 rc.cpp:1294
+#: rc.cpp:1156 rc.cpp:1297
 #, fuzzy
 msgid "Practice Toolbar"
 msgstr "Намоиши &статистика"
@@ -4027,7 +4051,7 @@ msgstr "Намоиши &статистика"
 #. i18n: ectx: ToolBar (practiceSummaryToolBar)
 #. i18n: file: src/practice/practicesummaryui.rc:18
 #. i18n: ectx: ToolBar (practiceSummaryToolBar)
-#: rc.cpp:1162 rc.cpp:1285
+#: rc.cpp:1162 rc.cpp:1288
 #, fuzzy
 #| msgid "Article"
 msgid "Practice Summary Toolbar"
@@ -4196,7 +4220,7 @@ msgstr "Саволҳо"
 #. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
 #. i18n: file: plasmoid/config.ui:81
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1250 rc.cpp:1309
+#: rc.cpp:1250 rc.cpp:1312
 #, fuzzy
 #| msgid "&Show solution"
 msgid "Solution"
@@ -4220,60 +4244,66 @@ msgid "Wrong Attempts"
 msgstr ""
 
 #. i18n: file: src/practice/practice_mainwindow.ui:105
-#. i18n: ectx: property (text), widget (QPushButton, answerLaterButton)
+#. i18n: ectx: property (toolTip), widget (QPushButton, answerLaterButton)
 #: rc.cpp:1260
+msgid "Skip this word for now and ask again later"
+msgstr ""
+
+#. i18n: file: src/practice/practice_mainwindow.ui:108
+#. i18n: ectx: property (text), widget (QPushButton, answerLaterButton)
+#: rc.cpp:1263
 msgid "Answer Later"
 msgstr ""
 
-#. i18n: file: src/practice/practice_mainwindow.ui:115
+#. i18n: file: src/practice/practice_mainwindow.ui:118
 #. i18n: ectx: property (text), widget (QPushButton, hintButton)
-#: rc.cpp:1263
+#: rc.cpp:1266
 #, fuzzy
 #| msgid "Hindi"
 msgid "Hint"
 msgstr "Хиндӣ"
 
-#. i18n: file: src/practice/practice_mainwindow.ui:163
+#. i18n: file: src/practice/practice_mainwindow.ui:166
 #. i18n: ectx: property (text), widget (QPushButton, continueButton)
-#: rc.cpp:1266
+#: rc.cpp:1269
 #, fuzzy
 #| msgid "Contained In"
 msgid "Continue"
 msgstr "Нигоҳ дорад дар"
 
-#. i18n: file: src/practice/practice_mainwindow.ui:180
+#. i18n: file: src/practice/practice_mainwindow.ui:183
 #. i18n: ectx: property (text), widget (QPushButton, countAsWrongButton)
-#: rc.cpp:1269
+#: rc.cpp:1272
 #, fuzzy
 #| msgid "I &Know It"
 msgid "I did not know it"
 msgstr "Ман &ин медонам"
 
-#. i18n: file: src/practice/practice_mainwindow.ui:187
+#. i18n: file: src/practice/practice_mainwindow.ui:190
 #. i18n: ectx: property (text), widget (QPushButton, countAsCorrectButton)
-#: rc.cpp:1272
+#: rc.cpp:1275
 #, fuzzy
 #| msgid "I &Know It"
 msgid "I knew it"
 msgstr "Ман &ин медонам"
 
-#. i18n: file: src/practice/practice_mainwindow.ui:273
+#. i18n: file: src/practice/practice_mainwindow.ui:276
 #. i18n: ectx: property (format), widget (QProgressBar, totalProgress)
-#: rc.cpp:1276
+#: rc.cpp:1279
 #, no-c-format
 msgid "%v/%m"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:18
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:1297
+#: rc.cpp:1300
 #, fuzzy
 msgid "Vocabulary collection:"
 msgstr "Кушодани файли луғати мисол"
 
 #. i18n: file: plasmoid/config.ui:30
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:1300
+#: rc.cpp:1303
 #, fuzzy
 #| msgid "Language Elements"
 msgid "Language Selection"
@@ -4281,26 +4311,26 @@ msgstr "Елементҳои забон"
 
 #. i18n: file: plasmoid/config.ui:38
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:1303
+#: rc.cpp:1306
 #, fuzzy
 msgid "Top:"
 msgstr "&Мардона:"
 
 #. i18n: file: plasmoid/config.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:1306
+#: rc.cpp:1309
 msgid "Bottom:"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:87
 #. i18n: ectx: property (text), widget (QRadioButton, solutionOnHover)
-#: rc.cpp:1312
+#: rc.cpp:1315
 msgid "Reveal solution when mouse cursor is over the widget"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:97
 #. i18n: ectx: property (text), widget (QRadioButton, solutionAlways)
-#: rc.cpp:1315
+#: rc.cpp:1318
 #, fuzzy
 #| msgid "&Show solution"
 msgid "Always show the solution"
@@ -4308,13 +4338,13 @@ msgstr "&Намоиши қарор"
 
 #. i18n: file: plasmoid/config.ui:112
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1318
+#: rc.cpp:1321
 msgid "Update interval:"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:153
 #. i18n: ectx: property (text), widget (KPushButton, fontSelectButton)
-#: rc.cpp:1321
+#: rc.cpp:1324
 #, fuzzy
 #| msgid "Selected lessons:"
 msgid "Select Font..."
