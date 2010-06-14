@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-05 04:56+0200\n"
+"POT-Creation-Date: 2010-06-14 05:26+0200\n"
 "PO-Revision-Date: 2005-09-17 12:46+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -240,19 +240,34 @@ msgstr ""
 msgid "Key Server"
 msgstr "Хидматрасони Калид"
 
-#: keyservers.cpp:107 keyservers.cpp:178
+#: keyservers.cpp:107 keyservers.cpp:197
 msgid "You must enter a search string."
 msgstr "Шумо бояд сатри ҷусуҷӯиро ворид кунед."
 
-#: keyservers.cpp:166
+#: keyservers.cpp:119
+msgid "You need to configure keyservers before trying to download keys."
+msgstr ""
+
+#: keyservers.cpp:120
+msgid "No keyservers defined"
+msgstr ""
+
+#: keyservers.cpp:157
+#, fuzzy
+#| msgid "Key Import"
+msgctxt "Caption of message box"
+msgid "Key Import Finished"
+msgstr "Вориди Калид"
+
+#: keyservers.cpp:185
 msgid "Upload to keyserver finished without errors"
 msgstr ""
 
-#: keyservers.cpp:168
+#: keyservers.cpp:187
 msgid "Upload to keyserver failed"
 msgstr ""
 
-#: keyservers.cpp:193 keysmanager.cpp:1378
+#: keyservers.cpp:212 keysmanager.cpp:1378
 #, fuzzy
 #| msgid "Import Key From Keyserver"
 msgid "Import Key From Keyserver"
@@ -262,15 +277,15 @@ msgstr[1] "Воридоти Калид Аз Хидматрасони Калид�
 
 #. i18n: file: keyserver.ui:144
 #. i18n: ectx: property (text), widget (QPushButton, Buttonimport)
-#: keyservers.cpp:198 rc.cpp:357 editor/kgpgtextedit.cpp:304
+#: keyservers.cpp:217 rc.cpp:357 editor/kgpgtextedit.cpp:304
 msgid "&Import"
 msgstr "&Воридот"
 
-#: keyservers.cpp:203
+#: keyservers.cpp:222
 msgid "Connecting to the server..."
 msgstr "Пайвастшавӣ ба хидматрасон..."
 
-#: keyservers.cpp:255
+#: keyservers.cpp:274
 #, fuzzy, kde-format
 #| msgid "Found %1 matching keys"
 msgid "Found 1 matching key"
@@ -278,13 +293,13 @@ msgid_plural "Found %1 matching keys"
 msgstr[0] "%1 калидҳои мувофиқ пайдо гардиданд"
 msgstr[1] "%1 калидҳои мувофиқ пайдо гардиданд"
 
-#: keyservers.cpp:259
+#: keyservers.cpp:278
 #, fuzzy
 #| msgid "Found %1 matching keys"
 msgid "No matching keys found"
 msgstr "%1 калидҳои мувофиқ пайдо гардиданд"
 
-#: keyservers.cpp:307
+#: keyservers.cpp:326
 msgid "You must choose a key."
 msgstr "Шумо бояд калидро интихоб кунед."
 
@@ -537,7 +552,7 @@ msgstr "Ташкил кардани ҷуфти калиди нав."
 msgid "Can not start \"konsole\" application for expert mode."
 msgstr ""
 
-#: keysmanager.cpp:576 keysmanager.cpp:2623
+#: keysmanager.cpp:576 keysmanager.cpp:2628
 #, fuzzy
 #| msgid "Ready"
 msgctxt "Application ready for user input"
@@ -848,7 +863,7 @@ msgstr ""
 msgid "<qt>Are you sure you want to delete group <b>%1</b> ?</qt>"
 msgstr "<qt>Дар ҳақиқат мехоҳед, ки гурӯҳи <b>%1</b>-ро нобуд созед ?</qt>"
 
-#: keysmanager.cpp:1783 keysmanager.cpp:2417
+#: keysmanager.cpp:1783 keysmanager.cpp:2422
 #, fuzzy
 msgid "Delete"
 msgstr "&Нобудкунии Калид(ҳо)"
@@ -1050,11 +1065,11 @@ msgid_plural "All signatures for this keys are already in your keyring"
 msgstr[0] "Ҳамаи имзоҳо барои ин калид аллакай дар ҳалқаи калидҳо мавҷуданд"
 msgstr[1] "Ҳамаи имзоҳо барои ин калид аллакай дар ҳалқаи калидҳо мавҷуданд"
 
-#: keysmanager.cpp:2284
+#: keysmanager.cpp:2289
 msgid "Edit key manually to delete a self-signature."
 msgstr "Таҳрири калид ба таври дастӣ барои нобудкунии имзои худ."
 
-#: keysmanager.cpp:2288
+#: keysmanager.cpp:2293
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Are you sure you want to delete signature<br><b>%1</b> from key:"
@@ -1066,13 +1081,13 @@ msgstr ""
 "<qt>Дар ҳақиқат мехоҳед, ки имзоро <br><b>%1</b> аз калиди:<br><b>%2</"
 "b>нобуд созед?</qt>"
 
-#: keysmanager.cpp:2309
+#: keysmanager.cpp:2314
 msgid "Requested operation was unsuccessful, please edit the key manually."
 msgstr ""
 "Амалиёти талабшуда бо номуваффақият анҷомид, ба таври дастӣ калидро таҳрир "
 "кунед."
 
-#: keysmanager.cpp:2370
+#: keysmanager.cpp:2375
 msgid ""
 "<qt>The key you are deleting is a member of the following key group. Do you "
 "want to remove it from this group?</qt>"
@@ -1082,14 +1097,14 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: keysmanager.cpp:2374 keysmanager.cpp:2424 keysmanager.cpp:2439
-#: keysmanager.cpp:2442 keysmanager.cpp:2452 keysmanager.cpp:2466
-#: keysmanager.cpp:2476
+#: keysmanager.cpp:2379 keysmanager.cpp:2429 keysmanager.cpp:2444
+#: keysmanager.cpp:2447 keysmanager.cpp:2457 keysmanager.cpp:2471
+#: keysmanager.cpp:2481
 #, fuzzy
 msgid "Delete key"
 msgstr "&Нобудкунии Калид(ҳо)"
 
-#: keysmanager.cpp:2415
+#: keysmanager.cpp:2420
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Delete <b>SECRET KEY</b> pair <b>%1</b>?</p>Deleting this key pair "
@@ -1103,34 +1118,34 @@ msgstr ""
 "ҷуфти калидҳо маънои онро дорад, ки шумо ҳеҷ гоҳ файлҳоро, ки ба ин калид "
 "рамз кунонида мешаванд, рамзкунонӣ карда наметавонед."
 
-#: keysmanager.cpp:2424 keysmanager.cpp:2452
+#: keysmanager.cpp:2429 keysmanager.cpp:2457
 msgid ""
 "Another key delete operation is still in progress.\n"
 "Please wait a moment until this operation is complete."
 msgstr ""
 
-#: keysmanager.cpp:2439
+#: keysmanager.cpp:2444
 #, kde-format
 msgid "Key <b>%1</b> deleted."
 msgstr ""
 
-#: keysmanager.cpp:2442
+#: keysmanager.cpp:2447
 #, kde-format
 msgid "Deleting key <b>%1</b> failed."
 msgstr ""
 
-#: keysmanager.cpp:2466
+#: keysmanager.cpp:2471
 #, kde-format
 msgid "Can not delete key <b>%1</b> while it is edited in terminal."
 msgstr ""
 
-#: keysmanager.cpp:2476
+#: keysmanager.cpp:2481
 msgid ""
 "You have selected items that are not keys. They can not be deleted with this "
 "menu entry."
 msgstr ""
 
-#: keysmanager.cpp:2498
+#: keysmanager.cpp:2503
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>The following are secret key pairs:<br><b>%1</b>They will not be "
@@ -1142,37 +1157,37 @@ msgstr ""
 "<qt>Ҷуфти калидҳи зерин махфианд:<br><b>%1</b>Онҳо нобуд карда намешаванд."
 "<br></qt>"
 
-#: keysmanager.cpp:2510
+#: keysmanager.cpp:2515
 #, fuzzy, kde-format
 msgid "<qt><b>Delete the following public key?</b></qt>"
 msgid_plural "<qt><b>Delete the following %1 public keys?</b></qt>"
 msgstr[0] "<qt><b>Калид(ҳо)и зерини оммавиро нобуд кунам  ?</b></qt>"
 
-#: keysmanager.cpp:2541 keysmanager.cpp:2611 keysmanager.cpp:2620
+#: keysmanager.cpp:2546 keysmanager.cpp:2616 keysmanager.cpp:2625
 msgid "Key Import"
 msgstr "Вориди Калид"
 
-#: keysmanager.cpp:2548
+#: keysmanager.cpp:2553
 msgid "Open File"
 msgstr "Кушодани Файл"
 
-#: keysmanager.cpp:2577
+#: keysmanager.cpp:2582
 msgid ""
 "<qt>The text in the clipboard does not look like a key, but like encrypted "
 "text.<br />Do you want to decrypt it first and then try importing it?</qt>"
 msgstr ""
 
-#: keysmanager.cpp:2578
+#: keysmanager.cpp:2583
 #, fuzzy
 #| msgid "&Encrypt Clipboard"
 msgid "Import from Clipboard"
 msgstr "&Рамзкунонии Силули Мухобиротӣ"
 
-#: keysmanager.cpp:2598
+#: keysmanager.cpp:2603
 msgid "Importing..."
 msgstr "Воридоткунӣ..."
 
-#: keysmanager.cpp:2610
+#: keysmanager.cpp:2615
 #, fuzzy
 #| msgid ""
 #| "No key imported... \n"
@@ -1182,33 +1197,33 @@ msgstr ""
 "Ягон калид ворид карда нашудааст... \n"
 "Барои маълумоти иловагӣ феҳристи тавсифотро санҷед"
 
-#: keysmanager.cpp:2670
+#: keysmanager.cpp:2675
 msgid "KGpg - encryption tool"
 msgstr "KGpg - асбоб барои рамз нависӣ"
 
-#: keysmanager.cpp:2691
+#: keysmanager.cpp:2696
 #, fuzzy
 #| msgid "Key Manager"
 msgid "Ke&y Manager"
 msgstr "Идораи Калид"
 
-#: keysmanager.cpp:2695
+#: keysmanager.cpp:2700
 msgid "&Encrypt Clipboard"
 msgstr "&Рамзкунонии Силули Мухобиротӣ"
 
-#: keysmanager.cpp:2698
+#: keysmanager.cpp:2703
 msgid "&Decrypt Clipboard"
 msgstr "&Рамзкушоии Силули Мухобиротӣ"
 
-#: keysmanager.cpp:2701
+#: keysmanager.cpp:2706
 msgid "&Sign/Verify Clipboard"
 msgstr "&Имзогузорӣ/Муқаррар кардани Силули Мухобиротӣ"
 
-#: keysmanager.cpp:2733 keysmanager.cpp:2792 keysmanager.cpp:2810
+#: keysmanager.cpp:2738 keysmanager.cpp:2797 keysmanager.cpp:2815
 msgid "Clipboard is empty."
 msgstr "Силули Мухобиротӣ холӣ аст."
 
-#: keysmanager.cpp:2782
+#: keysmanager.cpp:2787
 #, fuzzy
 #| msgid "The signature file %1 was successfully created."
 msgid "Text successfully encrypted."
@@ -1222,12 +1237,12 @@ msgstr ""
 
 #. i18n: file: keyserver.ui:32
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: keytreeview.cpp:167 kgpgtextinterface.cpp:652 rc.cpp:331
+#: keytreeview.cpp:167 kgpgtextinterface.cpp:653 rc.cpp:331
 #, fuzzy
 msgid "Import"
 msgstr "&Воридот"
 
-#: keytreeview.cpp:168 kgpgtextinterface.cpp:652
+#: keytreeview.cpp:168 kgpgtextinterface.cpp:653
 #, fuzzy
 msgid "Do Not Import"
 msgstr "Вориди Калид"
@@ -1875,7 +1890,12 @@ msgid ""
 "<qt>The signature is valid, and the key is ultimately trusted<br /></qt>"
 msgstr "Имзо дастрас аст ва калид қатъӣ дуруст аст"
 
-#: kgpgtextinterface.cpp:651 editor/kgpgtextedit.cpp:311
+#: kgpgtextinterface.cpp:649 editor/kgpgtextedit.cpp:296
+msgctxt "Caption of message box"
+msgid "Verification Finished"
+msgstr ""
+
+#: kgpgtextinterface.cpp:652 editor/kgpgtextedit.cpp:311
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -3928,7 +3948,7 @@ msgid "Photo id"
 msgstr "Сурати Шиноса"
 
 #: editor/kgpgeditor.cpp:90 editor/kgpgeditor.cpp:247
-#: editor/kgpgeditor.cpp:752 editor/kgpgeditor.cpp:781
+#: editor/kgpgeditor.cpp:739 editor/kgpgeditor.cpp:768
 #, fuzzy
 msgid "Untitled"
 msgstr "беунвон"
@@ -4006,8 +4026,8 @@ msgid "Overwrite existing file %1?"
 msgstr "Файли %1-и мавҷударо рӯиҳам нависам?"
 
 #: editor/kgpgeditor.cpp:472 editor/kgpgeditor.cpp:480
-#: editor/kgpgeditor.cpp:624 editor/kgpgeditor.cpp:665
-#: editor/kgpgeditor.cpp:699
+#: editor/kgpgeditor.cpp:622 editor/kgpgeditor.cpp:663
+#: editor/kgpgeditor.cpp:697
 msgid "*|All Files"
 msgstr "*|Ҳамаи Файлҳо"
 
@@ -4023,21 +4043,13 @@ msgstr "Кушодани Файл барои Рамзкушоӣ"
 msgid "Decrypt File To"
 msgstr "Рамзкушоии Файл ба"
 
-#: editor/kgpgeditor.cpp:624
+#: editor/kgpgeditor.cpp:622
 msgid "Open File to Sign"
 msgstr "Кушодани Файл барои Имзо"
 
-#: editor/kgpgeditor.cpp:665 editor/kgpgeditor.cpp:699
+#: editor/kgpgeditor.cpp:663 editor/kgpgeditor.cpp:697
 msgid "Open File to Verify"
 msgstr "Кушодани Файл барои Санҷидан"
-
-#: editor/kgpgeditor.cpp:711
-msgid "You need to configure keyservers before trying to download keys."
-msgstr ""
-
-#: editor/kgpgeditor.cpp:712
-msgid "No keyservers defined"
-msgstr ""
 
 #: editor/kgpgmd5widget.cpp:28
 msgid "MD5 Checksum"
