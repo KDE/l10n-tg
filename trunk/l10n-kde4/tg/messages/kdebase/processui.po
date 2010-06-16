@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: processui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-27 04:52+0200\n"
+"POT-Creation-Date: 2010-06-16 04:53+0200\n"
 "PO-Revision-Date: 2009-01-16 14:44+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -98,9 +98,10 @@ msgid ""
 "any time."
 msgstr ""
 
-#: ksysguardprocesslist.cpp:411 ksysguardprocesslist.cpp:1249
+#: ksysguardprocesslist.cpp:411
 #, fuzzy
 #| msgid "Own Processes"
+msgctxt "Context menu"
 msgid "End Process"
 msgid_plural "End Processes"
 msgstr[0] "Ваши процессы"
@@ -283,6 +284,15 @@ msgid_plural ""
 "lost"
 msgstr[0] "Пользователь - владелец процесса"
 msgstr[1] "Пользователь - владелец процесса"
+
+#: ksysguardprocesslist.cpp:1249
+#, fuzzy, kde-format
+#| msgid "Own Processes"
+msgctxt "Dialog title"
+msgid "End Process"
+msgid_plural "End %1 Processes"
+msgstr[0] "Ваши процессы"
+msgstr[1] "Ваши процессы"
 
 #: ksysguardprocesslist.cpp:1250
 msgid "End"
@@ -1488,52 +1498,57 @@ msgstr ""
 "<b>%1</b><br />ID процесса: <numid>%2</numid><br />ID родительского "
 "процесса: <numid>%3</numid>"
 
-#: ProcessModel.cc:1322
+#: ProcessModel.cc:1322 ProcessModel.cc:1386
+#, kde-format
+msgid "<br/>Number of threads: %1"
+msgstr ""
+
+#: ProcessModel.cc:1324
 #, fuzzy, kde-format
 msgid "<br/>Command: %1"
 msgstr "<br/>Команда запуска: %1"
 
-#: ProcessModel.cc:1325
+#: ProcessModel.cc:1327
 #, fuzzy, kde-format
 msgid "<br />Running on: %1"
 msgstr "<br />Запущен на: %1"
 
-#: ProcessModel.cc:1333
+#: ProcessModel.cc:1335
 #, fuzzy, kde-format
 msgid "<qt>This process was run with the following command:<br />%1"
 msgstr "<qt>Этот процесс был запущен следующей командой:<br />%1"
 
-#: ProcessModel.cc:1335
+#: ProcessModel.cc:1337
 #, fuzzy, kde-format
 msgid "<br /><br />Running on: %1"
 msgstr "<br /><br />Запущен на: %1"
 
-#: ProcessModel.cc:1350
+#: ProcessModel.cc:1352
 #, fuzzy, kde-format
 msgid "Nice level: %1 (%2)"
 msgstr "Приоритет: %1 (%2)"
 
-#: ProcessModel.cc:1354
+#: ProcessModel.cc:1356
 #, kde-format
 msgid "This is a real time process.<br>Scheduler priority: %1"
 msgstr ""
 
-#: ProcessModel.cc:1360
+#: ProcessModel.cc:1362
 #, fuzzy, kde-format
 msgid "<br/>Scheduler: %1"
 msgstr "<br/>Планировщик: %1"
 
-#: ProcessModel.cc:1364 ProcessModel.cc:1404
+#: ProcessModel.cc:1366 ProcessModel.cc:1408
 #, fuzzy, kde-format
 msgid "<br/>I/O Nice level: %1 (%2)"
 msgstr "<br/>Приоритет ввода-вывода: %1 (%2)"
 
-#: ProcessModel.cc:1365 ProcessModel.cc:1405
+#: ProcessModel.cc:1367 ProcessModel.cc:1409
 #, fuzzy, kde-format
 msgid "<br/>I/O Class: %1"
 msgstr "<br/>Класс ввода-вывода: %1"
 
-#: ProcessModel.cc:1373
+#: ProcessModel.cc:1375
 #, fuzzy, kde-format
 msgid ""
 "<qt><p style='white-space:pre'>Process status: %1 %2<br />User CPU usage: %3%"
@@ -1542,7 +1557,7 @@ msgstr ""
 "<qt><p style='white-space:pre'>Состояние процесса: %1 %2<br />В режиме "
 "пользователя: %3%<br />В режиме системы: %4%</qt>"
 
-#: ProcessModel.cc:1384
+#: ProcessModel.cc:1388
 #, fuzzy, kde-format
 msgid ""
 "<br />Number of children: %1<br />Total User CPU usage: %2%<br />Total "
@@ -1551,58 +1566,58 @@ msgstr ""
 "<br />Количество потомков: %1<br />Всего в режиме пользователя: %2%<br /"
 ">Всего в режиме системы: %3%<br />Всего процессорного времени: %4%"
 
-#: ProcessModel.cc:1393
+#: ProcessModel.cc:1397
 #, fuzzy, kde-format
 msgid "<br /><br />CPU time spent running as user: %1 seconds"
 msgstr "<br /><br />Общее время работы в режиме пользователя: %1 секунд"
 
-#: ProcessModel.cc:1397
+#: ProcessModel.cc:1401
 #, fuzzy, kde-format
 msgid "<br />CPU time spent running in kernel: %1 seconds"
 msgstr "<br />Общее время работы в режиме ядра: %1 секунд"
 
-#: ProcessModel.cc:1401
+#: ProcessModel.cc:1405
 #, fuzzy, kde-format
 msgid "<br />Nice level: %1 (%2)"
 msgstr "<br />Приоритет: %1 (%2)"
 
-#: ProcessModel.cc:1420
+#: ProcessModel.cc:1424
 #, fuzzy, kde-format
 msgid "Memory usage: %1 out of %2  (%3 %)<br />"
 msgstr "Использование памяти: %1 из %2  (%3 %)<br />"
 
-#: ProcessModel.cc:1422
+#: ProcessModel.cc:1426
 #, fuzzy, kde-format
 msgid "Memory usage: %1<br />"
 msgstr "Использование памяти: %1<br />"
 
-#: ProcessModel.cc:1425
+#: ProcessModel.cc:1429
 #, fuzzy, kde-format
 msgid "RSS Memory usage: %1 out of %2  (%3 %)"
 msgstr "Использование резидентной памяти: %1 из %2  (%3 %)"
 
-#: ProcessModel.cc:1427
+#: ProcessModel.cc:1431
 #, fuzzy, kde-format
 msgid "RSS Memory usage: %1"
 msgstr "Использование резидентной памяти: %1"
 
-#: ProcessModel.cc:1433
+#: ProcessModel.cc:1437
 #, fuzzy
 msgid ""
 "Your system does not seem to have this information available to be read."
 msgstr "<qt>Ваша система не может предоставить эту информацию.</qt>"
 
-#: ProcessModel.cc:1437
+#: ProcessModel.cc:1441
 #, fuzzy, kde-format
 msgid "Shared library memory usage: %1 out of %2  (%3 %)"
 msgstr "Использование памяти разделяемыми библиотеками: %1 out of %2  (%3 %)"
 
-#: ProcessModel.cc:1439
+#: ProcessModel.cc:1443
 #, fuzzy, kde-format
 msgid "Shared library memory usage: %1"
 msgstr "Использование памяти разделяемыми библиотеками: %1"
 
-#: ProcessModel.cc:1447
+#: ProcessModel.cc:1451
 #, kde-format
 msgid ""
 "Characters read: %1 (%2 KiB/s)<br>Characters written: %3 (%4 KiB/s)<br>Read "
@@ -1610,12 +1625,12 @@ msgid ""
 "9 (%10 KiB/s)<br>Actual bytes written: %11 (%12 KiB/s)"
 msgstr ""
 
-#: ProcessModel.cc:1712
+#: ProcessModel.cc:1716
 msgctxt "process heading"
 msgid "Name"
 msgstr "Ном"
 
-#: ProcessModel.cc:1713
+#: ProcessModel.cc:1717
 #, fuzzy
 #| msgctxt "process heading"
 #| msgid "User Name"
@@ -1623,28 +1638,28 @@ msgctxt "process heading"
 msgid "Username"
 msgstr "Номи корбар"
 
-#: ProcessModel.cc:1714
+#: ProcessModel.cc:1718
 msgctxt "process heading"
 msgid "PID"
 msgstr "PID"
 
-#: ProcessModel.cc:1715
+#: ProcessModel.cc:1719
 msgctxt "process heading"
 msgid "TTY"
 msgstr "TTY"
 
-#: ProcessModel.cc:1716
+#: ProcessModel.cc:1720
 msgctxt "process heading"
 msgid "Niceness"
 msgstr "Приоритет"
 
-#: ProcessModel.cc:1718
+#: ProcessModel.cc:1722
 #, no-c-format
 msgctxt "process heading"
 msgid "CPU %"
 msgstr "CPU %"
 
-#: ProcessModel.cc:1719
+#: ProcessModel.cc:1723
 #, fuzzy
 #| msgctxt "process heading"
 #| msgid "CPU %"
@@ -1652,37 +1667,37 @@ msgctxt "process heading"
 msgid "CPU Time"
 msgstr "CPU %"
 
-#: ProcessModel.cc:1720
+#: ProcessModel.cc:1724
 msgctxt "process heading"
 msgid "IO Read"
 msgstr ""
 
-#: ProcessModel.cc:1721
+#: ProcessModel.cc:1725
 msgctxt "process heading"
 msgid "IO Write"
 msgstr ""
 
-#: ProcessModel.cc:1722
+#: ProcessModel.cc:1726
 msgctxt "process heading"
 msgid "Virtual Size"
 msgstr "Вирт.память"
 
-#: ProcessModel.cc:1723
+#: ProcessModel.cc:1727
 msgctxt "process heading"
 msgid "Memory"
 msgstr "Хотира"
 
-#: ProcessModel.cc:1724
+#: ProcessModel.cc:1728
 msgctxt "process heading"
 msgid "Shared Mem"
 msgstr "Разд.память"
 
-#: ProcessModel.cc:1725
+#: ProcessModel.cc:1729
 msgctxt "process heading"
 msgid "Command"
 msgstr "Фармон"
 
-#: ProcessModel.cc:1727
+#: ProcessModel.cc:1731
 #, fuzzy
 #| msgctxt "process heading"
 #| msgid "Memory"
@@ -1690,27 +1705,27 @@ msgctxt "process heading"
 msgid "X11 Memory"
 msgstr "Хотира"
 
-#: ProcessModel.cc:1728
+#: ProcessModel.cc:1732
 msgctxt "process heading"
 msgid "Window Title"
 msgstr "Сарлавҳаи тиреза"
 
-#: ProcessModel.cc:1846
+#: ProcessModel.cc:1850
 #, kde-format
 msgid "%1 K"
 msgstr "%1 К"
 
-#: ProcessModel.cc:1847
+#: ProcessModel.cc:1851
 #, kde-format
 msgid "%1 M"
 msgstr "%1 М"
 
-#: ProcessModel.cc:1848
+#: ProcessModel.cc:1852
 #, kde-format
 msgid "%1 G"
 msgstr "%1 Г"
 
-#: ProcessModel.cc:1849
+#: ProcessModel.cc:1853
 #, kde-format
 msgid "%1%"
 msgstr ""
