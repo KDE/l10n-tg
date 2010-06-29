@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-23 04:59+0200\n"
+"POT-Creation-Date: 2010-06-29 02:43+0200\n"
 "PO-Revision-Date: 2005-09-17 13:14+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -24,10 +24,9 @@ msgstr ""
 "X-Generator: KBabel 1.10\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: kio/connection.cpp:211
-#, kde-format
-msgid "Unable to create io-slave: %1"
-msgstr "io-slave: %1-ро сохта натавонист"
+#: kio/kimageio.cpp:43
+msgid "All Pictures"
+msgstr "Тамоми суратҳо"
 
 #: kio/kscan.cpp:50
 msgid "Acquire Image"
@@ -36,6 +35,26 @@ msgstr "Муоина кардани тасвир"
 #: kio/kscan.cpp:99
 msgid "OCR Image"
 msgstr "Тасвири OCR"
+
+#: kio/connection.cpp:211
+#, kde-format
+msgid "Unable to create io-slave: %1"
+msgstr "io-slave: %1-ро сохта натавонист"
+
+#: kio/kfileitemdelegate.cpp:236
+#, fuzzy, kde-format
+msgctxt "Items in a folder"
+msgid "1 item"
+msgid_plural "%1 items"
+msgstr[0] "%1 файлҳо"
+msgstr[1] "%1 файлҳо"
+
+#: kio/kfileitemdelegate.cpp:292 kio/kfileitemdelegate.cpp:296
+#, fuzzy
+#| msgid "Unknown"
+msgctxt "@info mimetype"
+msgid "Unknown"
+msgstr "Ношинос"
 
 #: kio/global.cpp:89
 #, kde-format
@@ -981,8 +1000,8 @@ msgstr "Файл ё ки феҳрсит вуҷуд надорад"
 msgid "The specified file or folder <strong>%1</strong> does not exist."
 msgstr "Файли ё феҳрист муайян шуда<strong>%1</strong> мавҷуд нест."
 
-#: kio/global.cpp:664 kio/job.cpp:2099 kio/paste.cpp:64 kio/copyjob.cpp:1326
-#: kio/copyjob.cpp:1897
+#: kio/global.cpp:664 kio/job.cpp:2099 kio/copyjob.cpp:1326
+#: kio/copyjob.cpp:1897 kio/paste.cpp:64
 msgid "File Already Exists"
 msgstr "Файл аллакай мавҷуд аст"
 
@@ -1888,144 +1907,90 @@ msgstr "Барои файли мақсад як номи дигар интихо
 msgid "Undocumented Error"
 msgstr "Хатои бе мустанад"
 
-#: kio/renamedialog.cpp:122
-msgid "Appl&y to All"
-msgstr ""
-
-#: kio/renamedialog.cpp:123
-msgid ""
-"When this is checked the button pressed will be applied to all subsequent "
-"folder conflicts for the remainder of the current job.\n"
-"Unless you press Skip you will still be prompted in case of a conflict with "
-"an existing file in the directory."
-msgstr ""
-
-#: kio/renamedialog.cpp:124
-msgid ""
-"When this is checked the button pressed will be applied to all subsequent "
-"conflicts for the remainder of the current job."
-msgstr ""
-
-#: kio/renamedialog.cpp:129
-msgid "&Rename"
-msgstr "&Тағйири исм"
-
-#: kio/renamedialog.cpp:131
-msgid "Suggest New &Name"
-msgstr "&Исми навро пешниҳод кунед"
-
-#: kio/renamedialog.cpp:137
-msgid "&Skip"
-msgstr "&Гузарондан"
-
-#: kio/renamedialog.cpp:138
-msgid "Do not copy or move this folder, skip to the next item instead"
-msgstr ""
-
-#: kio/renamedialog.cpp:139
-msgid "Do not copy or move this file, skip to the next item instead"
-msgstr ""
-
-#: kio/renamedialog.cpp:144
+#: kio/fileundomanager.cpp:116
 #, fuzzy
-#| msgid "Write"
-msgctxt "Write files into an existing folder"
-msgid "&Write Into"
-msgstr "Навиштан"
+msgid "Creating directory"
+msgstr "Сохтани Феҳрист"
 
-#: kio/renamedialog.cpp:144
-msgid "&Overwrite"
-msgstr "&Ивваз кардан"
-
-#: kio/renamedialog.cpp:146
-msgid ""
-"Files and folders will be copied into the existing directory, alongside its "
-"existing contents.\n"
-"You will be prompted again in case of a conflict with an existing file in "
-"the directory."
+#: kio/fileundomanager.cpp:117 kio/job.cpp:173
+msgid "Directory"
 msgstr ""
 
-#: kio/renamedialog.cpp:151
-msgid "&Resume"
-msgstr "&Идома додан"
-
-#: kio/renamedialog.cpp:160
-#, kde-format
-msgid ""
-"This action would overwrite '%1' with itself.\n"
-"Please enter a new file name:"
-msgstr ""
-"Ин амал '%1'-ро худнависӣ мекунад.\n"
-"Лутфан номи файли навро ворид кунед:"
-
-#: kio/renamedialog.cpp:162
-msgid "C&ontinue"
-msgstr "&Идома"
-
-#: kio/renamedialog.cpp:234
-#, fuzzy, kde-format
-#| msgid ""
-#| "This action would overwrite '%1' with itself.\n"
-#| "Please enter a new file name:"
-msgid "This action will overwrite '%1' with a newer file '%2'."
-msgstr ""
-"Ин амал '%1'-ро худнависӣ мекунад.\n"
-"Лутфан номи файли навро ворид кунед:"
-
-#: kio/renamedialog.cpp:236
-#, fuzzy, kde-format
-#| msgid ""
-#| "This action would overwrite '%1' with itself.\n"
-#| "Please enter a new file name:"
-msgid "This action will overwrite '%1' with a file of the same age '%2'."
-msgstr ""
-"Ин амал '%1'-ро худнависӣ мекунад.\n"
-"Лутфан номи файли навро ворид кунед:"
-
-#: kio/renamedialog.cpp:238
-#, fuzzy, kde-format
-#| msgid ""
-#| "This action would overwrite '%1' with itself.\n"
-#| "Please enter a new file name:"
-msgid "This action will overwrite '%1' with an older file '%2'."
-msgstr ""
-"Ин амал '%1'-ро худнависӣ мекунад.\n"
-"Лутфан номи файли навро ворид кунед:"
-
-#: kio/renamedialog.cpp:242
+#: kio/fileundomanager.cpp:119
 #, fuzzy
+#| msgid "Moving"
+msgid "Moving"
+msgstr "Дар ҳоли ҳаракат кардан"
+
+#: kio/fileundomanager.cpp:120 kio/job.cpp:159 kio/job.cpp:166 kio/job.cpp:191
+#, fuzzy
+msgctxt "The source of a file operation"
 msgid "Source"
 msgstr "Манбаъ:"
 
-#: kio/renamedialog.cpp:243
+#: kio/fileundomanager.cpp:121 kio/job.cpp:160 kio/job.cpp:167
 #, fuzzy
+msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Ҷойгиршавӣ:"
 
-#: kio/renamedialog.cpp:261
-#, kde-format
-msgid "An older item named '%1' already exists."
-msgstr "Элементи кӯҳнатарин бо номи '%1' мавҷуд аст."
+#: kio/fileundomanager.cpp:123
+#, fuzzy
+msgid "Deleting"
+msgstr " (Нест кардан)"
 
-#: kio/renamedialog.cpp:263
-#, kde-format
-msgid "A similar file named '%1' already exists."
-msgstr "Файли мутобиқ бо номи %1 аллакай мавҷуд аст."
+#: kio/fileundomanager.cpp:124 kio/job.cpp:179 kio/job.cpp:185
+#, fuzzy
+msgid "File"
+msgstr "&Филтр:"
 
-#: kio/renamedialog.cpp:265
-#, kde-format
-msgid "A newer item named '%1' already exists."
-msgstr "Элементи навтарин бо номи '%1' мавҷуд аст."
+#: kio/fileundomanager.cpp:284
+msgid "Und&o"
+msgstr ""
 
-#: kio/renamedialog.cpp:387 kio/paste.cpp:228 kio/krun.cpp:1095
-#: kio/kdirlister.cpp:329
+#: kio/fileundomanager.cpp:288
+msgid "Und&o: Copy"
+msgstr ""
+
+#: kio/fileundomanager.cpp:290
+msgid "Und&o: Link"
+msgstr ""
+
+#: kio/fileundomanager.cpp:292
+msgid "Und&o: Move"
+msgstr ""
+
+#: kio/fileundomanager.cpp:294
+#, fuzzy
+#| msgid "&Rename"
+msgid "Und&o: Rename"
+msgstr "&Тағйири исм"
+
+#: kio/fileundomanager.cpp:296
+#, fuzzy
+msgid "Und&o: Trash"
+msgstr "Файлҳои муваққатӣ"
+
+#: kio/fileundomanager.cpp:298
+#, fuzzy
+#| msgid "Could Not Create Folder"
+msgid "Und&o: Create Folder"
+msgstr "Феҳристро сохта карда натавонист"
+
+#: kio/fileundomanager.cpp:764
 #, kde-format
 msgid ""
-"Malformed URL\n"
-"%1"
+"The file %1 was copied from %2, but since then it has apparently been "
+"modified at %3.\n"
+"Undoing the copy will delete the file, and all modifications will be lost.\n"
+"Are you sure you want to delete %4?"
 msgstr ""
-"Нодастрасии URL\n"
-"%1"
+
+#: kio/fileundomanager.cpp:767
+#, fuzzy
+#| msgid "Updating System Configuration"
+msgid "Undo File Copy Confirmation"
+msgstr "Боз созии танзимоти система"
 
 #: kio/kdesktopfileactions.cpp:60
 #, kde-format
@@ -2077,6 +2042,68 @@ msgstr "Баровардан"
 #: kio/kdesktopfileactions.cpp:214
 msgid "Unmount"
 msgstr "Ғайрифаъол"
+
+#: kio/job.cpp:158
+#, fuzzy
+#| msgid "Moving"
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Дар ҳоли ҳаракат кардан"
+
+#: kio/job.cpp:165
+#, fuzzy
+#| msgid "Copying"
+msgctxt "@title job"
+msgid "Copying"
+msgstr "Дар ҳоли нусха бардоштан"
+
+#: kio/job.cpp:172
+#, fuzzy
+msgctxt "@title job"
+msgid "Creating directory"
+msgstr "Сохтани Феҳрист"
+
+#: kio/job.cpp:178
+#, fuzzy
+msgctxt "@title job"
+msgid "Deleting"
+msgstr " (Нест кардан)"
+
+#: kio/job.cpp:184
+#, fuzzy
+#| msgid "Examining"
+msgctxt "@title job"
+msgid "Examining"
+msgstr "Дар ҳоли санҷидан"
+
+#: kio/job.cpp:190
+msgctxt "@title job"
+msgid "Transferring"
+msgstr ""
+
+#: kio/job.cpp:196
+#, fuzzy
+#| msgid "Mounting"
+msgctxt "@title job"
+msgid "Mounting"
+msgstr "Дар ҳоли васл кардан"
+
+#: kio/job.cpp:197
+#, fuzzy
+msgid "Device"
+msgstr "Сохзтмон:"
+
+#: kio/job.cpp:198 kio/job.cpp:204
+#, fuzzy
+msgid "Mountpoint"
+msgstr "Нуқтаи монтажкунӣ:"
+
+#: kio/job.cpp:203
+#, fuzzy
+#| msgid "Unmounting"
+msgctxt "@title job"
+msgid "Unmounting"
+msgstr "Ҷудо кардан"
 
 #: kio/slave.cpp:432
 #, kde-format
@@ -2224,179 +2251,48 @@ msgstr ""
 "Сертификати SSL бо мувофақияти танзимот рад карда шуд. Шумо метавонед ин "
 "танзимотҳоро дар Маркази Идоракунии KDE-ро дигаргун кунед."
 
-#: kio/kfileitemdelegate.cpp:236
-#, fuzzy, kde-format
-msgctxt "Items in a folder"
-msgid "1 item"
-msgid_plural "%1 items"
-msgstr[0] "%1 файлҳо"
-msgstr[1] "%1 файлҳо"
-
-#: kio/kfileitemdelegate.cpp:292 kio/kfileitemdelegate.cpp:296
+#: kio/slavebase.h:266 kio/slavebase.h:286
 #, fuzzy
-#| msgid "Unknown"
-msgctxt "@info mimetype"
-msgid "Unknown"
-msgstr "Ношинос"
+#| msgid "&Reset"
+msgid "&Yes"
+msgstr "&Нав кардан"
+
+#: kio/slavebase.h:267 kio/slavebase.h:287
+#, fuzzy
+msgid "&No"
+msgstr "Ғайри"
 
 #: kio/passworddialog.cpp:62
 msgid "Authorization Dialog"
 msgstr "Тирезаи авторизатсия"
 
-#: kio/job.cpp:158
-#, fuzzy
-#| msgid "Moving"
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Дар ҳоли ҳаракат кардан"
-
-#: kio/job.cpp:159 kio/job.cpp:166 kio/job.cpp:191 kio/fileundomanager.cpp:120
-#, fuzzy
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Манбаъ:"
-
-#: kio/job.cpp:160 kio/job.cpp:167 kio/fileundomanager.cpp:121
-#, fuzzy
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Ҷойгиршавӣ:"
-
-#: kio/job.cpp:165
-#, fuzzy
-#| msgid "Copying"
-msgctxt "@title job"
-msgid "Copying"
-msgstr "Дар ҳоли нусха бардоштан"
-
-#: kio/job.cpp:172
-#, fuzzy
-msgctxt "@title job"
-msgid "Creating directory"
-msgstr "Сохтани Феҳрист"
-
-#: kio/job.cpp:173 kio/fileundomanager.cpp:117
-msgid "Directory"
-msgstr ""
-
-#: kio/job.cpp:178
-#, fuzzy
-msgctxt "@title job"
-msgid "Deleting"
-msgstr " (Нест кардан)"
-
-#: kio/job.cpp:179 kio/job.cpp:185 kio/fileundomanager.cpp:124
-#, fuzzy
-msgid "File"
-msgstr "&Филтр:"
-
-#: kio/job.cpp:184
-#, fuzzy
-#| msgid "Examining"
-msgctxt "@title job"
-msgid "Examining"
-msgstr "Дар ҳоли санҷидан"
-
-#: kio/job.cpp:190
-msgctxt "@title job"
-msgid "Transferring"
-msgstr ""
-
-#: kio/job.cpp:196
-#, fuzzy
-#| msgid "Mounting"
-msgctxt "@title job"
-msgid "Mounting"
-msgstr "Дар ҳоли васл кардан"
-
-#: kio/job.cpp:197
-#, fuzzy
-msgid "Device"
-msgstr "Сохзтмон:"
-
-#: kio/job.cpp:198 kio/job.cpp:204
-#, fuzzy
-msgid "Mountpoint"
-msgstr "Нуқтаи монтажкунӣ:"
-
-#: kio/job.cpp:203
-#, fuzzy
-#| msgid "Unmounting"
-msgctxt "@title job"
-msgid "Unmounting"
-msgstr "Ҷудо кардан"
-
-#: kio/fileundomanager.cpp:116
-#, fuzzy
-msgid "Creating directory"
-msgstr "Сохтани Феҳрист"
-
-#: kio/fileundomanager.cpp:119
-#, fuzzy
-#| msgid "Moving"
-msgid "Moving"
-msgstr "Дар ҳоли ҳаракат кардан"
-
-#: kio/fileundomanager.cpp:123
-#, fuzzy
-msgid "Deleting"
-msgstr " (Нест кардан)"
-
-#: kio/fileundomanager.cpp:284
-msgid "Und&o"
-msgstr ""
-
-#: kio/fileundomanager.cpp:288
-msgid "Und&o: Copy"
-msgstr ""
-
-#: kio/fileundomanager.cpp:290
-msgid "Und&o: Link"
-msgstr ""
-
-#: kio/fileundomanager.cpp:292
-msgid "Und&o: Move"
-msgstr ""
-
-#: kio/fileundomanager.cpp:294
-#, fuzzy
-#| msgid "&Rename"
-msgid "Und&o: Rename"
-msgstr "&Тағйири исм"
-
-#: kio/fileundomanager.cpp:296
-#, fuzzy
-msgid "Und&o: Trash"
-msgstr "Файлҳои муваққатӣ"
-
-#: kio/fileundomanager.cpp:298
-#, fuzzy
-#| msgid "Could Not Create Folder"
-msgid "Und&o: Create Folder"
-msgstr "Феҳристро сохта карда натавонист"
-
-#: kio/fileundomanager.cpp:764
-#, kde-format
-msgid ""
-"The file %1 was copied from %2, but since then it has apparently been "
-"modified at %3.\n"
-"Undoing the copy will delete the file, and all modifications will be lost.\n"
-"Are you sure you want to delete %4?"
-msgstr ""
-
-#: kio/fileundomanager.cpp:767
-#, fuzzy
-#| msgid "Updating System Configuration"
-msgid "Undo File Copy Confirmation"
-msgstr "Боз созии танзимоти система"
-
 #: kio/accessmanagerreply_p.cpp:69
 msgid "Blocked request."
 msgstr ""
 
+#: kio/kemailsettings.cpp:251 kio/kemailsettings.cpp:254
+#: kio/kemailsettings.cpp:261
+#, fuzzy
+msgid "Default"
+msgstr " (Нест кардан)"
+
 #: kio/pastedialog.cpp:55
 msgid "Data format:"
 msgstr ""
+
+#: kio/skipdialog.cpp:40
+#, fuzzy
+msgid "Information"
+msgstr "Ахборот дар бораи KDE ба SSL "
+
+#: kio/skipdialog.cpp:47
+msgid "Skip"
+msgstr "Гузарондан"
+
+#: kio/skipdialog.cpp:50
+#, fuzzy
+msgid "AutoSkip"
+msgstr "Гузаронидани ҳамааш"
 
 #: kio/jobuidelegate.cpp:149 ../kfile/kdiroperator.cpp:815
 #, fuzzy, kde-format
@@ -2486,87 +2382,6 @@ msgstr "Соҳиб:"
 msgid "Permissions:"
 msgstr "Дастрасӣ:"
 
-#: kio/paste.cpp:48 kio/paste.cpp:130
-msgid "Filename for clipboard content:"
-msgstr "Номи файл барои нигоҳ доштани буфери иввазот:"
-
-#: kio/paste.cpp:123
-#, fuzzy, kde-format
-msgid "%1 (%2)"
-msgstr "%1 (порт %2)"
-
-#: kio/paste.cpp:139
-msgid ""
-"The clipboard has changed since you used 'paste': the chosen data format is "
-"no longer applicable. Please copy again what you wanted to paste."
-msgstr ""
-
-#: kio/paste.cpp:210 kio/paste.cpp:277
-msgid "The clipboard is empty"
-msgstr "Буфери иввазот холист"
-
-#: kio/paste.cpp:324
-#, fuzzy, kde-format
-msgid "&Paste File"
-msgid_plural "&Paste %1 Files"
-msgstr[0] "%1 файлҳо"
-msgstr[1] "%1 файлҳо"
-
-#: kio/paste.cpp:326
-#, kde-format
-msgid "&Paste URL"
-msgid_plural "&Paste %1 URLs"
-msgstr[0] ""
-msgstr[1] ""
-
-#: kio/paste.cpp:328
-#, fuzzy
-msgid "&Paste Clipboard Contents"
-msgstr "Номи файл барои нигоҳ доштани буфери иввазот:"
-
-#: kio/slavebase.h:266 kio/slavebase.h:286
-#, fuzzy
-#| msgid "&Reset"
-msgid "&Yes"
-msgstr "&Нав кардан"
-
-#: kio/slavebase.h:267 kio/slavebase.h:287
-#, fuzzy
-msgid "&No"
-msgstr "Ғайри"
-
-#: kio/kbuildsycocaprogressdialog.cpp:45
-msgid "Updating System Configuration"
-msgstr "Боз созии танзимоти система"
-
-#: kio/kbuildsycocaprogressdialog.cpp:46
-msgid "Updating system configuration."
-msgstr "Боз созии танзимоти система"
-
-#: kio/kstatusbarofflineindicator.cpp:52
-msgid "The desktop is offline"
-msgstr ""
-
-#: kio/kemailsettings.cpp:251 kio/kemailsettings.cpp:254
-#: kio/kemailsettings.cpp:261
-#, fuzzy
-msgid "Default"
-msgstr " (Нест кардан)"
-
-#: kio/skipdialog.cpp:40
-#, fuzzy
-msgid "Information"
-msgstr "Ахборот дар бораи KDE ба SSL "
-
-#: kio/skipdialog.cpp:47
-msgid "Skip"
-msgstr "Гузарондан"
-
-#: kio/skipdialog.cpp:50
-#, fuzzy
-msgid "AutoSkip"
-msgstr "Гузаронидани ҳамааш"
-
 #: kio/krun.cpp:126
 #, kde-format
 msgid ""
@@ -2638,6 +2453,16 @@ msgstr ""
 msgid "Unable to make the service %1 executable, aborting execution"
 msgstr ""
 
+#: kio/krun.cpp:1095 kio/renamedialog.cpp:387 kio/paste.cpp:228
+#: kio/kdirlister.cpp:329
+#, kde-format
+msgid ""
+"Malformed URL\n"
+"%1"
+msgstr ""
+"Нодастрасии URL\n"
+"%1"
+
 #: kio/krun.cpp:1128
 #, kde-format
 msgid ""
@@ -2652,14 +2477,188 @@ msgstr ""
 msgid "Could not find the program '%1'"
 msgstr "Барномаи '%1' -ро ёфта натавонист"
 
-#: kio/kimageio.cpp:43
-msgid "All Pictures"
-msgstr "Тамоми суратҳо"
+#: kio/copyjob.cpp:1326 kio/copyjob.cpp:1897
+msgid "Already Exists as Folder"
+msgstr "Аллакай монанди феҳрист низ мавҷуд аст"
 
-#: kio/kdbusservicestarter.cpp:76
+#: kio/kbuildsycocaprogressdialog.cpp:45
+msgid "Updating System Configuration"
+msgstr "Боз созии танзимоти система"
+
+#: kio/kbuildsycocaprogressdialog.cpp:46
+msgid "Updating system configuration."
+msgstr "Боз созии танзимоти система"
+
+#: kio/kstatusbarofflineindicator.cpp:52
+msgid "The desktop is offline"
+msgstr ""
+
+#: kio/renamedialog.cpp:122
+msgid "Appl&y to All"
+msgstr ""
+
+#: kio/renamedialog.cpp:123
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"folder conflicts for the remainder of the current job.\n"
+"Unless you press Skip you will still be prompted in case of a conflict with "
+"an existing file in the directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:124
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"conflicts for the remainder of the current job."
+msgstr ""
+
+#: kio/renamedialog.cpp:129
+msgid "&Rename"
+msgstr "&Тағйири исм"
+
+#: kio/renamedialog.cpp:131
+msgid "Suggest New &Name"
+msgstr "&Исми навро пешниҳод кунед"
+
+#: kio/renamedialog.cpp:137
+msgid "&Skip"
+msgstr "&Гузарондан"
+
+#: kio/renamedialog.cpp:138
+msgid "Do not copy or move this folder, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:139
+msgid "Do not copy or move this file, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:144
+#, fuzzy
+#| msgid "Write"
+msgctxt "Write files into an existing folder"
+msgid "&Write Into"
+msgstr "Навиштан"
+
+#: kio/renamedialog.cpp:144
+msgid "&Overwrite"
+msgstr "&Ивваз кардан"
+
+#: kio/renamedialog.cpp:146
+msgid ""
+"Files and folders will be copied into the existing directory, alongside its "
+"existing contents.\n"
+"You will be prompted again in case of a conflict with an existing file in "
+"the directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:151
+msgid "&Resume"
+msgstr "&Идома додан"
+
+#: kio/renamedialog.cpp:160
 #, kde-format
-msgid "No service implementing %1"
-msgstr "Хизмати нест барои иҷрои %1"
+msgid ""
+"This action would overwrite '%1' with itself.\n"
+"Please enter a new file name:"
+msgstr ""
+"Ин амал '%1'-ро худнависӣ мекунад.\n"
+"Лутфан номи файли навро ворид кунед:"
+
+#: kio/renamedialog.cpp:162
+msgid "C&ontinue"
+msgstr "&Идома"
+
+#: kio/renamedialog.cpp:234
+#, fuzzy, kde-format
+#| msgid ""
+#| "This action would overwrite '%1' with itself.\n"
+#| "Please enter a new file name:"
+msgid "This action will overwrite '%1' with a newer file '%2'."
+msgstr ""
+"Ин амал '%1'-ро худнависӣ мекунад.\n"
+"Лутфан номи файли навро ворид кунед:"
+
+#: kio/renamedialog.cpp:236
+#, fuzzy, kde-format
+#| msgid ""
+#| "This action would overwrite '%1' with itself.\n"
+#| "Please enter a new file name:"
+msgid "This action will overwrite '%1' with a file of the same age '%2'."
+msgstr ""
+"Ин амал '%1'-ро худнависӣ мекунад.\n"
+"Лутфан номи файли навро ворид кунед:"
+
+#: kio/renamedialog.cpp:238
+#, fuzzy, kde-format
+#| msgid ""
+#| "This action would overwrite '%1' with itself.\n"
+#| "Please enter a new file name:"
+msgid "This action will overwrite '%1' with an older file '%2'."
+msgstr ""
+"Ин амал '%1'-ро худнависӣ мекунад.\n"
+"Лутфан номи файли навро ворид кунед:"
+
+#: kio/renamedialog.cpp:242
+#, fuzzy
+msgid "Source"
+msgstr "Манбаъ:"
+
+#: kio/renamedialog.cpp:243
+#, fuzzy
+msgid "Destination"
+msgstr "Ҷойгиршавӣ:"
+
+#: kio/renamedialog.cpp:261
+#, kde-format
+msgid "An older item named '%1' already exists."
+msgstr "Элементи кӯҳнатарин бо номи '%1' мавҷуд аст."
+
+#: kio/renamedialog.cpp:263
+#, kde-format
+msgid "A similar file named '%1' already exists."
+msgstr "Файли мутобиқ бо номи %1 аллакай мавҷуд аст."
+
+#: kio/renamedialog.cpp:265
+#, kde-format
+msgid "A newer item named '%1' already exists."
+msgstr "Элементи навтарин бо номи '%1' мавҷуд аст."
+
+#: kio/paste.cpp:48 kio/paste.cpp:130
+msgid "Filename for clipboard content:"
+msgstr "Номи файл барои нигоҳ доштани буфери иввазот:"
+
+#: kio/paste.cpp:123
+#, fuzzy, kde-format
+msgid "%1 (%2)"
+msgstr "%1 (порт %2)"
+
+#: kio/paste.cpp:139
+msgid ""
+"The clipboard has changed since you used 'paste': the chosen data format is "
+"no longer applicable. Please copy again what you wanted to paste."
+msgstr ""
+
+#: kio/paste.cpp:210 kio/paste.cpp:277
+msgid "The clipboard is empty"
+msgstr "Буфери иввазот холист"
+
+#: kio/paste.cpp:324
+#, fuzzy, kde-format
+msgid "&Paste File"
+msgid_plural "&Paste %1 Files"
+msgstr[0] "%1 файлҳо"
+msgstr[1] "%1 файлҳо"
+
+#: kio/paste.cpp:326
+#, kde-format
+msgid "&Paste URL"
+msgid_plural "&Paste %1 URLs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: kio/paste.cpp:328
+#, fuzzy
+msgid "&Paste Clipboard Contents"
+msgstr "Номи файл барои нигоҳ доштани буфери иввазот:"
 
 #: kio/kdirlister.cpp:339
 #, kde-format
@@ -2668,9 +2667,10 @@ msgid ""
 "%1"
 msgstr ""
 
-#: kio/copyjob.cpp:1326 kio/copyjob.cpp:1897
-msgid "Already Exists as Folder"
-msgstr "Аллакай монанди феҳрист низ мавҷуд аст"
+#: kio/kdbusservicestarter.cpp:76
+#, kde-format
+msgid "No service implementing %1"
+msgstr "Хизмати нест барои иҷрои %1"
 
 #: kio/chmodjob.cpp:215
 #, kde-format
@@ -3067,6 +3067,25 @@ msgstr ""
 msgid "*.adr|Opera Bookmark Files (*.adr)"
 msgstr "*.adr|Файлҳои Монданҳои Opera (*.adr)"
 
+#: kfile/kfilemetadataprovider.cpp:303
+#, fuzzy
+msgctxt "@label"
+msgid "Rating"
+msgstr "Тартиби хел-хел ҷудо кардан"
+
+#: kfile/kfilemetadataprovider.cpp:305
+#, fuzzy
+msgctxt "@label"
+msgid "Tags"
+msgstr "Файлҳои муваққатӣ"
+
+#: kfile/kfilemetadataprovider.cpp:307 kfile/knfotranslator.cpp:39
+#, fuzzy
+#| msgid "Comment"
+msgctxt "@label"
+msgid "Comment"
+msgstr "Шарҳ"
+
 #: kfile/kfiledialog.cpp:129
 #, fuzzy
 #| msgid "*|All Files"
@@ -3097,6 +3116,33 @@ msgstr ""
 #: kfile/kurlrequester.cpp:242
 msgid "Open file dialog"
 msgstr "Кушодани диалоги файл"
+
+#: kfile/kfilemetainfowidget.cpp:163
+msgid "<Error>"
+msgstr "<Хато>"
+
+#: kfile/kmetaprops.cpp:57
+#, fuzzy
+msgctxt "@title:window"
+msgid "Configure Shown Data"
+msgstr "&Идома"
+
+#: kfile/kmetaprops.cpp:62
+msgctxt "@label::textbox"
+msgid "Configure which data should be shown"
+msgstr ""
+
+#: kfile/kmetaprops.cpp:120
+#, fuzzy
+msgctxt "@action:button"
+msgid "Configure..."
+msgstr "&Идома"
+
+#: kfile/kmetaprops.cpp:130
+#, fuzzy
+msgctxt "@title:tab"
+msgid "Information"
+msgstr "Ахборот дар бораи KDE ба SSL "
 
 #: kfile/kacleditwidget.cpp:61 kfile/kacleditwidget.cpp:454
 msgid "Owner"
@@ -3207,37 +3253,10 @@ msgstr ""
 msgid "Effective"
 msgstr ""
 
-#: kfile/kmetaprops.cpp:57
-#, fuzzy
-msgctxt "@title:window"
-msgid "Configure Shown Data"
-msgstr "&Идома"
-
-#: kfile/kmetaprops.cpp:62
-msgctxt "@label::textbox"
-msgid "Configure which data should be shown"
-msgstr ""
-
-#: kfile/kmetaprops.cpp:120
-#, fuzzy
-msgctxt "@action:button"
-msgid "Configure..."
-msgstr "&Идома"
-
-#: kfile/kmetaprops.cpp:130
-#, fuzzy
-msgctxt "@title:tab"
-msgid "Information"
-msgstr "Ахборот дар бораи KDE ба SSL "
-
 #: kfile/kdevicelistmodel.cpp:116
 #, fuzzy
 msgid "Device name"
 msgstr "Сохзтмон:"
-
-#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:994
-msgid "Location:"
-msgstr "Ҷойгиршавӣ:"
 
 #: kfile/kfilesharedialog.cpp:59
 msgid "&Share"
@@ -3314,247 +3333,41 @@ msgstr ""
 "Дар вақти тақсим накардани пӯшаи%1 хатогӣ пайдо шуд. Боварӣ ҳосил кунед,ки "
 "матни намоиши Perl 'таъини файли тақсимшуда "
 
+#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:994
+msgid "Location:"
+msgstr "Ҷойгиршавӣ:"
+
 #: kfile/kpreviewprops.cpp:50
 #, fuzzy
 msgid "P&review"
 msgstr "Пешнамоиш"
 
-#: kfile/knfotranslator.cpp:39 kfile/kfilemetadataprovider.cpp:307
+#: kfile/kcommentwidget.cpp:61
+#, fuzzy
+msgctxt "@label"
+msgid "Add Comment..."
+msgstr "&Иловаи навиштаҷот..."
+
+#: kfile/kcommentwidget.cpp:67
+#, fuzzy
+#| msgid "Calculating..."
+msgctxt "@label"
+msgid "Change..."
+msgstr "Ҳисоб карда истодаам..."
+
+#: kfile/kcommentwidget.cpp:109
 #, fuzzy
 #| msgid "Comment"
-msgctxt "@label"
-msgid "Comment"
+msgctxt "@title:window"
+msgid "Change Comment"
 msgstr "Шарҳ"
 
-#: kfile/knfotranslator.cpp:40
+#: kfile/kcommentwidget.cpp:110
 #, fuzzy
-#| msgid "Created:"
-msgctxt "@label creation date"
-msgid "Created"
-msgstr "Сохта шуд:"
-
-#: kfile/knfotranslator.cpp:41
-#, fuzzy
-#| msgid "Size"
-msgctxt "@label file content size"
-msgid "Size"
-msgstr "Андоза"
-
-#: kfile/knfotranslator.cpp:42
-msgctxt "@label file depends from"
-msgid "Depends"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:43
-#, fuzzy
-#| msgid "Parent Folder"
-msgctxt "@label parent directory"
-msgid "Part of"
-msgstr "Феҳристи оилавӣ"
-
-#: kfile/knfotranslator.cpp:44
-#, fuzzy
-msgctxt "@label modified date of file"
-msgid "Modified"
-msgstr "Дигаргуншуда:"
-
-#: kfile/knfotranslator.cpp:45
-#, fuzzy
-#| msgid "Mime Type"
-msgctxt "@label"
-msgid "MIME Type"
-msgstr "Намуди Mime"
-
-#: kfile/knfotranslator.cpp:46
-#, fuzzy
-#| msgid "Contents:"
-msgctxt "@label"
-msgid "Content"
-msgstr "Таркиб:"
-
-#: kfile/knfotranslator.cpp:47
-#, fuzzy
-msgctxt "@label music title"
-msgid "Title"
-msgstr "&Филтр:"
-
-#: kfile/knfotranslator.cpp:48
-#, fuzzy
-#| msgid "Location:"
-msgctxt "@label file URL"
-msgid "Location"
-msgstr "Ҷойгиршавӣ:"
-
-#: kfile/knfotranslator.cpp:49
-#, fuzzy
-#| msgid "Created:"
-msgctxt "@label"
-msgid "Creator"
-msgstr "Сохта шуд:"
-
-#: kfile/knfotranslator.cpp:50
-msgctxt "@label"
-msgid "Average Bitrate"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:51
-msgctxt "@label"
-msgid "Channels"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:52
-msgctxt "@label number of characters"
-msgid "Characters"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:53
-#, fuzzy
-#| msgid "C&onnect"
-msgctxt "@label"
-msgid "Codec"
-msgstr "&Пайваст кунед"
-
-#: kfile/knfotranslator.cpp:54
-msgctxt "@label"
-msgid "Color Depth"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:55
-#, fuzzy
-msgctxt "@label"
-msgid "Filename"
-msgstr "Сохзтмон:"
-
-#: kfile/knfotranslator.cpp:56
-msgctxt "@label"
-msgid "Height"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:57
-msgctxt "@label"
-msgid "Interlace Mode"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:58
-#, fuzzy
-#| msgid "Link"
-msgctxt "@label number of lines"
-msgid "Lines"
-msgstr "Алоқа"
-
-#: kfile/knfotranslator.cpp:59
-msgctxt "@label"
-msgid "Programming Language"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:60
-msgctxt "@label"
-msgid "Sample Rate"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:61
-#, fuzzy
-#| msgid "Write"
-msgctxt "@label"
-msgid "Width"
-msgstr "Навиштан"
-
-#: kfile/knfotranslator.cpp:62
-msgctxt "@label number of words"
-msgid "Words"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:63
-msgctxt "@label EXIF aperture value"
-msgid "Aperture"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:64
-msgctxt "@label EXIF"
-msgid "Exposure Bias Value"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:65
-#, fuzzy
-#| msgid "Exposure:"
-msgctxt "@label EXIF"
-msgid "Exposure Time"
-msgstr "Муддати имконияти истифодашавӣ:"
-
-#: kfile/knfotranslator.cpp:66
-#, fuzzy
-#| msgid "Class"
-msgctxt "@label EXIF"
-msgid "Flash"
-msgstr "Синф"
-
-#: kfile/knfotranslator.cpp:67
-msgctxt "@label EXIF"
-msgid "Focal Length"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:68
-msgctxt "@label EXIF"
-msgid "Focal Length 35 mm"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:69
-msgctxt "@label EXIF"
-msgid "ISO Speed Ratings"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:70
-msgctxt "@label EXIF"
-msgid "Make"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:71
-#, fuzzy
-#| msgid "Creating Folder"
-msgctxt "@label EXIF"
-msgid "Metering Mode"
-msgstr "Сохтани Феҳрист"
-
-#: kfile/knfotranslator.cpp:72
-#, fuzzy
-msgctxt "@label EXIF"
-msgid "Model"
-msgstr "Дигаргуншуда:"
-
-#: kfile/knfotranslator.cpp:73
-#, fuzzy
-#| msgid "Organization:"
-msgctxt "@label EXIF"
-msgid "Orientation"
-msgstr "Ташкилот:"
-
-#: kfile/knfotranslator.cpp:74
-msgctxt "@label EXIF"
-msgid "White Balance"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:75
-#, fuzzy
-#| msgid "&General"
-msgctxt "@label music genre"
-msgid "Genre"
-msgstr "&Умумӣ"
-
-#: kfile/knfotranslator.cpp:76
-msgctxt "@label music album"
-msgid "Album"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:77
-msgctxt "@label music track number"
-msgid "Track"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:78 kfile/kfilemetadatawidget.cpp:575
-#, fuzzy
-msgctxt "@label file type"
-msgid "Type"
-msgstr "Намуд:"
+#| msgid "Comment"
+msgctxt "@title:window"
+msgid "Add Comment"
+msgstr "Шарҳ"
 
 #: kfile/kencodingfiledialog.cpp:50
 #, fuzzy
@@ -4150,61 +3963,235 @@ msgstr ""
 msgid "Advanced Options for %1"
 msgstr "Интихоботҳои иловагӣ барои %1"
 
-#: kfile/kfilemetadatawidget.cpp:494
+#: kfile/knfotranslator.cpp:40
+#, fuzzy
+#| msgid "Created:"
+msgctxt "@label creation date"
+msgid "Created"
+msgstr "Сохта шуд:"
+
+#: kfile/knfotranslator.cpp:41
 #, fuzzy
 #| msgid "Size"
-msgctxt "@label"
+msgctxt "@label file content size"
 msgid "Size"
 msgstr "Андоза"
 
-#: kfile/kfilemetadatawidget.cpp:496
-#, fuzzy
-msgctxt "@label"
-msgid "Folder"
-msgstr "Феҳрист"
+#: kfile/knfotranslator.cpp:42
+msgctxt "@label file depends from"
+msgid "Depends"
+msgstr ""
 
-#: kfile/kfilemetadatawidget.cpp:512
+#: kfile/knfotranslator.cpp:43
 #, fuzzy
-#| msgid "Size:"
-msgctxt "@label"
-msgid "Total Size"
-msgstr "Андоза:"
+#| msgid "Parent Folder"
+msgctxt "@label parent directory"
+msgid "Part of"
+msgstr "Феҳристи оилавӣ"
 
-#: kfile/kfilemetadatawidget.cpp:577
+#: kfile/knfotranslator.cpp:44
 #, fuzzy
-msgctxt "@label"
+msgctxt "@label modified date of file"
 msgid "Modified"
 msgstr "Дигаргуншуда:"
 
-#: kfile/kfilemetadatawidget.cpp:578
+#: kfile/knfotranslator.cpp:45
 #, fuzzy
-#| msgid "Owner"
+#| msgid "Mime Type"
 msgctxt "@label"
-msgid "Owner"
-msgstr "Соҳиб"
+msgid "MIME Type"
+msgstr "Намуди Mime"
 
-#: kfile/kfilemetadatawidget.cpp:579
+#: kfile/knfotranslator.cpp:46
 #, fuzzy
-#| msgid "Permissions"
+#| msgid "Contents:"
 msgctxt "@label"
-msgid "Permissions"
-msgstr "Имконпазирҳо"
+msgid "Content"
+msgstr "Таркиб:"
 
-#: kfile/kfilemetadataprovider.cpp:303
+#: kfile/knfotranslator.cpp:47
+#, fuzzy
+msgctxt "@label music title"
+msgid "Title"
+msgstr "&Филтр:"
+
+#: kfile/knfotranslator.cpp:48
+#, fuzzy
+#| msgid "Location:"
+msgctxt "@label file URL"
+msgid "Location"
+msgstr "Ҷойгиршавӣ:"
+
+#: kfile/knfotranslator.cpp:49
+#, fuzzy
+#| msgid "Created:"
+msgctxt "@label"
+msgid "Creator"
+msgstr "Сохта шуд:"
+
+#: kfile/knfotranslator.cpp:50
+msgctxt "@label"
+msgid "Average Bitrate"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:51
+msgctxt "@label"
+msgid "Channels"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:52
+msgctxt "@label number of characters"
+msgid "Characters"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:53
+#, fuzzy
+#| msgid "C&onnect"
+msgctxt "@label"
+msgid "Codec"
+msgstr "&Пайваст кунед"
+
+#: kfile/knfotranslator.cpp:54
+msgctxt "@label"
+msgid "Color Depth"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:55
 #, fuzzy
 msgctxt "@label"
-msgid "Rating"
-msgstr "Тартиби хел-хел ҷудо кардан"
+msgid "Filename"
+msgstr "Сохзтмон:"
 
-#: kfile/kfilemetadataprovider.cpp:305
-#, fuzzy
+#: kfile/knfotranslator.cpp:56
 msgctxt "@label"
-msgid "Tags"
-msgstr "Файлҳои муваққатӣ"
+msgid "Height"
+msgstr ""
 
-#: kfile/kfilemetainfowidget.cpp:163
-msgid "<Error>"
-msgstr "<Хато>"
+#: kfile/knfotranslator.cpp:57
+msgctxt "@label"
+msgid "Interlace Mode"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:58
+#, fuzzy
+#| msgid "Link"
+msgctxt "@label number of lines"
+msgid "Lines"
+msgstr "Алоқа"
+
+#: kfile/knfotranslator.cpp:59
+msgctxt "@label"
+msgid "Programming Language"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:60
+msgctxt "@label"
+msgid "Sample Rate"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:61
+#, fuzzy
+#| msgid "Write"
+msgctxt "@label"
+msgid "Width"
+msgstr "Навиштан"
+
+#: kfile/knfotranslator.cpp:62
+msgctxt "@label number of words"
+msgid "Words"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:63
+msgctxt "@label EXIF aperture value"
+msgid "Aperture"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:64
+msgctxt "@label EXIF"
+msgid "Exposure Bias Value"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:65
+#, fuzzy
+#| msgid "Exposure:"
+msgctxt "@label EXIF"
+msgid "Exposure Time"
+msgstr "Муддати имконияти истифодашавӣ:"
+
+#: kfile/knfotranslator.cpp:66
+#, fuzzy
+#| msgid "Class"
+msgctxt "@label EXIF"
+msgid "Flash"
+msgstr "Синф"
+
+#: kfile/knfotranslator.cpp:67
+msgctxt "@label EXIF"
+msgid "Focal Length"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:68
+msgctxt "@label EXIF"
+msgid "Focal Length 35 mm"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:69
+msgctxt "@label EXIF"
+msgid "ISO Speed Ratings"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:70
+msgctxt "@label EXIF"
+msgid "Make"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:71
+#, fuzzy
+#| msgid "Creating Folder"
+msgctxt "@label EXIF"
+msgid "Metering Mode"
+msgstr "Сохтани Феҳрист"
+
+#: kfile/knfotranslator.cpp:72
+#, fuzzy
+msgctxt "@label EXIF"
+msgid "Model"
+msgstr "Дигаргуншуда:"
+
+#: kfile/knfotranslator.cpp:73
+#, fuzzy
+#| msgid "Organization:"
+msgctxt "@label EXIF"
+msgid "Orientation"
+msgstr "Ташкилот:"
+
+#: kfile/knfotranslator.cpp:74
+msgctxt "@label EXIF"
+msgid "White Balance"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:75
+#, fuzzy
+#| msgid "&General"
+msgctxt "@label music genre"
+msgid "Genre"
+msgstr "&Умумӣ"
+
+#: kfile/knfotranslator.cpp:76
+msgctxt "@label music album"
+msgid "Album"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:77
+msgctxt "@label music track number"
+msgid "Track"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:78 kfile/kfilemetadatawidget.cpp:575
+#, fuzzy
+msgctxt "@label file type"
+msgid "Type"
+msgstr "Намуд:"
 
 #: kfile/kopenwithdialog.cpp:269
 msgid "Known Applications"
@@ -4308,32 +4295,45 @@ msgstr ""
 msgid "'%1' not found, please type a valid program name."
 msgstr ""
 
-#: kfile/kcommentwidget.cpp:61
+#: kfile/kfilemetadatawidget.cpp:494
+#, fuzzy
+#| msgid "Size"
+msgctxt "@label"
+msgid "Size"
+msgstr "Андоза"
+
+#: kfile/kfilemetadatawidget.cpp:496
 #, fuzzy
 msgctxt "@label"
-msgid "Add Comment..."
-msgstr "&Иловаи навиштаҷот..."
+msgid "Folder"
+msgstr "Феҳрист"
 
-#: kfile/kcommentwidget.cpp:67
+#: kfile/kfilemetadatawidget.cpp:512
 #, fuzzy
-#| msgid "Calculating..."
+#| msgid "Size:"
 msgctxt "@label"
-msgid "Change..."
-msgstr "Ҳисоб карда истодаам..."
+msgid "Total Size"
+msgstr "Андоза:"
 
-#: kfile/kcommentwidget.cpp:109
+#: kfile/kfilemetadatawidget.cpp:577
 #, fuzzy
-#| msgid "Comment"
-msgctxt "@title:window"
-msgid "Change Comment"
-msgstr "Шарҳ"
+msgctxt "@label"
+msgid "Modified"
+msgstr "Дигаргуншуда:"
 
-#: kfile/kcommentwidget.cpp:110
+#: kfile/kfilemetadatawidget.cpp:578
 #, fuzzy
-#| msgid "Comment"
-msgctxt "@title:window"
-msgid "Add Comment"
-msgstr "Шарҳ"
+#| msgid "Owner"
+msgctxt "@label"
+msgid "Owner"
+msgstr "Соҳиб"
+
+#: kfile/kfilemetadatawidget.cpp:579
+#, fuzzy
+#| msgid "Permissions"
+msgctxt "@label"
+msgid "Permissions"
+msgstr "Имконпазирҳо"
 
 #: kfile/kfilemetadataconfigurationwidget.cpp:171
 #, fuzzy
@@ -6505,14 +6505,6 @@ msgstr ""
 "махсус мебошанд, аммоонҳо чунини тамоми гузоришотҳои KDE-и дигар низ кор "
 "мекунанд.</qt>"
 
-#: ../kfile/kurlnavigatortogglebutton.cpp:90
-msgid "Click for Location Navigation"
-msgstr ""
-
-#: ../kfile/kurlnavigatortogglebutton.cpp:92
-msgid "Click to Edit Location"
-msgstr ""
-
 #: ../kfile/kdiroperator.cpp:769 ../kfile/kdirselectdialog.cpp:156
 #, kde-format
 msgid "A file or folder named %1 already exists."
@@ -6703,27 +6695,6 @@ msgstr "Кушодани диалоги файл"
 msgid "&View"
 msgstr "&Пешнамоиш"
 
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:164
-#, fuzzy
-#| msgid "Devices"
-msgctxt "@item:inmenu"
-msgid "Devices"
-msgstr "Сохтмонҳо"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:168
-#, fuzzy
-#| msgid "SSL version:"
-msgctxt "@item:inmenu"
-msgid "Subversion"
-msgstr "Ривояти SSL:"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:172
-#, fuzzy
-#| msgid "Others"
-msgctxt "@item:inmenu"
-msgid "Other"
-msgstr "Дигарон"
-
 #: ../kfile/kdirselectdialog.cpp:128
 #, fuzzy
 #| msgid "New Folder"
@@ -6782,6 +6753,14 @@ msgstr "Намоиши феҳристҳои пинҳонӣ"
 msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "Хусусиятҳо барои %1"
+
+#: ../kfile/kurlnavigatortogglebutton.cpp:90
+msgid "Click for Location Navigation"
+msgstr ""
+
+#: ../kfile/kurlnavigatortogglebutton.cpp:92
+msgid "Click to Edit Location"
+msgstr ""
 
 #: ../kfile/kfileplacesview.cpp:569
 #, fuzzy
@@ -7093,6 +7072,27 @@ msgstr "Ба хатогии ногаҳонӣ(%1), ҳангоми кӯшиши %2
 #| msgid "Show Hidden Folders"
 msgid "Show Hidden Folders"
 msgstr "Намоиши феҳристҳои пинҳонӣ"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:164
+#, fuzzy
+#| msgid "Devices"
+msgctxt "@item:inmenu"
+msgid "Devices"
+msgstr "Сохтмонҳо"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:168
+#, fuzzy
+#| msgid "SSL version:"
+msgctxt "@item:inmenu"
+msgid "Subversion"
+msgstr "Ривояти SSL:"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:172
+#, fuzzy
+#| msgid "Others"
+msgctxt "@item:inmenu"
+msgid "Other"
+msgstr "Дигарон"
 
 #, fuzzy
 #~ msgid "size %1 (%2)"
