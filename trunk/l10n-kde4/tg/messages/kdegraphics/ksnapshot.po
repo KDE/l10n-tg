@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksnapshot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-07-01 05:07+0200\n"
+"POT-Creation-Date: 2010-07-17 04:58+0200\n"
 "PO-Revision-Date: 2005-12-22 14:42+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -36,7 +36,7 @@ msgstr ""
 msgid "Captures a part of windows"
 msgstr ""
 
-#: kbackgroundsnapshot.cpp:91 ksnapshot.cpp:165
+#: kbackgroundsnapshot.cpp:91 ksnapshot.cpp:193
 msgid "snapshot"
 msgstr "сурат"
 
@@ -56,7 +56,15 @@ msgstr "KSnapshot"
 msgid "(c) 2007, Montel Laurent"
 msgstr ""
 
-#: ksnapshot.cpp:110
+#: ksnapshot.cpp:88
+msgid "Copy"
+msgstr ""
+
+#: ksnapshot.cpp:89
+msgid "Open With..."
+msgstr ""
+
+#: ksnapshot.cpp:118
 #, fuzzy
 #| msgid " sec"
 msgid " second"
@@ -64,11 +72,11 @@ msgid_plural " seconds"
 msgstr[0] " сония"
 msgstr[1] " сония"
 
-#: ksnapshot.cpp:179
+#: ksnapshot.cpp:207
 msgid "Quick Save Snapshot &As..."
 msgstr "Тезтар нигоҳ доштан &ҳамчун..."
 
-#: ksnapshot.cpp:180
+#: ksnapshot.cpp:208
 msgid ""
 "Save the snapshot to the file specified by the user without showing the file "
 "dialog."
@@ -76,29 +84,29 @@ msgstr ""
 "Нигоҳ доштани сурат дар файл бо номе, ки бо истифодакунанда ишора шудааст ва "
 "ғайри намоиши диалоги интихоби файл."
 
-#: ksnapshot.cpp:182
+#: ksnapshot.cpp:210
 msgid "Save Snapshot &As..."
 msgstr "Нигоҳ доштани сурат &ҳамчун..."
 
-#: ksnapshot.cpp:183
+#: ksnapshot.cpp:211
 msgid "Save the snapshot to the file specified by the user."
 msgstr ""
 "Нигоҳ доштани сурат дар файл бо номе, ки бо истифодакунанда ишора шудааст."
 
-#: ksnapshot.cpp:232
+#: ksnapshot.cpp:264
 #, fuzzy
 msgid "Save As"
 msgstr "&Нигоҳ доштан ҳамчун..."
 
-#: ksnapshot.cpp:394
+#: ksnapshot.cpp:426
 msgid "Other Application..."
 msgstr ""
 
-#: ksnapshot.cpp:474
+#: ksnapshot.cpp:511
 msgid "The screen has been successfully grabbed."
 msgstr "Тасвири экран бо мувафақият иҷро шуд."
 
-#: ksnapshot.cpp:580
+#: ksnapshot.cpp:666
 #, kde-format
 msgid "Preview of the snapshot image (%1 x %2)"
 msgstr ""
@@ -202,15 +210,104 @@ msgstr ""
 "сурати экран, кашида бурд. Кӯшиш кунед онро ба тирезаи мудири файлии "
 "Konqueror кашида баред."
 
-#. i18n: file: ksnapshotwidget.ui:59
-#. i18n: ectx: property (toolTip), widget (KIntSpinBox, spinDelay)
+#. i18n: file: ksnapshotwidget.ui:55
+#. i18n: ectx: property (whatsThis), widget (KPushButton, btnNew)
 #: rc.cpp:10
+msgid "Click this button to take a new snapshot."
+msgstr "Ҳангоми пахши ин тугма, тасвири экран акс грифта мешавад."
+
+#. i18n: file: ksnapshotwidget.ui:58
+#. i18n: ectx: property (text), widget (KPushButton, btnNew)
+#: rc.cpp:13
+#, fuzzy
+#| msgid "&New Snapshot"
+msgid "Take a &New Snapshot"
+msgstr "&Сурати нав"
+
+#. i18n: file: ksnapshotwidget.ui:95
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rc.cpp:16
+msgid "Cap&ture mode:"
+msgstr "Тартиботи &гирифтани тасвир:"
+
+#. i18n: file: ksnapshotwidget.ui:115
+#. i18n: ectx: property (whatsThis), widget (QComboBox, comboMode)
+#: rc.cpp:19
+#, fuzzy
+msgid ""
+"<qt>Using this menu, you can select from the five following snapshot modes:\n"
+"<p>\n"
+"<b>Full Screen</b> - captures the entire desktop.<br/>\n"
+"<b>Window Under Cursor</b> - captures only the window (or menu) that is "
+"under the mouse cursor when the snapshot is taken.<br/>\n"
+"<b>Region</b> - captures only the region of the desktop that you specify. "
+"When taking a new snapshot in this mode you will be able to select any area "
+"of the screen by clicking and dragging the mouse.<br/>\n"
+"<b>Section of Window</b> - captures only a section of the window. When "
+"taking a new snapshot in this mode you will be able to select any child "
+"window by moving the mouse over it.<br/>\n"
+"<b>Current Screen</b> - if you have multiple screens, this captures the "
+"screen containing the mouse cursor when the snapshot is taken.\n"
+"</p></qt>"
+msgstr ""
+"<qt>Дар ин менюи зерин метавонед яке аз се тартиботи гирифтани сурати "
+"экранро интихоб кунед:\n"
+"<p>\n"
+"<b>Тамоми экран</b> - сурати тамоми экранро тартиб додан.<br>\n"
+"<b>Тиреза дар таги курсори муш</b> -сурати фақат тирезаро (ё меню), ки дар "
+"вақти гирифтани сурат дар зери курсори муш ҷойгир шуда буд.<br>\n"
+"<b>Канорҳои экран </b> -канорҳои экранро ки  ишора шудаанд сурат гиред. "
+"Ҳангоми суратгирии экран дар инҷо шумо бояд бо тугмаи чапи муш дар кунҷи "
+"болоии ҷои дошти экранро (тугмаи мушро сар надода), ки канораи ҷудошавиро "
+"дорост, то андозаи лозимӣ вусъат диҳед.</p></qt>"
+
+#. i18n: file: ksnapshotwidget.ui:119
+#. i18n: ectx: property (text), item, widget (QComboBox, comboMode)
+#: rc.cpp:29
+msgid "Full Screen"
+msgstr "Экрани пурра"
+
+#. i18n: file: ksnapshotwidget.ui:124
+#. i18n: ectx: property (text), item, widget (QComboBox, comboMode)
+#: rc.cpp:32
+msgid "Window Under Cursor"
+msgstr "Тиреза аз таги курсори муш"
+
+#. i18n: file: ksnapshotwidget.ui:129
+#. i18n: ectx: property (text), item, widget (QComboBox, comboMode)
+#: rc.cpp:35
+msgid "Region"
+msgstr "Канорҳои экран"
+
+#. i18n: file: ksnapshotwidget.ui:134
+#. i18n: ectx: property (text), item, widget (QComboBox, comboMode)
+#: rc.cpp:38
+msgid "Section of Window"
+msgstr "Қисми тиреза"
+
+#. i18n: file: ksnapshotwidget.ui:139
+#. i18n: ectx: property (text), item, widget (QComboBox, comboMode)
+#: rc.cpp:41
+#, fuzzy
+#| msgid "Print Screenshot"
+msgid "Current Screen"
+msgstr "Чопи сурат"
+
+#. i18n: file: ksnapshotwidget.ui:147
+#. i18n: ectx: property (text), widget (QLabel, lblDelay)
+#: rc.cpp:44
+msgid "Snapshot &delay:"
+msgstr "&Таваққуф:"
+
+#. i18n: file: ksnapshotwidget.ui:166
+#. i18n: ectx: property (toolTip), widget (KIntSpinBox, spinDelay)
+#: rc.cpp:47
 msgid "Snapshot delay in seconds"
 msgstr "Таваққуфи қабул намудани тасвирот аз рӯи сония"
 
-#. i18n: file: ksnapshotwidget.ui:69
+#. i18n: file: ksnapshotwidget.ui:176
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, spinDelay)
-#: rc.cpp:13
+#: rc.cpp:50
 #, fuzzy
 #| msgid ""
 #| "<qt>\n"
@@ -250,167 +347,49 @@ msgstr ""
 "</p>\n"
 "</qt>"
 
-#. i18n: file: ksnapshotwidget.ui:72
+#. i18n: file: ksnapshotwidget.ui:179
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, spinDelay)
-#: rc.cpp:23
+#: rc.cpp:60
 msgid "No delay"
 msgstr "Ғайри таваққуф"
 
-#. i18n: file: ksnapshotwidget.ui:79
-#. i18n: ectx: property (text), widget (QLabel, lblDelay)
-#: rc.cpp:26
-msgid "Snapshot &delay:"
-msgstr "&Таваққуф:"
+#. i18n: file: ksnapshotwidget.ui:182
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, spinDelay)
+#: rc.cpp:63
+msgid " "
+msgstr ""
 
-#. i18n: file: ksnapshotwidget.ui:92
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:29
-msgid "Cap&ture mode:"
-msgstr "Тартиботи &гирифтани тасвир:"
+#. i18n: file: ksnapshotwidget.ui:189
+#. i18n: ectx: property (text), widget (QLabel, lblIncludeDecorations)
+#: rc.cpp:66
+#, fuzzy
+#| msgid "Include &window decorations"
+msgid "Include &window decorations:"
+msgstr "Ҳамчунин &ҳошияи тиреза"
 
-#. i18n: file: ksnapshotwidget.ui:105
+#. i18n: file: ksnapshotwidget.ui:202
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbIncludeDecorations)
-#: rc.cpp:32
+#: rc.cpp:69
 msgid ""
 "When enabled, snapshot of a window will also include the window decorations"
 msgstr ""
 "Ҳангоми фаъол намудани ин нишона, сурат ҳамчунин ҳошияҳои тирезаро дар бар "
 "мегирад."
 
-#. i18n: file: ksnapshotwidget.ui:108
-#. i18n: ectx: property (text), widget (QCheckBox, cbIncludeDecorations)
-#: rc.cpp:35
-msgid "Include &window decorations"
-msgstr "Ҳамчунин &ҳошияи тиреза"
-
-#. i18n: file: ksnapshotwidget.ui:125
-#. i18n: ectx: property (whatsThis), widget (QComboBox, comboMode)
-#: rc.cpp:38
-#, fuzzy
-msgid ""
-"<qt>Using this menu, you can select from the five following snapshot modes:\n"
-"<p>\n"
-"<b>Full Screen</b> - captures the entire desktop.<br/>\n"
-"<b>Window Under Cursor</b> - captures only the window (or menu) that is "
-"under the mouse cursor when the snapshot is taken.<br/>\n"
-"<b>Region</b> - captures only the region of the desktop that you specify. "
-"When taking a new snapshot in this mode you will be able to select any area "
-"of the screen by clicking and dragging the mouse.<br/>\n"
-"<b>Section of Window</b> - captures only a section of the window. When "
-"taking a new snapshot in this mode you will be able to select any child "
-"window by moving the mouse over it.<br/>\n"
-"<b>Current Screen</b> - if you have multiple screens, this captures the "
-"screen containing the mouse cursor when the snapshot is taken.\n"
-"</p></qt>"
-msgstr ""
-"<qt>Дар ин менюи зерин метавонед яке аз се тартиботи гирифтани сурати "
-"экранро интихоб кунед:\n"
-"<p>\n"
-"<b>Тамоми экран</b> - сурати тамоми экранро тартиб додан.<br>\n"
-"<b>Тиреза дар таги курсори муш</b> -сурати фақат тирезаро (ё меню), ки дар "
-"вақти гирифтани сурат дар зери курсори муш ҷойгир шуда буд.<br>\n"
-"<b>Канорҳои экран </b> -канорҳои экранро ки  ишора шудаанд сурат гиред. "
-"Ҳангоми суратгирии экран дар инҷо шумо бояд бо тугмаи чапи муш дар кунҷи "
-"болоии ҷои дошти экранро (тугмаи мушро сар надода), ки канораи ҷудошавиро "
-"дорост, то андозаи лозимӣ вусъат диҳед.</p></qt>"
-
-#. i18n: file: ksnapshotwidget.ui:129
-#. i18n: ectx: property (text), item, widget (QComboBox, comboMode)
-#: rc.cpp:48
-msgid "Full Screen"
-msgstr "Экрани пурра"
-
-#. i18n: file: ksnapshotwidget.ui:134
-#. i18n: ectx: property (text), item, widget (QComboBox, comboMode)
-#: rc.cpp:51
-msgid "Window Under Cursor"
-msgstr "Тиреза аз таги курсори муш"
-
-#. i18n: file: ksnapshotwidget.ui:139
-#. i18n: ectx: property (text), item, widget (QComboBox, comboMode)
-#: rc.cpp:54
-msgid "Region"
-msgstr "Канорҳои экран"
-
-#. i18n: file: ksnapshotwidget.ui:144
-#. i18n: ectx: property (text), item, widget (QComboBox, comboMode)
-#: rc.cpp:57
-msgid "Section of Window"
-msgstr "Қисми тиреза"
-
-#. i18n: file: ksnapshotwidget.ui:149
-#. i18n: ectx: property (text), item, widget (QComboBox, comboMode)
-#: rc.cpp:60
-#, fuzzy
-#| msgid "Print Screenshot"
-msgid "Current Screen"
-msgstr "Чопи сурат"
-
-#. i18n: file: ksnapshotwidget.ui:165
-#. i18n: ectx: property (whatsThis), widget (KPushButton, btnNew)
-#: rc.cpp:63
-msgid "Click this button to take a new snapshot."
-msgstr "Ҳангоми пахши ин тугма, тасвири экран акс грифта мешавад."
-
-#. i18n: file: ksnapshotwidget.ui:168
-#. i18n: ectx: property (text), widget (KPushButton, btnNew)
-#: rc.cpp:66
-msgid "&New Snapshot"
-msgstr "&Сурати нав"
-
-#. i18n: file: ksnapshotwidget.ui:191
-#. i18n: ectx: property (whatsThis), widget (KPushButton, btnSave)
-#: rc.cpp:69
-msgid ""
-"Click this button to save the current snapshot. To quickly save the snapshot "
-"without showing the file dialog, press Ctrl+Shift+S. The filename is "
-"automatically incremented after each save."
-msgstr ""
-"Ҳангоми пахши ин кнопка, тасвири акс гирифташуда ба файл нигоҳ дошта "
-"мешавад. Барои тезтар нигоҳ доштан бе истифодаи муколамаи интихоботи файл, "
-"Control+Shift+S-ро пахш кунед. Дар ҳар лаҳзаи нигоҳдорӣ, файли нав бо номи "
-"вусъатӣ эҷод карда мешавад."
-
-#. i18n: file: ksnapshotwidget.ui:194
-#. i18n: ectx: property (text), widget (KPushButton, btnSave)
+#. i18n: file: ksnapshotwidget.ui:215
+#. i18n: ectx: property (text), widget (QLabel, lblIncludePointer)
 #: rc.cpp:72
-msgid "&Save As..."
-msgstr "&Нигоҳ доштан ҳамчун..."
-
-#. i18n: file: ksnapshotwidget.ui:201
-#. i18n: ectx: property (whatsThis), widget (KPushButton, btnOpen)
-#: rc.cpp:75
-#, fuzzy
-msgid "Click this button to open the snapshot with another application."
-msgstr "Ин кнопка имконияти чоп намудани тасвири гирифташударо низ медиҳад."
-
-#. i18n: file: ksnapshotwidget.ui:204
-#. i18n: ectx: property (text), widget (KPushButton, btnOpen)
-#: rc.cpp:78
-msgid "&Open With"
+msgid "Include mouse &pointer:"
 msgstr ""
 
-#. i18n: file: ksnapshotwidget.ui:211
-#. i18n: ectx: property (whatsThis), widget (KPushButton, btnCopy)
-#: rc.cpp:81
-#, fuzzy
-msgid "Click this button to copy the current snapshot to the clipboard."
-msgstr "Ин кнопка имконияти чоп намудани тасвири гирифташударо низ медиҳад."
-
-#. i18n: file: ksnapshotwidget.ui:214
-#. i18n: ectx: property (text), widget (KPushButton, btnCopy)
-#: rc.cpp:84
-msgid "&Copy to Clipboard"
-msgstr ""
-
-#: rc.cpp:85
+#: rc.cpp:73
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr ""
 "НПО \"Имкониятҳои ҷавонон\" ва Khujand Computer Technologies, Inc. USA, "
 "Роҷер Ковакс, Виктор Ибрагимов, Марина Колючева"
 
-#: rc.cpp:86
+#: rc.cpp:74
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
@@ -429,6 +408,27 @@ msgid "Snapshot will be taken in 1 second"
 msgid_plural "Snapshot will be taken in %1 seconds"
 msgstr[0] "Таваққуфи қабул намудани тасвирот аз рӯи сония"
 msgstr[1] "Таваққуфи қабул намудани тасвирот аз рӯи сония"
+
+#~ msgid ""
+#~ "Click this button to save the current snapshot. To quickly save the "
+#~ "snapshot without showing the file dialog, press Ctrl+Shift+S. The "
+#~ "filename is automatically incremented after each save."
+#~ msgstr ""
+#~ "Ҳангоми пахши ин кнопка, тасвири акс гирифташуда ба файл нигоҳ дошта "
+#~ "мешавад. Барои тезтар нигоҳ доштан бе истифодаи муколамаи интихоботи "
+#~ "файл, Control+Shift+S-ро пахш кунед. Дар ҳар лаҳзаи нигоҳдорӣ, файли нав "
+#~ "бо номи вусъатӣ эҷод карда мешавад."
+
+#~ msgid "&Save As..."
+#~ msgstr "&Нигоҳ доштан ҳамчун..."
+
+#, fuzzy
+#~ msgid "Click this button to open the snapshot with another application."
+#~ msgstr "Ин кнопка имконияти чоп намудани тасвири гирифташударо низ медиҳад."
+
+#, fuzzy
+#~ msgid "Click this button to copy the current snapshot to the clipboard."
+#~ msgstr "Ин кнопка имконияти чоп намудани тасвири гирифташударо низ медиҳад."
 
 #, fuzzy
 #~| msgid "Snapshot delay in seconds"
