@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-07-17 05:03+0200\n"
+"POT-Creation-Date: 2010-07-20 06:11+0200\n"
 "PO-Revision-Date: 2009-01-20 18:25+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -589,7 +589,7 @@ msgid "Last Played"
 msgstr ""
 
 #: TrayIconLegacy.cpp:218 browsers/filebrowser/FileView.cpp:347
-#: browsers/playlistbrowser/MetaPlaylistModel.cpp:41
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:41
 #: browsers/CollectionTreeView.cpp:799
 #: context/applets/albums/AlbumsView.cpp:117
 #: services/lastfm/LastFmTreeView.cpp:112
@@ -824,7 +824,7 @@ msgid "Add Position Marker"
 msgstr ""
 
 #: amarokurls/BookmarkModel.cpp:86
-#: browsers/playlistbrowser/MetaPlaylistModel.cpp:363
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:363
 msgid "Group"
 msgstr ""
 
@@ -835,7 +835,7 @@ msgstr ""
 #. i18n: file: aboutdialog/OcsPersonItem.ui:137
 #. i18n: ectx: property (text), widget (QLabel, m_textLabel)
 #: amarokurls/BookmarkModel.cpp:265
-#: browsers/playlistbrowser/MetaPlaylistModel.cpp:362
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:362
 #: playlistgenerator/TreeModel.cpp:67 rc.cpp:1178 rc.cpp:1184 rc.cpp:1190
 msgid "Name"
 msgstr ""
@@ -942,36 +942,6 @@ msgstr ""
 #: browsers/BrowserCategoryList.cpp:46
 msgid "Filter Music Sources"
 msgstr ""
-
-#: browsers/CollectionTreeItem.cpp:170
-msgctxt "The Name is not known"
-msgid "Unknown"
-msgstr ""
-
-#: browsers/CollectionTreeItem.cpp:188
-#: core-impl/collections/sqlcollection/ScanManager.cpp:764
-#: covermanager/CoverManager.cpp:844 covermanager/CoverViewDialog.h:45
-#: dialogs/TrackOrganizer.cpp:46 widgets/AlbumBreadcrumbWidget.cpp:60
-msgid "Various Artists"
-msgstr ""
-
-#: browsers/CollectionTreeItem.cpp:194
-msgctxt "No labels are assigned to the given item are any of its subitems"
-msgid "No Labels"
-msgstr ""
-
-#: browsers/CollectionTreeItem.cpp:199
-msgid "Counting"
-msgstr ""
-
-#: browsers/CollectionTreeItem.cpp:224
-#: playlist/proxymodels/GroupingProxy.cpp:186
-#, fuzzy, kde-format
-#| msgid "tracks"
-msgid "1 track"
-msgid_plural "%1 tracks"
-msgstr[0] "роҳчаҳо"
-msgstr[1] "роҳчаҳо"
 
 #: browsers/InfoProxy.cpp:164 browsers/filebrowser/FileBrowser.cpp:378
 msgid "Home"
@@ -1146,8 +1116,8 @@ msgid "Show Cover Art"
 msgstr ""
 
 #: browsers/collectionbrowser/CollectionWidget.cpp:403
-#: browsers/playlistbrowser/PodcastCategory.cpp:146
 #: browsers/playlistbrowser/UserPlaylistCategory.cpp:100
+#: browsers/playlistbrowser/PodcastCategory.cpp:146
 msgid "Merged View"
 msgstr ""
 
@@ -1168,7 +1138,7 @@ msgid "Copy to Collection"
 msgstr ""
 
 #: browsers/filebrowser/FileView.cpp:356
-#: browsers/playlistbrowser/MetaPlaylistModel.cpp:48
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:48
 #: browsers/CollectionTreeView.cpp:808
 #: context/applets/albums/AlbumsView.cpp:118
 #: services/lastfm/LastFmTreeView.cpp:121
@@ -1498,61 +1468,6 @@ msgid ""
 "podcast subscriptions and episodes."
 msgstr ""
 
-#: browsers/playlistbrowser/PodcastCategory.cpp:97
-msgid "Podcasts"
-msgstr ""
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:98
-msgid "List of podcast subscriptions and episodes"
-msgstr ""
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:101
-msgid ""
-"Manage your podcast subscriptions and browse individual episodes. "
-"Downloading episodes to the disk is also done here, or you can tell Amarok "
-"to do this automatically."
-msgstr ""
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:119
-msgid "&Add Podcast"
-msgstr "&Илова кардани Podcast"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:124
-msgid "&Update All"
-msgstr ""
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:192
-#: browsers/playlistbrowser/PodcastCategory.cpp:195
-#, fuzzy
-#| msgid "&Playlist"
-msgid "Import OPML File"
-msgstr "&Рӯйхати мусиқӣ"
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:227
-msgid "By"
-msgstr ""
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:266
-msgctxt "Podcast published on date"
-msgid "On"
-msgstr ""
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:284
-msgid "File Size:"
-msgstr ""
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:296
-msgid "Subscription Date:"
-msgstr ""
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:304
-msgid "Keywords:"
-msgstr ""
-
-#: browsers/playlistbrowser/PodcastCategory.cpp:341
-msgid "Select OPML file to import"
-msgstr ""
-
 #: browsers/playlistbrowser/UserPlaylistCategory.cpp:57
 #, fuzzy
 #| msgid "&Playlist"
@@ -1638,6 +1553,93 @@ msgstr ""
 msgid "Accuracy"
 msgstr ""
 
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:90
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:171
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:216
+#, fuzzy, kde-format
+#| msgid "&Playlist"
+msgctxt "number of playlists from one source"
+msgid "One Playlist"
+msgid_plural "%1 playlists"
+msgstr[0] "&Рӯйхати мусиқӣ"
+msgstr[1] "&Рӯйхати мусиқӣ"
+
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:364
+msgid "Source"
+msgstr ""
+
+#: browsers/playlistbrowser/PlaylistsInGroupsProxy.cpp:33
+msgid "&Rename Folder..."
+msgstr ""
+
+#: browsers/playlistbrowser/PlaylistsInGroupsProxy.cpp:39
+msgid "&Delete Folder"
+msgstr ""
+
+#: browsers/playlistbrowser/PlaylistsInGroupsProxy.cpp:295
+msgid "New name"
+msgstr ""
+
+#: browsers/playlistbrowser/PlaylistsInGroupsProxy.cpp:297
+msgctxt "Enter a new name for a folder that already exists"
+msgid "Enter new folder name:"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:97
+msgid "Podcasts"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:98
+msgid "List of podcast subscriptions and episodes"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:101
+msgid ""
+"Manage your podcast subscriptions and browse individual episodes. "
+"Downloading episodes to the disk is also done here, or you can tell Amarok "
+"to do this automatically."
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:119
+msgid "&Add Podcast"
+msgstr "&Илова кардани Podcast"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:124
+msgid "&Update All"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:192
+#: browsers/playlistbrowser/PodcastCategory.cpp:195
+#, fuzzy
+#| msgid "&Playlist"
+msgid "Import OPML File"
+msgstr "&Рӯйхати мусиқӣ"
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:227
+msgid "By"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:266
+msgctxt "Podcast published on date"
+msgid "On"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:284
+msgid "File Size:"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:296
+msgid "Subscription Date:"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:304
+msgid "Keywords:"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastCategory.cpp:341
+msgid "Select OPML file to import"
+msgstr ""
+
 #: browsers/playlistbrowser/PodcastModel.cpp:73
 msgctxt "toggle the \"new\" status of this podcast episode"
 msgid "&New"
@@ -1663,38 +1665,6 @@ msgstr "&Илова кардани Podcast"
 
 #: browsers/playlistbrowser/PodcastModel.cpp:353
 msgid "Enter RSS 1.0/2.0 or Atom feed URL:"
-msgstr ""
-
-#: browsers/playlistbrowser/MetaPlaylistModel.cpp:90
-#: browsers/playlistbrowser/MetaPlaylistModel.cpp:171
-#: browsers/playlistbrowser/MetaPlaylistModel.cpp:216
-#, fuzzy, kde-format
-#| msgid "&Playlist"
-msgctxt "number of playlists from one source"
-msgid "One Playlist"
-msgid_plural "%1 playlists"
-msgstr[0] "&Рӯйхати мусиқӣ"
-msgstr[1] "&Рӯйхати мусиқӣ"
-
-#: browsers/playlistbrowser/MetaPlaylistModel.cpp:364
-msgid "Source"
-msgstr ""
-
-#: browsers/playlistbrowser/PlaylistsInGroupsProxy.cpp:33
-msgid "&Rename Folder..."
-msgstr ""
-
-#: browsers/playlistbrowser/PlaylistsInGroupsProxy.cpp:39
-msgid "&Delete Folder"
-msgstr ""
-
-#: browsers/playlistbrowser/PlaylistsInGroupsProxy.cpp:295
-msgid "New name"
-msgstr ""
-
-#: browsers/playlistbrowser/PlaylistsInGroupsProxy.cpp:297
-msgctxt "Enter a new name for a folder that already exists"
-msgid "Enter new folder name:"
 msgstr ""
 
 #: browsers/servicebrowser/ServiceBrowser.cpp:44
@@ -1870,6 +1840,36 @@ msgstr ""
 #| msgid "tracks"
 msgid "Delete Tracks"
 msgstr "роҳчаҳо"
+
+#: browsers/CollectionTreeItem.cpp:170
+msgctxt "The Name is not known"
+msgid "Unknown"
+msgstr ""
+
+#: browsers/CollectionTreeItem.cpp:188
+#: core-impl/collections/sqlcollection/ScanManager.cpp:764
+#: covermanager/CoverManager.cpp:844 covermanager/CoverViewDialog.h:45
+#: dialogs/TrackOrganizer.cpp:46 widgets/AlbumBreadcrumbWidget.cpp:60
+msgid "Various Artists"
+msgstr ""
+
+#: browsers/CollectionTreeItem.cpp:194
+msgctxt "No labels are assigned to the given item are any of its subitems"
+msgid "No Labels"
+msgstr ""
+
+#: browsers/CollectionTreeItem.cpp:199
+msgid "Counting"
+msgstr ""
+
+#: browsers/CollectionTreeItem.cpp:225
+#: playlist/proxymodels/GroupingProxy.cpp:186
+#, fuzzy, kde-format
+#| msgid "tracks"
+msgid "1 track"
+msgid_plural "%1 tracks"
+msgstr[0] "роҳчаҳо"
+msgstr[1] "роҳчаҳо"
 
 #: configdialog/ConfigDialog.cpp:55
 msgctxt "Miscellaneous settings"
@@ -2349,6 +2349,10 @@ msgstr ""
 
 #: context/applets/upcomingevents/UpcomingEventsWidget.cpp:128
 msgid "Loading picture..."
+msgstr ""
+
+#: context/applets/upcomingevents/UpcomingEventsWidget.cpp:155
+msgid "No other participants"
 msgstr ""
 
 #: context/applets/upcomingevents/UpcomingEventsWidget.cpp:222
@@ -2957,10 +2961,6 @@ msgstr[1] ""
 msgid "Orphaned Tracks Added"
 msgstr ""
 
-#: core-impl/collections/mediadevicecollection/MediaDeviceCollection.cpp:281
-msgid "&Disconnect Device"
-msgstr ""
-
 #: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:302
 msgid "Copying Tracks Failed"
 msgstr ""
@@ -3029,14 +3029,14 @@ msgstr[1] ""
 #: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.cpp:115
 #: playlistmanager/file/PlaylistFileProvider.cpp:442
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:122
-#: playlistmanager/PlaylistManager.cpp:343
+#: playlistmanager/PlaylistManager.cpp:346
 msgid "Change playlist"
 msgstr ""
 
 #: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.cpp:116
 #: playlistmanager/file/PlaylistFileProvider.cpp:443
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:123
-#: playlistmanager/PlaylistManager.cpp:344
+#: playlistmanager/PlaylistManager.cpp:347
 msgid "Enter new name for playlist:"
 msgstr ""
 
@@ -3053,6 +3053,10 @@ msgstr "&Рӯйхати мусиқӣ"
 msgctxt "Podcasts on a media device"
 msgid "Podcasts on %1"
 msgstr "&Илова кардани Podcast"
+
+#: core-impl/collections/mediadevicecollection/MediaDeviceCollection.cpp:275
+msgid "&Disconnect Device"
+msgstr ""
 
 #: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:151
 msgid "Could not connect to MTP Device"
@@ -7061,15 +7065,21 @@ msgstr ""
 msgid "Yes, delete from database."
 msgstr ""
 
+#: playlistmanager/sql/SqlPlaylist.cpp:40
+#, fuzzy
+#| msgid "Settings"
+msgid "Playlist in database"
+msgstr "Хизматҳо"
+
 #: playlistmanager/sql/SqlUserPlaylistProvider.h:44
-msgid "Internal Database"
+msgid "Amarok Database"
 msgstr ""
 
 #: playlistmanager/sql/SqlUserPlaylistProvider.h:45
 msgid "Local playlists stored in the database"
 msgstr ""
 
-#: playlistmanager/PlaylistManager.cpp:267
+#: playlistmanager/PlaylistManager.cpp:270
 msgid "Downloading Playlist"
 msgstr ""
 
