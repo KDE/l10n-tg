@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kspread\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:49+0200\n"
+"POT-Creation-Date: 2010-08-23 05:34+0200\n"
 "PO-Revision-Date: 2006-01-23 15:46+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik Language\n"
@@ -2799,9 +2799,13 @@ msgstr "Ҳама Нест кардани"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: file: dialogs/SpecialPasteWidget.ui:70
 #. i18n: ectx: property (text), widget (QRadioButton, formatButton)
+#. i18n: file: kspread.rc:227
+#. i18n: ectx: ToolBar (fontPropertyToolBar)
+#. i18n: file: kspread.rc:231
+#. i18n: ectx: ToolBar (formatToolBar)
 #. i18n: file: functions/conversion.xml:251
-#: rc.cpp:53 rc.cpp:398 xml_doc.cpp:198 dialogs/LayoutDialog.cpp:886
-#: ui/CellToolBase.cpp:183
+#: rc.cpp:53 rc.cpp:398 rc.cpp:812 rc.cpp:815 xml_doc.cpp:198
+#: dialogs/LayoutDialog.cpp:886 ui/CellToolBase.cpp:183
 msgid "Format"
 msgstr "Андоза"
 
@@ -3275,7 +3279,9 @@ msgstr ""
 
 #. i18n: file: dialogs/PositionWidget.ui:179
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox5)
-#: rc.cpp:249 commands/MergeCommand.cpp:134 commands/Undo.cpp:1878
+#. i18n: file: kspread.rc:102
+#. i18n: ectx: Menu (MergeCellMenu)
+#: rc.cpp:249 rc.cpp:773 commands/MergeCommand.cpp:134 commands/Undo.cpp:1878
 #: ui/CellToolBase.cpp:439
 msgid "Merge Cells"
 msgstr "Муттаҳид кардани Ячейкаҳо"
@@ -4365,6 +4371,177 @@ msgstr "Интихоби формула"
 #, fuzzy
 msgid "Move selected sheet to the bottom"
 msgstr "Буридани мавзӯъи ячейка дар буфери иваз."
+
+#. i18n: file: kspread.kcfg:12
+#. i18n: ectx: label, entry, group (Editor)
+#: rc.cpp:736
+msgid "Navigate in the text by left/right arrow keys in the cell editor."
+msgstr ""
+
+#. i18n: file: kspread.kcfg:14
+#. i18n: ectx: whatsthis, entry, group (Editor)
+#: rc.cpp:739
+msgid ""
+"If true, you can navigate by left/right arrows in the cell editor.\n"
+"              Otherwise, the editing mode will be left."
+msgstr ""
+
+#. i18n: file: kspread.rc:5
+#. i18n: ectx: Menu (file)
+#: rc.cpp:743
+#, fuzzy
+msgid "&File"
+msgstr "файл"
+
+#. i18n: file: kspread.rc:10
+#. i18n: ectx: Menu (Edit)
+#. i18n: file: kspread_readonly.rc:3
+#. i18n: ectx: Menu (edit)
+#: rc.cpp:746 rc.cpp:821
+#, fuzzy
+msgid "&Edit"
+msgstr "&Иваз кардан..."
+
+#. i18n: file: kspread.rc:19
+#. i18n: ectx: Menu (Fill)
+#: rc.cpp:749
+msgid "Fi&ll"
+msgstr "&Пур кардан"
+
+#. i18n: file: kspread.rc:32
+#. i18n: ectx: Menu (Clear)
+#: rc.cpp:752
+#, fuzzy
+msgid "Clear"
+msgstr "Сол"
+
+#. i18n: file: kspread.rc:41
+#. i18n: ectx: Menu (Delete)
+#: rc.cpp:755 commands/DeleteCommand.cpp:36 commands/Undo.cpp:1292
+#: part/View.cpp:504
+#, fuzzy
+msgid "Delete"
+msgstr "Нобудкардани Қаторҳо"
+
+#. i18n: file: kspread.rc:51
+#. i18n: ectx: Menu (View)
+#. i18n: file: kspread_readonly.rc:8
+#. i18n: ectx: Menu (view)
+#: rc.cpp:758 rc.cpp:824
+#, fuzzy
+msgid "&View"
+msgstr "&Нав"
+
+#. i18n: file: kspread.rc:63
+#. i18n: ectx: Menu (go)
+#: rc.cpp:761
+msgid "&Go"
+msgstr ""
+
+#. i18n: file: kspread.rc:74
+#. i18n: ectx: Menu (Insert)
+#: rc.cpp:764 ui/CharSelectDia.cpp:56 ui/CharSelectDia.cpp:73
+#, fuzzy
+msgid "&Insert"
+msgstr "Қаторҳо Монед"
+
+#. i18n: file: kspread.rc:87
+#. i18n: ectx: Menu (ExternalData)
+#: rc.cpp:767
+msgid "&External Data"
+msgstr "&Маълумоти берунӣ"
+
+#. i18n: file: kspread.rc:94
+#. i18n: ectx: Menu (Format)
+#: rc.cpp:770
+msgid "F&ormat"
+msgstr "&Андоза"
+
+#. i18n: file: kspread.rc:110
+#. i18n: ectx: Menu (Row)
+#: rc.cpp:776
+msgid "&Row"
+msgstr "&Сатр"
+
+#. i18n: file: kspread.rc:116
+#. i18n: ectx: Menu (Column)
+#: rc.cpp:779
+msgid "&Column"
+msgstr "&Сутун"
+
+#. i18n: file: kspread.rc:122
+#. i18n: ectx: Menu (Sheet)
+#: rc.cpp:782
+msgid "&Sheet"
+msgstr "&Варақ"
+
+#. i18n: file: kspread.rc:130
+#. i18n: ectx: Menu (PrintRange)
+#: rc.cpp:785
+msgid "&Print Range"
+msgstr "&Ҳудуди чопкунӣ"
+
+#. i18n: file: kspread.rc:135
+#. i18n: ectx: Menu
+#: rc.cpp:788
+#, fuzzy
+#| msgid "&Page borders:"
+msgid "Manual Page Breaks"
+msgstr "&Хадҳои Саҳифа:"
+
+#. i18n: file: kspread.rc:145
+#. i18n: ectx: Menu (Data)
+#: rc.cpp:791
+msgid "&Data"
+msgstr "&Маълумот"
+
+#. i18n: file: kspread.rc:147
+#. i18n: ectx: Menu (Filter)
+#: rc.cpp:794
+#, fuzzy
+msgid "Filter"
+msgstr "файл"
+
+#. i18n: file: kspread.rc:162
+#. i18n: ectx: Menu (tools)
+#: rc.cpp:797
+#, fuzzy
+msgid "&Tools"
+msgstr "Того"
+
+#. i18n: file: kspread.rc:175
+#. i18n: ectx: Menu (settings)
+#: rc.cpp:800
+#, fuzzy
+msgid "&Settings"
+msgstr "Хат"
+
+#. i18n: file: kspread.rc:205
+#. i18n: ectx: ToolBar (editToolBar)
+#: rc.cpp:803
+#, fuzzy
+msgid "Edit"
+msgstr "&Иваз кардан..."
+
+#. i18n: file: kspread.rc:215
+#. i18n: ectx: ToolBar (navigationToolBar)
+#: rc.cpp:806
+msgid "Navigation"
+msgstr "Навигатсия"
+
+#. i18n: file: kspread.rc:221
+#. i18n: ectx: Menu
+#: rc.cpp:809
+#, fuzzy
+#| msgid "Hide Sheet"
+msgid "Activate"
+msgstr "Пинҳон кардани варақ"
+
+#. i18n: file: kspread.rc:255
+#. i18n: ectx: ToolBar (colorAndBorderToolBar)
+#: rc.cpp:818
+msgid "Color/Border"
+msgstr "Ранг/Ҳудуд"
 
 #: Sheet.cpp:933
 msgid "Dependency"
@@ -17226,11 +17403,6 @@ msgstr "Ячейкаи нав"
 msgid "Remove Cells"
 msgstr "Ячейкаҳо Нобуд кунед"
 
-#: commands/DeleteCommand.cpp:36 commands/Undo.cpp:1292 part/View.cpp:504
-#, fuzzy
-msgid "Delete"
-msgstr "Нобудкардани Қаторҳо"
-
 #: commands/IndentationCommand.cpp:38 commands/IndentationCommand.cpp:64
 #, fuzzy
 msgid "Increase Indentation"
@@ -21015,11 +21187,6 @@ msgstr ""
 msgid "Select Character"
 msgstr "Аломати &махсус..."
 
-#: ui/CharSelectDia.cpp:56 ui/CharSelectDia.cpp:73
-#, fuzzy
-msgid "&Insert"
-msgstr "Қаторҳо Монед"
-
 #: ui/CharSelectDia.cpp:57 ui/CharSelectDia.cpp:74
 #, fuzzy
 #| msgid "The text that will replace characters in old text"
@@ -21059,78 +21226,6 @@ msgstr "Ҳисоб кардани варақ"
 #, fuzzy
 msgid "Select Multiple Cells"
 msgstr "Шумо бояд якчанд ячейка интихоб кунед."
-
-#, fuzzy
-#~ msgid "&File"
-#~ msgstr "файл"
-
-#, fuzzy
-#~ msgid "&Edit"
-#~ msgstr "&Иваз кардан..."
-
-#~ msgid "Fi&ll"
-#~ msgstr "&Пур кардан"
-
-#, fuzzy
-#~ msgid "Clear"
-#~ msgstr "Сол"
-
-#, fuzzy
-#~ msgid "&View"
-#~ msgstr "&Нав"
-
-#~ msgid "&External Data"
-#~ msgstr "&Маълумоти берунӣ"
-
-#~ msgid "F&ormat"
-#~ msgstr "&Андоза"
-
-#~ msgid "&Row"
-#~ msgstr "&Сатр"
-
-#~ msgid "&Column"
-#~ msgstr "&Сутун"
-
-#~ msgid "&Sheet"
-#~ msgstr "&Варақ"
-
-#~ msgid "&Print Range"
-#~ msgstr "&Ҳудуди чопкунӣ"
-
-#, fuzzy
-#~| msgid "&Page borders:"
-#~ msgid "Manual Page Breaks"
-#~ msgstr "&Хадҳои Саҳифа:"
-
-#~ msgid "&Data"
-#~ msgstr "&Маълумот"
-
-#, fuzzy
-#~ msgid "Filter"
-#~ msgstr "файл"
-
-#, fuzzy
-#~ msgid "&Tools"
-#~ msgstr "Того"
-
-#, fuzzy
-#~ msgid "&Settings"
-#~ msgstr "Хат"
-
-#, fuzzy
-#~ msgid "Edit"
-#~ msgstr "&Иваз кардан..."
-
-#~ msgid "Navigation"
-#~ msgstr "Навигатсия"
-
-#, fuzzy
-#~| msgid "Hide Sheet"
-#~ msgid "Activate"
-#~ msgstr "Пинҳон кардани варақ"
-
-#~ msgid "Color/Border"
-#~ msgstr "Ранг/Ҳудуд"
 
 #~ msgid "Subtotal"
 #~ msgstr "Зери маҷмуъа"
