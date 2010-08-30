@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-10 06:11+0200\n"
+"POT-Creation-Date: 2010-08-30 05:27+0200\n"
 "PO-Revision-Date: 2008-06-10 01:45+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik Language\n"
@@ -215,7 +215,7 @@ msgstr ""
 
 #. i18n: file: part/dialogs/KWStartupWidget.ui:51
 #. i18n: ectx: attribute (title), widget (QWidget, columnsTab)
-#: rc.cpp:96 part/dialogs/KWPageSettingsDialog.cpp:42
+#: rc.cpp:96 part/dialogs/KWPageSettingsDialog.cpp:40
 msgid "Columns"
 msgstr "Сутунҳо"
 
@@ -963,6 +963,12 @@ msgstr "Алоқаи матн ва чорчӯба"
 msgid "Geometry"
 msgstr "Ҳандаса"
 
+#: part/dialogs/KWPageSettingsDialog.cpp:92
+#, fuzzy
+#| msgid "Frame Properties"
+msgid "Change Page Properties"
+msgstr "Хосиятҳои чорчӯба"
+
 #: part/dialogs/KWSelectBookmarkDialog.cpp:79
 msgid "Rename Bookmark"
 msgstr "Номи дигар барои монданҳо"
@@ -1009,12 +1015,6 @@ msgstr "Сохтани чорчӯбаи матн "
 msgid "Create custom outline"
 msgstr "Сохтани ҷадвал."
 
-#: part/commands/KWPagePropertiesCommand.cpp:36
-#, fuzzy
-#| msgid "Frame Properties"
-msgid "Page Properties"
-msgstr "Хосиятҳои чорчӯба"
-
 #: part/commands/KWPageRemoveCommand.cpp:32
 #, fuzzy
 #| msgid "Remove entry"
@@ -1027,32 +1027,43 @@ msgstr "Нест кардани вуруд"
 msgid "Clip Frame"
 msgstr "Чорчубаро баланд кардан"
 
-#: part/frames/KWTextFrameSet.cpp:88
+#: part/commands/KWChangePageStyleCommand.cpp:25
+#, fuzzy
+msgid "Set Page Style"
+msgstr "&Саҳифа"
+
+#: part/commands/KWNewPageStyleCommand.cpp:27
+#, fuzzy
+#| msgid "Insert Page"
+msgid "Insert Page Style"
+msgstr "Мондани саҳифа"
+
+#: part/commands/KWPageStylePropertiesCommand.cpp:36
+#, fuzzy
+#| msgid "Frame Properties"
+msgid "Page Properties"
+msgstr "Хосиятҳои чорчӯба"
+
+#: part/frames/KWTextFrameSet.cpp:90
 msgid "Odd Pages Header"
 msgstr "Сарлавҳаи саҳифаҳои ноҷуфт"
 
-#: part/frames/KWTextFrameSet.cpp:91
+#: part/frames/KWTextFrameSet.cpp:93
 msgid "Even Pages Header"
 msgstr "Сарлавҳаи саҳифаҳоро ҳамвор кунед"
 
-#: part/frames/KWTextFrameSet.cpp:94
+#: part/frames/KWTextFrameSet.cpp:96
 msgid "Odd Pages Footer"
 msgstr "Сарлавҳаи поёни саҳифаҳои ноҷуфт"
 
-#: part/frames/KWTextFrameSet.cpp:97
+#: part/frames/KWTextFrameSet.cpp:99
 msgid "Even Pages Footer"
 msgstr "Сарлавҳаи поёни саҳифаҳоро ҳамвор кунед"
 
-#: part/frames/KWTextFrameSet.cpp:100
+#: part/frames/KWTextFrameSet.cpp:102
 #, fuzzy
 msgid "Main text"
 msgstr "Ниҳондани матн"
-
-#: part/frames/KWTextFrameSet.cpp:103
-#, fuzzy
-#| msgid "Page Break"
-msgid "Page Background"
-msgstr "Кандани саҳифаҳо"
 
 #: part/KWStatusBar.cpp:39
 msgid "Modified"
@@ -1717,6 +1728,11 @@ msgstr ""
 #: part/KWDocument.cpp:835
 msgid "Installation Error"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Page Break"
+#~ msgid "Page Background"
+#~ msgstr "Кандани саҳифаҳо"
 
 #, fuzzy
 #~| msgid "F&ormat"
