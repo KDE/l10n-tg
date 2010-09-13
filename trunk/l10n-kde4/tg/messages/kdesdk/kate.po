@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-08 06:59+0200\n"
+"POT-Creation-Date: 2010-09-13 05:54+0200\n"
 "PO-Revision-Date: 2004-07-19 19:39+0000\n"
 "Last-Translator: Abrorova <H_Abrorova@rambler.ru>\n"
 "Language-Team:  Tajik\n"
@@ -1191,14 +1191,14 @@ msgstr ""
 "Онҳое, ки бо қайд бор шудаанд бори дигар ҳангоми бозоғозёбии Kate бор карда "
 "мешаванд."
 
-#: app/katefilelist.cpp:55 plugins/filetree/katefiletree.cpp:50
+#: app/katefilelist.cpp:55 plugins/filetree/katefiletree.cpp:51
 #, fuzzy
 #| msgid "Clos&e All"
 msgid "Close"
 msgstr "&Ҳамеша пӯшидан"
 
 #: app/katefilelist.cpp:58 app/katemainwindow.cpp:327
-#: plugins/filetree/katefiletree.cpp:52
+#: plugins/filetree/katefiletree.cpp:53
 msgid "Close the current document."
 msgstr "Ҳуҷҷати ҳозира пӯшидан "
 
@@ -1237,10 +1237,14 @@ msgid "Sort &By"
 msgstr ""
 
 #: app/katefilelist.cpp:78 app/katefilelist.cpp:307
+#: plugins/filetree/katefiletree.cpp:76
+#: plugins/filetree/katefiletreeconfigpage.cpp:74
 msgid "Opening Order"
 msgstr ""
 
 #: app/katefilelist.cpp:78 app/katefilelist.cpp:308
+#: plugins/filetree/katefiletree.cpp:67
+#: plugins/filetree/katefiletreeconfigpage.cpp:75
 #, fuzzy
 msgid "Document Name"
 msgstr "&Ҳуҷҷат"
@@ -1253,40 +1257,40 @@ msgstr "URL"
 msgid "Custom"
 msgstr ""
 
-#: app/katefilelist.cpp:281
+#: app/katefilelist.cpp:281 plugins/filetree/katefiletreeconfigpage.cpp:48
 msgid "Background Shading"
 msgstr ""
 
-#: app/katefilelist.cpp:288
+#: app/katefilelist.cpp:288 plugins/filetree/katefiletreeconfigpage.cpp:55
 #, fuzzy
 msgid "&Viewed documents' shade:"
 msgstr "&Ҳуҷҷат"
 
-#: app/katefilelist.cpp:294
+#: app/katefilelist.cpp:294 plugins/filetree/katefiletreeconfigpage.cpp:61
 #, fuzzy
 msgid "&Modified documents' shade:"
 msgstr "&Ҳуҷҷат"
 
-#: app/katefilelist.cpp:302
+#: app/katefilelist.cpp:302 plugins/filetree/katefiletreeconfigpage.cpp:69
 msgid "&Sort by:"
 msgstr ""
 
-#: app/katefilelist.cpp:309
+#: app/katefilelist.cpp:309 plugins/filetree/katefiletreeconfigpage.cpp:76
 msgid "Url"
 msgstr ""
 
-#: app/katefilelist.cpp:315
+#: app/katefilelist.cpp:315 plugins/filetree/katefiletreeconfigpage.cpp:93
 msgid ""
 "When background shading is enabled, documents that have been viewed or "
 "edited within the current session will have a shaded background. The most "
 "recent documents have the strongest shade."
 msgstr ""
 
-#: app/katefilelist.cpp:319
+#: app/katefilelist.cpp:319 plugins/filetree/katefiletreeconfigpage.cpp:97
 msgid "Set the color for shading viewed documents."
 msgstr ""
 
-#: app/katefilelist.cpp:321
+#: app/katefilelist.cpp:321 plugins/filetree/katefiletreeconfigpage.cpp:99
 msgid ""
 "Set the color for modified documents. This color is blended into the color "
 "for viewed files. The most recently edited documents get most of this color."
@@ -1772,19 +1776,77 @@ msgstr " INS "
 msgid " BLOCK "
 msgstr " BLK "
 
-#: plugins/filetree/katefiletreeplugin.cpp:43
-#: plugins/filetree/katefiletreeplugin.cpp:92
+#: plugins/filetree/katefiletreeplugin.cpp:46
+#: plugins/filetree/katefiletreeplugin.cpp:111
 #, fuzzy
 msgid "Document Tree"
 msgstr "&Ҳуҷҷат"
 
-#: plugins/filetree/katefiletreeplugin.cpp:43
+#: plugins/filetree/katefiletreeplugin.cpp:46
 msgid "Show open documents in a tree"
 msgstr ""
 
-#: plugins/filetree/katefiletreeplugin.cpp:132
+#: plugins/filetree/katefiletreeplugin.cpp:154
 msgid "&Show Active"
 msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:57
+msgid "Tree Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:58
+msgid "Set view style to Tree Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:61
+msgid "List Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:62
+msgid "Set view style to List Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:68
+#, fuzzy
+msgid "Sort by Document Name"
+msgstr "&Ҳуҷҷат"
+
+#: plugins/filetree/katefiletree.cpp:72
+#, fuzzy
+msgid "Document Path"
+msgstr "&Ҳуҷҷат"
+
+#: plugins/filetree/katefiletree.cpp:73
+#, fuzzy
+#| msgid "&Show All Documents >>"
+msgid "Sort by Document Path"
+msgstr "&Ҳама Хуҷҷатҳо Нишон Додан >>"
+
+#: plugins/filetree/katefiletree.cpp:77
+msgid "Sort by Opening Order"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:197
+msgid "View Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:201
+msgid "Sort By"
+msgstr ""
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:82
+msgid "&View Mode:"
+msgstr ""
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:87
+#, fuzzy
+msgid "Tree View"
+msgstr "Намуди Пешина"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:88
+#, fuzzy
+msgid "List View"
+msgstr "&Кафониш ва Шоқулӣ"
 
 #, fuzzy
 #~ msgid "Tabify Plugin"
@@ -2274,9 +2336,6 @@ msgstr ""
 #~ msgid "Email Files"
 #~ msgstr "Файлҳо Почтаи Электрони"
 
-#~ msgid "&Show All Documents >>"
-#~ msgstr "&Ҳама Хуҷҷатҳо Нишон Додан >>"
-
 #~ msgid "&Mail..."
 #~ msgstr "&Почта..."
 
@@ -2313,10 +2372,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Selection"
 #~ msgstr "&Амалиётҳои интиҳобот"
-
-#, fuzzy
-#~ msgid "Preview"
-#~ msgstr "Намуди Пешина"
 
 #, fuzzy
 #~ msgid "&Top"
