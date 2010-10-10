@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpovmodeler\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-09 06:21+0200\n"
+"POT-Creation-Date: 2010-10-10 06:03+0200\n"
 "PO-Revision-Date: 2004-07-07 14:58-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -715,7 +715,7 @@ msgstr "маҳалӣ"
 msgid "&Preview"
 msgstr "&Пешнамоиш"
 
-#: pmdialogeditbase.cpp:200 pmpovrayoutputwidget.cpp:48 pmpovraywidget.cpp:83
+#: pmdialogeditbase.cpp:200 pmpovrayoutputwidget.cpp:48 pmpovraywidget.cpp:82
 msgid "Povray Output"
 msgstr "Консоли Povray"
 
@@ -728,7 +728,7 @@ msgstr ""
 "Povray бо статуси %1 ба итмом расид.\n"
 "Дар хуруҷоти Povray, тафсилотро бингаред."
 
-#: pmdialogeditbase.cpp:561 pmpovraywidget.cpp:356
+#: pmdialogeditbase.cpp:561 pmpovraywidget.cpp:330
 msgid ""
 "There were errors while rendering.\n"
 "See the povray output for details."
@@ -883,12 +883,12 @@ msgstr "Объектҳои графикӣ"
 msgid "Leonardo Skorianez"
 msgstr ""
 
-#: pmfiledialog.cpp:55
+#: pmfiledialog.cpp:57
 #, fuzzy
 msgid "Import"
 msgstr "Воридот..."
 
-#: pmfiledialog.cpp:88
+#: pmfiledialog.cpp:92
 #, fuzzy
 msgid "Export"
 msgstr "&Содирот..."
@@ -2269,17 +2269,17 @@ msgstr "Ногаҳон '%1' пайдо шуд."
 msgid "Info"
 msgstr "Ахборот"
 
-#: pmparser.cpp:251 pmparser.cpp:267
+#: pmparser.cpp:250 pmparser.cpp:266
 #, fuzzy, kde-format
 msgid "Cannot insert %1 into %2."
 msgstr "Наметавонам %1-ро дар %2 гузорам."
 
-#: pmparser.cpp:378 pmparser.cpp:380
+#: pmparser.cpp:377 pmparser.cpp:379
 #, kde-format
 msgid "Undefined object \"%1\"."
 msgstr "Объекти \"%1\" муайян нашудааст."
 
-#: pmparser.cpp:407
+#: pmparser.cpp:406
 #, kde-format
 msgid "Object \"%1\" is undefined at that point."
 msgstr "Объекти \"%1\" дар ин нуқта муайян нашудааст."
@@ -2309,7 +2309,7 @@ msgstr "Тасовирот"
 msgid "Render Modes..."
 msgstr "Тартиботи тасвирот..."
 
-#: pmpart.cpp:279 pmpovraywidget.cpp:119
+#: pmpart.cpp:279 pmpovraywidget.cpp:118
 msgid "Render Window"
 msgstr "Тирезаи тасвирии эҷодшуда"
 
@@ -2665,14 +2665,26 @@ msgstr "Эълонот"
 msgid "Default"
 msgstr ""
 
-#: pmpart.cpp:2816 pmpart.cpp:2821
+#: pmpart.cpp:2816
 #, fuzzy
 msgid "Undo"
 msgstr "Иттиҳод"
 
-#: pmpart.cpp:2829 pmpart.cpp:2834
+#: pmpart.cpp:2821
+#, fuzzy, kde-format
+msgctxt "Undo the specified action"
+msgid "Undo %1"
+msgstr "Иттиҳод"
+
+#: pmpart.cpp:2829
 #, fuzzy
 msgid "Redo"
+msgstr "Тасовирот"
+
+#: pmpart.cpp:2834
+#, fuzzy, kde-format
+msgctxt "Redo the specified action"
+msgid "Redo %1"
 msgstr "Тасовирот"
 
 #: pmpattern.cpp:554
@@ -3307,44 +3319,32 @@ msgstr "Povray то 20 роҳе ба китобхонаро дастгирӣ м�
 msgid "The list of library paths already contains this path."
 msgstr "Дар рӯйхат чунин роҳ вуҷуд дорад."
 
-#: pmpovraywidget.cpp:73
+#: pmpovraywidget.cpp:72
 #, fuzzy
 msgid "Stop"
 msgstr "боло"
 
-#: pmpovraywidget.cpp:76
+#: pmpovraywidget.cpp:75
 msgid "Suspend"
 msgstr "Таваққуф"
 
-#: pmpovraywidget.cpp:79
+#: pmpovraywidget.cpp:78
 msgid "Resume"
 msgstr "Боз сохтан"
 
-#: pmpovraywidget.cpp:179
+#: pmpovraywidget.cpp:178
 msgid "running"
 msgstr "прогресс"
 
-#: pmpovraywidget.cpp:216
+#: pmpovraywidget.cpp:215
 msgid "suspended"
 msgstr "таваққуф"
 
-#: pmpovraywidget.cpp:254
+#: pmpovraywidget.cpp:247
 msgid "Malformed URL"
 msgstr ""
 
-#: pmpovraywidget.cpp:272
-msgid ""
-"Unknown image format.\n"
-"Please enter a valid suffix."
-msgstr ""
-"Намунаи тасвироти номаълум.\n"
-"Вусъатоти дурустро ворид кунед."
-
-#: pmpovraywidget.cpp:279
-msgid "Format is not supported for writing."
-msgstr "Навиштаҷот дар ин намуна низ пуштибонӣ намешавад."
-
-#: pmpovraywidget.cpp:318
+#: pmpovraywidget.cpp:292
 #, fuzzy
 msgid ""
 "Could not correctly write the image.\n"
@@ -3353,7 +3353,7 @@ msgstr ""
 "Наметавонам тасвиротро дуруст захира кунам.\n"
 "Намунаи тасвирот номӯътабар?"
 
-#: pmpovraywidget.cpp:322
+#: pmpovraywidget.cpp:296
 #, fuzzy
 msgid ""
 "Could not write the image.\n"
@@ -3362,11 +3362,11 @@ msgstr ""
 "Наметавонам тасвиротро захира кунам.\n"
 "Ҳуқуқи дастрасиро биозмоед."
 
-#: pmpovraywidget.cpp:345
+#: pmpovraywidget.cpp:319
 msgid "finished"
 msgstr "хотима ёфт"
 
-#: pmpovraywidget.cpp:350
+#: pmpovraywidget.cpp:324
 #, fuzzy, kde-format
 msgid ""
 "Povray exited abnormally (%1).\n"
@@ -3375,7 +3375,7 @@ msgstr ""
 "Povray бо статуси %1 ба итмом расид.\n"
 "Дар хуруҷоти Povray, тафсилотро бингаред."
 
-#: pmpovraywidget.cpp:422
+#: pmpovraywidget.cpp:396
 #, kde-format
 msgid "running, %1 pixels/second"
 msgstr "пешрафт, %1 пиксел дар як сония"
@@ -4485,6 +4485,16 @@ msgstr "Табдилдиҳӣ бо ёрии Povray"
 #: rc.cpp:98
 msgid "Graphical View"
 msgstr "Намоиши графикӣ"
+
+#~ msgid ""
+#~ "Unknown image format.\n"
+#~ "Please enter a valid suffix."
+#~ msgstr ""
+#~ "Намунаи тасвироти номаълум.\n"
+#~ "Вусъатоти дурустро ворид кунед."
+
+#~ msgid "Format is not supported for writing."
+#~ msgstr "Навиштаҷот дар ин намуна низ пуштибонӣ намешавад."
 
 #, fuzzy
 #~ msgid "You can not add a vector with a color"
