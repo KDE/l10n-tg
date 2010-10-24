@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:46+0200\n"
+"POT-Creation-Date: 2010-10-24 06:22+0200\n"
 "PO-Revision-Date: 2004-10-23 17:38+0000\n"
 "Last-Translator: Abrorova <H_Abrorova@rambler.ru>\n"
 "Language-Team: Tajik\n"
@@ -20,26 +20,21 @@ msgstr ""
 "X-Generator: KBabel 1.0.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: connectioncontroller.cpp:112
-#, fuzzy, kde-format
-#| msgid "Accepted uninvited connection from %1"
-msgid "Refused uninvited connection attempt from %1"
-msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
+#: abstractrfbserver.cpp:221
+msgid "Address already in use"
+msgstr ""
 
-#: connectioncontroller.cpp:123
-#, kde-format
-msgid "Accepted uninvited connection from %1"
-msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
+#: abstractrfbserver.cpp:306
+msgid ""
+"Your X11 Server does not support the required XTest extension version 2.2. "
+"Sharing your desktop is not possible."
+msgstr ""
+"Хидматрасони X11 шумо вусъати XTest-и нусхаи 2.2-ро пуштибонӣ намекунад. "
+"Дастрасии муштараки мизи кории шумо ғайри имкон аст."
 
-#: connectioncontroller.cpp:131
-#, kde-format
-msgid "Received connection from %1, on hold (waiting for confirmation)"
-msgstr "Дархости пайвастшавӣ аз %1қабул гардид, ҳолати (интизории тасдиқот)"
-
-#: connectioncontroller.cpp:174 connectioncontroller.cpp:178
-#, kde-format
-msgid "Failed login attempt from %1: wrong password"
-msgstr "Хатогии ворид ба система аз %1: гузарвожаи нодуруст"
+#: abstractrfbserver.cpp:307
+msgid "Desktop Sharing Error"
+msgstr "Хатогии Дастрасии муштарак ба Мизи Корӣ"
 
 #: connectiondialog.cpp:32
 #, fuzzy
@@ -56,7 +51,7 @@ msgstr "&Қабули Пайвастшавӣ"
 msgid "Refuse Connection"
 msgstr "&Радкунии Пайвастшавӣ"
 
-#: invitedialog.cpp:34 manageinvitationsdialog.cpp:57
+#: invitedialog.cpp:34 manageinvitationsdialog.cpp:55
 #, fuzzy
 msgid "Invitation"
 msgstr "Идоракунии &Таклифотҳо"
@@ -100,26 +95,31 @@ msgstr ""
 "офаред, дар танзимот 'Пайвастшавиҳо бе Таклифот'-ро фаъол созед."
 "\">Муфассалтар дар бораи таклифот...</a>"
 
-#: krfbserver.cpp:194 krfbserver.cpp:214
+#: krfbconnectioncontroller.cpp:97
+#, fuzzy, kde-format
+#| msgid "Accepted uninvited connection from %1"
+msgid "Refused uninvited connection attempt from %1"
+msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
+
+#: krfbconnectioncontroller.cpp:108
+#, kde-format
+msgid "Accepted uninvited connection from %1"
+msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
+
+#: krfbconnectioncontroller.cpp:116
+#, kde-format
+msgid "Received connection from %1, on hold (waiting for confirmation)"
+msgstr "Дархости пайвастшавӣ аз %1қабул гардид, ҳолати (интизории тасдиқот)"
+
+#: krfbconnectioncontroller.cpp:159 krfbconnectioncontroller.cpp:163
+#, kde-format
+msgid "Failed login attempt from %1: wrong password"
+msgstr "Хатогии ворид ба система аз %1: гузарвожаи нодуруст"
+
+#: krfbserver.cpp:60 krfbserver.cpp:65
 #, kde-format
 msgid "%1@%2 (shared desktop)"
 msgstr "%1@%2 (компютер, ки пайвастшавиро интизор аст)"
-
-#: krfbserver.cpp:207
-msgid "Address already in use"
-msgstr ""
-
-#: krfbserver.cpp:302
-msgid ""
-"Your X11 Server does not support the required XTest extension version 2.2. "
-"Sharing your desktop is not possible."
-msgstr ""
-"Хидматрасони X11 шумо вусъати XTest-и нусхаи 2.2-ро пуштибонӣ намекунад. "
-"Дастрасии муштараки мизи кории шумо ғайри имкон аст."
-
-#: krfbserver.cpp:303
-msgid "Desktop Sharing Error"
-msgstr "Хатогии Дастрасии муштарак ба Мизи Корӣ"
 
 #: main.cpp:40
 msgid "VNC-compatible server to share KDE desktops"
@@ -220,7 +220,7 @@ msgstr "Нофаъолгардонии паснамои KDesktop"
 msgid "Do not show the invitations management dialog at startup"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:95
+#: manageinvitationsdialog.cpp:93
 #, fuzzy
 msgid ""
 "An invitation creates a one-time password that allows the receiver to "
@@ -252,7 +252,7 @@ msgstr ""
 "офаред, дар танзимот 'Пайвастшавиҳо бе Таклифот'-ро фаъол созед."
 "\">Муфассалтар дар бораи таклифот...</a>"
 
-#: manageinvitationsdialog.cpp:117
+#: manageinvitationsdialog.cpp:115
 #, fuzzy
 msgid ""
 "When sending an invitation by email, note that everybody who reads this "
@@ -267,15 +267,15 @@ msgstr ""
 "Ба шумо лозим аст, ки пайёмро рамз гузоред ё аққалан онро бо шабакаи бехатар "
 "фиристед, на ба воситаи Интернет."
 
-#: manageinvitationsdialog.cpp:122
+#: manageinvitationsdialog.cpp:120
 msgid "Send Invitation via Email"
 msgstr "Фиристодани Таклифот бо ёрии Пости Электронӣ"
 
-#: manageinvitationsdialog.cpp:143
+#: manageinvitationsdialog.cpp:141
 msgid "Desktop Sharing (VNC) invitation"
 msgstr "Таклифоти Дастрасии муштарак ба Мизи Корӣ (VNC)"
 
-#: manageinvitationsdialog.cpp:144
+#: manageinvitationsdialog.cpp:142
 #, fuzzy, kde-format
 #| msgid ""
 #| "You have been invited to a VNC session. If you have the KDE Remote "
@@ -326,25 +326,25 @@ msgstr ""
 "\n"
 "For security reasons this invitation will expire at %9."
 
-#: manageinvitationsdialog.cpp:182
+#: manageinvitationsdialog.cpp:180
 msgid "Network"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:183
+#: manageinvitationsdialog.cpp:181
 msgid "Security"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:192
+#: manageinvitationsdialog.cpp:190
 msgid "<qt>Are you sure you want to delete all invitations?</qt>"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:193 manageinvitationsdialog.cpp:209
+#: manageinvitationsdialog.cpp:191 manageinvitationsdialog.cpp:207
 #, fuzzy
 #| msgid "Delete all invitations"
 msgid "Confirm delete Invitations"
 msgstr "Нобуд кардани ҳамаи таклифотҳо"
 
-#: manageinvitationsdialog.cpp:208
+#: manageinvitationsdialog.cpp:206
 msgid "<qt>Are you sure you want to delete this invitation?</qt>"
 msgstr ""
 
@@ -762,30 +762,30 @@ msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гард
 msgid "Preferred Frame Buffer Plugin"
 msgstr ""
 
-#: trayicon.cpp:39 trayicon.cpp:91
+#: trayicon.cpp:38 trayicon.cpp:90
 msgid "Desktop Sharing - disconnected"
 msgstr "Дастрасии муштарак ба Мизи Корӣ - канда шудааст"
 
-#: trayicon.cpp:48
+#: trayicon.cpp:47
 msgid "Enable Remote Control"
 msgstr "Даргиронидани Идоракунии Дурдаст"
 
-#: trayicon.cpp:49
+#: trayicon.cpp:48
 msgid "Disable Remote Control"
 msgstr "Хомӯш сохтани Идоракунии Дурдаст"
 
-#: trayicon.cpp:79
+#: trayicon.cpp:78
 #, fuzzy, kde-format
 #| msgid "The remote user has closed the connection."
 msgid "The remote user %1 is now connected."
 msgstr "Корванди дурдаст пайвастагиро хомӯш сохт."
 
-#: trayicon.cpp:81
+#: trayicon.cpp:80
 #, kde-format
 msgid "Desktop Sharing - connected with %1"
 msgstr "Дастрасии муштарак ба Мизи Корӣ - бо %1 пайваст аст"
 
-#: trayicon.cpp:93
+#: trayicon.cpp:92
 msgid "The remote user has closed the connection."
 msgstr "Корванди дурдаст пайвастагиро хомӯш сохт."
 
