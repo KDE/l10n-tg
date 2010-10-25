@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksnapshot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-14 06:07+0200\n"
+"POT-Creation-Date: 2010-10-25 06:04+0200\n"
 "PO-Revision-Date: 2005-12-22 14:42+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -33,10 +33,20 @@ msgid "Captures a region"
 msgstr ""
 
 #: ksnapshot_options.h:33
+msgid "Captures a free region (not rectangular)"
+msgstr ""
+
+#: ksnapshot_options.h:34
 msgid "Captures a part of windows"
 msgstr ""
 
-#: kbackgroundsnapshot.cpp:91 ksnapshot.cpp:218
+#: freeregiongrabber.cpp:120 regiongrabber.cpp:116
+msgid ""
+"Select a region using the mouse. To take the snapshot, press the Enter key "
+"or double click. Press Esc to quit."
+msgstr ""
+
+#: kbackgroundsnapshot.cpp:91 ksnapshot.cpp:224
 msgid "snapshot"
 msgstr "сурат"
 
@@ -56,15 +66,15 @@ msgstr "KSnapshot"
 msgid "(c) 2007, Montel Laurent"
 msgstr ""
 
-#: ksnapshot.cpp:93
+#: ksnapshot.cpp:94
 msgid "Copy"
 msgstr ""
 
-#: ksnapshot.cpp:94
+#: ksnapshot.cpp:95
 msgid "Open With..."
 msgstr ""
 
-#: ksnapshot.cpp:123
+#: ksnapshot.cpp:124
 #, fuzzy
 #| msgid " sec"
 msgid " second"
@@ -72,11 +82,11 @@ msgid_plural " seconds"
 msgstr[0] " сония"
 msgstr[1] " сония"
 
-#: ksnapshot.cpp:227
+#: ksnapshot.cpp:233
 msgid "Quick Save Snapshot &As..."
 msgstr "Тезтар нигоҳ доштан &ҳамчун..."
 
-#: ksnapshot.cpp:228
+#: ksnapshot.cpp:234
 msgid ""
 "Save the snapshot to the file specified by the user without showing the file "
 "dialog."
@@ -84,53 +94,53 @@ msgstr ""
 "Нигоҳ доштани сурат дар файл бо номе, ки бо истифодакунанда ишора шудааст ва "
 "ғайри намоиши диалоги интихоби файл."
 
-#: ksnapshot.cpp:230
+#: ksnapshot.cpp:236
 msgid "Save Snapshot &As..."
 msgstr "Нигоҳ доштани сурат &ҳамчун..."
 
-#: ksnapshot.cpp:231
+#: ksnapshot.cpp:237
 msgid "Save the snapshot to the file specified by the user."
 msgstr ""
 "Нигоҳ доштани сурат дар файл бо номе, ки бо истифодакунанда ишора шудааст."
 
-#: ksnapshot.cpp:294
+#: ksnapshot.cpp:300
 #, fuzzy
 msgid "Save As"
 msgstr "&Нигоҳ доштан ҳамчун..."
 
-#: ksnapshot.cpp:462
+#: ksnapshot.cpp:471
 msgid "Other Application..."
 msgstr ""
 
-#: ksnapshot.cpp:552
+#: ksnapshot.cpp:579
 msgid "The screen has been successfully grabbed."
 msgstr "Тасвири экран бо мувафақият иҷро шуд."
 
-#: ksnapshot.cpp:725
+#: ksnapshot.cpp:752
 #, kde-format
 msgid "Preview of the snapshot image (%1 x %2)"
 msgstr ""
 
-#: ksnapshotobject.cpp:111
+#: ksnapshotobject.cpp:112
 msgid "File Exists"
 msgstr "Файл бо чунин ном аллакай мавҷуд аст"
 
-#: ksnapshotobject.cpp:112
+#: ksnapshotobject.cpp:113
 #, kde-format
 msgid "<qt>Do you really want to overwrite <b>%1</b>?</qt>"
 msgstr "<qt>Оё файл мавҷудии бо номи <b>%1</b>-ро бознависӣ кунам?</qt>"
 
-#: ksnapshotobject.cpp:113
+#: ksnapshotobject.cpp:114
 msgid "Overwrite"
 msgstr ""
 
-#: ksnapshotobject.cpp:149
+#: ksnapshotobject.cpp:150
 #, fuzzy
 #| msgid "Unable to save image"
 msgid "Unable to Save Image"
 msgstr "Наметавонам тасвирро нигоҳ дорам."
 
-#: ksnapshotobject.cpp:150
+#: ksnapshotobject.cpp:151
 #, kde-format
 msgid ""
 "KSnapshot was unable to save the image to\n"
@@ -139,11 +149,11 @@ msgstr ""
 "Наметавонам тасвирро дар файли\n"
 "%1 нигоҳ дорам."
 
-#: ksnapshotobject.cpp:172
+#: ksnapshotobject.cpp:173
 msgid "Title"
 msgstr ""
 
-#: ksnapshotobject.cpp:174
+#: ksnapshotobject.cpp:175
 msgid "Window Class"
 msgstr ""
 
@@ -190,6 +200,14 @@ msgstr ""
 
 #: main.cpp:46
 msgid "\"Open With\" function"
+msgstr ""
+
+#: main.cpp:48
+msgid "Pau Garcia i Quiles"
+msgstr ""
+
+#: main.cpp:48
+msgid "Free region grabbing"
 msgstr ""
 
 #: rc.cpp:1
@@ -295,32 +313,40 @@ msgstr "Канорҳои экран"
 #. i18n: file: ksnapshotwidget.ui:134
 #. i18n: ectx: property (text), item, widget (QComboBox, comboMode)
 #: rc.cpp:40
-msgid "Section of Window"
-msgstr "Қисми тиреза"
+#, fuzzy
+#| msgid "Region"
+msgid "Free Region"
+msgstr "Канорҳои экран"
 
 #. i18n: file: ksnapshotwidget.ui:139
 #. i18n: ectx: property (text), item, widget (QComboBox, comboMode)
 #: rc.cpp:43
+msgid "Section of Window"
+msgstr "Қисми тиреза"
+
+#. i18n: file: ksnapshotwidget.ui:144
+#. i18n: ectx: property (text), item, widget (QComboBox, comboMode)
+#: rc.cpp:46
 #, fuzzy
 #| msgid "Print Screenshot"
 msgid "Current Screen"
 msgstr "Чопи сурат"
 
-#. i18n: file: ksnapshotwidget.ui:147
+#. i18n: file: ksnapshotwidget.ui:152
 #. i18n: ectx: property (text), widget (QLabel, lblDelay)
-#: rc.cpp:46
+#: rc.cpp:49
 msgid "Snapshot &delay:"
 msgstr "&Таваққуф:"
 
-#. i18n: file: ksnapshotwidget.ui:166
+#. i18n: file: ksnapshotwidget.ui:171
 #. i18n: ectx: property (toolTip), widget (KIntSpinBox, spinDelay)
-#: rc.cpp:49
+#: rc.cpp:52
 msgid "Snapshot delay in seconds"
 msgstr "Таваққуфи қабул намудани тасвирот аз рӯи сония"
 
-#. i18n: file: ksnapshotwidget.ui:176
+#. i18n: file: ksnapshotwidget.ui:181
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, spinDelay)
-#: rc.cpp:52
+#: rc.cpp:55
 #, fuzzy
 #| msgid ""
 #| "<qt>\n"
@@ -360,19 +386,13 @@ msgstr ""
 "</p>\n"
 "</qt>"
 
-#. i18n: file: ksnapshotwidget.ui:179
+#. i18n: file: ksnapshotwidget.ui:184
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, spinDelay)
-#: rc.cpp:62
+#: rc.cpp:65
 msgid "No delay"
 msgstr "Ғайри таваққуф"
 
-#. i18n: file: ksnapshotwidget.ui:182
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, spinDelay)
-#: rc.cpp:65
-msgid " "
-msgstr ""
-
-#. i18n: file: ksnapshotwidget.ui:189
+#. i18n: file: ksnapshotwidget.ui:194
 #. i18n: ectx: property (text), widget (QLabel, lblIncludeDecorations)
 #: rc.cpp:68
 #, fuzzy
@@ -380,7 +400,7 @@ msgstr ""
 msgid "Include &window decorations:"
 msgstr "Ҳамчунин &ҳошияи тиреза"
 
-#. i18n: file: ksnapshotwidget.ui:202
+#. i18n: file: ksnapshotwidget.ui:207
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbIncludeDecorations)
 #: rc.cpp:71
 msgid ""
@@ -389,16 +409,10 @@ msgstr ""
 "Ҳангоми фаъол намудани ин нишона, сурат ҳамчунин ҳошияҳои тирезаро дар бар "
 "мегирад."
 
-#. i18n: file: ksnapshotwidget.ui:215
+#. i18n: file: ksnapshotwidget.ui:220
 #. i18n: ectx: property (text), widget (QLabel, lblIncludePointer)
 #: rc.cpp:74
 msgid "Include mouse &pointer:"
-msgstr ""
-
-#: regiongrabber.cpp:116
-msgid ""
-"Select a region using the mouse. To take the snapshot, press the Enter key "
-"or double click. Press Esc to quit."
 msgstr ""
 
 #: snapshottimer.cpp:35 snapshottimer.cpp:89
