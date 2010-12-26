@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-11 02:14+0100\n"
+"POT-Creation-Date: 2010-12-26 02:59+0100\n"
 "PO-Revision-Date: 2007-02-23 17:45+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik Language\n"
@@ -39,7 +39,7 @@ msgstr "Хосиятҳои %1"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:66
 #. i18n: ectx: property (title), widget (QGroupBox, gbProperties)
-#: mode/katemodeconfigpage.cpp:268 rc.cpp:497
+#: mode/katemodeconfigpage.cpp:268 rc.cpp:566
 #, fuzzy
 msgid "Properties"
 msgstr "Хосиятҳои қутти"
@@ -304,7 +304,7 @@ msgstr "&Исто"
 #. i18n: file: dialogs/commandmenuconfigwidget.ui:22
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
 #: completion/katecompletionmodel.cpp:1239 dialogs/katedialogs.cpp:1190
-#: rc.cpp:695
+#: rc.cpp:823
 msgid "Name"
 msgstr "Ном"
 
@@ -435,7 +435,7 @@ msgstr "Ҳамеша дао боло"
 
 #. i18n: file: dialogs/completionconfigtab.ui:28
 #. i18n: ectx: property (title), widget (QGroupBox, gbWordCompletion)
-#: completion/katewordcompletion.cpp:89 rc.cpp:680
+#: completion/katewordcompletion.cpp:89 rc.cpp:749
 #, fuzzy
 #| msgid "Word Completion Plugin"
 msgid "Auto Word Completion"
@@ -762,13 +762,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbWordWrap)
-#: view/kateview.cpp:500 rc.cpp:771
+#: view/kateview.cpp:500 rc.cpp:758
 msgid "&Dynamic Word Wrap"
 msgstr "&Гузарондани калимаҳои сарҳарақат"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:17
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbWordWrap)
-#: view/kateview.cpp:503 rc.cpp:768
+#: view/kateview.cpp:503 rc.cpp:755
 msgid ""
 "If this option is checked, the text lines will be wrapped at the view border "
 "on the screen."
@@ -1202,6 +1202,34 @@ msgstr " OVR "
 msgid "INS"
 msgstr " INS "
 
+#: view/kateviewaccessible.h:65
+msgid "Move To..."
+msgstr ""
+
+#: view/kateviewaccessible.h:66
+#, fuzzy
+#| msgid "Move Word Left"
+msgid "Move Left"
+msgstr "Калима ба тарафи чап ҳаракат кунед"
+
+#: view/kateviewaccessible.h:67
+#, fuzzy
+#| msgid "Move Word Right"
+msgid "Move Right"
+msgstr "Калима ба тарафи рост ҳаракат кунед"
+
+#: view/kateviewaccessible.h:68
+#, fuzzy
+#| msgid "Scroll Line Up"
+msgid "Move Up"
+msgstr "Хат ба боло гардонед"
+
+#: view/kateviewaccessible.h:69
+#, fuzzy
+#| msgid "Scroll Line Down"
+msgid "Move Down"
+msgstr "Хате ба поён гардонед"
+
 #: view/kateviewhelpers.cpp:361
 msgid "Available Commands"
 msgstr "Фармонҳои дастрас"
@@ -1266,33 +1294,23 @@ msgstr "Ҷудокунии намудро пешфарз созед"
 msgid "Disable Annotation Bar"
 msgstr ""
 
-#: view/kateviewaccessible.h:65
-msgid "Move To..."
+#: swapfile/katerecoverbar.cpp:145 dialogs/katedialogs.cpp:1531
+msgid ""
+"The diff command failed. Please make sure that diff(1) is installed and in "
+"your PATH."
 msgstr ""
 
-#: view/kateviewaccessible.h:66
-#, fuzzy
-#| msgid "Move Word Left"
-msgid "Move Left"
-msgstr "Калима ба тарафи чап ҳаракат кунед"
+#: swapfile/katerecoverbar.cpp:147 dialogs/katedialogs.cpp:1533
+msgid "Error Creating Diff"
+msgstr ""
 
-#: view/kateviewaccessible.h:67
-#, fuzzy
-#| msgid "Move Word Right"
-msgid "Move Right"
-msgstr "Калима ба тарафи рост ҳаракат кунед"
+#: swapfile/katerecoverbar.cpp:155
+msgid "The files are identical."
+msgstr ""
 
-#: view/kateviewaccessible.h:68
-#, fuzzy
-#| msgid "Scroll Line Up"
-msgid "Move Up"
-msgstr "Хат ба боло гардонед"
-
-#: view/kateviewaccessible.h:69
-#, fuzzy
-#| msgid "Scroll Line Down"
-msgid "Move Down"
-msgstr "Хате ба поён гардонед"
+#: swapfile/katerecoverbar.cpp:156 dialogs/katedialogs.cpp:1543
+msgid "Diff Output"
+msgstr ""
 
 #: document/katedocument.cpp:123
 #, kde-format
@@ -1508,7 +1526,7 @@ msgstr[1] "Ҳарф"
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:12
 #. i18n: ectx: property (title), widget (QGroupBox, gbViInputMode)
 #: dialogs/katedialogs.cpp:652 dialogs/katedialogs.cpp:729
-#: dialogs/katedialogs.cpp:891 rc.cpp:674 rc.cpp:719
+#: dialogs/katedialogs.cpp:891 rc.cpp:743 rc.cpp:847
 msgid "General"
 msgstr ""
 
@@ -1537,7 +1555,7 @@ msgstr "Санҷиши имло"
 
 #. i18n: file: dialogs/bordersappearanceconfigwidget.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, gbBorders)
-#: dialogs/katedialogs.cpp:733 rc.cpp:827
+#: dialogs/katedialogs.cpp:733 rc.cpp:449
 #, fuzzy
 #| msgid "Borders"
 msgid "Borders"
@@ -1568,7 +1586,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:110
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/katedialogs.cpp:892 rc.cpp:806
+#: dialogs/katedialogs.cpp:892 rc.cpp:793
 msgid "Advanced"
 msgstr ""
 
@@ -1698,22 +1716,8 @@ msgstr "Аз нав навиштан"
 msgid "Overwrite the disk file with the editor content."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1531 swapfile/katerecoverbar.cpp:145
-msgid ""
-"The diff command failed. Please make sure that diff(1) is installed and in "
-"your PATH."
-msgstr ""
-
-#: dialogs/katedialogs.cpp:1533 swapfile/katerecoverbar.cpp:147
-msgid "Error Creating Diff"
-msgstr ""
-
 #: dialogs/katedialogs.cpp:1542
 msgid "Besides white space changes, the files are identical."
-msgstr ""
-
-#: dialogs/katedialogs.cpp:1543 swapfile/katerecoverbar.cpp:156
-msgid "Diff Output"
 msgstr ""
 
 #: dialogs/katedialogs.cpp:1571
@@ -1947,6 +1951,147 @@ msgid ""
 "<b>%1</b>: Specified multiline comment region (%2) could not be resolved<br /"
 ">"
 msgstr ""
+
+#: utils/kateschema.cpp:205
+msgid "Active Breakpoint"
+msgstr "Нуқтаи фаъолии таваққуф"
+
+#: utils/kateschema.cpp:206
+msgid "Reached Breakpoint"
+msgstr "Нуқтаи ҷории таваққуф"
+
+#: utils/kateschema.cpp:207
+msgid "Disabled Breakpoint"
+msgstr "Нуқтаи ғайрифаъоли таваққуф"
+
+#: utils/kateschema.cpp:208
+msgid "Execution"
+msgstr "Иҷро кардан"
+
+#: utils/kateschema.cpp:209
+#, fuzzy
+msgid "Warning"
+msgstr "Хат"
+
+#: utils/kateschema.cpp:210
+#, fuzzy
+msgid "Error"
+msgstr "Хато: "
+
+#: utils/kateschema.cpp:211
+#, fuzzy
+msgid "Template Background"
+msgstr "Заминаи майдони матн"
+
+#: utils/kateschema.cpp:212
+msgid "Template Editable Placeholder"
+msgstr ""
+
+#: utils/kateschema.cpp:213
+msgid "Template Focused Editable Placeholder"
+msgstr ""
+
+#: utils/kateschema.cpp:214
+msgid "Template Not Editable Placeholder"
+msgstr ""
+
+#: utils/kateschema.cpp:469
+#, fuzzy
+msgid ""
+"<p>This list displays the default styles for the current schema and offers "
+"the means to edit them. The style name reflects the current style settings.</"
+"p><p>To edit the colors, click the colored squares, or select the color to "
+"edit from the popup menu.</p><p>You can unset the Background and Selected "
+"Background colors from the popup menu when appropriate.</p>"
+msgstr ""
+"Ин рӯйхат услуби схемаи зерравшании ҷорири намоиш  медиҳад ва пешниҳод "
+"мекунад,ки таҳрир карда шаванд Номи услуб танзимкунии услуби ҷориро тасвир "
+"мекунад.<p>Барои таҳрирот бо ёрии забонак ба рӯи <strong>&lt;SPACE&gt;</"
+"strong>пахш кунед ва хусусиятро аз менюи матнӣ низ интихоб кунед.<p>Шумо "
+"метавонед аҳамияти ранги матнро ва заминаи пешфарзиро бо истифодаи менюи "
+"матнӣ низ танзим намоед."
+
+#: utils/kateschema.cpp:555
+msgid "H&ighlight:"
+msgstr "З&ерравшанӣ:"
+
+#: utils/kateschema.cpp:589
+#, fuzzy
+#| msgid ""
+#| "This list displays the contexts of the current syntax highlight mode and "
+#| "offers the means to edit them. The context name reflects the current "
+#| "style settings.<p>To edit using the keyboard, press <strong>&lt;SPACE&gt;"
+#| "</strong> and choose a property from the popup menu.<p>To edit the "
+#| "colors, click the colored squares, or select the color to edit from the "
+#| "popup menu.<p>You can unset the Background and Selected Background colors "
+#| "from the context menu when appropriate."
+msgid ""
+"<p>This list displays the contexts of the current syntax highlight mode and "
+"offers the means to edit them. The context name reflects the current style "
+"settings.</p><p>To edit using the keyboard, press <strong>&lt;SPACE&gt;</"
+"strong> and choose a property from the popup menu.</p><p>To edit the colors, "
+"click the colored squares, or select the color to edit from the popup menu.</"
+"p><p>You can unset the Background and Selected Background colors from the "
+"context menu when appropriate.</p>"
+msgstr ""
+"Ин рӯйхат матнҳои тарзи  синтаксиси  равшани ҷориро намоиш медиҳад ва "
+"пешниҳод мекунад,ки онҳо таҳрир карда шаванд.Номи матн намуди setting ҳои "
+"ҷориро тасвир мекунад. Барои таҳрир кардан клавиатураро истифода баред,"
+"strongро пахш кунед ва аз менюи баромадаистода чиз интихоб кунед. Барои "
+"таҳрир кардани рангҳо,чоркунҷаҳои рангаро пахш кунед,ё рангеро аз менюи "
+"баромадаистода интихоб кунед. Шумо метавонед ранги   Замина ваЗаминаи "
+"интихобшударо аз менюи матн вақте ки мувофиқ аст,муайян накунед. <p>Барои "
+"таҳрироти рангҳо ба рӯи мураббаъи рангӣ клик кунед ё ранге барои таъғироти "
+"аз менюи матнӣ, интихоб кунед. <p>Шумо метавонед аҳамияти ранги матнро ва "
+"заминаи пешфарзиро бо истифодаи менюи матнӣ низ танзим намоед."
+
+#: utils/kateschema.cpp:721 utils/kateprinter.cpp:1044
+msgid "&Schema:"
+msgstr "&Нақша:"
+
+#: utils/kateschema.cpp:728
+msgid "&New..."
+msgstr "&Нав..."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:44
+#. i18n: ectx: property (text), widget (QPushButton, btnDelete)
+#: utils/kateschema.cpp:731 rc.cpp:563
+#, fuzzy
+msgid "&Delete"
+msgstr "Интихобшуда"
+
+#: utils/kateschema.cpp:740
+msgid "Colors"
+msgstr "Рангҳо"
+
+#: utils/kateschema.cpp:744
+msgid "Font"
+msgstr ""
+
+#: utils/kateschema.cpp:748
+msgid "Normal Text Styles"
+msgstr "Услубҳои муқаррарии матн"
+
+#: utils/kateschema.cpp:752
+msgid "Highlighting Text Styles"
+msgstr "Услубҳои матни мавриди зарурӣ"
+
+#: utils/kateschema.cpp:760
+#, kde-format
+msgid "&Default schema for %1:"
+msgstr "&Нақшаи пешфарз барои %1:"
+
+#: utils/kateschema.cpp:858
+msgid "Name for New Schema"
+msgstr "Ном барои Нақшаи Нав"
+
+#: utils/kateschema.cpp:858
+msgid "Name:"
+msgstr "Ном:"
+
+#: utils/kateschema.cpp:858
+msgid "New Schema"
+msgstr "Нақшаи нав"
 
 #: utils/kateglobal.cpp:64
 msgid "Kate Part"
@@ -2293,147 +2438,6 @@ msgstr "Кушодан ва нигоҳ доштани файлҳо"
 msgid "Extensions Manager"
 msgstr "Роҳбари модулҳо"
 
-#: utils/kateschema.cpp:205
-msgid "Active Breakpoint"
-msgstr "Нуқтаи фаъолии таваққуф"
-
-#: utils/kateschema.cpp:206
-msgid "Reached Breakpoint"
-msgstr "Нуқтаи ҷории таваққуф"
-
-#: utils/kateschema.cpp:207
-msgid "Disabled Breakpoint"
-msgstr "Нуқтаи ғайрифаъоли таваққуф"
-
-#: utils/kateschema.cpp:208
-msgid "Execution"
-msgstr "Иҷро кардан"
-
-#: utils/kateschema.cpp:209
-#, fuzzy
-msgid "Warning"
-msgstr "Хат"
-
-#: utils/kateschema.cpp:210
-#, fuzzy
-msgid "Error"
-msgstr "Хато: "
-
-#: utils/kateschema.cpp:211
-#, fuzzy
-msgid "Template Background"
-msgstr "Заминаи майдони матн"
-
-#: utils/kateschema.cpp:212
-msgid "Template Editable Placeholder"
-msgstr ""
-
-#: utils/kateschema.cpp:213
-msgid "Template Focused Editable Placeholder"
-msgstr ""
-
-#: utils/kateschema.cpp:214
-msgid "Template Not Editable Placeholder"
-msgstr ""
-
-#: utils/kateschema.cpp:469
-#, fuzzy
-msgid ""
-"<p>This list displays the default styles for the current schema and offers "
-"the means to edit them. The style name reflects the current style settings.</"
-"p><p>To edit the colors, click the colored squares, or select the color to "
-"edit from the popup menu.</p><p>You can unset the Background and Selected "
-"Background colors from the popup menu when appropriate.</p>"
-msgstr ""
-"Ин рӯйхат услуби схемаи зерравшании ҷорири намоиш  медиҳад ва пешниҳод "
-"мекунад,ки таҳрир карда шаванд Номи услуб танзимкунии услуби ҷориро тасвир "
-"мекунад.<p>Барои таҳрирот бо ёрии забонак ба рӯи <strong>&lt;SPACE&gt;</"
-"strong>пахш кунед ва хусусиятро аз менюи матнӣ низ интихоб кунед.<p>Шумо "
-"метавонед аҳамияти ранги матнро ва заминаи пешфарзиро бо истифодаи менюи "
-"матнӣ низ танзим намоед."
-
-#: utils/kateschema.cpp:555
-msgid "H&ighlight:"
-msgstr "З&ерравшанӣ:"
-
-#: utils/kateschema.cpp:589
-#, fuzzy
-#| msgid ""
-#| "This list displays the contexts of the current syntax highlight mode and "
-#| "offers the means to edit them. The context name reflects the current "
-#| "style settings.<p>To edit using the keyboard, press <strong>&lt;SPACE&gt;"
-#| "</strong> and choose a property from the popup menu.<p>To edit the "
-#| "colors, click the colored squares, or select the color to edit from the "
-#| "popup menu.<p>You can unset the Background and Selected Background colors "
-#| "from the context menu when appropriate."
-msgid ""
-"<p>This list displays the contexts of the current syntax highlight mode and "
-"offers the means to edit them. The context name reflects the current style "
-"settings.</p><p>To edit using the keyboard, press <strong>&lt;SPACE&gt;</"
-"strong> and choose a property from the popup menu.</p><p>To edit the colors, "
-"click the colored squares, or select the color to edit from the popup menu.</"
-"p><p>You can unset the Background and Selected Background colors from the "
-"context menu when appropriate.</p>"
-msgstr ""
-"Ин рӯйхат матнҳои тарзи  синтаксиси  равшани ҷориро намоиш медиҳад ва "
-"пешниҳод мекунад,ки онҳо таҳрир карда шаванд.Номи матн намуди setting ҳои "
-"ҷориро тасвир мекунад. Барои таҳрир кардан клавиатураро истифода баред,"
-"strongро пахш кунед ва аз менюи баромадаистода чиз интихоб кунед. Барои "
-"таҳрир кардани рангҳо,чоркунҷаҳои рангаро пахш кунед,ё рангеро аз менюи "
-"баромадаистода интихоб кунед. Шумо метавонед ранги   Замина ваЗаминаи "
-"интихобшударо аз менюи матн вақте ки мувофиқ аст,муайян накунед. <p>Барои "
-"таҳрироти рангҳо ба рӯи мураббаъи рангӣ клик кунед ё ранге барои таъғироти "
-"аз менюи матнӣ, интихоб кунед. <p>Шумо метавонед аҳамияти ранги матнро ва "
-"заминаи пешфарзиро бо истифодаи менюи матнӣ низ танзим намоед."
-
-#: utils/kateschema.cpp:721 utils/kateprinter.cpp:1044
-msgid "&Schema:"
-msgstr "&Нақша:"
-
-#: utils/kateschema.cpp:728
-msgid "&New..."
-msgstr "&Нав..."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:44
-#. i18n: ectx: property (text), widget (QPushButton, btnDelete)
-#: utils/kateschema.cpp:731 rc.cpp:494
-#, fuzzy
-msgid "&Delete"
-msgstr "Интихобшуда"
-
-#: utils/kateschema.cpp:740
-msgid "Colors"
-msgstr "Рангҳо"
-
-#: utils/kateschema.cpp:744
-msgid "Font"
-msgstr ""
-
-#: utils/kateschema.cpp:748
-msgid "Normal Text Styles"
-msgstr "Услубҳои муқаррарии матн"
-
-#: utils/kateschema.cpp:752
-msgid "Highlighting Text Styles"
-msgstr "Услубҳои матни мавриди зарурӣ"
-
-#: utils/kateschema.cpp:760
-#, kde-format
-msgid "&Default schema for %1:"
-msgstr "&Нақшаи пешфарз барои %1:"
-
-#: utils/kateschema.cpp:858
-msgid "Name for New Schema"
-msgstr "Ном барои Нақшаи Нав"
-
-#: utils/kateschema.cpp:858
-msgid "Name:"
-msgstr "Ном:"
-
-#: utils/kateschema.cpp:858
-msgid "New Schema"
-msgstr "Нақшаи нав"
-
 #: utils/kateautoindent.cpp:75
 #, fuzzy
 #| msgid "None"
@@ -2751,7 +2755,7 @@ msgid "Kate Styles"
 msgstr "Услубҳои Kate"
 
 #: utils/katecmds.cpp:104 utils/katecmds.cpp:393
-#: script/katecommandlinescript.cpp:126 script/katescriptmanager.cpp:331
+#: script/katescriptmanager.cpp:331 script/katecommandlinescript.cpp:126
 msgid "Could not access view"
 msgstr "Ба намоиш даромадан натавонист"
 
@@ -3005,6 +3009,32 @@ msgstr ""
 msgid "Duplicates the selected lines down."
 msgstr ""
 
+#: script/katescriptmanager.cpp:339 script/katescriptmanager.cpp:352
+#, fuzzy, kde-format
+msgid "Command not found: %1"
+msgstr "Фармон ёфт нашуд"
+
+#: script/katescriptmanager.cpp:349
+msgid "Reload all JavaScript files (indenters, command line scripts, etc)."
+msgstr ""
+
+#: script/katescript.cpp:93
+#, fuzzy, kde-format
+#| msgid "Unable to open %1"
+msgid "Unable to find '%1'"
+msgstr "Қодир ба боз кардани %1 нестам"
+
+#: script/katescript.cpp:275
+#, fuzzy, kde-format
+#| msgid "Error: %1"
+msgid "Error loading script %1\n"
+msgstr "Хатогӣ: %1"
+
+#: script/katescript.cpp:276
+#, kde-format
+msgid "Error loading script %1"
+msgstr ""
+
 #: script/katecommandlinescript.cpp:56
 #, kde-format
 msgid "Function '%1' not found in script: %2"
@@ -3042,32 +3072,6 @@ msgstr ""
 msgid "No help specified for command '%1' in script %2"
 msgstr ""
 
-#: script/katescriptmanager.cpp:339 script/katescriptmanager.cpp:352
-#, fuzzy, kde-format
-msgid "Command not found: %1"
-msgstr "Фармон ёфт нашуд"
-
-#: script/katescriptmanager.cpp:349
-msgid "Reload all JavaScript files (indenters, command line scripts, etc)."
-msgstr ""
-
-#: script/katescript.cpp:93
-#, fuzzy, kde-format
-#| msgid "Unable to open %1"
-msgid "Unable to find '%1'"
-msgstr "Қодир ба боз кардани %1 нестам"
-
-#: script/katescript.cpp:275
-#, fuzzy, kde-format
-#| msgid "Error: %1"
-msgid "Error loading script %1\n"
-msgstr "Хатогӣ: %1"
-
-#: script/katescript.cpp:276
-#, kde-format
-msgid "Error loading script %1"
-msgstr ""
-
 #: spellcheck/spellingmenu.cpp:97
 msgid "Spelling"
 msgstr ""
@@ -3098,10 +3102,6 @@ msgstr "Интихоби санҷиши имло..."
 
 #: spellcheck/spellcheckdialog.cpp:75
 msgid "Check spelling of the selected text"
-msgstr ""
-
-#: swapfile/katerecoverbar.cpp:155
-msgid "The files are identical."
 msgstr ""
 
 #. i18n: file: search/searchbarpower.ui:32
@@ -3293,7 +3293,7 @@ msgstr ""
 #. i18n: ectx: Menu (file)
 #. i18n: file: plugins/exporter/ktexteditor_exporterui.rc:5
 #. i18n: ectx: Menu (file)
-#: rc.cpp:98 rc.cpp:116 rc.cpp:146
+#: rc.cpp:98 rc.cpp:116 rc.cpp:173
 #, fuzzy
 msgid "&File"
 msgstr "&Намуди файл"
@@ -3304,7 +3304,7 @@ msgstr "&Намуди файл"
 #. i18n: ectx: Menu (edit)
 #. i18n: file: plugins/exporter/ktexteditor_exporterui.rc:9
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:101 rc.cpp:119 rc.cpp:149
+#: rc.cpp:101 rc.cpp:119 rc.cpp:176
 #, fuzzy
 msgid "&Edit"
 msgstr "&Ислоҳот..."
@@ -3326,14 +3326,14 @@ msgstr "&Нав"
 #. i18n: ectx: Menu (tools)
 #. i18n: file: plugins/insertfile/ktexteditor_insertfileui.rc:4
 #. i18n: ectx: Menu (tools)
-#. i18n: file: plugins/timedate/timedateui.rc:4
-#. i18n: ectx: Menu (tools)
 #. i18n: file: plugins/kte_insanehtml_le/data/insanehtml_le_ui.rc:4
 #. i18n: ectx: Menu (tools)
 #. i18n: file: plugins/hlselection/ktexteditor_hlselectionui.rc:4
 #. i18n: ectx: Menu (tools)
-#: rc.cpp:107 rc.cpp:128 rc.cpp:140 rc.cpp:143 rc.cpp:152 rc.cpp:155
-#: rc.cpp:158
+#. i18n: file: plugins/timedate/timedateui.rc:4
+#. i18n: ectx: Menu (tools)
+#: rc.cpp:107 rc.cpp:128 rc.cpp:164 rc.cpp:167 rc.cpp:170 rc.cpp:179
+#: rc.cpp:182
 #, fuzzy
 msgid "&Tools"
 msgstr "Таърихи Асбобҳо"
@@ -3369,9 +3369,66 @@ msgstr "&Печондани феҳристҳои рамз"
 msgid "Word Completion"
 msgstr "Дароварда Ба охир расондани Ворд"
 
+#. i18n: file: swapfile/recoverwidget.ui:44
+#. i18n: ectx: property (text), widget (QLabel, lblSwap)
+#: rc.cpp:140
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body>\n"
+"<p><b>Data Recovery</b> <a href=\"The application stores the things you "
+"changed in a swap file. Using the original file you started from plus the "
+"swap file you can mostly recover your work.\"><span>(Help)</span></a></"
+"p><p>The file was not closed appropriately. Do you want to recover the data?"
+"</p></body></html>"
+msgstr ""
+
+#. i18n: file: swapfile/recoverwidget.ui:59
+#. i18n: ectx: property (text), widget (KPushButton, btnDiff)
+#: rc.cpp:146
+#, fuzzy
+#| msgid "&Ignore Changes"
+msgid "View Changes"
+msgstr "&Эътино накардани тағйиротҳо"
+
+#. i18n: file: swapfile/recoverwidget.ui:82
+#. i18n: ectx: property (text), widget (KPushButton, btnRecover)
+#: rc.cpp:149
+msgid "Recover"
+msgstr ""
+
+#. i18n: file: swapfile/recoverwidget.ui:89
+#. i18n: ectx: property (text), widget (KPushButton, btnDiscard)
+#: rc.cpp:152
+#, fuzzy
+#| msgid "Disabled"
+msgid "Discard"
+msgstr "Ғайри фаъол"
+
+#. i18n: file: swapfile/brokenswapfilewidget.ui:44
+#. i18n: ectx: property (text), widget (QLabel, lblSwap)
+#: rc.cpp:155
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body>\n"
+"<p><b>Data Recovery</b> <a href=\"Kate stores the things you changed in a "
+"swap file. Using the original file you started from plus the swap file you "
+"can mostly recover your work.\"><span>(Help)</span></a></p><p>Could not "
+"recover all data. The swap file was probably incomplete.</p></body></html>"
+msgstr ""
+
+#. i18n: file: swapfile/brokenswapfilewidget.ui:75
+#. i18n: ectx: property (text), widget (KPushButton, btnOk)
+#: rc.cpp:161
+msgid "OK"
+msgstr ""
+
 #. i18n: file: dialogs/completionconfigwidget.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, sorting)
-#: rc.cpp:161
+#: rc.cpp:185
 #, fuzzy
 #| msgid "String"
 msgid "Sorting"
@@ -3379,19 +3436,19 @@ msgstr "Хат"
 
 #. i18n: file: dialogs/completionconfigwidget.ui:36
 #. i18n: ectx: property (text), widget (QCheckBox, sortingAlphabetical)
-#: rc.cpp:164
+#: rc.cpp:188
 msgid "Alphabetical"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:43
 #. i18n: ectx: property (text), widget (QCheckBox, sortingReverse)
-#: rc.cpp:167
+#: rc.cpp:191
 msgid "Reverse"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:50
 #. i18n: ectx: property (text), widget (QCheckBox, sortingCaseSensitive)
-#: rc.cpp:170
+#: rc.cpp:194
 #, fuzzy
 #| msgid "Case &sensitive"
 msgid "Case sensitive"
@@ -3399,13 +3456,13 @@ msgstr "Мавқеъи &ҳасосият"
 
 #. i18n: file: dialogs/completionconfigwidget.ui:57
 #. i18n: ectx: property (text), widget (QCheckBox, sortingInheritanceDepth)
-#: rc.cpp:173
+#: rc.cpp:197
 msgid "Inheritance depth"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:84
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:176
+#: rc.cpp:200
 msgid "Order of Groupings (select a grouping method to configure):"
 msgstr ""
 
@@ -3415,7 +3472,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QToolButton, groupingUp)
 #. i18n: file: dialogs/completionconfigwidget.ui:405
 #. i18n: ectx: property (text), widget (QToolButton, columnUp)
-#: rc.cpp:179 rc.cpp:218 rc.cpp:254
+#: rc.cpp:203 rc.cpp:242 rc.cpp:278
 msgid "^"
 msgstr ""
 
@@ -3425,13 +3482,13 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QToolButton, groupingDown)
 #. i18n: file: dialogs/completionconfigwidget.ui:412
 #. i18n: ectx: property (text), widget (QToolButton, columnDown)
-#: rc.cpp:182 rc.cpp:221 rc.cpp:257
+#: rc.cpp:206 rc.cpp:245 rc.cpp:281
 msgid "\\/"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:127
 #. i18n: ectx: property (title), widget (QGroupBox, filtering)
-#: rc.cpp:185
+#: rc.cpp:209
 #, fuzzy
 #| msgid "String"
 msgid "Filtering"
@@ -3439,67 +3496,67 @@ msgstr "Хат"
 
 #. i18n: file: dialogs/completionconfigwidget.ui:142
 #. i18n: ectx: property (text), widget (QCheckBox, filteringContextMatchOnly)
-#: rc.cpp:188
+#: rc.cpp:212
 msgid "Suitable context matches only"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:149
 #. i18n: ectx: property (text), widget (QCheckBox, filteringHideAttributes)
-#: rc.cpp:191
+#: rc.cpp:215
 msgid "Hide completions with the following attributes:"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:159
 #. i18n: ectx: property (label), widget (KIntNumInput, filteringMaximumInheritanceDepth)
-#: rc.cpp:194
+#: rc.cpp:218
 msgid "Maximum inheritance depth:"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:171
 #. i18n: ectx: property (specialValueText), widget (KIntNumInput, filteringMaximumInheritanceDepth)
-#: rc.cpp:197
+#: rc.cpp:221
 msgid "Infinity"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:181
 #. i18n: ectx: property (title), widget (QGroupBox, grouping)
-#: rc.cpp:200
+#: rc.cpp:224
 msgid "Grouping"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:200
 #. i18n: ectx: property (text), widget (QTreeWidget, groupingMethods)
-#: rc.cpp:203
+#: rc.cpp:227
 msgid "Grouping Method"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:205
 #. i18n: ectx: property (text), item, widget (QTreeWidget, groupingMethods)
-#: rc.cpp:206
+#: rc.cpp:230
 msgid "Scope type (local, namespace, global)"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:210
 #. i18n: ectx: property (text), item, widget (QTreeWidget, groupingMethods)
-#: rc.cpp:209
+#: rc.cpp:233
 msgid "Scope (eg. per class)"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:215
 #. i18n: ectx: property (text), item, widget (QTreeWidget, groupingMethods)
-#: rc.cpp:212
+#: rc.cpp:236
 msgid "Access type (public etc.)"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:220
 #. i18n: ectx: property (text), item, widget (QTreeWidget, groupingMethods)
-#: rc.cpp:215
+#: rc.cpp:239
 msgid "Item type (function etc.)"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:270
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:224
+#: rc.cpp:248
 #, fuzzy
 #| msgid "Footer Properties"
 msgid "Access Grouping Properties"
@@ -3507,25 +3564,25 @@ msgstr "Хосиятҳои "
 
 #. i18n: file: dialogs/completionconfigwidget.ui:277
 #. i18n: ectx: property (text), widget (QCheckBox, accessConst)
-#: rc.cpp:227
+#: rc.cpp:251
 msgid "Include const in grouping"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:284
 #. i18n: ectx: property (text), widget (QCheckBox, accessStatic)
-#: rc.cpp:230
+#: rc.cpp:254
 msgid "Include static in grouping"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:291
 #. i18n: ectx: property (text), widget (QCheckBox, accessSignalSlot)
-#: rc.cpp:233
+#: rc.cpp:257
 msgid "Include signals and slots in grouping"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:321
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:236
+#: rc.cpp:260
 #, fuzzy
 #| msgid "Footer Properties"
 msgid "Item Grouping properties"
@@ -3533,19 +3590,19 @@ msgstr "Хосиятҳои "
 
 #. i18n: file: dialogs/completionconfigwidget.ui:328
 #. i18n: ectx: property (text), widget (QCheckBox, itemTemplate)
-#: rc.cpp:239
+#: rc.cpp:263
 msgid "Include templates in grouping"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:357
 #. i18n: ectx: property (title), widget (QGroupBox, columnMerging)
-#: rc.cpp:242
+#: rc.cpp:266
 msgid "Column Merging"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:382
 #. i18n: ectx: property (text), widget (QTreeWidget, columnMergeTree)
-#: rc.cpp:245
+#: rc.cpp:269
 #, fuzzy
 #| msgid "Colors"
 msgid "Columns"
@@ -3553,31 +3610,31 @@ msgstr "Рангҳо"
 
 #. i18n: file: dialogs/completionconfigwidget.ui:387
 #. i18n: ectx: property (text), widget (QTreeWidget, columnMergeTree)
-#: rc.cpp:248
+#: rc.cpp:272
 msgid "Merged"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigwidget.ui:392
 #. i18n: ectx: property (text), widget (QTreeWidget, columnMergeTree)
-#: rc.cpp:251
+#: rc.cpp:275
 msgid "Shown"
 msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbConfigFile)
-#: rc.cpp:260
+#: rc.cpp:284
 msgid "Folder Config File"
 msgstr "Файли танзимотии феҳрист"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:31
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:263
+#: rc.cpp:287
 msgid "Search &depth for config file:"
 msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:41
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbConfigFileSearchDepth)
-#: rc.cpp:266
+#: rc.cpp:290
 msgid ""
 "The editor will search the given number of folder levels upwards for a ."
 "kateconfig file and load the settings line from it."
@@ -3585,13 +3642,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:44
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbConfigFileSearchDepth)
-#: rc.cpp:269
+#: rc.cpp:293
 msgid "Do not use config file"
 msgstr "Файли танзимоти истифода набаред"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:75
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbBackup)
-#: rc.cpp:272
+#: rc.cpp:296
 #, fuzzy
 #| msgid ""
 #| "<p>Backing up on save will cause Kate to copy the disk file to '&lt;"
@@ -3608,13 +3665,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:78
 #. i18n: ectx: property (title), widget (QGroupBox, gbBackup)
-#: rc.cpp:275
+#: rc.cpp:299
 msgid "Backup on Save"
 msgstr "Дар ҳоли нигоҳ доштан, нусхаи эҳтиёти нигоҳ доред"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:87
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackupLocalFiles)
-#: rc.cpp:278
+#: rc.cpp:302
 #, fuzzy
 #| msgid "Check this if you want backups of local files when saving"
 msgid ""
@@ -3626,7 +3683,7 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:90
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackupLocalFiles)
-#: rc.cpp:281
+#: rc.cpp:305
 #, fuzzy
 #| msgid "&Remote files"
 msgid "&Local files"
@@ -3634,7 +3691,7 @@ msgstr "&Файлҳои дурдаср"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:97
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackupRemoteFiles)
-#: rc.cpp:284
+#: rc.cpp:308
 #, fuzzy
 #| msgid "Check this if you want backups of remote files when saving"
 msgid ""
@@ -3646,20 +3703,20 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackupRemoteFiles)
-#: rc.cpp:287
+#: rc.cpp:311
 msgid "&Remote files"
 msgstr "&Файлҳои дурдаср"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:107
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:290
+#: rc.cpp:314
 #, fuzzy
 msgid "&Prefix:"
 msgstr "&Префикс:"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:117
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtBackupPrefix)
-#: rc.cpp:293
+#: rc.cpp:317
 #, fuzzy
 #| msgid "Enter the prefix to prepend to the backup file names"
 msgid "Enter the prefix to prepend to the backup file names."
@@ -3668,13 +3725,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:296
+#: rc.cpp:320
 msgid "&Suffix:"
 msgstr "&Суффикс:"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:134
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtBackupSuffix)
-#: rc.cpp:299
+#: rc.cpp:323
 #, fuzzy
 #| msgid "Enter the suffix to add to the backup file names"
 msgid "Enter the suffix to append to the backup file names."
@@ -3682,13 +3739,13 @@ msgstr "Суффикс барои илова кардани ба номи нус
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:167
 #. i18n: ectx: property (text), widget (QCheckBox, chkNoSync)
-#: rc.cpp:302
+#: rc.cpp:326
 msgid "Disable swap files syncing."
 msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:25
 #. i18n: ectx: property (text), widget (QLabel, lblMode)
-#: rc.cpp:305
+#: rc.cpp:329
 #, fuzzy
 #| msgid "&Indentation mode:"
 msgid "Default indentation mode:"
@@ -3696,7 +3753,7 @@ msgstr "Тар&тиботи фосилот:"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:35
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbMode)
-#: rc.cpp:308
+#: rc.cpp:332
 msgid ""
 "This is a list of available indentation modes. The specified indentation "
 "mode will be used for all new documents. Be aware that it is also possible "
@@ -3706,7 +3763,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:57
 #. i18n: ectx: property (title), widget (QGroupBox, gbIndentationMode)
-#: rc.cpp:311
+#: rc.cpp:335
 #, fuzzy
 #| msgid "Indentation"
 msgid "Indent using"
@@ -3714,7 +3771,7 @@ msgstr "Фосила"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:63
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentWithTabs)
-#: rc.cpp:314
+#: rc.cpp:338
 #, fuzzy
 #| msgid "Tabulators"
 msgid "&Tabulators"
@@ -3722,7 +3779,7 @@ msgstr "Табуляторҳо"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:70
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentWithSpaces)
-#: rc.cpp:317
+#: rc.cpp:341
 #, fuzzy
 #| msgid "&Replace"
 msgid "&Spaces"
@@ -3730,7 +3787,7 @@ msgstr "&Ивваз кардан"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:77
 #. i18n: ectx: property (text), widget (QLabel, lblIndentWidth)
-#: rc.cpp:320
+#: rc.cpp:344
 #, fuzzy
 #| msgid "Indentation with Spaces"
 msgid "&Indentation width:"
@@ -3738,7 +3795,7 @@ msgstr "Бозгашти бо фосилот"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:87
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbIndentWidth)
-#: rc.cpp:323
+#: rc.cpp:347
 msgid ""
 "The indentation width is the number of spaces which is used to indent a "
 "line. If the option <b>Insert spaces instead of tabulators</b> in the "
@@ -3748,7 +3805,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:103
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentMixed)
-#: rc.cpp:326
+#: rc.cpp:350
 #, fuzzy
 #| msgid "Tabulators"
 msgid "Tabulators &and Spaces"
@@ -3756,7 +3813,7 @@ msgstr "Табуляторҳо"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:123
 #. i18n: ectx: property (text), widget (QLabel, lblTabWidth)
-#: rc.cpp:329
+#: rc.cpp:353
 #, fuzzy
 #| msgid "Tab width:"
 msgid "Tab wi&dth:"
@@ -3764,7 +3821,7 @@ msgstr "Вусъати табулятсия:"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:152
 #. i18n: ectx: property (title), widget (QGroupBox, gbProperties)
-#: rc.cpp:332
+#: rc.cpp:356
 #, fuzzy
 #| msgid "Indentation Rules"
 msgid "Indentation Properties"
@@ -3772,7 +3829,7 @@ msgstr "Дастури фосила"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:158
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkKeepExtraSpaces)
-#: rc.cpp:335
+#: rc.cpp:359
 msgid ""
 "If this option is disabled, changing the indentation level aligns a line to "
 "a multiple of the width specified in <b>Indentation width</b>."
@@ -3780,7 +3837,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:161
 #. i18n: ectx: property (text), widget (QCheckBox, chkKeepExtraSpaces)
-#: rc.cpp:338
+#: rc.cpp:362
 #, fuzzy
 #| msgid "&Keep extra spaces"
 msgid "&Keep extra spaces"
@@ -3788,7 +3845,7 @@ msgstr "Нигоҳ доштани &фосилотҳои зиётӣ"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:168
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkIndentPaste)
-#: rc.cpp:341
+#: rc.cpp:365
 msgid ""
 "If this option is selected, pasted code from the clipboard is indented. "
 "Triggering the <b>undo</b>-action removes the indentation."
@@ -3796,13 +3853,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:171
 #. i18n: ectx: property (text), widget (QCheckBox, chkIndentPaste)
-#: rc.cpp:344
+#: rc.cpp:368
 msgid "Adjust indentation of code &pasted from the clipboard"
 msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:181
 #. i18n: ectx: property (title), widget (QGroupBox, gbKeys)
-#: rc.cpp:347
+#: rc.cpp:371
 #, fuzzy
 #| msgid "Indentation"
 msgid "Indentation Actions"
@@ -3810,7 +3867,7 @@ msgstr "Фосила"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:187
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackspaceUnindents)
-#: rc.cpp:350
+#: rc.cpp:374
 msgid ""
 "If this option is selected, the <b>Backspace</b> key decreases the "
 "indentation level if the cursor is located in the leading blank space of a "
@@ -3819,7 +3876,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:190
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackspaceUnindents)
-#: rc.cpp:353
+#: rc.cpp:377
 #, fuzzy
 #| msgid "&Backspace key indents"
 msgid "&Backspace key in leading blank space unindents"
@@ -3827,7 +3884,7 @@ msgstr "Фосилоти тугмаҳои &Backspace"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:200
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:356
+#: rc.cpp:380
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -3841,7 +3898,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:233
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabAdvances)
-#: rc.cpp:362
+#: rc.cpp:386
 msgid ""
 "If this option is selected, the <b>Tab</b> key always inserts white space so "
 "that the next tab position is reached. If the option <b>Insert spaces "
@@ -3851,13 +3908,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:236
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabAdvances)
-#: rc.cpp:365
+#: rc.cpp:389
 msgid "Always advance to the &next tab position"
 msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:243
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabIndents)
-#: rc.cpp:368
+#: rc.cpp:392
 msgid ""
 "If this option is selected, the <b>Tab</b> key always indents the current "
 "line by the number of character positions specified in <b>Indentation width</"
@@ -3866,13 +3923,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:246
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabIndents)
-#: rc.cpp:371
+#: rc.cpp:395
 msgid "Always increase indentation &level"
 msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:253
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabSmart)
-#: rc.cpp:374
+#: rc.cpp:398
 msgid ""
 "If this option is selected, the <b>Tab</b> key either indents the current "
 "line or advances to the next tab position.<p> If the insertion point is at "
@@ -3888,19 +3945,19 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:256
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabSmart)
-#: rc.cpp:377
+#: rc.cpp:401
 msgid "Increase indentation level if in l&eading blank space"
 msgstr ""
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:12
 #. i18n: ectx: property (title), widget (QGroupBox, gbCursorMovement)
-#: rc.cpp:380
+#: rc.cpp:404
 msgid "Text Cursor Movement"
 msgstr "Ҳаракати курсор дар матн"
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:18
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkSmartHome)
-#: rc.cpp:383
+#: rc.cpp:407
 #, fuzzy
 msgid ""
 "When selected, pressing the home key will cause the cursor to skip "
@@ -3912,14 +3969,14 @@ msgstr ""
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:21
 #. i18n: ectx: property (text), widget (QCheckBox, chkSmartHome)
-#: rc.cpp:386
+#: rc.cpp:410
 #, fuzzy
 msgid "Smart ho&me and smart end"
 msgstr "Хо&наи ақлӣ"
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:28
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkWrapCursor)
-#: rc.cpp:389
+#: rc.cpp:413
 #, fuzzy
 #| msgid ""
 #| "When on, moving the insertion cursor using the <b>Left</b> and <b>Right</"
@@ -3943,7 +4000,7 @@ msgstr ""
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:31
 #. i18n: ectx: property (text), widget (QCheckBox, chkWrapCursor)
-#: rc.cpp:392
+#: rc.cpp:416
 #, fuzzy
 #| msgid "Wrap c&ursor"
 msgid "Wrap c&ursor"
@@ -3951,7 +4008,7 @@ msgstr "&Ҳарақати курсор"
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:38
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkPagingMovesCursor)
-#: rc.cpp:395
+#: rc.cpp:419
 msgid ""
 "Selects whether the PageUp and PageDown keys should alter the vertical "
 "position of the cursor relative to the top of the view."
@@ -3961,13 +4018,13 @@ msgstr ""
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:41
 #. i18n: ectx: property (text), widget (QCheckBox, chkPagingMovesCursor)
-#: rc.cpp:398
+#: rc.cpp:422
 msgid "&PageUp/PageDown moves cursor"
 msgstr "&Ҳарақати курсор бо истифодаи PageUp/PageDown"
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:53
 #. i18n: ectx: property (text), widget (QLabel, lblAutoCenterCursor)
-#: rc.cpp:401
+#: rc.cpp:425
 #, fuzzy
 #| msgid "Autocenter cursor (lines):"
 msgid "&Autocenter cursor (lines):"
@@ -3975,7 +4032,7 @@ msgstr "Курсор дар маркази хатҳо (саҳифа):"
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:63
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbAutoCenterCursor)
-#: rc.cpp:404
+#: rc.cpp:428
 msgid ""
 "Sets the number of lines to maintain visible above and below the cursor when "
 "possible."
@@ -3987,13 +4044,13 @@ msgstr ""
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbAutoCenterCursor)
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:65
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:407 rc.cpp:787
+#: rc.cpp:431 rc.cpp:774
 msgid "Disabled"
 msgstr "Ғайри фаъол"
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:91
 #. i18n: ectx: property (title), widget (QGroupBox, gbSelectionMode)
-#: rc.cpp:410
+#: rc.cpp:434
 #, fuzzy
 #| msgid "Selection Mode"
 msgid "Text Selection Mode"
@@ -4001,7 +4058,7 @@ msgstr "Ҳолати интихобкунӣ"
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:97
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbNormal)
-#: rc.cpp:413
+#: rc.cpp:437
 msgid ""
 "Selections will be overwritten by typed text and will be lost on cursor "
 "movement."
@@ -4011,13 +4068,13 @@ msgstr ""
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:100
 #. i18n: ectx: property (text), widget (QRadioButton, rbNormal)
-#: rc.cpp:416
+#: rc.cpp:440
 msgid "&Normal"
 msgstr "&Муқаррарӣ"
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:107
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbPersistent)
-#: rc.cpp:419
+#: rc.cpp:443
 msgid "Selections will stay even after cursor movement and typing."
 msgstr ""
 "Гузоштани интихобшуданиҳо, ҳатто вақти даровардани матн ва ҳарақати курсори "
@@ -4025,27 +4082,149 @@ msgstr ""
 
 #. i18n: file: dialogs/cursorconfigwidget.ui:110
 #. i18n: ectx: property (text), widget (QRadioButton, rbPersistent)
-#: rc.cpp:422
+#: rc.cpp:446
 #, fuzzy
 #| msgid "&Persistent"
 msgid "P&ersistent"
 msgstr "&Доимӣ"
 
+#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:23
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowFoldingMarkers)
+#: rc.cpp:452
+msgid ""
+"If this option is checked, every new view will display marks for code "
+"folding, if code folding is available."
+msgstr ""
+"Мавриди фаъол намудани ин нишона, тамоми тирезаҳои ҷадид бо хати гардонидани "
+"блокҳои барнома,агар ин имкон барои санади интихобшуда бошад, намоиш хоҳад "
+"шуд."
+
+#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:26
+#. i18n: ectx: property (text), widget (QCheckBox, chkShowFoldingMarkers)
+#: rc.cpp:455
+msgid "Show &folding markers (if available)"
+msgstr "Намоиши хати тобиши &маркерҳо (агар дастрасӣ шавад)"
+
+#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:33
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkIconBorder)
+#: rc.cpp:458
+#, fuzzy
+#| msgid ""
+#| "If this option is checked, every new view will display an icon border on "
+#| "the left hand side.<br><br>The icon border shows bookmark signs, for "
+#| "instance."
+msgid ""
+"<p>If this option is checked, every new view will display an icon border on "
+"the left hand side.</p><p>The icon border shows bookmark signs, for instance."
+"</p>"
+msgstr ""
+"Агар ин интихобот интихоб шудааст, ҳар намоиши нав чорчубаи нишона дар "
+"тарафи чап нишон медиҳад. <br><br>Чорчубаи нишона аломатҳои мондан ҳама вақт "
+"нишон медиҳад."
+
+#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:36
+#. i18n: ectx: property (text), widget (QCheckBox, chkIconBorder)
+#: rc.cpp:461
+msgid "Show &icon border"
+msgstr "Намоиши &сарҳади нишона"
+
+#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:43
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkLineNumbers)
+#: rc.cpp:464
+msgid ""
+"If this option is checked, every new view will display line numbers on the "
+"left hand side."
+msgstr ""
+"Агар ин интихобот интихоб шудааст, ҳар намоиши нав хати рақамҳо дар тарафи "
+"чап нишон медиҳад."
+
+#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:46
+#. i18n: ectx: property (text), widget (QCheckBox, chkLineNumbers)
+#: rc.cpp:467
+msgid "Show &line numbers"
+msgstr "Намоиши &миқдори хатҳо"
+
+#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:53
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkScrollbarMarks)
+#: rc.cpp:470
+#, fuzzy
+#| msgid ""
+#| "If this option is checked, every new view will show marks on the vertical "
+#| "scrollbar.<br><br>These marks will, for instance, show bookmarks."
+msgid ""
+"<p>If this option is checked, every new view will show marks on the vertical "
+"scrollbar.</p><p>These marks will show bookmarks, for instance.</p>"
+msgstr ""
+"Мавриди фаъол намудани ин нишона, тамоми тирезаҳои ҷадид бо хати ишорот ба "
+"сӯи тирезаи чап низнамоиш хоҳанд шуд.<br><br>Ин хат барои танзимоти гузориш "
+"истифода мешавад."
+
+#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:56
+#. i18n: ectx: property (text), widget (QCheckBox, chkScrollbarMarks)
+#: rc.cpp:473
+msgid "Show &scrollbar marks"
+msgstr "&Нишон додани нишонҳои хатти тобдиҳанда"
+
+#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:66
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, gbSortBookmarks)
+#: rc.cpp:476
+msgid ""
+"Choose how the bookmarks should be ordered in the <b>Bookmarks</b> menu."
+msgstr ""
+"Интихоб кунед чи хел монданҳо бояд бо тартиб гузашта шавад дар менюи "
+"<b>Монданҳо</b>."
+
+#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:69
+#. i18n: ectx: property (title), widget (QGroupBox, gbSortBookmarks)
+#: rc.cpp:479
+msgid "Sort Bookmarks Menu"
+msgstr "Менюи монданҳоро ба навъҳо ҷудо кунед"
+
+#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:75
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, rbSortBookmarksByCreation)
+#: rc.cpp:482
+msgid ""
+"Each new bookmark will be added to the bottom, independently from where it "
+"is placed in the document."
+msgstr ""
+"Ҳар мондани нав дар поён илова мешавад, вобаста аз дар куҷочойгир аст ӯ дар "
+"ҳуҷҷат."
+
+#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:78
+#. i18n: ectx: property (text), widget (QRadioButton, rbSortBookmarksByCreation)
+#: rc.cpp:485
+msgid "By c&reation"
+msgstr "Ба &таърих"
+
+#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:85
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, rbSortBookmarksByPosition)
+#: rc.cpp:488
+msgid "The bookmarks will be ordered by the line numbers they are placed at."
+msgstr ""
+"Монданҳо бо тартиб гузошта шавад тавассути хати рақамҳо ҷое ки онҳо ҷойгир "
+"ҳастанд."
+
+#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:88
+#. i18n: ectx: property (text), widget (QRadioButton, rbSortBookmarksByPosition)
+#: rc.cpp:491
+msgid "By &position"
+msgstr "Ба &ҷойгиршавӣ"
+
 #. i18n: file: dialogs/opensaveconfigwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbFileFormat)
-#: rc.cpp:425
+#: rc.cpp:494
 msgid "File Format"
 msgstr "Андозаи файл"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:31
 #. i18n: ectx: property (text), widget (QLabel, lblEncoding)
-#: rc.cpp:428
+#: rc.cpp:497
 msgid "&Encoding:"
 msgstr "&Рамзи ҳарф:"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:41
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncoding)
-#: rc.cpp:431
+#: rc.cpp:500
 msgid ""
 "This defines the standard encoding to use to open/save files, if not changed "
 "in the open/save dialog or by using a command line option."
@@ -4053,7 +4232,7 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:48
 #. i18n: ectx: property (text), widget (QLabel, lblEncodingDetection)
-#: rc.cpp:434
+#: rc.cpp:503
 #, fuzzy
 #| msgid "&Encoding:"
 msgid "&Encoding Detection:"
@@ -4061,7 +4240,7 @@ msgstr "&Рамзи ҳарф:"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:58
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncodingDetection)
-#: rc.cpp:437
+#: rc.cpp:506
 msgid ""
 "if neither the encoding chosen as standard above, nor the encoding specified "
 "in the open/save dialog, nor the encoding specified on command line match "
@@ -4070,7 +4249,7 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:65
 #. i18n: ectx: property (text), widget (QLabel, lblEncodingDetection)
-#: rc.cpp:440
+#: rc.cpp:509
 #, fuzzy
 #| msgid "&Encoding:"
 msgid "&Fallback Encoding"
@@ -4078,7 +4257,7 @@ msgstr "&Рамзи ҳарф:"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:75
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncodingFallback)
-#: rc.cpp:443
+#: rc.cpp:512
 msgid ""
 "This defines the fallback encoding to try for opening files if neither the "
 "encoding chosen as standard above, nor the encoding specified in the open/"
@@ -4091,7 +4270,7 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:82
 #. i18n: ectx: property (text), widget (QLabel, lblEOL)
-#: rc.cpp:446
+#: rc.cpp:515
 #, fuzzy
 #| msgid "End &of line:"
 msgid "E&nd of line:"
@@ -4099,25 +4278,25 @@ msgstr "Оҳири &хат:"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:93
 #. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
-#: rc.cpp:449
+#: rc.cpp:518
 msgid "UNIX"
 msgstr "UNIX"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:98
 #. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
-#: rc.cpp:452
+#: rc.cpp:521
 msgid "DOS/Windows"
 msgstr "Dos/Windows"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:103
 #. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
-#: rc.cpp:455
+#: rc.cpp:524
 msgid "Macintosh"
 msgstr "Макинтоҷ (Macintosh)"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:113
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkDetectEOL)
-#: rc.cpp:458
+#: rc.cpp:527
 msgid ""
 "If this option is enabled the editor will autodetect the end of line type. "
 "The first found end of line type will be used for the whole file."
@@ -4125,7 +4304,7 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:116
 #. i18n: ectx: property (text), widget (QCheckBox, chkDetectEOL)
-#: rc.cpp:461
+#: rc.cpp:530
 #, fuzzy
 #| msgid "&Automatic end of line detection"
 msgid "A&utomatic end of line detection"
@@ -4133,7 +4312,7 @@ msgstr "&Фосилоти худкорӣ"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:123
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkEnableBOM)
-#: rc.cpp:464
+#: rc.cpp:533
 msgid ""
 "The byte order mark is a special sequence at the beginning of unicode "
 "encoded documents. It helps editors to open text documents with the correct "
@@ -4143,20 +4322,20 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:126
 #. i18n: ectx: property (text), widget (QCheckBox, chkEnableBOM)
-#: rc.cpp:467
+#: rc.cpp:536
 msgid "Enable byte order marker"
 msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:136
 #. i18n: ectx: property (title), widget (QGroupBox, gbCleanups)
-#: rc.cpp:470
+#: rc.cpp:539
 #, fuzzy
 msgid "Automatic Cleanups on Load/Save"
 msgstr "Поккунии автоматӣ дар вақти нигоҳ доштан"
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:142
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:473
+#: rc.cpp:542
 #, fuzzy
 msgid ""
 "The editor will automatically eliminate extra spaces at the ends of lines of "
@@ -4166,19 +4345,19 @@ msgstr "Фосилаҳои зиёд дар охири сатр худкорон�
 
 #. i18n: file: dialogs/opensaveconfigwidget.ui:145
 #. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:476
+#: rc.cpp:545
 msgid "Re&move trailing spaces"
 msgstr "Фосилаҳои итмом &нест кунед"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:14
 #. i18n: ectx: property (text), widget (QLabel, lblFiletype)
-#: rc.cpp:479
+#: rc.cpp:548
 msgid "&Filetype:"
 msgstr "&Намуди файл:"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:24
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbFiletypes)
-#: rc.cpp:482
+#: rc.cpp:551
 #, fuzzy
 #| msgid "<p>Select the marker type you want to change.</p>"
 msgid "Select the filetype you want to change."
@@ -4186,13 +4365,13 @@ msgstr "<p>Намуди маркерро, ки мехоҳед тағйир ди�
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:31
 #. i18n: ectx: property (whatsThis), widget (QPushButton, btnNew)
-#: rc.cpp:485
+#: rc.cpp:554
 msgid "Create a new file type."
 msgstr "Ҳуҷҷати ровонро нигоҳ доред."
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:34
 #. i18n: ectx: property (text), widget (QPushButton, btnNew)
-#: rc.cpp:488
+#: rc.cpp:557
 #, fuzzy
 #| msgid "&New..."
 msgid "&New"
@@ -4200,7 +4379,7 @@ msgstr "&Нав..."
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:41
 #. i18n: ectx: property (whatsThis), widget (QPushButton, btnDelete)
-#: rc.cpp:491
+#: rc.cpp:560
 msgid "Delete the current file type."
 msgstr "Ҳуҷҷати ровонро нигоҳ доред."
 
@@ -4208,7 +4387,7 @@ msgstr "Ҳуҷҷати ровонро нигоҳ доред."
 #. i18n: ectx: property (text), widget (QLabel, lblName)
 #. i18n: file: dialogs/commandmenueditwidget.ui:69
 #. i18n: ectx: property (text), widget (QLabel, lblName)
-#: rc.cpp:500 rc.cpp:617
+#: rc.cpp:569 rc.cpp:686
 #, fuzzy
 #| msgid "Name:"
 msgid "&Name:"
@@ -4216,33 +4395,33 @@ msgstr "Ном:"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:82
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtName)
-#: rc.cpp:503
+#: rc.cpp:572
 msgid ""
 "The name of the filetype will be the text of the corresponding menu item."
 msgstr ""
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:89
 #. i18n: ectx: property (text), widget (QLabel, lblSection)
-#: rc.cpp:506
+#: rc.cpp:575
 msgid "&Section:"
 msgstr "&Қисм:"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:99
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtSection)
-#: rc.cpp:509
+#: rc.cpp:578
 msgid "The section name is used to organize the file types in menus."
 msgstr ""
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:106
 #. i18n: ectx: property (text), widget (QLabel, lblVariables)
-#: rc.cpp:512
+#: rc.cpp:581
 #, fuzzy
 msgid "&Variables:"
 msgstr "&Тағйирёбандаҳо:"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:116
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtVariables)
-#: rc.cpp:515
+#: rc.cpp:584
 msgid ""
 "<p>This string allows to configure Kate's settings for the files selected by "
 "this mimetype using Kate variables. Almost any configuration option can be "
@@ -4252,7 +4431,7 @@ msgstr ""
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:123
 #. i18n: ectx: property (text), widget (QLabel, lblHl)
-#: rc.cpp:518
+#: rc.cpp:587
 #, fuzzy
 #| msgid "&Highlighting"
 msgid "&Highlighting:"
@@ -4260,14 +4439,14 @@ msgstr "&Зерравшанӣ"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:136
 #. i18n: ectx: property (text), widget (QLabel, lblIndenter)
-#: rc.cpp:521
+#: rc.cpp:590
 #, fuzzy
 msgid "&Indentation Mode:"
 msgstr "Фосила"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:149
 #. i18n: ectx: property (text), widget (QLabel, lblExtensions)
-#: rc.cpp:524
+#: rc.cpp:593
 #, fuzzy
 #| msgid "File e&xtensions:"
 msgid "File e&xtensions:"
@@ -4275,7 +4454,7 @@ msgstr "Қисми &иловагии файл:"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:159
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtFileExtensions)
-#: rc.cpp:527
+#: rc.cpp:596
 msgid ""
 "The wildcards mask allows to select files by filename. A typical mask uses "
 "an asterisk and the file extension, for example <code>*.txt; *.text</code>. "
@@ -4284,13 +4463,13 @@ msgstr ""
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:166
 #. i18n: ectx: property (text), widget (QLabel, lblMimeTypes)
-#: rc.cpp:530
+#: rc.cpp:599
 msgid "MIME &types:"
 msgstr "Намудҳои &MIME:"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:181
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtMimeTypes)
-#: rc.cpp:533
+#: rc.cpp:602
 msgid ""
 "The mime type mask allows to select files by mimetype. The string is a "
 "semicolon-separated list of mimetypes, for example <code>text/plain; text/"
@@ -4299,13 +4478,13 @@ msgstr ""
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:188
 #. i18n: ectx: property (whatsThis), widget (QToolButton, btnMimeTypes)
-#: rc.cpp:536
+#: rc.cpp:605
 msgid "Displays a wizard that helps you easily select mimetypes."
 msgstr ""
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:197
 #. i18n: ectx: property (text), widget (QLabel, lblPriority)
-#: rc.cpp:539
+#: rc.cpp:608
 #, fuzzy
 #| msgid "Prio&rity:"
 msgid "P&riority:"
@@ -4313,7 +4492,7 @@ msgstr "&Пайдарпаӣ:"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:207
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbPriority)
-#: rc.cpp:542
+#: rc.cpp:611
 msgid ""
 "Sets priority for this file type. If more than one file type selects the "
 "same file, the one with the highest priority will be used."
@@ -4321,7 +4500,7 @@ msgstr ""
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:232
 #. i18n: ectx: property (text), widget (QPushButton, btnDownload)
-#: rc.cpp:545
+#: rc.cpp:614
 #, fuzzy
 #| msgid "Highlighting Rules"
 msgid "Download Highlighting Files..."
@@ -4329,32 +4508,32 @@ msgstr "Зерравшании синтаксис"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:548
+#: rc.cpp:617
 #, fuzzy
 msgid "Text Area Background"
 msgstr "Заминаи майдони матн"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:551
+#: rc.cpp:620
 msgid "Normal text:"
 msgstr "Матни муқаррарӣ:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:33
 #. i18n: ectx: property (whatsThis), widget (KColorButton, back)
-#: rc.cpp:554
+#: rc.cpp:623
 msgid "<p>Sets the background color of the editing area.</p>"
 msgstr "<p>Ранги замина дар мавзеъи таҳриркунӣ.</p>"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:40
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:557
+#: rc.cpp:626
 msgid "Selected text:"
 msgstr "Матни интихобшуда:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:47
 #. i18n: ectx: property (whatsThis), widget (KColorButton, selected)
-#: rc.cpp:560
+#: rc.cpp:629
 msgid ""
 "<p>Sets the background color of the selection.</p><p>To set the text color "
 "for selected text, use the \"<b>Configure Highlighting</b>\" dialog.</p>"
@@ -4364,13 +4543,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:54
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:563
+#: rc.cpp:632
 msgid "Current line:"
 msgstr "Хати ҳозира:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:61
 #. i18n: ectx: property (whatsThis), widget (KColorButton, current)
-#: rc.cpp:566
+#: rc.cpp:635
 msgid ""
 "<p>Sets the background color of the currently active line, which means the "
 "line where your cursor is positioned.</p>"
@@ -4379,13 +4558,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:68
 #. i18n: ectx: property (whatsThis), widget (KComboBox, combobox)
-#: rc.cpp:569
+#: rc.cpp:638
 msgid "<p>Select the marker type you want to change.</p>"
 msgstr "<p>Намуди маркерро, ки мехоҳед тағйир диҳед, интихоб кунед.</p>"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:75
 #. i18n: ectx: property (whatsThis), widget (KColorButton, markers)
-#: rc.cpp:572
+#: rc.cpp:641
 msgid ""
 "<p>Sets the background color of the selected marker type.</p><p><b>Note</b>: "
 "The marker color is displayed lightly because of transparency.</p>"
@@ -4396,25 +4575,25 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:85
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:575
+#: rc.cpp:644
 msgid "Additional Elements"
 msgstr "Элементҳои иловагӣ"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:94
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:578
+#: rc.cpp:647
 msgid "Left border background:"
 msgstr "Заминаи лабаи чап:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:104
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:581
+#: rc.cpp:650
 msgid "Line numbers:"
 msgstr "Миқдори сатр:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:111
 #. i18n: ectx: property (whatsThis), widget (KColorButton, linenumber)
-#: rc.cpp:584
+#: rc.cpp:653
 msgid ""
 "<p>This color will be used to draw the line numbers (if enabled) and the "
 "lines in the code-folding pane.</p>"
@@ -4424,13 +4603,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:118
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:587
+#: rc.cpp:656
 msgid "Bracket highlight:"
 msgstr "Зерравшании қавс:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:125
 #. i18n: ectx: property (whatsThis), widget (KColorButton, bracket)
-#: rc.cpp:590
+#: rc.cpp:659
 msgid ""
 "<p>Sets the bracket matching color. This means, if you place the cursor e.g. "
 "at a <b>(</b>, the matching <b>)</b> will be highlighted with this color.</p>"
@@ -4441,13 +4620,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:132
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:593
+#: rc.cpp:662
 msgid "Word wrap markers:"
 msgstr "Маркерҳои гузарондани калимаҳо:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:139
 #. i18n: ectx: property (whatsThis), widget (KColorButton, wwmarker)
-#: rc.cpp:596
+#: rc.cpp:665
 msgid ""
 "<p>Sets the color of Word Wrap-related markers:</p><dl><dt>Static Word Wrap</"
 "dt><dd>A vertical line which shows the column where text is going to be "
@@ -4460,7 +4639,7 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:146
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:599
+#: rc.cpp:668
 #, fuzzy
 #| msgid "Tab markers:"
 msgid "Tab and space markers:"
@@ -4468,7 +4647,7 @@ msgstr "Маркерҳои табулятсия:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:153
 #. i18n: ectx: property (whatsThis), widget (KColorButton, tmarker)
-#: rc.cpp:602
+#: rc.cpp:671
 #, fuzzy
 #| msgid "<p>Sets the color of the tabulator marks:</p>"
 msgid "<p>Sets the color of the tabulator marks.</p>"
@@ -4476,13 +4655,13 @@ msgstr "<p>Танзими ранги тамғаи табулятор:</p>"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:160
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:605
+#: rc.cpp:674
 msgid "Spelling mistake line:"
 msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:167
 #. i18n: ectx: property (whatsThis), widget (KColorButton, spellingmistakeline)
-#: rc.cpp:608
+#: rc.cpp:677
 #, fuzzy
 #| msgid "<p>Sets the color of the tabulator marks:</p>"
 msgid ""
@@ -4491,7 +4670,7 @@ msgstr "<p>Танзими ранги тамғаи табулятор:</p>"
 
 #. i18n: file: dialogs/commandmenueditwidget.ui:12
 #. i18n: ectx: property (title), widget (QGroupBox, gbEdit)
-#: rc.cpp:611
+#: rc.cpp:680
 #, fuzzy
 #| msgid "The Editing Commands"
 msgid "Edit Command"
@@ -4499,13 +4678,13 @@ msgstr "Фармонҳои таҳриркунӣ"
 
 #. i18n: file: dialogs/commandmenueditwidget.ui:26
 #. i18n: ectx: property (text), widget (QLabel, lblCommand)
-#: rc.cpp:614
+#: rc.cpp:683
 msgid "&Associated command:"
 msgstr ""
 
 #. i18n: file: dialogs/commandmenueditwidget.ui:87
 #. i18n: ectx: property (toolTip), widget (KIconButton, btnIcon)
-#: rc.cpp:620
+#: rc.cpp:689
 #, fuzzy
 #| msgid "Choo&se Font..."
 msgid "Choose an icon."
@@ -4513,13 +4692,13 @@ msgstr "&Интихоби ҳарф..."
 
 #. i18n: file: dialogs/commandmenueditwidget.ui:90
 #. i18n: ectx: property (whatsThis), widget (KIconButton, btnIcon)
-#: rc.cpp:623
+#: rc.cpp:692
 msgid "<p>This icon will be displayed in the menu and toolbar.</p>"
 msgstr ""
 
 #. i18n: file: dialogs/commandmenueditwidget.ui:102
 #. i18n: ectx: property (text), widget (QLabel, lblDescription)
-#: rc.cpp:626
+#: rc.cpp:695
 #, fuzzy
 #| msgid "&Section:"
 msgid "&Description:"
@@ -4527,7 +4706,7 @@ msgstr "&Қисм:"
 
 #. i18n: file: dialogs/commandmenueditwidget.ui:115
 #. i18n: ectx: property (text), widget (QLabel, lblCategory)
-#: rc.cpp:629
+#: rc.cpp:698
 #, fuzzy
 #| msgid "&Pattern:"
 msgid "&Category:"
@@ -4535,13 +4714,13 @@ msgstr "&Қолиб:"
 
 #. i18n: file: dialogs/editconfigwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbStaticWordWrap)
-#: rc.cpp:632
+#: rc.cpp:701
 msgid "Static Word Wrap"
 msgstr "Гузарондани калима беҳарақат"
 
 #. i18n: file: dialogs/editconfigwidget.ui:26
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkStaticWordWrap)
-#: rc.cpp:635
+#: rc.cpp:704
 #, fuzzy
 #| msgid ""
 #| "Automatically start a new line of text when the current line exceeds the "
@@ -4568,13 +4747,13 @@ msgstr ""
 
 #. i18n: file: dialogs/editconfigwidget.ui:29
 #. i18n: ectx: property (text), widget (QCheckBox, chkStaticWordWrap)
-#: rc.cpp:638
+#: rc.cpp:707
 msgid "Enable static &word wrap"
 msgstr "Гузарондани &калима беҳарақат фаъол созед"
 
 #. i18n: file: dialogs/editconfigwidget.ui:36
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowStaticWordWrapMarker)
-#: rc.cpp:641
+#: rc.cpp:710
 #, fuzzy
 #| msgid ""
 #| "<p>If this option is checked, a vertical line will be drawn at the word "
@@ -4591,7 +4770,7 @@ msgstr ""
 
 #. i18n: file: dialogs/editconfigwidget.ui:39
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowStaticWordWrapMarker)
-#: rc.cpp:644
+#: rc.cpp:713
 #, fuzzy
 #| msgid "&Show static word wrap marker (if applicable)"
 msgid "Show static word wra&p marker (if applicable)"
@@ -4599,7 +4778,7 @@ msgstr "&Намоиши маркерҳои гузаронидаи сатрҳои
 
 #. i18n: file: dialogs/editconfigwidget.ui:51
 #. i18n: ectx: property (text), widget (QLabel, lblWordWrap)
-#: rc.cpp:647
+#: rc.cpp:716
 #, fuzzy
 #| msgid "Wrap words at:"
 msgid "W&rap words at:"
@@ -4607,7 +4786,7 @@ msgstr "Гузарондани калима баъд аз:"
 
 #. i18n: file: dialogs/editconfigwidget.ui:61
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbWordWrap)
-#: rc.cpp:650
+#: rc.cpp:719
 msgid ""
 "If the Word Wrap option is selected this entry determines the length (in "
 "characters) at which the editor will automatically start a new line."
@@ -4617,7 +4796,7 @@ msgstr ""
 
 #. i18n: file: dialogs/editconfigwidget.ui:95
 #. i18n: ectx: property (title), widget (QGroupBox, gbMisc)
-#: rc.cpp:653
+#: rc.cpp:722
 #, fuzzy
 #| msgctxt "Language"
 #| msgid "Cisco"
@@ -4626,7 +4805,7 @@ msgstr "Cisco"
 
 #. i18n: file: dialogs/editconfigwidget.ui:101
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:656
+#: rc.cpp:725
 #, fuzzy
 #| msgid ""
 #| "If this is enabled, the editor will remove any trailing whitespace on "
@@ -4640,7 +4819,7 @@ msgstr ""
 
 #. i18n: file: dialogs/editconfigwidget.ui:104
 #. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:659
+#: rc.cpp:728
 #, fuzzy
 #| msgid "Remove &trailing spaces"
 msgid "Remove &trailing spaces while editing"
@@ -4648,7 +4827,7 @@ msgstr "&Нест кардани фосилотҳои итмомӣ"
 
 #. i18n: file: dialogs/editconfigwidget.ui:111
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkAutoBrackets)
-#: rc.cpp:662
+#: rc.cpp:731
 msgid ""
 "When the user types a left bracket ([,(, or {) KateView automatically enters "
 "the right bracket (}, ), or ]) to the right of the cursor."
@@ -4658,25 +4837,25 @@ msgstr ""
 
 #. i18n: file: dialogs/editconfigwidget.ui:114
 #. i18n: ectx: property (text), widget (QCheckBox, chkAutoBrackets)
-#: rc.cpp:665
+#: rc.cpp:734
 msgid "Auto &brackets"
 msgstr "&Автоқавсҳо"
 
 #. i18n: file: dialogs/editconfigwidget.ui:121
 #. i18n: ectx: property (text), widget (QCheckBox, chkSmartCopyCut)
-#: rc.cpp:668
+#: rc.cpp:737
 msgid "Copy/Cut the current line if no selection"
 msgstr ""
 
 #. i18n: file: dialogs/editconfigwidget.ui:128
 #. i18n: ectx: property (text), widget (QCheckBox, chkScrollPastEnd)
-#: rc.cpp:671
+#: rc.cpp:740
 msgid "Allow scrolling past the end of the document"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigtab.ui:18
 #. i18n: ectx: property (text), widget (QCheckBox, chkAutoCompletionEnabled)
-#: rc.cpp:677
+#: rc.cpp:746
 #, fuzzy
 #| msgid "Automatic Completion Popup"
 msgid "&Auto completion enabled"
@@ -4684,188 +4863,13 @@ msgstr "Вариантҳои автоиввазот"
 
 #. i18n: file: dialogs/completionconfigtab.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:683
+#: rc.cpp:752
 msgid "Minimal word length to complete:"
-msgstr ""
-
-#. i18n: file: dialogs/modonhdwidget.ui:22
-#. i18n: ectx: property (text), widget (QCheckBox, chkIgnoreWhiteSpaces)
-#: rc.cpp:686
-#, fuzzy
-#| msgid "&Ignore Changes"
-msgid "Ignore white space changes"
-msgstr "&Эътино накардани тағйиротҳо"
-
-#. i18n: file: dialogs/modonhdwidget.ui:29
-#. i18n: ectx: property (whatsThis), widget (QPushButton, btnDiff)
-#: rc.cpp:689
-msgid ""
-"Calculates the difference between the editor contents and the disk file "
-"using diff(1)."
-msgstr ""
-
-#. i18n: file: dialogs/modonhdwidget.ui:32
-#. i18n: ectx: property (text), widget (QPushButton, btnDiff)
-#: rc.cpp:692
-msgid "&View Difference"
-msgstr "&Намоиши дигаргуниҳо"
-
-#. i18n: file: dialogs/commandmenuconfigwidget.ui:27
-#. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
-#. i18n: file: dialogs/viinputmodeconfigwidget.ui:90
-#. i18n: ectx: property (text), widget (QTableWidget, tblNormalModeMappings)
-#: rc.cpp:698 rc.cpp:756
-#, fuzzy
-#| msgid "Comment"
-msgid "Command"
-msgstr "Шарҳ"
-
-#. i18n: file: dialogs/commandmenuconfigwidget.ui:32
-#. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
-#: rc.cpp:701
-#, fuzzy
-#| msgid "Execution"
-msgid "Description"
-msgstr "Иҷро кардан"
-
-#. i18n: file: dialogs/commandmenuconfigwidget.ui:48
-#. i18n: ectx: property (text), widget (QPushButton, btnEditEntry)
-#: rc.cpp:704
-#, fuzzy
-#| msgid "Edit Entry"
-msgid "Edit Entry..."
-msgstr "Тағйири вурудот"
-
-#. i18n: file: dialogs/commandmenuconfigwidget.ui:58
-#. i18n: ectx: property (text), widget (QPushButton, btnRemoveEntry)
-#: rc.cpp:707
-msgid "Remove Entry"
-msgstr ""
-
-#. i18n: file: dialogs/commandmenuconfigwidget.ui:78
-#. i18n: ectx: property (text), widget (QPushButton, btnAddEntry)
-#: rc.cpp:710
-#, fuzzy
-#| msgid "Edit Entry"
-msgid "Add Entry..."
-msgstr "Тағйири вурудот"
-
-#. i18n: file: dialogs/commandmenuconfigwidget.ui:93
-#. i18n: ectx: property (title), widget (QGroupBox, gbNotes)
-#: rc.cpp:713
-#, fuzzy
-#| msgid "Footer Properties"
-msgid "Further Notes"
-msgstr "Хосиятҳои "
-
-#. i18n: file: dialogs/commandmenuconfigwidget.ui:108
-#. i18n: ectx: property (text), widget (QLabel, lblNotes)
-#: rc.cpp:716
-msgid ""
-"<p>The entries are accessible through the submenu <b>Commands</b> in the "
-"<b>Tools</b> menu. For faster access it is possible to assign <b>shortcuts</"
-"b> in the shortcut configuration page after applying the changes.</p>"
-msgstr ""
-
-#. i18n: file: dialogs/viinputmodeconfigwidget.ui:18
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViInputModeDefault)
-#: rc.cpp:722
-msgid ""
-"When selected, the vi input mode will be enabled when opening a new view. "
-"You can still toggle the vi input mode on/off for a particular view in the "
-"Edit menu."
-msgstr ""
-
-#. i18n: file: dialogs/viinputmodeconfigwidget.ui:21
-#. i18n: ectx: property (text), widget (QCheckBox, chkViInputModeDefault)
-#: rc.cpp:725
-msgid "Use Vi input mode"
-msgstr ""
-
-#. i18n: file: dialogs/viinputmodeconfigwidget.ui:28
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViCommandsOverride)
-#: rc.cpp:728
-msgid ""
-"When selected, vi commands will override Kate's built-in commands. For "
-"example: Ctrl+R will redo, and override the standard action (showing the "
-"search and replace dialog)."
-msgstr ""
-
-#. i18n: file: dialogs/viinputmodeconfigwidget.ui:31
-#. i18n: ectx: property (text), widget (QCheckBox, chkViCommandsOverride)
-#: rc.cpp:731
-msgid "Let Vi commands override Kate shortcuts"
-msgstr ""
-
-#. i18n: file: dialogs/viinputmodeconfigwidget.ui:40
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViStatusBarHide)
-#: rc.cpp:734
-msgid ""
-"By default, an extra status bar will be used when the Vi input mode is "
-"enabled. This status bar shows commands while they are being typed and "
-"messages/errors produced by Vi commands.\n"
-"\n"
-"Checking this options will hide this extra status line."
-msgstr ""
-
-#. i18n: file: dialogs/viinputmodeconfigwidget.ui:43
-#. i18n: ectx: property (text), widget (QCheckBox, chkViStatusBarHide)
-#: rc.cpp:739
-msgid "Hide the Vi mode status bar"
-msgstr ""
-
-#. i18n: file: dialogs/viinputmodeconfigwidget.ui:58
-#. i18n: ectx: property (whatsThis), widget (QGroupBox, groupBox)
-#: rc.cpp:742
-msgid ""
-"Key mapping is used to change the meaning of typed keys. This allows you to "
-"move commands to other keys or make special keypresses for doing a series of "
-"commands.\n"
-"\n"
-"Example:\n"
-"\"<F2>\" → \"I-- <esc>\"\n"
-"\n"
-"This will prepend \"-- \" to a line when pressing F2."
-msgstr ""
-
-#. i18n: file: dialogs/viinputmodeconfigwidget.ui:61
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:750
-msgid "Key Mapping"
-msgstr ""
-
-#. i18n: file: dialogs/viinputmodeconfigwidget.ui:71
-#. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:753
-#, fuzzy
-#| msgid "Normal Text"
-msgid "Normal mode"
-msgstr "Матни муқаррарӣ"
-
-#. i18n: file: dialogs/viinputmodeconfigwidget.ui:95
-#. i18n: ectx: property (text), widget (QTableWidget, tblNormalModeMappings)
-#: rc.cpp:759
-#, fuzzy
-msgid "Replacement"
-msgstr "&Ивваз кардан"
-
-#. i18n: file: dialogs/viinputmodeconfigwidget.ui:105
-#. i18n: ectx: property (text), widget (QPushButton, btnRemoveSelectedNormal)
-#: rc.cpp:762
-#, fuzzy
-#| msgid "Selected"
-msgid "Remove selected"
-msgstr "Интихобшуда"
-
-#. i18n: file: dialogs/viinputmodeconfigwidget.ui:112
-#. i18n: ectx: property (text), widget (QPushButton, btnAddNewNormal)
-#: rc.cpp:765
-msgid "Add new mapping"
 msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:29
 #. i18n: ectx: property (text), widget (QLabel, lblDynamicWordWrapIndicators)
-#: rc.cpp:774
+#: rc.cpp:761
 #, fuzzy
 #| msgid "Dynamic word wrap indicators (if applicable):"
 msgid "Dynamic &word wrap indicators (if applicable):"
@@ -4873,7 +4877,7 @@ msgstr "Маркери динамикии бардошта бурдани хат
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:39
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbDynamicWordWrapIndicator)
-#: rc.cpp:777
+#: rc.cpp:764
 #, fuzzy
 #| msgid "Choose when the Dynamic Word Wrap Indicators should be displayed"
 msgid "Choose when the Dynamic Word Wrap Indicators should be displayed."
@@ -4881,7 +4885,7 @@ msgstr "Ҷойгиршавии маркерҳои динамикӣ гузаро�
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, lblDynamicWordWrapIndicators_2)
-#: rc.cpp:780
+#: rc.cpp:767
 #, fuzzy
 #| msgid "Vertically align dynamically wrapped lines to indentation depth:"
 msgid "Align dynamically wrapped lines to indentation depth:"
@@ -4889,7 +4893,7 @@ msgstr "Ақиб гаштани сатри гузаронидаи динамик
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:62
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:784
+#: rc.cpp:771
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<p>Enables the start of dynamically wrapped lines to be aligned "
@@ -4918,7 +4922,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:68
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:791
+#: rc.cpp:778
 #, fuzzy, no-c-format
 #| msgid "% of View Width"
 msgid "% of View Width"
@@ -4926,7 +4930,7 @@ msgstr "% Фароҳи Намоиш"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:84
 #. i18n: ectx: property (title), widget (QGroupBox, gbWhitespaceHighlighting)
-#: rc.cpp:794
+#: rc.cpp:781
 #, fuzzy
 #| msgid "Highlighting"
 msgid "Whitespace Highlighting"
@@ -4934,7 +4938,7 @@ msgstr "Зерравшанӣ"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:90
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowTabs)
-#: rc.cpp:797
+#: rc.cpp:784
 msgid ""
 "The editor will display a symbol to indicate the presence of a tab in the "
 "text."
@@ -4942,14 +4946,14 @@ msgstr "Тасовири ишораҳои табулятивӣ дар матн."
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:93
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowTabs)
-#: rc.cpp:800
+#: rc.cpp:787
 #, fuzzy
 msgid "&Highlight tabulators"
 msgstr "&Зерравшанӣ"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowSpaces)
-#: rc.cpp:803
+#: rc.cpp:790
 #, fuzzy
 #| msgid "Highlighting Rules"
 msgid "Highlight trailing &spaces"
@@ -4957,7 +4961,7 @@ msgstr "Зерравшании синтаксис"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:116
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkDeveloperMode)
-#: rc.cpp:809
+#: rc.cpp:796
 msgid ""
 "Changing this mode affects only newly opened / created documents. In KWrite "
 "a restart is recommended."
@@ -4965,13 +4969,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:119
 #. i18n: ectx: property (text), widget (QCheckBox, chkDeveloperMode)
-#: rc.cpp:812
+#: rc.cpp:799
 msgid "Enable power user mode (KDE 3 mode)"
 msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:126
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowIndentationLines)
-#: rc.cpp:815
+#: rc.cpp:802
 #, fuzzy
 msgid ""
 "If this is enabled, the editor will display vertical lines to help identify "
@@ -4982,7 +4986,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:129
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowIndentationLines)
-#: rc.cpp:818
+#: rc.cpp:805
 #, fuzzy
 #| msgid "Show indentation lines"
 msgid "Show i&ndentation lines"
@@ -4990,7 +4994,7 @@ msgstr "Намоиши хатҳои баробар"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:136
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowWholeBracketExpression)
-#: rc.cpp:821
+#: rc.cpp:808
 msgid ""
 "If this is enabled, the range between the selected matching brackets will be "
 "highlighted."
@@ -4998,187 +5002,183 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowWholeBracketExpression)
-#: rc.cpp:824
+#: rc.cpp:811
 msgid "Highlight range between selected brackets"
 msgstr ""
 
-#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:23
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowFoldingMarkers)
-#: rc.cpp:830
-msgid ""
-"If this option is checked, every new view will display marks for code "
-"folding, if code folding is available."
-msgstr ""
-"Мавриди фаъол намудани ин нишона, тамоми тирезаҳои ҷадид бо хати гардонидани "
-"блокҳои барнома,агар ин имкон барои санади интихобшуда бошад, намоиш хоҳад "
-"шуд."
-
-#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:26
-#. i18n: ectx: property (text), widget (QCheckBox, chkShowFoldingMarkers)
-#: rc.cpp:833
-msgid "Show &folding markers (if available)"
-msgstr "Намоиши хати тобиши &маркерҳо (агар дастрасӣ шавад)"
-
-#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:33
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkIconBorder)
-#: rc.cpp:836
-#, fuzzy
-#| msgid ""
-#| "If this option is checked, every new view will display an icon border on "
-#| "the left hand side.<br><br>The icon border shows bookmark signs, for "
-#| "instance."
-msgid ""
-"<p>If this option is checked, every new view will display an icon border on "
-"the left hand side.</p><p>The icon border shows bookmark signs, for instance."
-"</p>"
-msgstr ""
-"Агар ин интихобот интихоб шудааст, ҳар намоиши нав чорчубаи нишона дар "
-"тарафи чап нишон медиҳад. <br><br>Чорчубаи нишона аломатҳои мондан ҳама вақт "
-"нишон медиҳад."
-
-#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:36
-#. i18n: ectx: property (text), widget (QCheckBox, chkIconBorder)
-#: rc.cpp:839
-msgid "Show &icon border"
-msgstr "Намоиши &сарҳади нишона"
-
-#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:43
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkLineNumbers)
-#: rc.cpp:842
-msgid ""
-"If this option is checked, every new view will display line numbers on the "
-"left hand side."
-msgstr ""
-"Агар ин интихобот интихоб шудааст, ҳар намоиши нав хати рақамҳо дар тарафи "
-"чап нишон медиҳад."
-
-#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:46
-#. i18n: ectx: property (text), widget (QCheckBox, chkLineNumbers)
-#: rc.cpp:845
-msgid "Show &line numbers"
-msgstr "Намоиши &миқдори хатҳо"
-
-#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:53
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkScrollbarMarks)
-#: rc.cpp:848
-#, fuzzy
-#| msgid ""
-#| "If this option is checked, every new view will show marks on the vertical "
-#| "scrollbar.<br><br>These marks will, for instance, show bookmarks."
-msgid ""
-"<p>If this option is checked, every new view will show marks on the vertical "
-"scrollbar.</p><p>These marks will show bookmarks, for instance.</p>"
-msgstr ""
-"Мавриди фаъол намудани ин нишона, тамоми тирезаҳои ҷадид бо хати ишорот ба "
-"сӯи тирезаи чап низнамоиш хоҳанд шуд.<br><br>Ин хат барои танзимоти гузориш "
-"истифода мешавад."
-
-#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:56
-#. i18n: ectx: property (text), widget (QCheckBox, chkScrollbarMarks)
-#: rc.cpp:851
-msgid "Show &scrollbar marks"
-msgstr "&Нишон додани нишонҳои хатти тобдиҳанда"
-
-#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:66
-#. i18n: ectx: property (whatsThis), widget (QGroupBox, gbSortBookmarks)
-#: rc.cpp:854
-msgid ""
-"Choose how the bookmarks should be ordered in the <b>Bookmarks</b> menu."
-msgstr ""
-"Интихоб кунед чи хел монданҳо бояд бо тартиб гузашта шавад дар менюи "
-"<b>Монданҳо</b>."
-
-#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:69
-#. i18n: ectx: property (title), widget (QGroupBox, gbSortBookmarks)
-#: rc.cpp:857
-msgid "Sort Bookmarks Menu"
-msgstr "Менюи монданҳоро ба навъҳо ҷудо кунед"
-
-#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:75
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, rbSortBookmarksByCreation)
-#: rc.cpp:860
-msgid ""
-"Each new bookmark will be added to the bottom, independently from where it "
-"is placed in the document."
-msgstr ""
-"Ҳар мондани нав дар поён илова мешавад, вобаста аз дар куҷочойгир аст ӯ дар "
-"ҳуҷҷат."
-
-#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:78
-#. i18n: ectx: property (text), widget (QRadioButton, rbSortBookmarksByCreation)
-#: rc.cpp:863
-msgid "By c&reation"
-msgstr "Ба &таърих"
-
-#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:85
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, rbSortBookmarksByPosition)
-#: rc.cpp:866
-msgid "The bookmarks will be ordered by the line numbers they are placed at."
-msgstr ""
-"Монданҳо бо тартиб гузошта шавад тавассути хати рақамҳо ҷое ки онҳо ҷойгир "
-"ҳастанд."
-
-#. i18n: file: dialogs/bordersappearanceconfigwidget.ui:88
-#. i18n: ectx: property (text), widget (QRadioButton, rbSortBookmarksByPosition)
-#: rc.cpp:869
-msgid "By &position"
-msgstr "Ба &ҷойгиршавӣ"
-
-#. i18n: file: swapfile/recoverwidget.ui:44
-#. i18n: ectx: property (text), widget (QLabel, lblSwap)
-#: rc.cpp:872
-msgid ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body>\n"
-"<p><b>Data Recovery</b> <a href=\"The application stores the things you "
-"changed in a swap file. Using the original file you started from plus the "
-"swap file you can mostly recover your work.\"><span>(Help)</span></a></"
-"p><p>The file was not closed appropriately. Do you want to recover the data?"
-"</p></body></html>"
-msgstr ""
-
-#. i18n: file: swapfile/recoverwidget.ui:59
-#. i18n: ectx: property (text), widget (KPushButton, btnDiff)
-#: rc.cpp:878
+#. i18n: file: dialogs/modonhdwidget.ui:22
+#. i18n: ectx: property (text), widget (QCheckBox, chkIgnoreWhiteSpaces)
+#: rc.cpp:814
 #, fuzzy
 #| msgid "&Ignore Changes"
-msgid "View Changes"
+msgid "Ignore white space changes"
 msgstr "&Эътино накардани тағйиротҳо"
 
-#. i18n: file: swapfile/recoverwidget.ui:82
-#. i18n: ectx: property (text), widget (KPushButton, btnRecover)
-#: rc.cpp:881
-msgid "Recover"
-msgstr ""
-
-#. i18n: file: swapfile/recoverwidget.ui:89
-#. i18n: ectx: property (text), widget (KPushButton, btnDiscard)
-#: rc.cpp:884
-#, fuzzy
-#| msgid "Disabled"
-msgid "Discard"
-msgstr "Ғайри фаъол"
-
-#. i18n: file: swapfile/brokenswapfilewidget.ui:44
-#. i18n: ectx: property (text), widget (QLabel, lblSwap)
-#: rc.cpp:887
+#. i18n: file: dialogs/modonhdwidget.ui:29
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnDiff)
+#: rc.cpp:817
 msgid ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body>\n"
-"<p><b>Data Recovery</b> <a href=\"Kate stores the things you changed in a "
-"swap file. Using the original file you started from plus the swap file you "
-"can mostly recover your work.\"><span>(Help)</span></a></p><p>Could not "
-"recover all data. The swap file was probably incomplete.</p></body></html>"
+"Calculates the difference between the editor contents and the disk file "
+"using diff(1)."
 msgstr ""
 
-#. i18n: file: swapfile/brokenswapfilewidget.ui:75
-#. i18n: ectx: property (text), widget (KPushButton, btnOk)
+#. i18n: file: dialogs/modonhdwidget.ui:32
+#. i18n: ectx: property (text), widget (QPushButton, btnDiff)
+#: rc.cpp:820
+msgid "&View Difference"
+msgstr "&Намоиши дигаргуниҳо"
+
+#. i18n: file: dialogs/commandmenuconfigwidget.ui:27
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
+#. i18n: file: dialogs/viinputmodeconfigwidget.ui:90
+#. i18n: ectx: property (text), widget (QTableWidget, tblNormalModeMappings)
+#: rc.cpp:826 rc.cpp:884
+#, fuzzy
+#| msgid "Comment"
+msgid "Command"
+msgstr "Шарҳ"
+
+#. i18n: file: dialogs/commandmenuconfigwidget.ui:32
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
+#: rc.cpp:829
+#, fuzzy
+#| msgid "Execution"
+msgid "Description"
+msgstr "Иҷро кардан"
+
+#. i18n: file: dialogs/commandmenuconfigwidget.ui:48
+#. i18n: ectx: property (text), widget (QPushButton, btnEditEntry)
+#: rc.cpp:832
+#, fuzzy
+#| msgid "Edit Entry"
+msgid "Edit Entry..."
+msgstr "Тағйири вурудот"
+
+#. i18n: file: dialogs/commandmenuconfigwidget.ui:58
+#. i18n: ectx: property (text), widget (QPushButton, btnRemoveEntry)
+#: rc.cpp:835
+msgid "Remove Entry"
+msgstr ""
+
+#. i18n: file: dialogs/commandmenuconfigwidget.ui:78
+#. i18n: ectx: property (text), widget (QPushButton, btnAddEntry)
+#: rc.cpp:838
+#, fuzzy
+#| msgid "Edit Entry"
+msgid "Add Entry..."
+msgstr "Тағйири вурудот"
+
+#. i18n: file: dialogs/commandmenuconfigwidget.ui:93
+#. i18n: ectx: property (title), widget (QGroupBox, gbNotes)
+#: rc.cpp:841
+#, fuzzy
+#| msgid "Footer Properties"
+msgid "Further Notes"
+msgstr "Хосиятҳои "
+
+#. i18n: file: dialogs/commandmenuconfigwidget.ui:108
+#. i18n: ectx: property (text), widget (QLabel, lblNotes)
+#: rc.cpp:844
+msgid ""
+"<p>The entries are accessible through the submenu <b>Commands</b> in the "
+"<b>Tools</b> menu. For faster access it is possible to assign <b>shortcuts</"
+"b> in the shortcut configuration page after applying the changes.</p>"
+msgstr ""
+
+#. i18n: file: dialogs/viinputmodeconfigwidget.ui:18
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViInputModeDefault)
+#: rc.cpp:850
+msgid ""
+"When selected, the vi input mode will be enabled when opening a new view. "
+"You can still toggle the vi input mode on/off for a particular view in the "
+"Edit menu."
+msgstr ""
+
+#. i18n: file: dialogs/viinputmodeconfigwidget.ui:21
+#. i18n: ectx: property (text), widget (QCheckBox, chkViInputModeDefault)
+#: rc.cpp:853
+msgid "Use Vi input mode"
+msgstr ""
+
+#. i18n: file: dialogs/viinputmodeconfigwidget.ui:28
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViCommandsOverride)
+#: rc.cpp:856
+msgid ""
+"When selected, vi commands will override Kate's built-in commands. For "
+"example: Ctrl+R will redo, and override the standard action (showing the "
+"search and replace dialog)."
+msgstr ""
+
+#. i18n: file: dialogs/viinputmodeconfigwidget.ui:31
+#. i18n: ectx: property (text), widget (QCheckBox, chkViCommandsOverride)
+#: rc.cpp:859
+msgid "Let Vi commands override Kate shortcuts"
+msgstr ""
+
+#. i18n: file: dialogs/viinputmodeconfigwidget.ui:40
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViStatusBarHide)
+#: rc.cpp:862
+msgid ""
+"By default, an extra status bar will be used when the Vi input mode is "
+"enabled. This status bar shows commands while they are being typed and "
+"messages/errors produced by Vi commands.\n"
+"\n"
+"Checking this options will hide this extra status line."
+msgstr ""
+
+#. i18n: file: dialogs/viinputmodeconfigwidget.ui:43
+#. i18n: ectx: property (text), widget (QCheckBox, chkViStatusBarHide)
+#: rc.cpp:867
+msgid "Hide the Vi mode status bar"
+msgstr ""
+
+#. i18n: file: dialogs/viinputmodeconfigwidget.ui:58
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, groupBox)
+#: rc.cpp:870
+msgid ""
+"Key mapping is used to change the meaning of typed keys. This allows you to "
+"move commands to other keys or make special keypresses for doing a series of "
+"commands.\n"
+"\n"
+"Example:\n"
+"\"<F2>\" → \"I-- <esc>\"\n"
+"\n"
+"This will prepend \"-- \" to a line when pressing F2."
+msgstr ""
+
+#. i18n: file: dialogs/viinputmodeconfigwidget.ui:61
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:878
+msgid "Key Mapping"
+msgstr ""
+
+#. i18n: file: dialogs/viinputmodeconfigwidget.ui:71
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: rc.cpp:881
+#, fuzzy
+#| msgid "Normal Text"
+msgid "Normal mode"
+msgstr "Матни муқаррарӣ"
+
+#. i18n: file: dialogs/viinputmodeconfigwidget.ui:95
+#. i18n: ectx: property (text), widget (QTableWidget, tblNormalModeMappings)
+#: rc.cpp:887
+#, fuzzy
+msgid "Replacement"
+msgstr "&Ивваз кардан"
+
+#. i18n: file: dialogs/viinputmodeconfigwidget.ui:105
+#. i18n: ectx: property (text), widget (QPushButton, btnRemoveSelectedNormal)
+#: rc.cpp:890
+#, fuzzy
+#| msgid "Selected"
+msgid "Remove selected"
+msgstr "Интихобшуда"
+
+#. i18n: file: dialogs/viinputmodeconfigwidget.ui:112
+#. i18n: ectx: property (text), widget (QPushButton, btnAddNewNormal)
 #: rc.cpp:893
-msgid "OK"
+msgid "Add new mapping"
 msgstr ""
 
 #. i18n: tag language attribute name
