@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-30 02:59+0100\n"
+"POT-Creation-Date: 2011-01-02 03:00+0100\n"
 "PO-Revision-Date: 2007-08-03 08:03-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik Language\n"
@@ -73,6 +73,7 @@ msgid "Paste Shapes"
 msgstr "Эҷоди қолиб"
 
 #: flake/KoToolBase.cpp:175 flake/KoToolManager.cpp:350
+#: main/KoToolDocker.cpp:205
 #, fuzzy
 msgid "Tool Options"
 msgstr "Худитмомӣ"
@@ -453,7 +454,7 @@ msgstr ""
 msgid "Script Manager"
 msgstr "Мудири услуб"
 
-#: kokross/KoScriptManager.cpp:299 main/KoMainWindow.cpp:592
+#: kokross/KoScriptManager.cpp:299 main/KoMainWindow.cpp:595
 #, fuzzy
 msgid "Save"
 msgstr "Мавҷнок"
@@ -569,7 +570,7 @@ msgstr ""
 msgid "Reparent shapes"
 msgstr "Ҳузфи матн"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:95 main/KoMainWindow.cpp:1687
+#: kopageapp/KoPADocumentStructureDocker.cpp:95 main/KoMainWindow.cpp:1700
 #, fuzzy
 msgid "Document"
 msgstr "Кушодани санад"
@@ -707,115 +708,6 @@ msgid "Paste Page"
 msgid_plural "Paste Pages"
 msgstr[0] "Гузориши матн аз буфери иввазот"
 msgstr[1] "Гузориши матн аз буфери иввазот"
-
-#: kopageapp/KoPAView.cpp:239 main/KoToolBoxFactory.cpp:36
-#, fuzzy
-msgid "Tools"
-msgstr "Ранги пешфарзӣ"
-
-#: kopageapp/KoPAView.cpp:276
-#, fuzzy
-msgid "D&elete"
-msgstr "Ҳузфи матн"
-
-#: kopageapp/KoPAView.cpp:287
-msgid "Snap to Grid"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:297
-msgid "Show Master Pages"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:301
-msgid "Show Rulers"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:303
-msgid "Show/hide the view's rulers"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:307
-#, fuzzy
-msgid "Insert Page"
-msgstr "Гузориши матн"
-
-#: kopageapp/KoPAView.cpp:309 kopageapp/KoPAView.cpp:310
-msgid "Insert a new page after the current one"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:313
-#, fuzzy
-#| msgid "Company Name"
-msgid "Copy Page"
-msgstr "Номи корхона"
-
-#: kopageapp/KoPAView.cpp:315 kopageapp/KoPAView.cpp:316
-msgid "Copy the current page"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:319
-#, fuzzy
-msgid "Delete Page"
-msgstr "Ҳузфи матн"
-
-#: kopageapp/KoPAView.cpp:322 kopageapp/KoPAView.cpp:323
-#, fuzzy
-msgid "Delete the current page"
-msgstr "Ҳузфи матн"
-
-#: kopageapp/KoPAView.cpp:326
-#, fuzzy
-#| msgid "Paste Text"
-msgid "Master Page..."
-msgstr "Гузориши матн аз буфери иввазот"
-
-#: kopageapp/KoPAView.cpp:330
-#, fuzzy
-#| msgid "Page Layout"
-msgid "Page Layout..."
-msgstr "Хосиятҳои саҳифа"
-
-#. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:63
-#. i18n: ectx: property (text), widget (QTableWidget, variables)
-#: kopageapp/KoPAView.cpp:339 rc.cpp:317
-msgid "Variable"
-msgstr "Тағйирёбанда"
-
-#: kopageapp/KoPAView.cpp:344
-#, fuzzy
-#| msgid "Import Document"
-msgid "Import Document..."
-msgstr "Воридоти санад"
-
-#: kopageapp/KoPAView.cpp:348
-msgid "Configure..."
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:401
-#, fuzzy
-msgid "Import Slideshow"
-msgstr "Вориди услубҳо"
-
-#: kopageapp/KoPAView.cpp:404 main/KoMainWindow.cpp:1204
-msgid "Import Document"
-msgstr "Воридоти санад"
-
-#: kopageapp/KoPAView.cpp:433 kopageapp/KoPAView.cpp:437
-#, fuzzy, kde-format
-#| msgid ""
-#| "Could not open\n"
-#| "%1"
-msgid ""
-"Could not import\n"
-"%1"
-msgstr ""
-"Наметавонам %1-ро\n"
-"боз кунам"
-
-#: kopageapp/KoPAView.cpp:541
-#, fuzzy
-msgid "Change page layout"
-msgstr "Тағйири табулятсия"
 
 #: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
 #, fuzzy
@@ -976,6 +868,115 @@ msgstr "Ранги замина:"
 #, fuzzy
 msgid "Change background image"
 msgstr "Сония"
+
+#: kopageapp/KoPAView.cpp:239 main/KoToolBoxFactory.cpp:36
+#, fuzzy
+msgid "Tools"
+msgstr "Ранги пешфарзӣ"
+
+#: kopageapp/KoPAView.cpp:276
+#, fuzzy
+msgid "D&elete"
+msgstr "Ҳузфи матн"
+
+#: kopageapp/KoPAView.cpp:287
+msgid "Snap to Grid"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:297
+msgid "Show Master Pages"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:301
+msgid "Show Rulers"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:303
+msgid "Show/hide the view's rulers"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:307
+#, fuzzy
+msgid "Insert Page"
+msgstr "Гузориши матн"
+
+#: kopageapp/KoPAView.cpp:309 kopageapp/KoPAView.cpp:310
+msgid "Insert a new page after the current one"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:313
+#, fuzzy
+#| msgid "Company Name"
+msgid "Copy Page"
+msgstr "Номи корхона"
+
+#: kopageapp/KoPAView.cpp:315 kopageapp/KoPAView.cpp:316
+msgid "Copy the current page"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:319
+#, fuzzy
+msgid "Delete Page"
+msgstr "Ҳузфи матн"
+
+#: kopageapp/KoPAView.cpp:322 kopageapp/KoPAView.cpp:323
+#, fuzzy
+msgid "Delete the current page"
+msgstr "Ҳузфи матн"
+
+#: kopageapp/KoPAView.cpp:326
+#, fuzzy
+#| msgid "Paste Text"
+msgid "Master Page..."
+msgstr "Гузориши матн аз буфери иввазот"
+
+#: kopageapp/KoPAView.cpp:330
+#, fuzzy
+#| msgid "Page Layout"
+msgid "Page Layout..."
+msgstr "Хосиятҳои саҳифа"
+
+#. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:63
+#. i18n: ectx: property (text), widget (QTableWidget, variables)
+#: kopageapp/KoPAView.cpp:339 rc.cpp:317
+msgid "Variable"
+msgstr "Тағйирёбанда"
+
+#: kopageapp/KoPAView.cpp:344
+#, fuzzy
+#| msgid "Import Document"
+msgid "Import Document..."
+msgstr "Воридоти санад"
+
+#: kopageapp/KoPAView.cpp:348
+msgid "Configure..."
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:401
+#, fuzzy
+msgid "Import Slideshow"
+msgstr "Вориди услубҳо"
+
+#: kopageapp/KoPAView.cpp:404 main/KoMainWindow.cpp:1211
+msgid "Import Document"
+msgstr "Воридоти санад"
+
+#: kopageapp/KoPAView.cpp:433 kopageapp/KoPAView.cpp:437
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not open\n"
+#| "%1"
+msgid ""
+"Could not import\n"
+"%1"
+msgstr ""
+"Наметавонам %1-ро\n"
+"боз кунам"
+
+#: kopageapp/KoPAView.cpp:541
+#, fuzzy
+msgid "Change page layout"
+msgstr "Тағйири табулятсия"
 
 #. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1498,6 +1499,16 @@ msgstr "Формати сана"
 msgid "Default"
 msgstr "&Пешфарзӣ"
 
+#: kotext/commands/DeleteTableColumnCommand.cpp:39
+#, fuzzy
+msgid "Delete Column"
+msgstr "Ҳузфи матн"
+
+#: kotext/commands/DeleteTableRowCommand.cpp:39
+#, fuzzy
+msgid "Delete Row"
+msgstr "Ҳузфи матн"
+
 #: kotext/KoTextEditor.cpp:435 kotext/KoTextEditor.cpp:440
 #, fuzzy
 msgid "Bold"
@@ -1660,16 +1671,6 @@ msgstr ""
 msgid "Line Break"
 msgstr "Тағйири лабаҳо"
 
-#: kotext/commands/DeleteTableColumnCommand.cpp:39
-#, fuzzy
-msgid "Delete Column"
-msgstr "Ҳузфи матн"
-
-#: kotext/commands/DeleteTableRowCommand.cpp:39
-#, fuzzy
-msgid "Delete Row"
-msgstr "Ҳузфи матн"
-
 #: main/KoApplication.cpp:77
 msgid "Only print and exit"
 msgstr "Танҳо чоп кардан ва хурӯҷ шудан"
@@ -1731,6 +1732,10 @@ msgstr "Хатои кушодани қолиби %1."
 #: main/KoApplicationAdaptor.cpp:50
 #, kde-format
 msgid "Unknown Calligra MimeType %1. Check your installation."
+msgstr ""
+
+#: main/KoDockerManager.cpp:68
+msgid "Tool Bars Docker"
 msgstr ""
 
 #: main/KoDocument.cpp:503
@@ -1811,7 +1816,7 @@ msgstr ""
 "Худнигоҳдорандаи ин санадот низ вуҷуд аст.\n"
 "Худ нигоҳдорандаро боз кунам?"
 
-#: main/KoDocument.cpp:1279 main/KoDocument.cpp:1546 main/KoMainWindow.cpp:635
+#: main/KoDocument.cpp:1279 main/KoDocument.cpp:1546 main/KoMainWindow.cpp:638
 #, kde-format
 msgid "The file %1 does not exist."
 msgstr "Файли %1 вуҷуд надорад."
@@ -1942,13 +1947,13 @@ msgid ""
 "an old version."
 msgstr ""
 
-#: main/KoDocument.cpp:1924 main/KoMainWindow.cpp:1132
+#: main/KoDocument.cpp:1924 main/KoMainWindow.cpp:1139
 #: pigment/resources/KoColorSet.cpp:214
 #, fuzzy
 msgid "Untitled"
 msgstr "Муомилот"
 
-#: main/KoDocument.cpp:1927 main/KoMainWindow.cpp:1135
+#: main/KoDocument.cpp:1927 main/KoMainWindow.cpp:1142
 #, kde-format
 msgid ""
 "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save it?"
@@ -2026,7 +2031,7 @@ msgstr "Миқдори объектҳои вурудшуда"
 msgid "Unknown"
 msgstr ""
 
-#: main/KoDocumentInfoDlg.cpp:90 main/KoMainWindow.cpp:283
+#: main/KoDocumentInfoDlg.cpp:90 main/KoMainWindow.cpp:287
 msgid "Document Information"
 msgstr "Иттилоот дар бобати санад"
 
@@ -2130,7 +2135,7 @@ msgid ""
 "document now?</qt>"
 msgstr ""
 
-#: main/KoDocumentInfoDlg.cpp:489 main/KoMainWindow.cpp:757
+#: main/KoDocumentInfoDlg.cpp:489 main/KoMainWindow.cpp:760
 #, kde-format
 msgid "%1 (unknown file type)"
 msgstr "%1 (намуди файли номаълум)"
@@ -2180,7 +2185,7 @@ msgstr ""
 msgid "No"
 msgstr "Эзоҳ"
 
-#: main/KoExistingDocumentPane.cpp:44 main/KoMainWindow.cpp:1202
+#: main/KoExistingDocumentPane.cpp:44 main/KoMainWindow.cpp:1209
 #: main/KoOpenPane.cpp:358 main/KoOpenPane.cpp:362
 msgid "Open Document"
 msgstr "Кушодани санад"
@@ -2239,86 +2244,86 @@ msgstr "Миқдори хатҳо"
 msgid "Shows or hides grid"
 msgstr ""
 
-#: main/KoMainWindow.cpp:154
+#: main/KoMainWindow.cpp:158
 #, fuzzy, kde-format
 msgid "%1 unsaved document (%2)"
 msgstr "Нигоҳ доштани санад ҳамчун"
 
-#: main/KoMainWindow.cpp:255
+#: main/KoMainWindow.cpp:259
 #, fuzzy
 #| msgid "E&xport..."
 msgid "Export as PDF..."
 msgstr "&Содирот..."
 
-#: main/KoMainWindow.cpp:265
+#: main/KoMainWindow.cpp:269
 #, fuzzy
 msgid "Reload"
 msgstr "Пурбор кардан"
 
-#: main/KoMainWindow.cpp:269
+#: main/KoMainWindow.cpp:273
 msgid "Versions..."
 msgstr ""
 
-#: main/KoMainWindow.cpp:273
+#: main/KoMainWindow.cpp:277
 msgid "I&mport..."
 msgstr "&Воридот..."
 
-#: main/KoMainWindow.cpp:277
+#: main/KoMainWindow.cpp:281
 msgid "E&xport..."
 msgstr "&Содирот..."
 
-#: main/KoMainWindow.cpp:308
+#: main/KoMainWindow.cpp:312
 msgid "&Close All Views"
 msgstr "&Пӯшидани тамоми намудҳо"
 
-#: main/KoMainWindow.cpp:315
+#: main/KoMainWindow.cpp:319
 msgid "&Split View"
 msgstr "&Ҷудо кардани намуд"
 
-#: main/KoMainWindow.cpp:320
+#: main/KoMainWindow.cpp:324
 msgid "&Remove View"
 msgstr "&Ҳузфи намуд"
 
-#: main/KoMainWindow.cpp:326
+#: main/KoMainWindow.cpp:330
 msgid "Full Screen Mode"
 msgstr ""
 
-#: main/KoMainWindow.cpp:331
+#: main/KoMainWindow.cpp:335
 msgid "Splitter &Orientation"
 msgstr "&Ҷойгиршавии ҷудокунак"
 
-#: main/KoMainWindow.cpp:335
+#: main/KoMainWindow.cpp:339
 msgid "&Horizontal"
 msgstr "&Уфуқӣ"
 
-#: main/KoMainWindow.cpp:335
+#: main/KoMainWindow.cpp:339
 msgid "&Vertical"
 msgstr "&Амудӣ"
 
-#: main/KoMainWindow.cpp:343
+#: main/KoMainWindow.cpp:347
 msgid "Show Dockers"
 msgstr ""
 
-#: main/KoMainWindow.cpp:344
+#: main/KoMainWindow.cpp:348
 #, fuzzy
 msgid "Hide Dockers"
 msgstr "Миқдори хатҳо"
 
-#: main/KoMainWindow.cpp:351
+#: main/KoMainWindow.cpp:355
 msgid "Dockers"
 msgstr ""
 
-#: main/KoMainWindow.cpp:586
+#: main/KoMainWindow.cpp:589
 #, fuzzy
 msgid "(write protected)"
 msgstr "муҳофиза аз навиштан"
 
-#: main/KoMainWindow.cpp:590
+#: main/KoMainWindow.cpp:593
 #, kde-format
 msgid "Save as %1"
 msgstr ""
 
-#: main/KoMainWindow.cpp:765
+#: main/KoMainWindow.cpp:768
 #, kde-format
 msgid ""
 "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
@@ -2327,11 +2332,11 @@ msgstr ""
 "<qt> Нигоҳ доштан ба андозаи %1, метавонад ба қисман аз даст додани "
 "анзозадарорӣ низ биёрад.<p>Оё мехоҳед дар ин андоза нигоҳ доред?</qt>"
 
-#: main/KoMainWindow.cpp:768
+#: main/KoMainWindow.cpp:771
 msgid "Confirm Save"
 msgstr "Тасдиқи нигоҳдорӣ"
 
-#: main/KoMainWindow.cpp:777
+#: main/KoMainWindow.cpp:780
 #, kde-format
 msgid ""
 "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you still "
@@ -2340,24 +2345,24 @@ msgstr ""
 "<qt>Содирот ба андозаи %1, метавонад ба қисман аз даст додани анзозадарорӣ "
 "низ биёрад.<p>Оё мехоҳед дар ин андоза содир кунед?</qt>"
 
-#: main/KoMainWindow.cpp:780
+#: main/KoMainWindow.cpp:783
 msgid "Confirm Export"
 msgstr "Тасдиқи содирот"
 
-#: main/KoMainWindow.cpp:781
+#: main/KoMainWindow.cpp:784
 #, fuzzy
 msgid "Export"
 msgstr "&Содирот..."
 
-#: main/KoMainWindow.cpp:864
+#: main/KoMainWindow.cpp:867
 msgid "Save Document As"
 msgstr "Нигоҳ доштани санад ҳамчун"
 
-#: main/KoMainWindow.cpp:866
+#: main/KoMainWindow.cpp:869
 msgid "Export Document As"
 msgstr "Содир ба файл"
 
-#: main/KoMainWindow.cpp:924 main/KoMainWindow.cpp:1337
+#: main/KoMainWindow.cpp:927 main/KoMainWindow.cpp:1344
 msgid ""
 "A document with this name already exists.\n"
 "Do you want to overwrite it?"
@@ -2365,32 +2370,32 @@ msgstr ""
 "Санад бо чунин ном аллакай вуҷуд аст\n"
 "Оё мехоҳед аз нав нависӣ кунед?"
 
-#: main/KoMainWindow.cpp:926 main/KoMainWindow.cpp:1339
-#: main/KoMainWindow.cpp:1727
+#: main/KoMainWindow.cpp:929 main/KoMainWindow.cpp:1346
+#: main/KoMainWindow.cpp:1740
 #, fuzzy
 msgid "Warning"
 msgstr "Чопи охирин"
 
-#: main/KoMainWindow.cpp:1331
+#: main/KoMainWindow.cpp:1338
 msgid "Write PDF"
 msgstr ""
 
-#: main/KoMainWindow.cpp:1621
+#: main/KoMainWindow.cpp:1632
 #, kde-format
 msgid "Show %1 Toolbar"
 msgstr "Намоиши панели асбоботи %1"
 
-#: main/KoMainWindow.cpp:1623
+#: main/KoMainWindow.cpp:1634
 #, kde-format
 msgid "Hide %1 Toolbar"
 msgstr "Пинҳон кардани пайраҳаи асбоби %1"
 
-#: main/KoMainWindow.cpp:1695
+#: main/KoMainWindow.cpp:1708
 #, fuzzy, kde-format
 msgid "Document - %1"
 msgstr "Номи санадот"
 
-#: main/KoMainWindow.cpp:1725
+#: main/KoMainWindow.cpp:1738
 #, fuzzy
 #| msgid ""
 #| "You will lose all your changes!\n"
@@ -2581,6 +2586,14 @@ msgstr "Суратҳои дастрасӣ вуҷуд нест."
 #: main/KoTemplatesPane.cpp:47
 msgid "Use This Template"
 msgstr "Истифодаи қолиб"
+
+#: main/KoToolDocker.cpp:232
+msgid "Toggles showing a title bar"
+msgstr ""
+
+#: main/KoToolDocker.cpp:241
+msgid "Toggles organising the options in tabs or not"
+msgstr ""
 
 #: main/KoVersionDialog.cpp:48
 msgid "Version"
