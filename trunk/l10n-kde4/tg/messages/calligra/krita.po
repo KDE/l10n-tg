@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-06 02:59+0100\n"
+"POT-Creation-Date: 2011-01-07 03:02+0100\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -7963,6 +7963,7 @@ msgstr "%"
 #. i18n: ectx: property (text), widget (QLabel, label_10)
 #: rc.cpp:3282 image/kis_adjustment_layer.cc:126
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:51
+#: ui/recorder/kis_recorded_filter_action_creator.cpp:59
 #, fuzzy
 msgid "Filter"
 msgstr "&Сафед"
@@ -10207,11 +10208,6 @@ msgstr ""
 msgid "Invalid value."
 msgstr "Андозаи эҷод кардан"
 
-#: image/recorder/kis_macro.cc:96
-#, fuzzy
-msgid "Play macro"
-msgstr "Ҷамъ"
-
 #: image/recorder/kis_recorded_fill_paint_action.cpp:42
 #: plugins/tools/defaulttools/kis_tool_fill.cc:127
 msgid "Fill"
@@ -10222,6 +10218,11 @@ msgstr "Пур кардан"
 #, fuzzy
 msgid "Path"
 msgstr "нуқтаҳо"
+
+#: image/recorder/kis_macro_player.cc:71
+#, fuzzy
+msgid "Play macro"
+msgstr "Ҷамъ"
 
 #: main.cc:41
 msgid "File(s) or URL(s) to open"
@@ -10365,14 +10366,6 @@ msgstr "Нест кардани ҳозира %1"
 msgid "Reset to default"
 msgstr ""
 
-#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:89
-msgid "No action is selected."
-msgstr ""
-
-#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:92
-msgid "No editor for current action."
-msgstr ""
-
 #: plugins/extensions/bigbrother/actionseditor/kis_actions_editor_dialog.cpp:30
 #, fuzzy
 msgid "Save macro"
@@ -10383,24 +10376,37 @@ msgstr "Ҷамъ"
 msgid "Discard changes"
 msgstr "Иловаи Мил"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:82
+#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:105
+#, fuzzy
+msgid "Failed to create an action."
+msgstr "Сохтани нав %1"
+
+#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:137
+msgid "No action is selected."
+msgstr ""
+
+#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:140
+msgid "No editor for current action."
+msgstr ""
+
+#: plugins/extensions/bigbrother/bigbrother.cc:87
 msgid "Open and play..."
 msgstr ""
 
-#: plugins/extensions/bigbrother/bigbrother.cc:86
+#: plugins/extensions/bigbrother/bigbrother.cc:91
 msgid "Open and edit..."
 msgstr ""
 
-#: plugins/extensions/bigbrother/bigbrother.cc:90
+#: plugins/extensions/bigbrother/bigbrother.cc:95
 #, fuzzy
 msgid "Save all actions"
 msgstr "Ҳаракат кардани Интихобот"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:94
+#: plugins/extensions/bigbrother/bigbrother.cc:99
 msgid "Start recording macro"
 msgstr ""
 
-#: plugins/extensions/bigbrother/bigbrother.cc:98
+#: plugins/extensions/bigbrother/bigbrother.cc:103
 msgid "Stop recording actions"
 msgstr ""
 
@@ -11127,11 +11133,6 @@ msgstr "Нест кардани Мил"
 msgid "Minimize Channel"
 msgstr "Нест кардани Мил"
 
-#: plugins/filters/colorsfilters/kis_brightness_contrast_filter.cpp:146
-#, fuzzy
-msgid "&Brightness/Contrast curve..."
-msgstr "&Равшанӣ / Тазод..."
-
 #: plugins/filters/colorsfilters/kis_brightness_contrast_filter.h:87
 msgid "Brightness / Contrast"
 msgstr "Равшанӣ / Тазод"
@@ -11169,6 +11170,11 @@ msgstr "Тазод :"
 #, fuzzy
 msgid "Desaturate"
 msgstr "&Сер накардан"
+
+#: plugins/filters/colorsfilters/kis_brightness_contrast_filter.cpp:146
+#, fuzzy
+msgid "&Brightness/Contrast curve..."
+msgstr "&Равшанӣ / Тазод..."
 
 #: plugins/filters/convolutionfilters/convolutionfilters.cpp:69
 #, fuzzy
