@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-08 03:05+0100\n"
+"POT-Creation-Date: 2011-01-09 03:03+0100\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -3146,6 +3146,7 @@ msgstr ""
 #. i18n: file: ui/forms/wdgshapeoptions.ui:66
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbFill)
 #: rc.cpp:861 rc.cpp:4013
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:57
 #, fuzzy
 msgid "Pattern"
 msgstr "Намунаҳо"
@@ -3909,6 +3910,7 @@ msgstr "Ҳолатро ташкил кардан:"
 #. i18n: file: plugins/extensions/separate_channels/wdg_separations.ui:43
 #. i18n: ectx: property (title), widget (QGroupBox, grpSource)
 #: rc.cpp:1219
+#: plugins/paintops/libpaintop/kis_color_source_option_widget.cpp:37
 #, fuzzy
 msgid "Source"
 msgstr "масоҳат"
@@ -4424,7 +4426,7 @@ msgstr "Ҳақиқии сохтмон"
 #. i18n: file: plugins/paintops/spray/wdgshapedynamicsoptions.ui:42
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: rc.cpp:1399 rc.cpp:2400 rc.cpp:2954
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:42
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:43
 #: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:27
 #, fuzzy
 msgid "Rotation"
@@ -6288,7 +6290,7 @@ msgstr "&Серӣ"
 
 #. i18n: file: plugins/paintops/experiment/wdgexperimentoptions.ui:57
 #. i18n: ectx: property (text), widget (QCheckBox, speedCHBox)
-#: rc.cpp:2358 plugins/paintops/libpaintop/kis_dynamic_sensor.h:37
+#: rc.cpp:2358 plugins/paintops/libpaintop/kis_dynamic_sensor.h:38
 #, fuzzy
 #| msgid "Shape:"
 msgid "Speed"
@@ -6331,7 +6333,7 @@ msgstr "Сириштан"
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
 #: rc.cpp:2373 rc.cpp:2442 rc.cpp:2751 rc.cpp:2975
 #: image/recorder/kis_recorded_shape_paint_action.cpp:54
-#: plugins/assistants/RulerAssistant/EllipseAssistant.cc:99
+#: plugins/assistants/RulerAssistant/EllipseAssistant.cc:101
 #: plugins/tools/defaulttools/kis_tool_ellipse.cc:68
 #, fuzzy
 msgid "Ellipse"
@@ -7008,7 +7010,7 @@ msgstr "Такрор кардан:"
 
 #. i18n: file: plugins/paintops/libpaintop/wdgautobrush.ui:155
 #. i18n: ectx: property (title), widget (QGroupBox, grpFade_2)
-#: rc.cpp:2682 plugins/paintops/libpaintop/kis_dynamic_sensor.h:38
+#: rc.cpp:2682 plugins/paintops/libpaintop/kis_dynamic_sensor.h:39
 #, fuzzy
 msgid "Fade"
 msgstr "Аз байн рафтан:"
@@ -7251,7 +7253,7 @@ msgstr ""
 
 #. i18n: file: plugins/paintops/libpaintop/wdgcustombrush.ui:74
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: rc.cpp:2815 plugins/paintops/libpaintop/kis_dynamic_sensor.h:43
+#: rc.cpp:2815 plugins/paintops/libpaintop/kis_dynamic_sensor.h:44
 msgid "Pressure"
 msgstr ""
 
@@ -7512,7 +7514,7 @@ msgstr "Сириштан"
 
 #. i18n: file: plugins/paintops/spray/wdgshapedynamicsoptions.ui:132
 #. i18n: ectx: property (text), widget (QCheckBox, drawingAngle)
-#: rc.cpp:2969 plugins/paintops/libpaintop/kis_dynamic_sensor.h:41
+#: rc.cpp:2969 plugins/paintops/libpaintop/kis_dynamic_sensor.h:42
 #, fuzzy
 msgid "Drawing angle"
 msgstr "росткунҷа"
@@ -10233,18 +10235,13 @@ msgstr "Файл(ҳо) ё URL(ҳо) барои кушодан"
 msgid "Ruler assistant editor tool"
 msgstr "Сириштан"
 
-#: plugins/assistants/RulerAssistant/EllipseAssistant.cc:33
-#, fuzzy
-msgid "Ellipse assistant"
-msgstr "Сириштан"
-
 #: plugins/assistants/RulerAssistant/PerspectiveAssistant.cc:34
 #, fuzzy
 msgid "Perspective assistant"
 msgstr "&Асбоби Хат задани"
 
 #: plugins/assistants/RulerAssistant/PerspectiveAssistant.cc:311
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:46
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:49
 #, fuzzy
 msgid "Perspective"
 msgstr "&Асбоби Хат задани"
@@ -10272,6 +10269,11 @@ msgstr "хат"
 #: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.cc:420
 msgid "Errors were encountered. Not all assistants were successfully loaded."
 msgstr ""
+
+#: plugins/assistants/RulerAssistant/EllipseAssistant.cc:33
+#, fuzzy
+msgid "Ellipse assistant"
+msgstr "Сириштан"
 
 #: plugins/colorspaces/ctlcs/KoCtlCompositeOp.cpp:135
 #, fuzzy
@@ -11762,27 +11764,17 @@ msgstr "Тоза карданиҳо"
 msgid "Color options"
 msgstr "Алфа"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:36
-msgid "Fuzzy"
-msgstr ""
-
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:39
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:29
+#: plugins/paintops/libpaintop/kis_curve_option.cpp:31
 #, fuzzy
-msgid "Distance"
-msgstr "Сириштан"
+msgid "0.0"
+msgstr "100"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:40
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:30
+#: plugins/paintops/libpaintop/kis_curve_option.cpp:32
 #, fuzzy
-msgid "Time"
-msgstr "Воридоти Тасвир"
-
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:44
-msgid "X-Tilt"
-msgstr ""
-
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:45
-msgid "Y-Tilt"
-msgstr ""
+msgid "1.0"
+msgstr "100"
 
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:95
 #, fuzzy
@@ -11800,17 +11792,37 @@ msgstr "Занондан"
 msgid "Spacing: "
 msgstr "Фосила: "
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:28
-#: plugins/paintops/libpaintop/kis_curve_option.cpp:31
-#, fuzzy
-msgid "0.0"
-msgstr "100"
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:37
+msgid "Fuzzy"
+msgstr ""
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:29
-#: plugins/paintops/libpaintop/kis_curve_option.cpp:32
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:40
 #, fuzzy
-msgid "1.0"
-msgstr "100"
+msgid "Distance"
+msgstr "Сириштан"
+
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:41
+#, fuzzy
+msgid "Time"
+msgstr "Воридоти Тасвир"
+
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:45
+msgid "X-Tilt"
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:46
+msgid "Y-Tilt"
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:47
+#, fuzzy
+msgid "Ascension"
+msgstr "&Андозаҳои Pixel:"
+
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:48
+#, fuzzy
+msgid "Declination"
+msgstr "Қатъ кардан"
 
 #: plugins/paintops/libpaintop/kis_pressure_darken_option.cpp:27
 msgid "Darken"
@@ -11857,14 +11869,17 @@ msgid "Rate: "
 msgstr "Такрор кардан:"
 
 #: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:29
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:41
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:47
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:42
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:48
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:78
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:85
 msgid "0°"
 msgstr ""
 
 #: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:30
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:42
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:48
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:43
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:49
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:79
 msgid "360°"
 msgstr ""
 
@@ -11944,45 +11959,75 @@ msgstr ""
 msgid "%1 s"
 msgstr ""
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:27
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:28
 #, fuzzy
 msgid "Slow"
 msgstr "&Сояҳо"
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:28
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:29
 #, fuzzy
 msgid "Fast"
 msgstr "&Филтр"
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:59
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:60
 #, fuzzy
 msgid "Low"
 msgstr "Поёнтар %1"
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:60
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:61
 #, fuzzy
 msgid "High"
 msgstr "Дарозӣ:"
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:65
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:71
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:66
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:72
 msgid "-30°"
 msgstr ""
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:66
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:72
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:67
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:73
 msgid "30°"
 msgstr ""
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:77
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:84
+#, fuzzy
+msgid "90°"
+msgstr "Ранги Усул"
+
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:91
 #, fuzzy
 msgid "Far"
 msgstr "Табақа"
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:78
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:92
 #, fuzzy
 msgid "Near"
 msgstr "Тасвири Нав"
+
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:53
+#, fuzzy
+msgid "Plain color"
+msgstr "Lab Ранг"
+
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:54
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:267
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:273
+#, fuzzy
+msgid "Gradient"
+msgstr "Градиент:"
+
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:55
+msgid "Uniform random"
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:56
+msgid "Total random"
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:58
+#, fuzzy
+msgid "Locked pattern"
+msgstr "Намунаҳо"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:81
 msgid ""
@@ -12580,12 +12625,6 @@ msgstr ""
 #: plugins/tools/defaulttools/kis_tool_fill.h:91
 msgid "Fill a contiguous area of color with a color, or fill a selection."
 msgstr ""
-
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:267
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:273
-#, fuzzy
-msgid "Gradient"
-msgstr "Градиент:"
 
 #: plugins/tools/defaulttools/kis_tool_gradient.cc:327
 msgid "Repeat:"
@@ -14548,11 +14587,6 @@ msgstr "Намунаҳо"
 #~ msgctxt "rotate image 90 degrees to the right"
 #~ msgid "Right 90°"
 #~ msgstr "Дарозӣ:"
-
-#, fuzzy
-#~ msgctxt "rotate image 90 degrees to the left"
-#~ msgid "Left 90°"
-#~ msgstr "Ранги Усул"
 
 #, fuzzy
 #~ msgctxt "rotate the layer 90 degrees to the right"
