@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-08 02:25+0100\n"
+"POT-Creation-Date: 2011-01-11 02:42+0100\n"
 "PO-Revision-Date: 2005-09-17 13:14+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -24,9 +24,10 @@ msgstr ""
 "X-Generator: KBabel 1.10\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: kio/kimageio.cpp:43
-msgid "All Pictures"
-msgstr "Тамоми суратҳо"
+#: kio/connection.cpp:211
+#, kde-format
+msgid "Unable to create io-slave: %1"
+msgstr "io-slave: %1-ро сохта натавонист"
 
 #: kio/kscan.cpp:50
 msgid "Acquire Image"
@@ -35,26 +36,6 @@ msgstr "Муоина кардани тасвир"
 #: kio/kscan.cpp:99
 msgid "OCR Image"
 msgstr "Тасвири OCR"
-
-#: kio/kfileitemdelegate.cpp:236
-#, fuzzy, kde-format
-msgctxt "Items in a folder"
-msgid "1 item"
-msgid_plural "%1 items"
-msgstr[0] "%1 файлҳо"
-msgstr[1] "%1 файлҳо"
-
-#: kio/kfileitemdelegate.cpp:292 kio/kfileitemdelegate.cpp:296
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "@info mimetype"
-msgid "Unknown"
-msgstr "Ношинос"
-
-#: kio/connection.cpp:211
-#, kde-format
-msgid "Unable to create io-slave: %1"
-msgstr "io-slave: %1-ро сохта натавонист"
 
 #: kio/global.cpp:89
 #, kde-format
@@ -1000,8 +981,8 @@ msgstr "Файл ё ки феҳрсит вуҷуд надорад"
 msgid "The specified file or folder <strong>%1</strong> does not exist."
 msgstr "Файли ё феҳрист муайян шуда<strong>%1</strong> мавҷуд нест."
 
-#: kio/global.cpp:666 kio/job.cpp:2110 kio/copyjob.cpp:1337
-#: kio/copyjob.cpp:1908 kio/paste.cpp:64
+#: kio/global.cpp:666 kio/job.cpp:2071 kio/paste.cpp:64 kio/copyjob.cpp:1337
+#: kio/copyjob.cpp:1908
 msgid "File Already Exists"
 msgstr "Файл аллакай мавҷуд аст"
 
@@ -1907,90 +1888,134 @@ msgstr "Барои файли мақсад як номи дигар интихо
 msgid "Undocumented Error"
 msgstr "Хатои бе мустанад"
 
-#: kio/fileundomanager.cpp:116
-#, fuzzy
-msgid "Creating directory"
-msgstr "Сохтани Феҳрист"
-
-#: kio/fileundomanager.cpp:117 kio/job.cpp:171
-msgid "Directory"
+#: kio/renamedialog.cpp:124
+msgid "Appl&y to All"
 msgstr ""
 
-#: kio/fileundomanager.cpp:119
-#, fuzzy
-#| msgid "Moving"
-msgid "Moving"
-msgstr "Дар ҳоли ҳаракат кардан"
+#: kio/renamedialog.cpp:125
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"folder conflicts for the remainder of the current job.\n"
+"Unless you press Skip you will still be prompted in case of a conflict with "
+"an existing file in the directory."
+msgstr ""
 
-#: kio/fileundomanager.cpp:120 kio/job.cpp:157 kio/job.cpp:164 kio/job.cpp:189
+#: kio/renamedialog.cpp:126
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"conflicts for the remainder of the current job."
+msgstr ""
+
+#: kio/renamedialog.cpp:131
+msgid "&Rename"
+msgstr "&Тағйири исм"
+
+#: kio/renamedialog.cpp:133
+msgid "Suggest New &Name"
+msgstr "&Исми навро пешниҳод кунед"
+
+#: kio/renamedialog.cpp:139
+msgid "&Skip"
+msgstr "&Гузарондан"
+
+#: kio/renamedialog.cpp:140
+msgid "Do not copy or move this folder, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:141
+msgid "Do not copy or move this file, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:146
 #, fuzzy
-msgctxt "The source of a file operation"
+#| msgid "Write"
+msgctxt "Write files into an existing folder"
+msgid "&Write Into"
+msgstr "Навиштан"
+
+#: kio/renamedialog.cpp:146
+msgid "&Overwrite"
+msgstr "&Ивваз кардан"
+
+#: kio/renamedialog.cpp:148
+msgid ""
+"Files and folders will be copied into the existing directory, alongside its "
+"existing contents.\n"
+"You will be prompted again in case of a conflict with an existing file in "
+"the directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:153
+msgid "&Resume"
+msgstr "&Идома додан"
+
+#: kio/renamedialog.cpp:162
+#, kde-format
+msgid ""
+"This action would overwrite '%1' with itself.\n"
+"Please enter a new file name:"
+msgstr ""
+"Ин амал '%1'-ро худнависӣ мекунад.\n"
+"Лутфан номи файли навро ворид кунед:"
+
+#: kio/renamedialog.cpp:166
+msgid "C&ontinue"
+msgstr "&Идома"
+
+#: kio/renamedialog.cpp:238
+#, fuzzy
+#| msgid ""
+#| "This action would overwrite '%1' with itself.\n"
+#| "Please enter a new file name:"
+msgid "This action will overwrite the destination."
+msgstr ""
+"Ин амал '%1'-ро худнависӣ мекунад.\n"
+"Лутфан номи файли навро ворид кунед:"
+
+#: kio/renamedialog.cpp:240
+#, fuzzy
 msgid "Source"
 msgstr "Манбаъ:"
 
-#: kio/fileundomanager.cpp:121 kio/job.cpp:158 kio/job.cpp:165
+#: kio/renamedialog.cpp:241
 #, fuzzy
-msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Ҷойгиршавӣ:"
 
-#: kio/fileundomanager.cpp:123
-#, fuzzy
-msgid "Deleting"
-msgstr " (Нест кардан)"
-
-#: kio/fileundomanager.cpp:124 kio/job.cpp:177 kio/job.cpp:183
-#, fuzzy
-msgid "File"
-msgstr "&Филтр:"
-
-#: kio/fileundomanager.cpp:284
-msgid "Und&o"
+#: kio/renamedialog.cpp:247
+msgid "Warning, the destination is newer."
 msgstr ""
 
-#: kio/fileundomanager.cpp:288
-msgid "Und&o: Copy"
-msgstr ""
+#: kio/renamedialog.cpp:278
+#, kde-format
+msgid "An older item named '%1' already exists."
+msgstr "Элементи кӯҳнатарин бо номи '%1' мавҷуд аст."
 
-#: kio/fileundomanager.cpp:290
-msgid "Und&o: Link"
-msgstr ""
+#: kio/renamedialog.cpp:280
+#, kde-format
+msgid "A similar file named '%1' already exists."
+msgstr "Файли мутобиқ бо номи %1 аллакай мавҷуд аст."
 
-#: kio/fileundomanager.cpp:292
-msgid "Und&o: Move"
-msgstr ""
+#: kio/renamedialog.cpp:282
+#, kde-format
+msgid "A newer item named '%1' already exists."
+msgstr "Элементи навтарин бо номи '%1' мавҷуд аст."
 
-#: kio/fileundomanager.cpp:294
+#: kio/renamedialog.cpp:293
 #, fuzzy
 #| msgid "&Rename"
-msgid "Und&o: Rename"
+msgid "Rename:"
 msgstr "&Тағйири исм"
 
-#: kio/fileundomanager.cpp:296
-#, fuzzy
-msgid "Und&o: Trash"
-msgstr "Файлҳои муваққатӣ"
-
-#: kio/fileundomanager.cpp:298
-#, fuzzy
-#| msgid "Could Not Create Folder"
-msgid "Und&o: Create Folder"
-msgstr "Феҳристро сохта карда натавонист"
-
-#: kio/fileundomanager.cpp:764
+#: kio/renamedialog.cpp:422 kio/paste.cpp:242 kio/krun.cpp:1125
+#: kio/kdirlister.cpp:331
 #, kde-format
 msgid ""
-"The file %1 was copied from %2, but since then it has apparently been "
-"modified at %3.\n"
-"Undoing the copy will delete the file, and all modifications will be lost.\n"
-"Are you sure you want to delete %4?"
+"Malformed URL\n"
+"%1"
 msgstr ""
-
-#: kio/fileundomanager.cpp:767
-#, fuzzy
-#| msgid "Updating System Configuration"
-msgid "Undo File Copy Confirmation"
-msgstr "Боз созии танзимоти система"
+"Нодастрасии URL\n"
+"%1"
 
 #: kio/kdesktopfileactions.cpp:65
 #, kde-format
@@ -2042,68 +2067,6 @@ msgstr "Баровардан"
 #: kio/kdesktopfileactions.cpp:221
 msgid "Unmount"
 msgstr "Ғайрифаъол"
-
-#: kio/job.cpp:156
-#, fuzzy
-#| msgid "Moving"
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Дар ҳоли ҳаракат кардан"
-
-#: kio/job.cpp:163
-#, fuzzy
-#| msgid "Copying"
-msgctxt "@title job"
-msgid "Copying"
-msgstr "Дар ҳоли нусха бардоштан"
-
-#: kio/job.cpp:170
-#, fuzzy
-msgctxt "@title job"
-msgid "Creating directory"
-msgstr "Сохтани Феҳрист"
-
-#: kio/job.cpp:176
-#, fuzzy
-msgctxt "@title job"
-msgid "Deleting"
-msgstr " (Нест кардан)"
-
-#: kio/job.cpp:182
-#, fuzzy
-#| msgid "Examining"
-msgctxt "@title job"
-msgid "Examining"
-msgstr "Дар ҳоли санҷидан"
-
-#: kio/job.cpp:188
-msgctxt "@title job"
-msgid "Transferring"
-msgstr ""
-
-#: kio/job.cpp:194
-#, fuzzy
-#| msgid "Mounting"
-msgctxt "@title job"
-msgid "Mounting"
-msgstr "Дар ҳоли васл кардан"
-
-#: kio/job.cpp:195
-#, fuzzy
-msgid "Device"
-msgstr "Сохзтмон:"
-
-#: kio/job.cpp:196 kio/job.cpp:202
-#, fuzzy
-msgid "Mountpoint"
-msgstr "Нуқтаи монтажкунӣ:"
-
-#: kio/job.cpp:201
-#, fuzzy
-#| msgid "Unmounting"
-msgctxt "@title job"
-msgid "Unmounting"
-msgstr "Ҷудо кардан"
 
 #: kio/slave.cpp:442
 #, kde-format
@@ -2251,44 +2214,175 @@ msgstr ""
 "Сертификати SSL бо мувофақияти танзимот рад карда шуд. Шумо метавонед ин "
 "танзимотҳоро дар Маркази Идоракунии KDE-ро дигаргун кунед."
 
-#: kio/slavebase.h:266 kio/slavebase.h:286
-#, fuzzy
-#| msgid "&Reset"
-msgid "&Yes"
-msgstr "&Нав кардан"
+#: kio/kfileitemdelegate.cpp:236
+#, fuzzy, kde-format
+msgctxt "Items in a folder"
+msgid "1 item"
+msgid_plural "%1 items"
+msgstr[0] "%1 файлҳо"
+msgstr[1] "%1 файлҳо"
 
-#: kio/slavebase.h:267 kio/slavebase.h:287
+#: kio/kfileitemdelegate.cpp:292 kio/kfileitemdelegate.cpp:296
 #, fuzzy
-msgid "&No"
-msgstr "Ғайри"
+#| msgid "Unknown"
+msgctxt "@info mimetype"
+msgid "Unknown"
+msgstr "Ношинос"
 
 #: kio/passworddialog.cpp:62
 msgid "Authorization Dialog"
 msgstr "Тирезаи авторизатсия"
 
-#: kio/kemailsettings.cpp:251 kio/kemailsettings.cpp:254
-#: kio/kemailsettings.cpp:261
+#: kio/job.cpp:125
 #, fuzzy
-msgid "Default"
+#| msgid "Moving"
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Дар ҳоли ҳаракат кардан"
+
+#: kio/job.cpp:126 kio/job.cpp:133 kio/job.cpp:158 kio/fileundomanager.cpp:120
+#, fuzzy
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "Манбаъ:"
+
+#: kio/job.cpp:127 kio/job.cpp:134 kio/fileundomanager.cpp:121
+#, fuzzy
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "Ҷойгиршавӣ:"
+
+#: kio/job.cpp:132
+#, fuzzy
+#| msgid "Copying"
+msgctxt "@title job"
+msgid "Copying"
+msgstr "Дар ҳоли нусха бардоштан"
+
+#: kio/job.cpp:139
+#, fuzzy
+msgctxt "@title job"
+msgid "Creating directory"
+msgstr "Сохтани Феҳрист"
+
+#: kio/job.cpp:140 kio/fileundomanager.cpp:117
+msgid "Directory"
+msgstr ""
+
+#: kio/job.cpp:145
+#, fuzzy
+msgctxt "@title job"
+msgid "Deleting"
 msgstr " (Нест кардан)"
+
+#: kio/job.cpp:146 kio/job.cpp:152 kio/fileundomanager.cpp:124
+#, fuzzy
+msgid "File"
+msgstr "&Филтр:"
+
+#: kio/job.cpp:151
+#, fuzzy
+#| msgid "Examining"
+msgctxt "@title job"
+msgid "Examining"
+msgstr "Дар ҳоли санҷидан"
+
+#: kio/job.cpp:157
+msgctxt "@title job"
+msgid "Transferring"
+msgstr ""
+
+#: kio/job.cpp:163
+#, fuzzy
+#| msgid "Mounting"
+msgctxt "@title job"
+msgid "Mounting"
+msgstr "Дар ҳоли васл кардан"
+
+#: kio/job.cpp:164
+#, fuzzy
+msgid "Device"
+msgstr "Сохзтмон:"
+
+#: kio/job.cpp:165 kio/job.cpp:171
+#, fuzzy
+msgid "Mountpoint"
+msgstr "Нуқтаи монтажкунӣ:"
+
+#: kio/job.cpp:170
+#, fuzzy
+#| msgid "Unmounting"
+msgctxt "@title job"
+msgid "Unmounting"
+msgstr "Ҷудо кардан"
+
+#: kio/fileundomanager.cpp:116
+#, fuzzy
+msgid "Creating directory"
+msgstr "Сохтани Феҳрист"
+
+#: kio/fileundomanager.cpp:119
+#, fuzzy
+#| msgid "Moving"
+msgid "Moving"
+msgstr "Дар ҳоли ҳаракат кардан"
+
+#: kio/fileundomanager.cpp:123
+#, fuzzy
+msgid "Deleting"
+msgstr " (Нест кардан)"
+
+#: kio/fileundomanager.cpp:284
+msgid "Und&o"
+msgstr ""
+
+#: kio/fileundomanager.cpp:288
+msgid "Und&o: Copy"
+msgstr ""
+
+#: kio/fileundomanager.cpp:290
+msgid "Und&o: Link"
+msgstr ""
+
+#: kio/fileundomanager.cpp:292
+msgid "Und&o: Move"
+msgstr ""
+
+#: kio/fileundomanager.cpp:294
+#, fuzzy
+#| msgid "&Rename"
+msgid "Und&o: Rename"
+msgstr "&Тағйири исм"
+
+#: kio/fileundomanager.cpp:296
+#, fuzzy
+msgid "Und&o: Trash"
+msgstr "Файлҳои муваққатӣ"
+
+#: kio/fileundomanager.cpp:298
+#, fuzzy
+#| msgid "Could Not Create Folder"
+msgid "Und&o: Create Folder"
+msgstr "Феҳристро сохта карда натавонист"
+
+#: kio/fileundomanager.cpp:764
+#, kde-format
+msgid ""
+"The file %1 was copied from %2, but since then it has apparently been "
+"modified at %3.\n"
+"Undoing the copy will delete the file, and all modifications will be lost.\n"
+"Are you sure you want to delete %4?"
+msgstr ""
+
+#: kio/fileundomanager.cpp:767
+#, fuzzy
+#| msgid "Updating System Configuration"
+msgid "Undo File Copy Confirmation"
+msgstr "Боз созии танзимоти система"
 
 #: kio/pastedialog.cpp:55
 msgid "Data format:"
 msgstr ""
-
-#: kio/skipdialog.cpp:40
-#, fuzzy
-msgid "Information"
-msgstr "Ахборот дар бораи KDE ба SSL "
-
-#: kio/skipdialog.cpp:47
-msgid "Skip"
-msgstr "Гузарондан"
-
-#: kio/skipdialog.cpp:50
-#, fuzzy
-msgid "AutoSkip"
-msgstr "Гузаронидани ҳамааш"
 
 #: kio/jobuidelegate.cpp:149 ../kfile/kdiroperator.cpp:812
 #, fuzzy, kde-format
@@ -2308,7 +2402,7 @@ msgid ""
 "be undone."
 msgstr ""
 
-#: kio/jobuidelegate.cpp:161 ../kfile/kfileplacesview.cpp:638
+#: kio/jobuidelegate.cpp:161 ../kfile/kfileplacesview.cpp:640
 #, fuzzy
 msgctxt "@action:button"
 msgid "Empty Trash"
@@ -2377,6 +2471,87 @@ msgstr "Соҳиб:"
 #: kio/kfileitem.cpp:1105
 msgid "Permissions:"
 msgstr "Дастрасӣ:"
+
+#: kio/paste.cpp:48 kio/paste.cpp:131
+msgid "Filename for clipboard content:"
+msgstr "Номи файл барои нигоҳ доштани буфери иввазот:"
+
+#: kio/paste.cpp:124
+#, fuzzy, kde-format
+msgid "%1 (%2)"
+msgstr "%1 (порт %2)"
+
+#: kio/paste.cpp:140
+msgid ""
+"The clipboard has changed since you used 'paste': the chosen data format is "
+"no longer applicable. Please copy again what you wanted to paste."
+msgstr ""
+
+#: kio/paste.cpp:218 kio/paste.cpp:291
+msgid "The clipboard is empty"
+msgstr "Буфери иввазот холист"
+
+#: kio/paste.cpp:339
+#, fuzzy, kde-format
+msgid "&Paste File"
+msgid_plural "&Paste %1 Files"
+msgstr[0] "%1 файлҳо"
+msgstr[1] "%1 файлҳо"
+
+#: kio/paste.cpp:341
+#, kde-format
+msgid "&Paste URL"
+msgid_plural "&Paste %1 URLs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: kio/paste.cpp:343
+#, fuzzy
+msgid "&Paste Clipboard Contents"
+msgstr "Номи файл барои нигоҳ доштани буфери иввазот:"
+
+#: kio/slavebase.h:266 kio/slavebase.h:286
+#, fuzzy
+#| msgid "&Reset"
+msgid "&Yes"
+msgstr "&Нав кардан"
+
+#: kio/slavebase.h:267 kio/slavebase.h:287
+#, fuzzy
+msgid "&No"
+msgstr "Ғайри"
+
+#: kio/kbuildsycocaprogressdialog.cpp:45
+msgid "Updating System Configuration"
+msgstr "Боз созии танзимоти система"
+
+#: kio/kbuildsycocaprogressdialog.cpp:46
+msgid "Updating system configuration."
+msgstr "Боз созии танзимоти система"
+
+#: kio/kstatusbarofflineindicator.cpp:52
+msgid "The desktop is offline"
+msgstr ""
+
+#: kio/kemailsettings.cpp:251 kio/kemailsettings.cpp:254
+#: kio/kemailsettings.cpp:261
+#, fuzzy
+msgid "Default"
+msgstr " (Нест кардан)"
+
+#: kio/skipdialog.cpp:40
+#, fuzzy
+msgid "Information"
+msgstr "Ахборот дар бораи KDE ба SSL "
+
+#: kio/skipdialog.cpp:47
+msgid "Skip"
+msgstr "Гузарондан"
+
+#: kio/skipdialog.cpp:50
+#, fuzzy
+msgid "AutoSkip"
+msgstr "Гузаронидани ҳамааш"
 
 #: kio/krun.cpp:126
 #, kde-format
@@ -2449,16 +2624,6 @@ msgstr ""
 msgid "Unable to make the service %1 executable, aborting execution"
 msgstr ""
 
-#: kio/krun.cpp:1125 kio/renamedialog.cpp:422 kio/paste.cpp:242
-#: kio/kdirlister.cpp:331
-#, kde-format
-msgid ""
-"Malformed URL\n"
-"%1"
-msgstr ""
-"Нодастрасии URL\n"
-"%1"
-
 #: kio/krun.cpp:1158
 #, kde-format
 msgid ""
@@ -2473,178 +2638,14 @@ msgstr ""
 msgid "Could not find the program '%1'"
 msgstr "Барномаи '%1' -ро ёфта натавонист"
 
-#: kio/copyjob.cpp:1337 kio/copyjob.cpp:1908
-msgid "Already Exists as Folder"
-msgstr "Аллакай монанди феҳрист низ мавҷуд аст"
+#: kio/kimageio.cpp:43
+msgid "All Pictures"
+msgstr "Тамоми суратҳо"
 
-#: kio/kbuildsycocaprogressdialog.cpp:45
-msgid "Updating System Configuration"
-msgstr "Боз созии танзимоти система"
-
-#: kio/kbuildsycocaprogressdialog.cpp:46
-msgid "Updating system configuration."
-msgstr "Боз созии танзимоти система"
-
-#: kio/kstatusbarofflineindicator.cpp:52
-msgid "The desktop is offline"
-msgstr ""
-
-#: kio/renamedialog.cpp:124
-msgid "Appl&y to All"
-msgstr ""
-
-#: kio/renamedialog.cpp:125
-msgid ""
-"When this is checked the button pressed will be applied to all subsequent "
-"folder conflicts for the remainder of the current job.\n"
-"Unless you press Skip you will still be prompted in case of a conflict with "
-"an existing file in the directory."
-msgstr ""
-
-#: kio/renamedialog.cpp:126
-msgid ""
-"When this is checked the button pressed will be applied to all subsequent "
-"conflicts for the remainder of the current job."
-msgstr ""
-
-#: kio/renamedialog.cpp:131
-msgid "&Rename"
-msgstr "&Тағйири исм"
-
-#: kio/renamedialog.cpp:133
-msgid "Suggest New &Name"
-msgstr "&Исми навро пешниҳод кунед"
-
-#: kio/renamedialog.cpp:139
-msgid "&Skip"
-msgstr "&Гузарондан"
-
-#: kio/renamedialog.cpp:140
-msgid "Do not copy or move this folder, skip to the next item instead"
-msgstr ""
-
-#: kio/renamedialog.cpp:141
-msgid "Do not copy or move this file, skip to the next item instead"
-msgstr ""
-
-#: kio/renamedialog.cpp:146
-#, fuzzy
-#| msgid "Write"
-msgctxt "Write files into an existing folder"
-msgid "&Write Into"
-msgstr "Навиштан"
-
-#: kio/renamedialog.cpp:146
-msgid "&Overwrite"
-msgstr "&Ивваз кардан"
-
-#: kio/renamedialog.cpp:148
-msgid ""
-"Files and folders will be copied into the existing directory, alongside its "
-"existing contents.\n"
-"You will be prompted again in case of a conflict with an existing file in "
-"the directory."
-msgstr ""
-
-#: kio/renamedialog.cpp:153
-msgid "&Resume"
-msgstr "&Идома додан"
-
-#: kio/renamedialog.cpp:162
+#: kio/kdbusservicestarter.cpp:76
 #, kde-format
-msgid ""
-"This action would overwrite '%1' with itself.\n"
-"Please enter a new file name:"
-msgstr ""
-"Ин амал '%1'-ро худнависӣ мекунад.\n"
-"Лутфан номи файли навро ворид кунед:"
-
-#: kio/renamedialog.cpp:166
-msgid "C&ontinue"
-msgstr "&Идома"
-
-#: kio/renamedialog.cpp:238
-#, fuzzy
-#| msgid ""
-#| "This action would overwrite '%1' with itself.\n"
-#| "Please enter a new file name:"
-msgid "This action will overwrite the destination."
-msgstr ""
-"Ин амал '%1'-ро худнависӣ мекунад.\n"
-"Лутфан номи файли навро ворид кунед:"
-
-#: kio/renamedialog.cpp:240
-#, fuzzy
-msgid "Source"
-msgstr "Манбаъ:"
-
-#: kio/renamedialog.cpp:241
-#, fuzzy
-msgid "Destination"
-msgstr "Ҷойгиршавӣ:"
-
-#: kio/renamedialog.cpp:247
-msgid "Warning, the destination is newer."
-msgstr ""
-
-#: kio/renamedialog.cpp:278
-#, kde-format
-msgid "An older item named '%1' already exists."
-msgstr "Элементи кӯҳнатарин бо номи '%1' мавҷуд аст."
-
-#: kio/renamedialog.cpp:280
-#, kde-format
-msgid "A similar file named '%1' already exists."
-msgstr "Файли мутобиқ бо номи %1 аллакай мавҷуд аст."
-
-#: kio/renamedialog.cpp:282
-#, kde-format
-msgid "A newer item named '%1' already exists."
-msgstr "Элементи навтарин бо номи '%1' мавҷуд аст."
-
-#: kio/renamedialog.cpp:293
-#, fuzzy
-#| msgid "&Rename"
-msgid "Rename:"
-msgstr "&Тағйири исм"
-
-#: kio/paste.cpp:48 kio/paste.cpp:131
-msgid "Filename for clipboard content:"
-msgstr "Номи файл барои нигоҳ доштани буфери иввазот:"
-
-#: kio/paste.cpp:124
-#, fuzzy, kde-format
-msgid "%1 (%2)"
-msgstr "%1 (порт %2)"
-
-#: kio/paste.cpp:140
-msgid ""
-"The clipboard has changed since you used 'paste': the chosen data format is "
-"no longer applicable. Please copy again what you wanted to paste."
-msgstr ""
-
-#: kio/paste.cpp:218 kio/paste.cpp:291
-msgid "The clipboard is empty"
-msgstr "Буфери иввазот холист"
-
-#: kio/paste.cpp:339
-#, fuzzy, kde-format
-msgid "&Paste File"
-msgid_plural "&Paste %1 Files"
-msgstr[0] "%1 файлҳо"
-msgstr[1] "%1 файлҳо"
-
-#: kio/paste.cpp:341
-#, kde-format
-msgid "&Paste URL"
-msgid_plural "&Paste %1 URLs"
-msgstr[0] ""
-msgstr[1] ""
-
-#: kio/paste.cpp:343
-#, fuzzy
-msgid "&Paste Clipboard Contents"
-msgstr "Номи файл барои нигоҳ доштани буфери иввазот:"
+msgid "No service implementing %1"
+msgstr "Хизмати нест барои иҷрои %1"
 
 #: kio/kdirlister.cpp:341
 #, kde-format
@@ -2653,10 +2654,9 @@ msgid ""
 "%1"
 msgstr ""
 
-#: kio/kdbusservicestarter.cpp:76
-#, kde-format
-msgid "No service implementing %1"
-msgstr "Хизмати нест барои иҷрои %1"
+#: kio/copyjob.cpp:1337 kio/copyjob.cpp:1908
+msgid "Already Exists as Folder"
+msgstr "Аллакай монанди феҳрист низ мавҷуд аст"
 
 #: kio/chmodjob.cpp:214
 #, kde-format
@@ -3063,108 +3063,6 @@ msgstr ""
 msgid "*.adr|Opera Bookmark Files (*.adr)"
 msgstr "*.adr|Файлҳои Монданҳои Opera (*.adr)"
 
-#: kfile/kopenwithdialog.cpp:269
-msgid "Known Applications"
-msgstr "Барномаҳои шинос"
-
-#: kfile/kopenwithdialog.cpp:482
-msgid "Open With"
-msgstr "Боз кардан бо ёрии"
-
-#: kfile/kopenwithdialog.cpp:487
-#, kde-format
-msgid ""
-"<qt>Select the program that should be used to open <b>%1</b>. If the program "
-"is not listed, enter the name or click the browse button.</qt>"
-msgstr ""
-"<qt>Барномаеро барои боз кардани <b>%1, интихоб кунед.</b>Агар барнома дар "
-"рӯйхат вуҷуд надошта бошад, номи онро ворид кунед ё ба кнопкаи \"Намоиш\" "
-"пахш кунед.</qt>"
-
-#: kfile/kopenwithdialog.cpp:493
-msgid "Choose the name of the program with which to open the selected files."
-msgstr "Номи барномаро барои боз кардани файлҳои ҷудошуда низ интихоб кунед."
-
-#: kfile/kopenwithdialog.cpp:520
-#, kde-format
-msgid "Choose Application for %1"
-msgstr "Гузориш барои %1 интихоб кунед"
-
-#: kfile/kopenwithdialog.cpp:521
-#, kde-format
-msgid ""
-"<qt>Select the program for the file type: <b>%1</b>. If the program is not "
-"listed, enter the name or click the browse button.</qt>"
-msgstr ""
-"<qt>Барномаеро барои боз кардани намуди файли <b>%1, интихоб кунед.</b>Агар "
-"барнома дар рӯйхат вуҷуд надошта бошад, номи онро ворид кунед ё ба кнопкаи "
-"\"Намоиш\" пахш кунед.</qt>"
-
-#: kfile/kopenwithdialog.cpp:536
-msgid "Choose Application"
-msgstr "Интихоби барнома"
-
-#: kfile/kopenwithdialog.cpp:537
-msgid ""
-"<qt>Select a program. If the program is not listed, enter the name or click "
-"the browse button.</qt>"
-msgstr ""
-"<qt>Барномаеро интихоб кунед.</b>Агар барнома дар рӯйхат вуҷуд надошта "
-"бошад, номи онро ворид кунед ё ба кнопкаи обзор низ пахш кунед.</qt>"
-
-#: kfile/kopenwithdialog.cpp:600
-#, fuzzy
-msgid ""
-"Following the command, you can have several place holders which will be "
-"replaced with the actual values when the actual program is run:\n"
-"%f - a single file name\n"
-"%F - a list of files; use for applications that can open several local files "
-"at once\n"
-"%u - a single URL\n"
-"%U - a list of URLs\n"
-"%d - the directory of the file to open\n"
-"%D - a list of directories\n"
-"%i - the icon\n"
-"%m - the mini-icon\n"
-"%c - the comment"
-msgstr ""
-"Фармонро риоя карда шумо метавонед якчанд нигоҳдорандае дошта бошед,бо "
-"баҳоҳои ҳақиқи вақте ки барнома иҷро карда мешавад иваз карда шаванд.\n"
-"%f - номи файли ягона\n"
-"%F -рӯйхати файлҳо барои барномаҳое,ки яку якбора якчанд файлро кушода "
-"метавонанд истифода бурда мешавад.\n"
-"%u -URL и ягона\n"
-"%U - рӯйхати URLҳо\n"
-"%d - Феҳристи файл барои кушодан. %D-Рӯйхати феҳристҳо%D - a list of "
-"directories\n"
-"%i - the icon\n"
-"%m - the mini-icon\n"
-"%c - the comment"
-
-#: kfile/kopenwithdialog.cpp:634
-msgid "Run in &terminal"
-msgstr "Дар терминал &оғоз кунед"
-
-#: kfile/kopenwithdialog.cpp:651
-msgid "&Do not close when command exits"
-msgstr "&Агар фармон вуҷуд дошта бошад махкам накунед"
-
-#: kfile/kopenwithdialog.cpp:668
-msgid "&Remember application association for this type of file"
-msgstr "&Дар хотир доштани робитот бо барномае барои ин файл"
-
-#: kfile/kopenwithdialog.cpp:806
-#, kde-format
-msgid ""
-"Could not extract executable name from '%1', please type a valid program "
-"name."
-msgstr ""
-
-#: kfile/kopenwithdialog.cpp:852
-#, kde-format
-msgid "'%1' not found, please type a valid program name."
-msgstr ""
-
 #: kfile/kfiledialog.cpp:129
 #, fuzzy
 #| msgid "*|All Files"
@@ -3192,36 +3090,9 @@ msgstr "&Боз кардан"
 msgid "Save As"
 msgstr ""
 
-#: kfile/kfilemetainfowidget.cpp:163
-msgid "<Error>"
-msgstr "<Хато>"
-
 #: kfile/kurlrequester.cpp:246
 msgid "Open file dialog"
 msgstr "Кушодани диалоги файл"
-
-#: kfile/kmetaprops.cpp:57
-#, fuzzy
-msgctxt "@title:window"
-msgid "Configure Shown Data"
-msgstr "&Идома"
-
-#: kfile/kmetaprops.cpp:62
-msgctxt "@label::textbox"
-msgid "Select which data should be shown:"
-msgstr ""
-
-#: kfile/kmetaprops.cpp:120
-#, fuzzy
-msgctxt "@action:button"
-msgid "Configure..."
-msgstr "&Идома"
-
-#: kfile/kmetaprops.cpp:130
-#, fuzzy
-msgctxt "@title:tab"
-msgid "Information"
-msgstr "Ахборот дар бораи KDE ба SSL "
 
 #: kfile/kacleditwidget.cpp:61 kfile/kacleditwidget.cpp:454
 msgid "Owner"
@@ -3332,10 +3203,37 @@ msgstr ""
 msgid "Effective"
 msgstr ""
 
+#: kfile/kmetaprops.cpp:57
+#, fuzzy
+msgctxt "@title:window"
+msgid "Configure Shown Data"
+msgstr "&Идома"
+
+#: kfile/kmetaprops.cpp:62
+msgctxt "@label::textbox"
+msgid "Select which data should be shown:"
+msgstr ""
+
+#: kfile/kmetaprops.cpp:120
+#, fuzzy
+msgctxt "@action:button"
+msgid "Configure..."
+msgstr "&Идома"
+
+#: kfile/kmetaprops.cpp:130
+#, fuzzy
+msgctxt "@title:tab"
+msgid "Information"
+msgstr "Ахборот дар бораи KDE ба SSL "
+
 #: kfile/kdevicelistmodel.cpp:116
 #, fuzzy
 msgid "Device name"
 msgstr "Сохзтмон:"
+
+#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:993
+msgid "Location:"
+msgstr "Ҷойгиршавӣ:"
 
 #: kfile/kfilesharedialog.cpp:59
 msgid "&Share"
@@ -3412,41 +3310,326 @@ msgstr ""
 "Дар вақти тақсим накардани пӯшаи%1 хатогӣ пайдо шуд. Боварӣ ҳосил кунед,ки "
 "матни намоиши Perl 'таъини файли тақсимшуда "
 
-#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:993
-msgid "Location:"
-msgstr "Ҷойгиршавӣ:"
-
 #: kfile/kpreviewprops.cpp:50
 #, fuzzy
 msgid "P&review"
 msgstr "Пешнамоиш"
 
-#: kfile/kcommentwidget.cpp:65
-#, fuzzy
-msgctxt "@label"
-msgid "Add Comment..."
-msgstr "&Иловаи навиштаҷот..."
-
-#: kfile/kcommentwidget.cpp:71
-#, fuzzy
-#| msgid "Calculating..."
-msgctxt "@label"
-msgid "Change..."
-msgstr "Ҳисоб карда истодаам..."
-
-#: kfile/kcommentwidget.cpp:124
+#: kfile/knfotranslator.cpp:40 kfile/kfilemetadataprovider.cpp:413
 #, fuzzy
 #| msgid "Comment"
-msgctxt "@title:window"
-msgid "Change Comment"
+msgctxt "@label"
+msgid "Comment"
 msgstr "Шарҳ"
 
-#: kfile/kcommentwidget.cpp:125
+#: kfile/knfotranslator.cpp:41
 #, fuzzy
-#| msgid "Comment"
-msgctxt "@title:window"
-msgid "Add Comment"
-msgstr "Шарҳ"
+#| msgid "Created:"
+msgctxt "@label creation date"
+msgid "Created"
+msgstr "Сохта шуд:"
+
+#: kfile/knfotranslator.cpp:42
+#, fuzzy
+#| msgid "Size"
+msgctxt "@label file content size"
+msgid "Size"
+msgstr "Андоза"
+
+#: kfile/knfotranslator.cpp:43
+msgctxt "@label file depends from"
+msgid "Depends"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:44
+#, fuzzy
+#| msgid "&General"
+msgctxt "@label Software used to generate content"
+msgid "Generator"
+msgstr "&Умумӣ"
+
+#: kfile/knfotranslator.cpp:45
+msgctxt ""
+"@label see http://www.semanticdesktop.org/ontologies/2007/01/19/"
+"nie#hasLogicalPart"
+msgid "Has Logical Part"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:46
+#, fuzzy
+#| msgid "Parent Folder"
+msgctxt "@label parent directory"
+msgid "Part of"
+msgstr "Феҳристи оилавӣ"
+
+#: kfile/knfotranslator.cpp:47
+msgctxt "@label"
+msgid "Keyword"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:48
+#, fuzzy
+msgctxt "@label modified date of file"
+msgid "Modified"
+msgstr "Дигаргуншуда:"
+
+#: kfile/knfotranslator.cpp:49
+#, fuzzy
+#| msgid "Mime Type"
+msgctxt "@label"
+msgid "MIME Type"
+msgstr "Намуди Mime"
+
+#: kfile/knfotranslator.cpp:50
+#, fuzzy
+#| msgid "Contents:"
+msgctxt "@label"
+msgid "Content"
+msgstr "Таркиб:"
+
+#: kfile/knfotranslator.cpp:51
+#, fuzzy
+#| msgid "Subject line"
+msgctxt "@label"
+msgid "Subject"
+msgstr "Мавзӯъ"
+
+#: kfile/knfotranslator.cpp:52
+#, fuzzy
+msgctxt "@label music title"
+msgid "Title"
+msgstr "&Филтр:"
+
+#: kfile/knfotranslator.cpp:53
+#, fuzzy
+#| msgid "Location:"
+msgctxt "@label file URL"
+msgid "Location"
+msgstr "Ҷойгиршавӣ:"
+
+#: kfile/knfotranslator.cpp:54
+#, fuzzy
+#| msgid "Created:"
+msgctxt "@label"
+msgid "Creator"
+msgstr "Сохта шуд:"
+
+#: kfile/knfotranslator.cpp:55
+msgctxt "@label"
+msgid "Average Bitrate"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:56
+msgctxt "@label"
+msgid "Channels"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:57
+msgctxt "@label number of characters"
+msgid "Characters"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:58
+#, fuzzy
+#| msgid "C&onnect"
+msgctxt "@label"
+msgid "Codec"
+msgstr "&Пайваст кунед"
+
+#: kfile/knfotranslator.cpp:59
+msgctxt "@label"
+msgid "Color Depth"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:60
+#, fuzzy
+msgctxt "@label"
+msgid "Duration"
+msgstr "Ҷойгиршавӣ:"
+
+#: kfile/knfotranslator.cpp:61
+#, fuzzy
+msgctxt "@label"
+msgid "Filename"
+msgstr "Сохзтмон:"
+
+#: kfile/knfotranslator.cpp:62
+msgctxt "@label"
+msgid "Height"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:63
+msgctxt "@label"
+msgid "Interlace Mode"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:64
+#, fuzzy
+#| msgid "Link"
+msgctxt "@label number of lines"
+msgid "Lines"
+msgstr "Алоқа"
+
+#: kfile/knfotranslator.cpp:65
+msgctxt "@label"
+msgid "Programming Language"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:66
+msgctxt "@label"
+msgid "Sample Rate"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:67
+#, fuzzy
+#| msgid "Write"
+msgctxt "@label"
+msgid "Width"
+msgstr "Навиштан"
+
+#: kfile/knfotranslator.cpp:68
+msgctxt "@label number of words"
+msgid "Words"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:69
+msgctxt "@label EXIF aperture value"
+msgid "Aperture"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:70
+msgctxt "@label EXIF"
+msgid "Exposure Bias Value"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:71
+#, fuzzy
+#| msgid "Exposure:"
+msgctxt "@label EXIF"
+msgid "Exposure Time"
+msgstr "Муддати имконияти истифодашавӣ:"
+
+#: kfile/knfotranslator.cpp:72
+#, fuzzy
+#| msgid "Class"
+msgctxt "@label EXIF"
+msgid "Flash"
+msgstr "Синф"
+
+#: kfile/knfotranslator.cpp:73
+msgctxt "@label EXIF"
+msgid "Focal Length"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:74
+msgctxt "@label EXIF"
+msgid "Focal Length 35 mm"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:75
+msgctxt "@label EXIF"
+msgid "ISO Speed Ratings"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:76
+msgctxt "@label EXIF"
+msgid "Make"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:77
+#, fuzzy
+#| msgid "Creating Folder"
+msgctxt "@label EXIF"
+msgid "Metering Mode"
+msgstr "Сохтани Феҳрист"
+
+#: kfile/knfotranslator.cpp:78
+#, fuzzy
+msgctxt "@label EXIF"
+msgid "Model"
+msgstr "Дигаргуншуда:"
+
+#: kfile/knfotranslator.cpp:79
+#, fuzzy
+#| msgid "Organization:"
+msgctxt "@label EXIF"
+msgid "Orientation"
+msgstr "Ташкилот:"
+
+#: kfile/knfotranslator.cpp:80
+msgctxt "@label EXIF"
+msgid "White Balance"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:81
+#, fuzzy
+#| msgid "&General"
+msgctxt "@label music genre"
+msgid "Genre"
+msgstr "&Умумӣ"
+
+#: kfile/knfotranslator.cpp:82
+msgctxt "@label music album"
+msgid "Album"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:83
+msgctxt "@label"
+msgid "Performer"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:84
+msgctxt "@label music track number"
+msgid "Track"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:85
+#, fuzzy
+msgctxt "@label file type"
+msgid "Type"
+msgstr "Намуд:"
+
+#: kfile/knfotranslator.cpp:86
+msgctxt "@label Number of fuzzy translations"
+msgid "Fuzzy Translations"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:87
+msgctxt "@label Name of last translator"
+msgid "Last Translator"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:88
+msgctxt "@label Number of obsolete translations"
+msgid "Obsolete Translations"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:89
+msgctxt "@label"
+msgid "Translation Source Date"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:90
+msgctxt "@label Number of total translations"
+msgid "Total Translations"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:91
+#, fuzzy
+#| msgid "Created:"
+msgctxt "@label Number of translated strings"
+msgid "Translated"
+msgstr "Сохта шуд:"
+
+#: kfile/knfotranslator.cpp:92
+msgctxt "@label"
+msgid "Translation Date"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:93
+msgctxt "@label Number of untranslated strings"
+msgid "Untranslated"
+msgstr ""
 
 #: kfile/kencodingfiledialog.cpp:50
 #, fuzzy
@@ -4032,322 +4215,6 @@ msgstr ""
 msgid "Advanced Options for %1"
 msgstr "Интихоботҳои иловагӣ барои %1"
 
-#: kfile/knfotranslator.cpp:40 kfile/kfilemetadataprovider.cpp:413
-#, fuzzy
-#| msgid "Comment"
-msgctxt "@label"
-msgid "Comment"
-msgstr "Шарҳ"
-
-#: kfile/knfotranslator.cpp:41
-#, fuzzy
-#| msgid "Created:"
-msgctxt "@label creation date"
-msgid "Created"
-msgstr "Сохта шуд:"
-
-#: kfile/knfotranslator.cpp:42
-#, fuzzy
-#| msgid "Size"
-msgctxt "@label file content size"
-msgid "Size"
-msgstr "Андоза"
-
-#: kfile/knfotranslator.cpp:43
-msgctxt "@label file depends from"
-msgid "Depends"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:44
-#, fuzzy
-#| msgid "&General"
-msgctxt "@label Software used to generate content"
-msgid "Generator"
-msgstr "&Умумӣ"
-
-#: kfile/knfotranslator.cpp:45
-msgctxt ""
-"@label see http://www.semanticdesktop.org/ontologies/2007/01/19/"
-"nie#hasLogicalPart"
-msgid "Has Logical Part"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:46
-#, fuzzy
-#| msgid "Parent Folder"
-msgctxt "@label parent directory"
-msgid "Part of"
-msgstr "Феҳристи оилавӣ"
-
-#: kfile/knfotranslator.cpp:47
-msgctxt "@label"
-msgid "Keyword"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:48
-#, fuzzy
-msgctxt "@label modified date of file"
-msgid "Modified"
-msgstr "Дигаргуншуда:"
-
-#: kfile/knfotranslator.cpp:49
-#, fuzzy
-#| msgid "Mime Type"
-msgctxt "@label"
-msgid "MIME Type"
-msgstr "Намуди Mime"
-
-#: kfile/knfotranslator.cpp:50
-#, fuzzy
-#| msgid "Contents:"
-msgctxt "@label"
-msgid "Content"
-msgstr "Таркиб:"
-
-#: kfile/knfotranslator.cpp:51
-#, fuzzy
-#| msgid "Subject line"
-msgctxt "@label"
-msgid "Subject"
-msgstr "Мавзӯъ"
-
-#: kfile/knfotranslator.cpp:52
-#, fuzzy
-msgctxt "@label music title"
-msgid "Title"
-msgstr "&Филтр:"
-
-#: kfile/knfotranslator.cpp:53
-#, fuzzy
-#| msgid "Location:"
-msgctxt "@label file URL"
-msgid "Location"
-msgstr "Ҷойгиршавӣ:"
-
-#: kfile/knfotranslator.cpp:54
-#, fuzzy
-#| msgid "Created:"
-msgctxt "@label"
-msgid "Creator"
-msgstr "Сохта шуд:"
-
-#: kfile/knfotranslator.cpp:55
-msgctxt "@label"
-msgid "Average Bitrate"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:56
-msgctxt "@label"
-msgid "Channels"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:57
-msgctxt "@label number of characters"
-msgid "Characters"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:58
-#, fuzzy
-#| msgid "C&onnect"
-msgctxt "@label"
-msgid "Codec"
-msgstr "&Пайваст кунед"
-
-#: kfile/knfotranslator.cpp:59
-msgctxt "@label"
-msgid "Color Depth"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:60
-#, fuzzy
-msgctxt "@label"
-msgid "Duration"
-msgstr "Ҷойгиршавӣ:"
-
-#: kfile/knfotranslator.cpp:61
-#, fuzzy
-msgctxt "@label"
-msgid "Filename"
-msgstr "Сохзтмон:"
-
-#: kfile/knfotranslator.cpp:62
-msgctxt "@label"
-msgid "Height"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:63
-msgctxt "@label"
-msgid "Interlace Mode"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:64
-#, fuzzy
-#| msgid "Link"
-msgctxt "@label number of lines"
-msgid "Lines"
-msgstr "Алоқа"
-
-#: kfile/knfotranslator.cpp:65
-msgctxt "@label"
-msgid "Programming Language"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:66
-msgctxt "@label"
-msgid "Sample Rate"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:67
-#, fuzzy
-#| msgid "Write"
-msgctxt "@label"
-msgid "Width"
-msgstr "Навиштан"
-
-#: kfile/knfotranslator.cpp:68
-msgctxt "@label number of words"
-msgid "Words"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:69
-msgctxt "@label EXIF aperture value"
-msgid "Aperture"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:70
-msgctxt "@label EXIF"
-msgid "Exposure Bias Value"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:71
-#, fuzzy
-#| msgid "Exposure:"
-msgctxt "@label EXIF"
-msgid "Exposure Time"
-msgstr "Муддати имконияти истифодашавӣ:"
-
-#: kfile/knfotranslator.cpp:72
-#, fuzzy
-#| msgid "Class"
-msgctxt "@label EXIF"
-msgid "Flash"
-msgstr "Синф"
-
-#: kfile/knfotranslator.cpp:73
-msgctxt "@label EXIF"
-msgid "Focal Length"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:74
-msgctxt "@label EXIF"
-msgid "Focal Length 35 mm"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:75
-msgctxt "@label EXIF"
-msgid "ISO Speed Ratings"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:76
-msgctxt "@label EXIF"
-msgid "Make"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:77
-#, fuzzy
-#| msgid "Creating Folder"
-msgctxt "@label EXIF"
-msgid "Metering Mode"
-msgstr "Сохтани Феҳрист"
-
-#: kfile/knfotranslator.cpp:78
-#, fuzzy
-msgctxt "@label EXIF"
-msgid "Model"
-msgstr "Дигаргуншуда:"
-
-#: kfile/knfotranslator.cpp:79
-#, fuzzy
-#| msgid "Organization:"
-msgctxt "@label EXIF"
-msgid "Orientation"
-msgstr "Ташкилот:"
-
-#: kfile/knfotranslator.cpp:80
-msgctxt "@label EXIF"
-msgid "White Balance"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:81
-#, fuzzy
-#| msgid "&General"
-msgctxt "@label music genre"
-msgid "Genre"
-msgstr "&Умумӣ"
-
-#: kfile/knfotranslator.cpp:82
-msgctxt "@label music album"
-msgid "Album"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:83
-msgctxt "@label"
-msgid "Performer"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:84
-msgctxt "@label music track number"
-msgid "Track"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:85
-#, fuzzy
-msgctxt "@label file type"
-msgid "Type"
-msgstr "Намуд:"
-
-#: kfile/knfotranslator.cpp:86
-msgctxt "@label Number of fuzzy translations"
-msgid "Fuzzy Translations"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:87
-msgctxt "@label Name of last translator"
-msgid "Last Translator"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:88
-msgctxt "@label Number of obsolete translations"
-msgid "Obsolete Translations"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:89
-msgctxt "@label"
-msgid "Translation Source Date"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:90
-msgctxt "@label Number of total translations"
-msgid "Total Translations"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:91
-#, fuzzy
-#| msgid "Created:"
-msgctxt "@label Number of translated strings"
-msgid "Translated"
-msgstr "Сохта шуд:"
-
-#: kfile/knfotranslator.cpp:92
-msgctxt "@label"
-msgid "Translation Date"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:93
-msgctxt "@label Number of untranslated strings"
-msgid "Untranslated"
-msgstr ""
-
 #: kfile/kfilemetadataprovider.cpp:414
 #, fuzzy
 msgctxt "@label"
@@ -4399,6 +4266,139 @@ msgstr "Андоза:"
 msgctxt "@label"
 msgid "Type"
 msgstr "Намуд:"
+
+#: kfile/kfilemetainfowidget.cpp:163
+msgid "<Error>"
+msgstr "<Хато>"
+
+#: kfile/kopenwithdialog.cpp:269
+msgid "Known Applications"
+msgstr "Барномаҳои шинос"
+
+#: kfile/kopenwithdialog.cpp:482
+msgid "Open With"
+msgstr "Боз кардан бо ёрии"
+
+#: kfile/kopenwithdialog.cpp:487
+#, kde-format
+msgid ""
+"<qt>Select the program that should be used to open <b>%1</b>. If the program "
+"is not listed, enter the name or click the browse button.</qt>"
+msgstr ""
+"<qt>Барномаеро барои боз кардани <b>%1, интихоб кунед.</b>Агар барнома дар "
+"рӯйхат вуҷуд надошта бошад, номи онро ворид кунед ё ба кнопкаи \"Намоиш\" "
+"пахш кунед.</qt>"
+
+#: kfile/kopenwithdialog.cpp:493
+msgid "Choose the name of the program with which to open the selected files."
+msgstr "Номи барномаро барои боз кардани файлҳои ҷудошуда низ интихоб кунед."
+
+#: kfile/kopenwithdialog.cpp:520
+#, kde-format
+msgid "Choose Application for %1"
+msgstr "Гузориш барои %1 интихоб кунед"
+
+#: kfile/kopenwithdialog.cpp:521
+#, kde-format
+msgid ""
+"<qt>Select the program for the file type: <b>%1</b>. If the program is not "
+"listed, enter the name or click the browse button.</qt>"
+msgstr ""
+"<qt>Барномаеро барои боз кардани намуди файли <b>%1, интихоб кунед.</b>Агар "
+"барнома дар рӯйхат вуҷуд надошта бошад, номи онро ворид кунед ё ба кнопкаи "
+"\"Намоиш\" пахш кунед.</qt>"
+
+#: kfile/kopenwithdialog.cpp:536
+msgid "Choose Application"
+msgstr "Интихоби барнома"
+
+#: kfile/kopenwithdialog.cpp:537
+msgid ""
+"<qt>Select a program. If the program is not listed, enter the name or click "
+"the browse button.</qt>"
+msgstr ""
+"<qt>Барномаеро интихоб кунед.</b>Агар барнома дар рӯйхат вуҷуд надошта "
+"бошад, номи онро ворид кунед ё ба кнопкаи обзор низ пахш кунед.</qt>"
+
+#: kfile/kopenwithdialog.cpp:600
+#, fuzzy
+msgid ""
+"Following the command, you can have several place holders which will be "
+"replaced with the actual values when the actual program is run:\n"
+"%f - a single file name\n"
+"%F - a list of files; use for applications that can open several local files "
+"at once\n"
+"%u - a single URL\n"
+"%U - a list of URLs\n"
+"%d - the directory of the file to open\n"
+"%D - a list of directories\n"
+"%i - the icon\n"
+"%m - the mini-icon\n"
+"%c - the comment"
+msgstr ""
+"Фармонро риоя карда шумо метавонед якчанд нигоҳдорандае дошта бошед,бо "
+"баҳоҳои ҳақиқи вақте ки барнома иҷро карда мешавад иваз карда шаванд.\n"
+"%f - номи файли ягона\n"
+"%F -рӯйхати файлҳо барои барномаҳое,ки яку якбора якчанд файлро кушода "
+"метавонанд истифода бурда мешавад.\n"
+"%u -URL и ягона\n"
+"%U - рӯйхати URLҳо\n"
+"%d - Феҳристи файл барои кушодан. %D-Рӯйхати феҳристҳо%D - a list of "
+"directories\n"
+"%i - the icon\n"
+"%m - the mini-icon\n"
+"%c - the comment"
+
+#: kfile/kopenwithdialog.cpp:634
+msgid "Run in &terminal"
+msgstr "Дар терминал &оғоз кунед"
+
+#: kfile/kopenwithdialog.cpp:651
+msgid "&Do not close when command exits"
+msgstr "&Агар фармон вуҷуд дошта бошад махкам накунед"
+
+#: kfile/kopenwithdialog.cpp:668
+msgid "&Remember application association for this type of file"
+msgstr "&Дар хотир доштани робитот бо барномае барои ин файл"
+
+#: kfile/kopenwithdialog.cpp:806
+#, kde-format
+msgid ""
+"Could not extract executable name from '%1', please type a valid program "
+"name."
+msgstr ""
+
+#: kfile/kopenwithdialog.cpp:852
+#, kde-format
+msgid "'%1' not found, please type a valid program name."
+msgstr ""
+
+#: kfile/kcommentwidget.cpp:65
+#, fuzzy
+msgctxt "@label"
+msgid "Add Comment..."
+msgstr "&Иловаи навиштаҷот..."
+
+#: kfile/kcommentwidget.cpp:71
+#, fuzzy
+#| msgid "Calculating..."
+msgctxt "@label"
+msgid "Change..."
+msgstr "Ҳисоб карда истодаам..."
+
+#: kfile/kcommentwidget.cpp:124
+#, fuzzy
+#| msgid "Comment"
+msgctxt "@title:window"
+msgid "Change Comment"
+msgstr "Шарҳ"
+
+#: kfile/kcommentwidget.cpp:125
+#, fuzzy
+#| msgid "Comment"
+msgctxt "@title:window"
+msgid "Add Comment"
+msgstr "Шарҳ"
 
 #: misc/ksendbugmail/main.cpp:43
 msgid "Error connecting to server."
@@ -4505,49 +4505,6 @@ msgstr "коркардкунаки протоколи telnet"
 #, kde-format
 msgid "You do not have permission to access the %1 protocol."
 msgstr "Мумкин шумо иҷозот барои даромадани ба протоколи %1 низ нестед."
-
-#: kssl/kcm/displaycertdialog.cpp:54 kssl/ksslinfodialog.cpp:225
-#, fuzzy, kde-format
-#| msgid "%1 / %2"
-msgctxt "%1 is the effective date of the certificate, %2 is the expiry date"
-msgid "%1 to %2"
-msgstr "%1 / %2"
-
-#: kssl/kcm/cacertificatespage.cpp:131
-#, fuzzy
-msgid "System certificates"
-msgstr "Феристодани сертификат..."
-
-#: kssl/kcm/cacertificatespage.cpp:138
-#, fuzzy
-msgid "User-added certificates"
-msgstr "Феристодани сертификат..."
-
-#: kssl/kcm/cacertificatespage.cpp:295
-#, fuzzy
-#| msgid "Certificate"
-msgid "Pick Certificates"
-msgstr "Сертификат"
-
-#: kssl/kcm/kcmssl.cpp:40
-#, fuzzy
-#| msgid "Reload configuration file"
-msgid "SSL Configuration Module"
-msgstr "Аз нав боргирии файли танзимотӣ"
-
-#: kssl/kcm/kcmssl.cpp:42
-msgid "Copyright 2010 Andreas Hartmetz"
-msgstr ""
-
-#: kssl/kcm/kcmssl.cpp:43
-msgid "Andreas Hartmetz"
-msgstr ""
-
-#: kssl/kcm/kcmssl.cpp:55
-#, fuzzy
-#| msgid "Link"
-msgid "SSL Signers"
-msgstr "Алоқа"
 
 #: kssl/ksslcertificate.cpp:204
 msgid "Signature Algorithm: "
@@ -4945,6 +4902,13 @@ msgctxt "The certificate is trusted"
 msgid "Yes"
 msgstr "&Нав кардан"
 
+#: kssl/ksslinfodialog.cpp:225 kssl/kcm/displaycertdialog.cpp:54
+#, fuzzy, kde-format
+#| msgid "%1 / %2"
+msgctxt "%1 is the effective date of the certificate, %2 is the expiry date"
+msgid "%1 to %2"
+msgstr "%1 / %2"
+
 #: kssl/ksslcertdialog.cpp:61
 msgid "Certificate"
 msgstr "Сертификат"
@@ -5037,6 +5001,42 @@ msgstr ""
 #: kssl/ksslutils.cpp:78
 msgid "GMT"
 msgstr "GMT"
+
+#: kssl/kcm/cacertificatespage.cpp:131
+#, fuzzy
+msgid "System certificates"
+msgstr "Феристодани сертификат..."
+
+#: kssl/kcm/cacertificatespage.cpp:138
+#, fuzzy
+msgid "User-added certificates"
+msgstr "Феристодани сертификат..."
+
+#: kssl/kcm/cacertificatespage.cpp:295
+#, fuzzy
+#| msgid "Certificate"
+msgid "Pick Certificates"
+msgstr "Сертификат"
+
+#: kssl/kcm/kcmssl.cpp:40
+#, fuzzy
+#| msgid "Reload configuration file"
+msgid "SSL Configuration Module"
+msgstr "Аз нав боргирии файли танзимотӣ"
+
+#: kssl/kcm/kcmssl.cpp:42
+msgid "Copyright 2010 Andreas Hartmetz"
+msgstr ""
+
+#: kssl/kcm/kcmssl.cpp:43
+msgid "Andreas Hartmetz"
+msgstr ""
+
+#: kssl/kcm/kcmssl.cpp:55
+#, fuzzy
+#| msgid "Link"
+msgid "SSL Signers"
+msgstr "Алоқа"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -5414,7 +5414,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, addFiletypeButton)
 #. i18n: file: kssl/kcm/cacertificates.ui:111
 #. i18n: ectx: property (text), widget (KPushButton, add)
-#: rc.cpp:168 rc.cpp:234
+#: rc.cpp:168 rc.cpp:327
 msgid "Add..."
 msgstr "Илова..."
 
@@ -5433,7 +5433,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, delFiletypeButton)
 #. i18n: file: kssl/kcm/cacertificates.ui:104
 #. i18n: ectx: property (text), widget (KPushButton, removeSelection)
-#: rc.cpp:174 rc.cpp:231
+#: rc.cpp:174 rc.cpp:324
 #, fuzzy
 msgid "Remove"
 msgstr "&Ҳузфи навиштаҷот"
@@ -5457,9 +5457,216 @@ msgstr ""
 msgid "Ad&vanced Options"
 msgstr "Инти&хоботҳои иловагӣ..."
 
+#. i18n: file: kssl/sslinfo.ui:16
+#. i18n: ectx: property (text), widget (QLabel, encryptionIndicator)
+#: rc.cpp:183
+msgid "[padlock]"
+msgstr ""
+
+#. i18n: file: kssl/sslinfo.ui:30
+#. i18n: ectx: property (text), widget (QLabel, addressTag)
+#: rc.cpp:187
+#, fuzzy
+#| msgid "IP address:"
+msgctxt "Web page address"
+msgid "Address:"
+msgstr "Адреси IP:"
+
+#. i18n: file: kssl/sslinfo.ui:47
+#. i18n: ectx: property (text), widget (QLabel, ipTag)
+#: rc.cpp:191
+#, fuzzy
+#| msgid "IP address:"
+msgid "IP address:"
+msgstr "Адреси IP:"
+
+#. i18n: file: kssl/sslinfo.ui:64
+#. i18n: ectx: property (text), widget (QLabel, encryptionTag)
+#: rc.cpp:195
+#, fuzzy
+#| msgid "Description:"
+msgid "Encryption:"
+msgstr "Тасвир:"
+
+#. i18n: file: kssl/sslinfo.ui:81
+#. i18n: ectx: property (text), widget (QLabel, detailsTag)
+#: rc.cpp:199
+msgid "Details:"
+msgstr "Тафсилот:"
+
+#. i18n: file: kssl/sslinfo.ui:98
+#. i18n: ectx: property (text), widget (QLabel, sslVersionTag)
+#: rc.cpp:203
+#, fuzzy
+#| msgid "SSL version:"
+msgid "SSL version:"
+msgstr "Ривояти SSL:"
+
+#. i18n: file: kssl/sslinfo.ui:115
+#. i18n: ectx: property (text), widget (QLabel, certSelectorTag)
+#: rc.cpp:207
+#, fuzzy
+#| msgid "Certificate"
+msgid "Certificate chain:"
+msgstr "Сертификат"
+
+#. i18n: file: kssl/sslinfo.ui:144
+#. i18n: ectx: property (text), widget (QLabel, trustedTag)
+#: rc.cpp:210
+#, fuzzy
+#| msgid "Created:"
+msgid "Trusted:"
+msgstr "Сохта шуд:"
+
+#. i18n: file: kssl/sslinfo.ui:161
+#. i18n: ectx: property (text), widget (QLabel, validityPeriodTag)
+#: rc.cpp:214
+#, fuzzy
+#| msgid "Valid from:"
+msgid "Validity period:"
+msgstr "Короӣ аз:"
+
+#. i18n: file: kssl/sslinfo.ui:178
+#. i18n: ectx: property (text), widget (QLabel, serialTag)
+#: rc.cpp:218
+#, fuzzy
+#| msgid "Serial number:"
+msgid "Serial number:"
+msgstr "Рақами сериявӣ:"
+
+#. i18n: file: kssl/sslinfo.ui:195
+#. i18n: ectx: property (text), widget (QLabel, digestTag)
+#: rc.cpp:222
+#, fuzzy
+#| msgid "MD5 digest:"
+msgid "MD5 digest:"
+msgstr "Дайджести MD5:"
+
+#. i18n: file: kssl/sslinfo.ui:211
+#. i18n: ectx: property (text), widget (QLabel, sha1DigestTag)
+#: rc.cpp:225
+#, fuzzy
+#| msgid "MD5 digest:"
+msgid "SHA1 digest:"
+msgstr "Дайджести MD5:"
+
+#. i18n: file: kssl/keygenwizard2.ui:35
+#. i18n: ectx: property (text), widget (QLabel, TextLabel4)
+#: rc.cpp:228
+msgid ""
+"You must now provide a password for the certificate request. Please choose a "
+"very secure password as this will be used to encrypt your private key."
+msgstr ""
+"Ҳозир барои дархости сертификат, шумо бояд гузарвожае гузоред. Лутфан "
+"гузарвожаи хеле хуб муҳофизакунандаро интихоб кунед, ки барои рамзгузории "
+"калиди хусусии худ истифода мешавад."
+
+#. i18n: file: kssl/keygenwizard2.ui:48
+#. i18n: ectx: property (text), widget (QLabel, TextLabel6)
+#: rc.cpp:231
+msgid "&Repeat password:"
+msgstr "&Такрори гузарвожа:"
+
+#. i18n: file: kssl/keygenwizard2.ui:58
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: rc.cpp:234
+msgid "&Choose password:"
+msgstr "&Интихоби гузарвожа:"
+
+#. i18n: file: kssl/keygenwizard.ui:35
+#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
+#: rc.cpp:237
+msgid ""
+"You have indicated that you wish to obtain or purchase a secure certificate. "
+"This wizard is intended to guide you through the procedure. You may cancel "
+"at any time, and this will abort the transaction."
+msgstr ""
+"Шумо нишон дода будет, ки мехоҳед сертификати амниятро дарёфт кунед ё "
+"бигиред. Ин устод ба шумо ёрӣ ба тартиби гузаштани закази сертификатро хоҳад "
+"дод. Кори устодро метавонед ҳамон замон қатъ кунед."
+
+#. i18n: file: kssl/certificateparty.ui:27
+#. i18n: ectx: property (text), widget (QLabel, commonNameTag)
+#: rc.cpp:240
+msgid "Common name:"
+msgstr "Номи оддӣ:"
+
+#. i18n: file: kssl/certificateparty.ui:37
+#. i18n: ectx: property (text), widget (QLabel, commonName)
+#: rc.cpp:243
+msgid "Acme Co."
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:44
+#. i18n: ectx: property (text), widget (QLabel, organizationTag)
+#: rc.cpp:246
+msgid "Organization:"
+msgstr "Ташкилот:"
+
+#. i18n: file: kssl/certificateparty.ui:54
+#. i18n: ectx: property (text), widget (QLabel, organization)
+#: rc.cpp:249
+msgid "Acme Sundry Products Company"
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:61
+#. i18n: ectx: property (text), widget (QLabel, organizationalUnitTag)
+#: rc.cpp:252
+msgid "Organizational unit:"
+msgstr "Ҷузъи ташкилот:"
+
+#. i18n: file: kssl/certificateparty.ui:71
+#. i18n: ectx: property (text), widget (QLabel, organizationalUnit)
+#: rc.cpp:255
+msgid "Fraud Department"
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:78
+#. i18n: ectx: property (text), widget (QLabel, countryTag)
+#: rc.cpp:258
+msgid "Country:"
+msgstr "Кишвар:"
+
+#. i18n: file: kssl/certificateparty.ui:88
+#. i18n: ectx: property (text), widget (QLabel, country)
+#: rc.cpp:261
+#, fuzzy
+#| msgid "Can Read"
+msgid "Canada"
+msgstr "Хондан"
+
+#. i18n: file: kssl/certificateparty.ui:95
+#. i18n: ectx: property (text), widget (QLabel, stateTag)
+#: rc.cpp:264
+#, fuzzy
+#| msgctxt "Federal State"
+#| msgid "State:"
+msgid "State:"
+msgstr "Вилоят:"
+
+#. i18n: file: kssl/certificateparty.ui:105
+#. i18n: ectx: property (text), widget (QLabel, state)
+#: rc.cpp:267
+msgid "Quebec"
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:112
+#. i18n: ectx: property (text), widget (QLabel, cityTag)
+#: rc.cpp:270
+#, fuzzy
+#| msgid "Country:"
+msgid "City:"
+msgstr "Кишвар:"
+
+#. i18n: file: kssl/certificateparty.ui:122
+#. i18n: ectx: property (text), widget (QLabel, city)
+#: rc.cpp:273
+msgid "Lakeridge Meadows"
+msgstr ""
+
 #. i18n: file: kssl/kcm/displaycert.ui:23
 #. i18n: ectx: property (text), widget (QLabel, subjectHeading)
-#: rc.cpp:183
+#: rc.cpp:276
 #, fuzzy
 #| msgid "Security Information"
 msgid "<b>Subject Information</b>"
@@ -5467,14 +5674,14 @@ msgstr "Маълумот дар бораи бехатари"
 
 #. i18n: file: kssl/kcm/displaycert.ui:39
 #. i18n: ectx: property (text), widget (QLabel, issuerHeading)
-#: rc.cpp:186
+#: rc.cpp:279
 #, fuzzy
 msgid "<b>Issuer Information</b>"
 msgstr " <b>[Гузаштан Минтақа!]</b>"
 
 #. i18n: file: kssl/kcm/displaycert.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:189
+#: rc.cpp:282
 #, fuzzy
 #| msgid "<b>%1</b>"
 msgid "<b>Other</b>"
@@ -5482,7 +5689,7 @@ msgstr "<b>%1</b>"
 
 #. i18n: file: kssl/kcm/displaycert.ui:64
 #. i18n: ectx: property (text), widget (QLabel, validityPeriodLabel)
-#: rc.cpp:192
+#: rc.cpp:285
 #, fuzzy
 #| msgid "Valid from:"
 msgid "Validity period"
@@ -5496,7 +5703,7 @@ msgstr "Короӣ аз:"
 #. i18n: ectx: property (text), widget (QLabel, md5Digest)
 #. i18n: file: kssl/kcm/displaycert.ui:113
 #. i18n: ectx: property (text), widget (QLabel, sha1Digest)
-#: rc.cpp:195 rc.cpp:201 rc.cpp:207 rc.cpp:213
+#: rc.cpp:288 rc.cpp:294 rc.cpp:300 rc.cpp:306
 #, fuzzy
 #| msgid "&Name:"
 msgid "TextLabel"
@@ -5504,7 +5711,7 @@ msgstr "&Ном:"
 
 #. i18n: file: kssl/kcm/displaycert.ui:78
 #. i18n: ectx: property (text), widget (QLabel, serialNumberLabel)
-#: rc.cpp:198
+#: rc.cpp:291
 #, fuzzy
 #| msgid "Serial number:"
 msgid "Serial number"
@@ -5512,7 +5719,7 @@ msgstr "Рақами сериявӣ:"
 
 #. i18n: file: kssl/kcm/displaycert.ui:92
 #. i18n: ectx: property (text), widget (QLabel, md5DigestLabel)
-#: rc.cpp:204
+#: rc.cpp:297
 #, fuzzy
 #| msgid "MD5 digest:"
 msgid "MD5 digest"
@@ -5520,7 +5727,7 @@ msgstr "Дайджести MD5:"
 
 #. i18n: file: kssl/kcm/displaycert.ui:106
 #. i18n: ectx: property (text), widget (QLabel, sha1DigestLabel)
-#: rc.cpp:210
+#: rc.cpp:303
 #, fuzzy
 #| msgid "MD5 digest:"
 msgid "SHA1 digest"
@@ -5528,7 +5735,7 @@ msgstr "Дайджести MD5:"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:24
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
-#: rc.cpp:216
+#: rc.cpp:309
 #, fuzzy
 #| msgid "Organization:"
 msgid "Organization / Common Name"
@@ -5536,7 +5743,7 @@ msgstr "Ташкилот:"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:29
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
-#: rc.cpp:219
+#: rc.cpp:312
 #, fuzzy
 #| msgid "Organizational unit:"
 msgid "Organizational Unit"
@@ -5544,227 +5751,20 @@ msgstr "Ҷузъи ташкилот:"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:42
 #. i18n: ectx: property (text), widget (QPushButton, displaySelection)
-#: rc.cpp:222
+#: rc.cpp:315
 msgid "Display..."
 msgstr ""
 
 #. i18n: file: kssl/kcm/cacertificates.ui:68
 #. i18n: ectx: property (text), widget (KPushButton, disableSelection)
-#: rc.cpp:225
+#: rc.cpp:318
 msgid "Disable"
 msgstr ""
 
 #. i18n: file: kssl/kcm/cacertificates.ui:78
 #. i18n: ectx: property (text), widget (QPushButton, enableSelection)
-#: rc.cpp:228
-msgid "Enable"
-msgstr ""
-
-#. i18n: file: kssl/sslinfo.ui:16
-#. i18n: ectx: property (text), widget (QLabel, encryptionIndicator)
-#: rc.cpp:237
-msgid "[padlock]"
-msgstr ""
-
-#. i18n: file: kssl/sslinfo.ui:30
-#. i18n: ectx: property (text), widget (QLabel, addressTag)
-#: rc.cpp:241
-#, fuzzy
-#| msgid "IP address:"
-msgctxt "Web page address"
-msgid "Address:"
-msgstr "Адреси IP:"
-
-#. i18n: file: kssl/sslinfo.ui:47
-#. i18n: ectx: property (text), widget (QLabel, ipTag)
-#: rc.cpp:245
-#, fuzzy
-#| msgid "IP address:"
-msgid "IP address:"
-msgstr "Адреси IP:"
-
-#. i18n: file: kssl/sslinfo.ui:64
-#. i18n: ectx: property (text), widget (QLabel, encryptionTag)
-#: rc.cpp:249
-#, fuzzy
-#| msgid "Description:"
-msgid "Encryption:"
-msgstr "Тасвир:"
-
-#. i18n: file: kssl/sslinfo.ui:81
-#. i18n: ectx: property (text), widget (QLabel, detailsTag)
-#: rc.cpp:253
-msgid "Details:"
-msgstr "Тафсилот:"
-
-#. i18n: file: kssl/sslinfo.ui:98
-#. i18n: ectx: property (text), widget (QLabel, sslVersionTag)
-#: rc.cpp:257
-#, fuzzy
-#| msgid "SSL version:"
-msgid "SSL version:"
-msgstr "Ривояти SSL:"
-
-#. i18n: file: kssl/sslinfo.ui:115
-#. i18n: ectx: property (text), widget (QLabel, certSelectorTag)
-#: rc.cpp:261
-#, fuzzy
-#| msgid "Certificate"
-msgid "Certificate chain:"
-msgstr "Сертификат"
-
-#. i18n: file: kssl/sslinfo.ui:144
-#. i18n: ectx: property (text), widget (QLabel, trustedTag)
-#: rc.cpp:264
-#, fuzzy
-#| msgid "Created:"
-msgid "Trusted:"
-msgstr "Сохта шуд:"
-
-#. i18n: file: kssl/sslinfo.ui:161
-#. i18n: ectx: property (text), widget (QLabel, validityPeriodTag)
-#: rc.cpp:268
-#, fuzzy
-#| msgid "Valid from:"
-msgid "Validity period:"
-msgstr "Короӣ аз:"
-
-#. i18n: file: kssl/sslinfo.ui:178
-#. i18n: ectx: property (text), widget (QLabel, serialTag)
-#: rc.cpp:272
-#, fuzzy
-#| msgid "Serial number:"
-msgid "Serial number:"
-msgstr "Рақами сериявӣ:"
-
-#. i18n: file: kssl/sslinfo.ui:195
-#. i18n: ectx: property (text), widget (QLabel, digestTag)
-#: rc.cpp:276
-#, fuzzy
-#| msgid "MD5 digest:"
-msgid "MD5 digest:"
-msgstr "Дайджести MD5:"
-
-#. i18n: file: kssl/sslinfo.ui:211
-#. i18n: ectx: property (text), widget (QLabel, sha1DigestTag)
-#: rc.cpp:279
-#, fuzzy
-#| msgid "MD5 digest:"
-msgid "SHA1 digest:"
-msgstr "Дайджести MD5:"
-
-#. i18n: file: kssl/keygenwizard2.ui:35
-#. i18n: ectx: property (text), widget (QLabel, TextLabel4)
-#: rc.cpp:282
-msgid ""
-"You must now provide a password for the certificate request. Please choose a "
-"very secure password as this will be used to encrypt your private key."
-msgstr ""
-"Ҳозир барои дархости сертификат, шумо бояд гузарвожае гузоред. Лутфан "
-"гузарвожаи хеле хуб муҳофизакунандаро интихоб кунед, ки барои рамзгузории "
-"калиди хусусии худ истифода мешавад."
-
-#. i18n: file: kssl/keygenwizard2.ui:48
-#. i18n: ectx: property (text), widget (QLabel, TextLabel6)
-#: rc.cpp:285
-msgid "&Repeat password:"
-msgstr "&Такрори гузарвожа:"
-
-#. i18n: file: kssl/keygenwizard2.ui:58
-#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
-#: rc.cpp:288
-msgid "&Choose password:"
-msgstr "&Интихоби гузарвожа:"
-
-#. i18n: file: kssl/keygenwizard.ui:35
-#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
-#: rc.cpp:291
-msgid ""
-"You have indicated that you wish to obtain or purchase a secure certificate. "
-"This wizard is intended to guide you through the procedure. You may cancel "
-"at any time, and this will abort the transaction."
-msgstr ""
-"Шумо нишон дода будет, ки мехоҳед сертификати амниятро дарёфт кунед ё "
-"бигиред. Ин устод ба шумо ёрӣ ба тартиби гузаштани закази сертификатро хоҳад "
-"дод. Кори устодро метавонед ҳамон замон қатъ кунед."
-
-#. i18n: file: kssl/certificateparty.ui:27
-#. i18n: ectx: property (text), widget (QLabel, commonNameTag)
-#: rc.cpp:294
-msgid "Common name:"
-msgstr "Номи оддӣ:"
-
-#. i18n: file: kssl/certificateparty.ui:37
-#. i18n: ectx: property (text), widget (QLabel, commonName)
-#: rc.cpp:297
-msgid "Acme Co."
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:44
-#. i18n: ectx: property (text), widget (QLabel, organizationTag)
-#: rc.cpp:300
-msgid "Organization:"
-msgstr "Ташкилот:"
-
-#. i18n: file: kssl/certificateparty.ui:54
-#. i18n: ectx: property (text), widget (QLabel, organization)
-#: rc.cpp:303
-msgid "Acme Sundry Products Company"
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:61
-#. i18n: ectx: property (text), widget (QLabel, organizationalUnitTag)
-#: rc.cpp:306
-msgid "Organizational unit:"
-msgstr "Ҷузъи ташкилот:"
-
-#. i18n: file: kssl/certificateparty.ui:71
-#. i18n: ectx: property (text), widget (QLabel, organizationalUnit)
-#: rc.cpp:309
-msgid "Fraud Department"
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:78
-#. i18n: ectx: property (text), widget (QLabel, countryTag)
-#: rc.cpp:312
-msgid "Country:"
-msgstr "Кишвар:"
-
-#. i18n: file: kssl/certificateparty.ui:88
-#. i18n: ectx: property (text), widget (QLabel, country)
-#: rc.cpp:315
-#, fuzzy
-#| msgid "Can Read"
-msgid "Canada"
-msgstr "Хондан"
-
-#. i18n: file: kssl/certificateparty.ui:95
-#. i18n: ectx: property (text), widget (QLabel, stateTag)
-#: rc.cpp:318
-#, fuzzy
-#| msgctxt "Federal State"
-#| msgid "State:"
-msgid "State:"
-msgstr "Вилоят:"
-
-#. i18n: file: kssl/certificateparty.ui:105
-#. i18n: ectx: property (text), widget (QLabel, state)
 #: rc.cpp:321
-msgid "Quebec"
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:112
-#. i18n: ectx: property (text), widget (QLabel, cityTag)
-#: rc.cpp:324
-#, fuzzy
-#| msgid "Country:"
-msgid "City:"
-msgstr "Кишвар:"
-
-#. i18n: file: kssl/certificateparty.ui:122
-#. i18n: ectx: property (text), widget (QLabel, city)
-#: rc.cpp:327
-msgid "Lakeridge Meadows"
+msgid "Enable"
 msgstr ""
 
 #: ../kioslave/file/file.cpp:209
@@ -6710,6 +6710,14 @@ msgstr ""
 "махсус мебошанд, аммоонҳо чунини тамоми гузоришотҳои KDE-и дигар низ кор "
 "мекунанд.</qt>"
 
+#: ../kfile/kurlnavigatortogglebutton.cpp:93
+msgid "Click for Location Navigation"
+msgstr ""
+
+#: ../kfile/kurlnavigatortogglebutton.cpp:95
+msgid "Click to Edit Location"
+msgstr ""
+
 #: ../kfile/kdiroperator.cpp:766 ../kfile/kdirselectdialog.cpp:156
 #, kde-format
 msgid "A file or folder named %1 already exists."
@@ -6900,6 +6908,27 @@ msgstr "Кушодани диалоги файл"
 msgid "&View"
 msgstr "&Пешнамоиш"
 
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:168
+#, fuzzy
+#| msgid "Devices"
+msgctxt "@item:inmenu"
+msgid "Devices"
+msgstr "Сохтмонҳо"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:172
+#, fuzzy
+#| msgid "SSL version:"
+msgctxt "@item:inmenu"
+msgid "Subversion"
+msgstr "Ривояти SSL:"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:176
+#, fuzzy
+#| msgid "Others"
+msgctxt "@item:inmenu"
+msgid "Other"
+msgstr "Дигарон"
+
 #: ../kfile/kdirselectdialog.cpp:128
 #, fuzzy
 #| msgid "New Folder"
@@ -6959,14 +6988,6 @@ msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "Хусусиятҳо барои %1"
 
-#: ../kfile/kurlnavigatortogglebutton.cpp:90
-msgid "Click for Location Navigation"
-msgstr ""
-
-#: ../kfile/kurlnavigatortogglebutton.cpp:92
-msgid "Click to Edit Location"
-msgstr ""
-
 #: ../kfile/kfileplacesview.cpp:575
 #, fuzzy
 msgctxt "@action:inmenu"
@@ -7001,13 +7022,13 @@ msgstr ""
 msgid "&Remove Entry '%1'"
 msgstr "&Ҳузфи навиштаҷот"
 
-#: ../kfile/kfileplacesview.cpp:634
+#: ../kfile/kfileplacesview.cpp:636
 #, fuzzy
 msgctxt "@info"
 msgid "Do you really want to empty the Trash? All items will be deleted."
 msgstr "Шумо мехоҳед ин ҷузъ нобуд созед?"
 
-#: ../kfile/kurlnavigatorbutton.cpp:596
+#: ../kfile/kurlnavigatorbutton.cpp:599
 #, fuzzy
 msgctxt "@action:inmenu"
 msgid "More"
@@ -7109,33 +7130,33 @@ msgstr ""
 "ин параметрро сабт кунед.<p>Агар параметр сабт нашуда бошад, қайдот барои "
 "тамоми барномаҳо дастрас хоҳад шуд.</qt>"
 
-#: ../kfile/kurlnavigator.cpp:427
+#: ../kfile/kurlnavigator.cpp:429
 #, fuzzy
 #| msgid "Copying"
 msgid "Copy"
 msgstr "Дар ҳоли нусха бардоштан"
 
-#: ../kfile/kurlnavigator.cpp:431
+#: ../kfile/kurlnavigator.cpp:433
 #, fuzzy
 #| msgid "Date"
 msgid "Paste"
 msgstr "Таърих"
 
-#: ../kfile/kurlnavigator.cpp:438
+#: ../kfile/kurlnavigator.cpp:440
 #, fuzzy
 #| msgid "&Edit..."
 msgid "Edit"
 msgstr "&Тағйир додан..."
 
-#: ../kfile/kurlnavigator.cpp:441
+#: ../kfile/kurlnavigator.cpp:443
 msgid "Navigate"
 msgstr ""
 
-#: ../kfile/kurlnavigator.cpp:456
+#: ../kfile/kurlnavigator.cpp:458
 msgid "Show Full Path"
 msgstr ""
 
-#: ../kfile/kurlnavigator.cpp:688
+#: ../kfile/kurlnavigator.cpp:690
 msgid "Custom Path"
 msgstr ""
 
@@ -7302,27 +7323,6 @@ msgstr "Ба хатогии ногаҳонӣ(%1), ҳангоми кӯшиши %2
 #| msgid "Show Hidden Folders"
 msgid "Show Hidden Folders"
 msgstr "Намоиши феҳристҳои пинҳонӣ"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:164
-#, fuzzy
-#| msgid "Devices"
-msgctxt "@item:inmenu"
-msgid "Devices"
-msgstr "Сохтмонҳо"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:168
-#, fuzzy
-#| msgid "SSL version:"
-msgctxt "@item:inmenu"
-msgid "Subversion"
-msgstr "Ривояти SSL:"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:172
-#, fuzzy
-#| msgid "Others"
-msgctxt "@item:inmenu"
-msgid "Other"
-msgstr "Дигарон"
 
 #, fuzzy
 #~| msgid "Size:"
