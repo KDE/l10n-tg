@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-25 03:40+0100\n"
+"POT-Creation-Date: 2011-01-26 03:31+0100\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -1480,7 +1480,7 @@ msgstr "Ҳосиятҳои Табақа"
 
 #. i18n: file: plugins/extensions/compose/wdg_compose.ui:52
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:210 ui/tool/kis_tool_paint.cc:250
+#: rc.cpp:210 ui/tool/kis_tool_paint.cc:247
 #, fuzzy
 msgid "Opacity: "
 msgstr "Норавшанӣ:"
@@ -1963,7 +1963,7 @@ msgstr "Қатъ кардан"
 #. i18n: ectx: property (text), widget (QRadioButton, lastUsedColorsAlignVertical)
 #. i18n: file: plugins/extensions/dockers/colorselectorng/wdg_color_selector_settings.ui:741
 #. i18n: ectx: property (text), widget (QRadioButton, commonColorsAlignVertical)
-#: rc.cpp:395 rc.cpp:431 ui/tool/kis_tool_paint.cc:259
+#: rc.cpp:395 rc.cpp:431
 #, fuzzy
 msgid "Vertical"
 msgstr "Амудӣ:"
@@ -1976,7 +1976,7 @@ msgstr "Амудӣ:"
 #. i18n: ectx: property (text), widget (QRadioButton, lastUsedColorsAlignHorizontal)
 #. i18n: file: plugins/extensions/dockers/colorselectorng/wdg_color_selector_settings.ui:748
 #. i18n: ectx: property (text), widget (QRadioButton, commonColorsAlignHorizontal)
-#: rc.cpp:398 rc.cpp:434 ui/tool/kis_tool_paint.cc:258
+#: rc.cpp:398 rc.cpp:434
 #, fuzzy
 msgid "Horizontal"
 msgstr "Ҷоки уфуқӣ"
@@ -9940,12 +9940,6 @@ msgstr "Санҷидаи Тасвир"
 msgid "Convert Image Type"
 msgstr "&Даровардани Тасвир ҳамчун Табақа..."
 
-#: image/commands/kis_layer_props_command.cpp:42
-#: image/commands/kis_node_property_list_command.cpp:25
-#, fuzzy
-msgid "Property Changes"
-msgstr "Дигаргунии ҳосиятҳо"
-
 #: image/commands/kis_node_compositeop_command.cpp:28
 #, fuzzy
 msgid "Node Composite Mode"
@@ -9956,6 +9950,12 @@ msgstr "Ҳолатро ташкил кардан:"
 #| msgid "Copy Opacity"
 msgid "Node Opacity"
 msgstr "Норавшании нусха бардоштан"
+
+#: image/commands/kis_node_property_list_command.cpp:25
+#: image/commands/kis_layer_props_command.cpp:43
+#, fuzzy
+msgid "Property Changes"
+msgstr "Дигаргунии ҳосиятҳо"
 
 #: image/commands/kis_reselect_global_selection_command.cpp:30
 #, fuzzy
@@ -10099,7 +10099,7 @@ msgstr ""
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:730 ui/kis_layer_manager.cc:799
+#: image/kis_image.cc:730 ui/kis_layer_manager.cc:802
 #, fuzzy
 msgid "Flatten Image"
 msgstr "Дучанда кардани Тасвир"
@@ -10960,7 +10960,7 @@ msgid "Rotate Layer of 90° to the Left"
 msgstr ""
 
 #: plugins/extensions/rotateimage/rotateimage.cc:151
-#: ui/kis_layer_manager.cc:737
+#: ui/kis_layer_manager.cc:740
 #, fuzzy
 msgid "Rotate Layer"
 msgstr "&Нест кардани Табақа"
@@ -11019,7 +11019,7 @@ msgid "Separate Image"
 msgstr "Тасвири Нав"
 
 #: plugins/extensions/separate_channels/kis_channel_separator.cc:242
-#: ui/kis_layer_manager.cc:890
+#: ui/kis_layer_manager.cc:893
 msgid "Export Layer"
 msgstr "Содироти Табақа"
 
@@ -13628,7 +13628,7 @@ msgstr "Якшавии &Ҳама Табақаҳо"
 msgid "&Flatten Layer"
 msgstr "&Сафед"
 
-#: ui/kis_layer_manager.cc:147 ui/kis_layer_manager.cc:862
+#: ui/kis_layer_manager.cc:147 ui/kis_layer_manager.cc:865
 #, fuzzy
 msgid "Rasterize Layer"
 msgstr "&Нест кардани Табақа"
@@ -13659,49 +13659,49 @@ msgstr "Ҳосиятҳои Табақа"
 msgid "Generator Layer Properties"
 msgstr "Ҳосиятҳои Табақа"
 
-#: ui/kis_layer_manager.cc:350 ui/kis_layer_manager.cc:366
-#: ui/kis_layer_manager.cc:409 ui/kis_layer_manager.cc:442
-#: ui/kis_layer_manager.cc:580
+#: ui/kis_layer_manager.cc:353 ui/kis_layer_manager.cc:369
+#: ui/kis_layer_manager.cc:412 ui/kis_layer_manager.cc:445
+#: ui/kis_layer_manager.cc:583
 msgid "Could not add layer to image."
 msgstr "Табақа ба тасвир илова кардан наметавонад."
 
-#: ui/kis_layer_manager.cc:350 ui/kis_layer_manager.cc:366
-#: ui/kis_layer_manager.cc:409 ui/kis_layer_manager.cc:442
-#: ui/kis_layer_manager.cc:580
+#: ui/kis_layer_manager.cc:353 ui/kis_layer_manager.cc:369
+#: ui/kis_layer_manager.cc:412 ui/kis_layer_manager.cc:445
+#: ui/kis_layer_manager.cc:583
 msgid "Layer Error"
 msgstr "Табақаи Хато"
 
-#: ui/kis_layer_manager.cc:472
+#: ui/kis_layer_manager.cc:475
 #, fuzzy
 msgid "New Filter Layer"
 msgstr "&Сафед"
 
-#: ui/kis_layer_manager.cc:657 ui/kis_layer_manager.cc:667
+#: ui/kis_layer_manager.cc:660 ui/kis_layer_manager.cc:670
 #, fuzzy
 msgid "Mirror Layer X"
 msgstr "Фуровардани Табақа"
 
-#: ui/kis_layer_manager.cc:684 ui/kis_layer_manager.cc:694
+#: ui/kis_layer_manager.cc:687 ui/kis_layer_manager.cc:697
 #: ui/kis_mask_manager.cc:378
 #, fuzzy
 msgid "Mirror Layer Y"
 msgstr "Фуровардани Табақа"
 
-#: ui/kis_layer_manager.cc:716
+#: ui/kis_layer_manager.cc:719
 #, fuzzy
 msgid "Scale Layer"
 msgstr "Масштаби Табақа..."
 
-#: ui/kis_layer_manager.cc:769 ui/kis_layer_manager.cc:772
+#: ui/kis_layer_manager.cc:772 ui/kis_layer_manager.cc:775
 #, fuzzy
 msgid "Shear layer"
 msgstr "Масштаби Табақа..."
 
-#: ui/kis_layer_manager.cc:798
+#: ui/kis_layer_manager.cc:801
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:800
+#: ui/kis_layer_manager.cc:803
 #, fuzzy
 msgid "&Flatten Image"
 msgstr "Дучанда кардани Тасвир"
@@ -13784,41 +13784,51 @@ msgstr ""
 msgid "Hide Painting Assistants"
 msgstr ""
 
-#: ui/kis_paintop_box.cc:98
+#: ui/kis_paintop_box.cc:99
 #, fuzzy
 msgid "Painter's Toolchest"
 msgstr "Асбобҳои Рассомӣ"
 
-#: ui/kis_paintop_box.cc:102
+#: ui/kis_paintop_box.cc:103
 msgid "Artist's materials"
 msgstr ""
 
-#: ui/kis_paintop_box.cc:110
+#: ui/kis_paintop_box.cc:111
 #, fuzzy
 msgid "Edit brush settings"
 msgstr "Ҳосиятҳои Табақа..."
 
-#: ui/kis_paintop_box.cc:116
+#: ui/kis_paintop_box.cc:117
 #, fuzzy
 msgid "Choose brush preset"
 msgstr "Ҳосиятҳои Табақа..."
 
-#: ui/kis_paintop_box.cc:123
+#: ui/kis_paintop_box.cc:124
 #, fuzzy
 msgid "Set eraser mode"
 msgstr "Интихоб"
 
-#: ui/kis_paintop_box.cc:132
+#: ui/kis_paintop_box.cc:134
+#, fuzzy
+msgid "Set horizontal mirror mode"
+msgstr "Ҷоки уфуқӣ"
+
+#: ui/kis_paintop_box.cc:144
+#, fuzzy
+msgid "Set vertical mirror mode"
+msgstr "Интихоб"
+
+#: ui/kis_paintop_box.cc:155
 #, fuzzy
 msgid "Mode: "
 msgstr "Усул:"
 
-#: ui/kis_paintop_box.cc:143
+#: ui/kis_paintop_box.cc:166
 #, fuzzy
 msgid "Save to Palette"
 msgstr "Намунаҳо"
 
-#: ui/kis_paintop_box.cc:151
+#: ui/kis_paintop_box.cc:174
 #, fuzzy
 msgid "Choose workspace"
 msgstr "Ранги ҷамъкунанда"
@@ -14059,11 +14069,6 @@ msgstr "&Асбоби Хат"
 msgid "Selection"
 msgstr "Интихоб"
 
-#: ui/tool/kis_tool_paint.cc:257
-#, fuzzy
-msgid "Mirror: "
-msgstr "Табақа ба Тасвир"
-
 #: ui/tool/kis_tool_freehand.cc:90
 #, fuzzy
 msgid "Increase Brush Size"
@@ -14156,6 +14161,10 @@ msgstr "Ранги ҷамъкунанда"
 #, fuzzy, kde-format
 msgid "Workspace %1"
 msgstr "Ранги ҷамъкунанда"
+
+#, fuzzy
+#~ msgid "Mirror: "
+#~ msgstr "Табақа ба Тасвир"
 
 #, fuzzy
 #~ msgid "Move a layer (SHIFT+V)"
