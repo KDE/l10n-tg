@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krunner\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-11-29 02:13+0100\n"
+"POT-Creation-Date: 2011-02-02 03:07+0100\n"
 "PO-Revision-Date: 2010-01-31 01:15+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -16,20 +16,45 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 0.2\n"
 
-#: interfaces/quicksand/qs_dialog.cpp:59 interfaces/quicksand/qs_dialog.cpp:60
+#: configdialog.cpp:52
+msgid "Plugins"
+msgstr "Васлкунакҳо"
+
+#: configdialog.cpp:81
+msgid "User Interface"
+msgstr "Интерфейси корбар"
+
+#: configdialog.cpp:87
+msgid "Available Features"
+msgstr "Хусусиятҳои дастрас"
+
 #: interfaces/default/interface.cpp:85 interfaces/default/interface.cpp:86
+#: interfaces/quicksand/qs_dialog.cpp:59 interfaces/quicksand/qs_dialog.cpp:60
 msgid "Settings"
 msgstr "Танзимот"
 
-#: interfaces/quicksand/qs_dialog.cpp:108
-msgid "Actions"
-msgstr "Амалҳо"
+#: interfaces/default/interface.cpp:107
+msgid "Help"
+msgstr "Справка"
 
-#: interfaces/quicksand/qs_dialog.cpp:317 interfaces/default/interface.cpp:259
+#: interfaces/default/interface.cpp:108
+msgid "Information on using this application"
+msgstr "Об использовании этого приложения"
+
+#: interfaces/default/interface.cpp:259 interfaces/quicksand/qs_dialog.cpp:317
 #, kde-format
 msgctxt "tooltip, shortcut"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
+
+#: interfaces/default/interface.cpp:409
+#, kde-format
+msgid "(From %1, %2)"
+msgstr ""
+
+#: interfaces/quicksand/qs_dialog.cpp:108
+msgid "Actions"
+msgstr "Амалҳо"
 
 #: interfaces/quicksand/qs_matchview.cpp:193
 msgid "Type to search."
@@ -63,18 +88,61 @@ msgctxt "%1 current item number, %2 total number of items"
 msgid "%1 of %2"
 msgstr "%1 аз %2"
 
-#: interfaces/default/interface.cpp:107
-msgid "Help"
-msgstr "Справка"
+#: krunnerapp.cpp:128 krunnerdialog.cpp:69
+msgid "Run Command"
+msgstr "Иҷрои фармон"
 
-#: interfaces/default/interface.cpp:108
-msgid "Information on using this application"
-msgstr "Об использовании этого приложения"
+#: krunnerapp.cpp:133
+msgid "Run Command on clipboard contents"
+msgstr "Иҷрои фармон аз дорои хотира"
 
-#: interfaces/default/interface.cpp:409
+#: krunnerapp.cpp:139
+msgid "Show System Activity"
+msgstr "Намоиши фаъолияти система"
+
+#: krunnerapp.cpp:145
+msgid "Switch User"
+msgstr "Мубодилаи корбар"
+
+#: krunnerapp.cpp:155
+msgid "Lock Session"
+msgstr "Қулфи сеанс"
+
+#: krunnerapp.cpp:195
 #, kde-format
-msgid "(From %1, %2)"
+msgctxt "Run krunner restricting the search only to runner %1"
+msgid "Run Command (runner \"%1\" only)"
 msgstr ""
+
+#: ksystemactivitydialog.cpp:39
+msgid "System Activity"
+msgstr "Фаъолияти система"
+
+#: lock/autologout.cc:38
+msgid "<qt><nobr><b>Automatic Log Out</b></nobr></qt>"
+msgstr "<qt><nobr><b>Хуруҷкунии худкор</b></nobr></qt>"
+
+#: lock/autologout.cc:39
+msgid ""
+"<qt>To prevent being logged out, resume using this session by moving the "
+"mouse or pressing a key.</qt>"
+msgstr ""
+"<qt>Барои манъ кардани хуруҷи система, системаро бо таҳвилкунии мӯш ё бо "
+"зеркунии тугмаҳои клавиатура бедор кунед.</qt>"
+
+#: lock/autologout.cc:44
+msgid "Time Remaining:"
+msgstr "Вақти боқимонда:"
+
+#: lock/autologout.cc:77
+#, kde-format
+msgid "<qt><nobr>You will be automatically logged out in 1 second</nobr></qt>"
+msgid_plural ""
+"<qt><nobr>You will be automatically logged out in %1 seconds</nobr></qt>"
+msgstr[0] ""
+"<qt><nobr>Шумо баъд аз 1 сония аз система хуруҷ карда мешавед</nobr></qt>"
+msgstr[1] ""
+"<qt><nobr>Шумо баъд аз %1 сония аз система хуруҷ карда мешавед</nobr></qt>"
 
 #: lock/lockdlg.cc:100
 msgid "<nobr><b>The session is locked</b></nobr><br />"
@@ -161,31 +229,21 @@ msgstr "&Фаъол кардан"
 msgid "Start &New Session"
 msgstr "Оғозкунии сеанси &нав"
 
-#: lock/autologout.cc:38
-msgid "<qt><nobr><b>Automatic Log Out</b></nobr></qt>"
-msgstr "<qt><nobr><b>Хуруҷкунии худкор</b></nobr></qt>"
+#: lock/lockprocess.cc:830
+msgid "Will not lock the session, as unlocking would be impossible:\n"
+msgstr "Сеансро қулф намекунад. Қулфкушоӣ имконнопазир аст:\n"
 
-#: lock/autologout.cc:39
-msgid ""
-"<qt>To prevent being logged out, resume using this session by moving the "
-"mouse or pressing a key.</qt>"
-msgstr ""
-"<qt>Барои манъ кардани хуруҷи система, системаро бо таҳвилкунии мӯш ё бо "
-"зеркунии тугмаҳои клавиатура бедор кунед.</qt>"
+#: lock/lockprocess.cc:834
+msgid "Cannot start <i>kcheckpass</i>."
+msgstr "Оғоз карда намешавад <i>kcheckpass</i>."
 
-#: lock/autologout.cc:44
-msgid "Time Remaining:"
-msgstr "Вақти боқимонда:"
+#: lock/lockprocess.cc:835
+msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not setuid root."
+msgstr "<i>kcheckpass</i> оғоз карда намешавад. Мумкин аст, ки ин root аст."
 
-#: lock/autologout.cc:77
-#, kde-format
-msgid "<qt><nobr>You will be automatically logged out in 1 second</nobr></qt>"
-msgid_plural ""
-"<qt><nobr>You will be automatically logged out in %1 seconds</nobr></qt>"
-msgstr[0] ""
-"<qt><nobr>Шумо баъд аз 1 сония аз система хуруҷ карда мешавед</nobr></qt>"
-msgstr[1] ""
-"<qt><nobr>Шумо баъд аз %1 сония аз система хуруҷ карда мешавед</nobr></qt>"
+#: lock/lockprocess.cc:898
+msgid "No appropriate greeter plugin configured."
+msgstr "Васлкунаки оғозӣ танзим нашудааст."
 
 #: lock/main.cc:61
 #, fuzzy
@@ -222,26 +280,6 @@ msgstr "Барои танзимот plasma'и қулфкушодашуда оғ�
 msgid "Fork into the background after starting up"
 msgstr ""
 
-#: lock/lockprocess.cc:830
-msgid "Will not lock the session, as unlocking would be impossible:\n"
-msgstr "Сеансро қулф намекунад. Қулфкушоӣ имконнопазир аст:\n"
-
-#: lock/lockprocess.cc:834
-msgid "Cannot start <i>kcheckpass</i>."
-msgstr "Оғоз карда намешавад <i>kcheckpass</i>."
-
-#: lock/lockprocess.cc:835
-msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not setuid root."
-msgstr "<i>kcheckpass</i> оғоз карда намешавад. Мумкин аст, ки ин root аст."
-
-#: lock/lockprocess.cc:898
-msgid "No appropriate greeter plugin configured."
-msgstr "Васлкунаки оғозӣ танзим нашудааст."
-
-#: krunnerdialog.cpp:69 krunnerapp.cpp:128
-msgid "Run Command"
-msgstr "Иҷрои фармон"
-
 #: main.cpp:38
 msgid "KDE run command interface"
 msgstr "Интерфейси фармонҳои KDE"
@@ -261,44 +299,6 @@ msgstr "Aaron J. Seigo"
 #: main.cpp:54
 msgid "Author and maintainer"
 msgstr "Муаллиф ва тайёркунанда"
-
-#: krunnerapp.cpp:133
-msgid "Run Command on clipboard contents"
-msgstr "Иҷрои фармон аз дорои хотира"
-
-#: krunnerapp.cpp:139
-msgid "Show System Activity"
-msgstr "Намоиши фаъолияти система"
-
-#: krunnerapp.cpp:145
-msgid "Switch User"
-msgstr "Мубодилаи корбар"
-
-#: krunnerapp.cpp:155
-msgid "Lock Session"
-msgstr "Қулфи сеанс"
-
-#: krunnerapp.cpp:195
-#, kde-format
-msgctxt "Run krunner restricting the search only to runner %1"
-msgid "Run Command (runner \"%1\" only)"
-msgstr ""
-
-#: configdialog.cpp:52
-msgid "Plugins"
-msgstr "Васлкунакҳо"
-
-#: configdialog.cpp:81
-msgid "User Interface"
-msgstr "Интерфейси корбар"
-
-#: configdialog.cpp:87
-msgid "Available Features"
-msgstr "Хусусиятҳои дастрас"
-
-#: ksystemactivitydialog.cpp:39
-msgid "System Activity"
-msgstr "Фаъолияти система"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
