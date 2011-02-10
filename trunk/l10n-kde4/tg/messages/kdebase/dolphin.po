@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-08 02:35+0100\n"
+"POT-Creation-Date: 2011-02-10 02:47+0100\n"
 "PO-Revision-Date: 2010-08-30 20:24+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -80,7 +80,7 @@ msgctxt "@action:inmenu"
 msgid "Delete"
 msgstr "Нест кардан"
 
-#: panels/folders/treeviewcontextmenu.cpp:111 dolphincontextmenu.cpp:365
+#: panels/folders/treeviewcontextmenu.cpp:111 dolphincontextmenu.cpp:367
 msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "Хусусиятҳо"
@@ -745,14 +745,14 @@ msgctxt "@option:check"
 msgid "Use these view properties as default"
 msgstr "Истифодаи хусусиятҳои намоиш барои ҳамаи ҷузувдонҳо"
 
-#: settings/viewpropertiesdialog.cpp:338
+#: settings/viewpropertiesdialog.cpp:337
 msgctxt "@info"
 msgid ""
 "The view properties of all sub-folders will be changed. Do you want to "
 "continue?"
 msgstr "Хусусиятҳои намоиш барои ҳамаи ҷузувдонҳо иваз мешавад. Давом медиҳед?"
 
-#: settings/viewpropertiesdialog.cpp:373
+#: settings/viewpropertiesdialog.cpp:370
 msgctxt "@info"
 msgid ""
 "The view properties of all folders will be changed. Do you want to continue?"
@@ -807,6 +807,67 @@ msgctxt "@info:status Free disk space"
 msgid "%1 free"
 msgstr "%1 озод"
 
+#: views/dolphinview.cpp:500
+#, kde-format
+msgctxt "@info:status"
+msgid "<filename>%1</filename> selected"
+msgstr "<filename>%1</filename> интихоб шуд"
+
+#: views/dolphinview.cpp:501
+#, kde-format
+msgctxt "@info:status"
+msgid "<filename>%1</filename> selected (%2)"
+msgstr "<filename>%1</filename> интихоб шуд (%2)"
+
+#: views/dolphinview.cpp:505
+#, kde-format
+msgctxt "@info:status"
+msgid "1 Folder selected"
+msgid_plural "%1 Folders selected"
+msgstr[0] "1 ҷузвдон интихоб шуд"
+msgstr[1] "%1 ҷузвдон интихоб шуд"
+
+#: views/dolphinview.cpp:506
+#, kde-format
+msgctxt "@info:status"
+msgid "1 File selected"
+msgid_plural "%1 Files selected"
+msgstr[0] "1 файл интихоб шуд"
+msgstr[1] "%1 файл интихоб шуд"
+
+#: views/dolphinview.cpp:508
+#, kde-format
+msgctxt "@info:status folders, files (size)"
+msgid "%1, %2 (%3)"
+msgstr "%1, %2 (%3)"
+
+#: views/dolphinview.cpp:511
+#, kde-format
+msgctxt "@info:status files (size)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: views/dolphinview.cpp:1039
+msgctxt "@info:status"
+msgid "Delete operation completed."
+msgstr "Амалиёти иҷрошударо нест кунед."
+
+#: views/dolphinview.cpp:1141
+msgctxt "@info:status"
+msgid "The location is empty."
+msgstr "Макон холӣ аст."
+
+#: views/dolphinview.cpp:1143
+#, kde-format
+msgctxt "@info:status"
+msgid "The location '%1' is invalid."
+msgstr "Макони '%1' нодуруст аст."
+
+#: views/draganddrophelper.cpp:108
+msgctxt "@info:status"
+msgid "A folder cannot be dropped into itself"
+msgstr "Ҷузвдон ба дохили худ таҳвил карда намешавад"
+
 #: views/renamedialog.cpp:54
 msgctxt "@title:window"
 msgid "Rename Item"
@@ -846,25 +907,163 @@ msgctxt "@info"
 msgid "(# will be replaced by ascending numbers)"
 msgstr "(# бо рақамҳо иваз карда мешавад)"
 
-#: views/selectiontoggle.cpp:132
-msgctxt "@info:tooltip"
-msgid "Deselect Item"
-msgstr "Бекор кардани интихоби ҷузъ"
+#: views/dolphindetailsview.cpp:144
+msgctxt "@option:check"
+msgid "Expandable Folders"
+msgstr "Ҷузвдонҳои васъшаванда"
 
-#: views/selectiontoggle.cpp:133
-msgctxt "@info:tooltip"
-msgid "Select Item"
-msgstr "Интихоби ҷузъ"
+#: views/dolphindetailsview.cpp:372
+msgctxt "@title:menu"
+msgid "Columns"
+msgstr "Сутунҳо"
 
-#: views/versioncontrol/versioncontrolobserver.cpp:189
+#: views/dolphincolumnview.cpp:88
+msgctxt "@info:tooltip"
+msgid "Resize column"
+msgstr ""
+
+#: views/dolphindirlister.cpp:41
+msgctxt "@info:status"
+msgid "Unknown error."
+msgstr "Неизвестная ошибка."
+
+#: views/dolphinviewactionhandler.cpp:87
+msgctxt "@action"
+msgid "Create Folder..."
+msgstr "Эҷоди ҷузвдон..."
+
+#: views/dolphinviewactionhandler.cpp:95
+msgctxt "@action:inmenu File"
+msgid "Rename..."
+msgstr "Ивази ном..."
+
+#: views/dolphinviewactionhandler.cpp:101
+msgctxt "@action:inmenu File"
+msgid "Move to Trash"
+msgstr "Таҳвил ба сабад"
+
+#: views/dolphinviewactionhandler.cpp:109
+msgctxt "@action:inmenu File"
+msgid "Delete"
+msgstr "Нест кардан"
+
+#: views/dolphinviewactionhandler.cpp:119
+msgctxt "@action \"Move to Trash\" for non-local files, etc."
+msgid "Delete (using shortcut for Trash)"
+msgstr "Нест кардан (бо истифодаи истиноди Сабад)"
+
+#: views/dolphinviewactionhandler.cpp:126
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "Хусусиятҳо"
+
+#: views/dolphinviewactionhandler.cpp:137
+msgctxt "@action:intoolbar"
+msgid "View Mode"
+msgstr "Ҳолати намоиш"
+
+#: views/dolphinviewactionhandler.cpp:153
+msgctxt "@action:intoolbar"
+msgid "Preview"
+msgstr "Пешнамоиш"
+
+#: views/dolphinviewactionhandler.cpp:154
+msgctxt "@info"
+msgid "Show preview of files and folders"
+msgstr "Показывать миниатюры файлов и папок"
+
+#: views/dolphinviewactionhandler.cpp:159
+msgctxt "@action:inmenu Sort"
+msgid "Descending"
+msgstr "В порядке убывания"
+
+#: views/dolphinviewactionhandler.cpp:163
+msgctxt "@action:inmenu Sort"
+msgid "Folders First"
+msgstr "Аввал ҷузвдонҳо"
+
+#: views/dolphinviewactionhandler.cpp:171
+msgctxt "@action:inmenu View"
+msgid "Sort By"
+msgstr "Тартибдиҳӣ"
+
+#: views/dolphinviewactionhandler.cpp:186
+#: views/dolphinviewactionhandler.cpp:212
+msgctxt "@action:inmenu View"
+msgid "Additional Information"
+msgstr "Иттилооти иловагӣ"
+
+#: views/dolphinviewactionhandler.cpp:193
+msgctxt "@action:inmenu View"
+msgid "Show in Groups"
+msgstr "Разбивать на группы"
+
+#: views/dolphinviewactionhandler.cpp:197
+msgctxt "@action:inmenu View"
+msgid "Show Hidden Files"
+msgstr "Показывать скрытые файлы"
+
+#: views/dolphinviewactionhandler.cpp:202
+msgctxt "@action:inmenu View"
+msgid "Adjust View Properties..."
+msgstr "Настроить представление папки..."
+
+#: views/dolphinviewactionhandler.cpp:237
+msgctxt "@action:inmenu Sort By"
+msgid "Name"
+msgstr "Ном"
+
+#: views/dolphinviewactionhandler.cpp:440
+msgctxt "@action:inmenu View Mode"
+msgid "Icons"
+msgstr "Нишонаҳо"
+
+#: views/dolphinviewactionhandler.cpp:441
+msgctxt "@info"
+msgid "Icons view mode"
+msgstr "Дар нишонаҳо"
+
+#: views/dolphinviewactionhandler.cpp:451
+msgctxt "@action:inmenu View Mode"
+msgid "Details"
+msgstr "Иттилоот"
+
+#: views/dolphinviewactionhandler.cpp:452
+msgctxt "@info"
+msgid "Details view mode"
+msgstr "Дар ҷадвал"
+
+#: views/dolphinviewactionhandler.cpp:462
+msgctxt "@action:inmenu View Mode"
+msgid "Columns"
+msgstr "Сутунҳо"
+
+#: views/dolphinviewactionhandler.cpp:463
+msgctxt "@info"
+msgid "Columns view mode"
+msgstr "Дар сутунҳо"
+
+#: views/versioncontrol/versioncontrolobserver.cpp:190
 msgctxt "@info:status"
 msgid "Update of version information failed."
 msgstr "Не удалось обновить информацию о версиях."
 
-#: views/versioncontrol/versioncontrolobserver.cpp:242
+#: views/versioncontrol/versioncontrolobserver.cpp:243
 msgctxt "@info:status"
 msgid "Updating version information..."
 msgstr "Обновление информации о версиях..."
+
+#: views/dolphinremoteencoding.cpp:53
+msgid "Select Remote Charset"
+msgstr "Кодировка сервера"
+
+#: views/dolphinremoteencoding.cpp:117
+msgid "Reload"
+msgstr "Бозсозӣ"
+
+#: views/dolphinremoteencoding.cpp:118
+msgid "Default"
+msgstr "Стандартӣ"
 
 #: views/additionalinfoaccessor.cpp:105
 msgctxt "@label"
@@ -905,26 +1104,6 @@ msgstr "Тафсилоти алоқа:"
 msgctxt "@label"
 msgid "Path"
 msgstr "Роҳ"
-
-#: views/dolphincolumnview.cpp:88
-msgctxt "@info:tooltip"
-msgid "Resize column"
-msgstr ""
-
-#: views/dolphindetailsview.cpp:144
-msgctxt "@option:check"
-msgid "Expandable Folders"
-msgstr "Ҷузвдонҳои васъшаванда"
-
-#: views/dolphindetailsview.cpp:372
-msgctxt "@title:menu"
-msgid "Columns"
-msgstr "Сутунҳо"
-
-#: views/dolphindirlister.cpp:41
-msgctxt "@info:status"
-msgid "Unknown error."
-msgstr "Неизвестная ошибка."
 
 #: views/dolphinmodel.cpp:43
 msgctxt "@title:group Name"
@@ -1076,194 +1255,92 @@ msgctxt "@title:group Files and folders by permissions"
 msgid "(User: %1) (Group: %2) (Others: %3)"
 msgstr "(Корбар: %1) (Гурӯҳ: %2) (Дигар: %3)"
 
-#: views/dolphinremoteencoding.cpp:53
-msgid "Select Remote Charset"
-msgstr "Кодировка сервера"
+#: views/selectiontoggle.cpp:132
+msgctxt "@info:tooltip"
+msgid "Deselect Item"
+msgstr "Бекор кардани интихоби ҷузъ"
 
-#: views/dolphinremoteencoding.cpp:117
-msgid "Reload"
+#: views/selectiontoggle.cpp:133
+msgctxt "@info:tooltip"
+msgid "Select Item"
+msgstr "Интихоби ҷузъ"
+
+#: dolphincontextmenu.cpp:169
+msgctxt "@action:inmenu"
+msgid "Empty Trash"
+msgstr "Сабади холӣ"
+
+#: dolphincontextmenu.cpp:175 dolphincontextmenu.cpp:346
+msgctxt "@action:inmenu Add current folder to places"
+msgid "Add to Places"
+msgstr "Илова ба маконҳо"
+
+#: dolphincontextmenu.cpp:191
+msgctxt "@info"
+msgid "Do you really want to empty the Trash? All items will be deleted."
+msgstr "Шумо мехоҳед сабадро холӣ кунед? Ҳамаи ҷузъҳо нест карда мешаванд."
+
+#: dolphincontextmenu.cpp:195
+msgctxt "@action:button"
+msgid "Empty Trash"
+msgstr "Холӣ кардани сабад"
+
+#: dolphincontextmenu.cpp:204
+msgctxt "@label"
+msgid "Trash"
+msgstr "Сабад"
+
+#: dolphincontextmenu.cpp:214
+msgctxt "@action:inmenu"
+msgid "Restore"
 msgstr "Бозсозӣ"
 
-#: views/dolphinremoteencoding.cpp:118
-msgid "Default"
-msgstr "Стандартӣ"
+#: dolphincontextmenu.cpp:253 dolphinmainwindow.cpp:1417
+msgctxt "@title:menu Create new folder, file, link, etc."
+msgid "Create New"
+msgstr "Эҷоди нав"
 
-#: views/dolphinview.cpp:500
-#, kde-format
-msgctxt "@info:status"
-msgid "<filename>%1</filename> selected"
-msgstr "<filename>%1</filename> интихоб шуд"
+#: dolphincontextmenu.cpp:266
+msgctxt "@action:inmenu Add selected folder to places"
+msgid "Add to Places"
+msgstr "Илова ба маконҳо"
 
-#: views/dolphinview.cpp:501
-#, kde-format
-msgctxt "@info:status"
-msgid "<filename>%1</filename> selected (%2)"
-msgstr "<filename>%1</filename> интихоб шуд (%2)"
+#: dolphincontextmenu.cpp:273
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Open in New Window"
+msgctxt "@action:inmenu"
+msgid "Open Path in New Window"
+msgstr "Кушодан дар тирезаи нав"
 
-#: views/dolphinview.cpp:505
-#, kde-format
-msgctxt "@info:status"
-msgid "1 Folder selected"
-msgid_plural "%1 Folders selected"
-msgstr[0] "1 ҷузвдон интихоб шуд"
-msgstr[1] "%1 ҷузвдон интихоб шуд"
+#: dolphincontextmenu.cpp:279
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Open in New Tab"
+msgctxt "@action:inmenu"
+msgid "Open Path in New Tab"
+msgstr "Кушодан дар ҷадвалбандии нав"
 
-#: views/dolphinview.cpp:506
-#, kde-format
-msgctxt "@info:status"
-msgid "1 File selected"
-msgid_plural "%1 Files selected"
-msgstr[0] "1 файл интихоб шуд"
-msgstr[1] "%1 файл интихоб шуд"
+#: dolphincontextmenu.cpp:450
+msgctxt "@action:inmenu"
+msgid "Paste Into Folder"
+msgstr "Часпондан ба ҷузвдон"
 
-#: views/dolphinview.cpp:508
-#, kde-format
-msgctxt "@info:status folders, files (size)"
-msgid "%1, %2 (%3)"
-msgstr "%1, %2 (%3)"
+#: dolphincontextmenu.cpp:562
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Move to Trash"
+msgctxt "@action:inmenu"
+msgid "&Move to Trash"
+msgstr "Таҳвилкунӣ ба сабад"
 
-#: views/dolphinview.cpp:511
-#, kde-format
-msgctxt "@info:status files (size)"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: views/dolphinview.cpp:1039
-msgctxt "@info:status"
-msgid "Delete operation completed."
-msgstr "Амалиёти иҷрошударо нест кунед."
-
-#: views/dolphinview.cpp:1141
-msgctxt "@info:status"
-msgid "The location is empty."
-msgstr "Макон холӣ аст."
-
-#: views/dolphinview.cpp:1143
-#, kde-format
-msgctxt "@info:status"
-msgid "The location '%1' is invalid."
-msgstr "Макони '%1' нодуруст аст."
-
-#: views/dolphinviewactionhandler.cpp:87
-msgctxt "@action"
-msgid "Create Folder..."
-msgstr "Эҷоди ҷузвдон..."
-
-#: views/dolphinviewactionhandler.cpp:95
-msgctxt "@action:inmenu File"
-msgid "Rename..."
-msgstr "Ивази ном..."
-
-#: views/dolphinviewactionhandler.cpp:101
-msgctxt "@action:inmenu File"
-msgid "Move to Trash"
-msgstr "Таҳвил ба сабад"
-
-#: views/dolphinviewactionhandler.cpp:109
-msgctxt "@action:inmenu File"
-msgid "Delete"
+#: dolphincontextmenu.cpp:565
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Delete"
+msgctxt "@action:inmenu"
+msgid "&Delete"
 msgstr "Нест кардан"
-
-#: views/dolphinviewactionhandler.cpp:119
-msgctxt "@action \"Move to Trash\" for non-local files, etc."
-msgid "Delete (using shortcut for Trash)"
-msgstr "Нест кардан (бо истифодаи истиноди Сабад)"
-
-#: views/dolphinviewactionhandler.cpp:126
-msgctxt "@action:inmenu File"
-msgid "Properties"
-msgstr "Хусусиятҳо"
-
-#: views/dolphinviewactionhandler.cpp:137
-msgctxt "@action:intoolbar"
-msgid "View Mode"
-msgstr "Ҳолати намоиш"
-
-#: views/dolphinviewactionhandler.cpp:153
-msgctxt "@action:intoolbar"
-msgid "Preview"
-msgstr "Пешнамоиш"
-
-#: views/dolphinviewactionhandler.cpp:154
-msgctxt "@info"
-msgid "Show preview of files and folders"
-msgstr "Показывать миниатюры файлов и папок"
-
-#: views/dolphinviewactionhandler.cpp:159
-msgctxt "@action:inmenu Sort"
-msgid "Descending"
-msgstr "В порядке убывания"
-
-#: views/dolphinviewactionhandler.cpp:163
-msgctxt "@action:inmenu Sort"
-msgid "Folders First"
-msgstr "Аввал ҷузвдонҳо"
-
-#: views/dolphinviewactionhandler.cpp:171
-msgctxt "@action:inmenu View"
-msgid "Sort By"
-msgstr "Тартибдиҳӣ"
-
-#: views/dolphinviewactionhandler.cpp:186
-#: views/dolphinviewactionhandler.cpp:212
-msgctxt "@action:inmenu View"
-msgid "Additional Information"
-msgstr "Иттилооти иловагӣ"
-
-#: views/dolphinviewactionhandler.cpp:193
-msgctxt "@action:inmenu View"
-msgid "Show in Groups"
-msgstr "Разбивать на группы"
-
-#: views/dolphinviewactionhandler.cpp:197
-msgctxt "@action:inmenu View"
-msgid "Show Hidden Files"
-msgstr "Показывать скрытые файлы"
-
-#: views/dolphinviewactionhandler.cpp:202
-msgctxt "@action:inmenu View"
-msgid "Adjust View Properties..."
-msgstr "Настроить представление папки..."
-
-#: views/dolphinviewactionhandler.cpp:237
-msgctxt "@action:inmenu Sort By"
-msgid "Name"
-msgstr "Ном"
-
-#: views/dolphinviewactionhandler.cpp:440
-msgctxt "@action:inmenu View Mode"
-msgid "Icons"
-msgstr "Нишонаҳо"
-
-#: views/dolphinviewactionhandler.cpp:441
-msgctxt "@info"
-msgid "Icons view mode"
-msgstr "Дар нишонаҳо"
-
-#: views/dolphinviewactionhandler.cpp:451
-msgctxt "@action:inmenu View Mode"
-msgid "Details"
-msgstr "Иттилоот"
-
-#: views/dolphinviewactionhandler.cpp:452
-msgctxt "@info"
-msgid "Details view mode"
-msgstr "Дар ҷадвал"
-
-#: views/dolphinviewactionhandler.cpp:462
-msgctxt "@action:inmenu View Mode"
-msgid "Columns"
-msgstr "Сутунҳо"
-
-#: views/dolphinviewactionhandler.cpp:463
-msgctxt "@info"
-msgid "Columns view mode"
-msgstr "Дар сутунҳо"
-
-#: views/draganddrophelper.cpp:108
-msgctxt "@info:status"
-msgid "A folder cannot be dropped into itself"
-msgstr "Ҷузвдон ба дохили худ таҳвил карда намешавад"
 
 #: dolphinmainwindow.cpp:227
 msgctxt "@info:status"
@@ -1342,11 +1419,6 @@ msgstr "Хуруҷи ҷадвалбандии дигар"
 msgctxt "@action:inmenu"
 msgid "Close Tab"
 msgstr "Хуруҷи ҷадвалбандӣ"
-
-#: dolphinmainwindow.cpp:1417 dolphincontextmenu.cpp:251
-msgctxt "@title:menu Create new folder, file, link, etc."
-msgid "Create New"
-msgstr "Эҷоди нав"
 
 #: dolphinmainwindow.cpp:1424
 msgctxt "@action:inmenu File"
@@ -1594,6 +1666,40 @@ msgstr "Снять выделение"
 msgid "Unselect all items matching this pattern:"
 msgstr "Снять выделение файлов по данной маске:"
 
+#: dolphinviewcontainer.cpp:313
+msgctxt "@info:progress"
+msgid "Loading folder..."
+msgstr "Кушоиши ҷузвдон..."
+
+#: dolphinviewcontainer.cpp:324
+msgctxt "@info"
+msgid "Searching..."
+msgstr "Идет поиск..."
+
+#: dolphinviewcontainer.cpp:344
+msgctxt "@info:status"
+msgid "No items found."
+msgstr "Ничего не найдено."
+
+#: dolphinviewcontainer.cpp:423
+msgctxt "@info:status"
+msgid "Dolphin does not support web pages, the web browser has been launched"
+msgstr ""
+"Dolphin саҳифаҳои Интернетӣ пуштибонӣ намекунад, вале Интернет браузер оғоз "
+"карда шуд"
+
+#: dolphinviewcontainer.cpp:435
+msgctxt "@info:status"
+msgid "Protocol not supported by Dolphin, Konqueror has been launched"
+msgstr ""
+"Протокол бо барномаи Dolphin пуштибонӣ намешавад, вале Konqueror оғоз карда "
+"шуд"
+
+#: dolphinviewcontainer.cpp:442
+msgctxt "@info:status"
+msgid "Invalid protocol"
+msgstr "Протоколи нодуруст"
+
 #: main.cpp:35
 msgctxt "@title"
 msgid "Dolphin"
@@ -1676,112 +1782,6 @@ msgstr "Файлҳо ва феҳрастҳои аргумент интихоб �
 msgctxt "@info:shell"
 msgid "Document to open"
 msgstr "Ҳуҷҷат барои кушоиш"
-
-#: dolphinviewcontainer.cpp:313
-msgctxt "@info:progress"
-msgid "Loading folder..."
-msgstr "Кушоиши ҷузвдон..."
-
-#: dolphinviewcontainer.cpp:324
-msgctxt "@info"
-msgid "Searching..."
-msgstr "Идет поиск..."
-
-#: dolphinviewcontainer.cpp:344
-msgctxt "@info:status"
-msgid "No items found."
-msgstr "Ничего не найдено."
-
-#: dolphinviewcontainer.cpp:423
-msgctxt "@info:status"
-msgid "Dolphin does not support web pages, the web browser has been launched"
-msgstr ""
-"Dolphin саҳифаҳои Интернетӣ пуштибонӣ намекунад, вале Интернет браузер оғоз "
-"карда шуд"
-
-#: dolphinviewcontainer.cpp:435
-msgctxt "@info:status"
-msgid "Protocol not supported by Dolphin, Konqueror has been launched"
-msgstr ""
-"Протокол бо барномаи Dolphin пуштибонӣ намешавад, вале Konqueror оғоз карда "
-"шуд"
-
-#: dolphinviewcontainer.cpp:442
-msgctxt "@info:status"
-msgid "Invalid protocol"
-msgstr "Протоколи нодуруст"
-
-#: dolphincontextmenu.cpp:169
-msgctxt "@action:inmenu"
-msgid "Empty Trash"
-msgstr "Сабади холӣ"
-
-#: dolphincontextmenu.cpp:175 dolphincontextmenu.cpp:344
-msgctxt "@action:inmenu Add current folder to places"
-msgid "Add to Places"
-msgstr "Илова ба маконҳо"
-
-#: dolphincontextmenu.cpp:191
-msgctxt "@info"
-msgid "Do you really want to empty the Trash? All items will be deleted."
-msgstr "Шумо мехоҳед сабадро холӣ кунед? Ҳамаи ҷузъҳо нест карда мешаванд."
-
-#: dolphincontextmenu.cpp:195
-msgctxt "@action:button"
-msgid "Empty Trash"
-msgstr "Холӣ кардани сабад"
-
-#: dolphincontextmenu.cpp:204
-msgctxt "@label"
-msgid "Trash"
-msgstr "Сабад"
-
-#: dolphincontextmenu.cpp:214
-msgctxt "@action:inmenu"
-msgid "Restore"
-msgstr "Бозсозӣ"
-
-#: dolphincontextmenu.cpp:264
-msgctxt "@action:inmenu Add selected folder to places"
-msgid "Add to Places"
-msgstr "Илова ба маконҳо"
-
-#: dolphincontextmenu.cpp:271
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Open in New Window"
-msgctxt "@action:inmenu"
-msgid "Open Path in New Window"
-msgstr "Кушодан дар тирезаи нав"
-
-#: dolphincontextmenu.cpp:277
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Open in New Tab"
-msgctxt "@action:inmenu"
-msgid "Open Path in New Tab"
-msgstr "Кушодан дар ҷадвалбандии нав"
-
-#: dolphincontextmenu.cpp:448
-msgctxt "@action:inmenu"
-msgid "Paste Into Folder"
-msgstr "Часпондан ба ҷузвдон"
-
-#: dolphincontextmenu.cpp:560
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Move to Trash"
-msgctxt "@action:inmenu"
-msgid "&Move to Trash"
-msgstr "Таҳвилкунӣ ба сабад"
-
-#: dolphincontextmenu.cpp:563
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Delete"
-msgctxt "@action:inmenu"
-msgid "&Delete"
-msgstr "Нест кардан"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
