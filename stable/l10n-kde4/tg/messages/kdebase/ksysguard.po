@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-26 13:12+0100\n"
+"POT-Creation-Date: 2011-03-29 14:00+0200\n"
 "PO-Revision-Date: 2010-01-28 14:27+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik\n"
@@ -22,47 +22,1287 @@ msgstr ""
 "X-Generator: KBabel 1.10\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: HostConnector.cc:44
+#: SensorDisplayLib/DancingBars.cpp:96 SensorDisplayLib/FancyPlotter.cpp:283
+msgid "OK"
+msgstr "Шуд"
+
+#: SensorDisplayLib/DancingBars.cpp:96 SensorDisplayLib/FancyPlotter.cpp:283
+#: SensorDisplayLib/FancyPlotter.cpp:519 SensorDisplayLib/FancyPlotter.cpp:597
+msgid "Error"
+msgstr "Хато"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:43
+msgid "Edit BarGraph Preferences"
+msgstr "Бартариҳои Таҳрири Панели Нақша"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:52
+msgid "Range"
+msgstr "Қатор"
+
+#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
+#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
+#: SensorDisplayLib/DancingBarsSettings.cpp:57 WorkSheetSettings.cpp:50
+#: rc.cpp:5 rc.cpp:116
+msgid "Title"
+msgstr "Сарлавҳа"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:35
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, m_title)
+#: SensorDisplayLib/DancingBarsSettings.cpp:62
+#: SensorDisplayLib/FancyPlotterSettings.cpp:73 rc.cpp:47
+msgid "Enter the title of the display here."
+msgstr "Сарлавҳаи Намоиш дар ин ҷо гузоред"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:67
+msgid "Display Range"
+msgstr "Намоиши Қатор"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:72
+#: SensorDisplayLib/FancyPlotterSettings.cpp:101
+msgid "Minimum value:"
+msgstr "Аҳамияти минимум:"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:80
+msgid ""
+"Enter the minimum value for the display here. If both values are 0, "
+"automatic range detection is enabled."
+msgstr ""
+"Введите минимальное значение. Если оба значения равны 0, диапазон будет "
+"определён автоматически."
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:84
+#: SensorDisplayLib/FancyPlotterSettings.cpp:112
+msgid "Maximum value:"
+msgstr "Аҳамияти максимум:"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:92
+msgid ""
+"Enter the maximum value for the display here. If both values are 0, "
+"automatic range detection is enabled."
+msgstr ""
+"Введите максимальное значение. Если оба значения равны 0, диапазон будет "
+"определён автоматически."
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:102
+msgid "Alarms"
+msgstr "Ҳарос"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:59
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
+#: SensorDisplayLib/DancingBarsSettings.cpp:107 rc.cpp:92
+msgid "Alarm for Minimum Value"
+msgstr "Ҳарос барои аҳамияти минимум"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:112
+#: SensorDisplayLib/DancingBarsSettings.cpp:135
+msgid "Enable alarm"
+msgstr "Ҳаросро фаъол созед"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:56
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:71
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
+#: SensorDisplayLib/DancingBarsSettings.cpp:113 rc.cpp:56 rc.cpp:98
+msgid "Enable the minimum value alarm."
+msgstr "Ҳароси аҳамияти минимум фаъол созед."
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:97
+#. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
+#: SensorDisplayLib/DancingBarsSettings.cpp:116 rc.cpp:101
+msgid "Lower limit:"
+msgstr "Ҳудуди поёнӣ:"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:123
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1_2)
+#: SensorDisplayLib/DancingBarsSettings.cpp:130 rc.cpp:104
+msgid "Alarm for Maximum Value"
+msgstr "Ҳарос барои аҳамияти максимум"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:115
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:135
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
+#: SensorDisplayLib/DancingBarsSettings.cpp:136 rc.cpp:65 rc.cpp:110
+msgid "Enable the maximum value alarm."
+msgstr "Ҳароси аҳамияти максимум фаъол созед."
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:161
+#. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
+#: SensorDisplayLib/DancingBarsSettings.cpp:139 rc.cpp:113
+msgid "Upper limit:"
+msgstr "Ҳудуди болоӣ:"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:156
+msgctxt "@title:tab Appearance of the bar graph"
+msgid "Look"
+msgstr "Дидан"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:161
+msgid "Normal bar color:"
+msgstr "Ранги муқаррарии панел:"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:168
+msgid "Out-of-range color:"
+msgstr "Ранги берун аз маҳдуда:"
+
+#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:77
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#. i18n: file: SensorDisplayLib/LogFileSettings.ui:74
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:228
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
+#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:64
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: SensorDisplayLib/DancingBarsSettings.cpp:175
+#: SensorDisplayLib/LogFile.cpp:100 rc.cpp:17 rc.cpp:29 rc.cpp:80 rc.cpp:125
+msgid "Background color:"
+msgstr "Ранги Замина:"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:182
+#: SensorDisplayLib/FancyPlotterSettings.cpp:183
+msgid "Font size:"
+msgstr "Андозаи ҳарф:"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:186
+msgid ""
+"This determines the size of the font used to print a label underneath the "
+"bars. Bars are automatically suppressed if text becomes too large, so it is "
+"advisable to use a small font size here."
+msgstr ""
+"Дар ин ҷо шумо метавонед андозаи ҳуруфҳоро ба танзид дароред, кадоме, ки "
+"барои чопи нишонаҳои зери сутунҳо истифода мешавад. Агар андозаи матн хеле "
+"калон бошад, сутунҳо ба таври худкор фишурда мешаванд, бинобар ин маслиҳат "
+"медиҳем, ки дар ин ҷо ҳуруфҳои андозааш хурдтарро истифода баред."
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:194
+#: SensorDisplayLib/FancyPlotterSettings.cpp:198
+msgid "Sensors"
+msgstr "Сенсор"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:207
+msgid "Edit..."
+msgstr "Муҳаррир..."
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:208
+msgid "Push this button to configure the label."
+msgstr "Ин кнопкаро пахш кунед барои танзими тамға"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:211
+#: SensorDisplayLib/FancyPlotterSettings.cpp:231
+msgid "Delete"
+msgstr "Нест кардан"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:212
+#: SensorDisplayLib/FancyPlotterSettings.cpp:232
+msgid "Push this button to delete the sensor."
+msgstr "Ин кнопкаро пахш кунед барои нест кардани сенсор."
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:366
+msgid "Label of Bar Graph"
+msgstr "Нишонаи Пенели Нақша"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:367
+msgid "Enter new label:"
+msgstr "Тамғаи нав гузоред:"
+
+#: SensorDisplayLib/DummyDisplay.cpp:30 SensorDisplayLib/DummyDisplay.cpp:38
+msgid "Drop Sensor Here"
+msgstr "Ба ин ҷо Ҷойгир кардани Санҷанда"
+
+#: SensorDisplayLib/DummyDisplay.cpp:32
+msgid ""
+"This is an empty space in a worksheet. Drag a sensor from the Sensor Browser "
+"and drop it here. A sensor display will appear that allows you to monitor "
+"the values of the sensor over time."
+msgstr ""
+"Ин фазои холӣ дар варақаи корӣ аст. Санҷандаро аз Барраси Санҷанда кошола "
+"карда онро дар фазои холӣ ҷойгир кунед. Намоиши санҷандаи пайдошуда ба шумо "
+"имконияти дидабонии қиммати санҷандаро дар вақташ медиҳад."
+
+#: SensorDisplayLib/FancyPlotter.cpp:178
+msgctxt "Largest axis title"
+msgid "99999 XXXX"
+msgstr "99999 XXXX"
+
+#: SensorDisplayLib/FancyPlotter.cpp:515 SensorDisplayLib/FancyPlotter.cpp:586
+#: SensorDisplayLib/FancyPlotter.cpp:649
+#, kde-format
+msgctxt "units"
+msgid "%1%"
+msgstr "%1%"
+
+#: SensorDisplayLib/FancyPlotter.cpp:523
+#, kde-format
+msgctxt "%1 is what is being shown statistics for, like 'Memory', 'Swap', etc."
+msgid "<p><b>%1:</b><br>"
+msgstr "<p><b>%1:</b><br>"
+
+#: SensorDisplayLib/FancyPlotter.cpp:594
+#, kde-format
+msgid "%1 of %2%1"
+msgstr "%1 аз %2"
+
+#: SensorDisplayLib/FancyPlotter.cpp:622
+#, kde-format
+msgctxt "units"
+msgid "%1 TiB"
+msgstr "%1 ТиБ"
+
+#: SensorDisplayLib/FancyPlotter.cpp:625
+#, kde-format
+msgctxt "units"
+msgid "%1 GiB"
+msgstr "%1 ГиБ"
+
+#: SensorDisplayLib/FancyPlotter.cpp:628
+#, kde-format
+msgctxt "units"
+msgid "%1 MiB"
+msgstr "%1 МиБ"
+
+#: SensorDisplayLib/FancyPlotter.cpp:631
+#, kde-format
+msgctxt "units"
+msgid "%1 KiB"
+msgstr "%1 КиБ"
+
+#: SensorDisplayLib/FancyPlotter.cpp:636
+#, kde-format
+msgctxt "units"
+msgid "%1 TiB/s"
+msgstr "%1 ТиБ"
+
+#: SensorDisplayLib/FancyPlotter.cpp:639
+#, kde-format
+msgctxt "units"
+msgid "%1 GiB/s"
+msgstr "%1 ГиБ"
+
+#: SensorDisplayLib/FancyPlotter.cpp:642
+#, kde-format
+msgctxt "units"
+msgid "%1 MiB/s"
+msgstr "%1 Миб/с"
+
+#: SensorDisplayLib/FancyPlotter.cpp:645
+#, kde-format
+msgctxt "units"
+msgid "%1 KiB/s"
+msgstr "%1 КиБ"
+
+#: SensorDisplayLib/FancyPlotter.cpp:651
+#, fuzzy, kde-format
+#| msgctxt "a percentage"
+#| msgid "%"
+msgctxt "unitless - just a number"
+msgid "%1"
+msgstr "%1"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:51
+msgid "Plotter Settings"
+msgstr "Настройки отладки"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:64
+msgid "General"
+msgstr "Умумӣ"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:69
+msgid "Title:"
+msgstr "Сарлавҳа:"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:77
+msgid "Stack the beams on top of each other"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:78
+msgid ""
+"The beams are stacked on top of each other, and the area is drawn filled in. "
+"So if one beam has a value of 2 and another beam has a value of 3, the first "
+"beam will be drawn at value 2 and the other beam drawn at 2+3=5."
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:85
+msgid "Scales"
+msgstr "Миқёс"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:90
+msgid "Vertical scale"
+msgstr "Вертикальное масштабирование"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:96
+msgid "Specify graph range:"
+msgstr "Настройка диапазона портов"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:97
+msgid ""
+"Check this box if you want the display range to adapt dynamically to the "
+"currently displayed values; if you do not check this, you have to specify "
+"the range you want in the fields below."
+msgstr ""
+"Включите флажок, если хотите, чтобы диапазон отображения изменялся "
+"динамически в соответствии со значениями параметра. Если флажок выключен, "
+"вам следует задать значения пределов вручную."
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:107
+msgid "Enter the minimum value for the display here."
+msgstr "Сарлавҳаи Намоиш дар ин ҷо гузоред"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:118
+msgid ""
+"Enter the soft maximum value for the display here. The upper range will not "
+"be reduced below this value, but will still go above this number for values "
+"above this value."
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:125
+msgid "Horizontal scale"
+msgstr "Горизонтальное масштабирование"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:132
+msgid "Pixels per time period:"
+msgstr "точек в каждый период времени"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:139
+msgid "Grid"
+msgstr "Тӯр"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:144
+msgid "Lines"
+msgstr "Хатҳо"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:150
+msgid "Vertical lines"
+msgstr "Хатҳои амудӣ"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:151
+msgid "Check this to activate the vertical lines if display is large enough."
+msgstr ""
+"Агар намоиш калон бошад, инро барои фаъолсозии хатҳои амудӣ интихоб намоед."
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:154
+msgid "Distance:"
+msgstr "Масофа:"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:160
+msgid "Enter the distance between two vertical lines here."
+msgstr "Фосилаи байни ду хатҳои амудиро ворид намоед."
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:164
+msgid "Vertical lines scroll"
+msgstr "Чархиши хатҳои амудӣ"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:167
+msgid "Horizontal lines"
+msgstr "Хатҳои уфуқӣ"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:168
+msgid "Check this to enable horizontal lines if display is large enough."
+msgstr ""
+"Агар намоиш калон бошад, инро барои даргиронидани хатҳои уфуқӣ интихоб "
+"намоед."
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:173
+msgid "Text"
+msgstr "Матн"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:179
+msgid "Show axis labels"
+msgstr "Показывать метки на осях"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:180
+msgid ""
+"Check this box if horizontal lines should be decorated with the values they "
+"mark."
+msgstr "Ин парчамро барои намоиши нишонаи қиммати хатҳои уфуқӣ интихоб намоед."
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:223
+msgid "Set Color..."
+msgstr "Соз кардани рангҳо..."
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:224
+msgid "Push this button to configure the color of the sensor in the diagram."
+msgstr "Ин кнопкаро пахш кунед барои танзими ранги сенсор дар диаграмма"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:236
+msgid "Move Up"
+msgstr "Ба боло ҳарақат кунед"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:241
+msgid "Move Down"
+msgstr "Ба поён ҳарақат кунед"
+
+#: SensorDisplayLib/ListView.cpp:45
+#, fuzzy, kde-format
+#| msgctxt "units"
+#| msgid "%1 KiB"
+msgid "%1 K"
+msgstr "%1 КиБ"
+
+#: SensorDisplayLib/ListView.cpp:46
+#, fuzzy, kde-format
+#| msgctxt "units"
+#| msgid "%1 MiB"
+msgid "%1 M"
+msgstr "%1 МиБ"
+
+#: SensorDisplayLib/ListView.cpp:47
+#, fuzzy, kde-format
+#| msgctxt "units"
+#| msgid "%1 GiB"
+msgid "%1 G"
+msgstr "%1 ГиБ"
+
+#: SensorDisplayLib/ListView.cpp:48
+#, fuzzy, kde-format
+#| msgctxt "units"
+#| msgid "%1 TiB"
+msgid "%1 T"
+msgstr "%1 ТиБ"
+
+#: SensorDisplayLib/ListView.cpp:49
+#, fuzzy, kde-format
+#| msgid "%1"
+msgid "%1 P"
+msgstr "%"
+
+#: SensorDisplayLib/ListView.cpp:152
+#, fuzzy
+#| msgid "Display Range"
+msgid "Display Units"
+msgstr "Намоиши Қатор"
+
+#: SensorDisplayLib/ListView.cpp:156
+msgid "Mixed"
+msgstr ""
+
+#: SensorDisplayLib/ListView.cpp:162
+msgid "Kilobytes"
+msgstr ""
+
+#: SensorDisplayLib/ListView.cpp:168
+msgid "Megabytes"
+msgstr ""
+
+#: SensorDisplayLib/ListView.cpp:174
+msgid "Gigabytes"
+msgstr ""
+
+#: SensorDisplayLib/ListView.cpp:180
+#, fuzzy
+#| msgid "Temperature"
+msgid "Terabytes"
+msgstr "Температура"
+
+#: SensorDisplayLib/ListViewSettings.cpp:30
+msgid "List View Settings"
+msgstr "Гузоришҳои Рӯйхати Назар"
+
+#: SensorDisplayLib/LogFile.cpp:92
+msgid "File logging settings"
+msgstr "Настройка файла журнала"
+
+#. i18n: file: SensorDisplayLib/LogFileSettings.ui:61
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: SensorDisplayLib/LogFile.cpp:98 rc.cpp:26
+msgid "Foreground color:"
+msgstr "Ранги Пешзамина:"
+
+#: SensorDisplayLib/MultiMeterSettings.cpp:31
+msgctxt ""
+"Multimeter is a sensor display that mimics 'digital multimeter' aparatus"
+msgid "Multimeter Settings"
+msgstr "Гузоришҳои Мултиметр"
+
+#: SensorDisplayLib/SensorDisplay.cpp:118
+#: SensorDisplayLib/SensorLogger.cpp:598
+msgid "&Properties"
+msgstr "&Хусусиятҳо"
+
+#: SensorDisplayLib/SensorDisplay.cpp:123
+#: SensorDisplayLib/SensorLogger.cpp:603
+msgid "&Remove Display"
+msgstr "&Нобуд Кардани Намоиш"
+
+#: SensorDisplayLib/SensorDisplay.cpp:190
+#, kde-format
+msgid ""
+"<qt><p>This is a sensor display. To customize a sensor display click the "
+"right mouse button here and select the <i>Properties</i> entry from the "
+"popup menu. Select <i>Remove</i> to delete the display from the worksheet.</"
+"p>%1</qt>"
+msgstr ""
+"<qt><p>Это график сенсоров. Чтобы настроить график, щёлкните здесь  правой "
+"кнопкой мыши и выберите <i>Свойства</i> в выпадающем меню. Выберите "
+"<i>Удалить</i>, чтобы удалить график с панели.</p>%1</qt>"
+
+#: SensorDisplayLib/SensorLogger.cpp:138
+msgid "Logging"
+msgstr "Номнавис"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:31
+#. i18n: ectx: property (title), widget (QGroupBox, timerFrame)
+#: SensorDisplayLib/SensorLogger.cpp:141 rc.cpp:86
+msgid "Timer Interval"
+msgstr "Фосилаи Вақтсанҷ"
+
+#: SensorDisplayLib/SensorLogger.cpp:144
+msgid "Sensor Name"
+msgstr "Номи Сенсор"
+
+#: SensorDisplayLib/SensorLogger.cpp:147
+msgid "Host Name"
+msgstr "Номи Узел"
+
+#: SensorDisplayLib/SensorLogger.cpp:150
+msgid "Log File"
+msgstr "Файли Вуруд"
+
+#: SensorDisplayLib/SensorLogger.cpp:431
+#: SensorDisplayLib/SensorLoggerDlg.cpp:32
+msgid "Sensor Logger"
+msgstr "Номнависи Санҷанда"
+
+#: SensorDisplayLib/SensorLogger.cpp:608
+msgid "&Remove Sensor"
+msgstr "&Нобуд Кардани Сенсор"
+
+#: SensorDisplayLib/SensorLogger.cpp:613
+msgid "&Edit Sensor..."
+msgstr "&Муҳаррири Сенсор..."
+
+#: SensorDisplayLib/SensorLogger.cpp:621
+msgid "St&op Logging"
+msgstr "&Боздоштани Номнависӣ"
+
+#: SensorDisplayLib/SensorLogger.cpp:624
+msgid "S&tart Logging"
+msgstr "&Боздоштани Номнависӣ"
+
+#: SensorDisplayLib/SensorLoggerSettings.cpp:30
+msgid "Sensor Logger Settings"
+msgstr "Гузоришҳои Номнависи Санҷанда"
+
+#: SensorDisplayLib/SensorModel.cpp:166
+msgid "Host"
+msgstr "Узел"
+
+#: SensorDisplayLib/SensorModel.cpp:169
+msgid "Sensor"
+msgstr "Сенсор"
+
+#: SensorDisplayLib/SensorModel.cpp:172
+msgid "Unit"
+msgstr "Воҳид"
+
+#: SensorDisplayLib/SensorModel.cpp:175
+msgid "Status"
+msgstr "Вазъият"
+
+#: SensorDisplayLib/SensorModel.cpp:178
+msgid "Label"
+msgstr "Тамға"
+
+#: ksgrd/SensorAgent.cpp:109
+#, kde-format
+msgctxt "%1 is a host name"
+msgid ""
+"Message from %1:\n"
+"%2"
+msgstr ""
+"Ахборот аз %1:\n"
+"%2"
+
+#: ksgrd/SensorManager.cpp:60
+msgid "Change"
+msgstr "Изменить"
+
+#: ksgrd/SensorManager.cpp:61
+msgid "Rate"
+msgstr "Соотношение"
+
+#: ksgrd/SensorManager.cpp:63
+msgid "CPU Load"
+msgstr "Боркардани CPU"
+
+#: ksgrd/SensorManager.cpp:64
+msgid "Idling"
+msgstr "Бездействие"
+
+#: ksgrd/SensorManager.cpp:65
+msgid "Nice Load"
+msgstr "Баркардани Nice"
+
+#: ksgrd/SensorManager.cpp:66
+msgid "User Load"
+msgstr "Боркардани Истифодакунанда"
+
+#: ksgrd/SensorManager.cpp:67
+msgctxt "@item sensor description"
+msgid "System Load"
+msgstr "Система"
+
+#: ksgrd/SensorManager.cpp:68
+msgid "Waiting"
+msgstr "Ожидание"
+
+#: ksgrd/SensorManager.cpp:69
+#, fuzzy
+#| msgid "Interrupts"
+msgid "Interrupt Load"
+msgstr "Қатъ кардан"
+
+#: ksgrd/SensorManager.cpp:70
+msgid "Total Load"
+msgstr "Общая загрузка"
+
+#: ksgrd/SensorManager.cpp:71
+msgid "Memory"
+msgstr "Хотир"
+
+#: ksgrd/SensorManager.cpp:72
+msgid "Physical Memory"
+msgstr "Хотири Ҷисмонӣ"
+
+#: ksgrd/SensorManager.cpp:73
+msgid "Swap Memory"
+msgstr "Хотири Swap"
+
+#: ksgrd/SensorManager.cpp:74
+msgid "Cached Memory"
+msgstr "Ҳофизаи Ниҳонӣ"
+
+#: ksgrd/SensorManager.cpp:75
+msgid "Buffered Memory"
+msgstr "Ҳофизаи Миёнгир"
+
+#: ksgrd/SensorManager.cpp:76
+msgid "Used Memory"
+msgstr "Хотири истифодашуда"
+
+#: ksgrd/SensorManager.cpp:77
+msgid "Application Memory"
+msgstr "Хотири Барномаҳо"
+
+#: ksgrd/SensorManager.cpp:78
+msgid "Free Memory"
+msgstr "Хотири Озод"
+
+#: ksgrd/SensorManager.cpp:79
+msgid "Active Memory"
+msgstr "Активная память"
+
+#: ksgrd/SensorManager.cpp:80
+msgid "Inactive Memory"
+msgstr "Неактивная память"
+
+#: ksgrd/SensorManager.cpp:81
+msgid "Wired Memory"
+msgstr "Хотири истифодашуда"
+
+#: ksgrd/SensorManager.cpp:82
+msgid "Exec Pages"
+msgstr "Исполняемые страницы"
+
+#: ksgrd/SensorManager.cpp:83
+msgid "File Pages"
+msgstr "Саҳифаҳои файл"
+
+#: ksgrd/SensorManager.cpp:86
+#, fuzzy
+#| msgid "Processors"
+msgid "Processes"
+msgstr "Процессоры"
+
+#: ksgrd/SensorManager.cpp:87 ksgrd/SensorManager.cpp:227
+msgid "Process Controller"
+msgstr "Идоракунандаи Ҷараён"
+
+#: ksgrd/SensorManager.cpp:88
+#, fuzzy
+#| msgid "System Processes"
+msgid "Last Process ID"
+msgstr "Корҳои Система"
+
+#: ksgrd/SensorManager.cpp:89
+#, fuzzy
+#| msgid "Process Count"
+msgid "Process Spawn Count"
+msgstr "Шумораи Ҷараён"
+
+#: ksgrd/SensorManager.cpp:90
+msgid "Process Count"
+msgstr "Шумораи Ҷараён"
+
+#: ksgrd/SensorManager.cpp:91
+#, fuzzy
+#| msgid "Process Count"
+msgid "Idle Processes Count"
+msgstr "Шумораи Ҷараён"
+
+#: ksgrd/SensorManager.cpp:92
+#, fuzzy
+msgid "Running Processes Count"
+msgstr "Шумораи Ҷараён"
+
+#: ksgrd/SensorManager.cpp:93
+#, fuzzy
+msgid "Sleeping Processes Count"
+msgstr "Шумораи Ҷараён"
+
+#: ksgrd/SensorManager.cpp:94
+#, fuzzy
+msgid "Stopped Processes Count"
+msgstr "Шумораи Ҷараён"
+
+#: ksgrd/SensorManager.cpp:95
+#, fuzzy
+msgid "Zombie Processes Count"
+msgstr "Шумораи Ҷараён"
+
+#: ksgrd/SensorManager.cpp:96
+#, fuzzy
+msgid "Waiting Processes Count"
+msgstr "Шумораи Ҷараён"
+
+#: ksgrd/SensorManager.cpp:97
+#, fuzzy
+msgid "Locked Processes Count"
+msgstr "Шумораи Ҷараён"
+
+#: ksgrd/SensorManager.cpp:99
+msgid "Disk Throughput"
+msgstr "Иқтидори Диск"
+
+#: ksgrd/SensorManager.cpp:100
+msgctxt "CPU Load"
+msgid "Load"
+msgstr "Боркардан"
+
+#: ksgrd/SensorManager.cpp:101
+msgid "Total Accesses"
+msgstr "Ҷамъи Дастёбӣ"
+
+#: ksgrd/SensorManager.cpp:102
+msgid "Read Accesses"
+msgstr "Дастёбиҳои Хониш"
+
+#: ksgrd/SensorManager.cpp:103
+msgid "Write Accesses"
+msgstr "Дастёбиҳои Навиштан"
+
+#: ksgrd/SensorManager.cpp:104
+msgid "Read Data"
+msgstr "Санаи Хониш"
+
+#: ksgrd/SensorManager.cpp:105
+msgid "Written Data"
+msgstr "Записано"
+
+#: ksgrd/SensorManager.cpp:106
+msgid "Milliseconds spent reading"
+msgstr "Время чтения (мс)"
+
+#: ksgrd/SensorManager.cpp:107
+msgid "Milliseconds spent writing"
+msgstr "Время записи (мс)"
+
+#: ksgrd/SensorManager.cpp:108
+msgid "I/Os currently in progress"
+msgstr "Состояние ввода-вывода"
+
+#: ksgrd/SensorManager.cpp:109
+msgid "Pages In"
+msgstr "Боркунии Саҳифа"
+
+#: ksgrd/SensorManager.cpp:110
+msgid "Pages Out"
+msgstr "Бадар овардани Саҳифа"
+
+#: ksgrd/SensorManager.cpp:111
+msgid "Context Switches"
+msgstr "Гузаришҳои Матн"
+
+#: ksgrd/SensorManager.cpp:112
+msgid "Traps"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:113
+#, fuzzy
+#| msgid "System Load"
+msgid "System Calls"
+msgstr "Боркардани Система"
+
+#: ksgrd/SensorManager.cpp:114
+msgid "Network"
+msgstr "Шабақаи Интернет"
+
+#: ksgrd/SensorManager.cpp:115
+msgid "Interfaces"
+msgstr "Интерфейс"
+
+#: ksgrd/SensorManager.cpp:116
+msgid "Receiver"
+msgstr "Қабулгар"
+
+#: ksgrd/SensorManager.cpp:117
+msgid "Transmitter"
+msgstr "Додаҳои Ирсолшуда"
+
+#: ksgrd/SensorManager.cpp:119
+msgid "Data Rate"
+msgstr "Скорость попаданий"
+
+#: ksgrd/SensorManager.cpp:120
+msgid "Compressed Packets Rate"
+msgstr "Рейтинг материала"
+
+#: ksgrd/SensorManager.cpp:121
+msgid "Dropped Packets Rate"
+msgstr "Рейтинг материала"
+
+#: ksgrd/SensorManager.cpp:122
+msgid "Error Rate"
+msgstr "Скорость попаданий"
+
+#: ksgrd/SensorManager.cpp:123
+msgid "FIFO Overruns Rate"
+msgstr "Рейтинг материала"
+
+#: ksgrd/SensorManager.cpp:124
+msgid "Frame Error Rate"
+msgstr "Рейтинг материала"
+
+#: ksgrd/SensorManager.cpp:125
+msgid "Multicast Packet Rate"
+msgstr "Рейтинг материала"
+
+#: ksgrd/SensorManager.cpp:126
+msgid "Packet Rate"
+msgstr "Скорость попаданий"
+
+#: ksgrd/SensorManager.cpp:127
+msgctxt "@item sensor description ('carrier' is a type of network signal)"
+msgid "Carrier Loss Rate"
+msgstr "Рейтинг материала"
+
+#: ksgrd/SensorManager.cpp:128 ksgrd/SensorManager.cpp:139
+msgid "Collisions"
+msgstr "Бархӯрдҳо"
+
+#: ksgrd/SensorManager.cpp:130
+msgid "Data"
+msgstr "Таърих"
+
+#: ksgrd/SensorManager.cpp:131
+msgid "Compressed Packets"
+msgstr "Бастаи Барномаҳои Фишурдашуда"
+
+#: ksgrd/SensorManager.cpp:132
+msgid "Dropped Packets"
+msgstr "Бастаи Барномаҳои Партофташуда"
+
+#: ksgrd/SensorManager.cpp:133
+msgid "Errors"
+msgstr "Хатоҳо"
+
+#: ksgrd/SensorManager.cpp:134
+msgid "FIFO Overruns"
+msgstr "FIFO Аз ҳад гузашта"
+
+#: ksgrd/SensorManager.cpp:135
+msgid "Frame Errors"
+msgstr "Хатогиҳои Кадр"
+
+#: ksgrd/SensorManager.cpp:136
+msgid "Multicast Packets"
+msgstr "Сжатые пакеты"
+
+#: ksgrd/SensorManager.cpp:137
+msgid "Packets"
+msgstr "Қуттиҳо"
+
+#: ksgrd/SensorManager.cpp:138
+msgctxt "@item sensor description ('carrier' is a type of network signal)"
+msgid "Carrier Losses"
+msgstr "Баранда"
+
+#: ksgrd/SensorManager.cpp:141
+msgid "Sockets"
+msgstr "Сокетҳо"
+
+#: ksgrd/SensorManager.cpp:142
+msgid "Total Number"
+msgstr "Миқдори умумӣ"
+
+#: ksgrd/SensorManager.cpp:143 ksgrd/SensorManager.cpp:228
+msgid "Table"
+msgstr "Ҷадвал"
+
+#: ksgrd/SensorManager.cpp:144
+msgid "Advanced Power Management"
+msgstr "Идоракунии Беҳбудшудаи Иқтидор"
+
+#: ksgrd/SensorManager.cpp:145
+msgid "ACPI"
+msgstr "ACPI"
+
+#: ksgrd/SensorManager.cpp:146
+msgid "Thermal Zone"
+msgstr "Нагрев"
+
+#: ksgrd/SensorManager.cpp:147
+msgid "Temperature"
+msgstr "Температура"
+
+#: ksgrd/SensorManager.cpp:148
+#, fuzzy
+#| msgid "Temperature"
+msgid "Average CPU Temperature"
+msgstr "Температура"
+
+#: ksgrd/SensorManager.cpp:149
+msgid "Fan"
+msgstr "Вентилятор"
+
+#: ksgrd/SensorManager.cpp:150
+msgid "State"
+msgstr "Состояние"
+
+#: ksgrd/SensorManager.cpp:151
+msgid "Battery"
+msgstr "Батарея"
+
+#: ksgrd/SensorManager.cpp:152
+#, fuzzy
+#| msgid "Battery Charge"
+msgid "Battery Capacity"
+msgstr "Заряди Батарея"
+
+#: ksgrd/SensorManager.cpp:153
+msgid "Battery Charge"
+msgstr "Заряди Батарея"
+
+#: ksgrd/SensorManager.cpp:154
+msgid "Battery Usage"
+msgstr "Использование батареи"
+
+#: ksgrd/SensorManager.cpp:155
+#, fuzzy
+#| msgid "Battery Usage"
+msgid "Battery Voltage"
+msgstr "Использование батареи"
+
+#: ksgrd/SensorManager.cpp:156
+#, fuzzy
+#| msgid "Battery Charge"
+msgid "Battery Discharge Rate"
+msgstr "Заряди Батарея"
+
+#: ksgrd/SensorManager.cpp:157
+msgid "Remaining Time"
+msgstr "Вақти Боқимонда"
+
+#: ksgrd/SensorManager.cpp:158
+msgid "Interrupts"
+msgstr "Қатъ кардан"
+
+#: ksgrd/SensorManager.cpp:159
+msgid "Load Average (1 min)"
+msgstr "Боркунии Миёна (1 дақиқа)"
+
+#: ksgrd/SensorManager.cpp:160
+msgid "Load Average (5 min)"
+msgstr "Боркунии Миёна (5 дақиқа)"
+
+#: ksgrd/SensorManager.cpp:161
+msgid "Load Average (15 min)"
+msgstr "Боркунии Миёна (15 дақиқа)"
+
+#: ksgrd/SensorManager.cpp:162
+msgid "Clock Frequency"
+msgstr "Зуддии Соат"
+
+#: ksgrd/SensorManager.cpp:163
+#, fuzzy
+#| msgid "Clock Frequency"
+msgid "Average Clock Frequency"
+msgstr "Зуддии Соат"
+
+#: ksgrd/SensorManager.cpp:164
+msgid "Hardware Sensors"
+msgstr "Сенсорҳои Сохтмони Саҳт"
+
+#: ksgrd/SensorManager.cpp:165
+msgid "Partition Usage"
+msgstr "Истифодаи Қисматҳо"
+
+#: ksgrd/SensorManager.cpp:166
+msgid "Used Space"
+msgstr "Фазои Ишғолшуда"
+
+#: ksgrd/SensorManager.cpp:167
+msgid "Free Space"
+msgstr "Фосилаи Озод"
+
+#: ksgrd/SensorManager.cpp:168
+msgid "Fill Level"
+msgstr "Фазои Озод"
+
+#: ksgrd/SensorManager.cpp:169
+#, fuzzy
+#| msgid "User Load"
+msgid "Used Inodes"
+msgstr "Боркардани Истифодакунанда"
+
+#: ksgrd/SensorManager.cpp:170
+msgid "Free Inodes"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:171
+msgid "Inode Level"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:172
+msgid "System"
+msgstr "Система"
+
+#: ksgrd/SensorManager.cpp:173
+msgid "Uptime"
+msgstr "Время работы"
+
+#: ksgrd/SensorManager.cpp:174
+msgid "Linux Soft Raid (md)"
+msgstr "Linux Soft Raid (md)"
+
+#: ksgrd/SensorManager.cpp:175
+msgid "Processors"
+msgstr "Процессоры"
+
+#: ksgrd/SensorManager.cpp:176
+msgid "Cores"
+msgstr "Ядра"
+
+#: ksgrd/SensorManager.cpp:177
+msgid "Number of Blocks"
+msgstr "Блоки активности"
+
+#: ksgrd/SensorManager.cpp:178
+msgid "Total Number of Devices"
+msgstr "Настроить устройства ввода"
+
+#: ksgrd/SensorManager.cpp:179
+msgid "Failed Devices"
+msgstr "Устройства ввода"
+
+#: ksgrd/SensorManager.cpp:180
+msgid "Spare Devices"
+msgstr "Устройства ввода"
+
+#: ksgrd/SensorManager.cpp:181
+msgid "Number of Raid Devices"
+msgstr "Настроить устройства ввода"
+
+#: ksgrd/SensorManager.cpp:182
+msgid "Working Devices"
+msgstr "Устройства ввода"
+
+#: ksgrd/SensorManager.cpp:183
+msgid "Active Devices"
+msgstr "Устройства ввода"
+
+#: ksgrd/SensorManager.cpp:184
+msgid "Number of Devices"
+msgstr "Устройства ввода"
+
+#: ksgrd/SensorManager.cpp:185
+msgid "Resyncing Percent"
+msgstr "Процент _чёрного:"
+
+#: ksgrd/SensorManager.cpp:186
+msgid "Disk Information"
+msgstr "Информация о сборке:"
+
+#: ksgrd/SensorManager.cpp:189
+#, kde-format
+msgid "CPU %1"
+msgstr "CPU %1"
+
+#: ksgrd/SensorManager.cpp:190
+#, kde-format
+msgid "Disk %1"
+msgstr "Диски %1"
+
+#: ksgrd/SensorManager.cpp:194
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Battery %1"
+msgstr "Батарея"
+
+#: ksgrd/SensorManager.cpp:195
+#, kde-format
+msgid "Fan %1"
+msgstr "Вентилятор %1"
+
+#: ksgrd/SensorManager.cpp:196
+#, kde-format
+msgid "Temperature %1"
+msgstr "Температура %1"
+
+#: ksgrd/SensorManager.cpp:199
+msgid "Total"
+msgstr "Ҳамагӣ"
+
+#: ksgrd/SensorManager.cpp:200
+#, fuzzy
+#| msgid "Interrupts"
+msgid "Software Interrupts"
+msgstr "Қатъ кардан"
+
+#: ksgrd/SensorManager.cpp:201
+#, fuzzy
+#| msgid "Interrupts"
+msgid "Hardware Interrupts"
+msgstr "Қатъ кардан"
+
+#: ksgrd/SensorManager.cpp:206 ksgrd/SensorManager.cpp:208
+#, kde-format
+msgid "Int %1"
+msgstr "Int %1"
+
+#: ksgrd/SensorManager.cpp:213
+msgctxt "the unit 1 per second"
+msgid "1/s"
+msgstr "1/с"
+
+#: ksgrd/SensorManager.cpp:214
+msgid "kBytes"
+msgstr "Байтҳо"
+
+#: ksgrd/SensorManager.cpp:215
+msgctxt "the unit minutes"
+msgid "min"
+msgstr "дақиқаҳо"
+
+#: ksgrd/SensorManager.cpp:216
+msgctxt "the frequency unit"
+msgid "MHz"
+msgstr "MHz"
+
+#: ksgrd/SensorManager.cpp:217
+msgctxt "a percentage"
+msgid "%"
+msgstr "%"
+
+#: ksgrd/SensorManager.cpp:218
+msgctxt "the unit milliamperes"
+msgid "mA"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:219
+msgctxt "the unit milliampere hours"
+msgid "mAh"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:220
+msgctxt "the unit milliwatts"
+msgid "mW"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:221
+msgctxt "the unit milliwatt hours"
+msgid "mWh"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:222
+msgctxt "the unit millivolts"
+msgid "mV"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:225
+msgid "Integer Value"
+msgstr "Бузургии Бутун"
+
+#: ksgrd/SensorManager.cpp:226
+msgid "Floating Point Value"
+msgstr "Бузургии бо Нуқтаи Шиновар"
+
+#: ksgrd/SensorShellAgent.cpp:126
+#, kde-format
+msgid "Could not run daemon program '%1'."
+msgstr "Невозможно запустить программу «%1»."
+
+#: ksgrd/SensorShellAgent.cpp:133
+#, kde-format
+msgid "The daemon program '%1' failed."
+msgstr "Ошибка запуска программы «%1»."
+
+#: ksgrd/SensorSocketAgent.cpp:103
+#, kde-format
+msgid "Connection to %1 refused"
+msgstr "Пайвастшавӣ бо %1 рад шудааст!"
+
+#: ksgrd/SensorSocketAgent.cpp:107
+#, kde-format
+msgid "Host %1 not found"
+msgstr "Узели %1 ёфт нашуд"
+
+#: ksgrd/SensorSocketAgent.cpp:111
+#, kde-format
+msgid ""
+"An error occurred with the network (e.g. the network cable was accidentally "
+"unplugged) for host %1."
+msgstr ""
+"Произошла ошибка сети (например, сетевой кабель был случайно отключен) узла %"
+"1"
+
+#: ksgrd/SensorSocketAgent.cpp:115
+#, kde-format
+msgid "Error for host %1: %2"
+msgstr "Ошибка узла %1: %2"
+
+#: HostConnector.cpp:44
 msgid "Connect Host"
 msgstr "Ба Узел Алоқа кунед"
 
-#: HostConnector.cc:55
+#: HostConnector.cpp:55
 msgid "Host:"
 msgstr "Узел:"
 
-#: HostConnector.cc:65
+#: HostConnector.cpp:65
 msgid "Enter the name of the host you want to connect to."
 msgstr "Номи соҳиберо, ки бо он пайваст шудан мехоҳед, ворид намоед."
 
-#: HostConnector.cc:71
+#: HostConnector.cpp:71
 msgid "Connection Type"
 msgstr "Намуди Алоқа"
 
-#: HostConnector.cc:77
+#: HostConnector.cpp:77
 msgid "ssh"
 msgstr "ssh"
 
-#: HostConnector.cc:80
+#: HostConnector.cpp:80
 msgid "Select this to use the secure shell to login to the remote host."
 msgstr ""
 "Инро барои истифодаи ҷилди ҳифзшаванда барои ворид ба соҳиби дурдаст, "
 "интихоб кунед."
 
-#: HostConnector.cc:83
+#: HostConnector.cpp:83
 msgid "rsh"
 msgstr "rsh"
 
-#: HostConnector.cc:84
+#: HostConnector.cpp:84
 msgid "Select this to use the remote shell to login to the remote host."
 msgstr ""
 "Инро барои истифодаи ҷилди дурдаст барои ворид ба соҳиби дурдаст, интихоб "
 "кунед."
 
-#: HostConnector.cc:87
+#: HostConnector.cpp:87
 msgid "Daemon"
 msgstr "Демон"
 
-#: HostConnector.cc:88
+#: HostConnector.cpp:88
 msgid ""
 "Select this if you want to connect to a ksysguard daemon that is running on "
 "the machine you want to connect to, and is listening for client requests."
@@ -70,11 +1310,11 @@ msgstr ""
 "Ин пунктро интихоб намоед, агар шумо эҳтиёҷи пайвастшавӣ ба мошинае, ки дар "
 "он талаботҳои мизоҷони азозили ksysguard қабул мешаванд, дошта бошед."
 
-#: HostConnector.cc:91
+#: HostConnector.cpp:91
 msgid "Custom command"
 msgstr "Фармони оддӣ"
 
-#: HostConnector.cc:92
+#: HostConnector.cpp:92
 msgid ""
 "Select this to use the command you entered below to start ksysguardd on the "
 "remote host."
@@ -82,11 +1322,11 @@ msgstr ""
 "Ин пунктро барои истифодаи фармоне, ки дар поён ворид намудед баҳри оғози "
 "ksysguardd дар соҳиби дурдаст, интихоб кунед."
 
-#: HostConnector.cc:95
+#: HostConnector.cpp:95
 msgid "Port:"
 msgstr "Порт:"
 
-#: HostConnector.cc:102
+#: HostConnector.cpp:102
 msgid ""
 "Enter the port number on which the ksysguard daemon is listening for "
 "connections."
@@ -94,34 +1334,34 @@ msgstr ""
 "Рақами даргоҳро, ки дар он азазили ksysguard  пайвастшавиро қабул мекунад, "
 "ворид намоед."
 
-#: HostConnector.cc:105
+#: HostConnector.cpp:105
 msgid "e.g.  3112"
 msgstr "мисол.  3112"
 
-#: HostConnector.cc:108
+#: HostConnector.cpp:108
 msgid "Command:"
 msgstr "Фармон:"
 
-#: HostConnector.cc:117
+#: HostConnector.cpp:117
 msgid "Enter the command that runs ksysguardd on the host you want to monitor."
 msgstr ""
 "Фармонеро ворид кунед, ки ksysguardd дар соҳиби дидабоншаванда коргузорӣ "
 "мекунад."
 
-#: HostConnector.cc:121
+#: HostConnector.cpp:121
 msgid "e.g. ssh -l root remote.host.org ksysguardd"
 msgstr "мисол. ssh -l root remote.host.org ksysguardd"
 
-#: SensorBrowser.cc:117
+#: SensorBrowser.cpp:117
 msgid "Sensor Browser"
 msgstr "Кушодани Сенсор"
 
-#: SensorBrowser.cc:473
+#: SensorBrowser.cpp:474
 #, fuzzy
 msgid "Drag sensors to empty cells of a worksheet "
 msgstr "Санҷандаҳоро ба ҷои холии Варақаи корӣ кашола кунед"
 
-#: SensorBrowser.cc:474
+#: SensorBrowser.cpp:475
 #, fuzzy
 #| msgid ""
 #| "The sensor browser lists the connected hosts and the sensors that they "
@@ -143,557 +1383,40 @@ msgstr ""
 "метавонад. Барои илова кардани бисёртар санҷандаҳо, фақат баъзе санҷандаҳоро "
 "кашола карда оред."
 
-#: SensorDisplayLib/DancingBars.cc:96 SensorDisplayLib/FancyPlotter.cc:283
-msgid "OK"
-msgstr "Шуд"
-
-#: SensorDisplayLib/DancingBars.cc:96 SensorDisplayLib/FancyPlotter.cc:283
-#: SensorDisplayLib/FancyPlotter.cc:519 SensorDisplayLib/FancyPlotter.cc:597
-msgid "Error"
-msgstr "Хато"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:43
-msgid "Edit BarGraph Preferences"
-msgstr "Бартариҳои Таҳрири Панели Нақша"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:52
-msgid "Range"
-msgstr "Қатор"
-
-#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
-#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
-#: SensorDisplayLib/DancingBarsSettings.cc:57 WorkSheetSettings.cc:50 rc.cpp:5
-#: rc.cpp:116
-msgid "Title"
-msgstr "Сарлавҳа"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:35
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, m_title)
-#: SensorDisplayLib/DancingBarsSettings.cc:62
-#: SensorDisplayLib/FancyPlotterSettings.cc:73 rc.cpp:47
-msgid "Enter the title of the display here."
-msgstr "Сарлавҳаи Намоиш дар ин ҷо гузоред"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:67
-msgid "Display Range"
-msgstr "Намоиши Қатор"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:72
-#: SensorDisplayLib/FancyPlotterSettings.cc:101
-msgid "Minimum value:"
-msgstr "Аҳамияти минимум:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:80
-msgid ""
-"Enter the minimum value for the display here. If both values are 0, "
-"automatic range detection is enabled."
-msgstr ""
-"Введите минимальное значение. Если оба значения равны 0, диапазон будет "
-"определён автоматически."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:84
-#: SensorDisplayLib/FancyPlotterSettings.cc:112
-msgid "Maximum value:"
-msgstr "Аҳамияти максимум:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:92
-msgid ""
-"Enter the maximum value for the display here. If both values are 0, "
-"automatic range detection is enabled."
-msgstr ""
-"Введите максимальное значение. Если оба значения равны 0, диапазон будет "
-"определён автоматически."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:102
-msgid "Alarms"
-msgstr "Ҳарос"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:59
-#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
-#: SensorDisplayLib/DancingBarsSettings.cc:107 rc.cpp:92
-msgid "Alarm for Minimum Value"
-msgstr "Ҳарос барои аҳамияти минимум"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:112
-#: SensorDisplayLib/DancingBarsSettings.cc:135
-msgid "Enable alarm"
-msgstr "Ҳаросро фаъол созед"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:56
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:71
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
-#: SensorDisplayLib/DancingBarsSettings.cc:113 rc.cpp:56 rc.cpp:98
-msgid "Enable the minimum value alarm."
-msgstr "Ҳароси аҳамияти минимум фаъол созед."
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:97
-#. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
-#: SensorDisplayLib/DancingBarsSettings.cc:116 rc.cpp:101
-msgid "Lower limit:"
-msgstr "Ҳудуди поёнӣ:"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:123
-#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1_2)
-#: SensorDisplayLib/DancingBarsSettings.cc:130 rc.cpp:104
-msgid "Alarm for Maximum Value"
-msgstr "Ҳарос барои аҳамияти максимум"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:115
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:135
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
-#: SensorDisplayLib/DancingBarsSettings.cc:136 rc.cpp:65 rc.cpp:110
-msgid "Enable the maximum value alarm."
-msgstr "Ҳароси аҳамияти максимум фаъол созед."
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:161
-#. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
-#: SensorDisplayLib/DancingBarsSettings.cc:139 rc.cpp:113
-msgid "Upper limit:"
-msgstr "Ҳудуди болоӣ:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:156
-msgctxt "@title:tab Appearance of the bar graph"
-msgid "Look"
-msgstr "Дидан"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:161
-msgid "Normal bar color:"
-msgstr "Ранги муқаррарии панел:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:168
-msgid "Out-of-range color:"
-msgstr "Ранги берун аз маҳдуда:"
-
-#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:77
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#. i18n: file: SensorDisplayLib/LogFileSettings.ui:74
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:228
-#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
-#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:64
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: SensorDisplayLib/DancingBarsSettings.cc:175 SensorDisplayLib/LogFile.cc:100
-#: rc.cpp:17 rc.cpp:29 rc.cpp:80 rc.cpp:125
-msgid "Background color:"
-msgstr "Ранги Замина:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:182
-#: SensorDisplayLib/FancyPlotterSettings.cc:183
-msgid "Font size:"
-msgstr "Андозаи ҳарф:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:186
-msgid ""
-"This determines the size of the font used to print a label underneath the "
-"bars. Bars are automatically suppressed if text becomes too large, so it is "
-"advisable to use a small font size here."
-msgstr ""
-"Дар ин ҷо шумо метавонед андозаи ҳуруфҳоро ба танзид дароред, кадоме, ки "
-"барои чопи нишонаҳои зери сутунҳо истифода мешавад. Агар андозаи матн хеле "
-"калон бошад, сутунҳо ба таври худкор фишурда мешаванд, бинобар ин маслиҳат "
-"медиҳем, ки дар ин ҷо ҳуруфҳои андозааш хурдтарро истифода баред."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:194
-#: SensorDisplayLib/FancyPlotterSettings.cc:198
-msgid "Sensors"
-msgstr "Сенсор"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:207
-msgid "Edit..."
-msgstr "Муҳаррир..."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:208
-msgid "Push this button to configure the label."
-msgstr "Ин кнопкаро пахш кунед барои танзими тамға"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:211
-#: SensorDisplayLib/FancyPlotterSettings.cc:231
-msgid "Delete"
-msgstr "Нест кардан"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:212
-#: SensorDisplayLib/FancyPlotterSettings.cc:232
-msgid "Push this button to delete the sensor."
-msgstr "Ин кнопкаро пахш кунед барои нест кардани сенсор."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:366
-msgid "Label of Bar Graph"
-msgstr "Нишонаи Пенели Нақша"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:367
-msgid "Enter new label:"
-msgstr "Тамғаи нав гузоред:"
-
-#: SensorDisplayLib/DummyDisplay.cc:30 SensorDisplayLib/DummyDisplay.cc:38
-msgid "Drop Sensor Here"
-msgstr "Ба ин ҷо Ҷойгир кардани Санҷанда"
-
-#: SensorDisplayLib/DummyDisplay.cc:32
-msgid ""
-"This is an empty space in a worksheet. Drag a sensor from the Sensor Browser "
-"and drop it here. A sensor display will appear that allows you to monitor "
-"the values of the sensor over time."
-msgstr ""
-"Ин фазои холӣ дар варақаи корӣ аст. Санҷандаро аз Барраси Санҷанда кошола "
-"карда онро дар фазои холӣ ҷойгир кунед. Намоиши санҷандаи пайдошуда ба шумо "
-"имконияти дидабонии қиммати санҷандаро дар вақташ медиҳад."
-
-#: SensorDisplayLib/ListViewSettings.cc:30
-msgid "List View Settings"
-msgstr "Гузоришҳои Рӯйхати Назар"
-
-#: SensorDisplayLib/LogFile.cc:92
-msgid "File logging settings"
-msgstr "Настройка файла журнала"
-
-#. i18n: file: SensorDisplayLib/LogFileSettings.ui:61
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: SensorDisplayLib/LogFile.cc:98 rc.cpp:26
-msgid "Foreground color:"
-msgstr "Ранги Пешзамина:"
-
-#: SensorDisplayLib/MultiMeterSettings.cc:31
-msgctxt ""
-"Multimeter is a sensor display that mimics 'digital multimeter' aparatus"
-msgid "Multimeter Settings"
-msgstr "Гузоришҳои Мултиметр"
-
-#: SensorDisplayLib/SensorDisplay.cc:118 SensorDisplayLib/SensorLogger.cc:598
-msgid "&Properties"
-msgstr "&Хусусиятҳо"
-
-#: SensorDisplayLib/SensorDisplay.cc:123 SensorDisplayLib/SensorLogger.cc:603
-msgid "&Remove Display"
-msgstr "&Нобуд Кардани Намоиш"
-
-#: SensorDisplayLib/SensorDisplay.cc:193
-#, kde-format
-msgid ""
-"<qt><p>This is a sensor display. To customize a sensor display click the "
-"right mouse button here and select the <i>Properties</i> entry from the "
-"popup menu. Select <i>Remove</i> to delete the display from the worksheet.</"
-"p>%1</qt>"
-msgstr ""
-"<qt><p>Это график сенсоров. Чтобы настроить график, щёлкните здесь  правой "
-"кнопкой мыши и выберите <i>Свойства</i> в выпадающем меню. Выберите "
-"<i>Удалить</i>, чтобы удалить график с панели.</p>%1</qt>"
-
-#: SensorDisplayLib/SensorLogger.cc:138
-msgid "Logging"
-msgstr "Номнавис"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:31
-#. i18n: ectx: property (title), widget (QGroupBox, timerFrame)
-#: SensorDisplayLib/SensorLogger.cc:141 rc.cpp:86
-msgid "Timer Interval"
-msgstr "Фосилаи Вақтсанҷ"
-
-#: SensorDisplayLib/SensorLogger.cc:144
-msgid "Sensor Name"
-msgstr "Номи Сенсор"
-
-#: SensorDisplayLib/SensorLogger.cc:147
-msgid "Host Name"
-msgstr "Номи Узел"
-
-#: SensorDisplayLib/SensorLogger.cc:150
-msgid "Log File"
-msgstr "Файли Вуруд"
-
-#: SensorDisplayLib/SensorLogger.cc:431 SensorDisplayLib/SensorLoggerDlg.cc:32
-msgid "Sensor Logger"
-msgstr "Номнависи Санҷанда"
-
-#: SensorDisplayLib/SensorLogger.cc:608
-msgid "&Remove Sensor"
-msgstr "&Нобуд Кардани Сенсор"
-
-#: SensorDisplayLib/SensorLogger.cc:613
-msgid "&Edit Sensor..."
-msgstr "&Муҳаррири Сенсор..."
-
-#: SensorDisplayLib/SensorLogger.cc:621
-msgid "St&op Logging"
-msgstr "&Боздоштани Номнависӣ"
-
-#: SensorDisplayLib/SensorLogger.cc:624
-msgid "S&tart Logging"
-msgstr "&Боздоштани Номнависӣ"
-
-#: SensorDisplayLib/SensorLoggerSettings.cc:30
-msgid "Sensor Logger Settings"
-msgstr "Гузоришҳои Номнависи Санҷанда"
-
-#: SensorDisplayLib/SensorModel.cc:166
-msgid "Host"
-msgstr "Узел"
-
-#: SensorDisplayLib/SensorModel.cc:169
-msgid "Sensor"
-msgstr "Сенсор"
-
-#: SensorDisplayLib/SensorModel.cc:172
-msgid "Unit"
-msgstr "Воҳид"
-
-#: SensorDisplayLib/SensorModel.cc:175
-msgid "Status"
-msgstr "Вазъият"
-
-#: SensorDisplayLib/SensorModel.cc:178
-msgid "Label"
-msgstr "Тамға"
-
-#: SensorDisplayLib/FancyPlotter.cc:178
-msgctxt "Largest axis title"
-msgid "99999 XXXX"
-msgstr "99999 XXXX"
-
-#: SensorDisplayLib/FancyPlotter.cc:515 SensorDisplayLib/FancyPlotter.cc:586
-#: SensorDisplayLib/FancyPlotter.cc:649
-#, kde-format
-msgctxt "units"
-msgid "%1%"
-msgstr "%1%"
-
-#: SensorDisplayLib/FancyPlotter.cc:523
-#, kde-format
-msgctxt "%1 is what is being shown statistics for, like 'Memory', 'Swap', etc."
-msgid "<p><b>%1:</b><br>"
-msgstr "<p><b>%1:</b><br>"
-
-#: SensorDisplayLib/FancyPlotter.cc:594
-#, kde-format
-msgid "%1 of %2%1"
-msgstr "%1 аз %2"
-
-#: SensorDisplayLib/FancyPlotter.cc:622
-#, kde-format
-msgctxt "units"
-msgid "%1 TiB"
-msgstr "%1 ТиБ"
-
-#: SensorDisplayLib/FancyPlotter.cc:625
-#, kde-format
-msgctxt "units"
-msgid "%1 GiB"
-msgstr "%1 ГиБ"
-
-#: SensorDisplayLib/FancyPlotter.cc:628
-#, kde-format
-msgctxt "units"
-msgid "%1 MiB"
-msgstr "%1 МиБ"
-
-#: SensorDisplayLib/FancyPlotter.cc:631
-#, kde-format
-msgctxt "units"
-msgid "%1 KiB"
-msgstr "%1 КиБ"
-
-#: SensorDisplayLib/FancyPlotter.cc:636
-#, kde-format
-msgctxt "units"
-msgid "%1 TiB/s"
-msgstr "%1 ТиБ"
-
-#: SensorDisplayLib/FancyPlotter.cc:639
-#, kde-format
-msgctxt "units"
-msgid "%1 GiB/s"
-msgstr "%1 ГиБ"
-
-#: SensorDisplayLib/FancyPlotter.cc:642
-#, kde-format
-msgctxt "units"
-msgid "%1 MiB/s"
-msgstr "%1 Миб/с"
-
-#: SensorDisplayLib/FancyPlotter.cc:645
-#, kde-format
-msgctxt "units"
-msgid "%1 KiB/s"
-msgstr "%1 КиБ"
-
-#: SensorDisplayLib/FancyPlotter.cc:651
-#, fuzzy, kde-format
-#| msgctxt "a percentage"
-#| msgid "%"
-msgctxt "unitless - just a number"
-msgid "%1"
-msgstr "%1"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:51
-msgid "Plotter Settings"
-msgstr "Настройки отладки"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:64
-msgid "General"
-msgstr "Умумӣ"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:69
-msgid "Title:"
-msgstr "Сарлавҳа:"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:77
-msgid "Stack the beams on top of each other"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:78
-msgid ""
-"The beams are stacked on top of each other, and the area is drawn filled in. "
-"So if one beam has a value of 2 and another beam has a value of 3, the first "
-"beam will be drawn at value 2 and the other beam drawn at 2+3=5."
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:85
-msgid "Scales"
-msgstr "Миқёс"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:90
-msgid "Vertical scale"
-msgstr "Вертикальное масштабирование"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:96
-msgid "Specify graph range:"
-msgstr "Настройка диапазона портов"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:97
-msgid ""
-"Check this box if you want the display range to adapt dynamically to the "
-"currently displayed values; if you do not check this, you have to specify "
-"the range you want in the fields below."
-msgstr ""
-"Включите флажок, если хотите, чтобы диапазон отображения изменялся "
-"динамически в соответствии со значениями параметра. Если флажок выключен, "
-"вам следует задать значения пределов вручную."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:107
-msgid "Enter the minimum value for the display here."
-msgstr "Сарлавҳаи Намоиш дар ин ҷо гузоред"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:118
-msgid ""
-"Enter the soft maximum value for the display here. The upper range will not "
-"be reduced below this value, but will still go above this number for values "
-"above this value."
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:125
-msgid "Horizontal scale"
-msgstr "Горизонтальное масштабирование"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:132
-msgid "Pixels per time period:"
-msgstr "точек в каждый период времени"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:139
-msgid "Grid"
-msgstr "Тӯр"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:144
-msgid "Lines"
-msgstr "Хатҳо"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:150
-msgid "Vertical lines"
-msgstr "Хатҳои амудӣ"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:151
-msgid "Check this to activate the vertical lines if display is large enough."
-msgstr ""
-"Агар намоиш калон бошад, инро барои фаъолсозии хатҳои амудӣ интихоб намоед."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:154
-msgid "Distance:"
-msgstr "Масофа:"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:160
-msgid "Enter the distance between two vertical lines here."
-msgstr "Фосилаи байни ду хатҳои амудиро ворид намоед."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:164
-msgid "Vertical lines scroll"
-msgstr "Чархиши хатҳои амудӣ"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:167
-msgid "Horizontal lines"
-msgstr "Хатҳои уфуқӣ"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:168
-msgid "Check this to enable horizontal lines if display is large enough."
-msgstr ""
-"Агар намоиш калон бошад, инро барои даргиронидани хатҳои уфуқӣ интихоб "
-"намоед."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:173
-msgid "Text"
-msgstr "Матн"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:179
-msgid "Show axis labels"
-msgstr "Показывать метки на осях"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:180
-msgid ""
-"Check this box if horizontal lines should be decorated with the values they "
-"mark."
-msgstr "Ин парчамро барои намоиши нишонаи қиммати хатҳои уфуқӣ интихоб намоед."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:223
-msgid "Set Color..."
-msgstr "Соз кардани рангҳо..."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:224
-msgid "Push this button to configure the color of the sensor in the diagram."
-msgstr "Ин кнопкаро пахш кунед барои танзими ранги сенсор дар диаграмма"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:236
-msgid "Move Up"
-msgstr "Ба боло ҳарақат кунед"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:241
-msgid "Move Down"
-msgstr "Ба поён ҳарақат кунед"
-
-#: TimerSettings.cc:38
+#: TimerSettings.cpp:38
 msgid "Timer Settings"
 msgstr "Танзими Вақт"
 
-#: TimerSettings.cc:48
+#: TimerSettings.cpp:48
 msgid "Use update interval of worksheet"
 msgstr "Фосилаи навсозии варақаи кориро истифода баред"
 
-#: TimerSettings.cc:51 WorkSheetSettings.cc:90
+#: TimerSettings.cpp:51 WorkSheetSettings.cpp:90
 msgid "Update interval:"
 msgstr "Фосилаи навсозӣ:"
 
 #. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:49
 #. i18n: ectx: property (suffix), widget (KIntNumInput, m_timerInterval)
-#: TimerSettings.cc:58 WorkSheetSettings.cc:94 rc.cpp:89
+#: TimerSettings.cpp:58 WorkSheetSettings.cpp:94 rc.cpp:89
 msgid " sec"
 msgstr " сон"
 
-#: TimerSettings.cc:61 WorkSheetSettings.cc:100
+#: TimerSettings.cpp:61 WorkSheetSettings.cpp:100
 msgid "All displays of the sheet are updated at the rate specified here."
 msgstr ""
 "Ҳамаи намоишҳои варақа бо суръати дар ин ҷо таъиншуда, нав карда мешаванд."
 
-#: WorkSheet.cc:88
+#: WorkSheet.cpp:88
 #, kde-format
 msgid "Cannot open the file %1."
 msgstr "Файли %1 кушода намешавад."
 
-#: WorkSheet.cc:96
+#: WorkSheet.cpp:96
 #, kde-format
 msgid "The file %1 does not contain valid XML."
 msgstr "Файли %1 XML-и дуруст надорад."
 
-#: WorkSheet.cc:103
+#: WorkSheet.cpp:103
 #, kde-format
 msgid ""
 "The file %1 does not contain a valid worksheet definition, which must have a "
@@ -702,631 +1425,177 @@ msgstr ""
 "Файли %1 муайянсозии дурусти варақаи кориро, ки бояд намуди ҳуҷҷати "
 "'KSysGuardWorkSheet'-ро дошта бошад, надорад."
 
-#: WorkSheet.cc:127
+#: WorkSheet.cpp:127
 #, kde-format
 msgid "The file %1 has an invalid worksheet size."
 msgstr "Файли %1 андозаи нодурусти варақаи кориро дорад."
 
-#: WorkSheet.cc:228
+#: WorkSheet.cpp:228
 #, kde-format
 msgid "Cannot save file %1"
 msgstr "Не удаётся сохранить файл %1"
 
-#: WorkSheet.cc:274
+#: WorkSheet.cpp:274
 msgid "The clipboard does not contain a valid display description."
 msgstr "Силули мухобиротӣ дар таркибаш шарҳи намоиши дурустро надорад."
 
-#: WorkSheet.cc:372
+#: WorkSheet.cpp:375
 msgid "Select Display Type"
 msgstr "Интихоби Намуди Намоиш"
 
-#: WorkSheet.cc:373
+#: WorkSheet.cpp:376
 msgid "&Line graph"
 msgstr "&Линии"
 
-#: WorkSheet.cc:374
+#: WorkSheet.cpp:377
 msgid "&Digital display"
 msgstr "&Число"
 
-#: WorkSheet.cc:375
+#: WorkSheet.cpp:378
 msgid "&Bar graph"
 msgstr "&Панели Нақша"
 
-#: WorkSheet.cc:376
+#: WorkSheet.cpp:379
 msgid "Log to a &file"
 msgstr "Файли Вуруд"
 
-#: WorkSheet.cc:525
+#: WorkSheet.cpp:528
 msgid "Remove this display?"
 msgstr "Удалить виджет"
 
-#: WorkSheet.cc:526
+#: WorkSheet.cpp:529
 msgid "Remove Display"
 msgstr "&Удалить график"
 
-#: WorkSheet.cc:567
+#: WorkSheet.cpp:570
 msgid "Dummy"
 msgstr "Временный"
 
-#: WorkSheetSettings.cc:40
+#: WorkSheetSettings.cpp:40
 msgid "Tab Properties"
 msgstr "Свойства вкладки"
 
-#: WorkSheetSettings.cc:61
+#: WorkSheetSettings.cpp:61
 msgid "Properties"
 msgstr "Хусусиятҳо"
 
-#: WorkSheetSettings.cc:70
+#: WorkSheetSettings.cpp:70
 msgid "Rows:"
 msgstr "Сатрҳо:"
 
-#: WorkSheetSettings.cc:79
+#: WorkSheetSettings.cpp:79
 msgid "Columns:"
 msgstr "Сутунҳо:"
 
-#: WorkSheetSettings.cc:87
+#: WorkSheetSettings.cpp:87
 msgid "Enter the number of rows the sheet should have."
 msgstr "Шумораи сатрҳоро, ки бояд варақаи корӣ дошта бошад, ворид намоед."
 
-#: WorkSheetSettings.cc:88
+#: WorkSheetSettings.cpp:88
 msgid "Enter the number of columns the sheet should have."
 msgstr "Шумораи сутунҳоро, ки бояд варақаи корӣ дошта бошад, ворид намоед."
 
-#: WorkSheetSettings.cc:101
+#: WorkSheetSettings.cpp:101
 msgid "Enter the title of the worksheet here."
 msgstr "Дар ин ҷо сарлавҳаи варақаи кориро ворид намоед."
 
-#: ksgrd/SensorAgent.cc:109
+#: Workspace.cpp:112
 #, kde-format
-msgctxt "%1 is a host name"
-msgid ""
-"Message from %1:\n"
-"%2"
-msgstr ""
-"Ахборот аз %1:\n"
-"%2"
+msgid "Sheet %1"
+msgstr "Варақа %1"
 
-#: ksgrd/SensorManager.cc:60
-msgid "Change"
-msgstr "Изменить"
-
-#: ksgrd/SensorManager.cc:61
-msgid "Rate"
-msgstr "Соотношение"
-
-#: ksgrd/SensorManager.cc:63
-msgid "CPU Load"
-msgstr "Боркардани CPU"
-
-#: ksgrd/SensorManager.cc:64
-msgid "Idling"
-msgstr "Бездействие"
-
-#: ksgrd/SensorManager.cc:65
-msgid "Nice Load"
-msgstr "Баркардани Nice"
-
-#: ksgrd/SensorManager.cc:66
-msgid "User Load"
-msgstr "Боркардани Истифодакунанда"
-
-#: ksgrd/SensorManager.cc:67
-msgctxt "@item sensor description"
-msgid "System Load"
-msgstr "Система"
-
-#: ksgrd/SensorManager.cc:68
-msgid "Waiting"
-msgstr "Ожидание"
-
-#: ksgrd/SensorManager.cc:69
-msgid "Total Load"
-msgstr "Общая загрузка"
-
-#: ksgrd/SensorManager.cc:70
-msgid "Memory"
-msgstr "Хотир"
-
-#: ksgrd/SensorManager.cc:71
-msgid "Physical Memory"
-msgstr "Хотири Ҷисмонӣ"
-
-#: ksgrd/SensorManager.cc:72
-msgid "Swap Memory"
-msgstr "Хотири Swap"
-
-#: ksgrd/SensorManager.cc:73
-msgid "Cached Memory"
-msgstr "Ҳофизаи Ниҳонӣ"
-
-#: ksgrd/SensorManager.cc:74
-msgid "Buffered Memory"
-msgstr "Ҳофизаи Миёнгир"
-
-#: ksgrd/SensorManager.cc:75
-msgid "Used Memory"
-msgstr "Хотири истифодашуда"
-
-#: ksgrd/SensorManager.cc:76
-msgid "Application Memory"
-msgstr "Хотири Барномаҳо"
-
-#: ksgrd/SensorManager.cc:77
-msgid "Free Memory"
-msgstr "Хотири Озод"
-
-#: ksgrd/SensorManager.cc:78
-msgid "Active Memory"
-msgstr "Активная память"
-
-#: ksgrd/SensorManager.cc:79
-msgid "Inactive Memory"
-msgstr "Неактивная память"
-
-#: ksgrd/SensorManager.cc:80
-msgid "Wired Memory"
-msgstr "Хотири истифодашуда"
-
-#: ksgrd/SensorManager.cc:81
-msgid "Exec Pages"
-msgstr "Исполняемые страницы"
-
-#: ksgrd/SensorManager.cc:82
-msgid "File Pages"
-msgstr "Саҳифаҳои файл"
-
-#: ksgrd/SensorManager.cc:83
-msgid "Process Count"
-msgstr "Шумораи Ҷараён"
-
-#: ksgrd/SensorManager.cc:84 ksgrd/SensorManager.cc:193
-msgid "Process Controller"
-msgstr "Идоракунандаи Ҷараён"
-
-#: ksgrd/SensorManager.cc:85
-msgid "Disk Throughput"
-msgstr "Иқтидори Диск"
-
-#: ksgrd/SensorManager.cc:86
-msgctxt "CPU Load"
-msgid "Load"
-msgstr "Боркардан"
-
-#: ksgrd/SensorManager.cc:87
-msgid "Total Accesses"
-msgstr "Ҷамъи Дастёбӣ"
-
-#: ksgrd/SensorManager.cc:88
-msgid "Read Accesses"
-msgstr "Дастёбиҳои Хониш"
-
-#: ksgrd/SensorManager.cc:89
-msgid "Write Accesses"
-msgstr "Дастёбиҳои Навиштан"
-
-#: ksgrd/SensorManager.cc:90
-msgid "Read Data"
-msgstr "Санаи Хониш"
-
-#: ksgrd/SensorManager.cc:91
-msgid "Written Data"
-msgstr "Записано"
-
-#: ksgrd/SensorManager.cc:92
-msgid "Milliseconds spent reading"
-msgstr "Время чтения (мс)"
-
-#: ksgrd/SensorManager.cc:93
-msgid "Milliseconds spent writing"
-msgstr "Время записи (мс)"
-
-#: ksgrd/SensorManager.cc:94
-msgid "I/Os currently in progress"
-msgstr "Состояние ввода-вывода"
-
-#: ksgrd/SensorManager.cc:95
-msgid "Pages In"
-msgstr "Боркунии Саҳифа"
-
-#: ksgrd/SensorManager.cc:96
-msgid "Pages Out"
-msgstr "Бадар овардани Саҳифа"
-
-#: ksgrd/SensorManager.cc:97
-msgid "Context Switches"
-msgstr "Гузаришҳои Матн"
-
-#: ksgrd/SensorManager.cc:98
-msgid "Network"
-msgstr "Шабақаи Интернет"
-
-#: ksgrd/SensorManager.cc:99
-msgid "Interfaces"
-msgstr "Интерфейс"
-
-#: ksgrd/SensorManager.cc:100
-msgid "Receiver"
-msgstr "Қабулгар"
-
-#: ksgrd/SensorManager.cc:101
-msgid "Transmitter"
-msgstr "Додаҳои Ирсолшуда"
-
-#: ksgrd/SensorManager.cc:103
-msgid "Data Rate"
-msgstr "Скорость попаданий"
-
-#: ksgrd/SensorManager.cc:104
-msgid "Compressed Packets Rate"
-msgstr "Рейтинг материала"
-
-#: ksgrd/SensorManager.cc:105
-msgid "Dropped Packets Rate"
-msgstr "Рейтинг материала"
-
-#: ksgrd/SensorManager.cc:106
-msgid "Error Rate"
-msgstr "Скорость попаданий"
-
-#: ksgrd/SensorManager.cc:107
-msgid "FIFO Overruns Rate"
-msgstr "Рейтинг материала"
-
-#: ksgrd/SensorManager.cc:108
-msgid "Frame Error Rate"
-msgstr "Рейтинг материала"
-
-#: ksgrd/SensorManager.cc:109
-msgid "Multicast Packet Rate"
-msgstr "Рейтинг материала"
-
-#: ksgrd/SensorManager.cc:110
-msgid "Packet Rate"
-msgstr "Скорость попаданий"
-
-#: ksgrd/SensorManager.cc:111
-msgctxt "@item sensor description ('carrier' is a type of network signal)"
-msgid "Carrier Loss Rate"
-msgstr "Рейтинг материала"
-
-#: ksgrd/SensorManager.cc:112 ksgrd/SensorManager.cc:123
-msgid "Collisions"
-msgstr "Бархӯрдҳо"
-
-#: ksgrd/SensorManager.cc:114
-msgid "Data"
-msgstr "Таърих"
-
-#: ksgrd/SensorManager.cc:115
-msgid "Compressed Packets"
-msgstr "Бастаи Барномаҳои Фишурдашуда"
-
-#: ksgrd/SensorManager.cc:116
-msgid "Dropped Packets"
-msgstr "Бастаи Барномаҳои Партофташуда"
-
-#: ksgrd/SensorManager.cc:117
-msgid "Errors"
-msgstr "Хатоҳо"
-
-#: ksgrd/SensorManager.cc:118
-msgid "FIFO Overruns"
-msgstr "FIFO Аз ҳад гузашта"
-
-#: ksgrd/SensorManager.cc:119
-msgid "Frame Errors"
-msgstr "Хатогиҳои Кадр"
-
-#: ksgrd/SensorManager.cc:120
-msgid "Multicast Packets"
-msgstr "Сжатые пакеты"
-
-#: ksgrd/SensorManager.cc:121
-msgid "Packets"
-msgstr "Қуттиҳо"
-
-#: ksgrd/SensorManager.cc:122
-msgctxt "@item sensor description ('carrier' is a type of network signal)"
-msgid "Carrier Losses"
-msgstr "Баранда"
-
-#: ksgrd/SensorManager.cc:125
-msgid "Sockets"
-msgstr "Сокетҳо"
-
-#: ksgrd/SensorManager.cc:126
-msgid "Total Number"
-msgstr "Миқдори умумӣ"
-
-#: ksgrd/SensorManager.cc:127 ksgrd/SensorManager.cc:194
-msgid "Table"
-msgstr "Ҷадвал"
-
-#: ksgrd/SensorManager.cc:128
-msgid "Advanced Power Management"
-msgstr "Идоракунии Беҳбудшудаи Иқтидор"
-
-#: ksgrd/SensorManager.cc:129
-msgid "ACPI"
-msgstr "ACPI"
-
-#: ksgrd/SensorManager.cc:130
-msgid "Thermal Zone"
-msgstr "Нагрев"
-
-#: ksgrd/SensorManager.cc:131
-msgid "Temperature"
-msgstr "Температура"
-
-#: ksgrd/SensorManager.cc:132
-msgid "Fan"
-msgstr "Вентилятор"
-
-#: ksgrd/SensorManager.cc:133
-msgid "State"
-msgstr "Состояние"
-
-#: ksgrd/SensorManager.cc:134
-msgid "Battery"
-msgstr "Батарея"
-
-#: ksgrd/SensorManager.cc:135
-msgid "Battery Charge"
-msgstr "Заряди Батарея"
-
-#: ksgrd/SensorManager.cc:136
-msgid "Battery Usage"
-msgstr "Использование батареи"
-
-#: ksgrd/SensorManager.cc:137
-msgid "Remaining Time"
-msgstr "Вақти Боқимонда"
-
-#: ksgrd/SensorManager.cc:138
-msgid "Interrupts"
-msgstr "Қатъ кардан"
-
-#: ksgrd/SensorManager.cc:139
-msgid "Load Average (1 min)"
-msgstr "Боркунии Миёна (1 дақиқа)"
-
-#: ksgrd/SensorManager.cc:140
-msgid "Load Average (5 min)"
-msgstr "Боркунии Миёна (5 дақиқа)"
-
-#: ksgrd/SensorManager.cc:141
-msgid "Load Average (15 min)"
-msgstr "Боркунии Миёна (15 дақиқа)"
-
-#: ksgrd/SensorManager.cc:142
-msgid "Clock Frequency"
-msgstr "Зуддии Соат"
-
-#: ksgrd/SensorManager.cc:143
-msgid "Hardware Sensors"
-msgstr "Сенсорҳои Сохтмони Саҳт"
-
-#: ksgrd/SensorManager.cc:144
-msgid "Partition Usage"
-msgstr "Истифодаи Қисматҳо"
-
-#: ksgrd/SensorManager.cc:145
-msgid "Used Space"
-msgstr "Фазои Ишғолшуда"
-
-#: ksgrd/SensorManager.cc:146
-msgid "Free Space"
-msgstr "Фосилаи Озод"
-
-#: ksgrd/SensorManager.cc:147
-msgid "Fill Level"
-msgstr "Фазои Озод"
-
-#: ksgrd/SensorManager.cc:148
-msgid "System"
-msgstr "Система"
-
-#: ksgrd/SensorManager.cc:149
-msgid "Uptime"
-msgstr "Время работы"
-
-#: ksgrd/SensorManager.cc:150
-msgid "Linux Soft Raid (md)"
-msgstr "Linux Soft Raid (md)"
-
-#: ksgrd/SensorManager.cc:151
-msgid "Processors"
-msgstr "Процессоры"
-
-#: ksgrd/SensorManager.cc:152
-msgid "Cores"
-msgstr "Ядра"
-
-#: ksgrd/SensorManager.cc:153
-msgid "Number of Blocks"
-msgstr "Блоки активности"
-
-#: ksgrd/SensorManager.cc:154
-msgid "Total Number of Devices"
-msgstr "Настроить устройства ввода"
-
-#: ksgrd/SensorManager.cc:155
-msgid "Failed Devices"
-msgstr "Устройства ввода"
-
-#: ksgrd/SensorManager.cc:156
-msgid "Spare Devices"
-msgstr "Устройства ввода"
-
-#: ksgrd/SensorManager.cc:157
-msgid "Number of Raid Devices"
-msgstr "Настроить устройства ввода"
-
-#: ksgrd/SensorManager.cc:158
-msgid "Working Devices"
-msgstr "Устройства ввода"
-
-#: ksgrd/SensorManager.cc:159
-msgid "Active Devices"
-msgstr "Устройства ввода"
-
-#: ksgrd/SensorManager.cc:160
-msgid "Number of Devices"
-msgstr "Устройства ввода"
-
-#: ksgrd/SensorManager.cc:161
-msgid "Resyncing Percent"
-msgstr "Процент _чёрного:"
-
-#: ksgrd/SensorManager.cc:162
-msgid "Disk Information"
-msgstr "Информация о сборке:"
-
-#: ksgrd/SensorManager.cc:165
-#, kde-format
-msgid "CPU %1"
-msgstr "CPU %1"
-
-#: ksgrd/SensorManager.cc:166
-#, kde-format
-msgid "Disk %1"
-msgstr "Диски %1"
-
-#: ksgrd/SensorManager.cc:170
-#, kde-format
-msgid "Fan %1"
-msgstr "Вентилятор %1"
-
-#: ksgrd/SensorManager.cc:171
-#, kde-format
-msgid "Temperature %1"
-msgstr "Температура %1"
-
-#: ksgrd/SensorManager.cc:174
-msgid "Total"
-msgstr "Ҳамагӣ"
-
-#: ksgrd/SensorManager.cc:179
-#, kde-format
-msgid "Int %1"
-msgstr "Int %1"
-
-#: ksgrd/SensorManager.cc:184
-msgctxt "the unit 1 per second"
-msgid "1/s"
-msgstr "1/с"
-
-#: ksgrd/SensorManager.cc:185
-msgid "kBytes"
-msgstr "Байтҳо"
-
-#: ksgrd/SensorManager.cc:186
-msgctxt "the unit minutes"
-msgid "min"
-msgstr "дақиқаҳо"
-
-#: ksgrd/SensorManager.cc:187
-msgctxt "the frequency unit"
-msgid "MHz"
-msgstr "MHz"
-
-#: ksgrd/SensorManager.cc:188
-msgctxt "a percentage"
-msgid "%"
-msgstr "%"
-
-#: ksgrd/SensorManager.cc:191
-msgid "Integer Value"
-msgstr "Бузургии Бутун"
-
-#: ksgrd/SensorManager.cc:192
-msgid "Floating Point Value"
-msgstr "Бузургии бо Нуқтаи Шиновар"
-
-#: ksgrd/SensorShellAgent.cc:126
-#, kde-format
-msgid "Could not run daemon program '%1'."
-msgstr "Невозможно запустить программу «%1»."
-
-#: ksgrd/SensorShellAgent.cc:133
-#, kde-format
-msgid "The daemon program '%1' failed."
-msgstr "Ошибка запуска программы «%1»."
-
-#: ksgrd/SensorSocketAgent.cc:103
-#, kde-format
-msgid "Connection to %1 refused"
-msgstr "Пайвастшавӣ бо %1 рад шудааст!"
-
-#: ksgrd/SensorSocketAgent.cc:107
-#, kde-format
-msgid "Host %1 not found"
-msgstr "Узели %1 ёфт нашуд"
-
-#: ksgrd/SensorSocketAgent.cc:111
+#: Workspace.cpp:171
 #, kde-format
 msgid ""
-"An error occurred with the network (e.g. the network cable was accidentally "
-"unplugged) for host %1."
+"The tab '%1' contains unsaved data.\n"
+"Do you want to save the tab?"
 msgstr ""
-"Произошла ошибка сети (например, сетевой кабель был случайно отключен) узла %"
-"1"
+"Вкладка '%1' содержит несохранённые данные\n"
+"Хотите сохранить вкладку?"
 
-#: ksgrd/SensorSocketAgent.cc:115
+#: Workspace.cpp:186
+msgid "*.sgrd|Sensor Files (*.sgrd)"
+msgstr "*.sgrd|Файлҳои Sensor (*.sgrd)"
+
+#: Workspace.cpp:186
+msgid "Select Tab File to Import"
+msgstr "Выберите файл вкладок для импорта"
+
+#: Workspace.cpp:214 Workspace.cpp:235
+msgid "You do not have a tab that could be saved."
+msgstr "У вас нет вкладки, которую можно сохранить."
+
+#: Workspace.cpp:242
+msgid "Export Tab"
+msgstr "Экспортировать вкладку"
+
+#: Workspace.cpp:260
+msgid "There are no tabs that could be deleted."
+msgstr "Больше нет вкладок, которые можно удалить."
+
+#: Workspace.cpp:300
 #, kde-format
-msgid "Error for host %1: %2"
-msgstr "Ошибка узла %1: %2"
+msgid ""
+"<qt>To propose the current custom tab as a new System Monitor tab, email "
+"<br><a href=\"file:%1\">%2</a><br> to <a href=\"mailto:john.tapsell@kde.org?"
+"subject='System Monitor Tab'&attach='file://%2'\">john.tapsell@kde.org</a></"
+"qt>"
+msgstr ""
 
-#: ksysguard.cc:74
+#: Workspace.cpp:300
+msgid "Upload custom System Monitor tab"
+msgstr "Отослать вкладку системного монитора авторам программы"
+
+#: ksysguard.cpp:74
 msgid "KDE System Monitor"
 msgstr "Системаи назорати KDE"
 
-#: ksysguard.cc:154 ksysguard.cc:530
+#: ksysguard.cpp:154 ksysguard.cpp:530
 msgid "System Monitor"
 msgstr "Назорати система"
 
-#: ksysguard.cc:155
+#: ksysguard.cpp:155
 #, fuzzy
 #| msgid "&Refresh"
 msgid "&Refresh Tab"
 msgstr "вкладка страницы"
 
-#: ksysguard.cc:156
+#: ksysguard.cpp:156
 msgid "&New Tab..."
 msgstr "&Ҷадвалбандии нав..."
 
-#: ksysguard.cc:157
+#: ksysguard.cpp:157
 msgid "Import Tab Fr&om File..."
 msgstr "Импортировать вкладку из файла..."
 
-#: ksysguard.cc:158
+#: ksysguard.cpp:158
 msgid "Save Tab &As..."
 msgstr "Сохранить вкладку &как"
 
-#: ksysguard.cc:159
+#: ksysguard.cpp:159
 msgid "&Close Tab"
 msgstr "&Закрыть вкладку"
 
-#: ksysguard.cc:160
+#: ksysguard.cpp:160
 #, fuzzy
 msgid "Monitor &Remote Machine..."
 msgstr "Мониторинг &удалённого узла..."
 
-#: ksysguard.cc:161
+#: ksysguard.cpp:161
 msgid "&Download New Tabs..."
 msgstr "&Загрузить новые вкладки"
 
-#: ksysguard.cc:162
+#: ksysguard.cpp:162
 #, fuzzy
 #| msgid "&Download New Tabs..."
 msgid "&Upload Current Tab..."
 msgstr "Зак&рыть текущую вкладку"
 
-#: ksysguard.cc:164
+#: ksysguard.cpp:164
 msgid "Tab &Properties"
 msgstr "&Свойства вкладки"
 
-#: ksysguard.cc:359
+#: ksysguard.cpp:359
 #, fuzzy, kde-format
 #| msgid " 1 process "
 #| msgid_plural " %1 processes "
@@ -1335,81 +1604,81 @@ msgid_plural "%1 processes%1"
 msgstr[0] "1 амалиёт"
 msgstr[1] " %1 амалиёт"
 
-#: ksysguard.cc:443
+#: ksysguard.cpp:443
 #, fuzzy, kde-format
 #| msgid " CPU: %1% "
 msgid "CPU: %1%%1%"
 msgstr "CPU %1"
 
-#: ksysguard.cc:458
+#: ksysguard.cpp:458
 #, fuzzy, kde-format
 msgctxt "Arguments are formatted byte sizes (used/total)"
 msgid "Memory: %1 / %2Mem: %1 / %2Mem: %1%1"
 msgstr "Максимально памяти для _отмены:"
 
-#: ksysguard.cc:485
+#: ksysguard.cpp:485
 msgid " No swap space available "
 msgstr "Область подкачки недоступна"
 
-#: ksysguard.cc:487
+#: ksysguard.cpp:487
 #, fuzzy, kde-format
 msgctxt "Arguments are formatted byte sizes (used/total)"
 msgid "Swap: %1 / %2Swap: %1%1"
 msgstr "Переставить две кривые"
 
-#: ksysguard.cc:532
+#: ksysguard.cpp:532
 msgid "(c) 1996-2008 The KDE System Monitor Developers"
 msgstr "(c) 1996-2008 Разработчики KSysGuard"
 
-#: ksysguard.cc:533
+#: ksysguard.cpp:533
 msgid "John Tapsell"
 msgstr "John Tapsell"
 
-#: ksysguard.cc:533
+#: ksysguard.cpp:533
 msgid "Current Maintainer"
 msgstr "Текущее сопровождение"
 
-#: ksysguard.cc:534
+#: ksysguard.cpp:534
 msgid "Chris Schlaeger"
 msgstr "Chris Schlaeger"
 
-#: ksysguard.cc:534
+#: ksysguard.cpp:534
 msgid "Previous Maintainer"
 msgstr "Предыдущий сопровождающий"
 
-#: ksysguard.cc:535
+#: ksysguard.cpp:535
 msgid "Greg Martyn"
 msgstr "Greg Martyn"
 
-#: ksysguard.cc:536
+#: ksysguard.cpp:536
 msgid "Tobias Koenig"
 msgstr "Tobias Koenig"
 
-#: ksysguard.cc:537
+#: ksysguard.cpp:537
 msgid "Nicolas Leclercq"
 msgstr "Nicolas Leclercq"
 
-#: ksysguard.cc:538
+#: ksysguard.cpp:538
 msgid "Alex Sanda"
 msgstr "Alex Sanda"
 
-#: ksysguard.cc:539
+#: ksysguard.cpp:539
 msgid "Bernd Johannes Wuebben"
 msgstr "Bernd Johannes Wuebben"
 
-#: ksysguard.cc:540
+#: ksysguard.cpp:540
 msgid "Ralf Mueller"
 msgstr "Ralf Mueller"
 
-#: ksysguard.cc:541
+#: ksysguard.cpp:541
 msgid "Hamish Rodda"
 msgstr "Hamish Rodda"
 
-#: ksysguard.cc:542
+#: ksysguard.cpp:542
 msgid "Torsten Kasch"
 msgstr "Torsten Kasch"
 
-#: ksysguard.cc:542
+#: ksysguard.cpp:542
 msgid ""
 "Solaris Support\n"
 "Parts derived (by permission) from the sunos5\n"
@@ -1420,56 +1689,9 @@ msgstr ""
 "\"top\", ки аз тарафи William LeFebvre навишта шудааст, гирифта шудаанд (бо "
 "ҳисобгирии рухсат)."
 
-#: ksysguard.cc:551
+#: ksysguard.cpp:551
 msgid "Optional worksheet files to load"
 msgstr "Боркунии файлҳои ихтиёрии варақаи корӣ"
-
-#: Workspace.cc:112
-#, kde-format
-msgid "Sheet %1"
-msgstr "Варақа %1"
-
-#: Workspace.cc:171
-#, kde-format
-msgid ""
-"The tab '%1' contains unsaved data.\n"
-"Do you want to save the tab?"
-msgstr ""
-"Вкладка '%1' содержит несохранённые данные\n"
-"Хотите сохранить вкладку?"
-
-#: Workspace.cc:186
-msgid "*.sgrd|Sensor Files (*.sgrd)"
-msgstr "*.sgrd|Файлҳои Sensor (*.sgrd)"
-
-#: Workspace.cc:186
-msgid "Select Tab File to Import"
-msgstr "Выберите файл вкладок для импорта"
-
-#: Workspace.cc:214 Workspace.cc:235
-msgid "You do not have a tab that could be saved."
-msgstr "У вас нет вкладки, которую можно сохранить."
-
-#: Workspace.cc:242
-msgid "Export Tab"
-msgstr "Экспортировать вкладку"
-
-#: Workspace.cc:260
-msgid "There are no tabs that could be deleted."
-msgstr "Больше нет вкладок, которые можно удалить."
-
-#: Workspace.cc:300
-#, kde-format
-msgid ""
-"<qt>To propose the current custom tab as a new System Monitor tab, email "
-"<br><a href=\"file:%1\">%2</a><br> to <a href=\"mailto:john.tapsell@kde.org?"
-"subject='System Monitor Tab'&attach='file://%2'\">john.tapsell@kde.org</a></"
-"qt>"
-msgstr ""
-
-#: Workspace.cc:300
-msgid "Upload custom System Monitor tab"
-msgstr "Отослать вкладку системного монитора авторам программы"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -1685,11 +1907,6 @@ msgstr "Таърихи Интернетӣ"
 #~ msgstr[0] " сон"
 #~ msgstr[1] " сон"
 
-#~| msgctxt "a percentage"
-#~| msgid "%"
-#~ msgid "%1"
-#~ msgstr "%"
-
 #~ msgctxt "Arguments are formatted byte sizes (used/total)"
 #~ msgid " Memory: %1 / %2 "
 #~ msgstr "Хотира: %1 / %2 "
@@ -1845,10 +2062,6 @@ msgstr "Таърихи Интернетӣ"
 #~| msgid "Sensor Logger"
 #~ msgid "Sensor Load"
 #~ msgstr "Номнависи Санҷанда"
-
-#, fuzzy
-#~ msgid "Loading Processes Count.."
-#~ msgstr "Шумораи Ҷараён"
 
 #~ msgid "Show only process list of local host"
 #~ msgstr "Нишон додани рӯйхати ҷараёнҳо танҳо дар соҳиби маҳаллӣ"
@@ -2008,9 +2221,6 @@ msgstr "Таърихи Интернетӣ"
 #, fuzzy
 #~ msgid "All Processes, Hierarchical"
 #~ msgstr "Ҳама Корҳо"
-
-#~ msgid "System Processes"
-#~ msgstr "Корҳои Система"
 
 #~ msgid "User Processes"
 #~ msgstr "Корҳои Истифодакунанда"
