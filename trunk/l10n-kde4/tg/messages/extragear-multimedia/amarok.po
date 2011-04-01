@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-28 03:30+0200\n"
+"POT-Creation-Date: 2011-04-01 03:35+0200\n"
 "PO-Revision-Date: 2009-01-20 18:25+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -20,6 +20,70 @@ msgstr ""
 #, fuzzy
 #| msgid "No track playing"
 msgid "Now playing"
+msgstr "Сурудро интихоб намо!"
+
+#: EngineController.cpp:267
+msgid ""
+"<p>Phonon claims it <b>cannot</b> play MP3 files. You may want to examine "
+"the installation of the backend that phonon uses.</p><p>You may find useful "
+"information in the <i>FAQ</i> section of the <i>Amarok Handbook</i>.</p>"
+msgstr ""
+
+#: EngineController.cpp:288
+msgid "Install MP3 Support"
+msgstr ""
+
+#: EngineController.cpp:290
+msgid ""
+"Amarok currently cannot play MP3 files. Do you want to install support for "
+"MP3?"
+msgstr ""
+
+#: EngineController.cpp:291
+msgid "No MP3 Support"
+msgstr ""
+
+#: EngineController.cpp:857
+msgid "Preamp"
+msgstr ""
+
+#: EngineController.cpp:1155
+msgid "Too many errors encountered in playlist. Playback stopped."
+msgstr ""
+
+#: EngineController.cpp:1373
+#, kde-format
+msgctxt "track by artist on album"
+msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
+msgstr ""
+
+#: EngineController.cpp:1376
+#, kde-format
+msgctxt "track by artist"
+msgid "<b>%1</b> by <b>%2</b>"
+msgstr ""
+
+#: EngineController.cpp:1380
+#, kde-format
+msgctxt "track on album"
+msgid "<b>%1</b> on <b>%2</b>"
+msgstr ""
+
+#: EngineController.cpp:1385
+#: core-impl/collections/mediadevicecollection/MediaDeviceMeta.cpp:152
+msgid "Unknown track"
+msgstr ""
+
+#: EngineController.cpp:1392
+#, kde-format
+msgctxt "track from source"
+msgid "from <b>%1</b>"
+msgstr ""
+
+#: EngineController.cpp:1403 context/applets/labels/LabelsApplet.cpp:194
+#: context/engines/current/CurrentEngine.cpp:136 mac/GrowlInterface.cpp:43
+#: widgets/Osd.cpp:623
+msgid "No track playing"
 msgstr "Сурудро интихоб намо!"
 
 #: rc.cpp:1
@@ -5382,56 +5446,6 @@ msgstr ""
 msgid "three months ago"
 msgstr ""
 
-#: browsers/CollectionTreeView.cpp:250 configdialog/ConfigDialog.cpp:59
-msgid "Collection"
-msgstr ""
-
-#: browsers/CollectionTreeView.cpp:273 browsers/filebrowser/FileView.cpp:134
-msgid "Copy to Collection"
-msgstr ""
-
-#: browsers/CollectionTreeView.cpp:281 browsers/filebrowser/FileView.cpp:125
-msgid "Move to Collection"
-msgstr ""
-
-#: browsers/CollectionTreeView.cpp:542 services/lastfm/LastFmTreeView.cpp:201
-msgid "More..."
-msgstr ""
-
-#: browsers/CollectionTreeView.cpp:846 browsers/filebrowser/FileView.cpp:396
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:43
-#: context/applets/albums/AlbumsView.cpp:240
-#: services/lastfm/LastFmTreeView.cpp:111
-#, fuzzy
-#| msgid "&Playlist"
-msgid "&Add to Playlist"
-msgstr "&Рӯйхати мусиқӣ"
-
-#: browsers/CollectionTreeView.cpp:855 browsers/filebrowser/FileView.cpp:405
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:50
-#: context/applets/albums/AlbumsView.cpp:241
-#: services/lastfm/LastFmTreeView.cpp:120
-#, fuzzy
-#| msgid "&Playlist"
-msgctxt "Replace the currently loaded tracks with these"
-msgid "&Replace Playlist"
-msgstr "&Рӯйхати мусиқӣ"
-
-#: browsers/CollectionTreeView.cpp:874 browsers/filebrowser/FileView.cpp:414
-msgid "&Edit Track Details"
-msgstr ""
-
-#: browsers/CollectionTreeView.cpp:909
-msgctxt "Organize Files"
-msgid "Organize Files"
-msgstr ""
-
-#: browsers/CollectionTreeView.cpp:1079
-#, fuzzy
-#| msgid "tracks"
-msgid "Delete Tracks"
-msgstr "роҳчаҳо"
-
 #: browsers/InfoProxy.cpp:164 browsers/filebrowser/FileBrowser.cpp:395
 msgid "Home"
 msgstr ""
@@ -5567,6 +5581,39 @@ msgstr ""
 #| msgid "&Play"
 msgid "Places"
 msgstr "&Навозиш"
+
+#: browsers/filebrowser/FileView.cpp:125 browsers/CollectionTreeView.cpp:281
+msgid "Move to Collection"
+msgstr ""
+
+#: browsers/filebrowser/FileView.cpp:134 browsers/CollectionTreeView.cpp:273
+msgid "Copy to Collection"
+msgstr ""
+
+#: browsers/filebrowser/FileView.cpp:396
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:43
+#: browsers/CollectionTreeView.cpp:846
+#: context/applets/albums/AlbumsView.cpp:240
+#: services/lastfm/LastFmTreeView.cpp:111
+#, fuzzy
+#| msgid "&Playlist"
+msgid "&Add to Playlist"
+msgstr "&Рӯйхати мусиқӣ"
+
+#: browsers/filebrowser/FileView.cpp:405
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:50
+#: browsers/CollectionTreeView.cpp:855
+#: context/applets/albums/AlbumsView.cpp:241
+#: services/lastfm/LastFmTreeView.cpp:120
+#, fuzzy
+#| msgid "&Playlist"
+msgctxt "Replace the currently loaded tracks with these"
+msgid "&Replace Playlist"
+msgstr "&Рӯйхати мусиқӣ"
+
+#: browsers/filebrowser/FileView.cpp:414 browsers/CollectionTreeView.cpp:874
+msgid "&Edit Track Details"
+msgstr ""
 
 #: browsers/filebrowser/FileView.cpp:569
 msgctxt "@title:window"
@@ -5988,6 +6035,25 @@ msgid_plural "%1 tracks"
 msgstr[0] "роҳчаҳо"
 msgstr[1] "роҳчаҳо"
 
+#: browsers/CollectionTreeView.cpp:250 configdialog/ConfigDialog.cpp:59
+msgid "Collection"
+msgstr ""
+
+#: browsers/CollectionTreeView.cpp:542 services/lastfm/LastFmTreeView.cpp:201
+msgid "More..."
+msgstr ""
+
+#: browsers/CollectionTreeView.cpp:909
+msgctxt "Organize Files"
+msgid "Organize Files"
+msgstr ""
+
+#: browsers/CollectionTreeView.cpp:1079
+#, fuzzy
+#| msgid "tracks"
+msgid "Delete Tracks"
+msgstr "роҳчаҳо"
+
 #: configdialog/dialogs/DatabaseConfig.cpp:93
 msgctxt ""
 "A default password for insertion into an example SQL command (so as not to "
@@ -6294,12 +6360,6 @@ msgstr ""
 #: context/applets/wikipedia/WikipediaApplet.cpp:588
 msgid "Reload"
 msgstr ""
-
-#: context/applets/labels/LabelsApplet.cpp:194
-#: context/engines/current/CurrentEngine.cpp:136 mac/GrowlInterface.cpp:43
-#: widgets/Osd.cpp:623 EngineController.cpp:1404
-msgid "No track playing"
-msgstr "Сурудро интихоб намо!"
 
 #: context/applets/labels/LabelsApplet.cpp:514
 msgid "Fetching ..."
@@ -7630,11 +7690,6 @@ msgstr "&Рӯйхати мусиқӣ"
 msgctxt "Podcasts on a media device"
 msgid "Podcasts on %1"
 msgstr "&Илова кардани Podcast"
-
-#: core-impl/collections/mediadevicecollection/MediaDeviceMeta.cpp:152
-#: EngineController.cpp:1386
-msgid "Unknown track"
-msgstr ""
 
 #: core-impl/collections/mediadevicecollection/MediaDeviceCollection.cpp:263
 msgid "&Disconnect Device"
@@ -11548,13 +11603,6 @@ msgstr ""
 msgid "Last.fm: Love"
 msgstr ""
 
-#: services/lastfm/ScrobblerAdapter.cpp:226
-#: services/lastfm/LastFmService.cpp:570
-#, kde-format
-msgctxt "As in, lastfm"
-msgid "Loved Track: %1"
-msgstr ""
-
 #: services/lastfm/SimilarArtistsAction.cpp:26
 msgid "Play Similar Artists from Last.fm"
 msgstr ""
@@ -11783,6 +11831,13 @@ msgstr ""
 
 #: services/lastfm/LastFmService.cpp:534
 msgid "User"
+msgstr ""
+
+#: services/lastfm/LastFmService.cpp:570
+#: services/lastfm/ScrobblerAdapter.cpp:226
+#, kde-format
+msgctxt "As in, lastfm"
+msgid "Loved Track: %1"
 msgstr ""
 
 #: services/magnatune/MagnatuneAlbumDownloader.cpp:68
@@ -13559,59 +13614,6 @@ msgstr ""
 msgid ""
 "A music path, %1, is set in System Settings.\n"
 "Would you like to use that as a collection folder?"
-msgstr ""
-
-#: EngineController.cpp:267
-msgid ""
-"<p>Phonon claims it <b>cannot</b> play MP3 files. You may want to examine "
-"the installation of the backend that phonon uses.</p><p>You may find useful "
-"information in the <i>FAQ</i> section of the <i>Amarok Handbook</i>.</p>"
-msgstr ""
-
-#: EngineController.cpp:288
-msgid "Install MP3 Support"
-msgstr ""
-
-#: EngineController.cpp:290
-msgid ""
-"Amarok currently cannot play MP3 files. Do you want to install support for "
-"MP3?"
-msgstr ""
-
-#: EngineController.cpp:291
-msgid "No MP3 Support"
-msgstr ""
-
-#: EngineController.cpp:858
-msgid "Preamp"
-msgstr ""
-
-#: EngineController.cpp:1156
-msgid "Too many errors encountered in playlist. Playback stopped."
-msgstr ""
-
-#: EngineController.cpp:1374
-#, kde-format
-msgctxt "track by artist on album"
-msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
-msgstr ""
-
-#: EngineController.cpp:1377
-#, kde-format
-msgctxt "track by artist"
-msgid "<b>%1</b> by <b>%2</b>"
-msgstr ""
-
-#: EngineController.cpp:1381
-#, kde-format
-msgctxt "track on album"
-msgid "<b>%1</b> on <b>%2</b>"
-msgstr ""
-
-#: EngineController.cpp:1393
-#, kde-format
-msgctxt "track from source"
-msgid "from <b>%1</b>"
 msgstr ""
 
 #: MainWindow.cpp:271
