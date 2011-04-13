@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-11 03:48+0200\n"
+"POT-Creation-Date: 2011-04-13 03:42+0200\n"
 "PO-Revision-Date: 2010-08-30 20:24+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -586,41 +586,6 @@ msgctxt "@label"
 msgid "Select which additional information should be shown:"
 msgstr "Маълумоти иловагиро барои намоиш интихоб кунед."
 
-#: settings/dolphinsettingsdialog.cpp:47
-msgctxt "@title:window"
-msgid "Dolphin Preferences"
-msgstr "Хусусиятҳои Dolphin"
-
-#: settings/dolphinsettingsdialog.cpp:55
-msgctxt "@title:group"
-msgid "Startup"
-msgstr "Оғоз"
-
-#: settings/dolphinsettingsdialog.cpp:62
-msgctxt "@title:group"
-msgid "View Modes"
-msgstr "Ҳолатҳои намоишӣ"
-
-#: settings/dolphinsettingsdialog.cpp:69
-msgctxt "@title:group"
-msgid "Navigation"
-msgstr "Идоракунӣ"
-
-#: settings/dolphinsettingsdialog.cpp:76
-msgctxt "@title:group"
-msgid "Services"
-msgstr "Хизматҳо"
-
-#: settings/dolphinsettingsdialog.cpp:83
-msgctxt "@title:group"
-msgid "Trash"
-msgstr "Сабад"
-
-#: settings/dolphinsettingsdialog.cpp:90
-msgctxt "@title:group General settings"
-msgid "General"
-msgstr "Умумӣ"
-
 #: settings/viewpropertiesdialog.cpp:79
 msgctxt "@title:window"
 msgid "View Properties"
@@ -781,6 +746,41 @@ msgstr "Ҳисобкунии ҷузвдонҳо: %1"
 msgctxt "@info:progress"
 msgid "Folders: %1"
 msgstr "Ҷузвдонҳо: %1"
+
+#: settings/dolphinsettingsdialog.cpp:47
+msgctxt "@title:window"
+msgid "Dolphin Preferences"
+msgstr "Хусусиятҳои Dolphin"
+
+#: settings/dolphinsettingsdialog.cpp:55
+msgctxt "@title:group"
+msgid "Startup"
+msgstr "Оғоз"
+
+#: settings/dolphinsettingsdialog.cpp:62
+msgctxt "@title:group"
+msgid "View Modes"
+msgstr "Ҳолатҳои намоишӣ"
+
+#: settings/dolphinsettingsdialog.cpp:69
+msgctxt "@title:group"
+msgid "Navigation"
+msgstr "Идоракунӣ"
+
+#: settings/dolphinsettingsdialog.cpp:76
+msgctxt "@title:group"
+msgid "Services"
+msgstr "Хизматҳо"
+
+#: settings/dolphinsettingsdialog.cpp:83
+msgctxt "@title:group"
+msgid "Trash"
+msgstr "Сабад"
+
+#: settings/dolphinsettingsdialog.cpp:90
+msgctxt "@title:group General settings"
+msgid "General"
+msgstr "Умумӣ"
 
 #: statusbar/dolphinstatusbar.cpp:294
 msgctxt "@action:inmenu"
@@ -1271,6 +1271,485 @@ msgctxt "@info:tooltip"
 msgid "Select Item"
 msgstr "Интихоби ҷузъ"
 
+#: dolphinviewcontainer.cpp:304
+msgctxt "@info:progress"
+msgid "Loading folder..."
+msgstr "Кушоиши ҷузвдон..."
+
+#: dolphinviewcontainer.cpp:315
+msgctxt "@info"
+msgid "Searching..."
+msgstr "Идет поиск..."
+
+#: dolphinviewcontainer.cpp:335
+msgctxt "@info:status"
+msgid "No items found."
+msgstr "Ничего не найдено."
+
+#: dolphinviewcontainer.cpp:414
+msgctxt "@info:status"
+msgid "Dolphin does not support web pages, the web browser has been launched"
+msgstr ""
+"Dolphin саҳифаҳои Интернетӣ пуштибонӣ намекунад, вале Интернет браузер оғоз "
+"карда шуд"
+
+#: dolphinviewcontainer.cpp:426
+msgctxt "@info:status"
+msgid "Protocol not supported by Dolphin, Konqueror has been launched"
+msgstr ""
+"Протокол бо барномаи Dolphin пуштибонӣ намешавад, вале Konqueror оғоз карда "
+"шуд"
+
+#: dolphinviewcontainer.cpp:433
+msgctxt "@info:status"
+msgid "Invalid protocol"
+msgstr "Протоколи нодуруст"
+
+#: dolphincontextmenu.cpp:170
+msgctxt "@action:inmenu"
+msgid "Empty Trash"
+msgstr "Сабади холӣ"
+
+#: dolphincontextmenu.cpp:176 dolphincontextmenu.cpp:347
+msgctxt "@action:inmenu Add current folder to places"
+msgid "Add to Places"
+msgstr "Илова ба маконҳо"
+
+#: dolphincontextmenu.cpp:192
+msgctxt "@info"
+msgid "Do you really want to empty the Trash? All items will be deleted."
+msgstr "Шумо мехоҳед сабадро холӣ кунед? Ҳамаи ҷузъҳо нест карда мешаванд."
+
+#: dolphincontextmenu.cpp:196
+msgctxt "@action:button"
+msgid "Empty Trash"
+msgstr "Холӣ кардани сабад"
+
+#: dolphincontextmenu.cpp:205
+msgctxt "@label"
+msgid "Trash"
+msgstr "Сабад"
+
+#: dolphincontextmenu.cpp:215
+msgctxt "@action:inmenu"
+msgid "Restore"
+msgstr "Бозсозӣ"
+
+#: dolphincontextmenu.cpp:254 dolphinmainwindow.cpp:1582
+msgctxt "@title:menu Create new folder, file, link, etc."
+msgid "Create New"
+msgstr "Эҷоди нав"
+
+#: dolphincontextmenu.cpp:267
+msgctxt "@action:inmenu Add selected folder to places"
+msgid "Add to Places"
+msgstr "Илова ба маконҳо"
+
+#: dolphincontextmenu.cpp:274
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Open in New Window"
+msgctxt "@action:inmenu"
+msgid "Open Path in New Window"
+msgstr "Кушодан дар тирезаи нав"
+
+#: dolphincontextmenu.cpp:280
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Open in New Tab"
+msgctxt "@action:inmenu"
+msgid "Open Path in New Tab"
+msgstr "Кушодан дар ҷадвалбандии нав"
+
+#: dolphincontextmenu.cpp:446
+msgctxt "@action:inmenu"
+msgid "Paste Into Folder"
+msgstr "Часпондан ба ҷузвдон"
+
+#: dolphincontextmenu.cpp:558
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Move to Trash"
+msgctxt "@action:inmenu"
+msgid "&Move to Trash"
+msgstr "Таҳвилкунӣ ба сабад"
+
+#: dolphincontextmenu.cpp:561
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Delete"
+msgctxt "@action:inmenu"
+msgid "&Delete"
+msgstr "Нест кардан"
+
+#: dolphinpart.cpp:149
+msgctxt "@action:inmenu Edit"
+msgid "&Edit File Type..."
+msgstr "&Таҳрири намуди файл..."
+
+#: dolphinpart.cpp:153
+msgctxt "@action:inmenu Edit"
+msgid "Select Items Matching..."
+msgstr "Выделить по маске..."
+
+#: dolphinpart.cpp:158
+msgctxt "@action:inmenu Edit"
+msgid "Unselect Items Matching..."
+msgstr "Снять выделение по маске..."
+
+#: dolphinpart.cpp:164
+msgctxt "@action:inmenu Edit"
+msgid "Unselect All"
+msgstr "Снять выделение со всего"
+
+#: dolphinpart.cpp:168 dolphinmainwindow.cpp:1634
+msgctxt "@action:inmenu Edit"
+msgid "Invert Selection"
+msgstr "Табдилдиҳии интихоб"
+
+#: dolphinpart.cpp:181
+msgctxt "@action:inmenu Go"
+msgid "App&lications"
+msgstr "&Барномаҳо"
+
+#: dolphinpart.cpp:184
+msgctxt "@action:inmenu Go"
+msgid "&Network Folders"
+msgstr "&Ҷузвдонҳои Интернетӣ"
+
+#: dolphinpart.cpp:187
+msgctxt "@action:inmenu Go"
+msgid "Sett&ings"
+msgstr "&Танзимотҳо"
+
+#: dolphinpart.cpp:190
+msgctxt "@action:inmenu Go"
+msgid "Trash"
+msgstr "Сабад"
+
+#: dolphinpart.cpp:193
+msgctxt "@action:inmenu Go"
+msgid "Autostart"
+msgstr "Худоғозӣ"
+
+#: dolphinpart.cpp:198
+msgctxt "@action:inmenu Tools"
+msgid "Find File..."
+msgstr "Ҷустуҷӯи файл..."
+
+#: dolphinpart.cpp:206
+msgctxt "@action:inmenu Tools"
+msgid "Open &Terminal"
+msgstr "Кушодани &Терминал"
+
+#: dolphinpart.cpp:275
+msgctxt "@title"
+msgid "Dolphin Part"
+msgstr "Қисми Dolphin"
+
+#: dolphinpart.cpp:464
+msgctxt "@title:window"
+msgid "Select"
+msgstr "Выделить"
+
+#: dolphinpart.cpp:465
+msgid "Select all items matching this pattern:"
+msgstr "Выделить все файлы по маске:"
+
+#: dolphinpart.cpp:471
+msgctxt "@title:window"
+msgid "Unselect"
+msgstr "Снять выделение"
+
+#: dolphinpart.cpp:472
+msgid "Unselect all items matching this pattern:"
+msgstr "Снять выделение файлов по данной маске:"
+
+#: dolphinmainwindow.cpp:339
+msgctxt "@info:status"
+msgid "Successfully copied."
+msgstr "Копирование успешно завершено."
+
+#: dolphinmainwindow.cpp:343
+msgctxt "@info:status"
+msgid "Successfully moved."
+msgstr "Перемещение успешно завершено."
+
+#: dolphinmainwindow.cpp:347
+msgctxt "@info:status"
+msgid "Successfully linked."
+msgstr "Ссылка успешно создана."
+
+#: dolphinmainwindow.cpp:351
+msgctxt "@info:status"
+msgid "Successfully moved to trash."
+msgstr "Успешно удалено в корзину."
+
+#: dolphinmainwindow.cpp:355
+msgctxt "@info:status"
+msgid "Successfully renamed."
+msgstr "Переименование успешно завершено."
+
+#: dolphinmainwindow.cpp:360
+msgctxt "@info:status"
+msgid "Created folder."
+msgstr "Ҷузвдон эҷод шуд."
+
+#: dolphinmainwindow.cpp:470
+msgctxt "@info"
+msgid "Go back"
+msgstr "Ба ақиб"
+
+#: dolphinmainwindow.cpp:476
+msgctxt "@info"
+msgid "Go forward"
+msgstr "Ба пеш"
+
+#: dolphinmainwindow.cpp:647
+msgctxt "@title:window"
+msgid "Confirmation"
+msgstr "Тасдтқот"
+
+#: dolphinmainwindow.cpp:651
+msgid "C&lose Current Tab"
+msgstr "Зак&рыть текущую вкладку"
+
+#: dolphinmainwindow.cpp:659
+msgid ""
+"You have multiple tabs open in this window, are you sure you want to quit?"
+msgstr "Закрыть окно с несколькими открытыми вкладками?"
+
+#: dolphinmainwindow.cpp:661
+msgid "Do not ask again"
+msgstr "Не задавать больше этот вопрос"
+
+#: dolphinmainwindow.cpp:1228
+msgctxt "@action:inmenu"
+msgid "New Tab"
+msgstr "Ҷадвалбандии нав"
+
+#: dolphinmainwindow.cpp:1231
+msgctxt "@action:inmenu"
+msgid "Detach Tab"
+msgstr "Ҷудосозии тиреза"
+
+#: dolphinmainwindow.cpp:1233
+msgctxt "@action:inmenu"
+msgid "Close Other Tabs"
+msgstr "Хуруҷи ҷадвалбандии дигар"
+
+#: dolphinmainwindow.cpp:1235
+msgctxt "@action:inmenu"
+msgid "Close Tab"
+msgstr "Хуруҷи ҷадвалбандӣ"
+
+#: dolphinmainwindow.cpp:1459
+#, fuzzy
+#| msgctxt "@title:menu"
+#| msgid "Location Bar"
+msgctxt "@action:inmenu"
+msgid "Location Bar"
+msgstr "Строка адреса"
+
+#: dolphinmainwindow.cpp:1467
+#, fuzzy
+#| msgid "&Go"
+msgctxt "@action:inmenu"
+msgid "Go"
+msgstr "&Гузаштан"
+
+#: dolphinmainwindow.cpp:1477
+#, fuzzy
+#| msgctxt "@title:menu"
+#| msgid "Tools"
+msgctxt "@action:inmenu"
+msgid "Tools"
+msgstr "Асбобҳо"
+
+#: dolphinmainwindow.cpp:1491
+msgctxt "@action:inmenu"
+msgid "Help"
+msgstr ""
+
+#: dolphinmainwindow.cpp:1589
+msgctxt "@action:inmenu File"
+msgid "New &Window"
+msgstr "Тирезаи &нав"
+
+#: dolphinmainwindow.cpp:1595
+msgctxt "@action:inmenu File"
+msgid "New Tab"
+msgstr "Ҷадвалбандии Нав"
+
+#: dolphinmainwindow.cpp:1601
+msgctxt "@action:inmenu File"
+msgid "Close Tab"
+msgstr "Хуруҷи ҷадвалбандӣ"
+
+#: dolphinmainwindow.cpp:1624
+msgctxt "@action:inmenu Edit"
+msgid "Paste"
+msgstr "Часпондан"
+
+#: dolphinmainwindow.cpp:1629
+msgctxt "@action:inmenu Edit"
+msgid "Select All"
+msgstr "Интихоби ҳама"
+
+#: dolphinmainwindow.cpp:1647
+msgctxt "@action:inmenu View"
+msgid "Reload"
+msgstr "Бозсозӣ"
+
+#: dolphinmainwindow.cpp:1653
+msgctxt "@action:inmenu View"
+msgid "Stop"
+msgstr "Манъ"
+
+#: dolphinmainwindow.cpp:1654
+msgctxt "@info"
+msgid "Stop loading"
+msgstr "Остановить загрузку"
+
+#: dolphinmainwindow.cpp:1659
+msgctxt "@action:inmenu Navigation Bar"
+msgid "Editable Location"
+msgstr "Макони тағйиршаванда"
+
+#: dolphinmainwindow.cpp:1664
+msgctxt "@action:inmenu Navigation Bar"
+msgid "Replace Location"
+msgstr "Ивази макон"
+
+#: dolphinmainwindow.cpp:1675
+msgid "Recently Closed Tabs"
+msgstr "Недавно закрытые вкладки"
+
+#: dolphinmainwindow.cpp:1681
+#, fuzzy
+#| msgid "Recently Closed Tabs"
+msgid "Empty Recently Closed Tabs"
+msgstr "Недавно закрытые вкладки"
+
+#: dolphinmainwindow.cpp:1698
+msgctxt "@action:inmenu Tools"
+msgid "Show Filter Bar"
+msgstr "Намоиши панели филтр"
+
+#: dolphinmainwindow.cpp:1704
+msgctxt "@action:inmenu Tools"
+msgid "Compare Files"
+msgstr "Сравнить файлы"
+
+#: dolphinmainwindow.cpp:1710
+msgctxt "@action:inmenu Tools"
+msgid "Open Terminal"
+msgstr "Кушодани терминал"
+
+#: dolphinmainwindow.cpp:1729
+msgctxt "@action:inmenu"
+msgid "Activate Next Tab"
+msgstr "Фаъолсозии ҷдвалбандии навбатӣ"
+
+#: dolphinmainwindow.cpp:1734
+msgctxt "@action:inmenu"
+msgid "Activate Previous Tab"
+msgstr "Фаъолсозии ҷдвалбандии пешина"
+
+#: dolphinmainwindow.cpp:1740
+msgctxt "@action:inmenu"
+msgid "Open in New Tab"
+msgstr "Кушодан дар ҷадвалбандии нав"
+
+#: dolphinmainwindow.cpp:1745
+msgctxt "@action:inmenu"
+msgid "Open in New Window"
+msgstr "Кушодан дар тирезаи нав"
+
+#: dolphinmainwindow.cpp:1755
+#, fuzzy
+#| msgctxt "@action:inmenu View"
+#| msgid "Panels"
+msgctxt "@action:inmenu Panels"
+msgid "Unlock Panels"
+msgstr "Панелҳо"
+
+#: dolphinmainwindow.cpp:1757
+#, fuzzy
+#| msgctxt "@action:inmenu View"
+#| msgid "Panels"
+msgctxt "@action:inmenu Panels"
+msgid "Lock Panels"
+msgstr "Панелҳо"
+
+#: dolphinmainwindow.cpp:1763
+msgctxt "@title:window"
+msgid "Information"
+msgstr "Иттилоот"
+
+#: dolphinmainwindow.cpp:1786
+msgctxt "@title:window"
+msgid "Folders"
+msgstr "Ҷузвдонҳо"
+
+#: dolphinmainwindow.cpp:1807
+msgctxt "@title:window Shell terminal"
+msgid "Terminal"
+msgstr "Терминал"
+
+#: dolphinmainwindow.cpp:1829
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "Search"
+msgctxt "@title:window"
+msgid "Search"
+msgstr "Ҷустуҷӯ"
+
+#: dolphinmainwindow.cpp:1860
+msgctxt "@title:window"
+msgid "Places"
+msgstr "Ҷойҳо"
+
+#: dolphinmainwindow.cpp:1890
+msgctxt "@action:inmenu View"
+msgid "Panels"
+msgstr "Панелҳо"
+
+#: dolphinmainwindow.cpp:1968
+msgctxt "@info:tooltip"
+msgid "Configure and control Dolphin"
+msgstr ""
+
+#: dolphinmainwindow.cpp:2101
+msgctxt "@action:intoolbar Close right view"
+msgid "Close"
+msgstr "Хуруҷ"
+
+#: dolphinmainwindow.cpp:2102
+msgctxt "@info"
+msgid "Close right view"
+msgstr "Закрыть правую панель"
+
+#: dolphinmainwindow.cpp:2105
+msgctxt "@action:intoolbar Close left view"
+msgid "Close"
+msgstr "Хуруҷ"
+
+#: dolphinmainwindow.cpp:2106
+msgctxt "@info"
+msgid "Close left view"
+msgstr "Закрыть левую панель"
+
+#: dolphinmainwindow.cpp:2110
+msgctxt "@action:intoolbar Split view"
+msgid "Split"
+msgstr "Ҷудо кардан"
+
+#: dolphinmainwindow.cpp:2111
+msgctxt "@info"
+msgid "Split view"
+msgstr "Две панели"
+
 #: main.cpp:35
 msgctxt "@title"
 msgid "Dolphin"
@@ -1351,487 +1830,13 @@ msgstr "Файлҳо ва феҳрастҳои аргумент интихоб �
 
 #: main.cpp:75
 msgctxt "@info:shell"
+msgid "Dolphin will get started with a split view."
+msgstr ""
+
+#: main.cpp:76
+msgctxt "@info:shell"
 msgid "Document to open"
 msgstr "Ҳуҷҷат барои кушоиш"
-
-#: dolphinviewcontainer.cpp:304
-msgctxt "@info:progress"
-msgid "Loading folder..."
-msgstr "Кушоиши ҷузвдон..."
-
-#: dolphinviewcontainer.cpp:315
-msgctxt "@info"
-msgid "Searching..."
-msgstr "Идет поиск..."
-
-#: dolphinviewcontainer.cpp:335
-msgctxt "@info:status"
-msgid "No items found."
-msgstr "Ничего не найдено."
-
-#: dolphinviewcontainer.cpp:414
-msgctxt "@info:status"
-msgid "Dolphin does not support web pages, the web browser has been launched"
-msgstr ""
-"Dolphin саҳифаҳои Интернетӣ пуштибонӣ намекунад, вале Интернет браузер оғоз "
-"карда шуд"
-
-#: dolphinviewcontainer.cpp:426
-msgctxt "@info:status"
-msgid "Protocol not supported by Dolphin, Konqueror has been launched"
-msgstr ""
-"Протокол бо барномаи Dolphin пуштибонӣ намешавад, вале Konqueror оғоз карда "
-"шуд"
-
-#: dolphinviewcontainer.cpp:433
-msgctxt "@info:status"
-msgid "Invalid protocol"
-msgstr "Протоколи нодуруст"
-
-#: dolphinmainwindow.cpp:249
-msgctxt "@info:status"
-msgid "Successfully copied."
-msgstr "Копирование успешно завершено."
-
-#: dolphinmainwindow.cpp:253
-msgctxt "@info:status"
-msgid "Successfully moved."
-msgstr "Перемещение успешно завершено."
-
-#: dolphinmainwindow.cpp:257
-msgctxt "@info:status"
-msgid "Successfully linked."
-msgstr "Ссылка успешно создана."
-
-#: dolphinmainwindow.cpp:261
-msgctxt "@info:status"
-msgid "Successfully moved to trash."
-msgstr "Успешно удалено в корзину."
-
-#: dolphinmainwindow.cpp:265
-msgctxt "@info:status"
-msgid "Successfully renamed."
-msgstr "Переименование успешно завершено."
-
-#: dolphinmainwindow.cpp:270
-msgctxt "@info:status"
-msgid "Created folder."
-msgstr "Ҷузвдон эҷод шуд."
-
-#: dolphinmainwindow.cpp:380
-msgctxt "@info"
-msgid "Go back"
-msgstr "Ба ақиб"
-
-#: dolphinmainwindow.cpp:386
-msgctxt "@info"
-msgid "Go forward"
-msgstr "Ба пеш"
-
-#: dolphinmainwindow.cpp:559
-msgctxt "@title:window"
-msgid "Confirmation"
-msgstr "Тасдтқот"
-
-#: dolphinmainwindow.cpp:563
-msgid "C&lose Current Tab"
-msgstr "Зак&рыть текущую вкладку"
-
-#: dolphinmainwindow.cpp:571
-msgid ""
-"You have multiple tabs open in this window, are you sure you want to quit?"
-msgstr "Закрыть окно с несколькими открытыми вкладками?"
-
-#: dolphinmainwindow.cpp:573
-msgid "Do not ask again"
-msgstr "Не задавать больше этот вопрос"
-
-#: dolphinmainwindow.cpp:1138
-msgctxt "@action:inmenu"
-msgid "New Tab"
-msgstr "Ҷадвалбандии нав"
-
-#: dolphinmainwindow.cpp:1141
-msgctxt "@action:inmenu"
-msgid "Detach Tab"
-msgstr "Ҷудосозии тиреза"
-
-#: dolphinmainwindow.cpp:1143
-msgctxt "@action:inmenu"
-msgid "Close Other Tabs"
-msgstr "Хуруҷи ҷадвалбандии дигар"
-
-#: dolphinmainwindow.cpp:1145
-msgctxt "@action:inmenu"
-msgid "Close Tab"
-msgstr "Хуруҷи ҷадвалбандӣ"
-
-#: dolphinmainwindow.cpp:1376
-#, fuzzy
-#| msgctxt "@title:menu"
-#| msgid "Location Bar"
-msgctxt "@action:inmenu"
-msgid "Location Bar"
-msgstr "Строка адреса"
-
-#: dolphinmainwindow.cpp:1384
-#, fuzzy
-#| msgid "&Go"
-msgctxt "@action:inmenu"
-msgid "Go"
-msgstr "&Гузаштан"
-
-#: dolphinmainwindow.cpp:1394
-#, fuzzy
-#| msgctxt "@title:menu"
-#| msgid "Tools"
-msgctxt "@action:inmenu"
-msgid "Tools"
-msgstr "Асбобҳо"
-
-#: dolphinmainwindow.cpp:1408
-msgctxt "@action:inmenu"
-msgid "Help"
-msgstr ""
-
-#: dolphinmainwindow.cpp:1600 dolphincontextmenu.cpp:254
-msgctxt "@title:menu Create new folder, file, link, etc."
-msgid "Create New"
-msgstr "Эҷоди нав"
-
-#: dolphinmainwindow.cpp:1607
-msgctxt "@action:inmenu File"
-msgid "New &Window"
-msgstr "Тирезаи &нав"
-
-#: dolphinmainwindow.cpp:1613
-msgctxt "@action:inmenu File"
-msgid "New Tab"
-msgstr "Ҷадвалбандии Нав"
-
-#: dolphinmainwindow.cpp:1619
-msgctxt "@action:inmenu File"
-msgid "Close Tab"
-msgstr "Хуруҷи ҷадвалбандӣ"
-
-#: dolphinmainwindow.cpp:1642
-msgctxt "@action:inmenu Edit"
-msgid "Paste"
-msgstr "Часпондан"
-
-#: dolphinmainwindow.cpp:1647
-msgctxt "@action:inmenu Edit"
-msgid "Select All"
-msgstr "Интихоби ҳама"
-
-#: dolphinmainwindow.cpp:1652 dolphinpart.cpp:168
-msgctxt "@action:inmenu Edit"
-msgid "Invert Selection"
-msgstr "Табдилдиҳии интихоб"
-
-#: dolphinmainwindow.cpp:1665
-msgctxt "@action:inmenu View"
-msgid "Reload"
-msgstr "Бозсозӣ"
-
-#: dolphinmainwindow.cpp:1671
-msgctxt "@action:inmenu View"
-msgid "Stop"
-msgstr "Манъ"
-
-#: dolphinmainwindow.cpp:1672
-msgctxt "@info"
-msgid "Stop loading"
-msgstr "Остановить загрузку"
-
-#: dolphinmainwindow.cpp:1677
-msgctxt "@action:inmenu Navigation Bar"
-msgid "Editable Location"
-msgstr "Макони тағйиршаванда"
-
-#: dolphinmainwindow.cpp:1682
-msgctxt "@action:inmenu Navigation Bar"
-msgid "Replace Location"
-msgstr "Ивази макон"
-
-#: dolphinmainwindow.cpp:1693
-msgid "Recently Closed Tabs"
-msgstr "Недавно закрытые вкладки"
-
-#: dolphinmainwindow.cpp:1699
-#, fuzzy
-#| msgid "Recently Closed Tabs"
-msgid "Empty Recently Closed Tabs"
-msgstr "Недавно закрытые вкладки"
-
-#: dolphinmainwindow.cpp:1716
-msgctxt "@action:inmenu Tools"
-msgid "Show Filter Bar"
-msgstr "Намоиши панели филтр"
-
-#: dolphinmainwindow.cpp:1722
-msgctxt "@action:inmenu Tools"
-msgid "Compare Files"
-msgstr "Сравнить файлы"
-
-#: dolphinmainwindow.cpp:1728
-msgctxt "@action:inmenu Tools"
-msgid "Open Terminal"
-msgstr "Кушодани терминал"
-
-#: dolphinmainwindow.cpp:1747
-msgctxt "@action:inmenu"
-msgid "Activate Next Tab"
-msgstr "Фаъолсозии ҷдвалбандии навбатӣ"
-
-#: dolphinmainwindow.cpp:1752
-msgctxt "@action:inmenu"
-msgid "Activate Previous Tab"
-msgstr "Фаъолсозии ҷдвалбандии пешина"
-
-#: dolphinmainwindow.cpp:1758
-msgctxt "@action:inmenu"
-msgid "Open in New Tab"
-msgstr "Кушодан дар ҷадвалбандии нав"
-
-#: dolphinmainwindow.cpp:1763
-msgctxt "@action:inmenu"
-msgid "Open in New Window"
-msgstr "Кушодан дар тирезаи нав"
-
-#: dolphinmainwindow.cpp:1773
-#, fuzzy
-#| msgctxt "@action:inmenu View"
-#| msgid "Panels"
-msgctxt "@action:inmenu Panels"
-msgid "Unlock Panels"
-msgstr "Панелҳо"
-
-#: dolphinmainwindow.cpp:1775
-#, fuzzy
-#| msgctxt "@action:inmenu View"
-#| msgid "Panels"
-msgctxt "@action:inmenu Panels"
-msgid "Lock Panels"
-msgstr "Панелҳо"
-
-#: dolphinmainwindow.cpp:1781
-msgctxt "@title:window"
-msgid "Information"
-msgstr "Иттилоот"
-
-#: dolphinmainwindow.cpp:1804
-msgctxt "@title:window"
-msgid "Folders"
-msgstr "Ҷузвдонҳо"
-
-#: dolphinmainwindow.cpp:1825
-msgctxt "@title:window Shell terminal"
-msgid "Terminal"
-msgstr "Терминал"
-
-#: dolphinmainwindow.cpp:1847
-#, fuzzy
-#| msgctxt "@action:button"
-#| msgid "Search"
-msgctxt "@title:window"
-msgid "Search"
-msgstr "Ҷустуҷӯ"
-
-#: dolphinmainwindow.cpp:1878
-msgctxt "@title:window"
-msgid "Places"
-msgstr "Ҷойҳо"
-
-#: dolphinmainwindow.cpp:1908
-msgctxt "@action:inmenu View"
-msgid "Panels"
-msgstr "Панелҳо"
-
-#: dolphinmainwindow.cpp:1986
-msgctxt "@info:tooltip"
-msgid "Configure and control Dolphin"
-msgstr ""
-
-#: dolphinmainwindow.cpp:2119
-msgctxt "@action:intoolbar Close right view"
-msgid "Close"
-msgstr "Хуруҷ"
-
-#: dolphinmainwindow.cpp:2120
-msgctxt "@info"
-msgid "Close right view"
-msgstr "Закрыть правую панель"
-
-#: dolphinmainwindow.cpp:2123
-msgctxt "@action:intoolbar Close left view"
-msgid "Close"
-msgstr "Хуруҷ"
-
-#: dolphinmainwindow.cpp:2124
-msgctxt "@info"
-msgid "Close left view"
-msgstr "Закрыть левую панель"
-
-#: dolphinmainwindow.cpp:2128
-msgctxt "@action:intoolbar Split view"
-msgid "Split"
-msgstr "Ҷудо кардан"
-
-#: dolphinmainwindow.cpp:2129
-msgctxt "@info"
-msgid "Split view"
-msgstr "Две панели"
-
-#: dolphincontextmenu.cpp:170
-msgctxt "@action:inmenu"
-msgid "Empty Trash"
-msgstr "Сабади холӣ"
-
-#: dolphincontextmenu.cpp:176 dolphincontextmenu.cpp:347
-msgctxt "@action:inmenu Add current folder to places"
-msgid "Add to Places"
-msgstr "Илова ба маконҳо"
-
-#: dolphincontextmenu.cpp:192
-msgctxt "@info"
-msgid "Do you really want to empty the Trash? All items will be deleted."
-msgstr "Шумо мехоҳед сабадро холӣ кунед? Ҳамаи ҷузъҳо нест карда мешаванд."
-
-#: dolphincontextmenu.cpp:196
-msgctxt "@action:button"
-msgid "Empty Trash"
-msgstr "Холӣ кардани сабад"
-
-#: dolphincontextmenu.cpp:205
-msgctxt "@label"
-msgid "Trash"
-msgstr "Сабад"
-
-#: dolphincontextmenu.cpp:215
-msgctxt "@action:inmenu"
-msgid "Restore"
-msgstr "Бозсозӣ"
-
-#: dolphincontextmenu.cpp:267
-msgctxt "@action:inmenu Add selected folder to places"
-msgid "Add to Places"
-msgstr "Илова ба маконҳо"
-
-#: dolphincontextmenu.cpp:274
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Open in New Window"
-msgctxt "@action:inmenu"
-msgid "Open Path in New Window"
-msgstr "Кушодан дар тирезаи нав"
-
-#: dolphincontextmenu.cpp:280
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Open in New Tab"
-msgctxt "@action:inmenu"
-msgid "Open Path in New Tab"
-msgstr "Кушодан дар ҷадвалбандии нав"
-
-#: dolphincontextmenu.cpp:446
-msgctxt "@action:inmenu"
-msgid "Paste Into Folder"
-msgstr "Часпондан ба ҷузвдон"
-
-#: dolphincontextmenu.cpp:558
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Move to Trash"
-msgctxt "@action:inmenu"
-msgid "&Move to Trash"
-msgstr "Таҳвилкунӣ ба сабад"
-
-#: dolphincontextmenu.cpp:561
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Delete"
-msgctxt "@action:inmenu"
-msgid "&Delete"
-msgstr "Нест кардан"
-
-#: dolphinpart.cpp:149
-msgctxt "@action:inmenu Edit"
-msgid "&Edit File Type..."
-msgstr "&Таҳрири намуди файл..."
-
-#: dolphinpart.cpp:153
-msgctxt "@action:inmenu Edit"
-msgid "Select Items Matching..."
-msgstr "Выделить по маске..."
-
-#: dolphinpart.cpp:158
-msgctxt "@action:inmenu Edit"
-msgid "Unselect Items Matching..."
-msgstr "Снять выделение по маске..."
-
-#: dolphinpart.cpp:164
-msgctxt "@action:inmenu Edit"
-msgid "Unselect All"
-msgstr "Снять выделение со всего"
-
-#: dolphinpart.cpp:181
-msgctxt "@action:inmenu Go"
-msgid "App&lications"
-msgstr "&Барномаҳо"
-
-#: dolphinpart.cpp:184
-msgctxt "@action:inmenu Go"
-msgid "&Network Folders"
-msgstr "&Ҷузвдонҳои Интернетӣ"
-
-#: dolphinpart.cpp:187
-msgctxt "@action:inmenu Go"
-msgid "Sett&ings"
-msgstr "&Танзимотҳо"
-
-#: dolphinpart.cpp:190
-msgctxt "@action:inmenu Go"
-msgid "Trash"
-msgstr "Сабад"
-
-#: dolphinpart.cpp:193
-msgctxt "@action:inmenu Go"
-msgid "Autostart"
-msgstr "Худоғозӣ"
-
-#: dolphinpart.cpp:198
-msgctxt "@action:inmenu Tools"
-msgid "Find File..."
-msgstr "Ҷустуҷӯи файл..."
-
-#: dolphinpart.cpp:206
-msgctxt "@action:inmenu Tools"
-msgid "Open &Terminal"
-msgstr "Кушодани &Терминал"
-
-#: dolphinpart.cpp:275
-msgctxt "@title"
-msgid "Dolphin Part"
-msgstr "Қисми Dolphin"
-
-#: dolphinpart.cpp:464
-msgctxt "@title:window"
-msgid "Select"
-msgstr "Выделить"
-
-#: dolphinpart.cpp:465
-msgid "Select all items matching this pattern:"
-msgstr "Выделить все файлы по маске:"
-
-#: dolphinpart.cpp:471
-msgctxt "@title:window"
-msgid "Unselect"
-msgstr "Снять выделение"
-
-#: dolphinpart.cpp:472
-msgid "Unselect all items matching this pattern:"
-msgstr "Снять выделение файлов по данной маске:"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
