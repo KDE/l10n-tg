@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcminput\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:06+0100\n"
+"POT-Creation-Date: 2011-04-21 03:46+0200\n"
 "PO-Revision-Date: 2010-01-29 22:17+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik\n"
@@ -548,7 +548,7 @@ msgstr ""
 "libusb, но получить доступ к мыши невозможно. Вероятно, это вызвано "
 "проблемой с правами - обратитесь к руководству, чтобы исправить их"
 
-#. i18n: file: xcursor/themepage.ui:31
+#. i18n: file: xcursor/themepage.ui:17
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:68
 msgid "Select the cursor theme you want to use (hover preview to test cursor):"
@@ -556,36 +556,52 @@ msgstr ""
 "Выберите тему курсоров, которую вы хотите использовать (наведите на образец "
 "для тестирования)"
 
-#. i18n: file: xcursor/themepage.ui:38
-#. i18n: ectx: property (text), widget (KPushButton, removeButton)
+#. i18n: file: xcursor/themepage.ui:56
+#. i18n: ectx: property (toolTip), widget (KPushButton, installKnsButton)
 #: rc.cpp:71
+msgid "Get new color schemes from the Internet"
+msgstr ""
+
+#. i18n: file: xcursor/themepage.ui:59
+#. i18n: ectx: property (text), widget (KPushButton, installKnsButton)
+#: rc.cpp:74
+#, fuzzy
+#| msgid "Install New Theme..."
+msgid "Get New Theme..."
+msgstr "Коргузории Мавзӯи Нав..."
+
+#. i18n: file: xcursor/themepage.ui:66
+#. i18n: ectx: property (text), widget (KPushButton, installButton)
+#: rc.cpp:77
+#, fuzzy
+#| msgid "Install New Theme..."
+msgid "Install From File..."
+msgstr "Коргузории Мавзӯи Нав..."
+
+#. i18n: file: xcursor/themepage.ui:73
+#. i18n: ectx: property (text), widget (KPushButton, removeButton)
+#: rc.cpp:80
 msgid "Remove Theme"
 msgstr "Хориҷкунии Мавзӯъ"
-
-#. i18n: file: xcursor/themepage.ui:45
-#. i18n: ectx: property (text), widget (KPushButton, installButton)
-#: rc.cpp:74
-msgid "Install New Theme..."
-msgstr "Коргузории Мавзӯи Нав..."
 
 #: core/themepage.cpp:54
 msgid "Select the cursor theme you want to use:"
 msgstr "Мавзӯъи нишоннаморо, ки истифода бурдан мехоҳед, интихоб намоед:"
 
-#: core/themepage.cpp:59 xcursor/thememodel.cpp:67
+#: core/themepage.cpp:59 xcursor/thememodel.cpp:75
 msgid "Name"
 msgstr "Ном"
 
-#: core/themepage.cpp:59 xcursor/thememodel.cpp:70
+#: core/themepage.cpp:59 xcursor/thememodel.cpp:78
 msgid "Description"
 msgstr "Тасвир"
 
-#: core/themepage.cpp:100 xcursor/themepage.cpp:196
+#: core/themepage.cpp:100 xcursor/themepage.cpp:201
 msgid "You have to restart KDE for these changes to take effect."
 msgstr ""
 "Барои он ки ин тағиротҳо натиҷа диҳанд, шумо баяд KDE-ро аз нав оғозёбед."
 
-#: core/themepage.cpp:101 xcursor/themepage.cpp:197
+#: core/themepage.cpp:101 xcursor/themepage.cpp:202
 msgid "Cursor Settings Changed"
 msgstr "Гузоришҳои Нишоннамо Тағир ёфтаанд"
 
@@ -629,16 +645,16 @@ msgstr "KDE Классикӣ"
 msgid "The default cursor theme in KDE 2 and 3"
 msgstr "Основная тема курсоров в KDE 2 и 3"
 
-#: xcursor/themepage.cpp:284
+#: xcursor/themepage.cpp:298
 msgid "Drag or Type Theme URL"
 msgstr "Кашолакунӣ ё Хориҷкунии Мавзӯи URL"
 
-#: xcursor/themepage.cpp:295
+#: xcursor/themepage.cpp:309
 #, kde-format
 msgid "Unable to find the cursor theme archive %1."
 msgstr "Не удаётся найти архив темы курсоров %1."
 
-#: xcursor/themepage.cpp:298
+#: xcursor/themepage.cpp:312
 #, kde-format
 msgid ""
 "Unable to download the cursor theme archive; please check that the address %"
@@ -646,12 +662,12 @@ msgid ""
 msgstr ""
 "Не удаётся загрузить архив темы курсоров, Убедитесь, что адрес %1 верен."
 
-#: xcursor/themepage.cpp:307
+#: xcursor/themepage.cpp:321
 #, kde-format
 msgid "The file %1 does not appear to be a valid cursor theme archive."
 msgstr "Файли %1 ҳамчун нишоннамои дурусти бойгонии мавзӯъҳо наменамояд."
 
-#: xcursor/themepage.cpp:322
+#: xcursor/themepage.cpp:336
 msgid ""
 "<qt>You cannot delete the theme you are currently using.<br />You have to "
 "switch to another theme first.</qt>"
@@ -659,7 +675,7 @@ msgstr ""
 "<qt>Вы не можете удалить эту тему, потому что она сейчас используется.<br /"
 ">Сначала необходимо переключиться на другую тему.</qt>"
 
-#: xcursor/themepage.cpp:328
+#: xcursor/themepage.cpp:342
 #, kde-format
 msgid ""
 "<qt>Are you sure you want to remove the <i>%1</i> cursor theme?<br />This "
@@ -668,11 +684,11 @@ msgstr ""
 "<qt>Вы действительно хотите удалить тему курсоров<i>%1</i>? <br />Все файлы, "
 "установленные этой темой, будут удалены.</qt>"
 
-#: xcursor/themepage.cpp:334
+#: xcursor/themepage.cpp:348
 msgid "Confirmation"
 msgstr "Мувофиқаткунӣ"
 
-#: xcursor/themepage.cpp:391
+#: xcursor/themepage.cpp:405
 #, kde-format
 msgid ""
 "A theme named %1 already exists in your icon theme folder. Do you want "
@@ -681,7 +697,7 @@ msgstr ""
 "Файл бо номи %1 аллакай дар феҳристи мавзӯъҳои тасвирӣ мавҷуд аст. Оё "
 "мехоҳед, ки онро бо яке аз инҳо ҷойиваз кунед?"
 
-#: xcursor/themepage.cpp:395
+#: xcursor/themepage.cpp:409
 msgid "Overwrite Theme?"
 msgstr "Перезаписать тему?"
 
