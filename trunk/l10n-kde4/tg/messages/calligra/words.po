@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-06 03:32+0200\n"
+"POT-Creation-Date: 2011-05-07 03:32+0200\n"
 "PO-Revision-Date: 2008-06-10 01:45+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik Language\n"
@@ -674,45 +674,71 @@ msgstr "Талаффузи Тафтиши Натиҷа"
 msgid "Change Variable To"
 msgstr "Дигаргун кунед Ноустувор Ба"
 
-#: part/KWDocument.cpp:574
+#: part/KWDLoader.cpp:74
+msgid "Invalid document. No mimetype specified."
+msgstr "Ҳуҷҷати нодуруст. Намуди mime номуайян аст."
+
+#: part/KWDLoader.cpp:78
+#, kde-format
+msgid ""
+"Invalid document. Expected mimetype application/x-kword or application/vnd."
+"kde.kword, got %1"
+msgstr ""
+"Нодурустии андозаи ҳуҷат.Тахмин кардани намуди MIME apрlication/x-kword еки "
+"application/vnd. kde.kword,ба даст оварда шуд%1"
+
+#: part/KWDLoader.cpp:104
+#, kde-format
+msgid "Invalid document. Paper size: %1x%2"
+msgstr "Ҳуҷҷати нодуруст. Андозаи қоғаз: %1x%2"
+
+#: part/KWDLoader.cpp:691
+msgid "Unable to locate footnote text"
+msgstr ""
+
+#: part/KWDLoader.cpp:717
+msgid "Unable to locate note-text"
+msgstr ""
+
+#: part/KWDocument.cpp:573
 #, fuzzy
 #| msgid "Copy%1-%2"
 msgid "Copy"
 msgstr "Нусхаи%1-%2"
 
-#: part/KWDocument.cpp:619
+#: part/KWDocument.cpp:618
 #, fuzzy
 #| msgctxt "Style name"
 #| msgid "Head 1"
 msgid "Head 1"
 msgstr "Асосӣ 1"
 
-#: part/KWDocument.cpp:626
+#: part/KWDocument.cpp:625
 #, fuzzy
 #| msgctxt "Style name"
 #| msgid "Head 2"
 msgid "Head 2"
 msgstr "Асосӣ 2"
 
-#: part/KWDocument.cpp:633
+#: part/KWDocument.cpp:632
 #, fuzzy
 #| msgctxt "Style name"
 #| msgid "Head 3"
 msgid "Head 3"
 msgstr "Асосӣ 3"
 
-#: part/KWDocument.cpp:640
+#: part/KWDocument.cpp:639
 #, fuzzy
 #| msgctxt "Style name"
 #| msgid "Bullet List"
 msgid "Bullet List"
 msgstr "Рӯйхати тир"
 
-#: part/KWDocument.cpp:993
+#: part/KWDocument.cpp:986
 msgid "Can not find needed text component, Words will quit now"
 msgstr ""
 
-#: part/KWDocument.cpp:994
+#: part/KWDocument.cpp:987
 msgid "Installation Error"
 msgstr ""
 
@@ -774,17 +800,17 @@ msgstr "Нест кардани чорчӯба"
 msgid "Insert Page Style"
 msgstr "Мондани саҳифа"
 
-#: part/commands/KWPageRemoveCommand.cpp:32
-#, fuzzy
-#| msgid "Remove entry"
-msgid "Remove Page"
-msgstr "Нест кардани вуруд"
-
 #: part/commands/KWPageStylePropertiesCommand.cpp:36
 #, fuzzy
 #| msgid "Frame Properties"
 msgid "Page Properties"
 msgstr "Хосиятҳои чорчӯба"
+
+#: part/commands/KWPageRemoveCommand.cpp:33
+#, fuzzy
+#| msgid "Remove entry"
+msgid "Remove Page"
+msgstr "Нест кардани вуруд"
 
 #: part/dialogs/KWFrameDialog.cpp:38 part/dialogs/KWShapeConfigFactory.cpp:94
 msgid "Options"
@@ -1311,32 +1337,6 @@ msgstr "Ниҳондани матн"
 #| msgid "Insert Page"
 msgid "Other text"
 msgstr "Мондани саҳифа"
-
-#: part/KWDLoader.cpp:74
-msgid "Invalid document. No mimetype specified."
-msgstr "Ҳуҷҷати нодуруст. Намуди mime номуайян аст."
-
-#: part/KWDLoader.cpp:78
-#, kde-format
-msgid ""
-"Invalid document. Expected mimetype application/x-kword or application/vnd."
-"kde.kword, got %1"
-msgstr ""
-"Нодурустии андозаи ҳуҷат.Тахмин кардани намуди MIME apрlication/x-kword еки "
-"application/vnd. kde.kword,ба даст оварда шуд%1"
-
-#: part/KWDLoader.cpp:104
-#, kde-format
-msgid "Invalid document. Paper size: %1x%2"
-msgstr "Ҳуҷҷати нодуруст. Андозаи қоғаз: %1x%2"
-
-#: part/KWDLoader.cpp:690
-msgid "Unable to locate footnote text"
-msgstr ""
-
-#: part/KWDLoader.cpp:716
-msgid "Unable to locate note-text"
-msgstr ""
 
 #: part/KWView.cpp:256
 #, fuzzy
