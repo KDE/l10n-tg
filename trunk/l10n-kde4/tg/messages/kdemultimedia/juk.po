@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: juk\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-14 04:14+0200\n"
+"POT-Creation-Date: 2011-05-16 04:06+0200\n"
 "PO-Revision-Date: 2004-07-01 16:58+0000\n"
 "Last-Translator: Hiromon <H_Abrorova@rambler.ru>\n"
 "Language-Team:  <tajik>\n"
@@ -620,14 +620,10 @@ msgstr "Мувофиқатҳо пайдо нагардиданд."
 msgid "Error connecting to MusicBrainz server."
 msgstr "Дархост ба хидматрасони MusicBrainz..."
 
-#: nowplaying.cpp:309
+#: nowplaying.cpp:307
 #, fuzzy
 msgid "back to playlist"
 msgstr "Ҷустуҷӯи Рӯйхати Бозикуниҳо"
-
-#: nowplaying.cpp:340 nowplaying.cpp:355 playlistcollection.cpp:558
-msgid "History"
-msgstr "Таърих"
 
 #: playermanager.cpp:480
 #, kde-format
@@ -679,7 +675,7 @@ msgstr "Хориҷкунии нақша"
 
 #. i18n: file: tagguesserconfigdlgwidget.ui:100
 #. i18n: ectx: property (text), widget (KPushButton, bRemove)
-#: playlistbox.cpp:351 rc.cpp:253
+#: playlistbox.cpp:351 rc.cpp:307
 #, fuzzy
 msgid "&Remove"
 msgstr "&Хориҷ кардан"
@@ -730,6 +726,10 @@ msgstr "Ҷустуҷӯи Рӯйхати Бозикуниҳо"
 #: playlistcollection.cpp:519
 msgid "Create Folder Playlist"
 msgstr "Офаридани Феҳристи Рӯйхати бозикуниҳо"
+
+#: playlistcollection.cpp:558
+msgid "History"
+msgstr "Таърих"
 
 #: playlistcollection.cpp:740
 msgid "Please enter a name for this playlist:"
@@ -880,7 +880,7 @@ msgstr "Дар ҳақиқат мехоҳед, ки ин пунктро аз ди
 
 #. i18n: file: trackpickerdialogbase.ui:97
 #. i18n: ectx: property (text), widget (K3ListView, trackList)
-#: playlist.cpp:1515 rc.cpp:262
+#: playlist.cpp:1515 rc.cpp:316
 msgid "Track Name"
 msgstr "Номи Шиор"
 
@@ -890,7 +890,7 @@ msgstr "Номи Шиор"
 #. i18n: ectx: property (text), widget (QLineEdit, m_exampleArtist)
 #. i18n: file: trackpickerdialogbase.ui:108
 #. i18n: ectx: property (text), widget (K3ListView, trackList)
-#: playlist.cpp:1516 rc.cpp:50 rc.cpp:118 rc.cpp:265 tagrenameroptions.cpp:102
+#: playlist.cpp:1516 rc.cpp:50 rc.cpp:118 rc.cpp:319 tagrenameroptions.cpp:102
 msgid "Artist"
 msgstr "Иҷрогар"
 
@@ -898,7 +898,7 @@ msgstr "Иҷрогар"
 #. i18n: ectx: property (text), widget (QLineEdit, m_exampleAlbum)
 #. i18n: file: trackpickerdialogbase.ui:119
 #. i18n: ectx: property (text), widget (K3ListView, trackList)
-#: playlist.cpp:1517 rc.cpp:121 rc.cpp:268 tagrenameroptions.cpp:106
+#: playlist.cpp:1517 rc.cpp:121 rc.cpp:322 tagrenameroptions.cpp:106
 msgid "Album"
 msgstr "Албом"
 
@@ -908,7 +908,7 @@ msgstr ""
 
 #. i18n: file: trackpickerdialogbase.ui:130
 #. i18n: ectx: property (text), widget (K3ListView, trackList)
-#: playlist.cpp:1519 rc.cpp:271 tagrenameroptions.cpp:110
+#: playlist.cpp:1519 rc.cpp:325 tagrenameroptions.cpp:110
 #, fuzzy
 #| msgid "Track"
 msgctxt "cd track number"
@@ -923,7 +923,7 @@ msgstr "Услуб"
 
 #. i18n: file: trackpickerdialogbase.ui:141
 #. i18n: ectx: property (text), widget (K3ListView, trackList)
-#: playlist.cpp:1521 rc.cpp:274 tagrenameroptions.cpp:119
+#: playlist.cpp:1521 rc.cpp:328 tagrenameroptions.cpp:119
 msgid "Year"
 msgstr "Сол"
 
@@ -941,7 +941,7 @@ msgstr "Шарҳдиҳӣ"
 
 #. i18n: file: trackpickerdialogbase.ui:21
 #. i18n: ectx: property (title), widget (QGroupBox, fileInfoGroup)
-#: playlist.cpp:1525 rc.cpp:256
+#: playlist.cpp:1525 rc.cpp:310
 msgid "File Name"
 msgstr "Номи Файл"
 
@@ -1366,16 +1366,111 @@ msgstr ""
 msgid "14 ->"
 msgstr ""
 
+#. i18n: file: tageditor.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, TagEditor)
+#: rc.cpp:202
+msgid "Form"
+msgstr ""
+
+#. i18n: file: tageditor.ui:22
+#. i18n: ectx: property (text), widget (QLabel, fileNameLabel)
+#: rc.cpp:205
+#, fuzzy
+#| msgid "&File name:"
+msgid "F&ile name:"
+msgstr "Номи &файл:"
+
+#. i18n: file: tageditor.ui:32
+#. i18n: ectx: property (text), widget (QLabel, trackLabel)
+#: rc.cpp:208
+#, fuzzy
+#| msgid "T&rack:"
+msgid "T&rack:"
+msgstr "&Шиор:"
+
+#. i18n: file: tageditor.ui:42
+#. i18n: ectx: property (text), widget (QLabel, artistNameLabel)
+#: rc.cpp:211
+msgid "&Artist name:"
+msgstr "Номи &иҷрогар:"
+
+#. i18n: file: tageditor.ui:52
+#. i18n: ectx: property (text), widget (QLabel, albumNameLabel)
+#: rc.cpp:214
+msgid "Album &name:"
+msgstr "&Номи албом:"
+
+#. i18n: file: tageditor.ui:62
+#. i18n: ectx: property (text), widget (QLabel, genreLabel)
+#: rc.cpp:217
+msgid "&Genre:"
+msgstr "&Услуб:"
+
+#. i18n: file: tageditor.ui:75
+#. i18n: ectx: property (text), widget (QLabel, yearLabel)
+#: rc.cpp:220
+msgid "&Year:"
+msgstr "&Сол:"
+
+#. i18n: file: tageditor.ui:91
+#. i18n: ectx: property (text), widget (QLabel, lengthLabel)
+#: rc.cpp:223
+#, fuzzy
+#| msgid "Length:"
+msgid "&Length:"
+msgstr "Дарозӣ:"
+
+#. i18n: file: tageditor.ui:101
+#. i18n: ectx: property (text), widget (QLabel, bitrateLabel)
+#: rc.cpp:226
+#, fuzzy
+#| msgid "Bitrate:"
+msgid "&Bitrate:"
+msgstr "Зуддии битӣ:"
+
+#. i18n: file: tageditor.ui:111
+#. i18n: ectx: property (text), widget (QLabel, commentLabel)
+#: rc.cpp:229
+msgid "&Comment:"
+msgstr "&Шарҳдиҳӣ:"
+
+#. i18n: file: tageditor.ui:179
+#. i18n: ectx: property (text), widget (QLabel, trackNameLabel)
+#: rc.cpp:232
+#, fuzzy
+#| msgid "&Track name:"
+msgid "Trac&k name:"
+msgstr "Номи &шиор:"
+
+#. i18n: file: tageditor.ui:189
+#. i18n: ectx: property (text), widget (QCheckBox, artistNameEnable)
+#. i18n: file: tageditor.ui:199
+#. i18n: ectx: property (text), widget (QCheckBox, trackNameEnable)
+#. i18n: file: tageditor.ui:206
+#. i18n: ectx: property (text), widget (QCheckBox, albumNameEnable)
+#. i18n: file: tageditor.ui:213
+#. i18n: ectx: property (text), widget (QCheckBox, genreEnable)
+#. i18n: file: tageditor.ui:220
+#. i18n: ectx: property (text), widget (QCheckBox, trackEnable)
+#. i18n: file: tageditor.ui:227
+#. i18n: ectx: property (text), widget (QCheckBox, yearEnable)
+#. i18n: file: tageditor.ui:234
+#. i18n: ectx: property (text), widget (QCheckBox, commentEnable)
+#: rc.cpp:235 rc.cpp:238 rc.cpp:241 rc.cpp:244 rc.cpp:247 rc.cpp:250
+#: rc.cpp:253
+msgid "Enable"
+msgstr "Даргиронидан"
+
 #. i18n: file: tagguesserconfigdlgwidget.ui:18
 #. i18n: ectx: property (toolTip), widget (QTreeView, lvSchemes)
-#: rc.cpp:202
+#: rc.cpp:256
 #, fuzzy
 msgid "Currently used file name schemes"
 msgstr "Нақшаҳои номи файли дар айни замон истифодашаванда"
 
 #. i18n: file: tagguesserconfigdlgwidget.ui:29
 #. i18n: ectx: property (whatsThis), widget (QTreeView, lvSchemes)
-#: rc.cpp:206
+#: rc.cpp:260
 #, fuzzy, no-c-format
 msgid ""
 "Here you can see the currently configured file name schemes which the "
@@ -1415,13 +1510,13 @@ msgstr ""
 
 #. i18n: file: tagguesserconfigdlgwidget.ui:42
 #. i18n: ectx: property (toolTip), widget (QToolButton, bMoveUp)
-#: rc.cpp:217
+#: rc.cpp:271
 msgid "Move scheme up"
 msgstr "Ҷойивазкунии нақша ба боло"
 
 #. i18n: file: tagguesserconfigdlgwidget.ui:45
 #. i18n: ectx: property (whatsThis), widget (QToolButton, bMoveUp)
-#: rc.cpp:220
+#: rc.cpp:274
 msgid ""
 "Press this button to move the currently selected scheme one step upwards."
 msgstr ""
@@ -1430,13 +1525,13 @@ msgstr ""
 
 #. i18n: file: tagguesserconfigdlgwidget.ui:55
 #. i18n: ectx: property (toolTip), widget (QToolButton, bMoveDown)
-#: rc.cpp:223
+#: rc.cpp:277
 msgid "Move scheme down"
 msgstr "Ҷойивазкунии нақша ба поён"
 
 #. i18n: file: tagguesserconfigdlgwidget.ui:58
 #. i18n: ectx: property (whatsThis), widget (QToolButton, bMoveDown)
-#: rc.cpp:226
+#: rc.cpp:280
 msgid ""
 "Press this button to move the currently selected scheme one step downwards."
 msgstr ""
@@ -1445,13 +1540,13 @@ msgstr ""
 
 #. i18n: file: tagguesserconfigdlgwidget.ui:68
 #. i18n: ectx: property (toolTip), widget (KPushButton, bAdd)
-#: rc.cpp:229
+#: rc.cpp:283
 msgid "Add a new scheme"
 msgstr "Илова кардани нақшаи нав"
 
 #. i18n: file: tagguesserconfigdlgwidget.ui:71
 #. i18n: ectx: property (whatsThis), widget (KPushButton, bAdd)
-#: rc.cpp:232
+#: rc.cpp:286
 #, fuzzy
 msgid "Press this button to add a new file name scheme to the end of the list."
 msgstr ""
@@ -1460,38 +1555,38 @@ msgstr ""
 
 #. i18n: file: tagguesserconfigdlgwidget.ui:74
 #. i18n: ectx: property (text), widget (KPushButton, bAdd)
-#: rc.cpp:235
+#: rc.cpp:289
 msgid "&Add"
 msgstr "&Илова кардан"
 
 #. i18n: file: tagguesserconfigdlgwidget.ui:81
 #. i18n: ectx: property (toolTip), widget (KPushButton, bModify)
-#: rc.cpp:238
+#: rc.cpp:292
 msgid "Modify scheme"
 msgstr "Тағири нақша"
 
 #. i18n: file: tagguesserconfigdlgwidget.ui:84
 #. i18n: ectx: property (whatsThis), widget (KPushButton, bModify)
-#: rc.cpp:241
+#: rc.cpp:295
 msgid "Press this button to modify the currently selected scheme."
 msgstr "Барои тағири нақшаи интихобкардаи ҷорӣ ин тугмаро пахш кунед."
 
 #. i18n: file: tagguesserconfigdlgwidget.ui:87
 #. i18n: ectx: property (text), widget (KPushButton, bModify)
-#: rc.cpp:244
+#: rc.cpp:298
 #, fuzzy
 msgid "&Modify"
 msgstr "Тағири нақша"
 
 #. i18n: file: tagguesserconfigdlgwidget.ui:94
 #. i18n: ectx: property (toolTip), widget (KPushButton, bRemove)
-#: rc.cpp:247
+#: rc.cpp:301
 msgid "Remove scheme"
 msgstr "Хориҷкунии нақша"
 
 #. i18n: file: tagguesserconfigdlgwidget.ui:97
 #. i18n: ectx: property (whatsThis), widget (KPushButton, bRemove)
-#: rc.cpp:250
+#: rc.cpp:304
 msgid ""
 "Press this button to remove the currently selected scheme from the list."
 msgstr ""
@@ -1500,7 +1595,7 @@ msgstr ""
 
 #. i18n: file: trackpickerdialogbase.ui:64
 #. i18n: ectx: property (title), widget (QGroupBox, trackInfoGroup)
-#: rc.cpp:259
+#: rc.cpp:313
 msgid "Select Best Possible Match"
 msgstr "Интихоби Мувофиқати Имконпазири Беҳтарин"
 
@@ -1588,68 +1683,21 @@ msgctxt "a playing track, %1 is artist, %2 is song title"
 msgid "%1 - <i>%2</i>"
 msgstr ""
 
-#: tageditor.cpp:480
+#: tageditor.cpp:485
 msgid "Show &Tag Editor"
 msgstr "Нишондиҳии Муҳаррири &Борчасб"
 
-#: tageditor.cpp:484
+#: tageditor.cpp:489
 msgid "&Save"
 msgstr ""
 
-#: tageditor.cpp:522
-msgid "&Artist name:"
-msgstr "Номи &иҷрогар:"
-
-#: tageditor.cpp:526
-msgid "&Track name:"
-msgstr "Номи &шиор:"
-
-#: tageditor.cpp:531
-msgid "Album &name:"
-msgstr "&Номи албом:"
-
-#: tageditor.cpp:535
-msgid "&Genre:"
-msgstr "&Услуб:"
-
-#: tageditor.cpp:556
-msgid "&File name:"
-msgstr "Номи &файл:"
-
-#: tageditor.cpp:573
-#, fuzzy
-#| msgid "T&rack:"
-msgctxt "cd track number"
-msgid "T&rack:"
-msgstr "&Шиор:"
-
-#: tageditor.cpp:578
-msgid "&Year:"
-msgstr "&Сол:"
-
-#: tageditor.cpp:597
-msgid "Length:"
-msgstr "Дарозӣ:"
-
-#: tageditor.cpp:606
-msgid "Bitrate:"
-msgstr "Зуддии битӣ:"
-
-#: tageditor.cpp:616
-msgid "&Comment:"
-msgstr "&Шарҳдиҳӣ:"
-
-#: tageditor.cpp:735
+#: tageditor.cpp:617
 msgid "Do you want to save your changes to:\n"
 msgstr "Оё мехоҳед, ки тағиротҳоро захира кунед дар:\n"
 
-#: tageditor.cpp:737
+#: tageditor.cpp:619
 msgid "Save Changes"
 msgstr "Захиракунии Тағиротҳо"
-
-#: tageditor.cpp:759
-msgid "Enable"
-msgstr "Даргиронидан"
 
 #: tagguesserconfigdlg.cpp:26
 msgid "Tag Guesser Configuration"
