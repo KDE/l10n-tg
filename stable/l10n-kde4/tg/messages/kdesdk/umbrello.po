@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-12 04:32+0200\n"
+"POT-Creation-Date: 2011-07-05 05:34+0200\n"
 "PO-Revision-Date: 2005-09-17 13:21+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -22,6 +22,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.10\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: debug/debug_utils.cpp:44
+#, fuzzy
+#| msgid "Class name"
+msgid "Class Name"
+msgstr "Номи синф"
 
 #: clipboard/umlclipboard.cpp:828
 msgid ""
@@ -106,15 +112,15 @@ msgid "Template Properties"
 msgstr "Хусусияти қолиб"
 
 #: dialogs/umltemplatedialog.cpp:65 dialogs/umlentityattributedialog.cpp:71
-#: dialogs/activitydialog.cpp:142 dialogs/umlattributedialog.cpp:69
+#: dialogs/umlattributedialog.cpp:69 dialogs/activitydialog.cpp:142
 #: dialogs/objectnodedialog.cpp:141 dialogs/umloperationdialog.cpp:88
 #: dialogs/statedialog.cpp:121
 msgid "General Properties"
 msgstr "Хусусиятҳои умумӣ"
 
 #: dialogs/umltemplatedialog.cpp:70 dialogs/umlentityattributedialog.cpp:76
-#: dialogs/umlattributedialog.cpp:74 dialogs/parmpropdlg.cpp:78
-#: dialogs/umloperationdialog.cpp:101
+#: dialogs/umlattributedialog.cpp:74 dialogs/umloperationdialog.cpp:101
+#: dialogs/parmpropdlg.cpp:78
 msgid "&Type:"
 msgstr "&Намуд:"
 
@@ -167,8 +173,8 @@ msgid "&Default value:"
 msgstr "&Пешфарз"
 
 #: dialogs/umlentityattributedialog.cpp:92 dialogs/umlattributedialog.cpp:90
-#: dialogs/parmpropdlg.cpp:93 dialogs/classgenpage.cpp:346
-#: dialogs/umloperationdialog.cpp:108
+#: dialogs/classgenpage.cpp:346 dialogs/umloperationdialog.cpp:108
+#: dialogs/parmpropdlg.cpp:93
 msgid "Stereotype name:"
 msgstr "Номи қолаби чоп:"
 
@@ -228,11 +234,17 @@ msgstr ""
 msgid "Entity Attribute Name Not Unique"
 msgstr "Номи аттрибут ягона нест"
 
+#. i18n: file: dialogs/umlrolepropertiesbase.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, ui_propsGroupBox)
+#: dialogs/umlroledialog.cpp:25 rc.cpp:990
+msgid "Role Properties"
+msgstr "Хусусиятҳои нақш"
+
 #: dialogs/assocgenpage.cpp:60 dialogs/umlviewdialog.cpp:35
 #: dialogs/classpropdlg.cpp:128 dialogs/activitydialog.cpp:36
-#: dialogs/activitydialog.cpp:146 dialogs/parmpropdlg.cpp:71
-#: dialogs/objectnodedialog.cpp:39 dialogs/statedialog.cpp:37
-#: dialogs/statedialog.cpp:125 refactoring/refactoringassistant.cpp:453
+#: dialogs/activitydialog.cpp:146 dialogs/objectnodedialog.cpp:39
+#: dialogs/statedialog.cpp:37 dialogs/statedialog.cpp:125
+#: dialogs/parmpropdlg.cpp:71 refactoring/refactoringassistant.cpp:453
 #: listpopupmenu.cpp:583
 #, fuzzy
 msgid "Properties"
@@ -250,13 +262,13 @@ msgstr "&Хусусиятҳо"
 #. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDocumentation)
 #. i18n: file: dialogs/umlrolepropertiesbase.ui:140
 #. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDocumentation)
-#: dialogs/assocgenpage.cpp:61 dialogs/activitydialog.cpp:200
-#: dialogs/notedialog.cpp:38 dialogs/parmpropdlg.cpp:115
-#: dialogs/classifierlistpage.cpp:219 dialogs/assocrolepage.cpp:80
-#: dialogs/assocrolepage.cpp:81 dialogs/objectnodedialog.cpp:197
-#: dialogs/classgenpage.cpp:225 dialogs/classgenpage.cpp:305
-#: dialogs/classgenpage.cpp:368 dialogs/statedialog.cpp:140 rc.cpp:38
-#: rc.cpp:740 rc.cpp:800 rc.cpp:863 rc.cpp:943 rc.cpp:1026
+#: dialogs/assocgenpage.cpp:61 dialogs/classifierlistpage.cpp:219
+#: dialogs/activitydialog.cpp:200 dialogs/assocrolepage.cpp:80
+#: dialogs/assocrolepage.cpp:81 dialogs/classgenpage.cpp:225
+#: dialogs/classgenpage.cpp:305 dialogs/classgenpage.cpp:368
+#: dialogs/objectnodedialog.cpp:197 dialogs/statedialog.cpp:140
+#: dialogs/notedialog.cpp:38 dialogs/parmpropdlg.cpp:115 rc.cpp:38 rc.cpp:740
+#: rc.cpp:800 rc.cpp:863 rc.cpp:958 rc.cpp:1026
 msgid "Documentation"
 msgstr "Ҳуҷҷатнома"
 
@@ -271,11 +283,9 @@ msgstr "Ном:"
 msgid "Type:"
 msgstr "Намуд:"
 
-#. i18n: file: dialogs/umlrolepropertiesbase.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, ui_propsGroupBox)
-#: dialogs/umlroledialog.cpp:25 rc.cpp:990
-msgid "Role Properties"
-msgstr "Хусусиятҳои нақш"
+#: dialogs/assocpage.cpp:30 dialogs/classpropdlg.cpp:371
+msgid "Associations"
+msgstr "Ширкатҳо"
 
 #: dialogs/selectopdlg.cpp:37 dialogs/selectopdlg.cpp:49
 msgid "Select Operation"
@@ -293,64 +303,130 @@ msgstr "Амалиёти синфӣ:"
 msgid "Custom operation:"
 msgstr "Дигар амал:"
 
-#: dialogs/assocpage.cpp:30 dialogs/classpropdlg.cpp:371
-msgid "Associations"
-msgstr "Ширкатҳо"
-
-#. i18n: file: dialogs/exportallviewsdialogbase.ui:52
-#. i18n: ectx: property (toolTip), widget (QLabel, ui_imageTypeLabel)
-#: dialogs/exportallviewsdialog.cpp:86 rc.cpp:973
-msgid "The format that the images will be exported to"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:50
+msgid "Foreign Key Setup"
 msgstr ""
 
-#: dialogs/classoptionspage.cpp:76 dialogs/classoptionspage.cpp:146
-#: dialogs/codeeditor.cpp:696 listpopupmenu.cpp:905
-msgid "Show"
-msgstr "Тасвир намудан"
-
-#: dialogs/classoptionspage.cpp:83 dialogs/classoptionspage.cpp:152
-msgid "Operatio&ns"
-msgstr "&Амалиётҳо"
-
-#: dialogs/classoptionspage.cpp:87 dialogs/classoptionspage.cpp:169
-msgid "&Visibility"
-msgstr "&Дидашаванда"
-
-#: dialogs/classoptionspage.cpp:96 dialogs/classoptionspage.cpp:156
-msgid "O&peration signature"
-msgstr "Рақами ҷузъбан&дии амалиёт"
-
-#: dialogs/classoptionspage.cpp:100 dialogs/classoptionspage.cpp:173
-msgid "Pac&kage"
-msgstr "&Пакет"
-
-#: dialogs/classoptionspage.cpp:107 dialogs/classoptionspage.cpp:161
-msgid "Att&ributes"
-msgstr "&Артрибутҳо"
-
-#: dialogs/classoptionspage.cpp:111 dialogs/classoptionspage.cpp:177
-msgid "Stereot&ype"
-msgstr "&Қолаби чоп"
-
-#: dialogs/classoptionspage.cpp:115 dialogs/classoptionspage.cpp:165
-msgid "Attr&ibute signature"
-msgstr "Рақами ҷузъ&бандии артрибут"
-
-#: dialogs/classoptionspage.cpp:124 dialogs/classoptionspage.cpp:185
+#: dialogs/umlforeignkeyconstraintdialog.cpp:196
 #, fuzzy
-#| msgid "Public Only"
-msgid "&Public Only"
-msgstr "Фақат умумӣ"
+#| msgid "General"
+msgctxt "general page title"
+msgid "General"
+msgstr "Умумӣ"
 
-#: dialogs/classoptionspage.cpp:130
-msgid "Draw as circle"
-msgstr "Расм кашидан ҳамчун марказнок"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:197 dialogs/umlviewdialog.cpp:84
+#: dialogs/settingsdlg.cpp:120 dialogs/classpropdlg.cpp:249
+#: dialogs/classpropdlg.cpp:383 dialogs/assocpropdlg.cpp:93
+msgid "General Settings"
+msgstr "Дурусткуниҳои умумӣ"
 
-#: dialogs/classoptionspage.cpp:181
+#: dialogs/umlforeignkeyconstraintdialog.cpp:201
 #, fuzzy
-#| msgid "Attribute accessor methods"
-msgid "&Attribute associations"
-msgstr "Методҳои дастрасӣ ба махсусиятҳо"
+#| msgid "General"
+msgctxt "general group title"
+msgid "General"
+msgstr "Умумӣ"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:208
+#, fuzzy
+#| msgid "Name"
+msgctxt "label for entering name"
+msgid "Name"
+msgstr "Ном"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:211
+msgid "Referenced Entity"
+msgstr ""
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:218
+#, fuzzy
+#| msgid "Associations"
+msgid "Actions"
+msgstr "Ширкатҳо"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:224
+msgid "On Update"
+msgstr ""
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:230
+#, fuzzy
+msgid "On Delete"
+msgstr "Интихоб кардан"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:262
+#, fuzzy
+#| msgid "No Indentation"
+msgid "No Action"
+msgstr "Бефосила"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:262
+msgid "Restrict"
+msgstr ""
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:262
+msgid "Cascade"
+msgstr ""
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:262
+#, fuzzy
+#| msgid "&Default"
+msgid "Set Null"
+msgstr "&Пешфарз"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:263
+#, fuzzy
+#| msgid "&Default"
+msgid "Set Default"
+msgstr "&Пешфарз"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:281
+#: dialogs/umlforeignkeyconstraintdialog.cpp:282
+#, fuzzy
+#| msgid "Colors"
+msgid "Columns"
+msgstr "Рангҳо"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:289
+#, fuzzy
+#| msgid "Label"
+msgctxt "column header local"
+msgid "Local"
+msgstr "Барчасб"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:289
+msgctxt "column header referenced"
+msgid "Referenced"
+msgstr ""
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:295
+#, fuzzy
+#| msgid "Colors"
+msgid "Local Column"
+msgstr "Рангҳо"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:301
+msgid "Referenced Column"
+msgstr ""
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:308
+#: dialogs/umluniqueconstraintdialog.cpp:112
+msgid "&Add"
+msgstr ""
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:310
+#: dialogs/umluniqueconstraintdialog.cpp:114
+#: dialogs/classifierlistpage.cpp:207 dialogs/umloperationdialog.cpp:166
+#: uml.cpp:414 umldoc.cpp:1406 umlview.cpp:2959
+#, fuzzy
+msgid "&Delete"
+msgstr "&Пешфарз"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:383
+msgid ""
+"You are attempting to change the Referenced Entity of this ForeignKey "
+"Constraint. Any unapplied changes to the mappings between local and "
+"referenced entities will be lost. Are you sure you want to continue ?"
+msgstr ""
 
 #: dialogs/umluniqueconstraintdialog.cpp:42
 #, fuzzy
@@ -372,19 +448,6 @@ msgstr "Ном"
 msgid "Attribute Details"
 msgstr "Танзимотҳои аттрибут"
 
-#: dialogs/umluniqueconstraintdialog.cpp:112
-#: dialogs/umlforeignkeyconstraintdialog.cpp:308
-msgid "&Add"
-msgstr ""
-
-#: dialogs/umluniqueconstraintdialog.cpp:114
-#: dialogs/classifierlistpage.cpp:207 dialogs/umloperationdialog.cpp:166
-#: dialogs/umlforeignkeyconstraintdialog.cpp:310 uml.cpp:414 umldoc.cpp:1406
-#: umlview.cpp:2959
-#, fuzzy
-msgid "&Delete"
-msgstr "&Пешфарз"
-
 #: dialogs/umluniqueconstraintdialog.cpp:241
 #, fuzzy
 #| msgid "You have entered an invalid operation name."
@@ -397,18 +460,74 @@ msgstr "Шумо номи амалиёти беэтиборро гузоштед
 msgid "Constraint Name Invalid"
 msgstr "Номи амалиёт нодуруст"
 
+#: dialogs/constraintlistpage.cpp:70 listpopupmenu.cpp:1178
+msgid "Unique Constraint..."
+msgstr ""
+
+#: dialogs/constraintlistpage.cpp:73 listpopupmenu.cpp:1177
+msgid "Primary Key Constraint..."
+msgstr ""
+
+#: dialogs/constraintlistpage.cpp:76 listpopupmenu.cpp:1179
+msgid "Foreign Key Constraint..."
+msgstr ""
+
+#: dialogs/constraintlistpage.cpp:79 listpopupmenu.cpp:1180
+#, fuzzy
+#| msgid "N&ew Attribute..."
+msgid "Check Constraint..."
+msgstr "&Атрибут бунёд кардан..."
+
+#. i18n: file: dialogs/exportallviewsdialogbase.ui:52
+#. i18n: ectx: property (toolTip), widget (QLabel, ui_imageTypeLabel)
+#: dialogs/exportallviewsdialog.cpp:86 rc.cpp:973
+msgid "The format that the images will be exported to"
+msgstr ""
+
+#: dialogs/codeeditor.cpp:690
+msgid "Hide"
+msgstr ""
+
+#: dialogs/codeeditor.cpp:696 dialogs/classoptionspage.cpp:76
+#: dialogs/classoptionspage.cpp:146 listpopupmenu.cpp:905
+msgid "Show"
+msgstr "Тасвир намудан"
+
+#: dialogs/codeeditor.cpp:705
+msgid "Hide Comment"
+msgstr ""
+
+#: dialogs/codeeditor.cpp:711
+msgid "Show Comment"
+msgstr ""
+
+#: dialogs/codeeditor.cpp:719
+msgid "Insert Code Block Before"
+msgstr ""
+
+#: dialogs/codeeditor.cpp:724
+msgid "Insert Code Block After"
+msgstr ""
+
+#: dialogs/codeeditor.cpp:731 listpopupmenu.cpp:595
+msgid "Copy"
+msgstr ""
+
+#: dialogs/codeeditor.cpp:736 listpopupmenu.cpp:598
+#, fuzzy
+msgid "Paste"
+msgstr "Ғайрирасми"
+
+#: dialogs/codeeditor.cpp:741 listpopupmenu.cpp:592
+msgid "Cut"
+msgstr ""
+
 #: dialogs/umlviewdialog.cpp:83 dialogs/settingsdlg.cpp:119
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings page"
 msgid "General"
 msgstr "Умумӣ"
-
-#: dialogs/umlviewdialog.cpp:84 dialogs/settingsdlg.cpp:120
-#: dialogs/classpropdlg.cpp:249 dialogs/classpropdlg.cpp:383
-#: dialogs/assocpropdlg.cpp:93 dialogs/umlforeignkeyconstraintdialog.cpp:197
-msgid "General Settings"
-msgstr "Дурусткуниҳои умумӣ"
 
 #: dialogs/umlviewdialog.cpp:113
 #, fuzzy
@@ -471,56 +590,49 @@ msgstr "Ин хел ном аллакай вуҷуд дорад."
 msgid "Name Not Unique"
 msgstr "Ном якхела нест"
 
-#: dialogs/constraintlistpage.cpp:70 listpopupmenu.cpp:1178
-msgid "Unique Constraint..."
-msgstr ""
+#: dialogs/classoptionspage.cpp:83 dialogs/classoptionspage.cpp:152
+msgid "Operatio&ns"
+msgstr "&Амалиётҳо"
 
-#: dialogs/constraintlistpage.cpp:73 listpopupmenu.cpp:1177
-msgid "Primary Key Constraint..."
-msgstr ""
+#: dialogs/classoptionspage.cpp:87 dialogs/classoptionspage.cpp:169
+msgid "&Visibility"
+msgstr "&Дидашаванда"
 
-#: dialogs/constraintlistpage.cpp:76 listpopupmenu.cpp:1179
-msgid "Foreign Key Constraint..."
-msgstr ""
+#: dialogs/classoptionspage.cpp:96 dialogs/classoptionspage.cpp:156
+msgid "O&peration signature"
+msgstr "Рақами ҷузъбан&дии амалиёт"
 
-#: dialogs/constraintlistpage.cpp:79 listpopupmenu.cpp:1180
+#: dialogs/classoptionspage.cpp:100 dialogs/classoptionspage.cpp:173
+msgid "Pac&kage"
+msgstr "&Пакет"
+
+#: dialogs/classoptionspage.cpp:107 dialogs/classoptionspage.cpp:161
+msgid "Att&ributes"
+msgstr "&Артрибутҳо"
+
+#: dialogs/classoptionspage.cpp:111 dialogs/classoptionspage.cpp:177
+msgid "Stereot&ype"
+msgstr "&Қолаби чоп"
+
+#: dialogs/classoptionspage.cpp:115 dialogs/classoptionspage.cpp:165
+msgid "Attr&ibute signature"
+msgstr "Рақами ҷузъ&бандии артрибут"
+
+#: dialogs/classoptionspage.cpp:124 dialogs/classoptionspage.cpp:185
 #, fuzzy
-#| msgid "N&ew Attribute..."
-msgid "Check Constraint..."
-msgstr "&Атрибут бунёд кардан..."
+#| msgid "Public Only"
+msgid "&Public Only"
+msgstr "Фақат умумӣ"
 
-#: dialogs/codeeditor.cpp:690
-msgid "Hide"
-msgstr ""
+#: dialogs/classoptionspage.cpp:130
+msgid "Draw as circle"
+msgstr "Расм кашидан ҳамчун марказнок"
 
-#: dialogs/codeeditor.cpp:705
-msgid "Hide Comment"
-msgstr ""
-
-#: dialogs/codeeditor.cpp:711
-msgid "Show Comment"
-msgstr ""
-
-#: dialogs/codeeditor.cpp:719
-msgid "Insert Code Block Before"
-msgstr ""
-
-#: dialogs/codeeditor.cpp:724
-msgid "Insert Code Block After"
-msgstr ""
-
-#: dialogs/codeeditor.cpp:731 listpopupmenu.cpp:595
-msgid "Copy"
-msgstr ""
-
-#: dialogs/codeeditor.cpp:736 listpopupmenu.cpp:598
+#: dialogs/classoptionspage.cpp:181
 #, fuzzy
-msgid "Paste"
-msgstr "Ғайрирасми"
-
-#: dialogs/codeeditor.cpp:741 listpopupmenu.cpp:592
-msgid "Cut"
-msgstr ""
+#| msgid "Attribute accessor methods"
+msgid "&Attribute associations"
+msgstr "Методҳои дастрасӣ ба махсусиятҳо"
 
 #: dialogs/defaultcodegenpolicypage.cpp:37
 msgid "<p align=\"center\">No Options Available.</p>"
@@ -688,7 +800,7 @@ msgstr "Намоиши пакет"
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showOpSigs)
 #. i18n: file: umbrello.kcfg:184
 #. i18n: ectx: whatsthis, entry (showOpSig), group (Class Options)
-#: dialogs/settingsdlg.cpp:274 rc.cpp:915 rc.cpp:1355
+#: dialogs/settingsdlg.cpp:274 rc.cpp:930 rc.cpp:1355
 msgid "Show operation signature"
 msgstr "Намоиш додани амалҳои рақами ҷузъбандӣ"
 
@@ -891,124 +1003,6 @@ msgctxt "instance general settings page name"
 msgid "General"
 msgstr "Умумӣ"
 
-#: dialogs/classwizard.cpp:45 model_utils.cpp:404
-msgid "new_class"
-msgstr "синфи_нав"
-
-#: dialogs/classwizard.cpp:60
-#, fuzzy
-#| msgid "&New Class Wizard..."
-msgid "Class Wizard"
-msgstr "&Устоди синфҳои нав..."
-
-#: dialogs/classwizard.cpp:83
-msgid "New Class"
-msgstr "Синфи нав"
-
-#: dialogs/classwizard.cpp:84
-msgid "Add general info about the new class."
-msgstr ""
-
-#: dialogs/classwizard.cpp:101
-msgid "Class Attributes"
-msgstr "Аттрибутҳои синфӣ"
-
-#: dialogs/classwizard.cpp:102
-msgid "Add attributes to the new class."
-msgstr ""
-
-#: dialogs/classwizard.cpp:119
-msgid "Class Operations"
-msgstr "Амалиётҳои синфӣ"
-
-#: dialogs/classwizard.cpp:120
-msgid "Add operations to the new class."
-msgstr ""
-
-#: dialogs/activitydialog.cpp:137
-msgid "Initial activity"
-msgstr "Фаъолияти аввалин"
-
-#: dialogs/activitydialog.cpp:137 worktoolbar.cpp:349 association.cpp:54
-msgid "Activity"
-msgstr "Фаъолият"
-
-#: dialogs/activitydialog.cpp:137
-msgid "End activity"
-msgstr "Охири фаъолият"
-
-#: dialogs/activitydialog.cpp:137
-#, fuzzy
-#| msgid "Initial Activity"
-msgid "Final activity"
-msgstr "Фаъолияти аввала"
-
-#: dialogs/activitydialog.cpp:137 worktoolbar.cpp:325 listpopupmenu.cpp:1146
-msgid "Branch/Merge"
-msgstr "Шоха/Боҳампайвастан"
-
-#: dialogs/activitydialog.cpp:137
-#, fuzzy
-msgid "Invoke action"
-msgstr "амали_нав"
-
-#: dialogs/activitydialog.cpp:137
-#, fuzzy
-#| msgid "Parameter Name Not Unique"
-msgid "Parameter activity"
-msgstr "Номи параметр ягона нест"
-
-#: dialogs/activitydialog.cpp:141
-#, fuzzy
-#| msgid "General"
-msgctxt "general properties page"
-msgid "General"
-msgstr "Умумӣ"
-
-#: dialogs/activitydialog.cpp:154
-msgid "Activity type:"
-msgstr "Шакли фаъолият:"
-
-#: dialogs/activitydialog.cpp:159
-msgid "Activity name:"
-msgstr "Ному насаби фаъолият:"
-
-#: dialogs/activitydialog.cpp:163
-#, fuzzy
-#| msgid "condition expected"
-msgid "Precondition :"
-msgstr "ифодаи ҳолат чашмдор карда мешавад"
-
-#: dialogs/activitydialog.cpp:167
-#, fuzzy
-#| msgid "condition expected"
-msgid "Postcondition :"
-msgstr "ифодаи ҳолат чашмдор карда мешавад"
-
-#: dialogs/activitydialog.cpp:174
-#, fuzzy
-#| msgid "Initial activity"
-msgid "&Normal activity"
-msgstr "Фаъолияти аввалин"
-
-#: dialogs/activitydialog.cpp:177
-#, fuzzy
-msgid "&Invoke action "
-msgstr "амали_нав"
-
-#: dialogs/activitydialog.cpp:180
-#, fuzzy
-#| msgid "Parameter Name Not Unique"
-msgid "&Parameter activity node"
-msgstr "Номи параметр ягона нест"
-
-#: dialogs/activitydialog.cpp:254
-#, fuzzy
-#| msgid "Color"
-msgctxt "widget color page"
-msgid "Color"
-msgstr "Ранг"
-
 #: dialogs/umlattributedialog.cpp:45
 msgid "Attribute Properties"
 msgstr "Хусусиятҳои аттрибут"
@@ -1071,87 +1065,6 @@ msgstr ""
 #: dialogs/umlattributedialog.cpp:169
 msgid "Attribute Name Not Unique"
 msgstr "Номи аттрибут ягона нест"
-
-#: dialogs/notedialog.cpp:27
-msgid "Note Documentation"
-msgstr "Аз назар гузаронидани ҳуҷҷатҳо"
-
-#: dialogs/parmpropdlg.cpp:47
-msgid "Parameter Properties"
-msgstr "Хусусиятҳои параметр"
-
-#: dialogs/parmpropdlg.cpp:86
-#, fuzzy
-#| msgid "&Name:"
-msgctxt "property name"
-msgid "&Name:"
-msgstr "&Ном:"
-
-#: dialogs/parmpropdlg.cpp:98
-msgid "Passing Direction"
-msgstr ""
-
-#: dialogs/parmpropdlg.cpp:99
-msgid ""
-"\"in\" is a readonly parameter, \"out\" is a writeonly parameter and \"inout"
-"\" is a parameter for reading and writing."
-msgstr ""
-
-#: dialogs/parmpropdlg.cpp:264
-msgid "You have entered an invalid parameter name."
-msgstr "Шумо номи параметри нодурустро гузоштед."
-
-#: dialogs/parmpropdlg.cpp:265
-msgid "Parameter Name Invalid"
-msgstr "Номи параметр нодуруст"
-
-#: dialogs/importprojectdlg.cpp:122
-msgid "You have to choose a directory."
-msgstr ""
-
-#: dialogs/importprojectdlg.cpp:127
-#, fuzzy
-msgid "This directory does not exist."
-msgstr "Файли %1 мавҷуд надорад."
-
-#: dialogs/importprojectdlg.cpp:154
-msgid "No source file in this directory."
-msgstr ""
-
-#: dialogs/diagramprintpage.cpp:42
-msgid "&Diagrams"
-msgstr "&Диаграммаҳо "
-
-#: dialogs/diagramprintpage.cpp:47
-msgid "Filter"
-msgstr "Филтр"
-
-#: dialogs/diagramprintpage.cpp:54
-msgid "&Current diagram"
-msgstr "&Диаграммаи ҷоришаванда"
-
-#: dialogs/diagramprintpage.cpp:58
-msgid "&All diagrams"
-msgstr "&Ҳамаи диаграммаҳо"
-
-#: dialogs/diagramprintpage.cpp:61
-msgid "&Select diagrams"
-msgstr "&Ҷудо намудани диаграммаҳо"
-
-#: dialogs/diagramprintpage.cpp:64
-msgid "&Type of diagram"
-msgstr "&Намуди диаграммаҳо"
-
-#: dialogs/diagramprintpage.cpp:67
-#, fuzzy
-#| msgid "Selection"
-msgctxt "diagram selection for printing"
-msgid "Selection"
-msgstr "Ҷудокунӣ"
-
-#: dialogs/diagramprintpage.cpp:157
-msgid "No diagrams selected."
-msgstr "Диаграммаҳои интихоб карда шуда мавҷуд надорад."
 
 #: dialogs/codeviewerdialog.cpp:107
 #, fuzzy
@@ -1230,17 +1143,89 @@ msgstr "Қисмат"
 msgid "Source Code"
 msgstr "Намоиш кардани код"
 
-#: dialogs/umlcheckconstraintdialog.cpp:30
-#, fuzzy
-#| msgid "Operation Properties"
-msgid "Check Constraint Properties"
-msgstr "Хусусиятҳои амалиёт"
+#: dialogs/activitydialog.cpp:137
+msgid "Initial activity"
+msgstr "Фаъолияти аввалин"
 
-#: dialogs/umlcheckconstraintdialog.cpp:73
+#: dialogs/activitydialog.cpp:137 association.cpp:54 worktoolbar.cpp:349
+msgid "Activity"
+msgstr "Фаъолият"
+
+#: dialogs/activitydialog.cpp:137
+msgid "End activity"
+msgstr "Охири фаъолият"
+
+#: dialogs/activitydialog.cpp:137
+#, fuzzy
+#| msgid "Initial Activity"
+msgid "Final activity"
+msgstr "Фаъолияти аввала"
+
+#: dialogs/activitydialog.cpp:137 worktoolbar.cpp:325 listpopupmenu.cpp:1146
+msgid "Branch/Merge"
+msgstr "Шоха/Боҳампайвастан"
+
+#: dialogs/activitydialog.cpp:137
+#, fuzzy
+msgid "Invoke action"
+msgstr "амали_нав"
+
+#: dialogs/activitydialog.cpp:137
+#, fuzzy
+#| msgid "Parameter Name Not Unique"
+msgid "Parameter activity"
+msgstr "Номи параметр ягона нест"
+
+#: dialogs/activitydialog.cpp:141
+#, fuzzy
+#| msgid "General"
+msgctxt "general properties page"
+msgid "General"
+msgstr "Умумӣ"
+
+#: dialogs/activitydialog.cpp:154
+msgid "Activity type:"
+msgstr "Шакли фаъолият:"
+
+#: dialogs/activitydialog.cpp:159
+msgid "Activity name:"
+msgstr "Ному насаби фаъолият:"
+
+#: dialogs/activitydialog.cpp:163
 #, fuzzy
 #| msgid "condition expected"
-msgid "Check Condition :"
+msgid "Precondition :"
 msgstr "ифодаи ҳолат чашмдор карда мешавад"
+
+#: dialogs/activitydialog.cpp:167
+#, fuzzy
+#| msgid "condition expected"
+msgid "Postcondition :"
+msgstr "ифодаи ҳолат чашмдор карда мешавад"
+
+#: dialogs/activitydialog.cpp:174
+#, fuzzy
+#| msgid "Initial activity"
+msgid "&Normal activity"
+msgstr "Фаъолияти аввалин"
+
+#: dialogs/activitydialog.cpp:177
+#, fuzzy
+msgid "&Invoke action "
+msgstr "амали_нав"
+
+#: dialogs/activitydialog.cpp:180
+#, fuzzy
+#| msgid "Parameter Name Not Unique"
+msgid "&Parameter activity node"
+msgstr "Номи параметр ягона нест"
+
+#: dialogs/activitydialog.cpp:254
+#, fuzzy
+#| msgid "Color"
+msgctxt "widget color page"
+msgid "Color"
+msgstr "Ранг"
 
 #: dialogs/assocrolepage.cpp:54
 msgid "Role A Properties"
@@ -1415,81 +1400,40 @@ msgstr "Фаъолиятро номгузории дубора кунед"
 msgid "Enter the new name of the activity:"
 msgstr "Номи нави фаъолиятро гузоред:"
 
-#: dialogs/pkgcontentspage.cpp:40
-msgid "Contained Items"
-msgstr "Мавзӯи нуқтаҳо"
+#: dialogs/diagramprintpage.cpp:42
+msgid "&Diagrams"
+msgstr "&Диаграммаҳо "
 
-#: dialogs/objectnodedialog.cpp:136
-msgid "Central Buffer"
-msgstr ""
+#: dialogs/diagramprintpage.cpp:47
+msgid "Filter"
+msgstr "Филтр"
 
-#: dialogs/objectnodedialog.cpp:136
+#: dialogs/diagramprintpage.cpp:54
+msgid "&Current diagram"
+msgstr "&Диаграммаи ҷоришаванда"
+
+#: dialogs/diagramprintpage.cpp:58
+msgid "&All diagrams"
+msgstr "&Ҳамаи диаграммаҳо"
+
+#: dialogs/diagramprintpage.cpp:61
+msgid "&Select diagrams"
+msgstr "&Ҷудо намудани диаграммаҳо"
+
+#: dialogs/diagramprintpage.cpp:64
+msgid "&Type of diagram"
+msgstr "&Намуди диаграммаҳо"
+
+#: dialogs/diagramprintpage.cpp:67
 #, fuzzy
-#| msgid "Datatype"
-msgid "Data Store"
-msgstr "Намуди маълумот"
+#| msgid "Selection"
+msgctxt "diagram selection for printing"
+msgid "Selection"
+msgstr "Ҷудокунӣ"
 
-#: dialogs/objectnodedialog.cpp:136
-#, fuzzy
-#| msgid "Object"
-msgid "ObjectFlow"
-msgstr "Мавзӯъ"
-
-#. i18n: file: codegenerators/cpp/cppcodegenerationformbase.ui:51
-#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
-#. i18n: file: codegenwizard/codegenoptionspage.ui:39
-#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
-#: dialogs/objectnodedialog.cpp:140 rc.cpp:95 rc.cpp:1050
-msgid "General"
-msgstr "Умумӣ"
-
-#: dialogs/objectnodedialog.cpp:145
-#, fuzzy
-msgctxt "properties group title"
-msgid "Properties"
-msgstr "&Хусусиятҳо"
-
-#: dialogs/objectnodedialog.cpp:159
-#, fuzzy
-#| msgid "Node name:"
-msgid "Object Node type:"
-msgstr "Номи гиреҳ:"
-
-#: dialogs/objectnodedialog.cpp:164
-#, fuzzy
-#| msgid "Node name:"
-msgid "Object Node name:"
-msgstr "Номи гиреҳ:"
-
-#: dialogs/objectnodedialog.cpp:168
-#, fuzzy
-#| msgid "State"
-msgctxt "enter state label"
-msgid "State :"
-msgstr "Вазъият"
-
-#: dialogs/objectnodedialog.cpp:173
-msgid "&Central Buffer"
-msgstr ""
-
-#: dialogs/objectnodedialog.cpp:176
-#, fuzzy
-#| msgid "Datatype"
-msgid "&Data Store "
-msgstr "Намуди маълумот"
-
-#: dialogs/objectnodedialog.cpp:179
-#, fuzzy
-#| msgid "Object"
-msgid "&Object Flow"
-msgstr "Мавзӯъ"
-
-#: dialogs/objectnodedialog.cpp:247
-#, fuzzy
-#| msgid "Color"
-msgctxt "color page title"
-msgid "Color"
-msgstr "Ранг"
+#: dialogs/diagramprintpage.cpp:157
+msgid "No diagrams selected."
+msgstr "Диаграммаҳои интихоб карда шуда мавҷуд надорад."
 
 #: dialogs/classgenpage.cpp:60
 msgid "Class &name:"
@@ -1655,6 +1599,94 @@ msgstr ""
 msgid "Name is Not Unique"
 msgstr "Ном аллакай мавҷуд дорад"
 
+#: dialogs/objectnodedialog.cpp:136
+msgid "Central Buffer"
+msgstr ""
+
+#: dialogs/objectnodedialog.cpp:136
+#, fuzzy
+#| msgid "Datatype"
+msgid "Data Store"
+msgstr "Намуди маълумот"
+
+#: dialogs/objectnodedialog.cpp:136
+#, fuzzy
+#| msgid "Object"
+msgid "ObjectFlow"
+msgstr "Мавзӯъ"
+
+#. i18n: file: codegenerators/cpp/cppcodegenerationformbase.ui:51
+#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
+#. i18n: file: codegenwizard/codegenoptionspage.ui:39
+#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
+#: dialogs/objectnodedialog.cpp:140 rc.cpp:95 rc.cpp:1050
+msgid "General"
+msgstr "Умумӣ"
+
+#: dialogs/objectnodedialog.cpp:145
+#, fuzzy
+msgctxt "properties group title"
+msgid "Properties"
+msgstr "&Хусусиятҳо"
+
+#: dialogs/objectnodedialog.cpp:159
+#, fuzzy
+#| msgid "Node name:"
+msgid "Object Node type:"
+msgstr "Номи гиреҳ:"
+
+#: dialogs/objectnodedialog.cpp:164
+#, fuzzy
+#| msgid "Node name:"
+msgid "Object Node name:"
+msgstr "Номи гиреҳ:"
+
+#: dialogs/objectnodedialog.cpp:168
+#, fuzzy
+#| msgid "State"
+msgctxt "enter state label"
+msgid "State :"
+msgstr "Вазъият"
+
+#: dialogs/objectnodedialog.cpp:173
+msgid "&Central Buffer"
+msgstr ""
+
+#: dialogs/objectnodedialog.cpp:176
+#, fuzzy
+#| msgid "Datatype"
+msgid "&Data Store "
+msgstr "Намуди маълумот"
+
+#: dialogs/objectnodedialog.cpp:179
+#, fuzzy
+#| msgid "Object"
+msgid "&Object Flow"
+msgstr "Мавзӯъ"
+
+#: dialogs/objectnodedialog.cpp:247
+#, fuzzy
+#| msgid "Color"
+msgctxt "color page title"
+msgid "Color"
+msgstr "Ранг"
+
+#: dialogs/umlcheckconstraintdialog.cpp:30
+#, fuzzy
+#| msgid "Operation Properties"
+msgid "Check Constraint Properties"
+msgstr "Хусусиятҳои амалиёт"
+
+#: dialogs/umlcheckconstraintdialog.cpp:73
+#, fuzzy
+#| msgid "condition expected"
+msgid "Check Condition :"
+msgstr "ифодаи ҳолат чашмдор карда мешавад"
+
+#: dialogs/pkgcontentspage.cpp:40
+msgid "Contained Items"
+msgstr "Мавзӯи нуқтаҳо"
+
 #: dialogs/umloperationdialog.cpp:57
 msgid "Operation Properties"
 msgstr "Хусусиятҳои амалиёт"
@@ -1804,6 +1836,86 @@ msgstr "&Ҳамин гуна номи файлро пешниҳод кунед"
 msgid "&Do Not Generate File"
 msgstr "&Файлро пешниҳод накунед"
 
+#: dialogs/notedialog.cpp:27
+msgid "Note Documentation"
+msgstr "Аз назар гузаронидани ҳуҷҷатҳо"
+
+#: dialogs/classwizard.cpp:45 model_utils.cpp:404
+msgid "new_class"
+msgstr "синфи_нав"
+
+#: dialogs/classwizard.cpp:60
+#, fuzzy
+#| msgid "&New Class Wizard..."
+msgid "Class Wizard"
+msgstr "&Устоди синфҳои нав..."
+
+#: dialogs/classwizard.cpp:83
+msgid "New Class"
+msgstr "Синфи нав"
+
+#: dialogs/classwizard.cpp:84
+msgid "Add general info about the new class."
+msgstr ""
+
+#: dialogs/classwizard.cpp:101
+msgid "Class Attributes"
+msgstr "Аттрибутҳои синфӣ"
+
+#: dialogs/classwizard.cpp:102
+msgid "Add attributes to the new class."
+msgstr ""
+
+#: dialogs/classwizard.cpp:119
+msgid "Class Operations"
+msgstr "Амалиётҳои синфӣ"
+
+#: dialogs/classwizard.cpp:120
+msgid "Add operations to the new class."
+msgstr ""
+
+#: dialogs/parmpropdlg.cpp:47
+msgid "Parameter Properties"
+msgstr "Хусусиятҳои параметр"
+
+#: dialogs/parmpropdlg.cpp:86
+#, fuzzy
+#| msgid "&Name:"
+msgctxt "property name"
+msgid "&Name:"
+msgstr "&Ном:"
+
+#: dialogs/parmpropdlg.cpp:98
+msgid "Passing Direction"
+msgstr ""
+
+#: dialogs/parmpropdlg.cpp:99
+msgid ""
+"\"in\" is a readonly parameter, \"out\" is a writeonly parameter and \"inout"
+"\" is a parameter for reading and writing."
+msgstr ""
+
+#: dialogs/parmpropdlg.cpp:264
+msgid "You have entered an invalid parameter name."
+msgstr "Шумо номи параметри нодурустро гузоштед."
+
+#: dialogs/parmpropdlg.cpp:265
+msgid "Parameter Name Invalid"
+msgstr "Номи параметр нодуруст"
+
+#: dialogs/importprojectdlg.cpp:122
+msgid "You have to choose a directory."
+msgstr ""
+
+#: dialogs/importprojectdlg.cpp:127
+#, fuzzy
+msgid "This directory does not exist."
+msgstr "Файли %1 мавҷуд надорад."
+
+#: dialogs/importprojectdlg.cpp:154
+msgid "No source file in this directory."
+msgstr ""
+
 #: dialogs/assocpropdlg.cpp:43
 msgid "Association Properties"
 msgstr "Хусусияти ҷамъиятӣ"
@@ -1826,112 +1938,6 @@ msgstr "Намои нақшҳо"
 #: dialogs/assocpropdlg.cpp:129
 msgid "Association font"
 msgstr "Ҳуруфи ҷамъиятӣ"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:50
-msgid "Foreign Key Setup"
-msgstr ""
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:196
-#, fuzzy
-#| msgid "General"
-msgctxt "general page title"
-msgid "General"
-msgstr "Умумӣ"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:201
-#, fuzzy
-#| msgid "General"
-msgctxt "general group title"
-msgid "General"
-msgstr "Умумӣ"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:208
-#, fuzzy
-#| msgid "Name"
-msgctxt "label for entering name"
-msgid "Name"
-msgstr "Ном"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:211
-msgid "Referenced Entity"
-msgstr ""
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:218
-#, fuzzy
-#| msgid "Associations"
-msgid "Actions"
-msgstr "Ширкатҳо"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:224
-msgid "On Update"
-msgstr ""
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:230
-#, fuzzy
-msgid "On Delete"
-msgstr "Интихоб кардан"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:262
-#, fuzzy
-#| msgid "No Indentation"
-msgid "No Action"
-msgstr "Бефосила"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:262
-msgid "Restrict"
-msgstr ""
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:262
-msgid "Cascade"
-msgstr ""
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:262
-#, fuzzy
-#| msgid "&Default"
-msgid "Set Null"
-msgstr "&Пешфарз"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:263
-#, fuzzy
-#| msgid "&Default"
-msgid "Set Default"
-msgstr "&Пешфарз"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:281
-#: dialogs/umlforeignkeyconstraintdialog.cpp:282
-#, fuzzy
-#| msgid "Colors"
-msgid "Columns"
-msgstr "Рангҳо"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:289
-#, fuzzy
-#| msgid "Label"
-msgctxt "column header local"
-msgid "Local"
-msgstr "Барчасб"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:289
-msgctxt "column header referenced"
-msgid "Referenced"
-msgstr ""
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:295
-#, fuzzy
-#| msgid "Colors"
-msgid "Local Column"
-msgstr "Рангҳо"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:301
-msgid "Referenced Column"
-msgstr ""
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:383
-msgid ""
-"You are attempting to change the Referenced Entity of this ForeignKey "
-"Constraint. Any unapplied changes to the mappings between local and "
-"referenced entities will be lost. Are you sure you want to continue ?"
-msgstr ""
 
 #: dialogs/umlwidgetcolorpage.cpp:77
 #, fuzzy
@@ -2120,16 +2126,6 @@ msgstr "Хатоги дар эҷод кардани луғат"
 msgid "Please select a valid folder."
 msgstr "Лутфан номи луғатро интихоб кунед."
 
-#: widgets/notewidget.cpp:378
-#, fuzzy
-#| msgid "Note"
-msgid "Note Type"
-msgstr "Эъзоҳ"
-
-#: widgets/notewidget.cpp:378
-msgid "Select the Note Type"
-msgstr ""
-
 #: widgets/activitywidget.cpp:265 toolbarstateother.cpp:227 umlview.cpp:2763
 msgid "Enter Activity Name"
 msgstr "Номи фаъолиятро гузоред"
@@ -2211,6 +2207,16 @@ msgstr "Ба объект номи нав гузоштан"
 msgid "Enter object name:"
 msgstr "Номи объектро гузоред:"
 
+#: widgets/notewidget.cpp:378
+#, fuzzy
+#| msgid "Note"
+msgid "Note Type"
+msgstr "Эъзоҳ"
+
+#: widgets/notewidget.cpp:378
+msgid "Select the Note Type"
+msgstr ""
+
 #: widgets/combinedfragmentwidget.cpp:253
 #, fuzzy
 msgid "Enter the name of the diagram referenced"
@@ -2264,6 +2270,18 @@ msgstr "Номи ҳолатро гузоред"
 #, fuzzy
 msgid "Enter the guard of the loop:"
 msgstr "Номи нави фаъолиятро гузоред:"
+
+#: widgets/associationwidget.cpp:2694
+msgid "Multiplicity"
+msgstr "Бисёрӣ"
+
+#: widgets/associationwidget.cpp:2712
+msgid "Association Name"
+msgstr "Номи иттиҳод"
+
+#: widgets/associationwidget.cpp:2732
+msgid "Role Name"
+msgstr "Номи нақш"
 
 #: widgets/objectnodewidget.cpp:200
 #, fuzzy
@@ -2328,18 +2346,6 @@ msgstr "Номи объектро гузоред:"
 #: widgets/objectnodewidget.cpp:279
 msgid "Enter State (keep '-' if there is no state for the object) "
 msgstr ""
-
-#: widgets/associationwidget.cpp:2694
-msgid "Multiplicity"
-msgstr "Бисёрӣ"
-
-#: widgets/associationwidget.cpp:2712
-msgid "Association Name"
-msgstr "Номи иттиҳод"
-
-#: widgets/associationwidget.cpp:2732
-msgid "Role Name"
-msgstr "Номи нақш"
 
 #: widgets/signalwidget.cpp:217
 #, fuzzy
@@ -2442,34 +2448,6 @@ msgstr "Натавонистам каталог бунёд созам"
 msgid "Create class diagram : %1"
 msgstr "Синфи диаграмма"
 
-#: cmds/cmd_create_entityrelationdiag.cpp:25
-#, fuzzy, kde-format
-msgid "Create entity relationship diagram : %1"
-msgstr "Диаграммаи кооператсия..."
-
-#: cmds/cmd_create_usecasediag.cpp:25
-#, fuzzy, kde-format
-#| msgid "class diagram"
-msgid "Create use case diagram : %1"
-msgstr "Синфи диаграмма"
-
-#: cmds/cmd_set_visibility.cpp:24
-#, fuzzy, kde-format
-#| msgid "Show &visibility"
-msgid "Change visibility : %1"
-msgstr "Намоиш додани дидаша&ванда"
-
-#: cmds/cmd_create_activitydiag.cpp:25
-#, fuzzy, kde-format
-#| msgid "activity diagram"
-msgid "Create activity diagram : %1"
-msgstr "диаграммаи фаъолият"
-
-#: cmds/cmd_moveWidget.cpp:26
-#, fuzzy, kde-format
-msgid "Move widget : %1"
-msgstr "Натавонистам каталог бунёд созам"
-
 #: cmds/cmd_set_stereotype.cpp:25
 #, kde-format
 msgid "Set stereotype : %1 to %2"
@@ -2480,6 +2458,11 @@ msgstr ""
 #| msgid "Change Text"
 msgid "Change text : %1 to %2"
 msgstr "Дигар кардани матн"
+
+#: cmds/cmd_create_entityrelationdiag.cpp:25
+#, fuzzy, kde-format
+msgid "Create entity relationship diagram : %1"
+msgstr "Диаграммаи кооператсия..."
 
 #: cmds/cmd_create_statediag.cpp:25
 #, fuzzy, kde-format
@@ -2499,11 +2482,29 @@ msgstr "ширкати диаграмма"
 msgid "Create sequence diagram : %1"
 msgstr "Диаграммаи пайдарпаӣ"
 
+#: cmds/cmd_create_usecasediag.cpp:25
+#, fuzzy, kde-format
+#| msgid "class diagram"
+msgid "Create use case diagram : %1"
+msgstr "Синфи диаграмма"
+
+#: cmds/cmd_set_visibility.cpp:24
+#, fuzzy, kde-format
+#| msgid "Show &visibility"
+msgid "Change visibility : %1"
+msgstr "Намоиш додани дидаша&ванда"
+
 #: cmds/cmd_create_deploydiag.cpp:25
 #, fuzzy, kde-format
 #| msgid "deployment diagram"
 msgid "Create deployment diagram : %1"
 msgstr "диаграммаи кушоиш"
+
+#: cmds/cmd_create_activitydiag.cpp:25
+#, fuzzy, kde-format
+#| msgid "activity diagram"
+msgid "Create activity diagram : %1"
+msgstr "диаграммаи фаъолият"
 
 #: cmds/cmd_resizeWidget.cpp:26
 #, fuzzy, kde-format
@@ -2515,6 +2516,11 @@ msgstr "Натавонистам каталог бунёд созам"
 #| msgid "component diagram"
 msgid "Create component diagram : %1"
 msgstr "диагараммаи компонентҳо"
+
+#: cmds/cmd_moveWidget.cpp:26
+#, fuzzy, kde-format
+msgid "Move widget : %1"
+msgstr "Натавонистам каталог бунёд созам"
 
 #: refactoring/refactoringassistant.cpp:49
 #, fuzzy
@@ -2826,65 +2832,82 @@ msgctxt "class scope"
 msgid "Class"
 msgstr "Синф"
 
-#: debug/debug_utils.cpp:44
-#, fuzzy
-#| msgid "Class name"
-msgid "Class Name"
-msgstr "Номи синф"
+#: association.cpp:39
+msgid "Generalization"
+msgstr "Ҷамъбаст"
 
-#: folder.cpp:405
-#, fuzzy, kde-format
-msgid "The folderfile %1 does not exist."
-msgstr "Файли %1 мавҷуд надорад."
+#: association.cpp:40 worktoolbar.cpp:315
+msgid "Aggregation"
+msgstr "Агрегировандан"
 
-#: folder.cpp:405 folder.cpp:409 umldoc.cpp:418 umldoc.cpp:440 umldoc.cpp:478
-#: umldoc.cpp:490 umldoc.cpp:504 umldoc.cpp:516 umldoc.cpp:528 umldoc.cpp:546
-msgid "Load Error"
-msgstr "Пурборкунии нодуруст"
+#: association.cpp:41 worktoolbar.cpp:314
+msgid "Dependency"
+msgstr "Вобастагӣ"
 
-#: folder.cpp:409
-#, fuzzy, kde-format
-msgid "The folderfile %1 cannot be opened."
-msgstr "Файли %1 зарар расонда шуд."
+#: association.cpp:42 worktoolbar.cpp:307
+msgid "Association"
+msgstr "Иттиҳод"
 
-#: umlcanvasobject.cpp:191 model_utils.cpp:428
-msgid "new_association"
-msgstr "ассотсиатсияи_нав"
+#: association.cpp:43
+msgid "Self Association"
+msgstr "Худиттиҳод"
 
-#: umlcanvasobject.cpp:194
-msgid "new_attribute"
-msgstr "аттрибути_нав"
+#: association.cpp:44
+msgid "Collaboration Message"
+msgstr "Хабар додани кооператсия"
 
-#: umlcanvasobject.cpp:197
-msgid "new_template"
-msgstr "new_template"
+#: association.cpp:45
+msgid "Sequence Message"
+msgstr "Ахборот ба таври синхронӣ"
 
-#: umlcanvasobject.cpp:200
-msgid "new_operation"
-msgstr "амали_нав"
+#: association.cpp:46
+msgid "Collaboration Self Message"
+msgstr "Худахбороти кооперативӣ"
 
-#: umlcanvasobject.cpp:203
-msgid "new_literal"
-msgstr "new_literal"
+#: association.cpp:47
+msgid "Sequence Self Message"
+msgstr "Худахбороти пайдарпаӣ"
 
-#: umlcanvasobject.cpp:206
-#, fuzzy
-msgid "new_field"
-msgstr "new_literal"
+#: association.cpp:48 worktoolbar.cpp:308
+msgid "Containment"
+msgstr "Гунҷоиш"
 
-#: umlcanvasobject.cpp:209
-msgid "new_unique_constraint"
+#: association.cpp:49 worktoolbar.cpp:319
+msgid "Composition"
+msgstr "Таркиббандӣ"
+
+#: association.cpp:50
+msgid "Realization"
+msgstr "Иҷрокунӣ"
+
+#: association.cpp:51
+msgid "Uni Association"
+msgstr "Уни-иртибот"
+
+#: association.cpp:52 worktoolbar.cpp:309
+msgid "Anchor"
+msgstr "Истинод кардан"
+
+#: association.cpp:53 worktoolbar.cpp:347
+msgid "State Transition"
+msgstr "Гузариши вазъият"
+
+#: association.cpp:55 worktoolbar.cpp:356
+msgid "Exception"
 msgstr ""
 
-#: umlcanvasobject.cpp:212
-#, fuzzy
-msgid "new_fkey_constraint"
-msgstr "new_enum"
+#: association.cpp:56 worktoolbar.cpp:360
+msgid "Category to Parent"
+msgstr ""
 
-#: umlcanvasobject.cpp:215
+#: association.cpp:57 worktoolbar.cpp:361
+msgid "Child to Category"
+msgstr ""
+
+#: association.cpp:58 worktoolbar.cpp:316
 #, fuzzy
-msgid "new_check_constraint"
-msgstr "new_enum"
+msgid "Relationship"
+msgstr "Иҷрокунӣ"
 
 #: stereotype.cpp:112 listpopupmenu.cpp:931
 msgid "Stereotype"
@@ -2894,56 +2917,6 @@ msgstr "Навъи стереоӣ"
 #: umldoc.cpp:1235 umldoc.cpp:1278 umldoc.cpp:1309 umldoc.cpp:1343
 msgid "Enter name:"
 msgstr "Номро ворид созед:"
-
-#: toolbarstateother.cpp:235
-#, fuzzy
-msgid "Enter Signal Name"
-msgstr "Номи ҳолатро гузоред"
-
-#: toolbarstateother.cpp:236
-#, fuzzy
-#| msgid "Enter name:"
-msgid "Enter Signal"
-msgstr "Номро ворид созед:"
-
-#: toolbarstateother.cpp:236
-msgid "new Signal"
-msgstr ""
-
-#: toolbarstateother.cpp:242
-#, fuzzy
-#| msgid "Enter Activity Name"
-msgid "Enter Time Event Name"
-msgstr "Номи фаъолиятро гузоред"
-
-#: toolbarstateother.cpp:243
-#, fuzzy
-#| msgid "Enter new text:"
-msgid "Enter Time Event"
-msgstr "Матни навро ворид кунед:"
-
-#: toolbarstateother.cpp:243
-#, fuzzy
-#| msgid "new activity"
-msgid "new time event"
-msgstr "фаъолияти нав"
-
-#: toolbarstateother.cpp:249
-#, fuzzy
-msgid "Enter Combined Fragment Name"
-msgstr "Номи ҳолатро гузоред"
-
-#: toolbarstateother.cpp:250
-msgid "Enter the Combined Fragment"
-msgstr ""
-
-#: toolbarstateother.cpp:250
-msgid "new Combined Fragment"
-msgstr ""
-
-#: toolbarstateother.cpp:257 umlview.cpp:2733
-msgid "new state"
-msgstr "ҳолати нав"
 
 #: worktoolbar.cpp:300
 msgid "Object"
@@ -2979,18 +2952,6 @@ msgstr ""
 msgid "Precondition"
 msgstr "ифодаи ҳолат чашмдор карда мешавад"
 
-#: worktoolbar.cpp:307 association.cpp:42
-msgid "Association"
-msgstr "Иттиҳод"
-
-#: worktoolbar.cpp:308 association.cpp:48
-msgid "Containment"
-msgstr "Гунҷоиш"
-
-#: worktoolbar.cpp:309 association.cpp:52
-msgid "Anchor"
-msgstr "Истинод кардан"
-
 #: worktoolbar.cpp:310
 msgid "Label"
 msgstr "Барчасб"
@@ -3007,19 +2968,6 @@ msgstr "Қуттӣ"
 msgid "Actor"
 msgstr "Иштироккунанда"
 
-#: worktoolbar.cpp:314 association.cpp:41
-msgid "Dependency"
-msgstr "Вобастагӣ"
-
-#: worktoolbar.cpp:315 association.cpp:40
-msgid "Aggregation"
-msgstr "Агрегировандан"
-
-#: worktoolbar.cpp:316 association.cpp:58
-#, fuzzy
-msgid "Relationship"
-msgstr "Иҷрокунӣ"
-
 #: worktoolbar.cpp:317
 msgid "Directional Association"
 msgstr "Иттиҳоди рости"
@@ -3028,10 +2976,6 @@ msgstr "Иттиҳоди рости"
 #, fuzzy
 msgid "Implements"
 msgstr "Ҳуҷҷатнома"
-
-#: worktoolbar.cpp:319 association.cpp:49
-msgid "Composition"
-msgstr "Таркиббандӣ"
 
 #: worktoolbar.cpp:320 listpopupmenu.cpp:717
 msgid "Use Case"
@@ -3140,10 +3084,6 @@ msgstr ""
 msgid "And Line"
 msgstr "Сатрҳо"
 
-#: worktoolbar.cpp:347 association.cpp:53
-msgid "State Transition"
-msgstr "Гузариши вазъият"
-
 #: worktoolbar.cpp:348
 #, fuzzy
 msgid "Activity Transition"
@@ -3178,10 +3118,6 @@ msgstr "Фаъолияти аввала"
 msgid "Message"
 msgstr "Паём"
 
-#: worktoolbar.cpp:356 association.cpp:55
-msgid "Exception"
-msgstr ""
-
 #: worktoolbar.cpp:357
 #, fuzzy
 #| msgid "Object"
@@ -3196,20 +3132,101 @@ msgstr ""
 msgid "Category"
 msgstr ""
 
-#: worktoolbar.cpp:360 association.cpp:56
-msgid "Category to Parent"
-msgstr ""
-
-#: worktoolbar.cpp:361 association.cpp:57
-msgid "Child to Category"
-msgstr ""
-
 #: worktoolbar.cpp:372
 #, fuzzy
 #| msgid "Select"
 msgctxt "selection arrow"
 msgid "Select"
 msgstr "Интихоб кардан"
+
+#: umlcanvasobject.cpp:191 model_utils.cpp:428
+msgid "new_association"
+msgstr "ассотсиатсияи_нав"
+
+#: umlcanvasobject.cpp:194
+msgid "new_attribute"
+msgstr "аттрибути_нав"
+
+#: umlcanvasobject.cpp:197
+msgid "new_template"
+msgstr "new_template"
+
+#: umlcanvasobject.cpp:200
+msgid "new_operation"
+msgstr "амали_нав"
+
+#: umlcanvasobject.cpp:203
+msgid "new_literal"
+msgstr "new_literal"
+
+#: umlcanvasobject.cpp:206
+#, fuzzy
+msgid "new_field"
+msgstr "new_literal"
+
+#: umlcanvasobject.cpp:209
+msgid "new_unique_constraint"
+msgstr ""
+
+#: umlcanvasobject.cpp:212
+#, fuzzy
+msgid "new_fkey_constraint"
+msgstr "new_enum"
+
+#: umlcanvasobject.cpp:215
+#, fuzzy
+msgid "new_check_constraint"
+msgstr "new_enum"
+
+#: toolbarstateother.cpp:235
+#, fuzzy
+msgid "Enter Signal Name"
+msgstr "Номи ҳолатро гузоред"
+
+#: toolbarstateother.cpp:236
+#, fuzzy
+#| msgid "Enter name:"
+msgid "Enter Signal"
+msgstr "Номро ворид созед:"
+
+#: toolbarstateother.cpp:236
+msgid "new Signal"
+msgstr ""
+
+#: toolbarstateother.cpp:242
+#, fuzzy
+#| msgid "Enter Activity Name"
+msgid "Enter Time Event Name"
+msgstr "Номи фаъолиятро гузоред"
+
+#: toolbarstateother.cpp:243
+#, fuzzy
+#| msgid "Enter new text:"
+msgid "Enter Time Event"
+msgstr "Матни навро ворид кунед:"
+
+#: toolbarstateother.cpp:243
+#, fuzzy
+#| msgid "new activity"
+msgid "new time event"
+msgstr "фаъолияти нав"
+
+#: toolbarstateother.cpp:249
+#, fuzzy
+msgid "Enter Combined Fragment Name"
+msgstr "Номи ҳолатро гузоред"
+
+#: toolbarstateother.cpp:250
+msgid "Enter the Combined Fragment"
+msgstr ""
+
+#: toolbarstateother.cpp:250
+msgid "new Combined Fragment"
+msgstr ""
+
+#: toolbarstateother.cpp:257 umlview.cpp:2733
+msgid "new state"
+msgstr "ҳолати нав"
 
 #: enumliteral.cpp:104
 #, fuzzy
@@ -3256,6 +3273,13 @@ msgid ""
 "already exists in the package %2.\n"
 "Please enter a new name:"
 msgstr ""
+
+#: umlviewimageexporterall.cpp:84 uml.cpp:1319 umlviewimageexporter.cpp:77
+#, fuzzy
+#| msgid "Ready."
+msgctxt "reset status bar"
+msgid "Ready."
+msgstr "Таёр."
 
 #: uml.cpp:242
 msgid "&Export model to DocBook"
@@ -3611,13 +3635,6 @@ msgstr ""
 "Umbrello наметавонад часпонад иборатҳои клипбордро. Чизҳо дар клипборд "
 "мумкин ки намуди хато мебошанд барои часпондан дар ин ҷо."
 
-#: uml.cpp:1319 umlviewimageexporterall.cpp:84 umlviewimageexporter.cpp:77
-#, fuzzy
-#| msgid "Ready."
-msgctxt "reset status bar"
-msgid "Ready."
-msgstr "Таёр."
-
 #: uml.cpp:1857
 msgid "Cannot view code until you generate some first."
 msgstr "Барои тамошои код онро бояд ҳосил кунед."
@@ -3669,38 +3686,6 @@ msgstr "Синфҳоро барои воридот интихоб намоед"
 #: uml.cpp:2756
 msgid "XHTML Generation failed ."
 msgstr ""
-
-#: association.cpp:39
-msgid "Generalization"
-msgstr "Ҷамъбаст"
-
-#: association.cpp:43
-msgid "Self Association"
-msgstr "Худиттиҳод"
-
-#: association.cpp:44
-msgid "Collaboration Message"
-msgstr "Хабар додани кооператсия"
-
-#: association.cpp:45
-msgid "Sequence Message"
-msgstr "Ахборот ба таври синхронӣ"
-
-#: association.cpp:46
-msgid "Collaboration Self Message"
-msgstr "Худахбороти кооперативӣ"
-
-#: association.cpp:47
-msgid "Sequence Self Message"
-msgstr "Худахбороти пайдарпаӣ"
-
-#: association.cpp:50
-msgid "Realization"
-msgstr "Иҷрокунӣ"
-
-#: association.cpp:51
-msgid "Uni Association"
-msgstr "Уни-иртибот"
 
 #: model_utils.cpp:406
 msgid "new_actor"
@@ -3827,6 +3812,863 @@ msgstr "Диаграммаи кооператсия..."
 #: model_utils.cpp:1725
 msgid "No Diagram"
 msgstr "Бе диаграмма"
+
+#: object_factory.cpp:191
+#, fuzzy
+#| msgid "Name"
+msgctxt "UMLObject name"
+msgid "Name"
+msgstr "Ном"
+
+#: object_factory.cpp:202
+msgid ""
+"This is a reserved keyword for the language of the configured code generator."
+msgstr "Ин забони фаъоли хизмат эҳтиётӣ аст."
+
+#: object_factory.cpp:203
+msgid "Reserved Keyword"
+msgstr "Эҳтиёт намудани калимаи калид"
+
+#: umlviewimageexportermodel.cpp:214
+#, fuzzy, kde-format
+msgid "Can not create directory: %1"
+msgstr "Натавонистам каталог бунёд созам"
+
+#: umlviewimageexportermodel.cpp:232
+msgid "Can not save an empty diagram"
+msgstr "Диаграмма холӣ мебошад"
+
+#: umlviewimageexportermodel.cpp:237
+#, kde-format
+msgid "A problem occurred while saving diagram in %1"
+msgstr ""
+
+#: umlviewimageexportermodel.cpp:243 umllistview.cpp:476 umldoc.cpp:616
+#: umldoc.cpp:626 umldoc.cpp:643 umldoc.cpp:676 umldoc.cpp:694
+#, kde-format
+msgid "There was a problem saving file: %1"
+msgstr "Ҳангоми нигоҳдории файл хатогӣ рӯй дода шуд: %1"
+
+#: folder.cpp:405
+#, fuzzy, kde-format
+msgid "The folderfile %1 does not exist."
+msgstr "Файли %1 мавҷуд надорад."
+
+#: folder.cpp:405 folder.cpp:409 umldoc.cpp:418 umldoc.cpp:440 umldoc.cpp:478
+#: umldoc.cpp:490 umldoc.cpp:504 umldoc.cpp:516 umldoc.cpp:528 umldoc.cpp:546
+msgid "Load Error"
+msgstr "Пурборкунии нодуруст"
+
+#: folder.cpp:409
+#, fuzzy, kde-format
+msgid "The folderfile %1 cannot be opened."
+msgstr "Файли %1 зарар расонда шуд."
+
+#: toolbarstateassociation.cpp:182 toolbarstateassociation.cpp:251
+msgid "Incorrect use of associations."
+msgstr "Имконнопазирии истифодабарии иттиҳод."
+
+#: toolbarstateassociation.cpp:182 toolbarstateassociation.cpp:251
+msgid "Association Error"
+msgstr "Хатогии иттиҳод"
+
+#: umllistviewitem.cpp:525 umllistviewitem.cpp:558 umllistviewitem.cpp:589
+#: umllistviewitem.cpp:616
+msgid "Rename canceled"
+msgstr ""
+
+#: umllistviewitem.cpp:649
+#, kde-format
+msgid "Renaming an item of listview type %1 is not yet implemented."
+msgstr ""
+
+#: umllistviewitem.cpp:650
+msgid "Function Not Implemented"
+msgstr ""
+
+#: umllistviewitem.cpp:663
+msgid ""
+"The name you entered was invalid.\n"
+"Renaming process has been canceled."
+msgstr ""
+"Даромадани ном нодастрас мебошад.\n"
+"Номи дигаргузориро рад кард."
+
+#: umllistviewitem.cpp:664 umllistview.cpp:2188
+msgid "Name Not Valid"
+msgstr "Ном нодуруст аст"
+
+#: listpopupmenu.cpp:286 listpopupmenu.cpp:601
+msgid "Change Font..."
+msgstr "Дигаргун кардани ҳарф..."
+
+#: listpopupmenu.cpp:287
+msgid "Delete Selected Items"
+msgstr "Бекор кардани маҳалҳои ҷудошуда"
+
+#: listpopupmenu.cpp:293 listpopupmenu.cpp:958
+msgid "Draw as Circle"
+msgstr "Кашидан мисли доира"
+
+#: listpopupmenu.cpp:295 listpopupmenu.cpp:960
+#, fuzzy
+msgid "Change into Class"
+msgstr "Тағйири ҳарф"
+
+#: listpopupmenu.cpp:299 listpopupmenu.cpp:966
+#, fuzzy
+msgid "Change into Interface"
+msgstr "интерфейси_нав"
+
+#: listpopupmenu.cpp:320 listpopupmenu.cpp:1478
+#, fuzzy
+#| msgid "Note"
+msgid "Category Type"
+msgstr "Эъзоҳ"
+
+#: listpopupmenu.cpp:371
+msgid "Move Up"
+msgstr "Ба боло"
+
+#: listpopupmenu.cpp:372
+msgid "Move Down"
+msgstr "Ба поён"
+
+#: listpopupmenu.cpp:378
+msgid "Rename Class..."
+msgstr "Тағйир кардани номи синф..."
+
+#: listpopupmenu.cpp:379
+msgid "Rename Object..."
+msgstr "Тағйир кардани номи объект..."
+
+#: listpopupmenu.cpp:398
+#, fuzzy
+msgctxt "clear note"
+msgid "Clear"
+msgstr "Синф"
+
+#: listpopupmenu.cpp:400 listpopupmenu.cpp:487 listpopupmenu.cpp:506
+#: listpopupmenu.cpp:547
+msgid "Change Text..."
+msgstr "Тағйир кардани матн..."
+
+#: listpopupmenu.cpp:419
+msgid "Change State Name..."
+msgstr "Тағйири номи ҳолат..."
+
+#: listpopupmenu.cpp:430
+#, fuzzy
+msgid "Flip Horizontal"
+msgstr "Рост намудан ба таври уфуқӣ (дар байни киёниҳо)"
+
+#: listpopupmenu.cpp:433
+#, fuzzy
+msgid "Flip Vertical"
+msgstr "Рост намудан ба таври амудӣ (дар байни киёниҳо)"
+
+#: listpopupmenu.cpp:450
+msgid "Change Activity Name..."
+msgstr "Тағйири номи фаъолият..."
+
+#: listpopupmenu.cpp:469
+#, fuzzy
+#| msgid "Change State Name..."
+msgid "Change Object Node Name..."
+msgstr "Тағйири номи ҳолат..."
+
+#: listpopupmenu.cpp:485
+#, fuzzy
+msgctxt "clear precondition"
+msgid "Clear"
+msgstr "Синф"
+
+#: listpopupmenu.cpp:496
+#, fuzzy
+#| msgid "Add Operation"
+msgid "Add Interaction Operand"
+msgstr "Дохил кардани амалиёт"
+
+#: listpopupmenu.cpp:504
+#, fuzzy
+msgctxt "clear combined fragment"
+msgid "Clear"
+msgstr "Синф"
+
+#: listpopupmenu.cpp:514 listpopupmenu.cpp:517 listpopupmenu.cpp:1623
+#: listpopupmenu.cpp:1627
+msgid "Change Multiplicity..."
+msgstr "Тағйири бисёрӣ..."
+
+#: listpopupmenu.cpp:520 listpopupmenu.cpp:1631
+msgid "Change Name"
+msgstr "Тағйири ном"
+
+#: listpopupmenu.cpp:523 listpopupmenu.cpp:1615 listpopupmenu.cpp:1637
+msgid "Change Role A Name..."
+msgstr "Тағирдиҳии ролӣ номи А..."
+
+#: listpopupmenu.cpp:526 listpopupmenu.cpp:1619 listpopupmenu.cpp:1638
+msgid "Change Role B Name..."
+msgstr "Тағирдиҳии ролӣ номи В..."
+
+#: listpopupmenu.cpp:540 listpopupmenu.cpp:634
+msgid "New Operation..."
+msgstr "Амалиёти нав..."
+
+#: listpopupmenu.cpp:541 listpopupmenu.cpp:1657
+msgid "Select Operation..."
+msgstr "Интихоб кардани амалиёт..."
+
+#: listpopupmenu.cpp:586 listpopupmenu.cpp:1661
+msgid "Rename..."
+msgstr "Тағйири ном..."
+
+#: listpopupmenu.cpp:604 listpopupmenu.cpp:979
+msgid "Line Color..."
+msgstr "Ранги сатр..."
+
+#: listpopupmenu.cpp:607
+msgid "Expand All"
+msgstr "Паҳн кардани ҳама"
+
+#: listpopupmenu.cpp:610
+msgid "Collapse All"
+msgstr "Маҳкам кардани ҳама"
+
+#: listpopupmenu.cpp:613
+#, fuzzy
+#| msgid "Duplicate"
+msgctxt "duplicate action"
+msgid "Duplicate"
+msgstr "Дубликат"
+
+#: listpopupmenu.cpp:616
+msgid "Externalize Folder..."
+msgstr ""
+
+#: listpopupmenu.cpp:619
+#, fuzzy
+msgid "Internalize Folder"
+msgstr "Хатогии дохила"
+
+#: listpopupmenu.cpp:622
+#, fuzzy
+msgid "Import Classes..."
+msgstr "Воридот кардани синфҳои C++..."
+
+#: listpopupmenu.cpp:625
+#, fuzzy
+msgid "Import Project..."
+msgstr "Воридот кардани синфҳои C++..."
+
+#: listpopupmenu.cpp:628
+msgid "Reset Label Positions"
+msgstr "Партофтани ҳолати нишонҳо"
+
+#: listpopupmenu.cpp:631
+msgid "New Parameter..."
+msgstr "Параметри нав..."
+
+#: listpopupmenu.cpp:637
+msgid "New Attribute..."
+msgstr "Аттрибути нав..."
+
+#: listpopupmenu.cpp:640 listpopupmenu.cpp:1563
+msgid "New Template..."
+msgstr "Нусхаи нав..."
+
+#: listpopupmenu.cpp:643
+msgid "New Literal..."
+msgstr "Навасаи луғзии доими..."
+
+#: listpopupmenu.cpp:646
+#, fuzzy
+msgid "New Entity Attribute..."
+msgstr "Аттрибути нав..."
+
+#: listpopupmenu.cpp:649
+msgid "Export as Picture..."
+msgstr "Захира кардан мисли тасвир..."
+
+#: listpopupmenu.cpp:668
+msgid "Subsystem"
+msgstr ""
+
+#: listpopupmenu.cpp:698 listpopupmenu.cpp:832
+msgid "Folder"
+msgstr "Каталог"
+
+#: listpopupmenu.cpp:727
+msgid "Text Line..."
+msgstr "Хати матн..."
+
+#: listpopupmenu.cpp:829
+#, fuzzy
+#| msgid "New"
+msgctxt "new container menu"
+msgid "New"
+msgstr "Нав"
+
+#: listpopupmenu.cpp:833
+#, fuzzy
+#| msgid "Class"
+msgctxt "new class menu item"
+msgid "Class"
+msgstr "Синф"
+
+#: listpopupmenu.cpp:914
+msgid "Public Only"
+msgstr "Фақат умумӣ"
+
+#: listpopupmenu.cpp:918
+msgid "Operation Signature"
+msgstr "Имзои амалиёт"
+
+#: listpopupmenu.cpp:923
+msgid "Attribute Signature"
+msgstr "Имзои аттрибут"
+
+#: listpopupmenu.cpp:943
+#, fuzzy
+#| msgid "New"
+msgctxt "new classifier menu"
+msgid "New"
+msgstr "Нав"
+
+#: listpopupmenu.cpp:946
+msgid "Attribute..."
+msgstr "Аттирибут..."
+
+#: listpopupmenu.cpp:947
+msgid "Operation..."
+msgstr "Амалиёт..."
+
+#: listpopupmenu.cpp:948
+#, fuzzy
+#| msgid "New Template..."
+msgid "Template..."
+msgstr "Нусхаи нав..."
+
+#: listpopupmenu.cpp:962
+msgid "Refactor"
+msgstr "Нишондиҳандаи нав"
+
+#: listpopupmenu.cpp:963
+msgid "View Code"
+msgstr "Намоиш кардани код"
+
+#: listpopupmenu.cpp:978
+#, fuzzy
+#| msgid "Color"
+msgctxt "color menu"
+msgid "Color"
+msgstr "Ранг"
+
+#: listpopupmenu.cpp:980
+msgid "Fill Color..."
+msgstr "Ранги шероза..."
+
+#. i18n: file: umbrello.kcfg:96
+#. i18n: ectx: label, entry (useFillColor), group (UI Options)
+#: listpopupmenu.cpp:981 rc.cpp:1250
+msgid "Use Fill Color"
+msgstr "Истифодаи ранги шероза"
+
+#: listpopupmenu.cpp:1075
+#, fuzzy
+#| msgid "New"
+msgctxt "new sub menu"
+msgid "New"
+msgstr "Нав"
+
+#: listpopupmenu.cpp:1124
+msgid "Actor..."
+msgstr "Иштирокунанда..."
+
+#: listpopupmenu.cpp:1125
+msgid "Use Case..."
+msgstr "Назир..."
+
+#: listpopupmenu.cpp:1129
+#, fuzzy
+#| msgid "Class..."
+msgctxt "new class menu item"
+msgid "Class..."
+msgstr "Синф..."
+
+#: listpopupmenu.cpp:1130
+msgid "Interface..."
+msgstr "Интерфейс..."
+
+#: listpopupmenu.cpp:1131
+msgid "Datatype..."
+msgstr "Намуди маълумотҳо..."
+
+#: listpopupmenu.cpp:1132
+msgid "Enum..."
+msgstr "Намуди номбаршуда..."
+
+#: listpopupmenu.cpp:1133
+msgid "Package..."
+msgstr "Пакет..."
+
+#: listpopupmenu.cpp:1139
+#, fuzzy
+#| msgid "State..."
+msgctxt "add new state"
+msgid "State..."
+msgstr "Ҳолат..."
+
+#: listpopupmenu.cpp:1145 listpopupmenu.cpp:1187
+msgid "Activity..."
+msgstr "Фаъолият..."
+
+#: listpopupmenu.cpp:1150
+#, fuzzy
+msgid "Subsystem..."
+msgstr "Ҳолат..."
+
+#: listpopupmenu.cpp:1151
+msgid "Component..."
+msgstr "Қисмат..."
+
+#: listpopupmenu.cpp:1152
+msgid "Artifact..."
+msgstr "Артефакт..."
+
+#: listpopupmenu.cpp:1155
+msgid "Node..."
+msgstr "Банд..."
+
+#: listpopupmenu.cpp:1158
+#, fuzzy
+msgid "Entity..."
+msgstr "Фаъолият..."
+
+#: listpopupmenu.cpp:1159
+#, fuzzy
+#| msgid "Note"
+msgid "Category..."
+msgstr "Эъзоҳ"
+
+#: listpopupmenu.cpp:1163
+msgid "Object..."
+msgstr "Мавзӯъ..."
+
+#: listpopupmenu.cpp:1167
+msgid "Attribute"
+msgstr "Аттрибут"
+
+#: listpopupmenu.cpp:1169 listpopupmenu.cpp:1173
+#, fuzzy
+msgid "Template"
+msgstr "Қолибҳо"
+
+#: listpopupmenu.cpp:1176
+#, fuzzy
+msgid "Entity Attribute..."
+msgstr "Аттирибут..."
+
+#: listpopupmenu.cpp:1183
+msgid "Enum Literal..."
+msgstr "Константаи номбаршуда..."
+
+#: listpopupmenu.cpp:1611
+msgid "Delete Anchor"
+msgstr "Нобуд кардани бадарға"
+
+#: listpopupmenu.cpp:1636
+msgid "Change Association Name..."
+msgstr "Тағйири номи пайвастагӣ..."
+
+#: listpopupmenu.cpp:1686
+msgid "Undo"
+msgstr ""
+
+#: listpopupmenu.cpp:1687
+#, fuzzy
+msgid "Redo"
+msgstr "Таёр."
+
+#: listpopupmenu.cpp:1693
+msgid "Clear Diagram"
+msgstr "Нобуд кардани диаграмма"
+
+#: listpopupmenu.cpp:1696
+msgid "Snap to Grid"
+msgstr "Банд кардан ба шабака"
+
+#: listpopupmenu.cpp:1698
+msgid "Show Grid"
+msgstr "Нишон додани шабака"
+
+#: listpopupmenu.cpp:1710
+msgid "Disjoint(Specialisation)"
+msgstr ""
+
+#: listpopupmenu.cpp:1711
+msgid "Overlapping(Specialisation)"
+msgstr ""
+
+#: listpopupmenu.cpp:1712
+msgid "Union"
+msgstr ""
+
+#: main.cpp:36 main.cpp:68
+msgid "Umbrello UML Modeller"
+msgstr "Umbrello"
+
+#: main.cpp:70
+#, fuzzy
+msgid "(c) 2001 Paul Hensgen, (c) 2002-2006 Umbrello UML Modeller Authors"
+msgstr ""
+"(c) 2001 Paul Hensgen, (c) 2002-2004 Гурӯҳи истихроҷкунандаҳои Umbrello "
+
+#: main.cpp:72
+msgid "Paul Hensgen"
+msgstr ""
+
+#: main.cpp:77
+msgid "File to open"
+msgstr "Файлро кушоед"
+
+#: main.cpp:78
+msgid "export diagrams to extension and exit"
+msgstr ""
+
+#: main.cpp:79
+msgid "list available export extensions"
+msgstr ""
+
+#: main.cpp:80
+msgid "the local directory to save the exported diagrams in"
+msgstr ""
+
+#: main.cpp:80
+msgid "the directory of the file"
+msgstr ""
+
+#: main.cpp:81
+msgid ""
+"keep the tree structure used to store the views in the document in the "
+"target directory"
+msgstr ""
+
+#: umllistview.cpp:437
+msgid "Externalize Folder"
+msgstr ""
+
+#: umllistview.cpp:477 umldoc.cpp:616 umldoc.cpp:626 umldoc.cpp:643
+#: umldoc.cpp:676 umldoc.cpp:694 umldoc.cpp:701
+msgid "Save Error"
+msgstr "Нигоҳдории нодуруст"
+
+#: umllistview.cpp:506
+#, fuzzy
+msgid "Enter Model Name"
+msgstr "Номи ҳолатро гузоред"
+
+#: umllistview.cpp:507
+#, fuzzy
+msgid "Enter the new name of the model:"
+msgstr "Номи нави фаъолиятро гузоред:"
+
+#: umllistview.cpp:1234
+msgid "Views"
+msgstr "Пешниҳодҳо"
+
+#: umllistview.cpp:2187
+msgid ""
+"The name you entered was invalid.\n"
+"Creation process has been canceled."
+msgstr ""
+"Номи ворид карда шуда имконпазир аст.\n"
+"Бунёкунӣ бекор карда шуд."
+
+#: umllistview.cpp:2197 umldoc.cpp:1353
+msgid ""
+"The name you entered was not unique.\n"
+"Is this what you wanted?"
+msgstr ""
+"Чунин ном аллакай вуҷуд дорад.\n"
+"Шумо дар ҳақиқат ҳаминро мехоҳед?"
+
+#: umllistview.cpp:2198 umldoc.cpp:1354
+#, fuzzy
+msgid "Use Name"
+msgstr "Собиқа"
+
+#: umllistview.cpp:2198 umldoc.cpp:1354
+#, fuzzy
+msgid "Enter New Name"
+msgstr "Номи ҳолатро гузоред"
+
+#: umllistview.cpp:2204 umllistview.cpp:2466
+#, fuzzy
+msgid ""
+"The name you entered was not unique.\n"
+"Creation process has been canceled."
+msgstr ""
+"Номи ворид карда шуда аллакай истифода шуда истодааст\n"
+"Бунёдкунӣ бекор карда шуд."
+
+#: umllistview.cpp:2424 umllistview.cpp:2441 umllistview.cpp:2456
+#: umllistview.cpp:2486
+msgid "Creation canceled"
+msgstr ""
+
+#: umllistview.cpp:2697
+#, fuzzy
+msgid "Loading listview..."
+msgstr "Пурбори диаграммаҳо..."
+
+#: umllistview.cpp:3072
+msgid "The folder must be emptied before it can be deleted."
+msgstr "Каталогро пеш аз нобуд сохтан озод намоед."
+
+#: umllistview.cpp:3073
+msgid "Folder Not Empty"
+msgstr "Каталог холӣ нест"
+
+#: umlviewimageexporter.cpp:71
+#, fuzzy
+msgid "Exporting view..."
+msgstr "Баромадан..."
+
+#: umlviewimageexporter.cpp:75
+msgid "An error happened when exporting the image:\n"
+msgstr ""
+
+#: umlviewimageexporter.cpp:102
+#, kde-format
+msgid ""
+"The selected file %1 exists.\n"
+"Do you want to overwrite it?"
+msgstr ""
+"Файли интихобшуда %1 аллакай вуҷуд дорад.\n"
+"Шумо онро иваз кардан мехоҳед?"
+
+#: umlviewimageexporter.cpp:103
+msgid "File Already Exists"
+msgstr "Файл аллакай вуҷуд дорад"
+
+#: operation.cpp:273
+msgid "new_parameter"
+msgstr "new_parameter"
+
+#: umldoc.cpp:87 umldoc.cpp:1878
+#, fuzzy
+msgid "UML Model"
+msgstr "Umbrello"
+
+#: umldoc.cpp:120
+msgid "Logical View"
+msgstr "Пешниҳодҳои мантиқӣ"
+
+#: umldoc.cpp:121
+msgid "Use Case View"
+msgstr "Андеша аз тарафи собиқаҳо"
+
+#: umldoc.cpp:122
+msgid "Component View"
+msgstr "Андеша аз тарафи собиқаҳо"
+
+#: umldoc.cpp:123
+msgid "Deployment View"
+msgstr "Андеша аз тарафи кушоиш"
+
+#: umldoc.cpp:124
+msgid "Entity Relationship Model"
+msgstr ""
+
+#: umldoc.cpp:131 umldoc.cpp:343
+msgid "Datatypes"
+msgstr "Намуди маълумотҳо"
+
+#: umldoc.cpp:271
+msgid ""
+"The current file has been modified.\n"
+"Do you want to save it?"
+msgstr ""
+"Фйали ҷорӣ тағир дода шуда буд.\n"
+"Нигоҳ дорам?"
+
+#: umldoc.cpp:272
+#, fuzzy
+msgctxt "warning message"
+msgid "Warning"
+msgstr "сатр"
+
+#: umldoc.cpp:418
+#, kde-format
+msgid "The file %1 does not exist."
+msgstr "Файли %1 мавҷуд надорад."
+
+#: umldoc.cpp:440
+#, kde-format
+msgid "The file %1 seems to be corrupted."
+msgstr "Файли %1 зарар расонда шуд."
+
+#: umldoc.cpp:477 umldoc.cpp:489 umldoc.cpp:515
+#, kde-format
+msgid "There was no XMI file found in the compressed file %1."
+msgstr "Файли %1 фишурдашуда дар худ XMI надорад."
+
+#: umldoc.cpp:503
+#, kde-format
+msgid "There was a problem loading the extracted file: %1"
+msgstr "Ҳангоми пурборкунии файли яла хатогӣ рӯй дода шуд: %1"
+
+#: umldoc.cpp:527 umldoc.cpp:545
+#, kde-format
+msgid "There was a problem loading file: %1"
+msgstr "Ҳангоми пурборкунии файл хатогӣ рӯй дода шуд: %1"
+
+#: umldoc.cpp:701
+#, kde-format
+msgid "There was a problem uploading file: %1"
+msgstr "Ҳангоми фишор дода даровардани файл ба таҳиягари: %1"
+
+#: umldoc.cpp:1154
+msgid "use case diagram"
+msgstr "Диаграммаҳои собиқаҳо"
+
+#: umldoc.cpp:1157
+msgid "class diagram"
+msgstr "Синфи диаграмма"
+
+#: umldoc.cpp:1160
+msgid "sequence diagram"
+msgstr "Диаграммаи пайдарпаӣ"
+
+#: umldoc.cpp:1163
+msgid "collaboration diagram"
+msgstr "ширкати диаграмма"
+
+#: umldoc.cpp:1166
+msgid "state diagram"
+msgstr "диаграммаи молу мулк"
+
+#: umldoc.cpp:1169
+msgid "activity diagram"
+msgstr "диаграммаи фаъолият"
+
+#: umldoc.cpp:1172
+msgid "component diagram"
+msgstr "диагараммаи компонентҳо"
+
+#: umldoc.cpp:1175
+msgid "deployment diagram"
+msgstr "диаграммаи кушоиш"
+
+#: umldoc.cpp:1178
+msgid "entity relationship diagram"
+msgstr ""
+
+#: umldoc.cpp:1235
+#, fuzzy
+#| msgid "Name"
+msgctxt "diagram name"
+msgid "Name"
+msgstr "Ном"
+
+#: umldoc.cpp:1243 umldoc.cpp:1284
+msgid "That is an invalid name for a diagram."
+msgstr "Диаграммаи номи нодастрас."
+
+#: umldoc.cpp:1257 umldoc.cpp:1293
+msgid "A diagram is already using that name."
+msgstr "Диаграма аллакай ин номро истифода мебарад."
+
+#: umldoc.cpp:1278
+#, fuzzy
+#| msgid "Name"
+msgctxt "renaming diagram"
+msgid "Name"
+msgstr "Ном"
+
+#: umldoc.cpp:1309
+#, fuzzy
+#| msgid "Name"
+msgctxt "renaming uml object"
+msgid "Name"
+msgstr "Ном"
+
+#: umldoc.cpp:1343
+#, fuzzy
+#| msgid "Name"
+msgctxt "renaming child uml object"
+msgid "Name"
+msgstr "Ном"
+
+#: umldoc.cpp:1404
+#, kde-format
+msgid "Are you sure you want to delete diagram %1?"
+msgstr "Шумо мехоҳед ,ки ин диаграммаро нест кунед %1?"
+
+#: umldoc.cpp:1405
+msgid "Delete Diagram"
+msgstr "Нест кардани диаграмма"
+
+#: umldoc.cpp:1934
+msgid "Setting up the document..."
+msgstr "Барқароркунии документ..."
+
+#: umldoc.cpp:1963
+msgid "Resolving object references..."
+msgstr ""
+
+#: umldoc.cpp:2014
+msgid "Loading UML elements..."
+msgstr "Пурборкунии элементҳои UML..."
+
+#: umldoc.cpp:2209
+msgid "Loading diagrams..."
+msgstr "Пурборкунии диаграммаҳо..."
+
+#: umldoc.cpp:2703
+#, kde-format
+msgid "/autosave%1"
+msgstr "/автохотиргузори%1"
+
+#: umlview.cpp:317 umlview.cpp:387
+#, kde-format
+msgid "Diagram: %2 Page %1"
+msgstr "Диаграмма: %2 Саҳифа %1"
+
+#: umlview.cpp:1057
+#, fuzzy
+msgid "Change Line Color"
+msgstr "Тағйири ҳарф"
+
+#: umlview.cpp:1086
+#, fuzzy
+#| msgid "Use Fill Color"
+msgid "Change Fill Color"
+msgstr "Истифодаи ранги шероза"
+
+#: umlview.cpp:2795
+#, fuzzy
+msgid "Enter Diagram Name"
+msgstr "Номи ҳолатро гузоред"
+
+#: umlview.cpp:2796
+#, fuzzy
+msgid "Enter the new name of the diagram:"
+msgstr "Номи нави фаъолиятро гузоред:"
+
+#: umlview.cpp:2957
+msgid ""
+"You are about to delete the entire diagram.\n"
+"Are you sure?"
+msgstr ""
+"Оё шумо дар ҳақиқат ҳамаи\n"
+" диаграммаҳоро нобуд сохтан мехоҳед?"
+
+#: umlview.cpp:2959
+msgid "Delete Diagram?"
+msgstr "Диаграммаро нобуд созам?"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -4647,46 +5489,73 @@ msgstr "<p align=\"right\">Матни тағйирнашаванда:</p>"
 msgid "<p align=\"right\">Editable text:</p>"
 msgstr "<p align=\"right\">Матни ивазшаванда:</p>"
 
+#. i18n: file: dialogs/importprojectdlgbase.ui:23
+#. i18n: ectx: property (toolTip), widget (QLabel, kURLRequesterLabel)
+#. i18n: file: dialogs/importprojectdlgbase.ui:39
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, m_kURL)
+#: rc.cpp:902 rc.cpp:908
+msgid "The base directory that contains the project"
+msgstr ""
+
+#. i18n: file: dialogs/importprojectdlgbase.ui:26
+#. i18n: ectx: property (text), widget (QLabel, kURLRequesterLabel)
+#: rc.cpp:905
+msgid "&Directory of the project:"
+msgstr ""
+
+#. i18n: file: dialogs/importprojectdlgbase.ui:50
+#. i18n: ectx: property (toolTip), widget (QLabel, languageLabel)
+#: rc.cpp:911
+msgid "The language of the project"
+msgstr ""
+
+#. i18n: file: dialogs/importprojectdlgbase.ui:53
+#. i18n: ectx: property (text), widget (QLabel, languageLabel)
+#: rc.cpp:914
+#, fuzzy
+msgid "Language:"
+msgstr "Забон"
+
 #. i18n: file: dialogs/diagrampropertiespage.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDiagramProperties)
-#: rc.cpp:902
+#: rc.cpp:917
 msgid "Diagram Properties"
 msgstr "Хусусиятҳои диаграмма"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:39
 #. i18n: ectx: property (text), widget (QLabel, ui_labelDiagramName)
-#: rc.cpp:905
+#: rc.cpp:920
 msgid "Name:"
 msgstr "Ном:"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:82
 #. i18n: ectx: property (text), widget (QLabel, ui_labelZoom)
-#: rc.cpp:908
+#: rc.cpp:923
 msgid "Zoom:"
 msgstr "Калон кунӣ:"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:108
 #. i18n: ectx: property (text), widget (QLabel, ui_labelZoomUnit)
-#: rc.cpp:912
+#: rc.cpp:927
 #, no-c-format
 msgid "%"
 msgstr "%"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:153
 #. i18n: ectx: property (text), widget (QCheckBox, ui_checkBoxShowGrid)
-#: rc.cpp:918
+#: rc.cpp:933
 msgid "Show &grid"
 msgstr "Намоиши &шабака"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:160
 #. i18n: ectx: property (text), widget (QCheckBox, ui_snapToGrid)
-#: rc.cpp:921
+#: rc.cpp:936
 msgid "Snap &to grid"
 msgstr "Ба шабака &бастан"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:168
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, ui_snapComponentSizeToGrid)
-#: rc.cpp:924
+#: rc.cpp:939
 msgid ""
 "Snap the size of the components to be a multiple of the grid spacing.\n"
 "If 'Snap to Grid' is enabled a component will always be aligned with the "
@@ -4699,60 +5568,33 @@ msgstr ""
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:171
 #. i18n: ectx: property (text), widget (QCheckBox, ui_snapComponentSizeToGrid)
-#: rc.cpp:928
+#: rc.cpp:943
 msgid "Snap component size"
 msgstr "Бастани андозаи қисматҳо"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:197
 #. i18n: ectx: property (text), widget (QLabel, ui_labelGridSpacing)
-#: rc.cpp:931
+#: rc.cpp:946
 msgid "Grid spacing:  "
 msgstr "Интервали шабака:  "
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:207
 #. i18n: ectx: property (text), widget (QLabel, ui_labelX)
-#: rc.cpp:934
+#: rc.cpp:949
 msgid "X"
 msgstr "X"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:243
 #. i18n: ectx: property (text), widget (QLabel, ui_labelY)
-#: rc.cpp:937
+#: rc.cpp:952
 msgid "Y"
 msgstr "Y"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:282
 #. i18n: ectx: property (text), widget (QLabel, ui_labeLineWidth)
-#: rc.cpp:940
+#: rc.cpp:955
 msgid "Line width:  "
 msgstr "Бари сатр:  "
-
-#. i18n: file: dialogs/importprojectdlgbase.ui:23
-#. i18n: ectx: property (toolTip), widget (QLabel, kURLRequesterLabel)
-#. i18n: file: dialogs/importprojectdlgbase.ui:39
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, m_kURL)
-#: rc.cpp:946 rc.cpp:952
-msgid "The base directory that contains the project"
-msgstr ""
-
-#. i18n: file: dialogs/importprojectdlgbase.ui:26
-#. i18n: ectx: property (text), widget (QLabel, kURLRequesterLabel)
-#: rc.cpp:949
-msgid "&Directory of the project:"
-msgstr ""
-
-#. i18n: file: dialogs/importprojectdlgbase.ui:50
-#. i18n: ectx: property (toolTip), widget (QLabel, languageLabel)
-#: rc.cpp:955
-msgid "The language of the project"
-msgstr ""
-
-#. i18n: file: dialogs/importprojectdlgbase.ui:53
-#. i18n: ectx: property (text), widget (QLabel, languageLabel)
-#: rc.cpp:958
-#, fuzzy
-msgid "Language:"
-msgstr "Забон"
 
 #. i18n: file: dialogs/exportallviewsdialogbase.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ExportAllViewsDialogBase)
@@ -5324,12 +6166,6 @@ msgstr "&Пешфарз"
 #: rc.cpp:1247
 msgid "The Language that Umbrello should start with by default"
 msgstr ""
-
-#. i18n: file: umbrello.kcfg:96
-#. i18n: ectx: label, entry (useFillColor), group (UI Options)
-#: rc.cpp:1250 listpopupmenu.cpp:981
-msgid "Use Fill Color"
-msgstr "Истифодаи ранги шероза"
 
 #. i18n: file: umbrello.kcfg:97
 #. i18n: ectx: whatsthis, entry (useFillColor), group (UI Options)
@@ -6250,842 +7086,6 @@ msgstr "Ҳосил кардани методҳо ба таври автомат�
 #| msgid "Generate empty constructors"
 msgid "Enables/Disables auto generation of association accessors (Ruby)"
 msgstr "Ҳосил кардани конструкторҳои холи"
-
-#: object_factory.cpp:191
-#, fuzzy
-#| msgid "Name"
-msgctxt "UMLObject name"
-msgid "Name"
-msgstr "Ном"
-
-#: object_factory.cpp:202
-msgid ""
-"This is a reserved keyword for the language of the configured code generator."
-msgstr "Ин забони фаъоли хизмат эҳтиётӣ аст."
-
-#: object_factory.cpp:203
-msgid "Reserved Keyword"
-msgstr "Эҳтиёт намудани калимаи калид"
-
-#: main.cpp:36 main.cpp:68
-msgid "Umbrello UML Modeller"
-msgstr "Umbrello"
-
-#: main.cpp:70
-#, fuzzy
-msgid "(c) 2001 Paul Hensgen, (c) 2002-2006 Umbrello UML Modeller Authors"
-msgstr ""
-"(c) 2001 Paul Hensgen, (c) 2002-2004 Гурӯҳи истихроҷкунандаҳои Umbrello "
-
-#: main.cpp:72
-msgid "Paul Hensgen"
-msgstr ""
-
-#: main.cpp:77
-msgid "File to open"
-msgstr "Файлро кушоед"
-
-#: main.cpp:78
-msgid "export diagrams to extension and exit"
-msgstr ""
-
-#: main.cpp:79
-msgid "list available export extensions"
-msgstr ""
-
-#: main.cpp:80
-msgid "the local directory to save the exported diagrams in"
-msgstr ""
-
-#: main.cpp:80
-msgid "the directory of the file"
-msgstr ""
-
-#: main.cpp:81
-msgid ""
-"keep the tree structure used to store the views in the document in the "
-"target directory"
-msgstr ""
-
-#: umlviewimageexportermodel.cpp:214
-#, fuzzy, kde-format
-msgid "Can not create directory: %1"
-msgstr "Натавонистам каталог бунёд созам"
-
-#: umlviewimageexportermodel.cpp:232
-msgid "Can not save an empty diagram"
-msgstr "Диаграмма холӣ мебошад"
-
-#: umlviewimageexportermodel.cpp:237
-#, kde-format
-msgid "A problem occurred while saving diagram in %1"
-msgstr ""
-
-#: umlviewimageexportermodel.cpp:243 umllistview.cpp:476 umldoc.cpp:616
-#: umldoc.cpp:626 umldoc.cpp:643 umldoc.cpp:676 umldoc.cpp:694
-#, kde-format
-msgid "There was a problem saving file: %1"
-msgstr "Ҳангоми нигоҳдории файл хатогӣ рӯй дода шуд: %1"
-
-#: toolbarstateassociation.cpp:182 toolbarstateassociation.cpp:251
-msgid "Incorrect use of associations."
-msgstr "Имконнопазирии истифодабарии иттиҳод."
-
-#: toolbarstateassociation.cpp:182 toolbarstateassociation.cpp:251
-msgid "Association Error"
-msgstr "Хатогии иттиҳод"
-
-#: listpopupmenu.cpp:286 listpopupmenu.cpp:601
-msgid "Change Font..."
-msgstr "Дигаргун кардани ҳарф..."
-
-#: listpopupmenu.cpp:287
-msgid "Delete Selected Items"
-msgstr "Бекор кардани маҳалҳои ҷудошуда"
-
-#: listpopupmenu.cpp:293 listpopupmenu.cpp:958
-msgid "Draw as Circle"
-msgstr "Кашидан мисли доира"
-
-#: listpopupmenu.cpp:295 listpopupmenu.cpp:960
-#, fuzzy
-msgid "Change into Class"
-msgstr "Тағйири ҳарф"
-
-#: listpopupmenu.cpp:299 listpopupmenu.cpp:966
-#, fuzzy
-msgid "Change into Interface"
-msgstr "интерфейси_нав"
-
-#: listpopupmenu.cpp:320 listpopupmenu.cpp:1478
-#, fuzzy
-#| msgid "Note"
-msgid "Category Type"
-msgstr "Эъзоҳ"
-
-#: listpopupmenu.cpp:371
-msgid "Move Up"
-msgstr "Ба боло"
-
-#: listpopupmenu.cpp:372
-msgid "Move Down"
-msgstr "Ба поён"
-
-#: listpopupmenu.cpp:378
-msgid "Rename Class..."
-msgstr "Тағйир кардани номи синф..."
-
-#: listpopupmenu.cpp:379
-msgid "Rename Object..."
-msgstr "Тағйир кардани номи объект..."
-
-#: listpopupmenu.cpp:398
-#, fuzzy
-msgctxt "clear note"
-msgid "Clear"
-msgstr "Синф"
-
-#: listpopupmenu.cpp:400 listpopupmenu.cpp:487 listpopupmenu.cpp:506
-#: listpopupmenu.cpp:547
-msgid "Change Text..."
-msgstr "Тағйир кардани матн..."
-
-#: listpopupmenu.cpp:419
-msgid "Change State Name..."
-msgstr "Тағйири номи ҳолат..."
-
-#: listpopupmenu.cpp:430
-#, fuzzy
-msgid "Flip Horizontal"
-msgstr "Рост намудан ба таври уфуқӣ (дар байни киёниҳо)"
-
-#: listpopupmenu.cpp:433
-#, fuzzy
-msgid "Flip Vertical"
-msgstr "Рост намудан ба таври амудӣ (дар байни киёниҳо)"
-
-#: listpopupmenu.cpp:450
-msgid "Change Activity Name..."
-msgstr "Тағйири номи фаъолият..."
-
-#: listpopupmenu.cpp:469
-#, fuzzy
-#| msgid "Change State Name..."
-msgid "Change Object Node Name..."
-msgstr "Тағйири номи ҳолат..."
-
-#: listpopupmenu.cpp:485
-#, fuzzy
-msgctxt "clear precondition"
-msgid "Clear"
-msgstr "Синф"
-
-#: listpopupmenu.cpp:496
-#, fuzzy
-#| msgid "Add Operation"
-msgid "Add Interaction Operand"
-msgstr "Дохил кардани амалиёт"
-
-#: listpopupmenu.cpp:504
-#, fuzzy
-msgctxt "clear combined fragment"
-msgid "Clear"
-msgstr "Синф"
-
-#: listpopupmenu.cpp:514 listpopupmenu.cpp:517 listpopupmenu.cpp:1623
-#: listpopupmenu.cpp:1627
-msgid "Change Multiplicity..."
-msgstr "Тағйири бисёрӣ..."
-
-#: listpopupmenu.cpp:520 listpopupmenu.cpp:1631
-msgid "Change Name"
-msgstr "Тағйири ном"
-
-#: listpopupmenu.cpp:523 listpopupmenu.cpp:1615 listpopupmenu.cpp:1637
-msgid "Change Role A Name..."
-msgstr "Тағирдиҳии ролӣ номи А..."
-
-#: listpopupmenu.cpp:526 listpopupmenu.cpp:1619 listpopupmenu.cpp:1638
-msgid "Change Role B Name..."
-msgstr "Тағирдиҳии ролӣ номи В..."
-
-#: listpopupmenu.cpp:540 listpopupmenu.cpp:634
-msgid "New Operation..."
-msgstr "Амалиёти нав..."
-
-#: listpopupmenu.cpp:541 listpopupmenu.cpp:1657
-msgid "Select Operation..."
-msgstr "Интихоб кардани амалиёт..."
-
-#: listpopupmenu.cpp:586 listpopupmenu.cpp:1661
-msgid "Rename..."
-msgstr "Тағйири ном..."
-
-#: listpopupmenu.cpp:604 listpopupmenu.cpp:979
-msgid "Line Color..."
-msgstr "Ранги сатр..."
-
-#: listpopupmenu.cpp:607
-msgid "Expand All"
-msgstr "Паҳн кардани ҳама"
-
-#: listpopupmenu.cpp:610
-msgid "Collapse All"
-msgstr "Маҳкам кардани ҳама"
-
-#: listpopupmenu.cpp:613
-#, fuzzy
-#| msgid "Duplicate"
-msgctxt "duplicate action"
-msgid "Duplicate"
-msgstr "Дубликат"
-
-#: listpopupmenu.cpp:616
-msgid "Externalize Folder..."
-msgstr ""
-
-#: listpopupmenu.cpp:619
-#, fuzzy
-msgid "Internalize Folder"
-msgstr "Хатогии дохила"
-
-#: listpopupmenu.cpp:622
-#, fuzzy
-msgid "Import Classes..."
-msgstr "Воридот кардани синфҳои C++..."
-
-#: listpopupmenu.cpp:625
-#, fuzzy
-msgid "Import Project..."
-msgstr "Воридот кардани синфҳои C++..."
-
-#: listpopupmenu.cpp:628
-msgid "Reset Label Positions"
-msgstr "Партофтани ҳолати нишонҳо"
-
-#: listpopupmenu.cpp:631
-msgid "New Parameter..."
-msgstr "Параметри нав..."
-
-#: listpopupmenu.cpp:637
-msgid "New Attribute..."
-msgstr "Аттрибути нав..."
-
-#: listpopupmenu.cpp:640 listpopupmenu.cpp:1563
-msgid "New Template..."
-msgstr "Нусхаи нав..."
-
-#: listpopupmenu.cpp:643
-msgid "New Literal..."
-msgstr "Навасаи луғзии доими..."
-
-#: listpopupmenu.cpp:646
-#, fuzzy
-msgid "New Entity Attribute..."
-msgstr "Аттрибути нав..."
-
-#: listpopupmenu.cpp:649
-msgid "Export as Picture..."
-msgstr "Захира кардан мисли тасвир..."
-
-#: listpopupmenu.cpp:668
-msgid "Subsystem"
-msgstr ""
-
-#: listpopupmenu.cpp:698 listpopupmenu.cpp:832
-msgid "Folder"
-msgstr "Каталог"
-
-#: listpopupmenu.cpp:727
-msgid "Text Line..."
-msgstr "Хати матн..."
-
-#: listpopupmenu.cpp:829
-#, fuzzy
-#| msgid "New"
-msgctxt "new container menu"
-msgid "New"
-msgstr "Нав"
-
-#: listpopupmenu.cpp:833
-#, fuzzy
-#| msgid "Class"
-msgctxt "new class menu item"
-msgid "Class"
-msgstr "Синф"
-
-#: listpopupmenu.cpp:914
-msgid "Public Only"
-msgstr "Фақат умумӣ"
-
-#: listpopupmenu.cpp:918
-msgid "Operation Signature"
-msgstr "Имзои амалиёт"
-
-#: listpopupmenu.cpp:923
-msgid "Attribute Signature"
-msgstr "Имзои аттрибут"
-
-#: listpopupmenu.cpp:943
-#, fuzzy
-#| msgid "New"
-msgctxt "new classifier menu"
-msgid "New"
-msgstr "Нав"
-
-#: listpopupmenu.cpp:946
-msgid "Attribute..."
-msgstr "Аттирибут..."
-
-#: listpopupmenu.cpp:947
-msgid "Operation..."
-msgstr "Амалиёт..."
-
-#: listpopupmenu.cpp:948
-#, fuzzy
-#| msgid "New Template..."
-msgid "Template..."
-msgstr "Нусхаи нав..."
-
-#: listpopupmenu.cpp:962
-msgid "Refactor"
-msgstr "Нишондиҳандаи нав"
-
-#: listpopupmenu.cpp:963
-msgid "View Code"
-msgstr "Намоиш кардани код"
-
-#: listpopupmenu.cpp:978
-#, fuzzy
-#| msgid "Color"
-msgctxt "color menu"
-msgid "Color"
-msgstr "Ранг"
-
-#: listpopupmenu.cpp:980
-msgid "Fill Color..."
-msgstr "Ранги шероза..."
-
-#: listpopupmenu.cpp:1075
-#, fuzzy
-#| msgid "New"
-msgctxt "new sub menu"
-msgid "New"
-msgstr "Нав"
-
-#: listpopupmenu.cpp:1124
-msgid "Actor..."
-msgstr "Иштирокунанда..."
-
-#: listpopupmenu.cpp:1125
-msgid "Use Case..."
-msgstr "Назир..."
-
-#: listpopupmenu.cpp:1129
-#, fuzzy
-#| msgid "Class..."
-msgctxt "new class menu item"
-msgid "Class..."
-msgstr "Синф..."
-
-#: listpopupmenu.cpp:1130
-msgid "Interface..."
-msgstr "Интерфейс..."
-
-#: listpopupmenu.cpp:1131
-msgid "Datatype..."
-msgstr "Намуди маълумотҳо..."
-
-#: listpopupmenu.cpp:1132
-msgid "Enum..."
-msgstr "Намуди номбаршуда..."
-
-#: listpopupmenu.cpp:1133
-msgid "Package..."
-msgstr "Пакет..."
-
-#: listpopupmenu.cpp:1139
-#, fuzzy
-#| msgid "State..."
-msgctxt "add new state"
-msgid "State..."
-msgstr "Ҳолат..."
-
-#: listpopupmenu.cpp:1145 listpopupmenu.cpp:1187
-msgid "Activity..."
-msgstr "Фаъолият..."
-
-#: listpopupmenu.cpp:1150
-#, fuzzy
-msgid "Subsystem..."
-msgstr "Ҳолат..."
-
-#: listpopupmenu.cpp:1151
-msgid "Component..."
-msgstr "Қисмат..."
-
-#: listpopupmenu.cpp:1152
-msgid "Artifact..."
-msgstr "Артефакт..."
-
-#: listpopupmenu.cpp:1155
-msgid "Node..."
-msgstr "Банд..."
-
-#: listpopupmenu.cpp:1158
-#, fuzzy
-msgid "Entity..."
-msgstr "Фаъолият..."
-
-#: listpopupmenu.cpp:1159
-#, fuzzy
-#| msgid "Note"
-msgid "Category..."
-msgstr "Эъзоҳ"
-
-#: listpopupmenu.cpp:1163
-msgid "Object..."
-msgstr "Мавзӯъ..."
-
-#: listpopupmenu.cpp:1167
-msgid "Attribute"
-msgstr "Аттрибут"
-
-#: listpopupmenu.cpp:1169 listpopupmenu.cpp:1173
-#, fuzzy
-msgid "Template"
-msgstr "Қолибҳо"
-
-#: listpopupmenu.cpp:1176
-#, fuzzy
-msgid "Entity Attribute..."
-msgstr "Аттирибут..."
-
-#: listpopupmenu.cpp:1183
-msgid "Enum Literal..."
-msgstr "Константаи номбаршуда..."
-
-#: listpopupmenu.cpp:1611
-msgid "Delete Anchor"
-msgstr "Нобуд кардани бадарға"
-
-#: listpopupmenu.cpp:1636
-msgid "Change Association Name..."
-msgstr "Тағйири номи пайвастагӣ..."
-
-#: listpopupmenu.cpp:1686
-msgid "Undo"
-msgstr ""
-
-#: listpopupmenu.cpp:1687
-#, fuzzy
-msgid "Redo"
-msgstr "Таёр."
-
-#: listpopupmenu.cpp:1693
-msgid "Clear Diagram"
-msgstr "Нобуд кардани диаграмма"
-
-#: listpopupmenu.cpp:1696
-msgid "Snap to Grid"
-msgstr "Банд кардан ба шабака"
-
-#: listpopupmenu.cpp:1698
-msgid "Show Grid"
-msgstr "Нишон додани шабака"
-
-#: listpopupmenu.cpp:1710
-msgid "Disjoint(Specialisation)"
-msgstr ""
-
-#: listpopupmenu.cpp:1711
-msgid "Overlapping(Specialisation)"
-msgstr ""
-
-#: listpopupmenu.cpp:1712
-msgid "Union"
-msgstr ""
-
-#: umllistviewitem.cpp:525 umllistviewitem.cpp:558 umllistviewitem.cpp:589
-#: umllistviewitem.cpp:616
-msgid "Rename canceled"
-msgstr ""
-
-#: umllistviewitem.cpp:649
-#, kde-format
-msgid "Renaming an item of listview type %1 is not yet implemented."
-msgstr ""
-
-#: umllistviewitem.cpp:650
-msgid "Function Not Implemented"
-msgstr ""
-
-#: umllistviewitem.cpp:663
-msgid ""
-"The name you entered was invalid.\n"
-"Renaming process has been canceled."
-msgstr ""
-"Даромадани ном нодастрас мебошад.\n"
-"Номи дигаргузориро рад кард."
-
-#: umllistviewitem.cpp:664 umllistview.cpp:2188
-msgid "Name Not Valid"
-msgstr "Ном нодуруст аст"
-
-#: umllistview.cpp:437
-msgid "Externalize Folder"
-msgstr ""
-
-#: umllistview.cpp:477 umldoc.cpp:616 umldoc.cpp:626 umldoc.cpp:643
-#: umldoc.cpp:676 umldoc.cpp:694 umldoc.cpp:701
-msgid "Save Error"
-msgstr "Нигоҳдории нодуруст"
-
-#: umllistview.cpp:506
-#, fuzzy
-msgid "Enter Model Name"
-msgstr "Номи ҳолатро гузоред"
-
-#: umllistview.cpp:507
-#, fuzzy
-msgid "Enter the new name of the model:"
-msgstr "Номи нави фаъолиятро гузоред:"
-
-#: umllistview.cpp:1234
-msgid "Views"
-msgstr "Пешниҳодҳо"
-
-#: umllistview.cpp:2187
-msgid ""
-"The name you entered was invalid.\n"
-"Creation process has been canceled."
-msgstr ""
-"Номи ворид карда шуда имконпазир аст.\n"
-"Бунёкунӣ бекор карда шуд."
-
-#: umllistview.cpp:2197 umldoc.cpp:1353
-msgid ""
-"The name you entered was not unique.\n"
-"Is this what you wanted?"
-msgstr ""
-"Чунин ном аллакай вуҷуд дорад.\n"
-"Шумо дар ҳақиқат ҳаминро мехоҳед?"
-
-#: umllistview.cpp:2198 umldoc.cpp:1354
-#, fuzzy
-msgid "Use Name"
-msgstr "Собиқа"
-
-#: umllistview.cpp:2198 umldoc.cpp:1354
-#, fuzzy
-msgid "Enter New Name"
-msgstr "Номи ҳолатро гузоред"
-
-#: umllistview.cpp:2204 umllistview.cpp:2466
-#, fuzzy
-msgid ""
-"The name you entered was not unique.\n"
-"Creation process has been canceled."
-msgstr ""
-"Номи ворид карда шуда аллакай истифода шуда истодааст\n"
-"Бунёдкунӣ бекор карда шуд."
-
-#: umllistview.cpp:2424 umllistview.cpp:2441 umllistview.cpp:2456
-#: umllistview.cpp:2486
-msgid "Creation canceled"
-msgstr ""
-
-#: umllistview.cpp:2697
-#, fuzzy
-msgid "Loading listview..."
-msgstr "Пурбори диаграммаҳо..."
-
-#: umllistview.cpp:3072
-msgid "The folder must be emptied before it can be deleted."
-msgstr "Каталогро пеш аз нобуд сохтан озод намоед."
-
-#: umllistview.cpp:3073
-msgid "Folder Not Empty"
-msgstr "Каталог холӣ нест"
-
-#: umlviewimageexporter.cpp:71
-#, fuzzy
-msgid "Exporting view..."
-msgstr "Баромадан..."
-
-#: umlviewimageexporter.cpp:75
-msgid "An error happened when exporting the image:\n"
-msgstr ""
-
-#: umlviewimageexporter.cpp:102
-#, kde-format
-msgid ""
-"The selected file %1 exists.\n"
-"Do you want to overwrite it?"
-msgstr ""
-"Файли интихобшуда %1 аллакай вуҷуд дорад.\n"
-"Шумо онро иваз кардан мехоҳед?"
-
-#: umlviewimageexporter.cpp:103
-msgid "File Already Exists"
-msgstr "Файл аллакай вуҷуд дорад"
-
-#: operation.cpp:273
-msgid "new_parameter"
-msgstr "new_parameter"
-
-#: umldoc.cpp:87 umldoc.cpp:1878
-#, fuzzy
-msgid "UML Model"
-msgstr "Umbrello"
-
-#: umldoc.cpp:120
-msgid "Logical View"
-msgstr "Пешниҳодҳои мантиқӣ"
-
-#: umldoc.cpp:121
-msgid "Use Case View"
-msgstr "Андеша аз тарафи собиқаҳо"
-
-#: umldoc.cpp:122
-msgid "Component View"
-msgstr "Андеша аз тарафи собиқаҳо"
-
-#: umldoc.cpp:123
-msgid "Deployment View"
-msgstr "Андеша аз тарафи кушоиш"
-
-#: umldoc.cpp:124
-msgid "Entity Relationship Model"
-msgstr ""
-
-#: umldoc.cpp:131 umldoc.cpp:343
-msgid "Datatypes"
-msgstr "Намуди маълумотҳо"
-
-#: umldoc.cpp:271
-msgid ""
-"The current file has been modified.\n"
-"Do you want to save it?"
-msgstr ""
-"Фйали ҷорӣ тағир дода шуда буд.\n"
-"Нигоҳ дорам?"
-
-#: umldoc.cpp:272
-#, fuzzy
-msgctxt "warning message"
-msgid "Warning"
-msgstr "сатр"
-
-#: umldoc.cpp:418
-#, kde-format
-msgid "The file %1 does not exist."
-msgstr "Файли %1 мавҷуд надорад."
-
-#: umldoc.cpp:440
-#, kde-format
-msgid "The file %1 seems to be corrupted."
-msgstr "Файли %1 зарар расонда шуд."
-
-#: umldoc.cpp:477 umldoc.cpp:489 umldoc.cpp:515
-#, kde-format
-msgid "There was no XMI file found in the compressed file %1."
-msgstr "Файли %1 фишурдашуда дар худ XMI надорад."
-
-#: umldoc.cpp:503
-#, kde-format
-msgid "There was a problem loading the extracted file: %1"
-msgstr "Ҳангоми пурборкунии файли яла хатогӣ рӯй дода шуд: %1"
-
-#: umldoc.cpp:527 umldoc.cpp:545
-#, kde-format
-msgid "There was a problem loading file: %1"
-msgstr "Ҳангоми пурборкунии файл хатогӣ рӯй дода шуд: %1"
-
-#: umldoc.cpp:701
-#, kde-format
-msgid "There was a problem uploading file: %1"
-msgstr "Ҳангоми фишор дода даровардани файл ба таҳиягари: %1"
-
-#: umldoc.cpp:1154
-msgid "use case diagram"
-msgstr "Диаграммаҳои собиқаҳо"
-
-#: umldoc.cpp:1157
-msgid "class diagram"
-msgstr "Синфи диаграмма"
-
-#: umldoc.cpp:1160
-msgid "sequence diagram"
-msgstr "Диаграммаи пайдарпаӣ"
-
-#: umldoc.cpp:1163
-msgid "collaboration diagram"
-msgstr "ширкати диаграмма"
-
-#: umldoc.cpp:1166
-msgid "state diagram"
-msgstr "диаграммаи молу мулк"
-
-#: umldoc.cpp:1169
-msgid "activity diagram"
-msgstr "диаграммаи фаъолият"
-
-#: umldoc.cpp:1172
-msgid "component diagram"
-msgstr "диагараммаи компонентҳо"
-
-#: umldoc.cpp:1175
-msgid "deployment diagram"
-msgstr "диаграммаи кушоиш"
-
-#: umldoc.cpp:1178
-msgid "entity relationship diagram"
-msgstr ""
-
-#: umldoc.cpp:1235
-#, fuzzy
-#| msgid "Name"
-msgctxt "diagram name"
-msgid "Name"
-msgstr "Ном"
-
-#: umldoc.cpp:1243 umldoc.cpp:1284
-msgid "That is an invalid name for a diagram."
-msgstr "Диаграммаи номи нодастрас."
-
-#: umldoc.cpp:1257 umldoc.cpp:1293
-msgid "A diagram is already using that name."
-msgstr "Диаграма аллакай ин номро истифода мебарад."
-
-#: umldoc.cpp:1278
-#, fuzzy
-#| msgid "Name"
-msgctxt "renaming diagram"
-msgid "Name"
-msgstr "Ном"
-
-#: umldoc.cpp:1309
-#, fuzzy
-#| msgid "Name"
-msgctxt "renaming uml object"
-msgid "Name"
-msgstr "Ном"
-
-#: umldoc.cpp:1343
-#, fuzzy
-#| msgid "Name"
-msgctxt "renaming child uml object"
-msgid "Name"
-msgstr "Ном"
-
-#: umldoc.cpp:1404
-#, kde-format
-msgid "Are you sure you want to delete diagram %1?"
-msgstr "Шумо мехоҳед ,ки ин диаграммаро нест кунед %1?"
-
-#: umldoc.cpp:1405
-msgid "Delete Diagram"
-msgstr "Нест кардани диаграмма"
-
-#: umldoc.cpp:1934
-msgid "Setting up the document..."
-msgstr "Барқароркунии документ..."
-
-#: umldoc.cpp:1963
-msgid "Resolving object references..."
-msgstr ""
-
-#: umldoc.cpp:2014
-msgid "Loading UML elements..."
-msgstr "Пурборкунии элементҳои UML..."
-
-#: umldoc.cpp:2209
-msgid "Loading diagrams..."
-msgstr "Пурборкунии диаграммаҳо..."
-
-#: umldoc.cpp:2703
-#, kde-format
-msgid "/autosave%1"
-msgstr "/автохотиргузори%1"
-
-#: umlview.cpp:317 umlview.cpp:387
-#, kde-format
-msgid "Diagram: %2 Page %1"
-msgstr "Диаграмма: %2 Саҳифа %1"
-
-#: umlview.cpp:1057
-#, fuzzy
-msgid "Change Line Color"
-msgstr "Тағйири ҳарф"
-
-#: umlview.cpp:1086
-#, fuzzy
-#| msgid "Use Fill Color"
-msgid "Change Fill Color"
-msgstr "Истифодаи ранги шероза"
-
-#: umlview.cpp:2795
-#, fuzzy
-msgid "Enter Diagram Name"
-msgstr "Номи ҳолатро гузоред"
-
-#: umlview.cpp:2796
-#, fuzzy
-msgid "Enter the new name of the diagram:"
-msgstr "Номи нави фаъолиятро гузоред:"
-
-#: umlview.cpp:2957
-msgid ""
-"You are about to delete the entire diagram.\n"
-"Are you sure?"
-msgstr ""
-"Оё шумо дар ҳақиқат ҳамаи\n"
-" диаграммаҳоро нобуд сохтан мехоҳед?"
-
-#: umlview.cpp:2959
-msgid "Delete Diagram?"
-msgstr "Диаграммаро нобуд созам?"
 
 #~ msgid "&Hide Grid"
 #~ msgstr "&Барҷо кардани тор"

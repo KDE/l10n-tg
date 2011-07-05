@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kolourpaint\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-07 04:02+0200\n"
+"POT-Creation-Date: 2011-07-05 04:35+0200\n"
 "PO-Revision-Date: 2005-09-23 19:22+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -59,11 +59,6 @@ msgstr "Муқарар кардан"
 msgid "Reduce to Grayscale"
 msgstr "Ба тобиши ранги хокистари тағйир додан."
 
-#: commands/imagelib/effects/kpEffectHSVCommand.cpp:37
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:116
-msgid "Hue, Saturation, Value"
-msgstr ""
-
 #: commands/imagelib/effects/kpEffectInvertCommand.cpp:50
 #: commands/imagelib/effects/kpEffectInvertCommand.cpp:58
 #, fuzzy
@@ -74,6 +69,16 @@ msgstr "&Таъғироти рангҳо"
 #: dialogs/imagelib/effects/kpEffectsDialog.cpp:117
 msgid "Invert"
 msgstr "Табдилдиҳӣ"
+
+#: commands/imagelib/effects/kpEffectToneEnhanceCommand.cpp:41
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:115
+msgid "Histogram Equalizer"
+msgstr ""
+
+#: commands/imagelib/effects/kpEffectHSVCommand.cpp:37
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:116
+msgid "Hue, Saturation, Value"
+msgstr ""
 
 #: commands/imagelib/effects/kpEffectReduceColorsCommand.cpp:57
 msgid "Reduce to Monochrome (Dithered)"
@@ -91,11 +96,6 @@ msgstr "Кам кардани Ранг ба 256(Лаппишуда) "
 msgid "Reduce to 256 Color"
 msgstr "Кам кардани Ранг ба 256"
 
-#: commands/imagelib/effects/kpEffectToneEnhanceCommand.cpp:41
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:115
-msgid "Histogram Equalizer"
-msgstr ""
-
 #: commands/imagelib/transforms/kpTransformFlipCommand.cpp:69
 msgid "Flip"
 msgstr "Тасвир додан"
@@ -111,6 +111,14 @@ msgstr "Уфуқи тасвир додан"
 #: commands/imagelib/transforms/kpTransformFlipCommand.cpp:76
 msgid "Flip vertically"
 msgstr "Амуди тасвир додан"
+
+#: commands/imagelib/transforms/kpTransformRotateCommand.cpp:72
+msgid "Rotate"
+msgstr "Дучор кардан"
+
+#: commands/imagelib/transforms/kpTransformSkewCommand.cpp:75
+msgid "Skew"
+msgstr "Таҳрифот"
 
 #: commands/imagelib/transforms/kpTransformResizeScaleCommand.cpp:110
 #: commands/tools/selection/kpToolSelectionResizeScaleCommand.cpp:62
@@ -139,13 +147,14 @@ msgstr "Масштабонӣ"
 msgid "Smooth Scale"
 msgstr "Ҷадвали шустабарӣ"
 
-#: commands/imagelib/transforms/kpTransformRotateCommand.cpp:72
-msgid "Rotate"
-msgstr "Дучор кардан"
+#: commands/tools/kpToolColorPickerCommand.cpp:61
+#: tools/kpToolColorPicker.cpp:47
+msgid "Color Picker"
+msgstr "Интихоби ранг"
 
-#: commands/imagelib/transforms/kpTransformSkewCommand.cpp:75
-msgid "Skew"
-msgstr "Таҳрифот"
+#: commands/tools/kpToolFloodFillCommand.cpp:78 tools/kpToolFloodFill.cpp:55
+msgid "Flood Fill"
+msgstr "Рехта пур кардан"
 
 #: commands/kpCommandHistoryBase.cpp:454
 #, kde-format
@@ -198,15 +207,6 @@ msgid "%1 more item"
 msgid_plural "%1 more items"
 msgstr[0] "_n:%1 намунаи зиёд"
 msgstr[1] "%1 намунаҳои зиёд"
-
-#: commands/tools/kpToolColorPickerCommand.cpp:61
-#: tools/kpToolColorPicker.cpp:47
-msgid "Color Picker"
-msgstr "Интихоби ранг"
-
-#: commands/tools/kpToolFloodFillCommand.cpp:78 tools/kpToolFloodFill.cpp:55
-msgid "Flood Fill"
-msgstr "Рехта пур кардан"
 
 #: dialogs/imagelib/effects/kpEffectsDialog.cpp:91
 #, fuzzy
@@ -944,12 +944,6 @@ msgstr "Натавонистам файлро захира намоям - хат
 msgid "Set as Image"
 msgstr "Тасвиротро нигоҳ доштан ҳамчун "
 
-#: imagelib/transforms/kpTransformCrop_ImageSelection.cpp:248
-#: mainWindow/kpMainWindow_Image.cpp:314 mainWindow/kpMainWindow_Edit.cpp:367
-#: tools/selection/image/kpAbstractImageSelectionTool.cpp:81
-msgid "Selection: Create"
-msgstr "Ҷудо кардан: Эҷод"
-
 #: imagelib/transforms/kpTransformAutoCrop.cpp:386
 msgid "Remove Internal B&order"
 msgstr "Ҳудуди дохилиро &ҳузф кардан."
@@ -994,101 +988,11 @@ msgctxt "@title:window"
 msgid "Cannot Autocrop"
 msgstr "Наметавонам автобуриширо иҷро кунам."
 
-#: kolourpaint.cpp:49
-#, fuzzy
-#| msgid "KolourPaint"
-msgid "KolourPaint"
-msgstr "KolourPaint"
-
-#: kolourpaint.cpp:51
-msgid "Paint Program for KDE"
-msgstr "Муҳаррири графикии КDЕ"
-
-#: kolourpaint.cpp:54
-msgid "To obtain support, please visit the website."
-msgstr ""
-
-#: kolourpaint.cpp:65
-msgid "Clarence Dang"
-msgstr ""
-
-#: kolourpaint.cpp:65
-msgid "Project Founder"
-msgstr ""
-
-#: kolourpaint.cpp:66
-msgid "Thurston Dang"
-msgstr ""
-
-#: kolourpaint.cpp:66
-msgid "Chief Investigator"
-msgstr "Мушоҳидаткунанда"
-
-#: kolourpaint.cpp:68
-#, fuzzy
-msgid "Martin Koller"
-msgstr "Панели асбобҳо\"Матн\""
-
-#: kolourpaint.cpp:68
-msgid "Scanning Support, Alpha Support, Current Maintainer"
-msgstr ""
-
-#: kolourpaint.cpp:69
-msgid "Kristof Borrey"
-msgstr ""
-
-#: kolourpaint.cpp:69 kolourpaint.cpp:72 kolourpaint.cpp:73
-msgid "Icons"
-msgstr "Ишоротҳо "
-
-#: kolourpaint.cpp:70
-msgid "Tasuku Suzuki"
-msgstr ""
-
-#: kolourpaint.cpp:70 kolourpaint.cpp:71
-msgid "InputMethod Support"
-msgstr ""
-
-#: kolourpaint.cpp:71
-msgid "Kazuki Ohta"
-msgstr ""
-
-#: kolourpaint.cpp:72
-msgid "Nuno Pinheiro"
-msgstr ""
-
-#: kolourpaint.cpp:73
-msgid "Danny Allen"
-msgstr ""
-
-#: kolourpaint.cpp:74
-msgid "Mike Gashler"
-msgstr ""
-
-#: kolourpaint.cpp:74
-#, fuzzy
-#| msgid "More Image Effects"
-msgid "Image Effects"
-msgstr "Таъсири зиёд"
-
-#: kolourpaint.cpp:76
-msgid "Laurent Montel"
-msgstr ""
-
-#: kolourpaint.cpp:76
-msgid "KDE 4 Porting"
-msgstr ""
-
-#: kolourpaint.cpp:80
-msgid ""
-"Thanks to the many others who have helped to make this program possible."
-msgstr ""
-
-#: kolourpaint.cpp:85
-msgid "Image file to open"
-msgstr ""
-"Тасвири сангпушт ёфт нашуд.\n"
-"Сабтоти барномаро биозмоед."
+#: imagelib/transforms/kpTransformCrop_ImageSelection.cpp:248
+#: mainWindow/kpMainWindow_Edit.cpp:367 mainWindow/kpMainWindow_Image.cpp:314
+#: tools/selection/image/kpAbstractImageSelectionTool.cpp:81
+msgid "Selection: Create"
+msgstr "Ҷудо кардан: Эҷод"
 
 #: layers/selections/text/kpTextSelection.cpp:136
 #: tools/selection/text/kpToolText.cpp:59
@@ -1141,85 +1045,6 @@ msgstr ""
 msgid "Untitled"
 msgstr ""
 
-#: mainWindow/kpMainWindow_Image.cpp:119
-msgid "R&esize / Scale..."
-msgstr "Тағйи&ри андоза/Масштабони кардан... "
-
-#: mainWindow/kpMainWindow_Image.cpp:124
-msgid "Se&t as Image (Crop)"
-msgstr "Мон&дани мисли тасвири (Crop)"
-
-#: mainWindow/kpMainWindow_Image.cpp:134
-#, fuzzy
-#| msgid "&Vertical (upside-down)"
-msgid "&Flip (upside down)"
-msgstr "&Амуди (аз боло ба поён)"
-
-#: mainWindow/kpMainWindow_Image.cpp:139
-#, fuzzy
-#| msgid "Flip horizontally"
-msgid "Mirror (horizontally)"
-msgstr "Уфуқи тасвир додан"
-
-#: mainWindow/kpMainWindow_Image.cpp:144
-msgid "&Rotate..."
-msgstr "То&биш..."
-
-#: mainWindow/kpMainWindow_Image.cpp:150
-#, fuzzy
-msgid "Rotate &Left"
-msgstr "Тасвирот&ро гардондан"
-
-#: mainWindow/kpMainWindow_Image.cpp:156
-#, fuzzy
-msgid "Rotate Righ&t"
-msgstr "Тасвирот&ро гардондан"
-
-#: mainWindow/kpMainWindow_Image.cpp:162
-msgid "S&kew..."
-msgstr "&Ғалат кардан..."
-
-#: mainWindow/kpMainWindow_Image.cpp:167
-msgid "Reduce to Mo&nochrome (Dithered)"
-msgstr "Кам кардан ба Як&ранг(Лаппишуда)"
-
-#: mainWindow/kpMainWindow_Image.cpp:171
-msgid "Reduce to &Grayscale"
-msgstr "Тағйир додан дар &тобиши хокистарӣ"
-
-#: mainWindow/kpMainWindow_Image.cpp:175
-msgid "&Invert Colors"
-msgstr "&Таъғироти рангҳо"
-
-#: mainWindow/kpMainWindow_Image.cpp:180
-msgid "C&lear"
-msgstr "&Пок кардан"
-
-#: mainWindow/kpMainWindow_Image.cpp:185
-msgid "&More Effects..."
-msgstr "&Таъсироти зиёд..."
-
-#: mainWindow/kpMainWindow_Image.cpp:225
-#, fuzzy
-msgctxt ""
-"Image/Selection Menu caption - make sure the translation has the same accel "
-"as the Select&ion translation"
-msgid "&Image"
-msgstr "&Тасвирот"
-
-#: mainWindow/kpMainWindow_Image.cpp:229
-#, fuzzy
-msgctxt ""
-"Image/Selection Menu caption - make sure that translation has the same accel "
-"as the &Image translation"
-msgid "Select&ion"
-msgstr "Ҷудо &кардан"
-
-#: mainWindow/kpMainWindow_Image.cpp:316 mainWindow/kpMainWindow_Edit.cpp:366
-#: mainWindow/kpMainWindow_Edit.cpp:441 tools/selection/text/kpToolText.cpp:93
-msgid "Text: Create Box"
-msgstr "Матн: Эҷоди блок "
-
 #: mainWindow/kpMainWindow_Text.cpp:60
 msgid "Font Family"
 msgstr "Оилаи ҳуруфҳо "
@@ -1257,62 +1082,6 @@ msgstr ""
 #: mainWindow/kpMainWindow_View_Thumbnail.cpp:90
 msgid "Enable Thumbnail &Rectangle"
 msgstr ""
-
-#: mainWindow/kpMainWindow_View.cpp:76
-msgid "Show &Grid"
-msgstr "Намоиши &шабака "
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:91
-#: mainWindow/kpMainWindow_StatusBar.cpp:284
-#, kde-format
-msgid "%1%"
-msgstr "%1%"
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:113
-msgid "&Zoom"
-msgstr ""
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:194
-#, kde-format
-msgid ""
-"Setting the zoom level to a value that is not a multiple of 100% results in "
-"imprecise editing and redraw glitches.\n"
-"Do you really want to set to zoom level to %1%?"
-msgstr ""
-"Мондани сатҳи тасвири тағиршаванда дар қиммати ,ки зиёд нест  аз 100%"
-"натиҷаҳои дар таҳрирдиҳи норасо ва душвориҳо дар тағирдиҳи.\n"
-"Шумо мехоҳед монед сатҳи тағиршавандаро дар %1%?"
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:199
-#, kde-format
-msgid "Set Zoom Level to %1%"
-msgstr "Сабт намудани масштаб дар %1%"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:149
-#, kde-format
-msgid "%1,%2"
-msgstr "%1,%2"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:156
-#, kde-format
-msgid "%1,%2 - %3,%4"
-msgstr "%1,%2 - %3,%4"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:199
-#: widgets/toolbars/options/kpToolWidgetEraserSize.cpp:115
-#: widgets/toolbars/options/kpToolWidgetSpraycanSize.cpp:92
-#, kde-format
-msgid "%1x%2"
-msgstr "%1x%2"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:258
-#, kde-format
-msgid "%1bpp"
-msgstr "%1bpp"
-
-#: mainWindow/kpMainWindow_Settings.cpp:67
-msgid "Show &Path"
-msgstr "Намоиши &роҳ"
 
 #: mainWindow/kpMainWindow_Colors.cpp:59
 #, fuzzy
@@ -1488,6 +1257,12 @@ msgstr "Нуқсагири дар &файл..."
 msgid "Paste &From File..."
 msgstr "Гузоштан &аз файл... "
 
+#: mainWindow/kpMainWindow_Edit.cpp:366 mainWindow/kpMainWindow_Edit.cpp:441
+#: mainWindow/kpMainWindow_Image.cpp:316
+#: tools/selection/text/kpToolText.cpp:93
+msgid "Text: Create Box"
+msgstr "Матн: Эҷоди блок "
+
 #: mainWindow/kpMainWindow_Edit.cpp:447
 msgid "Text: Paste"
 msgstr "Матн: гузоштан"
@@ -1658,6 +1433,112 @@ msgstr ""
 "Ҳуҷҷат \"%1\" тағйир додашуда буд.\n"
 "Мехоҳед онро нигоҳ доред?"
 
+#: mainWindow/kpMainWindow_Image.cpp:119
+msgid "R&esize / Scale..."
+msgstr "Тағйи&ри андоза/Масштабони кардан... "
+
+#: mainWindow/kpMainWindow_Image.cpp:124
+msgid "Se&t as Image (Crop)"
+msgstr "Мон&дани мисли тасвири (Crop)"
+
+#: mainWindow/kpMainWindow_Image.cpp:134
+#, fuzzy
+#| msgid "&Vertical (upside-down)"
+msgid "&Flip (upside down)"
+msgstr "&Амуди (аз боло ба поён)"
+
+#: mainWindow/kpMainWindow_Image.cpp:139
+#, fuzzy
+#| msgid "Flip horizontally"
+msgid "Mirror (horizontally)"
+msgstr "Уфуқи тасвир додан"
+
+#: mainWindow/kpMainWindow_Image.cpp:144
+msgid "&Rotate..."
+msgstr "То&биш..."
+
+#: mainWindow/kpMainWindow_Image.cpp:150
+#, fuzzy
+msgid "Rotate &Left"
+msgstr "Тасвирот&ро гардондан"
+
+#: mainWindow/kpMainWindow_Image.cpp:156
+#, fuzzy
+msgid "Rotate Righ&t"
+msgstr "Тасвирот&ро гардондан"
+
+#: mainWindow/kpMainWindow_Image.cpp:162
+msgid "S&kew..."
+msgstr "&Ғалат кардан..."
+
+#: mainWindow/kpMainWindow_Image.cpp:167
+msgid "Reduce to Mo&nochrome (Dithered)"
+msgstr "Кам кардан ба Як&ранг(Лаппишуда)"
+
+#: mainWindow/kpMainWindow_Image.cpp:171
+msgid "Reduce to &Grayscale"
+msgstr "Тағйир додан дар &тобиши хокистарӣ"
+
+#: mainWindow/kpMainWindow_Image.cpp:175
+msgid "&Invert Colors"
+msgstr "&Таъғироти рангҳо"
+
+#: mainWindow/kpMainWindow_Image.cpp:180
+msgid "C&lear"
+msgstr "&Пок кардан"
+
+#: mainWindow/kpMainWindow_Image.cpp:185
+msgid "&More Effects..."
+msgstr "&Таъсироти зиёд..."
+
+#: mainWindow/kpMainWindow_Image.cpp:225
+#, fuzzy
+msgctxt ""
+"Image/Selection Menu caption - make sure the translation has the same accel "
+"as the Select&ion translation"
+msgid "&Image"
+msgstr "&Тасвирот"
+
+#: mainWindow/kpMainWindow_Image.cpp:229
+#, fuzzy
+msgctxt ""
+"Image/Selection Menu caption - make sure that translation has the same accel "
+"as the &Image translation"
+msgid "Select&ion"
+msgstr "Ҷудо &кардан"
+
+#: mainWindow/kpMainWindow_Settings.cpp:67
+msgid "Show &Path"
+msgstr "Намоиши &роҳ"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:149
+#, kde-format
+msgid "%1,%2"
+msgstr "%1,%2"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:156
+#, kde-format
+msgid "%1,%2 - %3,%4"
+msgstr "%1,%2 - %3,%4"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:199
+#: widgets/toolbars/options/kpToolWidgetEraserSize.cpp:115
+#: widgets/toolbars/options/kpToolWidgetSpraycanSize.cpp:92
+#, kde-format
+msgid "%1x%2"
+msgstr "%1x%2"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:258
+#, kde-format
+msgid "%1bpp"
+msgstr "%1bpp"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:284
+#: mainWindow/kpMainWindow_View_Zoom.cpp:91
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
+
 #: mainWindow/kpMainWindow_Tools.cpp:136
 msgid "Previous Tool Option (Group #1)"
 msgstr "Пешанги Интихоби Асбоб(Гурӯҳи#1)"
@@ -1703,6 +1584,30 @@ msgstr ""
 "расонад ба дигар аппликасияҳо сарчашмаи душвориҳо.</p><p>Шумо мехоҳед "
 "тасвирро андозаашро тағир намоед?</p></qt>"
 
+#: mainWindow/kpMainWindow_View.cpp:76
+msgid "Show &Grid"
+msgstr "Намоиши &шабака "
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:113
+msgid "&Zoom"
+msgstr ""
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:194
+#, kde-format
+msgid ""
+"Setting the zoom level to a value that is not a multiple of 100% results in "
+"imprecise editing and redraw glitches.\n"
+"Do you really want to set to zoom level to %1%?"
+msgstr ""
+"Мондани сатҳи тасвири тағиршаванда дар қиммати ,ки зиёд нест  аз 100%"
+"натиҷаҳои дар таҳрирдиҳи норасо ва душвориҳо дар тағирдиҳи.\n"
+"Шумо мехоҳед монед сатҳи тағиршавандаро дар %1%?"
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:199
+#, kde-format
+msgid "Set Zoom Level to %1%"
+msgstr "Сабт намудани масштаб дар %1%"
+
 #: tools/flow/kpToolBrush.cpp:35
 msgid "Brush"
 msgstr "Мӯқалам "
@@ -1740,11 +1645,11 @@ msgid "Click or drag to erase."
 msgstr "Пахш намоед ё ин ки бароед то ин ки нобуд созем."
 
 #: tools/flow/kpToolFlowBase.cpp:302 tools/kpToolColorPicker.cpp:112
-#: tools/kpToolFloodFill.cpp:144 tools/kpToolZoom.cpp:207
-#: tools/polygonal/kpToolPolygonalBase.cpp:437
+#: tools/kpToolZoom.cpp:207 tools/polygonal/kpToolPolygonalBase.cpp:437
 #: tools/rectangular/kpToolRectangularBase.cpp:356
 #: tools/selection/kpAbstractSelectionTool.cpp:260
 #: tools/selection/kpAbstractSelectionTool.cpp:518
+#: tools/kpToolFloodFill.cpp:144
 msgid "Let go of all the mouse buttons."
 msgstr "Биёед ҳамаи тугмачаҳои мушакро ба кор дарорем."
 
@@ -1776,14 +1681,6 @@ msgstr "Интихоби ранг аз тасвир"
 msgid "Click to select a color."
 msgstr "Барои интихоби ранг дар инҷо пахш кунед."
 
-#: tools/kpToolFloodFill.cpp:55
-msgid "Fills regions in the image"
-msgstr "Мавзеи тасвиротро бо ранг пур кардан"
-
-#: tools/kpToolFloodFill.cpp:75
-msgid "Click to fill a region."
-msgstr "Барои ба кор андохтани фарш кунонӣ, клик кунед."
-
 #: tools/kpToolZoom.cpp:73
 msgid "Zoom"
 msgstr ""
@@ -1795,21 +1692,6 @@ msgstr ""
 #: tools/kpToolZoom.cpp:120
 msgid "Click to zoom in/out or left drag to zoom into a specific area."
 msgstr ""
-
-#: tools/kpTool_UserNotifications.cpp:42
-#, fuzzy
-msgid "Right click to cancel."
-msgstr "Тағирдиҳии андозаи тасвир:Пахши рост барои рад кардан."
-
-#: tools/kpTool_UserNotifications.cpp:44
-#, fuzzy
-msgid "Left click to cancel."
-msgstr "Тағирдиҳии андозаи тасвир:Пахши рост барои рад кардан."
-
-#: tools/kpTool_UserNotifications.cpp:73
-#, kde-format
-msgid "%1: "
-msgstr "%1: "
 
 #: tools/polygonal/kpToolCurve.cpp:86
 msgid "Curve"
@@ -1924,22 +1806,6 @@ msgstr "Аз чап интихобро ҷой кардан."
 msgid "Left drag to scale selection."
 msgstr "Интихоби аз тарафи чап бударо аҳамият диҳед."
 
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:169
-msgid "Selection: Opaque"
-msgstr "Ҷудо кардан: Эҷод"
-
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:170
-msgid "Selection: Transparent"
-msgstr "Ҷудо кардан: Шаффофӣ"
-
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:190
-msgid "Selection: Transparency Color"
-msgstr "Ҷудо кардан: Ранги шаффофӣ"
-
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:210
-msgid "Selection: Transparency Color Similarity"
-msgstr "Ҷудо кардан: Рангиш шаффофӣ монанд"
-
 #: tools/selection/image/kpToolEllipticalSelection.cpp:43
 msgid "Selection (Elliptical)"
 msgstr "Ҷудо курдан (эллиптикӣ)"
@@ -1964,18 +1830,21 @@ msgstr "Ҷудокунӣ (росткунҷа)"
 msgid "Makes a rectangular selection"
 msgstr "Росткунҷаро интихоб кунед."
 
-#: tools/selection/kpAbstractSelectionTool_Move.cpp:319
-msgid "Selection: Move"
-msgstr "Ҷудо кардан: Гузарондан"
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:169
+msgid "Selection: Opaque"
+msgstr "Ҷудо кардан: Эҷод"
 
-#: tools/selection/kpAbstractSelectionTool_Move.cpp:341
-#, kde-format
-msgid "%1: Smear"
-msgstr "%1: Доғ"
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:170
+msgid "Selection: Transparent"
+msgstr "Ҷудо кардан: Шаффофӣ"
 
-#: tools/selection/text/kpToolText.cpp:59
-msgid "Writes text"
-msgstr "Матнро навистан"
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:190
+msgid "Selection: Transparency Color"
+msgstr "Ҷудо кардан: Ранги шаффофӣ"
+
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:210
+msgid "Selection: Transparency Color Similarity"
+msgstr "Ҷудо кардан: Рангиш шаффофӣ монанд"
 
 #: tools/selection/text/kpToolText_Commands.cpp:70
 msgid "Text: Backspace"
@@ -2012,6 +1881,10 @@ msgstr "Аз чап қуттии матнро аз нав андоза куне�
 #: tools/selection/text/kpToolText_SelectText.cpp:56
 msgid "Left click to change cursor position."
 msgstr "Бигзоред ғалақача ҷои курсорро дигар кунад."
+
+#: tools/selection/text/kpToolText.cpp:59
+msgid "Writes text"
+msgstr "Матнро навистан"
 
 #: tools/selection/text/kpToolText_TextStyle.cpp:117
 msgid "Text: Opaque Background"
@@ -2057,11 +1930,43 @@ msgstr "Матн: Хаткашидашуда"
 msgid "Text: Strike Through"
 msgstr "Матн: Хаткашида"
 
+#: tools/selection/kpAbstractSelectionTool_Move.cpp:319
+msgid "Selection: Move"
+msgstr "Ҷудо кардан: Гузарондан"
+
+#: tools/selection/kpAbstractSelectionTool_Move.cpp:341
+#, kde-format
+msgid "%1: Smear"
+msgstr "%1: Доғ"
+
 #: tools/kpTool.cpp:155
 #, kde-format
 msgctxt "<Tool Name> (<Single Accel Key>)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
+
+#: tools/kpToolFloodFill.cpp:55
+msgid "Fills regions in the image"
+msgstr "Мавзеи тасвиротро бо ранг пур кардан"
+
+#: tools/kpToolFloodFill.cpp:75
+msgid "Click to fill a region."
+msgstr "Барои ба кор андохтани фарш кунонӣ, клик кунед."
+
+#: tools/kpTool_UserNotifications.cpp:42
+#, fuzzy
+msgid "Right click to cancel."
+msgstr "Тағирдиҳии андозаи тасвир:Пахши рост барои рад кардан."
+
+#: tools/kpTool_UserNotifications.cpp:44
+#, fuzzy
+msgid "Left click to cancel."
+msgstr "Тағирдиҳии андозаи тасвир:Пахши рост барои рад кардан."
+
+#: tools/kpTool_UserNotifications.cpp:73
+#, kde-format
+msgid "%1: "
+msgstr "%1: "
 
 #: views/kpZoomedThumbnailView.cpp:66
 #, fuzzy, kde-format
@@ -2271,38 +2176,6 @@ msgstr "Хурдтар кардан:"
 msgid "&Granularity:"
 msgstr ""
 
-#: widgets/kpDocumentSaveOptionsWidget.cpp:93
-msgid "Convert &to:"
-msgstr "Дигаргун сохтан &дар:"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:98
-msgid "Quali&ty:"
-msgstr "Cифа&т:"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:106
-msgid "&Preview"
-msgstr "&Намоиш"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:228
-msgid "Monochrome"
-msgstr "Monochrome"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:229
-msgid "Monochrome (Dithered)"
-msgstr "Monochrome (Dithered)"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:233
-msgid "256 Color"
-msgstr "256 Ранг"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:234
-msgid "256 Color (Dithered)"
-msgstr "256 Ранг(Лағжондашуда)"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:239
-msgid "24-bit Color"
-msgstr "24-бит  Ранг"
-
 #: widgets/kpTransparentColorCell.cpp:65
 #: widgets/toolbars/options/kpToolWidgetOpaqueOrTransparent.cpp:45
 msgid "Transparent"
@@ -2379,6 +2252,38 @@ msgid ""
 "the color of the source cell.</p></qt>"
 msgstr ""
 
+#: widgets/kpDocumentSaveOptionsWidget.cpp:93
+msgid "Convert &to:"
+msgstr "Дигаргун сохтан &дар:"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:98
+msgid "Quali&ty:"
+msgstr "Cифа&т:"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:106
+msgid "&Preview"
+msgstr "&Намоиш"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:228
+msgid "Monochrome"
+msgstr "Monochrome"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:229
+msgid "Monochrome (Dithered)"
+msgstr "Monochrome (Dithered)"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:233
+msgid "256 Color"
+msgstr "256 Ранг"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:234
+msgid "256 Color (Dithered)"
+msgstr "256 Ранг(Лағжондашуда)"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:239
+msgid "24-bit Color"
+msgstr "24-бит  Ранг"
+
 #: widgets/kpPrintDialogPage.cpp:60
 #, fuzzy
 #| msgid "Image file to open"
@@ -2396,6 +2301,109 @@ msgstr ""
 msgid "Top-&left of the page"
 msgstr ""
 
+#: kolourpaint.cpp:49
+#, fuzzy
+#| msgid "KolourPaint"
+msgid "KolourPaint"
+msgstr "KolourPaint"
+
+#: kolourpaint.cpp:51
+msgid "Paint Program for KDE"
+msgstr "Муҳаррири графикии КDЕ"
+
+#: kolourpaint.cpp:54
+msgid "To obtain support, please visit the website."
+msgstr ""
+
+#: kolourpaint.cpp:65
+msgid "Clarence Dang"
+msgstr ""
+
+#: kolourpaint.cpp:65
+msgid "Project Founder"
+msgstr ""
+
+#: kolourpaint.cpp:66
+msgid "Thurston Dang"
+msgstr ""
+
+#: kolourpaint.cpp:66
+msgid "Chief Investigator"
+msgstr "Мушоҳидаткунанда"
+
+#: kolourpaint.cpp:68
+#, fuzzy
+msgid "Martin Koller"
+msgstr "Панели асбобҳо\"Матн\""
+
+#: kolourpaint.cpp:68
+msgid "Scanning Support, Alpha Support, Current Maintainer"
+msgstr ""
+
+#: kolourpaint.cpp:69
+msgid "Kristof Borrey"
+msgstr ""
+
+#: kolourpaint.cpp:69 kolourpaint.cpp:72 kolourpaint.cpp:73
+msgid "Icons"
+msgstr "Ишоротҳо "
+
+#: kolourpaint.cpp:70
+msgid "Tasuku Suzuki"
+msgstr ""
+
+#: kolourpaint.cpp:70 kolourpaint.cpp:71
+msgid "InputMethod Support"
+msgstr ""
+
+#: kolourpaint.cpp:71
+msgid "Kazuki Ohta"
+msgstr ""
+
+#: kolourpaint.cpp:72
+msgid "Nuno Pinheiro"
+msgstr ""
+
+#: kolourpaint.cpp:73
+msgid "Danny Allen"
+msgstr ""
+
+#: kolourpaint.cpp:74
+msgid "Mike Gashler"
+msgstr ""
+
+#: kolourpaint.cpp:74
+#, fuzzy
+#| msgid "More Image Effects"
+msgid "Image Effects"
+msgstr "Таъсири зиёд"
+
+#: kolourpaint.cpp:76
+msgid "Laurent Montel"
+msgstr ""
+
+#: kolourpaint.cpp:76
+msgid "KDE 4 Porting"
+msgstr ""
+
+#: kolourpaint.cpp:80
+msgid ""
+"Thanks to the many others who have helped to make this program possible."
+msgstr ""
+
+#: kolourpaint.cpp:85
+msgid "Image file to open"
+msgstr ""
+"Тасвири сангпушт ёфт нашуд.\n"
+"Сабтоти барномаро биозмоед."
+
+#: kpThumbnail.cpp:126
+#, fuzzy
+#| msgid "Thumbnail"
+msgctxt "@title:window"
+msgid "Thumbnail"
+msgstr "Нуқсаи хурдкардашуда"
+
 #: kpViewScrollableContainer.cpp:160 kpViewScrollableContainer.cpp:826
 #: kpViewScrollableContainer.cpp:830 kpViewScrollableContainer.cpp:834
 #, fuzzy
@@ -2409,13 +2417,6 @@ msgstr "Тағирдиҳии андозаи тасвир:Ҳамаи тугмач
 #: kpViewScrollableContainer.cpp:231
 msgid "Resize Image: Right click to cancel."
 msgstr "Тағирдиҳии андозаи тасвир:Пахши рост барои рад кардан."
-
-#: kpThumbnail.cpp:126
-#, fuzzy
-#| msgid "Thumbnail"
-msgctxt "@title:window"
-msgid "Thumbnail"
-msgstr "Нуқсаи хурдкардашуда"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
