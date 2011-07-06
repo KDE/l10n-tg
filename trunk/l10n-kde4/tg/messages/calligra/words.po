@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-22 03:42+0200\n"
+"POT-Creation-Date: 2011-07-06 03:52+0200\n"
 "PO-Revision-Date: 2008-06-10 01:45+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik Language\n"
@@ -269,8 +269,7 @@ msgstr "Таҳнавиштҳо"
 
 #. i18n: file: part/dialogs/KWInsertPageDialog.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:120 part/commands/KWPageInsertCommand.cpp:71
-#: part/dialogs/KWInsertPageDialog.cpp:32
+#: rc.cpp:120 part/dialogs/KWInsertPageDialog.cpp:32
 msgid "Insert Page"
 msgstr "Мондани саҳифа"
 
@@ -785,40 +784,56 @@ msgstr ""
 
 #: part/commands/KWChangePageStyleCommand.cpp:27
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Set Page Style"
 msgstr "&Саҳифа"
 
 #: part/commands/KWClipFrameCommand.cpp:41
 #, fuzzy
 #| msgid "Raise Frame"
+msgctxt "(qtundo-format)"
 msgid "Clip Frame"
 msgstr "Чорчубаро баланд кардан"
 
 #: part/commands/KWFrameCreateCommand.cpp:29
 #, fuzzy
 #| msgid "Create Text Frame"
+msgctxt "(qtundo-format)"
 msgid "Create Frame"
 msgstr "Сохтани чорчӯбаи матн "
 
 #: part/commands/KWFrameDeleteCommand.cpp:29
+#, fuzzy
+#| msgid "Delete Frame"
+msgctxt "(qtundo-format)"
 msgid "Delete Frame"
 msgstr "Нест кардани чорчӯба"
 
 #: part/commands/KWNewPageStyleCommand.cpp:27
 #, fuzzy
 #| msgid "Insert Page"
+msgctxt "(qtundo-format)"
 msgid "Insert Page Style"
+msgstr "Мондани саҳифа"
+
+#: part/commands/KWPageInsertCommand.cpp:71
+#, fuzzy
+#| msgid "Insert Page"
+msgctxt "(qtundo-format)"
+msgid "Insert Page"
 msgstr "Мондани саҳифа"
 
 #: part/commands/KWPageRemoveCommand.cpp:35
 #, fuzzy
 #| msgid "Remove entry"
+msgctxt "(qtundo-format)"
 msgid "Remove Page"
 msgstr "Нест кардани вуруд"
 
 #: part/commands/KWPageStylePropertiesCommand.cpp:36
 #, fuzzy
 #| msgid "Frame Properties"
+msgctxt "(qtundo-format)"
 msgid "Page Properties"
 msgstr "Хосиятҳои чорчӯба"
 
@@ -874,11 +889,6 @@ msgstr "Чор&чӯбаҳо"
 msgid "No framesets in document"
 msgstr ""
 
-#: part/dialogs/KWStatistics.cpp:246
-#, kde-format
-msgid "approximately %1"
-msgstr "Наздикӣ %1"
-
 #: part/dialogs/KWPageSettingsDialog.cpp:53
 msgid "Style"
 msgstr ""
@@ -897,6 +907,7 @@ msgstr "&Нест кардан"
 
 #: part/dialogs/KWPageSettingsDialog.cpp:147
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Change Page Style"
 msgstr "&Саҳифа"
 
@@ -908,6 +919,11 @@ msgstr "&Саҳифа"
 #: part/dialogs/KWPageSettingsDialog.cpp:209
 msgid "Add a new page style with the name:"
 msgstr ""
+
+#: part/dialogs/KWStatistics.cpp:246
+#, kde-format
+msgid "approximately %1"
+msgstr "Наздикӣ %1"
 
 #: part/dockers/KWRdfDocker.cpp:52
 msgid "RDF"
@@ -1210,6 +1226,211 @@ msgstr ""
 
 #: part/KWDLoader.cpp:717
 msgid "Unable to locate note-text"
+msgstr ""
+
+#: part/KWOdfLoader.cpp:88
+#, fuzzy
+msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgstr "Ҳуҷҷати OASIS нодуруст. Бе офис:тани барчасп кофта ёфта шуд."
+
+#: part/KWOdfLoader.cpp:100
+#, fuzzy
+msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgstr "Ҳуҷҷати OASIS нодуруст. Бе офис:тани барчасп кофта ёфта шуд."
+
+#: part/KWOdfLoader.cpp:102
+#, kde-format
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
+msgstr ""
+
+#: part/KWAboutData.h:27
+#, fuzzy
+#| msgid "KOffice Word Processor"
+msgid "Calligra Word Processor"
+msgstr "Протсессори KOffice Word"
+
+#: part/KWAboutData.h:37
+#, fuzzy
+#| msgid "Words"
+msgctxt "application name"
+msgid "Words"
+msgstr "Калимаҳо"
+
+#: part/KWAboutData.h:39
+#, fuzzy
+msgid "(c) 1998-2011, The Words Team"
+msgstr "(c) 1998-2003, Камандаи KWord"
+
+#: part/KWAboutData.h:42
+msgid "Pierre Ducroquet"
+msgstr ""
+
+#: part/KWAboutData.h:42 part/KWAboutData.h:43
+msgid "Co maintainer"
+msgstr ""
+
+#: part/KWAboutData.h:43
+msgid "Casper Boemann"
+msgstr ""
+
+#: part/KWAboutData.h:44
+msgid "Sebastian Sauer"
+msgstr ""
+
+#: part/KWAboutData.h:44 part/KWAboutData.h:50
+msgid "Everything"
+msgstr ""
+
+#: part/KWAboutData.h:45
+msgid "Boudewijn Rempt"
+msgstr ""
+
+#: part/KWAboutData.h:45
+msgid "Notes and fixes"
+msgstr ""
+
+#: part/KWAboutData.h:46
+msgid "Inge Wallin"
+msgstr ""
+
+#: part/KWAboutData.h:46
+#, fuzzy
+#| msgid "&Formatting Characters"
+msgid "Formatting stuff"
+msgstr "&Муҳаррири ҳарфҳо"
+
+#: part/KWAboutData.h:47
+msgid "Thorsten Zachmann"
+msgstr ""
+
+#: part/KWAboutData.h:47
+msgid "<optimizations"
+msgstr ""
+
+#: part/KWAboutData.h:48
+msgid "Matus Uzak"
+msgstr ""
+
+#: part/KWAboutData.h:48 part/KWAboutData.h:51 part/KWAboutData.h:52
+#: part/KWAboutData.h:53
+#, fuzzy
+msgid "Filter"
+msgstr "&Филтр дар:"
+
+#: part/KWAboutData.h:49
+msgid "Pavol Korinek"
+msgstr ""
+
+#: part/KWAboutData.h:49
+msgid "Layout and Painting"
+msgstr ""
+
+#: part/KWAboutData.h:50
+msgid "Pierre Stirnweiss"
+msgstr ""
+
+#: part/KWAboutData.h:51
+msgid "Lassi Nieminen"
+msgstr ""
+
+#: part/KWAboutData.h:52
+msgid "Hanzes Matus"
+msgstr ""
+
+#: part/KWAboutData.h:53
+msgid "Lukáš Tvrdý"
+msgstr ""
+
+#: part/KWAboutData.h:54
+msgid "Thomas Zander"
+msgstr ""
+
+#: part/KWAboutData.h:55
+msgid "Girish Ramakrishnan"
+msgstr ""
+
+#: part/KWAboutData.h:55
+msgid "ODF Support"
+msgstr ""
+
+#: part/KWAboutData.h:56
+msgid "David Faure"
+msgstr ""
+
+#: part/KWAboutData.h:57
+msgid "Laurent Montel"
+msgstr ""
+
+#: part/KWAboutData.h:58
+msgid "Sven Lüppken"
+msgstr ""
+
+#: part/KWAboutData.h:59
+msgid "Frank Dekervel"
+msgstr ""
+
+#: part/KWAboutData.h:60
+msgid "Krister Wicksell Eriksson"
+msgstr ""
+
+#: part/KWAboutData.h:61
+msgid "Dag Andersen"
+msgstr ""
+
+#: part/KWAboutData.h:62
+msgid "Nash Hoogwater"
+msgstr ""
+
+#: part/KWAboutData.h:63
+msgid "Ulrich Kuettler"
+msgstr ""
+
+#: part/KWAboutData.h:63
+msgid "KFormula"
+msgstr "KФормула"
+
+#: part/KWAboutData.h:65
+msgid "Shaheed Haque"
+msgstr ""
+
+#: part/KWAboutData.h:66
+msgid "Werner Trobin"
+msgstr ""
+
+#: part/KWAboutData.h:67
+msgid "Nicolas Goutte"
+msgstr ""
+
+#: part/KWAboutData.h:68
+msgid "Ariya Hidayat"
+msgstr ""
+
+#: part/KWAboutData.h:69
+msgid "Clarence Dang"
+msgstr ""
+
+#: part/KWAboutData.h:70
+msgid "Robert Jacolin"
+msgstr ""
+
+#: part/KWAboutData.h:71
+#, fuzzy
+#| msgid "Endnotes"
+msgid "Enno Bartels"
+msgstr "Таҳнавиштҳо"
+
+#: part/KWAboutData.h:72
+msgid "Ewald Snel"
+msgstr ""
+
+#: part/KWAboutData.h:73
+msgid "Tomasz Grobelny"
+msgstr ""
+
+#: part/KWAboutData.h:74
+msgid "Michael Johnson"
 msgstr ""
 
 #: part/KWView.cpp:260
@@ -1630,7 +1851,7 @@ msgstr ""
 msgid "Select All Frames"
 msgstr "Интихоботи ҳарфчинии комаканӣ"
 
-#: part/KWView.cpp:487 part/KWView.cpp:1293
+#: part/KWView.cpp:487
 msgid "Create Linked Copy"
 msgstr "Сохтани нусхаи алоқашуда"
 
@@ -1685,198 +1906,17 @@ msgstr "Нишондиҳии &панел "
 msgid "Please select at least one non-locked shape and try again"
 msgstr ""
 
-#: part/KWOdfLoader.cpp:88
+#: part/KWView.cpp:1293
 #, fuzzy
-msgid "Invalid OASIS OpenDocument file. No office:body tag found."
-msgstr "Ҳуҷҷати OASIS нодуруст. Бе офис:тани барчасп кофта ёфта шуд."
+#| msgid "Create Linked Copy"
+msgctxt "(qtundo-format)"
+msgid "Create Linked Copy"
+msgstr "Сохтани нусхаи алоқашуда"
 
-#: part/KWOdfLoader.cpp:100
 #, fuzzy
-msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
-msgstr "Ҳуҷҷати OASIS нодуруст. Бе офис:тани барчасп кофта ёфта шуд."
-
-#: part/KWOdfLoader.cpp:102
-#, kde-format
-msgid ""
-"This is not a word processing document, but %1. Please try opening it with "
-"the appropriate application."
-msgstr ""
-
-#: part/KWAboutData.h:27
-#, fuzzy
-#| msgid "KOffice Word Processor"
-msgid "Calligra Word Processor"
-msgstr "Протсессори KOffice Word"
-
-#: part/KWAboutData.h:37
-#, fuzzy
-#| msgid "Words"
-msgctxt "application name"
-msgid "Words"
-msgstr "Калимаҳо"
-
-#: part/KWAboutData.h:39
-#, fuzzy
-msgid "(c) 1998-2010, The Words Team"
-msgstr "(c) 1998-2003, Камандаи KWord"
-
-#: part/KWAboutData.h:42
-msgid "Pierre Ducroquet"
-msgstr ""
-
-#: part/KWAboutData.h:42 part/KWAboutData.h:43
-msgid "Co maintainer"
-msgstr ""
-
-#: part/KWAboutData.h:43
-msgid "Casper Boemann"
-msgstr ""
-
-#: part/KWAboutData.h:44
-msgid "Sebastian Sauer"
-msgstr ""
-
-#: part/KWAboutData.h:44 part/KWAboutData.h:50
-msgid "Everything"
-msgstr ""
-
-#: part/KWAboutData.h:45
-msgid "Boudewijn Rempt"
-msgstr ""
-
-#: part/KWAboutData.h:45
-msgid "Notes and fixes"
-msgstr ""
-
-#: part/KWAboutData.h:46
-msgid "Inge Wallin"
-msgstr ""
-
-#: part/KWAboutData.h:46
-#, fuzzy
-#| msgid "&Formatting Characters"
-msgid "Formatting stuff"
-msgstr "&Муҳаррири ҳарфҳо"
-
-#: part/KWAboutData.h:47
-msgid "Thorsten Zachmann"
-msgstr ""
-
-#: part/KWAboutData.h:47
-msgid "<optimizations"
-msgstr ""
-
-#: part/KWAboutData.h:48
-msgid "Matus Uzak"
-msgstr ""
-
-#: part/KWAboutData.h:48
-#, fuzzy
-#| msgid "&Filter output"
-msgid "Filter stuff"
-msgstr "&Филтри барориш"
-
-#: part/KWAboutData.h:49
-msgid "Pavol Korinek"
-msgstr ""
-
-#: part/KWAboutData.h:49
-msgid "Layout and Painting"
-msgstr ""
-
-#: part/KWAboutData.h:50
-msgid "Pierre Stirnweiss"
-msgstr ""
-
-#: part/KWAboutData.h:51
-msgid "Thomas Zander"
-msgstr ""
-
-#: part/KWAboutData.h:52
-msgid "Girish Ramakrishnan"
-msgstr ""
-
-#: part/KWAboutData.h:52
-msgid "ODF Support"
-msgstr ""
-
-#: part/KWAboutData.h:53
-msgid "David Faure"
-msgstr ""
-
-#: part/KWAboutData.h:54
-msgid "Laurent Montel"
-msgstr ""
-
-#: part/KWAboutData.h:55
-msgid "Sven Lüppken"
-msgstr ""
-
-#: part/KWAboutData.h:56
-msgid "Frank Dekervel"
-msgstr ""
-
-#: part/KWAboutData.h:57
-msgid "Krister Wicksell Eriksson"
-msgstr ""
-
-#: part/KWAboutData.h:58
-msgid "Dag Andersen"
-msgstr ""
-
-#: part/KWAboutData.h:59
-msgid "Nash Hoogwater"
-msgstr ""
-
-#: part/KWAboutData.h:60
-msgid "Ulrich Kuettler"
-msgstr ""
-
-#: part/KWAboutData.h:60
-msgid "KFormula"
-msgstr "KФормула"
-
-#: part/KWAboutData.h:62
-msgid "Shaheed Haque"
-msgstr ""
-
-#: part/KWAboutData.h:63
-msgid "Werner Trobin"
-msgstr ""
-
-#: part/KWAboutData.h:64
-msgid "Nicolas Goutte"
-msgstr ""
-
-#: part/KWAboutData.h:65
-msgid "Ariya Hidayat"
-msgstr ""
-
-#: part/KWAboutData.h:66
-msgid "Clarence Dang"
-msgstr ""
-
-#: part/KWAboutData.h:67
-msgid "Robert Jacolin"
-msgstr ""
-
-#: part/KWAboutData.h:68
-#, fuzzy
-#| msgid "Endnotes"
-msgid "Enno Bartels"
-msgstr "Таҳнавиштҳо"
-
-#: part/KWAboutData.h:69
-msgid "Ewald Snel"
-msgstr ""
-
-#: part/KWAboutData.h:70
-msgid "Tomasz Grobelny"
-msgstr ""
-
-#: part/KWAboutData.h:71
-msgid "Michael Johnson"
-msgstr ""
+#~| msgid "&Filter output"
+#~ msgid "Filter stuff"
+#~ msgstr "&Филтри барориш"
 
 #, fuzzy
 #~| msgid "Frame Properties"
