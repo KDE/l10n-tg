@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-07-27 04:17+0200\n"
+"POT-Creation-Date: 2011-07-30 04:16+0200\n"
 "PO-Revision-Date: 2005-09-16 16:30+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -2796,38 +2796,6 @@ msgctxt "@option Name of the weekday"
 msgid "Sunday"
 msgstr "Навозиши садо"
 
-#: lib/shellprocess.cpp:158
-#, fuzzy
-#| msgid "Failed to execute command (shell access not authorized):"
-msgctxt "@info"
-msgid "Failed to execute command (shell access not authorized)"
-msgstr "Хатои оғоз намудани дастурот (дастрасӣ ба ҷилд манъ аст):"
-
-#: lib/shellprocess.cpp:161
-#, fuzzy
-#| msgid "Failed to execute command:"
-msgctxt "@info"
-msgid "Failed to execute command"
-msgstr "Хатои оғоз намудани дастурот:"
-
-#: lib/shellprocess.cpp:163
-#, fuzzy
-#| msgid "Command execution error:"
-msgctxt "@info"
-msgid "Command execution error"
-msgstr "Хатои иҷро намудани дастурот:"
-
-#: lib/shellprocess.cpp:166
-#, fuzzy, kde-format
-#| msgid ""
-#| "Command executed:\n"
-#| "%1"
-msgctxt "@info"
-msgid "Command exit code: %1"
-msgstr ""
-"Дастури зерин иҷро шуд:\n"
-"%1"
-
 #: lib/timeedit.cpp:177
 #, fuzzy
 msgctxt "@item:inlistbox Morning, as in 2am"
@@ -2879,6 +2847,38 @@ msgid ""
 msgstr ""
 "Ба рӯи тугмаи Shift ҳангоми клик кардан ба рӯи кнопкаи калон/хурд кардани "
 "вақт барои таъғир додан ба фосилоти калон (6 соат / 5 дақиқа), пахш кунед."
+
+#: lib/shellprocess.cpp:158
+#, fuzzy
+#| msgid "Failed to execute command (shell access not authorized):"
+msgctxt "@info"
+msgid "Failed to execute command (shell access not authorized)"
+msgstr "Хатои оғоз намудани дастурот (дастрасӣ ба ҷилд манъ аст):"
+
+#: lib/shellprocess.cpp:161
+#, fuzzy
+#| msgid "Failed to execute command:"
+msgctxt "@info"
+msgid "Failed to execute command"
+msgstr "Хатои оғоз намудани дастурот:"
+
+#: lib/shellprocess.cpp:163
+#, fuzzy
+#| msgid "Command execution error:"
+msgctxt "@info"
+msgid "Command execution error"
+msgstr "Хатои иҷро намудани дастурот:"
+
+#: lib/shellprocess.cpp:166
+#, fuzzy, kde-format
+#| msgid ""
+#| "Command executed:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Command exit code: %1"
+msgstr ""
+"Дастури зерин иҷро шуд:\n"
+"%1"
 
 #: main.cpp:39
 msgid "Personal alarm message, command and email scheduler for KDE"
@@ -5648,24 +5648,6 @@ msgid ""
 "para>"
 msgstr ""
 
-#: resources/alarmresources.cpp:157
-#, fuzzy, kde-format
-#| msgid ""
-#| "Invalid email attachment:\n"
-#| "%1"
-msgctxt "@info"
-msgid "%1: invalid calendar file name: <filename>%2</filename>"
-msgstr ""
-"Хатои дохилгузорӣ:\n"
-"%1"
-
-#: resources/alarmresources.cpp:165
-#, fuzzy, kde-format
-#| msgid "%1: file name not permitted: %2"
-msgctxt "@info"
-msgid "%1: file name not permitted: <filename>%2</filename>"
-msgstr "%1: номи файл нодуруст ишора шудааст: %2"
-
 #: resources/resourcelocaldirwidget.cpp:40
 #: resources/resourcelocalwidget.cpp:42
 #, fuzzy
@@ -5703,6 +5685,24 @@ msgid ""
 "not created by <application>KAlarm</application>, or was created by a newer "
 "version of <application>KAlarm</application>"
 msgstr ""
+
+#: resources/alarmresources.cpp:157
+#, fuzzy, kde-format
+#| msgid ""
+#| "Invalid email attachment:\n"
+#| "%1"
+msgctxt "@info"
+msgid "%1: invalid calendar file name: <filename>%2</filename>"
+msgstr ""
+"Хатои дохилгузорӣ:\n"
+"%1"
+
+#: resources/alarmresources.cpp:165
+#, fuzzy, kde-format
+#| msgid "%1: file name not permitted: %2"
+msgctxt "@info"
+msgid "%1: file name not permitted: <filename>%2</filename>"
+msgstr "%1: номи файл нодуруст ишора шудааст: %2"
 
 #: resourceselector.cpp:99
 #, fuzzy
@@ -6585,6 +6585,29 @@ msgid ""
 ">Error code: %2."
 msgstr ""
 
+#: wakedlg.cpp:53
+msgctxt "@title:window"
+msgid "Wake From Suspend"
+msgstr ""
+
+#: wakedlg.cpp:178
+#, fuzzy
+#| msgid "Next scheduled date and time of the alarm"
+msgctxt "@info"
+msgid "Cannot schedule wakeup time for a date-only alarm"
+msgstr "Санаи навбатӣ ва муддати хотиррасонӣ"
+
+#: wakedlg.cpp:182
+msgctxt "@info"
+msgid ""
+"<para>This wakeup will cancel any existing wakeup which has been set by "
+"KAlarm or any other application, because your computer can only schedule a "
+"single wakeup time.</para><para><b>Note:</b> Wake From Suspend is not "
+"supported at all on some computers, especially older ones, and some "
+"computers only support setting a wakeup time up to 24 hours ahead. You may "
+"wish to set up a test alarm to check your system's capability.</para>"
+msgstr ""
+
 #: calendarmigrator.cpp:250
 #, fuzzy, kde-format
 #| msgid ""
@@ -6664,29 +6687,6 @@ msgstr ""
 #: calendarmigrator.cpp:644
 msgctxt "@info/plain"
 msgid "New configuration was corrupt"
-msgstr ""
-
-#: wakedlg.cpp:53
-msgctxt "@title:window"
-msgid "Wake From Suspend"
-msgstr ""
-
-#: wakedlg.cpp:178
-#, fuzzy
-#| msgid "Next scheduled date and time of the alarm"
-msgctxt "@info"
-msgid "Cannot schedule wakeup time for a date-only alarm"
-msgstr "Санаи навбатӣ ва муддати хотиррасонӣ"
-
-#: wakedlg.cpp:182
-msgctxt "@info"
-msgid ""
-"<para>This wakeup will cancel any existing wakeup which has been set by "
-"KAlarm or any other application, because your computer can only schedule a "
-"single wakeup time.</para><para><b>Note:</b> Wake From Suspend is not "
-"supported at all on some computers, especially older ones, and some "
-"computers only support setting a wakeup time up to 24 hours ahead. You may "
-"wish to set up a test alarm to check your system's capability.</para>"
 msgstr ""
 
 #: rc.cpp:1
