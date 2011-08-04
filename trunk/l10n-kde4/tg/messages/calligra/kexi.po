@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-02 17:50+0200\n"
+"POT-Creation-Date: 2011-08-04 02:20+0200\n"
 "PO-Revision-Date: 2005-12-23 19:53-0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -52,66 +52,6 @@ msgid ""
 "column is used for sorting."
 msgstr ""
 
-#: core/KexiView.cpp:66
-#, fuzzy
-msgid "Switch to data view"
-msgstr "Дар ҳолати намоиши таърихро дохил кардан"
-
-#: core/KexiView.cpp:67
-#, fuzzy
-msgid "Switches to data view."
-msgstr "Дар ҳолати намоиши таърихро дохил кунед."
-
-#: core/KexiView.cpp:70
-#, fuzzy
-msgid "Switch to design view"
-msgstr "Дар ҳолати намоиши дизайнро дохил кардан"
-
-#: core/KexiView.cpp:71
-#, fuzzy
-msgid "Switches to design view."
-msgstr "Дар ҳолати намоиши дизайнро дохил кунед."
-
-#: core/KexiView.cpp:74
-#, fuzzy
-msgid "Switch to text view"
-msgstr "Дар ҳолати намоиши матнро дохил кардан"
-
-#: core/KexiView.cpp:75
-#, fuzzy
-msgid "Switches to text view."
-msgstr "Дар ҳолати намоиши матнро дохил кунед."
-
-#: core/KexiView.cpp:232
-#, fuzzy
-msgid "Save"
-msgstr "&Нигоҳ доштан Қатор"
-
-#: core/KexiView.cpp:233
-msgid "Save current design"
-msgstr ""
-
-#: core/KexiView.cpp:234
-#, fuzzy
-msgid "Saves changes made to the current design."
-msgstr "Як қатори холӣ дар болои қатори интихоботии ҳозираи ҷадвалро монед."
-
-#: core/KexiView.cpp:580
-#, fuzzy
-#| msgid "Row:"
-msgid "Show:"
-msgstr "Қатор:"
-
-#: core/KexiView.cpp:591 main/KexiMainWindow_p.h:198
-msgid "Data"
-msgstr "Маълумот"
-
-#: core/KexiView.cpp:602
-#, fuzzy
-#| msgid "&Design"
-msgid "Design"
-msgstr "&Нақша кашидан"
-
 #: core/kexicontexthelp.cpp:34 core/KoContextHelp.cpp:518
 #: core/KoContextHelp.cpp:550 core/KoContextHelp.cpp:560
 #: core/KoContextHelp.cpp:579 core/KoContextHelp.cpp:591
@@ -151,23 +91,48 @@ msgctxt "database connection"
 msgid "(connection %1)"
 msgstr ""
 
-#: core/KexiWindow.cpp:612
+#: core/KexiWindow.cpp:608 widget/kexidbconnectionwidget.cpp:89
+msgid "Save Changes"
+msgstr "Нигоҳ доштани тағйиротҳо"
+
+#: core/KexiWindow.cpp:611
+msgid "Do Not Switch"
+msgstr ""
+
+#: core/KexiWindow.cpp:614
+#, fuzzy, kde-format
+#| msgid ""
+#| "Design has been changed. You must save it before switching to other view."
+msgid ""
+"There are unsaved changes in object \"%1\". Do you want to save these "
+"changes before switching to other view?"
+msgstr ""
+"Дизайн дигаргун карда шуд. Пеш аз гузаштан ба намоиши дигар, шумо бояд кори "
+"равонро нигоҳ доред."
+
+#: core/KexiWindow.cpp:617
+#, fuzzy
+#| msgid "Save Changes"
+msgid "Confirm Saving Changes"
+msgstr "Нигоҳ доштани тағйиротҳо"
+
+#: core/KexiWindow.cpp:638
 msgid ""
 "Design has been changed. You must save it before switching to other view."
 msgstr ""
 "Дизайн дигаргун карда шуд. Пеш аз гузаштан ба намоиши дигар, шумо бояд кори "
 "равонро нигоҳ доред."
 
-#: core/KexiWindow.cpp:677 main/KexiMainWindow.cpp:3582
+#: core/KexiWindow.cpp:703 main/KexiMainWindow.cpp:3582
 #, kde-format
 msgid "Switching to other view failed (%1)."
 msgstr "Хомуш сохтани дигар намуди файлҳои (%1)."
 
-#: core/KexiWindow.cpp:859
+#: core/KexiWindow.cpp:885
 msgid "Saving object's definition failed."
 msgstr "Нигоҳдории таърифи мавзӯъ нодуруст."
 
-#: core/KexiWindow.cpp:943
+#: core/KexiWindow.cpp:969
 #, fuzzy
 msgid "Saving object's data failed."
 msgstr "Нигоҳдории таърифи мавзӯъ нодуруст."
@@ -858,6 +823,66 @@ msgstr "Ҳамин функсияи \"%1\" дастнорас"
 #, fuzzy, kde-format
 msgid "\"%1\" function is not available for version %2 of %3 application."
 msgstr "\"%1\" функсияи датснорас"
+
+#: core/KexiView.cpp:66
+#, fuzzy
+msgid "Switch to data view"
+msgstr "Дар ҳолати намоиши таърихро дохил кардан"
+
+#: core/KexiView.cpp:67
+#, fuzzy
+msgid "Switches to data view."
+msgstr "Дар ҳолати намоиши таърихро дохил кунед."
+
+#: core/KexiView.cpp:70
+#, fuzzy
+msgid "Switch to design view"
+msgstr "Дар ҳолати намоиши дизайнро дохил кардан"
+
+#: core/KexiView.cpp:71
+#, fuzzy
+msgid "Switches to design view."
+msgstr "Дар ҳолати намоиши дизайнро дохил кунед."
+
+#: core/KexiView.cpp:74
+#, fuzzy
+msgid "Switch to text view"
+msgstr "Дар ҳолати намоиши матнро дохил кардан"
+
+#: core/KexiView.cpp:75
+#, fuzzy
+msgid "Switches to text view."
+msgstr "Дар ҳолати намоиши матнро дохил кунед."
+
+#: core/KexiView.cpp:232
+#, fuzzy
+msgid "Save"
+msgstr "&Нигоҳ доштан Қатор"
+
+#: core/KexiView.cpp:233
+msgid "Save current design"
+msgstr ""
+
+#: core/KexiView.cpp:234
+#, fuzzy
+msgid "Saves changes made to the current design."
+msgstr "Як қатори холӣ дар болои қатори интихоботии ҳозираи ҷадвалро монед."
+
+#: core/KexiView.cpp:595
+#, fuzzy
+#| msgid "Row:"
+msgid "Show:"
+msgstr "Қатор:"
+
+#: core/KexiView.cpp:606 main/KexiMainWindow_p.h:198
+msgid "Data"
+msgstr "Маълумот"
+
+#: core/KexiView.cpp:617
+#, fuzzy
+#| msgid "&Design"
+msgid "Design"
+msgstr "&Нақша кашидан"
 
 #: formeditor/WidgetTreeWidget.cpp:96 formeditor/commands.cpp:2217
 #: main/printing/kexisimpleprintingengine.cpp:326
@@ -7525,10 +7550,6 @@ msgid ""
 "\" combo box."
 msgstr ""
 
-#: widget/kexidbconnectionwidget.cpp:89
-msgid "Save Changes"
-msgstr "Нигоҳ доштани тағйиротҳо"
-
 #: widget/kexidbconnectionwidget.cpp:90
 msgid "Save all changes made to this connection information"
 msgstr ""
@@ -7747,22 +7768,64 @@ msgstr "&Ҷадвал/Пурсиши интихобшударо кушоед"
 msgid "Click to show available actions for this cell"
 msgstr ""
 
+#: widget/tableview/kexitableviewdata.cpp:596
+#: widget/tableview/kexitableviewdata.cpp:607
+#, kde-format
+msgid "\"%1\" column requires a value to be entered."
+msgstr "Сутуни \"%1\" барои вориди маъно дархост мекунад."
+
+#: widget/tableview/kexitableviewdata.cpp:598
+#: widget/tableview/kexidataawareobjectiface.cpp:949
+msgid "The column's constraint is declared as NOT NULL."
+msgstr "Маҳдудияти сутунҳо бояд,ки эълон кард ПУР НЕСТ."
+
+#: widget/tableview/kexitableviewdata.cpp:609
+#: widget/tableview/kexidataawareobjectiface.cpp:968
+msgid "The column's constraint is declared as NOT EMPTY."
+msgstr "Маҳдудияти сутунҳо бояд эълон кард ХОЛИ НЕСТ."
+
+#: widget/tableview/kexitableviewdata.cpp:620
+#, fuzzy
+#| msgid "Row inserting failed."
+msgid "Record inserting failed."
+msgstr "Мондани қатор нодуруст."
+
+#: widget/tableview/kexitableviewdata.cpp:638
+#, fuzzy
+#| msgid "Row changing failed."
+msgid "Record changing failed."
+msgstr "Дигаргун кардани қатор нодуруст."
+
+#: widget/tableview/kexitableviewdata.cpp:706
+#, fuzzy
+#| msgid "Row deleting failed."
+msgid "Record deleting failed."
+msgstr "Нобудкардани қатор нодуруст."
+
+#: widget/tableview/kexitableview.cpp:120
+#, fuzzy
+msgid "Contains a pointer to the currently selected record"
+msgstr "Як қатори холӣ дар болои қатори интихоботии ҳозираи ҷадвалро монед."
+
+#: widget/tableview/kexitableview.cpp:122
+#, fuzzy
+msgid "Record navigator"
+msgstr "Нақшаи Дарёнавард"
+
+#: widget/tableview/kexitableview.cpp:242
+msgid "Add Record"
+msgstr "Ҳисоб илова кунед"
+
+#: widget/tableview/kexitableview.cpp:245
+msgid "Remove Record"
+msgstr "Ҳисобро ҳаракат диҳед"
+
 #: widget/tableview/kexidataawareobjectiface.cpp:933
 #, fuzzy, kde-format
 #| msgid "Error: %1"
 msgctxt "Question"
 msgid "Error: %1?"
 msgstr "Хато: %1"
-
-#: widget/tableview/kexidataawareobjectiface.cpp:949
-#: widget/tableview/kexitableviewdata.cpp:598
-msgid "The column's constraint is declared as NOT NULL."
-msgstr "Маҳдудияти сутунҳо бояд,ки эълон кард ПУР НЕСТ."
-
-#: widget/tableview/kexidataawareobjectiface.cpp:968
-#: widget/tableview/kexitableviewdata.cpp:609
-msgid "The column's constraint is declared as NOT EMPTY."
-msgstr "Маҳдудияти сутунҳо бояд эълон кард ХОЛИ НЕСТ."
 
 #: widget/tableview/kexidataawareobjectiface.cpp:983
 msgid "The column's constraint is declared as NOT EMPTY and NOT NULL."
@@ -7811,48 +7874,6 @@ msgstr "Тағйиротҳои мавзӯъ нигоҳ доред"
 #, fuzzy
 msgid "Discard Changes"
 msgstr "Нигоҳ доштани тағйиротҳо"
-
-#: widget/tableview/kexitableviewdata.cpp:596
-#: widget/tableview/kexitableviewdata.cpp:607
-#, kde-format
-msgid "\"%1\" column requires a value to be entered."
-msgstr "Сутуни \"%1\" барои вориди маъно дархост мекунад."
-
-#: widget/tableview/kexitableviewdata.cpp:620
-#, fuzzy
-#| msgid "Row inserting failed."
-msgid "Record inserting failed."
-msgstr "Мондани қатор нодуруст."
-
-#: widget/tableview/kexitableviewdata.cpp:638
-#, fuzzy
-#| msgid "Row changing failed."
-msgid "Record changing failed."
-msgstr "Дигаргун кардани қатор нодуруст."
-
-#: widget/tableview/kexitableviewdata.cpp:706
-#, fuzzy
-#| msgid "Row deleting failed."
-msgid "Record deleting failed."
-msgstr "Нобудкардани қатор нодуруст."
-
-#: widget/tableview/kexitableview.cpp:120
-#, fuzzy
-msgid "Contains a pointer to the currently selected record"
-msgstr "Як қатори холӣ дар болои қатори интихоботии ҳозираи ҷадвалро монед."
-
-#: widget/tableview/kexitableview.cpp:122
-#, fuzzy
-msgid "Record navigator"
-msgstr "Нақшаи Дарёнавард"
-
-#: widget/tableview/kexitableview.cpp:242
-msgid "Add Record"
-msgstr "Ҳисоб илова кунед"
-
-#: widget/tableview/kexitableview.cpp:245
-msgid "Remove Record"
-msgstr "Ҳисобро ҳаракат диҳед"
 
 #: widget/utils/kexidatetimeformatter.cpp:303
 msgid "pm"
