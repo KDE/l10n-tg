@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmouth\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:44+0200\n"
+"POT-Creation-Date: 2011-08-23 16:53+0200\n"
 "PO-Revision-Date: 2005-12-22 14:33+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -20,40 +20,285 @@ msgstr ""
 "X-Generator: KBabel 1.10.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: phrasebook/phrasetree.cpp:471
-#, kde-format
+#: configwizard.cpp:38
+msgid "Initial Configuration - KMouth"
+msgstr "Танзимотҳои аввали барои KMouth"
+
+#: configwizard.cpp:57
+msgid "Text-to-Speech Configuration"
+msgstr "Танзимотҳои матн барои талаффуз"
+
+#: configwizard.cpp:71
+msgid "Initial Phrase Book"
+msgstr "Китоби Гуфтугӯи Аввалин"
+
+#: configwizard.cpp:103 optionsdialog.cpp:145 optionsdialog.cpp:146
+msgid "Word Completion"
+msgstr "Калимаҳои пуршавӣ"
+
+#: kmouth.cpp:113
+msgid "&Open as History..."
+msgstr "&Кушодан ҳамчун таърих..."
+
+#: kmouth.cpp:116 kmouth.cpp:117
+msgid "Opens an existing file as history"
+msgstr "Кушодани файли мавҷудбуда ҳамчун таърих"
+
+#: kmouth.cpp:121
+msgid "Save &History As..."
+msgstr "Нигоҳ доштан ҳамчун &таърих..."
+
+#: kmouth.cpp:124 kmouth.cpp:125
+msgid "Saves the actual history as..."
+msgstr "Нигоҳ доштан ҳамчун таърихи ҳақиқӣ..."
+
+#: kmouth.cpp:129
+msgid "&Print History..."
+msgstr "&Чоп кардани таърих..."
+
+#: kmouth.cpp:132 kmouth.cpp:133
+msgid "Prints out the actual history"
+msgstr "Чоп кардани таърихи ҳақиқӣ"
+
+#: kmouth.cpp:136 kmouth.cpp:137
+msgid "Quits the application"
+msgstr "Пӯшидани барнома"
+
+#: kmouth.cpp:141
+msgid "Cuts the selected section and puts it to the clipboard"
+msgstr "Ин қисми матни интихобшуда бурида мекунад ва ба хотири нусха мегузорад"
+
+#: kmouth.cpp:142
 msgid ""
-"The '%1' key combination has already been allocated to %2.\n"
-"Please choose a unique key combination."
+"Cuts the selected section and puts it to the clipboard. If there is some "
+"text selected in the edit field it is placed it on the clipboard. Otherwise "
+"the selected sentences in the history (if any) are placed on the clipboard."
 msgstr ""
-"Мувофиқати тугма '%1' ба тугмаи %2 алакай якҷоя шудааст\n"
-"Мувофиқати дигарро интихоб кунед."
+"Матни интихобшударо мебурад ба хотири нусха мегузорад. Агар қисми матни "
+"интихобшуда дар доираи муҳаррир бурида шудааст, он ба хотири нусха гузаронда "
+"мешавад. Ё ин ки қисмҳои матни интихобшуда дад таърихи хотираи нусха нигоҳ "
+"дошта мешавад."
 
-#: phrasebook/phrasetree.cpp:493
-#, kde-format
-msgid "the standard \"%1\" action"
-msgstr "\"%1\" амалиёти стандартӣ"
+#: kmouth.cpp:145
+msgid "Copies the selected section to the clipboard"
+msgstr "Ин қисми интихобшуда ба хотири нусха мегузорад"
 
-#: phrasebook/phrasetree.cpp:494
-msgid "Conflict with Standard Application Shortcut"
-msgstr "Мухолифат ба гузориши гугмачаи тези стандартӣ"
+#: kmouth.cpp:146
+msgid ""
+"Copies the selected section to the clipboard. If there is some text selected "
+"in the edit field it is copied to the clipboard. Otherwise the selected "
+"sentences in the history (if any) are copied to the clipboard."
+msgstr ""
+"Қисми интихобшударо ба хотири нусха мегузорад. Агар қисми матни интихобшуда "
+"дар доираи муҳаррир бурида шудааст, он ба хотири нусха гузаронда мешавад. Ё "
+"ин ки қисмҳои матни интихобшуда дад таърихи хотираи нусха нигоҳ дошта "
+"мешавад."
 
-#: phrasebook/phrasetree.cpp:511
-#, kde-format
-msgid "the global \"%1\" action"
-msgstr "\"%1\" амалиёти глобалӣ"
+#: kmouth.cpp:149 phrasebook/phrasebookdialog.cpp:413
+#, fuzzy
+#| msgid "Pastes the clipboard contents to actual position"
+msgid "Pastes the clipboard contents to current position"
+msgstr "Таркиби хотири нусхаро дар ҷои лозимӣ мегузорад"
 
-#: phrasebook/phrasetree.cpp:512
-msgid "Conflict with Global Shortcuts"
-msgstr "Мухолифат дар тугмачаҳои тези умумӣ"
+#: kmouth.cpp:150 phrasebook/phrasebookdialog.cpp:414
+msgid ""
+"Pastes the clipboard contents at the current cursor position into the edit "
+"field."
+msgstr "Таркиби хотири нусхаро дар ҷои нишондодаи курсори муш мегузорад."
 
-#: phrasebook/phrasetree.cpp:527
-msgid "an other phrase"
-msgstr "ибораи дигар"
+#: kmouth.cpp:154
+#, fuzzy
+#| msgid "&Speak"
+msgctxt "Start speaking"
+msgid "&Speak"
+msgstr "&Талаффуз "
 
-#: phrasebook/phrasetree.cpp:528
-msgid "Key Conflict"
-msgstr "Калиди нодуруст"
+#: kmouth.cpp:156
+msgid "Speaks the currently active sentence(s)"
+msgstr "Ҷумлаи фаъоли равон талаффуз мекунад"
+
+#: kmouth.cpp:157 phraselist.cpp:86
+msgid ""
+"Speaks the currently active sentence(s). If there is some text in the edit "
+"field it is spoken. Otherwise the selected sentences in the history (if any) "
+"are spoken."
+msgstr ""
+"Ҷумлаи фаъоли ҷориро талаффуз мекунад. Агар матн дар доираи муҳаррир ҷоцгир "
+"шудааст, он талаффуз карда мешавад. Дар мавриди дигар танҳо матн за таърихи "
+"бпарнома талаффуз карда мешавад."
+
+#: kmouth.cpp:161
+msgid "&Edit..."
+msgstr "&Муҳаррир..."
+
+#: kmouth.cpp:172
+msgid "Show P&hrasebook Bar"
+msgstr "Нишон додани сутуни д&афтари ибораҳо"
+
+#: kmouth.cpp:174 kmouth.cpp:175
+msgid "Enables/disables the phrasebook bar"
+msgstr "Пайраҳаи асбобро фаъол/ғайри фаъол мекунад"
+
+#: kmouth.cpp:178 kmouth.cpp:179
+msgid "Enables/disables the statusbar"
+msgstr "Пайраҳаи вазъиятро фаъол/ғайри фаъол мекунад"
+
+#: kmouth.cpp:183
+msgid "&Configure KMouth..."
+msgstr "&Танзимоти KMouth..."
+
+#: kmouth.cpp:185 kmouth.cpp:186
+msgid "Opens the configuration dialog"
+msgstr "Кушодани диалоги танзимӣ"
+
+#: kmouth.cpp:194 phraselist.cpp:83
+msgid "&Speak"
+msgstr "&Талаффуз "
+
+#: kmouth.cpp:195 kmouth.cpp:197
+msgid "Speaks the currently selected phrases in the history"
+msgstr "Ибораи ҷории аз таърих интихобшударо талаффуз мекунад"
+
+#: kmouth.cpp:201 phrasebook/phrasebookdialog.cpp:418
+msgid "&Delete"
+msgstr ""
+
+#: kmouth.cpp:203 kmouth.cpp:204
+msgid "Deletes the currently selected phrases from the history"
+msgstr "Ибораи ҷории аз таърих интихобшударо нест мекунад"
+
+#: kmouth.cpp:208
+msgid "Cu&t"
+msgstr "Бури&дан"
+
+#: kmouth.cpp:210 kmouth.cpp:211
+msgid ""
+"Cuts the currently selected phrases from the history and puts them to the "
+"clipboard"
+msgstr ""
+"Ибораи ҷории аз таърих интихобшударо мебурад ва ба хотири нусха мегузорад"
+
+#: kmouth.cpp:215
+msgid "&Copy"
+msgstr ""
+
+#: kmouth.cpp:217 kmouth.cpp:218
+msgid "Copies the currently selected phrases from the history to the clipboard"
+msgstr "Ибораи ҷории аз таърих интихобшударо ба хотири нусха мегузорад"
+
+#: kmouth.cpp:221
+msgid "Select &All Entries"
+msgstr "Ҳама воридҳоро &интихоб кунед"
+
+#: kmouth.cpp:223 kmouth.cpp:224
+msgid "Selects all phrases in the history"
+msgstr "Ҳама ибораҳоро аз таърих интихоб мекунад"
+
+#: kmouth.cpp:227
+msgid "D&eselect All Entries"
+msgstr "Интихоби ҳамаи воридҳоро &барҳам диҳед"
+
+#: kmouth.cpp:229 kmouth.cpp:230
+msgid "Deselects all phrases in the history"
+msgstr "Интихоби ҳамаи ибораҳои дар таърих бударо барҳам мекунад"
+
+#: kmouth.cpp:244 kmouth.cpp:262 kmouth.cpp:370 kmouth.cpp:378 kmouth.cpp:396
+#: kmouth.cpp:446 kmouth.cpp:463 kmouth.cpp:480 kmouth.cpp:497
+#, fuzzy
+#| msgid "Ready."
+msgctxt "The job is done"
+msgid "Ready."
+msgstr "Тайёр."
+
+#: kmouth.cpp:259 kmouth.cpp:366
+msgid "Opening file..."
+msgstr "Кушодани файл..."
+
+#: kmouth.cpp:374
+msgid "Saving history with a new filename..."
+msgstr "Нигоҳ доштани файл бо номи файли нав..."
+
+#: kmouth.cpp:383
+msgid "Printing..."
+msgstr "Чоп..."
+
+#: kmouth.cpp:401
+#, fuzzy
+#| msgid "Exiting..."
+msgctxt "Shutting down the application"
+msgid "Exiting..."
+msgstr "Баромадан..."
+
+#: kmouth.cpp:439
+msgid "Toggling menubar..."
+msgstr "Фаъол кардани пайраҳаи асбоб..."
+
+#: kmouth.cpp:451
+msgid "Toggling toolbar..."
+msgstr "Фаъол кардани пайраҳаи асбоб..."
+
+#: kmouth.cpp:468
+msgid "Toggling phrasebook bar..."
+msgstr "Фаъол кардани пайраҳаи асбоб..."
+
+#: kmouth.cpp:485
+msgid "Toggle the statusbar..."
+msgstr "Фаъол кардани пайраҳаи вазъият..."
+
+#: main.cpp:28
+msgid "A type-and-say front end for speech synthesizers"
+msgstr "Интерфейси бароҳат барои талаффузи синтезатор"
+
+#: main.cpp:35
+msgid "KMouth"
+msgstr "KMouth"
+
+#: main.cpp:37
+msgid "(c) 2002/2003, Gunnar Schmi Dt"
+msgstr ""
+
+#: main.cpp:38
+msgid "Gunnar Schmi Dt"
+msgstr ""
+
+#: main.cpp:42
+msgid "History file to open"
+msgstr "Кушодани файл аз рӯйхати таърих"
+
+#: main.cpp:45
+msgid "Olaf Schmidt"
+msgstr ""
+
+#: main.cpp:45
+msgid "Tips, extended phrase books"
+msgstr "Нӯгҳо, китобҳои гуфтугӯи васеъшуда"
+
+#: optionsdialog.cpp:120
+#, fuzzy
+msgid "Configuration"
+msgstr "Танзимотҳои матн барои талаффуз"
+
+#: optionsdialog.cpp:133
+msgid "&Preferences"
+msgstr "&Маълумотгирӣ"
+
+#: optionsdialog.cpp:137
+msgid "&Text-to-Speech"
+msgstr "&Матн барои талаффуз"
+
+#: optionsdialog.cpp:139 optionsdialog.cpp:140
+msgid "General Options"
+msgstr "Интихоботҳои умумӣ"
+
+#: optionsdialog.cpp:152
+#, fuzzy
+#| msgid "KTTSD Speech Service"
+msgid "Jovie Speech Service"
+msgstr "Хизмати талаффузи KTTSD"
+
+#: optionsdialog.cpp:154
+msgid "KDE Text-to-Speech Daemon Configuration"
+msgstr "Танзимоти Демони KDE барои талаффузи матн"
 
 #: phrasebook/phrasebook.cpp:263 phrasebook/phrasebookdialog.cpp:790
 msgid ""
@@ -242,22 +487,6 @@ msgid ""
 msgstr ""
 "Вориди ҷории аз китоби гуфтугӯи интихобшударо ба хотири нусха мегузорад"
 
-#: phrasebook/phrasebookdialog.cpp:413 kmouth.cpp:149
-#, fuzzy
-#| msgid "Pastes the clipboard contents to actual position"
-msgid "Pastes the clipboard contents to current position"
-msgstr "Таркиби хотири нусхаро дар ҷои лозимӣ мегузорад"
-
-#: phrasebook/phrasebookdialog.cpp:414 kmouth.cpp:150
-msgid ""
-"Pastes the clipboard contents at the current cursor position into the edit "
-"field."
-msgstr "Таркиби хотири нусхаро дар ҷои нишондодаи курсори муш мегузорад."
-
-#: phrasebook/phrasebookdialog.cpp:418 kmouth.cpp:201
-msgid "&Delete"
-msgstr ""
-
 #: phrasebook/phrasebookdialog.cpp:420 phrasebook/phrasebookdialog.cpp:421
 msgid "Deletes the selected entries from the phrase book"
 msgstr "Воридҳои интихобшударо аз китоби гуфтугӯи нест мекунад"
@@ -337,379 +566,40 @@ msgstr ""
 "Дар ҳоли нигоҳ доштани файл хато шуд\n"
 "%1"
 
-#: wordcompletion/wordlist.cpp:114
-msgid "Creating Word List"
-msgstr "Сохтани рӯйхати калимаҳо"
-
-#: wordcompletion/wordlist.cpp:114 wordcompletion/wordlist.cpp:296
-msgid "Parsing the KDE documentation..."
-msgstr "Санҷиши грамматика дар ҳуҷҷтҳои KDE..."
-
-#: wordcompletion/wordlist.cpp:243
-msgid "Merging dictionaries..."
-msgstr "Ҳамҷоя кардани луғатҳо..."
-
-#: wordcompletion/wordlist.cpp:314
-msgid "Parsing file..."
-msgstr "Санҷиши грамматика дар файл..."
-
-#: wordcompletion/wordlist.cpp:325
-msgid "Parsing directory..."
-msgstr "Санҷиши грамматика дар феҳрист..."
-
-#: wordcompletion/wordlist.cpp:517
-msgid "Performing spell check..."
-msgstr "Санҷиши имло..."
-
-#: wordcompletion/wordcompletionwidget.cpp:75
-#: wordcompletion/wordcompletionwidget.cpp:144
-#: wordcompletion/wordcompletionwidget.cpp:208
-msgid "without name"
-msgstr "бе ном"
-
-#: wordcompletion/wordcompletionwidget.cpp:254
-msgid "Export Dictionary"
-msgstr "Содироти Луғат"
-
-#: wordcompletion/dictionarycreationwizard.cpp:49
-msgid "Source of New Dictionary (1)"
-msgstr "Манбаъи Луғати Нав (1)"
-
-#: wordcompletion/dictionarycreationwizard.cpp:54
-#: wordcompletion/dictionarycreationwizard.cpp:58
-#: wordcompletion/dictionarycreationwizard.cpp:66
-#: wordcompletion/dictionarycreationwizard.cpp:71
-#: wordcompletion/dictionarycreationwizard.cpp:116
-#: wordcompletion/dictionarycreationwizard.cpp:132
-#: wordcompletion/dictionarycreationwizard.cpp:141
-#: wordcompletion/dictionarycreationwizard.cpp:150
-msgid "Source of New Dictionary (2)"
-msgstr "Манбаъи Луғати Нав (2)"
-
-#: wordcompletion/dictionarycreationwizard.cpp:59
-#, fuzzy
-#| msgid "&Directory:"
-msgctxt "In which directory is the file located?"
-msgid "&Directory:"
-msgstr "&Феҳрист:"
-
-#: wordcompletion/dictionarycreationwizard.cpp:60
-#: wordcompletion/dictionarycreationwizard.cpp:62
+#: phrasebook/phrasetree.cpp:471
+#, kde-format
 msgid ""
-"With this input field you specify which directory you want to load for "
-"creating the new dictionary."
+"The '%1' key combination has already been allocated to %2.\n"
+"Please choose a unique key combination."
 msgstr ""
-"Бо ин майдони вурудӣ ту метавони мушаххас куни кадом раҳнамои, ки ту мехоҳи "
-"барои бор кардани сохтани луғати нав."
-
-#: wordcompletion/dictionarycreationwizard.cpp:100
-#: texttospeechconfigurationwidget.cpp:48
-#, fuzzy
-#| msgid "Local"
-msgctxt "Local characterset"
-msgid "Local"
-msgstr "Локалӣ"
-
-#: wordcompletion/dictionarycreationwizard.cpp:103
-#, fuzzy
-#| msgid "Latin1"
-msgctxt "Latin characterset"
-msgid "Latin1"
-msgstr "Latin1"
-
-#: wordcompletion/dictionarycreationwizard.cpp:104
-#: texttospeechconfigurationwidget.cpp:52
-msgid "Unicode"
-msgstr "Ҳарфҳои рамзӣ"
-
-#: wordcompletion/dictionarycreationwizard.cpp:237
-msgid "Merge result"
-msgstr "Ҳамҷоя кардани натиҷа"
-
-#: wordcompletion/dictionarycreationwizard.cpp:240
-msgctxt "In the sense of a blank word list"
-msgid "Empty list"
-msgstr "Листи холӣ"
-
-#: wordcompletion/dictionarycreationwizard.cpp:249
-msgid "KDE Documentation"
-msgstr "Ҳуҷҷатҳои KDE "
-
-#: wordcompletion/dictionarycreationwizard.cpp:371
-msgctxt "Default dictionary"
-msgid "Default"
-msgstr ""
-
-#: kmouth.cpp:113
-msgid "&Open as History..."
-msgstr "&Кушодан ҳамчун таърих..."
-
-#: kmouth.cpp:116 kmouth.cpp:117
-msgid "Opens an existing file as history"
-msgstr "Кушодани файли мавҷудбуда ҳамчун таърих"
-
-#: kmouth.cpp:121
-msgid "Save &History As..."
-msgstr "Нигоҳ доштан ҳамчун &таърих..."
-
-#: kmouth.cpp:124 kmouth.cpp:125
-msgid "Saves the actual history as..."
-msgstr "Нигоҳ доштан ҳамчун таърихи ҳақиқӣ..."
-
-#: kmouth.cpp:129
-msgid "&Print History..."
-msgstr "&Чоп кардани таърих..."
-
-#: kmouth.cpp:132 kmouth.cpp:133
-msgid "Prints out the actual history"
-msgstr "Чоп кардани таърихи ҳақиқӣ"
-
-#: kmouth.cpp:136 kmouth.cpp:137
-msgid "Quits the application"
-msgstr "Пӯшидани барнома"
-
-#: kmouth.cpp:141
-msgid "Cuts the selected section and puts it to the clipboard"
-msgstr "Ин қисми матни интихобшуда бурида мекунад ва ба хотири нусха мегузорад"
-
-#: kmouth.cpp:142
-msgid ""
-"Cuts the selected section and puts it to the clipboard. If there is some "
-"text selected in the edit field it is placed it on the clipboard. Otherwise "
-"the selected sentences in the history (if any) are placed on the clipboard."
-msgstr ""
-"Матни интихобшударо мебурад ба хотири нусха мегузорад. Агар қисми матни "
-"интихобшуда дар доираи муҳаррир бурида шудааст, он ба хотири нусха гузаронда "
-"мешавад. Ё ин ки қисмҳои матни интихобшуда дад таърихи хотираи нусха нигоҳ "
-"дошта мешавад."
-
-#: kmouth.cpp:145
-msgid "Copies the selected section to the clipboard"
-msgstr "Ин қисми интихобшуда ба хотири нусха мегузорад"
-
-#: kmouth.cpp:146
-msgid ""
-"Copies the selected section to the clipboard. If there is some text selected "
-"in the edit field it is copied to the clipboard. Otherwise the selected "
-"sentences in the history (if any) are copied to the clipboard."
-msgstr ""
-"Қисми интихобшударо ба хотири нусха мегузорад. Агар қисми матни интихобшуда "
-"дар доираи муҳаррир бурида шудааст, он ба хотири нусха гузаронда мешавад. Ё "
-"ин ки қисмҳои матни интихобшуда дад таърихи хотираи нусха нигоҳ дошта "
-"мешавад."
-
-#: kmouth.cpp:154
-#, fuzzy
-#| msgid "&Speak"
-msgctxt "Start speaking"
-msgid "&Speak"
-msgstr "&Талаффуз "
-
-#: kmouth.cpp:156
-msgid "Speaks the currently active sentence(s)"
-msgstr "Ҷумлаи фаъоли равон талаффуз мекунад"
-
-#: kmouth.cpp:157 phraselist.cpp:86
-msgid ""
-"Speaks the currently active sentence(s). If there is some text in the edit "
-"field it is spoken. Otherwise the selected sentences in the history (if any) "
-"are spoken."
-msgstr ""
-"Ҷумлаи фаъоли ҷориро талаффуз мекунад. Агар матн дар доираи муҳаррир ҷоцгир "
-"шудааст, он талаффуз карда мешавад. Дар мавриди дигар танҳо матн за таърихи "
-"бпарнома талаффуз карда мешавад."
-
-#: kmouth.cpp:161
-msgid "&Edit..."
-msgstr "&Муҳаррир..."
-
-#: kmouth.cpp:172
-msgid "Show P&hrasebook Bar"
-msgstr "Нишон додани сутуни д&афтари ибораҳо"
-
-#: kmouth.cpp:174 kmouth.cpp:175
-msgid "Enables/disables the phrasebook bar"
-msgstr "Пайраҳаи асбобро фаъол/ғайри фаъол мекунад"
-
-#: kmouth.cpp:178 kmouth.cpp:179
-msgid "Enables/disables the statusbar"
-msgstr "Пайраҳаи вазъиятро фаъол/ғайри фаъол мекунад"
-
-#: kmouth.cpp:183
-msgid "&Configure KMouth..."
-msgstr "&Танзимоти KMouth..."
-
-#: kmouth.cpp:185 kmouth.cpp:186
-msgid "Opens the configuration dialog"
-msgstr "Кушодани диалоги танзимӣ"
-
-#: kmouth.cpp:194 phraselist.cpp:83
-msgid "&Speak"
-msgstr "&Талаффуз "
-
-#: kmouth.cpp:195 kmouth.cpp:197
-msgid "Speaks the currently selected phrases in the history"
-msgstr "Ибораи ҷории аз таърих интихобшударо талаффуз мекунад"
-
-#: kmouth.cpp:203 kmouth.cpp:204
-msgid "Deletes the currently selected phrases from the history"
-msgstr "Ибораи ҷории аз таърих интихобшударо нест мекунад"
-
-#: kmouth.cpp:208
-msgid "Cu&t"
-msgstr "Бури&дан"
-
-#: kmouth.cpp:210 kmouth.cpp:211
-msgid ""
-"Cuts the currently selected phrases from the history and puts them to the "
-"clipboard"
-msgstr ""
-"Ибораи ҷории аз таърих интихобшударо мебурад ва ба хотири нусха мегузорад"
-
-#: kmouth.cpp:215
-msgid "&Copy"
-msgstr ""
-
-#: kmouth.cpp:217 kmouth.cpp:218
-msgid "Copies the currently selected phrases from the history to the clipboard"
-msgstr "Ибораи ҷории аз таърих интихобшударо ба хотири нусха мегузорад"
-
-#: kmouth.cpp:221
-msgid "Select &All Entries"
-msgstr "Ҳама воридҳоро &интихоб кунед"
-
-#: kmouth.cpp:223 kmouth.cpp:224
-msgid "Selects all phrases in the history"
-msgstr "Ҳама ибораҳоро аз таърих интихоб мекунад"
-
-#: kmouth.cpp:227
-msgid "D&eselect All Entries"
-msgstr "Интихоби ҳамаи воридҳоро &барҳам диҳед"
-
-#: kmouth.cpp:229 kmouth.cpp:230
-msgid "Deselects all phrases in the history"
-msgstr "Интихоби ҳамаи ибораҳои дар таърих бударо барҳам мекунад"
-
-#: kmouth.cpp:244 kmouth.cpp:262 kmouth.cpp:370 kmouth.cpp:378 kmouth.cpp:396
-#: kmouth.cpp:446 kmouth.cpp:463 kmouth.cpp:480 kmouth.cpp:497
-#, fuzzy
-#| msgid "Ready."
-msgctxt "The job is done"
-msgid "Ready."
-msgstr "Тайёр."
-
-#: kmouth.cpp:259 kmouth.cpp:366
-msgid "Opening file..."
-msgstr "Кушодани файл..."
-
-#: kmouth.cpp:374
-msgid "Saving history with a new filename..."
-msgstr "Нигоҳ доштани файл бо номи файли нав..."
-
-#: kmouth.cpp:383
-msgid "Printing..."
-msgstr "Чоп..."
-
-#: kmouth.cpp:401
-#, fuzzy
-#| msgid "Exiting..."
-msgctxt "Shutting down the application"
-msgid "Exiting..."
-msgstr "Баромадан..."
-
-#: kmouth.cpp:439
-msgid "Toggling menubar..."
-msgstr "Фаъол кардани пайраҳаи асбоб..."
-
-#: kmouth.cpp:451
-msgid "Toggling toolbar..."
-msgstr "Фаъол кардани пайраҳаи асбоб..."
-
-#: kmouth.cpp:468
-msgid "Toggling phrasebook bar..."
-msgstr "Фаъол кардани пайраҳаи асбоб..."
-
-#: kmouth.cpp:485
-msgid "Toggle the statusbar..."
-msgstr "Фаъол кардани пайраҳаи вазъият..."
-
-#: texttospeechconfigurationwidget.cpp:51
-#, fuzzy
-#| msgid "Latin1"
-msgctxt "Latin1 characterset"
-msgid "Latin1"
-msgstr "Latin1"
-
-#: optionsdialog.cpp:120
-#, fuzzy
-msgid "Configuration"
-msgstr "Танзимотҳои матн барои талаффуз"
-
-#: optionsdialog.cpp:133
-msgid "&Preferences"
-msgstr "&Маълумотгирӣ"
-
-#: optionsdialog.cpp:137
-msgid "&Text-to-Speech"
-msgstr "&Матн барои талаффуз"
-
-#: optionsdialog.cpp:139 optionsdialog.cpp:140
-msgid "General Options"
-msgstr "Интихоботҳои умумӣ"
-
-#: optionsdialog.cpp:145 optionsdialog.cpp:146 configwizard.cpp:103
-msgid "Word Completion"
-msgstr "Калимаҳои пуршавӣ"
-
-#: optionsdialog.cpp:152
-#, fuzzy
-#| msgid "KTTSD Speech Service"
-msgid "Jovie Speech Service"
-msgstr "Хизмати талаффузи KTTSD"
-
-#: optionsdialog.cpp:154
-msgid "KDE Text-to-Speech Daemon Configuration"
-msgstr "Танзимоти Демони KDE барои талаффузи матн"
-
-#: main.cpp:28
-msgid "A type-and-say front end for speech synthesizers"
-msgstr "Интерфейси бароҳат барои талаффузи синтезатор"
-
-#: main.cpp:35
-msgid "KMouth"
-msgstr "KMouth"
-
-#: main.cpp:37
-msgid "(c) 2002/2003, Gunnar Schmi Dt"
-msgstr ""
-
-#: main.cpp:38
-msgid "Gunnar Schmi Dt"
-msgstr ""
-
-#: main.cpp:42
-msgid "History file to open"
-msgstr "Кушодани файл аз рӯйхати таърих"
-
-#: main.cpp:45
-msgid "Olaf Schmidt"
-msgstr ""
-
-#: main.cpp:45
-msgid "Tips, extended phrase books"
-msgstr "Нӯгҳо, китобҳои гуфтугӯи васеъшуда"
-
-#: configwizard.cpp:38
-msgid "Initial Configuration - KMouth"
-msgstr "Танзимотҳои аввали барои KMouth"
-
-#: configwizard.cpp:57
-msgid "Text-to-Speech Configuration"
-msgstr "Танзимотҳои матн барои талаффуз"
-
-#: configwizard.cpp:71
-msgid "Initial Phrase Book"
-msgstr "Китоби Гуфтугӯи Аввалин"
+"Мувофиқати тугма '%1' ба тугмаи %2 алакай якҷоя шудааст\n"
+"Мувофиқати дигарро интихоб кунед."
+
+#: phrasebook/phrasetree.cpp:493
+#, kde-format
+msgid "the standard \"%1\" action"
+msgstr "\"%1\" амалиёти стандартӣ"
+
+#: phrasebook/phrasetree.cpp:494
+msgid "Conflict with Standard Application Shortcut"
+msgstr "Мухолифат ба гузориши гугмачаи тези стандартӣ"
+
+#: phrasebook/phrasetree.cpp:511
+#, kde-format
+msgid "the global \"%1\" action"
+msgstr "\"%1\" амалиёти глобалӣ"
+
+#: phrasebook/phrasetree.cpp:512
+msgid "Conflict with Global Shortcuts"
+msgstr "Мухолифат дар тугмачаҳои тези умумӣ"
+
+#: phrasebook/phrasetree.cpp:527
+msgid "an other phrase"
+msgstr "ибораи дигар"
+
+#: phrasebook/phrasetree.cpp:528
+msgid "Key Conflict"
+msgstr "Калиди нодуруст"
 
 #: phraselist.cpp:60
 msgid ""
@@ -745,6 +635,116 @@ msgstr ""
 #: phraselist.cpp:459
 msgid "Open File as History"
 msgstr "Кушодани файл ҳамчун таърих"
+
+#: texttospeechconfigurationwidget.cpp:48
+#: wordcompletion/dictionarycreationwizard.cpp:100
+#, fuzzy
+#| msgid "Local"
+msgctxt "Local characterset"
+msgid "Local"
+msgstr "Локалӣ"
+
+#: texttospeechconfigurationwidget.cpp:51
+#, fuzzy
+#| msgid "Latin1"
+msgctxt "Latin1 characterset"
+msgid "Latin1"
+msgstr "Latin1"
+
+#: texttospeechconfigurationwidget.cpp:52
+#: wordcompletion/dictionarycreationwizard.cpp:104
+msgid "Unicode"
+msgstr "Ҳарфҳои рамзӣ"
+
+#: wordcompletion/dictionarycreationwizard.cpp:49
+msgid "Source of New Dictionary (1)"
+msgstr "Манбаъи Луғати Нав (1)"
+
+#: wordcompletion/dictionarycreationwizard.cpp:54
+#: wordcompletion/dictionarycreationwizard.cpp:58
+#: wordcompletion/dictionarycreationwizard.cpp:66
+#: wordcompletion/dictionarycreationwizard.cpp:71
+#: wordcompletion/dictionarycreationwizard.cpp:116
+#: wordcompletion/dictionarycreationwizard.cpp:132
+#: wordcompletion/dictionarycreationwizard.cpp:141
+#: wordcompletion/dictionarycreationwizard.cpp:150
+msgid "Source of New Dictionary (2)"
+msgstr "Манбаъи Луғати Нав (2)"
+
+#: wordcompletion/dictionarycreationwizard.cpp:59
+#, fuzzy
+#| msgid "&Directory:"
+msgctxt "In which directory is the file located?"
+msgid "&Directory:"
+msgstr "&Феҳрист:"
+
+#: wordcompletion/dictionarycreationwizard.cpp:60
+#: wordcompletion/dictionarycreationwizard.cpp:62
+msgid ""
+"With this input field you specify which directory you want to load for "
+"creating the new dictionary."
+msgstr ""
+"Бо ин майдони вурудӣ ту метавони мушаххас куни кадом раҳнамои, ки ту мехоҳи "
+"барои бор кардани сохтани луғати нав."
+
+#: wordcompletion/dictionarycreationwizard.cpp:103
+#, fuzzy
+#| msgid "Latin1"
+msgctxt "Latin characterset"
+msgid "Latin1"
+msgstr "Latin1"
+
+#: wordcompletion/dictionarycreationwizard.cpp:237
+msgid "Merge result"
+msgstr "Ҳамҷоя кардани натиҷа"
+
+#: wordcompletion/dictionarycreationwizard.cpp:240
+msgctxt "In the sense of a blank word list"
+msgid "Empty list"
+msgstr "Листи холӣ"
+
+#: wordcompletion/dictionarycreationwizard.cpp:249
+msgid "KDE Documentation"
+msgstr "Ҳуҷҷатҳои KDE "
+
+#: wordcompletion/dictionarycreationwizard.cpp:371
+msgctxt "Default dictionary"
+msgid "Default"
+msgstr ""
+
+#: wordcompletion/wordcompletionwidget.cpp:75
+#: wordcompletion/wordcompletionwidget.cpp:144
+#: wordcompletion/wordcompletionwidget.cpp:208
+msgid "without name"
+msgstr "бе ном"
+
+#: wordcompletion/wordcompletionwidget.cpp:254
+msgid "Export Dictionary"
+msgstr "Содироти Луғат"
+
+#: wordcompletion/wordlist.cpp:114
+msgid "Creating Word List"
+msgstr "Сохтани рӯйхати калимаҳо"
+
+#: wordcompletion/wordlist.cpp:114 wordcompletion/wordlist.cpp:296
+msgid "Parsing the KDE documentation..."
+msgstr "Санҷиши грамматика дар ҳуҷҷтҳои KDE..."
+
+#: wordcompletion/wordlist.cpp:243
+msgid "Merging dictionaries..."
+msgstr "Ҳамҷоя кардани луғатҳо..."
+
+#: wordcompletion/wordlist.cpp:314
+msgid "Parsing file..."
+msgstr "Санҷиши грамматика дар файл..."
+
+#: wordcompletion/wordlist.cpp:325
+msgid "Parsing directory..."
+msgstr "Санҷиши грамматика дар феҳрист..."
+
+#: wordcompletion/wordlist.cpp:517
+msgid "Performing spell check..."
+msgstr "Санҷиши имло..."
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
