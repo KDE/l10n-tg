@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-26 02:20+0200\n"
+"POT-Creation-Date: 2011-09-04 02:14+0200\n"
 "PO-Revision-Date: 2008-06-10 01:45+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik Language\n"
@@ -781,46 +781,21 @@ msgstr "Талаффузи Тафтиши Натиҷа"
 msgid "Change Variable To"
 msgstr "Дигаргун кунед Ноустувор Ба"
 
-#: part/KWDocument.cpp:487
+#: part/KWOdfLoader.cpp:88
 #, fuzzy
-#| msgid "Copy%1-%2"
-msgid "Copy"
-msgstr "Нусхаи%1-%2"
+msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgstr "Ҳуҷҷати OASIS нодуруст. Бе офис:тани барчасп кофта ёфта шуд."
 
-#: part/KWDocument.cpp:532
+#: part/KWOdfLoader.cpp:100
 #, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 1"
-msgid "Head 1"
-msgstr "Асосӣ 1"
+msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgstr "Ҳуҷҷати OASIS нодуруст. Бе офис:тани барчасп кофта ёфта шуд."
 
-#: part/KWDocument.cpp:539
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 2"
-msgid "Head 2"
-msgstr "Асосӣ 2"
-
-#: part/KWDocument.cpp:546
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 3"
-msgid "Head 3"
-msgstr "Асосӣ 3"
-
-#: part/KWDocument.cpp:553
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Bullet List"
-msgid "Bullet List"
-msgstr "Рӯйхати тир"
-
-#: part/KWDocument.cpp:778
-msgid "Can not find needed text component, Words will quit now"
-msgstr ""
-
-#: part/KWDocument.cpp:779
-msgid "Installation Error"
+#: part/KWOdfLoader.cpp:102
+#, kde-format
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
 msgstr ""
 
 #: part/KWStatusBar.cpp:48
@@ -1816,21 +1791,46 @@ msgstr "Сохтани нусхаи алоқашуда"
 msgid "Insert Image Options"
 msgstr "Мондани саҳифа"
 
-#: part/KWOdfLoader.cpp:88
+#: part/KWDocument.cpp:487
 #, fuzzy
-msgid "Invalid OASIS OpenDocument file. No office:body tag found."
-msgstr "Ҳуҷҷати OASIS нодуруст. Бе офис:тани барчасп кофта ёфта шуд."
+#| msgid "Copy%1-%2"
+msgid "Copy"
+msgstr "Нусхаи%1-%2"
 
-#: part/KWOdfLoader.cpp:100
+#: part/KWDocument.cpp:532
 #, fuzzy
-msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
-msgstr "Ҳуҷҷати OASIS нодуруст. Бе офис:тани барчасп кофта ёфта шуд."
+#| msgctxt "Style name"
+#| msgid "Head 1"
+msgid "Head 1"
+msgstr "Асосӣ 1"
 
-#: part/KWOdfLoader.cpp:102
-#, kde-format
-msgid ""
-"This is not a word processing document, but %1. Please try opening it with "
-"the appropriate application."
+#: part/KWDocument.cpp:539
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 2"
+msgid "Head 2"
+msgstr "Асосӣ 2"
+
+#: part/KWDocument.cpp:546
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 3"
+msgid "Head 3"
+msgstr "Асосӣ 3"
+
+#: part/KWDocument.cpp:553
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Bullet List"
+msgid "Bullet List"
+msgstr "Рӯйхати тир"
+
+#: part/KWDocument.cpp:778
+msgid "Can not find needed text component, Words will quit now"
+msgstr ""
+
+#: part/KWDocument.cpp:779
+msgid "Installation Error"
 msgstr ""
 
 #: part/KWAboutData.h:27
