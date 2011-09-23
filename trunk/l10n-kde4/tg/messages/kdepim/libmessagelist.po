@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-15 04:08+0200\n"
+"POT-Creation-Date: 2011-09-23 04:11+0200\n"
 "PO-Revision-Date: 2005-09-17 13:29+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -247,13 +247,13 @@ msgctxt "Sort order for mail groups"
 msgid "Descending"
 msgstr "Ф&иристодан"
 
-#: core/item.cpp:228
+#: core/item.cpp:228 core/messageitem.cpp:611
 #, fuzzy
 msgctxt "Status of an item"
 msgid "Read"
 msgstr "Ҳуқуқҳои дастрасӣ"
 
-#: core/item.cpp:230
+#: core/item.cpp:230 core/messageitem.cpp:611
 #, fuzzy
 #| msgctxt "msg status"
 #| msgid "Unread"
@@ -267,7 +267,7 @@ msgctxt "Status of an item"
 msgid "Has Attachment"
 msgstr "бо замимот"
 
-#: core/item.cpp:236
+#: core/item.cpp:236 core/messageitem.cpp:609
 #, fuzzy
 #| msgctxt "msg status"
 #| msgid "Replied"
@@ -531,105 +531,6 @@ msgstr ""
 msgid "Styled Joined Rectangles"
 msgstr ""
 
-#: core/model.cpp:290
-#, fuzzy
-msgid "Today"
-msgstr "иҷро кардан"
-
-#: core/model.cpp:291
-#, fuzzy
-msgid "Yesterday"
-msgstr "Тартиботҳои новаи системавӣ"
-
-#: core/model.cpp:293 core/manager.cpp:98
-#, fuzzy
-msgctxt "Unknown date"
-msgid "Unknown"
-msgstr "&Фиристониш"
-
-#: core/model.cpp:294
-#, fuzzy
-#| msgid "Last Search"
-msgid "Last Week"
-msgstr "Ҷустуҷӯи охирин"
-
-#: core/model.cpp:295
-msgid "Two Weeks Ago"
-msgstr ""
-
-#: core/model.cpp:296
-msgid "Three Weeks Ago"
-msgstr ""
-
-#: core/model.cpp:297
-msgid "Four Weeks Ago"
-msgstr ""
-
-#: core/model.cpp:298
-msgid "Five Weeks Ago"
-msgstr ""
-
-#: core/model.cpp:512 utils/themeeditor.cpp:204
-#, fuzzy
-#| msgid "Receiver"
-msgid "Receiver"
-msgstr "Қабулкунанда"
-
-#: core/model.cpp:513 utils/themeeditor.cpp:203
-msgid "Sender"
-msgstr "Фиристонанда"
-
-#: core/model.cpp:1335
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "%1: name; %2: number appended to it to make it unique among a list of "
-#| "names"
-#| msgid "%1 %2"
-msgctxt "Message Aggregation Group Header: Month name and Year number"
-msgid "%1 %2"
-msgstr "%1 %2"
-
-#: core/model.cpp:3765
-#, fuzzy, kde-format
-#| msgid "&Thread Messages"
-msgid "Processed 1 Message of %2"
-msgid_plural "Processed %1 Messages of %2"
-msgstr[0] "Хел-хел ҷудокунӣ аз рӯи &мунозирот"
-msgstr[1] "Хел-хел ҷудокунӣ аз рӯи &мунозирот"
-
-#: core/model.cpp:3771 core/model.cpp:3777
-#, fuzzy, kde-format
-#| msgid "&Thread Messages"
-msgid "Threaded 1 Message of %2"
-msgid_plural "Threaded %1 Messages of %2"
-msgstr[0] "Хел-хел ҷудокунӣ аз рӯи &мунозирот"
-msgstr[1] "Хел-хел ҷудокунӣ аз рӯи &мунозирот"
-
-#: core/model.cpp:3783
-#, fuzzy, kde-format
-#| msgctxt "View->"
-#| msgid "&Expand Thread"
-msgid "Grouped 1 Thread of %2"
-msgid_plural "Grouped %1 Threads of %2"
-msgstr[0] "&Боз кардани мубоҳисот"
-msgstr[1] "&Боз кардани мубоҳисот"
-
-#: core/model.cpp:3789
-#, fuzzy, kde-format
-#| msgctxt "View->"
-#| msgid "&Expand Thread"
-msgid "Updated 1 Group of %2"
-msgid_plural "Updated %1 Groups of %2"
-msgstr[0] "&Боз кардани мубоҳисот"
-msgstr[1] "&Боз кардани мубоҳисот"
-
-#: core/model.cpp:3885
-#, fuzzy
-#| msgid "Ready."
-msgctxt "@info:status Finished view fill"
-msgid "Ready"
-msgstr "Иҷро шуд."
-
 #: core/view.cpp:721
 msgid "Adjust Column Sizes"
 msgstr ""
@@ -844,6 +745,12 @@ msgid "<b>%1</b> message (<b>%2</b> unread)"
 msgid_plural "<b>%1</b> messages (<b>%2</b> unread)"
 msgstr[0] ""
 msgstr[1] ""
+
+#: core/manager.cpp:98 core/model.cpp:293
+#, fuzzy
+msgctxt "Unknown date"
+msgid "Unknown"
+msgstr "&Фиристониш"
 
 #: core/manager.cpp:320
 msgid "Current Activity, Threaded"
@@ -1182,6 +1089,99 @@ msgstr "Рӯйхати иттилоот"
 #: core/widgetbase.cpp:733
 msgid "Folder Always Uses This Sort Order"
 msgstr ""
+
+#: core/model.cpp:290
+#, fuzzy
+msgid "Today"
+msgstr "иҷро кардан"
+
+#: core/model.cpp:291
+#, fuzzy
+msgid "Yesterday"
+msgstr "Тартиботҳои новаи системавӣ"
+
+#: core/model.cpp:294
+#, fuzzy
+#| msgid "Last Search"
+msgid "Last Week"
+msgstr "Ҷустуҷӯи охирин"
+
+#: core/model.cpp:295
+msgid "Two Weeks Ago"
+msgstr ""
+
+#: core/model.cpp:296
+msgid "Three Weeks Ago"
+msgstr ""
+
+#: core/model.cpp:297
+msgid "Four Weeks Ago"
+msgstr ""
+
+#: core/model.cpp:298
+msgid "Five Weeks Ago"
+msgstr ""
+
+#: core/model.cpp:524 utils/themeeditor.cpp:204
+#, fuzzy
+#| msgid "Receiver"
+msgid "Receiver"
+msgstr "Қабулкунанда"
+
+#: core/model.cpp:525 utils/themeeditor.cpp:203
+msgid "Sender"
+msgstr "Фиристонанда"
+
+#: core/model.cpp:1347
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "%1: name; %2: number appended to it to make it unique among a list of "
+#| "names"
+#| msgid "%1 %2"
+msgctxt "Message Aggregation Group Header: Month name and Year number"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: core/model.cpp:3777
+#, fuzzy, kde-format
+#| msgid "&Thread Messages"
+msgid "Processed 1 Message of %2"
+msgid_plural "Processed %1 Messages of %2"
+msgstr[0] "Хел-хел ҷудокунӣ аз рӯи &мунозирот"
+msgstr[1] "Хел-хел ҷудокунӣ аз рӯи &мунозирот"
+
+#: core/model.cpp:3783 core/model.cpp:3789
+#, fuzzy, kde-format
+#| msgid "&Thread Messages"
+msgid "Threaded 1 Message of %2"
+msgid_plural "Threaded %1 Messages of %2"
+msgstr[0] "Хел-хел ҷудокунӣ аз рӯи &мунозирот"
+msgstr[1] "Хел-хел ҷудокунӣ аз рӯи &мунозирот"
+
+#: core/model.cpp:3795
+#, fuzzy, kde-format
+#| msgctxt "View->"
+#| msgid "&Expand Thread"
+msgid "Grouped 1 Thread of %2"
+msgid_plural "Grouped %1 Threads of %2"
+msgstr[0] "&Боз кардани мубоҳисот"
+msgstr[1] "&Боз кардани мубоҳисот"
+
+#: core/model.cpp:3801
+#, fuzzy, kde-format
+#| msgctxt "View->"
+#| msgid "&Expand Thread"
+msgid "Updated 1 Group of %2"
+msgid_plural "Updated %1 Groups of %2"
+msgstr[0] "&Боз кардани мубоҳисот"
+msgstr[1] "&Боз кардани мубоҳисот"
+
+#: core/model.cpp:3897
+#, fuzzy
+#| msgid "Ready."
+msgctxt "@info:status Finished view fill"
+msgid "Ready"
+msgstr "Иҷро шуд."
 
 #: utils/configureaggregationsdialog.cpp:98
 msgid "Customize Message Aggregation Modes"
