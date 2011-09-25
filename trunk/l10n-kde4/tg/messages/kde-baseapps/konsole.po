@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-22 03:38+0200\n"
+"POT-Creation-Date: 2011-09-25 03:56+0200\n"
 "PO-Revision-Date: 2010-01-29 22:30+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik\n"
@@ -613,39 +613,39 @@ msgstr "Lars Knoll"
 msgid "Thanks to many others.\n"
 msgstr "Благодарности остальным принявшим участие.\n"
 
-#: MainWindow.cpp:252
+#: MainWindow.cpp:254
 #, fuzzy
 #| msgid "New &Tab"
 msgid "&New Tab"
 msgstr "Ҷадвалбандии &нав"
 
-#: MainWindow.cpp:261
+#: MainWindow.cpp:263
 msgid "New &Window"
 msgstr "Тирезаи &нав"
 
-#: MainWindow.cpp:272
+#: MainWindow.cpp:274
 msgid "&Bookmarks"
 msgstr "&Хатчӯбмонӣ"
 
-#: MainWindow.cpp:299 Part.cpp:101
+#: MainWindow.cpp:297 Part.cpp:101
 #, fuzzy
 #| msgid "Manage Profiles..."
 msgid "Configure Profiles..."
 msgstr "Идоракунии профилҳо..."
 
-#: MainWindow.cpp:305
+#: MainWindow.cpp:303
 msgid "Activate Menu"
 msgstr "Меню Фаъол кардан"
 
-#: MainWindow.cpp:402
+#: MainWindow.cpp:420
 msgid "You have multiple tabs in this window, are you sure you want to quit?"
 msgstr "Закрыть окно с несколькими открытыми вкладками?"
 
-#: MainWindow.cpp:404 SessionController.cpp:642
+#: MainWindow.cpp:422 SessionController.cpp:642
 msgid "Confirm Close"
 msgstr "Подтверждение выхода"
 
-#: MainWindow.cpp:406
+#: MainWindow.cpp:424
 msgid "Close Current Tab"
 msgstr "Закрыть текущую вкладку"
 
@@ -1630,12 +1630,14 @@ msgid "S&crollback"
 msgstr "&Буфер вывода"
 
 #. i18n: file: ../desktop/partui.rc:26
-#. i18n: ectx: Menu (change-profile)
-#. i18n: file: ../desktop/sessionui.rc:62
-#. i18n: ectx: Menu (change-profile)
+#. i18n: ectx: Menu (switch-profile)
+#. i18n: file: ../desktop/sessionui.rc:63
+#. i18n: ectx: Menu (switch-profile)
 #: rc.cpp:461 rc.cpp:470
-msgid "&Change Profile"
-msgstr "&Ивази профиль"
+#, fuzzy
+#| msgid "Edit Profile"
+msgid "&Switch Profile"
+msgstr "Таҳрири профил"
 
 #. i18n: file: ../desktop/sessionui.rc:17
 #. i18n: ectx: Menu (edit-copy-input-to)
@@ -1643,7 +1645,7 @@ msgstr "&Ивази профиль"
 msgid "Copy Input To"
 msgstr "Направлять ввод также"
 
-#. i18n: file: ../desktop/sessionui.rc:43
+#. i18n: file: ../desktop/sessionui.rc:44
 #. i18n: ectx: Menu (debug)
 #: rc.cpp:467
 msgid "Debug"
@@ -1801,8 +1803,10 @@ msgid "Configure Current Profile..."
 msgstr "Идоракунии профилҳо..."
 
 #: SessionController.cpp:547
-msgid "Change Profile"
-msgstr "Иваз кардани профил"
+#, fuzzy
+#| msgid "Edit Profile"
+msgid "Switch Profile"
+msgstr "Таҳрири профил"
 
 #: SessionController.cpp:636
 msgid ""
@@ -2030,21 +2034,21 @@ msgstr ""
 "\">приостановлен</a> по нажатию Ctrl+S. Нажмите <b>Ctrl+Q</b> для "
 "продолжения вывода.</qt>"
 
-#: ViewContainer.cpp:494
+#: ViewContainer.cpp:499
 #, fuzzy
 #| msgid "&Detach View"
 msgctxt "@action:inmenu"
 msgid "&Detach Tab"
 msgstr "От&делить представление"
 
-#: ViewContainer.cpp:498
+#: ViewContainer.cpp:503
 #, fuzzy
 #| msgid "&Rename Tab..."
 msgctxt "@action:inmenu"
 msgid "&Rename Tab..."
 msgstr "&Ивази номи ҷадвалбандӣ"
 
-#: ViewContainer.cpp:502
+#: ViewContainer.cpp:507
 #, fuzzy
 #| msgid "&Close Tab"
 msgctxt "@action:inmenu"
@@ -2064,58 +2068,64 @@ msgid "Previous Tab"
 msgstr "&Пешина"
 
 #: ViewManager.cpp:140
+#, fuzzy
+#| msgid "Switch to Tab %1"
+msgid "Switch to Last Tab"
+msgstr "Переключиться на вкладку %1"
+
+#: ViewManager.cpp:141
 msgid "Next View Container"
 msgstr "Следующее окно"
 
-#: ViewManager.cpp:142
+#: ViewManager.cpp:143
 #, fuzzy
 #| msgid "Move View Left"
 msgid "Move Tab Left"
 msgstr "Сдвинуть представление влево"
 
-#: ViewManager.cpp:143
+#: ViewManager.cpp:144
 #, fuzzy
 #| msgid "Move View Right"
 msgid "Move Tab Right"
 msgstr "Сдвинуть представление вправо"
 
-#: ViewManager.cpp:153
+#: ViewManager.cpp:154
 msgctxt "@action:inmenu"
 msgid "Split View Left/Right"
 msgstr "Разделить окно по вертикали"
 
-#: ViewManager.cpp:160
+#: ViewManager.cpp:161
 msgctxt "@action:inmenu"
 msgid "Split View Top/Bottom"
 msgstr "Разделить окно по горизонтали"
 
-#: ViewManager.cpp:165
+#: ViewManager.cpp:166
 msgctxt "@action:inmenu Close Active View"
 msgid "Close Active"
 msgstr "Закрыть текущее представление"
 
-#: ViewManager.cpp:174
+#: ViewManager.cpp:175
 msgctxt "@action:inmenu Close Other Views"
 msgid "Close Others"
 msgstr "Закрыть другие представления"
 
-#: ViewManager.cpp:184
+#: ViewManager.cpp:185
 #, fuzzy
 #| msgid "Close Current Tab"
 msgid "D&etach Current Tab"
 msgstr "Закрыть текущую вкладку"
 
-#: ViewManager.cpp:193
+#: ViewManager.cpp:194
 msgctxt "@action:inmenu"
 msgid "Expand View"
 msgstr "Увеличить размер представления"
 
-#: ViewManager.cpp:200
+#: ViewManager.cpp:201
 msgctxt "@action:inmenu"
 msgid "Shrink View"
 msgstr "Уменьшить размер представления"
 
-#: ViewManager.cpp:220
+#: ViewManager.cpp:222
 #, kde-format
 msgid "Switch to Tab %1"
 msgstr "Переключиться на вкладку %1"
@@ -2131,6 +2141,12 @@ msgstr ""
 #: ZModemDialog.cpp:35
 msgid "&Stop"
 msgstr "&Исто"
+
+#~ msgid "&Change Profile"
+#~ msgstr "&Ивази профиль"
+
+#~ msgid "Change Profile"
+#~ msgstr "Иваз кардани профил"
 
 #~ msgid "Maintainer"
 #~ msgstr "Соҳиб"
