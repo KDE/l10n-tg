@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: karm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-29 04:15+0200\n"
+"POT-Creation-Date: 2011-09-30 04:09+0200\n"
 "PO-Revision-Date: 2004-08-17 18:15+0500\n"
 "Last-Translator: Erkin Pulatov <erkin_pulatov@mail.ru>\n"
 "Language-Team: Tajik\n"
@@ -37,7 +37,7 @@ msgstr "&Нусхабардории хулосаҳо дар буфери ива�
 
 #. i18n: file: csvexportdialog_base.ui:176
 #. i18n: ectx: property (text), item, widget (QComboBox, combodecimalminutes)
-#: csvexportdialog.cpp:93 rc.cpp:163
+#: csvexportdialog.cpp:93 rc.cpp:166
 #, fuzzy
 #| msgid "Decimal"
 msgctxt "format to display times"
@@ -46,14 +46,14 @@ msgstr "Каср"
 
 #. i18n: file: csvexportdialog_base.ui:203
 #. i18n: ectx: property (text), item, widget (QComboBox, combosessiontimes)
-#: csvexportdialog.cpp:108 rc.cpp:172
+#: csvexportdialog.cpp:108 rc.cpp:175
 #, fuzzy
 msgid "Session Times"
 msgstr "Вақти сеанс"
 
 #. i18n: file: csvexportdialog_base.ui:220
 #. i18n: ectx: property (text), item, widget (QComboBox, comboalltasks)
-#: csvexportdialog.cpp:109 rc.cpp:175
+#: csvexportdialog.cpp:109 rc.cpp:178
 #, fuzzy
 msgid "All Tasks"
 msgstr "Барои ҳама масъалаҳо"
@@ -91,6 +91,12 @@ msgstr ""
 #: historydialog.cpp:260
 msgid "Please select a task to delete."
 msgstr ""
+
+#: idletimedetector.cpp:113
+#, fuzzy, kde-format
+#| msgid "Desktop has been idle since %1. What should we do?"
+msgid "Desktop has been idle since %1. What do you want to do ?"
+msgstr "Мизи кори аз %1 боз меистад. Чӣ бояд кард?"
 
 #: idletimedetector.cpp:118
 #, kde-format
@@ -441,9 +447,9 @@ msgstr "Нигоҳ доштани рӯйхати ҳар кадом"
 #. i18n: ectx: property (windowTitle), widget (QDialog, EditTaskDialog)
 #: rc.cpp:68
 #, fuzzy
-#| msgid "Print Dialog"
-msgid "Dialog"
-msgstr "Мӯҳр"
+#| msgid "Edit Task"
+msgid "Add/Edit a task"
+msgstr "Таъғири масъала"
 
 #. i18n: file: edittaskdialog.ui:26
 #. i18n: ectx: property (text), widget (QLabel, tasknamelabel)
@@ -472,37 +478,43 @@ msgid ""
 "italic;\">Example:</span> phone with mother</p></body></html>"
 msgstr ""
 
-#. i18n: file: edittaskdialog.ui:57
-#. i18n: ectx: property (whatsThis), widget (QPushButton, edittimespushbutton)
+#. i18n: file: edittaskdialog.ui:51
+#. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:82
-msgid "To change this task's time, you have to edit its event history."
+msgid "Description:"
 msgstr ""
 
-#. i18n: file: edittaskdialog.ui:60
-#. i18n: ectx: property (text), widget (QPushButton, edittimespushbutton)
-#: rc.cpp:85
-#, fuzzy
-#| msgid "Print Times"
-msgid "Edit Times"
-msgstr "Мӯҳр"
-
-#. i18n: file: edittaskdialog.ui:73
+#. i18n: file: edittaskdialog.ui:74
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:88
+#: rc.cpp:85
 msgid "Change time (in minutes, e.g. -60)"
 msgstr ""
 
-#. i18n: file: edittaskdialog.ui:90
+#. i18n: file: edittaskdialog.ui:103
 #. i18n: ectx: property (title), widget (QGroupBox, autotrackinggroupbox)
-#: rc.cpp:91
+#: rc.cpp:88
 #, fuzzy
 #| msgid "A&uto tracking"
 msgid "Auto Tracking"
 msgstr "автомати&пайгузори"
 
+#. i18n: file: edittaskdialog.ui:133
+#. i18n: ectx: property (whatsThis), widget (QPushButton, edittimespushbutton)
+#: rc.cpp:91
+msgid "To change this task's time, you have to edit its event history."
+msgstr ""
+
+#. i18n: file: edittaskdialog.ui:136
+#. i18n: ectx: property (text), widget (QPushButton, edittimespushbutton)
+#: rc.cpp:94
+#, fuzzy
+#| msgid "Print Times"
+msgid "Edit Times"
+msgstr "Мӯҳр"
+
 #. i18n: file: new/mainwindow.ui:50
 #. i18n: ectx: property (title), widget (QMenu, menuFile)
-#: rc.cpp:94
+#: rc.cpp:97
 msgid "File"
 msgstr ""
 
@@ -510,31 +522,31 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QMenu, menuHelp)
 #. i18n: file: new/mainwindow.ui:104
 #. i18n: ectx: property (text), widget (QToolBar, toolBar)
-#: rc.cpp:97 rc.cpp:115
+#: rc.cpp:100 rc.cpp:118
 msgid "Help"
 msgstr ""
 
 #. i18n: file: new/mainwindow.ui:64
 #. i18n: ectx: property (title), widget (QMenu, menuConfigure)
-#: rc.cpp:100
+#: rc.cpp:103
 msgid "Configure"
 msgstr ""
 
 #. i18n: file: new/mainwindow.ui:75
 #. i18n: ectx: property (windowTitle), widget (QToolBar, toolBar)
-#: rc.cpp:103
+#: rc.cpp:106
 msgid "toolBar"
 msgstr ""
 
 #. i18n: file: new/mainwindow.ui:89
 #. i18n: ectx: property (text), widget (QToolBar, toolBar)
-#: rc.cpp:106
+#: rc.cpp:109
 msgid "Load"
 msgstr ""
 
 #. i18n: file: new/mainwindow.ui:94
 #. i18n: ectx: property (text), widget (QToolBar, toolBar)
-#: rc.cpp:109
+#: rc.cpp:112
 #, fuzzy
 #| msgid "Space"
 msgid "Save"
@@ -542,20 +554,20 @@ msgstr "фосила"
 
 #. i18n: file: new/mainwindow.ui:99
 #. i18n: ectx: property (text), widget (QToolBar, toolBar)
-#: rc.cpp:112
+#: rc.cpp:115
 msgid "Quit"
 msgstr ""
 
 #. i18n: file: new/mainwindow.ui:109
 #. i18n: ectx: property (text), widget (QToolBar, toolBar)
-#: rc.cpp:118
+#: rc.cpp:121
 #, fuzzy
 msgid "Configure ktimetracker"
 msgstr "Хронометри KDE"
 
 #. i18n: file: historydialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, historydialog)
-#: rc.cpp:121
+#: rc.cpp:124
 #, fuzzy
 #| msgid "Log history"
 msgid "Edit History"
@@ -563,32 +575,32 @@ msgstr "Журнал"
 
 #. i18n: file: historydialog.ui:23
 #. i18n: ectx: property (text), widget (QPushButton, deletepushbutton)
-#: rc.cpp:124
+#: rc.cpp:127
 #, fuzzy
 msgid "Delete"
 msgstr "Ҷудокунанда"
 
 #. i18n: file: historydialog.ui:33
 #. i18n: ectx: property (text), widget (QPushButton, okpushbutton)
-#: rc.cpp:127
+#: rc.cpp:130
 msgid "Close"
 msgstr ""
 
 #. i18n: file: csvexportdialog_base.ui:13
 #. i18n: ectx: property (windowTitle), widget (KDialog, CSVExportDialogBase)
-#: rc.cpp:130
+#: rc.cpp:133
 msgid "CSV Export"
 msgstr "Содирот ба СSV"
 
 #. i18n: file: csvexportdialog_base.ui:36
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
-#: rc.cpp:133
+#: rc.cpp:136
 msgid "Export to:"
 msgstr "Содирот ба:"
 
 #. i18n: file: csvexportdialog_base.ui:46
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, urlExportTo)
-#: rc.cpp:136
+#: rc.cpp:139
 #, fuzzy
 #| msgid "The file where Karm will write the data."
 msgid "The file where KTimeTracker will write the data."
@@ -596,37 +608,37 @@ msgstr "Файле, ки дар он маълумотҳо нигоҳ дошта 
 
 #. i18n: file: csvexportdialog_base.ui:64
 #. i18n: ectx: property (text), widget (QLabel, quotesLabel)
-#: rc.cpp:139
+#: rc.cpp:142
 msgid "Quotes:"
 msgstr "Нохунакҳо:"
 
 #. i18n: file: csvexportdialog_base.ui:85
 #. i18n: ectx: property (whatsThis), widget (QComboBox, cboQuote)
-#: rc.cpp:142
+#: rc.cpp:145
 msgid "All fields are quoted in the output."
 msgstr "Тамоми заминаҳо дарнохунак нишон дода мешаванд."
 
 #. i18n: file: csvexportdialog_base.ui:89
 #. i18n: ectx: property (text), item, widget (QComboBox, cboQuote)
-#: rc.cpp:145
+#: rc.cpp:148
 msgid "\""
 msgstr "\""
 
 #. i18n: file: csvexportdialog_base.ui:94
 #. i18n: ectx: property (text), item, widget (QComboBox, cboQuote)
-#: rc.cpp:148
+#: rc.cpp:151
 msgid "'"
 msgstr "'"
 
 #. i18n: file: csvexportdialog_base.ui:105
 #. i18n: ectx: property (title), widget (QGroupBox, grpDateRange)
-#: rc.cpp:151
+#: rc.cpp:154
 msgid "Date Range"
 msgstr "Давр"
 
 #. i18n: file: csvexportdialog_base.ui:108
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, grpDateRange)
-#: rc.cpp:154
+#: rc.cpp:157
 msgid ""
 "<p>An inclusive date range for reporting on time card history.  Not enabled "
 "when reporting on totals.</p>"
@@ -636,45 +648,45 @@ msgstr ""
 
 #. i18n: file: csvexportdialog_base.ui:114
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:157
+#: rc.cpp:160
 msgid "From:"
 msgstr "Аз:"
 
 #. i18n: file: csvexportdialog_base.ui:139
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:160
+#: rc.cpp:163
 msgid "To:"
 msgstr "то:"
 
 #. i18n: file: csvexportdialog_base.ui:181
 #. i18n: ectx: property (text), item, widget (QComboBox, combodecimalminutes)
-#: rc.cpp:166
+#: rc.cpp:169
 msgid "Hours:Minutes"
 msgstr "Соат:дақиқаҳо"
 
 #. i18n: file: csvexportdialog_base.ui:198
 #. i18n: ectx: property (text), item, widget (QComboBox, combosessiontimes)
-#: rc.cpp:169
+#: rc.cpp:172
 #, fuzzy
 msgid "All Times"
 msgstr "Партофтани ҳама таймерҳо"
 
 #. i18n: file: csvexportdialog_base.ui:225
 #. i18n: ectx: property (text), item, widget (QComboBox, comboalltasks)
-#: rc.cpp:178
+#: rc.cpp:181
 #, fuzzy
 msgid "Only Selected"
 msgstr "Хуфзи масъала"
 
 #. i18n: file: csvexportdialog_base.ui:241
 #. i18n: ectx: property (title), widget (QGroupBox, grpDelimiter)
-#: rc.cpp:181
+#: rc.cpp:184
 msgid "Delimiter"
 msgstr "Ҷудокунанда"
 
 #. i18n: file: csvexportdialog_base.ui:244
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, grpDelimiter)
-#: rc.cpp:184
+#: rc.cpp:187
 #, fuzzy
 #| msgid "The character used to seperate one field from another in the output."
 msgid "The character used to separate one field from another in the output."
@@ -682,7 +694,7 @@ msgstr "Аломате, ки барои аз ҳамдигар ҷудокунии
 
 #. i18n: file: csvexportdialog_base.ui:256
 #. i18n: ectx: property (text), widget (QRadioButton, radioTab)
-#: rc.cpp:187
+#: rc.cpp:190
 #, fuzzy
 #| msgid "Tab"
 msgctxt "tabulator delimiter"
@@ -691,7 +703,7 @@ msgstr "аломати  табуляция"
 
 #. i18n: file: csvexportdialog_base.ui:263
 #. i18n: ectx: property (text), widget (QRadioButton, radioOther)
-#: rc.cpp:190
+#: rc.cpp:193
 #, fuzzy
 #| msgid "Other:"
 msgctxt "user can set an user defined delimiter"
@@ -700,31 +712,31 @@ msgstr "дигар:"
 
 #. i18n: file: csvexportdialog_base.ui:270
 #. i18n: ectx: property (text), widget (QRadioButton, radioSpace)
-#: rc.cpp:193
+#: rc.cpp:196
 msgid "Space"
 msgstr "фосила"
 
 #. i18n: file: csvexportdialog_base.ui:277
 #. i18n: ectx: property (text), widget (QRadioButton, radioComma)
-#: rc.cpp:196
+#: rc.cpp:199
 msgid "Comma"
 msgstr "вергул"
 
 #. i18n: file: csvexportdialog_base.ui:314
 #. i18n: ectx: property (text), widget (QRadioButton, radioSemicolon)
-#: rc.cpp:199
+#: rc.cpp:202
 msgid "Semicolon"
 msgstr "Нуқта бо вергул"
 
 #. i18n: file: ktimetrackerui.rc:5
 #. i18n: ectx: Menu (file)
-#: rc.cpp:202
+#: rc.cpp:205
 msgid "&File"
 msgstr ""
 
 #. i18n: file: ktimetrackerui.rc:14
 #. i18n: ectx: Menu (import)
-#: rc.cpp:205
+#: rc.cpp:208
 #, fuzzy
 #| msgid "&Export"
 msgid "&Import"
@@ -732,38 +744,38 @@ msgstr "&Содирот"
 
 #. i18n: file: ktimetrackerui.rc:18
 #. i18n: ectx: Menu (export)
-#: rc.cpp:208
+#: rc.cpp:211
 msgid "&Export"
 msgstr "&Содирот"
 
 #. i18n: file: ktimetrackerui.rc:27
 #. i18n: ectx: Menu (clock)
-#: rc.cpp:211
+#: rc.cpp:214
 msgid "&Clock"
 msgstr "&Соат"
 
 #. i18n: file: ktimetrackerui.rc:34
 #. i18n: ectx: Menu (task)
-#: rc.cpp:214
+#: rc.cpp:217
 msgid "&Task"
 msgstr "&Вазифа"
 
 #. i18n: file: ktimetrackerui.rc:45
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:217
+#: rc.cpp:220
 #, fuzzy
 msgid "&Settings"
 msgstr "Танзими намоиш"
 
 #. i18n: file: ktimetrackerui.rc:50
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:220
+#: rc.cpp:223
 msgid "Main Toolbar"
 msgstr ""
 
 #. i18n: file: ktimetrackerui.rc:59
 #. i18n: ectx: ToolBar (taskToolBar)
-#: rc.cpp:223
+#: rc.cpp:226
 #, fuzzy
 #| msgid "Task"
 msgid "Tasks"
@@ -842,7 +854,7 @@ msgctxt "combox entry for lowest priority"
 msgid "9 (lowest)"
 msgstr ""
 
-#: taskview.cpp:300 taskview.cpp:887
+#: taskview.cpp:300 taskview.cpp:888
 msgid ""
 "Error storing new task. Your changes were not saved. Make sure you can edit "
 "your iCalendar file. Also quit all applications using this file and remove "
@@ -869,23 +881,23 @@ msgstr "Натавонистам \"%1\"-ро боз кунам."
 msgid "New Task"
 msgstr "Масъалаи нав"
 
-#: taskview.cpp:872 taskview.cpp:944
+#: taskview.cpp:872 taskview.cpp:946
 msgid "Unnamed Task"
 msgstr "Масъалаи беном"
 
-#: taskview.cpp:926
+#: taskview.cpp:927
 msgid "New Sub Task"
 msgstr "Зермасъалаи нав"
 
-#: taskview.cpp:939
+#: taskview.cpp:940
 msgid "Edit Task"
 msgstr "Таъғири масъала"
 
-#: taskview.cpp:977 taskview.cpp:1018 taskview.cpp:1040
+#: taskview.cpp:979 taskview.cpp:1020 taskview.cpp:1042
 msgid "No task selected."
 msgstr "Масъалаҳои интихобшуда нест."
 
-#: taskview.cpp:1026
+#: taskview.cpp:1028
 #, fuzzy
 #| msgid ""
 #| "Are you sure you want to delete the task named\n"
@@ -899,7 +911,7 @@ msgstr ""
 "\"%1\"-ро ва тамоми таърихи иҷроии онро ҳузф кунед?\n"
 "Таваҷҷӯъ: Тамоми зермасъалаҳо ва таърихи иҷроии он ҳамчунин ҳузф хоҳанд шуд."
 
-#: taskview.cpp:1030
+#: taskview.cpp:1032
 #, fuzzy
 #| msgid "Deleting Task"
 msgid "Deleting Task"
@@ -1273,6 +1285,11 @@ msgid "Hide"
 msgstr ""
 
 #, fuzzy
+#~| msgid "Print Dialog"
+#~ msgid "Dialog"
+#~ msgstr "Мӯҳр"
+
+#, fuzzy
 #~ msgid "delete"
 #~ msgstr "Ҷудокунанда"
 
@@ -1606,9 +1623,6 @@ msgstr ""
 
 #~ msgid "Idle Detection"
 #~ msgstr "Муайян намудани бозисти"
-
-#~ msgid "Desktop has been idle since %1. What should we do?"
-#~ msgstr "Мизи кори аз %1 боз меистад. Чӣ бояд кард?"
 
 #~ msgid "Revert && Stop"
 #~ msgstr "Партофтан ва боздоштан"
