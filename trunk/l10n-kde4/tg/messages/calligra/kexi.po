@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-03 02:36+0200\n"
+"POT-Creation-Date: 2011-10-06 02:38+0200\n"
 "PO-Revision-Date: 2005-12-23 19:53-0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -50,12 +50,6 @@ msgstr ""
 msgid ""
 "Sorts data in descending (from Z to A and from 9 to 0). Data from selected "
 "column is used for sorting."
-msgstr ""
-
-#: core/kexiprojectdata.cpp:192
-#, kde-format
-msgctxt "database connection"
-msgid "(connection %1)"
 msgstr ""
 
 #: core/kexicontexthelp.cpp:34 core/KoContextHelp.cpp:518
@@ -560,6 +554,12 @@ msgstr ""
 msgid ""
 "Could not drop this project. Database connection for this project has been "
 "opened as read only."
+msgstr ""
+
+#: core/kexiprojectdata.cpp:192
+#, kde-format
+msgctxt "database connection"
+msgid "(connection %1)"
 msgstr ""
 
 #: core/kexipart.cpp:69
@@ -2067,10 +2067,10 @@ msgstr ""
 msgid "*.ui|Qt Designer UI Files"
 msgstr "*.ui|QtФайлҳои  UT Дезайнер"
 
-#. i18n: file: main/startup/KexiConnSelector.ui:91
+#. i18n: file: widget/KexiConnectionSelector.ui:91
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
 #: formeditor/form.cpp:438 formeditor/form.cpp:439
-#: plugins/tables/kexitabledesignerview.cpp:351 rc.cpp:71
+#: plugins/tables/kexitabledesignerview.cpp:351 rc.cpp:89
 msgid "Name"
 msgstr "Ном"
 
@@ -4055,360 +4055,81 @@ msgstr "Хат: %1 Сутун: %2 "
 msgid "Read only"
 msgstr ""
 
-#: main/startup/KexiStartupFileWidget.cpp:260
-#: main/startup/KexiStartupFileHandler.cpp:294
-#, fuzzy, kde-format
-msgid "All Supported Files (%1)"
-msgstr "Ҳамаи Файлҳои Kexi "
-
-#: main/startup/KexiStartupFileWidget.cpp:367
-#: main/startup/KexiStartupFileWidget.cpp:409
-#: main/startup/KexiStartupFileHandler.cpp:410
-#: main/startup/KexiStartupFileHandler.cpp:454
-#, fuzzy
-msgid "Enter a filename."
-msgstr "Номи файлро дохил кунед"
-
-#: main/startup/KexiStartupFileWidget.cpp:404
-#: main/startup/KexiStartupFileHandler.cpp:448
-#, fuzzy, kde-format
-msgid "The file \"%1\" does not exist."
-msgstr "Файли \"%1\"вуҷуд надорад."
-
-#: main/startup/KexiStartupFileWidget.cpp:412
-#: main/startup/KexiStartupFileHandler.cpp:458
-#, kde-format
-msgid "The file \"%1\" is not readable."
-msgstr "Файли \"%1\" хондан намешавад."
-
-#: main/startup/KexiStartupFileWidget.cpp:431
-#, kde-format
-msgid ""
-"The file \"%1\" already exists.\n"
-"Do you want to overwrite it?"
-msgstr ""
-"Файли\"%1\" аллакай вуҷуд дорад..\n"
-" Мехоҳед онро аз сари нав нависед?"
-
-#: main/startup/KexiStartupFileWidget.cpp:433
-#: main/startup/KexiStartupFileHandler.cpp:489
-#: plugins/reports/kexireportview.cpp:171
-#: plugins/reports/kexireportview.cpp:199
-#: plugins/reports/kexireportview.cpp:225
-msgid "Overwrite"
-msgstr ""
-
 #: main/startup/KexiStartup_p.cpp:75
 #, kde-format
 msgid "Saving \"%1\" project file to a new \"%2\" database format..."
 msgstr ""
 
-#: main/startup/KexiConnSelector.cpp:78
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:123
-#, fuzzy
-msgid "File"
-msgstr "файл"
-
-#: main/startup/KexiConnSelector.cpp:166
-#, fuzzy
-msgid "Add a new database connection"
-msgstr "Хатоӣ дар алоқаи асоси маълумот"
-
-#: main/startup/KexiConnSelector.cpp:167
-#, fuzzy
-msgid "Edit selected database connection"
-msgstr "Хатоӣ дар алоқаи асоси маълумот"
-
-#: main/startup/KexiConnSelector.cpp:168
-#, fuzzy
-msgid "Remove selected database connections"
-msgstr "&Муносибати интихобшударо ҳаракат диҳед"
-
-#: main/startup/KexiConnSelector.cpp:397
-msgid "&Add"
-msgstr "&Илова"
-
-#: main/startup/KexiConnSelector.cpp:397
-#, fuzzy
-msgid "Add database connection"
-msgstr "Хатоӣ дар алоқаи асоси маълумот"
-
-#: main/startup/KexiConnSelector.cpp:398
-#, fuzzy
-msgid "Add New Database Connection"
-msgstr "Хатоӣ дар алоқаи асоси маълумот"
-
-#: main/startup/KexiConnSelector.cpp:426
-#, fuzzy
-msgid "&Save"
-msgstr "&Нигоҳ доштан Қатор"
-
-#: main/startup/KexiConnSelector.cpp:427
-msgid "Save changes made to this database connection"
+#: main/startup/KexiRecentProjectsModel.cpp:66
+msgid "Opened less than minute ago"
 msgstr ""
 
-#: main/startup/KexiConnSelector.cpp:428
-#, fuzzy
-msgid "Edit Database Connection"
-msgstr "Хатоӣ дар алоқаи асоси маълумот"
-
-#: main/startup/KexiConnSelector.cpp:453
-#, fuzzy, kde-format
-msgid ""
-"Do you want to remove database connection \"%1\" from the list of available "
-"connections?"
-msgstr ""
-"Шумо ҳақиқатан метавонед \"%1\" ин тасвир аз коллексиянобуд кардан \"%2\"?"
-
-#: main/startup/KexiProjectSelector.cpp:75
-#, fuzzy, kde-format
-msgid "File (%1)"
-msgstr "файл"
-
-#: main/startup/KexiProjectSelector.cpp:85
+#: main/startup/KexiRecentProjectsModel.cpp:68
 #, kde-format
-msgctxt "caption: server_info"
-msgid "%1: %2"
-msgstr ""
+msgid "Opened 1 minute ago"
+msgid_plural "Opened %1 minutes ago"
+msgstr[0] ""
+msgstr[1] ""
 
-#: main/startup/KexiProjectSelector.cpp:296
-#: main/startup/KexiStartupDialog.cpp:150
-#: main/startup/KexiStartupDialog.cpp:709
-msgid "Open Recent Project"
-msgstr "Нақшаи Навро Кушоед"
-
-#: main/startup/KexiProjectSelector.cpp:305
-#: main/startup/KexiOpenProjectAssistant.cpp:37
-msgid "Open Project"
-msgstr "Нақшаро кушодан"
-
-#: main/startup/KexiProjectSelector.cpp:309 main/startup/KexiStartup.cpp:171
-#: widget/kexidbconnectionwidget.cpp:400
-#: widget/navigator/KexiProjectListView.cpp:130
-#: widget/navigator/KexiProjectNavigator.cpp:110
-msgid "&Open"
-msgstr "&Кушодан"
-
-#: main/startup/KexiProjectSelector.cpp:310
-#: widget/kexidbconnectionwidget.cpp:400
-#, fuzzy
-msgid "Open Database Connection"
-msgstr "Хатоӣ дар алоқаи асоси маълумот"
-
-#: main/startup/KexiProjectSelector.cpp:312
+#: main/startup/KexiRecentProjectsModel.cpp:70
 #, kde-format
-msgid "Select a project on <b>%1</b> database server to open:"
-msgstr ""
+msgid "Opened 1 hour ago"
+msgid_plural "Opened %1 hours ago"
+msgstr[0] ""
+msgstr[1] ""
 
-#: main/startup/KexiStartup.cpp:145
-#, fuzzy
-msgid "Opening database"
-msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
+#: main/startup/KexiRecentProjectsModel.cpp:74
+#, kde-format
+msgid "Opened yesterday"
+msgid_plural "Opened %1 days ago"
+msgstr[0] ""
+msgstr[1] ""
 
-#: main/startup/KexiStartup.cpp:146
-#, fuzzy
-msgid "Please enter the password."
-msgstr "Марҳамад,номро дохил кунед."
+#: main/startup/KexiRecentProjectsModel.cpp:76
+#, kde-format
+msgid "Opened over a month ago"
+msgid_plural "Opened %1 months ago"
+msgstr[0] ""
+msgstr[1] ""
 
-#: main/startup/KexiStartup.cpp:153
+#: main/startup/KexiRecentProjectsModel.cpp:77
+#, kde-format
+msgid "Opened one year ago"
+msgid_plural "Opened %1 years ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: main/startup/KexiRecentProjectsModel.cpp:110
 #, fuzzy
-msgid "local database server"
+msgid "on local server"
 msgstr "Номи файл барои файли драйвери манбаи асоси маълумот интизор аст. "
 
-#: main/startup/KexiStartup.cpp:155
+#: main/startup/KexiRecentProjectsModel.cpp:113
 #, fuzzy, kde-format
-msgid "Database server: %1"
-msgstr "Хатоии Асосӣ Маълумот"
+msgid "on \"%1\" server"
+msgstr "Номи файл барои файли драйвери манбаи асоси маълумот интизор аст. "
 
-#: main/startup/KexiStartup.cpp:159
-#, fuzzy
-msgctxt "unspecified user"
-msgid "(unspecified)"
-msgstr "Хатогиҳои махсус во мехӯранд"
-
-#: main/startup/KexiStartup.cpp:163
+#: main/startup/KexiRecentProjectsModel.cpp:121
 #, fuzzy, kde-format
-msgid "Username: %1"
-msgstr "Номи истифодакунанда:"
+#| msgid "New database"
+msgctxt "File database <file>"
+msgid "File database %1"
+msgstr "Асоси маълумоти нав"
 
-#: main/startup/KexiStartup.cpp:169
-#, fuzzy
-msgid "&Details"
-msgstr "&Таърих"
-
-#: main/startup/KexiStartup.cpp:294
-#, kde-format
-msgid ""
-"Could not read connection information from connection shortcut file <nobr>"
-"\"%1\"</nobr>.<br><br>Check whether the file has valid contents."
-msgstr ""
-
-#: main/startup/KexiStartup.cpp:307
-#, kde-format
-msgid ""
-"You have specified invalid argument (\"%1\") for \"type\" command-line "
-"option."
-msgstr ""
-
-#: main/startup/KexiStartup.cpp:362
-#, kde-format
-msgid "You have specified invalid port number \"%1\"."
-msgstr ""
-
-#: main/startup/KexiStartup.cpp:379
-msgid "Could not start Kexi application this way."
-msgstr ""
-
-#: main/startup/KexiStartup.cpp:383
-msgid "You have used both \"createdb\" and \"dropdb\" startup options."
-msgstr ""
-
-#: main/startup/KexiStartup.cpp:389
-#, fuzzy
-msgid "No project name specified."
-msgstr "Пурсишро таъйин накардан"
-
-#: main/startup/KexiStartup.cpp:424
-#, fuzzy
-msgid "You have used both \"user-mode\" and \"design-mode\" startup options."
-msgstr ""
-"Шумо метавонед гузоред ҳардуро \"final-mode\" ва \"design-mode\" оғози "
-"ҳуқуқи интихоб.Наметавонед оғози Kexi истифодабариро бо ин роҳ."
-
-#: main/startup/KexiStartup.cpp:446
+#: main/startup/KexiRecentProjectsModel.cpp:126
 #, fuzzy, kde-format
-msgid ""
-"Could not remove project.\n"
-"The file \"%1\" does not exist."
-msgstr "<qt>Файли\"%1\"вуҷуд надорад."
+#| msgid "New database"
+msgctxt "<type> database"
+msgid "%1 database"
+msgstr "Асоси маълумоти нав"
 
-#: main/startup/KexiStartup.cpp:487
-#, fuzzy, kde-format
-msgid ""
-"Could not open shortcut file\n"
-"\"%1\"."
-msgstr "Нақшаи \"%1\"кушода намешавад"
-
-#: main/startup/KexiStartup.cpp:515
-#, fuzzy, kde-format
-msgid ""
-"Could not open connection data file\n"
-"\"%1\"."
-msgstr "Нақшаи \"%1\"кушода намешавад"
-
-#: main/startup/KexiStartup.cpp:599
-msgid ""
-"You have specified a few database objects to be opened automatically, using "
-"startup options.\n"
-"These options will be ignored because it is not available while creating or "
-"dropping projects."
+#: main/startup/KexiWelcomeAssistant.cpp:62
+msgid "Welcome to Kexi"
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:615
-#, kde-format
-msgid "Project \"%1\" created successfully."
+#: main/startup/KexiWelcomeAssistant.cpp:63
+msgid "Select one of the recently used projects to open."
 msgstr ""
-
-#: main/startup/KexiStartup.cpp:624
-#, kde-format
-msgid "Project \"%1\" dropped successfully."
-msgstr ""
-
-#: main/startup/KexiStartup.cpp:753 main/startup/KexiStartup.cpp:785
-#, fuzzy
-msgid "<p>Could not open project.</p>"
-msgstr "Нақшаи \"%1\"кушода намешавад"
-
-#: main/startup/KexiStartup.cpp:754
-#, fuzzy, kde-format
-msgid "<p>The file <nobr>\"%1\"</nobr> does not exist or is not readable.</p>"
-msgstr "Файли \"%1\" хондан намешавад."
-
-#: main/startup/KexiStartup.cpp:786
-#, fuzzy, kde-format
-msgid "<p>The file <nobr>\"%1\"</nobr> is not readable.</p>"
-msgstr "Файли \"%1\" хондан намешавад."
-
-#: main/startup/KexiStartup.cpp:808
-#, kde-format
-msgid ""
-"\"%1\" is an external file of type:\n"
-"\"%2\".\n"
-"Do you want to import the file as a Kexi project?"
-msgstr ""
-
-#: main/startup/KexiStartup.cpp:811
-msgid "Open External File"
-msgstr ""
-
-#: main/startup/KexiStartup.cpp:811
-#, fuzzy
-msgid "Import..."
-msgstr "&Воридот"
-
-#: main/startup/KexiStartup.cpp:832
-#, kde-format
-msgid ""
-"The project file \"%1\" is recognized as compatible with \"%2\" database "
-"driver, while you have asked for \"%3\" database driver to be used.\n"
-"Do you want to use \"%4\" database driver?"
-msgstr ""
-
-#: main/startup/KexiStartup.cpp:855
-#, kde-format
-msgid ""
-"Previous version of database file format (\"%1\") is detected in the \"%2\" "
-"project file.\n"
-"Do you want to convert the project to a new \"%3\" format (recommended)?"
-msgstr ""
-
-#: main/startup/KexiStartup.cpp:864
-#, kde-format
-msgid ""
-"Failed to convert project file \"%1\" to a new \"%2\" format.\n"
-"The file format remains unchanged."
-msgstr ""
-
-#: main/startup/KexiStartup.cpp:877
-msgid "Possible problems:"
-msgstr ""
-
-#: main/startup/KexiStartup.cpp:882
-#, kde-format
-msgid "The file \"%1\" is not recognized as being supported by Kexi."
-msgstr "Файли \"%1\"аз тарафи Kexi.тасдиқ нашудааст."
-
-#: main/startup/KexiStartup.cpp:885
-#, fuzzy, kde-format
-msgid ""
-"Database driver for this file type not found.\n"
-"Detected MIME type: %1"
-msgstr ""
-"<qt>Драйвери асоси маълумот барои ин намуди файл ёфт нашудааст.<p> Навъи "
-"MIME : %1 маълум шудааст"
-
-#: main/startup/KexiStartup.cpp:921 main/startup/KexiStartup.cpp:925
-#, fuzzy, kde-format
-msgid ""
-"Could not load list of available projects for <b>%1</b> database server."
-msgstr "Рӯйхати нақшаҳои нақд барои алоқа бор карда намешаванд \"%1\""
-
-#: main/startup/KexiStartup.cpp:962
-#, fuzzy, kde-format
-msgid ""
-"Failed saving connection data to\n"
-"\"%1\" file."
-msgstr "Бор кардани маълумоти мавзӯъи нодуруст."
-
-#: main/startup/KexiStartupFileHandler.cpp:488
-#, fuzzy
-#| msgid ""
-#| "The file \"%1\" already exists.\n"
-#| "Do you want to overwrite it?"
-msgid "This file already exists. Do you want to overwrite it?"
-msgstr ""
-"Файли\"%1\" аллакай вуҷуд дорад..\n"
-" Мехоҳед онро аз сари нав нависед?"
 
 #: main/startup/KexiNewProjectAssistant.cpp:86
 #, fuzzy
@@ -4589,6 +4310,11 @@ msgstr ""
 msgid "Try Again"
 msgstr ""
 
+#: main/startup/KexiOpenProjectAssistant.cpp:37
+#: widget/KexiProjectSelectorWidget.cpp:305
+msgid "Open Project"
+msgstr "Нақшаро кушодан"
+
 #: main/startup/KexiOpenProjectAssistant.cpp:38
 msgid ""
 "Select project to open. You can choose project stored in file or on database "
@@ -4635,68 +4361,212 @@ msgstr "&Кушодан"
 msgid "Select project on database server <b>%1 (%2)</b> to open."
 msgstr ""
 
-#: main/startup/KexiRecentProjectsModel.cpp:66
-msgid "Opened less than minute ago"
+#: main/startup/KexiStartup.cpp:145
+#, fuzzy
+msgid "Opening database"
+msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
+
+#: main/startup/KexiStartup.cpp:146
+#, fuzzy
+msgid "Please enter the password."
+msgstr "Марҳамад,номро дохил кунед."
+
+#: main/startup/KexiStartup.cpp:153
+#, fuzzy
+msgid "local database server"
+msgstr "Номи файл барои файли драйвери манбаи асоси маълумот интизор аст. "
+
+#: main/startup/KexiStartup.cpp:155
+#, fuzzy, kde-format
+msgid "Database server: %1"
+msgstr "Хатоии Асосӣ Маълумот"
+
+#: main/startup/KexiStartup.cpp:159
+#, fuzzy
+msgctxt "unspecified user"
+msgid "(unspecified)"
+msgstr "Хатогиҳои махсус во мехӯранд"
+
+#: main/startup/KexiStartup.cpp:163
+#, fuzzy, kde-format
+msgid "Username: %1"
+msgstr "Номи истифодакунанда:"
+
+#: main/startup/KexiStartup.cpp:169
+#, fuzzy
+msgid "&Details"
+msgstr "&Таърих"
+
+#: main/startup/KexiStartup.cpp:171 widget/kexidbconnectionwidget.cpp:400
+#: widget/navigator/KexiProjectListView.cpp:130
+#: widget/navigator/KexiProjectNavigator.cpp:110
+#: widget/KexiProjectSelectorWidget.cpp:309
+msgid "&Open"
+msgstr "&Кушодан"
+
+#: main/startup/KexiStartup.cpp:294
+#, kde-format
+msgid ""
+"Could not read connection information from connection shortcut file <nobr>"
+"\"%1\"</nobr>.<br><br>Check whether the file has valid contents."
 msgstr ""
 
-#: main/startup/KexiRecentProjectsModel.cpp:68
+#: main/startup/KexiStartup.cpp:307
 #, kde-format
-msgid "Opened 1 minute ago"
-msgid_plural "Opened %1 minutes ago"
-msgstr[0] ""
-msgstr[1] ""
+msgid ""
+"You have specified invalid argument (\"%1\") for \"type\" command-line "
+"option."
+msgstr ""
 
-#: main/startup/KexiRecentProjectsModel.cpp:70
+#: main/startup/KexiStartup.cpp:362
 #, kde-format
-msgid "Opened 1 hour ago"
-msgid_plural "Opened %1 hours ago"
-msgstr[0] ""
-msgstr[1] ""
+msgid "You have specified invalid port number \"%1\"."
+msgstr ""
 
-#: main/startup/KexiRecentProjectsModel.cpp:74
-#, kde-format
-msgid "Opened yesterday"
-msgid_plural "Opened %1 days ago"
-msgstr[0] ""
-msgstr[1] ""
+#: main/startup/KexiStartup.cpp:379
+msgid "Could not start Kexi application this way."
+msgstr ""
 
-#: main/startup/KexiRecentProjectsModel.cpp:76
-#, kde-format
-msgid "Opened over a month ago"
-msgid_plural "Opened %1 months ago"
-msgstr[0] ""
-msgstr[1] ""
+#: main/startup/KexiStartup.cpp:383
+msgid "You have used both \"createdb\" and \"dropdb\" startup options."
+msgstr ""
 
-#: main/startup/KexiRecentProjectsModel.cpp:77
-#, kde-format
-msgid "Opened one year ago"
-msgid_plural "Opened %1 years ago"
-msgstr[0] ""
-msgstr[1] ""
-
-#: main/startup/KexiRecentProjectsModel.cpp:110
+#: main/startup/KexiStartup.cpp:389
 #, fuzzy
-msgid "on local server"
-msgstr "Номи файл барои файли драйвери манбаи асоси маълумот интизор аст. "
+msgid "No project name specified."
+msgstr "Пурсишро таъйин накардан"
 
-#: main/startup/KexiRecentProjectsModel.cpp:113
-#, fuzzy, kde-format
-msgid "on \"%1\" server"
-msgstr "Номи файл барои файли драйвери манбаи асоси маълумот интизор аст. "
+#: main/startup/KexiStartup.cpp:424
+#, fuzzy
+msgid "You have used both \"user-mode\" and \"design-mode\" startup options."
+msgstr ""
+"Шумо метавонед гузоред ҳардуро \"final-mode\" ва \"design-mode\" оғози "
+"ҳуқуқи интихоб.Наметавонед оғози Kexi истифодабариро бо ин роҳ."
 
-#: main/startup/KexiRecentProjectsModel.cpp:121
+#: main/startup/KexiStartup.cpp:446
 #, fuzzy, kde-format
-#| msgid "New database"
-msgctxt "File database <file>"
-msgid "File database %1"
-msgstr "Асоси маълумоти нав"
+msgid ""
+"Could not remove project.\n"
+"The file \"%1\" does not exist."
+msgstr "<qt>Файли\"%1\"вуҷуд надорад."
 
-#: main/startup/KexiRecentProjectsModel.cpp:126
+#: main/startup/KexiStartup.cpp:487
 #, fuzzy, kde-format
-#| msgid "New database"
-msgctxt "<type> database"
-msgid "%1 database"
-msgstr "Асоси маълумоти нав"
+msgid ""
+"Could not open shortcut file\n"
+"\"%1\"."
+msgstr "Нақшаи \"%1\"кушода намешавад"
+
+#: main/startup/KexiStartup.cpp:515
+#, fuzzy, kde-format
+msgid ""
+"Could not open connection data file\n"
+"\"%1\"."
+msgstr "Нақшаи \"%1\"кушода намешавад"
+
+#: main/startup/KexiStartup.cpp:599
+msgid ""
+"You have specified a few database objects to be opened automatically, using "
+"startup options.\n"
+"These options will be ignored because it is not available while creating or "
+"dropping projects."
+msgstr ""
+
+#: main/startup/KexiStartup.cpp:615
+#, kde-format
+msgid "Project \"%1\" created successfully."
+msgstr ""
+
+#: main/startup/KexiStartup.cpp:624
+#, kde-format
+msgid "Project \"%1\" dropped successfully."
+msgstr ""
+
+#: main/startup/KexiStartup.cpp:753 main/startup/KexiStartup.cpp:785
+#, fuzzy
+msgid "<p>Could not open project.</p>"
+msgstr "Нақшаи \"%1\"кушода намешавад"
+
+#: main/startup/KexiStartup.cpp:754
+#, fuzzy, kde-format
+msgid "<p>The file <nobr>\"%1\"</nobr> does not exist or is not readable.</p>"
+msgstr "Файли \"%1\" хондан намешавад."
+
+#: main/startup/KexiStartup.cpp:786
+#, fuzzy, kde-format
+msgid "<p>The file <nobr>\"%1\"</nobr> is not readable.</p>"
+msgstr "Файли \"%1\" хондан намешавад."
+
+#: main/startup/KexiStartup.cpp:808
+#, kde-format
+msgid ""
+"\"%1\" is an external file of type:\n"
+"\"%2\".\n"
+"Do you want to import the file as a Kexi project?"
+msgstr ""
+
+#: main/startup/KexiStartup.cpp:811
+msgid "Open External File"
+msgstr ""
+
+#: main/startup/KexiStartup.cpp:811
+#, fuzzy
+msgid "Import..."
+msgstr "&Воридот"
+
+#: main/startup/KexiStartup.cpp:832
+#, kde-format
+msgid ""
+"The project file \"%1\" is recognized as compatible with \"%2\" database "
+"driver, while you have asked for \"%3\" database driver to be used.\n"
+"Do you want to use \"%4\" database driver?"
+msgstr ""
+
+#: main/startup/KexiStartup.cpp:855
+#, kde-format
+msgid ""
+"Previous version of database file format (\"%1\") is detected in the \"%2\" "
+"project file.\n"
+"Do you want to convert the project to a new \"%3\" format (recommended)?"
+msgstr ""
+
+#: main/startup/KexiStartup.cpp:864
+#, kde-format
+msgid ""
+"Failed to convert project file \"%1\" to a new \"%2\" format.\n"
+"The file format remains unchanged."
+msgstr ""
+
+#: main/startup/KexiStartup.cpp:877
+msgid "Possible problems:"
+msgstr ""
+
+#: main/startup/KexiStartup.cpp:882
+#, kde-format
+msgid "The file \"%1\" is not recognized as being supported by Kexi."
+msgstr "Файли \"%1\"аз тарафи Kexi.тасдиқ нашудааст."
+
+#: main/startup/KexiStartup.cpp:885
+#, fuzzy, kde-format
+msgid ""
+"Database driver for this file type not found.\n"
+"Detected MIME type: %1"
+msgstr ""
+"<qt>Драйвери асоси маълумот барои ин намуди файл ёфт нашудааст.<p> Навъи "
+"MIME : %1 маълум шудааст"
+
+#: main/startup/KexiStartup.cpp:921 main/startup/KexiStartup.cpp:925
+#, fuzzy, kde-format
+msgid ""
+"Could not load list of available projects for <b>%1</b> database server."
+msgstr "Рӯйхати нақшаҳои нақд барои алоқа бор карда намешаванд \"%1\""
+
+#: main/startup/KexiStartup.cpp:962
+#, fuzzy, kde-format
+msgid ""
+"Failed saving connection data to\n"
+"\"%1\" file."
+msgstr "Бор кардани маълумоти мавзӯъи нодуруст."
 
 #: main/startup/KexiStartupDialog.cpp:146
 #: main/startup/KexiStartupDialog.cpp:313
@@ -4707,6 +4577,12 @@ msgstr "Нақшаро созед"
 #: main/startup/KexiStartupDialog.cpp:598
 msgid "Open Existing Project"
 msgstr "Нақшаи Мавҷудбударо Созед"
+
+#: main/startup/KexiStartupDialog.cpp:150
+#: main/startup/KexiStartupDialog.cpp:709
+#: widget/KexiProjectSelectorWidget.cpp:296
+msgid "Open Recent Project"
+msgstr "Нақшаи Навро Кушоед"
 
 #: main/startup/KexiStartupDialog.cpp:152
 #, fuzzy
@@ -4777,13 +4653,130 @@ msgid ""
 "database project."
 msgstr ""
 
-#: main/startup/KexiWelcomeAssistant.cpp:62
-msgid "Welcome to Kexi"
+#: main/startup/KexiStartupFileHandler.cpp:294 widget/KexiFileWidget.cpp:260
+#, fuzzy, kde-format
+msgid "All Supported Files (%1)"
+msgstr "Ҳамаи Файлҳои Kexi "
+
+#: main/startup/KexiStartupFileHandler.cpp:410
+#: main/startup/KexiStartupFileHandler.cpp:454 widget/KexiFileWidget.cpp:367
+#: widget/KexiFileWidget.cpp:409
+#, fuzzy
+msgid "Enter a filename."
+msgstr "Номи файлро дохил кунед"
+
+#: main/startup/KexiStartupFileHandler.cpp:448 widget/KexiFileWidget.cpp:404
+#, fuzzy, kde-format
+msgid "The file \"%1\" does not exist."
+msgstr "Файли \"%1\"вуҷуд надорад."
+
+#: main/startup/KexiStartupFileHandler.cpp:458 widget/KexiFileWidget.cpp:412
+#, kde-format
+msgid "The file \"%1\" is not readable."
+msgstr "Файли \"%1\" хондан намешавад."
+
+#: main/startup/KexiStartupFileHandler.cpp:488
+#, fuzzy
+#| msgid ""
+#| "The file \"%1\" already exists.\n"
+#| "Do you want to overwrite it?"
+msgid "This file already exists. Do you want to overwrite it?"
+msgstr ""
+"Файли\"%1\" аллакай вуҷуд дорад..\n"
+" Мехоҳед онро аз сари нав нависед?"
+
+#: main/startup/KexiStartupFileHandler.cpp:489
+#: plugins/reports/kexireportview.cpp:171
+#: plugins/reports/kexireportview.cpp:199
+#: plugins/reports/kexireportview.cpp:225 widget/KexiFileWidget.cpp:433
+msgid "Overwrite"
 msgstr ""
 
-#: main/startup/KexiWelcomeAssistant.cpp:63
-msgid "Select one of the recently used projects to open."
+#: main/KexiMainWindow_p.h:867
+msgid "Task-based tabbed toolbar groups commands for application using tabs."
 msgstr ""
+
+#: main/KexiMainWindow_p.h:904
+msgid "Shows bug reporting tool for Kexi application."
+msgstr ""
+
+#: main/KexiMainWindow_p.h:906
+msgid "Activates \"What's This\" tool."
+msgstr ""
+
+#: main/KexiMainWindow_p.h:908 migration/importwizard.cpp:967
+#: migration/importwizard.cpp:974 migration/importwizard.cpp:976
+#: migration/importwizard.cpp:978 migration/importwizard.cpp:980
+#: migration/importwizard.cpp:982
+msgid "Help"
+msgstr ""
+
+#: main/KexiMainWindow_p.h:909
+msgid "Shows Kexi Handbook."
+msgstr ""
+
+#: main/KexiMainWindow_p.h:911
+#, fuzzy
+msgid "Shows information about Kexi application."
+msgstr " Наметавонад оғозкунии нақшаи \"%1\"дар охири шакл."
+
+#: main/KexiMainWindow_p.h:913
+msgid "Shows information about K Desktop Environment."
+msgstr ""
+
+#: main/KexiMainWindow_p.h:918
+msgid "Show Help menu"
+msgstr ""
+
+#: main/KexiMainWindow_p.h:919
+msgid "Shows Help menu"
+msgstr ""
+
+#: main/KexiMainWindow_p.h:930
+msgctxt "Help shortcut"
+msgid "Alt+H"
+msgstr ""
+
+#: main/KexiMainWindow_p.h:937
+msgid "Search"
+msgstr ""
+
+#: main/KexiMainWindow_p.h:944
+#, fuzzy
+msgctxt "File menu"
+msgid "&File"
+msgstr "файл"
+
+#: main/KexiMainWindow_p.h:966
+msgid "External Data"
+msgstr ""
+
+#: main/KexiMainWindow_p.h:994
+#, fuzzy
+msgid "Tools"
+msgstr "Ҳамагӣ"
+
+#: main/KexiMainWindow_p.h:999
+#, fuzzy
+#| msgid "&Design"
+msgid "Form Design"
+msgstr "&Нақша кашидан"
+
+#: main/KexiMainWindow_p.h:1002
+#, fuzzy
+#| msgid "&Design"
+msgid "Report Design"
+msgstr "&Нақша кашидан"
+
+#: main/KexiMainWindow_p.h:1664
+#, fuzzy, kde-format
+msgid "Could not start %1 application."
+msgstr " Наметавонад оғозкунии нақшаи \"%1\"дар охири шакл."
+
+#: main/KexiMainWindow_p.h:1665
+#, fuzzy, kde-format
+msgid "Command \"%1\" failed."
+msgstr "Нигоҳ доред \"%1\" мавзӯъ нодуруст."
 
 #: main/KexiMainWindow.cpp:181
 #, fuzzy
@@ -5621,92 +5614,6 @@ msgstr ""
 "Шумо меҳоҳед ягон дигаргуниҳое, ки дар матни SQL дигаргун карда шуданд, "
 "бекор кунед?"
 
-#: main/KexiMainWindow_p.h:867
-msgid "Task-based tabbed toolbar groups commands for application using tabs."
-msgstr ""
-
-#: main/KexiMainWindow_p.h:904
-msgid "Shows bug reporting tool for Kexi application."
-msgstr ""
-
-#: main/KexiMainWindow_p.h:906
-msgid "Activates \"What's This\" tool."
-msgstr ""
-
-#: main/KexiMainWindow_p.h:908 migration/importwizard.cpp:967
-#: migration/importwizard.cpp:974 migration/importwizard.cpp:976
-#: migration/importwizard.cpp:978 migration/importwizard.cpp:980
-#: migration/importwizard.cpp:982
-msgid "Help"
-msgstr ""
-
-#: main/KexiMainWindow_p.h:909
-msgid "Shows Kexi Handbook."
-msgstr ""
-
-#: main/KexiMainWindow_p.h:911
-#, fuzzy
-msgid "Shows information about Kexi application."
-msgstr " Наметавонад оғозкунии нақшаи \"%1\"дар охири шакл."
-
-#: main/KexiMainWindow_p.h:913
-msgid "Shows information about K Desktop Environment."
-msgstr ""
-
-#: main/KexiMainWindow_p.h:918
-msgid "Show Help menu"
-msgstr ""
-
-#: main/KexiMainWindow_p.h:919
-msgid "Shows Help menu"
-msgstr ""
-
-#: main/KexiMainWindow_p.h:930
-msgctxt "Help shortcut"
-msgid "Alt+H"
-msgstr ""
-
-#: main/KexiMainWindow_p.h:937
-msgid "Search"
-msgstr ""
-
-#: main/KexiMainWindow_p.h:944
-#, fuzzy
-msgctxt "File menu"
-msgid "&File"
-msgstr "файл"
-
-#: main/KexiMainWindow_p.h:966
-msgid "External Data"
-msgstr ""
-
-#: main/KexiMainWindow_p.h:994
-#, fuzzy
-msgid "Tools"
-msgstr "Ҳамагӣ"
-
-#: main/KexiMainWindow_p.h:999
-#, fuzzy
-#| msgid "&Design"
-msgid "Form Design"
-msgstr "&Нақша кашидан"
-
-#: main/KexiMainWindow_p.h:1002
-#, fuzzy
-#| msgid "&Design"
-msgid "Report Design"
-msgstr "&Нақша кашидан"
-
-#: main/KexiMainWindow_p.h:1664
-#, fuzzy, kde-format
-msgid "Could not start %1 application."
-msgstr " Наметавонад оғозкунии нақшаи \"%1\"дар охири шакл."
-
-#: main/KexiMainWindow_p.h:1665
-#, fuzzy, kde-format
-msgid "Command \"%1\" failed."
-msgstr "Нигоҳ доред \"%1\" мавзӯъ нодуруст."
-
 #: migration/importoptionsdlg.cpp:45
 msgid "Advanced Import Options"
 msgstr ""
@@ -5774,12 +5681,12 @@ msgstr "Драйвери асоси маълумоти\"%1\"таъмин кар�
 msgid "Column %1"
 msgstr "Сутун"
 
-#. i18n: file: main/startup/KexiConnSelector.ui:96
+#. i18n: file: widget/KexiConnectionSelector.ui:96
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
-#. i18n: file: main/startup/KexiProjectSelector.ui:99
+#. i18n: file: widget/KexiProjectSelector.ui:99
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
 #: migration/AlterSchemaWidget.cpp:43
-#: plugins/tables/kexitabledesignerview.cpp:356 rc.cpp:74 rc.cpp:108
+#: plugins/tables/kexitabledesignerview.cpp:356 rc.cpp:92 rc.cpp:120
 msgid "Type"
 msgstr "Шакл"
 
@@ -5788,6 +5695,50 @@ msgstr "Шакл"
 #: plugins/tables/kexitabledesignerview.cpp:430
 msgid "Primary Key"
 msgstr "Калиди аввалиндараҷа"
+
+#: migration/keximigrate.cpp:78 migration/keximigrate.cpp:128
+#: migration/keximigrate.cpp:234 migration/keximigrate.cpp:304
+#, fuzzy, kde-format
+msgid "Could not create database \"%1\"."
+msgstr "Драйвери асоси маълумоти\"%1\"таъмин карда намешавад."
+
+#: migration/keximigrate.cpp:151
+#, fuzzy, kde-format
+msgid "Could not get a list of table names for data source \"%1\"."
+msgstr "Рӯйхати нақшаҳои нақд барои алоқа бор карда намешаванд \"%1\""
+
+#: migration/keximigrate.cpp:161
+#, kde-format
+msgid "No tables to import found in data source \"%1\"."
+msgstr ""
+
+#: migration/keximigrate.cpp:205
+#, kde-format
+msgid ""
+"Could not import project from data source \"%1\". Error reading table \"%2\"."
+msgstr ""
+
+#: migration/keximigrate.cpp:332
+#, fuzzy, kde-format
+msgid "Could not import project from data source \"%1\"."
+msgstr "Нақшаи \"%1\"сохта намешавад"
+
+#: migration/keximigrate.cpp:408
+#, fuzzy, kde-format
+msgid "Could not import data from data source \"%1\"."
+msgstr "Драйвери асоси маълумоти\"%1\"ёфт намешавад."
+
+#: migration/keximigrate.cpp:488
+#, fuzzy
+msgid "Field Type"
+msgstr "Навъи ҳошия:"
+
+#: migration/keximigrate.cpp:489
+#, kde-format
+msgid ""
+"The data type for %1 could not be determined. Please select one of the "
+"following data types"
+msgstr ""
 
 #: migration/importtablewizard.cpp:124
 msgid ""
@@ -5873,50 +5824,6 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "Unable to create table [%1]"
 msgstr "Драйвери асоси маълумоти\"%1\"таъмин карда намешавад."
-
-#: migration/keximigrate.cpp:78 migration/keximigrate.cpp:128
-#: migration/keximigrate.cpp:234 migration/keximigrate.cpp:304
-#, fuzzy, kde-format
-msgid "Could not create database \"%1\"."
-msgstr "Драйвери асоси маълумоти\"%1\"таъмин карда намешавад."
-
-#: migration/keximigrate.cpp:151
-#, fuzzy, kde-format
-msgid "Could not get a list of table names for data source \"%1\"."
-msgstr "Рӯйхати нақшаҳои нақд барои алоқа бор карда намешаванд \"%1\""
-
-#: migration/keximigrate.cpp:161
-#, kde-format
-msgid "No tables to import found in data source \"%1\"."
-msgstr ""
-
-#: migration/keximigrate.cpp:205
-#, kde-format
-msgid ""
-"Could not import project from data source \"%1\". Error reading table \"%2\"."
-msgstr ""
-
-#: migration/keximigrate.cpp:332
-#, fuzzy, kde-format
-msgid "Could not import project from data source \"%1\"."
-msgstr "Нақшаи \"%1\"сохта намешавад"
-
-#: migration/keximigrate.cpp:408
-#, fuzzy, kde-format
-msgid "Could not import data from data source \"%1\"."
-msgstr "Драйвери асоси маълумоти\"%1\"ёфт намешавад."
-
-#: migration/keximigrate.cpp:488
-#, fuzzy
-msgid "Field Type"
-msgstr "Навъи ҳошия:"
-
-#: migration/keximigrate.cpp:489
-#, kde-format
-msgid ""
-"The data type for %1 could not be determined. Please select one of the "
-"following data types"
-msgstr ""
 
 #: migration/importwizard.cpp:68
 #, fuzzy
@@ -6663,122 +6570,6 @@ msgstr "Ҷадвали \"%1\" аллакай вуҷуд дорад."
 msgid "Widgets"
 msgstr "Васеъӣ"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:65
-msgid "Copy"
-msgstr ""
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:68
-#: widget/navigator/KexiProjectListView.cpp:202
-#: widget/navigator/KexiProjectNavigator.cpp:173
-#, fuzzy
-msgid "Export"
-msgstr "&Содирот"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:78
-#, fuzzy
-msgid "Copy Data From Table to Clipboard"
-msgstr "Дар хотир нусҳа бардоред"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:79
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:87
-msgid "Copying data from table:"
-msgstr ""
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:81
-msgid "Export Data From Table to CSV File"
-msgstr ""
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:82
-msgid "Exporting data from table:"
-msgstr ""
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:86
-#, fuzzy
-msgid "Copy Data From Query to Clipboard"
-msgstr "Дар хотир нусҳа бардоред"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:89
-msgid "Export Data From Query to CSV File"
-msgstr ""
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:90
-msgid "Exporting data from query:"
-msgstr ""
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:94
-#, fuzzy
-msgid "Could not open data for exporting."
-msgstr "Наметавонад номи роҳхати холиро барои ин ашё"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:115
-msgid "Enter Name of File You Want to Save Data To"
-msgstr ""
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:143
-msgid "To CSV file:"
-msgstr ""
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:143
-#, fuzzy
-msgid "To clipboard:"
-msgstr "Дар хотир нусҳа бардоред"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:156
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:367
-msgid "Show Options >>"
-msgstr ""
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:178
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:224
-msgid "Delimiter:"
-msgstr ""
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:187
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:264
-#, fuzzy
-msgid "Text quote:"
-msgstr "Намоиши Матн"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:211
-msgid "Add column names as the first row"
-msgstr ""
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:217
-msgid "Always use above options for copying"
-msgstr ""
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:218
-msgid "Always use above options for exporting"
-msgstr ""
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:225
-msgid "Copying"
-msgstr ""
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:225
-#, fuzzy
-msgid "Exporting"
-msgstr "&Содирот"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:284
-#, kde-format
-msgid "(rows: %1, columns: %2)"
-msgstr ""
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:286
-#, kde-format
-msgid "(columns: %1)"
-msgstr ""
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:373
-msgid "Hide Options <<"
-msgstr ""
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:389
-#, fuzzy
-msgid "Defaults"
-msgstr "пешфарз"
-
 #: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:100
 msgid "CSV Import Options"
 msgstr ""
@@ -6885,10 +6676,21 @@ msgstr ""
 msgid "Preview of data from clipboard"
 msgstr ""
 
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:224
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:178
+msgid "Delimiter:"
+msgstr ""
+
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:256
 #, fuzzy
 msgid "Primary key"
 msgstr "Калиди аввалиндараҷа"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:264
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:187
+#, fuzzy
+msgid "Text quote:"
+msgstr "Намоиши Матн"
 
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:288
 msgid "Ignore duplicated delimiters"
@@ -7023,6 +6825,111 @@ msgstr ""
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:1729
 msgid "Not all rows are visible on this preview"
 msgstr ""
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:65
+msgid "Copy"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:68
+#: widget/navigator/KexiProjectListView.cpp:202
+#: widget/navigator/KexiProjectNavigator.cpp:173
+#, fuzzy
+msgid "Export"
+msgstr "&Содирот"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:78
+#, fuzzy
+msgid "Copy Data From Table to Clipboard"
+msgstr "Дар хотир нусҳа бардоред"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:79
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:87
+msgid "Copying data from table:"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:81
+msgid "Export Data From Table to CSV File"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:82
+msgid "Exporting data from table:"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:86
+#, fuzzy
+msgid "Copy Data From Query to Clipboard"
+msgstr "Дар хотир нусҳа бардоред"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:89
+msgid "Export Data From Query to CSV File"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:90
+msgid "Exporting data from query:"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:94
+#, fuzzy
+msgid "Could not open data for exporting."
+msgstr "Наметавонад номи роҳхати холиро барои ин ашё"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:115
+msgid "Enter Name of File You Want to Save Data To"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:143
+msgid "To CSV file:"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:143
+#, fuzzy
+msgid "To clipboard:"
+msgstr "Дар хотир нусҳа бардоред"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:156
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:367
+msgid "Show Options >>"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:211
+msgid "Add column names as the first row"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:217
+msgid "Always use above options for copying"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:218
+msgid "Always use above options for exporting"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:225
+msgid "Copying"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:225
+#, fuzzy
+msgid "Exporting"
+msgstr "&Содирот"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:284
+#, kde-format
+msgid "(rows: %1, columns: %2)"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:286
+#, kde-format
+msgid "(columns: %1)"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:373
+msgid "Hide Options <<"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:389
+#, fuzzy
+msgid "Defaults"
+msgstr "пешфарз"
 
 #: plugins/queries/kexiquerydesignersql.cpp:117
 msgid "SQL Query Text"
@@ -7619,6 +7526,12 @@ msgstr ""
 msgid "Script \"%1\" already exists."
 msgstr "Ҷадвали \"%1\" аллакай вуҷуд дорад."
 
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:123
+#: widget/KexiConnectionSelectorWidget.cpp:88
+#, fuzzy
+msgid "File"
+msgstr "файл"
+
 #: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:125
 #: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:126
 #, fuzzy
@@ -8092,12 +8005,6 @@ msgstr "Тайер намудани нақшаи нав"
 msgid "Record"
 msgstr "Ҳисоб илова кунед"
 
-#: shapes/relationdesign/kexirelationdesigntool.cpp:95
-#: widget/kexidbconnectionwidget.cpp:373
-#, fuzzy
-msgid "Open Database"
-msgstr "Асоси маълумоти нав"
-
 #: shapes/relationdesign/kexirelationdesigntoolfactory.cpp:26
 #, fuzzy
 #| msgid "Relationship"
@@ -8115,6 +8022,12 @@ msgstr "Муносибатҳо"
 #| msgid "Relationship"
 msgid "A kexi relation design shape"
 msgstr "Муносибатҳо"
+
+#: shapes/relationdesign/kexirelationdesigntool.cpp:100
+#: widget/kexidbconnectionwidget.cpp:373
+#, fuzzy
+msgid "Open Database"
+msgstr "Асоси маълумоти нав"
 
 #: widget/KexiObjectInfoLabel.cpp:106
 #, kde-format
@@ -8260,11 +8173,11 @@ msgid ""
 "is provided."
 msgstr ""
 
-#. i18n: file: main/startup/KexiProjectSelector.ui:88
+#. i18n: file: widget/KexiProjectSelector.ui:88
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
 #. i18n: file: widget/kexidbconnectionwidget.ui:289
 #. i18n: ectx: property (title), widget (Q3GroupBox, dbGroupBox)
-#: widget/kexidbconnectionwidget.cpp:146 rc.cpp:105 rc.cpp:165
+#: widget/kexidbconnectionwidget.cpp:146 rc.cpp:117 rc.cpp:159
 msgid "Database"
 msgstr "Асоси маълумот"
 
@@ -8282,6 +8195,12 @@ msgstr "&Таърих"
 #, fuzzy
 msgid "Connect to a Database Server"
 msgstr "Нақшаи нав дар сервери асоси маълумот ғун шудааст"
+
+#: widget/kexidbconnectionwidget.cpp:400
+#: widget/KexiProjectSelectorWidget.cpp:310
+#, fuzzy
+msgid "Open Database Connection"
+msgstr "Хатоӣ дар алоқаи асоси маълумот"
 
 #: widget/kexiscrollview.cpp:362
 #, fuzzy
@@ -8301,7 +8220,7 @@ msgstr "Бор кардани тасвири KDE аз рӯи ном"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:295
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: widget/pixmapcollection.cpp:156 rc.cpp:168
+#: widget/pixmapcollection.cpp:156 rc.cpp:162
 msgid "&Name:"
 msgstr "&Ном:"
 
@@ -8792,6 +8711,22 @@ msgstr "Кушодан бо &Намоиши Матн"
 msgid "Starts designing of the object in the list in text view."
 msgstr "Мавзӯъи интихоботии равон нобуд кунед."
 
+#: widget/KexiProjectSelectorWidget.cpp:75
+#, fuzzy, kde-format
+msgid "File (%1)"
+msgstr "файл"
+
+#: widget/KexiProjectSelectorWidget.cpp:85
+#, kde-format
+msgctxt "caption: server_info"
+msgid "%1: %2"
+msgstr ""
+
+#: widget/KexiProjectSelectorWidget.cpp:312
+#, kde-format
+msgid "Select a project on <b>%1</b> database server to open:"
+msgstr ""
+
 #: widget/kexiqueryparameters.cpp:40
 #, fuzzy
 msgctxt "Enter Query Parameter Value"
@@ -8810,6 +8745,66 @@ msgstr "Ҳа/Не"
 msgctxt "Boolean False - No"
 msgid "No"
 msgstr "Хеҷ"
+
+#: widget/KexiConnectionSelectorWidget.cpp:62
+#, fuzzy
+msgid "Add a new database connection"
+msgstr "Хатоӣ дар алоқаи асоси маълумот"
+
+#: widget/KexiConnectionSelectorWidget.cpp:63
+#, fuzzy
+msgid "Edit selected database connection"
+msgstr "Хатоӣ дар алоқаи асоси маълумот"
+
+#: widget/KexiConnectionSelectorWidget.cpp:64
+#, fuzzy
+msgid "Remove selected database connections"
+msgstr "&Муносибати интихобшударо ҳаракат диҳед"
+
+#: widget/KexiConnectionSelectorWidget.cpp:394
+msgid "&Add"
+msgstr "&Илова"
+
+#: widget/KexiConnectionSelectorWidget.cpp:394
+#, fuzzy
+msgid "Add database connection"
+msgstr "Хатоӣ дар алоқаи асоси маълумот"
+
+#: widget/KexiConnectionSelectorWidget.cpp:395
+#, fuzzy
+msgid "Add New Database Connection"
+msgstr "Хатоӣ дар алоқаи асоси маълумот"
+
+#: widget/KexiConnectionSelectorWidget.cpp:423
+#, fuzzy
+msgid "&Save"
+msgstr "&Нигоҳ доштан Қатор"
+
+#: widget/KexiConnectionSelectorWidget.cpp:424
+msgid "Save changes made to this database connection"
+msgstr ""
+
+#: widget/KexiConnectionSelectorWidget.cpp:425
+#, fuzzy
+msgid "Edit Database Connection"
+msgstr "Хатоӣ дар алоқаи асоси маълумот"
+
+#: widget/KexiConnectionSelectorWidget.cpp:450
+#, fuzzy, kde-format
+msgid ""
+"Do you want to remove database connection \"%1\" from the list of available "
+"connections?"
+msgstr ""
+"Шумо ҳақиқатан метавонед \"%1\" ин тасвир аз коллексиянобуд кардан \"%2\"?"
+
+#: widget/KexiFileWidget.cpp:431
+#, kde-format
+msgid ""
+"The file \"%1\" already exists.\n"
+"Do you want to overwrite it?"
+msgstr ""
+"Файли\"%1\" аллакай вуҷуд дорад..\n"
+" Мехоҳед онро аз сари нав нависед?"
 
 #. i18n: file: main/kexifinddialog.ui:19
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
@@ -8929,9 +8924,55 @@ msgstr ""
 "Агар мехоҳед нақшаи мавҷудбударо дар сервер нисбат ба файл тезтар ёбед, "
 "нуқтаи \"Пешрав\" -ро зер кунед. "
 
-#. i18n: file: main/startup/KexiConnSelector.ui:50
-#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: main/startup/KexiProjectStorageTypeSelectionPage.ui:22
+#. i18n: ectx: property (text), widget (KexiCommandLinkButton, btn_file)
 #: rc.cpp:66
+#, fuzzy
+msgctxt "New Project Stored in File"
+msgid "File"
+msgstr "файл"
+
+#. i18n: file: main/startup/KexiProjectStorageTypeSelectionPage.ui:25
+#. i18n: ectx: property (description), widget (KexiCommandLinkButton, btn_file)
+#: rc.cpp:69
+#, fuzzy
+msgid "New Project Stored in File"
+msgstr "Нақшаи нав дар файл ғун шудааст"
+
+#. i18n: file: main/startup/KexiProjectStorageTypeSelectionPage.ui:32
+#. i18n: ectx: property (text), widget (KexiCommandLinkButton, btn_server)
+#: rc.cpp:72
+#, fuzzy
+#| msgid "Server result name:"
+msgctxt "New Project Stored on Database Server"
+msgid "Server"
+msgstr "Номи натихчаи сервер:"
+
+#. i18n: file: main/startup/KexiProjectStorageTypeSelectionPage.ui:35
+#. i18n: ectx: property (description), widget (KexiCommandLinkButton, btn_server)
+#: rc.cpp:75
+#, fuzzy
+msgid "New Project Stored on Database Server"
+msgstr "Нақшаи нав дар сервери асоси маълумот ғун шудааст"
+
+#. i18n: file: main/startup/KexiServerDBNamePage.ui:22
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rc.cpp:78
+#, fuzzy
+msgid "Project title:"
+msgstr "Саҳифа:"
+
+#. i18n: file: main/startup/KexiServerDBNamePage.ui:51
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: rc.cpp:81
+#, fuzzy
+#| msgid "Project's database name: "
+msgid "Project's database name:"
+msgstr "Номи нақшаи асоси маълумот: "
+
+#. i18n: file: widget/KexiConnectionSelector.ui:50
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:84
 #, fuzzy
 msgid ""
 "<b>Select Existing Database Server's Connection From the List Below</b>\n"
@@ -8945,57 +8986,41 @@ msgstr ""
 "аст. Ҳамчунин шумо метавонед алоқаҳои таҳрир ваҳаракатро аз рӯйхат илова "
 "намоед.\n"
 
-#. i18n: file: main/startup/KexiConnSelector.ui:101
+#. i18n: file: widget/KexiConnectionSelector.ui:101
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
-#: rc.cpp:77
+#: rc.cpp:95
 msgid "Server Information"
 msgstr "Ахбороти сервер"
 
-#. i18n: file: main/startup/KexiConnSelector.ui:115
+#. i18n: file: widget/KexiConnectionSelector.ui:115
 #. i18n: ectx: property (title), widget (QGroupBox, descGroupBox)
-#: rc.cpp:80
+#: rc.cpp:98
 #, fuzzy
 msgid "Description"
 msgstr "&Тасвирот:"
 
-#. i18n: file: main/startup/KexiConnSelector.ui:152
+#. i18n: file: widget/KexiConnectionSelector.ui:152
 #. i18n: ectx: property (text), widget (QPushButton, btn_add)
-#: rc.cpp:83
+#: rc.cpp:101
 msgid "&Add..."
 msgstr "&Илова..."
 
-#. i18n: file: main/startup/KexiConnSelector.ui:165
+#. i18n: file: widget/KexiConnectionSelector.ui:165
 #. i18n: ectx: property (text), widget (QPushButton, btn_edit)
-#: rc.cpp:86
+#: rc.cpp:104
 msgid "&Edit..."
 msgstr ""
 
-#. i18n: file: main/startup/KexiConnSelector.ui:178
+#. i18n: file: widget/KexiConnectionSelector.ui:178
 #. i18n: ectx: property (text), widget (QPushButton, btn_remove)
-#: rc.cpp:89
+#: rc.cpp:107
 #, fuzzy
 msgid "&Remove"
 msgstr "&Номгузории дубора"
 
-#. i18n: file: main/startup/KexiDBTitlePage.ui:22
+#. i18n: file: widget/KexiProjectSelector.ui:36
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:92
-#, fuzzy
-#| msgid "Project caption: "
-msgid "Project title: "
-msgstr "Сарлавҳаи нақша: "
-
-#. i18n: file: main/startup/KexiDBTitlePage.ui:54
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:95
-#, fuzzy
-#| msgid "Project Name"
-msgid "Project filename:"
-msgstr "Номи Нақша"
-
-#. i18n: file: main/startup/KexiProjectSelector.ui:36
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:98
+#: rc.cpp:110
 msgid ""
 "<b>There are Kexi projects you have recently opened.</b> Select one you wish "
 "to open:\n"
@@ -9003,93 +9028,47 @@ msgstr ""
 "Ин ҷо якчанд нақшаҳои Kexi ҳастанд,ки чанде пеш шумо кушодед.</b> Якеро ,ки "
 "хоҳиши кушодан доред,интихоб кунед:\n"
 
-#. i18n: file: main/startup/KexiProjectSelector.ui:77
+#. i18n: file: widget/KexiProjectSelector.ui:77
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
-#: rc.cpp:102
+#: rc.cpp:114
 msgid "Project Name"
 msgstr "Номи Нақша"
 
-#. i18n: file: main/startup/KexiProjectSelector.ui:110
+#. i18n: file: widget/KexiProjectSelector.ui:110
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
-#: rc.cpp:111
+#: rc.cpp:123
 msgid "Connection"
 msgstr "Алоқа"
 
-#. i18n: file: main/startup/KexiProjectStorageTypeSelectionPage.ui:22
-#. i18n: ectx: property (text), widget (KexiCommandLinkButton, btn_file)
-#: rc.cpp:114
-#, fuzzy
-msgctxt "New Project Stored in File"
-msgid "File"
-msgstr "файл"
-
-#. i18n: file: main/startup/KexiProjectStorageTypeSelectionPage.ui:25
-#. i18n: ectx: property (description), widget (KexiCommandLinkButton, btn_file)
-#: rc.cpp:117
-#, fuzzy
-msgid "New Project Stored in File"
-msgstr "Нақшаи нав дар файл ғун шудааст"
-
-#. i18n: file: main/startup/KexiProjectStorageTypeSelectionPage.ui:32
-#. i18n: ectx: property (text), widget (KexiCommandLinkButton, btn_server)
-#: rc.cpp:120
-#, fuzzy
-#| msgid "Server result name:"
-msgctxt "New Project Stored on Database Server"
-msgid "Server"
-msgstr "Номи натихчаи сервер:"
-
-#. i18n: file: main/startup/KexiProjectStorageTypeSelectionPage.ui:35
-#. i18n: ectx: property (description), widget (KexiCommandLinkButton, btn_server)
-#: rc.cpp:123
-#, fuzzy
-msgid "New Project Stored on Database Server"
-msgstr "Нақшаи нав дар сервери асоси маълумот ғун шудааст"
-
-#. i18n: file: main/startup/KexiServerDBNamePage.ui:22
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:126
-#, fuzzy
-msgid "Project title:"
-msgstr "Саҳифа:"
-
-#. i18n: file: main/startup/KexiServerDBNamePage.ui:51
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:129
-#, fuzzy
-#| msgid "Project's database name: "
-msgid "Project's database name:"
-msgstr "Номи нақшаи асоси маълумот: "
-
 #. i18n: file: widget/kexidbconnectionwidget.ui:89
 #. i18n: ectx: property (title), widget (Q3ButtonGroup, locationBGrp)
-#: rc.cpp:132
+#: rc.cpp:126
 #, fuzzy
 msgid "Database Server"
 msgstr "Хатоии Асосӣ Маълумот"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:118
 #. i18n: ectx: property (text), widget (QLabel, portLbl)
-#: rc.cpp:135
+#: rc.cpp:129
 msgid "Port:"
 msgstr "Бандар:"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:131
 #. i18n: ectx: property (text), widget (QRadioButton, localhostRBtn)
-#: rc.cpp:138
+#: rc.cpp:132
 #, fuzzy
 msgid "Local server"
 msgstr "Номи файл барои файли драйвери манбаи асоси маълумот интизор аст. "
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:160
 #. i18n: ectx: property (text), widget (QLabel, hostLbl)
-#: rc.cpp:141
+#: rc.cpp:135
 msgid "&Hostname:"
 msgstr "&Номи хост:"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:173
 #. i18n: ectx: property (text), widget (QCheckBox, chkPortDefault)
-#: rc.cpp:144
+#: rc.cpp:138
 #, fuzzy
 msgctxt "port: default"
 msgid "Default"
@@ -9097,57 +9076,57 @@ msgstr "пешфарз"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:183
 #. i18n: ectx: property (text), widget (QRadioButton, remotehostRBtn)
-#: rc.cpp:147
+#: rc.cpp:141
 #, fuzzy
 msgid "Remote server"
 msgstr "Дурдаст"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:196
 #. i18n: ectx: property (text), widget (QLabel, lblEngine)
-#: rc.cpp:150
+#: rc.cpp:144
 msgid "&Engine:"
 msgstr "&Муҳаррик:"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:231
 #. i18n: ectx: property (title), widget (Q3GroupBox, authenticationGBox)
-#: rc.cpp:153
+#: rc.cpp:147
 msgid "Authentication"
 msgstr "Барпокунӣ"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:237
 #. i18n: ectx: property (text), widget (QLabel, userLbl)
-#: rc.cpp:156
+#: rc.cpp:150
 msgid "&Username:"
 msgstr "&Номи истифодакунанда:"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:253
 #. i18n: ectx: property (text), widget (QLabel, passwordLbl)
-#: rc.cpp:159
+#: rc.cpp:153
 msgid "&Password:"
 msgstr "&Гузарвожа:"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:273
 #. i18n: ectx: property (text), widget (QCheckBox, chkSavePassword)
-#: rc.cpp:162
+#: rc.cpp:156
 #, fuzzy
 msgid "Save password in the shortcut file"
 msgstr "Номи шабро дар файли нақша нигоҳ доред"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:311
 #. i18n: ectx: property (text), widget (QLabel, titleLabel)
-#: rc.cpp:171
+#: rc.cpp:165
 msgid "&Title (optional):"
 msgstr ""
 
 #. i18n: file: widget/kexidbconnectionwidgetdetails.ui:27
 #. i18n: ectx: property (text), widget (QCheckBox, chkUseSocket)
-#: rc.cpp:174
+#: rc.cpp:168
 msgid "Use socket &file instead of TCP/IP port:"
 msgstr ""
 
 #. i18n: file: widget/kexidbconnectionwidgetdetails.ui:66
 #. i18n: ectx: property (text), widget (QCheckBox, chkSocketDefault)
-#: rc.cpp:177
+#: rc.cpp:171
 #, fuzzy
 msgctxt "socket: default"
 msgid "Default"
@@ -9155,23 +9134,39 @@ msgstr "пешфарз"
 
 #. i18n: file: widget/kexidbconnectionwidgetdetails.ui:119
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:180
+#: rc.cpp:174
 msgid "&Description:"
 msgstr "&Тасвирот:"
 
 #. i18n: file: widget/kexiprjtypeselector.ui:43
 #. i18n: ectx: property (text), widget (QRadioButton, option_server)
-#: rc.cpp:183
+#: rc.cpp:177
 #, fuzzy
 msgid "Projects stored on a database server"
 msgstr "Нақшаи нав дар сервери асоси маълумот ғун шудааст"
 
 #. i18n: file: widget/kexiprjtypeselector.ui:53
 #. i18n: ectx: property (text), widget (QRadioButton, option_file)
-#: rc.cpp:186
+#: rc.cpp:180
 #, fuzzy
 msgid "Projects stored in a file"
 msgstr "Нақшаи нав дар файл ғун шудааст"
+
+#. i18n: file: widget/KexiDBTitlePage.ui:22
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:183
+#, fuzzy
+#| msgid "Project caption: "
+msgid "Project title: "
+msgstr "Сарлавҳаи нақша: "
+
+#. i18n: file: widget/KexiDBTitlePage.ui:54
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:186
+#, fuzzy
+#| msgid "Project Name"
+msgid "Project filename:"
+msgstr "Номи Нақша"
 
 #, fuzzy
 #~ msgid "Could not load data from table or query."
