@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-22 02:47+0200\n"
+"POT-Creation-Date: 2011-10-25 03:23+0200\n"
 "PO-Revision-Date: 2011-09-11 03:29+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <http://www.kde.tj>\n"
@@ -756,8 +756,8 @@ msgstr "Тасдиқи нигоҳдорӣ"
 
 #: kopageapp/dialogs/KoPAConfigureDialog.cpp:40
 #: kopageapp/dialogs/KoPAConfigureDialog.cpp:41
-#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:36
-#: pigment/KoCompositeOp.cpp:219
+#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:42
+#: pigment/KoCompositeOpRegistry.cpp:36
 msgid "Misc"
 msgstr ""
 
@@ -923,6 +923,7 @@ msgstr "Андозаи дигар"
 #: koreport/wrtembed/KoReportDesigner.cpp:831
 #: pigment/compositeops/KoCompositeOpCopy.h:37
 #: pigment/compositeops/KoCompositeOpCopy2.h:42
+#: pigment/KoCompositeOpRegistry.cpp:86
 #, fuzzy
 #| msgid "Company"
 msgid "Copy"
@@ -3669,7 +3670,8 @@ msgstr "Тасвирот"
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:193
 #: pigment/compositeops/KoCompositeOpMultiply.h:35
-#: pigment/compositeops/KoCompositeOps.h:103 pigment/KoCompositeOp.cpp:44
+#: pigment/compositeops/KoCompositeOps.h:103
+#: pigment/KoCompositeOpRegistry.cpp:44
 msgid "Multiply"
 msgstr ""
 
@@ -3694,8 +3696,8 @@ msgid "L*a*b* (16-bit integer/channel, unmanaged)"
 msgstr ""
 
 #: pigment/colorspaces/KoLabColorSpace.cpp:42
-#: pigment/compositeops/KoCompositeOps.h:164 pigment/KoCompositeOp.cpp:108
-#: widgets/KoUniColorChooser.cpp:201
+#: pigment/compositeops/KoCompositeOps.h:164
+#: pigment/KoCompositeOpRegistry.cpp:109 widgets/KoUniColorChooser.cpp:201
 #, fuzzy
 msgid "Lightness"
 msgstr "Хокистарии равшан"
@@ -3748,7 +3750,8 @@ msgid "Red"
 msgstr ""
 
 #: pigment/compositeops/KoCompositeOpDivide.h:36
-#: pigment/compositeops/KoCompositeOps.h:104 pigment/KoCompositeOp.cpp:45
+#: pigment/compositeops/KoCompositeOps.h:104
+#: pigment/KoCompositeOpRegistry.cpp:45
 msgid "Divide"
 msgstr ""
 
@@ -3757,7 +3760,8 @@ msgstr ""
 msgid "Dodge"
 msgstr "Тира-тугмагул"
 
-#: pigment/compositeops/KoCompositeOpErase.h:40 pigment/KoCompositeOp.cpp:72
+#: pigment/compositeops/KoCompositeOpErase.h:40
+#: pigment/KoCompositeOpRegistry.cpp:72
 #, fuzzy
 msgid "Erase"
 msgstr "Қайдот"
@@ -3767,19 +3771,21 @@ msgstr "Қайдот"
 msgid "Hard light"
 msgstr "&Бузургӣ:"
 
-#: pigment/compositeops/KoCompositeOpOver.h:61 pigment/KoCompositeOp.cpp:70
-#: pigment/KoCompositeOp.cpp:132
+#: pigment/compositeops/KoCompositeOpOver.h:61
+#: pigment/KoCompositeOpRegistry.cpp:70 pigment/KoCompositeOpRegistry.cpp:133
 msgid "Normal"
 msgstr "Матни оддӣ"
 
 #: pigment/compositeops/KoCompositeOpOverlay.h:36
-#: pigment/compositeops/KoCompositeOps.h:76 pigment/KoCompositeOp.cpp:71
+#: pigment/compositeops/KoCompositeOps.h:76
+#: pigment/KoCompositeOpRegistry.cpp:71
 #, fuzzy
 msgid "Overlay"
 msgstr "Зайтуни-Меҳрубон"
 
 #: pigment/compositeops/KoCompositeOpScreen.h:36
-#: pigment/compositeops/KoCompositeOps.h:84 pigment/KoCompositeOp.cpp:57
+#: pigment/compositeops/KoCompositeOps.h:84
+#: pigment/KoCompositeOpRegistry.cpp:57
 msgid "Screen"
 msgstr "Экран"
 
@@ -3788,7 +3794,8 @@ msgstr "Экран"
 msgid "Soft light"
 msgstr "Яктага"
 
-#: pigment/compositeops/KoCompositeOpBurn.h:37 pigment/KoCompositeOp.cpp:48
+#: pigment/compositeops/KoCompositeOpBurn.h:37
+#: pigment/KoCompositeOpRegistry.cpp:48
 #, fuzzy
 msgid "Burn"
 msgstr "Қаҳвагӣ"
@@ -3798,78 +3805,101 @@ msgstr "Қаҳвагӣ"
 msgid "Inverse Subtract"
 msgstr "Тасвирот"
 
-#: pigment/compositeops/KoCompositeOps.h:77 pigment/KoCompositeOp.cpp:75
+#: pigment/compositeops/KoCompositeOpAlphaDarken.h:40
+msgid "Alpha darken"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOpDissolve.h:61
+#: pigment/KoCompositeOpRegistry.cpp:82
+msgid "Dissolve"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:77
+#: pigment/KoCompositeOpRegistry.cpp:75
 #, fuzzy
 #| msgid "Mail Merge"
 msgid "Grain Merge"
 msgstr "Якшавии почта"
 
-#: pigment/compositeops/KoCompositeOps.h:78 pigment/KoCompositeOp.cpp:76
+#: pigment/compositeops/KoCompositeOps.h:78
+#: pigment/KoCompositeOpRegistry.cpp:76
 msgid "Grain Extract"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:79 pigment/KoCompositeOp.cpp:74
+#: pigment/compositeops/KoCompositeOps.h:79
+#: pigment/KoCompositeOpRegistry.cpp:74
 #, fuzzy
 msgid "Hard Mix"
 msgstr "&Бузургӣ:"
 
-#: pigment/compositeops/KoCompositeOps.h:80 pigment/KoCompositeOp.cpp:79
+#: pigment/compositeops/KoCompositeOps.h:80
+#: pigment/KoCompositeOpRegistry.cpp:79
 msgid "Geometric Mean"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:81 pigment/KoCompositeOp.cpp:77
+#: pigment/compositeops/KoCompositeOps.h:81
+#: pigment/KoCompositeOpRegistry.cpp:77
 #, fuzzy
 #| msgid "Variable"
 msgid "Parallel"
 msgstr "Тағйирёбанда"
 
-#: pigment/compositeops/KoCompositeOps.h:82 pigment/KoCompositeOp.cpp:78
+#: pigment/compositeops/KoCompositeOps.h:82
+#: pigment/KoCompositeOpRegistry.cpp:78
 msgid "Allanon"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:85 pigment/KoCompositeOp.cpp:53
+#: pigment/compositeops/KoCompositeOps.h:85
+#: pigment/KoCompositeOpRegistry.cpp:53
 #, fuzzy
 msgid "Color Dodge"
 msgstr "Рангҳо"
 
-#: pigment/compositeops/KoCompositeOps.h:86 pigment/KoCompositeOp.cpp:54
+#: pigment/compositeops/KoCompositeOps.h:86
+#: pigment/KoCompositeOpRegistry.cpp:54
 #, fuzzy
 #| msgid "Change Borders"
 msgid "Linear Dodge"
 msgstr "Тағйири лабаҳо"
 
-#: pigment/compositeops/KoCompositeOps.h:87 pigment/KoCompositeOp.cpp:33
-#: pigment/KoCompositeOp.cpp:55 pigment/KoCompositeOp.cpp:212
+#: pigment/compositeops/KoCompositeOps.h:87 pigment/KoCompositeOp.cpp:35
+#: pigment/KoCompositeOpRegistry.cpp:33 pigment/KoCompositeOpRegistry.cpp:55
 #, fuzzy
 msgid "Lighten"
 msgstr "Сабзи равшан"
 
-#: pigment/compositeops/KoCompositeOps.h:88 pigment/KoCompositeOp.cpp:60
+#: pigment/compositeops/KoCompositeOps.h:88
+#: pigment/KoCompositeOpRegistry.cpp:60
 #, fuzzy
 msgid "Hard Light"
 msgstr "&Бузургӣ:"
 
-#: pigment/compositeops/KoCompositeOps.h:89 pigment/KoCompositeOp.cpp:61
+#: pigment/compositeops/KoCompositeOps.h:89
+#: pigment/KoCompositeOpRegistry.cpp:61
 #, fuzzy
 msgid "Soft Light"
 msgstr "Яктага"
 
-#: pigment/compositeops/KoCompositeOps.h:90 pigment/KoCompositeOp.cpp:62
+#: pigment/compositeops/KoCompositeOps.h:90
+#: pigment/KoCompositeOpRegistry.cpp:62
 #, fuzzy
 msgid "Gamma Light"
 msgstr "Сабзи равшан"
 
-#: pigment/compositeops/KoCompositeOps.h:91 pigment/KoCompositeOp.cpp:59
+#: pigment/compositeops/KoCompositeOps.h:91
+#: pigment/KoCompositeOpRegistry.cpp:59
 #, fuzzy
 msgid "Vivid Light"
 msgstr "Сабзи равшан"
 
-#: pigment/compositeops/KoCompositeOps.h:92 pigment/KoCompositeOp.cpp:58
+#: pigment/compositeops/KoCompositeOps.h:92
+#: pigment/KoCompositeOpRegistry.cpp:58
 #, fuzzy
 msgid "Pin Light"
 msgstr "Сабзи равшан"
 
-#: pigment/compositeops/KoCompositeOps.h:93 pigment/KoCompositeOp.cpp:56
+#: pigment/compositeops/KoCompositeOps.h:93
+#: pigment/KoCompositeOpRegistry.cpp:56
 #, fuzzy
 #| msgid "Line width:"
 msgid "Linear Light"
@@ -3881,23 +3911,26 @@ msgstr "Ғафсии хат:"
 msgid "Color Burn"
 msgstr "Ранг"
 
-#: pigment/compositeops/KoCompositeOps.h:96 pigment/KoCompositeOp.cpp:49
+#: pigment/compositeops/KoCompositeOps.h:96
+#: pigment/KoCompositeOpRegistry.cpp:49
 #, fuzzy
 #| msgid "Change Borders"
 msgid "Linear Burn"
 msgstr "Тағйири лабаҳо"
 
-#: pigment/compositeops/KoCompositeOps.h:97 pigment/KoCompositeOp.cpp:32
-#: pigment/KoCompositeOp.cpp:50 pigment/KoCompositeOp.cpp:213
+#: pigment/compositeops/KoCompositeOps.h:97 pigment/KoCompositeOp.cpp:36
+#: pigment/KoCompositeOpRegistry.cpp:32 pigment/KoCompositeOpRegistry.cpp:50
 #, fuzzy
 msgid "Darken"
 msgstr "Сабзи сиёҳтоб"
 
-#: pigment/compositeops/KoCompositeOps.h:98 pigment/KoCompositeOp.cpp:51
+#: pigment/compositeops/KoCompositeOps.h:98
+#: pigment/KoCompositeOpRegistry.cpp:51
 msgid "Gamma Dark"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:100 pigment/KoCompositeOp.cpp:42
+#: pigment/compositeops/KoCompositeOps.h:100
+#: pigment/KoCompositeOpRegistry.cpp:42
 #, fuzzy
 #| msgid "Position"
 msgid "Addition"
@@ -3908,21 +3941,25 @@ msgstr "Ҷойгузорӣ"
 msgid "Inversed-Subtract"
 msgstr "Тасвирот"
 
-#: pigment/compositeops/KoCompositeOps.h:106 pigment/KoCompositeOp.cpp:68
+#: pigment/compositeops/KoCompositeOps.h:106
+#: pigment/KoCompositeOpRegistry.cpp:68
 msgid "Arcus Tangent"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:107 pigment/KoCompositeOp.cpp:64
+#: pigment/compositeops/KoCompositeOps.h:107
+#: pigment/KoCompositeOpRegistry.cpp:64
 msgid "Difference"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:108 pigment/KoCompositeOp.cpp:67
+#: pigment/compositeops/KoCompositeOps.h:108
+#: pigment/KoCompositeOpRegistry.cpp:67
 #, fuzzy
 #| msgid "Exceptions"
 msgid "Exclusion"
 msgstr "Истисно"
 
-#: pigment/compositeops/KoCompositeOps.h:109 pigment/KoCompositeOp.cpp:65
+#: pigment/compositeops/KoCompositeOps.h:109
+#: pigment/KoCompositeOpRegistry.cpp:65
 msgid "Equivalence"
 msgstr ""
 
@@ -3931,238 +3968,260 @@ msgstr ""
 msgid "Additive-Substractive"
 msgstr "Тасвирот"
 
-#: pigment/compositeops/KoCompositeOps.h:137 pigment/KoCompositeOp.cpp:83
+#: pigment/compositeops/KoCompositeOps.h:137
+#: pigment/KoCompositeOpRegistry.cpp:83
 #, fuzzy
 #| msgid "Company Name"
 msgid "Copy Red"
 msgstr "Номи корхона"
 
-#: pigment/compositeops/KoCompositeOps.h:138 pigment/KoCompositeOp.cpp:84
+#: pigment/compositeops/KoCompositeOps.h:138
+#: pigment/KoCompositeOpRegistry.cpp:84
 #, fuzzy
 msgid "Copy Green"
 msgstr "Экран"
 
-#: pigment/compositeops/KoCompositeOps.h:139 pigment/KoCompositeOp.cpp:85
+#: pigment/compositeops/KoCompositeOps.h:139
+#: pigment/KoCompositeOpRegistry.cpp:85
 #, fuzzy
 #| msgid "Company Name"
 msgid "Copy Blue"
 msgstr "Номи корхона"
 
-#: pigment/compositeops/KoCompositeOps.h:141 pigment/KoCompositeOp.cpp:87
-#: pigment/KoCompositeOp.cpp:207
+#: pigment/compositeops/KoCompositeOps.h:141 pigment/KoCompositeOp.cpp:30
+#: pigment/KoCompositeOpRegistry.cpp:88
 msgid "Color"
 msgstr "Ранг"
 
-#: pigment/compositeops/KoCompositeOps.h:142 pigment/KoCompositeOp.cpp:88
-#: widgets/KoUniColorChooser.cpp:116
+#: pigment/compositeops/KoCompositeOps.h:142
+#: pigment/KoCompositeOpRegistry.cpp:89 widgets/KoUniColorChooser.cpp:116
 msgid "Hue"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:143 pigment/KoCompositeOp.cpp:89
-#: widgets/KoUniColorChooser.cpp:125
+#: pigment/compositeops/KoCompositeOps.h:143
+#: pigment/KoCompositeOpRegistry.cpp:90 widgets/KoUniColorChooser.cpp:125
 msgid "Saturation"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:144 pigment/KoCompositeOp.cpp:92
+#: pigment/compositeops/KoCompositeOps.h:144
+#: pigment/KoCompositeOpRegistry.cpp:93
 #, fuzzy
 msgid "Increase Saturation"
 msgstr "Тасвирот"
 
-#: pigment/compositeops/KoCompositeOps.h:145 pigment/KoCompositeOp.cpp:91
+#: pigment/compositeops/KoCompositeOps.h:145
+#: pigment/KoCompositeOpRegistry.cpp:92
 #, fuzzy
 msgid "Decrease Saturation"
 msgstr "Тасвирот:"
 
-#: pigment/compositeops/KoCompositeOps.h:146 pigment/KoCompositeOp.cpp:90
+#: pigment/compositeops/KoCompositeOps.h:146
+#: pigment/KoCompositeOpRegistry.cpp:91
 msgid "Luminosity"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:147 pigment/KoCompositeOp.cpp:94
+#: pigment/compositeops/KoCompositeOps.h:147
+#: pigment/KoCompositeOpRegistry.cpp:95
 #, fuzzy
 msgid "Increase Luminosity"
 msgstr "Тағйири қайдот"
 
-#: pigment/compositeops/KoCompositeOps.h:148 pigment/KoCompositeOp.cpp:93
+#: pigment/compositeops/KoCompositeOps.h:148
+#: pigment/KoCompositeOpRegistry.cpp:94
 #, fuzzy
 msgid "Decrease Luminosity"
 msgstr "Тағйири қайдот"
 
-#: pigment/compositeops/KoCompositeOps.h:150 pigment/KoCompositeOp.cpp:96
+#: pigment/compositeops/KoCompositeOps.h:150
+#: pigment/KoCompositeOpRegistry.cpp:97
 #, fuzzy
 #| msgid "Color"
 msgid "Color HSI"
 msgstr "Ранг"
 
-#: pigment/compositeops/KoCompositeOps.h:151 pigment/KoCompositeOp.cpp:97
+#: pigment/compositeops/KoCompositeOps.h:151
+#: pigment/KoCompositeOpRegistry.cpp:98
 msgid "Hue HSI"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:152 pigment/KoCompositeOp.cpp:98
+#: pigment/compositeops/KoCompositeOps.h:152
+#: pigment/KoCompositeOpRegistry.cpp:99
 msgid "Saturation HSI"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:153 pigment/KoCompositeOp.cpp:101
+#: pigment/compositeops/KoCompositeOps.h:153
+#: pigment/KoCompositeOpRegistry.cpp:102
 msgid "Increase Saturation HSI"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:154 pigment/KoCompositeOp.cpp:100
+#: pigment/compositeops/KoCompositeOps.h:154
+#: pigment/KoCompositeOpRegistry.cpp:101
 msgid "Decrease Saturation HSI"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:155 pigment/KoCompositeOp.cpp:99
+#: pigment/compositeops/KoCompositeOps.h:155
+#: pigment/KoCompositeOpRegistry.cpp:100
 #, fuzzy
 #| msgid "Internet"
 msgid "Intensity"
 msgstr "Интернет"
 
-#: pigment/compositeops/KoCompositeOps.h:156 pigment/KoCompositeOp.cpp:103
+#: pigment/compositeops/KoCompositeOps.h:156
+#: pigment/KoCompositeOpRegistry.cpp:104
 #, fuzzy
 #| msgid "Change Indent"
 msgid "Increase Intensity"
 msgstr "Тағйири фосила"
 
-#: pigment/compositeops/KoCompositeOps.h:157 pigment/KoCompositeOp.cpp:102
+#: pigment/compositeops/KoCompositeOps.h:157
+#: pigment/KoCompositeOpRegistry.cpp:103
 #, fuzzy
 #| msgid "Change Indent"
 msgid "Decrease Intensity"
 msgstr "Тағйири фосила"
 
-#: pigment/compositeops/KoCompositeOps.h:159 pigment/KoCompositeOp.cpp:105
+#: pigment/compositeops/KoCompositeOps.h:159
+#: pigment/KoCompositeOpRegistry.cpp:106
 #, fuzzy
 #| msgid "Color"
 msgid "Color HSL"
 msgstr "Ранг"
 
-#: pigment/compositeops/KoCompositeOps.h:160 pigment/KoCompositeOp.cpp:106
+#: pigment/compositeops/KoCompositeOps.h:160
+#: pigment/KoCompositeOpRegistry.cpp:107
 msgid "Hue HSL"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:161 pigment/KoCompositeOp.cpp:107
+#: pigment/compositeops/KoCompositeOps.h:161
+#: pigment/KoCompositeOpRegistry.cpp:108
 msgid "Saturation HSL"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:162 pigment/KoCompositeOp.cpp:110
+#: pigment/compositeops/KoCompositeOps.h:162
+#: pigment/KoCompositeOpRegistry.cpp:111
 msgid "Increase Saturation HSL"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:163 pigment/KoCompositeOp.cpp:109
+#: pigment/compositeops/KoCompositeOps.h:163
+#: pigment/KoCompositeOpRegistry.cpp:110
 msgid "Decrease Saturation HSL"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:165 pigment/KoCompositeOp.cpp:112
+#: pigment/compositeops/KoCompositeOps.h:165
+#: pigment/KoCompositeOpRegistry.cpp:113
 #, fuzzy
 #| msgid "Change Indent"
 msgid "Increase Lightness"
 msgstr "Тағйири фосила"
 
-#: pigment/compositeops/KoCompositeOps.h:166 pigment/KoCompositeOp.cpp:111
+#: pigment/compositeops/KoCompositeOps.h:166
+#: pigment/KoCompositeOpRegistry.cpp:112
 #, fuzzy
 #| msgid "Change Indent"
 msgid "Decrease Lightness"
 msgstr "Тағйири фосила"
 
-#: pigment/compositeops/KoCompositeOps.h:168 pigment/KoCompositeOp.cpp:114
+#: pigment/compositeops/KoCompositeOps.h:168
+#: pigment/KoCompositeOpRegistry.cpp:115
 #, fuzzy
 #| msgid "Color"
 msgid "Color HSV"
 msgstr "Ранг"
 
-#: pigment/compositeops/KoCompositeOps.h:169 pigment/KoCompositeOp.cpp:115
+#: pigment/compositeops/KoCompositeOps.h:169
+#: pigment/KoCompositeOpRegistry.cpp:116
 msgid "Hue HSV"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:170 pigment/KoCompositeOp.cpp:116
+#: pigment/compositeops/KoCompositeOps.h:170
+#: pigment/KoCompositeOpRegistry.cpp:117
 msgid "Saturation HSV"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:171 pigment/KoCompositeOp.cpp:119
+#: pigment/compositeops/KoCompositeOps.h:171
+#: pigment/KoCompositeOpRegistry.cpp:120
 msgid "Increase Saturation HSV"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:172 pigment/KoCompositeOp.cpp:118
+#: pigment/compositeops/KoCompositeOps.h:172
+#: pigment/KoCompositeOpRegistry.cpp:119
 msgid "Decrease Saturation HSV"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOps.h:173 pigment/KoCompositeOp.cpp:117
+#: pigment/compositeops/KoCompositeOps.h:173
+#: pigment/KoCompositeOpRegistry.cpp:118
 msgid "Value"
 msgstr "Аҳамият"
 
-#: pigment/compositeops/KoCompositeOps.h:174 pigment/KoCompositeOp.cpp:121
+#: pigment/compositeops/KoCompositeOps.h:174
+#: pigment/KoCompositeOpRegistry.cpp:122
 #, fuzzy
 #| msgid "Change Indent"
 msgid "Increase Value"
 msgstr "Тағйири фосила"
 
-#: pigment/compositeops/KoCompositeOps.h:175 pigment/KoCompositeOp.cpp:120
+#: pigment/compositeops/KoCompositeOps.h:175
+#: pigment/KoCompositeOpRegistry.cpp:121
 #, fuzzy
 #| msgid "Change Indent"
 msgid "Decrease Value"
 msgstr "Тағйири фосила"
 
-#: pigment/compositeops/KoCompositeOpDissolve.h:61
-#: pigment/KoCompositeOp.cpp:82
-msgid "Dissolve"
-msgstr ""
-
-#: pigment/compositeops/KoCompositeOpAlphaDarken.h:40
-msgid "Alpha darken"
-msgstr ""
-
 #: pigment/resources/KoStopGradient.cpp:420
 msgid "SVG Gradient"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:31 pigment/KoCompositeOp.cpp:210
+#: pigment/KoCompositeOp.cpp:33 pigment/KoCompositeOpRegistry.cpp:31
 #, fuzzy
 #| msgid "Autoinclude"
 msgid "Arithmetic"
 msgstr "Худфаъолсозӣ"
 
-#: pigment/KoCompositeOp.cpp:34 pigment/KoCompositeOp.cpp:211
+#: pigment/KoCompositeOp.cpp:34 pigment/KoCompositeOpRegistry.cpp:34
 msgid "Negative"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:35 pigment/KoCompositeOp.cpp:218
-msgid "Mix"
-msgstr ""
-
-#: pigment/KoCompositeOp.cpp:37 pigment/KoCompositeOp.cpp:214
+#: pigment/KoCompositeOp.cpp:37 pigment/KoCompositeOpRegistry.cpp:37
 msgid "HSY"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:38 pigment/KoCompositeOp.cpp:215
+#: pigment/KoCompositeOp.cpp:38 pigment/KoCompositeOpRegistry.cpp:38
 msgid "HSI"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:39 pigment/KoCompositeOp.cpp:216
+#: pigment/KoCompositeOp.cpp:39 pigment/KoCompositeOpRegistry.cpp:39
 msgid "HSL"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:40 pigment/KoCompositeOp.cpp:217
+#: pigment/KoCompositeOp.cpp:40 pigment/KoCompositeOpRegistry.cpp:40
 msgid "HSV"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:43
+#: pigment/KoCompositeOp.cpp:41 pigment/KoCompositeOpRegistry.cpp:35
+msgid "Mix"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:43
 #, fuzzy
 msgid "Substract"
 msgstr "Тасвирот"
 
-#: pigment/KoCompositeOp.cpp:46
+#: pigment/KoCompositeOpRegistry.cpp:46
 #, fuzzy
 msgid "Inverse Substract"
 msgstr "Тасвирот"
 
-#: pigment/KoCompositeOp.cpp:66
+#: pigment/KoCompositeOpRegistry.cpp:66
 #, fuzzy
 msgid "Additive Substractive"
 msgstr "Тасвирот"
 
-#: pigment/KoCompositeOp.cpp:73
+#: pigment/KoCompositeOpRegistry.cpp:73
 #, fuzzy
 msgid "Alpha Darken"
 msgstr "Сабзи сиёҳтоб"
 
-#: pigment/KoCompositeOp.cpp:81
+#: pigment/KoCompositeOpRegistry.cpp:81
 msgid "Bumpmap"
 msgstr ""
 
