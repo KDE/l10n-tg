@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-31 03:49+0100\n"
+"POT-Creation-Date: 2011-11-01 04:12+0100\n"
 "PO-Revision-Date: 2009-01-20 18:25+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -1351,7 +1351,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, labelName)
 #: rc.cpp:581 rc.cpp:1931 rc.cpp:1937 rc.cpp:2326 rc.cpp:2338
 #: amarokurls/BookmarkModel.cpp:265
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:450
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:414
 #: playlistgenerator/TreeModel.cpp:64
 #: services/amazon/AmazonItemTreeModel.cpp:59
 msgid "Name"
@@ -2224,7 +2224,7 @@ msgstr ""
 #: context/applets/wikipedia/WikipediaApplet.cpp:614
 #: dialogs/FilenameLayoutDialog.cpp:62 dialogs/FilenameLayoutDialog.cpp:435
 #: dialogs/transferdialog.cpp:88 musicbrainz/MusicBrainzTags.cpp:359
-#: playlist/PlaylistModel.cpp:931 services/jamendo/JamendoInfoParser.cpp:51
+#: playlist/PlaylistModel.cpp:863 services/jamendo/JamendoInfoParser.cpp:51
 #: services/lastfm/LastFmService.cpp:507
 #: services/magnatune/MagnatuneStore.cpp:218
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
@@ -2236,7 +2236,7 @@ msgstr ""
 #: rc.cpp:1037 browsers/playlistbrowser/PodcastModel.cpp:334
 #: core/meta/support/MetaConstants.cpp:106 dialogs/FilenameLayoutDialog.cpp:58
 #: dialogs/FilenameLayoutDialog.cpp:421 musicbrainz/MusicBrainzTags.cpp:358
-#: playlist/PlaylistModel.cpp:930 widgets/SmartPlaylistEditor.cpp:183
+#: playlist/PlaylistModel.cpp:862 widgets/SmartPlaylistEditor.cpp:183
 msgid "Title"
 msgstr ""
 
@@ -3354,7 +3354,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_13)
 #: rc.cpp:1626 browsers/CollectionTreeItemModelBase.cpp:984
 #: dialogs/FilenameLayoutDialog.cpp:78 dialogs/FilenameLayoutDialog.cpp:456
-#: musicbrainz/MusicBrainzTags.cpp:361 playlist/PlaylistModel.cpp:932
+#: musicbrainz/MusicBrainzTags.cpp:361 playlist/PlaylistModel.cpp:864
 msgid "Album Artist"
 msgstr ""
 
@@ -3889,7 +3889,7 @@ msgstr ""
 #. i18n: file: network/NetworkRequests.ui:56
 #. i18n: ectx: property (text), widget (QTreeWidget, requestList)
 #: rc.cpp:1916 core/meta/support/MetaConstants.cpp:116
-#: playlist/PlaylistModel.cpp:943 widgets/SmartPlaylistEditor.cpp:183
+#: playlist/PlaylistModel.cpp:875 widgets/SmartPlaylistEditor.cpp:183
 msgid "Length"
 msgstr ""
 
@@ -6681,13 +6681,13 @@ msgid "Add Position Marker"
 msgstr ""
 
 #: amarokurls/BookmarkModel.cpp:86
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:451
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:415
 msgid "Group"
 msgstr ""
 
 #: amarokurls/BookmarkModel.cpp:266
 #: browsers/playlistbrowser/PodcastModel.cpp:333
-#: playlist/PlaylistModel.cpp:942
+#: playlist/PlaylistModel.cpp:874
 msgid "Type"
 msgstr ""
 
@@ -6910,7 +6910,7 @@ msgid "Copy to Collection"
 msgstr ""
 
 #: browsers/filebrowser/FileView.cpp:398
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:43
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:49
 #: browsers/CollectionTreeView.cpp:838
 #: context/applets/albums/AlbumsView.cpp:240
 #: services/lastfm/LastFmTreeView.cpp:111
@@ -6920,7 +6920,7 @@ msgid "&Add to Playlist"
 msgstr "&Рӯйхати мусиқӣ"
 
 #: browsers/filebrowser/FileView.cpp:410
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:50
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:56
 #: browsers/CollectionTreeView.cpp:847
 #: context/applets/albums/AlbumsView.cpp:241
 #: services/lastfm/LastFmTreeView.cpp:120
@@ -7045,6 +7045,71 @@ msgstr ""
 msgid "Accuracy"
 msgstr ""
 
+#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:75
+#: services/opmldirectory/OpmlDirectoryModel.cpp:44
+msgid "Add Folder"
+msgstr ""
+
+#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:80
+msgid "Visible Sources"
+msgstr ""
+
+#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:184
+msgid "Folders are only shown in <b>merged view</b>."
+msgstr ""
+
+#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:271
+msgctxt "default name for new folder"
+msgid "New Folder"
+msgstr ""
+
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:44
+#, fuzzy
+#| msgid "&Playlist"
+msgid "Create empty playlist"
+msgstr "&Рӯйхати мусиқӣ"
+
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:138
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:187
+#, fuzzy, kde-format
+#| msgid "&Playlist"
+msgctxt "number of playlists from one source"
+msgid "One Playlist"
+msgid_plural "%1 playlists"
+msgstr[0] "&Рӯйхати мусиқӣ"
+msgstr[1] "&Рӯйхати мусиқӣ"
+
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:416
+msgid "Source"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastModel.cpp:72
+msgctxt "toggle the \"new\" status of this podcast episode"
+msgid "&New"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastModel.cpp:260
+#, kde-format
+msgctxt "number of podcasts from one source"
+msgid "One Channel"
+msgid_plural "%1 channels"
+msgstr[0] ""
+msgstr[1] ""
+
+#: browsers/playlistbrowser/PodcastModel.cpp:335 dialogs/TagDialog.cpp:509
+msgid "Summary"
+msgstr ""
+
+#: browsers/playlistbrowser/PodcastModel.cpp:355
+#, fuzzy
+#| msgid "&Add Podcast"
+msgid "Add Podcast"
+msgstr "&Илова кардани Podcast"
+
+#: browsers/playlistbrowser/PodcastModel.cpp:356
+msgid "Enter RSS 1.0/2.0 or Atom feed URL:"
+msgstr ""
+
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:43
 msgctxt "Bias dialog window title"
 msgid "Edit bias"
@@ -7065,24 +7130,6 @@ msgstr ""
 
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:178
 msgid "This bias has no settings."
-msgstr ""
-
-#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:75
-#: services/opmldirectory/OpmlDirectoryModel.cpp:44
-msgid "Add Folder"
-msgstr ""
-
-#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:80
-msgid "Visible Sources"
-msgstr ""
-
-#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:183
-msgid "Folders are only shown in <b>merged view</b>."
-msgstr ""
-
-#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:278
-msgctxt "default name for new folder"
-msgid "New Folder"
 msgstr ""
 
 #: browsers/playlistbrowser/PodcastCategory.cpp:81
@@ -7293,7 +7340,7 @@ msgstr ""
 
 #: browsers/playlistbrowser/PlaylistsInFoldersProxy.cpp:333
 #: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:254
-#: playlistmanager/file/PlaylistFileProvider.cpp:457
+#: playlistmanager/file/PlaylistFileProvider.cpp:458
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:117
 msgid "Confirm Delete"
 msgstr ""
@@ -7323,47 +7370,6 @@ msgid ""
 "save are also shown here."
 msgstr ""
 
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:175
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:224
-#, fuzzy, kde-format
-#| msgid "&Playlist"
-msgctxt "number of playlists from one source"
-msgid "One Playlist"
-msgid_plural "%1 playlists"
-msgstr[0] "&Рӯйхати мусиқӣ"
-msgstr[1] "&Рӯйхати мусиқӣ"
-
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:452
-msgid "Source"
-msgstr ""
-
-#: browsers/playlistbrowser/PodcastModel.cpp:72
-msgctxt "toggle the \"new\" status of this podcast episode"
-msgid "&New"
-msgstr ""
-
-#: browsers/playlistbrowser/PodcastModel.cpp:260
-#, kde-format
-msgctxt "number of podcasts from one source"
-msgid "One Channel"
-msgid_plural "%1 channels"
-msgstr[0] ""
-msgstr[1] ""
-
-#: browsers/playlistbrowser/PodcastModel.cpp:335 dialogs/TagDialog.cpp:509
-msgid "Summary"
-msgstr ""
-
-#: browsers/playlistbrowser/PodcastModel.cpp:355
-#, fuzzy
-#| msgid "&Add Podcast"
-msgid "Add Podcast"
-msgstr "&Илова кардани Podcast"
-
-#: browsers/playlistbrowser/PodcastModel.cpp:356
-msgid "Enter RSS 1.0/2.0 or Atom feed URL:"
-msgstr ""
-
 #: browsers/servicebrowser/ServiceBrowser.cpp:40
 msgid ""
 "The Internet browser lets you browse online sources of content that "
@@ -7380,8 +7386,8 @@ msgstr ""
 #: browsers/CollectionTreeItemModelBase.cpp:316
 #: core-impl/collections/db/sql/SqlMeta.cpp:420
 #: core-impl/collections/db/ScanResultProcessor.cpp:270
-#: covermanager/CoverManager.cpp:841 dialogs/TrackOrganizer.cpp:48
-#: playlist/PlaylistModel.cpp:907 widgets/AlbumBreadcrumbWidget.cpp:60
+#: core/support/Amarok.cpp:213 covermanager/CoverManager.cpp:841
+#: dialogs/TrackOrganizer.cpp:48 widgets/AlbumBreadcrumbWidget.cpp:60
 msgid "Various Artists"
 msgstr ""
 
@@ -7395,7 +7401,7 @@ msgstr ""
 #: context/applets/wikipedia/WikipediaApplet.cpp:620
 #: dialogs/FilenameLayoutDialog.cpp:74 dialogs/FilenameLayoutDialog.cpp:463
 #: dialogs/transferdialog.cpp:89 musicbrainz/MusicBrainzTags.cpp:360
-#: playlist/view/PlaylistViewCommon.cpp:64 playlist/PlaylistModel.cpp:935
+#: playlist/view/PlaylistViewCommon.cpp:64 playlist/PlaylistModel.cpp:867
 #: services/jamendo/JamendoInfoParser.cpp:83
 #: services/magnatune/MagnatuneStore.cpp:224
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
@@ -7404,7 +7410,7 @@ msgstr ""
 
 #: browsers/CollectionTreeItemModelBase.cpp:985
 #: core/meta/support/MetaConstants.cpp:110 dialogs/FilenameLayoutDialog.cpp:66
-#: dialogs/FilenameLayoutDialog.cpp:442 playlist/PlaylistModel.cpp:933
+#: dialogs/FilenameLayoutDialog.cpp:442 playlist/PlaylistModel.cpp:865
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
 msgid "Composer"
 msgstr ""
@@ -7412,14 +7418,14 @@ msgstr ""
 #: browsers/CollectionTreeItemModelBase.cpp:986
 #: core/meta/support/MetaConstants.cpp:109 dialogs/FilenameLayoutDialog.cpp:86
 #: dialogs/FilenameLayoutDialog.cpp:477 dialogs/transferdialog.cpp:90
-#: playlist/ProgressiveSearchWidget.cpp:95 playlist/PlaylistModel.cpp:939
+#: playlist/ProgressiveSearchWidget.cpp:95 playlist/PlaylistModel.cpp:871
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
 msgid "Genre"
 msgstr ""
 
 #: browsers/CollectionTreeItemModelBase.cpp:987
 #: core/meta/support/MetaConstants.cpp:111 dialogs/FilenameLayoutDialog.cpp:70
-#: dialogs/FilenameLayoutDialog.cpp:449 playlist/PlaylistModel.cpp:934
+#: dialogs/FilenameLayoutDialog.cpp:449 playlist/PlaylistModel.cpp:866
 #: widgets/SmartPlaylistEditor.cpp:184 widgets/SmartPlaylistEditor.cpp:197
 #: widgets/SmartPlaylistEditor.cpp:921
 msgid "Year"
@@ -7722,12 +7728,12 @@ msgid "Tracks"
 msgstr ""
 
 #: context/applets/currenttrack/CurrentTrack.cpp:447
-#: playlist/PlaylistModel.cpp:948
+#: playlist/PlaylistModel.cpp:880
 msgid "Play Count"
 msgstr ""
 
 #: context/applets/currenttrack/CurrentTrack.cpp:448
-#: core/meta/support/MetaConstants.cpp:122 playlist/PlaylistModel.cpp:946
+#: core/meta/support/MetaConstants.cpp:122 playlist/PlaylistModel.cpp:878
 #: widgets/SmartPlaylistEditor.cpp:185
 msgid "Score"
 msgstr ""
@@ -9164,14 +9170,14 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.cpp:115
-#: playlistmanager/file/PlaylistFileProvider.cpp:485
+#: playlistmanager/file/PlaylistFileProvider.cpp:486
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:148
 #: playlistmanager/PlaylistManager.cpp:384
 msgid "Change playlist"
 msgstr ""
 
 #: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.cpp:116
-#: playlistmanager/file/PlaylistFileProvider.cpp:486
+#: playlistmanager/file/PlaylistFileProvider.cpp:487
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:149
 #: playlistmanager/PlaylistManager.cpp:385
 msgid "Enter new name for playlist:"
@@ -9641,7 +9647,7 @@ msgid "Album Name"
 msgstr "&Албом"
 
 #: core/meta/support/MetaConstants.cpp:112 dialogs/FilenameLayoutDialog.cpp:82
-#: dialogs/FilenameLayoutDialog.cpp:470 playlist/PlaylistModel.cpp:940
+#: dialogs/FilenameLayoutDialog.cpp:470 playlist/PlaylistModel.cpp:872
 #: widgets/SmartPlaylistEditor.cpp:184
 msgid "Comment"
 msgstr ""
@@ -9651,7 +9657,7 @@ msgstr ""
 msgid "Track Number"
 msgstr ""
 
-#: core/meta/support/MetaConstants.cpp:114 playlist/PlaylistModel.cpp:936
+#: core/meta/support/MetaConstants.cpp:114 playlist/PlaylistModel.cpp:868
 msgid "Disc Number"
 msgstr ""
 
@@ -9663,11 +9669,11 @@ msgstr ""
 msgid "Bit Rate"
 msgstr ""
 
-#: core/meta/support/MetaConstants.cpp:118 playlist/PlaylistModel.cpp:945
+#: core/meta/support/MetaConstants.cpp:118 playlist/PlaylistModel.cpp:877
 msgid "Sample Rate"
 msgstr ""
 
-#: core/meta/support/MetaConstants.cpp:119 playlist/PlaylistModel.cpp:951
+#: core/meta/support/MetaConstants.cpp:119 playlist/PlaylistModel.cpp:883
 msgid "File Size"
 msgstr ""
 
@@ -9682,7 +9688,7 @@ msgid "Added to Collection"
 msgstr ""
 
 #: core/meta/support/MetaConstants.cpp:123
-#: playlist/ProgressiveSearchWidget.cpp:109 playlist/PlaylistModel.cpp:947
+#: playlist/ProgressiveSearchWidget.cpp:109 playlist/PlaylistModel.cpp:879
 #: widgets/SmartPlaylistEditor.cpp:185
 msgid "Rating"
 msgstr ""
@@ -10163,6 +10169,45 @@ msgstr ""
 #, kde-format
 msgctxt "h for hours"
 msgid "%1h"
+msgstr ""
+
+#: core/support/Amarok.cpp:170
+#, fuzzy, kde-format
+#| msgid "&Playlist"
+msgctxt ""
+"A saved playlist with the current time (KLocale::Shortdate) added "
+"between                           the parentheses"
+msgid "Empty Playlist (%1)"
+msgstr "&Рӯйхати мусиқӣ"
+
+#: core/support/Amarok.cpp:198
+#, kde-format
+msgctxt ""
+"A saved playlist with the current time (KLocale::Shortdate) added "
+"between                           the parentheses"
+msgid "Various Tracks (%1)"
+msgstr ""
+
+#: core/support/Amarok.cpp:205
+msgid "Unknown Artist(s)"
+msgstr ""
+
+#: core/support/Amarok.cpp:221
+#, fuzzy
+#| msgid "&Albums"
+msgid "Unknown Album(s)"
+msgstr "&Албомҳо"
+
+#: core/support/Amarok.cpp:225
+#, fuzzy
+#| msgid "&Albums"
+msgid "Various Albums"
+msgstr "&Албомҳо"
+
+#: core/support/Amarok.cpp:228
+#, kde-format
+msgctxt "A saved playlist titled <artist> - <album>"
+msgid "%1 - %2"
 msgstr ""
 
 #: core/transcoding/formats/TranscodingAacFormat.cpp:31
@@ -12766,85 +12811,6 @@ msgstr[1] ""
 msgid "No tracks"
 msgstr "роҳчаҳо"
 
-#: playlist/PlaylistModel.cpp:271
-msgid "(...)"
-msgstr ""
-
-#: playlist/PlaylistModel.cpp:286
-msgid "No extra information available"
-msgstr ""
-
-#: playlist/PlaylistModel.cpp:867
-#, fuzzy, kde-format
-#| msgid "&Playlist"
-msgctxt ""
-"A saved playlist with the current time (KLocale::Shortdate) added "
-"between                       the parentheses"
-msgid "Empty Playlist (%1)"
-msgstr "&Рӯйхати мусиқӣ"
-
-#: playlist/PlaylistModel.cpp:895
-#, kde-format
-msgctxt ""
-"A saved playlist with the current time (KLocale::Shortdate) added "
-"between                       the parentheses"
-msgid "Various Tracks (%1)"
-msgstr ""
-
-#: playlist/PlaylistModel.cpp:902
-msgid "Unknown Artist(s)"
-msgstr ""
-
-#: playlist/PlaylistModel.cpp:914
-#, fuzzy
-#| msgid "&Albums"
-msgid "Unknown Album(s)"
-msgstr "&Албомҳо"
-
-#: playlist/PlaylistModel.cpp:917
-#, fuzzy
-#| msgid "&Albums"
-msgid "Various Albums"
-msgstr "&Албомҳо"
-
-#: playlist/PlaylistModel.cpp:919
-#, kde-format
-msgctxt "A saved playlist titled <artist> - <album>"
-msgid "%1 - %2"
-msgstr ""
-
-#: playlist/PlaylistModel.cpp:929
-msgctxt "The name of the file this track is stored in"
-msgid "Filename"
-msgstr ""
-
-#: playlist/PlaylistModel.cpp:937
-msgctxt "The Track number for this item"
-msgid "Track"
-msgstr ""
-
-#: playlist/PlaylistModel.cpp:938 widgets/SmartPlaylistEditor.cpp:187
-msgid "BPM"
-msgstr ""
-
-#: playlist/PlaylistModel.cpp:941
-msgctxt "The location on disc of this track"
-msgid "Directory"
-msgstr ""
-
-#: playlist/PlaylistModel.cpp:944 widgets/SmartPlaylistEditor.cpp:187
-msgid "Bitrate"
-msgstr ""
-
-#: playlist/PlaylistModel.cpp:949
-msgctxt "Column name"
-msgid "Last Played"
-msgstr ""
-
-#: playlist/PlaylistModel.cpp:950
-msgid "Mood"
-msgstr ""
-
 #: playlist/PlaylistDock.cpp:105
 msgid "Dynamic Mode Enabled"
 msgstr ""
@@ -12860,6 +12826,46 @@ msgstr "&Рӯйхати мусиқӣ"
 #| msgid "&Playlist"
 msgid "&Save playlist to \"%1\""
 msgstr "&Рӯйхати мусиқӣ"
+
+#: playlist/PlaylistModel.cpp:271
+msgid "(...)"
+msgstr ""
+
+#: playlist/PlaylistModel.cpp:286
+msgid "No extra information available"
+msgstr ""
+
+#: playlist/PlaylistModel.cpp:861
+msgctxt "The name of the file this track is stored in"
+msgid "Filename"
+msgstr ""
+
+#: playlist/PlaylistModel.cpp:869
+msgctxt "The Track number for this item"
+msgid "Track"
+msgstr ""
+
+#: playlist/PlaylistModel.cpp:870 widgets/SmartPlaylistEditor.cpp:187
+msgid "BPM"
+msgstr ""
+
+#: playlist/PlaylistModel.cpp:873
+msgctxt "The location on disc of this track"
+msgid "Directory"
+msgstr ""
+
+#: playlist/PlaylistModel.cpp:876 widgets/SmartPlaylistEditor.cpp:187
+msgid "Bitrate"
+msgstr ""
+
+#: playlist/PlaylistModel.cpp:881
+msgctxt "Column name"
+msgid "Last Played"
+msgstr ""
+
+#: playlist/PlaylistModel.cpp:882
+msgid "Mood"
+msgstr ""
 
 #: playlistgenerator/PresetEditDialog.cpp:61
 msgid "Add new"
@@ -13331,13 +13337,13 @@ msgctxt "Remove a track from a saved playlist"
 msgid "Remove From \"%1\""
 msgstr ""
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:367
-#: playlistmanager/file/PlaylistFileProvider.cpp:396
+#: playlistmanager/file/PlaylistFileProvider.cpp:368
+#: playlistmanager/file/PlaylistFileProvider.cpp:397
 #, kde-format
 msgid "The playlist file \"%1\" could not be loaded."
 msgstr ""
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:459
+#: playlistmanager/file/PlaylistFileProvider.cpp:460
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:119
 #, kde-format
 msgid "Are you sure you want to delete this playlist?"
@@ -13345,7 +13351,7 @@ msgid_plural "Are you sure you want to delete these %1 playlist files?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:465
+#: playlistmanager/file/PlaylistFileProvider.cpp:466
 msgid "Yes, delete from disk."
 msgstr ""
 
