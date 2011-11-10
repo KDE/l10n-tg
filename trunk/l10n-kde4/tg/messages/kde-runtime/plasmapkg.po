@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasmapkg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-02 05:32+0200\n"
+"POT-Creation-Date: 2011-11-10 04:04+0100\n"
 "PO-Revision-Date: 2010-01-29 22:36+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -112,10 +112,18 @@ msgid "Original author"
 msgstr "Муаллифи аслӣ"
 
 #: main.cpp:184
+#, fuzzy
+#| msgctxt "Do not translate <path>"
+#| msgid "Install the package at <path>"
+msgctxt "Do not translate <path>"
+msgid "Generate a SHA1 hash for the package at <path>"
+msgstr "Установить пакет в <path>"
+
+#: main.cpp:186
 msgid "For install or remove, operates on packages installed for all users."
 msgstr "Установка, просмотр и удаление пакетов Plasma для всех пользователей."
 
-#: main.cpp:190
+#: main.cpp:192
 #, fuzzy
 #| msgctxt ""
 #| "theme, wallpaper, etc. are keywords, but they may be translated, as both "
@@ -135,30 +143,30 @@ msgstr ""
 "Тип пакета, например, theme, wallpaper, plasmoid, dataengine, runner и так "
 "далее."
 
-#: main.cpp:194
+#: main.cpp:196
 msgctxt "Do not translate <path>"
 msgid "Install the package at <path>"
 msgstr "Установить пакет в <path>"
 
-#: main.cpp:196
+#: main.cpp:198
 msgctxt "Do not translate <path>"
 msgid "Upgrade the package at <path>"
 msgstr "Обновить пакет в <path>"
 
-#: main.cpp:198
+#: main.cpp:200
 msgid "List installed packages"
 msgstr "Намоиши қуттиҳои сабтшуда"
 
-#: main.cpp:199
+#: main.cpp:201
 msgid "lists all known Package types that can be installed"
 msgstr ""
 
-#: main.cpp:201
+#: main.cpp:203
 msgctxt "Do not translate <name>"
 msgid "Remove the package named <name>"
 msgstr "Удалить установленный пакет <name>"
 
-#: main.cpp:203
+#: main.cpp:205
 msgid ""
 "Absolute path to the package root. If not supplied, then the standard data "
 "directories for this KDE session will be searched instead."
@@ -166,52 +174,62 @@ msgstr ""
 "Путь к коревому каталогу установленных пакетов. Если не указан, будет "
 "использован стандартный каталог данных KDE."
 
-#: main.cpp:236 main.cpp:273
+#: main.cpp:218
+#, kde-format
+msgid "Failed to generate a Package hash for %1"
+msgstr ""
+
+#: main.cpp:222
+#, kde-format
+msgid "SHA1 hash for Package at %1: '%2'"
+msgstr ""
+
+#: main.cpp:253 main.cpp:290
 msgctxt "package type"
 msgid "wallpaper"
 msgstr "Тасвири экран"
 
-#: main.cpp:263
+#: main.cpp:280
 msgctxt "package type"
 msgid "plasmoid"
 msgstr "plasmoid"
 
-#: main.cpp:270
+#: main.cpp:287
 msgctxt "package type"
 msgid "theme"
 msgstr "мавзӯъ"
 
-#: main.cpp:276
+#: main.cpp:293
 msgctxt "package type"
 msgid "dataengine"
 msgstr "dataengine"
 
-#: main.cpp:281
+#: main.cpp:298
 msgctxt "package type"
 msgid "runner"
 msgstr "runner"
 
-#: main.cpp:286
+#: main.cpp:303
 msgctxt "package type"
 msgid "wallpaperplugin"
 msgstr "Тасвири экран"
 
-#: main.cpp:291
+#: main.cpp:308
 msgctxt "package type"
 msgid "layout-template"
 msgstr ""
 
-#: main.cpp:300
+#: main.cpp:317
 #, kde-format
 msgid "Could not find a suitable installer for package of type %1"
 msgstr "Невозможно найти модуль установки для пакета типа '%1'"
 
-#: main.cpp:309
+#: main.cpp:326
 #, kde-format
 msgid "Could not load installer for package of type %1. Error reported was: %2"
 msgstr "Невозможно запустить модуль установки для пакета типа '%1'. Ошибка: %2"
 
-#: main.cpp:329
+#: main.cpp:346
 msgctxt ""
 "The user entered conflicting options packageroot and global, this is the "
 "error message telling the user he can use only one"
@@ -220,32 +238,32 @@ msgid ""
 "one."
 msgstr ""
 
-#: main.cpp:354
+#: main.cpp:371
 #, kde-format
 msgid "Successfully removed %1"
 msgstr "Пакет %1 успешно удалён"
 
-#: main.cpp:356
+#: main.cpp:373
 #, kde-format
 msgid "Removal of %1 failed."
 msgstr "Ошибка удаления пакета %1"
 
-#: main.cpp:361
+#: main.cpp:378
 #, kde-format
 msgid "Plugin %1 is not installed."
 msgstr "Расширение %1 не установлено."
 
-#: main.cpp:366
+#: main.cpp:383
 #, kde-format
 msgid "Successfully installed %1"
 msgstr "Пакет %1 установлен"
 
-#: main.cpp:368
+#: main.cpp:385
 #, kde-format
 msgid "Installation of %1 failed."
 msgstr "Ошибка установки пакета %1"
 
-#: main.cpp:374
+#: main.cpp:391
 msgctxt ""
 "No option was given, this is the error message telling the user he needs at "
 "least one, do not translate install, remove, upgrade nor list"
