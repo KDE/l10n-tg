@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-12 03:19+0100\n"
+"POT-Creation-Date: 2011-11-13 03:29+0100\n"
 "PO-Revision-Date: 2009-01-20 18:25+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -2162,7 +2162,7 @@ msgstr ""
 #: amarokurls/BookmarkModel.cpp:265
 #: browsers/playlistbrowser/PlaylistBrowserModel.cpp:414
 #: playlistgenerator/TreeModel.cpp:64
-#: services/amazon/AmazonItemTreeModel.cpp:115
+#: services/amazon/AmazonItemTreeModel.cpp:168
 msgid "Name"
 msgstr ""
 
@@ -6793,6 +6793,29 @@ msgstr ""
 msgid "Label"
 msgstr ""
 
+#: browsers/CollectionTreeView.cpp:246 configdialog/ConfigDialog.cpp:59
+msgid "Collection"
+msgstr ""
+
+#: browsers/CollectionTreeView.cpp:545 services/lastfm/LastFmTreeView.cpp:201
+msgid "More..."
+msgstr ""
+
+#: browsers/CollectionTreeView.cpp:894
+msgctxt "Organize Files"
+msgid "Organize Files"
+msgstr ""
+
+#: browsers/CollectionTreeView.cpp:1072
+msgid "Move Tracks to Trash"
+msgstr ""
+
+#: browsers/CollectionTreeView.cpp:1078
+#, fuzzy
+#| msgid "tracks"
+msgid "Delete Tracks"
+msgstr "роҳчаҳо"
+
 #: browsers/BrowserBreadcrumbItem.cpp:68
 msgid "Media Sources Home"
 msgstr ""
@@ -6828,25 +6851,6 @@ msgstr[1] "роҳчаҳо"
 #: browsers/BrowserCategoryList.cpp:52
 msgid "Filter Music Sources"
 msgstr ""
-
-#: browsers/CollectionTreeView.cpp:246 configdialog/ConfigDialog.cpp:59
-msgid "Collection"
-msgstr ""
-
-#: browsers/CollectionTreeView.cpp:545 services/lastfm/LastFmTreeView.cpp:201
-msgid "More..."
-msgstr ""
-
-#: browsers/CollectionTreeView.cpp:894
-msgctxt "Organize Files"
-msgid "Organize Files"
-msgstr ""
-
-#: browsers/CollectionTreeView.cpp:1072
-#, fuzzy
-#| msgid "tracks"
-msgid "Delete Tracks"
-msgstr "роҳчаҳо"
 
 #: configdialog/dialogs/DatabaseConfig.cpp:93
 msgctxt ""
@@ -13706,6 +13710,61 @@ msgctxt ""
 msgid "Amazon"
 msgstr ""
 
+#: services/amazon/AmazonShoppingCartView.cpp:64
+#, fuzzy
+#| msgid "tracks"
+msgid "Remove from Cart"
+msgstr "роҳчаҳо"
+
+#: services/amazon/AmazonItemTreeModel.cpp:108
+#: services/amazon/AmazonItemTreeModel.cpp:129
+msgid "<b>Artist:</b> "
+msgstr ""
+
+#: services/amazon/AmazonItemTreeModel.cpp:112
+#: services/amazon/AmazonItemTreeModel.cpp:133
+#, fuzzy
+#| msgid "&Album"
+msgid "<b>Album:</b> "
+msgstr "&Албом"
+
+#: services/amazon/AmazonItemTreeModel.cpp:116
+#: services/amazon/AmazonItemTreeModel.cpp:141
+msgid "<b>Price:</b> "
+msgstr ""
+
+#: services/amazon/AmazonItemTreeModel.cpp:137
+#, fuzzy
+#| msgid "tracks"
+msgid "<b>Track:</b> "
+msgstr "роҳчаҳо"
+
+#: services/amazon/AmazonItemTreeModel.cpp:171
+msgid "Price"
+msgstr ""
+
+#: services/amazon/AmazonItemTreeView.cpp:271
+#, fuzzy
+#| msgid "&Playlist"
+msgid "Add to Cart"
+msgstr "&Рӯйхати мусиқӣ"
+
+#: services/amazon/AmazonItemTreeView.cpp:280
+#, fuzzy
+#| msgid "&Playlist"
+msgid "Add Preview to Playlist"
+msgstr "&Рӯйхати мусиқӣ"
+
+#: services/amazon/AmazonItemTreeView.cpp:290
+msgid "Load Details..."
+msgstr ""
+
+#: services/amazon/AmazonItemTreeView.cpp:299
+#, fuzzy
+#| msgid "year"
+msgid "Search for Album..."
+msgstr "сол"
+
 #: services/amazon/AmazonStore.cpp:96
 msgid "Access the Amazon MP3 Store directly from Amarok"
 msgstr ""
@@ -13716,92 +13775,66 @@ msgid ""
 "MP3 store. Amarok gets a share of the profits made by this service."
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:185
+#: services/amazon/AmazonStore.cpp:186
 #, kde-format
 msgid "<em>%1</em> has been added to your shopping cart."
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:208 services/amazon/AmazonStore.cpp:296
+#: services/amazon/AmazonStore.cpp:209 services/amazon/AmazonStore.cpp:297
 msgid "Error: Unable to write temporary file. :-("
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:270
+#: services/amazon/AmazonStore.cpp:271
 msgid "Select your Amazon locale - Amarok"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:347
+#: services/amazon/AmazonStore.cpp:369
 msgid "Select results page to show"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:370
+#: services/amazon/AmazonStore.cpp:392
 #, fuzzy
 #| msgid "&Playlist"
 msgctxt "Add selected item to your shopping cart"
 msgid "Add to Cart"
 msgstr "&Рӯйхати мусиқӣ"
 
-#: services/amazon/AmazonStore.cpp:371
+#: services/amazon/AmazonStore.cpp:393
 msgid "Add selected item to your shopping cart"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:378
+#: services/amazon/AmazonStore.cpp:400
 msgctxt "View your shopping cart contents"
 msgid "View Cart"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:379
+#: services/amazon/AmazonStore.cpp:401
 msgid "View your shopping cart contents"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:386
+#: services/amazon/AmazonStore.cpp:408
 msgctxt "Checkout your shopping cart"
 msgid "Checkout"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:387
+#: services/amazon/AmazonStore.cpp:409
 msgid "Checkout your shopping cart"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:407
+#: services/amazon/AmazonStore.cpp:429
 msgid "Error: Querying MP3 Music Store database failed. :-("
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:442
+#: services/amazon/AmazonStore.cpp:464
 msgid "Error: Received an invalid reply. :-("
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:462
+#: services/amazon/AmazonStore.cpp:484
 msgid "Error: Unable to open temporary file. :-("
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:482
+#: services/amazon/AmazonStore.cpp:504
 msgid "Error: Unable to parse temporary file. :-("
-msgstr ""
-
-#: services/amazon/AmazonShoppingCartView.cpp:64
-#, fuzzy
-#| msgid "tracks"
-msgid "Remove from Cart"
-msgstr "роҳчаҳо"
-
-#: services/amazon/AmazonItemTreeModel.cpp:118
-msgid "Price"
-msgstr ""
-
-#: services/amazon/AmazonItemTreeView.cpp:243
-#, fuzzy
-#| msgid "&Playlist"
-msgid "Add to Cart"
-msgstr "&Рӯйхати мусиқӣ"
-
-#: services/amazon/AmazonItemTreeView.cpp:252
-#, fuzzy
-#| msgid "&Playlist"
-msgid "Add Preview to Playlist"
-msgstr "&Рӯйхати мусиқӣ"
-
-#: services/amazon/AmazonItemTreeView.cpp:262
-msgid "Load Details..."
 msgstr ""
 
 #: statusbar/CompoundProgressBar.cpp:63 statusbar/CompoundProgressBar.cpp:186
