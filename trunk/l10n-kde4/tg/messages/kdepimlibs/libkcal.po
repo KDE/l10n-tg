@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkcal\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-08 04:04+0200\n"
+"POT-Creation-Date: 2011-12-03 04:09+0100\n"
 "PO-Revision-Date: 2005-09-23 19:08+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -213,7 +213,7 @@ msgstr "Ахборот"
 
 #: htmlexport.cpp:270
 #, fuzzy
-msgctxt "@title:column event locatin"
+msgctxt "@title:column event location"
 msgid "Location"
 msgstr "Ҷойгиршавӣ:"
 
@@ -508,9 +508,10 @@ msgstr "Нигоҳдории охирон: %1"
 msgid "Calendar:"
 msgstr "iТақвим"
 
-#: incidenceformatter.cpp:491 incidenceformatter.cpp:664
-#: incidenceformatter.cpp:3125 resourcelocalconfig.cpp:67
-#: resourcelocaldirconfig.cpp:62
+#: incidenceformatter.cpp:491
+#, fuzzy
+#| msgid "Location:"
+msgctxt "@title:column event location"
 msgid "Location:"
 msgstr "Ҷойгиршавӣ:"
 
@@ -589,6 +590,13 @@ msgid "Attachment:"
 msgid_plural "Attachments:"
 msgstr[0] ""
 msgstr[1] ""
+
+#: incidenceformatter.cpp:664
+#, fuzzy
+#| msgid "Location:"
+msgctxt "@title:column to-do location"
+msgid "Location:"
+msgstr "Ҷойгиршавӣ:"
 
 #: incidenceformatter.cpp:678
 #, fuzzy
@@ -739,9 +747,11 @@ msgstr ""
 msgid "Summary unspecified"
 msgstr ""
 
-#: incidenceformatter.cpp:1371 incidenceformatter.cpp:1455
+#: incidenceformatter.cpp:1371
+#, fuzzy
+msgctxt "event location"
 msgid "Location unspecified"
-msgstr ""
+msgstr "Номуайян"
 
 #: incidenceformatter.cpp:1388 incidenceformatter.cpp:1472
 msgid "What:"
@@ -774,6 +784,12 @@ msgstr ""
 #: incidenceformatter.cpp:1416
 #, fuzzy
 msgid "no end date specified"
+msgstr "Номуайян"
+
+#: incidenceformatter.cpp:1455
+#, fuzzy
+msgctxt "todo location"
+msgid "Location unspecified"
 msgstr "Номуайян"
 
 #: incidenceformatter.cpp:1476
@@ -1271,9 +1287,10 @@ msgid "The summary has been changed to: \"%1\""
 msgstr ""
 
 #: incidenceformatter.cpp:2279
-#, kde-format
+#, fuzzy, kde-format
+msgctxt "event/todo location"
 msgid "The location has been changed to: \"%1\""
-msgstr ""
+msgstr "Ин саҳифа эъҷод карда шуда буд "
 
 #: incidenceformatter.cpp:2284
 #, kde-format
@@ -1484,6 +1501,13 @@ msgctxt "elipsis"
 msgid "..."
 msgstr ""
 
+#: incidenceformatter.cpp:3125
+#, fuzzy
+#| msgid "Location:"
+msgctxt "event/todo location"
+msgid "Location:"
+msgstr "Ҷойгиршавӣ:"
+
 #: incidenceformatter.cpp:3233
 #, kde-format
 msgid "Summary: %1\n"
@@ -1496,6 +1520,7 @@ msgstr "Вақти итмом"
 
 #: incidenceformatter.cpp:3239
 #, fuzzy, kde-format
+msgctxt "event/todo location"
 msgid "Location: %1\n"
 msgstr "Ҷойгиршавӣ:"
 
@@ -2550,6 +2575,10 @@ msgstr "Хато вақти бор кардани %1.\n"
 msgid "Error while saving %1.\n"
 msgstr "Хато вақти нигоҳ доштани %1.\n"
 
+#: resourcelocalconfig.cpp:67 resourcelocaldirconfig.cpp:62
+msgid "Location:"
+msgstr "Ҷойгиршавӣ:"
+
 #: resourcelocalconfig.cpp:69
 msgid "*.ics *.vcs|Calendar Files"
 msgstr ""
@@ -2821,6 +2850,11 @@ msgctxt "@option"
 msgid "Do Not Send"
 msgstr ""
 
+#, fuzzy
+#~ msgctxt "@title:column event locatin"
+#~ msgid "Location"
+#~ msgstr "Ҷойгиршавӣ:"
+
 #~ msgctxt "EMAIL OF TRANSLATORS"
 #~ msgid "Your emails"
 #~ msgstr ""
@@ -2904,10 +2938,6 @@ msgstr ""
 #~ msgstr "Тайёр шуд"
 
 #, fuzzy
-#~ msgid "Location"
-#~ msgstr "Ҷойгиршавӣ:"
-
-#, fuzzy
 #~ msgid "Time"
 #~ msgstr "Вақти итмом"
 
@@ -2958,11 +2988,6 @@ msgstr ""
 #~ msgctxt "@info page creator email link"
 #~ msgid "by <link url='mailto:%1'>%2</link>"
 #~ msgstr "ба <a href=\"mailto:%1\">%2</a> "
-
-#, fuzzy
-#~ msgctxt "%1: Start Date"
-#~ msgid "%1 (time unspecified)"
-#~ msgstr "Номуайян"
 
 #, fuzzy
 #~ msgctxt "%1: End Date"
