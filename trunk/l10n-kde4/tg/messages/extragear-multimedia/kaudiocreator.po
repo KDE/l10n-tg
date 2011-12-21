@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaudiocreator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-02 04:55+0200\n"
+"POT-Creation-Date: 2011-12-21 04:31+0100\n"
 "PO-Revision-Date: 2004-06-10 20:51+0000\n"
 "Last-Translator: Abrorova\n"
 "Language-Team:  <tajik>\n"
@@ -127,62 +127,6 @@ msgctxt "@title:column"
 msgid "Encoder"
 msgstr "Рамзгузор"
 
-#: encoderconfigimp.cpp:101
-msgid "The default encoder has to accept wav as input."
-msgstr ""
-
-#: encoderconfigimp.cpp:101 encoderconfigimp.cpp:194 encoderconfigimp.cpp:235
-msgid "Not Allowed"
-msgstr ""
-
-#: encoderconfigimp.cpp:128
-#, fuzzy
-#| msgid "Encoder"
-msgid "Add Encoder"
-msgstr "Рамзгузор"
-
-#: encoderconfigimp.cpp:150 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
-msgid "Please select an encoder."
-msgstr "Рамзгузорро интихоб кунед."
-
-#: encoderconfigimp.cpp:150 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
-#: encoder.cpp:76
-msgid "No Encoder Selected"
-msgstr "Ягон Рамзгузор Интихоб Нашудааст."
-
-#: encoderconfigimp.cpp:173
-#, fuzzy
-#| msgid "Encoder"
-msgid "Copy Encoder"
-msgstr "Рамзгузор"
-
-#: encoderconfigimp.cpp:194
-msgid "WAV is not allowed to be removed."
-msgstr ""
-
-#: encoderconfigimp.cpp:198
-#, fuzzy
-msgid "Delete encoder?"
-msgstr "Рамзгузорро Хориҷ кунам?"
-
-#: encoderconfigimp.cpp:198
-msgid "Delete Encoder"
-msgstr "Хориҷкунии Рамзгузор"
-
-#: encoderconfigimp.cpp:235
-msgid ""
-"WAV is not allowed to be changed.\n"
-"You can copy it to adjust it to your needs."
-msgstr ""
-
-#: encoderconfigimp.cpp:250
-msgid "Configure Encoder"
-msgstr "Танзимкунии Рамзгузор"
-
-#: encoderconfigimp.cpp:384 kaudiocreator.cpp:426
-msgid "Encoder Configuration"
-msgstr "Танзимотҳои Рамзгузор"
-
 #: encoder.cpp:76
 msgid ""
 "No encoder has been selected.\n"
@@ -190,6 +134,11 @@ msgid ""
 msgstr ""
 "Ягон рамзгузор интихоб нашудааст.\n"
 "Марҳамат карда дар танзимкунӣ рамзгузорро интихоб кунед."
+
+#: encoder.cpp:76 encoderconfigimp.cpp:150 encoderconfigimp.cpp:189
+#: encoderconfigimp.cpp:230
+msgid "No Encoder Selected"
+msgstr "Ягон Рамзгузор Интихоб Нашудааст."
 
 #: encoder.cpp:161
 #, kde-format
@@ -249,6 +198,57 @@ msgstr ""
 "Марҳамат карда хосиятҳои рамзгузорро санҷед.\n"
 "Файли wav хориҷ гардидааст.\n"
 "Оё мехоҳед, ки ҳосили пурраи рамзгузорро бинед?"
+
+#: encoderconfigimp.cpp:101
+msgid "The default encoder has to accept wav as input."
+msgstr ""
+
+#: encoderconfigimp.cpp:101 encoderconfigimp.cpp:194 encoderconfigimp.cpp:235
+msgid "Not Allowed"
+msgstr ""
+
+#: encoderconfigimp.cpp:128
+#, fuzzy
+#| msgid "Encoder"
+msgid "Add Encoder"
+msgstr "Рамзгузор"
+
+#: encoderconfigimp.cpp:150 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
+msgid "Please select an encoder."
+msgstr "Рамзгузорро интихоб кунед."
+
+#: encoderconfigimp.cpp:173
+#, fuzzy
+#| msgid "Encoder"
+msgid "Copy Encoder"
+msgstr "Рамзгузор"
+
+#: encoderconfigimp.cpp:194
+msgid "WAV is not allowed to be removed."
+msgstr ""
+
+#: encoderconfigimp.cpp:198
+#, fuzzy
+msgid "Delete encoder?"
+msgstr "Рамзгузорро Хориҷ кунам?"
+
+#: encoderconfigimp.cpp:198
+msgid "Delete Encoder"
+msgstr "Хориҷкунии Рамзгузор"
+
+#: encoderconfigimp.cpp:235
+msgid ""
+"WAV is not allowed to be changed.\n"
+"You can copy it to adjust it to your needs."
+msgstr ""
+
+#: encoderconfigimp.cpp:250
+msgid "Configure Encoder"
+msgstr "Танзимкунии Рамзгузор"
+
+#: encoderconfigimp.cpp:384 kaudiocreator.cpp:426
+msgid "Encoder Configuration"
+msgstr "Танзимотҳои Рамзгузор"
 
 #: general.cpp:61
 #, kde-format
@@ -982,7 +982,7 @@ msgstr "Ҳангоми ба охиррасонӣ ба таври &худкор �
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_promptIfIncompleteInfo)
 #. i18n: file: kaudiocreator.kcfg:24
 #. i18n: ectx: label, entry (promptIfIncompleteInfo), group (CD)
-#: rc.cpp:223 rc.cpp:497
+#: rc.cpp:223 rc.cpp:482
 msgid "Prompt if information is not complete"
 msgstr "Ҳангоми нопурра будани ахборот, кӯшиш кунед"
 
@@ -1232,7 +1232,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_removeRippedWavs)
 #. i18n: file: kaudiocreator.kcfg:34
 #. i18n: ectx: label, entry (removeRippedWavs), group (General)
-#: rc.cpp:369 rc.cpp:503
+#: rc.cpp:369 rc.cpp:488
 msgid "Remove ripped wav files after encoding"
 msgstr ""
 
@@ -1403,52 +1403,22 @@ msgstr "Шарҳдиҳӣ"
 msgid "Arti&st's Initial"
 msgstr ""
 
-#. i18n: file: kaudiocreator_encoders.kcfg:12
-#. i18n: ectx: label, entry (encoderName), group ($(encoder))
-#: rc.cpp:473
-msgid "Name of the encoder"
-msgstr "Номи рамзгузор"
-
-#. i18n: file: kaudiocreator_encoders.kcfg:16
-#. i18n: ectx: label, entry (commandLine), group ($(encoder))
-#: rc.cpp:476
-msgid "Command line to invoke encoder"
-msgstr "Сатри фармон барои берункашии рамзгузор"
-
-#. i18n: file: kaudiocreator_encoders.kcfg:20
-#. i18n: ectx: label, entry (extension), group ($(encoder))
-#: rc.cpp:479
-msgid "File extension"
-msgstr "Вусъати файл"
-
-#. i18n: file: kaudiocreator_encoders.kcfg:24
-#. i18n: ectx: label, entry (inputTypes), group ($(encoder))
-#: rc.cpp:482
-msgid "Input Types"
-msgstr ""
-
-#. i18n: file: kaudiocreator_encoders.kcfg:32
-#. i18n: ectx: label, entry (checkOutput), group ($(encoder))
-#: rc.cpp:485
-msgid "Check output files"
-msgstr ""
-
 #. i18n: file: kaudiocreator.kcfg:12
 #. i18n: ectx: label, entry (performCDDBauto), group (CD)
-#: rc.cpp:488
+#: rc.cpp:473
 msgid "Perform automatic CDDB lookups."
 msgstr "Пешкаши азназаргузаронии худкори CDDB."
 
 #. i18n: file: kaudiocreator.kcfg:16
 #. i18n: ectx: label, entry (autoRip), group (CD)
-#: rc.cpp:491
+#: rc.cpp:476
 #, fuzzy
 msgid "Automatically rip all tracks upon a successful CDDB retrieval"
 msgstr "Хондани худкори ҳамаи сурудҳо баъди бозёбии бомувафақияти CDDB"
 
 #. i18n: file: kaudiocreator.kcfg:20
 #. i18n: ectx: label, entry (lastUsedDevice), group (CD)
-#: rc.cpp:494
+#: rc.cpp:479
 #, fuzzy
 #| msgid "CD device"
 msgid "Last used CD device"
@@ -1456,19 +1426,19 @@ msgstr "Дастгоҳи Диски Фишурда"
 
 #. i18n: file: kaudiocreator.kcfg:30
 #. i18n: ectx: label, entry (removeCompletedJobs), group (General)
-#: rc.cpp:500
+#: rc.cpp:485
 msgid "Automatically remove jobs when finished"
 msgstr "Ҳангоми ба охиррасонӣ ба таври худкор супоришҳоро хориҷ кардан"
 
 #. i18n: file: kaudiocreator.kcfg:38
 #. i18n: ectx: label, entry (replaceInput), group (General)
-#: rc.cpp:506
+#: rc.cpp:491
 msgid "Regexp to match file names with"
 msgstr "Ифодаҳои муқаррарӣ барои мувофиқат бо номҳои файл"
 
 #. i18n: file: kaudiocreator.kcfg:41
 #. i18n: ectx: label, entry (replaceOutput), group (General)
-#: rc.cpp:509
+#: rc.cpp:494
 msgid "String used to replace the parts that match the selection regexp"
 msgstr ""
 "Сатр барои ҷой иваз кардани қисмҳое, ки бо ифодаҳои муқаррарии интихобшуда "
@@ -1476,7 +1446,7 @@ msgstr ""
 
 #. i18n: file: kaudiocreator.kcfg:67
 #. i18n: ectx: label, entry (defaultEncoder), group (Encoder)
-#: rc.cpp:512
+#: rc.cpp:497
 #, fuzzy
 #| msgid "Current encoder:"
 msgid "Current default encoder"
@@ -1484,68 +1454,98 @@ msgstr "Рамзгузори ҷорӣ:"
 
 #. i18n: file: kaudiocreator.kcfg:71
 #. i18n: ectx: label, entry (inputTypesList), group (Encoder)
-#: rc.cpp:515
+#: rc.cpp:500
 msgid "List of available input types"
 msgstr ""
 
 #. i18n: file: kaudiocreator.kcfg:74
 #. i18n: ectx: label, entry (numberOfCpus), group (Encoder)
-#: rc.cpp:518
+#: rc.cpp:503
 msgid "Number of files to encode at a time"
 msgstr "Шумораи файлҳои дар як вақт рамзшаванда"
 
 #. i18n: file: kaudiocreator.kcfg:78
 #. i18n: ectx: label, entry (fileFormat), group (Encoder)
-#: rc.cpp:521
+#: rc.cpp:506
 msgid "Location pattern for encoded files"
 msgstr "Намунаи мавқеъ барои файлҳои рамзишуда"
 
 #. i18n: file: kaudiocreator.kcfg:82
 #. i18n: ectx: label, entry (NiceLevel), group (Encoder)
-#: rc.cpp:524
+#: rc.cpp:509
 msgid "Encoder priority"
 msgstr "Имтиёзҳои рамзгузор"
 
 #. i18n: file: kaudiocreator.kcfg:88
 #. i18n: ectx: label, entry (FullDecoderDebug), group (Encoder)
-#: rc.cpp:527
+#: rc.cpp:512
 msgid "Enable full decoder debugging"
 msgstr "Даргиронидани рамзкушоии пурраи ғалатёбӣ"
 
 #. i18n: file: kaudiocreator.kcfg:94
 #. i18n: ectx: label, entry (beepAfterRip), group (Ripper)
-#: rc.cpp:530
+#: rc.cpp:515
 msgid "Beep after rip"
 msgstr "Додани аломати овозӣ баъди хондан"
 
 #. i18n: file: kaudiocreator.kcfg:98
 #. i18n: ectx: label, entry (autoEjectAfterRip), group (Ripper)
-#: rc.cpp:533
+#: rc.cpp:518
 #, fuzzy
 msgid "Eject CD after last track is ripped"
 msgstr "Баъди он, ки суруди охирон хонда мешавад, Диски Фишурдаро берун кашед"
 
 #. i18n: file: kaudiocreator.kcfg:102
 #. i18n: ectx: label, entry (autoEjectDelay), group (Ripper)
-#: rc.cpp:536
+#: rc.cpp:521
 msgid "Auto-eject delay"
 msgstr "Интизорӣ пеш аз берункашии худкор"
 
 #. i18n: file: kaudiocreator.kcfg:106
 #. i18n: ectx: label, entry (enableTempDir), group (Ripper)
-#: rc.cpp:539
+#: rc.cpp:524
 msgid "Specify temporary directory"
 msgstr "Таъинсозии феҳристи муваққатӣ"
 
 #. i18n: file: kaudiocreator.kcfg:110
 #. i18n: ectx: label, entry (tempDir), group (Ripper)
-#: rc.cpp:542
+#: rc.cpp:527
 msgid "Location of temporary directory to use"
 msgstr "Мавқеъи феҳристи муваққатӣ барои истифода"
 
 #. i18n: file: kaudiocreator.kcfg:53
-#: rc.cpp:545
+#: rc.cpp:530
 msgid "Various Artists"
+msgstr ""
+
+#. i18n: file: kaudiocreator_encoders.kcfg:12
+#. i18n: ectx: label, entry (encoderName), group ($(encoder))
+#: rc.cpp:534
+msgid "Name of the encoder"
+msgstr "Номи рамзгузор"
+
+#. i18n: file: kaudiocreator_encoders.kcfg:16
+#. i18n: ectx: label, entry (commandLine), group ($(encoder))
+#: rc.cpp:537
+msgid "Command line to invoke encoder"
+msgstr "Сатри фармон барои берункашии рамзгузор"
+
+#. i18n: file: kaudiocreator_encoders.kcfg:20
+#. i18n: ectx: label, entry (extension), group ($(encoder))
+#: rc.cpp:540
+msgid "File extension"
+msgstr "Вусъати файл"
+
+#. i18n: file: kaudiocreator_encoders.kcfg:24
+#. i18n: ectx: label, entry (inputTypes), group ($(encoder))
+#: rc.cpp:543
+msgid "Input Types"
+msgstr ""
+
+#. i18n: file: kaudiocreator_encoders.kcfg:32
+#. i18n: ectx: label, entry (checkOutput), group ($(encoder))
+#: rc.cpp:546
+msgid "Check output files"
 msgstr ""
 
 #: ripper.cpp:139
