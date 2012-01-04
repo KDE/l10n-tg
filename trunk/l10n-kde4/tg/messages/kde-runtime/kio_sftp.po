@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: kio_sftp\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2011-11-13 04:06+0100\n"
-"PO-Revision-Date: 2009-01-11 17:19+0500\n"
+"PO-Revision-Date: 2012-01-04 21:54+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik\n"
 "Language: \n"
@@ -21,19 +21,20 @@ msgstr ""
 "X-Generator: KBabel 1.0.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: kio_sftp.cpp:261 kio_sftp.cpp:265 kio_sftp.cpp:705
+#: kio_sftp.cpp:261
+#: kio_sftp.cpp:265
+#: kio_sftp.cpp:705
 msgid "SFTP Login"
 msgstr "Номнависӣ дар SFTP"
 
 #: kio_sftp.cpp:277
 msgid "Use the username input field to answer this question."
-msgstr ""
+msgstr "Используйте поле имени пользователя для ответа на этот вопрос."
 
 #: kio_sftp.cpp:443
-#, fuzzy
 #| msgid "Could not allocate memory for SFTP packet."
 msgid "Could not allocate callbacks"
-msgstr "Ғунҷонидани ҳофиза дар бастаи барномаҳои SFTP нашуда истодааст."
+msgstr "Не удалось выделить память под функции обработки"
 
 #: kio_sftp.cpp:503
 #, kde-format
@@ -41,68 +42,74 @@ msgid "Opening SFTP connection to host %1:%2"
 msgstr "Кушодани пайвастшавии SFTP бо шабакаи %1:%2"
 
 #: kio_sftp.cpp:507
-#, fuzzy
 #| msgid "No hostname specified"
 msgid "No hostname specified."
-msgstr "Ягон номи соҳиб муайян нагардидааст"
+msgstr "Не указано имя сервера."
 
 #: kio_sftp.cpp:539
 msgid "Could not create a new SSH session."
-msgstr ""
+msgstr "Не удалось открыть сеанс SSH."
 
-#: kio_sftp.cpp:548 kio_sftp.cpp:553
-#, fuzzy
+#: kio_sftp.cpp:548
+#: kio_sftp.cpp:553
 #| msgid "Could not read SFTP packet"
 msgid "Could not set a timeout."
-msgstr "Хондани бастаи барномаҳои SFTP нашуда истодааст"
+msgstr "Не удалось установить время ожидания."
 
-#: kio_sftp.cpp:560 kio_sftp.cpp:566
+#: kio_sftp.cpp:560
+#: kio_sftp.cpp:566
 msgid "Could not set compression."
-msgstr ""
+msgstr "Не удалось установить сжатие."
 
 #: kio_sftp.cpp:573
 msgid "Could not set host."
-msgstr ""
+msgstr "Не удалось установить имя сервера."
 
 #: kio_sftp.cpp:580
-#, fuzzy
 #| msgid "Could not read SFTP packet"
 msgid "Could not set port."
-msgstr "Хондани бастаи барномаҳои SFTP нашуда истодааст"
+msgstr "Не удалось установить номер порта."
 
 #: kio_sftp.cpp:589
 msgid "Could not set username."
-msgstr ""
+msgstr "Не удалось установить имя пользователя."
 
 #: kio_sftp.cpp:598
 msgid "Could not set log verbosity."
-msgstr ""
+msgstr "Не удалось установить уровень журналирования."
 
 #: kio_sftp.cpp:606
 msgid "Could not parse the config file."
-msgstr ""
+msgstr "Не удалось обработать конфигурационный файл."
 
 #: kio_sftp.cpp:641
 #, kde-format
 msgid ""
 "The host key for this server was not found, but another type of key exists.\n"
-"An attacker might change the default server key to confuse your client into "
-"thinking the key does not exist.\n"
+"An attacker might change the default server key to confuse your client into thinking the key does not exist.\n"
 "Please contact your system administrator.\n"
 "%1"
 msgstr ""
+"Для этого сервера не найден ключ узла, но присутствует другой тип ключа.\n"
+"Атакующий злоумышленник может подменить ключ сервера, что вызывает подобную ситуацию.\n"
+"Обратитесь к системному администратору.\n"
+"%1"
 
 #: kio_sftp.cpp:652
 #, kde-format
 msgid ""
 "The host key for the server %1 has changed.\n"
-"This could either mean that DNS SPOOFING is happening or the IP address for "
-"the host and its host key have changed at the same time.\n"
+"This could either mean that DNS SPOOFING is happening or the IP address for the host and its host key have changed at the same time.\n"
 "The fingerprint for the key sent by the remote host is:\n"
 " %2\n"
 "Please contact your system administrator.\n"
 "%3"
 msgstr ""
+"Изменён ключ сервера %1.\n"
+"Это означает, что возможна подмена адреса сервера.\n"
+"Отпечаток ключа, полученный сейчас с сервера: %2\n"
+"Обратитесь к системному администратору.\n"
+"%3"
 
 #: kio_sftp.cpp:665
 msgid "Warning: Cannot verify host's identity."
@@ -115,8 +122,14 @@ msgid ""
 "The key fingerprint is: %2\n"
 "Are you sure you want to continue connecting?"
 msgstr ""
+"Не удалось определить аутентичность сервера %1.\n"
+"Отпечаток ключа: %2\n"
+"Продолжить подключение к серверу?"
 
-#: kio_sftp.cpp:697 kio_sftp.cpp:719 kio_sftp.cpp:770 kio_sftp.cpp:786
+#: kio_sftp.cpp:697
+#: kio_sftp.cpp:719
+#: kio_sftp.cpp:770
+#: kio_sftp.cpp:786
 msgid "Authentication failed."
 msgstr "Хатогӣ дар аслшиносӣ."
 
@@ -133,14 +146,12 @@ msgid "Incorrect username or password"
 msgstr "Номи корванд ё гузарвожаи нодуруст"
 
 #: kio_sftp.cpp:799
-msgid ""
-"Unable to request the SFTP subsystem. Make sure SFTP is enabled on the "
-"server."
-msgstr ""
+msgid "Unable to request the SFTP subsystem. Make sure SFTP is enabled on the server."
+msgstr "Не удаётся использовать подсистему SFTP. Убедитесь, что сервер поддерживает SFTP."
 
 #: kio_sftp.cpp:807
 msgid "Could not initialize the SFTP session."
-msgstr ""
+msgstr "Не удалось инициализировать сеанс SFTP."
 
 #: kio_sftp.cpp:812
 #, kde-format
@@ -148,10 +159,10 @@ msgid "Successfully connected to %1"
 msgstr "Пайвастшавии бомувафақият бо %1"
 
 #: kio_sftp.cpp:1744
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Could not read SFTP packet"
 msgid "Could not read link: %1"
-msgstr "Хондани бастаи барномаҳои SFTP нашуда истодааст"
+msgstr "Не удалось прочитать ссылку: %1"
 
 #: kio_sftp.cpp:2149
 #, kde-format
@@ -159,6 +170,8 @@ msgid ""
 "Could not change permissions for\n"
 "%1"
 msgstr ""
+"Невозможно изменить права доступа для\n"
+"%1"
 
 #~ msgid "An internal error occurred. Please retry the request again."
 #~ msgstr ""
@@ -175,155 +188,3 @@ msgstr ""
 
 #~ msgid "Connection closed by remote host."
 #~ msgstr "Пайвастшавӣ аз тарафи соҳиби дурдаст пӯшида шудааст."
-
-#, fuzzy
-#~| msgid "Unexpected SFTP error: %1"
-#~ msgid "unexpected SFTP error: %1"
-#~ msgstr "Хатои SFTP номуайян: %1"
-
-#~ msgid "SFTP version %1"
-#~ msgstr "Версияи SFTP %1"
-
-#~ msgid "Protocol error."
-#~ msgstr "Хатогии қарордод"
-
-#~ msgid "An internal error occurred. Please try again."
-#~ msgstr "Хатогии дохилӣ рух дод. Бори дигар кӯшиш кунед."
-
-#~ msgid ""
-#~ "Unknown error was encountered while copying the file to '%1'. Please try "
-#~ "again."
-#~ msgstr ""
-#~ "Хатогии номаълум ҳангоми нусхапартоии файл ба '%1' рух дод. Бори дигар "
-#~ "кӯшиш кунед."
-
-#~ msgid "The remote host does not support renaming files."
-#~ msgstr "Соҳиби дурдаст файлҳои азнавномгузошташударо пуштибонӣ намекунад."
-
-#~ msgid "The remote host does not support creating symbolic links."
-#~ msgstr "Соҳиби дурдаст офаридани алоқаҳои аломатиро пуштибонӣ намекунад."
-
-#~ msgid "Connection closed"
-#~ msgstr "Пайвастшавӣ пӯшида шудааст"
-
-#~ msgid "End of file."
-#~ msgstr "Поёни файл."
-
-#~ msgid "SFTP command failed for an unknown reason."
-#~ msgstr "Иҷрои фармони SFTP бо сабаби номаълум ба хатогӣ дучор шуд."
-
-#~ msgid "The SFTP server received a bad message."
-#~ msgstr "Хидматрасони SFTP паёми харобшударо гирифтааст."
-
-#~ msgid "You attempted an operation unsupported by the SFTP server."
-#~ msgstr ""
-#~ "Кӯшиши иҷрои амалиёте, ки аз тарафи хидматрасони SFTP пуштибонӣ "
-#~ "намегардад."
-
-#~ msgid "Error code: %1"
-#~ msgstr "Рамзи хатогӣ: %1"
-
-#~ msgid "Cannot specify a subsystem and command at the same time."
-#~ msgstr "Дар як вақт таъин нашудани зерсистема ва фармон мумкин нест."
-
-#~ msgid "No options provided for ssh execution."
-#~ msgstr "Хосиятҳои гузориш барои иҷрои ssh нестанд."
-
-#~ msgid "Failed to execute ssh process."
-#~ msgstr "Хатогӣ дар иҷрои амали ssh."
-
-#~ msgid "Error encountered while talking to ssh."
-#~ msgstr "Ҳангоми сӯҳбаткунӣ бо ssh хатогӣ дучор омад."
-
-#~ msgid "Please supply a password."
-#~ msgstr "Марҳамат карда гузарвожаро таъин кунед."
-
-#~ msgid "Please supply the passphrase for your SSH private key."
-#~ msgstr ""
-#~ "Марҳамат карда гузарвожаро барои калиди шахсии SSH-и худ таъин кунед."
-
-#~ msgid "Authentication to %1 failed"
-#~ msgstr "Хатогии аслшиносӣ дар %1"
-
-#~ msgid ""
-#~ "The identity of the remote host '%1' could not be verified because the "
-#~ "host's key is not in the \"known hosts\" file."
-#~ msgstr ""
-#~ "Шиносоии соҳиби дурдасти '%1' баррасӣ карда намешавад зеро калиди соҳиб "
-#~ "дар файли \"соҳибони маълум\" нест."
-
-#~ msgid ""
-#~ " Manually, add the host's key to the \"known hosts\" file or contact your "
-#~ "administrator."
-#~ msgstr ""
-#~ " Калиди соҳибро ба \"соҳибони маълум\" ба таври дастӣ илова кунед ё бо "
-#~ "идоракунандаи худ алоқа бандед."
-
-#~ msgid " Manually, add the host's key to %1 or contact your administrator."
-#~ msgstr ""
-#~ " Калиди соҳибро ба %1 ба таври дастӣ илова кунед ё бо идоракунандаи худ "
-#~ "алоқа бандед."
-
-#~ msgid ""
-#~ "The identity of the remote host '%1' could not be verified. The host's "
-#~ "key fingerprint is:\n"
-#~ "%2\n"
-#~ "You should verify the fingerprint with the host's administrator before "
-#~ "connecting.\n"
-#~ "\n"
-#~ "Would you like to accept the host's key and connect anyway? "
-#~ msgstr ""
-#~ "Шиносоии соҳиби дурдасти '%1' баррасӣ карда намешавад. Шиносаи калиди "
-#~ "соҳиб ин:\n"
-#~ "%2\n"
-#~ "Шумо бояд пеш аз пайвастшавӣ шиносаро бо идоракунандаи соҳиб баррасӣ "
-#~ "намоед.\n"
-#~ "\n"
-#~ "Шумо мехоҳед, ки калиди соҳибро қабул карда пайвастшавиро давом диҳед? "
-
-#~ msgid ""
-#~ "WARNING: The identity of the remote host '%1' has changed!\n"
-#~ "\n"
-#~ "Someone could be eavesdropping on your connection, or the administrator "
-#~ "may have just changed the host's key. Either way, you should verify the "
-#~ "host's key fingerprint with the host's administrator. The key fingerprint "
-#~ "is:\n"
-#~ "%2\n"
-#~ "Add the correct host key to \"%3\" to get rid of this message."
-#~ msgstr ""
-#~ "Диққат: Шиносоии соҳиби дурдасти '%1' тағир ёфтааст!\n"
-#~ "\n"
-#~ "Касе ба пайвастшавии шумо дохил шудааст ё идоракунанда фақат калиди "
-#~ "соҳибро иваз кардааст. Дар ҳама ҳолат шумо бояд шиносоии калиди соҳибро "
-#~ "бо идоракунандаи соҳиб баррасӣ кунед. Шиноса ин:\n"
-#~ "%2\n"
-#~ "Калиди дурдаст ба \"%3\" илова кунед ва аз ин паём халосӣ меёбед."
-
-#~ msgid ""
-#~ "WARNING: The identity of the remote host '%1' has changed!\n"
-#~ "\n"
-#~ "Someone could be eavesdropping on your connection, or the administrator "
-#~ "may have just changed the host's key. Either way, you should verify the "
-#~ "host's key fingerprint with the host's administrator before connecting. "
-#~ "The key fingerprint is:\n"
-#~ "%2\n"
-#~ "\n"
-#~ "Would you like to accept the host's new key and connect anyway?"
-#~ msgstr ""
-#~ "Диққат: Шиносоии соҳиби дурдасти '%1' тағир ёфтааст!\n"
-#~ "\n"
-#~ "Касе ба пайвастшавии шумо дохил шудааст ё идоракунанда фақат калиди "
-#~ "соҳибро иваз кардааст. Дар ҳама ҳолат шумо бояд шиносоии калиди соҳибро "
-#~ "бо идоракунандаи соҳиб баррасӣ кунед пеш аз пайвастшавӣ.Шиноса ин:\n"
-#~ "%2\n"
-#~ "\n"
-#~ "Мехоҳед, ки калиди соҳибро қабул карда, пайвастшавиро давом диҳед?"
-
-#~ msgid "Host key was rejected."
-#~ msgstr "Калиди соҳиб рад шудааст."
-
-#~ msgid "Please enter a username and password"
-#~ msgstr "Марҳамат карда номи корванд ва гузарвожаро ворид кунед"
-
-#~ msgid "Could not copy file to '%1'"
-#~ msgstr "Файлро ба '%1' нусха карда нашуда истодааст"
