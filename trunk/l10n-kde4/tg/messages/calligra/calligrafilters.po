@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kofficefilters\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-06 02:44+0100\n"
+"POT-Creation-Date: 2012-02-08 03:09+0100\n"
 "PO-Revision-Date: 2004-07-06 13:25-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -21,6 +21,11 @@ msgstr ""
 "<youth_opportunities@tajik.net>\n"
 "X-Generator: KBabel 1.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: flow/imageexport/flow_imageexportdialog.cpp:35
+#, fuzzy
+msgid "Export to Image"
+msgstr "Воридоти суратҳо"
 
 #: flow/imageexport/flow_imageexport.cpp:91
 #: kchart/genericimageexport/genericimageexport.cpp:67
@@ -43,11 +48,6 @@ msgstr "Хатои Содироти PNG"
 #: kformula/png/pngexport.cc:65 kformula/svg/svgexport.cc:80
 msgid "Malformed XML data."
 msgstr "Санаи XML нокифоя ташкилёфтани."
-
-#: flow/imageexport/flow_imageexportdialog.cpp:35
-#, fuzzy
-msgid "Export to Image"
-msgstr "Воридоти суратҳо"
 
 #: karbon/eps/EpsExportDlg.cpp:37
 msgid "EPS Export"
@@ -447,10 +447,6 @@ msgstr "Ҷадвал %1"
 msgid "Top"
 msgstr ""
 
-#: tables/opencalc/opencalcexport.cc:915
-msgid "Page "
-msgstr "Саҳифа"
-
 #: tables/opencalc/opencalcimport.cc:1236
 msgid "The file seems to be corrupt. Skipping a table."
 msgstr "Ин файл вайрон аст.Ҷадвал надида монда мешавад."
@@ -475,6 +471,10 @@ msgstr ""
 #: tables/opencalc/opencalcimport.cc:1948 words/oowriter/oowriterimport.cc:558
 msgid "Unsupported document version"
 msgstr "Ривояти ҳуҷҷат бетарафдори кардан мебошад"
+
+#: tables/opencalc/opencalcexport.cc:915
+msgid "Page "
+msgstr "Саҳифа"
 
 #: tables/qpro/qproimport.cc:128
 #, fuzzy
@@ -521,12 +521,6 @@ msgstr ""
 #: tables/xlsx/XlsxXmlWorksheetReader.cpp:1418
 msgid "Expected integer or floating point number"
 msgstr ""
-
-#: words/abiword/ImportField.cc:29
-#, kde-format
-msgctxt "Frameset name"
-msgid "Footnote %1"
-msgstr "Унвони саҳифаи ипоёна %1"
 
 #: words/abiword/abiwordimport.cc:479
 #, kde-format
@@ -578,6 +572,12 @@ msgstr "Ахбороти ҳуҷҷат нигоҳ карда натавонист
 #: words/abiword/abiwordimport.cc:1638
 msgid "Unable to save main document."
 msgstr "Ҳуҷҷати асосӣ нигоҳ карда натавонист."
+
+#: words/abiword/ImportField.cc:29
+#, kde-format
+msgctxt "Frameset name"
+msgid "Footnote %1"
+msgstr "Унвони саҳифаи ипоёна %1"
 
 #: words/ascii/ExportDialog.cc:44
 #, fuzzy
@@ -721,6 +721,18 @@ msgstr "Сарлавҳаи поёни Саҳифаи Аввалин"
 msgid "Words's MS Write Import Filter"
 msgstr "Филтри Воридоти Навиштани KWord's MS"
 
+#: words/oowriter/conversion.cc:124
+msgid "Header"
+msgstr "Сарлавҳа"
+
+#: words/oowriter/conversion.cc:128
+msgid "Footer"
+msgstr "Сарлавҳаи поён"
+
+#: words/oowriter/oowriterimport.cc:127
+msgid "Main Text Frameset"
+msgstr "Танзими Манти Умумӣ"
+
 #: words/oowriter/ExportFilter.cc:1066
 #, kde-format
 msgctxt "Object name"
@@ -740,18 +752,6 @@ msgstr "Чорчӯбаи ҷадвал %1"
 msgctxt "Pseudo-author for annotations"
 msgid "KWord 1.3"
 msgstr "KWord 1.3"
-
-#: words/oowriter/conversion.cc:124
-msgid "Header"
-msgstr "Сарлавҳа"
-
-#: words/oowriter/conversion.cc:128
-msgid "Footer"
-msgstr "Сарлавҳаи поён"
-
-#: words/oowriter/oowriterimport.cc:127
-msgid "Main Text Frameset"
-msgstr "Танзими Манти Умумӣ"
 
 #: words/rtf/import/rtfimport.cpp:56
 msgid "The file cannot be loaded, as it seems not to be an RTF document."
