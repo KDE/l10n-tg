@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-02 04:43+0100\n"
+"POT-Creation-Date: 2012-03-03 04:29+0100\n"
 "PO-Revision-Date: 2007-02-23 17:45+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik Language\n"
@@ -2031,7 +2031,7 @@ msgstr ""
 msgid "L&ayout"
 msgstr "Тақсимоти &забонак"
 
-#: utils/kateprinter.cpp:1122 schema/kateschemaconfig.cpp:784
+#: utils/kateprinter.cpp:1122 schema/kateschemaconfig.cpp:791
 msgid "&Schema:"
 msgstr "&Нақша:"
 
@@ -3206,7 +3206,7 @@ msgstr "Фармони  \"%1\" кор накард."
 msgid "No such command: \"%1\""
 msgstr "Ин фармон нест: \"%1\""
 
-#: view/kateviewhelpers.cpp:769 schema/kateschemaconfig.cpp:185
+#: view/kateviewhelpers.cpp:768 schema/kateschemaconfig.cpp:192
 msgid "Bookmark"
 msgstr "Мондан"
 
@@ -3365,6 +3365,10 @@ msgstr ""
 msgid "Kate Styles"
 msgstr "Услубҳои Kate"
 
+#: schema/katecolortreewidget.cpp:51 schema/katecolortreewidget.cpp:73
+msgid "Use default color from the KDE color scheme"
+msgstr ""
+
 #: schema/kateschemaconfig.cpp:87
 #, fuzzy
 msgid "Text Area"
@@ -3489,50 +3493,60 @@ msgstr ""
 "аз сатри гузаронидаи намоӣ</dd></dl>"
 
 #: schema/kateschemaconfig.cpp:142
+msgid "Code Folding"
+msgstr "Печондани феҳристҳои рамз"
+
+#: schema/kateschemaconfig.cpp:144
+#, fuzzy
+#| msgid "<p>Sets the background color of the editing area.</p>"
+msgid "<p>Set the color of the code folding bar.</p>"
+msgstr "<p>Ранги замина дар мавзеъи таҳриркунӣ.</p>"
+
+#: schema/kateschemaconfig.cpp:149
 #, fuzzy
 #| msgid "Scroll Line Up"
 msgid "Modified Lines"
 msgstr "Хат ба боло гардонед"
 
-#: schema/kateschemaconfig.cpp:144
+#: schema/kateschemaconfig.cpp:151
 #, fuzzy
 #| msgid "<p>Sets the color of the tabulator marks:</p>"
 msgid ""
 "<p>Sets the color of the line modification marker for modified lines.</p>"
 msgstr "<p>Танзими ранги тамғаи табулятор:</p>"
 
-#: schema/kateschemaconfig.cpp:148
+#: schema/kateschemaconfig.cpp:155
 #, fuzzy
 #| msgid "Save File"
 msgid "Saved Lines"
 msgstr "Нигоҳ доштани файл"
 
-#: schema/kateschemaconfig.cpp:150
+#: schema/kateschemaconfig.cpp:157
 #, fuzzy
 #| msgid "<p>Sets the color of the tabulator marks:</p>"
 msgid "<p>Sets the color of the line modification marker for saved lines.</p>"
 msgstr "<p>Танзими ранги тамғаи табулятор:</p>"
 
-#: schema/kateschemaconfig.cpp:158
+#: schema/kateschemaconfig.cpp:165
 #, fuzzy
 #| msgid "Selection Mode"
 msgid "Text Decorations"
 msgstr "Ҳолати интихобкунӣ"
 
-#: schema/kateschemaconfig.cpp:160
+#: schema/kateschemaconfig.cpp:167
 msgid "Spelling Mistake Line"
 msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:167
 #. i18n: ectx: property (whatsThis), widget (KColorButton, spellingmistakeline)
-#: schema/kateschemaconfig.cpp:162 rc.cpp:608
+#: schema/kateschemaconfig.cpp:169 rc.cpp:608
 #, fuzzy
 #| msgid "<p>Sets the color of the tabulator marks:</p>"
 msgid ""
 "<p>Sets the color of the line that is used to indicate spelling mistakes.</p>"
 msgstr "<p>Танзими ранги тамғаи табулятор:</p>"
 
-#: schema/kateschemaconfig.cpp:166
+#: schema/kateschemaconfig.cpp:173
 #, fuzzy
 #| msgid "Tab markers:"
 msgid "Tab and Space Markers"
@@ -3540,13 +3554,13 @@ msgstr "Маркерҳои табулятсия:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:153
 #. i18n: ectx: property (whatsThis), widget (KColorButton, tmarker)
-#: schema/kateschemaconfig.cpp:168 rc.cpp:602
+#: schema/kateschemaconfig.cpp:175 rc.cpp:602
 #, fuzzy
 #| msgid "<p>Sets the color of the tabulator marks:</p>"
 msgid "<p>Sets the color of the tabulator marks.</p>"
 msgstr "<p>Танзими ранги тамғаи табулятор:</p>"
 
-#: schema/kateschemaconfig.cpp:172
+#: schema/kateschemaconfig.cpp:179
 #, fuzzy
 #| msgid "Bracket highlight:"
 msgid "Bracket Highlight"
@@ -3554,7 +3568,7 @@ msgstr "Зерравшании қавс:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:125
 #. i18n: ectx: property (whatsThis), widget (KColorButton, bracket)
-#: schema/kateschemaconfig.cpp:174 rc.cpp:590
+#: schema/kateschemaconfig.cpp:181 rc.cpp:590
 msgid ""
 "<p>Sets the bracket matching color. This means, if you place the cursor e.g. "
 "at a <b>(</b>, the matching <b>)</b> will be highlighted with this color.</p>"
@@ -3563,13 +3577,13 @@ msgstr ""
 "шумо курсорро ба қавс <b>(</b>, қавси ба он мутобиқ <b>)</b> ҷорӣ карда "
 "бошед, он бо чунин ранг ҷудо хоҳад шуд.</p>"
 
-#: schema/kateschemaconfig.cpp:183
+#: schema/kateschemaconfig.cpp:190
 #, fuzzy
 #| msgid "Colors"
 msgid "Marker Colors"
 msgstr "Рангҳо"
 
-#: schema/kateschemaconfig.cpp:187
+#: schema/kateschemaconfig.cpp:194
 #, fuzzy
 #| msgid ""
 #| "<p>Sets the background color of the selected marker type.</p><p><b>Note</"
@@ -3582,55 +3596,55 @@ msgstr ""
 "ранги хеле номаҳфум низ намоиш мешавад, чуноне ки он элементи шаффоф мебошад."
 "</p>"
 
-#: schema/kateschemaconfig.cpp:191
+#: schema/kateschemaconfig.cpp:198
 msgid "Active Breakpoint"
 msgstr "Нуқтаи фаъолии таваққуф"
 
-#: schema/kateschemaconfig.cpp:196
+#: schema/kateschemaconfig.cpp:203
 msgid "Reached Breakpoint"
 msgstr "Нуқтаи ҷории таваққуф"
 
-#: schema/kateschemaconfig.cpp:201
+#: schema/kateschemaconfig.cpp:208
 msgid "Disabled Breakpoint"
 msgstr "Нуқтаи ғайрифаъоли таваққуф"
 
-#: schema/kateschemaconfig.cpp:206
+#: schema/kateschemaconfig.cpp:213
 msgid "Execution"
 msgstr "Иҷро кардан"
 
-#: schema/kateschemaconfig.cpp:211
+#: schema/kateschemaconfig.cpp:218
 #, fuzzy
 msgid "Warning"
 msgstr "Хат"
 
-#: schema/kateschemaconfig.cpp:216
+#: schema/kateschemaconfig.cpp:223
 #, fuzzy
 msgid "Error"
 msgstr "Хато: "
 
-#: schema/kateschemaconfig.cpp:225
+#: schema/kateschemaconfig.cpp:232
 msgid "Text Templates & Snippets"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:229
+#: schema/kateschemaconfig.cpp:236
 #, fuzzy
 #| msgid "Background"
 msgid "Background"
 msgstr "Замина"
 
-#: schema/kateschemaconfig.cpp:234
+#: schema/kateschemaconfig.cpp:241
 msgid "Editable Placeholder"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:239
+#: schema/kateschemaconfig.cpp:246
 msgid "Focused Editable Placeholder"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:244
+#: schema/kateschemaconfig.cpp:251
 msgid "Not Editable Placeholder"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:394
+#: schema/kateschemaconfig.cpp:401
 #, fuzzy
 msgid ""
 "<p>This list displays the default styles for the current schema and offers "
@@ -3646,23 +3660,23 @@ msgstr ""
 "метавонед аҳамияти ранги матнро ва заминаи пешфарзиро бо истифодаи менюи "
 "матнӣ низ танзим намоед."
 
-#: schema/kateschemaconfig.cpp:488
+#: schema/kateschemaconfig.cpp:495
 msgid "H&ighlight:"
 msgstr "З&ерравшанӣ:"
 
-#: schema/kateschemaconfig.cpp:495 schema/kateschemaconfig.cpp:797
+#: schema/kateschemaconfig.cpp:502 schema/kateschemaconfig.cpp:804
 #, fuzzy
 #| msgid "E&xport as HTML..."
 msgid "Export..."
 msgstr "С&дирот ҳамчун HTML..."
 
-#: schema/kateschemaconfig.cpp:498 schema/kateschemaconfig.cpp:799
+#: schema/kateschemaconfig.cpp:505 schema/kateschemaconfig.cpp:806
 #, fuzzy
 #| msgid "Normal &Color..."
 msgid "Import..."
 msgstr "&Ранги матн..."
 
-#: schema/kateschemaconfig.cpp:529
+#: schema/kateschemaconfig.cpp:536
 #, fuzzy
 #| msgid ""
 #| "This list displays the contexts of the current syntax highlight mode and "
@@ -3692,145 +3706,145 @@ msgstr ""
 "аз менюи матнӣ, интихоб кунед. <p>Шумо метавонед аҳамияти ранги матнро ва "
 "заминаи пешфарзиро бо истифодаи менюи матнӣ низ танзим намоед."
 
-#: schema/kateschemaconfig.cpp:550
+#: schema/kateschemaconfig.cpp:557
 #, fuzzy
 #| msgid "Highlighting for Scheme"
 msgid "Loading all highlightings for schema"
 msgstr "Мавриди зарурӣ барои Нақша"
 
-#: schema/kateschemaconfig.cpp:550
+#: schema/kateschemaconfig.cpp:557
 msgid "Cancel"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:684 schema/kateschemaconfig.cpp:749
-#: schema/kateschemaconfig.cpp:843
+#: schema/kateschemaconfig.cpp:691 schema/kateschemaconfig.cpp:756
+#: schema/kateschemaconfig.cpp:850
 #, fuzzy
 #| msgid "Font & Color Schemas"
 msgid "Kate color schema"
 msgstr "Нақши ранг ва ҳарф"
 
-#: schema/kateschemaconfig.cpp:686
+#: schema/kateschemaconfig.cpp:693
 msgid "Importing colors for single highlighting"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:697
+#: schema/kateschemaconfig.cpp:704
 msgid "File is not a single highlighting color file"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:698 schema/kateschemaconfig.cpp:890
+#: schema/kateschemaconfig.cpp:705 schema/kateschemaconfig.cpp:897
 #, fuzzy
 #| msgid "File Format"
 msgid "Fileformat error"
 msgstr "Андозаи файл"
 
-#: schema/kateschemaconfig.cpp:708
+#: schema/kateschemaconfig.cpp:715
 #, kde-format
 msgid "The selected file contains colors for a non existing highlighting:%1"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:709
+#: schema/kateschemaconfig.cpp:716
 msgid "Import failure"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:732
+#: schema/kateschemaconfig.cpp:739
 #, kde-format
 msgid "Colors have been imported for highlighting: %1"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:733
+#: schema/kateschemaconfig.cpp:740
 msgid "Import has finished"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:751
+#: schema/kateschemaconfig.cpp:758
 #, kde-format
 msgid "Exporting colors for single highlighting: %1"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:791
+#: schema/kateschemaconfig.cpp:798
 msgid "&New..."
 msgstr "&Нав..."
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:44
 #. i18n: ectx: property (text), widget (QPushButton, btnDelete)
-#: schema/kateschemaconfig.cpp:794 rc.cpp:305
+#: schema/kateschemaconfig.cpp:801 rc.cpp:305
 #, fuzzy
 msgid "&Delete"
 msgstr "Интихобшуда"
 
-#: schema/kateschemaconfig.cpp:808
+#: schema/kateschemaconfig.cpp:815
 msgid "Colors"
 msgstr "Рангҳо"
 
-#: schema/kateschemaconfig.cpp:812
+#: schema/kateschemaconfig.cpp:819
 msgid "Font"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:816
+#: schema/kateschemaconfig.cpp:823
 #, fuzzy
 #| msgid "Normal Text Styles"
 msgid "Default Text Styles"
 msgstr "Услубҳои муқаррарии матн"
 
-#: schema/kateschemaconfig.cpp:820
+#: schema/kateschemaconfig.cpp:827
 msgid "Highlighting Text Styles"
 msgstr "Услубҳои матни мавриди зарурӣ"
 
-#: schema/kateschemaconfig.cpp:828
+#: schema/kateschemaconfig.cpp:835
 #, kde-format
 msgid "&Default schema for %1:"
 msgstr "&Нақшаи пешфарз барои %1:"
 
-#: schema/kateschemaconfig.cpp:845
+#: schema/kateschemaconfig.cpp:852
 #, kde-format
 msgid "Exporting color schema:%1"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:858
+#: schema/kateschemaconfig.cpp:865
 msgid "Exporting schema"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:858 schema/kateschemaconfig.cpp:947
+#: schema/kateschemaconfig.cpp:865 schema/kateschemaconfig.cpp:954
 #, fuzzy
 #| msgid "&Stop"
 msgid "Stop"
 msgstr "&Исто"
 
-#: schema/kateschemaconfig.cpp:880
+#: schema/kateschemaconfig.cpp:887
 #, fuzzy
 #| msgid "Font & Color Schemas"
 msgid "Importing color schema"
 msgstr "Нақши ранг ва ҳарф"
 
-#: schema/kateschemaconfig.cpp:889
+#: schema/kateschemaconfig.cpp:896
 msgid "File is not a full schema file"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:894
+#: schema/kateschemaconfig.cpp:901
 #, fuzzy
 msgid "Name unspecified"
 msgstr "Фосила"
 
 #. i18n: file: utils/howtoimportschema.ui:34
 #. i18n: ectx: property (text), widget (QRadioButton, radioReplaceExisting)
-#: schema/kateschemaconfig.cpp:903 rc.cpp:921
+#: schema/kateschemaconfig.cpp:910 rc.cpp:921
 #, fuzzy, no-c-format, kde-format
 #| msgid "Replace Confirmation"
 msgid "Replace existing schema %1"
 msgstr "Тасдиқи иввазот"
 
-#: schema/kateschemaconfig.cpp:947
+#: schema/kateschemaconfig.cpp:954
 msgid "Importing schema"
 msgstr ""
 
-#: schema/kateschemaconfig.cpp:1054
+#: schema/kateschemaconfig.cpp:1061
 msgid "Name for New Schema"
 msgstr "Ном барои Нақшаи Нав"
 
-#: schema/kateschemaconfig.cpp:1054
+#: schema/kateschemaconfig.cpp:1061
 msgid "Name:"
 msgstr "Ном:"
 
-#: schema/kateschemaconfig.cpp:1054
+#: schema/kateschemaconfig.cpp:1061
 msgid "New Schema"
 msgstr "Нақшаи нав"
 
@@ -8615,9 +8629,6 @@ msgstr ""
 
 #~ msgid "&Show tabulators"
 #~ msgstr "&Намоиши табуляторҳо"
-
-#~ msgid "Code Folding"
-#~ msgstr "Печондани феҳристҳои рамз"
 
 #~ msgid "Collapse toplevel folding nodes"
 #~ msgstr "Печонидани ҳамаи блокҳо"
