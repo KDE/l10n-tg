@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-07 04:55+0100\n"
+"POT-Creation-Date: 2012-03-08 04:50+0100\n"
 "PO-Revision-Date: 2005-09-17 12:46+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -98,12 +98,12 @@ msgctxt "Status message 'Encrypting <filename>' (operation starts)"
 msgid "Encrypting %1"
 msgstr "Рамзкунӣ %1"
 
-#: foldercompressjob.cpp:110 editor/kgpgtextedit.cpp:284
+#: foldercompressjob.cpp:110 editor/kgpgtextedit.cpp:273
 #, kde-format
 msgid "The encryption failed with error code %1"
 msgstr ""
 
-#: foldercompressjob.cpp:111 editor/kgpgtextedit.cpp:285
+#: foldercompressjob.cpp:111 editor/kgpgtextedit.cpp:274
 msgid "Encryption failed."
 msgstr "Рамзкунонӣ бо нокомӣ анҷомид."
 
@@ -260,7 +260,7 @@ msgstr[1] "Воридоти Калид Аз Хидматрасони Калид�
 
 #. i18n: file: keyserver.ui:144
 #. i18n: ectx: property (text), widget (QPushButton, Buttonimport)
-#: keyservers.cpp:211 rc.cpp:476 editor/kgpgtextedit.cpp:328
+#: keyservers.cpp:211 rc.cpp:476 editor/kgpgtextedit.cpp:327
 msgid "&Import"
 msgstr "&Воридот"
 
@@ -1330,7 +1330,7 @@ msgid_plural "Decryption of these files failed:"
 msgstr[0] "Рамзкушоӣ бо нокомӣ анҷомид."
 msgstr[1] "Рамзкушоӣ бо нокомӣ анҷомид."
 
-#: kgpgexternalactions.cpp:389 editor/kgpgtextedit.cpp:269
+#: kgpgexternalactions.cpp:389 editor/kgpgtextedit.cpp:258
 msgid "Decryption failed."
 msgstr "Рамзкушоӣ бо нокомӣ анҷомид."
 
@@ -1759,20 +1759,20 @@ msgstr "(Нобаён)"
 msgid "Create Revocation Certificate"
 msgstr "Эҷод кардан Сертификати бе кор кардан"
 
-#: kgpgtextinterface.cpp:109
+#: kgpgtextinterface.cpp:77
 msgid "Enter passphrase (symmetrical encryption)"
 msgstr "Гузарвожаро ворид кунед (рамзкунонии симметрӣ)"
 
-#: kgpgtextinterface.cpp:123 core/KGpgRefNode.cpp:128
+#: kgpgtextinterface.cpp:91 core/KGpgRefNode.cpp:128
 #: transactions/kgpgtransaction.cpp:426
 msgid "[No user id found]"
 msgstr "[Шиносаи корванд пайдо нагардид]"
 
-#: kgpgtextinterface.cpp:125 transactions/kgpgtransaction.cpp:350
+#: kgpgtextinterface.cpp:93 transactions/kgpgtransaction.cpp:350
 msgid " or "
 msgstr " ё "
 
-#: kgpgtextinterface.cpp:129
+#: kgpgtextinterface.cpp:97
 #, fuzzy
 #| msgid "<b>No user id found</b>. Trying all secret keys.<br>"
 msgid "<p><b>No user id found</b>. Trying all secret keys.</p>"
@@ -1780,7 +1780,7 @@ msgstr ""
 "<b>Шиносаи корванд пайдо нагардид</b>. Ҳамаи калидҳои махфӣ истифода хоҳанд "
 "шуд.<br>"
 
-#: kgpgtextinterface.cpp:131 transactions/kgpgtransaction.cpp:431
+#: kgpgtextinterface.cpp:99 transactions/kgpgtransaction.cpp:431
 #, fuzzy, kde-format
 #| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
 msgid "<p><b>Bad passphrase</b>. You have 1 try left.</p>"
@@ -1788,29 +1788,30 @@ msgid_plural "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
 msgstr[0] "<b>Гузарвожаи бад</b>. Танҳо %1 кӯшиш боқӣ монд.<br>"
 msgstr[1] "<b>Гузарвожаи бад</b>. Танҳо %1 кӯшиш боқӣ монд.<br>"
 
-#: kgpgtextinterface.cpp:134
+#: kgpgtextinterface.cpp:102
 #, fuzzy
 #| msgid "Bad passphrase"
 msgid "Enter passphrase"
 msgstr "Гузарвожаи нодуруст"
 
-#: kgpgtextinterface.cpp:136 transactions/kgpgtransaction.cpp:433
+#: kgpgtextinterface.cpp:104 transactions/kgpgtransaction.cpp:433
 #, kde-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "Гузарвожаро барои <b>%1</b> ворид намоед"
 
-#: kgpgtextinterface.cpp:216 kgpgtextinterface.cpp:252
-#: editor/kgpgeditor.cpp:724
+#: kgpgtextinterface.cpp:172 editor/kgpgeditor.cpp:724
+#: transactions/kgpgverify.cpp:143
 msgid "No signature found."
 msgstr "Имзо пайдо нагардид."
 
-#: kgpgtextinterface.cpp:255
+#: kgpgtextinterface.cpp:175 transactions/kgpgverify.cpp:126
+#: transactions/kgpgverify.cpp:160
 #, fuzzy, kde-format
 #| msgid "<qt>Good signature from:<br><b>%1</b><br>Key ID: %2</qt>"
 msgid "<qt>Good signature from:<br /><b>%1</b><br />Key ID: %2<br /></qt>"
 msgstr "<qt>Имзои хуб аз:<br><b>%1</b><br>Шиносаи Калид: %2</qt>"
 
-#: kgpgtextinterface.cpp:260
+#: kgpgtextinterface.cpp:180 transactions/kgpgverify.cpp:176
 #, fuzzy, kde-format
 msgid ""
 "<qt><b>BAD signature</b> from:<br /> %1<br />Key id: %2<br /><br /><b>The "
@@ -1819,13 +1820,13 @@ msgstr ""
 "<qt><b>Имзои НОДУРУСТ</b> аз:<br> %1<br>Шиносаи калид: %2<br><br><b>Файл "
 "хароб гаштааст!</b></qt>"
 
-#: kgpgtextinterface.cpp:266
+#: kgpgtextinterface.cpp:186 transactions/kgpgverify.cpp:180
 #, fuzzy
 #| msgid "The signature is valid, but the key is untrusted"
 msgid "<qt>The signature is valid, but the key is untrusted<br /></qt>"
 msgstr "Имзо дастрас аст аммо калид нодуруст аст"
 
-#: kgpgtextinterface.cpp:268
+#: kgpgtextinterface.cpp:188 transactions/kgpgverify.cpp:182
 #, fuzzy
 #| msgid "The signature is valid, and the key is ultimately trusted"
 msgid ""
@@ -4137,7 +4138,7 @@ msgstr "Кушодани Файл барои Имзо"
 msgid "Open File to Verify"
 msgstr "Кушодани Файл барои Санҷидан"
 
-#: editor/kgpgeditor.cpp:697 editor/kgpgtextedit.cpp:335
+#: editor/kgpgeditor.cpp:697 editor/kgpgtextedit.cpp:334
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -4149,7 +4150,7 @@ msgstr ""
 "<qt><b>Имзои партофташуда:</b><br>Шиносаи калид: %1<br><br>Мехоҳед, ки ин "
 "калидро аз хидматрасони калид ворид созед?</qt>"
 
-#: editor/kgpgeditor.cpp:729 editor/kgpgtextedit.cpp:320
+#: editor/kgpgeditor.cpp:729 editor/kgpgtextedit.cpp:321
 msgctxt "Caption of message box"
 msgid "Verification Finished"
 msgstr ""
@@ -4183,7 +4184,7 @@ msgstr "<b>Ҳосили ҷамъ санҷишӣ дуруст аст</b>, фай�
 msgid "<b>Wrong checksum, <em>file corrupted</em></b>"
 msgstr ""
 
-#: editor/kgpgtextedit.cpp:90
+#: editor/kgpgtextedit.cpp:91
 #, fuzzy
 #| msgid ""
 #| "<qt><b>Remote file dropped</b>.<br>The remote file will now be copied to "
@@ -4198,11 +4199,11 @@ msgstr ""
 "файли муқаррарӣ нусха бардошта намешавад, барои иҷрои амалиёти талабшуда. Ин "
 "файли муқаррарӣ баъди ба охиррасии амалиёт нобуд карда мешавад.</qt>"
 
-#: editor/kgpgtextedit.cpp:94
+#: editor/kgpgtextedit.cpp:95
 msgid "Could not download file."
 msgstr "Боркунии файл ғайри имкон аст."
 
-#: editor/kgpgtextedit.cpp:127
+#: editor/kgpgtextedit.cpp:128
 #, fuzzy
 #| msgid ""
 #| "<p>The file <b>%1</b> is a public key.<br>Do you want to import it ?</p>"
@@ -4212,7 +4213,7 @@ msgid ""
 msgstr ""
 "<p>Файли <b>%1</b> - ин файли оммавӣ аст.<br>Мехоҳед онро ворид кунед ?</p>"
 
-#: editor/kgpgtextedit.cpp:130
+#: editor/kgpgtextedit.cpp:131
 #, fuzzy
 #| msgid ""
 #| "This file is a private key.\n"
@@ -4224,31 +4225,31 @@ msgstr ""
 "Ин файл калиди шахсӣ аст.\n"
 "Марҳамат карда идоракунии калиди kgpg-ро борои воридкунӣ истифода баред."
 
-#: editor/kgpgtextedit.cpp:135
+#: editor/kgpgtextedit.cpp:136
 #, fuzzy
 #| msgid "Decrypt & Open in Editor"
 msgid "Key file dropped on Editor"
 msgstr "Рамзкушодан & Кушодан дар Муҳаррир"
 
-#: editor/kgpgtextedit.cpp:298
+#: editor/kgpgtextedit.cpp:287
 msgid "Signing not possible: bad passphrase or missing key"
 msgstr "Имзонамоӣ ғайри имкон аст: гузарвожаи бад ё калид партофта шудааст"
 
-#: editor/kgpgtextedit.cpp:329
+#: editor/kgpgtextedit.cpp:328
 #, fuzzy
 msgid "Import key in your list"
 msgstr "Воридто ба ҳалқаи калидҳо"
 
-#: editor/kgpgtextedit.cpp:332
+#: editor/kgpgtextedit.cpp:331
 #, fuzzy
 msgid "Do &Not Import"
 msgstr "Вориди Калид"
 
-#: editor/kgpgtextedit.cpp:333
+#: editor/kgpgtextedit.cpp:332
 msgid "Will not import this key in your list"
 msgstr ""
 
-#: editor/kgpgtextedit.cpp:335
+#: editor/kgpgtextedit.cpp:334
 msgid "Missing Key"
 msgstr "Калиди Партофташуда"
 
@@ -4609,6 +4610,21 @@ msgstr "<b>Пайвастшавӣ ба хидматрасон...</b>"
 #| msgid "Change Passphrase..."
 msgid "Requesting Passphrase"
 msgstr "Ивази Гузарвожа..."
+
+#: transactions/kgpgverify.cpp:90
+#, fuzzy, kde-format
+#| msgid "Bad passphrase, signature was not created."
+msgctxt "first argument is formatted date, second argument is formatted time"
+msgid "The signature was created at %1 %2"
+msgstr "Гузарвожаи нодуруст, имзо офарида нашудааст."
+
+#: transactions/kgpgverify.cpp:130 transactions/kgpgverify.cpp:164
+#, fuzzy, kde-format
+#| msgid "<qt>Good signature from:<br><b>%1</b><br>Key ID: %2</qt>"
+msgctxt "Good signature from: NAME <EMAIL>, Key ID: HEXID"
+msgid ""
+"<qt>Good signature from:<br /><b>%1 &lt;%2&gt;</b><br />Key ID: %3<br /></qt>"
+msgstr "<qt>Имзои хуб аз:<br><b>%1</b><br>Шиносаи Калид: %2</qt>"
 
 #~ msgid "GPG groups"
 #~ msgstr "Гурӯҳҳои GPG"
@@ -5071,9 +5087,6 @@ msgstr "Ивази Гузарвожа..."
 
 #~ msgid "Enter passphrase for your file (symmetrical encryption):"
 #~ msgstr "Барои файли худ гузарвожаро ворид кунед (рамзкунонии симметрӣ):"
-
-#~ msgid "Bad passphrase, signature was not created."
-#~ msgstr "Гузарвожаи нодуруст, имзо офарида нашудааст."
 
 #~ msgid "Shred Files"
 #~ msgstr "Дарондани файл"
