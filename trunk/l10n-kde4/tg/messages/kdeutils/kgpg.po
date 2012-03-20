@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-18 04:51+0100\n"
+"POT-Creation-Date: 2012-03-20 06:27+0100\n"
 "PO-Revision-Date: 2005-09-17 12:46+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -70,49 +70,74 @@ msgstr ""
 msgid "Info"
 msgstr "Ахборот"
 
-#: foldercompressjob.cpp:29
+#: foldercompressjob.cpp:44
 msgid "Processing folder compression and encryption"
 msgstr "Ҷараёни фишорӣ ва рамзкунонии феҳрист"
 
-#: foldercompressjob.cpp:46 foldercompressjob.cpp:94 foldercompressjob.cpp:111
-#: foldercompressjob.cpp:113 transactions/kgpgtransactionjob.cpp:65
+#: foldercompressjob.cpp:70 foldercompressjob.cpp:120
+#: foldercompressjob.cpp:139 foldercompressjob.cpp:141
+#: transactions/kgpgtransactionjob.cpp:65
 #, fuzzy
 #| msgid "Ultimate"
 msgctxt "State of operation as in status"
 msgid "State"
 msgstr "Ултимат"
 
-#: foldercompressjob.cpp:46 transactions/kgpgtransactionjob.cpp:39
+#: foldercompressjob.cpp:70 transactions/kgpgtransactionjob.cpp:39
 msgctxt "Job is started up"
 msgid "Startup"
 msgstr ""
 
-#: foldercompressjob.cpp:77
+#: foldercompressjob.cpp:102
 msgid "Unable to create temporary file"
 msgstr "Офаридани файли муваққатӣ ғайри имкон аст"
 
-#: foldercompressjob.cpp:95 transactions/kgpgencrypt.cpp:115
+#: foldercompressjob.cpp:121 transactions/kgpgencrypt.cpp:115
 #, fuzzy, kde-format
 #| msgid "Decrypting %1"
 msgctxt "Status message 'Encrypting <filename>' (operation starts)"
 msgid "Encrypting %1"
 msgstr "Рамзкунӣ %1"
 
-#: foldercompressjob.cpp:110 editor/kgpgtextedit.cpp:272
+#: foldercompressjob.cpp:138 editor/kgpgtextedit.cpp:272
 #, kde-format
 msgid "The encryption failed with error code %1"
 msgstr ""
 
-#: foldercompressjob.cpp:111 editor/kgpgtextedit.cpp:273
+#: foldercompressjob.cpp:139 editor/kgpgtextedit.cpp:273
 msgid "Encryption failed."
 msgstr "Рамзкунонӣ бо нокомӣ анҷомид."
 
-#: foldercompressjob.cpp:114 transactions/kgpgencrypt.cpp:118
+#: foldercompressjob.cpp:142 transactions/kgpgencrypt.cpp:118
 #, fuzzy, kde-format
 #| msgid "Decrypting %1"
 msgctxt "Status message 'Encrypted <filename>' (operation was completed)"
 msgid "Encrypted %1"
 msgstr "Рамзкунӣ %1"
+
+#: foldercompressjob.cpp:173
+msgid "Zip"
+msgstr "Омехтакунии фаврӣ"
+
+#: foldercompressjob.cpp:174
+#, fuzzy
+#| msgid "Gzip"
+msgid "Tar/Gzip"
+msgstr "GОмехтакунии фаврӣ"
+
+#: foldercompressjob.cpp:175
+#, fuzzy
+#| msgid "Bzip2"
+msgid "Tar/Bzip2"
+msgstr "BОмехтакунии фаврии2"
+
+#: foldercompressjob.cpp:176
+msgid "Tar"
+msgstr ""
+
+#: foldercompressjob.cpp:177
+msgid "Tar/XZ"
+msgstr ""
 
 #: groupedit.cpp:36
 #, fuzzy
@@ -1252,7 +1277,19 @@ msgstr ""
 "мушкилотҳо ҳангоми имзокунӣ/рамзкушоӣ оварда мерасонад.<br>Марҳамат карда "
 "Иҷрогари GnuPG-ро аз гузоришҳои KGpg хомӯш кунед ё онро ислоҳ кунед.</qt>"
 
-#: kgpg.cpp:127
+#: kgpg.cpp:135
+msgid "Cannot decrypt and show folder."
+msgstr "Рамзкушодан нишон додани феҳрист нишуда истодааст."
+
+#: kgpg.cpp:140
+msgid "Cannot sign folder."
+msgstr "Имзокунии феҳрист ғайри имкон аст."
+
+#: kgpg.cpp:145
+msgid "Cannot verify folder."
+msgstr "Бозбинӣ намудани феҳрист ғайри имкон аст."
+
+#: kgpg.cpp:148
 msgid ""
 "Unable to perform requested operation.\n"
 "Please select only one folder, or several files, but do not mix files and "
@@ -1261,18 +1298,6 @@ msgstr ""
 "Амалиёти талабшуда иҷр нашуда истодааст.\n"
 "Марҳамат карда як феҳрист ё якчанд файлҳоро интихоб кунед, лекин файлҳо ва "
 "феҳристҳоро омехта кунед."
-
-#: kgpg.cpp:140
-msgid "Cannot decrypt and show folder."
-msgstr "Рамзкушодан нишон додани феҳрист нишуда истодааст."
-
-#: kgpg.cpp:145
-msgid "Cannot sign folder."
-msgstr "Имзокунии феҳрист ғайри имкон аст."
-
-#: kgpg.cpp:150
-msgid "Cannot verify folder."
-msgstr "Бозбинӣ намудани феҳрист ғайри имкон аст."
 
 #: kgpgexternalactions.cpp:125
 #, fuzzy, kde-format
@@ -1297,38 +1322,18 @@ msgstr "Офаридани Файли Муваққатӣ"
 msgid "Compression method for archive:"
 msgstr "Усули фишордиҳӣ барои бойгонӣ:"
 
-#: kgpgexternalactions.cpp:140
-msgid "Zip"
-msgstr "Омехтакунии фаврӣ"
-
-#: kgpgexternalactions.cpp:141
-msgid "Gzip"
-msgstr "GОмехтакунии фаврӣ"
-
-#: kgpgexternalactions.cpp:142
-msgid "Bzip2"
-msgstr "BОмехтакунии фаврии2"
-
-#: kgpgexternalactions.cpp:143
-msgid "Tar"
-msgstr ""
-
-#: kgpgexternalactions.cpp:144
-msgid "Tar/XZ"
-msgstr ""
-
-#: kgpgexternalactions.cpp:222 kgpgexternalactions.cpp:377
+#: kgpgexternalactions.cpp:199 kgpgexternalactions.cpp:354
 #: editor/kgpgeditor.cpp:521 transactions/kgpgencrypt.cpp:123
 msgid "File Already Exists"
 msgstr "Файл аллакай Мавҷуд аст"
 
-#: kgpgexternalactions.cpp:299 editor/kgpgeditor.cpp:733
+#: kgpgexternalactions.cpp:276 editor/kgpgeditor.cpp:733
 #: editor/kgpgtextedit.cpp:320
 msgctxt "Caption of message box"
 msgid "Verification Finished"
 msgstr ""
 
-#: kgpgexternalactions.cpp:411
+#: kgpgexternalactions.cpp:388
 #, fuzzy
 #| msgid "Decryption failed."
 msgid "Decryption of this file failed:"
@@ -1336,22 +1341,22 @@ msgid_plural "Decryption of these files failed:"
 msgstr[0] "Рамзкушоӣ бо нокомӣ анҷомид."
 msgstr[1] "Рамзкушоӣ бо нокомӣ анҷомид."
 
-#: kgpgexternalactions.cpp:413 editor/kgpgtextedit.cpp:257
+#: kgpgexternalactions.cpp:390 editor/kgpgtextedit.cpp:257
 msgid "Decryption failed."
 msgstr "Рамзкушоӣ бо нокомӣ анҷомид."
 
-#: kgpgexternalactions.cpp:438
+#: kgpgexternalactions.cpp:415
 msgid ""
 "<qt>You have not set a path to your GnuPG config file.<br />This may cause "
 "some surprising results in KGpg's execution.<br />Would you like to start "
 "KGpg's assistant to fix this problem?</qt>"
 msgstr ""
 
-#: kgpgexternalactions.cpp:439
+#: kgpgexternalactions.cpp:416
 msgid "Start Assistant"
 msgstr ""
 
-#: kgpgexternalactions.cpp:439
+#: kgpgexternalactions.cpp:416
 #, fuzzy
 msgid "Do Not Start"
 msgstr "Бовар Накунед"
