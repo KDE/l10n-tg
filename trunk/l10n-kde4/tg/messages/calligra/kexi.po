@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-17 02:41+0200\n"
+"POT-Creation-Date: 2012-04-21 02:51+0200\n"
 "PO-Revision-Date: 2005-12-23 19:53-0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -3178,21 +3178,6 @@ msgstr "Хатои номаълум"
 msgid "Could not compact database \"%1\"."
 msgstr "Драйвери асоси маълумоти\"%1\"таъмин карда намешавад."
 
-#: kexidb/drivers/sqlite/sqlitevacuum.cpp:129
-#, fuzzy
-msgid "Compacting database"
-msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
-
-#: kexidb/drivers/sqlite/sqlitevacuum.cpp:130
-#, fuzzy, kde-format
-msgid "Compacting database \"%1\"..."
-msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
-
-#: kexidb/drivers/sqlite/sqlitevacuum.cpp:203
-#, kde-format
-msgid "The database has been compacted. Current size decreased by %1% to %2."
-msgstr ""
-
 #: kexidb/drivers/sqlite/sqliteconnection.cpp:242
 #, fuzzy, kde-format
 msgid "Do you want to open file \"%1\" as read-only?"
@@ -3225,6 +3210,21 @@ msgstr "Файли \"%1\"ҳаракат кардан натавонист."
 msgid ""
 "Check the file's permissions and whether it is already opened and locked by "
 "another application."
+msgstr ""
+
+#: kexidb/drivers/sqlite/sqlitevacuum.cpp:129
+#, fuzzy
+msgid "Compacting database"
+msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
+
+#: kexidb/drivers/sqlite/sqlitevacuum.cpp:130
+#, fuzzy, kde-format
+msgid "Compacting database \"%1\"..."
+msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
+
+#: kexidb/drivers/sqlite/sqlitevacuum.cpp:203
+#, kde-format
+msgid "The database has been compacted. Current size decreased by %1% to %2."
 msgstr ""
 
 #: kexidb/drivers/xbase/xbaseexport.cpp:263
@@ -3333,6 +3333,24 @@ msgstr ""
 msgid "Unspecified error encountered"
 msgstr "Хатогиҳои махсус во мехӯранд"
 
+#: sqlscanner.l:98
+#, fuzzy
+msgid "Invalid integer number"
+msgstr "Рақами калони адади том"
+
+#: sqlscanner.l:98
+msgid "This integer number may be too large."
+msgstr ""
+
+#: sqlscanner.l:286
+#, fuzzy
+msgid "Invalid identifier"
+msgstr "Намуди нодуруст"
+
+#: sqlscanner.l:287 plugins/queries/kexiquerydesignerguieditor.cpp:1451
+msgid "Identifiers should start with a letter or '_' character"
+msgstr ""
+
 #: kexidb/parser/parser_p.cpp:137
 msgid "identifier was expected"
 msgstr ""
@@ -3390,24 +3408,6 @@ msgstr ""
 msgid "Could not define sorting - column name or alias \"%1\" does not exist"
 msgstr "<qt>Файли\"%1\"вуҷуд надорад."
 
-#: sqlscanner.l:98
-#, fuzzy
-msgid "Invalid integer number"
-msgstr "Рақами калони адади том"
-
-#: sqlscanner.l:98
-msgid "This integer number may be too large."
-msgstr ""
-
-#: sqlscanner.l:286
-#, fuzzy
-msgid "Invalid identifier"
-msgstr "Намуди нодуруст"
-
-#: sqlscanner.l:287 plugins/queries/kexiquerydesignerguieditor.cpp:1451
-msgid "Identifiers should start with a letter or '_' character"
-msgstr ""
-
 #: kexidb/simplecommandlineapp.cpp:81
 #, fuzzy
 msgid "Database driver name"
@@ -3440,6 +3440,163 @@ msgstr "Асоси маълумотро интихоб кунед"
 #, kde-format
 msgid "Enter password for %1: "
 msgstr ""
+
+#: kexidb/connectiondata.cpp:97
+msgid "file"
+msgstr "файл"
+
+#: kexidb/drivermanager.cpp:171
+msgid "Could not find any database drivers."
+msgstr "Ягон драйвери асоси маълумот ёфт намешавад."
+
+#: kexidb/drivermanager.cpp:181 kexidb/drivermanager.cpp:200
+#, kde-format
+msgid "Could not find database driver \"%1\"."
+msgstr "Драйвери асоси маълумоти\"%1\"ёфт намешавад."
+
+#: kexidb/drivermanager.cpp:231
+#, kde-format
+msgid "Could not load database driver \"%1\"."
+msgstr "Драйвери асоси маълумоти\"%1\"таъмин карда намешавад."
+
+#: kexidb/drivermanager.cpp:374
+#, kde-format
+msgid "No such driver service: \"%1\"."
+msgstr "Чунин драйвери\"%1\"кор намекунад."
+
+#: kexidb/utils.cpp:131
+msgid "Message from server:"
+msgstr "Хабар аз сервер:"
+
+#: kexidb/utils.cpp:133
+msgid "SQL statement:"
+msgstr "Ҳукми SQL:"
+
+#: kexidb/utils.cpp:150 kexidb/utils.cpp:157
+#, fuzzy
+#| msgid "Server result name:"
+msgid "Server result:"
+msgstr "Номи натихчаи сервер:"
+
+#: kexidb/utils.cpp:394 kexidb/utils.cpp:457 kexidb/utils.cpp:462
+#, fuzzy
+msgid "Test Connection"
+msgstr "Алоқа"
+
+#: kexidb/utils.cpp:395
+#, fuzzy, kde-format
+msgid "<qt>Testing connection to <b>%1</b> database server...</qt>"
+msgstr "Ба \"%1\" сервери асоси маълумот пайваст нашудааст."
+
+#: kexidb/utils.cpp:456
+#, kde-format
+msgid ""
+"<qt>Test connection to <b>%1</b> database server failed. The server is not "
+"responding.</qt>"
+msgstr ""
+
+#: kexidb/utils.cpp:460
+#, kde-format
+msgid ""
+"<qt>Test connection to <b>%1</b> database server established successfully.</"
+"qt>"
+msgstr ""
+
+#: kexidb/utils.cpp:1248
+#, fuzzy
+msgid "Number"
+msgstr "Рақамгузории худкор"
+
+#: kexidb/utils.cpp:1251 plugins/forms/kexidbfactory.cpp:344
+#: widget/utils/kexicontextmenuutils.cpp:293
+#, fuzzy
+msgid "Image"
+msgstr "Саҳифа:"
+
+#: kexidb/field.cpp:708
+#, fuzzy
+msgid "Invalid Type"
+msgstr "Намуди нодуруст"
+
+#: kexidb/field.cpp:709
+msgid "Byte"
+msgstr "Байт"
+
+#: kexidb/field.cpp:710
+#, fuzzy
+msgid "Short Integer Number"
+msgstr "Рақами хурди адади том"
+
+#: kexidb/field.cpp:711 kexidb/field.cpp:741
+#, fuzzy
+msgid "Integer Number"
+msgstr "Рақами адади том"
+
+#: kexidb/field.cpp:712
+#, fuzzy
+msgid "Big Integer Number"
+msgstr "Рақами калони адади том"
+
+#: kexidb/field.cpp:713
+#, fuzzy
+msgid "Yes/No Value"
+msgstr "Ҳа/Не маъно"
+
+#: kexidb/field.cpp:714
+msgid "Date"
+msgstr "Таърих"
+
+#: kexidb/field.cpp:715
+#, fuzzy
+msgid "Date and Time"
+msgstr "Таърих ва вақт"
+
+#: kexidb/field.cpp:716
+msgid "Time"
+msgstr "Вақт"
+
+#: kexidb/field.cpp:717
+#, fuzzy
+msgid "Single Precision Number"
+msgstr "Рақами аниқи тоқ"
+
+#: kexidb/field.cpp:718
+#, fuzzy
+msgid "Double Precision Number"
+msgstr "Рақами аниқи ҷуфт"
+
+#: kexidb/field.cpp:720
+#, fuzzy
+msgid "Long Text"
+msgstr "Матни калон"
+
+#: kexidb/field.cpp:721 kexidb/field.cpp:745
+msgid "Object"
+msgstr "Мавзӯъ"
+
+#: kexidb/field.cpp:739
+#, fuzzy
+msgid "Invalid Group"
+msgstr "Гурӯҳи нодуруст"
+
+#: kexidb/field.cpp:742
+#, fuzzy
+msgid "Floating Point Number"
+msgstr "Нуқтаи рақами шиновар"
+
+#: kexidb/field.cpp:743
+msgid "Yes/No"
+msgstr "Ҳа/Не"
+
+#: kexidb/field.cpp:744
+msgid "Date/Time"
+msgstr "Таърих/Вақт"
+
+#: kexidb/queryschema.cpp:266
+#, fuzzy
+msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
+msgid "expr"
+msgstr "&Содирот"
 
 #: kexidb/connection.cpp:114
 msgid "Invalid database contents. "
@@ -3774,163 +3931,6 @@ msgstr "Мавзӯъи \"%1\" ба номи дигар сохта намешав
 #, fuzzy
 msgid "Record deletion on the server failed."
 msgstr "Қатори нобудкардани дар сервер нодуруст."
-
-#: kexidb/connectiondata.cpp:97
-msgid "file"
-msgstr "файл"
-
-#: kexidb/drivermanager.cpp:171
-msgid "Could not find any database drivers."
-msgstr "Ягон драйвери асоси маълумот ёфт намешавад."
-
-#: kexidb/drivermanager.cpp:181 kexidb/drivermanager.cpp:200
-#, kde-format
-msgid "Could not find database driver \"%1\"."
-msgstr "Драйвери асоси маълумоти\"%1\"ёфт намешавад."
-
-#: kexidb/drivermanager.cpp:231
-#, kde-format
-msgid "Could not load database driver \"%1\"."
-msgstr "Драйвери асоси маълумоти\"%1\"таъмин карда намешавад."
-
-#: kexidb/drivermanager.cpp:374
-#, kde-format
-msgid "No such driver service: \"%1\"."
-msgstr "Чунин драйвери\"%1\"кор намекунад."
-
-#: kexidb/utils.cpp:131
-msgid "Message from server:"
-msgstr "Хабар аз сервер:"
-
-#: kexidb/utils.cpp:133
-msgid "SQL statement:"
-msgstr "Ҳукми SQL:"
-
-#: kexidb/utils.cpp:150 kexidb/utils.cpp:157
-#, fuzzy
-#| msgid "Server result name:"
-msgid "Server result:"
-msgstr "Номи натихчаи сервер:"
-
-#: kexidb/utils.cpp:394 kexidb/utils.cpp:457 kexidb/utils.cpp:462
-#, fuzzy
-msgid "Test Connection"
-msgstr "Алоқа"
-
-#: kexidb/utils.cpp:395
-#, fuzzy, kde-format
-msgid "<qt>Testing connection to <b>%1</b> database server...</qt>"
-msgstr "Ба \"%1\" сервери асоси маълумот пайваст нашудааст."
-
-#: kexidb/utils.cpp:456
-#, kde-format
-msgid ""
-"<qt>Test connection to <b>%1</b> database server failed. The server is not "
-"responding.</qt>"
-msgstr ""
-
-#: kexidb/utils.cpp:460
-#, kde-format
-msgid ""
-"<qt>Test connection to <b>%1</b> database server established successfully.</"
-"qt>"
-msgstr ""
-
-#: kexidb/utils.cpp:1248
-#, fuzzy
-msgid "Number"
-msgstr "Рақамгузории худкор"
-
-#: kexidb/utils.cpp:1251 plugins/forms/kexidbfactory.cpp:344
-#: widget/utils/kexicontextmenuutils.cpp:293
-#, fuzzy
-msgid "Image"
-msgstr "Саҳифа:"
-
-#: kexidb/field.cpp:708
-#, fuzzy
-msgid "Invalid Type"
-msgstr "Намуди нодуруст"
-
-#: kexidb/field.cpp:709
-msgid "Byte"
-msgstr "Байт"
-
-#: kexidb/field.cpp:710
-#, fuzzy
-msgid "Short Integer Number"
-msgstr "Рақами хурди адади том"
-
-#: kexidb/field.cpp:711 kexidb/field.cpp:741
-#, fuzzy
-msgid "Integer Number"
-msgstr "Рақами адади том"
-
-#: kexidb/field.cpp:712
-#, fuzzy
-msgid "Big Integer Number"
-msgstr "Рақами калони адади том"
-
-#: kexidb/field.cpp:713
-#, fuzzy
-msgid "Yes/No Value"
-msgstr "Ҳа/Не маъно"
-
-#: kexidb/field.cpp:714
-msgid "Date"
-msgstr "Таърих"
-
-#: kexidb/field.cpp:715
-#, fuzzy
-msgid "Date and Time"
-msgstr "Таърих ва вақт"
-
-#: kexidb/field.cpp:716
-msgid "Time"
-msgstr "Вақт"
-
-#: kexidb/field.cpp:717
-#, fuzzy
-msgid "Single Precision Number"
-msgstr "Рақами аниқи тоқ"
-
-#: kexidb/field.cpp:718
-#, fuzzy
-msgid "Double Precision Number"
-msgstr "Рақами аниқи ҷуфт"
-
-#: kexidb/field.cpp:720
-#, fuzzy
-msgid "Long Text"
-msgstr "Матни калон"
-
-#: kexidb/field.cpp:721 kexidb/field.cpp:745
-msgid "Object"
-msgstr "Мавзӯъ"
-
-#: kexidb/field.cpp:739
-#, fuzzy
-msgid "Invalid Group"
-msgstr "Гурӯҳи нодуруст"
-
-#: kexidb/field.cpp:742
-#, fuzzy
-msgid "Floating Point Number"
-msgstr "Нуқтаи рақами шиновар"
-
-#: kexidb/field.cpp:743
-msgid "Yes/No"
-msgstr "Ҳа/Не"
-
-#: kexidb/field.cpp:744
-msgid "Date/Time"
-msgstr "Таърих/Вақт"
-
-#: kexidb/queryschema.cpp:266
-#, fuzzy
-msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
-msgid "expr"
-msgstr "&Содирот"
 
 #: kexiutils/identifier.cpp:92
 #, fuzzy, kde-format
