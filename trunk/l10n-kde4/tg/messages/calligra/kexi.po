@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-02 03:03+0200\n"
+"POT-Creation-Date: 2012-05-07 02:37+0200\n"
 "PO-Revision-Date: 2005-12-23 19:53-0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -2436,7 +2436,7 @@ msgid "Name"
 msgstr "Ном"
 
 #: formeditor/form.cpp:440 formeditor/editlistviewdialog.cpp:120
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1759
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1764
 #: plugins/tables/kexitabledesignerview.cpp:390
 msgid "Caption"
 msgstr "Сарлавҳа"
@@ -3133,7 +3133,7 @@ msgstr ""
 
 #: kexidb/driver_p.cpp:63 plugins/importexport/csv/kexicsvwidgets.cpp:167
 #: plugins/importexport/csv/kexicsvwidgets.cpp:182
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1776
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1781
 #: plugins/tables/kexitabledesignerview.cpp:426
 msgid "None"
 msgstr "Хеҷ"
@@ -3178,6 +3178,21 @@ msgstr "Хатои номаълум"
 msgid "Could not compact database \"%1\"."
 msgstr "Драйвери асоси маълумоти\"%1\"таъмин карда намешавад."
 
+#: kexidb/drivers/sqlite/sqlitevacuum.cpp:129
+#, fuzzy
+msgid "Compacting database"
+msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
+
+#: kexidb/drivers/sqlite/sqlitevacuum.cpp:130
+#, fuzzy, kde-format
+msgid "Compacting database \"%1\"..."
+msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
+
+#: kexidb/drivers/sqlite/sqlitevacuum.cpp:203
+#, kde-format
+msgid "The database has been compacted. Current size decreased by %1% to %2."
+msgstr ""
+
 #: kexidb/drivers/sqlite/sqliteconnection.cpp:242
 #, fuzzy, kde-format
 msgid "Do you want to open file \"%1\" as read-only?"
@@ -3210,21 +3225,6 @@ msgstr "Файли \"%1\"ҳаракат кардан натавонист."
 msgid ""
 "Check the file's permissions and whether it is already opened and locked by "
 "another application."
-msgstr ""
-
-#: kexidb/drivers/sqlite/sqlitevacuum.cpp:129
-#, fuzzy
-msgid "Compacting database"
-msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
-
-#: kexidb/drivers/sqlite/sqlitevacuum.cpp:130
-#, fuzzy, kde-format
-msgid "Compacting database \"%1\"..."
-msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
-
-#: kexidb/drivers/sqlite/sqlitevacuum.cpp:203
-#, kde-format
-msgid "The database has been compacted. Current size decreased by %1% to %2."
 msgstr ""
 
 #: kexidb/drivers/xbase/xbaseexport.cpp:263
@@ -3347,7 +3347,7 @@ msgstr ""
 msgid "Invalid identifier"
 msgstr "Намуди нодуруст"
 
-#: sqlscanner.l:287 plugins/queries/kexiquerydesignerguieditor.cpp:1451
+#: sqlscanner.l:287 plugins/queries/kexiquerydesignerguieditor.cpp:1456
 msgid "Identifiers should start with a letter or '_' character"
 msgstr ""
 
@@ -3591,12 +3591,6 @@ msgstr "Ҳа/Не"
 #: kexidb/field.cpp:744
 msgid "Date/Time"
 msgstr "Таърих/Вақт"
-
-#: kexidb/queryschema.cpp:266
-#, fuzzy
-msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
-msgid "expr"
-msgstr "&Содирот"
 
 #: kexidb/connection.cpp:114
 msgid "Invalid database contents. "
@@ -3931,6 +3925,12 @@ msgstr "Мавзӯъи \"%1\" ба номи дигар сохта намешав
 #, fuzzy
 msgid "Record deletion on the server failed."
 msgstr "Қатори нобудкардани дар сервер нодуруст."
+
+#: kexidb/queryschema.cpp:266
+#, fuzzy
+msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
+msgid "expr"
+msgstr "&Содирот"
 
 #: kexiutils/identifier.cpp:92
 #, fuzzy, kde-format
@@ -6880,7 +6880,7 @@ msgid "Start at line:"
 msgstr "ТамғаиМатн"
 
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:1220
-#: plugins/queries/kexiquerydesignerguieditor.cpp:225
+#: plugins/queries/kexiquerydesignerguieditor.cpp:226
 msgid "Column"
 msgstr "Сутун"
 
@@ -7019,161 +7019,6 @@ msgstr "Ҷадвали \"%1\" аллакай вуҷуд дорад."
 msgid "Query executing failed."
 msgstr " Супориши иҷрокунанда но кифоя."
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:168
-#, fuzzy
-msgid "Query Columns"
-msgstr "Сутунҳои савол"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:226
-msgid "Describes field name or expression for the designed query."
-msgstr ""
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:233
-#: widget/relations/KexiRelationsView.cpp:384
-msgid "Table"
-msgstr "Ҷадвал"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:234
-msgid "Describes table for a given field. Can be empty."
-msgstr ""
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:239
-msgid "Visible"
-msgstr "Намудор"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:240
-msgid "Describes visibility for a given field or expression."
-msgstr ""
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:246
-msgid "Totals"
-msgstr "Ҳамагӣ"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:247
-msgid "Describes a way of computing totals for a given field or expression."
-msgstr ""
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:249
-msgid "Group by"
-msgstr "Гурӯҳ аз рӯи"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:250
-msgid "Sum"
-msgstr "Ҷамъ"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:251
-msgid "Average"
-msgstr "Миёна"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:252
-msgid "Min"
-msgstr "Камтарин"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:253
-msgid "Max"
-msgstr "Калонтарин"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:259
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1778
-msgid "Sorting"
-msgstr "Мураттаб"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:260
-#, fuzzy
-msgid "Describes a way of sorting for a given field."
-msgstr "Тағйиротҳои мавзӯъ нигоҳ доред аз тирезаи интихоботии ҳозира."
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:263
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1776
-msgid "Ascending"
-msgstr "Баланд шудан"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:264
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1776
-msgid "Descending"
-msgstr "Паст шудан"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:268
-msgid "Criteria"
-msgstr "Меъёр"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:269
-msgid "Describes the criteria for a given field or expression."
-msgstr ""
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:373
-msgid ""
-"Cannot switch to data view, because query design is empty.\n"
-"First, please create your design."
-msgstr ""
-"Дар намоиши таърих иваз карда наметавонад, барои он дизайни пурсиши холӣ "
-"аст.\n"
-"Якум, илтимос дизайни шуморо созед."
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:408
-#, kde-format
-msgid "Select column for table \"%1\""
-msgstr "Интихоби сутун барои дараҷаи \"%1\""
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:430
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1679
-#, fuzzy, kde-format
-msgid "Invalid criteria \"%1\""
-msgstr "Номи мавзӯъи нодуруст \"%1\""
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:451
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1470
-#, fuzzy, kde-format
-msgid "Invalid expression \"%1\""
-msgstr "Номи мавзӯъи нодуруст \"%1\""
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:636
-#: plugins/queries/kexiquerydesignerguieditor.cpp:650
-#: plugins/queries/kexiquerydesignerguieditor.cpp:672
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1081
-msgid "Query definition loading failed."
-msgstr "Бор кардани таърифи пурсиши нодуруст."
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:637
-msgid ""
-"Query design may be corrupted so it could not be opened even in text view.\n"
-"You can delete the query and create it again."
-msgstr ""
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1264
-msgctxt "short for 'expression' word (only latin letters, please)"
-msgid "expr"
-msgstr ""
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1450
-#, fuzzy, kde-format
-msgid "Entered column alias \"%1\" is not a valid identifier."
-msgstr "Намуди нодуруст"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1623
-#, fuzzy, kde-format
-msgid "Could not set sorting for multiple columns (%1)"
-msgstr "Наметавонад номи роҳхати холиро барои ин ашё"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1648
-#, fuzzy, kde-format
-msgid "Could not set criteria for \"%1\""
-msgstr "Нақшаи \"%1\"сохта намешавад"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1651
-#, fuzzy
-msgid "Could not set criteria for empty record"
-msgstr "Наметавонад номи роҳхати холиро барои ин ашё"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1748
-#, fuzzy
-msgid "Query column"
-msgstr "Сутунҳои савол"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1764
-msgid "Alias"
-msgstr "Ба таври дигар"
-
 #: plugins/queries/kexiquerydesignersqlhistory.cpp:50
 msgid "Copy to Clipboard"
 msgstr "Дар хотир нусҳа бардоред"
@@ -7251,6 +7096,161 @@ msgstr "Бо интихоби \"Не\" шумо метавонед ислоҳ к
 #, fuzzy
 msgid "Do you want to save invalid query?"
 msgstr "Шумо мехоҳед \"%1\"пурсиши нодуруст нигоҳ доред?"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:169
+#, fuzzy
+msgid "Query Columns"
+msgstr "Сутунҳои савол"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:227
+msgid "Describes field name or expression for the designed query."
+msgstr ""
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:234
+#: widget/relations/KexiRelationsView.cpp:384
+msgid "Table"
+msgstr "Ҷадвал"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:235
+msgid "Describes table for a given field. Can be empty."
+msgstr ""
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:240
+msgid "Visible"
+msgstr "Намудор"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:241
+msgid "Describes visibility for a given field or expression."
+msgstr ""
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:247
+msgid "Totals"
+msgstr "Ҳамагӣ"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:248
+msgid "Describes a way of computing totals for a given field or expression."
+msgstr ""
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:250
+msgid "Group by"
+msgstr "Гурӯҳ аз рӯи"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:251
+msgid "Sum"
+msgstr "Ҷамъ"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:252
+msgid "Average"
+msgstr "Миёна"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:253
+msgid "Min"
+msgstr "Камтарин"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:254
+msgid "Max"
+msgstr "Калонтарин"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:260
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1783
+msgid "Sorting"
+msgstr "Мураттаб"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:261
+#, fuzzy
+msgid "Describes a way of sorting for a given field."
+msgstr "Тағйиротҳои мавзӯъ нигоҳ доред аз тирезаи интихоботии ҳозира."
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:264
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1781
+msgid "Ascending"
+msgstr "Баланд шудан"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:265
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1781
+msgid "Descending"
+msgstr "Паст шудан"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:269
+msgid "Criteria"
+msgstr "Меъёр"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:270
+msgid "Describes the criteria for a given field or expression."
+msgstr ""
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:374
+msgid ""
+"Cannot switch to data view, because query design is empty.\n"
+"First, please create your design."
+msgstr ""
+"Дар намоиши таърих иваз карда наметавонад, барои он дизайни пурсиши холӣ "
+"аст.\n"
+"Якум, илтимос дизайни шуморо созед."
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:413
+#, kde-format
+msgid "Select column for table \"%1\""
+msgstr "Интихоби сутун барои дараҷаи \"%1\""
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:435
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1684
+#, fuzzy, kde-format
+msgid "Invalid criteria \"%1\""
+msgstr "Номи мавзӯъи нодуруст \"%1\""
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:456
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1475
+#, fuzzy, kde-format
+msgid "Invalid expression \"%1\""
+msgstr "Номи мавзӯъи нодуруст \"%1\""
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:641
+#: plugins/queries/kexiquerydesignerguieditor.cpp:655
+#: plugins/queries/kexiquerydesignerguieditor.cpp:677
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1086
+msgid "Query definition loading failed."
+msgstr "Бор кардани таърифи пурсиши нодуруст."
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:642
+msgid ""
+"Query design may be corrupted so it could not be opened even in text view.\n"
+"You can delete the query and create it again."
+msgstr ""
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1269
+msgctxt "short for 'expression' word (only latin letters, please)"
+msgid "expr"
+msgstr ""
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1455
+#, fuzzy, kde-format
+msgid "Entered column alias \"%1\" is not a valid identifier."
+msgstr "Намуди нодуруст"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1628
+#, fuzzy, kde-format
+msgid "Could not set sorting for multiple columns (%1)"
+msgstr "Наметавонад номи роҳхати холиро барои ин ашё"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1653
+#, fuzzy, kde-format
+msgid "Could not set criteria for \"%1\""
+msgstr "Нақшаи \"%1\"сохта намешавад"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1656
+#, fuzzy
+msgid "Could not set criteria for empty record"
+msgstr "Наметавонад номи роҳхати холиро барои ин ашё"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1753
+#, fuzzy
+msgid "Query column"
+msgstr "Сутунҳои савол"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1769
+msgid "Alias"
+msgstr "Ба таври дигар"
 
 #: plugins/reports/kexireportdesignview.cpp:51
 #, fuzzy
