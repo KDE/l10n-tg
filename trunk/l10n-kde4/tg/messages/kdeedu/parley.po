@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kvoctrain\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-20 04:30+0100\n"
+"POT-Creation-Date: 2012-05-17 04:26+0200\n"
 "PO-Revision-Date: 2005-09-23 17:17+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -342,7 +342,7 @@ msgstr "Ҷамъ"
 #. i18n: file: src/editor/declensionwidget.ui:185
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: src/editor/declensionwidget.cpp:171 src/editor/inflectionwidget.cpp:123
-#: src/parleydocument.cpp:301 rc.cpp:389
+#: src/parleydocument.cpp:312 rc.cpp:389
 #, fuzzy
 #| msgid "&Male:"
 msgid "Masculine"
@@ -351,7 +351,7 @@ msgstr "&Мардона:"
 #. i18n: file: src/editor/declensionwidget.ui:271
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: src/editor/declensionwidget.cpp:172 src/editor/inflectionwidget.cpp:125
-#: src/parleydocument.cpp:304 rc.cpp:392
+#: src/parleydocument.cpp:315 rc.cpp:392
 #, fuzzy
 #| msgid "Definite"
 msgid "Feminine"
@@ -360,7 +360,7 @@ msgstr "Муайян"
 #. i18n: file: src/editor/declensionwidget.ui:357
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: src/editor/declensionwidget.cpp:173 src/editor/inflectionwidget.cpp:124
-#: src/parleydocument.cpp:307 rc.cpp:395
+#: src/parleydocument.cpp:318 rc.cpp:395
 #, fuzzy
 #| msgid "Neu&tral:"
 msgid "Neuter"
@@ -474,21 +474,21 @@ msgid "S&earch:"
 msgstr "&Нишона"
 
 #: src/editor/inflectionwidget.cpp:36 src/vocabulary/wordtypeview.cpp:123
-#: src/parleydocument.cpp:311
+#: src/parleydocument.cpp:322
 #, fuzzy
 #| msgid "Verb"
 msgid "Verb"
 msgstr "Веъл"
 
 #: src/editor/inflectionwidget.cpp:41 src/vocabulary/wordtypeview.cpp:74
-#: src/parleydocument.cpp:297
+#: src/parleydocument.cpp:308
 msgid "Noun"
 msgstr "Сифат"
 
 #. i18n: file: src/editor/comparisonwidget.ui:116
 #. i18n: ectx: property (text), widget (QPushButton, makeAdjectiveButton)
 #: src/editor/inflectionwidget.cpp:46 src/vocabulary/wordtypeview.cpp:106
-#: src/parleydocument.cpp:315 rc.cpp:248
+#: src/parleydocument.cpp:326 rc.cpp:248
 #, fuzzy
 #| msgid "Acti&ve"
 msgid "Adjective"
@@ -517,8 +517,8 @@ msgstr ""
 msgid "HTML document"
 msgstr "Ҷумлаи мисол"
 
-#: src/export/exportdialog.cpp:105 src/parleydocument.cpp:223
-#: src/parleymainwindow.cpp:139
+#: src/export/exportdialog.cpp:105 src/parleymainwindow.cpp:139
+#: src/parleydocument.cpp:234
 #, fuzzy
 msgid "Untitled"
 msgstr "сарлавҳа"
@@ -1796,7 +1796,7 @@ msgstr ""
 
 #. i18n: file: src/editor/comparisonwidget.ui:123
 #. i18n: ectx: property (text), widget (QPushButton, makeAdverbButton)
-#: src/vocabulary/wordtypeview.cpp:114 src/parleydocument.cpp:319 rc.cpp:251
+#: src/vocabulary/wordtypeview.cpp:114 src/parleydocument.cpp:330 rc.cpp:251
 msgid "Adverb"
 msgstr "Зарф"
 
@@ -1808,7 +1808,7 @@ msgstr ""
 msgid "This word type folder contains verbs."
 msgstr ""
 
-#: src/vocabulary/wordtypeview.cpp:131 src/parleydocument.cpp:323
+#: src/vocabulary/wordtypeview.cpp:131 src/parleydocument.cpp:334
 #, fuzzy
 msgid "Conjunction"
 msgstr "Тасрифкунӣ"
@@ -1850,7 +1850,17 @@ msgstr "Нигоҳдоштани ҳуҷҷати равон"
 msgid "Last Opened Collections"
 msgstr ""
 
-#: src/parleydocument.cpp:122 src/parleydocument.cpp:398
+#: src/parleymainwindow.cpp:202
+msgid ""
+"Vocabulary is modified.\n"
+"\n"
+"Save file before exit?\n"
+msgstr ""
+"Луғат дигаргун шуд.\n"
+"\n"
+"Пеш аз баромадан файлро нигоҳ кунам?\n"
+
+#: src/parleydocument.cpp:122 src/parleydocument.cpp:409
 #, fuzzy, kde-format
 #| msgid "Edit Properties for Original"
 msgctxt "@title:window document properties"
@@ -1868,25 +1878,36 @@ msgstr "Артикл"
 msgid "Open Vocabulary Collection"
 msgstr "Кушодани файли луғати мисол"
 
-#: src/parleydocument.cpp:213
+#: src/parleydocument.cpp:191
+#, fuzzy
+msgid "Open Collection"
+msgstr "Кушодани файли луғати мисол"
+
+#: src/parleydocument.cpp:191
+#, fuzzy, kde-format
+#| msgid "Could not read "
+msgid "Could not read collection from \"%1\""
+msgstr "Хонда натавонист"
+
+#: src/parleydocument.cpp:224
 #, fuzzy
 msgid "Open Downloaded Vocabulary Collection"
 msgstr "Кушодани луғат"
 
-#: src/parleydocument.cpp:239 src/parleydocument.cpp:289
+#: src/parleydocument.cpp:250 src/parleydocument.cpp:300
 #, kde-format
 msgid "Writing file \"%1\" resulted in an error: %2"
 msgstr ""
 
-#: src/parleydocument.cpp:240 src/parleydocument.cpp:290
+#: src/parleydocument.cpp:251 src/parleydocument.cpp:301
 msgid "Save File"
 msgstr ""
 
-#: src/parleydocument.cpp:258
+#: src/parleydocument.cpp:269
 msgid "Save Vocabulary As"
 msgstr "Нигоҳ доштани луғат монанди"
 
-#: src/parleydocument.cpp:267
+#: src/parleydocument.cpp:278
 #, fuzzy, kde-format
 msgid ""
 "<qt>The file<p><b>%1</b></p>already exists. Do you want to overwrite it?</qt>"
@@ -1894,7 +1915,7 @@ msgstr ""
 "Файли интихобшуда боз мавҷуд аст.\n"
 "Шумо мехоҳед ин файл аз сари нав нависед\"%1\"?"
 
-#: src/parleydocument.cpp:273
+#: src/parleydocument.cpp:284
 #, fuzzy, kde-format
 #| msgid "Saving %1"
 msgctxt "@info:status saving a file"
@@ -1903,7 +1924,7 @@ msgstr "Нигоҳ доштани %1"
 
 #. i18n: file: src/settings/documentproperties.ui:221
 #. i18n: ectx: property (text), item, widget (KComboBox, licenseComboBox)
-#: src/parleydocument.cpp:336 rc.cpp:619
+#: src/parleydocument.cpp:347 rc.cpp:619
 msgid "Public Domain"
 msgstr ""
 
@@ -1911,30 +1932,20 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, categoryComboBox)
 #. i18n: file: src/settings/documentproperties.ui:237
 #. i18n: ectx: property (title), widget (QGroupBox, languageGroupBox)
-#: src/parleydocument.cpp:337 rc.cpp:594 rc.cpp:625
+#: src/parleydocument.cpp:348 rc.cpp:594 rc.cpp:625
 msgid "Languages"
 msgstr "Забонҳо"
 
-#: src/parleydocument.cpp:345
+#: src/parleydocument.cpp:356
 #, fuzzy
 #| msgid "&Append Language"
 msgid "A Second Language"
 msgstr "&Иловаи забон"
 
-#: src/parleydocument.cpp:348
+#: src/parleydocument.cpp:359
 #, fuzzy
 msgid "Lesson 1"
 msgstr "Сохтани дарс"
-
-#: src/parleymainwindow.cpp:202
-msgid ""
-"Vocabulary is modified.\n"
-"\n"
-"Save file before exit?\n"
-msgstr ""
-"Луғат дигаргун шуд.\n"
-"\n"
-"Пеш аз баромадан файлро нигоҳ кунам?\n"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -7960,9 +7971,6 @@ msgstr "тарҷумаи дуруст ворид кунед:"
 #~ msgstr ""
 #~ "истифодабари:маркази эътибори2kvtmlspotfile моҳ сол\n"
 #~ " \n"
-
-#~ msgid "Could not read "
-#~ msgstr "Хонда натавонист"
 
 #~ msgid "Number of Entries per Grade"
 #~ msgstr "Миқдори вурудҳо барои ҳар як дараҷа"
