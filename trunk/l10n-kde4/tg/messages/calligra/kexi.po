@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-10 03:16+0200\n"
+"POT-Creation-Date: 2012-06-12 03:14+0200\n"
 "PO-Revision-Date: 2005-12-23 19:53-0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -590,9 +590,7 @@ msgstr "Нақшаи файли  асоси маълумот(ё ин ки роҳ
 msgid "Unknown error"
 msgstr "Хатои номаълум"
 
-#: core/kexiguimsghandler.cpp:149 plugins/reports/kexireportview.cpp:177
-#: plugins/reports/kexireportview.cpp:204
-#: plugins/reports/kexireportview.cpp:229
+#: core/kexiguimsghandler.cpp:149
 #, fuzzy
 msgid "Warning"
 msgstr "Мураттаб"
@@ -4274,9 +4272,7 @@ msgstr ""
 " Мехоҳед онро аз сари нав нависед?"
 
 #: main/startup/KexiStartupFileHandler.cpp:490
-#: plugins/reports/kexireportview.cpp:177
-#: plugins/reports/kexireportview.cpp:204
-#: plugins/reports/kexireportview.cpp:229 widget/KexiFileWidget.cpp:433
+#: plugins/reports/kexireportview.cpp:175 widget/KexiFileWidget.cpp:433
 msgid "Overwrite"
 msgstr ""
 
@@ -6638,7 +6634,6 @@ msgid "Snap to Grid"
 msgstr "Ба шабака"
 
 #: plugins/forms/kexiformmanager.cpp:190
-#: plugins/reports/kexireportview.cpp:237
 #, fuzzy
 #| msgid "Subtype"
 msgid "Style"
@@ -7393,75 +7388,56 @@ msgstr "Гузориш"
 msgid "Prints the current report."
 msgstr "Нақшаи ҳозира пӯшидан."
 
-#: plugins/reports/kexireportview.cpp:91
+#: plugins/reports/kexireportview.cpp:89
 #, fuzzy
 msgid "Export:"
 msgstr "&Содирот"
 
-#: plugins/reports/kexireportview.cpp:95
-#, fuzzy
-#| msgid "&Save Row"
-msgctxt "Note: do not translate 'Words'"
-msgid "Save to Words"
-msgstr "&Нигоҳ доштан Қатор"
+#: plugins/reports/kexireportview.cpp:94
+msgid "Export as Text Document"
+msgstr ""
+
+#: plugins/reports/kexireportview.cpp:97
+msgid "Export the report as a text document (in OpenDocument Text format)"
+msgstr ""
 
 #: plugins/reports/kexireportview.cpp:98
-#, fuzzy
-#| msgid "Closes the current project."
-msgid "Save the report to a Words application's document"
-msgstr "Нақшаи ҳозира пӯшидан."
+msgid "Exports the report as a text document (in OpenDocument Text format)."
+msgstr ""
 
-#: plugins/reports/kexireportview.cpp:99
+#: plugins/reports/kexireportview.cpp:105
 #, fuzzy
-#| msgid "Closes the current project."
-msgid "Saves the report to a Words application's document."
-msgstr "Нақшаи ҳозира пӯшидан."
-
-#: plugins/reports/kexireportview.cpp:106
-#, fuzzy
-msgctxt "Note: do not translate 'Tables'"
-msgid "Save to Spreadsheet"
+msgid "Export as Spreadsheet"
 msgstr "Барои намуди mime \"%1\" қисмҳои модул вуҷуд надорад"
 
+#: plugins/reports/kexireportview.cpp:108
+msgid "Export the report as a spreadsheet (in OpenDocument Spreadsheet format)"
+msgstr ""
+
 #: plugins/reports/kexireportview.cpp:109
-#, fuzzy
-#| msgid "Closes the current project."
-msgid "Save the report to a spreadsheet"
-msgstr "Нақшаи ҳозира пӯшидан."
+msgid ""
+"Exports the report as a spreadsheet (in OpenDocument Spreadsheet format)."
+msgstr ""
 
-#: plugins/reports/kexireportview.cpp:110
-#, fuzzy
-#| msgid "Closes the current project."
-msgid "Saves the current report to a spreadsheet."
-msgstr "Нақшаи ҳозира пӯшидан."
-
-#: plugins/reports/kexireportview.cpp:117
+#: plugins/reports/kexireportview.cpp:116
 #, fuzzy
 #| msgid "Opening object \"%1\" failed."
-msgid "Save as Web Page"
+msgid "Export as Web Page"
+msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
+
+#: plugins/reports/kexireportview.cpp:119
+#, fuzzy
+#| msgid "Opening object \"%1\" failed."
+msgid "Export the report as a web page (in HTML format)"
 msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
 
 #: plugins/reports/kexireportview.cpp:120
 #, fuzzy
 #| msgid "Opening object \"%1\" failed."
-msgid "Save the report as web page"
+msgid "Exports the report as a web page (in HTML format)."
 msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
 
-#: plugins/reports/kexireportview.cpp:121
-#, fuzzy
-#| msgid "Opening object \"%1\" failed."
-msgid "Saves the report to a web page file."
-msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
-
-#: plugins/reports/kexireportview.cpp:171
-#: plugins/reports/kexireportview.cpp:198
-#, fuzzy
-msgid "Save Report to..."
-msgstr "Гузориш"
-
-#: plugins/reports/kexireportview.cpp:177
-#: plugins/reports/kexireportview.cpp:204
-#: plugins/reports/kexireportview.cpp:228
+#: plugins/reports/kexireportview.cpp:174
 #, fuzzy, kde-format
 #| msgid ""
 #| "The file \"%1\" already exists.\n"
@@ -7473,71 +7449,69 @@ msgstr ""
 "Файли\"%1\" аллакай вуҷуд дорад..\n"
 " Мехоҳед онро аз сари нав нависед?"
 
-#: plugins/reports/kexireportview.cpp:183
-#, fuzzy, kde-format
-msgctxt "Note: do not translate 'Tables'"
-msgid "Failed to open %1 in Tables application."
-msgstr "Барои намуди mime \"%1\" қисмҳои модул вуҷуд надорад"
-
-#: plugins/reports/kexireportview.cpp:183
+#: plugins/reports/kexireportview.cpp:200
 #, fuzzy
-#| msgid "Opening object \"%1\" failed."
-msgid "Opening in Tables application failed"
-msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
+#| msgid "Closes the current project."
+msgid "Export Report as Spreadsheet"
+msgstr "Нақшаи ҳозира пӯшидан."
 
-#: plugins/reports/kexireportview.cpp:210
+#: plugins/reports/kexireportview.cpp:207
 #, fuzzy, kde-format
-msgctxt "Note: do not translate 'Words'"
-msgid "Failed to save %1 to Words applications"
-msgstr "Барои намуди mime \"%1\" қисмҳои модул вуҷуд надорад"
+#| msgid "Closes the current project."
+msgid "Failed to export the report as spreadsheet to %1."
+msgstr "Нақшаи ҳозира пӯшидан."
 
-#: plugins/reports/kexireportview.cpp:210
+#: plugins/reports/kexireportview.cpp:208
+#: plugins/reports/kexireportview.cpp:232
+#: plugins/reports/kexireportview.cpp:270
 #, fuzzy
 #| msgid "Saving \"%1\" object failed."
-msgid "Saving to Words application failed"
+msgid "Export Failed"
 msgstr "Нигоҳ доред \"%1\" мавзӯъ нодуруст."
 
-#: plugins/reports/kexireportview.cpp:222
-#, fuzzy
-#| msgid "Opening object \"%1\" failed."
-msgid "Save Report as Web Page"
-msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
-
-#: plugins/reports/kexireportview.cpp:236
-msgid ""
-"Would you like to export using a Cascading Style Sheet which will give "
-"output closer to the original, or export using a HTML Table which outputs a "
-"much simpler format."
+#: plugins/reports/kexireportview.cpp:224
+msgid "Export Report as Text Document"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:248
-#, fuzzy, kde-format
+#: plugins/reports/kexireportview.cpp:231
+#, kde-format
+msgid "Exporting the report as text document to %1 failed."
+msgstr ""
+
+#: plugins/reports/kexireportview.cpp:244
+#, fuzzy
 #| msgid "Opening object \"%1\" failed."
-msgid "Saving report to %1 failed"
+msgid "Export Report as Web Page"
 msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
 
-#: plugins/reports/kexireportview.cpp:248
-#, fuzzy
-#| msgid "Saving \"%1\" object failed."
-msgid "Saving failed"
-msgstr "Нигоҳ доред \"%1\" мавзӯъ нодуруст."
+#: plugins/reports/kexireportview.cpp:253
+msgid ""
+"Would you like to export using a Cascading Style Sheet (CSS), which will "
+"give an output closer to the original, or export using a HTML Table, which "
+"outputs a much simpler format?"
+msgstr ""
 
-#: plugins/reports/kexireportview.cpp:250
+#: plugins/reports/kexireportview.cpp:257
+msgid "Use CSS"
+msgstr ""
+
+#: plugins/reports/kexireportview.cpp:258
+#, fuzzy
+#| msgid "Table"
+msgid "Use Table"
+msgstr "Ҷадвал"
+
+#: plugins/reports/kexireportview.cpp:269
 #, fuzzy, kde-format
-#| msgid "Report"
-msgid "Report saved to %1"
-msgstr "Гузориш"
+#| msgid "Opening object \"%1\" failed."
+msgid "Exporting the report as web page to %1 failed."
+msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
 
-#: plugins/reports/kexireportview.cpp:250
-#, fuzzy
-msgid "Saving succeeded"
-msgstr "&Содирот"
-
-#: plugins/reports/kexireportview.cpp:327
+#: plugins/reports/kexireportview.cpp:348
 msgid "Report schema appears to be invalid or corrupt"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:327
+#: plugins/reports/kexireportview.cpp:348
 #, fuzzy
 #| msgid "Saving \"%1\" object failed."
 msgid "Opening failed"
@@ -9242,6 +9216,75 @@ msgid "Projects stored in a file"
 msgstr "Нақшаи нав дар файл ғун шудааст"
 
 #, fuzzy
+#~| msgid "&Save Row"
+#~ msgctxt "Note: do not translate 'Words'"
+#~ msgid "Save to Words"
+#~ msgstr "&Нигоҳ доштан Қатор"
+
+#, fuzzy
+#~| msgid "Closes the current project."
+#~ msgid "Save the report to a Words application's document"
+#~ msgstr "Нақшаи ҳозира пӯшидан."
+
+#, fuzzy
+#~| msgid "Closes the current project."
+#~ msgid "Saves the report to a Words application's document."
+#~ msgstr "Нақшаи ҳозира пӯшидан."
+
+#, fuzzy
+#~| msgid "Closes the current project."
+#~ msgid "Saves the current report to a spreadsheet."
+#~ msgstr "Нақшаи ҳозира пӯшидан."
+
+#, fuzzy
+#~| msgid "Opening object \"%1\" failed."
+#~ msgid "Save as Web Page"
+#~ msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
+
+#, fuzzy
+#~ msgid "Save Report to..."
+#~ msgstr "Гузориш"
+
+#, fuzzy
+#~ msgctxt "Note: do not translate 'Tables'"
+#~ msgid "Failed to open %1 in Tables application."
+#~ msgstr "Барои намуди mime \"%1\" қисмҳои модул вуҷуд надорад"
+
+#, fuzzy
+#~| msgid "Opening object \"%1\" failed."
+#~ msgid "Opening in Tables application failed"
+#~ msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
+
+#, fuzzy
+#~ msgctxt "Note: do not translate 'Words'"
+#~ msgid "Failed to save %1 to Words applications"
+#~ msgstr "Барои намуди mime \"%1\" қисмҳои модул вуҷуд надорад"
+
+#, fuzzy
+#~| msgid "Saving \"%1\" object failed."
+#~ msgid "Saving to Words application failed"
+#~ msgstr "Нигоҳ доред \"%1\" мавзӯъ нодуруст."
+
+#, fuzzy
+#~| msgid "Opening object \"%1\" failed."
+#~ msgid "Saving report to %1 failed"
+#~ msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
+
+#, fuzzy
+#~| msgid "Saving \"%1\" object failed."
+#~ msgid "Saving failed"
+#~ msgstr "Нигоҳ доред \"%1\" мавзӯъ нодуруст."
+
+#, fuzzy
+#~| msgid "Report"
+#~ msgid "Report saved to %1"
+#~ msgstr "Гузориш"
+
+#, fuzzy
+#~ msgid "Saving succeeded"
+#~ msgstr "&Содирот"
+
+#, fuzzy
 #~ msgid "Kexi version:"
 #~ msgstr "Мураттаб"
 
@@ -9298,11 +9341,6 @@ msgstr "Нақшаи нав дар файл ғун шудааст"
 #, fuzzy
 #~ msgid "Export Style"
 #~ msgstr "&Содирот"
-
-#, fuzzy
-#~| msgid "Saving \"%1\" object failed."
-#~ msgid "Exporting failed"
-#~ msgstr "Нигоҳ доред \"%1\" мавзӯъ нодуруст."
 
 #, fuzzy
 #~ msgid "Could not load data from table or query."
