@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-29 05:30+0100\n"
+"POT-Creation-Date: 2012-08-18 04:28+0200\n"
 "PO-Revision-Date: 2005-12-23 20:24-0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -385,11 +385,12 @@ msgstr ""
 msgid "Blackscreen on the presentation..."
 msgstr ""
 
-#. i18n: file: part/showcase.rc:91
-#. i18n: ectx: ToolBar (editToolBar)
-#: part/commands/SCSetCustomSlideShowsCommand.cpp:33 rc.cpp:119
-msgid "Edit"
-msgstr ""
+#: part/SCViewModeSlidesSorter.cpp:325 part/ui/SCCustomSlideShowsDialog.cpp:82
+#: part/ui/SCCustomSlideShowsDialog.cpp:239
+#: part/ui/SCCustomSlideShowsDialog.cpp:257 part/ui/SCHtmlExportDialog.cpp:119
+#, kde-format
+msgid "Slide %1"
+msgstr "Слайд %1"
 
 #: part/commands/SCAnimationCreateCommand.cpp:33
 #, fuzzy
@@ -415,6 +416,12 @@ msgstr "Тасвири &таъсир:"
 msgid "Delete page effect"
 msgstr "Тасвири &таъсир:"
 
+#. i18n: file: part/showcase.rc:91
+#. i18n: ectx: ToolBar (editToolBar)
+#: part/commands/SCSetCustomSlideShowsCommand.cpp:33 rc.cpp:119
+msgid "Edit"
+msgstr ""
+
 #: part/dockers/SCPageLayoutDocker.cpp:46
 #, fuzzy
 #| msgid "Page &Layout..."
@@ -430,14 +437,6 @@ msgstr "Файл барои кушодан"
 #| msgid "Page &Layout..."
 msgid "Set Layout"
 msgstr "Саҳифаи &Паҳн кардани..."
-
-#: part/tools/SCAnimationToolFactory.cpp:32
-msgid "Animation tool"
-msgstr ""
-
-#: part/tools/SCPlaceholderToolFactory.cpp:28
-msgid "Layout Tool"
-msgstr ""
 
 #: part/tools/SCAnimationTool.cpp:69
 #, fuzzy
@@ -459,11 +458,9 @@ msgstr ""
 msgid "Shape Animation"
 msgstr "Сохтани Тақдими HTML"
 
-#: part/tools/SCPlaceholderTool.cpp:78
-#, fuzzy
-#| msgid "Shape"
-msgid "Edit Shape"
-msgstr "Андом"
+#: part/tools/SCAnimationToolFactory.cpp:32
+msgid "Animation tool"
+msgstr ""
 
 #: part/tools/SCPageEffectDocker.cpp:57
 msgid "No Effect"
@@ -474,6 +471,16 @@ msgstr "Бе таъсир"
 #| msgid " seconds"
 msgid " sec"
 msgstr " сонияҳо"
+
+#: part/tools/SCPlaceholderTool.cpp:78
+#, fuzzy
+#| msgid "Shape"
+msgid "Edit Shape"
+msgstr "Андом"
+
+#: part/tools/SCPlaceholderToolFactory.cpp:28
+msgid "Layout Tool"
+msgstr ""
 
 #: part/ui/SCConfigurePresenterViewDialog.cpp:42
 #, kde-format
@@ -504,14 +511,6 @@ msgstr "Ҳаммаи Файлҳо"
 msgid "Configure Slide Show"
 msgstr "Танзими Намоиши Слайд"
 
-#: part/ui/SCCustomSlideShowsDialog.cpp:82
-#: part/ui/SCCustomSlideShowsDialog.cpp:239
-#: part/ui/SCCustomSlideShowsDialog.cpp:257 part/ui/SCHtmlExportDialog.cpp:119
-#: part/SCViewModeSlidesSorter.cpp:325
-#, kde-format
-msgid "Slide %1"
-msgstr "Слайд %1"
-
 #: part/ui/SCCustomSlideShowsDialog.cpp:96
 #: part/ui/SCCustomSlideShowsDialog.cpp:100
 #: part/ui/SCCustomSlideShowsDialog.cpp:102
@@ -521,16 +520,16 @@ msgstr "Слайд %1"
 msgid "New Slide Show %1"
 msgstr "Намоиши Слайд"
 
-#: part/ui/SCCustomSlideShowsDialog.cpp:133
-msgid "There cannot be two slideshows with the same name."
-msgstr ""
-
 #: part/ui/SCCustomSlideShowsDialog.cpp:133 part/ui/SCHtmlExportDialog.cpp:158
 #: part/ui/SCHtmlExportDialog.cpp:211
 #, fuzzy
 #| msgid "Arrow"
 msgid "Error"
 msgstr "Ақрабак"
+
+#: part/ui/SCCustomSlideShowsDialog.cpp:133
+msgid "There cannot be two slideshows with the same name."
+msgstr ""
 
 #: part/ui/SCCustomSlideShowsDialog.cpp:148
 #, fuzzy
@@ -579,16 +578,16 @@ msgid "Add Template"
 msgstr ""
 
 #: part/ui/SCHtmlExportDialog.cpp:322
-#, fuzzy
-#| msgid "Save Configuration..."
-msgid "Confirm remove"
-msgstr "Танзимоти Нигоҳ Доштан..."
-
-#: part/ui/SCHtmlExportDialog.cpp:322
 #, fuzzy, kde-format
 #| msgid "Do you want to remove the current slide?"
 msgid "Are you sure you want to remove \"%1\"?"
 msgstr "Шумо ҳақиқатан мехоҳед слайди ҳозираро нобуд созед?"
+
+#: part/ui/SCHtmlExportDialog.cpp:322
+#, fuzzy
+#| msgid "Save Configuration..."
+msgid "Confirm remove"
+msgstr "Танзимоти Нигоҳ Доштан..."
 
 #: plugins/eventactions/sound/SCSoundEventActionWidget.cpp:94
 #, fuzzy
