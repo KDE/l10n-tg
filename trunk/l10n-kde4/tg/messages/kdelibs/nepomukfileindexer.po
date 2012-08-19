@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nepomuk\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 04:20+0200\n"
+"POT-Creation-Date: 2012-08-19 05:34+0200\n"
 "PO-Revision-Date: 2012-01-04 21:57+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -17,34 +17,59 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 0.2\n"
 
-#: eventmonitor.cpp:70
-msgid "Indexing files for fast searching. This process may take a while."
+#: indexer/main.cpp:47
+msgid "NepomukIndexer"
+msgstr "Индексатор Nepomuk"
+
+#: indexer/main.cpp:49
+msgid ""
+"NepomukIndexer indexes the contents of a file and saves the results in "
+"Nepomuk"
 msgstr ""
-"Запущена индексация файлов для быстрого поиска по содержимому. Это может "
-"занять некоторое время."
+"Индексатор Nepomuk индексирует содержимое файла и сохраняет результаты в "
+"Nepomuk"
 
-#: eventmonitor.cpp:103 eventmonitor.cpp:133
-msgid "Resuming indexing of files for fast searching."
-msgstr "Возобновление индексирования содержимого файлов для быстрого поиска."
+#: indexer/main.cpp:51
+#, fuzzy
+#| msgid "(C) 2011, Vishesh Handa"
+msgid "(C) 2011, Vishesh Handa, Sebastian Trueg"
+msgstr "© Vishesh Handa, 2011"
 
-#: eventmonitor.cpp:111
-msgid "Suspending the indexing of files to preserve resources."
-msgstr "Индексация файлов приостановлена из-за большой нагрузки на систему."
+#: indexer/main.cpp:52
+msgid "Vishesh Handa"
+msgstr "Vishesh Handa"
 
-#: eventmonitor.cpp:125
-#, kde-format
-msgid "Disk space is running low (%1 left). Suspending indexing of files."
+#: indexer/main.cpp:52
+msgid "Current maintainer"
+msgstr "Сопровождающий"
+
+#: indexer/main.cpp:53
+msgid "Sebastian Trüg"
+msgstr "Sebastian Trüg"
+
+#: indexer/main.cpp:53
+msgid "Developer"
+msgstr "Разработчик"
+
+#: indexer/main.cpp:58
+msgid "The URI provided will be forced on the resource"
+msgstr "Принудительный выбор адреса URI ресурса Nepomuk"
+
+#: indexer/main.cpp:59
+msgid "The modification time of the resource in time_t format"
+msgstr "Дата и время изменения ресурса Nepomuk в формате time_t"
+
+#: indexer/main.cpp:60
+msgid "The URL of the file to be indexed"
+msgstr "Адрес URL входного файла для индексирования"
+
+#: indexer/main.cpp:61
+msgid "Remove all indexed data of the URL provided"
+msgstr "Удалить все проиндексированные данных для указанного адреса URL"
+
+#: indexer/main.cpp:62
+msgid "Strigi plugins to disable."
 msgstr ""
-"На локальном диске осталось мало места (осталось %1). Индексирование файлов "
-"в Strigi приостановлено."
-
-#: eventmonitor.cpp:153
-#, kde-format
-msgctxt "@info %1 is a duration formatted using KLocale::prettyFormatDuration"
-msgid "Initial indexing of files for fast searching finished in %1"
-msgstr ""
-"Первичное индексирование содержимого файлов для быстрого поиска выполнено за "
-"%1."
 
 #: fileindexer.cpp:176
 msgctxt "@info:status"
@@ -84,59 +109,34 @@ msgctxt "@info:status"
 msgid "File indexer is idle."
 msgstr "Индексирование файлов не осуществляется."
 
-#: indexer/main.cpp:47
-msgid "NepomukIndexer"
-msgstr "Индексатор Nepomuk"
-
-#: indexer/main.cpp:49
-msgid ""
-"NepomukIndexer indexes the contents of a file and saves the results in "
-"Nepomuk"
+#: eventmonitor.cpp:70
+msgid "Indexing files for fast searching. This process may take a while."
 msgstr ""
-"Индексатор Nepomuk индексирует содержимое файла и сохраняет результаты в "
-"Nepomuk"
+"Запущена индексация файлов для быстрого поиска по содержимому. Это может "
+"занять некоторое время."
 
-#: indexer/main.cpp:51
-#, fuzzy
-#| msgid "(C) 2011, Vishesh Handa"
-msgid "(C) 2011, Vishesh Handa, Sebastian Trueg"
-msgstr "© Vishesh Handa, 2011"
+#: eventmonitor.cpp:103 eventmonitor.cpp:133
+msgid "Resuming indexing of files for fast searching."
+msgstr "Возобновление индексирования содержимого файлов для быстрого поиска."
 
-#: indexer/main.cpp:52
-msgid "Current maintainer"
-msgstr "Сопровождающий"
+#: eventmonitor.cpp:111
+msgid "Suspending the indexing of files to preserve resources."
+msgstr "Индексация файлов приостановлена из-за большой нагрузки на систему."
 
-#: indexer/main.cpp:52
-msgid "Vishesh Handa"
-msgstr "Vishesh Handa"
-
-#: indexer/main.cpp:53
-msgid "Developer"
-msgstr "Разработчик"
-
-#: indexer/main.cpp:53
-msgid "Sebastian Trüg"
-msgstr "Sebastian Trüg"
-
-#: indexer/main.cpp:58
-msgid "The URI provided will be forced on the resource"
-msgstr "Принудительный выбор адреса URI ресурса Nepomuk"
-
-#: indexer/main.cpp:59
-msgid "The modification time of the resource in time_t format"
-msgstr "Дата и время изменения ресурса Nepomuk в формате time_t"
-
-#: indexer/main.cpp:60
-msgid "The URL of the file to be indexed"
-msgstr "Адрес URL входного файла для индексирования"
-
-#: indexer/main.cpp:61
-msgid "Remove all indexed data of the URL provided"
-msgstr "Удалить все проиндексированные данных для указанного адреса URL"
-
-#: indexer/main.cpp:62
-msgid "Strigi plugins to disable."
+#: eventmonitor.cpp:125
+#, kde-format
+msgid "Disk space is running low (%1 left). Suspending indexing of files."
 msgstr ""
+"На локальном диске осталось мало места (осталось %1). Индексирование файлов "
+"в Strigi приостановлено."
+
+#: eventmonitor.cpp:153
+#, kde-format
+msgctxt "@info %1 is a duration formatted using KLocale::prettyFormatDuration"
+msgid "Initial indexing of files for fast searching finished in %1"
+msgstr ""
+"Первичное индексирование содержимого файлов для быстрого поиска выполнено за "
+"%1."
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"

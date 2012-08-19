@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkcddb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 04:20+0200\n"
+"POT-Creation-Date: 2012-08-19 05:37+0200\n"
 "PO-Revision-Date: 2004-07-01 17:32+0000\n"
 "Last-Translator: Hiromon <H_Abrorova@rambler.ru>\n"
 "Language-Team:  <tajik>\n"
@@ -21,16 +21,32 @@ msgstr ""
 "X-Generator: KBabel 1.0.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
+#: kcmcddb/kcmcddb.cpp:60
+msgid ""
+"CDDB is used to get information like artist, title and song-names in CD's"
+msgstr ""
+
+#: kcmcddb/kcmcddb.cpp:88
+msgid ""
+"freedb has been set to use HTTP for submissions because the email details "
+"you have entered are incomplete. Please review your email settings and try "
+"again."
+msgstr ""
+
+#: kcmcddb/kcmcddb.cpp:91
+msgid "Incorrect Email Settings"
+msgstr ""
+
 #: kcmcddb/cddbconfigwidget.cpp:59
 msgid "Cache Locations"
 msgstr ""
 
 #: kcmcddb/cddbconfigwidget.cpp:98
-msgid "Could Not Fetch"
+msgid "Could not fetch mirror list."
 msgstr ""
 
 #: kcmcddb/cddbconfigwidget.cpp:98
-msgid "Could not fetch mirror list."
+msgid "Could Not Fetch"
 msgstr ""
 
 #: kcmcddb/cddbconfigwidget.cpp:102
@@ -55,73 +71,8 @@ msgstr ""
 msgid "CDDB"
 msgstr ""
 
-#: kcmcddb/kcmcddb.cpp:60
-msgid ""
-"CDDB is used to get information like artist, title and song-names in CD's"
-msgstr ""
-
-#: kcmcddb/kcmcddb.cpp:88
-msgid ""
-"freedb has been set to use HTTP for submissions because the email details "
-"you have entered are incomplete. Please review your email settings and try "
-"again."
-msgstr ""
-
-#: kcmcddb/kcmcddb.cpp:91
-msgid "Incorrect Email Settings"
-msgstr ""
-
-#: libkcddb/categories.cpp:22 libkcddb/genres.cpp:70
-msgid "Blues"
-msgstr ""
-
-#: libkcddb/categories.cpp:22 libkcddb/genres.cpp:73
-msgid "Classical"
-msgstr ""
-
-#: libkcddb/categories.cpp:22 libkcddb/genres.cpp:75
-msgctxt "music genre"
-msgid "Country"
-msgstr ""
-
-#: libkcddb/categories.cpp:23
-msgid "Data"
-msgstr ""
-
-#: libkcddb/categories.cpp:23 libkcddb/genres.cpp:80
-msgid "Folk"
-msgstr ""
-
-#: libkcddb/categories.cpp:23 libkcddb/genres.cpp:86
-msgid "Jazz"
-msgstr ""
-
-#: libkcddb/categories.cpp:23
-msgid "Miscellaneous"
-msgstr ""
-
-#: libkcddb/categories.cpp:24 libkcddb/genres.cpp:88
-msgid "New Age"
-msgstr ""
-
-#: libkcddb/categories.cpp:24 libkcddb/genres.cpp:94
-msgid "Reggae"
-msgstr ""
-
-#: libkcddb/categories.cpp:24 libkcddb/genres.cpp:95
-msgid "Rock"
-msgstr ""
-
-#: libkcddb/categories.cpp:24 libkcddb/genres.cpp:98
-msgid "Soundtrack"
-msgstr ""
-
 #: libkcddb/cdinfodialog.cpp:146
-msgid "Artist"
-msgstr ""
-
-#: libkcddb/cdinfodialog.cpp:146
-msgid "Comment"
+msgid "Track"
 msgstr ""
 
 #: libkcddb/cdinfodialog.cpp:146
@@ -133,18 +84,21 @@ msgid "Title"
 msgstr ""
 
 #: libkcddb/cdinfodialog.cpp:146
-msgid "Track"
+msgid "Artist"
+msgstr ""
+
+#: libkcddb/cdinfodialog.cpp:146
+msgid "Comment"
 msgstr ""
 
 #: libkcddb/cdinfodialog.cpp:267
 msgid "Change Encoding"
 msgstr ""
 
-#: libkcddb/cdinfoencodingwidget.cpp:65
-#, kde-format
-msgctxt "artist - cdtitle"
-msgid "%1 - %2"
-msgstr ""
+#: libkcddb/genres.cpp:66
+#, fuzzy
+msgid "Unknown"
+msgstr "Хатогии номаълум"
 
 #: libkcddb/genres.cpp:66
 msgid "A Cappella"
@@ -154,17 +108,12 @@ msgstr ""
 msgid "Acid Jazz"
 msgstr ""
 
-#: libkcddb/genres.cpp:66
-#, fuzzy
-msgid "Unknown"
-msgstr "Хатогии номаълум"
-
 #: libkcddb/genres.cpp:67
-msgid "Acid"
+msgid "Acid Punk"
 msgstr ""
 
 #: libkcddb/genres.cpp:67
-msgid "Acid Punk"
+msgid "Acid"
 msgstr ""
 
 #: libkcddb/genres.cpp:67
@@ -219,6 +168,10 @@ msgstr ""
 msgid "Bluegrass"
 msgstr ""
 
+#: libkcddb/genres.cpp:70 libkcddb/categories.cpp:22
+msgid "Blues"
+msgstr ""
+
 #: libkcddb/genres.cpp:71
 msgid "Booty Bass"
 msgstr ""
@@ -259,16 +212,20 @@ msgstr ""
 msgid "Christian Rock"
 msgstr ""
 
+#: libkcddb/genres.cpp:73 libkcddb/categories.cpp:22
+msgid "Classical"
+msgstr ""
+
 #: libkcddb/genres.cpp:73
 msgid "Classic Rock"
 msgstr ""
 
 #: libkcddb/genres.cpp:74
-msgid "Club"
+msgid "Club-house"
 msgstr ""
 
 #: libkcddb/genres.cpp:74
-msgid "Club-house"
+msgid "Club"
 msgstr ""
 
 #: libkcddb/genres.cpp:74
@@ -277,6 +234,11 @@ msgstr ""
 
 #: libkcddb/genres.cpp:74
 msgid "Contemporary Christian"
+msgstr ""
+
+#: libkcddb/genres.cpp:75 libkcddb/categories.cpp:22
+msgctxt "music genre"
+msgid "Country"
 msgstr ""
 
 #: libkcddb/genres.cpp:75
@@ -359,6 +321,10 @@ msgstr ""
 msgid "Folk/Rock"
 msgstr ""
 
+#: libkcddb/genres.cpp:80 libkcddb/categories.cpp:23
+msgid "Folk"
+msgstr ""
+
 #: libkcddb/genres.cpp:80
 msgid "Freestyle"
 msgstr ""
@@ -388,11 +354,11 @@ msgid "Gospel"
 msgstr ""
 
 #: libkcddb/genres.cpp:82
-msgid "Gothic"
+msgid "Gothic Rock"
 msgstr ""
 
 #: libkcddb/genres.cpp:82
-msgid "Gothic Rock"
+msgid "Gothic"
 msgstr ""
 
 #: libkcddb/genres.cpp:82
@@ -400,11 +366,11 @@ msgid "Grunge"
 msgstr ""
 
 #: libkcddb/genres.cpp:83
-msgid "Hard Rock"
+msgid "Hardcore"
 msgstr ""
 
 #: libkcddb/genres.cpp:83
-msgid "Hardcore"
+msgid "Hard Rock"
 msgstr ""
 
 #: libkcddb/genres.cpp:83
@@ -432,10 +398,6 @@ msgid "Industrial"
 msgstr ""
 
 #: libkcddb/genres.cpp:85
-msgid "Instrumental"
-msgstr ""
-
-#: libkcddb/genres.cpp:85
 msgid "Instrumental Pop"
 msgstr ""
 
@@ -444,7 +406,15 @@ msgid "Instrumental Rock"
 msgstr ""
 
 #: libkcddb/genres.cpp:85
+msgid "Instrumental"
+msgstr ""
+
+#: libkcddb/genres.cpp:85
 msgid "Jazz+Funk"
+msgstr ""
+
+#: libkcddb/genres.cpp:86 libkcddb/categories.cpp:23
+msgid "Jazz"
 msgstr ""
 
 #: libkcddb/genres.cpp:86
@@ -491,6 +461,10 @@ msgstr ""
 msgid "Negerpunk"
 msgstr ""
 
+#: libkcddb/genres.cpp:88 libkcddb/categories.cpp:24
+msgid "New Age"
+msgstr ""
+
 #: libkcddb/genres.cpp:89
 msgid "New Wave"
 msgstr ""
@@ -524,11 +498,11 @@ msgid "Pop-Funk"
 msgstr ""
 
 #: libkcddb/genres.cpp:91
-msgid "Pop"
+msgid "Pop/Funk"
 msgstr ""
 
 #: libkcddb/genres.cpp:91
-msgid "Pop/Funk"
+msgid "Pop"
 msgstr ""
 
 #: libkcddb/genres.cpp:91
@@ -560,11 +534,11 @@ msgid "Psychedelic"
 msgstr ""
 
 #: libkcddb/genres.cpp:93
-msgid "Punk"
+msgid "Punk Rock"
 msgstr ""
 
 #: libkcddb/genres.cpp:93
-msgid "Punk Rock"
+msgid "Punk"
 msgstr ""
 
 #: libkcddb/genres.cpp:93
@@ -577,6 +551,10 @@ msgstr ""
 
 #: libkcddb/genres.cpp:94
 msgid "Rave"
+msgstr ""
+
+#: libkcddb/genres.cpp:94 libkcddb/categories.cpp:24
+msgid "Reggae"
 msgstr ""
 
 #: libkcddb/genres.cpp:94
@@ -593,6 +571,10 @@ msgstr ""
 
 #: libkcddb/genres.cpp:95
 msgid "Rock & Roll"
+msgstr ""
+
+#: libkcddb/genres.cpp:95 libkcddb/categories.cpp:24
+msgid "Rock"
 msgstr ""
 
 #: libkcddb/genres.cpp:96
@@ -633,6 +615,10 @@ msgstr ""
 
 #: libkcddb/genres.cpp:98
 msgid "Sound Clip"
+msgstr ""
+
+#: libkcddb/genres.cpp:98 libkcddb/categories.cpp:24
+msgid "Soundtrack"
 msgstr ""
 
 #: libkcddb/genres.cpp:98
@@ -742,6 +728,20 @@ msgstr "Синфи ношинос"
 #: libkcddb/kcddb.cpp:64
 msgid "Unknown error"
 msgstr "Хатогии номаълум"
+
+#: libkcddb/categories.cpp:23
+msgid "Data"
+msgstr ""
+
+#: libkcddb/categories.cpp:23
+msgid "Miscellaneous"
+msgstr ""
+
+#: libkcddb/cdinfoencodingwidget.cpp:65
+#, kde-format
+msgctxt "artist - cdtitle"
+msgid "%1 - %2"
+msgstr ""
 
 #: libkcddb/musicbrainz/musicbrainzlookup.cpp:122
 #, kde-format

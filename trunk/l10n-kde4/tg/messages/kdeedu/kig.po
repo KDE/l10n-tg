@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kig\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 04:14+0200\n"
+"POT-Creation-Date: 2012-08-19 04:53+0200\n"
 "PO-Revision-Date: 2005-10-28 16:34+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -26,6 +26,942 @@ msgstr ""
 "<youth_opportunities@tajik.net>\n"
 "X-Generator: KBabel 1.10\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. i18n: file: tips:2
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:3
+msgid ""
+"<p>You can control a kig construction by means of a \"pykig\" \n"
+"python script, that can be executed with the command \n"
+"<code>pykig.py</code>.  Here is a nice example \n"
+"(<code>hexagons.kpy</code>) you can try:\n"
+"<code><pre>\n"
+"kigdocument.hideobjects()\n"
+"def hexagons (c, v, n):\n"
+"  hexagon = PolygonBCV (c, v, 6)\n"
+"  if n &lt;= 0:\n"
+"    hexagon.show()\n"
+"    for i in range(6): \n"
+"      PolygonSide (hexagon, i, True)\n"
+"    return\n"
+"  cnew = MidPoints (c, v)\n"
+"  hexagons (cnew, v, n-1)\n"
+"  for k in [2,4]:\n"
+"    v1 = PolygonVertex (hexagon, k)\n"
+"    cnew = MidPoints (c, v1)\n"
+"    hexagons (cnew, v1, n-1)\n"
+"hexagons (Point(0,0), Point(1,0), 5)\n"
+"</pre></code>\n"
+msgstr ""
+
+#. i18n: file: tips:28
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:28
+msgid ""
+"<p>You can repeat the latest construction simply by pressing the key\n"
+"'Z'; this comes in very handy if you need to construct a sequence\n"
+"of objects with the same construction, especially if there is\n"
+"no shortcut for that construction.</p>\n"
+msgstr ""
+
+#. i18n: file: tips:37
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:36
+msgid ""
+"<p>One of the most powerful tools in Kig are the menus that you can\n"
+"enter by right-clicking on an object, or on some empty space in the\n"
+"document.  You can use them to give objects names, change their colors\n"
+"and line styles, and lots of other interesting things.</p>\n"
+msgstr ""
+"<p>Дар Kig шумо доим метавонед рӯи тугмаи рости муш ба ягон объект ё фазои "
+"холӣ барои тамоми амалҳои ба объект истифодашавандаро ба амал оваред, пахш "
+"кунед. Мисоли: номгузории объектҳо, таъғири ранг ва услуби хат, эҷоди "
+"объекти нав, ва мисли инҳо ғайраҳоро карда мешавад.</p>\n"
+
+#. i18n: file: tips:46
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:44
+msgid ""
+"<p>You can construct new points without using the menu or the toolbar, "
+"simply\n"
+"clicking somewhere on the Kig document with the <em>middle mouse\n"
+"button</em>.</p>\n"
+msgstr ""
+"<p>Нуқтаҳоро метавон ғайри истифодаи меню ё панели асбобҳо созед, барои ин "
+"бояд ба рӯи <em>тугмаи байнии муш</em> ба ҷои холӣ зер кунед.</p>\n"
+
+#. i18n: file: tips:54
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:51
+msgid ""
+"<p>Kig can open several file formats: its files (<code>.kig</code> files),\n"
+"<em>KGeo</em> files, <em>KSeg</em> files, and, partially, <em>Dr. Geo</em>\n"
+"and <em>Cabri&#8482;</em> files.</p>\n"
+msgstr ""
+"<p>Kig метавонад якчанд андозаи парвандаро ҳӯй кунад: парвандҳои вай (<code>."
+"kig</code> парвандҳо),\n"
+"<em>KGeo</em> парвандҳо, <em>KSeg</em>парвандҳо, ва, қисман <em>Dr. Geo</em>-"
+"ро.</p>\n"
+"ва <em>Cabri&#8482;</em> парвандҳо.</p>\n"
+
+#. i18n: file: tips:62
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:58
+#, fuzzy
+msgid ""
+"<p>Kig has more than 20 objects and 10 transformations with more than 80 \n"
+"constructions you can use in your documents: open the <em>Objects</em> \n"
+"menu to see them all.</p>\n"
+msgstr ""
+"<p>Kig имконияти зиёд аз 40 объект ва 10 тағиротҳое, ки шумо метавонед созед "
+"ва истифода баред\n"
+"Дар ҳуҷҷататон: кушоед <em>Объектҳо</em>меню барои ҳамаро дидан</p>\n"
+
+#. i18n: file: tips:70
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:65
+msgid ""
+"<p>You can use the selected objects to start the construction of an object\n"
+"which requires the selected objects as arguments. For example, if you have "
+"two\n"
+"points selected, you can choose <em>Start->Circle by Three Points</em> from "
+"the\n"
+"popup menu to start constructing a circle by three points.</p>\n"
+msgstr ""
+"<p>Шумо метавонед обектҳои интихобшударо истифода баред барои саркардани "
+"сохтмони объект\n"
+"кадомҳое, ки объекти интихобшударо ҳамчун асос талаб мекунад. Мисол, агар "
+"шумо дуто дошта бошед\n"
+"нуқтаи интихобшударо шумо метавонед интихоб кунед <em>Аввал->Се нуқтаи "
+"доира</em> Аз\n"
+"popup меню барои саркардан, барои сохтани се нуқтаи доира.</p>\n"
+
+#. i18n: file: tips:79
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:73
+#, fuzzy
+#| msgid ""
+#| "<p>Kig can extends its object set using external macros. You can find "
+#| "some\n"
+#| "interesting macro on Kig website:\n"
+#| "<a href=\"http://edu.kde.org/kig\">http://edu.kde.org/kig</a>.</p>\n"
+msgid ""
+"<p>Kig can extends its object set using external macros. You can find some\n"
+"interesting macros on the Kig website:\n"
+"<a href=\"http://edu.kde.org/kig\">http://edu.kde.org/kig</a>.</p>\n"
+msgstr ""
+"<p>Kig метавонад калон шавад барои гирифтани объект . Якхел вақт шумо "
+"метавонед\n"
+"Аҷоиботи макро дар  Kig website:\n"
+"<a href=\"http://edu.kde.org/kig\">http://edu.kde.org/kig</a>.</p>\n"
+
+#. i18n: file: tips:87
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:80
+msgid ""
+"<p>If you have more than one object under the mouse, and you want to select "
+"any\n"
+"of them, you can click with the <em>left mouse button</em>, while holding "
+"the\n"
+"<em>Shift</em> key, to get a list of the objects under the mouse cursor "
+"which\n"
+"you can then select from.</p>\n"
+msgstr ""
+"<p>Агар шумо дар таги мушак аз якто зиёд объект дошта бошед ва шумо мехоҳед "
+"боз интихоб кунед дигар\n"
+"аз онҳо шумо метавонед зер кунед <em>кнопкаи  чапи мушак</em>,дар вақти "
+"гузаронидон\n"
+"<em>Shift</em> калид, барои ёфтани рӯйхати объектҳо дар таги мушак\n"
+"онгоҳ шумо метавонед интихоб кунед.</p>\n"
+
+#. i18n: file: tips:96
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:88
+msgid ""
+"<p>When you construct a locus, you can click on it with the <em>right</em> "
+"mouse\n"
+"button and select <em>cartesian equation</em> to see its cartesian "
+"equation, \n"
+"whenever it is an algebraic curve of low degree.</p>\n"
+msgstr ""
+
+#: rc.cpp:1
+#, fuzzy
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Марина Колючева Виктор Ибрагимов Акмал Саломов Масрур Каримов "
+
+#: rc.cpp:2
+#, fuzzy
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "youth_opportunities@tajik.net"
+
+#. i18n: file: kig/kigpartui.rc:5
+#. i18n: ectx: Menu (file)
+#. i18n: file: kig/kigui.rc:4
+#. i18n: ectx: Menu (file)
+#: rc.cpp:5 rc.cpp:101
+#, fuzzy
+msgid "&File"
+msgstr "&Пинҳон кардан"
+
+#. i18n: file: kig/kigpartui.rc:16
+#. i18n: ectx: Menu (edit)
+#: rc.cpp:8
+#, fuzzy
+msgid "&Edit"
+msgstr "Таъғир додан..."
+
+#. i18n: file: kig/kigpartui.rc:27
+#. i18n: ectx: Menu (view)
+#: rc.cpp:11
+#, fuzzy
+msgid "&View"
+msgstr "&Пинҳон кардан"
+
+#. i18n: file: kig/kigpartui.rc:35
+#. i18n: ectx: Menu (objects)
+#: rc.cpp:14
+msgid "&Objects"
+msgstr "&Мавзӯъҳо"
+
+#. i18n: file: kig/kigpartui.rc:37
+#. i18n: ectx: Menu (new_point)
+#: rc.cpp:17
+msgid "&Points"
+msgstr "&Нуқтаҳо"
+
+#. i18n: file: kig/kigpartui.rc:49
+#. i18n: ectx: Menu (new_line)
+#: rc.cpp:20
+msgid "&Lines"
+msgstr "&Хатҳо"
+
+#. i18n: file: kig/kigpartui.rc:59
+#. i18n: ectx: Menu (new_circle)
+#: rc.cpp:23
+msgid "&Circles && Arcs"
+msgstr "&Доира ва қавс"
+
+#. i18n: file: kig/kigpartui.rc:70
+#. i18n: ectx: Menu (new_poligon)
+#: rc.cpp:26
+msgid "Poly&gons"
+msgstr "&Бисёркунҷаҳо"
+
+#. i18n: file: kig/kigpartui.rc:82
+#. i18n: ectx: Menu (new_vector)
+#: rc.cpp:29
+msgid "&Vectors && Segments"
+msgstr "&Векторҳо ва порчаҳо"
+
+#. i18n: file: kig/kigpartui.rc:91
+#. i18n: ectx: Menu (new_conic)
+#: rc.cpp:32
+msgid "Co&nics && Cubics"
+msgstr "&Доирот ва қавс"
+
+#. i18n: file: kig/kigpartui.rc:98
+#. i18n: ectx: Menu (new_moreconics)
+#: rc.cpp:35
+msgid "More Conics"
+msgstr "Калонтарин конусшакл"
+
+#. i18n: file: kig/kigpartui.rc:113
+#. i18n: ectx: Menu (new_cubic)
+#: rc.cpp:38
+msgid "Cu&bics"
+msgstr "&Хатҳои каҷи тартиботи саввум"
+
+#. i18n: file: kig/kigpartui.rc:121
+#. i18n: ectx: Menu (new_bezier)
+#: rc.cpp:41
+msgid "&Bézier curves"
+msgstr ""
+
+#. i18n: file: kig/kigpartui.rc:131
+#. i18n: ectx: Menu (new_angle)
+#: rc.cpp:44
+msgid "&Angles"
+msgstr "&Кунҷҳо"
+
+#. i18n: file: kig/kigpartui.rc:136
+#. i18n: ectx: Menu (new_transformation)
+#: rc.cpp:47
+msgid "&Transformations"
+msgstr "&Тағйиротҳо"
+
+#. i18n: file: kig/kigpartui.rc:154
+#. i18n: ectx: Menu (new_differentialgeometry)
+#: rc.cpp:50
+msgid "&Differential geometry"
+msgstr "&Геометрияи дифференциалӣ"
+
+#. i18n: file: kig/kigpartui.rc:161
+#. i18n: ectx: Menu (new_test)
+#: rc.cpp:53
+msgid "T&ests"
+msgstr "Сан&ҷишҳо"
+
+#. i18n: file: kig/kigpartui.rc:172
+#. i18n: ectx: Menu (new_other)
+#: rc.cpp:56
+msgid "&Other"
+msgstr "&Дигар"
+
+#. i18n: file: kig/kigpartui.rc:186
+#. i18n: ectx: Menu (types)
+#: rc.cpp:59
+msgid "&Types"
+msgstr "&Навъҳо"
+
+#. i18n: file: kig/kigpartui.rc:191
+#. i18n: ectx: Menu (tools)
+#: rc.cpp:62
+msgid "&Tools"
+msgstr ""
+
+#. i18n: file: kig/kigpartui.rc:204
+#. i18n: ectx: ToolBar (mainToolBar)
+#. i18n: file: kig/kigui.rc:23
+#. i18n: ectx: ToolBar (mainToolBar)
+#: rc.cpp:65 rc.cpp:107
+msgid "Main Toolbar"
+msgstr ""
+
+#. i18n: file: kig/kigpartui.rc:218
+#. i18n: ectx: ToolBar (points_toolbar)
+#: rc.cpp:68
+msgid "Points"
+msgstr "Нуқтаҳо"
+
+#. i18n: file: kig/kigpartui.rc:229
+#. i18n: ectx: ToolBar (line_toolbar)
+#: rc.cpp:71
+msgid "Lines"
+msgstr "Хатҳо"
+
+#. i18n: file: kig/kigpartui.rc:239
+#. i18n: ectx: ToolBar (vectseg_toolbar)
+#: rc.cpp:74
+msgid "Vectors && Segments"
+msgstr "Векторҳо ва порчаҳо"
+
+#. i18n: file: kig/kigpartui.rc:247
+#. i18n: ectx: ToolBar (circle_toolbar)
+#: rc.cpp:77
+msgid "Circles && Arcs"
+msgstr "Доирот ва қавс"
+
+#. i18n: file: kig/kigpartui.rc:255
+#. i18n: ectx: ToolBar (conic_toolbar)
+#: rc.cpp:80
+msgid "Conics"
+msgstr "Хатҳои каҷи конусшакл"
+
+#. i18n: file: kig/kigpartui.rc:264
+#. i18n: ectx: ToolBar (bezier_toolbar)
+#: rc.cpp:83
+#, fuzzy
+#| msgid "Hide a Curve"
+msgid "Bézier Curves"
+msgstr "Пинҳон намудани хати каҷи тартиботи саввум"
+
+#. i18n: file: kig/kigpartui.rc:274
+#. i18n: ectx: ToolBar (angles_toolbar)
+#: rc.cpp:86
+msgid "Angles"
+msgstr "Кунҷҳо"
+
+#. i18n: file: kig/kigpartui.rc:279
+#. i18n: ectx: ToolBar (transformation_toolbar)
+#: rc.cpp:89
+msgid "Transformations"
+msgstr "Тағйирот"
+
+#. i18n: file: kig/kigpartui.rc:293
+#. i18n: ectx: ToolBar (tests_toolbar)
+#: rc.cpp:92
+msgid "Tests"
+msgstr "Санҷишот"
+
+#. i18n: file: kig/kigpartui.rc:305
+#. i18n: ectx: ToolBar (rest_toolbar)
+#: rc.cpp:95
+msgid "Other Objects"
+msgstr "Обектҳои дигар"
+
+#. i18n: file: kig/kigpartui.rc:313
+#. i18n: ectx: ToolBar (view_toolbar)
+#: rc.cpp:98
+msgid "View"
+msgstr ""
+
+#. i18n: file: kig/kigui.rc:13
+#. i18n: ectx: Menu (settings)
+#: rc.cpp:104
+msgid "&Settings"
+msgstr ""
+
+#. i18n: file: filters/asyexporteroptionswidget.ui:22
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: file: filters/imageexporteroptionswidget.ui:120
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#. i18n: file: filters/latexexporteroptionswidget.ui:82
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: file: filters/svgexporteroptionswidget.ui:22
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:110 rc.cpp:134 rc.cpp:164 rc.cpp:176 misc/kigfiledialog.cc:34
+#, fuzzy
+msgid "Options"
+msgstr "Интихоби SVG"
+
+#. i18n: file: filters/asyexporteroptionswidget.ui:42
+#. i18n: ectx: property (text), widget (QCheckBox, showFrameCheckBox)
+#. i18n: file: filters/latexexporteroptionswidget.ui:95
+#. i18n: ectx: property (text), widget (QCheckBox, showFrameCheckBox)
+#: rc.cpp:113 rc.cpp:170
+#, fuzzy
+msgid "Show Extra Frame"
+msgstr "Нигоҳдодани иловагии чаҳорчӯб"
+
+#. i18n: file: filters/asyexporteroptionswidget.ui:49
+#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
+#. i18n: file: filters/imageexporteroptionswidget.ui:140
+#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
+#. i18n: file: filters/latexexporteroptionswidget.ui:102
+#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
+#. i18n: file: filters/svgexporteroptionswidget.ui:42
+#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
+#: rc.cpp:116 rc.cpp:137 rc.cpp:173 rc.cpp:179
+#, fuzzy
+msgid "Show Axes"
+msgstr "&Намоиши меҳварҳо"
+
+#. i18n: file: filters/asyexporteroptionswidget.ui:56
+#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
+#. i18n: file: filters/imageexporteroptionswidget.ui:147
+#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
+#. i18n: file: filters/latexexporteroptionswidget.ui:88
+#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
+#. i18n: file: filters/svgexporteroptionswidget.ui:49
+#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
+#: rc.cpp:119 rc.cpp:140 rc.cpp:167 rc.cpp:182
+#, fuzzy
+msgid "Show Grid"
+msgstr "&Намоиши хатҳои шабака"
+
+#. i18n: file: filters/imageexporteroptionswidget.ui:22
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:122
+msgid "Resolution"
+msgstr "Иҷозат"
+
+#. i18n: file: filters/imageexporteroptionswidget.ui:37
+#. i18n: ectx: property (text), widget (QCheckBox, keepAspectRatio)
+#: rc.cpp:125
+#, fuzzy
+msgid "&Keep Aspect Ratio"
+msgstr "&Нигоҳдоштани навъ муносибат"
+
+#. i18n: file: filters/imageexporteroptionswidget.ui:54
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:128
+msgid "Height:"
+msgstr "Бузургӣ:"
+
+#. i18n: file: filters/imageexporteroptionswidget.ui:110
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:131
+msgid "Width:"
+msgstr "Васеъӣ:"
+
+#. i18n: file: filters/latexexporteroptionswidget.ui:23
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:143
+msgid "Output format"
+msgstr ""
+
+#. i18n: file: filters/latexexporteroptionswidget.ui:29
+#. i18n: ectx: property (text), widget (QRadioButton, psTricksRadioButton)
+#: rc.cpp:146
+msgid "PSTricks"
+msgstr ""
+
+#. i18n: file: filters/latexexporteroptionswidget.ui:36
+#. i18n: ectx: property (text), widget (QRadioButton, tikzRadioButton)
+#: rc.cpp:149
+msgid "Tikz/PGF"
+msgstr ""
+
+#. i18n: file: filters/latexexporteroptionswidget.ui:46
+#. i18n: ectx: property (text), widget (QRadioButton, asyRadioButton)
+#: rc.cpp:152
+msgid "Asymptote"
+msgstr ""
+
+#. i18n: file: filters/latexexporteroptionswidget.ui:56
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: rc.cpp:155
+#, fuzzy
+#| msgid "Document to open"
+msgid "Document options"
+msgstr "Санад барои кушодан"
+
+#. i18n: file: filters/latexexporteroptionswidget.ui:62
+#. i18n: ectx: property (text), widget (QRadioButton, pictureRadioButton)
+#: rc.cpp:158
+msgid "Picture only"
+msgstr ""
+
+#. i18n: file: filters/latexexporteroptionswidget.ui:72
+#. i18n: ectx: property (text), widget (QRadioButton, documentRadioButton)
+#: rc.cpp:161
+#, fuzzy
+#| msgid "Zoom in on the document"
+msgid "Standalone document"
+msgstr "Калон кардани масштаби ҳуҷҷат"
+
+#. i18n: file: misc/kigcoordinateprecisiondialog.ui:9
+#. i18n: ectx: property (text), widget (QCheckBox, m_defaultCheckBox)
+#: rc.cpp:185
+msgid "&Use default coordinate precision"
+msgstr ""
+
+#. i18n: file: misc/kigcoordinateprecisiondialog.ui:16
+#. i18n: ectx: property (text), widget (QLabel, m_precisionLabel)
+#: rc.cpp:188
+msgid "&Specify coordinate precision:"
+msgstr ""
+
+#. i18n: file: modes/edittypewidget.ui:36
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:191
+msgid ""
+"Here you can modify the name, the description and the icon of this macro "
+"type."
+msgstr "Дар инҷо метавонед ном, тасвирот ва ишораи макронавъро тағйир диҳед."
+
+#. i18n: file: modes/edittypewidget.ui:73
+#. i18n: ectx: property (text), widget (QLabel, label_2_3)
+#: rc.cpp:194
+msgid "Name:"
+msgstr "Ном:"
+
+#. i18n: file: modes/edittypewidget.ui:93
+#. i18n: ectx: property (text), widget (QLabel, label_2_2_2)
+#: rc.cpp:197
+msgid "Description:"
+msgstr "Тасвирот:"
+
+#. i18n: file: modes/historywidget.ui:22
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:200
+msgid "Description of the current step:"
+msgstr ""
+
+#. i18n: file: modes/historywidget.ui:53
+#. i18n: ectx: property (toolTip), widget (QPushButton, buttonFirst)
+#: rc.cpp:203
+#, fuzzy
+msgid "First step"
+msgstr "Фокуси якӯм"
+
+#. i18n: file: modes/historywidget.ui:66
+#. i18n: ectx: property (toolTip), widget (QPushButton, buttonBack)
+#: rc.cpp:206
+msgid "One step back"
+msgstr ""
+
+#. i18n: file: modes/historywidget.ui:82
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:209
+msgid "/"
+msgstr ""
+
+#. i18n: file: modes/historywidget.ui:96
+#. i18n: ectx: property (toolTip), widget (QPushButton, buttonNext)
+#: rc.cpp:212
+msgid "One step forward"
+msgstr ""
+
+#. i18n: file: modes/historywidget.ui:109
+#. i18n: ectx: property (toolTip), widget (QPushButton, buttonLast)
+#: rc.cpp:215
+msgid "Last step"
+msgstr ""
+
+#. i18n: file: modes/typeswidget.ui:37
+#. i18n: ectx: property (toolTip), widget (QTreeView, typeList)
+#: rc.cpp:218
+msgid "Select types here..."
+msgstr "Навъро интихоб кунед..."
+
+#. i18n: file: modes/typeswidget.ui:40
+#. i18n: ectx: property (whatsThis), widget (QTreeView, typeList)
+#: rc.cpp:221
+msgid ""
+"This is a list of the current macro types... You can select, edit, delete, "
+"export and import them..."
+msgstr ""
+"Ин рӯйхати макро аст... Шумо метавонед  интихоб кунед, нест кунед, таҳрир "
+"кунед,Содирот ва воридот мекунад онҳоро..."
+
+#. i18n: file: modes/typeswidget.ui:99
+#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonEdit)
+#: rc.cpp:224
+msgid "Edit the selected type."
+msgstr "Шакли таҳрири интихобшуда."
+
+#. i18n: file: modes/typeswidget.ui:102
+#. i18n: ectx: property (text), widget (KPushButton, buttonEdit)
+#: rc.cpp:227 modes/typesdialog.cpp:368
+#, fuzzy
+msgid "&Edit..."
+msgstr "Таъғир додан..."
+
+#. i18n: file: modes/typeswidget.ui:109
+#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonRemove)
+#: rc.cpp:230
+msgid "Delete all the selected types in the list."
+msgstr "Таҳрири интихобшуда"
+
+#. i18n: file: modes/typeswidget.ui:112
+#. i18n: ectx: property (text), widget (KPushButton, buttonRemove)
+#: rc.cpp:233 modes/popup.cc:390 modes/typesdialog.cpp:369
+#, fuzzy
+msgid "&Delete"
+msgstr "&Ҳузфи объектҳо"
+
+#. i18n: file: modes/typeswidget.ui:151
+#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonExport)
+#: rc.cpp:236
+msgid "Export all the selected types to a file."
+msgstr "Ҳамаи таҳлили интихобшударо ба парванда содирот кунед."
+
+#. i18n: file: modes/typeswidget.ui:154
+#. i18n: ectx: property (text), widget (KPushButton, buttonExport)
+#: rc.cpp:239 modes/typesdialog.cpp:371
+#, fuzzy
+msgid "E&xport..."
+msgstr "Содирот..."
+
+#. i18n: file: modes/typeswidget.ui:161
+#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonImport)
+#: rc.cpp:242
+msgid "Import macros that are contained in one or more files."
+msgstr "Воридоти макро дар як ё зиёд парванда нигоҳ дошта мешаванд."
+
+#. i18n: file: modes/typeswidget.ui:164
+#. i18n: ectx: property (text), widget (KPushButton, buttonImport)
+#: rc.cpp:245
+#, fuzzy
+msgid "&Import..."
+msgstr "Воридот..."
+
+#: rc.cpp:246
+msgid "Circle by Center && Line"
+msgstr "Давраи аз рӯи марказ ва нуқта"
+
+#: rc.cpp:247
+msgid "A circle constructed by its center and tangent to a given line"
+msgstr "Сохтани доира давра аз рӯи марказ ва нуқта дар ӯ саҳид"
+
+#: rc.cpp:248
+msgid "Construct a circle tangent to this line"
+msgstr "Сохтани доира давра аз рӯи ҳамин нуқта"
+
+#: rc.cpp:249 rc.cpp:254 objects/circle_type.cc:34
+msgid "Construct a circle with this center"
+msgstr "Сохтани доира давра аз рӯи ҳамин нуқта ҳамчун марказ"
+
+#: rc.cpp:250
+msgid "Select the line that the new circle should be tangent to..."
+msgstr "Хати тамосро барои доираи нав низ интихоб кунед..."
+
+#: rc.cpp:251 rc.cpp:256 objects/circle_type.cc:39 objects/circle_type.cc:194
+msgid "Select the center of the new circle..."
+msgstr "Маркази доираи навро интихоб кунед..."
+
+#: rc.cpp:252
+msgid "Circle by Point && Segment (as the Diameter)"
+msgstr "Доираи расмкаши && ҳисса(ҳамчун диаметр)"
+
+#: rc.cpp:253
+msgid ""
+"A circle defined by its center and the length of a segment as the diameter"
+msgstr "Доира бо марказ ва дарозии ҳисса ҳамчун диаметр муайян мешавад"
+
+#: rc.cpp:255
+msgid ""
+"Construct a circle with the diameter given by the length of this segment"
+msgstr "Доираро ба диаметр созед, дарозии ин ҳисса дода шудааст"
+
+#: rc.cpp:257
+msgid "Select the segment whose length gives the diameter of the new circle..."
+msgstr ""
+"Ҳиссаи дарози кадоме, ки диаметри доираи навро медиҳад интихоб кунед..."
+
+#: rc.cpp:258
+msgid "Equilateral Triangle"
+msgstr "Секунҷаи баробарпаҳлу"
+
+#: rc.cpp:259
+msgid "Equilateral triangle with given two vertices"
+msgstr "Секунҷаи баробарпаҳлу бо ду қулла дода шудааст"
+
+#: rc.cpp:260
+msgid "Evolute"
+msgstr "Гузаронидан"
+
+#: rc.cpp:261
+msgid "Evolute of a curve"
+msgstr "Гузаронидани хати каҷ"
+
+#: rc.cpp:262
+msgid "Evolute of this curve"
+msgstr "Интихоби ин хати каҷ"
+
+#: rc.cpp:263 rc.cpp:268 objects/centerofcurvature_type.cc:35
+#: objects/tangent_type.cc:36
+msgid "Select the curve..."
+msgstr "Гузаронидани хатти каҷ..."
+
+#: rc.cpp:264
+msgid "Osculating Circle"
+msgstr "Пайвастшавии доира"
+
+#: rc.cpp:265
+msgid "Osculating circle of a curve at a point"
+msgstr "Пайвастшавии доира бо нуқтаи хатти каҷ"
+
+#: rc.cpp:266
+msgid "Osculating circle of this curve"
+msgstr "Пайвастшавии доира бо хатти каҷ"
+
+#: rc.cpp:267
+msgid "Osculating circle at this point"
+msgstr "Пайвастшавии доира бо нуқта"
+
+#: rc.cpp:269
+msgid "Select the point..."
+msgstr "Интихоб кардани нуқта..."
+
+#: rc.cpp:270
+msgid "Segment Axis"
+msgstr "Порчаи Axis"
+
+#: rc.cpp:271
+msgid "The perpendicular line through a given segment's mid point."
+msgstr "Хати перпендикулярӣ аз байни сегмент."
+
+#: rc.cpp:272
+msgid "Construct the axis of this segment"
+msgstr "Эҷоди тираи ин порча"
+
+#: rc.cpp:273
+msgid "Select the segment of which you want to draw the axis..."
+msgstr "Порчаеро интихоб кунед, ки дар он тираро кашидан лзим бошад..."
+
+#: rc.cpp:274
+msgid "Square"
+msgstr "Росткунҷа"
+
+#: rc.cpp:275
+msgid "Square with two given adjacent vertices"
+msgstr "Росткунҷаро бо дуто ҳамҷавори хати амудӣ"
+
+#: rc.cpp:276
+msgid "Vector Difference"
+msgstr "Гуногунии векторҳо"
+
+#: rc.cpp:277
+msgid "Construct the vector difference of two vectors."
+msgstr "Сохтани вектори гуногун аз рӯи ду вектор"
+
+#: rc.cpp:278
+msgid "Construct the vector difference of this vector and another one."
+msgstr "Сохтани гуногунии ин ва дигар вектор"
+
+#: rc.cpp:279
+msgid "Construct the vector difference of the other vector and this one."
+msgstr "Сохтани гуногунии дигар ва ин вектор"
+
+#: rc.cpp:280
+msgid "Construct the vector difference starting at this point."
+msgstr "Сохтани вектори гуногуншакл, дар ин нуқта оғоз ёбад"
+
+#: rc.cpp:281
+msgid ""
+"Select the first of the two vectors of which you want to construct the "
+"difference..."
+msgstr "Аз ду вектор яктоашро барои ёфтани ҷамъи он, интихоб кунед..."
+
+#: rc.cpp:282
+msgid ""
+"Select the other of the two vectors of which you want to construct the "
+"difference..."
+msgstr "Аз дигар вектор яктоашро барои ёфтани ҷамъи он, интихоб кунед..."
+
+#: rc.cpp:283
+msgid "Select the point to construct the difference vector in..."
+msgstr "Нуқтаро барои сохтани дар он вектори гуногуншакл, интихоб кунед..."
+
+#: filters/filter.h:55 filters/cabri-utils.cc:33 misc/object_hierarchy.cc:486
+#: objects/object_imp_factory.cc:294
+#, fuzzy, kde-format
+msgid "An error was encountered at line %1 in file %2."
+msgstr "Хатогӣ ҳангоми хондани файли \"%1\" рӯй дод. Он кушода нахоҳад шуд."
+
+#: kig/aboutdata.h:29
+msgid "KDE Interactive Geometry"
+msgstr "Геометрияи интерактивии KDE"
+
+#: kig/aboutdata.h:33
+msgid "(C) 2002-2005, The Kig developers"
+msgstr "(C) 2002-2004, Коргардонҳои Kig"
+
+#: kig/aboutdata.h:35
+msgid "Dominique Devriese"
+msgstr ""
+
+#: kig/aboutdata.h:36
+msgid "Original author, long time maintainer, design and lots of code."
+msgstr "Муаллифиибтидоӣ, вақти дарози автогрейдер, лоиҳакаши ва рамзҳои бисёр."
+
+#: kig/aboutdata.h:39
+msgid "Maurizio Paolini"
+msgstr ""
+
+#: kig/aboutdata.h:40
+msgid ""
+"Did a lot of important work all around Kig, including, but not limited to "
+"conics, cubics, transformations and property tests support."
+msgstr ""
+"Кори шиддатнок дар гирди Kig, ҳамчунин хати каҷи конусшакл, хатҳои каҷи "
+"тартиби саввум, таъғирдиҳӣ ва озмоиши хосият."
+
+#: kig/aboutdata.h:45
+msgid "Pino Toscano"
+msgstr ""
+
+#: kig/aboutdata.h:46
+msgid ""
+"Actual maintainer, Dr. Geo import filter, point and line styles, Italian "
+"translation, miscellaneous stuff here and there."
+msgstr "Содироти файлҳои Dr. Geo, услубҳои нуқта ва хат, ҳисобот оиди хатогӣ."
+
+#: kig/aboutdata.h:51
+msgid "Franco Pasquarelli"
+msgstr ""
+
+#: kig/aboutdata.h:52
+msgid ""
+"Helped a lot with the implementation of the Locus object, there's quite some "
+"math involved in doing it right, and Franco wrote the most difficult parts."
+msgstr ""
+"Кӯмак ба амалӣ гардонидани ГМТ, Franco тамоми қисмҳои мушкилии кодро "
+"навиштааст, зеро ки он математикаро хеле хуб медонад."
+
+#: kig/aboutdata.h:57
+msgid "Francesca Gatti"
+msgstr ""
+
+#: kig/aboutdata.h:58
+#, fuzzy
+#| msgid "Responsible for the nice application SVG Icon."
+msgid "Responsible for the computation of the algebraic equation of a locus."
+msgstr " SVG Барои ишораҳои зебои масъул аст."
+
+#: kig/aboutdata.h:62
+msgid "Petr Gajdos"
+msgstr ""
+
+#: kig/aboutdata.h:63
+#, fuzzy
+#| msgid "Construct a circle with this center"
+msgid "Contributed the Bézier curves and related icons."
+msgstr "Сохтани доира давра аз рӯи ҳамин нуқта ҳамчун марказ"
+
+#: kig/aboutdata.h:66
+msgid "Raoul Bourquin"
+msgstr ""
+
+#: kig/aboutdata.h:67
+#, fuzzy
+#| msgid "Construct the asymptotes of this conic"
+msgid "Contributed the 'asymptote' export filter."
+msgstr "Сохтани асимптотаи ин хати каҷи конусшакл"
+
+#: kig/aboutdata.h:70
+msgid "Eric Depagne"
+msgstr ""
+
+#: kig/aboutdata.h:71
+msgid ""
+"The French translator, who also sent me some useful feedback, like feature "
+"requests and bug reports."
+msgstr "Ҳисоботҳои зиёд оиди хатогӣ ва ҷумлаҳои нав."
+
+#: kig/aboutdata.h:75
+msgid "Marc Bartsch"
+msgstr ""
+
+#: kig/aboutdata.h:76
+msgid ""
+"Author of KGeo, where I got inspiration, some source, and most of the "
+"artwork from."
+msgstr ""
+"Муаллифи KGeo, ки дар барномаи он идея иқтибос ёфта буд, якчанд кодҳои "
+"ибтидоӣ ва тасвироти коркардашуда ҳам ҳамчунин."
+
+#: kig/aboutdata.h:80
+msgid "Christophe Devriese"
+msgstr ""
+
+#: kig/aboutdata.h:81
+msgid ""
+"Domi's brother, who he got to write the algorithm for calculating the center "
+"of the circle with three points given."
+msgstr ""
+"Бародари domi, ки ба он алгоритми ҳисоб намудани координати маркази доира аз "
+"се нуқтаро навиштааст."
+
+#: kig/aboutdata.h:86
+msgid "Christophe Prud'homme"
+msgstr ""
+
+#: kig/aboutdata.h:87
+msgid "Sent me a patch for some bugs."
+msgstr "Тасҳеҳгар барои дур сохтани якхел хатогиҳо."
+
+#: kig/aboutdata.h:90
+msgid "Robert Gogolok"
+msgstr ""
+
+#: kig/aboutdata.h:91
+msgid ""
+"Gave me some good feedback on Kig, some feature requests, cleanups and style "
+"fixes, and someone to chat with on irc :)"
+msgstr "Якчанд ҷумлаҳо, ислоҳот, тасҳеҳот дар услуб"
+
+#: kig/aboutdata.h:96
+msgid "David Vignoni"
+msgstr ""
+
+#: kig/aboutdata.h:97
+msgid "Responsible for the nice application SVG Icon."
+msgstr " SVG Барои ишораҳои зебои масъул аст."
+
+#: kig/aboutdata.h:100
+msgid "Danny Allen"
+msgstr ""
+
+#: kig/aboutdata.h:101
+#, fuzzy
+msgid "Responsible for the new object action icons."
+msgstr "Барои объектҳо ва ишораҳои нав масъул аст"
 
 #: filters/asyexporter.cc:40
 #, fuzzy
@@ -83,12 +1019,6 @@ msgid ""
 msgstr ""
 "Файли Cabri дорои объекти \"%1\" мебошад, ки дар айни замон бо Kig пуштибонӣ "
 "намешавад."
-
-#: filters/cabri-utils.cc:33 filters/filter.h:55 misc/object_hierarchy.cc:486
-#: objects/object_imp_factory.cc:294
-#, fuzzy, kde-format
-msgid "An error was encountered at line %1 in file %2."
-msgstr "Хатогӣ ҳангоми хондани файли \"%1\" рӯй дод. Он кушода нахоҳад шуд."
 
 #: filters/drgeo-filter.cc:109
 #, kde-format
@@ -332,487 +1262,6 @@ msgstr "*.fig|Санадоти XFig (*.fig)"
 #: filters/xfigexporter.cc:581
 msgid "Export as XFig File"
 msgstr "Содир кардан ба файли XFig"
-
-#: kig/aboutdata.h:29
-msgid "KDE Interactive Geometry"
-msgstr "Геометрияи интерактивии KDE"
-
-#: kig/aboutdata.h:33
-msgid "(C) 2002-2005, The Kig developers"
-msgstr "(C) 2002-2004, Коргардонҳои Kig"
-
-#: kig/aboutdata.h:35
-msgid "Dominique Devriese"
-msgstr ""
-
-#: kig/aboutdata.h:36
-msgid "Original author, long time maintainer, design and lots of code."
-msgstr "Муаллифиибтидоӣ, вақти дарози автогрейдер, лоиҳакаши ва рамзҳои бисёр."
-
-#: kig/aboutdata.h:39
-msgid "Maurizio Paolini"
-msgstr ""
-
-#: kig/aboutdata.h:40
-msgid ""
-"Did a lot of important work all around Kig, including, but not limited to "
-"conics, cubics, transformations and property tests support."
-msgstr ""
-"Кори шиддатнок дар гирди Kig, ҳамчунин хати каҷи конусшакл, хатҳои каҷи "
-"тартиби саввум, таъғирдиҳӣ ва озмоиши хосият."
-
-#: kig/aboutdata.h:45
-msgid "Pino Toscano"
-msgstr ""
-
-#: kig/aboutdata.h:46
-msgid ""
-"Actual maintainer, Dr. Geo import filter, point and line styles, Italian "
-"translation, miscellaneous stuff here and there."
-msgstr "Содироти файлҳои Dr. Geo, услубҳои нуқта ва хат, ҳисобот оиди хатогӣ."
-
-#: kig/aboutdata.h:51
-msgid "Franco Pasquarelli"
-msgstr ""
-
-#: kig/aboutdata.h:52
-msgid ""
-"Helped a lot with the implementation of the Locus object, there's quite some "
-"math involved in doing it right, and Franco wrote the most difficult parts."
-msgstr ""
-"Кӯмак ба амалӣ гардонидани ГМТ, Franco тамоми қисмҳои мушкилии кодро "
-"навиштааст, зеро ки он математикаро хеле хуб медонад."
-
-#: kig/aboutdata.h:57
-msgid "Francesca Gatti"
-msgstr ""
-
-#: kig/aboutdata.h:58
-#, fuzzy
-#| msgid "Responsible for the nice application SVG Icon."
-msgid "Responsible for the computation of the algebraic equation of a locus."
-msgstr " SVG Барои ишораҳои зебои масъул аст."
-
-#: kig/aboutdata.h:62
-msgid "Petr Gajdos"
-msgstr ""
-
-#: kig/aboutdata.h:63
-#, fuzzy
-#| msgid "Construct a circle with this center"
-msgid "Contributed the Bézier curves and related icons."
-msgstr "Сохтани доира давра аз рӯи ҳамин нуқта ҳамчун марказ"
-
-#: kig/aboutdata.h:66
-msgid "Raoul Bourquin"
-msgstr ""
-
-#: kig/aboutdata.h:67
-#, fuzzy
-#| msgid "Construct the asymptotes of this conic"
-msgid "Contributed the 'asymptote' export filter."
-msgstr "Сохтани асимптотаи ин хати каҷи конусшакл"
-
-#: kig/aboutdata.h:70
-msgid "Eric Depagne"
-msgstr ""
-
-#: kig/aboutdata.h:71
-msgid ""
-"The French translator, who also sent me some useful feedback, like feature "
-"requests and bug reports."
-msgstr "Ҳисоботҳои зиёд оиди хатогӣ ва ҷумлаҳои нав."
-
-#: kig/aboutdata.h:75
-msgid "Marc Bartsch"
-msgstr ""
-
-#: kig/aboutdata.h:76
-msgid ""
-"Author of KGeo, where I got inspiration, some source, and most of the "
-"artwork from."
-msgstr ""
-"Муаллифи KGeo, ки дар барномаи он идея иқтибос ёфта буд, якчанд кодҳои "
-"ибтидоӣ ва тасвироти коркардашуда ҳам ҳамчунин."
-
-#: kig/aboutdata.h:80
-msgid "Christophe Devriese"
-msgstr ""
-
-#: kig/aboutdata.h:81
-msgid ""
-"Domi's brother, who he got to write the algorithm for calculating the center "
-"of the circle with three points given."
-msgstr ""
-"Бародари domi, ки ба он алгоритми ҳисоб намудани координати маркази доира аз "
-"се нуқтаро навиштааст."
-
-#: kig/aboutdata.h:86
-msgid "Christophe Prud'homme"
-msgstr ""
-
-#: kig/aboutdata.h:87
-msgid "Sent me a patch for some bugs."
-msgstr "Тасҳеҳгар барои дур сохтани якхел хатогиҳо."
-
-#: kig/aboutdata.h:90
-msgid "Robert Gogolok"
-msgstr ""
-
-#: kig/aboutdata.h:91
-msgid ""
-"Gave me some good feedback on Kig, some feature requests, cleanups and style "
-"fixes, and someone to chat with on irc :)"
-msgstr "Якчанд ҷумлаҳо, ислоҳот, тасҳеҳот дар услуб"
-
-#: kig/aboutdata.h:96
-msgid "David Vignoni"
-msgstr ""
-
-#: kig/aboutdata.h:97
-msgid "Responsible for the nice application SVG Icon."
-msgstr " SVG Барои ишораҳои зебои масъул аст."
-
-#: kig/aboutdata.h:100
-msgid "Danny Allen"
-msgstr ""
-
-#: kig/aboutdata.h:101
-#, fuzzy
-msgid "Responsible for the new object action icons."
-msgstr "Барои объектҳо ва ишораҳои нав масъул аст"
-
-#: kig/kig.cpp:90
-msgid "Could not find the necessary Kig library, check your installation."
-msgstr "Китобхонаи kig ёфт нашуд."
-
-#: kig/kig.cpp:203
-#, kde-format
-msgid "Save changes to document %1?"
-msgstr "Тағиротҳоро дар санадоти %1 нигоҳ дорам?"
-
-#: kig/kig.cpp:204
-msgid "Save Changes?"
-msgstr "Тағиротҳоро нигоҳ дорам?"
-
-#: kig/kig.cpp:239
-#, fuzzy
-msgid ""
-"*.kig *.kigz *.seg *.fgeo *.fig *.FIG|All Supported Files (*.kig *.kigz *."
-"seg *.fgeo *.fig)\n"
-"*.kig|Kig Documents (*.kig)\n"
-"*.kigz|Compressed Kig Documents (*.kigz)\n"
-"*.kgeo|KGeo Documents (*.kgeo)\n"
-"*.seg|KSeg Documents (*.seg)\n"
-"*.fgeo|Dr. Geo Documents (*.fgeo)\n"
-"*.fig *.FIG|Cabri Documents (*.fig *.FIG)"
-msgstr ""
-"*.kig *.kgeo *.seg|Тамоми форматҳои пуштибонӣ шаванда(*.kig *.kgeo *.seg)\n"
-"*.kig|Kig (*.kig)\n"
-"*.kgeo|KGeos (*.kgeo)\n"
-"*.seg|KSeg (*.seg)\n"
-"*.fgeo|Dr. Geo (*.fgeo)\n"
-"*.fig *.FIG|Cabri (*.fig *.FIG)"
-
-#: kig/kig_commands.cpp:100
-#, fuzzy, kde-format
-#| msgid "Remove %1 Objects"
-msgid "Remove %1 Object"
-msgid_plural "Remove %1 Objects"
-msgstr[0] "Ҳузфи %1 объектҳо"
-msgstr[1] "Ҳузфи %1 объектҳо"
-
-#: kig/kig_commands.cpp:112
-#, fuzzy, kde-format
-#| msgid "Add %1 Objects"
-msgid "Add %1 Object"
-msgid_plural "Add %1 Objects"
-msgstr[0] "Афзудани %1 объектҳо"
-msgstr[1] "Афзудани %1 объектҳо"
-
-#: kig/kig_part.cpp:86
-msgid "KigPart"
-msgstr "KigPart"
-
-#: kig/kig_part.cpp:90
-msgid "&Set Coordinate System"
-msgstr "&Мондани тартиботи координатаҳо"
-
-#: kig/kig_part.cpp:131
-msgid "Kig Options"
-msgstr "Параметрҳои Kig"
-
-#: kig/kig_part.cpp:135
-msgid "Show grid"
-msgstr "Намоиши шабака"
-
-#: kig/kig_part.cpp:138
-msgid "Show axes"
-msgstr "Намоиши меҳварҳо"
-
-#: kig/kig_part.cpp:227
-msgid "Invert Selection"
-msgstr "Табдилдиҳии ҷудокунӣ"
-
-#: kig/kig_part.cpp:234
-msgid "&Delete Objects"
-msgstr "&Ҳузфи объектҳо"
-
-#: kig/kig_part.cpp:238
-msgid "Delete the selected objects"
-msgstr "Ҳузфи объектҳои интихобшуда"
-
-#: kig/kig_part.cpp:240
-msgid "Cancel Construction"
-msgstr "Барҳамдиҳии сафбандӣ"
-
-#: kig/kig_part.cpp:245
-msgid "Cancel the construction of the object being constructed"
-msgstr "Барҳамдиҳии сафбандии объект"
-
-#: kig/kig_part.cpp:248
-#, fuzzy
-msgid "Repeat Construction"
-msgstr "Барҳамдиҳии сафбандӣ"
-
-#: kig/kig_part.cpp:253
-msgid "Repeat the last construction (with new data)"
-msgstr ""
-
-#: kig/kig_part.cpp:256 modes/popup.cc:936
-#, fuzzy
-msgid "U&nhide All"
-msgstr "Намоиши &ҳамааш"
-
-#: kig/kig_part.cpp:259
-msgid "Show all hidden objects"
-msgstr "Намоиши ҳама пинҳонӣ мавзӯъҳо"
-
-#: kig/kig_part.cpp:262
-msgid "&New Macro..."
-msgstr "&Макроси нав..."
-
-#: kig/kig_part.cpp:265
-msgid "Define a new macro"
-msgstr "Таъин кардани макроси нав"
-
-#: kig/kig_part.cpp:267
-msgid "Manage &Types..."
-msgstr "&Идора кардани намудҳо..."
-
-#: kig/kig_part.cpp:270
-msgid "Manage macro types."
-msgstr "Идора кардани намудҳои макрос"
-
-#: kig/kig_part.cpp:272
-msgid "&Browse History..."
-msgstr ""
-
-#: kig/kig_part.cpp:275
-#, fuzzy
-msgid "Browse the history of the current construction."
-msgstr "Барҳамдиҳии сафбандӣ"
-
-#: kig/kig_part.cpp:282 kig/kig_part.cpp:283
-msgid "Zoom in on the document"
-msgstr "Калон кардани масштаби ҳуҷҷат"
-
-#: kig/kig_part.cpp:287 kig/kig_part.cpp:288
-msgid "Zoom out of the document"
-msgstr "Камтар кардани масштаби ҳуҷҷат"
-
-#: kig/kig_part.cpp:294 kig/kig_part.cpp:295
-msgid "Recenter the screen on the document"
-msgstr "Ба рӯи ҳуҷҷат"
-
-#: kig/kig_part.cpp:298 kig/kig_part.cpp:299
-msgid "View this document full-screen."
-msgstr "Намоиши ҳуҷҷат дар экрани пурра."
-
-#: kig/kig_part.cpp:302
-msgid "&Select Shown Area"
-msgstr "&Интихоб кардани доира барои намоиш"
-
-#: kig/kig_part.cpp:305 kig/kig_part.cpp:306
-msgid "Select the area that you want to be shown in the window."
-msgstr "Интихоб кардани доира барои намоиш дар тиреза."
-
-#: kig/kig_part.cpp:308
-msgid "S&elect Zoom Area"
-msgstr "&Интихоб кардани доира барои намоиш"
-
-#: kig/kig_part.cpp:314
-#, fuzzy
-#| msgid "Set &Coordinate..."
-msgid "Set Coordinate &Precision..."
-msgstr "Сабт кардани &координата..."
-
-#: kig/kig_part.cpp:316
-msgid "Set the floating point precision of coordinates in the document. "
-msgstr ""
-
-#: kig/kig_part.cpp:319
-msgid "Show &Grid"
-msgstr "&Намоиши хатҳои шабака"
-
-#: kig/kig_part.cpp:321
-msgid "Show or hide the grid."
-msgstr "Намоиш ё пинҳони шабақа"
-
-#: kig/kig_part.cpp:325
-msgid "Show &Axes"
-msgstr "&Намоиши меҳварҳо"
-
-#: kig/kig_part.cpp:327
-msgid "Show or hide the axes."
-msgstr "намоиш ё пинҳони тира"
-
-#: kig/kig_part.cpp:331
-msgid "Wear Infrared Glasses"
-msgstr ""
-
-#: kig/kig_part.cpp:333
-msgid "Enable/disable hidden objects' visibility."
-msgstr ""
-
-#: kig/kig_part.cpp:365
-#, fuzzy, kde-format
-msgid "Repeat Construction (%1)"
-msgstr "Барҳамдиҳии сафбандӣ"
-
-#: kig/kig_part.cpp:367
-#, kde-format
-msgid "Repeat %1 (with new data)"
-msgstr ""
-
-#: kig/kig_part.cpp:396
-#, kde-format
-msgid ""
-"The file \"%1\" you tried to open does not exist. Please verify that you "
-"entered the correct path."
-msgstr ""
-"Файли \"%1\" мавҷуд надорад. Мутмаин бошед, ки шумо роҳи саҳеҳро ворид "
-"кардед."
-
-#: kig/kig_part.cpp:398
-msgid "File Not Found"
-msgstr "Файл ёфт нашуд"
-
-#: kig/kig_part.cpp:416
-#, fuzzy, kde-format
-msgid ""
-"You tried to open a document of type \"%1\"; unfortunately, Kig does not "
-"support this format. If you think the format in question would be worth "
-"implementing support for, you can always ask us nicely on mailto:pino@kde."
-"org or do the work yourself and send me a patch."
-msgstr ""
-"Шумо сайъи боз кардани санади навъи \"%1\"-ро карда истодаед. Мутаассифона "
-"Kig онро дастгирӣ намекунад. Шумо доим метавонед дарбеҳро бо дастгирии "
-"формати мазкур ба муаллифи барнома бо нишони devriese@kde.org бифиристед."
-
-#: kig/kig_part.cpp:422 kig/kig_part.cpp:465
-#, fuzzy
-msgid "Format Not Supported"
-msgstr "Формат пуштибонӣ намешавад"
-
-#: kig/kig_part.cpp:463
-msgid ""
-"Kig does not support saving to any other file format than its own. Save to "
-"Kig's format instead?"
-msgstr ""
-"Kig метавонад файлҳоро танҳо дар андозаи худ нигоҳ дорад. Инро иҷро кунам?"
-
-#: kig/kig_part.cpp:465
-msgid "Save Kig Format"
-msgstr ""
-
-#: kig/kig_part.cpp:700
-msgid ""
-"*.kig|Kig Documents (*.kig)\n"
-"*.kigz|Compressed Kig Documents (*.kigz)"
-msgstr ""
-
-#: kig/kig_part.cpp:711 misc/kigfiledialog.cc:54 modes/typesdialog.cpp:456
-#, kde-format
-msgid "The file \"%1\" already exists. Do you wish to overwrite it?"
-msgstr "Файли \"%1\" аллакай маҷуд аст. Оё мехоҳед ин файлро бознависӣ кунед?"
-
-#: kig/kig_part.cpp:712 misc/kigfiledialog.cc:55 modes/typesdialog.cpp:458
-msgid "Overwrite File?"
-msgstr "Файлро таъғир диҳам?"
-
-#: kig/kig_part.cpp:869
-msgid "Print Geometry"
-msgstr "Чоп"
-
-#: kig/kig_part.cpp:936
-#, kde-format
-msgid "Hide %1 Object"
-msgid_plural "Hide %1 Objects"
-msgstr[0] "Пинҳони %1 объект"
-msgstr[1] "Пинҳони %1 объектҳо"
-
-#: kig/kig_part.cpp:955
-#, kde-format
-msgid "Show %1 Object"
-msgid_plural "Show %1 Objects"
-msgstr[0] "Намоиши %1 объект"
-msgstr[1] "Намоиши %1 объектҳо"
-
-#: kig/kig_view.cpp:220
-msgid "Zoom In"
-msgstr "Вусъат додани масштаб"
-
-#: kig/kig_view.cpp:240
-msgid "Zoom Out"
-msgstr "Камтар кардани масштаб"
-
-#: kig/kig_view.cpp:520
-msgid "Recenter View"
-msgstr "Тасвиротро ғайри марказӣ кардан"
-
-#: kig/kig_view.cpp:542
-msgid "Select the rectangle that should be shown."
-msgstr "Интихоб кардани росткунҷа барои намоиш."
-
-#: kig/kig_view.cpp:550 kig/kig_view.cpp:598
-msgid "Change Shown Part of Screen"
-msgstr "Таъғир додани қисми тасвиршавандаи экран"
-
-#: kig/kig_view.cpp:587
-msgid "Select Zoom Area"
-msgstr "Канореро барои вусъат додан интихоб кунед"
-
-#: kig/kig_view.cpp:588
-#, fuzzy
-msgid ""
-"Select the zoom area by entering the coordinates<br />of the upper left "
-"corner and the lower right corner."
-msgstr ""
-"Маҳали масштабониро бо ишора намудани координати кунҷи болоии чап ва поёнии "
-"ростро низ муайян кунед."
-
-#: kig/main.cpp:98
-msgid "Kig"
-msgstr "Kig"
-
-#: kig/main.cpp:104
-msgid ""
-"Do not show a GUI. Convert the specified file to the native Kig format. "
-"Output goes to stdout unless --outfile is specified."
-msgstr ""
-"Ғайри интерфейси графикӣ. Таъғир додани файли ишорашуда ба формати Kig. "
-"Ҷамъбаст ба stdout меравад, фақат агар калид ба --outfile ишора шуда набошад."
-
-#: kig/main.cpp:106
-msgid ""
-"File to output the created native file to. '-' means output to stdout. "
-"Default is stdout as well."
-msgstr "Файл барои хурӯҷ. '-' - хурӯҷи стандартӣ (пешфарзӣ)."
-
-#: kig/main.cpp:107
-msgid "Document to open"
-msgstr "Санад барои кушодан"
 
 #: misc/builtin_stuff.cc:60
 #, fuzzy
@@ -1381,58 +1830,6 @@ msgstr "Ҳуруфҳои Python"
 msgid "Construct a new Python script."
 msgstr "Сохтани объект, ки дар асоси ҳуруфи Python шудааст."
 
-#: misc/coordinate_system.cpp:325
-#, fuzzy
-msgid ""
-"Enter coordinates in the following format: \"x;y\",\n"
-"where x is the x coordinate, and y is the y coordinate."
-msgstr ""
-"Координатҳоро ба формати зерин ворид кунед: \"x;y\", ки x - абсисса, y - "
-"ордината."
-
-#: misc/coordinate_system.cpp:331
-#, fuzzy
-msgid ""
-"Enter coordinates in the following format: <b>\"x;y\"</b>,<br />where x is "
-"the x coordinate, and y is the y coordinate."
-msgstr ""
-"Координатҳоро ба формати зерин ворид кунед: \"x;y\", ки x - абсисса, y - "
-"ордината."
-
-#: misc/coordinate_system.cpp:371
-#, fuzzy
-msgid ""
-"Enter coordinates in the following format: \"r; θ°\",\n"
-"where r and θ are the polar coordinates."
-msgstr ""
-"Координатҳоро ба формати зерин ворид кунед: \"r; θ°\", ки r ва θ - "
-"координатҳои қутбӣ."
-
-#: misc/coordinate_system.cpp:378
-#, fuzzy
-msgid ""
-"Enter coordinates in the following format: <b>\"r; θ°\"</b>,<br />where r "
-"and θ are the polar coordinates."
-msgstr ""
-"Координатҳоро ба формати зерин ворид кунед: \"r; θ°\", ки r ва θ - "
-"координатҳои қутбӣ."
-
-#: misc/coordinate_system.cpp:530
-msgid "&Euclidean"
-msgstr "&Евклидӣ"
-
-#: misc/coordinate_system.cpp:531
-msgid "&Polar"
-msgstr "&Қутбӣ"
-
-#: misc/coordinate_system.cpp:581
-msgid "Set Euclidean Coordinate System"
-msgstr "Мондани тартиботи координатаҳои Евклид"
-
-#: misc/coordinate_system.cpp:583
-msgid "Set Polar Coordinate System"
-msgstr "Мондани тартиботи координатаҳои қутбӣ"
-
 #: misc/goniometry.cc:122
 msgctxt "Translators: Degrees"
 msgid "Deg"
@@ -1491,18 +1888,14 @@ msgstr "Эҷоди тамға"
 msgid "Numeric Value"
 msgstr ""
 
-#. i18n: file: filters/asyexporteroptionswidget.ui:22
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#. i18n: file: filters/imageexporteroptionswidget.ui:120
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#. i18n: file: filters/latexexporteroptionswidget.ui:82
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#. i18n: file: filters/svgexporteroptionswidget.ui:22
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: misc/kigfiledialog.cc:34 rc.cpp:110 rc.cpp:134 rc.cpp:164 rc.cpp:176
-#, fuzzy
-msgid "Options"
-msgstr "Интихоби SVG"
+#: misc/kigfiledialog.cc:54 kig/kig_part.cpp:711 modes/typesdialog.cpp:456
+#, kde-format
+msgid "The file \"%1\" already exists. Do you wish to overwrite it?"
+msgstr "Файли \"%1\" аллакай маҷуд аст. Оё мехоҳед ин файлро бознависӣ кунед?"
+
+#: misc/kigfiledialog.cc:55 kig/kig_part.cpp:712 modes/typesdialog.cpp:458
+msgid "Overwrite File?"
+msgstr "Файлро таъғир диҳам?"
 
 #: misc/kiginputdialog.cc:130
 msgid "Set Angle Size"
@@ -1595,12 +1988,12 @@ msgid ""
 msgstr "Нуқтаи навбатиро интихоб кунед, ки аз он ҶНГ сохта шавад..."
 
 #: misc/special_constructors.cc:391
-msgid "A locus"
-msgstr "Ҷойи нуқтаҳои геометрӣ"
-
-#: misc/special_constructors.cc:391
 msgid "Locus"
 msgstr "ҶНГ"
+
+#: misc/special_constructors.cc:391
+msgid "A locus"
+msgstr "Ҷойи нуқтаҳои геометрӣ"
 
 #: misc/special_constructors.cc:481
 msgid "Dependent Point"
@@ -2216,15 +2609,15 @@ msgstr "Интихоби аргументи %1"
 msgid "Change Label"
 msgstr "Таъғири навиштаҷот"
 
-#: modes/label.cc:645
-#, fuzzy
-msgid "Enter value:"
-msgstr "Матни навиштаҷот"
-
 #: modes/label.cc:645 objects/text_type.cc:325
 #, fuzzy
 msgid "Set Value"
 msgstr "Интихоби &услуб"
+
+#: modes/label.cc:645
+#, fuzzy
+msgid "Enter value:"
+msgstr "Матни навиштаҷот"
 
 #: modes/label.cc:676
 #, fuzzy
@@ -2396,13 +2789,6 @@ msgstr ""
 msgid "&Move"
 msgstr "&Гузаронидан"
 
-#. i18n: file: modes/typeswidget.ui:112
-#. i18n: ectx: property (text), widget (KPushButton, buttonRemove)
-#: modes/popup.cc:390 modes/typesdialog.cpp:369 rc.cpp:233
-#, fuzzy
-msgid "&Delete"
-msgstr "&Ҳузфи объектҳо"
-
 #: modes/popup.cc:400
 msgid "&Custom Color"
 msgstr "&Дигар ранг"
@@ -2415,13 +2801,13 @@ msgstr "Муқаррар намудани &ном..."
 msgid "&Name"
 msgstr "&Ном"
 
-#: modes/popup.cc:529
-msgid "Set Name of this Object:"
-msgstr "Номи объект:"
-
 #: modes/popup.cc:529 modes/popup.cc:546
 msgid "Set Object Name"
 msgstr "Муқаррар намудани намуди объект"
+
+#: modes/popup.cc:529
+msgid "Set Name of this Object:"
+msgstr "Номи объект:"
 
 #: modes/popup.cc:644
 msgid "Change Object Color"
@@ -2445,6 +2831,11 @@ msgstr "Тағйири услуби объект"
 msgctxt "More menu items"
 msgid "More..."
 msgstr "Содирот..."
+
+#: modes/popup.cc:936 kig/kig_part.cpp:256
+#, fuzzy
+msgid "U&nhide All"
+msgstr "Намоиши &ҳамааш"
 
 #: modes/textlabelwizard.cc:50
 msgid "Enter Label Text"
@@ -2482,74 +2873,6 @@ msgstr ""
 #: modes/textlabelwizard.cc:123
 msgid "Construct Label"
 msgstr "Эҷоди навиштаҷот"
-
-#: modes/typesdialog.cpp:130
-msgid "Macro"
-msgstr ""
-
-#: modes/typesdialog.cpp:313
-#, fuzzy
-msgid "Type"
-msgstr "&Навъҳо"
-
-#: modes/typesdialog.cpp:315
-msgid "Description"
-msgstr "Тасвирот"
-
-#: modes/typesdialog.cpp:339
-msgid "Manage Types"
-msgstr "Идоракунии навъҳо"
-
-#. i18n: file: modes/typeswidget.ui:102
-#. i18n: ectx: property (text), widget (KPushButton, buttonEdit)
-#: modes/typesdialog.cpp:368 rc.cpp:227
-#, fuzzy
-msgid "&Edit..."
-msgstr "Таъғир додан..."
-
-#. i18n: file: modes/typeswidget.ui:154
-#. i18n: ectx: property (text), widget (KPushButton, buttonExport)
-#: modes/typesdialog.cpp:371 rc.cpp:239
-#, fuzzy
-msgid "E&xport..."
-msgstr "Содирот..."
-
-#: modes/typesdialog.cpp:426
-#, fuzzy, kde-format
-msgid "Are you sure you want to delete this type?"
-msgid_plural "Are you sure you want to delete these %1 types?"
-msgstr[0] "Оё мутмаинед, ки мехоҳед ин %1 навъро ҳузф кунед?"
-msgstr[1] "Оё мутмаинед, ки мехоҳед ин %1 навъҳоро ҳузф кунед?"
-
-#: modes/typesdialog.cpp:428
-msgid "Are You Sure?"
-msgstr "Оё мутмаинед?"
-
-#: modes/typesdialog.cpp:451 modes/typesdialog.cpp:466
-msgid ""
-"*.kigt|Kig Types Files\n"
-"*|All Files"
-msgstr ""
-"*.kigt|Kig Намудҳои файлҳо\n"
-"*|Ҳама файлҳо"
-
-#: modes/typesdialog.cpp:451
-msgid "Export Types"
-msgstr "Намудҳои Воридот"
-
-#: modes/typesdialog.cpp:466
-msgid "Import Types"
-msgstr "Намудҳои Воридот"
-
-#: modes/typesdialog.cpp:494
-msgid ""
-"There is more than one type selected. You can only edit one type at a time. "
-"Please select only the type you want to edit and try again."
-msgstr "Каме зиёд аз як навъ интихоб шудааст."
-
-#: modes/typesdialog.cpp:497
-msgid "More Than One Type Selected"
-msgstr "Зиёд аз як навъ интихоб шудааст"
 
 #: objects/angle_type.cc:40
 msgid "Construct an angle through this point"
@@ -3018,11 +3341,6 @@ msgstr "Сохтани доира давра аз рӯи ҳамин нуқта �
 msgid "Test Result"
 msgstr "Натиҷаи озмоиш"
 
-#: objects/centerofcurvature_type.cc:35 objects/tangent_type.cc:36 rc.cpp:263
-#: rc.cpp:268
-msgid "Select the curve..."
-msgstr "Гузаронидани хатти каҷ..."
-
 #: objects/centerofcurvature_type.cc:36
 #, fuzzy
 msgid "Select a point on the curve..."
@@ -3098,14 +3416,6 @@ msgstr "Пинҳони давра"
 #: objects/circle_type.cc:32
 msgid "Construct a circle through this point"
 msgstr "Сохтани давра аз рӯи ин нуқта"
-
-#: objects/circle_type.cc:34 rc.cpp:249 rc.cpp:254
-msgid "Construct a circle with this center"
-msgstr "Сохтани доира давра аз рӯи ҳамин нуқта ҳамчун марказ"
-
-#: objects/circle_type.cc:39 objects/circle_type.cc:194 rc.cpp:251 rc.cpp:256
-msgid "Select the center of the new circle..."
-msgstr "Маркази доираи навро интихоб кунед..."
 
 #: objects/circle_type.cc:41 objects/circle_type.cc:75
 #: objects/circle_type.cc:77 objects/circle_type.cc:79
@@ -3821,12 +4131,12 @@ msgid "Set &Length..."
 msgstr "Сабт намудани &дарозӣ..."
 
 #: objects/line_type.cc:243
-msgid "Choose the new length: "
-msgstr "Интихоб кардани дарозии нав: "
-
-#: objects/line_type.cc:243
 msgid "Set Segment Length"
 msgstr "Сабт намудани дарозии порча"
+
+#: objects/line_type.cc:243
+msgid "Choose the new length: "
+msgstr "Интихоб кардани дарозии нав: "
 
 #: objects/line_type.cc:251
 msgid "Resize Segment"
@@ -4165,12 +4475,12 @@ msgid "Enter the new coordinate."
 msgstr "Координатаи навро ворид кунед: "
 
 #: objects/point_type.cc:443
-msgid "Choose the new parameter: "
-msgstr "Параметри нав интихоб кунед: "
-
-#: objects/point_type.cc:443
 msgid "Set Point Parameter"
 msgstr "Сабт кардани параметри нуқта"
+
+#: objects/point_type.cc:443
+msgid "Choose the new parameter: "
+msgstr "Параметри нав интихоб кунед: "
 
 #: objects/point_type.cc:449
 msgid "Change Parameter of Constrained Point"
@@ -5436,582 +5746,6 @@ msgid "Select the point to construct the sum vector in..."
 msgstr ""
 "Нуқтаро барои сохтани дар он вектори ҷамъбасткунандаро интихоб кунед..."
 
-#: rc.cpp:1
-#, fuzzy
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Марина Колючева Виктор Ибрагимов Акмал Саломов Масрур Каримов "
-
-#: rc.cpp:2
-#, fuzzy
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "youth_opportunities@tajik.net"
-
-#. i18n: file: kig/kigpartui.rc:5
-#. i18n: ectx: Menu (file)
-#. i18n: file: kig/kigui.rc:4
-#. i18n: ectx: Menu (file)
-#: rc.cpp:5 rc.cpp:101
-#, fuzzy
-msgid "&File"
-msgstr "&Пинҳон кардан"
-
-#. i18n: file: kig/kigpartui.rc:16
-#. i18n: ectx: Menu (edit)
-#: rc.cpp:8
-#, fuzzy
-msgid "&Edit"
-msgstr "Таъғир додан..."
-
-#. i18n: file: kig/kigpartui.rc:27
-#. i18n: ectx: Menu (view)
-#: rc.cpp:11
-#, fuzzy
-msgid "&View"
-msgstr "&Пинҳон кардан"
-
-#. i18n: file: kig/kigpartui.rc:35
-#. i18n: ectx: Menu (objects)
-#: rc.cpp:14
-msgid "&Objects"
-msgstr "&Мавзӯъҳо"
-
-#. i18n: file: kig/kigpartui.rc:37
-#. i18n: ectx: Menu (new_point)
-#: rc.cpp:17
-msgid "&Points"
-msgstr "&Нуқтаҳо"
-
-#. i18n: file: kig/kigpartui.rc:49
-#. i18n: ectx: Menu (new_line)
-#: rc.cpp:20
-msgid "&Lines"
-msgstr "&Хатҳо"
-
-#. i18n: file: kig/kigpartui.rc:59
-#. i18n: ectx: Menu (new_circle)
-#: rc.cpp:23
-msgid "&Circles && Arcs"
-msgstr "&Доира ва қавс"
-
-#. i18n: file: kig/kigpartui.rc:70
-#. i18n: ectx: Menu (new_poligon)
-#: rc.cpp:26
-msgid "Poly&gons"
-msgstr "&Бисёркунҷаҳо"
-
-#. i18n: file: kig/kigpartui.rc:82
-#. i18n: ectx: Menu (new_vector)
-#: rc.cpp:29
-msgid "&Vectors && Segments"
-msgstr "&Векторҳо ва порчаҳо"
-
-#. i18n: file: kig/kigpartui.rc:91
-#. i18n: ectx: Menu (new_conic)
-#: rc.cpp:32
-msgid "Co&nics && Cubics"
-msgstr "&Доирот ва қавс"
-
-#. i18n: file: kig/kigpartui.rc:98
-#. i18n: ectx: Menu (new_moreconics)
-#: rc.cpp:35
-msgid "More Conics"
-msgstr "Калонтарин конусшакл"
-
-#. i18n: file: kig/kigpartui.rc:113
-#. i18n: ectx: Menu (new_cubic)
-#: rc.cpp:38
-msgid "Cu&bics"
-msgstr "&Хатҳои каҷи тартиботи саввум"
-
-#. i18n: file: kig/kigpartui.rc:121
-#. i18n: ectx: Menu (new_bezier)
-#: rc.cpp:41
-msgid "&Bézier curves"
-msgstr ""
-
-#. i18n: file: kig/kigpartui.rc:131
-#. i18n: ectx: Menu (new_angle)
-#: rc.cpp:44
-msgid "&Angles"
-msgstr "&Кунҷҳо"
-
-#. i18n: file: kig/kigpartui.rc:136
-#. i18n: ectx: Menu (new_transformation)
-#: rc.cpp:47
-msgid "&Transformations"
-msgstr "&Тағйиротҳо"
-
-#. i18n: file: kig/kigpartui.rc:154
-#. i18n: ectx: Menu (new_differentialgeometry)
-#: rc.cpp:50
-msgid "&Differential geometry"
-msgstr "&Геометрияи дифференциалӣ"
-
-#. i18n: file: kig/kigpartui.rc:161
-#. i18n: ectx: Menu (new_test)
-#: rc.cpp:53
-msgid "T&ests"
-msgstr "Сан&ҷишҳо"
-
-#. i18n: file: kig/kigpartui.rc:172
-#. i18n: ectx: Menu (new_other)
-#: rc.cpp:56
-msgid "&Other"
-msgstr "&Дигар"
-
-#. i18n: file: kig/kigpartui.rc:186
-#. i18n: ectx: Menu (types)
-#: rc.cpp:59
-msgid "&Types"
-msgstr "&Навъҳо"
-
-#. i18n: file: kig/kigpartui.rc:191
-#. i18n: ectx: Menu (tools)
-#: rc.cpp:62
-msgid "&Tools"
-msgstr ""
-
-#. i18n: file: kig/kigpartui.rc:204
-#. i18n: ectx: ToolBar (mainToolBar)
-#. i18n: file: kig/kigui.rc:23
-#. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:65 rc.cpp:107
-msgid "Main Toolbar"
-msgstr ""
-
-#. i18n: file: kig/kigpartui.rc:218
-#. i18n: ectx: ToolBar (points_toolbar)
-#: rc.cpp:68
-msgid "Points"
-msgstr "Нуқтаҳо"
-
-#. i18n: file: kig/kigpartui.rc:229
-#. i18n: ectx: ToolBar (line_toolbar)
-#: rc.cpp:71
-msgid "Lines"
-msgstr "Хатҳо"
-
-#. i18n: file: kig/kigpartui.rc:239
-#. i18n: ectx: ToolBar (vectseg_toolbar)
-#: rc.cpp:74
-msgid "Vectors && Segments"
-msgstr "Векторҳо ва порчаҳо"
-
-#. i18n: file: kig/kigpartui.rc:247
-#. i18n: ectx: ToolBar (circle_toolbar)
-#: rc.cpp:77
-msgid "Circles && Arcs"
-msgstr "Доирот ва қавс"
-
-#. i18n: file: kig/kigpartui.rc:255
-#. i18n: ectx: ToolBar (conic_toolbar)
-#: rc.cpp:80
-msgid "Conics"
-msgstr "Хатҳои каҷи конусшакл"
-
-#. i18n: file: kig/kigpartui.rc:264
-#. i18n: ectx: ToolBar (bezier_toolbar)
-#: rc.cpp:83
-#, fuzzy
-#| msgid "Hide a Curve"
-msgid "Bézier Curves"
-msgstr "Пинҳон намудани хати каҷи тартиботи саввум"
-
-#. i18n: file: kig/kigpartui.rc:274
-#. i18n: ectx: ToolBar (angles_toolbar)
-#: rc.cpp:86
-msgid "Angles"
-msgstr "Кунҷҳо"
-
-#. i18n: file: kig/kigpartui.rc:279
-#. i18n: ectx: ToolBar (transformation_toolbar)
-#: rc.cpp:89
-msgid "Transformations"
-msgstr "Тағйирот"
-
-#. i18n: file: kig/kigpartui.rc:293
-#. i18n: ectx: ToolBar (tests_toolbar)
-#: rc.cpp:92
-msgid "Tests"
-msgstr "Санҷишот"
-
-#. i18n: file: kig/kigpartui.rc:305
-#. i18n: ectx: ToolBar (rest_toolbar)
-#: rc.cpp:95
-msgid "Other Objects"
-msgstr "Обектҳои дигар"
-
-#. i18n: file: kig/kigpartui.rc:313
-#. i18n: ectx: ToolBar (view_toolbar)
-#: rc.cpp:98
-msgid "View"
-msgstr ""
-
-#. i18n: file: kig/kigui.rc:13
-#. i18n: ectx: Menu (settings)
-#: rc.cpp:104
-msgid "&Settings"
-msgstr ""
-
-#. i18n: file: filters/asyexporteroptionswidget.ui:42
-#. i18n: ectx: property (text), widget (QCheckBox, showFrameCheckBox)
-#. i18n: file: filters/latexexporteroptionswidget.ui:95
-#. i18n: ectx: property (text), widget (QCheckBox, showFrameCheckBox)
-#: rc.cpp:113 rc.cpp:170
-#, fuzzy
-msgid "Show Extra Frame"
-msgstr "Нигоҳдодани иловагии чаҳорчӯб"
-
-#. i18n: file: filters/asyexporteroptionswidget.ui:49
-#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
-#. i18n: file: filters/imageexporteroptionswidget.ui:140
-#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
-#. i18n: file: filters/latexexporteroptionswidget.ui:102
-#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
-#. i18n: file: filters/svgexporteroptionswidget.ui:42
-#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
-#: rc.cpp:116 rc.cpp:137 rc.cpp:173 rc.cpp:179
-#, fuzzy
-msgid "Show Axes"
-msgstr "&Намоиши меҳварҳо"
-
-#. i18n: file: filters/asyexporteroptionswidget.ui:56
-#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
-#. i18n: file: filters/imageexporteroptionswidget.ui:147
-#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
-#. i18n: file: filters/latexexporteroptionswidget.ui:88
-#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
-#. i18n: file: filters/svgexporteroptionswidget.ui:49
-#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
-#: rc.cpp:119 rc.cpp:140 rc.cpp:167 rc.cpp:182
-#, fuzzy
-msgid "Show Grid"
-msgstr "&Намоиши хатҳои шабака"
-
-#. i18n: file: filters/imageexporteroptionswidget.ui:22
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:122
-msgid "Resolution"
-msgstr "Иҷозат"
-
-#. i18n: file: filters/imageexporteroptionswidget.ui:37
-#. i18n: ectx: property (text), widget (QCheckBox, keepAspectRatio)
-#: rc.cpp:125
-#, fuzzy
-msgid "&Keep Aspect Ratio"
-msgstr "&Нигоҳдоштани навъ муносибат"
-
-#. i18n: file: filters/imageexporteroptionswidget.ui:54
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:128
-msgid "Height:"
-msgstr "Бузургӣ:"
-
-#. i18n: file: filters/imageexporteroptionswidget.ui:110
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:131
-msgid "Width:"
-msgstr "Васеъӣ:"
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:23
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:143
-msgid "Output format"
-msgstr ""
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:29
-#. i18n: ectx: property (text), widget (QRadioButton, psTricksRadioButton)
-#: rc.cpp:146
-msgid "PSTricks"
-msgstr ""
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:36
-#. i18n: ectx: property (text), widget (QRadioButton, tikzRadioButton)
-#: rc.cpp:149
-msgid "Tikz/PGF"
-msgstr ""
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:46
-#. i18n: ectx: property (text), widget (QRadioButton, asyRadioButton)
-#: rc.cpp:152
-msgid "Asymptote"
-msgstr ""
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:56
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:155
-#, fuzzy
-#| msgid "Document to open"
-msgid "Document options"
-msgstr "Санад барои кушодан"
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:62
-#. i18n: ectx: property (text), widget (QRadioButton, pictureRadioButton)
-#: rc.cpp:158
-msgid "Picture only"
-msgstr ""
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:72
-#. i18n: ectx: property (text), widget (QRadioButton, documentRadioButton)
-#: rc.cpp:161
-#, fuzzy
-#| msgid "Zoom in on the document"
-msgid "Standalone document"
-msgstr "Калон кардани масштаби ҳуҷҷат"
-
-#. i18n: file: misc/kigcoordinateprecisiondialog.ui:9
-#. i18n: ectx: property (text), widget (QCheckBox, m_defaultCheckBox)
-#: rc.cpp:185
-msgid "&Use default coordinate precision"
-msgstr ""
-
-#. i18n: file: misc/kigcoordinateprecisiondialog.ui:16
-#. i18n: ectx: property (text), widget (QLabel, m_precisionLabel)
-#: rc.cpp:188
-msgid "&Specify coordinate precision:"
-msgstr ""
-
-#. i18n: file: modes/edittypewidget.ui:36
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:191
-msgid ""
-"Here you can modify the name, the description and the icon of this macro "
-"type."
-msgstr "Дар инҷо метавонед ном, тасвирот ва ишораи макронавъро тағйир диҳед."
-
-#. i18n: file: modes/edittypewidget.ui:73
-#. i18n: ectx: property (text), widget (QLabel, label_2_3)
-#: rc.cpp:194
-msgid "Name:"
-msgstr "Ном:"
-
-#. i18n: file: modes/edittypewidget.ui:93
-#. i18n: ectx: property (text), widget (QLabel, label_2_2_2)
-#: rc.cpp:197
-msgid "Description:"
-msgstr "Тасвирот:"
-
-#. i18n: file: modes/historywidget.ui:22
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:200
-msgid "Description of the current step:"
-msgstr ""
-
-#. i18n: file: modes/historywidget.ui:53
-#. i18n: ectx: property (toolTip), widget (QPushButton, buttonFirst)
-#: rc.cpp:203
-#, fuzzy
-msgid "First step"
-msgstr "Фокуси якӯм"
-
-#. i18n: file: modes/historywidget.ui:66
-#. i18n: ectx: property (toolTip), widget (QPushButton, buttonBack)
-#: rc.cpp:206
-msgid "One step back"
-msgstr ""
-
-#. i18n: file: modes/historywidget.ui:82
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:209
-msgid "/"
-msgstr ""
-
-#. i18n: file: modes/historywidget.ui:96
-#. i18n: ectx: property (toolTip), widget (QPushButton, buttonNext)
-#: rc.cpp:212
-msgid "One step forward"
-msgstr ""
-
-#. i18n: file: modes/historywidget.ui:109
-#. i18n: ectx: property (toolTip), widget (QPushButton, buttonLast)
-#: rc.cpp:215
-msgid "Last step"
-msgstr ""
-
-#. i18n: file: modes/typeswidget.ui:37
-#. i18n: ectx: property (toolTip), widget (QTreeView, typeList)
-#: rc.cpp:218
-msgid "Select types here..."
-msgstr "Навъро интихоб кунед..."
-
-#. i18n: file: modes/typeswidget.ui:40
-#. i18n: ectx: property (whatsThis), widget (QTreeView, typeList)
-#: rc.cpp:221
-msgid ""
-"This is a list of the current macro types... You can select, edit, delete, "
-"export and import them..."
-msgstr ""
-"Ин рӯйхати макро аст... Шумо метавонед  интихоб кунед, нест кунед, таҳрир "
-"кунед,Содирот ва воридот мекунад онҳоро..."
-
-#. i18n: file: modes/typeswidget.ui:99
-#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonEdit)
-#: rc.cpp:224
-msgid "Edit the selected type."
-msgstr "Шакли таҳрири интихобшуда."
-
-#. i18n: file: modes/typeswidget.ui:109
-#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonRemove)
-#: rc.cpp:230
-msgid "Delete all the selected types in the list."
-msgstr "Таҳрири интихобшуда"
-
-#. i18n: file: modes/typeswidget.ui:151
-#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonExport)
-#: rc.cpp:236
-msgid "Export all the selected types to a file."
-msgstr "Ҳамаи таҳлили интихобшударо ба парванда содирот кунед."
-
-#. i18n: file: modes/typeswidget.ui:161
-#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonImport)
-#: rc.cpp:242
-msgid "Import macros that are contained in one or more files."
-msgstr "Воридоти макро дар як ё зиёд парванда нигоҳ дошта мешаванд."
-
-#. i18n: file: modes/typeswidget.ui:164
-#. i18n: ectx: property (text), widget (KPushButton, buttonImport)
-#: rc.cpp:245
-#, fuzzy
-msgid "&Import..."
-msgstr "Воридот..."
-
-#: rc.cpp:246
-msgid "Circle by Center && Line"
-msgstr "Давраи аз рӯи марказ ва нуқта"
-
-#: rc.cpp:247
-msgid "A circle constructed by its center and tangent to a given line"
-msgstr "Сохтани доира давра аз рӯи марказ ва нуқта дар ӯ саҳид"
-
-#: rc.cpp:248
-msgid "Construct a circle tangent to this line"
-msgstr "Сохтани доира давра аз рӯи ҳамин нуқта"
-
-#: rc.cpp:250
-msgid "Select the line that the new circle should be tangent to..."
-msgstr "Хати тамосро барои доираи нав низ интихоб кунед..."
-
-#: rc.cpp:252
-msgid "Circle by Point && Segment (as the Diameter)"
-msgstr "Доираи расмкаши && ҳисса(ҳамчун диаметр)"
-
-#: rc.cpp:253
-msgid ""
-"A circle defined by its center and the length of a segment as the diameter"
-msgstr "Доира бо марказ ва дарозии ҳисса ҳамчун диаметр муайян мешавад"
-
-#: rc.cpp:255
-msgid ""
-"Construct a circle with the diameter given by the length of this segment"
-msgstr "Доираро ба диаметр созед, дарозии ин ҳисса дода шудааст"
-
-#: rc.cpp:257
-msgid "Select the segment whose length gives the diameter of the new circle..."
-msgstr ""
-"Ҳиссаи дарози кадоме, ки диаметри доираи навро медиҳад интихоб кунед..."
-
-#: rc.cpp:258
-msgid "Equilateral Triangle"
-msgstr "Секунҷаи баробарпаҳлу"
-
-#: rc.cpp:259
-msgid "Equilateral triangle with given two vertices"
-msgstr "Секунҷаи баробарпаҳлу бо ду қулла дода шудааст"
-
-#: rc.cpp:260
-msgid "Evolute"
-msgstr "Гузаронидан"
-
-#: rc.cpp:261
-msgid "Evolute of a curve"
-msgstr "Гузаронидани хати каҷ"
-
-#: rc.cpp:262
-msgid "Evolute of this curve"
-msgstr "Интихоби ин хати каҷ"
-
-#: rc.cpp:264
-msgid "Osculating Circle"
-msgstr "Пайвастшавии доира"
-
-#: rc.cpp:265
-msgid "Osculating circle of a curve at a point"
-msgstr "Пайвастшавии доира бо нуқтаи хатти каҷ"
-
-#: rc.cpp:266
-msgid "Osculating circle of this curve"
-msgstr "Пайвастшавии доира бо хатти каҷ"
-
-#: rc.cpp:267
-msgid "Osculating circle at this point"
-msgstr "Пайвастшавии доира бо нуқта"
-
-#: rc.cpp:269
-msgid "Select the point..."
-msgstr "Интихоб кардани нуқта..."
-
-#: rc.cpp:270
-msgid "Segment Axis"
-msgstr "Порчаи Axis"
-
-#: rc.cpp:271
-msgid "The perpendicular line through a given segment's mid point."
-msgstr "Хати перпендикулярӣ аз байни сегмент."
-
-#: rc.cpp:272
-msgid "Construct the axis of this segment"
-msgstr "Эҷоди тираи ин порча"
-
-#: rc.cpp:273
-msgid "Select the segment of which you want to draw the axis..."
-msgstr "Порчаеро интихоб кунед, ки дар он тираро кашидан лзим бошад..."
-
-#: rc.cpp:274
-msgid "Square"
-msgstr "Росткунҷа"
-
-#: rc.cpp:275
-msgid "Square with two given adjacent vertices"
-msgstr "Росткунҷаро бо дуто ҳамҷавори хати амудӣ"
-
-#: rc.cpp:276
-msgid "Vector Difference"
-msgstr "Гуногунии векторҳо"
-
-#: rc.cpp:277
-msgid "Construct the vector difference of two vectors."
-msgstr "Сохтани вектори гуногун аз рӯи ду вектор"
-
-#: rc.cpp:278
-msgid "Construct the vector difference of this vector and another one."
-msgstr "Сохтани гуногунии ин ва дигар вектор"
-
-#: rc.cpp:279
-msgid "Construct the vector difference of the other vector and this one."
-msgstr "Сохтани гуногунии дигар ва ин вектор"
-
-#: rc.cpp:280
-msgid "Construct the vector difference starting at this point."
-msgstr "Сохтани вектори гуногуншакл, дар ин нуқта оғоз ёбад"
-
-#: rc.cpp:281
-msgid ""
-"Select the first of the two vectors of which you want to construct the "
-"difference..."
-msgstr "Аз ду вектор яктоашро барои ёфтани ҷамъи он, интихоб кунед..."
-
-#: rc.cpp:282
-msgid ""
-"Select the other of the two vectors of which you want to construct the "
-"difference..."
-msgstr "Аз дигар вектор яктоашро барои ёфтани ҷамъи он, интихоб кунед..."
-
-#: rc.cpp:283
-msgid "Select the point to construct the difference vector in..."
-msgstr "Нуқтаро барои сохтани дар он вектори гуногуншакл, интихоб кунед..."
-
 #: scripting/newscriptwizard.cc:63
 msgid "New Script"
 msgstr "Нухсаи аслии нав"
@@ -6105,163 +5839,429 @@ msgstr ""
 "Аз баҷои хатои ҳангоми иҷроӣ, объект генератсия карда намешавад. Онро ислоҳ "
 "кунед ва ба рӯи тугмаи \"Иҷро шуд\" пахш кунед."
 
-#. i18n: file: tips:2
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:3
-msgid ""
-"<p>You can control a kig construction by means of a \"pykig\" \n"
-"python script, that can be executed with the command \n"
-"<code>pykig.py</code>.  Here is a nice example \n"
-"(<code>hexagons.kpy</code>) you can try:\n"
-"<code><pre>\n"
-"kigdocument.hideobjects()\n"
-"def hexagons (c, v, n):\n"
-"  hexagon = PolygonBCV (c, v, 6)\n"
-"  if n &lt;= 0:\n"
-"    hexagon.show()\n"
-"    for i in range(6): \n"
-"      PolygonSide (hexagon, i, True)\n"
-"    return\n"
-"  cnew = MidPoints (c, v)\n"
-"  hexagons (cnew, v, n-1)\n"
-"  for k in [2,4]:\n"
-"    v1 = PolygonVertex (hexagon, k)\n"
-"    cnew = MidPoints (c, v1)\n"
-"    hexagons (cnew, v1, n-1)\n"
-"hexagons (Point(0,0), Point(1,0), 5)\n"
-"</pre></code>\n"
-msgstr ""
+#: kig/kig_commands.cpp:100
+#, fuzzy, kde-format
+#| msgid "Remove %1 Objects"
+msgid "Remove %1 Object"
+msgid_plural "Remove %1 Objects"
+msgstr[0] "Ҳузфи %1 объектҳо"
+msgstr[1] "Ҳузфи %1 объектҳо"
 
-#. i18n: file: tips:28
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:28
-msgid ""
-"<p>You can repeat the latest construction simply by pressing the key\n"
-"'Z'; this comes in very handy if you need to construct a sequence\n"
-"of objects with the same construction, especially if there is\n"
-"no shortcut for that construction.</p>\n"
-msgstr ""
+#: kig/kig_commands.cpp:112
+#, fuzzy, kde-format
+#| msgid "Add %1 Objects"
+msgid "Add %1 Object"
+msgid_plural "Add %1 Objects"
+msgstr[0] "Афзудани %1 объектҳо"
+msgstr[1] "Афзудани %1 объектҳо"
 
-#. i18n: file: tips:37
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:36
-msgid ""
-"<p>One of the most powerful tools in Kig are the menus that you can\n"
-"enter by right-clicking on an object, or on some empty space in the\n"
-"document.  You can use them to give objects names, change their colors\n"
-"and line styles, and lots of other interesting things.</p>\n"
-msgstr ""
-"<p>Дар Kig шумо доим метавонед рӯи тугмаи рости муш ба ягон объект ё фазои "
-"холӣ барои тамоми амалҳои ба объект истифодашавандаро ба амал оваред, пахш "
-"кунед. Мисоли: номгузории объектҳо, таъғири ранг ва услуби хат, эҷоди "
-"объекти нав, ва мисли инҳо ғайраҳоро карда мешавад.</p>\n"
+#: kig/kig.cpp:90
+msgid "Could not find the necessary Kig library, check your installation."
+msgstr "Китобхонаи kig ёфт нашуд."
 
-#. i18n: file: tips:46
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:44
-msgid ""
-"<p>You can construct new points without using the menu or the toolbar, "
-"simply\n"
-"clicking somewhere on the Kig document with the <em>middle mouse\n"
-"button</em>.</p>\n"
-msgstr ""
-"<p>Нуқтаҳоро метавон ғайри истифодаи меню ё панели асбобҳо созед, барои ин "
-"бояд ба рӯи <em>тугмаи байнии муш</em> ба ҷои холӣ зер кунед.</p>\n"
+#: kig/kig.cpp:203
+#, kde-format
+msgid "Save changes to document %1?"
+msgstr "Тағиротҳоро дар санадоти %1 нигоҳ дорам?"
 
-#. i18n: file: tips:54
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:51
-msgid ""
-"<p>Kig can open several file formats: its files (<code>.kig</code> files),\n"
-"<em>KGeo</em> files, <em>KSeg</em> files, and, partially, <em>Dr. Geo</em>\n"
-"and <em>Cabri&#8482;</em> files.</p>\n"
-msgstr ""
-"<p>Kig метавонад якчанд андозаи парвандаро ҳӯй кунад: парвандҳои вай (<code>."
-"kig</code> парвандҳо),\n"
-"<em>KGeo</em> парвандҳо, <em>KSeg</em>парвандҳо, ва, қисман <em>Dr. Geo</em>-"
-"ро.</p>\n"
-"ва <em>Cabri&#8482;</em> парвандҳо.</p>\n"
+#: kig/kig.cpp:204
+msgid "Save Changes?"
+msgstr "Тағиротҳоро нигоҳ дорам?"
 
-#. i18n: file: tips:62
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:58
+#: kig/kig.cpp:239
 #, fuzzy
 msgid ""
-"<p>Kig has more than 20 objects and 10 transformations with more than 80 \n"
-"constructions you can use in your documents: open the <em>Objects</em> \n"
-"menu to see them all.</p>\n"
+"*.kig *.kigz *.seg *.fgeo *.fig *.FIG|All Supported Files (*.kig *.kigz *."
+"seg *.fgeo *.fig)\n"
+"*.kig|Kig Documents (*.kig)\n"
+"*.kigz|Compressed Kig Documents (*.kigz)\n"
+"*.kgeo|KGeo Documents (*.kgeo)\n"
+"*.seg|KSeg Documents (*.seg)\n"
+"*.fgeo|Dr. Geo Documents (*.fgeo)\n"
+"*.fig *.FIG|Cabri Documents (*.fig *.FIG)"
 msgstr ""
-"<p>Kig имконияти зиёд аз 40 объект ва 10 тағиротҳое, ки шумо метавонед созед "
-"ва истифода баред\n"
-"Дар ҳуҷҷататон: кушоед <em>Объектҳо</em>меню барои ҳамаро дидан</p>\n"
+"*.kig *.kgeo *.seg|Тамоми форматҳои пуштибонӣ шаванда(*.kig *.kgeo *.seg)\n"
+"*.kig|Kig (*.kig)\n"
+"*.kgeo|KGeos (*.kgeo)\n"
+"*.seg|KSeg (*.seg)\n"
+"*.fgeo|Dr. Geo (*.fgeo)\n"
+"*.fig *.FIG|Cabri (*.fig *.FIG)"
 
-#. i18n: file: tips:70
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:65
-msgid ""
-"<p>You can use the selected objects to start the construction of an object\n"
-"which requires the selected objects as arguments. For example, if you have "
-"two\n"
-"points selected, you can choose <em>Start->Circle by Three Points</em> from "
-"the\n"
-"popup menu to start constructing a circle by three points.</p>\n"
-msgstr ""
-"<p>Шумо метавонед обектҳои интихобшударо истифода баред барои саркардани "
-"сохтмони объект\n"
-"кадомҳое, ки объекти интихобшударо ҳамчун асос талаб мекунад. Мисол, агар "
-"шумо дуто дошта бошед\n"
-"нуқтаи интихобшударо шумо метавонед интихоб кунед <em>Аввал->Се нуқтаи "
-"доира</em> Аз\n"
-"popup меню барои саркардан, барои сохтани се нуқтаи доира.</p>\n"
+#: kig/kig_part.cpp:86
+msgid "KigPart"
+msgstr "KigPart"
 
-#. i18n: file: tips:79
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:73
+#: kig/kig_part.cpp:90
+msgid "&Set Coordinate System"
+msgstr "&Мондани тартиботи координатаҳо"
+
+#: kig/kig_part.cpp:131
+msgid "Kig Options"
+msgstr "Параметрҳои Kig"
+
+#: kig/kig_part.cpp:135
+msgid "Show grid"
+msgstr "Намоиши шабака"
+
+#: kig/kig_part.cpp:138
+msgid "Show axes"
+msgstr "Намоиши меҳварҳо"
+
+#: kig/kig_part.cpp:227
+msgid "Invert Selection"
+msgstr "Табдилдиҳии ҷудокунӣ"
+
+#: kig/kig_part.cpp:234
+msgid "&Delete Objects"
+msgstr "&Ҳузфи объектҳо"
+
+#: kig/kig_part.cpp:238
+msgid "Delete the selected objects"
+msgstr "Ҳузфи объектҳои интихобшуда"
+
+#: kig/kig_part.cpp:240
+msgid "Cancel Construction"
+msgstr "Барҳамдиҳии сафбандӣ"
+
+#: kig/kig_part.cpp:245
+msgid "Cancel the construction of the object being constructed"
+msgstr "Барҳамдиҳии сафбандии объект"
+
+#: kig/kig_part.cpp:248
 #, fuzzy
-#| msgid ""
-#| "<p>Kig can extends its object set using external macros. You can find "
-#| "some\n"
-#| "interesting macro on Kig website:\n"
-#| "<a href=\"http://edu.kde.org/kig\">http://edu.kde.org/kig</a>.</p>\n"
-msgid ""
-"<p>Kig can extends its object set using external macros. You can find some\n"
-"interesting macros on the Kig website:\n"
-"<a href=\"http://edu.kde.org/kig\">http://edu.kde.org/kig</a>.</p>\n"
-msgstr ""
-"<p>Kig метавонад калон шавад барои гирифтани объект . Якхел вақт шумо "
-"метавонед\n"
-"Аҷоиботи макро дар  Kig website:\n"
-"<a href=\"http://edu.kde.org/kig\">http://edu.kde.org/kig</a>.</p>\n"
+msgid "Repeat Construction"
+msgstr "Барҳамдиҳии сафбандӣ"
 
-#. i18n: file: tips:87
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:80
-msgid ""
-"<p>If you have more than one object under the mouse, and you want to select "
-"any\n"
-"of them, you can click with the <em>left mouse button</em>, while holding "
-"the\n"
-"<em>Shift</em> key, to get a list of the objects under the mouse cursor "
-"which\n"
-"you can then select from.</p>\n"
+#: kig/kig_part.cpp:253
+msgid "Repeat the last construction (with new data)"
 msgstr ""
-"<p>Агар шумо дар таги мушак аз якто зиёд объект дошта бошед ва шумо мехоҳед "
-"боз интихоб кунед дигар\n"
-"аз онҳо шумо метавонед зер кунед <em>кнопкаи  чапи мушак</em>,дар вақти "
-"гузаронидон\n"
-"<em>Shift</em> калид, барои ёфтани рӯйхати объектҳо дар таги мушак\n"
-"онгоҳ шумо метавонед интихоб кунед.</p>\n"
 
-#. i18n: file: tips:96
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:88
-msgid ""
-"<p>When you construct a locus, you can click on it with the <em>right</em> "
-"mouse\n"
-"button and select <em>cartesian equation</em> to see its cartesian "
-"equation, \n"
-"whenever it is an algebraic curve of low degree.</p>\n"
+#: kig/kig_part.cpp:259
+msgid "Show all hidden objects"
+msgstr "Намоиши ҳама пинҳонӣ мавзӯъҳо"
+
+#: kig/kig_part.cpp:262
+msgid "&New Macro..."
+msgstr "&Макроси нав..."
+
+#: kig/kig_part.cpp:265
+msgid "Define a new macro"
+msgstr "Таъин кардани макроси нав"
+
+#: kig/kig_part.cpp:267
+msgid "Manage &Types..."
+msgstr "&Идора кардани намудҳо..."
+
+#: kig/kig_part.cpp:270
+msgid "Manage macro types."
+msgstr "Идора кардани намудҳои макрос"
+
+#: kig/kig_part.cpp:272
+msgid "&Browse History..."
 msgstr ""
+
+#: kig/kig_part.cpp:275
+#, fuzzy
+msgid "Browse the history of the current construction."
+msgstr "Барҳамдиҳии сафбандӣ"
+
+#: kig/kig_part.cpp:282 kig/kig_part.cpp:283
+msgid "Zoom in on the document"
+msgstr "Калон кардани масштаби ҳуҷҷат"
+
+#: kig/kig_part.cpp:287 kig/kig_part.cpp:288
+msgid "Zoom out of the document"
+msgstr "Камтар кардани масштаби ҳуҷҷат"
+
+#: kig/kig_part.cpp:294 kig/kig_part.cpp:295
+msgid "Recenter the screen on the document"
+msgstr "Ба рӯи ҳуҷҷат"
+
+#: kig/kig_part.cpp:298 kig/kig_part.cpp:299
+msgid "View this document full-screen."
+msgstr "Намоиши ҳуҷҷат дар экрани пурра."
+
+#: kig/kig_part.cpp:302
+msgid "&Select Shown Area"
+msgstr "&Интихоб кардани доира барои намоиш"
+
+#: kig/kig_part.cpp:305 kig/kig_part.cpp:306
+msgid "Select the area that you want to be shown in the window."
+msgstr "Интихоб кардани доира барои намоиш дар тиреза."
+
+#: kig/kig_part.cpp:308
+msgid "S&elect Zoom Area"
+msgstr "&Интихоб кардани доира барои намоиш"
+
+#: kig/kig_part.cpp:314
+#, fuzzy
+#| msgid "Set &Coordinate..."
+msgid "Set Coordinate &Precision..."
+msgstr "Сабт кардани &координата..."
+
+#: kig/kig_part.cpp:316
+msgid "Set the floating point precision of coordinates in the document. "
+msgstr ""
+
+#: kig/kig_part.cpp:319
+msgid "Show &Grid"
+msgstr "&Намоиши хатҳои шабака"
+
+#: kig/kig_part.cpp:321
+msgid "Show or hide the grid."
+msgstr "Намоиш ё пинҳони шабақа"
+
+#: kig/kig_part.cpp:325
+msgid "Show &Axes"
+msgstr "&Намоиши меҳварҳо"
+
+#: kig/kig_part.cpp:327
+msgid "Show or hide the axes."
+msgstr "намоиш ё пинҳони тира"
+
+#: kig/kig_part.cpp:331
+msgid "Wear Infrared Glasses"
+msgstr ""
+
+#: kig/kig_part.cpp:333
+msgid "Enable/disable hidden objects' visibility."
+msgstr ""
+
+#: kig/kig_part.cpp:365
+#, fuzzy, kde-format
+msgid "Repeat Construction (%1)"
+msgstr "Барҳамдиҳии сафбандӣ"
+
+#: kig/kig_part.cpp:367
+#, kde-format
+msgid "Repeat %1 (with new data)"
+msgstr ""
+
+#: kig/kig_part.cpp:396
+#, kde-format
+msgid ""
+"The file \"%1\" you tried to open does not exist. Please verify that you "
+"entered the correct path."
+msgstr ""
+"Файли \"%1\" мавҷуд надорад. Мутмаин бошед, ки шумо роҳи саҳеҳро ворид "
+"кардед."
+
+#: kig/kig_part.cpp:398
+msgid "File Not Found"
+msgstr "Файл ёфт нашуд"
+
+#: kig/kig_part.cpp:416
+#, fuzzy, kde-format
+msgid ""
+"You tried to open a document of type \"%1\"; unfortunately, Kig does not "
+"support this format. If you think the format in question would be worth "
+"implementing support for, you can always ask us nicely on mailto:pino@kde."
+"org or do the work yourself and send me a patch."
+msgstr ""
+"Шумо сайъи боз кардани санади навъи \"%1\"-ро карда истодаед. Мутаассифона "
+"Kig онро дастгирӣ намекунад. Шумо доим метавонед дарбеҳро бо дастгирии "
+"формати мазкур ба муаллифи барнома бо нишони devriese@kde.org бифиристед."
+
+#: kig/kig_part.cpp:422 kig/kig_part.cpp:465
+#, fuzzy
+msgid "Format Not Supported"
+msgstr "Формат пуштибонӣ намешавад"
+
+#: kig/kig_part.cpp:463
+msgid ""
+"Kig does not support saving to any other file format than its own. Save to "
+"Kig's format instead?"
+msgstr ""
+"Kig метавонад файлҳоро танҳо дар андозаи худ нигоҳ дорад. Инро иҷро кунам?"
+
+#: kig/kig_part.cpp:465
+msgid "Save Kig Format"
+msgstr ""
+
+#: kig/kig_part.cpp:700
+msgid ""
+"*.kig|Kig Documents (*.kig)\n"
+"*.kigz|Compressed Kig Documents (*.kigz)"
+msgstr ""
+
+#: kig/kig_part.cpp:869
+msgid "Print Geometry"
+msgstr "Чоп"
+
+#: kig/kig_part.cpp:936
+#, kde-format
+msgid "Hide %1 Object"
+msgid_plural "Hide %1 Objects"
+msgstr[0] "Пинҳони %1 объект"
+msgstr[1] "Пинҳони %1 объектҳо"
+
+#: kig/kig_part.cpp:955
+#, kde-format
+msgid "Show %1 Object"
+msgid_plural "Show %1 Objects"
+msgstr[0] "Намоиши %1 объект"
+msgstr[1] "Намоиши %1 объектҳо"
+
+#: kig/kig_view.cpp:220
+msgid "Zoom In"
+msgstr "Вусъат додани масштаб"
+
+#: kig/kig_view.cpp:240
+msgid "Zoom Out"
+msgstr "Камтар кардани масштаб"
+
+#: kig/kig_view.cpp:520
+msgid "Recenter View"
+msgstr "Тасвиротро ғайри марказӣ кардан"
+
+#: kig/kig_view.cpp:542
+msgid "Select the rectangle that should be shown."
+msgstr "Интихоб кардани росткунҷа барои намоиш."
+
+#: kig/kig_view.cpp:550 kig/kig_view.cpp:598
+msgid "Change Shown Part of Screen"
+msgstr "Таъғир додани қисми тасвиршавандаи экран"
+
+#: kig/kig_view.cpp:587
+msgid "Select Zoom Area"
+msgstr "Канореро барои вусъат додан интихоб кунед"
+
+#: kig/kig_view.cpp:588
+#, fuzzy
+msgid ""
+"Select the zoom area by entering the coordinates<br />of the upper left "
+"corner and the lower right corner."
+msgstr ""
+"Маҳали масштабониро бо ишора намудани координати кунҷи болоии чап ва поёнии "
+"ростро низ муайян кунед."
+
+#: kig/main.cpp:98
+msgid "Kig"
+msgstr "Kig"
+
+#: kig/main.cpp:104
+msgid ""
+"Do not show a GUI. Convert the specified file to the native Kig format. "
+"Output goes to stdout unless --outfile is specified."
+msgstr ""
+"Ғайри интерфейси графикӣ. Таъғир додани файли ишорашуда ба формати Kig. "
+"Ҷамъбаст ба stdout меравад, фақат агар калид ба --outfile ишора шуда набошад."
+
+#: kig/main.cpp:106
+msgid ""
+"File to output the created native file to. '-' means output to stdout. "
+"Default is stdout as well."
+msgstr "Файл барои хурӯҷ. '-' - хурӯҷи стандартӣ (пешфарзӣ)."
+
+#: kig/main.cpp:107
+msgid "Document to open"
+msgstr "Санад барои кушодан"
+
+#: misc/coordinate_system.cpp:325
+#, fuzzy
+msgid ""
+"Enter coordinates in the following format: \"x;y\",\n"
+"where x is the x coordinate, and y is the y coordinate."
+msgstr ""
+"Координатҳоро ба формати зерин ворид кунед: \"x;y\", ки x - абсисса, y - "
+"ордината."
+
+#: misc/coordinate_system.cpp:331
+#, fuzzy
+msgid ""
+"Enter coordinates in the following format: <b>\"x;y\"</b>,<br />where x is "
+"the x coordinate, and y is the y coordinate."
+msgstr ""
+"Координатҳоро ба формати зерин ворид кунед: \"x;y\", ки x - абсисса, y - "
+"ордината."
+
+#: misc/coordinate_system.cpp:371
+#, fuzzy
+msgid ""
+"Enter coordinates in the following format: \"r; θ°\",\n"
+"where r and θ are the polar coordinates."
+msgstr ""
+"Координатҳоро ба формати зерин ворид кунед: \"r; θ°\", ки r ва θ - "
+"координатҳои қутбӣ."
+
+#: misc/coordinate_system.cpp:378
+#, fuzzy
+msgid ""
+"Enter coordinates in the following format: <b>\"r; θ°\"</b>,<br />where r "
+"and θ are the polar coordinates."
+msgstr ""
+"Координатҳоро ба формати зерин ворид кунед: \"r; θ°\", ки r ва θ - "
+"координатҳои қутбӣ."
+
+#: misc/coordinate_system.cpp:530
+msgid "&Euclidean"
+msgstr "&Евклидӣ"
+
+#: misc/coordinate_system.cpp:531
+msgid "&Polar"
+msgstr "&Қутбӣ"
+
+#: misc/coordinate_system.cpp:581
+msgid "Set Euclidean Coordinate System"
+msgstr "Мондани тартиботи координатаҳои Евклид"
+
+#: misc/coordinate_system.cpp:583
+msgid "Set Polar Coordinate System"
+msgstr "Мондани тартиботи координатаҳои қутбӣ"
+
+#: modes/typesdialog.cpp:130
+msgid "Macro"
+msgstr ""
+
+#: modes/typesdialog.cpp:313
+#, fuzzy
+msgid "Type"
+msgstr "&Навъҳо"
+
+#: modes/typesdialog.cpp:315
+msgid "Description"
+msgstr "Тасвирот"
+
+#: modes/typesdialog.cpp:339
+msgid "Manage Types"
+msgstr "Идоракунии навъҳо"
+
+#: modes/typesdialog.cpp:426
+#, fuzzy, kde-format
+msgid "Are you sure you want to delete this type?"
+msgid_plural "Are you sure you want to delete these %1 types?"
+msgstr[0] "Оё мутмаинед, ки мехоҳед ин %1 навъро ҳузф кунед?"
+msgstr[1] "Оё мутмаинед, ки мехоҳед ин %1 навъҳоро ҳузф кунед?"
+
+#: modes/typesdialog.cpp:428
+msgid "Are You Sure?"
+msgstr "Оё мутмаинед?"
+
+#: modes/typesdialog.cpp:451 modes/typesdialog.cpp:466
+msgid ""
+"*.kigt|Kig Types Files\n"
+"*|All Files"
+msgstr ""
+"*.kigt|Kig Намудҳои файлҳо\n"
+"*|Ҳама файлҳо"
+
+#: modes/typesdialog.cpp:451
+msgid "Export Types"
+msgstr "Намудҳои Воридот"
+
+#: modes/typesdialog.cpp:466
+msgid "Import Types"
+msgstr "Намудҳои Воридот"
+
+#: modes/typesdialog.cpp:494
+msgid ""
+"There is more than one type selected. You can only edit one type at a time. "
+"Please select only the type you want to edit and try again."
+msgstr "Каме зиёд аз як навъ интихоб шудааст."
+
+#: modes/typesdialog.cpp:497
+msgid "More Than One Type Selected"
+msgstr "Зиёд аз як навъ интихоб шудааст"
 
 #, fuzzy
 #~| msgid "Construct a circle with this center"
