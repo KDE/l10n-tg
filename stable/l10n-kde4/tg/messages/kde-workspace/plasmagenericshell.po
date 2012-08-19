@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-shells-common\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-07 21:49+0200\n"
+"POT-Creation-Date: 2012-08-19 15:44+0200\n"
 "PO-Revision-Date: 2010-01-28 13:59+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -16,6 +16,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Виктор Ибрагимов"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "victor.ibragimov@gmail.com"
 
 #: backgrounddialog.cpp:209
 msgid "Desktop Settings"
@@ -36,6 +44,35 @@ msgstr ""
 #: backgrounddialog.cpp:244
 msgid "Mouse Actions"
 msgstr "Фаъолияти мушак"
+
+#. i18n: ectx: property (text), widget (QLabel, unlockLabel)
+#: BackgroundDialog.ui:44
+msgid "Widgets are currently locked, disabling some options."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, unlockButton)
+#: BackgroundDialog.ui:72
+#, fuzzy
+#| msgid "All Widgets"
+msgid "Unlock Widgets"
+msgstr "Все виджеты"
+
+#. i18n: ectx: property (text), widget (QLabel, containmentLabel)
+#: BackgroundDialog.ui:109
+msgid "Layout:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, wallpaperTypeLabel)
+#: BackgroundDialog.ui:144
+#, fuzzy
+#| msgid "Wallpaper"
+msgid "Wallpaper:"
+msgstr "Тасвири экран"
+
+#. i18n: ectx: property (text), widget (QLabel, monitor)
+#: BackgroundDialog.ui:195
+msgid "Monitor"
+msgstr "Монитор"
 
 #: mouseinputbutton.cpp:33
 msgid "Set Trigger..."
@@ -113,6 +150,44 @@ msgstr "Связать с новым"
 msgid "This trigger is assigned to another plugin."
 msgstr "Эта комбинация уже связана с другим модулем."
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, MousePlugins)
+#: MousePlugins.ui:14
+msgid "Mouse Plugins"
+msgstr "Действия мыши"
+
+#: mousepluginwidget.cpp:46
+msgid "No plugins found, check your installation."
+msgstr "Действий не найдено, проверьте правильность установки."
+
+#: mousepluginwidget.cpp:89
+msgctxt "About mouse action"
+msgid "About"
+msgstr ""
+
+#: mousepluginwidget.cpp:92
+#, fuzzy
+#| msgid "Configure Plugin"
+msgctxt "Configure mouse action"
+msgid "Configure"
+msgstr "Настроить модуль"
+
+#: mousepluginwidget.cpp:94
+msgctxt "Remove mouse action"
+msgid "Remove"
+msgstr ""
+
+#: mousepluginwidget.cpp:217
+msgid "Configure Plugin"
+msgstr "Настроить модуль"
+
+#: scripting/containment.cpp:171
+msgid "widgetById requires an id"
+msgstr ""
+
+#: scripting/containment.cpp:196
+msgid "widgetById requires a name of a widget or a widget object"
+msgstr ""
+
 #: scripting/i18n.cpp:33
 msgid "i18n() takes at least one argument"
 msgstr ""
@@ -160,13 +235,9 @@ msgid ""
 "%3"
 msgstr ""
 
-#: scripting/containment.cpp:171
-msgid "widgetById requires an id"
-msgstr ""
-
-#: scripting/containment.cpp:196
-msgid "widgetById requires a name of a widget or a widget object"
-msgstr ""
+#: widgetsexplorer/kcategorizeditemsviewmodels.cpp:72
+msgid "Filters"
+msgstr "Филтрҳо"
 
 #: widgetsexplorer/openwidgetassistant.cpp:46
 msgid "Select the type of widget to install from the list below."
@@ -199,24 +270,6 @@ msgstr "Коргузорӣ қатъ карда шуд"
 msgid "Installing the package %1 failed."
 msgstr "Ошибка установки пакета %1."
 
-#: widgetsexplorer/kcategorizeditemsviewmodels.cpp:72
-msgid "Filters"
-msgstr "Филтрҳо"
-
-#: widgetsexplorer/package/contents/ui/Tooltip.qml:103
-msgid "License: "
-msgstr ""
-
-#: widgetsexplorer/package/contents/ui/Tooltip.qml:112
-msgid "Author: "
-msgstr ""
-
-#: widgetsexplorer/package/contents/ui/Tooltip.qml:132
-#, fuzzy
-#| msgid "Uninstall Widget"
-msgid "Uninstall"
-msgstr "Удалить виджет"
-
 #: widgetsexplorer/package/contents/ui/main.qml:172
 #: widgetsexplorer/package/contents/ui/main.qml:238
 #, fuzzy
@@ -237,6 +290,20 @@ msgstr "Категории:"
 #| msgid "Get New Widgets"
 msgid "Get new widgets"
 msgstr "Гирифтани виҷетҳои нав"
+
+#: widgetsexplorer/package/contents/ui/Tooltip.qml:103
+msgid "License: "
+msgstr ""
+
+#: widgetsexplorer/package/contents/ui/Tooltip.qml:112
+msgid "Author: "
+msgstr ""
+
+#: widgetsexplorer/package/contents/ui/Tooltip.qml:132
+#, fuzzy
+#| msgid "Uninstall Widget"
+msgid "Uninstall"
+msgstr "Удалить виджет"
 
 #: widgetsexplorer/plasmaappletitemmodel.cpp:226
 msgid "Containments"
@@ -269,81 +336,6 @@ msgstr "Боргирии %1 нав"
 #: widgetsexplorer/widgetexplorer.cpp:275
 msgid "Install Widget From Local File..."
 msgstr "Установить виджет из файла..."
-
-#: mousepluginwidget.cpp:46
-msgid "No plugins found, check your installation."
-msgstr "Действий не найдено, проверьте правильность установки."
-
-#: mousepluginwidget.cpp:89
-msgctxt "About mouse action"
-msgid "About"
-msgstr ""
-
-#: mousepluginwidget.cpp:92
-#, fuzzy
-#| msgid "Configure Plugin"
-msgctxt "Configure mouse action"
-msgid "Configure"
-msgstr "Настроить модуль"
-
-#: mousepluginwidget.cpp:94
-msgctxt "Remove mouse action"
-msgid "Remove"
-msgstr ""
-
-#: mousepluginwidget.cpp:217
-msgid "Configure Plugin"
-msgstr "Настроить модуль"
-
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Виктор Ибрагимов"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "victor.ibragimov@gmail.com"
-
-#. i18n: file: BackgroundDialog.ui:44
-#. i18n: ectx: property (text), widget (QLabel, unlockLabel)
-#: rc.cpp:5
-msgid "Widgets are currently locked, disabling some options."
-msgstr ""
-
-#. i18n: file: BackgroundDialog.ui:72
-#. i18n: ectx: property (text), widget (QPushButton, unlockButton)
-#: rc.cpp:8
-#, fuzzy
-#| msgid "All Widgets"
-msgid "Unlock Widgets"
-msgstr "Все виджеты"
-
-#. i18n: file: BackgroundDialog.ui:109
-#. i18n: ectx: property (text), widget (QLabel, containmentLabel)
-#: rc.cpp:11
-msgid "Layout:"
-msgstr ""
-
-#. i18n: file: BackgroundDialog.ui:144
-#. i18n: ectx: property (text), widget (QLabel, wallpaperTypeLabel)
-#: rc.cpp:14
-#, fuzzy
-#| msgid "Wallpaper"
-msgid "Wallpaper:"
-msgstr "Тасвири экран"
-
-#. i18n: file: BackgroundDialog.ui:195
-#. i18n: ectx: property (text), widget (QLabel, monitor)
-#: rc.cpp:17
-msgid "Monitor"
-msgstr "Монитор"
-
-#. i18n: file: MousePlugins.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, MousePlugins)
-#: rc.cpp:20
-msgid "Mouse Plugins"
-msgstr "Действия мыши"
 
 #~ msgid "Version %1"
 #~ msgstr "Версияи %1"
