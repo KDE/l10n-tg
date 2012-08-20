@@ -21,6 +21,14 @@ msgstr ""
 "X-Generator: KBabel 1.0.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Абророва Хиромон"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "H_Abrorova@rambler.ru"
+
 #: advancedsearchdialog.cpp:43
 msgid "Create Search Playlist"
 msgstr "Офаридани Рӯйхати Бозиҳо барои Ҷустуҷӯ"
@@ -93,6 +101,19 @@ msgstr "Иҷрокунандагон"
 msgid "Remove Cover"
 msgstr "Хориҷкунии Феҳрист"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, CoverDialogBase)
+#: coverdialogbase.ui:13 playlistcollection.cpp:900
+msgid "Cover Manager"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (K3ListView, m_artists)
+#. i18n: ectx: property (text), widget (KLineEdit, m_exampleArtist)
+#. i18n: ectx: property (text), widget (K3ListView, trackList)
+#: coverdialogbase.ui:46 exampleoptionsbase.ui:221 playlist.cpp:1523
+#: tagrenameroptions.cpp:102 trackpickerdialogbase.ui:108
+msgid "Artist"
+msgstr "Иҷрогар"
+
 #: deletedialog.cpp:54
 #, kde-format
 msgid "<b>1</b> file selected."
@@ -118,6 +139,34 @@ msgstr ""
 msgid "About to delete selected files"
 msgstr "Нобудсозии ҳамаи файлҳои таъиншуда нашуда истодааст."
 
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: deletedialogbase.ui:61
+#, fuzzy
+msgid "Are you sure that you want to remove these items?"
+msgstr "Дар ҳақиқат мехоҳед, ки ин элементҳоро хориҷ кунед?"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, ddShouldDelete)
+#: deletedialogbase.ui:111
+msgid ""
+"If checked, files will be permanently removed instead of being placed in the "
+"Trash Bin"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, ddShouldDelete)
+#: deletedialogbase.ui:116
+msgid ""
+"<qt><p>If this box is checked, files will be <b>permanently removed</b> "
+"instead of being placed in the Trash Bin.</p>\n"
+"\n"
+"<p><em>Use this option with caution</em>: Most filesystems are unable to "
+"reliably undelete deleted files.</p></qt>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, ddShouldDelete)
+#: deletedialogbase.ui:119
+msgid "&Delete files instead of moving them to the trash"
+msgstr ""
+
 #: directorylist.cpp:48
 msgid "Folder List"
 msgstr "Рӯйхати Феҳристҳо"
@@ -126,15 +175,121 @@ msgstr "Рӯйхати Феҳристҳо"
 msgid "Music"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QLabel, informationLabel)
+#: directorylistbase.ui:19
+msgid "Please choose the folders where you keep your music:"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QListView, directoryListView)
+#: directorylistbase.ui:34
+msgid "These folders will be scanned on startup for new files."
+msgstr "Ин феҳристҳо ҳангоми оғозёбии файлҳои нав сканер карда мешаванд."
+
+#. i18n: ectx: property (text), widget (KPushButton, addDirectoryButton)
+#: directorylistbase.ui:61
+msgid "Add Folder..."
+msgstr "Иловакунии Феҳрист..."
+
+#. i18n: ectx: property (text), widget (KPushButton, removeDirectoryButton)
+#: directorylistbase.ui:68
+msgid "Remove Folder"
+msgstr "Хориҷкунии Феҳрист"
+
+#. i18n: ectx: property (text), widget (QCheckBox, importPlaylistsCheckBox)
+#: directorylistbase.ui:95
+msgid "Import playlists"
+msgstr "Воридоти Рӯйхати Бозикуниҳо"
+
 #: exampleoptions.cpp:55 main.cpp:51 playermanager.cpp:539 playlist.cpp:418
 #: systemtray.cpp:495 systemtray.cpp:506
 msgid "JuK"
 msgstr "JuK"
 
-#: filerenamerconfigdlg.cpp:28
+#. i18n: ectx: property (windowTitle), widget (QWidget, ExampleOptionsBase)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: exampleoptionsbase.ui:13 filerenamerbase.ui:176
 #, fuzzy
-msgid "File Renamer Options"
-msgstr "Бозномгузории Файл"
+msgid "Example"
+msgstr "Даргиронидан"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: exampleoptionsbase.ui:37
+msgid "Example Tag Selection"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_fileTagsButton)
+#: exampleoptionsbase.ui:58
+#, fuzzy
+msgid "Get example tags from this file:"
+msgstr "Хондани борчасб аз файл ғайри имкон аст"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_manualTagsButton)
+#: exampleoptionsbase.ui:81
+#, fuzzy
+msgid "Enter example tags manually:"
+msgstr "Хондани борчасб аз файл ғайри имкон аст"
+
+#. i18n: ectx: property (title), widget (QGroupBox, m_manualGroup)
+#: exampleoptionsbase.ui:91
+#, fuzzy
+msgid "Example Tags"
+msgstr "Даргиронидан"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: exampleoptionsbase.ui:135
+#, fuzzy
+msgctxt "song title"
+msgid "Title:"
+msgstr "Вақт"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: exampleoptionsbase.ui:145
+#, fuzzy
+msgid "Artist:"
+msgstr "Иҷрогар"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: exampleoptionsbase.ui:155
+#, fuzzy
+msgid "Album:"
+msgstr "Албом"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#: exampleoptionsbase.ui:165
+#, fuzzy
+msgid "Genre:"
+msgstr "&Услуб:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel5)
+#: exampleoptionsbase.ui:175
+#, fuzzy
+msgid "Track number:"
+msgstr "Номи Шиор"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel6)
+#: exampleoptionsbase.ui:185
+#, fuzzy
+msgid "Year:"
+msgstr "&Сол:"
+
+#. i18n: ectx: property (text), widget (KLineEdit, m_exampleTitle)
+#: exampleoptionsbase.ui:214
+#, fuzzy
+msgctxt "example song title"
+msgid "Title"
+msgstr "Вақт"
+
+#. i18n: ectx: property (text), widget (KLineEdit, m_exampleAlbum)
+#. i18n: ectx: property (text), widget (K3ListView, trackList)
+#: exampleoptionsbase.ui:228 playlist.cpp:1524 tagrenameroptions.cpp:106
+#: trackpickerdialogbase.ui:119
+msgid "Album"
+msgstr "Албом"
+
+#. i18n: ectx: property (text), widget (KLineEdit, m_exampleGenre)
+#: exampleoptionsbase.ui:235 playlist.cpp:1527 tagrenameroptions.cpp:115
+msgid "Genre"
+msgstr "Услуб"
 
 #: filerenamer.cpp:66
 msgctxt "warning about mass file rename"
@@ -184,9 +339,8 @@ msgstr ""
 msgid "Hide Renamer Test Dialog"
 msgstr ""
 
-#. i18n: file: filerenamerbase.ui:212
 #. i18n: ectx: property (text), widget (KPushButton, m_showExample)
-#: filerenamer.cpp:815 rc.cpp:163
+#: filerenamer.cpp:815 filerenamerbase.ui:212
 msgid "Show Renamer Test Dialog"
 msgstr ""
 
@@ -198,6 +352,73 @@ msgstr ""
 #: filerenamer.cpp:904
 msgid "The following rename operations failed:\n"
 msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, FileRenamerBase)
+#: filerenamerbase.ui:20
+msgid "File Renamer Configuration"
+msgstr "Танзими Бозномгузории Файл"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_6)
+#: filerenamerbase.ui:47
+#, fuzzy
+msgid "Music folder:"
+msgstr "Феҳристҳо"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
+#: filerenamerbase.ui:63
+#, fuzzy
+msgid "Album Tag"
+msgstr "Албом"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
+#: filerenamerbase.ui:68
+#, fuzzy
+msgid "Artist Tag"
+msgstr "Иҷрогар"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
+#: filerenamerbase.ui:73
+#, fuzzy
+msgid "Genre Tag"
+msgstr "Услуб"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
+#: filerenamerbase.ui:78
+#, fuzzy
+msgid "Title Tag"
+msgstr "Вақт"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
+#: filerenamerbase.ui:83
+#, fuzzy
+msgid "Track Tag"
+msgstr "Номи Шиор"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
+#: filerenamerbase.ui:88
+#, fuzzy
+msgid "Year Tag"
+msgstr "Сол"
+
+#. i18n: ectx: property (text), widget (KPushButton, m_insertCategory)
+#: filerenamerbase.ui:96
+msgid "Insert Category"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: filerenamerbase.ui:108
+msgid "Add category:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_7)
+#: filerenamerbase.ui:118
+msgid "Separator:"
+msgstr ""
+
+#: filerenamerconfigdlg.cpp:28
+#, fuzzy
+msgid "File Renamer Options"
+msgstr "Бозномгузории Файл"
 
 #: filerenameroptions.cpp:38
 #, kde-format
@@ -226,6 +447,70 @@ msgstr ""
 #: filerenameroptions.cpp:115
 msgid "File Renamer"
 msgstr "Бозномгузории Файл"
+
+#. i18n: ectx: property (text), widget (QLabel, m_substitution)
+#: filerenameroptionsbase.ui:115
+msgid "Substitution Example"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_includeEmptyButton)
+#: filerenameroptionsbase.ui:137
+msgid "Include in the &filename anyways"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_ignoreTagButton)
+#: filerenameroptionsbase.ui:144
+msgid "&Ignore this tag when renaming the file"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_useValueButton)
+#: filerenameroptionsbase.ui:162
+msgid "Use &this value:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (KLineEdit, m_emptyTagValue)
+#: filerenameroptionsbase.ui:172
+msgctxt "value to use in replacement when source tag empty"
+msgid "Empty"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, m_trackGroup)
+#: filerenameroptionsbase.ui:184
+#, fuzzy
+msgid "Track numbering"
+msgstr "Номи Шиор"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel10)
+#: filerenameroptionsbase.ui:196
+msgid ""
+"JuK can force the track used in a file name to have a minimum number of "
+"digits.  You may want to do this for better sorting in file managers."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel5)
+#: filerenameroptionsbase.ui:228
+msgid "Minimum number of digits:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, m_doubleDigitExample)
+#: filerenameroptionsbase.ui:266
+msgid "014"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, m_singleDigitExample)
+#: filerenameroptionsbase.ui:284
+msgid "003"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, m_singleDigit)
+#: filerenameroptionsbase.ui:291
+msgid "3 ->"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, m_doubleDigit)
+#: filerenameroptionsbase.ui:301
+msgid "14 ->"
+msgstr ""
 
 #: historyplaylist.cpp:41
 msgid "Time"
@@ -380,6 +665,44 @@ msgstr ""
 #: juk.cpp:531
 msgid "Docking in System Tray"
 msgstr "Ҷойгузорӣ дар Сабади Системавӣ"
+
+#. i18n: ectx: Menu (file)
+#: jukui-rtl.rc:4 jukui.rc:6
+#, fuzzy
+msgid "&File"
+msgstr "Номи &файл:"
+
+#. i18n: ectx: Menu (view)
+#: jukui-rtl.rc:26 jukui.rc:28
+#, fuzzy
+msgid "&View"
+msgstr "&Нав"
+
+#. i18n: ectx: Menu (player)
+#: jukui-rtl.rc:39 jukui.rc:41
+msgid "&Player"
+msgstr "&Бозингар"
+
+#. i18n: ectx: Menu (playlist)
+#: jukui-rtl.rc:57 jukui.rc:59
+msgid "&Tagger"
+msgstr "&Борчасб"
+
+#. i18n: ectx: Menu (settings)
+#: jukui-rtl.rc:68 jukui.rc:70
+msgid "&Settings"
+msgstr ""
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: jukui-rtl.rc:81 jukui.rc:83
+#, fuzzy
+msgid "Main Toolbar"
+msgstr "Панели Асбобҳои Бозикунӣ"
+
+#. i18n: ectx: ToolBar (playToolBar)
+#: jukui-rtl.rc:99 jukui.rc:101
+msgid "Play Toolbar"
+msgstr "Панели Асбобҳои Бозикунӣ"
 
 #: k3bexporter.cpp:91
 #, fuzzy
@@ -672,6 +995,119 @@ msgctxt "%1 is the artist and %2 is the title of the currently playing track."
 msgid "%1 - %2 :: JuK"
 msgstr ""
 
+#: playlist.cpp:561
+#, kde-format
+msgid "Could not save to file %1."
+msgstr "Дар файли %1 захира нагардид."
+
+#: playlist.cpp:827
+#, fuzzy
+msgid "Are you sure you want to delete these covers?"
+msgstr "Дар ҳақиқат мехоҳед, ки ин элементҳоро хориҷ кунед?"
+
+#: playlist.cpp:829
+msgid "&Delete Covers"
+msgstr ""
+
+#: playlist.cpp:858
+#, fuzzy
+msgid "Select Cover Image File"
+msgstr "&Нишондиҳии Сутунҳо"
+
+#: playlist.cpp:1006
+#, fuzzy
+msgid "Could not delete these files"
+msgstr "Нобудсозии ҳамаи файлҳои таъиншуда нашуда истодааст."
+
+#: playlist.cpp:1007
+#, fuzzy
+msgid "Could not move these files to the Trash"
+msgstr "Дар ҳақиқат мехоҳед, ки ин пунктро аз диск нобуд созед?"
+
+#. i18n: ectx: property (text), widget (K3ListView, trackList)
+#: playlist.cpp:1522 trackpickerdialogbase.ui:97
+msgid "Track Name"
+msgstr "Номи Шиор"
+
+#: playlist.cpp:1525
+msgid "Cover"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (K3ListView, trackList)
+#: playlist.cpp:1526 tagrenameroptions.cpp:110 trackpickerdialogbase.ui:130
+#, fuzzy
+#| msgid "Track"
+msgctxt "cd track number"
+msgid "Track"
+msgstr "Шиор"
+
+#. i18n: ectx: property (text), widget (K3ListView, trackList)
+#: playlist.cpp:1528 tagrenameroptions.cpp:119 trackpickerdialogbase.ui:141
+msgid "Year"
+msgstr "Сол"
+
+#: playlist.cpp:1529
+msgid "Length"
+msgstr "Дарозӣ"
+
+#: playlist.cpp:1530
+msgid "Bitrate"
+msgstr "Зуддии битӣ"
+
+#: playlist.cpp:1531
+msgid "Comment"
+msgstr "Шарҳдиҳӣ"
+
+#. i18n: ectx: property (title), widget (QGroupBox, fileInfoGroup)
+#: playlist.cpp:1532 trackpickerdialogbase.ui:21
+msgid "File Name"
+msgstr "Номи Файл"
+
+#: playlist.cpp:1533
+msgid "File Name (full path)"
+msgstr "Номи Файл (Роҳи Пурра)"
+
+#: playlist.cpp:1702
+msgid "&Show Columns"
+msgstr "&Нишондиҳии Сутунҳо"
+
+#: playlist.cpp:2135
+msgid "Add to Play Queue"
+msgstr ""
+
+#: playlist.cpp:2148 playlist.cpp:2298
+#, fuzzy
+msgid "Edit"
+msgstr "Таҳрири '%1'"
+
+#: playlist.cpp:2163
+#, fuzzy
+msgid "Create Playlist From Selected Items..."
+msgstr "Офаридани Рӯйхати Бозикуниҳо Аз Элементҳои Интихобшуда"
+
+#: playlist.cpp:2184
+#, kde-format
+msgid "Edit '%1'"
+msgstr "Таҳрири '%1'"
+
+#: playlist.cpp:2296
+msgid "This will edit multiple files. Are you sure?"
+msgstr "Ин файлҳои зиёдро таҳрир мекунад. Шумо боварӣ доред?"
+
+#: playlist.cpp:2355 playlistcollection.h:180
+msgid "Create New Playlist"
+msgstr "Офаридани Рӯйхати Нави Бозикуниҳо"
+
+#: playlist.cpp:2364
+msgid ""
+"Manual column widths have been enabled.  You can switch back to automatic "
+"column sizes in the view menu."
+msgstr ""
+
+#: playlist.cpp:2367
+msgid "Manual Column Widths Enabled"
+msgstr ""
+
 #: playlistbox.cpp:109
 msgid "View Modes"
 msgstr "Намуди Усулҳо"
@@ -710,9 +1146,8 @@ msgstr "Дар ҳақиқат мехоҳед, ки ин элементҳоро �
 msgid "Remove Items?"
 msgstr "Хориҷкунии нақша"
 
-#. i18n: file: tagguesserconfigdlgwidget.ui:100
 #. i18n: ectx: property (text), widget (KPushButton, bRemove)
-#: playlistbox.cpp:351 rc.cpp:304
+#: playlistbox.cpp:351 tagguesserconfigdlgwidget.ui:100
 #, fuzzy
 msgid "&Remove"
 msgstr "&Хориҷ кардан"
@@ -854,12 +1289,6 @@ msgstr "Навсозӣ"
 msgid "&Rename File"
 msgstr "&Бозномгузории Файл"
 
-#. i18n: file: coverdialogbase.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, CoverDialogBase)
-#: playlistcollection.cpp:900 rc.cpp:47
-msgid "Cover Manager"
-msgstr ""
-
 #: playlistcollection.cpp:903
 #, fuzzy
 msgid "&View Cover"
@@ -888,146 +1317,9 @@ msgstr "&Нишондиҳии Сутунҳо"
 msgid "Show &Play Queue"
 msgstr "Намоиши Рӯйхати бозикуниҳо"
 
-#: playlist.cpp:561
-#, kde-format
-msgid "Could not save to file %1."
-msgstr "Дар файли %1 захира нагардид."
-
-#: playlist.cpp:827
-#, fuzzy
-msgid "Are you sure you want to delete these covers?"
-msgstr "Дар ҳақиқат мехоҳед, ки ин элементҳоро хориҷ кунед?"
-
-#: playlist.cpp:829
-msgid "&Delete Covers"
-msgstr ""
-
-#: playlist.cpp:858
-#, fuzzy
-msgid "Select Cover Image File"
-msgstr "&Нишондиҳии Сутунҳо"
-
-#: playlist.cpp:1006
-#, fuzzy
-msgid "Could not delete these files"
-msgstr "Нобудсозии ҳамаи файлҳои таъиншуда нашуда истодааст."
-
-#: playlist.cpp:1007
-#, fuzzy
-msgid "Could not move these files to the Trash"
-msgstr "Дар ҳақиқат мехоҳед, ки ин пунктро аз диск нобуд созед?"
-
-#. i18n: file: trackpickerdialogbase.ui:97
-#. i18n: ectx: property (text), widget (K3ListView, trackList)
-#: playlist.cpp:1522 rc.cpp:322
-msgid "Track Name"
-msgstr "Номи Шиор"
-
-#. i18n: file: coverdialogbase.ui:46
-#. i18n: ectx: property (text), widget (K3ListView, m_artists)
-#. i18n: file: exampleoptionsbase.ui:221
-#. i18n: ectx: property (text), widget (KLineEdit, m_exampleArtist)
-#. i18n: file: trackpickerdialogbase.ui:108
-#. i18n: ectx: property (text), widget (K3ListView, trackList)
-#: playlist.cpp:1523 rc.cpp:50 rc.cpp:118 rc.cpp:325 tagrenameroptions.cpp:102
-msgid "Artist"
-msgstr "Иҷрогар"
-
-#. i18n: file: exampleoptionsbase.ui:228
-#. i18n: ectx: property (text), widget (KLineEdit, m_exampleAlbum)
-#. i18n: file: trackpickerdialogbase.ui:119
-#. i18n: ectx: property (text), widget (K3ListView, trackList)
-#: playlist.cpp:1524 rc.cpp:121 rc.cpp:328 tagrenameroptions.cpp:106
-msgid "Album"
-msgstr "Албом"
-
-#: playlist.cpp:1525
-msgid "Cover"
-msgstr ""
-
-#. i18n: file: trackpickerdialogbase.ui:130
-#. i18n: ectx: property (text), widget (K3ListView, trackList)
-#: playlist.cpp:1526 rc.cpp:331 tagrenameroptions.cpp:110
-#, fuzzy
-#| msgid "Track"
-msgctxt "cd track number"
-msgid "Track"
-msgstr "Шиор"
-
-#. i18n: file: exampleoptionsbase.ui:235
-#. i18n: ectx: property (text), widget (KLineEdit, m_exampleGenre)
-#: playlist.cpp:1527 rc.cpp:124 tagrenameroptions.cpp:115
-msgid "Genre"
-msgstr "Услуб"
-
-#. i18n: file: trackpickerdialogbase.ui:141
-#. i18n: ectx: property (text), widget (K3ListView, trackList)
-#: playlist.cpp:1528 rc.cpp:334 tagrenameroptions.cpp:119
-msgid "Year"
-msgstr "Сол"
-
-#: playlist.cpp:1529
-msgid "Length"
-msgstr "Дарозӣ"
-
-#: playlist.cpp:1530
-msgid "Bitrate"
-msgstr "Зуддии битӣ"
-
-#: playlist.cpp:1531
-msgid "Comment"
-msgstr "Шарҳдиҳӣ"
-
-#. i18n: file: trackpickerdialogbase.ui:21
-#. i18n: ectx: property (title), widget (QGroupBox, fileInfoGroup)
-#: playlist.cpp:1532 rc.cpp:316
-msgid "File Name"
-msgstr "Номи Файл"
-
-#: playlist.cpp:1533
-msgid "File Name (full path)"
-msgstr "Номи Файл (Роҳи Пурра)"
-
-#: playlist.cpp:1702
-msgid "&Show Columns"
-msgstr "&Нишондиҳии Сутунҳо"
-
-#: playlist.cpp:2135
-msgid "Add to Play Queue"
-msgstr ""
-
-#: playlist.cpp:2148 playlist.cpp:2298
-#, fuzzy
-msgid "Edit"
-msgstr "Таҳрири '%1'"
-
-#: playlist.cpp:2163
-#, fuzzy
-msgid "Create Playlist From Selected Items..."
-msgstr "Офаридани Рӯйхати Бозикуниҳо Аз Элементҳои Интихобшуда"
-
-#: playlist.cpp:2184
-#, kde-format
-msgid "Edit '%1'"
-msgstr "Таҳрири '%1'"
-
-#: playlist.cpp:2296
-msgid "This will edit multiple files. Are you sure?"
-msgstr "Ин файлҳои зиёдро таҳрир мекунад. Шумо боварӣ доред?"
-
-#: playlist.cpp:2355 playlistcollection.h:180
-msgid "Create New Playlist"
-msgstr "Офаридани Рӯйхати Нави Бозикуниҳо"
-
-#: playlist.cpp:2364
-msgid ""
-"Manual column widths have been enabled.  You can switch back to automatic "
-"column sizes in the view menu."
-msgstr ""
-
-#: playlist.cpp:2367
-msgid "Manual Column Widths Enabled"
-msgstr ""
+#: playlistcollection.h:183
+msgid "Playlist"
+msgstr "Рӯйхати бозикуниҳо"
 
 #: playlistsplitter.cpp:157
 msgid "Show &Search Bar"
@@ -1037,614 +1329,6 @@ msgstr "Нишондиҳии Панели &Ҷустуҷӯ"
 #, fuzzy
 msgid "Edit Track Search"
 msgstr "Таҳрири Ҷустуҷӯ..."
-
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Абророва Хиромон"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "H_Abrorova@rambler.ru"
-
-#. i18n: file: jukui.rc:6
-#. i18n: ectx: Menu (file)
-#. i18n: file: jukui-rtl.rc:4
-#. i18n: ectx: Menu (file)
-#: rc.cpp:5 rc.cpp:26
-#, fuzzy
-msgid "&File"
-msgstr "Номи &файл:"
-
-#. i18n: file: jukui.rc:28
-#. i18n: ectx: Menu (view)
-#. i18n: file: jukui-rtl.rc:26
-#. i18n: ectx: Menu (view)
-#: rc.cpp:8 rc.cpp:29
-#, fuzzy
-msgid "&View"
-msgstr "&Нав"
-
-#. i18n: file: jukui.rc:41
-#. i18n: ectx: Menu (player)
-#. i18n: file: jukui-rtl.rc:39
-#. i18n: ectx: Menu (player)
-#: rc.cpp:11 rc.cpp:32
-msgid "&Player"
-msgstr "&Бозингар"
-
-#. i18n: file: jukui.rc:59
-#. i18n: ectx: Menu (playlist)
-#. i18n: file: jukui-rtl.rc:57
-#. i18n: ectx: Menu (playlist)
-#: rc.cpp:14 rc.cpp:35
-msgid "&Tagger"
-msgstr "&Борчасб"
-
-#. i18n: file: jukui.rc:70
-#. i18n: ectx: Menu (settings)
-#. i18n: file: jukui-rtl.rc:68
-#. i18n: ectx: Menu (settings)
-#: rc.cpp:17 rc.cpp:38
-msgid "&Settings"
-msgstr ""
-
-#. i18n: file: jukui.rc:83
-#. i18n: ectx: ToolBar (mainToolBar)
-#. i18n: file: jukui-rtl.rc:81
-#. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:20 rc.cpp:41
-#, fuzzy
-msgid "Main Toolbar"
-msgstr "Панели Асбобҳои Бозикунӣ"
-
-#. i18n: file: jukui.rc:101
-#. i18n: ectx: ToolBar (playToolBar)
-#. i18n: file: jukui-rtl.rc:99
-#. i18n: ectx: ToolBar (playToolBar)
-#: rc.cpp:23 rc.cpp:44
-msgid "Play Toolbar"
-msgstr "Панели Асбобҳои Бозикунӣ"
-
-#. i18n: file: deletedialogbase.ui:61
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:53
-#, fuzzy
-msgid "Are you sure that you want to remove these items?"
-msgstr "Дар ҳақиқат мехоҳед, ки ин элементҳоро хориҷ кунед?"
-
-#. i18n: file: deletedialogbase.ui:111
-#. i18n: ectx: property (toolTip), widget (QCheckBox, ddShouldDelete)
-#: rc.cpp:56
-msgid ""
-"If checked, files will be permanently removed instead of being placed in the "
-"Trash Bin"
-msgstr ""
-
-#. i18n: file: deletedialogbase.ui:116
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, ddShouldDelete)
-#: rc.cpp:59
-msgid ""
-"<qt><p>If this box is checked, files will be <b>permanently removed</b> "
-"instead of being placed in the Trash Bin.</p>\n"
-"\n"
-"<p><em>Use this option with caution</em>: Most filesystems are unable to "
-"reliably undelete deleted files.</p></qt>"
-msgstr ""
-
-#. i18n: file: deletedialogbase.ui:119
-#. i18n: ectx: property (text), widget (QCheckBox, ddShouldDelete)
-#: rc.cpp:64
-msgid "&Delete files instead of moving them to the trash"
-msgstr ""
-
-#. i18n: file: directorylistbase.ui:19
-#. i18n: ectx: property (text), widget (QLabel, informationLabel)
-#: rc.cpp:67
-msgid "Please choose the folders where you keep your music:"
-msgstr ""
-
-#. i18n: file: directorylistbase.ui:34
-#. i18n: ectx: property (toolTip), widget (QListView, directoryListView)
-#: rc.cpp:70
-msgid "These folders will be scanned on startup for new files."
-msgstr "Ин феҳристҳо ҳангоми оғозёбии файлҳои нав сканер карда мешаванд."
-
-#. i18n: file: directorylistbase.ui:61
-#. i18n: ectx: property (text), widget (KPushButton, addDirectoryButton)
-#: rc.cpp:73
-msgid "Add Folder..."
-msgstr "Иловакунии Феҳрист..."
-
-#. i18n: file: directorylistbase.ui:68
-#. i18n: ectx: property (text), widget (KPushButton, removeDirectoryButton)
-#: rc.cpp:76
-msgid "Remove Folder"
-msgstr "Хориҷкунии Феҳрист"
-
-#. i18n: file: directorylistbase.ui:95
-#. i18n: ectx: property (text), widget (QCheckBox, importPlaylistsCheckBox)
-#: rc.cpp:79
-msgid "Import playlists"
-msgstr "Воридоти Рӯйхати Бозикуниҳо"
-
-#. i18n: file: exampleoptionsbase.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, ExampleOptionsBase)
-#. i18n: file: filerenamerbase.ui:176
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:82 rc.cpp:160
-#, fuzzy
-msgid "Example"
-msgstr "Даргиронидан"
-
-#. i18n: file: exampleoptionsbase.ui:37
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:85
-msgid "Example Tag Selection"
-msgstr ""
-
-#. i18n: file: exampleoptionsbase.ui:58
-#. i18n: ectx: property (text), widget (QRadioButton, m_fileTagsButton)
-#: rc.cpp:88
-#, fuzzy
-msgid "Get example tags from this file:"
-msgstr "Хондани борчасб аз файл ғайри имкон аст"
-
-#. i18n: file: exampleoptionsbase.ui:81
-#. i18n: ectx: property (text), widget (QRadioButton, m_manualTagsButton)
-#: rc.cpp:91
-#, fuzzy
-msgid "Enter example tags manually:"
-msgstr "Хондани борчасб аз файл ғайри имкон аст"
-
-#. i18n: file: exampleoptionsbase.ui:91
-#. i18n: ectx: property (title), widget (QGroupBox, m_manualGroup)
-#: rc.cpp:94
-#, fuzzy
-msgid "Example Tags"
-msgstr "Даргиронидан"
-
-#. i18n: file: exampleoptionsbase.ui:135
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:97
-#, fuzzy
-msgctxt "song title"
-msgid "Title:"
-msgstr "Вақт"
-
-#. i18n: file: exampleoptionsbase.ui:145
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:100
-#, fuzzy
-msgid "Artist:"
-msgstr "Иҷрогар"
-
-#. i18n: file: exampleoptionsbase.ui:155
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:103
-#, fuzzy
-msgid "Album:"
-msgstr "Албом"
-
-#. i18n: file: exampleoptionsbase.ui:165
-#. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: rc.cpp:106
-#, fuzzy
-msgid "Genre:"
-msgstr "&Услуб:"
-
-#. i18n: file: exampleoptionsbase.ui:175
-#. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: rc.cpp:109
-#, fuzzy
-msgid "Track number:"
-msgstr "Номи Шиор"
-
-#. i18n: file: exampleoptionsbase.ui:185
-#. i18n: ectx: property (text), widget (QLabel, textLabel6)
-#: rc.cpp:112
-#, fuzzy
-msgid "Year:"
-msgstr "&Сол:"
-
-#. i18n: file: exampleoptionsbase.ui:214
-#. i18n: ectx: property (text), widget (KLineEdit, m_exampleTitle)
-#: rc.cpp:115
-#, fuzzy
-msgctxt "example song title"
-msgid "Title"
-msgstr "Вақт"
-
-#. i18n: file: filerenamerbase.ui:20
-#. i18n: ectx: property (windowTitle), widget (QWidget, FileRenamerBase)
-#: rc.cpp:127
-msgid "File Renamer Configuration"
-msgstr "Танзими Бозномгузории Файл"
-
-#. i18n: file: filerenamerbase.ui:47
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_6)
-#: rc.cpp:130
-#, fuzzy
-msgid "Music folder:"
-msgstr "Феҳристҳо"
-
-#. i18n: file: filerenamerbase.ui:63
-#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
-#: rc.cpp:133
-#, fuzzy
-msgid "Album Tag"
-msgstr "Албом"
-
-#. i18n: file: filerenamerbase.ui:68
-#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
-#: rc.cpp:136
-#, fuzzy
-msgid "Artist Tag"
-msgstr "Иҷрогар"
-
-#. i18n: file: filerenamerbase.ui:73
-#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
-#: rc.cpp:139
-#, fuzzy
-msgid "Genre Tag"
-msgstr "Услуб"
-
-#. i18n: file: filerenamerbase.ui:78
-#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
-#: rc.cpp:142
-#, fuzzy
-msgid "Title Tag"
-msgstr "Вақт"
-
-#. i18n: file: filerenamerbase.ui:83
-#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
-#: rc.cpp:145
-#, fuzzy
-msgid "Track Tag"
-msgstr "Номи Шиор"
-
-#. i18n: file: filerenamerbase.ui:88
-#. i18n: ectx: property (text), item, widget (KComboBox, m_category)
-#: rc.cpp:148
-#, fuzzy
-msgid "Year Tag"
-msgstr "Сол"
-
-#. i18n: file: filerenamerbase.ui:96
-#. i18n: ectx: property (text), widget (KPushButton, m_insertCategory)
-#: rc.cpp:151
-msgid "Insert Category"
-msgstr ""
-
-#. i18n: file: filerenamerbase.ui:108
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:154
-msgid "Add category:"
-msgstr ""
-
-#. i18n: file: filerenamerbase.ui:118
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_7)
-#: rc.cpp:157
-msgid "Separator:"
-msgstr ""
-
-#. i18n: file: filerenameroptionsbase.ui:115
-#. i18n: ectx: property (text), widget (QLabel, m_substitution)
-#: rc.cpp:166
-msgid "Substitution Example"
-msgstr ""
-
-#. i18n: file: filerenameroptionsbase.ui:137
-#. i18n: ectx: property (text), widget (QRadioButton, m_includeEmptyButton)
-#: rc.cpp:169
-msgid "Include in the &filename anyways"
-msgstr ""
-
-#. i18n: file: filerenameroptionsbase.ui:144
-#. i18n: ectx: property (text), widget (QRadioButton, m_ignoreTagButton)
-#: rc.cpp:172
-msgid "&Ignore this tag when renaming the file"
-msgstr ""
-
-#. i18n: file: filerenameroptionsbase.ui:162
-#. i18n: ectx: property (text), widget (QRadioButton, m_useValueButton)
-#: rc.cpp:175
-msgid "Use &this value:"
-msgstr ""
-
-#. i18n: file: filerenameroptionsbase.ui:172
-#. i18n: ectx: property (text), widget (KLineEdit, m_emptyTagValue)
-#: rc.cpp:178
-msgctxt "value to use in replacement when source tag empty"
-msgid "Empty"
-msgstr ""
-
-#. i18n: file: filerenameroptionsbase.ui:184
-#. i18n: ectx: property (title), widget (QGroupBox, m_trackGroup)
-#: rc.cpp:181
-#, fuzzy
-msgid "Track numbering"
-msgstr "Номи Шиор"
-
-#. i18n: file: filerenameroptionsbase.ui:196
-#. i18n: ectx: property (text), widget (QLabel, textLabel10)
-#: rc.cpp:184
-msgid ""
-"JuK can force the track used in a file name to have a minimum number of "
-"digits.  You may want to do this for better sorting in file managers."
-msgstr ""
-
-#. i18n: file: filerenameroptionsbase.ui:228
-#. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: rc.cpp:187
-msgid "Minimum number of digits:"
-msgstr ""
-
-#. i18n: file: filerenameroptionsbase.ui:266
-#. i18n: ectx: property (text), widget (QLabel, m_doubleDigitExample)
-#: rc.cpp:190
-msgid "014"
-msgstr ""
-
-#. i18n: file: filerenameroptionsbase.ui:284
-#. i18n: ectx: property (text), widget (QLabel, m_singleDigitExample)
-#: rc.cpp:193
-msgid "003"
-msgstr ""
-
-#. i18n: file: filerenameroptionsbase.ui:291
-#. i18n: ectx: property (text), widget (QLabel, m_singleDigit)
-#: rc.cpp:196
-msgid "3 ->"
-msgstr ""
-
-#. i18n: file: filerenameroptionsbase.ui:301
-#. i18n: ectx: property (text), widget (QLabel, m_doubleDigit)
-#: rc.cpp:199
-msgid "14 ->"
-msgstr ""
-
-#. i18n: file: tageditor.ui:19
-#. i18n: ectx: property (text), widget (QLabel, fileNameLabel)
-#: rc.cpp:202
-#, fuzzy
-#| msgid "&File name:"
-msgid "F&ile name:"
-msgstr "Номи &файл:"
-
-#. i18n: file: tageditor.ui:29
-#. i18n: ectx: property (text), widget (QLabel, trackLabel)
-#: rc.cpp:205
-#, fuzzy
-#| msgid "T&rack:"
-msgid "T&rack:"
-msgstr "&Шиор:"
-
-#. i18n: file: tageditor.ui:39
-#. i18n: ectx: property (text), widget (QLabel, artistNameLabel)
-#: rc.cpp:208
-msgid "&Artist name:"
-msgstr "Номи &иҷрогар:"
-
-#. i18n: file: tageditor.ui:49
-#. i18n: ectx: property (text), widget (QLabel, albumNameLabel)
-#: rc.cpp:211
-msgid "Album &name:"
-msgstr "&Номи албом:"
-
-#. i18n: file: tageditor.ui:59
-#. i18n: ectx: property (text), widget (QLabel, genreLabel)
-#: rc.cpp:214
-msgid "&Genre:"
-msgstr "&Услуб:"
-
-#. i18n: file: tageditor.ui:72
-#. i18n: ectx: property (text), widget (QLabel, yearLabel)
-#: rc.cpp:217
-msgid "&Year:"
-msgstr "&Сол:"
-
-#. i18n: file: tageditor.ui:88
-#. i18n: ectx: property (text), widget (QLabel, lengthLabel)
-#: rc.cpp:220
-#, fuzzy
-#| msgid "Length:"
-msgid "&Length:"
-msgstr "Дарозӣ:"
-
-#. i18n: file: tageditor.ui:98
-#. i18n: ectx: property (text), widget (QLabel, bitrateLabel)
-#: rc.cpp:223
-#, fuzzy
-#| msgid "Bitrate:"
-msgid "&Bitrate:"
-msgstr "Зуддии битӣ:"
-
-#. i18n: file: tageditor.ui:108
-#. i18n: ectx: property (text), widget (QLabel, commentLabel)
-#: rc.cpp:226
-msgid "&Comment:"
-msgstr "&Шарҳдиҳӣ:"
-
-#. i18n: file: tageditor.ui:176
-#. i18n: ectx: property (text), widget (QLabel, trackNameLabel)
-#: rc.cpp:229
-#, fuzzy
-#| msgid "&Track name:"
-msgid "Trac&k name:"
-msgstr "Номи &шиор:"
-
-#. i18n: file: tageditor.ui:186
-#. i18n: ectx: property (text), widget (QCheckBox, artistNameEnable)
-#. i18n: file: tageditor.ui:196
-#. i18n: ectx: property (text), widget (QCheckBox, trackNameEnable)
-#. i18n: file: tageditor.ui:203
-#. i18n: ectx: property (text), widget (QCheckBox, albumNameEnable)
-#. i18n: file: tageditor.ui:210
-#. i18n: ectx: property (text), widget (QCheckBox, genreEnable)
-#. i18n: file: tageditor.ui:217
-#. i18n: ectx: property (text), widget (QCheckBox, trackEnable)
-#. i18n: file: tageditor.ui:224
-#. i18n: ectx: property (text), widget (QCheckBox, yearEnable)
-#. i18n: file: tageditor.ui:231
-#. i18n: ectx: property (text), widget (QCheckBox, commentEnable)
-#: rc.cpp:232 rc.cpp:235 rc.cpp:238 rc.cpp:241 rc.cpp:244 rc.cpp:247
-#: rc.cpp:250
-msgid "Enable"
-msgstr "Даргиронидан"
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:18
-#. i18n: ectx: property (toolTip), widget (QTreeView, lvSchemes)
-#: rc.cpp:253
-#, fuzzy
-msgid "Currently used file name schemes"
-msgstr "Нақшаҳои номи файли дар айни замон истифодашаванда"
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:29
-#. i18n: ectx: property (whatsThis), widget (QTreeView, lvSchemes)
-#: rc.cpp:257
-#, fuzzy, no-c-format
-msgid ""
-"Here you can see the currently configured file name schemes which the "
-"\"Guess Tag Information From File Name\" entry in the song's context menu "
-"uses to extract tag information from a file name. Each string may contain "
-"one of the following placeholders:<ul>\n"
-"<li>%t: Title</li>\n"
-"<li>%a: Artist</li>\n"
-"<li>%A: Album</li>\n"
-"<li>%T: Track</li>\n"
-"<li>%c: Comment</li>\n"
-"</ul>\n"
-"For example, the file name scheme \"[%T] %a - %t\" would match \"[01] Deep "
-"Purple - Smoke on the water\" but not \"(Deep Purple) Smoke on the water\". "
-"For that second name, you would use the scheme \"(%a) %t\".<p/>\n"
-"Note that the order in which the schemes appear in the list is relevant, "
-"since the tag guesser will go through the list from the top to the bottom, "
-"and use the first matching scheme."
-msgstr ""
-"Дар ин ҷо нақшае, ки ба воситаи онҳо муҳаррири ҷойгузоштаи борчасбҳо аз номи "
-"файл ахборотро оиди мусиқи гирифта метавонад ва он ба воситаи ангуштзании "
-"тугмаи \"Берункунӣ аз ном\" ба амал меояд, ифода ёфтааст. Ҳар як сатр як ё "
-"якчанд нақшаҳои дар поён овардаро дар бар гирифта метавонад:<ul>\n"
-"<li>%t: Сарлавҳа</li>\n"
-"<li>%a: Иҷрокунанда</li>\n"
-"<li>%A: Албом</li>\n"
-"<li>%T: Шиора</li>\n"
-"<li>%c: Тавсифот</li>\n"
-"</ul>\n"
-"Масалан, нақшаи номи файл \"[%T] %a - %t\" мувофиқат мекунад ба \"[01] "
-"Нилгун - Туман дар рӯи об\" на ин ки \"(Нилгуни Баланд) Туман дар рӯи об\". "
-"Барои ин номи диюм, нақшаи зетинро истифода бурдан лозим аст \"(%a) %t\".<p/"
-">\n"
-"Бояд дар хотир дошт, ки тартиботе, ки нақшаҳо дар рӯйхат ҷойгиранд ба "
-"тартиботе, ки онҳо барои кӯшиши гирифтани ахборотаз номи файл истифода "
-"мешаванд, мувофиқат мекунад, яъне муҳаррири борчасбҳо нақшаҳоро аз боло дида "
-"мебароянд, то он даме, ки якум нақша ба номи файл мувофиқат намояд."
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:42
-#. i18n: ectx: property (toolTip), widget (QToolButton, bMoveUp)
-#: rc.cpp:268
-msgid "Move scheme up"
-msgstr "Ҷойивазкунии нақша ба боло"
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:45
-#. i18n: ectx: property (whatsThis), widget (QToolButton, bMoveUp)
-#: rc.cpp:271
-msgid ""
-"Press this button to move the currently selected scheme one step upwards."
-msgstr ""
-"Барои ҷойивазкунии нақшаи интихобкардаи ҷорӣ як қадам ба боло, ин тугмаро "
-"пахш кунед."
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:55
-#. i18n: ectx: property (toolTip), widget (QToolButton, bMoveDown)
-#: rc.cpp:274
-msgid "Move scheme down"
-msgstr "Ҷойивазкунии нақша ба поён"
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:58
-#. i18n: ectx: property (whatsThis), widget (QToolButton, bMoveDown)
-#: rc.cpp:277
-msgid ""
-"Press this button to move the currently selected scheme one step downwards."
-msgstr ""
-"Барои ҷойивазкунии нақшаи интихобкардаи ҷорӣ як қадам ба поён, ин тугмаро "
-"пахш кунед."
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:68
-#. i18n: ectx: property (toolTip), widget (KPushButton, bAdd)
-#: rc.cpp:280
-msgid "Add a new scheme"
-msgstr "Илова кардани нақшаи нав"
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:71
-#. i18n: ectx: property (whatsThis), widget (KPushButton, bAdd)
-#: rc.cpp:283
-#, fuzzy
-msgid "Press this button to add a new file name scheme to the end of the list."
-msgstr ""
-"Барои илова кардани нақшаи номи файли нав ба охири рӯйхат ин тугмаро пахш "
-"кунед."
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:74
-#. i18n: ectx: property (text), widget (KPushButton, bAdd)
-#: rc.cpp:286
-msgid "&Add"
-msgstr "&Илова кардан"
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:81
-#. i18n: ectx: property (toolTip), widget (KPushButton, bModify)
-#: rc.cpp:289
-msgid "Modify scheme"
-msgstr "Тағири нақша"
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:84
-#. i18n: ectx: property (whatsThis), widget (KPushButton, bModify)
-#: rc.cpp:292
-msgid "Press this button to modify the currently selected scheme."
-msgstr "Барои тағири нақшаи интихобкардаи ҷорӣ ин тугмаро пахш кунед."
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:87
-#. i18n: ectx: property (text), widget (KPushButton, bModify)
-#: rc.cpp:295
-#, fuzzy
-msgid "&Modify"
-msgstr "Тағири нақша"
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:94
-#. i18n: ectx: property (toolTip), widget (KPushButton, bRemove)
-#: rc.cpp:298
-msgid "Remove scheme"
-msgstr "Хориҷкунии нақша"
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:97
-#. i18n: ectx: property (whatsThis), widget (KPushButton, bRemove)
-#: rc.cpp:301
-msgid ""
-"Press this button to remove the currently selected scheme from the list."
-msgstr ""
-"Барои хориҷ кардани нақшаи интихобкардаи ҷорӣ аз рӯйхат ин тугмаро пахш "
-"кунед."
-
-#. i18n: file: tagguesserconfigdlgwidget.ui:128
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:308
-#, no-c-format
-msgid ""
-"You can use the following placeholders:\n"
-"%t: Title\n"
-"%A: Album\n"
-"%a: Artist\n"
-"%T: Track\n"
-"%c: Comment"
-msgstr ""
-
-#. i18n: file: trackpickerdialogbase.ui:64
-#. i18n: ectx: property (title), widget (QGroupBox, trackInfoGroup)
-#: rc.cpp:319
-msgid "Select Best Possible Match"
-msgstr "Интихоби Мувофиқати Имконпазири Беҳтарин"
 
 #: scrobbleconfigdlg.cpp:30
 msgid "Configure scrobbling..."
@@ -1701,10 +1385,6 @@ msgstr "Ҳамаи Дидорӣ"
 msgid "Search:"
 msgstr "Ҷустуҷӯ:"
 
-#: slideraction.cpp:65
-msgid "Seeking is not supported in this file with your audio settings."
-msgstr ""
-
 #: slider.cpp:235
 msgid "100%"
 msgstr ""
@@ -1727,6 +1407,10 @@ msgstr ""
 
 #: slider.cpp:240
 msgid "0%"
+msgstr ""
+
+#: slideraction.cpp:65
+msgid "Seeking is not supported in this file with your audio settings."
 msgstr ""
 
 #: splashscreen.cpp:34
@@ -1777,9 +1461,212 @@ msgstr "Оё мехоҳед, ки тағиротҳоро захира кунед
 msgid "Save Changes"
 msgstr "Захиракунии Тағиротҳо"
 
+#. i18n: ectx: property (text), widget (QLabel, fileNameLabel)
+#: tageditor.ui:19
+#, fuzzy
+#| msgid "&File name:"
+msgid "F&ile name:"
+msgstr "Номи &файл:"
+
+#. i18n: ectx: property (text), widget (QLabel, trackLabel)
+#: tageditor.ui:29
+#, fuzzy
+#| msgid "T&rack:"
+msgid "T&rack:"
+msgstr "&Шиор:"
+
+#. i18n: ectx: property (text), widget (QLabel, artistNameLabel)
+#: tageditor.ui:39
+msgid "&Artist name:"
+msgstr "Номи &иҷрогар:"
+
+#. i18n: ectx: property (text), widget (QLabel, albumNameLabel)
+#: tageditor.ui:49
+msgid "Album &name:"
+msgstr "&Номи албом:"
+
+#. i18n: ectx: property (text), widget (QLabel, genreLabel)
+#: tageditor.ui:59
+msgid "&Genre:"
+msgstr "&Услуб:"
+
+#. i18n: ectx: property (text), widget (QLabel, yearLabel)
+#: tageditor.ui:72
+msgid "&Year:"
+msgstr "&Сол:"
+
+#. i18n: ectx: property (text), widget (QLabel, lengthLabel)
+#: tageditor.ui:88
+#, fuzzy
+#| msgid "Length:"
+msgid "&Length:"
+msgstr "Дарозӣ:"
+
+#. i18n: ectx: property (text), widget (QLabel, bitrateLabel)
+#: tageditor.ui:98
+#, fuzzy
+#| msgid "Bitrate:"
+msgid "&Bitrate:"
+msgstr "Зуддии битӣ:"
+
+#. i18n: ectx: property (text), widget (QLabel, commentLabel)
+#: tageditor.ui:108
+msgid "&Comment:"
+msgstr "&Шарҳдиҳӣ:"
+
+#. i18n: ectx: property (text), widget (QLabel, trackNameLabel)
+#: tageditor.ui:176
+#, fuzzy
+#| msgid "&Track name:"
+msgid "Trac&k name:"
+msgstr "Номи &шиор:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, artistNameEnable)
+#. i18n: ectx: property (text), widget (QCheckBox, trackNameEnable)
+#. i18n: ectx: property (text), widget (QCheckBox, albumNameEnable)
+#. i18n: ectx: property (text), widget (QCheckBox, genreEnable)
+#. i18n: ectx: property (text), widget (QCheckBox, trackEnable)
+#. i18n: ectx: property (text), widget (QCheckBox, yearEnable)
+#. i18n: ectx: property (text), widget (QCheckBox, commentEnable)
+#: tageditor.ui:186 tageditor.ui:196 tageditor.ui:203 tageditor.ui:210
+#: tageditor.ui:217 tageditor.ui:224 tageditor.ui:231
+msgid "Enable"
+msgstr "Даргиронидан"
+
 #: tagguesserconfigdlg.cpp:26
 msgid "Tag Guesser Configuration"
 msgstr "Танзимкунии Муайянкунандаи Борчасбҳо"
+
+#. i18n: ectx: property (toolTip), widget (QTreeView, lvSchemes)
+#: tagguesserconfigdlgwidget.ui:18
+#, fuzzy
+msgid "Currently used file name schemes"
+msgstr "Нақшаҳои номи файли дар айни замон истифодашаванда"
+
+#. i18n: ectx: property (whatsThis), widget (QTreeView, lvSchemes)
+#: tagguesserconfigdlgwidget.ui:29
+#, fuzzy, no-c-format
+msgid ""
+"Here you can see the currently configured file name schemes which the "
+"\"Guess Tag Information From File Name\" entry in the song's context menu "
+"uses to extract tag information from a file name. Each string may contain "
+"one of the following placeholders:<ul>\n"
+"<li>%t: Title</li>\n"
+"<li>%a: Artist</li>\n"
+"<li>%A: Album</li>\n"
+"<li>%T: Track</li>\n"
+"<li>%c: Comment</li>\n"
+"</ul>\n"
+"For example, the file name scheme \"[%T] %a - %t\" would match \"[01] Deep "
+"Purple - Smoke on the water\" but not \"(Deep Purple) Smoke on the water\". "
+"For that second name, you would use the scheme \"(%a) %t\".<p/>\n"
+"Note that the order in which the schemes appear in the list is relevant, "
+"since the tag guesser will go through the list from the top to the bottom, "
+"and use the first matching scheme."
+msgstr ""
+"Дар ин ҷо нақшае, ки ба воситаи онҳо муҳаррири ҷойгузоштаи борчасбҳо аз номи "
+"файл ахборотро оиди мусиқи гирифта метавонад ва он ба воситаи ангуштзании "
+"тугмаи \"Берункунӣ аз ном\" ба амал меояд, ифода ёфтааст. Ҳар як сатр як ё "
+"якчанд нақшаҳои дар поён овардаро дар бар гирифта метавонад:<ul>\n"
+"<li>%t: Сарлавҳа</li>\n"
+"<li>%a: Иҷрокунанда</li>\n"
+"<li>%A: Албом</li>\n"
+"<li>%T: Шиора</li>\n"
+"<li>%c: Тавсифот</li>\n"
+"</ul>\n"
+"Масалан, нақшаи номи файл \"[%T] %a - %t\" мувофиқат мекунад ба \"[01] "
+"Нилгун - Туман дар рӯи об\" на ин ки \"(Нилгуни Баланд) Туман дар рӯи об\". "
+"Барои ин номи диюм, нақшаи зетинро истифода бурдан лозим аст \"(%a) %t\".<p/"
+">\n"
+"Бояд дар хотир дошт, ки тартиботе, ки нақшаҳо дар рӯйхат ҷойгиранд ба "
+"тартиботе, ки онҳо барои кӯшиши гирифтани ахборотаз номи файл истифода "
+"мешаванд, мувофиқат мекунад, яъне муҳаррири борчасбҳо нақшаҳоро аз боло дида "
+"мебароянд, то он даме, ки якум нақша ба номи файл мувофиқат намояд."
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, bMoveUp)
+#: tagguesserconfigdlgwidget.ui:42
+msgid "Move scheme up"
+msgstr "Ҷойивазкунии нақша ба боло"
+
+#. i18n: ectx: property (whatsThis), widget (QToolButton, bMoveUp)
+#: tagguesserconfigdlgwidget.ui:45
+msgid ""
+"Press this button to move the currently selected scheme one step upwards."
+msgstr ""
+"Барои ҷойивазкунии нақшаи интихобкардаи ҷорӣ як қадам ба боло, ин тугмаро "
+"пахш кунед."
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, bMoveDown)
+#: tagguesserconfigdlgwidget.ui:55
+msgid "Move scheme down"
+msgstr "Ҷойивазкунии нақша ба поён"
+
+#. i18n: ectx: property (whatsThis), widget (QToolButton, bMoveDown)
+#: tagguesserconfigdlgwidget.ui:58
+msgid ""
+"Press this button to move the currently selected scheme one step downwards."
+msgstr ""
+"Барои ҷойивазкунии нақшаи интихобкардаи ҷорӣ як қадам ба поён, ин тугмаро "
+"пахш кунед."
+
+#. i18n: ectx: property (toolTip), widget (KPushButton, bAdd)
+#: tagguesserconfigdlgwidget.ui:68
+msgid "Add a new scheme"
+msgstr "Илова кардани нақшаи нав"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, bAdd)
+#: tagguesserconfigdlgwidget.ui:71
+#, fuzzy
+msgid "Press this button to add a new file name scheme to the end of the list."
+msgstr ""
+"Барои илова кардани нақшаи номи файли нав ба охири рӯйхат ин тугмаро пахш "
+"кунед."
+
+#. i18n: ectx: property (text), widget (KPushButton, bAdd)
+#: tagguesserconfigdlgwidget.ui:74
+msgid "&Add"
+msgstr "&Илова кардан"
+
+#. i18n: ectx: property (toolTip), widget (KPushButton, bModify)
+#: tagguesserconfigdlgwidget.ui:81
+msgid "Modify scheme"
+msgstr "Тағири нақша"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, bModify)
+#: tagguesserconfigdlgwidget.ui:84
+msgid "Press this button to modify the currently selected scheme."
+msgstr "Барои тағири нақшаи интихобкардаи ҷорӣ ин тугмаро пахш кунед."
+
+#. i18n: ectx: property (text), widget (KPushButton, bModify)
+#: tagguesserconfigdlgwidget.ui:87
+#, fuzzy
+msgid "&Modify"
+msgstr "Тағири нақша"
+
+#. i18n: ectx: property (toolTip), widget (KPushButton, bRemove)
+#: tagguesserconfigdlgwidget.ui:94
+msgid "Remove scheme"
+msgstr "Хориҷкунии нақша"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, bRemove)
+#: tagguesserconfigdlgwidget.ui:97
+msgid ""
+"Press this button to remove the currently selected scheme from the list."
+msgstr ""
+"Барои хориҷ кардани нақшаи интихобкардаи ҷорӣ аз рӯйхат ин тугмаро пахш "
+"кунед."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: tagguesserconfigdlgwidget.ui:128
+#, no-c-format
+msgid ""
+"You can use the following placeholders:\n"
+"%t: Title\n"
+"%A: Album\n"
+"%a: Artist\n"
+"%T: Track\n"
+"%c: Comment"
+msgstr ""
 
 #: tagrenameroptions.cpp:97
 #, fuzzy
@@ -1820,6 +1707,11 @@ msgstr ""
 #: trackpickerdialog.cpp:53
 msgid "Internet Tag Guesser"
 msgstr "Муайянкунандаи Борчасби Интернет"
+
+#. i18n: ectx: property (title), widget (QGroupBox, trackInfoGroup)
+#: trackpickerdialogbase.ui:64
+msgid "Select Best Possible Match"
+msgstr "Интихоби Мувофиқати Имконпазири Беҳтарин"
 
 #: treeviewitemplaylist.cpp:47
 msgid "artist"
@@ -1879,15 +1771,15 @@ msgstr "Услубҳо"
 msgid "Mute/Unmute"
 msgstr ""
 
-#: volumepopupbutton.cpp:119 volumepopupbutton.cpp:129
-msgid "(muted)"
-msgstr ""
-
 #: volumepopupbutton.cpp:118 volumepopupbutton.cpp:129
 #, fuzzy, kde-format
 #| msgid "Volume Up"
 msgid "Volume: %1% %2"
 msgstr "Баландкунии Овоз"
+
+#: volumepopupbutton.cpp:119 volumepopupbutton.cpp:129
+msgid "(muted)"
+msgstr ""
 
 #: webimagefetcher.cpp:84
 msgid "Searching for cover. Please Wait..."
@@ -1904,10 +1796,6 @@ msgstr ""
 #: webimagefetcher.cpp:189
 msgid "Cover fetched from <a href='http://last.fm/'>last.fm</a>."
 msgstr ""
-
-#: playlistcollection.h:183
-msgid "Playlist"
-msgstr "Рӯйхати бозикуниҳо"
 
 #, fuzzy
 #~ msgid "Cover Downloader"
