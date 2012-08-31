@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-28 08:20+0200\n"
+"POT-Creation-Date: 2012-08-31 07:33+0200\n"
 "PO-Revision-Date: 2005-09-17 12:55+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -78,7 +78,7 @@ msgctxt "@item Undefined import field type"
 msgid "Undefined"
 msgstr "Номаълум"
 
-#: contactfields.cpp:56
+#: contactfields.cpp:56 grantleecontactformatter.cpp:210
 msgid "Anniversary"
 msgstr "Солгард"
 
@@ -110,15 +110,15 @@ msgctxt "Fourth email address"
 msgid "EMail (4)"
 msgstr "Почтаи электронӣ"
 
-#: contactfields.cpp:155
+#: contactfields.cpp:155 grantleecontactformatter.cpp:253
 msgid "Blog Feed"
 msgstr ""
 
-#: contactfields.cpp:158
+#: contactfields.cpp:158 grantleecontactformatter.cpp:296
 msgid "Profession"
 msgstr "Ихтисос"
 
-#: contactfields.cpp:161
+#: contactfields.cpp:161 grantleecontactformatter.cpp:300
 msgid "Office"
 msgstr "Ҷои кор"
 
@@ -269,21 +269,65 @@ msgctxt "@info:status"
 msgid "%1 out of %2"
 msgstr ""
 
-#: grantleecontactformatter.cpp:214
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: grantleecontactformatter.cpp:199 printing/rbs_appearance.ui:99
+#, fuzzy
+msgid "Birthday"
+msgstr "Рӯзи таваллуд:"
+
+#: grantleecontactformatter.cpp:222
 #, fuzzy
 #| msgid "Email"
-msgctxt "a contact's email address"
-msgid "Email"
+msgid "Emails"
 msgstr "Почтаи электронӣ"
 
-#: grantleecontactformatter.cpp:351
+#: grantleecontactformatter.cpp:245
+msgid "Website"
+msgstr ""
+
+#: grantleecontactformatter.cpp:261 mainwidget.cpp:564
+#, fuzzy
+msgid "Address Book"
+msgstr "Китобҳои адресӣ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: grantleecontactformatter.cpp:275 printing/rbs_appearance.ui:112
+#, fuzzy
+#| msgid "Note:"
+msgid "Note"
+msgstr "Нишонот:"
+
+#: grantleecontactformatter.cpp:289
+msgid "Department"
+msgstr "Шӯъба"
+
+#: grantleecontactformatter.cpp:305
+msgid "Manager's Name"
+msgstr "Роҳбар"
+
+#: grantleecontactformatter.cpp:310
+#, fuzzy
+#| msgid "Assistant's name:"
+msgid "Assistant's Name"
+msgstr "Ёрдамчӣ:"
+
+#: grantleecontactformatter.cpp:315
+#, fuzzy
+msgid "Partner's Name"
+msgstr "Роҳбар"
+
+#: grantleecontactformatter.cpp:320
+msgid "IM Address"
+msgstr "Адреси IM "
+
+#: grantleecontactformatter.cpp:367
 #, fuzzy
 #| msgid "Types"
 msgctxt "Boolean value"
 msgid "yes"
 msgstr "Намудҳо"
 
-#: grantleecontactformatter.cpp:353
+#: grantleecontactformatter.cpp:369
 msgctxt "Boolean value"
 msgid "no"
 msgstr ""
@@ -499,11 +543,6 @@ msgstr "Содироти китоби адресӣ ба формати LDIF..."
 #, fuzzy
 msgid "Export contacts to a GMX address book file."
 msgstr "Китоби адресии %1"
-
-#: mainwidget.cpp:564
-#, fuzzy
-msgid "Address Book"
-msgstr "Китобҳои адресӣ"
 
 #: mainwidget.cpp:570 printing/printingwizard.cpp:56
 #, fuzzy
@@ -934,12 +973,6 @@ msgstr "Алоқа"
 msgid "Check this box if you want contact birthdays to be printed."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
-#: printing/rbs_appearance.ui:99
-#, fuzzy
-msgid "Birthday"
-msgstr "Рӯзи таваллуд:"
-
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
 #: printing/rbs_appearance.ui:106
 #, fuzzy
@@ -951,13 +984,6 @@ msgstr "Алоқа"
 #: printing/rbs_appearance.ui:109
 msgid "Check this box if you want contact notes to be printed."
 msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
-#: printing/rbs_appearance.ui:112
-#, fuzzy
-#| msgid "Note:"
-msgid "Note"
-msgstr "Нишонот:"
 
 #: printing/ringbinderstyle.cpp:150
 #, fuzzy
@@ -2071,9 +2097,6 @@ msgstr "Копӣ кардани алоқоти интихобшуда ба бу�
 #~ msgid "City"
 #~ msgstr "Шаҳр"
 
-#~ msgid "Department"
-#~ msgstr "Шӯъба"
-
 #~ msgid "Zip Code"
 #~ msgstr "Индекс"
 
@@ -2628,9 +2651,6 @@ msgstr "Копӣ кардани алоқоти интихобшуда ба бу�
 #~ msgid "Manager's name:"
 #~ msgstr "Роҳбар:"
 
-#~ msgid "Assistant's name:"
-#~ msgstr "Ёрдамчӣ:"
-
 #, fuzzy
 #~| msgid "Date"
 #~ msgid "Dates"
@@ -2971,17 +2991,6 @@ msgstr "Копӣ кардани алоқоти интихобшуда ба бу�
 
 #~ msgid "All Fields"
 #~ msgstr "Тамоми заминот"
-
-#~ msgid "Manager's Name"
-#~ msgstr "Роҳбар"
-
-#, fuzzy
-#~ msgctxt "Wife/Husband/..."
-#~ msgid "Partner's Name"
-#~ msgstr "Роҳбар"
-
-#~ msgid "IM Address"
-#~ msgstr "Адреси IM "
 
 #, fuzzy
 #~| msgid "Contact Headers"
