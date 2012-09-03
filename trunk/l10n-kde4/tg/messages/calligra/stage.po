@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-26 03:18+0200\n"
+"POT-Creation-Date: 2012-09-03 02:36+0200\n"
 "PO-Revision-Date: 2005-12-23 20:24-0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -35,11 +35,23 @@ msgstr "rkovacs@khujand.orgyouth_opportunities@tajik.net"
 msgid "Add custom slide show"
 msgstr "Намоиши Слайди муқаррарӣ"
 
-#: part/commands/KPrAnimationCreateCommand.cpp:34
+#: part/commands/KPrAnimationCreateCommand.cpp:32
 #, fuzzy
 #| msgid "Create HTML Presentation"
 msgctxt "(qtundo-format)"
 msgid "Create shape animation"
+msgstr "Сохтани Тақдими HTML"
+
+#: part/commands/KPrAnimationEditNodeTypeCommand.cpp:36
+msgctxt "(qtundo-format)"
+msgid "Edit animation trigger event"
+msgstr ""
+
+#: part/commands/KPrAnimationRemoveCommand.cpp:30
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgctxt "(qtundo-format)"
+msgid "Remove shape animation"
 msgstr "Сохтани Тақдими HTML"
 
 #: part/commands/KPrDelCustomSlideShowCommand.cpp:33
@@ -57,6 +69,11 @@ msgid "Delete slide"
 msgid_plural "Delete slides"
 msgstr[0] "Нобудкардани Слайд"
 msgstr[1] "Нобудкардани Слайд"
+
+#: part/commands/KPrEditAnimationTimeLineCommand.cpp:36
+msgctxt "(qtundo-format)"
+msgid "Edit animation delay/duration"
+msgstr ""
 
 #: part/commands/KPrEditCustomSlideShowsCommand.cpp:32
 #, fuzzy
@@ -89,6 +106,13 @@ msgstr "Нобудкардани Слайд"
 #| msgid "Define Custom Slide Show"
 msgid "Rename custom slide show"
 msgstr "Намоиши Слайди муқаррарӣ таъин кунед"
+
+#: part/commands/KPrReorderAnimationCommand.cpp:34
+#, fuzzy
+#| msgid "Modify Slide Transition"
+msgctxt "(qtundo-format)"
+msgid "Reorder animations"
+msgstr "Муҳаррири Аз Ҷое ба Ҷое гузарондани Слайд"
 
 #: part/dockers/KPrPageLayoutDocker.cpp:46
 #, fuzzy
@@ -343,6 +367,45 @@ msgstr "Сохтани Намоиши слайд HTML"
 #| msgid "Slide Show"
 msgid "End of Slide Show"
 msgstr "Намоиши Слайд"
+
+#: part/KPrShapeAnimations.cpp:173
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:237
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:537
+msgid "start on mouse click"
+msgstr ""
+
+#: part/KPrShapeAnimations.cpp:175
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:240
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:540
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "start after previous animation"
+msgstr "Сохтани Тақдими HTML"
+
+#: part/KPrShapeAnimations.cpp:177
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:243
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:543
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "start with previous animation"
+msgstr "Сохтани Тақдими HTML"
+
+#: part/KPrShapeAnimations.cpp:181
+#, kde-format
+msgid "Start after %1 seconds. Duration of %2 seconds"
+msgstr ""
+
+#: part/KPrShapeAnimations.cpp:197
+#: part/tools/animationtool/KPrAnimationToolFactory.cpp:33
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "Animation"
+msgstr "Сохтани Тақдими HTML"
+
+#. i18n: ectx: Menu (Insert Shape)
+#: part/KPrShapeAnimations.cpp:203 stage.rc:75
+msgid "Shape"
+msgstr "Андом"
 
 #: part/KPrSlidesSorterDocumentModel.cpp:299
 #, fuzzy
@@ -690,22 +753,79 @@ msgstr "Намоиши С&лайд"
 msgid "&Settings"
 msgstr "Танзимотҳои Роҳча"
 
-#: part/tools/animationtool/KPrAnimationTool.cpp:85
+#: part/tools/animationtool/KPrAnimationSelectorWidget.cpp:67
+#, fuzzy
+#| msgid "Automatic hyphenation"
+msgid "Automatic animation preview"
+msgstr "Гузаштани калимаҳо бо роҳи автоматӣ"
+
+#: part/tools/animationtool/KPrAnimationSelectorWidget.cpp:325
+#: part/tools/animationtool/KPrAnimationSelectorWidget.cpp:333
+#, fuzzy
+#| msgid "Presentation"
+msgid "Preview animation"
+msgstr "Тасаввурот"
+
+#: part/tools/animationtool/KPrAnimationTool.cpp:219
 #, fuzzy
 #| msgid "Modify Slide Transition"
 msgid "Slide Transitions"
 msgstr "Муҳаррири Аз Ҷое ба Ҷое гузарондани Слайд"
 
-#: part/tools/animationtool/KPrAnimationTool.cpp:87
+#: part/tools/animationtool/KPrAnimationTool.cpp:221
 #, fuzzy
 #| msgid "Create HTML Presentation"
 msgid "Shape Click Actions"
 msgstr "Сохтани Тақдими HTML"
 
-#: part/tools/animationtool/KPrAnimationToolFactory.cpp:33
+#: part/tools/animationtool/KPrAnimationTool.cpp:223
 #, fuzzy
 #| msgid "Create HTML Presentation"
-msgid "Animation"
+msgid "Shape Animations"
+msgstr "Сохтани Тақдими HTML"
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:70
+#, fuzzy
+#| msgid "Presentation duration: "
+msgid "Manage animation delay and duration: "
+msgstr "Давоми Тақдим: "
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:71
+#, fuzzy
+msgid "Start: "
+msgstr "&Нақша"
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:75
+msgid "on mouse click"
+msgstr ""
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:76
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "after previous animation"
+msgstr "Сохтани Тақдими HTML"
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:77
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "with previous animation"
+msgstr "Сохтани Тақдими HTML"
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:79
+msgid "Delay: "
+msgstr ""
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:84
+#, fuzzy
+#| msgid "Direction"
+msgid "Duration: "
+msgstr "Фиристодан"
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:91
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:143
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "Preview Shape Animation"
 msgstr "Сохтани Тақдими HTML"
 
 #: part/tools/animationtool/KPrPageEffectDocker.cpp:56
@@ -717,6 +837,83 @@ msgstr "Бе таъсир"
 #| msgid " seconds"
 msgid " sec"
 msgstr " сонияҳо"
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:181
+msgid "Entrance"
+msgstr ""
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:187
+msgid "Exit"
+msgstr ""
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:192
+msgid "Emphasis"
+msgstr ""
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:197
+#, fuzzy
+msgid "Custom"
+msgstr "Намоиши Слайди муқаррарӣ"
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:202
+msgid "Motion path"
+msgstr ""
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:207
+#, fuzzy
+#| msgid "Elevation:"
+msgid "Ole Action"
+msgstr "Баландӣ:"
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:212
+msgid "Media Call"
+msgstr ""
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:94
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:99
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:531
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "Edit animation"
+msgstr "Сохтани Тақдими HTML"
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:113
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "Add new animation"
+msgstr "Сохтани Тақдими HTML"
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:126
+#, fuzzy
+#| msgid "Remove Link"
+msgid "Remove animation"
+msgstr "Нобудкардани Банд"
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:130
+msgid "Order: "
+msgstr ""
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:133
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "Move animation up"
+msgstr "Сохтани Тақдими HTML"
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:138
+msgid "Move animation down"
+msgstr ""
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:529
+#, fuzzy
+#| msgid "Slideshow"
+msgid "Add a new animation"
+msgstr "Намоиши слайд"
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:530
+#, fuzzy
+#| msgid "Before Current Slide"
+msgid "Delete current animation"
+msgstr "Дар пеши Слайди Ҳозира"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgToolCrop)
 #: part/tools/animationtool/wdg_tool_crop.ui:16
@@ -2266,11 +2463,6 @@ msgstr "&Файл:"
 msgid "Line"
 msgstr "Хат"
 
-#. i18n: ectx: Menu (Insert Shape)
-#: stage.rc:75
-msgid "Shape"
-msgstr "Андом"
-
 #. i18n: ectx: Menu (Arrange Objects)
 #: stage.rc:93
 msgid "Arra&nge Objects"
@@ -2467,11 +2659,6 @@ msgstr "Тасаввурот"
 #~| msgid "Change Image Effect"
 #~ msgid "Click to preview the page effect."
 #~ msgstr "Дигаргун кардани Тасвири Таъсир"
-
-#, fuzzy
-#~| msgid "Direction"
-#~ msgid "Duration: "
-#~ msgstr "Фиристодан"
 
 #, fuzzy
 #~| msgid "Image &effect:"
@@ -2778,9 +2965,6 @@ msgstr "Тасаввурот"
 #, fuzzy
 #~ msgid "Determines the light source and direction"
 #~ msgstr "Муайян кардани манбаъи равшанӣ ва равиши он."
-
-#~ msgid "Elevation:"
-#~ msgstr "Баландӣ:"
 
 #~ msgid "Angle:"
 #~ msgstr "Кунҷ:"
@@ -3281,9 +3465,6 @@ msgstr "Тасаввурот"
 
 #~ msgid "Global language:"
 #~ msgstr "Забони глобалӣ:"
-
-#~ msgid "Automatic hyphenation"
-#~ msgstr "Гузаштани калимаҳо бо роҳи автоматӣ"
 
 #~ msgid "Create backup file"
 #~ msgstr "Сохтани файли нусхаи эҳтиёт"
@@ -3888,10 +4069,6 @@ msgstr "Тасаввурот"
 #~ "истифода бурда мумкин шавад.Слайдҳое,ки интихоб карда нашудаанд нишон "
 #~ "дода намешаванд дар нишондиҳии слайд.</p>"
 
-#, fuzzy
-#~ msgid "Custom slide:"
-#~ msgstr "Намоиши Слайди муқаррарӣ"
-
 #~ msgid "Arc"
 #~ msgstr "Камон"
 
@@ -3900,9 +4077,6 @@ msgstr "Тасаввурот"
 
 #~ msgid "Convex/Concave"
 #~ msgstr "Барҷаста/Фурӯ хамондашуда "
-
-#~ msgid "Presentation duration: "
-#~ msgstr "Давоми Тақдим: "
 
 #~ msgid "No."
 #~ msgstr "No."
@@ -4449,9 +4623,6 @@ msgstr "Тасаввурот"
 
 #~ msgid "Copy Link"
 #~ msgstr "Нусха бардоштани Банд"
-
-#~ msgid "Remove Link"
-#~ msgstr "Нобудкардани Банд"
 
 #~ msgid "Add to Bookmark"
 #~ msgstr "Иловаи ба Хатчӯб"
