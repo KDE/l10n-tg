@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-09-04 06:16+0200\n"
+"POT-Creation-Date: 2012-09-10 04:32+0200\n"
 "PO-Revision-Date: 2005-11-06 23:03+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -1303,7 +1303,7 @@ msgstr "Файл аз нав пур карда нашуд"
 msgid "KStars Exported Sky Image"
 msgstr "&Захира кардани тасвири осмон..."
 
-#: dialogs/exportimagedialog.cpp:177 main.cpp:95
+#: dialogs/exportimagedialog.cpp:177 main.cpp:96
 #: printing/foveditordialog.cpp:154
 #, kde-format
 msgid "Could not parse image format of %1; assuming PNG."
@@ -2847,56 +2847,51 @@ msgstr "Камтар кардан"
 msgid "&Apply"
 msgstr ""
 
-#: fitsviewer/fitsimage.cpp:137
+#: fitsviewer/fitsimage.cpp:165
 msgid "Please hold while loading FITS file..."
 msgstr ""
 
-#: fitsviewer/fitsimage.cpp:137 oal/oal.h:39
-#, fuzzy
-msgid "Cancel"
-msgstr "Каннес"
-
-#: fitsviewer/fitsimage.cpp:138
+#: fitsviewer/fitsimage.cpp:166
 #, fuzzy
 #| msgid "Loading FITS..."
 msgid "Loading FITS"
 msgstr "Пурборкунии FITS..."
 
-#: fitsviewer/fitsimage.cpp:147
+#: fitsviewer/fitsimage.cpp:177
 #, fuzzy, kde-format
 msgid "Could not open file %1 (fits_get_img_param). Error %2"
 msgstr "Наметавонам файли fov.dat барои наыишт кушод"
 
-#: fitsviewer/fitsimage.cpp:147 fitsviewer/fitsimage.cpp:162
-#: fitsviewer/fitsimage.cpp:168 fitsviewer/fitsimage.cpp:177
-#: fitsviewer/fitsimage.cpp:414
+#: fitsviewer/fitsimage.cpp:177 fitsviewer/fitsimage.cpp:194
+#: fitsviewer/fitsimage.cpp:200 fitsviewer/fitsimage.cpp:209
+#: fitsviewer/fitsimage.cpp:444
 #, fuzzy
 msgid "FITS Open"
 msgstr "Масштаби FITS"
 
-#: fitsviewer/fitsimage.cpp:162
+#: fitsviewer/fitsimage.cpp:194
 #, fuzzy, kde-format
 msgid "FITS file open error (fits_get_img_param): %1"
 msgstr "Файли FITS-ро нигоҳ доштан дар %1"
 
-#: fitsviewer/fitsimage.cpp:168
+#: fitsviewer/fitsimage.cpp:200
 msgid "1D FITS images are not supported in KStars."
 msgstr ""
 
-#: fitsviewer/fitsimage.cpp:177
+#: fitsviewer/fitsimage.cpp:209
 #, fuzzy, kde-format
 msgid "FITS file open error (fits_get_img_type): %1"
 msgstr "Файли FITS-ро нигоҳ доштан дар %1"
 
-#: fitsviewer/fitsimage.cpp:414
+#: fitsviewer/fitsimage.cpp:444
 msgid "FITS image is saturated and cannot be displayed."
 msgstr ""
 
-#: fitsviewer/fitstab.cpp:53 fitsviewer/fitsviewer.cpp:339
+#: fitsviewer/fitstab.cpp:53 fitsviewer/fitsviewer.cpp:345
 msgid "Save Changes to FITS?"
 msgstr "Таъғиротро дар FITS нигоҳ дорам?"
 
-#: fitsviewer/fitstab.cpp:54 fitsviewer/fitsviewer.cpp:340
+#: fitsviewer/fitstab.cpp:54 fitsviewer/fitsviewer.cpp:346
 msgid ""
 "The current FITS file has unsaved changes.  Would you like to save before "
 "closing it?"
@@ -2943,7 +2938,7 @@ msgstr "Хуш омадед ба KStars FITS Editor."
 msgid "Statistics"
 msgstr "Статистика"
 
-#: fitsviewer/fitsviewer.cpp:145 fitsviewer/fitsviewer.cpp:457
+#: fitsviewer/fitsviewer.cpp:145 fitsviewer/fitsviewer.cpp:463
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Merkers"
@@ -2955,18 +2950,24 @@ msgstr "Мейкерс"
 msgid "KStars FITS Viewer"
 msgstr "Хуш омадед ба KStars FITS Editor."
 
-#: fitsviewer/fitsviewer.cpp:194
+#: fitsviewer/fitsviewer.cpp:196
 msgid "Focus"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:240 fitsviewer/fitsviewer.cpp:464
+#: fitsviewer/fitsviewer.cpp:200
+#, fuzzy
+#| msgid "Guides"
+msgid "Guide"
+msgstr "Равонакунанда"
+
+#: fitsviewer/fitsviewer.cpp:246 fitsviewer/fitsviewer.cpp:470
 #, kde-format
 msgid "%1 star detected."
 msgid_plural "%1 stars detected."
 msgstr[0] ""
 msgstr[1] ""
 
-#: fitsviewer/fitsviewer.cpp:462
+#: fitsviewer/fitsviewer.cpp:468
 msgid "Unmark Stars"
 msgstr ""
 
@@ -3301,6 +3302,16 @@ msgstr ""
 "Дастгоҳои INDI ба кор дароварда нашудааст. Барои ба кор дарории онҳо ин "
 "дастгоҳҳоро дар менеҷери дастгоҳҳо интихоб кунед."
 
+#: indi/indiccd.cpp:286 indi/servermanager.cpp:74
+#, fuzzy
+msgid "Error making temporary filename."
+msgstr "Номи муҳаррирро ворид кунед"
+
+#: indi/indiccd.cpp:325
+#, kde-format
+msgid "FITS file saved to %1"
+msgstr "Файли FITS-ро нигоҳ доштан дар %1"
+
 #: indi/indielement.cpp:322
 msgid "INDI DATA STREAM"
 msgstr ""
@@ -3372,16 +3383,6 @@ msgstr "%1 дастрас."
 #, kde-format
 msgid "%1 is online and ready."
 msgstr "%1 барои ба сабтгири дастрасаст."
-
-#: indi/indistd.cpp:966 indi/servermanager.cpp:74
-#, fuzzy
-msgid "Error making temporary filename."
-msgstr "Номи муҳаррирро ворид кунед"
-
-#: indi/indistd.cpp:1005
-#, kde-format
-msgid "FITS file saved to %1"
-msgstr "Файли FITS-ро нигоҳ доштан дар %1"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, fitsLabel)
 #: indi/opsindi.ui:22
@@ -41487,7 +41488,7 @@ msgstr "KStars"
 #: main.cpp:47
 #, fuzzy
 #| msgid "(c) 2001-2003, The KStars Team"
-msgid "(c) 2001-2009, The KStars Team"
+msgid "(c) 2001-2012, The KStars Team"
 msgstr "(c) 2001-2003, Гурӯҳӣ KStars"
 
 #: main.cpp:48
@@ -41586,70 +41587,81 @@ msgid "Technical documentation on Astronomy and KStars"
 msgstr ""
 
 #: main.cpp:67
+#, fuzzy
+#| msgctxt "City name (optional, probably does not need a translation)"
+#| msgid "Alexander City"
+msgid "Alexander Stepanenko"
+msgstr "Александр Сити"
+
+#: main.cpp:67
+msgid "Guiding code based on lin_guider"
+msgstr ""
+
+#: main.cpp:68
 msgid "Nuno Pinheiro"
 msgstr ""
 
-#: main.cpp:67
+#: main.cpp:68
 msgid "Artwork"
 msgstr ""
 
-#: main.cpp:71
+#: main.cpp:72
 #, fuzzy
 msgid "Dump sky image to file"
 msgstr "нусхаи тасвири осмонро дар файл бардоред"
 
-#: main.cpp:72
+#: main.cpp:73
 #, fuzzy
 msgid "Script to execute"
 msgstr "нусхаи асл барои иҷро кардан"
 
-#: main.cpp:73
+#: main.cpp:74
 #, fuzzy
 msgid "Width of sky image"
 msgstr "вусъатӣ тасвири осмон"
 
-#: main.cpp:74
+#: main.cpp:75
 #, fuzzy
 msgid "Height of sky image"
 msgstr "баландии тасвири осмон"
 
-#: main.cpp:75
+#: main.cpp:76
 #, fuzzy
 msgid "Filename for sky image"
 msgstr "номи файл дар тасвири осмон"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, InputComboBatch)
-#: main.cpp:76 tools/modcalcjd.ui:120
+#: main.cpp:77 tools/modcalcjd.ui:120
 #, fuzzy
 msgid "Date and time"
 msgstr "Рӯз ва вақт"
 
-#: main.cpp:77
+#: main.cpp:78
 msgid "Start with clock paused"
 msgstr ""
 
-#: main.cpp:84
+#: main.cpp:85
 msgid "Dumping sky image"
 msgstr "Нусхабардории тасвири осмон"
 
-#: main.cpp:136 main.cpp:192
+#: main.cpp:137 main.cpp:193
 msgid "Using CPU date/time instead."
 msgstr "CPU барои таърих/вақташ ҳам истифода кунед."
 
-#: main.cpp:165
+#: main.cpp:166
 msgid "Script executed."
 msgstr "Нусхаи аслаш иҷро карда шуд."
 
-#: main.cpp:167
+#: main.cpp:168
 msgid "Could not execute script."
 msgstr "Наметавонам дастнависро ҳал кунеам."
 
-#: main.cpp:176
+#: main.cpp:177
 #, kde-format
 msgid "Unable to save image: %1 "
 msgstr "Тасвирро нигоҳ дашта натавонист:%1 "
 
-#: main.cpp:177
+#: main.cpp:178
 #, kde-format
 msgid "Saved to file: %1"
 msgstr "Дар файли %1 нигоҳ дошатшудааст:"
@@ -42148,6 +42160,11 @@ msgstr "&Ғарб"
 #| msgid "&Overwrite"
 msgid "Overwrite"
 msgstr "&Иваз кардан"
+
+#: oal/oal.h:39
+#, fuzzy
+msgid "Cancel"
+msgstr "Каннес"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, ObserverAdd)
 #. i18n: ectx: property (text), widget (QPushButton, AddObserver)
