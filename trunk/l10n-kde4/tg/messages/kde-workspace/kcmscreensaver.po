@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmscreensaver\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-20 05:29+0200\n"
+"POT-Creation-Date: 2012-09-22 05:03+0200\n"
 "PO-Revision-Date: 2009-01-16 13:47+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik\n"
@@ -77,25 +77,20 @@ msgctxt "Screen saver category"
 msgid "Visit to Flatland"
 msgstr "Ба дашт ташриф кардан"
 
-#. i18n: ectx: property (title), widget (QGroupBox, mSettingsGroup)
-#: screensaver.ui:70
-msgid "Settings"
-msgstr "Танзимотҳо"
-
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mEnabledCheckBox)
-#: screensaver.ui:76
+#: screensaver.ui:29
 msgid "Automatically start the screen saver after a period of inactivity."
 msgstr "Автоматически запускать хранитель экрана после периода неактивности."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mEnabledCheckBox)
-#: screensaver.ui:79
+#: screensaver.ui:32
 #, fuzzy
 #| msgid "Start a&utomatically"
 msgid "Start a&utomatically after:"
 msgstr "&Фаъолсозии худкор"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mLockCheckBox)
-#: screensaver.ui:102
+#: screensaver.ui:55
 msgid ""
 "Prevent potential unauthorized use by requiring a password to stop the "
 "screen saver."
@@ -104,14 +99,14 @@ msgstr ""
 "пароля для остановки хранителя экрана."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mLockCheckBox)
-#: screensaver.ui:105
+#: screensaver.ui:58
 #, fuzzy
 #| msgid "&Require password to stop"
 msgid "&Require password after:"
 msgstr "Т&ребовать пароль для остановки"
 
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, mWaitLockEdit)
-#: screensaver.ui:112
+#: screensaver.ui:65
 msgid ""
 "The amount of time, after the screen saver has started, to ask for the "
 "unlock password."
@@ -119,52 +114,59 @@ msgstr ""
 "Промежуток времени после запуска хранителя экрана, через который должен "
 "запрашиваться пароль."
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, mPlasmaCheckBox)
-#: screensaver.ui:132
-#, fuzzy
-#| msgid "Add widgets to your screensaver"
-msgid "Add widgets to your screensaver."
-msgstr "Добавить виджеты на хранитель экрана..."
-
-#. i18n: ectx: property (text), widget (QCheckBox, mPlasmaCheckBox)
-#: screensaver.ui:135
-msgid "Allow widgets on screen saver"
-msgstr "Разрешить помещать виджеты на хранитель экрана"
-
-#. i18n: ectx: property (text), widget (KPushButton, mPlasmaSetup)
-#: screensaver.ui:160
-msgid "Configure Widgets..."
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: screensaver.ui:87
+msgid "&Screen locker type:"
 msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: screensaver.ui:185
-msgid "Screen Saver"
+#. i18n: ectx: property (text), widget (QRadioButton, mSimpleLockerRadio)
+#: screensaver.ui:97
+msgid "S&imple locker"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, mPlasmaWidgetsRadio)
+#: screensaver.ui:109
+#, fuzzy
+#| msgid "Desktop Widgets"
+msgid "&Desktop Widgets"
+msgstr "Таҳриф шуданиҳои мизи корӣ"
+
+#. i18n: ectx: property (text), widget (KPushButton, mPlasmaSetup)
+#: screensaver.ui:119
+msgid "Configure..."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, mScreenSaverRadio)
+#: screensaver.ui:128
+#, fuzzy
+#| msgid "Screen Saver"
+msgid "S&creen saver"
 msgstr "Пардаи экран"
 
+#. i18n: ectx: property (whatsThis), widget (QTreeWidget, mSaverListView)
+#: screensaver.ui:163
+msgid "Select the screen saver to use."
+msgstr "Выберите используемый хранитель экрана."
+
 #. i18n: ectx: property (whatsThis), widget (KPushButton, mTestBt)
-#: screensaver.ui:207
+#: screensaver.ui:233
 msgid "Show a full screen preview of the screen saver."
 msgstr "Предварительный полноэкранный просмотр хранителя экрана."
 
 #. i18n: ectx: property (text), widget (KPushButton, mTestBt)
-#: screensaver.ui:210
+#: screensaver.ui:236
 msgid "&Test"
 msgstr "&Имтоҳон"
 
 #. i18n: ectx: property (whatsThis), widget (KPushButton, mSetupBt)
-#: screensaver.ui:220
+#: screensaver.ui:246
 msgid "Configure the screen saver's options, if any."
 msgstr "Настройка параметров хранителя экрана (если такие есть)."
 
 #. i18n: ectx: property (text), widget (KPushButton, mSetupBt)
-#: screensaver.ui:223
+#: screensaver.ui:249
 msgid "&Setup..."
 msgstr "&Гузоштан ..."
-
-#. i18n: ectx: property (whatsThis), widget (QTreeWidget, mSaverListView)
-#: screensaver.ui:230
-msgid "Select the screen saver to use."
-msgstr "Выберите используемый хранитель экрана."
 
 #: scrnsave.cpp:115
 msgid ""
@@ -232,9 +234,20 @@ msgstr "Chris Howells"
 msgid "Martin R. Jones"
 msgstr "Martin R. Jones"
 
-#: scrnsave.cpp:382
+#: scrnsave.cpp:394
 msgid "Loading..."
 msgstr "Пурборкунӣ..."
+
+#~ msgid "Settings"
+#~ msgstr "Танзимотҳо"
+
+#, fuzzy
+#~| msgid "Add widgets to your screensaver"
+#~ msgid "Add widgets to your screensaver."
+#~ msgstr "Добавить виджеты на хранитель экрана..."
+
+#~ msgid "Allow widgets on screen saver"
+#~ msgstr "Разрешить помещать виджеты на хранитель экрана"
 
 #~ msgid "Advanced Options"
 #~ msgstr "Интихобҳои иловагӣ"
@@ -327,11 +340,6 @@ msgstr "Пурборкунӣ..."
 
 #~ msgid "Setup..."
 #~ msgstr "Танзимот..."
-
-#~| msgctxt "Screen saver category"
-#~| msgid "Desktop Distortions"
-#~ msgid "Desktop Widgets"
-#~ msgstr "Таҳриф шуданиҳои мизи корӣ"
 
 #, fuzzy
 #~ msgid "Screen saver category"
