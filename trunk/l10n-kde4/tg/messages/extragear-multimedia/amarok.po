@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-19 02:01+0100\n"
+"POT-Creation-Date: 2012-11-20 02:24+0100\n"
 "PO-Revision-Date: 2009-01-20 18:25+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -11881,36 +11881,32 @@ msgstr "Хизматҳо"
 msgid "Sets the preferred duration of the playlist"
 msgstr ""
 
-#: playlistgenerator/constraints/PlaylistDuration.cpp:116
+#: playlistgenerator/constraints/PlaylistDuration.cpp:118
 #, fuzzy, kde-format
 #| msgid "Settings"
-msgid "Playlist duration: %1 %2"
+msgctxt "%1 is a length of time (e.g. 5:00 for 5 minutes)"
+msgid "Playlist duration: equals %1"
 msgstr "Хизматҳо"
 
-#: playlistgenerator/constraints/PlaylistDuration.cpp:156
-msgctxt "duration of playlist equals some time"
-msgid "equals"
-msgstr ""
+#: playlistgenerator/constraints/PlaylistDuration.cpp:120
+#, fuzzy, kde-format
+#| msgid "Settings"
+msgctxt "%1 is a length of time (e.g. 5:00 for 5 minutes)"
+msgid "Playlist duration: more than %1"
+msgstr "Хизматҳо"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
-#: playlistgenerator/constraints/PlaylistDuration.cpp:158
-#: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:49
-msgid "longer than"
-msgstr ""
+#: playlistgenerator/constraints/PlaylistDuration.cpp:122
+#, fuzzy, kde-format
+#| msgid "Settings"
+msgctxt "%1 is a length of time (e.g. 5:00 for 5 minutes)"
+msgid "Playlist duration: less than %1"
+msgstr "Хизматҳо"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
-#: playlistgenerator/constraints/PlaylistDuration.cpp:160
-#: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:39
-msgid "shorter than"
-msgstr ""
-
-#: playlistgenerator/constraints/PlaylistDuration.cpp:162
-#: playlistgenerator/constraints/PlaylistFileSize.cpp:167
-#: playlistgenerator/constraints/PlaylistLength.cpp:156
-#: playlistgenerator/constraints/TagMatch.cpp:363
-#: widgets/MetaQueryWidget.cpp:989
-msgid "unknown comparison"
-msgstr ""
+#: playlistgenerator/constraints/PlaylistDuration.cpp:124
+#, fuzzy
+#| msgid "Settings"
+msgid "Playlist duration: unknown"
+msgstr "Хизматҳо"
 
 #. i18n: ectx: property (whatsThis), widget (QWidget, PlaylistDurationEditWidget)
 #: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:15
@@ -11936,6 +11932,11 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
+#: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:39
+msgid "shorter than"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonInt)
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonTime)
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonRating)
@@ -11946,6 +11947,11 @@ msgstr ""
 #: playlistgenerator/constraints/TagMatchEditWidget.ui:472
 #: playlistgenerator/constraints/TagMatchEditWidget.ui:609
 msgid "equal to"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
+#: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:49
+msgid "longer than"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, timeEdit_Duration)
@@ -11977,41 +11983,32 @@ msgstr "&Рӯйхати мусиқӣ"
 msgid "Sets the preferred total file size of the playlist"
 msgstr ""
 
-#: playlistgenerator/constraints/PlaylistFileSize.cpp:118
-#, kde-format
-msgctxt ""
-"%2 is e.g. 'more than' or 'less than' or 'equals'; %1 is a file size (e.g. "
-"50 MB)"
-msgid "Total File Size of Playlist: %2 %1"
-msgstr ""
+#: playlistgenerator/constraints/PlaylistFileSize.cpp:119
+#, fuzzy, kde-format
+#| msgid "&Playlist"
+msgctxt "%1 is a file size (e.g. 50 MB)"
+msgid "Total file size of playlist: equals %1"
+msgstr "&Рӯйхати мусиқӣ"
 
-#: playlistgenerator/constraints/PlaylistFileSize.cpp:161
-msgctxt "total file size of playlist equals some number"
-msgid "equals"
-msgstr ""
+#: playlistgenerator/constraints/PlaylistFileSize.cpp:121
+#, fuzzy, kde-format
+#| msgid "&Playlist"
+msgctxt "%1 is a file size (e.g. 50 MB)"
+msgid "Total file size of playlist: more than %1"
+msgstr "&Рӯйхати мусиқӣ"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
-#: playlistgenerator/constraints/PlaylistFileSize.cpp:163
-#: playlistgenerator/constraints/PlaylistFileSizeEditWidget.ui:49
-#: playlistgenerator/constraints/PlaylistLength.cpp:152
-#: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:49
-msgid "more than"
-msgstr ""
+#: playlistgenerator/constraints/PlaylistFileSize.cpp:123
+#, fuzzy, kde-format
+#| msgid "&Playlist"
+msgctxt "%1 is a file size (e.g. 50 MB)"
+msgid "Total file size of playlist: less than %1"
+msgstr "&Рӯйхати мусиқӣ"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonInt)
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonTime)
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonRating)
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
-#: playlistgenerator/constraints/PlaylistFileSize.cpp:165
-#: playlistgenerator/constraints/PlaylistFileSizeEditWidget.ui:39
-#: playlistgenerator/constraints/PlaylistLength.cpp:154
-#: playlistgenerator/constraints/TagMatch.cpp:338
-#: playlistgenerator/constraints/TagMatchEditWidget.ui:113
-#: playlistgenerator/constraints/TagMatchEditWidget.ui:467
-#: playlistgenerator/constraints/TagMatchEditWidget.ui:604
-#: widgets/MetaQueryWidget.cpp:966
-msgid "less than"
-msgstr ""
+#: playlistgenerator/constraints/PlaylistFileSize.cpp:125
+#, fuzzy
+#| msgid "&Playlist"
+msgid "Total file size of playlist: unknown"
+msgstr "&Рӯйхати мусиқӣ"
 
 #. i18n: ectx: property (whatsThis), widget (QWidget, PlaylistLengthEditWidget)
 #. i18n: ectx: property (whatsThis), widget (QWidget, PlaylistFileSizeEditWidget)
@@ -12036,6 +12033,25 @@ msgstr "&Хизматҳо"
 msgid ""
 "Whether the total size of all files in the generated playlist should be less "
 "than, equal to, or more than the specified value."
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonInt)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonTime)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonRating)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
+#: playlistgenerator/constraints/PlaylistFileSizeEditWidget.ui:39
+#: playlistgenerator/constraints/TagMatch.cpp:338
+#: playlistgenerator/constraints/TagMatchEditWidget.ui:113
+#: playlistgenerator/constraints/TagMatchEditWidget.ui:467
+#: playlistgenerator/constraints/TagMatchEditWidget.ui:604
+#: widgets/MetaQueryWidget.cpp:966
+msgid "less than"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
+#: playlistgenerator/constraints/PlaylistFileSizeEditWidget.ui:49
+#: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:49
+msgid "more than"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, spinBox_Size)
@@ -12087,19 +12103,32 @@ msgstr "&Рӯйхати мусиқӣ"
 msgid "Sets the preferred number of tracks in the playlist"
 msgstr ""
 
-#: playlistgenerator/constraints/PlaylistLength.cpp:116
+#: playlistgenerator/constraints/PlaylistLength.cpp:118
 #, fuzzy, kde-format
 #| msgid "Settings"
-msgctxt "%2 is e.g. 'more than' or 'less than' or 'equals'"
-msgid "Playlist length: %2 1 track"
-msgid_plural "Playlist length: %2 %1 tracks"
-msgstr[0] "Хизматҳо"
-msgstr[1] "Хизматҳо"
+msgctxt "%1 is a number"
+msgid "Playlist length: %1 tracks"
+msgstr "Хизматҳо"
 
-#: playlistgenerator/constraints/PlaylistLength.cpp:150
-msgctxt "number of tracks in playlist equals some number"
-msgid "equals"
-msgstr ""
+#: playlistgenerator/constraints/PlaylistLength.cpp:120
+#, fuzzy, kde-format
+#| msgid "Settings"
+msgctxt "%1 is a number"
+msgid "Playlist length: more than %1 tracks"
+msgstr "Хизматҳо"
+
+#: playlistgenerator/constraints/PlaylistLength.cpp:122
+#, fuzzy, kde-format
+#| msgid "Settings"
+msgctxt "%1 is a number"
+msgid "Playlist length: less than %1 tracks"
+msgstr "Хизматҳо"
+
+#: playlistgenerator/constraints/PlaylistLength.cpp:124
+#, fuzzy
+#| msgid "&Playlist"
+msgid "Playlist length: unknown"
+msgstr "&Рӯйхати мусиқӣ"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:21
@@ -12310,6 +12339,11 @@ msgstr ""
 
 #: playlistgenerator/constraints/TagMatch.cpp:360
 msgid "regexp"
+msgstr ""
+
+#: playlistgenerator/constraints/TagMatch.cpp:363
+#: widgets/MetaQueryWidget.cpp:989
+msgid "unknown comparison"
 msgstr ""
 
 #: playlistgenerator/constraints/TagMatch.cpp:376
