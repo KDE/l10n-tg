@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-01-12 03:06+0100\n"
+"POT-Creation-Date: 2013-01-14 03:11+0100\n"
 "PO-Revision-Date: 2005-11-06 23:03+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -174,7 +174,7 @@ msgstr ""
 msgid "Visible Satellites"
 msgstr "Спутникҳои Галилееви"
 
-#: colorscheme.cpp:78 kstarsactions.cpp:444
+#: colorscheme.cpp:78 kstarsactions.cpp:446
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Pantelleria"
@@ -188,7 +188,7 @@ msgstr "Пантеллерия"
 msgid "Satellites Labels"
 msgstr "Пантеллерия"
 
-#: colorscheme.cpp:80 dialogs/finddialog.cpp:47 kstarsactions.cpp:445
+#: colorscheme.cpp:80 dialogs/finddialog.cpp:47 kstarsactions.cpp:447
 #, fuzzy
 #| msgid "Supernova Remnant"
 msgid "Supernovae"
@@ -231,7 +231,7 @@ msgstr ""
 "Нақша наметавонад қайд шавад."
 
 #: colorscheme.cpp:233 colorscheme.cpp:248 dialogs/locationdialog.cpp:265
-#: indi/drivermanager.cpp:1333 indi/indidriver.cpp:936 kstarsactions.cpp:662
+#: indi/drivermanager.cpp:1333 indi/indidriver.cpp:936 kstarsactions.cpp:677
 #: oal/execute.cpp:278 options/opscolors.cpp:199 skymap.cpp:1093
 #: tools/modcalcaltaz.cpp:238 tools/modcalcangdist.cpp:128
 #: tools/modcalcapcoord.cpp:151 tools/modcalcdaylength.cpp:246
@@ -400,14 +400,14 @@ msgid "Catalog Preview"
 msgstr "Пешнамоиши Каталог"
 
 #: dialogs/addcatdialog.cpp:213 fitsviewer/fitstab.cpp:258 imageviewer.cpp:240
-#: kstarsactions.cpp:585 printing/pwizprint.cpp:86
+#: kstarsactions.cpp:587 printing/pwizprint.cpp:86
 #: tools/scriptbuilder.cpp:1042
 #, kde-format
 msgid "A file named \"%1\" already exists. Overwrite it?"
 msgstr "Файл бо номи \"%1\"аллакай вуҷуд дорад. Шумо мехоҳед ӯро иваз кунед?"
 
 #: dialogs/addcatdialog.cpp:215 fitsviewer/fitstab.cpp:260 imageviewer.cpp:242
-#: kstarsactions.cpp:586 printing/pwizprint.cpp:87
+#: kstarsactions.cpp:588 printing/pwizprint.cpp:87
 #: tools/scriptbuilder.cpp:1044
 msgid "Overwrite File?"
 msgstr "Файлро иваз кунам?"
@@ -807,7 +807,7 @@ msgstr "д/н"
 msgid "Links"
 msgstr "Истинодот"
 
-#: dialogs/detaildialog.cpp:594 kstarsactions.cpp:462
+#: dialogs/detaildialog.cpp:594 kstarsactions.cpp:464
 msgid "Advanced"
 msgstr "Маълумот"
 
@@ -1258,108 +1258,79 @@ msgstr "Баланди ниспирӯзӣ:"
 msgid "Azimuth at rise:"
 msgstr "Кунҷи азимут"
 
-#: dialogs/exportimagedialog.cpp:46
+#: dialogs/exportimagedialog.cpp:47
 #, fuzzy
 #| msgid "&Save Sky Image..."
 msgid "Export sky image"
 msgstr "&Захира кардани тасвири осмон..."
 
-#: dialogs/exportimagedialog.cpp:104 indi/streamwg.cpp:178
-#: kstarsactions.cpp:634 printing/foveditordialog.cpp:173
-#: tools/scriptbuilder.cpp:1072
-#, kde-format
-msgid "Could not upload image to remote location: %1"
-msgstr "Натавонистам тасвири дур бударо иҷро кард: %1"
-
-#: dialogs/exportimagedialog.cpp:105 indi/streamwg.cpp:179
-#: kstarsactions.cpp:635 printing/foveditordialog.cpp:174
-#: printing/pwizprint.cpp:131 tools/scriptbuilder.cpp:1073
-msgid "Could not upload file"
-msgstr "Файл аз нав пур карда нашуд"
-
-#: dialogs/exportimagedialog.cpp:143 dialogs/exportimagedialog.cpp:144
-#, fuzzy
-#| msgid "&Save Sky Image..."
-msgid "KStars Exported Sky Image"
-msgstr "&Захира кардани тасвири осмон..."
-
-#: dialogs/exportimagedialog.cpp:177 main.cpp:96
-#: printing/foveditordialog.cpp:154
-#, kde-format
-msgid "Could not parse image format of %1; assuming PNG."
-msgstr "Нақшаи тасвири %1 ислоҳ карда натавонист; фарз кардани PNG."
-
-#: dialogs/exportimagedialog.cpp:241 printing/foveditordialog.cpp:159
-#, kde-format
-msgid "Error: Unable to save image: %1 "
-msgstr "Хатогӣ: Тасвирро нигоҳ дошта натавонист:%1 "
-
-#: dialogs/exportimagedialog.cpp:246 printing/foveditordialog.cpp:164
-#, kde-format
-msgid "Image saved to file: %1"
-msgstr "Тасвир дар файл нигоҳ доштааст: %1"
-
-#: dialogs/exportimagedialog.cpp:253
+#: dialogs/exportimagedialog.cpp:82
 #, fuzzy
 #| msgid "Preview of %1"
 msgid "Preview image"
 msgstr "Пешнамоиши %1"
 
-#: dialogs/exportimagedialog.cpp:254
+#: dialogs/exportimagedialog.cpp:83
 #, fuzzy
 msgid "Export image"
 msgstr "Кастор"
 
-#: dialogs/exportimagedialog.cpp:258 printing/pwizfovconfig.cpp:68
+#: dialogs/exportimagedialog.cpp:87 printing/pwizfovconfig.cpp:68
 #, fuzzy
 msgid "Horizontal"
 msgstr "Уфуқ"
 
-#: dialogs/exportimagedialog.cpp:259 printing/pwizfovconfig.cpp:69
+#: dialogs/exportimagedialog.cpp:88 printing/pwizfovconfig.cpp:69
 #, fuzzy
 #| msgctxt "Advanced URLs: description or category"
 #| msgid "Optical"
 msgid "Vertical"
 msgstr "Оптикавӣ"
 
-#: dialogs/exportimagedialog.cpp:262
+#: dialogs/exportimagedialog.cpp:91
 msgid "Full legend"
 msgstr ""
 
-#: dialogs/exportimagedialog.cpp:262 printing/pwizfovconfig.cpp:65
+#: dialogs/exportimagedialog.cpp:91 printing/pwizfovconfig.cpp:65
 msgid "Scale with magnitudes chart"
 msgstr ""
 
-#: dialogs/exportimagedialog.cpp:262 printing/pwizfovconfig.cpp:65
+#: dialogs/exportimagedialog.cpp:91 printing/pwizfovconfig.cpp:65
 msgid "Only scale"
 msgstr ""
 
-#: dialogs/exportimagedialog.cpp:263
+#: dialogs/exportimagedialog.cpp:92
 #, fuzzy
 msgid "Only magnitudes"
 msgstr "Вусъат:"
 
-#: dialogs/exportimagedialog.cpp:263
+#: dialogs/exportimagedialog.cpp:92
 #, fuzzy
 #| msgid "&FOV Symbols"
 msgid "Only symbols"
 msgstr "&Рамзҳои FOV"
 
-#: dialogs/exportimagedialog.cpp:267 printing/pwizfovconfig.cpp:72
+#: dialogs/exportimagedialog.cpp:96 printing/pwizfovconfig.cpp:72
 msgid "Upper left corner"
 msgstr ""
 
-#: dialogs/exportimagedialog.cpp:267 printing/pwizfovconfig.cpp:72
+#: dialogs/exportimagedialog.cpp:96 printing/pwizfovconfig.cpp:72
 msgid "Upper right corner"
 msgstr ""
 
-#: dialogs/exportimagedialog.cpp:267 printing/pwizfovconfig.cpp:72
+#: dialogs/exportimagedialog.cpp:96 printing/pwizfovconfig.cpp:72
 msgid "Lower left corner"
 msgstr ""
 
-#: dialogs/exportimagedialog.cpp:268 printing/pwizfovconfig.cpp:73
+#: dialogs/exportimagedialog.cpp:97 printing/pwizfovconfig.cpp:73
 msgid "Lower right corner"
 msgstr ""
+
+#: dialogs/exportimagedialog.cpp:128
+#, fuzzy
+#| msgid "Could not upload file"
+msgid "Could not export image"
+msgstr "Файл аз нав пур карда нашуд"
 
 #. i18n: ectx: property (title), widget (QGroupBox, legendGroupBox)
 #: dialogs/exportimagedialog.ui:17
@@ -1401,7 +1372,7 @@ msgstr "Ҳар кадом"
 msgid "Stars"
 msgstr "Ситораҳо"
 
-#: dialogs/finddialog.cpp:38 kstarsactions.cpp:443 kstarsinit.cpp:398
+#: dialogs/finddialog.cpp:38 kstarsactions.cpp:445 kstarsinit.cpp:398
 #: tools/astrocalc.cpp:167 tools/conjunctions.cpp:75
 msgid "Solar System"
 msgstr "Системаи Офтобӣ"
@@ -2233,7 +2204,7 @@ msgstr ""
 "аст."
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel6_2_2_2)
-#: dialogs/newfov.ui:289 kstarsactions.cpp:880
+#: dialogs/newfov.ui:289 kstarsactions.cpp:895
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Evergreen"
@@ -3186,7 +3157,7 @@ msgid "Guider port from %1 is ready."
 msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, EkosManager)
-#: ekos/ekosmanager.ui:14 kstarsactions.cpp:454 kstarsinit.cpp:384
+#: ekos/ekosmanager.ui:14 kstarsactions.cpp:456 kstarsinit.cpp:384
 msgid "Ekos"
 msgstr ""
 
@@ -4389,6 +4360,38 @@ msgstr ""
 msgid "Could not open fov.dat."
 msgstr "fov.dat.-ро кушода натавонист!"
 
+#: imageexporter.cpp:51 imageexporter.cpp:52
+#, fuzzy
+#| msgid "&Save Sky Image..."
+msgid "KStars Exported Sky Image"
+msgstr "&Захира кардани тасвири осмон..."
+
+#: imageexporter.cpp:85 main.cpp:96 printing/foveditordialog.cpp:154
+#, kde-format
+msgid "Could not parse image format of %1; assuming PNG."
+msgstr "Нақшаи тасвири %1 ислоҳ карда натавонист; фарз кардани PNG."
+
+#: imageexporter.cpp:156 printing/foveditordialog.cpp:159
+#, kde-format
+msgid "Error: Unable to save image: %1 "
+msgstr "Хатогӣ: Тасвирро нигоҳ дошта натавонист:%1 "
+
+#: imageexporter.cpp:163 printing/foveditordialog.cpp:164
+#, kde-format
+msgid "Image saved to file: %1"
+msgstr "Тасвир дар файл нигоҳ доштааст: %1"
+
+#: imageexporter.cpp:232 indi/streamwg.cpp:178 kstarsactions.cpp:649
+#: printing/foveditordialog.cpp:173 tools/scriptbuilder.cpp:1072
+#, kde-format
+msgid "Could not upload image to remote location: %1"
+msgstr "Натавонистам тасвири дур бударо иҷро кард: %1"
+
+#: imageexporter.cpp:240
+#, kde-format
+msgid "Could not export image: URL %1 invalid"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QPushButton, SaveImage)
 #: imageviewer.cpp:74 tools/observinglist.ui:580
 #, fuzzy
@@ -5005,6 +5008,12 @@ msgstr "Гирифтани расм"
 msgid "Image Format"
 msgstr "Андозаи тасвир"
 
+#: indi/streamwg.cpp:179 kstarsactions.cpp:650
+#: printing/foveditordialog.cpp:174 printing/pwizprint.cpp:131
+#: tools/scriptbuilder.cpp:1073
+msgid "Could not upload file"
+msgstr "Файл аз нав пур карда нашуд"
+
 #. i18n: ectx: property (windowTitle), widget (QDialog, telescopeWizard)
 #: indi/telescopewizard.ui:31 indi/telescopewizardprocess.cpp:233
 #: indi/telescopewizardprocess.cpp:243
@@ -5380,17 +5389,17 @@ msgstr "Интихоб кунед ҳамаи баданҳои умуми"
 msgid "Center Crosshair"
 msgstr "Мутамарказ ва пайваст кардан"
 
-#: kstars.cpp:165 kstarsactions.cpp:815 skymap.cpp:410
+#: kstars.cpp:165 kstarsactions.cpp:830 skymap.cpp:410
 msgid "Stop &Tracking"
 msgstr "&Аз кор мондани соат"
 
-#: kstars.cpp:170 kstarsactions.cpp:921 kstarsinit.cpp:232
+#: kstars.cpp:170 kstarsactions.cpp:936 kstarsinit.cpp:232
 #, fuzzy
 #| msgid "Horizontal &Coordinates"
 msgid "Switch to horizonal view (Horizontal &Coordinates)"
 msgstr "&Координатаҳои уфуқӣ"
 
-#: kstars.cpp:170 kstarsactions.cpp:927 kstarsinit.cpp:232
+#: kstars.cpp:170 kstarsactions.cpp:942 kstarsinit.cpp:232
 #, fuzzy
 #| msgid "Equatorial &Coordinates"
 msgid "Switch to star globe view (Equatorial &Coordinates)"
@@ -41976,63 +41985,63 @@ msgctxt "Advanced URLs: description or category"
 msgid "Other"
 msgstr "Дигар"
 
-#: kstarsactions.cpp:174
+#: kstarsactions.cpp:176
 msgid "Refraction effects disabled"
 msgstr ""
 
-#: kstarsactions.cpp:175
+#: kstarsactions.cpp:177
 msgid ""
 "When the horizon is switched off, refraction effects are temporarily "
 "disabled."
 msgstr ""
 
-#: kstarsactions.cpp:330 kstarsactions.cpp:345 kstarsactions.cpp:357
-#: kstarsactions.cpp:372
+#: kstarsactions.cpp:332 kstarsactions.cpp:347 kstarsactions.cpp:359
+#: kstarsactions.cpp:374
 msgid ""
 "Unable to find INDI server. Please make sure the package that provides the "
 "'indiserver' binary is installed."
 msgstr ""
 
-#: kstarsactions.cpp:442
+#: kstarsactions.cpp:444
 msgid "Catalogs"
 msgstr "Рӯйхатҳо"
 
-#: kstarsactions.cpp:446
+#: kstarsactions.cpp:448
 msgid "Guides"
 msgstr "Равонакунанда"
 
-#: kstarsactions.cpp:447
+#: kstarsactions.cpp:449
 msgid "Colors"
 msgstr "Рангҳо"
 
-#: kstarsactions.cpp:451
+#: kstarsactions.cpp:453
 msgid "INDI"
 msgstr "INDI"
 
-#: kstarsactions.cpp:459
+#: kstarsactions.cpp:461
 #, fuzzy
 #| msgid "planet"
 msgid "Xplanet"
 msgstr "сайёра"
 
-#: kstarsactions.cpp:542
+#: kstarsactions.cpp:544
 msgid "KStars::slotFind() - Not enough memory for dialog"
 msgstr "KStars::slotFind() - ҳофизаи нокифоя барои диалог"
 
-#: kstarsactions.cpp:596 kstarsactions.cpp:613 kstarsactions.cpp:620
+#: kstarsactions.cpp:611 kstarsactions.cpp:628 kstarsactions.cpp:635
 #: tools/scriptbuilder.cpp:974 tools/scriptbuilder.cpp:1029
 msgctxt "Filter by file type: KStars Scripts."
 msgid "KStars Scripts (*.kstars)"
 msgstr ""
 
-#: kstarsactions.cpp:603
+#: kstarsactions.cpp:618
 msgid ""
 "Warning:  You are about to execute a remote shell script on your machine. "
 msgstr ""
 "Огоҳӣ:  Шумо бояд дастнавис дур карда шудаи лояро дар дастгоҳ истифода "
 "намоед."
 
-#: kstarsactions.cpp:604
+#: kstarsactions.cpp:619
 msgid ""
 "If you absolutely trust the source of this script, press Continue to execute "
 "the script; "
@@ -42040,51 +42049,51 @@ msgstr ""
 "Агар шумо ба сарчашмаи навиштаҷот боварии комил дошта бошед, барои ба амал "
 "овардани навиштаҷот  тугмаи давомро зер намоед; "
 
-#: kstarsactions.cpp:605
+#: kstarsactions.cpp:620
 msgid "to save the file without executing it, press Save; "
 msgstr ""
 "нигоҳ доштани файл бе иҷро намудани ин фармон, фармони нигоҳ дориро зер "
 "намоед;"
 
-#: kstarsactions.cpp:606
+#: kstarsactions.cpp:621
 msgid "to cancel the download, press Cancel. "
 msgstr "Барои ҳисоб накардани файл, Бекор карданро пахш кунед."
 
-#: kstarsactions.cpp:608
+#: kstarsactions.cpp:623
 msgid "Really Execute Remote Script?"
 msgstr "Дар ҳақиқат мехоҳед, ки нусхаи аслро иҷро намоед?"
 
-#: kstarsactions.cpp:618
+#: kstarsactions.cpp:633
 msgid "Save location is invalid. Try another location?"
 msgstr "Нигоҳ доштани маҳал беэтибор аст.Макони дигарро кӯшиш намоям?"
 
-#: kstarsactions.cpp:619
+#: kstarsactions.cpp:634
 msgid "Invalid Save Location"
 msgstr "Вақт ва макон"
 
-#: kstarsactions.cpp:619
+#: kstarsactions.cpp:634
 msgid "Try Another"
 msgstr ""
 
-#: kstarsactions.cpp:619 tools/observinglist.cpp:869
+#: kstarsactions.cpp:634 tools/observinglist.cpp:869
 msgid "Do Not Try"
 msgstr ""
 
-#: kstarsactions.cpp:639
+#: kstarsactions.cpp:654
 msgid "Could not download the file."
 msgstr "Натавонистам файлро пурбор кард."
 
-#: kstarsactions.cpp:639 tools/scriptbuilder.cpp:988
+#: kstarsactions.cpp:654 tools/scriptbuilder.cpp:988
 msgid "Download Error"
 msgstr "Пурбор крадани хатогӣ"
 
-#: kstarsactions.cpp:661 kstarsdata.cpp:744 oal/execute.cpp:277
+#: kstarsactions.cpp:676 kstarsdata.cpp:744 oal/execute.cpp:277
 #: tools/observinglist.cpp:751
 #, kde-format
 msgid "Could not open file %1"
 msgstr "Файлро кушода нашуд %1"
 
-#: kstarsactions.cpp:686
+#: kstarsactions.cpp:701
 msgid ""
 "The selected script contains unrecognized elements, indicating that it was "
 "not created using the KStars script builder. This script may not function "
@@ -42092,26 +42101,26 @@ msgid ""
 "it anyway?"
 msgstr ""
 
-#: kstarsactions.cpp:690
+#: kstarsactions.cpp:705
 msgid "Script Validation Failed"
 msgstr "Дастнавис намудани тасдиқ карда шудаи иҷро нашуда."
 
-#: kstarsactions.cpp:690
+#: kstarsactions.cpp:705
 msgid "Run Nevertheless"
 msgstr ""
 
-#: kstarsactions.cpp:695
+#: kstarsactions.cpp:710
 #, kde-format
 msgid "Running script: %1"
 msgstr ""
 
-#: kstarsactions.cpp:710
+#: kstarsactions.cpp:725
 #, fuzzy
 #| msgid "Script name:"
 msgid "Script finished."
 msgstr "Номи нусхаи аслӣ:"
 
-#: kstarsactions.cpp:719
+#: kstarsactions.cpp:734
 msgid ""
 "You can save printer ink by using the \"Star Chart\" color scheme, which "
 "uses a white background. Would you like to temporarily switch to the Star "
@@ -42121,54 +42130,54 @@ msgstr ""
 "\"-е, ки бо манзари сафед истифода бурда мешавад.Оё шумо мехоҳед, ки дар "
 "муддати кӯтоҳ ранги лоиҳаи диаграммаи ситораро барои чоп даргиронам?"
 
-#: kstarsactions.cpp:724
+#: kstarsactions.cpp:739
 msgid "Switch to Star Chart Colors?"
 msgstr "Гузаштан ба ранги харитаи ситораҳо?"
 
-#: kstarsactions.cpp:725
+#: kstarsactions.cpp:740
 #, fuzzy
 msgid "Switch Color Scheme"
 msgstr "Эҷод кардани нақша"
 
-#: kstarsactions.cpp:725
+#: kstarsactions.cpp:740
 msgid "Do Not Switch"
 msgstr ""
 
-#: kstarsactions.cpp:797 kstarsinit.cpp:210
+#: kstarsactions.cpp:812 kstarsinit.cpp:210
 msgid "Engage &Tracking"
 msgstr "Роҳ &банд аст"
 
 #. i18n: ectx: property (text), widget (QLabel, DefaultDSSImageSizeUnitLabel)
 #. i18n: ectx: property (text), widget (QLabel, DSSPaddingUnitLabel)
-#: kstarsactions.cpp:883 options/opsadvanced.ui:122 options/opsadvanced.ui:164
+#: kstarsactions.cpp:898 options/opsadvanced.ui:122 options/opsadvanced.ui:164
 #, fuzzy
 msgid "arcminutes"
 msgstr "<i>arcmin</i>"
 
-#: kstarsactions.cpp:887
+#: kstarsactions.cpp:902
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Parsons"
 msgid "arcseconds"
 msgstr "Парсон"
 
-#: kstarsactions.cpp:889
+#: kstarsactions.cpp:904
 #, fuzzy
 #| msgid "No FOV"
 msgctxt "field of view"
 msgid "FOV"
 msgstr "FOV-и нест"
 
-#: kstarsactions.cpp:900
+#: kstarsactions.cpp:915
 msgctxt "The user should enter an angle for the field-of-view of the display"
 msgid "Enter Desired Field-of-View Angle"
 msgstr "Ворид намудани хоҳиши минтақаи намуди фаришта"
 
-#: kstarsactions.cpp:901
+#: kstarsactions.cpp:916
 msgid "Enter a field-of-view angle in degrees: "
 msgstr "Ворид намудани хоҳиши минтақаи намуди фаришта бо розигӣ"
 
-#: kstarsactions.cpp:947
+#: kstarsactions.cpp:962
 #, kde-format
 msgid "Projection system: %1"
 msgstr ""
@@ -42322,23 +42331,23 @@ msgstr "Таърих ва/Вақти захираро ислоҳ карда на
 msgid "Valid date formats: "
 msgstr "Қолабҳои таърихро дуруст кардан: "
 
-#: kstarsdcop.cpp:178
+#: kstarsdcop.cpp:177
 #, fuzzy
 #| msgid "Error [DCOP waitForKey()]: Invalid key requested."
 msgid "Error [D-Bus waitForKey()]: Invalid key requested."
 msgstr "Хатогии [DCOP waitForKey()]: Калиди нодуруст талаб карда шудааст."
 
-#: kstarsdcop.cpp:235 kstarsdcop.cpp:238
+#: kstarsdcop.cpp:234 kstarsdcop.cpp:237
 #, fuzzy
 #| msgid "Error [DCOP setGeoLocation]: city "
 msgid "Error [D-Bus setGeoLocation]: city "
 msgstr "Хатогии [DCOP setGeoLocation]: шаҳр "
 
-#: kstarsdcop.cpp:236 kstarsdcop.cpp:239
+#: kstarsdcop.cpp:235 kstarsdcop.cpp:238
 msgid " not found in database."
 msgstr " дар базаи маълумотҳо ёфта нашуд."
 
-#: kstarsdcop.cpp:452
+#: kstarsdcop.cpp:447
 msgid "Print Sky"
 msgstr "Осмонро чоп кунед"
 
@@ -47539,7 +47548,7 @@ msgstr "Агар санҷида шавад,Сатурн кашида мешав�
 #: skyglpainter.cpp:252 skymapdrawabstract.cpp:153 skyobjects/ksplanet.cpp:137
 #: skyobjects/ksplanet.cpp:166 skyobjects/ksplanet.cpp:349
 #: skyobjects/ksplanet.cpp:378 skyobjects/ksplanetbase.cpp:153
-#: skyobjects/ksplanetbase.cpp:271 skyqpainter.cpp:332
+#: skyobjects/ksplanetbase.cpp:271 skyqpainter.cpp:338
 #: tools/conjunctions.cpp:89 tools/ksconjunct.cpp:65
 #: tools/modcalcplanets.cpp:269 tools/modcalcplanets.ui:134
 #: tools/modcalcplanets.ui:477 tools/obslistwizard.cpp:536
@@ -47584,7 +47593,7 @@ msgstr "Агар санҷида шавад, Марс дар харита каш�
 #: skyglpainter.cpp:250 skymapdrawabstract.cpp:151 skyobjects/ksplanet.cpp:131
 #: skyobjects/ksplanet.cpp:162 skyobjects/ksplanet.cpp:345
 #: skyobjects/ksplanet.cpp:374 skyobjects/ksplanetbase.cpp:152
-#: skyqpainter.cpp:330 tools/conjunctions.cpp:87 tools/ksconjunct.cpp:68
+#: skyqpainter.cpp:336 tools/conjunctions.cpp:87 tools/ksconjunct.cpp:68
 #: tools/modcalcplanets.cpp:269 tools/modcalcplanets.ui:124
 #: tools/modcalcplanets.ui:467 tools/obslistwizard.cpp:509
 #: tools/obslistwizard.cpp:511 tools/skycalendar.ui:72
@@ -47715,7 +47724,7 @@ msgstr "Агар санҷида шавад, Юпитер кашида мешав
 #: skyglpainter.cpp:252 skymapdrawabstract.cpp:152 skyobjects/ksplanet.cpp:134
 #: skyobjects/ksplanet.cpp:164 skyobjects/ksplanet.cpp:347
 #: skyobjects/ksplanet.cpp:376 skyobjects/ksplanetbase.cpp:153
-#: skyqpainter.cpp:332 tools/conjunctions.cpp:88 tools/jmoontool.cpp:119
+#: skyqpainter.cpp:338 tools/conjunctions.cpp:88 tools/jmoontool.cpp:119
 #: tools/ksconjunct.cpp:65 tools/modcalcplanets.cpp:269
 #: tools/modcalcplanets.ui:129 tools/modcalcplanets.ui:472
 #: tools/obslistwizard.cpp:522 tools/obslistwizard.cpp:524
@@ -47756,7 +47765,7 @@ msgstr "Агар санҷида шавад, меркурий кашида меш
 #: skyglpainter.cpp:252 skymapdrawabstract.cpp:148 skyobjects/ksplanet.cpp:125
 #: skyobjects/ksplanet.cpp:158 skyobjects/ksplanet.cpp:340
 #: skyobjects/ksplanet.cpp:368 skyobjects/ksplanetbase.cpp:152
-#: skyqpainter.cpp:332 tools/conjunctions.cpp:85 tools/ksconjunct.cpp:71
+#: skyqpainter.cpp:338 tools/conjunctions.cpp:85 tools/ksconjunct.cpp:71
 #: tools/modcalcplanets.cpp:268 tools/modcalcplanets.ui:109
 #: tools/modcalcplanets.ui:452 tools/obslistwizard.cpp:482
 #: tools/obslistwizard.cpp:484 tools/skycalendar.ui:36
