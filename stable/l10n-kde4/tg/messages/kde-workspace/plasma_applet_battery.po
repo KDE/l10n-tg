@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_battery\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-01-24 12:34+0100\n"
+"POT-Creation-Date: 2013-01-25 09:20+0100\n"
 "PO-Revision-Date: 2010-01-28 14:23+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik Language\n"
@@ -17,6 +17,75 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: contents/code/logic.js:52
+#, fuzzy, kde-format
+#| msgid "%1% (charged)"
+msgid "<b>%1% (charged)</b>"
+msgstr "%1% (пур шуд)"
+
+#: contents/code/logic.js:54
+#, fuzzy, kde-format
+#| msgctxt "Shown when a time estimate is not available"
+#| msgid "%1% (discharging)"
+msgid "<b>%1% (discharging)</b>"
+msgstr "%1% (холи шуд)"
+
+#: contents/code/logic.js:56
+#, fuzzy, kde-format
+#| msgid "%1% (charging)"
+msgid "<b>%1% (charging)</b>"
+msgstr "%1% (барқгирӣ)"
+
+#: contents/code/logic.js:60
+#, fuzzy
+#| msgctxt "Battery is not plugged in"
+#| msgid "Not present"
+msgctxt "Battery is not plugged in"
+msgid "<b>Not present</b>"
+msgstr "Мавҷуд нест"
+
+#: contents/code/logic.js:67 contents/ui/PopupDialog.qml:54
+msgid "Battery:"
+msgstr "Батарея:"
+
+#: contents/code/logic.js:73
+#, fuzzy, kde-format
+#| msgid "Battery:"
+msgctxt "tooltip: placeholder is the battery ID"
+msgid "Battery %1:"
+msgstr "Батарея:"
+
+#: contents/code/logic.js:85
+#, fuzzy
+#| msgid "AC Adapter:"
+msgctxt "tooltip"
+msgid "AC Adapter:"
+msgstr "Адаптери AC:"
+
+#: contents/code/logic.js:86
+#, fuzzy
+#| msgid "Plugged in "
+msgctxt "tooltip"
+msgid "<b>Plugged in</b>"
+msgstr "Васл карда шуд"
+
+#: contents/code/logic.js:86
+#, fuzzy
+#| msgid "Not plugged in"
+msgctxt "tooltip"
+msgid "<b>Not plugged in</b>"
+msgstr "Васл карда нашуд"
+
+#: contents/ui/batterymonitor.qml:123
+#, kde-format
+msgctxt "overlay on the battery, needs to be really tiny"
+msgid "%1%"
+msgstr ""
+
+#: contents/ui/batterymonitor.qml:232
+msgid "The battery applet has enabled system-wide inhibition"
+msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, batteryConfig)
 #: contents/ui/config.ui:14
@@ -33,52 +102,76 @@ msgstr "Намоиши иттилооти &барқ"
 msgid "Show the state for &each battery present"
 msgstr "Ҳолати фоизи &ҳар як батареяро нишон диҳед"
 
-#, fuzzy
-#~| msgid "Battery:"
-#~ msgctxt "Placeholder is the battery ID"
-#~ msgid "Battery %1:"
-#~ msgstr "Батарея:"
+#: contents/ui/PopupDialog.qml:54
+#, fuzzy, kde-format
+#| msgid "Battery:"
+msgctxt "Placeholder is the battery ID"
+msgid "Battery %1:"
+msgstr "Батарея:"
 
-#~ msgid "Battery:"
-#~ msgstr "Батарея:"
-
+#: contents/ui/PopupDialog.qml:61
 #, fuzzy
-#~| msgid "AC Adapter:"
-#~ msgid "AC Adapter:"
-#~ msgstr "Адаптери AC:"
+#| msgid "AC Adapter:"
+msgid "AC Adapter:"
+msgstr "Адаптери AC:"
 
-#, fuzzy
-#~| msgid "Power Management"
-#~ msgctxt "Label for power management inhibition"
-#~ msgid "Power management enabled:"
-#~ msgstr "Идоракунии барқ"
+#: contents/ui/PopupDialog.qml:67
+msgctxt "Label for remaining time"
+msgid "Time Remaining:"
+msgstr ""
 
+#: contents/ui/PopupDialog.qml:73
 #, fuzzy
-#~| msgid "Screen Brightness"
-#~ msgid "Screen Brightness:"
-#~ msgstr "Равшаннокии экран"
+#| msgid "Power Management"
+msgctxt "Label for power management inhibition"
+msgid "Power management enabled:"
+msgstr "Идоракунии барқ"
 
+#: contents/ui/PopupDialog.qml:78
 #, fuzzy
-#~| msgid "Plugged in "
-#~ msgid "Plugged in"
-#~ msgstr "Васл карда шуд"
+#| msgid "Screen Brightness"
+msgid "Screen Brightness:"
+msgstr "Равшаннокии экран"
 
+#: contents/ui/PopupDialog.qml:108
 #, fuzzy
-#~| msgid "Not plugged in"
-#~ msgid "Not plugged in"
-#~ msgstr "Васл карда нашуд"
+#| msgid "Plugged in "
+msgid "Plugged in"
+msgstr "Васл карда шуд"
 
+#: contents/ui/PopupDialog.qml:108
 #, fuzzy
-#~| msgid "Sleep"
-#~ msgctxt "Suspend the computer to RAM; translation should be short"
-#~ msgid "Sleep"
-#~ msgstr "Хомӯш"
+#| msgid "Not plugged in"
+msgid "Not plugged in"
+msgstr "Васл карда нашуд"
 
+#: contents/ui/PopupDialog.qml:154
+#, kde-format
+msgid "1 hour "
+msgid_plural "%1 hours "
+msgstr[0] ""
+msgstr[1] ""
+
+#: contents/ui/PopupDialog.qml:155
+#, kde-format
+msgid "1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: contents/ui/PopupDialog.qml:169
 #, fuzzy
-#~| msgid "Hibernate"
-#~ msgctxt "Suspend the computer to disk; translation should be short"
-#~ msgid "Hibernate"
-#~ msgstr "Нигоҳдорӣ"
+#| msgid "Sleep"
+msgctxt "Suspend the computer to RAM; translation should be short"
+msgid "Sleep"
+msgstr "Хомӯш"
+
+#: contents/ui/PopupDialog.qml:176
+#, fuzzy
+#| msgid "Hibernate"
+msgctxt "Suspend the computer to disk; translation should be short"
+msgid "Hibernate"
+msgstr "Нигоҳдорӣ"
 
 #, fuzzy
 #~| msgid "<b>Battery:</b> "
@@ -107,18 +200,6 @@ msgstr "Ҳолати фоизи &ҳар як батареяро нишон ди�
 #~ msgid "Not plugged in"
 #~ msgstr "Васл карда нашуд"
 
-#~ msgid "%1% (charging)"
-#~ msgstr "%1% (барқгирӣ)"
-
-#, fuzzy
-#~| msgctxt "Shown when a time estimate is not available"
-#~| msgid "%1% (discharging)"
-#~ msgid "%1% (discharging)"
-#~ msgstr "%1% (холи шуд)"
-
-#~ msgid "%1% (charged)"
-#~ msgstr "%1% (пур шуд)"
-
 #, fuzzy
 #~| msgid "Show the state for &each battery present"
 #~ msgid "Show remaining time for the battery"
@@ -137,23 +218,6 @@ msgstr "Ҳолати фоизи &ҳар як батареяро нишон ди�
 #~ msgctxt "tooltip on the config button in the popup"
 #~ msgid "Configure Power Management..."
 #~ msgstr "Танзимоти идоракунии барқ..."
-
-#, fuzzy
-#~| msgid "Plugged in "
-#~ msgid "<b>Plugged in</b>"
-#~ msgstr "Васл карда шуд"
-
-#, fuzzy
-#~| msgid "Not plugged in"
-#~ msgid "<b>Not plugged in</b>"
-#~ msgstr "Васл карда нашуд"
-
-#, fuzzy
-#~| msgctxt "Battery is not plugged in"
-#~| msgid "Not present"
-#~ msgctxt "Battery is not plugged in"
-#~ msgid "<b>Not present</b>"
-#~ msgstr "Мавҷуд нест"
 
 #, fuzzy
 #~| msgid "Power Profile"
