@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 03:46+0100\n"
+"POT-Creation-Date: 2012-08-20 04:22+0200\n"
 "PO-Revision-Date: 2004-10-23 17:38+0000\n"
 "Last-Translator: Abrorova <H_Abrorova@rambler.ru>\n"
 "Language-Team: Tajik\n"
@@ -94,8 +94,9 @@ msgstr "%1@%2 (компютер, ки пайвастшавиро интизор 
 msgid "Invitation"
 msgstr "Идоракунии &Таклифотҳо"
 
-#: invitedialog.cpp:72
-#, kde-format
+#. i18n: ectx: property (text), widget (QPushButton, btnManageInvite)
+#: invitedialog.cpp:72 ui/invitewidget.ui:125
+#, no-c-format, kde-format
 msgid "&Manage Invitations (%1)..."
 msgstr "&Идоракунии Таклифотҳо (%1)..."
 
@@ -130,6 +131,53 @@ msgstr ""
 "калид.</p><p>Агар хоҳед, ки гузарвожаи доимиро барои Мизи Кории Муштарак "
 "офаред, дар танзимот 'Пайвастшавиҳо бе Таклифот'-ро фаъол созед."
 "\">Муфассалтар дар бораи таклифот...</a>"
+
+#. i18n: ectx: label, entry (useDefaultPort), group (TCP)
+#: krfb.kcfg:8
+msgid "Use the default port for VNC (5900)"
+msgstr ""
+
+#. i18n: ectx: label, entry (port), group (TCP)
+#: krfb.kcfg:12
+msgid "This is the port on which krfb will listen."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_publishService)
+#. i18n: ectx: label, entry (publishService), group (TCP)
+#: krfb.kcfg:16 ui/configtcp.ui:22
+msgid "Announce the service on the local network"
+msgstr ""
+
+#. i18n: ectx: label, entry (allowDesktopControl), group (Security)
+#: krfb.kcfg:22
+#, fuzzy
+#| msgid "Allow remote user to &control keyboard and mouse"
+msgid "Allow remote connections to manage the desktop."
+msgstr "Иҷозатдиҳи ба корванди дурдаст барои &идоракунӣ бо забонак ва муш"
+
+#. i18n: ectx: label, entry (askOnConnect), group (Security)
+#: krfb.kcfg:26
+#, fuzzy
+#| msgid "Accepted uninvited connection from %1"
+msgid "Ask before allowing a remote connection."
+msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
+
+#. i18n: ectx: label, entry (allowUninvitedConnections), group (Security)
+#: krfb.kcfg:30
+msgid "Allow connections without an invitation."
+msgstr ""
+
+#. i18n: ectx: label, entry (uninvitedConnectionPassword), group (Security)
+#: krfb.kcfg:34
+#, fuzzy
+#| msgid "Accepted uninvited connection from %1"
+msgid "Password for uninvited connections."
+msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
+
+#. i18n: ectx: label, entry (preferredFrameBufferPlugin), group (FrameBuffer)
+#: krfb.kcfg:39
+msgid "Preferred Frame Buffer Plugin"
+msgstr ""
 
 #: main.cpp:42
 msgid "VNC-compatible server to share KDE desktops"
@@ -433,142 +481,278 @@ msgstr "Дастрасии муштарак ба Мизи Корӣ - бо %1 п�
 msgid "Desktop Sharing - connected"
 msgstr "Дастрасии муштарак ба Мизи Корӣ - канда шудааст"
 
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_askOnConnect)
+#: ui/configsecurity.ui:20
 #, fuzzy
-#~| msgid "Accepted uninvited connection from %1"
-#~ msgid "Password for uninvited connections."
-#~ msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
+#| msgid "Accepted uninvited connection from %1"
+msgid "Ask before accepting connections"
+msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
 
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowDesktopControl)
+#: ui/configsecurity.ui:30
 #, fuzzy
-#~| msgid "Accepted uninvited connection from %1"
-#~ msgid "Ask before accepting connections"
-#~ msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
+#| msgid "Allow remote user to &control keyboard and mouse"
+msgid "Allow remote connections to control your desktop"
+msgstr "Иҷозатдиҳи ба корванди дурдаст барои &идоракунӣ бо забонак ва муш"
 
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowUninvitedConnections)
+#: ui/configsecurity.ui:40
 #, fuzzy
-#~| msgid "Allow remote user to &control keyboard and mouse"
-#~ msgid "Allow remote connections to control your desktop"
-#~ msgstr "Иҷозатдиҳи ба корванди дурдаст барои &идоракунӣ бо забонак ва муш"
+#| msgid "Accepted uninvited connection from %1"
+msgid "Allow uninvited connections"
+msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
 
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/configsecurity.ui:50
 #, fuzzy
-#~| msgid "Accepted uninvited connection from %1"
-#~ msgid "Allow uninvited connections"
-#~ msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
+#| msgid "Accepted uninvited connection from %1"
+msgid "Uninvited connections password:"
+msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
 
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useDefaultPort)
+#: ui/configtcp.ui:32
+msgid "Use default port"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/configtcp.ui:50
+msgid "Listening port:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: ui/connectionwidget.ui:47
+msgid "Attention"
+msgstr "Диққат"
+
+#. i18n: ectx: property (text), widget (QLabel, mainTextLabel)
+#: ui/connectionwidget.ui:72
+msgid ""
+"Somebody is requesting a connection to your computer. Granting this will "
+"allow the remote user to watch your desktop. "
+msgstr ""
+"Касе дархости пайвастшавиро ба компютери шумо дорад. Тасдиқоти он ба "
+"корванди дурдаст имконияти назорати мизи кории шуморо медиҳад. "
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
+#: ui/connectionwidget.ui:102
+msgid "Remote system:"
+msgstr "Системаи дурдаст:"
+
+#. i18n: ectx: property (text), widget (QLabel, remoteHost)
+#: ui/connectionwidget.ui:118
+msgid "123.234.123.234"
+msgstr "123.234.123.234"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAllowRemoteControl)
+#: ui/connectionwidget.ui:136 ui/tubesconnectionwidget.ui:101
+msgid ""
+"If you turn this option on, the remote user can enter keystrokes and use "
+"your mouse pointer. This gives them full control over your computer, so be "
+"careful. When the option is disabled the remote user can only watch your "
+"screen."
+msgstr ""
+"Агар ин хосиятро фаъол созед, корванди дурдаст аз забонак аломатҳоро ворид "
+"карда метавонад ва бо нишонагари муш идора карда метавонад. Ин ба онҳо "
+"идораи пурраро аз болои компютери шумо медиҳад, бинобар ин эҳтиёт бошед. Бе "
+"ин хосият корванди дурдаст танҳо экрани шуморо дида метавонад."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAllowRemoteControl)
+#: ui/connectionwidget.ui:139 ui/tubesconnectionwidget.ui:104
+msgid "Allow remote user to &control keyboard and mouse"
+msgstr "Иҷозатдиҳи ба корванди дурдаст барои &идоракунӣ бо забонак ва муш"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
+#: ui/invitewidget.ui:40 ui/manageinvitations.ui:25
+msgid "Welcome to KDE Desktop Sharing"
+msgstr "Марҳамат ба KDE Дастрасии муштарак ба Мизи Корӣ"
+
+#. i18n: ectx: property (text), widget (QLabel, helpLabel)
+#: ui/invitewidget.ui:50
+msgid ""
+"KDE Desktop Sharing allows you to invite somebody at a remote location to "
+"watch and possibly control your desktop. <a href=\"whatsthis\">More about "
+"invitations...</a>"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnCreateInvite)
+#: ui/invitewidget.ui:105
+msgid ""
+"Create a new invitation and display the connection data. Use this option if "
+"you want to invite somebody personally, for example, to give the connection "
+"data over the phone."
+msgstr ""
+"Офаридаи таклифоти нав ва намоиш додани додаҳо оиди пайвастшавӣ. Агар хоҳед, "
+"ки касеро шахсан таклиф намоед, ин хосиятро истифода баред. Масалан, "
+"фиристодани додаҳо оиди пайвастшавӣ бо телефон."
+
+#. i18n: ectx: property (text), widget (QPushButton, btnCreateInvite)
+#: ui/invitewidget.ui:108
+msgid "Create &Personal Invitation..."
+msgstr "Офаридани Таклифоти &Шахсӣ"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnEmailInvite)
+#: ui/invitewidget.ui:115
+msgid ""
+"This button will start your email application with a pre-configured text "
+"that explains to the recipient how to connect to your computer. "
+msgstr ""
+"Ин тугма замимаи пости электронии шуморо бо матни пешакӣ таъиншудае, ки "
+"тарзи пайвастшавиро ба компютери шумо мефаҳмонад, сар медиҳад. "
+
+#. i18n: ectx: property (text), widget (QPushButton, btnEmailInvite)
+#: ui/invitewidget.ui:118
+msgid "Invite via &Email..."
+msgstr "Таклифот бо ёрии &Пости электронӣ..."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, ManageInvitationsDialog)
+#: ui/manageinvitations.ui:13
+msgid "Manage Invitations - Desktop Sharing"
+msgstr "Идоракунии Таклифотҳо - Дастрасии муштарак ба Мизи Корӣ"
+
+#. i18n: ectx: property (text), widget (QLabel, helpLabel)
+#: ui/manageinvitations.ui:38
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">KDE Desktop Sharing allows "
+"you to invite somebody at a remote location to watch and possibly control "
+"your desktop. <a href=\"whatsthis\">More about invitations...</a></p></"
+"body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QTreeWidget, invitationWidget)
+#: ui/manageinvitations.ui:95
 #, fuzzy
-#~| msgid "Accepted uninvited connection from %1"
-#~ msgid "Uninvited connections password:"
-#~ msgstr "Пайвастшавӣ бе таклифот аз %1 қабул гардид"
+#| msgid "Created"
+msgid "Creation Time"
+msgstr "Офарида шуд"
 
-#~ msgid "Attention"
-#~ msgstr "Диққат"
+#. i18n: ectx: property (text), widget (QTreeWidget, invitationWidget)
+#: ui/manageinvitations.ui:100
+msgid "Expire Time"
+msgstr ""
 
-#~ msgid ""
-#~ "Somebody is requesting a connection to your computer. Granting this will "
-#~ "allow the remote user to watch your desktop. "
-#~ msgstr ""
-#~ "Касе дархости пайвастшавиро ба компютери шумо дорад. Тасдиқоти он ба "
-#~ "корванди дурдаст имконияти назорати мизи кории шуморо медиҳад. "
+#. i18n: ectx: property (toolTip), widget (QPushButton, newPersonalInvitationButton)
+#: ui/manageinvitations.ui:124
+msgid "Create a new personal invitation..."
+msgstr "Офаридани таклифоти нави шахсӣ..."
 
-#~ msgid "Remote system:"
-#~ msgstr "Системаи дурдаст:"
+#. i18n: ectx: property (whatsThis), widget (QPushButton, newPersonalInvitationButton)
+#: ui/manageinvitations.ui:127
+msgid "Click this button to create a new personal invitation."
+msgstr "Барои офаридани таклифоти нави шахсӣ ба ин тугма ангушт занед."
 
-#~ msgid "123.234.123.234"
-#~ msgstr "123.234.123.234"
+#. i18n: ectx: property (text), widget (QPushButton, newPersonalInvitationButton)
+#: ui/manageinvitations.ui:130
+msgid "New &Personal Invitation..."
+msgstr "Таклифоти Нави &Шахсӣ..."
 
-#~ msgid ""
-#~ "If you turn this option on, the remote user can enter keystrokes and use "
-#~ "your mouse pointer. This gives them full control over your computer, so "
-#~ "be careful. When the option is disabled the remote user can only watch "
-#~ "your screen."
-#~ msgstr ""
-#~ "Агар ин хосиятро фаъол созед, корванди дурдаст аз забонак аломатҳоро "
-#~ "ворид карда метавонад ва бо нишонагари муш идора карда метавонад. Ин ба "
-#~ "онҳо идораи пурраро аз болои компютери шумо медиҳад, бинобар ин эҳтиёт "
-#~ "бошед. Бе ин хосият корванди дурдаст танҳо экрани шуморо дида метавонад."
+#. i18n: ectx: property (toolTip), widget (QPushButton, newEmailInvitationButton)
+#: ui/manageinvitations.ui:137
+msgid "Send a new invitation via email..."
+msgstr "Фиристодани таклифоти нав бо ёрии пости электронӣ..."
 
-#~ msgid "Allow remote user to &control keyboard and mouse"
-#~ msgstr "Иҷозатдиҳи ба корванди дурдаст барои &идоракунӣ бо забонак ва муш"
+#. i18n: ectx: property (whatsThis), widget (QPushButton, newEmailInvitationButton)
+#: ui/manageinvitations.ui:140
+msgid "Click this button to send a new invitation via email."
+msgstr ""
+"Барои фиристодани таклифоти нав бо ёрии пости электронӣ ба ин тугма ангушт "
+"занед."
 
-#~ msgid "Welcome to KDE Desktop Sharing"
-#~ msgstr "Марҳамат ба KDE Дастрасии муштарак ба Мизи Корӣ"
+#. i18n: ectx: property (text), widget (QPushButton, newEmailInvitationButton)
+#: ui/manageinvitations.ui:143
+msgid "&New Email Invitation..."
+msgstr "Таклифоти &Нави Пости Электронӣ..."
 
-#~ msgid ""
-#~ "Create a new invitation and display the connection data. Use this option "
-#~ "if you want to invite somebody personally, for example, to give the "
-#~ "connection data over the phone."
-#~ msgstr ""
-#~ "Офаридаи таклифоти нав ва намоиш додани додаҳо оиди пайвастшавӣ. Агар "
-#~ "хоҳед, ки касеро шахсан таклиф намоед, ин хосиятро истифода баред. "
-#~ "Масалан, фиристодани додаҳо оиди пайвастшавӣ бо телефон."
+#. i18n: ectx: property (toolTip), widget (QPushButton, deleteAllButton)
+#: ui/manageinvitations.ui:153
+msgid "Delete all invitations"
+msgstr "Нобуд кардани ҳамаи таклифотҳо"
 
-#~ msgid "Create &Personal Invitation..."
-#~ msgstr "Офаридани Таклифоти &Шахсӣ"
+#. i18n: ectx: property (whatsThis), widget (QPushButton, deleteAllButton)
+#: ui/manageinvitations.ui:156
+msgid "Deletes all open invitations."
+msgstr "Нобуд кардани ҳамаи таклифотҳои фаъол."
 
-#~ msgid ""
-#~ "This button will start your email application with a pre-configured text "
-#~ "that explains to the recipient how to connect to your computer. "
-#~ msgstr ""
-#~ "Ин тугма замимаи пости электронии шуморо бо матни пешакӣ таъиншудае, ки "
-#~ "тарзи пайвастшавиро ба компютери шумо мефаҳмонад, сар медиҳад. "
+#. i18n: ectx: property (text), widget (QPushButton, deleteAllButton)
+#: ui/manageinvitations.ui:159
+msgid "Delete All"
+msgstr ""
 
-#~ msgid "Invite via &Email..."
-#~ msgstr "Таклифот бо ёрии &Пости электронӣ..."
+#. i18n: ectx: property (toolTip), widget (QPushButton, deleteOneButton)
+#: ui/manageinvitations.ui:169
+msgid "Delete the selected invitation"
+msgstr "Нобуд кардани таклифотҳои интихобшуда."
 
-#~ msgid "Manage Invitations - Desktop Sharing"
-#~ msgstr "Идоракунии Таклифотҳо - Дастрасии муштарак ба Мизи Корӣ"
+#. i18n: ectx: property (whatsThis), widget (QPushButton, deleteOneButton)
+#: ui/manageinvitations.ui:172
+msgid ""
+"Delete the selected invitation. The invited person will not be able to "
+"connect using this invitation anymore."
+msgstr ""
+"Нобуд кардани ҳамаи таклифотҳои интихобшуда. Шахсони таклифшуда дигар бо "
+"воситаи ин таклифот пайваст шуда наметавонанд."
 
+#. i18n: ectx: property (text), widget (QPushButton, deleteOneButton)
+#: ui/manageinvitations.ui:175
+msgid "&Delete"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, mainTextLabel)
+#: ui/personalinvitewidget.ui:47
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Personal Invitation</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Give the information below "
+"to the person that you want to invite (<a href=\"htc\">how to connect</a>). "
+"Note that everybody who gets the password can connect, so be careful.</p></"
+"body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, kActiveLabel5)
+#: ui/personalinvitewidget.ui:81
+msgid "<b>Host:</b>"
+msgstr "<b>Даргоҳ:</b>"
+
+#. i18n: ectx: property (text), widget (QLabel, hostHelpLabel)
+#: ui/personalinvitewidget.ui:116
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"help\">Help</a></"
+"p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, kActiveLabel6)
+#: ui/personalinvitewidget.ui:129
+msgid "<b>Password:</b>"
+msgstr "<b>Гузарвожа:</b>"
+
+#. i18n: ectx: property (text), widget (QLabel, kActiveLabel7)
+#: ui/personalinvitewidget.ui:161
+msgid "<b>Expiration time:</b>"
+msgstr "<b>Мӯҳлати кор:</b>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: ui/tubesconnectionwidget.ui:48
 #, fuzzy
-#~| msgid "Created"
-#~ msgid "Creation Time"
-#~ msgstr "Офарида шуд"
-
-#~ msgid "Create a new personal invitation..."
-#~ msgstr "Офаридани таклифоти нави шахсӣ..."
-
-#~ msgid "Click this button to create a new personal invitation."
-#~ msgstr "Барои офаридани таклифоти нави шахсӣ ба ин тугма ангушт занед."
-
-#~ msgid "New &Personal Invitation..."
-#~ msgstr "Таклифоти Нави &Шахсӣ..."
-
-#~ msgid "Send a new invitation via email..."
-#~ msgstr "Фиристодани таклифоти нав бо ёрии пости электронӣ..."
-
-#~ msgid "Click this button to send a new invitation via email."
-#~ msgstr ""
-#~ "Барои фиристодани таклифоти нав бо ёрии пости электронӣ ба ин тугма "
-#~ "ангушт занед."
-
-#~ msgid "&New Email Invitation..."
-#~ msgstr "Таклифоти &Нави Пости Электронӣ..."
-
-#~ msgid "Delete all invitations"
-#~ msgstr "Нобуд кардани ҳамаи таклифотҳо"
-
-#~ msgid "Deletes all open invitations."
-#~ msgstr "Нобуд кардани ҳамаи таклифотҳои фаъол."
-
-#~ msgid "Delete the selected invitation"
-#~ msgstr "Нобуд кардани таклифотҳои интихобшуда."
-
-#~ msgid ""
-#~ "Delete the selected invitation. The invited person will not be able to "
-#~ "connect using this invitation anymore."
-#~ msgstr ""
-#~ "Нобуд кардани ҳамаи таклифотҳои интихобшуда. Шахсони таклифшуда дигар бо "
-#~ "воситаи ин таклифот пайваст шуда наметавонанд."
-
-#~ msgid "<b>Host:</b>"
-#~ msgstr "<b>Даргоҳ:</b>"
-
-#~ msgid "<b>Password:</b>"
-#~ msgstr "<b>Гузарвожа:</b>"
-
-#~ msgid "<b>Expiration time:</b>"
-#~ msgstr "<b>Мӯҳлати кор:</b>"
-
-#, fuzzy
-#~ msgid "Confirmation"
-#~ msgstr "Идоракунии &Таклифотҳо"
+msgid "Confirmation"
+msgstr "Идоракунии &Таклифотҳо"
 
 #~ msgid "X11 update scanner, original code base"
 #~ msgstr "сканери навсозии намоишгари X11, манбаи рамзи ибтидоӣ"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_folderview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 03:39+0100\n"
+"POT-Creation-Date: 2013-02-06 03:18+0100\n"
 "PO-Revision-Date: 2012-01-05 14:55+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -159,7 +159,8 @@ msgstr "Аввал ҷузвадонҳо"
 msgid "Sort Icons"
 msgstr "Тартиби нишонаҳо"
 
-#: folderview.cpp:1597
+#. i18n: ectx: property (text), widget (QLabel, iconsTitle)
+#: folderview.cpp:1597 folderviewDisplayConfig.ui:80
 msgid "Icons"
 msgstr "Нишонаҳо"
 
@@ -196,6 +197,339 @@ msgid_plural "%1 files."
 msgstr[0] "1 файл."
 msgstr[1] "%1 файл."
 
+#. i18n: ectx: property (text), widget (QLabel, headerTitle)
+#: folderviewDisplayConfig.ui:29
+msgid "Header"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, titleLabel)
+#: folderviewDisplayConfig.ui:58
+msgid "Custom title:"
+msgstr "Сарлавҳаи шахсӣ:"
+
+#. i18n: ectx: property (text), widget (QLabel, flowLabel)
+#: folderviewDisplayConfig.ui:103
+msgid "Arrangement:"
+msgstr "Расположение:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, flowCombo)
+#: folderviewDisplayConfig.ui:116
+#, fuzzy
+msgid ""
+"Use this control to choose if you want the icons to be arranged top to "
+"bottom starting on the left side of the view, or arranged left to right "
+"starting at the top of the view."
+msgstr "Выберите порядок расположения значков: сверху вниз или слева направо."
+
+#. i18n: ectx: property (text), widget (QLabel, sortLabel)
+#: folderviewDisplayConfig.ui:123
+msgid "Sorting:"
+msgstr "Тартибдиҳӣ:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, sortCombo)
+#: folderviewDisplayConfig.ui:136
+msgid ""
+"Use this control to choose the criteria by which the icons will be sorted in "
+"the view."
+msgstr "Выберите из списка тип сортировки значков."
+
+#. i18n: ectx: property (text), widget (QLabel, sizeSliderLabel)
+#: folderviewDisplayConfig.ui:156 tooltipwidget.cpp:145
+msgid "Size:"
+msgstr "Андоза:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: folderviewDisplayConfig.ui:171
+msgid "Small"
+msgstr "Хурд"
+
+#. i18n: ectx: property (whatsThis), widget (QSlider, sizeSlider)
+#: folderviewDisplayConfig.ui:181
+msgid ""
+"Use this slider to increase or decrease the size of the icons in the view."
+msgstr "Используйте ползунок чтобы изменить размер значков в виджете."
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: folderviewDisplayConfig.ui:203
+msgid "Large"
+msgstr "Калон"
+
+#. i18n: ectx: property (text), widget (QLabel, previewsAdvancedLabel)
+#: folderviewDisplayConfig.ui:212
+msgid "Previews:"
+msgstr "Пешнамоиш:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, showPreviews)
+#: folderviewDisplayConfig.ui:224
+msgid ""
+"Check this option if you want to see previews of the file contents in the "
+"icons."
+msgstr "Включите этот параметр, чтобы показывать миниатюры содержимого файлов."
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, previewsAdvanced)
+#: folderviewDisplayConfig.ui:234
+msgid ""
+"Click this button to choose for which types of files previews will be shown."
+msgstr ""
+"Нажмите на эту кнопку, чтобы выбрать для каких типов файлов показывать "
+"миниатюры."
+
+#. i18n: ectx: property (text), widget (QPushButton, previewsAdvanced)
+#: folderviewDisplayConfig.ui:237
+msgid "More Preview Options..."
+msgstr "Бештар имконоти пешнамоиш..."
+
+#. i18n: ectx: property (text), widget (QLabel, lockInPlaceLabel)
+#: folderviewDisplayConfig.ui:259
+msgid "Lock in place:"
+msgstr "Зафиксировать значки:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, lockInPlace)
+#: folderviewDisplayConfig.ui:271
+msgid ""
+"Check this option if you do not want the icons to be moveable in the view.\n"
+"\n"
+"This option is useful if you want to avoid accidentally moving the icons "
+"while interacting with them."
+msgstr ""
+"Включите этот параметр чтобы заблокировать перетаскивание значков в "
+"виджете.\n"
+"\n"
+"Эта возможность полезна, если вы не хотите случайно сдвинуть значки при "
+"работе с ними."
+
+#. i18n: ectx: property (text), widget (QLabel, alignToGridLabel)
+#: folderviewDisplayConfig.ui:281
+msgid "Align to grid:"
+msgstr "Выровнять по сетке:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, alignToGrid)
+#: folderviewDisplayConfig.ui:293
+msgid ""
+"Check this option if you want the icons to be arranged in a grid.\n"
+"\n"
+"When this option is checked, icons will automatically snap to the nearest "
+"grid cell when you move them around in the view."
+msgstr "Включите этот параметр чтобы выровнять значки по сетке."
+
+#. i18n: ectx: property (text), widget (QLabel, clickToViewLabel)
+#: folderviewDisplayConfig.ui:303
+msgid "Click to view folder:"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, clickToView)
+#: folderviewDisplayConfig.ui:313
+#, fuzzy
+#| msgid ""
+#| "Check this option if you want the icons to be arranged in a grid.\n"
+#| "\n"
+#| "When this option is checked, icons will automatically snap to the nearest "
+#| "grid cell when you move them around in the view."
+msgid ""
+"Check this option if you want folder previews to appear only when clicked. "
+"When this option is turned off, folder previews will appear automatically "
+"when the mouse hovers over a folder."
+msgstr "Включите этот параметр чтобы выровнять значки по сетке."
+
+#. i18n: ectx: property (text), widget (QLabel, iconTextTitle)
+#: folderviewDisplayConfig.ui:335
+#, fuzzy
+#| msgid "Icon size:"
+msgid "Icon Text"
+msgstr "Андозаи нишона:"
+
+#. i18n: ectx: property (text), widget (QLabel, numLinesEditLabel)
+#: folderviewDisplayConfig.ui:342
+msgid "Lines:"
+msgstr "Хатҳо:"
+
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, numLinesEdit)
+#: folderviewDisplayConfig.ui:361
+msgid ""
+"Use this control to choose how many lines of text will be shown below the "
+"icons."
+msgstr ""
+"Используйте это поле чтобы задать количество строк текста для имён файлов и "
+"папок."
+
+#. i18n: ectx: property (specialValueText), widget (KIntSpinBox, numLinesEdit)
+#: folderviewDisplayConfig.ui:364
+msgid "1 line"
+msgstr "1 хат"
+
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, numLinesEdit)
+#: folderviewDisplayConfig.ui:367
+msgid " lines"
+msgstr " хат"
+
+#. i18n: ectx: property (text), widget (QLabel, colorButtonLabel)
+#: folderviewDisplayConfig.ui:396
+msgid "Color:"
+msgstr "Ранг:"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, colorButton)
+#: folderviewDisplayConfig.ui:409
+#, fuzzy
+msgid ""
+"Click this button to choose the color which is used for the text labels in "
+"the view."
+msgstr ""
+"Нажмите на эту кнопку чтобы выбрать цвет для имён файлов и папок в виджете."
+
+#. i18n: ectx: property (text), widget (QLabel, drawShadowsLabel)
+#: folderviewDisplayConfig.ui:419
+#, fuzzy
+msgid "Shadows:"
+msgstr "Тени:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, drawShadows)
+#: folderviewDisplayConfig.ui:436
+#, fuzzy
+msgid ""
+"<html><body><p>Check this option if you want the text labels to cast a "
+"shadow on the background.</p>\n"
+"<p></p>\n"
+"<p>Shadows help make the text easier to read by making it stand out more "
+"from the background.</p>\n"
+"<p></p>\n"
+"<p><i>Note that with dark text colors, this option will cause the text to "
+"glow with a bright halo, instead of casting a shadow.</i></p></body></html>"
+msgstr ""
+"<html><body><p>Включите этот параметр чтобы показывать имена файлов и папок "
+"с тенью.</p>\n"
+"<p></p>\n"
+"<p>Использование тени улучшает читаемость надписей.</p>\n"
+"<p></p>\n"
+"<p><i>Если используется тёмный цвет для надписей, вместо тени буквы будут "
+"подсвечены.</i></p></body></html>"
+
+#. i18n: ectx: property (toolTip), widget (QComboBox, filterType)
+#: folderviewFilterConfig.ui:34
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">If you have selected "
+"\"Show Files Matching\" or \"Hide Files Matching\", only the files matching "
+"BOTH the conditions will be shown or hidden respectively.</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">For example, if you have "
+"\"*\" as your pattern, but have nothing selected in the MIME types, no files "
+"will be shown.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, filterType)
+#: folderviewFilterConfig.ui:41
+msgid "Show All Files"
+msgstr "Намоиши ҳамаи файлҳо"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, filterType)
+#: folderviewFilterConfig.ui:46
+msgid "Show Files Matching"
+msgstr "Показать только файлы по шаблону"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, filterType)
+#: folderviewFilterConfig.ui:51
+msgid "Hide Files Matching"
+msgstr "Скрыть файлы по шаблону"
+
+#. i18n: ectx: property (text), widget (QPushButton, selectAll)
+#: folderviewFilterConfig.ui:96
+msgid "Select All"
+msgstr "Интихоби ҳама"
+
+#. i18n: ectx: property (text), widget (QPushButton, deselectAll)
+#: folderviewFilterConfig.ui:103
+msgid "Deselect All"
+msgstr "&Аз қайдгирии ҳама"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, label)
+#: folderviewFilterConfig.ui:112
+msgid ""
+"Note that if you have selected \"Show Files Matching\" or \"Hide Files "
+"Matching\",\n"
+"only the files matching BOTH the conditions will be shown or hidden "
+"respectively.\n"
+"For example, if you have \"*\" as your pattern, but have nothing selected in "
+"the MIME types, no files will be shown."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: folderviewFilterConfig.ui:115
+msgid "<a href=\"null\">Cannot See Any Files?</a>"
+msgstr ""
+
+#. i18n: ectx: property (clickMessage), widget (KLineEdit, searchMimetype)
+#: folderviewFilterConfig.ui:142
+msgid "Search file type"
+msgstr "Ҷустуҷӯи намуди файл"
+
+#. i18n: ectx: property (text), widget (QLabel, fileTypesLabel)
+#: folderviewFilterConfig.ui:152
+msgid "File types:"
+msgstr "Намудҳои файл:"
+
+#. i18n: ectx: property (text), widget (QLabel, fileNameLabel)
+#: folderviewFilterConfig.ui:159
+msgid "File name pattern:"
+msgstr "Шаблон имён файлов:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, filterFilesPattern)
+#: folderviewFilterConfig.ui:172
+#, fuzzy
+msgid "Space-separated list of extensions, e.g. *.txt *.od*"
+msgstr "Разделённый пробелами список расширений, например, *.txt * .od*"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, filterFilesPattern)
+#: folderviewFilterConfig.ui:175
+#, fuzzy
+msgid ""
+"Space-separated list of extensions, e.g. *.txt *.od* to display only office- "
+"and text-files"
+msgstr ""
+"Разделённый пробелами список расширений, например, *.txt * .od* для показа "
+"только текстовых файлов и документов"
+
+#. i18n: ectx: property (clickMessage), widget (KLineEdit, filterFilesPattern)
+#: folderviewFilterConfig.ui:184
+msgid "Pattern filter"
+msgstr "Фильтр по шаблону"
+
+#. i18n: ectx: property (text), widget (QRadioButton, showDesktopFolder)
+#: folderviewLocationConfig.ui:17
+msgid "Show the Desktop folder"
+msgstr "Намоиши ҷузвдони мизи корӣ"
+
+#. i18n: ectx: property (text), widget (QRadioButton, showActivity)
+#: folderviewLocationConfig.ui:24
+msgid "Show the files related to the current activity"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, showPlace)
+#: folderviewLocationConfig.ui:31
+msgid "Show a place:"
+msgstr "Намоиши макон:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, showCustomFolder)
+#: folderviewLocationConfig.ui:61
+msgid "Specify a folder:"
+msgstr "Ҷузвдонро муайян кунед:"
+
+#. i18n: ectx: property (clickMessage), widget (KUrlRequester, lineEdit)
+#: folderviewLocationConfig.ui:92
+msgid "Type a path or a URL here"
+msgstr "Путь к папке или URL"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: folderviewPreviewConfig.ui:16
+msgid "Check the file types you want icon previews for:"
+msgstr "Выберите типы файлов для показа миниатюр:"
+
 #: iconview.cpp:1240
 msgid "This folder is empty."
 msgstr "Ин ҷузвдон холӣ аст."
@@ -223,10 +557,6 @@ msgstr "Албом:"
 #, kde-format
 msgid "%1 MPixels"
 msgstr ""
-
-#: tooltipwidget.cpp:145
-msgid "Size:"
-msgstr "Андоза:"
 
 #: tooltipwidget.cpp:148
 msgid "Camera:"
@@ -297,205 +627,6 @@ msgid "1 item"
 msgid_plural "%1 items"
 msgstr[0] "1 чиз"
 msgstr[1] "%1 чиз"
-
-#~ msgid "Custom title:"
-#~ msgstr "Сарлавҳаи шахсӣ:"
-
-#~ msgid "Arrangement:"
-#~ msgstr "Расположение:"
-
-#, fuzzy
-#~ msgid ""
-#~ "Use this control to choose if you want the icons to be arranged top to "
-#~ "bottom starting on the left side of the view, or arranged left to right "
-#~ "starting at the top of the view."
-#~ msgstr ""
-#~ "Выберите порядок расположения значков: сверху вниз или слева направо."
-
-#~ msgid "Sorting:"
-#~ msgstr "Тартибдиҳӣ:"
-
-#~ msgid ""
-#~ "Use this control to choose the criteria by which the icons will be sorted "
-#~ "in the view."
-#~ msgstr "Выберите из списка тип сортировки значков."
-
-#~ msgid "Small"
-#~ msgstr "Хурд"
-
-#~ msgid ""
-#~ "Use this slider to increase or decrease the size of the icons in the view."
-#~ msgstr "Используйте ползунок чтобы изменить размер значков в виджете."
-
-#~ msgid "Large"
-#~ msgstr "Калон"
-
-#~ msgid "Previews:"
-#~ msgstr "Пешнамоиш:"
-
-#~ msgid ""
-#~ "Check this option if you want to see previews of the file contents in the "
-#~ "icons."
-#~ msgstr ""
-#~ "Включите этот параметр, чтобы показывать миниатюры содержимого файлов."
-
-#~ msgid ""
-#~ "Click this button to choose for which types of files previews will be "
-#~ "shown."
-#~ msgstr ""
-#~ "Нажмите на эту кнопку, чтобы выбрать для каких типов файлов показывать "
-#~ "миниатюры."
-
-#~ msgid "More Preview Options..."
-#~ msgstr "Бештар имконоти пешнамоиш..."
-
-#~ msgid "Lock in place:"
-#~ msgstr "Зафиксировать значки:"
-
-#~ msgid ""
-#~ "Check this option if you do not want the icons to be moveable in the "
-#~ "view.\n"
-#~ "\n"
-#~ "This option is useful if you want to avoid accidentally moving the icons "
-#~ "while interacting with them."
-#~ msgstr ""
-#~ "Включите этот параметр чтобы заблокировать перетаскивание значков в "
-#~ "виджете.\n"
-#~ "\n"
-#~ "Эта возможность полезна, если вы не хотите случайно сдвинуть значки при "
-#~ "работе с ними."
-
-#~ msgid "Align to grid:"
-#~ msgstr "Выровнять по сетке:"
-
-#~ msgid ""
-#~ "Check this option if you want the icons to be arranged in a grid.\n"
-#~ "\n"
-#~ "When this option is checked, icons will automatically snap to the nearest "
-#~ "grid cell when you move them around in the view."
-#~ msgstr "Включите этот параметр чтобы выровнять значки по сетке."
-
-#, fuzzy
-#~| msgid ""
-#~| "Check this option if you want the icons to be arranged in a grid.\n"
-#~| "\n"
-#~| "When this option is checked, icons will automatically snap to the "
-#~| "nearest grid cell when you move them around in the view."
-#~ msgid ""
-#~ "Check this option if you want folder previews to appear only when "
-#~ "clicked. When this option is turned off, folder previews will appear "
-#~ "automatically when the mouse hovers over a folder."
-#~ msgstr "Включите этот параметр чтобы выровнять значки по сетке."
-
-#, fuzzy
-#~| msgid "Icon size:"
-#~ msgid "Icon Text"
-#~ msgstr "Андозаи нишона:"
-
-#~ msgid "Lines:"
-#~ msgstr "Хатҳо:"
-
-#~ msgid ""
-#~ "Use this control to choose how many lines of text will be shown below the "
-#~ "icons."
-#~ msgstr ""
-#~ "Используйте это поле чтобы задать количество строк текста для имён файлов "
-#~ "и папок."
-
-#~ msgid "1 line"
-#~ msgstr "1 хат"
-
-#~ msgid " lines"
-#~ msgstr " хат"
-
-#~ msgid "Color:"
-#~ msgstr "Ранг:"
-
-#, fuzzy
-#~ msgid ""
-#~ "Click this button to choose the color which is used for the text labels "
-#~ "in the view."
-#~ msgstr ""
-#~ "Нажмите на эту кнопку чтобы выбрать цвет для имён файлов и папок в "
-#~ "виджете."
-
-#, fuzzy
-#~ msgid "Shadows:"
-#~ msgstr "Тени:"
-
-#, fuzzy
-#~ msgid ""
-#~ "<html><body><p>Check this option if you want the text labels to cast a "
-#~ "shadow on the background.</p>\n"
-#~ "<p></p>\n"
-#~ "<p>Shadows help make the text easier to read by making it stand out more "
-#~ "from the background.</p>\n"
-#~ "<p></p>\n"
-#~ "<p><i>Note that with dark text colors, this option will cause the text to "
-#~ "glow with a bright halo, instead of casting a shadow.</i></p></body></"
-#~ "html>"
-#~ msgstr ""
-#~ "<html><body><p>Включите этот параметр чтобы показывать имена файлов и "
-#~ "папок с тенью.</p>\n"
-#~ "<p></p>\n"
-#~ "<p>Использование тени улучшает читаемость надписей.</p>\n"
-#~ "<p></p>\n"
-#~ "<p><i>Если используется тёмный цвет для надписей, вместо тени буквы будут "
-#~ "подсвечены.</i></p></body></html>"
-
-#~ msgid "Show All Files"
-#~ msgstr "Намоиши ҳамаи файлҳо"
-
-#~ msgid "Show Files Matching"
-#~ msgstr "Показать только файлы по шаблону"
-
-#~ msgid "Hide Files Matching"
-#~ msgstr "Скрыть файлы по шаблону"
-
-#~ msgid "Select All"
-#~ msgstr "Интихоби ҳама"
-
-#~ msgid "Deselect All"
-#~ msgstr "&Аз қайдгирии ҳама"
-
-#~ msgid "Search file type"
-#~ msgstr "Ҷустуҷӯи намуди файл"
-
-#~ msgid "File types:"
-#~ msgstr "Намудҳои файл:"
-
-#~ msgid "File name pattern:"
-#~ msgstr "Шаблон имён файлов:"
-
-#, fuzzy
-#~ msgid "Space-separated list of extensions, e.g. *.txt *.od*"
-#~ msgstr "Разделённый пробелами список расширений, например, *.txt * .od*"
-
-#, fuzzy
-#~ msgid ""
-#~ "Space-separated list of extensions, e.g. *.txt *.od* to display only "
-#~ "office- and text-files"
-#~ msgstr ""
-#~ "Разделённый пробелами список расширений, например, *.txt * .od* для "
-#~ "показа только текстовых файлов и документов"
-
-#~ msgid "Pattern filter"
-#~ msgstr "Фильтр по шаблону"
-
-#~ msgid "Show the Desktop folder"
-#~ msgstr "Намоиши ҷузвдони мизи корӣ"
-
-#~ msgid "Show a place:"
-#~ msgstr "Намоиши макон:"
-
-#~ msgid "Specify a folder:"
-#~ msgstr "Ҷузвдонро муайян кунед:"
-
-#~ msgid "Type a path or a URL here"
-#~ msgstr "Путь к папке или URL"
-
-#~ msgid "Check the file types you want icon previews for:"
-#~ msgstr "Выберите типы файлов для показа миниатюр:"
 
 #~| msgid ""
 #~| "Check this option if you want to see previews of the file contents in "
