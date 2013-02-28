@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-25 02:04+0100\n"
+"POT-Creation-Date: 2013-02-28 02:09+0100\n"
 "PO-Revision-Date: 2011-09-11 03:29+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <http://www.kde.tj>\n"
@@ -2430,57 +2430,46 @@ msgstr "Худитмомӣ"
 msgid "Label"
 msgstr "Бунафшаранг"
 
-#. i18n: ectx: property (windowTitle), widget (QDialog, DetailGroupSectionDialog)
-#: koreport/wrtembed/detailgroupsectiondialog.ui:30
+#: koreport/wrtembed/detailgroupsectiondialog.cpp:38
 #, fuzzy
 #| msgid "Section Title"
 msgid "Group Section Editor"
 msgstr "Феҳристи қисм"
 
 #. i18n: ectx: property (text), widget (QLabel, lblColumn)
-#: koreport/wrtembed/detailgroupsectiondialog.ui:38
+#: koreport/wrtembed/detailgroupsectiondialog.ui:29
 #, fuzzy
 #| msgid "Columns:"
 msgid "Column:"
 msgstr "Сутун:"
 
 #. i18n: ectx: property (text), widget (QLabel, lblSort)
-#: koreport/wrtembed/detailgroupsectiondialog.ui:55
+#: koreport/wrtembed/detailgroupsectiondialog.ui:46
 #, fuzzy
 #| msgid "Street"
-msgid "Sort"
+msgid "Sort:"
 msgstr "Кӯча"
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbHead)
-#: koreport/wrtembed/detailgroupsectiondialog.ui:74
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: koreport/wrtembed/detailgroupsectiondialog.ui:63
 #, fuzzy
 #| msgid "Change Shadow"
-msgid "Show Group Header"
+msgid "Show group header:"
 msgstr "Тағйири соя"
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbFoot)
-#: koreport/wrtembed/detailgroupsectiondialog.ui:81
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: koreport/wrtembed/detailgroupsectiondialog.ui:77
 #, fuzzy
 #| msgid "Change Shadow"
-msgid "Show Group Footer"
+msgid "Show group footer:"
 msgstr "Тағйири соя"
 
-#. i18n: ectx: property (text), widget (QCheckBox, breakAfterFooter)
-#: koreport/wrtembed/detailgroupsectiondialog.ui:88
-msgid "Insert Page Break After this Footer"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QPushButton, btnOk)
-#: koreport/wrtembed/detailgroupsectiondialog.ui:135
-msgid "&OK"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QPushButton, bntCancel)
-#: koreport/wrtembed/detailgroupsectiondialog.ui:148
+#. i18n: ectx: property (text), widget (QLabel, breakAfterFooterLabel)
+#: koreport/wrtembed/detailgroupsectiondialog.ui:94
 #, fuzzy
-#| msgid "Change"
-msgid "&Cancel"
-msgstr "Тағйир кардан"
+#| msgid "Insert break after paragraph"
+msgid "Insert page break after group footer:"
+msgstr "Гузоштани роғ баъди абзас"
 
 #: koreport/wrtembed/KoReportDesigner.cpp:497
 msgid "Page Header (Any)"
@@ -2522,16 +2511,12 @@ msgstr ""
 msgid "Page Footer (Last)"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbReportHeader)
 #: koreport/wrtembed/KoReportDesigner.cpp:537
-#: koreport/wrtembed/sectioneditor.ui:47
 #, fuzzy
 msgid "Report Header"
 msgstr "&Унвони саҳифаи болоӣ"
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbReportFooter)
 #: koreport/wrtembed/KoReportDesigner.cpp:541
-#: koreport/wrtembed/sectioneditor.ui:104
 #, fuzzy
 msgid "Report Footer"
 msgstr "&Унвони саҳифаи поёнӣ"
@@ -2647,141 +2632,126 @@ msgstr ""
 msgid "Detail"
 msgstr "&Пешфарзӣ"
 
-#: koreport/wrtembed/sectioneditor.cpp:279
-msgid "Ascending"
-msgstr ""
-
-#: koreport/wrtembed/sectioneditor.cpp:280
-msgid "Descending"
-msgstr ""
-
-#: koreport/wrtembed/sectioneditor.cpp:302
-#: koreport/wrtembed/sectioneditor.cpp:343
-msgid "Error Encountered"
-msgstr ""
-
-#: koreport/wrtembed/sectioneditor.cpp:303
-#: koreport/wrtembed/sectioneditor.cpp:344
-msgid "Unable to add a new group because its name would not be unique"
-msgstr ""
-
-#. i18n: ectx: property (windowTitle), widget (QDialog, SectionEditor)
-#: koreport/wrtembed/sectioneditor.ui:30
+#: koreport/wrtembed/sectioneditor.cpp:59
 #, fuzzy
 #| msgid "Section Title"
 msgid "Section Editor"
 msgstr "Феҳристи қисм"
 
-#. i18n: ectx: property (title), widget (QGroupBox, gbPageFooter)
-#: koreport/wrtembed/sectioneditor.ui:54
+#: koreport/wrtembed/sectioneditor.cpp:63
 #, fuzzy
-msgid "Page Footer"
-msgstr "&Унвони саҳифаи поёнӣ"
+#| msgid "Load..."
+msgid "Add..."
+msgstr "Боргирӣ..."
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbFootEven)
-#: koreport/wrtembed/sectioneditor.ui:66
+#: koreport/wrtembed/sectioneditor.cpp:65
+#: rdf/KoRdfCalendarEventTreeWidgetItem.cpp:50
+#: rdf/KoRdfFoaFTreeWidgetItem.cpp:70
 #, fuzzy
-#| msgid "Company Name"
-msgid "Even Page(s)"
-msgstr "Номи корхона"
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbFootFirst)
-#. i18n: ectx: property (text), widget (QCheckBox, cbHeadFirst)
-#: koreport/wrtembed/sectioneditor.ui:73
-#: koreport/wrtembed/sectioneditor.ui:137
-#, fuzzy
-msgid "First Page"
-msgstr "Саҳифаи баъдӣ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbFootLast)
-#. i18n: ectx: property (text), widget (QCheckBox, cbHeadLast)
-#: koreport/wrtembed/sectioneditor.ui:80
-#: koreport/wrtembed/sectioneditor.ui:123
-#, fuzzy
-#| msgid "Paste Text"
-msgid "Last Page"
-msgstr "Гузориши матн аз буфери иввазот"
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbFootOdd)
-#. i18n: ectx: property (text), widget (QCheckBox, cbHeadOdd)
-#: koreport/wrtembed/sectioneditor.ui:87
-#: koreport/wrtembed/sectioneditor.ui:130
-#, fuzzy
-#| msgid "Company Name"
-msgid "Odd Page(s)"
-msgstr "Номи корхона"
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbFootAny)
-#: koreport/wrtembed/sectioneditor.ui:94
-#, fuzzy
-#| msgid "Company Name"
-msgid "Any Page(s)"
-msgstr "Номи корхона"
-
-#. i18n: ectx: property (title), widget (QGroupBox, gbPageHeader)
-#: koreport/wrtembed/sectioneditor.ui:111
-#, fuzzy
-#| msgid "Page Preview"
-msgid "Page Header"
-msgstr "Пешнамоиши саҳифот"
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbHeadEven)
-#: koreport/wrtembed/sectioneditor.ui:144
-#, fuzzy
-#| msgid "Company Name"
-msgid "Even Pages(s)"
-msgstr "Номи корхона"
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbHeadAny)
-#: koreport/wrtembed/sectioneditor.ui:151
-#, fuzzy
-#| msgid "Company Name"
-msgid "Any Pages(s)"
-msgstr "Номи корхона"
-
-#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
-#: koreport/wrtembed/sectioneditor.ui:163
-#, fuzzy
-#| msgid "Current Section"
-msgid "Group Sections"
-msgstr "Қисми равон"
-
-#. i18n: ectx: property (text), widget (QPushButton, btnAdd)
-#: koreport/wrtembed/sectioneditor.ui:186 main/KoVersionDialog.cpp:72
-msgid "&Add"
-msgstr "&Афзудан"
-
-#. i18n: ectx: property (text), widget (QPushButton, btnEdit)
-#: koreport/wrtembed/sectioneditor.ui:193
-#, fuzzy
-msgid "&Edit"
+msgid "Edit..."
 msgstr "&Афзудани гурӯҳ..."
 
-#. i18n: ectx: property (text), widget (QPushButton, btnRemove)
-#: koreport/wrtembed/sectioneditor.ui:200
+#: koreport/wrtembed/sectioneditor.cpp:67
 #: kotext/commands/ChangeTrackedDeleteCommand.cpp:282
 #, fuzzy
 msgid "Delete"
 msgstr "Ҳузфи матн"
 
-#. i18n: ectx: property (text), widget (QPushButton, btnMoveUp)
-#: koreport/wrtembed/sectioneditor.ui:207
+#: koreport/wrtembed/sectioneditor.cpp:69
 #, fuzzy
-msgid "Move &Up"
+msgid "Move Up"
 msgstr "Ҳузфи матн"
 
-#. i18n: ectx: property (text), widget (QPushButton, brnMoveDown)
-#: koreport/wrtembed/sectioneditor.ui:214
+#: koreport/wrtembed/sectioneditor.cpp:71
 #, fuzzy
-msgid "Move &Down"
+msgid "Move Down"
 msgstr "Ҳузфи матн"
 
-#. i18n: ectx: property (text), widget (QPushButton, buttonOk)
-#: koreport/wrtembed/sectioneditor.ui:266
+#: koreport/wrtembed/sectioneditor.cpp:306
+msgid "Ascending"
+msgstr ""
+
+#: koreport/wrtembed/sectioneditor.cpp:307
+msgid "Descending"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbReportHeader)
+#: koreport/wrtembed/sectioneditor.ui:29
 #, fuzzy
-#| msgid "Colors"
-msgid "&Close"
-msgstr "Рангҳо"
+#| msgid "Change Shadow"
+msgid "Show report header"
+msgstr "Тағйири соя"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbReportFooter)
+#: koreport/wrtembed/sectioneditor.ui:36
+#, fuzzy
+#| msgid "Change Shadow"
+msgid "Show report footer"
+msgstr "Тағйири соя"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbPageHeader)
+#: koreport/wrtembed/sectioneditor.ui:43
+#, fuzzy
+#| msgid "Page Preview"
+msgid "Page Header"
+msgstr "Пешнамоиши саҳифот"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: koreport/wrtembed/sectioneditor.ui:51
+#: koreport/wrtembed/sectioneditor.ui:138
+#, fuzzy
+msgid "First page:"
+msgstr "Саҳифаи баъдӣ"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: koreport/wrtembed/sectioneditor.ui:65
+#: koreport/wrtembed/sectioneditor.ui:152
+#, fuzzy
+#| msgid "Company Name"
+msgid "Even pages:"
+msgstr "Номи корхона"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: koreport/wrtembed/sectioneditor.ui:79
+#: koreport/wrtembed/sectioneditor.ui:166
+#, fuzzy
+#| msgid "Company Name"
+msgid "Any pages:"
+msgstr "Номи корхона"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#: koreport/wrtembed/sectioneditor.ui:97
+#: koreport/wrtembed/sectioneditor.ui:184
+#, fuzzy
+#| msgid "Paste Text"
+msgid "Last page:"
+msgstr "Гузориши матн аз буфери иввазот"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#. i18n: ectx: property (text), widget (QLabel, label_12)
+#: koreport/wrtembed/sectioneditor.ui:111
+#: koreport/wrtembed/sectioneditor.ui:198
+#, fuzzy
+#| msgid "Company Name"
+msgid "Odd pages:"
+msgstr "Номи корхона"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbPageHeader_2)
+#: koreport/wrtembed/sectioneditor.ui:130
+#, fuzzy
+msgid "Page Footer"
+msgstr "&Унвони саҳифаи поёнӣ"
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
+#: koreport/wrtembed/sectioneditor.ui:217
+#, fuzzy
+#| msgid "Current Section"
+msgid "Group Sections"
+msgstr "Қисми равон"
 
 #: kotext/commands/ChangeListCommand.cpp:41
 #: kotext/commands/ChangeListCommand.cpp:88
@@ -4552,6 +4522,10 @@ msgstr ""
 msgid "Comment"
 msgstr "Эзоҳ"
 
+#: main/KoVersionDialog.cpp:72
+msgid "&Add"
+msgstr "&Афзудан"
+
 #: main/KoVersionDialog.cpp:78
 #, fuzzy
 msgid "&Modify"
@@ -5844,12 +5818,6 @@ msgstr "Вақт"
 msgid "Calendar Event"
 msgstr ""
 
-#: rdf/KoRdfCalendarEventTreeWidgetItem.cpp:50
-#: rdf/KoRdfFoaFTreeWidgetItem.cpp:70
-#, fuzzy
-msgid "Edit..."
-msgstr "&Афзудани гурӯҳ..."
-
 #: rdf/KoRdfCalendarEventTreeWidgetItem.cpp:53
 msgid "Import event to Calendar"
 msgstr ""
@@ -6812,6 +6780,34 @@ msgid "%1"
 msgstr "%1%"
 
 #, fuzzy
+#~| msgid "Change"
+#~ msgid "&Cancel"
+#~ msgstr "Тағйир кардан"
+
+#, fuzzy
+#~ msgid "First Page"
+#~ msgstr "Саҳифаи баъдӣ"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Even Pages(s)"
+#~ msgstr "Номи корхона"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Any Pages(s)"
+#~ msgstr "Номи корхона"
+
+#, fuzzy
+#~ msgid "&Edit"
+#~ msgstr "&Афзудани гурӯҳ..."
+
+#, fuzzy
+#~| msgid "Colors"
+#~ msgid "&Close"
+#~ msgstr "Рангҳо"
+
+#, fuzzy
 #~ msgid "Creation error"
 #~ msgstr "Худитмомӣ"
 
@@ -7497,10 +7493,6 @@ msgstr "%1%"
 #, fuzzy
 #~ msgid "Vertical Stretch"
 #~ msgstr "&Амудӣ"
-
-#, fuzzy
-#~ msgid "First page:"
-#~ msgstr "Саҳифаи баъдӣ"
 
 #, fuzzy
 #~| msgid "Confirm Save"
@@ -8426,9 +8418,6 @@ msgstr "%1%"
 #~ msgid "Insert break before paragraph"
 #~ msgstr "Гузоштани роғ байни абзасҳо"
 
-#~ msgid "Insert break after paragraph"
-#~ msgstr "Гузоштани роғ баъди абзас"
-
 #~ msgid "General &Layout"
 #~ msgstr "Нақшаи &умумӣ"
 
@@ -8481,9 +8470,6 @@ msgstr "%1%"
 #, fuzzy
 #~ msgid "Select styles to import:"
 #~ msgstr "Ворид намудани услуб:"
-
-#~ msgid "Load..."
-#~ msgstr "Боргирӣ..."
 
 #, fuzzy
 #~| msgid "Alignment"
