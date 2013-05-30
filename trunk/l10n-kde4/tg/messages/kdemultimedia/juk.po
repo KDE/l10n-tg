@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: juk\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-01-26 03:25+0100\n"
+"POT-Creation-Date: 2013-05-30 01:53+0000\n"
 "PO-Revision-Date: 2004-07-01 16:58+0000\n"
 "Last-Translator: Hiromon <H_Abrorova@rambler.ru>\n"
 "Language-Team:  <tajik>\n"
@@ -102,7 +102,7 @@ msgid "Remove Cover"
 msgstr "Хориҷкунии Феҳрист"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, CoverDialogBase)
-#: coverdialogbase.ui:13 playlistcollection.cpp:900
+#: coverdialogbase.ui:13 playlistcollection.cpp:955
 msgid "Cover Manager"
 msgstr ""
 
@@ -167,11 +167,11 @@ msgstr ""
 msgid "&Delete files instead of moving them to the trash"
 msgstr ""
 
-#: directorylist.cpp:48
+#: directorylist.cpp:50
 msgid "Folder List"
 msgstr "Рӯйхати Феҳристҳо"
 
-#: directorylist.cpp:146
+#: directorylist.cpp:191
 msgid "Music"
 msgstr ""
 
@@ -181,22 +181,30 @@ msgid "Please choose the folders where you keep your music:"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QListView, directoryListView)
-#: directorylistbase.ui:34
+#. i18n: ectx: property (toolTip), widget (QListView, excludeDirectoryListView)
+#: directorylistbase.ui:34 directorylistbase.ui:117
 msgid "These folders will be scanned on startup for new files."
 msgstr "Ин феҳристҳо ҳангоми оғозёбии файлҳои нав сканер карда мешаванд."
 
 #. i18n: ectx: property (text), widget (KPushButton, addDirectoryButton)
-#: directorylistbase.ui:64
+#. i18n: ectx: property (text), widget (KPushButton, addExcludeDirectoryButton)
+#: directorylistbase.ui:64 directorylistbase.ui:147
 msgid "Add Folder..."
 msgstr "Иловакунии Феҳрист..."
 
 #. i18n: ectx: property (text), widget (KPushButton, removeDirectoryButton)
-#: directorylistbase.ui:71
+#. i18n: ectx: property (text), widget (KPushButton, removeExcludeDirectoryButton)
+#: directorylistbase.ui:71 directorylistbase.ui:154
 msgid "Remove Folder"
 msgstr "Хориҷкунии Феҳрист"
 
+#. i18n: ectx: property (text), widget (QLabel, ExcludeInformationLabel)
+#: directorylistbase.ui:102
+msgid "Please choose the folders that should be excluded from music search:"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QCheckBox, importPlaylistsCheckBox)
-#: directorylistbase.ui:98
+#: directorylistbase.ui:183
 msgid "Import playlists"
 msgstr "Воридоти Рӯйхати Бозикуниҳо"
 
@@ -1075,40 +1083,40 @@ msgstr "Номи Файл (Роҳи Пурра)"
 msgid "&Show Columns"
 msgstr "&Нишондиҳии Сутунҳо"
 
-#: playlist.cpp:2135
+#: playlist.cpp:2124
 msgid "Add to Play Queue"
 msgstr ""
 
-#: playlist.cpp:2148 playlist.cpp:2298
+#: playlist.cpp:2137 playlist.cpp:2287
 #, fuzzy
 msgid "Edit"
 msgstr "Таҳрири '%1'"
 
-#: playlist.cpp:2163
+#: playlist.cpp:2152
 #, fuzzy
 msgid "Create Playlist From Selected Items..."
 msgstr "Офаридани Рӯйхати Бозикуниҳо Аз Элементҳои Интихобшуда"
 
-#: playlist.cpp:2184
+#: playlist.cpp:2173
 #, kde-format
 msgid "Edit '%1'"
 msgstr "Таҳрири '%1'"
 
-#: playlist.cpp:2296
+#: playlist.cpp:2285
 msgid "This will edit multiple files. Are you sure?"
 msgstr "Ин файлҳои зиёдро таҳрир мекунад. Шумо боварӣ доред?"
 
-#: playlist.cpp:2355 playlistcollection.h:180
+#: playlist.cpp:2344 playlistcollection.h:187
 msgid "Create New Playlist"
 msgstr "Офаридани Рӯйхати Нави Бозикуниҳо"
 
-#: playlist.cpp:2364
+#: playlist.cpp:2353
 msgid ""
 "Manual column widths have been enabled.  You can switch back to automatic "
 "column sizes in the view menu."
 msgstr ""
 
-#: playlist.cpp:2367
+#: playlist.cpp:2356
 msgid "Manual Column Widths Enabled"
 msgstr ""
 
@@ -1120,7 +1128,7 @@ msgstr "Намуди Усулҳо"
 msgid "Show &History"
 msgstr "Нишон додани &Таърих"
 
-#: playlistbox.cpp:214 playlistcollection.cpp:403
+#: playlistbox.cpp:214 playlistcollection.cpp:424
 #, fuzzy
 #| msgid "Duplicate"
 msgctxt "verb, copy the playlist"
@@ -1160,168 +1168,168 @@ msgstr "&Хориҷ кардан"
 msgid "Hid&e"
 msgstr ""
 
-#: playlistbox.cpp:671 playlistcollection.cpp:892
+#: playlistbox.cpp:671 playlistcollection.cpp:947
 msgid "R&emove"
 msgstr "&Хориҷ кардан"
 
-#: playlistcollection.cpp:189
+#: playlistcollection.cpp:205
 msgid "Dynamic List"
 msgstr "Рӯйхати Динамикӣ"
 
-#: playlistcollection.cpp:232
+#: playlistcollection.cpp:248
 #, fuzzy
 msgid "Now Playing"
 msgstr "Намоиши Рӯйхати бозикуниҳо"
 
-#: playlistcollection.cpp:334
+#: playlistcollection.cpp:350
 msgid ""
 "Do you want to add these items to the current list or to the collection list?"
 msgstr ""
 "Оё мехоҳед, ки ин элементҳоро ба рӯйхати зерин ё ба рӯйхати маҷмӯъ илова "
 "кунед?"
 
-#: playlistcollection.cpp:336
+#: playlistcollection.cpp:352
 #, fuzzy
 #| msgid "Current"
 msgctxt "current playlist"
 msgid "Current"
 msgstr "Ҷорӣ"
 
-#: playlistcollection.cpp:337
+#: playlistcollection.cpp:353
 msgid "Collection"
 msgstr "Маҷмӯъ"
 
-#: playlistcollection.cpp:391
+#: playlistcollection.cpp:412
 msgid "Rename"
 msgstr "Бозномгузорӣ"
 
-#: playlistcollection.cpp:505
+#: playlistcollection.cpp:526
 msgid "Search Playlist"
 msgstr "Ҷустуҷӯи Рӯйхати Бозикуниҳо"
 
-#: playlistcollection.cpp:522
+#: playlistcollection.cpp:543
 msgid "Create Folder Playlist"
 msgstr "Офаридани Феҳристи Рӯйхати бозикуниҳо"
 
-#: playlistcollection.cpp:561
+#: playlistcollection.cpp:582
 msgid "History"
 msgstr "Таърих"
 
-#: playlistcollection.cpp:743
+#: playlistcollection.cpp:764
 msgid "Please enter a name for this playlist:"
 msgstr "Марҳамат карда номро барои рӯйхати бозикуниҳо ворид кунед:"
 
-#: playlistcollection.cpp:853
+#: playlistcollection.cpp:908
 #, fuzzy
 #| msgid "&New"
 msgctxt "new playlist"
 msgid "&New"
 msgstr "&Нав"
 
-#: playlistcollection.cpp:856
+#: playlistcollection.cpp:911
 msgid "&Empty Playlist..."
 msgstr "&Рӯйхати Бозикуниҳои Холӣ..."
 
-#: playlistcollection.cpp:858
+#: playlistcollection.cpp:913
 msgid "&Search Playlist..."
 msgstr "&Ҷустуҷӯи Рӯйхати Бозикуниҳо..."
 
-#: playlistcollection.cpp:860
+#: playlistcollection.cpp:915
 msgid "Playlist From &Folder..."
 msgstr "Рӯйхати Бозикуниҳо аз &Феҳрист..."
 
-#: playlistcollection.cpp:866
+#: playlistcollection.cpp:921
 msgid "&Guess Tag Information"
 msgstr "&Муайян кардани Маълумоти Борчасб"
 
-#: playlistcollection.cpp:871
+#: playlistcollection.cpp:926
 #, fuzzy
 msgid "From &File Name"
 msgstr "Аз номи &Файл"
 
-#: playlistcollection.cpp:873
+#: playlistcollection.cpp:928
 msgid "From &Internet"
 msgstr "Аз &Интернет"
 
-#: playlistcollection.cpp:876
+#: playlistcollection.cpp:931
 #, fuzzy
 msgid "Guess Tag Information From &File Name"
 msgstr "Фаҳмидани Маълумоти Борчасб Аз номи &Файл"
 
-#: playlistcollection.cpp:881
+#: playlistcollection.cpp:936
 msgid "Play First Track"
 msgstr "Бозидани Суруди Якум"
 
-#: playlistcollection.cpp:882
+#: playlistcollection.cpp:937
 msgid "Play Next Album"
 msgstr ""
 
-#: playlistcollection.cpp:888
+#: playlistcollection.cpp:943
 #, fuzzy
 #| msgid "Add &Folder..."
 msgid "Manage &Folders..."
 msgstr "Иловакунии &Феҳрист..."
 
-#: playlistcollection.cpp:889
+#: playlistcollection.cpp:944
 msgid "&Rename..."
 msgstr "&Бозномгузорӣ..."
 
-#: playlistcollection.cpp:890
+#: playlistcollection.cpp:945
 #, fuzzy
 #| msgid "D&uplicate..."
 msgctxt "verb, copy the playlist"
 msgid "D&uplicate..."
 msgstr "&Ду нусха кардан..."
 
-#: playlistcollection.cpp:893
+#: playlistcollection.cpp:948
 msgid "Reload"
 msgstr ""
 
-#: playlistcollection.cpp:894
+#: playlistcollection.cpp:949
 msgid "Edit Search..."
 msgstr "Таҳрири Ҷустуҷӯ..."
 
-#: playlistcollection.cpp:896
+#: playlistcollection.cpp:951
 msgid "&Delete"
 msgstr ""
 
-#: playlistcollection.cpp:897
+#: playlistcollection.cpp:952
 msgid "Refresh"
 msgstr "Навсозӣ"
 
-#: playlistcollection.cpp:898
+#: playlistcollection.cpp:953
 msgid "&Rename File"
 msgstr "&Бозномгузории Файл"
 
-#: playlistcollection.cpp:903
+#: playlistcollection.cpp:958
 #, fuzzy
 msgid "&View Cover"
 msgstr "Намуди Усулҳо"
 
-#: playlistcollection.cpp:905
+#: playlistcollection.cpp:960
 msgid "Get Cover From &File..."
 msgstr ""
 
-#: playlistcollection.cpp:907
+#: playlistcollection.cpp:962
 #, fuzzy
 msgid "Get Cover From &Internet..."
 msgstr "Аз &Интернет"
 
-#: playlistcollection.cpp:909
+#: playlistcollection.cpp:964
 msgid "&Delete Cover"
 msgstr ""
 
-#: playlistcollection.cpp:911
+#: playlistcollection.cpp:966
 #, fuzzy
 msgid "Show Cover &Manager"
 msgstr "&Нишондиҳии Сутунҳо"
 
-#: playlistcollection.cpp:915
+#: playlistcollection.cpp:970
 #, fuzzy
 msgid "Show &Play Queue"
 msgstr "Намоиши Рӯйхати бозикуниҳо"
 
-#: playlistcollection.h:183
+#: playlistcollection.h:190
 msgid "Playlist"
 msgstr "Рӯйхати бозикуниҳо"
 
