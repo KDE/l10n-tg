@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-08-30 01:39+0000\n"
+"POT-Creation-Date: 2013-09-07 01:40+0000\n"
 "PO-Revision-Date: 2005-09-17 13:21+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -248,10 +248,14 @@ msgstr ""
 msgid "Change visibility : %1"
 msgstr "Намоиш додани дидаша&ванда"
 
-#: cmds/generic/cmd_createUMLObject.cpp:29
+#: cmds/generic/cmd_createUMLObject.cpp:37
 #, fuzzy, kde-format
-msgid "Create uml object : %1"
+msgid "Create UML object : %1"
 msgstr "Натавонистам каталог бунёд созам"
+
+#: cmds/generic/cmd_createUMLObject.cpp:44
+msgid "Create UML object : CANNOT DO THAT, OBJECT IS NULL!"
+msgstr ""
 
 #: cmds/generic/cmd_renameUMLObject.cpp:25
 #, fuzzy, kde-format
@@ -259,7 +263,7 @@ msgstr "Натавонистам каталог бунёд созам"
 msgid "Rename object : %1 to %2"
 msgstr "Ба объект номи нав гузоштан"
 
-#: cmds/widget/cmd_changeFillColor.cpp:26
+#: cmds/widget/cmd_changeFillColor.cpp:27
 #, fuzzy, kde-format
 #| msgid "Use Fill Color"
 msgid "Change fill color : %1"
@@ -271,7 +275,7 @@ msgstr "Истифодаи ранги шероза"
 msgid "Change font : %1"
 msgstr "Дигаргун кардани ҳарф..."
 
-#: cmds/widget/cmd_changeLineColor.cpp:34
+#: cmds/widget/cmd_changeLineColor.cpp:36
 #, fuzzy, kde-format
 msgid "Change line color : %1"
 msgstr "Тағйири ҳарф"
@@ -282,7 +286,7 @@ msgstr "Тағйири ҳарф"
 msgid "Change multiplicity : %1 to %2"
 msgstr "Тағйири бисёрӣ..."
 
-#: cmds/widget/cmd_changeTextColor.cpp:24
+#: cmds/widget/cmd_changeTextColor.cpp:26
 #, fuzzy, kde-format
 msgid "Change text color : %1"
 msgstr "Тағйири ҳарф"
@@ -3627,8 +3631,8 @@ msgstr "Номи воридшуда нодуруст аст."
 msgid "The name you have entered is not unique."
 msgstr "Ин хел ном аллакай вуҷуд дорад."
 
-#: dialogs/umlviewdialog.cpp:233 umldoc.cpp:1416 umllistview.cpp:2330
-#: umllistview.cpp:2337 umllistview.cpp:2602
+#: dialogs/umlviewdialog.cpp:233 umldoc.cpp:1416 umllistview.cpp:2314
+#: umllistview.cpp:2321 umllistview.cpp:2586
 msgid "Name Not Unique"
 msgstr "Ном якхела нест"
 
@@ -6227,13 +6231,13 @@ msgid "There was a problem loading file: %1"
 msgstr "Ҳангоми пурборкунии файл хатогӣ рӯй дода шуд: %1"
 
 #: umldoc.cpp:620 umldoc.cpp:630 umldoc.cpp:647 umldoc.cpp:680 umldoc.cpp:698
-#: umllistview.cpp:562 umlviewimageexportermodel.cpp:257
+#: umllistview.cpp:553 umlviewimageexportermodel.cpp:257
 #, kde-format
 msgid "There was a problem saving file: %1"
 msgstr "Ҳангоми нигоҳдории файл хатогӣ рӯй дода шуд: %1"
 
 #: umldoc.cpp:620 umldoc.cpp:630 umldoc.cpp:647 umldoc.cpp:680 umldoc.cpp:698
-#: umldoc.cpp:705 umllistview.cpp:563
+#: umldoc.cpp:705 umllistview.cpp:554
 msgid "Save Error"
 msgstr "Нигоҳдории нодуруст"
 
@@ -6314,7 +6318,7 @@ msgctxt "renaming child uml object"
 msgid "Name"
 msgstr "Ном"
 
-#: umldoc.cpp:1415 umllistview.cpp:2329
+#: umldoc.cpp:1415 umllistview.cpp:2313
 msgid ""
 "The name you entered was not unique.\n"
 "Is this what you wanted?"
@@ -6322,12 +6326,12 @@ msgstr ""
 "Чунин ном аллакай вуҷуд дорад.\n"
 "Шумо дар ҳақиқат ҳаминро мехоҳед?"
 
-#: umldoc.cpp:1416 umllistview.cpp:2330
+#: umldoc.cpp:1416 umllistview.cpp:2314
 #, fuzzy
 msgid "Use Name"
 msgstr "Собиқа"
 
-#: umldoc.cpp:1416 umllistview.cpp:2330
+#: umldoc.cpp:1416 umllistview.cpp:2314
 #, fuzzy
 msgid "Enter New Name"
 msgstr "Номи ҳолатро гузоред"
@@ -6362,49 +6366,49 @@ msgstr "Пурборкунии диаграммаҳо..."
 msgid "/autosave%1"
 msgstr "/автохотиргузори%1"
 
-#: umllistview.cpp:523
+#: umllistview.cpp:514
 msgid "Externalize Folder"
 msgstr ""
 
-#: umllistview.cpp:544
+#: umllistview.cpp:535
 #, kde-format
 msgid "Folder %1 must be relative to the main model directory, %2."
 msgstr ""
 
-#: umllistview.cpp:545
+#: umllistview.cpp:536
 #, fuzzy
 #| msgid "Paste Error"
 msgid "Path Error"
 msgstr "Часпондани хато"
 
-#: umllistview.cpp:553
+#: umllistview.cpp:544
 #, kde-format
 msgid ""
 "File %1 already exists!\n"
 "The existing file will be overwritten."
 msgstr ""
 
-#: umllistview.cpp:554
+#: umllistview.cpp:545
 #, fuzzy
 #| msgid "File Already Exists"
 msgid "File Exist"
 msgstr "Файл аллакай вуҷуд дорад"
 
-#: umllistview.cpp:594
+#: umllistview.cpp:585
 #, fuzzy
 msgid "Enter Model Name"
 msgstr "Номи ҳолатро гузоред"
 
-#: umllistview.cpp:595
+#: umllistview.cpp:586
 #, fuzzy
 msgid "Enter the new name of the model:"
 msgstr "Номи нави фаъолиятро гузоред:"
 
-#: umllistview.cpp:1338
+#: umllistview.cpp:1324
 msgid "Views"
 msgstr "Пешниҳодҳо"
 
-#: umllistview.cpp:2319
+#: umllistview.cpp:2303
 msgid ""
 "The name you entered was invalid.\n"
 "Creation process has been canceled."
@@ -6412,11 +6416,11 @@ msgstr ""
 "Номи ворид карда шуда имконпазир аст.\n"
 "Бунёкунӣ бекор карда шуд."
 
-#: umllistview.cpp:2320 umllistviewitem.cpp:719
+#: umllistview.cpp:2304 umllistviewitem.cpp:696
 msgid "Name Not Valid"
 msgstr "Ном нодуруст аст"
 
-#: umllistview.cpp:2336 umllistview.cpp:2601
+#: umllistview.cpp:2320 umllistview.cpp:2585
 #, fuzzy
 msgid ""
 "The name you entered was not unique.\n"
@@ -6425,39 +6429,39 @@ msgstr ""
 "Номи ворид карда шуда аллакай истифода шуда истодааст\n"
 "Бунёдкунӣ бекор карда шуд."
 
-#: umllistview.cpp:2559 umllistview.cpp:2576 umllistview.cpp:2591
-#: umllistview.cpp:2621
+#: umllistview.cpp:2543 umllistview.cpp:2560 umllistview.cpp:2575
+#: umllistview.cpp:2605
 msgid "Creation canceled"
 msgstr ""
 
-#: umllistview.cpp:2879
+#: umllistview.cpp:2863
 #, fuzzy
 msgid "Loading listview..."
 msgstr "Пурбори диаграммаҳо..."
 
-#: umllistview.cpp:3263
+#: umllistview.cpp:3247
 msgid "The folder must be emptied before it can be deleted."
 msgstr "Каталогро пеш аз нобуд сохтан озод намоед."
 
-#: umllistview.cpp:3264
+#: umllistview.cpp:3248
 msgid "Folder Not Empty"
 msgstr "Каталог холӣ нест"
 
-#: umllistviewitem.cpp:578 umllistviewitem.cpp:611 umllistviewitem.cpp:642
-#: umllistviewitem.cpp:669
+#: umllistviewitem.cpp:555 umllistviewitem.cpp:588 umllistviewitem.cpp:619
+#: umllistviewitem.cpp:646
 msgid "Rename canceled"
 msgstr ""
 
-#: umllistviewitem.cpp:703
+#: umllistviewitem.cpp:680
 #, kde-format
 msgid "Renaming an item of listview type %1 is not yet implemented."
 msgstr ""
 
-#: umllistviewitem.cpp:704
+#: umllistviewitem.cpp:681
 msgid "Function Not Implemented"
 msgstr ""
 
-#: umllistviewitem.cpp:718
+#: umllistviewitem.cpp:695
 msgid ""
 "The name you entered was invalid.\n"
 "Renaming process has been canceled."
