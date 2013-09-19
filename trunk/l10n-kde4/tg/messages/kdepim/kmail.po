@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-18 01:46+0000\n"
+"POT-Creation-Date: 2013-09-19 01:39+0000\n"
 "PO-Revision-Date: 2005-09-17 13:29+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -3029,11 +3029,35 @@ msgstr ""
 msgid "Edit..."
 msgstr "Тағйир кардан..."
 
-#: identity/identityeditvcarddialog.cpp:31
+#: identity/identityeditvcarddialog.cpp:32
 #, fuzzy
 #| msgid "Modify Account"
 msgid "Edit own vCard"
 msgstr "Таъғири параметрҳои қайдоти баҳисобгирӣ"
+
+#: identity/identityeditvcarddialog.cpp:34
+#, fuzzy
+#| msgid "Collapse the current thread"
+msgid "Delete current vcard"
+msgstr "Пинҳон кардани мунозирот"
+
+#: identity/identityeditvcarddialog.cpp:54
+#, fuzzy
+#| msgid "Are you sure you want to empty the trash folder?"
+msgid "Are you sure to want to delete this vcard?"
+msgstr "Сабадро пок кунам?"
+
+#: identity/identityeditvcarddialog.cpp:54
+#: identity/identityeditvcarddialog.cpp:66
+#, fuzzy
+msgid "Delete vcard"
+msgstr "ҳузфшуда"
+
+#: identity/identityeditvcarddialog.cpp:66
+#, fuzzy
+#| msgid "Could not sync maildir folder."
+msgid "We can not delete vcard file."
+msgstr "Наметавонам папкаи maildir-ро синхронизатсия кунам."
 
 #: identity/identitylistview.cpp:98
 #, kde-format
@@ -3949,7 +3973,7 @@ msgstr "Гузаронидани иттилоот барҳам дода шуд."
 msgid "Jump to Folder"
 msgstr "Ба ин папка копӣ кардан"
 
-#: kmmainwidget.cpp:2396
+#: kmmainwidget.cpp:2396 vacationmanager.cpp:59
 msgid ""
 "KMail's Out of Office Reply functionality relies on server-side filtering. "
 "You have not yet configured an IMAP server for this.\n"
@@ -3959,7 +3983,7 @@ msgstr ""
 "аст. Сервери IMAP ҳоло барои ин танзим нашудааст.\n"
 "Замимоти \"Филтрҳо\"-и параметри танзимоти қуттии IMAP-ро истифода кунед."
 
-#: kmmainwidget.cpp:2401
+#: kmmainwidget.cpp:2401 vacationmanager.cpp:64
 msgid "No Server-Side Filtering Configured"
 msgstr "Филтратсия дар сӯи сервер танзим нашудааст"
 
@@ -4554,9 +4578,9 @@ msgid "Filter %1"
 msgstr "Филтри %1"
 
 #: kmmainwidget.cpp:4484
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Edit \"Out of Office\" Replies..."
-msgid "Out of office reply active"
+msgid "Out of office reply active on server \"%1\""
 msgstr "Тағйири ҷавобҳо \"берун аз офис\"..."
 
 #: kmmainwidget.cpp:4589
@@ -4896,7 +4920,7 @@ msgctxt "Message->"
 msgid "&Reply"
 msgstr "&Ҷавоб додан"
 
-#: messageactions.cpp:84 searchdialog/searchwindow.cpp:236
+#: messageactions.cpp:84 searchdialog/searchwindow.cpp:240
 msgid "&Reply..."
 msgstr "&Ҷавоб додан..."
 
@@ -4904,11 +4928,11 @@ msgstr "&Ҷавоб додан..."
 msgid "Reply to A&uthor..."
 msgstr "Шах&сан ҷавоб додан..."
 
-#: messageactions.cpp:98 searchdialog/searchwindow.cpp:240
+#: messageactions.cpp:98 searchdialog/searchwindow.cpp:244
 msgid "Reply to &All..."
 msgstr "Ба ҳама &ҷавоб додан..."
 
-#: messageactions.cpp:105 searchdialog/searchwindow.cpp:244
+#: messageactions.cpp:105 searchdialog/searchwindow.cpp:248
 msgid "Reply to Mailing-&List..."
 msgstr "Ба рӯйхати фиристониш &ҷавоб додан..."
 
@@ -4953,7 +4977,7 @@ msgstr "&Тағйири иттилоот"
 msgid "Add Note..."
 msgstr "Афзудан..."
 
-#: messageactions.cpp:174 searchdialog/searchwindow.cpp:248
+#: messageactions.cpp:174 searchdialog/searchwindow.cpp:252
 msgctxt "Message->"
 msgid "&Forward"
 msgstr "&Фиристониш"
@@ -5187,79 +5211,79 @@ msgstr ""
 msgid "Find Messages"
 msgstr "&Ҷустуҷӯи иттилоот..."
 
-#: searchdialog/searchwindow.cpp:107
+#: searchdialog/searchwindow.cpp:111
 #, fuzzy
 #| msgid "&Search"
 msgctxt "@action:button Search for messages"
 msgid "&Search"
 msgstr "&Ҷустуҷӯ"
 
-#: searchdialog/searchwindow.cpp:112
+#: searchdialog/searchwindow.cpp:116
 msgid "Debug query"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:198 searchdialog/searchwindow.cpp:391
+#: searchdialog/searchwindow.cpp:202 searchdialog/searchwindow.cpp:395
 msgid "Last Search"
 msgstr "Ҷустуҷӯи охирин"
 
-#: searchdialog/searchwindow.cpp:253
+#: searchdialog/searchwindow.cpp:257
 #, fuzzy
 #| msgid "&Inline..."
 msgctxt "@action:inmenu Forward message inline."
 msgid "&Inline..."
 msgstr "&Дар иттилоот..."
 
-#: searchdialog/searchwindow.cpp:258
+#: searchdialog/searchwindow.cpp:262
 msgctxt "Message->Forward->"
 msgid "As &Attachment..."
 msgstr "&Ҳамчун замимот..."
 
-#: searchdialog/searchwindow.cpp:272
+#: searchdialog/searchwindow.cpp:276
 msgid "Save Attachments..."
 msgstr "Нигоҳ дошатни тамоми замимот..."
 
-#: searchdialog/searchwindow.cpp:278
+#: searchdialog/searchwindow.cpp:282
 msgid "Clear Selection"
 msgstr "Барҳам додани ҷудокунӣ"
 
-#: searchdialog/searchwindow.cpp:362
+#: searchdialog/searchwindow.cpp:366
 #, kde-format
 msgid "%1 match"
 msgid_plural "%1 matches"
 msgstr[0] "%1 мутобиқ"
 msgstr[1] "%1 мутобиқатҳо"
 
-#: searchdialog/searchwindow.cpp:415
+#: searchdialog/searchwindow.cpp:419
 #, fuzzy
 #| msgid "Could not sync maildir folder."
 msgid "You did not selected a valid folder."
 msgstr "Наметавонам папкаи maildir-ро синхронизатсия кунам."
 
-#: searchdialog/searchwindow.cpp:443
+#: searchdialog/searchwindow.cpp:447
 msgid "You forgot to define condition."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:448
+#: searchdialog/searchwindow.cpp:452
 msgid "All folders selected are empty or were not indexed."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:454
+#: searchdialog/searchwindow.cpp:458
 #, fuzzy
 msgid "No message found."
 msgstr "%1 иттилоот, %2."
 
-#: searchdialog/searchwindow.cpp:478
+#: searchdialog/searchwindow.cpp:482
 #, fuzzy
 #| msgid "Subscription..."
 msgid "Searching..."
 msgstr "Обуна..."
 
-#: searchdialog/searchwindow.cpp:486
+#: searchdialog/searchwindow.cpp:490
 #, fuzzy, kde-format
 msgid "Cannot get search result. %1"
 msgstr "Гузаронидани иттилоот - интихоби папка"
 
-#: searchdialog/searchwindow.cpp:600
+#: searchdialog/searchwindow.cpp:604
 #, kde-format
 msgid ""
 "There was a problem renaming your search folder. A common reason for this is "
@@ -5267,14 +5291,14 @@ msgid ""
 "\"%1\"."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:706
+#: searchdialog/searchwindow.cpp:710
 #, fuzzy, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
 msgstr[0] "&Тағйири иттилоот"
 msgstr[1] "&Тағйири иттилоот"
 
-#: searchdialog/searchwindow.cpp:709
+#: searchdialog/searchwindow.cpp:713
 #, fuzzy, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
@@ -8544,11 +8568,6 @@ msgstr "Муҳаррири зоҳирӣ"
 #~ msgctxt "message status"
 #~ msgid "Read"
 #~ msgstr "Иҷро шуд."
-
-#, fuzzy
-#~ msgctxt "message status"
-#~ msgid "Deleted"
-#~ msgstr "ҳузфшуда"
 
 #, fuzzy
 #~ msgctxt "message status"
@@ -12715,12 +12734,6 @@ msgstr "Муҳаррири зоҳирӣ"
 #~| msgid "C&ollapse All Threads"
 #~ msgid "Collapse All Groups"
 #~ msgstr "П&инҳон кардани тамоми мунозирот"
-
-#, fuzzy
-#~| msgid "Collapse the current thread"
-#~ msgctxt "@info:tooltip"
-#~ msgid "Close the current tab"
-#~ msgstr "Пинҳон кардани мунозирот"
 
 #~ msgid "Show Quick Search"
 #~ msgstr "Тасвир додани панели ҷустуҷӯии тез"
