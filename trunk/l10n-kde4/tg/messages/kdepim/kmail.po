@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-26 01:44+0000\n"
+"POT-Creation-Date: 2013-09-27 01:50+0000\n"
 "PO-Revision-Date: 2005-09-17 13:29+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -4911,7 +4911,7 @@ msgctxt "Message->"
 msgid "&Reply"
 msgstr "&Ҷавоб додан"
 
-#: messageactions.cpp:84 searchdialog/searchwindow.cpp:230
+#: messageactions.cpp:84 searchdialog/searchwindow.cpp:242
 msgid "&Reply..."
 msgstr "&Ҷавоб додан..."
 
@@ -4919,11 +4919,11 @@ msgstr "&Ҷавоб додан..."
 msgid "Reply to A&uthor..."
 msgstr "Шах&сан ҷавоб додан..."
 
-#: messageactions.cpp:98 searchdialog/searchwindow.cpp:234
+#: messageactions.cpp:98 searchdialog/searchwindow.cpp:246
 msgid "Reply to &All..."
 msgstr "Ба ҳама &ҷавоб додан..."
 
-#: messageactions.cpp:105 searchdialog/searchwindow.cpp:238
+#: messageactions.cpp:105 searchdialog/searchwindow.cpp:250
 msgid "Reply to Mailing-&List..."
 msgstr "Ба рӯйхати фиристониш &ҷавоб додан..."
 
@@ -4968,7 +4968,7 @@ msgstr "&Тағйири иттилоот"
 msgid "Add Note..."
 msgstr "Афзудан..."
 
-#: messageactions.cpp:174 searchdialog/searchwindow.cpp:242
+#: messageactions.cpp:174 searchdialog/searchwindow.cpp:254
 msgctxt "Message->"
 msgid "&Forward"
 msgstr "&Фиристониш"
@@ -5130,7 +5130,7 @@ msgid "Search"
 msgstr "&Ҷустуҷӯ"
 
 #: searchdialog/debug/searchdebugwidget.cpp:124
-#: searchdialog/searchwindow.cpp:472
+#: searchdialog/searchwindow.cpp:499
 #, fuzzy
 #| msgid "Subscription..."
 msgid "Searching..."
@@ -5209,83 +5209,87 @@ msgstr "Папка"
 msgid "Nepomuk cannot make search. Errors found: <ul><li>%1</li></ul>"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:84
+#: searchdialog/searchwindow.cpp:85
 #, fuzzy
 msgid "Find Messages"
 msgstr "&Ҷустуҷӯи иттилоот..."
 
-#: searchdialog/searchwindow.cpp:106
+#: searchdialog/searchwindow.cpp:107
 #, fuzzy
 #| msgid "&Search"
 msgctxt "@action:button Search for messages"
 msgid "&Search"
 msgstr "&Ҷустуҷӯ"
 
-#: searchdialog/searchwindow.cpp:111
+#: searchdialog/searchwindow.cpp:112
 msgid "Debug query"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:192 searchdialog/searchwindow.cpp:385
+#: searchdialog/searchwindow.cpp:204 searchdialog/searchwindow.cpp:397
 msgid "Last Search"
 msgstr "Ҷустуҷӯи охирин"
 
-#: searchdialog/searchwindow.cpp:247
+#: searchdialog/searchwindow.cpp:259
 #, fuzzy
 #| msgid "&Inline..."
 msgctxt "@action:inmenu Forward message inline."
 msgid "&Inline..."
 msgstr "&Дар иттилоот..."
 
-#: searchdialog/searchwindow.cpp:252
+#: searchdialog/searchwindow.cpp:264
 msgctxt "Message->Forward->"
 msgid "As &Attachment..."
 msgstr "&Ҳамчун замимот..."
 
-#: searchdialog/searchwindow.cpp:266
+#: searchdialog/searchwindow.cpp:278
 msgid "Save Attachments..."
 msgstr "Нигоҳ дошатни тамоми замимот..."
 
-#: searchdialog/searchwindow.cpp:272
+#: searchdialog/searchwindow.cpp:284
 msgid "Clear Selection"
 msgstr "Барҳам додани ҷудокунӣ"
 
-#: searchdialog/searchwindow.cpp:356
+#: searchdialog/searchwindow.cpp:368
 #, kde-format
 msgid "%1 match"
 msgid_plural "%1 matches"
 msgstr[0] "%1 мутобиқ"
 msgstr[1] "%1 мутобиқатҳо"
 
-#: searchdialog/searchwindow.cpp:409
+#: searchdialog/searchwindow.cpp:421
 #, fuzzy
 #| msgid "Could not sync maildir folder."
 msgid "You did not selected a valid folder."
 msgstr "Наметавонам папкаи maildir-ро синхронизатсия кунам."
 
-#: searchdialog/searchwindow.cpp:432
+#: searchdialog/searchwindow.cpp:439
+msgid "You forgot to select collections."
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:459
 msgid "You forgot to define condition."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:437
+#: searchdialog/searchwindow.cpp:464
 msgid "All folders selected are empty or were not indexed."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:443
+#: searchdialog/searchwindow.cpp:470
 #, fuzzy
 msgid "No message found."
 msgstr "%1 иттилоот, %2."
 
-#: searchdialog/searchwindow.cpp:448
+#: searchdialog/searchwindow.cpp:475
 msgid ""
 "Contains condition cannot be used with a number of characters inferior to 4."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:480
+#: searchdialog/searchwindow.cpp:507
 #, fuzzy, kde-format
 msgid "Cannot get search result. %1"
 msgstr "Гузаронидани иттилоот - интихоби папка"
 
-#: searchdialog/searchwindow.cpp:594
+#: searchdialog/searchwindow.cpp:628
 #, kde-format
 msgid ""
 "There was a problem renaming your search folder. A common reason for this is "
@@ -5293,19 +5297,30 @@ msgid ""
 "\"%1\"."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:700
+#: searchdialog/searchwindow.cpp:734
 #, fuzzy, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
 msgstr[0] "&Тағйири иттилоот"
 msgstr[1] "&Тағйири иттилоот"
 
-#: searchdialog/searchwindow.cpp:703
+#: searchdialog/searchwindow.cpp:737
 #, fuzzy, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
 msgstr[0] "Ҳузфи иттилоот"
 msgstr[1] "Ҳузфи иттилоот"
+
+#: searchdialog/selectmulticollectiondialog.cpp:27
+#, fuzzy
+msgid "Select Multiple Folders"
+msgstr "Папка"
+
+#: searchdialog/selectmulticollectionwidget.cpp:76
+#, fuzzy
+#| msgid "Subscription..."
+msgid "Search..."
+msgstr "Обуна..."
 
 #: secondarywindow.cpp:88
 msgctxt "Document/application separator in titlebar"
@@ -6297,19 +6312,31 @@ msgstr "Ҷустуҷӯ &дар папкаи:"
 msgid "&Include sub-folders"
 msgstr "&Ҳамчунин зерпапкаҳо"
 
+#. i18n: ectx: property (text), widget (QRadioButton, mChkMultiFolders)
+#: ui/searchwindow.ui:53
+#, fuzzy
+msgid "Select specific folders"
+msgstr "Ҳузфи феҳрист"
+
+#. i18n: ectx: property (text), widget (QPushButton, selectMultipleFolders)
+#: ui/searchwindow.ui:60
+#, fuzzy
+msgid "Select folders..."
+msgstr "Ҳузфи феҳрист"
+
 #. i18n: ectx: property (text), widget (QLabel, mSearchFolderLbl)
-#: ui/searchwindow.ui:82
+#: ui/searchwindow.ui:113
 msgid "Search folder &name:"
 msgstr "&Феҳрист барои натиҷот:"
 
 #. i18n: ectx: property (text), widget (KPushButton, mSearchFolderOpenBtn)
-#: ui/searchwindow.ui:102
+#: ui/searchwindow.ui:133
 #, fuzzy
 msgid "Open &Search Folder"
 msgstr "Қабулкунандаҳои пинҳонӣ"
 
 #. i18n: ectx: property (text), widget (KPushButton, mSearchResultOpenBtn)
-#: ui/searchwindow.ui:112
+#: ui/searchwindow.ui:143
 #, fuzzy
 #| msgid "Open Message"
 msgid "Open &Message"
@@ -8972,10 +8999,6 @@ msgstr "Муҳаррири зоҳирӣ"
 #~ "Садамавӣ хотима ёфтани амали KMail.\n"
 #~ "Сабаб:\n"
 #~ "%1"
-
-#, fuzzy
-#~ msgid "Select Folder"
-#~ msgstr "Ҳузфи феҳрист"
 
 #~ msgid "Local Folders"
 #~ msgstr "Папкаҳои маҳаллӣ"
@@ -12346,10 +12369,6 @@ msgstr "Муҳаррири зоҳирӣ"
 
 #~ msgid "Refresh Folder List"
 #~ msgstr "Бозсозии рӯйхати папкаҳо"
-
-#, fuzzy
-#~ msgid "Multiple Folders"
-#~ msgstr "Папка"
 
 #, fuzzy
 #~ msgid ""

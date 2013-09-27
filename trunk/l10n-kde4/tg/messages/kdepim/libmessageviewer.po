@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-26 01:44+0000\n"
+"POT-Creation-Date: 2013-09-27 01:50+0000\n"
 "PO-Revision-Date: 2005-09-17 13:29+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -25,8 +25,113 @@ msgstr ""
 "X-Generator: KBabel 1.10\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
+#: adblock/adblockmanager.cpp:352
+#, fuzzy
+msgctxt "@title:window"
+msgid "Ad Block Settings"
+msgstr "Ф&иристодан"
+
+#: adblock/adblocksettingwidget.cpp:53
+msgid ""
+"<qt>Filter expression (e.g. <tt>http://www.example.com/ad/*</tt>, <a href="
+"\"filterhelp\">more information</a>):"
+msgstr ""
+
+#: adblock/adblocksettingwidget.cpp:69
+#, fuzzy
+#| msgid " days"
+msgid " day"
+msgid_plural " days"
+msgstr[0] " рӯз"
+msgstr[1] " рӯз"
+
+#: adblock/adblocksettingwidget.cpp:86
+msgid ""
+"<qt><p>Enter an expression to filter. Filters can be defined as either:"
+"<ul><li>a shell-style wildcard, e.g. <tt>http://www.example.com/ads*</tt>, "
+"the wildcards <tt>*?[]</tt> may be used</li><li>a full regular expression by "
+"surrounding the string with '<tt>/</tt>', e.g. <tt>/\\/(ad|banner)\\./</tt></"
+"li></ul><p>Any filter string can be preceded by '<tt>@@</tt>' to whitelist "
+"(allow) any matching URL, which takes priority over any blacklist (blocking) "
+"filter."
+msgstr ""
+
 #: adblock/networkaccessmanager.cpp:51
 msgid "Blocked by ad filter"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, BlockedLabel)
+#: adblock/ui/blocked_elements.ui:17
+msgid ""
+"<html><head/><body><p><span style=\" font-weight:600;\">Blocked elements</"
+"span></p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, HidedLabel)
+#: adblock/ui/blocked_elements.ui:101
+#, fuzzy
+#| msgid "Hidden Recipients"
+msgid "<b>Hidden elements</b>"
+msgstr "Қабулкунандаҳои пинҳонӣ"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: adblock/ui/blocked_elements.ui:108
+msgid "TextLabel"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, checkEnableAdblock)
+#: adblock/ui/settings_adblock.ui:17
+msgid "&Enable Ad Block"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, checkHideAds)
+#: adblock/ui/settings_adblock.ui:24
+msgid "&Hide filtered elements"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_3)
+#: adblock/ui/settings_adblock.ui:38
+#, fuzzy
+#| msgid "Never Automatically"
+msgid "Automatic Filters"
+msgstr "Ғайрифаъол сохтани фиристодани худкор"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: adblock/ui/settings_adblock.ui:49
+msgid "Update enabled automatic filters every:"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: adblock/ui/settings_adblock.ui:88
+#, fuzzy
+#| msgid "Available Filters"
+msgid "Manual Filters"
+msgstr "Филтрҳои дастрас"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: adblock/ui/settings_adblock.ui:96
+#, fuzzy
+msgid "Search:"
+msgstr "&Ҷустуҷӯӣ"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, insertButton)
+#: adblock/ui/settings_adblock.ui:123
+#, fuzzy
+#| msgid "Add Permissions"
+msgid "Add filter expression"
+msgstr "Афзудани ҳуқуқи дастрасӣ"
+
+#. i18n: ectx: property (text), widget (QToolButton, insertButton)
+#. i18n: ectx: property (text), widget (QToolButton, removeButton)
+#: adblock/ui/settings_adblock.ui:126 adblock/ui/settings_adblock.ui:136
+#, fuzzy
+#| msgid "Add..."
+msgid "..."
+msgstr "Афзудан..."
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, removeButton)
+#: adblock/ui/settings_adblock.ui:133
+msgid "Remove filter expression"
 msgstr ""
 
 #: findbar/findbarbase.cpp:48 findbar/findbarbase.cpp:51
@@ -3930,9 +4035,6 @@ msgstr "&Корти қаблӣ"
 #~ msgid "Modify Permissions"
 #~ msgstr "Тағйири ҳуқуқи дастрасӣ"
 
-#~ msgid "Add Permissions"
-#~ msgstr "Афзудани ҳуқуқи дастрасӣ"
-
 #~ msgid ""
 #~ "Do you really want to remove your own permissions for this folder? You "
 #~ "will not be able to access it afterwards."
@@ -6463,11 +6565,6 @@ msgstr "&Корти қаблӣ"
 #~ msgstr "&Нусхаи пинҳонӣ"
 
 #, fuzzy
-#~| msgid "Available Filters"
-#~ msgid "KMail Filter"
-#~ msgstr "Филтрҳои дастрас"
-
-#, fuzzy
 #~| msgid "is in category"
 #~ msgid "with category"
 #~ msgstr "дар дараҷот"
@@ -6929,11 +7026,6 @@ msgstr "&Корти қаблӣ"
 #~| msgid "Search Criteria"
 #~ msgid "Search &Directory Service"
 #~ msgstr "Меъёрҳои ҷустуҷӯ"
-
-#, fuzzy
-#~ msgctxt "Search for recipient."
-#~ msgid "Search:"
-#~ msgstr "&Ҷустуҷӯӣ"
 
 #, fuzzy
 #~ msgid "Add as &To"
@@ -8249,11 +8341,6 @@ msgstr "&Корти қаблӣ"
 #~ msgid "Check inter&val:"
 #~ msgstr "Фосилот &байни озмоиш:"
 
-#, fuzzy
-#~ msgctxt "@title:tab"
-#~ msgid "IMAP Settings"
-#~ msgstr "Ф&иристодан"
-
 #~ msgid "Automaticall&y compact folders (expunges deleted messages)"
 #~ msgstr "&Худкорона пок намудани маълумоти ҳузфшуда"
 
@@ -8309,11 +8396,6 @@ msgstr "&Корти қаблӣ"
 #, fuzzy
 #~ msgid "Namespaces:"
 #~ msgstr "Тағйир додан:"
-
-#, fuzzy
-#~| msgid "Add..."
-#~ msgid "..."
-#~ msgstr "Афзудан..."
 
 #, fuzzy
 #~ msgid "Personal namespaces include your personal folders."
@@ -11135,14 +11217,6 @@ msgstr "&Корти қаблӣ"
 #~ msgstr "Озод кардан аз &хондашуда, баъди:"
 
 #, fuzzy
-#~| msgid " days"
-#~ msgctxt "Expire messages after %1"
-#~ msgid " day"
-#~ msgid_plural " days"
-#~ msgstr[0] " рӯз"
-#~ msgstr[1] " рӯз"
-
-#, fuzzy
 #~ msgid "Expire unread messages after"
 #~ msgstr "Озод кардан аз &хонданашуда баъди:"
 
@@ -12989,12 +13063,6 @@ msgstr "&Корти қаблӣ"
 #~ msgstr "&Ғайри"
 
 #, fuzzy
-#~| msgid "Never Automatically"
-#~ msgctxt "@action:inmenu Group header background color setting"
-#~ msgid "Automatic"
-#~ msgstr "Ғайрифаъол сохтани фиристодани худкор"
-
-#, fuzzy
 #~| msgid "Alternative Background Color"
 #~ msgid "Background Color"
 #~ msgstr "Ранги заминаи алтернативӣ"
@@ -14071,9 +14139,6 @@ msgstr "&Корти қаблӣ"
 
 #~ msgid "&Blind copy to (BCC):"
 #~ msgstr "&Нусхаи нобино (BCC):"
-
-#~ msgid "Hidden Recipients"
-#~ msgstr "Қабулкунандаҳои пинҳонӣ"
 
 #~ msgid ""
 #~ "<qt>Essentially the same thing as the <b>Copy To:</b> field but differs "
