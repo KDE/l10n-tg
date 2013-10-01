@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-30 01:43+0000\n"
+"POT-Creation-Date: 2013-10-01 01:40+0000\n"
 "PO-Revision-Date: 2005-09-17 13:29+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -36,19 +36,45 @@ msgstr "Имзоот"
 msgid "Select List:"
 msgstr "Ҳузфи феҳрист"
 
-#: adblock/adblockblockableitemsdialog.cpp:30
+#: adblock/adblockblockableitemsdialog.cpp:33
 msgid "Blockable Items"
 msgstr ""
 
-#: adblock/adblockblockableitemsdialog.cpp:34 viewer/mimetreemodel.cpp:249
+#: adblock/adblockblockableitemswidget.cpp:56 viewer/mimetreemodel.cpp:249
 msgid "Type"
 msgstr "Навъ"
 
-#: adblock/adblockblockableitemsdialog.cpp:34
+#: adblock/adblockblockableitemswidget.cpp:56
+#, fuzzy
+#| msgid "Filter %1"
+msgid "Filter"
+msgstr "Филтри %1"
+
+#: adblock/adblockblockableitemswidget.cpp:56
 #, fuzzy
 #| msgid "&Address Book"
 msgid "Address"
 msgstr "&Китоби адресӣ"
+
+#: adblock/adblockblockableitemswidget.cpp:90
+msgid "Image"
+msgstr ""
+
+#: adblock/adblockblockableitemswidget.cpp:107
+#, fuzzy
+#| msgid "&Copy Here"
+msgid "Copy url"
+msgstr "&Ба ин ҷо копӣ кардан"
+
+#: adblock/adblockblockableitemswidget.cpp:108
+msgid "Block item..."
+msgstr ""
+
+#: adblock/adblockblockableitemswidget.cpp:111
+#, fuzzy
+#| msgid "Rename Filter"
+msgid "Remove filter"
+msgstr "Тағйири номи филтр"
 
 #: adblock/adblocklistwidget.cpp:61
 #, fuzzy
@@ -56,13 +82,13 @@ msgstr "&Китоби адресӣ"
 msgid "Not subscription added..."
 msgstr "Имзоот"
 
-#: adblock/adblocksettingwidget.cpp:57
+#: adblock/adblocksettingwidget.cpp:59
 msgid ""
 "<qt>Filter expression (e.g. <tt>http://www.example.com/ad/*</tt>, <a href="
 "\"filterhelp\">more information</a>):"
 msgstr ""
 
-#: adblock/adblocksettingwidget.cpp:72
+#: adblock/adblocksettingwidget.cpp:74
 #, fuzzy
 #| msgid " days"
 msgid " day"
@@ -70,7 +96,7 @@ msgid_plural " days"
 msgstr[0] " рӯз"
 msgstr[1] " рӯз"
 
-#: adblock/adblocksettingwidget.cpp:99
+#: adblock/adblocksettingwidget.cpp:103
 msgid ""
 "<qt><p>Enter an expression to filter. Filters can be defined as either:"
 "<ul><li>a shell-style wildcard, e.g. <tt>http://www.example.com/ads*</tt>, "
@@ -81,15 +107,20 @@ msgid ""
 "filter."
 msgstr ""
 
-#: adblock/adblocksettingwidget.cpp:300
-msgid "Do you want to delete current list?"
+#: adblock/adblocksettingwidget.cpp:306
+#, kde-format
+msgid "Do you want to delete list \"%1\"?"
 msgstr ""
 
-#: adblock/adblocksettingwidget.cpp:300
+#: adblock/adblocksettingwidget.cpp:306
 #, fuzzy
 #| msgid "Collapse the current thread"
 msgid "Delete current list"
 msgstr "Пинҳон кардани мунозирот"
+
+#: adblock/adblocksettingwidget.cpp:331 adblock/adblocksettingwidget.cpp:356
+msgid "*|all files (*)"
+msgstr ""
 
 #: adblock/adblockshowlistdialog.cpp:37
 #, fuzzy
@@ -111,6 +142,43 @@ msgstr ""
 #: adblock/networkaccessmanager.cpp:52
 msgid "Blocked by ad filter"
 msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: adblock/ui/adblockcreatefilterwidget.ui:19
+#, fuzzy
+#| msgid "Filter %1"
+msgid "Filters:"
+msgstr "Филтри %1"
+
+#. i18n: ectx: property (text), widget (QRadioButton, blockingFilter)
+#: adblock/ui/adblockcreatefilterwidget.ui:37
+#, fuzzy
+msgid "Blocking filter"
+msgstr "Тағйири номи папка"
+
+#. i18n: ectx: property (text), widget (QRadioButton, exceptionFilter)
+#: adblock/ui/adblockcreatefilterwidget.ui:44
+#, fuzzy
+#| msgid "Key Export Failed"
+msgid "Exception Filter"
+msgstr "Нуқсони содири калид"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: adblock/ui/adblockcreatefilterwidget.ui:55
+msgid "Accept pattern only:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, atTheBeginning)
+#: adblock/ui/adblockcreatefilterwidget.ui:66
+msgid "At the beginning of the address"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, atTheEnd)
+#: adblock/ui/adblockcreatefilterwidget.ui:73
+#, fuzzy
+#| msgid "Send CC: to 'address'"
+msgid "At the end of address"
+msgstr "Фиристодани CC: ба 'address'"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkEnableAdblock)
 #: adblock/ui/settings_adblock.ui:17
@@ -167,8 +235,21 @@ msgstr "Филтрҳои дастрас"
 msgid "Search:"
 msgstr "&Ҷустуҷӯӣ"
 
+#. i18n: ectx: property (text), widget (QPushButton, exportFilters)
+#: adblock/ui/settings_adblock.ui:149
+#, fuzzy
+#| msgid "Key Export Failed"
+msgid "Export filters..."
+msgstr "Нуқсони содири калид"
+
+#. i18n: ectx: property (text), widget (QPushButton, importFilters)
+#: adblock/ui/settings_adblock.ui:156
+#, fuzzy
+msgid "Import Filters..."
+msgstr "Нуқсони содири калид"
+
 #. i18n: ectx: property (toolTip), widget (QToolButton, insertButton)
-#: adblock/ui/settings_adblock.ui:161
+#: adblock/ui/settings_adblock.ui:188
 #, fuzzy
 #| msgid "Add Permissions"
 msgid "Add filter expression"
@@ -176,14 +257,14 @@ msgstr "Афзудани ҳуқуқи дастрасӣ"
 
 #. i18n: ectx: property (text), widget (QToolButton, insertButton)
 #. i18n: ectx: property (text), widget (QToolButton, removeButton)
-#: adblock/ui/settings_adblock.ui:164 adblock/ui/settings_adblock.ui:174
+#: adblock/ui/settings_adblock.ui:191 adblock/ui/settings_adblock.ui:201
 #, fuzzy
 #| msgid "Add..."
 msgid "..."
 msgstr "Афзудан..."
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, removeButton)
-#: adblock/ui/settings_adblock.ui:171
+#: adblock/ui/settings_adblock.ui:198
 msgid "Remove filter expression"
 msgstr ""
 
@@ -1544,53 +1625,53 @@ msgstr ""
 msgid "Show Raw Message"
 msgstr "Иттилооти фиристодашуда"
 
-#: viewer/objecttreeparser.cpp:2067 viewer/viewer_p.cpp:2917
+#: viewer/objecttreeparser.cpp:2067 viewer/viewer_p.cpp:2921
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2073 viewer/viewer_p.cpp:2919
-#: viewer/viewer_p.cpp:2924 viewer/viewer_p.cpp:2933 viewer/viewer_p.cpp:2942
-#: viewer/viewer_p.cpp:2960 viewer/viewer_p.cpp:2972 viewer/viewer_p.cpp:3012
+#: viewer/objecttreeparser.cpp:2073 viewer/viewer_p.cpp:2923
+#: viewer/viewer_p.cpp:2928 viewer/viewer_p.cpp:2937 viewer/viewer_p.cpp:2946
+#: viewer/viewer_p.cpp:2964 viewer/viewer_p.cpp:2976 viewer/viewer_p.cpp:3016
 msgid "Chiasmus Backend Error"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2079 viewer/viewer_p.cpp:2930
+#: viewer/objecttreeparser.cpp:2079 viewer/viewer_p.cpp:2934
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2087 viewer/viewer_p.cpp:2939
+#: viewer/objecttreeparser.cpp:2087 viewer/viewer_p.cpp:2943
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2093 viewer/viewer_p.cpp:2946
+#: viewer/objecttreeparser.cpp:2093 viewer/viewer_p.cpp:2950
 #, fuzzy
 msgid "Chiasmus Decryption Key Selection"
 msgstr "Интихоби калиди рамзгузорӣ"
 
-#: viewer/objecttreeparser.cpp:2106 viewer/viewer_p.cpp:2958
+#: viewer/objecttreeparser.cpp:2106 viewer/viewer_p.cpp:2962
 msgid ""
 "Chiasmus backend does not offer the \"x-decrypt\" function. Please report "
 "this bug."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2114 viewer/viewer_p.cpp:2970
+#: viewer/objecttreeparser.cpp:2114 viewer/viewer_p.cpp:2974
 msgid ""
 "The \"x-decrypt\" function does not accept the expected parameters. Please "
 "report this bug."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2120 viewer/viewer_p.cpp:2977
-#: viewer/viewer_p.cpp:3004
+#: viewer/objecttreeparser.cpp:2120 viewer/viewer_p.cpp:2981
+#: viewer/viewer_p.cpp:3008
 msgid "Chiasmus Decryption Error"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2126 viewer/viewer_p.cpp:3009
+#: viewer/objecttreeparser.cpp:2126 viewer/viewer_p.cpp:3013
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-decrypt\" function "
 "did not return a byte array. Please report this bug."
@@ -2012,7 +2093,7 @@ msgstr "Дар китоби адресӣ боз кардан"
 msgid "&Copy Email Address"
 msgstr "Адреси e-mail"
 
-#: viewer/urlhandlermanager.cpp:737 viewer/viewer_p.cpp:2774
+#: viewer/urlhandlermanager.cpp:737 viewer/viewer_p.cpp:2778
 msgid "Address copied to clipboard."
 msgstr "Адрес дар буфери тағйирот копӣ карда шудааст."
 
@@ -2077,7 +2158,7 @@ msgid ""
 msgstr ""
 
 #: viewer/viewer_p.cpp:418 viewer/viewer_p.cpp:424 viewer/viewer_p.cpp:661
-#: viewer/viewer_p.cpp:1890
+#: viewer/viewer_p.cpp:1894
 #, fuzzy
 #| msgid "&Remove Attachment"
 msgid "Delete Attachment"
@@ -2095,7 +2176,7 @@ msgid ""
 "message."
 msgstr ""
 
-#: viewer/viewer_p.cpp:489 viewer/viewer_p.cpp:655 viewer/viewer_p.cpp:1894
+#: viewer/viewer_p.cpp:489 viewer/viewer_p.cpp:655 viewer/viewer_p.cpp:1898
 #, fuzzy
 msgid "Edit Attachment"
 msgstr "attach"
@@ -2126,13 +2207,13 @@ msgctxt "@title:menu"
 msgid "&Open With..."
 msgstr "&Кушодан бо ёрии..."
 
-#: viewer/viewer_p.cpp:617 viewer/viewer_p.cpp:1867
+#: viewer/viewer_p.cpp:617 viewer/viewer_p.cpp:1871
 #, fuzzy
 msgctxt "to open"
 msgid "Open"
 msgstr "Намуд"
 
-#: viewer/viewer_p.cpp:625 viewer/viewer_p.cpp:1874
+#: viewer/viewer_p.cpp:625 viewer/viewer_p.cpp:1878
 msgctxt "to view something"
 msgid "View"
 msgstr "Дида баромадан"
@@ -2141,7 +2222,7 @@ msgstr "Дида баромадан"
 msgid "Scroll To"
 msgstr ""
 
-#: viewer/viewer_p.cpp:643 viewer/viewer_p.cpp:1886
+#: viewer/viewer_p.cpp:643 viewer/viewer_p.cpp:1890
 #, fuzzy
 msgid "Copy"
 msgstr "&Копӣ кардан ба"
@@ -2151,7 +2232,7 @@ msgstr "&Копӣ кардан ба"
 msgid "Decrypt With Chiasmus..."
 msgstr "Интихоби папка барои гузариш"
 
-#: viewer/viewer_p.cpp:672 viewer/viewer_p.cpp:1899
+#: viewer/viewer_p.cpp:672 viewer/viewer_p.cpp:1903
 #, fuzzy
 msgid "Properties"
 msgstr "&Хусусиятҳо"
@@ -2327,7 +2408,7 @@ msgstr "Худкор"
 msgid "Select All Text"
 msgstr "Ҷудо кардани &тамоми иттилоот"
 
-#: viewer/viewer_p.cpp:1695 viewer/viewer_p.cpp:2164
+#: viewer/viewer_p.cpp:1695 viewer/viewer_p.cpp:2168
 msgid "Copy Link Address"
 msgstr "Копӣ кардани адрес"
 
@@ -2431,66 +2512,70 @@ msgstr ""
 msgid "Block image"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1863
+#: viewer/viewer_p.cpp:1841
+msgid "Open Blockable Items..."
+msgstr ""
+
+#: viewer/viewer_p.cpp:1867
 msgid "Save &As..."
 msgstr "Нигоҳ доштан &ҳамчун..."
 
-#: viewer/viewer_p.cpp:1873
+#: viewer/viewer_p.cpp:1877
 msgid "Open With..."
 msgstr "Кушодан бо ёрии..."
 
-#: viewer/viewer_p.cpp:1879
+#: viewer/viewer_p.cpp:1883
 msgid "Save All Attachments..."
 msgstr "Нигоҳ доштани тамоми замимот..."
 
-#: viewer/viewer_p.cpp:2162
+#: viewer/viewer_p.cpp:2166
 #, fuzzy
 #| msgid "Email Address"
 msgid "Copy Email Address"
 msgstr "Адреси e-mail"
 
-#: viewer/viewer_p.cpp:2228
+#: viewer/viewer_p.cpp:2232
 msgid "Message as Plain Text"
 msgstr "Иттилоот ба намуди матни оддӣ"
 
-#: viewer/viewer_p.cpp:2495
+#: viewer/viewer_p.cpp:2499
 #, fuzzy
 #| msgctxt "Config->Composer->Attachments"
 #| msgid "A&ttachments"
 msgid "Attachments:"
 msgstr "&Замимот"
 
-#: viewer/viewer_p.cpp:2779
+#: viewer/viewer_p.cpp:2783
 msgid "URL copied to clipboard."
 msgstr "URL дар буфери тағйирот копӣ карда шудааст."
 
-#: viewer/viewer_p.cpp:3071
+#: viewer/viewer_p.cpp:3075
 msgid "Hide full address list"
 msgstr ""
 
-#: viewer/viewer_p.cpp:3075
+#: viewer/viewer_p.cpp:3079
 #, fuzzy
 #| msgid "Show alway&s"
 msgid "Show full address list"
 msgstr "&Доим"
 
-#: viewer/viewer_p.cpp:3098
+#: viewer/viewer_p.cpp:3102
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgid "Message loading failed: %1."
 msgstr "Иттилоот бо %1 имзо шудааст."
 
-#: viewer/viewer_p.cpp:3103
+#: viewer/viewer_p.cpp:3107
 #, fuzzy
 #| msgid "Message was signed by %1."
 msgid "Message not found."
 msgstr "Иттилоот бо %1 имзо шудааст."
 
-#: viewer/viewer_p.cpp:3227
+#: viewer/viewer_p.cpp:3231
 msgid "Caret Browsing will be activated. Switch off with F7 shortcut."
 msgstr ""
 
-#: viewer/viewer_p.cpp:3228
+#: viewer/viewer_p.cpp:3232
 msgid "Activate Caret Browsing"
 msgstr ""
 
@@ -5414,9 +5499,6 @@ msgstr "&Корти қаблӣ"
 #~ msgid "No duplicate messages found."
 #~ msgstr "Дубликатҳо ёфт нашудаанд."
 
-#~ msgid "Filter %1"
-#~ msgstr "Филтри %1"
-
 #~ msgid "&Troubleshoot IMAP Cache..."
 #~ msgstr "&Дур кардани норасоиҳои кеши IMAP..."
 
@@ -7015,9 +7097,6 @@ msgstr "&Корти қаблӣ"
 
 #~ msgid "&Move Here"
 #~ msgstr "&Ба ин ҷо ҷойгир кардан"
-
-#~ msgid "&Copy Here"
-#~ msgstr "&Ба ин ҷо копӣ кардан"
 
 #~ msgid "C&ancel"
 #~ msgstr "&Барҳам додан"
@@ -11219,9 +11298,6 @@ msgstr "&Корти қаблӣ"
 #~ "Нигоҳ доштани маълумотҳои филтр имконпазир нест, чунки онҳо дорои хатогӣ "
 #~ "(яъне амале ё дастури ҷустуҷӯӣ низ надорад) мебошад."
 
-#~ msgid "Rename Filter"
-#~ msgstr "Тағйири номи филтр"
-
 #~ msgid "Please select an action."
 #~ msgstr "Амал интихоб кунед."
 
@@ -11884,15 +11960,6 @@ msgstr "&Корти қаблӣ"
 #~ msgstr "Ҳузфи феҳрист"
 
 #, fuzzy
-#~ msgid "Import Filters"
-#~ msgstr "Нуқсони содири калид"
-
-#, fuzzy
-#~| msgid "Key Export Failed"
-#~ msgid "Export Filters"
-#~ msgstr "Нуқсони содири калид"
-
-#, fuzzy
 #~| msgctxt ""
 #~| "%1: name; %2: number appended to it to make it unique among a list of "
 #~| "names"
@@ -12166,9 +12233,6 @@ msgstr "&Корти қаблӣ"
 #~ msgid "Set subject of message"
 #~ msgstr "Мавзӯи маълумотро ишора кунед"
 
-#~ msgid "Send CC: to 'address'"
-#~ msgstr "Фиристодани CC: ба 'address'"
-
 #~ msgid "Send BCC: to 'address'"
 #~ msgstr "Фиристодани BCC: ба 'address'"
 
@@ -12197,10 +12261,6 @@ msgstr "&Корти қаблӣ"
 #~ msgstr ""
 #~ "Фиристодани маълумот ба 'address' ва замима кардани файле, ки'URL' "
 #~ "истинод мекунад"
-
-#, fuzzy
-#~ msgid "Removing folder"
-#~ msgstr "Тағйири номи папка"
 
 #~ msgid "Error while removing a folder."
 #~ msgstr "Натавонистам папкаро ҳузф кунам."
