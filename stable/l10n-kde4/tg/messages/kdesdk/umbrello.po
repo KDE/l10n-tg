@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-08 05:46+0000\n"
+"POT-Creation-Date: 2013-10-07 05:28+0000\n"
 "PO-Revision-Date: 2005-09-17 13:21+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -671,7 +671,7 @@ msgstr "Дар вақти пайдоиши код синфҳои зеринро 
 #: dialogs/classgenpage.cpp:391 dialogs/classifierlistpage.cpp:218
 #: dialogs/diagrampropertiespage.ui:307 dialogs/notedialog.cpp:38
 #: dialogs/objectnodedialog.cpp:197 dialogs/parmpropdlg.cpp:115
-#: dialogs/statedialog.cpp:140 dialogs/umlrolepropertiesbase.ui:140
+#: dialogs/statedialog.cpp:170 dialogs/umlrolepropertiesbase.ui:140
 msgid "Documentation"
 msgstr "Ҳуҷҷатнома"
 
@@ -1191,23 +1191,23 @@ msgstr "Пахш кардани тугмаи пайдоиш барои оғоз 
 msgid "Not Yet Generated"
 msgstr "Ҳоло гененерирондашудаги нест"
 
-#: codegenwizard/codegenstatuspage.cpp:159
+#: codegenwizard/codegenstatuspage.cpp:164
 msgid "Code Generated"
 msgstr "Код генерирондашуда"
 
-#: codegenwizard/codegenstatuspage.cpp:163
+#: codegenwizard/codegenstatuspage.cpp:168
 msgid "Not Generated"
 msgstr "Ногенерирондашуда"
 
-#: codegenwizard/codegenstatuspage.cpp:188
-#: codegenwizard/codegenstatuspage.cpp:218
+#: codegenwizard/codegenstatuspage.cpp:193
+#: codegenwizard/codegenstatuspage.cpp:223
 #: codeimpwizard/codeimpstatuspage.cpp:330
 #, fuzzy
 #| msgid "Cannot Open File"
 msgid "Cannot open file!"
 msgstr "Файлро натавонистам кушод"
 
-#: codegenwizard/codegenstatuspage.cpp:208
+#: codegenwizard/codegenstatuspage.cpp:213
 msgid "Umbrello Code Generation - Logger Export"
 msgstr ""
 
@@ -1628,7 +1628,7 @@ msgstr "Номи синф"
 #: dialogs/activitydialog.cpp:36 dialogs/activitydialog.cpp:145
 #: dialogs/assocgenpage.cpp:72 dialogs/classpropdlg.cpp:128
 #: dialogs/objectnodedialog.cpp:39 dialogs/parmpropdlg.cpp:71
-#: dialogs/statedialog.cpp:37 dialogs/statedialog.cpp:125
+#: dialogs/statedialog.cpp:37 dialogs/statedialog.cpp:122
 #: dialogs/umlviewdialog.cpp:40 listpopupmenu.cpp:619
 #: refactoring/refactoringassistant.cpp:455
 #, fuzzy
@@ -1672,7 +1672,7 @@ msgid "General"
 msgstr "Умумӣ"
 
 #: dialogs/activitydialog.cpp:141 dialogs/objectnodedialog.cpp:141
-#: dialogs/statedialog.cpp:121 dialogs/umlattributedialog.cpp:68
+#: dialogs/statedialog.cpp:118 dialogs/umlattributedialog.cpp:68
 #: dialogs/umlentityattributedialog.cpp:70 dialogs/umloperationdialog.cpp:88
 #: dialogs/umltemplatedialog.cpp:64
 msgid "General Properties"
@@ -1715,8 +1715,8 @@ msgstr "амали_нав"
 msgid "&Parameter activity node"
 msgstr "Номи параметр ягона нест"
 
-#: dialogs/activitypage.cpp:58 dialogs/statedialog.cpp:163
-#: dialogs/statedialog.cpp:164
+#: dialogs/activitypage.cpp:58 dialogs/statedialog.cpp:193
+#: dialogs/statedialog.cpp:194
 msgid "Activities"
 msgstr "Фаъолиятҳо"
 
@@ -2437,7 +2437,7 @@ msgstr "Умумӣ"
 msgid "Font"
 msgstr "Ҳарф:"
 
-#: dialogs/classwizard.cpp:44 model_utils.cpp:452
+#: dialogs/classwizard.cpp:44 model_utils.cpp:457
 msgid "new_class"
 msgstr "синфи_нав"
 
@@ -3111,39 +3111,73 @@ msgstr "Автонигоҳдорӣ"
 msgid "Auto Layout Settings"
 msgstr "Танзимотҳои аттрибут"
 
-#: dialogs/statedialog.cpp:114
-#, fuzzy
-#| msgid "Initial state"
-msgctxt "initial state in statechart"
-msgid "Initial state"
-msgstr "Вазъияти аввал"
-
-#: dialogs/statedialog.cpp:115
-#, fuzzy
-#| msgid "State"
-msgctxt "state in statechart"
-msgid "State"
-msgstr "Вазъият"
-
-#: dialogs/statedialog.cpp:116
-#, fuzzy
-#| msgid "End state"
-msgctxt "end state in statechart"
-msgid "End state"
-msgstr "Вазъияи охирин"
-
-#: dialogs/statedialog.cpp:120
+#: dialogs/statedialog.cpp:117
 #, fuzzy
 #| msgid "General"
 msgctxt "general page"
 msgid "General"
 msgstr "Умумӣ"
 
-#: dialogs/statedialog.cpp:132
+#: dialogs/statedialog.cpp:131
+#, fuzzy
+#| msgid "Initial state"
+msgctxt "initial state in statechart"
+msgid "Initial state"
+msgstr "Вазъияти аввал"
+
+#: dialogs/statedialog.cpp:134
+#, fuzzy
+#| msgid "State"
+msgctxt "state in statechart"
+msgid "State"
+msgstr "Вазъият"
+
+#: dialogs/statedialog.cpp:137
+#, fuzzy
+#| msgid "End state"
+msgctxt "end state in statechart"
+msgid "End state"
+msgstr "Вазъияи охирин"
+
+#: dialogs/statedialog.cpp:140
+#, fuzzy
+msgctxt "fork state in statechart"
+msgid "Fork"
+msgstr "Форк/боҳампайвастан"
+
+#: dialogs/statedialog.cpp:143
+#, fuzzy
+msgctxt "join state in statechart"
+msgid "Join"
+msgstr "Фокро/Пайвастан"
+
+#: dialogs/statedialog.cpp:146
+#, fuzzy
+#| msgid "Associations"
+msgctxt "junction state in statechart"
+msgid "Junction"
+msgstr "Ширкатҳо"
+
+#: dialogs/statedialog.cpp:149
+msgctxt "deep history state in statechart"
+msgid "DeepHistory"
+msgstr ""
+
+#: dialogs/statedialog.cpp:152
+msgctxt "shallow history state in statechart"
+msgid "ShallowHistory"
+msgstr ""
+
+#: dialogs/statedialog.cpp:155
+msgctxt "choice state in statechart"
+msgid "Choice"
+msgstr ""
+
+#: dialogs/statedialog.cpp:162
 msgid "State type:"
 msgstr "Навъи ҳолат:"
 
-#: dialogs/statedialog.cpp:137
+#: dialogs/statedialog.cpp:167
 msgid "State name:"
 msgstr "Номи ҳолат:"
 
@@ -3605,8 +3639,8 @@ msgstr "Номи воридшуда нодуруст аст."
 msgid "The name you have entered is not unique."
 msgstr "Ин хел ном аллакай вуҷуд дорад."
 
-#: dialogs/umlviewdialog.cpp:233 umldoc.cpp:1416 umllistview.cpp:2314
-#: umllistview.cpp:2321 umllistview.cpp:2586
+#: dialogs/umlviewdialog.cpp:233 umldoc.cpp:1416 umllistview.cpp:2325
+#: umllistview.cpp:2332 umllistview.cpp:2597
 msgid "Name Not Unique"
 msgstr "Ном якхела нест"
 
@@ -4382,92 +4416,92 @@ msgid ""
 "target directory"
 msgstr ""
 
-#: model_utils.cpp:454
+#: model_utils.cpp:459
 msgid "new_actor"
 msgstr "актёри_нав"
 
-#: model_utils.cpp:456
+#: model_utils.cpp:461
 msgid "new_usecase"
 msgstr "new_usecase"
 
-#: model_utils.cpp:458
+#: model_utils.cpp:463
 msgid "new_package"
 msgstr "пакети_нав"
 
-#: model_utils.cpp:460
+#: model_utils.cpp:465
 msgid "new_component"
 msgstr "компоненти_нав"
 
-#: model_utils.cpp:462
+#: model_utils.cpp:467
 msgid "new_node"
 msgstr "узели_нав"
 
-#: model_utils.cpp:464
+#: model_utils.cpp:469
 msgid "new_artifact"
 msgstr "new_artifact"
 
-#: model_utils.cpp:466
+#: model_utils.cpp:471
 msgid "new_interface"
 msgstr "интерфейси_нав"
 
-#: model_utils.cpp:468
+#: model_utils.cpp:473
 msgid "new_datatype"
 msgstr "намуди маълумот_нав"
 
-#: model_utils.cpp:470
+#: model_utils.cpp:475
 msgid "new_enum"
 msgstr "new_enum"
 
-#: model_utils.cpp:472
+#: model_utils.cpp:477
 #, fuzzy
 msgid "new_entity"
 msgstr "new_enum"
 
-#: model_utils.cpp:474
+#: model_utils.cpp:479
 #, fuzzy
 msgid "new_folder"
 msgstr "узели_нав"
 
-#: model_utils.cpp:476 umlcanvasobject.cpp:193
+#: model_utils.cpp:481 umlcanvasobject.cpp:193
 msgid "new_association"
 msgstr "ассотсиатсияи_нав"
 
-#: model_utils.cpp:478
+#: model_utils.cpp:483
 #, fuzzy
 #| msgid "new_actor"
 msgid "new_category"
 msgstr "актёри_нав"
 
-#: model_utils.cpp:480
+#: model_utils.cpp:485
 msgid "new_object"
 msgstr "мавзуъи_нав"
 
-#: model_utils.cpp:881
+#: model_utils.cpp:886
 msgid "OK"
 msgstr ""
 
-#: model_utils.cpp:881
+#: model_utils.cpp:886
 msgctxt "parse status"
 msgid "Empty"
 msgstr ""
 
-#: model_utils.cpp:881
+#: model_utils.cpp:886
 msgid "Malformed argument"
 msgstr ""
 
-#: model_utils.cpp:882
+#: model_utils.cpp:887
 msgid "Unknown argument type"
 msgstr ""
 
-#: model_utils.cpp:882
+#: model_utils.cpp:887
 msgid "Illegal method name"
 msgstr ""
 
-#: model_utils.cpp:883
+#: model_utils.cpp:888
 msgid "Unknown return type"
 msgstr ""
 
-#: model_utils.cpp:883
+#: model_utils.cpp:888
 msgid "Unspecified error"
 msgstr ""
 
@@ -6182,13 +6216,13 @@ msgid "There was a problem loading file: %1"
 msgstr "Ҳангоми пурборкунии файл хатогӣ рӯй дода шуд: %1"
 
 #: umldoc.cpp:620 umldoc.cpp:630 umldoc.cpp:647 umldoc.cpp:680 umldoc.cpp:698
-#: umllistview.cpp:553 umlviewimageexportermodel.cpp:257
+#: umllistview.cpp:564 umlviewimageexportermodel.cpp:257
 #, kde-format
 msgid "There was a problem saving file: %1"
 msgstr "Ҳангоми нигоҳдории файл хатогӣ рӯй дода шуд: %1"
 
 #: umldoc.cpp:620 umldoc.cpp:630 umldoc.cpp:647 umldoc.cpp:680 umldoc.cpp:698
-#: umldoc.cpp:705 umllistview.cpp:554
+#: umldoc.cpp:705 umllistview.cpp:565
 msgid "Save Error"
 msgstr "Нигоҳдории нодуруст"
 
@@ -6269,7 +6303,7 @@ msgctxt "renaming child uml object"
 msgid "Name"
 msgstr "Ном"
 
-#: umldoc.cpp:1415 umllistview.cpp:2313
+#: umldoc.cpp:1415 umllistview.cpp:2324
 msgid ""
 "The name you entered was not unique.\n"
 "Is this what you wanted?"
@@ -6277,12 +6311,12 @@ msgstr ""
 "Чунин ном аллакай вуҷуд дорад.\n"
 "Шумо дар ҳақиқат ҳаминро мехоҳед?"
 
-#: umldoc.cpp:1416 umllistview.cpp:2314
+#: umldoc.cpp:1416 umllistview.cpp:2325
 #, fuzzy
 msgid "Use Name"
 msgstr "Собиқа"
 
-#: umldoc.cpp:1416 umllistview.cpp:2314
+#: umldoc.cpp:1416 umllistview.cpp:2325
 #, fuzzy
 msgid "Enter New Name"
 msgstr "Номи ҳолатро гузоред"
@@ -6317,49 +6351,49 @@ msgstr "Пурборкунии диаграммаҳо..."
 msgid "/autosave%1"
 msgstr "/автохотиргузори%1"
 
-#: umllistview.cpp:514
+#: umllistview.cpp:525
 msgid "Externalize Folder"
 msgstr ""
 
-#: umllistview.cpp:535
+#: umllistview.cpp:546
 #, kde-format
 msgid "Folder %1 must be relative to the main model directory, %2."
 msgstr ""
 
-#: umllistview.cpp:536
+#: umllistview.cpp:547
 #, fuzzy
 #| msgid "Paste Error"
 msgid "Path Error"
 msgstr "Часпондани хато"
 
-#: umllistview.cpp:544
+#: umllistview.cpp:555
 #, kde-format
 msgid ""
 "File %1 already exists!\n"
 "The existing file will be overwritten."
 msgstr ""
 
-#: umllistview.cpp:545
+#: umllistview.cpp:556
 #, fuzzy
 #| msgid "File Already Exists"
 msgid "File Exist"
 msgstr "Файл аллакай вуҷуд дорад"
 
-#: umllistview.cpp:585
+#: umllistview.cpp:596
 #, fuzzy
 msgid "Enter Model Name"
 msgstr "Номи ҳолатро гузоред"
 
-#: umllistview.cpp:586
+#: umllistview.cpp:597
 #, fuzzy
 msgid "Enter the new name of the model:"
 msgstr "Номи нави фаъолиятро гузоред:"
 
-#: umllistview.cpp:1324
+#: umllistview.cpp:1335
 msgid "Views"
 msgstr "Пешниҳодҳо"
 
-#: umllistview.cpp:2303
+#: umllistview.cpp:2314
 msgid ""
 "The name you entered was invalid.\n"
 "Creation process has been canceled."
@@ -6367,11 +6401,11 @@ msgstr ""
 "Номи ворид карда шуда имконпазир аст.\n"
 "Бунёкунӣ бекор карда шуд."
 
-#: umllistview.cpp:2304 umllistviewitem.cpp:696
+#: umllistview.cpp:2315 umllistviewitem.cpp:696
 msgid "Name Not Valid"
 msgstr "Ном нодуруст аст"
 
-#: umllistview.cpp:2320 umllistview.cpp:2585
+#: umllistview.cpp:2331 umllistview.cpp:2596
 #, fuzzy
 msgid ""
 "The name you entered was not unique.\n"
@@ -6380,21 +6414,21 @@ msgstr ""
 "Номи ворид карда шуда аллакай истифода шуда истодааст\n"
 "Бунёдкунӣ бекор карда шуд."
 
-#: umllistview.cpp:2543 umllistview.cpp:2560 umllistview.cpp:2575
-#: umllistview.cpp:2605
+#: umllistview.cpp:2554 umllistview.cpp:2571 umllistview.cpp:2586
+#: umllistview.cpp:2616
 msgid "Creation canceled"
 msgstr ""
 
-#: umllistview.cpp:2863
+#: umllistview.cpp:2874
 #, fuzzy
 msgid "Loading listview..."
 msgstr "Пурбори диаграммаҳо..."
 
-#: umllistview.cpp:3247
+#: umllistview.cpp:3258
 msgid "The folder must be emptied before it can be deleted."
 msgstr "Каталогро пеш аз нобуд сохтан озод намоед."
 
-#: umllistview.cpp:3248
+#: umllistview.cpp:3259
 msgid "Folder Not Empty"
 msgstr "Каталог холӣ нест"
 
