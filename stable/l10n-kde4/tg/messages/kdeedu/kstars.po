@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-11-28 05:13+0000\n"
+"POT-Creation-Date: 2014-01-06 05:12+0000\n"
 "PO-Revision-Date: 2005-11-06 23:03+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -2752,10 +2752,6 @@ msgstr ""
 msgid "Missing index files"
 msgstr ""
 
-#: ekos/align.cpp:346 ekos/align.cpp:349
-msgid "Do not show again"
-msgstr ""
-
 #: ekos/align.cpp:348
 #, kde-format
 msgid ""
@@ -2867,91 +2863,91 @@ msgstr ""
 msgid "Processing solution for polar alignment..."
 msgstr ""
 
-#: ekos/align.cpp:823
-#, fuzzy
-#| msgid "south"
-msgid "southern"
-msgstr "ҷануб"
-
-#: ekos/align.cpp:823
-#, fuzzy
-#| msgid "north"
-msgid "northern"
-msgstr "шимол"
-
 #: ekos/align.cpp:831
-#, fuzzy, kde-format
-msgid "Point the telescope at the %1 meridian. Press continue when ready."
+#, fuzzy
+msgid ""
+"Point the telescope at the southern meridian. Press continue when ready."
 msgstr "Ҷузъиёти тирезаро барои объекти асосӣ нишон диҳед."
 
-#: ekos/align.cpp:832 ekos/align.cpp:916
+#: ekos/align.cpp:832
+#, fuzzy
+msgid ""
+"Point the telescope at the northern meridian. Press continue when ready."
+msgstr "Ҷузъиёти тирезаро барои объекти асосӣ нишон диҳед."
+
+#: ekos/align.cpp:833 ekos/align.cpp:918
 msgid "Polar Alignment Measurement"
 msgstr ""
 
-#: ekos/align.cpp:833 ekos/align.cpp:917
-msgid "Don't ask again"
-msgstr ""
-
-#: ekos/align.cpp:836
+#: ekos/align.cpp:837
 msgid "Solving first frame near the meridian."
 msgstr ""
 
-#: ekos/align.cpp:861 ekos/align.cpp:947
+#: ekos/align.cpp:862 ekos/align.cpp:949
 msgid "Slewing 30 arcminutes in RA..."
 msgstr ""
 
-#: ekos/align.cpp:867
+#: ekos/align.cpp:868
 msgid "Solving second frame near the meridian."
 msgstr ""
 
-#: ekos/align.cpp:878
+#: ekos/align.cpp:879
 msgid "Calculating azimuth alignment error..."
 msgstr ""
 
-#: ekos/align.cpp:890 ekos/align.cpp:976
+#: ekos/align.cpp:891 ekos/align.cpp:978
 msgid "Slewing back to original position..."
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (KComboBox, FocusEdit)
-#: ekos/align.cpp:907 tools/arglooktoward.ui:62
-msgid "east"
-msgstr "шарқ"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, FocusEdit)
-#: ekos/align.cpp:907 tools/arglooktoward.ui:82
-msgid "west"
-msgstr "ғарб"
-
-#: ekos/align.cpp:915
-#, kde-format
+#: ekos/align.cpp:916
+#, fuzzy
 msgid ""
-"Point the telescope to the %1 with a minimum altitude of 20 degrees. Press "
+"Point the telescope to the east with a minimum altitude of 20 degrees. Press "
 "continue when ready."
-msgstr ""
+msgstr "Ҷузъиёти тирезаро барои объекти асосӣ нишон диҳед."
 
-#: ekos/align.cpp:920
+#: ekos/align.cpp:917
+#, fuzzy
+msgid ""
+"Point the telescope to the west with a minimum altitude of 20 degrees. Press "
+"continue when ready."
+msgstr "Ҷузъиёти тирезаро барои объекти асосӣ нишон диҳед."
+
+#: ekos/align.cpp:922
 msgid "Solving first frame."
 msgstr ""
 
-#: ekos/align.cpp:953
+#: ekos/align.cpp:955
 msgid "Solving second frame."
 msgstr ""
 
-#: ekos/align.cpp:963
+#: ekos/align.cpp:965
 msgid "Calculating altitude alignment error..."
 msgstr ""
 
-#: ekos/align.cpp:1086 ekos/align.cpp:1092
+#: ekos/align.cpp:1016 ekos/align.cpp:1053
 #, kde-format
-msgid "%1"
+msgid "%1° too far west"
 msgstr ""
 
-#: ekos/align.cpp:1086 ekos/align.cpp:1092
+#: ekos/align.cpp:1018 ekos/align.cpp:1051
 #, kde-format
-msgid "%1° %2"
+msgid "%1° too far east"
 msgstr ""
 
-#: ekos/align.cpp:1124 ekos/align.cpp:1151
+#: ekos/align.cpp:1027 ekos/align.cpp:1037 ekos/align.cpp:1064
+#: ekos/align.cpp:1070
+#, kde-format
+msgid "%1° too far high"
+msgstr ""
+
+#: ekos/align.cpp:1029 ekos/align.cpp:1035 ekos/align.cpp:1062
+#: ekos/align.cpp:1072
+#, kde-format
+msgid "%1° too far low"
+msgstr ""
+
+#: ekos/align.cpp:1126 ekos/align.cpp:1153
 msgid ""
 "Slewing to calibration position, please wait until telescope is finished "
 "slewing."
@@ -3286,7 +3282,7 @@ msgstr ""
 msgid "Complete"
 msgstr "Комил"
 
-#: ekos/capture.cpp:148 ekos/capture.cpp:620
+#: ekos/capture.cpp:148 ekos/capture.cpp:617
 msgid "Auto dark subtract is not supported in batch mode."
 msgstr ""
 
@@ -3315,18 +3311,14 @@ msgstr "Тасвирро нигоҳ дашта натавонист:%1 "
 msgid "Capturing dark frame..."
 msgstr "Гирифтани расм"
 
-#. i18n: ectx: property (text), widget (QLabel, secondsLabel)
-#: ekos/capture.cpp:606 ekos/capture.ui:843
+#: ekos/capture.cpp:605
 #, fuzzy
 msgid "second left"
-msgstr ""
+msgid_plural "seconds left"
+msgstr[0] ""
 "_: дуюм\n"
 "дюм"
-
-#: ekos/capture.cpp:608
-#, fuzzy
-msgid "seconds left"
-msgstr ""
+msgstr[1] ""
 "_: дуюм\n"
 "дюм"
 
@@ -4415,12 +4407,6 @@ msgstr "Хидматгор"
 msgid "Host:"
 msgstr "Хидматгор:"
 
-#. i18n: ectx: property (text), widget (QLineEdit, kcfg_remoteHost)
-#: ekos/opsekos.ui:34
-#, fuzzy
-msgid "localhost"
-msgstr "ВМ: "
-
 #. i18n: ectx: property (text), widget (QLabel, label_13)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
 #: ekos/opsekos.ui:41 indi/indihostconf.ui:55 tools/argsetportindi.ui:30
@@ -5237,11 +5223,6 @@ msgstr "Даргоҳи телескоп:"
 msgid "Telescope port:"
 msgstr "Даргоҳи телескоп:"
 
-#. i18n: ectx: property (text), widget (KLineEdit, kcfg_telescopePort)
-#: indi/opsindi.ui:35
-msgid "/dev/ttyUSB0"
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QLabel, telescopeLabel_2)
 #: indi/opsindi.ui:45
 #, fuzzy
@@ -5267,21 +5248,11 @@ msgstr "Каталоги FITS нобаён:"
 msgid "Video port:"
 msgstr "Даргоҳи видео:"
 
-#. i18n: ectx: property (text), widget (KLineEdit, kcfg_videoPort)
-#: indi/opsindi.ui:69
-msgid "/dev/video0"
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QLabel, telescopeLabel_3)
 #: indi/opsindi.ui:79
 #, fuzzy
 msgid "Filter port:"
 msgstr "Филтри шаҳрҳо:"
-
-#. i18n: ectx: property (text), widget (KLineEdit, kcfg_filterPort)
-#: indi/opsindi.ui:86
-msgid "/dev/ttyUSB2"
-msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, videoLabel_2)
 #: indi/opsindi.ui:96
@@ -5290,19 +5261,9 @@ msgstr ""
 msgid "INDI Server:"
 msgstr "Хидматгор"
 
-#. i18n: ectx: property (text), widget (KLineEdit, kcfg_indiServer)
-#: indi/opsindi.ui:103
-msgid "/usr/bin/indiserver"
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QLabel, videoLabel_3)
 #: indi/opsindi.ui:130
 msgid "INDI Drivers Directory:"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (KLineEdit, kcfg_indiDriversDir)
-#: indi/opsindi.ui:137
-msgid "/usr/share/indi"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, fitsLabel)
@@ -43557,15 +43518,17 @@ msgstr "Қолабҳои таърихро дуруст кардан: "
 msgid "Error [D-Bus waitForKey()]: Invalid key requested."
 msgstr "Хатогии [DCOP waitForKey()]: Калиди нодуруст талаб карда шудааст."
 
-#: kstarsdcop.cpp:237 kstarsdcop.cpp:240
-#, fuzzy
+#: kstarsdcop.cpp:237
+#, fuzzy, kde-format
 #| msgid "Error [DCOP setGeoLocation]: city "
-msgid "Error [D-Bus setGeoLocation]: city "
+msgid "Error [D-Bus setGeoLocation]: city %1, %2 not found in database."
 msgstr "Хатогии [DCOP setGeoLocation]: шаҳр "
 
-#: kstarsdcop.cpp:238 kstarsdcop.cpp:241
-msgid " not found in database."
-msgstr " дар базаи маълумотҳо ёфта нашуд."
+#: kstarsdcop.cpp:240
+#, fuzzy, kde-format
+#| msgid "Error [DCOP setGeoLocation]: city "
+msgid "Error [D-Bus setGeoLocation]: city %1, %2, %3 not found in database."
+msgstr "Хатогии [DCOP setGeoLocation]: шаҳр "
 
 #: kstarsdcop.cpp:541
 msgid "Print Sky"
@@ -51697,6 +51660,11 @@ msgid "northeast"
 msgstr "шимоли шарқ"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, FocusEdit)
+#: tools/arglooktoward.ui:62
+msgid "east"
+msgstr "шарқ"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, FocusEdit)
 #: tools/arglooktoward.ui:67
 msgid "southeast"
 msgstr "ҷануби шарқ"
@@ -51710,6 +51678,11 @@ msgstr "ҷануб"
 #: tools/arglooktoward.ui:77
 msgid "southwest"
 msgstr "ҷануби ғарб"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, FocusEdit)
+#: tools/arglooktoward.ui:82
+msgid "west"
+msgstr "ғарб"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, FocusEdit)
 #: tools/arglooktoward.ui:87
@@ -56397,6 +56370,29 @@ msgstr "Ранг ва шароити пайраҳаи пажмурда шуда"
 #, fuzzy
 msgid "Set the color for the background."
 msgstr "Ранг ва шароити пайраҳа пажмурда шуда?"
+
+#, fuzzy
+#~| msgid "south"
+#~ msgid "southern"
+#~ msgstr "ҷануб"
+
+#, fuzzy
+#~| msgid "north"
+#~ msgid "northern"
+#~ msgstr "шимол"
+
+#, fuzzy
+#~ msgid "seconds left"
+#~ msgstr ""
+#~ "_: дуюм\n"
+#~ "дюм"
+
+#, fuzzy
+#~ msgid "localhost"
+#~ msgstr "ВМ: "
+
+#~ msgid " not found in database."
+#~ msgstr " дар базаи маълумотҳо ёфта нашуд."
 
 #, fuzzy
 #~| msgctxt "City name (optional, probably does not need a translation)"
