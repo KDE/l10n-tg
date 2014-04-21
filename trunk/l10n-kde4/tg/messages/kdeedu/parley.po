@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kvoctrain\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-12 01:45+0000\n"
+"POT-Creation-Date: 2014-04-21 01:48+0000\n"
 "PO-Revision-Date: 2005-09-23 17:17+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -621,7 +621,7 @@ msgstr "&Синонимҳо"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #. i18n: ectx: property (text), widget (QRadioButton, multipleChoice)
 #: src/configure-practice/specificpracticeoptions.ui:17
-#: src/editor/editor.cpp:232 src/statistics/statisticsmainwindow.ui:115
+#: src/editor/editor.cpp:232 src/statistics/statisticsmainwindow.ui:93
 msgid "Multiple Choice"
 msgstr "Интихобот"
 
@@ -1362,7 +1362,7 @@ msgid "Could not write to file \"%1\""
 msgstr "Хонда натавонист"
 
 #: src/export/exportdialog.cpp:110 src/parleydocument.cpp:238
-#: src/parleymainwindow.cpp:139
+#: src/parleymainwindow.cpp:138
 #, fuzzy
 msgid "Untitled"
 msgstr "сарлавҳа"
@@ -1819,7 +1819,19 @@ msgstr "Сохтани дарс"
 msgid "Could not open vocabulary collection \"%1\""
 msgstr "Кушодани файли луғати мисол"
 
-#: src/parleymainwindow.cpp:202
+#: src/parleymainwindow.cpp:176
+msgid ""
+"You cannot start to practice when the known language is the same as the "
+"language to learn."
+msgstr ""
+
+#: src/parleymainwindow.cpp:177
+#, fuzzy
+#| msgid "Languages"
+msgid "Select languages"
+msgstr "Забонҳо"
+
+#: src/parleymainwindow.cpp:208
 msgid ""
 "Vocabulary is modified.\n"
 "\n"
@@ -1863,13 +1875,13 @@ msgstr "Артикл"
 msgid "Stop"
 msgstr ""
 
-#: src/practice/comparisonbackendmode.cpp:69
+#: src/practice/comparisonbackendmode.cpp:70
 #, fuzzy
 #| msgid "Enter the correct conjugation forms."
 msgid "All comparison forms were right."
 msgstr "Дохил кардани шаклҳои дурусти тасриф."
 
-#: src/practice/comparisonbackendmode.cpp:74
+#: src/practice/comparisonbackendmode.cpp:75
 #, kde-format
 msgctxt ""
 "the user entered the wrong absolute form when practicing comparison forms of "
@@ -1877,14 +1889,14 @@ msgctxt ""
 msgid "\"%1\" is the wrong word."
 msgstr ""
 
-#: src/practice/comparisonbackendmode.cpp:78
+#: src/practice/comparisonbackendmode.cpp:79
 msgctxt ""
 "the user entered the wrong comparison forms when practicing comparison forms "
 "of adjectives (good, better, best)"
 msgid "Both comparison forms (comparative and superlative) are wrong."
 msgstr ""
 
-#: src/practice/comparisonbackendmode.cpp:81
+#: src/practice/comparisonbackendmode.cpp:82
 #, fuzzy
 #| msgid "Your answer was wrong. %1% done."
 msgctxt ""
@@ -1893,7 +1905,7 @@ msgctxt ""
 msgid "The comparative is wrong."
 msgstr "Ҷавоби Шумо нодуруст аст. %1% ислоҳ кардед."
 
-#: src/practice/comparisonbackendmode.cpp:84
+#: src/practice/comparisonbackendmode.cpp:85
 #, fuzzy
 #| msgid "Your answer was wrong. %1% done."
 msgctxt ""
@@ -1929,13 +1941,13 @@ msgstr[1] "Дохил кардани шаклҳои дурусти тасриф.
 msgid "Enter all conjugation forms."
 msgstr "Дохил кардани шаклҳои дурусти тасриф."
 
-#: src/practice/entryfilter.cpp:82
+#: src/practice/entryfilter.cpp:92
 msgid ""
 "The vocabulary document contains no entries that can be used for the chosen "
 "type of practice."
 msgstr ""
 
-#: src/practice/entryfilter.cpp:117
+#: src/practice/entryfilter.cpp:108
 #, fuzzy
 #| msgid "Starting special query..."
 msgid "Start Practice"
@@ -2014,26 +2026,26 @@ msgstr "Рақами  фаслро дар дарс ворид намоед"
 msgid "Resulting number of words to practice:"
 msgstr "Тарҷумаи дуруст интихоб кунед:"
 
-#: src/practice/genderbackendmode.cpp:62
+#: src/practice/genderbackendmode.cpp:61
 #, kde-format
 msgid "Choose the right article for \"%1\""
 msgstr ""
 
-#: src/practice/genderbackendmode.cpp:84
+#: src/practice/genderbackendmode.cpp:83
 #, fuzzy, kde-format
 #| msgid "&male"
 msgctxt "@label the gender of the word: masculine"
 msgid "%1 is masculine"
 msgstr "&мардона"
 
-#: src/practice/genderbackendmode.cpp:89
+#: src/practice/genderbackendmode.cpp:88
 #, fuzzy, kde-format
 #| msgid "&female"
 msgctxt "@label the gender of the word: feminine"
 msgid "%1 is feminine"
 msgstr "&занона"
 
-#: src/practice/genderbackendmode.cpp:94
+#: src/practice/genderbackendmode.cpp:93
 #, fuzzy, kde-format
 #| msgid "&neutral"
 msgctxt "@label the gender of the word: neuter"
@@ -2065,7 +2077,7 @@ msgstr ""
 msgid "LaTeX error."
 msgstr ""
 
-#: src/practice/multiplechoicebackendmode.cpp:107
+#: src/practice/multiplechoicebackendmode.cpp:106
 #: src/practice/writtenbackendmode.cpp:147
 msgid "You revealed the answer by using too many hints."
 msgstr ""
@@ -2133,23 +2145,23 @@ msgstr "Муқои&сакунӣ"
 msgid "superlative"
 msgstr "&Артиклҳо"
 
-#: src/practice/practicemainwindow.cpp:75
+#: src/practice/practicemainwindow.cpp:73
 #, fuzzy
 #| msgid "&Articles"
 msgid "Stop Practice"
 msgstr "&Артиклҳо"
 
-#: src/practice/practicemainwindow.cpp:77
+#: src/practice/practicemainwindow.cpp:75
 #, fuzzy
 #| msgid "&Articles"
 msgid "Stop practicing"
 msgstr "&Артиклҳо"
 
-#: src/practice/practicemainwindow.cpp:87
+#: src/practice/practicemainwindow.cpp:85
 msgid "Change answer to right/wrong"
 msgstr ""
 
-#: src/practice/practicemainwindow.cpp:88
+#: src/practice/practicemainwindow.cpp:86
 msgid ""
 "When you answered, Parley will display that the answer was right or wrong.\n"
 "This shortcut changes how the answer is counted."
@@ -2275,12 +2287,12 @@ msgstr ""
 "НПО \"Имкониятҳои ҷавонон\" ва Khujand Computer Technologies, Inc. USA, "
 "Роҷер Ковакс, Виктор Ибрагимов, Марина Колючева"
 
-#: src/practice/sessionmanagerbase.cpp:66
+#: src/practice/sessionmanagerbase.cpp:67
 #, fuzzy
 msgid "The vocabulary collection contains fewer than two languages."
 msgstr "Нигоҳдоштани ҳуҷҷати равон"
 
-#: src/practice/sessionmanagerbase.cpp:67
+#: src/practice/sessionmanagerbase.cpp:68
 #, fuzzy
 #| msgid "Could not write "
 msgid "Could not start practice"
@@ -3463,55 +3475,62 @@ msgstr "Тарҷумаи дуруст интихоб кунед:"
 msgid "Selected sub word types for practices."
 msgstr "Тарҷумаи дуруст интихоб кунед:"
 
-#. i18n: ectx: label, entry (QuestionLanguage), group (PracticeManager)
-#: src/settings/parley.kcfg:292
-msgid "The language that is displayed in a test."
+#. i18n: ectx: label, entry (LearningLanguage), group (PracticeManager)
+#: src/settings/parley.kcfg:293
+msgid "The language that you are learning."
 msgstr ""
 
-#. i18n: ectx: label, entry (SolutionLanguage), group (PracticeManager)
-#: src/settings/parley.kcfg:296
-msgid "The language in which the user has to answer."
-msgstr ""
+#. i18n: ectx: label, entry (KnownLanguage), group (PracticeManager)
+#: src/settings/parley.kcfg:297
+#, fuzzy
+#| msgid "Type your language code if you know it."
+msgid "The language which that you know already."
+msgstr "Агар Шумо мехоҳед рамзгузории забонатон чоп кунед."
 
 #. i18n: ectx: label, entry (ShowSolutionAfterAnswer), group (PracticeManager)
-#: src/settings/parley.kcfg:301
+#: src/settings/parley.kcfg:302
 #, fuzzy
 #| msgid "&Show solution"
 msgid "Show the solution after an answer was given."
 msgstr "&Намоиши қарор"
 
 #. i18n: ectx: label, entry (ShowSolutionAfterAnswerTime), group (PracticeManager)
-#: src/settings/parley.kcfg:305
+#: src/settings/parley.kcfg:306
 msgid "The time the solution is shown (seconds). 0 is unlimited."
 msgstr ""
 
 #. i18n: ectx: label, entry (PracticeMode), group (PracticeManager)
-#: src/settings/parley.kcfg:320
+#: src/settings/parley.kcfg:321
+msgid "The practice method that is currently selected."
+msgstr ""
+
+#. i18n: ectx: label, entry (PracticeDirection), group (PracticeManager)
+#: src/settings/parley.kcfg:332
 msgid "The practice mode that is currently selected."
 msgstr ""
 
 #. i18n: ectx: label, entry (BlockItem$(Grade)), group (PracticeManager)
-#: src/settings/parley.kcfg:326
+#: src/settings/parley.kcfg:338
 msgid "Amount of time different grades should be blocked"
 msgstr ""
 
 #. i18n: ectx: label, entry (ExpireItem$(Grade)), group (PracticeManager)
-#: src/settings/parley.kcfg:337
+#: src/settings/parley.kcfg:349
 msgid "Amount of time after which different grades should expire"
 msgstr ""
 
 #. i18n: ectx: label, entry (ProvidersUrl), group (KNewStuff)
-#: src/settings/parley.kcfg:349
+#: src/settings/parley.kcfg:361
 msgid "The Providers path for Parley"
 msgstr ""
 
 #. i18n: ectx: label, entry (InstallationCommand), group (KNewStuff)
-#: src/settings/parley.kcfg:353
+#: src/settings/parley.kcfg:365
 msgid "The command used to start a downloaded vocabulary"
 msgstr ""
 
 #. i18n: ectx: label, entry (InstallPath), group (KNewStuff)
-#: src/settings/parley.kcfg:357
+#: src/settings/parley.kcfg:369
 msgid "The folder where downloaded vocabularies are saved by default"
 msgstr ""
 
@@ -3609,78 +3628,96 @@ msgstr "Мақола ва дигар навиштаҳоро аз луғат ба
 msgid "Remove grades from this lesson and all sub-lessons"
 msgstr "Мақола ва дигар навиштаҳоро аз луғат бароварда шавад"
 
-#: src/statistics/statisticsmainwindow.cpp:56
-#, fuzzy, kde-format
-msgctxt "caption for an overview of the grades for a document"
-msgid "Statistics for \"%1\""
-msgstr "Намоиши &статистика"
+#: src/statistics/statisticsmainwindow.cpp:196
+#, fuzzy
+#| msgid "&Learning"
+msgid "Known to Learning"
+msgstr "&Омӯхтан"
 
-#: src/statistics/statisticsmainwindow.cpp:166
-#: src/statistics/statisticsmainwindow.cpp:177
-#, kde-format
-msgctxt "pair of two languages that the user chooses to practice"
-msgid "%1 to %2"
-msgstr ""
+#: src/statistics/statisticsmainwindow.cpp:197
+#, fuzzy
+#| msgid "&Learning"
+msgid "Learning to Known"
+msgstr "&Омӯхтан"
+
+#: src/statistics/statisticsmainwindow.cpp:198
+#, fuzzy
+#| msgid "Article"
+msgid "Mixed Directions"
+msgstr "Артикл"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: src/statistics/statisticsmainwindow.ui:23
 #, fuzzy
+#| msgid "Language Properties"
+msgid "Language to Learn"
+msgstr "Хусусиятҳои забон"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: src/statistics/statisticsmainwindow.ui:43
+#, fuzzy
 #| msgid "Languages"
-msgid "Languages:"
+msgid "Known Language"
 msgstr "Забонҳо"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: src/statistics/statisticsmainwindow.ui:91
+#: src/statistics/statisticsmainwindow.ui:69
 #, fuzzy
 #| msgid "Article"
 msgid "Practice Mode:"
 msgstr "Артикл"
 
 #. i18n: ectx: property (text), widget (QRadioButton, flashCard)
-#: src/statistics/statisticsmainwindow.ui:98
+#: src/statistics/statisticsmainwindow.ui:76
 msgid "Flash Cards"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, mixedLetters)
-#: src/statistics/statisticsmainwindow.ui:108
+#: src/statistics/statisticsmainwindow.ui:86
 #, fuzzy
 #| msgid "Article"
 msgid "Mixed Letters"
 msgstr "Артикл"
 
 #. i18n: ectx: property (text), widget (QRadioButton, written)
-#: src/statistics/statisticsmainwindow.ui:122
+#: src/statistics/statisticsmainwindow.ui:100
 #, fuzzy
 #| msgid "Article"
 msgid "Written"
 msgstr "Артикл"
 
 #. i18n: ectx: property (text), widget (QRadioButton, exampleSentence)
-#: src/statistics/statisticsmainwindow.ui:132
+#: src/statistics/statisticsmainwindow.ui:110
 #, fuzzy
 #| msgid "Example sentence"
 msgid "Example Sentences"
 msgstr "Ҷумлаи мисол"
 
 #. i18n: ectx: property (text), widget (QRadioButton, gender)
-#: src/statistics/statisticsmainwindow.ui:142
+#: src/statistics/statisticsmainwindow.ui:120
 #, fuzzy
 #| msgid "Articles"
 msgid "Gender of Nouns"
 msgstr "Артиклҳо"
 
 #. i18n: ectx: property (text), widget (QRadioButton, comparisonForms)
-#: src/statistics/statisticsmainwindow.ui:152
+#: src/statistics/statisticsmainwindow.ui:130
 #, fuzzy
 #| msgid "&Comparison Forms"
 msgid "Comparison Forms"
 msgstr "&Шаклҳои муқоисакунӣ"
 
 #. i18n: ectx: property (text), widget (QRadioButton, conjugations)
-#: src/statistics/statisticsmainwindow.ui:162
+#: src/statistics/statisticsmainwindow.ui:140
 #, fuzzy
 msgid "Conjugations"
 msgstr "Тасрифкунӣ"
+
+#. i18n: ectx: property (text), widget (QLabel, label3)
+#: src/statistics/statisticsmainwindow.ui:183
+#, fuzzy
+msgid "Practice Direction"
+msgstr "Интихоботҳои намоиш"
 
 #: src/statistics/statisticsmodel.cpp:31
 #, fuzzy, kde-format
@@ -4194,6 +4231,16 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+#~ msgctxt "caption for an overview of the grades for a document"
+#~ msgid "Statistics for \"%1\""
+#~ msgstr "Намоиши &статистика"
+
+#, fuzzy
+#~| msgid "Languages"
+#~ msgid "Languages:"
+#~ msgstr "Забонҳо"
+
+#, fuzzy
 #~| msgid "Reset &Grades"
 #~ msgid "Remove &Grades"
 #~ msgstr "Аз нав созии &дараҷа"
@@ -4423,10 +4470,6 @@ msgstr ""
 #~ msgctxt "@title:group"
 #~ msgid "Practice"
 #~ msgstr "Артикл"
-
-#, fuzzy
-#~ msgid "Practice options"
-#~ msgstr "Интихоботҳои намоиш"
 
 #, fuzzy
 #~| msgid "Starting Query"
@@ -6260,11 +6303,6 @@ msgstr ""
 
 #, fuzzy
 #~| msgid "Languages"
-#~ msgid "Setup Languages"
-#~ msgstr "Забонҳо"
-
-#, fuzzy
-#~| msgid "Languages"
 #~ msgid "Language->Edit Languages"
 #~ msgstr "Забонҳо"
 
@@ -6365,9 +6403,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Ин тугма фаъол мешавад агар шумо намуди коди забонро дар фазо нишон диҳед."
 
-#~ msgid "Type your language code if you know it."
-#~ msgstr "Агар Шумо мехоҳед рамзгузории забонатон чоп кунед."
-
 #~ msgid ""
 #~ "Type the language code if you know it or use one of the 2 buttons below "
 #~ "to choose a language code."
@@ -6412,11 +6447,6 @@ msgstr ""
 #~ "\n"
 #~ "Please add a second language:"
 #~ msgstr "&Иловаи забон"
-
-#, fuzzy
-#~| msgid "Language Properties"
-#~ msgid "Languages or other"
-#~ msgstr "Хусусиятҳои забон"
 
 #, fuzzy
 #~| msgid "theater"
@@ -6476,9 +6506,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "&Vocabulary"
 #~ msgstr "Лу&ғат"
-
-#~ msgid "&Learning"
-#~ msgstr "&Омӯхтан"
 
 #, fuzzy
 #~ msgid "Time Per Query"
