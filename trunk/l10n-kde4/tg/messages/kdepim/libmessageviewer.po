@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-26 01:46+0000\n"
+"POT-Creation-Date: 2014-05-06 01:43+0000\n"
 "PO-Revision-Date: 2005-09-17 13:29+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -426,8 +426,6 @@ msgid "Remove Filter"
 msgstr "Тағйири номи филтр"
 
 #: findbar/findbarbase.cpp:48 findbar/findbarbase.cpp:51
-#: widgets/eventedit.cpp:58 widgets/eventedit.cpp:61 widgets/todoedit.cpp:51
-#: widgets/todoedit.cpp:54
 #, fuzzy
 #| msgid "Color&s"
 msgid "Close"
@@ -2814,45 +2812,64 @@ msgstr "&Кушодан бо ёрии..."
 msgid "Do not ask again"
 msgstr ""
 
-#: widgets/eventedit.cpp:62 widgets/todoedit.cpp:55
-msgid "Close widget to create new Todo"
-msgstr ""
-
-#: widgets/eventedit.cpp:69
+#: widgets/eventedit.cpp:58
 #, fuzzy
 #| msgid "sender: "
 msgid "Event:"
 msgstr "Фиристонанда: "
 
-#: widgets/eventedit.cpp:84
-#, fuzzy
-#| msgid "The most recently selected folder in the folder selection dialog."
-msgid "The most recently selected folder used for Events."
+#: widgets/eventedit.cpp:76 widgets/eventedit.cpp:78
+msgid "Calendar where the new event will be stored."
 msgstr ""
-"Аксарияти пӯшаҳои бори охирин интихобшуда дар пӯшаи муколламаи интихобӣ "
-"мебошанд."
 
-#: widgets/eventedit.cpp:95
+#: widgets/eventedit.cpp:89
 #, fuzzy
 #| msgid "Start %1"
 msgid "Start:"
 msgstr "Оғози %1"
 
-#: widgets/eventedit.cpp:102
+#: widgets/eventedit.cpp:96
 #, fuzzy
 msgid "Select start time for event."
 msgstr "Қабулкунандаҳои пинҳонӣ"
 
-#: widgets/eventedit.cpp:108
+#: widgets/eventedit.cpp:104
 msgid "End:"
 msgstr ""
 
-#: widgets/eventedit.cpp:114
+#: widgets/eventedit.cpp:110
 #, fuzzy
 msgid "Select end time for event."
 msgstr "Қабулкунандаҳои пинҳонӣ"
 
-#: widgets/eventedit.cpp:178 widgets/todoedit.cpp:143
+#: widgets/eventedit.cpp:123 widgets/todoedit.cpp:96
+msgid "&Save"
+msgstr ""
+
+#: widgets/eventedit.cpp:126
+msgid "Create new event and close this widget."
+msgstr ""
+
+#: widgets/eventedit.cpp:131 widgets/todoedit.cpp:104
+#, fuzzy
+#| msgid "Open With..."
+msgid "Open &editor..."
+msgstr "Кушодан бо ёрии..."
+
+#: widgets/eventedit.cpp:133
+msgid "Open event editor, where more details can be changed."
+msgstr ""
+
+#: widgets/eventedit.cpp:138 widgets/todoedit.cpp:111
+#, fuzzy
+msgid "&Cancel"
+msgstr "&Барҳам додан"
+
+#: widgets/eventedit.cpp:141
+msgid "Close the widget for creating new events."
+msgstr ""
+
+#: widgets/eventedit.cpp:206 widgets/todoedit.cpp:180
 #, fuzzy, kde-format
 #| msgid "Reply to: "
 msgid "Reply to \"%1\""
@@ -2936,17 +2953,32 @@ msgstr ""
 msgid "Open folder where attachment was saved"
 msgstr ""
 
-#: widgets/todoedit.cpp:62
+#: widgets/todoedit.cpp:64
 msgid "Todo:"
 msgstr ""
 
-#: widgets/todoedit.cpp:77
-#, fuzzy
-#| msgid "The most recently selected folder in the folder selection dialog."
-msgid "The most recently selected folder used for Todos."
+#: widgets/todoedit.cpp:83 widgets/todoedit.cpp:85
+msgid "Todo list where the new task will be stored."
 msgstr ""
-"Аксарияти пӯшаҳои бори охирин интихобшуда дар пӯшаи муколламаи интихобӣ "
-"мебошанд."
+
+#: widgets/todoedit.cpp:99
+msgid "Create new todo and close this widget."
+msgstr ""
+
+#: widgets/todoedit.cpp:106
+msgid "Open todo editor, where more details can be changed."
+msgstr ""
+
+#: widgets/todoedit.cpp:114
+msgid "Close the widget for creating new todos."
+msgstr ""
+
+#: widgets/todoedit.cpp:212
+#, kde-format
+msgctxt ""
+"%1 is summary of the todo, %2 is name of the folder in which it is stored"
+msgid "New todo '%1' was added to task list '%2'"
+msgstr ""
 
 #: widgets/vcardviewer.cpp:44
 #, fuzzy
@@ -2965,6 +2997,20 @@ msgstr "&Корти навбатӣ"
 #: widgets/vcardviewer.cpp:50
 msgid "&Previous Card"
 msgstr "&Корти қаблӣ"
+
+#, fuzzy
+#~| msgid "The most recently selected folder in the folder selection dialog."
+#~ msgid "The most recently selected folder used for Events."
+#~ msgstr ""
+#~ "Аксарияти пӯшаҳои бори охирин интихобшуда дар пӯшаи муколламаи интихобӣ "
+#~ "мебошанд."
+
+#, fuzzy
+#~| msgid "The most recently selected folder in the folder selection dialog."
+#~ msgid "The most recently selected folder used for Todos."
+#~ msgstr ""
+#~ "Аксарияти пӯшаҳои бори охирин интихобшуда дар пӯшаи муколламаи интихобӣ "
+#~ "мебошанд."
 
 #, fuzzy
 #~| msgid "Store sent messages encry&pted"
@@ -7418,10 +7464,6 @@ msgstr "&Корти қаблӣ"
 #, fuzzy
 #~ msgid "Add as &BCC"
 #~ msgstr "Афзудани қуттии хатфиристӣ"
-
-#, fuzzy
-#~ msgid "&Cancel"
-#~ msgstr "&Барҳам додан"
 
 #, fuzzy
 #~ msgctxt "All collections containing recipients."
