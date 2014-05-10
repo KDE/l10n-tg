@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-09 08:42+0000\n"
+"POT-Creation-Date: 2014-05-10 01:33+0000\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -101,7 +101,9 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: ectx: property (text), widget (QLabel, label)
 #: crashreporter/wdg_crash_reporter.ui:49
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:100
 msgid "Email:"
 msgstr ""
 
@@ -3462,7 +3464,9 @@ msgstr "Иловаи Тасвири Нав..."
 msgid "Patterns"
 msgstr "Намунаҳо"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
 #: plugins/extensions/dockers/presetdocker/presetdocker_dock.cpp:37
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:56
 #, fuzzy
 msgid "Brush Presets"
 msgstr "Ҳосиятҳои Табақа..."
@@ -4003,7 +4007,9 @@ msgstr "Нағз"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, description)
 #: plugins/extensions/metadataeditor/editors/dublincore.ui:99
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:87
 #: ui/forms/wdgmetadatamergestrategychooser.ui:49
 #, fuzzy
 msgid "Description:"
@@ -9315,44 +9321,13 @@ msgstr "Қатъ кардан"
 msgid "Gravity:"
 msgstr "Хокистариранг"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, KoBundleCreationWidget)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:20
-msgid "New Bundle..."
+#: plugins/paintops/resourcemanager/KoDlgCreateBundle.cpp:82
+msgid "The resource bundle name cannot be empty."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, bundleName)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:29
-#, fuzzy
-msgid "Bundle Name "
-msgstr "Намуди табақа:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#. i18n: ectx: property (text), widget (QLabel, author)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:39
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:727
-#: ui/dialogs/kis_dlg_preferences.cc:701
-msgid "Author"
+#: plugins/paintops/resourcemanager/KoDlgCreateBundle.cpp:92
+msgid "A bundle with this name already exists."
 msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#. i18n: ectx: property (text), widget (QLabel, website)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:59
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:656
-msgid "Website"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#. i18n: ectx: property (text), widget (QLabel, license)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:73
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:703
-msgid "License"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, description)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:87
-#, fuzzy
-msgid "Description"
-msgstr "Қатъ кардан"
 
 #: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:45
 #, fuzzy
@@ -9399,12 +9374,6 @@ msgstr "Тоза кардан"
 #, fuzzy
 msgid "Gradients"
 msgstr "Градиент:"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:56
-#, fuzzy
-msgid "Pt. Presets"
-msgstr "Ҳосиятҳои Табақа..."
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbRemoveWorkspaces)
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
@@ -9491,11 +9460,21 @@ msgstr "Воридоти Тасвир"
 msgid "Export"
 msgstr "Содироти Табақа"
 
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:656
+msgid "Website"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:696
 #, fuzzy
 msgid "Created"
 msgstr "Намунаҳо"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:703
+msgid "License"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:713
@@ -9506,6 +9485,12 @@ msgstr "Такрор кардан:"
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:720
 msgid "Tags"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:727
+#: ui/dialogs/kis_dlg_preferences.cc:701
+msgid "Author"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLineEdit, txtWebsite)
@@ -9528,6 +9513,37 @@ msgstr "&Нест кардани Табақа"
 #, fuzzy
 msgid "Resource Manager..."
 msgstr "Масштаби Табақа..."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgDlgCreateBundle)
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:20
+msgid "New Bundle..."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, bundleName)
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:29
+#, fuzzy
+msgid "Bundle Name:"
+msgstr "Намуди табақа:"
+
+#. i18n: ectx: property (text), widget (QLabel, author)
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:39
+msgid "Author:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, website)
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:59
+msgid "Website:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLineEdit, editWebsite)
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:66
+msgid "http://"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, license)
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:73
+msgid "License:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, densityRadioButton)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -14116,6 +14132,14 @@ msgstr ""
 #, fuzzy
 msgid "&Close"
 msgstr "Ранг кардан"
+
+#, fuzzy
+#~ msgid "Description"
+#~ msgstr "Қатъ кардан"
+
+#, fuzzy
+#~ msgid "Pt. Presets"
+#~ msgstr "Ҳосиятҳои Табақа..."
 
 #, fuzzy
 #~ msgid "Resource Manager"
