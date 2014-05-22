@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-21 01:58+0000\n"
+"POT-Creation-Date: 2014-05-22 01:55+0000\n"
 "PO-Revision-Date: 2005-09-17 13:21+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -727,8 +727,8 @@ msgstr "Дар вақти пайдоиши код синфҳои зеринро 
 #: dialogs/pages/classgeneralpage.cpp:406
 #: dialogs/pages/classifierlistpage.cpp:218
 #: dialogs/pages/diagrampropertiespage.ui:257
-#: dialogs/pages/umlrolepropertiesbase.ui:140 dialogs/parmpropdialog.cpp:115
-#: dialogs/statedialog.cpp:167
+#: dialogs/pages/umlrolepropertiesbase.ui:140
+#: dialogs/parameterpropertiesdialog.cpp:115 dialogs/statedialog.cpp:167
 msgid "Documentation"
 msgstr "Ҳуҷҷатнома"
 
@@ -1550,11 +1550,11 @@ msgid "Class Name"
 msgstr "Номи синф"
 
 #: dialogs/activitydialog.cpp:43 dialogs/activitydialog.cpp:146
-#: dialogs/classpropdialog.cpp:128 dialogs/objectnodedialog.cpp:45
-#: dialogs/pages/associationgeneralpage.cpp:77 dialogs/parmpropdialog.cpp:71
-#: dialogs/statedialog.cpp:44 dialogs/statedialog.cpp:119
-#: dialogs/umlviewdialog.cpp:41 listpopupmenu.cpp:633
-#: refactoring/refactoringassistant.cpp:460
+#: dialogs/classpropertiesdialog.cpp:128 dialogs/objectnodedialog.cpp:45
+#: dialogs/pages/associationgeneralpage.cpp:77
+#: dialogs/parameterpropertiesdialog.cpp:71 dialogs/statedialog.cpp:44
+#: dialogs/statedialog.cpp:119 dialogs/umlviewdialog.cpp:41
+#: listpopupmenu.cpp:633 refactoring/refactoringassistant.cpp:460
 #, fuzzy
 msgid "Properties"
 msgstr "&Хусусиятҳо"
@@ -1639,166 +1639,171 @@ msgstr "амали_нав"
 msgid "&Parameter activity node"
 msgstr "Номи параметр ягона нест"
 
-#: dialogs/assocpropdialog.cpp:54
+#: dialogs/associationpropertiesdialog.cpp:54
 msgid "Association Properties"
 msgstr "Хусусияти ҷамъиятӣ"
 
-#: dialogs/assocpropdialog.cpp:98
+#: dialogs/associationpropertiesdialog.cpp:98
+#: dialogs/classpropertiesdialog.cpp:245 dialogs/classpropertiesdialog.cpp:379
+#: dialogs/settingsdialog.cpp:173
+#: dialogs/umlforeignkeyconstraintdialog.cpp:202 dialogs/umlviewdialog.cpp:93
+msgid "General Settings"
+msgstr "Дурусткуниҳои умумӣ"
+
+#: dialogs/associationpropertiesdialog.cpp:98
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings"
 msgid "General"
 msgstr "Умумӣ"
 
-#: dialogs/assocpropdialog.cpp:98 dialogs/classpropdialog.cpp:245
-#: dialogs/classpropdialog.cpp:379 dialogs/settingsdialog.cpp:179
-#: dialogs/umlforeignkeyconstraintdialog.cpp:208 dialogs/umlviewdialog.cpp:93
-msgid "General Settings"
-msgstr "Дурусткуниҳои умумӣ"
-
-#: dialogs/assocpropdialog.cpp:104
+#: dialogs/associationpropertiesdialog.cpp:104
 #, fuzzy
 #| msgid "Roles"
 msgctxt "role page name"
 msgid "Roles"
 msgstr "Нақшҳо"
 
-#: dialogs/assocpropdialog.cpp:104
+#: dialogs/associationpropertiesdialog.cpp:104
 msgid "Role Settings"
 msgstr "Намои нақшҳо"
 
-#: dialogs/assocpropdialog.cpp:110
+#: dialogs/associationpropertiesdialog.cpp:110
 #, fuzzy
 #| msgid "Style:"
 msgctxt "style page name"
 msgid "Style"
 msgstr "Услуб:"
 
-#: dialogs/assocpropdialog.cpp:110
+#: dialogs/associationpropertiesdialog.cpp:110
 #, fuzzy
 #| msgid "Component"
 msgid "Role Style"
 msgstr "Қисмат"
 
-#: dialogs/assocpropdialog.cpp:116
+#: dialogs/associationpropertiesdialog.cpp:116
+#: dialogs/classpropertiesdialog.cpp:398 dialogs/dialogbase.cpp:91
+#: dialogs/settingsdialog.cpp:228 dialogs/umlviewdialog.cpp:154
+msgid "Font Settings"
+msgstr "Мизрубҳои навиштаҷот"
+
+#: dialogs/associationpropertiesdialog.cpp:116
 #, fuzzy
 msgctxt "font page name"
 msgid "Font"
 msgstr "Ҳарф:"
 
-#: dialogs/assocpropdialog.cpp:116 dialogs/classpropdialog.cpp:398
-#: dialogs/dialogbase.cpp:90 dialogs/settingsdialog.cpp:234
-#: dialogs/umlviewdialog.cpp:154
-msgid "Font Settings"
-msgstr "Мизрубҳои навиштаҷот"
-
-#: dialogs/classpropdialog.cpp:245
+#: dialogs/classpropertiesdialog.cpp:245
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings page name"
 msgid "General"
 msgstr "Умумӣ"
 
-#: dialogs/classpropdialog.cpp:258
+#: dialogs/classpropertiesdialog.cpp:258 dialogs/dialogbase.cpp:114
+#, fuzzy
+#| msgid "Widget Color"
+msgid "Widget Style"
+msgstr "Ранги васеъкунӣ"
+
+#: dialogs/classpropertiesdialog.cpp:258
 #, fuzzy
 #| msgid "Style:"
 msgctxt "widget style page name"
 msgid "Style"
 msgstr "Услуб:"
 
-#: dialogs/classpropdialog.cpp:258 dialogs/dialogbase.cpp:113
-#, fuzzy
-#| msgid "Widget Color"
-msgid "Widget Style"
-msgstr "Ранги васеъкунӣ"
-
-#: dialogs/classpropdialog.cpp:270
+#: dialogs/classpropertiesdialog.cpp:270
 #, fuzzy
 #| msgid "Display"
 msgctxt "display option page name"
 msgid "Display"
 msgstr "Тасвир кардан"
 
-#: dialogs/classpropdialog.cpp:270
+#: dialogs/classpropertiesdialog.cpp:270
 msgid "Display Options"
 msgstr "Намоиши интихобҳо"
 
-#: dialogs/classpropdialog.cpp:283 dialogs/pages/classifierlistpage.cpp:115
-#: listpopupmenu.cpp:1077 listpopupmenu.cpp:1113
-#: refactoring/refactoringassistant.cpp:666
+#: dialogs/classpropertiesdialog.cpp:283
+#: dialogs/pages/classifierlistpage.cpp:115 listpopupmenu.cpp:1077
+#: listpopupmenu.cpp:1113 refactoring/refactoringassistant.cpp:666
 msgid "Attributes"
 msgstr "Атрибутҳо"
 
-#: dialogs/classpropdialog.cpp:283
+#: dialogs/classpropertiesdialog.cpp:283
 #, fuzzy
 msgid "Attribute Settings"
 msgstr "Танзимотҳои аттрибут"
 
-#: dialogs/classpropdialog.cpp:295 dialogs/pages/classifierlistpage.cpp:119
-#: listpopupmenu.cpp:1080 listpopupmenu.cpp:1122
-#: refactoring/refactoringassistant.cpp:682
+#: dialogs/classpropertiesdialog.cpp:295
+#: dialogs/pages/classifierlistpage.cpp:119 listpopupmenu.cpp:1080
+#: listpopupmenu.cpp:1122 refactoring/refactoringassistant.cpp:682
 msgid "Operations"
 msgstr "Амалиётҳо"
 
-#: dialogs/classpropdialog.cpp:295
+#: dialogs/classpropertiesdialog.cpp:295
 msgid "Operation Settings"
 msgstr "Танзимотҳои амалиёт"
 
-#: dialogs/classpropdialog.cpp:307 dialogs/pages/classifierlistpage.cpp:123
+#: dialogs/classpropertiesdialog.cpp:307
+#: dialogs/pages/classifierlistpage.cpp:123
 msgid "Templates"
 msgstr "Қолибҳо"
 
-#: dialogs/classpropdialog.cpp:307
+#: dialogs/classpropertiesdialog.cpp:307
 msgid "Templates Settings"
 msgstr "Танзимотҳо қолибҳо"
 
-#: dialogs/classpropdialog.cpp:319 dialogs/pages/classifierlistpage.cpp:127
+#: dialogs/classpropertiesdialog.cpp:319
+#: dialogs/pages/classifierlistpage.cpp:127
 msgid "Enum Literals"
 msgstr "Константаҳои гузаронидашуда"
 
-#: dialogs/classpropdialog.cpp:319
+#: dialogs/classpropertiesdialog.cpp:319
 msgid "Enum Literals Settings"
 msgstr "Шакли константаҳои гузаронидашуда"
 
-#: dialogs/classpropdialog.cpp:331 dialogs/pages/classifierlistpage.cpp:131
+#: dialogs/classpropertiesdialog.cpp:331
+#: dialogs/pages/classifierlistpage.cpp:131
 #, fuzzy
 msgid "Entity Attributes"
 msgstr "Атрибутҳо"
 
-#: dialogs/classpropdialog.cpp:331
+#: dialogs/classpropertiesdialog.cpp:331
 #, fuzzy
 msgid "Entity Attributes Settings"
 msgstr "Танзимотҳои аттрибут"
 
-#: dialogs/classpropdialog.cpp:343
+#: dialogs/classpropertiesdialog.cpp:343
 #, fuzzy
 msgid "Entity Constraints"
 msgstr "Атрибутҳо"
 
-#: dialogs/classpropdialog.cpp:343
+#: dialogs/classpropertiesdialog.cpp:343
 #, fuzzy
 msgid "Entity Constraints Settings"
 msgstr "Танзимотҳои аттрибут"
 
-#: dialogs/classpropdialog.cpp:355
+#: dialogs/classpropertiesdialog.cpp:355
 #, fuzzy
 msgctxt "contents settings page name"
 msgid "Contents"
 msgstr "Гунҷоиш"
 
-#: dialogs/classpropdialog.cpp:355
+#: dialogs/classpropertiesdialog.cpp:355
 msgid "Contents Settings"
 msgstr "Танзимотҳои мундариҷа"
 
-#: dialogs/classpropdialog.cpp:367 dialogs/pages/classassociationspage.cpp:44
+#: dialogs/classpropertiesdialog.cpp:367
+#: dialogs/pages/classassociationspage.cpp:44
 msgid "Associations"
 msgstr "Ширкатҳо"
 
-#: dialogs/classpropdialog.cpp:367
+#: dialogs/classpropertiesdialog.cpp:367
 msgid "Class Associations"
 msgstr "Ширкатҳои синфӣ"
 
-#: dialogs/classpropdialog.cpp:379
+#: dialogs/classpropertiesdialog.cpp:379
 #, fuzzy
 #| msgid "General"
 msgctxt "instance general settings page name"
@@ -1807,8 +1812,8 @@ msgstr "Умумӣ"
 
 #. i18n: ectx: label, entry (uiFont), group (UI Options)
 #. i18n: ectx: label, entry (codeViewerFont), group (Code Viewer Options)
-#: dialogs/classpropdialog.cpp:397 dialogs/dialogbase.cpp:90
-#: dialogs/settingsdialog.cpp:233 dialogs/umlviewdialog.cpp:153
+#: dialogs/classpropertiesdialog.cpp:397 dialogs/dialogbase.cpp:91
+#: dialogs/settingsdialog.cpp:227 dialogs/umlviewdialog.cpp:153
 #: umbrello.kcfg:160 umbrello.kcfg:270
 #, fuzzy
 msgid "Font"
@@ -1952,7 +1957,7 @@ msgstr "<p align=\"right\">Матни тағйирнашаванда:</p>"
 msgid "<p align=\"right\">Editable text:</p>"
 msgstr "<p align=\"right\">Матни ивазшаванда:</p>"
 
-#: dialogs/dialogbase.cpp:113
+#: dialogs/dialogbase.cpp:114
 #, fuzzy
 #| msgid "Style:"
 msgctxt "widget style page"
@@ -2556,9 +2561,9 @@ msgstr "Қисмати ном:"
 msgid "Node name:"
 msgstr "Номи гиреҳ:"
 
-#: dialogs/pages/classgeneralpage.cpp:384 dialogs/parmpropdialog.cpp:93
-#: dialogs/umlattributedialog.cpp:89 dialogs/umlentityattributedialog.cpp:91
-#: dialogs/umloperationdialog.cpp:108
+#: dialogs/pages/classgeneralpage.cpp:384
+#: dialogs/parameterpropertiesdialog.cpp:93 dialogs/umlattributedialog.cpp:89
+#: dialogs/umlentityattributedialog.cpp:91 dialogs/umloperationdialog.cpp:108
 msgid "Stereotype name:"
 msgstr "Номи қолаби чоп:"
 
@@ -2612,7 +2617,7 @@ msgid "N&ew Constraint..."
 msgstr "&Атрибут бунёд кардан..."
 
 #: dialogs/pages/classifierlistpage.cpp:206
-#: dialogs/umlforeignkeyconstraintdialog.cpp:321
+#: dialogs/umlforeignkeyconstraintdialog.cpp:315
 #: dialogs/umloperationdialog.cpp:166
 #: dialogs/umluniqueconstraintdialog.cpp:122 umldoc.cpp:1486 umlscene.cpp:3311
 #, fuzzy
@@ -2917,7 +2922,7 @@ msgstr "Оғоз намудани лоиҳаи нав бо:"
 msgid "Default Language :"
 msgstr "&Пешфарз"
 
-#: dialogs/pages/pkgcontentspage.cpp:43
+#: dialogs/pages/packagecontentspage.cpp:43
 msgid "Contained Items"
 msgstr "Мавзӯи нуқтаҳо"
 
@@ -3050,66 +3055,67 @@ msgctxt "default line width button"
 msgid "Defa&ult"
 msgstr "&Пешфарз"
 
-#: dialogs/parmpropdialog.cpp:47
+#: dialogs/parameterpropertiesdialog.cpp:47
 msgid "Parameter Properties"
 msgstr "Хусусиятҳои параметр"
 
-#: dialogs/parmpropdialog.cpp:78 dialogs/umlattributedialog.cpp:73
+#: dialogs/parameterpropertiesdialog.cpp:78 dialogs/umlattributedialog.cpp:73
 #: dialogs/umlentityattributedialog.cpp:75 dialogs/umloperationdialog.cpp:101
 #: dialogs/umltemplatedialog.cpp:69
 msgid "&Type:"
 msgstr "&Намуд:"
 
-#: dialogs/parmpropdialog.cpp:86
+#: dialogs/parameterpropertiesdialog.cpp:86
 #, fuzzy
 #| msgid "&Name:"
 msgctxt "property name"
 msgid "&Name:"
 msgstr "&Ном:"
 
-#: dialogs/parmpropdialog.cpp:90 dialogs/umlattributedialog.cpp:85
+#: dialogs/parameterpropertiesdialog.cpp:90 dialogs/umlattributedialog.cpp:85
 msgid "&Initial value:"
 msgstr "&Маънои аввалин:"
 
-#: dialogs/parmpropdialog.cpp:98
+#: dialogs/parameterpropertiesdialog.cpp:98
 msgid "Passing Direction"
 msgstr ""
 
-#: dialogs/parmpropdialog.cpp:99
+#: dialogs/parameterpropertiesdialog.cpp:99
 msgid ""
 "\"in\" is a readonly parameter, \"out\" is a writeonly parameter and \"inout"
 "\" is a parameter for reading and writing."
 msgstr ""
 
-#: dialogs/parmpropdialog.cpp:264
+#: dialogs/parameterpropertiesdialog.cpp:264
 msgid "You have entered an invalid parameter name."
 msgstr "Шумо номи параметри нодурустро гузоштед."
 
-#: dialogs/parmpropdialog.cpp:265
+#: dialogs/parameterpropertiesdialog.cpp:265
 msgid "Parameter Name Invalid"
 msgstr "Номи параметр нодуруст"
 
-#: dialogs/selectopdialog.cpp:53 dialogs/selectopdialog.cpp:64
+#: dialogs/selectoperationdialog.cpp:53 dialogs/selectoperationdialog.cpp:64
 msgid "Select Operation"
 msgstr "Амалро интихоб намоед"
 
-#: dialogs/selectopdialog.cpp:72
+#: dialogs/selectoperationdialog.cpp:72
 msgid "Sequence number:"
 msgstr "Рақами пайравикунанда:"
 
-#: dialogs/selectopdialog.cpp:75
+#: dialogs/selectoperationdialog.cpp:75
 msgid "Auto increment:"
 msgstr ""
 
-#: dialogs/selectopdialog.cpp:80
+#: dialogs/selectoperationdialog.cpp:80
 msgid "Class operation:"
 msgstr "Амалиёти синфӣ:"
 
-#: dialogs/selectopdialog.cpp:89 listpopupmenu.cpp:571 listpopupmenu.cpp:687
+#: dialogs/selectoperationdialog.cpp:89 listpopupmenu.cpp:571
+#: listpopupmenu.cpp:687
 msgid "New Operation..."
 msgstr "Амалиёти нав..."
 
-#: dialogs/selectopdialog.cpp:93
+#: dialogs/selectoperationdialog.cpp:93
 msgid "Custom operation:"
 msgstr "Дигар амал:"
 
@@ -3117,114 +3123,114 @@ msgstr "Дигар амал:"
 msgid "Umbrello Setup"
 msgstr "Мизроб сохтани Umbrello"
 
-#: dialogs/settingsdialog.cpp:72
+#: dialogs/settingsdialog.cpp:66
 msgid "User Interface"
 msgstr "Интерфейс"
 
-#: dialogs/settingsdialog.cpp:73
+#: dialogs/settingsdialog.cpp:67
 msgid "User Interface Settings"
 msgstr "Интерфейси истифодабаранда"
 
-#: dialogs/settingsdialog.cpp:77
+#: dialogs/settingsdialog.cpp:71
 #, fuzzy
 #| msgid "Color"
 msgctxt "color group box"
 msgid "Color"
 msgstr "Ранг"
 
-#: dialogs/settingsdialog.cpp:85
+#: dialogs/settingsdialog.cpp:79
 #, fuzzy
 #| msgid "Line color:"
 msgid "Custom text color:"
 msgstr "Ранги сатр:"
 
-#: dialogs/settingsdialog.cpp:92
+#: dialogs/settingsdialog.cpp:86
 #, fuzzy
 #| msgid "Line color:"
 msgid "Custom line color:"
 msgstr "Ранги сатр:"
 
-#: dialogs/settingsdialog.cpp:102
+#: dialogs/settingsdialog.cpp:96
 #, fuzzy
 #| msgid "&Use fill color"
 msgid "Custom fill color:"
 msgstr "&Истифода намудани пуркунанда"
 
-#: dialogs/settingsdialog.cpp:108
+#: dialogs/settingsdialog.cpp:102
 #, fuzzy
 #| msgid "Custom operation:"
 msgid "Custom grid color:"
 msgstr "Дигар амал:"
 
-#: dialogs/settingsdialog.cpp:114
+#: dialogs/settingsdialog.cpp:108
 #, fuzzy
 #| msgid "Color"
 msgid "Custom background color:"
 msgstr "Ранг"
 
-#: dialogs/settingsdialog.cpp:120
+#: dialogs/settingsdialog.cpp:114
 #, fuzzy
 #| msgid "Line width:"
 msgid "Custom line width:"
 msgstr "Васеъгии сатр:"
 
-#: dialogs/settingsdialog.cpp:126
+#: dialogs/settingsdialog.cpp:120
 msgid "&Use fill color"
 msgstr "&Истифода намудани пуркунанда"
 
-#: dialogs/settingsdialog.cpp:178 dialogs/umlviewdialog.cpp:92
+#: dialogs/settingsdialog.cpp:172 dialogs/umlviewdialog.cpp:92
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings page"
 msgid "General"
 msgstr "Умумӣ"
 
-#: dialogs/settingsdialog.cpp:189
+#: dialogs/settingsdialog.cpp:183
 #, fuzzy
 #| msgid "Class"
 msgctxt "class settings page"
 msgid "Class"
 msgstr "Синф"
 
-#: dialogs/settingsdialog.cpp:190
+#: dialogs/settingsdialog.cpp:184
 msgid "Class Settings"
 msgstr "Параметрҳои синф"
 
-#: dialogs/settingsdialog.cpp:200
+#: dialogs/settingsdialog.cpp:194
 #, fuzzy
 #| msgid "Not Generated"
 msgid "Code Importer"
 msgstr "Ногенерирондашуда"
 
-#: dialogs/settingsdialog.cpp:201
+#: dialogs/settingsdialog.cpp:195
 #, fuzzy
 #| msgid "Code Viewer Settings"
 msgid "Code Import Settings"
 msgstr "Аз назар гузарондани код"
 
-#: dialogs/settingsdialog.cpp:211
+#: dialogs/settingsdialog.cpp:205
 msgid "Code Generation"
 msgstr "Генератсияи код"
 
-#: dialogs/settingsdialog.cpp:212
+#: dialogs/settingsdialog.cpp:206
 msgid "Code Generation Settings"
 msgstr "Генератсияи код"
 
-#: dialogs/settingsdialog.cpp:223
+#: dialogs/settingsdialog.cpp:217
 msgid "Code Viewer"
 msgstr "Аз назар гузарондани код"
 
-#: dialogs/settingsdialog.cpp:224
+#: dialogs/settingsdialog.cpp:218
 msgid "Code Viewer Settings"
 msgstr "Аз назар гузарондани код"
 
-#: dialogs/settingsdialog.cpp:244
+#: dialogs/settingsdialog.cpp:238
 #, fuzzy
 #| msgid "Autosave"
 msgid "Auto Layout"
 msgstr "Автонигоҳдорӣ"
 
-#: dialogs/settingsdialog.cpp:245
+#: dialogs/settingsdialog.cpp:239
 #, fuzzy
 msgid "Auto Layout Settings"
 msgstr "Танзимотҳои аттрибут"
@@ -3459,107 +3465,107 @@ msgstr ""
 msgid "Foreign Key Setup"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:207
+#: dialogs/umlforeignkeyconstraintdialog.cpp:201
 #, fuzzy
 #| msgid "General"
 msgctxt "general page title"
 msgid "General"
 msgstr "Умумӣ"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:212
+#: dialogs/umlforeignkeyconstraintdialog.cpp:206
 #, fuzzy
 #| msgid "General"
 msgctxt "general group title"
 msgid "General"
 msgstr "Умумӣ"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:219
+#: dialogs/umlforeignkeyconstraintdialog.cpp:213
 #, fuzzy
 #| msgid "Name"
 msgctxt "label for entering name"
 msgid "Name"
 msgstr "Ном"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:222
+#: dialogs/umlforeignkeyconstraintdialog.cpp:216
 msgid "Referenced Entity"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:229
+#: dialogs/umlforeignkeyconstraintdialog.cpp:223
 #, fuzzy
 #| msgid "Associations"
 msgid "Actions"
 msgstr "Ширкатҳо"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:235
+#: dialogs/umlforeignkeyconstraintdialog.cpp:229
 msgid "On Update"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:241
+#: dialogs/umlforeignkeyconstraintdialog.cpp:235
 #, fuzzy
 msgid "On Delete"
 msgstr "Интихоб кардан"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:273
+#: dialogs/umlforeignkeyconstraintdialog.cpp:267
 #, fuzzy
 #| msgid "No Indentation"
 msgid "No Action"
 msgstr "Бефосила"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:273
+#: dialogs/umlforeignkeyconstraintdialog.cpp:267
 msgid "Restrict"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:273
+#: dialogs/umlforeignkeyconstraintdialog.cpp:267
 msgid "Cascade"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:273
+#: dialogs/umlforeignkeyconstraintdialog.cpp:267
 #, fuzzy
 #| msgid "&Default"
 msgid "Set Null"
 msgstr "&Пешфарз"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:274
+#: dialogs/umlforeignkeyconstraintdialog.cpp:268
 #, fuzzy
 #| msgid "&Default"
 msgid "Set Default"
 msgstr "&Пешфарз"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:292
-#: dialogs/umlforeignkeyconstraintdialog.cpp:293
+#: dialogs/umlforeignkeyconstraintdialog.cpp:286
+#: dialogs/umlforeignkeyconstraintdialog.cpp:287
 #, fuzzy
 #| msgid "Colors"
 msgid "Columns"
 msgstr "Рангҳо"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:300
+#: dialogs/umlforeignkeyconstraintdialog.cpp:294
 #, fuzzy
 #| msgid "Label"
 msgctxt "column header local"
 msgid "Local"
 msgstr "Барчасб"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:300
+#: dialogs/umlforeignkeyconstraintdialog.cpp:294
 msgctxt "column header referenced"
 msgid "Referenced"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:306
+#: dialogs/umlforeignkeyconstraintdialog.cpp:300
 #, fuzzy
 #| msgid "Colors"
 msgid "Local Column"
 msgstr "Рангҳо"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:312
+#: dialogs/umlforeignkeyconstraintdialog.cpp:306
 msgid "Referenced Column"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:319
+#: dialogs/umlforeignkeyconstraintdialog.cpp:313
 #: dialogs/umluniqueconstraintdialog.cpp:120
 msgid "&Add"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:394
+#: dialogs/umlforeignkeyconstraintdialog.cpp:388
 msgid ""
 "You are attempting to change the Referenced Entity of this ForeignKey "
 "Constraint. Any unapplied changes to the mappings between local and "
