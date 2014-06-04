@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-21 01:50+0000\n"
+"POT-Creation-Date: 2014-06-04 01:39+0000\n"
 "PO-Revision-Date: 2005-11-06 23:03+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -238,8 +238,8 @@ msgstr ""
 #: tools/modcalcgalcoord.cpp:193 tools/modcalcgeodcoord.cpp:232
 #: tools/modcalcjd.cpp:123 tools/modcalcplanets.cpp:208
 #: tools/modcalcsidtime.cpp:200 tools/modcalcvizequinox.cpp:85
-#: tools/modcalcvlsr.cpp:275 tools/observinglist.cpp:766
-#: tools/observinglist.cpp:887 tools/scriptbuilder.cpp:994
+#: tools/modcalcvlsr.cpp:275 tools/observinglist.cpp:773
+#: tools/observinglist.cpp:894 tools/scriptbuilder.cpp:994
 #: tools/scriptbuilder.cpp:1058 tools/scriptbuilder.cpp:1124
 msgid "Could Not Open File"
 msgstr "Наметавонам файлро боз кунам"
@@ -652,7 +652,7 @@ msgstr "Умумӣ"
 #: dialogs/detaildialog.cpp:146 kspopupmenu.cpp:184 kspopupmenu.cpp:268
 #: kstarsinit.cpp:625 printing/detailstable.cpp:86
 #: printing/pwizobjectselection.cpp:113 skycomponents/starcomponent.cpp:452
-#: skyobjects/starobject.cpp:497 tools/observinglist.cpp:509
+#: skyobjects/starobject.cpp:497 tools/observinglist.cpp:510
 #: tools/wutdialog.cpp:268
 msgid "star"
 msgstr "ситора"
@@ -835,7 +835,7 @@ msgid "Log"
 msgstr "Маҷала "
 
 #: dialogs/detaildialog.cpp:677 skyobjects/skyobject.cpp:419
-#: tools/observinglist.cpp:519 tools/observinglist.cpp:738
+#: tools/observinglist.cpp:520 tools/observinglist.cpp:745
 #, kde-format
 msgid "Record here observation logs and/or data on %1."
 msgstr "Дар инҷо шумо метавонед маҷалаи дидбони аз паси объектро баред %1."
@@ -855,11 +855,11 @@ msgid "Delete Confirmation"
 msgstr "Тасдиқи ҳузфкунӣ "
 
 #: dialogs/detaildialog.cpp:1077 dialogs/detaildialog.cpp:1107
-#: tools/observinglist.cpp:605 tools/observinglist.cpp:635
+#: tools/observinglist.cpp:606 tools/observinglist.cpp:636
 msgid "KStars did not find any active telescopes."
 msgstr ""
 
-#: dialogs/detaildialog.cpp:1093 tools/observinglist.cpp:621
+#: dialogs/detaildialog.cpp:1093 tools/observinglist.cpp:622
 #, kde-format
 msgid "Telescope %1 is offline. Please connect and retry again."
 msgstr ""
@@ -3549,8 +3549,8 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QTableWidget, queueTable)
 #. i18n: ectx: property (text), widget (QTreeWidget, OptionsList)
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
-#: ekos/capture.ui:386 ekos/capture.ui:486 tools/observinglist.cpp:112
-#: tools/observinglist.cpp:118 tools/optionstreeview.ui:33
+#: ekos/capture.ui:386 ekos/capture.ui:486 tools/observinglist.cpp:113
+#: tools/observinglist.cpp:119 tools/optionstreeview.ui:33
 #: tools/whatsinteresting/wiequipsettings.ui:315
 msgid "Type"
 msgstr "Шакл"
@@ -5622,8 +5622,8 @@ msgstr "Тағйир..."
 
 #. i18n: ectx: property (text), widget (QTreeWidget, clientTreeWidget)
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: indi/drivermanager.ui:327 oal/observeradd.ui:14 tools/observinglist.cpp:107
-#: tools/observinglist.cpp:113
+#: indi/drivermanager.ui:327 oal/observeradd.ui:14 tools/observinglist.cpp:108
+#: tools/observinglist.cpp:114
 msgid "Name"
 msgstr "Ном"
 
@@ -5699,7 +5699,7 @@ msgid "&Cancel"
 msgstr "Каннес"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_useTimeUpdate)
-#: indi/indiproperty.cpp:256 indi/opsindi.ui:230 tools/observinglist.cpp:119
+#: indi/indiproperty.cpp:256 indi/opsindi.ui:230 tools/observinglist.cpp:120
 msgid "Time"
 msgstr "Вақт"
 
@@ -43997,7 +43997,7 @@ msgstr "Вақт ва макон"
 msgid "Try Another"
 msgstr ""
 
-#: kstarsactions.cpp:720 tools/observinglist.cpp:887
+#: kstarsactions.cpp:720 tools/observinglist.cpp:894
 msgid "Do Not Try"
 msgstr ""
 
@@ -44010,7 +44010,7 @@ msgid "Download Error"
 msgstr "Пурбор крадани хатогӣ"
 
 #: kstarsactions.cpp:762 kstarsdata.cpp:751 oal/execute.cpp:277
-#: tools/observinglist.cpp:765
+#: tools/observinglist.cpp:772
 #, kde-format
 msgid "Could not open file %1"
 msgstr "Файлро кушода нашуд %1"
@@ -44489,7 +44489,7 @@ msgstr "Ҳисоб кардан"
 msgid "Moon Phase Calendar"
 msgstr ""
 
-#: kstarsinit.cpp:372 tools/observinglist.cpp:96
+#: kstarsinit.cpp:372 tools/observinglist.cpp:97
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Dyer Observatory"
@@ -48311,30 +48311,34 @@ msgctxt "Show the selected object in the telescope"
 msgid "Scope"
 msgstr "&Боздоштан"
 
-#: obslistpopupmenu.cpp:68
+#: obslistpopupmenu.cpp:65
+msgid "Eyepiece view (Beta)"
+msgstr ""
+
+#: obslistpopupmenu.cpp:70
 #, fuzzy
 #| msgid "Show SEDS Image"
 msgid "Show SDSS image"
 msgstr "Нишон додани тасвири SEDS "
 
-#: obslistpopupmenu.cpp:69
+#: obslistpopupmenu.cpp:71
 #, fuzzy
 #| msgid "Show SEDS Image"
 msgid "Show DSS image"
 msgstr "Нишон додани тасвири SEDS "
 
-#: obslistpopupmenu.cpp:71
+#: obslistpopupmenu.cpp:73
 #, fuzzy
 #| msgid "Show image of "
 msgid "Show images from web "
 msgstr "Намоиши тасвир"
 
-#: obslistpopupmenu.cpp:77
+#: obslistpopupmenu.cpp:79
 #, fuzzy
 msgid "Remove from WishList"
 msgstr "Ҳузфи истинодот"
 
-#: obslistpopupmenu.cpp:79
+#: obslistpopupmenu.cpp:81
 #, fuzzy
 msgid "Remove from Session Plan"
 msgstr "Ҳузфи истинодот"
@@ -52008,7 +52012,7 @@ msgstr "Тағйир..."
 msgid "Print the Altitude vs. time plot"
 msgstr "Баландӣ vs. Вақт:"
 
-#: tools/altvstime.cpp:73 tools/observinglist.cpp:139
+#: tools/altvstime.cpp:73 tools/observinglist.cpp:140
 #, fuzzy
 msgid "Local Time"
 msgstr "ВМ: "
@@ -52923,14 +52927,14 @@ msgstr "Инқилоби офтоби зимистона"
 msgid "Flag manager"
 msgstr ""
 
-#: tools/flagmanager.cpp:56 tools/observinglist.cpp:109
-#: tools/observinglist.cpp:115 widgets/infoboxwidget.cpp:129
+#: tools/flagmanager.cpp:56 tools/observinglist.cpp:110
+#: tools/observinglist.cpp:116 widgets/infoboxwidget.cpp:129
 msgctxt "Right Ascension"
 msgid "RA"
 msgstr "ПВ"
 
-#: tools/flagmanager.cpp:57 tools/observinglist.cpp:110
-#: tools/observinglist.cpp:116 widgets/infoboxwidget.cpp:130
+#: tools/flagmanager.cpp:57 tools/observinglist.cpp:111
+#: tools/observinglist.cpp:117 widgets/infoboxwidget.cpp:130
 msgctxt "Declination"
 msgid "Dec"
 msgstr "СКЛ"
@@ -53961,136 +53965,136 @@ msgstr ""
 msgid "Overview"
 msgstr "&Иваз кардан"
 
-#: tools/observinglist.cpp:108 tools/observinglist.cpp:114
+#: tools/observinglist.cpp:109 tools/observinglist.cpp:115
 #, fuzzy
 #| msgid "Remove Label"
 msgid "Alternate Name"
 msgstr "Нест кардани Қайд"
 
-#: tools/observinglist.cpp:111 tools/observinglist.cpp:117
+#: tools/observinglist.cpp:112 tools/observinglist.cpp:118
 #, fuzzy
 msgctxt "Magnitude"
 msgid "Mag"
 msgstr "mag"
 
-#: tools/observinglist.cpp:120 widgets/infoboxwidget.cpp:133
+#: tools/observinglist.cpp:121 widgets/infoboxwidget.cpp:133
 msgctxt "Altitude"
 msgid "Alt"
 msgstr ""
 ": Баландӣ\n"
 "Бал"
 
-#: tools/observinglist.cpp:121 widgets/infoboxwidget.cpp:132
+#: tools/observinglist.cpp:122 widgets/infoboxwidget.cpp:132
 msgctxt "Azimuth"
 msgid "Az"
 msgstr "Аз"
 
-#: tools/observinglist.cpp:236
+#: tools/observinglist.cpp:237
 msgid "Unnamed stars are not supported in the observing lists"
 msgstr ""
 
-#: tools/observinglist.cpp:244
+#: tools/observinglist.cpp:245
 #, fuzzy, kde-format
 msgid "%1 is already in your wishlist."
 msgstr "Дохил кардан ба рӯйхат"
 
-#: tools/observinglist.cpp:250
+#: tools/observinglist.cpp:251
 #, fuzzy, kde-format
 msgid "%1 is already in the session plan."
 msgstr "Дохил кардан ба рӯйхат"
 
-#: tools/observinglist.cpp:286
+#: tools/observinglist.cpp:287
 #, kde-format
 msgid "Added %1 to observing list."
 msgstr ""
 
-#: tools/observinglist.cpp:329
+#: tools/observinglist.cpp:330
 #, fuzzy, kde-format
 msgid "Added %1 to session list."
 msgstr "Дохил кардан ба рӯйхат"
 
-#: tools/observinglist.cpp:517
+#: tools/observinglist.cpp:518
 #, kde-format
 msgid "observing notes for %1:"
 msgstr ""
 
-#: tools/observinglist.cpp:531
+#: tools/observinglist.cpp:532
 #, fuzzy
 msgid "observing notes (disabled for unnamed star)"
 msgstr "Ҷузъиёти тирезаро барои объекти асосӣ нишон диҳед."
 
-#: tools/observinglist.cpp:549
+#: tools/observinglist.cpp:550
 #, fuzzy, kde-format
 msgid "Object %1 not found in list."
 msgstr " дар базаи маълумотҳо ёфта нашуд."
 
 #. i18n: ectx: property (text), widget (QLabel, NotesLabel)
-#: tools/observinglist.cpp:555 tools/observinglist.cpp:1004
+#: tools/observinglist.cpp:556 tools/observinglist.cpp:1011
 #: tools/observinglist.ui:622
 msgid "Select an object to record notes on it here:"
 msgstr ""
 
-#: tools/observinglist.cpp:568
+#: tools/observinglist.cpp:569
 msgid "Select a single object to record notes on it here:"
 msgstr ""
 
-#: tools/observinglist.cpp:741
+#: tools/observinglist.cpp:748
 msgid "Observing notes for object:"
 msgstr ""
 
-#: tools/observinglist.cpp:795
+#: tools/observinglist.cpp:802
 #, fuzzy
 msgid "The specified file is invalid"
 msgstr "Нигоҳ доштани маҳал беэтибор аст.Макони дигарро кӯшиш намоям?"
 
-#: tools/observinglist.cpp:804
+#: tools/observinglist.cpp:811
 #, fuzzy
 #| msgid "Are you sure you want to remove the %1 client?"
 msgid "Do you want to save the current session?"
 msgstr "Шумо ҳақиқатан мехоҳед %1-ро ҳузф кунед?"
 
-#: tools/observinglist.cpp:806
+#: tools/observinglist.cpp:813
 #, fuzzy
 msgid "Save Current session?"
 msgstr "Нигоҳ доред рангҳои ҷориро..."
 
-#: tools/observinglist.cpp:886
+#: tools/observinglist.cpp:893
 #, fuzzy, kde-format
 msgid "Could not open file %1.  Try a different filename?"
 msgstr "Наметавонам файлро боз кунам"
 
-#: tools/observinglist.cpp:887
+#: tools/observinglist.cpp:894
 msgid "Try Different"
 msgstr ""
 
-#: tools/observinglist.cpp:953
+#: tools/observinglist.cpp:960
 msgctxt "First letter in 'Find'"
 msgid "F"
 msgstr ""
 
-#: tools/observinglist.cpp:990
+#: tools/observinglist.cpp:997
 #, fuzzy
 #| msgid "UT:"
 msgid "WUT"
 msgstr "UT:"
 
-#: tools/observinglist.cpp:991
+#: tools/observinglist.cpp:998
 #, fuzzy
 #| msgid "Find Object"
 msgid "Find &Object"
 msgstr "Ҷустуҷӯи объект"
 
-#: tools/observinglist.cpp:1187
+#: tools/observinglist.cpp:1194
 msgid "This will delete all saved images. Are you sure you want to do this?"
 msgstr ""
 
-#: tools/observinglist.cpp:1187
+#: tools/observinglist.cpp:1194
 #, fuzzy
 #| msgid "Select all major bodies"
 msgid "Delete All Images"
 msgstr "Интихоб кунед ҳамаи баданҳои умуми"
 
-#: tools/observinglist.cpp:1285
+#: tools/observinglist.cpp:1292
 #, fuzzy
 #| msgid "Image Format"
 msgid "Image Chooser"
