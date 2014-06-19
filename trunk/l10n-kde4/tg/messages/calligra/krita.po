@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-18 01:36+0000\n"
+"POT-Creation-Date: 2014-06-19 01:30+0000\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -31,18 +31,6 @@ msgstr "Воридоти Тасвир"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Воридоти Тасвир"
-
-#: benchmarks/kis_floodfill_benchmark.cpp:86
-#: plugins/tools/defaulttools/kis_tool_fill.cc:128
-#: ui/actions/kis_selection_action_factories.cpp:171
-#, fuzzy
-msgid "Flood Fill"
-msgstr "Пур кардан"
-
-#: benchmarks/kis_gradient_benchmark.cpp:69
-#, fuzzy
-msgid "Gradient Fill"
-msgstr "Градиент:"
 
 #: crashreporter/main.cpp:53
 msgid "Krita Crash Reporter"
@@ -218,24 +206,24 @@ msgid "&Select"
 msgstr "&Ҷудокуни"
 
 #. i18n: ectx: Menu (Filter)
-#: gemini/kritagemini.rc:139 krita.rc:139 sketch/kritasketch.rc:139
+#: gemini/kritagemini.rc:139 krita.rc:140 sketch/kritasketch.rc:139
 #, fuzzy
 msgid "Filte&r"
 msgstr "&Сафед"
 
 #. i18n: ectx: Menu (Tools)
-#: gemini/kritagemini.rc:156 krita.rc:156 sketch/kritasketch.rc:156
+#: gemini/kritagemini.rc:156 krita.rc:157 sketch/kritasketch.rc:156
 #, fuzzy
 msgid "&Tools"
 msgstr "&Даровардани Асбоб"
 
 #. i18n: ectx: Menu (settings)
-#: gemini/kritagemini.rc:159 krita.rc:159 sketch/kritasketch.rc:159
+#: gemini/kritagemini.rc:159 krita.rc:160 sketch/kritasketch.rc:159
 msgid "Settings"
 msgstr "Танзимотҳо"
 
 #. i18n: ectx: ToolBar (BrushesAndStuff)
-#: gemini/kritagemini.rc:172 krita.rc:172 sketch/kritasketch.rc:172
+#: gemini/kritagemini.rc:172 krita.rc:173 sketch/kritasketch.rc:172
 msgid "Brushes and Stuff"
 msgstr ""
 
@@ -1358,15 +1346,14 @@ msgstr "Дигаргунии ҳосиятҳо"
 #: image/commands/kis_node_compositeop_command.cpp:28
 #, fuzzy
 msgctxt "(qtundo-format)"
-msgid "Node Composite Mode"
+msgid "Composition Mode Change"
 msgstr "Ҳолатро ташкил кардан:"
 
 #: image/commands/kis_node_opacity_command.cpp:26
 #, fuzzy
-#| msgid "Copy Opacity"
 msgctxt "(qtundo-format)"
-msgid "Node Opacity"
-msgstr "Норавшании нусха бардоштан"
+msgid "Opacity Change"
+msgstr "Ношаффофӣ: "
 
 #: image/commands/kis_reselect_global_selection_command.cpp:30
 #, fuzzy
@@ -1374,7 +1361,7 @@ msgctxt "(qtundo-format)"
 msgid "Reselect"
 msgstr "&Ҷудокуни"
 
-#: image/commands_new/kis_image_resize_command.cpp:28
+#: image/commands_new/kis_image_resize_command.cpp:28 image/kis_image.cc:421
 #, fuzzy
 #| msgid "Resize Image"
 msgctxt "(qtundo-format)"
@@ -1389,14 +1376,13 @@ msgid "Set Image Resolution"
 msgstr "Резолюсияи тасвир"
 
 #: image/commands_new/kis_move_command_common.h:40
+#: plugins/tools/defaulttools/strokes/move_stroke_strategy.cpp:31
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Move"
 msgstr "&Усул"
 
-#. i18n: ectx: property (text), widget (QPushButton, bnZoomAdjust)
 #: image/filter/kis_filter.cc:35
-#: plugins/extensions/dockers/imagedocker/forms/wdgImageViewPopup.ui:35
 msgid "Adjust"
 msgstr "Ба тартиб даровардан"
 
@@ -1487,13 +1473,13 @@ msgstr "&Сафед"
 msgid "Gaussian"
 msgstr "Кабуд :"
 
-#: image/kis_base_node.cpp:141 ui/kis_node_model.cpp:425
+#: image/kis_base_node.cpp:141 ui/kis_node_model.cpp:442
 msgid "Visible"
 msgstr "Намудор"
 
 #: image/kis_base_node.cpp:142
 #: plugins/extensions/dockers/channeldocker/channelmodel.cpp:68
-#: ui/kis_node_model.cpp:426
+#: ui/kis_node_model.cpp:443
 #, fuzzy
 msgid "Locked"
 msgstr "Пайвастан"
@@ -1574,82 +1560,107 @@ msgstr "замина"
 msgid "Layer %1"
 msgstr "Табақа %1"
 
-#: image/kis_image.cc:419
+#: image/kis_image.cc:420
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Crop Image"
 msgstr "Табақа ба Тасвир"
 
-#: image/kis_image.cc:419
-msgid "Resize Image"
-msgstr "Санҷидаи Тасвир"
-
-#: image/kis_image.cc:452
+#: image/kis_image.cc:456
 #, fuzzy
-msgid "Crop Node"
-msgstr "&Асбоби Пур кардани"
+msgctxt "(qtundo-format)"
+msgid "Crop Layer"
+msgstr "Масштаби Табақа..."
 
-#: image/kis_image.cc:479
+#: image/kis_image.cc:457
 #, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Crop Mask"
+msgstr "Алфа"
+
+#: image/kis_image.cc:485
+#, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Scale Image"
 msgstr "Тасвири Нав"
 
-#: image/kis_image.cc:479
+#: image/kis_image.cc:486
 #, fuzzy
 #| msgid "Image Resolution"
+msgctxt "(qtundo-format)"
 msgid "Change Image Resolution"
 msgstr "Резолюсияи тасвир"
 
-#: image/kis_image.cc:526
+#: image/kis_image.cc:533
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Scale Layer"
 msgstr "Масштаби Табақа..."
 
-#: image/kis_image.cc:620 plugins/extensions/rotateimage/rotateimage.cc:155
+#: image/kis_image.cc:621
 #, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Rotate Image"
+msgstr "Тасвири Номи дигар кунед"
+
+#: image/kis_image.cc:626
+#, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Rotate Layer"
 msgstr "&Нест кардани Табақа"
 
-#: image/kis_image.cc:687
+#: image/kis_image.cc:693
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Shear layer"
 msgstr "Масштаби Табақа..."
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
-#: image/kis_image.cc:693 plugins/extensions/shearimage/dlg_shearimage.cc:32
-#: plugins/extensions/shearimage/shearimage.cc:64
-#: plugins/extensions/shearimage/wdg_shearimage.ui:14
+#: image/kis_image.cc:699
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Shear Image"
 msgstr "Тасвири Нав"
 
-#: image/kis_image.cc:706
+#: image/kis_image.cc:712
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Convert Image Color Space"
 msgstr "&Даровардани Тасвир ҳамчун Табақа..."
 
-#: image/kis_image.cc:739
-msgid "Convert Projection Color Space"
-msgstr ""
-
-#: image/kis_image.cc:918 ui/kis_layer_manager.cc:709
+#: image/kis_image.cc:745
 #, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Convert Projection Color Space"
+msgstr "&Даровардани Тасвир ҳамчун Табақа..."
+
+#: image/kis_image.cc:924
+#, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Flatten Image"
 msgstr "Дучанда кардани Тасвир"
 
-#: image/kis_image.cc:1018
+#: image/kis_image.cc:1024
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Merge with Layer Below"
 msgstr "Якшавии &Ҳама Табақаҳо"
 
-#: image/kis_image.cc:1064
+#: image/kis_image.cc:1070
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Flatten Layer"
 msgstr "Дучанда кардани Тасвир"
 
-#: image/kis_image.cc:1650
+#: image/kis_image.cc:1656
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Crop Selections"
 msgstr "Ҳаракат кардани Интихобот"
+
+#: image/kis_layer.cc:174
+#, kde-format
+msgid "%1%"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, opacityCBox)
 #: image/kis_layer.cc:174 plugins/paintops/hairy/wdghairyeoptions.ui:297
@@ -1660,18 +1671,13 @@ msgstr "Ҳаракат кардани Интихобот"
 msgid "Opacity"
 msgstr "Норавшанӣ:"
 
-#: image/kis_layer.cc:174
-#, kde-format
-msgid "%1%"
-msgstr ""
-
 #: image/kis_layer.cc:176
 #, fuzzy
 msgid "Composite Mode"
 msgstr "Ҳолатро ташкил кардан:"
 
 #: image/kis_paint_layer.cc:151 image/kis_paint_layer.cc:160
-#: ui/kis_node_model.cpp:434
+#: ui/kis_node_model.cpp:451
 #, fuzzy
 msgid "Alpha Locked"
 msgstr "Пайвастан"
@@ -1686,54 +1692,58 @@ msgstr ""
 
 #: image/kis_selection_filters.cpp:120
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Erode Selection"
 msgstr "Ҳаракат кардани Интихобот"
 
 #: image/kis_selection_filters.cpp:184
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Dilate Selection"
 msgstr "Пур кардани Интихоб."
 
 #: image/kis_selection_filters.cpp:254
-#: plugins/extensions/modify_selection/dlg_border_selection.cc:31
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Border Selection"
 msgstr "Ҳаракат кардани Интихобот"
 
 #: image/kis_selection_filters.cpp:473
-#: plugins/extensions/modify_selection/dlg_feather_selection.cc:31
 #, fuzzy
 #| msgid "Selection"
+msgctxt "(qtundo-format)"
 msgid "Feather Selection"
 msgstr "Интихоб"
 
 #: image/kis_selection_filters.cpp:520
-#: plugins/extensions/modify_selection/dlg_grow_selection.cc:31
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Grow Selection"
 msgstr "Ҳаракат кардани Интихобот"
 
 #: image/kis_selection_filters.cpp:647
-#: plugins/extensions/modify_selection/dlg_shrink_selection.cc:31
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Shrink Selection"
 msgstr "Зич кардани Интихобот"
 
 #: image/kis_selection_filters.cpp:790
 #, fuzzy
 #| msgid "Selection"
+msgctxt "(qtundo-format)"
 msgid "Smooth Selection"
 msgstr "Интихоб"
 
 #: image/kis_selection_filters.cpp:851
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Invert Selection"
 msgstr "Ҳаракат кардани Интихобот"
 
 #. i18n: ectx: property (text), widget (QLabel, label_17)
 #: image/kis_selection_mask.cpp:106
 #: plugins/paintops/resourcemanager/wdgdlgbundlemanager.ui:225
-#: ui/kis_node_model.cpp:427
+#: ui/kis_node_model.cpp:444
 #, fuzzy
 msgid "Active"
 msgstr "Нест кардани Табақа"
@@ -1805,23 +1815,19 @@ msgstr ""
 msgid "Invalid value."
 msgstr "Андозаи эҷод кардан"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgToolCrop)
-#: image/processing/kis_crop_processing_visitor.cpp:54
-#: plugins/tools/tool_crop/wdg_tool_crop.ui:14
-msgid "Crop"
-msgstr ""
-
 #: image/processing/kis_transform_processing_visitor.cpp:160
 #, fuzzy
-msgid "Transform Node"
+msgctxt "(qtundo-format)"
+msgid "Transform Layer"
 msgstr "&Асбоби Хат задани"
 
-#: image/recorder/kis_macro_player.cc:75
+#: image/recorder/kis_macro_player.cc:77
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Play macro"
 msgstr "Ҷамъ"
 
-#: image/recorder/kis_macro_player.cc:81
+#: image/recorder/kis_macro_player.cc:83
 #: plugins/extensions/bigbrother/bigbrother.cc:124
 #, fuzzy
 msgid "Playing back macro"
@@ -1831,13 +1837,17 @@ msgstr "Ҷамъ"
 msgid "Fill"
 msgstr "Пур кардан"
 
+#: image/recorder/kis_recorded_filter_action.cpp:103
+#, fuzzy, kde-format
+msgctxt "(qtundo-format)"
+msgid "Filter: \"%1\""
+msgstr "&Сафед"
+
 #: image/recorder/kis_recorded_node_action.cc:54
 msgid "Applying action to all selected nodes"
 msgstr ""
 
 #: image/recorder/kis_recorded_path_paint_action.cpp:61
-#: plugins/tools/defaulttools/kis_tool_path.cc:75
-#: plugins/tools/defaulttools/kis_tool_pencil.cc:61
 #, fuzzy
 msgid "Path"
 msgstr "нуқтаҳо"
@@ -1850,7 +1860,6 @@ msgstr "нуқтаҳо"
 #: plugins/paintops/gridbrush/wdgshapeoptions.ui:36
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:343
 #: plugins/paintops/spray/wdgshapeoptions.ui:60
-#: plugins/tools/defaulttools/kis_tool_ellipse.cc:64
 #, fuzzy
 msgid "Ellipse"
 msgstr "эллипс"
@@ -1864,7 +1873,6 @@ msgstr "эллипс"
 #: plugins/paintops/gridbrush/wdgshapeoptions.ui:41
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:348
 #: plugins/paintops/spray/wdgshapeoptions.ui:65
-#: plugins/tools/defaulttools/kis_tool_rectangle.cc:67
 msgid "Rectangle"
 msgstr "Росткунҷа"
 
@@ -1953,7 +1961,7 @@ msgid "Perspective assistant"
 msgstr "&Асбоби Хат задани"
 
 #: plugins/assistants/RulerAssistant/PerspectiveAssistant.cc:339
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:52
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:60
 #, fuzzy
 msgid "Perspective"
 msgstr "&Асбоби Хат задани"
@@ -2128,7 +2136,7 @@ msgstr "Сабзи нусха бардоштан"
 #: plugins/extensions/clonesarray/wdg_clonesarray.ui:14
 #: plugins/extensions/offsetimage/wdg_offsetimage.ui:14
 #: plugins/extensions/rotateimage/dlg_rotateimage.cc:31
-#: plugins/extensions/rotateimage/rotateimage.cc:108
+#: plugins/extensions/rotateimage/rotateimage.cc:109
 #: plugins/extensions/rotateimage/wdg_rotateimage.ui:16
 #, fuzzy
 msgid "Rotate Image"
@@ -2236,8 +2244,13 @@ msgid "Select from Color Range..."
 msgstr "Тартиби рангҳо"
 
 #: plugins/extensions/colorrange/colorrange.cc:55
+#, fuzzy
+msgid "Select Opaque"
+msgstr "Интихоб"
+
 #: plugins/extensions/colorrange/colorrange.cc:83
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Select Opaque"
 msgstr "Интихоб"
 
@@ -2255,6 +2268,7 @@ msgstr "Тартиби рангҳо"
 
 #: plugins/extensions/colorrange/dlg_colorrange.cc:318
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Color Range Selection"
 msgstr "Ҳаракат кардани Интихобот"
 
@@ -2365,6 +2379,7 @@ msgstr "Бардоштани табақаи равон"
 
 #: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:122
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Convert Layer Type"
 msgstr "&Даровардани Тасвир ҳамчун Табақа..."
 
@@ -2527,6 +2542,7 @@ msgstr "&Сафед"
 #. i18n: ectx: attribute (title), widget (QWidget, tab_4)
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:24
 #: ui/dialogs/kis_dlg_preferences.cc:602 ui/dialogs/kis_dlg_preferences.cc:603
+#: ui/kis_paintop_option.cpp:26
 msgid "General"
 msgstr "Умумӣ"
 
@@ -2739,8 +2755,10 @@ msgstr "&Сояҳо"
 #. i18n: ectx: property (text), widget (QLabel, label_14)
 #. i18n: ectx: property (text), widget (QLabel, label_12)
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#. i18n: ectx: property (text), widget (QLabel, label_3)
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:476
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:693
+#: plugins/formats/heightmap/kis_wdg_options_heightmap.ui:30
 #: plugins/formats/pdf/pdfimportwidgetbase.ui:214
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:97
 #: ui/forms/wdgdisplaysettings.ui:77 ui/kis_paintop_box.cc:152
@@ -2990,58 +3008,70 @@ msgstr "Ном:"
 msgid "Composition"
 msgstr "Бе композисия"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:120
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:122
 msgid "Layers"
 msgstr "Табақаҳо"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:146
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:148
 msgid "Minimal View"
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:148
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:150
 msgid "Detailed View"
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:150
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:152
 msgid "Thumbnail View"
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:162
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:164
 #, fuzzy
 msgid "View mode"
 msgstr "Табақаи Нав"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:189
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:191
 msgid "&Remove Layer"
 msgstr "&Нест кардани Табақа"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:197
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:199
 #, fuzzy
 msgid "Move Layer Left"
 msgstr "Нест кардани Табақа"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:205
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:207
 #, fuzzy
 msgid "Move Layer Right"
 msgstr "Нест кардани Табақа"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:212
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:214
 #, fuzzy
 msgid "&Properties..."
 msgstr "Ҳосиятҳои Табақа..."
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:230
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:232
 #, fuzzy
 msgid "&Select Opaque"
 msgstr "Интихоб"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:475
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:256
+#, fuzzy
+msgid "&Show Global Selection Mask"
+msgstr "Интихоби поккун"
+
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:258
+msgctxt "@info:tooltip"
+msgid ""
+"Shows global selection as a usual selection mask in <interface>Layers</"
+"interface> docker"
+msgstr ""
+
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:487
 #: ui/kis_layer_manager.cc:283
 #, fuzzy
 msgid "&Merge with Layer Below"
 msgstr "Якшавии &Ҳама Табақаҳо"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:479
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:491
 #, fuzzy
 msgid "&Convert"
 msgstr "&Ба тарафи&дигар гардондан..."
@@ -3328,6 +3358,14 @@ msgstr ""
 msgid "Fit"
 msgstr "&Сафед"
 
+#. i18n: ectx: property (text), widget (QPushButton, bnZoomAdjust)
+#: plugins/extensions/dockers/imagedocker/forms/wdgImageViewPopup.ui:35
+#, fuzzy
+#| msgid "Adjust"
+msgctxt "Zoom mode to fit by only one dimension - width or height"
+msgid "Adjust"
+msgstr "Ба тартиб даровардан"
+
 #. i18n: ectx: property (text), widget (QPushButton, bnZoom100)
 #: plugins/extensions/dockers/imagedocker/forms/wdgImageViewPopup.ui:48
 #: plugins/paintops/curvebrush/kis_curves_opacity_option.cpp:26
@@ -3474,7 +3512,7 @@ msgid "LUT file:"
 msgstr "Ҳосиятҳои Табақа"
 
 #. i18n: ectx: property (text), widget (QToolButton, m_bnClearLut)
-#: plugins/extensions/dockers/lut/wdglut.ui:186 ui/tool/kis_tool.cc:545
+#: plugins/extensions/dockers/lut/wdglut.ui:186
 #, fuzzy
 msgid "Clear"
 msgstr "Тоза кардан"
@@ -3640,8 +3678,10 @@ msgid "Layer Effects"
 msgstr "Табақа ба Боло"
 
 #: plugins/extensions/dropshadow/kis_dropshadow.cc:126
+#, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Add Drop Shadow"
-msgstr ""
+msgstr "Сояҳо"
 
 #: plugins/extensions/dropshadow/kis_dropshadow_plugin.cc:46
 msgid "Add Drop Shadow..."
@@ -3722,7 +3762,7 @@ msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgSplash)
 #: plugins/extensions/gmic/kis_gmic_plugin.cpp:158
-#: plugins/extensions/gmic/kis_gmic_plugin.cpp:167 ui/kis_aboutdata.h:44
+#: plugins/extensions/gmic/kis_gmic_plugin.cpp:166 ui/kis_aboutdata.h:44
 #: wdgsplash.ui:300
 msgid "Krita"
 msgstr "Krita"
@@ -3731,12 +3771,13 @@ msgstr "Krita"
 msgid "Sorry, this filter is crashing Krita and is turned off."
 msgstr ""
 
-#: plugins/extensions/gmic/kis_gmic_plugin.cpp:167
+#: plugins/extensions/gmic/kis_gmic_plugin.cpp:166
 msgid "Sorry, this input mode is not implemented"
 msgstr ""
 
-#: plugins/extensions/gmic/kis_gmic_plugin.cpp:172
+#: plugins/extensions/gmic/kis_gmic_plugin.cpp:170
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Gmic filter"
 msgstr "Қатъ кардан"
 
@@ -3966,7 +4007,6 @@ msgstr "&Ботаҳаммулҳои таносубҳо"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: property (title), widget (QGroupBox, grpAngle)
 #: plugins/extensions/imagesize/wdg_canvassize.ui:158
-#: plugins/extensions/offsetimage/kis_offset_processing_visitor.cpp:109
 #: plugins/extensions/offsetimage/wdg_offsetimage.ui:20
 #, fuzzy
 msgid "Offset"
@@ -4664,8 +4704,6 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QComboBox, editWhiteBalance)
 #. i18n: ectx: property (text), widget (QRadioButton, customRadioButton)
 #: plugins/extensions/metadataeditor/editors/exif.ui:924
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:64
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:66
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1037
 #, fuzzy
 msgid "Custom"
@@ -4845,6 +4883,27 @@ msgstr "Кабуд"
 msgid "&Edit metadata..."
 msgstr "Намунаҳо"
 
+#: plugins/extensions/modify_selection/dlg_border_selection.cc:31
+#, fuzzy
+msgid "Border Selection"
+msgstr "Ҳаракат кардани Интихобот"
+
+#: plugins/extensions/modify_selection/dlg_feather_selection.cc:31
+#, fuzzy
+#| msgid "Selection"
+msgid "Feather Selection"
+msgstr "Интихоб"
+
+#: plugins/extensions/modify_selection/dlg_grow_selection.cc:31
+#, fuzzy
+msgid "Grow Selection"
+msgstr "Ҳаракат кардани Интихобот"
+
+#: plugins/extensions/modify_selection/dlg_shrink_selection.cc:31
+#, fuzzy
+msgid "Shrink Selection"
+msgstr "Зич кардани Интихобот"
+
 #: plugins/extensions/modify_selection/modify_selection.cc:42
 #, fuzzy
 msgid "Grow Selection..."
@@ -4901,12 +4960,6 @@ msgstr "Шакл:"
 msgid "Shrink from image border"
 msgstr ""
 
-#: plugins/extensions/offsetimage/dlg_offsetimage.cpp:28
-#: plugins/extensions/offsetimage/offsetimage.cpp:73
-#, fuzzy
-msgid "Offset Image"
-msgstr "Офсет:"
-
 #: plugins/extensions/offsetimage/offsetimage.cpp:48
 #, fuzzy
 msgid "&Offset Image..."
@@ -4917,8 +4970,27 @@ msgstr "Воридоти Тасвир..."
 msgid "&Offset Layer..."
 msgstr "&Иловаи Табақа..."
 
+#: plugins/extensions/offsetimage/offsetimage.cpp:73
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Offset Image"
+msgstr "Офсет:"
+
+#: plugins/extensions/offsetimage/offsetimage.cpp:74
+#, fuzzy
+msgctxt "@title:window"
+msgid "Offset Image"
+msgstr "Офсет:"
+
 #: plugins/extensions/offsetimage/offsetimage.cpp:97
 #, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Offset Layer"
+msgstr "Офсет:"
+
+#: plugins/extensions/offsetimage/offsetimage.cpp:98
+#, fuzzy
+msgctxt "@title:window"
 msgid "Offset Layer"
 msgstr "Офсет:"
 
@@ -4927,62 +4999,77 @@ msgstr "Офсет:"
 msgid "Offset by x/2, y/2"
 msgstr ""
 
-#: plugins/extensions/rotateimage/rotateimage.cc:46
+#: plugins/extensions/rotateimage/rotateimage.cc:47
 #, fuzzy
 msgid "&Rotate Image..."
 msgstr "Воридоти Тасвир..."
 
-#: plugins/extensions/rotateimage/rotateimage.cc:50
+#: plugins/extensions/rotateimage/rotateimage.cc:51
 #, fuzzy
 msgctxt "rotate image 90 degrees to the right"
 msgid "Rotate Image 90° to the Right"
 msgstr "Тасвири Номи дигар кунед"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:54
+#: plugins/extensions/rotateimage/rotateimage.cc:55
 #, fuzzy
 msgctxt "rotate image 180 degrees to the right"
 msgid "Rotate Image 180°"
 msgstr "Тасвири Номи дигар кунед"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:58
+#: plugins/extensions/rotateimage/rotateimage.cc:59
 #, fuzzy
 msgctxt "rotate image 90 degrees to the left"
 msgid "Rotate Image 90° to the Left"
 msgstr "Тасвири Номи дигар кунед"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:62
-#: plugins/extensions/rotateimage/rotateimage.cc:143
+#: plugins/extensions/rotateimage/rotateimage.cc:63
 #, fuzzy
 msgid "Mirror Image Horizontally"
 msgstr "Ҷоки уфуқӣ"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:66
-#: plugins/extensions/rotateimage/rotateimage.cc:136
+#: plugins/extensions/rotateimage/rotateimage.cc:67
 #, fuzzy
 msgid "Mirror Image Vertically"
 msgstr "Амудӣ:"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:70
+#: plugins/extensions/rotateimage/rotateimage.cc:71
 #, fuzzy
 msgid "&Rotate Layer..."
 msgstr "&Нест кардани Табақа"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:76
+#: plugins/extensions/rotateimage/rotateimage.cc:77
 #, fuzzy
 msgctxt "rotate the layer 180 degrees"
 msgid "Rotate Layer 180°"
 msgstr "&Нест кардани Табақа"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:82
+#: plugins/extensions/rotateimage/rotateimage.cc:83
 #, fuzzy
 msgctxt "rotate the layer 90 degrees to the right"
 msgid "Rotate Layer 90° to the Right"
 msgstr "&Нест кардани Табақа"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:88
+#: plugins/extensions/rotateimage/rotateimage.cc:89
 #, fuzzy
 msgctxt "rotate the layer 90 degrees to the left"
 msgid "Rotate Layer 90° to the Left"
+msgstr "&Нест кардани Табақа"
+
+#: plugins/extensions/rotateimage/rotateimage.cc:137
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Mirror Image Vertically"
+msgstr "Амудӣ:"
+
+#: plugins/extensions/rotateimage/rotateimage.cc:144
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Mirror Image Horizontally"
+msgstr "Ҷоки уфуқӣ"
+
+#: plugins/extensions/rotateimage/rotateimage.cc:156
+#, fuzzy
+msgid "Rotate Layer"
 msgstr "&Нест кардани Табақа"
 
 #. i18n: ectx: Menu (Rotate)
@@ -5030,10 +5117,15 @@ msgid "&Custom:"
 msgstr "Тоза карданиҳо"
 
 #: plugins/extensions/separate_channels/dlg_separate.cc:40
-#: plugins/extensions/separate_channels/kis_channel_separator.cc:214
 #: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:76
 #: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:87
 #, fuzzy
+msgid "Separate Image"
+msgstr "Тасвири Нав"
+
+#: plugins/extensions/separate_channels/kis_channel_separator.cc:214
+#, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Separate Image"
 msgstr "Тасвири Нав"
 
@@ -5119,6 +5211,14 @@ msgstr ""
 #: plugins/extensions/separate_channels/wdg_separations.ui:138
 msgid "Output to color, not grayscale"
 msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
+#: plugins/extensions/shearimage/dlg_shearimage.cc:32
+#: plugins/extensions/shearimage/shearimage.cc:64
+#: plugins/extensions/shearimage/wdg_shearimage.ui:14
+#, fuzzy
+msgid "Shear Image"
+msgstr "Тасвири Нав"
 
 #: plugins/extensions/shearimage/shearimage.cc:40
 #, fuzzy
@@ -5253,7 +5353,7 @@ msgstr "Ҳақиқии сохтмон"
 #: plugins/paintops/experiment/wdgshapeoptions.ui:46
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:326
 #: plugins/paintops/spray/wdgshapeoptions.ui:46
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:214
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:215
 msgid "Shape:"
 msgstr "Шакл:"
 
@@ -5856,6 +5956,11 @@ msgid "&Index Colors..."
 msgstr "Ранги роҳбар"
 
 #: plugins/filters/indexcolors/indexcolors.cpp:82
+msgctxt "Color palette shade"
+msgid "Base"
+msgstr ""
+
+#: plugins/filters/indexcolors/indexcolors.cpp:82
 #, fuzzy
 msgctxt "Color palette shade"
 msgid "Bright"
@@ -5866,11 +5971,6 @@ msgstr "Равшанӣ :"
 msgctxt "Color palette shade"
 msgid "Light"
 msgstr "Дарозӣ:"
-
-#: plugins/filters/indexcolors/indexcolors.cpp:82
-msgctxt "Color palette shade"
-msgid "Base"
-msgstr ""
 
 #: plugins/filters/indexcolors/indexcolors.cpp:82
 #, fuzzy
@@ -6269,7 +6369,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: plugins/filters/roundcorners/kis_round_corners_filter.cpp:130
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:284
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:285
 #: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:103
 #, fuzzy
 msgid "Radius"
@@ -6417,13 +6517,13 @@ msgstr ""
 msgid "HDR Layer"
 msgstr "Табақа"
 
-#: plugins/formats/exr/exr_converter.cc:1071
+#: plugins/formats/exr/exr_converter.cc:1070
 #, kde-format
 msgctxt "@item:unsupported-node-message"
 msgid "%1 (type: \"%2\")"
 msgstr ""
 
-#: plugins/formats/exr/exr_converter.cc:1076
+#: plugins/formats/exr/exr_converter.cc:1075
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -6432,7 +6532,7 @@ msgid ""
 "saved to the final EXR file</warning></para>"
 msgstr ""
 
-#: plugins/formats/exr/exr_converter.cc:1081
+#: plugins/formats/exr/exr_converter.cc:1080
 msgctxt "@title:window"
 msgid "Layers will be lost"
 msgstr ""
@@ -6506,8 +6606,76 @@ msgstr ""
 msgid "Krita could not create a new image."
 msgstr "Табақа ба тасвир илова кардан наметавонад."
 
-#: plugins/formats/jp2/jp2_converter.cc:345
-#: plugins/formats/jp2/jp2_converter.cc:356
+#: plugins/formats/heightmap/kis_heightmap_export.cpp:79
+msgid "Cannot export this image to a heightmap: it is not square"
+msgstr ""
+
+#: plugins/formats/heightmap/kis_heightmap_export.cpp:84
+msgid "Cannot export this image to a heightmap: it is not grayscale"
+msgstr ""
+
+#: plugins/formats/heightmap/kis_heightmap_export.cpp:89
+#, fuzzy
+msgid "HeightMap Export Options"
+msgstr "Интихобҳои Градиентҳо"
+
+#: plugins/formats/heightmap/kis_heightmap_export.cpp:139
+#, fuzzy
+msgid "Downscale Image"
+msgstr "Тасвири Нав"
+
+#: plugins/formats/heightmap/kis_heightmap_export.cpp:140
+msgid ""
+"You specified the .r8 extension for a 16 bit/channel image. Do you want to "
+"save as 8 bit? Your image data will not be changed."
+msgstr ""
+
+#: plugins/formats/heightmap/kis_heightmap_import.cpp:83
+msgid "The file is not 8 or 16 bits raw"
+msgstr ""
+
+#: plugins/formats/heightmap/kis_heightmap_import.cpp:112
+#, fuzzy
+msgid "R16 HeightMap Import Options"
+msgstr "Интихобҳои Градиентҳо"
+
+#: plugins/formats/heightmap/kis_heightmap_import.cpp:132
+msgid "File does not exist."
+msgstr ""
+
+#: plugins/formats/heightmap/kis_heightmap_import.cpp:158
+msgid "Source file is not the right size for the specified width and height."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/formats/heightmap/kis_wdg_options_heightmap.ui:40
+#, fuzzy
+msgid "Endianness:"
+msgstr "Занондан"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioMac)
+#: plugins/formats/heightmap/kis_wdg_options_heightmap.ui:58
+msgid "Big Endian"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioMac)
+#: plugins/formats/heightmap/kis_wdg_options_heightmap.ui:61
+#, fuzzy
+msgid "Mac"
+msgstr "Иловаи ниқоб"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioPC)
+#: plugins/formats/heightmap/kis_wdg_options_heightmap.ui:68
+msgid "Little Endian"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioPC)
+#: plugins/formats/heightmap/kis_wdg_options_heightmap.ui:71
+msgid "PC"
+msgstr ""
+
+#: plugins/formats/jp2/jp2_converter.cc:344
+#: plugins/formats/jp2/jp2_converter.cc:355
 #: plugins/formats/tiff/kis_tiff_writer_visitor.cpp:67
 #, kde-format
 msgid "Cannot export images in %1.\n"
@@ -6674,7 +6842,7 @@ msgstr "Якшавии &Ҳама Табақаҳо"
 
 #: plugins/formats/ora/ora_export.cc:100
 msgid ""
-"This image contains vector, clone or generated layers..\n"
+"This image contains vector, clone or fill layers..\n"
 "These layers will be saved as raster layers."
 msgstr ""
 
@@ -7224,23 +7392,23 @@ msgstr "&Интихоби тоза кардан"
 
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
 #, fuzzy
-msgid "Smudge Length"
-msgstr "&Интихоби тоза кардан"
-
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
-#, fuzzy
 msgid "Length: "
 msgstr "&Фоиз"
 
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:53
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
 #, fuzzy
-msgid "Smudge Radius"
+msgid "Smudge Length"
 msgstr "&Интихоби тоза кардан"
 
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:53
 #, fuzzy
 msgid "Radius: "
 msgstr "Ҳақиқии сохтмон"
+
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:53
+#, fuzzy
+msgid "Smudge Radius"
+msgstr "&Интихоби тоза кардан"
 
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:54
 #, fuzzy
@@ -7588,7 +7756,6 @@ msgstr "Намунаҳо"
 
 #. i18n: ectx: property (text), widget (QRadioButton, polygonRBox)
 #: plugins/paintops/dynadraw/wdgdynaoptions.ui:227
-#: plugins/tools/tool_polygon/kis_tool_polygon.cc:63
 #, fuzzy
 msgid "Polygon"
 msgstr "&Асбоби Хат"
@@ -7742,8 +7909,7 @@ msgid "Texture:"
 msgstr "Намунаҳо"
 
 #: plugins/paintops/gridbrush/grid_paintop_plugin.cpp:41
-#: ui/canvas/kis_grid_manager.cpp:47 ui/dialogs/kis_dlg_preferences.cc:636
-#: ui/dialogs/kis_dlg_preferences.cc:637
+#: ui/dialogs/kis_dlg_preferences.cc:636 ui/dialogs/kis_dlg_preferences.cc:637
 #, fuzzy
 msgid "Grid"
 msgstr "Кабуд"
@@ -8532,6 +8698,11 @@ msgstr "Тоза карданиҳо"
 msgid "Predefined"
 msgstr "Интихоби тоза кардан"
 
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:64
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:66
+msgid "Stamp"
+msgstr ""
+
 #. i18n: ectx: property (title), widget (QGroupBox, grpClipboard)
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:68
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:70
@@ -8619,8 +8790,6 @@ msgstr "Lab Ранг"
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbStyle)
 #: plugins/paintops/libpaintop/kis_color_source_option.cpp:56
 #: plugins/paintops/libpaintop/kis_pressure_gradient_option.cpp:26
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:151
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:165
 #: plugins/tools/tool_text/wdgtextoptions.ui:53
 #, fuzzy
 msgid "Gradient"
@@ -8675,17 +8844,17 @@ msgstr ""
 msgid "Y-Tilt"
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:50
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:57
 #, fuzzy
-msgid "Ascension"
-msgstr "&Андозаҳои Pixel:"
-
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:51
-#, fuzzy
-msgid "Declination"
+msgid "Tilt direction"
 msgstr "Қатъ кардан"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:53
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:58
+#, fuzzy
+msgid "Tilt elevation"
+msgstr "Пур кардани Интихоб."
+
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:61
 msgid "Tangential pressure"
 msgstr ""
 
@@ -8747,7 +8916,7 @@ msgid "Lower value "
 msgstr "Тартиби рангҳо"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option.cpp:30
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:242
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:243
 #: ui/kis_paintop_box.cc:252
 #, fuzzy
 msgid "Mirror"
@@ -8764,13 +8933,13 @@ msgid "Mirrored"
 msgstr "Табақа ба Тасвир"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option_widget.cpp:35
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:262
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:263
 #, fuzzy
 msgid "Horizontally"
 msgstr "Ҷоки уфуқӣ"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option_widget.cpp:37
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:264
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:265
 #, fuzzy
 msgid "Vertically"
 msgstr "Амудӣ:"
@@ -8896,13 +9065,13 @@ msgid "Texturing Mode:"
 msgstr "Интихоб"
 
 #: plugins/paintops/libpaintop/kis_texture_option.cpp:105
-msgid "Cut Off Disabled"
-msgstr ""
-
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:105
 #, fuzzy
 msgid "Cut Off Brush"
 msgstr "Тоза кардани худкор"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:105
+msgid "Cut Off Disabled"
+msgstr ""
 
 #: plugins/paintops/libpaintop/kis_texture_option.cpp:105
 #, fuzzy
@@ -8927,8 +9096,8 @@ msgstr "Тоза карданиҳо"
 
 #: plugins/paintops/libpaintop/kis_texture_option.cpp:119
 #, fuzzy
-msgid "Invert Texture:"
-msgstr "Намунаҳо"
+msgid "Invert Pattern:"
+msgstr "&Серӣ"
 
 #: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_distance.cc:29
 msgid "0 px"
@@ -9092,17 +9261,13 @@ msgid ""
 msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:156
-msgid "opaque"
-msgstr ""
-
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:156
 msgid ""
 "0 means brush is transparent, 1 fully visible\n"
 "(also known as alpha or opacity)"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:157
-msgid "opaque multiply"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:156
+msgid "opaque"
 msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:157
@@ -9111,8 +9276,8 @@ msgid ""
 "pressure (or other inputs)."
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:158
-msgid "opaque linearize"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:157
+msgid "opaque multiply"
 msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:158
@@ -9127,6 +9292,10 @@ msgid ""
 "pixel gets (dabs_per_radius*2) brushdabs on average during a stroke"
 msgstr ""
 
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:158
+msgid "opaque linearize"
+msgstr ""
+
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:159
 msgid ""
 "basic brush radius (logarithmic)\n"
@@ -9135,14 +9304,14 @@ msgid ""
 msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:160
+msgid "hard brush-circle borders (setting to zero will draw nothing)"
+msgstr ""
+
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:160
 #, fuzzy
 #| msgid "Shape:"
 msgid "hardness"
 msgstr "Шакл:"
-
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:160
-msgid "hard brush-circle borders (setting to zero will draw nothing)"
-msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:161
 msgid "dabs per basic radius"
@@ -9174,10 +9343,6 @@ msgid "dabs to draw each second, no matter how far the pointer moves"
 msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:164
-msgid "radius by random"
-msgstr ""
-
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:164
 msgid ""
 "Alter the radius randomly each dab. You can also do this with the by_random "
 "input on the radius setting. If you do it here, there are two differences:\n"
@@ -9186,8 +9351,8 @@ msgid ""
 "2) it will not change the actual radius seen by dabs_per_actual_radius"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:165
-msgid "speed1 filter"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:164
+msgid "radius by random"
 msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:165
@@ -9196,16 +9361,16 @@ msgid ""
 "0.0 changes immediately as your speed changes (not recommended, but try it.)"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:166
-msgid "speed2 filter"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:165
+msgid "speed1 filter"
 msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:166
 msgid "same as 'speed1 slowness' but note that the range is different"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:167
-msgid "speed1 gamma"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:166
+msgid "speed2 filter"
 msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:167
@@ -9217,18 +9382,17 @@ msgid ""
 "For very slow speed the opposite happens."
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:168
-msgid "speed2 gamma"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:167
+msgid "speed1 gamma"
 msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:168
 msgid "same as 'speed1 gamma' for speed2"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:169
-#, fuzzy
-msgid "jitter"
-msgstr "&Сафед"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:168
+msgid "speed2 gamma"
+msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:169
 msgid ""
@@ -9238,9 +9402,10 @@ msgid ""
 "<0.0 negative values produce no jitter"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:170
-msgid "offset by speed"
-msgstr ""
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:169
+#, fuzzy
+msgid "jitter"
+msgstr "&Сафед"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:170
 msgid ""
@@ -9250,16 +9415,16 @@ msgid ""
 "< 0 draw where the pointer comes from"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:171
-msgid "offset by speed filter"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:170
+msgid "offset by speed"
 msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:171
 msgid "how slow the offset goes back to zero when the cursor stops moving"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:172
-msgid "slow position tracking"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:171
+msgid "offset by speed filter"
 msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:172
@@ -9268,8 +9433,8 @@ msgid ""
 "jitter in cursor movements. Useful for drawing smooth, comic-like outlines."
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:173
-msgid "slow tracking per dab"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:172
+msgid "slow position tracking"
 msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:173
@@ -9278,14 +9443,18 @@ msgid ""
 "brushdabs do not depend on time)"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:174
-msgid "tracking noise"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:173
+msgid "slow tracking per dab"
 msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:174
 msgid ""
 "add randomness to the mouse pointer; this usually generates many small lines "
 "in random directions; maybe try this together with 'slow tracking'"
+msgstr ""
+
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:174
+msgid "tracking noise"
 msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:176
@@ -9310,11 +9479,6 @@ msgid "color value (brightness, intensity)"
 msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:179
-#, fuzzy
-msgid "change color hue"
-msgstr "Ранги ҷамъкунанда"
-
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:179
 msgid ""
 "Change color hue.\n"
 "-0.1 small clockwise color hue shift\n"
@@ -9322,9 +9486,10 @@ msgid ""
 " 0.5 counterclockwise hue shift by 180 degrees"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:180
-msgid "change color lightness (HSL)"
-msgstr ""
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:179
+#, fuzzy
+msgid "change color hue"
+msgstr "Ранги ҷамъкунанда"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:180
 msgid ""
@@ -9334,10 +9499,9 @@ msgid ""
 " 1.0 whiter"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:181
-#, fuzzy
-msgid "change color satur. (HSL)"
-msgstr "Ранги ҷамъкунанда"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:180
+msgid "change color lightness (HSL)"
+msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:181
 msgid ""
@@ -9347,9 +9511,9 @@ msgid ""
 " 1.0 more saturated"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:182
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:181
 #, fuzzy
-msgid "change color value (HSV)"
+msgid "change color satur. (HSL)"
 msgstr "Ранги ҷамъкунанда"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:182
@@ -9361,9 +9525,9 @@ msgid ""
 " 1.0 brigher"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:183
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:182
 #, fuzzy
-msgid "change color satur. (HSV)"
+msgid "change color value (HSV)"
 msgstr "Ранги ҷамъкунанда"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:183
@@ -9375,9 +9539,10 @@ msgid ""
 " 1.0 more saturated"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:184
-msgid "smudge"
-msgstr ""
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:183
+#, fuzzy
+msgid "change color satur. (HSV)"
+msgstr "Ранги ҷамъкунанда"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:184
 msgid ""
@@ -9388,8 +9553,8 @@ msgid ""
 " 1.0 use only the smudge color"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:185
-msgid "smudge length"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:184
+msgid "smudge"
 msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:185
@@ -9400,10 +9565,9 @@ msgid ""
 "1.0 never change the smudge color"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:186
-#, fuzzy
-msgid "smudge radius"
-msgstr "&Интихоби тоза кардан"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:185
+msgid "smudge length"
+msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:186
 msgid ""
@@ -9414,6 +9578,11 @@ msgid ""
 "+0.7 twice the brush radius\n"
 "+1.6 five times the brush radius (slow)"
 msgstr ""
+
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:186
+#, fuzzy
+msgid "smudge radius"
+msgstr "&Интихоби тоза кардан"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:187
 #, fuzzy
@@ -9430,21 +9599,16 @@ msgid ""
 msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:189
-#, fuzzy
-#| msgid "Threshold"
-msgid "stroke threshold"
-msgstr "Остона"
-
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:189
 msgid ""
 "How much pressure is needed to start a stroke. This affects the stroke input "
 "only. Mypaint does not need a minimal pressure to start drawing."
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:190
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:189
 #, fuzzy
-msgid "stroke duration"
-msgstr "&Серӣ"
+#| msgid "Threshold"
+msgid "stroke threshold"
+msgstr "Остона"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:190
 msgid ""
@@ -9452,9 +9616,10 @@ msgid ""
 "logarithmic (negative values will not invert the process)."
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:191
-msgid "stroke hold time"
-msgstr ""
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:190
+#, fuzzy
+msgid "stroke duration"
+msgstr "&Серӣ"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:191
 msgid ""
@@ -9465,10 +9630,9 @@ msgid ""
 "9.9 and bigger stands for infinite"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:192
-#, fuzzy
-msgid "custom input"
-msgstr "Градиент:"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:191
+msgid "stroke hold time"
+msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:192
 msgid ""
@@ -9481,10 +9645,10 @@ msgid ""
 "input."
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:193
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:192
 #, fuzzy
-msgid "custom input filter"
-msgstr "Намунаҳо"
+msgid "custom input"
+msgstr "Градиент:"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:193
 msgid ""
@@ -9494,17 +9658,22 @@ msgid ""
 "0.0 no slowdown (changes apply instantly)"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:195
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:193
 #, fuzzy
-#| msgid "Elliptical Selection"
-msgid "elliptical dab: ratio"
-msgstr "Интихоби эллипсӣ"
+msgid "custom input filter"
+msgstr "Намунаҳо"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:195
 msgid ""
 "aspect ratio of the dabs; must be >= 1.0, where 1.0 means a perfectly round "
 "dab. TODO: linearize? start at 0.0 maybe, or log?"
 msgstr ""
+
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:195
+#, fuzzy
+#| msgid "Elliptical Selection"
+msgid "elliptical dab: ratio"
+msgstr "Интихоби эллипсӣ"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:196
 #, fuzzy
@@ -9520,15 +9689,15 @@ msgid ""
 msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:197
-#, fuzzy
-msgid "direction filter"
-msgstr "Қатъ кардан"
-
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:197
 msgid ""
 "a low value will make the direction input adapt more quickly, a high value "
 "will make it smoother"
 msgstr ""
+
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:197
+#, fuzzy
+msgid "direction filter"
+msgstr "Қатъ кардан"
 
 #: plugins/paintops/particle/particle_paintop_plugin.cpp:42
 #, fuzzy
@@ -10113,10 +10282,9 @@ msgstr "Ҳаракат кардани Интихобот"
 
 #: plugins/tools/defaulttools/kis_tool_brush.cc:39
 #, fuzzy
-#| msgid "Brush"
 msgctxt "(qtundo-format)"
-msgid "Brush"
-msgstr "Тоза кардан"
+msgid "Freehand Brush Stroke"
+msgstr "Интихоби тоза кардан"
 
 #: plugins/tools/defaulttools/kis_tool_brush.cc:167
 #, fuzzy
@@ -10176,8 +10344,8 @@ msgstr "Рӯянобҳо"
 
 #: plugins/tools/defaulttools/kis_tool_brush.h:96
 #, fuzzy
-msgid "Paint with brushes"
-msgstr "нуқтаҳо"
+msgid "Freehand Brush Tool"
+msgstr "&Асбоби тоза кардани ҳаво"
 
 #: plugins/tools/defaulttools/kis_tool_colorpicker.cc:248
 msgid "Cannot pick a color as no layer is active."
@@ -10197,10 +10365,22 @@ msgstr ""
 msgid "Select a color from the image or current layer"
 msgstr "Асбобҳои Интихобот"
 
+#: plugins/tools/defaulttools/kis_tool_ellipse.cc:64
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Draw Ellipse"
+msgstr "росткунҷа"
+
 #: plugins/tools/defaulttools/kis_tool_ellipse.h:56
 #, fuzzy
-msgid "Draw an ellipse"
-msgstr "росткунҷа"
+msgid "Ellipse Tool"
+msgstr "Эллипсӣ"
+
+#: plugins/tools/defaulttools/kis_tool_fill.cc:128
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Flood Fill"
+msgstr "Пур кардан"
 
 #: plugins/tools/defaulttools/kis_tool_fill.cc:158
 #, fuzzy
@@ -10260,71 +10440,83 @@ msgstr ""
 msgid "Fill a contiguous area of color with a color, or fill a selection."
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:215
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:150
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Gradient"
+msgstr "Градиент:"
+
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:166
+#, fuzzy
+msgctxt "@info:progress"
+msgid "Gradient..."
+msgstr "Градиент:"
+
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:216
 msgid "Repeat:"
 msgstr "Такрор кардан:"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:217
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:218
 #, fuzzy
 msgctxt "the gradient will be drawn with the color order reversed"
 msgid "Reverse"
 msgstr "Санҷидан"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:224
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:225
 #, fuzzy
 msgctxt "the gradient will be drawn linearly"
 msgid "Linear"
 msgstr "&Хатти"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:225
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:226
 #, fuzzy
 msgctxt "the gradient will be drawn bilinearly"
 msgid "Bi-Linear"
 msgstr "&Хатти"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:226
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:227
 #, fuzzy
 msgctxt "the gradient will be drawn radially"
 msgid "Radial"
 msgstr "Ҳақиқии сохтмон"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:227
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:228
 #, fuzzy
 msgctxt "the gradient will be drawn in a square around a centre"
 msgid "Square"
 msgstr "масоҳат"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:228
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:229
 #, fuzzy
 msgctxt "the gradient will be drawn as an assymmetric cone"
 msgid "Conical"
 msgstr "Милҳо"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:229
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:230
 msgctxt "the gradient will be drawn as a symmetric cone"
 msgid "Conical Symmetric"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:234
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:235
 #, fuzzy
 #| msgid "None"
 msgctxt "The gradient will not repeat"
 msgid "None"
 msgstr "Ҳеҷ"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:235
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:236
 #, fuzzy
 msgctxt "The gradient will repeat forwards"
 msgid "Forwards"
 msgstr "Воридоти Тасвир"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:236
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:237
 #, fuzzy
 msgctxt "The gradient will repeat alternatingly"
 msgid "Alternating"
 msgstr "Андозаи чоп"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:244
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:245
 #, fuzzy
 msgid "Anti-alias threshold:"
 msgstr "Остона: "
@@ -10350,9 +10542,9 @@ msgstr "Алфа"
 
 #: plugins/tools/defaulttools/kis_tool_line.cc:186
 #, fuzzy
-msgctxt "a straight drawn line"
-msgid "Line"
-msgstr "&Хатти"
+msgctxt "(qtundo-format)"
+msgid "Draw Line"
+msgstr "Параф гузоштан..."
 
 #: plugins/tools/defaulttools/kis_tool_line.cc:259
 msgid ""
@@ -10361,8 +10553,9 @@ msgid ""
 msgstr ""
 
 #: plugins/tools/defaulttools/kis_tool_line.h:85
-msgid "Draw a straight line with the current brush"
-msgstr ""
+#, fuzzy
+msgid "Line Tool"
+msgstr "&Асбоби Хат"
 
 #: plugins/tools/defaulttools/kis_tool_measure.cc:51
 #, fuzzy
@@ -10383,71 +10576,89 @@ msgstr ""
 msgid "Move a layer"
 msgstr "Нест кардани Табақа"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:223
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:59
+msgctxt "(qtundo-format)"
+msgid "Multibrush Stroke"
+msgstr ""
+
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:224
 #, fuzzy
 msgid "Show Axes"
 msgstr "Кабуд"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:227
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:228
 #, fuzzy
 msgid "Axes point"
 msgstr "воҳиди тасвирҳо"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:233
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:234
 msgid "Set axes angle (degrees)"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:238
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:239
 #, fuzzy
 msgid "Axes Angle:"
 msgstr "росткунҷа"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:241
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:242
 msgid "Symmetry"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:243
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:244
 #, fuzzy
 msgid "Translate"
 msgstr "росткунҷа"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:249
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:250
 #, fuzzy
 msgid "Brush count"
 msgstr "Тоза карданиҳо"
 
 #: plugins/tools/defaulttools/kis_tool_multihand.h:99
 #, fuzzy
-msgid "Paint with multibrushes"
-msgstr "нуқтаҳо"
+msgid "Multibrush Tool"
+msgstr "&Асбоби тоза кардани ҳаво"
 
 #: plugins/tools/defaulttools/kis_tool_pan.h:76
 msgid "Move and rotate your canvas"
 msgstr ""
 
+#: plugins/tools/defaulttools/kis_tool_path.cc:75
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Draw Bezier Curve"
+msgstr "&Асбоби Пур кардани"
+
 #: plugins/tools/defaulttools/kis_tool_path.h:76
-msgid "Draw a path. Shift-mouseclick ends the path."
+msgid "Bezier Curve Tool. Shift-mouseclick ends the curve."
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_pencil.h:67
+#: plugins/tools/defaulttools/kis_tool_pencil.cc:61
 #, fuzzy
-msgid "Draw a freehand path."
+msgctxt "(qtundo-format)"
+msgid "Draw Freehand Path"
 msgstr "Градиент:"
+
+#: plugins/tools/defaulttools/kis_tool_pencil.h:67
+msgid "Freehand Path Tool"
+msgstr ""
+
+#: plugins/tools/defaulttools/kis_tool_rectangle.cc:67
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Draw Rectangle"
+msgstr "росткунҷа"
 
 #: plugins/tools/defaulttools/kis_tool_rectangle.h:61
 #, fuzzy
-msgid "Draw a rectangle"
-msgstr "росткунҷа"
+msgid "Rectangle Tool"
+msgstr "&Асбоби Росткунҷа"
 
 #: plugins/tools/defaulttools/strokes/move_selection_stroke_strategy.cpp:35
 #, fuzzy
-msgid "Move Selection Stroke"
-msgstr "Интихоб"
-
-#: plugins/tools/defaulttools/strokes/move_stroke_strategy.cpp:31
-#, fuzzy
-msgid "Move Stroke"
-msgstr "Нағз"
+msgctxt "(qtundo-format)"
+msgid "Move Selection"
+msgstr "Ҳаракат кардани Интихобот"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, ColorPickerOptionsWidget)
 #: plugins/tools/defaulttools/wdgcolorpicker.ui:14
@@ -10543,7 +10754,6 @@ msgid "Move the whole group"
 msgstr "Ҳаракат кардани Интихобот"
 
 #: plugins/tools/selectiontools/kis_tool_select_brush.cc:53
-#: plugins/tools/selectiontools/kis_tool_select_brush.cc:176
 #, fuzzy
 msgid "Brush Selection"
 msgstr "&Интихоби Ҳамҳудуд"
@@ -10553,16 +10763,27 @@ msgstr "&Интихоби Ҳамҳудуд"
 msgid "Brush size:"
 msgstr "Тоза карданиҳо"
 
-#: plugins/tools/selectiontools/kis_tool_select_brush.h:76
+#: plugins/tools/selectiontools/kis_tool_select_brush.cc:176
 #, fuzzy
-msgid "Select by brush"
+msgctxt "(qtundo-format)"
+msgid "Select by Brush"
 msgstr "&Интихоби тоза кардан"
 
+#: plugins/tools/selectiontools/kis_tool_select_brush.h:76
+#, fuzzy
+msgid "Brush Selection Tool"
+msgstr "&Интихоби Ҳамҳудуд"
+
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:55
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:106
 #, fuzzy
 msgid "Contiguous Area Selection"
 msgstr "&Интихоби Ҳамҳудуд"
+
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:106
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Select Contiguous Area"
+msgstr "Интихоби поккун"
 
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:148
 #: plugins/tools/selectiontools/kis_tool_select_similar.cc:139
@@ -10582,18 +10803,23 @@ msgstr "Поёнтар ҳозира %1"
 
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.h:67
 #, fuzzy
-msgid "Select a contiguous area of colors"
-msgstr "Интихоби поккун"
+msgid "Contiguous Selection Tool"
+msgstr "&Интихоби Ҳамҳудуд"
 
 #: plugins/tools/selectiontools/kis_tool_select_elliptical.cc:39
-#: plugins/tools/selectiontools/kis_tool_select_elliptical.cc:71
 msgid "Elliptical Selection"
 msgstr "Интихоби эллипсӣ"
 
+#: plugins/tools/selectiontools/kis_tool_select_elliptical.cc:71
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Select Ellipse"
+msgstr "&Ҷудокуни"
+
 #: plugins/tools/selectiontools/kis_tool_select_elliptical.h:53
 #, fuzzy
-msgid "Select an elliptical area"
-msgstr "Росткунҷа"
+msgid "Elliptical Selection Tool"
+msgstr "Интихоби эллипсӣ"
 
 #: plugins/tools/selectiontools/kis_tool_select_magnetic.cc:91
 #, fuzzy
@@ -10601,7 +10827,6 @@ msgid "Magnetic Selection"
 msgstr "Ҳаракат кардани Интихобот"
 
 #: plugins/tools/selectiontools/kis_tool_select_magnetic.cc:477
-#: plugins/tools/selectiontools/kis_tool_select_path.cc:97
 #: plugins/tools/selectiontools/kis_tool_select_path.h:53
 #, fuzzy
 #| msgid "Selection"
@@ -10648,54 +10873,86 @@ msgid "Red"
 msgstr "Сурх"
 
 #: plugins/tools/selectiontools/kis_tool_select_outline.cc:58
-#: plugins/tools/selectiontools/kis_tool_select_outline.cc:105
 #, fuzzy
 msgid "Outline Selection"
 msgstr "Ҳаракат кардани Интихобот"
 
-#: plugins/tools/selectiontools/kis_tool_select_outline.h:66
+#: plugins/tools/selectiontools/kis_tool_select_outline.cc:105
 #, fuzzy
-msgid "Select an area by its outline"
+msgctxt "(qtundo-format)"
+msgid "Select by Outline"
 msgstr "Интихоб"
 
+#: plugins/tools/selectiontools/kis_tool_select_outline.h:66
+#, fuzzy
+msgid "Outline Selection Tool"
+msgstr "Ҳаракат кардани Интихобот"
+
+#: plugins/tools/selectiontools/kis_tool_select_path.cc:97
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Select by Bezier Curve"
+msgstr "&Асбоби Пур кардани"
+
 #: plugins/tools/selectiontools/kis_tool_select_path.h:82
-msgid "Select an area of the image with path."
-msgstr ""
+#, fuzzy
+msgid "Bezier Curve Selection Tool"
+msgstr "Ҳаракат кардани Интихобот"
 
 #: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:42
-#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:89
 #, fuzzy
 msgid "Polygonal Selection"
 msgstr "&Интихоби Бисёркунҷа"
 
+#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:89
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Select Polygon"
+msgstr "Асбобҳои Интихобот"
+
 #: plugins/tools/selectiontools/kis_tool_select_polygonal.h:62
 #, fuzzy
-msgid "Select a polygonal region"
-msgstr "Тартиби рангҳо"
+msgid "Polygonal Selection Tool"
+msgstr "&Интихоби Бисёркунҷа"
 
 #: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:42
-#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:88
 msgid "Rectangular Selection"
 msgstr "Интихоби Росткунҷа"
 
-#: plugins/tools/selectiontools/kis_tool_select_rectangular.h:62
+#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:88
 #, fuzzy
-msgid "Select a rectangular area"
+msgctxt "(qtundo-format)"
+msgid "Select Rectangle"
 msgstr "Росткунҷа"
 
+#: plugins/tools/selectiontools/kis_tool_select_rectangular.h:62
+#, fuzzy
+msgid "Rectangular Selection Tool"
+msgstr "Интихоби Росткунҷа"
+
 #: plugins/tools/selectiontools/kis_tool_select_similar.cc:79
+#, fuzzy
+msgid "Similar Color Selection"
+msgstr "Ҳаракат кардани Интихобот"
+
 #: plugins/tools/selectiontools/kis_tool_select_similar.cc:120
 #, fuzzy
-msgid "Similar Selection"
-msgstr "Ҳаракат кардани Интихобот"
+msgctxt "(qtundo-format)"
+msgid "Select Similar Color"
+msgstr "Интихоби Ранги Замина..."
 
 #: plugins/tools/selectiontools/kis_tool_select_similar.h:47
 #, fuzzy
-msgid "Select similar colors"
-msgstr "Асбобҳои Интихобот"
+msgid "Similar Color Selection Tool"
+msgstr "Ҳаракат кардани Интихобот"
 
 #: plugins/tools/tool_crop/kis_tool_crop.h:201
 msgid "Crop the image to an area"
+msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgToolCrop)
+#: plugins/tools/tool_crop/wdg_tool_crop.ui:14
+msgid "Crop"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, label_horizPos)
@@ -10803,9 +11060,10 @@ msgid "Crosshair"
 msgstr "Фосила: "
 
 #: plugins/tools/tool_dyna/kis_tool_dyna.cpp:46
+#, fuzzy
 msgctxt "(qtundo-format)"
-msgid "Dyna"
-msgstr ""
+msgid "Dynamic Brush Stroke"
+msgstr "Дучанда кардан"
 
 #: plugins/tools/tool_dyna/kis_tool_dyna.cpp:288
 #, fuzzy
@@ -10814,8 +11072,8 @@ msgstr "росткунҷа"
 
 #: plugins/tools/tool_dyna/kis_tool_dyna.h:155
 #, fuzzy
-msgid "Paint with brushes using dynamic movements"
-msgstr "нуқтаҳо"
+msgid "Dynamic Brush Tool"
+msgstr "&Асбоби тоза кардани ҳаво"
 
 #: plugins/tools/tool_grid/kis_tool_grid.h:71
 msgid "Edit the grid"
@@ -10826,17 +11084,24 @@ msgstr ""
 msgid "Edit the perspective grid"
 msgstr "&Асбоби Хат задани"
 
+#: plugins/tools/tool_polygon/kis_tool_polygon.cc:63
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Draw Polygon"
+msgstr "&Асбоби Хат"
+
 #: plugins/tools/tool_polygon/kis_tool_polygon.h:51
-msgid "Draw a polygon. Shift-mouseclick ends the polygon."
+msgid "Polygon Tool. Shift-mouseclick ends the polygon."
 msgstr ""
 
 #: plugins/tools/tool_polyline/kis_tool_polyline.cc:67
 #, fuzzy
-msgid "Polyline"
+msgctxt "(qtundo-format)"
+msgid "Draw Polyline"
 msgstr "&Асбоби Хат"
 
 #: plugins/tools/tool_polyline/kis_tool_polyline.h:51
-msgid "Draw a polyline. Shift-mouseclick ends the polyline."
+msgid "Polyline Tool. Shift-mouseclick ends the polyline."
 msgstr ""
 
 #: plugins/tools/tool_text/kis_tool_text.h:60
@@ -10902,7 +11167,8 @@ msgstr ""
 
 #: plugins/tools/tool_transform2/strokes/transform_stroke_strategy.cpp:39
 #, fuzzy
-msgid "Transform Stroke"
+msgctxt "(qtundo-format)"
+msgid "Transform"
 msgstr "&Асбоби Хат задани"
 
 #. i18n: ectx: property (text), widget (QToolButton, freeTransformButton)
@@ -11065,54 +11331,64 @@ msgstr ""
 
 #: ui/actions/kis_selection_action_factories.cpp:102
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Select All"
 msgstr "&Ҷудокуни"
 
-#: ui/actions/kis_selection_action_factories.cpp:261
+#: ui/actions/kis_selection_action_factories.cpp:171
 #, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Flood Fill Layer"
+msgstr "Пур кардан"
+
+#: ui/actions/kis_selection_action_factories.cpp:262
+#, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Cut"
 msgstr "Тоза кардани худкор"
 
-#: ui/actions/kis_selection_action_factories.cpp:261
+#: ui/actions/kis_selection_action_factories.cpp:263
 #, fuzzy
 #| msgid "Copy Green"
+msgctxt "(qtundo-format)"
 msgid "Copy"
 msgstr "Сабзи нусха бардоштан"
 
-#: ui/actions/kis_selection_action_factories.cpp:285
+#: ui/actions/kis_selection_action_factories.cpp:287
 #, fuzzy
 #| msgid "Copy Red"
+msgctxt "(qtundo-format)"
 msgid "Copy Merged"
 msgstr "Кабуди нусха бардоштан"
 
-#: ui/actions/kis_selection_action_factories.cpp:295
+#: ui/actions/kis_selection_action_factories.cpp:297
 msgid "(pasted)"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:326
+#: ui/actions/kis_selection_action_factories.cpp:328
 #, fuzzy
 msgid "Pasted"
 msgstr "&Даровардани Асбоб"
 
-#: ui/actions/kis_selection_action_factories.cpp:373
-#: ui/kis_selection_manager.cc:225
+#: ui/actions/kis_selection_action_factories.cpp:375
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Convert to Vector Selection"
 msgstr "Ҳаракат кардани Интихобот"
-
-#: ui/canvas/kis_canvas_controller.cpp:164
-msgid "ON"
-msgstr ""
-
-#: ui/canvas/kis_canvas_controller.cpp:164
-msgid "OFF"
-msgstr ""
 
 #: ui/canvas/kis_canvas_controller.cpp:164
 #, fuzzy, kde-format
 msgctxt "floating message about mirroring"
 msgid "Horizontal mirroring: %1 "
 msgstr "Ҷоки уфуқӣ"
+
+#: ui/canvas/kis_canvas_controller.cpp:164
+msgid "OFF"
+msgstr ""
+
+#: ui/canvas/kis_canvas_controller.cpp:164
+msgid "ON"
+msgstr ""
 
 #: ui/canvas/kis_canvas_controller.cpp:183
 #, fuzzy, kde-format
@@ -11180,16 +11456,6 @@ msgstr "100"
 #: ui/canvas/kis_grid_manager.cpp:116
 msgid "64x64"
 msgstr ""
-
-#: ui/canvas/kis_infinity_manager.cpp:38
-#, fuzzy
-msgid "Expand into Infinity Decoration"
-msgstr "Тазод :"
-
-#: ui/canvas/kis_perspective_grid_manager.cpp:140
-#, fuzzy
-msgid "Perspective grid"
-msgstr "&Асбоби Хат задани"
 
 #: ui/canvas/kis_perspective_grid_manager.cpp:162
 #, fuzzy
@@ -12695,15 +12961,15 @@ msgid "Copy of %1"
 msgstr "Сабзи нусха бардоштан"
 
 #: ui/input/config/kis_edit_profiles_dialog.cpp:95
-msgid ""
-"You will lose all changes to any input profiles. Do you wish to continue?"
-msgstr ""
-
-#: ui/input/config/kis_edit_profiles_dialog.cpp:95
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Reset All Profiles"
 msgstr "Ҳосиятҳои Табақа"
+
+#: ui/input/config/kis_edit_profiles_dialog.cpp:95
+msgid ""
+"You will lose all changes to any input profiles. Do you wish to continue?"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (KPushButton, renameButton)
 #: ui/input/config/kis_edit_profiles_dialog.ui:17
@@ -12837,21 +13103,23 @@ msgstr ""
 
 #: ui/input/kis_alternate_invocation_action.cpp:43
 #, fuzzy
-msgid "Toggle Primary Mode"
+msgid "Primary Mode"
 msgstr "Занондан"
 
 #: ui/input/kis_alternate_invocation_action.cpp:44
 #, fuzzy
-msgid "Toggle Secondary Mode"
+msgid "Secondary Mode"
 msgstr "Занондан"
 
 #: ui/input/kis_alternate_invocation_action.cpp:46
-msgid "Pick Foreground Color from Current Node"
-msgstr ""
+#, fuzzy
+msgid "Pick Foreground Color from Current Layer"
+msgstr "Санҷидани Тасвир ба Табақаи Ҳозира"
 
 #: ui/input/kis_alternate_invocation_action.cpp:47
-msgid "Pick Background Color from Current Node"
-msgstr ""
+#, fuzzy
+msgid "Pick Background Color from Current Layer"
+msgstr "Санҷидани Тасвир ба Табақаи Ҳозира"
 
 #: ui/input/kis_alternate_invocation_action.cpp:49
 msgid "Pick Foreground Color from Merged Image"
@@ -12944,8 +13212,9 @@ msgid "The <i>Pan Canvas</i> action pans the canvas."
 msgstr ""
 
 #: ui/input/kis_pan_action.cpp:54
-msgid "Toggle Pan Mode"
-msgstr ""
+#, fuzzy
+msgid "Pan Mode"
+msgstr "Тазод :"
 
 #: ui/input/kis_pan_action.cpp:55
 #, fuzzy
@@ -12976,12 +13245,12 @@ msgstr ""
 
 #: ui/input/kis_rotate_canvas_action.cpp:47
 #, fuzzy
-msgid "Toggle Rotate Mode"
+msgid "Rotate Mode"
 msgstr "Занондан"
 
 #: ui/input/kis_rotate_canvas_action.cpp:48
 #, fuzzy
-msgid "Toggle Discrete Rotate Mode"
+msgid "Discrete Rotate Mode"
 msgstr "Занондан"
 
 #: ui/input/kis_rotate_canvas_action.cpp:49
@@ -13010,7 +13279,7 @@ msgstr ""
 
 #: ui/input/kis_select_layer_action.cpp:50
 #, fuzzy
-msgid "Toggle Select Layer Mode"
+msgid "Select Layer Mode"
 msgstr "Занондан"
 
 #: ui/input/kis_shortcut_configuration.cpp:234
@@ -13172,12 +13441,13 @@ msgid "The <i>Zoom Canvas</i> action zooms the canvas."
 msgstr ""
 
 #: ui/input/kis_zoom_action.cpp:116
-msgid "Toggle Zoom Mode"
-msgstr ""
+#, fuzzy
+msgid "Zoom Mode"
+msgstr "Тазод :"
 
 #: ui/input/kis_zoom_action.cpp:117
 #, fuzzy
-msgid "Toggle Discrete Zoom Mode"
+msgid "Discrete Zoom Mode"
 msgstr "Занондан"
 
 #: ui/input/kis_zoom_action.cpp:120
@@ -13219,11 +13489,11 @@ msgid "Bart Coppens"
 msgstr ""
 
 #: ui/kis_aboutdata.h:58
-msgid "David Revoy"
+msgid "Brush and palette set"
 msgstr ""
 
 #: ui/kis_aboutdata.h:58
-msgid "Brush and palette set"
+msgid "David Revoy"
 msgstr ""
 
 #: ui/kis_aboutdata.h:59
@@ -13337,11 +13607,11 @@ msgid "Michael Thaler"
 msgstr ""
 
 #: ui/kis_aboutdata.h:84
-msgid "Øyvind Kolås"
+msgid "Wiseguy"
 msgstr ""
 
 #: ui/kis_aboutdata.h:84
-msgid "Wiseguy"
+msgid "Øyvind Kolås"
 msgstr ""
 
 #: ui/kis_aboutdata.h:85
@@ -13359,11 +13629,11 @@ msgid "Vision master"
 msgstr "Намудор"
 
 #: ui/kis_aboutdata.h:87
-msgid "Ramon Miranda"
+msgid "Artist, Muses author, brush and preset creator"
 msgstr ""
 
 #: ui/kis_aboutdata.h:87
-msgid "Artist, Muses author, brush and preset creator"
+msgid "Ramon Miranda"
 msgstr ""
 
 #: ui/kis_aboutdata.h:88
@@ -13385,11 +13655,11 @@ msgid "Sven Langkamp"
 msgstr ""
 
 #: ui/kis_aboutdata.h:92
-msgid "Timothée Giet"
+msgid "BD Artist, brush presets and templates"
 msgstr ""
 
 #: ui/kis_aboutdata.h:92
-msgid "BD Artist, brush presets and templates"
+msgid "Timothée Giet"
 msgstr ""
 
 #: ui/kis_aboutdata.h:93
@@ -13449,6 +13719,14 @@ msgid "Decrease opacity"
 msgstr "Пешнамоиш"
 
 #: ui/kis_clipboard.cc:257
+msgid "As &Web"
+msgstr ""
+
+#: ui/kis_clipboard.cc:257
+msgid "As on &Monitor"
+msgstr ""
+
+#: ui/kis_clipboard.cc:257
 msgid "Pasting data from simple source"
 msgstr ""
 
@@ -13463,14 +13741,6 @@ msgid ""
 "you might want to import it as it looked on you monitor.\n"
 "\n"
 "How do you want to interpret these data?"
-msgstr ""
-
-#: ui/kis_clipboard.cc:257
-msgid "As &Web"
-msgstr ""
-
-#: ui/kis_clipboard.cc:257
-msgid "As on &Monitor"
 msgstr ""
 
 #: ui/kis_control_frame.cpp:80 ui/kis_control_frame.cpp:81
@@ -13599,7 +13869,7 @@ msgstr "&Сафед"
 msgid "Rename current layer"
 msgstr "Ранги равон аз нав кардан"
 
-#: ui/kis_layer_manager.cc:298 ui/kis_layer_manager.cc:778
+#: ui/kis_layer_manager.cc:298
 #, fuzzy
 msgid "Rasterize Layer"
 msgstr "&Нест кардани Табақа"
@@ -13623,11 +13893,12 @@ msgstr "Ҳосиятҳои Табақа"
 #: ui/kis_layer_manager.cc:403
 #, fuzzy
 #| msgid "Layer Properties"
-msgid "Generator Layer Properties"
+msgid "Fill Layer Properties"
 msgstr "Ҳосиятҳои Табақа"
 
 #: ui/kis_layer_manager.cc:484
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Convert to a Paint Layer"
 msgstr "Бардоштани табақаи равон"
 
@@ -13648,10 +13919,21 @@ msgstr "Табақаи Хато"
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
+#: ui/kis_layer_manager.cc:709
+#, fuzzy
+msgid "Flatten Image"
+msgstr "Дучанда кардани Тасвир"
+
 #: ui/kis_layer_manager.cc:710
 #, fuzzy
 msgid "&Flatten Image"
 msgstr "Дучанда кардани Тасвир"
+
+#: ui/kis_layer_manager.cc:778
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Rasterize Layer"
+msgstr "&Нест кардани Табақа"
 
 #: ui/kis_layer_manager.cc:814
 msgid "Convert Invisible Groups"
@@ -13671,6 +13953,7 @@ msgstr ""
 
 #: ui/kis_mask_manager.cc:177
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Add Selection Mask"
 msgstr "Интихоби поккун"
 
@@ -13680,6 +13963,7 @@ msgstr "Интихоб"
 
 #: ui/kis_mask_manager.cc:184
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Add Transparency Mask"
 msgstr "FG ба Шаффоф"
 
@@ -13690,6 +13974,7 @@ msgstr "FG ба Шаффоф"
 
 #: ui/kis_mask_manager.cc:190
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Add Filter Mask"
 msgstr "&Сафед"
 
@@ -13713,11 +13998,6 @@ msgstr "Дучанда кардан"
 #| msgid "Layer Properties"
 msgid "Filter Mask Properties"
 msgstr "Ҳосиятҳои Табақа"
-
-#: ui/kis_mirror_axis.cpp:91
-#, fuzzy
-msgid "Mirror Axis"
-msgstr "Табақа ба Тасвир"
 
 #: ui/kis_node_manager.cpp:194
 #, fuzzy
@@ -13779,12 +14059,12 @@ msgstr "&Сафед"
 
 #: ui/kis_node_manager.cpp:246
 #, fuzzy
-msgid "&Generated Layer..."
-msgstr "Масштаби Табақа..."
+msgid "&Fill Layer..."
+msgstr "&Сафед"
 
 #: ui/kis_node_manager.cpp:249
 #, fuzzy
-msgid "&File Layer"
+msgid "&File Layer..."
 msgstr "&Сафед"
 
 #: ui/kis_node_manager.cpp:252
@@ -13815,7 +14095,7 @@ msgstr "Интихоби поккун"
 
 #: ui/kis_node_manager.cpp:270
 #, fuzzy
-msgid "to &Filter Mask"
+msgid "to &Filter Mask..."
 msgstr "&Сафед"
 
 #: ui/kis_node_manager.cpp:273
@@ -13830,44 +14110,45 @@ msgstr "&Сафед"
 
 #: ui/kis_node_manager.cpp:464
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Convert to a Selection Mask"
 msgstr "Ҳаракат кардани Интихобот"
 
 #: ui/kis_node_manager.cpp:664
 #, fuzzy
 #| msgid "Remove Layer"
+msgctxt "(qtundo-format)"
 msgid "Remove Last Layer"
 msgstr "Нест кардани Табақа"
 
 #: ui/kis_node_manager.cpp:683
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Mirror Layer X"
 msgstr "Фуровардани Табақа"
 
 #: ui/kis_node_manager.cpp:685
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Mirror Mask X"
 msgstr "Фуровардани Табақа"
 
 #: ui/kis_node_manager.cpp:696
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Mirror Layer Y"
 msgstr "Фуровардани Табақа"
 
 #: ui/kis_node_manager.cpp:698
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Mirror Mask Y"
 msgstr "Фуровардани Табақа"
 
 #: ui/kis_node_manager.cpp:819
-#, fuzzy
-#| msgid "Cap&ture mode:"
-msgid "Export Node"
-msgstr "Ҳолати асирӣ:"
-
-#: ui/kis_painting_assistants_decoration.cpp:41
-msgid "Painting assistants"
-msgstr ""
+#, fuzzy, kde-format
+msgid "Export \"%1\""
+msgstr "Содироти Табақа"
 
 #: ui/kis_painting_assistants_decoration.cpp:107
 msgid "Show Painting Assistants"
@@ -13961,11 +14242,6 @@ msgstr ""
 msgid "Select Favorite Presets..."
 msgstr "&Сафед"
 
-#: ui/kis_paintop_option.cpp:26
-#, fuzzy
-msgid "Common"
-msgstr "CMYK Ранг"
-
 #: ui/kis_paintop_option.cpp:36
 #, fuzzy
 msgid "Texture"
@@ -14021,11 +14297,6 @@ msgstr ""
 #| msgid "Layer Error"
 msgid "Installation error"
 msgstr "Табақаи Хато"
-
-#: ui/kis_selection_decoration.cc:45
-#, fuzzy
-msgid "Selection decoration"
-msgstr "Пур кардани Интихоб."
 
 #: ui/kis_selection_manager.cc:137
 #, fuzzy
@@ -14090,13 +14361,19 @@ msgstr "Пур кардани Интихоб."
 msgid "Size Canvas to Size of Selection"
 msgstr "Санҷидани Тасвир ба Табақаи Ҳозира"
 
+#: ui/kis_selection_manager.cc:225
+#, fuzzy
+msgid "Convert to Vector Selection"
+msgstr "Ҳаракат кардани Интихобот"
+
 #: ui/kis_selection_manager.cc:500
 #, fuzzy
 msgid "Stroked Shapes"
 msgstr "&Интихоби тоза кардан"
 
-#: ui/kis_selection_manager.cc:502 ui/kis_selection_manager.cc:505
+#: ui/kis_selection_manager.cc:502
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Stroke Shapes"
 msgstr "&Интихоби тоза кардан"
 
@@ -14468,6 +14745,12 @@ msgstr "&Ранги пешзамина"
 msgid "Reset Foreground and Background Color"
 msgstr "&Ранги пешзамина"
 
+#: ui/tool/kis_tool.cc:545
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Clear"
+msgstr "Тоза кардан"
+
 #: ui/tool/kis_tool.cc:574
 #, fuzzy
 msgid "No options"
@@ -14495,10 +14778,6 @@ msgstr ""
 msgid "Local selection is locked."
 msgstr "Ҳаракат кардани Интихобот"
 
-#: ui/tool/kis_tool_freehand_helper.cpp:209
-msgid "Freehand Stroke"
-msgstr ""
-
 #: ui/tool/kis_tool_paint.cc:105
 #, fuzzy
 msgid "Increase Brush Size"
@@ -14508,6 +14787,12 @@ msgstr "&Интихоби тоза кардан"
 #, fuzzy
 msgid "Decrease Brush Size"
 msgstr "Тоза карданиҳо"
+
+#: ui/tool/strokes/kis_filter_stroke_strategy.cpp:44
+#, fuzzy, kde-format
+msgctxt "(qtundo-format)"
+msgid "Filter \"%1\""
+msgstr "&Сафед"
 
 #: ui/widgets/kis_channelflags_widget.cpp:39
 msgid ""
@@ -14775,6 +15060,141 @@ msgid "&Close"
 msgstr "Ранг кардан"
 
 #, fuzzy
+#~ msgid "Gradient Fill"
+#~ msgstr "Градиент:"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Node Composite Mode"
+#~ msgstr "Ҳолатро ташкил кардан:"
+
+#, fuzzy
+#~| msgid "Copy Opacity"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Node Opacity"
+#~ msgstr "Норавшании нусха бардоштан"
+
+#~ msgid "Resize Image"
+#~ msgstr "Санҷидаи Тасвир"
+
+#, fuzzy
+#~ msgid "Crop Node"
+#~ msgstr "&Асбоби Пур кардани"
+
+#, fuzzy
+#~ msgid "Ascension"
+#~ msgstr "&Андозаҳои Pixel:"
+
+#, fuzzy
+#~ msgid "Declination"
+#~ msgstr "Қатъ кардан"
+
+#, fuzzy
+#~ msgid "Invert Texture:"
+#~ msgstr "Намунаҳо"
+
+#, fuzzy
+#~| msgid "Brush"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Brush"
+#~ msgstr "Тоза кардан"
+
+#, fuzzy
+#~ msgid "Paint with brushes"
+#~ msgstr "нуқтаҳо"
+
+#, fuzzy
+#~ msgctxt "a straight drawn line"
+#~ msgid "Line"
+#~ msgstr "&Хатти"
+
+#, fuzzy
+#~ msgid "Paint with multibrushes"
+#~ msgstr "нуқтаҳо"
+
+#, fuzzy
+#~ msgid "Move Selection Stroke"
+#~ msgstr "Интихоб"
+
+#, fuzzy
+#~ msgid "Move Stroke"
+#~ msgstr "Нағз"
+
+#, fuzzy
+#~ msgid "Select a contiguous area of colors"
+#~ msgstr "Интихоби поккун"
+
+#, fuzzy
+#~ msgid "Select an elliptical area"
+#~ msgstr "Росткунҷа"
+
+#, fuzzy
+#~ msgid "Select an area by its outline"
+#~ msgstr "Интихоб"
+
+#, fuzzy
+#~ msgid "Select a polygonal region"
+#~ msgstr "Тартиби рангҳо"
+
+#, fuzzy
+#~ msgid "Select similar colors"
+#~ msgstr "Асбобҳои Интихобот"
+
+#, fuzzy
+#~ msgid "Paint with brushes using dynamic movements"
+#~ msgstr "нуқтаҳо"
+
+#, fuzzy
+#~ msgid "Transform Stroke"
+#~ msgstr "&Асбоби Хат задани"
+
+#, fuzzy
+#~ msgid "Expand into Infinity Decoration"
+#~ msgstr "Тазод :"
+
+#, fuzzy
+#~ msgid "Perspective grid"
+#~ msgstr "&Асбоби Хат задани"
+
+#, fuzzy
+#~ msgid "Toggle Rotate Mode"
+#~ msgstr "Занондан"
+
+#, fuzzy
+#~| msgid "Layer Properties"
+#~ msgid "Generator Layer Properties"
+#~ msgstr "Ҳосиятҳои Табақа"
+
+#, fuzzy
+#~ msgid "Mirror Axis"
+#~ msgstr "Табақа ба Тасвир"
+
+#, fuzzy
+#~ msgid "&Generated Layer..."
+#~ msgstr "Масштаби Табақа..."
+
+#, fuzzy
+#~ msgid "&File Layer"
+#~ msgstr "&Сафед"
+
+#, fuzzy
+#~ msgid "to &Filter Mask"
+#~ msgstr "&Сафед"
+
+#, fuzzy
+#~| msgid "Cap&ture mode:"
+#~ msgid "Export Node"
+#~ msgstr "Ҳолати асирӣ:"
+
+#, fuzzy
+#~ msgid "Common"
+#~ msgstr "CMYK Ранг"
+
+#, fuzzy
+#~ msgid "Selection decoration"
+#~ msgstr "Пур кардани Интихоб."
+
+#, fuzzy
 #~ msgid "Form"
 #~ msgstr "&Сафед"
 
@@ -14874,10 +15294,6 @@ msgstr "Ранг кардан"
 
 #~ msgid "Autobrush"
 #~ msgstr "Тоза кардани худкор"
-
-#, fuzzy
-#~ msgid "Predefined Brushes"
-#~ msgstr "Интихоби тоза кардан"
 
 #, fuzzy
 #~ msgid "Custom Brush"
@@ -15024,10 +15440,6 @@ msgstr "Ранг кардан"
 #, fuzzy
 #~ msgid "Add to Palette"
 #~ msgstr "Намунаҳо"
-
-#, fuzzy
-#~ msgid "Rotate Node"
-#~ msgstr "Занондан"
 
 #, fuzzy
 #~ msgid "File size:"
@@ -15412,11 +15824,6 @@ msgstr "Ранг кардан"
 #~ msgstr "Тазод :"
 
 #, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Transform"
-#~ msgstr "&Асбоби Хат задани"
-
-#, fuzzy
 #~| msgid "Selection"
 #~ msgid "Selection "
 #~ msgstr "Интихоб"
@@ -15643,10 +16050,6 @@ msgstr "Ранг кардан"
 #~ msgstr "&Асбоби Пур кардани"
 
 #, fuzzy
-#~ msgid "Opacity Curve"
-#~ msgstr "Ношаффофӣ: "
-
-#, fuzzy
 #~ msgid "Darken Curve"
 #~ msgstr "Торик кардан"
 
@@ -15798,16 +16201,8 @@ msgstr "Ранг кардан"
 #~ msgstr "&Интихоби тоза кардан"
 
 #, fuzzy
-#~ msgid "Bezier Curve"
-#~ msgstr "&Асбоби Пур кардани"
-
-#, fuzzy
 #~ msgid "Bezier Painting Tool"
 #~ msgstr "&Асбоби Пур кардани"
-
-#, fuzzy
-#~ msgid "Bezier Selection Tool"
-#~ msgstr "Ҳаракат кардани Интихобот"
 
 #, fuzzy
 #~ msgid "&Bezier Path"
@@ -16606,14 +17001,6 @@ msgstr "Ранг кардан"
 #~ msgstr "&Асбоби Пур кардани"
 
 #, fuzzy
-#~ msgid "Ellipse tool"
-#~ msgstr "Эллипсӣ"
-
-#, fuzzy
-#~ msgid "Line tool"
-#~ msgstr "&Асбоби Хат"
-
-#, fuzzy
 #~ msgid "Polyline tool"
 #~ msgstr "&Асбоби Хат"
 
@@ -16677,10 +17064,6 @@ msgstr "Ранг кардан"
 #, fuzzy
 #~ msgid "Select with curves"
 #~ msgstr "Асбобҳои Интихобот"
-
-#, fuzzy
-#~ msgid "Select Contiguous Area"
-#~ msgstr "Интихоби поккун"
 
 #, fuzzy
 #~ msgid "GRAY/Alpha16 Histogram"
@@ -17323,10 +17706,6 @@ msgstr "Ранг кардан"
 #~ msgstr "&Филтр"
 
 #, fuzzy
-#~ msgid "Select Outline"
-#~ msgstr "Интихоб"
-
-#, fuzzy
 #~ msgid "&Outline Selection"
 #~ msgstr "Ҳаракат кардани Интихобот"
 
@@ -17355,20 +17734,12 @@ msgstr "Ранг кардан"
 #~ msgstr "Интихоби тоза кардан"
 
 #, fuzzy
-#~ msgid "Select Polygonal"
-#~ msgstr "Асбобҳои Интихобот"
-
-#, fuzzy
 #~ msgid "&Polygonal Selection"
 #~ msgstr "&Интихоби Бисёркунҷа"
 
 #, fuzzy
 #~ msgid "Select a polygonal area"
 #~ msgstr "Тартиби рангҳо"
-
-#, fuzzy
-#~ msgid "Select Similar Colors"
-#~ msgstr "Интихоби Ранги Замина..."
 
 #, fuzzy
 #~ msgid "&Similar Selection"
@@ -17409,10 +17780,6 @@ msgstr "Ранг кардан"
 #, fuzzy
 #~ msgid "&Elliptical Selection"
 #~ msgstr "Интихоби эллипсӣ"
-
-#, fuzzy
-#~ msgid "Rectangular Select Tool"
-#~ msgstr "Интихоби Росткунҷа"
 
 #, fuzzy
 #~ msgid "&Rectangular Selection"
@@ -17643,10 +18010,6 @@ msgstr "Ранг кардан"
 #~ msgstr "&Хатти"
 
 #, fuzzy
-#~ msgid "Rectangle Tool"
-#~ msgstr "&Асбоби Росткунҷа"
-
-#, fuzzy
 #~ msgid "&Color Picker"
 #~ msgstr "Ранги ҷамъкунанда"
 
@@ -17671,10 +18034,6 @@ msgstr "Ранг кардан"
 #~ msgstr "Градиент:"
 
 #, fuzzy
-#~ msgid "Brush Tool"
-#~ msgstr "&Асбоби тоза кардани ҳаво"
-
-#, fuzzy
 #~ msgid "Fill Tool"
 #~ msgstr "&Асбоби Пур кардани"
 
@@ -17695,20 +18054,8 @@ msgstr "Ранг кардан"
 #~ msgstr "&Асбоби Хат задани"
 
 #, fuzzy
-#~ msgid "Polygonal Select Tool"
-#~ msgstr "&Интихоби Бисёркунҷа"
-
-#, fuzzy
-#~ msgid "Contiguous Select Tool"
-#~ msgstr "&Интихоби Ҳамҳудуд"
-
-#, fuzzy
 #~ msgid "Select Outline tool"
 #~ msgstr "Асбобҳои Интихобот"
-
-#, fuzzy
-#~ msgid "Elliptical Select Tool"
-#~ msgstr "Интихоби эллипсӣ"
 
 #~ msgid "&Variations..."
 #~ msgstr "&Вариасияҳо..."
