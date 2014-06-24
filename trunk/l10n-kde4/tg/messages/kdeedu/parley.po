@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kvoctrain\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-19 01:39+0000\n"
+"POT-Creation-Date: 2014-06-24 01:41+0000\n"
 "PO-Revision-Date: 2005-09-23 17:17+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -750,14 +750,14 @@ msgstr "&Артиклҳо"
 
 #. i18n: ectx: property (text), widget (QPushButton, makeAdjectiveButton)
 #: src/editor/comparisonwidget.ui:116 src/editor/inflectionwidget.cpp:46
-#: src/parleydocument.cpp:330 src/vocabulary/wordtypeview.cpp:106
+#: src/parleydocument.cpp:500 src/vocabulary/wordtypeview.cpp:106
 #, fuzzy
 #| msgid "Acti&ve"
 msgid "Adjective"
 msgstr "&Фаъол"
 
 #. i18n: ectx: property (text), widget (QPushButton, makeAdverbButton)
-#: src/editor/comparisonwidget.ui:123 src/parleydocument.cpp:334
+#: src/editor/comparisonwidget.ui:123 src/parleydocument.cpp:504
 #: src/vocabulary/wordtypeview.cpp:114
 msgid "Adverb"
 msgstr "Зарф"
@@ -873,7 +873,7 @@ msgstr "Ҷамъ"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: src/editor/declensionwidget.cpp:167 src/editor/declensionwidget.ui:185
-#: src/editor/inflectionwidget.cpp:121 src/parleydocument.cpp:316
+#: src/editor/inflectionwidget.cpp:121 src/parleydocument.cpp:486
 #, fuzzy
 #| msgid "&Male:"
 msgid "Masculine"
@@ -881,7 +881,7 @@ msgstr "&Мардона:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: src/editor/declensionwidget.cpp:168 src/editor/declensionwidget.ui:271
-#: src/editor/inflectionwidget.cpp:123 src/parleydocument.cpp:319
+#: src/editor/inflectionwidget.cpp:123 src/parleydocument.cpp:489
 #, fuzzy
 #| msgid "Definite"
 msgid "Feminine"
@@ -889,7 +889,7 @@ msgstr "Муайян"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: src/editor/declensionwidget.cpp:169 src/editor/declensionwidget.ui:357
-#: src/editor/inflectionwidget.cpp:122 src/parleydocument.cpp:322
+#: src/editor/inflectionwidget.cpp:122 src/parleydocument.cpp:492
 #, fuzzy
 #| msgid "Neu&tral:"
 msgid "Neuter"
@@ -1169,14 +1169,14 @@ msgstr ""
 msgid "&Reset Confidence Levels"
 msgstr ""
 
-#: src/editor/inflectionwidget.cpp:36 src/parleydocument.cpp:326
+#: src/editor/inflectionwidget.cpp:36 src/parleydocument.cpp:496
 #: src/vocabulary/wordtypeview.cpp:123
 #, fuzzy
 #| msgid "Verb"
 msgid "Verb"
 msgstr "Веъл"
 
-#: src/editor/inflectionwidget.cpp:41 src/parleydocument.cpp:312
+#: src/editor/inflectionwidget.cpp:41 src/parleydocument.cpp:482
 #: src/vocabulary/wordtypeview.cpp:74
 msgid "Noun"
 msgstr "Сифат"
@@ -1357,8 +1357,8 @@ msgstr "Ҷумлаи мисол"
 msgid "Could not write to file \"%1\""
 msgstr "Хонда натавонист"
 
-#: src/export/exportdialog.cpp:110 src/parleydocument.cpp:238
-#: src/parleymainwindow.cpp:138
+#: src/export/exportdialog.cpp:110 src/parleydocument.cpp:106
+#: src/parleydocument.cpp:323 src/parleymainwindow.cpp:138
 #, fuzzy
 msgid "Untitled"
 msgstr "сарлавҳа"
@@ -1716,56 +1716,87 @@ msgstr "Кушодани файли луғати мисол"
 msgid "Share the current vocabulary collection with other users"
 msgstr "Нигоҳдоштани ҳуҷҷати равон"
 
-#: src/parleydocument.cpp:126 src/parleydocument.cpp:415
+#: src/parleydocument.cpp:140 src/parleydocument.cpp:585
 #, fuzzy, kde-format
 #| msgid "Edit Properties for Original"
 msgctxt "@title:window document properties"
 msgid "Properties for %1"
 msgstr "Муҳаррири хусусиятҳо барои ҳақиқӣ"
 
-#: src/parleydocument.cpp:160
+#: src/parleydocument.cpp:174
 #, fuzzy
 #| msgid "Article"
 msgid "Open in practice &mode"
 msgstr "Артикл"
 
-#: src/parleydocument.cpp:163
+#: src/parleydocument.cpp:177
 #, fuzzy
 msgid "Open Vocabulary Collection"
 msgstr "Кушодани файли луғати мисол"
 
-#: src/parleydocument.cpp:195
-#, fuzzy, kde-format
-#| msgid "Could not read "
-msgid "Could not read collection from \"%1\""
-msgstr "Хонда натавонист"
+#: src/parleydocument.cpp:218
+msgid ""
+"The vocabulary collection is locked by another process.  You can open the "
+"file if you take over the lock, but you will lose any changes from the other "
+"process.\n"
+"\n"
+"Do you want to take over the lock?\n"
+msgstr ""
 
-#: src/parleydocument.cpp:195
+#: src/parleydocument.cpp:218
+msgid "Take Over Lock"
+msgstr ""
+
+#: src/parleydocument.cpp:248
+#, kde-format
+msgid "Opening collection \"%1\" resulted in an error: %2"
+msgstr ""
+
+#: src/parleydocument.cpp:249
 #, fuzzy
 msgctxt "@title:window"
 msgid "Open Collection"
 msgstr "Кушодани файли луғати мисол"
 
-#: src/parleydocument.cpp:229
+#: src/parleydocument.cpp:281
+msgid ""
+"Vocabulary is modified.\n"
+"\n"
+"Save file before exit?\n"
+msgstr ""
+"Луғат дигаргун шуд.\n"
+"\n"
+"Пеш аз баромадан файлро нигоҳ кунам?\n"
+
+#: src/parleydocument.cpp:314
 #, fuzzy
 msgid "Open Downloaded Vocabulary Collection"
 msgstr "Кушодани луғат"
 
-#: src/parleydocument.cpp:254 src/parleydocument.cpp:304
+#: src/parleydocument.cpp:353 src/parleydocument.cpp:436
+#, kde-format
+msgid ""
+"File \"%1\" is locked by another process.  You can save to the file if you "
+"take over the lock, but you will lose any changes from the other process.\n"
+"\n"
+"Do you want to take over the lock?\n"
+msgstr ""
+
+#: src/parleydocument.cpp:382 src/parleydocument.cpp:471
 #, kde-format
 msgid "Writing file \"%1\" resulted in an error: %2"
 msgstr ""
 
-#: src/parleydocument.cpp:255 src/parleydocument.cpp:305
+#: src/parleydocument.cpp:383 src/parleydocument.cpp:472
 msgctxt "@title:window"
 msgid "Save File"
 msgstr ""
 
-#: src/parleydocument.cpp:273
+#: src/parleydocument.cpp:401
 msgid "Save Vocabulary As"
 msgstr "Нигоҳ доштани луғат монанди"
 
-#: src/parleydocument.cpp:282
+#: src/parleydocument.cpp:410
 #, fuzzy, kde-format
 msgid ""
 "<qt>The file<p><b>%1</b></p>already exists. Do you want to overwrite it?</qt>"
@@ -1773,44 +1804,49 @@ msgstr ""
 "Файли интихобшуда боз мавҷуд аст.\n"
 "Шумо мехоҳед ин файл аз сари нав нависед\"%1\"?"
 
-#: src/parleydocument.cpp:288
+#: src/parleydocument.cpp:416
 #, fuzzy, kde-format
 #| msgid "Saving %1"
 msgctxt "@info:status saving a file"
 msgid "Saving %1"
 msgstr "Нигоҳ доштани %1"
 
-#: src/parleydocument.cpp:338 src/vocabulary/wordtypeview.cpp:131
+#: src/parleydocument.cpp:508 src/vocabulary/wordtypeview.cpp:131
 #, fuzzy
 msgid "Conjunction"
 msgstr "Тасрифкунӣ"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, licenseComboBox)
-#: src/parleydocument.cpp:351 src/settings/documentproperties.ui:221
+#: src/parleydocument.cpp:521 src/settings/documentproperties.ui:221
 msgid "Public Domain"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (KComboBox, categoryComboBox)
 #. i18n: ectx: property (title), widget (QGroupBox, languageGroupBox)
-#: src/parleydocument.cpp:352 src/settings/documentproperties.ui:167
+#: src/parleydocument.cpp:522 src/settings/documentproperties.ui:167
 #: src/settings/documentproperties.ui:237
 msgid "Languages"
 msgstr "Забонҳо"
 
-#: src/parleydocument.cpp:360
+#: src/parleydocument.cpp:530
 #, fuzzy
 #| msgid "&Append Language"
 msgid "A Second Language"
 msgstr "&Иловаи забон"
 
-#: src/parleydocument.cpp:363
+#: src/parleydocument.cpp:533
 #, fuzzy
 msgid "Lesson 1"
 msgstr "Сохтани дарс"
 
-#: src/parleydocument.cpp:402
+#: src/parleydocument.cpp:572 src/parleydocument.cpp:612
 #, fuzzy, kde-format
 msgid "Could not open vocabulary collection \"%1\""
+msgstr "Кушодани файли луғати мисол"
+
+#: src/parleydocument.cpp:606 src/parleydocument.cpp:619
+#, fuzzy, kde-format
+msgid "Could not save vocabulary collection \"%1\""
 msgstr "Кушодани файли луғати мисол"
 
 #: src/parleymainwindow.cpp:176
@@ -1824,16 +1860,6 @@ msgstr ""
 #| msgid "Languages"
 msgid "Select languages"
 msgstr "Забонҳо"
-
-#: src/parleymainwindow.cpp:199
-msgid ""
-"Vocabulary is modified.\n"
-"\n"
-"Save file before exit?\n"
-msgstr ""
-"Луғат дигаргун шуд.\n"
-"\n"
-"Пеш аз баромадан файлро нигоҳ кунам?\n"
 
 #. i18n: ectx: Menu (help)
 #: src/parleyui.rc:19
@@ -3625,29 +3651,29 @@ msgstr ""
 msgid "Alt+0"
 msgstr ""
 
-#: src/statistics/lessonstatistics.cpp:141
+#: src/statistics/lessonstatistics.cpp:159
 msgctxt "adjective, The word has been properly and fully learned by the user"
 msgid "Fully learned"
 msgstr ""
 
-#: src/statistics/lessonstatistics.cpp:142
+#: src/statistics/lessonstatistics.cpp:160
 #, fuzzy
 msgctxt "adjective, The word has not even been practiced once by the user"
 msgid "Not practiced"
 msgstr "Бе савол"
 
-#: src/statistics/lessonstatistics.cpp:182
-#: src/statistics/lessonstatistics.cpp:184
+#: src/statistics/lessonstatistics.cpp:200
+#: src/statistics/lessonstatistics.cpp:202
 #, fuzzy
 msgid "Remove confidence levels from this unit"
 msgstr "Мақола ва дигар навиштаҳоро аз луғат бароварда шавад"
 
-#: src/statistics/lessonstatistics.cpp:192
+#: src/statistics/lessonstatistics.cpp:210
 #, fuzzy
 msgid "Remove confidence levels from this unit and all sub-units"
 msgstr "Мақола ва дигар навиштаҳоро аз луғат бароварда шавад"
 
-#: src/statistics/lessonstatistics.cpp:194
+#: src/statistics/lessonstatistics.cpp:212
 #, fuzzy
 msgid "Remove confidence level from this unit and all sub-units"
 msgstr "Мақола ва дигар навиштаҳоро аз луғат бароварда шавад"
@@ -4260,6 +4286,11 @@ msgid ""
 "<a href=\"http://edu.kde.org/contrib/kvtml2.php\">http://edu.kde.org/contrib/"
 "kvtml2.php</a>.</p>\n"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Could not read "
+#~ msgid "Could not read collection from \"%1\""
+#~ msgstr "Хонда натавонист"
 
 #, fuzzy
 #~ msgid "Practice Again"
