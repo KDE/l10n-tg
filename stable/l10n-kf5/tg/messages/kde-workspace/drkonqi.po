@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: drkonqi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-07-17 08:30+0000\n"
+"POT-Creation-Date: 2014-08-07 08:45+0000\n"
 "PO-Revision-Date: 2012-01-04 21:41+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <http://www.kde.tj>\n"
@@ -782,6 +782,21 @@ msgctxt "@title:window"
 msgid "We need more information"
 msgstr "Бештар маълумот лозим аст"
 
+#: bugzillaintegration/reportassistantpages_bugzilla.cpp:609
+msgctxt "@info:tooltip examples of good bug report titles"
+msgid ""
+"<strong>Examples of good titles:</strong><nl />\"Plasma crashed after adding "
+"the Notes widget and writing on it\"<nl />\"Konqueror crashed when accessing "
+"the Facebook application 'X'\"<nl />\"Kopete suddenly closed after resuming "
+"the computer and talking to a MSN buddy\"<nl />\"Kate closed while editing a "
+"log file and pressing the Delete key a couple of times\""
+msgstr ""
+"<strong>Examples of good titles:</strong><nl />\"Plasma crashed after adding "
+"the Notes widget and writing on it\"<nl />\"Konqueror crashed when accessing "
+"the Facebook application 'X'\"<nl />\"Kopete suddenly closed after resuming "
+"the computer and talking to a MSN buddy\"<nl />\"Kate closed while editing a "
+"log file and pressing the Delete key a couple of times\""
+
 #: bugzillaintegration/reportassistantpages_bugzilla.cpp:620
 msgctxt "@info:tooltip help and examples of good bug descriptions"
 msgid "Describe in as much detail as possible the crash circumstances:"
@@ -1246,6 +1261,49 @@ msgctxt "@info bug status"
 msgid "Temporarily closed, because of a lack of information"
 msgstr "Аз сабаби кам будани маълумот муваққатан баста шуд"
 
+#: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:760
+msgid ""
+"<p><note>The bug report's title is often written by its reporter and may not "
+"reflect the bug's nature, root cause or other visible symptoms you could use "
+"to compare to your crash. Please read the complete report and all the "
+"comments below.</note></p>"
+msgstr ""
+"<p><note>Заголовки сообщений об ошибках часто написаны их авторами и могут "
+"не отражать суть ошибки. Вы можете использовать для сравнения с вашим сбоем "
+"причину ошибки или другие видимые признаки. Пожалуйста, прочитайте полностью "
+"сообщение об ошибке и все комментарии к нему.</note></p>"
+
+#: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:766
+#, kde-format
+msgid ""
+"<p><note>This bug report has %1 duplicate report. That means this is "
+"probably a <strong>common crash</strong>. <i>Please consider only adding a "
+"comment or a note if you can provide new valuable information which was not "
+"already mentioned.</i></note></p>"
+msgid_plural ""
+"<p><note>This bug report has %1 duplicate reports. That means this is "
+"probably a <strong>common crash</strong>. <i>Please consider only adding a "
+"comment or a note if you can provide new valuable information which was not "
+"already mentioned.</i></note></p>"
+msgstr[0] ""
+"<p><note>Это сообщение об ошибке имеет %1 дублирующее сообщение. Это значит, "
+"что, возможно, это <strong>частый сбой</strong>. <i>Пожалуйста, добавляйте "
+"комментарии или замечании только если вы можете предоставить новую полезную "
+"информацию, которая ещё не упоминалась.</i></note></p>"
+msgstr[1] ""
+"<p><note>This bug report has %1 duplicate reports. That means this is "
+"probably a <strong>common crash</strong>. <i>Please consider only adding a "
+"comment or a note if you can provide new valuable information which was not "
+"already mentioned.</i></note></p>"
+
+#: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:783
+msgid ""
+"<p><note>This bug report is not about a crash or about any other critical "
+"bug.</note></p>"
+msgstr ""
+"<p><note>Ин ҳисобот ягон маълумоте дар бораи шикастагӣ ё дигар хатоҳои "
+"хатарнок дар бар намегирад.</note></p> "
+
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:790
 #, kde-format
 msgctxt "@info bug report title (quoted)"
@@ -1301,6 +1359,11 @@ msgctxt "@action:button continue with the selected option and close the dialog"
 msgid "Continue"
 msgstr "Давом диҳед"
 
+#: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:906
+#, kde-format
+msgid "You are going to mark your crash as related to bug <numid>%1</numid>"
+msgstr "Шумо ҳисоботи худро ҳамчун хатои <numid>%1</numid> қайд карданӣ ҳастед"
+
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:919
 #, kde-format
 msgctxt "@info"
@@ -1311,406 +1374,6 @@ msgstr ""
 "Ҳисобот пӯшида шудааст аз сабаби он, ки %1. <i>Агар корношоямӣ чунин бошад, "
 "илова кардани маълумот фоидабахш нест ва аз корбарон вақти бисёрро талаб "
 "мекунад.</i>"
-
-#. i18n: ectx: property (text), widget (QLabel, m_rememberLabel)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:17
-msgctxt "@label question"
-msgid ""
-"<strong>Do you remember what you were doing prior to the crash?</strong>"
-msgstr "<strong>Шумо дар ёд доред, ки чӣ кор кардед пеш аз шикастагӣ?</strong>"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_rememberCrashSituationYes)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:44
-msgctxt ""
-"@option:radio \"yes\" to the question \"do you remember what were you doing "
-"prior to the crash?\""
-msgid "Yes"
-msgstr "Ҳа"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_rememberCrashSituationNo)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:54
-msgctxt ""
-"@option:radio \"No\" to the question \"do you remember what were you doing "
-"prior to the crash?\""
-msgid "No"
-msgstr "Не"
-
-#. i18n: ectx: property (text), widget (QLabel, m_reproducibleLabel)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:90
-msgctxt "@label question"
-msgid ""
-"<strong>Does the application crash again if you repeat the same situation?</"
-"strong>"
-msgstr ""
-"<strong>Агар шумо ин амалҳоро такрор кунед барнома аз нав ногаҳон хомӯш "
-"мешавад?</strong>"
-
-#. i18n: ectx: property (toolTip), widget (KComboBox, m_reproducibleBox)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:118
-msgctxt "@info:tooltip"
-msgid ""
-"If you tried to repeat the situation, select how often the application "
-"crashes"
-msgstr ""
-"Агар шумо ин амалро такрор кардед, лутфан интихоб кунед, ки чанд бор "
-"шикастагӣ рух дод"
-
-#. i18n: ectx: property (whatsThis), widget (KComboBox, m_reproducibleBox)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:121
-msgctxt "@info:whatsthis"
-msgid ""
-"If you tried to repeat the situation, select how often the application "
-"crashes"
-msgstr ""
-"Агар шумо ин амалро такрор кардед, лутфан интихоб кунед, ки чанд бор "
-"шикастагӣ рух дод"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, m_reproducibleBox)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:125
-msgctxt "@item:inlistbox  user didn't tried to repeat the crash situation"
-msgid "I did not try again"
-msgstr "Ман боз кӯшиш накардам"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, m_reproducibleBox)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:130
-msgctxt "@item:inlistbox the crash cannot be reproduce. reproduciblity->never"
-msgid "Never"
-msgstr "Ҳеҷ гоҳ"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, m_reproducibleBox)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:135
-msgctxt "@item:inlistbox the bug can be reproduced sometimes"
-msgid "Sometimes"
-msgstr "Баъзе вақтҳо"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, m_reproducibleBox)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:140
-msgctxt "@item:inlistbox the bug can be reproduced every time"
-msgid "Every time"
-msgstr "Ҳамеша"
-
-#. i18n: ectx: property (text), widget (QLabel, m_informationLabel)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:182
-msgctxt "@label question"
-msgid ""
-"<strong>Please select which additional information you can provide:</strong>"
-msgstr ""
-"<strong>Лутфан, маълумоти иловагие, ки шумо метавонед таъмин кунед интихоб "
-"кунед:</strong>"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, m_actionsInsideApp)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:212
-msgctxt "@info:tooltip"
-msgid ""
-"Check this option if you can describe what were you doing inside the "
-"application before it crashed"
-msgstr ""
-"Отметьте этот параметр, если вы можете описать, что вы делали в этом "
-"приложении до сбоя."
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_actionsInsideApp)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:215
-msgctxt "@info:whatsthis"
-msgid ""
-"Check this option if you can describe what were you doing inside the "
-"application before it crashed"
-msgstr ""
-"Отметьте этот параметр, если вы можете описать, что вы делали в этом "
-"приложении до сбоя."
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, m_unusualSituation)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:225
-msgctxt "@info:tooltip"
-msgid ""
-"Check this option if you can describe any unusual behavior or appearance in "
-"the application or the whole desktop"
-msgstr ""
-"Отметьте этот параметр, если вы можете описать какое-либо необычное "
-"поведение в приложении или в вашей рабочей среде"
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_unusualSituation)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:228
-msgctxt "@info:whatsthis"
-msgid ""
-"Check this option if you can describe any unusual behavior or appearance in "
-"the application or the whole desktop"
-msgstr ""
-"Отметьте этот параметр, если вы можете описать какое-либо необычное "
-"поведение в приложении или в вашей рабочей среде"
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_unusualSituation)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:231
-msgctxt ""
-"@option:check kind of information the user can provide about the crash"
-msgid "Unusual desktop behavior I noticed"
-msgstr "Ман рафтори ғайрчашмдошти мизи кориро мушоҳида кардаам."
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, m_appSpecificDetails)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:246
-msgctxt "@info:tooltip"
-msgid ""
-"Check this option if you can provide application specific details or "
-"settings that may be related to the crash. You can check the examples (if "
-"available.)"
-msgstr ""
-"Отметьте этот параметр, если вы можете сообщить особые параметры, которые "
-"могут быть причиной сбоя. Вы также можете посмотреть примеры (если они "
-"доступны)."
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_appSpecificDetails)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:249
-msgctxt "@info:whatsthis"
-msgid ""
-"Check this option if you can provide application specific details or "
-"settings that may be related to the crash. You can check the examples (if "
-"available.)"
-msgstr ""
-"Отметьте этот параметр, если вы можете сообщить особые параметры, которые "
-"могут быть причиной сбоя. Вы также можете посмотреть примеры (если они "
-"доступны)."
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_appSpecificDetails)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:252
-msgctxt ""
-"@option:check kind of information the user can provide about the crash"
-msgid "Custom settings of the application that may be related"
-msgstr "Особые параметры приложения, которые могут иметь значение"
-
-#. i18n: ectx: property (text), widget (QLabel, m_appSpecificDetailsExamples)
-#: bugzillaintegration/ui/assistantpage_bugawareness.ui:284
-msgctxt ""
-"@label clicking/hovering this, the user will get examples about application "
-"specific details s/he can provide"
-msgid "<a href=\"#\">Examples</a>"
-msgstr "<a href=\"#\">Мисолҳо</a>"
-
-#. i18n: ectx: property (text), widget (QLabel, m_explanationLabel)
-#: bugzillaintegration/ui/assistantpage_bugzilla_duplicates.ui:17
-#, fuzzy
-#| msgctxt "@info/rich"
-#| msgid ""
-#| "See if your bug has already been reported. Double click a report in the "
-#| "list and compare it to yours. You can suggest that your crash is a "
-#| "duplicate of that report or directly attach your information to it."
-msgctxt "@info"
-msgid ""
-"See if your bug has already been reported. Double click a report in the list "
-"and compare it to yours. You can suggest that your crash is a duplicate of "
-"that report or directly attach your information to it."
-msgstr ""
-"Посмотрите, не была ли эта ошибка описана ранее. Дважды щёлкните сообщение "
-"из списка и сравните его со своим. Вы можете либо выдвинуть предположение о "
-"том, что ваша ошибка повторяет уже описанную, либо непосредственно добавить "
-"свои сведения к ней."
-
-#. i18n: ectx: property (text), widget (QTreeWidget, m_bugListWidget)
-#: bugzillaintegration/ui/assistantpage_bugzilla_duplicates.ui:72
-msgctxt "@title:column"
-msgid "Bug ID"
-msgstr "Рақами хато"
-
-#. i18n: ectx: property (text), widget (QTreeWidget, m_bugListWidget)
-#: bugzillaintegration/ui/assistantpage_bugzilla_duplicates.ui:77
-msgctxt "@title:column"
-msgid "Description"
-msgstr "Тасвирот"
-
-#. i18n: ectx: property (text), widget (QLabel, m_selectedPossibleDuplicatesLabel)
-#: bugzillaintegration/ui/assistantpage_bugzilla_duplicates.ui:119
-msgctxt ""
-"@label title of a listbox where the possible duplicate bug numbers are put in"
-msgid "Possible duplicates:"
-msgstr "Нусхаҳои имконпазир:"
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_showOwnBacktraceCheckBox)
-#: bugzillaintegration/ui/assistantpage_bugzilla_duplicates_dialog.ui:81
-msgctxt ""
-"@option:check user must check this to preview the own backtrace (in order to "
-"compare it with the one in the showed report)"
-msgid "Show the backtrace of the crash I experienced to compare (advanced)"
-msgstr ""
-"Пайгирии такрории корношямии мушоҳида кардаи манро барои муқоиса "
-"(такмилёфтаро) нишон диҳед."
-
-#. i18n: ectx: property (text), widget (QLabel, commonCrashLabel)
-#: bugzillaintegration/ui/assistantpage_bugzilla_duplicates_dialog_confirmation.ui:42
-msgid ""
-"This is likely to be a <strong>common crash</strong>, and a lot of different "
-"cases' details may have been provided already. <i>Proceed only if you can "
-"add new information (not already mentioned). </i>"
-msgstr ""
-"Похоже, что это <strong>частый сбой</strong> и возможно, что множество "
-"различных сведений о нём уже представлено. <i>Продолжайте только если вы "
-"можете представить новые данные о нём (которые ещё не упоминались). </i>"
-
-#. i18n: ectx: property (text), widget (QLabel, proceedLabel)
-#: bugzillaintegration/ui/assistantpage_bugzilla_duplicates_dialog_confirmation.ui:115
-msgid "<strong>Do you want to proceed with the reporting process?</strong>"
-msgstr "<strong>Шумо мехоҳед равиши ҳисоботро давом диҳед?</strong>"
-
-#. i18n: ectx: property (text), widget (QRadioButton, proceedRadioNo)
-#: bugzillaintegration/ui/assistantpage_bugzilla_duplicates_dialog_confirmation.ui:142
-#, fuzzy
-#| msgid "No, do not file a new bug report, and cancel the assistant"
-msgid "No, do not file &a new bug report, and cancel the assistant"
-msgstr "Не, гузориши хатои навро тайёр накунед ва дастёрро бекор кунед"
-
-#. i18n: ectx: property (text), widget (QRadioButton, proceedRadioYes)
-#: bugzillaintegration/ui/assistantpage_bugzilla_duplicates_dialog_confirmation.ui:152
-#, fuzzy
-#| msgid "Proceed with reporting the bug"
-msgid "Proceed with reporting &the bug"
-msgstr "Гузориши хато иҷро шуд"
-
-#. i18n: ectx: property (text), widget (QLabel, areYouSureLabel)
-#: bugzillaintegration/ui/assistantpage_bugzilla_duplicates_dialog_confirmation.ui:182
-msgid "<strong>Are you sure this report matches your crash situation?</strong>"
-msgstr ""
-"<strong>Шумо мутмаин ҳастед, ки ин ҳисобот бо ҳолати шикастагӣ мувофиқ аст?</"
-"strong>"
-
-#. i18n: ectx: property (text), widget (QRadioButton, markAsDuplicateCheck)
-#: bugzillaintegration/ui/assistantpage_bugzilla_duplicates_dialog_confirmation.ui:209
-#, fuzzy
-#| msgid "Not really sure: mark as a possible duplicate"
-msgid "Not &really sure: mark as a possible duplicate"
-msgstr "Мутмаин нестам: ҳамчун нусхаи имконпазир қайд кунед"
-
-#. i18n: ectx: property (text), widget (QRadioButton, attachToBugReportCheck)
-#: bugzillaintegration/ui/assistantpage_bugzilla_duplicates_dialog_confirmation.ui:219
-#, fuzzy
-#| msgid "Completely sure: attach my information to this report"
-msgid "Completely sure: attach my &information to this report"
-msgstr "Дар ҳақиқат мутмаин ҳастам: маълумоти маро ба ин ҳисобот илова кунед"
-
-#. i18n: ectx: property (text), widget (QLabel, m_explanationLabel)
-#: bugzillaintegration/ui/assistantpage_bugzilla_information.ui:17
-#, fuzzy
-#| msgctxt "@label question"
-#| msgid ""
-#| "<strong>Please select which additional information you can provide:</"
-#| "strong>"
-msgctxt "@info"
-msgid "<strong>Please provide the following information in English.</strong>"
-msgstr ""
-"<strong>Лутфан, маълумоти иловагие, ки шумо метавонед таъмин кунед интихоб "
-"кунед:</strong>"
-
-#. i18n: ectx: property (text), widget (QLabel, m_titleLabel)
-#: bugzillaintegration/ui/assistantpage_bugzilla_information.ui:27
-msgctxt "@label:textbox"
-msgid "<strong>Title of the bug report:</strong> (<a href=\"#\">examples</a>)"
-msgstr ""
-"<strong>Сарлавҳаи ҳисобот дар бораи хато:</strong> (<a href=\"#\">мисолҳо</"
-"a>)"
-
-#. i18n: ectx: property (text), widget (QLabel, m_detailsLabel)
-#: bugzillaintegration/ui/assistantpage_bugzilla_information.ui:39
-msgctxt "@label:textbox"
-msgid ""
-"<strong>Information about the crash:</strong> (<a href=\"#\">help and "
-"examples</a>)"
-msgstr ""
-"<strong>Маълумот дар бораи шикастагӣ:</strong> (<a href=\"#\">роҳнамо ва "
-"мисолҳо</a>)"
-
-#. i18n: ectx: property (title), widget (QGroupBox, m_distributionGroupBox)
-#: bugzillaintegration/ui/assistantpage_bugzilla_information.ui:55
-msgctxt "@title:group"
-msgid "Distribution method:"
-msgstr "Методи тақсимот:"
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_compiledSourcesCheckBox)
-#: bugzillaintegration/ui/assistantpage_bugzilla_information.ui:66
-msgctxt "@option:check"
-msgid "KDE Platform is compiled from sources"
-msgstr "Таҳкурсии KDE аз манбаъҳо таркиб ёфтааст"
-
-#. i18n: ectx: property (text), widget (QLabel, m_crashInfoLabel)
-#: bugzillaintegration/ui/assistantpage_bugzilla_information.ui:94
-#, fuzzy
-#| msgctxt "@info/rich"
-#| msgid ""
-#| "<note>The crash and system information will be automatically added to the "
-#| "bug report.</note>"
-msgctxt "@info"
-msgid ""
-"<note>The crash and system information will be automatically added to the "
-"bug report.</note>"
-msgstr ""
-"<note>Маълумоти шикастагӣ ва система ба ҳисобот дар бораи хато ба худкор "
-"илова мешавад.</note>"
-
-#. i18n: ectx: property (text), widget (QLabel, m_userLabel)
-#: bugzillaintegration/ui/assistantpage_bugzilla_login.ui:38
-msgctxt "@label:textbox bugzilla account username"
-msgid "Username:"
-msgstr "Номи корбар:"
-
-#. i18n: ectx: property (text), widget (QLabel, m_passwordLabel)
-#: bugzillaintegration/ui/assistantpage_bugzilla_login.ui:45
-msgctxt "@label:textbox bugzilla account password"
-msgid "Password:"
-msgstr "Парол:"
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_savePasswordCheckBox)
-#: bugzillaintegration/ui/assistantpage_bugzilla_login.ui:71
-msgctxt "@option:check"
-msgid "Save login information using the KDE Wallet system"
-msgstr "Сохранить имя и пароль в бумажнике KDE"
-
-#. i18n: ectx: property (text), widget (QLabel, m_previewDescriptionLabel)
-#: bugzillaintegration/ui/assistantpage_bugzilla_preview.ui:18
-msgctxt "@label"
-msgid ""
-"This is a preview of the report's contents which will be sent. <nl />\n"
-"If you want to modify it go to the previous pages."
-msgstr ""
-"Зерин пешфарзи мӯҳтавои дорои ирсол кунӣ мебошад. <nl />\n"
-"Агар онро таъғир додан хоҳед, ба саҳифаи қаблӣ бар гардед."
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_launchPageOnFinish)
-#: bugzillaintegration/ui/assistantpage_bugzilla_send.ui:75
-msgctxt "@option:check"
-msgid "Open the bug report page when clicking the Finish button"
-msgstr ""
-"Баъди пахш кардани тугмаи ба охир расонӣ, саҳифаи ҳисоботи хатогиҳоро кушоед"
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_restartAppOnFinish)
-#: bugzillaintegration/ui/assistantpage_bugzilla_send.ui:98
-msgctxt "@option:check"
-msgid "Restart the application when clicking the Finish button"
-msgstr "Баъди пахш кардани тугмаи ба охир расонӣ, барномаро аз нав сар кунед"
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_restartAppOnFinish)
-#: bugzillaintegration/ui/assistantpage_conclusions.ui:73
-msgid "Restart the application when clicking the Finish button"
-msgstr "Баъди пахш кардани тугмаи ба охир расонӣ, барномаро аз нав сар кунед"
-
-#. i18n: ectx: property (text), widget (QLabel, m_introLabel)
-#: bugzillaintegration/ui/assistantpage_introduction.ui:17
-msgctxt "@info"
-msgid ""
-"This assistant will analyze the crash information and guide you through the "
-"bug reporting process."
-msgstr ""
-"Этот мастер проанализирует информацию о сбое и поможет вам составить "
-"сообщение об ошибке."
-
-#. i18n: ectx: property (text), widget (QLabel, m_warningLabel)
-#: bugzillaintegration/ui/assistantpage_introduction.ui:77
-msgctxt "@info note before starting the bug reporting process"
-msgid ""
-"<p><note>Since communication between you and the developers is required for "
-"effective debugging, to continue reporting this bug <strong>it is required "
-"for you to agree that developers may contact you.</strong></note></p><p>Feel "
-"free to close this dialog if you do not accept this.</p>"
-msgstr ""
-"<p><note>Общение между вами и разработчиками необходимо для эффективной "
-"отладки. Поэтому прежде чем продолжить составлять сообщение, "
-"<strong>необходимо подтвердить, что вы разрешаете разработчикам связаться с "
-"вами.</strong></note></p><p>Вы можете свободно закрыть данное окно, если не "
-"согласны.</p>"
 
 #: debugpackageinstaller.cpp:65
 msgctxt "@info:progress"
@@ -1947,70 +1610,325 @@ msgctxt "@info:shell"
 msgid "The <thread id> of the failing thread"
 msgstr "Рақами банди вайроншуда"
 
-#. i18n: ectx: property (text), widget (QCheckBox, m_toggleBacktraceCheckBox)
-#: ui/backtracewidget.ui:100
-msgid "Show backtrace content (advanced)"
-msgstr "Мӯҳтавои пайгири такрориро нишон диҳед (такмилёфта)"
-
-#~ msgctxt "@info:tooltip examples of good bug report titles"
+#~ msgctxt "@label question"
 #~ msgid ""
-#~ "<strong>Examples of good titles:</strong><nl />\"Plasma crashed after "
-#~ "adding the Notes widget and writing on it\"<nl />\"Konqueror crashed when "
-#~ "accessing the Facebook application 'X'\"<nl />\"Kopete suddenly closed "
-#~ "after resuming the computer and talking to a MSN buddy\"<nl />\"Kate "
-#~ "closed while editing a log file and pressing the Delete key a couple of "
-#~ "times\""
+#~ "<strong>Do you remember what you were doing prior to the crash?</strong>"
 #~ msgstr ""
-#~ "<strong>Examples of good titles:</strong><nl />\"Plasma crashed after "
-#~ "adding the Notes widget and writing on it\"<nl />\"Konqueror crashed when "
-#~ "accessing the Facebook application 'X'\"<nl />\"Kopete suddenly closed "
-#~ "after resuming the computer and talking to a MSN buddy\"<nl />\"Kate "
-#~ "closed while editing a log file and pressing the Delete key a couple of "
-#~ "times\""
+#~ "<strong>Шумо дар ёд доред, ки чӣ кор кардед пеш аз шикастагӣ?</strong>"
+
+#~ msgctxt ""
+#~ "@option:radio \"yes\" to the question \"do you remember what were you "
+#~ "doing prior to the crash?\""
+#~ msgid "Yes"
+#~ msgstr "Ҳа"
+
+#~ msgctxt ""
+#~ "@option:radio \"No\" to the question \"do you remember what were you "
+#~ "doing prior to the crash?\""
+#~ msgid "No"
+#~ msgstr "Не"
+
+#~ msgctxt "@label question"
+#~ msgid ""
+#~ "<strong>Does the application crash again if you repeat the same situation?"
+#~ "</strong>"
+#~ msgstr ""
+#~ "<strong>Агар шумо ин амалҳоро такрор кунед барнома аз нав ногаҳон хомӯш "
+#~ "мешавад?</strong>"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "If you tried to repeat the situation, select how often the application "
+#~ "crashes"
+#~ msgstr ""
+#~ "Агар шумо ин амалро такрор кардед, лутфан интихоб кунед, ки чанд бор "
+#~ "шикастагӣ рух дод"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "If you tried to repeat the situation, select how often the application "
+#~ "crashes"
+#~ msgstr ""
+#~ "Агар шумо ин амалро такрор кардед, лутфан интихоб кунед, ки чанд бор "
+#~ "шикастагӣ рух дод"
+
+#~ msgctxt "@item:inlistbox  user didn't tried to repeat the crash situation"
+#~ msgid "I did not try again"
+#~ msgstr "Ман боз кӯшиш накардам"
+
+#~ msgctxt ""
+#~ "@item:inlistbox the crash cannot be reproduce. reproduciblity->never"
+#~ msgid "Never"
+#~ msgstr "Ҳеҷ гоҳ"
+
+#~ msgctxt "@item:inlistbox the bug can be reproduced sometimes"
+#~ msgid "Sometimes"
+#~ msgstr "Баъзе вақтҳо"
+
+#~ msgctxt "@item:inlistbox the bug can be reproduced every time"
+#~ msgid "Every time"
+#~ msgstr "Ҳамеша"
+
+#~ msgctxt "@label question"
+#~ msgid ""
+#~ "<strong>Please select which additional information you can provide:</"
+#~ "strong>"
+#~ msgstr ""
+#~ "<strong>Лутфан, маълумоти иловагие, ки шумо метавонед таъмин кунед "
+#~ "интихоб кунед:</strong>"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "Check this option if you can describe what were you doing inside the "
+#~ "application before it crashed"
+#~ msgstr ""
+#~ "Отметьте этот параметр, если вы можете описать, что вы делали в этом "
+#~ "приложении до сбоя."
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Check this option if you can describe what were you doing inside the "
+#~ "application before it crashed"
+#~ msgstr ""
+#~ "Отметьте этот параметр, если вы можете описать, что вы делали в этом "
+#~ "приложении до сбоя."
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "Check this option if you can describe any unusual behavior or appearance "
+#~ "in the application or the whole desktop"
+#~ msgstr ""
+#~ "Отметьте этот параметр, если вы можете описать какое-либо необычное "
+#~ "поведение в приложении или в вашей рабочей среде"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Check this option if you can describe any unusual behavior or appearance "
+#~ "in the application or the whole desktop"
+#~ msgstr ""
+#~ "Отметьте этот параметр, если вы можете описать какое-либо необычное "
+#~ "поведение в приложении или в вашей рабочей среде"
+
+#~ msgctxt ""
+#~ "@option:check kind of information the user can provide about the crash"
+#~ msgid "Unusual desktop behavior I noticed"
+#~ msgstr "Ман рафтори ғайрчашмдошти мизи кориро мушоҳида кардаам."
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "Check this option if you can provide application specific details or "
+#~ "settings that may be related to the crash. You can check the examples (if "
+#~ "available.)"
+#~ msgstr ""
+#~ "Отметьте этот параметр, если вы можете сообщить особые параметры, которые "
+#~ "могут быть причиной сбоя. Вы также можете посмотреть примеры (если они "
+#~ "доступны)."
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Check this option if you can provide application specific details or "
+#~ "settings that may be related to the crash. You can check the examples (if "
+#~ "available.)"
+#~ msgstr ""
+#~ "Отметьте этот параметр, если вы можете сообщить особые параметры, которые "
+#~ "могут быть причиной сбоя. Вы также можете посмотреть примеры (если они "
+#~ "доступны)."
+
+#~ msgctxt ""
+#~ "@option:check kind of information the user can provide about the crash"
+#~ msgid "Custom settings of the application that may be related"
+#~ msgstr "Особые параметры приложения, которые могут иметь значение"
+
+#~ msgctxt ""
+#~ "@label clicking/hovering this, the user will get examples about "
+#~ "application specific details s/he can provide"
+#~ msgid "<a href=\"#\">Examples</a>"
+#~ msgstr "<a href=\"#\">Мисолҳо</a>"
+
+#, fuzzy
+#~| msgctxt "@info/rich"
+#~| msgid ""
+#~| "See if your bug has already been reported. Double click a report in the "
+#~| "list and compare it to yours. You can suggest that your crash is a "
+#~| "duplicate of that report or directly attach your information to it."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "See if your bug has already been reported. Double click a report in the "
+#~ "list and compare it to yours. You can suggest that your crash is a "
+#~ "duplicate of that report or directly attach your information to it."
+#~ msgstr ""
+#~ "Посмотрите, не была ли эта ошибка описана ранее. Дважды щёлкните "
+#~ "сообщение из списка и сравните его со своим. Вы можете либо выдвинуть "
+#~ "предположение о том, что ваша ошибка повторяет уже описанную, либо "
+#~ "непосредственно добавить свои сведения к ней."
+
+#~ msgctxt "@title:column"
+#~ msgid "Bug ID"
+#~ msgstr "Рақами хато"
+
+#~ msgctxt "@title:column"
+#~ msgid "Description"
+#~ msgstr "Тасвирот"
+
+#~ msgctxt ""
+#~ "@label title of a listbox where the possible duplicate bug numbers are "
+#~ "put in"
+#~ msgid "Possible duplicates:"
+#~ msgstr "Нусхаҳои имконпазир:"
+
+#~ msgctxt ""
+#~ "@option:check user must check this to preview the own backtrace (in order "
+#~ "to compare it with the one in the showed report)"
+#~ msgid "Show the backtrace of the crash I experienced to compare (advanced)"
+#~ msgstr ""
+#~ "Пайгирии такрории корношямии мушоҳида кардаи манро барои муқоиса "
+#~ "(такмилёфтаро) нишон диҳед."
 
 #~ msgid ""
-#~ "<p><note>The bug report's title is often written by its reporter and may "
-#~ "not reflect the bug's nature, root cause or other visible symptoms you "
-#~ "could use to compare to your crash. Please read the complete report and "
-#~ "all the comments below.</note></p>"
+#~ "This is likely to be a <strong>common crash</strong>, and a lot of "
+#~ "different cases' details may have been provided already. <i>Proceed only "
+#~ "if you can add new information (not already mentioned). </i>"
 #~ msgstr ""
-#~ "<p><note>Заголовки сообщений об ошибках часто написаны их авторами и "
-#~ "могут не отражать суть ошибки. Вы можете использовать для сравнения с "
-#~ "вашим сбоем причину ошибки или другие видимые признаки. Пожалуйста, "
-#~ "прочитайте полностью сообщение об ошибке и все комментарии к нему.</"
-#~ "note></p>"
+#~ "Похоже, что это <strong>частый сбой</strong> и возможно, что множество "
+#~ "различных сведений о нём уже представлено. <i>Продолжайте только если вы "
+#~ "можете представить новые данные о нём (которые ещё не упоминались). </i>"
+
+#~ msgid "<strong>Do you want to proceed with the reporting process?</strong>"
+#~ msgstr "<strong>Шумо мехоҳед равиши ҳисоботро давом диҳед?</strong>"
+
+#, fuzzy
+#~| msgid "No, do not file a new bug report, and cancel the assistant"
+#~ msgid "No, do not file &a new bug report, and cancel the assistant"
+#~ msgstr "Не, гузориши хатои навро тайёр накунед ва дастёрро бекор кунед"
+
+#, fuzzy
+#~| msgid "Proceed with reporting the bug"
+#~ msgid "Proceed with reporting &the bug"
+#~ msgstr "Гузориши хато иҷро шуд"
 
 #~ msgid ""
-#~ "<p><note>This bug report has %1 duplicate report. That means this is "
-#~ "probably a <strong>common crash</strong>. <i>Please consider only adding "
-#~ "a comment or a note if you can provide new valuable information which was "
-#~ "not already mentioned.</i></note></p>"
-#~ msgid_plural ""
-#~ "<p><note>This bug report has %1 duplicate reports. That means this is "
-#~ "probably a <strong>common crash</strong>. <i>Please consider only adding "
-#~ "a comment or a note if you can provide new valuable information which was "
-#~ "not already mentioned.</i></note></p>"
-#~ msgstr[0] ""
-#~ "<p><note>Это сообщение об ошибке имеет %1 дублирующее сообщение. Это "
-#~ "значит, что, возможно, это <strong>частый сбой</strong>. <i>Пожалуйста, "
-#~ "добавляйте комментарии или замечании только если вы можете предоставить "
-#~ "новую полезную информацию, которая ещё не упоминалась.</i></note></p>"
-#~ msgstr[1] ""
-#~ "<p><note>This bug report has %1 duplicate reports. That means this is "
-#~ "probably a <strong>common crash</strong>. <i>Please consider only adding "
-#~ "a comment or a note if you can provide new valuable information which was "
-#~ "not already mentioned.</i></note></p>"
+#~ "<strong>Are you sure this report matches your crash situation?</strong>"
+#~ msgstr ""
+#~ "<strong>Шумо мутмаин ҳастед, ки ин ҳисобот бо ҳолати шикастагӣ мувофиқ "
+#~ "аст?</strong>"
 
+#, fuzzy
+#~| msgid "Not really sure: mark as a possible duplicate"
+#~ msgid "Not &really sure: mark as a possible duplicate"
+#~ msgstr "Мутмаин нестам: ҳамчун нусхаи имконпазир қайд кунед"
+
+#, fuzzy
+#~| msgid "Completely sure: attach my information to this report"
+#~ msgid "Completely sure: attach my &information to this report"
+#~ msgstr ""
+#~ "Дар ҳақиқат мутмаин ҳастам: маълумоти маро ба ин ҳисобот илова кунед"
+
+#, fuzzy
+#~| msgctxt "@label question"
+#~| msgid ""
+#~| "<strong>Please select which additional information you can provide:</"
+#~| "strong>"
+#~ msgctxt "@info"
 #~ msgid ""
-#~ "<p><note>This bug report is not about a crash or about any other critical "
-#~ "bug.</note></p>"
+#~ "<strong>Please provide the following information in English.</strong>"
 #~ msgstr ""
-#~ "<p><note>Ин ҳисобот ягон маълумоте дар бораи шикастагӣ ё дигар хатоҳои "
-#~ "хатарнок дар бар намегирад.</note></p> "
+#~ "<strong>Лутфан, маълумоти иловагие, ки шумо метавонед таъмин кунед "
+#~ "интихоб кунед:</strong>"
 
-#~ msgid "You are going to mark your crash as related to bug <numid>%1</numid>"
+#~ msgctxt "@label:textbox"
+#~ msgid ""
+#~ "<strong>Title of the bug report:</strong> (<a href=\"#\">examples</a>)"
 #~ msgstr ""
-#~ "Шумо ҳисоботи худро ҳамчун хатои <numid>%1</numid> қайд карданӣ ҳастед"
+#~ "<strong>Сарлавҳаи ҳисобот дар бораи хато:</strong> (<a href=\"#"
+#~ "\">мисолҳо</a>)"
+
+#~ msgctxt "@label:textbox"
+#~ msgid ""
+#~ "<strong>Information about the crash:</strong> (<a href=\"#\">help and "
+#~ "examples</a>)"
+#~ msgstr ""
+#~ "<strong>Маълумот дар бораи шикастагӣ:</strong> (<a href=\"#\">роҳнамо ва "
+#~ "мисолҳо</a>)"
+
+#~ msgctxt "@title:group"
+#~ msgid "Distribution method:"
+#~ msgstr "Методи тақсимот:"
+
+#~ msgctxt "@option:check"
+#~ msgid "KDE Platform is compiled from sources"
+#~ msgstr "Таҳкурсии KDE аз манбаъҳо таркиб ёфтааст"
+
+#, fuzzy
+#~| msgctxt "@info/rich"
+#~| msgid ""
+#~| "<note>The crash and system information will be automatically added to "
+#~| "the bug report.</note>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<note>The crash and system information will be automatically added to the "
+#~ "bug report.</note>"
+#~ msgstr ""
+#~ "<note>Маълумоти шикастагӣ ва система ба ҳисобот дар бораи хато ба худкор "
+#~ "илова мешавад.</note>"
+
+#~ msgctxt "@label:textbox bugzilla account username"
+#~ msgid "Username:"
+#~ msgstr "Номи корбар:"
+
+#~ msgctxt "@label:textbox bugzilla account password"
+#~ msgid "Password:"
+#~ msgstr "Парол:"
+
+#~ msgctxt "@option:check"
+#~ msgid "Save login information using the KDE Wallet system"
+#~ msgstr "Сохранить имя и пароль в бумажнике KDE"
+
+#~ msgctxt "@label"
+#~ msgid ""
+#~ "This is a preview of the report's contents which will be sent. <nl />\n"
+#~ "If you want to modify it go to the previous pages."
+#~ msgstr ""
+#~ "Зерин пешфарзи мӯҳтавои дорои ирсол кунӣ мебошад. <nl />\n"
+#~ "Агар онро таъғир додан хоҳед, ба саҳифаи қаблӣ бар гардед."
+
+#~ msgctxt "@option:check"
+#~ msgid "Open the bug report page when clicking the Finish button"
+#~ msgstr ""
+#~ "Баъди пахш кардани тугмаи ба охир расонӣ, саҳифаи ҳисоботи хатогиҳоро "
+#~ "кушоед"
+
+#~ msgctxt "@option:check"
+#~ msgid "Restart the application when clicking the Finish button"
+#~ msgstr ""
+#~ "Баъди пахш кардани тугмаи ба охир расонӣ, барномаро аз нав сар кунед"
+
+#~ msgid "Restart the application when clicking the Finish button"
+#~ msgstr ""
+#~ "Баъди пахш кардани тугмаи ба охир расонӣ, барномаро аз нав сар кунед"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "This assistant will analyze the crash information and guide you through "
+#~ "the bug reporting process."
+#~ msgstr ""
+#~ "Этот мастер проанализирует информацию о сбое и поможет вам составить "
+#~ "сообщение об ошибке."
+
+#~ msgctxt "@info note before starting the bug reporting process"
+#~ msgid ""
+#~ "<p><note>Since communication between you and the developers is required "
+#~ "for effective debugging, to continue reporting this bug <strong>it is "
+#~ "required for you to agree that developers may contact you.</strong></"
+#~ "note></p><p>Feel free to close this dialog if you do not accept this.</p>"
+#~ msgstr ""
+#~ "<p><note>Общение между вами и разработчиками необходимо для эффективной "
+#~ "отладки. Поэтому прежде чем продолжить составлять сообщение, "
+#~ "<strong>необходимо подтвердить, что вы разрешаете разработчикам связаться "
+#~ "с вами.</strong></note></p><p>Вы можете свободно закрыть данное окно, "
+#~ "если не согласны.</p>"
+
+#~ msgid "Show backtrace content (advanced)"
+#~ msgstr "Мӯҳтавои пайгири такрориро нишон диҳед (такмилёфта)"
 
 #~ msgctxt "@info/rich"
 #~ msgid "You can help us improve this software by filing a bug report."
