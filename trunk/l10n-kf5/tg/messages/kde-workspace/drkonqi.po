@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: drkonqi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-08-08 08:30+0000\n"
+"POT-Creation-Date: 2014-08-22 08:18+0000\n"
 "PO-Revision-Date: 2012-01-04 21:41+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <http://www.kde.tj>\n"
@@ -512,8 +512,10 @@ msgid "If you wish, you can go back and change your answers. "
 msgstr "Агар хоҳед, ба қафо бар гашта ҷавобҳоятонро таъғир диҳед."
 
 #: bugzillaintegration/reportassistantpages_base.cpp:407
-#, kde-format
-msgctxt "@info/plain report to url/mail address"
+#, fuzzy, kde-format
+#| msgctxt "@info/plain report to url/mail address"
+#| msgid "Report to %1"
+msgctxt "@info report to url/mail address"
 msgid "Report to %1"
 msgstr "Ҳисобот ба %1"
 
@@ -608,7 +610,10 @@ msgid "Performing login at %1 as %2..."
 msgstr "Пешниҳоди логини дар %1 ҳамчун %2..."
 
 #: bugzillaintegration/reportassistantpages_bugzilla.cpp:352
-msgctxt "@info:status/rich"
+#, fuzzy
+#| msgctxt "@info:status/rich"
+#| msgid "<b>Error: Invalid username or password</b>"
+msgctxt "@info:status"
 msgid "<b>Error: Invalid username or password</b>"
 msgstr "<b>Хато: Номи корбар ё парол нодуруст аст</b>"
 
@@ -841,10 +846,12 @@ msgid "Sending crash report... (please wait)"
 msgstr "Ҳисоботи корношоямӣ ирсол шуда истодааст... (интизор шавед)"
 
 #: bugzillaintegration/reportassistantpages_bugzilla.cpp:758
-#, kde-format
-msgctxt "@info/plain report to KDE bugtracker address"
+#, fuzzy, kde-format
+#| msgctxt "@info/plain report to url/mail address"
+#| msgid "Report to %1"
+msgctxt "@info report to KDE bugtracker address"
 msgid "Report to %1"
-msgstr "Ба %1ҳисобот диҳед"
+msgstr "Ҳисобот ба %1"
 
 #: bugzillaintegration/reportassistantpages_bugzilla.cpp:777
 msgctxt "@title:window"
@@ -1015,37 +1022,58 @@ msgid "Showing results from %1 to %2"
 msgstr "Намоиши натиҷаҳои аз %1 то %2"
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:320
-msgctxt "@info/plain bug status"
+#, fuzzy
+#| msgctxt "@info/plain bug status"
+#| msgid "[Open]"
+msgctxt "@info bug status"
 msgid "[Open]"
 msgstr "[Кушодашуда]"
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:323
-msgctxt "@info/plain bug resolution"
+#, fuzzy
+#| msgctxt "@info/plain bug resolution"
+#| msgid "[Fixed]"
+msgctxt "@info bug resolution"
 msgid "[Fixed]"
 msgstr "[Ислоҳшуда]"
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:325
-msgctxt "@info/plain bug resolution"
+#, fuzzy
+#| msgctxt "@info/plain bug resolution"
+#| msgid "[Non-reproducible]"
+msgctxt "@info bug resolution"
 msgid "[Non-reproducible]"
 msgstr "[Такрорнашаванда]"
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:327
-msgctxt "@info/plain bug resolution"
+#, fuzzy
+#| msgctxt "@info/plain bug resolution"
+#| msgid "[Duplicate report]"
+msgctxt "@info bug resolution"
 msgid "[Duplicate report]"
 msgstr "[Гузоришро кушоед]"
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:329
-msgctxt "@info/plain bug resolution"
+#, fuzzy
+#| msgctxt "@info/plain bug resolution"
+#| msgid "[Invalid]"
+msgctxt "@info bug resolution"
 msgid "[Invalid]"
 msgstr "[Хатогӣ]"
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:332
-msgctxt "@info/plain bug resolution"
+#, fuzzy
+#| msgctxt "@info/plain bug resolution"
+#| msgid "[External problem]"
+msgctxt "@info bug resolution"
 msgid "[External problem]"
 msgstr "[Мушкилоти берунӣ]"
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:335
-msgctxt "@info/plain bug status"
+#, fuzzy
+#| msgctxt "@info/plain bug status"
+#| msgid "[Incomplete]"
+msgctxt "@info bug status"
 msgid "[Incomplete]"
 msgstr "[Нопурра]"
 
@@ -1145,7 +1173,12 @@ msgstr ""
 "Шумо ба ҳисоботи хатогиҳои зерин алоқаманд нест пахш кунед"
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:640
-msgctxt "@info/plain"
+#, fuzzy
+#| msgctxt "@info/plain"
+#| msgid ""
+#| "Backtrace of the crash I experienced:\n"
+#| "\n"
+msgctxt "@info"
 msgid ""
 "Backtrace of the crash I experienced:\n"
 "\n"
@@ -1300,6 +1333,12 @@ msgstr "Бекор кардан (Баргаштан ба ҳисобот)"
 msgctxt "@action:button continue with the selected option and close the dialog"
 msgid "Continue"
 msgstr "Давом диҳед"
+
+#: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:906
+#, fuzzy, kde-format
+#| msgid "You are going to mark your crash as related to bug <numid>%1</numid>"
+msgid "You are going to mark your crash as related to bug %1"
+msgstr "Шумо ҳисоботи худро ҳамчун хатои <numid>%1</numid> қайд карданӣ ҳастед"
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:919
 #, kde-format
@@ -1635,8 +1674,8 @@ msgstr "Таҳкурсии KDE аз манбаъҳо таркиб ёфтааст
 #| "bug report.</note>"
 msgctxt "@info"
 msgid ""
-"<note>The crash and system information will be automatically added to the "
-"bug report.</note>"
+"<i>Note</i>: The crash and system information will be automatically added to "
+"the bug report."
 msgstr ""
 "<note>Маълумоти шикастагӣ ва система ба ҳисобот дар бораи хато ба худкор "
 "илова мешавад.</note>"
@@ -1660,10 +1699,16 @@ msgid "Save login information using the KDE Wallet system"
 msgstr "Сохранить имя и пароль в бумажнике KDE"
 
 #. i18n: ectx: property (text), widget (QLabel, m_previewDescriptionLabel)
-#: bugzillaintegration/ui/assistantpage_bugzilla_preview.ui:18
+#: bugzillaintegration/ui/assistantpage_bugzilla_preview.ui:19
+#, fuzzy
+#| msgctxt "@label"
+#| msgid ""
+#| "This is a preview of the report's contents which will be sent. <nl />\n"
+#| "If you want to modify it go to the previous pages."
 msgctxt "@label"
 msgid ""
-"This is a preview of the report's contents which will be sent. <nl />\n"
+"This is a preview of the report's contents which will be sent. \n"
+"\n"
 "If you want to modify it go to the previous pages."
 msgstr ""
 "Зерин пешфарзи мӯҳтавои дорои ирсол кунӣ мебошад. <nl />\n"
@@ -1699,12 +1744,19 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, m_warningLabel)
 #: bugzillaintegration/ui/assistantpage_introduction.ui:77
+#, fuzzy
+#| msgctxt "@info note before starting the bug reporting process"
+#| msgid ""
+#| "<p><note>Since communication between you and the developers is required "
+#| "for effective debugging, to continue reporting this bug <strong>it is "
+#| "required for you to agree that developers may contact you.</strong></"
+#| "note></p><p>Feel free to close this dialog if you do not accept this.</p>"
 msgctxt "@info note before starting the bug reporting process"
 msgid ""
-"<p><note>Since communication between you and the developers is required for "
-"effective debugging, to continue reporting this bug <strong>it is required "
-"for you to agree that developers may contact you.</strong></note></p><p>Feel "
-"free to close this dialog if you do not accept this.</p>"
+"<p><i>Note</i>: Since communication between you and the developers is "
+"required for effective debugging, to continue reporting this bug <strong>it "
+"is required for you to agree that developers may contact you.</strong></"
+"p><p>Feel free to close this dialog if you do not accept this.</p>"
 msgstr ""
 "<p><note>Общение между вами и разработчиками необходимо для эффективной "
 "отладки. Поэтому прежде чем продолжить составлять сообщение, "
@@ -1952,6 +2004,10 @@ msgstr "Рақами банди вайроншуда"
 msgid "Show backtrace content (advanced)"
 msgstr "Мӯҳтавои пайгири такрориро нишон диҳед (такмилёфта)"
 
+#~ msgctxt "@info/plain report to KDE bugtracker address"
+#~ msgid "Report to %1"
+#~ msgstr "Ба %1ҳисобот диҳед"
+
 #~ msgctxt "@info:tooltip examples of good bug report titles"
 #~ msgid ""
 #~ "<strong>Examples of good titles:</strong><nl />\"Plasma crashed after "
@@ -2007,10 +2063,6 @@ msgstr "Мӯҳтавои пайгири такрориро нишон диҳед
 #~ msgstr ""
 #~ "<p><note>Ин ҳисобот ягон маълумоте дар бораи шикастагӣ ё дигар хатоҳои "
 #~ "хатарнок дар бар намегирад.</note></p> "
-
-#~ msgid "You are going to mark your crash as related to bug <numid>%1</numid>"
-#~ msgstr ""
-#~ "Шумо ҳисоботи худро ҳамчун хатои <numid>%1</numid> қайд карданӣ ҳастед"
 
 #~ msgctxt "@info/rich"
 #~ msgid "You can help us improve this software by filing a bug report."
