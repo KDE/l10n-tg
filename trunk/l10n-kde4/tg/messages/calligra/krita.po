@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-09 01:39+0000\n"
+"POT-Creation-Date: 2014-11-12 01:44+0000\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -123,10 +123,12 @@ msgstr "&Сафед"
 msgid "&Tools"
 msgstr "&Даровардани Асбоб"
 
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: Menu (settings)
 #: animator/kritaanimation.rc:154 gemini/kritagemini.rc:159 krita.rc:164
 #: plugins/extensions/dockers/animator/kis_timeline.cpp:203
 #: plugins/extensions/dockers/animator/kis_timeline.cpp:218
+#: plugins/paintops/spray/wdgshapedynamicsoptions.ui:42
 #: sketch/kritasketch.rc:159
 msgid "Settings"
 msgstr "Танзимотҳо"
@@ -1881,7 +1883,7 @@ msgstr "нуқтаҳо"
 #: plugins/paintops/experiment/wdgexperimentshapeoptions.ui:60
 #: plugins/paintops/gridbrush/wdggridbrushshapeoptions.ui:36
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:232
-#: plugins/paintops/spray/wdgsprayshapeoptions.ui:60
+#: plugins/paintops/spray/wdgsprayshapeoptions.ui:75
 #, fuzzy
 msgid "Ellipse"
 msgstr "эллипс"
@@ -1894,7 +1896,7 @@ msgstr "эллипс"
 #: plugins/paintops/experiment/wdgexperimentshapeoptions.ui:65
 #: plugins/paintops/gridbrush/wdggridbrushshapeoptions.ui:41
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:237
-#: plugins/paintops/spray/wdgsprayshapeoptions.ui:65
+#: plugins/paintops/spray/wdgsprayshapeoptions.ui:80
 msgid "Rectangle"
 msgstr "Росткунҷа"
 
@@ -2749,7 +2751,7 @@ msgstr ""
 #: plugins/paintops/gridbrush/wdggridbrushshapeoptions.ui:70
 #: plugins/paintops/libpaintop/forms/wdgautobrush.ui:69
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:215
-#: plugins/paintops/spray/wdgsprayshapeoptions.ui:46
+#: plugins/paintops/spray/wdgsprayshapeoptions.ui:55
 #: plugins/tools/defaulttools/kis_tool_gradient.cc:223
 msgid "Shape:"
 msgstr "Шакл:"
@@ -4186,9 +4188,7 @@ msgid "Color:"
 msgstr "Ранг кардан"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, opacitySpinBox)
-#. i18n: ectx: property (suffix), widget (KDoubleNumInput, coverageSpin)
 #: plugins/extensions/dropshadow/wdg_dropshadow.ui:80
-#: plugins/paintops/spray/wdgsprayoptions.ui:293
 #, no-c-format
 msgid "%"
 msgstr "%"
@@ -4375,7 +4375,7 @@ msgstr "Ҳаракат кардани Интихобот"
 #: plugins/extensions/imagesplit/imagesplit.rc:4
 #: plugins/extensions/separate_channels/imageseparate.rc:4
 #: plugins/paintops/experiment/wdgexperimentshapeoptions.ui:80
-#: plugins/paintops/spray/wdgsprayshapeoptions.ui:80
+#: plugins/paintops/spray/wdgsprayshapeoptions.ui:95
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:232
 msgid "Image"
 msgstr "Тасвир"
@@ -4408,7 +4408,7 @@ msgstr "Андозаи эҷод кардан"
 #: plugins/extensions/imagesize/wdg_layersize.ui:154
 #: plugins/formats/pdf/pdfimportwidgetbase.ui:295
 #: plugins/paintops/experiment/wdgexperimentshapeoptions.ui:168
-#: plugins/paintops/spray/wdgsprayshapeoptions.ui:171
+#: plugins/paintops/spray/wdgsprayshapeoptions.ui:138
 #: ui/forms/wdg_resolution.ui:27 ui/forms/wdganimationselector.ui:121
 #: ui/forms/wdgimageproperties.ui:58
 msgid "Height:"
@@ -4426,7 +4426,7 @@ msgstr "Дарозӣ:"
 #: plugins/extensions/imagesize/wdg_layersize.ui:58
 #: plugins/formats/pdf/pdfimportwidgetbase.ui:275
 #: plugins/paintops/experiment/wdgexperimentshapeoptions.ui:101
-#: plugins/paintops/spray/wdgsprayshapeoptions.ui:101
+#: plugins/paintops/spray/wdgsprayshapeoptions.ui:103
 #: ui/forms/wdg_resolution.ui:20 ui/forms/wdganimationselector.ui:114
 #: ui/forms/wdgimageproperties.ui:41
 msgid "Width:"
@@ -5993,8 +5993,6 @@ msgstr "Тасвири Нав"
 #. i18n: ectx: property (suffix), widget (QSpinBox, azimuthSpinBox3)
 #. i18n: ectx: property (suffix), widget (QSpinBox, inclinationSpinBox3)
 #. i18n: ectx: property (suffix), widget (QSpinBox, fixedRotationSPBox)
-#. i18n: ectx: property (suffix), widget (KDoubleNumInput, rotationSPBox)
-#. i18n: ectx: property (suffix), widget (KDoubleNumInput, fixedAngleBox)
 #: plugins/extensions/shearimage/wdg_shearimage.ui:36
 #: plugins/extensions/shearimage/wdg_shearimage.ui:65
 #: plugins/filters/blur/wdg_lens_blur.ui:67
@@ -6009,8 +6007,6 @@ msgstr "Тасвири Нав"
 #: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1080
 #: plugins/paintops/experiment/wdgexperimentshapeoptions.ui:273
 #: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_drawing_angle.cpp:58
-#: plugins/paintops/spray/wdgshapedynamicsoptions.ui:87
-#: plugins/paintops/spray/wdgsprayoptions.ui:159
 #, fuzzy
 msgid "°"
 msgstr "Ранги Усул"
@@ -6144,7 +6140,7 @@ msgstr "&Фоиз"
 #: plugins/paintops/hatching/wdghatchingoptions.ui:49
 #: plugins/paintops/libpaintop/forms/wdgautobrush.ui:159
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:177
-#: plugins/paintops/spray/wdgsprayoptions.ui:131
+#: plugins/paintops/spray/wdgsprayoptions.ui:92
 #, fuzzy
 msgid "Angle:"
 msgstr "росткунҷа"
@@ -8298,7 +8294,7 @@ msgstr "Равшанӣ :"
 #: plugins/paintops/defaultpaintops/defaultpaintops_plugin.cc:46
 #: plugins/paintops/experiment/wdgexperimentshapeoptions.ui:75
 #: plugins/paintops/gridbrush/wdggridbrushshapeoptions.ui:51
-#: plugins/paintops/spray/wdgsprayshapeoptions.ui:75
+#: plugins/paintops/spray/wdgsprayshapeoptions.ui:90
 #, fuzzy
 msgid "Pixel"
 msgstr "&Андозаи табақа..."
@@ -8550,7 +8546,7 @@ msgstr "Интихоб"
 #: plugins/paintops/dynadraw/wdgdynaoptions.ui:263
 #: plugins/paintops/libpaintop/forms/wdgautobrush.ui:169
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:46
-#: plugins/paintops/spray/wdgsprayoptions.ui:37
+#: plugins/paintops/spray/wdgsprayoptions.ui:40
 #, fuzzy
 msgid "Diameter:"
 msgstr "Намунаҳо"
@@ -8617,14 +8613,14 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #: plugins/paintops/experiment/wdgexperimentshapeoptions.ui:70
 #: plugins/paintops/gridbrush/wdggridbrushshapeoptions.ui:56
-#: plugins/paintops/spray/wdgsprayshapeoptions.ui:70
+#: plugins/paintops/spray/wdgsprayshapeoptions.ui:85
 #, fuzzy
 msgid "Anti-aliased pixel"
 msgstr "Параф гузоштан..."
 
 #. i18n: ectx: property (text), widget (QCheckBox, proportionalBox)
 #: plugins/paintops/experiment/wdgexperimentshapeoptions.ui:213
-#: plugins/paintops/spray/wdgsprayshapeoptions.ui:218
+#: plugins/paintops/spray/wdgsprayshapeoptions.ui:163
 #, fuzzy
 msgid "Proportional"
 msgstr "Амудӣ:"
@@ -8642,7 +8638,6 @@ msgstr "Занондан"
 #: plugins/paintops/experiment/wdgexperimentshapeoptions.ui:235
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:46
 #: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:29
-#: plugins/paintops/spray/wdgshapedynamicsoptions.ui:42
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:647
 #, fuzzy
 msgid "Rotation"
@@ -8652,7 +8647,6 @@ msgstr "Занондан"
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
 #: plugins/paintops/experiment/wdgexperimentshapeoptions.ui:241
 #: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:59
-#: plugins/paintops/spray/wdgshapedynamicsoptions.ui:48
 #, fuzzy
 msgid "Constant"
 msgstr "Тазод :"
@@ -8661,21 +8655,19 @@ msgstr "Тазод :"
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
 #: plugins/paintops/experiment/wdgexperimentshapeoptions.ui:289
 #: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:64
-#: plugins/paintops/spray/wdgshapedynamicsoptions.ui:58
 #, fuzzy
 msgid "Random"
 msgstr "Занондан"
 
 #. i18n: ectx: property (text), widget (QCheckBox, followCursor)
 #: plugins/paintops/experiment/wdgexperimentshapeoptions.ui:340
-#: plugins/paintops/spray/wdgshapedynamicsoptions.ui:68
 #, fuzzy
 msgid "Follow cursor"
 msgstr "Тоза карданиҳо"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/paintops/experiment/wdgexperimentshapeoptions.ui:393
-#: plugins/paintops/spray/wdgsprayshapeoptions.ui:230
+#: plugins/paintops/spray/wdgsprayshapeoptions.ui:175
 #, fuzzy
 msgid "Texture:"
 msgstr "Намунаҳо"
@@ -8732,7 +8724,7 @@ msgstr "Қарор накардан"
 #: plugins/paintops/hairy/wdgbristleoptions.ui:40
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:78
 #: plugins/paintops/libpaintop/kis_texture_option.cpp:75
-#: plugins/paintops/spray/wdgsprayoptions.ui:181
+#: plugins/paintops/spray/wdgsprayoptions.ui:118
 #, fuzzy
 #| msgid "&Scale"
 msgid "Scale:"
@@ -9180,7 +9172,7 @@ msgstr "Нағз"
 #: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:180
 #: plugins/paintops/libpaintop/forms/wdgtextbrush.ui:72
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:122
-#: plugins/paintops/spray/wdgsprayoptions.ui:219
+#: plugins/paintops/spray/wdgsprayoptions.ui:138
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1735
 #, fuzzy
 msgid "Spacing:"
@@ -9221,7 +9213,7 @@ msgstr "Қатъ кардан"
 #. i18n: ectx: property (text), widget (QLabel, aspectLbl)
 #. i18n: ectx: property (text), widget (QLabel, aspectLabel)
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:142
-#: plugins/paintops/spray/wdgsprayoptions.ui:84
+#: plugins/paintops/spray/wdgsprayoptions.ui:66
 #, fuzzy
 #| msgid " sec"
 msgid "Aspect ratio:"
@@ -9229,7 +9221,7 @@ msgstr " сон"
 
 #. i18n: ectx: property (text), widget (QCheckBox, jitterMoveBox)
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:287
-#: plugins/paintops/spray/wdgsprayoptions.ui:352
+#: plugins/paintops/spray/wdgsprayoptions.ui:229
 #, fuzzy
 msgid "Jitter Movement"
 msgstr "Нест кардани Интихобот"
@@ -9662,9 +9654,7 @@ msgstr ""
 msgid "Time"
 msgstr "Воридоти Тасвир"
 
-#. i18n: ectx: property (text), widget (QCheckBox, drawingAngle)
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:45
-#: plugins/paintops/spray/wdgshapedynamicsoptions.ui:132
 #, fuzzy
 msgid "Drawing angle"
 msgstr "росткунҷа"
@@ -9708,19 +9698,17 @@ msgid "Darken"
 msgstr "Торик кардан"
 
 #. i18n: ectx: property (text), widget (QLabel, lblTransparent)
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: plugins/paintops/libpaintop/kis_pressure_flow_opacity_option.cpp:39
 #: plugins/paintops/libpaintop/kis_pressure_opacity_option.cpp:29
-#: ui/forms/wdganimationselector.ui:246 ui/forms/wdgnewimage.ui:494
+#: ui/forms/wdganimationselector.ui:246
 #, fuzzy
 msgid "Transparent"
 msgstr "FG ба Шаффоф"
 
 #. i18n: ectx: property (text), widget (QLabel, lblOpaque)
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #: plugins/paintops/libpaintop/kis_pressure_flow_opacity_option.cpp:40
 #: plugins/paintops/libpaintop/kis_pressure_opacity_option.cpp:30
-#: ui/forms/wdganimationselector.ui:266 ui/forms/wdgnewimage.ui:529
+#: ui/forms/wdganimationselector.ui:266
 msgid "Opaque"
 msgstr ""
 
@@ -10068,46 +10056,46 @@ msgid "Particle"
 msgstr "Амудӣ:"
 
 #. i18n: ectx: property (text), widget (QLabel, particlesLbl)
-#: plugins/paintops/particle/wdgparticleoptions.ui:50
+#: plugins/paintops/particle/wdgparticleoptions.ui:43
 #, fuzzy
 msgid "Particles:"
 msgstr "Амудӣ:"
 
 #. i18n: ectx: property (text), widget (QLabel, opacity)
-#: plugins/paintops/particle/wdgparticleoptions.ui:103
+#: plugins/paintops/particle/wdgparticleoptions.ui:75
 #, fuzzy
 msgid "Opacity weight:"
 msgstr "Норавшанӣ:"
 
+#. i18n: ectx: property (text), widget (QLabel, radiusLabel_5)
+#: plugins/paintops/particle/wdgparticleoptions.ui:104
+#, fuzzy
+msgid "Iterations:"
+msgstr "Қатъ кардан"
+
+#. i18n: ectx: property (text), widget (QLabel, radiusLabel_2)
+#: plugins/paintops/particle/wdgparticleoptions.ui:114
+#, fuzzy
+msgid "Gravity:"
+msgstr "Хокистариранг"
+
 #. i18n: ectx: property (text), widget (QLabel, radiusLabel_3)
-#: plugins/paintops/particle/wdgparticleoptions.ui:150
+#: plugins/paintops/particle/wdgparticleoptions.ui:127
 #, fuzzy
 #| msgid "&Scale"
 msgid "dx scale:"
 msgstr "&Ба маштаби андоза кардан"
 
 #. i18n: ectx: property (text), widget (QLabel, radiusLabel_4)
-#: plugins/paintops/particle/wdgparticleoptions.ui:179
+#: plugins/paintops/particle/wdgparticleoptions.ui:137
 #, fuzzy
 #| msgid "&Scale"
 msgid "dy scale:"
 msgstr "&Ба маштаби андоза кардан"
 
-#. i18n: ectx: property (text), widget (QLabel, radiusLabel_5)
-#: plugins/paintops/particle/wdgparticleoptions.ui:208
-#, fuzzy
-msgid "Iterations:"
-msgstr "Қатъ кардан"
-
-#. i18n: ectx: property (text), widget (QLabel, radiusLabel_2)
-#: plugins/paintops/particle/wdgparticleoptions.ui:228
-#, fuzzy
-msgid "Gravity:"
-msgstr "Хокистариранг"
-
 #. i18n: ectx: property (text), widget (QRadioButton, densityRadioButton)
 #: plugins/paintops/sketch/kis_density_option.cpp:23
-#: plugins/paintops/spray/wdgsprayoptions.ui:268
+#: plugins/paintops/spray/wdgsprayoptions.ui:181
 msgid "Density"
 msgstr ""
 
@@ -10167,7 +10155,7 @@ msgstr "Шакл:"
 msgid "Spray shape"
 msgstr "&Интихоби тоза кардан"
 
-#: plugins/paintops/spray/kis_sprayop_option.cpp:37
+#: plugins/paintops/spray/kis_sprayop_option.cpp:33
 #, fuzzy
 msgid "Spray area"
 msgstr "&Интихоби тоза кардан"
@@ -10177,20 +10165,44 @@ msgstr "&Интихоби тоза кардан"
 msgid "Spray"
 msgstr "&Интихоби тоза кардан"
 
+#. i18n: ectx: property (text), widget (QCheckBox, fixedRotation)
+#: plugins/paintops/spray/wdgshapedynamicsoptions.ui:48
+#, fuzzy
+msgid "Fixed rotation:"
+msgstr "Занондан"
+
+#. i18n: ectx: property (text), widget (QCheckBox, randomRotation)
+#: plugins/paintops/spray/wdgshapedynamicsoptions.ui:58
+#, fuzzy
+msgid "Randomize rotation:"
+msgstr "Занондан"
+
+#. i18n: ectx: property (text), widget (QCheckBox, followCursor)
+#: plugins/paintops/spray/wdgshapedynamicsoptions.ui:68
+#, fuzzy
+msgid "Follow cursor weight:"
+msgstr "Тоза карданиҳо"
+
+#. i18n: ectx: property (text), widget (QCheckBox, drawingAngle)
+#: plugins/paintops/spray/wdgshapedynamicsoptions.ui:84
+#, fuzzy
+msgid "Angle weight:"
+msgstr "воҳиди тасвир/дюйм"
+
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: plugins/paintops/spray/wdgsprayoptions.ui:256
+#: plugins/paintops/spray/wdgsprayoptions.ui:166
 #, fuzzy
 msgid "Particles"
 msgstr "Амудӣ:"
 
 #. i18n: ectx: property (text), widget (QRadioButton, countRadioButton)
-#: plugins/paintops/spray/wdgsprayoptions.ui:306
+#: plugins/paintops/spray/wdgsprayoptions.ui:201
 #, fuzzy
 msgid "Count"
 msgstr "Тоза кардани худкор"
 
 #. i18n: ectx: property (text), widget (QCheckBox, gaussianBox)
-#: plugins/paintops/spray/wdgsprayoptions.ui:387
+#: plugins/paintops/spray/wdgsprayoptions.ui:249
 #, fuzzy
 msgid "Gaussian distribution"
 msgstr "Ҳаракат кардани Интихобот"
@@ -11202,22 +11214,22 @@ msgctxt "@info:tooltip"
 msgid "Undo: erase actions of other tools"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:574
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:579
 msgid "Switch between editing and deforming cage"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, lockUnlockPointsButton)
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:623
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:628
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1476
 msgid "Lock Points"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:625
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:630
 msgid "Unlock Points"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, cageTransformDirections)
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:712
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:717
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1492
 msgid "Create 3 points on the canvas to begin"
 msgstr ""
@@ -13012,50 +13024,39 @@ msgstr "Интихоби тоза кардан"
 msgid "Contents"
 msgstr "Тазод :"
 
-#. i18n: ectx: property (text), widget (QLabel, lblColor)
+#. i18n: ectx: property (text), widget (QLabel, lblOpacity)
 #: ui/forms/wdgnewimage.ui:406
+#, fuzzy
+msgid "Image Background &Opacity:"
+msgstr "&Ранги замина"
+
+#. i18n: ectx: property (text), widget (QLabel, lblDescription)
+#: ui/forms/wdgnewimage.ui:446
+#, fuzzy
+msgid "&Description:"
+msgstr "Қатъ кардан"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: ui/forms/wdgnewimage.ui:459
+#, fuzzy
+#| msgid "Layers"
+msgid "Layers:"
+msgstr "Табақаҳо"
+
+#. i18n: ectx: property (text), widget (QLabel, lblColor)
+#: ui/forms/wdgnewimage.ui:466
 #, fuzzy
 msgid "&Image Background Color:"
 msgstr "&Ранги замина"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, cmbColor)
-#: ui/forms/wdgnewimage.ui:419
+#: ui/forms/wdgnewimage.ui:510
 #, fuzzy
 msgid "Reset the image background color in the Image Properties dialog"
 msgstr "&Ранги замина"
 
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: ui/forms/wdgnewimage.ui:440
-#, fuzzy
-msgid "Number of layers:"
-msgstr "Резолюсияи тасвири X:"
-
-#. i18n: ectx: property (text), widget (QLabel, lblOpacity)
-#: ui/forms/wdgnewimage.ui:460
-#, fuzzy
-msgid "Image Background &Opacity:"
-msgstr "&Ранги замина"
-
-#. i18n: ectx: property (toolTip), widget (QSlider, sliderOpacity)
-#: ui/forms/wdgnewimage.ui:504
-#, fuzzy
-msgid "Opacity of the background color"
-msgstr "Пур кардани ҳамроҳи ранги замина"
-
-#. i18n: ectx: property (whatsThis), widget (QSlider, sliderOpacity)
-#: ui/forms/wdgnewimage.ui:507
-#, fuzzy
-msgid "Opacity of the background color."
-msgstr "Пур кардани ҳамроҳи ранги замина"
-
-#. i18n: ectx: property (text), widget (QLabel, lblDescription)
-#: ui/forms/wdgnewimage.ui:539
-#, fuzzy
-msgid "&Description:"
-msgstr "Қатъ кардан"
-
 #. i18n: ectx: property (text), widget (QPushButton, createButton)
-#: ui/forms/wdgnewimage.ui:596
+#: ui/forms/wdgnewimage.ui:575
 #, fuzzy
 msgid "&Create"
 msgstr "Намунаҳо"
@@ -15468,6 +15469,18 @@ msgid "&Close"
 msgstr "Ранг кардан"
 
 #, fuzzy
+#~ msgid "Number of layers:"
+#~ msgstr "Резолюсияи тасвири X:"
+
+#, fuzzy
+#~ msgid "Opacity of the background color"
+#~ msgstr "Пур кардани ҳамроҳи ранги замина"
+
+#, fuzzy
+#~ msgid "Opacity of the background color."
+#~ msgstr "Пур кардани ҳамроҳи ранги замина"
+
+#, fuzzy
 #~ msgid "Use Curve"
 #~ msgstr "&Асбоби Пур кардани"
 
@@ -16692,10 +16705,6 @@ msgstr "Ранг кардан"
 #~ msgstr "&Ба тарафи&дигар гардондан..."
 
 #, fuzzy
-#~ msgid "Random painting"
-#~ msgstr "Занондан"
-
-#, fuzzy
 #~ msgid "Filters test"
 #~ msgstr "&Сафед"
 
@@ -17673,10 +17682,6 @@ msgstr "Ранг кардан"
 #, fuzzy
 #~ msgid "&Perspective Transform"
 #~ msgstr "&Асбоби Хат задани"
-
-#, fuzzy
-#~ msgid "rotation"
-#~ msgstr "Занондан"
 
 #, fuzzy
 #~ msgid "Form1"
