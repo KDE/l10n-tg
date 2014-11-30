@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-27 07:46+0000\n"
+"POT-Creation-Date: 2014-11-30 07:50+0000\n"
 "PO-Revision-Date: 2005-09-17 13:29+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -409,10 +409,6 @@ msgstr ""
 "Иттилоотро, ки ҳамчун сироятшуда тасниф карда шудааст, ҳамчун хондашуда "
 "ишора намудан ва ҳамчунин онҳоро ба папкаи ишорашуда ҷойгир кардан."
 
-#: autotests/dbustest.cpp:17
-msgid "Test for KMail D-Bus interface"
-msgstr ""
-
 #: collectionpage/collectionmailinglistpage.cpp:53
 #, fuzzy
 #| msgid "Reply to Mailing-&List..."
@@ -458,7 +454,7 @@ msgstr "Иҷрои амал"
 msgid "Post to List"
 msgstr "Фиристониш"
 
-#: collectionpage/collectionmailinglistpage.cpp:138 messageactions.cpp:381
+#: collectionpage/collectionmailinglistpage.cpp:138 messageactions.cpp:390
 msgid "Subscribe to List"
 msgstr "Имзоиш"
 
@@ -1826,7 +1822,7 @@ msgctxt "@title:window for archiving a folder"
 msgid "Archive Folder"
 msgstr "&Папкаи нав..."
 
-#: dialog/archivefolderdialog.cpp:73 kmmainwidget.cpp:3685
+#: dialog/archivefolderdialog.cpp:73 kmmainwidget.cpp:3686
 #, fuzzy
 #| msgid "List Archives"
 msgctxt "@action"
@@ -2123,7 +2119,7 @@ msgstr "Ба файл захира кардан"
 msgid "Save email as text or html file"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:1177 kmmainwidget.cpp:3537
+#: editor/kmcomposewin.cpp:1177 kmmainwidget.cpp:3538
 #, fuzzy
 #| msgid "&Address Book..."
 msgid "New AddressBook Contact..."
@@ -2140,7 +2136,7 @@ msgstr "&Гузоштани файл..."
 msgid "&Insert Recent Text File"
 msgstr "Гузоштани файл"
 
-#: editor/kmcomposewin.cpp:1192 kmmainwidget.cpp:3028
+#: editor/kmcomposewin.cpp:1192 kmmainwidget.cpp:3029
 msgid "&Address Book"
 msgstr "&Китоби адресӣ"
 
@@ -3548,7 +3544,7 @@ msgstr "ғайри замимот"
 msgid "Removing duplicates"
 msgstr "Ҳузфи нусхаи иттилоот"
 
-#: job/removeduplicatemailjob.cpp:74 kmmainwidget.cpp:4676
+#: job/removeduplicatemailjob.cpp:74 kmmainwidget.cpp:4677
 #, fuzzy
 msgid "Done"
 msgstr "Иҷро шуд"
@@ -3673,7 +3669,7 @@ msgid "&Forward"
 msgstr "&Фиристониш"
 
 #. i18n: ectx: Menu (apply_filter_actions)
-#: kmail_part.rc:165 kmmainwidget.cpp:3362 kmmainwin.rc:165
+#: kmail_part.rc:165 kmmainwidget.cpp:3363 kmmainwin.rc:165
 msgid "A&pply Filter"
 msgstr "Истифода аз &филтр"
 
@@ -3713,6 +3709,13 @@ msgid "Please wait while the message is transferred"
 msgid_plural "Please wait while the %1 messages are transferred"
 msgstr[0] "Хотимаи фиристониши иттилооти %1-ро интизор шавед"
 msgstr[1] "Хотимаи фиристониши иттилоотҳои %1-ро интизор шавед"
+
+#: kmcommands.cpp:511
+#, fuzzy, kde-format
+#| msgid "<qt>File <b>%1</b> exists.<br>Do you want to replace it?</qt>"
+msgctxt "@info"
+msgid "File <filename>%1</filename> exists.<nl/>Do you want to replace it?"
+msgstr "<qt>Файли <b>%1</b> мавҷуд аст. Оё мехоҳед онро тағйир диҳед?</qt>"
 
 #: kmcommands.cpp:512
 msgid "Save to File"
@@ -3907,7 +3910,7 @@ msgstr ""
 msgid "Another mailer was found on system. Do you want to import data from it?"
 msgstr ""
 
-#: kmmainwidget.cpp:327 kmmainwidget.cpp:4359
+#: kmmainwidget.cpp:327 kmmainwidget.cpp:4360
 #, fuzzy
 #| msgid "Could not start certificate manager. Please check your installation."
 msgid "Could not start the import wizard. Please check your installation."
@@ -3915,7 +3918,7 @@ msgstr ""
 "Мудири сертификатҳоро ба кор андохта нашуд. Дурустии гузориши барномаро "
 "санҷед."
 
-#: kmmainwidget.cpp:329 kmmainwidget.cpp:4361
+#: kmmainwidget.cpp:329 kmmainwidget.cpp:4362
 #, fuzzy
 #| msgid "Unable to create account"
 msgid "Unable to start import wizard"
@@ -4003,6 +4006,39 @@ msgid "<qt>Are you sure you want to delete the empty folder <b>%1</b>?</qt>"
 msgstr ""
 "<qt>Оё мутмаинед, ки мехоҳед папкаи холии <b>%1</b>-ро ҳузф кунед?</qt>"
 
+#: kmmainwidget.cpp:1622
+#, fuzzy, kde-format
+msgid ""
+"<qt>Are you sure you want to delete the empty folder <resource>%1</resource> "
+"and all its subfolders? Those subfolders might not be empty and their "
+"contents will be discarded as well. <p><b>Beware</b> that discarded messages "
+"are not saved into your Trash folder and are permanently deleted.</p></qt>"
+msgstr ""
+"<qt>Оё мутмаинед, ки мехоҳед папкаи холии <b>%1</b>-ро бо тамоми "
+"зерпапкаҳояш ҳузф кунед?Он зерпапкаҳо метавон холӣ набошанд ва дохили онҳо "
+"низ ҳамчунин ҳузф хоҳад шуд.</qt>"
+
+#: kmmainwidget.cpp:1631
+#, fuzzy, kde-format
+msgid ""
+"<qt>Are you sure you want to delete the folder <resource>%1</resource>, "
+"discarding its contents? <p><b>Beware</b> that discarded messages are not "
+"saved into your Trash folder and are permanently deleted.</p></qt>"
+msgstr ""
+"<qt>Оё мутмаинед, ки мехоҳед папкаи <b>%1</b>-ро бо тамоми дохили он ҳузф "
+"кунед?</qt>"
+
+#: kmmainwidget.cpp:1637
+#, fuzzy, kde-format
+msgid ""
+"<qt>Are you sure you want to delete the folder <resource>%1</resource> and "
+"all its subfolders, discarding their contents? <p><b>Beware</b> that "
+"discarded messages are not saved into your Trash folder and are permanently "
+"deleted.</p></qt>"
+msgstr ""
+"<qt>Оё мехоҳед папкаи <b>%1</b>-ро бо тамоми зерпапка ва дохили онро ҳузф "
+"кунед?</qt>"
+
 #: kmmainwidget.cpp:1644
 #, fuzzy
 msgctxt "@action:button Delete folder"
@@ -4032,7 +4068,7 @@ msgstr ""
 "метавонад эҳтимолоти онро, ки системаи шумо бо ёрии тарзи шикасти аллакай "
 "мавҷудбуда ва ояндавии нуқсонро низ баландтар кунад."
 
-#: kmmainwidget.cpp:1696 kmmainwidget.cpp:4819
+#: kmmainwidget.cpp:1696 kmmainwidget.cpp:4820
 msgid "Security Warning"
 msgstr "Огоҳии системаи амният"
 
@@ -4190,279 +4226,279 @@ msgstr ""
 "Натавонистам маҷалаи GnuPG-ро боз кунам. Тасҳеҳ сабт шудани барномаро "
 "биозмоед."
 
-#: kmmainwidget.cpp:2970
+#: kmmainwidget.cpp:2971
 msgid "Save &As..."
 msgstr "Нигоҳ доштан &ҳамчун..."
 
-#: kmmainwidget.cpp:2984
+#: kmmainwidget.cpp:2985
 msgid "&Expire All Folders"
 msgstr "Озод намудани папкаҳо аз &иттилоотҳои кӯҳнашуда"
 
-#: kmmainwidget.cpp:2989
+#: kmmainwidget.cpp:2990
 msgid "Check &Mail"
 msgstr "Озмоиши &почта"
 
-#: kmmainwidget.cpp:2995
+#: kmmainwidget.cpp:2996
 #, fuzzy
 #| msgid "Check Mail &In"
 msgid "Check Mail In"
 msgstr "&Озмоиши почта дар қуттии"
 
-#: kmmainwidget.cpp:2996 kmmainwidget.cpp:2997
+#: kmmainwidget.cpp:2997 kmmainwidget.cpp:2998
 #, fuzzy
 #| msgid "Check &Mail"
 msgid "Check Mail"
 msgstr "Озмоиши &почта"
 
-#: kmmainwidget.cpp:3006
+#: kmmainwidget.cpp:3007
 msgid "&Send Queued Messages"
 msgstr "Фиристодани &аз навбат"
 
-#: kmmainwidget.cpp:3015
+#: kmmainwidget.cpp:3016
 msgid "Online status (unknown)"
 msgstr ""
 
-#: kmmainwidget.cpp:3018
+#: kmmainwidget.cpp:3019
 #, fuzzy
 msgid "Send Queued Messages Via"
 msgstr "Фиристодани &аз навбат"
 
-#: kmmainwidget.cpp:3037
+#: kmmainwidget.cpp:3038
 #, fuzzy
 #| msgid "Certificate Manager..."
 msgid "Certificate Manager"
 msgstr "Идоракунӣ бо сертификатҳо..."
 
-#: kmmainwidget.cpp:3046
+#: kmmainwidget.cpp:3047
 #, fuzzy
 #| msgid "GnuPG Log Viewer..."
 msgid "GnuPG Log Viewer"
 msgstr "Маҷалаи GnuPG..."
 
-#: kmmainwidget.cpp:3059
+#: kmmainwidget.cpp:3060
 #, fuzzy
 #| msgid "&Import Messages..."
 msgid "&Import Messages..."
 msgstr "&Содироти хатҳо..."
 
-#: kmmainwidget.cpp:3069
+#: kmmainwidget.cpp:3070
 msgid "&Debug Sieve..."
 msgstr ""
 
-#: kmmainwidget.cpp:3076
+#: kmmainwidget.cpp:3077
 msgid "Filter &Log Viewer..."
 msgstr "Маҷалаи &амали филтрҳо..."
 
-#: kmmainwidget.cpp:3081
+#: kmmainwidget.cpp:3082
 msgid "&Anti-Spam Wizard..."
 msgstr "&Устоди зидди спам..."
 
-#: kmmainwidget.cpp:3086
+#: kmmainwidget.cpp:3087
 msgid "&Anti-Virus Wizard..."
 msgstr "&Устоди зидди вирус..."
 
-#: kmmainwidget.cpp:3091
+#: kmmainwidget.cpp:3092
 #, fuzzy
 #| msgid "&Anti-Spam Wizard..."
 msgid "&Account Wizard..."
 msgstr "&Устоди зидди спам..."
 
-#: kmmainwidget.cpp:3096
+#: kmmainwidget.cpp:3097
 #, fuzzy
 #| msgid "&Anti-Spam Wizard..."
 msgid "&Import Wizard..."
 msgstr "&Устоди зидди спам..."
 
-#: kmmainwidget.cpp:3101
+#: kmmainwidget.cpp:3102
 msgid "Edit \"Out of Office\" Replies..."
 msgstr "Тағйири ҷавобҳо \"берун аз офис\"..."
 
-#: kmmainwidget.cpp:3107
+#: kmmainwidget.cpp:3108
 #, fuzzy
 #| msgid "Configure &Notifications..."
 msgid "&Configure Automatic Archiving..."
 msgstr "Танзимоти &маълумот..."
 
-#: kmmainwidget.cpp:3113
+#: kmmainwidget.cpp:3114
 #, fuzzy
 #| msgid "Deleting messages"
 msgid "Delayed Messages..."
 msgstr "Ҳузфи иттилоот"
 
-#: kmmainwidget.cpp:3119
+#: kmmainwidget.cpp:3120
 #, fuzzy
 #| msgid "&Find Messages..."
 msgid "Followup Reminder Messages..."
 msgstr "&Ҷустуҷӯи иттилоот..."
 
-#: kmmainwidget.cpp:3134 kmmainwidget.cpp:4141
+#: kmmainwidget.cpp:3135 kmmainwidget.cpp:4142
 #, fuzzy
 msgctxt "@action Hard delete, bypassing trash"
 msgid "&Delete"
 msgstr "ҳузфшуда"
 
-#: kmmainwidget.cpp:3139 kmmainwidget.cpp:4143
+#: kmmainwidget.cpp:3140 kmmainwidget.cpp:4144
 #, fuzzy
 msgid "M&ove Thread to Trash"
 msgstr "Ба сабад ҷойгир кардан"
 
-#: kmmainwidget.cpp:3143
+#: kmmainwidget.cpp:3144
 #, fuzzy
 msgid "Move thread to trashcan"
 msgstr "Гузаронидани иттилоот ба сабад"
 
-#: kmmainwidget.cpp:3146 kmmainwidget.cpp:4143
+#: kmmainwidget.cpp:3147 kmmainwidget.cpp:4144
 #, fuzzy
 msgid "Delete T&hread"
 msgstr "ҳузфшуда"
 
-#: kmmainwidget.cpp:3151 kmmainwidget.cpp:4145
+#: kmmainwidget.cpp:3152 kmmainwidget.cpp:4146
 msgid "&Find Messages..."
 msgstr "&Ҷустуҷӯи иттилоот..."
 
-#: kmmainwidget.cpp:3157
+#: kmmainwidget.cpp:3158
 msgid "Select &All Messages"
 msgstr "Ҷудо кардани &тамоми иттилоот"
 
-#: kmmainwidget.cpp:3165
+#: kmmainwidget.cpp:3166
 #, fuzzy
 msgid "&Mailing List Management..."
 msgstr "Рӯйхати фиристониш"
 
-#: kmmainwidget.cpp:3170
+#: kmmainwidget.cpp:3171
 msgid "&Assign Shortcut..."
 msgstr ""
 
-#: kmmainwidget.cpp:3187
+#: kmmainwidget.cpp:3188
 #, fuzzy
 msgid "&Expiration Settings"
 msgstr "Их&тисосҳои мавҷудӣ:"
 
-#: kmmainwidget.cpp:3203
+#: kmmainwidget.cpp:3204
 #, fuzzy
 #| msgid "&New Folder..."
 msgid "&Archive Folder..."
 msgstr "&Папкаи нав..."
 
-#: kmmainwidget.cpp:3211
+#: kmmainwidget.cpp:3212
 msgid "Load E&xternal References"
 msgstr ""
 
-#: kmmainwidget.cpp:3234
+#: kmmainwidget.cpp:3235
 #, fuzzy
 #| msgid "New Message To..."
 msgid "Copy Message To..."
 msgstr "Иттилооти нав ба..."
 
-#: kmmainwidget.cpp:3236
+#: kmmainwidget.cpp:3237
 #, fuzzy
 #| msgid "New Message To..."
 msgid "Move Message To..."
 msgstr "Иттилооти нав ба..."
 
-#: kmmainwidget.cpp:3241
+#: kmmainwidget.cpp:3242
 msgid "&New Message..."
 msgstr "&Иттилооти нав..."
 
-#: kmmainwidget.cpp:3243
+#: kmmainwidget.cpp:3244
 #, fuzzy
 #| msgid "New"
 msgctxt "@action:intoolbar New Empty Message"
 msgid "New"
 msgstr "Эҷод кардан"
 
-#: kmmainwidget.cpp:3251
+#: kmmainwidget.cpp:3252
 #, fuzzy
 msgid "Message From &Template"
 msgstr "Иттилооти нав аз сервер нест"
 
-#: kmmainwidget.cpp:3261
+#: kmmainwidget.cpp:3262
 msgid "New Message t&o Mailing-List..."
 msgstr "Фиристодан &ба рӯйхати фиристониш..."
 
-#: kmmainwidget.cpp:3268
+#: kmmainwidget.cpp:3269
 msgid "Send A&gain..."
 msgstr "Такроран &фиристодан..."
 
-#: kmmainwidget.cpp:3273
+#: kmmainwidget.cpp:3274
 msgid "&Create Filter"
 msgstr "&Эҷоди филтр"
 
-#: kmmainwidget.cpp:3278
+#: kmmainwidget.cpp:3279
 msgid "Filter on &Subject..."
 msgstr "Филтронӣ аз рӯи &мавзӯъ..."
 
-#: kmmainwidget.cpp:3285
+#: kmmainwidget.cpp:3286
 msgid "Filter on &From..."
 msgstr "Филтронӣ аз рӯи &фиристонанда..."
 
-#: kmmainwidget.cpp:3291
+#: kmmainwidget.cpp:3292
 msgid "Filter on &To..."
 msgstr "Филтронӣ аз рӯи &қабулкунанда..."
 
-#: kmmainwidget.cpp:3298
+#: kmmainwidget.cpp:3299
 #, fuzzy
 msgid "New Message From &Template"
 msgstr "Иттилооти нав аз сервер нест"
 
-#: kmmainwidget.cpp:3304
+#: kmmainwidget.cpp:3305
 msgid "Mark &Thread"
 msgstr "Игора намудани &мунозирот"
 
-#: kmmainwidget.cpp:3307
+#: kmmainwidget.cpp:3308
 msgid "Mark Thread as &Read"
 msgstr "Ишора намудани мунозирот ҳамчун &хондашуда"
 
-#: kmmainwidget.cpp:3310
+#: kmmainwidget.cpp:3311
 msgid "Mark all messages in the selected thread as read"
 msgstr "Ишора намудани тамоми иттилоот дар мунозирот ҳамчун хондашуда"
 
-#: kmmainwidget.cpp:3313
+#: kmmainwidget.cpp:3314
 msgid "Mark Thread as &Unread"
 msgstr "Ишора намудани мунозирот ҳамчун &хонданашуда"
 
-#: kmmainwidget.cpp:3316
+#: kmmainwidget.cpp:3317
 msgid "Mark all messages in the selected thread as unread"
 msgstr "Ишора намудани иттилоот мунозирот ҳамчун хонданашуда"
 
-#: kmmainwidget.cpp:3322
+#: kmmainwidget.cpp:3323
 msgid "Mark Thread as &Important"
 msgstr "Ишора намудани мунозирот ҳамчун &хондашуда"
 
-#: kmmainwidget.cpp:3325
+#: kmmainwidget.cpp:3326
 msgid "Remove &Important Thread Mark"
 msgstr "Аз мунозироти &муҳим, гирфтани ишора"
 
-#: kmmainwidget.cpp:3328
+#: kmmainwidget.cpp:3329
 #, fuzzy
 #| msgid "Mark Thread as &New"
 msgid "Mark Thread as &Action Item"
 msgstr "Ишора намудани мунозирот ҳамчун &нав"
 
-#: kmmainwidget.cpp:3331
+#: kmmainwidget.cpp:3332
 #, fuzzy
 #| msgid "Remove &Important Message Mark"
 msgid "Remove &Action Item Thread Mark"
 msgstr "Гирифтани нишонаи \"&муҳим\""
 
-#: kmmainwidget.cpp:3335
+#: kmmainwidget.cpp:3336
 msgid "&Watch Thread"
 msgstr "Мушоҳида намудани &мунозирот"
 
-#: kmmainwidget.cpp:3339
+#: kmmainwidget.cpp:3340
 msgid "&Ignore Thread"
 msgstr "&Ба эътибор нагирифтани мунозирот"
 
-#: kmmainwidget.cpp:3347 kmreadermainwin.cpp:334
+#: kmmainwidget.cpp:3348 kmreadermainwin.cpp:334
 msgid "Save A&ttachments..."
 msgstr "&Захира кардани тамоми замимот..."
 
-#: kmmainwidget.cpp:3356
+#: kmmainwidget.cpp:3357
 #, fuzzy
 msgid "Appl&y All Filters"
 msgstr "Истифода аз &филтрҳо"
 
-#: kmmainwidget.cpp:3366
+#: kmmainwidget.cpp:3367
 #, fuzzy
 #| msgctxt "View->"
 #| msgid "&Expand Thread"
@@ -4470,13 +4506,13 @@ msgctxt "View->"
 msgid "&Expand Thread / Group"
 msgstr "&Боз кардани мубоҳисот"
 
-#: kmmainwidget.cpp:3369
+#: kmmainwidget.cpp:3370
 #, fuzzy
 #| msgid "Expand the current thread"
 msgid "Expand the current thread or group"
 msgstr "Боз кардани мубоҳисоти ҷорӣ"
 
-#: kmmainwidget.cpp:3373
+#: kmmainwidget.cpp:3374
 #, fuzzy
 #| msgctxt "View->"
 #| msgid "&Collapse Thread"
@@ -4484,105 +4520,105 @@ msgctxt "View->"
 msgid "&Collapse Thread / Group"
 msgstr "&Пинҳон кардани мунозирот"
 
-#: kmmainwidget.cpp:3376
+#: kmmainwidget.cpp:3377
 #, fuzzy
 #| msgid "Collapse the current thread"
 msgid "Collapse the current thread or group"
 msgstr "Пинҳон кардани мунозирот"
 
-#: kmmainwidget.cpp:3380
+#: kmmainwidget.cpp:3381
 msgctxt "View->"
 msgid "Ex&pand All Threads"
 msgstr "Б&оз кардани тамоми мунозирот"
 
-#: kmmainwidget.cpp:3383
+#: kmmainwidget.cpp:3384
 msgid "Expand all threads in the current folder"
 msgstr "Боз кардани тамоми мунозирот дар папкаи ҷорӣ"
 
-#: kmmainwidget.cpp:3387
+#: kmmainwidget.cpp:3388
 msgctxt "View->"
 msgid "C&ollapse All Threads"
 msgstr "П&инҳон кардани тамоми мунозирот"
 
-#: kmmainwidget.cpp:3390
+#: kmmainwidget.cpp:3391
 msgid "Collapse all threads in the current folder"
 msgstr "Пинҳон кардани мунозирот дар папкаи ҷорӣ"
 
-#: kmmainwidget.cpp:3394
+#: kmmainwidget.cpp:3395
 #, fuzzy
 msgid "&Display Message"
 msgstr "&Андозаи иттилоот"
 
-#: kmmainwidget.cpp:3403
+#: kmmainwidget.cpp:3404
 msgid "&Next Message"
 msgstr "Иттилооти &навбатӣ"
 
-#: kmmainwidget.cpp:3406
+#: kmmainwidget.cpp:3407
 msgid "Go to the next message"
 msgstr "Гузаштан ба иттилооти навбатӣ"
 
-#: kmmainwidget.cpp:3410
+#: kmmainwidget.cpp:3411
 msgid "Next &Unread Message"
 msgstr "Хонданашудаи &навбатӣ"
 
-#: kmmainwidget.cpp:3418
+#: kmmainwidget.cpp:3419
 msgctxt "@action:inmenu Goto next unread message"
 msgid "Next"
 msgstr ""
 
-#: kmmainwidget.cpp:3419
+#: kmmainwidget.cpp:3420
 msgid "Go to the next unread message"
 msgstr "Гузаштан ба иттилооти хонданашудаи навбатӣ"
 
-#: kmmainwidget.cpp:3423
+#: kmmainwidget.cpp:3424
 msgid "&Previous Message"
 msgstr "&Иттилооти қаблӣ"
 
-#: kmmainwidget.cpp:3425
+#: kmmainwidget.cpp:3426
 msgid "Go to the previous message"
 msgstr "Гузаштан ба иттилооти қаблӣ"
 
-#: kmmainwidget.cpp:3430
+#: kmmainwidget.cpp:3431
 msgid "Previous Unread &Message"
 msgstr "&Хонданашудаи қаблӣ"
 
-#: kmmainwidget.cpp:3438
+#: kmmainwidget.cpp:3439
 #, fuzzy
 #| msgid "&Previous Card"
 msgctxt "@action:inmenu Goto previous unread message."
 msgid "Previous"
 msgstr "&Корти қаблӣ"
 
-#: kmmainwidget.cpp:3439
+#: kmmainwidget.cpp:3440
 msgid "Go to the previous unread message"
 msgstr "Гузаштан ба иттилооти хонданашудаи қаблӣ"
 
-#: kmmainwidget.cpp:3443
+#: kmmainwidget.cpp:3444
 msgid "Next Unread &Folder"
 msgstr "Папкаи хонданашудаи &навбатӣ"
 
-#: kmmainwidget.cpp:3447
+#: kmmainwidget.cpp:3448
 msgid "Go to the next folder with unread messages"
 msgstr "Гузаштан ба папкаи навбатӣ бо иттилооти хонданашуда"
 
-#: kmmainwidget.cpp:3450
+#: kmmainwidget.cpp:3451
 msgid "Previous Unread F&older"
 msgstr "&Папкаи хонданашудаи қаблӣ"
 
-#: kmmainwidget.cpp:3453
+#: kmmainwidget.cpp:3454
 msgid "Go to the previous folder with unread messages"
 msgstr "Гузаштан ба папкаи қаблӣ бо иттилооти хонданашуда"
 
-#: kmmainwidget.cpp:3457
+#: kmmainwidget.cpp:3458
 msgctxt "Go->"
 msgid "Next Unread &Text"
 msgstr "Матни &хонданашудаи навбатӣ"
 
-#: kmmainwidget.cpp:3460
+#: kmmainwidget.cpp:3461
 msgid "Go to the next unread text"
 msgstr "Гузаштан ба матни хонданашудаи навбатӣ"
 
-#: kmmainwidget.cpp:3461
+#: kmmainwidget.cpp:3462
 msgid ""
 "Scroll down current message. If at end of current message, go to next unread "
 "message."
@@ -4590,214 +4626,214 @@ msgstr ""
 "Саҳифа гардонидани иттилоот. Ҳангоми расидани охири иттилоот, ба иттилооти "
 "хонданашудаи навбатӣ гузаштан."
 
-#: kmmainwidget.cpp:3469
+#: kmmainwidget.cpp:3470
 msgid "Configure &Filters..."
 msgstr "Танзимоти &филтрҳо..."
 
-#: kmmainwidget.cpp:3475
+#: kmmainwidget.cpp:3476
 #, fuzzy
 msgid "Manage &Sieve Scripts..."
 msgstr "Филтрҳои дастрас"
 
-#: kmmainwidget.cpp:3480
+#: kmmainwidget.cpp:3481
 msgid "KMail &Introduction"
 msgstr "&Мадхал ба KMail"
 
-#: kmmainwidget.cpp:3482
+#: kmmainwidget.cpp:3483
 msgid "Display KMail's Welcome Page"
 msgstr "Намоиши саҳифаи табаррукоти KMail"
 
-#: kmmainwidget.cpp:3491
+#: kmmainwidget.cpp:3492
 msgid "Configure &Notifications..."
 msgstr "Танзимоти &маълумот..."
 
-#: kmmainwidget.cpp:3498
+#: kmmainwidget.cpp:3499
 msgid "&Configure KMail..."
 msgstr "&Танзими KMail..."
 
-#: kmmainwidget.cpp:3505
+#: kmmainwidget.cpp:3506
 #, fuzzy
 msgid "Expire..."
 msgstr "Озод кардан аз кӯҳнашуда"
 
-#: kmmainwidget.cpp:3511
+#: kmmainwidget.cpp:3512
 #, fuzzy
 #| msgid "&New Folder..."
 msgid "Add Favorite Folder..."
 msgstr "&Папкаи нав..."
 
-#: kmmainwidget.cpp:3517
+#: kmmainwidget.cpp:3518
 #, fuzzy
 #| msgid "Subscription..."
 msgid "Serverside Subscription..."
 msgstr "Обуна..."
 
-#: kmmainwidget.cpp:3523
+#: kmmainwidget.cpp:3524
 #, fuzzy
 msgid "Appl&y All Filters On Folder"
 msgstr "Истифода аз &филтрҳо"
 
-#: kmmainwidget.cpp:3531
+#: kmmainwidget.cpp:3532
 #, fuzzy
 #| msgid "&Configure KMail..."
 msgid "&Export KMail Data..."
 msgstr "&Танзими KMail..."
 
-#: kmmainwidget.cpp:3561
+#: kmmainwidget.cpp:3562
 msgid "Copy Message to Folder"
 msgstr "Копӣ кардани иттилоот - интихоби папка"
 
-#: kmmainwidget.cpp:3568
+#: kmmainwidget.cpp:3569
 #, fuzzy
 msgid "Jump to Folder..."
 msgstr "Ба ин папка копӣ кардан"
 
-#: kmmainwidget.cpp:3575
+#: kmmainwidget.cpp:3576
 msgid "Abort Current Operation"
 msgstr "Барҳам додани амалиёти ҷорӣ"
 
-#: kmmainwidget.cpp:3582
+#: kmmainwidget.cpp:3583
 msgid "Focus on Next Folder"
 msgstr "Гузаштан ба папкаи навбатӣ"
 
-#: kmmainwidget.cpp:3589
+#: kmmainwidget.cpp:3590
 msgid "Focus on Previous Folder"
 msgstr "Гузаштан ба папкаи қаблӣ"
 
-#: kmmainwidget.cpp:3596
+#: kmmainwidget.cpp:3597
 msgid "Select Folder with Focus"
 msgstr "Интихоби папка барои гузариш"
 
-#: kmmainwidget.cpp:3604
+#: kmmainwidget.cpp:3605
 #, fuzzy
 #| msgid "Focus on Next Folder"
 msgid "Focus on First Folder"
 msgstr "Гузаштан ба папкаи навбатӣ"
 
-#: kmmainwidget.cpp:3611
+#: kmmainwidget.cpp:3612
 #, fuzzy
 #| msgid "Focus on Next Folder"
 msgid "Focus on Last Folder"
 msgstr "Гузаштан ба папкаи навбатӣ"
 
-#: kmmainwidget.cpp:3618
+#: kmmainwidget.cpp:3619
 #, fuzzy
 msgid "Focus on Next Message"
 msgstr "Гузаштан ба папкаи навбатӣ"
 
-#: kmmainwidget.cpp:3625
+#: kmmainwidget.cpp:3626
 #, fuzzy
 msgid "Focus on Previous Message"
 msgstr "Гузаштан ба папкаи қаблӣ"
 
-#: kmmainwidget.cpp:3632
+#: kmmainwidget.cpp:3633
 #, fuzzy
 #| msgid "Select &All Messages"
 msgid "Select First Message"
 msgstr "Ҷудо кардани &тамоми иттилоот"
 
-#: kmmainwidget.cpp:3639
+#: kmmainwidget.cpp:3640
 #, fuzzy
 #| msgid "Select &All Messages"
 msgid "Select Last Message"
 msgstr "Ҷудо кардани &тамоми иттилоот"
 
-#: kmmainwidget.cpp:3646
+#: kmmainwidget.cpp:3647
 #, fuzzy
 msgid "Select Message with Focus"
 msgstr "Интихоби папка барои гузариш"
 
-#: kmmainwidget.cpp:3654
+#: kmmainwidget.cpp:3655
 #, fuzzy
 #| msgid "Reset Quick Search"
 msgid "Set Focus to Quick Search"
 msgstr "Партоиши ҷустуҷӯи тези охирин"
 
-#: kmmainwidget.cpp:3663
+#: kmmainwidget.cpp:3664
 #, fuzzy
 msgid "Extend Selection to Previous Message"
 msgstr "Гузаштан ба папкаи қаблӣ"
 
-#: kmmainwidget.cpp:3670
+#: kmmainwidget.cpp:3671
 #, fuzzy
 msgid "Extend Selection to Next Message"
 msgstr "Гузаштан ба папкаи навбатӣ"
 
-#: kmmainwidget.cpp:3678
+#: kmmainwidget.cpp:3679
 msgid "Move Message to Folder"
 msgstr "Гузаронидани иттилоот - интихоби папка"
 
-#: kmmainwidget.cpp:3698
+#: kmmainwidget.cpp:3699
 #, fuzzy
 msgid "Add Favorite Folder"
 msgstr "&Папкаи нав..."
 
-#: kmmainwidget.cpp:4032
+#: kmmainwidget.cpp:4033
 msgid "E&mpty Trash"
 msgstr "П&ок кардани сабад"
 
-#: kmmainwidget.cpp:4032
+#: kmmainwidget.cpp:4033
 msgid "&Move All Messages to Trash"
 msgstr "&Ҷойгир кардани тамоми иттилоот ба сабад"
 
-#: kmmainwidget.cpp:4135
+#: kmmainwidget.cpp:4136
 #, fuzzy
 msgid "&Delete Search"
 msgstr "&Ҳузфи папка"
 
-#: kmmainwidget.cpp:4141 kmreadermainwin.cpp:337
+#: kmmainwidget.cpp:4142 kmreadermainwin.cpp:337
 msgid "&Move to Trash"
 msgstr "Ба &сабад ҷойгир кардан"
 
-#: kmmainwidget.cpp:4145
+#: kmmainwidget.cpp:4146
 #, fuzzy
 msgid "Edit Search..."
 msgstr "Тағйир кардан..."
 
-#: kmmainwidget.cpp:4247
+#: kmmainwidget.cpp:4248
 msgid "&Undo"
 msgstr ""
 
-#: kmmainwidget.cpp:4249
+#: kmmainwidget.cpp:4250
 #, kde-format
 msgid "&Undo: \"%1\""
 msgstr ""
 
-#: kmmainwidget.cpp:4295
+#: kmmainwidget.cpp:4296
 #, kde-format
 msgid "Filter %1"
 msgstr "Филтри %1"
 
-#: kmmainwidget.cpp:4587
+#: kmmainwidget.cpp:4588
 msgid "Network is unconnected. Folder information cannot be updated."
 msgstr ""
 
-#: kmmainwidget.cpp:4595 kmmainwidget.cpp:4644
+#: kmmainwidget.cpp:4596 kmmainwidget.cpp:4645
 #, fuzzy
 #| msgid "Retrieving folderlist"
 msgid "Retrieving folder properties"
 msgstr "Қабул намудани рӯйхати папкаҳо"
 
-#: kmmainwidget.cpp:4699
+#: kmmainwidget.cpp:4700
 #, fuzzy, kde-format
 #| msgid "Properties of Folder %1"
 msgctxt "@title:window"
 msgid "Properties of Folder %1"
 msgstr "Хусусиятҳои папкаи %1"
 
-#: kmmainwidget.cpp:4740
+#: kmmainwidget.cpp:4741
 msgid ""
 "IMAP server not configured yet. Please configure the server in the IMAP "
 "account before setting up server-side subscription."
 msgstr ""
 
-#: kmmainwidget.cpp:4742
+#: kmmainwidget.cpp:4743
 msgid ""
 "Log in failed, please configure the IMAP account before setting up server-"
 "side subscription."
 msgstr ""
 
-#: kmmainwidget.cpp:4766
+#: kmmainwidget.cpp:4767
 #, fuzzy
 #| msgid "Could not start certificate manager. Please check your installation."
 msgid ""
@@ -4807,20 +4843,20 @@ msgstr ""
 "Мудири сертификатҳоро ба кор андохта нашуд. Дурустии гузориши барномаро "
 "санҷед."
 
-#: kmmainwidget.cpp:4768
+#: kmmainwidget.cpp:4769
 #, fuzzy
 #| msgid "Unable to start external editor."
 msgid "Unable to start \"PIM Setting Exporter\" program"
 msgstr "Қодир ба оғоз намудани муҳаррири зоҳирӣ нестам."
 
-#: kmmainwidget.cpp:4808
+#: kmmainwidget.cpp:4809
 #, fuzzy, kde-format
 #| msgid "Subscription..."
 msgctxt "Show shortcut for focus quick search. Don't change it"
 msgid "Search...<%1>"
 msgstr "Обуна..."
 
-#: kmmainwidget.cpp:4816
+#: kmmainwidget.cpp:4817
 msgid ""
 "Use of HTML in mail will make you more vulnerable to \"spam\" and may "
 "increase the likelihood that your system will be compromised by other "
@@ -4830,7 +4866,7 @@ msgstr ""
 "метавонад эҳтимолоти онро, ки системаи шумо бо ёрии тарзи шикасти аллакай "
 "мавҷудбуда ва ояндавии нуқсонро низ баландтар кунад."
 
-#: kmmainwidget.cpp:4820
+#: kmmainwidget.cpp:4821
 msgid "Use HTML"
 msgstr "Истифода аз HTML"
 
@@ -5138,55 +5174,63 @@ msgstr "%1 мутобиқат (%2)"
 msgid "Attachment:"
 msgstr "&Замимот"
 
-#: messageactions.cpp:74
+#: mailmerge/tests/mailmergewidgettest_gui.cpp:29
+msgid "MailMergeWidgetTest_Gui"
+msgstr ""
+
+#: mailmerge/tests/mailmergewidgettest_gui.cpp:30
+msgid "Test for mailmerge widget"
+msgstr ""
+
+#: messageactions.cpp:79
 msgctxt "Message->"
 msgid "&Reply"
 msgstr "&Ҷавоб додан"
 
-#: messageactions.cpp:78 searchdialog/searchwindow.cpp:232
+#: messageactions.cpp:83 searchdialog/searchwindow.cpp:232
 msgid "&Reply..."
 msgstr "&Ҷавоб додан..."
 
-#: messageactions.cpp:84
+#: messageactions.cpp:89
 msgid "Reply to A&uthor..."
 msgstr "Шах&сан ҷавоб додан..."
 
-#: messageactions.cpp:90 searchdialog/searchwindow.cpp:236
+#: messageactions.cpp:95 searchdialog/searchwindow.cpp:236
 msgid "Reply to &All..."
 msgstr "Ба ҳама &ҷавоб додан..."
 
-#: messageactions.cpp:96 searchdialog/searchwindow.cpp:240
+#: messageactions.cpp:101 searchdialog/searchwindow.cpp:240
 msgid "Reply to Mailing-&List..."
 msgstr "Ба рӯйхати фиристониш &ҷавоб додан..."
 
-#: messageactions.cpp:103
+#: messageactions.cpp:108
 msgid "Reply Without &Quote..."
 msgstr "Ҷавоб додан &ғайри иқтибосӣ..."
 
-#: messageactions.cpp:108
+#: messageactions.cpp:113
 msgid "Filter on Mailing-&List..."
 msgstr "Филтронӣ аз рӯи &рӯйхати фиристониш..."
 
-#: messageactions.cpp:112
+#: messageactions.cpp:117
 msgid "Mar&k Message"
 msgstr "&Ишора кардан"
 
-#: messageactions.cpp:132
+#: messageactions.cpp:137
 msgid "&Edit Message"
 msgstr "&Тағйири иттилоот"
 
-#: messageactions.cpp:137 messageactions.cpp:284
+#: messageactions.cpp:142 messageactions.cpp:293
 #, fuzzy
 #| msgid "Add..."
 msgid "Add Note..."
 msgstr "Афзудан..."
 
-#: messageactions.cpp:146 searchdialog/searchwindow.cpp:244
+#: messageactions.cpp:151 searchdialog/searchwindow.cpp:244
 msgctxt "Message->"
 msgid "&Forward"
 msgstr "&Фиристониш"
 
-#: messageactions.cpp:151
+#: messageactions.cpp:156
 #, fuzzy
 #| msgctxt "Message->Forward->"
 #| msgid "As &Attachment..."
@@ -5194,85 +5238,91 @@ msgctxt "@action:inmenu Message->Forward->"
 msgid "As &Attachment..."
 msgstr "&Ҳамчун замимот..."
 
-#: messageactions.cpp:159
+#: messageactions.cpp:164
 #, fuzzy
 #| msgid "&Inline..."
 msgctxt "@action:inmenu Message->Forward->"
 msgid "&Inline..."
 msgstr "&Дар иттилоот..."
 
-#: messageactions.cpp:167
+#: messageactions.cpp:172
 msgctxt "Message->Forward->"
 msgid "&Redirect..."
 msgstr "&Фиристониш..."
 
-#: messageactions.cpp:176
+#: messageactions.cpp:181
 #, fuzzy
 #| msgid "Reply to Mailing-&List..."
 msgctxt "Message->"
 msgid "Mailing-&List"
 msgstr "Ба рӯйхати фиристониш &ҷавоб додан..."
 
-#: messageactions.cpp:286
+#: messageactions.cpp:206
+#, fuzzy
+#| msgid "&Find Messages..."
+msgid "Add Followup Reminder..."
+msgstr "&Ҷустуҷӯи иттилоот..."
+
+#: messageactions.cpp:295
 #, fuzzy
 msgid "Edit Note..."
 msgstr "Тағйир кардан..."
 
-#: messageactions.cpp:327
+#: messageactions.cpp:336
 msgid "Filter on Mailing-List..."
 msgstr "Филтронидан аз рӯи рӯйхати фиристониш..."
 
-#: messageactions.cpp:366
+#: messageactions.cpp:375
 #, fuzzy
 #| msgid "OpenPGP Message - Bad Signature"
 msgid "Open Message in List Archive"
 msgstr "Иттилооти OpenPGP - имзои нодуруст"
 
-#: messageactions.cpp:369
+#: messageactions.cpp:378
 #, fuzzy
 #| msgid "New Message"
 msgid "Post New Message"
 msgstr "Иттилооти нав"
 
-#: messageactions.cpp:372
+#: messageactions.cpp:381
 #, fuzzy
 msgid "Go to Archive"
 msgstr "Фиристониш"
 
-#: messageactions.cpp:375
+#: messageactions.cpp:384
 #, fuzzy
 #| msgid "List Help"
 msgid "Request Help"
 msgstr "Маълумот"
 
-#: messageactions.cpp:378
+#: messageactions.cpp:387
 #, fuzzy
 #| msgid "Contacts"
 msgctxt "Contact the owner of the mailing list"
 msgid "Contact Owner"
 msgstr "Алоқотҳо"
 
-#: messageactions.cpp:384
+#: messageactions.cpp:393
 #, fuzzy
 #| msgid "Unsubscribe from List"
 msgid "Unsubscribe from List"
 msgstr "Ҷавоби хаттӣ"
 
-#: messageactions.cpp:393
+#: messageactions.cpp:402
 #, kde-format
 msgid "Filter on Mailing-List %1..."
 msgstr "Филтри аз рӯи рӯйхати фиристониши %1..."
 
-#: messageactions.cpp:557
+#: messageactions.cpp:566
 #, fuzzy
 msgid "email"
 msgstr "Почта"
 
-#: messageactions.cpp:560
+#: messageactions.cpp:569
 msgid "web"
 msgstr ""
 
-#: messageactions.cpp:563
+#: messageactions.cpp:572
 #, fuzzy, kde-format
 #| msgid "Mail"
 msgctxt ""
@@ -5281,12 +5331,12 @@ msgctxt ""
 msgid "%1 (%2)"
 msgstr "Почта"
 
-#: messageactions.cpp:630
+#: messageactions.cpp:639
 #, kde-format
 msgid "Search for '%1' with"
 msgstr ""
 
-#: messageactions.cpp:644
+#: messageactions.cpp:653
 #, fuzzy
 #| msgid "Configure &Filters..."
 msgid "Configure Web Shortcuts..."
@@ -7449,43 +7499,6 @@ msgstr[1] "Тағйири ҷавобҳо \"берун аз офис\"..."
 #, fuzzy
 #~ msgid "Addnewtag..."
 #~ msgstr "Афзудани вурудот"
-
-#, fuzzy
-#~| msgid "<qt>File <b>%1</b> exists.<br>Do you want to replace it?</qt>"
-#~ msgctxt "@info"
-#~ msgid "File <filename>%1</filename> exists.<nl/>Do you want to replace it?"
-#~ msgstr "<qt>Файли <b>%1</b> мавҷуд аст. Оё мехоҳед онро тағйир диҳед?</qt>"
-
-#, fuzzy
-#~ msgid ""
-#~ "<qt>Are you sure you want to delete the empty folder <resource>%1</"
-#~ "resource> and all its subfolders? Those subfolders might not be empty and "
-#~ "their contents will be discarded as well. <p><b>Beware</b> that discarded "
-#~ "messages are not saved into your Trash folder and are permanently deleted."
-#~ "</p></qt>"
-#~ msgstr ""
-#~ "<qt>Оё мутмаинед, ки мехоҳед папкаи холии <b>%1</b>-ро бо тамоми "
-#~ "зерпапкаҳояш ҳузф кунед?Он зерпапкаҳо метавон холӣ набошанд ва дохили "
-#~ "онҳо низ ҳамчунин ҳузф хоҳад шуд.</qt>"
-
-#, fuzzy
-#~ msgid ""
-#~ "<qt>Are you sure you want to delete the folder <resource>%1</resource>, "
-#~ "discarding its contents? <p><b>Beware</b> that discarded messages are not "
-#~ "saved into your Trash folder and are permanently deleted.</p></qt>"
-#~ msgstr ""
-#~ "<qt>Оё мутмаинед, ки мехоҳед папкаи <b>%1</b>-ро бо тамоми дохили он ҳузф "
-#~ "кунед?</qt>"
-
-#, fuzzy
-#~ msgid ""
-#~ "<qt>Are you sure you want to delete the folder <resource>%1</resource> "
-#~ "and all its subfolders, discarding their contents? <p><b>Beware</b> that "
-#~ "discarded messages are not saved into your Trash folder and are "
-#~ "permanently deleted.</p></qt>"
-#~ msgstr ""
-#~ "<qt>Оё мехоҳед папкаи <b>%1</b>-ро бо тамоми зерпапка ва дохили онро ҳузф "
-#~ "кунед?</qt>"
 
 #, fuzzy
 #~| msgid "Modify Account"
