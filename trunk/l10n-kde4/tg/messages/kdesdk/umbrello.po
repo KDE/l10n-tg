@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-10 01:56+0000\n"
+"POT-Creation-Date: 2014-12-14 02:00+0000\n"
 "PO-Revision-Date: 2005-09-17 13:21+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -720,11 +720,11 @@ msgstr "Дар вақти пайдоиши код синфҳои зеринро 
 #: codegenerators/ruby/rubycodegenerationformbase.ui:52
 #: dialogs/activitydialog.cpp:200 dialogs/objectnodedialog.cpp:193
 #: dialogs/pages/associationgeneralpage.cpp:83
+#: dialogs/pages/associationrolepage.cpp:92
 #: dialogs/pages/associationrolepage.cpp:93
-#: dialogs/pages/associationrolepage.cpp:94
-#: dialogs/pages/classgeneralpage.cpp:215
-#: dialogs/pages/classgeneralpage.cpp:277
-#: dialogs/pages/classgeneralpage.cpp:330
+#: dialogs/pages/classgeneralpage.cpp:186
+#: dialogs/pages/classgeneralpage.cpp:248
+#: dialogs/pages/classgeneralpage.cpp:301
 #: dialogs/pages/classifierlistpage.cpp:218
 #: dialogs/pages/diagrampropertiespage.ui:257
 #: dialogs/pages/umlrolepropertiesbase.ui:140
@@ -1528,7 +1528,7 @@ msgid "Class Name"
 msgstr "Номи синф"
 
 #: dialogs/activitydialog.cpp:43 dialogs/activitydialog.cpp:146
-#: dialogs/classpropertiesdialog.cpp:128 dialogs/objectnodedialog.cpp:45
+#: dialogs/classpropertiesdialog.cpp:125 dialogs/objectnodedialog.cpp:45
 #: dialogs/pages/associationgeneralpage.cpp:82
 #: dialogs/parameterpropertiesdialog.cpp:72 dialogs/statedialog.cpp:44
 #: dialogs/statedialog.cpp:119 dialogs/umlviewdialog.cpp:41
@@ -1574,8 +1574,8 @@ msgid "General"
 msgstr "Умумӣ"
 
 #: dialogs/activitydialog.cpp:142 dialogs/objectnodedialog.cpp:137
-#: dialogs/statedialog.cpp:115 dialogs/umlattributedialog.cpp:69
-#: dialogs/umlentityattributedialog.cpp:72 dialogs/umloperationdialog.cpp:89
+#: dialogs/statedialog.cpp:115 dialogs/umlattributedialog.cpp:70
+#: dialogs/umlentityattributedialog.cpp:72 dialogs/umloperationdialog.cpp:90
 #: dialogs/umltemplatedialog.cpp:65
 msgid "General Properties"
 msgstr "Хусусиятҳои умумӣ"
@@ -1622,7 +1622,7 @@ msgid "Association Properties"
 msgstr "Хусусияти ҷамъиятӣ"
 
 #: dialogs/associationpropertiesdialog.cpp:98
-#: dialogs/classpropertiesdialog.cpp:244 dialogs/classpropertiesdialog.cpp:381
+#: dialogs/classpropertiesdialog.cpp:241 dialogs/classpropertiesdialog.cpp:366
 #: dialogs/settingsdialog.cpp:173
 #: dialogs/umlforeignkeyconstraintdialog.cpp:202 dialogs/umlviewdialog.cpp:93
 msgid "General Settings"
@@ -1646,156 +1646,109 @@ msgstr "Нақшҳо"
 msgid "Role Settings"
 msgstr "Намои нақшҳо"
 
-#: dialogs/associationpropertiesdialog.cpp:110
-#, fuzzy
-#| msgid "Style:"
-msgctxt "style page name"
-msgid "Style"
-msgstr "Услуб:"
-
-#: dialogs/associationpropertiesdialog.cpp:110
-#, fuzzy
-#| msgid "Component"
-msgid "Role Style"
-msgstr "Қисмат"
-
-#: dialogs/associationpropertiesdialog.cpp:116
-#: dialogs/classpropertiesdialog.cpp:400 dialogs/dialogbase.cpp:98
-#: dialogs/settingsdialog.cpp:228 dialogs/umlviewdialog.cpp:154
-msgid "Font Settings"
-msgstr "Мизрубҳои навиштаҷот"
-
-#: dialogs/associationpropertiesdialog.cpp:116
-#, fuzzy
-msgctxt "font page name"
-msgid "Font"
-msgstr "Ҳарф:"
-
-#: dialogs/classpropertiesdialog.cpp:244
+#: dialogs/classpropertiesdialog.cpp:241
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings page name"
 msgid "General"
 msgstr "Умумӣ"
 
-#: dialogs/classpropertiesdialog.cpp:260 dialogs/dialogbase.cpp:123
-#, fuzzy
-#| msgid "Widget Color"
-msgid "Widget Style"
-msgstr "Ранги васеъкунӣ"
-
-#: dialogs/classpropertiesdialog.cpp:260
-#, fuzzy
-#| msgid "Style:"
-msgctxt "widget style page name"
-msgid "Style"
-msgstr "Услуб:"
-
-#: dialogs/classpropertiesdialog.cpp:272
+#: dialogs/classpropertiesdialog.cpp:257
 #, fuzzy
 #| msgid "Display"
 msgctxt "display option page name"
 msgid "Display"
 msgstr "Тасвир кардан"
 
-#: dialogs/classpropertiesdialog.cpp:272
+#: dialogs/classpropertiesdialog.cpp:257
 msgid "Display Options"
 msgstr "Намоиши интихобҳо"
 
-#: dialogs/classpropertiesdialog.cpp:285
+#: dialogs/classpropertiesdialog.cpp:270
 #: dialogs/pages/classifierlistpage.cpp:115 listpopupmenu.cpp:1119
 #: listpopupmenu.cpp:1155 refactoring/refactoringassistant.cpp:666
 msgid "Attributes"
 msgstr "Атрибутҳо"
 
-#: dialogs/classpropertiesdialog.cpp:285
+#: dialogs/classpropertiesdialog.cpp:270
 #, fuzzy
 msgid "Attribute Settings"
 msgstr "Танзимотҳои аттрибут"
 
-#: dialogs/classpropertiesdialog.cpp:297
+#: dialogs/classpropertiesdialog.cpp:282
 #: dialogs/pages/classifierlistpage.cpp:119 listpopupmenu.cpp:1122
 #: listpopupmenu.cpp:1164 refactoring/refactoringassistant.cpp:682
 msgid "Operations"
 msgstr "Амалиётҳо"
 
-#: dialogs/classpropertiesdialog.cpp:297
+#: dialogs/classpropertiesdialog.cpp:282
 msgid "Operation Settings"
 msgstr "Танзимотҳои амалиёт"
 
-#: dialogs/classpropertiesdialog.cpp:309
+#: dialogs/classpropertiesdialog.cpp:294
 #: dialogs/pages/classifierlistpage.cpp:123
 msgid "Templates"
 msgstr "Қолибҳо"
 
-#: dialogs/classpropertiesdialog.cpp:309
+#: dialogs/classpropertiesdialog.cpp:294
 msgid "Templates Settings"
 msgstr "Танзимотҳо қолибҳо"
 
-#: dialogs/classpropertiesdialog.cpp:321
+#: dialogs/classpropertiesdialog.cpp:306
 #: dialogs/pages/classifierlistpage.cpp:127
 msgid "Enum Literals"
 msgstr "Константаҳои гузаронидашуда"
 
-#: dialogs/classpropertiesdialog.cpp:321
+#: dialogs/classpropertiesdialog.cpp:306
 msgid "Enum Literals Settings"
 msgstr "Шакли константаҳои гузаронидашуда"
 
-#: dialogs/classpropertiesdialog.cpp:333
+#: dialogs/classpropertiesdialog.cpp:318
 #: dialogs/pages/classifierlistpage.cpp:131
 #, fuzzy
 msgid "Entity Attributes"
 msgstr "Атрибутҳо"
 
-#: dialogs/classpropertiesdialog.cpp:333
+#: dialogs/classpropertiesdialog.cpp:318
 #, fuzzy
 msgid "Entity Attributes Settings"
 msgstr "Танзимотҳои аттрибут"
 
-#: dialogs/classpropertiesdialog.cpp:345
+#: dialogs/classpropertiesdialog.cpp:330
 #, fuzzy
 msgid "Entity Constraints"
 msgstr "Атрибутҳо"
 
-#: dialogs/classpropertiesdialog.cpp:345
+#: dialogs/classpropertiesdialog.cpp:330
 #, fuzzy
 msgid "Entity Constraints Settings"
 msgstr "Танзимотҳои аттрибут"
 
-#: dialogs/classpropertiesdialog.cpp:357
+#: dialogs/classpropertiesdialog.cpp:342
 #, fuzzy
 msgctxt "contents settings page name"
 msgid "Contents"
 msgstr "Гунҷоиш"
 
-#: dialogs/classpropertiesdialog.cpp:357
+#: dialogs/classpropertiesdialog.cpp:342
 msgid "Contents Settings"
 msgstr "Танзимотҳои мундариҷа"
 
-#: dialogs/classpropertiesdialog.cpp:369
+#: dialogs/classpropertiesdialog.cpp:354
 #: dialogs/pages/classassociationspage.cpp:44
 msgid "Associations"
 msgstr "Ширкатҳо"
 
-#: dialogs/classpropertiesdialog.cpp:369
+#: dialogs/classpropertiesdialog.cpp:354
 msgid "Class Associations"
 msgstr "Ширкатҳои синфӣ"
 
-#: dialogs/classpropertiesdialog.cpp:381
+#: dialogs/classpropertiesdialog.cpp:366
 #, fuzzy
 #| msgid "General"
 msgctxt "instance general settings page name"
 msgid "General"
 msgstr "Умумӣ"
-
-#. i18n: ectx: label, entry (uiFont), group (UI Options)
-#. i18n: ectx: label, entry (codeViewerFont), group (Code Viewer Options)
-#: dialogs/classpropertiesdialog.cpp:399 dialogs/dialogbase.cpp:98
-#: dialogs/settingsdialog.cpp:227 dialogs/umlviewdialog.cpp:153
-#: umbrello.kcfg:165 umbrello.kcfg:275
-#, fuzzy
-msgid "Font"
-msgstr "Ҳарф:"
 
 #: dialogs/classwizard.cpp:44 model_utils.cpp:466
 msgid "new_class"
@@ -1935,12 +1888,44 @@ msgstr "<p align=\"right\">Матни тағйирнашаванда:</p>"
 msgid "<p align=\"right\">Editable text:</p>"
 msgstr "<p align=\"right\">Матни ивазшаванда:</p>"
 
-#: dialogs/dialogbase.cpp:123
+#. i18n: ectx: label, entry (uiFont), group (UI Options)
+#. i18n: ectx: label, entry (codeViewerFont), group (Code Viewer Options)
+#: dialogs/dialogbase.cpp:98 dialogs/settingsdialog.cpp:227
+#: dialogs/umlviewdialog.cpp:153 umbrello.kcfg:165 umbrello.kcfg:275
+#, fuzzy
+msgid "Font"
+msgstr "Ҳарф:"
+
+#: dialogs/dialogbase.cpp:98 dialogs/settingsdialog.cpp:228
+#: dialogs/umlviewdialog.cpp:154
+msgid "Font Settings"
+msgstr "Мизрубҳои навиштаҷот"
+
+#: dialogs/dialogbase.cpp:125
+#, fuzzy
+#| msgid "Style:"
+msgctxt "style page name"
+msgid "Style"
+msgstr "Услуб:"
+
+#: dialogs/dialogbase.cpp:125
+#, fuzzy
+#| msgid "Component"
+msgid "Role Style"
+msgstr "Қисмат"
+
+#: dialogs/dialogbase.cpp:127
 #, fuzzy
 #| msgid "Style:"
 msgctxt "widget style page"
 msgid "Style"
 msgstr "Услуб:"
+
+#: dialogs/dialogbase.cpp:127
+#, fuzzy
+#| msgid "Widget Color"
+msgid "Widget Style"
+msgstr "Ранги васеъкунӣ"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, ui_imageTypeLabel)
 #: dialogs/exportallviewsdialog.cpp:73 dialogs/exportallviewsdialogbase.ui:52
@@ -2201,134 +2186,72 @@ msgstr "Навъи стереоӣ"
 msgid "Type:"
 msgstr "Намуд:"
 
-#: dialogs/pages/associationrolepage.cpp:67
+#: dialogs/pages/associationrolepage.cpp:68
 msgid "Role A Properties"
 msgstr "Хусусияти нақши А"
 
-#: dialogs/pages/associationrolepage.cpp:68
+#: dialogs/pages/associationrolepage.cpp:69
 msgid "Role B Properties"
 msgstr "Хусусияти нақши В"
 
-#: dialogs/pages/associationrolepage.cpp:85
-msgid "Role A Visibility"
-msgstr "Дидашавандаи нақши А"
-
 #: dialogs/pages/associationrolepage.cpp:86
-msgid "Role B Visibility"
-msgstr "Дидашавандаи нақши В"
-
-#: dialogs/pages/associationrolepage.cpp:87
 msgid "Role A Changeability"
 msgstr "Имкони тағир додани нақши А"
 
-#: dialogs/pages/associationrolepage.cpp:88
+#: dialogs/pages/associationrolepage.cpp:87
 msgid "Role B Changeability"
 msgstr "Имкони тағир додани нақши В"
 
 #. i18n: ectx: property (text), widget (QLabel, ui_labelRoleName)
-#: dialogs/pages/associationrolepage.cpp:117
-#: dialogs/pages/associationrolepage.cpp:194
+#: dialogs/pages/associationrolepage.cpp:116
+#: dialogs/pages/associationrolepage.cpp:165
 #: dialogs/pages/umlrolepropertiesbase.ui:36
 msgid "Rolename:"
 msgstr "Номи нақш:"
 
 #. i18n: ectx: property (text), widget (QLabel, ui_labelMultiplicity)
-#: dialogs/pages/associationrolepage.cpp:122
-#: dialogs/pages/associationrolepage.cpp:199
+#: dialogs/pages/associationrolepage.cpp:121
+#: dialogs/pages/associationrolepage.cpp:170
 #: dialogs/pages/umlrolepropertiesbase.ui:49
 msgid "Multiplicity:"
 msgstr "Бисёрӣ:"
 
-#: dialogs/pages/associationrolepage.cpp:139
-#, fuzzy
-#| msgid "Public"
-msgctxt "scope for A is public"
-msgid "Public"
-msgstr "Умумӣ"
-
-#: dialogs/pages/associationrolepage.cpp:142
-#, fuzzy
-#| msgid "Private"
-msgctxt "scope for A is private"
-msgid "Private"
-msgstr "Ғайрирасми"
-
-#: dialogs/pages/associationrolepage.cpp:145
-#, fuzzy
-#| msgid "Protected"
-msgctxt "scope for A is protected"
-msgid "Protected"
-msgstr "Муҳофиз карда шуда"
-
-#: dialogs/pages/associationrolepage.cpp:148
-#, fuzzy
-msgctxt "scope for A is implementation"
-msgid "Implementation"
-msgstr "Ҳуҷҷатнома"
-
-#: dialogs/pages/associationrolepage.cpp:170
+#: dialogs/pages/associationrolepage.cpp:141
 #, fuzzy
 #| msgid "Changeable"
 msgctxt "changeability for A is changeable"
 msgid "Changeable"
 msgstr "Имконоти тағирпазирӣ"
 
-#: dialogs/pages/associationrolepage.cpp:173
+#: dialogs/pages/associationrolepage.cpp:144
 #, fuzzy
 #| msgid "Frozen"
 msgctxt "changeability for A is frozen"
 msgid "Frozen"
 msgstr "Не"
 
-#: dialogs/pages/associationrolepage.cpp:176
+#: dialogs/pages/associationrolepage.cpp:147
 #, fuzzy
 #| msgid "Add only"
 msgctxt "changeability for A is add only"
 msgid "Add only"
 msgstr "Фақат барои илова намудан"
 
-#: dialogs/pages/associationrolepage.cpp:216
-#, fuzzy
-#| msgid "Public"
-msgctxt "scope for B is public"
-msgid "Public"
-msgstr "Умумӣ"
-
-#: dialogs/pages/associationrolepage.cpp:219
-#, fuzzy
-#| msgid "Private"
-msgctxt "scope for B is private"
-msgid "Private"
-msgstr "Ғайрирасми"
-
-#: dialogs/pages/associationrolepage.cpp:222
-#, fuzzy
-#| msgid "Protected"
-msgctxt "scope for B is protected"
-msgid "Protected"
-msgstr "Муҳофиз карда шуда"
-
-#: dialogs/pages/associationrolepage.cpp:225
-#, fuzzy
-msgctxt "scope for B is implementation"
-msgid "Implementation"
-msgstr "Ҳуҷҷатнома"
-
-#: dialogs/pages/associationrolepage.cpp:247
+#: dialogs/pages/associationrolepage.cpp:190
 #, fuzzy
 #| msgid "Changeable"
 msgctxt "changeability for B is changeable"
 msgid "Changeable"
 msgstr "Имконоти тағирпазирӣ"
 
-#: dialogs/pages/associationrolepage.cpp:250
+#: dialogs/pages/associationrolepage.cpp:193
 #, fuzzy
 #| msgid "Frozen"
 msgctxt "changeability for B is frozen"
 msgid "Frozen"
 msgstr "Не"
 
-#: dialogs/pages/associationrolepage.cpp:253
+#: dialogs/pages/associationrolepage.cpp:196
 #, fuzzy
 #| msgid "Add only"
 msgctxt "changeability for B is add only"
@@ -2381,149 +2304,117 @@ msgstr ""
 msgid "Show export layout in diagram context menu"
 msgstr ""
 
-#: dialogs/pages/classgeneralpage.cpp:73
+#: dialogs/pages/classgeneralpage.cpp:74
 msgid "Class &name:"
 msgstr "Номи &синф:"
 
-#: dialogs/pages/classgeneralpage.cpp:76
+#: dialogs/pages/classgeneralpage.cpp:77
 msgid "Actor &name:"
 msgstr "Номи &иштироккунанда:"
 
-#: dialogs/pages/classgeneralpage.cpp:79
+#: dialogs/pages/classgeneralpage.cpp:80
 msgid "Package &name:"
 msgstr "Номи &пакет:"
 
-#: dialogs/pages/classgeneralpage.cpp:82
+#: dialogs/pages/classgeneralpage.cpp:83
 msgid "Use case &name:"
 msgstr "Истифодаи номи &назир:"
 
-#: dialogs/pages/classgeneralpage.cpp:85
+#: dialogs/pages/classgeneralpage.cpp:86
 msgid "Interface &name:"
 msgstr "Номи &интерфейс:"
 
-#: dialogs/pages/classgeneralpage.cpp:88
+#: dialogs/pages/classgeneralpage.cpp:89
 msgid "Component &name:"
 msgstr "Номи &қисмат:"
 
-#: dialogs/pages/classgeneralpage.cpp:91
+#: dialogs/pages/classgeneralpage.cpp:92
 #, fuzzy
 #| msgid "Actor &name:"
 msgid "Port &name:"
 msgstr "Номи &иштироккунанда:"
 
-#: dialogs/pages/classgeneralpage.cpp:94
+#: dialogs/pages/classgeneralpage.cpp:95
 #, fuzzy
 #| msgid "Node name:"
 msgid "Node &name:"
 msgstr "Номи гиреҳ:"
 
-#: dialogs/pages/classgeneralpage.cpp:97
+#: dialogs/pages/classgeneralpage.cpp:98
 msgid "Artifact &name:"
 msgstr "Номи &артифакт:"
 
-#: dialogs/pages/classgeneralpage.cpp:100
+#: dialogs/pages/classgeneralpage.cpp:101
 msgid "Enum &name:"
 msgstr "Номи &шакли гузашташуда:"
 
-#: dialogs/pages/classgeneralpage.cpp:103
+#: dialogs/pages/classgeneralpage.cpp:104
 msgid "Datatype &name:"
 msgstr "Номи &намуди маълумот:"
 
-#: dialogs/pages/classgeneralpage.cpp:106
+#: dialogs/pages/classgeneralpage.cpp:107
 #, fuzzy
 msgid "Entity &name:"
 msgstr "Номи &шакли гузашташуда:"
 
-#: dialogs/pages/classgeneralpage.cpp:109
+#: dialogs/pages/classgeneralpage.cpp:110
 #, fuzzy
 #| msgid "Stereotype name:"
 msgid "Stereotype &name:"
 msgstr "Номи қолаби чоп:"
 
-#: dialogs/pages/classgeneralpage.cpp:137
+#: dialogs/pages/classgeneralpage.cpp:138
 msgid "Reference:"
 msgstr ""
 
-#: dialogs/pages/classgeneralpage.cpp:153
+#: dialogs/pages/classgeneralpage.cpp:154
 msgid "A&bstract class"
 msgstr "Си&нфи мавҳум"
 
-#: dialogs/pages/classgeneralpage.cpp:155
+#: dialogs/pages/classgeneralpage.cpp:156
 #, fuzzy
 msgid "A&bstract use case"
 msgstr "Си&нфи мавҳум"
 
-#: dialogs/pages/classgeneralpage.cpp:164
+#: dialogs/pages/classgeneralpage.cpp:165
 #, fuzzy
 #| msgid "&Executable"
 msgctxt "component is executable"
 msgid "&Executable"
 msgstr "&Файли фармондиҳӣ"
 
-#: dialogs/pages/classgeneralpage.cpp:177 dialogs/umlattributedialog.cpp:98
-#: dialogs/umloperationdialog.cpp:122 listpopupmenu.cpp:1126
-#: listpopupmenu.cpp:1171
-msgid "Visibility"
-msgstr "Намоёнӣ"
-
-#: dialogs/pages/classgeneralpage.cpp:181 dialogs/umloperationdialog.cpp:127
-#, fuzzy
-#| msgid "P&ublic"
-msgctxt "public visibility"
-msgid "P&ublic"
-msgstr "Ош&кор"
-
-#: dialogs/pages/classgeneralpage.cpp:184 dialogs/umloperationdialog.cpp:130
-#, fuzzy
-#| msgid "P&rivate"
-msgctxt "private visibility"
-msgid "P&rivate"
-msgstr "А&сосӣ"
-
-#: dialogs/pages/classgeneralpage.cpp:187
-#, fuzzy
-#| msgid "Pro&tected"
-msgctxt "protected visibility"
-msgid "Pro&tected"
-msgstr "&Мудофиакардашуда"
-
-#: dialogs/pages/classgeneralpage.cpp:191
-#, fuzzy
-msgid "Imple&mentation"
-msgstr "&Ҳуҷҷатнома"
-
-#: dialogs/pages/classgeneralpage.cpp:250
+#: dialogs/pages/classgeneralpage.cpp:221
 msgid "Class name:"
 msgstr "Номи синф:"
 
-#: dialogs/pages/classgeneralpage.cpp:253
-#: dialogs/pages/classgeneralpage.cpp:322
+#: dialogs/pages/classgeneralpage.cpp:224
+#: dialogs/pages/classgeneralpage.cpp:293
 msgid "Instance name:"
 msgstr "Номи нусхагӣ:"
 
-#: dialogs/pages/classgeneralpage.cpp:258
+#: dialogs/pages/classgeneralpage.cpp:229
 msgid "Draw as actor"
 msgstr "Рассомӣ кардан ҳамчун рӯи коркунанда "
 
-#: dialogs/pages/classgeneralpage.cpp:263
+#: dialogs/pages/classgeneralpage.cpp:234
 msgid "Multiple instance"
 msgstr "Якчанд нусха намудан"
 
-#: dialogs/pages/classgeneralpage.cpp:269
+#: dialogs/pages/classgeneralpage.cpp:240
 msgid "Show destruction"
 msgstr "Намоиш додани харобкунанда"
 
-#: dialogs/pages/classgeneralpage.cpp:309
+#: dialogs/pages/classgeneralpage.cpp:280
 msgid "Component name:"
 msgstr "Қисмати ном:"
 
-#: dialogs/pages/classgeneralpage.cpp:311
+#: dialogs/pages/classgeneralpage.cpp:282
 msgid "Node name:"
 msgstr "Номи гиреҳ:"
 
-#: dialogs/pages/classgeneralpage.cpp:368
-#: dialogs/pages/classgeneralpage.cpp:408
-#: dialogs/pages/classgeneralpage.cpp:421
+#: dialogs/pages/classgeneralpage.cpp:339
+#: dialogs/pages/classgeneralpage.cpp:372
+#: dialogs/pages/classgeneralpage.cpp:385
 msgid ""
 "The name you have chosen\n"
 "is already being used.\n"
@@ -2532,9 +2423,9 @@ msgstr ""
 "Ин ном аллакай истифода шуда буд\n"
 "Вай партофтагӣ мебошад."
 
-#: dialogs/pages/classgeneralpage.cpp:369
-#: dialogs/pages/classgeneralpage.cpp:409
-#: dialogs/pages/classgeneralpage.cpp:422
+#: dialogs/pages/classgeneralpage.cpp:340
+#: dialogs/pages/classgeneralpage.cpp:373
+#: dialogs/pages/classgeneralpage.cpp:386
 msgid "Name is Not Unique"
 msgstr "Ном аллакай мавҷуд дорад"
 
@@ -2572,13 +2463,13 @@ msgstr "&Атрибут бунёд кардан..."
 
 #: dialogs/pages/classifierlistpage.cpp:206
 #: dialogs/umlforeignkeyconstraintdialog.cpp:315
-#: dialogs/umloperationdialog.cpp:165
+#: dialogs/umloperationdialog.cpp:152
 #: dialogs/umluniqueconstraintdialog.cpp:122 umldoc.cpp:1517 umlscene.cpp:3256
 #, fuzzy
 msgid "&Delete"
 msgstr "&Пешфарз"
 
-#: dialogs/pages/classifierlistpage.cpp:208 dialogs/umloperationdialog.cpp:167
+#: dialogs/pages/classifierlistpage.cpp:208 dialogs/umloperationdialog.cpp:154
 #: uml.cpp:483
 msgid "&Properties"
 msgstr "&Хусусиятҳо"
@@ -3013,8 +2904,8 @@ msgstr "&Пешфарз"
 msgid "Parameter Properties"
 msgstr "Хусусиятҳои параметр"
 
-#: dialogs/parameterpropertiesdialog.cpp:79 dialogs/umlattributedialog.cpp:74
-#: dialogs/umlentityattributedialog.cpp:77 dialogs/umloperationdialog.cpp:102
+#: dialogs/parameterpropertiesdialog.cpp:79 dialogs/umlattributedialog.cpp:75
+#: dialogs/umlentityattributedialog.cpp:77 dialogs/umloperationdialog.cpp:103
 #: dialogs/umltemplatedialog.cpp:70
 msgid "&Type:"
 msgstr "&Намуд:"
@@ -3026,7 +2917,7 @@ msgctxt "property name"
 msgid "&Name:"
 msgstr "&Ном:"
 
-#: dialogs/parameterpropertiesdialog.cpp:91 dialogs/umlattributedialog.cpp:86
+#: dialogs/parameterpropertiesdialog.cpp:91 dialogs/umlattributedialog.cpp:87
 msgid "&Initial value:"
 msgstr "&Маънои аввалин:"
 
@@ -3259,62 +3150,36 @@ msgstr "Навъи ҳолат:"
 msgid "State name:"
 msgstr "Номи ҳолат:"
 
-#: dialogs/umlattributedialog.cpp:45
+#: dialogs/umlattributedialog.cpp:46
 msgid "Attribute Properties"
 msgstr "Хусусиятҳои аттрибут"
 
-#: dialogs/umlattributedialog.cpp:82
+#: dialogs/umlattributedialog.cpp:83
 #, fuzzy
 #| msgid "&Name:"
 msgctxt "attribute name"
 msgid "&Name:"
 msgstr "&Ном:"
 
-#: dialogs/umlattributedialog.cpp:92 dialogs/umloperationdialog.cpp:115
+#: dialogs/umlattributedialog.cpp:93 dialogs/umloperationdialog.cpp:116
 msgid "Classifier &scope (\"static\")"
 msgstr "&Минтақаӣ биноии классификатор (\"static\")"
 
-#: dialogs/umlattributedialog.cpp:102
-#, fuzzy
-#| msgid "&Public"
-msgctxt "access control public"
-msgid "&Public"
-msgstr "&Ошкор"
-
-#: dialogs/umlattributedialog.cpp:105
-#, fuzzy
-#| msgid "P&rivate"
-msgctxt "access control private"
-msgid "P&rivate"
-msgstr "А&сосӣ"
-
-#: dialogs/umlattributedialog.cpp:108
-#, fuzzy
-#| msgid "Prot&ected"
-msgctxt "access control protected"
-msgid "Prot&ected"
-msgstr "&Мудофиакардашуда"
-
-#: dialogs/umlattributedialog.cpp:111 dialogs/umloperationdialog.cpp:136
-#, fuzzy
-msgid "I&mplementation"
-msgstr "&Ҳуҷҷатнома"
-
-#: dialogs/umlattributedialog.cpp:159
+#: dialogs/umlattributedialog.cpp:127
 msgid "You have entered an invalid attribute name."
 msgstr "Шумо номи хусусияти нодурутро гузоштед."
 
-#: dialogs/umlattributedialog.cpp:160 refactoring/refactoringassistant.cpp:846
+#: dialogs/umlattributedialog.cpp:128 refactoring/refactoringassistant.cpp:846
 msgid "Attribute Name Invalid"
 msgstr "Номи аттрибут нодуруст"
 
-#: dialogs/umlattributedialog.cpp:167
+#: dialogs/umlattributedialog.cpp:135
 msgid ""
 "The attribute name you have chosen is already being used in this operation."
 msgstr ""
 "Номи хусусияте ки шумо интихоб кардед дар амалиёт аллакай истифодашудааст."
 
-#: dialogs/umlattributedialog.cpp:168
+#: dialogs/umlattributedialog.cpp:136
 msgid "Attribute Name Not Unique"
 msgstr "Номи аттрибут ягона нест"
 
@@ -3526,41 +3391,34 @@ msgid ""
 "referenced entities will be lost. Are you sure you want to continue ?"
 msgstr ""
 
-#: dialogs/umloperationdialog.cpp:58
+#: dialogs/umloperationdialog.cpp:59
 msgid "Operation Properties"
 msgstr "Хусусиятҳои амалиёт"
 
-#: dialogs/umloperationdialog.cpp:99
+#: dialogs/umloperationdialog.cpp:100
 #, fuzzy
 #| msgid "&Name:"
 msgctxt "operation name"
 msgid "&Name:"
 msgstr "&Ном:"
 
-#: dialogs/umloperationdialog.cpp:112
+#: dialogs/umloperationdialog.cpp:113
 msgid "&Abstract operation"
 msgstr "&Амалиёти мавҳум"
 
-#: dialogs/umloperationdialog.cpp:118
+#: dialogs/umloperationdialog.cpp:119
 msgid "&Query (\"const\")"
 msgstr ""
 
-#: dialogs/umloperationdialog.cpp:133
-#, fuzzy
-#| msgid "Prot&ected"
-msgctxt "protected visibility"
-msgid "Prot&ected"
-msgstr "&Мудофиакардашуда"
-
-#: dialogs/umloperationdialog.cpp:139
+#: dialogs/umloperationdialog.cpp:126
 msgid "Parameters"
 msgstr "Параметрҳо"
 
-#: dialogs/umloperationdialog.cpp:163
+#: dialogs/umloperationdialog.cpp:150
 msgid "Ne&w Parameter..."
 msgstr "Па&раметри нав..."
 
-#: dialogs/umloperationdialog.cpp:298
+#: dialogs/umloperationdialog.cpp:266
 msgid ""
 "The parameter name you have chosen\n"
 "is already being used in this operation."
@@ -3568,30 +3426,30 @@ msgstr ""
 "Норми параметре ки шумо интихоб кардед\n"
 "дар ин амалиёт аллакай истифодашудааст."
 
-#: dialogs/umloperationdialog.cpp:299 dialogs/umloperationdialog.cpp:345
+#: dialogs/umloperationdialog.cpp:267 dialogs/umloperationdialog.cpp:313
 msgid "Parameter Name Not Unique"
 msgstr "Номи параметр ягона нест"
 
-#: dialogs/umloperationdialog.cpp:344
+#: dialogs/umloperationdialog.cpp:312
 msgid ""
 "The parameter name you have chosen is already being used in this operation."
 msgstr "Номи параметре ки шумо гузоштед аллакай дар амалиёт истифодашудааст."
 
-#: dialogs/umloperationdialog.cpp:429
+#: dialogs/umloperationdialog.cpp:397
 msgid "You have entered an invalid operation name."
 msgstr "Шумо номи амалиёти беэтиборро гузоштед."
 
-#: dialogs/umloperationdialog.cpp:430 dialogs/umloperationdialog.cpp:442
+#: dialogs/umloperationdialog.cpp:398 dialogs/umloperationdialog.cpp:410
 #: refactoring/refactoringassistant.cpp:825
 msgid "Operation Name Invalid"
 msgstr "Номи амалиёт нодуруст"
 
-#: dialogs/umloperationdialog.cpp:439 refactoring/refactoringassistant.cpp:822
+#: dialogs/umloperationdialog.cpp:407 refactoring/refactoringassistant.cpp:822
 #, kde-format
 msgid "An operation with that signature already exists in %1.\n"
 msgstr "Амалиёт бо сигнатураи ҳамин гуна аллакай дар %1мавҷуд аст.\n"
 
-#: dialogs/umloperationdialog.cpp:441 refactoring/refactoringassistant.cpp:824
+#: dialogs/umloperationdialog.cpp:409 refactoring/refactoringassistant.cpp:824
 msgid "Choose a different name or parameter list."
 msgstr "Номи дигарро интихоб кунед ё ин ки матни параметрро."
 
@@ -3707,6 +3565,99 @@ msgstr "Номи &пакет:"
 #: dialogs/widgets/umlstereotypewidget.cpp:94
 msgid "&Stereotype name:"
 msgstr "&Номи қолаби чоп:"
+
+#: dialogs/widgets/visibilityenumwidget.cpp:31
+#, fuzzy
+#| msgid "P&ublic"
+msgctxt "public visibility"
+msgid "P&ublic"
+msgstr "Ош&кор"
+
+#: dialogs/widgets/visibilityenumwidget.cpp:32
+#, fuzzy
+#| msgid "Pro&tected"
+msgctxt "protected visibility"
+msgid "Pro&tected"
+msgstr "&Мудофиакардашуда"
+
+#: dialogs/widgets/visibilityenumwidget.cpp:33
+#, fuzzy
+#| msgid "P&rivate"
+msgctxt "private visibility"
+msgid "P&rivate"
+msgstr "А&сосӣ"
+
+#: dialogs/widgets/visibilityenumwidget.cpp:34
+#, fuzzy
+msgid "Imple&mentation"
+msgstr "&Ҳуҷҷатнома"
+
+#: dialogs/widgets/visibilityenumwidget.cpp:35 listpopupmenu.cpp:1126
+#: listpopupmenu.cpp:1171
+msgid "Visibility"
+msgstr "Намоёнӣ"
+
+#: dialogs/widgets/visibilityenumwidget.cpp:46
+#, fuzzy
+#| msgid "Public"
+msgctxt "scope for A is public"
+msgid "Public"
+msgstr "Умумӣ"
+
+#: dialogs/widgets/visibilityenumwidget.cpp:47
+#, fuzzy
+#| msgid "Protected"
+msgctxt "scope for A is protected"
+msgid "Protected"
+msgstr "Муҳофиз карда шуда"
+
+#: dialogs/widgets/visibilityenumwidget.cpp:48
+#, fuzzy
+#| msgid "Private"
+msgctxt "scope for A is private"
+msgid "Private"
+msgstr "Ғайрирасми"
+
+#: dialogs/widgets/visibilityenumwidget.cpp:49
+#, fuzzy
+msgctxt "scope for A is implementation"
+msgid "Implementation"
+msgstr "Ҳуҷҷатнома"
+
+#: dialogs/widgets/visibilityenumwidget.cpp:50
+msgid "Role A Visibility"
+msgstr "Дидашавандаи нақши А"
+
+#: dialogs/widgets/visibilityenumwidget.cpp:52
+#, fuzzy
+#| msgid "Public"
+msgctxt "scope for B is public"
+msgid "Public"
+msgstr "Умумӣ"
+
+#: dialogs/widgets/visibilityenumwidget.cpp:53
+#, fuzzy
+#| msgid "Protected"
+msgctxt "scope for B is protected"
+msgid "Protected"
+msgstr "Муҳофиз карда шуда"
+
+#: dialogs/widgets/visibilityenumwidget.cpp:54
+#, fuzzy
+#| msgid "Private"
+msgctxt "scope for B is private"
+msgid "Private"
+msgstr "Ғайрирасми"
+
+#: dialogs/widgets/visibilityenumwidget.cpp:55
+#, fuzzy
+msgctxt "scope for B is implementation"
+msgid "Implementation"
+msgstr "Ҳуҷҷатнома"
+
+#: dialogs/widgets/visibilityenumwidget.cpp:56
+msgid "Role B Visibility"
+msgstr "Дидашавандаи нақши В"
 
 #: docgenerators/docbook2xhtmlgeneratorjob.cpp:56
 #, fuzzy
@@ -7157,6 +7108,45 @@ msgstr "Мавзӯъ"
 #: worktoolbar.cpp:368
 msgid "Pre/Post condition"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt "font page name"
+#~ msgid "Font"
+#~ msgstr "Ҳарф:"
+
+#, fuzzy
+#~| msgid "Style:"
+#~ msgctxt "widget style page name"
+#~ msgid "Style"
+#~ msgstr "Услуб:"
+
+#, fuzzy
+#~| msgid "&Public"
+#~ msgctxt "access control public"
+#~ msgid "&Public"
+#~ msgstr "&Ошкор"
+
+#, fuzzy
+#~| msgid "P&rivate"
+#~ msgctxt "access control private"
+#~ msgid "P&rivate"
+#~ msgstr "А&сосӣ"
+
+#, fuzzy
+#~| msgid "Prot&ected"
+#~ msgctxt "access control protected"
+#~ msgid "Prot&ected"
+#~ msgstr "&Мудофиакардашуда"
+
+#, fuzzy
+#~ msgid "I&mplementation"
+#~ msgstr "&Ҳуҷҷатнома"
+
+#, fuzzy
+#~| msgid "Prot&ected"
+#~ msgctxt "protected visibility"
+#~ msgid "Prot&ected"
+#~ msgstr "&Мудофиакардашуда"
 
 #, fuzzy
 #~ msgctxt "namespace scope"
