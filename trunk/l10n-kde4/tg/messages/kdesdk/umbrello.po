@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-22 01:56+0000\n"
+"POT-Creation-Date: 2014-12-23 01:57+0000\n"
 "PO-Revision-Date: 2005-09-17 13:21+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -93,7 +93,7 @@ msgstr "Агрегировандан"
 msgid "Dependency"
 msgstr "Вобастагӣ"
 
-#: basictypes.cpp:335 worktoolbar.cpp:316
+#: basictypes.cpp:335 widgets/widgetbase.cpp:1013 worktoolbar.cpp:316
 msgid "Association"
 msgstr "Иттиҳод"
 
@@ -149,7 +149,8 @@ msgstr "Истинод кардан"
 msgid "State Transition"
 msgstr "Гузариши вазъият"
 
-#: basictypes.cpp:361 dialogs/activitydialog.cpp:137 worktoolbar.cpp:358
+#: basictypes.cpp:361 dialogs/activitydialog.cpp:137
+#: widgets/widgetbase.cpp:1004 worktoolbar.cpp:358
 msgid "Activity"
 msgstr "Фаъолият"
 
@@ -722,9 +723,9 @@ msgstr "Дар вақти пайдоиши код синфҳои зеринро 
 #: dialogs/pages/associationgeneralpage.cpp:82
 #: dialogs/pages/associationrolepage.cpp:91
 #: dialogs/pages/associationrolepage.cpp:92
-#: dialogs/pages/classgeneralpage.cpp:186
+#: dialogs/pages/classgeneralpage.cpp:141
+#: dialogs/pages/classgeneralpage.cpp:203
 #: dialogs/pages/classgeneralpage.cpp:248
-#: dialogs/pages/classgeneralpage.cpp:301
 #: dialogs/pages/classifierlistpage.cpp:218
 #: dialogs/pages/diagrampropertiespage.ui:257
 #: dialogs/pages/umlrolepropertiesbase.ui:140
@@ -1282,6 +1283,7 @@ msgstr "Сар додан"
 
 #. i18n: ectx: property (text), widget (QTableWidget, ui_tableWidgetStatus)
 #: codegenwizard/codegenstatuspage.ui:40 codeimpwizard/codeimpstatuspage.ui:54
+#: widgets/widgetbase.cpp:1028
 msgid "Class"
 msgstr "Синф"
 
@@ -2302,117 +2304,50 @@ msgstr ""
 msgid "Show export layout in diagram context menu"
 msgstr ""
 
-#: dialogs/pages/classgeneralpage.cpp:74
-msgid "Class &name:"
-msgstr "Номи &синф:"
-
-#: dialogs/pages/classgeneralpage.cpp:77
-msgid "Actor &name:"
-msgstr "Номи &иштироккунанда:"
-
-#: dialogs/pages/classgeneralpage.cpp:80
-msgid "Package &name:"
-msgstr "Номи &пакет:"
-
-#: dialogs/pages/classgeneralpage.cpp:83
-msgid "Use case &name:"
-msgstr "Истифодаи номи &назир:"
-
-#: dialogs/pages/classgeneralpage.cpp:86
-msgid "Interface &name:"
-msgstr "Номи &интерфейс:"
-
-#: dialogs/pages/classgeneralpage.cpp:89
-msgid "Component &name:"
-msgstr "Номи &қисмат:"
-
-#: dialogs/pages/classgeneralpage.cpp:92
-#, fuzzy
-#| msgid "Actor &name:"
-msgid "Port &name:"
-msgstr "Номи &иштироккунанда:"
-
-#: dialogs/pages/classgeneralpage.cpp:95
-#, fuzzy
-#| msgid "Node name:"
-msgid "Node &name:"
-msgstr "Номи гиреҳ:"
-
-#: dialogs/pages/classgeneralpage.cpp:98
-msgid "Artifact &name:"
-msgstr "Номи &артифакт:"
-
-#: dialogs/pages/classgeneralpage.cpp:101
-msgid "Enum &name:"
-msgstr "Номи &шакли гузашташуда:"
-
-#: dialogs/pages/classgeneralpage.cpp:104
-msgid "Datatype &name:"
-msgstr "Номи &намуди маълумот:"
-
-#: dialogs/pages/classgeneralpage.cpp:107
-#, fuzzy
-msgid "Entity &name:"
-msgstr "Номи &шакли гузашташуда:"
-
-#: dialogs/pages/classgeneralpage.cpp:110
-#, fuzzy
-#| msgid "Stereotype name:"
-msgid "Stereotype &name:"
-msgstr "Номи қолаби чоп:"
-
-#: dialogs/pages/classgeneralpage.cpp:138
+#: dialogs/pages/classgeneralpage.cpp:93
 msgid "Reference:"
 msgstr ""
 
-#: dialogs/pages/classgeneralpage.cpp:154
+#: dialogs/pages/classgeneralpage.cpp:109
 msgid "A&bstract class"
 msgstr "Си&нфи мавҳум"
 
-#: dialogs/pages/classgeneralpage.cpp:156
+#: dialogs/pages/classgeneralpage.cpp:111
 #, fuzzy
 msgid "A&bstract use case"
 msgstr "Си&нфи мавҳум"
 
-#: dialogs/pages/classgeneralpage.cpp:165
+#: dialogs/pages/classgeneralpage.cpp:120
 #, fuzzy
 #| msgid "&Executable"
 msgctxt "component is executable"
 msgid "&Executable"
 msgstr "&Файли фармондиҳӣ"
 
-#: dialogs/pages/classgeneralpage.cpp:221
+#: dialogs/pages/classgeneralpage.cpp:176
 msgid "Class name:"
 msgstr "Номи синф:"
 
-#: dialogs/pages/classgeneralpage.cpp:224
-#: dialogs/pages/classgeneralpage.cpp:293
+#: dialogs/pages/classgeneralpage.cpp:179
+#: dialogs/pages/classgeneralpage.cpp:240
 msgid "Instance name:"
 msgstr "Номи нусхагӣ:"
 
-#: dialogs/pages/classgeneralpage.cpp:229
+#: dialogs/pages/classgeneralpage.cpp:184
 msgid "Draw as actor"
 msgstr "Рассомӣ кардан ҳамчун рӯи коркунанда "
 
-#: dialogs/pages/classgeneralpage.cpp:234
+#: dialogs/pages/classgeneralpage.cpp:189
 msgid "Multiple instance"
 msgstr "Якчанд нусха намудан"
 
-#: dialogs/pages/classgeneralpage.cpp:240
+#: dialogs/pages/classgeneralpage.cpp:195
 msgid "Show destruction"
 msgstr "Намоиш додани харобкунанда"
 
-#: dialogs/pages/classgeneralpage.cpp:280
-msgid "Component name:"
-msgstr "Қисмати ном:"
-
-#: dialogs/pages/classgeneralpage.cpp:282
-msgid "Node name:"
-msgstr "Номи гиреҳ:"
-
-#: dialogs/pages/classgeneralpage.cpp:339
-#: dialogs/pages/classgeneralpage.cpp:372
-#: dialogs/pages/classgeneralpage.cpp:385
+#: dialogs/pages/classgeneralpage.cpp:286
+#: dialogs/pages/classgeneralpage.cpp:319
+#: dialogs/pages/classgeneralpage.cpp:332
 msgid ""
 "The name you have chosen\n"
 "is already being used.\n"
@@ -2421,9 +2356,9 @@ msgstr ""
 "Ин ном аллакай истифода шуда буд\n"
 "Вай партофтагӣ мебошад."
 
-#: dialogs/pages/classgeneralpage.cpp:340
-#: dialogs/pages/classgeneralpage.cpp:373
-#: dialogs/pages/classgeneralpage.cpp:386
+#: dialogs/pages/classgeneralpage.cpp:287
+#: dialogs/pages/classgeneralpage.cpp:320
+#: dialogs/pages/classgeneralpage.cpp:333
 msgid "Name is Not Unique"
 msgstr "Ном аллакай мавҷуд дорад"
 
@@ -3991,19 +3926,19 @@ msgstr "Захира кардан мисли тасвир..."
 msgid "Subsystem"
 msgstr ""
 
-#: listpopupmenu.cpp:758 worktoolbar.cpp:340
+#: listpopupmenu.cpp:758 widgets/widgetbase.cpp:1025 worktoolbar.cpp:340
 msgid "Component"
 msgstr "Қисмат"
 
-#: listpopupmenu.cpp:761
+#: listpopupmenu.cpp:761 widgets/widgetbase.cpp:1070
 msgid "Port"
 msgstr ""
 
-#: listpopupmenu.cpp:764 worktoolbar.cpp:342
+#: listpopupmenu.cpp:764 widgets/widgetbase.cpp:1010 worktoolbar.cpp:342
 msgid "Artifact"
 msgstr "Артифакт"
 
-#: listpopupmenu.cpp:775 worktoolbar.cpp:341
+#: listpopupmenu.cpp:775 widgets/widgetbase.cpp:1052 worktoolbar.cpp:341
 msgid "Node"
 msgstr "Гиреҳ"
 
@@ -4011,16 +3946,16 @@ msgstr "Гиреҳ"
 msgid "Folder"
 msgstr "Каталог"
 
-#: listpopupmenu.cpp:791 worktoolbar.cpp:346
+#: listpopupmenu.cpp:791 widgets/widgetbase.cpp:1034 worktoolbar.cpp:346
 #, fuzzy
 msgid "Entity"
 msgstr "Фаъолияти охир"
 
-#: listpopupmenu.cpp:801 worktoolbar.cpp:369
+#: listpopupmenu.cpp:801 widgets/widgetbase.cpp:1019 worktoolbar.cpp:369
 msgid "Category"
 msgstr ""
 
-#: listpopupmenu.cpp:804 worktoolbar.cpp:322
+#: listpopupmenu.cpp:804 widgets/widgetbase.cpp:1007 worktoolbar.cpp:322
 msgid "Actor"
 msgstr "Иштироккунанда"
 
@@ -4046,19 +3981,20 @@ msgctxt "new class menu item"
 msgid "Class"
 msgstr "Синф"
 
-#: listpopupmenu.cpp:926 worktoolbar.cpp:343
+#: listpopupmenu.cpp:926 widgets/widgetbase.cpp:1046 worktoolbar.cpp:343
 msgid "Interface"
 msgstr "Итерфейс"
 
-#: listpopupmenu.cpp:927 worktoolbar.cpp:344
+#: listpopupmenu.cpp:927 widgets/widgetbase.cpp:1031 worktoolbar.cpp:344
 msgid "Datatype"
 msgstr "Намуди маълумот"
 
-#: listpopupmenu.cpp:928 worktoolbar.cpp:345
+#: listpopupmenu.cpp:928 widgets/widgetbase.cpp:1037 worktoolbar.cpp:345
 msgid "Enum"
 msgstr "Шакли гузашташуда"
 
-#: listpopupmenu.cpp:929 listpopupmenu.cpp:1138 worktoolbar.cpp:339
+#: listpopupmenu.cpp:929 listpopupmenu.cpp:1138 widgets/widgetbase.cpp:1064
+#: worktoolbar.cpp:339
 msgid "Package"
 msgstr "Бастаи нармафзорӣ"
 
@@ -6540,6 +6476,71 @@ msgstr ""
 msgid "Name Not Valid"
 msgstr "Ном нодуруст аст"
 
+#: umlobject.cpp:1092
+msgid "Actor &name:"
+msgstr "Номи &иштироккунанда:"
+
+#: umlobject.cpp:1095
+msgid "Artifact &name:"
+msgstr "Номи &артифакт:"
+
+#: umlobject.cpp:1098
+msgid "Class &name:"
+msgstr "Номи &синф:"
+
+#: umlobject.cpp:1101
+msgid "Component &name:"
+msgstr "Номи &қисмат:"
+
+#: umlobject.cpp:1104
+msgid "Datatype &name:"
+msgstr "Номи &намуди маълумот:"
+
+#: umlobject.cpp:1107
+#, fuzzy
+msgid "Entity &name:"
+msgstr "Номи &шакли гузашташуда:"
+
+#: umlobject.cpp:1110
+msgid "Enum &name:"
+msgstr "Номи &шакли гузашташуда:"
+
+#: umlobject.cpp:1113
+#, fuzzy
+#| msgid "Node name:"
+msgid "Folder &name:"
+msgstr "Номи гиреҳ:"
+
+#: umlobject.cpp:1116
+msgid "Interface &name:"
+msgstr "Номи &интерфейс:"
+
+#: umlobject.cpp:1119
+#, fuzzy
+#| msgid "Node name:"
+msgid "Node &name:"
+msgstr "Номи гиреҳ:"
+
+#: umlobject.cpp:1122
+msgid "Package &name:"
+msgstr "Номи &пакет:"
+
+#: umlobject.cpp:1125
+#, fuzzy
+#| msgid "Actor &name:"
+msgid "Port &name:"
+msgstr "Номи &иштироккунанда:"
+
+#: umlobject.cpp:1128
+#, fuzzy
+#| msgid "Stereotype name:"
+msgid "Stereotype &name:"
+msgstr "Номи қолаби чоп:"
+
+#: umlobject.cpp:1131
+msgid "Use case &name:"
+msgstr "Истифодаи номи &назир:"
+
 #: umlscene.cpp:525
 #, kde-format
 msgid "Diagram: %2 Page %1"
@@ -6777,7 +6778,7 @@ msgstr "Ном"
 msgid "Enter operation name:"
 msgstr "Номи амалиётро ворид кунед:"
 
-#: widgets/notewidget.cpp:183 worktoolbar.cpp:315
+#: widgets/notewidget.cpp:183 widgets/widgetbase.cpp:1073 worktoolbar.cpp:315
 #, fuzzy
 #| msgid "condition expected"
 msgid "Precondition"
@@ -6973,16 +6974,80 @@ msgid ""
 "axis. Right button click to cancel resize."
 msgstr ""
 
+#: widgets/widgetbase.cpp:1016 worktoolbar.cpp:321
+msgid "Box"
+msgstr "Қуттӣ"
+
+#: widgets/widgetbase.cpp:1022
+#, fuzzy
+msgid "CombinedFragment"
+msgstr "Номи ҳолатро гузоред"
+
+#: widgets/widgetbase.cpp:1040
+msgid "FloatingDashLine"
+msgstr ""
+
+#: widgets/widgetbase.cpp:1043
+#, fuzzy
+#| msgid "Fork/Join"
+msgid "ForkJoin"
+msgstr "Фокро/Пайвастан"
+
+#: widgets/widgetbase.cpp:1049
+msgid "Message"
+msgstr "Паём"
+
+#: widgets/widgetbase.cpp:1055 worktoolbar.cpp:320
+msgid "Note"
+msgstr "Эъзоҳ"
+
+#: widgets/widgetbase.cpp:1058 worktoolbar.cpp:309
+msgid "Object"
+msgstr "Мавзӯъ"
+
+#: widgets/widgetbase.cpp:1061
+#, fuzzy
+#| msgid "Object"
+msgid "ObjectNode"
+msgstr "Мавзӯъ"
+
+#: widgets/widgetbase.cpp:1067 worktoolbar.cpp:362
+msgid "Pin"
+msgstr ""
+
+#: widgets/widgetbase.cpp:1076 worktoolbar.cpp:332
+#, fuzzy
+msgid "Region"
+msgstr "Таёр."
+
+#: widgets/widgetbase.cpp:1079
+#, fuzzy
+#| msgid "Enter name:"
+msgid "Signal"
+msgstr "Номро ворид созед:"
+
+#: widgets/widgetbase.cpp:1082
+#, fuzzy
+#| msgid "State"
+msgid "State"
+msgstr "Вазъият"
+
+#: widgets/widgetbase.cpp:1085
+msgid "Text"
+msgstr ""
+
+#: widgets/widgetbase.cpp:1088
+#, fuzzy
+#| msgid "Use Case"
+msgid "UseCase"
+msgstr "Собиқа"
+
 #: worktoolbar.cpp:308
 #, fuzzy
 #| msgid "Select"
 msgctxt "selection arrow"
 msgid "Select"
 msgstr "Интихоб кардан"
-
-#: worktoolbar.cpp:309
-msgid "Object"
-msgstr "Мавзӯъ"
 
 #: worktoolbar.cpp:310 worktoolbar.cpp:364
 msgid "Synchronous Message"
@@ -7012,14 +7077,6 @@ msgstr ""
 msgid "Label"
 msgstr "Барчасб"
 
-#: worktoolbar.cpp:320
-msgid "Note"
-msgstr "Эъзоҳ"
-
-#: worktoolbar.cpp:321
-msgid "Box"
-msgstr "Қуттӣ"
-
 #: worktoolbar.cpp:326
 msgid "Directional Association"
 msgstr "Иттиҳоди рости"
@@ -7035,11 +7092,6 @@ msgstr "Ҳуҷҷатнома"
 msgctxt "UML class"
 msgid "Class"
 msgstr "Синф"
-
-#: worktoolbar.cpp:332
-#, fuzzy
-msgid "Region"
-msgstr "Таёр."
 
 #: worktoolbar.cpp:335
 msgid "Send signal"
@@ -7092,10 +7144,6 @@ msgstr "Вазъият"
 msgid "Final Activity"
 msgstr "Фаъолияти аввала"
 
-#: worktoolbar.cpp:362
-msgid "Pin"
-msgstr ""
-
 #: worktoolbar.cpp:367
 #, fuzzy
 #| msgid "Object"
@@ -7105,6 +7153,12 @@ msgstr "Мавзӯъ"
 #: worktoolbar.cpp:368
 msgid "Pre/Post condition"
 msgstr ""
+
+#~ msgid "Component name:"
+#~ msgstr "Қисмати ном:"
+
+#~ msgid "Node name:"
+#~ msgstr "Номи гиреҳ:"
 
 #, fuzzy
 #~ msgctxt "font page name"
@@ -7165,9 +7219,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Form"
 #~ msgstr "Форк/боҳампайвастан"
-
-#~ msgid "Message"
-#~ msgstr "Паём"
 
 #, fuzzy
 #~| msgid "New"
