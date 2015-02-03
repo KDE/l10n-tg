@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-02-02 07:48+0000\n"
+"POT-Creation-Date: 2015-02-03 09:58+0000\n"
 "PO-Revision-Date: 2005-11-06 23:03+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -3139,8 +3139,8 @@ msgstr "Намоиши FITS"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_solverPreview)
 #. i18n: ectx: property (text), widget (QPushButton, previewB)
-#: ekos/align.ui:419 ekos/capture.ui:905 fitsviewer/fitsviewer.cpp:245
-#: fitsviewer/fitsviewer.cpp:309
+#: ekos/align.ui:419 ekos/capture.ui:905 fitsviewer/fitsviewer.cpp:250
+#: fitsviewer/fitsviewer.cpp:314
 #, fuzzy
 msgid "Preview"
 msgstr "Каталоги Ситора"
@@ -4027,7 +4027,7 @@ msgid "Alignment"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PlayFocusAlarm)
-#: ekos/ekosmanager.cpp:1470 ekos/opsekos.ui:169 fitsviewer/fitsviewer.cpp:253
+#: ekos/ekosmanager.cpp:1470 ekos/opsekos.ui:169 fitsviewer/fitsviewer.cpp:258
 msgid "Focus"
 msgstr ""
 
@@ -4038,7 +4038,7 @@ msgid "Mount"
 msgstr "Ҳисоб кардан:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PlayGuideAlarm)
-#: ekos/ekosmanager.cpp:1510 ekos/opsekos.ui:182 fitsviewer/fitsviewer.cpp:257
+#: ekos/ekosmanager.cpp:1510 ekos/opsekos.ui:182 fitsviewer/fitsviewer.cpp:262
 #, fuzzy
 #| msgid "Guides"
 msgid "Guide"
@@ -5486,33 +5486,33 @@ msgid "&File"
 msgstr "Филтри тасвир"
 
 #. i18n: ectx: Menu (edit)
-#: fitsviewer.rc:15
+#: fitsviewer.rc:16
 #, fuzzy
 msgid "&Edit"
 msgstr "Тағйир..."
 
 #. i18n: ectx: Menu (view)
-#: fitsviewer.rc:22 kstarsui-indi.rc:41 kstarsui-win.rc:41 kstarsui.rc:41
+#: fitsviewer.rc:23 kstarsui-indi.rc:41 kstarsui-win.rc:41 kstarsui.rc:41
 #, fuzzy
 msgid "&View"
 msgstr "&Ғарб"
 
 #. i18n: ectx: Menu (help)
 #. i18n: ectx: property (text), widget (QPushButton, helpB)
-#: fitsviewer.rc:41 indi/telescopewizard.ui:54 kstarsui-indi.rc:129
+#: fitsviewer.rc:42 indi/telescopewizard.ui:54 kstarsui-indi.rc:129
 #: kstarsui-win.rc:123 kstarsui.rc:120
 msgid "&Help"
 msgstr ""
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: ectx: ToolBar (kstarsToolBar)
-#: fitsviewer.rc:55 kstarsui-indi.rc:144 kstarsui-win.rc:138 kstarsui.rc:135
+#: fitsviewer.rc:56 kstarsui-indi.rc:144 kstarsui-win.rc:138 kstarsui.rc:135
 #, fuzzy
 msgid "Main Toolbar"
 msgstr "Панели асосии асбобҳо"
 
 #. i18n: ectx: ToolBar (processToolBar)
-#: fitsviewer.rc:72
+#: fitsviewer.rc:73
 msgid "Process ToolBar"
 msgstr "Процесси МилиАсбоб"
 
@@ -5556,6 +5556,29 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "FITS file open error (fits_get_img_type): %1"
 msgstr "Файли FITS-ро нигоҳ доштан дар %1"
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, fitsdebayer)
+#: fitsviewer/fitsdebayer.ui:14
+#, fuzzy
+msgid "Dialog"
+msgstr "Илова кардани каталог"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: fitsviewer/fitsdebayer.ui:22
+msgid "Pattern:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: fitsviewer/fitsdebayer.ui:32
+#, fuzzy
+msgid "X Offset:"
+msgstr "ОмезишиUT:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: fitsviewer/fitsdebayer.ui:42
+#, fuzzy
+msgid "Y Offset:"
+msgstr "ОмезишиUT:"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, fitsHeaderDialog)
 #: fitsviewer/fitsheaderdialog.ui:13 fitsviewer/fitstab.cpp:190
@@ -5657,7 +5680,7 @@ msgstr "Камтар кардан"
 msgid "&Apply"
 msgstr ""
 
-#: fitsviewer/fitstab.cpp:59 fitsviewer/fitsviewer.cpp:520
+#: fitsviewer/fitstab.cpp:59 fitsviewer/fitsviewer.cpp:530
 msgid "Save Changes to FITS?"
 msgstr "Таъғиротро дар FITS нигоҳ дорам?"
 
@@ -5748,57 +5771,61 @@ msgstr "Уфуқ"
 msgid "Flip Vertical"
 msgstr "Оптикавӣ"
 
-#: fitsviewer/fitsviewer.cpp:160
+#: fitsviewer/fitsviewer.cpp:161
+msgid "Debayer..."
+msgstr ""
+
+#: fitsviewer/fitsviewer.cpp:165
 #, fuzzy
 #| msgid "Auto Scale"
 msgid "Auto stretch"
 msgstr "Худмасштаб"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, statForm)
-#: fitsviewer/fitsviewer.cpp:181 fitsviewer/statform.ui:14
+#: fitsviewer/fitsviewer.cpp:186 fitsviewer/statform.ui:14
 msgid "Statistics"
 msgstr "Статистика"
 
-#: fitsviewer/fitsviewer.cpp:185 fitsviewer/fitsviewer.cpp:655
+#: fitsviewer/fitsviewer.cpp:190 fitsviewer/fitsviewer.cpp:665
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Merkers"
 msgid "Mark Stars"
 msgstr "Мейкерс"
 
-#: fitsviewer/fitsviewer.cpp:208
+#: fitsviewer/fitsviewer.cpp:213
 #, fuzzy
 msgid "KStars FITS Viewer"
 msgstr "Хуш омадед ба KStars FITS Editor."
 
-#: fitsviewer/fitsviewer.cpp:249
+#: fitsviewer/fitsviewer.cpp:254
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Caliente"
 msgid "Calibrate"
 msgstr "Калиент"
 
-#: fitsviewer/fitsviewer.cpp:341
+#: fitsviewer/fitsviewer.cpp:346
 #, kde-format
 msgid "%1 star detected."
 msgid_plural "%1 stars detected."
 msgstr[0] ""
 msgstr[1] ""
 
-#: fitsviewer/fitsviewer.cpp:387
+#: fitsviewer/fitsviewer.cpp:392
 #, fuzzy
 #| msgid "Open FITS..."
 msgid "Open FITS Image"
 msgstr "Кушодани FITS..."
 
-#: fitsviewer/fitsviewer.cpp:521
+#: fitsviewer/fitsviewer.cpp:531
 #, fuzzy, kde-format
 msgid "%1 has unsaved changes.  Would you like to save before closing it?"
 msgstr ""
 "Файли FTTS дорои таъғиротҳои нигоҳ дошта нашуда мебошад. Мехоҳед онҳоро пеш "
 "бо пӯшиши файл нигоҳ доред?"
 
-#: fitsviewer/fitsviewer.cpp:660
+#: fitsviewer/fitsviewer.cpp:670
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Merkers"
@@ -61163,10 +61190,6 @@ msgstr "Ранг ва шароити пайраҳа пажмурда шуда?"
 
 #~ msgid "Geocentric equatorial"
 #~ msgstr "Геоцетри экваториали"
-
-#, fuzzy
-#~ msgid "AddCatDialog"
-#~ msgstr "Илова кардани каталог"
 
 #~ msgid "OpsAdvanced"
 #~ msgstr "OpsПешрафта"
