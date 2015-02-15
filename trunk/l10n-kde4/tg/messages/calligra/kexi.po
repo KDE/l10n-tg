@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-02-04 01:39+0000\n"
+"POT-Creation-Date: 2015-02-15 01:47+0000\n"
 "PO-Revision-Date: 2005-12-23 19:53-0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -614,7 +614,7 @@ msgid ""
 msgstr "Нақшаи файли  асоси маълумот(ё ин ки роҳи кӯтоҳи файл) барои кушодан"
 
 #: core/kexiguimsghandler.cpp:119 core/kexitextmsghandler.cpp:78
-#: migration/importtablewizard.cpp:354
+#: migration/importtablewizard.cpp:381
 msgid "Unknown error"
 msgstr "Хатои номаълум"
 
@@ -3318,12 +3318,12 @@ msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
 msgid "Setting caption for object \"%1\" failed."
 msgstr "Кушодани мавзӯъи \"%1\" нодуруст."
 
-#: main/KexiMainWindow.cpp:3540
+#: main/KexiMainWindow.cpp:3548
 #, fuzzy, kde-format
 msgid "Compacting database file <nobr>\"%1\"</nobr> is not supported."
 msgstr "Файли \"%1\" хондан намешавад."
 
-#: main/KexiMainWindow.cpp:3552
+#: main/KexiMainWindow.cpp:3560
 msgid ""
 "The current project has to be closed before compacting the database. It will "
 "be open again after compacting.\n"
@@ -4170,29 +4170,24 @@ msgctxt "donations count"
 msgid "%1 (thanks!)"
 msgstr ""
 
-#: migration/AlterSchemaWidget.cpp:51 migration/AlterSchemaWidget.cpp:113
+#: migration/AlterSchemaWidget.cpp:54 migration/AlterSchemaWidget.cpp:113
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:1281
 #, fuzzy, kde-format
 msgid "Column %1"
 msgstr "Сутун"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
-#: migration/AlterSchemaWidget.cpp:52
+#: migration/AlterSchemaWidget.cpp:55
 #: plugins/tables/kexitabledesignerview.cpp:339
 #: widget/KexiConnectionSelector.ui:99 widget/KexiProjectSelector.ui:96
 msgid "Type"
 msgstr "Шакл"
 
-#: migration/AlterSchemaWidget.cpp:53
+#: migration/AlterSchemaWidget.cpp:56
 #: plugins/tables/kexitabledesignerview.cpp:181
 #: plugins/tables/kexitabledesignerview.cpp:413
 msgid "Primary Key"
 msgstr "Калиди аввалиндараҷа"
-
-#: migration/AlterSchemaWidget.cpp:54
-#, fuzzy
-msgid "Table Name"
-msgstr "Ҷадвал"
 
 #: migration/importoptionsdlg.cpp:43
 #, fuzzy
@@ -4219,18 +4214,18 @@ msgstr ""
 msgid "Always use this encoding in similar situations"
 msgstr ""
 
-#: migration/importtablewizard.cpp:114
+#: migration/importtablewizard.cpp:118
 #, kde-format
 msgid ""
-"<resource>%1</resource> name is already used by an existing object. Enter "
+"<resource>%1</resource> name is already used by an existing table. Enter "
 "different table name to continue."
 msgstr ""
 
-#: migration/importtablewizard.cpp:116
+#: migration/importtablewizard.cpp:120
 msgid "Name Already Used"
 msgstr ""
 
-#: migration/importtablewizard.cpp:147
+#: migration/importtablewizard.cpp:159
 msgid ""
 "<para>Table Importing Assistant allows you to import a table from an "
 "existing database into the current Kexi project.</para><para>Click "
@@ -4238,75 +4233,101 @@ msgid ""
 "interface> button to exit this assistant.</para>"
 msgstr ""
 
-#: migration/importtablewizard.cpp:154
+#: migration/importtablewizard.cpp:166
 #, fuzzy
 msgid "Welcome to the Table Importing Assistant"
 msgstr "Асоси маълумотро интихоб кунед"
 
-#: migration/importtablewizard.cpp:181 migration/importwizard.cpp:283
+#: migration/importtablewizard.cpp:193 migration/importwizard.cpp:283
 #, fuzzy
 msgid "Select Location for Source Database"
 msgstr "Асоси маълумотро интихоб кунед"
 
-#: migration/importtablewizard.cpp:191 migration/importwizard.cpp:294
+#: migration/importtablewizard.cpp:203 migration/importwizard.cpp:294
 #, fuzzy
 msgid "Select Source Database"
 msgstr "Асоси маълумотро интихоб кунед"
 
-#: migration/importtablewizard.cpp:208
+#: migration/importtablewizard.cpp:220
 #, fuzzy
 msgid "Select the Table to Import"
 msgstr "Асоси маълумотро интихоб кунед"
 
-#: migration/importtablewizard.cpp:240 migration/importwizard.cpp:453
+#: migration/importtablewizard.cpp:252 migration/importwizard.cpp:453
 #, fuzzy
 msgid "Advanced Options"
 msgstr "&Пешрав "
 
-#: migration/importtablewizard.cpp:249 migration/importwizard.cpp:465
+#: migration/importtablewizard.cpp:261 migration/importwizard.cpp:465
 #, fuzzy
 msgid "Importing"
 msgstr "&Воридот"
 
-#: migration/importtablewizard.cpp:265
+#: migration/importtablewizard.cpp:277
 msgid "Alter the Detected Table Design"
 msgstr ""
 
-#: migration/importtablewizard.cpp:282 migration/importwizard.cpp:489
+#: migration/importtablewizard.cpp:292
+#, fuzzy
+msgid "Open imported table"
+msgstr "Кушодани нақшаи мавҷудбуда"
+
+#: migration/importtablewizard.cpp:298 migration/importwizard.cpp:489
 #: migration/importwizard.cpp:876
 #, fuzzy
 msgid "Success"
 msgstr "Манба"
 
-#: migration/importtablewizard.cpp:326 migration/importwizard.cpp:548
+#: migration/importtablewizard.cpp:344 migration/importwizard.cpp:548
 #, fuzzy
 msgid "Select source database you wish to import:"
 msgstr "Асоси маълумотро интихоб кунед"
 
-#: migration/importtablewizard.cpp:420
-msgid ""
-"<para>All required information has now been gathered. Click <interface>Next</"
-"interface> button to start importing.</para><para>Depending on size of the "
-"tables this may take some time.</para><para>You have chosen to import the "
-"following table:</para>"
+#: migration/importtablewizard.cpp:424
+#, kde-format
+msgctxt "<basename-filename> <tablename>"
+msgid "%1 %2"
 msgstr ""
 
-#: migration/importtablewizard.cpp:468 migration/importwizard.cpp:757
+#: migration/importtablewizard.cpp:432
+#, kde-format
+msgid ""
+"No data has been found in table <resource>%1</resource>. Select different "
+"table or cancel importing."
+msgstr ""
+
+#: migration/importtablewizard.cpp:466
+#, kde-format
+msgctxt "@info Table import wizard, final message"
+msgid ""
+"<para>All required information has now been gathered. Click <interface>Next</"
+"interface> button to start importing table <resource>%1</resource>.</"
+"para><note>Depending on size of the table this may take some time.</note>"
+msgstr ""
+
+#: migration/importtablewizard.cpp:497
+#, fuzzy, kde-format
+msgid "Table <resource>%1</resource> has been imported."
+msgstr ""
+"<p>Ин ашё намуди зайлро дорад: %1 \"%2\".</p><p>Шумо мехоҳед инро нигоҳ "
+"доред?</p>"
+
+#: migration/importtablewizard.cpp:516 migration/importwizard.cpp:757
 msgid "No appropriate migration driver found."
 msgstr ""
 
-#: migration/importtablewizard.cpp:557
+#: migration/importtablewizard.cpp:605
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:395
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:1743
 #, fuzzy
 msgid "No project available."
 msgstr "Пурсишро таъйин накардан"
 
-#: migration/importtablewizard.cpp:568
+#: migration/importtablewizard.cpp:616
 msgid "No table was selected to import."
 msgstr ""
 
-#: migration/importtablewizard.cpp:580
+#: migration/importtablewizard.cpp:628
 #, fuzzy, kde-format
 #| msgid "Saving \"%1\" object failed."
 msgid "Unable to create table <resource>%1</resource>."
@@ -7257,37 +7278,37 @@ msgstr "&Муносибати интихобшударо ҳаракат диҳе
 msgid "File"
 msgstr "файл"
 
-#: widget/KexiConnectionSelectorWidget.cpp:371
+#: widget/KexiConnectionSelectorWidget.cpp:381
 msgid "&Add"
 msgstr "&Илова"
 
-#: widget/KexiConnectionSelectorWidget.cpp:371
+#: widget/KexiConnectionSelectorWidget.cpp:381
 #, fuzzy
 msgid "Add database connection"
 msgstr "Хатоӣ дар алоқаи асоси маълумот"
 
-#: widget/KexiConnectionSelectorWidget.cpp:372
+#: widget/KexiConnectionSelectorWidget.cpp:382
 #, fuzzy
 msgctxt "@title:window"
 msgid "Add a New Database Connection"
 msgstr "Хатоӣ дар алоқаи асоси маълумот"
 
-#: widget/KexiConnectionSelectorWidget.cpp:400
+#: widget/KexiConnectionSelectorWidget.cpp:410
 #, fuzzy
 msgid "&Save"
 msgstr "&Нигоҳ доштан Қатор"
 
-#: widget/KexiConnectionSelectorWidget.cpp:401
+#: widget/KexiConnectionSelectorWidget.cpp:411
 msgid "Save changes made to this database connection"
 msgstr ""
 
-#: widget/KexiConnectionSelectorWidget.cpp:402
+#: widget/KexiConnectionSelectorWidget.cpp:412
 #, fuzzy
 msgctxt "@title:window"
 msgid "Edit Database Connection"
 msgstr "Хатоӣ дар алоқаи асоси маълумот"
 
-#: widget/KexiConnectionSelectorWidget.cpp:425
+#: widget/KexiConnectionSelectorWidget.cpp:435
 #, fuzzy, kde-format
 msgid ""
 "Do you want to remove database connection \"%1\" from the list of available "
@@ -8109,6 +8130,10 @@ msgstr "Қатори охирин"
 #, fuzzy
 msgid "Moves cursor to new record and allows inserting."
 msgstr "Қатори оянда"
+
+#, fuzzy
+#~ msgid "Table Name"
+#~ msgstr "Ҷадвал"
 
 #, fuzzy
 #~| msgid "&Add Primary Key"
