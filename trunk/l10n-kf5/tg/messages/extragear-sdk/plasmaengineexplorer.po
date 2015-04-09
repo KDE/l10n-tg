@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasmaengineexplorer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-01-23 03:32+0100\n"
+"POT-Creation-Date: 2015-04-09 08:30+0000\n"
 "PO-Revision-Date: 2009-01-14 14:57+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <>\n"
@@ -25,79 +25,83 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "victor.ibragimov@gmail.com"
 
-#: engineexplorer.cpp:55 main.cpp:68
-msgid "Plasma Engine Explorer"
-msgstr ""
-
-#: engineexplorer.cpp:72
-msgid "Search"
-msgstr "Ҷустуҷӯ"
-
-#: engineexplorer.cpp:78
-msgid "Collapse All"
-msgstr ""
-
-#: engineexplorer.cpp:79
+#: engineexplorer.cpp:55
 msgid "Expand All"
 msgstr ""
 
-#: engineexplorer.cpp:170
+#: engineexplorer.cpp:56
+msgid "Collapse All"
+msgstr ""
+
+#: engineexplorer.cpp:61 main.cpp:69
+msgid "Plasma Engine Explorer"
+msgstr ""
+
+#: engineexplorer.cpp:90
+msgid "Search"
+msgstr "Ҷустуҷӯ"
+
+#: engineexplorer.cpp:183
 msgid "DataSource"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QTableWidget, m_operationDescription)
-#: engineexplorer.cpp:170 serviceviewer.cpp:147 serviceviewer.ui:67
+#: engineexplorer.cpp:183 serviceviewer.cpp:159 serviceviewer.ui:61
 msgid "Key"
 msgstr "Калид"
 
 #. i18n: ectx: property (text), widget (QTableWidget, m_operationDescription)
-#: engineexplorer.cpp:170 serviceviewer.cpp:147 serviceviewer.ui:72
+#: engineexplorer.cpp:183 serviceviewer.cpp:159 serviceviewer.ui:66
 msgid "Value"
 msgstr "Андоза"
 
-#: engineexplorer.cpp:170
+#: engineexplorer.cpp:183
 msgid "Type"
 msgstr "Намуд"
 
-#: engineexplorer.cpp:290
+#: engineexplorer.cpp:302
 msgid "Get associated service"
 msgstr ""
 
-#: engineexplorer.cpp:291
+#: engineexplorer.cpp:303
+msgid "Get associated model"
+msgstr ""
+
+#: engineexplorer.cpp:304
 msgid "Update source now"
 msgstr ""
 
-#: engineexplorer.cpp:292
+#: engineexplorer.cpp:305
 msgid "Remove source"
 msgstr ""
 
-#: engineexplorer.cpp:312
+#: engineexplorer.cpp:328
 #, kde-format
-msgid "&lt;1 bit&gt;"
-msgid_plural "&lt;%1 bits&gt;"
-msgstr[0] ""
-msgstr[1] "&lt;%1 bits&gt;"
-
-#: engineexplorer.cpp:321
-#, kde-format
-msgid "&lt;1 byte&gt;"
-msgid_plural "&lt;%1 bytes&gt;"
+msgid "<1 bit>"
+msgid_plural "<%1 bits>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: engineexplorer.cpp:344
+#: engineexplorer.cpp:337
 #, kde-format
-msgid "&lt;1 item&gt;"
-msgid_plural "&lt;%1 items&gt;"
+msgid "<1 byte>"
+msgid_plural "<%1 bytes>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: engineexplorer.cpp:434
+#: engineexplorer.cpp:360
+#, kde-format
+msgid "<1 item>"
+msgid_plural "<%1 items>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: engineexplorer.cpp:450
 msgctxt "The user did a query to a dataengine and it returned empty data"
 msgid "<empty>"
 msgstr "<холӣ>"
 
-#: engineexplorer.cpp:441
+#: engineexplorer.cpp:457
 msgctxt ""
 "A the dataengine returned something that the humble view on the "
 "engineexplorer can't display, like a picture"
@@ -105,11 +109,11 @@ msgid "<not displayable>"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (KTitleWidget, m_title)
-#: engineexplorer.cpp:491 engineexplorer.ui:17
+#: engineexplorer.cpp:507 engineexplorer.ui:17
 msgid "Plasma DataEngine Explorer"
 msgstr ""
 
-#: engineexplorer.cpp:496
+#: engineexplorer.cpp:512
 #, kde-format
 msgctxt "The name of the engine followed by the number of data sources"
 msgid "%1 Engine - 1 data source"
@@ -117,170 +121,182 @@ msgid_plural "%1 Engine - %2 data sources"
 msgstr[0] ""
 msgstr[1] ""
 
-#. i18n: ectx: property (clickMessage), widget (KLineEdit, m_sourceRequester)
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, m_sourceRequester)
 #: engineexplorer.ui:38
 msgid "Source name"
 msgstr "Номи манбаъ"
 
-#. i18n: ectx: property (specialValueText), widget (KIntSpinBox, m_updateInterval)
-#: engineexplorer.ui:57
+#. i18n: ectx: property (specialValueText), widget (QSpinBox, m_updateInterval)
+#: engineexplorer.ui:63
 msgid "Update on demand"
 msgstr ""
 
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, m_updateInterval)
-#: engineexplorer.ui:60
+#. i18n: ectx: property (suffix), widget (QSpinBox, m_updateInterval)
+#: engineexplorer.ui:69
 msgid "ms"
 msgstr "мс"
 
-#. i18n: ectx: property (prefix), widget (KIntSpinBox, m_updateInterval)
-#: engineexplorer.ui:63
-msgid "Update every "
+#. i18n: ectx: property (prefix), widget (QSpinBox, m_updateInterval)
+#: engineexplorer.ui:72
+msgid "Update Every "
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, m_sourceRequesterButton)
-#: engineexplorer.ui:85
+#: engineexplorer.ui:88
 #, fuzzy
 #| msgid "Request"
 msgid "Request Source"
 msgstr "Дархост"
 
-#. i18n: ectx: property (clickMessage), widget (KLineEdit, m_serviceRequester)
-#: engineexplorer.ui:105
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, m_serviceRequester)
+#: engineexplorer.ui:108
 msgid "Service for source"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, m_serviceRequesterButton)
-#: engineexplorer.ui:118
+#: engineexplorer.ui:121
 #, fuzzy
 #| msgid "Request"
 msgid "Request Service for Source"
 msgstr "Дархост"
 
-#: ktreeviewsearchline.cpp:420
+#: ktreeviewsearchline.cpp:423
 msgid "Search Columns"
 msgstr "Сутунҳои ҷустуҷӯӣ"
 
-#: ktreeviewsearchline.cpp:422
+#: ktreeviewsearchline.cpp:425
 msgid "All Visible Columns"
 msgstr "Ҳамаи сутунҳои намоён"
 
-#: ktreeviewsearchline.cpp:579
+#: ktreeviewsearchline.cpp:582
 msgid "S&earch:"
 msgstr "Ҷу&стуҷӯ:"
 
-#: main.cpp:31
+#: main.cpp:32
 msgid "Explore the data published by Plasma DataEngines"
 msgstr ""
 
-#: main.cpp:52
+#: main.cpp:53
 msgid "No description available"
 msgstr ""
 
-#: main.cpp:70
+#: main.cpp:71
 msgid "(c) 2006, The KDE Team"
 msgstr "(c) 2006, The KDE Team"
 
-#: main.cpp:71
+#: main.cpp:72
 msgid "Aaron J. Seigo"
 msgstr "Aaron J. Seigo"
 
-#: main.cpp:72
+#: main.cpp:73
 msgid "Author and maintainer"
 msgstr "Муаллиф ва тайёркунанда"
 
-#: main.cpp:79
+#: main.cpp:83
 msgid "Displays a list of known engines and their descriptions"
 msgstr ""
 
-#: main.cpp:80
+#: main.cpp:84
 msgid "The desired height in pixels"
 msgstr ""
 
-#: main.cpp:81
+#: main.cpp:85
 msgid "The desired width in pixels"
 msgstr ""
 
-#: main.cpp:82
+#: main.cpp:86
 msgid "The desired x position in pixels"
 msgstr ""
 
-#: main.cpp:83
+#: main.cpp:87
 msgid "The desired y position in pixels"
 msgstr ""
 
-#: main.cpp:84
+#: main.cpp:88
 msgid "The data engine to use"
 msgstr ""
 
-#: main.cpp:85
+#: main.cpp:89
 msgid "The source to request"
 msgstr ""
 
-#: main.cpp:86
+#: main.cpp:90
 msgid "Update interval in milliseconds"
 msgstr ""
 
-#: main.cpp:87
+#: main.cpp:91
 msgid ""
 "Only show engines associated with the parent application; maps to the X-KDE-"
 "ParentApp entry in the DataEngine's .desktop file."
 msgstr ""
 
-#: serviceviewer.cpp:46
-msgid "Start Operation"
-msgstr "Оғози амалиёт"
-
-#: serviceviewer.cpp:53
+#: modelviewer.cpp:98 serviceviewer.cpp:65
 msgctxt "Plasma engine with unknown name"
 msgid "Unknown"
 msgstr "Номуайян"
 
-#: serviceviewer.cpp:54
+#: modelviewer.cpp:109
+msgid ""
+"No valid model was returned. Verify that a model is available for this "
+"source."
+msgstr ""
+
+#: modelviewer.cpp:114
+#, kde-format
+msgctxt "%1 is a Plasma dataengine name"
+msgid "%1 Model Explorer"
+msgstr ""
+
+#: serviceviewer.cpp:40
+msgid "Start Operation"
+msgstr "Оғози амалиёт"
+
+#: serviceviewer.cpp:66
 msgctxt "Plasma service with unknown name"
 msgid "Unknown"
 msgstr "Номуайян"
 
-#: serviceviewer.cpp:67
+#: serviceviewer.cpp:79
 msgid ""
 "No valid service was returned. Verify that a service is available for this "
 "source."
 msgstr ""
 
-#: serviceviewer.cpp:72
+#: serviceviewer.cpp:84
 #, kde-format
 msgctxt "%1 is a Plasma service name"
 msgid "%1 Service Explorer"
 msgstr ""
 
-#: serviceviewer.cpp:74
+#: serviceviewer.cpp:86
 #, kde-format
 msgctxt "Source: name of the data, Service: writes data instead of fetching"
 msgid "DataEngine: <b>%1</b>; Source: <b>%2</b>; Service: <b>%3</b>"
 msgstr ""
 
-#: serviceviewer.cpp:181
+#: serviceviewer.cpp:193
 #, kde-format
 msgid ""
 "<b>'%1'</b> operation with destination <b>'%2'</b> failed. <p>The error was: "
 "<b>'%3: %4'</b></p>"
 msgstr ""
 
-#: serviceviewer.cpp:184 serviceviewer.cpp:195
+#: serviceviewer.cpp:196 serviceviewer.cpp:207
 msgid "Operation Result"
 msgstr ""
 
-#: serviceviewer.cpp:188
+#: serviceviewer.cpp:200
 msgid "No response from job."
 msgstr ""
 
-#: serviceviewer.cpp:192
+#: serviceviewer.cpp:204
 #, kde-format
 msgid ""
 "<b>'%1'</b> operation with destination <b>'%2'</b> returned successfully. "
 "<p>The result was: <b>'%3'</b></p>"
 msgstr ""
 
-#: serviceviewer.cpp:217
+#: serviceviewer.cpp:229
 #, kde-format
 msgid "One active operation..."
 msgid_plural "%1 operations active..."
@@ -288,17 +304,19 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. i18n: ectx: property (text), widget (QLabel, m_operationsLabel)
-#: serviceviewer.ui:33
-msgid "&Operation:"
+#: serviceviewer.ui:27
+#, fuzzy
+#| msgid "&Operation:"
+msgid "Opera&tion:"
 msgstr "&Амалиёт:"
 
 #. i18n: ectx: property (text), widget (QLabel, m_operationStatus)
-#: serviceviewer.ui:80
+#: serviceviewer.ui:74
 #, fuzzy
 #| msgid "&Operation:"
 msgid "Operation count"
 msgstr "&Амалиёт:"
 
-#: titlecombobox.h:53
+#: titlecombobox.h:54
 msgid "Data Engines"
 msgstr ""
