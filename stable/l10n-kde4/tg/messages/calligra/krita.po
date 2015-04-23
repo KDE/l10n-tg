@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-04-22 05:47+0000\n"
+"POT-Creation-Date: 2015-04-23 05:56+0000\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -1515,12 +1515,6 @@ msgctxt "property of a filter layer, noun"
 msgid "Filter"
 msgstr "&Сафед"
 
-#: image/kis_assert.cpp:69
-#, fuzzy
-msgctxt "@title:window"
-msgid "Krita: Internal Error"
-msgstr "Тазод :"
-
 #: image/kis_base_mask_generator.h:32
 #: ui/kis_bookmarked_configurations_model.cc:66
 msgid "Default"
@@ -1771,7 +1765,7 @@ msgid "Processing"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLineEdit, palettename)
-#: image/kis_psd_layer_style.cpp:101 ui/forms/wdgcustompalette.ui:18
+#: image/kis_psd_layer_style.cpp:103 ui/forms/wdgcustompalette.ui:18
 #: ui/KisDocument.cpp:2480 ui/KisMainWindow.cpp:841 ui/KisPart.cpp:593
 #: ui/KisPart.cpp:609
 msgid "Unnamed"
@@ -1836,6 +1830,27 @@ msgstr "Нест кардани Табақа"
 #, fuzzy
 msgid "Updating..."
 msgstr "Воридоти Тасвир..."
+
+#: image/layerstyles/kis_ls_bevel_emboss_filter.cpp:59
+#: image/layerstyles/kis_ls_stroke_filter.cpp:50
+msgid "Stroke (style)"
+msgstr ""
+
+#: image/layerstyles/kis_ls_drop_shadow_filter.cpp:45
+#, fuzzy
+msgid "Drop Shadow (style)"
+msgstr "Сояҳо"
+
+#: image/layerstyles/kis_ls_overlay_filter.cpp:50
+#, fuzzy
+#| msgid "Overlay"
+msgid "Overlay (style)"
+msgstr "Аз боло кашидан"
+
+#: image/layerstyles/kis_ls_satin_filter.cpp:46
+#, fuzzy
+msgid "Satin (style)"
+msgstr "&Серӣ"
 
 #: image/metadata/kis_meta_data_filter_p.cc:51
 msgid "Anonymizer"
@@ -2031,6 +2046,12 @@ msgstr "&Пинҳои кардани/Намоиши Табақа"
 #| msgid "&Filter"
 msgid "File"
 msgstr "&Филтр"
+
+#: libglobal/kis_assert.cpp:69
+#, fuzzy
+msgctxt "@title:window"
+msgid "Krita: Internal Error"
+msgstr "Тазод :"
 
 #: main.cc:92
 msgid "Only print and exit"
@@ -2632,10 +2653,10 @@ msgstr ""
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1268
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1300
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1332
-#: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:64
 #: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:67
 #: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:70
 #: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:73
+#: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:76
 #: plugins/paintops/hairy/wdghairyeoptions.ui:310
 #: plugins/paintops/hairy/wdgInkOptions.ui:71
 #: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:30
@@ -3144,7 +3165,7 @@ msgstr "Нағз"
 #: plugins/paintops/experiment/kis_experimentop_option.cpp:36
 #: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:105
 #: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:128
-#: plugins/tools/defaulttools/kis_tool_brush.cc:350
+#: plugins/tools/defaulttools/kis_tool_brush.cc:361
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:57
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:83
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:161
@@ -3237,7 +3258,7 @@ msgstr "Ҳаракат кардани Интихобот"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_colorSliderSettings)
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1209
-#: plugins/extensions/dockers/colorslider/kis_color_slider_dock.cpp:41
+#: plugins/extensions/dockers/colorslider/kis_color_slider_dock.cpp:42
 #, fuzzy
 msgid "Color Sliders"
 msgstr "Ҳаракат кардани Интихобот"
@@ -3250,10 +3271,10 @@ msgstr "Ҳаракат кардани Интихобот"
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1261
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1293
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1325
-#: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:63
 #: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:66
 #: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:69
 #: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:72
+#: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:75
 #: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:25
 msgid "Hue"
 msgstr "Тобиши ҷило"
@@ -3261,7 +3282,7 @@ msgstr "Тобиши ҷило"
 #. i18n: ectx: property (text), widget (QCheckBox, csl_hsvV)
 #. i18n: ectx: property (text), widget (QTreeWidget, listViewChannels)
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1243
-#: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:65
+#: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:68
 #: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:108
 #: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:35
 #: plugins/tools/defaulttools/wdgcolorpicker.ui:29
@@ -3271,21 +3292,21 @@ msgstr "Кабуд"
 
 #. i18n: ectx: property (text), widget (QCheckBox, csl_hslL)
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1275
-#: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:68
+#: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:71
 #, fuzzy
 msgid "Lightness"
 msgstr "Равшанӣ :"
 
 #. i18n: ectx: property (text), widget (QCheckBox, csl_hsiI)
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1307
-#: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:71
+#: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:74
 #, fuzzy
 msgid "Intensity"
 msgstr "Қатъ кардан"
 
 #. i18n: ectx: property (text), widget (QCheckBox, csl_hsyY)
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1339
-#: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:74
+#: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:77
 msgid "Luma"
 msgstr ""
 
@@ -3383,8 +3404,8 @@ msgstr "Милҳо"
 msgid "Enabled"
 msgstr "Кабуд"
 
-#: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:77
-#: plugins/extensions/dockers/specificcolorselector/kis_color_input.cc:49
+#: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:80
+#: plugins/extensions/dockers/specificcolorselector/kis_color_input.cc:53
 #, kde-format
 msgid "%1:"
 msgstr ""
@@ -3573,9 +3594,9 @@ msgstr ""
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:336
 #: plugins/extensions/dockers/lut/wdglut.ui:148
 #: plugins/extensions/dockers/lut/wdglut.ui:179
-#: plugins/extensions/dockers/palettedocker/wdgpalettedock.ui:38
-#: plugins/extensions/dockers/palettedocker/wdgpalettedock.ui:57
-#: plugins/extensions/dockers/palettedocker/wdgpalettedock.ui:76
+#: plugins/extensions/dockers/palettedocker/wdgpalettedock.ui:52
+#: plugins/extensions/dockers/palettedocker/wdgpalettedock.ui:71
+#: plugins/extensions/dockers/palettedocker/wdgpalettedock.ui:90
 #: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:95
 #: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:102
 #: plugins/extensions/resourcemanager/wdgdlgcreatebundle.ui:135
@@ -4013,19 +4034,19 @@ msgid "Choose palette"
 msgstr "Намунаҳо"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, bnRemove)
-#: plugins/extensions/dockers/palettedocker/wdgpalettedock.ui:35
+#: plugins/extensions/dockers/palettedocker/wdgpalettedock.ui:49
 #, fuzzy
 msgid "Delete color"
 msgstr "&Ҷудокуни"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, bnAdd)
-#: plugins/extensions/dockers/palettedocker/wdgpalettedock.ui:54
+#: plugins/extensions/dockers/palettedocker/wdgpalettedock.ui:68
 #, fuzzy
 msgid "Add foreground color"
 msgstr "&Ранги пешзамина"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, bnAddDialog)
-#: plugins/extensions/dockers/palettedocker/wdgpalettedock.ui:73
+#: plugins/extensions/dockers/palettedocker/wdgpalettedock.ui:87
 #, fuzzy
 msgid "Add color"
 msgstr "Иловаи Тасвири Нав..."
@@ -4049,17 +4070,17 @@ msgstr "Ҳосиятҳои Табақа..."
 msgid "Small Color Selector"
 msgstr "Ҳаракат кардани Интихобот"
 
-#: plugins/extensions/dockers/specificcolorselector/kis_color_input.cc:238
+#: plugins/extensions/dockers/specificcolorselector/kis_color_input.cc:244
 #, fuzzy
 msgid "Color name:"
 msgstr "Ранги ҷамъкунанда"
 
-#: plugins/extensions/dockers/specificcolorselector/kis_specific_color_selector_widget.cc:55
+#: plugins/extensions/dockers/specificcolorselector/kis_specific_color_selector_widget.cc:58
 #, fuzzy
 msgid "Show Colorspace Selector"
 msgstr "Ҳаракат кардани Интихобот"
 
-#: plugins/extensions/dockers/specificcolorselector/specificcolorselector_dock.cc:32
+#: plugins/extensions/dockers/specificcolorselector/specificcolorselector_dock.cc:33
 #, fuzzy
 msgid "Specific Color Selector"
 msgstr "Ҳаракат кардани Интихобот"
@@ -6982,27 +7003,6 @@ msgstr ""
 #, fuzzy
 msgid "Alpha Steps"
 msgstr "Алфа"
-
-#: plugins/filters/layerstyles/kis_ls_bevel_emboss_filter.cpp:59
-#: plugins/filters/layerstyles/kis_ls_stroke_filter.cpp:50
-msgid "Stroke (style)"
-msgstr ""
-
-#: plugins/filters/layerstyles/kis_ls_drop_shadow_filter.cpp:45
-#, fuzzy
-msgid "Drop Shadow (style)"
-msgstr "Сояҳо"
-
-#: plugins/filters/layerstyles/kis_ls_overlay_filter.cpp:50
-#, fuzzy
-#| msgid "Overlay"
-msgid "Overlay (style)"
-msgstr "Аз боло кашидан"
-
-#: plugins/filters/layerstyles/kis_ls_satin_filter.cpp:46
-#, fuzzy
-msgid "Satin (style)"
-msgstr "&Серӣ"
 
 #: plugins/filters/levelfilter/kis_level_filter.cpp:46
 #, fuzzy
@@ -10397,118 +10397,118 @@ msgstr "Амудӣ:"
 msgid "Texture:"
 msgstr "Намунаҳо"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:62
+#: plugins/tools/defaulttools/kis_tool_brush.cc:63
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Freehand Brush Stroke"
 msgstr "Интихоби тоза кардан"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:69
+#: plugins/tools/defaulttools/kis_tool_brush.cc:70
 #, fuzzy
 #| msgid "Settings"
 msgctxt "@action"
 msgid "Brush Smoothing: Disabled"
 msgstr "Танзимотҳо"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:70
+#: plugins/tools/defaulttools/kis_tool_brush.cc:71
 #, fuzzy
 #| msgid "Settings"
 msgctxt "@action"
 msgid "Brush Smoothing: Basic"
 msgstr "Танзимотҳо"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:71
+#: plugins/tools/defaulttools/kis_tool_brush.cc:72
 #, fuzzy
 msgctxt "@action"
 msgid "Brush Smoothing: Weighted"
 msgstr "Равшанӣ :"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:72
+#: plugins/tools/defaulttools/kis_tool_brush.cc:73
 #, fuzzy
 msgctxt "@action"
 msgid "Brush Smoothing: Stabilizer"
 msgstr "Равшанӣ :"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:323
+#: plugins/tools/defaulttools/kis_tool_brush.cc:324
 #, fuzzy
 msgid "No Smoothing"
 msgstr "Равшанӣ :"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:324
+#: plugins/tools/defaulttools/kis_tool_brush.cc:325
 #, fuzzy
 msgid "Basic Smoothing"
 msgstr "Равшанӣ :"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:325
+#: plugins/tools/defaulttools/kis_tool_brush.cc:326
 #, fuzzy
 msgid "Weighted Smoothing"
 msgstr "Равшанӣ :"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:326
+#: plugins/tools/defaulttools/kis_tool_brush.cc:327
 #, fuzzy
 #| msgid "&Scale"
 msgid "Stabilizer"
 msgstr "&Ба маштаби андоза кардан"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:335
+#: plugins/tools/defaulttools/kis_tool_brush.cc:336
 #, fuzzy
 msgid "Distance:"
 msgstr "Сириштан"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:343
+#: plugins/tools/defaulttools/kis_tool_brush.cc:350
 msgid "Delay:"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:344
+#: plugins/tools/defaulttools/kis_tool_brush.cc:355
 msgid "Delay the brush stroke to make the line smoother"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:348
+#: plugins/tools/defaulttools/kis_tool_brush.cc:359
 msgid "Radius where the brush is blocked"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:354
+#: plugins/tools/defaulttools/kis_tool_brush.cc:365
 #, fuzzy
 msgid "Finish line:"
 msgstr "&Асбоби Хат"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:365
+#: plugins/tools/defaulttools/kis_tool_brush.cc:378
 #, fuzzy
 #| msgid "&Scale"
 msgid "Stabilize Sensors:"
 msgstr "&Ба маштаби андоза кардан"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:373
+#: plugins/tools/defaulttools/kis_tool_brush.cc:386
 #, fuzzy
 msgid "Stroke Ending:"
 msgstr "&Серӣ"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:378
+#: plugins/tools/defaulttools/kis_tool_brush.cc:393
 #, fuzzy
 msgid "Smooth Pressure"
 msgstr "Равшанӣ :"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:383
+#: plugins/tools/defaulttools/kis_tool_brush.cc:400
 #, fuzzy
 msgid "Scalable Distance"
 msgstr "Сириштан"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:386
+#: plugins/tools/defaulttools/kis_tool_brush.cc:407
 #, fuzzy
 msgid "Assistant:"
 msgstr "Сириштан"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:387
+#: plugins/tools/defaulttools/kis_tool_brush.cc:412
 msgid "You need to add Ruler Assistants before this tool will work."
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:390
+#: plugins/tools/defaulttools/kis_tool_brush.cc:416
 #, fuzzy
 #| msgid "Magentas"
 msgid "Assistant Magnetism"
 msgstr "Рӯянобҳо"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:397
+#: plugins/tools/defaulttools/kis_tool_brush.cc:423
 #, fuzzy
 msgid "Toggle Assistant"
 msgstr "Сириштан"
@@ -12100,34 +12100,55 @@ msgstr "&Ранги замина"
 msgid "Layer Properties"
 msgstr "Ҳосиятҳои Табақа"
 
-#: ui/dialogs/kis_dlg_layer_style.cpp:61
+#: ui/dialogs/kis_dlg_layer_style.cpp:66
 #, fuzzy
 msgid "Layer Styles"
 msgstr "&Андозаи табақа..."
 
-#: ui/dialogs/kis_dlg_layer_style.cpp:170
-#: ui/dialogs/kis_dlg_layer_style.cpp:197
+#: ui/dialogs/kis_dlg_layer_style.cpp:231
+msgctxt "@title:window"
+msgid "Enter new style name"
+msgstr ""
+
+#: ui/dialogs/kis_dlg_layer_style.cpp:232
+#, fuzzy
+msgctxt "@label:textbox"
+msgid "Name:"
+msgstr "Ном:"
+
+#: ui/dialogs/kis_dlg_layer_style.cpp:233
+#, fuzzy
+msgctxt "Default name for a new style"
+msgid "New Style"
+msgstr "Нағз"
+
+#: ui/dialogs/kis_dlg_layer_style.cpp:246
+#: ui/dialogs/kis_dlg_layer_style.cpp:260
 #, fuzzy
 msgid "Select ASL file"
 msgstr "&Ҷудокуни"
 
-#: ui/dialogs/kis_dlg_layer_style.cpp:172
-#: ui/dialogs/kis_dlg_layer_style.cpp:199
+#: ui/dialogs/kis_dlg_layer_style.cpp:248
+#, fuzzy
+msgid "Layer style library (*.asl)"
+msgstr "Тазод :"
+
+#: ui/dialogs/kis_dlg_layer_style.cpp:262
 #, fuzzy
 msgid "Layer style configuration (*.asl)"
 msgstr "Тазод :"
 
 #. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
-#: ui/dialogs/kis_dlg_layer_style.cpp:620 ui/layerstyles/wdglayerstyles.ui:39
+#: ui/dialogs/kis_dlg_layer_style.cpp:807 ui/layerstyles/wdglayerstyles.ui:39
 #, fuzzy
 msgid "Inner Shadow"
 msgstr "Сояҳо"
 
-#: ui/dialogs/kis_dlg_layer_style.cpp:621
+#: ui/dialogs/kis_dlg_layer_style.cpp:808
 msgid "Choke"
 msgstr ""
 
-#: ui/dialogs/kis_dlg_layer_style.cpp:814
+#: ui/dialogs/kis_dlg_layer_style.cpp:1001
 msgctxt "layer styles parameter"
 msgid "Spread"
 msgstr ""
@@ -17356,6 +17377,12 @@ msgid ""
 "to tag them and then select the tag here."
 msgstr ""
 
+#: ui/kis_psd_layer_style_resource.cpp:132
+#, kde-format
+msgctxt "Auto-generated layer style name for embedded styles (style itself)"
+msgid "<%1> (embedded)"
+msgstr ""
+
 #: ui/kis_selection_manager.cc:128
 #, fuzzy
 msgid "Paste into &New Image"
@@ -18399,44 +18426,51 @@ msgstr "Табақа ба тасвир илова кардан наметаво�
 msgid "Could not load vector selection %1."
 msgstr "Ҳаракат кардани Интихобот"
 
-#: ui/kra/kis_kra_loader.cpp:188
+#: ui/kra/kis_kra_loader.cpp:191
 msgid "Image does not have a name."
 msgstr ""
 
-#: ui/kra/kis_kra_loader.cpp:193
+#: ui/kra/kis_kra_loader.cpp:196
 msgid "Image does not specify a width."
 msgstr ""
 
-#: ui/kra/kis_kra_loader.cpp:199
+#: ui/kra/kis_kra_loader.cpp:202
 msgid "Image does not specify a height."
 msgstr ""
 
-#: ui/kra/kis_kra_loader.cpp:246
+#: ui/kra/kis_kra_loader.cpp:249
 #, kde-format
 msgid "Image specifies an unsupported color model: %1."
 msgstr ""
 
-#: ui/kra/kis_kra_loader.cpp:446
+#: ui/kra/kis_kra_loader.cpp:348
+#, kde-format
+msgctxt ""
+"Auto-generated layer style collection name for embedded styles (collection)"
+msgid "<%1> (embedded)"
+msgstr ""
+
+#: ui/kra/kis_kra_loader.cpp:479
 #, kde-format
 msgid "Layer %1 specifies an unsupported color model: %2."
 msgstr ""
 
-#: ui/kra/kis_kra_loader.cpp:469
+#: ui/kra/kis_kra_loader.cpp:502
 #, kde-format
 msgid "Layer %1 has an unsupported type."
 msgstr ""
 
-#: ui/kra/kis_kra_loader.cpp:500
+#: ui/kra/kis_kra_loader.cpp:533
 #, kde-format
 msgid "Layer %1 has an unsupported type: %2."
 msgstr ""
 
-#: ui/kra/kis_kra_loader.cpp:507
+#: ui/kra/kis_kra_loader.cpp:540
 #, kde-format
 msgid "Failure loading layer %1 of type: %2."
 msgstr ""
 
-#: ui/kra/kis_kra_loader.cpp:603
+#: ui/kra/kis_kra_loader.cpp:648
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -18444,7 +18478,7 @@ msgid ""
 "><nl/>Expected path:<nl/>%2<nl/><nl/>Do you want to locate it manually?"
 msgstr ""
 
-#: ui/kra/kis_kra_loader.cpp:608
+#: ui/kra/kis_kra_loader.cpp:653
 msgctxt "@title:window"
 msgid "File not found"
 msgstr ""
@@ -19176,24 +19210,22 @@ msgstr "Асбобҳои Рассомӣ"
 msgid "Stroke"
 msgstr "Нағз"
 
-#. i18n: ectx: property (text), widget (QPushButton, bnNewStyle)
+#. i18n: ectx: property (text), widget (QPushButton, btnNewStyle)
 #: ui/layerstyles/wdglayerstyles.ui:135
-msgid "Ne&w Style ..."
+msgid "Ne&w..."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, btnLoadStyle)
 #: ui/layerstyles/wdglayerstyles.ui:142
 #, fuzzy
-#| msgid "&Load..."
-msgid "&Load Style..."
-msgstr "&Бор кардан..."
+msgid "&Import..."
+msgstr "Содироти Табақа"
 
 #. i18n: ectx: property (text), widget (QPushButton, btnSaveStyle)
 #: ui/layerstyles/wdglayerstyles.ui:149
 #, fuzzy
-#| msgid "&Save As..."
-msgid "&Save Style..."
-msgstr "&Нигоҳ доштани ҳамчун..."
+msgid "&Export..."
+msgstr "Содироти Табақа"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkPreview)
 #: ui/layerstyles/wdglayerstyles.ui:156
@@ -19402,12 +19434,12 @@ msgstr ""
 msgid "Local selection is locked."
 msgstr "Ҳаракат кардани Интихобот"
 
-#: ui/tool/kis_tool_paint.cc:104
+#: ui/tool/kis_tool_paint.cc:105
 #, fuzzy
 msgid "Increase Brush Size"
 msgstr "&Интихоби тоза кардан"
 
-#: ui/tool/kis_tool_paint.cc:110
+#: ui/tool/kis_tool_paint.cc:111
 #, fuzzy
 msgid "Decrease Brush Size"
 msgstr "Тоза карданиҳо"
@@ -19717,6 +19749,16 @@ msgstr "Ранги ҷамъкунанда"
 #, fuzzy, kde-format
 msgid "Workspace %1"
 msgstr "Ранги ҷамъкунанда"
+
+#, fuzzy
+#~| msgid "&Load..."
+#~ msgid "&Load Style..."
+#~ msgstr "&Бор кардан..."
+
+#, fuzzy
+#~| msgid "&Save As..."
+#~ msgid "&Save Style..."
+#~ msgstr "&Нигоҳ доштани ҳамчун..."
 
 #, fuzzy
 #~ msgid "Layer Effects"
