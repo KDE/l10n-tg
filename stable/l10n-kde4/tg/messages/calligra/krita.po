@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-05-19 08:36+0000\n"
+"POT-Creation-Date: 2015-05-20 05:31+0000\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -81,8 +81,8 @@ msgstr "Та&бақа"
 #: ui/dialogs/kis_dlg_preferences.cc:212 ui/input/kis_input_manager.cpp:545
 #: ui/kis_filter_manager.cc:217 ui/kis_filter_manager.cc:226
 #: ui/kis_layer_manager.cc:658 ui/kis_layer_manager.cc:909
-#: ui/KisApplication.cpp:353 ui/KisApplication.cpp:358
-#: ui/KisApplication.cpp:390 ui/KisDocument.cpp:747 ui/KisDocument.cpp:749
+#: ui/KisApplication.cpp:383 ui/KisApplication.cpp:388
+#: ui/KisApplication.cpp:420 ui/KisDocument.cpp:747 ui/KisDocument.cpp:749
 #: ui/KisDocument.cpp:1215 ui/KisDocument.cpp:1259 ui/KisDocument.cpp:1399
 #: ui/KisDocument.cpp:2029 ui/KisDocument.cpp:2032
 #: ui/KisImportExportManager.cpp:230 ui/KisImportExportManager.cpp:241
@@ -8119,23 +8119,23 @@ msgid ""
 "colorspace as the image."
 msgstr ""
 
-#: plugins/formats/psd/psd_loader.cpp:162
+#: plugins/formats/psd/psd_loader.cpp:163
 msgid "Duotone Colormode Block"
 msgstr ""
 
-#: plugins/formats/psd/psd_loader.cpp:175
+#: plugins/formats/psd/psd_loader.cpp:176
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:71
 #, fuzzy
 #| msgid "background"
 msgid "Background"
 msgstr "замина"
 
-#: plugins/formats/psd/psd_loader.cpp:256 ui/kis_mask_manager.cc:195
+#: plugins/formats/psd/psd_loader.cpp:257 ui/kis_mask_manager.cc:195
 #, fuzzy
 msgid "Transparency Mask"
 msgstr "FG ба Шаффоф"
 
-#: plugins/formats/psd/psd_loader.cpp:270 ui/kra/kis_kra_loader.cpp:348
+#: plugins/formats/psd/psd_loader.cpp:303 ui/kra/kis_kra_loader.cpp:348
 #, kde-format
 msgctxt ""
 "Auto-generated layer style collection name for embedded styles (collection)"
@@ -11073,17 +11073,17 @@ msgstr "Поёнтар ҳозира %1"
 msgid "Contiguous Selection Tool"
 msgstr "&Интихоби Ҳамҳудуд"
 
-#: plugins/tools/selectiontools/kis_tool_select_elliptical.cc:57
+#: plugins/tools/selectiontools/kis_tool_select_elliptical.cc:39
+msgid "Elliptical Selection"
+msgstr "Интихоби эллипсӣ"
+
+#: plugins/tools/selectiontools/kis_tool_select_elliptical.cc:71
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Select Ellipse"
 msgstr "&Ҷудокуни"
 
-#: plugins/tools/selectiontools/kis_tool_select_elliptical.cc:86
-msgid "Elliptical Selection"
-msgstr "Интихоби эллипсӣ"
-
-#: plugins/tools/selectiontools/kis_tool_select_elliptical.h:73
+#: plugins/tools/selectiontools/kis_tool_select_elliptical.h:54
 #, fuzzy
 msgid "Elliptical Selection Tool"
 msgstr "Интихоби эллипсӣ"
@@ -11121,33 +11121,33 @@ msgstr "Интихоб"
 msgid "Bezier Curve Selection Tool"
 msgstr "Ҳаракат кардани Интихобот"
 
-#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:56
+#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:42
+#, fuzzy
+msgid "Polygonal Selection"
+msgstr "&Интихоби Бисёркунҷа"
+
+#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:89
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Select Polygon"
 msgstr "Асбобҳои Интихобот"
 
-#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:94
-#, fuzzy
-msgid "Polygonal Selection"
-msgstr "&Интихоби Бисёркунҷа"
-
-#: plugins/tools/selectiontools/kis_tool_select_polygonal.h:69
+#: plugins/tools/selectiontools/kis_tool_select_polygonal.h:62
 #, fuzzy
 msgid "Polygonal Selection Tool"
 msgstr "&Интихоби Бисёркунҷа"
 
-#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:52
+#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:42
+msgid "Rectangular Selection"
+msgstr "Интихоби Росткунҷа"
+
+#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:88
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Select Rectangle"
 msgstr "Росткунҷа"
 
-#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:82
-msgid "Rectangular Selection"
-msgstr "Интихоби Росткунҷа"
-
-#: plugins/tools/selectiontools/kis_tool_select_rectangular.h:68
+#: plugins/tools/selectiontools/kis_tool_select_rectangular.h:63
 #, fuzzy
 msgid "Rectangular Selection Tool"
 msgstr "Интихоби Росткунҷа"
@@ -14083,26 +14083,21 @@ msgstr "Занондан"
 msgid "Secondary Mode"
 msgstr "Занондан"
 
-#: ui/input/kis_alternate_invocation_action.cpp:45
-#, fuzzy
-msgid "Tertiary Mode"
-msgstr "Занондан"
-
-#: ui/input/kis_alternate_invocation_action.cpp:48
+#: ui/input/kis_alternate_invocation_action.cpp:46
 #, fuzzy
 msgid "Pick Foreground Color from Current Layer"
 msgstr "Санҷидани Тасвир ба Табақаи Ҳозира"
 
-#: ui/input/kis_alternate_invocation_action.cpp:49
+#: ui/input/kis_alternate_invocation_action.cpp:47
 #, fuzzy
 msgid "Pick Background Color from Current Layer"
 msgstr "Санҷидани Тасвир ба Табақаи Ҳозира"
 
-#: ui/input/kis_alternate_invocation_action.cpp:51
+#: ui/input/kis_alternate_invocation_action.cpp:49
 msgid "Pick Foreground Color from Merged Image"
 msgstr ""
 
-#: ui/input/kis_alternate_invocation_action.cpp:52
+#: ui/input/kis_alternate_invocation_action.cpp:50
 msgid "Pick Background Color from Merged Image"
 msgstr ""
 
@@ -17701,35 +17696,45 @@ msgctxt "floating message about zoom"
 msgid "Zoom: %1 \\%"
 msgstr "Калон кардан 1:%1"
 
-#: ui/KisApplication.cpp:201
+#: ui/KisApplication.cpp:202 ui/KisApplication.cpp:219
 #, fuzzy
+#| msgid "Krita"
 msgctxt "@title:window"
-msgid "Krita: Critical Error"
-msgstr "Ҷоки амудӣ"
+msgid "Krita: Warning"
+msgstr "Krita"
 
-#: ui/KisApplication.cpp:202
+#: ui/KisApplication.cpp:203
 msgid ""
 "You are running a 32 bits build on a 64 bits Windows.\n"
 "This is not recommended.\n"
 "Please download and install the x64 build instead."
 msgstr ""
 
-#: ui/KisApplication.cpp:353
+#: ui/KisApplication.cpp:220
+msgid ""
+"You have an Intel(R) HD Graphics video adapter\n"
+"If you experience problems like a black or blank screen,\n"
+"please update your display driver to 10.18.14 or later\n"
+".You can also disable OpenGL rendering which reduces performance.\n"
+"Do you want to disable OpenGL?"
+msgstr ""
+
+#: ui/KisApplication.cpp:383
 #, fuzzy, kde-format
 msgid "No template found for: %1"
 msgstr "Ҳосиятҳо..."
 
-#: ui/KisApplication.cpp:358
+#: ui/KisApplication.cpp:388
 #, kde-format
 msgid "Too many templates found for: %1"
 msgstr ""
 
-#: ui/KisApplication.cpp:390
+#: ui/KisApplication.cpp:420
 #, kde-format
 msgid "Template %1 failed to load."
 msgstr ""
 
-#: ui/KisApplication.cpp:422
+#: ui/KisApplication.cpp:452
 msgid "Mimetype not found, try using the -mimetype option"
 msgstr ""
 
@@ -19976,6 +19981,15 @@ msgid "Workspace %1"
 msgstr "Ранги ҷамъкунанда"
 
 #, fuzzy
+#~ msgid "Tertiary Mode"
+#~ msgstr "Занондан"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Krita: Critical Error"
+#~ msgstr "Ҷоки амудӣ"
+
+#, fuzzy
 #~ msgid "Length: "
 #~ msgstr "&Фоиз"
 
@@ -20232,11 +20246,6 @@ msgstr "Ранги ҷамъкунанда"
 #, fuzzy
 #~ msgid "Open Animation"
 #~ msgstr "Градиент:"
-
-#, fuzzy
-#~| msgid "Krita"
-#~ msgid "Krita Animation"
-#~ msgstr "Krita"
 
 #, fuzzy
 #~ msgid "Alan Horkan"
