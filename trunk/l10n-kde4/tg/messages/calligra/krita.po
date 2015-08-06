@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-07-28 01:55+0000\n"
+"POT-Creation-Date: 2015-08-06 01:49+0000\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -78,7 +78,7 @@ msgstr "Та&бақа"
 #: plugins/tools/defaulttools/kis_tool_colorpicker.cc:243
 #: plugins/tools/defaulttools/kis_tool_colorpicker.cc:284
 #: plugins/tools/tool_transform2/kis_free_transform_strategy_gsl_helpers.cpp:338
-#: ui/dialogs/kis_dlg_preferences.cc:232 ui/input/kis_input_manager.cpp:545
+#: ui/dialogs/kis_dlg_preferences.cc:233 ui/input/kis_input_manager.cpp:545
 #: ui/kis_filter_manager.cc:218 ui/kis_filter_manager.cc:227
 #: ui/kis_layer_manager.cc:673 ui/kis_layer_manager.cc:929
 #: ui/KisApplication.cpp:215 ui/KisApplication.cpp:218
@@ -87,9 +87,9 @@ msgstr "Та&бақа"
 #: ui/KisDocument.cpp:1221 ui/KisDocument.cpp:1265 ui/KisDocument.cpp:1404
 #: ui/KisDocument.cpp:2035 ui/KisDocument.cpp:2038
 #: ui/KisImportExportManager.cpp:230 ui/KisImportExportManager.cpp:241
-#: ui/KisImportExportManager.cpp:531 ui/KisMainWindow.cpp:675
-#: ui/KisMainWindow.cpp:727 ui/KisMainWindow.cpp:741 ui/KisMainWindow.cpp:1418
-#: ui/KisMainWindow.cpp:1601 ui/KisMainWindow.cpp:1613
+#: ui/KisImportExportManager.cpp:531 ui/KisMainWindow.cpp:703
+#: ui/KisMainWindow.cpp:755 ui/KisMainWindow.cpp:769 ui/KisMainWindow.cpp:1446
+#: ui/KisMainWindow.cpp:1629 ui/KisMainWindow.cpp:1641
 #: ui/KisTemplateCreateDia.cpp:322 ui/KisView.cpp:840
 #: ui/opengl/kis_opengl.cpp:91 ui/opengl/kis_opengl_canvas2.cpp:513
 #: ui/thememanager.cpp:271 ui/widgets/kis_custom_image_widget.cc:246
@@ -254,13 +254,13 @@ msgid "&Select"
 msgstr "&Ҷудокуни"
 
 #. i18n: ectx: Menu (Filter)
-#: gemini/kritagemini.rc:139 krita.rc:241 sketch/kritasketch.rc:139
+#: gemini/kritagemini.rc:139 krita.rc:242 sketch/kritasketch.rc:139
 #, fuzzy
 msgid "Filte&r"
 msgstr "&Сафед"
 
 #. i18n: ectx: Menu (tools)
-#: gemini/kritagemini.rc:156 krita.rc:261
+#: gemini/kritagemini.rc:156 krita.rc:262
 #: plugins/extensions/bigbrother/bigbrother.rc:4 sketch/kritasketch.rc:156
 #, fuzzy
 msgid "&Tools"
@@ -275,7 +275,7 @@ msgid "Settings"
 msgstr "Танзимотҳо"
 
 #. i18n: ectx: ToolBar (BrushesAndStuff)
-#: gemini/kritagemini.rc:172 krita.rc:318 sketch/kritasketch.rc:172
+#: gemini/kritagemini.rc:172 krita.rc:319 sketch/kritasketch.rc:172
 msgid "Brushes and Stuff"
 msgstr ""
 
@@ -1532,6 +1532,7 @@ msgstr ""
 #: plugins/extensions/metadataeditor/editors/exif.ui:860
 #: plugins/extensions/metadataeditor/editors/exif.ui:892
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:63
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:64
 #, fuzzy
 msgid "Soft"
 msgstr "&Сафед"
@@ -1769,6 +1770,7 @@ msgstr ""
 #: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:58
 #: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:46
 #: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:44
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:55
 #, fuzzy
 msgid "Opacity"
 msgstr "Норавшанӣ:"
@@ -1799,7 +1801,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLineEdit, palettename)
 #: image/kis_psd_layer_style.cpp:99 ui/forms/wdgcustompalette.ui:18
-#: ui/KisDocument.cpp:2487 ui/KisMainWindow.cpp:859 ui/KisPart.cpp:579
+#: ui/KisDocument.cpp:2487 ui/KisMainWindow.cpp:887 ui/KisPart.cpp:579
 #: ui/KisPart.cpp:595 ui/kra/kis_kra_saver.cpp:71
 msgid "Unnamed"
 msgstr ""
@@ -2053,32 +2055,32 @@ msgid "S&plit Alpha"
 msgstr "Ранги ҷамъкунанда"
 
 #. i18n: ectx: Menu (Recording)
-#: krita.rc:263 plugins/extensions/bigbrother/bigbrother.rc:5
+#: krita.rc:264 plugins/extensions/bigbrother/bigbrother.rc:5
 #, fuzzy
 msgid "Recording"
 msgstr "Росткунҷа"
 
 #. i18n: ectx: Menu (Macros)
-#: krita.rc:268 plugins/extensions/bigbrother/bigbrother.rc:9
+#: krita.rc:269 plugins/extensions/bigbrother/bigbrother.rc:9
 #, fuzzy
 msgid "Macros"
 msgstr "Иловаи ниқоб"
 
 #. i18n: ectx: Menu (settings)
-#: krita.rc:274
+#: krita.rc:275
 #, fuzzy
 #| msgid "Settings"
 msgid "Setti&ngs"
 msgstr "Танзимотҳо"
 
 #. i18n: ectx: Menu (help)
-#: krita.rc:295
+#: krita.rc:296
 #, fuzzy
 msgid "&Help"
 msgstr "&Пинҳои кардани/Намоиши Табақа"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: krita.rc:309 ui/kis_file_layer.cpp:96
+#: krita.rc:310 ui/kis_file_layer.cpp:96
 #, fuzzy
 #| msgid "&Filter"
 msgid "File"
@@ -3548,6 +3550,7 @@ msgstr "Якшавии &Ҳама Табақаҳо"
 #: plugins/paintops/particle/kis_particle_paintop_settings_widget.cpp:36
 #: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:45
 #: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:46
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:54
 #: ui/widgets/kis_cmb_composite.cc:70
 #, fuzzy
 msgid "Blending Mode"
@@ -3809,6 +3812,8 @@ msgstr "Ба тартиб даровардан"
 #: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:50
 #: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:51
 #: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:45
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:56
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:57
 #, fuzzy, no-c-format
 #| msgid "100"
 msgid "100%"
@@ -4016,7 +4021,7 @@ msgstr "Пешнамоиш"
 
 #: plugins/extensions/dockers/palettedocker/colorsetchooser.cpp:97
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:61
-#: ui/KisMainWindow.cpp:640 ui/widgets/kis_workspace_chooser.cpp:93
+#: ui/KisMainWindow.cpp:668 ui/widgets/kis_workspace_chooser.cpp:93
 #, fuzzy
 msgid "Save"
 msgstr "Модулясия кардан"
@@ -4702,7 +4707,7 @@ msgstr "Масштаби Табақа..."
 #. i18n: ectx: property (title), widget (QGroupBox, grpMode)
 #: plugins/extensions/layersplit/layersplit.cpp:198
 #: plugins/generators/solid/colorgenerator.h:53
-#: ui/dialogs/kis_dlg_preferences.cc:901 ui/forms/wdgnewimage.ui:364
+#: ui/dialogs/kis_dlg_preferences.cc:902 ui/forms/wdgnewimage.ui:364
 #: ui/layerstyles/WdgColorOverlay.ui:26 ui/layerstyles/WdgStroke.ui:137
 #, fuzzy
 msgid "Color"
@@ -5023,6 +5028,7 @@ msgstr "Тоза кардан"
 #: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:51
 #: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:64
 #: plugins/paintops/libpaintop/kis_color_source_option.cpp:59
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:71
 #: plugins/tools/tool_text/wdgtextoptions.ui:48
 #: ui/forms/wdgdlgblacklistcleanup.ui:83 ui/forms/wdggeometryoptions.ui:89
 #, fuzzy
@@ -5314,6 +5320,7 @@ msgstr "Одатӣ"
 #: plugins/extensions/metadataeditor/editors/exif.ui:865
 #: plugins/extensions/metadataeditor/editors/exif.ui:897
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:63
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:64
 msgid "Hard"
 msgstr ""
 
@@ -6215,14 +6222,14 @@ msgstr "Тасвири Нав"
 #: plugins/extensions/shearimage/wdg_shearimage.ui:65
 #: plugins/filters/blur/wdg_lens_blur.ui:67
 #: plugins/filters/blur/wdg_motion_blur.ui:96
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:481
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:522
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:664
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:708
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:856
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:897
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1039
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1080
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:500
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:541
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:683
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:727
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:875
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:916
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1058
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1099
 #: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_drawing_angle.cpp:69
 #: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_drawing_angle.cpp:79
 #, fuzzy
@@ -6449,10 +6456,10 @@ msgstr "Нест кардани Мил"
 #. i18n: ectx: property (text), widget (QLabel, colorLabel3)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: plugins/filters/colors/wdgcolortoalphabase.ui:40
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:435
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:615
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:807
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:993
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:454
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:634
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:826
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1012
 #: ui/forms/wdgdisplaysettings.ui:290 ui/forms/wdgdisplaysettings.ui:335
 #: ui/layerstyles/WdgStroke.ui:162
 #, fuzzy
@@ -7070,6 +7077,17 @@ msgstr "Ҳеҷ"
 msgid "Level:"
 msgstr "Ҳамвор"
 
+#: plugins/filters/normalize/kis_normalize.cpp:57
+#, fuzzy
+#| msgid "Normal"
+msgid "Normalize"
+msgstr "Одатӣ"
+
+#: plugins/filters/normalize/kis_normalize.cpp:58
+#, fuzzy
+msgid "&Normalize..."
+msgstr "&Андозаи табақа..."
+
 #: plugins/filters/oilpaintfilter/kis_oilpaint_filter.cpp:54
 #, fuzzy
 msgid "&Oilpaint..."
@@ -7109,19 +7127,19 @@ msgid "&PhongBumpmap..."
 msgstr "Ҳаритаи Bump"
 
 #. i18n: ectx: attribute (title), widget (QWidget, generalSettings)
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:51
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:60
 #, fuzzy
 msgid "General settings"
 msgstr "Танзимотҳо"
 
 #. i18n: ectx: property (title), widget (QGroupBox, materialParametersGroupBox)
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:63
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:72
 #, fuzzy
 msgid "Material properties"
 msgstr "Ҳосиятҳои Табақа"
 
 #. i18n: ectx: property (title), widget (QGroupBox, specularReflectivityGroup)
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:72
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:81
 #, fuzzy
 msgid "Specular"
 msgstr "росткунҷа"
@@ -7129,42 +7147,50 @@ msgstr "росткунҷа"
 #. i18n: ectx: property (text), widget (QLabel, lblSpecularReflectivity)
 #. i18n: ectx: property (text), widget (QLabel, lblDiffuseReflectivity)
 #. i18n: ectx: property (text), widget (QLabel, lblAmbientReflectivity)
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:99
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:212
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:290
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:108
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:221
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:299
 #, fuzzy
 msgid "Reflectivity:"
 msgstr "&Дарозӣ:"
 
 #. i18n: ectx: property (text), widget (QLabel, lblSpecularShinyExp)
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:131
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:140
 msgid "Shinyness exponent:"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, diffuseReflectivityGroup)
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:185
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:194
 msgid "Diffuse"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, AmbientGroup)
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:263
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:272
 #, fuzzy
 msgid "Ambient"
 msgstr "&Дарозӣ:"
 
 #. i18n: ectx: property (text), widget (QLabel, lblHeightmapChannel)
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:344
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:353
 msgid "Heightmap channel:"
 msgstr ""
 
+#. i18n: Whether or not this filter should only use a given channel or use all channels and treat them as a normal map
+#. i18n: ectx: property (text), widget (QCheckBox, useNormalMap)
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:405
+#, fuzzy
+#| msgid "Normal"
+msgid "Use Normalmap"
+msgstr "Одатӣ"
+
 #. i18n: ectx: attribute (title), widget (QWidget, lightSources)
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:397
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:416
 #, fuzzy
 msgid "Light Sources"
 msgstr "Равшантар"
 
 #. i18n: ectx: property (title), widget (QGroupBox, lightSourceGroupBox4)
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:409
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:428
 #, fuzzy
 msgid "Light Source 4"
 msgstr "Равшантар"
@@ -7177,14 +7203,14 @@ msgstr "Равшантар"
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, azimuthSpinBox1)
 #. i18n: ectx: property (toolTip), widget (QLabel, azimuthLabel3)
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, azimuthSpinBox3)
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:456
 #: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:475
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:636
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:658
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:828
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:850
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1014
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:494
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:655
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:677
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:847
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:869
 #: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1033
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1052
 msgid ""
 "Direction of the light, the dial tip represents where the light comes from."
 msgstr ""
@@ -7193,10 +7219,10 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, azimuthLabel2)
 #. i18n: ectx: property (text), widget (QLabel, azimuthLabel1)
 #. i18n: ectx: property (text), widget (QLabel, azimuthLabel3)
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:459
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:639
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:831
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1017
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:478
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:658
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:850
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1036
 #, fuzzy
 msgid "Azimuth:"
 msgstr "&Васеъӣ:"
@@ -7209,14 +7235,14 @@ msgstr "&Васеъӣ:"
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, inclinationSpinBox1)
 #. i18n: ectx: property (toolTip), widget (QLabel, inclinationLabel3)
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, inclinationSpinBox3)
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:500
 #: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:519
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:683
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:705
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:875
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:538
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:702
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:724
 #: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:894
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1058
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:913
 #: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1077
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1096
 msgid ""
 "Vertical tilt of the light. 90° is perpendicular to the canvas, 0° is "
 "parallel."
@@ -7226,10 +7252,10 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, inclinationLabel2)
 #. i18n: ectx: property (text), widget (QLabel, inclinationLabel1)
 #. i18n: ectx: property (text), widget (QLabel, inclinationLabel3)
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:503
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:686
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:878
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1061
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:522
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:705
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:897
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1080
 #, fuzzy
 msgid "Inclination:"
 msgstr "&Қарор"
@@ -7238,28 +7264,28 @@ msgstr "&Қарор"
 #. i18n: ectx: property (toolTip), widget (QDial, azimuthDial2)
 #. i18n: ectx: property (toolTip), widget (QDial, azimuthDial1)
 #. i18n: ectx: property (toolTip), widget (QDial, azimuthDial3)
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:543
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:729
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:918
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1101
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:562
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:748
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:937
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1120
 #, fuzzy
 msgid "Azimuth"
 msgstr "&Васеъӣ:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, lightSourceGroupBox2)
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:595
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:614
 #, fuzzy
 msgid "Light Source 2"
 msgstr "Равшантар"
 
 #. i18n: ectx: property (title), widget (QGroupBox, lightSourceGroupBox1)
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:781
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:800
 #, fuzzy
 msgid "Light Source 1"
 msgstr "Равшантар"
 
 #. i18n: ectx: property (title), widget (QGroupBox, lightSourceGroupBox3)
-#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:970
+#: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:989
 #, fuzzy
 msgid "Light Source 3"
 msgstr "Равшантар"
@@ -8372,6 +8398,7 @@ msgstr "&Интихоби тоза кардан"
 #: plugins/paintops/libpaintop/kis_pressure_flow_opacity_option_widget.cpp:38
 #: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:46
 #: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:44
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:55
 msgid "Opaque"
 msgstr ""
 
@@ -8387,6 +8414,7 @@ msgstr ""
 #: plugins/paintops/libpaintop/kis_pressure_flow_opacity_option_widget.cpp:38
 #: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:46
 #: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:44
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:55
 #, fuzzy
 msgid "Transparent"
 msgstr "FG ба Шаффоф"
@@ -8398,6 +8426,7 @@ msgstr "FG ба Шаффоф"
 #: plugins/paintops/particle/kis_particle_paintop_settings_widget.cpp:37
 #: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:52
 #: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:52
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:68
 #, fuzzy
 msgid "Airbrush"
 msgstr "&Интихоби тоза кардан"
@@ -8413,6 +8442,7 @@ msgstr "&Интихоби тоза кардан"
 #: plugins/paintops/particle/kis_particle_paintop_settings_widget.cpp:38
 #: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:59
 #: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:53
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:69
 #, fuzzy
 msgid "Painting Mode"
 msgstr "Тазод :"
@@ -8472,6 +8502,8 @@ msgstr "&Интихоби тоза кардан"
 #: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:50
 #: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:51
 #: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:45
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:56
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:57
 #, fuzzy
 #| msgid "%"
 msgid "0%"
@@ -8487,6 +8519,7 @@ msgstr "%"
 #: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:59
 #: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:47
 #: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:45
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:57
 #: ui/forms/wdgrectangleconstraints.ui:20
 #, fuzzy
 msgid "Size"
@@ -8494,6 +8527,7 @@ msgstr "Нағз"
 
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:51
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:59
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:61
 #, fuzzy
 msgid "Spacing"
 msgstr "Фосила: "
@@ -8503,6 +8537,7 @@ msgstr "Фосила: "
 #: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:49
 #: plugins/paintops/filterop/kis_filterop_settings_widget.cpp:53
 #: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:60
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:62
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:276
 #: ui/kis_paintop_box.cc:343
 #, fuzzy
@@ -8564,6 +8599,7 @@ msgstr "Тартиби рангҳо"
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:262
 #: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:48
 #: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:51
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:67
 msgid "0°"
 msgstr ""
 
@@ -8577,9 +8613,11 @@ msgstr ""
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:260
 #: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:48
 #: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:51
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:67
 msgid "360°"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QRadioButton, optionRotation)
 #. i18n: ectx: property (title), widget (QGroupBox, rotationGroup)
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:58
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:65
@@ -8589,6 +8627,8 @@ msgstr ""
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:46
 #: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:48
 #: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:51
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:67
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:242
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:647
 #, fuzzy
 msgid "Rotation"
@@ -8596,6 +8636,7 @@ msgstr "Занондан"
 
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:59
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:66
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:66
 #, fuzzy
 msgid "Scatter"
 msgstr "Намунаҳо"
@@ -8610,6 +8651,7 @@ msgstr "Аз боло кашидан"
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:79
 #: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:52
 #: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:65
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:72
 #, fuzzy
 msgid "Strength"
 msgstr "&Фоиз"
@@ -8618,6 +8660,7 @@ msgstr "&Фоиз"
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:79
 #: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:52
 #: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:65
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:72
 #, fuzzy
 msgid "Strong"
 msgstr "Нағз"
@@ -8626,6 +8669,7 @@ msgstr "Нағз"
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:79
 #: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:52
 #: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:65
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:72
 msgid "Weak"
 msgstr ""
 
@@ -8702,16 +8746,19 @@ msgid "Smoothing"
 msgstr "Равшанӣ :"
 
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:57
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:56
 #, fuzzy
 msgid "Flow"
 msgstr "&Сояҳо"
 
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:63
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:64
 #, fuzzy
 msgid "Softness"
 msgstr "Равшанӣ :"
 
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:64
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:65
 #, fuzzy
 #| msgid "Shape:"
 msgid "Sharpness"
@@ -10502,6 +10549,197 @@ msgstr "Амудӣ:"
 msgid "Texture:"
 msgstr "Намунаҳо"
 
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_plugin.cpp:43
+#, fuzzy
+#| msgid "Normal"
+msgid "Tangent Normal"
+msgstr "Одатӣ"
+
+#: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:59
+#, fuzzy
+msgid "Tangent Tilt"
+msgstr "&Сафед"
+
+#. i18n: ectx: property (title), widget (QGroupBox, TangentEncoding)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:32
+msgid "Tangent Encoding"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, RedLabel)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:43
+#, fuzzy
+#| msgid "Red"
+msgid "Red:"
+msgstr "Сурх"
+
+#. i18n: Positive horizontal axis
+#. i18n: Positive horizontal axis
+#. i18n: Positive horizontal axis
+#. i18n: Positive horizontal axis
+#. i18n: Positive horizontal axis
+#. i18n: Positive horizontal axis
+#. i18n: ectx: property (text), item, widget (QComboBox, comboGreen)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboRed)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBlue)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:57
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:98
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:142
+msgid "+ X"
+msgstr ""
+
+#. i18n: Negative horizontal axis
+#. i18n: Negative horizontal axis
+#. i18n: Negative horizontal axis
+#. i18n: Negative horizontal axis
+#. i18n: Negative horizontal axis
+#. i18n: Negative horizontal axis
+#. i18n: ectx: property (text), item, widget (QComboBox, comboGreen)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboRed)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBlue)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:62
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:103
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:147
+msgid "- X"
+msgstr ""
+
+#. i18n: Positive vertical axis
+#. i18n: Positive vertical axis
+#. i18n: Positive vertical axis
+#. i18n: Positive vertical axis
+#. i18n: Positive vertical axis
+#. i18n: Positive vertical axis
+#. i18n: ectx: property (text), item, widget (QComboBox, comboGreen)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboRed)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBlue)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:67
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:108
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:152
+msgid "+ Y"
+msgstr ""
+
+#. i18n: Negative vertical axis
+#. i18n: Negative vertical axis
+#. i18n: Negative vertical axis
+#. i18n: Negative vertical axis
+#. i18n: Negative vertical axis
+#. i18n: Negative vertical axis
+#. i18n: ectx: property (text), item, widget (QComboBox, comboGreen)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboRed)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBlue)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:72
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:113
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:157
+msgid "- Y"
+msgstr ""
+
+#. i18n: Postive height axis
+#. i18n: Postive height axis
+#. i18n: Postive height axis
+#. i18n: Postive height axis
+#. i18n: Postive height axis
+#. i18n: Postive height axis
+#. i18n: ectx: property (text), item, widget (QComboBox, comboGreen)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboRed)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBlue)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:77
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:118
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:162
+msgid "+ Z"
+msgstr ""
+
+#. i18n: negative height axis
+#. i18n: negative height axis
+#. i18n: negative height axis
+#. i18n: negative height axis
+#. i18n: negative height axis
+#. i18n: negative height axis
+#. i18n: ectx: property (text), item, widget (QComboBox, comboGreen)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboRed)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBlue)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:82
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:123
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:167
+msgid "- Z"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, GreenLabel)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:90
+#, fuzzy
+#| msgid "Green"
+msgid "Green:"
+msgstr "Сабз"
+
+#. i18n: ectx: property (text), widget (QLabel, BlueLabel)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:131
+#, fuzzy
+#| msgid "Blue"
+msgid "Blue:"
+msgstr "Кабуд"
+
+#. i18n: ectx: property (title), widget (QGroupBox, TiltOptions)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:208
+#, fuzzy
+msgid "Tilt Options"
+msgstr "Алфа"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, optionTilt)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:216
+msgid ""
+"<html><head/><body><p>Use the tilt of the tablet to determine the normals.</"
+"p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, optionTilt)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:219
+#, fuzzy
+msgid "Tilt"
+msgstr "Нағз"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, optionDirection)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:229
+msgid ""
+"<html><head/><body><p>Use the drawing direction to determine the X and Y-"
+"axes, while tilt-elevation is used for the Z-axis.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, optionDirection)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:232
+#, fuzzy
+msgid "Direction"
+msgstr "Қатъ кардан"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, optionRotation)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:239
+msgid ""
+"<html><head/><body><p>Use the rotation sensor available in certain pens to "
+"determine the X and Y-axes, while tilt-elevation is used for the Z-axis.</"
+"p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, optionMix)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:249
+msgid ""
+"<html><head/><body><p>Mix Tilt and Drawing angle to determine the X and Y-"
+"axes, while tilt-elevation is used for the Z-axis.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, optionMix)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:252
+#, fuzzy
+msgid "Direction/Tilt Mix"
+msgstr "Қатъ кардан"
+
+#. i18n: ectx: property (text), widget (QLabel, L_mix)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:269
+#, fuzzy
+msgid "Direction/Tilt Mix Value"
+msgstr "Қатъ кардан"
+
+#. i18n: ectx: property (text), widget (QLabel, L_elevation)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:286
+msgid "Elevation Sensitivity"
+msgstr ""
+
 #: plugins/tools/defaulttools/kis_tool_brush.cc:63
 #, fuzzy
 msgctxt "(qtundo-format)"
@@ -11095,7 +11333,7 @@ msgstr "Ҳаракат кардани Интихобот"
 msgid "Select path"
 msgstr "Интихоб"
 
-#: plugins/tools/selectiontools/kis_tool_select_path.cc:120
+#: plugins/tools/selectiontools/kis_tool_select_path.cc:119
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Select by Bezier Curve"
@@ -11801,64 +12039,64 @@ msgctxt "@title:window"
 msgid "No QML found"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:132
+#: ui/actions/kis_selection_action_factories.cpp:135
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Select All"
 msgstr "&Ҷудокуни"
 
-#: ui/actions/kis_selection_action_factories.cpp:206
+#: ui/actions/kis_selection_action_factories.cpp:209
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Flood Fill Layer"
 msgstr "Пур кардан"
 
-#: ui/actions/kis_selection_action_factories.cpp:282
+#: ui/actions/kis_selection_action_factories.cpp:285
 msgctxt "floating message when cannot copy from a node"
 msgid "Cannot copy pixels from this type of layer "
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:291
+#: ui/actions/kis_selection_action_factories.cpp:294
 msgctxt "floating message when copying empty selection"
 msgid "Selection is empty: no pixels were copied "
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:340
+#: ui/actions/kis_selection_action_factories.cpp:343
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Cut"
 msgstr "Тоза кардани худкор"
 
-#: ui/actions/kis_selection_action_factories.cpp:341
+#: ui/actions/kis_selection_action_factories.cpp:344
 #, fuzzy
 #| msgid "Copy Green"
 msgctxt "(qtundo-format)"
 msgid "Copy"
 msgstr "Сабзи нусха бардоштан"
 
-#: ui/actions/kis_selection_action_factories.cpp:367
+#: ui/actions/kis_selection_action_factories.cpp:370
 #, fuzzy
 #| msgid "Copy Red"
 msgctxt "(qtundo-format)"
 msgid "Copy Merged"
 msgstr "Кабуди нусха бардоштан"
 
-#: ui/actions/kis_selection_action_factories.cpp:379
+#: ui/actions/kis_selection_action_factories.cpp:382
 msgid "(pasted)"
 msgstr ""
 
-#: ui/actions/kis_selection_action_factories.cpp:409
+#: ui/actions/kis_selection_action_factories.cpp:412
 #, fuzzy
 msgid "Pasted"
 msgstr "&Даровардани Асбоб"
 
-#: ui/actions/kis_selection_action_factories.cpp:454
+#: ui/actions/kis_selection_action_factories.cpp:457
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Convert to Vector Selection"
 msgstr "Ҳаракат кардани Интихобот"
 
-#: ui/actions/kis_selection_action_factories.cpp:487
+#: ui/actions/kis_selection_action_factories.cpp:490
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Convert shapes to vector selection"
@@ -12196,7 +12434,7 @@ msgid "Image Properties"
 msgstr "Ҳосиятҳои Табақа"
 
 #: ui/dialogs/kis_dlg_image_properties.cc:72
-#: ui/dialogs/kis_dlg_preferences.cc:673 ui/kis_image_manager.cc:93
+#: ui/dialogs/kis_dlg_preferences.cc:674 ui/kis_image_manager.cc:93
 #, fuzzy
 msgid "Change the background color of the image"
 msgstr "&Ранги замина"
@@ -12306,129 +12544,134 @@ msgstr "Тоза карданиҳо"
 msgid "Preview Outline"
 msgstr "Пешнамоиш"
 
-#: ui/dialogs/kis_dlg_preferences.cc:220
+#: ui/dialogs/kis_dlg_preferences.cc:105
+#, fuzzy
+msgid "Tilt Outline"
+msgstr "Тоза карданиҳо"
+
+#: ui/dialogs/kis_dlg_preferences.cc:221
 #, fuzzy
 msgid "Select a Background Image"
 msgstr "Интихоб"
 
-#: ui/dialogs/kis_dlg_preferences.cc:232
+#: ui/dialogs/kis_dlg_preferences.cc:233
 #, fuzzy, kde-format
 msgid "%1 is not a valid image file!"
 msgstr "&Андозаи табақа..."
 
-#: ui/dialogs/kis_dlg_preferences.cc:274
+#: ui/dialogs/kis_dlg_preferences.cc:275
 #: ui/widgets/kis_color_space_selector.cc:62
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Open Color Profile"
 msgstr "Ҳосиятҳои Табақа"
 
-#: ui/dialogs/kis_dlg_preferences.cc:284 ui/dialogs/kis_dlg_preferences.cc:443
+#: ui/dialogs/kis_dlg_preferences.cc:285 ui/dialogs/kis_dlg_preferences.cc:444
 #, fuzzy, kde-format
 #| msgid "Screen"
 msgctxt "The number of the screen"
 msgid "Screen: %1"
 msgstr "Экран"
 
-#: ui/dialogs/kis_dlg_preferences.cc:330
+#: ui/dialogs/kis_dlg_preferences.cc:331
 #: ui/widgets/kis_color_space_selector.cc:180
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Install Color Profiles"
 msgstr "Ҳосиятҳои Табақа"
 
-#: ui/dialogs/kis_dlg_preferences.cc:376
+#: ui/dialogs/kis_dlg_preferences.cc:377
 #, fuzzy, kde-format
 #| msgid "Screen"
 msgctxt "The display/screen we got from Qt"
 msgid "Screen %1:"
 msgstr "Экран"
 
-#: ui/dialogs/kis_dlg_preferences.cc:513
+#: ui/dialogs/kis_dlg_preferences.cc:514
 #, kde-format
 msgid "%1 MiB"
 msgstr ""
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, intSwapSize)
-#: ui/dialogs/kis_dlg_preferences.cc:562
+#: ui/dialogs/kis_dlg_preferences.cc:563
 #: ui/forms/wdgperformancesettings.ui:176
 msgid " GiB"
 msgstr ""
 
-#: ui/dialogs/kis_dlg_preferences.cc:619
+#: ui/dialogs/kis_dlg_preferences.cc:620
 #, fuzzy
 msgctxt "@title:window"
 msgid "Select a swap directory"
 msgstr "Росткунҷа"
 
-#: ui/dialogs/kis_dlg_preferences.cc:873
+#: ui/dialogs/kis_dlg_preferences.cc:874
 msgid "Preferences"
 msgstr "Имтиёзҳо"
 
-#: ui/dialogs/kis_dlg_preferences.cc:881 ui/dialogs/kis_dlg_preferences.cc:883
+#: ui/dialogs/kis_dlg_preferences.cc:882 ui/dialogs/kis_dlg_preferences.cc:884
 msgid "General"
 msgstr "Умумӣ"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgDisplayBlacklist)
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgDisplaySettings)
 #. i18n: ectx: property (title), widget (QGroupBox, grpDisplay)
-#: ui/dialogs/kis_dlg_preferences.cc:890 ui/dialogs/kis_dlg_preferences.cc:892
+#: ui/dialogs/kis_dlg_preferences.cc:891 ui/dialogs/kis_dlg_preferences.cc:893
 #: ui/forms/wdgcolorsettings.ui:53 ui/forms/wdgdisplaysettings.ui:20
 #: ui/forms/wdgdlgblacklistcleanup.ui:20
 #, fuzzy
 msgid "Display"
 msgstr "Сириштан"
 
-#: ui/dialogs/kis_dlg_preferences.cc:899
+#: ui/dialogs/kis_dlg_preferences.cc:900
 #, fuzzy
 msgid "Color Management"
 msgstr "Ранги роҳбар"
 
-#: ui/dialogs/kis_dlg_preferences.cc:908 ui/dialogs/kis_dlg_preferences.cc:910
+#: ui/dialogs/kis_dlg_preferences.cc:909 ui/dialogs/kis_dlg_preferences.cc:911
 #, fuzzy
 msgid "Performance"
 msgstr "Имтиёзҳо"
 
-#: ui/dialogs/kis_dlg_preferences.cc:917 ui/dialogs/kis_dlg_preferences.cc:919
+#: ui/dialogs/kis_dlg_preferences.cc:918 ui/dialogs/kis_dlg_preferences.cc:920
 #, fuzzy
 msgid "Grid"
 msgstr "Кабуд"
 
-#: ui/dialogs/kis_dlg_preferences.cc:926
+#: ui/dialogs/kis_dlg_preferences.cc:927
 #, fuzzy
 msgid "Tablet settings"
 msgstr "Танзимотҳо"
 
-#: ui/dialogs/kis_dlg_preferences.cc:928
+#: ui/dialogs/kis_dlg_preferences.cc:929
 #, fuzzy
 msgid "Tablet"
 msgstr "Кабуд"
 
-#: ui/dialogs/kis_dlg_preferences.cc:935
+#: ui/dialogs/kis_dlg_preferences.cc:936
 #, fuzzy
 msgid "Canvas-only settings"
 msgstr "Танзимотҳо"
 
-#: ui/dialogs/kis_dlg_preferences.cc:937
+#: ui/dialogs/kis_dlg_preferences.cc:938
 #, fuzzy
 msgid "Canvas-only"
 msgstr "Lab Ранг"
 
-#: ui/dialogs/kis_dlg_preferences.cc:944
+#: ui/dialogs/kis_dlg_preferences.cc:945
 msgctxt "@title:tab Author page"
 msgid "Author"
 msgstr ""
 
-#: ui/dialogs/kis_dlg_preferences.cc:946
+#: ui/dialogs/kis_dlg_preferences.cc:947
 msgid "Author"
 msgstr ""
 
-#: ui/dialogs/kis_dlg_preferences.cc:952
+#: ui/dialogs/kis_dlg_preferences.cc:953
 #, fuzzy
 msgid "Canvas Input Settings"
 msgstr "Танзимотҳо"
 
-#: ui/dialogs/kis_dlg_preferences.cc:953
+#: ui/dialogs/kis_dlg_preferences.cc:954
 #, fuzzy
 msgid "Canvas Input"
 msgstr "Манзара"
@@ -17791,15 +18034,21 @@ msgstr "Ҳаракат кардани Интихобот"
 #: ui/kis_selection_manager.cc:249
 #, fuzzy
 msgctxt "@action:inmenu"
+msgid "&Convert to Shape"
+msgstr "&Ба тарафи&дигар гардондан..."
+
+#: ui/kis_selection_manager.cc:254
+#, fuzzy
+msgctxt "@action:inmenu"
 msgid "&Toggle Selection Display Mode"
 msgstr "Интихоб"
 
-#: ui/kis_selection_manager.cc:567
+#: ui/kis_selection_manager.cc:578
 #, fuzzy
 msgid "Stroked Shapes"
 msgstr "&Интихоби тоза кардан"
 
-#: ui/kis_selection_manager.cc:569
+#: ui/kis_selection_manager.cc:580
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Stroke Shapes"
@@ -18145,7 +18394,7 @@ msgid ""
 "Error message: %4"
 msgstr ""
 
-#: ui/KisDocument.cpp:1544 ui/KisMainWindow.cpp:675
+#: ui/KisDocument.cpp:1544 ui/KisMainWindow.cpp:703
 #, kde-format
 msgid "The file %1 does not exist."
 msgstr ""
@@ -18310,183 +18559,183 @@ msgstr "Масштаби Табақа..."
 msgid "Hide %1 Toolbar"
 msgstr "&Даровардани Асбоб"
 
-#: ui/KisMainWindow.cpp:630
+#: ui/KisMainWindow.cpp:658
 msgid "(write protected)"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:638
+#: ui/KisMainWindow.cpp:666
 #, fuzzy, kde-format
 msgid "Save as %1"
 msgstr "Ҷамъ"
 
-#: ui/KisMainWindow.cpp:840
+#: ui/KisMainWindow.cpp:868
 #, fuzzy
 #| msgid "untitled-1"
 msgid "untitled"
 msgstr "бе ном-1"
 
-#: ui/KisMainWindow.cpp:1149
+#: ui/KisMainWindow.cpp:1177
 #, fuzzy
 msgid "All files (*.*)"
 msgstr "масоҳат"
 
-#: ui/KisMainWindow.cpp:1152
+#: ui/KisMainWindow.cpp:1180
 #, fuzzy
 #| msgid "Import Image"
 msgid "Import Images"
 msgstr "Воридоти Тасвир"
 
-#: ui/KisMainWindow.cpp:1152
+#: ui/KisMainWindow.cpp:1180
 #, fuzzy
 #| msgid "Image"
 msgid "Open Images"
 msgstr "Тасвир"
 
-#: ui/KisMainWindow.cpp:1376
+#: ui/KisMainWindow.cpp:1404
 #, fuzzy
 #| msgid "Export Layer"
 msgid "Export as PDF"
 msgstr "Содироти Табақа"
 
-#: ui/KisMainWindow.cpp:1418
+#: ui/KisMainWindow.cpp:1446
 msgid "Cannot export to the specified file"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1571
+#: ui/KisMainWindow.cpp:1599
 msgid "Document"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1579
+#: ui/KisMainWindow.cpp:1607
 #, kde-format
 msgid "Document - %1"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1602
+#: ui/KisMainWindow.cpp:1630
 msgid ""
 "You will lose all changes made since your last save\n"
 "Do you want to continue?"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1613
+#: ui/KisMainWindow.cpp:1641
 #, fuzzy
 #| msgid "Could not add layer to image."
 msgid "Error: Could not reload this document"
 msgstr "Табақа ба тасвир илова кардан наметавонад."
 
-#: ui/KisMainWindow.cpp:1871
+#: ui/KisMainWindow.cpp:1899
 #, kde-format
 msgid "&%1 %2"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1875
+#: ui/KisMainWindow.cpp:1903
 #, kde-format
 msgid "%1 %2"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1961
+#: ui/KisMainWindow.cpp:1989
 msgid ""
 "The Calligra LittleCMS color management plugin is not installed. Krita will "
 "quit now."
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1969
+#: ui/KisMainWindow.cpp:1997
 msgid "Krita cannot find any brush presets! Krita will quit now."
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1978
+#: ui/KisMainWindow.cpp:2006
 #, fuzzy
 #| msgid "Layer Error"
 msgctxt "@title:window"
 msgid "Installation error"
 msgstr "Табақаи Хато"
 
-#: ui/KisMainWindow.cpp:2043
+#: ui/KisMainWindow.cpp:2071
 #, kde-format
 msgid "%1 unsaved document (%2)"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2079
+#: ui/KisMainWindow.cpp:2107
 #, fuzzy
 #| msgid "Export Layer"
 msgctxt "@action:inmenu"
 msgid "Export as PDF..."
 msgstr "Содироти Табақа"
 
-#: ui/KisMainWindow.cpp:2087
+#: ui/KisMainWindow.cpp:2115
 #, fuzzy
 msgctxt "@action:inmenu"
 msgid "Close All"
 msgstr "Ранг кардан"
 
-#: ui/KisMainWindow.cpp:2098
+#: ui/KisMainWindow.cpp:2126
 msgctxt "@action:inmenu"
 msgid "Open ex&isting Document as Untitled Document..."
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2102
+#: ui/KisMainWindow.cpp:2130
 #, fuzzy
 msgctxt "@action:inmenu"
 msgid "E&xport..."
 msgstr "Содироти Табақа"
 
-#: ui/KisMainWindow.cpp:2109
+#: ui/KisMainWindow.cpp:2137
 #, fuzzy
 msgctxt "@action:inmenu"
 msgid "Document Information"
 msgstr "Тазод :"
 
-#: ui/KisMainWindow.cpp:2117
+#: ui/KisMainWindow.cpp:2145
 msgctxt "@action:inmenu"
 msgid "&Themes"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2123
+#: ui/KisMainWindow.cpp:2151
 #, fuzzy
 msgctxt "@action:inmenu"
 msgid "Show Dockers"
 msgstr "Пайвастан"
 
-#: ui/KisMainWindow.cpp:2129
+#: ui/KisMainWindow.cpp:2157
 #, fuzzy
 msgctxt "@action:inmenu"
 msgid "Show Docker Titlebars"
 msgstr "Пайвастан"
 
-#: ui/KisMainWindow.cpp:2139
+#: ui/KisMainWindow.cpp:2167
 msgctxt "@action:inmenu"
 msgid "Cascade"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2144
+#: ui/KisMainWindow.cpp:2172
 msgctxt "@action:inmenu"
 msgid "Tile"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2149
+#: ui/KisMainWindow.cpp:2177
 msgctxt "@action:inmenu"
 msgid "Next"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2154
+#: ui/KisMainWindow.cpp:2182
 #, fuzzy
 msgctxt "@action:inmenu"
 msgid "Previous"
 msgstr "&Сафед"
 
-#: ui/KisMainWindow.cpp:2159
+#: ui/KisMainWindow.cpp:2187
 #, fuzzy
 #| msgid "&Layer"
 msgctxt "@action:inmenu"
 msgid "&New Window"
 msgstr "Та&бақа"
 
-#: ui/KisMainWindow.cpp:2163
+#: ui/KisMainWindow.cpp:2191
 #, fuzzy
 msgctxt "@action:inmenu"
 msgid "Close"
 msgstr "Ранг кардан"
 
-#: ui/KisMainWindow.cpp:2171
+#: ui/KisMainWindow.cpp:2199
 msgid "Expanding Spacer"
 msgstr ""
 
@@ -21011,10 +21260,6 @@ msgstr "Ранги ҷамъкунанда"
 #~ msgstr "Интихоби эллипсӣ"
 
 #, fuzzy
-#~ msgid "direction filter"
-#~ msgstr "Қатъ кардан"
-
-#, fuzzy
 #~ msgid "Name"
 #~ msgstr "Ном:"
 
@@ -21043,10 +21288,6 @@ msgstr "Ранги ҷамъкунанда"
 #~| msgid "Preview"
 #~ msgid "Preview:"
 #~ msgstr "Пешнамоиш"
-
-#, fuzzy
-#~ msgid "Tilt"
-#~ msgstr "Нағз"
 
 #, fuzzy
 #~ msgid "Gradient Fill"
@@ -21571,11 +21812,6 @@ msgstr "Ранги ҷамъкунанда"
 #, fuzzy
 #~ msgid "Channel Sources"
 #~ msgstr "Милҳо"
-
-#, fuzzy
-#~| msgid "Red"
-#~ msgid "Red:"
-#~ msgstr "Сурх"
 
 #, fuzzy
 #~| msgid "Layer %1"
