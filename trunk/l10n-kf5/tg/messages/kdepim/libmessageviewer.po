@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-09-08 10:44+0000\n"
+"POT-Creation-Date: 2015-09-09 08:20+0000\n"
 "PO-Revision-Date: 2005-09-17 13:29+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -541,6 +541,17 @@ msgstr ""
 msgid "Configure..."
 msgstr "&Танзими KMail..."
 
+#: header/allheaderstyleplugin/allheaderstyleinterface.cpp:36
+#: viewer/viewer_p.cpp:1627
+msgctxt "View->headers->"
+msgid "&All Headers"
+msgstr "&Ҳама"
+
+#: header/allheaderstyleplugin/allheaderstyleinterface.cpp:39
+#: viewer/viewer_p.cpp:1630
+msgid "Show all message headers"
+msgstr "Намоиши тамоми унвонот"
+
 #: header/briefheaderstyle.cpp:99 header/customheaderstyle.cpp:92
 #: header/enterpriseheaderstyle.cpp:118 header/fancyheaderstyle.cpp:128
 #: header/plainheaderstyle.cpp:92
@@ -558,6 +569,17 @@ msgstr "CC: "
 #: header/plainheaderstyle.cpp:110
 msgid "BCC: "
 msgstr "BCC: "
+
+#: header/briefheaderstyleplugin/briefheaderstyleinterface.cpp:37
+#: viewer/viewer_p.cpp:1606
+msgctxt "View->headers->"
+msgid "&Brief Headers"
+msgstr "&Кӯтоҳ"
+
+#: header/briefheaderstyleplugin/briefheaderstyleinterface.cpp:40
+#: viewer/viewer_p.cpp:1609
+msgid "Show brief list of message headers"
+msgstr "Намоиш додани рӯйхати кӯтоҳи унвонот"
 
 #: header/customheadersettingwidget.cpp:40
 msgid "Only show the headers listed below"
@@ -610,11 +632,43 @@ msgstr "Адреси бозгашт: "
 msgid "%1: "
 msgstr ""
 
+#: header/customheaderstyleplugin/customheaderstyleinterface.cpp:37
+#: viewer/viewer_p.cpp:1634
+#, fuzzy
+#| msgctxt "View->headers->"
+#| msgid "&Long Headers"
+msgctxt "View->headers->"
+msgid "&Custom Headers"
+msgstr "&Ҷузъиёт"
+
+#: header/customheaderstyleplugin/customheaderstyleinterface.cpp:40
+#: viewer/viewer_p.cpp:1637
+#, fuzzy
+#| msgid "Show long list of message headers"
+msgid "Show custom headers"
+msgstr "Намоиши рӯйхати пурраи унвоноти иттилоот"
+
 #: header/enterpriseheaderstyle.cpp:133
 #, fuzzy
 #| msgid "To: "
 msgid "To: "
 msgstr "Қабулкунанда: "
+
+#: header/enterpriseheaderstyleplugin/enterpriseheaderstyleinterface.cpp:36
+#: viewer/viewer_p.cpp:1592
+#, fuzzy
+#| msgctxt "View->headers->"
+#| msgid "&Brief Headers"
+msgctxt "View->headers->"
+msgid "&Enterprise Headers"
+msgstr "&Кӯтоҳ"
+
+#: header/enterpriseheaderstyleplugin/enterpriseheaderstyleinterface.cpp:40
+#: viewer/viewer_p.cpp:1595
+#, fuzzy
+#| msgid "Show the list of headers in a fancy format"
+msgid "Show the list of headers in Enterprise style"
+msgstr "Ба формати латиф намоиш додани рӯйхат"
 
 #: header/fancyheaderstyle.cpp:123
 #, kde-format
@@ -656,6 +710,17 @@ msgstr "Қабулкунанда: "
 #, fuzzy
 msgid "Spam Status:"
 msgstr "Вазъият: "
+
+#: header/fancyheaderstyleplugin/fancyheaderstyleinterface.cpp:37
+#: viewer/viewer_p.cpp:1599
+msgctxt "View->headers->"
+msgid "&Fancy Headers"
+msgstr "&Латиф"
+
+#: header/fancyheaderstyleplugin/fancyheaderstyleinterface.cpp:40
+#: viewer/viewer_p.cpp:1602
+msgid "Show the list of headers in a fancy format"
+msgstr "Ба формати латиф намоиш додани рӯйхат"
 
 #: header/grantleeheaderformatter.cpp:83
 #, fuzzy, kde-format
@@ -790,6 +855,37 @@ msgid ""
 "Full report:\n"
 "%2"
 msgstr ""
+
+#: header/headerstylemenu.cpp:58 viewer/viewer_p.cpp:1587
+msgctxt "View->"
+msgid "&Headers"
+msgstr "&Унвонот"
+
+#: header/headerstylemenu.cpp:60 viewer/viewer_p.cpp:1589
+msgid "Choose display style of message headers"
+msgstr "Формати тасвироти унвонотро интихоб кунед"
+
+#: header/longheaderstyleplugin/longheaderstyleinterface.cpp:37
+#: viewer/viewer_p.cpp:1620
+msgctxt "View->headers->"
+msgid "&Long Headers"
+msgstr "&Ҷузъиёт"
+
+#: header/longheaderstyleplugin/longheaderstyleinterface.cpp:40
+#: viewer/viewer_p.cpp:1623
+msgid "Show long list of message headers"
+msgstr "Намоиши рӯйхати пурраи унвоноти иттилоот"
+
+#: header/standardsheaderstyleplugin/standardsheaderstyleinterface.cpp:37
+#: viewer/viewer_p.cpp:1613
+msgctxt "View->headers->"
+msgid "&Standard Headers"
+msgstr "&Стандартӣ"
+
+#: header/standardsheaderstyleplugin/standardsheaderstyleinterface.cpp:40
+#: viewer/viewer_p.cpp:1616
+msgid "Show standard list of message headers"
+msgstr "Намоиши рӯйхати стандартии унвоноти иттилоот"
 
 #: job/attachmenteditjob.cpp:46
 msgid ""
@@ -2140,13 +2236,13 @@ msgstr "Поёни иттилооти рамзгузошташуда"
 msgid "End of encapsulated message"
 msgstr "Поёни иттилооти сохташуда"
 
-#: viewer/pluginloaderbase.cpp:89
+#: viewer/pluginloaderbase.cpp:90
 #, fuzzy
 #| msgid "Unread Column"
 msgid "Unnamed plugin"
 msgstr "Сутуни иттилоотҳои хонданашуда"
 
-#: viewer/pluginloaderbase.cpp:95
+#: viewer/pluginloaderbase.cpp:96
 #, fuzzy
 #| msgid "Not available"
 msgid "No description available"
@@ -2415,88 +2511,6 @@ msgstr "&Эҷоди филтр"
 #, kde-format
 msgid "View Attachment: %1"
 msgstr "Намоиши замимот: %1"
-
-#: viewer/viewer_p.cpp:1587
-msgctxt "View->"
-msgid "&Headers"
-msgstr "&Унвонот"
-
-#: viewer/viewer_p.cpp:1589
-msgid "Choose display style of message headers"
-msgstr "Формати тасвироти унвонотро интихоб кунед"
-
-#: viewer/viewer_p.cpp:1592
-#, fuzzy
-#| msgctxt "View->headers->"
-#| msgid "&Brief Headers"
-msgctxt "View->headers->"
-msgid "&Enterprise Headers"
-msgstr "&Кӯтоҳ"
-
-#: viewer/viewer_p.cpp:1595
-#, fuzzy
-#| msgid "Show the list of headers in a fancy format"
-msgid "Show the list of headers in Enterprise style"
-msgstr "Ба формати латиф намоиш додани рӯйхат"
-
-#: viewer/viewer_p.cpp:1599
-msgctxt "View->headers->"
-msgid "&Fancy Headers"
-msgstr "&Латиф"
-
-#: viewer/viewer_p.cpp:1602
-msgid "Show the list of headers in a fancy format"
-msgstr "Ба формати латиф намоиш додани рӯйхат"
-
-#: viewer/viewer_p.cpp:1606
-msgctxt "View->headers->"
-msgid "&Brief Headers"
-msgstr "&Кӯтоҳ"
-
-#: viewer/viewer_p.cpp:1609
-msgid "Show brief list of message headers"
-msgstr "Намоиш додани рӯйхати кӯтоҳи унвонот"
-
-#: viewer/viewer_p.cpp:1613
-msgctxt "View->headers->"
-msgid "&Standard Headers"
-msgstr "&Стандартӣ"
-
-#: viewer/viewer_p.cpp:1616
-msgid "Show standard list of message headers"
-msgstr "Намоиши рӯйхати стандартии унвоноти иттилоот"
-
-#: viewer/viewer_p.cpp:1620
-msgctxt "View->headers->"
-msgid "&Long Headers"
-msgstr "&Ҷузъиёт"
-
-#: viewer/viewer_p.cpp:1623
-msgid "Show long list of message headers"
-msgstr "Намоиши рӯйхати пурраи унвоноти иттилоот"
-
-#: viewer/viewer_p.cpp:1627
-msgctxt "View->headers->"
-msgid "&All Headers"
-msgstr "&Ҳама"
-
-#: viewer/viewer_p.cpp:1630
-msgid "Show all message headers"
-msgstr "Намоиши тамоми унвонот"
-
-#: viewer/viewer_p.cpp:1634
-#, fuzzy
-#| msgctxt "View->headers->"
-#| msgid "&Long Headers"
-msgctxt "View->headers->"
-msgid "&Custom Headers"
-msgstr "&Ҷузъиёт"
-
-#: viewer/viewer_p.cpp:1637
-#, fuzzy
-#| msgid "Show long list of message headers"
-msgid "Show custom headers"
-msgstr "Намоиши рӯйхати пурраи унвоноти иттилоот"
 
 #: viewer/viewer_p.cpp:1645
 msgctxt "View->"
