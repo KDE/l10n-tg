@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-10-12 08:28+0000\n"
+"POT-Creation-Date: 2015-10-13 10:20+0000\n"
 "PO-Revision-Date: 2005-09-17 13:29+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -848,7 +848,7 @@ msgid "Edit Attachment"
 msgstr "attach"
 
 #: job/attachmentencryptwithchiasmusjob.cpp:92
-#: viewer/objecttreeparser.cpp:1924
+#: viewer/objecttreeparser.cpp:1589
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
@@ -861,39 +861,39 @@ msgstr ""
 #: job/attachmentencryptwithchiasmusjob.cpp:140
 #: job/attachmentencryptwithchiasmusjob.cpp:153
 #: job/attachmentencryptwithchiasmusjob.cpp:196
-#: viewer/objecttreeparser.cpp:1930
+#: viewer/objecttreeparser.cpp:1595
 msgid "Chiasmus Backend Error"
 msgstr ""
 
 #: job/attachmentencryptwithchiasmusjob.cpp:107
-#: viewer/objecttreeparser.cpp:1936
+#: viewer/objecttreeparser.cpp:1601
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
 msgstr ""
 
 #: job/attachmentencryptwithchiasmusjob.cpp:117
-#: viewer/objecttreeparser.cpp:1944
+#: viewer/objecttreeparser.cpp:1609
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
 msgstr ""
 
 #: job/attachmentencryptwithchiasmusjob.cpp:125
-#: viewer/objecttreeparser.cpp:1950
+#: viewer/objecttreeparser.cpp:1615
 #, fuzzy
 msgid "Chiasmus Decryption Key Selection"
 msgstr "Интихоби калиди рамзгузорӣ"
 
 #: job/attachmentencryptwithchiasmusjob.cpp:138
-#: viewer/objecttreeparser.cpp:1963
+#: viewer/objecttreeparser.cpp:1628
 msgid ""
 "Chiasmus backend does not offer the \"x-decrypt\" function. Please report "
 "this bug."
 msgstr ""
 
 #: job/attachmentencryptwithchiasmusjob.cpp:151
-#: viewer/objecttreeparser.cpp:1971
+#: viewer/objecttreeparser.cpp:1636
 msgid ""
 "The \"x-decrypt\" function does not accept the expected parameters. Please "
 "report this bug."
@@ -901,12 +901,12 @@ msgstr ""
 
 #: job/attachmentencryptwithchiasmusjob.cpp:159
 #: job/attachmentencryptwithchiasmusjob.cpp:187
-#: viewer/objecttreeparser.cpp:1977
+#: viewer/objecttreeparser.cpp:1642
 msgid "Chiasmus Decryption Error"
 msgstr ""
 
 #: job/attachmentencryptwithchiasmusjob.cpp:193
-#: viewer/objecttreeparser.cpp:1983
+#: viewer/objecttreeparser.cpp:1648
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-decrypt\" function "
 "did not return a byte array. Please report this bug."
@@ -1717,6 +1717,38 @@ msgstr ""
 msgid "Unable to edit attachment"
 msgstr "ғайри замимот"
 
+#: viewer/messagepart.cpp:133 viewer/objecttreeparser.cpp:2479
+msgid "Wrong Crypto Plug-In."
+msgstr "Модули нодурусти хати рамзӣ."
+
+#: viewer/messagepart.cpp:288
+#, fuzzy
+#| msgid "Store sent messages encry&pted"
+msgid "This message is encrypted."
+msgstr "Иттилоотҳои фиристодашударо ба тарзи &рамзгузошташуда захира кардан"
+
+#: viewer/messagepart.cpp:293
+#, fuzzy
+#| msgid "&Encrypt Message"
+msgid "Decrypt Message"
+msgstr "&Рамзгузории иттилоот"
+
+#: viewer/messagepart.cpp:329
+msgid "The crypto engine returned no cleartext data."
+msgstr "Барномаи рамзгузорӣ маълумоти озмоиширо барнагардонд."
+
+#: viewer/messagepart.cpp:332 viewer/objecttreeparser.cpp:2278
+#: viewer/objecttreeparser.cpp:2320
+msgid "Status: "
+msgstr "Вазъият: "
+
+#: viewer/messagepart.cpp:338
+#, fuzzy
+#| msgid "(unknown)"
+msgctxt "Status of message unknown."
+msgid "(unknown)"
+msgstr "(номаълум)"
+
 #: viewer/mimeparttree/mimetreemodel.cpp:59
 msgid "body part"
 msgstr "тан"
@@ -1729,154 +1761,104 @@ msgstr "Тасвироты"
 msgid "Size"
 msgstr "Андоза"
 
-#: viewer/objecttreeparser.cpp:642 viewer/objecttreeparser.cpp:2812
-msgid "Wrong Crypto Plug-In."
-msgstr "Модули нодурусти хати рамзӣ."
-
-#: viewer/objecttreeparser.cpp:684
-msgid "The crypto engine returned no cleartext data."
-msgstr "Барномаи рамзгузорӣ маълумоти озмоиширо барнагардонд."
-
-#: viewer/objecttreeparser.cpp:687 viewer/objecttreeparser.cpp:2613
-#: viewer/objecttreeparser.cpp:2655
-msgid "Status: "
-msgstr "Вазъият: "
-
-#: viewer/objecttreeparser.cpp:693
-#, fuzzy
-#| msgid "(unknown)"
-msgctxt "Status of message unknown."
-msgid "(unknown)"
-msgstr "(номаълум)"
-
-#: viewer/objecttreeparser.cpp:705 viewer/objecttreeparser.cpp:986
-#, kde-format
-msgid "Crypto plug-in \"%1\" is not initialized."
-msgstr "Модули рамзгузории %1 оғоз нашудааст."
-
-#: viewer/objecttreeparser.cpp:709
-#, kde-format
-msgid "Crypto plug-in \"%1\" cannot verify signatures."
-msgstr "Модули рамзгузории \"%1\" наметавонад имзоотро биозмояд."
-
-#: viewer/objecttreeparser.cpp:714 viewer/objecttreeparser.cpp:994
-msgid "No appropriate crypto plug-in was found."
-msgstr "Модули мутобиқи хати рамзӣ ёфт нашудааст."
-
-#: viewer/objecttreeparser.cpp:717
-#, kde-format
-msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
-msgid "No %1 plug-in was found."
-msgstr "Модули %1 ёфт нашуд."
-
-#: viewer/objecttreeparser.cpp:721
-#, kde-format
-msgid ""
-"The message is signed, but the validity of the signature cannot be verified."
-"<br />Reason: %1"
-msgstr "Наметавонам ҳақиқияти имзоотро муайян кунам. <br />Сабаб: %1"
-
-#: viewer/objecttreeparser.cpp:755
-#, fuzzy
-#| msgid "Store sent messages encry&pted"
-msgid "This message is encrypted."
-msgstr "Иттилоотҳои фиристодашударо ба тарзи &рамзгузошташуда захира кардан"
-
-#: viewer/objecttreeparser.cpp:760
-#, fuzzy
-#| msgid "&Encrypt Message"
-msgid "Decrypt Message"
-msgstr "&Рамзгузории иттилоот"
-
-#: viewer/objecttreeparser.cpp:799
+#: viewer/objecttreeparser.cpp:630
 #, fuzzy, kde-format
 #| msgid "Sorry, certificate could not be imported.<br>Reason: %1"
 msgid "Sorry, certificate could not be imported.<br />Reason: %1"
 msgstr "Бубахшед, сертификатро ворид кардан имконпазир нест. <br>Сабаб: %1"
 
-#: viewer/objecttreeparser.cpp:809
+#: viewer/objecttreeparser.cpp:640
 msgid "Sorry, no certificates were found in this message."
 msgstr "Бубахшед, барои ин иттилоот ягон сертификат ёфт нашуд."
 
-#: viewer/objecttreeparser.cpp:812
+#: viewer/objecttreeparser.cpp:643
 msgid "Certificate import status:"
 msgstr "Вазъияти воридоти сертификатҳо:"
 
-#: viewer/objecttreeparser.cpp:814
+#: viewer/objecttreeparser.cpp:645
 #, kde-format
 msgid "1 new certificate was imported."
 msgid_plural "%1 new certificates were imported."
 msgstr[0] "%1 сертификат ворид карда шуд."
 msgstr[1] "%1 сертификатҳо ворид карда шуданд."
 
-#: viewer/objecttreeparser.cpp:817
+#: viewer/objecttreeparser.cpp:648
 #, kde-format
 msgid "1 certificate was unchanged."
 msgid_plural "%1 certificates were unchanged."
 msgstr[0] "%1 сертификат тағйир ёфта набуд."
 msgstr[1] "%1 сертификатҳо тағйир ёфта набуданд."
 
-#: viewer/objecttreeparser.cpp:820
+#: viewer/objecttreeparser.cpp:651
 #, kde-format
 msgid "1 new secret key was imported."
 msgid_plural "%1 new secret keys were imported."
 msgstr[0] "%1 калиди пинҳонӣ ворид карда шуд."
 msgstr[1] "%1 калидҳои пинҳонӣ ворид карда шуданд."
 
-#: viewer/objecttreeparser.cpp:823
+#: viewer/objecttreeparser.cpp:654
 #, kde-format
 msgid "1 secret key was unchanged."
 msgid_plural "%1 secret keys were unchanged."
 msgstr[0] "%1 калиди пинҳонӣ тағйир ёфта набуд."
 msgstr[1] "%1 калидҳои пинҳонӣ тағйир ёфта набуданд."
 
-#: viewer/objecttreeparser.cpp:833
+#: viewer/objecttreeparser.cpp:664
 msgid "Sorry, no details on certificate import available."
 msgstr "Бубахшед, ҷузъиётҳои воридоти сертификат дастрас нестанд."
 
-#: viewer/objecttreeparser.cpp:836
+#: viewer/objecttreeparser.cpp:667
 msgid "Certificate import details:"
 msgstr "Ҷузъиёти вориди сертификатҳои:"
 
-#: viewer/objecttreeparser.cpp:840
+#: viewer/objecttreeparser.cpp:671
 #, fuzzy, kde-format
 #| msgid "Failed: %1 (%2)"
 msgctxt "Certificate import failed."
 msgid "Failed: %1 (%2)"
 msgstr "Хато: %1 (%2)"
 
-#: viewer/objecttreeparser.cpp:844
+#: viewer/objecttreeparser.cpp:675
 #, kde-format
 msgid "New or changed: %1 (secret key available)"
 msgstr "Нав ё тағйирёфта: %1 (калиди пинҳонӣ дастрас аст)"
 
-#: viewer/objecttreeparser.cpp:846
+#: viewer/objecttreeparser.cpp:677
 #, kde-format
 msgid "New or changed: %1"
 msgstr "Нав ё тағйирёфта: %1"
 
-#: viewer/objecttreeparser.cpp:883
+#: viewer/objecttreeparser.cpp:714
 #, fuzzy
 #| msgid "Crypto plug-in \"%1\" could not decrypt the data."
 msgid "Could not decrypt the data."
 msgstr "Модули рамзгузории %1 ин маълумотҳоро рамзхонӣ карда наметавонад."
 
-#: viewer/objecttreeparser.cpp:973
+#: viewer/objecttreeparser.cpp:804
 #, kde-format
 msgid "Crypto plug-in \"%1\" could not decrypt the data."
 msgstr "Модули рамзгузории %1 ин маълумотҳоро рамзхонӣ карда наметавонад."
 
-#: viewer/objecttreeparser.cpp:975
+#: viewer/objecttreeparser.cpp:806
 #, kde-format
 msgid "Error: %1"
 msgstr "Хатогӣ: %1"
 
-#: viewer/objecttreeparser.cpp:990
+#: viewer/objecttreeparser.cpp:817 viewer/objecttreeparser.cpp:2550
+#, kde-format
+msgid "Crypto plug-in \"%1\" is not initialized."
+msgstr "Модули рамзгузории %1 оғоз нашудааст."
+
+#: viewer/objecttreeparser.cpp:821
 #, kde-format
 msgid "Crypto plug-in \"%1\" cannot decrypt messages."
 msgstr "Модули рамзгузории %1 иттилоотҳорорамзхонӣ карда наметавонад."
 
-#: viewer/objecttreeparser.cpp:1088
+#: viewer/objecttreeparser.cpp:825 viewer/objecttreeparser.cpp:2559
+msgid "No appropriate crypto plug-in was found."
+msgstr "Модули мутобиқи хати рамзӣ ёфт нашудааст."
+
+#: viewer/objecttreeparser.cpp:919
 #, fuzzy
 msgid ""
 "<b>Note:</b> This HTML message may contain external references to images "
@@ -1889,7 +1871,7 @@ msgstr ""
 "ин иттилоот бовар кунед, метавонед тасвироти HTML-ро бо пахши <a href="
 "\"kmail:showHTML\">инҷо, фаъол созед</a>."
 
-#: viewer/objecttreeparser.cpp:1102
+#: viewer/objecttreeparser.cpp:933
 msgid ""
 "<b>Note:</b> This is an HTML message. For security reasons, only the raw "
 "HTML code is shown. If you trust the sender of this message then you can "
@@ -1901,125 +1883,125 @@ msgstr ""
 "ин иттилоот бовар кунед, метавонед тасвироти HTML-ро бо пахши <a href="
 "\"kmail:showHTML\">инҷо, фаъол созед</a>."
 
-#: viewer/objecttreeparser.cpp:2054
+#: viewer/objecttreeparser.cpp:1719
 #, fuzzy
 #| msgid "Unnamed"
 msgctxt "display name for an unnamed attachment"
 msgid "Unnamed"
 msgstr "Беном"
 
-#: viewer/objecttreeparser.cpp:2110
+#: viewer/objecttreeparser.cpp:1775
 msgid "Error: Signature not verified"
 msgstr "Хато: қодир ба озмоиши имзо нестам"
 
-#: viewer/objecttreeparser.cpp:2113
+#: viewer/objecttreeparser.cpp:1778
 msgid "Good signature"
 msgstr "Имзои дуруст"
 
-#: viewer/objecttreeparser.cpp:2116
+#: viewer/objecttreeparser.cpp:1781
 msgid "<b>Bad</b> signature"
 msgstr "Имзои нодуруст"
 
-#: viewer/objecttreeparser.cpp:2119
+#: viewer/objecttreeparser.cpp:1784
 msgid "No public key to verify the signature"
 msgstr "Калиди кушод барои озмоиши имзо мавҷуд нест"
 
-#: viewer/objecttreeparser.cpp:2122
+#: viewer/objecttreeparser.cpp:1787
 msgid "No signature found"
 msgstr "Имзо ёфт нашуд"
 
-#: viewer/objecttreeparser.cpp:2125
+#: viewer/objecttreeparser.cpp:1790
 msgid "Error verifying the signature"
 msgstr "Хатогӣ ҳангоми озмоиши имзо"
 
-#: viewer/objecttreeparser.cpp:2128
+#: viewer/objecttreeparser.cpp:1793
 msgid "Different results for signatures"
 msgstr "Натиҷаҳои гуногун барои имзо"
 
-#: viewer/objecttreeparser.cpp:2147
+#: viewer/objecttreeparser.cpp:1812
 msgid "No status information available."
 msgstr "Иттилооти вазъият мавҷуд нест."
 
-#: viewer/objecttreeparser.cpp:2154 viewer/objecttreeparser.cpp:2240
+#: viewer/objecttreeparser.cpp:1819 viewer/objecttreeparser.cpp:1905
 msgid "Good signature."
 msgstr "Имзои дуруст."
 
-#: viewer/objecttreeparser.cpp:2175
+#: viewer/objecttreeparser.cpp:1840
 msgid "One key has expired."
 msgstr "Як калид таъхир карда шудааст."
 
-#: viewer/objecttreeparser.cpp:2179
+#: viewer/objecttreeparser.cpp:1844
 msgid "The signature has expired."
 msgstr "Имзо таъхир карда шудааст."
 
-#: viewer/objecttreeparser.cpp:2184
+#: viewer/objecttreeparser.cpp:1849
 msgid "Unable to verify: key missing."
 msgstr "Хатогӣ ҳангоми озмоиш: калид мавҷуд нест."
 
-#: viewer/objecttreeparser.cpp:2191
+#: viewer/objecttreeparser.cpp:1856
 msgid "CRL not available."
 msgstr "CRL дастрас нест."
 
-#: viewer/objecttreeparser.cpp:2195
+#: viewer/objecttreeparser.cpp:1860
 msgid "Available CRL is too old."
 msgstr "CRL-и мавҷудӣ кӯҳна шуд."
 
-#: viewer/objecttreeparser.cpp:2199
+#: viewer/objecttreeparser.cpp:1864
 msgid "A policy was not met."
 msgstr "Дастур мутобиқ нест."
 
-#: viewer/objecttreeparser.cpp:2203
+#: viewer/objecttreeparser.cpp:1868
 msgid "A system error occurred."
 msgstr "Хатои системавӣ рӯй дод."
 
-#: viewer/objecttreeparser.cpp:2214
+#: viewer/objecttreeparser.cpp:1879
 msgid "One key has been revoked."
 msgstr "Якеи аз калидҳо бекор карда шуд."
 
-#: viewer/objecttreeparser.cpp:2242
+#: viewer/objecttreeparser.cpp:1907
 msgid "<b>Bad</b> signature."
 msgstr "Имзои нодуруст."
 
-#: viewer/objecttreeparser.cpp:2270
+#: viewer/objecttreeparser.cpp:1935
 #, fuzzy
 #| msgid "&Enable signature"
 msgid "Invalid signature."
 msgstr "&Афзудани имзо"
 
-#: viewer/objecttreeparser.cpp:2273
+#: viewer/objecttreeparser.cpp:1938
 #, fuzzy
 #| msgid "Not enough information to check signature. %1"
 msgid "Not enough information to check signature validity."
 msgstr "Иттилоот барои озмоиши имзо нокифоя аст. %1"
 
-#: viewer/objecttreeparser.cpp:2287
+#: viewer/objecttreeparser.cpp:1952
 #, fuzzy
 #| msgid "Signatures"
 msgid "Signature is valid."
 msgstr "Имзоот"
 
-#: viewer/objecttreeparser.cpp:2289
+#: viewer/objecttreeparser.cpp:1954
 #, kde-format
 msgid "Signed by <a href=\"mailto:%1\">%2</a>."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2294
+#: viewer/objecttreeparser.cpp:1959
 msgid "Unknown signature state"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2300
+#: viewer/objecttreeparser.cpp:1965
 #, fuzzy
 #| msgid "Show alway&s"
 msgid "Show Details"
 msgstr "&Доим"
 
-#: viewer/objecttreeparser.cpp:2323
+#: viewer/objecttreeparser.cpp:1988
 #, fuzzy
 #| msgid "Not available"
 msgid "No Audit Log available"
 msgstr "Дастрас нест"
 
-#: viewer/objecttreeparser.cpp:2325
+#: viewer/objecttreeparser.cpp:1990
 #, fuzzy, kde-format
 msgid "Error Retrieving Audit Log: %1"
 msgstr ""
@@ -2027,77 +2009,77 @@ msgstr ""
 "сервер\n"
 "%1"
 
-#: viewer/objecttreeparser.cpp:2336
+#: viewer/objecttreeparser.cpp:2001
 msgctxt "The Audit Log is a detailed error log from the gnupg backend"
 msgid "Show Audit Log"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2347
+#: viewer/objecttreeparser.cpp:2012
 #, fuzzy
 #| msgid "Logging Details"
 msgid "Hide Details"
 msgstr "Ворид кардани маҷалот"
 
-#: viewer/objecttreeparser.cpp:2372 viewer/objecttreeparser.cpp:2374
+#: viewer/objecttreeparser.cpp:2037 viewer/objecttreeparser.cpp:2039
 msgid "Encapsulated message"
 msgstr "Иттилооти сохташуда"
 
-#: viewer/objecttreeparser.cpp:2383
+#: viewer/objecttreeparser.cpp:2048
 #, fuzzy
 #| msgid "Please wait while the message is transferred"
 #| msgid_plural "Please wait while the %1 messages are transferred"
 msgid "Please wait while the message is being decrypted..."
 msgstr "Хотимаи фиристониши иттилооти %1-ро интизор шавед"
 
-#: viewer/objecttreeparser.cpp:2385
+#: viewer/objecttreeparser.cpp:2050
 msgid "Encrypted message"
 msgstr "Иттилооти рамзгузошташуда"
 
-#: viewer/objecttreeparser.cpp:2387
+#: viewer/objecttreeparser.cpp:2052
 msgid "Encrypted message (decryption not possible)"
 msgstr "Иттилоот рамзгузорӣ шудааст (рамзхонӣ имконпазир нест)"
 
-#: viewer/objecttreeparser.cpp:2389
+#: viewer/objecttreeparser.cpp:2054
 #, kde-format
 msgid "Reason: %1"
 msgstr "Сабаб: %1"
 
-#: viewer/objecttreeparser.cpp:2399
+#: viewer/objecttreeparser.cpp:2064
 #, fuzzy
 #| msgid "Please wait while the message is transferred"
 #| msgid_plural "Please wait while the %1 messages are transferred"
 msgid "Please wait while the signature is being verified..."
 msgstr "Хотимаи фиристониши иттилооти %1-ро интизор шавед"
 
-#: viewer/objecttreeparser.cpp:2496 viewer/objecttreeparser.cpp:2498
+#: viewer/objecttreeparser.cpp:2161 viewer/objecttreeparser.cpp:2163
 #, fuzzy
 #| msgid "Certificates"
 msgid "certificate"
 msgstr "Сертификатҳо"
 
-#: viewer/objecttreeparser.cpp:2505 viewer/objecttreeparser.cpp:2531
+#: viewer/objecttreeparser.cpp:2170 viewer/objecttreeparser.cpp:2196
 #, fuzzy
 #| msgid "Warning:"
 msgctxt "Start of warning message."
 msgid "Warning:"
 msgstr "Огоҳӣ:"
 
-#: viewer/objecttreeparser.cpp:2507
+#: viewer/objecttreeparser.cpp:2172
 #, kde-format
 msgid "Sender's mail address is not stored in the %1 used for signing."
 msgstr ""
 "Адреси фиристонанда дар %1, ки барои имзоот истифода мешавад, ишора "
 "нашудааст."
 
-#: viewer/objecttreeparser.cpp:2510
+#: viewer/objecttreeparser.cpp:2175
 msgid "sender: "
 msgstr "Фиристонанда: "
 
-#: viewer/objecttreeparser.cpp:2513
+#: viewer/objecttreeparser.cpp:2178
 msgid "stored: "
 msgstr "захира шудааст: "
 
-#: viewer/objecttreeparser.cpp:2533
+#: viewer/objecttreeparser.cpp:2198
 #, kde-format
 msgid ""
 "No mail address is stored in the %1 used for signing, so we cannot compare "
@@ -2106,96 +2088,114 @@ msgstr ""
 "Адрес дар %1, ки барои имзо истифода мешавад, ишора нашудааст, бо чунин "
 "тариқ муқоисакунӣ бо адреси фиристонандаи %2 имконпазир нест."
 
-#: viewer/objecttreeparser.cpp:2557
+#: viewer/objecttreeparser.cpp:2222
 #, kde-format
 msgid "Not enough information to check signature. %1"
 msgstr "Иттилоот барои озмоиши имзо нокифоя аст. %1"
 
-#: viewer/objecttreeparser.cpp:2574 viewer/objecttreeparser.cpp:2648
+#: viewer/objecttreeparser.cpp:2239 viewer/objecttreeparser.cpp:2313
 msgid "Message was signed with unknown key."
 msgstr "Иттилоот бо калиди номаълум имзо шудааст."
 
-#: viewer/objecttreeparser.cpp:2576 viewer/objecttreeparser.cpp:2686
-#: viewer/objecttreeparser.cpp:2728
+#: viewer/objecttreeparser.cpp:2241 viewer/objecttreeparser.cpp:2351
+#: viewer/objecttreeparser.cpp:2393
 #, kde-format
 msgid "Message was signed by %1."
 msgstr "Иттилоот бо %1 имзо шудааст."
 
-#: viewer/objecttreeparser.cpp:2583 viewer/objecttreeparser.cpp:2591
-#: viewer/objecttreeparser.cpp:2601
+#: viewer/objecttreeparser.cpp:2248 viewer/objecttreeparser.cpp:2256
+#: viewer/objecttreeparser.cpp:2266
 #, kde-format
 msgid "Message was signed with key %1."
 msgstr "Иттилоот бо калиди %1 имзо шудааст."
 
-#: viewer/objecttreeparser.cpp:2586
+#: viewer/objecttreeparser.cpp:2251
 #, kde-format
 msgid "Message was signed on %1 with key %2."
 msgstr "Иттилоот бо %1 калиди %2 имзо шудааст."
 
-#: viewer/objecttreeparser.cpp:2594
+#: viewer/objecttreeparser.cpp:2259
 #, kde-format
 msgid "Message was signed by %3 on %1 with key %2"
 msgstr "Иттилоотро %3 дар %1 бо калиди %2 имзо кардааст"
 
-#: viewer/objecttreeparser.cpp:2604
+#: viewer/objecttreeparser.cpp:2269
 #, kde-format
 msgid "Message was signed by %2 with key %1."
 msgstr "Иттилоотро %2 бо калиди %1 имзо шудааст."
 
-#: viewer/objecttreeparser.cpp:2641
+#: viewer/objecttreeparser.cpp:2306
 #, kde-format
 msgid "Message was signed on %1 with unknown key %2."
 msgstr "Иттилоотро %1 бо калиди номаълуми %2 имзо шудааст."
 
-#: viewer/objecttreeparser.cpp:2645
+#: viewer/objecttreeparser.cpp:2310
 #, kde-format
 msgid "Message was signed with unknown key %1."
 msgstr "Иттилоот бо калиди номаълуми %1 имзо шудааст."
 
-#: viewer/objecttreeparser.cpp:2651
+#: viewer/objecttreeparser.cpp:2316
 msgid "The validity of the signature cannot be verified."
 msgstr "Наметавонам ҳақиқияти имзоро муайян кунам."
 
-#: viewer/objecttreeparser.cpp:2682 viewer/objecttreeparser.cpp:2724
+#: viewer/objecttreeparser.cpp:2347 viewer/objecttreeparser.cpp:2389
 #, kde-format
 msgid "Message was signed by %2 (Key ID: %1)."
 msgstr "Иттилоот бо %2 (калиди ID: %1) имзо шудааст."
 
-#: viewer/objecttreeparser.cpp:2692
+#: viewer/objecttreeparser.cpp:2357
 msgid "The signature is valid, but the key's validity is unknown."
 msgstr "Имзоот дуруст аст, аммо саҳеҳияти калид номаълум аст."
 
-#: viewer/objecttreeparser.cpp:2696
+#: viewer/objecttreeparser.cpp:2361
 msgid "The signature is valid and the key is marginally trusted."
 msgstr "Имзоот дуруст аст, аммо калид нопурра озмоида шудааст."
 
-#: viewer/objecttreeparser.cpp:2700
+#: viewer/objecttreeparser.cpp:2365
 msgid "The signature is valid and the key is fully trusted."
 msgstr "Имзо дуруст аст ва калид пурра озмоида шудааст."
 
-#: viewer/objecttreeparser.cpp:2704
+#: viewer/objecttreeparser.cpp:2369
 msgid "The signature is valid and the key is ultimately trusted."
 msgstr "Имзо дуруст аст ва калид қатъиян озмоида шуд."
 
-#: viewer/objecttreeparser.cpp:2708
+#: viewer/objecttreeparser.cpp:2373
 msgid "The signature is valid, but the key is untrusted."
 msgstr "Имзо саҳеҳ аст, аммо калид озмоида нашудааст."
 
-#: viewer/objecttreeparser.cpp:2731
+#: viewer/objecttreeparser.cpp:2396
 msgid "Warning: The signature is bad."
 msgstr "Огоҳӣ: хатогӣ дар имзоот."
 
-#: viewer/objecttreeparser.cpp:2756
+#: viewer/objecttreeparser.cpp:2421
 msgid "End of signed message"
 msgstr "Поёни иттилооти имзошуда"
 
-#: viewer/objecttreeparser.cpp:2762
+#: viewer/objecttreeparser.cpp:2427
 msgid "End of encrypted message"
 msgstr "Поёни иттилооти рамзгузошташуда"
 
-#: viewer/objecttreeparser.cpp:2768
+#: viewer/objecttreeparser.cpp:2433
 msgid "End of encapsulated message"
 msgstr "Поёни иттилооти сохташуда"
+
+#: viewer/objecttreeparser.cpp:2554
+#, kde-format
+msgid "Crypto plug-in \"%1\" cannot verify signatures."
+msgstr "Модули рамзгузории \"%1\" наметавонад имзоотро биозмояд."
+
+#: viewer/objecttreeparser.cpp:2562
+#, kde-format
+msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
+msgid "No %1 plug-in was found."
+msgstr "Модули %1 ёфт нашуд."
+
+#: viewer/objecttreeparser.cpp:2567
+#, kde-format
+msgid ""
+"The message is signed, but the validity of the signature cannot be verified."
+"<br />Reason: %1"
+msgstr "Наметавонам ҳақиқияти имзоотро муайян кунам. <br />Сабаб: %1"
 
 #: viewer/pluginloaderbase.cpp:90
 #, fuzzy
