@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-10-10 09:33+0000\n"
+"POT-Creation-Date: 2015-10-15 09:16+0000\n"
 "PO-Revision-Date: 2005-09-17 13:29+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -135,8 +135,8 @@ msgid "Multiple encryption keys per address"
 msgstr "якчанд калидҳои рамзгузорӣ ба адрес"
 
 #: aboutdata.cpp:364 collectionpage/collectionmailinglistpage.cpp:104
-#: editor/kmcomposewin.cpp:2126 kmmainwin.cpp:66 kmsystemtray.cpp:73
-#: kmsystemtray.cpp:114
+#: editor/kmcomposewin.cpp:2126 kmmainwin.cpp:66 kmreaderwin.cpp:315
+#: kmsystemtray.cpp:73 kmsystemtray.cpp:114
 msgid "KMail"
 msgstr "KMail"
 
@@ -3389,12 +3389,12 @@ msgstr "Ба китоби адресӣ илова кардан"
 msgid "Contact created successfully"
 msgstr "Гузаронидани иттилоот хотима ёфт"
 
-#: job/createnewcontactjob.cpp:136 kmreaderwin.cpp:830
+#: job/createnewcontactjob.cpp:136 kmreaderwin.cpp:796
 #, kde-format
 msgid "Contact cannot be stored: %1"
 msgstr ""
 
-#: job/createnewcontactjob.cpp:136 kmreaderwin.cpp:830
+#: job/createnewcontactjob.cpp:136 kmreaderwin.cpp:796
 #, fuzzy
 msgid "Failed to store contact"
 msgstr "ғайри замимот"
@@ -4898,96 +4898,44 @@ msgstr "Папка барои &маълумотҳои ҳузфшуда:"
 msgid "Less GUI freezes, mail checks happen in the background"
 msgstr ""
 
-#: kmreaderwin.cpp:316
+#: kmreaderwin.cpp:318
+#, fuzzy
+#| msgid "KDE Email Client"
+msgid "The KDE Mail Client"
+msgstr "Коргири почтавии KDE"
+
+#: kmreaderwin.cpp:327
+#, fuzzy
+#| msgid "Retrieving folderlist"
+msgid "Retrieving Folder Contents"
+msgstr "Қабул намудани рӯйхати папкаҳо"
+
+#: kmreaderwin.cpp:328
+#, fuzzy
+#| msgid "Please wait"
+msgid "Please wait . . ."
+msgstr "Лутфан, интизор шавед"
+
+#: kmreaderwin.cpp:334 kmreaderwin.cpp:343
+#, fuzzy
+#| msgctxt "View->attachments->"
+#| msgid "&Inline"
+msgid "Offline"
+msgstr "&Дар матн"
+
+#: kmreaderwin.cpp:335
 msgid ""
-"<h2 style='margin-top: 0px;'>Retrieving Folder Contents</h2><p>Please "
-"wait . . .</p>&nbsp;"
+"KMail is currently in offline mode. Click <a href=\"kmail:goOnline\">here</"
+"a> to go online . . .</p>"
 msgstr ""
 
-#: kmreaderwin.cpp:324
+#: kmreaderwin.cpp:344
 msgid ""
-"<h2 style='margin-top: 0px;'>Offline</h2><p>KMail is currently in offline "
-"mode. Click <a href=\"kmail:goOnline\">here</a> to go online . . .</p>&nbsp;"
+"Account is currently in offline mode. Click <a href=\"kmail:goResourceOnline"
+"\">here</a> to go online . . .</p>"
 msgstr ""
 
-#: kmreaderwin.cpp:333
-msgid ""
-"<h2 style='margin-top: 0px;'>Offline</h2><p>Account is currently in offline "
-"mode. Click <a href=\"kmail:goResourceOnline\">here</a> to go online . . .</"
-"p>&nbsp;"
-msgstr ""
-
-#: kmreaderwin.cpp:347
-#, fuzzy, kde-format
-msgctxt ""
-"%1: KMail version; %2: help:// URL; %3: generated list of new features; %4: "
-"First-time user text (only shown on first start); %5: generated list of "
-"important changes; --- end of comment ---"
-msgid ""
-"<h2 style='margin-top: 0px;'>Welcome to KMail %1</h2><p>KMail is the email "
-"client by KDE. It is designed to be fully compatible with Internet mailing "
-"standards including MIME, SMTP, POP3, and IMAP.</p>\n"
-"<ul><li>KMail has many powerful features which are described in the <a href="
-"\"%2\">documentation</a></li>\n"
-"%5\n"
-"%3\n"
-"%4\n"
-"<p>We hope that you will enjoy KMail.</p>\n"
-"<p>Thank you,</p>\n"
-"<p style='margin-bottom: 0px'>&nbsp; &nbsp; The KMail Team</p>"
-msgstr ""
-"<h2>Хуш омадед ба KMail %1</h2><p>KMail - ин коргири почтавӣ барои KDE. Он "
-"барои дастгирии пурраи почтаҳои стандартии Интернет, аз он ҷумла MIME, SMTP, "
-"POP3 ва IMAP эҷод шудааст.</p>\n"
-"<ul><li>KMail хеле имкониятҳои фоидаоварро, ки поёнтар қайд шудааст, дар бар "
-"мегирад<a href=\"%2\">Санадотҳои</a></li>\n"
-"<li><a href=\"%3\">Санадоти хонагии KMail</a> дорои иттилоотҳои оиди "
-"равандҳои нави KMail мебошад</li></ul>\n"
-"<p><span style='font-size:125%; font-weight:bold;'>Тағйиротҳои муҳим</span> "
-"(нисбат ба KMail %8):</p>\n"
-"<ul>\n"
-"%9</ul>\n"
-"<p>Поёнтар якчанд имкониятҳои нави ин раванди KMail (нисбат ба KMail %4, ки "
-"ба таркиби KDE %5 ворид мешавад) номбар шудаанд:</p>\n"
-"<ul>\n"
-"%6</ul>\n"
-"%7\n"
-"<p>Мо умед дорем, ки ба шумо кор бо KMail хеле писанд меояд.</p>\n"
-"<p>Миннатдорем,</p>\n"
-"<p>&nbsp; &nbsp; дастаи тайёркунандагони KMail</p>"
-
-#: kmreaderwin.cpp:364
-#, kde-format
-msgid ""
-"<p>Some of the new features in this release of KMail include (compared to "
-"KMail %1, which is part of KDE Software Compilation %2):</p>\n"
-msgstr ""
-
-#: kmreaderwin.cpp:378
-msgid ""
-"<p>Please take a moment to fill in the KMail configuration panel at Settings-"
-"&gt;Configure KMail.\n"
-"You need to create at least a default identity and an incoming as well as "
-"outgoing mail account.</p>\n"
-msgstr ""
-"<p>Коргири почтавии худро бо истифодаи Танзимот-&gt танзим кунед;Танзими "
-"KMail.\n"
-"Бояд профили асосиро ва ақалан як навиштаҷотро барои почтаи фиристодашаванда "
-"ва дохилшаванда ишора намудан лозим аст.</p>\n"
-
-#: kmreaderwin.cpp:390
-#, kde-format
-msgid ""
-"<p><span style='font-size:125%; font-weight:bold;'>Important changes</span> "
-"(compared to KMail %1):</p>\n"
-msgstr ""
-
-#: kmreaderwin.cpp:395
-#, kde-format
-msgid "<li>%1</li>\n"
-msgstr "<li>%1</li>\n"
-
-#: kmreaderwin.cpp:836
+#: kmreaderwin.cpp:802
 #, fuzzy
 #| msgid "Messages moved successfully"
 msgid "Contact modified successfully"
@@ -7237,6 +7185,58 @@ msgid_plural "Out of office reply active on servers"
 msgstr[0] "Тағйири ҷавобҳо \"берун аз офис\"..."
 msgstr[1] "Тағйири ҷавобҳо \"берун аз офис\"..."
 
+#, fuzzy
+#~ msgctxt ""
+#~ "%1: KMail version; %2: help:// URL; %3: generated list of new features; "
+#~ "%4: First-time user text (only shown on first start); %5: generated list "
+#~ "of important changes; --- end of comment ---"
+#~ msgid ""
+#~ "<h2 style='margin-top: 0px;'>Welcome to KMail %1</h2><p>KMail is the "
+#~ "email client by KDE. It is designed to be fully compatible with Internet "
+#~ "mailing standards including MIME, SMTP, POP3, and IMAP.</p>\n"
+#~ "<ul><li>KMail has many powerful features which are described in the <a "
+#~ "href=\"%2\">documentation</a></li>\n"
+#~ "%5\n"
+#~ "%3\n"
+#~ "%4\n"
+#~ "<p>We hope that you will enjoy KMail.</p>\n"
+#~ "<p>Thank you,</p>\n"
+#~ "<p style='margin-bottom: 0px'>&nbsp; &nbsp; The KMail Team</p>"
+#~ msgstr ""
+#~ "<h2>Хуш омадед ба KMail %1</h2><p>KMail - ин коргири почтавӣ барои KDE. "
+#~ "Он барои дастгирии пурраи почтаҳои стандартии Интернет, аз он ҷумла MIME, "
+#~ "SMTP, POP3 ва IMAP эҷод шудааст.</p>\n"
+#~ "<ul><li>KMail хеле имкониятҳои фоидаоварро, ки поёнтар қайд шудааст, дар "
+#~ "бар мегирад<a href=\"%2\">Санадотҳои</a></li>\n"
+#~ "<li><a href=\"%3\">Санадоти хонагии KMail</a> дорои иттилоотҳои оиди "
+#~ "равандҳои нави KMail мебошад</li></ul>\n"
+#~ "<p><span style='font-size:125%; font-weight:bold;'>Тағйиротҳои муҳим</"
+#~ "span> (нисбат ба KMail %8):</p>\n"
+#~ "<ul>\n"
+#~ "%9</ul>\n"
+#~ "<p>Поёнтар якчанд имкониятҳои нави ин раванди KMail (нисбат ба KMail %4, "
+#~ "ки ба таркиби KDE %5 ворид мешавад) номбар шудаанд:</p>\n"
+#~ "<ul>\n"
+#~ "%6</ul>\n"
+#~ "%7\n"
+#~ "<p>Мо умед дорем, ки ба шумо кор бо KMail хеле писанд меояд.</p>\n"
+#~ "<p>Миннатдорем,</p>\n"
+#~ "<p>&nbsp; &nbsp; дастаи тайёркунандагони KMail</p>"
+
+#~ msgid ""
+#~ "<p>Please take a moment to fill in the KMail configuration panel at "
+#~ "Settings-&gt;Configure KMail.\n"
+#~ "You need to create at least a default identity and an incoming as well as "
+#~ "outgoing mail account.</p>\n"
+#~ msgstr ""
+#~ "<p>Коргири почтавии худро бо истифодаи Танзимот-&gt танзим кунед;Танзими "
+#~ "KMail.\n"
+#~ "Бояд профили асосиро ва ақалан як навиштаҷотро барои почтаи "
+#~ "фиристодашаванда ва дохилшаванда ишора намудан лозим аст.</p>\n"
+
+#~ msgid "<li>%1</li>\n"
+#~ msgstr "<li>%1</li>\n"
+
 #~ msgid "OpenPGP Message - Encrypted"
 #~ msgstr "Иттилооти OpenPGP - рамзгузошташуда"
 
@@ -7531,12 +7531,6 @@ msgstr[1] "Тағйири ҷавобҳо \"берун аз офис\"..."
 #~| msgctxt "View->attachments->"
 #~| msgid "&Inline"
 #~ msgid "online"
-#~ msgstr "&Дар матн"
-
-#, fuzzy
-#~| msgctxt "View->attachments->"
-#~| msgid "&Inline"
-#~ msgid "offline"
 #~ msgstr "&Дар матн"
 
 #, fuzzy
