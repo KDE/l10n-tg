@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-12-17 07:23+0000\n"
+"POT-Creation-Date: 2015-12-19 07:06+0000\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -3203,7 +3203,7 @@ msgid "Layer Style"
 msgstr "&Андозаи табақа..."
 
 #: image/kis_layer_properties_icons.cpp:34 image/kis_paint_layer.cc:208
-#: plugins/extensions/dockers/animation/animation_docker.cpp:126
+#: plugins/extensions/dockers/animation/animation_docker.cpp:148
 #: plugins/extensions/dockers/animation/onion_skins_docker.cpp:37
 #, fuzzy
 msgid "Onion Skins"
@@ -9357,46 +9357,63 @@ msgstr ""
 msgid "Luma"
 msgstr ""
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:43
+#: plugins/extensions/dockers/animation/animation_docker.cpp:57
 #, fuzzy
 msgid "Animation"
 msgstr "Занондан"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:54
+#: plugins/extensions/dockers/animation/animation_docker.cpp:68
+#: ui/input/kis_change_frame_action.cpp:43
 #, fuzzy
 msgid "Previous Frame"
 msgstr "&Сафед"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:58
+#: plugins/extensions/dockers/animation/animation_docker.cpp:72
+#: ui/input/kis_change_frame_action.cpp:42
 #, fuzzy
 #| msgid "Remove Layer"
 msgid "Next Frame"
 msgstr "Нест кардани Табақа"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:62
+#: plugins/extensions/dockers/animation/animation_docker.cpp:76
 #, fuzzy
 msgid "Previous Key Frame"
 msgstr "&Сафед"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:66
+#: plugins/extensions/dockers/animation/animation_docker.cpp:80
 #, fuzzy
 msgid "Next Key Frame"
 msgstr "Намуди табақа:"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:70
+#: plugins/extensions/dockers/animation/animation_docker.cpp:84
 #, fuzzy
 msgid "First Frame"
 msgstr "&Сафед"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:74
+#: plugins/extensions/dockers/animation/animation_docker.cpp:88
 #, fuzzy
 msgid "Last Frame"
 msgstr "Намунаи рангҳо"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:78
+#: plugins/extensions/dockers/animation/animation_docker.cpp:92
 #, fuzzy
 msgid "Play / Pause"
 msgstr "Ҷамъ"
+
+#: plugins/extensions/dockers/animation/animation_docker.cpp:497
+#, kde-format
+msgid "Effective FPS:\t%1"
+msgstr ""
+
+#: plugins/extensions/dockers/animation/animation_docker.cpp:498
+#, kde-format
+msgid "Real FPS:\t%1"
+msgstr ""
+
+#: plugins/extensions/dockers/animation/animation_docker.cpp:499
+#, kde-format
+msgid "Frames dropped:\t%1\\%"
+msgstr ""
 
 #: plugins/extensions/dockers/animation/kis_animation_utils.cpp:32
 #, fuzzy
@@ -9429,11 +9446,17 @@ msgstr "Тоза кардани худкор"
 
 #: plugins/extensions/dockers/animation/kis_animation_utils.cpp:37
 #, fuzzy
+#| msgid "Copy Green"
+msgid "Drop Frames"
+msgstr "Сабзи нусха бардоштан"
+
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:38
+#, fuzzy
 msgid "Show in Timeline"
 msgstr "воҳиди тасвир/дюйм"
 
-#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:54
-#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:146
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:55
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:147
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Copy Keyframe"
@@ -9441,13 +9464,13 @@ msgid_plural "Copy Keyframes"
 msgstr[0] "Намуди табақа:"
 msgstr[1] "Намуди табақа:"
 
-#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:62
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:63
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Add Keyframe"
 msgstr "Намуди табақа:"
 
-#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:74
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:75
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Remove Keyframe"
@@ -9455,7 +9478,7 @@ msgid_plural "Remove Keyframes"
 msgstr[0] "Намуди табақа:"
 msgstr[1] "Намуди табақа:"
 
-#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:143
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:144
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Move Keyframe"
@@ -9570,6 +9593,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QToolButton, btnDeleteKeyframe)
 #. i18n: ectx: property (text), widget (QToolButton, btnOnionSkinOptions)
 #. i18n: ectx: property (text), widget (QToolButton, btnLazyFrame)
+#. i18n: ectx: property (text), widget (QToolButton, btnDropFrames)
 #. i18n: ectx: property (text), widget (QToolButton, m_bnSelectConfigurationFile)
 #. i18n: ectx: property (text), widget (QToolButton, m_bnSelectLut)
 #. i18n: ectx: property (text), widget (QToolButton, bnViewMode)
@@ -9599,6 +9623,7 @@ msgstr ""
 #: plugins/extensions/dockers/animation/wdg_animation.ui:411
 #: plugins/extensions/dockers/animation/wdg_animation.ui:428
 #: plugins/extensions/dockers/animation/wdg_animation.ui:438
+#: plugins/extensions/dockers/animation/wdg_animation.ui:448
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:66
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:151
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:170
@@ -9636,14 +9661,14 @@ msgid "..."
 msgstr "Нигоҳ доштан..."
 
 #. i18n: ectx: property (text), widget (QLabel, lblPlaySpeed)
-#: plugins/extensions/dockers/animation/wdg_animation.ui:470
+#: plugins/extensions/dockers/animation/wdg_animation.ui:480
 #, fuzzy
 #| msgid "Shape:"
 msgid "Play Speed:"
 msgstr "Шакл:"
 
 #. i18n: ectx: property (text), widget (QLabel, lblFramerate)
-#: plugins/extensions/dockers/animation/wdg_animation.ui:493
+#: plugins/extensions/dockers/animation/wdg_animation.ui:503
 #, fuzzy
 msgid "Frame Rate:"
 msgstr "Воридоти Тасвир"
@@ -21454,6 +21479,15 @@ msgstr ""
 
 #: ui/input/kis_alternate_invocation_action.cpp:50
 msgid "Pick Background Color from Merged Image"
+msgstr ""
+
+#: ui/input/kis_change_frame_action.cpp:38
+#, fuzzy
+msgid "Switch Time"
+msgstr "Ранги равон аз нав кардан"
+
+#: ui/input/kis_change_frame_action.cpp:39
+msgid "The <i>Switch Time</i> action changes the current time of the image."
 msgstr ""
 
 #: ui/input/kis_change_primary_setting_action.cpp:34
