@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-01-20 01:54+0000\n"
+"POT-Creation-Date: 2016-01-23 02:12+0000\n"
 "PO-Revision-Date: 2005-09-17 13:21+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -1540,8 +1540,8 @@ msgstr "Умумӣ"
 
 #: dialogs/activitydialog.cpp:143 dialogs/objectnodedialog.cpp:135
 #: dialogs/statedialog.cpp:116 dialogs/umlattributedialog.cpp:67
-#: dialogs/umlentityattributedialog.cpp:65 dialogs/umloperationdialog.cpp:86
-#: dialogs/umltemplatedialog.cpp:60
+#: dialogs/umlentityattributedialog.cpp:65 dialogs/umlenumliteraldialog.cpp:53
+#: dialogs/umloperationdialog.cpp:86 dialogs/umltemplatedialog.cpp:60
 msgid "General Properties"
 msgstr "Хусусиятҳои умумӣ"
 
@@ -3120,21 +3120,22 @@ msgstr "&Ном:"
 msgid "Classifier &scope (\"static\")"
 msgstr "&Минтақаӣ биноии классификатор (\"static\")"
 
-#: dialogs/umlattributedialog.cpp:126
+#: dialogs/umlattributedialog.cpp:126 dialogs/umlenumliteraldialog.cpp:86
 msgid "You have entered an invalid attribute name."
 msgstr "Шумо номи хусусияти нодурутро гузоштед."
 
-#: dialogs/umlattributedialog.cpp:127 refactoring/refactoringassistant.cpp:850
+#: dialogs/umlattributedialog.cpp:127 dialogs/umlenumliteraldialog.cpp:87
+#: refactoring/refactoringassistant.cpp:850
 msgid "Attribute Name Invalid"
 msgstr "Номи аттрибут нодуруст"
 
-#: dialogs/umlattributedialog.cpp:134
+#: dialogs/umlattributedialog.cpp:134 dialogs/umlenumliteraldialog.cpp:94
 msgid ""
 "The attribute name you have chosen is already being used in this operation."
 msgstr ""
 "Номи хусусияте ки шумо интихоб кардед дар амалиёт аллакай истифодашудааст."
 
-#: dialogs/umlattributedialog.cpp:135
+#: dialogs/umlattributedialog.cpp:135 dialogs/umlenumliteraldialog.cpp:95
 msgid "Attribute Name Not Unique"
 msgstr "Номи аттрибут ягона нест"
 
@@ -3230,6 +3231,23 @@ msgstr ""
 #, fuzzy
 msgid "Entity Attribute Name Not Unique"
 msgstr "Номи аттрибут ягона нест"
+
+#: dialogs/umlenumliteraldialog.cpp:33
+#, fuzzy
+#| msgid "General Properties"
+msgid "EnumLiteral Properties"
+msgstr "Хусусиятҳои умумӣ"
+
+#: dialogs/umlenumliteraldialog.cpp:59
+#, fuzzy
+#| msgid "&Name:"
+msgctxt "literal name"
+msgid "&Name:"
+msgstr "&Ном:"
+
+#: dialogs/umlenumliteraldialog.cpp:63
+msgid "&Value:"
+msgstr ""
 
 #: dialogs/umlfiledialog.cpp:139
 msgid "All Supported Files"
@@ -4604,9 +4622,8 @@ msgstr "Ном"
 
 #: object_factory.cpp:245 object_factory.cpp:249 umldoc.cpp:1528
 #: umldoc.cpp:1532 umldoc.cpp:1607 umldoc.cpp:1611 umldoc.cpp:1644
-#: umldoc.cpp:1648 umldoc.cpp:1685 umldoc.cpp:1689
-#: umlmodel/enumliteral.cpp:114 umlmodel/enumliteral.cpp:118
-#: umlmodel/stereotype.cpp:120 umlmodel/stereotype.cpp:124
+#: umldoc.cpp:1648 umldoc.cpp:1685 umldoc.cpp:1689 umlmodel/stereotype.cpp:120
+#: umlmodel/stereotype.cpp:124
 msgid "Enter name:"
 msgstr "Номро ворид созед:"
 
@@ -6621,13 +6638,6 @@ msgid ""
 "it again."
 msgstr "Амалиёт бо ҳамин ном ва рақами ҷузъбандӣ аллакай мавҷуд дорад."
 
-#: umlmodel/enumliteral.cpp:114 umlmodel/enumliteral.cpp:118
-#, fuzzy
-#| msgid "Name"
-msgctxt "enum name"
-msgid "Name"
-msgstr "Ном"
-
 #: umlmodel/folder.cpp:419
 #, fuzzy, kde-format
 msgid "The folderfile %1 does not exist."
@@ -6904,7 +6914,7 @@ msgstr "Номи нақш"
 msgid "Enter role name:"
 msgstr "Номи нақшро гузоред:"
 
-#: umlwidgets/associationwidget.cpp:3779
+#: umlwidgets/associationwidget.cpp:3795
 msgid "Press Ctrl with left mouse click to delete a point"
 msgstr ""
 
@@ -7388,6 +7398,12 @@ msgstr "Мавзӯъ"
 #: worktoolbar.cpp:374
 msgid "Pre/Post condition"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "enum name"
+#~ msgid "Name"
+#~ msgstr "Ном"
 
 #, fuzzy
 #~| msgid "Filter"
