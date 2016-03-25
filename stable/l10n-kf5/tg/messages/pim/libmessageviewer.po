@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-03-24 08:12+0000\n"
+"POT-Creation-Date: 2016-03-25 11:29+0000\n"
 "PO-Revision-Date: 2005-09-17 13:29+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -641,7 +641,7 @@ msgstr ""
 msgid "Move to Trash"
 msgstr "Ба сабад ҷойгир кардан"
 
-#: header/headerstyle_util.cpp:415 viewer/urlhandlermanager.cpp:132
+#: header/headerstyle_util.cpp:415 viewer/urlhandlermanager.cpp:131
 #, fuzzy
 msgid "Reply"
 msgstr "&Адреси бозгашт"
@@ -651,12 +651,12 @@ msgstr "&Адреси бозгашт"
 msgid "Reply to All"
 msgstr "&Ҷавоб додан"
 
-#: header/headerstyle_util.cpp:425 viewer/urlhandlermanager.cpp:136
+#: header/headerstyle_util.cpp:425 viewer/urlhandlermanager.cpp:135
 #, fuzzy
 msgid "Forward"
 msgstr "&Фиристониш"
 
-#: header/headerstyle_util.cpp:430 viewer/urlhandlermanager.cpp:138
+#: header/headerstyle_util.cpp:430 viewer/urlhandlermanager.cpp:137
 msgid "New Message"
 msgstr "Иттилооти нав"
 
@@ -1498,6 +1498,356 @@ msgstr ""
 msgid "Unable to edit attachment"
 msgstr "ғайри замимот"
 
+#: viewer/messagepart.cpp:179 viewer/messagepart.cpp:181
+msgid "Encapsulated message"
+msgstr "Иттилооти сохташуда"
+
+#: viewer/messagepart.cpp:200
+msgid "End of encapsulated message"
+msgstr "Поёни иттилооти сохташуда"
+
+#: viewer/messagepart.cpp:222
+#, fuzzy
+#| msgid "Please wait while the message is transferred"
+#| msgid_plural "Please wait while the %1 messages are transferred"
+msgid "Please wait while the message is being decrypted..."
+msgstr "Хотимаи фиристониши иттилооти %1-ро интизор шавед"
+
+#: viewer/messagepart.cpp:224
+msgid "Encrypted message"
+msgstr "Иттилооти рамзгузошташуда"
+
+#: viewer/messagepart.cpp:226
+msgid "Encrypted message (decryption not possible)"
+msgstr "Иттилоот рамзгузорӣ шудааст (рамзхонӣ имконпазир нест)"
+
+#: viewer/messagepart.cpp:228
+#, kde-format
+msgid "Reason: %1"
+msgstr "Сабаб: %1"
+
+#: viewer/messagepart.cpp:245
+msgid "End of encrypted message"
+msgstr "Поёни иттилооти рамзгузошташуда"
+
+#: viewer/messagepart.cpp:290
+msgid "Error: Signature not verified"
+msgstr "Хато: қодир ба озмоиши имзо нестам"
+
+#: viewer/messagepart.cpp:293
+msgid "Good signature"
+msgstr "Имзои дуруст"
+
+#: viewer/messagepart.cpp:296
+msgid "<b>Bad</b> signature"
+msgstr "Имзои нодуруст"
+
+#: viewer/messagepart.cpp:299
+msgid "No public key to verify the signature"
+msgstr "Калиди кушод барои озмоиши имзо мавҷуд нест"
+
+#: viewer/messagepart.cpp:302
+msgid "No signature found"
+msgstr "Имзо ёфт нашуд"
+
+#: viewer/messagepart.cpp:305
+msgid "Error verifying the signature"
+msgstr "Хатогӣ ҳангоми озмоиши имзо"
+
+#: viewer/messagepart.cpp:308
+msgid "Different results for signatures"
+msgstr "Натиҷаҳои гуногун барои имзо"
+
+#: viewer/messagepart.cpp:327
+msgid "No status information available."
+msgstr "Иттилооти вазъият мавҷуд нест."
+
+#: viewer/messagepart.cpp:334 viewer/messagepart.cpp:420
+msgid "Good signature."
+msgstr "Имзои дуруст."
+
+#: viewer/messagepart.cpp:355
+msgid "One key has expired."
+msgstr "Як калид таъхир карда шудааст."
+
+#: viewer/messagepart.cpp:359
+msgid "The signature has expired."
+msgstr "Имзо таъхир карда шудааст."
+
+#: viewer/messagepart.cpp:364
+msgid "Unable to verify: key missing."
+msgstr "Хатогӣ ҳангоми озмоиш: калид мавҷуд нест."
+
+#: viewer/messagepart.cpp:371
+msgid "CRL not available."
+msgstr "CRL дастрас нест."
+
+#: viewer/messagepart.cpp:375
+msgid "Available CRL is too old."
+msgstr "CRL-и мавҷудӣ кӯҳна шуд."
+
+#: viewer/messagepart.cpp:379
+msgid "A policy was not met."
+msgstr "Дастур мутобиқ нест."
+
+#: viewer/messagepart.cpp:383
+msgid "A system error occurred."
+msgstr "Хатои системавӣ рӯй дод."
+
+#: viewer/messagepart.cpp:394
+msgid "One key has been revoked."
+msgstr "Якеи аз калидҳо бекор карда шуд."
+
+#: viewer/messagepart.cpp:422
+msgid "<b>Bad</b> signature."
+msgstr "Имзои нодуруст."
+
+#: viewer/messagepart.cpp:448
+#, fuzzy
+#| msgid "&Enable signature"
+msgid "Invalid signature."
+msgstr "&Афзудани имзо"
+
+#: viewer/messagepart.cpp:451
+#, fuzzy
+#| msgid "Not enough information to check signature. %1"
+msgid "Not enough information to check signature validity."
+msgstr "Иттилоот барои озмоиши имзо нокифоя аст. %1"
+
+#: viewer/messagepart.cpp:465
+#, fuzzy
+#| msgid "Signatures"
+msgid "Signature is valid."
+msgstr "Имзоот"
+
+#: viewer/messagepart.cpp:467
+#, kde-format
+msgid "Signed by <a href=\"mailto:%1\">%2</a>."
+msgstr ""
+
+#: viewer/messagepart.cpp:472
+#, fuzzy
+#| msgid "No signature found"
+msgid "Unknown signature state"
+msgstr "Имзо ёфт нашуд"
+
+#: viewer/messagepart.cpp:480
+#, fuzzy
+#| msgid "Show alway&s"
+msgid "Show Details"
+msgstr "&Доим"
+
+#: viewer/messagepart.cpp:503
+#, fuzzy
+#| msgid "Not available"
+msgid "No Audit Log available"
+msgstr "Дастрас нест"
+
+#: viewer/messagepart.cpp:505
+#, fuzzy, kde-format
+msgid "Error Retrieving Audit Log: %1"
+msgstr ""
+"Бозёби кардани хатоги,ба даст овардани руйхати танзим мекарда (ACL) аз "
+"сервер\n"
+"%1"
+
+#: viewer/messagepart.cpp:516
+#, fuzzy
+#| msgid "Not available"
+msgctxt "The Audit Log is a detailed error log from the gnupg backend"
+msgid "Show Audit Log"
+msgstr "Дастрас нест"
+
+#: viewer/messagepart.cpp:527
+#, fuzzy
+#| msgid "Logging Details"
+msgid "Hide Details"
+msgstr "Ворид кардани маҷалот"
+
+#: viewer/messagepart.cpp:548
+#, fuzzy
+#| msgid "Please wait while the message is transferred"
+#| msgid_plural "Please wait while the %1 messages are transferred"
+msgid "Please wait while the signature is being verified..."
+msgstr "Хотимаи фиристониши иттилооти %1-ро интизор шавед"
+
+#: viewer/messagepart.cpp:639 viewer/messagepart.cpp:641
+#, fuzzy
+#| msgid "Certificates"
+msgid "certificate"
+msgstr "Сертификатҳо"
+
+#: viewer/messagepart.cpp:647 viewer/messagepart.cpp:673
+#, fuzzy
+#| msgid "Warning:"
+msgctxt "Start of warning message."
+msgid "Warning:"
+msgstr "Огоҳӣ:"
+
+#: viewer/messagepart.cpp:649
+#, kde-format
+msgid "Sender's mail address is not stored in the %1 used for signing."
+msgstr ""
+"Адреси фиристонанда дар %1, ки барои имзоот истифода мешавад, ишора "
+"нашудааст."
+
+#: viewer/messagepart.cpp:652
+msgid "sender: "
+msgstr "Фиристонанда: "
+
+#: viewer/messagepart.cpp:655
+msgid "stored: "
+msgstr "захира шудааст: "
+
+#: viewer/messagepart.cpp:675
+#, kde-format
+msgid ""
+"No mail address is stored in the %1 used for signing, so we cannot compare "
+"it to the sender's address %2."
+msgstr ""
+"Адрес дар %1, ки барои имзо истифода мешавад, ишора нашудааст, бо чунин "
+"тариқ муқоисакунӣ бо адреси фиристонандаи %2 имконпазир нест."
+
+#: viewer/messagepart.cpp:698
+#, kde-format
+msgid "Not enough information to check signature. %1"
+msgstr "Иттилоот барои озмоиши имзо нокифоя аст. %1"
+
+#: viewer/messagepart.cpp:714 viewer/messagepart.cpp:781
+msgid "Message was signed with unknown key."
+msgstr "Иттилоот бо калиди номаълум имзо шудааст."
+
+#: viewer/messagepart.cpp:716 viewer/messagepart.cpp:811
+#: viewer/messagepart.cpp:844
+#, kde-format
+msgid "Message was signed by %1."
+msgstr "Иттилоот бо %1 имзо шудааст."
+
+#: viewer/messagepart.cpp:723 viewer/messagepart.cpp:730
+#: viewer/messagepart.cpp:739
+#, kde-format
+msgid "Message was signed with key %1."
+msgstr "Иттилоот бо калиди %1 имзо шудааст."
+
+#: viewer/messagepart.cpp:725
+#, kde-format
+msgid "Message was signed on %1 with key %2."
+msgstr "Иттилоот бо %1 калиди %2 имзо шудааст."
+
+#: viewer/messagepart.cpp:732
+#, kde-format
+msgid "Message was signed by %3 on %1 with key %2"
+msgstr "Иттилоотро %3 дар %1 бо калиди %2 имзо кардааст"
+
+#: viewer/messagepart.cpp:741
+#, kde-format
+msgid "Message was signed by %2 with key %1."
+msgstr "Иттилоотро %2 бо калиди %1 имзо шудааст."
+
+#: viewer/messagepart.cpp:750 viewer/messagepart.cpp:788
+#: viewer/messagepart.cpp:1854
+msgid "Status: "
+msgstr "Вазъият: "
+
+#: viewer/messagepart.cpp:774
+#, kde-format
+msgid "Message was signed on %1 with unknown key %2."
+msgstr "Иттилоотро %1 бо калиди номаълуми %2 имзо шудааст."
+
+#: viewer/messagepart.cpp:778
+#, kde-format
+msgid "Message was signed with unknown key %1."
+msgstr "Иттилоот бо калиди номаълуми %1 имзо шудааст."
+
+#: viewer/messagepart.cpp:784
+msgid "The validity of the signature cannot be verified."
+msgstr "Наметавонам ҳақиқияти имзоро муайян кунам."
+
+#: viewer/messagepart.cpp:807 viewer/messagepart.cpp:840
+#, kde-format
+msgid "Message was signed by %2 (Key ID: %1)."
+msgstr "Иттилоот бо %2 (калиди ID: %1) имзо шудааст."
+
+#: viewer/messagepart.cpp:817
+msgid "The signature is valid, but the key's validity is unknown."
+msgstr "Имзоот дуруст аст, аммо саҳеҳияти калид номаълум аст."
+
+#: viewer/messagepart.cpp:821
+msgid "The signature is valid and the key is marginally trusted."
+msgstr "Имзоот дуруст аст, аммо калид нопурра озмоида шудааст."
+
+#: viewer/messagepart.cpp:825
+msgid "The signature is valid and the key is fully trusted."
+msgstr "Имзо дуруст аст ва калид пурра озмоида шудааст."
+
+#: viewer/messagepart.cpp:829
+msgid "The signature is valid and the key is ultimately trusted."
+msgstr "Имзо дуруст аст ва калид қатъиян озмоида шуд."
+
+#: viewer/messagepart.cpp:833
+msgid "The signature is valid, but the key is untrusted."
+msgstr "Имзо саҳеҳ аст, аммо калид озмоида нашудааст."
+
+#: viewer/messagepart.cpp:847
+msgid "Warning: The signature is bad."
+msgstr "Огоҳӣ: хатогӣ дар имзоот."
+
+#: viewer/messagepart.cpp:879
+msgid "End of signed message"
+msgstr "Поёни иттилооти имзошуда"
+
+#: viewer/messagepart.cpp:1440
+#, fuzzy
+msgid ""
+"<b>Note:</b> This HTML message may contain external references to images "
+"etc. For security/privacy reasons external references are not loaded. If you "
+"trust the sender of this message then you can load the external references "
+"for this message <a href=\"kmail:loadExternal\">by clicking here</a>."
+msgstr ""
+"<b>Эзоҳот:</b> Ин иттилоот дар форматиHTML аст. Аз рӯи андешаи амният, коди "
+"иттилоот ба намуди матнӣ тасвир шуда истодааст. Агар шумо ба фиристонандаи "
+"ин иттилоот бовар кунед, метавонед тасвироти HTML-ро бо пахши <a href="
+"\"kmail:showHTML\">инҷо, фаъол созед</a>."
+
+#: viewer/messagepart.cpp:1453
+msgid ""
+"<b>Note:</b> This is an HTML message. For security reasons, only the raw "
+"HTML code is shown. If you trust the sender of this message then you can "
+"activate formatted HTML display for this message <a href=\"kmail:showHTML"
+"\">by clicking here</a>."
+msgstr ""
+"<b>Эзоҳот:</b> Ин иттилоот дар форматиHTML аст. Аз рӯи андешаи амният, коди "
+"иттилоот ба намуди матнӣ тасвир шуда истодааст. Агар шумо ба фиристонандаи "
+"ин иттилоот бовар кунед, метавонед тасвироти HTML-ро бо пахши <a href="
+"\"kmail:showHTML\">инҷо, фаъол созед</a>."
+
+#: viewer/messagepart.cpp:1658 viewer/objecttreeparser.cpp:1342
+msgid "Wrong Crypto Plug-In."
+msgstr "Модули нодурусти хати рамзӣ."
+
+#: viewer/messagepart.cpp:1818
+#, fuzzy
+#| msgid "Store sent messages encry&pted"
+msgid "This message is encrypted."
+msgstr "Иттилоотҳои фиристодашударо ба тарзи &рамзгузошташуда захира кардан"
+
+#: viewer/messagepart.cpp:1823
+#, fuzzy
+#| msgid "&Encrypt Message"
+msgid "Decrypt Message"
+msgstr "&Рамзгузории иттилоот"
+
+#: viewer/messagepart.cpp:1851
+msgid "The crypto engine returned no cleartext data."
+msgstr "Барномаи рамзгузорӣ маълумоти озмоиширо барнагардонд."
+
+#: viewer/messagepart.cpp:1860
+#, fuzzy
+#| msgid "(unknown)"
+msgctxt "Status of message unknown."
+msgid "(unknown)"
+msgstr "(номаълум)"
+
 #: viewer/mimeparttree/mimetreemodel.cpp:59
 msgid "body part"
 msgstr "тан"
@@ -1509,6 +1859,128 @@ msgstr "Тасвироты"
 #: viewer/mimeparttree/mimetreemodel.cpp:259
 msgid "Size"
 msgstr "Андоза"
+
+#: viewer/objecttreeparser.cpp:555
+#, fuzzy, kde-format
+#| msgid "Sorry, certificate could not be imported.<br>Reason: %1"
+msgid "Sorry, certificate could not be imported.<br />Reason: %1"
+msgstr "Бубахшед, сертификатро ворид кардан имконпазир нест. <br>Сабаб: %1"
+
+#: viewer/objecttreeparser.cpp:565
+msgid "Sorry, no certificates were found in this message."
+msgstr "Бубахшед, барои ин иттилоот ягон сертификат ёфт нашуд."
+
+#: viewer/objecttreeparser.cpp:568
+msgid "Certificate import status:"
+msgstr "Вазъияти воридоти сертификатҳо:"
+
+#: viewer/objecttreeparser.cpp:570
+#, kde-format
+msgid "1 new certificate was imported."
+msgid_plural "%1 new certificates were imported."
+msgstr[0] "%1 сертификат ворид карда шуд."
+msgstr[1] "%1 сертификатҳо ворид карда шуданд."
+
+#: viewer/objecttreeparser.cpp:573
+#, kde-format
+msgid "1 certificate was unchanged."
+msgid_plural "%1 certificates were unchanged."
+msgstr[0] "%1 сертификат тағйир ёфта набуд."
+msgstr[1] "%1 сертификатҳо тағйир ёфта набуданд."
+
+#: viewer/objecttreeparser.cpp:576
+#, kde-format
+msgid "1 new secret key was imported."
+msgid_plural "%1 new secret keys were imported."
+msgstr[0] "%1 калиди пинҳонӣ ворид карда шуд."
+msgstr[1] "%1 калидҳои пинҳонӣ ворид карда шуданд."
+
+#: viewer/objecttreeparser.cpp:579
+#, kde-format
+msgid "1 secret key was unchanged."
+msgid_plural "%1 secret keys were unchanged."
+msgstr[0] "%1 калиди пинҳонӣ тағйир ёфта набуд."
+msgstr[1] "%1 калидҳои пинҳонӣ тағйир ёфта набуданд."
+
+#: viewer/objecttreeparser.cpp:589
+msgid "Sorry, no details on certificate import available."
+msgstr "Бубахшед, ҷузъиётҳои воридоти сертификат дастрас нестанд."
+
+#: viewer/objecttreeparser.cpp:592
+msgid "Certificate import details:"
+msgstr "Ҷузъиёти вориди сертификатҳои:"
+
+#: viewer/objecttreeparser.cpp:596
+#, fuzzy, kde-format
+#| msgid "Failed: %1 (%2)"
+msgctxt "Certificate import failed."
+msgid "Failed: %1 (%2)"
+msgstr "Хато: %1 (%2)"
+
+#: viewer/objecttreeparser.cpp:600
+#, kde-format
+msgid "New or changed: %1 (secret key available)"
+msgstr "Нав ё тағйирёфта: %1 (калиди пинҳонӣ дастрас аст)"
+
+#: viewer/objecttreeparser.cpp:602
+#, kde-format
+msgid "New or changed: %1"
+msgstr "Нав ё тағйирёфта: %1"
+
+#: viewer/objecttreeparser.cpp:639
+#, fuzzy
+#| msgid "Crypto plug-in \"%1\" could not decrypt the data."
+msgid "Could not decrypt the data."
+msgstr "Модули рамзгузории %1 ин маълумотҳоро рамзхонӣ карда наметавонад."
+
+#: viewer/objecttreeparser.cpp:734
+#, kde-format
+msgid "Crypto plug-in \"%1\" could not decrypt the data."
+msgstr "Модули рамзгузории %1 ин маълумотҳоро рамзхонӣ карда наметавонад."
+
+#: viewer/objecttreeparser.cpp:736
+#, kde-format
+msgid "Error: %1"
+msgstr "Хатогӣ: %1"
+
+#: viewer/objecttreeparser.cpp:749 viewer/objecttreeparser.cpp:1411
+#, kde-format
+msgid "Crypto plug-in \"%1\" is not initialized."
+msgstr "Модули рамзгузории %1 оғоз нашудааст."
+
+#: viewer/objecttreeparser.cpp:753
+#, kde-format
+msgid "Crypto plug-in \"%1\" cannot decrypt messages."
+msgstr "Модули рамзгузории %1 иттилоотҳорорамзхонӣ карда наметавонад."
+
+#: viewer/objecttreeparser.cpp:757 viewer/objecttreeparser.cpp:1420
+msgid "No appropriate crypto plug-in was found."
+msgstr "Модули мутобиқи хати рамзӣ ёфт нашудааст."
+
+#: viewer/objecttreeparser.cpp:1288
+#, fuzzy
+#| msgid "Unnamed"
+msgctxt "display name for an unnamed attachment"
+msgid "Unnamed"
+msgstr "Беном"
+
+#: viewer/objecttreeparser.cpp:1415
+#, kde-format
+msgid "Crypto plug-in \"%1\" cannot verify signatures."
+msgstr "Модули рамзгузории \"%1\" наметавонад имзоотро биозмояд."
+
+#: viewer/objecttreeparser.cpp:1423
+#, kde-format
+msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
+msgid "No %1 plug-in was found."
+msgstr "Модули %1 ёфт нашуд."
+
+#: viewer/objecttreeparser.cpp:1428
+#, kde-format
+msgid ""
+"The message is signed, but the validity of the signature cannot be verified."
+"<br />Reason: %1"
+msgstr "Наметавонам ҳақиқияти имзоотро муайян кунам. <br />Сабаб: %1"
 
 #: viewer/pluginloaderbase.cpp:89
 #, fuzzy
@@ -1522,188 +1994,188 @@ msgstr "Сутуни иттилоотҳои хонданашуда"
 msgid "No description available"
 msgstr "Дастрас нест"
 
-#: viewer/urlhandlermanager.cpp:130
+#: viewer/urlhandlermanager.cpp:129
 #, fuzzy
 #| msgid "Move to Trash"
 msgid "Move To Trash"
 msgstr "Ба сабад ҷойгир кардан"
 
-#: viewer/urlhandlermanager.cpp:134
+#: viewer/urlhandlermanager.cpp:133
 #, fuzzy
 msgid "Reply To All"
 msgstr "&Ҷавоб додан"
 
-#: viewer/urlhandlermanager.cpp:140
+#: viewer/urlhandlermanager.cpp:139
 #, fuzzy
 msgid "Print Message"
 msgstr "Истифодаи ҷорӣ"
 
-#: viewer/urlhandlermanager.cpp:142
+#: viewer/urlhandlermanager.cpp:141
 #, fuzzy
 #| msgid "&Previous Message"
 msgid "Print Preview Message"
 msgstr "&Иттилооти қаблӣ"
 
-#: viewer/urlhandlermanager.cpp:641
+#: viewer/urlhandlermanager.cpp:640
 msgid "Turn on HTML rendering for this message."
 msgstr "Инъикоси HTML- ро барои ин ахборот фаъол гардонед."
 
-#: viewer/urlhandlermanager.cpp:643 viewer/viewer_p.cpp:1683
+#: viewer/urlhandlermanager.cpp:642 viewer/viewer_p.cpp:1683
 #, fuzzy
 msgid "Load external references from the Internet for this message."
 msgstr "&Иҷозаи пурбор кардани истинодотҳои зоҳирӣ аз шабақа"
 
-#: viewer/urlhandlermanager.cpp:645
+#: viewer/urlhandlermanager.cpp:644
 msgid "Work online."
 msgstr ""
 
-#: viewer/urlhandlermanager.cpp:647
+#: viewer/urlhandlermanager.cpp:646
 msgid "Make account online."
 msgstr ""
 
-#: viewer/urlhandlermanager.cpp:649
+#: viewer/urlhandlermanager.cpp:648
 #, fuzzy
 #| msgid "&Encrypt Message"
 msgid "Decrypt message."
 msgstr "&Рамзгузории иттилоот"
 
-#: viewer/urlhandlermanager.cpp:651
+#: viewer/urlhandlermanager.cpp:650
 #, fuzzy
 #| msgid "No signature found"
 msgid "Show signature details."
 msgstr "Имзо ёфт нашуд"
 
-#: viewer/urlhandlermanager.cpp:653
+#: viewer/urlhandlermanager.cpp:652
 #, fuzzy
 #| msgid "&Enable signature"
 msgid "Hide signature details."
 msgstr "&Афзудани имзо"
 
-#: viewer/urlhandlermanager.cpp:655
+#: viewer/urlhandlermanager.cpp:654
 #, fuzzy
 #| msgid "Show attachment icon"
 msgid "Show attachment list."
 msgstr "Ишораи замимавӣ"
 
-#: viewer/urlhandlermanager.cpp:657
+#: viewer/urlhandlermanager.cpp:656
 #, fuzzy
 #| msgid "Save Attachment As"
 msgid "Hide attachment list."
 msgstr "Захира намудани замимот ҳамчун"
 
-#: viewer/urlhandlermanager.cpp:659
+#: viewer/urlhandlermanager.cpp:658
 #, fuzzy
 #| msgid "Show alway&s"
 msgid "Show full \"To\" list"
 msgstr "&Доим"
 
-#: viewer/urlhandlermanager.cpp:661
+#: viewer/urlhandlermanager.cpp:660
 #, fuzzy
 #| msgid "Show alway&s"
 msgid "Hide full \"To\" list"
 msgstr "&Доим"
 
-#: viewer/urlhandlermanager.cpp:663
+#: viewer/urlhandlermanager.cpp:662
 #, fuzzy
 #| msgid "Show alway&s"
 msgid "Show full \"Cc\" list"
 msgstr "&Доим"
 
-#: viewer/urlhandlermanager.cpp:665
+#: viewer/urlhandlermanager.cpp:664
 #, fuzzy
 #| msgid "Show alway&s"
 msgid "Hide full \"Cc\" list"
 msgstr "&Доим"
 
-#: viewer/urlhandlermanager.cpp:670
+#: viewer/urlhandlermanager.cpp:669
 #, fuzzy
 #| msgid "Documentation"
 msgid "Open Documentation"
 msgstr "Санадот"
 
-#: viewer/urlhandlermanager.cpp:700
+#: viewer/urlhandlermanager.cpp:699
 msgid "Expand all quoted text."
 msgstr ""
 
-#: viewer/urlhandlermanager.cpp:702
+#: viewer/urlhandlermanager.cpp:701
 msgid "Collapse quoted text."
 msgstr ""
 
-#: viewer/urlhandlermanager.cpp:769
+#: viewer/urlhandlermanager.cpp:768
 msgid "Could not start certificate manager. Please check your installation."
 msgstr ""
 "Мудири сертификатҳоро ба кор андохта нашуд. Дурустии гузориши барномаро "
 "санҷед."
 
-#: viewer/urlhandlermanager.cpp:771
+#: viewer/urlhandlermanager.cpp:770
 msgid "KMail Error"
 msgstr "Хатои KMail"
 
-#: viewer/urlhandlermanager.cpp:783
+#: viewer/urlhandlermanager.cpp:782
 #, kde-format
 msgid "Show certificate 0x%1"
 msgstr "Сертификати 0x%1-ро нишон додан"
 
-#: viewer/urlhandlermanager.cpp:853
+#: viewer/urlhandlermanager.cpp:852
 #, fuzzy
 #| msgid "Open in Address Book"
 msgid "&Open in Address Book"
 msgstr "Дар китоби адресӣ боз кардан"
 
-#: viewer/urlhandlermanager.cpp:856
+#: viewer/urlhandlermanager.cpp:855
 #, fuzzy
 #| msgid "Email Address"
 msgid "&Copy Email Address"
 msgstr "Адреси e-mail"
 
-#: viewer/urlhandlermanager.cpp:869 viewer/viewer_p.cpp:2607
+#: viewer/urlhandlermanager.cpp:868 viewer/viewer_p.cpp:2607
 msgid "Address copied to clipboard."
 msgstr "Адрес дар буфери тағйирот копӣ карда шудааст."
 
-#: viewer/urlhandlermanager.cpp:881
+#: viewer/urlhandlermanager.cpp:880
 #, fuzzy
 #| msgid "Open in Address Book"
 msgid "Lookup the contact in KAddressbook"
 msgstr "Дар китоби адресӣ боз кардан"
 
-#: viewer/urlhandlermanager.cpp:1008
+#: viewer/urlhandlermanager.cpp:1007
 #, kde-format
 msgid "Attachment: %1"
 msgstr "Замимот: %1"
 
-#: viewer/urlhandlermanager.cpp:1011
+#: viewer/urlhandlermanager.cpp:1010
 #, fuzzy, kde-format
 #| msgid "Encapsulated message"
 msgid "Encapsulated Message (Subject: %1)"
 msgstr "Иттилооти сохташуда"
 
-#: viewer/urlhandlermanager.cpp:1014
+#: viewer/urlhandlermanager.cpp:1013
 #, fuzzy
 #| msgid "Encapsulated message"
 msgid "Encapsulated Message"
 msgstr "Иттилооти сохташуда"
 
-#: viewer/urlhandlermanager.cpp:1017
+#: viewer/urlhandlermanager.cpp:1016
 #, fuzzy
 msgid "Unnamed attachment"
 msgstr "ғайри замимот"
 
-#: viewer/urlhandlermanager.cpp:1056
+#: viewer/urlhandlermanager.cpp:1055
 msgid "Show GnuPG Audit Log for this operation"
 msgstr ""
 
-#: viewer/urlhandlermanager.cpp:1096
+#: viewer/urlhandlermanager.cpp:1095
 msgid "Opening URL..."
 msgstr "Боз кардани URL..."
 
-#: viewer/urlhandlermanager.cpp:1105
+#: viewer/urlhandlermanager.cpp:1104
 #, fuzzy, kde-format
 #| msgid "<qt>Do you really want to execute <b>%1</b>?</qt>"
 msgctxt "@info"
 msgid "Do you really want to execute <filename>%1</filename>?"
 msgstr "<qt>Оё дар ҳақиқат мехоҳед <b>%1</b>-ро иҷро кунед?</qt>"
 
-#: viewer/urlhandlermanager.cpp:1106
+#: viewer/urlhandlermanager.cpp:1105
 #, fuzzy
 msgid "Execute"
 msgstr "Иҷрои дастур"
@@ -2191,346 +2663,6 @@ msgstr "Ҳузфи феҳрист"
 #: widgets/zoomactionmenu.cpp:184
 msgid "Zoom"
 msgstr ""
-
-#~ msgid "Encapsulated message"
-#~ msgstr "Иттилооти сохташуда"
-
-#~ msgid "End of encapsulated message"
-#~ msgstr "Поёни иттилооти сохташуда"
-
-#, fuzzy
-#~| msgid "Please wait while the message is transferred"
-#~| msgid_plural "Please wait while the %1 messages are transferred"
-#~ msgid "Please wait while the message is being decrypted..."
-#~ msgstr "Хотимаи фиристониши иттилооти %1-ро интизор шавед"
-
-#~ msgid "Encrypted message"
-#~ msgstr "Иттилооти рамзгузошташуда"
-
-#~ msgid "Encrypted message (decryption not possible)"
-#~ msgstr "Иттилоот рамзгузорӣ шудааст (рамзхонӣ имконпазир нест)"
-
-#~ msgid "Reason: %1"
-#~ msgstr "Сабаб: %1"
-
-#~ msgid "End of encrypted message"
-#~ msgstr "Поёни иттилооти рамзгузошташуда"
-
-#~ msgid "Error: Signature not verified"
-#~ msgstr "Хато: қодир ба озмоиши имзо нестам"
-
-#~ msgid "Good signature"
-#~ msgstr "Имзои дуруст"
-
-#~ msgid "<b>Bad</b> signature"
-#~ msgstr "Имзои нодуруст"
-
-#~ msgid "No public key to verify the signature"
-#~ msgstr "Калиди кушод барои озмоиши имзо мавҷуд нест"
-
-#~ msgid "No signature found"
-#~ msgstr "Имзо ёфт нашуд"
-
-#~ msgid "Error verifying the signature"
-#~ msgstr "Хатогӣ ҳангоми озмоиши имзо"
-
-#~ msgid "Different results for signatures"
-#~ msgstr "Натиҷаҳои гуногун барои имзо"
-
-#~ msgid "No status information available."
-#~ msgstr "Иттилооти вазъият мавҷуд нест."
-
-#~ msgid "Good signature."
-#~ msgstr "Имзои дуруст."
-
-#~ msgid "One key has expired."
-#~ msgstr "Як калид таъхир карда шудааст."
-
-#~ msgid "The signature has expired."
-#~ msgstr "Имзо таъхир карда шудааст."
-
-#~ msgid "Unable to verify: key missing."
-#~ msgstr "Хатогӣ ҳангоми озмоиш: калид мавҷуд нест."
-
-#~ msgid "CRL not available."
-#~ msgstr "CRL дастрас нест."
-
-#~ msgid "Available CRL is too old."
-#~ msgstr "CRL-и мавҷудӣ кӯҳна шуд."
-
-#~ msgid "A policy was not met."
-#~ msgstr "Дастур мутобиқ нест."
-
-#~ msgid "A system error occurred."
-#~ msgstr "Хатои системавӣ рӯй дод."
-
-#~ msgid "One key has been revoked."
-#~ msgstr "Якеи аз калидҳо бекор карда шуд."
-
-#~ msgid "<b>Bad</b> signature."
-#~ msgstr "Имзои нодуруст."
-
-#, fuzzy
-#~| msgid "&Enable signature"
-#~ msgid "Invalid signature."
-#~ msgstr "&Афзудани имзо"
-
-#, fuzzy
-#~| msgid "Not enough information to check signature. %1"
-#~ msgid "Not enough information to check signature validity."
-#~ msgstr "Иттилоот барои озмоиши имзо нокифоя аст. %1"
-
-#, fuzzy
-#~| msgid "Signatures"
-#~ msgid "Signature is valid."
-#~ msgstr "Имзоот"
-
-#, fuzzy
-#~| msgid "Show alway&s"
-#~ msgid "Show Details"
-#~ msgstr "&Доим"
-
-#, fuzzy
-#~| msgid "Not available"
-#~ msgid "No Audit Log available"
-#~ msgstr "Дастрас нест"
-
-#, fuzzy
-#~ msgid "Error Retrieving Audit Log: %1"
-#~ msgstr ""
-#~ "Бозёби кардани хатоги,ба даст овардани руйхати танзим мекарда (ACL) аз "
-#~ "сервер\n"
-#~ "%1"
-
-#, fuzzy
-#~| msgid "Logging Details"
-#~ msgid "Hide Details"
-#~ msgstr "Ворид кардани маҷалот"
-
-#, fuzzy
-#~| msgid "Please wait while the message is transferred"
-#~| msgid_plural "Please wait while the %1 messages are transferred"
-#~ msgid "Please wait while the signature is being verified..."
-#~ msgstr "Хотимаи фиристониши иттилооти %1-ро интизор шавед"
-
-#, fuzzy
-#~| msgid "Certificates"
-#~ msgid "certificate"
-#~ msgstr "Сертификатҳо"
-
-#, fuzzy
-#~| msgid "Warning:"
-#~ msgctxt "Start of warning message."
-#~ msgid "Warning:"
-#~ msgstr "Огоҳӣ:"
-
-#~ msgid "Sender's mail address is not stored in the %1 used for signing."
-#~ msgstr ""
-#~ "Адреси фиристонанда дар %1, ки барои имзоот истифода мешавад, ишора "
-#~ "нашудааст."
-
-#~ msgid "sender: "
-#~ msgstr "Фиристонанда: "
-
-#~ msgid "stored: "
-#~ msgstr "захира шудааст: "
-
-#~ msgid ""
-#~ "No mail address is stored in the %1 used for signing, so we cannot "
-#~ "compare it to the sender's address %2."
-#~ msgstr ""
-#~ "Адрес дар %1, ки барои имзо истифода мешавад, ишора нашудааст, бо чунин "
-#~ "тариқ муқоисакунӣ бо адреси фиристонандаи %2 имконпазир нест."
-
-#~ msgid "Not enough information to check signature. %1"
-#~ msgstr "Иттилоот барои озмоиши имзо нокифоя аст. %1"
-
-#~ msgid "Message was signed with unknown key."
-#~ msgstr "Иттилоот бо калиди номаълум имзо шудааст."
-
-#~ msgid "Message was signed by %1."
-#~ msgstr "Иттилоот бо %1 имзо шудааст."
-
-#~ msgid "Message was signed with key %1."
-#~ msgstr "Иттилоот бо калиди %1 имзо шудааст."
-
-#~ msgid "Message was signed on %1 with key %2."
-#~ msgstr "Иттилоот бо %1 калиди %2 имзо шудааст."
-
-#~ msgid "Message was signed by %3 on %1 with key %2"
-#~ msgstr "Иттилоотро %3 дар %1 бо калиди %2 имзо кардааст"
-
-#~ msgid "Message was signed by %2 with key %1."
-#~ msgstr "Иттилоотро %2 бо калиди %1 имзо шудааст."
-
-#~ msgid "Status: "
-#~ msgstr "Вазъият: "
-
-#~ msgid "Message was signed on %1 with unknown key %2."
-#~ msgstr "Иттилоотро %1 бо калиди номаълуми %2 имзо шудааст."
-
-#~ msgid "Message was signed with unknown key %1."
-#~ msgstr "Иттилоот бо калиди номаълуми %1 имзо шудааст."
-
-#~ msgid "The validity of the signature cannot be verified."
-#~ msgstr "Наметавонам ҳақиқияти имзоро муайян кунам."
-
-#~ msgid "Message was signed by %2 (Key ID: %1)."
-#~ msgstr "Иттилоот бо %2 (калиди ID: %1) имзо шудааст."
-
-#~ msgid "The signature is valid, but the key's validity is unknown."
-#~ msgstr "Имзоот дуруст аст, аммо саҳеҳияти калид номаълум аст."
-
-#~ msgid "The signature is valid and the key is marginally trusted."
-#~ msgstr "Имзоот дуруст аст, аммо калид нопурра озмоида шудааст."
-
-#~ msgid "The signature is valid and the key is fully trusted."
-#~ msgstr "Имзо дуруст аст ва калид пурра озмоида шудааст."
-
-#~ msgid "The signature is valid and the key is ultimately trusted."
-#~ msgstr "Имзо дуруст аст ва калид қатъиян озмоида шуд."
-
-#~ msgid "The signature is valid, but the key is untrusted."
-#~ msgstr "Имзо саҳеҳ аст, аммо калид озмоида нашудааст."
-
-#~ msgid "Warning: The signature is bad."
-#~ msgstr "Огоҳӣ: хатогӣ дар имзоот."
-
-#~ msgid "End of signed message"
-#~ msgstr "Поёни иттилооти имзошуда"
-
-#, fuzzy
-#~ msgid ""
-#~ "<b>Note:</b> This HTML message may contain external references to images "
-#~ "etc. For security/privacy reasons external references are not loaded. If "
-#~ "you trust the sender of this message then you can load the external "
-#~ "references for this message <a href=\"kmail:loadExternal\">by clicking "
-#~ "here</a>."
-#~ msgstr ""
-#~ "<b>Эзоҳот:</b> Ин иттилоот дар форматиHTML аст. Аз рӯи андешаи амният, "
-#~ "коди иттилоот ба намуди матнӣ тасвир шуда истодааст. Агар шумо ба "
-#~ "фиристонандаи ин иттилоот бовар кунед, метавонед тасвироти HTML-ро бо "
-#~ "пахши <a href=\"kmail:showHTML\">инҷо, фаъол созед</a>."
-
-#~ msgid ""
-#~ "<b>Note:</b> This is an HTML message. For security reasons, only the raw "
-#~ "HTML code is shown. If you trust the sender of this message then you can "
-#~ "activate formatted HTML display for this message <a href=\"kmail:showHTML"
-#~ "\">by clicking here</a>."
-#~ msgstr ""
-#~ "<b>Эзоҳот:</b> Ин иттилоот дар форматиHTML аст. Аз рӯи андешаи амният, "
-#~ "коди иттилоот ба намуди матнӣ тасвир шуда истодааст. Агар шумо ба "
-#~ "фиристонандаи ин иттилоот бовар кунед, метавонед тасвироти HTML-ро бо "
-#~ "пахши <a href=\"kmail:showHTML\">инҷо, фаъол созед</a>."
-
-#~ msgid "Wrong Crypto Plug-In."
-#~ msgstr "Модули нодурусти хати рамзӣ."
-
-#, fuzzy
-#~| msgid "Store sent messages encry&pted"
-#~ msgid "This message is encrypted."
-#~ msgstr "Иттилоотҳои фиристодашударо ба тарзи &рамзгузошташуда захира кардан"
-
-#, fuzzy
-#~| msgid "&Encrypt Message"
-#~ msgid "Decrypt Message"
-#~ msgstr "&Рамзгузории иттилоот"
-
-#~ msgid "The crypto engine returned no cleartext data."
-#~ msgstr "Барномаи рамзгузорӣ маълумоти озмоиширо барнагардонд."
-
-#, fuzzy
-#~| msgid "(unknown)"
-#~ msgctxt "Status of message unknown."
-#~ msgid "(unknown)"
-#~ msgstr "(номаълум)"
-
-#, fuzzy
-#~| msgid "Sorry, certificate could not be imported.<br>Reason: %1"
-#~ msgid "Sorry, certificate could not be imported.<br />Reason: %1"
-#~ msgstr "Бубахшед, сертификатро ворид кардан имконпазир нест. <br>Сабаб: %1"
-
-#~ msgid "Sorry, no certificates were found in this message."
-#~ msgstr "Бубахшед, барои ин иттилоот ягон сертификат ёфт нашуд."
-
-#~ msgid "Certificate import status:"
-#~ msgstr "Вазъияти воридоти сертификатҳо:"
-
-#~ msgid "1 new certificate was imported."
-#~ msgid_plural "%1 new certificates were imported."
-#~ msgstr[0] "%1 сертификат ворид карда шуд."
-#~ msgstr[1] "%1 сертификатҳо ворид карда шуданд."
-
-#~ msgid "1 certificate was unchanged."
-#~ msgid_plural "%1 certificates were unchanged."
-#~ msgstr[0] "%1 сертификат тағйир ёфта набуд."
-#~ msgstr[1] "%1 сертификатҳо тағйир ёфта набуданд."
-
-#~ msgid "1 new secret key was imported."
-#~ msgid_plural "%1 new secret keys were imported."
-#~ msgstr[0] "%1 калиди пинҳонӣ ворид карда шуд."
-#~ msgstr[1] "%1 калидҳои пинҳонӣ ворид карда шуданд."
-
-#~ msgid "1 secret key was unchanged."
-#~ msgid_plural "%1 secret keys were unchanged."
-#~ msgstr[0] "%1 калиди пинҳонӣ тағйир ёфта набуд."
-#~ msgstr[1] "%1 калидҳои пинҳонӣ тағйир ёфта набуданд."
-
-#~ msgid "Sorry, no details on certificate import available."
-#~ msgstr "Бубахшед, ҷузъиётҳои воридоти сертификат дастрас нестанд."
-
-#~ msgid "Certificate import details:"
-#~ msgstr "Ҷузъиёти вориди сертификатҳои:"
-
-#, fuzzy
-#~| msgid "Failed: %1 (%2)"
-#~ msgctxt "Certificate import failed."
-#~ msgid "Failed: %1 (%2)"
-#~ msgstr "Хато: %1 (%2)"
-
-#~ msgid "New or changed: %1 (secret key available)"
-#~ msgstr "Нав ё тағйирёфта: %1 (калиди пинҳонӣ дастрас аст)"
-
-#~ msgid "New or changed: %1"
-#~ msgstr "Нав ё тағйирёфта: %1"
-
-#, fuzzy
-#~| msgid "Crypto plug-in \"%1\" could not decrypt the data."
-#~ msgid "Could not decrypt the data."
-#~ msgstr "Модули рамзгузории %1 ин маълумотҳоро рамзхонӣ карда наметавонад."
-
-#~ msgid "Crypto plug-in \"%1\" could not decrypt the data."
-#~ msgstr "Модули рамзгузории %1 ин маълумотҳоро рамзхонӣ карда наметавонад."
-
-#~ msgid "Error: %1"
-#~ msgstr "Хатогӣ: %1"
-
-#~ msgid "Crypto plug-in \"%1\" is not initialized."
-#~ msgstr "Модули рамзгузории %1 оғоз нашудааст."
-
-#~ msgid "Crypto plug-in \"%1\" cannot decrypt messages."
-#~ msgstr "Модули рамзгузории %1 иттилоотҳорорамзхонӣ карда наметавонад."
-
-#~ msgid "No appropriate crypto plug-in was found."
-#~ msgstr "Модули мутобиқи хати рамзӣ ёфт нашудааст."
-
-#, fuzzy
-#~| msgid "Unnamed"
-#~ msgctxt "display name for an unnamed attachment"
-#~ msgid "Unnamed"
-#~ msgstr "Беном"
-
-#~ msgid "Crypto plug-in \"%1\" cannot verify signatures."
-#~ msgstr "Модули рамзгузории \"%1\" наметавонад имзоотро биозмояд."
-
-#~ msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
-#~ msgid "No %1 plug-in was found."
-#~ msgstr "Модули %1 ёфт нашуд."
-
-#~ msgid ""
-#~ "The message is signed, but the validity of the signature cannot be "
-#~ "verified.<br />Reason: %1"
-#~ msgstr "Наметавонам ҳақиқияти имзоотро муайян кунам. <br />Сабаб: %1"
 
 #, fuzzy
 #~| msgid "Key Export Failed"
