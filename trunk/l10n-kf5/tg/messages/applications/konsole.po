@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-05-27 07:16+0000\n"
+"POT-Creation-Date: 2016-05-29 07:12+0000\n"
 "PO-Revision-Date: 2010-01-29 22:30+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik\n"
@@ -378,32 +378,32 @@ msgstr "Таҳрири профили \"%1\""
 msgid "Profile name is empty."
 msgstr "Номи профил:"
 
-#: EditProfileDialog.cpp:333
+#: EditProfileDialog.cpp:307
 msgid "Edit Environment"
 msgstr "Изменить переменные среды"
 
-#: EditProfileDialog.cpp:334
+#: EditProfileDialog.cpp:308
 msgid "One environment variable per line"
 msgstr ""
 
-#: EditProfileDialog.cpp:355
+#: EditProfileDialog.cpp:329
 msgctxt "Unit of time"
 msgid " second"
 msgid_plural " seconds"
 msgstr[0] ""
 msgstr[1] ""
 
-#: EditProfileDialog.cpp:421
+#: EditProfileDialog.cpp:395
 msgid "Select Initial Directory"
 msgstr "Выбор начального каталога"
 
-#: EditProfileDialog.cpp:589
+#: EditProfileDialog.cpp:563
 #, fuzzy, kde-format
 #| msgid "%1"
 msgid "%1"
 msgstr "%1"
 
-#: EditProfileDialog.cpp:777
+#: EditProfileDialog.cpp:751
 msgid ""
 "This color scheme uses a transparent background which does not appear to be "
 "supported on your desktop"
@@ -411,25 +411,25 @@ msgstr ""
 "В выбранной цветовой схеме фон должен быть прозрачным, но данная система не "
 "настроена соответствующим образом"
 
-#: EditProfileDialog.cpp:782
+#: EditProfileDialog.cpp:756
 msgid ""
 "Konsole was started before desktop effects were enabled. You need to restart "
 "Konsole to see transparent background."
 msgstr ""
 
-#: EditProfileDialog.cpp:886 EditProfileDialog.cpp:896
+#: EditProfileDialog.cpp:860 EditProfileDialog.cpp:870
 msgid "New Key Binding List"
 msgstr "Новый список привязок клавиш"
 
-#: EditProfileDialog.cpp:888
+#: EditProfileDialog.cpp:862
 msgid "Edit Key Binding List"
 msgstr "Изменение списка привязок клавиш"
 
-#: EditProfileDialog.cpp:1226
+#: EditProfileDialog.cpp:1200
 msgid "Select Fixed Width Font"
 msgstr ""
 
-#: EditProfileDialog.cpp:1274
+#: EditProfileDialog.cpp:1248
 msgid "AaZz09..."
 msgstr ""
 
@@ -1144,6 +1144,14 @@ msgstr ""
 #: HistorySizeWidget.cpp:46
 msgctxt "@info:status"
 msgid ""
+"When using this option, the scrollback data will be saved to RAM.  If you "
+"choose a huge value, your system may run out of free RAM and cause serious "
+"issues with your system."
+msgstr ""
+
+#: HistorySizeWidget.cpp:55
+msgctxt "@info:status"
+msgid ""
 "When using this option, the scrollback data will be written unencrypted to "
 "temporary files. Those temporary files will be deleted automatically when "
 "Konsole is closed in a normal manner.\n"
@@ -1151,7 +1159,7 @@ msgid ""
 "temporary files."
 msgstr ""
 
-#: HistorySizeWidget.cpp:62
+#: HistorySizeWidget.cpp:71
 #, fuzzy
 #| msgid "lines"
 msgctxt "Unit of scrollback"
@@ -1190,12 +1198,12 @@ msgid "Number of lines of output to remember"
 msgstr "Количество строк буфера вывода"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, unlimitedHistoryButton)
-#: HistorySizeWidget.ui:94
+#: HistorySizeWidget.ui:104
 msgid "Remember all output produced by the terminal"
 msgstr "Сохранять весь вывод терминала"
 
 #. i18n: ectx: property (text), widget (QRadioButton, unlimitedHistoryButton)
-#: HistorySizeWidget.ui:97
+#: HistorySizeWidget.ui:107
 msgid "Unlimited scrollback"
 msgstr "без ограничения"
 
@@ -2030,18 +2038,18 @@ msgstr "Консоли Solaris"
 msgid "DEC VT420 Terminal"
 msgstr "Терминали DEC VT420"
 
-#: Session.cpp:377
+#: Session.cpp:378
 msgid "Could not find binary: "
 msgstr "Невозможно найти исполняемый файл:"
 
-#: Session.cpp:386
+#: Session.cpp:387
 #, fuzzy
 #| msgid "Warning: "
 msgctxt "@info:shell Alert the user with red color text"
 msgid "Warning: "
 msgstr "Огоҳинома:"
 
-#: Session.cpp:443
+#: Session.cpp:444
 #, kde-format
 msgid ""
 "Could not find '%1', starting '%2' instead.  Please check your profile "
@@ -2050,48 +2058,56 @@ msgstr ""
 "Невозможно найти «%1», вместо этого будет запущена программа «%2». Проверьте "
 "параметры вашего профиля."
 
-#: Session.cpp:446
+#: Session.cpp:447
 msgid "Could not find an interactive shell to start."
 msgstr "Невозможно найти интерактивную оболочку."
 
-#: Session.cpp:484
+#: Session.cpp:485
 #, kde-format
 msgid "Could not start program '%1' with arguments '%2'."
 msgstr "Невозможно запустить программу «%1» с параметрами «%2»."
 
-#: Session.cpp:591
+#: Session.cpp:592
 #, kde-format
 msgid "Silence in session '%1'"
 msgstr "Хомӯшӣ дар сессия '%1'"
 
-#: Session.cpp:642
+#: Session.cpp:643
 #, kde-format
 msgid "Bell in session '%1'"
 msgstr "Зангӯла дар сессия '%1'"
 
-#: Session.cpp:645
+#: Session.cpp:646
 #, kde-format
 msgid "Activity in session '%1'"
 msgstr "Фаъолият дар сессия '%1'"
 
-#: Session.cpp:838
+#: Session.cpp:833
+msgid ""
+"The D-Bus methods sendText/runCommand were just used.  There are security "
+"concerns about allowing these methods to be public.  If desired, these "
+"methods can be changed to internal use only by re-compiling Konsole. <p>This "
+"warning will only show once for this Konsole instance.</p>"
+msgstr ""
+
+#: Session.cpp:860
 #, fuzzy
 #| msgid "Finished"
 msgctxt "@info:shell This session is done"
 msgid "Finished"
 msgstr "Поёншуда"
 
-#: Session.cpp:852 Session.cpp:864
+#: Session.cpp:874 Session.cpp:886
 #, kde-format
 msgid "Program '%1' crashed."
 msgstr "Сбой программы «%1»."
 
-#: Session.cpp:854
+#: Session.cpp:876
 #, kde-format
 msgid "Program '%1' exited with status %2."
 msgstr "Программа «%1» завершилась с кодом %2."
 
-#: Session.cpp:1206
+#: Session.cpp:1228
 msgid "ZModem Progress"
 msgstr "ZМодем тараққӣ"
 
@@ -2099,202 +2115,202 @@ msgstr "ZМодем тараққӣ"
 msgid "Konsole"
 msgstr "Konsole"
 
-#: SessionController.cpp:344
+#: SessionController.cpp:342
 msgid "Konsole does not know how to open the bookmark: "
 msgstr "Konsole не может открыть закладку: "
 
-#: SessionController.cpp:402
+#: SessionController.cpp:400
 #, fuzzy, kde-format
 #| msgid "Search string '%1' not found."
 msgid "Search for '%1' with"
 msgstr "Қатори матлуб '%1' кофта ёфт."
 
-#: SessionController.cpp:416
+#: SessionController.cpp:414
 #, fuzzy
 #| msgid "Manage Profiles..."
 msgid "Configure Web Shortcuts..."
 msgstr "Идоракунии профилҳо..."
 
-#: SessionController.cpp:558
+#: SessionController.cpp:556
 #, fuzzy
 msgid "&Close Session"
 msgstr "&Сессияи Пӯшондан"
 
-#: SessionController.cpp:560
+#: SessionController.cpp:558
 msgid "&Close Tab"
 msgstr "&Хуруҷи ҷадвалбандӣ"
 
-#: SessionController.cpp:567
+#: SessionController.cpp:565
 msgid "Open File Manager"
 msgstr "Открыть диспетчер файлов"
 
-#: SessionController.cpp:583
+#: SessionController.cpp:581
 msgid "Paste Selection"
 msgstr "Интихоб даровардан"
 
-#: SessionController.cpp:586
+#: SessionController.cpp:584
 msgid "Web Search"
 msgstr ""
 
-#: SessionController.cpp:593
+#: SessionController.cpp:591
 #, fuzzy
 #| msgid "Select All"
 msgid "&Select All"
 msgstr "Интихоби ҳама"
 
-#: SessionController.cpp:597
+#: SessionController.cpp:595
 #, fuzzy
 #| msgid "Select"
 msgid "Select &Line"
 msgstr "Интихоб"
 
-#: SessionController.cpp:600
+#: SessionController.cpp:598
 #, fuzzy
 #| msgid "Save Output..."
 msgid "Save Output &As..."
 msgstr "Сохранить сеанс..."
 
-#: SessionController.cpp:603
+#: SessionController.cpp:601
 msgid "&Print Screen..."
 msgstr "Экрани &нашр кардан..."
 
-#: SessionController.cpp:607
+#: SessionController.cpp:605
 #, fuzzy
 #| msgid "Manage Profiles..."
 msgid "Adjust Scrollback..."
 msgstr "Идоракунии профилҳо..."
 
-#: SessionController.cpp:611
+#: SessionController.cpp:609
 msgid "Clear Scrollback"
 msgstr "Очистить сеанс"
 
-#: SessionController.cpp:615
+#: SessionController.cpp:613
 #, fuzzy
 #| msgid "Clear Scrollback && Reset"
 msgid "Clear Scrollback and Reset"
 msgstr "Очистить сеанс и сбросить"
 
-#: SessionController.cpp:621
+#: SessionController.cpp:619
 msgid "Edit Current Profile..."
 msgstr "Настроить профиль..."
 
-#: SessionController.cpp:624
+#: SessionController.cpp:622
 #, fuzzy
 #| msgid "Edit Profile"
 msgid "Switch Profile"
 msgstr "Таҳрири профил"
 
-#: SessionController.cpp:641
+#: SessionController.cpp:639
 #, fuzzy
 #| msgid "Encoding"
 msgid "Set &Encoding"
 msgstr "Рамзгузорӣ"
 
-#: SessionController.cpp:656
+#: SessionController.cpp:654
 msgid "&Rename Tab..."
 msgstr "&Ивази номи ҷадвалбандӣ"
 
-#: SessionController.cpp:662
+#: SessionController.cpp:660
 msgid "&All Tabs in Current Window"
 msgstr "Во &все вкладки данного окна"
 
-#: SessionController.cpp:669
+#: SessionController.cpp:667
 msgid "&Select Tabs..."
 msgstr "В &некоторые вкладки..."
 
-#: SessionController.cpp:675
+#: SessionController.cpp:673
 #, fuzzy
 #| msgid "&None"
 msgctxt "@action:inmenu Do not select any tabs"
 msgid "&None"
 msgstr "&Ничего"
 
-#: SessionController.cpp:683
+#: SessionController.cpp:681
 msgid "Copy Input To"
 msgstr "Направлять ввод также"
 
-#: SessionController.cpp:690
+#: SessionController.cpp:688
 msgid "&ZModem Upload..."
 msgstr "&ZМодем пурборкардан"
 
-#: SessionController.cpp:695
+#: SessionController.cpp:693
 msgid "Monitor for &Activity"
 msgstr "Тамошо барои &Фаъол кардан"
 
-#: SessionController.cpp:700
+#: SessionController.cpp:698
 msgid "Monitor for &Silence"
 msgstr "Нишон барои &Хомӯшӣ"
 
-#: SessionController.cpp:707
+#: SessionController.cpp:705
 #, fuzzy
 msgid "Enlarge Font"
 msgstr "Ҳарфи калонтар"
 
-#: SessionController.cpp:715
+#: SessionController.cpp:713
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Shrink View"
 msgid "Shrink Font"
 msgstr "Уменьшить размер представления"
 
-#: SessionController.cpp:722
+#: SessionController.cpp:720
 #, fuzzy
 #| msgid "&Send Signal"
 msgid "Send Signal"
 msgstr "&Бонги Фиристодан"
 
-#: SessionController.cpp:726
+#: SessionController.cpp:724
 msgid "&Suspend Task"
 msgstr "&Супоришро Муваққатон хобондан"
 
-#: SessionController.cpp:731
+#: SessionController.cpp:729
 msgid "&Continue Task"
 msgstr "&Супоришро Давом додан"
 
-#: SessionController.cpp:736
+#: SessionController.cpp:734
 msgid "&Hangup"
 msgstr "&Канор гузоштан"
 
-#: SessionController.cpp:741
+#: SessionController.cpp:739
 msgid "&Interrupt Task"
 msgstr "&Супоришро Куштан"
 
-#: SessionController.cpp:746
+#: SessionController.cpp:744
 #, fuzzy
 #| msgid "Terminal Features"
 msgid "&Terminate Task"
 msgstr "Возможности терминала"
 
-#: SessionController.cpp:751
+#: SessionController.cpp:749
 msgid "&Kill Task"
 msgstr "&Супоришро Нест кардан"
 
-#: SessionController.cpp:756
+#: SessionController.cpp:754
 msgid "User Signal &1"
 msgstr "&1 Бонги Сарфкунанда"
 
-#: SessionController.cpp:761
+#: SessionController.cpp:759
 msgid "User Signal &2"
 msgstr "&2 Бонги Сарфкунанда"
 
-#: SessionController.cpp:865
+#: SessionController.cpp:863
 msgid ""
 "A program is currently running in this session.  Are you sure you want to "
 "close it?"
 msgstr "В сеансе выполняется программа. Прекратить её работу?"
 
-#: SessionController.cpp:868
+#: SessionController.cpp:866
 #, kde-format
 msgid ""
 "The program '%1' is currently running in this session.  Are you sure you "
 "want to close it?"
 msgstr "В сеансе выполняется программа «%1». Прекратить её работу?"
 
-#: SessionController.cpp:871 SessionController.cpp:896
+#: SessionController.cpp:869 SessionController.cpp:894
 msgid "Confirm Close"
 msgstr "Подтверждение выхода"
 
-#: SessionController.cpp:890
+#: SessionController.cpp:888
 #, fuzzy
 #| msgid ""
 #| "A program is currently running in this session.  Are you sure you want to "
@@ -2304,7 +2320,7 @@ msgid ""
 "by force?"
 msgstr "В сеансе выполняется программа. Прекратить её работу?"
 
-#: SessionController.cpp:893
+#: SessionController.cpp:891
 #, fuzzy, kde-format
 #| msgid ""
 #| "The program '%1' is currently running in this session.  Are you sure you "
@@ -2314,19 +2330,19 @@ msgid ""
 "kill it by force?"
 msgstr "В сеансе выполняется программа «%1». Прекратить её работу?"
 
-#: SessionController.cpp:1387
+#: SessionController.cpp:1385
 #, fuzzy
 #| msgid "Print &header"
 msgid "Print Shell"
 msgstr "&Раҳнамо барои чоп кардани"
 
-#: SessionController.cpp:1589
+#: SessionController.cpp:1587
 #, fuzzy
 #| msgid "Save ZModem Download to..."
 msgid "Save ZModem Download to..."
 msgstr "Сохранить получаемый по ZModem файл в..."
 
-#: SessionController.cpp:1599
+#: SessionController.cpp:1597
 #, fuzzy
 #| msgid ""
 #| "<p>A ZModem file transfer attempt has been detected, but no suitable "
@@ -2341,7 +2357,7 @@ msgstr ""
 "программ для работы с этим протоколом.\n"
 "<p>Вы можете установить пакет «rzsz» или «lrzsz».\n"
 
-#: SessionController.cpp:1611
+#: SessionController.cpp:1609
 #, fuzzy
 #| msgid ""
 #| "<p>The current session already has a ZModem file transfer in progress."
@@ -2349,7 +2365,7 @@ msgid ""
 "<p>The current session already has a ZModem file transfer in progress.</p>"
 msgstr "<p>Сессияи шоранда аллакай файли мутараққӣ ZModem доштан. "
 
-#: SessionController.cpp:1620
+#: SessionController.cpp:1618
 #, fuzzy
 #| msgid ""
 #| "<p>No suitable ZModem software was found on this system.\n"
@@ -2361,21 +2377,21 @@ msgstr ""
 "<p>Не найдено программ для работы с протоколом ZModem.\n"
 "<p>Вы можете установить пакет «rzsz» или «lrzsz».\n"
 
-#: SessionController.cpp:1626
+#: SessionController.cpp:1624
 msgid "Select Files for ZModem Upload"
 msgstr "Выберите файлы для передачи по ZModem"
 
-#: SessionController.cpp:1692
+#: SessionController.cpp:1690
 #, kde-format
 msgid "Save Output From %1"
 msgstr "Сохранить вывод сеанса %1"
 
-#: SessionController.cpp:1703
+#: SessionController.cpp:1701
 #, kde-format
 msgid "%1 is an invalid URL, the output could not be saved."
 msgstr "Неверный адрес «%1», вывод не будет сохранён."
 
-#: SessionController.cpp:1777
+#: SessionController.cpp:1775
 #, kde-format
 msgid ""
 "A problem occurred when saving the output.\n"
