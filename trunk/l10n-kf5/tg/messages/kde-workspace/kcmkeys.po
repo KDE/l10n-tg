@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkeys\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-23 08:06+0000\n"
+"POT-Creation-Date: 2016-08-05 07:14+0000\n"
 "PO-Revision-Date: 2009-08-04 00:37+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Тоҷикӣ\n"
@@ -44,23 +44,30 @@ msgstr "Қисми ҷорӣ"
 msgid "All Components"
 msgstr "Ҳамаи қисмҳо"
 
-#: kglobalshortcutseditor.cpp:168
+#: kglobalshortcutseditor.cpp:239
 msgid "Import Scheme..."
 msgstr "Воридоти нақша..."
 
-#: kglobalshortcutseditor.cpp:169
+#: kglobalshortcutseditor.cpp:240
 msgid "Export Scheme..."
 msgstr "Содироти нақша..."
 
-#: kglobalshortcutseditor.cpp:170
+#: kglobalshortcutseditor.cpp:241
 msgid "Set All Shortcuts to None"
 msgstr "Ҳамаи тугмаҳо ба ҳеҷ чиз насб кунед"
 
-#: kglobalshortcutseditor.cpp:171
-msgid "Remove Component"
-msgstr "Нест кардани қисм"
+#: kglobalshortcutseditor.cpp:249
+#, fuzzy
+#| msgid "Application Missing"
+msgid "Applications"
+msgstr "Барнома ками карда истодааст. "
 
-#: kglobalshortcutseditor.cpp:180
+#: kglobalshortcutseditor.cpp:300
+#, kde-format
+msgid "Launch %1"
+msgstr ""
+
+#: kglobalshortcutseditor.cpp:337
 #, kde-format
 msgid ""
 "Component '%1' is currently active. Only global shortcuts currently not "
@@ -69,11 +76,11 @@ msgid ""
 "they are next started."
 msgstr ""
 
-#: kglobalshortcutseditor.cpp:182 kglobalshortcutseditor.cpp:192
+#: kglobalshortcutseditor.cpp:339 kglobalshortcutseditor.cpp:349
 msgid "Remove component"
 msgstr "Нест кардани қисм"
 
-#: kglobalshortcutseditor.cpp:188
+#: kglobalshortcutseditor.cpp:345
 #, kde-format
 msgid ""
 "Are you sure you want to remove the registered shortcuts for component '%1'? "
@@ -81,7 +88,19 @@ msgid ""
 "settings when they are next started."
 msgstr ""
 
-#: kglobalshortcutseditor.cpp:386
+#: kglobalshortcutseditor.cpp:452
+#, fuzzy
+#| msgid "App&lication Shortcuts"
+msgid "Application Launchers"
+msgstr "Барномаи &кнопкаҳои тез"
+
+#: kglobalshortcutseditor.cpp:455
+#, fuzzy
+#| msgid "Shortcuts:"
+msgid "Other Shortcuts"
+msgstr "Тугмаҳои тез:"
+
+#: kglobalshortcutseditor.cpp:560
 msgid ""
 "Your current changes will be lost if you load another scheme before saving "
 "this one"
@@ -89,21 +108,21 @@ msgstr ""
 "Агар шумо нақшаи навро бе захиракунии нақшаи ҷорӣ бор кунед, танзимотҳои "
 "ҳозира нест карда мешаванд"
 
-#: kglobalshortcutseditor.cpp:387
+#: kglobalshortcutseditor.cpp:561
 msgid "Load Shortcut Scheme"
 msgstr "Боркунии нақшаи тугмаҳои тез"
 
-#: kglobalshortcutseditor.cpp:388
+#: kglobalshortcutseditor.cpp:562
 msgid "Load"
 msgstr "Боркунӣ"
 
-#: kglobalshortcutseditor.cpp:401
+#: kglobalshortcutseditor.cpp:575
 #, kde-format
 msgid "This file (%1) does not exist. You can only select local files."
 msgstr ""
 "Файли (%1) мавҷуд нест. Шумо метавонед танҳо фалҳои локалиро интихоб кунед."
 
-#: kglobalshortcutseditor.cpp:429 kglobalshortcutseditor.cpp:452
+#: kglobalshortcutseditor.cpp:603 kglobalshortcutseditor.cpp:626
 #, kde-format
 msgid ""
 "Message: %1\n"
@@ -112,19 +131,44 @@ msgstr ""
 "Паём: %1\n"
 "Хато: %2"
 
-#: kglobalshortcutseditor.cpp:434 kglobalshortcutseditor.cpp:457
+#: kglobalshortcutseditor.cpp:608 kglobalshortcutseditor.cpp:631
 msgid "Failed to contact the KDE global shortcuts daemon\n"
 msgstr "Пайвастшавӣ бо модули глобалии тугмаҳои тези KDE қатъ карда шуд\n"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: kglobalshortcutseditor.ui:19
-msgid "KDE component:"
-msgstr "Компоненти KDE:"
+#. i18n: ectx: property (text), widget (QLabel, componentLabel)
+#: kglobalshortcutseditor.ui:25
+#, fuzzy
+#| msgid "Components"
+msgid "Component:"
+msgstr "Қисмҳо"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, addButton)
+#: kglobalshortcutseditor.ui:62
+msgid "Add a new shortcut to an Application..."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QToolButton, addButton)
+#. i18n: ectx: property (text), widget (QToolButton, removeButton)
+#: kglobalshortcutseditor.ui:65 kglobalshortcutseditor.ui:75
+msgid "..."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, removeButton)
+#: kglobalshortcutseditor.ui:72
+#, fuzzy
+#| msgid "Remove component"
+msgid "Remove the selected component"
+msgstr "Нест кардани қисм"
 
 #. i18n: ectx: property (text), widget (QPushButton, menu_button)
-#: kglobalshortcutseditor.ui:36
+#: kglobalshortcutseditor.ui:95
 msgid "File"
 msgstr "Файл"
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, SelectApplicationDialog)
+#: select_application.ui:14
+msgid "Select Application"
+msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, SelectSchemeDialog)
 #. i18n: ectx: property (clickMessage), widget (KUrlRequester, m_url)
@@ -152,8 +196,11 @@ msgstr "Интихоби файли тугмаҳои тез"
 msgid "&Path:"
 msgstr "&Роҳча:"
 
-#~ msgid "Shortcuts:"
-#~ msgstr "Тугмаҳои тез:"
+#~ msgid "Remove Component"
+#~ msgstr "Нест кардани қисм"
+
+#~ msgid "KDE component:"
+#~ msgstr "Компоненти KDE:"
 
 #, fuzzy
 #~ msgctxt "@label"
@@ -266,9 +313,6 @@ msgstr "&Роҳча:"
 
 #~ msgid "Shortcut Se&quences"
 #~ msgstr "Тартиби кн&опкаи тез"
-
-#~ msgid "App&lication Shortcuts"
-#~ msgstr "Барномаи &кнопкаҳои тез"
 
 #~ msgid "User-Defined Scheme"
 #~ msgstr "Схемаи Мушаххаси Корбар "
@@ -873,6 +917,3 @@ msgstr "&Роҳча:"
 #~ msgstr ""
 #~ "Менюи муҳарири KDE-(kmenuedit) наметавонад ба кор барад.\n"
 #~ "Мумкин ӯ насб нашудааст  ёки дар роҳи шумо нест. "
-
-#~ msgid "Application Missing"
-#~ msgstr "Барнома ками карда истодааст. "
