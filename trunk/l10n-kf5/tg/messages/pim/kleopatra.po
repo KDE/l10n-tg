@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-08-05 07:08+0000\n"
+"POT-Creation-Date: 2016-08-06 07:45+0000\n"
 "PO-Revision-Date: 2005-09-17 13:34+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -1498,45 +1498,49 @@ msgstr ""
 msgid "Configure"
 msgstr ""
 
-#: src/conf/cryptooperationsconfigwidget.cpp:73
+#: src/conf/cryptooperationsconfigwidget.cpp:75
 #, fuzzy
 #| msgid "Stop Operation"
 msgid "EMail Operations"
 msgstr "Боздоштани амалиёт"
 
-#: src/conf/cryptooperationsconfigwidget.cpp:75
+#: src/conf/cryptooperationsconfigwidget.cpp:77
 msgid ""
 "Don't confirm signing certificate if there is only one valid certificate for "
 "the identity"
 msgstr ""
 
-#: src/conf/cryptooperationsconfigwidget.cpp:76
+#: src/conf/cryptooperationsconfigwidget.cpp:78
 msgid ""
 "Don't confirm encryption certificates if there is exactly one valid "
 "certificate for each recipient"
 msgstr ""
 
-#: src/conf/cryptooperationsconfigwidget.cpp:82
+#: src/conf/cryptooperationsconfigwidget.cpp:84
 #, fuzzy
 #| msgid "Stop Operation"
 msgid "File Operations"
 msgstr "Боздоштани амалиёт"
 
-#: src/conf/cryptooperationsconfigwidget.cpp:84
+#: src/conf/cryptooperationsconfigwidget.cpp:86
 msgid ""
 "Create OpenPGP encrypted files with \".pgp\" file extensions instead of \"."
 "gpg\""
 msgstr ""
 
 #. i18n: ectx: label, entry (AutoDecryptVerify), group (FileOperations)
-#: src/conf/cryptooperationsconfigwidget.cpp:85
+#: src/conf/cryptooperationsconfigwidget.cpp:87
 #: src/kcfg/fileoperationspreferences.kcfg:15
 msgid ""
 "Automatically start operation based on input detection for decrypt/verify."
 msgstr ""
 
-#: src/conf/cryptooperationsconfigwidget.cpp:89
+#: src/conf/cryptooperationsconfigwidget.cpp:92
 msgid "Checksum program to use when creating checksum files:"
+msgstr ""
+
+#: src/conf/cryptooperationsconfigwidget.cpp:97
+msgid "Archive command to use when archiving files:"
 msgstr ""
 
 #: src/conf/dirservconfigpage.cpp:174
@@ -2422,7 +2426,7 @@ msgstr ""
 #: src/crypto/encryptemailcontroller.cpp:178
 #: src/crypto/newsignencryptemailcontroller.cpp:419
 #: src/crypto/signemailcontroller.cpp:191
-#: src/crypto/signencryptfilescontroller.cpp:327
+#: src/crypto/signencryptfilescontroller.cpp:345
 msgid "User cancel"
 msgstr ""
 
@@ -2439,43 +2443,43 @@ msgstr ""
 msgid "Encryption succeeded."
 msgstr ""
 
-#: src/crypto/gui/certificatelineedit.cpp:80
+#: src/crypto/gui/certificatelineedit.cpp:76
 msgid "Please enter a name or email address..."
 msgstr ""
 
-#: src/crypto/gui/certificatelineedit.cpp:137
+#: src/crypto/gui/certificatelineedit.cpp:130
 #, fuzzy
 #| msgid "Delete Certificates"
 msgid "Please select a certificate."
 msgstr "Ҳузфи сертификатҳо"
 
-#: src/crypto/gui/certificatelineedit.cpp:143
+#: src/crypto/gui/certificatelineedit.cpp:136
 #, fuzzy
 #| msgid "Delete Certificates"
 msgid "Multiple certificates"
 msgstr "Ҳузфи сертификатҳо"
 
-#: src/crypto/gui/certificatelineedit.cpp:153
+#: src/crypto/gui/certificatelineedit.cpp:146
 msgid "No matching certificates found.<br/>Click here to import a certificate."
 msgstr ""
 
-#: src/crypto/gui/certificateselectionline.cpp:58
+#: src/crypto/gui/certificateselectionline.cpp:60
 #, fuzzy
 #| msgid "Fetching Certificate Chain"
 msgid "(no matching certificates found)"
 msgstr "Пурборкунии сертификатҳои паиҳам"
 
-#: src/crypto/gui/certificateselectionline.cpp:60
+#: src/crypto/gui/certificateselectionline.cpp:62
 #, fuzzy
 #| msgid "Delete Certificates"
 msgid "Please select a certificate"
 msgstr "Ҳузфи сертификатҳо"
 
-#: src/crypto/gui/certificateselectionline.cpp:128
+#: src/crypto/gui/certificateselectionline.cpp:216
 msgid "(please choose between OpenPGP and S/MIME first)"
 msgstr ""
 
-#: src/crypto/gui/certificateselectionline.cpp:136
+#: src/crypto/gui/certificateselectionline.cpp:224
 #: src/crypto/gui/resolverecipientspage.cpp:210
 #, fuzzy
 #| msgid "A.k.a."
@@ -2786,24 +2790,40 @@ msgstr ""
 msgid "Select Certificates For Message \"%1\""
 msgstr "Интихоби файли сертификат"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:99
+#: src/crypto/gui/signencryptfileswizard.cpp:79
 #, fuzzy
 #| msgid "Deleting keys..."
 msgctxt "@title"
 msgid "Sign / Encrypt Files"
 msgstr "Ҳузфи калидҳо..."
 
-#: src/crypto/gui/signencryptfileswizard.cpp:109
+#: src/crypto/gui/signencryptfileswizard.cpp:90
 msgid "Output"
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:112
+#: src/crypto/gui/signencryptfileswizard.cpp:93
 #, fuzzy
 #| msgid "Delete Certificates"
 msgid "Please select an action."
 msgstr "Ҳузфи сертификатҳо"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:150
+#: src/crypto/gui/signencryptfileswizard.cpp:129
+msgctxt "@info"
+msgid ""
+"<para>Archiving in combination with sign-only currently requires what are "
+"known as opaque signatures - unlike detached ones, these embed the content "
+"in the signature.</para><para>This format is rather unusual. You might want "
+"to archive the files separately, and then sign the archive as one file with "
+"Kleopatra.</para><para>Future versions of Kleopatra are expected to also "
+"support detached signatures in this case.</para>"
+msgstr ""
+
+#: src/crypto/gui/signencryptfileswizard.cpp:134
+msgctxt "@title:window"
+msgid "Unusual Signature Warning"
+msgstr ""
+
+#: src/crypto/gui/signencryptfileswizard.cpp:156
 msgctxt "@info"
 msgid ""
 "<para>None of the recipients you are encrypting to seems to be your own.</"
@@ -2812,74 +2832,105 @@ msgid ""
 "recipient selection?</para>"
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:153
+#: src/crypto/gui/signencryptfileswizard.cpp:159
 msgctxt "@title:window"
 msgid "Encrypt-To-Self Warning"
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:191
+#: src/crypto/gui/signencryptfileswizard.cpp:197
 #, fuzzy
 #| msgid "New signatures:"
 msgid "The S/MIME signature."
 msgstr "Имзоҳои нав:"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:192
+#: src/crypto/gui/signencryptfileswizard.cpp:198
 #, fuzzy
 #| msgid "New signatures:"
 msgid "The signature."
 msgstr "Имзоҳои нав:"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:193
+#: src/crypto/gui/signencryptfileswizard.cpp:199
 #, fuzzy
 #| msgid "Deleting keys..."
 msgid "The signed and encrypted file."
 msgstr "Ҳузфи калидҳо..."
 
-#: src/crypto/gui/signencryptfileswizard.cpp:194
+#: src/crypto/gui/signencryptfileswizard.cpp:200
 #, fuzzy
 #| msgid "Select CRL File"
 msgid "The encrypted file."
 msgstr "Интихоби файли CRL"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:195
+#: src/crypto/gui/signencryptfileswizard.cpp:201
 msgid "The S/MIME encrypted file."
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:238
+#: src/crypto/gui/signencryptfileswizard.cpp:244
 msgid "Next"
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:288
+#: src/crypto/gui/signencryptfileswizard.cpp:295
 msgctxt "@title"
 msgid "Results"
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:290
+#: src/crypto/gui/signencryptfileswizard.cpp:297
 msgctxt "@title"
 msgid "Status and progress of the crypto operations is shown here."
 msgstr ""
 
-#: src/crypto/gui/signencryptwidget.cpp:113
-#: src/crypto/gui/signencryptwidget.cpp:156
-msgid "No valid secret keys found."
+#: src/crypto/gui/signencryptwidget.cpp:104
+msgid "Prove authenticity (sign)"
 msgstr ""
 
-#: src/crypto/gui/signencryptwidget.cpp:131
-#: src/crypto/gui/signencryptwidget.cpp:262
+#: src/crypto/gui/signencryptwidget.cpp:105
+#, fuzzy
+#| msgid "For &signing only"
+msgid "Sign as:"
+msgstr "Танҳо барои &имзоот"
+
+#: src/crypto/gui/signencryptwidget.cpp:125
+#: src/crypto/gui/signencryptwidget.cpp:285
 #, fuzzy
 #| msgid "For &encrypting only"
 msgctxt "@action"
 msgid "Encrypt"
 msgstr "Танҳо барои &рамзгузорӣ"
 
-#: src/crypto/gui/signencryptwidget.cpp:260
+#: src/crypto/gui/signencryptwidget.cpp:132
+#, fuzzy
+#| msgid "Certificate Deletion Failed"
+msgid "Encrypt for me:"
+msgstr "Наметавонам сертификатро ҳузф кунам"
+
+#: src/crypto/gui/signencryptwidget.cpp:138
+#, fuzzy
+#| msgid "Certificate Deletion Failed"
+msgid "Encrypt for others:"
+msgstr "Наметавонам сертификатро ҳузф кунам"
+
+#: src/crypto/gui/signencryptwidget.cpp:162
+msgid ""
+"Encrypt with password. Anyone you share the password with can read the data."
+msgstr ""
+
+#: src/crypto/gui/signencryptwidget.cpp:164
+msgctxt "Tooltip information for symetric encryption"
+msgid ""
+"Additionally to the keys of the recipients you can encrypt your data with a "
+"password. Anyone who has the password can read the data without any secret "
+"key.Using a password is <b>less secure</b> then public key cryptography. "
+"Even if you pick a very strong password."
+msgstr ""
+
+#: src/crypto/gui/signencryptwidget.cpp:283
 #, fuzzy
 #| msgid "For &encrypting only"
 msgctxt "@action"
 msgid "Sign / Encrypt"
 msgstr "Танҳо барои &рамзгузорӣ"
 
-#: src/crypto/gui/signencryptwidget.cpp:264
+#: src/crypto/gui/signencryptwidget.cpp:287
 #, fuzzy
 #| msgid "For &signing only"
 msgctxt "@action"
@@ -3033,47 +3084,47 @@ msgstr ""
 msgid "Signing succeeded."
 msgstr ""
 
-#: src/crypto/signencryptfilescontroller.cpp:153
+#: src/crypto/signencryptfilescontroller.cpp:155
 msgid "Archive and Sign Files"
 msgstr ""
 
-#: src/crypto/signencryptfilescontroller.cpp:155
+#: src/crypto/signencryptfilescontroller.cpp:157
 msgid "Sign Files"
 msgstr ""
 
-#: src/crypto/signencryptfilescontroller.cpp:161
+#: src/crypto/signencryptfilescontroller.cpp:163
 #, fuzzy
 #| msgid "Certificate Deletion Failed"
 msgid "Archive and Encrypt Files"
 msgstr "Наметавонам сертификатро ҳузф кунам"
 
-#: src/crypto/signencryptfilescontroller.cpp:163
+#: src/crypto/signencryptfilescontroller.cpp:165
 msgid "Encrypt Files"
 msgstr ""
 
-#: src/crypto/signencryptfilescontroller.cpp:168
+#: src/crypto/signencryptfilescontroller.cpp:170
 msgid "Archive and Sign/Encrypt Files"
 msgstr ""
 
-#: src/crypto/signencryptfilescontroller.cpp:170
+#: src/crypto/signencryptfilescontroller.cpp:172
 msgid "Sign/Encrypt Files"
 msgstr ""
 
-#: src/crypto/signencryptfilescontroller.cpp:296
+#: src/crypto/signencryptfilescontroller.cpp:315
 #, fuzzy
 #| msgid "Search:"
 msgctxt "base name of an archive file, e.g. archive.zip or archive.tar.gz"
 msgid "archive"
 msgstr "Ҷустуҷӯ:"
 
-#: src/crypto/signencryptfilescontroller.cpp:567
+#: src/crypto/signencryptfilescontroller.cpp:582
 #, kde-format
 msgid ""
 "Caught unexpected exception in SignEncryptFilesController::Private::"
 "slotWizardOperationPrepared: %1"
 msgstr ""
 
-#: src/crypto/signencryptfilescontroller.cpp:571
+#: src/crypto/signencryptfilescontroller.cpp:586
 msgid ""
 "Caught unknown exception in SignEncryptFilesController::Private::"
 "slotWizardOperationPrepared"
@@ -4212,6 +4263,18 @@ msgid ""
 "With this option set Kleopatra no longer asks you what you want to do with "
 "input files but instead automatically starts the operations it detects as "
 "applicable to the input."
+msgstr ""
+
+#. i18n: ectx: label, entry (ArchiveCommand), group (FileOperations)
+#: src/kcfg/fileoperationspreferences.kcfg:20
+msgid "Use this command to create file archives."
+msgstr ""
+
+#. i18n: ectx: whatsthis, entry (ArchiveCommand), group (FileOperations)
+#: src/kcfg/fileoperationspreferences.kcfg:21
+msgid ""
+"When encrypting multiple files or a folder Kleopatra creates an encrypted "
+"archive with this command."
 msgstr ""
 
 #. i18n: ectx: label, entry (RefreshInterval), group (SMime Validation)
