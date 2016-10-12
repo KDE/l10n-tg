@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-10-11 08:12+0000\n"
+"POT-Creation-Date: 2016-10-12 07:15+0000\n"
 "PO-Revision-Date: 2005-09-17 12:55+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -44,14 +44,32 @@ msgstr "Воридоти рӯйхат ба формати CSV..."
 msgid "Import contacts from a file in comma separated value format."
 msgstr ""
 
-#: csv/csvimportexportplugininterface.cpp:201
-#: ldif/ldifimportexportplugininterface.cpp:135
+#: csv/csvimportexportplugininterface.cpp:168
+#: ldif/ldifimportexportplugininterface.cpp:137
+#: vcards/vcardimportexportplugininterface.cpp:416
+#, fuzzy
+#| msgid "Which contacts do you want to export?"
+msgid "Which contact do you want to export?"
+msgstr "Кадом алоқаҳоро шумо мехоҳед содир кунед?"
+
+#: csv/csvimportexportplugininterface.cpp:178
+#: ldif/ldifimportexportplugininterface.cpp:147
+#: vcards/vcardimportexportplugininterface.cpp:428
+#, fuzzy
+#| msgid ""
+#| "Copy the currently selected contact(s) to system clipboard in vCard "
+#| "format."
+msgid "You have not selected any contacts to export."
+msgstr "Копӣ кардани алоқоти интихобшуда ба буфери иввазотба формати vCard."
+
+#: csv/csvimportexportplugininterface.cpp:207 gmx/engine/gmx_xxport.cpp:375
+#: ldif/ldifimportexportplugininterface.cpp:163
 #, fuzzy, kde-format
 msgid "<qt>Unable to open file <b>%1</b></qt>"
 msgstr "<qt>Наметавонам файли <b>%1</b>-ро боз кунам.</qt>"
 
-#: csv/csvimportexportplugininterface.cpp:215
-#: ldif/ldifimportexportplugininterface.cpp:167
+#: csv/csvimportexportplugininterface.cpp:219 gmx/engine/gmx_xxport.cpp:390
+#: ldif/ldifimportexportplugininterface.cpp:195
 #, kde-format
 msgid "<qt>Unable to open file <b>%1</b>.</qt>"
 msgstr "<qt>Наметавонам файли <b>%1</b>-ро боз кунам.</qt>"
@@ -455,90 +473,100 @@ msgctxt "@info"
 msgid "Please select a template, that matches the CSV file:"
 msgstr "Қолибро, ки ба файли CSV мутобиқ аст, интихоб кунед:"
 
-#: gmx/gmximportexportplugininterface.cpp:40
+#: gmx/engine/gmx_xxport.cpp:98
+#, fuzzy
+msgid "GMX address book file (*.gmxa)"
+msgstr "Китоби адресии %1"
+
+#: gmx/engine/gmx_xxport.cpp:138 ldif/ldifimportexportplugininterface.cpp:100
+#, kde-format
+msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
+msgstr "<qt>Наметавонам <b>%1</b>-ро барои хондан боз кунам.</qt>"
+
+#: gmx/engine/gmx_xxport.cpp:153
+#, fuzzy, kde-format
+msgid "%1 is not a GMX address book file."
+msgstr "Китоби адресии %1"
+
+#: gmx/gmximportexportplugininterface.cpp:41
 #, fuzzy
 #| msgid "Import All..."
 msgid "Import GMX file..."
 msgstr "Воридоти ҳама..."
 
-#: gmx/gmximportexportplugininterface.cpp:41
+#: gmx/gmximportexportplugininterface.cpp:42
 #, fuzzy
 msgid "Import contacts from a GMX address book file."
 msgstr "Китоби адресии %1"
 
-#: gmx/gmximportexportplugininterface.cpp:46
+#: gmx/gmximportexportplugininterface.cpp:47
 #, fuzzy
 msgid "Export GMX file..."
 msgstr "Содироти китоби адресӣ ба формати LDIF..."
 
-#: gmx/gmximportexportplugininterface.cpp:47
+#: gmx/gmximportexportplugininterface.cpp:48
 #, fuzzy
 msgid "Export contacts to a GMX address book file."
 msgstr "Китоби адресии %1"
 
-#: ldap/ldapimportexportplugininterface.cpp:45
+#: ldap/ldapimportexportplugininterface.cpp:44
 #, fuzzy
 msgid "Import From LDAP server..."
 msgstr "Воридот аз телефони мобилии Nokia..."
 
-#: ldap/ldapimportexportplugininterface.cpp:46
+#: ldap/ldapimportexportplugininterface.cpp:45
 #, fuzzy
 #| msgid "Import Contacts?"
 msgid "Import contacts from an LDAP server."
 msgstr "Алоқотро ворид кунам?"
 
-#: ldif/ldifimportexportplugininterface.cpp:50
+#: ldif/ldifimportexportplugininterface.cpp:53
 #, fuzzy
 #| msgid "Import LDIF Addressbook..."
 msgid "Import LDIF file..."
 msgstr "Воридоти китоби адресӣ аз LDIF..."
 
-#: ldif/ldifimportexportplugininterface.cpp:51
+#: ldif/ldifimportexportplugininterface.cpp:54
 #, fuzzy
 #| msgid "Import Contacts?"
 msgid "Import contacts from an LDIF file."
 msgstr "Алоқотро ворид кунам?"
 
-#: ldif/ldifimportexportplugininterface.cpp:56
+#: ldif/ldifimportexportplugininterface.cpp:59
 #, fuzzy
 #| msgid "Export LDIF Addressbook..."
 msgid "Export LDIF file..."
 msgstr "Содироти китоби адресӣ ба формати LDIF..."
 
-#: ldif/ldifimportexportplugininterface.cpp:57
+#: ldif/ldifimportexportplugininterface.cpp:60
 #, fuzzy
 #| msgid "Export LDIF Addressbook..."
 msgid "Export contacts to an LDIF file."
 msgstr "Содироти китоби адресӣ ба формати LDIF..."
 
-#: ldif/ldifimportexportplugininterface.cpp:90
-#: ldif/ldifimportexportplugininterface.cpp:127
+#: ldif/ldifimportexportplugininterface.cpp:93
+#: ldif/ldifimportexportplugininterface.cpp:155
 msgid "LDif Files (*.ldif)"
 msgstr ""
 
-#: ldif/ldifimportexportplugininterface.cpp:97
-#, kde-format
-msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
-msgstr "<qt>Наметавонам <b>%1</b>-ро барои хондан боз кунам.</qt>"
-
-#: shared/importexportengine.cpp:81
+#: shared/importexportengine.cpp:77
 #, fuzzy
 msgid "Select Address Book"
 msgstr "Китобҳои адресӣ"
 
-#: shared/importexportengine.cpp:83
+#: shared/importexportengine.cpp:79
 #, fuzzy
 #| msgid "Set the categories for all selected contacts."
 msgid "Select the address book the imported contact(s) shall be saved in:"
 msgstr "Тағйироти гурӯҳҳое, ки метавон дар алоқотҳо интихоб кард."
 
-#: shared/importexportengine.cpp:96
+#: shared/importexportengine.cpp:93
 #, fuzzy
 #| msgid "Importing contacts"
 msgid "Import Contacts"
 msgstr "Воридоти алоқот"
 
-#: shared/importexportengine.cpp:98
+#: shared/importexportengine.cpp:95
 #, fuzzy, kde-format
 #| msgid "Importing contacts"
 msgid "Importing one contact to %2"
@@ -547,6 +575,7 @@ msgstr[0] "Воридоти алоқот"
 msgstr[1] "Воридоти алоқот"
 
 #: vcards/engine/vcard_xxport.cpp:94
+#: vcards/vcardimportexportplugininterface.cpp:469
 #, fuzzy
 #| msgid ""
 #| "You have selected a list of contacts, shall they be exported to several "
@@ -560,24 +589,28 @@ msgstr ""
 "кунед?"
 
 #: vcards/engine/vcard_xxport.cpp:97
+#: vcards/vcardimportexportplugininterface.cpp:472
 #, fuzzy
 msgctxt "@action:button"
 msgid "Export to One File"
 msgstr "Содирот ба телефони мобилӣ ба итмом расид."
 
 #: vcards/engine/vcard_xxport.cpp:98
+#: vcards/vcardimportexportplugininterface.cpp:473
 #, fuzzy
 msgctxt "@action:button"
 msgid "Export to Several Files"
 msgstr "Содирот ба телефони мобилӣ ба итмом расид."
 
 #: vcards/engine/vcard_xxport.cpp:162
+#: vcards/vcardimportexportplugininterface.cpp:137
 msgid ""
 "*.vcf|vCard (*.vcf)\n"
 "*|all files (*)"
 msgstr ""
 
 #: vcards/engine/vcard_xxport.cpp:164
+#: vcards/vcardimportexportplugininterface.cpp:139
 #, fuzzy
 #| msgid "Select vCard to Import"
 msgctxt "@title:window"
@@ -585,6 +618,7 @@ msgid "Select vCard to Import"
 msgstr "vCard барои воридот интихоб кунед"
 
 #: vcards/engine/vcard_xxport.cpp:173
+#: vcards/vcardimportexportplugininterface.cpp:148
 #, fuzzy
 #| msgid "vCard Import Failed"
 msgctxt "@title:window"
@@ -592,17 +626,20 @@ msgid "vCard Import Failed"
 msgstr "Хатои воридоти vCard"
 
 #: vcards/engine/vcard_xxport.cpp:191
+#: vcards/vcardimportexportplugininterface.cpp:166
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "<para>Unable to access vCard:</para><para>%1</para>"
 msgstr "<qt>Наметавонам дастрасӣ ба <b>%1</b> гирам.</qt>"
 
 #: vcards/engine/vcard_xxport.cpp:203
+#: vcards/vcardimportexportplugininterface.cpp:178
 msgctxt "@info"
 msgid "No contacts were imported, due to errors with the vCards."
 msgstr ""
 
 #: vcards/engine/vcard_xxport.cpp:207
+#: vcards/vcardimportexportplugininterface.cpp:182
 #, fuzzy
 #| msgid "The vCard does not contain any contacts."
 msgctxt "@info"
@@ -766,45 +803,43 @@ msgctxt "@action:button"
 msgid "Import All..."
 msgstr "Воридоти ҳама..."
 
-#: vcards/vcardimportexportplugininterface.cpp:40
-#: vcards/vcardimportexportplugininterface.cpp:47
+#: vcards/vcardimportexportplugininterface.cpp:58
 msgid "Import vCard..."
 msgstr "Воридоти vCard..."
 
-#: vcards/vcardimportexportplugininterface.cpp:41
-#: vcards/vcardimportexportplugininterface.cpp:48
+#: vcards/vcardimportexportplugininterface.cpp:59
 #, fuzzy
 #| msgid "Import Contacts?"
 msgid "Import contacts from a vCard file."
 msgstr "Алоқотро ворид кунам?"
 
-#: vcards/vcardimportexportplugininterface.cpp:52
+#: vcards/vcardimportexportplugininterface.cpp:66
 #, fuzzy
 #| msgid "Export vCard 3.0..."
 msgid "Export contacts to a vCard 4.0 file."
 msgstr "Содироти vCard 3.0..."
 
-#: vcards/vcardimportexportplugininterface.cpp:53
+#: vcards/vcardimportexportplugininterface.cpp:67
 #, fuzzy
 #| msgid "Export vCard 3.0..."
 msgid "Export vCard 4.0..."
 msgstr "Содироти vCard 3.0..."
 
-#: vcards/vcardimportexportplugininterface.cpp:57
+#: vcards/vcardimportexportplugininterface.cpp:72
 msgid "Export vCard 3.0..."
 msgstr "Содироти vCard 3.0..."
 
-#: vcards/vcardimportexportplugininterface.cpp:58
+#: vcards/vcardimportexportplugininterface.cpp:73
 #, fuzzy
 #| msgid "Export vCard 3.0..."
 msgid "Export contacts to a vCard 3.0 file."
 msgstr "Содироти vCard 3.0..."
 
-#: vcards/vcardimportexportplugininterface.cpp:62
+#: vcards/vcardimportexportplugininterface.cpp:78
 msgid "Export vCard 2.1..."
 msgstr "Содироти vCard 2.1..."
 
-#: vcards/vcardimportexportplugininterface.cpp:63
+#: vcards/vcardimportexportplugininterface.cpp:79
 #, fuzzy
 #| msgid "Export vCard 2.1..."
 msgid "Export contacts to a vCard 2.1 file."
@@ -1458,26 +1493,6 @@ msgstr "Содироти vCard 2.1..."
 #~ msgctxt "@info:tooltip"
 #~ msgid "Search contacts in list"
 #~ msgstr "А&лоқотҳои интихобшуда"
-
-#, fuzzy
-#~ msgid "GMX address book file (*.gmxa)"
-#~ msgstr "Китоби адресии %1"
-
-#, fuzzy
-#~ msgid "%1 is not a GMX address book file."
-#~ msgstr "Китоби адресии %1"
-
-#, fuzzy
-#~| msgid "Which contacts do you want to export?"
-#~ msgid "Which contact do you want to export?"
-#~ msgstr "Кадом алоқаҳоро шумо мехоҳед содир кунед?"
-
-#, fuzzy
-#~| msgid ""
-#~| "Copy the currently selected contact(s) to system clipboard in vCard "
-#~| "format."
-#~ msgid "You have not selected any contacts to export."
-#~ msgstr "Копӣ кардани алоқоти интихобшуда ба буфери иввазотба формати vCard."
 
 #, fuzzy
 #~| msgid "&Selected contacts"
