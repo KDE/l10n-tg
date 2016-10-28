@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-10-22 07:34+0000\n"
+"POT-Creation-Date: 2016-10-28 07:10+0000\n"
 "PO-Revision-Date: 2005-09-17 12:46+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -134,7 +134,7 @@ msgstr "Фармони рамзкунонии корвандӣ:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, capEncrypt)
 #. i18n: ectx: property (windowTitle), widget (QWidget, Encryption)
-#: conf_encryption.ui:15 kgpgkeygenerate.ui:172 kgpgoptions.cpp:113
+#: conf_encryption.ui:15 kgpgkeygenerate.ui:205 kgpgoptions.cpp:113
 msgid "Encryption"
 msgstr "Рамзкунӣ"
 
@@ -2096,7 +2096,7 @@ msgid "Key Group"
 msgstr "Калиди гурӯҳ"
 
 #. i18n: ectx: property (text), widget (QCheckBox, capSign)
-#: keysmanager.cpp:1117 kgpgkeygenerate.ui:152
+#: keysmanager.cpp:1117 kgpgkeygenerate.ui:185
 msgid "Signature"
 msgstr "Имзо"
 
@@ -3229,59 +3229,36 @@ msgid ""
 "If you go to expert mode, you will use the command line to create your key."
 msgstr ""
 
-#: kgpgkeygenerate.cpp:75
-#, fuzzy
-#| msgid "Never"
-msgctxt "Key will not expire"
-msgid "Never"
-msgstr "Ҳеҷ гоҳ"
-
-#: kgpgkeygenerate.cpp:76
-msgid "Days"
-msgstr "Рӯзҳо"
-
-#: kgpgkeygenerate.cpp:77
-msgid "Weeks"
-msgstr "Ҳафтаҳо"
-
-#: kgpgkeygenerate.cpp:78
-msgid "Months"
-msgstr "Моҳҳо"
-
-#: kgpgkeygenerate.cpp:79
-msgid "Years"
-msgstr "Солҳо"
-
-#: kgpgkeygenerate.cpp:85
+#: kgpgkeygenerate.cpp:66
 msgid "1024"
 msgstr ""
 
-#: kgpgkeygenerate.cpp:86
+#: kgpgkeygenerate.cpp:67
 msgid "2048"
 msgstr ""
 
-#: kgpgkeygenerate.cpp:87
+#: kgpgkeygenerate.cpp:68
 msgid "4096"
 msgstr ""
 
-#: kgpgkeygenerate.cpp:118
+#: kgpgkeygenerate.cpp:99
 msgid "You must give a name."
 msgstr "Шумо бояд ном гузоред."
 
-#: kgpgkeygenerate.cpp:124
+#: kgpgkeygenerate.cpp:105
 msgid "The name must have at least 5 characters"
 msgstr ""
 
-#: kgpgkeygenerate.cpp:130
+#: kgpgkeygenerate.cpp:111
 msgid "The name must not start with a digit"
 msgstr ""
 
-#: kgpgkeygenerate.cpp:137
+#: kgpgkeygenerate.cpp:118
 msgid "You are about to create a key with no email address"
 msgstr ""
 "Шумо ҳоло кӯшиши офаридани калидро бе суроғаи пости электронӣ карда истодаед"
 
-#: kgpgkeygenerate.cpp:144
+#: kgpgkeygenerate.cpp:125
 msgid "Email address not valid"
 msgstr "Суроғаи пости электронӣ"
 
@@ -3334,43 +3311,66 @@ msgstr "Тавсифот (интихобӣ):"
 msgid "Expiration:"
 msgstr "Мӯҳлати истифода:"
 
-#. i18n: ectx: property (text), widget (QLineEdit, m_days)
-#: kgpgkeygenerate.ui:88
-msgid "0"
-msgstr ""
+#. i18n: ectx: property (text), item, widget (QComboBox, m_keyexp)
+#: kgpgkeygenerate.ui:98
+#, fuzzy
+#| msgid "Never"
+msgctxt "Key will not expire"
+msgid "Never"
+msgstr "Ҳеҷ гоҳ"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_keyexp)
+#: kgpgkeygenerate.ui:103
+msgid "Days"
+msgstr "Рӯзҳо"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_keyexp)
+#: kgpgkeygenerate.ui:108
+msgid "Weeks"
+msgstr "Ҳафтаҳо"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_keyexp)
+#: kgpgkeygenerate.ui:113
+msgid "Months"
+msgstr "Моҳҳо"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_keyexp)
+#: kgpgkeygenerate.ui:118
+msgid "Years"
+msgstr "Солҳо"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: kgpgkeygenerate.ui:95
+#: kgpgkeygenerate.ui:128
 #, fuzzy
 msgid "&Key size:"
 msgstr "Андозаи калид:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: kgpgkeygenerate.ui:108
+#: kgpgkeygenerate.ui:141
 #, fuzzy
 msgid "&Algorithm:"
 msgstr "Алгоритм:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, capabilities)
 #. i18n: ectx: property (text), widget (QLabel, tl_caps)
-#: kgpgkeygenerate.ui:127 kgpgKeyInfo.ui:248
+#: kgpgkeygenerate.ui:160 kgpgKeyInfo.ui:248
 msgid "Capabilities"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, capCert)
-#: kgpgkeygenerate.ui:139
+#: kgpgkeygenerate.ui:172
 msgid "Certification is automatically enabled for all keys"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, capCert)
-#: kgpgkeygenerate.ui:142
+#: kgpgkeygenerate.ui:175
 #, fuzzy
 #| msgid "Creation"
 msgid "Certification"
 msgstr "Офариниш"
 
 #. i18n: ectx: property (text), widget (QCheckBox, capAuth)
-#: kgpgkeygenerate.ui:162
+#: kgpgkeygenerate.ui:195
 #, fuzzy
 #| msgid "Creation"
 msgid "Authentication"
