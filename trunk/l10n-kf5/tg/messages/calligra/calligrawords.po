@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2008-06-10 01:45+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik Language\n"
@@ -92,6 +92,33 @@ msgstr "Дигаргун кунед Ноустувор Ба"
 #, kde-format
 msgid "&Tools"
 msgstr ""
+
+#: part/commands/KWChangePageStyleCommand.cpp:24
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Set Page Style"
+msgstr "&Саҳифа"
+
+#: part/commands/KWNewPageStyleCommand.cpp:25
+#, fuzzy
+#| msgid "Insert Page"
+msgctxt "(qtundo-format)"
+msgid "Insert Page Style"
+msgstr "Мондани саҳифа"
+
+#: part/commands/KWPageStylePropertiesCommand.cpp:29
+#, fuzzy
+#| msgid "Frame Properties"
+msgctxt "(qtundo-format)"
+msgid "Page Properties"
+msgstr "Хосиятҳои чорчӯба"
+
+#: part/commands/KWShapeCreateCommand.cpp:55
+#, fuzzy
+#| msgid "Create Text Frame"
+msgctxt "(qtundo-format)"
+msgid "Create shape"
+msgstr "Сохтани чорчӯбаи матн "
 
 #: part/dialogs/KWAnchoringProperties.cpp:434
 #, fuzzy, kde-format
@@ -380,6 +407,13 @@ msgstr "Матн дар атроф наишта шуд"
 msgid "Connect Text Frames"
 msgstr "Алоқаи матн ва чорчӯба"
 
+#: part/dialogs/KWFrameDialog.cpp:79
+#, fuzzy
+#| msgid "Frame Properties"
+msgctxt "(qtundo-format)"
+msgid "Change Shape Properties"
+msgstr "Хосиятҳои чорчӯба"
+
 #. i18n: ectx: property (title), widget (QGroupBox, grpAnchor)
 #: part/dialogs/KWInsertImage.ui:17
 #, kde-format
@@ -542,15 +576,21 @@ msgstr "Пӯшидан"
 msgid "Delete"
 msgstr "&Нест кардан"
 
-#: part/dialogs/KWPageSettingsDialog.cpp:224
-#, fuzzy, kde-format
-msgid "Clone Page Style"
+#: part/dialogs/KWPageSettingsDialog.cpp:150
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Change Page Style"
 msgstr "&Саҳифа"
 
 #: part/dialogs/KWPageSettingsDialog.cpp:224
 #, kde-format
 msgid "Add a new page style with the name:"
 msgstr ""
+
+#: part/dialogs/KWPageSettingsDialog.cpp:224
+#, fuzzy, kde-format
+msgid "Clone Page Style"
+msgstr "&Саҳифа"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: part/dialogs/KWRunAroundProperties.ui:17
@@ -670,15 +710,15 @@ msgstr ""
 
 #: part/dockers/KWNavigationWidget.cpp:108
 #, fuzzy, kde-format
-#| msgid "Instructions"
-msgid "Section"
-msgstr "Дастуруамалҳо"
-
-#: part/dockers/KWNavigationWidget.cpp:108
-#, fuzzy, kde-format
 #| msgid "Remove entry"
 msgid "Page #"
 msgstr "Нест кардани вуруд"
+
+#: part/dockers/KWNavigationWidget.cpp:108
+#, fuzzy, kde-format
+#| msgid "Instructions"
+msgid "Section"
+msgstr "Дастуруамалҳо"
 
 #: part/dockers/KWRdfDocker.cpp:52
 #, kde-format
@@ -1092,14 +1132,14 @@ msgstr "Протсессори KOffice Word"
 msgid "Copyright 1998-%1, The Words Team"
 msgstr "(c) 1998-2003, Камандаи KWord"
 
-#: part/KWAboutData.h:45
-#, kde-format
-msgid "Pierre Ducroquet"
-msgstr ""
-
 #: part/KWAboutData.h:45 part/KWAboutData.h:46
 #, kde-format
 msgid "Co maintainer"
+msgstr ""
+
+#: part/KWAboutData.h:45
+#, kde-format
+msgid "Pierre Ducroquet"
 msgstr ""
 
 #: part/KWAboutData.h:46
@@ -1107,15 +1147,15 @@ msgstr ""
 msgid "C. Boemann"
 msgstr ""
 
-#: part/KWAboutData.h:47
-#, kde-format
-msgid "Sebastian Sauer"
-msgstr ""
-
 #: part/KWAboutData.h:47 part/KWAboutData.h:48 part/KWAboutData.h:49
 #: part/KWAboutData.h:51
 #, kde-format
 msgid "Everything"
+msgstr ""
+
+#: part/KWAboutData.h:47
+#, kde-format
+msgid "Sebastian Sauer"
 msgstr ""
 
 #: part/KWAboutData.h:48
@@ -1129,24 +1169,19 @@ msgid "Pierre Stirnweiss"
 msgstr ""
 
 #: part/KWAboutData.h:50
-#, kde-format
-msgid "Inge Wallin"
-msgstr ""
-
-#: part/KWAboutData.h:50
 #, fuzzy, kde-format
 #| msgid "&Formatting Characters"
 msgid "Formatting stuff"
 msgstr "&Муҳаррири ҳарфҳо"
 
+#: part/KWAboutData.h:50
+#, kde-format
+msgid "Inge Wallin"
+msgstr ""
+
 #: part/KWAboutData.h:51
 #, kde-format
 msgid "Thorsten Zachmann"
-msgstr ""
-
-#: part/KWAboutData.h:52
-#, kde-format
-msgid "Matus Uzak"
 msgstr ""
 
 #: part/KWAboutData.h:52 part/KWAboutData.h:58 part/KWAboutData.h:59
@@ -1158,14 +1193,19 @@ msgstr ""
 msgid "Filter"
 msgstr "&Филтр дар:"
 
-#: part/KWAboutData.h:53
+#: part/KWAboutData.h:52
 #, kde-format
-msgid "Pavol Korinek"
+msgid "Matus Uzak"
 msgstr ""
 
 #: part/KWAboutData.h:53
 #, kde-format
 msgid "Layout and Painting"
+msgstr ""
+
+#: part/KWAboutData.h:53
+#, kde-format
+msgid "Pavol Korinek"
 msgstr ""
 
 #: part/KWAboutData.h:54
@@ -1193,12 +1233,12 @@ msgstr "Сарлавҳа"
 
 #: part/KWAboutData.h:56
 #, kde-format
-msgid "Smit Patel"
+msgid "Bibliography"
 msgstr ""
 
 #: part/KWAboutData.h:56
 #, kde-format
-msgid "Bibliography"
+msgid "Smit Patel"
 msgstr ""
 
 #: part/KWAboutData.h:57
@@ -1283,13 +1323,13 @@ msgstr ""
 
 #: part/KWAboutData.h:71
 #, kde-format
-msgid "Ulrich Kuettler"
-msgstr ""
+msgid "KFormula"
+msgstr "KФормула"
 
 #: part/KWAboutData.h:71
 #, kde-format
-msgid "KFormula"
-msgstr "KФормула"
+msgid "Ulrich Kuettler"
+msgstr ""
 
 #: part/KWAboutData.h:72
 #, kde-format
@@ -2164,29 +2204,6 @@ msgstr "Мондани саҳифа"
 #~ msgstr "Нав..."
 
 #, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set Page Style"
-#~ msgstr "&Саҳифа"
-
-#, fuzzy
-#~| msgid "Insert Page"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Page Style"
-#~ msgstr "Мондани саҳифа"
-
-#, fuzzy
-#~| msgid "Frame Properties"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Page Properties"
-#~ msgstr "Хосиятҳои чорчӯба"
-
-#, fuzzy
-#~| msgid "Create Text Frame"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Create shape"
-#~ msgstr "Сохтани чорчӯбаи матн "
-
-#, fuzzy
 #~| msgid "Frame is inline"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Baseline"
@@ -2307,12 +2324,6 @@ msgstr "Мондани саҳифа"
 #~ msgstr "Алоқаи матн ва чорчӯба"
 
 #, fuzzy
-#~| msgid "Frame Properties"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change Shape Properties"
-#~ msgstr "Хосиятҳои чорчӯба"
-
-#, fuzzy
 #~| msgid "Columns"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Columns"
@@ -2334,11 +2345,6 @@ msgstr "Мондани саҳифа"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Delete"
 #~ msgstr "&Нест кардан"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change Page Style"
-#~ msgstr "&Саҳифа"
 
 #, fuzzy
 #~ msgctxt "(qtundo-format)"
