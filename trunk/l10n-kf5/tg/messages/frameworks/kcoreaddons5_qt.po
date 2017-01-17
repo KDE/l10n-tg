@@ -632,9 +632,7 @@ msgstr "%1 сония"
 #| msgid_plural "%1 milliseconds"
 msgctxt "KFormat|"
 msgid "%n millisecond(s)"
-msgid_plural "%n millisecond(s)"
-msgstr[0] "%1 миллисония"
-msgstr[1] "%1 миллисония"
+msgstr "%1 миллисония"
 
 #. @item:intext %n is a whole number
 #: lib/util/kformatprivate.cpp:300
@@ -643,9 +641,7 @@ msgstr[1] "%1 миллисония"
 #| msgid "%1 days"
 msgctxt "KFormat|"
 msgid "%n day(s)"
-msgid_plural "%n day(s)"
-msgstr[0] "%1 рӯз"
-msgstr[1] "%1 рӯз"
+msgstr "%1 рӯз"
 
 #. @item:intext %n is a whole number
 #: lib/util/kformatprivate.cpp:305
@@ -654,9 +650,7 @@ msgstr[1] "%1 рӯз"
 #| msgid "%1 hours"
 msgctxt "KFormat|"
 msgid "%n hour(s)"
-msgid_plural "%n hour(s)"
-msgstr[0] "%1 соат"
-msgstr[1] "%1 соат"
+msgstr "%1 соат"
 
 #. @item:intext %n is a whole number
 #: lib/util/kformatprivate.cpp:310
@@ -665,9 +659,7 @@ msgstr[1] "%1 соат"
 #| msgid "%1 minutes"
 msgctxt "KFormat|"
 msgid "%n minute(s)"
-msgid_plural "%n minute(s)"
-msgstr[0] "%1 дақиқа"
-msgstr[1] "%1 дақиқа"
+msgstr "%1 дақиқа"
 
 #. @item:intext %n is a whole number
 #: lib/util/kformatprivate.cpp:315
@@ -676,9 +668,7 @@ msgstr[1] "%1 дақиқа"
 #| msgid "%1 seconds"
 msgctxt "KFormat|"
 msgid "%n second(s)"
-msgid_plural "%n second(s)"
-msgstr[0] "%1 сония"
-msgstr[1] "%1 сония"
+msgstr "%1 сония"
 
 #. @item:intext days and hours. This uses the previous item:intext messages. If this does not fit the grammar of your language please contact the i18n team to solve the problem
 #. ----------
@@ -697,43 +687,136 @@ msgctxt "KFormat|"
 msgid "%1 and %2"
 msgstr "%1 ва %2"
 
-#: lib/util/kformatprivate.cpp:372
+#: lib/util/kformatprivate.cpp:366
+#, fuzzy
+#| msgid "Invalid item."
+msgctxt ""
+"KFormat|used when a relative date string can't be generated because the date "
+"is invalid"
+msgid "Invalid date"
+msgstr "Чизи нодуруст."
+
+#: lib/util/kformatprivate.cpp:376
 msgctxt "KFormat|"
 msgid "Tomorrow"
 msgstr ""
 
-#: lib/util/kformatprivate.cpp:374
+#: lib/util/kformatprivate.cpp:378
 #, fuzzy
 #| msgid "Today"
 msgctxt "KFormat|"
 msgid "Today"
 msgstr "Имрӯз"
 
-#: lib/util/kformatprivate.cpp:376
+#: lib/util/kformatprivate.cpp:380
 #, fuzzy
 #| msgid "Yesterday"
 msgctxt "KFormat|"
 msgid "Yesterday"
 msgstr "Дирӯз"
 
-#: lib/util/kformatprivate.cpp:383
-#, fuzzy, qt-format
-#| msgctxt "@option last week"
-#| msgid "Last Week"
-msgctxt "KFormat|"
-msgid "Last %1"
-msgstr "Ҳафтаи гузашта"
+#: lib/util/kformatprivate.cpp:386
+#, fuzzy
+#| msgctxt "@option last month"
+#| msgid "Last Month"
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Monday"
+msgstr "Моҳи гузашта"
 
 #: lib/util/kformatprivate.cpp:388
-#, fuzzy, qt-format
-#| msgctxt "Opposite to Back"
-#| msgid "Next"
-msgctxt "KFormat|"
-msgid "Next %1"
-msgstr "Навбатӣ"
+#, fuzzy
+#| msgid "Tuesday"
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Tuesday"
+msgstr "Сешанбе"
+
+#: lib/util/kformatprivate.cpp:390
+#, fuzzy
+#| msgid "Wednesday"
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Wednesday"
+msgstr "Чоршанбе"
+
+#: lib/util/kformatprivate.cpp:392
+#, fuzzy
+#| msgid "Thursday"
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Thursday"
+msgstr "Панҷшанбе"
+
+#: lib/util/kformatprivate.cpp:394
+#, fuzzy
+#| msgid "Friday"
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Friday"
+msgstr "Ҷумъа"
+
+#: lib/util/kformatprivate.cpp:396
+#, fuzzy
+#| msgid "Saturday"
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Saturday"
+msgstr "Шанбе"
+
+#: lib/util/kformatprivate.cpp:398
+#, fuzzy
+#| msgid "Sunday"
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Sunday"
+msgstr "Якшанбе"
+
+#: lib/util/kformatprivate.cpp:403
+#, fuzzy
+#| msgctxt "@option next month"
+#| msgid "Next Month"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Monday"
+msgstr "Моҳи оянда"
+
+#: lib/util/kformatprivate.cpp:405
+#, fuzzy
+#| msgid "Tuesday"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Tuesday"
+msgstr "Сешанбе"
+
+#: lib/util/kformatprivate.cpp:407
+#, fuzzy
+#| msgid "Wednesday"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Wednesday"
+msgstr "Чоршанбе"
+
+#: lib/util/kformatprivate.cpp:409
+#, fuzzy
+#| msgid "Thursday"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Thursday"
+msgstr "Панҷшанбе"
+
+#: lib/util/kformatprivate.cpp:411
+#, fuzzy
+#| msgid "Friday"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Friday"
+msgstr "Ҷумъа"
+
+#: lib/util/kformatprivate.cpp:413
+#, fuzzy
+#| msgid "Saturday"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Saturday"
+msgstr "Шанбе"
+
+#: lib/util/kformatprivate.cpp:415
+#, fuzzy
+#| msgid "Sunday"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Sunday"
+msgstr "Якшанбе"
 
 #. relative datetime with %1 result of formatReleativeDate() and %2 the formatted time If this does not fit the grammar of your language please contact the i18n team to solve the problem
-#: lib/util/kformatprivate.cpp:402
+#: lib/util/kformatprivate.cpp:430
 #, fuzzy, qt-format
 #| msgctxt ""
 #| "%1 is 'the slot asked for foo arguments', %2 is 'but there are only bar "
@@ -742,6 +825,20 @@ msgstr "Навбатӣ"
 msgctxt "KFormat|"
 msgid "%1, %2"
 msgstr "%1 и %2."
+
+#, fuzzy
+#~| msgctxt "@option last week"
+#~| msgid "Last Week"
+#~ msgctxt "KFormat|"
+#~ msgid "Last %1"
+#~ msgstr "Ҳафтаи гузашта"
+
+#, fuzzy
+#~| msgctxt "Opposite to Back"
+#~| msgid "Next"
+#~ msgctxt "KFormat|"
+#~ msgid "Next %1"
+#~ msgstr "Навбатӣ"
 
 #, fuzzy
 #~ msgctxt "KPluginLoader|"
@@ -6537,10 +6634,6 @@ msgstr "%1 и %2."
 #~ msgid "Next Year"
 #~ msgstr "Соли оянда"
 
-#~ msgctxt "@option next month"
-#~ msgid "Next Month"
-#~ msgstr "Моҳи оянда"
-
 #~ msgctxt "@option next week"
 #~ msgid "Next Week"
 #~ msgstr "Ҳафтаи оянда"
@@ -6552,10 +6645,6 @@ msgstr "%1 и %2."
 #~ msgctxt "@option yesterday"
 #~ msgid "Yesterday"
 #~ msgstr "Дирӯз"
-
-#~ msgctxt "@option last month"
-#~ msgid "Last Month"
-#~ msgstr "Моҳи гузашта"
 
 #~ msgctxt "@option last year"
 #~ msgid "Last Year"
@@ -8882,9 +8971,6 @@ msgstr "%1 и %2."
 #~ msgid "Installing"
 #~ msgstr "Установка"
 
-#~ msgid "Invalid item."
-#~ msgstr "Чизи нодуруст."
-
 #, fuzzy
 #~ msgid "Possibly bad download link"
 #~ msgstr "Ошибка создания символической ссылки"
@@ -10419,24 +10505,6 @@ msgstr "%1 и %2."
 
 #~ msgid "Monday"
 #~ msgstr "Душанбе"
-
-#~ msgid "Tuesday"
-#~ msgstr "Сешанбе"
-
-#~ msgid "Wednesday"
-#~ msgstr "Чоршанбе"
-
-#~ msgid "Thursday"
-#~ msgstr "Панҷшанбе"
-
-#~ msgid "Friday"
-#~ msgstr "Ҷумъа"
-
-#~ msgid "Saturday"
-#~ msgstr "Шанбе"
-
-#~ msgid "Sunday"
-#~ msgstr "Якшанбе"
 
 #~ msgctxt "Indian National month 1 - ShortNamePossessive"
 #~ msgid "of Cha"
