@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-06-06 03:07+0200\n"
+"POT-Creation-Date: 2017-07-12 06:56+0200\n"
 "PO-Revision-Date: 2005-09-17 12:47+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -176,7 +176,7 @@ msgstr "Inline OpenPGP (deprecated)"
 msgid "OpenPGP/MIME"
 msgstr "OpenPGP/MIME"
 
-#: kleo/enum.cpp:67 ui/keyselectioncombo.cpp:197
+#: kleo/enum.cpp:67 ui/keyselectioncombo.cpp:198
 #, kde-format
 msgid "S/MIME"
 msgstr "S/MIME"
@@ -243,29 +243,39 @@ msgctxt "no specific preference"
 msgid "<none>"
 msgstr "<нест>"
 
-#: kleo/keyfiltermanager.cpp:84
+#: kleo/keyfiltermanager.cpp:85
 #, kde-format
 msgid "All Certificates"
 msgstr ""
 
-#: kleo/keyfiltermanager.cpp:99
+#: kleo/keyfiltermanager.cpp:100
 #, kde-format
 msgid "My Certificates"
 msgstr ""
 
-#: kleo/keyfiltermanager.cpp:117
+#: kleo/keyfiltermanager.cpp:118
 #, kde-format
 msgid "Trusted Certificates"
 msgstr ""
 
-#: kleo/keyfiltermanager.cpp:134
+#: kleo/keyfiltermanager.cpp:135
 #, kde-format
 msgid "Fully Trusted Certificates"
 msgstr ""
 
-#: kleo/keyfiltermanager.cpp:151
+#: kleo/keyfiltermanager.cpp:152
 #, kde-format
 msgid "Other Certificates"
+msgstr ""
+
+#: kleo/keyfiltermanager.cpp:166
+#, kde-format
+msgid "VS-compliant Certificates"
+msgstr ""
+
+#: kleo/keyfiltermanager.cpp:184
+#, kde-format
+msgid "Not validated Certificates"
 msgstr ""
 
 #: ui/auditlogviewer.cpp:49
@@ -308,13 +318,13 @@ msgstr ""
 msgid "&Reset"
 msgstr "&Аз нав сар додан"
 
-#: ui/cryptoconfigmodule.cpp:159
+#: ui/cryptoconfigmodule.cpp:160
 #, fuzzy, kde-format
 #| msgid "Encryption keys:"
 msgid "GpgConf Error"
 msgstr "Калиди рамзгузоӣ:"
 
-#: ui/cryptoconfigmodule.cpp:215
+#: ui/cryptoconfigmodule.cpp:216
 #, kde-format
 msgid ""
 "The gpgconf tool used to provide the information for this dialog does not "
@@ -322,7 +332,7 @@ msgid ""
 "\"%1\" on the command line for more information."
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:489
+#: ui/cryptoconfigmodule.cpp:496
 #, kde-format
 msgctxt ""
 "Translate this to 'yes' or 'no' (use the English words!) depending on "
@@ -334,70 +344,70 @@ msgctxt ""
 msgid "yes"
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:539
+#: ui/cryptoconfigmodule.cpp:546
 #, kde-format
 msgid "0 - None"
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:540
+#: ui/cryptoconfigmodule.cpp:547
 #, kde-format
 msgid "1 - Basic"
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:541
+#: ui/cryptoconfigmodule.cpp:548
 #, kde-format
 msgid "2 - Verbose"
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:542
+#: ui/cryptoconfigmodule.cpp:549
 #, kde-format
 msgid "3 - More Verbose"
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:543
+#: ui/cryptoconfigmodule.cpp:550
 #, kde-format
 msgid "4 - All"
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:552
+#: ui/cryptoconfigmodule.cpp:559
 #, kde-format
 msgid "Set the debugging level to"
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:780
+#: ui/cryptoconfigmodule.cpp:787
 #, kde-format
 msgid "Show..."
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:780 ui/cryptoconfigmodule.cpp:869
+#: ui/cryptoconfigmodule.cpp:787 ui/cryptoconfigmodule.cpp:876
 #, kde-format
 msgid "Edit..."
 msgstr "Таъғир додан..."
 
-#: ui/cryptoconfigmodule.cpp:834
+#: ui/cryptoconfigmodule.cpp:841
 #, kde-format
 msgid "Configure LDAP Servers"
 msgstr "Танзимоти сервери LDAP"
 
-#: ui/cryptoconfigmodule.cpp:855
+#: ui/cryptoconfigmodule.cpp:862
 #, fuzzy, kde-format
 #| msgid "No server configured yet"
 msgid "None configured"
 msgstr "Ягон сервер танзим карда нашудааст"
 
-#: ui/cryptoconfigmodule.cpp:857
+#: ui/cryptoconfigmodule.cpp:864
 #, fuzzy, kde-format
 msgid "1 server configured"
 msgid_plural "%1 servers configured"
 msgstr[0] "Танзими %1 сервери"
 msgstr[1] "Танзими %1 серверҳо"
 
-#: ui/cryptoconfigmodule.cpp:872
+#: ui/cryptoconfigmodule.cpp:879
 #, kde-format
 msgid "Use keyserver at"
 msgstr ""
 
-#: ui/cryptoconfigmodule.cpp:961
+#: ui/cryptoconfigmodule.cpp:968
 #, fuzzy, kde-format
 #| msgid "Configure LDAP Servers"
 msgid "Configure Keyservers"
@@ -785,8 +795,8 @@ msgstr "Калиди OpenPGP ё S/MIME-ро интихоб кунед."
 
 #: ui/keyselectioncombo.cpp:195
 #, kde-format
-msgctxt "Name <email> (type, created: date)"
-msgid "%1 (%2, created: %3)"
+msgctxt "Name <email> (validity, type, created: date)"
+msgid "%1 (%2, %3, created: %4)"
 msgstr ""
 
 #: ui/keyselectioncombo.cpp:196
@@ -795,12 +805,12 @@ msgctxt "Name <email>"
 msgid "%1 <%2>"
 msgstr ""
 
-#: ui/keyselectioncombo.cpp:197
+#: ui/keyselectioncombo.cpp:198
 #, kde-format
 msgid "OpenPGP"
 msgstr "OpenPGP"
 
-#: ui/keyselectioncombo.cpp:346
+#: ui/keyselectioncombo.cpp:347
 #, fuzzy, kde-format
 #| msgid "Fetching keys..."
 msgid "Loading keys ..."
