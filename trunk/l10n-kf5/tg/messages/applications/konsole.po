@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-11-23 02:52+0100\n"
+"POT-Creation-Date: 2017-12-15 03:05+0100\n"
 "PO-Revision-Date: 2010-01-29 22:30+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik\n"
@@ -602,40 +602,50 @@ msgstr "&Азқайдгирии ҳама"
 msgid "Edit Profile"
 msgstr "Таҳрири профил"
 
-#: EditProfileDialog.cpp:153
+#: EditProfileDialog.cpp:180
 #, kde-format
 msgid "<p>Each profile must have a name before it can be saved into disk.</p>"
 msgstr ""
 
-#: EditProfileDialog.cpp:186
+#: EditProfileDialog.cpp:188
+#, fuzzy, kde-format
+#| msgid ""
+#| "A file with this name already exists.\n"
+#| "Do you want to overwrite it?"
+msgid "<p>A profile with this name already exists.</p>"
+msgstr ""
+"Файл катӣ ҳамин ном аллакай будан.\n"
+"Шумо мехоед ин аз сари нав навиштан?"
+
+#: EditProfileDialog.cpp:222
 #, kde-format
 msgid "Editing profile: %2"
 msgid_plural "Editing %1 profiles: %2"
 msgstr[0] ""
 msgstr[1] ""
 
-#: EditProfileDialog.cpp:191
+#: EditProfileDialog.cpp:227
 #, kde-format
 msgid "Edit Profile \"%1\""
 msgstr "Таҳрири профили \"%1\""
 
-#: EditProfileDialog.cpp:273
+#: EditProfileDialog.cpp:309
 #, fuzzy, kde-format
 #| msgid "Profile name:"
 msgid "Profile name is empty."
 msgstr "Номи профил:"
 
-#: EditProfileDialog.cpp:344
+#: EditProfileDialog.cpp:380
 #, kde-format
 msgid "Edit Environment"
 msgstr "Изменить переменные среды"
 
-#: EditProfileDialog.cpp:345
+#: EditProfileDialog.cpp:381
 #, kde-format
 msgid "One environment variable per line"
 msgstr ""
 
-#: EditProfileDialog.cpp:376
+#: EditProfileDialog.cpp:412
 #, kde-format
 msgctxt "Unit of time"
 msgid " second"
@@ -643,18 +653,18 @@ msgid_plural " seconds"
 msgstr[0] ""
 msgstr[1] ""
 
-#: EditProfileDialog.cpp:453
+#: EditProfileDialog.cpp:489
 #, kde-format
 msgid "Select Initial Directory"
 msgstr "Выбор начального каталога"
 
-#: EditProfileDialog.cpp:675
+#: EditProfileDialog.cpp:711
 #, fuzzy, kde-format
 #| msgid "%1"
 msgid "%1"
 msgstr "%1"
 
-#: EditProfileDialog.cpp:888
+#: EditProfileDialog.cpp:924
 #, kde-format
 msgid ""
 "This color scheme uses a transparent background which does not appear to be "
@@ -663,35 +673,35 @@ msgstr ""
 "В выбранной цветовой схеме фон должен быть прозрачным, но данная система не "
 "настроена соответствующим образом"
 
-#: EditProfileDialog.cpp:894
+#: EditProfileDialog.cpp:930
 #, kde-format
 msgid ""
 "Konsole was started before desktop effects were enabled. You need to restart "
 "Konsole to see transparent background."
 msgstr ""
 
-#: EditProfileDialog.cpp:1008 EditProfileDialog.cpp:1020
+#: EditProfileDialog.cpp:1044 EditProfileDialog.cpp:1056
 #, kde-format
 msgid "New Key Binding List"
 msgstr "Новый список привязок клавиш"
 
-#: EditProfileDialog.cpp:1010
+#: EditProfileDialog.cpp:1046
 #, kde-format
 msgid "Edit Key Binding List"
 msgstr "Изменение списка привязок клавиш"
 
-#: EditProfileDialog.cpp:1439
+#: EditProfileDialog.cpp:1475
 #, fuzzy, kde-format
 #| msgid "Select All"
 msgid "Select Any Font"
 msgstr "Интихоби ҳама"
 
-#: EditProfileDialog.cpp:1442
+#: EditProfileDialog.cpp:1478
 #, kde-format
 msgid "Select Fixed Width Font"
 msgstr ""
 
-#: EditProfileDialog.cpp:1494
+#: EditProfileDialog.cpp:1530
 #, kde-format
 msgid "AaZz09..."
 msgstr ""
@@ -2302,7 +2312,7 @@ msgstr "Нест кардани профил"
 msgid "Konsole does not have permission to save this profile to %1"
 msgstr ""
 
-#: ProfileManager.cpp:369
+#: ProfileManager.cpp:371
 #, fuzzy, kde-format
 #| msgid "Edit Profile \"%1\""
 msgctxt "The default name of a profile"
@@ -3148,46 +3158,39 @@ msgid ""
 "a change to how these are handled.</body></html>"
 msgstr ""
 
-#: settings/ProfileSettings.cpp:147
-#, fuzzy, kde-format
-#| msgid "Save to current profile"
-msgctxt "@info:tooltip"
-msgid "Click to rename profile"
-msgstr "Сохранить текущий профиль"
-
-#: settings/ProfileSettings.cpp:156
+#: settings/ProfileSettings.cpp:149
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Click to toggle status"
 msgstr ""
 
-#: settings/ProfileSettings.cpp:162
+#: settings/ProfileSettings.cpp:155
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Double click to change shortcut"
 msgstr ""
 
-#: settings/ProfileSettings.cpp:185
+#: settings/ProfileSettings.cpp:187
 #, fuzzy, kde-format
 #| msgid "Name"
 msgctxt "@title:column Profile label"
 msgid "Name"
 msgstr "Ном"
 
-#: settings/ProfileSettings.cpp:186
+#: settings/ProfileSettings.cpp:188
 #, kde-format
 msgctxt "@title:column Display profile in file menu"
 msgid "Show"
 msgstr ""
 
-#: settings/ProfileSettings.cpp:187
+#: settings/ProfileSettings.cpp:189
 #, fuzzy, kde-format
 #| msgid "Shortcut"
 msgctxt "@title:column Profile shortcut text"
 msgid "Shortcut"
 msgstr "Тугмаҳои тез"
 
-#: settings/ProfileSettings.cpp:300
+#: settings/ProfileSettings.cpp:302
 #, fuzzy, kde-format
 #| msgid "New Profile..."
 msgctxt "@item This will be used as part of the file name"
@@ -3635,6 +3638,12 @@ msgstr ""
 #, kde-format
 msgid "&Stop"
 msgstr "&Исто"
+
+#, fuzzy
+#~| msgid "Save to current profile"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Click to rename profile"
+#~ msgstr "Сохранить текущий профиль"
 
 #, fuzzy
 #~| msgid "Konsole"
@@ -4445,13 +4454,6 @@ msgstr "&Исто"
 #~ msgstr ""
 #~ "Ибтидои таърих расид.\n"
 #~ "Аз сар давом кунондан?"
-
-#~ msgid ""
-#~ "A file with this name already exists.\n"
-#~ "Do you want to overwrite it?"
-#~ msgstr ""
-#~ "Файл катӣ ҳамин ном аллакай будан.\n"
-#~ "Шумо мехоед ин аз сари нав навиштан?"
 
 #~ msgid "Unable to write to file."
 #~ msgstr "Навиштан дар файл намондан"
