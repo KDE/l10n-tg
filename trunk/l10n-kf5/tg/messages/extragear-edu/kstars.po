@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-12-15 03:06+0100\n"
+"POT-Creation-Date: 2017-12-16 03:07+0100\n"
 "PO-Revision-Date: 2005-11-06 23:03+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -1846,7 +1846,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, instFPS)
 #. i18n: ectx: property (text), widget (QLabel, avgFPS)
 #: dialogs/details_data.ui:384 ekos/capture/capture.ui:1734
-#: ekos/focus/focus.ui:455 ekos/guide/guide.ui:230 indi/streamform.ui:168
+#: ekos/focus/focus.ui:455 ekos/guide/guide.ui:212 indi/streamform.ui:168
 #: indi/streamform.ui:196
 #, kde-format
 msgid "--"
@@ -3965,12 +3965,12 @@ msgid ""
 "from the astrometry options."
 msgstr ""
 
-#: ekos/align/align.cpp:306
+#: ekos/align/align.cpp:306 ekos/guide/guide.cpp:323
 #, fuzzy, kde-format
 msgid "dRA (arcsec)"
 msgstr "<i>arcmin</i>"
 
-#: ekos/align/align.cpp:307
+#: ekos/align/align.cpp:307 ekos/guide/guide.cpp:324
 #, fuzzy, kde-format
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Parsons"
@@ -4130,8 +4130,8 @@ msgstr "Ҷустуҷӯи объект"
 msgid "Mount does not support syncing."
 msgstr "Даргоҳи телескоп:"
 
-#: ekos/align/align.cpp:1961 ekos/align/align.cpp:1968 ekos/guide/guide.cpp:577
-#: ekos/guide/guide.cpp:584 ekos/profileeditor.cpp:120
+#: ekos/align/align.cpp:1961 ekos/align/align.cpp:1968 ekos/guide/guide.cpp:738
+#: ekos/guide/guide.cpp:745 ekos/profileeditor.cpp:120
 #: ekos/profileeditor.cpp:127
 #, kde-format
 msgctxt "F-Number, Focal Length, Aperture"
@@ -4149,7 +4149,7 @@ msgid ""
 msgstr ""
 
 #: ekos/align/align.cpp:2319 ekos/capture/capture.cpp:1374
-#: ekos/focus/focus.cpp:810 ekos/guide/guide.cpp:689
+#: ekos/focus/focus.cpp:810 ekos/guide/guide.cpp:850
 #, fuzzy, kde-format
 #| msgid "Connection"
 msgid "Error: Lost connection to CCD."
@@ -4328,8 +4328,9 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: ekos/align/align.cpp:3177 ekos/capture/capture.cpp:1592
-#: ekos/ekosmanager.cpp:1624 ekos/focus/focus.cpp:2123 ekos/guide/guide.cpp:962
-#: ekos/mount/mount.cpp:488 ekos/scheduler/scheduler.cpp:251
+#: ekos/ekosmanager.cpp:1624 ekos/focus/focus.cpp:2123
+#: ekos/guide/guide.cpp:1123 ekos/mount/mount.cpp:488
+#: ekos/scheduler/scheduler.cpp:251
 #, kde-format
 msgctxt "log entry; %1 is the date, %2 is the text"
 msgid "%1 %2"
@@ -4764,7 +4765,7 @@ msgstr "Якҷо кардани каталог..."
 #. i18n: ectx: property (text), widget (QPushButton, stopB)
 #. i18n: ectx: property (text), widget (QPushButton, stopFocusB)
 #: ekos/align/align.ui:93 ekos/capture/capture.cpp:2278 ekos/focus/focus.ui:190
-#: ekos/guide/guide.ui:163 ekos/guide/internalguide/guider.cpp:220
+#: ekos/guide/guide.ui:145 ekos/guide/internalguide/guider.cpp:220
 #: ekos/guide/internalguide/guider.cpp:238
 #: ekos/guide/internalguide/guider.cpp:310
 #: ekos/guide/internalguide/rcalibration.cpp:379
@@ -4979,7 +4980,7 @@ msgid "Rot:"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, FOVScopeCombo)
-#: ekos/align/align.ui:435 ekos/guide/guide.ui:370
+#: ekos/align/align.ui:435 ekos/guide/guide.ui:352
 #, kde-format
 msgid ""
 "<html><head/><body><p>Select which telescope to use when performing Field of "
@@ -4987,14 +4988,14 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, FOVScopeCombo)
-#: ekos/align/align.ui:439 ekos/guide/guide.ui:374
+#: ekos/align/align.ui:439 ekos/guide/guide.ui:356
 #, fuzzy, kde-format
 #| msgid "Setup Telescopes"
 msgid "Primary Scope"
 msgstr "Телескопро танзим кунед"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, FOVScopeCombo)
-#: ekos/align/align.ui:444 ekos/guide/guide.ui:379
+#: ekos/align/align.ui:444 ekos/guide/guide.ui:361
 #, fuzzy, kde-format
 #| msgid "Setup Telescopes"
 msgid "Guide Scope"
@@ -5023,7 +5024,7 @@ msgstr "Рӯзи Дароз"
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: ekos/align/align.ui:543 ekos/focus/focus.ui:240 ekos/guide/guide.ui:219
+#: ekos/align/align.ui:543 ekos/focus/focus.ui:240 ekos/guide/guide.ui:201
 #, kde-format
 msgid "Exp:"
 msgstr ""
@@ -5038,7 +5039,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, alignDarkFrameCheck)
 #. i18n: ectx: property (text), widget (QCheckBox, darkFrameCheck)
-#: ekos/align/align.ui:553 ekos/guide/guide.ui:110
+#: ekos/align/align.ui:553 ekos/guide/guide.ui:92
 #, kde-format
 msgid "Dark"
 msgstr ""
@@ -5053,13 +5054,13 @@ msgstr "Оптикавӣ"
 
 #. i18n: ectx: property (text), widget (QLabel, label_18)
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: ekos/align/align.ui:570 ekos/focus/focus.ui:317 ekos/guide/guide.ui:241
+#: ekos/align/align.ui:570 ekos/focus/focus.ui:317 ekos/guide/guide.ui:223
 #, kde-format
 msgid "Bin:"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, showFITSViewerB)
-#: ekos/align/align.ui:589 ekos/focus/focus.ui:305 ekos/guide/guide.ui:87
+#: ekos/align/align.ui:589 ekos/focus/focus.ui:305 ekos/guide/guide.ui:69
 #, fuzzy, kde-format
 msgid "Show in FITS Viewer"
 msgstr "Хуш омадед ба KStars FITS Editor."
@@ -5180,7 +5181,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: ekos/align/align.ui:840 ekos/align/opsastrometry.ui:448
-#: ekos/guide/guide.ui:967 ekos/guide/internalguide/guider.ui:707
+#: ekos/guide/guide.ui:983 ekos/guide/internalguide/guider.ui:707
 #: ekos/mount/mount.ui:240 ekos/scheduler/scheduler.ui:122
 #, fuzzy, kde-format
 msgid "RA"
@@ -5192,7 +5193,7 @@ msgstr "RA:"
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: ekos/align/align.ui:848 ekos/align/opsastrometry.ui:593
-#: ekos/guide/guide.ui:920 ekos/guide/internalguide/guider.ui:693
+#: ekos/guide/guide.ui:936 ekos/guide/internalguide/guider.ui:693
 #: ekos/mount/mount.ui:257 ekos/scheduler/scheduler.ui:136
 #, fuzzy, kde-format
 #| msgctxt "Region/state name (optional, rarely needs a translation)"
@@ -5333,7 +5334,7 @@ msgstr ""
 #. i18n: ectx: attribute (title), widget (QWidget, captureTab)
 #: ekos/align/align.ui:1207 ekos/align/align.ui:1369 ekos/align/align.ui:1491
 #: ekos/auxiliary/opslogs.ui:328 ekos/ekosmanager.ui:470
-#: ekos/focus/focus.ui:160 ekos/guide/guide.ui:68
+#: ekos/focus/focus.ui:160 ekos/guide/guide.ui:50
 #: ekos/guide/internalguide/guider.ui:213 ekos/opsekos.ui:249
 #: options/opsadvanced.ui:332
 #, fuzzy, kde-format
@@ -7731,7 +7732,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, guideB)
 #. i18n: ectx: property (text), widget (QCheckBox, guideStepCheck)
 #: ekos/auxiliary/opslogs.ui:97 ekos/ekosmanager.cpp:1981
-#: ekos/ekosmanager.ui:1217 ekos/guide/guide.cpp:295 ekos/guide/guide.ui:153
+#: ekos/ekosmanager.ui:1217 ekos/guide/guide.cpp:358 ekos/guide/guide.ui:135
 #: ekos/scheduler/scheduler.ui:353 fitsviewer/fitsviewer.cpp:362
 #: options/opsadvanced.ui:397
 #, fuzzy, kde-format
@@ -8999,7 +9000,7 @@ msgid "Dark & Flat frames automatic calibration options"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, calibrationB)
-#: ekos/capture/capture.ui:613 ekos/guide/guide.cpp:292
+#: ekos/capture/capture.ui:613 ekos/guide/guide.cpp:355
 #: ekos/guide/internalguide/rcalibration.cpp:47
 #, fuzzy, kde-format
 #| msgctxt "City name (optional, probably does not need a translation)"
@@ -9673,8 +9674,8 @@ msgstr "&Нуқта"
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #. i18n: ectx: property (text), widget (QCheckBox, eastControlCheck)
 #. i18n: ectx: property (text), widget (QCheckBox, northControlCheck)
-#: ekos/capture/rotatorsettings.ui:313 ekos/guide/guide.ui:942
-#: ekos/guide/guide.ui:982 kstarslite/qml/indi/modules/MotionControl.qml:305
+#: ekos/capture/rotatorsettings.ui:313 ekos/guide/guide.ui:958
+#: ekos/guide/guide.ui:998 kstarslite/qml/indi/modules/MotionControl.qml:305
 #, kde-format, kde-kuit-format
 msgid "+"
 msgstr ""
@@ -10272,7 +10273,7 @@ msgstr "Тасвир додани INDI..."
 #. i18n: ectx: property (text), widget (QPushButton, connectB)
 #. i18n: ectx: property (text), widget (QPushButton, externalConnectB)
 #. i18n: ectx: property (text), widget (QPushButton, connectHostB)
-#: ekos/ekosmanager.ui:401 ekos/guide/guide.ui:319 indi/drivermanager.ui:361
+#: ekos/ekosmanager.ui:401 ekos/guide/guide.ui:301 indi/drivermanager.ui:361
 #: kstarslite/qml/indi/INDIControlPanel.qml:218
 #, kde-format, kde-kuit-format
 msgid "Connect"
@@ -10281,7 +10282,7 @@ msgstr "Васл шудан"
 #. i18n: ectx: property (text), widget (QPushButton, disconnectB)
 #. i18n: ectx: property (text), widget (QPushButton, externalDisconnectB)
 #. i18n: ectx: property (text), widget (QPushButton, disconnectHostB)
-#: ekos/ekosmanager.ui:417 ekos/guide/guide.ui:306 indi/drivermanager.ui:368
+#: ekos/ekosmanager.ui:417 ekos/guide/guide.ui:288 indi/drivermanager.ui:368
 #: kstarslite/qml/indi/INDIControlPanel.qml:218
 #, kde-format, kde-kuit-format
 msgid "Disconnect"
@@ -10736,7 +10737,7 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QLabel, label_7)
 #. i18n: ectx: property (toolTip), widget (QLabel, gainLabel)
 #. i18n: ectx: property (toolTip), widget (QLabel, label_3)
-#: ekos/focus/focus.ui:237 ekos/focus/focus.ui:336 ekos/guide/guide.ui:216
+#: ekos/focus/focus.ui:237 ekos/focus/focus.ui:336 ekos/guide/guide.ui:198
 #, fuzzy, kde-format
 #| msgid "Pause delay in seconds"
 msgid "Exposure time in seconds"
@@ -10749,7 +10750,7 @@ msgid "Gain:"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, label_8)
-#: ekos/focus/focus.ui:444 ekos/guide/guide.ui:180
+#: ekos/focus/focus.ui:444 ekos/guide/guide.ui:162
 #, kde-format
 msgid "Apply filter to image after capture to enhance it"
 msgstr ""
@@ -11225,78 +11226,78 @@ msgstr ""
 msgid "PHD2: Guiding is already running."
 msgstr "Ҷустуҷӯи объект"
 
-#: ekos/guide/guide.cpp:406 ekos/guide/guide.cpp:2527
+#: ekos/guide/guide.cpp:567 ekos/guide/guide.cpp:2719
 #, kde-format
 msgid "Disabling remote image reception from %1"
 msgstr ""
 
-#: ekos/guide/guide.cpp:413 ekos/guide/guide.cpp:2533
+#: ekos/guide/guide.cpp:574 ekos/guide/guide.cpp:2725
 #, kde-format
 msgid "Enabling remote image reception from %1"
 msgstr ""
 
-#: ekos/guide/guide.cpp:527
+#: ekos/guide/guide.cpp:688
 #, kde-format
 msgid "Connection to the guide CCD is lost."
 msgstr ""
 
-#: ekos/guide/guide.cpp:844
+#: ekos/guide/guide.cpp:1005
 #, fuzzy, kde-format
 #| msgid "Pause delay in seconds"
 msgid "Exposure timeout. Aborting Autoguide."
 msgstr "Як лаҳза дер мондан"
 
-#: ekos/guide/guide.cpp:846
+#: ekos/guide/guide.cpp:1007
 #, fuzzy, kde-format
 #| msgid "Pause delay in seconds"
 msgid "Exposure timeout. Aborting Dithering."
 msgstr "Як лаҳза дер мондан"
 
-#: ekos/guide/guide.cpp:848
+#: ekos/guide/guide.cpp:1009
 #, fuzzy, kde-format
 #| msgid "Pause delay in seconds"
 msgid "Exposure timeout. Aborting Calibration."
 msgstr "Як лаҳза дер мондан"
 
-#: ekos/guide/guide.cpp:854
+#: ekos/guide/guide.cpp:1015
 #, fuzzy, kde-format
 #| msgid "Pause delay in seconds"
 msgid "Exposure timeout. Restarting exposure..."
 msgstr "Як лаҳза дер мондан"
 
-#: ekos/guide/guide.cpp:1026
+#: ekos/guide/guide.cpp:1187
 #, kde-format
 msgid "Lost track of the guide star. Rapid guide aborted."
 msgstr ""
 
-#: ekos/guide/guide.cpp:1057
+#: ekos/guide/guide.cpp:1218
 #, fuzzy, kde-format
 msgid "Dithering failed. Autoguiding aborted."
 msgstr "Ҷустуҷӯи объект"
 
-#: ekos/guide/guide.cpp:1077
+#: ekos/guide/guide.cpp:1238
 #, kde-format
 msgid "The CCD does not support Rapid Guiding. Aborting..."
 msgstr ""
 
-#: ekos/guide/guide.cpp:1340
+#: ekos/guide/guide.cpp:1501
 #, fuzzy, kde-format
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Caliente"
 msgid "Calibration is cleared."
 msgstr "Калиент"
 
-#: ekos/guide/guide.cpp:1356
+#: ekos/guide/guide.cpp:1517
 #, kde-format
 msgid "External guider connected."
 msgstr ""
 
-#: ekos/guide/guide.cpp:1367
+#: ekos/guide/guide.cpp:1528
 #, kde-format
 msgid "External guider disconnected."
 msgstr ""
 
-#: ekos/guide/guide.cpp:1379 ekos/guide/internalguide/rcalibration.cpp:420
+#: ekos/guide/guide.cpp:1540 ekos/guide/internalguide/rcalibration.cpp:420
 #: ekos/guide/internalguide/rcalibration.cpp:448
 #: ekos/guide/internalguide/rcalibration.cpp:669
 #: ekos/guide/internalguide/rcalibration.cpp:821
@@ -11306,90 +11307,90 @@ msgstr ""
 msgid "Calibration completed."
 msgstr "Калиент"
 
-#: ekos/guide/guide.cpp:1397
+#: ekos/guide/guide.cpp:1558
 #, fuzzy, kde-format
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Caliente"
 msgid "Calibration started."
 msgstr "Калиент"
 
-#: ekos/guide/guide.cpp:1403
+#: ekos/guide/guide.cpp:1564
 #, fuzzy, kde-format
 msgid "Guiding resumed."
 msgstr "Ҷустуҷӯи объект"
 
-#: ekos/guide/guide.cpp:1406 ekos/guide/internalguide/guider.cpp:221
+#: ekos/guide/guide.cpp:1567 ekos/guide/internalguide/guider.cpp:221
 #: ekos/guide/internalguide/guider.cpp:239
 #: ekos/guide/internalguide/guider.cpp:311
 #, fuzzy, kde-format
 msgid "Autoguiding started."
 msgstr "Ҷустуҷӯи объект"
 
-#: ekos/guide/guide.cpp:1418
+#: ekos/guide/guide.cpp:1581
 #, fuzzy, kde-format
 msgid "Autoguiding aborted."
 msgstr "Ҷустуҷӯи объект"
 
-#: ekos/guide/guide.cpp:1423
+#: ekos/guide/guide.cpp:1586
 #, fuzzy, kde-format
 msgid "Guiding suspended."
 msgstr "Ҷустуҷӯи объект"
 
-#: ekos/guide/guide.cpp:1427
+#: ekos/guide/guide.cpp:1590
 #, fuzzy, kde-format
 msgid "Dithering in progress."
 msgstr "Бухтаи Гуз"
 
-#: ekos/guide/guide.cpp:1432
+#: ekos/guide/guide.cpp:1595
 #, kde-format
 msgid "Post-dither settling for %1 second..."
 msgid_plural "Post-dither settling for %1 seconds..."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ekos/guide/guide.cpp:1437
+#: ekos/guide/guide.cpp:1600
 #, fuzzy, kde-format
 #| msgctxt "Advanced URLs: description or category"
 #| msgid "Other"
 msgid "Dithering failed!"
 msgstr "Дигар"
 
-#: ekos/guide/guide.cpp:1448
+#: ekos/guide/guide.cpp:1611
 #, fuzzy, kde-format
 msgid "Dithering completed successfully."
 msgstr "Координатҳои Харитагӣ"
 
-#: ekos/guide/guide.cpp:1502
+#: ekos/guide/guide.cpp:1665
 #, kde-format
 msgid "Exposure failed. Restarting exposure..."
 msgstr ""
 
-#: ekos/guide/guide.cpp:1582
+#: ekos/guide/guide.cpp:1745
 #, kde-format
 msgid "Cannot change guider type while active."
 msgstr ""
 
-#: ekos/guide/guide.cpp:1633
+#: ekos/guide/guide.cpp:1796
 #, fuzzy, kde-format
 msgid "Select guide camera."
 msgstr "Интихобкардагиро гузоред"
 
-#: ekos/guide/guide.cpp:1669 ekos/guide/guide.cpp:1704
+#: ekos/guide/guide.cpp:1832 ekos/guide/guide.cpp:1867
 #, kde-format
 msgid "Select a camera to disable remote streaming."
 msgstr ""
 
-#: ekos/guide/guide.cpp:1920 ekos/guide/internalguide/guider.cpp:140
+#: ekos/guide/guide.cpp:2083 ekos/guide/internalguide/guider.cpp:140
 #, fuzzy, kde-format
 msgid "P: %1"
 msgstr "Вақти баромад: %1"
 
-#: ekos/guide/guide.cpp:1995
+#: ekos/guide/guide.cpp:2158
 #, kde-format
 msgid "You must stop auto guiding before changing this setting."
 msgstr ""
 
-#: ekos/guide/guide.cpp:2003
+#: ekos/guide/guide.cpp:2166
 #, kde-format
 msgid ""
 "Rapid Guiding is enabled. Guide star will be determined automatically by the "
@@ -11397,12 +11398,12 @@ msgid ""
 "in the CCD driver settings."
 msgstr ""
 
-#: ekos/guide/guide.cpp:2006
+#: ekos/guide/guide.cpp:2169
 #, kde-format
 msgid "Rapid Guiding is disabled."
 msgstr ""
 
-#: ekos/guide/guide.cpp:2190
+#: ekos/guide/guide.cpp:2382
 #, kde-format
 msgctxt ""
 "Drift graphics tooltip; %1 is local time; %2 is RA deviation; %3 is DE "
@@ -11412,32 +11413,32 @@ msgid ""
 "tr><tr><td>DE:   </td><td>%3 \"</td></tr></table>"
 msgstr ""
 
-#: ekos/guide/guide.cpp:2307
+#: ekos/guide/guide.cpp:2499
 #, fuzzy, kde-format
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Caliente"
 msgid "Calibration failed to start!"
 msgstr "Калиент"
 
-#: ekos/guide/guide.cpp:2447
+#: ekos/guide/guide.cpp:2639
 #, fuzzy, kde-format
 #| msgid "No object selected."
 msgid "Auto star selected."
 msgstr "Ягон объект интихоб кардагӣ нест."
 
-#: ekos/guide/guide.cpp:2451
+#: ekos/guide/guide.cpp:2643
 #, fuzzy, kde-format
 msgid "Failed to select an auto star."
 msgstr "Тасвирро нигоҳ дашта натавонист:%1 "
 
-#: ekos/guide/guide.cpp:2460
+#: ekos/guide/guide.cpp:2652
 #, fuzzy, kde-format
 msgid "Select a guide star to calibrate."
 msgstr "Интихобкардагиро гузоред"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: property (title), widget (QGroupBox, controlGroup)
-#: ekos/guide/guide.ui:42 ekos/guide/internalguide/guider.ui:657
+#: ekos/guide/guide.ui:24 ekos/guide/internalguide/guider.ui:657
 #, fuzzy, kde-format
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Montreal"
@@ -11445,7 +11446,7 @@ msgid "Control"
 msgstr "Монтреал"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, subFrameCheck)
-#: ekos/guide/guide.ui:97
+#: ekos/guide/guide.ui:79
 #, kde-format
 msgid ""
 "<html><head/><body><p>Subframe the image around the guide star. Before "
@@ -11455,14 +11456,14 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, subFrameCheck)
-#: ekos/guide/guide.ui:100 ekos/guide/internalguide/guider.ui:250
+#: ekos/guide/guide.ui:82 ekos/guide/internalguide/guider.ui:250
 #, fuzzy, kde-format
 #| msgid "Name:"
 msgid "Subframe"
 msgstr "Ном:"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, darkFrameCheck)
-#: ekos/guide/guide.ui:107
+#: ekos/guide/guide.ui:89
 #, kde-format
 msgid ""
 "<html><head/><body><p>Subtract dark frame. If no dark frame is available, a "
@@ -11470,13 +11471,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, loopB)
-#: ekos/guide/guide.ui:117
+#: ekos/guide/guide.ui:99
 #, kde-format
 msgid "Loop"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, clearCalibrationB)
-#: ekos/guide/guide.ui:136
+#: ekos/guide/guide.ui:118
 #, fuzzy, kde-format
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Caliente"
@@ -11484,25 +11485,25 @@ msgid "Clear calibration data."
 msgstr "Калиент"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: ekos/guide/guide.ui:183
+#: ekos/guide/guide.ui:165
 #, kde-format
 msgid "Effects"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, label_2)
-#: ekos/guide/guide.ui:193
+#: ekos/guide/guide.ui:175
 #, kde-format
 msgid "Select which device receives the guiding correction commands."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: ekos/guide/guide.ui:196
+#: ekos/guide/guide.ui:178
 #, kde-format
 msgid "Via:"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, label_5)
-#: ekos/guide/guide.ui:206
+#: ekos/guide/guide.ui:188
 #, kde-format
 msgid ""
 "Guide star tracking box size. Box size must be set in accordance to the "
@@ -11510,13 +11511,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: ekos/guide/guide.ui:209
+#: ekos/guide/guide.ui:191
 #, kde-format
 msgid "Box:"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, label_4)
-#: ekos/guide/guide.ui:238
+#: ekos/guide/guide.ui:220
 #, kde-format
 msgid ""
 "Guide camera binning. It is recommended to set binning to 2x2 or higher."
@@ -11524,71 +11525,71 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: ekos/guide/guide.ui:264 ekos/profileeditor.ui:461
+#: ekos/guide/guide.ui:246 ekos/profileeditor.ui:461
 #, fuzzy, kde-format
 #| msgid "Guides"
 msgid "Guider:"
 msgstr "Равонакунанда"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, boxSizeCombo)
-#: ekos/guide/guide.ui:272
+#: ekos/guide/guide.ui:254
 #, kde-format
 msgid "8"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, boxSizeCombo)
-#: ekos/guide/guide.ui:277
+#: ekos/guide/guide.ui:259
 #, kde-format
 msgid "16"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, boxSizeCombo)
-#: ekos/guide/guide.ui:282
+#: ekos/guide/guide.ui:264
 #, kde-format
 msgid "32"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, boxSizeCombo)
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_GuideRegionAxis)
-#: ekos/guide/guide.ui:287 ekos/guide/opsguide.ui:340
+#: ekos/guide/guide.ui:269 ekos/guide/opsguide.ui:340
 #, kde-format
 msgid "64"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, boxSizeCombo)
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_GuideRegionAxis)
-#: ekos/guide/guide.ui:292 ekos/guide/opsguide.ui:345
+#: ekos/guide/guide.ui:274 ekos/guide/opsguide.ui:345
 #, kde-format
 msgid "128"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, externalDisconnectB)
-#: ekos/guide/guide.ui:303
+#: ekos/guide/guide.ui:285
 #, kde-format
 msgid "Disconnect from external guiding application."
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, externalConnectB)
-#: ekos/guide/guide.ui:316
+#: ekos/guide/guide.ui:298
 #, kde-format
 msgid "Connect to external guiding application."
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, infoGroup)
-#: ekos/guide/guide.ui:331
+#: ekos/guide/guide.ui:313
 #, fuzzy, kde-format
 #| msgid "Setup Telescopes"
 msgid "Guide Info"
 msgstr "Телескопро танзим кунед"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: ekos/guide/guide.ui:357
+#: ekos/guide/guide.ui:339
 #, fuzzy, kde-format
 msgid "Scope:"
 msgstr "&Боздоштан"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, l_3)
-#: ekos/guide/guide.ui:394
+#: ekos/guide/guide.ui:376
 #, kde-format
 msgid ""
 "Mount guiding rate. Find out the guiding rate used by your mount and update "
@@ -11598,26 +11599,26 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, l_3)
-#: ekos/guide/guide.ui:397
+#: ekos/guide/guide.ui:379
 #, fuzzy, kde-format
 #| msgid "Guides"
 msgid "Guiding rate"
 msgstr "Равонакунанда"
 
 #. i18n: ectx: property (toolTip), widget (QDoubleSpinBox, spinBox_GuideRate)
-#: ekos/guide/guide.ui:404
+#: ekos/guide/guide.ui:386
 #, fuzzy, kde-format
 msgid "Mount guiding rate (x15\"/sec)"
 msgstr "Ҷустуҷӯи объект"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, l_RecommendedGain)
-#: ekos/guide/guide.ui:423
+#: ekos/guide/guide.ui:405
 #, kde-format
 msgid "<b>Recommended</b> proportional rate given the selected guiding rate."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, l_5)
-#: ekos/guide/guide.ui:450
+#: ekos/guide/guide.ui:432
 #, fuzzy, kde-format
 #| msgid "Local"
 msgid "Focal"
@@ -11626,13 +11627,13 @@ msgstr "Маҳалли"
 #. i18n: ectx: property (toolTip), widget (QLabel, l_Focal)
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: ekos/guide/guide.ui:457 ekos/mount/mount.ui:79 ekos/mount/mount.ui:123
+#: ekos/guide/guide.ui:439 ekos/mount/mount.ui:79 ekos/mount/mount.ui:123
 #, fuzzy, kde-format
 msgid "Focal Length (mm)"
 msgstr "Рӯзи дароз:"
 
 #. i18n: ectx: property (text), widget (QLabel, l_6)
-#: ekos/guide/guide.ui:479
+#: ekos/guide/guide.ui:461
 #, fuzzy, kde-format
 msgid "Aperture"
 msgstr "Ҳамаи параметрҳо"
@@ -11640,13 +11641,13 @@ msgstr "Ҳамаи параметрҳо"
 #. i18n: ectx: property (toolTip), widget (QLabel, l_Aperture)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: ekos/guide/guide.ui:486 ekos/mount/mount.ui:59 ekos/mount/mount.ui:156
+#: ekos/guide/guide.ui:468 ekos/mount/mount.ui:59 ekos/mount/mount.ui:156
 #, fuzzy, kde-format
 msgid "Aperture (mm)"
 msgstr "Ҳамаи параметрҳо"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, l_7)
-#: ekos/guide/guide.ui:505
+#: ekos/guide/guide.ui:487
 #, fuzzy, kde-format
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Boca Raton"
@@ -11654,95 +11655,95 @@ msgid "Focal Ratio"
 msgstr "Бока Ратон"
 
 #. i18n: ectx: property (text), widget (QLabel, l_7)
-#: ekos/guide/guide.ui:508 ekos/guide/internalguide/guider.ui:434
+#: ekos/guide/guide.ui:490 ekos/guide/internalguide/guider.ui:434
 #, kde-format
 msgid "F/D"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, l_8)
-#: ekos/guide/guide.ui:531
+#: ekos/guide/guide.ui:513
 #, fuzzy, kde-format
 #| msgid "No FOV"
 msgid "FOV"
 msgstr "FOV-и нест"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, l_FOV)
-#: ekos/guide/guide.ui:538
+#: ekos/guide/guide.ui:520
 #, fuzzy, kde-format
 #| msgid "Field of view (arcmin):"
 msgid "Field of View (arcmin)"
 msgstr "Фазои тасаввурот (arcдақ):"
 
 #. i18n: ectx: property (text), widget (QLabel, l_FOV)
-#: ekos/guide/guide.ui:547 ekos/guide/internalguide/guider.ui:470
+#: ekos/guide/guide.ui:529 ekos/guide/internalguide/guider.ui:470
 #, kde-format
 msgid "YYxYY"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, l_17)
-#: ekos/guide/guide.ui:571
+#: ekos/guide/guide.ui:553
 #, fuzzy, kde-format
 msgid "Pulse Length (ms)"
 msgstr "Рӯзи дароз:"
 
 #. i18n: ectx: property (text), widget (QLabel, l_16)
-#: ekos/guide/guide.ui:578
+#: ekos/guide/guide.ui:560
 #, fuzzy, kde-format
 msgid "Guiding Delta \""
 msgstr "Майлон"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, l_PulseRA)
-#: ekos/guide/guide.ui:590
+#: ekos/guide/guide.ui:572
 #, kde-format
 msgid "Generated RA pulse"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, l_PulseDEC)
-#: ekos/guide/guide.ui:609
+#: ekos/guide/guide.ui:591
 #, kde-format
 msgid "Generated DEC pulse"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, l_DeltaRA)
-#: ekos/guide/guide.ui:635
+#: ekos/guide/guide.ui:617
 #, kde-format
 msgid "Immediate Guiding RA deviation in arcseconds"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, l_DeltaDEC)
-#: ekos/guide/guide.ui:654
+#: ekos/guide/guide.ui:636
 #, kde-format
 msgid "Immediate Guiding DEC deviation in arcseconds"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, l_20)
-#: ekos/guide/guide.ui:677
+#: ekos/guide/guide.ui:659
 #, fuzzy, kde-format
 #| msgid "Guides"
 msgid "RA Guiding RMS error"
 msgstr "Равонакунанда"
 
 #. i18n: ectx: property (text), widget (QLabel, l_20)
-#: ekos/guide/guide.ui:680
+#: ekos/guide/guide.ui:662
 #, kde-format
 msgid "RA RMS\""
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, l_21)
-#: ekos/guide/guide.ui:710
+#: ekos/guide/guide.ui:692
 #, fuzzy, kde-format
 #| msgid "Guides"
 msgid "DEC Guiding RMS error"
 msgstr "Равонакунанда"
 
 #. i18n: ectx: property (text), widget (QLabel, l_21)
-#: ekos/guide/guide.ui:713
+#: ekos/guide/guide.ui:695
 #, kde-format
 msgid "DE RMS\""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: ekos/guide/guide.ui:741
+#: ekos/guide/guide.ui:723
 #, fuzzy, kde-format
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Montreal"
@@ -11750,79 +11751,85 @@ msgid "<b>Total RMS\"</b>"
 msgstr "Монтреал"
 
 #. i18n: ectx: property (text), widget (QLabel, l_TotalRMS)
-#: ekos/guide/guide.ui:760
+#: ekos/guide/guide.ui:742
 #, fuzzy, kde-format
 #| msgid "xi"
 msgid "xxx"
 msgstr "xi"
 
 #. i18n: ectx: property (title), widget (QGroupBox, driftGraphicsGroup)
-#: ekos/guide/guide.ui:809
+#: ekos/guide/guide.ui:793
 #, fuzzy, kde-format
 msgid "Drift Graphics"
 msgstr "Мутахассиси география"
 
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: ekos/guide/guide.ui:886
+#, fuzzy, kde-format
+msgid "Control parameters"
+msgstr "Ҳамаи параметрҳо"
+
 #. i18n: ectx: property (title), widget (QGroupBox, controlGroup)
-#: ekos/guide/guide.ui:888
+#: ekos/guide/guide.ui:904
 #, fuzzy, kde-format
 msgid "Control Parameters"
 msgstr "Ҳамаи параметрҳо"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, checkBox_DirDEC)
-#: ekos/guide/guide.ui:914
+#: ekos/guide/guide.ui:930
 #, fuzzy, kde-format
 #| msgid "Declination:"
 msgid "Guide Declination Axis"
 msgstr "Майлон:"
 
 #. i18n: ectx: property (text), widget (QLabel, l_9)
-#: ekos/guide/guide.ui:927 ekos/guide/internalguide/guider.ui:700
+#: ekos/guide/guide.ui:943 ekos/guide/internalguide/guider.ui:700
 #, fuzzy, kde-format
 #| msgid "Final declination:"
 msgid "Enable directions"
 msgstr "Гузориши майлон:"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, eastControlCheck)
-#: ekos/guide/guide.ui:939
+#: ekos/guide/guide.ui:955
 #, kde-format
 msgid "East Direction Guiding"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, westControlCheck)
-#: ekos/guide/guide.ui:949
+#: ekos/guide/guide.ui:965
 #, kde-format
 msgid "West Direction Guiding"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, westControlCheck)
 #. i18n: ectx: property (text), widget (QCheckBox, southControlCheck)
-#: ekos/guide/guide.ui:952 ekos/guide/guide.ui:992
+#: ekos/guide/guide.ui:968 ekos/guide/guide.ui:1008
 #: kstarslite/qml/indi/modules/MotionControl.qml:275
 #, kde-format, kde-kuit-format
 msgid "-"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, checkBox_DirRA)
-#: ekos/guide/guide.ui:961
+#: ekos/guide/guide.ui:977
 #, fuzzy, kde-format
 msgid "Guide Right Ascention Axis"
 msgstr "Тулӯъи рост:"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, northControlCheck)
-#: ekos/guide/guide.ui:979
+#: ekos/guide/guide.ui:995
 #, kde-format
 msgid "North Direction Guiding"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, southControlCheck)
-#: ekos/guide/guide.ui:989
+#: ekos/guide/guide.ui:1005
 #, fuzzy, kde-format
 #| msgid "Guides"
 msgid "South Direction Guiding"
 msgstr "Равонакунанда"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, swapCheck)
-#: ekos/guide/guide.ui:1001 ekos/guide/internalguide/guider.ui:683
+#: ekos/guide/guide.ui:1017 ekos/guide/internalguide/guider.ui:683
 #, kde-format
 msgid ""
 "Swap DEC direction pulses. This value is determined automatically from the "
@@ -11830,13 +11837,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, swapCheck)
-#: ekos/guide/guide.ui:1007 ekos/guide/internalguide/guider.ui:686
+#: ekos/guide/guide.ui:1023 ekos/guide/internalguide/guider.ui:686
 #, kde-format
 msgid "Swap"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, l_11)
-#: ekos/guide/guide.ui:1028
+#: ekos/guide/guide.ui:1044
 #, kde-format
 msgid ""
 "<html><head/><body><p>Proportional term accounts for present values of the "
@@ -11845,13 +11852,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, l_11)
-#: ekos/guide/guide.ui:1031 ekos/guide/internalguide/guider.ui:728
+#: ekos/guide/guide.ui:1047 ekos/guide/internalguide/guider.ui:728
 #, kde-format
 msgid "Proportional gain"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, l_12)
-#: ekos/guide/guide.ui:1058
+#: ekos/guide/guide.ui:1074
 #, kde-format
 msgid ""
 "<html><head/><body><p>Integral term accounts for past values of the error. "
@@ -11861,13 +11868,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, l_12)
-#: ekos/guide/guide.ui:1061 ekos/guide/internalguide/guider.ui:755
+#: ekos/guide/guide.ui:1077 ekos/guide/internalguide/guider.ui:755
 #, fuzzy, kde-format
 msgid "Integral gain"
 msgstr "Орегон"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, l_13)
-#: ekos/guide/guide.ui:1091
+#: ekos/guide/guide.ui:1107
 #, kde-format
 msgid ""
 "Derivative term accounts for possible future trends of the error, based on "
@@ -11875,13 +11882,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, l_13)
-#: ekos/guide/guide.ui:1094 ekos/guide/internalguide/guider.ui:782
+#: ekos/guide/guide.ui:1110 ekos/guide/internalguide/guider.ui:782
 #, kde-format
 msgid "Derivative gain"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, l_14)
-#: ekos/guide/guide.ui:1127
+#: ekos/guide/guide.ui:1143
 #, kde-format
 msgid ""
 "<html><head/><body><p>Maximum guide pulse that is generated by the guider "
@@ -11889,13 +11896,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, l_14)
-#: ekos/guide/guide.ui:1130 ekos/guide/internalguide/guider.ui:809
+#: ekos/guide/guide.ui:1146 ekos/guide/internalguide/guider.ui:809
 #, kde-format
 msgid "Maximum pulse"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, l_15)
-#: ekos/guide/guide.ui:1151
+#: ekos/guide/guide.ui:1167
 #, kde-format
 msgid ""
 "<html><head/><body><p>Minimum guide pulse that is sent to the mount. If the "
@@ -11904,20 +11911,20 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, l_15)
-#: ekos/guide/guide.ui:1154 ekos/guide/internalguide/guider.ui:830
+#: ekos/guide/guide.ui:1170 ekos/guide/internalguide/guider.ui:830
 #, kde-format
 msgid "Minimum pulse"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, l_23)
-#: ekos/guide/guide.ui:1178 ekos/guide/internalguide/guider.ui:851
+#: ekos/guide/guide.ui:1194 ekos/guide/internalguide/guider.ui:851
 #, fuzzy, kde-format
 #| msgid "Limits"
 msgid "AO Limits"
 msgstr "Сарҳад"
 
 #. i18n: ectx: property (toolTip), widget (QDoubleSpinBox, spinBox_AOLimit)
-#: ekos/guide/guide.ui:1188 ekos/guide/internalguide/guider.ui:861
+#: ekos/guide/guide.ui:1204 ekos/guide/internalguide/guider.ui:861
 #, kde-format
 msgid ""
 "Maximum deviation to correct for using Adaptive Optics unit. If the guiding "
@@ -11925,12 +11932,18 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, l_24)
-#: ekos/guide/guide.ui:1210 ekos/guide/internalguide/guider.ui:880
+#: ekos/guide/guide.ui:1226 ekos/guide/internalguide/guider.ui:880
 #, fuzzy, kde-format
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Parsons"
 msgid "arcsecs"
 msgstr "Парсон"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: ekos/guide/guide.ui:1239
+#, fuzzy, kde-format
+msgid "Drift Plot"
+msgstr "Крествуд"
 
 #. i18n: ectx: property (text), widget (QPushButton, pushButton_StartStop)
 #: ekos/guide/internalguide/guider.cpp:267
