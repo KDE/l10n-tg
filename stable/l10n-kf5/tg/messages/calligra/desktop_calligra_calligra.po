@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop_koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-01-27 04:49+0000\n"
+"POT-Creation-Date: 2018-01-28 04:54+0000\n"
 "PO-Revision-Date: 2008-06-10 01:27+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik Language\n"
@@ -126,6 +126,8 @@ msgstr "Ҳуҷҷати Нав KWord:"
 #: filters/words/docx/import/okularDocx_calligra.desktop:3
 #: filters/words/msword-odf/okularApplication_doc_calligra.desktop:4
 #: filters/words/msword-odf/okularDoc_calligra.desktop:3
+#: filters/words/rtf/import/okularApplication_rtf_calligra.desktop:4
+#: filters/words/rtf/import/okularRtf_calligra.desktop:3
 #: filters/words/wordperfect/import/okularApplication_wpd_calligra.desktop:4
 #: filters/words/wordperfect/import/okularWpd_calligra.desktop:3
 msgctxt "Name"
@@ -138,6 +140,7 @@ msgstr ""
 #: filters/stage/pptx/okularApplication_pptx_calligra.desktop:47
 #: filters/words/docx/import/okularApplication_docx_calligra.desktop:47
 #: filters/words/msword-odf/okularApplication_doc_calligra.desktop:47
+#: filters/words/rtf/import/okularApplication_rtf_calligra.desktop:47
 #: filters/words/wordperfect/import/okularApplication_wpd_calligra.desktop:47
 #, fuzzy
 msgctxt "GenericName"
@@ -701,7 +704,7 @@ msgctxt "Comment"
 msgid "Creates a portrait-oriented document with no stencils loaded."
 msgstr "Сохтани ҳуҷҷатро бе бор кардани гардаҳо."
 
-#: gemini/calligragemini.desktop:3
+#: gemini/org.kde.calligragemini.desktop:3
 #, fuzzy
 #| msgctxt "Name"
 #| msgid "Color Filters"
@@ -709,7 +712,7 @@ msgctxt "Name"
 msgid "Calligra Gemini"
 msgstr "Филтрҳои ранг"
 
-#: gemini/calligragemini.desktop:29
+#: gemini/org.kde.calligragemini.desktop:29
 #, fuzzy
 #| msgctxt "Comment"
 #| msgid "New KPresenter presentation document:"
@@ -7856,13 +7859,13 @@ msgid "Happy Face"
 msgstr ""
 
 #: karbon/templates/basic/empty.desktop:5
-#: plan/workpackage/templates/Simple/Empty.desktop:5
+#: plan/src/workpackage/templates/Simple/Empty.desktop:5
 msgctxt "Name"
 msgid "Empty Document"
 msgstr "Ҳуҷҷати холӣ"
 
 #: karbon/templates/basic/empty.desktop:63
-#: plan/workpackage/templates/Simple/Empty.desktop:63
+#: plan/src/workpackage/templates/Simple/Empty.desktop:63
 msgctxt "Comment"
 msgid "Creates an empty document"
 msgstr "Ҳуҷҷати холӣ эҷод мекунад"
@@ -8028,18 +8031,18 @@ msgctxt "Comment"
 msgid "Definition of a text-editing plugin"
 msgstr ""
 
-#: plan/libs/kernel/plan_schedulerplugin.desktop:2
+#: plan/src/libs/kernel/plan_schedulerplugin.desktop:2
 #, fuzzy
 msgctxt "Name"
 msgid "Plan Scheduler Plugin"
 msgstr "Дарҷ кардани KOffice"
 
-#: plan/libs/kernel/plan_schedulerplugin.desktop:37
+#: plan/src/libs/kernel/plan_schedulerplugin.desktop:37
 msgctxt "Comment"
 msgid "A plugin that calculates a project schedule"
 msgstr ""
 
-#: plan/org.kde.calligraplan.desktop:2
+#: plan/src/org.kde.calligraplan.desktop:2
 #, fuzzy
 #| msgctxt "Name"
 #| msgid "Plain"
@@ -8047,13 +8050,13 @@ msgctxt "Name"
 msgid "Plan"
 msgstr "Матни оддӣ"
 
-#: plan/org.kde.calligraplan.desktop:39
-#: plan/workpackage/org.kde.calligraplanwork.desktop:34
+#: plan/src/org.kde.calligraplan.desktop:39
+#: plan/src/workpackage/org.kde.calligraplanwork.desktop:34
 msgctxt "GenericName"
 msgid "Project Management"
 msgstr "Идоракунии лоиҳа"
 
-#: plan/planpart.desktop:2 plan/workpackage/planworkpart.desktop:2
+#: plan/src/planpart.desktop:2 plan/src/workpackage/planworkpart.desktop:2
 #, fuzzy
 #| msgctxt "Name"
 #| msgid "KOffice Project Management Component"
@@ -8061,7 +8064,7 @@ msgctxt "Name"
 msgid "Calligra Project Management Component"
 msgstr "Қисми идоракунии лоиҳаи KOffice"
 
-#: plan/plan_viewplugin.desktop:4
+#: plan/src/plan_viewplugin.desktop:4
 #, fuzzy
 #| msgctxt "Comment"
 #| msgid "Core functionality module for Karbon"
@@ -8069,7 +8072,7 @@ msgctxt "Comment"
 msgid "GUI functionality for Plan"
 msgstr "Модули коркарди система барои Karbon"
 
-#: plan/plugins/filters/icalendar/export/plan_icalendar_export.desktop:6
+#: plan/src/plugins/filters/icalendar/export/plan_icalendar_export.desktop:6
 #, fuzzy
 #| msgctxt "Name"
 #| msgid "Kivio Image Export Filter"
@@ -8077,7 +8080,7 @@ msgctxt "Name"
 msgid "Plan iCalendar Export Filter"
 msgstr "Филтри содиротии Kivio Image"
 
-#: plan/plugins/filters/kplato/import/plan_kplato_import.desktop:3
+#: plan/src/plugins/filters/kplato/import/plan_kplato_import.desktop:3
 #, fuzzy
 #| msgctxt "Name"
 #| msgid "Karbon Kontour Import Filter"
@@ -8085,39 +8088,57 @@ msgctxt "Name"
 msgid "Plan KPlato Import Filter"
 msgstr "Филтри воридотии Karbon Kontour"
 
-#: plan/plugins/schedulers/rcps/planrcpsscheduler.desktop:6
+#: plan/src/plugins/schedulers/rcps/planrcpsscheduler.desktop:6
 msgctxt "Name"
 msgid "RCPS Scheduler"
 msgstr ""
 
-#: plan/plugins/schedulers/rcps/planrcpsscheduler.desktop:40
+#: plan/src/plugins/schedulers/rcps/planrcpsscheduler.desktop:40
 msgctxt "Comment"
 msgid "Genetics based Resource Constrained Project Scheduler"
 msgstr ""
 
-#: plan/plugins/schedulers/tj/plantjscheduler.desktop:6
+#: plan/src/plugins/schedulers/tj/plantjscheduler.desktop:6
 #, fuzzy
 msgctxt "Name"
 msgid "TJ Scheduler"
 msgstr "Дарҷ кардани KOffice"
 
-#: plan/plugins/schedulers/tj/plantjscheduler.desktop:38
+#: plan/src/plugins/schedulers/tj/plantjscheduler.desktop:38
 msgctxt "Comment"
 msgid "The TaskJuggler scheduler"
 msgstr ""
 
-#: plan/plugins/scripting/planscripting.desktop:2
+#: plan/src/plugins/scripting/planscripting.desktop:2
 #, fuzzy
 msgctxt "Name"
 msgid "Plan Scripting Plugin"
 msgstr "Дарҷ кардани KOffice"
 
-#: plan/templates/Simple/8HourDay-40HourWeek.desktop:4
+#: plan/src/servicetypes/calligraplan_filter.desktop:4
+#: servicetypes/calligra_filter.desktop:4
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "Color Filters"
+msgctxt "Comment"
+msgid "Calligra Filter"
+msgstr "Филтрҳои ранг"
+
+#: plan/src/servicetypes/calligraplan_part.desktop:4
+#: servicetypes/calligra_part.desktop:4
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "KOffice Project Management Component"
+msgctxt "Comment"
+msgid "Calligra Component"
+msgstr "Қисми идоракунии лоиҳаи KOffice"
+
+#: plan/src/templates/Simple/8HourDay-40HourWeek.desktop:4
 msgctxt "Name"
 msgid "8 hour day, 40 hour week"
 msgstr ""
 
-#: plan/templates/Simple/Basicproject.desktop:2
+#: plan/src/templates/Simple/Basicproject.desktop:2
 #, fuzzy
 #| msgctxt "Name"
 #| msgid "Basic Widgets"
@@ -8125,23 +8146,23 @@ msgctxt "Name"
 msgid "Basic project"
 msgstr "Виджетҳои асосӣ"
 
-#: plan/templates/Simple/.directory:2
-#: plan/workpackage/templates/Simple/.directory:2
+#: plan/src/templates/Simple/.directory:2
+#: plan/src/workpackage/templates/Simple/.directory:2
 msgctxt "Name"
 msgid "Simple"
 msgstr "Оддӣ"
 
-#: plan/templates/Simple/Plain.desktop:4
+#: plan/src/templates/Simple/Plain.desktop:4
 msgctxt "Name"
 msgid "Plain"
 msgstr "Матни оддӣ"
 
-#: plan/workpackage/org.kde.calligraplanwork.desktop:2
+#: plan/src/workpackage/org.kde.calligraplanwork.desktop:2
 msgctxt "Name"
 msgid "Plan WorkPackage Handler"
 msgstr ""
 
-#: plan/workpackage/org.kde.calligraplanwork.desktop:95
+#: plan/src/workpackage/org.kde.calligraplanwork.desktop:95
 msgctxt "Comment"
 msgid "Work Package handler for the Plan project planning tool"
 msgstr ""
@@ -8340,22 +8361,6 @@ msgstr ""
 msgctxt "Name"
 msgid "Calligra Deferred Loading Plugin"
 msgstr ""
-
-#: servicetypes/calligra_filter.desktop:4
-#, fuzzy
-#| msgctxt "Name"
-#| msgid "Color Filters"
-msgctxt "Comment"
-msgid "Calligra Filter"
-msgstr "Филтрҳои ранг"
-
-#: servicetypes/calligra_part.desktop:4
-#, fuzzy
-#| msgctxt "Name"
-#| msgid "KOffice Project Management Component"
-msgctxt "Comment"
-msgid "Calligra Component"
-msgstr "Қисми идоракунии лоиҳаи KOffice"
 
 #: sheets/data/templates/Business/BalanceSheet.desktop:4
 msgctxt "Name"
