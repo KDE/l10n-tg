@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krdc\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-06-01 03:37+0200\n"
+"POT-Creation-Date: 2018-07-10 03:40+0200\n"
 "PO-Revision-Date: 2004-09-08 20:34+0000\n"
 "Last-Translator: Abrorova <H_Abrorova@rambler.ru>\n"
 "Language-Team: Tajik\n"
@@ -1267,7 +1267,7 @@ msgstr "Калиҳои махсусро ворид кунед."
 msgid "Please enter the username you would like to use for login."
 msgstr ""
 
-#: nx/nxview.cpp:140 rdp/rdpview.cpp:140 vnc/vncview.cpp:291
+#: nx/nxview.cpp:140 rdp/rdpview.cpp:140 vnc/vncview.cpp:340
 #, kde-format
 msgid "Access to the system requires a password."
 msgstr "Барои дастрасӣ ба система гузарвожа дархоста мешавад."
@@ -1719,13 +1719,13 @@ msgstr "Пайвастшавӣ"
 msgid "Reconnecting."
 msgstr "Пайвастшавӣ"
 
-#: vnc/vncclientthread.cpp:567
+#: vnc/vncclientthread.cpp:562
 #, fuzzy, kde-format
 #| msgid "Connect"
 msgid "Reconnected."
 msgstr "Пайвастшавӣ"
 
-#: vnc/vncclientthread.cpp:569
+#: vnc/vncclientthread.cpp:564
 #, fuzzy, kde-format
 #| msgid "Connection"
 msgid "Connected."
@@ -1735,7 +1735,7 @@ msgstr "Пайвастшавӣ"
 #: vnc/vncpreferences.ui:23
 #, fuzzy, kde-format
 #| msgid "Connection &type:"
-msgid "Connection type:"
+msgid "Connection &type:"
 msgstr "&Навъи пайвастшавӣ:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_Quality)
@@ -1783,15 +1783,73 @@ msgstr "Сифати Паст (Модем, ISDN, Интернети суст)"
 msgid "Scale to Size:"
 msgstr "Андоза"
 
-#: vnc/vncview.cpp:292
+#. i18n: ectx: property (text), widget (QCheckBox, use_ssh_tunnel)
+#: vnc/vncpreferences.ui:204
+#, kde-format
+msgid "Connect via SSH tunnel"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, ssh_groupBox)
+#: vnc/vncpreferences.ui:211
+#, kde-format
+msgid "SSH tunnel options"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, use_loopback)
+#: vnc/vncpreferences.ui:217
+#, kde-format
+msgid "Tunnel via loopback address"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: vnc/vncpreferences.ui:224
+#, kde-format
+msgid "Port:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: vnc/vncpreferences.ui:244
+#, fuzzy, kde-format
+msgid "User name:"
+msgstr "Калиҳои махсусро ворид кунед."
+
+#: vnc/vncsshtunnelthread.cpp:108
+#, fuzzy, kde-format
+#| msgid "Connection"
+msgid "Error connecting to %1: %2"
+msgstr "Пайвастшавӣ"
+
+#: vnc/vncsshtunnelthread.cpp:128
+#, fuzzy, kde-format
+#| msgid "Authenticating..."
+msgid "Error authenticating with password: %1"
+msgstr "Аслшиносӣ..."
+
+#: vnc/vncsshtunnelthread.cpp:134 vnc/vncsshtunnelthread.cpp:152
+#: vnc/vncsshtunnelthread.cpp:158
+#, kde-format
+msgid "Error creating tunnel socket"
+msgstr ""
+
+#: vnc/vncview.cpp:341
 #, fuzzy, kde-format
 #| msgid "Authentication Failure"
 msgid "Authentication failed. Please try again."
 msgstr "Хатогии Аслшиносӣ"
 
-#: vnc/vncview.cpp:317 vnc/vncview.cpp:319
+#: vnc/vncview.cpp:369
+#, kde-format
+msgid "Please enter the SSH password."
+msgstr ""
+
+#: vnc/vncview.cpp:391 vnc/vncview.cpp:393
 #, kde-format
 msgid "VNC failure"
+msgstr ""
+
+#: vnc/vncview.cpp:402 vnc/vncview.cpp:404
+#, kde-format
+msgid "SSH Tunnel failure"
 msgstr ""
 
 #: vnc/vncviewfactory.cpp:65
