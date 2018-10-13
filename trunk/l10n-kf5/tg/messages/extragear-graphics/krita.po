@@ -44,7 +44,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-10-12 03:52+0200\n"
+"POT-Creation-Date: 2018-10-13 03:42+0200\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -7165,6 +7165,12 @@ msgctxt "action"
 msgid "Workspaces"
 msgstr "Ранги ҷамъкунанда"
 
+#: krita/main.cc:390 libs/ui/KisApplication.cpp:365
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Krita: Warning"
+msgstr "Krita"
+
 #: krita/main.cc:391
 #, kde-format
 msgid ""
@@ -8881,8 +8887,8 @@ msgid "Processing"
 msgstr "&Андозаҳои Pixel:"
 
 #: libs/image/kis_psd_layer_style.cpp:99
-#: libs/ui/KisApplicationArguments.cpp:334 libs/ui/KisMainWindow.cpp:1153
-#: libs/ui/KisMainWindow.cpp:1447 libs/ui/KisMainWindow.cpp:1466
+#: libs/ui/KisApplicationArguments.cpp:334 libs/ui/KisMainWindow.cpp:1140
+#: libs/ui/KisMainWindow.cpp:1434 libs/ui/KisMainWindow.cpp:1453
 #: plugins/impex/libkra/kis_kra_saver.cpp:89
 #, fuzzy, kde-format
 msgid "Unnamed"
@@ -11138,7 +11144,7 @@ msgid "Numerical"
 msgstr "Амудӣ:"
 
 #: libs/ui/dialogs/kis_dlg_import_image_sequence.cpp:125
-#: libs/ui/KisMainWindow.cpp:947
+#: libs/ui/KisMainWindow.cpp:934
 #, fuzzy, kde-format
 msgid "Import Images"
 msgstr "Воридоти Тасвир"
@@ -11184,7 +11190,7 @@ msgctxt "@title:window"
 msgid "Enter new style name"
 msgstr "Номи гурӯҳ:"
 
-#: libs/ui/dialogs/kis_dlg_layer_style.cpp:252 libs/ui/KisMainWindow.cpp:2215
+#: libs/ui/dialogs/kis_dlg_layer_style.cpp:252 libs/ui/KisMainWindow.cpp:2203
 #, fuzzy, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
@@ -11379,20 +11385,21 @@ msgstr "Интихоб"
 #: libs/ui/dialogs/KisSessionManagerDialog.cpp:131
 #: libs/ui/input/kis_tablet_debugger.cpp:103 libs/ui/kis_filter_manager.cc:226
 #: libs/ui/kis_filter_manager.cc:235 libs/ui/kis_layer_manager.cc:343
-#: libs/ui/kis_layer_manager.cc:908 libs/ui/kis_node_manager.cpp:1128
-#: libs/ui/KisApplication.cpp:741 libs/ui/KisApplication.cpp:744
-#: libs/ui/KisApplication.cpp:766 libs/ui/KisApplication.cpp:792
-#: libs/ui/KisApplication.cpp:813 libs/ui/KisDocument.cpp:625
-#: libs/ui/KisDocument.cpp:1104 libs/ui/KisDocument.cpp:1186
-#: libs/ui/KisDocument.cpp:1227 libs/ui/KisDocument.cpp:1235
-#: libs/ui/KisMainWindow.cpp:866 libs/ui/KisMainWindow.cpp:970
-#: libs/ui/KisMainWindow.cpp:983 libs/ui/KisMainWindow.cpp:1043
-#: libs/ui/KisMainWindow.cpp:1822 libs/ui/KisMainWindow.cpp:1852
-#: libs/ui/KisMainWindow.cpp:1927 libs/ui/KisMainWindow.cpp:1939
-#: libs/ui/KisPart.cpp:482 libs/ui/KisPart.cpp:485
-#: libs/ui/KisReferenceImage.cpp:138 libs/ui/KisRemoteFileFetcher.cpp:54
-#: libs/ui/KisTemplateCreateDia.cpp:297 libs/ui/KisTemplateCreateDia.cpp:403
-#: libs/ui/KisView.cpp:733 libs/ui/opengl/kis_opengl_canvas2.cpp:344
+#: libs/ui/kis_layer_manager.cc:908 libs/ui/kis_node_manager.cpp:1075
+#: libs/ui/kis_node_manager.cpp:1131 libs/ui/KisApplication.cpp:742
+#: libs/ui/KisApplication.cpp:745 libs/ui/KisApplication.cpp:767
+#: libs/ui/KisApplication.cpp:793 libs/ui/KisApplication.cpp:814
+#: libs/ui/KisDocument.cpp:625 libs/ui/KisDocument.cpp:1104
+#: libs/ui/KisDocument.cpp:1186 libs/ui/KisDocument.cpp:1227
+#: libs/ui/KisDocument.cpp:1235 libs/ui/KisMainWindow.cpp:853
+#: libs/ui/KisMainWindow.cpp:957 libs/ui/KisMainWindow.cpp:970
+#: libs/ui/KisMainWindow.cpp:1030 libs/ui/KisMainWindow.cpp:1809
+#: libs/ui/KisMainWindow.cpp:1839 libs/ui/KisMainWindow.cpp:1914
+#: libs/ui/KisMainWindow.cpp:1926 libs/ui/KisPart.cpp:482
+#: libs/ui/KisPart.cpp:485 libs/ui/KisReferenceImage.cpp:138
+#: libs/ui/KisRemoteFileFetcher.cpp:54 libs/ui/KisTemplateCreateDia.cpp:297
+#: libs/ui/KisTemplateCreateDia.cpp:403 libs/ui/KisView.cpp:733
+#: libs/ui/opengl/kis_opengl_canvas2.cpp:344
 #: libs/ui/opengl/kis_opengl_image_textures.cpp:560
 #: libs/ui/widgets/kis_custom_image_widget.cc:276
 #: plugins/assistants/Assistants/kis_assistant_tool.cc:822
@@ -13866,7 +13873,7 @@ msgstr "&Интихоби тоза кардан"
 #. i18n: ectx: property (text), widget (QPushButton, savePresetButton)
 #. i18n: ectx: property (toolTip), widget (QPushButton, bnSaveMask)
 #: libs/ui/forms/wdgpaintopsettings.ui:184
-#: libs/ui/forms/wdgsavebrushpreset.ui:215 libs/ui/KisMainWindow.cpp:830
+#: libs/ui/forms/wdgsavebrushpreset.ui:215 libs/ui/KisMainWindow.cpp:817
 #: libs/ui/widgets/kis_workspace_chooser.cpp:121
 #: plugins/dockers/gamutmask/forms/wdgGamutMaskChooser.ui:210
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:61
@@ -15769,162 +15776,167 @@ msgstr "Ҳосиятҳои Табақа"
 msgid "Mirror View"
 msgstr "Табақа ба Тасвир"
 
-#: libs/ui/kis_node_manager.cpp:448
+#: libs/ui/kis_node_manager.cpp:449
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Move Nodes"
 msgstr "Ҳаракат кардани Интихобот"
 
-#: libs/ui/kis_node_manager.cpp:455
+#: libs/ui/kis_node_manager.cpp:456
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Copy Nodes"
 msgstr "Сабзи нусха бардоштан"
 
-#: libs/ui/kis_node_manager.cpp:462
+#: libs/ui/kis_node_manager.cpp:463
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Add Nodes"
 msgstr "масоҳат"
 
-#: libs/ui/kis_node_manager.cpp:599
+#: libs/ui/kis_node_manager.cpp:600
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Convert to a Selection Mask"
 msgstr "Ҳаракат кардани Интихобот"
 
-#: libs/ui/kis_node_manager.cpp:848
+#: libs/ui/kis_node_manager.cpp:849
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Duplicate Nodes"
 msgstr "Дучанда кардан"
 
-#: libs/ui/kis_node_manager.cpp:871
+#: libs/ui/kis_node_manager.cpp:872
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Raise Nodes"
 msgstr "Ҳаракат кардани Интихобот"
 
-#: libs/ui/kis_node_manager.cpp:878
+#: libs/ui/kis_node_manager.cpp:879
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Lower Nodes"
 msgstr "Ҳаракат кардани Интихобот"
 
-#: libs/ui/kis_node_manager.cpp:896
+#: libs/ui/kis_node_manager.cpp:897
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Remove Nodes"
 msgstr "Ҳаракат кардани Интихобот"
 
-#: libs/ui/kis_node_manager.cpp:912
+#: libs/ui/kis_node_manager.cpp:913
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Mirror Layer X"
 msgstr "Фуровардани Табақа"
 
-#: libs/ui/kis_node_manager.cpp:914
+#: libs/ui/kis_node_manager.cpp:915
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Mirror Mask X"
 msgstr "Фуровардани Табақа"
 
-#: libs/ui/kis_node_manager.cpp:925
+#: libs/ui/kis_node_manager.cpp:926
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Mirror Layer Y"
 msgstr "Фуровардани Табақа"
 
-#: libs/ui/kis_node_manager.cpp:927
+#: libs/ui/kis_node_manager.cpp:928
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Mirror Mask Y"
 msgstr "Фуровардани Табақа"
 
-#: libs/ui/kis_node_manager.cpp:935
+#: libs/ui/kis_node_manager.cpp:936
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Mirror All Layers X"
 msgstr "Фуровардани Табақа"
 
-#: libs/ui/kis_node_manager.cpp:942
+#: libs/ui/kis_node_manager.cpp:943
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Mirror All Layers Y"
 msgstr "Фуровардани Табақа"
 
-#: libs/ui/kis_node_manager.cpp:1044
+#: libs/ui/kis_node_manager.cpp:1045
 #, fuzzy, kde-format
 msgid "Export \"%1\""
 msgstr "Содироти Табақа"
 
-#: libs/ui/kis_node_manager.cpp:1108
+#: libs/ui/kis_node_manager.cpp:1076
+#, fuzzy, kde-format
+msgid "Could not save the layer. %1"
+msgstr "Табақа ба тасвир илова кардан наметавонад."
+
+#: libs/ui/kis_node_manager.cpp:1111
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Export to SVG"
 msgstr "Содироти Табақа"
 
-#: libs/ui/kis_node_manager.cpp:1128
+#: libs/ui/kis_node_manager.cpp:1131
 #, fuzzy, kde-format
 msgid "Could not save to svg: %1"
 msgstr "Табақа ба тасвир илова кардан наметавонад."
 
-#: libs/ui/kis_node_manager.cpp:1148
+#: libs/ui/kis_node_manager.cpp:1151
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Split Alpha into a Mask"
 msgstr "Алфа"
 
-#: libs/ui/kis_node_manager.cpp:1178
+#: libs/ui/kis_node_manager.cpp:1181
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Layer %1 is not editable"
 msgstr "&Андозаи табақа..."
 
-#: libs/ui/kis_node_manager.cpp:1179
+#: libs/ui/kis_node_manager.cpp:1182
 #, kde-format
 msgid ""
 "Cannot write alpha channel of the parent layer \"%1\".\n"
 "The operation will be cancelled."
 msgstr ""
 
-#: libs/ui/kis_node_manager.cpp:1210
+#: libs/ui/kis_node_manager.cpp:1213
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Write Alpha into a Layer"
 msgstr "Сохтани нав %1"
 
-#: libs/ui/kis_node_manager.cpp:1325
+#: libs/ui/kis_node_manager.cpp:1328
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Cut Nodes"
 msgstr "Дучанда кардан"
 
-#: libs/ui/kis_node_manager.cpp:1398
+#: libs/ui/kis_node_manager.cpp:1401
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Quick Group"
 msgstr "Дучанда кардан"
 
-#: libs/ui/kis_node_manager.cpp:1409
+#: libs/ui/kis_node_manager.cpp:1412
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Quick Clipping Group"
 msgstr "Дучанда кардан"
 
-#: libs/ui/kis_node_manager.cpp:1416
+#: libs/ui/kis_node_manager.cpp:1419
 #, fuzzy, kde-format
 msgctxt "default name for a clipping group layer"
 msgid "Clipping Group"
 msgstr "Нест кардани Табақа"
 
-#: libs/ui/kis_node_manager.cpp:1418
+#: libs/ui/kis_node_manager.cpp:1421
 #, fuzzy, kde-format
 msgctxt "default name for quick clip group mask layer"
 msgid "Mask Layer"
 msgstr "Та&бақа"
 
-#: libs/ui/kis_node_manager.cpp:1432
+#: libs/ui/kis_node_manager.cpp:1435
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Quick Ungroup"
@@ -16232,42 +16244,42 @@ msgctxt "floating message about zoom"
 msgid "Zoom: %1 %"
 msgstr "Калон кардан 1:%1"
 
-#: libs/ui/KisApplication.cpp:282
+#: libs/ui/KisApplication.cpp:283
 #, fuzzy, kde-format
 msgid "Loading Resources..."
 msgstr "&Нест кардани Табақа"
 
-#: libs/ui/KisApplication.cpp:286
+#: libs/ui/KisApplication.cpp:287
 #, fuzzy, kde-format
 msgid "Loading Brush Presets..."
 msgstr "&Интихоби тоза кардан"
 
-#: libs/ui/KisApplication.cpp:290
+#: libs/ui/KisApplication.cpp:291
 #, fuzzy, kde-format
 msgid "Loading Brushes..."
 msgstr "&Интихоби тоза кардан"
 
-#: libs/ui/KisApplication.cpp:294
+#: libs/ui/KisApplication.cpp:295
 #, fuzzy, kde-format
 msgid "Loading Bundles..."
 msgstr "&Интихоби тоза кардан"
 
-#: libs/ui/KisApplication.cpp:334
+#: libs/ui/KisApplication.cpp:335
 #, fuzzy, kde-format
 msgid "Loading Plugins for Krita/Tool..."
 msgstr "Намунаҳо"
 
-#: libs/ui/KisApplication.cpp:342
+#: libs/ui/KisApplication.cpp:343
 #, fuzzy, kde-format
 msgid "Loading Plugins for Krita/Dock..."
 msgstr "Намунаҳо"
 
-#: libs/ui/KisApplication.cpp:349
+#: libs/ui/KisApplication.cpp:350
 #, fuzzy, kde-format
 msgid "Loading Plugins Exiv/IO..."
 msgstr "Намунаҳо"
 
-#: libs/ui/KisApplication.cpp:365
+#: libs/ui/KisApplication.cpp:366
 #, kde-format
 msgid ""
 "You are running a 32 bits build on a 64 bits Windows.\n"
@@ -16275,42 +16287,42 @@ msgid ""
 "Please download and install the x64 build instead."
 msgstr ""
 
-#: libs/ui/KisApplication.cpp:382
+#: libs/ui/KisApplication.cpp:383
 #, kde-format
 msgid "Initializing Globals"
 msgstr ""
 
-#: libs/ui/KisApplication.cpp:413
+#: libs/ui/KisApplication.cpp:414
 #, fuzzy, kde-format
 msgid "Adding resource types"
 msgstr "масоҳат"
 
-#: libs/ui/KisApplication.cpp:432
+#: libs/ui/KisApplication.cpp:433
 #, fuzzy, kde-format
 msgid "Loading Main Window..."
 msgstr "Градиент:"
 
-#: libs/ui/KisApplication.cpp:532
+#: libs/ui/KisApplication.cpp:533
 #, kde-format
 msgid "Mimetype not found, try using the -mimetype option"
 msgstr ""
 
-#: libs/ui/KisApplication.cpp:742
+#: libs/ui/KisApplication.cpp:743
 #, fuzzy, kde-format
 msgid "No template found for: %1"
 msgstr "Ҳосиятҳо..."
 
-#: libs/ui/KisApplication.cpp:745
+#: libs/ui/KisApplication.cpp:746
 #, kde-format
 msgid "Too many templates found for: %1"
 msgstr "Якчанд қолибе барои %1 ёфт шуд"
 
-#: libs/ui/KisApplication.cpp:767
+#: libs/ui/KisApplication.cpp:768
 #, fuzzy, kde-format
 msgid "Template %1 failed to load."
 msgstr "&Ҷудокуни"
 
-#: libs/ui/KisApplication.cpp:793
+#: libs/ui/KisApplication.cpp:794
 #, kde-format
 msgid ""
 "Failed to clear %1\n"
@@ -16318,7 +16330,7 @@ msgid ""
 "Please make sure no other program is using the file and try again."
 msgstr ""
 
-#: libs/ui/KisApplication.cpp:814
+#: libs/ui/KisApplication.cpp:815
 #, fuzzy, kde-format
 #| msgid "Do you really want to overwrite the existing '%1' template?"
 msgid "Do you want to clear the settings file?"
@@ -16771,73 +16783,73 @@ msgstr "Табақа ба тасвир илова кардан наметаво�
 msgid "Could not copy %1 to its final location %2"
 msgstr "Ҳаракат кардани Интихобот"
 
-#: libs/ui/KisMainWindow.cpp:182
+#: libs/ui/KisMainWindow.cpp:179
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "&Dockers"
 msgstr "Пайвастан"
 
-#: libs/ui/KisMainWindow.cpp:183
+#: libs/ui/KisMainWindow.cpp:180
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "&Window"
 msgstr "Та&бақа"
 
-#: libs/ui/KisMainWindow.cpp:184
+#: libs/ui/KisMainWindow.cpp:181
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "New &View"
 msgstr "Андозаи эҷод кардан"
 
-#: libs/ui/KisMainWindow.cpp:185
+#: libs/ui/KisMainWindow.cpp:182
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "Wor&kspace"
 msgstr "Ранги ҷамъкунанда"
 
-#: libs/ui/KisMainWindow.cpp:494
+#: libs/ui/KisMainWindow.cpp:491
 #: plugins/tools/svgtexttool/SvgTextEditor.cpp:133
 #, fuzzy, kde-format
 msgid "Show %1 Toolbar"
 msgstr "Масштаби Табақа..."
 
-#: libs/ui/KisMainWindow.cpp:496
+#: libs/ui/KisMainWindow.cpp:493
 #: plugins/tools/svgtexttool/SvgTextEditor.cpp:135
 #, fuzzy, kde-format
 msgid "Hide %1 Toolbar"
 msgstr "&Даровардани Асбоб"
 
-#: libs/ui/KisMainWindow.cpp:794
+#: libs/ui/KisMainWindow.cpp:781
 #, fuzzy, kde-format
 msgid "Write Protected"
 msgstr "муҳофиза аз навиштан"
 
-#: libs/ui/KisMainWindow.cpp:798
+#: libs/ui/KisMainWindow.cpp:785
 #, fuzzy, kde-format
 msgid "Recovered"
 msgstr "Росткунҷа"
 
-#: libs/ui/KisMainWindow.cpp:807
+#: libs/ui/KisMainWindow.cpp:794
 #, fuzzy, kde-format
 msgid "Modified"
 msgstr "Аз миёна:"
 
-#: libs/ui/KisMainWindow.cpp:828
+#: libs/ui/KisMainWindow.cpp:815
 #, fuzzy, kde-format
 msgid "Save as %1"
 msgstr "Ҷамъ"
 
-#: libs/ui/KisMainWindow.cpp:866
+#: libs/ui/KisMainWindow.cpp:853
 #, kde-format
 msgid "The file %1 does not exist."
 msgstr "Файли %1 вуҷуд надорад."
 
-#: libs/ui/KisMainWindow.cpp:947
+#: libs/ui/KisMainWindow.cpp:934
 #, fuzzy, kde-format
 msgid "Open Images"
 msgstr "Тасвир"
 
-#: libs/ui/KisMainWindow.cpp:1044
+#: libs/ui/KisMainWindow.cpp:1031
 #, kde-format
 msgid ""
 "You are saving a file while the image is still rendering. The saved file may "
@@ -16846,43 +16858,43 @@ msgid ""
 "Please select a location where the original file will not be overridden!"
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:1100
+#: libs/ui/KisMainWindow.cpp:1087
 #, fuzzy, kde-format
 msgid "Exporting"
 msgstr "Содироти Табақа"
 
-#: libs/ui/KisMainWindow.cpp:1100
+#: libs/ui/KisMainWindow.cpp:1087
 #, fuzzy, kde-format
 msgid "Saving As"
 msgstr "Формати вақт"
 
-#: libs/ui/KisMainWindow.cpp:1426
+#: libs/ui/KisMainWindow.cpp:1413
 #: libs/widgetutils/config/kstandardaction_p.h:41
 #, fuzzy, kde-format
 msgid "Create new document"
 msgstr "Аз санадоти холӣ оғоз кардан"
 
-#: libs/ui/KisMainWindow.cpp:1468
+#: libs/ui/KisMainWindow.cpp:1455
 #, fuzzy, kde-format
 msgid "Create from Clipboard"
 msgstr "Намунаҳо"
 
-#: libs/ui/KisMainWindow.cpp:1780
+#: libs/ui/KisMainWindow.cpp:1767
 #, fuzzy, kde-format
 msgid "Export as PDF"
 msgstr "Содироти Табақа"
 
-#: libs/ui/KisMainWindow.cpp:1822
+#: libs/ui/KisMainWindow.cpp:1809
 #, kde-format
 msgid "Cannot export to the specified file"
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:1844
+#: libs/ui/KisMainWindow.cpp:1831
 #, fuzzy, kde-format
 msgid "Import frames"
 msgstr "Воридоти Тасвир"
 
-#: libs/ui/KisMainWindow.cpp:1852
+#: libs/ui/KisMainWindow.cpp:1839
 #, fuzzy, kde-format
 msgid ""
 "Could not finish import animation:\n"
@@ -16891,94 +16903,94 @@ msgstr ""
 "Наметавонам %1-ро\n"
 "боз кунам"
 
-#: libs/ui/KisMainWindow.cpp:1928
+#: libs/ui/KisMainWindow.cpp:1915
 #, fuzzy, kde-format
 msgid ""
 "You will lose all changes made since your last save\n"
 "Do you want to continue?"
 msgstr "Тамоми тағйиротҳо гум мешаванд! Оё мехоҳед идома диҳед?"
 
-#: libs/ui/KisMainWindow.cpp:1939
+#: libs/ui/KisMainWindow.cpp:1926
 #, fuzzy, kde-format
 msgid "Error: Could not reload this document"
 msgstr "Табақа ба тасвир илова кардан наметавонад."
 
-#: libs/ui/KisMainWindow.cpp:2193
+#: libs/ui/KisMainWindow.cpp:2181
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "&Import Workspace..."
 msgstr "&Воридоти график..."
 
-#: libs/ui/KisMainWindow.cpp:2205 libs/widgets/KoResourceItemChooser.cpp:217
+#: libs/ui/KisMainWindow.cpp:2193 libs/widgets/KoResourceItemChooser.cpp:217
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Choose File to Add"
 msgstr "Интихоби филтр"
 
-#: libs/ui/KisMainWindow.cpp:2211
+#: libs/ui/KisMainWindow.cpp:2199
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "&New Workspace..."
 msgstr "&Воридоти график..."
 
-#: libs/ui/KisMainWindow.cpp:2214
+#: libs/ui/KisMainWindow.cpp:2202
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "New Workspace..."
 msgstr "&Воридоти график..."
 
-#: libs/ui/KisMainWindow.cpp:2228 libs/ui/widgets/kis_workspace_chooser.cpp:159
+#: libs/ui/KisMainWindow.cpp:2216 libs/ui/widgets/kis_workspace_chooser.cpp:159
 #, fuzzy, kde-format
 msgid "Workspace"
 msgstr "Ранги ҷамъкунанда"
 
-#: libs/ui/KisMainWindow.cpp:2239 libs/ui/widgets/kis_workspace_chooser.cpp:170
+#: libs/ui/KisMainWindow.cpp:2227 libs/ui/widgets/kis_workspace_chooser.cpp:170
 #, fuzzy, kde-format
 msgid "Workspace %1"
 msgstr "Ранги ҷамъкунанда"
 
-#: libs/ui/KisMainWindow.cpp:2267
+#: libs/ui/KisMainWindow.cpp:2255
 #, fuzzy, kde-format
 #| msgid "%1 %"
 msgid "&%1 %2"
 msgstr "%1 %"
 
-#: libs/ui/KisMainWindow.cpp:2270
+#: libs/ui/KisMainWindow.cpp:2258
 #, fuzzy, kde-format
 #| msgid "%1 %"
 msgid "%1 %2"
 msgstr "%1 %"
 
-#: libs/ui/KisMainWindow.cpp:2403
+#: libs/ui/KisMainWindow.cpp:2391
 #, kde-format
 msgid ""
 "The Krita LittleCMS color management plugin is not installed. Krita will "
 "quit now."
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:2411
+#: libs/ui/KisMainWindow.cpp:2399
 #, kde-format
 msgid "Krita cannot find any brush presets! Krita will quit now."
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:2420
+#: libs/ui/KisMainWindow.cpp:2408
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Installation error"
 msgstr "Табақаи Хато"
 
-#: libs/ui/KisMainWindow.cpp:2481
+#: libs/ui/KisMainWindow.cpp:2469
 #, fuzzy, kde-format
 msgid "%1 unsaved document (%2)"
 msgstr "Нигоҳ доштани санад ҳамчун"
 
-#: libs/ui/KisMainWindow.cpp:2550
+#: libs/ui/KisMainWindow.cpp:2538
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Themes"
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:2588
+#: libs/ui/KisMainWindow.cpp:2576
 #, kde-format
 msgid "Expanding Spacer"
 msgstr ""
@@ -23327,13 +23339,13 @@ msgctxt "@label:radio"
 msgid "Right / After"
 msgstr "Сабзи равшан"
 
-#: plugins/dockers/animation/timeline_ruler_header.cpp:440
+#: plugins/dockers/animation/timeline_ruler_header.cpp:450
 #, fuzzy, kde-format
 msgctxt "@item:inmenu"
 msgid "Keyframe Columns"
 msgstr "Нест кардани Интихобот"
 
-#: plugins/dockers/animation/timeline_ruler_header.cpp:448
+#: plugins/dockers/animation/timeline_ruler_header.cpp:458
 #, fuzzy, kde-format
 msgctxt "@item:inmenu"
 msgid "Hold Frame Columns"
@@ -40729,11 +40741,6 @@ msgstr "Ҳаракат кардани Интихобот"
 #, kde-format
 msgid "Work Recursively"
 msgstr ""
-
-#, fuzzy
-#~ msgctxt "@title:window"
-#~ msgid "Krita: Warning"
-#~ msgstr "Krita"
 
 #, fuzzy
 #~ msgid "Show Scrollbar"
