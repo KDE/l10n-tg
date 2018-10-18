@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpilot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-10-17 01:55+0200\n"
+"POT-Creation-Date: 2018-10-18 01:53+0200\n"
 "PO-Revision-Date: 2004-10-25 15:26+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -33,6 +33,63 @@ msgstr ""
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ",youth_opportunities@tajik.net,,,"
+
+#. i18n: ectx: property (text), widget (QLabel, fCollectionsLabel)
+#: conduits/akonadibase/akonadi-setup-widget.ui:19
+#, fuzzy, kde-format
+#| msgid "Calendar"
+msgid "Select Collection:"
+msgstr "Тақвим"
+
+#. i18n: ectx: property (text), widget (QLabel, fWarnIcon1)
+#. i18n: ectx: property (text), widget (QLabel, fWarnIcon2)
+#. i18n: ectx: property (text), widget (QLabel, fWalletErrorIcon)
+#. i18n: ectx: property (text), widget (QLabel, fQCAErrorIcon)
+#. i18n: ectx: property (text), widget (QLabel, fInfoIcon)
+#: conduits/akonadibase/akonadi-setup-widget.ui:49
+#: conduits/akonadibase/akonadi-setup-widget.ui:94
+#: conduits/keyringconduit/keyringwidget.ui:117
+#: conduits/keyringconduit/keyringwidget.ui:181
+#: conduits/timeconduit/time-setup_dialog.ui:83
+#, kde-format
+msgid "ICON"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, fSelectionWarnLabel)
+#: conduits/akonadibase/akonadi-setup-widget.ui:65
+#, kde-format
+msgid ""
+"No collection selected yet. Make sure you select a collection before "
+"synchronizing. If you do not see any collections in the combobox, make sure "
+"that Akonadi started and that there is a valid resource for this data type."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: conduits/akonadibase/akonadi-setup-widget.ui:110
+#, kde-format
+msgid ""
+"Do not change the collection once you have synced your device with one of "
+"the Akonadi Collections. There are currently no advanced checks in the code "
+"so prepare for the worst when you decide to do it anyway. We are working on "
+"this. Please contact us in #kpilot on irc.freenode.org if you have problems."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, fErrorIcon)
+#: conduits/akonadibase/akonadi-setup-widget.ui:153
+#, kde-format
+msgid ""
+"ERROR\n"
+"ICON"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, fNonExistingCollection)
+#: conduits/akonadibase/akonadi-setup-widget.ui:170
+#, kde-format
+msgid ""
+"The previous configured Akonadi collection is invalid. You must select a "
+"valid Akonadi collection above and click apply before you can use this "
+"conduit.\n"
+msgstr ""
 
 #: conduits/base/cudcounter.cc:78
 #, kde-format
@@ -349,6 +406,15 @@ msgstr "Портировка кардани iCalendar"
 msgid "Select Calendar: "
 msgstr "Тақвим"
 
+#. i18n: ectx: attribute (title), widget (QWidget, fAkonadiTab)
+#. i18n: ectx: attribute (title), widget (QWidget, tab_5)
+#: conduits/calendar/settingswidget.ui:17
+#: conduits/contacts/settingswidget.ui:20 conduits/todo/settingswidget.ui:17
+#, fuzzy, kde-format
+#| msgid "Locale Settings"
+msgid "Akonadi Settings"
+msgstr "Настройкаи маҳдуд."
+
 #: conduits/contacts/contactsconfig.cc:38
 #: Documentation/base-conduit-template/contacts-setup.cc:44
 #, fuzzy, kde-format
@@ -376,6 +442,489 @@ msgstr "Контакт"
 #| msgid "&Standard addressbook"
 msgid "Select Address Book: "
 msgstr "&Адресҳои китобҳо стандартӣ"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#. i18n: ectx: attribute (title), widget (QWidget, tab_6)
+#: conduits/contacts/settingswidget.ui:25
+#: conduits/docconduit/doc-setupdialog.ui:337
+#, kde-format
+msgid "Conflicts"
+msgstr "Низоъ"
+
+#. i18n: ectx: property (title), widget (Q3ButtonGroup, fConflictResolution)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: conduits/contacts/settingswidget.ui:31
+#: conduits/docconduit/doc-conduit.cc:601
+#: conduits/docconduit/doc-setupdialog.ui:343
+#: Documentation/base-conduit-template/contacts-settings.ui:31
+#, kde-format
+msgid "Conflict Resolution"
+msgstr "Ҳалкунии низоъ"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_8)
+#: conduits/contacts/settingswidget.ui:37
+#: Documentation/base-conduit-template/contacts-settings.ui:37
+#, kde-format
+msgid ""
+"<p>Select the default action if an event was modified on both sides here. </"
+"p>"
+msgstr ""
+"<p> Шумо метавонед, корро зикр накарда дар рухсат додани низоъ нишон диҳед.</"
+"p>"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_2_3)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fConflictResolution)
+#: conduits/contacts/settingswidget.ui:56
+#: conduits/contacts/settingswidget.ui:72
+#: Documentation/base-conduit-template/contacts-settings.ui:56
+#: Documentation/base-conduit-template/contacts-settings.ui:69
+#, kde-format
+msgid ""
+"<qt>Select in this list how conflicting entries (entries which were edited "
+"both on your handheld and on the PC) are resolved. Possibly values are \"Use "
+"KPilot's Global Setting\" to use the settings defined in KPilot HotSync "
+"configuration, \"Ask User\" to let you decide case by case, \"Do Nothing\" "
+"to allow the entries to be different, \"PC overrides\", \"Handheld overrides"
+"\", \"Use values from last sync\" and \"Use both entries\" to create a new "
+"entry on both the PC and handheld.</qt>"
+msgstr ""
+"<qt>Шумо метавонед, дар ин ҷо кадом низоъи (тағирдиҳӣ дар КПК ва дар ком- "
+"пютери персоналӣ) сабт кардаро мегузорем.Мазмуни имконпазир:\" гирифтан аз "
+"КПК\", \" гирифтан аз компютери персоналӣ \", Аз охирин синхронизация \", \" "
+"Ҳар ду навиштро истифода баред\" ва \" низоъи муоинаро канор гузоштан \".</"
+"qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2_3)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: conduits/contacts/settingswidget.ui:59
+#: Documentation/base-conduit-template/contacts-settings.ui:59
+#: kpilot/config_page_sync.ui:145
+#, kde-format
+msgid "Conflict &resolution:"
+msgstr "&Рухсат додани низоъ"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: conduits/contacts/settingswidget.ui:76
+#: Documentation/base-conduit-template/contacts-settings.ui:73
+#, fuzzy, kde-format
+#| msgid "Use KPilot's Global Setting"
+msgid "Use KPilot's Global Settings"
+msgstr "Истифода бурдани мизроби умумии пилот."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: conduits/contacts/settingswidget.ui:81
+#: Documentation/base-conduit-template/contacts-settings.ui:78
+#: kpilot/config_page_sync.ui:168
+#, kde-format
+msgid "Ask User"
+msgstr "Аз истифода баранда пурсидан."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: conduits/contacts/settingswidget.ui:86
+#: Documentation/base-conduit-template/contacts-settings.ui:83
+#, fuzzy, kde-format
+#| msgid "Handheld Overrides"
+msgid "Let The Handheld Override"
+msgstr "Аз КПК гирифтан."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: conduits/contacts/settingswidget.ui:91
+#: Documentation/base-conduit-template/contacts-settings.ui:88
+#, fuzzy, kde-format
+#| msgid "PC Overrides"
+msgid "Let The PC Override"
+msgstr "Аз копютери персоналӣ гирифтан."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: conduits/contacts/settingswidget.ui:96
+#: Documentation/base-conduit-template/contacts-settings.ui:93
+#, kde-format
+msgid "Use Both Entries"
+msgstr "Истифода бурдани ҳар ду навишт."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: conduits/contacts/settingswidget.ui:101
+#: Documentation/base-conduit-template/contacts-settings.ui:98
+#: kpilot/config_page_sync.ui:173
+#, kde-format
+msgid "Do Nothing"
+msgstr "Ҳеҷ кор накунед."
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_7)
+#: conduits/contacts/settingswidget.ui:126
+#, kde-format
+msgid "Fields"
+msgstr "Ҳошияҳо"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel2_2)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fOtherPhone)
+#: conduits/contacts/settingswidget.ui:132
+#: conduits/contacts/settingswidget.ui:154
+#: Documentation/base-conduit-template/contacts-settings.ui:129
+#: Documentation/base-conduit-template/contacts-settings.ui:151
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Select which KAddressBook field should be used to store the Pilot's "
+#| "&quot;Other&quot; phone here.</qt>"
+msgid ""
+"<qt>Select which KAddressBook field should be used to store the Pilot's "
+"\"Other\" phone here.</qt>"
+msgstr ""
+"<qt>Интихоб кардани дашт дар китоби адресҳои KDE,кадоме, ки барои нигоҳ "
+"доштани ахбороти &quot; рақамҳои дигари &quot; телефон аз пилот истифода "
+"баред.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel2_2)
+#: conduits/contacts/settingswidget.ui:135
+#: Documentation/base-conduit-template/contacts-settings.ui:132
+#, kde-format
+msgid "Handheld other phone:"
+msgstr "Рақами дигари телефон дар КПК:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fOtherPhone)
+#: conduits/contacts/settingswidget.ui:158
+#: Documentation/base-conduit-template/contacts-settings.ui:155
+#, kde-format
+msgid "Other Phone"
+msgstr "Телефони дигар"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fOtherPhone)
+#: conduits/contacts/settingswidget.ui:163
+#: Documentation/base-conduit-template/contacts-settings.ui:160
+#, kde-format
+msgid "Assistant"
+msgstr "Ёрдамчи."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fOtherPhone)
+#. i18n: ectx: property (text), item, widget (KComboBox, fFax)
+#: conduits/contacts/settingswidget.ui:168
+#: conduits/contacts/settingswidget.ui:271
+#: Documentation/base-conduit-template/contacts-settings.ui:165
+#: Documentation/base-conduit-template/contacts-settings.ui:268
+#, kde-format
+msgid "Business Fax"
+msgstr "Факси корӣ"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fOtherPhone)
+#: conduits/contacts/settingswidget.ui:173
+#: Documentation/base-conduit-template/contacts-settings.ui:170
+#, fuzzy, kde-format
+#| msgid "Work Phone"
+msgid "Car Phone"
+msgstr "Телефони корӣ"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fOtherPhone)
+#: conduits/contacts/settingswidget.ui:178
+#: Documentation/base-conduit-template/contacts-settings.ui:175
+#, fuzzy, kde-format
+#| msgid "Email address:"
+msgid "Second Email Address"
+msgstr "Адреси почтаи электронӣ:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fOtherPhone)
+#. i18n: ectx: property (text), item, widget (KComboBox, fFax)
+#: conduits/contacts/settingswidget.ui:183
+#: conduits/contacts/settingswidget.ui:266
+#: Documentation/base-conduit-template/contacts-settings.ui:180
+#: Documentation/base-conduit-template/contacts-settings.ui:263
+#, kde-format
+msgid "Home Fax"
+msgstr "Факси хона"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fOtherPhone)
+#: conduits/contacts/settingswidget.ui:188
+#: Documentation/base-conduit-template/contacts-settings.ui:185
+#, kde-format
+msgid "Telex"
+msgstr "Телекс"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fOtherPhone)
+#: conduits/contacts/settingswidget.ui:193
+#: Documentation/base-conduit-template/contacts-settings.ui:190
+#, kde-format
+msgid "TTY/TTD Phone"
+msgstr "Телефони TTY/TTD"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel4_2)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fAddress)
+#: conduits/contacts/settingswidget.ui:201
+#: conduits/contacts/settingswidget.ui:223
+#: Documentation/base-conduit-template/contacts-settings.ui:198
+#: Documentation/base-conduit-template/contacts-settings.ui:220
+#, kde-format
+msgid ""
+"<qt>Select which KAddressBook field should be used to store the Pilot's "
+"Street Address here.</qt>"
+msgstr ""
+"<qt>Интихоб кардани дашт дар китоби адресҳои KDE кадомаш истифода бурда "
+"мешавад,барои маълумот дар бораи адреси ҳавли аз пилот нигоҳ дошта мешавад.</"
+"qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel4_2)
+#: conduits/contacts/settingswidget.ui:204
+#: Documentation/base-conduit-template/contacts-settings.ui:201
+#, kde-format
+msgid "Handheld street address:"
+msgstr "Адреси ҳавли дар КПК:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fAddress)
+#: conduits/contacts/settingswidget.ui:227
+#: Documentation/base-conduit-template/contacts-settings.ui:224
+#, kde-format
+msgid "Preferred, then Home Address"
+msgstr "Афзал донистан баъд адреси хона."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fAddress)
+#: conduits/contacts/settingswidget.ui:232
+#: Documentation/base-conduit-template/contacts-settings.ui:229
+#, kde-format
+msgid "Preferred, then Business Address"
+msgstr "Афзал донистан баъд адреси кор."
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel5)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fFax)
+#: conduits/contacts/settingswidget.ui:240
+#: conduits/contacts/settingswidget.ui:262
+#: Documentation/base-conduit-template/contacts-settings.ui:237
+#: Documentation/base-conduit-template/contacts-settings.ui:259
+#, kde-format
+msgid ""
+"<qt>Select which KAddressBook field should be used to store the Fax number "
+"from the Pilot here.</qt>"
+msgstr ""
+"<qt>Интихоб кардани дашт дар китоби адресҳои KDE кадомаш истифода бурда "
+"мешавад,барои нигоҳ доштани ахбороти рақамҳои факс аз пилот. </qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: conduits/contacts/settingswidget.ui:243
+#: Documentation/base-conduit-template/contacts-settings.ui:240
+#, kde-format
+msgid "Handheld fax:"
+msgstr "Рақами факс дар КПК:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_4)
+#: conduits/contacts/settingswidget.ui:293
+#, kde-format
+msgid "Custom Fields"
+msgstr "Ҳошияҳои оддӣ"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fCustom0)
+#: conduits/contacts/settingswidget.ui:305
+#: conduits/contacts/settingswidget.ui:327
+#: Documentation/base-conduit-template/contacts-settings.ui:302
+#: Documentation/base-conduit-template/contacts-settings.ui:324
+#, kde-format
+msgid ""
+"<qt>Select the field from this list that represents best the meaning given "
+"by your use of the first custom field on your handheld.</qt>"
+msgstr "<qt> Муқаррар кардани дашти якуми иловаро дар КПК интихоб кунед.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: conduits/contacts/settingswidget.ui:308
+#: Documentation/base-conduit-template/contacts-settings.ui:305
+#, kde-format
+msgid "Handheld custom field 1:"
+msgstr "Мукаммал кардани дашти 1 дар КПК:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom0)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom1)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom2)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom3)
+#: conduits/contacts/settingswidget.ui:331
+#: conduits/contacts/settingswidget.ui:380
+#: conduits/contacts/settingswidget.ui:429
+#: conduits/contacts/settingswidget.ui:478
+#: Documentation/base-conduit-template/contacts-settings.ui:328
+#: Documentation/base-conduit-template/contacts-settings.ui:377
+#: Documentation/base-conduit-template/contacts-settings.ui:426
+#: Documentation/base-conduit-template/contacts-settings.ui:475
+#, kde-format
+msgid "Store as Custom Field"
+msgstr "Нигоҳ доштан дар нафъи дашт."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom0)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom1)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom2)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom3)
+#: conduits/contacts/settingswidget.ui:336
+#: conduits/contacts/settingswidget.ui:385
+#: conduits/contacts/settingswidget.ui:434
+#: conduits/contacts/settingswidget.ui:483
+#: Documentation/base-conduit-template/contacts-settings.ui:333
+#: Documentation/base-conduit-template/contacts-settings.ui:382
+#: Documentation/base-conduit-template/contacts-settings.ui:431
+#: Documentation/base-conduit-template/contacts-settings.ui:480
+#, fuzzy, kde-format
+#| msgid "Birthdate"
+msgid "Birthday"
+msgstr "Рӯзи таваллуд."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom0)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom1)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom2)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom3)
+#: conduits/contacts/settingswidget.ui:341
+#: conduits/contacts/settingswidget.ui:390
+#: conduits/contacts/settingswidget.ui:439
+#: conduits/contacts/settingswidget.ui:488
+#: Documentation/base-conduit-template/contacts-settings.ui:338
+#: Documentation/base-conduit-template/contacts-settings.ui:387
+#: Documentation/base-conduit-template/contacts-settings.ui:436
+#: Documentation/base-conduit-template/contacts-settings.ui:485
+#, kde-format
+msgid "URL"
+msgstr "Истинод кардани интернет."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom0)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom1)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom2)
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustom3)
+#: conduits/contacts/settingswidget.ui:346
+#: conduits/contacts/settingswidget.ui:395
+#: conduits/contacts/settingswidget.ui:444
+#: conduits/contacts/settingswidget.ui:493
+#: Documentation/base-conduit-template/contacts-settings.ui:343
+#: Documentation/base-conduit-template/contacts-settings.ui:392
+#: Documentation/base-conduit-template/contacts-settings.ui:441
+#: Documentation/base-conduit-template/contacts-settings.ui:490
+#, kde-format
+msgid "IM Address (ICQ, MSN, ...)"
+msgstr "Адреси IM (ICQ, MSN, ...)"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_2)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fCustom1)
+#: conduits/contacts/settingswidget.ui:354
+#: conduits/contacts/settingswidget.ui:376
+#: Documentation/base-conduit-template/contacts-settings.ui:351
+#: Documentation/base-conduit-template/contacts-settings.ui:373
+#, kde-format
+msgid ""
+"<qt>Select the field from this list that represents best the meaning given "
+"by your use of the second custom field on your handheld.</qt>"
+msgstr "<qt> Муқаррар кардани дашти дуюм иловаро дар КПК интихоб кунед.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: conduits/contacts/settingswidget.ui:357
+#: Documentation/base-conduit-template/contacts-settings.ui:354
+#, kde-format
+msgid "Handheld custom field 2:"
+msgstr "Мукамал кардани дашти 2 дар КПК:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_3)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fCustom2)
+#: conduits/contacts/settingswidget.ui:403
+#: conduits/contacts/settingswidget.ui:425
+#: Documentation/base-conduit-template/contacts-settings.ui:400
+#: Documentation/base-conduit-template/contacts-settings.ui:422
+#, kde-format
+msgid ""
+"<qt>Select the field from this list that represents best the meaning given "
+"by your use of the third custom field on your handheld.</qt>"
+msgstr "<qt> Муқаррар кардани дашти сеюм иловаро дар КПК интихоб кунед.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
+#: conduits/contacts/settingswidget.ui:406
+#: Documentation/base-conduit-template/contacts-settings.ui:403
+#, kde-format
+msgid "Handheld custom field 3:"
+msgstr "Мукамал кардани дашти 3 дар КПК:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_4)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fCustom3)
+#: conduits/contacts/settingswidget.ui:452
+#: conduits/contacts/settingswidget.ui:474
+#: Documentation/base-conduit-template/contacts-settings.ui:449
+#: Documentation/base-conduit-template/contacts-settings.ui:471
+#, kde-format
+msgid ""
+"<qt>Select the field from this list that represents best the meaning given "
+"by your use of the fourth custom field on your handheld.</qt>"
+msgstr ""
+"<qt> Муқаррар кардани дашти чаҳорум иловаро дар КПК интихоб кунед.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_4)
+#: conduits/contacts/settingswidget.ui:455
+#: Documentation/base-conduit-template/contacts-settings.ui:452
+#, kde-format
+msgid "Handheld custom field 4:"
+msgstr "Мукамал кардани дашти 4 дар КПК:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_5)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fCustomDate)
+#: conduits/contacts/settingswidget.ui:511
+#: conduits/contacts/settingswidget.ui:533
+#: Documentation/base-conduit-template/contacts-settings.ui:508
+#: Documentation/base-conduit-template/contacts-settings.ui:530
+#, no-c-format, kde-format
+msgid ""
+"<qt>Select the birthdate format here, if you selected \"birthdate\" for any "
+"of the custom fields above. Possible placeholders are:<br> %d for the day, "
+"%m for the month, %y for the two-digit year, %Y for the four-digit year. "
+"For  example, %d.%m.%Y would generate a date like 27.3.1952, while %m/%d/%y "
+"would write the same date as 03/27/52. </qt>"
+msgstr ""
+"<qt> Интихоб кардани санаи андоза барои дашт мисли \" рӯзи тавал- луд\".Роҳ "
+"додани дигар гузориш:<br> %d- рӯз,%m-моҳ,%y -сол (ду аломат),%Y- сол (чор "
+"аломат). Мисол қолиб  %d.%m.%Y нишон додани сана бо намуди 27.3.1952, а %m/"
+"%d/%y санаро бо намуди 03/27/52. нишон медиҳад.\n"
+"</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_5)
+#: conduits/contacts/settingswidget.ui:514
+#: Documentation/base-conduit-template/contacts-settings.ui:511
+#, kde-format
+msgid "Date &format:"
+msgstr "Андозаи &маълумот:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustomDate)
+#: conduits/contacts/settingswidget.ui:540
+#: Documentation/base-conduit-template/contacts-settings.ui:537
+#, kde-format
+msgid "Locale Settings"
+msgstr "Настройкаи маҳдуд."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustomDate)
+#: conduits/contacts/settingswidget.ui:545
+#: Documentation/base-conduit-template/contacts-settings.ui:542
+#, no-c-format, kde-format
+msgid "%d.%m.%Y"
+msgstr "%d.%m.%Y"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustomDate)
+#: conduits/contacts/settingswidget.ui:550
+#: Documentation/base-conduit-template/contacts-settings.ui:547
+#, no-c-format, kde-format
+msgid "%d.%m.%y"
+msgstr "%d.%m.%y"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustomDate)
+#: conduits/contacts/settingswidget.ui:555
+#: Documentation/base-conduit-template/contacts-settings.ui:552
+#, no-c-format, kde-format
+msgid "%d/%m/%Y"
+msgstr "%d/%m/%Y"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustomDate)
+#: conduits/contacts/settingswidget.ui:560
+#: Documentation/base-conduit-template/contacts-settings.ui:557
+#, no-c-format, kde-format
+msgid "%d/%m/%y"
+msgstr "%d/%m/%y"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustomDate)
+#: conduits/contacts/settingswidget.ui:565
+#: Documentation/base-conduit-template/contacts-settings.ui:562
+#, no-c-format, kde-format
+msgid "%m/%d/%Y"
+msgstr "%m/%d/%Y"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fCustomDate)
+#: conduits/contacts/settingswidget.ui:570
+#: Documentation/base-conduit-template/contacts-settings.ui:567
+#, no-c-format, kde-format
+msgid "%m/%d/%y"
+msgstr "%m/%d/%y"
 
 #: conduits/docconduit/doc-conduit.cc:76
 #, kde-format
@@ -406,11 +955,6 @@ msgstr "Хатоги дар барқароркунии PalmDOC \"%1\"."
 #, kde-format
 msgid "Unable to open or create the database %1."
 msgstr "Кушодани базаи маълумотҳо %1 муяссар намешавад."
-
-#: conduits/docconduit/doc-conduit.cc:601
-#, kde-format
-msgid "Conflict Resolution"
-msgstr "Ҳалкунии низоъ"
 
 #: conduits/docconduit/doc-conduit.cc:606
 #, kde-format
@@ -621,6 +1165,509 @@ msgstr ""
 msgid "Palm DOC"
 msgstr "Palm DOC"
 
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#. i18n: ectx: attribute (title), widget (QWidget)
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: conduits/docconduit/doc-setupdialog.ui:32
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:28
+#: conduits/malconduit/mal-setup_dialog.ui:38
+#: conduits/notepadconduit/notepad-setup.ui:21
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:35
+#, fuzzy, kde-format
+#| msgid "General"
+msgid "General"
+msgstr "Умумӣ"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
+#: conduits/docconduit/doc-setupdialog.ui:38
+#, kde-format
+msgid "&Text files:"
+msgstr "&Файлҳои матн:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel1)
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, fTXTDir)
+#: conduits/docconduit/doc-setupdialog.ui:44
+#: conduits/docconduit/doc-setupdialog.ui:67
+#, kde-format
+msgid ""
+"<qt>Enter here, or select clicking the file picker button, the name and "
+"location of the folder used to find and synchronize text files. All files "
+"with extension .txt located in this folder will be synced to Palm DOC "
+"databases in your handheld.</qt>"
+msgstr ""
+"<qt>Ба инҷо дароед,ё  интихоб кунед бо пахш намудани тугмаи файлгиракро,ном "
+"ва ҷои папка истифода шуд барои ёфтан ва синхронизасия кардан файлҳои текст. "
+"Ҳамаи файлҳо бо васеъкуни. txt дар ин папка ҷойгир аст ва синхронизасия ба "
+"Раlm DOC базаи ахборотҳо дар дастқапи шумо карда мешавад.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fkeepPDBLocally)
+#: conduits/docconduit/doc-setupdialog.ui:54
+#, kde-format
+msgid "Local co&py:"
+msgstr "&Нусхаи маҳҳалӣ:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fkeepPDBLocally)
+#: conduits/docconduit/doc-setupdialog.ui:60
+#, kde-format
+msgid ""
+"<qt>Check this box if you want to save a copy of the Palm DOC databases (."
+"pdb files) on your PC.</qt>"
+msgstr ""
+"<qt>Ин қуттиро интихоб намоед агар шумо хоҳед, ки нусхаи базаи таърихи Palm "
+"DOC  (.файлҳои pdb ) дар компютер нигоҳ дошта шавад.</qt>"
+
+#. i18n: ectx: property (title), widget (Q3ButtonGroup, fSyncDirection)
+#: conduits/docconduit/doc-setupdialog.ui:74
+#, kde-format
+msgid "Synchronization Mode"
+msgstr "Тартиботи синхронизация."
+
+#. i18n: ectx: property (text), widget (QRadioButton, RadioButton3)
+#: conduits/docconduit/doc-setupdialog.ui:86
+#, kde-format
+msgid "Sync only P&C to PDA"
+msgstr "Аз &компютер ба пилот гузаронидан."
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, RadioButton3)
+#: conduits/docconduit/doc-setupdialog.ui:92
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize texts changed in your PC to Palm DOC "
+"databases in your handheld. Palm DOC databases modified in the handheld will "
+"not be converted to text files, but texts changed in the PC will be "
+"converted to the Palm DOC databases.</qt>"
+msgstr ""
+"<qt>Ин интихобро барои синхронизатсияи матни иваз карда шуда дар компютери "
+"шумо ба Palm DOC дар дастгоҳ интихоб намоед. Таърихи базаи Palm DOC тағир "
+"додаи дар дастгоҳ файлҳои мантро пур намекунад, вале матни иваз карда шуда "
+"дар компютер таърихи базаи Palm DOC-ро пур мекунад.</qt> "
+
+#. i18n: ectx: property (text), widget (QRadioButton, RadioButton2)
+#: conduits/docconduit/doc-setupdialog.ui:99
+#, kde-format
+msgid "Sync only P&DA to PC"
+msgstr "Аз &пилот ба компютер гузаронидан."
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, RadioButton2)
+#: conduits/docconduit/doc-setupdialog.ui:102
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize the changes made to Palm DOC databases "
+"in your handheld to the PC text files. Palm DOC databases modified in the "
+"handheld will be converted to text files, but texts changed in the PC will "
+"not be converted to the Palm DOC databases.</qt>"
+msgstr ""
+"<qt>Ин интихобро барои синхронизатсияи матни иваз карда шуда дар Palm DOC "
+"дар дастгоҳи матни файлҳои компютер интихоб намоед. Таърихи базаи Palm DOC "
+"тағир додаи дар дастгоҳ файлҳои мантро пур намекунад, вале матни иваз карда "
+"шуда дар компютер таърихи базаи Palm DOC-ро мепӯшад.</qt> "
+
+#. i18n: ectx: property (text), widget (QRadioButton, RadioButton1)
+#: conduits/docconduit/doc-setupdialog.ui:109
+#, kde-format
+msgid "Sync &all"
+msgstr "Синхронизация кардани &ҳар дуи ҷараён."
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, RadioButton1)
+#: conduits/docconduit/doc-setupdialog.ui:118
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize the file texts in your PC to Palm DOC "
+"databases in your handheld. Palm DOC databases modified in the handheld will "
+"be converted to text files, and texts changed in the PC will be converted to "
+"the Palm DOC databases, keeping both versions in sync.</qt>"
+msgstr ""
+"<qt>Ин интихобро барои синхронизатсияи матни иваз карда шуда дар Palm DOC "
+"дар дастгоҳи матни файлҳои компютер интихоб намоед. Таърихи базаи Palm DOC "
+"тағир додаи дар дастгоҳ файлҳои мантро пур намекунад, вале матни иваз карда "
+"шуда дар компютер таърихи базаи Palm DOC-ро мепӯшад, ҳар дуи ин тафсирро дар "
+"синхронизатсия нигоҳ доред.</qt>"
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, fPDBDir)
+#: conduits/docconduit/doc-setupdialog.ui:144
+#, kde-format
+msgid ""
+"<qt>Enter here, or select clicking the file picker button, the name and "
+"location of the folder where copies of the handheld databases are kept (.pdb "
+"files). Local copies are only made if the box is checked as well.</qt>"
+msgstr ""
+"Каталогро ворид кунед, ки дар онҷо нусхаҳои махзани маълумоти КПК нигоҳ "
+"дошта мешаванд. Нусхаҳои маҳаллӣ танҳо ҳангоми интихоби ин интихобот карда "
+"мешаванд."
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: conduits/docconduit/doc-setupdialog.ui:152
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:168
+#, kde-format
+msgid "PC -> Handheld"
+msgstr "Компютери -> КПК"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fCompress)
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: conduits/docconduit/doc-setupdialog.ui:158
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:255
+#, kde-format
+msgid "&Compress"
+msgstr "&Фишор додан."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, fCompress)
+#. i18n: ectx: property (toolTip), widget (QCheckBox)
+#: conduits/docconduit/doc-setupdialog.ui:164
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:261
+#, kde-format
+msgid ""
+"Check this box, if the text should be compressed on the handheld to save "
+"memory. Most doc reader on the handheld support compressed texts."
+msgstr ""
+"Ба кор даровардани ин байрақ агар матн дар КПК бояд мухтасар карда шавад,"
+"барои ба осони зеҳнро васеъ кардан.Бисёри нақшаҳоихониши матн нигоҳ доштани "
+"матнҳои кӯтоҳ."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fCompress)
+#: conduits/docconduit/doc-setupdialog.ui:167
+#, no-c-format, kde-format
+msgid ""
+"<qt>The Palm DOC format supports compressing the text to save memory. Check "
+"this box to enable text compression, so the resulting Palm DOC database will "
+"consume about 50% less memory than in uncompressed state. Almost all DOC "
+"readers on the Palm support compressed texts.</qt>"
+msgstr ""
+"<qt>Истифода бурдани андозаи тазиқи PalmDOG барои ба осони зеҳнро васеъ "
+"кардан.Ба кор даровардани ин байрақ шумо қариб 50% ченаки файлро сарфакорона "
+"харҷ мекунед.Тақрибан ҳамаи нақшаҳои хониши PalmDOG нигоҳ доштани матнҳои "
+"кӯтоҳ.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fConvertBookmarks)
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: conduits/docconduit/doc-setupdialog.ui:174
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:272
+#, kde-format
+msgid "Convert &bookmarks"
+msgstr "Аз нав ташкил додани &гаарав"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fConvertBookmarks)
+#: conduits/docconduit/doc-setupdialog.ui:180
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Check this box to enable bookmark creation when converting text files "
+#| "to Palm DOC databases. Most doc readers support bookmarks. In order to "
+#| "create a bookmark, it is necessary to to provide the location in the text "
+#| "where the bookmark should be set and the bookmark title, in at least one "
+#| "of the formats listed below.</qt>"
+msgid ""
+"<qt>Check this box to enable bookmark creation when converting text files to "
+"Palm DOC databases. Most doc readers support bookmarks. In order to create a "
+"bookmark, it is necessary to provide the location in the text where the "
+"bookmark should be set and the bookmark title, in at least one of the "
+"formats listed below.</qt>"
+msgstr ""
+"<qt>Оё,шумо мехоҳед,гузоришро аз нав ташкил диҳед? Бисёрии нақшаҳои хониши "
+"матн гузоришро нигоҳ медоранд.Шумо метавонед,мавқеъ ва номи гузоришро нишон "
+"диҳед.Масалан якто аз намуди дар поён гузошташударо интихоб кунед.<qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fBookmarksInline)
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: conduits/docconduit/doc-setupdialog.ui:203
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:230
+#, kde-format
+msgid "&Inline tags in text"
+msgstr "&Дар матн штамп."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fBookmarksInline)
+#: conduits/docconduit/doc-setupdialog.ui:209
+#, kde-format
+msgid ""
+"Check this box to create bookmarks from inline tags in the text. The inline "
+"tag consist of tags in the form <* bookmarktext *>. The bookmark location is "
+"set using the location of the inline tag in the text, and  the name is the "
+"text between the <* and the *>. The inline tag (<*...*>) will be removed "
+"from the text."
+msgstr ""
+"Барои бунёд кардани гузориш аз барчасп дар матн тафтиш намоед. Қатори  "
+"барчасп аз барчаспҳои дар варақа буда иборат мебошад<* bookmarktext *> . "
+"Гузориши ҷойгиршавии ин мондани ҷойгиршавии истифода шуда истодаи барчасп "
+"дар қатори матн ва номи матн байни <* ва *> мебошад.Гузориши қатори (<*..."
+"*>) аз матн ҳаракат дода мешавад."
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: ectx: property (text), widget (QLabel)
+#: conduits/docconduit/doc-setupdialog.ui:216
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:155
+#, fuzzy, kde-format
+msgid "&Encoding:"
+msgstr "&Ба код даровардан:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fBookmarksEndtags)
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: conduits/docconduit/doc-setupdialog.ui:229
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:244
+#, kde-format
+msgid "&Tags at end of text"
+msgstr "Тегҳо дар &охири матн"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fBookmarksEndtags)
+#: conduits/docconduit/doc-setupdialog.ui:232
+#, kde-format
+msgid ""
+"Check this box to convert tags of the form <bookmarkname> at the end of the "
+"text to bookmarks. The text inside the tag (\"bookmarkname\") will be "
+"searched in the text, and whenever found, a bookmark will be set there. The "
+"endtags <...> will then be removed from the end of the text."
+msgstr ""
+"Намуди тегҳо <ном_мондан> дар охири матн истифода бурдан барои ёфтани матн "
+"бо қолиб,муқар байни аломат <ва>. Вақте,ки дар матн во мехӯранд\"ном_мондан"
+"\",дар ин вазъият барқарор кардани гузориш.Дар охири матн тегҳо хориҷ карда "
+"мешавад."
+
+#. i18n: ectx: property (text), widget (QCheckBox, fBookmarksBmk)
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: conduits/docconduit/doc-setupdialog.ui:239
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:286
+#, kde-format
+msgid "Regular &expressions in .bmk file"
+msgstr "Намуди &мунтазам дар файли bmk"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fBookmarksBmk)
+#: conduits/docconduit/doc-setupdialog.ui:242
+#, kde-format
+msgid ""
+"<qt>Check this box to use regular expressions in a file to search the text "
+"for bookmarks. The file should have the same name as the text file, but "
+"should end in .bmk instead of .txt (for instance, the regular expression "
+"file for textname.txt should be textname.bmk). See the documentation for a "
+"description of the format of the bmk file.</qt>"
+msgstr ""
+"<qt>Ботартиб истифода бурдани зуҳурот дар файли номи матнии.bmk (номи матнӣ."
+"txt-номи файли матнӣ)барои гузоришро дар матн ёфтан.Ба санад барои нақл "
+"кардани андозаи файли bmk муроҷиат кунед.</qt>"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: conduits/docconduit/doc-setupdialog.ui:253
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:316
+#, kde-format
+msgid "Handheld -> PC"
+msgstr "КПК->компютер"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fNoConversionOfBmksOnly)
+#: conduits/docconduit/doc-setupdialog.ui:275
+#, kde-format
+msgid "Do not convert, if text unchanged (only bookmarks)"
+msgstr "Дар матни дигар шуда аз нав ташкил додан мумкин нест (фақат гарав) "
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fNoConversionOfBmksOnly)
+#: conduits/docconduit/doc-setupdialog.ui:278
+#, kde-format
+msgid ""
+"<qt>Check this box to avoid syncing the text on the handheld to the PC if "
+"you only changed the bookmarks on the handheld (but not the text).</qt>"
+msgstr ""
+"<qt>Агар шумо хоҳед матнро аз КПК ба компютер ҳангоми таъғири танҳо "
+"гузоришҳо, аммо на худи матнро синхронизатсия кунед, ин нишонаро фаъол созед."
+"</qt>"
+
+#. i18n: ectx: property (title), widget (Q3ButtonGroup, fPCBookmarks)
+#. i18n: ectx: property (title), widget (QButtonGroup)
+#: conduits/docconduit/doc-setupdialog.ui:285
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:344
+#, kde-format
+msgid "Convert Bookmarks"
+msgstr "Тағйири гузориш"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioButton8)
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/docconduit/doc-setupdialog.ui:291
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:372
+#, kde-format
+msgid "Do &not convert bookmarks"
+msgstr "&Тағйир надодани гузориш"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioButton8)
+#: conduits/docconduit/doc-setupdialog.ui:297
+#, kde-format
+msgid ""
+"<qt>Check this box to avoid converting Palm DOC bookmarks to inline tags or "
+"to a bookmark file.</qt>"
+msgstr ""
+"<qt>Барои табдилдиҳии канора гирифтани гузориши Palm DOC дар хати барчаспҳо "
+"тафтиш намоед ё ин ки барои гузориши файл.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioButton11)
+#: conduits/docconduit/doc-setupdialog.ui:304
+#, kde-format
+msgid "Convert into .bm &file"
+msgstr "Дар &файли bm"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioButton11)
+#: conduits/docconduit/doc-setupdialog.ui:313
+#, kde-format
+msgid ""
+"<qt>Check this box to convert the Palm DOC database bookmarks to a separate "
+"file, in the bmk format (see more about this format in the documentation). "
+"The resulting bookmark file shares the same filename as the resulting .txt "
+"file, but ends in .bmk instead. This approach creates a clean text file and "
+"a bookmark file.</qt>"
+msgstr ""
+"<qt>Барои пушидани таърихи гузориши базаи Palm DOCин қуттиро  дар файли ҷудо "
+"шавӣ тафтиш намоед,  дар варақаи bmk (барои бисёртар гирифтани маълумоти ин "
+"варақа ба санадсозӣ нигаред).Натиҷаи гузориши файл барои ҳамон ҳиссаи ном "
+"ҳамчун натичҷаи файли матнӣ, вале ба ҷои охир дар bmk.Ин гузориш барои тоза "
+"намудани файл эҷод менамояд ва гузориши файлро.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioButton9)
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/docconduit/doc-setupdialog.ui:320
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:358
+#, kde-format
+msgid "Convert as &inline tags"
+msgstr "Дар &штамп дар матн."
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioButton9)
+#: conduits/docconduit/doc-setupdialog.ui:326
+#, kde-format
+msgid ""
+"<qt>Check this box to convert the Palm DOC database bookmarks to inline "
+"tags, in the form &lt;* BookmarkName *&gt;. These tags are inserted in the "
+"text in the position marked by the bookmark, and the text inside the tag "
+"corresponds to the bookmark name. Inline tags are easy to create, delete, "
+"move and edit.</qt>"
+msgstr ""
+"<qt>Барои пушидани таърихи гузориши базаи Palm DOCин қуттиро дар файли ҷудо "
+"шавӣ тафтиш намоед,  дар варақаи  &lt; * Гузориши ном*&gt;Натиҷаи гузориши "
+"файл барои ҳамон ҳиссаи ном ҳамчун натичҷаи файли матнӣ, вале ба ҷои охир "
+"дар bmk.Ин гузориш барои тоза намудани файл эҷод менамояд ва гузориши файлро."
+"</qt>"
+
+#. i18n: ectx: property (toolTip), widget (Q3ButtonGroup, fConflictResolution)
+#: conduits/docconduit/doc-setupdialog.ui:346
+#, kde-format
+msgid ""
+"If the same text was changed on the PC and the handheld, which of the two "
+"versions should be used as the new version?"
+msgstr ""
+"Ҳангоми тағйири матн дар КПК ва дар компютери инфиродӣ, кадом якеро аз ду "
+"раванд монондан лозим аст?"
+
+#. i18n: ectx: property (whatsThis), widget (Q3ButtonGroup, fConflictResolution)
+#: conduits/docconduit/doc-setupdialog.ui:349
+#, kde-format
+msgid ""
+"<qt>The Palm DOC conduit does not feature merging the modifications when a "
+"text is changed both in the handheld and in the computer. Therefore, the "
+"choice is between working with the files out of sync, or discarding the "
+"changes in one of them.</qt>"
+msgstr ""
+"<qt>Канали Palm DOC хусусияти якшавӣ надорад он вақте ки матн иваз карда "
+"шудааст ҳам дар дастак ва ҳам дар компютер. Бинобар ҳамин интихоб ин байни "
+"кор аст берун аз синхроизатсия ё инки иваз кардаатонро гузоред ба яке аз "
+"онҳо.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioButton12)
+#: conduits/docconduit/doc-setupdialog.ui:355
+#, kde-format
+msgid "&No resolution"
+msgstr "&Ғайри иҷозаи ихтилоф"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, radioButton12)
+#: conduits/docconduit/doc-setupdialog.ui:361
+#, kde-format
+msgid ""
+"<qt>The Palm DOC conduit does not feature merging the modifications when a "
+"text is changed both in the handheld and in the computer. Therefore, when "
+"conflicts appear, the choice is between working with the files out of sync, "
+"or discarding the changes in one of them. Select this option to prevent "
+"KPilot from overwriting your modifications.</qt>"
+msgstr ""
+"<qt>Канали Palm DOC хусусияти якшавӣ надорад он вақте ки матн иваз карда "
+"шудааст ҳам дар дастак ва ҳам дар компютер. Бинобар ҳамин интихоб ин байни "
+"кор аст берун аз синхроизатсия ё инки иваз кардаатонро гузоред ба яке аз "
+"онҳо.Ин интихобро барои пешгирии KPilot аз ислоҳи рӯйҳамнависӣ интихоб "
+"намоед </qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, RadioButton5)
+#: conduits/docconduit/doc-setupdialog.ui:368
+#, kde-format
+msgid "P&DA overrides"
+msgstr "P&DA Рад кардан."
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, RadioButton5)
+#: conduits/docconduit/doc-setupdialog.ui:374
+#, kde-format
+msgid ""
+"<qt>The Palm DOC conduit does not feature merging the modifications when a "
+"text is changed both in the handheld and in the computer. Therefore, when "
+"conflicts appear, the choice is between working with the files out of sync, "
+"or discarding the changes in one of them. Select this option to make the PDA "
+"version overwrite the PC version in case of conflict.</qt>"
+msgstr ""
+"<qt>Канали Palm DOC хусусияти якшавӣ надорад он вақте ки матн иваз карда "
+"шудааст ҳам дар дастак ва ҳам дар компютер. Бинобар ҳамин ҳангоми пайдо "
+"шудани мухолифат, интихоб ин байни кор аст берун аз синхроизатсия ё инки "
+"иваз кардаатонро гузоред ба яке аз онҳо.Ин интихобро барои сохтани тафсири "
+"PDA руйҳам навиштани тафсири компютер дар ҳолати мухолифат.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, RadioButton4)
+#: conduits/docconduit/doc-setupdialog.ui:381
+#, kde-format
+msgid "P&C overrides"
+msgstr "аз компютери &инфиродӣ"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, RadioButton4)
+#: conduits/docconduit/doc-setupdialog.ui:387
+#, kde-format
+msgid ""
+"<qt>The Palm DOC conduit does not feature merging the modifications when a "
+"text is changed both in the handheld and in the computer. Therefore, when "
+"conflicts appear, the choice is between working with the files out of sync, "
+"or discarding the changes in one of them. Select this option to make the PC "
+"version overwrite the PDA version in case of conflict.</qt>"
+msgstr ""
+"<qt>Канали Palm DOC хусусияти якшавӣ надорад он вақте ки матн иваз карда "
+"шудааст ҳам дар дастак ва ҳам дар компютер. Бинобар ҳамин ҳангоми пайдо "
+"шудани мухолифат, интихоб ин байни кор аст берун аз синхроизатсия ё инки "
+"иваз кардаатонро гузоред ба яке аз онҳо.Ин интихобро барои сохтани тафсири "
+"PDA руйҳам навиштани тафсири компютер дар ҳолати мухолифат.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, RadioButton7)
+#: conduits/docconduit/doc-setupdialog.ui:394
+#, kde-format
+msgid "&Ask the user"
+msgstr "&Аз истифодабаранда пурсед."
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, RadioButton7)
+#: conduits/docconduit/doc-setupdialog.ui:403
+#, kde-format
+msgid ""
+"<qt>The Palm DOC conduit does not feature merging the modifications when a "
+"text is changed both in the handheld and in the computer. Therefore, when "
+"conflicts appear, the choice is between working with the files out of sync, "
+"or discarding the changes in one of them. Select this option to show the "
+"resolution dialog to let the user decide on a case by case basis.</qt>"
+msgstr ""
+"<qt>Канали Palm DOC хусусияти якшавӣ надорад он вақте ки матн иваз карда "
+"шудааст ҳам дар дастак ва ҳам дар компютер. Бинобар ҳамин ҳангоми пайдо "
+"шудани мухолифат, интихоб ин байни кор аст берун аз синхроизатсия ё инки "
+"иваз кардаатонро гузоред ба яке аз онҳо.Ин интихобро барои нишон додани ҳали "
+"гуфтугу ба истифодабаранда имкон медиҳад, ки ҳолат ба ҳолати асосро қарор "
+"намояд.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fAlwaysUseResolution)
+#: conduits/docconduit/doc-setupdialog.ui:413
+#, kde-format
+msgid "&Always show the resolution dialog"
+msgstr "&Ҳама вақт диалоги рухсат додаи низоъро нишон диҳед."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fAlwaysUseResolution)
+#: conduits/docconduit/doc-setupdialog.ui:416
+#, kde-format
+msgid ""
+"<qt>Check this box to force the resolution dialog to appear even when there "
+"are no conflicts.</qt>"
+msgstr ""
+"<qt>Ҳама вақт диалоги рухсат додаи низоъро нишон диҳед, ҳатто агар онҳоро "
+"наёбанд.</qt>"
+
 #: conduits/docconduit/kpalmdoc.cpp:42
 #, kde-format
 msgid "KPalmDOC"
@@ -757,7 +1804,9 @@ msgstr "Каталог &матни текстҳо"
 msgid "&PalmDOC folder:"
 msgstr "Каталог &PalmDOC:"
 
+#. i18n: ectx: property (text), widget (QLabel)
 #: conduits/docconduit/kpalmdoc_dlg.cc:442
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:66
 #, kde-format
 msgid "&Text file:"
 msgstr "&Файли матни:"
@@ -792,6 +1841,139 @@ msgid "<qt>The text file <em>%1</em> already exists. Overwrite it?</qt>"
 msgstr ""
 "<qt>Матни файли <em>%1</em> аллакай вуҷуд дорад.Аз нав ӯро нависанд?</qt>"
 
+#. i18n: ectx: property (text), widget (QLabel)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:47
+#, kde-format
+msgid "&PalmDOC file:"
+msgstr "&Файли PalmDOC:"
+
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:77
+#, kde-format
+msgid "Convert whole &folders"
+msgstr "Аз нав ташкил додани &каталог."
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:85
+#, kde-format
+msgid ""
+"Folder where copies of the handheld databases are kept. You can install them "
+"to any PalmOS handheld, and distribute these copies to other people (but "
+"beware of copyright infringement)."
+msgstr ""
+"Папкаест, ки дар он нусхаҳои махзанҳои маълумоти КПК захира шудаанд. Шумо "
+"метавонед, ин махзанҳои маълумотро дар ягон дастгоҳ, ки бо идоракунии PalmOS "
+"амал карда истодааст сабт кунед ва ин нусхаҳоро ба дигар одамон (аммо оиди "
+"натиҷаи риоя накардани ҳуқуқи муаллифӣ низ дар хотир доред) бидиҳед."
+
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:93
+#, kde-format
+msgid "&Ask before overwriting files"
+msgstr "&Талаб кардани файлҳои дирӯза."
+
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:101
+#, kde-format
+msgid "&Verbose messages"
+msgstr "&Муфассал кардани хабар."
+
+#. i18n: ectx: property (text), widget (KPushButton)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:109
+#, kde-format
+msgid "Convert Text to PalmDOC"
+msgstr "Аз нав ташкил додани матн дар андозаи PalmDOC"
+
+#. i18n: ectx: property (text), widget (KPushButton)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:117
+#, kde-format
+msgid "Convert PalmDOC to Text"
+msgstr "Аз нав ташкил додани PalmDOС дар матн."
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:142
+#, kde-format
+msgid ""
+"Enter the name of the folder where the text files reside on the PC. All "
+"files with extension .txt will be synced to the handheld."
+msgstr ""
+"Ба роҳ даровардан ба ҷузъгир куҷое,ки ба компютери файли матнӣ ҷо ба ҷо "
+"кардан.Ҳамаи файлҳо бо зиёдкунии txt аз КПК синхрониза- ция карда мешавад."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:236
+#, kde-format
+msgid ""
+"When a <* bookmarktext *> appears somewhere in the text, a bookmark will be "
+"set at this position, and the text between the <* and the *> will be used as "
+"bookmark name. The <*...*> will be removed from the text."
+msgstr ""
+"Агар дар матн тег ҳузур бошад <* матни гузориш *>,дар мавқеъи даромадгоҳи "
+"матн гузоштани мавқеъ бо ном дар <* and the *> муқаррар аст."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:247
+#, kde-format
+msgid ""
+"Tags of the form <bookmarkname> at the end of the text will be used to "
+"search the text for the pattern between the < and >. Whenever \"bookmarkname"
+"\" appears in the text, a bookmark will be set there. The endtags <...> will "
+"then be removed from the end of the text."
+msgstr ""
+"Намуди тегҳо <номи_гузориш> дар охири текст истифода мебарем,барои ёфтани "
+"матн бо нусха,муқаррар кардани байни рамз < ва >. Кадом вақте,ки дар матн рӯ "
+"ба рӯ шудани \"номи_ гузориш\" ,дар ин мавқеъ дуруст кардани гузориш.Тегҳо "
+"дар охири матн хориҷ карда мешавад."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:264
+#, no-c-format, kde-format
+msgid ""
+"The Palm doc format supports compressing the text to save memory. If you "
+"check this box, the text will consume about 50% less memory than in "
+"uncompressed state. Almost all DOC readers on the Palm support compressed "
+"texts."
+msgstr ""
+"Андозаи PalmDOC истифода кардани тазиқ барои авсеъ кардани зеҳни муста- "
+"қилона.Дар вақти даровардани ин байрақ шумо қапиб 50%андозаи файлро сарфа "
+"мекунед.Қариб ҳамаи барномаи хондании PalmDOC матнҳои тазиқро нигоҳ доштан."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:278
+#, kde-format
+msgid ""
+"Do you want to convert bookmarks? Most doc readers support bookmarks. You "
+"have to provide some information about where the bookmarks should be set and "
+"their titles. Check at least one of the bookmark types below."
+msgstr ""
+"Оё,шумо мехоҳед,гузоришро аз нав ташкил кунед? Аксарияти барномаҳои хондани "
+"матн гузоришро нигоҳ доштан.Шумо метавонед, мавқеъ ва номи гузоришро нишон "
+"диҳед.Ақалан як намуди дар поён бударо интихоб кунед."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:289
+#, kde-format
+msgid ""
+"Use regular expressions in a file textname.bmk (textname.txt is the filename "
+"of the text) to search the text for bookmarks.See the documentation for a "
+"description of the format of the bmk file."
+msgstr ""
+"Ботартиб истифода бурдани изҳор дар файли textname.bmk (textname.txt - номи "
+"матни файл ) барои ёфтани гузориш дар матн.Ба ҳуҷҷатҳо аз тавсифи андозаи "
+"файли bmk муроҷиат кардан."
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:386
+#, kde-format
+msgid "Convert as &end tags"
+msgstr "Тегҳо дар охири &матн."
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/docconduit/kpalmdoc_dlgbase.ui:394
+#, kde-format
+msgid "Convert into .bmk &file"
+msgstr "Дар &файли .bmk"
+
 #: conduits/keyringconduit/keyringconduit.cc:73
 #, kde-format
 msgid "Error: Triple DES not supported. Unable to continue."
@@ -818,9 +2000,160 @@ msgstr ""
 msgid "Enter your Keyring password"
 msgstr ""
 
+#. i18n: ectx: label, entry (DatabaseUrl), group (keyring-conduit)
+#: conduits/keyringconduit/keyringconduit.kcfg:7
+#, kde-format
+msgid "Which local file do you want to use to sync the palm database with?"
+msgstr ""
+
 #: conduits/keyringconduit/keyringeditor/main.cc:54
 #, kde-format
 msgid "Test Date Book"
+msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, PasswordDialog)
+#: conduits/keyringconduit/keyringeditor/passworddialog.ui:13
+#, fuzzy, kde-format
+#| msgid "Use &Dialog"
+msgid "Dialog"
+msgstr "Истифодаи &тирезаи диалог"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: conduits/keyringconduit/keyringeditor/passworddialog.ui:21
+#: conduits/keyringconduit/keyringeditor/viewer.ui:111
+#, fuzzy, kde-format
+#| msgid "&Password:"
+msgid "Password:"
+msgstr "&Гузарвожа:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: conduits/keyringconduit/keyringeditor/passworddialog.ui:28
+#, fuzzy, kde-format
+#| msgid "&Password:"
+msgid "Retype password:"
+msgstr "&Гузарвожа:"
+
+#. i18n: ectx: property (text), widget (QLabel, equalLabel)
+#: conduits/keyringconduit/keyringeditor/passworddialog.ui:71
+#, fuzzy, kde-format
+#| msgid "Password set"
+msgid "Passwords do not match."
+msgstr "Ҳимояташ бо нишон"
+
+#. i18n: ectx: property (windowTitle), widget (QMainWindow, MainWindow)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:13
+#, fuzzy, kde-format
+#| msgid "Record index:"
+msgid "Keyring Editor"
+msgstr "Рақами сабт:"
+
+#. i18n: ectx: property (text), widget (QPushButton, fDeleteButton)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:57
+#, kde-format
+msgid "Delete Record"
+msgstr "Тоза кардани сабт"
+
+#. i18n: ectx: property (text), widget (QPushButton, fNewButton)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:64
+#, fuzzy, kde-format
+#| msgid "New Record..."
+msgid "New Record"
+msgstr "Сабти нав..."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:91
+#, kde-format
+msgid "Name:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:101
+#, fuzzy, kde-format
+#| msgid "Country:"
+msgid "Account:"
+msgstr "Мамлакат:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:121
+#, kde-format
+msgid "Category"
+msgstr "Категория"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:128
+#, fuzzy, kde-format
+#| msgid "changed"
+msgid "Last changed:"
+msgstr "дигаргун шудааст"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, fPasswordBox)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:169
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Show or hide password.</"
+"p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fPasswordBox)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:175
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Show or hide password</p></"
+"body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:203
+#, fuzzy, kde-format
+#| msgid "Note:\n"
+msgid "Notes:"
+msgstr "Қайд:\n"
+
+#. i18n: ectx: property (title), widget (QMenu, menu_File)
+#. i18n: ectx: Menu (file)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:225 kpilot/kpilotui.rc:5
+#, fuzzy, kde-format
+#| msgid "Title"
+msgid "&File"
+msgstr "Сарлавҳа"
+
+#. i18n: ectx: property (text), widget (QMenu, menu_File)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:236
+#, fuzzy, kde-format
+#| msgid "&Note:"
+msgid "&New"
+msgstr "&Эзоҳот:"
+
+#. i18n: ectx: property (text), widget (QMenu, menu_File)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:241
+#, kde-format
+msgid "&Open"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QMenu, menu_File)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:246
+#, fuzzy, kde-format
+#| msgid "&Edit..."
+msgid "&Exit"
+msgstr "&Муҳаррир..."
+
+#. i18n: ectx: property (toolTip), widget (QMenu, menu_File)
+#: conduits/keyringconduit/keyringeditor/viewer.ui:249
+#, kde-format
+msgid "Saves the current open database and closes the application."
 msgstr ""
 
 #: conduits/keyringconduit/keyringhhdataproxy.cc:217
@@ -868,6 +2201,81 @@ msgstr "Муаллиф"
 #| msgid "Record index:"
 msgid "Keyring Conduit"
 msgstr "Рақами сабт:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: conduits/keyringconduit/keyringwidget.ui:34
+#, fuzzy, kde-format
+#| msgid "Viewer settings."
+msgid "Keyring Settings"
+msgstr "Параметри нигоҳкунандаҳо."
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, fLocalDatabaseUrl)
+#: conduits/keyringconduit/keyringwidget.ui:43
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Select the file that you "
+"want to sync your PDA's keyring items with.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, fLocalDatabaseUrl)
+#: conduits/keyringconduit/keyringwidget.ui:49
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Select the keyring file on "
+"the computer which you wish to sync with the keyring database on the "
+"handheld.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: conduits/keyringconduit/keyringwidget.ui:62
+#, kde-format
+msgid "Local keyring file:"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: conduits/keyringconduit/keyringwidget.ui:75
+#, fuzzy, kde-format
+#| msgid "Password set"
+msgid "Password Settings"
+msgstr "Ҳимояташ бо нишон"
+
+#. i18n: ectx: property (text), widget (QRadioButton, fSavePassButton)
+#: conduits/keyringconduit/keyringwidget.ui:89
+#, fuzzy, kde-format
+#| msgid "No password set"
+msgid "Save password in wallet:"
+msgstr "Нишон барқарор нашудааст"
+
+#. i18n: ectx: property (text), widget (QRadioButton, fAskPassButton)
+#: conduits/keyringconduit/keyringwidget.ui:105
+#, kde-format
+msgid "Ask for password at each sync"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, fWalletErrorMessage)
+#: conduits/keyringconduit/keyringwidget.ui:145
+#, kde-format
+msgid ""
+"Unable to access the KDE system wallet. Unable to load or save your password."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, fQCAErrorMessage)
+#: conduits/keyringconduit/keyringwidget.ui:200
+#, kde-format
+msgid "Error: Unable to load triple DES QCA2 support."
+msgstr ""
 
 #: conduits/malconduit/mal-conduit.cc:120 conduits/malconduit/mal-setup.cc:62
 #, kde-format
@@ -957,6 +2365,309 @@ msgstr ""
 msgid "Authors of the malsync library (c) 1997-1999"
 msgstr "Муаллифи китобхонаи malsync (c) 1997-1999"
 
+#. i18n: ectx: property (title), widget (QButtonGroup)
+#: conduits/malconduit/mal-setup_dialog.ui:49
+#, kde-format
+msgid "Sync"
+msgstr "Синхронизация"
+
+#. i18n: ectx: property (whatsThis), widget (QButtonGroup)
+#: conduits/malconduit/mal-setup_dialog.ui:52
+#, fuzzy, kde-format
+#| msgid "Select how often AvantGo should be synchronised"
+msgid "Select how often AvantGo should be synchronized"
+msgstr "Интихоб кунед, чи қадар тез AvantGo бояд синхронизациа шавад."
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:72
+#, kde-format
+msgid "&Every sync"
+msgstr "&Ҳар як синхронизациа."
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:78
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize with the MAL server on every HotSync. "
+"To perform a successful synchronization, you need to have access to the MAL "
+"server during the HotSync.</qt>"
+msgstr ""
+"<qt>Ин ҷудокардагиро интихоб кунед барои синхронизасия кардан бо сервери МАL "
+"дар ҳар як Hotsync. Барои нишон додани синхронизасияро бомуваффақият,ба шумо "
+"лозим ҳаст, ки ба сервери МАL дароед дар вақти Ноtsync.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:86
+#, kde-format
+msgid "Once per &hour"
+msgstr "Як маротиба дар &соати як."
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:92
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize with the MAL server on every HotSync "
+"that is at least one hour after the previous MAL sync. To perform a "
+"successful synchronization, you need to have access to the MAL server during "
+"the HotSync.</qt>"
+msgstr ""
+"<qt>Ин ҷудокардагиро интихоб кунед барои синхронизасия кардан бо сервери МАL "
+"дар ҳар як Нotsync, ки камаш як соат баъди синхронизасияи пештара МАL.Барои "
+"нишон додани синхронизасияро бомуваффақият, ба шумо лозим ҳаст,ки ба сервери "
+"МАL дар вақти Нotsync.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:100
+#, kde-format
+msgid "Once a &day"
+msgstr "Як маротиба дар як &рӯз."
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:103
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize with the MAL server on every HotSync "
+"that is at least one day after the previous MAL sync. To perform a "
+"successful synchronization, you need to have access to the MAL server during "
+"the HotSync.</qt>"
+msgstr ""
+"<qt>Ин ҷудокардагиро интихоб кунед барои синхронизасия кардан бо сервери МАL "
+"дар ҳар як Нotsync, ки камаш як рӯз баъди синхронизасияи пештара МАL.Барои "
+"нишон додани синхронизасияро бомуваффақият, ба шумо лозим ҳаст,ки ба сервери "
+"МАL дар вақти Нotsync.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:111
+#, kde-format
+msgid "Once a &week"
+msgstr "&Як маротиба дар як ҳафта."
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:114
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize with the MAL server on every HotSync "
+"that is at least one week after the previous MAL sync. To perform a "
+"successful synchronization, you need to have access to the MAL server during "
+"the HotSync.</qt>"
+msgstr ""
+"<qt>Ин ҷудокардагиро интихоб кунед барои синхронизасия кардан бо сервери МАL "
+"дар ҳар як Нotsync, ки камаш як ҳафта баъди синхронизасияи пештара МАL.Барои "
+"нишон додани синхронизасияро бомуваффақият, ба шумо лозим ҳаст,ки ба сервери "
+"МАL дар вақти Нotsync.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:122
+#, kde-format
+msgid "Once a &month"
+msgstr "Як маротиба дар як &моҳ."
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:125
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize with the MAL server on every HotSync "
+"that is at least one month after the previous MAL sync. To perform a "
+"successful synchronization, you need to have access to the MAL server during "
+"the HotSync.</qt>"
+msgstr ""
+"<qt>Ин интихобро барои синхронизация кардан бо сервери MAL дар ҳар як "
+"синхронизатсияи Hot на кам аз як моҳ пас аз MAL-и пештара синхоризатсия "
+"карда мешавад.Барои бо муваффақият синхронизатсия намоед, ба Шумо лозим "
+"меояд, ки ҳангоми дар сервери синхронизатсияи Hot будан  ба сервери MAL "
+"дастёб бошед.</qt>"
+
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: conduits/malconduit/mal-setup_dialog.ui:154
+#, kde-format
+msgid "Proxy"
+msgstr "Прокси:"
+
+#. i18n: ectx: property (title), widget (QButtonGroup)
+#: conduits/malconduit/mal-setup_dialog.ui:168
+#, kde-format
+msgid "Proxy Type"
+msgstr "Намуди прокси"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:185
+#, kde-format
+msgid "&No proxy"
+msgstr "&Прокси нест"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:191
+#, kde-format
+msgid ""
+"<qt>Select this option if you do not want KPilot to use a proxy server. Use "
+"this option if you connect to the internet directly.</qt>"
+msgstr ""
+"<qt>Агар хоҳед ин параметро дуруст кунед,барои пилот истифода кардани прокси "
+"шимол.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:199
+#, kde-format
+msgid "&HTTP proxy"
+msgstr "&Прокси HTTP"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:202
+#, kde-format
+msgid "<qt>Select this option if you want KPilot to use a HTTP proxy.</qt>"
+msgstr ""
+"<qt>Агар хоҳед ин параметро дуруст кунед,,барои пилот прокси-шимоли HTTP  "
+"истифода баред.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:210
+#, kde-format
+msgid "&SOCKS proxy"
+msgstr "&Прокси SOCKS"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/malconduit/mal-setup_dialog.ui:213
+#, kde-format
+msgid "<qt>Select this option if you want KPilot to use a SOCKS proxy.</qt>"
+msgstr ""
+"<qt>Агар хоҳед ин пареметро дуруст кунед барои пилот прокси-шимоли SOCKS.</"
+"qt>"
+
+#. i18n: ectx: property (title), widget (QGroupBox)
+#: conduits/malconduit/mal-setup_dialog.ui:226
+#, kde-format
+msgid "Server Information"
+msgstr "Иттилооти сервер"
+
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: conduits/malconduit/mal-setup_dialog.ui:260
+#: conduits/malconduit/mal-setup_dialog.ui:453
+#, kde-format
+msgid "Custom &port:"
+msgstr "Бандари &оддӣ:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: conduits/malconduit/mal-setup_dialog.ui:263
+#, kde-format
+msgid "Check this box to use a non-standard proxy port."
+msgstr ""
+"Ин қуттиро санҷида гиред барои истифодаи бандари бе-стандартро аз барои "
+"эътимод."
+
+#. i18n: ectx: property (text), widget (QLabel)
+#: conduits/malconduit/mal-setup_dialog.ui:271
+#, kde-format
+msgid "Ser&ver name:"
+msgstr "Но&ми сервер:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel)
+#. i18n: ectx: property (whatsThis), widget (KHistoryComboBox)
+#: conduits/malconduit/mal-setup_dialog.ui:277
+#: conduits/malconduit/mal-setup_dialog.ui:285
+#, kde-format
+msgid ""
+"<qt>If you selected HTTP or SOCKS proxy, type the address of the proxy "
+"server to use here, in the form <i>foo.bar.com</i> (not <i>http://foo.bar."
+"com</i> or <i>http://foo.bar.com:8080</i>).</qt>"
+msgstr ""
+"<qt> Адреси истифода бурдаи прокси-шимол, мисол:\n"
+"<u><i>foo.bar.com</i></u>\n"
+"<b> не</b>\n"
+"<i>http://foo.bar.com</i> ё ин ки <i>http://foo.bar.com:8080</i>.</qt>"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit)
+#: conduits/malconduit/mal-setup_dialog.ui:296
+#, kde-format
+msgid ""
+"<qt>Enter the port you want KPilot to use when connecting to your proxy "
+"server here.</qt>"
+msgstr ""
+"<qt> Портро нишон диҳед, кадом пилот бояд барои алоқа прокси-шимол- ро "
+"истифода барад. </qt>"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit)
+#: conduits/malconduit/mal-setup_dialog.ui:307
+#, kde-format
+msgid ""
+"<qt>If your proxy requires authentication, enter your password here.</qt>"
+msgstr ""
+"<qt> Дар ин ҷо номи шабро гузоред,мабодо прокси-шимол авторизацияро талаб "
+"кунед..</qt>"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit)
+#. i18n: ectx: property (whatsThis), widget (QLabel)
+#: conduits/malconduit/mal-setup_dialog.ui:315
+#: conduits/malconduit/mal-setup_dialog.ui:340
+#, kde-format
+msgid ""
+"<qt>If your proxy requires authentication, enter your username here.</qt>"
+msgstr ""
+"<qt>Дар ин ҷо номи истифодабарандаро гузоред,мабодо прокси-шимол "
+"авторизацияро талаб кунад.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel)
+#: conduits/malconduit/mal-setup_dialog.ui:323
+#: conduits/malconduit/mal-setup_dialog.ui:496
+#, kde-format
+msgid "&Password:"
+msgstr "&Гузарвожа:"
+
+#. i18n: ectx: property (text), widget (QLabel)
+#: conduits/malconduit/mal-setup_dialog.ui:334
+#: conduits/malconduit/mal-setup_dialog.ui:507
+#, kde-format
+msgid "&User name:"
+msgstr "&Номи истифодакунанда:"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit)
+#. i18n: ectx: property (whatsThis), widget (QLabel)
+#: conduits/malconduit/mal-setup_dialog.ui:362
+#: conduits/malconduit/mal-setup_dialog.ui:376
+#, kde-format
+msgid ""
+"<qt>Enter a list of MAL servers that do not need the use of a proxy here, "
+"separated with commas, e.g: <br><i>localhost,127.0.0.1,.lan</i><qt>"
+msgstr ""
+"<qt> Вергулҳои ҷудо шударо дар руйхати хизматгузории MAL гузоред, кадоме,ки "
+"мӯҳтоҷи истифода бурдани прокси хизматгузорӣ нест, мисол  <br><i>хӯҷаини "
+"маҳаллӣ,127.0.0.1,.lan</i><qt>"
+
+#. i18n: ectx: property (text), widget (QLabel)
+#: conduits/malconduit/mal-setup_dialog.ui:370
+#, kde-format
+msgid "N&o proxy for:"
+msgstr "Прокси барои &нест:"
+
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: conduits/malconduit/mal-setup_dialog.ui:405
+#, kde-format
+msgid "MAL Server"
+msgstr "Сервери MAL"
+
+#. i18n: ectx: property (title), widget (QGroupBox)
+#: conduits/malconduit/mal-setup_dialog.ui:425
+#, kde-format
+msgid "MAL Server Information"
+msgstr "Ахбороти сервери MAL"
+
+#. i18n: ectx: property (text), widget (QLabel)
+#: conduits/malconduit/mal-setup_dialog.ui:442
+#, kde-format
+msgid "&MAL server name:"
+msgstr "&Номи сервери MAL:"
+
+#. i18n: ectx: property (text), widget (QLabel)
+#: conduits/malconduit/mal-setup_dialog.ui:556
+#, kde-format
+msgid ""
+"<qt>There is currently <b>no way to set server parameters on the desktop</"
+"b>; you need to use the <i>MobileLink</i> or <i>AGConnect</i> application on "
+"the handheld device. </qt>"
+msgstr ""
+"<qt>Имконияти дуруст нест барои дуруст кардани параметрҳои хизматгузории "
+"компютери персоналӣ. Истифодаи мӯҳрзанӣ зарур аст. <i>MobileLink</i> на КПК."
+"</qt>"
+
 #: conduits/memofile/memofilefactory.cc:67
 #: conduits/memofileconduit/memofile-conduit.cc:64
 #: conduits/memofileconduit/memofile-factory.cc:67
@@ -987,6 +2698,57 @@ msgstr ""
 #, kde-format
 msgid "Jason 'vanRijn' Kasper"
 msgstr ""
+
+#. i18n: ectx: label, entry (Directory), group (memofile-conduit)
+#: conduits/memofile/memofilesettings.kcfg:6
+#: conduits/memofileconduit/memofileconduit.kcfg:6
+#, kde-format
+msgid "What directory do you want to sync your PDA's memos with?"
+msgstr ""
+
+#. i18n: ectx: label, entry (SyncPrivate), group (memofile-conduit)
+#: conduits/memofile/memofilesettings.kcfg:10
+#: conduits/memofileconduit/memofileconduit.kcfg:10
+#, kde-format
+msgid "Do you want to sync your private records to the filesystem?"
+msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, MemofileWidget)
+#: conduits/memofile/settingswidget.ui:28
+#: conduits/memofileconduit/setup_base.ui:28
+#, fuzzy, kde-format
+msgid "Memofile Conduit Options"
+msgstr "Мизроб кардани канали Perl"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: conduits/memofile/settingswidget.ui:35
+#: conduits/memofileconduit/setup_base.ui:35
+#, fuzzy, kde-format
+#| msgid "General"
+msgctxt "General settings for memofile conduit."
+msgid "General"
+msgstr "Умумӣ"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: conduits/memofile/settingswidget.ui:41
+#: conduits/memofileconduit/setup_base.ui:41
+#, fuzzy, kde-format
+msgid "Memos directory:"
+msgstr "Матни қайдҳо:"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, fDirectory)
+#: conduits/memofile/settingswidget.ui:54
+#: conduits/memofileconduit/setup_base.ui:54
+#, kde-format
+msgid "Select the directory you want to store your PDA's memos in"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: conduits/memofile/settingswidget.ui:61
+#: conduits/memofileconduit/setup_base.ui:61
+#, fuzzy, kde-format
+msgid "Sync private records:"
+msgstr "&Расмҳои ғайрихизматиро нишон диҳед."
 
 #: conduits/memofileconduit/memofile-conduit.cc:83
 #, fuzzy, kde-format
@@ -1079,6 +2841,24 @@ msgstr ""
 msgid "Notepad conduit is based on Angus' read-notepad, part of pilot-link"
 msgstr "Канали қайдҳо дар асоси дар қисмати pilot-link, эҷодкунандаи Angus"
 
+#. i18n: ectx: property (whatsThis), widget (QWidget, NotepadWidget)
+#: conduits/notepadconduit/notepad-setup.ui:14
+#, kde-format
+msgid "Path to the directory to which the pictures should be exported."
+msgstr "Роҳ ба каталог,дар кадоме,ки мо бояд расмро нигоҳ дорем."
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: conduits/notepadconduit/notepad-setup.ui:27
+#, kde-format
+msgid "Output:"
+msgstr "Барориш:"
+
+#. i18n: ectx: label, entry (outputDirectory), group (Notepad-conduit)
+#: conduits/notepadconduit/notepadconduit.kcfg:9
+#, kde-format
+msgid "The export directory for the notepad drawings"
+msgstr ""
+
 #: conduits/null/null-conduit.cc:60 conduits/null/null-factory.cc:69
 #, fuzzy, kde-format
 #| msgid "Null"
@@ -1106,6 +2886,48 @@ msgstr "Танзимдарориҳои канали сифрӣ"
 #, kde-format
 msgid "(C) 2001, 2007, Adriaan de Groot"
 msgstr ""
+
+#. i18n: ectx: label, entry (LogMessage), group (Null-conduit)
+#: conduits/null/nullconduit.kcfg:9
+#, kde-format
+msgid "The error message if the null conduit is supposed to fail"
+msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, NullWidget)
+#: conduits/null/setup_base.ui:28
+#, kde-format
+msgid "Null-Conduit Options"
+msgstr "Мизроб кардани канали нулевой."
+
+#. i18n: ectx: property (whatsThis), widget (QWidget, NullWidget)
+#: conduits/null/setup_base.ui:31
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Enter the message to add to the Sync Log on your Pilot here.</qt>"
+msgid ""
+"&lt;qt>Enter the message to add to the Sync Log on your Pilot here.&lt;/qt>"
+msgstr ""
+"<qt>Хабар нависед ки он дар маҷалаи синхронизация нигоҳ дошта мешавад</qt>"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: conduits/null/setup_base.ui:38
+#, fuzzy, kde-format
+#| msgid "General"
+msgctxt "General settings for the null conduit."
+msgid "General"
+msgstr "Умумӣ"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel1_2)
+#: conduits/null/setup_base.ui:44
+#, kde-format
+msgid "&Log message:"
+msgstr "&Хабар:"
+
+#. i18n: ectx: property (text), widget (KLineEdit, fLogMessage)
+#: conduits/null/setup_base.ui:63
+#, kde-format
+msgid "KPilot was here."
+msgstr "Дар ин ҷо KPilot буд."
 
 #: conduits/popmail/popmail-conduit.cc:78 conduits/popmail/setupDialog.cc:64
 #, kde-format
@@ -1166,6 +2988,110 @@ msgstr ""
 #, kde-format
 msgid "Unable to open mail database on handheld"
 msgstr "Кушодани базаи тақвим ба КПК муяссар карда намешавад."
+
+#. i18n: ectx: label, entry (SyncOutgoing), group (General)
+#: conduits/popmail/popmail.kcfg:9
+#, kde-format
+msgid "Selects the way in which mail is sent: none (0), kmail (1)."
+msgstr ""
+
+#. i18n: ectx: label, entry (EmailAddress), group (General)
+#: conduits/popmail/popmail.kcfg:13
+#, kde-format
+msgid "The email address entered in the To: field of outgoing messages."
+msgstr ""
+
+#. i18n: ectx: label, entry (Signature), group (General)
+#: conduits/popmail/popmail.kcfg:17
+#, kde-format
+msgid "The pathname of your .signature file."
+msgstr ""
+
+#. i18n: ectx: label, entry (OutboxFolder), group (General)
+#: conduits/popmail/popmail.kcfg:21
+#, kde-format
+msgid "The name of KMail's outbox - use with caution."
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: conduits/popmail/setup-dialog.ui:17
+#, kde-format
+msgid "Send Mail"
+msgstr "Фиристондани почтаҳо."
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_2)
+#. i18n: ectx: property (whatsThis), widget (QComboBox, fSendMode)
+#: conduits/popmail/setup-dialog.ui:23 conduits/popmail/setup-dialog.ui:39
+#, kde-format
+msgid ""
+"<qt>Select the method KPilot will use to send the mail from your Handheld to "
+"the recipients here. Depending on the method you choose, the other fields in "
+"the dialog may be enabled or disabled. Currently, the only <i>working</i> "
+"method is through KMail.</qt>"
+msgstr ""
+"<qt>Ин руйхат метавонад, барои шумо ин методро интихоб кунад,истифодабарии "
+"пилот барои фиристондани почта аз КПК муқаррар кардани гиранда.Мутобиат аз "
+"методи интихоб карда,як хел параметрҳо дохил карда мешавад ё қатъ карда "
+"мешавад.Дар тафсири ҷоришаванда ягона <i>коркун</i>метод-азKMail.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: conduits/popmail/setup-dialog.ui:26
+#, kde-format
+msgid "Send method:"
+msgstr "Методи фиристондан:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, fSendMode)
+#: conduits/popmail/setup-dialog.ui:43
+#, kde-format
+msgid "Do Not Send Mail"
+msgstr "Нафиристонидани почта."
+
+#. i18n: ectx: property (text), item, widget (QComboBox, fSendMode)
+#: conduits/popmail/setup-dialog.ui:48
+#, kde-format
+msgid "Use KMail"
+msgstr "Истифодаи KMail"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, fEmailFrom)
+#: conduits/popmail/setup-dialog.ui:56 conduits/popmail/setup-dialog.ui:69
+#, kde-format
+msgid "<qt>Enter the email address you want to send messages as here.</qt>"
+msgstr "<qt> Адреси почтаи электроникаи гирандаро нишон диҳед.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: conduits/popmail/setup-dialog.ui:59
+#, kde-format
+msgid "Email address:"
+msgstr "Адреси почтаи электронӣ:"
+
+#. i18n: ectx: property (text), widget (KLineEdit, fEmailFrom)
+#: conduits/popmail/setup-dialog.ui:72
+#, kde-format
+msgid "$USER"
+msgstr "$ИСТИФОДАКУНАНДА"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel2)
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, fSignature)
+#: conduits/popmail/setup-dialog.ui:79 conduits/popmail/setup-dialog.ui:92
+#, kde-format
+msgid ""
+"<qt>If you want to add a signature file, enter the location of your "
+"signature file (usually, <i>.signature</i>, located in your home folder) "
+"here, or select it clicking the file picker button. The signature file "
+"contains the text that is added to the end of your outgoing mail messages.</"
+"qt>"
+msgstr ""
+"<qt>Агар шумо хоҳед, ки имзои файлро илова намоед, пас номи ҷойгиршавии "
+"файли имзоро ( одотан, <i>.имзои</i>, дар дар папкаи ҷойгиршуда) дар инҷо "
+"ворид созед, ё инки тугмаи файли picker интихоб намоед.Имзои файли шумо дар "
+"охири баромадгоҳи почтаи мактубатон матне илова карда шудааст.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: conduits/popmail/setup-dialog.ui:82
+#, kde-format
+msgid "Signature file:"
+msgstr "Файли имзо карда:"
 
 #: conduits/popmail/setupDialog.cc:66
 #, kde-format
@@ -1320,6 +3246,179 @@ msgstr ""
 msgid "(C) 2003, Reinhold Kainhofer"
 msgstr ""
 
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester)
+#. i18n: ectx: property (whatsThis), widget (QLabel)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:63
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:77
+#, kde-format
+msgid ""
+"<qt>Enter here, or select by clicking the file picker button, the location "
+"and file name of the output file used to store the handheld's system "
+"information.</qt>"
+msgstr "<qt> ба инчо дароед,ё ин ки интихоби бо </qt>"
+
+#. i18n: ectx: property (text), widget (QLabel)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:71
+#, kde-format
+msgid "Output &file:"
+msgstr "&Файл барои барориш:"
+
+#. i18n: ectx: property (title), widget (QButtonGroup)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:85
+#, kde-format
+msgid "Type of Output"
+msgstr "Намуди барориш"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:96
+#, kde-format
+msgid "&HTML"
+msgstr "&HTML"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:102
+#, fuzzy, kde-format
+msgid ""
+"<qt>Select this option to output the system information data as a HTML "
+"document.</qt>"
+msgstr ""
+"ин амалро интиихоб карда системаи хабарии таърихи рузро ба монанди документи "
+"HTML хорич кунед</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:110
+#, fuzzy, kde-format
+#| msgid "&Text file:"
+msgid "Te&xt file"
+msgstr "&Файли матни:"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:113
+#, kde-format
+msgid ""
+"<qt>Select this option to output the system information data as a text "
+"document.</qt>"
+msgstr ""
+"<qt>Инро интихоб кунед барои баровардан  ахбороти система базаро ҳамчун "
+"документи  тексти.</qt>"
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:124
+#, kde-format
+msgid ""
+"<qt>Enter here, or select by clicking on the file picker button, the "
+"location of the template to be used if you select the Custom template option."
+"</qt>"
+msgstr ""
+"<qt>Ба инҷо дароед,ё бо пахши тугмача ба болои файлгирак интихоб кунед, ҷойи "
+"гардаро бояд истифода бошад агар шумо Гардаи гумрукро ҷудокардашударо "
+"интихоб кардед.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:132
+#, kde-format
+msgid "&Custom template:"
+msgstr "&Қолиби оддӣ:"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:135
+#, kde-format
+msgid ""
+"<qt>Select this option to output the system information data as defined by a "
+"custom template. Enter the location of the template in the edit box, or "
+"select it clicking on the file picker button.</qt>"
+msgstr ""
+"<qt> Ин ҷудокардагиро интихоб кунед барои баровардани базаи ахбороти система "
+"-ро ҳамчун аз тарафигардаи гумрук муайянкардашуда.Ба ҷои ба template дар "
+"қуттии вироиши дароед.</qt>"
+
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:147
+#, kde-format
+msgid "Parts Included"
+msgstr "Қисмҳо ҳастанд"
+
+#. i18n: ectx: property (text), widget (QListView)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:173
+#, kde-format
+msgid "Output Type"
+msgstr "Намуди барориш"
+
+#. i18n: ectx: property (whatsThis), widget (QListView)
+#: conduits/sysinfoconduit/sysinfo-setup_dialog.ui:189
+#, kde-format
+msgid ""
+"<qt>Check on this list the types of information about your system and "
+"handheld you want to display in the output file.</qt>"
+msgstr ""
+"<qt>Дар ин саҳифа намудҳои ахборотро дар бораи системаатон санҷед ва "
+"дастқапро шумо мехоҳед нишон диҳед дар файли бароврда шуда.</qt>"
+
+#. i18n: ectx: label, entry (DebugInformation), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:23
+#, kde-format
+msgid "Debug information (for KPilot developers)"
+msgstr ""
+
+#. i18n: ectx: label, entry (HardwareInfo), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:27
+#, fuzzy, kde-format
+#| msgid "Database information"
+msgid "Hardware information"
+msgstr "Ахборот дар бораи базаи маълумотҳо"
+
+#. i18n: ectx: label, entry (DatabaseList), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:31
+#, kde-format
+msgid "List of databases on handheld (takes a long time.)"
+msgstr ""
+
+#. i18n: ectx: label, entry (MemoryInfo), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:35
+#, fuzzy, kde-format
+#| msgid "System Information"
+msgid "Memory information"
+msgstr "Системаи ахборотӣ"
+
+#. i18n: ectx: label, entry (RecordNumbers), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:39
+#, kde-format
+msgid "Number of addresses, todos, events and memos"
+msgstr ""
+
+#. i18n: ectx: label, entry (PalmOSVersion), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:43
+#, fuzzy, kde-format
+#| msgid "PalmOSVersion"
+msgid "PalmOS version"
+msgstr "Ривояти PalmOS"
+
+#. i18n: ectx: label, entry (StorageInfo), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:47
+#, kde-format
+msgid "Storage info (SD card, memory stick, ...)"
+msgstr ""
+
+#. i18n: ectx: label, entry (SyncInfo), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:51
+#, fuzzy, kde-format
+#| msgid "Synchronization Mode"
+msgid "Synchronization information"
+msgstr "Тартиботи синхронизация."
+
+#. i18n: ectx: label, entry (UserInfo), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:55
+#, fuzzy, kde-format
+#| msgid "Database information"
+msgid "User information"
+msgstr "Ахборот дар бораи базаи маълумотҳо"
+
+#. i18n: ectx: label, entry (KDEVersion), group (General)
+#: conduits/sysinfoconduit/sysinfoconduit.kcfg:59
+#, kde-format
+msgid "Version of KPilot, pilot-link and KDE"
+msgstr ""
+
 #: conduits/timeconduit/time-conduit.cc:52
 #: conduits/timeconduit/time-setup.cc:66
 #, kde-format
@@ -1350,6 +3449,67 @@ msgstr "Канали синхронизатсияи вақт"
 msgid "Synchronizes the Time on the Handheld and the PC"
 msgstr "Синхронизатсияи вақт дар КПК ва дар компютери персоналӣ"
 
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: conduits/timeconduit/time-setup_dialog.ui:18
+#, fuzzy, kde-format
+#| msgid "General"
+msgctxt "General settings for time conduit."
+msgid "General"
+msgstr "Умумӣ"
+
+#. i18n: ectx: property (title), widget (Q3ButtonGroup, directionGroup)
+#: conduits/timeconduit/time-setup_dialog.ui:24
+#, kde-format
+msgid "Direction"
+msgstr "Фиристодан."
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, RadioButton1)
+#: conduits/timeconduit/time-setup_dialog.ui:36
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize the handheld time with the PC time, by "
+"using the PC time on both.</qt>"
+msgstr ""
+"<qt> Ин ҷудокардагиро интихоб кунед барои синхронизасия кардани вақти "
+"дастқапро бо вақти PC,бо истифодаи вақти РС дар ҳар ду.</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, RadioButton1)
+#: conduits/timeconduit/time-setup_dialog.ui:39
+#, kde-format
+msgid "Set the &handheld time from the time on the PC"
+msgstr "Дуруст кардани вақт ба &ПК аз компютери персоналӣ."
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, RadioButton1_2)
+#: conduits/timeconduit/time-setup_dialog.ui:52
+#, kde-format
+msgid ""
+"<qt>Select this option to synchronize the handheld time with the PC time, by "
+"using the handheld time on both.</qt>"
+msgstr ""
+"<qt> Ин ҷудокардагиро интихоб кунед барои синхронизасия кардани вақти "
+"дастқапро бо вақти РС,бо истифодаи дастқап дар ҳар ду.</qt> "
+
+#. i18n: ectx: property (text), widget (QRadioButton, RadioButton1_2)
+#: conduits/timeconduit/time-setup_dialog.ui:55
+#, kde-format
+msgid "Set the &PC time from the time on the handheld"
+msgstr "Дуруст кардани вақт ба &компютери персоналӣ аз PC"
+
+#. i18n: ectx: property (text), widget (QLabel, fInfoLabel)
+#: conduits/timeconduit/time-setup_dialog.ui:102
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>PalmOS Version 3.25 and 3.3 do not support setting the system time, "
+#| "so this conduit will be skipped for handhelds that run either of these "
+#| "operating systems.</qt>"
+msgid ""
+"PalmOS Version 3.25 and 3.3 do not support setting the system time, so this "
+"conduit will be skipped for handhelds that run either of these operating "
+"systems."
+msgstr ""
+"<qt>PalmOS ривояти 3.25 ва 3.3 гузориши тартиб вақти кориро нигоҳ надошт. "
+"Канали синхронизацияи вақт роҳ дода нашуд.</qt>"
+
 #: conduits/todo/todoconfig.cc:38
 #, fuzzy, kde-format
 msgid "To-do Conduit for KPilot"
@@ -1369,6 +3529,34 @@ msgstr "Машқ"
 #, kde-format
 msgid "Select ToDo Collection: "
 msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_5)
+#: Documentation/base-conduit-template/contacts-settings.ui:20
+#, fuzzy, kde-format
+#| msgid "Locale Settings"
+msgid "&Akonadi Settings"
+msgstr "Настройкаи маҳдуд."
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_6)
+#: Documentation/base-conduit-template/contacts-settings.ui:25
+#, fuzzy, kde-format
+#| msgid "Conflicts"
+msgid "&Conflicts"
+msgstr "Низоъ"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_7)
+#: Documentation/base-conduit-template/contacts-settings.ui:123
+#, fuzzy, kde-format
+#| msgid "Fields"
+msgid "&Fields"
+msgstr "Ҳошияҳо"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_4)
+#: Documentation/base-conduit-template/contacts-settings.ui:290
+#, fuzzy, kde-format
+#| msgid "Custom Fields"
+msgid "C&ustom Fields"
+msgstr "Ҳошияҳои оддӣ"
 
 #: kpilot/config_dialog.cc:146
 #, kde-format
@@ -1574,6 +3762,54 @@ msgstr ""
 msgid "No Database Selected"
 msgstr "Базаи маълумотии интихобӣ нест."
 
+#. i18n: ectx: property (whatsThis), widget (KListWidget, fDatabaseList)
+#: kpilot/config_dialog_dbselection_base.ui:17
+#, kde-format
+msgid ""
+"This list shows the databases that have been detected on the handheld. "
+"Databases that are checked will be used for the operation that caused this "
+"dialog to appear."
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, fRemoveButton)
+#: kpilot/config_dialog_dbselection_base.ui:24
+#, kde-format
+msgid ""
+"Click here to remove a database entirely from the list. Usually it is better "
+"to just uncheck the database."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (KPushButton, fRemoveButton)
+#: kpilot/config_dialog_dbselection_base.ui:27
+#, fuzzy, kde-format
+#| msgid "&Restore"
+msgid "&Remove"
+msgstr "&Барқарор кардан"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, fNameEdit)
+#: kpilot/config_dialog_dbselection_base.ui:34
+#, kde-format
+msgid ""
+"To add a database to the list (for instance, because the database was not "
+"detected automatically), enter its name here and then click on the Add "
+"button."
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, fAddButton)
+#: kpilot/config_dialog_dbselection_base.ui:41
+#, fuzzy, kde-format
+#| msgid "You need to select a database to delete in the list."
+msgid "Click here to add a database to the list."
+msgstr ""
+"Аввал ба шумо лозим аст интихоб кардани базаи маълумотӣ аз рӯйхати барои "
+"тозакунӣ."
+
+#. i18n: ectx: property (text), widget (KPushButton, fAddButton)
+#: kpilot/config_dialog_dbselection_base.ui:44
+#, kde-format
+msgid "&Add"
+msgstr "&Илова"
+
 #: kpilot/config_dialog_probe.cc:100
 #, kde-format
 msgid "Autodetecting Your Handheld"
@@ -1665,6 +3901,543 @@ msgstr "Ёфт шуд пайвастаги бо %1 таҷҳизот "
 msgid "Disconnected from all devices"
 msgstr "Хомӯш сохт ҳамаи он таҷҳъизотҳоро "
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, SyncConfigWidget)
+#. i18n: ectx: property (windowTitle), widget (QWidget, StartExitConfigWidget)
+#. i18n: ectx: property (windowTitle), widget (QWidget, BackupConfigWidget)
+#: kpilot/config_page_backup.ui:15 kpilot/config_page_startup.ui:16
+#: kpilot/config_page_sync.ui:15
+#, kde-format
+msgid "KPilot Options"
+msgstr "Танзимотҳои KPilot"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: kpilot/config_page_backup.ui:21
+#, kde-format
+msgid "Backup Frequency"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5_2)
+#: kpilot/config_page_backup.ui:41
+#, fuzzy, kde-format
+msgid "Do &backup:"
+msgstr "&Бе нусхаи резервӣ:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fBackupFrequency)
+#: kpilot/config_page_backup.ui:69
+#, kde-format
+msgid ""
+"<qt>\n"
+"<p>Select in this list how frequently backups are done. Possible values are:"
+"</p>\n"
+"<ul>\n"
+"<li>\"On Every HotSync\" - A backup of your handheld will be done every time "
+"you HotSync</li>\n"
+"<li>\"On Request Only\" - A backup of your handheld will be done only when "
+"you choose your next sync to be of type \"Backup\"</li>\n"
+"</ul>\n"
+"</qt>"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fBackupFrequency)
+#: kpilot/config_page_backup.ui:73
+#, fuzzy, kde-format
+msgid "On Every HotSync"
+msgstr "Анҷоми синхронизатсия\n"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fBackupFrequency)
+#: kpilot/config_page_backup.ui:78
+#, kde-format
+msgid "On Request Only"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: kpilot/config_page_backup.ui:91
+#, fuzzy, kde-format
+#| msgid "Database"
+msgid "Databases"
+msgstr "Асоси маълумот"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel5)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, fBackupOnly)
+#: kpilot/config_page_backup.ui:105 kpilot/config_page_backup.ui:124
+#, kde-format
+msgid ""
+"<qt><p>Enter the databases types you wish to exclude from the backup "
+"operation here. Use this setting if backing up some databases crashes the "
+"handheld, or if you do not want a backup of some databases (like AvantGo "
+"pages).</p><p>Entries with square brackets [] are <i>creator codes</i> like "
+"<tt>[lnch]</tt> and can exclude a whole range of databases. Entries without "
+"the brackets list database names, and may include shell-style wildcards, "
+"like <tt>*_a68k</tt>.</p></qt>"
+msgstr ""
+"<qt> <p>Он намуди таърихи базае ки шумо мехоҳед хориҷ намоед аз омили "
+"пуштибонӣ инҷо ворид намоед.Агар пуштибонии якчанд таърихи базаро аз кор "
+"мононед, пас ин барпои ҳолатро истифода намоед, ё агар шумо нахоҳед "
+"пуштибонии якчанд таърихи базаҳоро истифода баред (ба монанди иҷроиши "
+"саҳифаҳои Avant).</p> <p>Ворид шудан бо қавсҳо [] ин <i>бунёдгори коди</i> "
+"ҳамчун<tt>[lnch]</tt> ва ҳамаи соҳаи таърихи базаро бекор намояд.Воридшавӣ "
+"бе листи номҳои таърихи база ва метавонад намуди лояи wildcards ба монанди  "
+"<tt>*_a68k</tt>.</p></qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: kpilot/config_page_backup.ui:108
+#, kde-format
+msgid "&No backup:"
+msgstr "&Бе нусхаи резервӣ:"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, fBackupOnlyChooser)
+#: kpilot/config_page_backup.ui:134
+#, kde-format
+msgid ""
+"<qt>Click here to open the database selection dialog. This dialog allows you "
+"to check the databases you want to exclude from the backup from a list.</qt>"
+msgstr ""
+"<qt>Инҷоро зер намоед барои кушодани таърихи базаи гуфтугу. Ин гуфтугу ба "
+"шумо иҷозат меди¯хад, ки таърихи базае, ки шумо мехоҳед аз пуштибони намоед "
+"бароред аз лист.</qt>"
+
+#. i18n: ectx: property (text), widget (QPushButton, fBackupOnlyChooser)
+#. i18n: ectx: property (text), widget (QPushButton, fSkipDBChooser)
+#: kpilot/config_page_backup.ui:137 kpilot/config_page_backup.ui:186
+#, kde-format
+msgid "..."
+msgstr "..."
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel6)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, fSkipDB)
+#: kpilot/config_page_backup.ui:154 kpilot/config_page_backup.ui:173
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt><p>Enter the databases types you wish to exclude from the backup "
+#| "operation here. Use this setting if backing up some databases crashes the "
+#| "handheld, or if you do not want a backup of some databases (like AvantGo "
+#| "pages).</p><p>Entries with square brackets [] are <i>creator codes</i> "
+#| "like <tt>[lnch]</tt> and can exclude a whole range of databases. Entries "
+#| "without the brackets list database names, and may include shell-style "
+#| "wildcards, like <tt>*_a68k</tt>.</p></qt>"
+msgid ""
+"<qt><p>Enter the databases types you wish to exclude from the restore "
+"operation here (like AvantGo databases). They will be skipped even if they "
+"exist in the set of backup databases on the handheld. If you still want to "
+"install an ignored database to the handheld, you can always manually install "
+"it to the handheld.</p><p>Entries with square brackets [] are <i>creator "
+"codes</i> like <tt>[lnch]</tt> and can exclude a whole range of databases. "
+"Entries without the brackets list database names, and may include shell-"
+"style wildcards, like <tt>*_a68k</tt>.</p></qt>"
+msgstr ""
+"<qt> <p>Он намуди таърихи базае ки шумо мехоҳед хориҷ намоед аз омили "
+"пуштибонӣ инҷо ворид намоед.Агар пуштибонии якчанд таърихи базаро аз кор "
+"мононед, пас ин барпои ҳолатро истифода намоед, ё агар шумо нахоҳед "
+"пуштибонии якчанд таърихи базаҳоро истифода баред (ба монанди иҷроиши "
+"саҳифаҳои Avant).</p> <p>Ворид шудан бо қавсҳо [] ин <i>бунёдгори коди</i> "
+"ҳамчун<tt>[lnch]</tt> ва ҳамаи соҳаи таърихи базаро бекор намояд.Воридшавӣ "
+"бе листи номҳои таърихи база ва метавонад намуди лояи wildcards ба монанди  "
+"<tt>*_a68k</tt>.</p></qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel6)
+#: kpilot/config_page_backup.ui:157
+#, kde-format
+msgid "Not &restored:"
+msgstr "&Аз нав барқарор накунед:"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, fSkipDBChooser)
+#: kpilot/config_page_backup.ui:183
+#, kde-format
+msgid ""
+"<qt>Click here to open the database selection dialog. This dialog allows you "
+"to select the databases you want to exclude from the restore operation from "
+"a list.</qt>"
+msgstr ""
+"<qt>Инҷоро зер намоед барои кушодани таърихи базаи гуфтугу. Ин гуфтугу ба "
+"шумо иҷозат меди¯хад, ки таърихи базае, ки шумо мехоҳед аз пуштибони намоед "
+"бароред аз лист.</qt>"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fRunConduitsWithBackup)
+#: kpilot/config_page_backup.ui:198
+#, kde-format
+msgid ""
+"<qt>Check this box to run the selected conduits before every backup. This "
+"makes sure the backup is up to date with the last changes from your PC.</qt>"
+msgstr ""
+"<qt>Ин қуттиро барои иҷро кардани равишҳои интихоб карда шуда пеш аз ҳар як "
+"пуштибонӣ интихоб намоед.Ин ба шумо боварӣ медиҳад,ки компютери шумо бо "
+"охрин пуштибонии имрӯза иваз карда шудааст.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fRunConduitsWithBackup)
+#: kpilot/config_page_backup.ui:201
+#, fuzzy, kde-format
+msgid "Run conduits durin&g a backup sync"
+msgstr "Ба кор андохтани &канал бо ташкилёбии нусхаи резервӣ"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel1)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, fPilotDevice)
+#: kpilot/config_page_device.ui:18 kpilot/config_page_device.ui:34
+#, kde-format
+msgid ""
+"<qt>Enter the device the Pilot is attached to (for instance a serial or USB "
+"port) here. You can also use <i>/dev/pilot</i>, and make that a symlink to "
+"the correct device. You need write permission to successfully synchronize "
+"with the handheld.</qt>"
+msgstr ""
+"<qt> Номи файли дуруст кардае,ки дар пилот пайваст шуд гузоред (пай дар ҳами "
+"порт ё порти USB).Шумо метавонед, <i>/dev/pilot</i>, нишон диҳед ва размӣ "
+"истинод кардаро ба файли истифода баранда бино кардан.Барои синхронизацияи "
+"КПК шумо бояд ҳуқуқ ба сабт дар ин файл дошта бошед.</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
+#: kpilot/config_page_device.ui:21
+#, kde-format
+msgid "Pilot &device:"
+msgstr "&Ташкил кардани пилот:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel4)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fPilotSpeed)
+#: kpilot/config_page_device.ui:44 kpilot/config_page_device.ui:143
+#, kde-format
+msgid ""
+"<qt>Select the speed of the serial connection to your handheld here. This "
+"has no meaning for USB devices. For an older model, choose 9600. Newer "
+"models may be able to handle speeds up to the maximum listed, 115200. You "
+"can experiment with the connection speed: the manual suggests starting at a "
+"speed of 19200 and trying faster speeds to see if they work.</qt>"
+msgstr ""
+"<qt>Дар ин ҷо шумо метавонед, нишон диҳед кадом ихтилофҳои (табдилдода ба "
+"пилот ва ба компютери персонали)навишт гузошта мешавад.Маънои эҳтимолӣ\"Аз "
+"компютери персоналӣ гирифтан\" ,\"Аз синхронизацияи охирин\",\"Истифода "
+"бурдани ҳар ду навиштаҳо\"ва\"як сӯ мондани заду-хурд\".</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel4)
+#: kpilot/config_page_device.ui:47
+#, kde-format
+msgid "&Speed:"
+msgstr "&Суръат:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_2)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fWorkaround)
+#: kpilot/config_page_device.ui:60 kpilot/config_page_device.ui:181
+#, kde-format
+msgid ""
+"<qt>Workarounds enable special handling for specific devices. Most devices "
+"do not need special handling. However, the Zire 31, Zire 72 and Tungsten T5 "
+"<i>do</i> have special needs, so if you are connecting such a device, please "
+"select the workaround for them.</qt>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: kpilot/config_page_device.ui:63
+#, kde-format
+msgid "&Workarounds:"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fPilotEncoding)
+#: kpilot/config_page_device.ui:76 kpilot/config_page_device.ui:204
+#, kde-format
+msgid ""
+"<qt>PalmOS devices are available in many different languages. If your device "
+"uses a different encoding than ISO-latin1 (ISO8859-1), select the correct "
+"encoding here, in order to display special characters correctly.</qt>"
+msgstr ""
+"<qt> Дастгоҳҳои PalmOS якчанд мухталифи забонҳо имконпазираст.Агар дастгоҳи "
+"шумо мухталифи рамз гузоштанро истифода барад, пас ISO-latin1 (ISO8859-1), "
+"рамзгузории дурустро дар инҷо интихоб намоед, то ин ки хусусиятҳои асосиро "
+"дуруст намоиш диҳам.</qt> "
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: kpilot/config_page_device.ui:79
+#, kde-format
+msgid "En&coding:"
+msgstr "&Ба код даровардан:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel2)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, fUserName)
+#: kpilot/config_page_device.ui:92 kpilot/config_page_device.ui:214
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Enter your name here, as it appears in the Pilot's &quot;Owner&quot; "
+#| "setting.</qt>"
+msgid ""
+"<qt>Enter your name here, as it appears in the Pilot's \"Owner\" setting.</"
+"qt>"
+msgstr ""
+"<qt>Номи истифода барандаро гузоред,ки он дар гузориш пилот ҷори намуд,мисли "
+"&quot;Соҳиб &quot;</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
+#: kpilot/config_page_device.ui:95
+#, kde-format
+msgid "Pilot &user:"
+msgstr "Истифодакунандаи &Pilot:"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, fDeviceAutodetect)
+#: kpilot/config_page_device.ui:111
+#, kde-format
+msgid ""
+"<qt>Click here to try to automatically detect your device, username and "
+"connection speed. KPilot will scan for attached devices.</qt>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, fDeviceAutodetect)
+#: kpilot/config_page_device.ui:114
+#, kde-format
+msgid "Autodetect"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fPilotSpeed)
+#: kpilot/config_page_device.ui:147
+#, kde-format
+msgid "9600"
+msgstr "9600"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fPilotSpeed)
+#: kpilot/config_page_device.ui:152
+#, kde-format
+msgid "19200"
+msgstr "19200"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fPilotSpeed)
+#: kpilot/config_page_device.ui:157
+#, kde-format
+msgid "38400"
+msgstr "38400"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fPilotSpeed)
+#: kpilot/config_page_device.ui:162
+#, kde-format
+msgid "57600"
+msgstr "57600"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fPilotSpeed)
+#: kpilot/config_page_device.ui:167
+#, kde-format
+msgid "115200"
+msgstr "115200"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fWorkaround)
+#: kpilot/config_page_device.ui:185
+#, fuzzy, kde-format
+msgctxt "No workarounds are used."
+msgid "None"
+msgstr "Қайд"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fWorkaround)
+#: kpilot/config_page_device.ui:190
+#, kde-format
+msgid "Zire 31, 72, Tungsten T5"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: kpilot/config_page_startup.ui:22
+#, kde-format
+msgid "Startup Options"
+msgstr "Интихоботҳои боркардан"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fStartDaemonAtLogin)
+#: kpilot/config_page_startup.ui:28
+#, kde-format
+msgid ""
+"<qt>Check this box to start up the KPilot daemon every time you log in to "
+"KDE.</qt>"
+msgstr "<qt>Сар додани васвасаи синхронизацияи қайдкунӣ дар КDE.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fStartDaemonAtLogin)
+#: kpilot/config_page_startup.ui:31
+#, fuzzy, kde-format
+msgid "&Start KPilot at login"
+msgstr "&Сар додани васвасаи синхронизация дар қайдкунӣ."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fDockDaemon)
+#: kpilot/config_page_startup.ui:38
+#, kde-format
+msgid ""
+"<qt>Check this box to place a Kpilot icon in the system tray, which shows "
+"the daemon's status, and allows you to select the next sync type and to "
+"configure KPilot.</qt>"
+msgstr ""
+"<qt>Гузоштани пиктограммаи пилот дар тартиби кори қуттии дастаки- фурӯш ба "
+"панелиKDE барои нишон додани аҳвол ва мизроб кардани васвасаи синхронизация "
+"ва пилот.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fDockDaemon)
+#: kpilot/config_page_startup.ui:41
+#, fuzzy, kde-format
+msgid "S&how KPilot in system tray"
+msgstr "&Васвасаро дар панел нишон диҳед."
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: kpilot/config_page_startup.ui:51
+#, kde-format
+msgid "Exit Options"
+msgstr "Мизроб кардани баромад."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fQuitAfterSync)
+#: kpilot/config_page_startup.ui:57
+#, kde-format
+msgid ""
+"<qt>Check this box to stop both KPilot and the KPilot daemon after the "
+"HotSync finishes. This may be useful for systems where KPilot is started by "
+"the USB daemon.</qt>"
+msgstr ""
+"<qt>Нигоҳ доштани пилот ва васвасаи пилот баъд аз анҷом ёфтани синхронизация."
+"Ин барои тартиби кор фоида дорад,дар куҷое, ки пилот васвасаи USB сар "
+"медиҳад.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fQuitAfterSync)
+#: kpilot/config_page_startup.ui:60
+#, kde-format
+msgid "Quit &after HotSync"
+msgstr "&Баъд аз синхронизация баромадан."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fKillDaemonOnExit)
+#: kpilot/config_page_startup.ui:67
+#, kde-format
+msgid ""
+"<qt>Check this box to stop the KPilot daemon when you quit KPilot (only if "
+"KPilot started the daemon itself).</qt>"
+msgstr ""
+"<qt> Нигоҳ доштани васвасаи синхронизация дар баромадан аз пилот (агар пилот "
+"васвасаро сар диҳад).</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fKillDaemonOnExit)
+#: kpilot/config_page_startup.ui:70
+#, fuzzy, kde-format
+msgid "S&top KPilot's system tray application on exit"
+msgstr "Канали информатсия дар система"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: kpilot/config_page_sync.ui:23
+#, kde-format
+msgid "&Default sync:"
+msgstr "&Синхронизацияи пешфарзӣ:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fSpecialSync)
+#: kpilot/config_page_sync.ui:57
+#, fuzzy, kde-format
+msgid ""
+"<qt>Select in this list the synchronization type that KPilot will use as "
+"default. Possible values are:<br>\"HotSync\", to run all selected conduits, "
+"and sync the databases with a modified flag set, updating the modified "
+"records only;<br>\"FullSync\" to run all selected conduits, and sync all "
+"databases, reading all records, and performing a full backup;<br>\"Copy PC "
+"to handheld\" to run all conduits and sync all databases, but instead of "
+"merging the information from both sources, copy the PC data to the handheld;"
+"<br>\"Copy handheld to PC\" to run all conduits and sync all databases, but "
+"instead of merging the information from both sources, copy the handheld data "
+"to the PC.</qt>"
+msgstr ""
+"<qt>Дар ин ҷо шумо метавонед, нишон диҳед кадом ихтилофҳои (табдилдода ба "
+"пилот ва ба компютери персонали)навишт гузошта мешавад.Маънои эҳтимолӣ\"Аз "
+"компютери персоналӣ гирифтан\" ,\"Аз синхронизацияи охирин\",\"Истифода "
+"бурдани ҳар ду навиштаҳо\"ва\"як сӯ мондани заду-хурд\".</qt>"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fSpecialSync)
+#: kpilot/config_page_sync.ui:61
+#, kde-format
+msgid "HotSync (sync all changes)"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fSpecialSync)
+#: kpilot/config_page_sync.ui:66
+#, kde-format
+msgid "FullSync (sync also unchanged records)"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fSpecialSync)
+#: kpilot/config_page_sync.ui:71 kpilot/kpilot.cc:308 lib/syncAction.cc:237
+#, kde-format
+msgid "Copy PC to Handheld"
+msgstr "Гузаронидан аз компютер ба "
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fSpecialSync)
+#: kpilot/config_page_sync.ui:76 kpilot/kpilot.cc:317 lib/syncAction.cc:238
+#, kde-format
+msgid "Copy Handheld to PC"
+msgstr "Гузаронидан аз     ба компютер"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fScreenlockSecure)
+#: kpilot/config_page_sync.ui:92
+#, kde-format
+msgid ""
+"<qt>Check this box to prevent KPilot from syncing your handheld while the "
+"screensaver is active: this is a security measure to prevent others from "
+"syncing <i>their</i> handhelds with your data.  This option must be disabled "
+"when you use a different desktop, since KPilot is not aware of screensavers "
+"other than KDE's.</qt>"
+msgstr ""
+"<qt>Агар хоҳед синхронизатсияро ҳангоми иҷроиши нигоҳдорандаи экран пешгирӣ "
+"кунед, ин нишонаро фаъол созед: ин тариқамуҳофизаткунандаи аз "
+"синхронизатсияи маълумотҳои шумо аз КПК-и <i>дигар</i> одамон низ мебошад. "
+"Агар шумо мизҳои кории гунгунро истифода кунед, ин нишона бояд ғайрифаъол "
+"бошад, чанде KPilot нигоҳдорандаи экранро на барои KDE, дарёфт мекунад.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fScreenlockSecure)
+#: kpilot/config_page_sync.ui:95
+#, kde-format
+msgid "Do not sync when screensaver is active"
+msgstr "Ҳангоми фаъол будани нигоҳдорандаи экран, синхронизатсия накардан"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fFullSyncCheck)
+#: kpilot/config_page_sync.ui:111
+#, fuzzy, kde-format
+msgid ""
+"<qt>Check this box to perform a full sync when your last sync was performed "
+"with another PC or system, to guarantee the completeness of your data.</qt>"
+msgstr ""
+"<qt>Ин қуттиро барои иҷро кардани пуштибонии пурра ҳангоме ки "
+"синхронизатсияи охирини иҷро кардаи шумо дар дигар компютер ё ин ки тартиб "
+"буд тафтиш намоед, барои замонат додани пуштибонии таърихи шумо.</qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fFullSyncCheck)
+#: kpilot/config_page_sync.ui:114
+#, fuzzy, kde-format
+msgid "Do full sync when chan&ging PCs"
+msgstr "&Ҳангоми иввази компютер, нусхаи захиравии пурра кардан"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, fConflictResolution)
+#: kpilot/config_page_sync.ui:164
+#, kde-format
+msgid ""
+"<qt>Select in this list how conflicting entries (entries which were edited "
+"both on your handheld and on the PC) are resolved. Possibly values are  "
+"\"Ask User\" to let you decide case by case, \"Do Nothing\" to allow the "
+"entries to be different, \"PC overrides\", \"Handheld overrides\", \"Use "
+"values from last sync\" and \"Use both entries\" to create a new entry on "
+"both the PC and handheld. Note that the conflict resolution option selected "
+"here can be overridden by conduits that have their own conflict resolution "
+"configuration.</qt>"
+msgstr ""
+"<qt>Дар инҷо метавонед ишора кунед, ки кадом ихтилофотҳои (дар КПК ва дар "
+"компютери инфиродӣ тағйиршуда) қайдшуда мононда хоҳанд шуд. Аҳамиятҳои "
+"эҳтимолӣ:\"Аз КПК гирифтан\", \"Аз компютери ифиродӣ гирифтан\", \"Аз "
+"синхронизатсияиохирин\", \"Истифодаи ҳар ду қайдот\" ва \"Монондани дида "
+"баромадани ихтилофот\".</qt>"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: kpilot/config_page_sync.ui:178
+#, kde-format
+msgid "Handheld Overrides"
+msgstr "Аз КПК гирифтан."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: kpilot/config_page_sync.ui:183
+#, kde-format
+msgid "PC Overrides"
+msgstr "Аз копютери персоналӣ гирифтан."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: kpilot/config_page_sync.ui:188
+#, fuzzy, kde-format
+#| msgid "Values From Last Sync (if possible)"
+msgid "Values From Last Sync (Not Supported)"
+msgstr "Аз синхронизацияи охирин (агар мумкин бошад)."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fConflictResolution)
+#: kpilot/config_page_sync.ui:193
+#, fuzzy, kde-format
+#| msgid "Use Both Entries"
+msgid "Use Both Entries (Not Supported)"
+msgstr "Истифода бурдани ҳар ду навишт."
+
 #: kpilot/config_pages.cc:48
 #, kde-format
 msgid ""
@@ -1673,6 +4446,48 @@ msgid ""
 msgstr ""
 "<qt>Танзимотҳо дар саҳифаи <i>%1</i> дигар хел шуданд.Шумо мехоҳед "
 "дигаргунниҳоро нигоҳ доред,пеш аз давом додан?</qt>"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, fAddButton)
+#: kpilot/file_install_widget.ui:19
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Choose a file to add to "
+"the list of files to install.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, fAddButton)
+#: kpilot/file_install_widget.ui:22
+#, fuzzy, kde-format
+#| msgid "Add File..."
+msgid "&Add File..."
+msgstr "Илова кард файл..."
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, fClearButton)
+#: kpilot/file_install_widget.ui:32
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Clear the list of files to "
+"install. No files will be installed.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, fClearButton)
+#: kpilot/file_install_widget.ui:35
+#, fuzzy, kde-format
+#| msgid "Clear List"
+msgid "&Clear List"
+msgstr "Рӯйхатро тоза кард "
 
 #: kpilot/fileInstaller.cc:110
 #, kde-format
@@ -2037,11 +4852,6 @@ msgstr ""
 "Нишон дод ба демона ,ки синхронизатсияи оянда бояд синхронизатсияи пур бошад."
 "(санҷиши маълумот дар рӯйхати барқарорсозиҳо) "
 
-#: kpilot/kpilot.cc:308 lib/syncAction.cc:237
-#, kde-format
-msgid "Copy PC to Handheld"
-msgstr "Гузаронидан аз компютер ба "
-
 #: kpilot/kpilot.cc:310
 #, fuzzy, kde-format
 msgid "Next HotSync will copy PC to Handheld."
@@ -2055,11 +4865,6 @@ msgid ""
 msgstr ""
 "Нишон дод ба демона ,ки синхронизатсияи оянда бояд барқарор шуд нусхаи "
 "эҳтиёти барои КПК дар компутер."
-
-#: kpilot/kpilot.cc:317 lib/syncAction.cc:238
-#, kde-format
-msgid "Copy Handheld to PC"
-msgstr "Гузаронидан аз     ба компютер"
 
 #: kpilot/kpilot.cc:319
 #, fuzzy, kde-format
@@ -2230,6 +5035,67 @@ msgstr "Додани сатҳи дуруст"
 #| msgid "KPilot"
 msgid "kpilot"
 msgstr "KPilot"
+
+#. i18n: ectx: label, entry (Debug), group (General)
+#. i18n: ectx: label, entry (ConfigVersion), group (General)
+#. i18n: ectx: label, entry (LastSyncTime), group (General)
+#. i18n: ectx: label, entry (PilotDevice), group (General)
+#. i18n: ectx: label, entry (PilotSpeed), group (General)
+#. i18n: ectx: label, entry (Encoding), group (General)
+#. i18n: ectx: label, entry (UserName), group (General)
+#. i18n: ectx: label, entry (LogFileName), group (General)
+#. i18n: ectx: label, entry (StartDaemonAtLogin), group (General)
+#. i18n: ectx: label, entry (KillDaemonAtExit), group (General)
+#. i18n: ectx: label, entry (DockDaemon), group (General)
+#. i18n: ectx: label, entry (QuitAfterSync), group (General)
+#. i18n: ectx: label, entry (SyncType), group (General)
+#. i18n: ectx: label, entry (FullSyncOnPCChange), group (General)
+#. i18n: ectx: label, entry (ConflictResolution), group (General)
+#. i18n: ectx: label, entry (ShowSecrets), group (General)
+#. i18n: ectx: label, entry (SkipRestoreDB), group (General)
+#. i18n: ectx: label, entry (DeviceDBs), group (General)
+#. i18n: ectx: label, entry (AddedDBs), group (General)
+#. i18n: ectx: label, entry (InstalledConduits), group (Conduit Names)
+#. i18n: ectx: label, entry (AddressDisplayMode), group (Address Widget)
+#. i18n: ectx: label, entry (UseKeyField), group (Address Widget)
+#: kpilot/kpilot.kcfg:11 kpilot/kpilot.kcfg:16 kpilot/kpilot.kcfg:21
+#: kpilot/kpilot.kcfg:27 kpilot/kpilot.kcfg:32 kpilot/kpilot.kcfg:37
+#: kpilot/kpilot.kcfg:42 kpilot/kpilot.kcfg:56 kpilot/kpilot.kcfg:61
+#: kpilot/kpilot.kcfg:66 kpilot/kpilot.kcfg:71 kpilot/kpilot.kcfg:76
+#: kpilot/kpilot.kcfg:83 kpilot/kpilot.kcfg:88 kpilot/kpilot.kcfg:93
+#: kpilot/kpilot.kcfg:101 kpilot/kpilot.kcfg:110 kpilot/kpilot.kcfg:123
+#: kpilot/kpilot.kcfg:128 kpilot/kpilot.kcfg:146 kpilot/kpilot.kcfg:154
+#: kpilot/kpilot.kcfg:159
+#, kde-format
+msgid ""
+"\n"
+"        "
+msgstr ""
+
+#. i18n: ectx: label, entry (SkipBackupDB), group (General)
+#: kpilot/kpilot.kcfg:105
+#, kde-format
+msgid "Which databases not to backup."
+msgstr ""
+
+#. i18n: ectx: label, entry (ScreenlockSecure), group (General)
+#: kpilot/kpilot.kcfg:132
+#, fuzzy, kde-format
+#| msgid "HotSync is disabled while the screen is locked."
+msgid "Prevent HotSync when screen locked"
+msgstr "Синхронизация як вақта барои муҳосира кардани экран кушта шуд."
+
+#. i18n: ectx: whatsthis, entry (ScreenlockSecure), group (General)
+#: kpilot/kpilot.kcfg:138
+#, kde-format
+msgid ""
+"Turning this option on prevents syncing\n"
+"\twhen the screen is locked. This is a security measure\n"
+"\tto prevent people from stealing your data through physical\n"
+"\taccess to a Pilot device link to your machine.\n"
+"\tIt does not work with screensavers other than KDE, though,\n"
+"\tso you will need to turn it off for other environments."
+msgstr ""
 
 #: kpilot/kpilotConfig.cc:127
 #, kde-format
@@ -2422,6 +5288,19 @@ msgid ""
 "(c) 1998-2000,2001, Dan Pilone\n"
 "(c) 2000-2007, Adriaan de Groot\n"
 "(c) 2005-2007, Jason 'vanRijn' Kasper"
+msgstr ""
+
+#. i18n: ectx: Menu (settings)
+#: kpilot/kpilotui.rc:17
+#, fuzzy, kde-format
+#| msgid "Locale Settings"
+msgid "&Settings"
+msgstr "Настройкаи маҳдуд."
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kpilot/kpilotui.rc:36
+#, kde-format
+msgid "Main Toolbar"
 msgstr ""
 
 #: kpilot/logFile.cc:98 lib/actions.cc:126
@@ -3128,1497 +6007,6 @@ msgstr "Савол"
 #, fuzzy, kde-format
 msgid "&Do not ask again"
 msgstr "Бори дигар напурсед"
-
-#, fuzzy
-#~| msgid "Calendar"
-#~ msgid "Select Collection:"
-#~ msgstr "Тақвим"
-
-#, fuzzy
-#~| msgid "Locale Settings"
-#~ msgid "Akonadi Settings"
-#~ msgstr "Настройкаи маҳдуд."
-
-#~ msgid "Conflicts"
-#~ msgstr "Низоъ"
-
-#~ msgid ""
-#~ "<p>Select the default action if an event was modified on both sides here. "
-#~ "</p>"
-#~ msgstr ""
-#~ "<p> Шумо метавонед, корро зикр накарда дар рухсат додани низоъ нишон "
-#~ "диҳед.</p>"
-
-#~ msgid ""
-#~ "<qt>Select in this list how conflicting entries (entries which were "
-#~ "edited both on your handheld and on the PC) are resolved. Possibly values "
-#~ "are \"Use KPilot's Global Setting\" to use the settings defined in KPilot "
-#~ "HotSync configuration, \"Ask User\" to let you decide case by case, \"Do "
-#~ "Nothing\" to allow the entries to be different, \"PC overrides\", "
-#~ "\"Handheld overrides\", \"Use values from last sync\" and \"Use both "
-#~ "entries\" to create a new entry on both the PC and handheld.</qt>"
-#~ msgstr ""
-#~ "<qt>Шумо метавонед, дар ин ҷо кадом низоъи (тағирдиҳӣ дар КПК ва дар ком- "
-#~ "пютери персоналӣ) сабт кардаро мегузорем.Мазмуни имконпазир:\" гирифтан "
-#~ "аз КПК\", \" гирифтан аз компютери персоналӣ \", Аз охирин синхронизация "
-#~ "\", \" Ҳар ду навиштро истифода баред\" ва \" низоъи муоинаро канор "
-#~ "гузоштан \".</qt>"
-
-#~ msgid "Conflict &resolution:"
-#~ msgstr "&Рухсат додани низоъ"
-
-#, fuzzy
-#~| msgid "Use KPilot's Global Setting"
-#~ msgid "Use KPilot's Global Settings"
-#~ msgstr "Истифода бурдани мизроби умумии пилот."
-
-#~ msgid "Ask User"
-#~ msgstr "Аз истифода баранда пурсидан."
-
-#, fuzzy
-#~| msgid "Handheld Overrides"
-#~ msgid "Let The Handheld Override"
-#~ msgstr "Аз КПК гирифтан."
-
-#, fuzzy
-#~| msgid "PC Overrides"
-#~ msgid "Let The PC Override"
-#~ msgstr "Аз копютери персоналӣ гирифтан."
-
-#~ msgid "Use Both Entries"
-#~ msgstr "Истифода бурдани ҳар ду навишт."
-
-#~ msgid "Do Nothing"
-#~ msgstr "Ҳеҷ кор накунед."
-
-#~ msgid "Fields"
-#~ msgstr "Ҳошияҳо"
-
-#, fuzzy
-#~| msgid ""
-#~| "<qt>Select which KAddressBook field should be used to store the Pilot's "
-#~| "&quot;Other&quot; phone here.</qt>"
-#~ msgid ""
-#~ "<qt>Select which KAddressBook field should be used to store the Pilot's "
-#~ "\"Other\" phone here.</qt>"
-#~ msgstr ""
-#~ "<qt>Интихоб кардани дашт дар китоби адресҳои KDE,кадоме, ки барои нигоҳ "
-#~ "доштани ахбороти &quot; рақамҳои дигари &quot; телефон аз пилот истифода "
-#~ "баред.</qt>"
-
-#~ msgid "Handheld other phone:"
-#~ msgstr "Рақами дигари телефон дар КПК:"
-
-#~ msgid "Other Phone"
-#~ msgstr "Телефони дигар"
-
-#~ msgid "Assistant"
-#~ msgstr "Ёрдамчи."
-
-#~ msgid "Business Fax"
-#~ msgstr "Факси корӣ"
-
-#, fuzzy
-#~| msgid "Work Phone"
-#~ msgid "Car Phone"
-#~ msgstr "Телефони корӣ"
-
-#, fuzzy
-#~| msgid "Email address:"
-#~ msgid "Second Email Address"
-#~ msgstr "Адреси почтаи электронӣ:"
-
-#~ msgid "Home Fax"
-#~ msgstr "Факси хона"
-
-#~ msgid "Telex"
-#~ msgstr "Телекс"
-
-#~ msgid "TTY/TTD Phone"
-#~ msgstr "Телефони TTY/TTD"
-
-#~ msgid ""
-#~ "<qt>Select which KAddressBook field should be used to store the Pilot's "
-#~ "Street Address here.</qt>"
-#~ msgstr ""
-#~ "<qt>Интихоб кардани дашт дар китоби адресҳои KDE кадомаш истифода бурда "
-#~ "мешавад,барои маълумот дар бораи адреси ҳавли аз пилот нигоҳ дошта "
-#~ "мешавад.</qt>"
-
-#~ msgid "Handheld street address:"
-#~ msgstr "Адреси ҳавли дар КПК:"
-
-#~ msgid "Preferred, then Home Address"
-#~ msgstr "Афзал донистан баъд адреси хона."
-
-#~ msgid "Preferred, then Business Address"
-#~ msgstr "Афзал донистан баъд адреси кор."
-
-#~ msgid ""
-#~ "<qt>Select which KAddressBook field should be used to store the Fax "
-#~ "number from the Pilot here.</qt>"
-#~ msgstr ""
-#~ "<qt>Интихоб кардани дашт дар китоби адресҳои KDE кадомаш истифода бурда "
-#~ "мешавад,барои нигоҳ доштани ахбороти рақамҳои факс аз пилот. </qt>"
-
-#~ msgid "Handheld fax:"
-#~ msgstr "Рақами факс дар КПК:"
-
-#~ msgid "Custom Fields"
-#~ msgstr "Ҳошияҳои оддӣ"
-
-#~ msgid ""
-#~ "<qt>Select the field from this list that represents best the meaning "
-#~ "given by your use of the first custom field on your handheld.</qt>"
-#~ msgstr ""
-#~ "<qt> Муқаррар кардани дашти якуми иловаро дар КПК интихоб кунед.</qt>"
-
-#~ msgid "Handheld custom field 1:"
-#~ msgstr "Мукаммал кардани дашти 1 дар КПК:"
-
-#~ msgid "Store as Custom Field"
-#~ msgstr "Нигоҳ доштан дар нафъи дашт."
-
-#, fuzzy
-#~| msgid "Birthdate"
-#~ msgid "Birthday"
-#~ msgstr "Рӯзи таваллуд."
-
-#~ msgid "URL"
-#~ msgstr "Истинод кардани интернет."
-
-#~ msgid "IM Address (ICQ, MSN, ...)"
-#~ msgstr "Адреси IM (ICQ, MSN, ...)"
-
-#~ msgid ""
-#~ "<qt>Select the field from this list that represents best the meaning "
-#~ "given by your use of the second custom field on your handheld.</qt>"
-#~ msgstr ""
-#~ "<qt> Муқаррар кардани дашти дуюм иловаро дар КПК интихоб кунед.</qt>"
-
-#~ msgid "Handheld custom field 2:"
-#~ msgstr "Мукамал кардани дашти 2 дар КПК:"
-
-#~ msgid ""
-#~ "<qt>Select the field from this list that represents best the meaning "
-#~ "given by your use of the third custom field on your handheld.</qt>"
-#~ msgstr ""
-#~ "<qt> Муқаррар кардани дашти сеюм иловаро дар КПК интихоб кунед.</qt>"
-
-#~ msgid "Handheld custom field 3:"
-#~ msgstr "Мукамал кардани дашти 3 дар КПК:"
-
-#~ msgid ""
-#~ "<qt>Select the field from this list that represents best the meaning "
-#~ "given by your use of the fourth custom field on your handheld.</qt>"
-#~ msgstr ""
-#~ "<qt> Муқаррар кардани дашти чаҳорум иловаро дар КПК интихоб кунед.</qt>"
-
-#~ msgid "Handheld custom field 4:"
-#~ msgstr "Мукамал кардани дашти 4 дар КПК:"
-
-#~ msgid ""
-#~ "<qt>Select the birthdate format here, if you selected \"birthdate\" for "
-#~ "any of the custom fields above. Possible placeholders are:<br> %d for the "
-#~ "day, %m for the month, %y for the two-digit year, %Y for the four-digit "
-#~ "year. For  example, %d.%m.%Y would generate a date like 27.3.1952, while "
-#~ "%m/%d/%y would write the same date as 03/27/52. </qt>"
-#~ msgstr ""
-#~ "<qt> Интихоб кардани санаи андоза барои дашт мисли \" рӯзи тавал- луд\"."
-#~ "Роҳ додани дигар гузориш:<br> %d- рӯз,%m-моҳ,%y -сол (ду аломат),%Y- сол "
-#~ "(чор аломат). Мисол қолиб  %d.%m.%Y нишон додани сана бо намуди "
-#~ "27.3.1952, а %m/%d/%y санаро бо намуди 03/27/52. нишон медиҳад.\n"
-#~ "</qt>"
-
-#~ msgid "Date &format:"
-#~ msgstr "Андозаи &маълумот:"
-
-#~ msgid "Locale Settings"
-#~ msgstr "Настройкаи маҳдуд."
-
-#~ msgid "%d.%m.%Y"
-#~ msgstr "%d.%m.%Y"
-
-#~ msgid "%d.%m.%y"
-#~ msgstr "%d.%m.%y"
-
-#~ msgid "%d/%m/%Y"
-#~ msgstr "%d/%m/%Y"
-
-#~ msgid "%d/%m/%y"
-#~ msgstr "%d/%m/%y"
-
-#~ msgid "%m/%d/%Y"
-#~ msgstr "%m/%d/%Y"
-
-#~ msgid "%m/%d/%y"
-#~ msgstr "%m/%d/%y"
-
-#, fuzzy
-#~| msgid "General"
-#~ msgid "General"
-#~ msgstr "Умумӣ"
-
-#~ msgid "&Text files:"
-#~ msgstr "&Файлҳои матн:"
-
-#~ msgid ""
-#~ "<qt>Enter here, or select clicking the file picker button, the name and "
-#~ "location of the folder used to find and synchronize text files. All files "
-#~ "with extension .txt located in this folder will be synced to Palm DOC "
-#~ "databases in your handheld.</qt>"
-#~ msgstr ""
-#~ "<qt>Ба инҷо дароед,ё  интихоб кунед бо пахш намудани тугмаи файлгиракро,"
-#~ "ном ва ҷои папка истифода шуд барои ёфтан ва синхронизасия кардан файлҳои "
-#~ "текст. Ҳамаи файлҳо бо васеъкуни. txt дар ин папка ҷойгир аст ва "
-#~ "синхронизасия ба Раlm DOC базаи ахборотҳо дар дастқапи шумо карда мешавад."
-#~ "</qt>"
-
-#~ msgid "Local co&py:"
-#~ msgstr "&Нусхаи маҳҳалӣ:"
-
-#~ msgid ""
-#~ "<qt>Check this box if you want to save a copy of the Palm DOC databases (."
-#~ "pdb files) on your PC.</qt>"
-#~ msgstr ""
-#~ "<qt>Ин қуттиро интихоб намоед агар шумо хоҳед, ки нусхаи базаи таърихи "
-#~ "Palm DOC  (.файлҳои pdb ) дар компютер нигоҳ дошта шавад.</qt>"
-
-#~ msgid "Synchronization Mode"
-#~ msgstr "Тартиботи синхронизация."
-
-#~ msgid "Sync only P&C to PDA"
-#~ msgstr "Аз &компютер ба пилот гузаронидан."
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize texts changed in your PC to Palm "
-#~ "DOC databases in your handheld. Palm DOC databases modified in the "
-#~ "handheld will not be converted to text files, but texts changed in the PC "
-#~ "will be converted to the Palm DOC databases.</qt>"
-#~ msgstr ""
-#~ "<qt>Ин интихобро барои синхронизатсияи матни иваз карда шуда дар "
-#~ "компютери шумо ба Palm DOC дар дастгоҳ интихоб намоед. Таърихи базаи Palm "
-#~ "DOC тағир додаи дар дастгоҳ файлҳои мантро пур намекунад, вале матни иваз "
-#~ "карда шуда дар компютер таърихи базаи Palm DOC-ро пур мекунад.</qt> "
-
-#~ msgid "Sync only P&DA to PC"
-#~ msgstr "Аз &пилот ба компютер гузаронидан."
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize the changes made to Palm DOC "
-#~ "databases in your handheld to the PC text files. Palm DOC databases "
-#~ "modified in the handheld will be converted to text files, but texts "
-#~ "changed in the PC will not be converted to the Palm DOC databases.</qt>"
-#~ msgstr ""
-#~ "<qt>Ин интихобро барои синхронизатсияи матни иваз карда шуда дар Palm DOC "
-#~ "дар дастгоҳи матни файлҳои компютер интихоб намоед. Таърихи базаи Palm "
-#~ "DOC тағир додаи дар дастгоҳ файлҳои мантро пур намекунад, вале матни иваз "
-#~ "карда шуда дар компютер таърихи базаи Palm DOC-ро мепӯшад.</qt> "
-
-#~ msgid "Sync &all"
-#~ msgstr "Синхронизация кардани &ҳар дуи ҷараён."
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize the file texts in your PC to Palm "
-#~ "DOC databases in your handheld. Palm DOC databases modified in the "
-#~ "handheld will be converted to text files, and texts changed in the PC "
-#~ "will be converted to the Palm DOC databases, keeping both versions in "
-#~ "sync.</qt>"
-#~ msgstr ""
-#~ "<qt>Ин интихобро барои синхронизатсияи матни иваз карда шуда дар Palm DOC "
-#~ "дар дастгоҳи матни файлҳои компютер интихоб намоед. Таърихи базаи Palm "
-#~ "DOC тағир додаи дар дастгоҳ файлҳои мантро пур намекунад, вале матни иваз "
-#~ "карда шуда дар компютер таърихи базаи Palm DOC-ро мепӯшад, ҳар дуи ин "
-#~ "тафсирро дар синхронизатсия нигоҳ доред.</qt>"
-
-#~ msgid ""
-#~ "<qt>Enter here, or select clicking the file picker button, the name and "
-#~ "location of the folder where copies of the handheld databases are kept (."
-#~ "pdb files). Local copies are only made if the box is checked as well.</qt>"
-#~ msgstr ""
-#~ "Каталогро ворид кунед, ки дар онҷо нусхаҳои махзани маълумоти КПК нигоҳ "
-#~ "дошта мешаванд. Нусхаҳои маҳаллӣ танҳо ҳангоми интихоби ин интихобот "
-#~ "карда мешаванд."
-
-#~ msgid "PC -> Handheld"
-#~ msgstr "Компютери -> КПК"
-
-#~ msgid "&Compress"
-#~ msgstr "&Фишор додан."
-
-#~ msgid ""
-#~ "Check this box, if the text should be compressed on the handheld to save "
-#~ "memory. Most doc reader on the handheld support compressed texts."
-#~ msgstr ""
-#~ "Ба кор даровардани ин байрақ агар матн дар КПК бояд мухтасар карда шавад,"
-#~ "барои ба осони зеҳнро васеъ кардан.Бисёри нақшаҳоихониши матн нигоҳ "
-#~ "доштани матнҳои кӯтоҳ."
-
-#~ msgid ""
-#~ "<qt>The Palm DOC format supports compressing the text to save memory. "
-#~ "Check this box to enable text compression, so the resulting Palm DOC "
-#~ "database will consume about 50% less memory than in uncompressed state. "
-#~ "Almost all DOC readers on the Palm support compressed texts.</qt>"
-#~ msgstr ""
-#~ "<qt>Истифода бурдани андозаи тазиқи PalmDOG барои ба осони зеҳнро васеъ "
-#~ "кардан.Ба кор даровардани ин байрақ шумо қариб 50% ченаки файлро "
-#~ "сарфакорона харҷ мекунед.Тақрибан ҳамаи нақшаҳои хониши PalmDOG нигоҳ "
-#~ "доштани матнҳои кӯтоҳ.</qt>"
-
-#~ msgid "Convert &bookmarks"
-#~ msgstr "Аз нав ташкил додани &гаарав"
-
-#, fuzzy
-#~| msgid ""
-#~| "<qt>Check this box to enable bookmark creation when converting text "
-#~| "files to Palm DOC databases. Most doc readers support bookmarks. In "
-#~| "order to create a bookmark, it is necessary to to provide the location "
-#~| "in the text where the bookmark should be set and the bookmark title, in "
-#~| "at least one of the formats listed below.</qt>"
-#~ msgid ""
-#~ "<qt>Check this box to enable bookmark creation when converting text files "
-#~ "to Palm DOC databases. Most doc readers support bookmarks. In order to "
-#~ "create a bookmark, it is necessary to provide the location in the text "
-#~ "where the bookmark should be set and the bookmark title, in at least one "
-#~ "of the formats listed below.</qt>"
-#~ msgstr ""
-#~ "<qt>Оё,шумо мехоҳед,гузоришро аз нав ташкил диҳед? Бисёрии нақшаҳои "
-#~ "хониши матн гузоришро нигоҳ медоранд.Шумо метавонед,мавқеъ ва номи "
-#~ "гузоришро нишон диҳед.Масалан якто аз намуди дар поён гузошташударо "
-#~ "интихоб кунед.<qt>"
-
-#~ msgid "&Inline tags in text"
-#~ msgstr "&Дар матн штамп."
-
-#~ msgid ""
-#~ "Check this box to create bookmarks from inline tags in the text. The "
-#~ "inline tag consist of tags in the form <* bookmarktext *>. The bookmark "
-#~ "location is set using the location of the inline tag in the text, and  "
-#~ "the name is the text between the <* and the *>. The inline tag (<*...*>) "
-#~ "will be removed from the text."
-#~ msgstr ""
-#~ "Барои бунёд кардани гузориш аз барчасп дар матн тафтиш намоед. Қатори  "
-#~ "барчасп аз барчаспҳои дар варақа буда иборат мебошад<* bookmarktext *> . "
-#~ "Гузориши ҷойгиршавии ин мондани ҷойгиршавии истифода шуда истодаи барчасп "
-#~ "дар қатори матн ва номи матн байни <* ва *> мебошад.Гузориши қатори (<*..."
-#~ "*>) аз матн ҳаракат дода мешавад."
-
-#, fuzzy
-#~ msgid "&Encoding:"
-#~ msgstr "&Ба код даровардан:"
-
-#~ msgid "&Tags at end of text"
-#~ msgstr "Тегҳо дар &охири матн"
-
-#~ msgid ""
-#~ "Check this box to convert tags of the form <bookmarkname> at the end of "
-#~ "the text to bookmarks. The text inside the tag (\"bookmarkname\") will be "
-#~ "searched in the text, and whenever found, a bookmark will be set there. "
-#~ "The endtags <...> will then be removed from the end of the text."
-#~ msgstr ""
-#~ "Намуди тегҳо <ном_мондан> дар охири матн истифода бурдан барои ёфтани "
-#~ "матн бо қолиб,муқар байни аломат <ва>. Вақте,ки дар матн во мехӯранд"
-#~ "\"ном_мондан\",дар ин вазъият барқарор кардани гузориш.Дар охири матн "
-#~ "тегҳо хориҷ карда мешавад."
-
-#~ msgid "Regular &expressions in .bmk file"
-#~ msgstr "Намуди &мунтазам дар файли bmk"
-
-#~ msgid ""
-#~ "<qt>Check this box to use regular expressions in a file to search the "
-#~ "text for bookmarks. The file should have the same name as the text file, "
-#~ "but should end in .bmk instead of .txt (for instance, the regular "
-#~ "expression file for textname.txt should be textname.bmk). See the "
-#~ "documentation for a description of the format of the bmk file.</qt>"
-#~ msgstr ""
-#~ "<qt>Ботартиб истифода бурдани зуҳурот дар файли номи матнии.bmk (номи "
-#~ "матнӣ.txt-номи файли матнӣ)барои гузоришро дар матн ёфтан.Ба санад барои "
-#~ "нақл кардани андозаи файли bmk муроҷиат кунед.</qt>"
-
-#~ msgid "Handheld -> PC"
-#~ msgstr "КПК->компютер"
-
-#~ msgid "Do not convert, if text unchanged (only bookmarks)"
-#~ msgstr "Дар матни дигар шуда аз нав ташкил додан мумкин нест (фақат гарав) "
-
-#~ msgid ""
-#~ "<qt>Check this box to avoid syncing the text on the handheld to the PC if "
-#~ "you only changed the bookmarks on the handheld (but not the text).</qt>"
-#~ msgstr ""
-#~ "<qt>Агар шумо хоҳед матнро аз КПК ба компютер ҳангоми таъғири танҳо "
-#~ "гузоришҳо, аммо на худи матнро синхронизатсия кунед, ин нишонаро фаъол "
-#~ "созед.</qt>"
-
-#~ msgid "Convert Bookmarks"
-#~ msgstr "Тағйири гузориш"
-
-#~ msgid "Do &not convert bookmarks"
-#~ msgstr "&Тағйир надодани гузориш"
-
-#~ msgid ""
-#~ "<qt>Check this box to avoid converting Palm DOC bookmarks to inline tags "
-#~ "or to a bookmark file.</qt>"
-#~ msgstr ""
-#~ "<qt>Барои табдилдиҳии канора гирифтани гузориши Palm DOC дар хати "
-#~ "барчаспҳо тафтиш намоед ё ин ки барои гузориши файл.</qt>"
-
-#~ msgid "Convert into .bm &file"
-#~ msgstr "Дар &файли bm"
-
-#~ msgid ""
-#~ "<qt>Check this box to convert the Palm DOC database bookmarks to a "
-#~ "separate file, in the bmk format (see more about this format in the "
-#~ "documentation). The resulting bookmark file shares the same filename as "
-#~ "the resulting .txt file, but ends in .bmk instead. This approach creates "
-#~ "a clean text file and a bookmark file.</qt>"
-#~ msgstr ""
-#~ "<qt>Барои пушидани таърихи гузориши базаи Palm DOCин қуттиро  дар файли "
-#~ "ҷудо шавӣ тафтиш намоед,  дар варақаи bmk (барои бисёртар гирифтани "
-#~ "маълумоти ин варақа ба санадсозӣ нигаред).Натиҷаи гузориши файл барои "
-#~ "ҳамон ҳиссаи ном ҳамчун натичҷаи файли матнӣ, вале ба ҷои охир дар bmk.Ин "
-#~ "гузориш барои тоза намудани файл эҷод менамояд ва гузориши файлро.</qt>"
-
-#~ msgid "Convert as &inline tags"
-#~ msgstr "Дар &штамп дар матн."
-
-#~ msgid ""
-#~ "<qt>Check this box to convert the Palm DOC database bookmarks to inline "
-#~ "tags, in the form &lt;* BookmarkName *&gt;. These tags are inserted in "
-#~ "the text in the position marked by the bookmark, and the text inside the "
-#~ "tag corresponds to the bookmark name. Inline tags are easy to create, "
-#~ "delete, move and edit.</qt>"
-#~ msgstr ""
-#~ "<qt>Барои пушидани таърихи гузориши базаи Palm DOCин қуттиро дар файли "
-#~ "ҷудо шавӣ тафтиш намоед,  дар варақаи  &lt; * Гузориши ном*&gt;Натиҷаи "
-#~ "гузориши файл барои ҳамон ҳиссаи ном ҳамчун натичҷаи файли матнӣ, вале ба "
-#~ "ҷои охир дар bmk.Ин гузориш барои тоза намудани файл эҷод менамояд ва "
-#~ "гузориши файлро.</qt>"
-
-#~ msgid ""
-#~ "If the same text was changed on the PC and the handheld, which of the two "
-#~ "versions should be used as the new version?"
-#~ msgstr ""
-#~ "Ҳангоми тағйири матн дар КПК ва дар компютери инфиродӣ, кадом якеро аз ду "
-#~ "раванд монондан лозим аст?"
-
-#~ msgid ""
-#~ "<qt>The Palm DOC conduit does not feature merging the modifications when "
-#~ "a text is changed both in the handheld and in the computer. Therefore, "
-#~ "the choice is between working with the files out of sync, or discarding "
-#~ "the changes in one of them.</qt>"
-#~ msgstr ""
-#~ "<qt>Канали Palm DOC хусусияти якшавӣ надорад он вақте ки матн иваз карда "
-#~ "шудааст ҳам дар дастак ва ҳам дар компютер. Бинобар ҳамин интихоб ин "
-#~ "байни кор аст берун аз синхроизатсия ё инки иваз кардаатонро гузоред ба "
-#~ "яке аз онҳо.</qt>"
-
-#~ msgid "&No resolution"
-#~ msgstr "&Ғайри иҷозаи ихтилоф"
-
-#~ msgid ""
-#~ "<qt>The Palm DOC conduit does not feature merging the modifications when "
-#~ "a text is changed both in the handheld and in the computer. Therefore, "
-#~ "when conflicts appear, the choice is between working with the files out "
-#~ "of sync, or discarding the changes in one of them. Select this option to "
-#~ "prevent KPilot from overwriting your modifications.</qt>"
-#~ msgstr ""
-#~ "<qt>Канали Palm DOC хусусияти якшавӣ надорад он вақте ки матн иваз карда "
-#~ "шудааст ҳам дар дастак ва ҳам дар компютер. Бинобар ҳамин интихоб ин "
-#~ "байни кор аст берун аз синхроизатсия ё инки иваз кардаатонро гузоред ба "
-#~ "яке аз онҳо.Ин интихобро барои пешгирии KPilot аз ислоҳи рӯйҳамнависӣ "
-#~ "интихоб намоед </qt>"
-
-#~ msgid "P&DA overrides"
-#~ msgstr "P&DA Рад кардан."
-
-#~ msgid ""
-#~ "<qt>The Palm DOC conduit does not feature merging the modifications when "
-#~ "a text is changed both in the handheld and in the computer. Therefore, "
-#~ "when conflicts appear, the choice is between working with the files out "
-#~ "of sync, or discarding the changes in one of them. Select this option to "
-#~ "make the PDA version overwrite the PC version in case of conflict.</qt>"
-#~ msgstr ""
-#~ "<qt>Канали Palm DOC хусусияти якшавӣ надорад он вақте ки матн иваз карда "
-#~ "шудааст ҳам дар дастак ва ҳам дар компютер. Бинобар ҳамин ҳангоми пайдо "
-#~ "шудани мухолифат, интихоб ин байни кор аст берун аз синхроизатсия ё инки "
-#~ "иваз кардаатонро гузоред ба яке аз онҳо.Ин интихобро барои сохтани "
-#~ "тафсири PDA руйҳам навиштани тафсири компютер дар ҳолати мухолифат.</qt>"
-
-#~ msgid "P&C overrides"
-#~ msgstr "аз компютери &инфиродӣ"
-
-#~ msgid ""
-#~ "<qt>The Palm DOC conduit does not feature merging the modifications when "
-#~ "a text is changed both in the handheld and in the computer. Therefore, "
-#~ "when conflicts appear, the choice is between working with the files out "
-#~ "of sync, or discarding the changes in one of them. Select this option to "
-#~ "make the PC version overwrite the PDA version in case of conflict.</qt>"
-#~ msgstr ""
-#~ "<qt>Канали Palm DOC хусусияти якшавӣ надорад он вақте ки матн иваз карда "
-#~ "шудааст ҳам дар дастак ва ҳам дар компютер. Бинобар ҳамин ҳангоми пайдо "
-#~ "шудани мухолифат, интихоб ин байни кор аст берун аз синхроизатсия ё инки "
-#~ "иваз кардаатонро гузоред ба яке аз онҳо.Ин интихобро барои сохтани "
-#~ "тафсири PDA руйҳам навиштани тафсири компютер дар ҳолати мухолифат.</qt>"
-
-#~ msgid "&Ask the user"
-#~ msgstr "&Аз истифодабаранда пурсед."
-
-#~ msgid ""
-#~ "<qt>The Palm DOC conduit does not feature merging the modifications when "
-#~ "a text is changed both in the handheld and in the computer. Therefore, "
-#~ "when conflicts appear, the choice is between working with the files out "
-#~ "of sync, or discarding the changes in one of them. Select this option to "
-#~ "show the resolution dialog to let the user decide on a case by case basis."
-#~ "</qt>"
-#~ msgstr ""
-#~ "<qt>Канали Palm DOC хусусияти якшавӣ надорад он вақте ки матн иваз карда "
-#~ "шудааст ҳам дар дастак ва ҳам дар компютер. Бинобар ҳамин ҳангоми пайдо "
-#~ "шудани мухолифат, интихоб ин байни кор аст берун аз синхроизатсия ё инки "
-#~ "иваз кардаатонро гузоред ба яке аз онҳо.Ин интихобро барои нишон додани "
-#~ "ҳали гуфтугу ба истифодабаранда имкон медиҳад, ки ҳолат ба ҳолати асосро "
-#~ "қарор намояд.</qt>"
-
-#~ msgid "&Always show the resolution dialog"
-#~ msgstr "&Ҳама вақт диалоги рухсат додаи низоъро нишон диҳед."
-
-#~ msgid ""
-#~ "<qt>Check this box to force the resolution dialog to appear even when "
-#~ "there are no conflicts.</qt>"
-#~ msgstr ""
-#~ "<qt>Ҳама вақт диалоги рухсат додаи низоъро нишон диҳед, ҳатто агар онҳоро "
-#~ "наёбанд.</qt>"
-
-#~ msgid "&PalmDOC file:"
-#~ msgstr "&Файли PalmDOC:"
-
-#~ msgid "Convert whole &folders"
-#~ msgstr "Аз нав ташкил додани &каталог."
-
-#~ msgid ""
-#~ "Folder where copies of the handheld databases are kept. You can install "
-#~ "them to any PalmOS handheld, and distribute these copies to other people "
-#~ "(but beware of copyright infringement)."
-#~ msgstr ""
-#~ "Папкаест, ки дар он нусхаҳои махзанҳои маълумоти КПК захира шудаанд. Шумо "
-#~ "метавонед, ин махзанҳои маълумотро дар ягон дастгоҳ, ки бо идоракунии "
-#~ "PalmOS амал карда истодааст сабт кунед ва ин нусхаҳоро ба дигар одамон "
-#~ "(аммо оиди натиҷаи риоя накардани ҳуқуқи муаллифӣ низ дар хотир доред) "
-#~ "бидиҳед."
-
-#~ msgid "&Ask before overwriting files"
-#~ msgstr "&Талаб кардани файлҳои дирӯза."
-
-#~ msgid "&Verbose messages"
-#~ msgstr "&Муфассал кардани хабар."
-
-#~ msgid "Convert Text to PalmDOC"
-#~ msgstr "Аз нав ташкил додани матн дар андозаи PalmDOC"
-
-#~ msgid "Convert PalmDOC to Text"
-#~ msgstr "Аз нав ташкил додани PalmDOС дар матн."
-
-#~ msgid ""
-#~ "Enter the name of the folder where the text files reside on the PC. All "
-#~ "files with extension .txt will be synced to the handheld."
-#~ msgstr ""
-#~ "Ба роҳ даровардан ба ҷузъгир куҷое,ки ба компютери файли матнӣ ҷо ба ҷо "
-#~ "кардан.Ҳамаи файлҳо бо зиёдкунии txt аз КПК синхрониза- ция карда мешавад."
-
-#~ msgid ""
-#~ "When a <* bookmarktext *> appears somewhere in the text, a bookmark will "
-#~ "be set at this position, and the text between the <* and the *> will be "
-#~ "used as bookmark name. The <*...*> will be removed from the text."
-#~ msgstr ""
-#~ "Агар дар матн тег ҳузур бошад <* матни гузориш *>,дар мавқеъи даромадгоҳи "
-#~ "матн гузоштани мавқеъ бо ном дар <* and the *> муқаррар аст."
-
-#~ msgid ""
-#~ "Tags of the form <bookmarkname> at the end of the text will be used to "
-#~ "search the text for the pattern between the < and >. Whenever "
-#~ "\"bookmarkname\" appears in the text, a bookmark will be set there. The "
-#~ "endtags <...> will then be removed from the end of the text."
-#~ msgstr ""
-#~ "Намуди тегҳо <номи_гузориш> дар охири текст истифода мебарем,барои ёфтани "
-#~ "матн бо нусха,муқаррар кардани байни рамз < ва >. Кадом вақте,ки дар матн "
-#~ "рӯ ба рӯ шудани \"номи_ гузориш\" ,дар ин мавқеъ дуруст кардани гузориш."
-#~ "Тегҳо дар охири матн хориҷ карда мешавад."
-
-#~ msgid ""
-#~ "The Palm doc format supports compressing the text to save memory. If you "
-#~ "check this box, the text will consume about 50% less memory than in "
-#~ "uncompressed state. Almost all DOC readers on the Palm support compressed "
-#~ "texts."
-#~ msgstr ""
-#~ "Андозаи PalmDOC истифода кардани тазиқ барои авсеъ кардани зеҳни муста- "
-#~ "қилона.Дар вақти даровардани ин байрақ шумо қапиб 50%андозаи файлро сарфа "
-#~ "мекунед.Қариб ҳамаи барномаи хондании PalmDOC матнҳои тазиқро нигоҳ "
-#~ "доштан."
-
-#~ msgid ""
-#~ "Do you want to convert bookmarks? Most doc readers support bookmarks. You "
-#~ "have to provide some information about where the bookmarks should be set "
-#~ "and their titles. Check at least one of the bookmark types below."
-#~ msgstr ""
-#~ "Оё,шумо мехоҳед,гузоришро аз нав ташкил кунед? Аксарияти барномаҳои "
-#~ "хондани матн гузоришро нигоҳ доштан.Шумо метавонед, мавқеъ ва номи "
-#~ "гузоришро нишон диҳед.Ақалан як намуди дар поён бударо интихоб кунед."
-
-#~ msgid ""
-#~ "Use regular expressions in a file textname.bmk (textname.txt is the "
-#~ "filename of the text) to search the text for bookmarks.See the "
-#~ "documentation for a description of the format of the bmk file."
-#~ msgstr ""
-#~ "Ботартиб истифода бурдани изҳор дар файли textname.bmk (textname.txt - "
-#~ "номи матни файл ) барои ёфтани гузориш дар матн.Ба ҳуҷҷатҳо аз тавсифи "
-#~ "андозаи файли bmk муроҷиат кардан."
-
-#~ msgid "Convert as &end tags"
-#~ msgstr "Тегҳо дар охири &матн."
-
-#~ msgid "Convert into .bmk &file"
-#~ msgstr "Дар &файли .bmk"
-
-#, fuzzy
-#~| msgid "Use &Dialog"
-#~ msgid "Dialog"
-#~ msgstr "Истифодаи &тирезаи диалог"
-
-#, fuzzy
-#~| msgid "&Password:"
-#~ msgid "Password:"
-#~ msgstr "&Гузарвожа:"
-
-#, fuzzy
-#~| msgid "&Password:"
-#~ msgid "Retype password:"
-#~ msgstr "&Гузарвожа:"
-
-#, fuzzy
-#~| msgid "Password set"
-#~ msgid "Passwords do not match."
-#~ msgstr "Ҳимояташ бо нишон"
-
-#, fuzzy
-#~| msgid "Record index:"
-#~ msgid "Keyring Editor"
-#~ msgstr "Рақами сабт:"
-
-#~ msgid "Delete Record"
-#~ msgstr "Тоза кардани сабт"
-
-#, fuzzy
-#~| msgid "New Record..."
-#~ msgid "New Record"
-#~ msgstr "Сабти нав..."
-
-#, fuzzy
-#~| msgid "Country:"
-#~ msgid "Account:"
-#~ msgstr "Мамлакат:"
-
-#~ msgid "Category"
-#~ msgstr "Категория"
-
-#, fuzzy
-#~| msgid "changed"
-#~ msgid "Last changed:"
-#~ msgstr "дигаргун шудааст"
-
-#, fuzzy
-#~| msgid "Note:\n"
-#~ msgid "Notes:"
-#~ msgstr "Қайд:\n"
-
-#, fuzzy
-#~| msgid "Title"
-#~ msgid "&File"
-#~ msgstr "Сарлавҳа"
-
-#, fuzzy
-#~| msgid "&Note:"
-#~ msgid "&New"
-#~ msgstr "&Эзоҳот:"
-
-#, fuzzy
-#~| msgid "&Edit..."
-#~ msgid "&Exit"
-#~ msgstr "&Муҳаррир..."
-
-#, fuzzy
-#~| msgid "Viewer settings."
-#~ msgid "Keyring Settings"
-#~ msgstr "Параметри нигоҳкунандаҳо."
-
-#, fuzzy
-#~| msgid "Password set"
-#~ msgid "Password Settings"
-#~ msgstr "Ҳимояташ бо нишон"
-
-#, fuzzy
-#~| msgid "No password set"
-#~ msgid "Save password in wallet:"
-#~ msgstr "Нишон барқарор нашудааст"
-
-#~ msgid "Sync"
-#~ msgstr "Синхронизация"
-
-#, fuzzy
-#~| msgid "Select how often AvantGo should be synchronised"
-#~ msgid "Select how often AvantGo should be synchronized"
-#~ msgstr "Интихоб кунед, чи қадар тез AvantGo бояд синхронизациа шавад."
-
-#~ msgid "&Every sync"
-#~ msgstr "&Ҳар як синхронизациа."
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize with the MAL server on every "
-#~ "HotSync. To perform a successful synchronization, you need to have access "
-#~ "to the MAL server during the HotSync.</qt>"
-#~ msgstr ""
-#~ "<qt>Ин ҷудокардагиро интихоб кунед барои синхронизасия кардан бо сервери "
-#~ "МАL дар ҳар як Hotsync. Барои нишон додани синхронизасияро бомуваффақият,"
-#~ "ба шумо лозим ҳаст, ки ба сервери МАL дароед дар вақти Ноtsync.</qt>"
-
-#~ msgid "Once per &hour"
-#~ msgstr "Як маротиба дар &соати як."
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize with the MAL server on every "
-#~ "HotSync that is at least one hour after the previous MAL sync. To perform "
-#~ "a successful synchronization, you need to have access to the MAL server "
-#~ "during the HotSync.</qt>"
-#~ msgstr ""
-#~ "<qt>Ин ҷудокардагиро интихоб кунед барои синхронизасия кардан бо сервери "
-#~ "МАL дар ҳар як Нotsync, ки камаш як соат баъди синхронизасияи пештара МАL."
-#~ "Барои нишон додани синхронизасияро бомуваффақият, ба шумо лозим ҳаст,ки "
-#~ "ба сервери МАL дар вақти Нotsync.</qt>"
-
-#~ msgid "Once a &day"
-#~ msgstr "Як маротиба дар як &рӯз."
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize with the MAL server on every "
-#~ "HotSync that is at least one day after the previous MAL sync. To perform "
-#~ "a successful synchronization, you need to have access to the MAL server "
-#~ "during the HotSync.</qt>"
-#~ msgstr ""
-#~ "<qt>Ин ҷудокардагиро интихоб кунед барои синхронизасия кардан бо сервери "
-#~ "МАL дар ҳар як Нotsync, ки камаш як рӯз баъди синхронизасияи пештара МАL."
-#~ "Барои нишон додани синхронизасияро бомуваффақият, ба шумо лозим ҳаст,ки "
-#~ "ба сервери МАL дар вақти Нotsync.</qt>"
-
-#~ msgid "Once a &week"
-#~ msgstr "&Як маротиба дар як ҳафта."
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize with the MAL server on every "
-#~ "HotSync that is at least one week after the previous MAL sync. To perform "
-#~ "a successful synchronization, you need to have access to the MAL server "
-#~ "during the HotSync.</qt>"
-#~ msgstr ""
-#~ "<qt>Ин ҷудокардагиро интихоб кунед барои синхронизасия кардан бо сервери "
-#~ "МАL дар ҳар як Нotsync, ки камаш як ҳафта баъди синхронизасияи пештара "
-#~ "МАL.Барои нишон додани синхронизасияро бомуваффақият, ба шумо лозим ҳаст,"
-#~ "ки ба сервери МАL дар вақти Нotsync.</qt>"
-
-#~ msgid "Once a &month"
-#~ msgstr "Як маротиба дар як &моҳ."
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize with the MAL server on every "
-#~ "HotSync that is at least one month after the previous MAL sync. To "
-#~ "perform a successful synchronization, you need to have access to the MAL "
-#~ "server during the HotSync.</qt>"
-#~ msgstr ""
-#~ "<qt>Ин интихобро барои синхронизация кардан бо сервери MAL дар ҳар як "
-#~ "синхронизатсияи Hot на кам аз як моҳ пас аз MAL-и пештара синхоризатсия "
-#~ "карда мешавад.Барои бо муваффақият синхронизатсия намоед, ба Шумо лозим "
-#~ "меояд, ки ҳангоми дар сервери синхронизатсияи Hot будан  ба сервери MAL "
-#~ "дастёб бошед.</qt>"
-
-#~ msgid "Proxy"
-#~ msgstr "Прокси:"
-
-#~ msgid "Proxy Type"
-#~ msgstr "Намуди прокси"
-
-#~ msgid "&No proxy"
-#~ msgstr "&Прокси нест"
-
-#~ msgid ""
-#~ "<qt>Select this option if you do not want KPilot to use a proxy server. "
-#~ "Use this option if you connect to the internet directly.</qt>"
-#~ msgstr ""
-#~ "<qt>Агар хоҳед ин параметро дуруст кунед,барои пилот истифода кардани "
-#~ "прокси шимол.</qt>"
-
-#~ msgid "&HTTP proxy"
-#~ msgstr "&Прокси HTTP"
-
-#~ msgid "<qt>Select this option if you want KPilot to use a HTTP proxy.</qt>"
-#~ msgstr ""
-#~ "<qt>Агар хоҳед ин параметро дуруст кунед,,барои пилот прокси-шимоли HTTP  "
-#~ "истифода баред.</qt>"
-
-#~ msgid "&SOCKS proxy"
-#~ msgstr "&Прокси SOCKS"
-
-#~ msgid "<qt>Select this option if you want KPilot to use a SOCKS proxy.</qt>"
-#~ msgstr ""
-#~ "<qt>Агар хоҳед ин пареметро дуруст кунед барои пилот прокси-шимоли SOCKS."
-#~ "</qt>"
-
-#~ msgid "Server Information"
-#~ msgstr "Иттилооти сервер"
-
-#~ msgid "Custom &port:"
-#~ msgstr "Бандари &оддӣ:"
-
-#~ msgid "Check this box to use a non-standard proxy port."
-#~ msgstr ""
-#~ "Ин қуттиро санҷида гиред барои истифодаи бандари бе-стандартро аз барои "
-#~ "эътимод."
-
-#~ msgid "Ser&ver name:"
-#~ msgstr "Но&ми сервер:"
-
-#~ msgid ""
-#~ "<qt>If you selected HTTP or SOCKS proxy, type the address of the proxy "
-#~ "server to use here, in the form <i>foo.bar.com</i> (not <i>http://foo.bar."
-#~ "com</i> or <i>http://foo.bar.com:8080</i>).</qt>"
-#~ msgstr ""
-#~ "<qt> Адреси истифода бурдаи прокси-шимол, мисол:\n"
-#~ "<u><i>foo.bar.com</i></u>\n"
-#~ "<b> не</b>\n"
-#~ "<i>http://foo.bar.com</i> ё ин ки <i>http://foo.bar.com:8080</i>.</qt>"
-
-#~ msgid ""
-#~ "<qt>Enter the port you want KPilot to use when connecting to your proxy "
-#~ "server here.</qt>"
-#~ msgstr ""
-#~ "<qt> Портро нишон диҳед, кадом пилот бояд барои алоқа прокси-шимол- ро "
-#~ "истифода барад. </qt>"
-
-#~ msgid ""
-#~ "<qt>If your proxy requires authentication, enter your password here.</qt>"
-#~ msgstr ""
-#~ "<qt> Дар ин ҷо номи шабро гузоред,мабодо прокси-шимол авторизацияро талаб "
-#~ "кунед..</qt>"
-
-#~ msgid ""
-#~ "<qt>If your proxy requires authentication, enter your username here.</qt>"
-#~ msgstr ""
-#~ "<qt>Дар ин ҷо номи истифодабарандаро гузоред,мабодо прокси-шимол "
-#~ "авторизацияро талаб кунад.</qt>"
-
-#~ msgid "&Password:"
-#~ msgstr "&Гузарвожа:"
-
-#~ msgid "&User name:"
-#~ msgstr "&Номи истифодакунанда:"
-
-#~ msgid ""
-#~ "<qt>Enter a list of MAL servers that do not need the use of a proxy here, "
-#~ "separated with commas, e.g: <br><i>localhost,127.0.0.1,.lan</i><qt>"
-#~ msgstr ""
-#~ "<qt> Вергулҳои ҷудо шударо дар руйхати хизматгузории MAL гузоред, кадоме,"
-#~ "ки мӯҳтоҷи истифода бурдани прокси хизматгузорӣ нест, мисол  "
-#~ "<br><i>хӯҷаини маҳаллӣ,127.0.0.1,.lan</i><qt>"
-
-#~ msgid "N&o proxy for:"
-#~ msgstr "Прокси барои &нест:"
-
-#~ msgid "MAL Server"
-#~ msgstr "Сервери MAL"
-
-#~ msgid "MAL Server Information"
-#~ msgstr "Ахбороти сервери MAL"
-
-#~ msgid "&MAL server name:"
-#~ msgstr "&Номи сервери MAL:"
-
-#~ msgid ""
-#~ "<qt>There is currently <b>no way to set server parameters on the desktop</"
-#~ "b>; you need to use the <i>MobileLink</i> or <i>AGConnect</i> application "
-#~ "on the handheld device. </qt>"
-#~ msgstr ""
-#~ "<qt>Имконияти дуруст нест барои дуруст кардани параметрҳои хизматгузории "
-#~ "компютери персоналӣ. Истифодаи мӯҳрзанӣ зарур аст. <i>MobileLink</i> на "
-#~ "КПК.</qt>"
-
-#, fuzzy
-#~ msgid "Memofile Conduit Options"
-#~ msgstr "Мизроб кардани канали Perl"
-
-#, fuzzy
-#~| msgid "General"
-#~ msgctxt "General settings for memofile conduit."
-#~ msgid "General"
-#~ msgstr "Умумӣ"
-
-#, fuzzy
-#~ msgid "Memos directory:"
-#~ msgstr "Матни қайдҳо:"
-
-#, fuzzy
-#~ msgid "Sync private records:"
-#~ msgstr "&Расмҳои ғайрихизматиро нишон диҳед."
-
-#~ msgid "Path to the directory to which the pictures should be exported."
-#~ msgstr "Роҳ ба каталог,дар кадоме,ки мо бояд расмро нигоҳ дорем."
-
-#~ msgid "Output:"
-#~ msgstr "Барориш:"
-
-#~ msgid "Null-Conduit Options"
-#~ msgstr "Мизроб кардани канали нулевой."
-
-#, fuzzy
-#~| msgid ""
-#~| "<qt>Enter the message to add to the Sync Log on your Pilot here.</qt>"
-#~ msgid ""
-#~ "&lt;qt>Enter the message to add to the Sync Log on your Pilot here.&lt;/"
-#~ "qt>"
-#~ msgstr ""
-#~ "<qt>Хабар нависед ки он дар маҷалаи синхронизация нигоҳ дошта мешавад</qt>"
-
-#, fuzzy
-#~| msgid "General"
-#~ msgctxt "General settings for the null conduit."
-#~ msgid "General"
-#~ msgstr "Умумӣ"
-
-#~ msgid "&Log message:"
-#~ msgstr "&Хабар:"
-
-#~ msgid "KPilot was here."
-#~ msgstr "Дар ин ҷо KPilot буд."
-
-#~ msgid "Send Mail"
-#~ msgstr "Фиристондани почтаҳо."
-
-#~ msgid ""
-#~ "<qt>Select the method KPilot will use to send the mail from your Handheld "
-#~ "to the recipients here. Depending on the method you choose, the other "
-#~ "fields in the dialog may be enabled or disabled. Currently, the only "
-#~ "<i>working</i> method is through KMail.</qt>"
-#~ msgstr ""
-#~ "<qt>Ин руйхат метавонад, барои шумо ин методро интихоб кунад,"
-#~ "истифодабарии пилот барои фиристондани почта аз КПК муқаррар кардани "
-#~ "гиранда.Мутобиат аз методи интихоб карда,як хел параметрҳо дохил карда "
-#~ "мешавад ё қатъ карда мешавад.Дар тафсири ҷоришаванда ягона <i>коркун</"
-#~ "i>метод-азKMail.</qt>"
-
-#~ msgid "Send method:"
-#~ msgstr "Методи фиристондан:"
-
-#~ msgid "Do Not Send Mail"
-#~ msgstr "Нафиристонидани почта."
-
-#~ msgid "Use KMail"
-#~ msgstr "Истифодаи KMail"
-
-#~ msgid "<qt>Enter the email address you want to send messages as here.</qt>"
-#~ msgstr "<qt> Адреси почтаи электроникаи гирандаро нишон диҳед.</qt>"
-
-#~ msgid "Email address:"
-#~ msgstr "Адреси почтаи электронӣ:"
-
-#~ msgid "$USER"
-#~ msgstr "$ИСТИФОДАКУНАНДА"
-
-#~ msgid ""
-#~ "<qt>If you want to add a signature file, enter the location of your "
-#~ "signature file (usually, <i>.signature</i>, located in your home folder) "
-#~ "here, or select it clicking the file picker button. The signature file "
-#~ "contains the text that is added to the end of your outgoing mail messages."
-#~ "</qt>"
-#~ msgstr ""
-#~ "<qt>Агар шумо хоҳед, ки имзои файлро илова намоед, пас номи ҷойгиршавии "
-#~ "файли имзоро ( одотан, <i>.имзои</i>, дар дар папкаи ҷойгиршуда) дар инҷо "
-#~ "ворид созед, ё инки тугмаи файли picker интихоб намоед.Имзои файли шумо "
-#~ "дар охири баромадгоҳи почтаи мактубатон матне илова карда шудааст.</qt>"
-
-#~ msgid "Signature file:"
-#~ msgstr "Файли имзо карда:"
-
-#~ msgid ""
-#~ "<qt>Enter here, or select by clicking the file picker button, the "
-#~ "location and file name of the output file used to store the handheld's "
-#~ "system information.</qt>"
-#~ msgstr "<qt> ба инчо дароед,ё ин ки интихоби бо </qt>"
-
-#~ msgid "Output &file:"
-#~ msgstr "&Файл барои барориш:"
-
-#~ msgid "Type of Output"
-#~ msgstr "Намуди барориш"
-
-#~ msgid "&HTML"
-#~ msgstr "&HTML"
-
-#, fuzzy
-#~ msgid ""
-#~ "<qt>Select this option to output the system information data as a HTML "
-#~ "document.</qt>"
-#~ msgstr ""
-#~ "ин амалро интиихоб карда системаи хабарии таърихи рузро ба монанди "
-#~ "документи HTML хорич кунед</qt>"
-
-#, fuzzy
-#~| msgid "&Text file:"
-#~ msgid "Te&xt file"
-#~ msgstr "&Файли матни:"
-
-#~ msgid ""
-#~ "<qt>Select this option to output the system information data as a text "
-#~ "document.</qt>"
-#~ msgstr ""
-#~ "<qt>Инро интихоб кунед барои баровардан  ахбороти система базаро ҳамчун "
-#~ "документи  тексти.</qt>"
-
-#~ msgid ""
-#~ "<qt>Enter here, or select by clicking on the file picker button, the "
-#~ "location of the template to be used if you select the Custom template "
-#~ "option.</qt>"
-#~ msgstr ""
-#~ "<qt>Ба инҷо дароед,ё бо пахши тугмача ба болои файлгирак интихоб кунед, "
-#~ "ҷойи гардаро бояд истифода бошад агар шумо Гардаи гумрукро "
-#~ "ҷудокардашударо интихоб кардед.</qt>"
-
-#~ msgid "&Custom template:"
-#~ msgstr "&Қолиби оддӣ:"
-
-#~ msgid ""
-#~ "<qt>Select this option to output the system information data as defined "
-#~ "by a custom template. Enter the location of the template in the edit box, "
-#~ "or select it clicking on the file picker button.</qt>"
-#~ msgstr ""
-#~ "<qt> Ин ҷудокардагиро интихоб кунед барои баровардани базаи ахбороти "
-#~ "система -ро ҳамчун аз тарафигардаи гумрук муайянкардашуда.Ба ҷои ба "
-#~ "template дар қуттии вироиши дароед.</qt>"
-
-#~ msgid "Parts Included"
-#~ msgstr "Қисмҳо ҳастанд"
-
-#~ msgid "Output Type"
-#~ msgstr "Намуди барориш"
-
-#~ msgid ""
-#~ "<qt>Check on this list the types of information about your system and "
-#~ "handheld you want to display in the output file.</qt>"
-#~ msgstr ""
-#~ "<qt>Дар ин саҳифа намудҳои ахборотро дар бораи системаатон санҷед ва "
-#~ "дастқапро шумо мехоҳед нишон диҳед дар файли бароврда шуда.</qt>"
-
-#, fuzzy
-#~| msgid "Database information"
-#~ msgid "Hardware information"
-#~ msgstr "Ахборот дар бораи базаи маълумотҳо"
-
-#, fuzzy
-#~| msgid "System Information"
-#~ msgid "Memory information"
-#~ msgstr "Системаи ахборотӣ"
-
-#, fuzzy
-#~| msgid "PalmOSVersion"
-#~ msgid "PalmOS version"
-#~ msgstr "Ривояти PalmOS"
-
-#, fuzzy
-#~| msgid "Synchronization Mode"
-#~ msgid "Synchronization information"
-#~ msgstr "Тартиботи синхронизация."
-
-#, fuzzy
-#~| msgid "Database information"
-#~ msgid "User information"
-#~ msgstr "Ахборот дар бораи базаи маълумотҳо"
-
-#, fuzzy
-#~| msgid "General"
-#~ msgctxt "General settings for time conduit."
-#~ msgid "General"
-#~ msgstr "Умумӣ"
-
-#~ msgid "Direction"
-#~ msgstr "Фиристодан."
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize the handheld time with the PC time, "
-#~ "by using the PC time on both.</qt>"
-#~ msgstr ""
-#~ "<qt> Ин ҷудокардагиро интихоб кунед барои синхронизасия кардани вақти "
-#~ "дастқапро бо вақти PC,бо истифодаи вақти РС дар ҳар ду.</qt>"
-
-#~ msgid "Set the &handheld time from the time on the PC"
-#~ msgstr "Дуруст кардани вақт ба &ПК аз компютери персоналӣ."
-
-#~ msgid ""
-#~ "<qt>Select this option to synchronize the handheld time with the PC time, "
-#~ "by using the handheld time on both.</qt>"
-#~ msgstr ""
-#~ "<qt> Ин ҷудокардагиро интихоб кунед барои синхронизасия кардани вақти "
-#~ "дастқапро бо вақти РС,бо истифодаи дастқап дар ҳар ду.</qt> "
-
-#~ msgid "Set the &PC time from the time on the handheld"
-#~ msgstr "Дуруст кардани вақт ба &компютери персоналӣ аз PC"
-
-#, fuzzy
-#~| msgid ""
-#~| "<qt>PalmOS Version 3.25 and 3.3 do not support setting the system time, "
-#~| "so this conduit will be skipped for handhelds that run either of these "
-#~| "operating systems.</qt>"
-#~ msgid ""
-#~ "PalmOS Version 3.25 and 3.3 do not support setting the system time, so "
-#~ "this conduit will be skipped for handhelds that run either of these "
-#~ "operating systems."
-#~ msgstr ""
-#~ "<qt>PalmOS ривояти 3.25 ва 3.3 гузориши тартиб вақти кориро нигоҳ надошт. "
-#~ "Канали синхронизацияи вақт роҳ дода нашуд.</qt>"
-
-#, fuzzy
-#~| msgid "Locale Settings"
-#~ msgid "&Akonadi Settings"
-#~ msgstr "Настройкаи маҳдуд."
-
-#, fuzzy
-#~| msgid "Conflicts"
-#~ msgid "&Conflicts"
-#~ msgstr "Низоъ"
-
-#, fuzzy
-#~| msgid "Fields"
-#~ msgid "&Fields"
-#~ msgstr "Ҳошияҳо"
-
-#, fuzzy
-#~| msgid "Custom Fields"
-#~ msgid "C&ustom Fields"
-#~ msgstr "Ҳошияҳои оддӣ"
-
-#, fuzzy
-#~| msgid "&Restore"
-#~ msgid "&Remove"
-#~ msgstr "&Барқарор кардан"
-
-#, fuzzy
-#~| msgid "You need to select a database to delete in the list."
-#~ msgid "Click here to add a database to the list."
-#~ msgstr ""
-#~ "Аввал ба шумо лозим аст интихоб кардани базаи маълумотӣ аз рӯйхати барои "
-#~ "тозакунӣ."
-
-#~ msgid "&Add"
-#~ msgstr "&Илова"
-
-#~ msgid "KPilot Options"
-#~ msgstr "Танзимотҳои KPilot"
-
-#, fuzzy
-#~ msgid "Do &backup:"
-#~ msgstr "&Бе нусхаи резервӣ:"
-
-#, fuzzy
-#~ msgid "On Every HotSync"
-#~ msgstr "Анҷоми синхронизатсия\n"
-
-#, fuzzy
-#~| msgid "Database"
-#~ msgid "Databases"
-#~ msgstr "Асоси маълумот"
-
-#~ msgid ""
-#~ "<qt><p>Enter the databases types you wish to exclude from the backup "
-#~ "operation here. Use this setting if backing up some databases crashes the "
-#~ "handheld, or if you do not want a backup of some databases (like AvantGo "
-#~ "pages).</p><p>Entries with square brackets [] are <i>creator codes</i> "
-#~ "like <tt>[lnch]</tt> and can exclude a whole range of databases. Entries "
-#~ "without the brackets list database names, and may include shell-style "
-#~ "wildcards, like <tt>*_a68k</tt>.</p></qt>"
-#~ msgstr ""
-#~ "<qt> <p>Он намуди таърихи базае ки шумо мехоҳед хориҷ намоед аз омили "
-#~ "пуштибонӣ инҷо ворид намоед.Агар пуштибонии якчанд таърихи базаро аз кор "
-#~ "мононед, пас ин барпои ҳолатро истифода намоед, ё агар шумо нахоҳед "
-#~ "пуштибонии якчанд таърихи базаҳоро истифода баред (ба монанди иҷроиши "
-#~ "саҳифаҳои Avant).</p> <p>Ворид шудан бо қавсҳо [] ин <i>бунёдгори коди</"
-#~ "i> ҳамчун<tt>[lnch]</tt> ва ҳамаи соҳаи таърихи базаро бекор намояд."
-#~ "Воридшавӣ бе листи номҳои таърихи база ва метавонад намуди лояи wildcards "
-#~ "ба монанди  <tt>*_a68k</tt>.</p></qt>"
-
-#~ msgid "&No backup:"
-#~ msgstr "&Бе нусхаи резервӣ:"
-
-#~ msgid ""
-#~ "<qt>Click here to open the database selection dialog. This dialog allows "
-#~ "you to check the databases you want to exclude from the backup from a "
-#~ "list.</qt>"
-#~ msgstr ""
-#~ "<qt>Инҷоро зер намоед барои кушодани таърихи базаи гуфтугу. Ин гуфтугу ба "
-#~ "шумо иҷозат меди¯хад, ки таърихи базае, ки шумо мехоҳед аз пуштибони "
-#~ "намоед бароред аз лист.</qt>"
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "Not &restored:"
-#~ msgstr "&Аз нав барқарор накунед:"
-
-#~ msgid ""
-#~ "<qt>Click here to open the database selection dialog. This dialog allows "
-#~ "you to select the databases you want to exclude from the restore "
-#~ "operation from a list.</qt>"
-#~ msgstr ""
-#~ "<qt>Инҷоро зер намоед барои кушодани таърихи базаи гуфтугу. Ин гуфтугу ба "
-#~ "шумо иҷозат меди¯хад, ки таърихи базае, ки шумо мехоҳед аз пуштибони "
-#~ "намоед бароред аз лист.</qt>"
-
-#~ msgid ""
-#~ "<qt>Check this box to run the selected conduits before every backup. This "
-#~ "makes sure the backup is up to date with the last changes from your PC.</"
-#~ "qt>"
-#~ msgstr ""
-#~ "<qt>Ин қуттиро барои иҷро кардани равишҳои интихоб карда шуда пеш аз ҳар "
-#~ "як пуштибонӣ интихоб намоед.Ин ба шумо боварӣ медиҳад,ки компютери шумо "
-#~ "бо охрин пуштибонии имрӯза иваз карда шудааст.</qt>"
-
-#, fuzzy
-#~ msgid "Run conduits durin&g a backup sync"
-#~ msgstr "Ба кор андохтани &канал бо ташкилёбии нусхаи резервӣ"
-
-#~ msgid ""
-#~ "<qt>Enter the device the Pilot is attached to (for instance a serial or "
-#~ "USB port) here. You can also use <i>/dev/pilot</i>, and make that a "
-#~ "symlink to the correct device. You need write permission to successfully "
-#~ "synchronize with the handheld.</qt>"
-#~ msgstr ""
-#~ "<qt> Номи файли дуруст кардае,ки дар пилот пайваст шуд гузоред (пай дар "
-#~ "ҳами порт ё порти USB).Шумо метавонед, <i>/dev/pilot</i>, нишон диҳед ва "
-#~ "размӣ истинод кардаро ба файли истифода баранда бино кардан.Барои "
-#~ "синхронизацияи КПК шумо бояд ҳуқуқ ба сабт дар ин файл дошта бошед.</qt>"
-
-#~ msgid "Pilot &device:"
-#~ msgstr "&Ташкил кардани пилот:"
-
-#~ msgid ""
-#~ "<qt>Select the speed of the serial connection to your handheld here. This "
-#~ "has no meaning for USB devices. For an older model, choose 9600. Newer "
-#~ "models may be able to handle speeds up to the maximum listed, 115200. You "
-#~ "can experiment with the connection speed: the manual suggests starting at "
-#~ "a speed of 19200 and trying faster speeds to see if they work.</qt>"
-#~ msgstr ""
-#~ "<qt>Дар ин ҷо шумо метавонед, нишон диҳед кадом ихтилофҳои (табдилдода ба "
-#~ "пилот ва ба компютери персонали)навишт гузошта мешавад.Маънои эҳтимолӣ"
-#~ "\"Аз компютери персоналӣ гирифтан\" ,\"Аз синхронизацияи охирин\","
-#~ "\"Истифода бурдани ҳар ду навиштаҳо\"ва\"як сӯ мондани заду-хурд\".</qt>"
-
-#~ msgid "&Speed:"
-#~ msgstr "&Суръат:"
-
-#~ msgid ""
-#~ "<qt>PalmOS devices are available in many different languages. If your "
-#~ "device uses a different encoding than ISO-latin1 (ISO8859-1), select the "
-#~ "correct encoding here, in order to display special characters correctly.</"
-#~ "qt>"
-#~ msgstr ""
-#~ "<qt> Дастгоҳҳои PalmOS якчанд мухталифи забонҳо имконпазираст.Агар "
-#~ "дастгоҳи шумо мухталифи рамз гузоштанро истифода барад, пас ISO-latin1 "
-#~ "(ISO8859-1), рамзгузории дурустро дар инҷо интихоб намоед, то ин ки "
-#~ "хусусиятҳои асосиро дуруст намоиш диҳам.</qt> "
-
-#~ msgid "En&coding:"
-#~ msgstr "&Ба код даровардан:"
-
-#, fuzzy
-#~| msgid ""
-#~| "<qt>Enter your name here, as it appears in the Pilot's &quot;Owner&quot; "
-#~| "setting.</qt>"
-#~ msgid ""
-#~ "<qt>Enter your name here, as it appears in the Pilot's \"Owner\" setting."
-#~ "</qt>"
-#~ msgstr ""
-#~ "<qt>Номи истифода барандаро гузоред,ки он дар гузориш пилот ҷори намуд,"
-#~ "мисли &quot;Соҳиб &quot;</qt>"
-
-#~ msgid "Pilot &user:"
-#~ msgstr "Истифодакунандаи &Pilot:"
-
-#~ msgid "9600"
-#~ msgstr "9600"
-
-#~ msgid "19200"
-#~ msgstr "19200"
-
-#~ msgid "38400"
-#~ msgstr "38400"
-
-#~ msgid "57600"
-#~ msgstr "57600"
-
-#~ msgid "115200"
-#~ msgstr "115200"
-
-#, fuzzy
-#~ msgctxt "No workarounds are used."
-#~ msgid "None"
-#~ msgstr "Қайд"
-
-#~ msgid "Startup Options"
-#~ msgstr "Интихоботҳои боркардан"
-
-#~ msgid ""
-#~ "<qt>Check this box to start up the KPilot daemon every time you log in to "
-#~ "KDE.</qt>"
-#~ msgstr "<qt>Сар додани васвасаи синхронизацияи қайдкунӣ дар КDE.</qt>"
-
-#, fuzzy
-#~ msgid "&Start KPilot at login"
-#~ msgstr "&Сар додани васвасаи синхронизация дар қайдкунӣ."
-
-#~ msgid ""
-#~ "<qt>Check this box to place a Kpilot icon in the system tray, which shows "
-#~ "the daemon's status, and allows you to select the next sync type and to "
-#~ "configure KPilot.</qt>"
-#~ msgstr ""
-#~ "<qt>Гузоштани пиктограммаи пилот дар тартиби кори қуттии дастаки- фурӯш "
-#~ "ба панелиKDE барои нишон додани аҳвол ва мизроб кардани васвасаи "
-#~ "синхронизация ва пилот.</qt>"
-
-#, fuzzy
-#~ msgid "S&how KPilot in system tray"
-#~ msgstr "&Васвасаро дар панел нишон диҳед."
-
-#~ msgid "Exit Options"
-#~ msgstr "Мизроб кардани баромад."
-
-#~ msgid ""
-#~ "<qt>Check this box to stop both KPilot and the KPilot daemon after the "
-#~ "HotSync finishes. This may be useful for systems where KPilot is started "
-#~ "by the USB daemon.</qt>"
-#~ msgstr ""
-#~ "<qt>Нигоҳ доштани пилот ва васвасаи пилот баъд аз анҷом ёфтани "
-#~ "синхронизация.Ин барои тартиби кор фоида дорад,дар куҷое, ки пилот "
-#~ "васвасаи USB сар медиҳад.</qt>"
-
-#~ msgid "Quit &after HotSync"
-#~ msgstr "&Баъд аз синхронизация баромадан."
-
-#~ msgid ""
-#~ "<qt>Check this box to stop the KPilot daemon when you quit KPilot (only "
-#~ "if KPilot started the daemon itself).</qt>"
-#~ msgstr ""
-#~ "<qt> Нигоҳ доштани васвасаи синхронизация дар баромадан аз пилот (агар "
-#~ "пилот васвасаро сар диҳад).</qt>"
-
-#, fuzzy
-#~ msgid "S&top KPilot's system tray application on exit"
-#~ msgstr "Канали информатсия дар система"
-
-#~ msgid "&Default sync:"
-#~ msgstr "&Синхронизацияи пешфарзӣ:"
-
-#, fuzzy
-#~ msgid ""
-#~ "<qt>Select in this list the synchronization type that KPilot will use as "
-#~ "default. Possible values are:<br>\"HotSync\", to run all selected "
-#~ "conduits, and sync the databases with a modified flag set, updating the "
-#~ "modified records only;<br>\"FullSync\" to run all selected conduits, and "
-#~ "sync all databases, reading all records, and performing a full backup;<br>"
-#~ "\"Copy PC to handheld\" to run all conduits and sync all databases, but "
-#~ "instead of merging the information from both sources, copy the PC data to "
-#~ "the handheld;<br>\"Copy handheld to PC\" to run all conduits and sync all "
-#~ "databases, but instead of merging the information from both sources, copy "
-#~ "the handheld data to the PC.</qt>"
-#~ msgstr ""
-#~ "<qt>Дар ин ҷо шумо метавонед, нишон диҳед кадом ихтилофҳои (табдилдода ба "
-#~ "пилот ва ба компютери персонали)навишт гузошта мешавад.Маънои эҳтимолӣ"
-#~ "\"Аз компютери персоналӣ гирифтан\" ,\"Аз синхронизацияи охирин\","
-#~ "\"Истифода бурдани ҳар ду навиштаҳо\"ва\"як сӯ мондани заду-хурд\".</qt>"
-
-#~ msgid ""
-#~ "<qt>Check this box to prevent KPilot from syncing your handheld while the "
-#~ "screensaver is active: this is a security measure to prevent others from "
-#~ "syncing <i>their</i> handhelds with your data.  This option must be "
-#~ "disabled when you use a different desktop, since KPilot is not aware of "
-#~ "screensavers other than KDE's.</qt>"
-#~ msgstr ""
-#~ "<qt>Агар хоҳед синхронизатсияро ҳангоми иҷроиши нигоҳдорандаи экран "
-#~ "пешгирӣ кунед, ин нишонаро фаъол созед: ин тариқамуҳофизаткунандаи аз "
-#~ "синхронизатсияи маълумотҳои шумо аз КПК-и <i>дигар</i> одамон низ "
-#~ "мебошад. Агар шумо мизҳои кории гунгунро истифода кунед, ин нишона бояд "
-#~ "ғайрифаъол бошад, чанде KPilot нигоҳдорандаи экранро на барои KDE, дарёфт "
-#~ "мекунад.</qt>"
-
-#~ msgid "Do not sync when screensaver is active"
-#~ msgstr "Ҳангоми фаъол будани нигоҳдорандаи экран, синхронизатсия накардан"
-
-#, fuzzy
-#~ msgid ""
-#~ "<qt>Check this box to perform a full sync when your last sync was "
-#~ "performed with another PC or system, to guarantee the completeness of "
-#~ "your data.</qt>"
-#~ msgstr ""
-#~ "<qt>Ин қуттиро барои иҷро кардани пуштибонии пурра ҳангоме ки "
-#~ "синхронизатсияи охирини иҷро кардаи шумо дар дигар компютер ё ин ки "
-#~ "тартиб буд тафтиш намоед, барои замонат додани пуштибонии таърихи шумо.</"
-#~ "qt>"
-
-#, fuzzy
-#~ msgid "Do full sync when chan&ging PCs"
-#~ msgstr "&Ҳангоми иввази компютер, нусхаи захиравии пурра кардан"
-
-#~ msgid ""
-#~ "<qt>Select in this list how conflicting entries (entries which were "
-#~ "edited both on your handheld and on the PC) are resolved. Possibly values "
-#~ "are  \"Ask User\" to let you decide case by case, \"Do Nothing\" to allow "
-#~ "the entries to be different, \"PC overrides\", \"Handheld overrides\", "
-#~ "\"Use values from last sync\" and \"Use both entries\" to create a new "
-#~ "entry on both the PC and handheld. Note that the conflict resolution "
-#~ "option selected here can be overridden by conduits that have their own "
-#~ "conflict resolution configuration.</qt>"
-#~ msgstr ""
-#~ "<qt>Дар инҷо метавонед ишора кунед, ки кадом ихтилофотҳои (дар КПК ва дар "
-#~ "компютери инфиродӣ тағйиршуда) қайдшуда мононда хоҳанд шуд. Аҳамиятҳои "
-#~ "эҳтимолӣ:\"Аз КПК гирифтан\", \"Аз компютери ифиродӣ гирифтан\", \"Аз "
-#~ "синхронизатсияиохирин\", \"Истифодаи ҳар ду қайдот\" ва \"Монондани дида "
-#~ "баромадани ихтилофот\".</qt>"
-
-#~ msgid "Handheld Overrides"
-#~ msgstr "Аз КПК гирифтан."
-
-#~ msgid "PC Overrides"
-#~ msgstr "Аз копютери персоналӣ гирифтан."
-
-#, fuzzy
-#~| msgid "Values From Last Sync (if possible)"
-#~ msgid "Values From Last Sync (Not Supported)"
-#~ msgstr "Аз синхронизацияи охирин (агар мумкин бошад)."
-
-#, fuzzy
-#~| msgid "Use Both Entries"
-#~ msgid "Use Both Entries (Not Supported)"
-#~ msgstr "Истифода бурдани ҳар ду навишт."
-
-#, fuzzy
-#~| msgid "Add File..."
-#~ msgid "&Add File..."
-#~ msgstr "Илова кард файл..."
-
-#, fuzzy
-#~| msgid "Clear List"
-#~ msgid "&Clear List"
-#~ msgstr "Рӯйхатро тоза кард "
-
-#, fuzzy
-#~| msgid "HotSync is disabled while the screen is locked."
-#~ msgid "Prevent HotSync when screen locked"
-#~ msgstr "Синхронизация як вақта барои муҳосира кардани экран кушта шуд."
-
-#, fuzzy
-#~| msgid "Locale Settings"
-#~ msgid "&Settings"
-#~ msgstr "Настройкаи маҳдуд."
 
 #, fuzzy
 #~| msgid "Set debugging level"
