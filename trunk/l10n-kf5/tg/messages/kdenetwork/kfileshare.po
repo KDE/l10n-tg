@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfileshare\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-08-16 09:09+0200\n"
+"POT-Creation-Date: 2019-05-18 03:01+0200\n"
 "PO-Revision-Date: 2004-09-03 17:58+0000\n"
 "Last-Translator: Abrorova <H_Abrorova@rambler.ru>\n"
 "Language-Team: Tajik\n"
@@ -53,16 +53,21 @@ msgstr ""
 
 #: samba/filepropertiesplugin/sambausershareplugin.cpp:92
 #, fuzzy, kde-format
-#| msgid "No Samba server installed on this system"
-msgid "Samba is not installed on your system."
-msgstr "Хидматрасони Samba дар системаи шумо кор гузошта нашудааст"
+#| msgid "Only local folders can be shared."
+msgid "Samba must be installed before folders can be shared."
+msgstr "Танҳо феҳристҳои маҳаллӣ муштаракан истифода мегарданд."
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:95
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:97
 #, kde-format
-msgid "Install Samba..."
+msgid "Install Samba"
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:257
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:155
+#, kde-format
+msgid "Installing Samba..."
+msgstr ""
+
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:264
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>There is already a share with the name <strong>%1</strong>.<br> "
@@ -77,22 +82,32 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, sambaChk)
 #: samba/filepropertiesplugin/sambausershareplugin.ui:19
 #, fuzzy, kde-format
-#| msgid "Share with S&amba (Microsoft(R) Windows(R))"
-msgid "Share with S&amba (Microsoft Windows)"
-msgstr "Муштаракгардонӣ бо S&amba (Microsoft(R) Windows(R))"
+#| msgid "S&hare this folder in the local network"
+msgid "Sh&are this folder with other computers on the local network"
+msgstr "Ин феҳристро дар шабакаи маҳаллӣ &муштарак гардонед"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: samba/filepropertiesplugin/sambausershareplugin.ui:36
+#: samba/filepropertiesplugin/sambausershareplugin.ui:39
 #, kde-format
 msgid "Name:"
 msgstr "Ном:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, sambaAllowGuestChk)
-#: samba/filepropertiesplugin/sambausershareplugin.ui:56
+#: samba/filepropertiesplugin/sambausershareplugin.ui:59
 #, fuzzy, kde-format
 #| msgid "Allo&w guest logins"
 msgid "Allow Guests"
 msgstr "Иҷозатдиҳии &вуруди меҳмон"
+
+#, fuzzy
+#~| msgid "No Samba server installed on this system"
+#~ msgid "Samba is not installed on your system."
+#~ msgstr "Хидматрасони Samba дар системаи шумо кор гузошта нашудааст"
+
+#, fuzzy
+#~| msgid "Share with S&amba (Microsoft(R) Windows(R))"
+#~ msgid "Share with S&amba (Microsoft Windows)"
+#~ msgstr "Муштаракгардонӣ бо S&amba (Microsoft(R) Windows(R))"
 
 #~ msgid "Select Users"
 #~ msgstr "Интихоби Корвандон"
@@ -2392,9 +2407,6 @@ msgstr "Иҷозатдиҳии &вуруди меҳмон"
 #~ msgid "Folder:"
 #~ msgstr "Феҳрист:"
 
-#~ msgid "S&hare this folder in the local network"
-#~ msgstr "Ин феҳристро дар шабакаи маҳаллӣ &муштарак гардонед"
-
 #~ msgid "Share with &NFS (Linux/UNIX)"
 #~ msgstr "Муштаракгардонӣ бо &NFS (Linux/UNIX)"
 
@@ -2765,9 +2777,6 @@ msgstr "Иҷозатдиҳии &вуруди меҳмон"
 
 #~ msgid "Please enter a valid path."
 #~ msgstr "Марҳамат карда роҳи дурустро ворид кунед."
-
-#~ msgid "Only local folders can be shared."
-#~ msgstr "Танҳо феҳристҳои маҳаллӣ муштаракан истифода мегарданд."
 
 #~ msgid "The folder does not exists."
 #~ msgstr "Феҳрист мавҷуд нест."
