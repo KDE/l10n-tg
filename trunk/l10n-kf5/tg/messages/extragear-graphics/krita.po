@@ -44,7 +44,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-07-18 02:39+0200\n"
+"POT-Creation-Date: 2019-07-20 02:42+0200\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -7891,7 +7891,6 @@ msgstr "&Хатти"
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #. i18n: ectx: property (text), widget (QLabel, label_16)
 #. i18n: ectx: property (text), widget (QLabel, typeDescLabel)
-#. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, axisTypeLabel)
 #: libs/flake/KoConnectionShapeConfigWidget.ui:17
 #: libs/ui/forms/wdgimageproperties.ui:350
@@ -7904,7 +7903,6 @@ msgstr "&Хатти"
 #: plugins/flake/pathshapes/ellipse/EllipseShapeConfigWidget.ui:35
 #: plugins/flake/pathshapes/spiral/SpiralShapeConfigWidget.ui:20
 #: plugins/impex/heightmap/kis_wdg_options_heightmap.ui:195
-#: plugins/impex/ppm/kis_wdg_options_ppm.ui:17
 #: plugins/tools/basictools/wdgmultihandtool.ui:164
 #, fuzzy, kde-format
 msgid "Type:"
@@ -8618,7 +8616,7 @@ msgid "Node Rename"
 msgstr "Ном:"
 
 #: libs/image/commands_new/kis_image_resize_command.cpp:28
-#: libs/image/kis_image.cc:674
+#: libs/image/kis_image.cc:740
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Resize Image"
@@ -8824,103 +8822,110 @@ msgstr ""
 msgid "Pass Through"
 msgstr ""
 
-#: libs/image/kis_image.cc:569
+#: libs/image/kis_image.cc:330
+#: plugins/impex/qimageio/kis_qimageio_import.cpp:61
+#, fuzzy, kde-format
+#| msgid "Import Image"
+msgid "Imported Image"
+msgstr "Воридоти Тасвир"
+
+#: libs/image/kis_image.cc:635
 #, kde-format
 msgid "background"
 msgstr "замина"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbType)
-#: libs/image/kis_image.cc:573 plugins/extensions/imagesize/imagesize.xmlgui:9
+#: libs/image/kis_image.cc:639 plugins/extensions/imagesize/imagesize.xmlgui:9
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:393
 #, kde-format
 msgid "Layer"
 msgstr "Табақа"
 
-#: libs/image/kis_image.cc:673
+#: libs/image/kis_image.cc:739
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Crop Image"
 msgstr "Табақа ба Тасвир"
 
-#: libs/image/kis_image.cc:715
+#: libs/image/kis_image.cc:781
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Crop Layer"
 msgstr "Масштаби Табақа..."
 
-#: libs/image/kis_image.cc:716
+#: libs/image/kis_image.cc:782
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Crop Mask"
 msgstr "Алфа"
 
-#: libs/image/kis_image.cc:748
+#: libs/image/kis_image.cc:814
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Scale Image"
 msgstr "Тасвири Нав"
 
-#: libs/image/kis_image.cc:749
+#: libs/image/kis_image.cc:815
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Change Image Resolution"
 msgstr "Резолюсияи тасвир"
 
-#: libs/image/kis_image.cc:796
+#: libs/image/kis_image.cc:862
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Scale Layer"
 msgstr "Масштаби Табақа..."
 
-#: libs/image/kis_image.cc:923
+#: libs/image/kis_image.cc:989
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Rotate Image"
 msgstr "Тасвири Номи дигар кунед"
 
-#: libs/image/kis_image.cc:929
+#: libs/image/kis_image.cc:995
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Rotate Mask"
 msgstr "Намунаҳо"
 
-#: libs/image/kis_image.cc:931
+#: libs/image/kis_image.cc:997
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Rotate Layer"
 msgstr "&Нест кардани Табақа"
 
-#: libs/image/kis_image.cc:1013
+#: libs/image/kis_image.cc:1079
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Shear Mask"
 msgstr "Ҳузфи матн"
 
-#: libs/image/kis_image.cc:1016
+#: libs/image/kis_image.cc:1082
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Shear Layer"
 msgstr "Масштаби Табақа..."
 
-#: libs/image/kis_image.cc:1023
+#: libs/image/kis_image.cc:1089
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Shear Image"
 msgstr "Тасвири Нав"
 
-#: libs/image/kis_image.cc:1035
+#: libs/image/kis_image.cc:1101
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Convert Image Color Space"
 msgstr "&Даровардани Тасвир ҳамчун Табақа..."
 
-#: libs/image/kis_image.cc:1070
+#: libs/image/kis_image.cc:1136
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Convert Projection Color Space"
 msgstr "&Даровардани Тасвир ҳамчун Табақа..."
 
-#: libs/image/kis_image.cc:1855
+#: libs/image/kis_image.cc:1921
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Crop Selections"
@@ -10937,7 +10942,7 @@ msgstr "Тағйири фосила"
 #: libs/pigment/compositeops/KoCompositeOps.h:323
 #: libs/pigment/KoCompositeOpRegistry.cpp:99
 #, fuzzy, kde-format
-msgid "Luminosity (SAI)"
+msgid "Luminosity/Shine (SAI)"
 msgstr "Тағйири қайдот"
 
 #: libs/pigment/KoBasicHistogramProducers.cpp:372
@@ -11051,9 +11056,7 @@ msgstr ""
 msgid "Arithmetic"
 msgstr "Худфаъолсозӣ"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbType)
 #: libs/pigment/KoCompositeOp.cpp:35 libs/pigment/KoCompositeOpRegistry.cpp:38
-#: plugins/impex/ppm/kis_wdg_options_ppm.ui:34
 #, fuzzy, kde-format
 msgid "Binary"
 msgstr "&Хатти"
@@ -11990,7 +11993,7 @@ msgstr "Экран"
 
 #: libs/ui/dialogs/kis_dlg_preferences.cc:595
 #: libs/ui/widgets/kis_advanced_color_space_selector.cc:772
-#: libs/ui/widgets/kis_color_space_selector.cc:199
+#: libs/ui/widgets/kis_color_space_selector.cc:200
 #, fuzzy, kde-format
 msgid "Install Color Profiles"
 msgstr "Ҳосиятҳои Табақа"
@@ -20323,7 +20326,7 @@ msgctxt "combo box: select all layers without a label"
 msgid "No Label"
 msgstr "Бунафшаранг"
 
-#: libs/ui/widgets/kis_color_space_selector.cc:226
+#: libs/ui/widgets/kis_color_space_selector.cc:227
 #, fuzzy, kde-format
 msgid "Select a Colorspace"
 msgstr "Асбобҳои Интихобот"
@@ -33366,12 +33369,6 @@ msgstr "&Қарор"
 msgid "Save as HDR image (Rec. 2020 PQ)"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbType)
-#: plugins/impex/ppm/kis_wdg_options_ppm.ui:39
-#, kde-format
-msgid "Ascii"
-msgstr ""
-
 #: plugins/impex/psd/psd_export.cc:67
 #, kde-format
 msgctxt "image conversion warning"
@@ -33400,12 +33397,6 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "Unparsed Resource Block"
 msgstr "масоҳат"
-
-#: plugins/impex/qimageio/kis_qimageio_import.cpp:61
-#, fuzzy, kde-format
-#| msgid "Import Image"
-msgid "Imported Image"
-msgstr "Воридоти Тасвир"
 
 #: plugins/impex/raw/3rdparty/libkdcraw/src/dcrawsettingswidget.cpp:224
 #, fuzzy, kde-format
@@ -39685,7 +39676,7 @@ msgstr "&Асбоби тоза кардани ҳаво"
 msgid "Pan Tool"
 msgstr "&Асбоби Пур кардани"
 
-#: plugins/tools/basictools/kis_tool_path.cc:113
+#: plugins/tools/basictools/kis_tool_path.cc:114
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Draw Bezier Curve"
