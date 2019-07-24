@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-06-20 03:13+0200\n"
+"POT-Creation-Date: 2019-07-24 03:14+0200\n"
 "PO-Revision-Date: 2005-09-17 13:34+0500\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajikngo.org>\n"
 "Language-Team: Tajik\n"
@@ -362,15 +362,16 @@ msgid "Select One or More Checksum Files"
 msgstr ""
 
 #: src/commands/clearcrlcachecommand.cpp:73
-#: src/commands/importcrlcommand.cpp:194
 #, fuzzy, kde-format
 #| msgid "Clear CRL Cache..."
+msgctxt "@title:window"
 msgid "Clear CRL Cache Error"
 msgstr "Пок кардани кэши CRL..."
 
 #: src/commands/clearcrlcachecommand.cpp:78
 #, fuzzy, kde-format
 #| msgid "Clear CRL Cache..."
+msgctxt "@title:window"
 msgid "Clear CRL Cache Finished"
 msgstr "Пок кардани кэши CRL..."
 
@@ -524,6 +525,7 @@ msgstr ""
 #: src/commands/dumpcertificatecommand.cpp:293
 #, fuzzy, kde-format
 #| msgid "Certificate Usage"
+msgctxt "@title:window"
 msgid "Certificate Dump"
 msgstr "Истифодаи сертификат"
 
@@ -584,6 +586,7 @@ msgstr ""
 #: src/commands/dumpcrlcachecommand.cpp:312
 #, fuzzy, kde-format
 #| msgid "CRL cache dump:"
+msgctxt "@title:window"
 msgid "CRL Cache Dump"
 msgstr "Сурати кеши CRL:"
 
@@ -772,10 +775,10 @@ msgstr ""
 
 #: src/commands/exportpaperkeycommand.cpp:114
 #, fuzzy, kde-format
-#| msgid "Exporting secret key..."
-msgctxt "@title"
-msgid "Print secret key"
-msgstr "Содироти калиди басташуда..."
+#| msgid "Export Secret Key..."
+msgctxt "@title:window"
+msgid "Print Secret Key"
+msgstr "Содироти калиди баста..."
 
 #: src/commands/exportpaperkeycommand.cpp:131
 #, fuzzy, kde-format
@@ -947,6 +950,7 @@ msgstr ""
 
 #: src/commands/gnupgprocesscommand.cpp:152
 #, kde-format
+msgctxt "@title:window"
 msgid "Subprocess Diagnostics"
 msgstr ""
 
@@ -1287,6 +1291,12 @@ msgstr "Интихоби файли CRL"
 msgid "Unable to start process dirmngr. Please check your installation."
 msgstr "Наметавонам амалиёти %1-ро оғоз кунам. Танзимоти худро биозмоед."
 
+#: src/commands/importcrlcommand.cpp:194
+#, fuzzy, kde-format
+#| msgid "Clear CRL Cache..."
+msgid "Clear CRL Cache Error"
+msgstr "Пок кардани кэши CRL..."
+
 #: src/commands/importcrlcommand.cpp:212
 #, fuzzy, kde-format
 #| msgid ""
@@ -1511,11 +1521,13 @@ msgstr ""
 
 #: src/commands/learncardkeyscommand.cpp:80
 #, kde-format
+msgctxt "@title:window"
 msgid "Error Learning SmartCard"
 msgstr ""
 
 #: src/commands/learncardkeyscommand.cpp:85
 #, kde-format
+msgctxt "@title:window"
 msgid "Finished Learning SmartCard"
 msgstr ""
 
@@ -1759,10 +1771,11 @@ msgid "X.509 certificates refreshed successfully."
 msgstr "Кеши CRL бомуваффақият пок карда шуд."
 
 #: src/commands/setinitialpincommand.cpp:77
-#, kde-format
-msgctxt "@title"
+#, fuzzy, kde-format
+#| msgid "Initial query string"
+msgctxt "@title:window"
 msgid "Set Initial Pin"
-msgstr ""
+msgstr "Сатри ибтидоии дархост"
 
 #: src/commands/signclipboardcommand.cpp:170
 #: src/commands/signclipboardcommand.cpp:184
@@ -1895,9 +1908,11 @@ msgid "Default Appearance"
 msgstr ""
 
 #: src/conf/configuredialog.cpp:63
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Configure &GpgME Backend"
+msgctxt "@title:window"
 msgid "Configure"
-msgstr ""
+msgstr "Танзими чархаки &GpgME"
 
 #: src/conf/cryptooperationsconfigwidget.cpp:123
 #: src/conf/cryptooperationsconfigwidget.cpp:216
@@ -2555,9 +2570,11 @@ msgid "User canceled"
 msgstr "Барҳам дода шуд."
 
 #: src/crypto/decryptverifyemailcontroller.cpp:258
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Deleting keys..."
+msgctxt "@title:window"
 msgid "Decrypt/Verify E-Mail"
-msgstr ""
+msgstr "Ҳузфи калидҳо..."
 
 #: src/crypto/decryptverifyemailcontroller.cpp:281
 #, kde-format
@@ -2606,9 +2623,11 @@ msgstr ""
 
 #: src/crypto/decryptverifyfilescontroller.cpp:244
 #: src/crypto/gui/decryptverifyfilesdialog.cpp:107
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Deleting keys..."
+msgctxt "@title:window"
 msgid "Decrypt/Verify Files"
-msgstr ""
+msgstr "Ҳузфи калидҳо..."
 
 #: src/crypto/decryptverifytask.cpp:208
 #, kde-format
@@ -3122,6 +3141,7 @@ msgstr ""
 #: src/crypto/gui/decryptverifyfilesdialog.cpp:114
 #, fuzzy, kde-format
 #| msgid "Deleting keys..."
+msgctxt "@title:window"
 msgid "Verify Files"
 msgstr "Ҳузфи калидҳо..."
 
@@ -3233,9 +3253,11 @@ msgid "&Input file is an archive; unpack with:"
 msgstr ""
 
 #: src/crypto/gui/encryptemailwizard.cpp:53
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Certificate Deletion Failed"
+msgctxt "@title:window"
 msgid "Encrypt Mail Message"
-msgstr ""
+msgstr "Наметавонам сертификатро ҳузф кунам"
 
 #: src/crypto/gui/newresultpage.cpp:150 src/crypto/gui/resultpage.cpp:144
 #, kde-format
@@ -3364,9 +3386,11 @@ msgid "You need to select %1 and %2 signing certificates to proceed."
 msgstr ""
 
 #: src/crypto/gui/signemailwizard.cpp:128
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Canceled."
+msgctxt "@title:window"
 msgid "Sign Mail Message"
-msgstr ""
+msgstr "Барҳам дода шуд."
 
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:92
 #, fuzzy, kde-format
@@ -3466,7 +3490,8 @@ msgstr ""
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:417
 #, fuzzy, kde-format
 #| msgid "Select Certificate File"
-msgid "Select Certificates For Message"
+msgctxt "@title:window"
+msgid "Select Certificates for Message"
 msgstr "Интихоби файли сертификат"
 
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:489
@@ -3482,7 +3507,8 @@ msgstr ""
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:542
 #, fuzzy, kde-format
 #| msgid "Select Certificate File"
-msgid "Select Certificates For Message \"%1\""
+msgctxt "@title:window"
+msgid "Select Certificates for Message \"%1\""
 msgstr "Интихоби файли сертификат"
 
 #: src/crypto/gui/signencryptfileswizard.cpp:87
@@ -3725,6 +3751,7 @@ msgstr ""
 #: src/crypto/gui/signingcertificateselectiondialog.cpp:52
 #, fuzzy, kde-format
 #| msgid "Deleting CA Certificates"
+msgctxt "@title:window"
 msgid "Select Signing Certificates"
 msgstr "Ҳузфи сертификатҳои CA"
 
@@ -3986,6 +4013,7 @@ msgstr "Email"
 
 #: src/dialogs/addemaildialog.cpp:107
 #, kde-format
+msgctxt "@title:window"
 msgid "Add New EMail"
 msgstr ""
 
@@ -4197,9 +4225,15 @@ msgctxt "<name> of <company>"
 msgid "%1 of %2"
 msgstr ""
 
+#: src/dialogs/certificatedetailswidget.cpp:583
+#, fuzzy, kde-format
+#| msgid "Certificate Details..."
+msgctxt "@title:window"
+msgid "Certificate Details"
+msgstr "Маълумот оиди сертификат..."
+
 #. i18n: ectx: property (windowTitle), widget (QWidget, CertificateDetailsWidget)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: src/dialogs/certificatedetailswidget.cpp:583
 #: src/dialogs/certificatedetailswidget.ui:14
 #: src/dialogs/certificatedetailswidget.ui:76
 #, fuzzy, kde-format
@@ -4439,6 +4473,7 @@ msgstr "Ҳузфи сертификатҳо"
 #: src/dialogs/certificateselectiondialog.cpp:194
 #, fuzzy, kde-format
 #| msgid "Certificate Deletion Failed"
+msgctxt "@title:window"
 msgid "Certificate Selection"
 msgstr "Наметавонам сертификатро ҳузф кунам"
 
@@ -4570,7 +4605,7 @@ msgstr "Кеши CRL бомуваффақият пок карда шуд."
 #: src/dialogs/certifycertificatedialog.cpp:400
 #, fuzzy, kde-format
 #| msgid "Deleting CA Certificates"
-msgctxt "arg is name, email of certificate holder"
+msgctxt "@title:window arg is name, email of certificate holder"
 msgid "Certify Certificate: %1"
 msgstr "Ҳузфи сертификатҳои CA"
 
@@ -4639,9 +4674,11 @@ msgid "Secret Key Deletion"
 msgstr "Содироти калиди басташуда"
 
 #: src/dialogs/expirydialog.cpp:156
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Unchanged:"
+msgctxt "@title:window"
 msgid "Change Expiry"
-msgstr ""
+msgstr "Таъғир дода нашуда:"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, Kleo::Dialogs::ExpiryDialog)
 #: src/dialogs/expirydialog.ui:14
@@ -4732,10 +4769,11 @@ msgstr ""
 "Наметавонам gpgsm-ро иҷро кунам:\n"
 " %1"
 
-#: src/dialogs/exportdialog.cpp:172 src/view/keylistcontroller.cpp:377
+#: src/dialogs/exportdialog.cpp:172
 #, fuzzy, kde-format
 #| msgid "For &encrypting only"
-msgid "Export..."
+msgctxt "@title:window"
+msgid "Export"
 msgstr "Танҳо барои &рамзгузорӣ"
 
 #: src/dialogs/gencardkeydialog.cpp:77
@@ -4834,10 +4872,11 @@ msgid "(unknown certificate)"
 msgstr "Ҳузфи сертификатҳои CA"
 
 #: src/dialogs/ownertrustdialog.cpp:126
-#, kde-format
-msgctxt "@title"
+#, fuzzy, kde-format
+#| msgid "Newly revoked:"
+msgctxt "@title:window"
 msgid "Change Trust Level of %1"
-msgstr ""
+msgstr "Ба қарибӣ бар гардонида шуд:"
 
 #: src/dialogs/ownertrustdialog.cpp:127
 #, kde-format
@@ -5190,7 +5229,8 @@ msgstr ""
 #: src/dialogs/subkeyswidget.cpp:173
 #, fuzzy, kde-format
 #| msgid "New subkeys:"
-msgid "Subkeys details"
+msgctxt "@title:window"
+msgid "Subkeys Details"
 msgstr "Зеркалидҳои нав:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -5265,6 +5305,7 @@ msgstr "Соҳиби сертификати ( %1) ёфт нашуд"
 #: src/dialogs/trustchainwidget.cpp:98
 #, fuzzy, kde-format
 #| msgid "&Chain"
+msgctxt "@title:window"
 msgid "Trust Chain"
 msgstr "&Паи ҳам"
 
@@ -5301,7 +5342,8 @@ msgstr ""
 
 #: src/dialogs/updatenotification.cpp:214
 #, kde-format
-msgid "Update available!"
+msgctxt "@title:window"
+msgid "Update Available"
 msgstr ""
 
 #: src/dialogs/updatenotification.cpp:219
@@ -5317,6 +5359,7 @@ msgstr ""
 #: src/dialogs/weboftrustdialog.cpp:41
 #, fuzzy, kde-format
 #| msgid "&Certificates"
+msgctxt "@title:window"
 msgid "Certifications"
 msgstr "&Сертификатҳо"
 
@@ -6359,7 +6402,7 @@ msgstr "Сертификати шумо барои фиристондан тай
 #: src/newcertificatewizard/newcertificatewizard.cpp:1211
 #, fuzzy, kde-format
 #| msgid "Certificate Deletion Failed"
-msgctxt "@title"
+msgctxt "@title:window"
 msgid "Key Pair Creation Wizard"
 msgstr "Наметавонам сертификатро ҳузф кунам"
 
@@ -7701,6 +7744,12 @@ msgid "New Key Pair..."
 msgstr "Ҷуфти нави калидҳо..."
 
 #: src/view/keylistcontroller.cpp:377
+#, fuzzy, kde-format
+#| msgid "For &encrypting only"
+msgid "Export..."
+msgstr "Танҳо барои &рамзгузорӣ"
+
+#: src/view/keylistcontroller.cpp:377
 #, kde-format
 msgid "Export the selected certificate (public key) to a file"
 msgstr ""
@@ -8155,7 +8204,8 @@ msgstr "Ворид карда нашуда:"
 #: src/view/pgpcardwidget.cpp:278
 #, fuzzy, kde-format
 #| msgid "Generating key"
-msgid "Generating keys"
+msgctxt "@title:window"
+msgid "Generating Keys"
 msgstr "Эҷоди калид"
 
 #: src/view/pgpcardwidget.cpp:279
@@ -8499,6 +8549,12 @@ msgid "To import from a public keyserver use \"Lookup on Server\" instead."
 msgstr ""
 
 #, fuzzy
+#~| msgid "Exporting secret key..."
+#~ msgctxt "@title"
+#~ msgid "Print secret key"
+#~ msgstr "Содироти калиди басташуда..."
+
+#, fuzzy
 #~| msgid "Failed."
 #~ msgctxt "self-check did not pass"
 #~ msgid "Failed"
@@ -8602,11 +8658,6 @@ msgstr ""
 
 #~ msgid "Import Certificates..."
 #~ msgstr "Воридоти сертификатҳо..."
-
-#, fuzzy
-#~| msgid "Deleting keys..."
-#~ msgid "Decrypt/Verify Files..."
-#~ msgstr "Ҳузфи калидҳо..."
 
 #, fuzzy
 #~| msgid "Save Certificate"
