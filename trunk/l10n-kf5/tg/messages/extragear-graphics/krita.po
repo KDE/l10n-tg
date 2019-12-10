@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-12-06 02:41+0100\n"
+"POT-Creation-Date: 2019-12-10 02:41+0100\n"
 "PO-Revision-Date: 2019-09-29 12:46+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -9535,7 +9535,7 @@ msgstr ""
 msgid "No store backend"
 msgstr ""
 
-#: libs/odf/KoOdfReadStore.cpp:109 plugins/impex/kra/kra_converter.cpp:269
+#: libs/odf/KoOdfReadStore.cpp:109 plugins/impex/kra/kra_converter.cpp:293
 #, kde-format
 msgid "Could not find %1"
 msgstr ""
@@ -17552,8 +17552,8 @@ msgid "The action was cancelled by the user."
 msgstr ""
 
 #: libs/ui/KisImportExportErrorCode.cpp:172 plugins/impex/heif/HeifError.cpp:59
-#: plugins/impex/kra/kra_converter.cpp:329
-#: plugins/impex/kra/kra_converter.cpp:358
+#: plugins/impex/kra/kra_converter.cpp:353
+#: plugins/impex/kra/kra_converter.cpp:382
 #, kde-format
 msgid "Unknown error."
 msgstr ""
@@ -20734,7 +20734,7 @@ msgstr ""
 msgid "%1:"
 msgstr ""
 
-#: libs/widgets/kis_color_input.cpp:380
+#: libs/widgets/kis_color_input.cpp:383
 #: libs/widgets/KoEditColorSetDialog.cpp:174
 #, kde-format
 msgid "Color name:"
@@ -32507,49 +32507,49 @@ msgstr ""
 msgid "Sign with Author Profile Data"
 msgstr ""
 
-#: plugins/impex/kra/kra_converter.cpp:68
+#: plugins/impex/kra/kra_converter.cpp:89
 #, kde-format
 msgid "Not a valid Krita file"
 msgstr ""
 
-#: plugins/impex/kra/kra_converter.cpp:86
+#: plugins/impex/kra/kra_converter.cpp:107
 #, kde-format
 msgid "Invalid document: no file 'maindoc.xml'."
 msgstr ""
 
-#: plugins/impex/kra/kra_converter.cpp:123
+#: plugins/impex/kra/kra_converter.cpp:147
 #, kde-format
 msgid "Could not create the file for saving"
 msgstr ""
 
-#: plugins/impex/kra/kra_converter.cpp:178
+#: plugins/impex/kra/kra_converter.cpp:202
 #, kde-format
 msgid "Not able to write '%1'. Partition full?"
 msgstr ""
 
-#: plugins/impex/kra/kra_converter.cpp:281
+#: plugins/impex/kra/kra_converter.cpp:305
 #, kde-format
 msgid ""
 "Parsing error in %1 at line %2, column %3\n"
 "Error message: %4"
 msgstr ""
 
-#: plugins/impex/kra/kra_converter.cpp:299
+#: plugins/impex/kra/kra_converter.cpp:323
 #, kde-format
 msgid "The format is not supported or the file is corrupted"
 msgstr ""
 
-#: plugins/impex/kra/kra_converter.cpp:306
+#: plugins/impex/kra/kra_converter.cpp:330
 #, kde-format
 msgid "The file is too new for this version of Krita (%1)."
 msgstr ""
 
-#: plugins/impex/kra/kra_converter.cpp:312
+#: plugins/impex/kra/kra_converter.cpp:336
 #, kde-format
 msgid "The file has no layers."
 msgstr ""
 
-#: plugins/impex/kra/kra_converter.cpp:345
+#: plugins/impex/kra/kra_converter.cpp:369
 #, kde-format
 msgid "The file does not contain an image."
 msgstr ""
@@ -32578,74 +32578,82 @@ msgctxt "@title:window"
 msgid "File not found"
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:369
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:313
+#, kde-format
+msgctxt "Loading a .kra file"
+msgid ""
+"The file contains a clone layer that has an incorrect source node id. This "
+"layer will be converted into a paint layer."
+msgstr ""
+
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:374
 #, kde-format
 msgid "Could not load \"id\" of the transform mask"
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:383
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:388
 #, kde-format
 msgid "Could not create transform mask params"
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:502
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:507
 #, kde-format
 msgid "Could not find keyframe pixel data for frame %1 in %2."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:510
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:515
 #, kde-format
 msgid "Could not load keyframe pixel data for frame %1 in %2."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:539
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:544
 #, kde-format
 msgid "Could not read pixel data: %1."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:546
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:551
 #, kde-format
 msgid "Could not load pixel data: %1."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:583
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:588
 #, kde-format
 msgid "Could not load profile: %1."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:609
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:614
 #, kde-format
 msgid "Could not filter configuration %1."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:650
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:655
 #, kde-format
 msgid "Could not load metadata for layer %1."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:672
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:677
 #, kde-format
 msgid "Could not load raster selection %1."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:690
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:695
 #, kde-format
 msgid "Could not load vector selection %1."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:717
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:722
 #, kde-format
 msgid "Could not load keyframes from %1."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:731
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:736
 #, kde-format
 msgid ""
 "parsing error in the keyframe file %1 at line %2, column %3\n"
 "Error message: %4"
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:744
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:749
 #, kde-format
 msgid "unknown keyframe channel type: %1 in %2"
 msgstr ""
