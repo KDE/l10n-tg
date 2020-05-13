@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-vault\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-04-25 04:08+0200\n"
+"POT-Creation-Date: 2020-05-13 03:58+0200\n"
 "PO-Revision-Date: 2019-09-26 20:26+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -29,7 +29,7 @@ msgctxt "@action Action to mount a vault"
 msgid "Open this Plasma Vault"
 msgstr "Кушодани анбори рамзгузории ҷории Плазма"
 
-#: kded/engine/backend_p.cpp:76
+#: kded/engine/backend_p.cpp:78
 #, kde-format
 msgctxt "formatting the message for a command, as in encfs: not found"
 msgid "%1: %2"
@@ -37,6 +37,7 @@ msgstr "%1: %2"
 
 #: kded/engine/backends/cryfs/cryfsbackend.cpp:118
 #: kded/engine/backends/encfs/encfsbackend.cpp:74
+#: kded/engine/backends/gocryptfs/gocryptfsbackend.cpp:100
 #, kde-format
 msgid "Failed to create directories, check your permissions"
 msgstr ""
@@ -82,8 +83,25 @@ msgid "The installed version of cryfs is too old to open this vault."
 msgstr ""
 
 #: kded/engine/backends/cryfs/cryfsbackend.cpp:196
+#: kded/engine/backends/gocryptfs/gocryptfsbackend.cpp:143
 #, kde-format
 msgid "Unable to perform the operation (error code %1)."
+msgstr ""
+
+#: kded/engine/backends/gocryptfs/gocryptfsbackend.cpp:131
+#, kde-format
+msgid "The cipher directory is not empty, cannot initialise the vault."
+msgstr ""
+
+#: kded/engine/backends/gocryptfs/gocryptfsbackend.cpp:135
+#, kde-format
+msgid "The password is empty, cannot initialise the vault."
+msgstr ""
+
+#: kded/engine/backends/gocryptfs/gocryptfsbackend.cpp:139
+#, kde-format
+msgid ""
+"Cannot write gocryptfs.conf inside cipher directory, check your permissions."
 msgstr ""
 
 #: kded/engine/fusebackend_p.cpp:69
@@ -413,7 +431,13 @@ msgstr "EncFS"
 msgid "CryFS"
 msgstr "CryFS"
 
-#: kded/ui/vaultconfigurationdialog.cpp:176
+#: kded/ui/vaultconfigurationdialog.cpp:87 kded/ui/vaultcreationwizard.cpp:115
+#: kded/ui/vaultimportingwizard.cpp:82
+#, kde-format
+msgid "gocryptfs"
+msgstr ""
+
+#: kded/ui/vaultconfigurationdialog.cpp:180
 #, kde-format
 msgid "Configure"
 msgstr "Танзимот"
@@ -488,7 +512,29 @@ msgid ""
 "                             which confirms this."
 msgstr ""
 
-#: kded/ui/vaultcreationwizard.cpp:162
+#: kded/ui/vaultcreationwizard.cpp:118
+#, kde-format
+msgid ""
+"<b>Security notice:</b>\n"
+"                             Gocryptfs encrypts your files, so you can "
+"safely store them anywhere.\n"
+"                             It works well together with cloud services like "
+"Dropbox, iCloud, OneDrive and others.\n"
+"                             <br /><br />\n"
+"                             A threat model for gocryptfs is provided by the "
+"author at                              <a href='https://nuetzlich.net/"
+"gocryptfs/threat_model'>nuetzlich.net/gocryptfs/threat_model</"
+"a>.                              <br /><br />\n"
+"                             According to a security audit performed in 2017 "
+"by Taylor Hornby (Defuse Security),\n"
+"                             gocryptfs keeps file contents secret against an "
+"adversary that can read and modify the                              "
+"ciphertext.                              <br /><br />\n"
+"                             See <a href='https://defuse.ca/audits/gocryptfs."
+"htm'>defuse.ca/audits/gocryptfs.htm</a> for more information."
+msgstr ""
+
+#: kded/ui/vaultcreationwizard.cpp:193
 #, kde-format
 msgctxt "@title:window"
 msgid "Create a New Vault"
@@ -514,39 +560,39 @@ msgstr ""
 msgid "Delete this vault"
 msgstr "Нест кардани анбори рамзгузории ҷорӣ"
 
-#: kded/ui/vaultimportingwizard.cpp:86
+#: kded/ui/vaultimportingwizard.cpp:102
 #, kde-format
 msgid "Import"
 msgstr ""
 
-#: kded/ui/vaultimportingwizard.cpp:126
+#: kded/ui/vaultimportingwizard.cpp:142
 #, kde-format
 msgctxt "@title:window"
 msgid "Import an Existing Vault"
 msgstr ""
 
-#: kded/ui/vaultwizardbase.h:50 kded/ui/vaultwizardbase.h:102
+#: kded/ui/vaultwizardbase.h:50 kded/ui/vaultwizardbase.h:103
 #, kde-format
 msgid "Next"
 msgstr ""
 
-#: kded/ui/vaultwizardbase.h:93
+#: kded/ui/vaultwizardbase.h:94
 #, kde-format
 msgid "Create"
 msgstr ""
 
-#: kded/ui/vaultwizardbase.h:100
+#: kded/ui/vaultwizardbase.h:101
 #, kde-format
 msgid "Previous"
 msgstr ""
 
-#: plasma/package/contents/ui/main.qml:90
+#: plasma/package/contents/ui/main.qml:88
 #, kde-format
 msgid "No Vaults have been set up"
 msgstr ""
 
-#: plasma/package/contents/ui/main.qml:93
-#: plasma/package/contents/ui/main.qml:105
+#: plasma/package/contents/ui/main.qml:91
+#: plasma/package/contents/ui/main.qml:103
 #, kde-format
 msgid "Create a New Vault..."
 msgstr "Эҷод кардани анбори рамзгузории нав..."
