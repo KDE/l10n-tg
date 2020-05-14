@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bluedevil\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-02-22 08:20+0100\n"
+"POT-Creation-Date: 2020-03-15 03:36+0100\n"
 "PO-Revision-Date: 2019-09-30 19:29+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -125,12 +125,13 @@ msgid "No Bluetooth adapters have been found."
 msgstr "Ягон адаптери Bluetooth ёфт нашуд."
 
 #: kcmodule/common/systemcheck.cpp:76 sendfile/discoverwidget.cpp:149
-#: wizard/pages/discover.cpp:273
+#: wizard/pages/discover.cpp:276
 #, kde-format
 msgid "Bluetooth is disabled."
 msgstr ""
 
 #: kcmodule/common/systemcheck.cpp:78 sendfile/discoverwidget.cpp:150
+#: wizard/pages/discover.cpp:277
 #, kde-format
 msgctxt "Action to enable Bluetooth adapter"
 msgid "Enable"
@@ -147,22 +148,37 @@ msgctxt "Action to turn on Bluetooth adapter"
 msgid "Turn On"
 msgstr "Фаъол кардан"
 
-#: kcmodule/common/systemcheck.cpp:99 kcmodule/common/systemcheck.cpp:110
-#: kcmodule/common/systemcheck.cpp:121 wizard/pages/discover.cpp:278
-#, kde-format
+#: kcmodule/common/systemcheck.cpp:99
+#, fuzzy, kde-format
+#| msgctxt "Radio widget to set if we want the adapter to be always visible"
+#| msgid "Always visible"
 msgctxt "Action to fix a problem"
-msgid "Fix it"
-msgstr ""
+msgid "Make Visible"
+msgstr "Ҳамеша намоён"
 
 #: kcmodule/common/systemcheck.cpp:102
 #, kde-format
 msgid "Your default Bluetooth adapter is not visible for remote devices."
 msgstr ""
 
+#: kcmodule/common/systemcheck.cpp:110 wizard/pages/discover.cpp:269
+#, kde-format
+msgctxt "Action to fix a problem"
+msgid "Fix it"
+msgstr ""
+
 #: kcmodule/common/systemcheck.cpp:113
 #, kde-format
 msgid "Interaction with Bluetooth system is not optimal."
 msgstr ""
+
+#: kcmodule/common/systemcheck.cpp:121
+#, fuzzy, kde-format
+#| msgctxt "Action to enable Bluetooth adapter"
+#| msgid "Enable"
+msgctxt "Action to fix a problem"
+msgid "Enable"
+msgstr "Фаъол кардан"
 
 #: kcmodule/common/systemcheck.cpp:124
 #, kde-format
@@ -455,32 +471,26 @@ msgctxt "'Auto accept' option value"
 msgid "All devices"
 msgstr "Ҳамаи дастгоҳҳо"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_enableGlobalBluetooth)
-#: kcmodule/global/global.ui:17
-#, kde-format
-msgid "Enable Bluetooth integration"
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QLabel, lbl_receivingFiles)
-#: kcmodule/global/global.ui:40
+#: kcmodule/global/global.ui:17
 #, kde-format
 msgid "<b>Receiving files</b>"
 msgstr "<b>Дар ҳоли қабулкунии файлҳо</b>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_enabled)
-#: kcmodule/global/global.ui:47
+#: kcmodule/global/global.ui:24
 #, kde-format
 msgid "Receive files from remote devices"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lbl_autoAccept)
-#: kcmodule/global/global.ui:89
+#: kcmodule/global/global.ui:66
 #, kde-format
 msgid "Accept automatically:"
 msgstr "Ба таври худкор қабул кардан:"
 
 #. i18n: ectx: property (text), widget (QLabel, lbl_saveFiles)
-#: kcmodule/global/global.ui:99
+#: kcmodule/global/global.ui:76
 #, kde-format
 msgid "Save files in:"
 msgstr ""
@@ -820,9 +830,15 @@ msgstr ""
 msgid "Select a device"
 msgstr ""
 
-#: wizard/pages/discover.cpp:275
+#: wizard/pages/discover.cpp:279
 #, kde-format
 msgid "Your Bluetooth adapter is not pairable."
+msgstr ""
+
+#: wizard/pages/discover.cpp:280
+#, kde-format
+msgctxt "Action to make Bluetooth adapter pairable"
+msgid "Make Pairable"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
