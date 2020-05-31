@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-15 03:08+0200\n"
+"POT-Creation-Date: 2020-05-31 17:58+0200\n"
 "PO-Revision-Date: 2019-09-29 12:32+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -49,13 +49,13 @@ msgstr "io-slave эҷод карда нашуд: %1"
 msgid "Folder Already Exists"
 msgstr "Ҷузвадон аллакай вуҷуд дорад"
 
-#: core/copyjob.cpp:1508 core/copyjob.cpp:2069 core/filecopyjob.cpp:350
+#: core/copyjob.cpp:1508 core/copyjob.cpp:2053 core/filecopyjob.cpp:350
 #: core/job_error.cpp:516 widgets/paste.cpp:92
 #, kde-format
 msgid "File Already Exists"
 msgstr "Файл аллакай вуҷуд дорад"
 
-#: core/copyjob.cpp:1508 core/copyjob.cpp:2069
+#: core/copyjob.cpp:1508 core/copyjob.cpp:2053
 #, kde-format
 msgid "Already Exists as Folder"
 msgstr "Аллакай ҳамчун ҷузвадон вуҷуд дорад"
@@ -64,6 +64,42 @@ msgstr "Аллакай ҳамчун ҷузвадон вуҷуд дорад"
 #, kde-format
 msgid "Trash"
 msgstr "Сабад"
+
+#: core/desktopexecparser.cpp:334
+#, kde-format
+msgid "No Exec field in %1"
+msgstr ""
+
+#: core/desktopexecparser.cpp:359
+#, kde-format
+msgid "Could not find the program '%1'"
+msgstr "Барномаи '%1' -ро ёфта натавонист"
+
+#: core/desktopexecparser.cpp:362
+#, kde-format
+msgid ""
+"The program '%1' was found at '%2' but it is missing executable permissions."
+msgstr ""
+
+#: core/desktopexecparser.cpp:364
+#, kde-format
+msgid "The program '%1' is missing executable permissions."
+msgstr ""
+
+#: core/desktopexecparser.cpp:378
+#, kde-format
+msgid "Syntax error in command %1 coming from %2"
+msgstr ""
+
+#: core/desktopexecparser.cpp:495
+#, kde-format
+msgid "Terminal %1 not found while trying to run %2"
+msgstr ""
+
+#: core/desktopexecparser.cpp:511
+#, kde-format
+msgid "Syntax error in command %1 while trying to run %2"
+msgstr ""
 
 #: core/global.cpp:93
 #, kde-format
@@ -283,7 +319,7 @@ msgstr ""
 "Барои ба анҷом расонидани амалиёти ивазкунии ном имтиёзҳои корбари маъмурӣ "
 "(root) лозиманд Шумо мехоҳед, ки идома диҳед?"
 
-#: core/job.cpp:317 filewidgets/knewfilemenu.cpp:529
+#: core/job.cpp:317 filewidgets/knewfilemenu.cpp:530
 #: ioslaves/file/file_unix.cpp:120
 #, kde-format
 msgid "Create Symlink"
@@ -2253,8 +2289,8 @@ msgstr ""
 msgid "Undocumented Error"
 msgstr "Хатои бедалел"
 
-#: core/kcoredirlister.cpp:396 gui/openurljob.cpp:148 widgets/krun.cpp:412
-#: widgets/paste.cpp:278 widgets/renamedialog.cpp:470
+#: core/kcoredirlister.cpp:396 gui/openurljob.cpp:152 widgets/krun.cpp:419
+#: widgets/paste.cpp:278 widgets/renamedialog.cpp:482
 #, kde-format
 msgid ""
 "Malformed URL\n"
@@ -2272,17 +2308,17 @@ msgstr ""
 "Рӯйхати нишонии URL нишон дода намешавад\n"
 "%1"
 
-#: core/kfileitem.cpp:1307
+#: core/kfileitem.cpp:1308
 #, kde-format
 msgid "(Symbolic Link to %1)"
 msgstr "(Пайванди рамзӣ ба %1)"
 
-#: core/kfileitem.cpp:1309
+#: core/kfileitem.cpp:1310
 #, kde-format
 msgid "(%1, Link to %2)"
 msgstr "(%1, Пайванд ба %2)"
 
-#: core/kfileitem.cpp:1312
+#: core/kfileitem.cpp:1313
 #, kde-format
 msgid " (Points to %1)"
 msgstr " (Ба %1 нишон медиҳад)"
@@ -3060,37 +3096,37 @@ msgctxt "KFile System Bookmarks"
 msgid "Videos"
 msgstr "Видеоҳо"
 
-#: filewidgets/kfileplacesmodel.cpp:1265
+#: filewidgets/kfileplacesmodel.cpp:1267
 #, kde-format
 msgid "&Release '%1'"
 msgstr "&Барориши '%1'"
 
-#: filewidgets/kfileplacesmodel.cpp:1267
+#: filewidgets/kfileplacesmodel.cpp:1269
 #, kde-format
 msgid "&Safely Remove '%1'"
 msgstr "&Ба таври бехатар ҷудо кардани '%1'"
 
-#: filewidgets/kfileplacesmodel.cpp:1270
+#: filewidgets/kfileplacesmodel.cpp:1272
 #, kde-format
 msgid "&Unmount '%1'"
 msgstr "&Ҷудо кардани '%1'"
 
-#: filewidgets/kfileplacesmodel.cpp:1291
+#: filewidgets/kfileplacesmodel.cpp:1293
 #, kde-format
 msgid "&Eject '%1'"
 msgstr "&Баровардани '%1'"
 
-#: filewidgets/kfileplacesmodel.cpp:1325
+#: filewidgets/kfileplacesmodel.cpp:1327
 #, kde-format
 msgid "The device '%1' is not a disk and cannot be ejected."
 msgstr ""
 
-#: filewidgets/kfileplacesmodel.cpp:1361
+#: filewidgets/kfileplacesmodel.cpp:1363
 #, kde-format
 msgid "An error occurred while accessing '%1', the system responded: %2"
 msgstr ""
 
-#: filewidgets/kfileplacesmodel.cpp:1365
+#: filewidgets/kfileplacesmodel.cpp:1367
 #, kde-format
 msgid "An error occurred while accessing '%1'"
 msgstr ""
@@ -3364,7 +3400,7 @@ msgid "*|All Folders"
 msgstr "*|Ҳамаи ҷузвадонҳо"
 
 #: filewidgets/kfilewidget.cpp:2095 widgets/executablefileopendialog.cpp:42
-#: widgets/kfileitemactions.cpp:640
+#: widgets/kfileitemactions.cpp:641
 #, kde-format
 msgid "&Open"
 msgstr "&Кушодан"
@@ -3455,44 +3491,44 @@ msgid ""
 "into the text area.</p><p>Wildcards such as * and ? are allowed.</p></qt>"
 msgstr ""
 
-#: filewidgets/knewfilemenu.cpp:390
+#: filewidgets/knewfilemenu.cpp:391
 #, kde-format
 msgid "Sorry"
 msgstr "Таассуф"
 
-#: filewidgets/knewfilemenu.cpp:399
+#: filewidgets/knewfilemenu.cpp:400
 #, kde-format
 msgid "<qt>The template file <b>%1</b> does not exist.</qt>"
 msgstr ""
 
-#: filewidgets/knewfilemenu.cpp:526 filewidgets/knewfilemenu.cpp:607
+#: filewidgets/knewfilemenu.cpp:527 filewidgets/knewfilemenu.cpp:608
 #, kde-format
 msgid "File name:"
 msgstr "Номи файл:"
 
-#: filewidgets/knewfilemenu.cpp:611
+#: filewidgets/knewfilemenu.cpp:612
 #, kde-format
 msgid "Create link to URL"
 msgstr "Эҷод кардани пайванд ба нишонии URL"
 
-#: filewidgets/knewfilemenu.cpp:657 filewidgets/knewfilemenu.cpp:714
+#: filewidgets/knewfilemenu.cpp:658 filewidgets/knewfilemenu.cpp:715
 #, kde-format
 msgctxt "@item:inmenu Create New"
 msgid "%1"
 msgstr "%1"
 
-#: filewidgets/knewfilemenu.cpp:847
+#: filewidgets/knewfilemenu.cpp:848
 #, kde-format
 msgctxt "@action:button"
 msgid "Enter a Different Name"
 msgstr "Номи дигареро ворид намоед"
 
-#: filewidgets/knewfilemenu.cpp:851
+#: filewidgets/knewfilemenu.cpp:852
 #, kde-format
 msgid "Invalid Directory Name"
 msgstr "Номи ҷузвадон нодуруст аст"
 
-#: filewidgets/knewfilemenu.cpp:860
+#: filewidgets/knewfilemenu.cpp:861
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -3500,7 +3536,7 @@ msgid ""
 "it is reserved for use by the operating system."
 msgstr ""
 
-#: filewidgets/knewfilemenu.cpp:1060
+#: filewidgets/knewfilemenu.cpp:1061
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -3508,7 +3544,7 @@ msgid ""
 "use by the operating system."
 msgstr ""
 
-#: filewidgets/knewfilemenu.cpp:1068
+#: filewidgets/knewfilemenu.cpp:1069
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -3516,56 +3552,73 @@ msgid ""
 "default."
 msgstr ""
 
-#: filewidgets/knewfilemenu.cpp:1085
+#: filewidgets/knewfilemenu.cpp:1076
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"The name <filename>%1</filename> starts with a space, which will result in "
+"it being shown before other items when sorting alphabetically, among other "
+"potential oddities."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1083
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"The name <filename>%1</filename> ends with a space, which is a bit unusual "
+"and may be unintentional."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1100
 #, kde-format
 msgid "Using slashes in folder names will create sub-folders, like so:"
 msgstr ""
 
-#: filewidgets/knewfilemenu.cpp:1095
+#: filewidgets/knewfilemenu.cpp:1110
 #, kde-format
 msgid "Using slashes in folder names will create sub-folders."
 msgstr ""
 
-#: filewidgets/knewfilemenu.cpp:1107
+#: filewidgets/knewfilemenu.cpp:1122
 #, kde-format
 msgid "Slashes cannot be used in file and folder names."
 msgstr ""
 
-#: filewidgets/knewfilemenu.cpp:1113
+#: filewidgets/knewfilemenu.cpp:1128
 #, kde-format
 msgid "Backslashes cannot be used in file and folder names."
 msgstr ""
 
-#: filewidgets/knewfilemenu.cpp:1122
+#: filewidgets/knewfilemenu.cpp:1137
 #, kde-format
 msgid ""
 "Starting a file or folder name with a tilde is not recommended because it "
 "may be confusing or dangerous when using the terminal to delete things."
 msgstr ""
 
-#: filewidgets/knewfilemenu.cpp:1195
+#: filewidgets/knewfilemenu.cpp:1210
 #, kde-format
 msgid "Create New"
 msgstr "Эҷод кардан"
 
-#: filewidgets/knewfilemenu.cpp:1209
+#: filewidgets/knewfilemenu.cpp:1224
 #, kde-format
 msgid "Link to Device"
 msgstr "Пайванд ба дастгоҳ"
 
-#: filewidgets/knewfilemenu.cpp:1261
+#: filewidgets/knewfilemenu.cpp:1276
 #, kde-format
 msgctxt "Default name for a new folder"
 msgid "New Folder"
 msgstr "Ҷузвадони нав"
 
-#: filewidgets/knewfilemenu.cpp:1272
+#: filewidgets/knewfilemenu.cpp:1287
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Ҷузвадони нав"
 
-#: filewidgets/knewfilemenu.cpp:1282
+#: filewidgets/knewfilemenu.cpp:1297
 #, kde-format
 msgid "Create new folder in %1:"
 msgstr "Эҷод кардани ҷузвадони нав дар %1:"
@@ -3578,39 +3631,39 @@ msgstr "Мизи корӣ дар реҷаи офлайн мебошад"
 #. i18n: ectx: property (text), widget (QPushButton, md5CopyButton)
 #. i18n: ectx: property (text), widget (QPushButton, sha1CopyButton)
 #. i18n: ectx: property (text), widget (QPushButton, sha256CopyButton)
-#: filewidgets/kurlnavigator.cpp:463 widgets/checksumswidget.ui:111
+#: filewidgets/kurlnavigator.cpp:462 widgets/checksumswidget.ui:111
 #: widgets/checksumswidget.ui:149 widgets/checksumswidget.ui:187
 #, kde-format
 msgid "Copy"
 msgstr "Нусха бардоштан"
 
 #. i18n: ectx: property (text), widget (QPushButton, pasteButton)
-#: filewidgets/kurlnavigator.cpp:467 widgets/checksumswidget.ui:39
+#: filewidgets/kurlnavigator.cpp:466 widgets/checksumswidget.ui:39
 #, kde-format
 msgid "Paste"
 msgstr "Гузоштан"
 
-#: filewidgets/kurlnavigator.cpp:478
+#: filewidgets/kurlnavigator.cpp:477
 #, kde-format
 msgid "Open %1 in tab"
 msgstr "Кушодани %1 дар варақа"
 
-#: filewidgets/kurlnavigator.cpp:486
+#: filewidgets/kurlnavigator.cpp:485
 #, kde-format
 msgid "Edit"
 msgstr "Таҳрир кардан"
 
-#: filewidgets/kurlnavigator.cpp:489
+#: filewidgets/kurlnavigator.cpp:488
 #, kde-format
 msgid "Navigate"
 msgstr "Паймудан"
 
-#: filewidgets/kurlnavigator.cpp:504
+#: filewidgets/kurlnavigator.cpp:503
 #, kde-format
 msgid "Show Full Path"
 msgstr "Нишон додани масири пурра"
 
-#: filewidgets/kurlnavigator.cpp:752
+#: filewidgets/kurlnavigator.cpp:751
 #, kde-format
 msgid "Custom Path"
 msgstr "Масири фармоишӣ"
@@ -3654,23 +3707,29 @@ msgstr "Барои паймудани ҷойгиршавӣ зер кунед"
 msgid "Click to Edit Location"
 msgstr "Барои таҳрир кардани ҷойгиршавӣ зер кунед"
 
-#: gui/applicationlauncherjob.cpp:108 gui/kprocessrunner.cpp:184
+#: gui/applicationlauncherjob.cpp:121 gui/kprocessrunner.cpp:140
 #, kde-format
 msgid "You are not authorized to execute this file."
 msgstr "Шумо иҷозати иҷроии ин файлро надоред."
 
-#: gui/applicationlauncherjob.cpp:114 gui/commandlauncherjob.cpp:100
+#: gui/applicationlauncherjob.cpp:131 gui/commandlauncherjob.cpp:100
 #, fuzzy, kde-format
 #| msgid "Launching %1"
 msgctxt "Launching application"
 msgid "Launching %1"
 msgstr "Оғози %1"
 
-#: gui/applicationlauncherjob.cpp:150
+#: gui/applicationlauncherjob.cpp:167
 #, kde-format
 msgid ""
 "Unable to make the service %1 executable, aborting execution.\n"
 "%2."
+msgstr ""
+
+#: gui/applicationlauncherjob.cpp:262 gui/openurljob.cpp:613
+#: widgets/krun.cpp:210
+#, kde-format
+msgid "You are not authorized to select an application to open this file."
 msgstr ""
 
 #: gui/faviconrequestjob.cpp:119
@@ -3688,7 +3747,7 @@ msgstr ""
 msgid "Icon file too big, download aborted"
 msgstr ""
 
-#: gui/kprocessrunner.cpp:88
+#: gui/kprocessrunner.cpp:57
 #, kde-format
 msgid ""
 "The desktop entry file\n"
@@ -3696,33 +3755,17 @@ msgid ""
 "is not valid."
 msgstr ""
 
-#: gui/kprocessrunner.cpp:97
-#, kde-format
-msgid "Error processing Exec field in %1"
-msgstr ""
-
-#: gui/kprocessrunner.cpp:107
-#, kde-format
-msgid "Could not find the program '%1'"
-msgstr "Барномаи '%1' -ро ёфта натавонист"
-
-#: gui/kprocessrunner.cpp:109
-#, kde-format
-msgid ""
-"The program '%1' was found at '%2' but it is missing executable permissions."
-msgstr ""
-
-#: gui/kprocessrunner.cpp:208
+#: gui/kprocessrunner.cpp:164
 #, kde-format
 msgid "Launching %1"
 msgstr "Оғози %1"
 
-#: gui/openurljob.cpp:162
+#: gui/openurljob.cpp:166
 #, kde-format
 msgid "Failed to open %1"
 msgstr ""
 
-#: gui/openurljob.cpp:410 widgets/kdesktopfileactions.cpp:133
+#: gui/openurljob.cpp:414 widgets/kdesktopfileactions.cpp:136
 #, kde-format
 msgid ""
 "The desktop entry file\n"
@@ -3733,7 +3776,7 @@ msgstr ""
 "%1\n"
 "дорои намуди Link мебошад ва лекин дорои қайдоти URL=...намебошад."
 
-#: gui/openurljob.cpp:477
+#: gui/openurljob.cpp:481
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>The file <b>%1</b> is an executable program. For safety it will not "
@@ -3744,31 +3787,26 @@ msgstr ""
 "<qt>Файл <b>%1</b> барномаи иҷрошаванда мебошад. Ба мақсади ҳифз он "
 "муҳофизат намешавад.</qt>"
 
-#: gui/openurljob.cpp:500
+#: gui/openurljob.cpp:504
 #, kde-format
 msgid ""
 "The program \"%1\" needs to have executable permission before it can be "
 "launched."
 msgstr ""
 
-#: gui/openurljob.cpp:511
+#: gui/openurljob.cpp:515
 #, kde-format
 msgid ""
 "Unable to make file \"%1\" executable.\n"
 "%2."
 msgstr ""
 
-#: gui/openurljob.cpp:569 widgets/kdesktopfileactions.cpp:69
+#: gui/openurljob.cpp:573 widgets/kdesktopfileactions.cpp:69
 #, kde-format
 msgid "The desktop entry file %1 has no Type=... entry."
 msgstr "Файли desktop %1 дорои қайдоти Type=... намебошад."
 
-#: gui/openurljob.cpp:609 widgets/krun.cpp:203
-#, kde-format
-msgid "You are not authorized to select an application to open this file."
-msgstr ""
-
-#: gui/openurljob.cpp:620
+#: gui/openurljob.cpp:624
 #, kde-format
 msgid "Failed to open the file."
 msgstr ""
@@ -3915,12 +3953,12 @@ msgstr ""
 msgid "No media in device for %1"
 msgstr ""
 
-#: ioslaves/file/file_unix.cpp:1192
+#: ioslaves/file/file_unix.cpp:1204
 #, kde-format
 msgid "Could not get user id for given user name %1"
 msgstr ""
 
-#: ioslaves/file/file_unix.cpp:1205
+#: ioslaves/file/file_unix.cpp:1217
 #, kde-format
 msgid "Could not get group id for given group name %1"
 msgstr ""
@@ -6190,17 +6228,17 @@ msgid ""
 "has been modified. Do you want to upload the changes?"
 msgstr ""
 
-#: kioexec/kioexecd.cpp:100 kioexec/main.cpp:240 kioexec/main.cpp:245
+#: kioexec/kioexecd.cpp:100 kioexec/main.cpp:245 kioexec/main.cpp:250
 #, kde-format
 msgid "File Changed"
 msgstr "Файл дигаргун шуд"
 
-#: kioexec/kioexecd.cpp:100 kioexec/main.cpp:245
+#: kioexec/kioexecd.cpp:100 kioexec/main.cpp:250
 #, kde-format
 msgid "Upload"
 msgstr "Бор кардан"
 
-#: kioexec/kioexecd.cpp:100 kioexec/main.cpp:245
+#: kioexec/kioexecd.cpp:100 kioexec/main.cpp:250
 #, kde-format
 msgid "Do Not Upload"
 msgstr "Бор накардан"
@@ -6238,7 +6276,7 @@ msgstr ""
 " URL %1 ро дур кунед\n"
 "Бо калиди файлҳои муваққатӣ иҷозат дода намешавад."
 
-#: kioexec/main.cpp:239
+#: kioexec/main.cpp:244
 #, kde-format
 msgid ""
 "The supposedly temporary file\n"
@@ -6251,12 +6289,12 @@ msgstr ""
 "тағйир дода шуд\n"
 "Шумо ҳанӯз ҳам вайро нест кардан мехоҳед."
 
-#: kioexec/main.cpp:240
+#: kioexec/main.cpp:245
 #, kde-format
 msgid "Do Not Delete"
 msgstr ""
 
-#: kioexec/main.cpp:244
+#: kioexec/main.cpp:249
 #, kde-format
 msgid ""
 "The file\n"
@@ -6269,57 +6307,57 @@ msgstr ""
 "дигаргун карда шуд.\n"
 "Шумо мехоҳед дигаргуниҳоро бор кунед?"
 
-#: kioexec/main.cpp:280
+#: kioexec/main.cpp:285
 #, kde-format
 msgid "KIOExec"
 msgstr "KIOExec"
 
-#: kioexec/main.cpp:282
+#: kioexec/main.cpp:287
 #, kde-format
 msgid "(c) 1998-2000,2003 The KFM/Konqueror Developers"
 msgstr "(c) 1998-2000,2003 Барномарезони KFM/Konqueror"
 
-#: kioexec/main.cpp:283
+#: kioexec/main.cpp:288
 #, kde-format
 msgid "David Faure"
 msgstr ""
 
-#: kioexec/main.cpp:284
+#: kioexec/main.cpp:289
 #, kde-format
 msgid "Stephan Kulow"
 msgstr ""
 
-#: kioexec/main.cpp:285
+#: kioexec/main.cpp:290
 #, kde-format
 msgid "Bernhard Rosenkraenzer"
 msgstr ""
 
-#: kioexec/main.cpp:286
+#: kioexec/main.cpp:291
 #, kde-format
 msgid "Waldo Bastian"
 msgstr ""
 
-#: kioexec/main.cpp:287
+#: kioexec/main.cpp:292
 #, kde-format
 msgid "Oswald Buddenhagen"
 msgstr ""
 
-#: kioexec/main.cpp:292
+#: kioexec/main.cpp:297
 #, kde-format
 msgid "Treat URLs as local files and delete them afterwards"
 msgstr "URLs-ҳо ҳамчун файлҳои маҳаллиянд сипас онҳоро нест кунед."
 
-#: kioexec/main.cpp:293
+#: kioexec/main.cpp:298
 #, kde-format
 msgid "Suggested file name for the downloaded file"
 msgstr ""
 
-#: kioexec/main.cpp:294
+#: kioexec/main.cpp:299
 #, kde-format
 msgid "Command to execute"
 msgstr "Фармон барои иҷро кардан"
 
-#: kioexec/main.cpp:295
+#: kioexec/main.cpp:300
 #, kde-format
 msgid "URL(s) or local file(s) used for 'command'"
 msgstr "URL(s) ёфаӣл(ҳои) маҳалӣ барои 'фармон' истифода мешаванд"
@@ -7222,8 +7260,8 @@ msgstr ""
 "%1\n"
 "дар файли desktop."
 
-#: widgets/kdesktopfileactions.cpp:101 widgets/kdesktopfileactions.cpp:167
-#: widgets/kdesktopfileactions.cpp:280
+#: widgets/kdesktopfileactions.cpp:102 widgets/kdesktopfileactions.cpp:171
+#: widgets/kdesktopfileactions.cpp:284
 #, kde-format
 msgid ""
 "The desktop entry file\n"
@@ -7234,17 +7272,17 @@ msgstr ""
 "%1\n"
 "дорои намуди FSDevice мебошад ва лекин дорои қайдоти Dev=...намебошад."
 
-#: widgets/kdesktopfileactions.cpp:181
+#: widgets/kdesktopfileactions.cpp:185
 #, kde-format
 msgid "Mount"
 msgstr "Васл кардан"
 
-#: widgets/kdesktopfileactions.cpp:192
+#: widgets/kdesktopfileactions.cpp:196
 #, kde-format
 msgid "Eject"
 msgstr "Баровардан"
 
-#: widgets/kdesktopfileactions.cpp:194
+#: widgets/kdesktopfileactions.cpp:198
 #, kde-format
 msgid "Unmount"
 msgstr "Ғайрифаъол"
@@ -7291,41 +7329,41 @@ msgctxt "@title:column"
 msgid "Type"
 msgstr ""
 
-#: widgets/kfileitemactions.cpp:428
+#: widgets/kfileitemactions.cpp:429
 #, kde-format
 msgctxt "@title:menu"
 msgid "&Actions"
 msgstr "&Амалиётҳо"
 
-#: widgets/kfileitemactions.cpp:629
+#: widgets/kfileitemactions.cpp:630
 #, kde-format
 msgid "&Open with %1"
 msgstr "&Кушодан ба воситаи %1"
 
-#: widgets/kfileitemactions.cpp:661
+#: widgets/kfileitemactions.cpp:662
 #, kde-format
 msgctxt "@title:menu"
 msgid "&Open With"
 msgstr "&Кушодан ба воситаи"
 
-#: widgets/kfileitemactions.cpp:680
+#: widgets/kfileitemactions.cpp:681
 #, kde-format
 msgctxt "@action:inmenu Open With"
 msgid "&Other Application..."
 msgstr "&Барномаи дигар..."
 
-#: widgets/kfileitemactions.cpp:682 widgets/kfileitemactions.cpp:693
+#: widgets/kfileitemactions.cpp:683 widgets/kfileitemactions.cpp:694
 #, kde-format
 msgctxt "@title:menu"
 msgid "&Open With..."
 msgstr "&Кушодан ба воситаи..."
 
-#: widgets/kfileitemactions.cpp:801
+#: widgets/kfileitemactions.cpp:811
 #, kde-format
 msgid "Open &with %1"
 msgstr "Кушодан ба &воситаи %1"
 
-#: widgets/kfileitemactions.cpp:803
+#: widgets/kfileitemactions.cpp:813
 #, kde-format
 msgctxt "@item:inmenu Open With, %1 is application name"
 msgid "%1"
@@ -8524,7 +8562,7 @@ msgstr ""
 msgid "Advanced Options for %1"
 msgstr "Интихоботҳои иловагӣ барои %1"
 
-#: widgets/krun.cpp:447
+#: widgets/krun.cpp:454
 #, kde-format
 msgid ""
 "<qt>Unable to run the command specified. The file or folder <b>%1</b> does "
@@ -8533,7 +8571,7 @@ msgstr ""
 "<qt>Хатои иҷрои фармони нишондод. Файл ёки папкаи <b>%1</b> вуҷуд надорад.</"
 "qt>"
 
-#: widgets/krun.cpp:515
+#: widgets/krun.cpp:522
 #, kde-format
 msgid "Could not find any application or handler for %1"
 msgstr ""
@@ -8816,37 +8854,48 @@ msgstr "&Идома"
 msgid "This action will overwrite the destination."
 msgstr ""
 
-#: widgets/renamedialog.cpp:278
-#, kde-format
-msgid "Warning, the destination is more recent."
-msgstr ""
-
-#: widgets/renamedialog.cpp:284
+#: widgets/renamedialog.cpp:280
 #, kde-format
 msgid "Source"
 msgstr "Манбаъ"
 
-#: widgets/renamedialog.cpp:286
+#: widgets/renamedialog.cpp:282
 #, kde-format
 msgid "Destination"
 msgstr ""
 
+#: widgets/renamedialog.cpp:309
+#, kde-format
+msgid "The destination is more recent."
+msgstr ""
+
+#: widgets/renamedialog.cpp:321
+#, fuzzy, kde-format
+#| msgid "The new file name is empty."
+msgid "The source file is bigger."
+msgstr "Номи файли нав холӣ мебошад !"
+
 #: widgets/renamedialog.cpp:323
+#, kde-format
+msgid "The destination file is bigger."
+msgstr ""
+
+#: widgets/renamedialog.cpp:335
 #, kde-format
 msgid "An older item named '%1' already exists."
 msgstr "Элементи кӯҳнатарин бо номи '%1' мавҷуд аст."
 
-#: widgets/renamedialog.cpp:325
+#: widgets/renamedialog.cpp:337
 #, kde-format
 msgid "A similar file named '%1' already exists."
 msgstr "Файли мутобиқ бо номи %1 аллакай мавҷуд аст."
 
-#: widgets/renamedialog.cpp:327
+#: widgets/renamedialog.cpp:339
 #, kde-format
 msgid "A more recent item named '%1' already exists."
 msgstr ""
 
-#: widgets/renamedialog.cpp:340
+#: widgets/renamedialog.cpp:352
 #, kde-format
 msgid "Rename:"
 msgstr "Номро иваз кардан:"
