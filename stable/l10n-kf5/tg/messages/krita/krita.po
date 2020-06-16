@@ -44,7 +44,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-06-15 06:41+0200\n"
+"POT-Creation-Date: 2020-06-16 06:54+0200\n"
 "PO-Revision-Date: 2002-06-11 21:49-0400\n"
 "Last-Translator: Victor Ibragimov <youth_opportunities@tajik.net>\n"
 "Language-Team: Tajik\n"
@@ -9072,37 +9072,37 @@ msgctxt "(qtundo-format)"
 msgid "Dilate Selection"
 msgstr "Пур кардани Интихоб."
 
-#: libs/image/kis_selection_filters.cpp:263
+#: libs/image/kis_selection_filters.cpp:264
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Border Selection"
 msgstr "Ҳаракат кардани Интихобот"
 
-#: libs/image/kis_selection_filters.cpp:475
+#: libs/image/kis_selection_filters.cpp:511
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Feather Selection"
 msgstr "Интихоб"
 
-#: libs/image/kis_selection_filters.cpp:526
+#: libs/image/kis_selection_filters.cpp:562
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Grow Selection"
 msgstr "Ҳаракат кардани Интихобот"
 
-#: libs/image/kis_selection_filters.cpp:655
+#: libs/image/kis_selection_filters.cpp:691
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Shrink Selection"
 msgstr "Зич кардани Интихобот"
 
-#: libs/image/kis_selection_filters.cpp:799
+#: libs/image/kis_selection_filters.cpp:834
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Smooth Selection"
 msgstr "Интихоб"
 
-#: libs/image/kis_selection_filters.cpp:862
+#: libs/image/kis_selection_filters.cpp:897
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Invert Selection"
@@ -11902,7 +11902,7 @@ msgstr "Интихоб"
 #: libs/ui/KisMainWindow.cpp:1955 libs/ui/KisMainWindow.cpp:1984
 #: libs/ui/KisMainWindow.cpp:2066 libs/ui/KisMainWindow.cpp:2078
 #: libs/ui/KisPart.cpp:544 libs/ui/KisPart.cpp:547
-#: libs/ui/KisReferenceImage.cpp:168 libs/ui/KisRemoteFileFetcher.cpp:54
+#: libs/ui/KisReferenceImage.cpp:189 libs/ui/KisRemoteFileFetcher.cpp:54
 #: libs/ui/KisTemplateCreateDia.cpp:297 libs/ui/KisTemplateCreateDia.cpp:403
 #: libs/ui/KisView.cpp:729 libs/ui/opengl/kis_opengl_canvas2.cpp:399
 #: libs/ui/widgets/kis_custom_image_widget.cc:277
@@ -15478,8 +15478,10 @@ msgid "Symmetric Difference"
 msgstr "Имтиёзҳо"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkAntiAliasing)
+#. i18n: ectx: property (text), widget (QCheckBox, chkAntialiasing)
 #. i18n: ectx: property (text), widget (QCheckBox, ckbAntialiasing)
 #: libs/ui/forms/wdgselectionoptions.ui:181
+#: plugins/extensions/modify_selection/wdg_border_selection.ui:123
 #: plugins/filters/halftone/wdg_halftone_filter.ui:83
 #, fuzzy, kde-format
 msgid "Anti-aliasing"
@@ -18333,13 +18335,13 @@ msgid ""
 "Reason: %2"
 msgstr "Табақа ба тасвир илова кардан наметавонад."
 
-#: libs/ui/KisReferenceImage.cpp:106
+#: libs/ui/KisReferenceImage.cpp:127
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Set saturation"
 msgstr "&Серӣ"
 
-#: libs/ui/KisReferenceImage.cpp:168
+#: libs/ui/KisReferenceImage.cpp:189
 #, fuzzy, kde-format
 msgid "Could not load %1."
 msgstr "Табақа ба тасвир илова кардан наметавонад."
@@ -27759,7 +27761,7 @@ msgid "Shrink Selection"
 msgstr "Зич кардани Интихобот"
 
 #. i18n: ectx: property (text), widget (QLabel, lblWidth)
-#: plugins/extensions/modify_selection/wdg_border_selection.ui:110
+#: plugins/extensions/modify_selection/wdg_border_selection.ui:49
 #, fuzzy, kde-format
 msgid "Border width:"
 msgstr "воҳиди тасвир/дюйм"
@@ -28998,6 +29000,52 @@ msgstr "Кабуд :"
 msgid "Motion Blur"
 msgstr "Кабуд"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, irisShapeCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, cbHShape)
+#. i18n: ectx: property (text), item, widget (KComboBox, cbVShape)
+#: plugins/filters/blur/kis_wdg_lens_blur.cpp:41
+#: plugins/filters/blur/wdg_lens_blur.ui:40
+#: plugins/filters/wavefilter/wdgwaveoptions.ui:129
+#: plugins/filters/wavefilter/wdgwaveoptions.ui:218
+#, fuzzy, kde-format
+msgid "Triangle"
+msgstr "росткунҷа"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, irisShapeCombo)
+#: plugins/filters/blur/kis_wdg_lens_blur.cpp:42
+#: plugins/filters/blur/wdg_lens_blur.ui:45
+#, fuzzy, kde-format
+msgid "Quadrilateral (4)"
+msgstr "&Сафед"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, irisShapeCombo)
+#: plugins/filters/blur/kis_wdg_lens_blur.cpp:43
+#: plugins/filters/blur/wdg_lens_blur.ui:50
+#, fuzzy, kde-format
+msgid "Pentagon (5)"
+msgstr "&Фоиз"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, irisShapeCombo)
+#: plugins/filters/blur/kis_wdg_lens_blur.cpp:44
+#: plugins/filters/blur/wdg_lens_blur.ui:55
+#, fuzzy, kde-format
+msgid "Hexagon (6)"
+msgstr "&Фоиз"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, irisShapeCombo)
+#: plugins/filters/blur/kis_wdg_lens_blur.cpp:45
+#: plugins/filters/blur/wdg_lens_blur.ui:60
+#, fuzzy, kde-format
+msgid "Heptagon (7)"
+msgstr "&Фоиз"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, irisShapeCombo)
+#: plugins/filters/blur/kis_wdg_lens_blur.cpp:46
+#: plugins/filters/blur/wdg_lens_blur.ui:65
+#, fuzzy, kde-format
+msgid "Octagon (8)"
+msgstr "&Фоиз"
+
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: plugins/filters/blur/wdg_gaussian_blur.ui:68
@@ -29042,46 +29090,6 @@ msgstr "Ҳақиқии сохтмон"
 #, kde-format
 msgid "Shape:"
 msgstr "Шакл:"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, irisShapeCombo)
-#. i18n: ectx: property (text), item, widget (KComboBox, cbHShape)
-#. i18n: ectx: property (text), item, widget (KComboBox, cbVShape)
-#: plugins/filters/blur/wdg_lens_blur.ui:40
-#: plugins/filters/wavefilter/wdgwaveoptions.ui:129
-#: plugins/filters/wavefilter/wdgwaveoptions.ui:218
-#, fuzzy, kde-format
-msgid "Triangle"
-msgstr "росткунҷа"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, irisShapeCombo)
-#: plugins/filters/blur/wdg_lens_blur.ui:45
-#, fuzzy, kde-format
-msgid "Quadrilateral (4)"
-msgstr "&Сафед"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, irisShapeCombo)
-#: plugins/filters/blur/wdg_lens_blur.ui:50
-#, fuzzy, kde-format
-msgid "Pentagon (5)"
-msgstr "&Фоиз"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, irisShapeCombo)
-#: plugins/filters/blur/wdg_lens_blur.ui:55
-#, fuzzy, kde-format
-msgid "Hexagon (6)"
-msgstr "&Фоиз"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, irisShapeCombo)
-#: plugins/filters/blur/wdg_lens_blur.ui:60
-#, fuzzy, kde-format
-msgid "Heptagon (7)"
-msgstr "&Фоиз"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, irisShapeCombo)
-#: plugins/filters/blur/wdg_lens_blur.ui:65
-#, fuzzy, kde-format
-msgid "Octagon (8)"
-msgstr "&Фоиз"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (label), widget (KisIntParseSpinBox, irisRadiusSlider)
