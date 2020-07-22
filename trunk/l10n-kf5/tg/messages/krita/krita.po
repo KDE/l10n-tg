@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-07-21 02:09+0200\n"
+"POT-Creation-Date: 2020-07-22 02:14+0200\n"
 "PO-Revision-Date: 2019-09-29 12:46+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -1520,14 +1520,10 @@ msgid "Hide Mirror Y Line"
 msgstr ""
 
 #. i18n: context: Action (mirrorX-lock), Actions (Painting), ActionCollection (Krita)
-#: krita/krita.action:492
-#, kde-format
-msgctxt "action"
-msgid "Lock"
-msgstr ""
-
 #. i18n: context: Action (mirrorX-lock), Actions (Painting), ActionCollection (Krita)
-#: krita/krita.action:494
+#. i18n: context: Action (mirrorX-lock), Actions (Painting), ActionCollection (Krita)
+#. i18n: context: Action (mirrorX-lock), Actions (Painting), ActionCollection (Krita)
+#: krita/krita.action:492 krita/krita.action:494
 #, kde-format
 msgctxt "action"
 msgid "Lock X Line"
@@ -4956,13 +4952,10 @@ msgctxt "action"
 msgid "Move Layer or Mask Down"
 msgstr ""
 
-#. i18n: context: Action (image_properties), Actions (Image), ActionCollection (Menu)
 #. i18n: context: Action (layer_properties), Actions (Layers), ActionCollection (Krita)
-#. i18n: context: Action (image_properties), Actions (Image), ActionCollection (Menu)
-#. i18n: context: Action (layer_properties), Actions (Layers), ActionCollection (Krita)
-#: krita/krita.action:3607 krita/kritamenu.action:957
+#: krita/krita.action:3607
 #, kde-format
-msgctxt "action"
+msgctxt "Menu label of Layer Properties"
 msgid "&Properties..."
 msgstr ""
 
@@ -6182,6 +6175,13 @@ msgctxt "action"
 msgid "Image"
 msgstr ""
 
+#. i18n: context: Action (image_properties), Actions (Image), ActionCollection (Menu)
+#: krita/kritamenu.action:957
+#, kde-format
+msgctxt "Menu text of Image Properties"
+msgid "&Properties..."
+msgstr ""
+
 #. i18n: context: Action (image_color), Actions (Image), ActionCollection (Menu)
 #: krita/kritamenu.action:969
 #, kde-format
@@ -7274,15 +7274,12 @@ msgid "Curve"
 msgstr ""
 
 #: libs/basicflakes/tools/KoPencilTool.cpp:320
-#: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:45
 #, kde-format
 msgid "Straight"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, optimize)
 #: libs/basicflakes/tools/KoPencilTool.cpp:329
 #: libs/basicflakes/tools/KoPencilTool.cpp:335
-#: plugins/impex/jpeg/kis_wdg_options_jpeg.ui:234
 #, kde-format
 msgid "Optimize"
 msgstr ""
@@ -8092,8 +8089,8 @@ msgstr ""
 #: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.cpp:78
 #: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.cpp:88
 #: plugins/tools/tool_smart_patch/kis_tool_smart_patch_options_widget.ui:130
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:129
 #: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:130
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:131
 #, kde-format
 msgid " px"
 msgstr ""
@@ -9284,17 +9281,14 @@ msgstr ""
 
 #: libs/pigment/colorspaces/KoAlphaColorSpace.cpp:59
 #: libs/pigment/compositeops/KoCompositeOps.h:188
-#: libs/pigment/KoCompositeOpRegistry.cpp:55
 #, kde-format
 msgid "Multiply"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (QComboBox, patternValueModeComboBox)
 #. i18n: ectx: property (title), widget (QGroupBox, alphaGroupBox)
 #: libs/pigment/colorspaces/KoAlphaColorSpace.cpp:90
 #: libs/pigment/colorspaces/KoLabColorSpace.cpp:46
 #: libs/pigment/colorspaces/KoRgbU8ColorSpace.cpp:49
-#: libs/ui/widgets/KisDitherWidget.ui:128
 #: plugins/color/lcms2engine/colorspaces/cmyk_f32/CmykF32ColorSpace.cpp:43
 #: plugins/color/lcms2engine/colorspaces/cmyk_u16/CmykU16ColorSpace.cpp:37
 #: plugins/color/lcms2engine/colorspaces/cmyk_u8/CmykU8ColorSpace.cpp:38
@@ -9361,18 +9355,12 @@ msgstr ""
 msgid "L*a*b* (16-bit integer/channel, unmanaged)"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (QComboBox, patternValueModeComboBox)
-#. i18n: ectx: property (text), widget (QCheckBox, csl_hslL)
 #: libs/pigment/colorspaces/KoLabColorSpace.cpp:43
-#: libs/pigment/compositeops/KoCompositeOps.h:284
-#: libs/pigment/KoCompositeOpRegistry.cpp:170
-#: libs/ui/widgets/KisDitherWidget.ui:123
 #: plugins/color/lcms2engine/colorspaces/lab_f32/LabF32ColorSpace.cpp:39
 #: plugins/color/lcms2engine/colorspaces/lab_u16/LabColorSpace.cpp:33
 #: plugins/color/lcms2engine/colorspaces/lab_u8/LabU8ColorSpace.cpp:33
-#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1326
-#: plugins/filters/colorsfilters/virtual_channel_info.cpp:49
 #, kde-format
+msgctxt "Lightness value in Lab color model"
 msgid "Lightness"
 msgstr ""
 
@@ -9482,44 +9470,37 @@ msgid "Alpha darken"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOpBehind.h:39
-#: libs/pigment/KoCompositeOpRegistry.cpp:118
 #, kde-format
 msgid "Behind"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOpCopy2.h:45
-#: libs/pigment/KoCompositeOpRegistry.cpp:146
 #: libs/ui/widgets/kis_paintop_presets_save.cpp:84
 #, kde-format
 msgid "Copy"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOpDestinationAtop.h:42
-#: libs/pigment/KoCompositeOpRegistry.cpp:130
 #, kde-format
 msgid "Destination Atop"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOpDestinationIn.h:42
-#: libs/pigment/KoCompositeOpRegistry.cpp:131
 #, kde-format
 msgid "Destination In"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOpDissolve.h:61
-#: libs/pigment/KoCompositeOpRegistry.cpp:142
 #, kde-format
 msgid "Dissolve"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOpErase.h:40
-#: libs/pigment/KoCompositeOpRegistry.cpp:121
 #, kde-format
 msgid "Erase"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOpGreater.h:43
-#: libs/pigment/KoCompositeOpRegistry.cpp:119
 #, kde-format
 msgid "Greater"
 msgstr ""
@@ -9529,8 +9510,6 @@ msgstr ""
 #: libs/pigment/compositeops/KoCompositeOpOver.h:62
 #: libs/pigment/compositeops/KoOptimizedCompositeOpOver128.h:251
 #: libs/pigment/compositeops/KoOptimizedCompositeOpOver32.h:248
-#: libs/pigment/KoCompositeOpRegistry.cpp:117
-#: libs/pigment/KoCompositeOpRegistry.cpp:203
 #: plugins/extensions/metadataeditor/editors/exif.ui:855
 #: plugins/extensions/metadataeditor/editors/exif.ui:887
 #, kde-format
@@ -9538,218 +9517,182 @@ msgid "Normal"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:139
-#: libs/pigment/KoCompositeOpRegistry.cpp:120
 #, kde-format
 msgid "Overlay"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:140
-#: libs/pigment/KoCompositeOpRegistry.cpp:125
 #, kde-format
 msgid "Grain Merge"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:141
-#: libs/pigment/KoCompositeOpRegistry.cpp:126
 #, kde-format
 msgid "Grain Extract"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:142
-#: libs/pigment/KoCompositeOpRegistry.cpp:123
 #, kde-format
 msgid "Hard Mix"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:143
-#: libs/pigment/KoCompositeOpRegistry.cpp:124
 #, kde-format
 msgid "Hard Mix (Photoshop)"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:144
-#: libs/pigment/KoCompositeOpRegistry.cpp:129
 #, kde-format
 msgid "Geometric Mean"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:145
-#: libs/pigment/KoCompositeOpRegistry.cpp:127
 #, kde-format
 msgid "Parallel"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:146
-#: libs/pigment/KoCompositeOpRegistry.cpp:128
 #, kde-format
 msgid "Allanon"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:147
-#: libs/pigment/KoCompositeOpRegistry.cpp:132
 #, kde-format
 msgid "Hard Overlay"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:148
-#: libs/pigment/KoCompositeOpRegistry.cpp:133
 #, kde-format
 msgid "Interpolation"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:149
-#: libs/pigment/KoCompositeOpRegistry.cpp:134
 #, kde-format
 msgid "Interpolation - 2X"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:150
-#: libs/pigment/KoCompositeOpRegistry.cpp:135
 #, kde-format
 msgid "Penumbra A"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:151
-#: libs/pigment/KoCompositeOpRegistry.cpp:136
 #, kde-format
 msgid "Penumbra B"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:152
-#: libs/pigment/KoCompositeOpRegistry.cpp:137
 #, kde-format
 msgid "Penumbra C"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:153
-#: libs/pigment/KoCompositeOpRegistry.cpp:138
 #, kde-format
 msgid "Penumbra D"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:155
-#: libs/pigment/KoCompositeOpRegistry.cpp:83
 #, kde-format
 msgid "Screen"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:156
-#: libs/pigment/KoCompositeOpRegistry.cpp:79
 #, kde-format
 msgid "Color Dodge"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:157
-#: libs/pigment/KoCompositeOpRegistry.cpp:80
 #, kde-format
 msgid "Linear Dodge"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:158
-#: libs/pigment/KoCompositeOp.cpp:38 libs/pigment/KoCompositeOpRegistry.cpp:42
-#: libs/pigment/KoCompositeOpRegistry.cpp:81
+#: libs/pigment/KoCompositeOp.cpp:38
 #, kde-format
 msgid "Lighten"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:159
-#: libs/pigment/KoCompositeOpRegistry.cpp:87
 #, kde-format
 msgid "Hard Light"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:160
-#: libs/pigment/KoCompositeOpRegistry.cpp:88
 #, kde-format
 msgid "Soft Light (IFS Illusions)"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:161
-#: libs/pigment/KoCompositeOpRegistry.cpp:89
 #, kde-format
 msgid "Soft Light (Pegtop-Delphi)"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:162
-#: libs/pigment/KoCompositeOpRegistry.cpp:91
 #, kde-format
 msgid "Soft Light (SVG)"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:163
-#: libs/pigment/KoCompositeOpRegistry.cpp:90
 #, kde-format
 msgid "Soft Light (Photoshop)"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:164
-#: libs/pigment/KoCompositeOpRegistry.cpp:92
 #, kde-format
 msgid "Gamma Light"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:165
-#: libs/pigment/KoCompositeOpRegistry.cpp:93
 #, kde-format
 msgid "Gamma Illumination"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:166
-#: libs/pigment/KoCompositeOpRegistry.cpp:85
 #, kde-format
 msgid "Vivid Light"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:167
-#: libs/pigment/KoCompositeOpRegistry.cpp:86
 #, kde-format
 msgid "Flat Light"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:168
-#: libs/pigment/KoCompositeOpRegistry.cpp:84
 #, kde-format
 msgid "Pin Light"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:169
-#: libs/pigment/KoCompositeOpRegistry.cpp:82
 #, kde-format
 msgid "Linear Light"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:170
-#: libs/pigment/KoCompositeOpRegistry.cpp:95
 #, kde-format
 msgid "P-Norm A"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:171
-#: libs/pigment/KoCompositeOpRegistry.cpp:96
 #, kde-format
 msgid "P-Norm B"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:172
-#: libs/pigment/KoCompositeOpRegistry.cpp:97
 #, kde-format
 msgid "Super Light"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:173
-#: libs/pigment/KoCompositeOpRegistry.cpp:98
 #, kde-format
 msgid "Tint (IFS Illusions)"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:174
-#: libs/pigment/KoCompositeOpRegistry.cpp:99
 #, kde-format
 msgid "Fog Lighten (IFS Illusions)"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:175
-#: libs/pigment/KoCompositeOpRegistry.cpp:100
 #, kde-format
 msgid "Easy Dodge"
 msgstr ""
@@ -9760,21 +9703,18 @@ msgid "Color Burn"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:178
-#: libs/pigment/KoCompositeOpRegistry.cpp:71
 #, kde-format
 msgid "Linear Burn"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:179
-#: libs/pigment/KoCompositeOp.cpp:39 libs/pigment/KoCompositeOpRegistry.cpp:41
-#: libs/pigment/KoCompositeOpRegistry.cpp:72
+#: libs/pigment/KoCompositeOp.cpp:39
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:80
 #, kde-format
 msgid "Darken"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:180
-#: libs/pigment/KoCompositeOpRegistry.cpp:73
 #, kde-format
 msgid "Gamma Dark"
 msgstr ""
@@ -9785,26 +9725,22 @@ msgid "Shade (IFS_Illusions)"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:182
-#: libs/pigment/KoCompositeOpRegistry.cpp:76
 #, kde-format
 msgid "Fog Darken (IFS Illusions)"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:183
-#: libs/pigment/KoCompositeOpRegistry.cpp:77
 #, kde-format
 msgid "Easy Burn"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:185
-#: libs/pigment/KoCompositeOpRegistry.cpp:53
 #, kde-format
 msgid "Addition"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (KoGroupButton, subtract)
 #: libs/pigment/compositeops/KoCompositeOps.h:186
-#: libs/pigment/KoCompositeOpRegistry.cpp:54
 #: libs/ui/forms/wdgselectionoptions.ui:131
 #, kde-format
 msgid "Subtract"
@@ -9816,68 +9752,57 @@ msgid "Inversed-Subtract"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:189
-#: libs/pigment/KoCompositeOpRegistry.cpp:56
 #, kde-format
 msgid "Divide"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:191
-#: libs/pigment/KoCompositeOp.cpp:36 libs/pigment/KoCompositeOpRegistry.cpp:43
-#: libs/pigment/KoCompositeOpRegistry.cpp:103
+#: libs/pigment/KoCompositeOp.cpp:36
 #, kde-format
 msgid "Modulo"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:192
-#: libs/pigment/KoCompositeOpRegistry.cpp:104
 #, kde-format
 msgid "Modulo - Continuous"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:193
-#: libs/pigment/KoCompositeOpRegistry.cpp:105
 #, kde-format
 msgid "Divisive Modulo"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:194
-#: libs/pigment/KoCompositeOpRegistry.cpp:106
 #, kde-format
 msgid "Divisive Modulo - Continuous"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:195
-#: libs/pigment/KoCompositeOpRegistry.cpp:107
 #, kde-format
 msgid "Modulo Shift"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:196
-#: libs/pigment/KoCompositeOpRegistry.cpp:108
 #, kde-format
 msgid "Modulo Shift - Continuous"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:198
-#: libs/pigment/KoCompositeOpRegistry.cpp:114
 #, kde-format
 msgid "Arcus Tangent"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:199
-#: libs/pigment/KoCompositeOpRegistry.cpp:110
 #, kde-format
 msgid "Difference"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:200
-#: libs/pigment/KoCompositeOpRegistry.cpp:113
 #, kde-format
 msgid "Exclusion"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:201
-#: libs/pigment/KoCompositeOpRegistry.cpp:111
 #, kde-format
 msgid "Equivalence"
 msgstr ""
@@ -9888,147 +9813,123 @@ msgid "Additive-Subtractive"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:203
-#: libs/pigment/KoCompositeOpRegistry.cpp:115
 #, kde-format
 msgid "Negation"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:205
-#: libs/pigment/KoCompositeOpRegistry.cpp:59
 #, kde-format
 msgid "XOR"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:206
-#: libs/pigment/KoCompositeOpRegistry.cpp:60
 #, kde-format
 msgid "OR"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:207
-#: libs/pigment/KoCompositeOpRegistry.cpp:61
 #, kde-format
 msgid "AND"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:208
-#: libs/pigment/KoCompositeOpRegistry.cpp:62
 #, kde-format
 msgid "NAND"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:209
-#: libs/pigment/KoCompositeOpRegistry.cpp:63
 #, kde-format
 msgid "NOR"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:210
-#: libs/pigment/KoCompositeOpRegistry.cpp:64
 #, kde-format
 msgid "XNOR"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:211
-#: libs/pigment/KoCompositeOpRegistry.cpp:65
 #, kde-format
 msgid "IMPLICATION"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:212
-#: libs/pigment/KoCompositeOpRegistry.cpp:66
 #, kde-format
 msgid "NOT IMPLICATION"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:213
-#: libs/pigment/KoCompositeOpRegistry.cpp:67
 #, kde-format
 msgid "CONVERSE"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:214
-#: libs/pigment/KoCompositeOpRegistry.cpp:68
 #, kde-format
 msgid "NOT CONVERSE"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbGradientRepeat)
 #: libs/pigment/compositeops/KoCompositeOps.h:216
-#: libs/pigment/KoCompositeOpRegistry.cpp:185
 #: libs/ui/widgets/KoFillConfigWidget.ui:268
 #, kde-format
 msgid "Reflect"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:217
-#: libs/pigment/KoCompositeOpRegistry.cpp:186
 #, kde-format
 msgid "Glow"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:218
-#: libs/pigment/KoCompositeOpRegistry.cpp:187
 #, kde-format
 msgid "Freeze"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:219
-#: libs/pigment/KoCompositeOpRegistry.cpp:188
 #, kde-format
 msgid "Heat"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:220
-#: libs/pigment/KoCompositeOpRegistry.cpp:189
 #, kde-format
 msgid "Glow-Heat"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:221
-#: libs/pigment/KoCompositeOpRegistry.cpp:190
 #, kde-format
 msgid "Heat-Glow"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:222
-#: libs/pigment/KoCompositeOpRegistry.cpp:191
 #, kde-format
 msgid "Reflect-Freeze"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:223
-#: libs/pigment/KoCompositeOpRegistry.cpp:192
 #, kde-format
 msgid "Freeze-Reflect"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:224
-#: libs/pigment/KoCompositeOpRegistry.cpp:193
 #, kde-format
 msgid "Heat-Glow & Freeze-Reflect Hybrid"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:253
-#: libs/pigment/KoCompositeOpRegistry.cpp:143
 #, kde-format
 msgid "Copy Red"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:254
-#: libs/pigment/KoCompositeOpRegistry.cpp:144
 #, kde-format
 msgid "Copy Green"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:255
-#: libs/pigment/KoCompositeOpRegistry.cpp:145
 #, kde-format
 msgid "Copy Blue"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:256
-#: libs/pigment/KoCompositeOpRegistry.cpp:147
 #, kde-format
 msgid "Tangent Normalmap"
 msgstr ""
@@ -10038,263 +9939,220 @@ msgstr ""
 msgid "Combine Normal Maps"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QRadioButton, leftColorRadioButton)
-#. i18n: ectx: property (text), widget (QRadioButton, rightColorRadioButton)
-#. i18n: ectx: property (title), widget (QGroupBox, grpMode)
-#. i18n: ectx: property (text), widget (QRadioButton, colorRadioButton)
-#. i18n: ectx: property (text), widget (KColorButton, colorSelector)
-#. i18n: ectx: property (text), widget (KColorButton, colorFillSelector)
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbFillType)
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: libs/pigment/compositeops/KoCompositeOps.h:259
-#: libs/pigment/KoCompositeOp.cpp:31 libs/pigment/KoCompositeOpRegistry.cpp:149
-#: libs/ui/dialogs/kis_dlg_preferences.cc:1513
-#: libs/ui/forms/wdgautogradient.ui:103 libs/ui/forms/wdgautogradient.ui:137
-#: libs/ui/forms/wdgnewimage.ui:345 libs/ui/forms/wdgstopgradienteditor.ui:128
-#: libs/ui/forms/wdgstrokeselectionproperties.ui:110
-#: libs/ui/forms/wdgstrokeselectionproperties.ui:228
-#: libs/ui/KisPaletteEditor.cpp:382 libs/ui/KisPaletteEditor.cpp:420
-#: libs/ui/layerstyles/WdgColorOverlay.ui:23
-#: libs/ui/layerstyles/WdgStroke.ui:134 libs/widgets/kis_palette_view.cpp:129
-#: plugins/extensions/layersplit/layersplit.cpp:211
-#: plugins/generators/solid/colorgenerator.h:53
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "action"
+#| msgid "&Color"
+msgctxt "HSY Color"
 msgid "Color"
-msgstr ""
+msgstr "&Ранг"
 
-#. i18n: ectx: property (text), widget (QCheckBox, csl_hsvH)
-#. i18n: ectx: property (text), widget (QCheckBox, csl_hslH)
-#. i18n: ectx: property (text), widget (QCheckBox, csl_hsiH)
-#. i18n: ectx: property (text), widget (QCheckBox, csl_hsyH)
 #: libs/pigment/compositeops/KoCompositeOps.h:260
-#: libs/pigment/KoCompositeOpRegistry.cpp:150
-#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1282
-#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1312
-#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1342
-#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1372
-#: plugins/filters/colorsfilters/virtual_channel_info.cpp:41
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:73
-#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:82
 #, kde-format
+msgctxt "HSY Hue"
 msgid "Hue"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbIntent)
-#. i18n: ectx: property (text), item, widget (KComboBox, cmbMonitorIntent)
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbProofingIntent)
-#. i18n: ectx: property (text), widget (QRadioButton, radioSaturation)
-#. i18n: ectx: property (text), widget (QCheckBox, saturationCBox)
-#. i18n: ectx: property (text), widget (QCheckBox, csl_hsvS)
-#. i18n: ectx: property (text), widget (QCheckBox, csl_hslS)
-#. i18n: ectx: property (text), widget (QCheckBox, csl_hsiS)
-#. i18n: ectx: property (text), widget (QCheckBox, csl_hsyS)
 #: libs/pigment/compositeops/KoCompositeOps.h:261
-#: libs/pigment/KoCompositeOpRegistry.cpp:151
-#: libs/ui/forms/wdgapplyprofile.ui:116 libs/ui/forms/wdgcolorsettings.ui:211
-#: libs/ui/forms/wdgcolorsettings.ui:296
-#: libs/ui/forms/wdgimageproperties.ui:264
-#: libs/ui/widgets/kis_advanced_color_space_selector.cc:481
-#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1289
-#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1319
-#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1349
-#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1379
-#: plugins/extensions/colorspaceconversion/wdgconvertcolorspace.ui:87
-#: plugins/filters/colorsfilters/virtual_channel_info.cpp:45
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:74
-#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:83
-#: plugins/paintops/hairy/wdghairyeoptions.ui:310
-#: plugins/paintops/hairy/wdgInkOptions.ui:71
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Education"
+msgctxt "HSY Saturation"
 msgid "Saturation"
-msgstr ""
+msgstr "Илму маърифат"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:262
-#: libs/pigment/KoCompositeOpRegistry.cpp:154
 #, kde-format
+msgctxt "HSY Incease Saturation"
 msgid "Increase Saturation"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:263
-#: libs/pigment/KoCompositeOpRegistry.cpp:153
 #, kde-format
+msgctxt "HSY Decrease Saturation"
 msgid "Decrease Saturation"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:264
-#: libs/pigment/KoCompositeOpRegistry.cpp:152
 #, kde-format
+msgctxt "HSY Luminosity"
 msgid "Luminosity"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:265
-#: libs/pigment/KoCompositeOpRegistry.cpp:156
 #, kde-format
+msgctxt "HSY Increase Luminosity"
 msgid "Increase Luminosity"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:266
-#: libs/pigment/KoCompositeOpRegistry.cpp:155
 #, kde-format
+msgctxt "HSY Decrease Luminosity"
 msgid "Decrease Luminosity"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:267
-#: libs/pigment/KoCompositeOpRegistry.cpp:74
 #, kde-format
+msgctxt "HSY PSD Darker Color"
 msgid "Darker Color"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:268
-#: libs/pigment/KoCompositeOpRegistry.cpp:94
 #, kde-format
+msgctxt "HSY PSD Lighter Color"
 msgid "Lighter Color"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:270
-#: libs/pigment/KoCompositeOpRegistry.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "action"
+#| msgid "&Color"
+msgctxt "HSI Color"
 msgid "Color HSI"
-msgstr ""
+msgstr "&Ранг"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:271
-#: libs/pigment/KoCompositeOpRegistry.cpp:159
 #, kde-format
+msgctxt "HSI Hue"
 msgid "Hue HSI"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:272
-#: libs/pigment/KoCompositeOpRegistry.cpp:160
 #, kde-format
+msgctxt "HSI Saturation"
 msgid "Saturation HSI"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:273
-#: libs/pigment/KoCompositeOpRegistry.cpp:163
 #, kde-format
+msgctxt "HSI Increase Saturation"
 msgid "Increase Saturation HSI"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:274
-#: libs/pigment/KoCompositeOpRegistry.cpp:162
 #, kde-format
+msgctxt "HSI Decrease Saturation"
 msgid "Decrease Saturation HSI"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, csl_hsiI)
 #: libs/pigment/compositeops/KoCompositeOps.h:275
-#: libs/pigment/KoCompositeOpRegistry.cpp:161
-#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1356
 #, kde-format
+msgctxt "HSI Intensity"
 msgid "Intensity"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:276
-#: libs/pigment/KoCompositeOpRegistry.cpp:165
 #, kde-format
+msgctxt "HSI Increase Intensity"
 msgid "Increase Intensity"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:277
-#: libs/pigment/KoCompositeOpRegistry.cpp:164
 #, kde-format
+msgctxt "HSI Decrease Intensity"
 msgid "Decrease Intensity"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:279
-#: libs/pigment/KoCompositeOpRegistry.cpp:167
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "action"
+#| msgid "&Color"
+msgctxt "HSL Color"
 msgid "Color HSL"
-msgstr ""
+msgstr "&Ранг"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:280
-#: libs/pigment/KoCompositeOpRegistry.cpp:168
 #, kde-format
+msgctxt "HSL HSL"
 msgid "Hue HSL"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:281
-#: libs/pigment/KoCompositeOpRegistry.cpp:169
 #, kde-format
+msgctxt "HSL Saturation"
 msgid "Saturation HSL"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:282
-#: libs/pigment/KoCompositeOpRegistry.cpp:172
 #, kde-format
+msgctxt "HSL Increase Saturation"
 msgid "Increase Saturation HSL"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:283
-#: libs/pigment/KoCompositeOpRegistry.cpp:171
 #, kde-format
+msgctxt "HSL Decrease Saturation"
 msgid "Decrease Saturation HSL"
 msgstr ""
 
-#: libs/pigment/compositeops/KoCompositeOps.h:285
-#: libs/pigment/KoCompositeOpRegistry.cpp:174
+#: libs/pigment/compositeops/KoCompositeOps.h:284
 #, kde-format
+msgctxt "HSL Lightness"
+msgid "Lightness"
+msgstr ""
+
+#: libs/pigment/compositeops/KoCompositeOps.h:285
+#, kde-format
+msgctxt "HSL Increase Lightness"
 msgid "Increase Lightness"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:286
-#: libs/pigment/KoCompositeOpRegistry.cpp:173
 #, kde-format
+msgctxt "HSL Decrease Lightness"
 msgid "Decrease Lightness"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:288
-#: libs/pigment/KoCompositeOpRegistry.cpp:176
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "action"
+#| msgid "&Color"
+msgctxt "HSV Color"
 msgid "Color HSV"
-msgstr ""
+msgstr "&Ранг"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:289
-#: libs/pigment/KoCompositeOpRegistry.cpp:177
 #, kde-format
+msgctxt "HSV Hue"
 msgid "Hue HSV"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:290
-#: libs/pigment/KoCompositeOpRegistry.cpp:178
 #, kde-format
+msgctxt "HSV Saturation"
 msgid "Saturation HSV"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:291
-#: libs/pigment/KoCompositeOpRegistry.cpp:181
 #, kde-format
+msgctxt "HSV Increase Saturation"
 msgid "Increase Saturation HSV"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:292
-#: libs/pigment/KoCompositeOpRegistry.cpp:180
 #, kde-format
+msgctxt "HSV Decrease Saturation"
 msgid "Decrease Saturation HSV"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:293
-#: libs/pigment/KoCompositeOpRegistry.cpp:179
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:75
-#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:84
 #, kde-format
 msgctxt "HSV Value"
-msgid "Value"
+msgid "HSV Value"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:294
-#: libs/pigment/KoCompositeOpRegistry.cpp:183
 #, kde-format
+msgctxt "HSV Increase Value"
 msgid "Increase Value"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:295
-#: libs/pigment/KoCompositeOpRegistry.cpp:182
 #, kde-format
+msgctxt "HSV Decrease Value"
 msgid "Decrease Value"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:323
-#: libs/pigment/KoCompositeOpRegistry.cpp:101
 #, kde-format
 msgid "Luminosity/Shine (SAI)"
 msgstr ""
@@ -10402,28 +10260,49 @@ msgstr ""
 msgid "64-bit float/channel"
 msgstr ""
 
-#: libs/pigment/KoCompositeOp.cpp:34 libs/pigment/KoCompositeOpRegistry.cpp:39
+#. i18n: ectx: property (text), widget (QRadioButton, leftColorRadioButton)
+#. i18n: ectx: property (text), widget (QRadioButton, rightColorRadioButton)
+#. i18n: ectx: property (text), widget (QRadioButton, colorRadioButton)
+#. i18n: ectx: property (text), widget (KColorButton, colorSelector)
+#. i18n: ectx: property (text), widget (KColorButton, colorFillSelector)
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFillType)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: libs/pigment/KoCompositeOp.cpp:31 libs/ui/forms/wdgautogradient.ui:103
+#: libs/ui/forms/wdgautogradient.ui:137
+#: libs/ui/forms/wdgstopgradienteditor.ui:128
+#: libs/ui/forms/wdgstrokeselectionproperties.ui:110
+#: libs/ui/forms/wdgstrokeselectionproperties.ui:228
+#: libs/ui/KisPaletteEditor.cpp:382 libs/ui/KisPaletteEditor.cpp:420
+#: libs/ui/layerstyles/WdgColorOverlay.ui:23
+#: libs/ui/layerstyles/WdgStroke.ui:134 libs/widgets/kis_palette_view.cpp:129
+#: plugins/extensions/layersplit/layersplit.cpp:211
+#: plugins/generators/solid/colorgenerator.h:53
+#, kde-format
+msgid "Color"
+msgstr ""
+
+#: libs/pigment/KoCompositeOp.cpp:34
 #, kde-format
 msgid "Arithmetic"
 msgstr ""
 
-#: libs/pigment/KoCompositeOp.cpp:35 libs/pigment/KoCompositeOpRegistry.cpp:40
+#: libs/pigment/KoCompositeOp.cpp:35
 #, kde-format
 msgid "Binary"
 msgstr ""
 
-#: libs/pigment/KoCompositeOp.cpp:37 libs/pigment/KoCompositeOpRegistry.cpp:44
+#: libs/pigment/KoCompositeOp.cpp:37
 #, kde-format
 msgid "Negative"
 msgstr ""
 
-#: libs/pigment/KoCompositeOp.cpp:40 libs/pigment/KoCompositeOpRegistry.cpp:47
+#: libs/pigment/KoCompositeOp.cpp:40
 #, kde-format
 msgid "HSY"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, bnHsi)
-#: libs/pigment/KoCompositeOp.cpp:41 libs/pigment/KoCompositeOpRegistry.cpp:48
+#: libs/pigment/KoCompositeOp.cpp:41
 #: libs/widgets/KisDlgInternalColorSelector.cpp:324
 #: plugins/dockers/advancedcolorselector/kis_color_selector_settings.cpp:78
 #: plugins/dockers/advancedcolorselector/kis_color_selector_settings.cpp:87
@@ -10433,7 +10312,7 @@ msgid "HSI"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, bnHsl)
-#: libs/pigment/KoCompositeOp.cpp:42 libs/pigment/KoCompositeOpRegistry.cpp:49
+#: libs/pigment/KoCompositeOp.cpp:42
 #: libs/widgets/KisDlgInternalColorSelector.cpp:321
 #: plugins/dockers/advancedcolorselector/kis_color_selector_settings.cpp:77
 #: plugins/dockers/advancedcolorselector/kis_color_selector_settings.cpp:86
@@ -10442,7 +10321,7 @@ msgstr ""
 msgid "HSL"
 msgstr ""
 
-#: libs/pigment/KoCompositeOp.cpp:43 libs/pigment/KoCompositeOpRegistry.cpp:50
+#: libs/pigment/KoCompositeOp.cpp:43
 #: libs/widgets/KisDlgInternalColorSelector.cpp:318
 #: plugins/dockers/advancedcolorselector/kis_color_selector_settings.cpp:76
 #: plugins/dockers/advancedcolorselector/kis_color_selector_settings.cpp:85
@@ -10450,58 +10329,887 @@ msgstr ""
 msgid "HSV"
 msgstr ""
 
-#: libs/pigment/KoCompositeOp.cpp:44 libs/pigment/KoCompositeOpRegistry.cpp:45
+#: libs/pigment/KoCompositeOp.cpp:44
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:81
 #, kde-format
 msgid "Mix"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_4)
-#: libs/pigment/KoCompositeOp.cpp:45 libs/pigment/KoCompositeOpRegistry.cpp:46
+#: libs/pigment/KoCompositeOp.cpp:45
 #: plugins/extensions/metadataeditor/editors/exif.ui:948
 #, kde-format
 msgid "Misc"
 msgstr ""
 
-#: libs/pigment/KoCompositeOp.cpp:46 libs/pigment/KoCompositeOpRegistry.cpp:51
+#: libs/pigment/KoCompositeOp.cpp:46
 #, kde-format
 msgid "Quadratic"
 msgstr ""
 
+#: libs/pigment/KoCompositeOpRegistry.cpp:39
+#, kde-format
+msgctxt "Blending mode - category Arithmetic"
+msgid "Arithmetic"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:40
+#, kde-format
+msgctxt "Blending mode - category Binary"
+msgid "Binary"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:41
+#, kde-format
+msgctxt "Blending mode - category Darken"
+msgid "Darken"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:42
+#, kde-format
+msgctxt "Blending mode - category Lighten"
+msgid "Lighten"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:43
+#, kde-format
+msgctxt "Blending mode - category Modulo"
+msgid "Modulo"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:44
+#, kde-format
+msgctxt "Blending mode - category Negative"
+msgid "Negative"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:45
+#, kde-format
+msgctxt "Blending mode - category Mix"
+msgid "Mix"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:46
+#, kde-format
+msgctxt "Blending mode - category Misc"
+msgid "Misc"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:47
+#, kde-format
+msgctxt "Blending mode - category HSY"
+msgid "HSY"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:48
+#, kde-format
+msgctxt "Blending mode - category HSI"
+msgid "HSI"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:49
+#, kde-format
+msgctxt "Blending mode - category HSL"
+msgid "HSL"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:50
+#, kde-format
+msgctxt "Blending mode - category HSV"
+msgid "HSV"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:51
+#, kde-format
+msgctxt "Blending mode - category Quadratic"
+msgid "Quadratic"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:53
+#, kde-format
+msgctxt "Blending mode - Addition"
+msgid "Addition"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:54
+#, kde-format
+msgctxt "Blending mode - Subtract"
+msgid "Subtract"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:55
+#, kde-format
+msgctxt "Blending mode - Multiply"
+msgid "Multiply"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:56
+#, kde-format
+msgctxt "Blending mode - Divide"
+msgid "Divide"
+msgstr ""
+
 #: libs/pigment/KoCompositeOpRegistry.cpp:57
 #, kde-format
+msgctxt "Blending mode - Inverse Subtract"
 msgid "Inverse Subtract"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:59
+#, kde-format
+msgctxt "Blending mode - XOR"
+msgid "XOR"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:60
+#, kde-format
+msgctxt "Blending mode - OR"
+msgid "OR"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:61
+#, kde-format
+msgctxt "Blending mode - AND"
+msgid "AND"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:62
+#, kde-format
+msgctxt "Blending mode - NAND"
+msgid "NAND"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:63
+#, kde-format
+msgctxt "Blending mode - NOR"
+msgid "NOR"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:64
+#, kde-format
+msgctxt "Blending mode - XNOR"
+msgid "XNOR"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:65
+#, kde-format
+msgctxt "Blending mode - IMPLICATION"
+msgid "IMPLICATION"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:66
+#, kde-format
+msgctxt "Blending mode - NOT IMPLICATION"
+msgid "NOT IMPLICATION"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:67
+#, kde-format
+msgctxt "Blending mode - CONVERSE"
+msgid "CONVERSE"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:68
+#, kde-format
+msgctxt "Blending mode - NOT CONVERSE"
+msgid "NOT CONVERSE"
 msgstr ""
 
 #: libs/pigment/KoCompositeOpRegistry.cpp:70
 #, kde-format
+msgctxt "Blending mode - Burn"
 msgid "Burn"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:71
+#, kde-format
+msgctxt "Blending mode - Linear Burn"
+msgid "Linear Burn"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:72
+#, kde-format
+msgctxt "Blending mode - Darken"
+msgid "Darken"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:73
+#, kde-format
+msgctxt "Blending mode - Gamma Dark"
+msgid "Gamma Dark"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:74
+#, kde-format
+msgctxt "Blending mode - Darker Color"
+msgid "Darker Color"
 msgstr ""
 
 #: libs/pigment/KoCompositeOpRegistry.cpp:75
 #, kde-format
+msgctxt "Blending mode - Shade (IFS Illusions)"
 msgid "Shade (IFS Illusions)"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:76
+#, kde-format
+msgctxt "Blending mode - Fog Darken (IFS Illusions)"
+msgid "Fog Darken (IFS Illusions)"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:77
+#, kde-format
+msgctxt "Blending mode - Easy Burn"
+msgid "Easy Burn"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:79
+#, fuzzy, kde-format
+#| msgctxt "action"
+#| msgid "&Color"
+msgctxt "Blending mode - Color Dodge"
+msgid "Color Dodge"
+msgstr "&Ранг"
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:80
+#, kde-format
+msgctxt "Blending mode - Linear Dodge"
+msgid "Linear Dodge"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:81
+#, kde-format
+msgctxt "Blending mode - Lighten"
+msgid "Lighten"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:82
+#, kde-format
+msgctxt "Blending mode - Linear Light"
+msgid "Linear Light"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:83
+#, kde-format
+msgctxt "Blending mode - Screen"
+msgid "Screen"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:84
+#, kde-format
+msgctxt "Blending mode - Pin Light"
+msgid "Pin Light"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:85
+#, kde-format
+msgctxt "Blending mode - Vivid Light"
+msgid "Vivid Light"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:86
+#, kde-format
+msgctxt "Blending mode - Flat Light"
+msgid "Flat Light"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:87
+#, kde-format
+msgctxt "Blending mode - Hard Light"
+msgid "Hard Light"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:88
+#, kde-format
+msgctxt "Blending mode - Soft Light (IFS Illusions)"
+msgid "Soft Light (IFS Illusions)"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:89
+#, kde-format
+msgctxt "Blending mode - Soft Light (Pegtop-Delphi)"
+msgid "Soft Light (Pegtop-Delphi)"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:90
+#, kde-format
+msgctxt "Blending mode - Soft Light (Photoshop)"
+msgid "Soft Light (Photoshop)"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:91
+#, kde-format
+msgctxt "Blending mode - Soft Light (SVG)"
+msgid "Soft Light (SVG)"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:92
+#, kde-format
+msgctxt "Blending mode - Gamma Light"
+msgid "Gamma Light"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:93
+#, kde-format
+msgctxt "Blending mode - Gamma Illumination"
+msgid "Gamma Illumination"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:94
+#, kde-format
+msgctxt "Blending mode - Lighter Color"
+msgid "Lighter Color"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:95
+#, kde-format
+msgctxt "Blending mode - P-Norm A"
+msgid "P-Norm A"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:96
+#, kde-format
+msgctxt "Blending mode - P-Norm B"
+msgid "P-Norm B"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:97
+#, kde-format
+msgctxt "Blending mode - Super Light"
+msgid "Super Light"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:98
+#, kde-format
+msgctxt "Blending mode - Tint (IFS Illusions)"
+msgid "Tint (IFS Illusions)"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:99
+#, kde-format
+msgctxt "Blending mode - Fog Lighten (IFS Illusions)"
+msgid "Fog Lighten (IFS Illusions)"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:100
+#, kde-format
+msgctxt "Blending mode - Easy Dodge"
+msgid "Easy Dodge"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:101
+#, kde-format
+msgctxt "Blending mode - Luminosity/Shine (SAI)"
+msgid "Luminosity/Shine (SAI)"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:103
+#, kde-format
+msgctxt "Blending mode - Modulo"
+msgid "Modulo"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:104
+#, kde-format
+msgctxt "Blending mode - Modulo - Continuous"
+msgid "Modulo - Continuous"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:105
+#, kde-format
+msgctxt "Blending mode - Divisive Modulo"
+msgid "Divisive Modulo"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:106
+#, kde-format
+msgctxt "Blending mode - Divisive Modulo - Continuous"
+msgid "Divisive Modulo - Continuous"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:107
+#, kde-format
+msgctxt "Blending mode - Modulo Shift"
+msgid "Modulo Shift"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:108
+#, kde-format
+msgctxt "Blending mode - Modulo Shift - Continuous"
+msgid "Modulo Shift - Continuous"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:110
+#, kde-format
+msgctxt "Blending mode - Difference"
+msgid "Difference"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:111
+#, kde-format
+msgctxt "Blending mode - Equivalence"
+msgid "Equivalence"
 msgstr ""
 
 #: libs/pigment/KoCompositeOpRegistry.cpp:112
 #, kde-format
+msgctxt "Blending mode - Additive Subtractive"
 msgid "Additive Subtractive"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:113
+#, kde-format
+msgctxt "Blending mode - Exclusion"
+msgid "Exclusion"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:114
+#, kde-format
+msgctxt "Blending mode - Arcus Tangent"
+msgid "Arcus Tangent"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:115
+#, fuzzy, kde-format
+#| msgid "Education"
+msgctxt "Blending mode - Negation"
+msgid "Negation"
+msgstr "Илму маърифат"
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:117
+#: libs/pigment/KoCompositeOpRegistry.cpp:203
+#, kde-format
+msgctxt "Blending mode - Normal"
+msgid "Normal"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:118
+#, kde-format
+msgctxt "Blending mode - Behind"
+msgid "Behind"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:119
+#, kde-format
+msgctxt "Blending mode - Greater"
+msgid "Greater"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:120
+#, kde-format
+msgctxt "Blending mode - Overlay"
+msgid "Overlay"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:121
+#, kde-format
+msgctxt "Blending mode - Erase"
+msgid "Erase"
 msgstr ""
 
 #: libs/pigment/KoCompositeOpRegistry.cpp:122
 #, kde-format
+msgctxt "Blending mode - Alpha Darken"
 msgid "Alpha Darken"
 msgstr ""
 
-#: libs/pigment/KoCompositeOpRegistry.cpp:140
-#: plugins/color/lcms2engine/compositeops/RgbCompositeOpBumpmap.h:33
+#: libs/pigment/KoCompositeOpRegistry.cpp:123
 #, kde-format
+msgctxt "Blending mode - Hard Mix"
+msgid "Hard Mix"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:124
+#, kde-format
+msgctxt "Blending mode - Hard Mix (Photoshop)"
+msgid "Hard Mix (Photoshop)"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:125
+#, kde-format
+msgctxt "Blending mode - Grain Merge"
+msgid "Grain Merge"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:126
+#, kde-format
+msgctxt "Blending mode - Grain Extract"
+msgid "Grain Extract"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:127
+#, kde-format
+msgctxt "Blending mode - Parallel"
+msgid "Parallel"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:128
+#, kde-format
+msgctxt "Blending mode - Allanon"
+msgid "Allanon"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:129
+#, kde-format
+msgctxt "Blending mode - Geometric Mean"
+msgid "Geometric Mean"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:130
+#, kde-format
+msgctxt "Blending mode - Destination Atop"
+msgid "Destination Atop"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:131
+#, kde-format
+msgctxt "Blending mode - Destination In"
+msgid "Destination In"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:132
+#, kde-format
+msgctxt "Blending mode - Hard Overlay"
+msgid "Hard Overlay"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:133
+#, kde-format
+msgctxt "Blending mode - Interpolation"
+msgid "Interpolation"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:134
+#, kde-format
+msgctxt "Blending mode - Interpolation - 2X"
+msgid "Interpolation - 2X"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:135
+#, kde-format
+msgctxt "Blending mode - Penumbra A"
+msgid "Penumbra A"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:136
+#, kde-format
+msgctxt "Blending mode - Penumbra B"
+msgid "Penumbra B"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:137
+#, kde-format
+msgctxt "Blending mode - Penumbra C"
+msgid "Penumbra C"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:138
+#, kde-format
+msgctxt "Blending mode - Penumbra D"
+msgid "Penumbra D"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:140
+#, kde-format
+msgctxt "Blending mode - Bumpmap"
 msgid "Bumpmap"
 msgstr ""
 
 #: libs/pigment/KoCompositeOpRegistry.cpp:141
 #, kde-format
+msgctxt "Blending mode - Combine Normal Map"
 msgid "Combine Normal Map"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:142
+#, kde-format
+msgctxt "Blending mode - Dissolve"
+msgid "Dissolve"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:143
+#, kde-format
+msgctxt "Blending mode - Copy Red"
+msgid "Copy Red"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:144
+#, kde-format
+msgctxt "Blending mode - Copy Green"
+msgid "Copy Green"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:145
+#, kde-format
+msgctxt "Blending mode - Copy Blue"
+msgid "Copy Blue"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:146
+#, kde-format
+msgctxt "Blending mode - Copy"
+msgid "Copy"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:147
+#, kde-format
+msgctxt "Blending mode - Tangent Normalmap"
+msgid "Tangent Normalmap"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:149
+#, fuzzy, kde-format
+#| msgctxt "action"
+#| msgid "&Color"
+msgctxt "Blending mode - Color HSY"
+msgid "Color"
+msgstr "&Ранг"
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:150
+#, kde-format
+msgctxt "Blending mode - Hue HSY"
+msgid "Hue"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:151
+#, fuzzy, kde-format
+#| msgid "Education"
+msgctxt "Blending mode - Saturation HSY"
+msgid "Saturation"
+msgstr "Илму маърифат"
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:152
+#, kde-format
+msgctxt "Blending mode - Luminosity HSY"
+msgid "Luminosity"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:153
+#, kde-format
+msgctxt "Blending mode - Decrease Saturation HSY"
+msgid "Decrease Saturation"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:154
+#, kde-format
+msgctxt "Blending mode - Increase Saturation HSY"
+msgid "Increase Saturation"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:155
+#, kde-format
+msgctxt "Blending mode - Decrease Luminosity HSY"
+msgid "Decrease Luminosity"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:156
+#, kde-format
+msgctxt "Blending mode - Increase Luminosity HSY"
+msgid "Increase Luminosity"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:158
+#, fuzzy, kde-format
+#| msgctxt "action"
+#| msgid "&Color"
+msgctxt "Blending mode - Color HSI"
+msgid "Color HSI"
+msgstr "&Ранг"
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:159
+#, kde-format
+msgctxt "Blending mode - Hue HSI"
+msgid "Hue HSI"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:160
+#, kde-format
+msgctxt "Blending mode - Saturation HSI"
+msgid "Saturation HSI"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:161
+#, kde-format
+msgctxt "Blending mode - Intensity HSI"
+msgid "Intensity"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:162
+#, kde-format
+msgctxt "Blending mode - Decrease Saturation HSI"
+msgid "Decrease Saturation HSI"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:163
+#, kde-format
+msgctxt "Blending mode - Increase Saturation HSI"
+msgid "Increase Saturation HSI"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:164
+#, kde-format
+msgctxt "Blending mode - Decrease Intensity"
+msgid "Decrease Intensity"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:165
+#, kde-format
+msgctxt "Blending mode - Increase Intensity"
+msgid "Increase Intensity"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:167
+#, fuzzy, kde-format
+#| msgctxt "action"
+#| msgid "&Color"
+msgctxt "Blending mode - Color HSL"
+msgid "Color HSL"
+msgstr "&Ранг"
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:168
+#, kde-format
+msgctxt "Blending mode - Hue HSL"
+msgid "Hue HSL"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:169
+#, kde-format
+msgctxt "Blending mode - Saturation HSL"
+msgid "Saturation HSL"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:170
+#, kde-format
+msgctxt "Blending mode - Lightness HSI"
+msgid "Lightness"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:171
+#, kde-format
+msgctxt "Blending mode - Decrease Saturation HSL"
+msgid "Decrease Saturation HSL"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:172
+#, kde-format
+msgctxt "Blending mode - Increase Saturation HSL"
+msgid "Increase Saturation HSL"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:173
+#, kde-format
+msgctxt "Blending mode - Decrease Lightness"
+msgid "Decrease Lightness"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:174
+#, kde-format
+msgctxt "Blending mode - Increase Lightness"
+msgid "Increase Lightness"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:176
+#, fuzzy, kde-format
+#| msgctxt "action"
+#| msgid "&Color"
+msgctxt "Blending mode - Color HSV"
+msgid "Color HSV"
+msgstr "&Ранг"
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:177
+#, kde-format
+msgctxt "Blending mode - Hue HSV"
+msgid "Hue HSV"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:178
+#, kde-format
+msgctxt "Blending mode - Saturation HSV"
+msgid "Saturation HSV"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:179
+#, kde-format
+msgctxt "Blending mode - Value HSV"
+msgid "Value"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:180
+#, kde-format
+msgctxt "Blending mode - Decrease Saturation HSV"
+msgid "Decrease Saturation HSV"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:181
+#, kde-format
+msgctxt "Blending mode - Increase Saturation HSV"
+msgid "Increase Saturation HSV"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:182
+#, kde-format
+msgctxt "Blending mode - Decrease Value HSV"
+msgid "Decrease Value"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:183
+#, kde-format
+msgctxt "Blending mode - Increase Value HSV"
+msgid "Increase Value"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:185
+#, kde-format
+msgctxt "Blending mode - Reflect"
+msgid "Reflect"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:186
+#, kde-format
+msgctxt "Blending mode - Glow"
+msgid "Glow"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:187
+#, kde-format
+msgctxt "Blending mode - Freeze"
+msgid "Freeze"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:188
+#, kde-format
+msgctxt "Blending mode - Heat"
+msgid "Heat"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:189
+#, kde-format
+msgctxt "Blending mode - Glow-Heat"
+msgid "Glow-Heat"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:190
+#, kde-format
+msgctxt "Blending mode - Heat-Glow"
+msgid "Heat-Glow"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:191
+#, kde-format
+msgctxt "Blending mode - Reflect-Freeze"
+msgid "Reflect-Freeze"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:192
+#, kde-format
+msgctxt "Blending mode - Freeze-Reflect"
+msgid "Freeze-Reflect"
+msgstr ""
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:193
+#, kde-format
+msgctxt "Blending mode - Heat-Glow & Freeze-Reflect Hybrid"
+msgid "Heat-Glow & Freeze-Reflect Hybrid"
 msgstr ""
 
 #: libs/pigment/resources/KoColorSet.cpp:509
@@ -11239,13 +11947,9 @@ msgid "Preset:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lblProfileH264)
-#. i18n: ectx: property (text), widget (QLabel, lblProfileH265)
-#. i18n: ectx: property (text), widget (QLabel, lblProfileTitle)
-#. i18n: ectx: property (text), widget (QLabel, lblProfiles)
 #: libs/ui/animation/video_export_options_dialog.ui:54
-#: libs/ui/animation/video_export_options_dialog.ui:105
-#: libs/ui/forms/wdgdlgpngimport.ui:17 libs/ui/forms/wdglayerproperties.ui:131
 #, kde-format
+msgctxt "Label of H.264 encoder profiles"
 msgid "Profile:"
 msgstr ""
 
@@ -11255,6 +11959,13 @@ msgstr ""
 #: libs/ui/animation/video_export_options_dialog.ui:115
 #, kde-format
 msgid "Tune:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lblProfileH265)
+#: libs/ui/animation/video_export_options_dialog.ui:105
+#, kde-format
+msgctxt "Label of H.265 encoder profiles"
+msgid "Profile:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkUseHDRMetadata)
@@ -12541,10 +13252,9 @@ msgstr ""
 msgid "White Pixel"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbOutline)
 #: libs/ui/dialogs/kis_dlg_preferences.cc:149
-#: libs/ui/forms/wdggeometryoptions.ui:92
 #, kde-format
+msgctxt "Display options label to not DISPLAY brush outline"
 msgid "No Outline"
 msgstr ""
 
@@ -12783,6 +13493,14 @@ msgstr ""
 #, kde-format
 msgid "Color Management"
 msgstr ""
+
+#: libs/ui/dialogs/kis_dlg_preferences.cc:1513
+#, fuzzy, kde-format
+#| msgctxt "action"
+#| msgid "&Color"
+msgctxt "Label of color as in Color Management"
+msgid "Color"
+msgstr "&Ранг"
 
 #: libs/ui/dialogs/kis_dlg_preferences.cc:1521
 #: libs/ui/dialogs/kis_dlg_preferences.cc:1523
@@ -13562,6 +14280,33 @@ msgid ""
 "business graphics (make it colorful charts, graphs, overheads, ...)"
 msgstr ""
 
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbIntent)
+#. i18n: ectx: property (text), item, widget (KComboBox, cmbMonitorIntent)
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbProofingIntent)
+#. i18n: ectx: property (text), widget (QRadioButton, radioSaturation)
+#. i18n: ectx: property (text), widget (QCheckBox, saturationCBox)
+#. i18n: ectx: property (text), widget (QCheckBox, csl_hsvS)
+#. i18n: ectx: property (text), widget (QCheckBox, csl_hslS)
+#. i18n: ectx: property (text), widget (QCheckBox, csl_hsiS)
+#. i18n: ectx: property (text), widget (QCheckBox, csl_hsyS)
+#: libs/ui/forms/wdgapplyprofile.ui:116 libs/ui/forms/wdgcolorsettings.ui:211
+#: libs/ui/forms/wdgcolorsettings.ui:296
+#: libs/ui/forms/wdgimageproperties.ui:264
+#: libs/ui/widgets/kis_advanced_color_space_selector.cc:481
+#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1289
+#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1319
+#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1349
+#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1379
+#: plugins/extensions/colorspaceconversion/wdgconvertcolorspace.ui:87
+#: plugins/filters/colorsfilters/virtual_channel_info.cpp:45
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:74
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:83
+#: plugins/paintops/hairy/wdghairyeoptions.ui:310
+#: plugins/paintops/hairy/wdgInkOptions.ui:71
+#, kde-format
+msgid "Saturation"
+msgstr ""
+
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, radioAbsoluteColorimetric)
 #: libs/ui/forms/wdgapplyprofile.ui:123
 #, kde-format
@@ -13657,7 +14402,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, leftBackgroundTransparent)
 #. i18n: ectx: property (text), widget (QCheckBox, rightForegroundTransparent)
 #. i18n: ectx: property (text), widget (QCheckBox, rightBackgroundTransparent)
-#. i18n: ectx: property (text), widget (QPushButton, btnTransparent)
 #: libs/ui/forms/wdgautogradient.ui:316 libs/ui/forms/wdgautogradient.ui:323
 #: libs/ui/forms/wdgautogradient.ui:330 libs/ui/forms/wdgautogradient.ui:337
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:57
@@ -13671,7 +14415,6 @@ msgstr ""
 #: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:47
 #: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:45
 #: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:52
-#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.ui:145
 #, kde-format
 msgid "Transparent"
 msgstr ""
@@ -13683,9 +14426,8 @@ msgstr ""
 #: libs/ui/layerstyles/WdgGradientOverlay.ui:134
 #: libs/ui/layerstyles/WdgStroke.ui:227
 #: libs/ui/widgets/KoFillConfigWidget.ui:225
-#: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:60
-#: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:65
 #, kde-format
+msgctxt "Gradient type - Linear"
 msgid "Linear"
 msgstr ""
 
@@ -13916,6 +14658,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, lblColorModels)
 #: libs/ui/forms/wdgcolorspaceselector.ui:55
 #, kde-format
+msgctxt "Label of Color Depth in Color Space Selector dialogue"
 msgid "Depth:"
 msgstr ""
 
@@ -14319,6 +15062,13 @@ msgstr ""
 #: libs/ui/forms/WdgDlgPaletteEditor.ui:61
 #, kde-format
 msgid "Document"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lblProfiles)
+#: libs/ui/forms/wdgdlgpngimport.ui:17
+#, kde-format
+msgctxt "Label of ICC Color Profile in PNG import dialogue"
+msgid "Profile:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkBoxPreview)
@@ -14912,6 +15662,13 @@ msgid "Outline:"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbOutline)
+#: libs/ui/forms/wdggeometryoptions.ui:92
+#, kde-format
+msgctxt "Label of the option to not draw outline in Geometry Options"
+msgid "No Outline"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbOutline)
 #: libs/ui/forms/wdggeometryoptions.ui:97
 #: plugins/paintops/roundmarker/kis_roundmarkerop_settings_widget.cpp:40
 #, kde-format
@@ -15149,6 +15906,13 @@ msgstr ""
 msgid "Color space:"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QLabel, lblProfileTitle)
+#: libs/ui/forms/wdglayerproperties.ui:131
+#, kde-format
+msgctxt "Label of ICC Color Profile in Layer Properties dialogue"
+msgid "Profile:"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QLabel, lblColorLabel)
 #: libs/ui/forms/wdglayerproperties.ui:160
 #, kde-format
@@ -15157,8 +15921,8 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lblDimensionsTitle)
 #: libs/ui/forms/wdglayerproperties.ui:186
-#: plugins/generators/multigridpattern/kis_wdg_multigrid_pattern.cpp:51
 #, kde-format
+msgctxt "Label of Dimensions as in Layer Position"
 msgid "Dimensions:"
 msgstr ""
 
@@ -15308,6 +16072,15 @@ msgstr ""
 #, kde-format
 msgid "Clipboard"
 msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, grpMode)
+#: libs/ui/forms/wdgnewimage.ui:345
+#, fuzzy, kde-format
+#| msgctxt "action"
+#| msgid "&Color"
+msgctxt "Label of Color as color space in Create New Image dialogue"
+msgid "Color"
+msgstr "&Ранг"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: libs/ui/forms/wdgnewimage.ui:372
@@ -16157,11 +16930,7 @@ msgid "Stop: "
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
 #: libs/ui/forms/wdgstrokeselectionproperties.ui:30
-#: libs/ui/layerstyles/wdglayerstyles.ui:134
-#: libs/ui/layerstyles/WdgStroke.ui:17
 #: plugins/tools/defaulttool/defaulttool/DefaultToolTabbedWidget.cpp:41
 #, kde-format
 msgid "Stroke"
@@ -16176,7 +16945,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QComboBox, typeBox)
 #: libs/ui/forms/wdgstrokeselectionproperties.ui:64
 #, kde-format
-msgid "Line selection"
+msgid "Solid line"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -16242,7 +17011,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QComboBox, fillBox)
 #: libs/ui/forms/wdgstrokeselectionproperties.ui:205
 #, kde-format
-msgid "Paint color"
+msgid "Line color"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -18866,8 +19635,8 @@ msgstr ""
 
 #: libs/ui/KisPaletteEditor.cpp:381
 #, kde-format
-msgctxt "Name for a swatch group"
-msgid "Swatch group name"
+msgctxt "Name of the color swatch"
+msgid "Color swatch name"
 msgstr ""
 
 #: libs/ui/KisPaletteEditor.cpp:383
@@ -19866,8 +20635,8 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbStyle)
 #: libs/ui/layerstyles/WdgGradientOverlay.ui:154
 #: libs/ui/layerstyles/WdgStroke.ui:247
-#: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:41
 #, kde-format
+msgctxt "Gradient type - Diamond"
 msgid "Diamond"
 msgstr ""
 
@@ -20021,6 +20790,15 @@ msgstr ""
 #: libs/ui/layerstyles/WdgPatternOverlay.ui:17
 #, kde-format
 msgid "Pattern Overlay"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
+#: libs/ui/layerstyles/wdglayerstyles.ui:134
+#: libs/ui/layerstyles/WdgStroke.ui:17
+#, kde-format
+msgctxt "Layer Style - Stroke"
+msgid "Stroke"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, btnNewStyle)
@@ -21486,6 +22264,20 @@ msgstr ""
 msgid "Auto"
 msgstr ""
 
+#. i18n: ectx: property (text), item, widget (QComboBox, patternValueModeComboBox)
+#: libs/ui/widgets/KisDitherWidget.ui:123
+#, kde-format
+msgctxt "Name of Dither pattern value mode - Lightness"
+msgid "Lightness"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, patternValueModeComboBox)
+#: libs/ui/widgets/KisDitherWidget.ui:128
+#, kde-format
+msgctxt "Name of Dither pattern value mode - Alpha"
+msgid "Alpha"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QLabel, noiseSeedLabel)
 #: libs/ui/widgets/KisDitherWidget.ui:140
 #, kde-format
@@ -22027,7 +22819,6 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: libs/widgets/KoShadowConfigWidget.ui:84
-#: plugins/tools/basictools/kis_tool_brush.cc:195
 #: plugins/tools/basictools/kis_tool_measure.cc:53
 #, kde-format
 msgid "Distance:"
@@ -23549,7 +24340,6 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
 #: plugins/assistants/Assistants/EllipseAssistant.cc:195
 #: plugins/flake/pathshapes/ellipse/EllipseShapeFactory.cpp:35
-#: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:40
 #: plugins/paintops/gridbrush/wdggridbrushshapeoptions.ui:37
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:232
 #: plugins/paintops/spray/wdgsprayshapeoptions.ui:66
@@ -23765,6 +24555,11 @@ msgstr ""
 #: plugins/color/lcms2engine/colorspaces/ycbcr_u8/YCbCrU8ColorSpace.cpp:36
 #, kde-format
 msgid "Cr"
+msgstr ""
+
+#: plugins/color/lcms2engine/compositeops/RgbCompositeOpBumpmap.h:33
+#, kde-format
+msgid "Bumpmap"
 msgstr ""
 
 #: plugins/color/lcms2engine/compositeops/RgbCompositeOpIn.h:36
@@ -24322,14 +25117,25 @@ msgstr ""
 msgid "HSV Sliders to Show"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, csl_hsvV)
-#. i18n: ectx: property (text), widget (QTreeWidget, listViewChannels)
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1296
-#: plugins/python/scripter/ui_scripter/tabwidgets/debuggerwidget/debuggertable.py:28
-#: plugins/tools/basictools/wdgcolorpicker.ui:122
-#: plugins/tools/svgtexttool/WdgSvgTextSettings.ui:164
+#. i18n: ectx: property (text), widget (QCheckBox, csl_hsvH)
+#. i18n: ectx: property (text), widget (QCheckBox, csl_hslH)
+#. i18n: ectx: property (text), widget (QCheckBox, csl_hsiH)
+#. i18n: ectx: property (text), widget (QCheckBox, csl_hsyH)
+#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1282
+#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1312
+#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1342
+#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1372
+#: plugins/filters/colorsfilters/virtual_channel_info.cpp:41
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:73
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:82
 #, kde-format
+msgid "Hue"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, csl_hsvV)
+#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1296
+#, kde-format
+msgctxt "Brightness level of HSV model"
 msgid "Value"
 msgstr ""
 
@@ -24339,10 +25145,24 @@ msgstr ""
 msgid "HSL Sliders to Show"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QCheckBox, csl_hslL)
+#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1326
+#: plugins/filters/colorsfilters/virtual_channel_info.cpp:49
+#, kde-format
+msgctxt "Lightness HSI"
+msgid "Lightness"
+msgstr ""
+
 #. i18n: ectx: property (title), widget (QGroupBox, groupHsi)
 #: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1336
 #, kde-format
 msgid "HSI Sliders to Show"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, csl_hsiI)
+#: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1356
+#, kde-format
+msgid "Intensity"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupHsy)
@@ -25241,13 +26061,11 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, selectSubdivisionStyle)
 #. i18n: ectx: property (text), item, widget (KComboBox, selectMainStyle)
 #. i18n: ectx: property (text), item, widget (KComboBox, selectGuidesStyle)
-#. i18n: ectx: property (title), widget (QGroupBox, gbLines)
 #: plugins/dockers/griddocker/grid_config_widget.ui:357
 #: plugins/dockers/griddocker/grid_config_widget.ui:398
 #: plugins/dockers/griddocker/grid_config_widget.ui:626
-#: plugins/generators/multigridpattern/wdgmultigridpatternoptions.ui:35
-#: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:32
 #, kde-format
+msgctxt "Grid line style - Solid Lines"
 msgid "Lines"
 msgstr ""
 
@@ -25267,7 +26085,6 @@ msgstr ""
 #: plugins/dockers/griddocker/grid_config_widget.ui:367
 #: plugins/dockers/griddocker/grid_config_widget.ui:408
 #: plugins/dockers/griddocker/grid_config_widget.ui:636
-#: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:31
 #, kde-format
 msgid "Dots"
 msgstr ""
@@ -28648,12 +29465,10 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (label), widget (KisIntParseSpinBox, irisRadiusSlider)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#. i18n: ectx: property (text), widget (QLabel, radiusLabel)
 #: plugins/filters/blur/wdg_lens_blur.ui:73
 #: plugins/filters/blur/wdg_lens_blur.ui:92
 #: plugins/filters/gaussianhighpass/wdggaussianhighpass.ui:23
 #: plugins/filters/unsharp/wdgunsharp.ui:23
-#: plugins/tools/basictools/wdgmultihandtool.ui:83
 #, kde-format
 msgid "Radius:"
 msgstr ""
@@ -30274,6 +31089,12 @@ msgstr ""
 msgid "Divisions:"
 msgstr ""
 
+#: plugins/generators/multigridpattern/kis_wdg_multigrid_pattern.cpp:51
+#, kde-format
+msgctxt "The Dimensions of Multigrid pattern generator"
+msgid "Dimensions:"
+msgstr ""
+
 #: plugins/generators/multigridpattern/kis_wdg_multigrid_pattern.cpp:63
 #, kde-format
 msgid "Intersect:"
@@ -30313,6 +31134,13 @@ msgstr ""
 #: plugins/generators/multigridpattern/wdgmultigridpatternoptions.ui:17
 #, kde-format
 msgid "Shapes"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbLines)
+#: plugins/generators/multigridpattern/wdgmultigridpatternoptions.ui:35
+#, kde-format
+msgctxt "Line label in Multigrid pattern options"
+msgid "Lines"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -30447,41 +31275,83 @@ msgstr ""
 msgid "Screentone"
 msgstr ""
 
+#: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:31
+#, kde-format
+msgctxt "Screentone Pattern Type - Dots"
+msgid "Dots"
+msgstr ""
+
+#: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:32
+#, kde-format
+msgctxt "Screentone Pattern Type - Lines"
+msgid "Lines"
+msgstr ""
+
 #: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:39
 #, kde-format
+msgctxt "Screentone Pattern - Round Dots"
 msgid "Round"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBoxShape)
-#: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:42
-#: plugins/paintops/libpaintop/forms/wdgautobrush.ui:97
+#: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:40
 #, kde-format
+msgctxt "Screentone Pattern - Ellipse Dots"
+msgid "Ellipse"
+msgstr ""
+
+#: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:41
+#, kde-format
+msgctxt "Screentone Pattern - Diamond Dots"
+msgid "Diamond"
+msgstr ""
+
+#: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:42
+#, kde-format
+msgctxt "Screentone Pattern - Square Dots"
 msgid "Square"
+msgstr ""
+
+#: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:45
+#, kde-format
+msgctxt "Screentone Pattern - Straight Lines"
+msgid "Straight"
 msgstr ""
 
 #: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:46
 #, kde-format
+msgctxt "Screentone Pattern - Sine Wave Lines"
 msgid "Sine Wave"
 msgstr ""
 
 #: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:47
 #, kde-format
+msgctxt "Screentone Pattern - Trianular Wave Lines"
 msgid "Triangular Wave"
 msgstr ""
 
 #: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:48
 #, kde-format
+msgctxt "Screentone Pattern - Sawtooth Wave Lines"
 msgid "Sawtooth Wave"
 msgstr ""
 
 #: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:49
 #, kde-format
+msgctxt "Screentone Pattern - Curtains Lines"
 msgid "Curtains"
+msgstr ""
+
+#: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:60
+#: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:65
+#, kde-format
+msgctxt "Screentone Interpolation Method - Linear"
+msgid "Linear"
 msgstr ""
 
 #: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:61
 #: plugins/generators/screentone/KisScreentoneScreentoneFunctions.cpp:66
 #, kde-format
+msgctxt "Screentone Interpolation Method - Sinusoidal"
 msgid "Sinusoidal"
 msgstr ""
 
@@ -30988,6 +31858,13 @@ msgstr ""
 #: plugins/impex/jpeg/kis_wdg_options_jpeg.ui:224
 #, kde-format
 msgid "Force baseline JPEG"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, optimize)
+#: plugins/impex/jpeg/kis_wdg_options_jpeg.ui:234
+#, kde-format
+msgctxt "Label of Optimize in JPEG Exporting dialogue"
+msgid "Optimize"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
@@ -32724,7 +33601,6 @@ msgstr ""
 #: plugins/paintops/filterop/kis_filterop_settings_widget.cpp:52
 #: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:61
 #: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:59
-#: plugins/tools/basictools/kis_tool_multihand.cpp:431
 #, kde-format
 msgid "Mirror"
 msgstr ""
@@ -32803,6 +33679,12 @@ msgstr ""
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:71
 #, kde-format
 msgid "Overlay Mode"
+msgstr ""
+
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:75
+#, kde-format
+msgctxt "Label of Brightness value in Color Smudge brush engine options"
+msgid "Value"
 msgstr ""
 
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:76
@@ -32991,6 +33873,12 @@ msgstr ""
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:75
 #, kde-format
 msgid "Lightness Strength"
+msgstr ""
+
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:84
+#, kde-format
+msgctxt "Label of Brightness value in brush settings"
+msgid "Value"
 msgstr ""
 
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:99
@@ -33778,6 +34666,12 @@ msgstr ""
 #: plugins/paintops/libpaintop/forms/wdgautobrush.ui:65
 #, kde-format
 msgid "Mask Type:"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBoxShape)
+#: plugins/paintops/libpaintop/forms/wdgautobrush.ui:97
+#, kde-format
+msgid "Square"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkInvert)
@@ -37299,6 +38193,10 @@ msgstr ""
 msgid "Scope"
 msgstr ""
 
+#: plugins/python/scripter/ui_scripter/tabwidgets/debuggerwidget/debuggertable.py:28
+msgid "Value"
+msgstr ""
+
 #: plugins/python/scripter/ui_scripter/tabwidgets/debuggerwidget/stepaction.py:33
 msgid "Step Over"
 msgstr ""
@@ -37548,6 +38446,13 @@ msgstr ""
 msgid "Sample count:"
 msgstr ""
 
+#: plugins/tools/basictools/kis_tool_brush.cc:195
+#, kde-format
+msgctxt ""
+"Label of Distance value in Freehand brush tool's Weighted Smoothing mode"
+msgid "Distance:"
+msgstr ""
+
 #: plugins/tools/basictools/kis_tool_brush.cc:351
 #, kde-format
 msgctxt "@item:inlistbox Brush Smoothing"
@@ -37716,8 +38621,8 @@ msgid ""
 msgstr ""
 
 #: plugins/tools/basictools/kis_tool_fill.cc:241
-#: plugins/tools/selectiontools/KisToolSelectMagnetic.cc:666
 #, kde-format
+msgctxt "The Threshold label in Fill tool options"
 msgid "Threshold: "
 msgstr ""
 
@@ -37983,6 +38888,12 @@ msgstr ""
 msgid "Symmetry"
 msgstr ""
 
+#: plugins/tools/basictools/kis_tool_multihand.cpp:431
+#, kde-format
+msgctxt "Label of Mirror in Multihand brush tool options"
+msgid "Mirror"
+msgstr ""
+
 #: plugins/tools/basictools/kis_tool_multihand.cpp:432
 #, kde-format
 msgid "Translate"
@@ -38126,6 +39037,13 @@ msgstr ""
 #: plugins/tools/basictools/wdgcolorpicker.ui:117
 #, kde-format
 msgid "Channel"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QTreeWidget, listViewChannels)
+#: plugins/tools/basictools/wdgcolorpicker.ui:122
+#, kde-format
+msgctxt "The value number each channel of picked color listed in a table"
+msgid "Value"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, radiusLabel)
@@ -38309,6 +39227,13 @@ msgstr ""
 #: plugins/tools/basictools/wdgmultihandtool.ui:70
 #, kde-format
 msgid "Subbrushes:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, radiusLabel)
+#: plugins/tools/basictools/wdgmultihandtool.ui:83
+#, kde-format
+msgctxt "Label of Radius in Multibrush tool options"
+msgid "Radius:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, horizontalCheckbox)
@@ -38800,7 +39725,17 @@ msgid "Calligraphy: decrease angle"
 msgstr ""
 
 #: plugins/tools/karbonplugins/tools/CalligraphyTool/KarbonCalligraphyTool.cpp:438
+#, kde-format
+msgctxt "Object name of Calligraphy"
+msgid "Calligraphy"
+msgstr ""
+
 #: plugins/tools/karbonplugins/tools/CalligraphyTool/KarbonCalligraphyTool.cpp:439
+#, kde-format
+msgctxt "Tool Option title of Calligraphy"
+msgid "Calligraphy"
+msgstr ""
+
 #: plugins/tools/karbonplugins/tools/CalligraphyTool/KarbonCalligraphyToolFactory.cpp:33
 #, kde-format
 msgid "Calligraphy"
@@ -38977,6 +39912,12 @@ msgstr ""
 #: plugins/tools/selectiontools/KisToolSelectMagnetic.cc:654
 #, kde-format
 msgid "Filter Radius: "
+msgstr ""
+
+#: plugins/tools/selectiontools/KisToolSelectMagnetic.cc:666
+#, kde-format
+msgctxt "Threshold label in Magnetic Selection's Tool options"
+msgid "Threshold: "
 msgstr ""
 
 #: plugins/tools/selectiontools/KisToolSelectMagnetic.cc:678
@@ -39530,6 +40471,13 @@ msgstr ""
 msgid "Attribute"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: plugins/tools/svgtexttool/WdgSvgTextSettings.ui:164
+#, kde-format
+msgctxt "The Value label used by SVG Text Tool"
+msgid "Value"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: plugins/tools/svgtexttool/WdgSvgTextSettings.ui:220
 #, kde-format
@@ -39793,6 +40741,13 @@ msgstr ""
 msgid "Key Strokes"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QPushButton, btnTransparent)
+#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.ui:145
+#, kde-format
+msgctxt "The label of the button that assigns a selected color as transparent"
+msgid "Transparent"
+msgstr ""
+
 #: plugins/tools/tool_polygon/kis_tool_polygon.cc:57
 msgctxt "(qtundo-format)"
 msgid "Draw Polygon"
@@ -39991,46 +40946,47 @@ msgstr ""
 msgctxt "@info:tooltip"
 msgid ""
 "<p>Select filtering mode:\n"
-"<ul><li><b>Bilinear</b> for areas with uniform color to avoid artifacts</"
-"li><li><b>Bicubic</b> for smoother results</li><li><b>Lanczos3</b> for sharp "
-"results. May produce aerials.</li></ul></p>"
-msgstr ""
-
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:82
-#, kde-format
-msgid "Default (Affine)"
+"<ul><li><b>Nearest neighbor</b> for pixel art. Does not produce new color.</"
+"li><li><b>Bilinear</b> for areas with uniform color to avoid artifacts.</"
+"li><li><b>Bicubic</b> for smoother results.</li><li><b>Lanczos3</b> for "
+"sharp results. May produce aerials.</li></ul></p>"
 msgstr ""
 
 #: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:83
 #, kde-format
-msgid "Strong (Rigid)"
+msgid "Default (Affine)"
 msgstr ""
 
 #: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:84
 #, kde-format
+msgid "Strong (Rigid)"
+msgstr ""
+
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:85
+#, kde-format
 msgid "Strongest (Similitude)"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:214
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:215
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Size of the deformation brush"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:219
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:220
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Amount of the deformation you get"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:224
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:225
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
 "When in non-buildup mode, shows how fast the deformation limit is reached."
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:228
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:229
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -40039,79 +40995,79 @@ msgid ""
 "deforms the piece to the selected deformation level."
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:235
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:236
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Space between two sequential applications of the deformation"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:239
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:240
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Scale <b>Size</b> value according to current stylus pressure"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:243
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:244
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Scale <b>Amount</b> value according to current stylus pressure"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:247
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:248
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reverse direction of the current deformation tool"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:262
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:263
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Move: drag the image along the brush stroke"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:263
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:264
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Scale: grow/shrink image under cursor"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:264
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:265
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Rotate: twirl image under cursor"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:265
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:266
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Offset: shift the image to the right of the stroke direction"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:266
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:267
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Undo: erase actions of other tools"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:612
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:613
 #, kde-format
 msgid "Switch between editing and deforming cage"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, lockUnlockPointsButton)
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:666
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:667
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1602
 #, kde-format
 msgid "Lock Points"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:668
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:669
 #, kde-format
 msgid "Unlock Points"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, cageTransformDirections)
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:750
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:751
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1640
 #, kde-format
 msgid "Create 3 points on the canvas to begin"
@@ -40337,7 +41293,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QRadioButton, cageDeformRadio)
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1663
 #, kde-format
-msgid "Defor&m Layer"
+msgid "Defor&m Selection"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, adjustGranularity)
@@ -40349,13 +41305,14 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, previewGranularity)
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1704
 #, kde-format
-msgctxt "The Granularity value for Preview"
+msgctxt "The Granularity value for Cage Transformation Preview"
 msgid "Preview"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, realGranularity)
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1721
 #, kde-format
+msgctxt "The Granularity value for Cage Transformation Result"
 msgid "Real"
 msgstr ""
 
