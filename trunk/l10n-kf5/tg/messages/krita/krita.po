@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-07-24 02:10+0200\n"
+"POT-Creation-Date: 2020-07-25 02:09+0200\n"
 "PO-Revision-Date: 2019-09-29 12:46+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -13042,6 +13042,9 @@ msgstr ""
 #: plugins/dockers/animation/onion_skins_docker.cpp:58
 #: plugins/dockers/animation/timeline_frames_view.cpp:255
 #: plugins/dockers/layerdocker/LayerBox.cpp:199
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:59
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:63
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:66
 #: plugins/generators/pattern/wdgpatternoptions.ui:116
 #: plugins/generators/pattern/wdgpatternoptions.ui:145
 #: plugins/generators/screentone/KisScreentoneConfigWidget.cpp:41
@@ -16124,8 +16127,10 @@ msgid "Bac&kground Color:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lblBackgroundStyle)
+#. i18n: ectx: property (text), widget (QLabel, labelBackground)
 #. i18n: ectx: property (text), widget (QLabel, mLabelBackground)
 #: libs/ui/forms/wdgnewimage.ui:487
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:174
 #: plugins/generators/screentone/KisScreentoneConfigWidget.ui:390
 #, kde-format
 msgid "Background:"
@@ -16853,9 +16858,11 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lblMode)
 #. i18n: ectx: property (text), widget (QLabel, label_21)
+#. i18n: ectx: property (text), widget (QLabel, labelMode)
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: libs/ui/forms/wdgselectionoptions.ui:92
 #: plugins/extensions/metadataeditor/editors/exif.ui:555
+#: plugins/filters/halftone/KisHalftoneConfigWidget.ui:46
 #: plugins/python/highpass/highpass.py:65
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:2035
 #, kde-format
@@ -16884,10 +16891,8 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkAntiAliasing)
 #. i18n: ectx: property (text), widget (QCheckBox, chkAntialiasing)
-#. i18n: ectx: property (text), widget (QCheckBox, ckbAntialiasing)
 #: libs/ui/forms/wdgselectionoptions.ui:181
 #: plugins/extensions/modify_selection/wdg_border_selection.ui:123
-#: plugins/filters/halftone/wdg_halftone_filter.ui:83
 #, kde-format
 msgid "Anti-aliasing"
 msgstr ""
@@ -17001,6 +17006,7 @@ msgstr ""
 #: libs/ui/widgets/KoFillConfigWidget.ui:37
 #: libs/ui/widgets/KoFillConfigWidget.ui:258
 #: plugins/extensions/metadataeditor/editors/exif.ui:666
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:47
 #: plugins/impex/tiff/kis_wdg_options_tiff.ui:66
 #: plugins/impex/tiff/kis_wdg_options_tiff.ui:118
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:427
@@ -18345,11 +18351,9 @@ msgid "Flow:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, brushSizeLabel)
-#. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, labelSize)
 #. i18n: ectx: property (text), widget (QLabel, lblSize)
 #: libs/ui/kis_paintop_box.cc:246 libs/ui/kis_paintop_box.cc:252
-#: plugins/filters/halftone/wdg_halftone_filter.ui:42
 #: plugins/generators/screentone/KisScreentoneConfigWidget.ui:210
 #: plugins/paintops/libpaintop/forms/wdgpredefinedbrushchooser.ui:198
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1991
@@ -18622,6 +18626,8 @@ msgstr ""
 #: libs/ui/kis_stopgradient_editor.cpp:54
 #: plugins/assistants/Assistants/kis_assistant_tool.cc:1048
 #: plugins/assistants/Assistants/kis_assistant_tool.cc:1054
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:62
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:65
 #: plugins/generators/screentone/KisScreentoneConfigWidget.cpp:40
 #: plugins/generators/screentone/KisScreentoneConfigWidget.cpp:43
 #: plugins/tools/defaulttool/defaulttool/DefaultToolGeometryWidget.cpp:123
@@ -25161,6 +25167,8 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, csl_hsiI)
 #: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1356
+#: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:44
+#: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:203
 #, kde-format
 msgid "Intensity"
 msgstr ""
@@ -27798,8 +27806,10 @@ msgid "Flash ener&gy:"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)
+#. i18n: ectx: attribute (title), widget (QWidget, tabPostprocessing)
 #. i18n: ectx: attribute (title), widget (QWidget, tabPostProcessing)
 #: plugins/extensions/metadataeditor/editors/exif.ui:638
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:83
 #: plugins/generators/screentone/KisScreentoneConfigWidget.ui:327
 #, kde-format
 msgid "Postprocessing"
@@ -29314,8 +29324,6 @@ msgid "Slope, Offset, Power(ASC-CDL)"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (KisGradientSlider, cutoffSlider)
-#. i18n: ectx: property (text), widget (KisColorButton, bnforeground)
-#. i18n: ectx: property (text), widget (KisColorButton, bnbackground)
 #. i18n: ectx: property (text), widget (KisColorButton, btnSlope)
 #. i18n: ectx: property (text), widget (KisColorButton, btnPower)
 #. i18n: ectx: property (text), widget (KisColorButton, btnOffset)
@@ -29324,8 +29332,6 @@ msgstr ""
 #: plugins/filters/asccdl/wdg_asccdl.ui:24
 #: plugins/filters/asccdl/wdg_asccdl.ui:45
 #: plugins/filters/gradientmap/wdg_gradientmap.ui:26
-#: plugins/filters/halftone/wdg_halftone_filter.ui:26
-#: plugins/filters/halftone/wdg_halftone_filter.ui:33
 #: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:198
 #, kde-format
 msgid "PushButton"
@@ -29522,12 +29528,10 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_14)
 #. i18n: ectx: property (text), widget (QLabel, rotationLbl)
 #. i18n: ectx: property (text), widget (QLabel, lblAngle)
-#. i18n: ectx: property (text), widget (QLabel, lbl_angle)
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, textLabel5)
 #: plugins/filters/blur/wdg_motion_blur.ui:83
 #: plugins/filters/blur/wdgblur.ui:123
-#: plugins/filters/halftone/wdg_halftone_filter.ui:73
 #: plugins/paintops/hatching/wdghatchingoptions.ui:49
 #: plugins/paintops/libpaintop/forms/wdgautobrush.ui:161
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:177
@@ -30085,9 +30089,7 @@ msgstr ""
 msgid "Emboss with Variable Depth"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, ckbInvert)
 #: plugins/filters/example/example.h:45
-#: plugins/filters/halftone/wdg_halftone_filter.ui:93
 #, kde-format
 msgid "Invert"
 msgstr ""
@@ -30162,20 +30164,51 @@ msgstr ""
 msgid "Dither"
 msgstr ""
 
-#: plugins/filters/halftone/kis_halftone_filter.cpp:56
+#. i18n: ectx: property (windowTitle), widget (QWidget, HalftoneConfigPageWidget)
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:20
+#, kde-format
+msgid "Form"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabScreenGenerator)
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:48
+#, kde-format
+msgid "Screen Generator"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, labelHardness)
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:112
+#, kde-format
+msgid "Hardness:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, labelInvert)
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:129
+#: plugins/generators/screentone/KisScreentoneConfigWidget.ui:424
+#, kde-format
+msgid "Invert:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, labelForeground)
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:143
+#: plugins/generators/screentone/KisScreentoneConfigWidget.ui:356
+#, kde-format
+msgid "Foreground:"
+msgstr ""
+
+#: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:45
+#, kde-format
+msgid "Independent Channels"
+msgstr ""
+
+#: plugins/filters/halftone/KisHalftoneFilter.cpp:55
 #, kde-format
 msgid "&Halftone..."
 msgstr ""
 
-#: plugins/filters/halftone/kis_halftone_filter.h:72
+#: plugins/filters/halftone/KisHalftoneFilter.h:49
 #, kde-format
 msgid "Halftone"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, lblcolors)
-#: plugins/filters/halftone/wdg_halftone_filter.ui:17
-#, kde-format
-msgid "Colors:"
 msgstr ""
 
 #: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:43
@@ -31273,18 +31306,6 @@ msgstr ""
 #: plugins/generators/screentone/KisScreentoneConfigWidget.ui:141
 #, kde-format
 msgid "Transformation"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, labelForeground)
-#: plugins/generators/screentone/KisScreentoneConfigWidget.ui:356
-#, kde-format
-msgid "Foreground:"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, labelInvert)
-#: plugins/generators/screentone/KisScreentoneConfigWidget.ui:424
-#, kde-format
-msgid "Invert:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lblRatio)
