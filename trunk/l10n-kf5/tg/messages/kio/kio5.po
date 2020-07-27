@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-07-26 02:02+0200\n"
+"POT-Creation-Date: 2020-07-27 02:03+0200\n"
 "PO-Revision-Date: 2019-09-29 12:32+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -2289,7 +2289,7 @@ msgstr ""
 msgid "Undocumented Error"
 msgstr "Хатои бедалел"
 
-#: core/kcoredirlister.cpp:396 gui/openurljob.cpp:152 widgets/krun.cpp:419
+#: core/kcoredirlister.cpp:396 gui/openurljob.cpp:168 widgets/krun.cpp:419
 #: widgets/paste.cpp:278 widgets/renamedialog.cpp:595
 #, kde-format
 msgid ""
@@ -2547,7 +2547,7 @@ msgstr ""
 msgid "The procedure to set the client certificate for the session failed."
 msgstr "Кори сабт кардани сертификати клиент нашуд."
 
-#: core/tcpslavebase.cpp:698 widgets/jobuidelegate.cpp:395
+#: core/tcpslavebase.cpp:698 widgets/jobuidelegate.cpp:399
 #, kde-format
 msgid "SSL"
 msgstr "SSL"
@@ -2661,9 +2661,9 @@ msgstr "Боркунии дубора"
 msgid "New Folder..."
 msgstr "Ҷузвадони нав..."
 
-#: filewidgets/kdiroperator.cpp:2004 widgets/jobuidelegate.cpp:286
-#: widgets/jobuidelegate.cpp:287 widgets/jobuidelegate.cpp:295
-#: widgets/jobuidelegate.cpp:296
+#: filewidgets/kdiroperator.cpp:2004 widgets/jobuidelegate.cpp:290
+#: widgets/jobuidelegate.cpp:291 widgets/jobuidelegate.cpp:299
+#: widgets/jobuidelegate.cpp:300
 #, kde-format
 msgid "Move to Trash"
 msgstr "Интиқол додан ба сабад"
@@ -3733,7 +3733,7 @@ msgid ""
 "%2."
 msgstr ""
 
-#: gui/applicationlauncherjob.cpp:262 gui/openurljob.cpp:613
+#: gui/applicationlauncherjob.cpp:262 gui/openurljob.cpp:744
 #: widgets/krun.cpp:210
 #, kde-format
 msgid "You are not authorized to select an application to open this file."
@@ -3767,12 +3767,12 @@ msgstr ""
 msgid "Launching %1"
 msgstr "Оғози %1"
 
-#: gui/openurljob.cpp:166
+#: gui/openurljob.cpp:182
 #, kde-format
 msgid "Failed to open %1"
 msgstr ""
 
-#: gui/openurljob.cpp:414 widgets/kdesktopfileactions.cpp:138
+#: gui/openurljob.cpp:430 widgets/kdesktopfileactions.cpp:138
 #, kde-format
 msgid ""
 "The desktop entry file\n"
@@ -3783,40 +3783,53 @@ msgstr ""
 "%1\n"
 "дорои намуди Link мебошад ва лекин дорои қайдоти URL=...намебошад."
 
-#: gui/openurljob.cpp:481
+#: gui/openurljob.cpp:484
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>The file <b>%1</b> is an executable program. For safety it will not "
 #| "be started.</qt>"
 msgid ""
-"The file \"%1\" is an executable program. For safety it will not be started."
+"The executable file \"%1\" is located on a remote filesystem. For safety "
+"reasons it will not be started."
 msgstr ""
 "<qt>Файл <b>%1</b> барномаи иҷрошаванда мебошад. Ба мақсади ҳифз он "
 "муҳофизат намешавад.</qt>"
 
-#: gui/openurljob.cpp:504
+#: gui/openurljob.cpp:528
+#, kde-format
+msgid ""
+"For security reasons, launching executables is not allowed in this context."
+msgstr ""
+
+#: gui/openurljob.cpp:555
 #, kde-format
 msgid ""
 "The program \"%1\" needs to have executable permission before it can be "
 "launched."
 msgstr ""
 
-#: gui/openurljob.cpp:515
+#: gui/openurljob.cpp:566
 #, kde-format
 msgid ""
 "Unable to make file \"%1\" executable.\n"
 "%2."
 msgstr ""
 
-#: gui/openurljob.cpp:573 widgets/kdesktopfileactions.cpp:71
+#: gui/openurljob.cpp:654 widgets/kdesktopfileactions.cpp:71
 #, kde-format
 msgid "The desktop entry file %1 has no Type=... entry."
 msgstr "Файли desktop %1 дорои қайдоти Type=... намебошад."
 
-#: gui/openurljob.cpp:624
+#: gui/openurljob.cpp:755
 #, kde-format
 msgid "Failed to open the file."
 msgstr ""
+
+#: gui/openurljob.cpp:789
+#, fuzzy, kde-format
+#| msgid "The requested lock could not be granted. %1"
+msgid "The program \"%1\" could not be launched."
+msgstr "Муҳосираи талабкарда тасдиқ карда намешавад. %1"
 
 #: ioslaves/file/file.cpp:188
 #, kde-format
@@ -7049,7 +7062,7 @@ msgstr ""
 msgid "Undo File Copy Confirmation"
 msgstr ""
 
-#: widgets/jobuidelegate.cpp:254
+#: widgets/jobuidelegate.cpp:258
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7061,13 +7074,13 @@ msgstr ""
 "%1</filename><nl/><nl/><emphasis strong='true'>Ин амал бекор карда намешавад."
 "</emphasis>"
 
-#: widgets/jobuidelegate.cpp:255 widgets/jobuidelegate.cpp:264
-#: widgets/jobuidelegate.cpp:274
+#: widgets/jobuidelegate.cpp:259 widgets/jobuidelegate.cpp:268
+#: widgets/jobuidelegate.cpp:278
 #, kde-format
 msgid "Delete Permanently"
 msgstr "Бебозгашт нест кардан"
 
-#: widgets/jobuidelegate.cpp:262
+#: widgets/jobuidelegate.cpp:266
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7083,7 +7096,7 @@ msgstr[1] ""
 "Шумо дар ҳақиқат мехоҳед, ки %1 ҷузъи зеринро бебозгашт нест намоед?<nl/><nl/"
 "><emphasis strong='true'>Ин амал бекор карда намешавад.</emphasis>"
 
-#: widgets/jobuidelegate.cpp:273
+#: widgets/jobuidelegate.cpp:277
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7094,13 +7107,13 @@ msgstr ""
 "намоед?<nl/><nl/><emphasis strong='true'>Ин амал бекор карда намешавад.</"
 "emphasis>"
 
-#: widgets/jobuidelegate.cpp:275
+#: widgets/jobuidelegate.cpp:279
 #, kde-format
 msgctxt "@action:button"
 msgid "Empty Trash"
 msgstr "Сабадро холӣ кардан"
 
-#: widgets/jobuidelegate.cpp:285
+#: widgets/jobuidelegate.cpp:289
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7110,7 +7123,7 @@ msgstr ""
 "Шумо дар ҳақиқат мехоҳед, ки ин ҷузъро ба сабад интиқол намоед? <nl/"
 "><filename>%1</filename>"
 
-#: widgets/jobuidelegate.cpp:293
+#: widgets/jobuidelegate.cpp:297
 #, kde-format
 msgid "Do you really want to move this item to the Trash?"
 msgid_plural "Do you really want to move these %1 items to the Trash?"
@@ -7118,7 +7131,7 @@ msgstr[0] "Шумо дар ҳақиқат мехоҳед, ки ҷузъи зер
 msgstr[1] ""
 "Шумо дар ҳақиқат мехоҳед, ки %1 ҷузъи зеринро ба сабад интиқол намоед?"
 
-#: widgets/jobuidelegate.cpp:394
+#: widgets/jobuidelegate.cpp:398
 #, kde-format
 msgid "The peer SSL certificate chain appears to be corrupt."
 msgstr "Чунин менамояд, ки занҷири гувоҳиномаи SSL вайрон аст."
