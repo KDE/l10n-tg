@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmfonts\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-07-04 02:14+0200\n"
+"POT-Creation-Date: 2020-07-31 02:21+0200\n"
 "PO-Revision-Date: 2019-10-09 17:44+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -151,6 +151,12 @@ msgctxt "full hinting"
 msgid "Full"
 msgstr ""
 
+#: package/contents/ui/ContextualHelpButton.qml:58
+#, kde-format
+msgctxt "@action:button"
+msgid "Show Contextual Help"
+msgstr ""
+
 #: package/contents/ui/FontWidget.qml:65
 #, kde-format
 msgid "Select %1 Font..."
@@ -222,49 +228,118 @@ msgstr "Феҳрист:"
 msgid "Window title:"
 msgstr "Сарлавҳаи равзана:"
 
-#: package/contents/ui/main.qml:155
+#: package/contents/ui/main.qml:152
 #, kde-format
 msgid "Anti-Aliasing:"
 msgstr ""
 
-#: package/contents/ui/main.qml:156
+#: package/contents/ui/main.qml:157
 #, kde-format
 msgid "Enable"
 msgstr "Фаъол кардан"
 
-#: package/contents/ui/main.qml:164
+#: package/contents/ui/main.qml:161
+#, kde-kuit-format
+msgctxt "@info:tooltip Anti-Aliasing"
+msgid ""
+"Pixels on displays are generally aligned in a grid. Therefore shapes of "
+"fonts that do not align with this grid will look blocky and wrong unless "
+"<emphasis>anti-aliasing</emphasis> techniques are used to reduce this "
+"effect. You generally want to keep this option enabled unless it causes "
+"problems."
+msgstr ""
+
+#: package/contents/ui/main.qml:169
 #, kde-format
 msgid "Exclude range from anti-aliasing"
 msgstr ""
 
-#: package/contents/ui/main.qml:177 package/contents/ui/main.qml:195
+#: package/contents/ui/main.qml:182 package/contents/ui/main.qml:200
 #, kde-format
 msgid "%1 pt"
 msgstr ""
 
-#: package/contents/ui/main.qml:187
+#: package/contents/ui/main.qml:192
 #, kde-format
 msgid "to"
 msgstr ""
 
-#: package/contents/ui/main.qml:211
+#: package/contents/ui/main.qml:214
 #, kde-format
 msgctxt "Used as a noun, and precedes a combobox full of options"
 msgid "Sub-pixel rendering:"
 msgstr ""
 
-#: package/contents/ui/main.qml:248
+#: package/contents/ui/main.qml:251
+#, kde-kuit-format
+msgctxt "@info:tooltip Sub-pixel rendering"
+msgid ""
+"<para>On TFT or LCD screens every single pixel is actually composed of three "
+"or four smaller monochrome lights. These <emphasis>sub-pixels</emphasis> can "
+"be changed independently to further improve the quality of displayed fonts.</"
+"para> <para>The rendering quality is only improved if the selection matches "
+"the manner in which the sub-pixels of your display are aligned. Most "
+"displays have a linear ordering of <emphasis>RGB</emphasis> sub-pixels, some "
+"have <emphasis>BGR</emphasis> and some exotic orderings are not supported by "
+"this feature.</para>This does not work with CRT monitors."
+msgstr ""
+
+#: package/contents/ui/main.qml:256
 #, kde-format
 msgctxt "Used as a noun, and precedes a combobox full of options"
 msgid "Hinting:"
 msgstr ""
 
-#: package/contents/ui/main.qml:286
+#: package/contents/ui/main.qml:293
+#, kde-kuit-format
+msgctxt "@info:tooltip Hinting"
+msgid ""
+"Hinting is a technique in which hints embedded in a font are used to enhance "
+"the rendering quality especially at small sizes. Stronger hinting generally "
+"leads to sharper edges but the small letters will less closely resemble "
+"their shape at big sizes."
+msgstr ""
+
+#: package/contents/ui/main.qml:301
 #, kde-format
 msgid "Force font DPI:"
 msgstr ""
 
-#: package/contents/ui/main.qml:306
+#: package/contents/ui/main.qml:318
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "<p>This option forces a specific DPI value for fonts. It may be useful "
+#| "when the real DPI of the hardware is not detected properly and it is also "
+#| "often misused when poor quality fonts are used that do not look well with "
+#| "DPI values other than 96 or 120 DPI.</p><p>The use of this option is "
+#| "generally discouraged. For selecting proper DPI value a better option is "
+#| "explicitly configuring it for the whole X server if possible (e.g. "
+#| "DisplaySize in xorg.conf or adding <i>-dpi value</i> to ServerLocalArgs= "
+#| "in $KDEDIR/share/config/kdm/kdmrc). When fonts do not render properly "
+#| "with real DPI value better fonts should be used or configuration of font "
+#| "hinting should be checked.</p>"
+msgctxt "@info:tooltip Force fonts DPI"
+msgid ""
+"<para>This option forces a specific DPI value for fonts. It may be useful "
+"when the real DPI of the hardware is not detected properly and it is also "
+"often misused when poor quality fonts are used that do not look well with "
+"DPI values other than 96 or 120 DPI.</para><para>The use of this option is "
+"generally discouraged.</para><para>If you are using the <emphasis>X Window "
+"System</emphasis>, for selecting the proper DPI value a better option is "
+"explicitly configuring it for the whole X server if possible (e.g. "
+"DisplaySize in xorg.conf). When fonts do not render properly with the real "
+"DPI value better fonts should be used or configuration of font hinting "
+"should be checked.</para>"
+msgstr ""
+"<p>Этот параметр явно задаёт dpi для шрифтов. Это бывает полезно в тех "
+"случаях, когда настоящий dpi вашего оборудования не был правильно определён, "
+"что привело к плохому качеству показа шрифтов.</p><p>Для того, чтобы "
+"правильно установить значение dpi для шрифтов, необходимо настроить X-сервер "
+"(параметр DisplaySize в файле xorg.conf или добавить <i>-dpi значение</i> в "
+"ServerLocalArgs= в файле $KDEDIR/share/config/kdm/kdmrc). Если это не "
+"помогло, измените настройки хинтинга.</p>"
+
+#: package/contents/ui/main.qml:324
 #, kde-format
 msgid "Select Font"
 msgstr "Ҳуруфро интихоб намоед"
@@ -374,37 +449,6 @@ msgstr "Ҳуруфро интихоб намоед"
 #~| "If this option is selected, KDE will smooth the edges of curves in fonts."
 #~ msgid "Select this option to smooth the edges of curves in fonts."
 #~ msgstr "Агар ин интихобот сиёҳ шавад, KDE кунҷҳои ҳарфро ҳамвор мекунад."
-
-#, fuzzy
-#~| msgid ""
-#~| "<p>This option forces a specific DPI value for fonts. It may be useful "
-#~| "when the real DPI of the hardware is not detected properly and it is "
-#~| "also often misused when poor quality fonts are used that do not look "
-#~| "well with DPI values other than 96 or 120 DPI.</p><p>The use of this "
-#~| "option is generally discouraged. For selecting proper DPI value a better "
-#~| "option is explicitly configuring it for the whole X server if possible "
-#~| "(e.g. DisplaySize in xorg.conf or adding <i>-dpi value</i> to "
-#~| "ServerLocalArgs= in $KDEDIR/share/config/kdm/kdmrc). When fonts do not "
-#~| "render properly with real DPI value better fonts should be used or "
-#~| "configuration of font hinting should be checked.</p>"
-#~ msgid ""
-#~ "<p>This option forces a specific DPI value for fonts. It may be useful "
-#~ "when the real DPI of the hardware is not detected properly and it is also "
-#~ "often misused when poor quality fonts are used that do not look well with "
-#~ "DPI values other than 96 or 120 DPI.</p><p>The use of this option is "
-#~ "generally discouraged. For selecting proper DPI value a better option is "
-#~ "explicitly configuring it for the whole X server if possible (e.g. "
-#~ "DisplaySize in xorg.conf). When fonts do not render properly with real "
-#~ "DPI value better fonts should be used or configuration of font hinting "
-#~ "should be checked.</p>"
-#~ msgstr ""
-#~ "<p>Этот параметр явно задаёт dpi для шрифтов. Это бывает полезно в тех "
-#~ "случаях, когда настоящий dpi вашего оборудования не был правильно "
-#~ "определён, что привело к плохому качеству показа шрифтов.</p><p>Для того, "
-#~ "чтобы правильно установить значение dpi для шрифтов, необходимо настроить "
-#~ "X-сервер (параметр DisplaySize в файле xorg.conf или добавить <i>-dpi "
-#~ "значение</i> в ServerLocalArgs= в файле $KDEDIR/share/config/kdm/kdmrc). "
-#~ "Если это не помогло, измените настройки хинтинга.</p>"
 
 #~ msgctxt "font usage"
 #~ msgid "Taskbar"
