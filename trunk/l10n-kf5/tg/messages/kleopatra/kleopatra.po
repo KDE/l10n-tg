@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-19 02:26+0200\n"
+"POT-Creation-Date: 2020-08-21 02:22+0200\n"
 "PO-Revision-Date: 2019-09-27 23:59+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -1513,12 +1513,13 @@ msgid "Moving the key to the card failed: %1"
 msgstr ""
 
 #: src/commands/keytocardcommand.cpp:182 src/commands/keytocardcommand.cpp:207
-#: src/view/netkeywidget.cpp:204 src/view/nullpinwidget.cpp:98
-#: src/view/pgpcardwidget.cpp:270 src/view/pgpcardwidget.cpp:285
-#: src/view/pgpcardwidget.cpp:336 src/view/pgpcardwidget.cpp:362
-#: src/view/pgpcardwidget.cpp:368 src/view/pgpcardwidget.cpp:374
-#: src/view/pgpcardwidget.cpp:392 src/view/pgpcardwidget.cpp:419
-#: src/view/pgpcardwidget.cpp:434
+#: src/commands/pivgeneratecardkeycommand.cpp:117
+#: src/commands/pivgeneratecardkeycommand.cpp:144 src/view/netkeywidget.cpp:204
+#: src/view/nullpinwidget.cpp:98 src/view/pgpcardwidget.cpp:270
+#: src/view/pgpcardwidget.cpp:285 src/view/pgpcardwidget.cpp:336
+#: src/view/pgpcardwidget.cpp:362 src/view/pgpcardwidget.cpp:368
+#: src/view/pgpcardwidget.cpp:374 src/view/pgpcardwidget.cpp:392
+#: src/view/pgpcardwidget.cpp:419 src/view/pgpcardwidget.cpp:434
 #, fuzzy, kde-format
 #| msgid "Kleopatra Error"
 msgctxt "@title"
@@ -1530,9 +1531,10 @@ msgstr "Хатои Kleopatra"
 msgid "Successfully copied the key to the card."
 msgstr ""
 
-#: src/commands/keytocardcommand.cpp:198 src/view/pgpcardwidget.cpp:293
-#: src/view/pgpcardwidget.cpp:342 src/view/pgpcardwidget.cpp:398
-#: src/view/pgpcardwidget.cpp:440
+#: src/commands/keytocardcommand.cpp:198
+#: src/commands/pivgeneratecardkeycommand.cpp:146
+#: src/view/pgpcardwidget.cpp:293 src/view/pgpcardwidget.cpp:342
+#: src/view/pgpcardwidget.cpp:398 src/view/pgpcardwidget.cpp:440
 #, kde-format
 msgctxt "@title"
 msgid "Success"
@@ -1647,6 +1649,26 @@ msgstr ""
 msgctxt "@title"
 msgid "No Directory Servers Configured"
 msgstr ""
+
+#: src/commands/pivgeneratecardkeycommand.cpp:116
+#, kde-format
+msgctxt "@info"
+msgid "Authenticating to the card failed: %1"
+msgstr ""
+
+#: src/commands/pivgeneratecardkeycommand.cpp:143
+#, fuzzy, kde-format
+#| msgid "Certificate Deletion Failed"
+msgctxt "@info"
+msgid "Generating key failed: %1"
+msgstr "Наметавонам сертификатро ҳузф кунам"
+
+#: src/commands/pivgeneratecardkeycommand.cpp:146
+#, fuzzy, kde-format
+#| msgid "Secret keys imported:"
+msgctxt "@info"
+msgid "Key successfully generated."
+msgstr "Калидҳои махфии ворид кардашуда:"
 
 #: src/commands/refreshopenpgpcertscommand.cpp:41
 #, kde-kuit-format
@@ -7909,7 +7931,7 @@ msgid "View Columns"
 msgstr ""
 
 #: src/view/netkeywidget.cpp:68 src/view/pgpcardwidget.cpp:124
-#: src/view/pivcardwidget.cpp:75
+#: src/view/pivcardwidget.cpp:85
 #, fuzzy, kde-format
 #| msgid "Serial Number"
 msgid "Serial number:"
@@ -8100,7 +8122,7 @@ msgctxt ""
 msgid "Pubkey URL:"
 msgstr "Зеркалидҳои нав:"
 
-#: src/view/pgpcardwidget.cpp:158 src/view/pivcardwidget.cpp:84
+#: src/view/pgpcardwidget.cpp:158 src/view/pivcardwidget.cpp:94
 #, fuzzy, kde-format
 #| msgid "New subkeys:"
 msgid "Keys:"
@@ -8325,7 +8347,7 @@ msgctxt "@info"
 msgid "URL successfully changed."
 msgstr "Наметавонам сертификатро пурбор кунам."
 
-#: src/view/pgpcardwidget.cpp:450 src/view/pivcardwidget.cpp:135
+#: src/view/pgpcardwidget.cpp:450 src/view/pivcardwidget.cpp:166
 #, kde-format
 msgid "Slot empty"
 msgstr ""
@@ -8335,29 +8357,58 @@ msgstr ""
 msgid "Public key not found."
 msgstr ""
 
-#: src/view/pivcardwidget.cpp:86
+#: src/view/pivcardwidget.cpp:96
 #, fuzzy, kde-format
 msgid "PIV authentication:"
 msgstr "Маълумот оиди сертификат"
 
-#: src/view/pivcardwidget.cpp:90
+#: src/view/pivcardwidget.cpp:99 src/view/pivcardwidget.cpp:108
+#: src/view/pivcardwidget.cpp:117 src/view/pivcardwidget.cpp:126
+#, fuzzy, kde-format
+#| msgid "Serial"
+msgid "Generate"
+msgstr "Сериявӣ"
+
+#: src/view/pivcardwidget.cpp:100
+#, fuzzy, kde-format
+msgid "Generate PIV Authentication Key"
+msgstr "Маълумот оиди сертификат"
+
+#: src/view/pivcardwidget.cpp:105
 #, fuzzy, kde-format
 msgid "Card authentication:"
 msgstr "Маълумот оиди сертификат"
 
-#: src/view/pivcardwidget.cpp:94
+#: src/view/pivcardwidget.cpp:109
+#, fuzzy, kde-format
+msgid "Generate Card Authentication Key"
+msgstr "Маълумот оиди сертификат"
+
+#: src/view/pivcardwidget.cpp:114
 #, fuzzy, kde-format
 #| msgid "New signatures:"
 msgid "Digital signature:"
 msgstr "Имзоҳои нав:"
 
-#: src/view/pivcardwidget.cpp:98
+#: src/view/pivcardwidget.cpp:118
+#, fuzzy, kde-format
+#| msgid "New signatures:"
+msgid "Generate Digital Signature Key"
+msgstr "Имзоҳои нав:"
+
+#: src/view/pivcardwidget.cpp:123
 #, fuzzy, kde-format
 #| msgid "KDE Key Manager"
 msgid "Key management:"
 msgstr "Мудири калидҳои KDE"
 
-#: src/view/pivcardwidget.cpp:111
+#: src/view/pivcardwidget.cpp:127
+#, fuzzy, kde-format
+#| msgid "Generating key"
+msgid "Generate Key Management Key"
+msgstr "Эҷоди калид"
+
+#: src/view/pivcardwidget.cpp:145
 #, kde-format
 msgctxt "Placeholder is a version number"
 msgid "PIV v%1 card"
@@ -9103,11 +9154,6 @@ msgstr ""
 #~| msgid "Export Certificates..."
 #~ msgid "Export Secret Certificate..."
 #~ msgstr "Содироти сертификатҳо..."
-
-#, fuzzy
-#~| msgid "Serial"
-#~ msgid "General"
-#~ msgstr "Сериявӣ"
 
 #, fuzzy
 #~| msgid "Stop Operation"
