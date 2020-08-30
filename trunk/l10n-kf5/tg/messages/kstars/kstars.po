@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-29 02:06+0200\n"
+"POT-Creation-Date: 2020-08-30 02:05+0200\n"
 "PO-Revision-Date: 2019-09-29 12:46+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -9217,17 +9217,98 @@ msgstr "Пурборкунии FITS..."
 msgid "Tracking"
 msgstr "Нишона"
 
+#: ekos/analyze/analyze.cpp:361 ekos/analyze/analyze.cpp:373
+#, fuzzy, kde-format
+msgid "Current Session"
+msgstr "Нигоҳ доред рангҳои ҷориро..."
+
+#: ekos/analyze/analyze.cpp:362
+#, fuzzy, kde-format
+msgid "Read from File"
+msgstr "Файлро гузоред..."
+
+#: ekos/analyze/analyze.cpp:363
+#, kde-format
+msgid "Set alternative image-file base directory"
+msgstr ""
+
 #: ekos/analyze/analyze.cpp:385
 #, fuzzy, kde-format
 #| msgid "Select Fields in Input File"
 msgid "Select input file"
 msgstr "Интихоб кардани дашт ва дар файл гузоштан"
 
+#: ekos/analyze/analyze.cpp:386
+#, kde-format
+msgid "Analyze Log (*.analyze);;All Files (*)"
+msgstr ""
+
+#: ekos/analyze/analyze.cpp:405
+#, kde-format
+msgid "Set an alternate base directory for your captured images"
+msgstr ""
+
 #: ekos/analyze/analyze.cpp:882
 #, fuzzy, kde-format
 #| msgid "Could not delete the file: %1"
 msgid "Could not find image file: %1"
 msgstr "Наметавонам файлро нобуд кунам:%1"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_CaptureLogging)
+#. i18n: ectx: property (text), widget (QPushButton, captureB)
+#. i18n: ectx: property (title), widget (QGroupBox, captureGroup)
+#. i18n: ectx: attribute (title), widget (QWidget, captureTab)
+#: ekos/analyze/analyze.cpp:1427 ekos/auxiliary/opslogs.ui:327
+#: ekos/guide/guide.ui:73 ekos/manager.ui:639 ekos/opsekos.ui:479
+#, fuzzy, kde-format
+#| msgid "Capture Image"
+msgid "Capture"
+msgstr "Гирифтани расм"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_FocusLogging)
+#. i18n: ectx: property (title), widget (QGroupBox, focusGroup)
+#. i18n: ectx: property (text), widget (QCheckBox, focusStepCheck)
+#: ekos/analyze/analyze.cpp:1428 ekos/auxiliary/opslogs.ui:166
+#: ekos/manager.cpp:2302 ekos/manager.ui:1189 ekos/scheduler/scheduler.ui:279
+#: fitsviewer/fitsviewer.cpp:360
+#, kde-format
+msgid "Focus"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, alignStepCheck)
+#: ekos/analyze/analyze.cpp:1429 ekos/manager.cpp:2266
+#: ekos/scheduler/scheduler.ui:232 fitsviewer/fitsviewer.cpp:368
+#, fuzzy, kde-format
+#| msgid "Focused on: "
+msgid "Align"
+msgstr "Пайвандӣ ба: "
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_GuideLogging)
+#. i18n: ectx: property (text), widget (QPushButton, guideB)
+#. i18n: ectx: property (title), widget (QGroupBox, guideGroup)
+#. i18n: ectx: property (text), widget (QCheckBox, guideStepCheck)
+#: ekos/analyze/analyze.cpp:1430 ekos/auxiliary/opslogs.ui:202
+#: ekos/guide/guide.cpp:151 ekos/guide/guide.ui:205 ekos/manager.cpp:2444
+#: ekos/manager.ui:1386 ekos/scheduler/scheduler.ui:254
+#: fitsviewer/fitsviewer.cpp:364
+#, fuzzy, kde-format
+#| msgid "Guides"
+msgid "Guide"
+msgstr "Равонакунанда"
+
+#: ekos/analyze/analyze.cpp:1431
+#, fuzzy, kde-format
+msgid "Flip"
+msgstr "Феирфилд"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_INDIMountLogging)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_MountLogging)
+#: ekos/analyze/analyze.cpp:1432 ekos/auxiliary/opslogs.ui:153
+#: ekos/auxiliary/opslogs.ui:363 ekos/manager.cpp:2378
+#, fuzzy, kde-format
+#| msgid "Count:"
+msgid "Mount"
+msgstr "Ҳисоб кардан:"
 
 #: ekos/analyze/analyze.cpp:1509
 #, kde-format
@@ -10143,28 +10224,10 @@ msgstr "Дастгоҳи INDI %1 дигар васл нашудааст."
 msgid "INDI"
 msgstr "INDI"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_INDIMountLogging)
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_MountLogging)
-#: ekos/auxiliary/opslogs.ui:153 ekos/auxiliary/opslogs.ui:363
-#: ekos/manager.cpp:2378
-#, fuzzy, kde-format
-#| msgid "Count:"
-msgid "Mount"
-msgstr "Ҳисоб кардан:"
-
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_FocusLogging)
 #: ekos/auxiliary/opslogs.ui:163
 #, kde-format
 msgid "Log Ekos Focus module activity"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_FocusLogging)
-#. i18n: ectx: property (title), widget (QGroupBox, focusGroup)
-#. i18n: ectx: property (text), widget (QCheckBox, focusStepCheck)
-#: ekos/auxiliary/opslogs.ui:166 ekos/manager.cpp:2302 ekos/manager.ui:1189
-#: ekos/scheduler/scheduler.ui:279 fitsviewer/fitsviewer.cpp:360
-#, kde-format
-msgid "Focus"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_INDIRotatorLogging)
@@ -10192,18 +10255,6 @@ msgstr ""
 #, kde-format
 msgid "Log Ekos Guide module activity"
 msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_GuideLogging)
-#. i18n: ectx: property (text), widget (QPushButton, guideB)
-#. i18n: ectx: property (title), widget (QGroupBox, guideGroup)
-#. i18n: ectx: property (text), widget (QCheckBox, guideStepCheck)
-#: ekos/auxiliary/opslogs.ui:202 ekos/guide/guide.cpp:151
-#: ekos/guide/guide.ui:205 ekos/manager.cpp:2444 ekos/manager.ui:1386
-#: ekos/scheduler/scheduler.ui:254 fitsviewer/fitsviewer.cpp:364
-#, fuzzy, kde-format
-#| msgid "Guides"
-msgid "Guide"
-msgstr "Равонакунанда"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_INDICCDLogging)
 #: ekos/auxiliary/opslogs.ui:212
@@ -10321,17 +10372,6 @@ msgstr "Пайвастшавӣ"
 #, kde-format
 msgid "Log Ekos Capture module activity"
 msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_CaptureLogging)
-#. i18n: ectx: property (text), widget (QPushButton, captureB)
-#. i18n: ectx: property (title), widget (QGroupBox, captureGroup)
-#. i18n: ectx: attribute (title), widget (QWidget, captureTab)
-#: ekos/auxiliary/opslogs.ui:327 ekos/guide/guide.ui:73 ekos/manager.ui:639
-#: ekos/opsekos.ui:479
-#, fuzzy, kde-format
-#| msgid "Capture Image"
-msgid "Capture"
-msgstr "Гирифтани расм"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, label_6)
 #: ekos/auxiliary/opslogs.ui:337
@@ -16363,14 +16403,6 @@ msgstr "%1 дастрас."
 msgctxt "Charge-Coupled Device"
 msgid "CCD"
 msgstr "CCDB"
-
-#. i18n: ectx: property (text), widget (QCheckBox, alignStepCheck)
-#: ekos/manager.cpp:2266 ekos/scheduler/scheduler.ui:232
-#: fitsviewer/fitsviewer.cpp:368
-#, fuzzy, kde-format
-#| msgid "Focused on: "
-msgid "Align"
-msgstr "Пайвандӣ ба: "
 
 #: ekos/manager.cpp:2573
 #, kde-format
