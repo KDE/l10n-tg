@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: baloo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-09-01 02:09+0200\n"
+"POT-Creation-Date: 2020-09-06 02:08+0200\n"
 "PO-Revision-Date: 2019-10-01 11:08+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -416,7 +416,7 @@ msgstr "Барои истодани назорат тугмаҳои ctrl+c-ро 
 msgid "File indexer is running\n"
 msgstr "Намоябандикунандаи файлҳо дар ҳоли иҷро аст"
 
-#: monitorcommand.cpp:94
+#: monitorcommand.cpp:94 statuscommand.cpp:308
 #, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
@@ -433,68 +433,75 @@ msgstr ": Хуб"
 msgid "CLI interface for monitoring Baloo"
 msgstr ""
 
-#: statuscommand.cpp:32
+#: statuscommand.cpp:33
 #, kde-format
 msgid "Print the status of the Indexer"
 msgstr "Чоп кардани вазъияти намоябандикунанда"
 
-#: statuscommand.cpp:116
+#: statuscommand.cpp:117
 #, kde-format
 msgid "File ignored"
 msgstr "Файл рад карда шуд"
 
-#: statuscommand.cpp:117
+#: statuscommand.cpp:118
 #, kde-format
 msgid "Basic Indexing: Disabled"
 msgstr "Намоябандии аслӣ: Ғайрифаъол аст"
 
-#: statuscommand.cpp:118 statuscommand.cpp:119
+#: statuscommand.cpp:119 statuscommand.cpp:120
 #, kde-format
 msgid "Basic Indexing: Scheduled"
 msgstr "Намоябандии аслӣ: Ба нақша гирифта шуд"
 
-#: statuscommand.cpp:120 statuscommand.cpp:121 statuscommand.cpp:122
-#: statuscommand.cpp:123
+#: statuscommand.cpp:121 statuscommand.cpp:122 statuscommand.cpp:123
+#: statuscommand.cpp:124
 #, kde-format
 msgid "Basic Indexing: Done"
 msgstr "Намоябандии аслӣ: Иҷро шуд"
 
-#: statuscommand.cpp:129 statuscommand.cpp:132
+#: statuscommand.cpp:130 statuscommand.cpp:133
 #, kde-format
 msgid "Content Indexing: Scheduled"
 msgstr "Намоябандии муҳтаво: Ба нақша гирифта шуд"
 
-#: statuscommand.cpp:133
+#: statuscommand.cpp:134
 #, kde-format
 msgid "Content Indexing: Failed"
 msgstr "Намоябандии муҳтаво: Қатъ шуд"
 
-#: statuscommand.cpp:134
+#: statuscommand.cpp:135
 #, kde-format
 msgid "Content Indexing: Done"
 msgstr "Намоябандии муҳтаво: Иҷро шуд"
 
-#: statuscommand.cpp:141 statuscommand.cpp:181 statuscommand.cpp:230
+#: statuscommand.cpp:142 statuscommand.cpp:182 statuscommand.cpp:231
 #, kde-format
 msgid "Ignoring non-existent file %1"
 msgstr "Рад кардани файли мавҷуднабудаи %1"
 
-#: statuscommand.cpp:146 statuscommand.cpp:186 statuscommand.cpp:235
+#: statuscommand.cpp:147 statuscommand.cpp:187 statuscommand.cpp:236
 #, kde-format
 msgid "Ignoring symlink/special file %1"
 msgstr "Рад кардани файли махсус/пайванди рамзии %1"
 
-#: statuscommand.cpp:150
+#: statuscommand.cpp:151
 #, kde-format
 msgid "File: %1"
 msgstr "Файл: %1"
 
-#: statuscommand.cpp:262
-#, kde-format
-msgid "Output format \"%1\" is invalid"
+#: statuscommand.cpp:263
+#, fuzzy, kde-format
+#| msgid "Output format \"%1\" is invalid"
+msgid "Output format \"%1\" is invalid, use one of:\n"
 msgstr "Қолиби барориши \"%1\" нодуруст аст"
 
-#: statuscommand.cpp:268
+#: statuscommand.cpp:265
+#, kde-format
+msgctxt "bullet list item with output format"
+msgid "- %1\n"
+msgstr ""
+
+#: statuscommand.cpp:272
 #, fuzzy, kde-format
 #| msgid "Baloo is currently disabled. To enable, please run %1"
 msgid "Baloo is currently disabled. To enable, please run %1\n"
@@ -502,50 +509,50 @@ msgstr ""
 "Айни ҳол Baloo ғайрифаъол аст. Барои фаъол кардани он, лутфан %1-ро иҷро "
 "намоед"
 
-#: statuscommand.cpp:274
+#: statuscommand.cpp:278
 #, fuzzy, kde-format
 #| msgid "Baloo Index could not be opened"
 msgid "Baloo Index could not be opened\n"
 msgstr "Намоябандии Baloo кушода намешавад"
 
-#: statuscommand.cpp:295
+#: statuscommand.cpp:305
 #, fuzzy, kde-format
 #| msgid "Baloo File Indexer is running"
 msgid "Baloo File Indexer is running\n"
 msgstr "Намоябандндаи файлҳои Baloo дар ҳоли иҷро аст"
 
-#: statuscommand.cpp:296
+#: statuscommand.cpp:307 statuscommand.cpp:310
 #, kde-format
 msgid "Indexer state: %1"
 msgstr "Вазъияти намоябандикунанда: %1"
 
-#: statuscommand.cpp:299
+#: statuscommand.cpp:314
 #, fuzzy, kde-format
 #| msgid "Baloo File Indexer is not running"
 msgid "Baloo File Indexer is not running\n"
 msgstr "Намоябандндаи файлҳои Baloo дар ҳоли иҷро нест"
 
-#: statuscommand.cpp:306
+#: statuscommand.cpp:321
 #, kde-format
 msgid "Total files indexed: %1"
 msgstr "Ҳамагӣ файлҳои намоябандишуда: %1"
 
-#: statuscommand.cpp:307
+#: statuscommand.cpp:322
 #, kde-format
 msgid "Files waiting for content indexing: %1"
 msgstr "Файлҳо дар интизори намоябандии муҳтаво: %1"
 
-#: statuscommand.cpp:308
+#: statuscommand.cpp:323
 #, kde-format
 msgid "Files failed to index: %1"
 msgstr "Намоябандии файлҳо қатъ шуд: %1"
 
-#: statuscommand.cpp:316
+#: statuscommand.cpp:331
 #, kde-format
 msgid "Current size of index is %1"
 msgstr "Андозаи ҷории намоябандӣ %1"
 
-#: statuscommand.cpp:318
+#: statuscommand.cpp:333
 #, fuzzy, kde-format
 #| msgid "Index does not exist yet"
 msgid "Index does not exist yet\n"
