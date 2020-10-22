@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmfonts\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-09-15 02:29+0200\n"
+"POT-Creation-Date: 2020-10-22 02:34+0200\n"
 "PO-Revision-Date: 2019-10-09 17:44+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -157,11 +157,6 @@ msgctxt "@action:button"
 msgid "Show Contextual Help"
 msgstr ""
 
-#: package/contents/ui/FontWidget.qml:65
-#, kde-format
-msgid "Select %1 Font..."
-msgstr "%1 ҳуруфро интихоб намоед..."
-
 #: package/contents/ui/main.qml:34
 #, kde-format
 msgid "This module lets you configure the system fonts."
@@ -203,42 +198,77 @@ msgstr "&Танзими ҳамаи ҳуруфот..."
 msgid "General:"
 msgstr "Умумӣ"
 
-#: package/contents/ui/main.qml:118
+#: package/contents/ui/main.qml:108
+#, fuzzy, kde-format
+#| msgid "General:"
+msgid "Select general font"
+msgstr "Умумӣ"
+
+#: package/contents/ui/main.qml:119
 #, kde-format
 msgid "Fixed width:"
 msgstr ""
 
-#: package/contents/ui/main.qml:129
+#: package/contents/ui/main.qml:120
+#, kde-format
+msgid "Select fixed width font"
+msgstr ""
+
+#: package/contents/ui/main.qml:131
 #, kde-format
 msgid "Small:"
 msgstr "Хурд:"
 
-#: package/contents/ui/main.qml:140
+#: package/contents/ui/main.qml:132
+#, fuzzy, kde-format
+#| msgid "Small:"
+msgid "Select small font"
+msgstr "Хурд:"
+
+#: package/contents/ui/main.qml:143
 #, kde-format
 msgid "Toolbar:"
 msgstr "Навори абзорҳо:"
 
-#: package/contents/ui/main.qml:151
+#: package/contents/ui/main.qml:144
+#, fuzzy, kde-format
+#| msgid "Toolbar:"
+msgid "Select toolbar font"
+msgstr "Навори абзорҳо:"
+
+#: package/contents/ui/main.qml:155
 #, kde-format
 msgid "Menu:"
 msgstr "Феҳрист:"
 
-#: package/contents/ui/main.qml:161
+#: package/contents/ui/main.qml:156
+#, fuzzy, kde-format
+#| msgid "Select Font"
+msgid "Select menu font"
+msgstr "Ҳуруфро интихоб намоед"
+
+#: package/contents/ui/main.qml:166
 #, kde-format
 msgid "Window title:"
 msgstr "Сарлавҳаи равзана:"
 
-#: package/contents/ui/main.qml:176
+#: package/contents/ui/main.qml:167
+#, fuzzy, kde-format
+#| msgid "Window title:"
+msgid "Select window title font"
+msgstr "Сарлавҳаи равзана:"
+
+#: package/contents/ui/main.qml:182
 #, kde-format
 msgid "Anti-Aliasing:"
 msgstr ""
 
-#: package/contents/ui/main.qml:181
+#: package/contents/ui/main.qml:187
 #, kde-format
 msgid "Enable"
 msgstr "Фаъол кардан"
 
-#: package/contents/ui/main.qml:185
+#: package/contents/ui/main.qml:191
 #, kde-kuit-format
 msgctxt "@info:tooltip Anti-Aliasing"
 msgid ""
@@ -249,28 +279,28 @@ msgid ""
 "problems."
 msgstr ""
 
-#: package/contents/ui/main.qml:199
+#: package/contents/ui/main.qml:205
 #, kde-format
 msgid "Exclude range from anti-aliasing"
 msgstr ""
 
-#: package/contents/ui/main.qml:218 package/contents/ui/main.qml:241
+#: package/contents/ui/main.qml:224 package/contents/ui/main.qml:247
 #, kde-format
 msgid "%1 pt"
 msgstr ""
 
-#: package/contents/ui/main.qml:233
+#: package/contents/ui/main.qml:239
 #, kde-format
 msgid "to"
 msgstr ""
 
-#: package/contents/ui/main.qml:260
+#: package/contents/ui/main.qml:266
 #, kde-format
 msgctxt "Used as a noun, and precedes a combobox full of options"
 msgid "Sub-pixel rendering:"
 msgstr ""
 
-#: package/contents/ui/main.qml:302
+#: package/contents/ui/main.qml:308
 #, kde-kuit-format
 msgctxt "@info:tooltip Sub-pixel rendering"
 msgid ""
@@ -284,13 +314,13 @@ msgid ""
 "this feature.</para>This does not work with CRT monitors."
 msgstr ""
 
-#: package/contents/ui/main.qml:307
+#: package/contents/ui/main.qml:313
 #, kde-format
 msgctxt "Used as a noun, and precedes a combobox full of options"
 msgid "Hinting:"
 msgstr ""
 
-#: package/contents/ui/main.qml:348
+#: package/contents/ui/main.qml:354
 #, kde-kuit-format
 msgctxt "@info:tooltip Hinting"
 msgid ""
@@ -300,12 +330,12 @@ msgid ""
 "their shape at big sizes."
 msgstr ""
 
-#: package/contents/ui/main.qml:358
+#: package/contents/ui/main.qml:364
 #, kde-format
 msgid "Force font DPI:"
 msgstr ""
 
-#: package/contents/ui/main.qml:400
+#: package/contents/ui/main.qml:406
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "<p>This option forces a specific DPI value for fonts. It may be useful "
@@ -339,10 +369,13 @@ msgstr ""
 "ServerLocalArgs= в файле $KDEDIR/share/config/kdm/kdmrc). Если это не "
 "помогло, измените настройки хинтинга.</p>"
 
-#: package/contents/ui/main.qml:406
+#: package/contents/ui/main.qml:412
 #, kde-format
 msgid "Select Font"
 msgstr "Ҳуруфро интихоб намоед"
+
+#~ msgid "Select %1 Font..."
+#~ msgstr "%1 ҳуруфро интихоб намоед..."
 
 #~ msgid "Font Settings Changed"
 #~ msgstr "Параметры шрифтов изменены"
