@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdiff3\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-01-05 02:40+0100\n"
+"POT-Creation-Date: 2021-01-09 02:59+0100\n"
 "PO-Revision-Date: 2019-09-29 12:43+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -89,8 +89,8 @@ msgstr ""
 #: mergeresultwindow.cpp:1031 mergeresultwindow.cpp:1033
 #: mergeresultwindow.cpp:1035 mergeresultwindow.cpp:1774
 #: mergeresultwindow.cpp:3134 mergeresultwindow.cpp:3141 optiondialog.cpp:979
-#: optiondialog.cpp:992 pdiff.cpp:732 pdiff.cpp:734 pdiff.cpp:736 pdiff.cpp:738
-#: pdiff.cpp:760 smalldialogs.cpp:81 smalldialogs.cpp:83 smalldialogs.cpp:84
+#: optiondialog.cpp:992 pdiff.cpp:736 pdiff.cpp:738 pdiff.cpp:740 pdiff.cpp:742
+#: pdiff.cpp:764 smalldialogs.cpp:81 smalldialogs.cpp:83 smalldialogs.cpp:84
 #: smalldialogs.cpp:87
 #, kde-format
 msgid "A"
@@ -103,8 +103,8 @@ msgstr "A"
 #: mergeresultwindow.cpp:1031 mergeresultwindow.cpp:1037
 #: mergeresultwindow.cpp:1039 mergeresultwindow.cpp:1776
 #: mergeresultwindow.cpp:3136 mergeresultwindow.cpp:3143 optiondialog.cpp:980
-#: optiondialog.cpp:993 pdiff.cpp:732 pdiff.cpp:734 pdiff.cpp:740 pdiff.cpp:742
-#: pdiff.cpp:762 smalldialogs.cpp:81 smalldialogs.cpp:82 smalldialogs.cpp:85
+#: optiondialog.cpp:993 pdiff.cpp:736 pdiff.cpp:738 pdiff.cpp:744 pdiff.cpp:746
+#: pdiff.cpp:766 smalldialogs.cpp:81 smalldialogs.cpp:82 smalldialogs.cpp:85
 #: smalldialogs.cpp:88
 #, kde-format
 msgid "B"
@@ -117,7 +117,7 @@ msgstr "B"
 #: mergeresultwindow.cpp:1035 mergeresultwindow.cpp:1037
 #: mergeresultwindow.cpp:1039 mergeresultwindow.cpp:1778
 #: mergeresultwindow.cpp:3138 mergeresultwindow.cpp:3145 optiondialog.cpp:994
-#: pdiff.cpp:736 pdiff.cpp:738 pdiff.cpp:740 pdiff.cpp:742 pdiff.cpp:764
+#: pdiff.cpp:740 pdiff.cpp:742 pdiff.cpp:744 pdiff.cpp:746 pdiff.cpp:768
 #: smalldialogs.cpp:82 smalldialogs.cpp:83 smalldialogs.cpp:86
 #: smalldialogs.cpp:89
 #, kde-format
@@ -326,7 +326,7 @@ msgstr ""
 "нав кунед?"
 
 #: directorymergewindow.cpp:688 kdiff3.cpp:711 kdiff3.cpp:721 kdiff3.cpp:733
-#: mergeresultwindow.cpp:461 pdiff.cpp:860 pdiff.cpp:1655 pdiff.cpp:1665
+#: mergeresultwindow.cpp:461 pdiff.cpp:864 pdiff.cpp:1659 pdiff.cpp:1669
 #, kde-format
 msgid "Warning"
 msgstr ""
@@ -336,7 +336,7 @@ msgstr ""
 msgid "Rescan"
 msgstr "Дигар кардан"
 
-#: directorymergewindow.cpp:690 pdiff.cpp:862
+#: directorymergewindow.cpp:690 pdiff.cpp:866
 #, kde-format
 msgid "Continue Merging"
 msgstr "Давом додан"
@@ -427,8 +427,8 @@ msgid "Check the permissions of the subfolders."
 msgstr "Ҳуқуқҳои ин каталогҳоро тафтиш кунед."
 
 #: directorymergewindow.cpp:984 kdiff3.cpp:681 kdiff3.cpp:766 kdiff3.cpp:790
-#: kdiff3.cpp:1062 kdiff3.cpp:1083 pdiff.cpp:943 pdiff.cpp:1006 pdiff.cpp:1041
-#: pdiff.cpp:1050 pdiff.cpp:1096 pdiff.cpp:1104
+#: kdiff3.cpp:1062 kdiff3.cpp:1083 pdiff.cpp:947 pdiff.cpp:1010 pdiff.cpp:1045
+#: pdiff.cpp:1054 pdiff.cpp:1100 pdiff.cpp:1108
 #, kde-format
 msgid "Ready."
 msgstr "Тайёр аст."
@@ -986,35 +986,40 @@ msgstr "Нест кардани А ва В"
 msgid "Merge to A && B"
 msgstr "Пайваст кардан ба A & В"
 
-#: fileaccess.cpp:278
+#: fileaccess.cpp:283
+#, kde-format
+msgid "Unable to determine full url. No file path/name specified."
+msgstr ""
+
+#: fileaccess.cpp:300
 #, kde-format
 msgid "Unable to determine full url. No parent specified."
 msgstr ""
 
-#: fileaccess.cpp:529 SourceData.cpp:521
+#: fileaccess.cpp:548 SourceData.cpp:521
 #, fuzzy, kde-format
 #| msgid "Reading file: %1"
 msgid "Failed to read file: %1"
 msgstr "Хониши файл: %1"
 
-#: fileaccess.cpp:674
+#: fileaccess.cpp:693
 #, kde-format
 msgid "Creating temp copy of %1 failed."
 msgstr "Наметавонам нусхаи яквақтаро эҷод кунам %1."
 
-#: fileaccess.cpp:682 fileaccess.cpp:687
+#: fileaccess.cpp:701 fileaccess.cpp:706
 #, fuzzy, kde-format
 #| msgid "Opening %1 failed."
 msgid "Opening %1 failed. %2"
 msgstr "Кушодан %1 нашуд."
 
-#: fileaccess.cpp:706 fileaccess.cpp:714
+#: fileaccess.cpp:725 fileaccess.cpp:733
 #, fuzzy, kde-format
 #| msgid "Error reading from %1"
 msgid "Error reading from %1. %2"
 msgstr "Хатогӣ дар вақти хониш аз %1"
 
-#: fileaccess.cpp:843
+#: fileaccess.cpp:862
 #, fuzzy, kde-format
 #| msgid ""
 #| "While trying to make a backup, deleting an older backup failed. \n"
@@ -1026,7 +1031,7 @@ msgstr ""
 "Наметавонам нусхаи кӯҳнаи захираро нест кунам. \n"
 "Номи файл: "
 
-#: fileaccess.cpp:850
+#: fileaccess.cpp:869
 #, fuzzy, kde-format
 #| msgid ""
 #| "While trying to make a backup, renaming failed. \n"
@@ -1043,60 +1048,60 @@ msgstr ""
 msgid "Getting file status: %1"
 msgstr "Гирифтани ҳолати файл: %1"
 
-#: FileAccessJobHandler.cpp:91
+#: FileAccessJobHandler.cpp:92
 #, kde-format
 msgid "Reading file: %1"
 msgstr "Хониши файл: %1"
 
-#: FileAccessJobHandler.cpp:131
+#: FileAccessJobHandler.cpp:132
 #, kde-format
 msgid "Writing file: %1"
 msgstr "Навишти файл: %1"
 
-#: FileAccessJobHandler.cpp:165
+#: FileAccessJobHandler.cpp:166
 #, kde-format
 msgid "Out of memory"
 msgstr "Аз хотира"
 
-#: FileAccessJobHandler.cpp:202
+#: FileAccessJobHandler.cpp:203
 #, fuzzy, kde-format
 #| msgid "Making directory: %1"
 msgid "Making folder: %1"
 msgstr "Эҷоди каталогҳо : %1"
 
-#: FileAccessJobHandler.cpp:224
+#: FileAccessJobHandler.cpp:225
 #, fuzzy, kde-format
 #| msgid "Removing file: %1"
 msgid "Removing folder: %1"
 msgstr "Дур кардани файл: %1"
 
-#: FileAccessJobHandler.cpp:240
+#: FileAccessJobHandler.cpp:241
 #, kde-format
 msgid "Removing file: %1"
 msgstr "Дур кардани файл: %1"
 
-#: FileAccessJobHandler.cpp:257
+#: FileAccessJobHandler.cpp:258
 #, kde-format
 msgid "Creating symbolic link: %1 -> %2"
 msgstr "Сохтани пайвасти рамзӣ: %1-> %2"
 
-#: FileAccessJobHandler.cpp:282
+#: FileAccessJobHandler.cpp:283
 #, kde-format
 msgid "Renaming file: %1 -> %2"
 msgstr "Аз нав номгузории файл: %1-> %2"
 
-#: FileAccessJobHandler.cpp:325
+#: FileAccessJobHandler.cpp:326
 #, kde-format
 msgid "Copying file: %1 -> %2"
 msgstr "Нусха бардошатани: %1-> %2"
 
-#: FileAccessJobHandler.cpp:347
+#: FileAccessJobHandler.cpp:348
 #, fuzzy, kde-format
 #| msgid "Reading file: %1"
 msgid "Reading folder: %1"
 msgstr "Хониши файл: %1"
 
-#: FileAccessJobHandler.cpp:405
+#: FileAccessJobHandler.cpp:406
 #, kde-format
 msgid "Listing directory: %1"
 msgstr "Нигоҳ кардани директория: %1"
@@ -1127,12 +1132,12 @@ msgstr "Интихоб --худ аҳамият надиҳи барои муқо�
 msgid "Saving failed."
 msgstr "Нигоҳ куни нашуд."
 
-#: kdiff3.cpp:512 pdiff.cpp:924
+#: kdiff3.cpp:512 pdiff.cpp:928
 #, kde-format
 msgid "Opening of these files failed:"
 msgstr "Кушодани ин файлҳо нашуд:"
 
-#: kdiff3.cpp:521 pdiff.cpp:933
+#: kdiff3.cpp:521 pdiff.cpp:937
 #, fuzzy, kde-format
 msgid "File open error"
 msgstr "Хатогӣ дар кушодани файл"
@@ -1531,7 +1536,7 @@ msgstr "аппп"
 msgid "Toggle Between Folder && Text View"
 msgstr "Дигаркунӣ байни феҳристҳо && намоиши матн"
 
-#: kdiff3.cpp:710 pdiff.cpp:1654
+#: kdiff3.cpp:710 pdiff.cpp:1658
 #, fuzzy, kde-format
 #| msgid "The merge result hasn't been saved."
 msgid "The merge result has not been saved."
@@ -1547,12 +1552,12 @@ msgstr "Нигоҳ доштан && баромадан"
 msgid "Quit Without Saving"
 msgstr "Бе нигоҳдорӣ баромадан"
 
-#: kdiff3.cpp:721 pdiff.cpp:1665
+#: kdiff3.cpp:721 pdiff.cpp:1669
 #, kde-format
 msgid "Saving the merge result failed."
 msgstr "Натиҷаи якҷоя кардан,нигоҳ дошта нашуд."
 
-#: kdiff3.cpp:732 pdiff.cpp:859
+#: kdiff3.cpp:732 pdiff.cpp:863
 #, fuzzy, kde-format
 #| msgid ""
 #| "You are currently doing a directory merge. Are you sure, you want to "
@@ -1946,7 +1951,7 @@ msgid ""
 "If you continue your changes will be lost."
 msgstr ""
 
-#: mergeresultwindow.cpp:1023 pdiff.cpp:726
+#: mergeresultwindow.cpp:1023 pdiff.cpp:730
 #, kde-format
 msgid "All input files are binary equal."
 msgstr ""
@@ -1957,7 +1962,7 @@ msgid "All input files contain the same text."
 msgstr ""
 
 #: mergeresultwindow.cpp:1029 mergeresultwindow.cpp:1033
-#: mergeresultwindow.cpp:1037 pdiff.cpp:732 pdiff.cpp:736 pdiff.cpp:740
+#: mergeresultwindow.cpp:1037 pdiff.cpp:736 pdiff.cpp:740 pdiff.cpp:744
 #, kde-format
 msgid "Files %1 and %2 are binary equal.\n"
 msgstr ""
@@ -3040,17 +3045,17 @@ msgstr ""
 msgid "This resets all options. Not only those of the current topic."
 msgstr ""
 
-#: pdiff.cpp:77
+#: pdiff.cpp:81
 #, kde-format
 msgid "PreprocessorCmd: "
 msgstr ""
 
-#: pdiff.cpp:79
+#: pdiff.cpp:83
 #, kde-format
 msgid "The following option(s) you selected might change data:\n"
 msgstr ""
 
-#: pdiff.cpp:80
+#: pdiff.cpp:84
 #, kde-format
 msgid ""
 "\n"
@@ -3058,95 +3063,95 @@ msgid ""
 "Do you want to disable these settings or continue with these settings active?"
 msgstr ""
 
-#: pdiff.cpp:82
+#: pdiff.cpp:86
 #, kde-format
 msgid "Option Unsafe for Merging"
 msgstr ""
 
-#: pdiff.cpp:83
+#: pdiff.cpp:87
 #, kde-format
 msgid "Use These Options During Merge"
 msgstr ""
 
-#: pdiff.cpp:84
+#: pdiff.cpp:88
 #, kde-format
 msgid "Disable Unsafe Options"
 msgstr ""
 
-#: pdiff.cpp:112
+#: pdiff.cpp:116
 #, kde-format
 msgid "Loading A"
 msgstr ""
 
-#: pdiff.cpp:113
+#: pdiff.cpp:117
 #, fuzzy, kde-format
 #| msgid "Reading file: %1"
 msgid "Loading A: %1"
 msgstr "Хониши файл: %1"
 
-#: pdiff.cpp:122
+#: pdiff.cpp:126
 #, kde-format
 msgid "Loading B"
 msgstr ""
 
-#: pdiff.cpp:123
+#: pdiff.cpp:127
 #, fuzzy, kde-format
 #| msgid "Reading file: %1"
 msgid "Loading B: %1"
 msgstr "Хониши файл: %1"
 
-#: pdiff.cpp:153 pdiff.cpp:154 pdiff.cpp:193 pdiff.cpp:194
+#: pdiff.cpp:157 pdiff.cpp:158 pdiff.cpp:197 pdiff.cpp:198
 #, kde-format
 msgid "Diff: A <-> B"
 msgstr ""
 
-#: pdiff.cpp:160 pdiff.cpp:161 pdiff.cpp:239 pdiff.cpp:240 pdiff.cpp:258
+#: pdiff.cpp:164 pdiff.cpp:165 pdiff.cpp:243 pdiff.cpp:244 pdiff.cpp:262
 #, kde-format
 msgid "Linediff: A <-> B"
 msgstr ""
 
-#: pdiff.cpp:178
+#: pdiff.cpp:182
 #, kde-format
 msgid "Loading C"
 msgstr ""
 
-#: pdiff.cpp:179
+#: pdiff.cpp:183
 #, fuzzy, kde-format
 #| msgid "Reading file: %1"
 msgid "Loading C: %1"
 msgstr "Хониши файл: %1"
 
-#: pdiff.cpp:205 pdiff.cpp:206
+#: pdiff.cpp:209 pdiff.cpp:210
 #, kde-format
 msgid "Diff: A <-> C"
 msgstr ""
 
-#: pdiff.cpp:219 pdiff.cpp:220
+#: pdiff.cpp:223 pdiff.cpp:224
 #, kde-format
 msgid "Diff: B <-> C"
 msgstr ""
 
-#: pdiff.cpp:245 pdiff.cpp:246 pdiff.cpp:263
+#: pdiff.cpp:249 pdiff.cpp:250 pdiff.cpp:267
 #, kde-format
 msgid "Linediff: B <-> C"
 msgstr ""
 
-#: pdiff.cpp:251 pdiff.cpp:252 pdiff.cpp:268
+#: pdiff.cpp:255 pdiff.cpp:256 pdiff.cpp:272
 #, kde-format
 msgid "Linediff: A <-> C"
 msgstr ""
 
-#: pdiff.cpp:728
+#: pdiff.cpp:732
 #, kde-format
 msgid "All input files contain the same text, but are not binary equal."
 msgstr ""
 
-#: pdiff.cpp:734 pdiff.cpp:738 pdiff.cpp:742
+#: pdiff.cpp:738 pdiff.cpp:742 pdiff.cpp:746
 #, kde-format
 msgid "Files %1 and %2 have equal text, but are not binary equal. \n"
 msgstr ""
 
-#: pdiff.cpp:752
+#: pdiff.cpp:756
 #, kde-format
 msgid ""
 "Some input files do not seem to be pure text files.\n"
@@ -3154,17 +3159,17 @@ msgid ""
 "Continue at your own risk."
 msgstr ""
 
-#: pdiff.cpp:762
+#: pdiff.cpp:766
 #, kde-format
 msgid ", B"
 msgstr ""
 
-#: pdiff.cpp:764
+#: pdiff.cpp:768
 #, kde-format
 msgid ", C"
 msgstr ""
 
-#: pdiff.cpp:766
+#: pdiff.cpp:770
 #, kde-format
 msgid ""
 "Some input characters could not be converted to valid unicode.\n"
@@ -3173,67 +3178,67 @@ msgid ""
 "Affected input files are in %1."
 msgstr ""
 
-#: pdiff.cpp:861
+#: pdiff.cpp:865
 #, kde-format
 msgid "Abort"
 msgstr ""
 
-#: pdiff.cpp:867 pdiff.cpp:957
+#: pdiff.cpp:871 pdiff.cpp:961
 #, fuzzy, kde-format
 msgid "Opening files..."
 msgstr "Кушодан %1 нашуд."
 
-#: pdiff.cpp:1039
+#: pdiff.cpp:1043
 #, kde-format
 msgid "Cutting selection..."
 msgstr ""
 
-#: pdiff.cpp:1046
+#: pdiff.cpp:1050
 #, fuzzy, kde-format
 msgid "Copying selection to clipboard..."
 msgstr "Нусха мебардорад қисми интихоб карда шударо ба клипборд"
 
-#: pdiff.cpp:1055
+#: pdiff.cpp:1059
 #, kde-format
 msgid "Inserting clipboard contents..."
 msgstr ""
 
-#: pdiff.cpp:1442
+#: pdiff.cpp:1446
 #, kde-format
 msgid "Word wrap (Cancel disables word wrap)"
 msgstr ""
 
-#: pdiff.cpp:1443
+#: pdiff.cpp:1447
 #, kde-format
 msgid "Calculating max width for horizontal scrollbar"
 msgstr ""
 
-#: pdiff.cpp:1656
+#: pdiff.cpp:1660
 #, fuzzy, kde-format
 msgid "Save && Continue"
 msgstr "Нигоҳ доштан && баромадан"
 
-#: pdiff.cpp:1657
+#: pdiff.cpp:1661
 #, fuzzy, kde-format
 msgid "Continue Without Saving"
 msgstr "Бе нигоҳдорӣ баромадан"
 
-#: pdiff.cpp:1849
+#: pdiff.cpp:1853
 #, fuzzy, kde-format
 msgid "Search complete."
 msgstr "Ҷустуҷу дар ҷамъбаст"
 
-#: pdiff.cpp:1849
+#: pdiff.cpp:1853
 #, fuzzy, kde-format
 msgid "Search Complete"
 msgstr "Якҷояшавӣ ба анҷом расид"
 
-#: pdiff.cpp:2030
+#: pdiff.cpp:2034
 #, kde-format
 msgid "Nothing is selected in either diff input window."
 msgstr ""
 
-#: pdiff.cpp:2030
+#: pdiff.cpp:2034
 #, fuzzy, kde-format
 msgid "Error while adding manual diff range"
 msgstr "Хатогӣ дар вақти эҷод кардани каталог."
@@ -3439,22 +3444,22 @@ msgstr ""
 "\n"
 "Хати-ҷамъ кунии- пешкоркардкунии фармон ҳоло аз кор мемонад."
 
-#: Utils.cpp:66
+#: Utils.cpp:68
 #, kde-format
 msgid "Expecting space after closing quote."
 msgstr ""
 
-#: Utils.cpp:69
+#: Utils.cpp:71
 #, kde-format
 msgid "Unmatched quote."
 msgstr ""
 
-#: Utils.cpp:78
+#: Utils.cpp:80
 #, kde-format
 msgid "Unexpected quote character within argument."
 msgstr ""
 
-#: Utils.cpp:85
+#: Utils.cpp:87
 #, kde-format
 msgid "No program specified."
 msgstr ""
