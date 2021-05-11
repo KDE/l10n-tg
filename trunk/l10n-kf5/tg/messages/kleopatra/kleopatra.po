@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-05-01 00:20+0000\n"
+"POT-Creation-Date: 2021-05-11 00:20+0000\n"
 "PO-Revision-Date: 2019-09-27 23:59+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -285,7 +285,7 @@ msgctxt "@title"
 msgid "Success"
 msgstr ""
 
-#: src/commands/certifycertificatecommand.cpp:194
+#: src/commands/certifycertificatecommand.cpp:164
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -293,30 +293,30 @@ msgid ""
 "certificate for yourself."
 msgstr ""
 
-#: src/commands/certifycertificatecommand.cpp:196
+#: src/commands/certifycertificatecommand.cpp:166
 #, kde-format
 msgid "Do you wish to create one now?"
 msgstr ""
 
-#: src/commands/certifycertificatecommand.cpp:197
+#: src/commands/certifycertificatecommand.cpp:167
 #, fuzzy, kde-format
 #| msgid "Certificate Deletion Failed"
 msgid "Certification Not Possible"
 msgstr "Наметавонам сертификатро ҳузф кунам"
 
-#: src/commands/certifycertificatecommand.cpp:262
+#: src/commands/certifycertificatecommand.cpp:232
 #, fuzzy, kde-format
 #| msgid "CRL cache cleared successfully."
 msgid "Certification successful."
 msgstr "Кеши CRL бомуваффақият пок карда шуд."
 
-#: src/commands/certifycertificatecommand.cpp:263
+#: src/commands/certifycertificatecommand.cpp:233
 #, fuzzy, kde-format
 #| msgid "Certificate Download Failed"
 msgid "Certification Succeeded"
 msgstr "Наметавонам сертификатро пурбор кунам."
 
-#: src/commands/certifycertificatecommand.cpp:265
+#: src/commands/certifycertificatecommand.cpp:235
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><p>An error occurred while trying to delete the certificates:</"
@@ -328,7 +328,7 @@ msgstr ""
 "<qt><p>Ҳангоми сайъи ҳузфи сертификат, хатогӣ рӯй дод:</p><p><b>%1</b></p></"
 "qt>"
 
-#: src/commands/certifycertificatecommand.cpp:269
+#: src/commands/certifycertificatecommand.cpp:239
 #, fuzzy, kde-format
 #| msgid "Certificate Manager Error"
 msgid "Certification Error"
@@ -2506,7 +2506,7 @@ msgstr "&Ҷузъиёт"
 #. i18n: ectx: attribute (title), widget (QWidget, tab_tags)
 #: src/conf/appearanceconfigwidget.ui:175
 #: src/dialogs/certificatedetailswidget.cpp:136
-#: src/dialogs/certifywidget.cpp:255
+#: src/dialogs/certifywidget.cpp:289
 #, kde-format
 msgid "Tags"
 msgstr ""
@@ -4686,7 +4686,7 @@ msgstr ""
 msgid "Verifying checksums (%2) in %1"
 msgstr ""
 
-#: src/dialogs/addemaildialog.cpp:45 src/dialogs/certifywidget.cpp:243
+#: src/dialogs/addemaildialog.cpp:45 src/dialogs/certifywidget.cpp:263
 #, kde-format
 msgid "Advanced"
 msgstr ""
@@ -4984,7 +4984,7 @@ msgstr "Ҳузфи сертификатҳо"
 
 #. i18n: ectx: property (text), widget (QPushButton, certifyBtn)
 #: src/dialogs/certificatedetailswidget.ui:67
-#: src/dialogs/certifycertificatedialog.cpp:54
+#: src/dialogs/certifycertificatedialog.cpp:53
 #, fuzzy, kde-format
 #| msgid "Certificate Usage"
 msgid "Certify"
@@ -5195,61 +5195,78 @@ msgctxt "@title:window"
 msgid "Certificate Selection"
 msgstr "Наметавонам сертификатро ҳузф кунам"
 
-#: src/dialogs/certifycertificatedialog.cpp:63
-#, kde-format
-msgid "You cannot certify using the same key."
-msgstr ""
-
-#: src/dialogs/certifycertificatedialog.cpp:64
-#, fuzzy, kde-format
-#| msgid "Description"
-msgid "Invalid Selection"
-msgstr "Тасвирот"
-
-#: src/dialogs/certifycertificatedialog.cpp:99
+#: src/dialogs/certifycertificatedialog.cpp:83
 #, fuzzy, kde-format
 #| msgid "Deleting CA Certificates"
 msgctxt "@title:window arg is name, email of certificate holder"
 msgid "Certify Certificate: %1"
 msgstr "Ҳузфи сертификатҳои CA"
 
-#: src/dialogs/certifywidget.cpp:223
+#: src/dialogs/certifywidget.cpp:249
 #, fuzzy, kde-format
 #| msgid "Certificate Usage"
 msgid "Certify with:"
 msgstr "Истифодаи сертификат"
 
-#: src/dialogs/certifywidget.cpp:248
+#: src/dialogs/certifywidget.cpp:268
 #, kde-format
-msgid "Certify for everyone to see. (exportable)"
+msgid "Certify for everyone to see (exportable)"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:249
+#: src/dialogs/certifywidget.cpp:274
 #, fuzzy, kde-format
 #| msgid "Certificate Manager Error"
-msgid "Publish on keyserver afterwards."
+msgid "Publish on keyserver afterwards"
 msgstr "Хатои мудири сертификатҳо"
 
-#: src/dialogs/certifywidget.cpp:262
+#: src/dialogs/certifywidget.cpp:290
 #, kde-format
 msgid "You can use this to add additional info to a certification."
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:264
+#: src/dialogs/certifywidget.cpp:292
 #, kde-format
 msgid ""
 "Tags created by anyone with full certification trust are shown in the "
 "keylist and can be searched."
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:348
+#: src/dialogs/certifywidget.cpp:296
+#, kde-format
+msgid "Tags:"
+msgstr ""
+
+#: src/dialogs/certifywidget.cpp:311
+#, kde-format
+msgid "Certify as trusted introducer"
+msgstr ""
+
+#: src/dialogs/certifywidget.cpp:312
+#, kde-format
+msgid "You can use this to certify a trusted introducer for a domain."
+msgstr ""
+
+#: src/dialogs/certifywidget.cpp:314
+#, kde-format
+msgid ""
+"All certificates with email addresses belonging to the domain that have been "
+"certified by the trusted introducer are treated as certified, i.e. a trusted "
+"introducer acts as a kind of intermediate CA for a domain."
+msgstr ""
+
+#: src/dialogs/certifywidget.cpp:328
+#, kde-format
+msgid "Domain"
+msgstr ""
+
+#: src/dialogs/certifywidget.cpp:420
 #: src/dialogs/revokecertificationwidget.cpp:227
 #, fuzzy, kde-format
 #| msgid "Fingerprint"
 msgid "Fingerprint: <b>%1</b>"
 msgstr "Нақш"
 
-#: src/dialogs/certifywidget.cpp:350
+#: src/dialogs/certifywidget.cpp:422
 #: src/dialogs/revokecertificationwidget.cpp:229
 #, kde-format
 msgid "<i>Only the fingerprint clearly identifies the key and its owner.</i>"
@@ -9550,6 +9567,11 @@ msgstr "Воридоти сертификатҳо..."
 #, kde-format
 msgid "To import from a public keyserver use \"Lookup on Server\" instead."
 msgstr ""
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgid "Invalid Selection"
+#~ msgstr "Тасвирот"
 
 #, fuzzy
 #~| msgid ""
