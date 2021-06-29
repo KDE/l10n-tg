@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-06-24 00:21+0000\n"
+"POT-Creation-Date: 2021-06-29 00:18+0000\n"
 "PO-Revision-Date: 2019-09-27 23:59+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -334,7 +334,7 @@ msgstr ""
 msgid "Certification Error"
 msgstr "Хатои мудири сертификатҳо"
 
-#: src/commands/changeexpirycommand.cpp:256
+#: src/commands/changeexpirycommand.cpp:207
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><p>An error occurred while trying to delete the certificates:</"
@@ -346,19 +346,19 @@ msgstr ""
 "<qt><p>Ҳангоми сайъи ҳузфи сертификат, хатогӣ рӯй дод:</p><p><b>%1</b></p></"
 "qt>"
 
-#: src/commands/changeexpirycommand.cpp:260
+#: src/commands/changeexpirycommand.cpp:211
 #, fuzzy, kde-format
 #| msgid "Certificate Manager Error"
 msgid "Expiry Date Change Error"
 msgstr "Хатои мудири сертификатҳо"
 
-#: src/commands/changeexpirycommand.cpp:265
+#: src/commands/changeexpirycommand.cpp:216
 #, fuzzy, kde-format
 #| msgid "CRL cache cleared successfully."
 msgid "Expiry date changed successfully."
 msgstr "Кеши CRL бомуваффақият пок карда шуд."
 
-#: src/commands/changeexpirycommand.cpp:266
+#: src/commands/changeexpirycommand.cpp:217
 #, kde-format
 msgid "Expiry Date Change Succeeded"
 msgstr ""
@@ -5422,69 +5422,66 @@ msgctxt "@title:window"
 msgid "Edit Group"
 msgstr ""
 
-#: src/dialogs/expirydialog.cpp:133
+#: src/dialogs/expirydialog.cpp:148
 #, fuzzy, kde-format
-#| msgid "Unchanged:"
-msgctxt "@title:window"
-msgid "Change Expiry"
-msgstr "Таъғир дода нашуда:"
+#| msgid "Do you really want to delete this certificate?"
+#| msgid_plural "Do you really want to delete these %1 certificates?"
+msgid "Please select when to expire this subkey:"
+msgstr "Оё ҳақиқатан мехоҳед ин %1 сертификатро ҳузф кунед?"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, Kleo::Dialogs::ExpiryDialog)
-#: src/dialogs/expirydialog.ui:14
-#, fuzzy, kde-format
-#| msgid "Fetching Certificate Chain"
-msgid "Change Certificate Date of Expiry"
-msgstr "Пурборкунии сертификатҳои паиҳам"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: src/dialogs/expirydialog.ui:32
+#: src/dialogs/expirydialog.cpp:149
 #, fuzzy, kde-format
 #| msgid "Do you really want to delete this certificate?"
 #| msgid_plural "Do you really want to delete these %1 certificates?"
 msgid "Please select when to expire this certificate:"
 msgstr "Оё ҳақиқатан мехоҳед ин %1 сертификатро ҳузф кунед?"
 
-#. i18n: ectx: property (text), widget (QRadioButton, neverRB)
-#: src/dialogs/expirydialog.ui:39
+#: src/dialogs/expirydialog.cpp:153
 #, kde-format
 msgid "Ne&ver"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QRadioButton, inRB)
-#: src/dialogs/expirydialog.ui:51
+#: src/dialogs/expirydialog.cpp:161
 #, kde-format
 msgid "In"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (QComboBox, inCB)
-#: src/dialogs/expirydialog.ui:75
+#: src/dialogs/expirydialog.cpp:174
 #, kde-format
 msgid "Days"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (QComboBox, inCB)
-#: src/dialogs/expirydialog.ui:80
+#: src/dialogs/expirydialog.cpp:175
 #, kde-format
 msgid "Weeks"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (QComboBox, inCB)
-#: src/dialogs/expirydialog.ui:85
+#: src/dialogs/expirydialog.cpp:176
 #, kde-format
 msgid "Months"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (QComboBox, inCB)
-#: src/dialogs/expirydialog.ui:90
+#: src/dialogs/expirydialog.cpp:177
 #, kde-format
 msgid "Years"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QRadioButton, onRB)
-#: src/dialogs/expirydialog.ui:113
+#: src/dialogs/expirydialog.cpp:188
 #, kde-format
 msgid "On this da&y:"
 msgstr ""
+
+#: src/dialogs/expirydialog.cpp:210
+#, kde-format
+msgid "Also update the expiry of the subkeys"
+msgstr ""
+
+#: src/dialogs/expirydialog.cpp:292
+#, fuzzy, kde-format
+#| msgid "Unchanged:"
+msgctxt "@title:window"
+msgid "Change Expiry"
+msgstr "Таъғир дода нашуда:"
 
 #: src/dialogs/exportdialog.cpp:70
 #, fuzzy, kde-format
@@ -5985,35 +5982,35 @@ msgstr ""
 msgid "Change Expiry Date..."
 msgstr ""
 
-#: src/dialogs/subkeyswidget.cpp:102
+#: src/dialogs/subkeyswidget.cpp:99
 #, fuzzy, kde-format
 #| msgid "Export Secret Key..."
 msgid "Export OpenSSH key"
 msgstr "Содироти калиди баста..."
 
-#: src/dialogs/subkeyswidget.cpp:114
+#: src/dialogs/subkeyswidget.cpp:111
 #, kde-format
 msgid "Restore printed backup"
 msgstr ""
 
-#: src/dialogs/subkeyswidget.cpp:128
+#: src/dialogs/subkeyswidget.cpp:125
 #, kde-format
 msgid "Transfer to smartcard"
 msgstr ""
 
-#: src/dialogs/subkeyswidget.cpp:193
+#: src/dialogs/subkeyswidget.cpp:190
 #, kde-format
 msgctxt "stored..."
 msgid "on SmartCard with serial no. %1"
 msgstr ""
 
-#: src/dialogs/subkeyswidget.cpp:195
+#: src/dialogs/subkeyswidget.cpp:192
 #, kde-format
 msgctxt "stored..."
 msgid "on this computer"
 msgstr ""
 
-#: src/dialogs/subkeyswidget.cpp:211
+#: src/dialogs/subkeyswidget.cpp:208
 #, fuzzy, kde-format
 #| msgid "New subkeys:"
 msgctxt "@title:window"
@@ -9619,6 +9616,11 @@ msgstr "Воридоти сертификатҳо..."
 #, kde-format
 msgid "To import from a public keyserver use \"Lookup on Server\" instead."
 msgstr ""
+
+#, fuzzy
+#~| msgid "Fetching Certificate Chain"
+#~ msgid "Change Certificate Date of Expiry"
+#~ msgstr "Пурборкунии сертификатҳои паиҳам"
 
 #, fuzzy
 #~| msgid "Fetching certificate from server..."
