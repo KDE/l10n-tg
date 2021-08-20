@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-17 00:18+0000\n"
+"POT-Creation-Date: 2021-08-20 00:21+0000\n"
 "PO-Revision-Date: 2019-09-27 23:59+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -4158,7 +4158,7 @@ msgid ""
 msgstr ""
 
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:280
-#: src/crypto/gui/signencryptfileswizard.cpp:295 src/view/padwidget.cpp:477
+#: src/crypto/gui/signencryptfileswizard.cpp:360 src/view/padwidget.cpp:477
 #, kde-format
 msgctxt ""
 "%1 is a placeholder for the name of a compliance mode. E.g. NATO RESTRICTED "
@@ -4167,7 +4167,7 @@ msgid "%1 communication possible."
 msgstr ""
 
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:282
-#: src/crypto/gui/signencryptfileswizard.cpp:297 src/view/padwidget.cpp:479
+#: src/crypto/gui/signencryptfileswizard.cpp:362 src/view/padwidget.cpp:479
 #, fuzzy, kde-format
 #| msgid "Certificate Deletion Failed"
 msgctxt ""
@@ -4223,37 +4223,73 @@ msgctxt "@title:window"
 msgid "Select Certificates for Message \"%1\""
 msgstr "Интихоби файли сертификат"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:68
+#: src/crypto/gui/signencryptfileswizard.cpp:124
 #, fuzzy, kde-format
 #| msgid "Deleting keys..."
 msgctxt "@title"
 msgid "Sign / Encrypt Files"
 msgstr "Ҳузфи калидҳо..."
 
-#: src/crypto/gui/signencryptfileswizard.cpp:78
+#: src/crypto/gui/signencryptfileswizard.cpp:128
+#, fuzzy, kde-format
+#| msgid "For &signing only"
+msgctxt "@option:check on SignEncryptPage"
+msgid "&Sign as:"
+msgstr "Танҳо барои &имзоот"
+
+#: src/crypto/gui/signencryptfileswizard.cpp:130
+#, fuzzy, kde-format
+#| msgid "Certificate Deletion Failed"
+msgctxt "@option:check on SignEncryptPage"
+msgid "Encrypt for &me:"
+msgstr "Наметавонам сертификатро ҳузф кунам"
+
+#: src/crypto/gui/signencryptfileswizard.cpp:132
+#, fuzzy, kde-format
+#| msgid "Certificate Deletion Failed"
+msgctxt "@option:check on SignEncryptPage"
+msgid "Encrypt for &others:"
+msgstr "Наметавонам сертификатро ҳузф кунам"
+
+#: src/crypto/gui/signencryptfileswizard.cpp:134
 #, kde-format
+msgctxt "@option:check on SignEncryptPage"
+msgid ""
+"Encrypt with &password. Anyone you share the password with can read the data."
+msgstr ""
+
+#: src/crypto/gui/signencryptfileswizard.cpp:142
+#, kde-format
+msgctxt "@title:group"
 msgid "Output"
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:81
+#: src/crypto/gui/signencryptfileswizard.cpp:145
 #, fuzzy, kde-format
 #| msgid "Delete Certificates"
 msgid "Please select an action."
 msgstr "Ҳузфи сертификатҳо"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:84
+#: src/crypto/gui/signencryptfileswizard.cpp:148
+#, kde-format
+msgctxt "@label on SignEncryptPage"
+msgid "Output &files/folder:"
+msgstr ""
+
+#: src/crypto/gui/signencryptfileswizard.cpp:154
 #, fuzzy, kde-format
 #| msgid "Certificate Deletion Failed"
-msgid "Encrypt / Sign each file separately."
+msgctxt "@option:check on SignEncryptPage"
+msgid "Encrypt / Sign &each file separately."
 msgstr "Наметавонам сертификатро ҳузф кунам"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:86
+#: src/crypto/gui/signencryptfileswizard.cpp:156
 #, kde-format
-msgctxt "@info"
+msgctxt "@info:tooltip"
 msgid "Keep each file separate instead of creating an archive for all."
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:157
+#: src/crypto/gui/signencryptfileswizard.cpp:226
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -4265,13 +4301,13 @@ msgid ""
 "support detached signatures in this case.</para>"
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:162
+#: src/crypto/gui/signencryptfileswizard.cpp:231
 #, kde-format
 msgctxt "@title:window"
 msgid "Unusual Signature Warning"
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:183
+#: src/crypto/gui/signencryptfileswizard.cpp:252
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -4281,103 +4317,103 @@ msgid ""
 "recipient selection?</para>"
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:186
+#: src/crypto/gui/signencryptfileswizard.cpp:255
 #, kde-format
 msgctxt "@title:window"
 msgid "Encrypt-To-Self Warning"
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:224
+#: src/crypto/gui/signencryptfileswizard.cpp:293
 #, fuzzy, kde-format
 #| msgid "New signatures:"
 msgid "The S/MIME signature."
 msgstr "Имзоҳои нав:"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:225
+#: src/crypto/gui/signencryptfileswizard.cpp:294
 #, fuzzy, kde-format
 #| msgid "New signatures:"
 msgid "The signature."
 msgstr "Имзоҳои нав:"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:226
+#: src/crypto/gui/signencryptfileswizard.cpp:295
 #, fuzzy, kde-format
 #| msgid "Deleting keys..."
 msgid "The signed and encrypted file."
 msgstr "Ҳузфи калидҳо..."
 
-#: src/crypto/gui/signencryptfileswizard.cpp:227
+#: src/crypto/gui/signencryptfileswizard.cpp:296
 #, fuzzy, kde-format
 #| msgid "Select CRL File"
 msgid "The encrypted file."
 msgstr "Интихоби файли CRL"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:228
+#: src/crypto/gui/signencryptfileswizard.cpp:297
 #, kde-format
 msgid "The S/MIME encrypted file."
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:229
+#: src/crypto/gui/signencryptfileswizard.cpp:298
 #, kde-format
 msgid "Output directory."
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:300
+#: src/crypto/gui/signencryptfileswizard.cpp:365
 #, kde-format
 msgid "Next"
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:359
+#: src/crypto/gui/signencryptfileswizard.cpp:430
 #, kde-format
 msgctxt "@title"
 msgid "Results"
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:361
+#: src/crypto/gui/signencryptfileswizard.cpp:432
 #, kde-format
 msgctxt "@title"
 msgid "Status and progress of the crypto operations is shown here."
 msgstr ""
 
-#: src/crypto/gui/signencryptwidget.cpp:108
-#, kde-format
+#: src/crypto/gui/signencryptwidget.cpp:107
+#, fuzzy, kde-format
+msgctxt "@title:group"
 msgid "Prove authenticity (sign)"
-msgstr ""
+msgstr "Маълумот оиди сертификат"
 
-#: src/crypto/gui/signencryptwidget.cpp:109
+#: src/crypto/gui/signencryptwidget.cpp:108
 #, fuzzy, kde-format
 #| msgid "For &signing only"
 msgid "Sign as:"
 msgstr "Танҳо барои &имзоот"
 
-#: src/crypto/gui/signencryptwidget.cpp:128
-#: src/crypto/gui/signencryptwidget.cpp:458
+#: src/crypto/gui/signencryptwidget.cpp:126
 #, fuzzy, kde-format
 #| msgid "For &encrypting only"
-msgctxt "@action"
+msgctxt "@title:group"
 msgid "Encrypt"
 msgstr "Танҳо барои &рамзгузорӣ"
 
-#: src/crypto/gui/signencryptwidget.cpp:134
+#: src/crypto/gui/signencryptwidget.cpp:130
 #, fuzzy, kde-format
 #| msgid "Certificate Deletion Failed"
 msgid "Encrypt for me:"
 msgstr "Наметавонам сертификатро ҳузф кунам"
 
-#: src/crypto/gui/signencryptwidget.cpp:140
+#: src/crypto/gui/signencryptwidget.cpp:137
 #, fuzzy, kde-format
 #| msgid "Certificate Deletion Failed"
 msgid "Encrypt for others:"
 msgstr "Наметавонам сертификатро ҳузф кунам"
 
-#: src/crypto/gui/signencryptwidget.cpp:169
+#: src/crypto/gui/signencryptwidget.cpp:170
 #, kde-format
 msgid ""
 "Encrypt with password. Anyone you share the password with can read the data."
 msgstr ""
 
-#: src/crypto/gui/signencryptwidget.cpp:171
+#: src/crypto/gui/signencryptwidget.cpp:172
 #, kde-format
-msgctxt "Tooltip information for symetric encryption"
+msgctxt "Tooltip information for symmetric encryption"
 msgid ""
 "Additionally to the keys of the recipients you can encrypt your data with a "
 "password. Anyone who has the password can read the data without any secret "
@@ -4385,28 +4421,35 @@ msgid ""
 "Even if you pick a very strong password."
 msgstr ""
 
-#: src/crypto/gui/signencryptwidget.cpp:456
+#: src/crypto/gui/signencryptwidget.cpp:467
 #, fuzzy, kde-format
 #| msgid "For &encrypting only"
 msgctxt "@action"
 msgid "Sign / Encrypt"
 msgstr "Танҳо барои &рамзгузорӣ"
 
-#: src/crypto/gui/signencryptwidget.cpp:460
+#: src/crypto/gui/signencryptwidget.cpp:469
+#, fuzzy, kde-format
+#| msgid "For &encrypting only"
+msgctxt "@action"
+msgid "Encrypt"
+msgstr "Танҳо барои &рамзгузорӣ"
+
+#: src/crypto/gui/signencryptwidget.cpp:471
 #, fuzzy, kde-format
 #| msgid "For &signing only"
 msgctxt "@action"
 msgid "Sign"
 msgstr "Танҳо барои &имзоот"
 
-#: src/crypto/gui/signencryptwidget.cpp:616
+#: src/crypto/gui/signencryptwidget.cpp:621
 #, fuzzy, kde-format
 #| msgid "Could not generate certificate: %1"
 msgctxt "%1 is user input that could not be found"
 msgid "Could not find a key for '%1'"
 msgstr "Наметавонам сертификаи зеринро эҷод кунам: %1"
 
-#: src/crypto/gui/signencryptwidget.cpp:617
+#: src/crypto/gui/signencryptwidget.cpp:622
 #, fuzzy, kde-format
 #| msgid ""
 #| "Failed to execute gpgsm:\n"
@@ -9720,11 +9763,6 @@ msgstr ""
 #~ msgstr "Танҳо барои &имзоот"
 
 #, fuzzy
-#~| msgid "For &encrypting only"
-#~ msgid "Encrypt"
-#~ msgstr "Танҳо барои &рамзгузорӣ"
-
-#, fuzzy
 #~| msgid "Subject"
 #~ msgid "Subject-DN:"
 #~ msgstr "Мавзӯъ"
@@ -9753,10 +9791,6 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Authentication:"
-#~ msgstr "Маълумот оиди сертификат"
-
-#, fuzzy
-#~ msgid "PIV authentication:"
 #~ msgstr "Маълумот оиди сертификат"
 
 #, fuzzy
