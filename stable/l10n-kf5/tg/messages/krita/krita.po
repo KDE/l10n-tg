@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-14 01:47+0000\n"
+"POT-Creation-Date: 2021-09-15 01:47+0000\n"
 "PO-Revision-Date: 2019-09-29 12:46+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -8672,9 +8672,10 @@ msgstr ""
 #. i18n: context: Actions (Filters), ActionCollection (Krita)
 #. i18n: context: Actions (Filters), ActionCollection (Krita)
 #. i18n: context: Actions (Filters), ActionCollection (Krita)
-#: krita/krita.action:791 plugins/filters/threshold/threshold.action:4
+#: krita/krita.action:791 plugins/dockers/logdocker/LogDockerDock.cpp:142
+#: plugins/filters/threshold/threshold.action:4
 #, kde-format
-msgctxt "action"
+msgctxt "Filter as an effect"
 msgid "Filters"
 msgstr ""
 
@@ -18352,8 +18353,8 @@ msgid ""
 msgstr ""
 
 #: libs/ui/animation/KisDlgImportVideoAnimation.cpp:124
-#: plugins/assistants/Assistants/SplineAssistant.cc:222
 #, kde-format
+msgctxt "An interpolation method"
 msgid "Spline"
 msgstr ""
 
@@ -19520,13 +19521,12 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, lblFilter)
 #. i18n: ectx: property (text), widget (QLabel, videoScaleFilterLabel)
 #. i18n: ectx: property (text), widget (QLabel, scaleFilterLabel)
-#. i18n: ectx: property (text), widget (QLabel, label)
 #: libs/ui/animation/VideoImportDialog.ui:528
 #: libs/ui/animation/wdg_animationrenderer.ui:206
 #: libs/ui/imagesize/wdg_layersize.ui:119
-#: plugins/paintops/libpaintop/forms/wdgfilteroption.ui:28
 #: plugins/python/documenttools/tools/scaletool/scaletool.py:43
 #, kde-format
+msgctxt "Resize intepolation method list label"
 msgid "Filter:"
 msgstr ""
 
@@ -24623,7 +24623,7 @@ msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, constrainProportionsCkb)
 #: libs/ui/imagesize/wdg_canvassize.ui:132
-#: libs/ui/imagesize/wdg_imagesize.ui:336
+#: libs/ui/imagesize/wdg_imagesize.ui:339
 #: libs/ui/imagesize/wdg_layersize.ui:139
 #: plugins/impex/webp/dlg_webp_import.ui:232
 #, kde-format
@@ -24633,7 +24633,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, constrainProportionsCkb)
 #. i18n: ectx: property (toolTip), widget (QPushButton, buttonLockRatio)
 #: libs/ui/imagesize/wdg_canvassize.ui:135
-#: libs/ui/imagesize/wdg_imagesize.ui:339
+#: libs/ui/imagesize/wdg_imagesize.ui:342
 #: libs/ui/imagesize/wdg_layersize.ui:142
 #: plugins/dockers/recorder/recorder_export.ui:459
 #: plugins/impex/webp/dlg_webp_import.ui:235
@@ -24704,10 +24704,9 @@ msgid "Pixel Dimensions"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lblPixelFilter)
-#. i18n: ectx: property (text), widget (QLabel, label_10)
 #: libs/ui/imagesize/wdg_imagesize.ui:81
-#: plugins/tools/tool_transform2/wdg_tool_transform.ui:322
 #, kde-format
+msgctxt "Resize intepolation method list label"
 msgid "&Filter:"
 msgstr ""
 
@@ -24730,7 +24729,7 @@ msgid "Wid&th:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, adjustPrintSizeSeparatelyCkb)
-#: libs/ui/imagesize/wdg_imagesize.ui:349
+#: libs/ui/imagesize/wdg_imagesize.ui:352
 #, kde-format
 msgid "Adjust print size separately"
 msgstr ""
@@ -28859,7 +28858,7 @@ msgstr ""
 
 #: libs/ui/tool/strokes/kis_filter_stroke_strategy.cpp:139
 #, kde-format
-msgctxt "(qtundo-format)"
+msgctxt "(qtundo-format) Filter as an effect"
 msgid "Filter \"%1\""
 msgstr ""
 
@@ -29846,7 +29845,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QToolButton, btnLock)
 #: libs/ui/widgets/kis_categorized_list_view.cpp:154
 #: plugins/dockers/storyboarddocker/wdgstoryboarddock.ui:57
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_drawing_angle.cpp:66
 #, kde-format
 msgid "Lock"
 msgstr ""
@@ -31951,14 +31949,19 @@ msgid "A&vailable actions:"
 msgstr ""
 
 #: libs/widgetutils/xmlgui/kedittoolbar.cpp:1026
-#: libs/widgetutils/xmlgui/kedittoolbar.cpp:1045
 #, kde-format
+msgctxt "Filter as in showing only matching items"
 msgid "Filter"
 msgstr ""
 
 #: libs/widgetutils/xmlgui/kedittoolbar.cpp:1029
 #, kde-format
 msgid "Curr&ent actions:"
+msgstr ""
+
+#: libs/widgetutils/xmlgui/kedittoolbar.cpp:1045
+#, kde-format
+msgid "Filter"
 msgstr ""
 
 #: libs/widgetutils/xmlgui/kedittoolbar.cpp:1186
@@ -32745,6 +32748,12 @@ msgstr ""
 msgid "Spline assistant"
 msgstr ""
 
+#: plugins/assistants/Assistants/SplineAssistant.cc:222
+#, kde-format
+msgctxt "A type of drawing assistants"
+msgid "Spline"
+msgstr ""
+
 #: plugins/assistants/Assistants/TwoPointAssistant.cc:27
 #, kde-format
 msgid "Two point assistant"
@@ -33474,9 +33483,8 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, csl_hsiI)
 #: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1360
-#: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:33
-#: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:204
 #, kde-format
+msgctxt "Brightness in HSI color model"
 msgid "Intensity"
 msgstr ""
 
@@ -34687,11 +34695,6 @@ msgstr ""
 msgid "Tile Engine"
 msgstr ""
 
-#: plugins/dockers/logdocker/LogDockerDock.cpp:142
-#, kde-format
-msgid "Filters"
-msgstr ""
-
 #: plugins/dockers/logdocker/LogDockerDock.cpp:146
 #, kde-format
 msgid "Plugin Management"
@@ -35004,8 +35007,8 @@ msgid "Add foreground color"
 msgstr ""
 
 #: plugins/dockers/presetdocker/presetdocker_dock.cpp:26
-#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:62
 #, kde-format
+msgctxt "@title:window Brush presets chooser docker"
 msgid "Brush Presets"
 msgstr ""
 
@@ -35237,6 +35240,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, labelFpsInput)
 #: plugins/dockers/recorder/recorder_export.ui:490
 #, kde-format
+msgctxt "Input FPS of recorded timelapses."
 msgid "Input FPS:"
 msgstr ""
 
@@ -38103,6 +38107,11 @@ msgstr ""
 msgid "Brushes"
 msgstr ""
 
+#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:62
+#, kde-format
+msgid "Brush Presets"
+msgstr ""
+
 #: plugins/extensions/resourcemanager/DlgResourceManager.cpp:36
 #, kde-format
 msgid "Manage Resources"
@@ -38566,7 +38575,6 @@ msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, grpSource)
 #: plugins/extensions/separate_channels/wdg_separations.ui:62
-#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:67
 #, kde-format
 msgid "Source"
 msgstr ""
@@ -39720,6 +39728,13 @@ msgstr ""
 #: plugins/generators/screentone/KisScreentoneConfigWidget.ui:360
 #, kde-format
 msgid "Foreground:"
+msgstr ""
+
+#: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:33
+#: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:204
+#, kde-format
+msgctxt "Brightness in Halftone Widget"
+msgid "Intensity"
 msgstr ""
 
 #: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:34
@@ -43936,6 +43951,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, lblFilterStrength)
 #: plugins/impex/webp/dlg_webp_export.ui:330
 #, kde-format
+msgctxt "Filter options specifically for WebP"
 msgid "Filter Strength"
 msgstr ""
 
@@ -43950,6 +43966,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, lblFilterSharpness)
 #: plugins/impex/webp/dlg_webp_export.ui:353
 #, kde-format
+msgctxt "Filter options specifically for WebP"
 msgid "Filter Sharpness"
 msgstr ""
 
@@ -43966,6 +43983,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, lblFilterType)
 #: plugins/impex/webp/dlg_webp_export.ui:376
 #, kde-format
+msgctxt "Filter options specifically for WebP"
 msgid "Filter Type"
 msgstr ""
 
@@ -44049,6 +44067,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, lblPreprocessing)
 #: plugins/impex/webp/dlg_webp_export.ui:546
 #, kde-format
+msgctxt "Filter options specifically for WebP"
 msgid "Preprocessing Filter"
 msgstr ""
 
@@ -44454,7 +44473,6 @@ msgstr ""
 msgid "180°"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QRadioButton, optionRotation)
 #. i18n: ectx: property (title), widget (QGroupBox, rotationGroup)
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:63
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:61
@@ -44466,7 +44484,6 @@ msgstr ""
 #: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:37
 #: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:40
 #: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:52
-#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:253
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:700
 #, kde-format
 msgid "Rotation"
@@ -44700,6 +44717,12 @@ msgstr ""
 msgid "Lightness Strength"
 msgstr ""
 
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:67
+#, kde-format
+msgctxt "Color source"
+msgid "Source"
+msgstr ""
+
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:68
 #, kde-format
 msgid "Darken"
@@ -44712,6 +44735,7 @@ msgstr ""
 
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:69
 #, kde-format
+msgctxt "Mixing of colors"
 msgid "Mix"
 msgstr ""
 
@@ -44844,12 +44868,10 @@ msgid "Deform Mode"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, growBtn)
-#. i18n: ectx: property (text), widget (QCheckBox, boolGrow)
 #: plugins/paintops/deform/kis_deform_paintop_settings.cpp:134
 #: plugins/paintops/deform/wdgdeformoptions.ui:48
-#: plugins/tools/tool_crop/kis_tool_crop.cc:119
-#: plugins/tools/tool_crop/wdg_tool_crop.ui:155
 #, kde-format
+msgctxt "Grow as in deform brush engine"
 msgid "Grow"
 msgstr ""
 
@@ -44857,6 +44879,7 @@ msgstr ""
 #: plugins/paintops/deform/kis_deform_paintop_settings.cpp:135
 #: plugins/paintops/deform/wdgdeformoptions.ui:55
 #, kde-format
+msgctxt "Shrink as in deform brush engine"
 msgid "Shrink"
 msgstr ""
 
@@ -44896,9 +44919,11 @@ msgid "Lens Zoom Out"
 msgstr ""
 
 #: plugins/paintops/deform/kis_deform_paintop_settings.cpp:141
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Education"
+msgctxt "Rearrange the positions of the pixels under the cursor"
 msgid "Color Deformation"
-msgstr ""
+msgstr "Илму маърифат"
 
 #: plugins/paintops/deform/kis_deform_paintop_settings_widget.cpp:29
 #, kde-format
@@ -44907,9 +44932,11 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, colorBtn)
 #: plugins/paintops/deform/wdgdeformoptions.ui:86
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Education"
+msgctxt "Rearrange the pixels positions under the cursor"
 msgid "Color deformation"
-msgstr ""
+msgstr "Илму маърифат"
 
 #. i18n: ectx: property (text), widget (QRadioButton, lensOutBtn)
 #: plugins/paintops/deform/wdgdeformoptions.ui:93
@@ -45795,9 +45822,17 @@ msgstr ""
 msgid "Preserve alpha channel"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/paintops/libpaintop/forms/wdgfilteroption.ui:28
+#, kde-format
+msgctxt "Filter as an effect"
+msgid "Filter:"
+msgstr ""
+
 #. i18n: ectx: property (title), widget (QGroupBox, grpFilterOptions)
 #: plugins/paintops/libpaintop/forms/wdgfilteroption.ui:62
 #, kde-format
+msgctxt "Filter as an effect"
 msgid "Filter Settings"
 msgstr ""
 
@@ -45875,6 +45910,7 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QGroupBox, grpBrushMode)
 #: plugins/paintops/libpaintop/forms/wdgpredefinedbrushchooser.ui:226
 #, kde-format
+msgctxt "Predefined Brush tip mode"
 msgid "Brush mode"
 msgstr ""
 
@@ -45935,7 +45971,8 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, lblSpacing_2)
 #: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:179
 #, kde-format
-msgid "Cutoff"
+msgctxt "Texture lightness range cutoff range slider"
+msgid "Cutoff:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lblNeutralPoint)
@@ -46711,8 +46748,15 @@ msgstr ""
 msgid "Blending Mode:"
 msgstr ""
 
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_drawing_angle.cpp:66
+#, kde-format
+msgctxt "Lock Drawing angle at start of each stroke"
+msgid "Lock"
+msgstr ""
+
 #: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_drawing_angle.cpp:72
 #, kde-format
+msgctxt "Smoothing Drawing angle when a stroke is making a sharp turn"
 msgid "Fan Corners"
 msgstr ""
 
@@ -46753,9 +46797,11 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QRadioButton, optionDirection)
 #: plugins/paintops/mypaint/MyPaintBrushOption.h:35
 #: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:243
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Education"
+msgctxt "Drawing Angle"
 msgid "Direction"
-msgstr ""
+msgstr "Илму маърифат"
 
 #: plugins/paintops/mypaint/MyPaintBrushOption.h:36
 #, fuzzy, kde-format
@@ -47433,6 +47479,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QRadioButton, optionTilt)
 #: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:230
 #, kde-format
+msgctxt "Tilt elevation"
 msgid "Tilt"
 msgstr ""
 
@@ -47452,6 +47499,14 @@ msgid ""
 "determine the X and Y-axes, while tilt-elevation is used for the Z-axis.</"
 "p></body></html>"
 msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, optionRotation)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:253
+#, fuzzy, kde-format
+#| msgid "Education"
+msgctxt "Pen Rotation"
+msgid "Rotation"
+msgstr "Илму маърифат"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, optionMix)
 #: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:260
@@ -49110,6 +49165,7 @@ msgid "Keep original layer"
 msgstr ""
 
 #: plugins/python/highpass/highpass.py:52
+msgctxt "Filter radius in Highpass filter settings"
 msgid "Filter radius:"
 msgstr ""
 
@@ -51170,6 +51226,7 @@ msgstr ""
 
 #: plugins/tools/selectiontools/KisToolSelectMagnetic.cc:659
 #, kde-format
+msgctxt "Filter radius in Magnetic Select Tool settings"
 msgid "Filter Radius: "
 msgstr ""
 
@@ -51836,6 +51893,14 @@ msgstr ""
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:69
 #, kde-format
 msgid "Center"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, boolGrow)
+#: plugins/tools/tool_crop/kis_tool_crop.cc:119
+#: plugins/tools/tool_crop/wdg_tool_crop.ui:155
+#, kde-format
+msgctxt "Grow as in crop tool"
+msgid "Grow"
 msgstr ""
 
 #: plugins/tools/tool_crop/kis_tool_crop.cc:122
@@ -52508,6 +52573,12 @@ msgstr ""
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:216
 #, kde-format
 msgid "Mesh"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: plugins/tools/tool_transform2/wdg_tool_transform.ui:322
+#, kde-format
+msgid "&Filter:"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, btnTransformAroundPivotPoint)
