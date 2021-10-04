@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-21 00:14+0000\n"
+"POT-Creation-Date: 2021-10-04 00:14+0000\n"
 "PO-Revision-Date: 2019-09-29 12:28+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -137,7 +137,7 @@ msgstr "Гузарондани калима беҳарақат"
 #. i18n: ectx: property (title), widget (QGroupBox, gbBorders)
 #. i18n: ectx: Menu (view_menu_borders)
 #: data/katepart5ui.rc:75 dialogs/bordersappearanceconfigwidget.ui:17
-#: dialogs/katedialogs.cpp:678
+#: dialogs/katedialogs.cpp:679
 #, fuzzy, kde-format
 #| msgid "Borders"
 msgid "Borders"
@@ -373,7 +373,7 @@ msgid "Scro&llbars visibility:"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbShowScrollbars)
-#: dialogs/bordersappearanceconfigwidget.ui:216 dialogs/katedialogs.cpp:682
+#: dialogs/bordersappearanceconfigwidget.ui:216 dialogs/katedialogs.cpp:683
 #, kde-format
 msgid "Always On"
 msgstr "Ҳамеша дао боло"
@@ -439,8 +439,8 @@ msgstr "Ба &ҷойгиршавӣ"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbGeneral)
 #. i18n: ectx: property (title), widget (QGroupBox, gbViInputMode)
-#: dialogs/completionconfigtab.ui:20 dialogs/katedialogs.cpp:545
-#: dialogs/katedialogs.cpp:674 dialogs/katedialogs.cpp:905
+#: dialogs/completionconfigtab.ui:20 dialogs/katedialogs.cpp:546
+#: dialogs/katedialogs.cpp:675 dialogs/katedialogs.cpp:906
 #: vimode/config/configwidget.ui:29
 #, kde-format
 msgid "General"
@@ -501,14 +501,15 @@ msgid ""
 "the document's language."
 msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, gbStaticWordWrap)
-#: dialogs/editconfigwidget.ui:17 view/kateview.cpp:725
-#, kde-format
-msgid "Static Word Wrap"
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: dialogs/editconfigwidget.ui:22
+#, fuzzy, kde-format
+#| msgid "Static Word Wrap"
+msgid "Word wrap:"
 msgstr "Гузарондани калима беҳарақат"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkStaticWordWrap)
-#: dialogs/editconfigwidget.ui:23
+#: dialogs/editconfigwidget.ui:29
 #, fuzzy, kde-format
 #| msgid ""
 #| "Automatically start a new line of text when the current line exceeds the "
@@ -534,13 +535,13 @@ msgstr ""
 "параметрҳои<b>Маънавиёти пешфарз</b>-и гуфтугӯи танзимотро сабт кунед."
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkStaticWordWrap)
-#: dialogs/editconfigwidget.ui:26
+#: dialogs/editconfigwidget.ui:32
 #, kde-format
-msgid "Enable static &word wrap"
-msgstr "Гузарондани &калима беҳарақат фаъол созед"
+msgid "Wrap &words at a fixed column"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowStaticWordWrapMarker)
-#: dialogs/editconfigwidget.ui:33
+#: dialogs/editconfigwidget.ui:39
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>If this option is checked, a vertical line will be drawn at the word "
@@ -555,21 +556,20 @@ msgstr ""
 "истифодаи ҳарфҳои бо паҳмии устувор ба кор бурда мешавад."
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowStaticWordWrapMarker)
-#: dialogs/editconfigwidget.ui:36
-#, fuzzy, kde-format
-#| msgid "Show Static &Word Wrap Marker"
-msgid "Show static word wra&p marker"
-msgstr "Намоиши маркери &гузарониши статикӣ"
+#: dialogs/editconfigwidget.ui:42
+#, kde-format
+msgid "&Draw vertical line at the word wrap column"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lblWordWrap)
-#: dialogs/editconfigwidget.ui:57
+#: dialogs/editconfigwidget.ui:49
 #, fuzzy, kde-format
 #| msgid "Wrap words at:"
 msgid "Wra&p words at:"
 msgstr "Гузарондани калима баъд аз:"
 
 #. i18n: ectx: property (whatsThis), widget (KPluralHandlingSpinBox, sbWordWrap)
-#: dialogs/editconfigwidget.ui:67
+#: dialogs/editconfigwidget.ui:59
 #, kde-format
 msgid ""
 "If the Word Wrap option is selected this entry determines the length (in "
@@ -578,35 +578,28 @@ msgstr ""
 "Ҳолати фаъол сохтани гузаштани байни сатрҳо, дар инҷо миқдори сутунҳо, ки "
 "дорои паҳмии саҳифа мебошанд, нишон дода мешавад."
 
-#. i18n: ectx: property (title), widget (QGroupBox, gbInputMode)
-#: dialogs/editconfigwidget.ui:101
-#, fuzzy, kde-format
-msgid "Input Mode"
-msgstr "Фосила"
-
 #. i18n: ectx: property (text), widget (QLabel, lblInputMode)
-#: dialogs/editconfigwidget.ui:107
+#: dialogs/editconfigwidget.ui:91
 #, fuzzy, kde-format
 #| msgid "&Indentation mode:"
 msgid "Default input mode:"
 msgstr "Тар&тиботи фосилот:"
 
-#. i18n: ectx: property (title), widget (QGroupBox, gbAutoBrackets)
-#: dialogs/editconfigwidget.ui:133
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: dialogs/editconfigwidget.ui:117
 #, fuzzy, kde-format
 #| msgid "Auto &brackets"
-msgid "Auto Brackets"
+msgid "Brackets:"
 msgstr "&Автоқавсҳо"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkAutoBrackets)
-#: dialogs/editconfigwidget.ui:139
-#, fuzzy, kde-format
-#| msgid "Select to Matching Bracket"
-msgid "Enable automatic brackets"
-msgstr "Ҷудо кардан то қавси кушода/пӯшида"
+#: dialogs/editconfigwidget.ui:124
+#, kde-format
+msgid "Automatically close brackets when opening bracket is typed"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbEncloseSelection)
-#: dialogs/editconfigwidget.ui:154
+#: dialogs/editconfigwidget.ui:137
 #, kde-format
 msgid ""
 "When some text is selected these chars will be added on both its sides in a "
@@ -614,34 +607,43 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lbEncloseSelection)
-#: dialogs/editconfigwidget.ui:157
+#: dialogs/editconfigwidget.ui:140
 #, fuzzy, kde-format
-msgid "Chars to enclose selection:"
-msgstr "Калимаи ҳозира, Интихобот"
+#| msgid "Character"
+msgid "Enclosing characters:"
+msgstr "Ҳарф"
 
-#. i18n: ectx: property (title), widget (QGroupBox, gbCopyAndPaste)
-#: dialogs/editconfigwidget.ui:195
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: dialogs/editconfigwidget.ui:160
 #, kde-format
-msgid "Copy and Paste"
+msgid "Copy and paste:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkTextDragAndDrop)
-#: dialogs/editconfigwidget.ui:201
+#: dialogs/editconfigwidget.ui:167
 #, fuzzy, kde-format
 #| msgid "Selected"
-msgid "Move selected text by drag and drop"
+msgid "Move selected text when dragged"
 msgstr "Интихобшуда"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkSmartCopyCut)
-#: dialogs/editconfigwidget.ui:208
+#: dialogs/editconfigwidget.ui:174
 #, kde-format
-msgid "Copy/Cut the current line if no selection"
+msgid "Copy/cut the current line if invoked without any text selected"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkMousePasteAtCursorPosition)
-#: dialogs/editconfigwidget.ui:215
+#: dialogs/editconfigwidget.ui:181
 #, kde-format
-msgid "Paste by mouse at cursor position"
+msgid "Don't move the text cursor when pasting by mouse"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, lblBracketHelp)
+#: dialogs/editconfigwidget.ui:194
+#, kde-format
+msgid ""
+"When you type these characters while text is selected, they will surround "
+"the selected text instead of replacing it."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lblFiletype)
@@ -1019,7 +1021,7 @@ msgstr "Санҷиши имло"
 msgid "Text Navigation"
 msgstr "Танзимот"
 
-#: dialogs/katedialogs.cpp:519
+#: dialogs/katedialogs.cpp:520
 #, fuzzy, kde-format
 #| msgid "Character"
 msgctxt "Wrap words at (value is at 20 or larger)"
@@ -1028,64 +1030,64 @@ msgid_plural " characters"
 msgstr[0] "Ҳарф"
 msgstr[1] "Ҳарф"
 
-#: dialogs/katedialogs.cpp:524
+#: dialogs/katedialogs.cpp:525
 #, kde-format
 msgid "Feature is not active"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:526
+#: dialogs/katedialogs.cpp:527
 #, fuzzy, kde-format
 #| msgid "Disabled Breakpoint"
 msgid "Disable Feature"
 msgstr "Нуқтаи ғайрифаъоли таваққуф"
 
-#: dialogs/katedialogs.cpp:528
+#: dialogs/katedialogs.cpp:529
 #, kde-format
 msgid "May be handy with Markdown"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:530
+#: dialogs/katedialogs.cpp:531
 #, kde-format
 msgid "Mirror characters, similar but not exactly like auto brackets"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:532
+#: dialogs/katedialogs.cpp:533
 #, fuzzy, kde-format
 #| msgid "Character"
 msgid "Non letter character"
 msgstr "Ҳарф"
 
-#: dialogs/katedialogs.cpp:646
+#: dialogs/katedialogs.cpp:647
 #, kde-format
 msgid "Editing"
 msgstr "Таҳрир кардан"
 
-#: dialogs/katedialogs.cpp:651
+#: dialogs/katedialogs.cpp:652
 #, kde-format
 msgid "Editing Options"
 msgstr "Тасҳеҳӣ"
 
-#: dialogs/katedialogs.cpp:680
+#: dialogs/katedialogs.cpp:681
 #, fuzzy, kde-format
 msgid "Off"
 msgstr "&Ғайри фаъол"
 
-#: dialogs/katedialogs.cpp:681
+#: dialogs/katedialogs.cpp:682
 #, kde-format
 msgid "Follow Line Numbers"
 msgstr "Рақамҳои хат мушоҳида кунед"
 
-#: dialogs/katedialogs.cpp:838 dialogs/katedialogs.cpp:843
+#: dialogs/katedialogs.cpp:839 dialogs/katedialogs.cpp:844
 #, fuzzy, kde-format
 msgid "Appearance"
 msgstr "Ҳарфи калон"
 
-#: dialogs/katedialogs.cpp:906
+#: dialogs/katedialogs.cpp:907
 #, kde-format
 msgid "Advanced"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:971
+#: dialogs/katedialogs.cpp:972
 #, kde-format
 msgid ""
 "You did not provide a backup suffix or prefix. Using default suffix: '~'"
@@ -1093,128 +1095,128 @@ msgstr ""
 "Шумо суфикс ё префикси файлҳои копиҳои захиравиро ишора накардаед. Суфикси "
 "пешфарзӣ низ истифода шуда истодааст: '~'"
 
-#: dialogs/katedialogs.cpp:971
+#: dialogs/katedialogs.cpp:972
 #, kde-format
 msgid "No Backup Suffix or Prefix"
 msgstr "Не Пуштибони Суффикс ё Префикс"
 
-#: dialogs/katedialogs.cpp:1093
+#: dialogs/katedialogs.cpp:1094
 #, kde-format
 msgid "Open/Save"
 msgstr "Кушодан/Нигоҳ доштан"
 
-#: dialogs/katedialogs.cpp:1098
+#: dialogs/katedialogs.cpp:1099
 #, kde-format
 msgid "File Opening & Saving"
 msgstr "Кушодан ва нигоҳ доштани файлҳо"
 
-#: dialogs/katedialogs.cpp:1121
+#: dialogs/katedialogs.cpp:1122
 #, kde-format
 msgid "&Line:"
 msgstr "&Сатр:"
 
-#: dialogs/katedialogs.cpp:1122
+#: dialogs/katedialogs.cpp:1123
 #, kde-format
 msgid "Go to line number from clipboard"
 msgstr "Гузариш ба рақами сатр аз ҳофизаи муваққатӣ"
 
-#: dialogs/katedialogs.cpp:1133
+#: dialogs/katedialogs.cpp:1134
 #, kde-format
 msgid "Go to"
 msgstr "Гузариш ба"
 
-#: dialogs/katedialogs.cpp:1209
+#: dialogs/katedialogs.cpp:1210
 #, kde-format
 msgid "No valid line number found in clipboard"
 msgstr "Ягон рақами сатри боэътибор дар ҳофизаи муваққатӣ ёфт нашуд"
 
-#: dialogs/katedialogs.cpp:1273
+#: dialogs/katedialogs.cpp:1274
 #, kde-format
 msgid "Dictionary:"
 msgstr "Луғат:"
 
-#: dialogs/katedialogs.cpp:1325
+#: dialogs/katedialogs.cpp:1326
 #, kde-format
 msgid "Enable Auto Reload"
 msgstr "Фаъол кардани боркунии худкор"
 
-#: dialogs/katedialogs.cpp:1327
+#: dialogs/katedialogs.cpp:1328
 #, kde-format
 msgid "Will never again warn about on disk changes but always reload."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1332
+#: dialogs/katedialogs.cpp:1333
 #, fuzzy, kde-format
 #| msgid "&View Difference"
 msgid "View &Difference"
 msgstr "&Намоиши дигаргуниҳо"
 
-#: dialogs/katedialogs.cpp:1334
+#: dialogs/katedialogs.cpp:1335
 #, kde-format
 msgid "Shows a diff of the changes"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1339
+#: dialogs/katedialogs.cpp:1340
 #, kde-format
 msgid "&Reload"
 msgstr "&Боркунии дубора"
 
-#: dialogs/katedialogs.cpp:1341
+#: dialogs/katedialogs.cpp:1342
 #, kde-format
 msgid "Reload the file from disk. Unsaved changes will be lost."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1345
+#: dialogs/katedialogs.cpp:1346
 #, kde-format
 msgctxt "@action:button closes the opened file"
 msgid "&Close File"
 msgstr "&Пӯшидани файл"
 
-#: dialogs/katedialogs.cpp:1347
+#: dialogs/katedialogs.cpp:1348
 #, kde-format
 msgid "Close the file, discarding its content."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1351
+#: dialogs/katedialogs.cpp:1352
 #, kde-format
 msgid "&Save As..."
 msgstr "&Нигоҳ доштан ҳамчун..."
 
-#: dialogs/katedialogs.cpp:1353
+#: dialogs/katedialogs.cpp:1354
 #, kde-format
 msgid "Lets you select a location and save the file again."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, m_skipBtn)
-#: dialogs/katedialogs.cpp:1358 spellcheck/spellcheckbar.ui:143
+#: dialogs/katedialogs.cpp:1359 spellcheck/spellcheckbar.ui:143
 #, kde-format
 msgid "&Ignore"
 msgstr "&Эътино накардан"
 
-#: dialogs/katedialogs.cpp:1359
+#: dialogs/katedialogs.cpp:1360
 #, kde-format
 msgid "Ignores the changes on disk without any action."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1425 swapfile/kateswapdiffcreator.cpp:122
+#: dialogs/katedialogs.cpp:1426 swapfile/kateswapdiffcreator.cpp:122
 #, kde-format
 msgid ""
 "The diff command failed. Please make sure that diff(1) is installed and in "
 "your PATH."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1427 swapfile/kateswapdiffcreator.cpp:90
+#: dialogs/katedialogs.cpp:1428 swapfile/kateswapdiffcreator.cpp:90
 #: swapfile/kateswapdiffcreator.cpp:124
 #, kde-format
 msgid "Error Creating Diff"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1434 swapfile/kateswapdiffcreator.cpp:131
+#: dialogs/katedialogs.cpp:1435 swapfile/kateswapdiffcreator.cpp:131
 #, kde-format
 msgid "The files are identical."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1434 swapfile/kateswapdiffcreator.cpp:131
+#: dialogs/katedialogs.cpp:1435 swapfile/kateswapdiffcreator.cpp:131
 #, kde-format
 msgid "Diff Output"
 msgstr "Барориши фарқият"
@@ -4590,7 +4592,7 @@ msgstr ""
 msgid "Marker Colors"
 msgstr "Рангҳо"
 
-#: syntax/katethemeconfig.cpp:304 view/kateviewhelpers.cpp:1473
+#: syntax/katethemeconfig.cpp:304 view/kateviewhelpers.cpp:1474
 #, kde-format
 msgid "Bookmark"
 msgstr "Мондан"
@@ -6802,6 +6804,11 @@ msgstr "&Рақамҳои хат риоя кунед"
 msgid "&Always On"
 msgstr "&Ҳамеша дар боло"
 
+#: view/kateview.cpp:725
+#, kde-format
+msgid "Static Word Wrap"
+msgstr "Гузарондани калима беҳарақат"
+
 #: view/kateview.cpp:727
 #, fuzzy, kde-format
 #| msgid ""
@@ -7393,36 +7400,36 @@ msgstr "Ҷустуҷӯ"
 msgid "Export File as HTML"
 msgstr "Содир кардани файл ҳамчун HTML"
 
-#: view/kateviewhelpers.cpp:301 view/kateviewhelpers.cpp:344
-#: view/kateviewhelpers.cpp:980
+#: view/kateviewhelpers.cpp:302 view/kateviewhelpers.cpp:345
+#: view/kateviewhelpers.cpp:981
 #, kde-format
 msgctxt "from line - to line"
 msgid "<center>%1<br/>&#x2014;<br/>%2</center>"
 msgstr ""
 
-#: view/kateviewhelpers.cpp:1149
+#: view/kateviewhelpers.cpp:1150
 #, kde-format
 msgid "Available Commands"
 msgstr "Фармонҳои дастрас"
 
-#: view/kateviewhelpers.cpp:1150
+#: view/kateviewhelpers.cpp:1151
 #, kde-format
 msgid ""
 "<p>For help on individual commands, do <code>'help &lt;command&gt;'</code></"
 "p>"
 msgstr ""
 
-#: view/kateviewhelpers.cpp:1157
+#: view/kateviewhelpers.cpp:1158
 #, kde-format
 msgid "No help for '%1'"
 msgstr "Ёрмандӣ барои '%1' вуҷуд надорад"
 
-#: view/kateviewhelpers.cpp:1160
+#: view/kateviewhelpers.cpp:1161
 #, fuzzy, kde-format
 msgid "No such command <b>%1</b>"
 msgstr "Ин фармон нест: \"%1\""
 
-#: view/kateviewhelpers.cpp:1166
+#: view/kateviewhelpers.cpp:1167
 #, kde-format
 msgid ""
 "<p>This is the Katepart <b>command line</b>.<br />Syntax: <code><b>command "
@@ -7431,37 +7438,37 @@ msgid ""
 "<code><b>help &lt;command&gt;</b></code></p>"
 msgstr ""
 
-#: view/kateviewhelpers.cpp:1254 vimode/emulatedcommandbar/commandmode.cpp:210
+#: view/kateviewhelpers.cpp:1255 vimode/emulatedcommandbar/commandmode.cpp:210
 #, kde-format
 msgid "No such command: \"%1\""
 msgstr "Ин фармон нест: \"%1\""
 
-#: view/kateviewhelpers.cpp:1257 vimode/emulatedcommandbar/commandmode.cpp:192
+#: view/kateviewhelpers.cpp:1258 vimode/emulatedcommandbar/commandmode.cpp:192
 #, kde-format
 msgid "Error: No range allowed for command \"%1\"."
 msgstr ""
 
-#: view/kateviewhelpers.cpp:1267 vimode/emulatedcommandbar/commandmode.cpp:196
+#: view/kateviewhelpers.cpp:1268 vimode/emulatedcommandbar/commandmode.cpp:196
 #, kde-format
 msgid "Success: "
 msgstr "Муваффақият: "
 
-#: view/kateviewhelpers.cpp:1281 vimode/emulatedcommandbar/commandmode.cpp:205
+#: view/kateviewhelpers.cpp:1282 vimode/emulatedcommandbar/commandmode.cpp:205
 #, kde-format
 msgid "Command \"%1\" failed."
 msgstr "Фармони  \"%1\" кор накард."
 
-#: view/kateviewhelpers.cpp:2504 view/kateviewhelpers.cpp:2505
+#: view/kateviewhelpers.cpp:2538 view/kateviewhelpers.cpp:2539
 #, kde-format
 msgid "Mark Type %1"
 msgstr "Ҷудокунии Намуди %1"
 
-#: view/kateviewhelpers.cpp:2528
+#: view/kateviewhelpers.cpp:2562
 #, kde-format
 msgid "Set Default Mark Type"
 msgstr "Ҷудокунии намудро пешфарз созед"
 
-#: view/kateviewhelpers.cpp:2662
+#: view/kateviewhelpers.cpp:2696
 #, kde-format
 msgid "Disable Annotation Bar"
 msgstr ""
@@ -7796,6 +7803,27 @@ msgstr ""
 #| msgid "Mark Type %1"
 msgid "Mark not set: %1"
 msgstr "Ҷудокунии Намуди %1"
+
+#~ msgid "Enable static &word wrap"
+#~ msgstr "Гузарондани &калима беҳарақат фаъол созед"
+
+#, fuzzy
+#~| msgid "Show Static &Word Wrap Marker"
+#~ msgid "Show static word wra&p marker"
+#~ msgstr "Намоиши маркери &гузарониши статикӣ"
+
+#, fuzzy
+#~ msgid "Input Mode"
+#~ msgstr "Фосила"
+
+#, fuzzy
+#~| msgid "Select to Matching Bracket"
+#~ msgid "Enable automatic brackets"
+#~ msgstr "Ҷудо кардан то қавси кушода/пӯшида"
+
+#, fuzzy
+#~ msgid "Chars to enclose selection:"
+#~ msgstr "Калимаи ҳозира, Интихобот"
 
 #, fuzzy
 #~| msgid "Vertically align dynamically wrapped lines to indentation depth:"
@@ -8990,12 +9018,6 @@ msgstr "Ҷудокунии Намуди %1"
 #~| msgid "Character"
 #~ msgctxt "spinbox special value for 1"
 #~ msgid "1 character"
-#~ msgstr "Ҳарф"
-
-#, fuzzy
-#~| msgid "Character"
-#~ msgctxt "suffix for spinbox >1"
-#~ msgid " characters"
 #~ msgstr "Ҳарф"
 
 #, fuzzy
