@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discover\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-11-17 00:29+0000\n"
+"POT-Creation-Date: 2021-11-20 00:28+0000\n"
 "PO-Revision-Date: 2020-08-25 12:44+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -1579,54 +1579,63 @@ msgstr ""
 msgid "Future"
 msgstr ""
 
-#: libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp:412
+#: libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp:428
+#, kde-format
+msgid ""
+"This update cannot be completed as it would remove the following software "
+"which is critical to the system's operation:<nl/><ul><li>%1</li></ul><nl/>If "
+"you believe this is an error, please report it as a bug to the packagers of "
+"your distribution."
+msgstr ""
+
+#: libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp:435
 #, kde-format
 msgid "Packages to remove"
 msgstr ""
 
-#: libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp:413
+#: libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp:436
 #, kde-format
 msgid ""
 "The following packages will be removed by the update:<ul><li>%1</li></ul><br/"
 ">in order to install:<ul><li>%2</li></ul>"
 msgstr ""
 
-#: libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp:507
+#: libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp:531
 #, kde-kuit-format
 msgctxt "@info"
 msgid "%1:<nl/><nl/>%2"
 msgstr ""
 
-#: libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp:515
-#: libdiscover/backends/PackageKitBackend/PKTransaction.cpp:298
+#: libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp:539
+#: libdiscover/backends/PackageKitBackend/PKTransaction.cpp:308
 #, kde-format
 msgid ""
 "Media Change of type '%1' is requested.\n"
 "%2"
 msgstr ""
 
-#: libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp:548
-#: libdiscover/backends/PackageKitBackend/PKTransaction.cpp:277
+#: libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp:572
+#: libdiscover/backends/PackageKitBackend/PKTransaction.cpp:287
 #, kde-format
 msgid "Accept EULA"
 msgstr ""
 
-#: libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp:549
-#: libdiscover/backends/PackageKitBackend/PKTransaction.cpp:278
+#: libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp:573
+#: libdiscover/backends/PackageKitBackend/PKTransaction.cpp:288
 #, kde-format
 msgid ""
 "The package %1 and its vendor %2 require that you accept their license:\n"
 " %3"
 msgstr ""
 
-#: libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp:666
-#: libdiscover/backends/PackageKitBackend/PKTransaction.cpp:315
+#: libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp:690
+#: libdiscover/backends/PackageKitBackend/PKTransaction.cpp:325
 #, kde-format
 msgid "Missing signature for %1 in %2"
 msgstr ""
 
-#: libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp:667
-#: libdiscover/backends/PackageKitBackend/PKTransaction.cpp:316
+#: libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp:691
+#: libdiscover/backends/PackageKitBackend/PKTransaction.cpp:326
 #, kde-format
 msgid ""
 "Do you trust the following key?\n"
@@ -1638,12 +1647,21 @@ msgid ""
 "Timestamp: %4\n"
 msgstr ""
 
-#: libdiscover/backends/PackageKitBackend/PKTransaction.cpp:191
+#: libdiscover/backends/PackageKitBackend/PKTransaction.cpp:188
+#, kde-format
+msgid ""
+"This action cannot be completed as it would remove the following software "
+"which is critical to the system's operation:<nl/><ul><li>%1</li></ul><nl/>If "
+"you believe this is an error, please report it as a bug to the packagers of "
+"your distribution."
+msgstr ""
+
+#: libdiscover/backends/PackageKitBackend/PKTransaction.cpp:201
 #, kde-format
 msgid "Confirm package removal"
 msgstr ""
 
-#: libdiscover/backends/PackageKitBackend/PKTransaction.cpp:192
+#: libdiscover/backends/PackageKitBackend/PKTransaction.cpp:202
 #, kde-format
 msgid ""
 "This action will also remove the following package:\n"
@@ -1757,7 +1775,7 @@ msgctxt "@action Checks the Internet for updates"
 msgid "Check for Updates"
 msgstr "Омодагии навсозиҳоро тафтиш кунед"
 
-#: libdiscover/resources/ResourcesUpdatesModel.cpp:108
+#: libdiscover/resources/ResourcesUpdatesModel.cpp:109
 #, fuzzy, kde-format
 #| msgid "Update"
 msgid "Updates"
