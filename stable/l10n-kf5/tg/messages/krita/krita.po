@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-04-01 02:31+0000\n"
+"POT-Creation-Date: 2022-04-06 02:09+0000\n"
 "PO-Revision-Date: 2019-09-29 12:46+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -15897,7 +15897,7 @@ msgstr ""
 
 #: libs/impex/KisExportCheckRegistry.cpp:111 libs/ui/kis_mask_manager.cc:210
 #: libs/ui/kis_node_manager.cpp:1294
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:214
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:215
 #: plugins/impex/psd/psd_loader.cpp:288
 #: plugins/impex/xcf/kis_xcf_import.cpp:273
 #, kde-format
@@ -17427,9 +17427,9 @@ msgstr ""
 #: libs/ui/animation/KisDlgImportVideoAnimation.cpp:540
 #: libs/ui/animation/KisDlgImportVideoAnimation.cpp:561
 #: libs/ui/animation/KisDlgImportVideoAnimation.cpp:568
-#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:669
-#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:727
-#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:752
+#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:637
+#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:677
+#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:737
 #: libs/ui/dialogs/kis_dlg_layer_style.cpp:354
 #: libs/ui/dialogs/kis_dlg_preferences.cc:562
 #: libs/ui/input/kis_tablet_debugger.cpp:96 libs/ui/kis_custom_pattern.cc:131
@@ -18685,27 +18685,27 @@ msgstr ""
 msgid "No FFMpeg found!"
 msgstr ""
 
-#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:669
-#, kde-format
-msgid "No video stream could be found!"
-msgstr ""
-
-#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:727
-#, kde-format
-msgid "Failed to load video information"
-msgstr ""
-
-#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:752
+#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:637
 #, kde-format
 msgid "Your FFMpeg version does not support this format"
 msgstr ""
 
-#: libs/ui/animation/KisFFMpegWrapper.cpp:305
+#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:677
+#, kde-format
+msgid "No video stream could be found!"
+msgstr ""
+
+#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:737
+#, kde-format
+msgid "Failed to load video information"
+msgstr ""
+
+#: libs/ui/animation/KisFFMpegWrapper.cpp:329
 #, kde-format
 msgid "FFMpeg Crashed"
 msgstr ""
 
-#: libs/ui/animation/KisFFMpegWrapper.cpp:518
+#: libs/ui/animation/KisFFMpegWrapper.cpp:535
 #, kde-format
 msgctxt "Video information probing dialog. arg1: frame number."
 msgid "Loading video data... %1 frames examined."
@@ -36002,22 +36002,22 @@ msgid ""
 "file."
 msgstr ""
 
-#: plugins/dockers/storyboarddocker/KisAddRemoveStoryboardCommand.cpp:19
+#: plugins/dockers/storyboarddocker/KisAddRemoveStoryboardCommand.cpp:20
 msgctxt "(qtundo-format)"
 msgid "Add Storyboard Scene"
 msgstr ""
 
-#: plugins/dockers/storyboarddocker/KisAddRemoveStoryboardCommand.cpp:71
+#: plugins/dockers/storyboarddocker/KisAddRemoveStoryboardCommand.cpp:72
 msgctxt "(qtundo-format)"
 msgid "Remove Storyboard Scene"
 msgstr ""
 
-#: plugins/dockers/storyboarddocker/KisAddRemoveStoryboardCommand.cpp:100
+#: plugins/dockers/storyboarddocker/KisAddRemoveStoryboardCommand.cpp:101
 msgctxt "(qtundo-format)"
 msgid "Move Storyboard Scene"
 msgstr ""
 
-#: plugins/dockers/storyboarddocker/KisAddRemoveStoryboardCommand.cpp:154
+#: plugins/dockers/storyboarddocker/KisAddRemoveStoryboardCommand.cpp:155
 msgctxt "(qtundo-format)"
 msgid "Edit Storyboard Child"
 msgstr ""
@@ -36070,7 +36070,7 @@ msgid "Add Scene"
 msgstr ""
 
 #: plugins/dockers/storyboarddocker/StoryboardDockerDock.cpp:252
-#: plugins/dockers/storyboarddocker/StoryboardView.cpp:290
+#: plugins/dockers/storyboarddocker/StoryboardView.cpp:298
 #, kde-format
 msgctxt "Remove current scene from storyboards"
 msgid "Remove Scene"
@@ -36100,6 +36100,12 @@ msgstr ""
 #, kde-format
 msgctxt "Add scene before active scene"
 msgid "Add Scene Before"
+msgstr ""
+
+#: plugins/dockers/storyboarddocker/StoryboardView.cpp:291
+#, kde-format
+msgctxt "Duplicate current scene from storyboard docker"
+msgid "Duplicate Scene"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -42336,7 +42342,7 @@ msgctxt "@title:window"
 msgid "File not found"
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:262
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:263
 #, kde-format
 msgctxt "Warning during loading a kra file with a filter layer"
 msgid ""
@@ -42344,7 +42350,7 @@ msgid ""
 "selection."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:325
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:326
 #, kde-format
 msgctxt "Loading a .kra file"
 msgid ""
@@ -42352,74 +42358,74 @@ msgid ""
 "layer will be converted into a paint layer."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:393
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:394
 #, kde-format
 msgid "Could not load \"id\" of the transform mask"
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:407
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:408
 #, kde-format
 msgid "Could not create transform mask params"
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:560
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:561
 #, kde-format
 msgid "Could not find keyframe pixel data for frame %1 in %2."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:568
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:569
 #, kde-format
 msgid "Could not load keyframe pixel data for frame %1 in %2."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:597
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:598
 #, kde-format
 msgid "Could not read pixel data: %1."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:604
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:605
 #, kde-format
 msgid "Could not load pixel data: %1."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:620
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:621
 #, kde-format
 msgid "Could not load profile: %1."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:675
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:676
 #, kde-format
 msgid "Could not filter configuration %1."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:716
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:717
 #, kde-format
 msgid "Could not load metadata for layer %1."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:759
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:760
 #, kde-format
 msgid "Could not load vector selection %1."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:775
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:776
 #, kde-format
 msgid "Could not load raster selection %1."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:805
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:806
 #, kde-format
 msgid "Could not load keyframes from %1."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:819
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:820
 #, kde-format
 msgid ""
 "parsing error in the keyframe file %1 at line %2, column %3\n"
 "Error message: %4"
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:832
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:833
 #, kde-format
 msgid "unknown keyframe channel type: %1 in %2"
 msgstr ""
