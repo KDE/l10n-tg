@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discover\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-05-14 00:45+0000\n"
+"POT-Creation-Date: 2022-05-26 00:45+0000\n"
 "PO-Revision-Date: 2020-08-27 11:51+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 20.04.2\n"
 
-#: discover/DiscoverObject.cpp:150
+#: discover/DiscoverObject.cpp:153
 #, kde-format
 msgid ""
 "Discover currently cannot be used to install any apps because none of its "
@@ -25,34 +25,46 @@ msgid ""
 "your distribution."
 msgstr ""
 
-#: discover/DiscoverObject.cpp:235
+#: discover/DiscoverObject.cpp:238
 #, kde-format
 msgid "Could not find category '%1'"
 msgstr ""
 
-#: discover/DiscoverObject.cpp:272
+#: discover/DiscoverObject.cpp:275
 #, kde-format
 msgid ""
 "Cannot interact with flatpak resources without the flatpak backend %1. "
 "Please install it first."
 msgstr ""
 
-#: discover/DiscoverObject.cpp:276
+#: discover/DiscoverObject.cpp:279
 #, fuzzy, kde-format
 #| msgid "Couldn't open %1"
 msgid "Could not open %1"
 msgstr "Кушодани %1 қатъ шуд"
 
-#: discover/DiscoverObject.cpp:304
+#: discover/DiscoverObject.cpp:307
 #, kde-format
 msgid "Please make sure Snap support is installed"
 msgstr ""
 
-#: discover/DiscoverObject.cpp:307
+#: discover/DiscoverObject.cpp:310
 #, kde-format
 msgid ""
 "Could not open %1 because it was not found in any available software "
 "repositories. Please report this issue to the packagers of your distribution."
+msgstr ""
+
+#: discover/DiscoverObject.cpp:371 discover/DiscoverObject.cpp:372
+#: discover/main.cpp:113
+#, kde-format
+msgid "Discover"
+msgstr "Кашфиёт"
+
+#: discover/DiscoverObject.cpp:372
+#, kde-format
+msgid ""
+"Discover was closed before certain tasks were done, waiting for it to finish."
 msgstr ""
 
 #: discover/main.cpp:44
@@ -109,11 +121,6 @@ msgstr ""
 #, kde-format
 msgid "Supports appstream: url scheme"
 msgstr ""
-
-#: discover/main.cpp:113
-#, kde-format
-msgid "Discover"
-msgstr "Кашфиёт"
 
 #: discover/main.cpp:115
 #, kde-format
@@ -205,7 +212,7 @@ msgstr "Илова кардани анбори додаҳои нави %1"
 msgid "Add"
 msgstr "Илова кардан"
 
-#: discover/qml/AddSourceDialog.qml:70 discover/qml/DiscoverWindow.qml:260
+#: discover/qml/AddSourceDialog.qml:70 discover/qml/DiscoverWindow.qml:257
 #: discover/qml/InstallApplicationButton.qml:41
 #: discover/qml/ProgressView.qml:104 discover/qml/SourcesPage.qml:159
 #: discover/qml/UpdatesPage.qml:210
@@ -588,36 +595,23 @@ msgstr "Дар бораи барнома"
 msgid "S&ettings"
 msgstr "Танзимот"
 
-#: discover/qml/DiscoverWindow.qml:144 discover/qml/DiscoverWindow.qml:332
+#: discover/qml/DiscoverWindow.qml:144 discover/qml/DiscoverWindow.qml:331
 #, kde-format
 msgid "Error"
 msgstr ""
 
 #: discover/qml/DiscoverWindow.qml:148
-#, fuzzy, kde-format
-#| msgid "Could not close Discover, there are tasks that need to be done."
-msgid "Could not close Discover because some tasks are still in progress."
-msgstr ""
-"Пӯшидани барномаи Кашфиёт ғайриимкон аст, зеро ки якчанд вазифа бояд ба "
-"анҷом расанд."
-
-#: discover/qml/DiscoverWindow.qml:148
-#, kde-format
-msgid "Quit Anyway"
-msgstr "Ба ҳар ҳол пӯшидан"
-
-#: discover/qml/DiscoverWindow.qml:151
 #, kde-format
 msgid "Unable to find resource: %1"
 msgstr "Манбаи зерин ёфт нашуд: %1"
 
-#: discover/qml/DiscoverWindow.qml:208 discover/qml/DiscoverWindow.qml:304
+#: discover/qml/DiscoverWindow.qml:205 discover/qml/DiscoverWindow.qml:301
 #: discover/qml/UpdatesPage.qml:107
 #, kde-format
 msgid "Report this issue"
 msgstr ""
 
-#: discover/qml/DiscoverWindow.qml:247 discover/qml/SourcesPage.qml:149
+#: discover/qml/DiscoverWindow.qml:244 discover/qml/SourcesPage.qml:149
 #, kde-format
 msgid "Proceed"
 msgstr "Иҷро кардан"
@@ -1072,6 +1066,16 @@ msgstr "Омодагии навсозиҳо бояд тафтиш карда ш�
 msgctxt "@info"
 msgid "Time of last update unknown"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Could not close Discover, there are tasks that need to be done."
+#~ msgid "Could not close Discover because some tasks are still in progress."
+#~ msgstr ""
+#~ "Пӯшидани барномаи Кашфиёт ғайриимкон аст, зеро ки якчанд вазифа бояд ба "
+#~ "анҷом расанд."
+
+#~ msgid "Quit Anyway"
+#~ msgstr "Ба ҳар ҳол пӯшидан"
 
 #, fuzzy
 #~| msgid "Loading..."
