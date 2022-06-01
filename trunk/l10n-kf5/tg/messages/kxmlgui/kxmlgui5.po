@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-05-22 00:42+0000\n"
+"POT-Creation-Date: 2022-06-01 00:44+0000\n"
 "PO-Revision-Date: 2019-09-19 18:05+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -613,13 +613,16 @@ msgid "&Submit Bug Report"
 msgstr "&Пешниҳоди гузориш дар бораи хато"
 
 #: kbugreport.cpp:380
-#, fuzzy, kde-format
-#| msgid "Could not find '%1' executable."
-msgctxt "The arg is the command kcmshell5"
-msgid "Could not find '%1' executable in PATH."
-msgstr "Барнома бо номи '%1' ёфт нашуд."
+#, kde-format
+msgctxt ""
+"The second arg is 'kde-cli-tools' which is the package that contains "
+"kcmshell5 (the first arg)"
+msgid ""
+"Could not find <application>%1</application> executable (usually it's part "
+"of the \"%2\" package)."
+msgstr ""
 
-#: kbugreport.cpp:430
+#: kbugreport.cpp:432
 #, kde-format
 msgid ""
 "You must specify both a subject and a description before the report can be "
@@ -628,7 +631,7 @@ msgstr ""
 "Пеш аз он ки гузориш тавонад фиристода шавад, шумо бояд мавзӯъ ва тафсилотро "
 "муайян намоед."
 
-#: kbugreport.cpp:439
+#: kbugreport.cpp:441
 #, kde-format
 msgid ""
 "<p>You chose the severity <b>Critical</b>. Please note that this severity is "
@@ -649,7 +652,7 @@ msgstr ""
 "вуҷуд меорад? Агар хатои муайяншуда ягон вайроншавии мазкур ба вуҷуд наорад, "
 "лутфан, ҷиддиятеро бо дараҷаи паст интихоб намоед. Ташаккур.</p>"
 
-#: kbugreport.cpp:455
+#: kbugreport.cpp:457
 #, kde-format
 msgid ""
 "<p>You chose the severity <b>Grave</b>. Please note that this severity is "
@@ -670,7 +673,7 @@ msgstr ""
 "вуҷуд меорад? Агар хатои муайяншуда ягон вайроншавии мазкур ба вуҷуд наорад, "
 "лутфан, ҷиддиятеро бо дараҷаи паст интихоб намоед. Ташаккур.</p>"
 
-#: kbugreport.cpp:474
+#: kbugreport.cpp:476
 #, kde-format
 msgid ""
 "Unable to send the bug report.\n"
@@ -681,12 +684,12 @@ msgstr ""
 "Лутфан, гузоришро дар бораи хато ба таври дастӣ фиристонед....\n"
 "Барои гирифтани дастур ба сомонаи https://bugs.kde.org/ гузаред."
 
-#: kbugreport.cpp:481
+#: kbugreport.cpp:483
 #, kde-format
 msgid "Bug report sent, thank you for your input."
 msgstr "Гузориш дар бораи хато фиристода шуд. Ташаккур барои саҳми шумо."
 
-#: kbugreport.cpp:489
+#: kbugreport.cpp:491
 #, kde-format
 msgid ""
 "Close and discard\n"
@@ -695,7 +698,7 @@ msgstr ""
 "Паёми таҳриршударо\n"
 "пӯшида, бекор мекунед?"
 
-#: kbugreport.cpp:490
+#: kbugreport.cpp:492
 #, fuzzy, kde-format
 #| msgid "Close Message"
 msgctxt "@title:window"
@@ -1724,6 +1727,12 @@ msgstr "&Танзимот"
 #, kde-format
 msgid "Main Toolbar"
 msgstr "Навори абзорҳои асосӣ"
+
+#, fuzzy
+#~| msgid "Could not find '%1' executable."
+#~ msgctxt "The arg is the command kcmshell5"
+#~ msgid "Could not find '%1' executable in PATH."
+#~ msgstr "Барнома бо номи '%1' ёфт нашуд."
 
 #~ msgid ""
 #~ "<ul><li>KDE Frameworks %1</li><li>Qt %2 (built against %3)</li><li>The "
