@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-07 00:49+0000\n"
+"POT-Creation-Date: 2022-09-09 00:47+0000\n"
 "PO-Revision-Date: 2019-09-27 23:59+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -1657,9 +1657,9 @@ msgid "Clipboard"
 msgstr ""
 
 #: src/commands/importcertificatefromdatacommand.cpp:74
-#: src/view/padwidget.cpp:136 src/view/padwidget.cpp:331
-#: src/view/padwidget.cpp:332 src/view/padwidget.cpp:400
-#: src/view/padwidget.cpp:401
+#: src/view/padwidget.cpp:138 src/view/padwidget.cpp:331
+#: src/view/padwidget.cpp:332 src/view/padwidget.cpp:413
+#: src/view/padwidget.cpp:414
 #, kde-format
 msgid "Notepad"
 msgstr ""
@@ -4826,14 +4826,14 @@ msgstr ""
 
 #: src/crypto/gui/resolverecipientspage.cpp:402
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:364
-#: src/view/padwidget.cpp:171
+#: src/view/padwidget.cpp:173
 #, kde-format
 msgid "OpenPGP"
 msgstr ""
 
 #: src/crypto/gui/resolverecipientspage.cpp:406
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:365
-#: src/view/padwidget.cpp:172
+#: src/view/padwidget.cpp:174
 #, kde-format
 msgid "S/MIME"
 msgstr ""
@@ -5298,18 +5298,39 @@ msgctxt "Lineedit accessible name"
 msgid "Output directory"
 msgstr ""
 
+#: src/crypto/gui/signencryptfileswizard.cpp:449
+#, fuzzy, kde-format
+#| msgid "For &signing only"
+msgctxt "@action:button"
+msgid "Sign"
+msgstr "Танҳо барои &имзоот"
+
+#: src/crypto/gui/signencryptfileswizard.cpp:452
+#, fuzzy, kde-format
+#| msgid "For &encrypting only"
+msgctxt "@action:button"
+msgid "Encrypt"
+msgstr "Танҳо барои &рамзгузорӣ"
+
 #: src/crypto/gui/signencryptfileswizard.cpp:455
+#, fuzzy, kde-format
+#| msgid "For &encrypting only"
+msgctxt "@action:button"
+msgid "Sign / Encrypt"
+msgstr "Танҳо барои &рамзгузорӣ"
+
+#: src/crypto/gui/signencryptfileswizard.cpp:469
 #, kde-format
 msgid "Next"
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:521
+#: src/crypto/gui/signencryptfileswizard.cpp:535
 #, kde-format
 msgctxt "@title"
 msgid "Results"
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:523
+#: src/crypto/gui/signencryptfileswizard.cpp:537
 #, kde-format
 msgctxt "@title"
 msgid "Status and progress of the crypto operations is shown here."
@@ -5369,34 +5390,13 @@ msgctxt "text for screen readers"
 msgid "recipient key"
 msgstr "Тасвирот"
 
-#: src/crypto/gui/signencryptwidget.cpp:488
-#, fuzzy, kde-format
-#| msgid "For &encrypting only"
-msgctxt "@action"
-msgid "Sign / Encrypt"
-msgstr "Танҳо барои &рамзгузорӣ"
-
-#: src/crypto/gui/signencryptwidget.cpp:490
-#, fuzzy, kde-format
-#| msgid "For &encrypting only"
-msgctxt "@action"
-msgid "Encrypt"
-msgstr "Танҳо барои &рамзгузорӣ"
-
-#: src/crypto/gui/signencryptwidget.cpp:492
-#, fuzzy, kde-format
-#| msgid "For &signing only"
-msgctxt "@action"
-msgid "Sign"
-msgstr "Танҳо барои &имзоот"
-
-#: src/crypto/gui/signencryptwidget.cpp:667
+#: src/crypto/gui/signencryptwidget.cpp:665
 #, fuzzy, kde-format
 #| msgid "Could not generate certificate: %1"
 msgid "Could not find a key for the following recipients:"
 msgstr "Наметавонам сертификаи зеринро эҷод кунам: %1"
 
-#: src/crypto/gui/signencryptwidget.cpp:669
+#: src/crypto/gui/signencryptwidget.cpp:667
 #, fuzzy, kde-format
 #| msgid ""
 #| "Failed to execute gpgsm:\n"
@@ -6891,7 +6891,7 @@ msgstr ""
 msgid "Lookup on Server"
 msgstr "Хатои мудири сертификатҳо"
 
-#: src/dialogs/lookupcertificatesdialog.cpp:201 src/view/padwidget.cpp:480
+#: src/dialogs/lookupcertificatesdialog.cpp:201
 #, fuzzy, kde-format
 #| msgid "Imported:"
 msgid "Import"
@@ -11108,7 +11108,7 @@ msgctxt "%1 is a smartcard manufacturer"
 msgid "%1 PKCS#15 card"
 msgstr ""
 
-#: src/view/padwidget.cpp:83 src/view/padwidget.cpp:491
+#: src/view/padwidget.cpp:83
 #, fuzzy, kde-format
 #| msgid "For &encrypting only"
 msgid "Sign / Encrypt Notepad"
@@ -11121,17 +11121,23 @@ msgid "Decrypt / Verify Notepad"
 msgstr "Ҳузфи калидҳо..."
 
 #: src/view/padwidget.cpp:85
+#, fuzzy, kde-format
+#| msgid "Imported:"
+msgid "Import Notepad"
+msgstr "Воридкардашуда:"
+
+#: src/view/padwidget.cpp:86
 #, kde-format
 msgid "Revert"
 msgstr ""
 
-#: src/view/padwidget.cpp:112
+#: src/view/padwidget.cpp:114
 #, fuzzy, kde-format
 #| msgid "For signing &and encrypting"
 msgid "Signing and encryption is not possible."
 msgstr "Барои имзо &ва рамзгузорӣ"
 
-#: src/view/padwidget.cpp:114
+#: src/view/padwidget.cpp:116
 #, kde-kuit-format
 msgctxt ""
 "@info %1 is a placeholder for the name of a compliance mode. E.g. NATO "
@@ -11142,18 +11148,18 @@ msgid ""
 "<application>Kleopatra</application> is not %1.</para>"
 msgstr ""
 
-#: src/view/padwidget.cpp:148
+#: src/view/padwidget.cpp:150
 #, kde-format
 msgid "<h3>Protocol:</h3>"
 msgstr ""
 
-#: src/view/padwidget.cpp:154
+#: src/view/padwidget.cpp:156
 #, fuzzy, kde-format
 #| msgid "Description"
 msgid "Recipients"
 msgstr "Тасвирот"
 
-#: src/view/padwidget.cpp:156
+#: src/view/padwidget.cpp:158
 #, kde-format
 msgid "Enter a message to encrypt or decrypt..."
 msgstr ""
@@ -11171,7 +11177,7 @@ msgstr "Танҳо барои &рамзгузорӣ"
 msgid "Decrypt / Verify"
 msgstr "Ҳузфи калидҳо..."
 
-#: src/view/padwidget.cpp:392
+#: src/view/padwidget.cpp:393
 #, kde-kuit-format
 msgctxt ""
 "@info %1 is a placeholder for the name of a compliance mode. E.g. NATO "
@@ -11182,18 +11188,53 @@ msgid ""
 "<application>Kleopatra</application> is not %1.</para>"
 msgstr ""
 
-#: src/view/padwidget.cpp:441
+#: src/view/padwidget.cpp:402
+#, fuzzy, kde-format
+#| msgid "Canceled."
+msgctxt "@info:progress"
+msgid "Signing notepad..."
+msgstr "Барҳам дода шуд."
+
+#: src/view/padwidget.cpp:405
+#, fuzzy, kde-format
+#| msgid "Certificate Deletion Failed"
+msgctxt "@info:progress"
+msgid "Encrypting notepad..."
+msgstr "Наметавонам сертификатро ҳузф кунам"
+
+#: src/view/padwidget.cpp:408
+#, fuzzy, kde-format
+#| msgid "For signing &and encrypting"
+msgctxt "@info:progress"
+msgid "Signing and encrypting notepad..."
+msgstr "Барои имзо &ва рамзгузорӣ"
+
+#: src/view/padwidget.cpp:454
 #, fuzzy, kde-format
 #| msgid "Imported:"
 msgid "Importing..."
 msgstr "Воридкардашуда:"
 
-#: src/view/padwidget.cpp:479 src/view/padwidget.cpp:488
-#, kde-format
-msgctxt ""
-"1 is an operation to apply to the notepad. Like Sign/Encrypt or just Encrypt."
-msgid "%1 Notepad"
-msgstr ""
+#: src/view/padwidget.cpp:494
+#, fuzzy, kde-format
+#| msgid "For &encrypting only"
+msgctxt "@action:button"
+msgid "Sign Notepad"
+msgstr "Танҳо барои &рамзгузорӣ"
+
+#: src/view/padwidget.cpp:497
+#, fuzzy, kde-format
+#| msgid "For &encrypting only"
+msgctxt "@action:button"
+msgid "Encrypt Notepad"
+msgstr "Танҳо барои &рамзгузорӣ"
+
+#: src/view/padwidget.cpp:501
+#, fuzzy, kde-format
+#| msgid "For &encrypting only"
+msgctxt "@action:button"
+msgid "Sign / Encrypt Notepad"
+msgstr "Танҳо барои &рамзгузорӣ"
 
 #: src/view/pgpcardwidget.cpp:144
 #, kde-format
@@ -11850,6 +11891,18 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+#~| msgid "For &encrypting only"
+#~ msgctxt "@action"
+#~ msgid "Encrypt"
+#~ msgstr "Танҳо барои &рамзгузорӣ"
+
+#, fuzzy
+#~| msgid "For &signing only"
+#~ msgctxt "@action"
+#~ msgid "Sign"
+#~ msgstr "Танҳо барои &имзоот"
+
+#, fuzzy
 #~| msgid "Certificate Deletion Failed"
 #~ msgctxt ""
 #~ "%1 is a placeholder for the name of a compliance mode. E.g. NATO "
@@ -12226,11 +12279,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Наметавонам gpgsm-ро иҷро кунам:\n"
 #~ " %1"
-
-#, fuzzy
-#~| msgid "For &signing only"
-#~ msgid "Sign"
-#~ msgstr "Танҳо барои &имзоот"
 
 #, fuzzy
 #~| msgid "Subject"
