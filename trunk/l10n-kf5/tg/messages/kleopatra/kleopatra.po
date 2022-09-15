@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"POT-Creation-Date: 2022-09-15 00:46+0000\n"
 "PO-Revision-Date: 2019-09-27 23:59+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -264,7 +264,33 @@ msgctxt "@info"
 msgid "Writing the certificate to the card succeeded."
 msgstr "Воридоти сертификатҳо..."
 
-#: src/commands/certifycertificatecommand.cpp:161
+#: src/commands/certifycertificatecommand.cpp:152
+#, fuzzy, kde-format
+#| msgid "Newly revoked:"
+msgctxt "@title:window"
+msgid "Key is Revoked"
+msgstr "Ба қарибӣ бар гардонида шуд:"
+
+#: src/commands/certifycertificatecommand.cpp:152
+#, kde-format
+msgctxt "@title:window"
+msgid "Key is Expired"
+msgstr ""
+
+#: src/commands/certifycertificatecommand.cpp:154
+#, fuzzy, kde-format
+#| msgid "CRL cache cleared successfully."
+msgctxt "@info"
+msgid "This key has been revoked. You cannot certify it."
+msgstr "Кеши CRL бомуваффақият пок карда шуд."
+
+#: src/commands/certifycertificatecommand.cpp:155
+#, kde-format
+msgctxt "@info"
+msgid "This key has expired. You cannot certify it."
+msgstr ""
+
+#: src/commands/certifycertificatecommand.cpp:171
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -272,30 +298,30 @@ msgid ""
 "certificate for yourself."
 msgstr ""
 
-#: src/commands/certifycertificatecommand.cpp:163
+#: src/commands/certifycertificatecommand.cpp:173
 #, kde-format
 msgid "Do you wish to create one now?"
 msgstr ""
 
-#: src/commands/certifycertificatecommand.cpp:164
+#: src/commands/certifycertificatecommand.cpp:174
 #, fuzzy, kde-format
 #| msgid "Certificate Deletion Failed"
 msgid "Certification Not Possible"
 msgstr "Наметавонам сертификатро ҳузф кунам"
 
-#: src/commands/certifycertificatecommand.cpp:222
+#: src/commands/certifycertificatecommand.cpp:232
 #, fuzzy, kde-format
 #| msgid "CRL cache cleared successfully."
 msgid "Certification successful."
 msgstr "Кеши CRL бомуваффақият пок карда шуд."
 
-#: src/commands/certifycertificatecommand.cpp:223
+#: src/commands/certifycertificatecommand.cpp:233
 #, fuzzy, kde-format
 #| msgid "Certificate Download Failed"
 msgid "Certification Succeeded"
 msgstr "Наметавонам сертификатро пурбор кунам."
 
-#: src/commands/certifycertificatecommand.cpp:225
+#: src/commands/certifycertificatecommand.cpp:235
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><p>An error occurred while trying to delete the certificates:</"
@@ -307,7 +333,7 @@ msgstr ""
 "<qt><p>Ҳангоми сайъи ҳузфи сертификат, хатогӣ рӯй дод:</p><p><b>%1</b></p></"
 "qt>"
 
-#: src/commands/certifycertificatecommand.cpp:229
+#: src/commands/certifycertificatecommand.cpp:239
 #, fuzzy, kde-format
 #| msgid "Certificate Manager Error"
 msgid "Certification Error"
@@ -5854,7 +5880,7 @@ msgid "User IDs:"
 msgstr "A.k.a."
 
 #: src/dialogs/certificatedetailswidget.cpp:213
-#: src/dialogs/certifywidget.cpp:367
+#: src/dialogs/certifywidget.cpp:368
 #, fuzzy, kde-format
 #| msgid "A.k.a."
 msgid "User IDs"
@@ -5941,7 +5967,7 @@ msgid "Change Validity"
 msgstr "Саҳеҳ"
 
 #: src/dialogs/certificatedetailswidget.cpp:298
-#: src/dialogs/certifywidget.cpp:337
+#: src/dialogs/certifywidget.cpp:338
 #, fuzzy, kde-format
 #| msgid "Fingerprint"
 msgid "Fingerprint:"
@@ -6360,7 +6386,7 @@ msgctxt "@title:window arg is name, email of certificate holder"
 msgid "Certify Certificate: %1"
 msgstr "Ҳузфи сертификатҳои CA"
 
-#: src/dialogs/certifywidget.cpp:321
+#: src/dialogs/certifywidget.cpp:322
 #, kde-format
 msgid ""
 "Verify the fingerprint, mark the user IDs you want to certify, and select "
@@ -6368,19 +6394,19 @@ msgid ""
 "fingerprint clearly identifies the key and its owner.</i>"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:342
+#: src/dialogs/certifywidget.cpp:343
 #, fuzzy, kde-format
 #| msgid "Certificate Usage"
 msgid "Certify with:"
 msgstr "Истифодаи сертификат"
 
-#: src/dialogs/certifywidget.cpp:354
+#: src/dialogs/certifywidget.cpp:355
 #, kde-format
 msgctxt "@action:button"
 msgid "Set Owner Trust"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:356
+#: src/dialogs/certifywidget.cpp:357
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -6388,84 +6414,84 @@ msgid ""
 "trust. This is what you usually want to do for your own keys."
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:372
+#: src/dialogs/certifywidget.cpp:373
 #, kde-format
 msgid "Advanced"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:372
+#: src/dialogs/certifywidget.cpp:373
 #, fuzzy, kde-format
 #| msgid "Canceled."
 msgid "Show advanced options"
 msgstr "Барҳам дода шуд."
 
-#: src/dialogs/certifywidget.cpp:378
+#: src/dialogs/certifywidget.cpp:379
 #, kde-format
 msgid "Certify for everyone to see (exportable)"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:385
+#: src/dialogs/certifywidget.cpp:386
 #, fuzzy, kde-format
 #| msgid "Certificate Manager Error"
 msgid "Publish on keyserver afterwards"
 msgstr "Хатои мудири сертификатҳо"
 
-#: src/dialogs/certifywidget.cpp:397
+#: src/dialogs/certifywidget.cpp:398
 #, kde-format
 msgid "Tags:"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:401
+#: src/dialogs/certifywidget.cpp:402
 #, kde-format
 msgid "You can use this to add additional info to a certification."
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:403
+#: src/dialogs/certifywidget.cpp:404
 #, kde-format
 msgid ""
 "Tags created by anyone with full certification trust are shown in the "
 "keylist and can be searched."
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:406
+#: src/dialogs/certifywidget.cpp:407
 #, kde-format
 msgid "Explain tags"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:419
+#: src/dialogs/certifywidget.cpp:420
 #, kde-format
 msgid "Expiration:"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:427
+#: src/dialogs/certifywidget.cpp:428
 #, kde-format
 msgid "The certification must be valid at least until tomorrow."
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:428
+#: src/dialogs/certifywidget.cpp:429
 #, fuzzy, kde-format
 #| msgid "Deleting CA Certificates"
 msgid "The latest allowed certification date is %1."
 msgstr "Ҳузфи сертификатҳои CA"
 
-#: src/dialogs/certifywidget.cpp:431
+#: src/dialogs/certifywidget.cpp:432
 #, kde-format
 msgctxt "Date for expiration of certification"
 msgid "Two years from now"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:432
+#: src/dialogs/certifywidget.cpp:433
 #, kde-format
 msgctxt "Date for expiration of certification"
 msgid "One year from now"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:437
+#: src/dialogs/certifywidget.cpp:438
 #, kde-format
 msgid "You can use this to set an expiration date for a certification."
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:439
+#: src/dialogs/certifywidget.cpp:440
 #, kde-format
 msgid ""
 "By setting an expiration date, you can limit the validity of your "
@@ -6473,23 +6499,23 @@ msgid ""
 "passed, your certification is no longer valid."
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:443
+#: src/dialogs/certifywidget.cpp:444
 #, fuzzy, kde-format
 #| msgid "Unchanged:"
 msgid "Explain expiration"
 msgstr "Таъғир дода нашуда:"
 
-#: src/dialogs/certifywidget.cpp:456
+#: src/dialogs/certifywidget.cpp:457
 #, kde-format
 msgid "Certify as trusted introducer"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:457
+#: src/dialogs/certifywidget.cpp:458
 #, kde-format
 msgid "You can use this to certify a trusted introducer for a domain."
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:459
+#: src/dialogs/certifywidget.cpp:460
 #, kde-format
 msgid ""
 "All certificates with email addresses belonging to the domain that have been "
@@ -6497,22 +6523,22 @@ msgid ""
 "introducer acts as a kind of intermediate CA for a domain."
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:464
+#: src/dialogs/certifywidget.cpp:465
 #, kde-format
 msgid "Explain trusted introducer"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:474
+#: src/dialogs/certifywidget.cpp:475
 #, kde-format
 msgid "Domain:"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:669
+#: src/dialogs/certifywidget.cpp:670
 #, kde-format
 msgid "Is this your own key?"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:684
+#: src/dialogs/certifywidget.cpp:685
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><p>An error occurred while trying to delete the certificates:</"
@@ -6523,13 +6549,13 @@ msgstr ""
 "<qt><p>Ҳангоми сайъи ҳузфи сертификат, хатогӣ рӯй дод:</p><p><b>%1</b></p></"
 "qt>"
 
-#: src/dialogs/certifywidget.cpp:687
+#: src/dialogs/certifywidget.cpp:688
 #, fuzzy, kde-format
 #| msgid "Certificate Download Failed"
 msgid "Certification Trust Change Failed"
 msgstr "Наметавонам сертификатро пурбор кунам."
 
-#: src/dialogs/certifywidget.cpp:694
+#: src/dialogs/certifywidget.cpp:695
 #, fuzzy, kde-format
 #| msgid "Certificate Download Failed"
 msgid "Owner trust set successfully."
