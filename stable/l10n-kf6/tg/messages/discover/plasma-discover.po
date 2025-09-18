@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discover\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-24 02:35+0000\n"
+"POT-Creation-Date: 2025-09-05 00:43+0000\n"
 "PO-Revision-Date: 2020-08-27 11:51+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -17,29 +17,23 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 20.04.2\n"
 
-#: discover/DiscoverObject.cpp:184
+#: discover/DiscoverObject.cpp:183
 #, kde-format
-msgctxt "@title %1 is the distro name"
+msgctxt "@title %1 is the name"
 msgid ""
 "%1 is not configured for installing apps through Discover—only app add-ons"
 msgstr ""
 
-#: discover/DiscoverObject.cpp:186
+#: discover/DiscoverObject.cpp:185
 #, kde-kuit-format
-msgctxt "@info:usagetip %1 is the distro name"
+msgctxt "@info:usagetip %2 is the name of the operating system"
 msgid ""
 "To use Discover for apps, install your preferred module on the "
 "<interface>Settings</interface> page, under <interface>Missing Backends</"
-"interface>."
+"interface>.<nl/><nl/>Please <link url='%1'>report this issue to %2.</link>"
 msgstr ""
 
-#: discover/DiscoverObject.cpp:189
-#, kde-format
-msgctxt "@action:button %1 is the distro name"
-msgid "Report This Issue to %1"
-msgstr ""
-
-#: discover/DiscoverObject.cpp:194
+#: discover/DiscoverObject.cpp:192
 #, kde-kuit-format
 msgctxt ""
 "@info:usagetip %1 is the distro name; in this case it always contains 'Arch "
@@ -51,7 +45,7 @@ msgid ""
 "packages/extra/x86_64/discover/'>%1's packaging for Discover</link>"
 msgstr ""
 
-#: discover/DiscoverObject.cpp:207
+#: discover/DiscoverObject.cpp:202
 #, kde-kuit-format
 msgctxt "@info:usagetip %1 is the distro name"
 msgid ""
@@ -63,58 +57,58 @@ msgid ""
 "packages.</para>"
 msgstr ""
 
-#: discover/DiscoverObject.cpp:296
+#: discover/DiscoverObject.cpp:291
 #, kde-format
 msgid "Could not find category '%1'"
 msgstr ""
 
-#: discover/DiscoverObject.cpp:318
+#: discover/DiscoverObject.cpp:313
 #, kde-format
 msgid "Trying to open inexisting file '%1'"
 msgstr ""
 
-#: discover/DiscoverObject.cpp:340
+#: discover/DiscoverObject.cpp:335
 #, kde-format
 msgid ""
 "Cannot interact with flatpak resources without the flatpak backend %1. "
 "Please install it first."
 msgstr ""
 
-#: discover/DiscoverObject.cpp:344
+#: discover/DiscoverObject.cpp:339
 #, fuzzy, kde-format
 #| msgid "Couldn't open %1"
 msgid "Could not open %1"
 msgstr "Кушодани %1 қатъ шуд"
 
-#: discover/DiscoverObject.cpp:409
+#: discover/DiscoverObject.cpp:404
 #, kde-format
 msgid "Please make sure Snap support is installed"
 msgstr ""
 
-#: discover/DiscoverObject.cpp:412
+#: discover/DiscoverObject.cpp:407
 #, kde-format
 msgid ""
-"Could not open %1 because it was not found in any available software "
-"repositories."
+"The requested application could not be found in any available software "
+"repositories"
 msgstr ""
 
-#: discover/DiscoverObject.cpp:416
-#, kde-format
-msgid "Please report this issue to the packagers of your distribution."
+#: discover/DiscoverObject.cpp:410
+#, kde-kuit-format
+msgctxt ""
+"@info %1 is an additional error reference and %3 is the name of the "
+"operating system"
+msgid ""
+"(No entry for %1)<nl/><nl/>Please <link url='%2'>report this issue to %3.</"
+"link>"
 msgstr ""
 
-#: discover/DiscoverObject.cpp:419
-#, kde-format
-msgid "Report This Issue"
-msgstr ""
-
-#: discover/DiscoverObject.cpp:479 discover/DiscoverObject.cpp:481
+#: discover/DiscoverObject.cpp:473 discover/DiscoverObject.cpp:475
 #: discover/main.cpp:129
 #, kde-format
 msgid "Discover"
 msgstr "Кашфиёт"
 
-#: discover/DiscoverObject.cpp:482
+#: discover/DiscoverObject.cpp:476
 #, kde-format
 msgid ""
 "Discover was closed before certain tasks were done, waiting for it to finish."
@@ -454,10 +448,9 @@ msgstr ""
 
 #: discover/qml/ApplicationPage.qml:509
 #, kde-format
+msgctxt "Show all licenses of the package"
 msgid "See more…"
-msgid_plural "See more…"
-msgstr[0] ""
-msgstr[1] ""
+msgstr ""
 
 #: discover/qml/ApplicationPage.qml:521
 #, kde-format
@@ -494,93 +487,106 @@ msgstr ""
 msgid "What's New"
 msgstr "Навигариҳо"
 
-#: discover/qml/ApplicationPage.qml:747
+#: discover/qml/ApplicationPage.qml:746
 #, kde-format
 msgid "Reviews"
 msgstr "Тақризҳо"
 
-#: discover/qml/ApplicationPage.qml:758
+#: discover/qml/ApplicationPage.qml:757
 #, fuzzy, kde-format
 #| msgid "Reviews"
 msgid "Loading reviews for %1"
 msgstr "Тақризҳо"
 
-#: discover/qml/ApplicationPage.qml:767
+#: discover/qml/ApplicationPage.qml:766
 #, kde-format
 msgctxt "@info placeholder message"
 msgid "Reviews for %1 are temporarily unavailable"
 msgstr ""
 
-#: discover/qml/ApplicationPage.qml:789
+#: discover/qml/ApplicationPage.qml:773
+#, kde-format
+msgctxt "@Info placeholder message"
+msgid "No reviews posted yet"
+msgstr ""
+
+#: discover/qml/ApplicationPage.qml:774
+#, fuzzy, kde-format
+#| msgid "Write a review!"
+msgctxt "@info placeholder explanation"
+msgid "Install to write a review"
+msgstr "Тақризеро нависед!"
+
+#: discover/qml/ApplicationPage.qml:778 discover/qml/ApplicationPage.qml:822
+#, fuzzy, kde-format
+#| msgid "Write a review!"
+msgid "Write a Review"
+msgstr "Тақризеро нависед!"
+
+#: discover/qml/ApplicationPage.qml:778 discover/qml/ApplicationPage.qml:822
+#, fuzzy, kde-format
+#| msgid "Write a review!"
+msgid "Install to Write a Review"
+msgstr "Тақризеро нависед!"
+
+#: discover/qml/ApplicationPage.qml:806
 #, fuzzy, kde-format
 #| msgid "Review..."
 msgctxt "@action:button"
 msgid "Show All Reviews"
 msgstr "Тақриз..."
 
-#: discover/qml/ApplicationPage.qml:804
-#, fuzzy, kde-format
-#| msgid "Write a review!"
-msgid "Write a Review"
-msgstr "Тақризеро нависед!"
-
-#: discover/qml/ApplicationPage.qml:804
-#, fuzzy, kde-format
-#| msgid "Write a review!"
-msgid "Install to Write a Review"
-msgstr "Тақризеро нависед!"
-
-#: discover/qml/ApplicationPage.qml:826
+#: discover/qml/ApplicationPage.qml:844
 #, kde-format
 msgctxt "@title"
 msgid "External Links"
 msgstr ""
 
-#: discover/qml/ApplicationPage.qml:844
+#: discover/qml/ApplicationPage.qml:862
 #, fuzzy, kde-format
 #| msgid "Documentation:"
 msgctxt "@info text of a web URL"
 msgid "Read the documentation"
 msgstr "Ҳуҷҷатнигорӣ:"
 
-#: discover/qml/ApplicationPage.qml:855
+#: discover/qml/ApplicationPage.qml:873
 #, kde-format
 msgctxt "@info text of a web URL"
 msgid "Visit the project's website"
 msgstr ""
 
-#: discover/qml/ApplicationPage.qml:865
+#: discover/qml/ApplicationPage.qml:883
 #, kde-format
 msgctxt "@info text of a web URL"
 msgid "Donate to the project"
 msgstr ""
 
-#: discover/qml/ApplicationPage.qml:875
+#: discover/qml/ApplicationPage.qml:893
 #, fuzzy, kde-format
 #| msgid "Report a Problem:"
 msgctxt "@info text of a web URL"
 msgid "Report a bug"
 msgstr "Гузориш дар бораи мушкилӣ:"
 
-#: discover/qml/ApplicationPage.qml:885
+#: discover/qml/ApplicationPage.qml:903
 #, kde-format
 msgctxt "@info text of a web URL"
 msgid "Start contributing"
 msgstr ""
 
-#: discover/qml/ApplicationPage.qml:914
+#: discover/qml/ApplicationPage.qml:932
 #, fuzzy, kde-format
 #| msgid "License:"
 msgid "All Licenses"
 msgstr "Иҷозатнома:"
 
-#: discover/qml/ApplicationPage.qml:952
+#: discover/qml/ApplicationPage.qml:970
 #, fuzzy, kde-format
 #| msgid "Enter a rating"
 msgid "Content Rating"
 msgstr "Баҳо диҳед"
 
-#: discover/qml/ApplicationPage.qml:975
+#: discover/qml/ApplicationPage.qml:993
 #, fuzzy, kde-format
 #| msgid "Submitting usage information..."
 msgctxt "@title:window"
@@ -839,8 +845,8 @@ msgstr "Дар бораи барнома"
 msgid "S&ettings"
 msgstr "Танзимот"
 
-#: discover/qml/DiscoverWindow.qml:165 discover/qml/DiscoverWindow.qml:350
-#: discover/qml/DiscoverWindow.qml:462
+#: discover/qml/DiscoverWindow.qml:165 discover/qml/DiscoverWindow.qml:347
+#: discover/qml/DiscoverWindow.qml:459
 #, kde-format
 msgid "Error"
 msgstr ""
@@ -857,45 +863,46 @@ msgstr "Иҷро кардан"
 
 #: discover/qml/DiscoverWindow.qml:325
 #, kde-format
-msgid "Report this issue"
+msgctxt "@info %1 is the name of the operating system"
+msgid "Report this issue to %1"
 msgstr ""
 
-#: discover/qml/DiscoverWindow.qml:350
+#: discover/qml/DiscoverWindow.qml:347
 #, kde-format
 msgid "Error %1 of %2"
 msgstr ""
 
-#: discover/qml/DiscoverWindow.qml:350 discover/qml/UpdatesPage.qml:47
+#: discover/qml/DiscoverWindow.qml:347 discover/qml/UpdatesPage.qml:47
 #, kde-format
 msgid "Update Issue"
 msgstr "Мушкилии навсозӣ"
 
-#: discover/qml/DiscoverWindow.qml:361
+#: discover/qml/DiscoverWindow.qml:358
 #, kde-format
 msgid ""
 "There was an issue during the update or installation process. Please try "
 "again later."
 msgstr ""
 
-#: discover/qml/DiscoverWindow.qml:397
+#: discover/qml/DiscoverWindow.qml:394
 #, kde-format
 msgctxt "@action:button"
 msgid "Show Previous"
 msgstr ""
 
-#: discover/qml/DiscoverWindow.qml:408
+#: discover/qml/DiscoverWindow.qml:405
 #, fuzzy, kde-format
 #| msgid "Show contents"
 msgctxt "@action:button"
 msgid "Show Next"
 msgstr "Намоиш додани муҳтаво"
 
-#: discover/qml/DiscoverWindow.qml:420 discover/qml/UpdatesPage.qml:69
+#: discover/qml/DiscoverWindow.qml:417 discover/qml/UpdatesPage.qml:69
 #, kde-format
 msgid "See Technical Details"
 msgstr ""
 
-#: discover/qml/DiscoverWindow.qml:428
+#: discover/qml/DiscoverWindow.qml:425
 #, kde-format
 msgid "Copy to Clipboard"
 msgstr ""
@@ -1338,7 +1345,7 @@ msgstr ""
 msgid "Show contents"
 msgstr "Намоиш додани муҳтаво"
 
-#: discover/qml/SourcesPage.qml:325
+#: discover/qml/SourcesPage.qml:323
 #, kde-format
 msgid "Missing Backends"
 msgstr ""
@@ -1444,24 +1451,24 @@ msgstr ""
 msgid "Total size: %1"
 msgstr ""
 
-#: discover/qml/UpdatesPage.qml:327
+#: discover/qml/UpdatesPage.qml:322
 #, kde-format
 msgctxt "@action:button"
 msgid "Restart and Install Updates"
 msgstr ""
 
-#: discover/qml/UpdatesPage.qml:494
+#: discover/qml/UpdatesPage.qml:502
 #, kde-format
 msgid "Installing"
 msgstr "Дар ҳоли насбкунӣ"
 
-#: discover/qml/UpdatesPage.qml:527
+#: discover/qml/UpdatesPage.qml:535
 #, fuzzy, kde-format
 #| msgid "Update All"
 msgid "Update from:"
 msgstr "Ҳамаро навсозӣ кардан"
 
-#: discover/qml/UpdatesPage.qml:541
+#: discover/qml/UpdatesPage.qml:549
 #, kde-format
 msgctxt ""
 "%1 is the backend that provides this app, %2 is the specific repository or "
@@ -1469,13 +1476,13 @@ msgctxt ""
 msgid "%1 (%2)"
 msgstr ""
 
-#: discover/qml/UpdatesPage.qml:550
+#: discover/qml/UpdatesPage.qml:558
 #, fuzzy, kde-format
 #| msgid "More Information..."
 msgid "More Information…"
 msgstr "Маълумоти бештар..."
 
-#: discover/qml/UpdatesPage.qml:578
+#: discover/qml/UpdatesPage.qml:586
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Fetching updates..."
@@ -1483,38 +1490,38 @@ msgctxt "@info"
 msgid "Fetching updates…"
 msgstr "Дар ҳоли бозёбии навсозиҳо..."
 
-#: discover/qml/UpdatesPage.qml:592
+#: discover/qml/UpdatesPage.qml:600
 #, kde-format
 msgctxt "@info"
 msgid "Updates"
 msgstr "Навсозиҳо"
 
-#: discover/qml/UpdatesPage.qml:601
+#: discover/qml/UpdatesPage.qml:609
 #, kde-format
 msgctxt "@info"
 msgid "Updates will be installed after the system is restarted"
 msgstr ""
 
-#: discover/qml/UpdatesPage.qml:603
+#: discover/qml/UpdatesPage.qml:611
 #, kde-format
 msgctxt "@info"
 msgid "You can keep using the system if you're not ready to restart yet."
 msgstr ""
 
-#: discover/qml/UpdatesPage.qml:617 discover/qml/UpdatesPage.qml:624
-#: discover/qml/UpdatesPage.qml:631
+#: discover/qml/UpdatesPage.qml:625 discover/qml/UpdatesPage.qml:632
+#: discover/qml/UpdatesPage.qml:639
 #, kde-format
 msgctxt "@info"
 msgid "Up to date"
 msgstr "Нав аст"
 
-#: discover/qml/UpdatesPage.qml:638
+#: discover/qml/UpdatesPage.qml:646
 #, kde-format
 msgctxt "@info"
 msgid "Should check for updates"
 msgstr "Омодагии навсозиҳо бояд тафтиш карда шавад"
 
-#: discover/qml/UpdatesPage.qml:645
+#: discover/qml/UpdatesPage.qml:653
 #, kde-format
 msgctxt "@info"
 msgid "Time of last update unknown"

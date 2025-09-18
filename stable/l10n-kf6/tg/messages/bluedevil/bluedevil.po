@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bluedevil\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-28 02:38+0000\n"
+"POT-Creation-Date: 2025-08-10 00:44+0000\n"
 "PO-Revision-Date: 2019-09-30 19:29+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -26,6 +26,25 @@ msgstr "Victor Ibragimov"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "victor.ibragimov@gmail.com"
+
+#: applet/devicesproxymodel.cpp:51
+#, kde-format
+msgctxt "@title:column Blocked Bluetooth devices"
+msgid "Blocked"
+msgstr ""
+
+#: applet/devicesproxymodel.cpp:54
+#, fuzzy, kde-format
+#| msgid "Connect"
+msgctxt "@title:column Connected Bluetooth devices"
+msgid "Connected"
+msgstr "Пайваст кардан"
+
+#: applet/devicesproxymodel.cpp:56
+#, kde-format
+msgctxt "@title:column Available but not connected Bluetooth devices"
+msgid "Available"
+msgstr ""
 
 #: applet/devicesstateproxymodel.cpp:273
 #, kde-format
@@ -52,11 +71,18 @@ msgctxt "Notification when the connection failed due to NotReady"
 msgid "The device is not ready"
 msgstr ""
 
-#: kcm/bluetooth.cpp:104
+#: kcm/bluetooth.cpp:129
 #, kde-format
 msgctxt "DeviceName Network (Service)"
 msgid "%1 Network (%2)"
 msgstr ""
+
+#: kcm/bluetoothmoduledata.cpp:20
+#, fuzzy, kde-format
+#| msgid "Bluetooth Devices"
+msgctxt "@info:tooltip"
+msgid "Enable Bluetooth"
+msgstr "Дастгоҳҳои Bluetooth"
 
 #: kded/bluedevildaemon.cpp:68 kded/bluedevildaemon.cpp:70
 #, kde-format
@@ -286,12 +312,12 @@ msgstr ""
 msgid "External memory"
 msgstr ""
 
-#: sendfile/discoverwidget.cpp:134 wizard/pages/discover.cpp:353
+#: sendfile/discoverwidget.cpp:134 wizard/pages/discover.cpp:378
 #, kde-format
 msgid "Bluetooth is disabled."
 msgstr ""
 
-#: sendfile/discoverwidget.cpp:135 wizard/pages/discover.cpp:354
+#: sendfile/discoverwidget.cpp:135 wizard/pages/discover.cpp:379
 #, kde-format
 msgctxt "Action to enable Bluetooth adapter"
 msgid "Enable"
@@ -433,23 +459,23 @@ msgstr ""
 msgid "Add Bluetooth Device"
 msgstr "Илова кардани дастгоҳи нав"
 
-#: wizard/pages/discover.cpp:147
+#: wizard/pages/discover.cpp:170
 #, kde-format
 msgid "Select a device"
 msgstr ""
 
-#: wizard/pages/discover.cpp:346
+#: wizard/pages/discover.cpp:371
 #, kde-format
 msgctxt "Action to fix a problem"
 msgid "Fix it"
 msgstr ""
 
-#: wizard/pages/discover.cpp:356
+#: wizard/pages/discover.cpp:381
 #, kde-format
 msgid "Your Bluetooth adapter is not pairable."
 msgstr ""
 
-#: wizard/pages/discover.cpp:357
+#: wizard/pages/discover.cpp:382
 #, kde-format
 msgctxt "Action to make Bluetooth adapter pairable"
 msgid "Make Pairable"
@@ -461,20 +487,28 @@ msgstr ""
 msgid "Search…"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QCheckBox, showUnnamedDevicesCheckBox)
+#: wizard/pages/discover.ui:42
+#, fuzzy, kde-format
+#| msgctxt "'Auto accept' option value"
+#| msgid "Trusted devices"
+msgid "Show unnamed devices"
+msgstr "Дастгоҳҳои боэътибор"
+
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: wizard/pages/discover.ui:64
+#: wizard/pages/discover.ui:71
 #, kde-format
 msgid "Scanning…"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, manualPin)
-#: wizard/pages/discover.ui:84
+#: wizard/pages/discover.ui:91
 #, kde-format
 msgid "Manual PIN:"
 msgstr "ПИН-и дастӣ:"
 
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, pinText)
-#: wizard/pages/discover.ui:112
+#: wizard/pages/discover.ui:119
 #, kde-format
 msgid "0000"
 msgstr "0000"
@@ -550,11 +584,6 @@ msgctxt "Placeholder is device name"
 msgid "The device '%1' has been set up and can now be used."
 msgstr ""
 
-#, fuzzy
-#~| msgid "Bluetooth Devices"
-#~ msgid "Bluetooth"
-#~ msgstr "Дастгоҳҳои Bluetooth"
-
 #~ msgctxt "Radio widget to set if we want the adapter to be hidden"
 #~ msgid "Hidden"
 #~ msgstr "Ноаён"
@@ -610,9 +639,6 @@ msgstr ""
 
 #~ msgid "Disconnect"
 #~ msgstr "Қатъ кардани пайваст"
-
-#~ msgid "Connect"
-#~ msgstr "Пайваст кардан"
 
 #~ msgctxt "This device is a Phone"
 #~ msgid "Phone"
@@ -717,10 +743,6 @@ msgstr ""
 #~ msgctxt "'Auto accept' option value"
 #~ msgid "Never"
 #~ msgstr "Ҳеҷ гоҳ"
-
-#~ msgctxt "'Auto accept' option value"
-#~ msgid "Trusted devices"
-#~ msgstr "Дастгоҳҳои боэътибор"
 
 #~ msgctxt "'Auto accept' option value"
 #~ msgid "All devices"
